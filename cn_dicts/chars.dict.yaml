@@ -3,7 +3,7 @@
 #https://github.com/amzxyz/RIME-LMDG
 ---
 name: chars
-version: "2025-03-06 16:13"
+version: "2025-03-06 18:28"
 sort: by_weight
 ...
 啊	a	915
@@ -17696,6 +17696,7 @@ sort: by_weight
 桔	jú	523
 沮	jǔ	519
 驹	jū	517
+車	jū	510
 炬	jù	505
 钜	jù	495
 踞	jù	458
@@ -17869,7 +17870,6 @@ sort: by_weight
 跙	jū	1
 蹻	jú	1
 躹	jū	1
-車	jū	1
 鋦	jú	1
 鋸	jū	1
 驕	jū	1
