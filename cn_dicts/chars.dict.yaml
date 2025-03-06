@@ -3,7 +3,7 @@
 #https://github.com/amzxyz/RIME-LMDG
 ---
 name: chars
-version: "2025-03-05 15:43"
+version: "2025-03-06 11:40"
 sort: by_weight
 ...
 啊	a	915
@@ -23784,7 +23784,7 @@ sort: by_weight
 蠻	mán	428
 缦	màn	392
 満	mǎn	391
-谩	mán	323
+谩	màn	323
 鬘	mán	321
 鰻	mán	301
 謾	mán	293
@@ -23814,6 +23814,7 @@ sort: by_weight
 鏝	màn	50
 澷	màn	38
 鬗	mán	23
+谩	mán	1
 㵘	màn	1
 㬅	màn	1
 㒼	mán	1
@@ -23891,7 +23892,6 @@ sort: by_weight
 𫞜	mǎn	1
 嫚	mān	1
 蔓	mán	1
-谩	màn	1
 忙	máng	686
 芒	máng	624
 盲	máng	623
