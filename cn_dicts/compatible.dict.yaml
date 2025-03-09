@@ -4,7 +4,7 @@
 #兼容词库，对于多字词汇两种读音的场景，手动维护到本表以及一些其他的杂项
 ---
 name: compatible
-version: "2025-03-08 14:08"
+version: "2025-03-09 23:24"
 sort: by_weight
 ...
 长点儿	cháng diǎn ér	293
@@ -821,7 +821,7 @@ sort: by_weight
 我这下	wǒ zhèi xià	254
 我这样	wǒ zhèi yàng	593
 我这有	wǒ zhèi yǒu	383
-我这正	wǒ zhèi zhèing	199
+我这正	wǒ zhèi zhèng	199
 我这种	wǒ zhèi zhǒng	618
 我这周	wǒ zhèi zhōu	330
 我这组	wǒ zhèi zǔ	142
@@ -1223,7 +1223,7 @@ sort: by_weight
 这个早	zhèi ge zǎo	277
 这个站	zhèi ge zhàn	402
 这个真	zhèi ge zhēn	483
-这个证	zhèi ge zhèing	463
+这个证	zhèi ge zhèng	463
 这个值	zhèi ge zhí	487
 这个周	zhèi ge zhōu	334
 这个字	zhèi ge zì	601
@@ -1296,7 +1296,7 @@ sort: by_weight
 这回忆	zhèi huí yì	215
 这会在	zhèi huì zài	337
 这徽章	zhèi huī zhāng	126
-这会正	zhèi huì zhèing	203
+这会正	zhèi huì zhèng	203
 这会子	zhèi huì zǐ	322
 这回子	zhèi huí zǐ	146
 这回做	zhèi huí zuò	120
@@ -1654,7 +1654,7 @@ sort: by_weight
 这是由	zhèi shì yóu	554
 这是咋	zhèi shì zǎ	282
 这是在	zhèi shì zài	633
-这是正	zhèi shì zhèing	265
+这是正	zhèi shì zhèng	265
 这首词	zhèi shǒu cí	479
 这首歌	zhèi shǒu gē	714
 这手机	zhèi shǒu jī	484
@@ -2002,7 +2002,7 @@ sort: by_weight
 这一仗	zhèi yí zhàng	426
 这一掌	zhèi yì zhǎng	267
 这一招	zhèi yì zhāo	535
-这一阵	zhèi yí zhèin	365
+这一阵	zhèi yí zhèn	365
 这一帧	zhèi yí zhēn	238
 这一支	zhèi yì zhī	432
 这一只	zhèi yì zhī	399
@@ -2035,11 +2035,11 @@ sort: by_weight
 这张牌	zhèi zhāng pái	464
 这张图	zhèi zhāng tú	651
 着这座	zhe zhèi zuò	378
-这阵容	zhèi zhèin róng	363
+这阵容	zhèi zhèn róng	363
 这真是	zhèi zhēn shì	590
-这阵子	zhèi zhèin zi	436
-这正如	zhèi zhèing rú	383
-这正是	zhèi zhèing shì	609
+这阵子	zhèi zhèn zi	436
+这正如	zhèi zhèng rú	383
+这正是	zhèi zhèng shì	609
 这之间	zhèi zhī jiān	423
 这之类	zhèi zhī lèi	180
 这只猫	zhèi zhǐ māo	489

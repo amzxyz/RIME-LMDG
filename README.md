@@ -60,8 +60,8 @@ octagram:
 判断段标准是全拼或者双拼在没有辅助码，完全离线情况下的表现，另外模型基本上会锁定在100M，求个满意100的寓意，新增数据必然也会进行剔除数据。
 配置如下：
 ```
-__include: octagram   #启用语言模型
-#语言模型
+__include: octagram   #启用语法模型
+#语法模型
 octagram:
   __patch:
     grammar:
@@ -84,5 +84,5 @@ octagram:
 
 ### 赞赏：
 如果觉得项目好用，可以请AMZ喝咖啡
-   
+
    <img src="https://github.com/amzxyz/rime_wanxiang_pro/blob/main/.github/%E8%B5%9E%E8%B5%8F.jpeg" width="400">   
