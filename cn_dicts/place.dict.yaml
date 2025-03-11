@@ -4,7 +4,7 @@
 #------行政区划------
 ---
 name: place
-version: "2025-03-11 14:41"
+version: "2025-03-11 17:02"
 sort: by_weight
 ...
 阿坝	ā bà	601
@@ -12931,7 +12931,6 @@ sort: by_weight
 长白三村	cháng bái sān cūn	1
 长白新村	cháng bái xīn cūn	210
 长埠岭村	cháng bù lǐng cūn	1
-长草滩村	cháng cǎo tān cūn	1
 长埫口镇	cháng chǒng kǒu zhèn	92
 长冲铺村	cháng chōng pù cūn	1
 长春堡村	cháng chūn bǎo cūn	1
@@ -42672,6 +42671,7 @@ sort: by_weight
 张卜庄村	zhāng bo zhuāng cūn	1
 张菜园村	zhāng cài yuán cūn	1
 张蔡庄乡	zhāng cài zhuāng xiāng	35
+长草滩村	zhǎng cǎo tān cūn	1
 张常庄村	zhāng cháng zhuāng cūn	58
 张陈庄村	zhāng chén zhuāng cūn	1
 张城子村	zhāng chéng zǐ cūn	1
