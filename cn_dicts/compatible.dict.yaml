@@ -4,9 +4,11 @@
 #兼容词库，对于多字词汇两种读音的场景，手动维护到本表以及一些其他的杂项
 ---
 name: compatible
-version: "2025-03-17 18:36"
+version: "2025-03-18 15:10"
 sort: by_weight
 ...
+攒个	cuán gè	391
+攒个	zǎn gè	391
 长点儿	cháng diǎn ér	293
 长点儿	zhǎng diǎn ér	293
 就得到	jiù děi dào	498
