@@ -4,11 +4,12 @@
 #兼容词库，对于多字词汇两种读音的场景，手动维护到本表以及一些其他的杂项
 ---
 name: compatible
-version: "2025-03-23 18:02"
+version: "2025-03-23 23:48"
 sort: by_weight
 ...
 攒个	cuán gè	391
 攒个	zǎn gè	391
+外传	wài chuán	460
 长点儿	cháng diǎn ér	293
 长点儿	zhǎng diǎn ér	293
 有的行	yǒu de háng	230
