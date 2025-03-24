@@ -4,7 +4,7 @@
 #------行政区划------
 ---
 name: place
-version: "2025-03-24 18:27"
+version: "2025-03-24 21:05"
 sort: by_weight
 ...
 阿坝	ā bà	601
@@ -42802,6 +42802,7 @@ sort: by_weight
 张家产村	zhāng jiā chǎn cūn	1
 张家产镇	zhāng jiā chǎn zhèn	207
 张家场村	zhāng jiā chǎng cūn	77
+张家长村	zhāng jiā cháng cūn	1
 张家场乡	zhāng jiā chǎng xiāng	168
 张家城村	zhāng jiā chéng cūn	1
 张家冲村	zhāng jiā chōng cūn	35
@@ -42927,7 +42928,6 @@ sort: by_weight
 张家宅村	zhāng jiā zhái cūn	1
 张家寨镇	zhāng jiā zhài zhèn	105
 张家寨庄	zhāng jiā zhài zhuāng	1
-张家长村	zhāng jiā zhǎng cūn	1
 张家竹村	zhāng jiā zhú cūn	1
 张家庄村	zhāng jiā zhuāng cūn	281
 张家庄乡	zhāng jiā zhuāng xiāng	195
