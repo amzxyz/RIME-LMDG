@@ -4,7 +4,7 @@
 #------行政区划------
 ---
 name: place
-version: "2025-03-23 23:48"
+version: "2025-03-24 18:27"
 sort: by_weight
 ...
 阿坝	ā bà	601
@@ -3508,6 +3508,7 @@ sort: by_weight
 常德市	cháng dé shì	511
 昌都市	chāng dū shì	1
 长丰县	cháng fēng xiàn	458
+长葛市	cháng gé shì	385
 长海县	cháng hǎi xiàn	429
 昌吉市	chāng jí shì	416
 昌江区	chāng jiāng qū	272
@@ -9775,7 +9776,6 @@ sort: by_weight
 张港镇	zhāng gǎng zhèn	181
 张高村	zhāng gāo cūn	1
 张阁村	zhāng gé cūn	1
-长葛市	zhǎng gé shì	385
 张阁镇	zhāng gé zhèn	159
 张各庄	zhāng gè zhuāng	312
 张戈庄	zhāng gē zhuāng	150
