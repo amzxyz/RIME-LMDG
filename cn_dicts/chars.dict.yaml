@@ -3,7 +3,7 @@
 #https://github.com/amzxyz/RIME-LMDG
 ---
 name: chars
-version: "2025-03-26 00:03"
+version: "2025-03-26 09:04"
 sort: by_weight
 ...
 啊	a	915
@@ -2725,7 +2725,6 @@ sort: by_weight
 𩁞	cài	1
 𩧇	cài	1
 𪇭	cài	1
-乲	cal	1
 参	cān	793
 餐	cān	759
 残	cán	667
@@ -8036,7 +8035,6 @@ sort: by_weight
 𩤣	duàn	1
 𫞌	duàn	1
 𫟁	duàn	1
-叾	dug	1
 对	duì	901
 队	duì	783
 堆	duī	654
@@ -24139,7 +24137,6 @@ sort: by_weight
 𩭾	máo	1
 𩿂	mào	1
 𪃑	mào	1
-唜	mas	1
 么	me	862
 麼	me	538
 嚒	mē	339
@@ -31904,7 +31901,6 @@ sort: by_weight
 𡬉	sài	1
 𦞫	sài	1
 𪃄	sāi	1
-虄	sal	1
 三	sān	824
 叁	sān	800
 散	sàn	693
@@ -35263,7 +35259,6 @@ sort: by_weight
 𫉨	tà	1
 踏	tā	1
 遢	tā	1
-襨	tae	1
 太	tài	855
 台	tái	801
 态	tài	769
@@ -51003,6 +50998,11 @@ sort: by_weight
 𫝷	zuò	1
 呒	ḿ	1
 呣	ḿ	1
+乲	无	1
+叾	无	1
+唜	无	1
+虄	无	1
+襨	无	1
 乥	无	1
 夞	无	1
 𥩟	无	1
