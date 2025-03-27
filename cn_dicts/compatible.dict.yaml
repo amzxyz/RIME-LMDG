@@ -4,7 +4,7 @@
 #兼容词库，对于多字词汇两种读音的场景，手动维护到本表以及一些其他的杂项
 ---
 name: compatible
-version: "2025-03-27 09:48"
+version: "2025-03-27 21:57"
 sort: by_weight
 ...
 攒个	cuán gè	391
@@ -94,6 +94,21 @@ sort: by_weight
 还回去	hái huí qù	285
 还回来	huán huí lái	350
 还回来	hái huí lái	460
+还给那	hái gěi nà	94
+还给你	hái gěi nǐ	248
+还给谁	hái gěi shuí	53
+还给他	hái gěi tā	250
+还给她	hái gěi tā	228
+还给我	hái gěi wǒ	285
+还给这	hái gěi zhè	110
+你还给	nǐ hái gěi	138
+他还给	tā hái gěi	129
+我还给	wǒ hái gěi	145
+还给你钱	hái gěi nǐ qián	223
+还给她过	hái gěi tā guò	71
+还给她们	hái gěi tā men	303
+什么时候还	shén me shí hòu huán	10
+下次一定还	xià cì yī dìng huán	10
 还都	huán dū	578
 还都	hái dōu	578
 重载	zhòng zài	500
