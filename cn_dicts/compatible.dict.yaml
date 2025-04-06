@@ -4,7 +4,7 @@
 #兼容词库，对于多字词汇两种读音的场景，手动维护到本表以及一些其他的杂项
 ---
 name: compatible
-version: "2025-04-05 16:00"
+version: "2025-04-06 17:22"
 sort: by_weight
 ...
 攒个	cuán gè	391
@@ -22,6 +22,8 @@ sort: by_weight
 掉色	diào sè	552
 掉色	diào shǎi	552
 大方	dà fang	676
+落魄	luò tuò	533
+落魄	luò bó	533
 沉甸甸	chén diān diān	380
 沉甸甸	chén diàn diàn	380
 热腾腾	rè téng téng	447
