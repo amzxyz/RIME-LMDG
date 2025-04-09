@@ -4,7 +4,7 @@
 #兼容词库，对于多字词汇两种读音的场景，手动维护到本表以及一些其他的杂项
 ---
 name: compatible
-version: "2025-04-08 14:13"
+version: "2025-04-09 08:35"
 sort: by_weight
 ...
 攒个	cuán gè	391
@@ -58,7 +58,7 @@ sort: by_weight
 闲着	xián zhāo	367
 闲着	xián zhe	567
 琢磨	zuó mo	619
-琢磨	zhuó mó	433
+琢磨	zhuó mó	460
 线长	xiàn zhǎng	463
 看好	kàn hǎo	706
 看好	kān hǎo	606
