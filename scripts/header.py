@@ -34,8 +34,8 @@ def get_header_sync(file_name):
 # - Jack Liu <https://aituyaa.com>
 # 
 # 运行脚本：
-# - https://github.com/loveminimal/rime-jk/blob/master/scripts/sync_{'.'.join(file_name.split('.')[:-2])}_dict.py
-# - py scripts/sync_{'.'.join(file_name.split('.')[:-2])}_dict.py
+# - https://github.com/loveminimal/rime-jk/blob/master/scripts/sync_user_dict.py
+# - py scripts/sync_user_dict.py
 # 
 ---
 name: {'.'.join(file_name.split('.')[:-2])}
@@ -74,8 +74,10 @@ def get_header_ext(file_name):
 # - Jack Liu <https://aituyaa.com>
 # 
 # 参考码表：
-# - https://github.com/loveminimal/rime-jk
-# - https://github.com/amzxyz/rime_wanxiang_pro
+# - 知心 」https://github.com/loveminimal/rime-jk
+# - 万象 」https://github.com/amzxyz/rime_wanxiang
+# - 白霜 」https://github.com/gaboolic/rime-frost
+# - 雾凇 」https://github.com/iDvel/rime-ice
 # - ……
 # 
 ---

@@ -123,6 +123,9 @@ def combine(out_dir, out_file):
         # ^ 五笔常规
         if type == 'wubi' and code_type == '20':
             lines_total.extend(lines_users)
+        # ^ 小鹤音形
+        if type == 'flyyx' and code_type == '40':
+            lines_total.extend(lines_users)
 
 
     # 去重并处理词条
@@ -181,14 +184,14 @@ def exec(code_type = ''):
     src_file = 'jk_wubi.userdb.txt'
     out_file = 'wubi86_user.dict.yaml'
 
-    code_dict = { '1': '拼音', '20': '五笔常规','21': '五笔整句','30': '虎码常规','31': '虎码整句' }
+    code_dict = { '1': '拼音', '20': '五笔常规','21': '五笔整句','30': '虎码常规','31': '虎码整句', '40': '小鹤音形' }
 
     if code_type not in code_dict:
         print(f'''
 🔔  请输入正确的用户词典标识码:
-------------------------------------------------------------------------------
-1 ➭ 拼音；20 ➭ 五笔常规；21 ➭ 五笔整句；30 ➭ 虎码常规；31 ➭ 虎码整句
-------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+1 ➭ 拼音；20 ➭ 五笔常规；21 ➭ 五笔整句；30 ➭ 虎码常规；31 ➭ 虎码整句；40 ➭ 小鹤音形
+--------------------------------------------------------------------------------------
         ''')
         code_type = input(f"🔔  默认「 虎码常规 」? (30): ").strip().lower() or "30"
         print(f'🔜  {code_type}   ➭ {code_dict[code_type]}\n')
@@ -208,6 +211,9 @@ def exec(code_type = ''):
     elif code_type.startswith("31"):
         src_file = 'jk_tiger_u.userdb.txt'
         out_file = 'tiger_user_zj.dict.yaml'
+    elif code_type.startswith("40"):
+        src_file = 'jk_flyyx.userdb.txt'
+        out_file = 'flyyx_user.dict.yaml'
 
     # 如果存在输出文件，先删除
     current_out_file_temp = out_dir / f'{out_file + '.temp'}'

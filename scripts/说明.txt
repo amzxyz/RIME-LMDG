@@ -29,7 +29,7 @@ $ ➭ python fetch_any_dict.py
 
 ➭ 用户词库同步
 ----------------- ② 使用方法 --------------------
-# 用户词典类型 1 拼音；20 五笔常规；21 五笔整句；30 虎码常规；31 虎码整句
+# 用户词典类型 1 拼音；20 五笔常规；21 五笔整句；30 虎码常规；31 虎码整句；40 小鹤音形
 # ¹ python sync_user_dict.py			      默认交互式「 需要交互输入用户词典类型 」
 # ² python sync_user_dict.py 31         直接指定用户词典类型(31)
 
@@ -43,8 +43,6 @@ scripts
 ├── --- 其它脚本 ---
 ├── deploy_rime.py              # 重新部署
 ├── sync_rime.py                # 用户资料同步
-├── sync_wubi_user_dict.py      # 转换及累积式合并五笔用户词库
-├── sync_tiger_user_dict.py     # 转换及累积式合并虎码用户词库
 ├── sync_en_aliases_dict.py     # 转换本地 .bash_aliases 别名
 ├── sort_dict.py                # 转换指定词典
 ├──

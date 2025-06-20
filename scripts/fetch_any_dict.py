@@ -203,7 +203,7 @@ def get_pinyin_code(code: str) -> str:
     for _code in code.split(' '):
         _cc = _code.split(';')
         fuzhuma = _cc[int(code_type[-1])] if not code_type.endswith('0') else ''
-        code_parts.append(f'{_cc[0]}{';' if fuzhuma else ''}{fuzhuma}')
+        code_parts.append(f'{_cc[0]}{";" if fuzhuma else ""}{fuzhuma}')
 
     return ' '.join(code_parts)
 
@@ -217,13 +217,15 @@ def convert(src_dir: Path, out_dir: Path, file_endswith_filter: str) -> None:
     list_with_tone = list('āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜüńňǹ')
     list_without_tone = list('aaaaooooeeeeiiiiuuuuvvvvvnnn')
 
+    res_dict_word_weight = {}
+    valid_entries = set()
+    _valid_entries = set()
+
     for file_num, file_path in enumerate(src_dir.glob(f'*{file_endswith_filter}'), 1):
         print(f'☑️  已加载第 {file_num} 份码表 » {file_path.name}')
 
-        valid_entries = set()
         invalid_line_count = 0
 
-        res_dict_word_weight = {}
 
         # 预处理，获取权重字的最大权重映射
         with open(file_path, 'r', encoding='utf-8') as fp:
@@ -283,20 +285,30 @@ def convert(src_dir: Path, out_dir: Path, file_endswith_filter: str) -> None:
                         valid_entries.add(f"{word}\t{pinyin_code}\t{res_dict_word_weight[word + get_md5(line)]}\n")
                     elif code_type.startswith("2"):
                         wubi_code = get_wubi_code(word)
-                        valid_entries.add(f"{word}\t{wubi_code}\t{res_dict_word_weight[word]}\n")
-                    else:
+                        # valid_entries.add(f"{word}\t{wubi_code}\t{res_dict_word_weight[word]}\n")
+                        _valid_entries.add(f"{word}\t{wubi_code}")
+                    elif code_type.startswith("3"):
                         tiger_code = get_tiger_code(word)
-                        valid_entries.add(f"{word}\t{tiger_code}\t{res_dict_word_weight[word]}\n")
+                        # valid_entries.add(f"{word}\t{tiger_code}\t{res_dict_word_weight[word]}\n")
+                        _valid_entries.add(f"{word}\t{tiger_code}")
                 except KeyError:
                     invalid_line_count += 1
 
-        if valid_entries:
-            output_path = out_dir / f"{file_path.stem}.yaml"
-            with open(output_path, 'w', encoding='utf-8') as o:
-                o.writelines(get_header_common(f"{file_path.stem}.yaml"))
-                o.writelines(sorted(valid_entries))
+    # 非拼音时去重多音字造成的重复词条
+    if not code_type.startswith("1"):
+        for wc in _valid_entries:
+            # if wc == '从\tww;yz':
+            #     print(wc)
+            #     print(res_dict_word_weight[tab_split_re.split(wc)[0]])
+            valid_entries.add(f"{wc}\t{res_dict_word_weight[tab_split_re.split(wc)[0]]}\n")
 
-            # print(f"  成功转换 {len(valid_entries)} 条记录，跳过 {invalid_line_count} 条无效记录")
+    if valid_entries:
+        output_path = out_dir / f"{file_path.stem}.yaml"
+        with open(output_path, 'w', encoding='utf-8') as o:
+            o.writelines(get_header_common(f"{file_path.stem}.yaml"))
+            o.writelines(sorted(valid_entries))
+
+        # print(f"  成功转换 {len(valid_entries)} 条记录，跳过 {invalid_line_count} 条无效记录")
 
 
 @timer
@@ -537,6 +549,7 @@ def exec(proj_dir, work_dir, repository_url):
     repository_name = repository_url.split('/')[-1][:-4] # 如 rime_wanxiang
     local_directory = (proj_dir / work_dir / repository_name).resolve()
     out_dict = f'cn_dicts_{repository_name}'
+    cn_dicts = 'cn_dicts' if repo_type != '1' else 'zh_dicts' # 万象改字典名称了……
 
     # --- 仓库克隆 ---
     if int(dict_type) == 1:
@@ -580,8 +593,8 @@ def exec(proj_dir, work_dir, repository_url):
     # '非万象Pro词库转换为带辅助码版本
     if code_type.startswith("1"):
         metadata_directory = Path(proj_dir / 'scripts').resolve()   # / 'auxiliary_code.yaml'
-        input_path =  Path(proj_dir / work_dir / repository_name / 'cn_dicts').resolve()
-        output_path = Path(proj_dir / work_dir / (repository_name + '_aux') / 'cn_dicts').resolve()
+        input_path =  Path(proj_dir / work_dir / repository_name / cn_dicts).resolve()
+        output_path = Path(proj_dir / work_dir / (repository_name + '_aux') / cn_dicts).resolve()
         # 如果存在输出文件，先删除
         if os.path.exists(output_path):
             shutil.rmtree(output_path)
@@ -594,20 +607,20 @@ def exec(proj_dir, work_dir, repository_url):
         process_input(input_path, metadata, output_path)
 
     # ② 转换拼音词库为目标词库
-    src_dir = proj_dir / work_dir / repository_name / 'cn_dicts'
+    src_dir = proj_dir / work_dir / repository_name / cn_dicts
     out_dir = proj_dir / work_dir / out_dict
     if code_type.startswith("1"):
-        src_dir = proj_dir / work_dir / (repository_name + '_aux') / 'cn_dicts'
+        src_dir = proj_dir / work_dir / (repository_name + '_aux') / cn_dicts
 
     # 已存在，先删除，再转换
     if out_dir.exists():
         shutil.rmtree(out_dir)
     print('\n🔜  === 开始同步转换词库文件 ===')
     convert(src_dir, out_dir, '.dict.yaml')
-
+    # return
     # 分包操作，以减小推送之后仓库快照体积
     if not is_merge:
-        dist_dir = proj_dir / 'cn_dicts'
+        dist_dir = proj_dir / cn_dicts
         if dist_dir.exists():
             shutil.rmtree(dist_dir)
         shutil.copytree(out_dir, dist_dir)
@@ -711,7 +724,7 @@ if __name__ == "__main__":
 如：16 ➭ 拼音+虎码首末；20 ➭ 五笔常规；31 ➭ 虎码整句
 ------------------------------------------------------------------------------
         ''')
-        code_type = input(f"🔔  默认「 虎码首末 ¦ 辅助码 」? (16): ").strip().lower() or "16"
+        code_type = input(f"🔔  默认「 鹤形 ¦ 辅助码 」? (12): ").strip().lower() or "12"
         # print(f'🔜  {code_type}   ➭ {code_dict[code_type]}\n')
     print(f'🔜  {code_type} {code_dict[code_type]} \n')
 
