@@ -34,19 +34,19 @@ jobs:
       # 条件跳过任务
       - name: Skip if no changes
         if: env.SKIP == 'true'
-        run: echo "No changes detected in 'cn_dicts'. Skipping release process."
+        run: echo "No changes detected in 'zh_dicts'. Skipping release process."
 
       # 打包词库文件
-      - name: Pack cn_dicts
+      - name: Pack zh_dicts
         if: env.SKIP != 'true'
         run: |
           mkdir -p dist
-          echo "Packing cn_dicts..."
-          if [ -d "cn_dicts" ]; then
-            zip -r dist/cn_dicts.zip cn_dicts
-            echo "Packing completed: dist/cn_dicts.zip"
+          echo "Packing zh_dicts..."
+          if [ -d "zh_dicts" ]; then
+            zip -r dist/zh_dicts.zip zh_dicts
+            echo "Packing completed: dist/zh_dicts.zip"
           else
-            echo "Error: cn_dicts folder does not exist."
+            echo "Error: zh_dicts folder does not exist."
             exit 1
           fi
 
@@ -105,8 +105,8 @@ jobs:
           tag_name: dict-nightly
           name: "每夜构建-词库更新"
           body: |
-            - `cn_dicts.zip`：最新的中文词库文件。
-          files: dist/cn_dicts.zip
+            - `zh_dicts.zip`：最新的中文词库文件。
+          files: dist/zh_dicts.zip
           draft: false        # 确保不是草稿
           prerelease: false   # 确保不是预发布版本
           make_latest: true   # 强制标记为最新版本
