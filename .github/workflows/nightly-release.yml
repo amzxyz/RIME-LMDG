@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - 'cn_dicts/**'
+      - 'zh_dicts/**'
 
 concurrency: # 防止并发冲突
   group: nightly-release
