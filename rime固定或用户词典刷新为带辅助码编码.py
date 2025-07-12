@@ -14,9 +14,9 @@ from typing import Dict, List
 from tqdm import tqdm
 
 # ─────────────── 配 置 区 ────────────────
-INPUT_PATH  = "/home/amz/Documents/输入法方案/万象拼音/zh_dicts/base.dict.yaml"          # 目录或单文件
-OUTPUT_PATH = "/home/amz/Documents/输入法方案/万象拼音/zh_dicts/111base.dict.yaml"          # 目录或文件；智能判断
-AUX_FILE    = "/home/amz/Documents/输入法方案/万象PRO/zrm/zrm.txt"  # 这里使用你选择的辅助码词库中的单字表作为数据源
+INPUT_PATH  = "/home/amz/Documents/输入法方案/万象拼音/base.dict.yaml"          # 目录或单文件
+OUTPUT_PATH = "/home/amz/Documents/输入法方案/万象拼音/outbase.dict.yaml"       # 目录或文件；智能判断
+AUX_FILE    = "/home/amz/Documents/辅助码.txt"  # 这里使用你选择的辅助码词库中的单字表作为数据源 格式  你\tni;re  你\t;re  你\tre三种格式都是支持的
 # ──────────────────────────────────────
 
 AUX_SEP_REGEX = r'[;\[]'
@@ -40,14 +40,17 @@ def load_aux_metadata(path: str) -> Dict[str, str]:
                 continue
             char = parts[0]
             seg_full = parts[1]
-            # 优先提取第一个 AUX_SEP_REGEX 后的内容，否则取整段
             seg_parts = re.split(AUX_SEP_REGEX, seg_full, maxsplit=1)
-            if len(seg_parts) > 1 and seg_parts[1].strip():
+            if len(seg_parts) > 1:
                 aux_map[char] = seg_parts[1].strip()
             else:
-                aux_map[char] = seg_full.strip()  # 整体作为辅助码
+                aux_map[char] = seg_full.strip()
+            # 修正：如果辅助码仅为 ; 或为空，设为空
+            if aux_map[char] == ';':
+                aux_map[char] = ''
     print(f"✓ 辅助码加载 {len(aux_map)} 条")
     return aux_map
+
 
 # ---------- 行级处理 ----------
 def build_seg_by_aux(word: str, aux_map: Dict[str, str]) -> List[str]:
@@ -66,10 +69,7 @@ def refresh_aux(cols: List[str], word: str, aux_map: Dict[str, str], userdb: boo
     merged = []
     for i, py in enumerate(raw_segs):
         aux = aux_segs[i] if i < len(aux_segs) else ''
-        if aux:
-            merged.append(f"{py};{aux}")
-        else:
-            merged.append(py)
+        merged.append(f"{py};{aux}")
     if userdb:
         cols[0] = ' '.join(merged)
     else:
