@@ -22,7 +22,7 @@
 
  示例项目：
 
-  [万象拼音增强版-全拼双拼-多维直接/间接辅助码-声调辅助](https://github.com/amzxyz/rime_wanxiang_pro)  |  [万象拼音标准版-全拼双拼-声调辅助-反查辅助](https://github.com/amzxyz/rime_wanxiang)   
+ [万象拼音-全拼双拼-声调辅助-反查辅助-中英混输](https://github.com/amzxyz/rime_wanxiang)   
 
 | 词库类型 | 文件名称     | 描述                   |
 |----------|--------------|------------------------|
