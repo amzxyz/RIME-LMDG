@@ -1,0 +1,22 @@
+name: 新增词汇
+description: 提交您希望新增的词汇
+title: "[新增词汇]: "
+labels: ["feedback-add"]
+body:
+  - type: input
+    id: word
+    attributes:
+      label: 词汇
+      description: 请输入要新增的词汇
+      placeholder: 例如：四十一码
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 使用场景
+      description: 可选，词汇出现的具体场景
+      placeholder: 例如：服装尺码
+    validations:
+      required: false
