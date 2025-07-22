@@ -1,0 +1,22 @@
+name: 删除词汇
+description: 提交您希望删除的词汇
+title: "[删除词汇]: "
+labels: ["feedback-delete"]
+body:
+  - type: input
+    id: word
+    attributes:
+      label: 词汇
+      description: 请输入要删除的词汇
+      placeholder: 例如：无效词条
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 删除原因
+      description: 可选，删除的原因
+      placeholder: 例如：词条错误或无使用价值
+    validations:
+      required: false
