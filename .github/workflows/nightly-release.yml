@@ -105,7 +105,7 @@ jobs:
           tag_name: dict-nightly
           name: "每夜构建-词库更新"
           body: |
-            - `zh_dicts.zip`：最新的中文词库文件。
+            - `dicts.zip`：最新的中文词库文件。
           files: dist/dicts.zip
           draft: false        # 确保不是草稿
           prerelease: false   # 确保不是预发布版本
