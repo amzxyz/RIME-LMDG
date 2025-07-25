@@ -200,7 +200,7 @@ def process_files(path_in: str, path_out: str):
 if __name__ == "__main__":
     #输入输出可以为目录或者单文件
     input_dir  = "/home/amz/Documents/输入法方案/原始词库"
-    output_dir = "/home/amz/Documents/输入法方案/万象拼音/zh_dicts"
+    output_dir = "/home/amz/Documents/输入法方案/万象拼音/dicts"
     custom_dir = "pinyin_data"
 
     load_custom_pinyin_from_directory(custom_dir)
