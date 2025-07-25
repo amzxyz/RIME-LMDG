@@ -6,7 +6,7 @@ on:
     branches:
       - wanxiang
     paths:
-      - 'zh_dicts/**'
+      - 'dicts/**'
 
 concurrency: # 防止并发冲突
   group: nightly-release
@@ -25,7 +25,7 @@ jobs:
       - name: Check if cn_dicts has changes
         id: check_changes
         run: |
-          if git diff --quiet HEAD HEAD~1 -- cn_dicts; then
+          if git diff --quiet HEAD HEAD~1 -- dicts; then
             echo "SKIP=true" >> $GITHUB_ENV
           else
             echo "SKIP=false" >> $GITHUB_ENV
@@ -41,12 +41,12 @@ jobs:
         if: env.SKIP != 'true'
         run: |
           mkdir -p dist
-          echo "Packing zh_dicts..."
-          if [ -d "zh_dicts" ]; then
-            zip -r dist/zh_dicts.zip zh_dicts
-            echo "Packing completed: dist/zh_dicts.zip"
+          echo "Packing dicts..."
+          if [ -d "dicts" ]; then
+            zip -r dist/dicts.zip dicts
+            echo "Packing completed: dist/dicts.zip"
           else
-            echo "Error: zh_dicts folder does not exist."
+            echo "Error: dicts folder does not exist."
             exit 1
           fi
 
@@ -106,7 +106,7 @@ jobs:
           name: "每夜构建-词库更新"
           body: |
             - `zh_dicts.zip`：最新的中文词库文件。
-          files: dist/zh_dicts.zip
+          files: dist/dicts.zip
           draft: false        # 确保不是草稿
           prerelease: false   # 确保不是预发布版本
           make_latest: true   # 强制标记为最新版本
