@@ -38,7 +38,7 @@ jobs:
       - name: Pack dict-tools.zip
         run: |
           echo "Packing tools..."
-          zip -r "dist/dict-tools.zip" pypinyin pinyin_data tqdm rime固定*.py
+          zip -r "dist/dict-pinyin-tools.zip" pypinyin pinyin_data tqdm rime固定*.py
           echo "Packing completed: dist/dict-pinyin-tools.zip"
 
       - name: Delete existing Nightly Release and Tag
@@ -87,7 +87,7 @@ jobs:
           name: "词库更新与拼音标注工具包"
           body: |
             - `dicts.zip`：最新中文词库文件。
-            - `dict-tools.zip`：包含 pypinyin、pinyin_data、tqdm、rime固定*.py 工具脚本。
+            - `dict-pinyin-tools.zip`：包含 pypinyin、pinyin_data、tqdm、rime固定*.py 工具脚本。
           files: |
             dist/dicts.zip
             dist/dict-pinyin-tools.zip
