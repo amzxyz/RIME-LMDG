@@ -35,11 +35,11 @@ jobs:
             echo "Warning: dicts folder does not exist, skipping."
           fi
 
-      - name: Pack rime拼音与辅助码刷新工具包.zip
+      - name: Pack dict-tools.zip
         run: |
           echo "Packing tools..."
-          zip -r "dist/rime拼音与辅助码刷新工具包.zip" pypinyin pinyin_data tqdm rime固定*.py
-          echo "Packing completed: dist/rime拼音与辅助码刷新工具包.zip"
+          zip -r "dist/dict-tools.zip" pypinyin pinyin_data tqdm rime固定*.py
+          echo "Packing completed: dist/dict-tools.zip"
 
       - name: Delete existing Nightly Release and Tag
         uses: actions/github-script@v6
@@ -87,10 +87,10 @@ jobs:
           name: "每夜构建 - 词库与工具包"
           body: |
             - `dicts.zip`：最新中文词库文件。
-            - `rime拼音与辅助码刷新工具包.zip`：包含 pypinyin、pinyin_data、tqdm、rime固定*.py 工具脚本。
+            - `dict-tools.zip`：包含 pypinyin、pinyin_data、tqdm、rime固定*.py 工具脚本。
           files: |
             dist/dicts.zip
-            dist/rime拼音与辅助码刷新工具包.zip
+            dist/dict-tools.zip
           draft: false
           prerelease: false
           make_latest: true
