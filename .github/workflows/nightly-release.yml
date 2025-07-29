@@ -84,13 +84,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: dict-nightly
-          name: "每夜构建 - 词库与工具包"
+          name: "词库与拼音标注工具包"
           body: |
             - `dicts.zip`：最新中文词库文件。
             - `dict-tools.zip`：包含 pypinyin、pinyin_data、tqdm、rime固定*.py 工具脚本。
           files: |
             dist/dicts.zip
-            dist/dict-tools.zip
+            dist/dict-pinyin-tools.zip
           draft: false
           prerelease: false
           make_latest: true
