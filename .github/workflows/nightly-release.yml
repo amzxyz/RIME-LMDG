@@ -39,7 +39,7 @@ jobs:
         run: |
           echo "Packing tools..."
           zip -r "dist/dict-tools.zip" pypinyin pinyin_data tqdm rime固定*.py
-          echo "Packing completed: dist/dict-tools.zip"
+          echo "Packing completed: dist/dict-pinyin-tools.zip"
 
       - name: Delete existing Nightly Release and Tag
         uses: actions/github-script@v6
@@ -84,7 +84,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: dict-nightly
-          name: "词库与拼音标注工具包"
+          name: "词库更新与拼音标注工具包"
           body: |
             - `dicts.zip`：最新中文词库文件。
             - `dict-tools.zip`：包含 pypinyin、pinyin_data、tqdm、rime固定*.py 工具脚本。
