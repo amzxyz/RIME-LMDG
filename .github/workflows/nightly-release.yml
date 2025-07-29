@@ -1,4 +1,4 @@
-name: Nightly Build dicts
+name: Nightly Build Rime Assets
 
 on:
   workflow_dispatch: # 手动触发
@@ -7,8 +7,12 @@ on:
       - wanxiang
     paths:
       - 'dicts/**'
+      - 'pypinyin/**'
+      - 'pinyin_data/**'
+      - 'tqdm/**'
+      - 'rime固定*.py'
 
-concurrency: # 防止并发冲突
+concurrency:
   group: nightly-release
   cancel-in-progress: true
 
@@ -17,28 +21,10 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      # 检出代码
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 检查是否需要更新
-      - name: Check if cn_dicts has changes
-        id: check_changes
-        run: |
-          if git diff --quiet HEAD HEAD~1 -- dicts; then
-            echo "SKIP=true" >> $GITHUB_ENV
-          else
-            echo "SKIP=false" >> $GITHUB_ENV
-          fi
-
-      # 条件跳过任务
-      - name: Skip if no changes
-        if: env.SKIP == 'true'
-        run: echo "No changes detected in 'zh_dicts'. Skipping release process."
-
-      # 打包词库文件
-      - name: Pack zh_dicts
-        if: env.SKIP != 'true'
+      - name: Pack dicts.zip
         run: |
           mkdir -p dist
           echo "Packing dicts..."
@@ -46,25 +32,26 @@ jobs:
             zip -r dist/dicts.zip dicts
             echo "Packing completed: dist/dicts.zip"
           else
-            echo "Error: dicts folder does not exist."
-            exit 1
+            echo "Warning: dicts folder does not exist, skipping."
           fi
 
-      # 删除旧的 Release 和 Tag（如果存在）
+      - name: Pack rime拼音与辅助码刷新工具包.zip
+        run: |
+          echo "Packing tools..."
+          zip -r "dist/rime拼音与辅助码刷新工具包.zip" pypinyin pinyin_data tqdm rime固定*.py
+          echo "Packing completed: dist/rime拼音与辅助码刷新工具包.zip"
+
       - name: Delete existing Nightly Release and Tag
-        if: env.SKIP != 'true'
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const tag = "dict-nightly";
             try {
-              // 检查现有的 Release
               const releases = await github.rest.repos.listReleases({
                 owner: context.repo.owner,
                 repo: context.repo.repo
               });
-
               const existingRelease = releases.data.find(r => r.tag_name === tag);
               if (existingRelease) {
                 console.log(`Deleting existing Release with ID: ${existingRelease.id}`);
@@ -74,8 +61,6 @@ jobs:
                   release_id: existingRelease.id
                 });
               }
-
-              // 删除现有的 Tag
               console.log(`Deleting tag: ${tag}`);
               await github.rest.git.deleteRef({
                 owner: context.repo.owner,
@@ -83,30 +68,29 @@ jobs:
                 ref: `tags/${tag}`
               });
             } catch (error) {
-              console.log(`Error deleting Release or Tag: ${error.message}`);
+              console.log(`No existing release or tag to delete: ${error.message}`);
             }
 
-      # 确保删除后等待旧数据清理完成
       - name: Wait for cleanup
-        if: env.SKIP != 'true'
         run: sleep 10
-      # 安装 Node.js v18（为 action-gh-release 解决 node:fs::FileHandle 问题）
+
       - name: Setup Node.js 18
-        if: env.SKIP != 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-      # 创建新的 Release
+
       - name: Create new Release
-        if: env.SKIP != 'true'
-        uses: "softprops/action-gh-release@v2"
+        uses: softprops/action-gh-release@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: dict-nightly
-          name: "每夜构建-词库更新"
+          name: "每夜构建 - 词库与工具包"
           body: |
-            - `dicts.zip`：最新的中文词库文件。
-          files: dist/dicts.zip
-          draft: false        # 确保不是草稿
-          prerelease: false   # 确保不是预发布版本
-          make_latest: true   # 强制标记为最新版本
+            - `dicts.zip`：最新中文词库文件。
+            - `rime拼音与辅助码刷新工具包.zip`：包含 pypinyin、pinyin_data、tqdm、rime固定*.py 工具脚本。
+          files: |
+            dist/dicts.zip
+            dist/rime拼音与辅助码刷新工具包.zip
+          draft: false
+          prerelease: false
+          make_latest: true
