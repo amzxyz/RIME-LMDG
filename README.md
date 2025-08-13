@@ -75,7 +75,7 @@ octagram:
 
 ### 友链：
 
-一切皆可萌：[萌娘词库]https://github.com/suiginko/moetype
+一切皆可萌：[适合二次元爱好者的细胞词库](https://github.com/suiginko/moetype)
 
 ### 赞赏：
 如果觉得项目好用，可以请AMZ喝咖啡
