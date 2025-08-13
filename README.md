@@ -80,5 +80,5 @@ octagram:
 ### 赞赏：
 如果觉得项目好用，可以请AMZ喝咖啡
 
-   <img src="[赞赏](https://github.com/amzxyz/rime_wanxiang/blob/wanxiang/custom/%E8%B5%9E%E8%B5%8F.jpg)" width="400">   
+   <img src="https://github.com/amzxyz/rime_wanxiang/blob/wanxiang/custom/%E8%B5%9E%E8%B5%8F.jpg" width="400">   
 
