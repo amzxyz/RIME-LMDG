@@ -7538,7 +7538,6 @@ sort: by_weight
 㝎	dìng	1
 奵	dīng	1
 掟	dìng	1
-町	dīng	1
 甼	dīng	1
 艼	dǐng	1
 釘	dìng	1
@@ -7573,6 +7572,7 @@ sort: by_weight
 𩾚	dīng	1
 𪔂	dǐng	1
 𫂫	dìng	1
+町	dīng	1
 丢	diū	647
 丟	diū	343
 铥	diū	285
@@ -36425,6 +36425,7 @@ sort: by_weight
 蝏	tíng	439
 廳	tīng	423
 铤	tǐng	408
+町	tǐng	377
 庁	tīng	363
 葶	tíng	335
 珽	tǐng	334
@@ -36470,7 +36471,6 @@ sort: by_weight
 忊	tìng	1
 梃	tìng	1
 濎	tìng	1
-町	tǐng	1
 鋌	tǐng	1
 閮	tǐng	1
 㓅	tīng	1
