@@ -7,6 +7,7 @@ name: compatible
 version: "LTS"
 sort: by_weight
 ...
+密钥	mì yuè	482
 糖色	táng shǎi	348
 又得	yòu děi	421
 拂过	bì guò	476
@@ -4317,7 +4318,6 @@ sort: by_weight
 哥哥说	gē ge shuō	1
 搁下醋	gē xià cù	1
 红凤凰	hóng fèng huáng	1
-红凤凰	hóng fèng huáng	1
 花凤凰	huā fèng huáng	1
 花鸟叫	huā niǎo jiào	1
 黄凤凰	huáng fèng huáng	1
@@ -4335,8 +4335,6 @@ sort: by_weight
 两个昌	liǎng gè chāng	1
 两个巢	liǎng gè cháo	1
 两个屮	liǎng gè chè	1
-两个屮	liǎng gè chè	1
-两个車	liǎng gè chē	1
 两个車	liǎng gè chē	1
 两个臣	liǎng gè chén	1
 两个齒	liǎng gè chǐ	1
@@ -4436,7 +4434,6 @@ sort: by_weight
 两个束	liǎng gè shù	1
 两个水	liǎng gè shuǐ	1
 两个厶	liǎng gè sī	1
-两个厶	liǎng gè sī	1
 两个田	liǎng gè tián	1
 两个天	liǎng gè tiān	1
 两个土	liǎng gè tǔ	1
@@ -4500,7 +4497,6 @@ sort: by_weight
 三个百	sān gè bǎi	1
 三个宝	sān gè bǎo	1
 三个贝	sān gè bèi	1
-三个屮	sān gè chè	1
 三个屮	sān gè chè	1
 三个車	sān gè chē	1
 三个虫	sān gè chóng	1
@@ -4586,11 +4582,9 @@ sort: by_weight
 三个水	sān gè shuǐ	1
 三个朔	sān gè shuò	1
 三个厶	sān gè sī	1
-三个厶	sān gè sī	1
 三个太	sān gè tài	1
 三个田	sān gè tián	1
 三个天	sān gè tiān	1
-三个𠧪	sān gè tiáo	1
 三个𠧪	sān gè tiáo	1
 三个土	sān gè tǔ	1
 三个兔	sān gè tù	1
@@ -4627,7 +4621,6 @@ sort: by_weight
 三个𣥚	sān gè zhì	1
 三个至	sān gè zhì	1
 三个丶	sān gè zhǔ	1
-三个丶	sān gè zhǔ	1
 三个竹	sān gè zhú	1
 三个隹	sān gè zhuī	1
 三个子	sān gè zi	1
@@ -4635,13 +4628,11 @@ sort: by_weight
 十和四	shí hé sì	1
 十是十	shí shì shí	1
 史肖石	shǐ xiào shí	1
-史肖石	shǐ xiào shí	1
-石小四	shí xiǎo sì	1
 石小四	shí xiǎo sì	1
 手指头	shǒu zhǐ tou	1
 四个匕	sì gè bǐ	1
 四个屮	sì gè chè	1
-四个屮	sì gè chè	1
+四个车	sì gè chè	1
 四个車	sì gè chē	1
 四个春	sì gè chūn	1
 四个朿	sì gè cì	1
@@ -4666,7 +4657,6 @@ sort: by_weight
 四个日	sì gè rì	1
 四个石	sì gè shí	1
 四个水	sì gè shuǐ	1
-四个厶	sì gè sī	1
 四个厶	sì gè sī	1
 四个天	sì gè tiān	1
 四个田	sì gè tián	1
