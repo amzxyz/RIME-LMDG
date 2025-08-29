@@ -72425,7 +72425,7 @@ sort: by_weight
 回飙入松柏	huí biāo rù sōng bǎi	6
 回别缘岩竹	huí bié yuán yán zhú	6
 麾兵静北垂	huī bīng jìng běi chuí	6
-回波送神曲	huí bō sòng shén qū	6
+回波送神曲	huí bō sòng shén qǔ	6
 回波自成浪	huí bō zì chéng làng	6
 悔不秉烛游	huǐ bù bǐng zhú yóu	6
 悔不趁花归	huǐ bù chèn huā guī	6
@@ -98895,7 +98895,7 @@ sort: by_weight
 林红叶尽变	lín hóng yè jìn biàn	6
 林花百和香	lín huā bǎi hé xiāng	6
 林花春向兰	lín huā chūn xiàng lán	6
-林华都未有	lín huá dōu wèi yǒu	6
+林华都未有	lín huá dū wèi yǒu	6
 林花堕不飞	lín huā duò bù fēi	6
 林花发岸口	lín huā fā àn kǒu	6
 林花飞片片	lín huā fēi piàn piàn	6
@@ -101058,7 +101058,7 @@ sort: by_weight
 六月晨亦热	liù yuè chén yì rè	6
 六月初七日	liù yuè chū qī rì	6
 流月垂鳞光	liú yuè chuí lín guāng	6
-六月调神曲	liù yuè diào shén qū	6
+六月调神曲	liù yuè diào shén qǔ	6
 六月动周师	liù yuè dòng zhōu shī	6
 六月度开云	liù yuè dù kāi yún	6
 六月飞将远	liù yuè fēi jiàng yuǎn	6
@@ -139270,7 +139270,7 @@ sort: by_weight
 深秋生夜寒	shēn qiū shēng yè hán	6
 身囚缘彩翠	shēn qiú yuán cǎi cuì	6
 身去缰锁累	shēn qù jiāng suǒ lèi	6
-神曲清浊酒	shén qū qīng zhuó jiǔ	6
+神曲清浊酒	shén qǔ qīng zhuó jiǔ	6
 身趋双节近	shēn qū shuāng jié jìn	6
 身去无还期	shēn qù wú hái qī	6
 身去兮天畔	shēn qù xī tiān pàn	6
@@ -199673,12 +199673,10 @@ sort: by_weight
 嗈嗈白云雁	yōng yōng bái yún yàn	6
 永永传无穷	yǒng yǒng chuán wú qióng	6
 永永垂无穷	yǒng yǒng chuí wú qióng	6
-喁喁来噍食	yóng yóng lái jiào shí	6
 嗈嗈慕俦匹	yōng yōng mù chóu pǐ	6
 雝雝求匹好	yōng yōng qiú pǐ hǎo	6
 永用忘昏著	yǒng yòng wàng hūn zhù	6
 雍雍引帝求	yōng yōng yǐn dì qiú	6
-喁喁鱼闯萍	yóng yóng yú chuǎng píng	6
 拥雍州之地	yōng yōng zhōu zhī dì	6
 勇有孟施舍	yǒng yǒu mèng shī shě	6
 拥佑乃清夷	yōng yòu nǎi qīng yí	6
@@ -205606,6 +205604,7 @@ sort: by_weight
 雨馀看柳重	yǔ yú kàn liǔ zhòng	6
 郁郁苦不展	yù yù kǔ bù zhǎn	6
 郁郁昆山阴	yù yù kūn shān yīn	6
+喁喁来噍食	yú yú lái jiào shí	6
 郁郁来西游	yù yù lái xī yóu	6
 郁郁老不衰	yù yù lǎo bù shuāi	6
 欲语泪先流	yù yǔ lèi xiān liú	6
@@ -205663,6 +205662,7 @@ sort: by_weight
 纡馀一水合	yū yú yì shuǐ hé	6
 郁郁荫檐瓦	yù yù yīn yán wǎ	6
 郁郁又纷纷	yù yù yòu fēn fēn	6
+喁喁鱼闯萍	yú yú yú chuǎng píng	6
 于予与改是	yú yǔ yǔ gǎi shì	6
 于予与何诛	yú yǔ yǔ hé zhū	6
 郁郁雨相遇	yù yù yǔ xiāng yù	6
@@ -240880,7 +240880,7 @@ sort: by_weight
 出与雕鹗同飞翻	chū yǔ diāo è tóng fēi fān	6
 楚雨还昏云梦泽	chǔ yǔ hái hūn yún mèng zé	6
 楚雨含情皆有托	chǔ yǔ hán qíng jiē yǒu tuō	6
-楚妪解唱迎神曲	chǔ yù jiě chàng yíng shén qū	6
+楚妪解唱迎神曲	chǔ yù jiě chàng yíng shén qǔ	6
 出遇世难亲经纶	chū yù shì nán qīn jīng lún	6
 初语燕雏知社日	chū yǔ yàn chú zhī shè rì	6
 楚猿吟杂橘村砧	chǔ yuán yín zá jú cūn zhēn	6
@@ -246868,7 +246868,7 @@ sort: by_weight
 咄嗟而办石季伦	duō jiē ér bàn shí jì lún	6
 夺尽乾坤造化权	duó jìn qián kūn zào huà quán	6
 夺尽人工更有香	duó jìn rén gōng gèng yǒu xiāng	6
-多景楼上弹神曲	duō jǐng lóu shàng dàn shén qū	6
+多景楼上弹神曲	duō jǐng lóu shàng dàn shén qǔ	6
 多君此去从仙隐	duō jūn cǐ qù cóng xiān yǐn	6
 多开石髓供调膳	duō kāi shí suǐ gōng diào shàn	6
 多恐君王不忍看	duō kǒng jūn wáng bù rěn kàn	6
@@ -295189,7 +295189,7 @@ sort: by_weight
 听唱阳关第四声	tīng chàng yáng guān dì sì shēng	6
 停车欲去绕丛竹	tíng chē yù qù rào cóng zhú	6
 停车坐爱枫林晚	tíng chē zuò ài fēng lín wǎn	6
-听此迎神送神曲	tīng cǐ yíng shén sòng shén qū	6
+听此迎神送神曲	tīng cǐ yíng shén sòng shén qǔ	6
 听得荷池几番声	tīng de hé chí jǐ fān shēng	6
 停灯起在鸡鸣前	tíng dēng qǐ zài jī míng qián	6
 亭东亭西渺烟水	tíng dōng tíng xī miǎo yān shuǐ	6
@@ -297596,7 +297596,7 @@ sort: by_weight
 为君扶病到方山	wèi jūn fú bìng dào fāng shān	6
 为君扶病上高台	wèi jūn fú bìng shàng gāo tái	6
 为君更唤木肠儿	wèi jūn gèng huàn mù cháng ér	6
-为君更奏湘神曲	wèi jūn gèng zòu xiāng shén qū	6
+为君更奏湘神曲	wèi jūn gèng zòu xiāng shén qǔ	6
 为君酤酒满眼酤	wèi jūn gū jiǔ mǎn yǎn gū	6
 为君酤酒张灯火	wèi jūn gū jiǔ zhāng dēng huǒ	6
 为君唤起黄州梦	wèi jūn huàn qǐ huáng zhōu mèng	6
