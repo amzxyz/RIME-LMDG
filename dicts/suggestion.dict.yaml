@@ -59,8 +59,8 @@ sort: by_weight
 阿富汗介属	ā fù hàn jiè shǔ	10
 阿妇罗介属	ā fù luó jiè shǔ	10
 阿夫沙蛤属	ā fū shā há shǔ	10
-阿富𫚥虎属	ā fù xiā hǔ shǔ	10
-阿富𫚥虎鱼	ā fù xiā hǔ yú	10
+阿富鰕虎属	ā fù xiā hǔ shǔ	10
+阿富鰕虎鱼	ā fù xiā hǔ yú	10
 阿格姬蜂属	ā gé jī fēng shǔ	10
 阿格内䒩属	ā gé nèi hé shǔ	10
 阿戈斯钩鲶	ā gē sī gōu nián	10
@@ -154,7 +154,7 @@ sort: by_weight
 阿毗昙心论	ā pí tán xīn lùn	10
 阿普雷头鲶	ā pǔ léi tóu nián	10
 阿普路兵鲶	ā pǔ lù bīng nián	10
-阿匍𫚥虎属	ā pú xiā hǔ shǔ	10
+阿匍鰕虎属	ā pú xiā hǔ shǔ	10
 阿奇尔螈属	ā qí ěr yuán shǔ	10
 阿其哥螈属	ā qí gē yuán shǔ	10
 阿鳍喉鳍鱼	ā qí hóu qí yú	10
@@ -972,8 +972,8 @@ sort: by_weight
 癌细胞扩散	ái xì bāo kuò sàn	10
 癌细胞转移	ái xì bāo zhuǎn yí	10
 埃希氏菌属	āi xī shì jūn shǔ	10
-矮𫚥虎鱼属	ǎi xiā hǔ yú shǔ	10
-艾𫚥虎鱼属	ài xiā hǔ yú shǔ	10
+矮鰕虎鱼属	ǎi xiā hǔ yú shǔ	10
+艾鰕虎鱼属	ài xiā hǔ yú shǔ	10
 矮线真锥螺	ǎi xiàn zhēn zhuī luó	10
 爱像太平洋	ài xiàng tài píng yáng	10
 爱像一把火	ài xiàng yì bǎ huǒ	10
@@ -1237,7 +1237,7 @@ sort: by_weight
 暗腹朱翅雀	àn fù zhū chì què	10
 鞍钢新轧钢	ān gāng xīn zhá gāng	10
 鞍钢总医院	ān gāng zǒng yī yuàn	10
-暗缟𫚥虎鱼	àn gǎo xiā hǔ yú	10
+暗缟鰕虎鱼	àn gǎo xiā hǔ yú	10
 安戈尔胡鲶	ān gē ěr hú nián	10
 安格尔西岛	ān gé ěr xī dǎo	10
 安哥拉龙属	ān gē lā lóng shǔ	10
@@ -1417,9 +1417,7 @@ sort: by_weight
 按计划行事	àn jì huà xíng shì	10
 按计划执行	àn jì huà zhí xíng	10
 氨基环丙烷	ān jī huán bǐng wán	10
-氨基磺酸胺	ān jī huáng suān àn	10
 氨基磺酸铵	ān jī huáng suān ǎn	10
-胺基磺酸铵	àn jī huáng suān ǎn	10
 氨基磺酸钴	ān jī huáng suān gǔ	10
 氨基磺酸胍	ān jī huáng suān guā	10
 氨基磺酸钠	ān jī huáng suān nà	10
@@ -2120,7 +2118,7 @@ sort: by_weight
 安息香缩合	ān xī xiāng suō hé	10
 安息香乙醚	ān xī xiāng yǐ mí	10
 按下播放键	àn xià bō fàng jiàn	10
-鞍𫚥虎鱼属	ān xiā hǔ yú shǔ	10
+鞍鰕虎鱼属	ān xiā hǔ yú shǔ	10
 按下回车键	àn xià huí chē jiàn	10
 按下快进键	àn xià kuài jìn jiàn	10
 按下快门前	àn xià kuài mén qián	10
@@ -3072,9 +3070,7 @@ sort: by_weight
 巴黎植物园	bā lí zhí wù yuán	10
 八里庄街道	bā lǐ zhuāng jiē dào	10
 巴黎子午线	bā lí zǐ wǔ xiàn	10
-巴利综合征	bā lì zōng hé zhēng	10
 巴黎综合症	bā lí zōng hé zhèng	10
-巴利综合症	bā lì zōng hé zhèng	10
 巴黎总主教	bā lí zǒng zhǔ jiào	10
 八连城遗址	bā lián chéng yí zhǐ	10
 把脸洗干净	bǎ liǎn xǐ gān jìng	10
@@ -4745,7 +4741,7 @@ sort: by_weight
 白头山手枪	bái tóu shān shǒu qiāng	10
 白头山天池	bái tóu shān tiān chí	10
 白头山血统	bái tóu shān xuè tǒng	10
-白头𫚥虎鱼	bái tóu xiā hǔ yú	10
+白头鰕虎鱼	bái tóu xiā hǔ yú	10
 白头蟹甲草	bái tóu xiè jiǎ cǎo	10
 百团大战中	bǎi tuán dà zhàn zhōng	10
 白臀叶猴属	bái tún yè hóu shǔ	10
@@ -5845,7 +5841,7 @@ sort: by_weight
 半无产阶级	bàn wú chǎn jiē jí	10
 坂西利八郎	bǎn xī lì bā láng	10
 半夏厚朴汤	bàn xià hòu pò tāng	10
-半𫚥虎鱼属	bàn xiā hǔ yú shǔ	10
+半鰕虎鱼属	bàn xiā hǔ yú shǔ	10
 半下口鲶属	bàn xià kǒu nián shǔ	10
 半夏散及汤	bàn xià sàn jí tāng	10
 半夏五味子	bàn xià wǔ wèi zǐ	10
@@ -7734,8 +7730,6 @@ sort: by_weight
 北大街十字	běi dà jiē shí zì	10
 北达科达州	běi dá kē dá zhōu	10
 北大科技园	běi dà kē jì yuán	10
-北达科它州	běi dá kē tā zhōu	10
-北达科塔州	běi dá kē tǎ zhōu	10
 北达科他州	běi dá kē tā zhōu	10
 被打了一顿	bèi dǎ le yí dùn	10
 被打了一拳	bèi dǎ le yì quán	10
@@ -8776,8 +8770,6 @@ sort: by_weight
 被拒之门外	bèi jù zhī mén wài	10
 北郡修道院	běi jùn xiū dào yuàn	10
 北卡来罗纳	běi kǎ lái luó nà	10
-北卡罗莱纳	běi kǎ luó lái nà	10
-北卡罗莱那	běi kǎ luó lái nà	10
 北卡罗来纳	běi kǎ luó lái nà	10
 被开除党籍	bèi kāi chú dǎng jí	10
 被开除公职	bèi kāi chú gōng zhí	10
@@ -9365,7 +9357,7 @@ sort: by_weight
 杯吸盘鱼属	bēi xī pán yú shǔ	10
 被吓得不轻	bèi xià de bù qīng	10
 北下关街道	běi xià guān jiē dào	10
-杯𫚥虎鱼属	bēi xiā hǔ yú shǔ	10
+杯鰕虎鱼属	bēi xiā hǔ yú shǔ	10
 北下街街道	běi xià jiē jiē dào	10
 被吓了一跳	bèi xià le yí tiào	10
 北侠欧阳春	běi xiá ōu yáng chūn	10
@@ -9413,7 +9405,7 @@ sort: by_weight
 被严令禁止	bèi yán lìng jìn zhǐ	10
 背眼美体鳗	bèi yǎn měi tǐ mán	10
 背眼吻棘鳅	bèi yǎn wěn jí qiū	10
-背眼𫚥虎科	bèi yǎn xiā hǔ kē	10
+背眼鰕虎科	bèi yǎn xiā hǔ kē	10
 杯咽线虫科	bēi yàn xiàn chóng kē	10
 被严重低估	bèi yán zhòng dī gū	10
 被严重高估	bèi yán zhòng gāo gū	10
@@ -11572,7 +11564,7 @@ sort: by_weight
 扁头欧雅鱼	biǎn tóu ōu yǎ yú	10
 扁头天竺鲷	biǎn tóu tiān zhú diāo	10
 扁头兔脂鲤	biǎn tóu tù zhī lǐ	10
-扁头𫚥虎科	biǎn tóu xiā hǔ kē	10
+扁头鰕虎科	biǎn tóu xiā hǔ kē	10
 扁头叶蝉属	biǎn tóu yè chán shǔ	10
 扁陀螺钟螺	biǎn tuó luó zhōng luó	10
 边玩边赚钱	biān wán biān zhuàn qián	10
@@ -11654,7 +11646,7 @@ sort: by_weight
 扁咽齿鱼属	biǎn yàn chǐ yú shǔ	10
 扁眼环蝶属	biǎn yǎn huán dié shǔ	10
 鞭檐犁头尖	biān yán lí tóu jiān	10
-扁眼𫚥虎属	biǎn yǎn xiā hǔ shǔ	10
+扁眼鰕虎属	biǎn yǎn xiā hǔ shǔ	10
 苄氧基苯酚	biàn yǎng jī běn fēn	10
 苄氧基色胺	biàn yǎng jī sè àn	10
 苄氧基羧酸	biàn yǎng jī suō suān	10
@@ -13129,7 +13121,7 @@ sort: by_weight
 丙烯酸乙酯	bǐng xī suān yǐ zhǐ	10
 丙烯酸酯化	bǐng xī suān zhǐ huà	10
 丙烯酸酯类	bǐng xī suān zhǐ lèi	10
-冰𫚥虎鱼属	bīng xiā hǔ yú shǔ	10
+冰鰕虎鱼属	bīng xiā hǔ yú shǔ	10
 丙酰白霉素	bǐng xiān bái méi sù	10
 丙酰基联苯	bǐng xiān jī lián běn	10
 冰鲜三文鱼	bīng xiān sān wén yú	10
@@ -13365,7 +13357,7 @@ sort: by_weight
 卜里坪街道	bo lǐ píng jiē dào	10
 玻璃缺鳍鲶	bō li quē qí nián	10
 伯理玺天德	bó lǐ xǐ tiān dé	10
-玻璃𫚥虎属	bō li xiā hǔ shǔ	10
+玻璃鰕虎属	bō li xiā hǔ shǔ	10
 剥离性骨折	bō lí xìng gǔ zhé	10
 波利亚猜想	bō lì yà cāi xiǎng	10
 柏林氏甲鲶	bó lín shì jiǎ nián	10
@@ -13556,10 +13548,7 @@ sort: by_weight
 铂阳太阳能	bó yáng tài yáng néng	10
 波叶海葱属	bō yè hǎi cōng shǔ	10
 波耶雷氏鲶	bō yé léi shì nián	10
-波以耳定律	bō yǐ ěr dìng lǜ	10
 玻意耳定律	bō yì ěr dìng lǜ	10
-波义耳定律	bō yì ěr dìng lǜ	10
-波义尔定律	bō yì ěr dìng lǜ	10
 博弈复杂度	bó yì fù zá dù	10
 博弈理论家	bó yì lǐ lùn jiā	10
 博弈论书籍	bó yì lùn shū jí	10
@@ -14180,9 +14169,8 @@ sort: by_weight
 不断地前进	bú duàn de qián jìn	10
 不断的强化	bú duàn de qiáng huà	10
 不断的升级	bú duàn de shēng jí	10
-不断的实践	bú duàn de shí jiàn	10
+不断地实践	bú duàn de shí jiàn	11
 不短的时间	bù duǎn de shí jiān	10
-不断地实践	bú duàn de shí jiàn	10
 不断的刷新	bú duàn de shuā xīn	10
 不断的思考	bú duàn de sī kǎo	10
 不断地思考	bú duàn de sī kǎo	10
@@ -20158,7 +20146,7 @@ sort: by_weight
 叉齿南盲鳗	chā chǐ nán máng mán	10
 叉齿朴丽鱼	chā chǐ pǔ lì yú	10
 叉齿蛇绵鳚	chā chǐ shé mián wèi	10
-叉齿𫚥虎鱼	chā chǐ xiā hǔ yú	10
+叉齿鰕虎鱼	chā chǐ xiā hǔ yú	10
 叉唇钗子股	chā chún chāi zǐ gǔ	10
 叉唇对叶兰	chā chún duì yè lán	10
 叉唇角盘兰	chā chún jiǎo pán lán	10
@@ -20321,8 +20309,8 @@ sort: by_weight
 叉烧销魂饭	chā shāo xiāo hún fàn	10
 叉烧鱼包子	chā shāo yú bāo zi	10
 叉舌垂头菊	chā shé chuí tóu jú	10
-叉舌𫚥虎属	chā shé xiā hǔ shǔ	10
-叉舌𫚥虎鱼	chā shé xiā hǔ yú	10
+叉舌鰕虎属	chā shé xiā hǔ shǔ	10
+叉舌鰕虎鱼	chā shé xiā hǔ yú	10
 差生文具多	chà shēng wén jù duō	10
 查氏杜鳅鲶	chá shì dù qiū nián	10
 茶是故乡浓	chá shì gù xiāng nóng	10
@@ -20404,7 +20392,7 @@ sort: by_weight
 差压流量计	chà yā liú liàng jì	10
 叉牙啮脂鲤	chā yá niè zhī lǐ	10
 叉牙泞齿鳉	chā yá nìng chǐ jiāng	10
-叉牙𫚥虎属	chā yá xiā hǔ shǔ	10
+叉牙鰕虎属	chā yá xiā hǔ shǔ	10
 查验健康码	chá yàn jiàn kāng mǎ	10
 查验身份证	chá yàn shēn fèn zhèng	10
 茶叶包装盒	chá yè bāo zhuāng hé	10
@@ -22588,7 +22576,7 @@ sort: by_weight
 长丝叉丝壳	cháng sī chā sī ké	10
 长丝髯甲鲶	cháng sī rán jiǎ nián	10
 长丝视星鲶	cháng sī shì xīng nián	10
-长丝𫚥虎鱼	cháng sī xiā hǔ yú	10
+长丝鰕虎鱼	cháng sī xiā hǔ yú	10
 长丝新雀鲷	cháng sī xīn què diāo	10
 长丝叶须虫	cháng sī yè xū chóng	10
 长丝异鳃鲶	cháng sī yì sāi nián	10
@@ -30002,7 +29990,7 @@ sort: by_weight
 刺腹琼脂鲤	cì fù qióng zhī lǐ	10
 刺钙板藻属	cì gài bǎn zǎo shǔ	10
 刺盖拟花鮨	cì gài nǐ huā yì	10
-刺盖𫚥虎鱼	cì gài xiā hǔ yú	10
+刺盖鰕虎鱼	cì gài xiā hǔ yú	10
 磁感应方程	cí gǎn yìng fāng chéng	10
 磁感应密度	cí gǎn yìng mì dù	10
 磁感应强度	cí gǎn yìng qiáng dù	10
@@ -30308,7 +30296,7 @@ sort: by_weight
 刺吸式口器	cì xī shì kǒu qì	10
 磁吸式设计	cí xī shì shè jì	10
 慈禧与光绪	cí xǐ yǔ guāng xù	10
-刺𫚥虎鱼属	cì xiā hǔ yú shǔ	10
+刺鰕虎鱼属	cì xiā hǔ yú shǔ	10
 刺虾虎鱼族	cì xiā hǔ yú zú	10
 磁县公安局	cí xiàn gōng ān jú	10
 慈祥的父亲	cí xiáng de fù qīn	10
@@ -33661,7 +33649,7 @@ sort: by_weight
 大吻沙蛇鳗	dà wěn shā shé mán	10
 大纹饰孢属	dà wén shì bāo shǔ	10
 大吻陶鲶属	dà wěn táo nián shǔ	10
-大吻𫚥虎鱼	dà wěn xiā hǔ yú	10
+大吻鰕虎鱼	dà wěn xiā hǔ yú	10
 大吻胸翼鱼	dà wěn xiōng yì yú	10
 大吻鲟身鲶	dà wěn xún shēn nián	10
 大瓮蓝子鱼	dà wèng lán zǐ yú	10
@@ -34866,7 +34854,7 @@ sort: by_weight
 带我下地狱	dài wǒ xià dì yù	10
 带我一起去	dài wǒ yì qǐ qù	10
 带我一起走	dài wǒ yì qǐ zǒu	10
-带𫚥虎鱼属	dài xiā hǔ yú shǔ	10
+带鰕虎鱼属	dài xiā hǔ yú shǔ	10
 袋小齿兽属	dài xiǎo chǐ shòu shǔ	10
 带小卷蛾属	dài xiǎo juàn é shǔ	10
 代销商品款	dài xiāo shāng pǐn kuǎn	10
@@ -37275,7 +37263,7 @@ sort: by_weight
 倒吸一口气	dào xī yì kǒu qì	10
 道狭草木长	dào xiá cǎo mù cháng	10
 倒下的士兵	dǎo xià dī shì bīng	10
-岛𫚥虎鱼属	dǎo xiā hǔ yú shǔ	10
+岛鰕虎鱼属	dǎo xiā hǔ yú shǔ	10
 到现场办理	dào xiàn chǎng bàn lǐ	10
 到现场观看	dào xiàn chǎng guān kàn	10
 到现场检查	dào xiàn chǎng jiǎn chá	10
@@ -37749,10 +37737,7 @@ sort: by_weight
 的一些情况	de yì xiē qíng kuàng	10
 的一些要求	de yì xiē yāo qiú	10
 得意须尽欢	dé yì xū jìn huān	10
-得意需尽欢	dé yì xū jìn huān	10
 得意扬扬地	dé yì yáng yáng de	10
-德意志之角	dé yì zhì zhī jiǎo	10
-德意志族群	dé yì zhì zú qún	10
 的英雄形象	de yīng xióng xíng xiàng	10
 的应用对比	de yìng yòng duì bǐ	10
 德永佳集团	dé yǒng jiā jí tuán	10
@@ -42176,7 +42161,7 @@ sort: by_weight
 滇西鳞盖蕨	diān xī lín gài jué	10
 滇西瘤足蕨	diān xī liú zú jué	10
 滇西蹄盖蕨	diān xī tí gài jué	10
-点𫚥虎鱼属	diǎn xiā hǔ yú shǔ	10
+点鰕虎鱼属	diǎn xiā hǔ yú shǔ	10
 癫痫病发作	diān xián bìng fā zuò	10
 癫痫病患者	diān xián bìng huàn zhě	10
 癫痫病医生	diān xián bìng yī shēng	10
@@ -46105,7 +46090,7 @@ sort: by_weight
 端午节粽子	duān wǔ jié zòng zi	10
 端午金曲捞	duān wǔ jīn qǔ lāo	10
 端午小长假	duān wǔ xiǎo cháng jià	10
-短𫚥虎鱼属	duǎn xiā hǔ yú shǔ	10
+短鰕虎鱼属	duǎn xiā hǔ yú shǔ	10
 断线刺尻鱼	duàn xiàn cì kāo yú	10
 断线的风筝	duàn xiàn de fēng zhēng	10
 断线杜父鱼	duàn xiàn dù fù yú	10
@@ -46714,8 +46699,8 @@ sort: by_weight
 钝角三角形	dùn jiǎo sān jiǎo xíng	10
 盾介壳虫科	dùn jiè ké chóng kē	10
 敦科维齐亚	dūn kē wéi qí yà	10
-钝孔𫚥虎属	dùn kǒng xiā hǔ shǔ	10
-钝孔𫚥虎鱼	dùn kǒng xiā hǔ yú	10
+钝孔鰕虎属	dùn kǒng xiā hǔ shǔ	10
+钝孔鰕虎鱼	dùn kǒng xiā hǔ yú	10
 沌口开发区	dùn kǒu kāi fā qū	10
 盾脸姬蜂属	dùn liǎn jī fēng shǔ	10
 敦罗卜旺布	dūn luó bo wàng bù	10
@@ -46745,7 +46730,7 @@ sort: by_weight
 钝吻下口鲶	dùn wěn xià kǒu nián	10
 钝吻魣脂鲤	dùn wěn xù zhī lǐ	10
 钝吻鼬鳚属	dùn wěn yòu wèi shǔ	10
-钝𫚥虎鱼属	dùn xiā hǔ yú shǔ	10
+钝鰕虎鱼属	dùn xiā hǔ yú shǔ	10
 盾形海果属	dùn xíng hǎi guǒ shǔ	10
 盾形片虫属	dùn xíng piàn chóng shǔ	10
 盾形种子科	dùn xíng zhǒng zi kē	10
@@ -48030,7 +48015,7 @@ sort: by_weight
 恶毒的语言	è dú de yǔ yán	10
 恶毒的诅咒	è dú de zǔ zhòu	10
 恶毒梁欢秀	è dú liáng huān xiù	10
-蛾钝𫚥虎鱼	é dùn xiā hǔ yú	10
+蛾钝鰕虎鱼	é dùn xiā hǔ yú	10
 额尔德木吐	é ěr dé mù tǔ	10
 额尔德尼昭	é ěr dé ní zhāo	10
 额尔登巴特	é ěr dēng bā tè	10
@@ -51914,7 +51899,7 @@ sort: by_weight
 帆蜥鱼亚目	fān xī yú yà mù	10
 犯下的罪过	fàn xià de zuì guò	10
 犯下的罪行	fàn xià de zuì xíng	10
-梵𫚥虎鱼属	fàn xiā hǔ yú shǔ	10
+梵鰕虎鱼属	fàn xiā hǔ yú shǔ	10
 犯下了大错	fàn xià le dà cuò	10
 返乡创业者	fǎn xiāng chuàng yè zhě	10
 返乡大学生	fǎn xiāng dà xué shēng	10
@@ -55378,10 +55363,7 @@ sort: by_weight
 奋斗的人生	fèn dòu de rén shēng	10
 奋斗的身影	fèn dòu de shēn yǐng	10
 奋斗的小孩	fèn dòu de xiǎo hái	10
-分豆的小鸟	fēn dòu de xiǎo niǎo	10
 奋斗的小鸟	fèn dòu de xiǎo niǎo	10
-愤斗的小鸟	fèn dòu de xiǎo niǎo	10
-奋斗的小鱼	fèn dòu de xiǎo yú	10
 奋斗的一生	fèn dòu de yì shēng	10
 奋斗的意义	fèn dòu de yì yì	10
 奋斗的勇气	fèn dòu de yǒng qì	10
@@ -55389,11 +55371,9 @@ sort: by_weight
 奋斗和努力	fèn dòu hé nǔ lì	10
 奋斗路街道	fèn dòu lù jiē dào	10
 奋斗乌托邦	fèn dòu wū tuō bāng	10
-奋斗小木鱼	fèn dòu xiǎo mù yú	10
 奋斗小青年	fèn dòu xiǎo qīng nián	10
 奋斗新时代	fèn dòu xīn shí dài	10
 奋斗一辈子	fèn dòu yí bèi zi	10
-奋斗在红楼	fèn dòu zài hóng lóu	10
 奋斗在一线	fèn dòu zài yī xiàn	10
 奋斗者精神	fèn dòu zhě jīng shén	10
 奋斗中的我	fèn dòu zhōng de wǒ	10
@@ -56417,9 +56397,7 @@ sort: by_weight
 凤凰也是鸟	fèng huáng yě shì niǎo	10
 凤凰翼龙属	fèng huáng yì lóng shǔ	10
 凤凰影剧院	fèng huáng yǐng jù yuàn	10
-凤凰苑凶真	fèng huáng yuàn xiōng zhēn	10
 凤凰院凶真	fèng huáng yuàn xiōng zhēn	10
-凤凰院胸针	fèng huáng yuàn xiōng zhēn	10
 凤凰早班车	fèng huáng zǎo bān chē	10
 凤凰直隶厅	fèng huáng zhí lì tīng	10
 凤凰中大道	fèng huáng zhōng dà dào	10
@@ -58410,7 +58388,7 @@ sort: by_weight
 弗氏兔脂鲤	fú shì tù zhī lǐ	10
 副饰尾螽属	fù shì wěi zhōng shǔ	10
 富士屋酒店	fù shì wū jiǔ diàn	10
-福氏𫚥鳉属	fú shì xiā jiāng shǔ	10
+福氏鰕鳉属	fú shì xiā jiāng shǔ	10
 弗氏下口鲶	fú shì xià kǒu nián	10
 复式显微镜	fù shì xiǎn wēi jìng	10
 福氏项鳍鲶	fú shì xiàng qí nián	10
@@ -58872,7 +58850,7 @@ sort: by_weight
 伏羲太昊陵	fú xī tài hào líng	10
 副细线虫属	fù xì xiàn chóng shǔ	10
 复习知识点	fù xí zhī shí diǎn	10
-复𫚥虎鱼属	fù xiā hǔ yú shǔ	10
+复鰕虎鱼属	fù xiā hǔ yú shǔ	10
 副下属和弦	fù xià shǔ hé xián	10
 副峡塘鳢属	fù xiá táng lǐ shǔ	10
 抚仙高原鳅	fǔ xiān gāo yuán qiū	10
@@ -60590,7 +60568,7 @@ sort: by_weight
 干洗店设备	gān xǐ diàn shè bèi	10
 干洗店投资	gān xǐ diàn tóu zī	10
 干洗加盟店	gān xǐ jiā méng diàn	10
-竿𫚥虎鱼属	gān xiā hǔ yú shǔ	10
+竿鰕虎鱼属	gān xiā hǔ yú shǔ	10
 橄霞玄武岩	gǎn xiá xuán wǔ yán	10
 干线公路网	gàn xiàn gōng lù wǎng	10
 赣县教育局	gàn xiàn jiào yù jú	10
@@ -62311,8 +62289,6 @@ sort: by_weight
 高收益债券	gāo shōu yì zhài quàn	10
 高手在民间	gāo shǒu zài mín jiān	10
 高手在人间	gāo shǒu zài rén jiān	10
-高树玛丽亚	gāo shù mǎ lì yà	10
-高树玛莉亚	gāo shù mǎ lì yà	10
 高树玛利亚	gāo shù mǎ lì yà	10
 稿树下水库	gǎo shù xià shuǐ kù	10
 高水平创新	gāo shuǐ píng chuàng xīn	10
@@ -62563,7 +62539,7 @@ sort: by_weight
 高污染行业	gāo wū rǎn háng yè	10
 高污染企业	gāo wū rǎn qǐ yè	10
 高污染燃料	gāo wū rǎn rán liào	10
-缟𫚥虎鱼属	gǎo xiā hǔ yú shǔ	10
+缟鰕虎鱼属	gǎo xiā hǔ yú shǔ	10
 高县公安局	gāo xiàn gōng ān jú	10
 高氙酸高镍	gāo xiān suān gāo niè	10
 高纤维食物	gāo xiān wéi shí wù	10
@@ -68583,7 +68559,7 @@ sort: by_weight
 购物中心南	gòu wù zhōng xīn nán	10
 购物中心内	gòu wù zhōng xīn nèi	10
 购物中心西	gòu wù zhōng xīn xī	10
-沟𫚥虎鱼属	gōu xiā hǔ yú shǔ	10
+沟鰕虎鱼属	gōu xiā hǔ yú shǔ	10
 沟虾虎鱼属	gōu xiā hǔ yú shǔ	10
 构象异构体	gòu xiàng yì gòu tǐ	10
 购销损益帐	gòu xiāo sǔn yì zhàng	10
@@ -70718,8 +70694,8 @@ sort: by_weight
 关系最亲密	guān xì zuì qīn mì	10
 管辖的范围	guǎn xiá de fàn wéi	10
 管辖范围内	guǎn xiá fàn wéi nèi	10
-冠𫚥虎鱼属	guān xiā hǔ yú shǔ	10
-管𫚥虎鱼属	guǎn xiā hǔ yú shǔ	10
+冠鰕虎鱼属	guān xiā hǔ yú shǔ	10
+管鰕虎鱼属	guǎn xiā hǔ yú shǔ	10
 管辖权异议	guǎn xiá quán yì yì	10
 灌县华溪蟹	guàn xiàn huá xī xiè	10
 灌县假毛蕨	guàn xiàn jiǎ máo jué	10
@@ -74948,9 +74924,7 @@ sort: by_weight
 哈米特定律	hā mǐ tè dìng lǜ	10
 哈米特方程	hā mǐ tè fāng chéng	10
 哈密翼龙属	hā mì yì lóng shǔ	10
-哈拿克定理	hā ná kè dìng lǐ	10
 哈纳克定理	hā nà kè dìng lǐ	10
-哈那克定理	hā nà kè dìng lǐ	10
 哈乃斐学派	hā nǎi fěi xué pài	10
 哈尼夫思想	hā ní fū sī xiǎng	10
 哈宁管菌属	hā níng guǎn jūn shǔ	10
@@ -79229,7 +79203,7 @@ sort: by_weight
 赫维兹矩阵	hè wéi zī jǔ zhèn	10
 褐纹卷蛾属	hè wén juǎn é shǔ	10
 何文田广场	hé wén tián guǎng chǎng	10
-褐吻𫚥虎鱼	hè wěn xiā hǔ yú	10
+褐吻鰕虎鱼	hè wěn xiā hǔ yú	10
 褐纹胸鹛属	hè wén xiōng méi shǔ	10
 和我差不多	hé wǒ chà bù duō	10
 和我处对象	hé wǒ chù duì xiàng	10
@@ -79779,7 +79753,7 @@ sort: by_weight
 黑带天竺鲷	hēi dài tiān zhú diāo	10
 黑带兔脂鲤	hēi dài tù zhī lǐ	10
 黑带尾蜂鸟	hēi dài wěi fēng niǎo	10
-黑带𫚥鳉属	hēi dài xiā jiāng shǔ	10
+黑带鰕鳉属	hēi dài xiā jiāng shǔ	10
 黑带小油鲶	hēi dài xiǎo yóu nián	10
 黑带野螟属	hēi dài yě míng shǔ	10
 黑带鹦竺鲷	hēi dài yīng zhú diāo	10
@@ -82033,7 +82007,7 @@ sort: by_weight
 洪顺曲艺社	hóng shùn qǔ yì shè	10
 红四方面军	hóng sì fāng miàn jūn	10
 红丝绒蛋糕	hóng sī róng dàn gāo	10
-红丝𫚥虎鱼	hóng sī xiā hǔ yú	10
+红丝鰕虎鱼	hóng sī xiā hǔ yú	10
 洪素珠事件	hóng sù zhū shì jiàn	10
 红塔大酒店	hóng tǎ dà jiǔ diàn	10
 红塔山香烟	hóng tǎ shān xiāng yān	10
@@ -83935,10 +83909,10 @@ sort: by_weight
 呼吸新空气	hū xī xīn kōng qì	10
 呼吸兴奋剂	hū xī xīng fèn jì	10
 呼吸治疗师	hū xī zhì liáo shī	10
-壶𫚥虎鱼属	hú xiā hǔ yú shǔ	10
-狐𫚥虎鱼属	hú xiā hǔ yú shǔ	10
-虎𫚥虎鱼属	hǔ xiā hǔ yú shǔ	10
-胡𫚥虎鱼属	hú xiā hǔ yú shǔ	10
+壶鰕虎鱼属	hú xiā hǔ yú shǔ	10
+狐鰕虎鱼属	hú xiā hǔ yú shǔ	10
+虎鰕虎鱼属	hǔ xiā hǔ yú shǔ	10
+胡鰕虎鱼属	hú xiā hǔ yú shǔ	10
 户县草堂寺	hù xiàn cǎo táng sì	10
 湖仙达溞属	hú xiān dá sāo shǔ	10
 户县公安局	hù xiàn gōng ān jú	10
@@ -86611,7 +86585,7 @@ sort: by_weight
 皇后图书馆	huáng hòu tú shū guǎn	10
 皇后卫子夫	huáng hòu wèi zǐ fū	10
 黄喉吸蜜鸟	huáng hóu xī mì niǎo	10
-皇后𫚥虎属	huáng hòu xiā hǔ shǔ	10
+皇后鰕虎属	huáng hòu xiā hǔ shǔ	10
 皇后像广场	huáng hòu xiàng guǎng chǎng	10
 皇后鹦嘴鱼	huáng hòu yīng zuǐ yú	10
 皇后与梦想	huáng hòu yǔ mèng xiǎng	10
@@ -92412,10 +92386,7 @@ sort: by_weight
 积水潭师专	jī shuǐ tán shī zhuān	10
 积水潭医院	jī shuǐ tán yī yuàn	10
 给水调节阀	jǐ shuǐ tiáo jié fá	10
-极司非而路	jí sī fēi ér lù	10
 极司非尔路	jí sī fēi ěr lù	10
-极斯非而路	jí sī fēi ér lù	10
-极司菲尔路	jí sī fēi ěr lù	10
 基斯诺斯岛	jī sī nuò sī dǎo	10
 祭司王约翰	jì sī wáng yuē hàn	10
 吉松叶蜂属	jí sōng yè fēng shǔ	10
@@ -92842,7 +92813,7 @@ sort: by_weight
 季希基夫卡	jì xī jī fū kǎ	10
 基希纳反应	jī xī nà fǎn yìng	10
 吉夏尔球场	jí xià ěr qiú chǎng	10
-姬𫚥虎鱼属	jī xiā hǔ yú shǔ	10
+姬鰕虎鱼属	jī xiā hǔ yú shǔ	10
 极限承载力	jí xiàn chéng zài lì	10
 极限的挑战	jí xiàn de tiǎo zhàn	10
 集贤殿书院	jí xián diàn shū yuàn	10
@@ -95891,8 +95862,6 @@ sort: by_weight
 监察厅厅长	jiān chá tīng tīng zhǎng	10
 检查完毕后	jiǎn chá wán bì hòu	10
 监察委员会	jiān chá wěi yuán huì	10
-检察委员会	jiǎn chá wěi yuán huì	10
-检查委员会	jiǎn chá wěi yuán huì	10
 检查无误后	jiǎn chá wú wù hòu	10
 检查心电图	jiǎn chá xīn diàn tú	10
 检察新媒体	jiǎn chá xīn méi tǐ	10
@@ -97431,7 +97400,7 @@ sort: by_weight
 尖细蛇形螺	jiān xì shé xíng luó	10
 建希望小学	jiàn xī wàng xiǎo xué	10
 间细尾脂鲤	jiān xì wěi zhī lǐ	10
-箭𫚥虎鱼属	jiàn xiā hǔ yú shǔ	10
+箭鰕虎鱼属	jiàn xiā hǔ yú shǔ	10
 剑侠情缘二	jiàn xiá qíng yuán èr	10
 剑侠情缘三	jiàn xiá qíng yuán sān	10
 见贤思齐焉	jiàn xián sī qí yān	10
@@ -97542,7 +97511,6 @@ sort: by_weight
 箭叶水苏属	jiàn yè shuǐ sū shǔ	10
 剑叶蹄盖蕨	jiàn yè tí gài jué	10
 尖叶铁角蕨	jiān yè tiě jiǎo jué	10
-剪叶铁角蕨	jiǎn yè tiě jiǎo jué	10
 剑叶铁角蕨	jiàn yè tiě jiǎo jué	10
 菅野亚梨沙	jiān yě yà lí shā	10
 尖叶瘿螨属	jiān yè yǐng mǎn shǔ	10
@@ -98530,7 +98498,7 @@ sort: by_weight
 江西中南部	jiāng xī zhōng nán bù	10
 江西中兽属	jiāng xī zhōng shòu shǔ	10
 江西中医药	jiāng xī zhōng yī yào	10
-缰𫚥虎鱼属	jiāng xiā hǔ yú shǔ	10
+缰鰕虎鱼属	jiāng xiā hǔ yú shǔ	10
 江夏客厅站	jiāng xià kè tīng zhàn	10
 江夏区区长	jiāng xià qū qū cháng	10
 绛县长春观	jiàng xiàn cháng chūn guān	10
@@ -101055,7 +101023,7 @@ sort: by_weight
 解析器函数	jiě xī qì hán shù	10
 介螅水母科	jiè xī shuǐ mǔ kē	10
 介螅水母属	jiè xī shuǐ mǔ shǔ	10
-捷𫚥虎鱼属	jié xiā hǔ yú shǔ	10
+捷鰕虎鱼属	jié xiā hǔ yú shǔ	10
 接下来的话	jiē xià lái de huà	10
 接下来的路	jiē xià lái de lù	10
 接下来的事	jiē xià lái de shì	10
@@ -104187,10 +104155,7 @@ sort: by_weight
 经济适用房	jīng jì shì yòng fáng	10
 经济适用男	jīng jì shì yòng nán	10
 经济适用女	jīng jì shì yòng nǚ	10
-经济实用型	jīng jì shí yòng xíng	10
-经济实用性	jīng jì shí yòng xìng	10
-经济适用型	jīng jì shì yòng xíng	10
-经济适用性	jīng jì shì yòng xìng	10
+经济适用型	jīng jì shì yòng xíng	12
 经济适用鱼	jīng jì shì yòng yú	10
 经济师职称	jīng jì shī zhí chēng	10
 经济衰退期	jīng jì shuāi tuì qī	10
@@ -105127,9 +105092,7 @@ sort: by_weight
 靖西云南鳅	jìng xī yún nán qiū	10
 井下安全阀	jǐng xià ān quán fá	10
 井下采矿法	jǐng xià cǎi kuàng fǎ	10
-晶𫚥虎鱼属	jīng xiā hǔ yú shǔ	10
-荆𫚥虎鱼属	jīng xiā hǔ yú shǔ	10
-静𫚥虎鱼属	jìng xiā hǔ yú shǔ	10
+晶鰕虎鱼属	jīng xiā hǔ yú shǔ	10
 静下来思考	jìng xià lái sī kǎo	10
 静下来想想	jìng xià lái xiǎng xiǎng	10
 井下流量计	jǐng xià liú liàng jì	10
@@ -107769,7 +107732,7 @@ sort: by_weight
 巨细胞病毒	jù xì bāo bìng dú	10
 莒溪大峡谷	jǔ xī dà xiá gǔ	10
 巨蜥喙龙属	jù xī huì lóng shǔ	10
-𬶋𫚥虎鱼属	jū xiā hǔ yú shǔ	10
+𬶋鰕虎鱼属	jū xiā hǔ yú shǔ	10
 聚酰胺薄膜	jù xiān àn báo mó	10
 聚酰胺树脂	jù xiān àn shù zhī	10
 聚酰胺纤维	jù xiān àn xiān wéi	10
@@ -111231,7 +111194,7 @@ sort: by_weight
 考试总成绩	kǎo shì zǒng chéng jì	10
 考试综合症	kǎo shì zōng hé zhèng	10
 靠手艺吃饭	kào shǒu yì chī fàn	10
-尻𫚥虎鱼属	kāo xiā hǔ yú shǔ	10
+尻鰕虎鱼属	kāo xiā hǔ yú shǔ	10
 考选委员会	kǎo xuǎn wěi yuán huì	10
 烤鸭好好吃	kǎo yā hǎo hǎo chī	10
 考研参考书	kǎo yán cān kǎo shū	10
@@ -112520,12 +112483,7 @@ sort: by_weight
 可你不知道	kě nǐ bù zhī dào	10
 可逆电动机	kě nì diàn dòng jī	10
 可你们知道	kě nǐ men zhī dào	10
-科尼什群岛	kē ní shí qún dǎo	10
 柯尼希定理	kē ní xī dìng lǐ	10
-柯尼西定理	kē ní xī dìng lǐ	10
-科尼希定理	kē ní xī dìng lǐ	10
-科尼西定理	kē ní xī dìng lǐ	10
-科涅韦茨岛	kē niè wéi cí dǎo	10
 可凝性气体	kě níng xìng qì tǐ	10
 克努森假说	kè nǔ sēn jiǎ shuō	10
 克诺尔反应	kè nuò ěr fǎn yìng	10
@@ -114179,7 +114137,7 @@ sort: by_weight
 孔隙水压力	kǒng xì shuǐ yā lì	10
 空袭特鲁克	kōng xí tè lǔ kè	10
 空袭叙利亚	kōng xí xù lì yà	10
-孔𫚥虎鱼属	kǒng xiā hǔ yú shǔ	10
+孔鰕虎鱼属	kǒng xiā hǔ yú shǔ	10
 空闲时间多	kòng xián shí jiān duō	10
 空想螺丝钉	kōng xiǎng luó sī dīng	10
 空想委员会	kōng xiǎng wěi yuán huì	10
@@ -114567,7 +114525,7 @@ sort: by_weight
 库鲁拟白鱼	kù lǔ nǐ bái yú	10
 库鲁皮龙属	kù lǔ pí lóng shǔ	10
 苦路十四站	kǔ lù shí sì zhàn	10
-库曼𫚥虎属	kù màn xiā hǔ shǔ	10
+库曼鰕虎属	kù màn xiā hǔ shǔ	10
 苦命的孩子	kǔ mìng de hái zi	10
 苦命的女人	kǔ mìng de nǚ rén	10
 库默尔定理	kù mò ěr dìng lǐ	10
@@ -116067,8 +116025,6 @@ sort: by_weight
 拉文纳战役	lā wén nà zhàn yì	10
 拉文囊鳃鳗	lā wén náng sāi mán	10
 拉乌尔定律	lā wū ěr dìng lǜ	10
-拉午耳定律	lā wǔ ěr dìng lǜ	10
-喇乌耳定律	lǎ wū ěr dìng lǜ	10
 拉乌尔菌属	lā wū ěr jūn shǔ	10
 落下的功课	là xià de gōng kè	10
 落下的课程	là xià de kè chéng	10
@@ -116346,7 +116302,7 @@ sort: by_weight
 镧的同位素	lán de tóng wèi sù	10
 兰德亚条约	lán dé yà tiáo yuē	10
 懒得折腾了	lǎn de zhē teng le	10
-蓝灯𫚥虎鱼	lán dēng xiā hǔ yú	10
+蓝灯鰕虎鱼	lán dēng xiā hǔ yú	10
 蓝迪硅藻泥	lán dí guī zǎo ní	10
 蓝地黄虎旗	lán dì huáng hǔ qí	10
 蓝靛厂中学	lán diàn chǎng zhōng xué	10
@@ -116671,7 +116627,7 @@ sort: by_weight
 蓝纹蝴蝶鱼	lán wén hú dié yú	10
 兰纹夜蛾属	lán wén yè é shǔ	10
 蓝屋建筑群	lán wū jiàn zhù qún	10
-懒𫚥虎鱼属	lǎn xiā hǔ yú shǔ	10
+懒鰕虎鱼属	lǎn xiā hǔ yú shǔ	10
 篮下命中率	lán xià mìng zhòng lǜ	10
 蓝线刺尾鱼	lán xiàn cì wěi yú	10
 岚县公安局	lán xiàn gōng ān jú	10
@@ -117978,7 +117934,7 @@ sort: by_weight
 雷特综合征	léi tè zōng hé zhēng	10
 类推简化字	lèi tuī jiǎn huà zì	10
 累西腓体育	lèi xī féi tǐ yù	10
-雷𫚥虎鱼属	léi xiā hǔ yú shǔ	10
+雷鰕虎鱼属	léi xiā hǔ yú shǔ	10
 类现金资产	lèi xiàn jīn zī chǎn	10
 类纤维蛋白	lèi xiān wéi dàn bái	10
 类象剑齿象	lèi xiàng jiàn chǐ xiàng	10
@@ -119375,8 +119331,8 @@ sort: by_weight
 利息资本化	lì xī zī běn huà	10
 历下大润发	lì xià dà rùn fā	10
 立下的誓言	lì xià de shì yán	10
-犁𫚥虎鱼属	lí xiā hǔ yú shǔ	10
-鳢𫚥虎鱼属	lǐ xiā hǔ yú shǔ	10
+犁鰕虎鱼属	lí xiā hǔ yú shǔ	10
+鳢鰕虎鱼属	lǐ xiā hǔ yú shǔ	10
 立下军令状	lì xià jūn lìng zhuàng	10
 离线安装包	lí xiàn ān zhuāng bāo	10
 礼县博物馆	lǐ xiàn bó wù guǎn	10
@@ -120145,8 +120101,6 @@ sort: by_weight
 莲花山砂岩	lián huā shān shā yán	10
 莲花山社区	lián huā shān shè qū	10
 莲花山水道	lián huā shān shuǐ dào	10
-莲华生大士	lián huá shēng dà shì	10
-莲花生大师	lián huā shēng dà shī	10
 莲花生大士	lián huā shēng dà shì	10
 莲花士勋章	lián huā shì xūn zhāng	10
 莲花手菩萨	lián huā shǒu pú sà	10
@@ -120214,9 +120168,8 @@ sort: by_weight
 连接新天地	lián jiē xīn tiān dì	10
 连接已断开	lián jiē yǐ duàn kāi	10
 连接有问题	lián jiē yǒu wèn tí	10
-连接在一起	lián jiē zài yì qǐ	10
+连接在一起	lián jiē zài yì qǐ	11
 连结在一起	lián jié zài yì qǐ	10
-联结在一起	lián jié zài yì qǐ	10
 连接字符串	lián jiē zì fú chuàn	10
 连接组计划	lián jiē zǔ jì huà	10
 炼金模拟器	liàn jīn mó nǐ qì	10
@@ -120227,7 +120180,6 @@ sort: by_weight
 炼金术物质	liàn jīn shù wù zhì	10
 镰菊石亚科	lián jú shí yà kē	10
 联军总司令	lián jūn zǒng sī lìng	10
-连卡佛小姐	lián kǎ fó xiǎo jiě	10
 连看都不看	lián kàn dōu bú kàn	10
 连看都没看	lián kàn dōu méi kàn	10
 连科兰低地	lián kē lán dī dì	10
@@ -121784,7 +121736,7 @@ sort: by_weight
 瞭望台行动	liào wàng tái xíng dòng	10
 辽西翼龙属	liáo xī yì lóng shǔ	10
 聊些什么呢	liáo xiē shén me ne	10
-獠牙𫚥虎鱼	liáo yá xiā hǔ yú	10
+獠牙鰕虎鱼	liáo yá xiā hǔ yú	10
 獠牙镇祭司	liáo yá zhèn jì sī	10
 辽阳博物馆	liáo yáng bó wù guǎn	10
 辽阳东路站	liáo yáng dōng lù zhàn	10
@@ -121960,7 +121912,7 @@ sort: by_weight
 鬣蜥巨龙属	liè xī jù lóng shǔ	10
 裂隙朴丽鱼	liè xì pǔ lì yú	10
 裂隙式喷发	liè xì shì pēn fā	10
-裂𫚥虎鱼属	liè xiā hǔ yú shǔ	10
+裂鰕虎鱼属	liè xiā hǔ yú shǔ	10
 列线图解法	liè xiàn tú jiě fǎ	10
 裂项相消法	liè xiàng xiāng xiāo fǎ	10
 裂项消元法	liè xiàng xiāo yuán fǎ	10
@@ -122454,7 +122406,7 @@ sort: by_weight
 鳞尾松鼠属	lín wěi sōng shǔ shǔ	10
 鳞尾原鼠属	lín wěi yuán shǔ shǔ	10
 林西海胆属	lín xī hǎi dǎn shǔ	10
-鳞𫚥虎鱼属	lín xiā hǔ yú shǔ	10
+鳞鰕虎鱼属	lín xiā hǔ yú shǔ	10
 临夏路街道	lín xià lù jiē dào	10
 临夏州县市	lín xià zhōu xiàn shì	10
 临夏自治州	lín xià zì zhì zhōu	10
@@ -124314,7 +124266,7 @@ sort: by_weight
 留下的足迹	liú xià de zú jì	10
 留下点什么	liú xià diǎn shén me	10
 留下后遗症	liú xià hòu yí zhèng	10
-瘤𫚥虎亚科	liú xiā hǔ yà kē	10
+瘤鰕虎亚科	liú xiā hǔ yà kē	10
 留下来吃饭	liú xià lái chī fàn	10
 留下来的人	liú xià lái de rén	10
 留下了什么	liú xià le shén me	10
@@ -125764,10 +125716,7 @@ sort: by_weight
 裸奔的少年	luǒ bēn de shào nián	10
 裸奔的蜗牛	luǒ bēn de wō niú	10
 裸臂躄鱼属	luǒ bì bì yú shǔ	10
-罗必达法则	luó bì dá fǎ zé	10
-洛比达法则	luò bǐ dá fǎ zé	10
 洛必达法则	luò bì dá fǎ zé	10
-罗必塔法则	luó bì tǎ fǎ zé	10
 裸鼻夜鹰科	luǒ bí yè yīng kē	10
 裸鼻夜鹰属	luǒ bí yè yīng shǔ	10
 裸变丽蝇属	luǒ biàn lì yíng shǔ	10
@@ -127766,7 +127715,7 @@ sort: by_weight
 脉纹毛鼻鲶	mài wén máo bí nián	10
 埋下的地雷	mái xià de dì léi	10
 埋下的种子	mái xià de zhǒng zi	10
-麦𫚥虎鱼属	mài xiā hǔ yú shǔ	10
+麦鰕虎鱼属	mài xiā hǔ yú shǔ	10
 埋下了伏笔	mái xià le fú bǐ	10
 埋下了祸根	mái xià le huò gēn	10
 埋下了隐患	mái xià le yǐn huàn	10
@@ -128146,7 +128095,7 @@ sort: by_weight
 漫威蜘蛛侠	màn wēi zhī zhū xiá	10
 漫无目的地	màn wú mù dì dì	10
 满五年唯一	mǎn wǔ nián wéi yī	10
-鳗𫚥虎鱼属	mán xiā hǔ yú shǔ	10
+鳗鰕虎鱼属	mán xiā hǔ yú shǔ	10
 满血复活了	mǎn xiě fù huó le	10
 满心的欢喜	mǎn xīn de huān xǐ	10
 慢性白血病	màn xìng bái xuè bìng	10
@@ -128373,8 +128322,8 @@ sort: by_weight
 莽山烙铁头	mǎng shān lào tiě tóu	10
 邙山陵墓群	māng shān líng mù qún	10
 盲裳夜蛾属	máng shang yè é shǔ	10
-盲𫚥虎鱼属	máng xiā hǔ yú shǔ	10
-芒𫚥虎鱼属	máng xiā hǔ yú shǔ	10
+盲鰕虎鱼属	máng xiā hǔ yú shǔ	10
+芒鰕虎鱼属	máng xiā hǔ yú shǔ	10
 盲侠座头市	máng xiá zuò tóu shì	10
 茫崖行政区	máng yá xíng zhèng qū	10
 盲眼冥脂鲤	máng yǎn míng zhī lǐ	10
@@ -128756,7 +128705,7 @@ sort: by_weight
 矛尾光鳃鱼	máo wěi guāng sāi yú	10
 矛尾石首鱼	máo wěi shí shǒu yú	10
 毛尾睡鼠属	máo wěi shuì shǔ shǔ	10
-矛尾𫚥虎鱼	máo wěi xiā hǔ yú	10
+矛尾鰕虎鱼	máo wěi xiā hǔ yú	10
 矛尾鱼亚目	máo wěi yú yà mù	10
 锚文本链接	máo wén běn liàn jiē	10
 毛纹尺蛾属	máo wén chǐ é shǔ	10
@@ -129125,10 +129074,6 @@ sort: by_weight
 没地方停车	méi dì fāng tíng chē	10
 美帝国主义	měi dì guó zhǔ yì	10
 美的和格力	měi dì hé gé lì	10
-美第奇别墅	měi dì qí bié shù	10
-美迪奇家族	měi dí qí jiā zú	10
-美地奇家族	měi dì qí jiā zú	10
-美蒂奇家族	měi dì qí jiā zú	10
 美第奇家族	měi dì qí jiā zú	10
 美第奇效应	měi dì qí xiào yìng	10
 美第奇银行	měi dì qí yín háng	10
@@ -129899,7 +129844,7 @@ sort: by_weight
 美丽纹唇鱼	měi lì wén chún yú	10
 魅力无法挡	mèi lì wú fǎ dǎng	10
 美丽无极限	měi lì wú jí xiàn	10
-美丽𫚥虎属	měi lì xiā hǔ shǔ	10
+美丽鰕虎属	měi lì xiā hǔ shǔ	10
 美丽乡村游	měi lì xiāng cūn yóu	10
 美丽小条鳅	měi lì xiǎo tiáo qiū	10
 美丽斜纹蟹	měi lì xié wén xiè	10
@@ -131814,7 +131759,7 @@ sort: by_weight
 盟委副书记	méng wěi fù shū jì	10
 蒙文大藏经	méng wén dà zàng jīng	10
 萌系魔法师	méng xì mó fǎ shī	10
-猛𫚥虎鱼属	měng xiā hǔ yú shǔ	10
+猛鰕虎鱼属	měng xiā hǔ yú shǔ	10
 艋舺龙山寺	měng xiá lóng shān sì	10
 艋舺清水岩	měng xiá qīng shuǐ yán	10
 梦想大创造	mèng xiǎng dà chuàng zào	10
@@ -132180,7 +132125,7 @@ sort: by_weight
 米氏朴丽鱼	mǐ shì pǔ lì yú	10
 米氏弱蜥鱼	mǐ shì ruò xī yú	10
 米氏似刀鲶	mǐ shì sì dāo nián	10
-米氏𫚥鳉属	mǐ shì xiā jiāng shǔ	10
+米氏鰕鳉属	mǐ shì xiā jiāng shǔ	10
 米氏新海鲶	mǐ shì xīn hǎi nián	10
 米氏羽油鲶	mǐ shì yǔ yóu nián	10
 迷失在幻想	mí shī zài huàn xiǎng	10
@@ -133527,7 +133472,7 @@ sort: by_weight
 名人堂成员	míng rén táng chéng yuán	10
 名人堂级别	míng rén táng jí bié	10
 名人堂球员	míng rén táng qiú yuán	10
-明仁𫚥虎属	míng rén xiā hǔ shǔ	10
+明仁鰕虎属	míng rén xiā hǔ shǔ	10
 鸣人与佐助	míng rén yǔ zuǒ zhù	10
 名人证言法	míng rén zhèng yán fǎ	10
 明日的朝阳	míng rì de cháo yáng	10
@@ -138697,7 +138642,7 @@ sort: by_weight
 霓虹灯招牌	ní hóng dēng zhāo pái	10
 拟红花介属	nǐ hóng huā jiè shǔ	10
 拟红毛菜属	nǐ hóng máo cài shǔ	10
-霓虹𫚥虎鱼	ní hóng xiā hǔ yú	10
+霓虹鰕虎鱼	ní hóng xiā hǔ yú	10
 拟红眼蝉属	nǐ hóng yǎn chán shǔ	10
 霓虹脂鲤属	ní hóng zhī lǐ shǔ	10
 逆后宫作品	nì hòu gōng zuò pǐn	10
@@ -139886,10 +139831,7 @@ sort: by_weight
 拟蜥脂鲤属	nǐ xī zhī lǐ shǔ	10
 你下定决心	nǐ xià dìng jué xīn	10
 拟虾虎亚科	nǐ xiā hǔ yà kē	10
-拟𫚥虎亚科	nǐ xiā hǔ yà kē	10
 拟虾虎鱼属	nǐ xiā hǔ yú shǔ	10
-拟𫚥虎鱼属	nǐ xiā hǔ yú shǔ	10
-泥𫚥虎鱼属	ní xiā hǔ yú shǔ	10
 你先告诉我	nǐ xiān gào sù wǒ	10
 你先回去吧	nǐ xiān huí qù ba	10
 你先看一下	nǐ xiān kàn yí xià	10
@@ -140801,8 +140743,7 @@ sort: by_weight
 黏土岩龙属	nián tǔ yán lóng shǔ	10
 粘土质土壤	nián tǔ zhì tǔ rǎng	10
 黏土质页岩	nián tǔ zhì yè yán	10
-鲶尾藤四郎	nián wěi téng sì láng	10
-黏𫚥虎鱼属	nián xiā hǔ yú shǔ	10
+黏鰕虎鱼属	nián xiā hǔ yú shǔ	10
 年限平均法	nián xiàn píng jūn fǎ	10
 年销量目标	nián xiāo liàng mù biāo	10
 年销售收入	nián xiāo shòu shōu rù	10
@@ -141088,7 +141029,7 @@ sort: by_weight
 您正在阅读	nín zhèng zài yuè dú	10
 您最喜欢的	nín zuì xǐ huān de	10
 宁安路小学	níng ān lù xiǎo xué	10
-宁巴𫚥鳉属	níng bā xiā jiāng shǔ	10
+宁巴鰕鳉属	níng bā xiā jiāng shǔ	10
 宁避症候群	níng bì zhèng hòu qún	10
 宁边核设施	níng biān hé shè shī	10
 宁边路街道	níng biān lù jiē dào	10
@@ -141299,7 +141240,7 @@ sort: by_weight
 宁夏固原市	níng xià gù yuán shì	10
 宁夏国税局	níng xià guó shuì jú	10
 宁夏护军使	níng xià hù jūn shǐ	10
-泞𫚥虎鱼属	nìng xiā hǔ yú shǔ	10
+泞鰕虎鱼属	nìng xiā hǔ yú shǔ	10
 宁夏建筑物	níng xià jiàn zhù wù	10
 宁夏教育厅	níng xià jiào yù tīng	10
 宁夏科学家	níng xià kē xué jiā	10
@@ -144363,7 +144304,7 @@ sort: by_weight
 陪我一会儿	péi wǒ yí huì ér	10
 陪我一起看	péi wǒ yì qǐ kàn	10
 陪我走下去	péi wǒ zǒu xià qù	10
-配𫚥虎鱼属	pèi xiā hǔ yú shǔ	10
+配鰕虎鱼属	pèi xiā hǔ yú shǔ	10
 沛县公安局	pèi xiàn gōng ān jú	10
 沛县教育局	pèi xiàn jiào yù jú	10
 培训班结业	péi xùn bān jié yè	10
@@ -145474,8 +145415,8 @@ sort: by_weight
 嫖宿幼女罪	piáo sù yòu nǚ zuì	10
 飘舞的雪花	piāo wǔ de xuě huā	10
 飘舞的羽毛	piāo wǔ de yǔ máo	10
-瓢𫚥虎亚科	piáo xiā hǔ yà kē	10
-瓢𫚥虎鱼属	piáo xiā hǔ yú shǔ	10
+瓢鰕虎亚科	piáo xiā hǔ yà kē	10
+瓢鰕虎鱼属	piáo xiā hǔ yú shǔ	10
 飘香剑雨续	piāo xiāng jiàn yǔ xù	10
 飘雪的日子	piāo xuě de rì zi	10
 飘扬的国旗	piāo yáng de guó qí	10
@@ -146625,7 +146566,7 @@ sort: by_weight
 评选委员会	píng xuǎn wěi yuán huì	10
 评选一等奖	píng xuǎn yī děng jiǎng	10
 评选中荣获	píng xuǎn zhōng róng huò	10
-平牙𫚥虎属	píng yá xiā hǔ shǔ	10
+平牙鰕虎属	píng yá xiā hǔ shǔ	10
 平颜蚜蝇属	píng yán yá yíng shǔ	10
 平阳府君阙	píng yáng fǔ jūn quē	10
 平阳路街道	píng yáng lù jiē dào	10
@@ -147420,7 +147361,7 @@ sort: by_weight
 普瓦松方程	pǔ wǎ sōng fāng chéng	10
 谱系地理学	pǔ xì dì lǐ xué	10
 谱系发生学	pǔ xì fā shēng xué	10
-蹼𫚥虎鱼属	pǔ xiā hǔ yú shǔ	10
+蹼鰕虎鱼属	pǔ xiā hǔ yú shǔ	10
 莆仙大剧院	pú xiān dà jù yuàn	10
 蹼小麝鼩属	pǔ xiǎo shè qú shǔ	10
 蒲鞋市街道	pú xié shì jiē dào	10
@@ -149097,8 +149038,8 @@ sort: by_weight
 旗下公众号	qí xià gōng zhòng hào	10
 旗下工作室	qí xià gōng zuò shì	10
 旗下海贼团	qí xià hǎi zéi tuán	10
-鲯𫚥虎鱼属	qí xiā hǔ yú shǔ	10
-鳍𫚥虎鱼属	qí xiā hǔ yú shǔ	10
+鲯鰕虎鱼属	qí xiā hǔ yú shǔ	10
+鳍鰕虎鱼属	qí xiā hǔ yú shǔ	10
 栖霞山北站	qī xiá shān běi zhàn	10
 栖霞山景区	qī xiá shān jǐng qū	10
 栖霞石灰岩	qī xiá shí huī yán	10
@@ -152096,7 +152037,7 @@ sort: by_weight
 亲吻食人鱼	qīn wěn shí rén yú	10
 秦武王嬴荡	qín wǔ wáng yíng dàng	10
 勤务指挥室	qín wù zhǐ huī shì	10
-琴𫚥虎鱼属	qín xiā hǔ yú shǔ	10
+琴鰕虎鱼属	qín xiā hǔ yú shǔ	10
 沁县大云院	qìn xiàn dà yún yuàn	10
 沁县普照寺	qìn xiàn pǔ zhào sì	10
 侵晓窥檐语	qīn xiǎo kuī yán yǔ	10
@@ -157256,7 +157197,7 @@ sort: by_weight
 燃烧小宇宙	rán shāo xiǎo yǔ zhòu	10
 燃烧着的烟	rán shāo zhe de yān	10
 然氏银杏螺	rán shì yín xìng luó	10
-髯𫚥虎鱼属	rán xiā hǔ yú shǔ	10
+髯鰕虎鱼属	rán xiā hǔ yú shǔ	10
 燃油版车型	rán yóu bǎn chē xíng	10
 燃油泵支架	rán yóu bèng zhī jià	10
 燃油车时代	rán yóu chē shí dài	10
@@ -159247,7 +159188,7 @@ sort: by_weight
 人无众生相	rén wú zhòng shēng xiàng	10
 任务中失踪	rèn wù zhōng shī zōng	10
 任务状态段	rèn wù zhuàng tài duàn	10
-韧𫚥虎鱼属	rèn xiā hǔ yú shǔ	10
+韧鰕虎鱼属	rèn xiā hǔ yú shǔ	10
 任贤齐专辑	rén xián qí zhuān jí	10
 任现职以来	rèn xiàn zhí yǐ lái	10
 人像摄影师	rén xiàng shè yǐng shī	10
@@ -160270,7 +160211,7 @@ sort: by_weight
 肉体与灵魂	ròu tǐ yǔ líng hún	10
 肉丸胡辣汤	ròu wán hú là tāng	10
 肉丸糊辣汤	ròu wán hú là tāng	10
-柔𫚥虎鱼属	róu xiā hǔ yú shǔ	10
+柔鰕虎鱼属	róu xiā hǔ yú shǔ	10
 肉馅的馄饨	ròu xiàn de hún tun	10
 柔性版印刷	róu xìng bǎn yìn shuā	10
 柔性电路板	róu xìng diàn lù bǎn	10
@@ -160399,8 +160340,8 @@ sort: by_weight
 如果没问题	rú guǒ méi wèn tí	10
 如果没有爱	rú guǒ méi yǒu ài	10
 如果没有你	rú guǒ méi yǒu nǐ	10
-如果没有他	rú guǒ méi yǒu tā	10
-如果没有她	rú guǒ méi yǒu tā	10
+如果没有他	rú guǒ méi yǒu tā	12
+如果没有她	rú guǒ méi yǒu tā	11
 如果没有它	rú guǒ méi yǒu tā	10
 如果某一天	rú guǒ mǒu yì tiān	10
 如果那时候	rú guǒ nà shí hòu	10
@@ -163126,7 +163067,7 @@ sort: by_weight
 啥维基百科	shá wéi jī bǎi kē	10
 杀微生物剂	shā wēi shēng wù jì	10
 沙勿略教堂	shā wù lüè jiào táng	10
-砂𫚥虎鱼属	shā xiā hǔ yú shǔ	10
+砂鰕虎鱼属	shā xiā hǔ yú shǔ	10
 杀腺癌菌素	shā xiàn ái jūn sù	10
 傻小李元霸	shǎ xiǎo lǐ yuán bà	10
 傻眼猫咪咪	shǎ yǎn māo mī mī	10
@@ -163499,7 +163440,7 @@ sort: by_weight
 珊瑚螺亚科	shān hú luó yà kē	10
 珊瑚七夕鱼	shān hú qī xī yú	10
 珊瑚手躄鱼	shān hú shǒu bì yú	10
-珊瑚𫚥虎属	shān hú xiā hǔ shǔ	10
+珊瑚鰕虎属	shān hú xiā hǔ shǔ	10
 珊瑚蟹守螺	shān hú xiè shǒu luó	10
 珊瑚鹦嘴鱼	shān hú yīng zuǐ yú	10
 珊瑚枝衣科	shān hú zhī yī kē	10
@@ -168971,7 +168912,7 @@ sort: by_weight
 深吸了一口	shēn xī le yì kǒu	10
 深吸一口气	shēn xī yì kǒu qì	10
 深吸一口烟	shēn xī yì kǒu yān	10
-深𫚥虎鱼属	shēn xiā hǔ yú shǔ	10
+深鰕虎鱼属	shēn xiā hǔ yú shǔ	10
 深陷的眼窝	shēn xiàn de yǎn wō	10
 神仙花鮨属	shén xiān huā yì shǔ	10
 深陷降级区	shēn xiàn jiàng jí qū	10
@@ -172901,7 +172842,6 @@ sort: by_weight
 石家河遗址	shí jiā hé yí zhǐ	10
 释迦黑钟螺	shì jiā hēi zhōng luó	10
 嗜甲基菌科	shì jiǎ jī jūn kē	10
-食甲基菌属	shí jiǎ jī jūn shǔ	10
 嗜甲基菌属	shì jiǎ jī jūn shǔ	10
 噬甲基菌属	shì jiǎ jī jūn shǔ	10
 市价净值比	shì jià jìng zhí bǐ	10
@@ -175863,7 +175803,7 @@ sort: by_weight
 世袭统治者	shì xí tǒng zhì zhě	10
 食蜥王龙属	shí xī wáng lóng shǔ	10
 世袭政治家	shì xí zhèng zhì jiā	10
-嗜𫚥截颌鲤	shì xiā jié hé lǐ	10
+嗜鰕截颌鲤	shì xiā jié hé lǐ	10
 石峡口水库	shí xiá kǒu shuǐ kù	10
 石硖尾大火	shí xiá wěi dà huǒ	10
 石硖尾商场	shí xiá wěi shāng chǎng	10
@@ -176118,9 +176058,8 @@ sort: by_weight
 实验室设备	shí yàn shì shè bèi	10
 实验室设计	shí yàn shì shè jì	10
 实验室试剂	shí yàn shì shì jì	10
-实验室实验	shí yàn shì shí yàn	10
+实验室实验	shí yàn shì shí yàn	11
 实验室试验	shí yàn shì shì yàn	10
-试验室试验	shì yàn shì shì yàn	10
 实验室数据	shí yàn shì shù jù	10
 实验室数量	shí yàn shì shù liàng	10
 实验室条件	shí yàn shì tiáo jiàn	10
@@ -183567,8 +183506,8 @@ sort: by_weight
 似蜥欧白鱼	sì xī ōu bái yú	10
 私下的关系	sī xià de guān xì	10
 私下的生活	sī xià de shēng huó	10
-似𫚥虎鱼属	sì xiā hǔ yú shǔ	10
-丝𫚥虎鱼属	sī xiā hǔ yú shǔ	10
+似鰕虎鱼属	sì xiā hǔ yú shǔ	10
+丝鰕虎鱼属	sī xiā hǔ yú shǔ	10
 四下看了看	sì xià kàn le kàn	10
 私下生活中	sī xià shēng huó zhōng	10
 四线长脂鲤	sì xiàn cháng zhī lǐ	10
@@ -185465,7 +185404,7 @@ sort: by_weight
 所问非所答	suǒ wèn fēi suǒ dá	10
 梭吻鲈亚科	suō wěn lú yà kē	10
 索西比乌斯	suǒ xī bǐ wū sī	10
-梭𫚥虎鱼属	suō xiā hǔ yú shǔ	10
+梭鰕虎鱼属	suō xiā hǔ yú shǔ	10
 锁相放大器	suǒ xiāng fàng dà qì	10
 梭形高原鳅	suō xíng gāo yuán qiū	10
 所行化坦途	suǒ xíng huà tǎn tú	10
@@ -187127,7 +187066,7 @@ sort: by_weight
 太无趣了吧	tài wú qù le ba	10
 台西纬四路	tái xī wěi sì lù	10
 台西纬五路	tái xī wěi wǔ lù	10
-苔𫚥虎鱼属	tái xiā hǔ yú shǔ	10
+苔鰕虎鱼属	tái xiā hǔ yú shǔ	10
 太吓人了吧	tài xià rén le ba	10
 台下十年功	tái xià shí nián gōng	10
 苔藓虫硬体	tái xiǎn chóng yìng tǐ	10
@@ -188668,7 +188607,7 @@ sort: by_weight
 特克斯群岛	tè kè sī qún dǎo	10
 特拉法加角	tè lā fǎ jiā jiǎo	10
 特拉华公司	tè lā huá gōng sī	10
-特拉𫚥鳉属	tè lā xiā jiāng shǔ	10
+特拉鰕鳉属	tè lā xiā jiāng shǔ	10
 特朗普集团	tè lǎng pǔ jí tuán	10
 特朗普竞选	tè lǎng pǔ jìng xuǎn	10
 特朗普言论	tè lǎng pǔ yán lùn	10
@@ -192860,7 +192799,7 @@ sort: by_weight
 统武智政魅	tǒng wǔ zhì zhèng mèi	10
 同系列产品	tóng xì liè chǎn pǐn	10
 铜锡锌合金	tóng xī xīn hé jīn	10
-瞳𫚥虎鱼属	tóng xiā hǔ yú shǔ	10
+瞳鰕虎鱼属	tóng xiā hǔ yú shǔ	10
 桶狭间合战	tǒng xiá jiān hé zhàn	10
 桶狭间战记	tǒng xiá jiān zhàn jì	10
 桶狭间之役	tǒng xiá jiān zhī yì	10
@@ -193747,7 +193686,7 @@ sort: by_weight
 头陀十八物	tóu tuó shí bā wù	10
 投我以木瓜	tóu wǒ yǐ mù guā	10
 偷袭珍珠港	tōu xí zhēn zhū gǎng	10
-头𫚥虎鱼属	tóu xiā hǔ yú shǔ	10
+头鰕虎鱼属	tóu xiā hǔ yú shǔ	10
 偷闲加油站	tōu xián jiā yóu zhàn	10
 头像即本人	tóu xiàng jí běn rén	10
 偷心俏冤家	tōu xīn qiào yuān jiā	10
@@ -195039,7 +194978,7 @@ sort: by_weight
 吞武里大帝	tūn wǔ lǐ dà dì	10
 吞武里王朝	tūn wǔ lǐ wáng cháo	10
 屯溪镇海桥	tún xī zhèn hǎi qiáo	10
-豚𫚥虎鱼属	tún xiā hǔ yú shǔ	10
+豚鰕虎鱼属	tún xiā hǔ yú shǔ	10
 臀斜杜父鱼	tún xié dù fù yú	10
 豚形拟长鳅	tún xíng nǐ cháng qiū	10
 臀形吸虫属	tún xíng xī chóng shǔ	10
@@ -195116,13 +195055,6 @@ sort: by_weight
 拖挂式房车	tuō guà shì fáng chē	10
 脱光了衣服	tuō guāng le yī fu	10
 驼花天牛属	tuó huā tiān niú shǔ	10
-脱欢帖木儿	tuō huān tiē mù ér	10
-脱欢铁木儿	tuō huān tiě mù ér	10
-妥懽帖睦尔	tuǒ huān tiē mù ěr	10
-妥懽贴睦尔	tuǒ huān tiē mù ěr	10
-妥欢帖木儿	tuǒ huān tiē mù ér	10
-妥欢帖睦尔	tuǒ huān tiē mù ěr	10
-妥欢贴睦尔	tuǒ huān tiē mù ěr	10
 拓荒者广场	tuò huāng zhě guǎng chǎng	10
 拓荒者效应	tuò huāng zhě xiào yìng	10
 托吉安群岛	tuō jí ān qún dǎo	10
@@ -195774,7 +195706,7 @@ sort: by_weight
 外务副大臣	wài wù fù dà chén	10
 外务省副相	wài wù shěng fù xiāng	10
 外西凡尼亚	wài xī fán ní yà	10
-歪𫚥虎鱼属	wāi xiā hǔ yú shǔ	10
+歪鰕虎鱼属	wāi xiā hǔ yú shǔ	10
 歪霞正长岩	wāi xiá zhèng zhǎng yán	10
 外线命中率	wài xiàn mìng zhòng lǜ	10
 外现实主义	wài xiàn shí zhǔ yì	10
@@ -197736,7 +197668,7 @@ sort: by_weight
 王羲之家族	wáng xī zhī jiā zú	10
 王羲之书法	wáng xī zhī shū fǎ	10
 王羲之作品	wáng xī zhī zuò pǐn	10
-网𫚥虎鱼属	wǎng xiā hǔ yú shǔ	10
+网鰕虎鱼属	wǎng xiā hǔ yú shǔ	10
 王下七武海	wáng xià qī wǔ hǎi	10
 网下投资者	wǎng xià tóu zī zhě	10
 王仙岭街道	wáng xiān lǐng jiē dào	10
@@ -199759,8 +199691,8 @@ sort: by_weight
 微系统公司	wēi xì tǒng gōng sī	10
 微系统技术	wēi xì tǒng jì shù	10
 为希望努力	wéi xī wàng nǔ lì	10
-微𫚥虎鱼属	wēi xiā hǔ yú shǔ	10
-鳚𫚥虎鱼属	wèi xiā hǔ yú shǔ	10
+微鰕虎鱼属	wēi xiā hǔ yú shǔ	10
+鳚鰕虎鱼属	wèi xiā hǔ yú shǔ	10
 微下击暴流	wēi xià jī bào liú	10
 为霞尚满天	wéi xiá shàng mǎn tiān	10
 微下臀电鳗	wēi xià tún diàn mán	10
@@ -200640,7 +200572,7 @@ sort: by_weight
 纹腹茧蜂属	wén fù jiǎn fēng shǔ	10
 问父母要钱	wèn fù mǔ yào qián	10
 纹腹啄木鸟	wén fù zhuó mù niǎo	10
-纹缟𫚥虎鱼	wén gǎo xiā hǔ yú	10
+纹缟鰕虎鱼	wén gǎo xiā hǔ yú	10
 问工作人员	wèn gōng zuò rén yuán	10
 稳固的地位	wěn gù de dì wèi	10
 稳固的基础	wěn gù de jī chǔ	10
@@ -201435,7 +201367,7 @@ sort: by_weight
 文物数字化	wén wù shù zì huà	10
 吻细盲蛇属	wěn xì máng shé shǔ	10
 纹吸鱼亚科	wén xī yú yà kē	10
-吻𫚥虎鱼属	wěn xiā hǔ yú shǔ	10
+吻鰕虎鱼属	wěn xiā hǔ yú shǔ	10
 温峡口水库	wēn xiá kǒu shuǐ kù	10
 温县陈家沟	wēn xiàn chén jiā gōu	10
 闻香识女人	wén xiāng shí nǚ rén	10
@@ -202856,14 +202788,10 @@ sort: by_weight
 我来拯救你	wǒ lái zhěng jiù nǐ	10
 我来自北极	wǒ lái zì běi jí	10
 我来自北京	wǒ lái zì běi jīng	10
-我来自潮州	wǒ lái zì cháo zhōu	10
 我来自东方	wǒ lái zì dōng fāng	10
-我来自广州	wǒ lái zì guǎng zhōu	10
 我来自河南	wǒ lái zì hé nán	10
 我来自火星	wǒ lái zì huǒ xīng	10
 我来自哪里	wǒ lái zì nǎ lǐ	10
-我来自纽约	wǒ lái zì niǔ yuē	10
-我来自农村	wǒ lái zì nóng cūn	10
 我来自天津	wǒ lái zì tiān jīn	10
 我来自天堂	wǒ lái zì tiān táng	10
 我来自远方	wǒ lái zì yuǎn fāng	10
@@ -206491,7 +206419,7 @@ sort: by_weight
 无鳞禾叶蕨	wú lín hé yè jué	10
 无鳞肋毛蕨	wú lín lèi máo jué	10
 武林笼中对	wǔ lín lóng zhōng duì	10
-无鳞鳗𫚥虎	wú lín mán xiā hǔ	10
+无鳞鳗鰕虎	wú lín mán xiā hǔ	10
 无鳞毛枝蕨	wú lín máo zhī jué	10
 武林群侠传	wǔ lín qún xiá zhuàn	10
 武林群英会	wǔ lín qún yīng huì	10
@@ -207189,9 +207117,7 @@ sort: by_weight
 五十岁以后	wǔ shí suì yǐ hòu	10
 五十岁左右	wǔ shí suì zuǒ yòu	10
 吴式太极拳	wú shì tài jí quán	10
-吴氏太极拳	wú shì tài jí quán	10
 武式太极拳	wǔ shì tài jí quán	10
-武氏太极拳	wǔ shì tài jí quán	10
 五十万大军	wǔ shí wàn dà jūn	10
 五十万左右	wǔ shí wàn zuǒ yòu	10
 无实物表演	wú shí wù biǎo yǎn	10
@@ -210064,7 +209990,7 @@ sort: by_weight
 细纹梯形蟹	xì wén tī xíng xiè	10
 细纹天竺鲷	xì wén tiān zhú diāo	10
 细纹兔脂鲤	xì wén tù zhī lǐ	10
-溪吻𫚥虎鱼	xī wěn xiā hǔ yú	10
+溪吻鰕虎鱼	xī wěn xiā hǔ yú	10
 细纹蚬蝶属	xì wén xiǎn dié shǔ	10
 细吻鲟身鲶	xì wěn xún shēn nián	10
 细纹异脂鲤	xì wén yì zhī lǐ	10
@@ -210087,7 +210013,7 @@ sort: by_weight
 细细坡龙属	xì xì pō lóng shǔ	10
 喜溪褶脂鲤	xǐ xī zhě zhī lǐ	10
 吸溪脂鲤属	xī xī zhī lǐ shǔ	10
-吸𫚥虎鱼属	xī xiā hǔ yú shǔ	10
+吸鰕虎鱼属	xī xiā hǔ yú shǔ	10
 细狭口蛙属	xì xiá kǒu wā shǔ	10
 昔夏杉树镇	xī xià shān shù zhèn	10
 膝下有黄金	xī xià yǒu huáng jīn	10
@@ -210565,7 +210491,7 @@ sort: by_weight
 狭翅兔耳风	xiá chì tù ěr fēng	10
 狭翅羊耳蒜	xiá chì yáng ěr suàn	10
 吓出心脏病	xià chū xīn zàng bìng	10
-狭唇𫚥鳉属	xiá chún xiā jiāng shǔ	10
+狭唇鰕鳉属	xiá chún xiā jiāng shǔ	10
 下次不敢了	xià cì bù gǎn le	10
 下次还要来	xià cì hái yào lái	10
 下次会注意	xià cì huì zhù yì	10
@@ -210662,7 +210588,7 @@ sort: by_weight
 吓唬小孩的	xià hu xiǎo hái de	10
 虾虎鱼亚科	xiā hǔ yú yà kē	10
 虾虎鱼亚目	xiā hǔ yú yà mù	10
-𫚥虎鱼亚目	xiā hǔ yú yà mù	10
+鰕虎鱼亚目	xiā hǔ yú yà mù	10
 夏花般灿烂	xià huā bān càn làn	10
 下花园北站	xià huā yuán běi zhàn	10
 吓坏小朋友	xià huài xiǎo péng yǒu	10
@@ -211135,7 +211061,7 @@ sort: by_weight
 下午专业课	xià wǔ zhuān yè kè	10
 下希尔斯基	xià xī ěr sī jī	10
 下西里西亚	xià xī lǐ xī yà	10
-狭𫚥虎鱼属	xiá xiā hǔ yú shǔ	10
+狭鰕虎鱼属	xiá xiā hǔ yú shǔ	10
 遐想的空间	xiá xiǎng de kōng jiān	10
 狭小的房间	xiá xiǎo de fáng jiān	10
 狭小的世界	xiá xiǎo de shì jiè	10
@@ -212599,7 +212525,7 @@ sort: by_weight
 线下发布会	xiàn xià fā bù huì	10
 线下分享会	xiàn xià fēn xiǎng huì	10
 线下和线上	xiàn xià hé xiàn shàng	10
-衔𫚥虎鱼属	xián xiā hǔ yú shǔ	10
+衔鰕虎鱼属	xián xiā hǔ yú shǔ	10
 线下见面会	xiàn xià jiàn miàn huì	10
 线下经销商	xiàn xià jīng xiāo shāng	10
 线下零售店	xiàn xià líng shòu diàn	10
@@ -217131,7 +217057,7 @@ sort: by_weight
 小吻拟花鮨	xiǎo wěn nǐ huā yì	10
 小纹石斑鱼	xiǎo wén shí bān yú	10
 小问题不断	xiǎo wèn tí bú duàn	10
-小吻𫚥虎鱼	xiǎo wěn xiā hǔ yú	10
+小吻鰕虎鱼	xiǎo wěn xiā hǔ yú	10
 小文夜蛾属	xiǎo wén yè é shǔ	10
 小吻鹦嘴鱼	xiǎo wěn yīng zuǐ yú	10
 孝文幽皇后	xiào wén yōu huáng hòu	10
@@ -217190,8 +217116,8 @@ sort: by_weight
 消息中间件	xiāo xi zhōng jiān jiàn	10
 小西装搭配	xiǎo xī zhuāng dā pèi	10
 小西装外套	xiǎo xī zhuāng wài tào	10
-小𫚥虎亚科	xiǎo xiā hǔ yà kē	10
-小𫚥虎鱼属	xiǎo xiā hǔ yú shǔ	10
+小鰕虎亚科	xiǎo xiā hǔ yà kē	10
+小鰕虎鱼属	xiǎo xiā hǔ yú shǔ	10
 小虾虎鱼族	xiǎo xiā hǔ yú zú	10
 小狭口蛙属	xiǎo xiá kǒu wā shǔ	10
 小县城工作	xiǎo xiàn chéng gōng zuò	10
@@ -217622,18 +217548,9 @@ sort: by_weight
 小运转单机	xiǎo yùn zhuàn dān jī	10
 小运转列车	xiǎo yùn zhuàn liè chē	10
 孝哉闵子骞	xiào zāi mǐn zǐ qiān	10
-小早川濑那	xiǎo zǎo chuān lài nà	10
-小早川怜子	xiǎo zǎo chuān lián zǐ	10
-小早川凛子	xiǎo zǎo chuān lǐn zǐ	10
-小早川隆景	xiǎo zǎo chuān lóng jǐng	10
-小早川秀包	xiǎo zǎo chuān xiù bāo	10
-小早川秀秋	xiǎo zǎo chuān xiù qiū	10
 小灶海绵属	xiǎo zào hǎi mián shǔ	10
-小泽玛莉亚	xiǎo zé mǎ lì yà	10
 小泽玛利亚	xiǎo zé mǎ lì yà	10
-小泽玛丽亚	xiǎo zé mǎ lì yà	10
 小则又沐风	xiǎo zé yòu mù fēng	10
-小泽治三郎	xiǎo zé zhì sān láng	10
 小增益定理	xiǎo zēng yì dìng lǐ	10
 小窄洞菌科	xiǎo zhǎi dòng jūn kē	10
 小寨路街道	xiǎo zhài lù jiē dào	10
@@ -220306,7 +220223,7 @@ sort: by_weight
 信息知情权	xìn xī zhī qíng quán	10
 信息准确性	xìn xī zhǔn què xìng	10
 信息自动化	xìn xī zì dòng huà	10
-新𫚥虎鱼属	xīn xiā hǔ yú shǔ	10
+新鰕虎鱼属	xīn xiā hǔ yú shǔ	10
 新鲜粗玻岩	xīn xiān cū bō yán	10
 新鲜大布丁	xīn xiān dà bù dīng	10
 新现代建筑	xīn xiàn dài jiàn zhù	10
@@ -223321,7 +223238,7 @@ sort: by_weight
 许下的诺言	xǔ xià de nuò yán	10
 许下的誓言	xǔ xià de shì yán	10
 许下的愿望	xǔ xià de yuàn wàng	10
-须𫚥虎鱼属	xū xiā hǔ yú shǔ	10
+须鰕虎鱼属	xū xiā hǔ yú shǔ	10
 徐霞客故居	xú xiá kè gù jū	10
 徐霞客游记	xú xiá kè yóu jì	10
 许下了承诺	xǔ xià le chéng nuò	10
@@ -224731,7 +224648,7 @@ sort: by_weight
 学习总书记	xué xí zǒng shū jì	10
 学习最重要	xué xí zuì zhòng yào	10
 雪下的誓言	xuě xià de shì yán	10
-血𫚥虎鱼属	xuè xiā hǔ yú shǔ	10
+血鰕虎鱼属	xuè xiā hǔ yú shǔ	10
 血纤维蛋白	xuè xiān wéi dàn bái	10
 血小板功能	xuè xiǎo bǎn gōng néng	10
 学校办公室	xué xiào bàn gōng shì	10
@@ -228294,9 +228211,8 @@ sort: by_weight
 要不是昨天	yào bú shì zuó tiān	10
 要不我给你	yào bù wǒ gěi nǐ	10
 要不要把你	yào bú yào bǎ nǐ	10
+要不要把他	yào bú yào bǎ tā	11
 要不要把它	yào bú yào bǎ tā	10
-要不要把他	yào bú yào bǎ tā	10
-要不要把她	yào bú yào bǎ tā	10
 要不要把我	yào bú yào bǎ wǒ	10
 要不要出来	yào bú yào chū lái	10
 要不要凑个	yào bú yào còu gè	10
@@ -229283,9 +229199,6 @@ sort: by_weight
 叶酸缺乏症	yè suān quē fá zhèng	10
 也算是缘分	yě suàn shì yuán fèn	10
 也随之而去	yě suí zhī ér qù	10
-也孙帖木儿	yě sūn tiē mù ér	10
-也孙铁木耳	yě sūn tiě mù ěr	10
-也孙铁木儿	yě sūn tiě mù ér	10
 液态法白酒	yè tài fǎ bái jiǔ	10
 液态发动机	yè tài fā dòng jī	10
 也太贵了吧	yě tài guì le ba	10
@@ -229428,7 +229341,7 @@ sort: by_weight
 夜袭寡妇村	yè xí guǎ fù cūn	10
 也希望未来	yě xī wàng wèi lái	10
 夜袭阳明堡	yè xí yáng míng bǔ	10
-叶𫚥虎鱼属	yè xiā hǔ yú shǔ	10
+叶鰕虎鱼属	yè xiā hǔ yú shǔ	10
 腋下淋巴结	yè xià lín bā jié	10
 液下排污泵	yè xià pái wū bèng	10
 叶仙人掌属	yè xiān rén zhǎng shǔ	10
@@ -233264,7 +233177,6 @@ sort: by_weight
 乙酸孕诺酮	yǐ suān yùn nuò tóng	10
 乙酸正丙酯	yǐ suān zhèng bǐng zhǐ	10
 蚁酸正丙酯	yǐ suān zhèng bǐng zhǐ	10
-乙酸正丙脂	yǐ suān zhèng bǐng zhī	10
 乙酸正丁酯	yǐ suān zhèng dīng zhǐ	10
 蚁酸正丁酯	yǐ suān zhèng dīng zhǐ	10
 乙酸正己酯	yǐ suān zhèng jǐ zhǐ	10
@@ -233691,7 +233603,7 @@ sort: by_weight
 乙烯正离子	yǐ xī zhèng lí zǐ	10
 以下的内容	yǐ xià de nèi róng	10
 夷夏东西说	yí xià dōng xi shuō	10
-遗𫚥虎鱼属	yí xiā hǔ yú shǔ	10
+遗鰕虎鱼属	yí xiā hǔ yú shǔ	10
 以下回答中	yǐ xià huí dá zhōng	10
 以下几件事	yǐ xià jǐ jiàn shì	10
 以下几类人	yǐ xià jǐ lèi rén	10
@@ -235591,7 +235503,7 @@ sort: by_weight
 银纹袖蝶属	yín wén xiù dié shǔ	10
 因无证驾驶	yīn wú zhèng jià shǐ	10
 铟锡氧化物	yīn xī yǎng huà wù	10
-蚓𫚥虎亚科	yǐn xiā hǔ yà kē	10
+蚓鰕虎亚科	yǐn xiā hǔ yà kē	10
 银线弹涂鱼	yín xiàn dàn tú yú	10
 银线灰蝶属	yín xiàn huī dié shǔ	10
 阴线买入法	yīn xiàn mǎi rù fǎ	10
@@ -235882,6 +235794,7 @@ sort: by_weight
 印证了那句	yìn zhèng le nà jù	10
 银质沉著症	yín zhì chén zhù zhèng	10
 印制电路板	yìn zhì diàn lù bǎn	10
+印支构造期	yìn zhī gòu zào qī	10
 银质纪念币	yín zhì jì niàn bì	10
 印支陆龟属	yìn zhī lù guī shǔ	10
 银质沈著症	yín zhì shěn zhù zhèng	10
@@ -243147,7 +243060,7 @@ sort: by_weight
 原蜥脚亚目	yuán xī jiǎo yà mù	10
 圆细鳞盔鱼	yuán xì lín kuī yú	10
 原狭蚌虫属	yuán xiá bàng chóng shǔ	10
-圆𫚥虎鱼属	yuán xiā hǔ yú shǔ	10
+圆鰕虎鱼属	yuán xiā hǔ yú shǔ	10
 圆线虫亚目	yuán xiàn chóng yà mù	10
 元现代主义	yuán xiàn dài zhǔ yì	10
 原先想象的	yuán xiān xiǎng xiàng de	10
@@ -244105,7 +244018,7 @@ sort: by_weight
 云斑海猪鱼	yún bān hǎi zhū yú	10
 云斑厚纹蟹	yún bān hòu wén xiè	10
 云斑手躄鱼	yún bān shǒu bì yú	10
-云斑𫚥鳉属	yún bān xiā jiāng shǔ	10
+云斑鰕鳉属	yún bān xiā jiāng shǔ	10
 云斑野螟属	yún bān yě míng shǔ	10
 云豹装甲车	yún bào zhuāng jiǎ chē	10
 云彩卷管螺	yún cǎi juǎn guǎn luó	10
@@ -250592,7 +250505,7 @@ sort: by_weight
 针尾维达雀	zhēn wěi wéi dá què	10
 针尾雨燕属	zhēn wěi yǔ yàn shǔ	10
 镇委镇政府	zhèn wěi zhèn zhèng fǔ	10
-真吻𫚥虎鱼	zhēn wěn xiā hǔ yú	10
+真吻鰕虎鱼	zhēn wěn xiā hǔ yú	10
 真纹小油鲶	zhēn wén xiǎo yóu nián	10
 真我的风采	zhēn wǒ de fēng cǎi	10
 真武洞街道	zhēn wǔ dòng jiē dào	10
@@ -251312,7 +251225,7 @@ sort: by_weight
 政策与市场	zhèng cè yǔ shì chǎng	10
 政策制定者	zhèng cè zhì dìng zhě	10
 政策组合拳	zhèng cè zǔ hé quán	10
-正叉舌𫚥虎	zhèng chā shé xiā hǔ	10
+正叉舌鰕虎	zhèng chā shé xiā hǔ	10
 政产学研金	zhèng chǎn xué yán jīn	10
 政产学研用	zhèng chǎn xué yán yòng	10
 正常报酬率	zhèng cháng bào chou lǜ	10
@@ -253762,7 +253675,7 @@ sort: by_weight
 止咳的功效	zhǐ ké de gōng xiào	10
 指控的罪名	zhǐ kòng de zuì míng	10
 栉孔扇贝属	zhì kǒng shàn bèi shǔ	10
-栉孔𫚥虎属	zhì kǒng xiā hǔ shǔ	10
+栉孔鰕虎属	zhì kǒng xiā hǔ shǔ	10
 制空战斗机	zhì kōng zhàn dòu jī	10
 直口非鲫属	zhí kǒu fēi jì shǔ	10
 直口朴丽鱼	zhí kǒu pǔ lì yú	10
@@ -255167,7 +255080,7 @@ sort: by_weight
 窒息性气体	zhì xī xìng qì tǐ	10
 之夕阳之歌	zhī xī yáng zhī gē	10
 治下的和平	zhì xià de hé píng	10
-栉𫚥虎鱼属	zhì xiā hǔ yú shǔ	10
+栉鰕虎鱼属	zhì xiā hǔ yú shǔ	10
 直下看山河	zhí xià kàn shān hé	10
 直辖市除外	zhí xiá shì chú wài	10
 直辖市党委	zhí xiá shì dǎng wěi	10
@@ -255308,7 +255221,7 @@ sort: by_weight
 直言不讳地	zhí yán bú huì de	10
 栉咽丽鱼属	zhì yàn lì yú shǔ	10
 直言三段论	zhí yán sān duàn lùn	10
-栉眼𫚥虎属	zhì yǎn xiā hǔ shǔ	10
+栉眼鰕虎属	zhì yǎn xiā hǔ shǔ	10
 芷阳广场站	zhǐ yáng guǎng chǎng zhàn	10
 只要不放弃	zhǐ yào bú fàng qì	10
 只要不过分	zhǐ yào bú guò fēn	10
@@ -257487,7 +257400,7 @@ sort: by_weight
 中西医治疗	zhōng xī yī zhì liáo	10
 种下的种子	zhòng xià de zhǒng zi	10
 仲夏方程式	zhòng xià fāng chéng shì	10
-中𫚥虎鱼属	zhōng xiā hǔ yú shǔ	10
+中鰕虎鱼属	zhōng xiā hǔ yú shǔ	10
 仲夏满天心	zhòng xià mǎn tiān xīn	10
 仲夏夜惊魂	zhòng xià yè jīng hún	10
 仲夏夜精灵	zhòng xià yè jīng líng	10
@@ -259437,10 +259350,6 @@ sort: by_weight
 驻南非大使	zhù nán fēi dà shǐ	10
 竹南火车站	zhú nán huǒ chē zhàn	10
 猪囊尾蚴病	zhū náng wěi yòu bìng	10
-竹内惠美子	zhú nèi huì měi zǐ	10
-竹内玛丽亚	zhú nèi mǎ lì yà	10
-竹内玛莉亚	zhú nèi mǎ lì yà	10
-竹内玛利亚	zhú nèi mǎ lì yà	10
 祝你好运吧	zhù nǐ hǎo yùn ba	10
 祝你们好运	zhù nǐ men hǎo yùn	10
 祝你们平安	zhù nǐ men píng ān	10
@@ -259736,8 +259645,8 @@ sort: by_weight
 主席团委员	zhǔ xí tuán wěi yuán	10
 主席团主席	zhǔ xí tuán zhǔ xí	10
 猪细小病毒	zhū xì xiǎo bìng dú	10
-侏𫚥虎鱼属	zhū xiā hǔ yú shǔ	10
-猪𫚥虎鱼属	zhū xiā hǔ yú shǔ	10
+侏鰕虎鱼属	zhū xiā hǔ yú shǔ	10
+猪鰕虎鱼属	zhū xiā hǔ yú shǔ	10
 主线高架桥	zhǔ xiàn gāo jià qiáo	10
 诛仙青云志	zhū xiān qīng yún zhì	10
 主显圣容节	zhǔ xiǎn shèng róng jié	10
@@ -263357,7 +263266,7 @@ sort: by_weight
 仔细研究后	zǐ xì yán jiū hòu	10
 仔细阅读了	zǐ xì yuè dú le	10
 子系中山狼	zǐ xì zhōng shān láng	10
-鲻𫚥虎鱼属	zī xiā hǔ yú shǔ	10
+鲻鰕虎鱼属	zī xiā hǔ yú shǔ	10
 紫线尺蛾属	zǐ xiàn chǐ é shǔ	10
 紫线钩蛾属	zǐ xiàn gōu é shǔ	10
 自限性疾病	zì xiàn xìng jí bìng	10
@@ -264021,7 +263930,7 @@ sort: by_weight
 棕翅歌百灵	zōng chì gē bǎi líng	10
 总出场时间	zǒng chū chǎng shí jiān	10
 总传热系数	zǒng chuán rè xì shù	10
-棕刺𫚥虎鱼	zōng cì xiā hǔ yú	10
+棕刺鰕虎鱼	zōng cì xiā hǔ yú	10
 总大肠菌群	zǒng dà cháng jūn qún	10
 宗达光琳派	zōng dá guāng lín pài	10
 纵带刺尾鱼	zòng dài cì wěi yú	10
@@ -267116,7 +267025,7 @@ sort: by_weight
 阿伯山溪蟹属	ā bó shān xī xiè shǔ	10
 阿波特鲣鸟属	ā bō tè jiān niǎo shǔ	10
 阿部单棘躄鱼	ā bù dān jí bì yú	10
-阿部鲻𫚥虎鱼	ā bù zī xiā hǔ yú	10
+阿部鲻鰕虎鱼	ā bù zī xiā hǔ yú	10
 阿长与山海经	ā cháng yǔ shān hǎi jīng	10
 阿达马纳鳄属	ā dá mǎ nà è shǔ	10
 阿达曼提龙属	ā dá màn tí lóng shǔ	10
@@ -267137,13 +267046,13 @@ sort: by_weight
 阿法齿负鼠属	ā fǎ chǐ fù shǔ shǔ	10
 阿夫拉米方程	ā fū lā mǐ fāng chéng	10
 阿夫石龙子属	ā fū shí lóng zǐ shǔ	10
-阿富𫚥虎鱼属	ā fù xiā hǔ yú shǔ	10
+阿富鰕虎鱼属	ā fù xiā hǔ yú shǔ	10
 阿格雷尔效应	ā gé léi ěr xiào yìng	10
 阿根角毛鼻鲶	ā gēn jiǎo máo bí nián	10
 阿古哈角龙属	ā gǔ hā jiǎo lóng shǔ	10
 阿古哈魮脂鲤	ā gǔ hā pí zhī lǐ	10
 阿瓜大麻哈鱼	ā guā dà má hā yú	10
-阿胡𫚥虎鱼属	ā hú xiā hǔ yú shǔ	10
+阿胡鰕虎鱼属	ā hú xiā hǔ yú shǔ	10
 阿基尔贝格岛	ā jī ěr bèi gé dǎo	10
 阿基里斯龙属	ā jī lǐ sī lóng shǔ	10
 阿基米德定律	ā jī mǐ dé dìng lǜ	10
@@ -267167,7 +267076,7 @@ sort: by_weight
 阿克塞脂鲤属	ā kè sāi zhī lǐ shǔ	10
 阿科斯达龙属	ā kē sī dá lóng shǔ	10
 阿科斯喉盘鱼	ā kē sī hóu pán yú	10
-阿科𫚥虎鱼属	ā kē xiā hǔ yú shǔ	10
+阿科鰕虎鱼属	ā kē xiā hǔ yú shǔ	10
 阿库别瑞引擎	ā kù bié ruì yǐn qíng	10
 阿拉伯刺盖鱼	ā lā bó cì gài yú	10
 阿拉伯眶灯鱼	ā lā bó kuàng dēng yú	10
@@ -267235,12 +267144,12 @@ sort: by_weight
 阿普雷桂脂鲤	ā pǔ léi guì zhī lǐ	10
 阿普雷翎电鳗	ā pǔ léi líng diàn mán	10
 阿普塞尼山脉	ā pǔ sāi ní shān mài	10
-阿匍𫚥虎鱼属	ā pú xiā hǔ yú shǔ	10
+阿匍鰕虎鱼属	ā pú xiā hǔ yú shǔ	10
 阿普歇伦半岛	ā pǔ xiē lún bàn dǎo	10
 阿奇霉素颗粒	ā qí méi sù kē lì	10
 阿齐霉素磷酸	ā qí méi sù lín suān	10
 阿琴科特战役	ā qín kē tè zhàn yì	10
-阿萨𫚥虎鱼属	ā sà xiā hǔ yú shǔ	10
+阿萨鰕虎鱼属	ā sà xiā hǔ yú shǔ	10
 阿萨叶趾虎属	ā sà yè zhǐ hǔ shǔ	10
 阿塞氏黏盲鳗	ā sāi shì nián máng mán	10
 阿森诺氏菌属	ā sēn nuò shì jūn shǔ	10
@@ -267303,7 +267212,7 @@ sort: by_weight
 矮半线琴脂鲤	ǎi bàn xiàn qín zhī lǐ	10
 爱贝克思音乐	ài bèi kè sī yīn yuè	10
 艾宾浩斯曲线	ài bīn hào sī qū xiàn	10
-埃博𫚥虎鱼属	āi bó xiā hǔ yú shǔ	10
+埃博鰕虎鱼属	āi bó xiā hǔ yú shǔ	10
 矮不规则星系	ǎi bù guī zé xīng xì	10
 埃布拉赫鳄属	āi bù lā hè è shǔ	10
 埃布拉赫龙属	āi bù lā hè lóng shǔ	10
@@ -267538,8 +267447,6 @@ sort: by_weight
 爱死亡机器人	ài sǐ wáng jī qì rén	10
 爱台十二建设	ài tái shí èr jiàn shè	10
 爱探险的朵拉	ài tàn xiǎn de duǒ lā	10
-艾听豪森效应	ài tīng háo sēn xiào yìng	10
-爱听豪森效应	ài tīng háo sēn xiào yìng	10
 爱廷豪森效应	ài tíng háo sēn xiào yìng	10
 爱玩的大孩子	ài wán de dà hái zi	10
 埃文斯匙甲鲶	āi wén sī chí jiǎ nián	10
@@ -267707,7 +267614,7 @@ sort: by_weight
 按保护等级分	àn bǎo hù děng jí fēn	10
 暗孢毛筒壳属	àn bāo máo tǒng ké shǔ	10
 鞍背寡杜父鱼	ān bèi guǎ dù fù yú	10
-暗背𫚥虎鱼属	àn bèi xiā hǔ yú shǔ	10
+暗背鰕虎鱼属	àn bèi xiā hǔ yú shǔ	10
 氨苄青霉素钠	ān biàn qīng méi sù nà	10
 安伯格里斯岛	ān bó gé lǐ sī dǎo	10
 安布雷拉公司	ān bù léi lā gōng sī	10
@@ -268953,7 +268860,7 @@ sort: by_weight
 百靖高速公路	bǎi jìng gāo sù gōng lù	10
 白鲸冠状病毒	bái jīng guān zhuàng bìng dú	10
 白晶晶的鬼魂	bái jīng jīng de guǐ hún	10
-白睛𫚥虎鱼属	bái jīng xiā hǔ yú shǔ	10
+白睛鰕虎鱼属	bái jīng xiā hǔ yú shǔ	10
 白酒包装设计	bái jiǔ bāo zhuāng shè jì	10
 白酒产业发展	bái jiǔ chǎn yè fā zhǎn	10
 白酒上市公司	bái jiǔ shàng shì gōng sī	10
@@ -269023,7 +268930,7 @@ sort: by_weight
 百慕达刺蝶鱼	bǎi mù dá cì dié yú	10
 百慕达手躄鱼	bǎi mù dá shǒu bì yú	10
 百慕达重牙鲷	bǎi mù dá zhòng yá diāo	10
-百瑙钝𫚥虎鱼	bǎi nǎo dùn xiā hǔ yú	10
+百瑙钝鰕虎鱼	bǎi nǎo dùn xiā hǔ yú	10
 百内国家公园	bǎi nèi guó jiā gōng yuán	10
 百年百大电影	bǎi nián bǎi dà diàn yǐng	10
 百年百大明星	bǎi nián bǎi dà míng xīng	10
@@ -269126,9 +269033,9 @@ sort: by_weight
 白天鹅的故事	bái tiān é de gù shì	10
 白天最高气温	bái tiān zuì gāo qì wēn	10
 白天最高温度	bái tiān zuì gāo wēn dù	10
-白条钝𫚥虎鱼	bái tiáo dùn xiā hǔ yú	10
+白条钝鰕虎鱼	bái tiáo dùn xiā hǔ yú	10
 白条小卷蛾属	bái tiáo xiǎo juàn é shǔ	10
-白头𫚥虎鱼属	bái tóu xiā hǔ yú shǔ	10
+白头鰕虎鱼属	bái tóu xiā hǔ yú shǔ	10
 白臀尖嘴蜂鸟	bái tún jiān zuǐ fēng niǎo	10
 白臀紫耳蜂鸟	bái tún zǐ ěr fēng niǎo	10
 摆脱原生家庭	bǎi tuō yuán shēng jiā tíng	10
@@ -269242,7 +269149,7 @@ sort: by_weight
 半伯拉纠主义	bàn bó lā jiū zhǔ yì	10
 半侧空间忽略	bàn cè kōng jiān hū lüè	10
 板层状鱼鳞病	bǎn céng zhuàng yú lín bìng	10
-斑叉牙𫚥虎鱼	bān chā yá xiā hǔ yú	10
+斑叉牙鰕虎鱼	bān chā yá xiā hǔ yú	10
 班禅额尔德尼	bān chán é ěr dé ní	10
 半场比赛结束	bàn chǎng bǐ sài jié shù	10
 半程马拉松赛	bàn chéng mǎ lā sōng sài	10
@@ -269253,11 +269160,11 @@ sort: by_weight
 斑翅食蚜蝇属	bān chì shí yá yíng shǔ	10
 板齿泰曼鱼龙	bǎn chǐ tài màn yú lóng	10
 半大翼甲螨属	bàn dà yì jiǎ mǎn shǔ	10
-半带钝𫚥虎鱼	bàn dài dùn xiā hǔ yú	10
+半带钝鰕虎鱼	bàn dài dùn xiā hǔ yú	10
 斑带尖嘴丽鱼	bān dài jiān zuǐ lì yú	10
 半带啮齿脂鲤	bàn dài niè chǐ zhī lǐ	10
 半带翘嘴脂鲤	bàn dài qiào zuǐ zhī lǐ	10
-斑带吻𫚥虎鱼	bān dài wěn xiā hǔ yú	10
+斑带吻鰕虎鱼	bān dài wěn xiā hǔ yú	10
 半带吸宝莲鱼	bàn dài xī bǎo lián yú	10
 半导体及元件	bàn dǎo tǐ jí yuán jiàn	10
 半导体矽智财	bàn dǎo tǐ xì zhì cái	10
@@ -269266,7 +269173,7 @@ sort: by_weight
 斑点长鳍鹦鲷	bān diǎn cháng qí yīng diāo	10
 斑点单棘躄鱼	bān diǎn dān jí bì yú	10
 斑点复齿脂鲤	bān diǎn fù chǐ zhī lǐ	10
-斑点竿𫚥虎鱼	bān diǎn gān xiā hǔ yú	10
+斑点竿鰕虎鱼	bān diǎn gān xiā hǔ yú	10
 斑点鲸鹦嘴鱼	bān diǎn jīng yīng zuǐ yú	10
 斑点浪蝙蝠鱼	bān diǎn làng biān fú yú	10
 斑点拟相手蟹	bān diǎn nǐ xiāng shǒu xiè	10
@@ -269450,7 +269357,7 @@ sort: by_weight
 办理注销手续	bàn lǐ zhù xiāo shǒu xù	10
 办理助学贷款	bàn lǐ zhù xué dài kuǎn	10
 办理住院手续	bàn lǐ zhù yuàn shǒu xù	10
-半鳞𫚥虎鱼属	bàn lín xiā hǔ yú shǔ	10
+半鳞鰕虎鱼属	bàn lín xiā hǔ yú shǔ	10
 斑陆离其上下	bān lù lí qí shàng xià	10
 半路杀出一个	bàn lù shā chū yí gè	10
 伴侣植物列表	bàn lǚ zhí wù liè biǎo	10
@@ -269523,11 +269430,11 @@ sort: by_weight
 斑条隐带丽鱼	bān tiáo yǐn dài lì yú	10
 斑头大蓝翠鸟	bān tóu dà lán cuì niǎo	10
 半头帕海胆属	bàn tóu pà hǎi dǎn shǔ	10
-斑头吻𫚥虎鱼	bān tóu wěn xiā hǔ yú	10
+斑头吻鰕虎鱼	bān tóu wěn xiā hǔ yú	10
 班图斯坦制度	bān tú sī tǎn zhì dù	10
 半网纹突吻鱼	bàn wǎng wén tū wěn yú	10
 斑尾副尼丽鱼	bān wěi fù ní lì yú	10
-斑尾复𫚥虎鱼	bān wěi fù xiā hǔ yú	10
+斑尾复鰕虎鱼	bān wěi fù xiā hǔ yú	10
 斑尾马口波鱼	bān wěi mǎ kǒu bō yú	10
 斑尾爬地雀属	bān wěi pá dì què shǔ	10
 斑尾深康吉鳗	bān wěi shēn kāng jí mán	10
@@ -269537,9 +269444,9 @@ sort: by_weight
 半纹背颊刺鱼	bàn wén bèi jiá cì yú	10
 斑纹钩齿脂鲤	bān wén gōu chǐ zhī lǐ	10
 斑纹寡杜父鱼	bān wén guǎ dù fù yú	10
-斑纹雷𫚥虎鱼	bān wén léi xiā hǔ yú	10
+斑纹雷鰕虎鱼	bān wén léi xiā hǔ yú	10
 斑纹锹形虫属	bān wén qiāo xíng chóng shǔ	10
-斑纹舌𫚥虎鱼	bān wén shé xiā hǔ yú	10
+斑纹舌鰕虎鱼	bān wén shé xiā hǔ yú	10
 半吻鼠海豚属	bàn wěn shǔ hǎi tún shǔ	10
 半纹水珍鱼属	bàn wén shuǐ zhēn yú shǔ	10
 斑纹鳚杜父鱼	bān wén wèi dù fù yú	10
@@ -270372,7 +270279,7 @@ sort: by_weight
 备案管理系统	bèi àn guǎn lǐ xì tǒng	10
 被按下暂停键	bèi àn xià zàn tíng jiàn	10
 北白川宫能久	běi bái chuān gōng néng jiǔ	10
-背斑梵𫚥虎鱼	bèi bān fàn xiā hǔ yú	10
+背斑梵鰕虎鱼	bèi bān fàn xiā hǔ yú	10
 背斑复齿脂鲤	bèi bān fù chǐ zhī lǐ	10
 背斑眶锯雀鲷	bèi bān kuàng jù què diāo	10
 背斑诺德脂鲤	bèi bān nuò dé zhī lǐ	10
@@ -271221,10 +271128,10 @@ sort: by_weight
 被掩盖的时间	bèi yǎn gài de shí jiān	10
 被掩盖的真相	bèi yǎn gài de zhēn xiàng	10
 被掩埋的教堂	bèi yǎn mái de jiào táng	10
-背眼𫚥虎亚科	bèi yǎn xiā hǔ yà kē	10
-背眼𫚥虎鱼科	bèi yǎn xiā hǔ yú kē	10
+背眼鰕虎亚科	bèi yǎn xiā hǔ yà kē	10
+背眼鰕虎鱼科	bèi yǎn xiā hǔ yú kē	10
 背眼虾虎鱼科	bèi yǎn xiā hǔ yú kē	10
-背眼𫚥虎鱼属	bèi yǎn xiā hǔ yú shǔ	10
+背眼鰕虎鱼属	bèi yǎn xiā hǔ yú shǔ	10
 北洋保商银行	běi yáng bǎo shāng yín háng	10
 北洋参谋学堂	běi yáng cān móu xué táng	10
 北洋大学教授	běi yáng dà xué jiào shòu	10
@@ -271775,7 +271682,7 @@ sort: by_weight
 闭上你的眼睛	bì shàng nǐ de yǎn jing	10
 毕生高速公路	bì shēng gāo sù gōng lù	10
 彼氏矮长颌鱼	bǐ shì ǎi cháng hé yú	10
-彼氏冰𫚥虎鱼	bǐ shì bīng xiā hǔ yú	10
+彼氏冰鰕虎鱼	bǐ shì bīng xiā hǔ yú	10
 笔试成绩查询	bǐ shì chéng jì chá xún	10
 笔试成绩公布	bǐ shì chéng jì gōng bù	10
 俾什达迪王朝	bǐ shí dá dí wáng cháo	10
@@ -272076,7 +271983,7 @@ sort: by_weight
 扁头短平口鲶	biǎn tóu duǎn píng kǒu nián	10
 扁头恐怖丽鱼	biǎn tóu kǒng bù lì yú	10
 扁头拟棘茄鱼	biǎn tóu nǐ jí qié yú	10
-扁头𫚥虎鱼属	biǎn tóu xiā hǔ yú shǔ	10
+扁头鰕虎鱼属	biǎn tóu xiā hǔ yú shǔ	10
 变位肺病毒属	biàn wèi fèi bìng dú shǔ	10
 扁尾海蛇亚科	biǎn wěi hǎi shé yà kē	10
 扁尾翎电鳗属	biǎn wěi líng diàn mán shǔ	10
@@ -272102,7 +272009,7 @@ sort: by_weight
 鞭须裸巨口鱼	biān xū luǒ jù kǒu yú	10
 变循环发动机	biàn xún huán fā dòng jī	10
 变压力为动力	biàn yā lì wéi dòng lì	10
-扁眼𫚥虎鱼属	biǎn yǎn xiā hǔ yú shǔ	10
+扁眼鰕虎鱼属	biǎn yǎn xiā hǔ yú shǔ	10
 苄氧基苯硼酸	biàn yǎng jī běn péng suān	10
 苄氧基苯乙酮	biàn yǎng jī běn yǐ tóng	10
 苄氧羰基氨基	biàn yǎng tāng jī ān jī	10
@@ -272461,7 +272368,7 @@ sort: by_weight
 冰川时代系列	bīng chuān shí dài xì liè	10
 柄丛赤壳菌科	bǐng cóng chì ké jūn kē	10
 冰岛瘦狮子鱼	bīng dǎo shòu shī zi yú	10
-冰岛𫚥虎鱼属	bīng dǎo xiā hǔ yú shǔ	10
+冰岛鰕虎鱼属	bīng dǎo xiā hǔ yú shǔ	10
 饼店车辆基地	bǐng diàn chē liàng jī dì	10
 丙丁太立钢铁	bǐng dīng tài lì gāng tiě	10
 病毒传播途径	bìng dú chuán bō tú jìng	10
@@ -272705,7 +272612,7 @@ sort: by_weight
 博利瓦溪脂鲤	bó lì wǎ xī zhī lǐ	10
 玻利维亚兵鲶	bō lì wéi yà bīng nián	10
 玻利维亚钩鲶	bō lì wéi yà gōu nián	10
-玻璃𫚥虎鱼属	bō li xiā hǔ yú shǔ	10
+玻璃鰕虎鱼属	bō li xiā hǔ yú shǔ	10
 玻璃虾虎鱼属	bō li xiā hǔ yú shǔ	10
 玻璃小银汉鱼	bō li xiǎo yín hàn yú	10
 伯利兹海猪鱼	bó lì zī hǎi zhū yú	10
@@ -272761,7 +272668,7 @@ sort: by_weight
 柏氏似鳞头鳅	bó shì sì lín tóu qiū	10
 博氏丝龙头鱼	bó shì sī lóng tóu yú	10
 波氏似弱棘鱼	bō shì sì ruò jí yú	10
-波氏吻𫚥虎鱼	bō shì wěn xiā hǔ yú	10
+波氏吻鰕虎鱼	bō shì wěn xiā hǔ yú	10
 博士学位论文	bó shì xué wèi lùn wén	10
 博士学位授权	bó shì xué wèi shòu quán	10
 博士学位授予	bó shì xué wèi shòu yǔ	10
@@ -275339,9 +275246,6 @@ sort: by_weight
 侧头大眼脂鲤	cè tóu dà yǎn zhī lǐ	10
 侧头真唇脂鲤	cè tóu zhēn chún zhī lǐ	10
 测土配方施肥	cè tǔ pèi fāng shī féi	10
-策妄阿喇布坦	cè wàng ā lǎ bù tǎn	10
-策旺阿拉布坦	cè wàng ā lā bù tǎn	10
-策妄阿拉布坦	cè wàng ā lā bù tǎn	10
 侧纹南极鱼属	cè wén nán jí yú shǔ	10
 侧纹岩松鼠属	cè wén yán sōng shǔ shǔ	10
 侧狭腹胡蜂属	cè xiá fù hú fēng shǔ	10
@@ -275486,7 +275390,7 @@ sort: by_weight
 茶山交警大队	chá shān jiāo jǐng dà duì	10
 叉扇尾蜂鸟属	chā shàn wěi fēng niǎo shǔ	10
 茶山竹海街道	chá shān zhú hǎi jiē dào	10
-叉舌𫚥虎鱼属	chā shé xiā hǔ yú shǔ	10
+叉舌鰕虎鱼属	chā shé xiā hǔ yú shǔ	10
 查氏副狮子鱼	chá shì fù shī zi yú	10
 查氏诺德脂鲤	chá shì nuò dé zhī lǐ	10
 查氏瘦狮子鱼	chá shì shòu shī zi yú	10
@@ -275523,7 +275427,7 @@ sort: by_weight
 查询相关信息	chá xún xiāng guān xìn xī	10
 叉牙七鳃鳗属	chā yá qī sāi mán shǔ	10
 叉牙虾虎鱼属	chā yá xiā hǔ yú shǔ	10
-叉牙𫚥虎鱼属	chā yá xiā hǔ yú shǔ	10
+叉牙鰕虎鱼属	chā yá xiā hǔ yú shǔ	10
 茶叶产业发展	chá yè chǎn yè fā zhǎn	10
 茶叶加工企业	chá yè jiā gōng qǐ yè	10
 茶叶生产加工	chá yè shēng chǎn jiā gōng	10
@@ -276618,7 +276522,7 @@ sort: by_weight
 长臀副仙女鱼	cháng tún fù xiān nǚ yú	10
 长臀裸背电鳗	cháng tún luǒ bèi diàn mán	10
 长臀拟蜥脂鲤	cháng tún nǐ xī zhī lǐ	10
-长臀𫚥虎鱼属	cháng tún xiā hǔ yú shǔ	10
+长臀鰕虎鱼属	cháng tún xiā hǔ yú shǔ	10
 长臀小胸电鳗	cháng tún xiǎo xiōng diàn mán	10
 长臀鸭嘴蜥鱼	cháng tún yā zuǐ xī yú	10
 长臀壮象鼻鱼	cháng tún zhuàng xiàng bí yú	10
@@ -277553,7 +277457,7 @@ sort: by_weight
 成都文化公园	chéng dū wén huà gōng yuán	10
 成都温江机场	chéng dū wēn jiāng jī chǎng	10
 成都文理学院	chéng dū wén lǐ xué yuàn	10
-成都吻𫚥虎鱼	chéng dū wěn xiā hǔ yú	10
+成都吻鰕虎鱼	chéng dū wěn xiā hǔ yú	10
 成都乌鲁木齐	chéng dū wū lǔ mù qí	10
 成都西川中学	chéng dū xī chuān zhōng xué	10
 成都谢菲联队	chéng dū xiè fēi lián duì	10
@@ -277798,7 +277702,7 @@ sort: by_weight
 成人自学考试	chéng rén zì xué kǎo shì	10
 诚如神之所说	chéng rú shén zhī suǒ shuō	10
 橙色拟隆头鱼	chéng sè nǐ lóng tóu yú	10
-橙色叶𫚥虎鱼	chéng sè yè xiā hǔ yú	10
+橙色叶鰕虎鱼	chéng sè yè xiā hǔ yú	10
 橙色预警信号	chéng sè yù jǐng xìn hào	10
 城市安全系统	chéng shì ān quán xì tǒng	10
 城市便捷酒店	chéng shì biàn jié jiǔ diàn	10
@@ -278842,7 +278746,7 @@ sort: by_weight
 楚加耶夫反应	chǔ jiā yé fū fǎn yìng	10
 出价最高的人	chū jià zuì gāo de rén	10
 出家做了和尚	chū jiā zuò le hé shàng	10
-触角沟𫚥虎鱼	chù jiǎo gōu xiā hǔ yú	10
+触角沟鰕虎鱼	chù jiǎo gōu xiā hǔ yú	10
 出具保留意见	chū jù bǎo liú yì jiàn	10
 出具法律意见	chū jù fǎ lǜ yì jiàn	10
 出具鉴定意见	chū jù jiàn dìng yì jiàn	10
@@ -279927,7 +279831,7 @@ sort: by_weight
 刺腹四齿脂鲤	cì fù sì chǐ zhī lǐ	10
 赐福镇宅圣君	cì fú zhèn zhái shèng jūn	10
 刺盖太阳鱼属	cì gài tài yáng yú shǔ	10
-刺盖𫚥虎鱼属	cì gài xiā hǔ yú shǔ	10
+刺盖鰕虎鱼属	cì gài xiā hǔ yú shǔ	10
 刺刚毛状菌属	cì gāng máo zhuàng jūn shǔ	10
 刺管牛肝菌属	cì guǎn niú gān jūn shǔ	10
 磁光克尔效应	cí guāng kè ěr xiào yìng	10
@@ -280396,7 +280300,7 @@ sort: by_weight
 粗颌福氏躄鱼	cū hé fú shì bì yú	10
 粗棘唇银汉鱼	cū jí chún yín hàn yú	10
 粗棘𫚒杜父鱼	cū jí fú dù fù yú	10
-粗棘𫚥虎鱼属	cū jí xiā hǔ yú shǔ	10
+粗棘鰕虎鱼属	cū jí xiā hǔ yú shǔ	10
 促甲状腺激素	cù jiǎ zhuàng xiàn jī sù	10
 促进安全生产	cù jìn ān quán shēng chǎn	10
 促进产城融合	cù jìn chǎn chéng róng hé	10
@@ -281181,11 +281085,11 @@ sort: by_weight
 大口康吉鳗属	dà kǒu kāng jí mán shǔ	10
 大口拉蒙特鲶	dà kǒu lā méng tè nián	10
 大口拟珍灯鱼	dà kǒu nǐ zhēn dēng yú	10
-大口髯𫚥虎鱼	dà kǒu rán xiā hǔ yú	10
+大口髯鰕虎鱼	dà kǒu rán xiā hǔ yú	10
 大口石首鱼属	dà kǒu shí shǒu yú shǔ	10
 大口似真小鲤	dà kǒu sì zhēn xiǎo lǐ	10
 大口驼背脂鲤	dà kǒu tuó bèi zhī lǐ	10
-大口𫚥虎鱼属	dà kǒu xiā hǔ yú shǔ	10
+大口鰕虎鱼属	dà kǒu xiā hǔ yú shǔ	10
 大口小眼蛇鳗	dà kǒu xiǎo yǎn shé mán	10
 大口小银汉鱼	dà kǒu xiǎo yín hàn yú	10
 大口隐带丽鱼	dà kǒu yǐn dài lì yú	10
@@ -281264,9 +281168,9 @@ sort: by_weight
 大鳞非洲脂鲤	dà lín fēi zhōu zhī lǐ	10
 大鳞副双边鱼	dà lín fù shuāng biān yú	10
 大鳞副仙女鱼	dà lín fù xiān nǚ yú	10
-大鳞沟𫚥虎鱼	dà lín gōu xiā hǔ yú	10
-大鳞孔𫚥虎鱼	dà lín kǒng xiā hǔ yú	10
-大鳞鳍𫚥虎鱼	dà lín qí xiā hǔ yú	10
+大鳞沟鰕虎鱼	dà lín gōu xiā hǔ yú	10
+大鳞孔鰕虎鱼	dà lín kǒng xiā hǔ yú	10
+大鳞鳍鰕虎鱼	dà lín qí xiā hǔ yú	10
 大鳞似美鳍鱼	dà lín sì měi qí yú	10
 大鳞新灯笼鱼	dà lín xīn dēng lóng yú	10
 大鳞雅南极鱼	dà lín yǎ nán jí yú	10
@@ -281499,7 +281403,7 @@ sort: by_weight
 大头拟杜父鱼	dà tóu nǐ dù fù yú	10
 大头平腹脂鲤	dà tóu píng fù zhī lǐ	10
 大头荨麻鳗鲶	dà tóu qián má mán nián	10
-大头𫚥虎鱼属	dà tóu xiā hǔ yú shǔ	10
+大头鰕虎鱼属	dà tóu xiā hǔ yú shǔ	10
 大头小雷氏鲶	dà tóu xiǎo léi shì nián	10
 大头竹节虫属	dà tóu zhú jié chóng shǔ	10
 大土耳其主义	dà tǔ ěr qí zhǔ yì	10
@@ -281721,7 +281625,7 @@ sort: by_weight
 大咽无齿脂鲤	dà yàn wú chǐ zhī lǐ	10
 大眼无齿脂鲤	dà yǎn wú chǐ zhī lǐ	10
 大眼溪银汉鱼	dà yǎn xī yín hàn yú	10
-大眼𫚥虎鱼属	dà yǎn xiā hǔ yú shǔ	10
+大眼鰕虎鱼属	dà yǎn xiā hǔ yú shǔ	10
 大咽下口蜻鲶	dà yàn xià kǒu qīng nián	10
 大眼下银汉鱼	dà yǎn xià yín hàn yú	10
 大眼巽他银鱼	dà yǎn xùn tā yín yú	10
@@ -281969,7 +281873,7 @@ sort: by_weight
 戴氏副双边鱼	dài shì fù shuāng biān yú	10
 戴氏钩杜父鱼	dài shì gōu dù fù yú	10
 戴氏突颌脂鲤	dài shì tū hé zhī lǐ	10
-戴氏吻𫚥虎鱼	dài shì wěn xiā hǔ yú	10
+戴氏吻鰕虎鱼	dài shì wěn xiā hǔ yú	10
 戴氏无齿鳗鲶	dài shì wú chǐ mán nián	10
 戴氏准舌唇鱼	dài shì zhǔn shé chún yú	10
 代数基本定理	dài shù jī běn dìng lǐ	10
@@ -284241,7 +284145,7 @@ sort: by_weight
 电磁屏蔽性能	diàn cí píng bì xìng néng	10
 电磁相互作用	diàn cí xiāng hù zuò yòng	10
 电大开放教育	diàn dà kāi fàng jiào yù	10
-点带叉舌𫚥虎	diǎn dài chā shé xiā hǔ	10
+点带叉舌鰕虎	diǎn dài chā shé xiā hǔ	10
 碘代类甲腺质	diǎn dài lèi jiǎ xiàn zhì	10
 典当管理办法	diǎn dàng guǎn lǐ bàn fǎ	10
 颠倒的帕特玛	diān dǎo de pà tè mǎ	10
@@ -284748,19 +284652,14 @@ sort: by_weight
 电影就是电影	diàn yǐng jiù shì diàn yǐng	10
 电影剧情介绍	diàn yǐng jù qíng jiè shào	10
 电影里的故事	diàn yǐng lǐ de gù shì	10
-电影龙腾万里	diàn yǐng lóng téng wàn lǐ	10
-电影马路天使	diàn yǐng mǎ lù tiān shǐ	10
 电影配乐作品	diàn yǐng pèi yuè zuò pǐn	10
 电影票房冠军	diàn yǐng piào fáng guàn jūn	10
 电影票房收入	diàn yǐng piào fáng shōu rù	10
 电影评论网站	diàn yǐng píng lùn wǎng zhàn	10
 电影器材公司	diàn yǐng qì cái gōng sī	10
-电影日照重庆	diàn yǐng rì zhào chóng qìng	10
-电影社会主义	diàn yǐng shè huì zhǔ yì	10
 电影审查制度	diàn yǐng shěn chá zhì dù	10
 电影生日快乐	diàn yǐng shēng rì kuài lè	10
 电影声音制作	diàn yǐng shēng yīn zhì zuò	10
-电影天地英雄	diàn yǐng tiān dì yīng xióng	10
 电影贴片广告	diàn yǐng tiē piàn guǎng gào	10
 电影文化中心	diàn yǐng wén huà zhōng xīn	10
 电影文学剧本	diàn yǐng wén xué jù běn	10
@@ -286052,7 +285951,7 @@ sort: by_weight
 独自一人在家	dú zì yì rén zài jiā	10
 肚子越来越大	dù zi yuè lái yuè dà	10
 独自在外打拼	dú zì zài wài dǎ pīn	10
-短阿科𫚥虎鱼	duǎn ā kē xiā hǔ yú	10
+短阿科鰕虎鱼	duǎn ā kē xiā hǔ yú	10
 短矮甲螨总科	duǎn ǎi jiǎ mǎn zǒng kē	10
 短孢牛肝菌属	duǎn bāo niú gān jūn shǔ	10
 短背丹鲸口鱼	duǎn bèi dān jīng kǒu yú	10
@@ -286073,7 +285972,7 @@ sort: by_weight
 短齿单瘤酸模	duǎn chǐ dān liú suān mó	10
 短翅拟蜢跳螳	duǎn chì nǐ měng tiào táng	10
 短翅迅足长蝽	duǎn chì xùn zú cháng chūn	10
-短唇钝𫚥虎鱼	duǎn chún dùn xiā hǔ yú	10
+短唇钝鰕虎鱼	duǎn chún dùn xiā hǔ yú	10
 短唇细甲美鲶	duǎn chún xì jiǎ měi nián	10
 短道速度滑冰	duǎn dào sù dù huá bīng	10
 短道速滑赛事	duǎn dào sù huá sài shì	10
@@ -286252,7 +286151,7 @@ sort: by_weight
 短吻三线舌鳎	duǎn wěn sān xiàn shé tǎ	10
 短吻狮子鱼属	duǎn wěn shī zi yú shǔ	10
 短吻瘦银汉鱼	duǎn wěn shòu yín hàn yú	10
-短吻吻𫚥虎鱼	duǎn wěn wěn xiā hǔ yú	10
+短吻吻鰕虎鱼	duǎn wěn wěn xiā hǔ yú	10
 短吻下口蜻鲶	duǎn wěn xià kǒu qīng nián	10
 短吻小颌海龙	duǎn wěn xiǎo hé hǎi lóng	10
 断纹真动齿鳚	duàn wén zhēn dòng chǐ wèi	10
@@ -286589,7 +286488,7 @@ sort: by_weight
 敦克尔克撤退	dūn kè ěr kè chè tuì	10
 敦克尔克战役	dūn kè ěr kè zhàn yì	10
 敦刻尔克战役	dūn kè ěr kè zhàn yì	10
-钝孔𫚥虎鱼属	dùn kǒng xiā hǔ yú shǔ	10
+钝孔鰕虎鱼属	dùn kǒng xiā hǔ yú shǔ	10
 钝孔虾虎鱼属	dùn kǒng xiā hǔ yú shǔ	10
 沌口长江大桥	dùn kǒu cháng jiāng dà qiáo	10
 钝口拟狮子鱼	dùn kǒu nǐ shī zi yú	10
@@ -286600,17 +286499,17 @@ sort: by_weight
 钝头拟盾甲鲶	dùn tóu nǐ dùn jiǎ nián	10
 钝尾拟天竺鲷	dùn wěi nǐ tiān zhú diāo	10
 钝尾施氏油鲶	dùn wěi shī shì yóu nián	10
-钝尾𫚥虎鱼属	dùn wěi xiā hǔ yú shǔ	10
+钝尾鰕虎鱼属	dùn wěi xiā hǔ yú shǔ	10
 钝吻副狮子鱼	dùn wěn fù shī zi yú	10
 钝吻角鳃脂鲤	dùn wěn jiǎo sāi zhī lǐ	10
 钝吻臼齿丽鲷	dùn wěn jiù chǐ lì diāo	10
 钝吻锯齿雀鲷	dùn wěn jù chǐ què diāo	10
-钝吻雷𫚥虎鱼	dùn wěn léi xiā hǔ yú	10
+钝吻雷鰕虎鱼	dùn wěn léi xiā hǔ yú	10
 钝吻线鳍电鳗	dùn wěn xiàn qí diàn mán	10
 盾形毛肤石鳖	dùn xíng máo fū shí biē	10
 盾形提灯虫属	dùn xíng tí dēng chóng shǔ	10
 盾胸金花虫属	dùn xiōng jīn huā chóng shǔ	10
-钝牙𫚥虎鱼属	dùn yá xiā hǔ yú shǔ	10
+钝牙鰕虎鱼属	dùn yá xiā hǔ yú shǔ	10
 盾叶粗筒苣苔	dùn yè cū tǒng jù tái	10
 盾叶光叶苣苔	dùn yè guāng yè jù tái	10
 钝叶华贵黄耆	dùn yè huá guì huáng qí	10
@@ -286710,7 +286609,7 @@ sort: by_weight
 多传感器融合	duō chuán gǎn qì róng hé	10
 多穿一件衣服	duō chuān yí jiàn yī fu	10
 多椎钩齿脂鲤	duō chuí gōu chǐ zhī lǐ	10
-多椎𫚥虎鱼属	duō chuí xiā hǔ yú shǔ	10
+多椎鰕虎鱼属	duō chuí xiā hǔ yú shǔ	10
 多刺背棘鱼属	duō cì bèi jí yú shǔ	10
 多次参加全国	duō cì cān jiā quán guó	10
 多刺床杜父鱼	duō cì chuáng dù fù yú	10
@@ -286755,7 +286654,7 @@ sort: by_weight
 多机器人系统	duō jī qì rén xì tǒng	10
 多棘似肩灯鱼	duō jí sì jiān dēng yú	10
 多棘索深鼬鱼	duō jí suǒ shēn yòu yú	10
-多棘𫚥虎鱼属	duō jí xiā hǔ yú shǔ	10
+多棘鰕虎鱼属	duō jí xiā hǔ yú shǔ	10
 多棘小眼渊鱼	duō jí xiǎo yǎn yuān yú	10
 多基因病毒目	duō jī yīn bìng dú mù	10
 多家保险公司	duō jiā bǎo xiǎn gōng sī	10
@@ -286807,8 +286706,8 @@ sort: by_weight
 多纹纤巨口鱼	duō wén xiān jù kǒu yú	10
 哆沃网络科技	duō wò wǎng luò kē jì	10
 多线驼背脂鲤	duō xiàn tuó bèi zhī lǐ	10
-多线吻𫚥虎鱼	duō xiàn wěn xiā hǔ yú	10
-多线叶𫚥虎鱼	duō xiàn yè xiā hǔ yú	10
+多线吻鰕虎鱼	duō xiàn wěn xiā hǔ yú	10
+多线叶鰕虎鱼	duō xiàn yè xiā hǔ yú	10
 多线真巨口鱼	duō xiàn zhēn jù kǒu yú	10
 夺项王天下者	duó xiàng wàng tiān xià zhě	10
 惰性初始模式	duò xìng chū shǐ mó shì	10
@@ -288607,7 +288506,7 @@ sort: by_weight
 反逆的鲁鲁修	fǎn nì de lǔ lǔ xiū	10
 反逆的鲁路修	fǎn nì de lǔ lù xiū	10
 范尼斯特鲁伊	fàn ní sī tè lǔ yī	10
-范尼𫚥虎鱼属	fàn ní xiā hǔ yú shǔ	10
+范尼鰕虎鱼属	fàn ní xiā hǔ yú shǔ	10
 范诺氏朴丽鱼	fàn nuò shì pǔ lì yú	10
 反虐待动物法	fǎn nüè dài dòng wù fǎ	10
 翻拍的电视剧	fān pāi de diàn shì jù	10
@@ -289451,9 +289350,6 @@ sort: by_weight
 翡翠手镯价格	fěi cuì shǒu zhuó jià gé	10
 翡翠窝大阴谋	fěi cuì wō dà yīn móu	10
 肥大性脊柱炎	féi dà xìng jǐ zhù yán	10
-绯弹的亚利亚	fēi dàn de yà lì yà	10
-绯弹的亚莉亚	fēi dàn de yà lì yà	10
-绯弹的亚里亚	fēi dàn de yà lǐ yà	10
 菲岛关公蟹属	fēi dǎo guān gōng xiè shǔ	10
 飞刀又见叉叉	fēi dāo yòu jiàn chā chā	10
 飞刀又见飞刀	fēi dāo yòu jiàn fēi dāo	10
@@ -289486,11 +289382,11 @@ sort: by_weight
 费尔蒂症候群	fèi ěr dì zhèng hòu qún	10
 费尔干纳龙属	fèi ěr gàn nà lóng shǔ	10
 费尔干纳盆地	fèi ěr gàn nà pén dì	10
-费尔缰𫚥虎鱼	fèi ěr jiāng xiā hǔ yú	10
+费尔缰鰕虎鱼	fèi ěr jiāng xiā hǔ yú	10
 菲尔角银光鱼	fēi ěr jiǎo yín guāng yú	10
 费尔马大定理	fèi ěr mǎ dà dìng lǐ	10
 费尔马小定理	fèi ěr mǎ xiǎo dìng lǐ	10
-费尔𫚥虎鱼属	fèi ěr xiā hǔ yú shǔ	10
+费尔鰕虎鱼属	fèi ěr xiā hǔ yú shǔ	10
 非二元性别者	fēi èr yuán xìng bié zhě	10
 飞儿乐团专辑	fēi ér yuè tuán zhuān jí	10
 非法持有毒品	fēi fǎ chí yǒu dú pǐn	10
@@ -290219,7 +290115,7 @@ sort: by_weight
 枫长翅痣大蚜	fēng cháng chì zhì dà yá	10
 蜂巢奇露尾甲	fēng cháo qí lù wěi jiǎ	10
 蜂巢苔藓虫属	fēng cháo tái xiǎn chóng shǔ	10
-蜂巢𫚥虎鱼属	fēng cháo xiā hǔ yú shǔ	10
+蜂巢鰕虎鱼属	fēng cháo xiā hǔ yú shǔ	10
 丰臣家的人们	fēng chén jiā de rén men	10
 凤城高级中学	fèng chéng gāo jí zhōng xué	10
 凤城十二路站	fèng chéng shí èr lù zhàn	10
@@ -290700,7 +290596,7 @@ sort: by_weight
 辅导孩子功课	fǔ dǎo hái zi gōng kè	10
 辅导孩子学习	fǔ dǎo hái zi xué xí	10
 辅导孩子作业	fǔ dǎo hái zi zuò yè	10
-福岛吻𫚥虎鱼	fú dǎo wěn xiā hǔ yú	10
+福岛吻鰕虎鱼	fú dǎo wěn xiā hǔ yú	10
 富德生命人寿	fù dé shēng mìng rén shòu	10
 副等杀牛蝎属	fù děng shā niú xiē shǔ	10
 釜底抽薪之计	fǔ dǐ chōu xīn zhī jì	10
@@ -290915,7 +290811,7 @@ sort: by_weight
 副交感神经节	fù jiāo gǎn shén jīng jié	10
 副角翼甲螨属	fù jiǎo yì jiǎ mǎn shǔ	10
 阜锦高速公路	fù jǐn gāo sù gōng lù	10
-副锦𫚥虎鱼属	fù jǐn xiā hǔ yú shǔ	10
+副锦鰕虎鱼属	fù jǐn xiā hǔ yú shǔ	10
 副金星介亚科	fù jīn xīng jiè yà kē	10
 副锯刺盖鱼属	fù jù cì gài yú shǔ	10
 俯瞰长江大桥	fǔ kàn cháng jiāng dà qiáo	10
@@ -290930,7 +290826,7 @@ sort: by_weight
 妇科微创手术	fù kē wēi chuāng shǒu shù	10
 妇科疑难杂症	fù kē yí nán zá zhèng	10
 妇科诊疗中心	fù kē zhěn liáo zhōng xīn	10
-副孔𫚥虎鱼属	fù kǒng xiā hǔ yú shǔ	10
+副孔鰕虎鱼属	fù kǒng xiā hǔ yú shǔ	10
 付款凭单审计	fù kuǎn píng dān shěn jì	10
 富拉斯特恩岩	fù lā sī tè ēn yán	10
 弗拉特氏菌属	fú lā tè shì jūn shǔ	10
@@ -291053,7 +290949,7 @@ sort: by_weight
 妇女月经不调	fù nǚ yuè jīng bù tiáo	10
 妇女政权论者	fù nǚ zhèng quán lùn zhě	10
 阜盘高速公路	fù pán gāo sù gōng lù	10
-腹瓢𫚥虎鱼属	fù piáo xiā hǔ yú shǔ	10
+腹瓢鰕虎鱼属	fù piáo xiā hǔ yú shǔ	10
 扶贫产业发展	fú pín chǎn yè fā zhǎn	10
 扶贫产业园区	fú pín chǎn yè yuán qū	10
 扶贫第一书记	fú pín dì yī shū jì	10
@@ -291430,7 +291326,7 @@ sort: by_weight
 阜阳师范学院	fù yáng shī fàn xué yuàn	10
 阜阳西关机场	fù yáng xī guān jī chǎng	10
 抚养亚利桑那	fǔ yǎng yà lì sāng nà	10
-副叶𫚥虎鱼属	fù yè xiā hǔ yú shǔ	10
+副叶鰕虎鱼属	fù yè xiā hǔ yú shǔ	10
 复议程序终止	fù yì chéng xù zhōng zhǐ	10
 伏伊伏丁那人	fú yī fú dīng nà rén	10
 富驿酒店集团	fù yì jiǔ diàn jí tuán	10
@@ -291682,7 +291578,7 @@ sort: by_weight
 钙化性肌腱炎	gài huà xìng jī jiàn yán	10
 钙黄绿素钾盐	gài huáng lǜ sù jiǎ yán	10
 盖基冰原岛峰	gài jī bīng yuán dǎo fēng	10
-盖棘𫚥虎鱼属	gài jí xiā hǔ yú shǔ	10
+盖棘鰕虎鱼属	gài jí xiā hǔ yú shǔ	10
 盖甲板护卫舰	gài jiǎ bǎn hù wèi jiàn	10
 钙碱性火山岩	gài jiǎn xìng huǒ shān yán	10
 该结婚的年纪	gāi jié hūn de nián jì	10
@@ -291796,7 +291692,7 @@ sort: by_weight
 改善月经不调	gǎi shàn yuè jīng bù tiáo	10
 改善住房条件	gǎi shàn zhù fáng tiáo jiàn	10
 盖上锅盖焖煮	gài shàng guō gài mèn zhǔ	10
-盖氏沟𫚥虎鱼	gài shì gōu xiā hǔ yú	10
+盖氏沟鰕虎鱼	gài shì gōu xiā hǔ yú	10
 盖氏内项鳍鲶	gài shì nèi xiàng qí nián	10
 盖氏蜥形脂鲤	gài shì xī xíng zhī lǐ	10
 盖氏隐带丽鱼	gài shì yǐn dài lì yú	10
@@ -292756,7 +292652,7 @@ sort: by_weight
 高崎经济大学	gāo qí jīng jì dà xué	10
 高鳍锯腹脂鲤	gāo qí jù fù zhī lǐ	10
 高鳍玫瑰脂鲤	gāo qí méi guī zhī lǐ	10
-高鳍𫚥虎鱼属	gāo qí xiā hǔ yú shǔ	10
+高鳍鰕虎鱼属	gāo qí xiā hǔ yú shǔ	10
 高强度的比赛	gāo qiáng dù de bǐ sài	10
 高强度的学习	gāo qiáng dù de xué xí	10
 高强度的训练	gāo qiáng dù de xùn liàn	10
@@ -293638,7 +293534,7 @@ sort: by_weight
 哥伦比亚钩鲶	gē lún bǐ yà gōu nián	10
 哥伦比亚美鲶	gē lún bǐ yà měi nián	10
 格洛斯特蜥属	gé luò sī tè xī shǔ	10
-戈罗𫚥虎鱼属	gē luó xiā hǔ yú shǔ	10
+戈罗鰕虎鱼属	gē luó xiā hǔ yú shǔ	10
 各律师事务所	gè lǜ shī shì wù suǒ	10
 个美丽的乡镇	gè měi lì de xiāng zhèn	10
 革命传统教育	gé mìng chuán tǒng jiào yù	10
@@ -295259,7 +295155,6 @@ sort: by_weight
 宫颈机能不全	gōng jǐng jī néng bù quán	10
 宫颈糜烂手术	gōng jǐng mí làn shǒu shù	10
 宫颈糜烂治疗	gōng jǐng mí làn zhì liáo	10
-宫颈那氏囊肿	gōng jǐng nà shì náng zhǒng	10
 宫颈纳氏囊肿	gōng jǐng nà shì náng zhǒng	10
 宫颈粘液检查	gōng jǐng nián yè jiǎn chá	10
 宫颈轻度糜烂	gōng jǐng qīng dù mí làn	10
@@ -296859,7 +296754,7 @@ sort: by_weight
 寡佬飞行日记	guǎ lǎo fēi xíng rì jì	10
 寡鳞荷马条鳅	guǎ lín hé mǎ tiáo qiū	10
 寡鳞欧雅罗鱼	guǎ lín ōu yǎ luó yú	10
-寡鳞𫚥虎鱼属	guǎ lín xiā hǔ yú shǔ	10
+寡鳞鰕虎鱼属	guǎ lín xiā hǔ yú shǔ	10
 挂牛头卖马肉	guà niú tóu mài mǎ ròu	10
 挂牌出让公告	guà pái chū ràng gōng gào	10
 挂牌出让文件	guà pái chū ràng wén jiàn	10
@@ -301471,7 +301366,7 @@ sort: by_weight
 耗散结构理论	hào sàn jié gòu lǐ lùn	10
 好事不怕细论	hǎo shì bú pà xì lùn	10
 豪氏前齿脂鲤	háo shì qián chǐ zhī lǐ	10
-豪氏衔𫚥虎鱼	háo shì xián xiā hǔ yú	10
+豪氏衔鰕虎鱼	háo shì xián xiā hǔ yú	10
 郝氏中国鸟龙	hǎo shì zhōng guó niǎo lóng	10
 好熟悉的名字	hǎo shú xī de míng zì	10
 好死不如恶活	hǎo sǐ bù rú è huó	10
@@ -301908,7 +301803,7 @@ sort: by_weight
 和林格尔剪纸	hé lín gé ěr jiǎn zhǐ	10
 和林格尔县人	hé lín gé ěr xiàn rén	10
 褐鳞美银汉鱼	hè lín měi yín hàn yú	10
-颌鳞𫚥虎鱼属	hé lín xiā hǔ yú shǔ	10
+颌鳞鰕虎鱼属	hé lín xiā hǔ yú shǔ	10
 河流生态系统	hé liú shēng tài xì tǒng	10
 河流数目定律	hé liú shu mù dìng lǜ	10
 河流之王塔姆	hé liú zhī wáng tǎ mǔ	10
@@ -302377,7 +302272,7 @@ sort: by_weight
 黑带钩齿脂鲤	hēi dài gōu chǐ zhī lǐ	10
 黑带光鳃雀鲷	hēi dài guāng sāi què diāo	10
 黑带虹银汉鱼	hēi dài hóng yín hàn yú	10
-黑带缰𫚥虎鱼	hēi dài jiāng xiā hǔ yú	10
+黑带缰鰕虎鱼	hēi dài jiāng xiā hǔ yú	10
 黑带臼齿丽鲷	hēi dài jiù chǐ lì diāo	10
 黑带鳞鳍梅鲷	hēi dài lín qí méi diāo	10
 黑带密光鳃鱼	hēi dài mì guāng sāi yú	10
@@ -302394,7 +302289,7 @@ sort: by_weight
 黑点钩齿脂鲤	hēi diǎn gōu chǐ zhī lǐ	10
 黑点卷管螺属	hēi diǎn juǎn guǎn luó shǔ	10
 黑点瘤姬蜂属	hēi diǎn liú jī fēng shǔ	10
-黑点衔𫚥虎鱼	hēi diǎn xián xiā hǔ yú	10
+黑点衔鰕虎鱼	hēi diǎn xián xiā hǔ yú	10
 黑点真巨口鱼	hēi diǎn zhēn jù kǒu yú	10
 黑顶唐纳雀属	hēi dǐng táng nà què shǔ	10
 黑洞无毛定理	hēi dòng wú máo dìng lǐ	10
@@ -302418,7 +302313,7 @@ sort: by_weight
 黑腹副狮子鱼	hēi fù fù shī zi yú	10
 黑腹果蝇基因	hēi fù guǒ yíng jī yīn	10
 黑腹新亮丽鲷	hēi fù xīn liàng lì diāo	10
-黑副叶𫚥虎鱼	hēi fù yè xiā hǔ yú	10
+黑副叶鰕虎鱼	hēi fù yè xiā hǔ yú	10
 黑格尔的哲学	hēi gé ěr de zhé xué	10
 黑公交轮奸案	hēi gōng jiāo lún jiān àn	10
 黑冠长臂猿属	hēi guān cháng bì yuán shǔ	10
@@ -302445,7 +302340,7 @@ sort: by_weight
 黑箭运载火箭	hēi jiàn yùn zài huǒ jiàn	10
 黑脚毛腿蜂鸟	hēi jiǎo máo tuǐ fēng niǎo	10
 黑脚松腿蜂鸟	hēi jiǎo sōng tuǐ fēng niǎo	10
-黑角叶𫚥虎鱼	hēi jiǎo yè xiā hǔ yú	10
+黑角叶鰕虎鱼	hēi jiǎo yè xiā hǔ yú	10
 黑脚印第安人	hēi jiǎo yìn dì ān rén	10
 黑晶状体孢属	hēi jīng zhuàng tǐ bāo shǔ	10
 黑巨口鱼亚科	hēi jù kǒu yú yà kē	10
@@ -302795,7 +302690,7 @@ sort: by_weight
 横穿高速公路	héng chuān gāo sù gōng lù	10
 横川后殖吸虫	héng chuān hòu zhí xī chóng	10
 横穿西伯利亚	héng chuān xī bó lì yà	10
-恒春吻𫚥虎鱼	héng chūn wěn xiā hǔ yú	10
+恒春吻鰕虎鱼	héng chūn wěn xiā hǔ yú	10
 恒大滨河左岸	héng dà bīn hé zuǒ àn	10
 恒大冰泉商标	héng dà bīng quán shāng biāo	10
 恒大的许家印	héng dà de xǔ jiā yìn	10
@@ -302857,7 +302752,7 @@ sort: by_weight
 横跨亚欧大陆	héng kuà yà ōu dà lù	10
 衡昆高速公路	héng kūn gāo sù gōng lù	10
 亨利护照指数	hēng lì hù zhào zhǐ shù	10
-横列叉舌𫚥虎	héng liè chā shé xiā hǔ	10
+横列叉舌鰕虎	héng liè chā shé xiā hǔ	10
 恒茂国际都会	héng mào guó jì dōu huì	10
 衡南高速公路	héng nán gāo sù gōng lù	10
 亨尼巴病毒属	hēng ní bā bìng dú shǔ	10
@@ -302958,7 +302853,7 @@ sort: by_weight
 弘成教育集团	hóng chéng jiào yù jí tuán	10
 鸿池善右卫门	hóng chí shàn yòu wèi mén	10
 红翅细尾鹩莺	hóng chì xì wěi liáo yīng	10
-红虫纹底𫚥鳉	hóng chóng wén dǐ xiā jiāng	10
+红虫纹底鰕鳉	hóng chóng wén dǐ xiā jiāng	10
 宏创高科集团	hóng chuàng gāo kē jí tuán	10
 红唇矛耙丽鱼	hóng chún máo bà lì yú	10
 红唇直口非鲫	hóng chún zhí kǒu fēi jì	10
@@ -302973,7 +302868,7 @@ sort: by_weight
 红得一塌糊涂	hóng de yī tā hú tu	10
 红灯牌收音机	hóng dēng pái shōu yīn jī	10
 红点设计大奖	hóng diǎn shè jì dà jiǎng	10
-红点叶𫚥虎鱼	hóng diǎn yè xiā hǔ yú	10
+红点叶鰕虎鱼	hóng diǎn yè xiā hǔ yú	10
 红豆面包超人	hóng dòu miàn bāo chāo rén	10
 红额金翅雀属	hóng é jīn chì què shǔ	10
 红额金刚鹦鹉	hóng é jīn gāng yīng wǔ	10
@@ -303028,7 +302923,7 @@ sort: by_weight
 弘光科技大学	hóng guāng kē jì dà xué	10
 红硅硼铝钙石	hóng guī péng lǚ gài shí	10
 红海长鳍鹦鲷	hóng hǎi cháng qí yīng diāo	10
-红海钝𫚥虎鱼	hóng hǎi dùn xiā hǔ yú	10
+红海钝鰕虎鱼	hóng hǎi dùn xiā hǔ yú	10
 红海副单鳍鱼	hóng hǎi fù dān qí yú	10
 鸿海精密工业	hóng hǎi jīng mì gōng yè	10
 鸿海科技集团	hóng hǎi kē jì jí tuán	10
@@ -303080,7 +302975,7 @@ sort: by_weight
 虹口足球场站	hóng kǒu zú qiú chǎng zhàn	10
 红蜡烛与人鱼	hóng là zhú yú rén yú	10
 红蓝五角星旗	hóng lán wǔ jiǎo xīng qí	10
-红狼牙𫚥虎鱼	hóng láng yá xiā hǔ yú	10
+红狼牙鰕虎鱼	hóng láng yá xiā hǔ yú	10
 宏利金融中心	hóng lì jīn róng zhōng xīn	10
 红联北村社区	hóng lián běi cūn shè qū	10
 红帘石英片岩	hóng lián shí yīng piàn yán	10
@@ -303377,7 +303272,7 @@ sort: by_weight
 厚唇裸重唇鱼	hòu chún luǒ chóng chún yú	10
 厚唇牛胭脂鱼	hòu chún niú yān zhī yú	10
 厚唇双冠丽鱼	hòu chún shuāng guān lì yú	10
-厚唇𫚥虎鱼属	hòu chún xiā hǔ yú shǔ	10
+厚唇鰕虎鱼属	hòu chún xiā hǔ yú shǔ	10
 厚唇雅罗鱼属	hòu chún yǎ luó yú shǔ	10
 厚唇原黑丽鱼	hòu chún yuán hēi lì yú	10
 厚唇珠母丽鱼	hòu chún zhū mǔ lì yú	10
@@ -304217,14 +304112,14 @@ sort: by_weight
 华丽长臀脂鲤	huá lì cháng tún zhī lǐ	10
 华丽长尾风鸟	huá lì cháng wěi fēng niǎo	10
 华丽长足虻属	huá lì cháng zú méng shǔ	10
-华丽钝𫚥虎鱼	huá lì dùn xiā hǔ yú	10
+华丽钝鰕虎鱼	huá lì dùn xiā hǔ yú	10
 华丽咖喱食桌	huá lì gā lí shí zhuō	10
 华丽高速公路	huá lì gāo sù gōng lù	10
 华丽家族股份	huá lì jiā zú gǔ fèn	10
 华丽金属乐团	huá lì jīn shǔ yuè tuán	10
 华丽咖哩食桌	huá lì kā lī shí zhuō	10
 华丽细尾鹩莺	huá lì xì wěi liáo yīng	10
-华丽衔𫚥虎鱼	huá lì xián xiā hǔ yú	10
+华丽衔鰕虎鱼	huá lì xián xiā hǔ yú	10
 花莲慈济医院	huā lián cí jì yī yuàn	10
 花莲地方法院	huā lián dì fāng fǎ yuàn	10
 花莲东华大学	huā lián dōng huá dà xué	10
@@ -305312,7 +305207,7 @@ sort: by_weight
 黄帝内经素问	huáng dì nèi jīng sù wèn	10
 皇帝圣印战记	huáng dì shèng yìn zhàn jì	10
 皇帝御笔匾额	huáng dì yù bǐ biǎn é	10
-黄点梵𫚥虎鱼	huáng diǎn fàn xiā hǔ yú	10
+黄点梵鰕虎鱼	huáng diǎn fàn xiā hǔ yú	10
 黄点副帆鳍鱼	huáng diǎn fù fān qí yú	10
 黄点黑斑蛾属	huáng diǎn hēi bān é shǔ	10
 黄顶小霸鹟属	huáng dǐng xiǎo bà wēng shǔ	10
@@ -305326,7 +305221,7 @@ sort: by_weight
 黄浮高速公路	huáng fú gāo sù gōng lù	10
 黄腹扇尾鹟属	huáng fù shàn wěi wēng shǔ	10
 黄腹丝隆头鱼	huáng fù sī lóng tóu yú	10
-黄副叶𫚥虎鱼	huáng fù yè xiā hǔ yú	10
+黄副叶鰕虎鱼	huáng fù yè xiā hǔ yú	10
 黄冈长江大桥	huáng gāng cháng jiāng dà qiáo	10
 皇岗商务中心	huáng gǎng shāng wù zhōng xīn	10
 黄冈师范学院	huáng gāng shī fàn xué yuàn	10
@@ -305374,7 +305269,7 @@ sort: by_weight
 黄河迎宾馆站	huáng hé yíng bīn guǎn zhàn	10
 皇后成长计划	huáng hòu chéng zhǎng jì huà	10
 皇后石首鱼属	huáng hòu shí shǒu yú shǔ	10
-皇后𫚥虎鱼属	huáng hòu xiā hǔ yú shǔ	10
+皇后鰕虎鱼属	huáng hòu xiā hǔ yú shǔ	10
 皇后乐队歌曲	huáng hòu yuè duì gē qǔ	10
 黄花吊石苣苔	huáng huā diào shí jù tái	10
 黄花过长沙舅	huáng huā guò cháng shā jiù	10
@@ -305561,7 +305456,7 @@ sort: by_weight
 黄埔文冲船舶	huáng pǔ wén chōng chuán bó	10
 黄埔宣道小学	huáng pǔ xuān dào xiǎo xué	10
 黄埔有轨电车	huáng pǔ yǒu guǐ diàn chē	10
-黄鳍刺𫚥虎鱼	huáng qí cì xiā hǔ yú	10
+黄鳍刺鰕虎鱼	huáng qí cì xiā hǔ yú	10
 黄鳍大眼非鲫	huáng qí dà yǎn fēi jì	10
 黄岐高级中学	huáng qí gāo jí zhōng xué	10
 黄鳍拟金眼鲷	huáng qí nǐ jīn yǎn diāo	10
@@ -305609,7 +305504,7 @@ sort: by_weight
 黄体功能不全	huáng tǐ gōng néng bù quán	10
 黄体功能不足	huáng tǐ gōng néng bù zú	10
 黄体生成激素	huáng tǐ shēng chéng jī sù	10
-黄体叶𫚥虎鱼	huáng tǐ yè xiā hǔ yú	10
+黄体叶鰕虎鱼	huáng tǐ yè xiā hǔ yú	10
 黄条绣隆头鱼	huáng tiáo xiù lóng tóu yú	10
 黄铁绢英岩化	huáng tiě juàn yīng yán huà	10
 黄铁炭质页岩	huáng tiě tàn zhì yè yán	10
@@ -305843,7 +305738,7 @@ sort: by_weight
 灰蓝扁尾海蛇	huī lán biǎn wěi hǎi shé	10
 辉蓝细尾鹩莺	huī lán xì wěi liáo yīng	10
 惠勒空军基地	huì lè kōng jūn jī dì	10
-惠勒𫚥虎鱼属	huì lè xiā hǔ yú shǔ	10
+惠勒鰕虎鱼属	huì lè xiā hǔ yú shǔ	10
 回了一趟老家	huí le yí tàng lǎo jiā	10
 会理非拟溪蟹	huì lǐ fēi nǐ xī xiè	10
 汇联金融服务	huì lián jīn róng fú wù	10
@@ -305944,7 +305839,7 @@ sort: by_weight
 汇文女子中学	huì wén nǚ zǐ zhōng xué	10
 汇文实验学校	huì wén shí yàn xué xiào	10
 珲乌高速公路	huī wū gāo sù gōng lù	10
-灰细棘𫚥虎鱼	huī xì jí xiā hǔ yú	10
+灰细棘鰕虎鱼	huī xì jí xiā hǔ yú	10
 汇贤产业信托	huì xián chǎn yè xìn tuō	10
 回乡偶书二首	huí xiāng ǒu shū èr shǒu	10
 惠新西街北口	huì xīn xī jiē běi kǒu	10
@@ -307558,7 +307453,7 @@ sort: by_weight
 极品飞车系列	jí pǐn fēi chē xì liè	10
 极品中的极品	jí pǐn zhōng de jí pǐn	10
 级乒乓球比赛	jí pīng pāng qiú bǐ sài	10
-棘平牙𫚥虎鱼	jí píng yá xiā hǔ yú	10
+棘平牙鰕虎鱼	jí píng yá xiā hǔ yú	10
 及其变化规律	jí qí biàn huà guī lǜ	10
 及其变化理论	jí qí biàn huà lǐ lùn	10
 极其不负责任	jí qí bú fù zé rèn	10
@@ -308499,7 +308394,7 @@ sort: by_weight
 嘉庚体育馆站	jiā gēng tǐ yù guǎn zhàn	10
 加工承揽合同	jiā gōng chéng lǎn hé tong	10
 加工定作合同	jiā gōng dìng zuò hé tong	10
-颊沟𫚥虎鱼属	jiá gōu xiā hǔ yú shǔ	10
+颊沟鰕虎鱼属	jiá gōu xiā hǔ yú shǔ	10
 甲骨文诉谷歌	jiǎ gǔ wén sù gǔ gē	10
 贾瓜拉矛丽鱼	jiǎ guā lā máo lì yú	10
 贾贵宝莲灯鱼	jiǎ guì bǎo lián dēng yú	10
@@ -310030,7 +309925,7 @@ sort: by_weight
 监控解决方案	jiān kòng jiě jué fāng àn	10
 监控录像显示	jiān kòng lù xiàng xiǎn shì	10
 肩孔南极鱼属	jiān kǒng nán jí yú shǔ	10
-肩孔𫚥虎鱼属	jiān kǒng xiā hǔ yú shǔ	10
+肩孔鰕虎鱼属	jiān kǒng xiā hǔ yú shǔ	10
 监控指挥中心	jiān kòng zhǐ huī zhōng xīn	10
 艰苦边远地区	jiān kǔ biān yuǎn dì qū	10
 艰苦创业精神	jiān kǔ chuàng yè jīng shén	10
@@ -311591,7 +311486,7 @@ sort: by_weight
 矫枉必须过正	jiǎo wǎng bì xū guò zhèng	10
 交往交流交融	jiāo wǎng jiāo liú jiāo róng	10
 交往一段时间	jiāo wǎng yí duàn shí jiān	10
-角吻𫚥虎鱼属	jiǎo wěn xiā hǔ yú shǔ	10
+角吻鰕虎鱼属	jiǎo wěn xiā hǔ yú shǔ	10
 教我爱的一切	jiāo wǒ ài de yí qiè	10
 叫我好好学习	jiào wǒ hǎo hǎo xué xí	10
 叫我姐姐就好	jiào wǒ jiě jie jiù hǎo	10
@@ -312621,7 +312516,7 @@ sort: by_weight
 金黄拟项鳍鲶	jīn huáng nǐ xiàng qí nián	10
 金黄葡萄球菌	jīn huáng pú táo qiú jūn	10
 金黄色葡萄菌	jīn huáng sè pú táo jūn	10
-金黄舌𫚥虎鱼	jīn huáng shé xiā hǔ yú	10
+金黄舌鰕虎鱼	jīn huáng shé xiā hǔ yú	10
 金黄卧孔菌属	jīn huáng wò kǒng jūn shǔ	10
 进货查验记录	jìn huò chá yàn jì lù	10
 金活医药集团	jīn huó yī yào jí tuán	10
@@ -313040,7 +312935,7 @@ sort: by_weight
 近视矫正手术	jìn shì jiǎo zhèng shǒu shù	10
 金氏软杜父鱼	jīn shì ruǎn dù fù yú	10
 近视太阳镜片	jìn shì tài yáng jìng piàn	10
-金氏𫚥虎鱼属	jīn shì xiā hǔ yú shǔ	10
+金氏鰕虎鱼属	jīn shì xiā hǔ yú shǔ	10
 禁食野生动物	jìn shí yě shēng dòng wù	10
 近视治疗手术	jìn shì zhì liáo shǒu shù	10
 金属板材加工	jīn shǔ bǎn cái jiā gōng	10
@@ -314932,7 +314827,7 @@ sort: by_weight
 据韩联社报道	jù hán lián shè bào dào	10
 聚合氯化铝铁	jù hé lǜ huà lǚ tiě	10
 聚核糖聚合酶	jù hé táng jù hé méi	10
-巨颌𫚥虎鱼属	jù hé xiā hǔ yú shǔ	10
+巨颌鰕虎鱼属	jù hé xiā hǔ yú shǔ	10
 聚合支付平台	jù hé zhī fù píng tái	10
 桔红拟天竺鲷	jú hóng nǐ tiān zhú diāo	10
 橘红色的火焰	jú hóng sè de huǒ yàn	10
@@ -315018,7 +314913,7 @@ sort: by_weight
 锯鳞冰杜父鱼	jù lín bīng dù fù yú	10
 锯鳞四鳍旗鱼	jù lín sì qí qí yú	10
 聚磷酸雌二醇	jù lín suān cí èr chún	10
-锯鳞𫚥虎鱼属	jù lín xiā hǔ yú shǔ	10
+锯鳞鰕虎鱼属	jù lín xiā hǔ yú shǔ	10
 锯鳞下银汉鱼	jù lín xià yín hàn yú	10
 聚六亚甲基胍	jù liù yà jiǎ jī guā	10
 居鲁士大帝墓	jū lǔ shì dà dì mù	10
@@ -315568,7 +315463,7 @@ sort: by_weight
 军国主义教育	jūn guó zhǔ yì jiào yù	10
 军国主义思想	jūn guó zhǔ yì sī xiǎng	10
 骏河湾烛光鱼	jùn hé wān zhú guāng yú	10
-骏河𫚥虎鱼属	jùn hé xiā hǔ yú shǔ	10
+骏河鰕虎鱼属	jùn hé xiā hǔ yú shǔ	10
 竣宏数位科技	jùn hóng shù wèi kē jì	10
 峻煌生化科技	jùn huáng shēng huà kē jì	10
 郡级重巡洋舰	jùn jí zhòng xún yáng jiàn	10
@@ -315707,7 +315602,7 @@ sort: by_weight
 咖啡酰酒石酸	kā fēi xiān jiǔ shí suān	10
 咖啡鱼都来米	kā fēi yú dōu lái mǐ	10
 卡佛哈氏甲鲶	kǎ fó hā shì jiǎ nián	10
-卡佛𫚥虎鱼属	kǎ fó xiā hǔ yú shǔ	10
+卡佛鰕虎鱼属	kǎ fó xiā hǔ yú shǔ	10
 卡夫食品公司	kǎ fū shí pǐn gōng sī	10
 卡冈杜亚鸟属	kǎ gāng dù yà niǎo shǔ	10
 卡贵塔视星鲶	kǎ guì tǎ shì xīng nián	10
@@ -315774,7 +315669,7 @@ sort: by_weight
 卡氏丝隆头鱼	kǎ shì sī lóng tóu yú	10
 卡氏丝鳍花鮨	kǎ shì sī qí huā yì	10
 卡氏突颌脂鲤	kǎ shì tū hé zhī lǐ	10
-喀氏吻𫚥虎鱼	kā shì wěn xiā hǔ yú	10
+喀氏吻鰕虎鱼	kā shì wěn xiā hǔ yú	10
 卡氏线鳍电鳗	kǎ shì xiàn qí diàn mán	10
 卡氏小项鳍鲶	kǎ shì xiǎo xiàng qí nián	10
 卡氏渊底蛇鳗	kǎ shì yuān dǐ shé mán	10
@@ -316019,7 +315914,7 @@ sort: by_weight
 开始结束时间	kāi shǐ jié shù shí jiān	10
 凯氏隆背海鲶	kǎi shì lóng bèi hǎi nián	10
 凯氏拟蜥脂鲤	kǎi shì nǐ xī zhī lǐ	10
-凯氏衔𫚥虎鱼	kǎi shì xián xiā hǔ yú	10
+凯氏衔鰕虎鱼	kǎi shì xián xiā hǔ yú	10
 凯氏小雷氏鲶	kǎi shì xiǎo léi shì nián	10
 开始学习摄影	kāi shǐ xué xí shè yǐng	10
 凯氏隐带丽鱼	kǎi shì yǐn dài lì yú	10
@@ -316851,7 +316746,7 @@ sort: by_weight
 可动遗传因子	kě dòng yí chuán yīn zi	10
 蝌蚪宽杜父鱼	kē dǒu kuān dù fù yú	10
 蝌蚪狮子鱼属	kē dǒu shī zi yú shǔ	10
-蝌蚪𫚥虎鱼属	kē dǒu xiā hǔ yú shǔ	10
+蝌蚪鰕虎鱼属	kē dǒu xiā hǔ yú shǔ	10
 可对角化矩阵	kě duì jiǎo huà jǔ zhèn	10
 科多夫下口鲶	kē duō fū xià kǒu nián	10
 科恩氏假鳃鳉	kē ēn shì jiǎ sāi jiāng	10
@@ -318201,7 +318096,7 @@ sort: by_weight
 库鲁航天中心	kù lǔ háng tiān zhōng xīn	10
 库伦利齿脂鲤	kù lún lì chǐ zhī lǐ	10
 库伦摩擦定律	kù lún mó cā dìng lǜ	10
-库曼𫚥虎鱼属	kù màn xiā hǔ yú shǔ	10
+库曼鰕虎鱼属	kù màn xiā hǔ yú shǔ	10
 库那科萨战役	kù nà kē sà zhàn yì	10
 库那克萨战役	kù nà kè sà zhàn yì	10
 库宁登丽鱼属	kù níng dēng lì yú shǔ	10
@@ -318497,7 +318392,7 @@ sort: by_weight
 宽脉啮小蜂属	kuān mài niè xiǎo fēng shǔ	10
 宽频码分多址	kuān pín mǎ fēn duō zhǐ	10
 宽鳍短鳃灯鱼	kuān qí duǎn sāi dēng yú	10
-宽鳃𫚥虎鱼属	kuān sāi xiā hǔ yú shǔ	10
+宽鳃鰕虎鱼属	kuān sāi xiā hǔ yú shǔ	10
 款式多种多样	kuǎn shì duō zhǒng duō yàng	10
 宽松的阔腿裤	kuān sōng de kuò tuǐ kù	10
 宽松的连衣裙	kuān sōng de lián yī qún	10
@@ -318552,7 +318447,7 @@ sort: by_weight
 矿床综合评价	kuàng chuáng zōng hé píng jià	10
 矿大南湖校区	kuàng dà nán hú xiào qū	10
 矿工的安全帽	kuàng gōng de ān quán mào	10
-眶管𫚥虎鱼属	kuàng guǎn xiā hǔ yú shǔ	10
+眶管鰕虎鱼属	kuàng guǎn xiā hǔ yú shǔ	10
 匡衡凿壁借光	kuāng héng záo bì jiè guāng	10
 框架合作协议	kuàng jià hé zuò xié yì	10
 框架结构设计	kuàng jià jié gòu shè jì	10
@@ -318773,7 +318668,7 @@ sort: by_weight
 廓清思想迷雾	kuò qīng sī xiǎng mí wù	10
 扩散交代作用	kuò sàn jiāo dài zuò yòng	10
 扩散条件转差	kuò sàn tiáo jiàn zhuǎn chà	10
-阔头深𫚥虎鱼	kuò tóu shēn xiā hǔ yú	10
+阔头深鰕虎鱼	kuò tóu shēn xiā hǔ yú	10
 阔尾隐蜂鸟属	kuò wěi yǐn fēng niǎo shǔ	10
 阔叶十大功劳	kuò yè shí dà gōng láo	10
 阔羽复叶耳蕨	kuò yǔ fù yè ěr jué	10
@@ -319009,7 +318904,7 @@ sort: by_weight
 蓝迪国际智库	lán dí guó jì zhì kù	10
 蓝靛厂金夕园	lán diàn chǎng jīn xī yuán	10
 蓝点大咽齿鲷	lán diǎn dà yàn chǐ diāo	10
-蓝点缰𫚥虎鱼	lán diǎn jiāng xiā hǔ yú	10
+蓝点缰鰕虎鱼	lán diǎn jiāng xiā hǔ yú	10
 蓝调音乐类型	lán diào yīn yuè lèi xíng	10
 蓝顶毛腿蜂鸟	lán dǐng máo tuǐ fēng niǎo	10
 蓝顶松腿蜂鸟	lán dǐng sōng tuǐ fēng niǎo	10
@@ -319203,7 +319098,7 @@ sort: by_weight
 狼行千里吃肉	láng xíng qiān lǐ chī ròu	10
 朗讯科技公司	lǎng xùn kē jì gōng sī	10
 狼牙特种部队	láng yá tè zhǒng bù duì	10
-狼牙𫚥虎鱼属	láng yá xiā hǔ yú shǔ	10
+狼牙鰕虎鱼属	láng yá xiā hǔ yú shǔ	10
 朗之万方程式	lǎng zhī wàn fāng chéng shì	10
 廊涿高速公路	láng zhuō gāo sù gōng lù	10
 酪氨酸酶蘑菇	lào ān suān méi mó gū	10
@@ -319679,7 +319574,7 @@ sort: by_weight
 利哈准舌唇鱼	lì hā zhǔn shé chún yú	10
 里海航空公司	lǐ hǎi háng kōng gōng sī	10
 里海七鳃鳗属	lǐ hǎi qī sāi mán shǔ	10
-里海𫚥虎鱼属	lǐ hǎi xiā hǔ yú shǔ	10
+里海鰕虎鱼属	lǐ hǎi xiā hǔ yú shǔ	10
 利好消息不断	lì hǎo xiāo xī bú duàn	10
 利好政策出台	lì hǎo zhèng cè chū tái	10
 利赫诺夫斯基	lì hè nuò fū sī jī	10
@@ -320097,7 +319992,7 @@ sort: by_weight
 礼天下之奇才	lǐ tiān xià zhī qí cái	10
 丽亭华苑酒店	lì tíng huá yuàn jiǔ diàn	10
 犁头鳅碘泡虫	lí tóu qiū diǎn pào chóng	10
-犁突𫚥虎鱼属	lí tū xiā hǔ yú shǔ	10
+犁突鰕虎鱼属	lí tū xiā hǔ yú shǔ	10
 利托迈里茨基	lì tuō mài lǐ cí jī	10
 里瓦几亚条约	lǐ wǎ jǐ yà tiáo yuē	10
 力旺格林春天	lì wàng gé lín chūn tiān	10
@@ -320593,7 +320488,7 @@ sort: by_weight
 联盟最佳阵容	lián méng zuì jiā zhèn róng	10
 廉明奇判公案	lián míng qí pàn gōng àn	10
 连名字都丢了	lián míng zì dōu diū le	10
-连膜𫚥虎鱼属	lián mó xiā hǔ yú shǔ	10
+连膜鰕虎鱼属	lián mó xiā hǔ yú shǔ	10
 联萘酚磷酸酯	lián nài fēn lín suān zhǐ	10
 连片特困地区	lián piàn tè kùn dì qū	10
 连鳍长吻鱼属	lián qí cháng wěn yú shǔ	10
@@ -321247,8 +321142,8 @@ sort: by_weight
 疗效及安全性	liáo xiào jí ān quán xìng	10
 聊逍遥兮容与	liáo xiāo yáo xī róng yǔ	10
 聊逍遥以相羊	liáo xiāo yáo yǐ xiāng yáng	10
-獠牙缰𫚥虎鱼	liáo yá jiāng xiā hǔ yú	10
-獠牙𫚥虎鱼属	liáo yá xiā hǔ yú shǔ	10
+獠牙缰鰕虎鱼	liáo yá jiāng xiā hǔ yú	10
+獠牙鰕虎鱼属	liáo yá xiā hǔ yú shǔ	10
 辽阳壁画墓群	liáo yáng bì huà mù qún	10
 辽阳农商银行	liáo yáng nóng shāng yín háng	10
 燎原创业社交	liáo yuán chuàng yè shè jiāo	10
@@ -321303,7 +321198,7 @@ sort: by_weight
 猎杀红十月号	liè shā hóng shí yuè hào	10
 猎杀潜航系列	liè shā qián háng xì liè	10
 猎杀野生动物	liè shā yě shēng dòng wù	10
-裂身𫚥虎鱼属	liè shēn xiā hǔ yú shǔ	10
+裂身鰕虎鱼属	liè shēn xiā hǔ yú shǔ	10
 烈士褒扬条例	liè shì bāo yáng tiáo lì	10
 烈士公园东站	liè shì gōng yuán dōng zhàn	10
 烈士公园南门	liè shì gōng yuán nán mén	10
@@ -321515,7 +321410,7 @@ sort: by_weight
 邻居发现协议	lín jū fā xiàn xié yì	10
 邻居家的孩子	lín jū jiā de hái zi	10
 邻居家的小孩	lín jū jiā de xiǎo hái	10
-林克钝𫚥虎鱼	lín kè dùn xiā hǔ yú	10
+林克钝鰕虎鱼	lín kè dùn xiā hǔ yú	10
 林肯艺术中心	lín kěn yì shù zhōng xīn	10
 临空经济发展	lín kōng jīng jì fā zhǎn	10
 临空经济园区	lín kōng jīng jì yuán qū	10
@@ -322718,7 +322613,7 @@ sort: by_weight
 陆生脊椎动物	lù shēng jǐ zhuī dòng wù	10
 陆生食肉动物	lù shēng shí ròu dòng wù	10
 陆生野生动物	lù shēng yě shēng dòng wù	10
-路氏阿科𫚥虎	lù shì ā kē xiā hǔ	10
+路氏阿科鰕虎	lù shì ā kē xiā hǔ	10
 卢氏半杆脂鲤	lú shì bàn gān zhī lǐ	10
 卢氏单杆脂鲤	lú shì dān gān zhī lǐ	10
 鲁氏短平口鲶	lǔ shì duǎn píng kǒu nián	10
@@ -322946,7 +322841,7 @@ sort: by_weight
 落后就要挨打	luò hòu jiù yào ái dǎ	10
 罗湖商务中心	luó hú shāng wù zhōng xīn	10
 裸滑隆头丽鱼	luǒ huá lóng tóu lì yú	10
-裸滑𫚥虎鱼属	luǒ huá xiā hǔ yú shǔ	10
+裸滑鰕虎鱼属	luǒ huá xiā hǔ yú shǔ	10
 落花有意流水	luò huā yǒu yì liú shuǐ	10
 裸环鳣菊石属	luǒ huán zhān jú shí shǔ	10
 逻辑编程语言	luó jí biān chéng yǔ yán	10
@@ -322976,7 +322871,7 @@ sort: by_weight
 逻辑思维训练	luó jí sī wéi xùn liàn	10
 逻辑推理能力	luó jí tuī lǐ néng lì	10
 逻辑中心主义	luó jí zhōng xīn zhǔ yì	10
-裸颊𫚥虎鱼属	luǒ jiá xiā hǔ yú shǔ	10
+裸颊鰕虎鱼属	luǒ jiá xiā hǔ yú shǔ	10
 落肩袖的设计	luò jiān xiù de shè jì	10
 洛界高速公路	luò jiè gāo sù gōng lù	10
 裸颈果伞鸟属	luǒ jǐng guǒ sǎn niǎo shǔ	10
@@ -323008,7 +322903,7 @@ sort: by_weight
 洛迈维蒂群岛	luò mài wéi dì qún dǎo	10
 罗梅氏毛鼻鲶	luó méi shì máo bí nián	10
 落寞迷茫彷徨	luò mò mí máng páng huáng	10
-裸拟𫚥虎鱼属	luǒ nǐ xiā hǔ yú shǔ	10
+裸拟鰕虎鱼属	luǒ nǐ xiā hǔ yú shǔ	10
 罗宁高速公路	luó níng gāo sù gōng lù	10
 罗奇代尔理论	luó qí dài ěr lǐ lùn	10
 落入他人之手	luò rù tā rén zhī shǒu	10
@@ -323020,7 +322915,7 @@ sort: by_weight
 裸身拟杜父鱼	luǒ shēn nǐ dù fù yú	10
 裸身似肩灯鱼	luǒ shēn sì jiān dēng yú	10
 裸身无鳍蛇鳗	luǒ shēn wú qí shé mán	10
-裸身𫚥虎鱼属	luǒ shēn xiā hǔ yú shǔ	10
+裸身鰕虎鱼属	luǒ shēn xiā hǔ yú shǔ	10
 裸身雅南极鱼	luǒ shēn yǎ nán jí yú	10
 落实安全措施	luò shí ān quán cuò shī	10
 落实安全责任	luò shí ān quán zé rèn	10
@@ -323063,7 +322958,7 @@ sort: by_weight
 罗素大学集团	luó sù dà xué jí tuán	10
 罗素公理体系	luó sù gōng lǐ tǐ xì	10
 裸体异鳔鳅𬶍	luǒ tǐ yì biào qiū tuó	10
-裸头𫚥虎鱼属	luǒ tóu xiā hǔ yú shǔ	10
+裸头鰕虎鱼属	luǒ tóu xiā hǔ yú shǔ	10
 骆驼三角蛛蟹	luò tuó sān jiǎo zhū xiè	10
 罗韦科巨龙属	luó wéi kē jù lóng shǔ	10
 螺纹防紧蚀膏	luó wén fáng jǐn shí gāo	10
@@ -323072,7 +322967,7 @@ sort: by_weight
 裸五角瓜参属	luǒ wǔ jiǎo guā cān shǔ	10
 落霞孤鹜齐飞	luò xiá gū wù qí fēi	10
 罗夏墨迹测验	luó xià mò jì cè yàn	10
-裸项栉𫚥虎鱼	luǒ xiàng zhì xiā hǔ yú	10
+裸项栉鰕虎鱼	luǒ xiàng zhì xiā hǔ yú	10
 裸胸底杜父鱼	luǒ xiōng dǐ dù fù yú	10
 裸胸哈氏甲鲶	luǒ xiōng hā shì jiǎ nián	10
 螺旋板换热器	luó xuán bǎn huàn rè qì	10
@@ -323099,7 +322994,7 @@ sort: by_weight
 洛阳中级法院	luò yáng zhōng jí fǎ yuàn	10
 洛阳轴承集团	luò yáng zhóu chéng jí tuán	10
 落叶不知所属	luò yè bù zhī suǒ shǔ	10
-裸叶𫚥虎鱼属	luǒ yè xiā hǔ yú shǔ	10
+裸叶鰕虎鱼属	luǒ yè xiā hǔ yú shǔ	10
 落叶型天疱疮	luò yè xíng tiān pào chuāng	10
 洛伊卡特反应	luò yī kǎ tè fǎn yìng	10
 罗伊氏乳杆菌	luó yī shì rǔ gǎn jūn	10
@@ -323681,7 +323576,7 @@ sort: by_weight
 马氏铲吻油鲶	mǎ shì chǎn wěn yóu nián	10
 孖士打律师行	mā shì dǎ lǜ shī háng	10
 马氏盾豆娘鱼	mǎ shì dùn dòu niáng yú	10
-马氏钝𫚥虎鱼	mǎ shì dùn xiā hǔ yú	10
+马氏钝鰕虎鱼	mǎ shì dùn xiā hǔ yú	10
 马氏钩齿脂鲤	mǎ shì gōu chǐ zhī lǐ	10
 马氏剑齿丽鱼	mǎ shì jiàn chǐ lì yú	10
 马氏鳍电鳗属	mǎ shì qí diàn mán shǔ	10
@@ -324119,11 +324014,11 @@ sort: by_weight
 毛腿吸血蝠属	máo tuǐ xī xuè fú shǔ	10
 毛腿夜鹰亚科	máo tuǐ yè yīng yà kē	10
 猫忘了鱼尾纱	māo wàng le yú wěi shā	10
-矛尾刺𫚥虎鱼	máo wěi cì xiā hǔ yú	10
+矛尾刺鰕虎鱼	máo wěi cì xiā hǔ yú	10
 矛尾翻车鲀属	máo wěi fān chē tún shǔ	10
-矛尾复𫚥虎鱼	máo wěi fù xiā hǔ yú	10
+矛尾复鰕虎鱼	máo wěi fù xiā hǔ yú	10
 矛尾石首鱼属	máo wěi shí shǒu yú shǔ	10
-矛尾𫚥虎鱼属	máo wěi xiā hǔ yú shǔ	10
+矛尾鰕虎鱼属	máo wěi xiā hǔ yú shǔ	10
 毛螱隐翅虫属	máo wèi yǐn chì chóng shǔ	10
 毛细短腺吸虫	máo xì duǎn xiàn xī chóng	10
 毛细血管搏动	máo xì xuè guǎn bó dòng	10
@@ -325040,7 +324935,7 @@ sort: by_weight
 勐腊并殖吸虫	měng là bìng zhí xī chóng	10
 梦里什么都有	mèng lǐ shén me dōu yǒu	10
 梦里踏雪几回	mèng lǐ tà xuě jǐ huí	10
-蒙眬𫚥虎鱼属	méng lóng xiā hǔ yú shǔ	10
+蒙眬鰕虎鱼属	méng lóng xiā hǔ yú shǔ	10
 孟买敏感指数	mèng mǎi mǐn gǎn zhǐ shù	10
 孟买血型系统	mèng mǎi xuè xíng xì tǒng	10
 勐卯行政委员	měng mǎo xíng zhèng wěi yuán	10
@@ -325100,7 +324995,7 @@ sort: by_weight
 迷倒万千少女	mí dǎo wàn qiān shào nǚ	10
 迷得神魂颠倒	mí de shén hún diān dǎo	10
 迷笛音乐学校	mí dí yīn yuè xué xiào	10
-密点吻𫚥虎鱼	mì diǎn wěn xiā hǔ yú	10
+密点吻鰕虎鱼	mì diǎn wěn xiā hǔ yú	10
 觅蝶计划基地	mì dié jì huà jī dì	10
 密度泛函理论	mì dù fàn hán lǐ lùn	10
 密尔沃基公司	mì ěr wò jī gōng sī	10
@@ -325126,7 +325021,7 @@ sort: by_weight
 米拉加亚龙属	mǐ lā jiā yà lóng shǔ	10
 米拉西斯龙属	mǐ lā xī sī lóng shǔ	10
 米勒氏魮脂鲤	mǐ lè shì pí zhī lǐ	10
-米勒𫚥虎鱼属	mǐ lè xiā hǔ yú shǔ	10
+米勒鰕虎鱼属	mǐ lè xiā hǔ yú shǔ	10
 米勒循环引擎	mǐ lè xún huán yǐn qíng	10
 迷恋网络游戏	mí liàn wǎng luò yóu xì	10
 密鳞非洲脂鲤	mì lín fēi zhōu zhī lǐ	10
@@ -325425,7 +325320,7 @@ sort: by_weight
 喵呜是谁叫的	miāo wū shì shuí jiào de	10
 藐小棘隙吸虫	miǎo xiǎo jí xì xī chóng	10
 庙岩洞穴遗址	miào yán dòng xué yí zhǐ	10
-妙音𫚥虎鱼属	miào yīn xiā hǔ yú shǔ	10
+妙音鰕虎鱼属	miào yīn xiā hǔ yú shǔ	10
 妙佑医疗国际	miào yòu yī liáo guó jì	10
 妙湛寺金刚塔	miào zhàn sì jīn gāng tǎ	10
 瞄准基线过高	miáo zhǔn jī xiàn guò gāo	10
@@ -326055,8 +325950,8 @@ sort: by_weight
 明人不做暗事	míng rén bú zuò àn shì	10
 名人故里之争	míng rén gù lǐ zhī zhēng	10
 明仁天皇退位	míng rén tiān huáng tuì wèi	10
-明仁𫚥虎鱼属	míng rén xiā hǔ yú shǔ	10
-明仁鹦𫚥虎鱼	míng rén yīng xiā hǔ yú	10
+明仁鰕虎鱼属	míng rén xiā hǔ yú shǔ	10
+明仁鹦鰕虎鱼	míng rén yīng xiā hǔ yú	10
 明日操作策略	míng rì cāo zuò cè lüè	10
 明日创作计划	míng rì chuàng zuò jì huà	10
 明日大屿愿景	míng rì dà yǔ yuàn jǐng	10
@@ -326076,7 +325971,7 @@ sort: by_weight
 明斯克号航母	míng sī kè hào háng mǔ	10
 明思宗殉国处	míng sī zōng xùn guó chù	10
 明台产物保险	míng tái chǎn wù bǎo xiǎn	10
-明潭吻𫚥虎鱼	míng tán wěn xiā hǔ yú	10
+明潭吻鰕虎鱼	míng tán wěn xiā hǔ yú	10
 明天不见不散	míng tiān bú jiàn bú sàn	10
 明天更加美好	míng tiān gèng jiā měi hǎo	10
 明天还要上学	míng tiān hái yào shàng xué	10
@@ -326843,7 +326738,7 @@ sort: by_weight
 那种生不如死	nà zhǒng shēng bù rú sǐ	10
 萘胺磺酸钠盐	nài àn huáng suān nà yán	10
 萘胺偶氮磺酸	nài àn ǒu dàn huáng suān	10
-奈波𫚥虎鱼属	nài bō xiā hǔ yú shǔ	10
+奈波鰕虎鱼属	nài bō xiā hǔ yú shǔ	10
 耐大气腐蚀性	nài dà qì fǔ shí xìng	10
 奶蛋素食主义	nǎi dàn sù shí zhǔ yì	10
 萘啶酮酸钠盐	nài dìng tóng suān nà yán	10
@@ -326956,7 +326851,7 @@ sort: by_weight
 南方鼠海豚属	nán fāng shǔ hǎi tún shǔ	10
 南方褶唇丽鱼	nán fāng zhě chún lì yú	10
 南非叉鼻蟾鱼	nán fēi chā bí chán yú	10
-南非砂𫚥虎鱼	nán fēi shā xiā hǔ yú	10
+南非砂鰕虎鱼	nán fēi shā xiā hǔ yú	10
 南非小沙鼠属	nán fēi xiǎo shā shǔ shǔ	10
 南港运动中心	nán gǎng yùn dòng zhōng xīn	10
 南高史地学派	nán gāo shǐ dì xué pài	10
@@ -327128,7 +327023,7 @@ sort: by_weight
 难受的不行了	nán shòu de bù xíng le	10
 南顺香港集团	nán shùn xiāng gǎng jí tuán	10
 南太平洋群岛	nán tài píng yáng qún dǎo	10
-南台吻𫚥虎鱼	nán tái wěn xiā hǔ yú	10
+南台吻鰕虎鱼	nán tái wěn xiā hǔ yú	10
 南坛高速公路	nán tán gāo sù gōng lù	10
 难题迎刃而解	nán tí yíng rèn ér jiě	10
 南投地方法院	nán tóu dì fāng fǎ yuàn	10
@@ -327777,7 +327672,7 @@ sort: by_weight
 拟痕枯叶蛾属	nǐ hén kū yè é shǔ	10
 拟虹彩长颌鱼	nǐ hóng cǎi cháng hé yú	10
 拟红层孔菌属	nǐ hóng céng kǒng jūn shǔ	10
-霓虹𫚥虎鱼属	ní hóng xiā hǔ yú shǔ	10
+霓虹鰕虎鱼属	ní hóng xiā hǔ yú shǔ	10
 你会慢慢发现	nǐ huì màn màn fā xiàn	10
 你会如何选择	nǐ huì rú hé xuǎn zé	10
 你会死得很惨	nǐ huì sǐ de hěn cǎn	10
@@ -327845,7 +327740,7 @@ sort: by_weight
 你妈了个逼的	nǐ mā le gè bī de	10
 拟鳗荷马条鳅	nǐ mán hé mǎ tiáo qiū	10
 拟毛刺线虫属	nǐ máo cì xiàn chóng shǔ	10
-拟矛尾𫚥虎鱼	nǐ máo wěi xiā hǔ yú	10
+拟矛尾鰕虎鱼	nǐ máo wěi xiā hǔ yú	10
 尼美舒利颗粒	ní měi shū lì kē lì	10
 你们都是浮云	nǐ men dōu shì fú yún	10
 你们都是渣渣	nǐ men dōu shì zhā zhā	10
@@ -327910,7 +327805,7 @@ sort: by_weight
 拟犬同盘吸虫	nǐ quǎn tóng pán xī chóng	10
 拟全异碘泡虫	nǐ quán yì diǎn pào chóng	10
 拟雀啄果鸟属	nǐ què zhuó guǒ niǎo shǔ	10
-拟髯𫚥虎鱼属	nǐ rán xiā hǔ yú shǔ	10
+拟髯鰕虎鱼属	nǐ rán xiā hǔ yú shǔ	10
 拟人腹盘吸虫	nǐ rén fù pán xī chóng	10
 拟蠕猛水蚤科	nǐ rú měng shuǐ zǎo kē	10
 你若不离不弃	nǐ ruò bù lí bú qì	10
@@ -327919,7 +327814,7 @@ sort: by_weight
 拟色矛线虫属	nǐ sè máo xiàn chóng shǔ	10
 尼沙的额我略	ní shā de é wǒ lüè	10
 你啥时候回来	nǐ shá shí hou huí lái	10
-拟沙𫚥虎鱼属	nǐ shā xiā hǔ yú shǔ	10
+拟沙鰕虎鱼属	nǐ shā xiā hǔ yú shǔ	10
 泥沙运动力学	ní shā yùn dòng lì xué	10
 拟上口脂鲤属	nǐ shàng kǒu zhī lǐ shǔ	10
 拟舌骨牡蛎属	nǐ shé gǔ mǔ lì shǔ	10
@@ -328020,7 +327915,7 @@ sort: by_weight
 你说话的方式	nǐ shuō huà de fāng shì	10
 你说气不气人	nǐ shuō qì bú qì rén	10
 尼斯塔德条约	ní sī tǎ dé tiáo yuē	10
-拟丝𫚥虎鱼属	nǐ sī xiā hǔ yú shǔ	10
+拟丝鰕虎鱼属	nǐ sī xiā hǔ yú shǔ	10
 你算什么东西	nǐ suàn shén me dōng xi	10
 你所想的数字	nǐ suǒ xiǎng de shù zì	10
 你所有的付出	nǐ suǒ yǒu de fù chū	10
@@ -328050,7 +327945,7 @@ sort: by_weight
 拟微咽线虫科	nǐ wēi yàn xiàn chóng kē	10
 拟微咽线虫属	nǐ wēi yàn xiàn chóng shǔ	10
 拟纹赤眼蜂属	nǐ wén chì yǎn fēng shǔ	10
-拟吻𫚥虎鱼属	nǐ wěn xiā hǔ yú shǔ	10
+拟吻鰕虎鱼属	nǐ wěn xiā hǔ yú shǔ	10
 你我曾那么好	nǐ wǒ céng nà me hǎo	10
 你我纯属巧合	nǐ wǒ chún shǔ qiǎo hé	10
 你我素不相识	nǐ wǒ sù bù xiāng shí	10
@@ -328129,7 +328024,7 @@ sort: by_weight
 你也可以选择	nǐ yě kě yǐ xuǎn zé	10
 你也可以做到	nǐ yě kě yǐ zuò dào	10
 你也是人类吗	nǐ yě shì rén lèi ma	10
-拟叶𫚥虎鱼属	nǐ yè xiā hǔ yú shǔ	10
+拟叶鰕虎鱼属	nǐ yè xiā hǔ yú shǔ	10
 你爷爷的奶奶	nǐ yé ye de nǎi nai	10
 你也一样谬误	nǐ yě yí yàng miù wù	10
 你一定要坚强	nǐ yī dìng yào jiān qiáng	10
@@ -329587,7 +329482,7 @@ sort: by_weight
 爬虫动物星章	pá chóng dòng wù xīng zhāng	10
 爬虫两栖类学	pá chóng liǎng qī lèi xué	10
 帕迪利亚龙属	pà dí lì yà lóng shǔ	10
-帕多𫚥虎鱼属	pà duō xiā hǔ yú shǔ	10
+帕多鰕虎鱼属	pà duō xiā hǔ yú shǔ	10
 帕尔马罗拉岛	pà ěr mǎ luó lā dǎo	10
 帕尔文鱼龙属	pà ěr wén yú lóng shǔ	10
 帕哈罗斯岩岛	pà hā luo sī yán dǎo	10
@@ -329763,7 +329658,7 @@ sort: by_weight
 叛逆腔棘鱼属	pàn nì qiāng jí yú shǔ	10
 盘尼西林乐队	pán ní xī lín yuè duì	10
 潘诺尼亚龙属	pān nuò ní yà lóng shǔ	10
-盘鳍舌𫚥虎鱼	pán qí shé xiā hǔ yú	10
+盘鳍舌鰕虎鱼	pán qí shé xiā hǔ yú	10
 盘山烈士陵园	pán shān liè shì líng yuán	10
 盼星星盼月亮	pàn xīng xīng pàn yuè liàng	10
 盘营客运专线	pán yíng kè yùn zhuān xiàn	10
@@ -330257,11 +330152,11 @@ sort: by_weight
 嘌呤代谢紊乱	piào lìng dài xiè wěn luàn	10
 飘落的银杏叶	piāo luò de yín xìng yè	10
 飘起来的石头	piāo qǐ lái de shí tou	10
-瓢鳍𫚥虎鱼属	piáo qí xiā hǔ yú shǔ	10
+瓢鳍鰕虎鱼属	piáo qí xiā hǔ yú shǔ	10
 剽窃他人作品	piāo qiè tā rén zuò pǐn	10
 飘色会景巡游	piāo sè huì jǐng xún yóu	10
 瓢虾虎鱼亚科	piáo xiā hǔ yú yà kē	10
-瓢眼𫚥虎鱼属	piáo yǎn xiā hǔ yú shǔ	10
+瓢眼鰕虎鱼属	piáo yǎn xiā hǔ yú shǔ	10
 拼搏就能成功	pīn bó jiù néng chéng gōng	10
 品尝当地美食	pǐn cháng dāng dì měi shí	10
 品尝特色美食	pǐn cháng tè sè měi shí	10
@@ -330664,7 +330559,7 @@ sort: by_weight
 平胸圆腹沙丁	píng xiōng yuán fù shā dīng	10
 凭许可证经营	píng xǔ kě zhèng jīng yíng	10
 平牙虾虎鱼属	píng yá xiā hǔ yú shǔ	10
-平牙𫚥虎鱼属	píng yá xiā hǔ yú shǔ	10
+平牙鰕虎鱼属	píng yá xiā hǔ yú shǔ	10
 平阳木版年画	píng yáng mù bǎn nián huà	10
 平遥古城景区	píng yáo gǔ chéng jǐng qū	10
 平遥古城旅游	píng yáo gǔ chéng lǚ yóu	10
@@ -330818,7 +330713,6 @@ sort: by_weight
 浦江创新论坛	pǔ jiāng chuàng xīn lùn tán	10
 浦江郊野公园	pǔ jiāng jiāo yě gōng yuán	10
 浦江镇停车场	pǔ jiāng zhèn tíng chē chǎng	10
-葡京潮州酒楼	pú jīng cháo zhōu jiǔ lóu	10
 扑救初起火灾	pū jiù chū qǐ huǒ zāi	10
 扑救初期火灾	pū jiù chū qī huǒ zāi	10
 扑救森林火灾	pū jiù sēn lín huǒ zāi	10
@@ -333978,7 +333872,7 @@ sort: by_weight
 清尾全裸鹦鲷	qīng wěi quán luǒ yīng diāo	10
 轻微刑事案件	qīng wēi xíng shì àn jiàn	10
 卿为朝朝暮暮	qīng wéi zhāo zhāo mù mù	10
-清尾鲻𫚥虎鱼	qīng wěi zī xiā hǔ yú	10
+清尾鲻鰕虎鱼	qīng wěi zī xiā hǔ yú	10
 请问各位大佬	qǐng wèn gè wèi dà lǎo	10
 请问一下大家	qǐng wèn yí xià dà jiā	10
 请问总统先生	qǐng wèn zǒng tǒng xiān shēng	10
@@ -333987,7 +333881,7 @@ sort: by_weight
 请勿对号入座	qǐng wù duì hào rù zuò	10
 清洗抽油烟机	qīng xǐ chōu yóu yān jī	10
 情系佛罗内斯	qíng xì fó luó nèi sī	10
-青细棘𫚥虎鱼	qīng xì jí xiā hǔ yú	10
+青细棘鰕虎鱼	qīng xì jí xiā hǔ yú	10
 青西郊野公园	qīng xī jiāo yě gōng yuán	10
 庆僖亲王永璘	qìng xī qīn wáng yǒng lín	10
 清洗三元催化	qīng xǐ sān yuán cuī huà	10
@@ -334174,7 +334068,7 @@ sort: by_weight
 邱氏列齿蛇鳗	qiū shì liè chǐ shé mán	10
 裘氏牛肝菌属	qiú shì niú gān jūn shǔ	10
 裘氏小沙丁鱼	qiú shì xiǎo shā dīng yú	10
-球首丝𫚥虎鱼	qiú shǒu sī xiā hǔ yú	10
+球首丝鰕虎鱼	qiú shǒu sī xiā hǔ yú	10
 球体关节人形	qiú tǐ guān jié rén xíng	10
 秋田大麻哈鱼	qiū tián dà má hā yú	10
 秋天里的春天	qiū tiān lǐ de chūn tiān	10
@@ -334621,7 +334515,7 @@ sort: by_weight
 全氟辛烷磺酸	quán fú xīn wán huáng suān	10
 犬复殖器绦虫	quǎn fù zhí qì tāo chóng	10
 全覆装甲骑兵	quán fù zhuāng jiǎ qí bīng	10
-犬竿𫚥虎鱼属	quǎn gān xiā hǔ yú shǔ	10
+犬竿鰕虎鱼属	quǎn gān xiā hǔ yú shǔ	10
 全攻全守战术	quán gōng quán shǒu zhàn shù	10
 全攻全守足球	quán gōng quán shǒu zú qiú	10
 醛固酮减少症	quán gù tóng jiǎn shǎo zhèng	10
@@ -335269,7 +335163,7 @@ sort: by_weight
 全子宫切除术	quán zǐ gōng qiē chú shù	10
 全组合测角法	quán zǔ hé cè jiǎo fǎ	10
 雀斑隆背海鲶	què bān lóng bèi hǎi nián	10
-雀斑吻𫚥虎鱼	què bān wěn xiā hǔ yú	10
+雀斑吻鰕虎鱼	què bān wěn xiā hǔ yú	10
 确保案件质量	què bǎo àn jiàn zhì liàng	10
 确保安全可靠	què bǎo ān quán kě kào	10
 确保安全生产	què bǎo ān quán shēng chǎn	10
@@ -335486,7 +335380,7 @@ sort: by_weight
 燃料喷射装置	rán liào pēn shè zhuāng zhì	10
 染料文字衣科	rǎn liào wén zì yī kē	10
 染料文字衣属	rǎn liào wén zì yī shǔ	10
-髯毛𫚥虎鱼属	rán máo xiā hǔ yú shǔ	10
+髯毛鰕虎鱼属	rán máo xiā hǔ yú shǔ	10
 燃煤发电机组	rán méi fā diàn jī zǔ	10
 燃煤工业锅炉	rán méi gōng yè guō lú	10
 燃煤锅炉改造	rán méi guō lú gǎi zào	10
@@ -336925,7 +336819,7 @@ sort: by_weight
 日本扁谷盗属	rì běn biǎn gǔ dào shǔ	10
 日本长鳍蝠鱼	rì běn cháng qí fú yú	10
 日本副仙女鱼	rì běn fù xiān nǚ yú	10
-日本竿𫚥虎鱼	rì běn gān xiā hǔ yú	10
+日本竿鰕虎鱼	rì běn gān xiā hǔ yú	10
 日本弓鳍鱼属	rì běn gōng qí yú shǔ	10
 日本海晶狮鱼	rì běn hǎi jīng shī yú	10
 日本汉甲螨属	rì běn hàn jiǎ mǎn shǔ	10
@@ -337446,7 +337340,7 @@ sort: by_weight
 如入无人之地	rú rù wú rén zhī dì	10
 如入无人之境	rú rù wú rén zhī jìng	10
 如入芝兰之室	rú rù zhī lán zhī shì	10
-乳色刺𫚥虎鱼	rǔ sè cì xiā hǔ yú	10
+乳色刺鰕虎鱼	rǔ sè cì xiā hǔ yú	10
 入室盗窃案件	rù shì dào qiè àn jiàn	10
 入室盗窃犯罪	rù shì dào qiè fàn zuì	10
 如实反映情况	rú shí fǎn yìng qíng kuàng	10
@@ -337473,7 +337367,7 @@ sort: by_weight
 乳头湿疹样癌	rǔ tóu shī zhěn yàng ái	10
 乳突半下口鲶	rǔ tū bàn xià kǒu nián	10
 乳突天竺鲷属	rǔ tū tiān zhú diāo shǔ	10
-乳突𫚥虎鱼属	rǔ tū xiā hǔ yú shǔ	10
+乳突鰕虎鱼属	rǔ tū xiā hǔ yú shǔ	10
 入团积极分子	rù tuán jī jí fèn zǐ	10
 入围面试人员	rù wéi miàn shì rén yuán	10
 儒乌风亭螺钿	rú wū fēng tíng luó diàn	10
@@ -338036,7 +337930,7 @@ sort: by_weight
 三角双锥构型	sān jiǎo shuāng zhuī gòu xíng	10
 三教搜神大全	sān jiào sōu shén dà quán	10
 三角突虫瘴霉	sān jiǎo tū chóng zhàng méi	10
-三角𫚥虎鱼属	sān jiǎo xiā hǔ yú shǔ	10
+三角鰕虎鱼属	sān jiǎo xiā hǔ yú shǔ	10
 三角下口鲶属	sān jiǎo xià kǒu nián shǔ	10
 三角形的面积	sān jiǎo xíng de miàn jī	10
 三角形山战役	sān jiǎo xíng shān zhàn yì	10
@@ -338119,8 +338013,6 @@ sort: by_weight
 三氯硝基甲烷	sān lǜ xiāo jī jiǎ wán	10
 三氯一氟甲烷	sān lǜ yī fú jiǎ wán	10
 三氯异氰尿酸	sān lǜ yì qíng niào suān	10
-三氯异氰脲酸	sān lǜ yì qíng niào suān	10
-三氯乙氰脲酸	sān lǜ yǐ qíng niào suān	10
 三氯乙酸丁酯	sān lǜ yǐ suān dīng zhǐ	10
 三氯乙酸甲酯	sān lǜ yǐ suān jiǎ zhǐ	10
 三氯乙酸乙酯	sān lǜ yǐ suān yǐ zhǐ	10
@@ -338443,7 +338335,7 @@ sort: by_weight
 莎普爱思药业	shā pǔ ài sī yào yè	10
 沙栖副狮子鱼	shā qī fù shī zi yú	10
 砂栖七鳃鳗属	shā qī qī sāi mán shǔ	10
-砂栖𫚥虎鱼属	shā qī xiā hǔ yú shǔ	10
+砂栖鰕虎鱼属	shā qī xiā hǔ yú shǔ	10
 砂栖线鳍电鳗	shā qī xiàn qí diàn mán	10
 沙丘系列小说	shā qiū xì liè xiǎo shuō	10
 沙犬牙石首鱼	shā quǎn yá shí shǒu yú	10
@@ -338700,7 +338592,7 @@ sort: by_weight
 珊瑚寄生螺属	shān hú jì shēng luó shǔ	10
 珊瑚礁鱼毒素	shān hú jiāo yú dú sù	10
 珊瑚实验小学	shān hú shí yàn xiǎo xué	10
-珊瑚𫚥虎鱼属	shān hú xiā hǔ yú shǔ	10
+珊瑚鰕虎鱼属	shān hú xiā hǔ yú shǔ	10
 闪辉沸霞斜岩	shǎn huī fèi xiá xié yán	10
 山脊赛车系列	shān jí sài chē xì liè	10
 闪击延安计划	shǎn jī yán ān jì huà	10
@@ -340905,7 +340797,7 @@ sort: by_weight
 涉税事项办理	shè shuì shì xiàng bàn lǐ	10
 涉税专业服务	shè shuì zhuān yè fú wù	10
 蛇头平肩光鱼	shé tóu píng jiān guāng yú	10
-蛇头𫚥虎鱼属	shé tóu xiā hǔ yú shǔ	10
+蛇头鰕虎鱼属	shé tóu xiā hǔ yú shǔ	10
 涉外代理机构	shè wài dài lǐ jī gòu	10
 涉外法律服务	shè wài fǎ lǜ fú wù	10
 涉外护理专业	shè wài hù lǐ zhuān yè	10
@@ -341556,7 +341448,7 @@ sort: by_weight
 神秘动物学家	shén mì dòng wù xué jiā	10
 神秘海域系列	shén mì hǎi yù xì liè	10
 神秘莫测天空	shén mì mò cè tiān kōng	10
-神秘𫚥虎鱼属	shén mì xiā hǔ yú shǔ	10
+神秘鰕虎鱼属	shén mì xiā hǔ yú shǔ	10
 神秘主义色彩	shén mì zhǔ yì sè cǎi	10
 神妙拟相手蟹	shén miào nǐ xiāng shǒu xiè	10
 神庙长老摩迦	shén miào zhǎng lǎo mó jiā	10
@@ -341566,7 +341458,7 @@ sort: by_weight
 神农大丰种业	shén nóng dà fēng zhǒng yè	10
 神农奇峰茶业	shén nóng qí fēng chá yè	10
 神农氏的后裔	shén nóng shì de hòu yì	10
-神农吻𫚥虎鱼	shén nóng wěn xiā hǔ yú	10
+神农吻鰕虎鱼	shén nóng wěn xiā hǔ yú	10
 审判程序合法	shěn pàn chéng xù hé fǎ	10
 审判辅助人员	shěn pàn fǔ zhù rén yuán	10
 审判监督程序	shěn pàn jiān dū chéng xù	10
@@ -344886,7 +344778,7 @@ sort: by_weight
 实施临时救助	shí shī lín shí jiù zhù	10
 实时路况导航	shí shí lù kuàng dǎo háng	10
 实时路况信息	shí shí lù kuàng xìn xī	10
-史氏美𫚥虎鱼	shǐ shì měi xiā hǔ yú	10
+史氏美鰕虎鱼	shǐ shì měi xiā hǔ yú	10
 史氏拟精器鱼	shǐ shì nǐ jīng qì yú	10
 史氏诺德脂鲤	shǐ shì nuò dé zhī lǐ	10
 实施强制许可	shí shī qiáng zhì xǔ kě	10
@@ -347024,7 +346916,7 @@ sort: by_weight
 双氨基固蓝盐	shuāng ān jī gù lán yán	10
 双凹海绵盘虫	shuāng āo hǎi mián pán chóng	10
 双柏复叶耳蕨	shuāng bǎi fù yè ěr jué	10
-双斑叉舌𫚥虎	shuāng bān chā shé xiā hǔ	10
+双斑叉舌鰕虎	shuāng bān chā shé xiā hǔ	10
 霜斑床杜父鱼	shuāng bān chuáng dù fù yú	10
 双斑带天竺鲷	shuāng bān dài tiān zhú diāo	10
 双板盾尾鱼属	shuāng bǎn dùn wěi yú shǔ	10
@@ -347034,7 +346926,7 @@ sort: by_weight
 双斑密光鳃鱼	shuāng bān mì guāng sāi yú	10
 双斑平腹脂鲤	shuāng bān píng fù zhī lǐ	10
 双斑上项鳍鲶	shuāng bān shàng xiàng qí nián	10
-双斑舌𫚥虎鱼	shuāng bān shé xiā hǔ yú	10
+双斑舌鰕虎鱼	shuāng bān shé xiā hǔ yú	10
 双斑丝鳍鹰鲷	shuāng bān sī qí yīng diāo	10
 双孢放线菌属	shuāng bāo fàng xiàn jūn shǔ	10
 双苞风信子属	shuāng bāo fēng xìn zi shǔ	10
@@ -347209,7 +347101,7 @@ sort: by_weight
 双排扣的设计	shuāng pái kòu de shè jì	10
 双排式发动机	shuāng pái shì fā dòng jī	10
 双排双进弹匣	shuāng pái shuāng jìn dàn xiá	10
-双盘𫚥虎亚科	shuāng pán xiā hǔ yà kē	10
+双盘鰕虎亚科	shuāng pán xiā hǔ yà kē	10
 双淇林卷管螺	shuāng qí lín juǎn guǎn luó	10
 双鳍吕宋花鮨	shuāng qí lǚ sòng huā yì	10
 双钱集团股份	shuāng qián jí tuán gǔ fèn	10
@@ -347288,7 +347180,7 @@ sort: by_weight
 双星探测计划	shuāng xīng tàn cè jì huà	10
 双星之阴阳师	shuāng xīng zhī yīn yáng shī	10
 双休伊直升机	shuāng xiū yī zhí shēng jī	10
-双须叉舌𫚥虎	shuāng xū chā shé xiā hǔ	10
+双须叉舌鰕虎	shuāng xū chā shé xiā hǔ	10
 双芽孢杆菌属	shuāng yá bāo gǎn jūn shǔ	10
 双亚苄基丙酮	shuāng yà biàn jī bǐng tóng	10
 双眼矫正视力	shuāng yǎn jiǎo zhèng shì lì	10
@@ -347846,7 +347738,7 @@ sort: by_weight
 四保临江战役	sì bǎo lín jiāng zhàn yì	10
 四堡书坊建筑	sì bǎo shū fāng jiàn zhù	10
 斯杯瓢蜡蝉属	sī bēi piáo là chán shǔ	10
-丝背叶𫚥虎鱼	sī bèi yè xiā hǔ yú	10
+丝背叶鰕虎鱼	sī bèi yè xiā hǔ yú	10
 四苯基卟啉基	sì běn jī bǔ lín jī	10
 四苯基丁二烯	sì běn jī dīng èr xī	10
 四苯基氯化𬭸	sì běn jī lǜ huà lín	10
@@ -347981,7 +347873,7 @@ sort: by_weight
 四川维尼纶厂	sì chuān wéi ní lún chǎng	10
 四川汶川地震	sì chuān wèn chuān dì zhèn	10
 四川文理学院	sì chuān wén lǐ xué yuàn	10
-四川吻𫚥虎鱼	sì chuān wěn xiā hǔ yú	10
+四川吻鰕虎鱼	sì chuān wěn xiā hǔ yú	10
 四川西部智谷	sì chuān xī bù zhì gǔ	10
 四川新网银行	sì chuān xīn wǎng yín háng	10
 四川行政区划	sì chuān xíng zhèng qū huà	10
@@ -348359,7 +348251,7 @@ sort: by_weight
 似鲯高地丽鱼	sì qí gāo dì lì yú	10
 丝鳍毛足斗鱼	sī qí máo zú dòu yú	10
 丝鳍翘嘴脂鲤	sī qí qiào zuǐ zhī lǐ	10
-丝鳍吻𫚥虎鱼	sī qí wěn xiā hǔ yú	10
+丝鳍吻鰕虎鱼	sī qí wěn xiā hǔ yú	10
 丝鳍圆天竺鲷	sī qí yuán tiān zhú diāo	10
 四千金的情人	sì qiān jīn de qíng rén	10
 四千一百二十	sì qiān yī bǎi èr shí	10
@@ -349005,7 +348897,7 @@ sort: by_weight
 苏氏副狮子鱼	sū shì fù shī zi yú	10
 苏氏荣华食品	sū shì róng huá shí pǐn	10
 苏式社会主义	sū shì shè huì zhǔ yì	10
-苏氏吻𫚥虎鱼	sū shì wěn xiā hǔ yú	10
+苏氏吻鰕虎鱼	sū shì wěn xiā hǔ yú	10
 苏式鲜肉月饼	sū shì xiān ròu yuè bǐng	10
 苏氏须唇飞鱼	sū shì xū chún fēi yú	10
 素食制作技艺	sù shí zhì zuò jì yì	10
@@ -349045,7 +348937,7 @@ sort: by_weight
 素颜现身机场	sù yán xiàn shēn jī chǎng	10
 宿扬高速公路	sù yáng gāo sù gōng lù	10
 塑业有限公司	sù yè yǒu xiàn gōng sī	10
-速泳捷𫚥虎鱼	sù yǒng jié xiā hǔ yú	10
+速泳捷鰕虎鱼	sù yǒng jié xiā hǔ yú	10
 苏有朋和赵薇	sū yǒu péng hé zhào wēi	10
 塑造城市形象	sù zào chéng shì xíng xiàng	10
 塑造得很成功	sù zào de hěn chéng gōng	10
@@ -349643,7 +349535,7 @@ sort: by_weight
 塔科河啮脂鲤	tǎ kē hé niè zhī lǐ	10
 他克莫司软膏	tā kè mò sī ruǎn gāo	10
 塔克原热带鲶	tǎ kè yuán rè dài nián	10
-塔库𫚥虎鱼属	tǎ kù xiā hǔ yú shǔ	10
+塔库鰕虎鱼属	tǎ kù xiā hǔ yú shǔ	10
 塔拉斯克龙属	tǎ lā sī kè lóng shǔ	10
 她来到我身边	tā lái dào wǒ shēn biān	10
 塔里木河流域	tǎ lǐ mù hé liú yù	10
@@ -349699,11 +349591,6 @@ sort: by_weight
 踏踏实实演戏	tà tà shí shí yǎn xì	10
 踏踏实实做人	tà tà shí shí zuò rén	10
 踏踏实实做事	tà tà shí shí zuò shì	10
-塔特姆氏菌属	tǎ tè mǔ shì jūn shǔ	10
-塔旺布理甲拉	tǎ wàng bù lǐ jiǎ lā	10
-塔旺布里甲拉	tǎ wàng bù lǐ jiǎ lā	10
-塔望布理甲拉	tǎ wàng bù lǐ jiǎ lā	10
-塔威塔威群岛	tǎ wēi tǎ wēi qún dǎo	10
 他喜欢的是你	tā xǐ huān de shì nǐ	10
 塔希提岛鸟类	tǎ xī tí dǎo niǎo lèi	10
 踏下加速踏板	tà xià jiā sù tà bǎn	10
@@ -349951,7 +349838,7 @@ sort: by_weight
 胎生贝湖鱼属	tāi shēng bèi hú yú shǔ	10
 抬升凝结高度	tái shēng níng jié gāo dù	10
 泰式炒金边粉	tài shì chǎo jīn biān fěn	10
-泰氏钝𫚥虎鱼	tài shì dùn xiā hǔ yú	10
+泰氏钝鰕虎鱼	tài shì dùn xiā hǔ yú	10
 态势感知能力	tài shì gǎn zhī néng lì	10
 态势感知平台	tài shì gǎn zhī píng tái	10
 台师高级中学	tái shī gāo jí zhōng xué	10
@@ -349986,7 +349873,7 @@ sort: by_weight
 台湾裂盘吸虫	tái wān liè pán xī chóng	10
 台湾拟锹形虫	tái wān nǐ qiāo xíng chóng	10
 台湾筒金花虫	tái wān tǒng jīn huā chóng	10
-台湾吻𫚥虎鱼	tái wān wěn xiā hǔ yú	10
+台湾吻鰕虎鱼	tái wān wěn xiā hǔ yú	10
 台西基督教会	tái xī jī dū jiào huì	10
 苔小猪熊虫属	tái xiǎo zhū xióng chóng shǔ	10
 泰新高速公路	tài xīn gāo sù gōng lù	10
@@ -355189,7 +355076,7 @@ sort: by_weight
 为癌症站起来	wéi ái zhèng zhàn qǐ lái	10
 未按规定时间	wèi àn guī dìng shí jiān	10
 维胺酯维乳膏	wéi àn zhǐ wéi rǔ gāo	10
-尾斑钝𫚥虎鱼	wěi bān dùn xiā hǔ yú	10
+尾斑钝鰕虎鱼	wěi bān dùn xiā hǔ yú	10
 尾斑裸天竺鲷	wěi bān luǒ tiān zhú diāo	10
 尾斑深埃脂鲤	wěi bān shēn āi zhī lǐ	10
 尾斑似鳞头鳅	wěi bān sì lín tóu qiū	10
@@ -355940,7 +355827,7 @@ sort: by_weight
 韦氏双耳丽鱼	wéi shì shuāng ěr lì yú	10
 维氏似鳟甲鲶	wéi shì sì zūn jiǎ nián	10
 韦氏细身脂鲤	wéi shì xì shēn zhī lǐ	10
-韦氏𫚥虎鱼属	wéi shì xiā hǔ yú shǔ	10
+韦氏鰕虎鱼属	wéi shì xiā hǔ yú shǔ	10
 韦氏小颏脂鲤	wéi shì xiǎo kē zhī lǐ	10
 韦氏杂色脂鲤	wéi shì zá sè zhī lǐ	10
 维氏真巨口鱼	wéi shì zhēn jù kǒu yú	10
@@ -356215,7 +356102,7 @@ sort: by_weight
 为主要模式的	wéi zhǔ yào mó shì de	10
 未转头时皆梦	wèi zhuǎn tóu shí jiē mèng	10
 喂自己一袋盐	wèi zì jǐ yí dài yán	10
-纹斑丝𫚥虎鱼	wén bān sī xiā hǔ yú	10
+纹斑丝鰕虎鱼	wén bān sī xiā hǔ yú	10
 温饱线上挣扎	wēn bǎo xiàn shàng zhēng zhá	10
 文本情感分析	wén běn qíng gǎn fēn xī	10
 文本信息检索	wén běn xìn xī jiǎn suǒ	10
@@ -357330,7 +357217,7 @@ sort: by_weight
 五百人院成员	wǔ bǎi rén yuàn chéng yuán	10
 无斑半齿脂鲤	wú bān bàn chǐ zhī lǐ	10
 污斑布琼丽鱼	wū bān bù qióng lì yú	10
-无斑叉舌𫚥虎	wú bān chā shé xiā hǔ	10
+无斑叉舌鰕虎	wú bān chā shé xiā hǔ	10
 污斑大鳞脂鲤	wū bān dà lín zhī lǐ	10
 无斑高雀鲷属	wú bān gāo què diāo shǔ	10
 无斑金翅雀鲷	wú bān jīn chì què diāo	10
@@ -358434,7 +358321,7 @@ sort: by_weight
 无限想象空间	wú xiàn xiǎng xiàng kōng jiān	10
 无限循环小数	wú xiàn xún huán xiǎo shù	10
 无限延伸行动	wú xiàn yán shēn xíng dòng	10
-五线叶𫚥虎鱼	wǔ xiàn yè xiā hǔ yú	10
+五线叶鰕虎鱼	wǔ xiàn yè xiā hǔ yú	10
 无线移动硬盘	wú xiàn yí dòng yìng pán	10
 无线应用协议	wú xiàn yìng yòng xié yì	10
 无线游戏耳机	wú xiàn yóu xì ěr jī	10
@@ -358802,7 +358689,7 @@ sort: by_weight
 西安中国画院	xī ān zhōng guó huà yuàn	10
 锡安主义运动	xī ān zhǔ yì yùn dòng	10
 细螯寄居蟹属	xì áo jì jū xiè shǔ	10
-细斑吻𫚥虎鱼	xì bān wěn xiā hǔ yú	10
+细斑吻鰕虎鱼	xì bān wěn xiā hǔ yú	10
 膝半月板损伤	xī bàn yuè bǎn sǔn shāng	10
 细胞保护因子	xì bāo bǎo hù yīn zǐ	10
 细胞保护作用	xì bāo bǎo hù zuò yòng	10
@@ -358910,8 +358797,6 @@ sort: by_weight
 西尔斯比效应	xī ěr sī bǐ xiào yìng	10
 希尔微分方程	xī ěr wēi fēn fāng chéng	10
 西伐利亚条约	xī fá lì yà tiáo yuē	10
-西发里亚条约	xī fā lǐ yà tiáo yuē	10
-西发利亚条约	xī fā lì yà tiáo yuē	10
 戏法人人会变	xì fǎ rén rén huì biàn	10
 西方帝国主义	xī fāng dì guó zhǔ yì	10
 西方电气公司	xī fāng diàn qì gōng sī	10
@@ -359039,7 +358924,7 @@ sort: by_weight
 喜欢做的事情	xǐ huān zuò de shì qíng	10
 熄火保护装置	xī huǒ bǎo hù zhuāng zhì	10
 锡基西克鳄属	xī jī xī kè è shǔ	10
-细棘𫚥虎鱼属	xì jí xiā hǔ yú shǔ	10
+细棘鰕虎鱼属	xì jí xiā hǔ yú shǔ	10
 西甲巴塞罗那	xī jiǎ bā sāi luó nà	10
 犀甲独角仙兽	xī jiǎ dú jiǎo xiān shòu	10
 西甲豪门巴萨	xī jiǎ háo mén bā sà	10
@@ -359085,7 +358970,7 @@ sort: by_weight
 西克里氏兵鲶	xī kè lǐ shì bīng nián	10
 细刻饰线鸟蛤	xì kè shì xiàn niǎo há	10
 西科斯基公司	xī kē sī jī gōng sī	10
-犀孔𫚥虎鱼属	xī kǒng xiā hǔ yú shǔ	10
+犀孔鰕虎鱼属	xī kǒng xiā hǔ yú shǔ	10
 溪口森林公园	xī kǒu sēn lín gōng yuán	10
 夕拉科加陨石	xī lā kē jiā yǔn shí	10
 希腊克里特岛	xī là kè lǐ tè dǎo	10
@@ -360311,7 +360196,7 @@ sort: by_weight
 先期固结压力	xiān qī gù jié yā lì	10
 限期恢复原状	xiàn qī huī fù yuán zhuàng	10
 线鳍美鲑脂鲤	xiàn qí měi guī zhī lǐ	10
-线鳍𫚥虎鱼属	xiàn qí xiā hǔ yú shǔ	10
+线鳍鰕虎鱼属	xiàn qí xiā hǔ yú shǔ	10
 掀起腥风血雨	xiān qǐ xīng fēng xuè yǔ	10
 掀起轩然大波	xiān qǐ xuān rán dà bō	10
 掀起学习热潮	xiān qǐ xué xí rè cháo	10
@@ -360340,7 +360225,7 @@ sort: by_weight
 陷入危险之中	xiàn rù wēi xiǎn zhī zhōng	10
 陷入舆论漩涡	xiàn rù yú lùn xuán wō	10
 陷入债务危机	xiàn rù zhài wù wēi jī	10
-显色𫚥虎鱼属	xiǎn sè xiā hǔ yú shǔ	10
+显色鰕虎鱼属	xiǎn sè xiā hǔ yú shǔ	10
 线上百科全书	xiàn shàng bǎi kē quán shū	10
 先上车后买票	xiān shàng chē hòu mǎi piào	10
 弦上的你和我	xián shàng de nǐ hé wǒ	10
@@ -360951,7 +360836,7 @@ sort: by_weight
 相关维基项目	xiāng guān wéi jī xiàng mù	10
 相关文件规定	xiāng guān wén jiàn guī dìng	10
 相关文章推荐	xiāng guān wén zhāng tuī jiàn	10
-项冠𫚥虎鱼属	xiàng guān xiā hǔ yú shǔ	10
+项冠鰕虎鱼属	xiàng guān xiā hǔ yú shǔ	10
 向关心和支持	xiàng guān xīn hé zhī chí	10
 相关新闻报道	xiāng guān xīn wén bào dào	10
 相关信息发布	xiāng guān xìn xī fā bù	10
@@ -361092,10 +360977,10 @@ sort: by_weight
 向量球谐函数	xiàng liàng qiú xié hán shù	10
 向量微分算子	xiàng liàng wēi fēn suàn zǐ	10
 向量文件格式	xiàng liàng wén jiàn gé shì	10
-项鳞沟𫚥虎鱼	xiàng lín gōu xiā hǔ yú	10
+项鳞沟鰕虎鱼	xiàng lín gōu xiā hǔ yú	10
 相邻关系纠纷	xiāng lín guān xì jiū fēn	10
 乡林建设事业	xiāng lín jiàn shè shì yè	10
-项鳞吻𫚥虎鱼	xiàng lín wěn xiā hǔ yú	10
+项鳞吻鰕虎鱼	xiàng lín wěn xiā hǔ yú	10
 祥隆围丙冈村	xiáng lóng wéi bǐng gāng cūn	10
 想买都买不到	xiǎng mǎi dōu mǎi bú dào	10
 想买啥就买啥	xiǎng mǎi shá jiù mǎi shá	10
@@ -361108,7 +360993,7 @@ sort: by_weight
 相模四额齿蟹	xiāng mó sì é chǐ xiè	10
 相模湾棘花鮨	xiāng mó wān jí huā yì	10
 相模湾鳗潜鱼	xiāng mó wān mán qián yú	10
-相模𫚥虎鱼属	xiāng mó xiā hǔ yú shǔ	10
+相模鰕虎鱼属	xiāng mó xiā hǔ yú shǔ	10
 相模橡胶工业	xiāng mó xiàng jiāo gōng yè	10
 项目对象模型	xiàng mù duì xiàng mó xíng	10
 项目反应理论	xiàng mù fǎn yìng lǐ lùn	10
@@ -361913,7 +361798,7 @@ sort: by_weight
 小鳞短线脂鲤	xiǎo lín duǎn xiàn zhī lǐ	10
 小鳞盾豆娘鱼	xiǎo lín dùn dòu niáng yú	10
 小鳞仿石鲈属	xiǎo lín fǎng shí lú shǔ	10
-小鳞沟𫚥虎鱼	xiǎo lín gōu xiā hǔ yú	10
+小鳞沟鰕虎鱼	xiǎo lín gōu xiā hǔ yú	10
 小林块腹菌属	xiǎo lín kuài fù jūn shǔ	10
 小鳞狼牙脂鲤	xiǎo lín láng yá zhī lǐ	10
 小鳞利齿脂鲤	xiǎo lín lì chǐ zhī lǐ	10
@@ -362220,7 +362105,7 @@ sort: by_weight
 消息人士透露	xiāo xi rén shì tòu lù	10
 消息一经传出	xiāo xi yì jīng chuán chū	10
 小虾虎鱼亚科	xiǎo xiā hǔ yú yà kē	10
-小𫚥虎鱼亚科	xiǎo xiā hǔ yú yà kē	10
+小鰕虎鱼亚科	xiǎo xiā hǔ yú yà kē	10
 潇湘晨报记者	xiāo xiāng chén bào jì zhě	10
 潇湘电影集团	xiāo xiāng diàn yǐng jí tuán	10
 潇湘电影频道	xiāo xiāng diàn yǐng pín dào	10
@@ -362570,7 +362455,7 @@ sort: by_weight
 斜纹软呢外套	xié wén ruǎn ne wài tào	10
 斜纹小卷蛾属	xié wén xiǎo juàn é shǔ	10
 斜纹真蝎舵鱼	xié wén zhēn xiē duò yú	10
-斜纹鲻𫚥虎鱼	xié wén zī xiā hǔ yú	10
+斜纹鲻鰕虎鱼	xié wén zī xiā hǔ yú	10
 写下就是永恒	xiě xià jiù shì yǒng héng	10
 写下你的想法	xiě xià nǐ de xiǎng fǎ	10
 谢谢大家观看	xiè xie dà jiā guān kàn	10
@@ -364335,7 +364220,7 @@ sort: by_weight
 雄性激素脱发	xióng xìng jī sù tuō fà	10
 雄性激素旺盛	xióng xìng jī sù wàng shèng	10
 熊形纹寄居蟹	xióng xíng wén jì jū xiè	10
-胸眼钝𫚥虎鱼	xiōng yǎn dùn xiā hǔ yú	10
+胸眼钝鰕虎鱼	xiōng yǎn dùn xiā hǔ yú	10
 熊野本宫大社	xióng yě běn gōng dà shè	10
 熊野那智大社	xióng yě nà zhì dà shè	10
 熊野速玉大社	xióng yě sù yù dà shè	10
@@ -365959,11 +365844,11 @@ sort: by_weight
 眼巴巴地看着	yǎn bā bā de kàn zhe	10
 盐坝高速公路	yán bà gāo sù gōng lù	10
 严把工程质量	yán bǎ gōng chéng zhì liàng	10
-眼瓣沟𫚥虎鱼	yǎn bàn gōu xiā hǔ yú	10
+眼瓣沟鰕虎鱼	yǎn bàn gōu xiā hǔ yú	10
 眼斑眶锯雀鲷	yǎn bān kuàng jù què diāo	10
 眼斑拟石首鱼	yǎn bān nǐ shí shǒu yú	10
 眼斑四臂躄鱼	yǎn bān sì bì bì yú	10
-眼斑丝𫚥虎鱼	yǎn bān sī xiā hǔ yú	10
+眼斑丝鰕虎鱼	yǎn bān sī xiā hǔ yú	10
 眼斑细齿蛇鳗	yǎn bān xì chǐ shé mán	10
 眼斑小齿蛇鳗	yǎn bān xiǎo chǐ shé mán	10
 眼斑原天竺鲷	yǎn bān yuán tiān zhú diāo	10
@@ -366035,8 +365920,8 @@ sort: by_weight
 岩代大久保站	yán dài dà jiǔ bǎo zhàn	10
 眼袋和黑眼圈	yǎn dài hé hēi yǎn quān	10
 眼带双耳丽鱼	yǎn dài shuāng ěr lì yú	10
-眼带狭𫚥虎鱼	yǎn dài xiá xiā hǔ yú	10
-眼带叶𫚥虎鱼	yǎn dài yè xiā hǔ yú	10
+眼带狭鰕虎鱼	yǎn dài xiá xiā hǔ yú	10
+眼带叶鰕虎鱼	yǎn dài yè xiā hǔ yú	10
 眼带直口非鲫	yǎn dài zhí kǒu fēi jì	10
 眼带珠母丽鱼	yǎn dài zhū mǔ lì yú	10
 严岛神社鸟居	yán dǎo shén shè niǎo jū	10
@@ -366647,7 +366532,7 @@ sort: by_weight
 延续历史文脉	yán xù lì shǐ wén mài	10
 延续时间最长	yán xù shí jiān zuì cháng	10
 研学实践教育	yán xué shí jiàn jiào yù	10
-岩穴𫚥虎鱼属	yán xué xiā hǔ yú shǔ	10
+岩穴鰕虎鱼属	yán xué xiā hǔ yú shǔ	10
 盐芽孢杆菌属	yán yá bāo gǎn jūn shǔ	10
 盐岩地表构造	yán yán dì biǎo gòu zào	10
 延延高速公路	yán yán gāo sù gōng lù	10
@@ -367207,7 +367092,7 @@ sort: by_weight
 药膳食疗研究	yào shàn shí liáo yán jiū	10
 腰山王氏庄园	yāo shān wáng shì zhuāng yuán	10
 药山惟俨禅师	yào shān wéi yǎn chán shī	10
-瑶山吻𫚥虎鱼	yáo shān wěn xiā hǔ yú	10
+瑶山吻鰕虎鱼	yáo shān wěn xiā hǔ yú	10
 邀上三五好友	yāo shàng sān wǔ hǎo yǒu	10
 窑神太上老君	yáo shén tài shàng lǎo jūn	10
 要式法律行为	yào shì fǎ lǜ xíng wéi	10
@@ -367270,7 +367155,7 @@ sort: by_weight
 夜半歌声续集	yè bàn gē shēng xù jí	10
 腋斑密光鳃鱼	yè bān mì guāng sāi yú	10
 腋斑似天竺鱼	yè bān sì tiān zhú yú	10
-腋斑叶𫚥虎鱼	yè bān yè xiā hǔ yú	10
+腋斑叶鰕虎鱼	yè bān yè xiā hǔ yú	10
 也不会反对的	yě bú huì fǎn duì de	10
 也不见得就是	yě bú jiàn dé jiù shì	10
 也不是当年的	yě bú shì dāng nián de	10
@@ -367578,7 +367463,7 @@ sort: by_weight
 业主立案法团	yè zhǔ lì àn fǎ tuán	10
 业主临时公约	yè zhǔ lín shí gōng yuē	10
 业主与开发商	yè zhǔ yǔ kāi fā shāng	10
-叶状𫚥虎鱼属	yè zhuàng xiā hǔ yú shǔ	10
+叶状鰕虎鱼属	yè zhuàng xiā hǔ yú shǔ	10
 以埃和平条约	yǐ āi hé píng tiáo yuē	10
 以爱情的名义	yǐ ài qíng de míng yì	10
 怡安保险集团	yí ān bǎo xiǎn jí tuán	10
@@ -368329,7 +368214,7 @@ sort: by_weight
 一级速率反应	yì jí sù lǜ fǎn yìng	10
 乙基碳二亚胺	yǐ jī tàn èr yà àn	10
 以及无线充电	yǐ jí wú xiàn chōng diàn	10
-翼棘𫚥虎鱼属	yì jí xiā hǔ yú shǔ	10
+翼棘鰕虎鱼属	yì jí xiā hǔ yú shǔ	10
 一级行政区划	yì jí xíng zhèng qū huà	10
 乙基溴化吡啶	yǐ jī xiù huà bǐ dìng	10
 乙基氧氮陆圜	yǐ jī yǎng dàn lù huán	10
@@ -368489,7 +368374,7 @@ sort: by_weight
 一棵树上吊死	yì kē shù shàng diào sǐ	10
 艺科数字娱乐	yì kē shù zì yú lè	10
 伊克西翁传说	yī kè xī wēng chuán shuō	10
-依柯𫚥虎鱼属	yī kē xiā hǔ yú shǔ	10
+依柯鰕虎鱼属	yī kē xiā hǔ yú shǔ	10
 伊克兴甲鲶属	yī kè xīng jiǎ nián shǔ	10
 一颗悬着的心	yì kē xuán zhe de xīn	10
 一颗学习的心	yì kē xué xí de xīn	10
@@ -369042,7 +368927,7 @@ sort: by_weight
 已是大势所趋	yǐ shì dà shì suǒ qū	10
 遗失的美好等	yí shī de měi hǎo děng	10
 医师定期考核	yī shī dìng qī kǎo hé	10
-伊氏钝𫚥虎鱼	yī shì dùn xiā hǔ yú	10
+伊氏钝鰕虎鱼	yī shì dùn xiā hǔ yú	10
 医师多点执业	yī shī duō diǎn zhí yè	10
 一石二鸟之计	yì shí èr niǎo zhī jì	10
 伊氏副狮子鱼	yī shì fù shī zi yú	10
@@ -369075,7 +368960,7 @@ sort: by_weight
 一时说不上来	yì shí shuō bú shàng lái	10
 一时无从下手	yì shí wú cóng xià shǒu	10
 一时无言以对	yì shí wú yán yǐ duì	10
-伊氏𫚥虎鱼属	yī shì xiā hǔ yú shǔ	10
+伊氏鰕虎鱼属	yī shì xiā hǔ yú shǔ	10
 一时想不明白	yì shí xiǎng bù míng bái	10
 一时想不起来	yì shí xiǎng bù qǐ lái	10
 已是香港明日	yǐ shì xiāng gǎng míng rì	10
@@ -369576,7 +369461,7 @@ sort: by_weight
 一亿零五百万	yí yì líng wǔ bǎi wàn	10
 意义十分重大	yì yì shí fēn zhòng dà	10
 一乙酸甘油酯	yī yǐ suān gān yóu zhǐ	10
-异翼𫚥虎鱼属	yì yì xiā hǔ yú shǔ	10
+异翼鰕虎鱼属	yì yì xiā hǔ yú shǔ	10
 一亿一千万元	yí yì yì qiān wàn yuán	10
 以英语为外语	yǐ yīng yǔ wéi wài yǔ	10
 医用的水杨酸	yī yòng de shuǐ yáng suān	10
@@ -370222,7 +370107,7 @@ sort: by_weight
 殷墟卜辞综述	yīn xū bǔ cí zōng shù	10
 殷墟王陵遗址	yīn xū wáng líng yí zhǐ	10
 银芽肉丝炒面	yín yá ròu sī chǎo miàn	10
-隐眼𫚥虎鱼属	yǐn yǎn xiā hǔ yú shǔ	10
+隐眼鰕虎鱼属	yǐn yǎn xiā hǔ yú shǔ	10
 阴阳半线脂鲤	yīn yáng bàn xiàn zhī lǐ	10
 阴阳师百闻牌	yīn yáng shī bǎi wén pái	10
 阴阳五行学说	yīn yáng wǔ xíng xué shuō	10
@@ -370680,7 +370565,7 @@ sort: by_weight
 硬盘分区软件	yìng pán fēn qū ruǎn jiàn	10
 硬盘数据恢复	yìng pán shù jù huī fù	10
 硬盘修复工具	yìng pán xiū fù gōng jù	10
-硬皮𫚥虎鱼属	yìng pí xiā hǔ yú shǔ	10
+硬皮鰕虎鱼属	yìng pí xiā hǔ yú shǔ	10
 硬皮肿腿蜂属	yìng pí zhǒng tuǐ fēng shǔ	10
 影片分享网站	yǐng piàn fēn xiǎng wǎng zhàn	10
 影片共享网站	yǐng piàn gòng xiǎng wǎng zhàn	10
@@ -373526,7 +373411,7 @@ sort: by_weight
 原位杂交技术	yuán wèi zá jiāo jì shù	10
 缘尾帚齿非鲫	yuán wěi zhǒu chǐ fēi jì	10
 原位资源利用	yuán wèi zī yuán lì yòng	10
-原吻𫚥虎鱼属	yuán wěn xiā hǔ yú shǔ	10
+原吻鰕虎鱼属	yuán wěn xiā hǔ yú shǔ	10
 愿我们的爱情	yuàn wǒ men de ài qíng	10
 愿我们的生活	yuàn wǒ men de shēng huó	10
 愿我们的友谊	yuàn wǒ men de yǒu yì	10
@@ -375050,7 +374935,7 @@ sort: by_weight
 詹姆斯兔脂鲤	zhān mǔ sī tù zhī lǐ	10
 詹姆斯王圣经	zhān mǔ sī wáng shèng jīng	10
 詹尼小雷氏鲶	zhān ní xiǎo léi shì nián	10
-粘皮鲻𫚥虎鱼	zhān pí zī xiā hǔ yú	10
+粘皮鲻鰕虎鱼	zhān pí zī xiā hǔ yú	10
 占便宜的心理	zhàn pián yi de xīn lǐ	10
 展鳍真巨口鱼	zhǎn qí zhēn jù kǒu yú	10
 站前南大道站	zhàn qián nán dà dào zhàn	10
@@ -375512,7 +375397,7 @@ sort: by_weight
 爪哇基础类别	zhǎo wā jī chǔ lèi bié	10
 爪哇莲花青螺	zhǎo wā lián huā qīng luó	10
 爪哇连鳍唇鱼	zhǎo wā lián qí chún yú	10
-爪哇拟𫚥虎鱼	zhǎo wā nǐ xiā hǔ yú	10
+爪哇拟鰕虎鱼	zhǎo wā nǐ xiā hǔ yú	10
 爪哇闪皮蛇属	zhǎo wā shǎn pí shé shǔ	10
 赵薇和黄晓明	zhào wēi hé huáng xiǎo míng	10
 赵薇和林心如	zhào wēi hé lín xīn rú	10
@@ -375912,7 +375797,7 @@ sort: by_weight
 真空脱水工艺	zhēn kōng tuō shuǐ gōng yì	10
 真空荧光显示	zhēn kōng yíng guāng xiǎn shì	10
 真空中的光速	zhēn kōng zhōng de guāng sù	10
-真盔𫚥虎鱼属	zhēn kuī xiā hǔ yú shǔ	10
+真盔鰕虎鱼属	zhēn kuī xiā hǔ yú shǔ	10
 针阔叶混交林	zhēn kuò yè hùn jiāo lín	10
 真理标准讨论	zhēn lǐ biāo zhǔn tǎo lùn	10
 真理的共识论	zhēn lǐ de gòng shí lùn	10
@@ -377517,7 +377402,7 @@ sort: by_weight
 只可潜身缩首	zhǐ kě qián shēn suō shǒu	10
 栉孔扇贝亚科	zhì kǒng shàn bèi yà kē	10
 栉孔虾虎鱼属	zhì kǒng xiā hǔ yú shǔ	10
-栉孔𫚥虎鱼属	zhì kǒng xiā hǔ yú shǔ	10
+栉孔鰕虎鱼属	zhì kǒng xiā hǔ yú shǔ	10
 直口拟长颌鱼	zhí kǒu nǐ cháng hé yú	10
 知来者之可追	zhī lái zhě zhī kě zhuī	10
 芷兰实验学校	zhǐ lán shí yàn xué xiào	10
@@ -378363,9 +378248,9 @@ sort: by_weight
 秩序自由主义	zhì xù zì yóu zhǔ yì	10
 智选假日酒店	zhì xuǎn jià rì jiǔ diàn	10
 枝芽胞杆菌属	zhī yá bāo gǎn jūn shǔ	10
-枝牙𫚥虎鱼属	zhī yá xiā hǔ yú shǔ	10
+枝牙鰕虎鱼属	zhī yá xiā hǔ yú shǔ	10
 芝堰村建筑群	zhī yàn cūn jiàn zhù qún	10
-栉眼𫚥虎鱼属	zhì yǎn xiā hǔ yú shǔ	10
+栉眼鰕虎鱼属	zhì yǎn xiā hǔ yú shǔ	10
 只要打开手机	zhǐ yào dǎ kāi shǒu jī	10
 只要搭配得好	zhǐ yào dā pèi de hǎo	10
 只要动动手指	zhǐ yào dòng dòng shǒu zhǐ	10
@@ -380146,7 +380031,7 @@ sort: by_weight
 周期折减系数	zhōu qī zhé jiǎn xì shù	10
 皱鞘肖叶甲属	zhòu qiào xiào yè jiǎ shǔ	10
 州人民检察院	zhōu rén mín jiǎn chá yuàn	10
-皱鳃𫚥虎鱼属	zhòu sāi xiā hǔ yú shǔ	10
+皱鳃鰕虎鱼属	zhòu sāi xiā hǔ yú shǔ	10
 舟山跨海大桥	zhōu shān kuà hǎi dà qiáo	10
 舟山连岛大桥	zhōu shān lián dǎo dà qiáo	10
 舟山群岛新区	zhōu shān qún dǎo xīn qū	10
@@ -380281,7 +380166,7 @@ sort: by_weight
 主的兄弟雅各	zhǔ de xiōng dì yǎ gè	10
 筑地银章鱼烧	zhù dì yín zhāng yú shāo	10
 珠点固曲齿鲷	zhū diǎn gù qǔ chǐ diāo	10
-珠点衔𫚥虎鱼	zhū diǎn xián xiā hǔ yú	10
+珠点衔鰕虎鱼	zhū diǎn xián xiā hǔ yú	10
 注定孤独一生	zhù dìng gū dú yì shēng	10
 注定孤独终老	zhù dìng gū dú zhōng lǎo	10
 注定一事无成	zhù dìng yí shì wú chéng	10
@@ -381596,7 +381481,7 @@ sort: by_weight
 装饰拟豆瓷蟹	zhuāng shì nǐ dòu cí xiè	10
 装饰设计工程	zhuāng shì shè jì gōng chéng	10
 装饰设计公司	zhuāng shì shè jì gōng sī	10
-妆饰衔𫚥虎鱼	zhuāng shì xián xiā hǔ yú	10
+妆饰衔鰕虎鱼	zhuāng shì xián xiā hǔ yú	10
 装饰艺术风格	zhuāng shì yì shù fēng gé	10
 装饰艺术设计	zhuāng shì yì shù shè jì	10
 装饰艺术运动	zhuāng shì yì shù yùn dòng	10
@@ -381622,7 +381507,7 @@ sort: by_weight
 庄廷鑨明史案	zhuāng tíng lóng míng shǐ àn	10
 庄文太子赵愭	zhuāng wén tài zǐ zhào qí	10
 庄文颖氏菌属	zhuāng wén yǐng shì jūn shǔ	10
-壮牙𫚥虎鱼属	zhuàng yá xiā hǔ yú shǔ	10
+壮牙鰕虎鱼属	zhuàng yá xiā hǔ yú shǔ	10
 壮语维基百科	zhuàng yǔ wéi jī bǎi kē	10
 壮哉我大蓝翔	zhuàng zāi wǒ dà lán xiáng	10
 壮展电脑科技	zhuàng zhǎn diàn nǎo kē jì	10
@@ -382273,8 +382158,8 @@ sort: by_weight
 字里行间都是	zì lǐ háng jiān dōu shì	10
 资料传输速率	zī liào chuán shū sù lǜ	10
 资料分析软件	zī liào fēn xī ruǎn jiàn	10
-子陵吻𫚥虎鱼	zǐ líng wěn xiā hǔ yú	10
-子陵栉𫚥虎鱼	zǐ líng zhì xiā hǔ yú	10
+子陵吻鰕虎鱼	zǐ líng wěn xiā hǔ yú	10
+子陵栉鰕虎鱼	zǐ líng zhì xiā hǔ yú	10
 紫罗兰格粒螺	zǐ luó lán gé lì luó	10
 紫罗兰胸蜂鸟	zǐ luó lán xiōng fēng niǎo	10
 自律给我自由	zì lǜ gěi wǒ zì yóu	10
@@ -382874,7 +382759,7 @@ sort: by_weight
 自助值机柜台	zì zhù zhí jī guì tái	10
 姊姊的守护者	zǐ zǐ de shǒu hù zhě	10
 纵斑双冠丽鱼	zòng bān shuāng guān lì yú	10
-棕斑丝𫚥虎鱼	zōng bān sī xiā hǔ yú	10
+棕斑丝鰕虎鱼	zōng bān sī xiā hǔ yú	10
 纵棒头虫亚目	zòng bàng tóu chóng yà mù	10
 棕背波光鳃鱼	zōng bèi bō guāng sāi yú	10
 棕背小霸鹟属	zōng bèi xiǎo bà wēng shǔ	10
@@ -382887,7 +382772,7 @@ sort: by_weight
 纵带恐怖丽鱼	zòng dài kǒng bù lì yú	10
 纵带拟海猪鱼	zòng dài nǐ hǎi zhū yú	10
 纵带双冠丽鱼	zòng dài shuāng guān lì yú	10
-纵带鹦𫚥虎鱼	zòng dài yīng xiā hǔ yú	10
+纵带鹦鰕虎鱼	zòng dài yīng xiā hǔ yú	10
 总的发明构思	zǒng de fā míng gòu sī	10
 总等电位联结	zǒng děng diàn wèi lián jié	10
 棕顶尖嘴蜂鸟	zōng dǐng jiān zuǐ fēng niǎo	10
@@ -383079,7 +382964,7 @@ sort: by_weight
 纵横二千集团	zòng héng èr qiān jí tuán	10
 棕喉红嘴蜂鸟	zōng hóu hóng zuǐ fēng niǎo	10
 棕黄拟金眼鲷	zōng huáng nǐ jīn yǎn diāo	10
-纵颊𫚥虎鱼属	zòng jiá xiā hǔ yú shǔ	10
+纵颊鰕虎鱼属	zòng jiá xiā hǔ yú shǔ	10
 宗角禄康公园	zōng jiǎo lù kāng gōng yuán	10
 总结表彰大会	zǒng jié biǎo zhāng dà huì	10
 宗镜大昭之庙	zōng jìng dà zhāo zhī miào	10
@@ -399004,8 +398889,6 @@ sort: by_weight
 江西龙天勇有色金属	jiāng xī lóng tiān yǒng yǒu sè jīn shǔ	10
 解硫胺素芽孢杆菌属	jiě liú àn sù yá bāo gǎn jūn shǔ	10
 九百六十万平方公里	jiǔ bǎi liù shí wàn píng fāng gōng lǐ	10
-聚对苯二甲酸乙二醇	jù duì běn èr jiǎ suān yǐ èr chún	10
-聚对苯二甲酸乙二酯	jù duì běn èr jiǎ suān yǐ èr zhǐ	10
 聚乙烯对苯二甲酸酯	jù yǐ xī duì běn èr jiǎ suān zhǐ	10
 克拉西利尼科夫菌属	kè lā xī lì ní kē fū jūn shǔ	10
 雷普枯叶侏儒避役属	léi pǔ kū yè zhū rú bì yì shǔ	10
@@ -399071,6 +398954,7 @@ sort: by_weight
 解支链淀粉芽胞杆菌属	jiě zhī liàn diàn fěn yá bāo gǎn jūn shǔ	10
 救人一命胜造七级浮屠	jiù rén yí mìng shèng zào qī jí fú tú	10
 聚对苯二甲酸丁二醇酯	jù duì běn èr jiǎ suān dīng èr chún zhǐ	10
+聚对苯二甲酸乙二醇酯	jù duì běn èr jiǎ suān yǐ èr chún zhǐ	10
 巨型双核糖核酸病毒科	jù xíng shuāng hé táng hé suān bìng dú kē	10
 可怜之人必有可恨之处	kě lián zhī rén bì yǒu kě hèn zhī chù	10
 邻苯二甲酰基磺胺噻唑	lín běn èr jiǎ xiān jī huáng àn sāi zuò	10
@@ -399089,6 +398973,7 @@ sort: by_weight
 当归四逆加吴茱萸生姜汤	dāng guī sì nì jiā wú zhū yú shēng jiāng tāng	10
 过了这个村就没这个店了	guò le zhè ge cūn jiù méi zhè ge diàn le	10
 厚朴生姜半夏甘草人参汤	hòu pò shēng jiāng bàn xià gān cǎo rén shēn tāng	10
+你不说话没人把你当哑巴	nǐ bù shuō huà méi rén bǎ nǐ dāng yǎ bā	10
 你不说话没人当你是哑巴	nǐ bù shuō huà méi rén dāng nǐ shì yǎ bā	10
 葡萄孢菌乌尔米耶病毒科	pú táo bāo jūn wū ěr mǐ yé bìng dú kē	10
 让暴风雨来得更猛烈些吧	ràng bào fēng yǔ lái de gèng měng liè xiē ba	10
