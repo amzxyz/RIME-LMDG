@@ -1259,8 +1259,6 @@ sort: by_weight
 按国家规定	àn guó jiā guī dìng	10
 按行业分类	àn háng yè fēn lèi	10
 按行业划分	àn háng yè huà fēn	10
-按行政区分	àn háng zhèng qū fēn	10
-按行政区划	àn háng zhèng qū huà	10
 暗褐霸鹟属	àn hè bà wēng shǔ	10
 暗褐黑姑鱼	àn hè hēi gū yú	10
 暗褐盘雀鲷	àn hè pán què diāo	10
@@ -2144,6 +2142,8 @@ sort: by_weight
 暗星额蜂鸟	àn xīng é fēng niǎo	10
 鞍形花蟹蛛	ān xíng huā xiè zhū	10
 按姓氏拼音	àn xìng shì pīn yīn	10
+按行政区分	àn xíng zhèng qū fēn	10
+按行政区划	àn xíng zhèng qū huà	10
 暗胸珠目鱼	àn xiōng zhū mù yú	10
 按学科分类	àn xué kē fēn lèi	10
 按颜色分类	àn yán sè fēn lèi	10
@@ -8495,6 +8495,7 @@ sort: by_weight
 北京社科院	běi jīng shè kē yuàn	10
 北京十八中	běi jīng shí bā zhōng	10
 北京市餐厅	běi jīng shì cān tīng	10
+北京什刹海	běi jīng shí chà hǎi	10
 北京市产业	běi jīng shì chǎn yè	10
 北京市昌平	běi jīng shì chāng píng	10
 北京市场上	běi jīng shì chǎng shàng	10
@@ -8556,7 +8557,6 @@ sort: by_weight
 北京市人大	běi jīng shì rén dà	10
 北京十三陵	běi jīng shí sān líng	10
 北京十三中	běi jīng shí sān zhōng	10
-北京什刹海	běi jīng shí shā hǎi	10
 北京市商场	běi jīng shì shāng chǎng	10
 北京市商业	běi jīng shì shāng yè	10
 背景是什么	bèi jǐng shì shén me	10
@@ -26008,7 +26008,7 @@ sort: by_weight
 池波正太郎	chí bō zhèng tài láng	10
 吃不饱肚子	chī bù bǎo dù zi	10
 吃不到葡萄	chī bú dào pú táo	10
-吃不到曲奇	chī bú dào qǔ qí	10
+吃不到曲奇	chī bú dào qū qí	10
 吃不了多少	chī bù liǎo duō shǎo	10
 吃不胖体质	chī bú pàng tǐ zhì	10
 吃不上饭了	chī bú shàng fàn le	10
@@ -32005,6 +32005,7 @@ sort: by_weight
 打得也很好	dǎ de yě hěn hǎo	10
 打得一拳开	dǎ dé yī quán kāi	10
 答的真不错	dá de zhēn bú cuò	10
+打的真不错	dǎ de zhēn bú cuò	10
 大灯保险杠	dà dēng bǎo xiǎn gāng	10
 大灯的设计	dà dēng de shè jì	10
 大灯的造型	dà dēng de zào xíng	10
@@ -32054,7 +32055,6 @@ sort: by_weight
 大地湾遗址	dà dì wān yí zhǐ	10
 大地艺术家	dà dì yì shù jiā	10
 大地幼儿园	dà dì yòu ér yuán	10
-打的真不错	dǎ dī zhēn bú cuò	10
 打底针织衫	dǎ dǐ zhēn zhī shān	10
 大地坐标系	dà dì zuò biāo xì	10
 大电池容量	dà diàn chí róng liàng	10
@@ -37262,7 +37262,7 @@ sort: by_weight
 到锡林浩特	dào xī lín hào tè	10
 倒吸一口气	dào xī yì kǒu qì	10
 道狭草木长	dào xiá cǎo mù cháng	10
-倒下的士兵	dǎo xià dī shì bīng	10
+倒下的士兵	dǎo xià de shì bīng	10
 岛鰕虎鱼属	dǎo xiā hǔ yú shǔ	10
 到现场办理	dào xiàn chǎng bàn lǐ	10
 到现场观看	dào xiàn chǎng guān kàn	10
@@ -46663,7 +46663,7 @@ sort: by_weight
 钝颚白蚁属	dùn è bái yǐ shǔ	10
 钝额斑螟属	dùn é bān míng shǔ	10
 钝颚拟豆蟹	dùn è nǐ dòu xiè	10
-钝额曲毛蟹	dùn é qǔ máo xiè	10
+钝额曲毛蟹	dùn é qū máo xiè	10
 钝额岩瓷蟹	dùn é yán cí xiè	10
 钝额野螟属	dùn é yě míng shǔ	10
 盾构法施工	dùn gòu fǎ shī gōng	10
@@ -48756,7 +48756,6 @@ sort: by_weight
 二过一配合	èr guò yī pèi hé	10
 二孩生育证	èr hái shēng yù zhèng	10
 洱海小普陀	ěr hǎi xiǎo pǔ tuó	10
-二行程引擎	èr háng chéng yǐn qíng	10
 二号得分手	èr hào dé fēn shǒu	10
 而好犯上者	ér hǎo fàn shàng zhě	10
 二号航站楼	èr hào háng zhàn lóu	10
@@ -49787,6 +49786,7 @@ sort: by_weight
 二硝基氯苯	èr xiāo jī lǜ běn	10
 二硝基萘酚	èr xiāo jī nài fēn	10
 二硝基双酚	èr xiāo jī shuāng fēn	10
+二行程引擎	èr xíng chéng yǐn qíng	10
 耳形肋毛蕨	ěr xíng lèi máo jué	10
 二型鳞毛蕨	èr xíng lín máo jué	10
 耳形瘤足蕨	ěr xíng liú zú jué	10
@@ -61095,11 +61095,11 @@ sort: by_weight
 高昂的房价	gāo áng de fáng jià	10
 高昂的房租	gāo áng de fáng zū	10
 高昂的价格	gāo áng de jià gé	10
+高昂的士气	gāo áng de shì qì	10
 高昂的售价	gāo áng de shòu jià	10
 高昂的头颅	gāo áng de tóu lú	10
 高昂的学费	gāo áng de xué fèi	10
 高昂的租金	gāo áng de zū jīn	10
-高昂的士气	gāo áng dī shì qì	10
 高傲的头颅	gāo ào de tóu lú	10
 高傲的姿态	gāo ào de zī tài	10
 高坂保奈美	gāo bǎn bǎo nài měi	10
@@ -73590,6 +73590,7 @@ sort: by_weight
 国家的人口	guó jiā de rén kǒu	10
 国家的人民	guó jiā de rén mín	10
 国家的荣誉	guó jiā de róng yù	10
+国家的士兵	guó jiā de shì bīng	10
 国家的实力	guó jiā de shí lì	10
 国家的调控	guó jiā de tiáo kòng	10
 国家的统一	guó jiā de tǒng yī	10
@@ -73611,7 +73612,6 @@ sort: by_weight
 国家的中心	guó jiā de zhōng xīn	10
 国家的主人	guó jiā de zhǔ rén	10
 国家地表水	guó jiā dì biǎo shuǐ	10
-国家的士兵	guó jiā dī shì bīng	10
 国家地图集	guó jiā dì tú jí	10
 国家地震局	guó jiā dì zhèn jú	10
 国家地质部	guó jiā dì zhì bù	10
@@ -89619,13 +89619,13 @@ sort: by_weight
 活着的人们	huó zhe de rén men	10
 活着的生命	huó zhe de shēng mìng	10
 活着的生物	huó zhe de shēng wù	10
+活着的士兵	huó zhe de shì bīng	10
 活着的时候	huó zhe de shí hou	10
 活着的世界	huó zhe de shì jiè	10
 活着的无奈	huó zhe de wú nài	10
 活着的希望	huó zhe de xī wàng	10
 活着的意义	huó zhe de yì yì	10
 活着的祖宗	huó zhe de zǔ zōng	10
-活着的士兵	huó zhe dī shì bīng	10
 活着就是命	huó zhe jiù shì mìng	10
 活着没意思	huó zhe méi yì sī	10
 或者任何人	huò zhě rèn hé rén	10
@@ -108647,9 +108647,9 @@ sort: by_weight
 军地坪街道	jūn dì píng jiē dào	10
 军队的后勤	jūn duì de hòu qín	10
 军队的建设	jūn duì de jiàn shè	10
+军队的士气	jūn duì de shì qì	10
 军队的统帅	jūn duì de tǒng shuài	10
 军队的训练	jūn duì de xùn liàn	10
-军队的士气	jūn duì dī shì qì	10
 军队国家化	jūn duì guó jiā huà	10
 军队国有化	jūn duì guó yǒu huà	10
 军队和警察	jūn duì hé jǐng chá	10
@@ -117084,13 +117084,13 @@ sort: by_weight
 老公打电话	lǎo gōng dǎ diàn huà	10
 老公的表现	lǎo gōng de biǎo xiàn	10
 老公的春天	lǎo gōng de chūn tiān	10
+老公的哥哥	lǎo gōng de gē ge	10
 老公的工资	lǎo gōng de gōng zī	10
 老公的工作	lǎo gōng de gōng zuò	10
 老公的朋友	lǎo gōng de péng yǒu	10
 老公的事业	lǎo gōng de shì yè	10
 老公的态度	lǎo gōng de tài dù	10
 老公的问题	lǎo gōng de wèn tí	10
-老公的哥哥	lǎo gōng dī gē gē	10
 老公对不起	lǎo gōng duì bù qǐ	10
 老公和儿子	lǎo gōng hé ér zi	10
 老公和孩子	lǎo gōng hé hái zi	10
@@ -128472,7 +128472,7 @@ sort: by_weight
 猫和金丝雀	māo hé jīn sī què	10
 猫和老鼠中	māo hé lǎo shǔ zhōng	10
 矛颌翼龙属	máo hé yì lóng shǔ	10
-毛红曲霉科	máo hóng qǔ méi kē	10
+毛红曲霉科	máo hóng qū méi kē	10
 毛喉鞘蕊花	máo hóu qiào ruǐ huā	10
 毛花落檐属	máo huā luò yán shǔ	10
 毛花猕猴桃	máo huā mí hóu táo	10
@@ -129928,6 +129928,7 @@ sort: by_weight
 美美的出门	měi měi de chū mén	10
 美美的发型	měi měi de fà xíng	10
 妹妹的房间	mèi mei de fáng jiān	10
+妹妹的哥哥	mèi mei de gē ge	10
 美美的时光	měi měi de shí guāng	10
 美美的帅帅	měi měi de shuài shuài	10
 美美的享受	měi měi de xiǎng shòu	10
@@ -129936,7 +129937,6 @@ sort: by_weight
 美美的妆容	měi měi de zhuāng róng	10
 美美的自拍	měi měi de zì pāi	10
 妹妹等等我	mèi mei děng děng wǒ	10
-妹妹的哥哥	mèi mei dī gē gē	10
 妹妹第一次	mèi mei dì yī cì	10
 妹妹和妹夫	mèi mei hé mèi fū	10
 美眉写真馆	měi méi xiě zhēn guǎn	10
@@ -140610,6 +140610,7 @@ sort: by_weight
 年轻的身体	nián qīng de shēn tǐ	10
 年轻的生活	nián qīng de shēng huó	10
 年轻的声音	nián qīng de shēng yīn	10
+年轻的士兵	nián qīng de shì bīng	10
 年轻的时代	nián qīng de shí dài	10
 年轻的时光	nián qīng de shí guāng	10
 年轻的时候	nián qīng de shí hou	10
@@ -140638,7 +140639,6 @@ sort: by_weight
 年轻的状态	nián qīng de zhuàng tài	10
 年轻的资本	nián qīng de zī běn	10
 年轻的自己	nián qīng de zì jǐ	10
-年轻的士兵	nián qīng dī shì bīng	10
 年轻二十岁	nián qīng èr shí suì	10
 年轻公务员	nián qīng gōng wù yuán	10
 年轻和时尚	nián qīng hé shí shàng	10
@@ -147204,6 +147204,7 @@ sort: by_weight
 普通的少年	pǔ tōng de shào nián	10
 普通的设计	pǔ tōng de shè jì	10
 普通的生活	pǔ tōng de shēng huó	10
+普通的士兵	pǔ tōng de shì bīng	10
 普通的食材	pǔ tōng de shí cái	10
 普通的市民	pǔ tōng de shì mín	10
 普通的事情	pǔ tōng de shì qíng	10
@@ -147220,7 +147221,6 @@ sort: by_weight
 普通的职员	pǔ tōng de zhí yuán	10
 普通地级市	pǔ tōng dì jí shì	10
 普通地理学	pǔ tōng dì lǐ xué	10
-普通的士兵	pǔ tōng dī shì bīng	10
 普通地质学	pǔ tōng dì zhì xué	10
 普通电动车	pǔ tōng diàn dòng chē	10
 普通电视机	pǔ tōng diàn shì jī	10
@@ -151492,7 +151492,7 @@ sort: by_weight
 巧克力企鹅	qiǎo kè lì qǐ é	10
 巧克力情人	qiǎo kè lì qíng rén	10
 巧克力情缘	qiǎo kè lì qíng yuán	10
-巧克力曲奇	qiǎo kè lì qǔ qí	10
+巧克力曲奇	qiǎo kè lì qū qí	10
 巧克力融化	qiǎo kè lì róng huà	10
 巧克力软糖	qiǎo kè lì ruǎn táng	10
 巧克力世界	qiǎo kè lì shì jiè	10
@@ -151732,6 +151732,7 @@ sort: by_weight
 亲爱的房客	qīn ài de fáng kè	10
 亲爱的父母	qīn ài de fù mǔ	10
 亲爱的父亲	qīn ài de fù qīn	10
+亲爱的哥哥	qīn ài de gē ge	10
 亲爱的顾客	qīn ài de gù kè	10
 亲爱的姑娘	qīn ài de gū niang	10
 亲爱的孩子	qīn ài de hái zi	10
@@ -151784,7 +151785,6 @@ sort: by_weight
 亲爱的自己	qīn ài de zì jǐ	10
 亲爱的姊妹	qīn ài de zǐ mèi	10
 亲爱的祖国	qīn ài de zǔ guó	10
-亲爱的哥哥	qīn ài dī gē gē	10
 亲爱亲爱的	qīn ài qīn ài de	10
 秦邦宪故居	qín bāng xiàn gù jū	10
 亲北京媒体	qīn běi jīng méi tǐ	10
@@ -153438,7 +153438,7 @@ sort: by_weight
 青森睡魔祭	qīng sēn shuì mó jì	10
 轻纱芭蕉螺	qīng shā bā jiāo luó	10
 青山车辆段	qīng shān chē liàng duàn	10
-青山大乐队	qīng shān dà lè duì	10
+青山大乐队	qīng shān dà yuè duì	10
 请善待自己	qǐng shàn dài zì jǐ	10
 青山殿水库	qīng shān diàn shuǐ kù	10
 青山湖大道	qīng shān hú dà dào	10
@@ -154233,6 +154233,7 @@ sort: by_weight
 球队的排名	qiú duì de pái míng	10
 球队的球员	qiú duì de qiú yuán	10
 球队的实力	qiú duì de shí lì	10
+球队的士气	qiú duì de shì qì	10
 球队的首发	qiú duì de shǒu fā	10
 球队的替补	qiú duì de tì bǔ	10
 球队的外援	qiú duì de wài yuán	10
@@ -154248,7 +154249,6 @@ sort: by_weight
 球队的主力	qiú duì de zhǔ lì	10
 球队的状态	qiú duì de zhuàng tài	10
 球队第六人	qiú duì dì liù rén	10
-球队的士气	qiú duì dī shì qì	10
 球队二当家	qiú duì èr dāng jiā	10
 球队更衣室	qiú duì gēng yī shì	10
 球队管理层	qiú duì guǎn lǐ céng	10
@@ -155011,12 +155011,12 @@ sort: by_weight
 取屏幕宽度	qǔ píng mù kuān dù	10
 取启动时间	qǔ qǐ dòng shí jiān	10
 去齐齐哈尔	qù qí qí hā ěr	490
-曲奇四重奏	qǔ qí sì chóng zòu	10
+曲奇四重奏	qū qí sì chóng zòu	10
 去其他地方	qù qí tā dì fāng	10
 去其他国家	qù qí tā guó jiā	10
 去氢表雄酮	qù qīng biǎo xióng tóng	10
 瞿秋白故居	qú qiū bái gù jū	10
-屈曲杆菌属	qū qǔ gǎn jūn shǔ	10
+屈曲杆菌属	qū qū gǎn jūn shǔ	10
 去去图书馆	qù qù tú shū guǎn	10
 曲曲弯弯的	qū qū wān wān de	10
 区区有鬼故	qū qū yǒu guǐ gù	10
@@ -158941,6 +158941,7 @@ sort: by_weight
 认识到错误	rèn shi dào cuò wù	10
 认识到问题	rèn shi dào wèn tí	10
 人事的恶魔	rén shì de è mó	10
+认识的哥哥	rèn shi de gē ge	10
 认识的过程	rèn shi de guò chéng	10
 认识的女人	rèn shi de nǚ rén	10
 认识的朋友	rèn shi de péng yǒu	10
@@ -158950,7 +158951,6 @@ sort: by_weight
 认识的人多	rèn shi de rén duō	10
 认识的时间	rèn shi de shí jiān	10
 认识的学长	rèn shi de xué zhǎng	10
-认识的哥哥	rèn shi dī gē gē	10
 认识个朋友	rèn shi gè péng yǒu	10
 人事管理权	rén shì guǎn lǐ quán	10
 任时光流逝	rèn shí guāng liú shì	10
@@ -171342,8 +171342,8 @@ sort: by_weight
 士兵的报酬	shì bīng de bào chou	10
 士兵的父亲	shì bīng de fù qīn	10
 士兵的故事	shì bīng de gù shì	10
+士兵的士气	shì bīng de shì qì	10
 士兵的重负	shì bīng de zhòng fù	10
-士兵的士气	shì bīng dī shì qì	10
 士兵进行曲	shì bīng jìn xíng qǔ	10
 士兵委员会	shì bīng wěi yuán huì	10
 士兵叙事歌	shì bīng xù shì gē	10
@@ -171453,6 +171453,10 @@ sort: by_weight
 实测过程中	shí cè guò chéng zhōng	10
 实测统计法	shí cè tǒng jì fǎ	10
 是差不多了	shì chà bù duō le	10
+什刹海冰场	shí chà hǎi bīng chǎng	10
+什刹海会馆	shí chà hǎi huì guǎn	10
+什刹海街道	shí chà hǎi jiē dào	10
+什刹海体校	shí chà hǎi tǐ xiào	10
 示差极谱法	shì chà jí pǔ fǎ	10
 式叉摩那戒	shì chā mó nà jiè	10
 式叉摩那尼	shì chā mó nà ní	10
@@ -172368,7 +172372,7 @@ sort: by_weight
 是个好东西	shì gè hǎo dōng xi	10
 是个好人啊	shì gè hǎo rén a	10
 是个好天气	shì gè hǎo tiān qì	10
-是个好主意	shì gè hǎo zhǔ yì	10
+是个好主意	shì gè hǎo zhú yi	10
 嗜铬黑色素	shì gè hēi sè sù	10
 时隔几个月	shí gé jǐ gè yuè	10
 诗歌基金会	shī gē jī jīn huì	10
@@ -174956,10 +174960,6 @@ sort: by_weight
 石森章太郎	shí sēn zhāng tài láng	10
 始僧海豹属	shǐ sēng hǎi bào shǔ	10
 始鲨齿龙属	shǐ shā chǐ lóng shǔ	10
-什刹海冰场	shí shā hǎi bīng chǎng	10
-什刹海会馆	shí shā hǎi huì guǎn	10
-什刹海街道	shí shā hǎi jiē dào	10
-什刹海体校	shí shā hǎi tǐ xiào	10
 是啥就是啥	shì shá jiù shì shá	10
 嗜杀路人甲	shì shā lù rén jiǎ	10
 嗜杀路人乙	shì shā lù rén yǐ	10
@@ -178247,6 +178247,7 @@ sort: by_weight
 受伤的女人	shòu shāng de nǚ rén	10
 受伤的女子	shòu shāng de nǚ zǐ	10
 手上的皮肤	shǒu shàng de pí fū	10
+受伤的士兵	shòu shāng de shì bīng	10
 受伤的诗人	shòu shāng de shī rén	10
 受伤的兔子	shòu shāng de tù zi	10
 手上的细菌	shǒu shàng de xì jūn	10
@@ -178256,7 +178257,6 @@ sort: by_weight
 受伤的战士	shòu shāng de zhàn shì	10
 手上的资源	shǒu shàng de zī yuán	10
 手上的钻戒	shǒu shàng de zuàn jiè	10
-受伤的士兵	shòu shāng dī shì bīng	10
 受伤而死亡	shòu shāng ér sǐ wáng	10
 受伤很严重	shòu shāng hěn yán zhòng	10
 手少阴心经	shǒu shǎo yīn xīn jīng	10
@@ -180021,6 +180021,7 @@ sort: by_weight
 帅气的儿子	shuài qì de ér zi	10
 帅气的发型	shuài qì de fà xíng	10
 帅气的感觉	shuài qì de gǎn jué	10
+帅气的哥哥	shuài qì de gē ge	10
 帅气的华仔	shuài qì de huá zǎi	10
 帅气的老公	shuài qì de lǎo gōng	10
 帅气的脸蛋	shuài qì de liǎn dàn	10
@@ -180051,7 +180052,6 @@ sort: by_weight
 帅气的样子	shuài qì de yàng zi	10
 帅气的造型	shuài qì de zào xíng	10
 帅气的长相	shuài qì de zhǎng xiàng	10
-帅气的哥哥	shuài qì dī gē gē	10
 帅气女朋友	shuài qì nǚ péng yǒu	10
 帅气小哥哥	shuài qì xiǎo gē ge	10
 帅气小鲜肉	shuài qì xiǎo xiān ròu	10
@@ -185646,6 +185646,7 @@ sort: by_weight
 所有的生物	suǒ yǒu de shēng wù	10
 所有的声音	suǒ yǒu de shēng yīn	10
 所有的失败	suǒ yǒu de shī bài	10
+所有的士兵	suǒ yǒu de shì bīng	10
 所有的食材	suǒ yǒu de shí cái	10
 所有的市场	suǒ yǒu de shì chǎng	10
 所有的时光	suǒ yǒu de shí guāng	10
@@ -185743,7 +185744,6 @@ sort: by_weight
 所有的资源	suǒ yǒu de zī yuán	10
 所有的尊严	suǒ yǒu de zūn yán	10
 所有的作品	suǒ yǒu de zuò pǐn	10
-所有的士兵	suǒ yǒu dī shì bīng	10
 所有电动车	suǒ yǒu diàn dòng chē	10
 所有电视剧	suǒ yǒu diàn shì jù	10
 所有服务器	suǒ yǒu fú wù qì	10
@@ -186893,7 +186893,7 @@ sort: by_weight
 泰氏粗犁鳗	tài shì cū lí mán	10
 太石村事件	tài shí cūn shì jiàn	10
 台师大附中	tái shī dà fù zhōng	10
-台视大乐队	tái shì dà lè duì	10
+台视大乐队	tái shì dà yuè duì	10
 台式电话机	tái shì diàn huà jī	10
 台式电脑的	tái shì diàn nǎo de	10
 台式电脑桌	tái shì diàn nǎo zhuō	10
@@ -208812,7 +208812,7 @@ sort: by_weight
 膝关节疾病	xī guān jié jí bìng	10
 膝关节积液	xī guān jié jī yè	10
 膝关节内侧	xī guān jié nèi cè	10
-膝关节屈曲	xī guān jié qū qǔ	10
+膝关节屈曲	xī guān jié qū qū	10
 膝关节伸直	xī guān jié shēn zhí	10
 膝关节手术	xī guān jié shǒu shù	10
 膝关节损伤	xī guān jié sǔn shāng	10
@@ -225018,7 +225018,7 @@ sort: by_weight
 巡回审判点	xún huí shěn pàn diǎn	10
 巡回演唱会	xún huí yǎn chàng huì	10
 巡回医疗队	xún huí yī liáo duì	10
-巡回音乐会	xún huí yīn lè huì	10
+巡回音乐会	xún huí yīn yuè huì	10
 巡回总决赛	xún huí zǒng jué sài	10
 熏鸡白肚儿	xūn jī bái dù ér	10
 巡检机器人	xún jiǎn jī qì rén	10
@@ -225032,9 +225032,9 @@ sort: by_weight
 训练的模型	xùn liàn de mó xíng	10
 训练的内容	xùn liàn de nèi róng	10
 训练的强度	xùn liàn de qiáng dù	10
+训练的士兵	xùn liàn de shì bīng	10
 训练的时间	xùn liàn de shí jiān	10
 训练的效果	xùn liàn de xiào guǒ	10
-训练的士兵	xùn liàn dī shì bīng	10
 训练分类器	xùn liàn fēn lèi qì	10
 训练过程中	xùn liàn guò chéng zhōng	10
 训练和测试	xùn liàn hé cè shì	10
@@ -237295,6 +237295,7 @@ sort: by_weight
 勇敢的去爱	yǒng gǎn de qù ài	10
 勇敢的少年	yǒng gǎn de shào nián	10
 勇敢的生命	yǒng gǎn de shēng mìng	10
+勇敢的士兵	yǒng gǎn de shì bīng	10
 勇敢的市民	yǒng gǎn de shì mín	10
 勇敢的水兵	yǒng gǎn de shuǐ bīng	10
 勇敢的挑战	yǒng gǎn de tiǎo zhàn	10
@@ -237303,7 +237304,6 @@ sort: by_weight
 勇敢的一面	yǒng gǎn de yí miàn	10
 勇敢的战士	yǒng gǎn de zhàn shì	10
 勇敢的追求	yǒng gǎn de zhuī qiú	10
-勇敢的士兵	yǒng gǎn dī shì bīng	10
 勇敢而美丽	yǒng gǎn ér měi lì	10
 勇敢和坚强	yǒng gǎn hé jiān qiáng	10
 勇敢和智慧	yǒng gǎn hé zhì huì	10
@@ -247285,7 +247285,7 @@ sort: by_weight
 战术侦察机	zhàn shù zhēn chá jī	10
 战术执行力	zhàn shù zhí xíng lì	10
 战双帕弥什	zhàn shuāng pà mí shí	10
-战死的士兵	zhàn sǐ dī shì bīng	10
+战死的士兵	zhàn sǐ de shì bīng	10
 战死在沙场	zhàn sǐ zài shā chǎng	10
 站台屏蔽门	zhàn tái píng bì mén	10
 旃檀功德佛	zhān tán gōng dé fó	10
@@ -250298,6 +250298,7 @@ sort: by_weight
 真实的感情	zhēn shí de gǎn qíng	10
 真实的感受	zhēn shí de gǎn shòu	10
 真实的告别	zhēn shí de gào bié	10
+真实的哥哥	zhēn shí de gē ge	10
 真实的个性	zhēn shí de gè xìng	10
 真实的故事	zhēn shí de gù shì	10
 真实的关系	zhēn shí de guān xì	10
@@ -250392,7 +250393,6 @@ sort: by_weight
 真实的自己	zhēn shí de zì jǐ	10
 真实的自然	zhēn shí de zì rán	10
 真实的自我	zhēn shí de zì wǒ	10
-真实的哥哥	zhēn shí dī gē gē	10
 真是第一次	zhēn shì dì yī cì	10
 真是对不起	zhēn shì duì bù qǐ	10
 真实发生的	zhēn shí fā shēng de	10
@@ -250701,6 +250701,7 @@ sort: by_weight
 真正的高贵	zhēn zhèng de gāo guì	10
 真正的高人	zhēn zhèng de gāo rén	10
 真正的高手	zhēn zhèng de gāo shǒu	10
+真正的哥哥	zhēn zhèng de gē ge	10
 真正的革命	zhēn zhèng de gé mìng	10
 真正的歌手	zhēn zhèng de gē shǒu	10
 真正的功夫	zhēn zhèng de gōng fū	10
@@ -251018,7 +251019,6 @@ sort: by_weight
 真正的做到	zhēn zhèng de zuò dào	10
 真正的作家	zhēn zhèng de zuò jiā	10
 真正的作品	zhēn zhèng de zuò pǐn	10
-真正的哥哥	zhēn zhèng dī gē gē	10
 真正感受到	zhēn zhèng gǎn shòu dào	10
 真正感兴趣	zhēn zhèng gǎn xìng qù	10
 真正了解我	zhēn zhèng liǎo jiě wǒ	10
@@ -258340,7 +258340,7 @@ sort: by_weight
 周公畈水库	zhōu gōng fàn shuǐ kù	10
 周公庙遗址	zhōu gōng miào yí zhǐ	10
 周公宅水库	zhōu gōng zhái shuǐ kù	10
-肘关节屈曲	zhǒu guān jié qū qǔ	10
+肘关节屈曲	zhǒu guān jié qū qū	10
 肘关节伸直	zhǒu guān jié shēn zhí	10
 肘关节脱位	zhǒu guān jié tuō wèi	10
 肘管综合征	zhǒu guǎn zōng hé zhēng	10
@@ -265373,6 +265373,7 @@ sort: by_weight
 最好的地方	zuì hǎo de dì fāng	10
 最好的方法	zuì hǎo de fāng fǎ	10
 最好的防守	zuì hǎo de fáng shǒu	10
+最好的哥们	zuì hǎo de gē men	10
 最好的关系	zuì hǎo de guān xì	10
 最好的归宿	zuì hǎo de guī sù	10
 最好的行业	zuì hǎo de háng yè	10
@@ -265411,7 +265412,6 @@ sort: by_weight
 最好的证据	zuì hǎo de zhèng jù	10
 最好的证明	zuì hǎo de zhèng míng	10
 最好的祝福	zuì hǎo de zhù fú	10
-最好的哥们	zuì hǎo dī gē men	10
 最好慢慢来	zuì hǎo màn màn lái	10
 最好你忘掉	zuì hǎo nǐ wàng diào	10
 最好听的歌	zuì hǎo tīng de gē	10
@@ -267239,7 +267239,7 @@ sort: by_weight
 爱的十个条件	ài de shí gè tiáo jiàn	10
 爱的五种语言	ài de wǔ zhǒng yǔ yán	10
 爱的幸运饼干	ài de xìng yùn bǐng gān	10
-爱的幸运曲奇	ài de xìng yùn qǔ qí	10
+爱的幸运曲奇	ài de xìng yùn qū qí	10
 爱的最高境界	ài de zuì gāo jìng jiè	10
 艾迪氏症候群	ài dí shì zhèng hòu qún	10
 爱斗气爱上你	ài dòu qì ài shàng nǐ	10
@@ -267663,7 +267663,6 @@ sort: by_weight
 安格曼综合症	ān gé màn zōng hé zhèng	10
 安戈尼龙兽属	ān gē ní lóng shòu shǔ	10
 暗管苔藓虫科	àn guǎn tái xiǎn chóng kē	10
-按行政区划分	àn háng zhèng qū huà fēn	10
 暗黑的破坏神	àn hēi de pò huài shén	10
 暗黑口孵非鲫	àn hēi kǒu fū fēi jì	10
 暗黄尖真管螺	àn huáng jiān zhēn guǎn luó	10
@@ -268144,6 +268143,7 @@ sort: by_weight
 按我说的去做	àn wǒ shuō de qù zuò	10
 安息香双甲醚	ān xī xiāng shuāng jiǎ mí	10
 按下快门之前	àn xià kuài mén zhī qián	10
+按行政区划分	àn xíng zhèng qū huà fēn	10
 安兴纸业集团	ān xīng zhǐ yè jí tuán	10
 氨芽胞杆菌属	ān yá bāo gǎn jūn shǔ	10
 安阳钢铁集团	ān yáng gāng tiě jí tuán	10
@@ -271169,12 +271169,12 @@ sort: by_weight
 被遗忘的回忆	bèi yí wàng de huí yì	10
 被遗忘的角落	bèi yí wàng de jiǎo luò	10
 被遗忘的秘密	bèi yí wàng de mì mì	10
+被遗忘的士兵	bèi yí wàng de shì bīng	10
 被遗忘的时光	bèi yí wàng de shí guāng	10
 被遗忘的英雄	bèi yí wàng de yīng xióng	10
 被遗忘的战役	bèi yí wàng de zhàn yì	10
 被遗忘的战争	bèi yí wàng de zhàn zhēng	10
 被遗忘的真实	bèi yí wàng de zhēn shí	10
-被遗忘的士兵	bèi yí wàng dī shì bīng	10
 北阴酆都大帝	běi yīn fēng dū dà dì	10
 北阴阳营文化	běi yīn yáng yíng wén huà	10
 北阴阳营遗址	běi yīn yáng yíng yí zhǐ	10
@@ -271216,7 +271216,7 @@ sort: by_weight
 被诅咒的舰队	bèi zǔ zhòu de jiàn duì	10
 被诅咒的圣剑	bèi zǔ zhòu de shèng jiàn	10
 被诅咒的圣战	bèi zǔ zhòu de shèng zhàn	10
-被诅咒的士兵	bèi zǔ zhòu dī shì bīng	10
+被诅咒的士兵	bèi zǔ zhòu de shì bīng	10
 被尊重的感觉	bèi zūn zhòng de gǎn jué	10
 苯胺高氯酸盐	běn àn gāo lǜ suān yán	10
 本案争议焦点	běn àn zhēng yì jiāo diǎn	10
@@ -296807,7 +296807,7 @@ sort: by_weight
 关闭微博评论	guān bì wēi bó píng lùn	10
 关闭应用程序	guān bì yìng yòng chéng xù	10
 关闭自动更新	guān bì zì dòng gēng xīn	10
-管菜鱼的哥哥	guǎn cài yú dī gē gē	10
+管菜鱼的哥哥	guǎn cài yú de gē ge	10
 观察病情变化	guān chá bìng qíng biàn huà	10
 观察到的现象	guān chá dào de xiàn xiàng	10
 观察文教基金	guān chá wén jiào jī jīn	10
@@ -320191,7 +320191,7 @@ sort: by_weight
 恋爱没有假期	liàn ài méi yǒu jià qī	10
 恋爱模拟游戏	liàn ài mó nǐ yóu xì	10
 恋爱随意链接	liàn ài suí yì liàn jiē	10
-恋爱幸运曲奇	liàn ài xìng yùn qǔ qí	10
+恋爱幸运曲奇	liàn ài xìng yùn qū qí	10
 恋爱养成游戏	liàn ài yǎng chéng yóu xì	10
 恋爱已经开始	liàn ài yǐ jīng kāi shǐ	10
 恋爱育成游戏	liàn ài yù chéng yóu xì	10
@@ -322595,8 +322595,8 @@ sort: by_weight
 录取计分科目	lù qǔ jì fēn kē mù	10
 录取时间安排	lù qǔ shí jiān ān pái	10
 录取照顾政策	lù qǔ zhào gù zhèng cè	10
+路人甲的哥哥	lù rén jiǎ de gē ge	10
 路人甲的人生	lù rén jiǎ de rén shēng	10
-路人甲的哥哥	lù rén jiǎ dī gē gē	10
 路人乙丙乙丙	lù rén yǐ bǐng yǐ bǐng	10
 录入相关信息	lù rù xiàng guān xìn xī	10
 路萨尔体育馆	lù sà ěr tǐ yù guǎn	10
@@ -330844,7 +330844,7 @@ sort: by_weight
 浦银安盛基金	pǔ yín ān shèng jī jīn	10
 莆永高速公路	pú yǒng gāo sù gōng lù	10
 朴资茅斯条约	pǔ zī máo sī tiáo yuē	10
-骑白马的哥哥	qí bái mǎ dī gē gē	10
+骑白马的哥哥	qí bái mǎ de gē ge	10
 骑白马挎洋枪	qí bái mǎ kuà yáng qiāng	10
 鳍斑后臀丽鱼	qí bān hòu tún lì yú	10
 奇棒真精器鱼	qí bàng zhēn jīng qì yú	10
@@ -332985,7 +332985,7 @@ sort: by_weight
 巧克力的味道	qiǎo kè lì de wèi dào	10
 巧克力豆饼干	qiǎo kè lì dòu bǐng gàn	10
 巧克力片饼干	qiǎo kè lì piàn bǐng gān	10
-巧克力片曲奇	qiǎo kè lì piàn qǔ qí	10
+巧克力片曲奇	qiǎo kè lì piàn qū qí	10
 巧克力球向井	qiǎo kè lì qiú xiàng jǐng	10
 乔科裸背电鳗	qiáo kē luǒ bèi diàn mán	10
 乔累斯基分解	qiáo lèi sī jī fēn jiě	10
@@ -391683,7 +391683,7 @@ sort: by_weight
 否则后果很严重	fǒu zé hòu guǒ hěn yán zhòng	10
 富埃特文图拉岛	fù āi tè wén tú lā dǎo	10
 腐败教师方程式	fǔ bài jiào shī fāng chéng shì	10
-腹板屈曲后强度	fù bǎn qū qǔ hòu qiáng dù	10
+腹板屈曲后强度	fù bǎn qū qū hòu qiáng dù	10
 富邦文教基金会	fù bāng wén jiào jī jīn huì	10
 氟比洛芬巴布膏	fú bǐ luò fēn bā bù gāo	10
 夫兵久而国利者	fū bīng jiǔ ér guó lì zhě	10
@@ -398391,7 +398391,7 @@ sort: by_weight
 东隅已逝桑榆非晚	dōng yú yǐ shì sāng yú fēi wǎn	10
 都是万变不离其宗	dōu shì wàn biàn bù lí qí zōng	10
 独此一家别无分号	dú cǐ yì jiā bié wú fēn hào	10
-独乐乐不如众乐乐	dú yuè lè bù rú zhòng yuè lè	10
+独乐乐不如众乐乐	dú yuè lè bù rú zhòng lè lè	10
 断章取义驴唇马嘴	duàn zhāng qǔ yì lǘ chún mǎ zuǐ	10
 对外经济贸易大学	duì wài jīng jì mào yì dà xué	10
 多分子层吸附理论	duō fēn zǐ céng xī fù lǐ lùn	10
