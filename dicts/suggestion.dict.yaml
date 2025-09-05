@@ -11943,6 +11943,7 @@ sort: by_weight
 变异凤尾蕨	biàn yì fèng wěi jué	10
 变异杆菌属	biàn yì gǎn jūn shǔ	10
 变异篮蛤属	biàn yì lán há shǔ	10
+变异链球菌	biàn yì liàn qiú jūn	10
 变异鳞毛蕨	biàn yì lín máo jué	10
 变异平均线	biàn yì píng jūn xiàn	10
 编译器软件	biān yì qì ruǎn jiàn	10
@@ -22682,6 +22683,7 @@ sort: by_weight
 常青藤学校	cháng qīng téng xué xiào	10
 长青园小区	cháng qīng yuán xiǎo qū	10
 长球波函数	cháng qiú bō hán shù	10
+肠球菌琼脂	cháng qiú jūn qióng zhī	10
 尝趋百里外	cháng qū bǎi lǐ wài	10
 常去的地方	cháng qù de dì fāng	10
 常人的生活	cháng rén de shēng huó	10
@@ -22725,6 +22727,7 @@ sort: by_weight
 长沙开福寺	cháng shā kāi fú sì	10
 长沙老字号	cháng shā lǎo zì hào	10
 长沙马王堆	cháng shā mǎ wáng duī	10
+肠沙门氏菌	cháng shā mén shì jūn	10
 长沙摩天轮	cháng shā mó tiān lún	10
 长沙彭于晏	cháng shā péng yú yàn	10
 长沙市妇联	cháng shā shì fù lián	10
@@ -55323,6 +55326,7 @@ sort: by_weight
 非仿溪蟹属	fēi fǎng xī xiè shǔ	10
 肥肥和胖胖	féi féi hé pàng pàng	10
 肥肥毛毛虫	féi féi máo máo chóng	10
+费佛氏杆菌	fèi fó shì gǎn jūn	10
 废钢铁回收	fèi gāng tiě huí shōu	10
 非刚性连结	fēi gāng xìng lián jié	10
 非高峰时段	fēi gāo fēng shí duàn	10
@@ -56181,6 +56185,7 @@ sort: by_weight
 飞燕草亚属	fēi yàn cǎo yà shǔ	10
 肺炎的症状	fèi yán de zhèng zhuàng	10
 肺炎链球菌	fèi yán liàn qiú jūn	10
+肺炎霉浆菌	fèi yán méi jiāng jūn	10
 肺炎双球菌	fèi yán shuāng qiú jūn	10
 肺炎衣原体	fèi yán yī yuán tǐ	10
 非言语沟通	fēi yán yǔ gōu tōng	10
@@ -87167,6 +87172,7 @@ sort: by_weight
 怀柔区法院	huái róu qū fǎ yuàn	10
 怀柔区政府	huái róu qū zhèng fǔ	10
 怀柔影视城	huái róu yǐng shì chéng	10
+坏乳链球菌	huài rǔ liàn qiú jūn	10
 怀瑟斯兰丁	huái sè sī lán dīng	10
 怀上双胞胎	huái shàng shuāng bāo tāi	10
 怀上小宝宝	huái shàng xiǎo bǎo bǎo	10
@@ -143326,6 +143332,7 @@ sort: by_weight
 年长的女人	nián zhǎng de nǚ rén	10
 年这个时期	nián zhè ge shí qī	10
 念之断人肠	niàn zhī duàn rén cháng	10
+黏质沙雷菌	nián zhì shā léi jūn	10
 年终奖发放	nián zhōng jiǎng fā fàng	10
 年终总结会	nián zhōng zǒng jié huì	10
 年终总决赛	nián zhōng zǒng jué sài	10
@@ -153109,6 +153116,7 @@ sort: by_weight
 前庭大腺炎	qián tíng dà xiàn yán	10
 潜艇救援船	qián tǐng jiù yuán chuán	10
 潜艇救援舰	qián tǐng jiù yuán jiàn	10
+前庭链球菌	qián tíng liàn qiú jūn	10
 潜艇三明治	qián tǐng sān míng zhì	10
 潜艇三文治	qián tǐng sān wén zhì	10
 潜艇设计师	qián tǐng shè jì shī	10
@@ -163053,6 +163061,7 @@ sort: by_weight
 乳房的发育	rǔ fáng de fā yù	10
 乳房肥大症	rǔ fáng féi dà zhèng	10
 乳房解剖学	rǔ fáng jiě pōu xué	10
+乳房链球菌	rǔ fáng liàn qiú jūn	10
 乳房切除术	rǔ fáng qiē chú shù	10
 乳房缩小术	rǔ fáng suō xiǎo shù	10
 乳房下皱襞	rǔ fáng xià zhòu bì	10
@@ -163901,6 +163910,7 @@ sort: by_weight
 若尔盖草原	ruò ěr gài cǎo yuán	10
 若尔盖湿地	ruò ěr gài shī dì	10
 若尔吉尼奥	ruò ěr jí ní ào	10
+若干链球菌	ruò gān liàn qiú jūn	10
 若干年以后	ruò gān nián yǐ hòu	10
 若宫三纱子	ruò gōng sān shā zǐ	10
 弱攻也是攻	ruò gōng yě shì gōng	10
@@ -165882,6 +165892,7 @@ sort: by_weight
 傻眼猫咪咪	shǎ yǎn māo mī mī	10
 砂岩型铀矿	shā yán xíng yóu kuàng	10
 砂眼衣原体	shā yǎn yī yuán tǐ	10
+沙眼衣原体	shā yǎn yī yuán tǐ	10
 啥也别说了	shá yě bié shuō le	10
 啥也不能干	shá yě bù néng gàn	10
 啥也不说了	shá yě bù shuō le	10
@@ -195238,6 +195249,7 @@ sort: by_weight
 听取和讨论	tīng qǔ hé tǎo lùn	10
 听蛐蛐儿叫	tīng qū qū ér jiào	10
 听泉水叮咚	tīng quán shuǐ dīng dōng	10
+停乳链球菌	tíng rǔ liàn qiú jūn	10
 听上去不错	tīng shǎng qù bú cuò	10
 庭审公开网	tíng shěn gōng kāi wǎng	10
 庭审过程中	tíng shěn guò chéng zhōng	10
@@ -195719,6 +195731,7 @@ sort: by_weight
 铜锣湾广场	tóng luó wān guǎng chǎng	10
 铜锣湾书店	tóng luó wān shū diàn	10
 铜锣湾总站	tóng luó wān zǒng zhàn	10
+铜绿微囊菌	tóng lǜ wēi náng jūn	10
 铜绿微囊藻	tóng lǜ wēi náng zǎo	10
 铜绿狭甲蝇	tóng lǜ xiá jiǎ yíng	10
 同脉缟蝇属	tóng mài gǎo yíng shǔ	10
@@ -212723,6 +212736,7 @@ sort: by_weight
 西门木炔酸	xī mén mù guì suān	10
 西门子公司	xī mén zǐ gōng sī	10
 西蒙角石属	xī méng jiǎo shí shǔ	10
+西蒙拉特尔	xī méng lā tè ěr	10
 席梦思床垫	xí mèng sī chuáng diàn	10
 西蒙斯理论	xī méng sī lǐ lùn	10
 西蒙兹公司	xī méng zī gōng sī	10
@@ -232516,6 +232530,7 @@ sort: by_weight
 耶尔森菌科	yé ěr sēn jūn kē	10
 耶尔森菌属	yé ěr sēn jūn shǔ	10
 耶尔森氏菌	yé ěr sēn shì jūn	10
+耶尔辛氏菌	yé ěr xīn shì jūn	10
 叶尔辛效应	yè ěr xīn xiào yìng	10
 夜访吸血鬼	yè fǎng xī xuè guǐ	10
 也非常容易	yě fēi cháng róng yì	10
@@ -247334,6 +247349,7 @@ sort: by_weight
 约翰海蜥鱼	yuē hàn hǎi xī yú	10
 约翰黑丽鱼	yuē hàn hēi lì yú	10
 约翰娜波鱼	yuē hàn nà bō yú	10
+约翰森氏菌	yuē hàn sēn shì jūn	10
 约翰斯顿岛	yuē hàn sī dùn dǎo	10
 约翰下口鲶	yuē hàn xià kǒu nián	10
 约合人民币	yuē hé rén mín bì	10
@@ -267049,6 +267065,7 @@ sort: by_weight
 紫色锯鳞鱼	zǐ sè jù lín yú	10
 紫色丽管螺	zǐ sè lì guǎn luó	10
 紫色蒲公英	zǐ sè pú gōng yīng	10
+紫色色杆菌	zǐ sè sè gǎn jūn	10
 紫铯珊瑚虫	zǐ sè shān hú chóng	10
 紫色食草蟹	zǐ sè shí cǎo xiè	10
 紫色小雏菊	zǐ sè xiǎo chú jú	10
@@ -268363,6 +268380,7 @@ sort: by_weight
 棕色大熊猫	zōng sè dà xióng māo	10
 棕色的发色	zōng sè de fā sè	10
 棕色的头发	zōng sè de tóu fa	10
+棕色固氮菌	zōng sè gù dàn jūn	10
 棕色和黑色	zōng sè hé hēi sè	10
 棕色环实验	zōng sè huán shí yàn	10
 棕色柔丽鲷	zōng sè róu lì diāo	10
@@ -273242,6 +273260,7 @@ sort: by_weight
 白腰鼠海豚属	bái yāo shǔ hǎi tún shǔ	10
 白腰唐纳雀属	bái yāo táng nà què shǔ	10
 白腰朱顶雀属	bái yāo zhū dǐng què shǔ	10
+白蚁孢子杆菌	bái yǐ bāo zǐ gǎn jūn	10
 百亿补贴活动	bǎi yì bǔ tiē huó dòng	10
 白依丁真岭寺	bái yī dīng zhēn lǐng sì	10
 白翼吸血蝠属	bái yì xī xuè fú shǔ	10
@@ -274131,6 +274150,7 @@ sort: by_weight
 保神高速公路	bǎo shén gāo sù gōng lù	10
 薄身似鳟甲鲶	báo shēn sì zūn jiǎ nián	10
 保生大帝信俗	bǎo shēng dà dì xìn sú	10
+鲍氏不动杆菌	bào shì bú dòng gǎn jūn	10
 鲍氏长颌鱼属	bào shì cháng hé yú shǔ	10
 宝石电子集团	bǎo shí diàn zǐ jí tuán	10
 鲍氏反应系列	bào shì fǎn yìng xì liè	10
@@ -275688,6 +275708,7 @@ sort: by_weight
 毕竟不是什么	bì jìng bú shì shén me	10
 毕竟夫妻一场	bì jìng fū qī yì chǎng	10
 毕竟孩子还小	bì jìng hái zi hái xiǎo	10
+鼻疽伯克氏菌	bí jū bó kè shì jūn	10
 避开高峰时段	bì kāi gāo fēng shí duàn	10
 避开拥堵路段	bì kāi yōng dǔ lù duàn	10
 秕糠马拉癣菌	bǐ kāng mǎ lā xuǎn jūn	10
@@ -276618,6 +276639,7 @@ sort: by_weight
 丙酸双氢睾酮	bǐng suān shuāng qīng gāo tóng	10
 丙酮标准溶液	bǐng tóng biāo zhǔn róng yè	10
 丙酮丁醇发酵	bǐng tóng dīng chún fā jiào	10
+丙酮丁醇梭菌	bǐng tóng dīng chún suō jūn	10
 丙酮合氰化氢	bǐng tóng hé qíng huà qīng	10
 丙酮缩氨基脲	bǐng tóng suō ān jī niào	10
 兵团二十五团	bīng tuán èr shí wǔ tuán	10
@@ -277391,6 +277413,7 @@ sort: by_weight
 不接电话的你	bù jiē diàn huà de nǐ	10
 不结婚的女人	bù jié hūn de nǚ rén	10
 不洁净的动物	bù jié jìng de dòng wù	10
+不解糖乳杆菌	bù jiě táng rǔ gǎn jūn	10
 步进电机控制	bù jìn diàn jī kòng zhì	10
 步进电机驱动	bù jìn diàn jī qū dòng	10
 不仅仅是产品	bù jǐn jǐn shì chǎn pǐn	10
@@ -290970,6 +290993,7 @@ sort: by_weight
 多自由度结构	duō zì yóu dù jié gòu	10
 多自由度系统	duō zì yóu dù xì tǒng	10
 多鬃长足虻属	duō zōng cháng zú méng shǔ	10
+恶臭假单胞菌	è chòu jiǎ dān bāo jūn	10
 厄德曼海猪鱼	è dé màn hǎi zhū yú	10
 俄狄浦斯效应	é dí pǔ sī xiào yìng	10
 额定电压相同	é dìng diàn yā xiāng tóng	10
@@ -292730,6 +292754,7 @@ sort: by_weight
 翻脸比翻书快	fān liǎn bǐ fān shū kuài	10
 反流性食管炎	fǎn liú xìng shí guǎn yán	10
 反流性咽喉炎	fǎn liú xìng yān hóu yán	10
+凡隆气单胞菌	fán lóng qì dān bāo jūn	10
 反马克思主义	fǎn mǎ kè sī zhǔ yì	10
 贩卖毒品案件	fàn mài dú pǐn àn jiàn	10
 贩卖个人信息	fàn mài gè rén xìn xī	10
@@ -304487,6 +304512,7 @@ sort: by_weight
 海岸炮兵学校	hǎi àn pào bīng xué xiào	10
 海岸弯曲菌属	hǎi àn wān qū jūn shǔ	10
 海岸巡防总局	hǎi àn xún fáng zǒng jú	10
+海豹隐秘杆菌	hǎi bào yǐn mì gǎn jūn	10
 海北供电公司	hǎi běi gōng diàn gōng sī	10
 海滨高速公路	hǎi bīn gāo sù gōng lù	10
 海波银汉鱼属	hǎi bō yín hàn yú shǔ	10
@@ -304727,6 +304753,7 @@ sort: by_weight
 海洋地质学家	hǎi yáng dì zhì xué jiā	10
 海洋二号卫星	hǎi yáng èr hào wèi xīng	10
 海洋分枝杆菌	hǎi yáng fēn zhī gǎn jūn	10
+海洋分支杆菌	hǎi yáng fēn zhī gǎn jūn	10
 海洋伏季休渔	hǎi yáng fú jì xiū yú	10
 海洋浮游生物	hǎi yáng fú yóu shēng wù	10
 海洋杆状菌属	hǎi yáng gān zhuàng jūn shǔ	10
@@ -308474,6 +308501,7 @@ sort: by_weight
 华能热电股份	huá néng rè diàn gǔ fèn	10
 华能汕头电厂	huá néng shàn tóu diàn chǎng	10
 华能玉环电厂	huá néng yù huán diàn chǎng	10
+化脓隐秘杆菌	huà nóng yǐn mì gǎn jūn	10
 华欧国际证券	huá ōu guó jì zhèng quàn	10
 滑胚玛瑙螺属	huá pēi mǎ nǎo luó shǔ	10
 画皮系列电影	huà pí xì liè diàn yǐng	10
@@ -319093,6 +319121,7 @@ sort: by_weight
 巨大经济损失	jù dà jīng jì sǔn shī	10
 巨大气体行星	jù dà qì tǐ xíng xīng	10
 巨大小头鱿属	jù dà xiǎo tóu yóu shǔ	10
+巨大芽孢杆菌	jù dà yá bāo gǎn jūn	10
 巨大撞击假说	jù dà zhuàng jī jiǎ shuō	10
 局地有大暴雨	jú dì yǒu dà bào yǔ	10
 聚丁二烯橡胶	jù dīng èr xī xiàng jiāo	10
@@ -319970,6 +319999,7 @@ sort: by_weight
 卡氏副牙脂鲤	kǎ shì fù yá zhī lǐ	10
 卡氏钩齿脂鲤	kǎ shì gōu chǐ zhī lǐ	10
 卡氏甲胄海葵	kǎ shì jiǎ zhòu hǎi kuí	10
+卡氏口腔杆菌	kǎ shì kǒu qiāng gǎn jūn	10
 卡氏马赞丽鱼	kǎ shì mǎ zàn lì yú	10
 卡氏拟天竺鱼	kǎ shì nǐ tiān zhú yú	10
 卡氏平腹脂鲤	kǎ shì píng fù zhī lǐ	10
@@ -326827,6 +326857,7 @@ sort: by_weight
 卢得曼氏菌属	lú dé màn shì jūn shǔ	10
 卢德曼氏菌属	lú dé màn shì jūn shǔ	10
 路等基础设施	lù děng jī chǔ shè shī	10
+路邓葡萄球菌	lù dèng pú táo qiú jūn	10
 陆地哺乳动物	lù dì bǔ rǔ dòng wù	10
 陆地生态系统	lù dì shēng tài xì tǒng	10
 芦洞弹道导弹	lú dòng dàn dào dǎo dàn	10
@@ -327809,6 +327840,7 @@ sort: by_weight
 玛法里奥怒风	mǎ fǎ lǐ ào nù fēng	10
 码分多路通信	mǎ fēn duō lù tōng xìn	10
 麻风分枝杆菌	má fēng fēn zhī gǎn jūn	10
+痲疯分枝杆菌	má fēng fēn zhī gǎn jūn	10
 马格达护胸鲶	mǎ gé dá hù xiōng nián	10
 马格达莱纳岛	mǎ gé dá lái nà dǎo	10
 马格里布鲨属	mǎ gé lǐ bù shā shǔ	10
@@ -330914,6 +330946,7 @@ sort: by_weight
 穆斯堡尔效应	mù sī bǎo ěr xiào yìng	10
 穆斯保尔效应	mù sī bǎo ěr xiào yìng	10
 姆斯蒂斯拉夫	mǔ sī dì sī lā fū	10
+木糖驹形杆菌	mù táng jū xíng gǎn jūn	10
 木头不会说话	mù tou bú huì shuō huà	10
 母系氏族社会	mǔ xì shì zú shè huì	10
 木星系统任务	mù xīng xì tǒng rèn wù	10
@@ -335164,6 +335197,7 @@ sort: by_weight
 铺设沥青路面	pū shè lì qīng lù miàn	10
 铺设无缝线路	pū shè wú fèng xiàn lù	10
 蒲生四丁目站	pú shēng sì dīng mù zhàn	10
+普氏产醋杆菌	pǔ shì chǎn cù gǎn jūn	10
 普氏唇银汉鱼	pǔ shì chún yín hàn yú	10
 普氏地压理论	pǔ shì dì yā lǐ lùn	10
 普氏副裸吻鱼	pǔ shì fù luǒ wěn yú	10
@@ -335202,6 +335236,7 @@ sort: by_weight
 葡萄球菌感染	pú táo qiú jūn gǎn rǎn	10
 葡萄球菌黄素	pú táo qiú jūn huáng sù	10
 葡萄醛酸内酯	pú táo quán suān nèi zhǐ	10
+葡萄嗜木杆菌	pú táo shì mù gǎn jūn	10
 葡萄嗜热菌属	pú táo shì rè jūn shǔ	10
 葡萄糖和果糖	pú táo táng hé guǒ táng	10
 葡萄糖酸钙片	pú táo táng suān gài piàn	10
@@ -335225,6 +335260,7 @@ sort: by_weight
 莆田二十四中	pú tián èr shí sì zhōng	10
 铺天盖地而来	pū tiān gài dì ér lái	10
 莆田华侨中学	pú tián huá qiáo zhōng xué	10
+普通变形杆菌	pǔ tōng biàn xíng gǎn jūn	10
 普通低合金钢	pǔ tōng dī hé jīn gāng	10
 普通抵押债券	pǔ tōng dǐ yā zhài quàn	10
 普通高等院校	pǔ tōng gāo děng yuàn xiào	10
@@ -335497,6 +335533,7 @@ sort: by_weight
 起到促进作用	qǐ dào cù jìn zuò yòng	10
 气道高反应性	qì dào gāo fǎn yìng xìng	10
 起到活血化瘀	qǐ dào huó xuè huà yū	10
+栖稻假单胞菌	qī dào jiǎ dān bāo jūn	10
 起到净化空气	qǐ dào jìng huà kōng qì	10
 起到延缓衰老	qǐ dào yán huǎn shuāi lǎo	10
 气道异物梗阻	qì dào yì wù gěng zǔ	10
@@ -338429,6 +338466,7 @@ sort: by_weight
 穷人之所以穷	qióng rén zhī suǒ yǐ qióng	10
 琼氏角鳃脂鲤	qióng shì jiǎo sāi zhī lǐ	10
 琼氏美鲑脂鲤	qióng shì měi guī zhī lǐ	10
+琼斯氏共生菌	qióng sī shì gòng shēng jūn	10
 琼斯氧化反应	qióng sī yǎng huà fǎn yìng	10
 琼台师范学院	qióng tái shī fàn xué yuàn	10
 穷玩车富玩表	qióng wán chē fù wán biǎo	10
@@ -341416,6 +341454,7 @@ sort: by_weight
 融信中国控股	róng xìn zhōng guó kòng gǔ	10
 绒须石首鱼属	róng xū shí shǒu yú shǔ	10
 溶血型链球菌	róng xuè xíng liàn qiú jūn	10
+溶血隐秘杆菌	róng xuè yǐn mì gǎn jūn	10
 熔岩表壳构造	róng yán biǎo ké gòu zào	10
 熔岩空洞构造	róng yán kōng dòng gòu zào	10
 熔岩上的冰块	róng yán shàng de bīng kuài	10
@@ -342779,6 +342818,7 @@ sort: by_weight
 沙罗诺夫盆地	shā luó nuò fū pén dì	10
 沙门氏杆菌病	shā mén shì gǎn jūn bìng	10
 沙门氏菌感染	shā mén shì jūn gǎn rǎn	10
+沙门氏肾杆菌	shā mén shì shèn gǎn jūn	10
 沙米氏拟白鱼	shā mǐ shì nǐ bái yú	10
 沙漠眼镜蛇属	shā mò yǎn jìng shé shǔ	10
 沙姆解放组织	shā mǔ jiě fàng zǔ zhī	10
@@ -349306,6 +349346,7 @@ sort: by_weight
 嗜酸栖热菌属	shì suān qī rè jūn shǔ	10
 嗜酸乳酸杆菌	shì suān rǔ suān gǎn jūn	10
 石锁高速公路	shí suǒ gāo sù gōng lù	10
+食羧假单胞菌	shí suō jiǎ dān bāo jūn	10
 史塔西博物馆	shǐ tǎ xī bó wù guǎn	10
 师大仓山校区	shī tài cāng shān xiào qū	10
 史泰登岛渡轮	shǐ tài dēng dǎo dù lún	10
@@ -351167,6 +351208,7 @@ sort: by_weight
 属羊的人性格	shǔ yáng de rén xìng gé	10
 属羊猴守护神	shǔ yáng hóu shǒu hù shén	10
 束腰扁趾铁甲	shù yāo biǎn zhǐ tiě jiǎ	10
+鼠咬热螺旋体	shǔ yǎo rè luó xuán tǐ	10
 束窈窕之纤身	shù yǎo tiǎo zhī xiān shēn	10
 树叶沙沙作响	shù yè shā shā zuò xiǎng	10
 数以百万计的	shù yǐ bǎi wàn jì de	10
@@ -352774,6 +352816,7 @@ sort: by_weight
 斯氏德州丽鱼	sī shì dé zhōu lì yú	10
 四十二坝水库	sì shí èr bà shuǐ kù	10
 四十二行圣经	sì shí èr háng shèng jīng	10
+斯氏放线棒菌	sī shì fàng xiàn bàng jūn	10
 斯氏非洲鲑鲤	sī shì fēi zhōu guī lǐ	10
 斯氏副狮子鱼	sī shì fù shī zi yú	10
 斯氏格里脂鲤	sī shì gé lǐ zhī lǐ	10
@@ -357964,6 +358007,7 @@ sort: by_weight
 推免服务系统	tuī wèn fú wù xì tǒng	10
 退伍军人安置	tuì wǔ jūn rén ān zhì	10
 退伍军人病症	tuì wǔ jūn rén bìng zhèng	10
+退伍军人杆菌	tuì wǔ jūn rén gǎn jūn	10
 退伍军人事务	tuì wǔ jūn rén shì wù	10
 退伍军人优先	tuì wǔ jūn rén yōu xiān	10
 推新人的故事	tuī xīn rén de gù shì	10
@@ -360074,6 +360118,7 @@ sort: by_weight
 伪临朝武氏者	wěi lín cháo wǔ shì zhě	10
 尾鳞口孵非鲫	wěi lín kǒu fū fēi jì	10
 韦林斯科耶湖	wéi lín sī kē yé hú	10
+维隆气单胞菌	wéi lóng qì dān bāo jūn	10
 韦伦斯症候群	wéi lún sī zhèng hòu qún	10
 韦罗克毛鼻鲶	wéi luó kè máo bí nián	10
 伪裸头绦虫属	wěi luǒ tóu tāo chóng shǔ	10
@@ -360278,6 +360323,7 @@ sort: by_weight
 韦什尼亚基区	wéi shí ní yà jī qū	10
 韦氏啮牙脂鲤	wéi shì niè yá zhī lǐ	10
 韦氏平腹脂鲤	wéi shì píng fù zhī lǐ	10
+维氏气单胞菌	wéi shì qì dān bāo jūn	10
 威氏软喉盘鱼	wēi shì ruǎn hóu pán yú	10
 唯识三十论颂	wéi shí sān shí lùn sòng	10
 维氏深海带鱼	wéi shì shēn hǎi dài yú	10
@@ -374865,6 +374911,7 @@ sort: by_weight
 英戈尔德效应	yīng gē ěr dé xiào yìng	10
 英格拟棘茄鱼	yīng gé nǐ jí qié yú	10
 硬骨脊椎动物	yìng gǔ jǐ zhuī dòng wù	10
+萤光假单胞菌	yíng guāng jiǎ dān bāo jūn	10
 荧光假单胞菌	yíng guāng jiǎ dān bāo jūn	10
 荧光量子产率	yíng guāng liàng zǐ chǎn lǜ	10
 荧光血管造影	yíng guāng xuè guǎn zào yǐng	10
@@ -375210,6 +375257,7 @@ sort: by_weight
 英文写作指南	yīng wén xiě zuò zhǐ nán	10
 英文字体下载	yīng wén zì tǐ xià zài	10
 鹦鹉螺号炮舰	yīng wǔ luó hào pào jiàn	10
+鹦鹉热衣原菌	yīng wǔ rè yī yuán jūn	10
 英武威远可汗	yīng wǔ wēi yuǎn kè hán	10
 英西峰林走廊	yīng xī fēng lín zǒu láng	10
 英西氏朴丽鱼	yīng xī shì pǔ lì yú	10
@@ -391941,6 +391989,7 @@ sort: by_weight
 长芒台湾鹅观草	cháng máng tái wān é guān cǎo	10
 场面一度很尴尬	chǎng miàn yí dù hěn gān gà	10
 长末端重复序列	cháng mò duān chóng fù xù liè	10
+肠膜状明串珠菌	cháng mó zhuàng míng chuàn zhū jūn	10
 长宁来福士广场	cháng níng lái fú shì guǎng chǎng	10
 长宁实验幼儿园	cháng níng shí yàn yòu ér yuán	10
 怅盘桓而不能去	chàng pán huán ér bù néng qù	10
@@ -395482,6 +395531,7 @@ sort: by_weight
 泛布尼亚病毒科	fàn bù ní yà bìng dú kē	10
 繁昌经济开发区	fán chāng jīng jì kāi fā qū	10
 翻炒一分钟左右	fān chǎo yì fēn zhōng zuǒ yòu	10
+反刍月形单胞菌	fǎn chú yuè xíng dān bāo jūn	10
 泛船浦天主教堂	fàn chuán pǔ tiān zhǔ jiào táng	10
 范德比尔特大学	fàn dé bǐ ěr tè dà xué	10
 范德比尔特家族	fàn dé bǐ ěr tè jiā zú	10
@@ -398452,6 +398502,7 @@ sort: by_weight
 韩式三点双眼皮	hán shì sān diǎn shuāng yǎn pí	10
 韩式双眼皮手术	hán shì shuāng yǎn pí shǒu shù	10
 含时薛定谔方程	hán shí xuē dìng è fāng chéng	10
+翰斯勒巴东氏菌	hàn sī lè bā dōng shì jūn	10
 含有碳水化合物	hán yǒu tàn shuǐ huà hé wù	10
 汉语国家和地区	hàn yǔ guó jiā hé dì qū	10
 汉语教师志愿者	hàn yǔ jiào shī zhì yuàn zhě	10
@@ -398944,6 +398995,7 @@ sort: by_weight
 借助资本的力量	jiè zhù zī běn de lì liàng	10
 金光明最胜王经	jīn guāng míng zuì shèng wáng jīng	10
 金黄大齿锡伯鲶	jīn huáng dà chǐ xī bó nián	10
+金黄色葡萄球菌	jīn huáng sè pú táo qiú jūn	10
 金陵鸭血粉丝汤	jīn líng yā xiě fěn sī tāng	10
 金笼鹦鹉唤茶汤	jīn lóng yīng wǔ huàn chá tāng	10
 筋膜间隔综合征	jīn mó jiàn gé zōng hé zhēng	10
@@ -399240,10 +399292,12 @@ sort: by_weight
 劳特罗普氏菌属	láo tè luó pǔ shì jūn shǔ	10
 勒贝格微分定理	lè bèi gé wēi fēn dìng lǐ	10
 勒萨吉重力理论	lè sà jí zhòng lì lǐ lùn	10
+类鼻疽伯克氏菌	lèi bí jū bó kè shì jūn	10
 类二氧化碳固定	lèi èr yǎng huà tàn gù dìng	10
 类谷氨酸杆菌属	lèi gǔ ān suān gǎn jūn shǔ	10
 类前翼甲螨总科	lèi qián yì jiǎ mǎn zǒng kē	10
 类无枝菌酸菌属	lèi wú zhī jūn suān jūn shǔ	10
+类志贺邻单胞菌	lèi zhì hè lín dān bāo jūn	10
 冷硬派推理小说	lěng yìng pài tuī lǐ xiǎo shuō	10
 里奥格兰德兽属	lǐ ào gé lán dé shòu shǔ	10
 里奥哈纳毛鼻鲶	lǐ ào hā nà máo bí nián	10
@@ -399454,6 +399508,7 @@ sort: by_weight
 马氏矮非洲脂鲤	mǎ shì ǎi fēi zhōu zhī lǐ	10
 马斯洛需求理论	mǎ sī luò xū qiú lǐ lùn	10
 马托格罗河钩鲶	mǎ tuō gé luó hé gōu nián	10
+马阴道隐秘杆菌	mǎ yīn dào yǐn mì gǎn jūn	10
 马悠拉纳方程式	mǎ yōu lā nà fāng chéng shì	10
 麻疹减毒活疫苗	má zhěn jiǎn dú huó yì miáo	10
 麻疹腮腺炎风疹	má zhěn sāi xiàn yán fēng zhěn	10
@@ -399653,6 +399708,7 @@ sort: by_weight
 难以逾越的鸿沟	nán yǐ yú yuè de hóng gōu	10
 难以逾越的障碍	nán yǐ yú yuè de zhàng ài	10
 男主角和女主角	nán zhǔ jué hé nǚ zhǔ jué	10
+脑病莫罗氏球菌	nǎo bìng mò luó shì qiú jūn	10
 脑袋被门夹了的	nǎo dai bèi mén jiā le de	10
 脑膜炎奈瑟球菌	nǎo mó yán nài sè qiú jūn	10
 脑膜炎球菌多糖	nǎo mó yán qiú jūn duō táng	10
@@ -399708,6 +399764,7 @@ sort: by_weight
 涅斯特连科氏菌	niè sī tè lián kē shì jūn	10
 您使用的浏览器	nín shǐ yòng de liú lǎn qì	10
 凝聚力张力假说	níng jù lì zhāng lì jiǎ shuō	10
+柠檬色短小杆菌	níng méng sè duǎn xiǎo gǎn jūn	10
 牛黄清心丸局方	niú huáng qīng xīn wán jú fāng	10
 牛磺熊去氧胆酸	niú huáng xióng qù yǎng dǎn suān	10
 牛磺熊脱氧胆酸	niú huáng xióng tuō yǎng dǎn suān	10
@@ -399755,6 +399812,7 @@ sort: by_weight
 努力拼搏的精神	nǔ lì pīn bó de jīng shén	10
 诺丁汉预后指数	nuò dīng hàn yù hòu zhǐ shù	10
 诺特正规化定理	nuò tè zhèng guī huà dìng lǐ	10
+诺伊氏温克氏菌	nuò yī shì wēn kè shì jūn	10
 女性生殖器疱疹	nǚ xìng shēng zhí qì pào zhěn	10
 偶氮二氰基戊酸	ǒu dàn èr qíng jī wù suān	10
 欧拉因式分解法	ōu lā yīn shì fēn jiě fǎ	10
@@ -399808,6 +399866,7 @@ sort: by_weight
 皮肤神经官能症	pí fū shén jīng guān néng zhèng	10
 皮肤细腻有光泽	pí fū xì nì yǒu guāng zé	10
 皮肤幼虫移行症	pí fū yòu chóng yí xíng zhèng	10
+皮盖特氏解球菌	pí gài tè shì jiě qiú jūn	10
 皮革化学与工程	pí gé huà xué yǔ gōng chéng	10
 皮格马利翁效应	pí gé mǎ lì wēng xiào yìng	10
 皮克尔氏鲸油鲶	pí kè ěr shì jīng yóu nián	10
@@ -399913,6 +399972,7 @@ sort: by_weight
 鞘氨醇杆状菌属	qiào ān chún gān zhuàng jūn shǔ	10
 桥本氏甲状腺炎	qiáo běn shì jiǎ zhuàng xiàn yán	10
 桥本式甲状腺炎	qiáo běn shì jiǎ zhuàng xiàn yán	10
+乔治氏沙尔氏菌	qiáo zhì shì shā ěr shì jūn	10
 轻便二轮摩托车	qīng biàn èr lún mó tuō chē	10
 清除幽门螺杆菌	qīng chú yōu mén luó gǎn jūn	10
 庆大霉素碳酸铋	qìng dà méi sù tàn suān bì	10
@@ -400612,6 +400672,7 @@ sort: by_weight
 乳腺小叶增生症	rǔ xiàn xiǎo yè zēng shēng zhèng	10
 软骨发育不全症	ruǎn gǔ fā yù bù quán zhèng	10
 瑞典太阳系模型	ruì diǎn tài yáng xì mó xíng	10
+若干黄单胞杆菌	ruò gān huáng dān bāo gǎn jūn	10
 若有人对你们说	ruò yǒu rén duì nǐ men shuō	10
 萨雷苏白垩小鸟	sà léi sū bái è xiǎo niǎo	10
 萨雷特氧化反应	sà léi tè yǎng huà fǎn yìng	10
@@ -400810,6 +400871,7 @@ sort: by_weight
 十硝酸一氧三铱	shí xiāo suān yī yǎng sān yī	10
 噬血细胞综合征	shì xuè xì bāo zōng hé zhēng	10
 嗜压科维尔氏菌	shì yā kē wéi ěr shì jūn	10
+嗜盐潮滩杆状菌	shì yán cháo tān gān zhuàng jūn	10
 嗜盐外硫红螺菌	shì yán wài liú hóng luó jūn	10
 实验者期望效应	shí yàn zhě qī wàng xiào yìng	10
 是以陈涉不用汤	shì yǐ chén shè bú yòng tāng	10
@@ -400892,6 +400954,7 @@ sort: by_weight
 数学与应用数学	shù xué yǔ yìng yòng shù xué	10
 数学主题分类法	shù xué zhǔ tí fēn lèi fǎ	10
 数学最后一道题	shù xué zuì hòu yí dào tí	10
+鼠疫耶尔森氏菌	shǔ yì yé ěr sēn shì jūn	10
 树犹如此堪重别	shù yóu rú cǐ kān chóng bié	10
 书有未曾经我读	shū yǒu wèi céng jīng wǒ dú	10
 树欲静而风不息	shù yù jìng ér fēng bù xī	10
@@ -401093,6 +401156,7 @@ sort: by_weight
 胎粪吸入综合征	tāi fèn xī rù zōng hé zhēng	10
 钛辉无球粒陨石	tài huī wú qiú lì yǔn shí	10
 太甲山摩崖造像	tài jiǎ shān mó yá zào xiàng	10
+太平洋鲍曼氏菌	tài píng yáng bào màn shì jūn	10
 太清导引养生经	tài qīng dǎo yǐn yǎng shēng jīng	10
 泰瑞克斯装甲车	tài ruì kè sī zhuāng jiǎ chē	10
 太沙基固结理论	tài shā jī gù jié lǐ lùn	10
@@ -401168,6 +401232,7 @@ sort: by_weight
 条件反射的泛化	tiáo jiàn fǎn shè de fàn huà	10
 条件因果关系说	tiáo jiàn yīn guǒ guān xì shuō	10
 条陀堡森林战役	tiáo tuó bǎo sēn lín zhàn yì	10
+铁达尼盐单胞菌	tiě dá ní yán dān bāo jūn	10
 铁还原单胞菌科	tiě huán yuán dān bāo jūn kē	10
 铁还原单胞菌属	tiě huán yuán dān bāo jūn shǔ	10
 铁甲长戈死未忘	tiě jiǎ cháng gē sǐ wèi wàng	10
@@ -401200,6 +401265,7 @@ sort: by_weight
 土地使用权租赁	tǔ dì shǐ yòng quán zū lìn	10
 土地芽胞杆菌属	tǔ dì yá bāo gǎn jūn shǔ	10
 图康河半齿脂鲤	tú kāng hé bàn chǐ zhī lǐ	10
+土拉弗朗西斯菌	tǔ lā fú lǎng xī sī jūn	10
 图雷特氏综合症	tú léi tè shì zōng hé zhèng	10
 土壤酸度探测器	tǔ rǎng suān dù tàn cè qì	10
 土壤芽胞杆菌属	tǔ rǎng yá bāo gǎn jūn shǔ	10
@@ -402543,6 +402609,7 @@ sort: by_weight
 主动土压力系数	zhǔ dòng tǔ yā lì xì shù	10
 猪副嗜血杆菌病	zhū fù shì xuè gǎn jūn bìng	10
 主观的价值理论	zhǔ guān de jià zhí lǐ lùn	10
+猪红斑丹毒丝菌	zhū hóng bān dān dú sī jūn	10
 猪紧迫性综合症	zhū jǐn pò xìng zōng hé zhèng	10
 朱利亚烯烃合成	zhū lì yà xī tīng hé chéng	10
 朱莉娅烯烃合成	zhū lì yà xī tīng hé chéng	10
