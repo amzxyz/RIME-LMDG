@@ -23623,6 +23623,9 @@ sort: by_weight
 𧑀	lüè	1
 𧕌	lüè	1
 𪅅	lüè	1
+呣	m̀	1
+呒	ḿ	1
+呣	ḿ	1
 吗	ma	866
 马	mǎ	769
 码	mǎ	744
@@ -25610,7 +25613,6 @@ sort: by_weight
 𫠏	mù	1
 𬭁	mǔ	1
 𬰃	mù	1
-呣	m̀	1
 嗯	ǹ	898
 嗯	ń	13
 嗯	ň	1
@@ -26590,7 +26592,8 @@ sort: by_weight
 𪘎	niè	1
 𪵉	niē	1
 𬛸	niē	1
-𪘅	niè	1您	nín	753
+𪘅	niè	1
+您	nín	753
 拰	nǐn	216
 囜	nín	82
 恁	nín	1
@@ -31271,6 +31274,7 @@ sort: by_weight
 杒	rèn	50
 梕	rèn	38
 躵	rěn	38
+恁	rèn	1
 𫟃	rén	1
 𡰥	rén	1
 菍	rěn	1
@@ -51034,5 +51038,3 @@ sort: by_weight
 𪱢	zuò	1
 𫝶	zuò	1
 𫝷	zuò	1
-呒	ḿ	1
-呣	ḿ	1
