@@ -3005,7 +3005,6 @@ sort: by_weight
 巴拉圭鲶属	bā lā guī nián shǔ	10
 巴拉金梭鱼	bā lā jīn suō yú	10
 巴拉卡椰属	bā lā kǎ yē shǔ	10
-吧啦啦能量	ba la la néng liàng	10
 巴啦啦能量	bā la la néng liàng	10
 巴拉曼蕨属	bā lā màn jué shǔ	10
 巴拉那油鲶	bā lā nà yóu nián	10
@@ -8039,7 +8038,7 @@ sort: by_weight
 被盗摩托车	bèi dào mó tuō chē	10
 被导演看中	bèi dǎo yǎn kàn zhòng	10
 被导演相中	bèi dǎo yǎn xiāng zhòng	10
-被导演选中	bèi dǎo yǎn xuǎn zhōng	10
+被导演选中	bèi dǎo yǎn xuǎn zhòng	10
 被盗艺术品	bèi dào yì shù pǐn	10
 北得克萨斯	běi dé kè sà sī	10
 北德劳埃德	běi dé láo āi dé	10
@@ -9656,7 +9655,7 @@ sort: by_weight
 被宣告破产	bèi xuān gào pò chǎn	10
 被宣告失踪	bèi xuān gào shī zōng	10
 被宣告死亡	bèi xuān gào sǐ wáng	10
-被选中的人	bèi xuǎn zhōng de rén	10
+被选中的人	bèi xuǎn zhòng de rén	10
 被学校开除	bèi xué xiào kāi chú	10
 被驯化的狼	bèi xùn huà de láng	10
 贝亚蒂定理	bèi yà dì dìng lǐ	10
@@ -33903,6 +33902,7 @@ sort: by_weight
 打入季后赛	dǎ rù jì hòu sài	10
 打入了冷宫	dǎ rù le lěng gōng	10
 打入世界杯	dǎ rù shì jiè bēi	10
+打如意算盘	dǎ rú yì suàn pán	10
 打入制胜球	dǎ rù zhì shèng qiú	10
 打入总决赛	dǎ rù zǒng jué sài	10
 大润发超市	dà rùn fā chāo shì	10
@@ -92467,6 +92467,7 @@ sort: by_weight
 机关事务局	jī guān shì wù jú	10
 鸡冠蹄盖蕨	jī guān tí gài jué	10
 机关委员会	jī guān wěi yuán huì	10
+机关宣传办	jī guān xuān chuán bàn	10
 机关幼儿园	jī guān yòu ér yuán	10
 激光笔照射	jī guāng bǐ zhào shè	10
 激光测高仪	jī guāng cè gāo yí	10
@@ -96348,9 +96349,6 @@ sort: by_weight
 假面的女王	jiǎ miàn de nǚ wáng	10
 假面的主人	jiǎ miàn de zhǔ rén	10
 假面骑士剑	jiǎ miàn qí shì jiàn	10
-假面骑士里	jiǎ miàn qí shì lǐ	10
-假面骑士真	jiǎ miàn qí shì zhēn	10
-假面骑士中	jiǎ miàn qí shì zhōng	10
 嘉闵高架路	jiā mǐn gāo jià lù	10
 迦摩缕波国	jiā mó lǚ bō guó	10
 嘉模圣母堂	jiā mó shèng mǔ táng	10
@@ -96364,8 +96362,6 @@ sort: by_weight
 戛纳广告节	jiá nà guǎng gào jié	10
 迦纳基督徒	jiā nà jī dū tú	10
 戛纳金棕榈	jiá nà jīn zōng lǘ	10
-加那利群岛	jiā nà lì qún dǎo	10
-加纳利群岛	jiā nà lì qún dǎo	10
 迦纳琴脂鲤	jiā nà qín zhī lǐ	10
 嘉纳治五郎	jiā nà zhì wǔ láng	10
 甲南山手站	jiǎ nán shān shǒu zhàn	10
@@ -118039,7 +118035,6 @@ sort: by_weight
 啦啦队效应	la la duì xiào yìng	10
 啦啦队之舞	la la duì zhī wǔ	10
 啦啦胖头鱼	la la pàng tóu yú	10
-啦啦小魔仙	la la xiǎo mó xiān	10
 拉了他一把	lā le tā yì bǎ	10
 蜡丽夜蛾属	là lì yè é shǔ	10
 拉林棒花鱼	lā lín bàng huā yú	10
@@ -175196,7 +175191,7 @@ sort: by_weight
 石佛营西里	shí fó yíng xī lǐ	10
 是否被合并	shì fǒu bèi hé bìng	10
 是否被选择	shì fǒu bèi xuǎn zé	10
-是否被选中	shì fǒu bèi xuǎn zhōng	10
+是否被选中	shì fǒu bèi xuǎn zhòng	10
 是否被允许	shì fǒu bèi yǔn xǔ	10
 是否参与过	shì fǒu cān yù guò	10
 是否存在点	shì fǒu cún zài diǎn	10
@@ -227470,7 +227465,7 @@ sort: by_weight
 悬着一颗心	xuán zhe yì kē xīn	10
 宣政院辖地	xuān zhèng yuàn xiá dì	10
 选址意见书	xuǎn zhǐ yì jiàn shū	10
-选中文件夹	xuǎn zhōng wén jiàn jiā	10
+选中文件夹	xuǎn zhòng wén jiàn jiā	10
 旋转变流机	xuán zhuǎn biàn liú jī	10
 旋转编码器	xuán zhuǎn biān mǎ qì	10
 旋转变压器	xuán zhuǎn biàn yā qì	10
@@ -272524,6 +272519,7 @@ sort: by_weight
 巴拉圭管吻鲶	bā lā guī guǎn wěn nián	10
 巴拉圭盔脂鲤	bā lā guī kuī zhī lǐ	10
 巴拉圭细脂鲤	bā lā guī xì zhī lǐ	10
+巴啦啦小魔仙	bā la la xiǎo mó xiān	10
 巴拉拿大钩鲶	bā lā ná dà gōu nián	10
 巴拉那兔脂鲤	bā lā nà tù zhī lǐ	10
 巴拉万石松属	bā lā wàn dàn sōng shǔ	10
@@ -275266,7 +275262,7 @@ sort: by_weight
 北叙利亚联邦	běi xù lì yà lián bāng	10
 被需要的感觉	bèi xū yào de gǎn jué	10
 被选召的孩子	bèi xuǎn zhào de hái zi	10
-被选中的孩子	bèi xuǎn zhōng de hái zi	10
+被选中的孩子	bèi xuǎn zhòng de hái zi	10
 北亚美利加洲	běi yà měi lì jiā zhōu	10
 背压式汽轮机	bèi yā shì qì lún jī	10
 被压抑的需求	bèi yā yì de xū qiú	10
@@ -275333,7 +275329,7 @@ sort: by_weight
 北站东路街道	běi zhàn dōng lù jiē dào	10
 北站西路街道	běi zhàn xī lù jiē dào	10
 被张艺谋看中	bèi zhāng yì móu kàn zhòng	10
-被张艺谋选中	bèi zhāng yì móu xuǎn zhōng	10
+被张艺谋选中	bèi zhāng yì móu xuǎn zhòng	10
 背着大包小包	bèi zhe dà bāo xiǎo bāo	10
 背着棺材跳舞	bèi zhe guān cái tiào wǔ	10
 被证监会调查	bèi zhèng jiān huì diào chá	10
@@ -285012,6 +285008,7 @@ sort: by_weight
 大地构造单元	dà dì gòu zào dān yuán	10
 大地构造假说	dà dì gòu zào jiǎ shuō	10
 大地构造旋回	dà dì gòu zào xuán huí	10
+打的如意算盘	dǎ dī rú yì suàn pán	10
 大地三角测量	dà dì sān jiǎo cè liáng	10
 大地色的眼影	dà dì sè de yǎn yǐng	10
 大地数字影院	dà dì shù zì yǐng yuàn	10
@@ -353589,7 +353586,6 @@ sort: by_weight
 隧道工程施工	suì dào gōng chéng shī gōng	10
 隧道掘进设备	suì dào jué jìn shè bèi	10
 隧道施工方法	suì dào shī gōng fāng fǎ	10
-岁的女高中生	suì de nǚ gāo zhōng shēng	10
 绥德师范学校	suí dé shī fàn xué xiào	10
 随地乱扔垃圾	suí dì luàn rēng lā jī	10
 随动转向大灯	suí dòng zhuǎn xiàng dà dēng	10
@@ -400670,6 +400666,7 @@ sort: by_weight
 乳酸左氧氟沙星	rǔ suān zuǒ yǎng fú shā xīng	10
 乳腺囊性增生症	rǔ xiàn náng xìng zēng shēng zhèng	10
 乳腺小叶增生症	rǔ xiàn xiǎo yè zēng shēng zhèng	10
+如意算盘打得响	rú yì suàn pán dǎ de xiǎng	10
 软骨发育不全症	ruǎn gǔ fā yù bù quán zhèng	10
 瑞典太阳系模型	ruì diǎn tài yáng xì mó xíng	10
 若干黄单胞杆菌	ruò gān huáng dān bāo gǎn jūn	10
