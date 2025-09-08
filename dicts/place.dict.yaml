@@ -1,6 +1,12 @@
 # Rime dictionary
+# encoding: utf-8
+#https://github.com/amzxyz/RIME-LMDG
 #------行政区划------
+---
 name: place
+version: "LTS"
+sort: by_weight
+...
 安图	ān tú	474
 巴宜	bā yí	305
 保德	bǎo dé	533
