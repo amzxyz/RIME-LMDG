@@ -4831,11 +4831,11 @@ sort: by_weight
 摆上了货架	bǎi shàng le huò jià	10
 摆上了台面	bǎi shàng le tái miàn	10
 白梢蝴蝶鱼	bái shāo hú dié yú	10
-白蛇传传说	bái shé chuán chuán shuō	10
 白蛇和青蛇	bái shé hé qīng shé	10
 百舌鸟导弹	bǎi shé niǎo dǎo dàn	10
 白舌尾甲鲹	bái shé wěi jiǎ shēn	10
 白蛇与许仙	bái shé yǔ xǔ xiān	10
+白蛇传传说	bái shé zhuàn chuán shuō	10
 白身臂灯鱼	bái shēn bì dēng yú	10
 白肾夜蛾属	bái shèn yè é shǔ	10
 柏生弹头螺	bǎi shēng dàn tóu luó	10
@@ -12979,7 +12979,7 @@ sort: by_weight
 冰川地质学	bīng chuān dì zhì xué	10
 冰川泥石流	bīng chuān ní shí liú	10
 冰川漂砾法	bīng chuān piāo lì fǎ	10
-冰川天女传	bīng chuān tiān nǚ chuán	10
+冰川天女传	bīng chuān tiān nǚ zhuàn	10
 冰川植物群	bīng chuān zhí wù qún	10
 病床使用率	bìng chuáng shǐ yòng lǜ	10
 病从口中入	bìng cóng kǒu zhōng rù	10
@@ -14395,7 +14395,7 @@ sort: by_weight
 不懂就算了	bù dǒng jiù suàn le	10
 不懂就要问	bù dǒng jiù yào wèn	10
 不懂没关系	bù dǒng méi guān xì	10
-不动明王传	bú dòng míng wáng chuán	10
+不动明王传	bú dòng míng wáng zhuàn	10
 不懂女人心	bù dǒng nǚ rén xīn	10
 不懂什么是	bù dǒng shén me shì	10
 不懂是不是	bù dǒng shì bú shì	10
@@ -28267,7 +28267,7 @@ sort: by_weight
 除硫杆菌属	chú liú gǎn jūn shǔ	10
 除硫球菌目	chú liú qiú jūn mù	10
 楚留香传奇	chǔ liú xiāng chuán qí	10
-楚留香新传	chǔ liú xiāng xīn chuán	10
+楚留香新传	chǔ liú xiāng xīn zhuàn	10
 出笼的小鸟	chū lóng de xiǎo niǎo	10
 楚鲁巴斯科	chǔ lǔ bā sī kē	10
 出卖人义务	chū mài rén yì wù	10
@@ -38459,7 +38459,7 @@ sort: by_weight
 登步岛战役	dēng bù dǎo zhàn yì	10
 登不上去了	dēng bú shàng qù le	10
 灯不挑不亮	dēng bù tiāo bú liàng	10
-灯草和尚传	dēng cǎo hé shàng chuán	10
+灯草和尚传	dēng cǎo hé shàng zhuàn	10
 灯草鸢尾属	dēng cǎo yuān wěi shǔ	10
 等产量曲线	děng chǎn liàng qū xiàn	10
 邓超的演技	dèng chāo de yǎn jì	10
@@ -38545,7 +38545,7 @@ sort: by_weight
 等喊弄奘寺	děng hǎn nòng zàng sì	10
 等号操作符	děng hào cāo zuò fú	10
 登户研究所	dēng hù yán jiū suǒ	10
-灯花梦全传	dēng huā mèng quán chuán	10
+灯花梦全传	dēng huā mèng quán zhuàn	10
 等化学系列	děng huà xué xì liè	10
 等回过神来	děng huí guò shén lái	10
 等会就困了	děng huì jiù kùn le	10
@@ -43138,7 +43138,7 @@ sort: by_weight
 电源转换器	diàn yuán zhuǎn huàn qì	10
 电源总开关	diàn yuán zǒng kāi guān	10
 滇越金星蕨	diān yuè jīn xīng jué	10
-滇云历年传	diān yún lì nián chuán	10
+滇云历年传	diān yún lì nián zhuàn	10
 点赞和分享	diǎn zàn hé fēn xiǎng	10
 点赞和留言	diǎn zàn hé liú yán	10
 点赞和转发	diǎn zàn hé zhuǎn fā	10
@@ -45663,10 +45663,8 @@ sort: by_weight
 渡边锭太郎	dù biān dìng tài láng	10
 渡边颊刺鱼	dù biān jiá cì yú	10
 渡边久美子	dù biān jiǔ měi zǐ	10
-渡辺久美子	dù biān jiǔ měi zǐ	10
 渡边满里奈	dù biān mǎn lǐ nài	10
 渡边美优纪	dù biān měi yōu jì	10
-渡辺美优纪	dù biān měi yōu jì	10
 渡边美智雄	dù biān měi zhì xióng	10
 渡边奈绪子	dù biān nài xù zǐ	10
 渡边信一郎	dù biān xìn yì láng	10
@@ -45958,7 +45956,7 @@ sort: by_weight
 毒毛旋花苷	dú máo xuán huā gān	10
 毒毛旋花属	dú máo xuán huā shǔ	10
 毒毛旋花素	dú máo xuán huā sù	10
-读孟尝君传	dú mèng cháng jūn chuán	10
+读孟尝君传	dú mèng cháng jūn zhuàn	10
 毒蘑菇中毒	dú mó gū zhòng dú	10
 独木不成林	dú mù bù chéng lín	10
 独木龙舟赛	dú mù lóng zhōu sài	10
@@ -57497,7 +57495,7 @@ sort: by_weight
 封闭式训练	fēng bì shì xùn liàn	10
 封闭式阳台	fēng bì shì yáng tái	10
 封闭式轴承	fēng bì shì zhóu chéng	10
-峰壁双姝传	fēng bì shuāng shū chuán	10
+峰壁双姝传	fēng bì shuāng shū zhuàn	10
 凤鼻头文化	fèng bí tóu wén huà	10
 封闭型基金	fēng bì xíng jī jīn	10
 封闭性开局	fēng bì xìng kāi jú	10
@@ -63056,7 +63054,7 @@ sort: by_weight
 高高的门槛	gāo gāo de mén kǎn	10
 高高的山顶	gāo gāo de shān dǐng	10
 高高的山峰	gāo gāo de shān fēng	10
-高高的山脊	gāo gāo de shān jí	10
+高高的山脊	gāo gāo de shān jǐ	10
 高高的树上	gāo gāo de shù shàng	10
 高高的台阶	gāo gāo de tái jiē	10
 高高的围墙	gāo gāo de wéi qiáng	10
@@ -63685,7 +63683,7 @@ sort: by_weight
 高三这一年	gāo sān zhè yì nián	10
 高色域屏幕	gāo sè yù píng mù	10
 高森奈津美	gāo sēn nài jīn měi	10
-高僧法显传	gāo sēng fǎ xiǎn chuán	10
+高僧法显传	gāo sēng fǎ xiǎn zhuàn	10
 高砂蜗牛属	gāo shā wō niú shǔ	10
 高砂小米草	gāo shā xiǎo mǐ cǎo	10
 高砂义勇队	gāo shā yì yǒng duì	10
@@ -73859,7 +73857,7 @@ sort: by_weight
 归公司所有	guī gōng sī suǒ yǒu	10
 鬼公子炎魔	guǐ gōng zǐ yán mó	10
 硅谷钢铁侠	guī gǔ gāng tiě xiá	10
-硅谷群瞎传	guī gǔ qún xiā chuán	10
+硅谷群瞎传	guī gǔ qún xiā zhuàn	10
 硅谷商学院	guī gǔ shāng xué yuàn	10
 鬼故事作家	guǐ gù shì zuò jiā	10
 鬼谷子下山	guǐ gǔ zi xià shān	10
@@ -80117,7 +80115,6 @@ sort: by_weight
 喝了个精光	hē le gè jīng guāng	10
 喝了很多酒	hē le hěn duō jiǔ	10
 喝了几杯酒	hē le jǐ bēi jiǔ	10
-和乐器乐团	hé lè qì yuè tuán	10
 喝了一杯酒	hē le yì bēi jiǔ	10
 喝了一杯水	hē le yì bēi shuǐ	10
 喝了一大杯	hē le yí dà bēi	10
@@ -81130,6 +81127,7 @@ sort: by_weight
 河越城之战	hé yuè chéng zhī zhàn	10
 合约到期后	hé yuē dào qī hòu	10
 合约阶梯赛	hé yuē jiē tī sài	10
+和乐器乐团	hé yuè qì yuè tuán	10
 合约销售额	hé yuē xiāo shòu é	10
 河岳英灵集	hé yuè yīng líng jí	10
 合约制造商	hé yuē zhì zào shāng	10
@@ -84760,7 +84758,7 @@ sort: by_weight
 湖北谘议局	hú běi zī yì jú	10
 虎贲中郎督	hǔ bēn zhōng láng dū	10
 虎贲中郎将	hǔ bēn zhōng láng jiāng	10
-忽必烈传奇	hū bì liè chuán qí	10
+忽必烈传奇	hū bì liè zhuàn qí	10
 湖边好钓鱼	hú biān hǎo diào yú	10
 湖边凶杀案	hú biān xiōng shā àn	10
 弧边招潮蟹	hú biān zhāo cháo xiè	10
@@ -85003,7 +85001,7 @@ sort: by_weight
 狐狸与猎狗	hú lí yǔ liè gǒu	10
 狐狸与葡萄	hú lí yǔ pú táo	10
 狐狸与月亮	hú lí yǔ yuè liàng	10
-狐狸缘全传	hú lí yuán quán chuán	10
+狐狸缘全传	hú lí yuán quán zhuàn	10
 狐狸怎么叫	hú lí zěn me jiào	10
 互联网安全	hù lián wǎng ān quán	10
 互联网遨游	hù lián wǎng áo yóu	10
@@ -88252,8 +88250,8 @@ sort: by_weight
 黄飞鸿弟子	huáng fēi hóng dì zǐ	10
 黄飞鸿家族	huáng fēi hóng jiā zú	10
 黄飞鸿系列	huáng fēi hóng xì liè	10
-黄飞鸿笑传	huáng fēi hóng xiào chuán	10
-黄飞鸿新传	huáng fēi hóng xīn chuán	10
+黄飞鸿笑传	huáng fēi hóng xiào zhuàn	10
+黄飞鸿新传	huáng fēi hóng xīn zhuàn	10
 黄飞鸿之二	huáng fēi hóng zhī èr	10
 黄飞鸿之三	huáng fēi hóng zhī sān	10
 黄飞鸿之四	huáng fēi hóng zhī sì	10
@@ -91433,7 +91431,7 @@ sort: by_weight
 或因寄所托	huò yīn jì suǒ tuō	10
 火影次世代	huǒ yǐng cì shì dài	10
 火影和海贼	huǒ yǐng hé hǎi zéi	10
-火影疾风传	huǒ yǐng jí fēng chuán	10
+火影疾风传	huǒ yǐng jí fēng zhuàn	10
 火影忍者里	huǒ yǐng rěn zhě lǐ	10
 火影忍者中	huǒ yǐng rěn zhě zhōng	10
 货有过期日	huò yǒu guò qī rì	10
@@ -91864,7 +91862,6 @@ sort: by_weight
 脊翅叶蝉属	jí chì yè chán shǔ	10
 棘翅夜蛾属	jí chì yè é shǔ	10
 戟齿锥齿鲨	jǐ chǐ zhuī chǐ shā	10
-姫虫百百世	jī chóng bǎi bǎi shì	10
 基础不牢固	jī chǔ bù láo gù	10
 基础产业类	jī chǔ chǎn yè lèi	10
 挤出成型法	jǐ chū chéng xíng fǎ	10
@@ -92202,7 +92199,7 @@ sort: by_weight
 机动三轮车	jī dòng sān lún chē	10
 机动特遣队	jī dòng tè qiǎn duì	10
 冀东伪组织	jì dōng wěi zǔ zhī	10
-机动武神传	jī dòng wǔ shén chuán	10
+机动武神传	jī dòng wǔ shén zhuàn	10
 机动新世纪	jī dòng xīn shì jì	10
 机动新撰组	jī dòng xīn zhuàn zǔ	10
 机动性更强	jī dòng xìng gèng qiáng	10
@@ -92518,7 +92515,7 @@ sort: by_weight
 激光指示器	jī guāng zhǐ shì qì	10
 极光追杀令	jí guāng zhuī shā lìng	10
 激光准直法	jī guāng zhǔn zhí fǎ	10
-激龟忍者传	jī guī rěn zhě chuán	10
+激龟忍者传	jī guī rěn zhě zhuàn	10
 脊果椰子属	jí guǒ yē zi shǔ	10
 吉哈德主义	jí hā dé zhǔ yì	10
 脊海百合属	jí hǎi bǎi hé shǔ	10
@@ -99965,7 +99962,7 @@ sort: by_weight
 江湖的故事	jiāng hú de gù shì	10
 江湖的规矩	jiāng hú de guī ju	10
 江湖恩仇录	jiāng hú ēn chóu lù	10
-江湖豪客传	jiāng hú háo kè chuán	10
+江湖豪客传	jiāng hú háo kè zhuàn	10
 江湖接班人	jiāng hú jiē bān rén	10
 江湖救急啊	jiāng hú jiù jí a	10
 江湖龙虎斗	jiāng hú lóng hǔ dòu	10
@@ -103077,8 +103074,8 @@ sort: by_weight
 结壮飘拂草	jié zhuàng piāo fú cǎo	10
 睫状神经节	jié zhuàng shén jīng jié	10
 芥子纳须弥	jiè zǐ nà xū mí	10
-芥子园画传	jiè zǐ yuán huà chuán	10
 芥子园画谱	jiè zǐ yuán huà pǔ	10
+芥子园画传	jiè zǐ yuán huà zhuàn	10
 节奏布鲁斯	jié zòu bù lǔ sī	10
 节奏的把控	jié zòu de bǎ kòng	10
 节奏的变化	jié zòu de biàn huà	10
@@ -108868,7 +108865,7 @@ sort: by_weight
 聚丙烯纤维	jù bǐng xī xiān wéi	10
 聚丙烯装置	jù bǐng xī zhuāng zhì	10
 聚丙酰烯胺	jù bǐng xiān xī àn	10
-巨兵长城传	jù bīng zhǎng chéng chuán	10
+巨兵长城传	jù bīng zhǎng chéng zhuàn	10
 局部场电位	jú bù chǎng diàn wèi	10
 局部大暴雨	jú bù dà bào yǔ	10
 局部的炎症	jú bù de yán zhèng	10
@@ -116133,7 +116130,6 @@ sort: by_weight
 空调病症状	kōng tiáo bìng zhèng zhuàng	10
 空调不制冷	kōng tiáo bú zhì lěng	10
 空条承太郎	kōng tiáo chéng tài láng	10
-空调承太郎	kōng tiáo chéng tài láng	10
 空调出风口	kōng tiáo chū fēng kǒu	10
 空调的安装	kōng tiáo de ān zhuāng	10
 空调的功率	kōng tiáo de gōng lǜ	10
@@ -130767,7 +130763,7 @@ sort: by_weight
 毛梗双花草	máo gěng shuāng huā cǎo	10
 猫狗宠物街	māo gǒu chǒng wù jiē	10
 猫狗斗多番	māo gǒu dòu duō fān	10
-猫狗时空传	māo gǒu shí kōng chuán	10
+猫狗时空传	māo gǒu shí kōng zhuàn	10
 猫狗总动员	māo gǒu zǒng dòng yuán	10
 猫古丁中毒	māo gǔ dīng zhōng dú	10
 毛怪苏利文	máo guài sū lì wén	10
@@ -137395,7 +137391,7 @@ sort: by_weight
 姆明马克杯	mǔ míng mǎ kè bēi	10
 幕末机关说	mù mò jī guān shuō	10
 幕末四贤侯	mù mò sì xián hóu	10
-幕末义人传	mù mò yì rén chuán	10
+幕末义人传	mù mò yì rén zhuàn	10
 木木的世界	mù mù de shì jiè	10
 木木津克久	mù mù jīn kè jiǔ	10
 木木肉嘟嘟	mù mù ròu dū dū	10
@@ -144812,7 +144808,7 @@ sort: by_weight
 女的为什么	nǚ de wèi shén me	10
 女的问男的	nǚ de wèn nán de	10
 女帝汉库克	nǚ dì hàn kù kè	10
-女帝奇英传	nǚ dì qí yīng chuán	10
+女帝奇英传	nǚ dì qí yīng zhuàn	10
 女帝武则天	nǚ dì wǔ zé tiān	10
 女儿被绑架	nǚ ér bèi bǎng jià	10
 女儿出嫁后	nǚ ér chū jià hòu	10
@@ -145403,7 +145399,7 @@ sort: by_weight
 女性作曲家	nǚ xìng zuò qǔ jiā	10
 女婿要进门	nǚ xu yào jìn mén	10
 女演员奖项	nǚ yǎn yuán jiǎng xiàng	10
-女医明妃传	nǚ yī míng fēi chuán	10
+女医明妃传	nǚ yī míng fēi zhuàn	10
 女医师协会	nǚ yī shī xié huì	10
 女亦无所思	nǚ yì wú suǒ sī	10
 女亦无所忆	nǚ yì wú suǒ yì	10
@@ -147083,7 +147079,7 @@ sort: by_weight
 硼的氧化物	péng de yǎng huà wù	10
 蓬蒂迪利马	péng dì dí lì mǎ	10
 彭蒂科斯特	péng dì kē sī tè	10
-碰丁先生传	pèng dīng xiān shēng chuán	10
+碰丁先生传	pèng dīng xiān shēng zhuàn	10
 碰都不敢碰	pèng dōu bù gǎn pèng	10
 碰都不能碰	pèng dōu bù néng pèng	10
 膨腹长蝽属	péng fù cháng chūn shǔ	10
@@ -161634,7 +161630,7 @@ sort: by_weight
 人生一辈子	rén shēng yí bèi zi	10
 人生一路行	rén shēng yí lù xíng	10
 人生亦如此	rén shēng yì rú cǐ	10
-壬生义士传	rén shēng yì shì chuán	10
+壬生义士传	rén shēng yì shì zhuàn	10
 人生赢家啊	rén shēng yíng jiā a	10
 人生有八苦	rén shēng yǒu bā kǔ	10
 人生有几个	rén shēng yǒu jǐ gè	10
@@ -162150,7 +162146,7 @@ sort: by_weight
 忍者好小子	rěn zhě hǎo xiǎo zi	10
 仁者黄飞鸿	rén zhě huáng fēi hóng	10
 忍者巨龙属	rěn zhě jù lóng shǔ	10
-忍者龙剑传	rěn zhě lóng jiàn chuán	10
+忍者龙剑传	rěn zhě lóng jiàn zhuàn	10
 忍者乱太郎	rěn zhě luàn tài láng	10
 忍者小灵精	rěn zhě xiǎo líng jīng	10
 忍者小英雄	rěn zhě xiǎo yīng xióng	10
@@ -164463,14 +164459,14 @@ sort: by_weight
 三国擂台赛	sān guó lèi tái sài	10
 三国历史家	sān guó lì shǐ jiā	10
 三国连太郎	sān guó lián tài láng	10
-三国名将传	sān guó míng jiàng chuán	10
+三国名将传	sān guó míng jiàng zhuàn	10
 三国群侠传	sān guó qún xiá zhuàn	10
 三国群英传	sān guó qún yīng zhuàn	10
 三国食货志	sān guó shí huò zhì	10
 三国水浒城	sān guó shuǐ hǔ chéng	10
 三国艺术家	sān guó yì shù jiā	10
 三国英杰传	sān guó yīng jié zhuàn	10
-三国赵云传	sān guó zhào yún chuán	10
+三国赵云传	sān guó zhào yún zhuàn	10
 三国志大战	sān guó zhì dà zhàn	10
 三国志列传	sān guó zhì liè zhuàn	10
 三国志平话	sān guó zhì píng huà	10
@@ -165117,7 +165113,7 @@ sort: by_weight
 散碎的原色	sǎn suì de yuán sè	10
 三岁定八十	sān suì dìng bā shí	10
 三岁就很帅	sān suì jiù hěn shuài	10
-三遂平妖传	sān suì píng yāo chuán	10
+三遂平妖传	sān suì píng yāo zhuàn	10
 伞穗山羊草	sǎn suì shān yáng cǎo	10
 三缩丙二醇	sān suō bǐng èr chún	10
 三羧甲基胺	sān suō jiǎ jī àn	10
@@ -167005,7 +167001,7 @@ sort: by_weight
 上调消费税	shàng diào xiāo fèi shuì	10
 上丁高棉语	shàng dīng gāo mián yǔ	10
 上丁商务楼	shàng dīng shāng wù lóu	10
-上洞八仙传	shàng dòng bā xiān chuán	10
+上洞八仙传	shàng dòng bā xiān zhuàn	10
 商都信息港	shāng dū xìn xī gǎng	10
 上顿没下顿	shàng dùn méi xià dùn	10
 尚恩曼德斯	shàng ēn màn dé sī	10
@@ -167894,7 +167890,7 @@ sort: by_weight
 上书房行走	shàng shū fáng xíng zǒu	10
 上述过程中	shàng shù guò chéng zhōng	10
 上书谏逐客	shàng shū jiàn zhú kè	10
-尚书孔氏传	shàng shū kǒng shì chuán	10
+尚书孔氏传	shàng shū kǒng shì zhuàn	10
 尚书吏部郎	shàng shū lì bù láng	10
 上述两方面	shàng shù liǎng fāng miàn	10
 上树南星属	shàng shù nán xīng shǔ	10
@@ -178452,7 +178448,7 @@ sort: by_weight
 施图姆定理	shī tú mǔ dìng lǐ	10
 使徒圣约翰	shǐ tú shèng yuē hàn	10
 市图书馆站	shì tú shū guǎn zhàn	10
-使徒行传第	shǐ tú xíng chuán dì	10
+使徒行传第	shǐ tú xíng zhuàn dì	10
 史托克定律	shǐ tuō kè dìng lǜ	10
 市脱贫攻坚	shì tuō pín gōng jiān	10
 什瓦宾斯基	shí wǎ bīn sī jī	10
@@ -188200,7 +188196,7 @@ sort: by_weight
 孙中山选集	sūn zhōng shān xuǎn jí	10
 孙中山遗嘱	sūn zhōng shān yí zhǔ	10
 孙中山邮票	sūn zhōng shān yóu piào	10
-孙子兵法中	sūn zi bīng fǎ zhōng	10
+孙子兵法中	sūn zǐ bīng fǎ zhōng	10
 孙子司马炎	sūn zi sī mǎ yán	10
 孙子孙女们	sūn zi sūn nǚ men	10
 所爱的一切	suǒ ài de yí qiè	10
@@ -192894,7 +192890,7 @@ sort: by_weight
 天才基本法	tiān cái jī běn fǎ	10
 天才科学家	tiān cái kē xué jiā	10
 天才雷普利	tiān cái léi pǔ lì	10
-天才理论传	tiān cái lǐ lùn chuán	10
+天才理论传	tiān cái lǐ lùn zhuàn	10
 天才美少女	tiān cái měi shào nǚ	10
 天才琪露诺	tiān cái qí lù nuò	10
 天才瑞普利	tiān cái ruì pǔ lì	10
@@ -192976,7 +192972,7 @@ sort: by_weight
 天地劫外章	tiān dì jié wài zhāng	10
 天地劫外传	tiān dì jié wài zhuàn	10
 天地劫系列	tiān dì jié xì liè	10
-天地劫序传	tiān dì jié xù chuán	10
+天地劫序传	tiān dì jié xù zhuàn	10
 天地君亲师	tiān dì jūn qīn shī	10
 天地任翱翔	tiān dì rèn áo xiáng	10
 天地人合一	tiān dì rén hé yī	10
@@ -194140,7 +194136,7 @@ sort: by_weight
 天王郭富城	tiān wáng guō fù chéng	10
 天王洪秀全	tiān wáng hóng xiù quán	10
 天王级人物	tiān wáng jí rén wù	10
-天王老子一	tiān wáng lǎo zǐ yī	10
+天王老子一	tiān wáng lǎo zi yī	10
 天王嫂昆凌	tiān wáng sǎo kūn líng	10
 天王山战役	tiān wáng shān zhàn yì	10
 天王山之战	tiān wáng shān zhī zhàn	10
@@ -199970,7 +199966,7 @@ sort: by_weight
 万向联轴器	wàn xiàng lián zhóu qì	10
 玩笑归玩笑	wán xiào guī wán xiào	10
 玩笑开大了	wán xiào kāi dà le	10
-晚笑堂画传	wǎn xiào táng huà chuán	10
+晚笑堂画传	wǎn xiào táng huà zhuàn	10
 玩小游戏的	wán xiǎo yóu xì de	10
 完形填空题	wán xíng tián kòng tí	10
 完形心理学	wán xíng xīn lǐ xué	10
@@ -203491,7 +203487,7 @@ sort: by_weight
 味之素球场	wèi zhī sù qiú chǎng	10
 味之素人物	wèi zhī sù rén wù	10
 位置透明性	wèi zhì tòu míng xìng	10
-魏志倭人传	wèi zhì wō rén chuán	10
+魏志倭人传	wèi zhì wō rén zhuàn	10
 位置线方程	wèi zhì xiàn fāng chéng	10
 位置性眩晕	wèi zhì xìng xuàn yùn	10
 位置异构体	wèi zhì yì gòu tǐ	10
@@ -210545,7 +210541,7 @@ sort: by_weight
 五岁的儿子	wǔ suì de ér zi	10
 五岁的孩子	wǔ suì de hái zi	10
 五岁的女儿	wǔ suì de nǚ ér	10
-吴孙子兵法	wú sūn zi bīng fǎ	10
+吴孙子兵法	wú sūn zǐ bīng fǎ	10
 无所不在的	wú suǒ bú zài de	10
 无所不知的	wú suǒ bù zhī de	10
 五所川原市	wǔ suǒ chuān yuán shì	10
@@ -217339,7 +217335,7 @@ sort: by_weight
 相模大野站	xiāng mó dà yě zhàn	10
 相模眶灯鱼	xiāng mó kuàng dēng yú	10
 相模栗壳蟹	xiāng mó lì ké xiè	10
-降魔灵符传	xiáng mó líng fú chuán	10
+降魔灵符传	xiáng mó líng fú zhuàn	10
 香磨山水库	xiāng mó shān shuǐ kù	10
 像模特一样	xiàng mó tè yí yàng	10
 相模湾玉螺	xiāng mó wān yù luó	10
@@ -219646,19 +219642,9 @@ sort: by_weight
 小梨形菌科	xiǎo lí xíng jūn kē	10
 小梨形菌属	xiǎo lí xíng jūn shǔ	10
 小李又来了	xiǎo lǐ yòu lái le	10
-效力于巴萨	xiào lì yú bā sà	10
-小笠原海沟	xiǎo lì yuán hǎi gōu	10
 小笠原笠螺	xiǎo lì yuán lì luó	10
-小笠原満男	xiǎo lì yuán mǎn nán	10
-小笠原满男	xiǎo lì yuán mǎn nán	10
 小笠原青螺	xiǎo lì yuán qīng luó	10
-小笠原群岛	xiǎo lì yuán qún dǎo	10
-小笠原事件	xiǎo lì yuán shì jiàn	10
 小笠原汤鲤	xiǎo lì yuán tāng lǐ	10
-小笠原信岭	xiǎo lì yuán xìn lǐng	10
-小笠原秀政	xiǎo lì yuán xiù zhèng	10
-小笠原贞庆	xiǎo lì yuán zhēn qìng	10
-小笠原诸岛	xiǎo lì yuán zhū dǎo	10
 小笠原珠螺	xiǎo lì yuán zhū luó	10
 小粒种咖啡	xiǎo lì zhǒng kā fēi	10
 小莲的故事	xiǎo lián de gù shì	10
@@ -221790,10 +221776,6 @@ sort: by_weight
 新出了一种	xīn chū le yì zhǒng	10
 心传导系统	xīn chuán dǎo xì tǒng	10
 新川科技园	xīn chuān kē jì yuán	10
-新传媒电视	xīn chuán méi diàn shì	10
-新传媒集团	xīn chuán méi jí tuán	10
-新传媒私人	xīn chuán méi sī rén	10
-新传媒艺人	xīn chuán méi yì rén	10
 新船叶藓属	xīn chuán yè xiǎn shǔ	10
 新创建集团	xīn chuàng jiàn jí tuán	10
 新创建一个	xīn chuàng jiàn yí gè	10
@@ -224448,6 +224430,10 @@ sort: by_weight
 心轴试验法	xīn zhóu shì yàn fǎ	10
 新注册公司	xīn zhù cè gōng sī	10
 信主的见证	xìn zhǔ de jiàn zhèng	10
+新传媒电视	xīn zhuàn méi diàn shì	10
+新传媒集团	xīn zhuàn méi jí tuán	10
+新传媒私人	xīn zhuàn méi sī rén	10
+新传媒艺人	xīn zhuàn méi yì rén	10
 莘庄地铁站	xīn zhuāng dì tiě zhàn	10
 莘庄工业区	xīn zhuāng gōng yè qū	10
 新资本协议	xīn zī běn xié yì	10
@@ -225462,7 +225448,7 @@ sort: by_weight
 行使选举权	xíng shǐ xuǎn jǔ quán	10
 形式训练说	xíng shì xùn liàn shuō	10
 形式氧化态	xíng shì yǎng huà tài	10
-醒世姻缘传	xǐng shì yīn yuán chuán	10
+醒世姻缘传	xǐng shì yīn yuán zhuàn	10
 形式语义学	xíng shì yǔ yì xué	10
 形势与政策	xíng shì yǔ zhèng cè	10
 姓氏与族属	xìng shì yǔ zú shǔ	10
@@ -227311,7 +227297,7 @@ sort: by_weight
 轩辕黄帝陵	xuān yuán huáng dì líng	10
 轩辕剑传奇	xuān yuán jiàn chuán qí	10
 轩辕剑世界	xuān yuán jiàn shì jiè	10
-轩辕剑外传	xuān yuán jiàn wài chuán	10
+轩辕剑外传	xuān yuán jiàn wài zhuàn	10
 轩辕剑系列	xuān yuán jiàn xì liè	10
 轩辕夏禹剑	xuān yuán xià yǔ jiàn	10
 宣元至本经	xuān yuán zhì běn jīng	10
@@ -246583,7 +246569,7 @@ sort: by_weight
 圆盘角石属	yuán pán jiǎo shí shǔ	10
 圆盘脚手架	yuán pán jiǎo shǒu jià	10
 圆瓢蜡蝉属	yuán piáo là chán shǔ	10
-源平讨魔传	yuán píng tǎo mó chuán	10
+源平讨魔传	yuán píng tǎo mó zhuàn	10
 元平体育馆	yuán píng tǐ yù guǎn	10
 原浦东新区	yuán pǔ dōng xīn qū	10
 远期并发症	yuǎn qī bìng fā zhèng	10
@@ -250961,12 +250947,12 @@ sort: by_weight
 占耕地面积	zhàn gēng dì miàn jī	10
 战国大合战	zhàn guó dà hé zhàn	10
 战国风云儿	zhàn guó fēng yún ér	10
-战国鬼才传	zhàn guó guǐ cái chuán	10
+战国鬼才传	zhàn guó guǐ cái zhuàn	10
 战国红玛瑙	zhàn guó hóng mǎ nǎo	10
 战国美少女	zhàn guó měi shào nǚ	10
 战国秦长城	zhàn guó qín cháng chéng	10
 战国青铜器	zhàn guó qīng tóng qì	10
-战国群雄传	zhàn guó qún xióng chuán	10
+战国群雄传	zhàn guó qún xióng zhuàn	10
 战国水晶杯	zhàn guó shuǐ jīng bēi	10
 战国四公子	zhàn guó sì gōng zǐ	10
 战国四君子	zhàn guó sì jūn zǐ	10
@@ -253439,6 +253425,7 @@ sort: by_weight
 振翅的天使	zhèn chì de tiān shǐ	10
 振翅歌百灵	zhèn chì gē bǎi líng	10
 真齿鳞虫属	zhēn chǐ lín chóng shǔ	10
+姫虫百百世	zhěn chóng bǎi bǎi shì	10
 镇初级中学	zhèn chū jí zhōng xué	10
 真传一句话	zhēn chuán yí jù huà	10
 真唇水母属	zhēn chún shuǐ mǔ shǔ	10
@@ -261012,7 +260999,7 @@ sort: by_weight
 重量级演员	zhòng liàng jí yǎn yuán	10
 重量级专家	zhòng liàng jí zhuān jiā	10
 重量与质量	zhòng liàng yǔ zhì liàng	10
-忠烈侠义传	zhōng liè xiá yì chuán	10
+忠烈侠义传	zhōng liè xiá yì zhuàn	10
 忠烈杨家将	zhōng liè yáng jiā jiàng	10
 肿瘤标记物	zhǒng liú biāo jì wù	10
 肿瘤标志物	zhǒng liú biāo zhì wù	10
@@ -263050,7 +263037,7 @@ sort: by_weight
 驻各国大使	zhù gè guó dà shǐ	10
 驻各国领事	zhù gè guó lǐng shì	10
 诸葛恪专权	zhū gě kè zhuān quán	10
-诸葛孔明传	zhū gě kǒng míng chuán	10
+诸葛孔明传	zhū gě kǒng míng zhuàn	10
 诸葛亮北伐	zhū gě liàng běi fá	10
 诸葛亮出山	zhū gě liàng chū shān	10
 诸葛亮等人	zhū gě liàng děng rén	10
@@ -273076,7 +273063,7 @@ sort: by_weight
 白眉长臂猿属	bái méi cháng bì yuán shǔ	10
 白眉食虫莺属	bái méi shí chóng yīng shǔ	10
 白眉斜纹天蛾	bái méi xié wén tiān é	10
-百美新咏图传	bǎi měi xīn yǒng tú chuán	10
+百美新咏图传	bǎi měi xīn yǒng tú zhuàn	10
 白眉棕啄木鸟	bái méi zōng zhuó mù niǎo	10
 百密总有一疏	bǎi mì zǒng yǒu yī shū	10
 白明高速公路	bái míng gāo sù gōng lù	10
@@ -277407,7 +277394,7 @@ sort: by_weight
 不健康的饮食	bú jiàn kāng de yǐn shí	10
 不见是而无闷	bú jiàn shì ér wú mèn	10
 不讲理的三分	bù jiǎng lǐ de sān fēn	10
-补江总白猿传	bǔ jiāng zǒng bái yuán chuán	10
+补江总白猿传	bǔ jiāng zǒng bái yuán zhuàn	10
 补缴社会保险	bǔ jiǎo shè huì bǎo xiǎn	10
 补交养老保险	bǔ jiāo yǎng lǎo bǎo xiǎn	10
 不洁的性生活	bù jié de xìng shēng huó	10
@@ -279241,8 +279228,8 @@ sort: by_weight
 苍岩山层腹菌	cāng yán shān céng fù jūn	10
 苍岩山的孤台	cāng yán shān de gū tái	10
 仓央嘉措情歌	cāng yāng jiā cuò qíng gē	10
-仓央嘉措诗传	cāng yāng jiā cuò shī chuán	10
 仓央嘉措诗歌	cāng yāng jiā cuò shī gē	10
+仓央嘉措诗传	cāng yāng jiā cuò shī zhuàn	10
 藏印议订附约	cáng yìn yì dìng fù yuē	10
 苍郁高速公路	cāng yù gāo sù gōng lù	10
 藏于九地之下	cáng yú jiǔ dì zhī xià	10
@@ -284147,7 +284134,7 @@ sort: by_weight
 次宪法修正案	cì xiàn fǎ xiū zhèng àn	10
 刺小球壳菌科	cì xiǎo qiú ké jūn kē	10
 此心到处悠然	cǐ xīn dào chù yōu rán	10
-磁性安全传输	cí xìng ān quán chuán shū	10
+磁性安全传输	cí xìng ān quán zhuàn shū	10
 雌性哺乳动物	cí xìng bǔ rǔ dòng wù	10
 雌性激素分泌	cí xìng jī sù fēn mì	10
 磁性套索工具	cí xìng tào suǒ gōng jù	10
@@ -310074,7 +310061,7 @@ sort: by_weight
 惠民利民政策	huì mín lì mín zhèng cè	10
 回民实验小学	huí mín shí yàn xiǎo xué	10
 惠民政策落实	huì mín zhèng cè luò shí	10
-回明之杨凌传	huí míng zhī yáng líng chuán	10
+回明之杨凌传	huí míng zhī yáng líng zhuàn	10
 徽墨制作技艺	huī mò zhì zuò jì yì	10
 回眸的那瞬间	huí móu de nà shùn jiān	10
 徽宁池广太道	huī níng chí guǎng tài dào	10
@@ -331429,7 +331416,7 @@ sort: by_weight
 南山文化中心	nán shān wén huà zhōng xīn	10
 南山文体中心	nán shān wén tǐ zhōng xīn	10
 南设得兰群岛	nán shè dé lán qún dǎo	10
-男生贾里全传	nán shēng jiǎ lǐ quán chuán	10
+男生贾里全传	nán shēng jiǎ lǐ quán zhuàn	10
 男生追求女生	nán shēng zhuī qiú nǚ shēng	10
 男士短袖衬衫	nán shì duǎn xiù chèn shān	10
 男士服装搭配	nán shì fú zhuāng dā pèi	10
@@ -334580,6 +334567,7 @@ sort: by_weight
 偏重亚硫酸钾	piān zhòng yà liú suān jiǎ	10
 偏重亚硫酸钠	piān zhòng yà liú suān nà	10
 偏最小二乘法	piān zuì xiǎo èr chéng fǎ	10
+朴宝剑的粉丝	piáo bǎo jiàn de fěn sī	10
 漂泊的穿山甲	piāo bó de chuān shān jiǎ	10
 漂泊的荷兰人	piāo bó de hé lán rén	10
 飘带尾霸鹟属	piāo dài wěi bà wēng shǔ	10
@@ -335129,7 +335117,6 @@ sort: by_weight
 剖腹产的产妇	pōu fù chǎn de chǎn fù	10
 剖腹产的妈妈	pōu fù chǎn de mā ma	10
 浦安铁筋家族	pǔ ān tiě jīn jiā zú	10
-朴宝剑的粉丝	pǔ bǎo jiàn de fěn sī	10
 普遍功利主义	pǔ biàn gōng lì zhǔ yì	10
 普查数据质量	pǔ chá shù jù zhì liàng	10
 葡齿褶囊海鲶	pú chǐ zhě náng hǎi nián	10
@@ -337812,8 +337799,8 @@ sort: by_weight
 清代乾隆年间	qīng dài qián lóng nián jiān	10
 清代行政区划	qīng dài xíng zhèng qū huà	10
 清代学术概论	qīng dài xué shù gài lùn	10
-清代学者像传	qīng dài xué zhě xiàng chuán	10
-清代学者象传	qīng dài xué zhě xiàng chuán	10
+清代学者像传	qīng dài xué zhě xiàng zhuàn	10
+清代学者象传	qīng dài xué zhě xiàng zhuàn	10
 清代伊斯兰教	qīng dài yī sī lán jiào	10
 清代职官年表	qīng dài zhí guān nián biǎo	10
 清淡容易消化	qīng dàn róng yì xiāo huà	10
@@ -342332,9 +342319,9 @@ sort: by_weight
 三国演义情节	sān guó yǎn yì qíng jié	10
 三国演义系列	sān guó yǎn yì xì liè	10
 三国遗址公园	sān guó yí zhǐ gōng yuán	10
-三国英雄志传	sān guó yīng xióng zhì chuán	10
-三国志姜维传	sān guó zhì jiāng wéi chuán	10
-三国志孔明传	sān guó zhì kǒng míng chuán	10
+三国英雄志传	sān guó yīng xióng zhì zhuàn	10
+三国志姜维传	sān guó zhì jiāng wéi zhuàn	10
+三国志孔明传	sān guó zhì kǒng míng zhuàn	10
 三国志赵云传	sān guó zhì zhào yún zhuàn	10
 三国轴心条约	sān guó zhóu xīn tiáo yuē	10
 三国轴心协定	sān guó zhóu xīn xié dìng	10
@@ -343085,7 +343072,7 @@ sort: by_weight
 珊瑚实验小学	shān hú shí yàn xiǎo xué	10
 珊瑚鰕虎鱼属	shān hú xiā hǔ yú shǔ	10
 闪辉沸霞斜岩	shǎn huī fèi xiá xié yán	10
-山脊赛车系列	shān jí sài chē xì liè	10
+山脊赛车系列	shān jǐ sài chē xì liè	10
 闪击延安计划	shǎn jī yán ān jì huà	10
 山家空军基地	shān jiā kōng jūn jī dì	10
 山间之四时也	shān jiān zhī sì shí yě	10
@@ -349048,7 +349035,7 @@ sort: by_weight
 史普林菲尔德	shǐ pǔ lín fēi ěr dé	10
 施普林格集团	shī pǔ lín gé jí tuán	10
 史普尼克一号	shǐ pǔ ní kè yī hào	10
-十七史百将传	shí qī shǐ bǎi jiāng chuán	10
+十七史百将传	shí qī shǐ bǎi jiāng zhuàn	10
 石器时代女王	shí qì shí dài nǚ wáng	10
 石器时代文化	shí qì shí dài wén huà	10
 石器时代遗址	shí qì shí dài yí zhǐ	10
@@ -349397,8 +349384,8 @@ sort: by_weight
 石头希迁禅师	shí tou xī qiān chán shī	10
 市投资促进局	shì tóu zī cù jìn jú	10
 市土地管理局	shì tǔ dì guǎn lǐ jú	10
-使徒行传章节	shǐ tú xíng chuán zhāng jié	10
 使徒行者系列	shǐ tú xíng zhě xì liè	10
+使徒行传章节	shǐ tú xíng zhuàn zhāng jié	10
 史托波伏条约	shǐ tuō bō fú tiáo yuē	10
 史托考夫斯基	shǐ tuō kǎo fū sī jī	10
 史托可夫斯基	shǐ tuō kě fū sī jī	10
@@ -352212,7 +352199,7 @@ sort: by_weight
 说说就可以的	shuō shuō jiù kě yǐ de	10
 说说什么样的	shuō shuō shén me yàng de	10
 硕思闪客精灵	shuò sī shǎn kè jīng líng	10
-说唐演义全传	shuō táng yǎn yì quán chuán	10
+说唐演义全传	shuō táng yǎn yì quán zhuàn	10
 说文解字诂林	shuō wén jiě zì gǔ lín	10
 说我是一般人	shuō wǒ shì yì bān rén	10
 说一句是一句	shuō yí jù shì yí jù	10
@@ -353663,7 +353650,7 @@ sort: by_weight
 随手乱扔垃圾	suí shǒu luàn rēng lā jī	10
 随随便便成功	suí suí biàn biàn chéng gōng	10
 随随便便可以	suí suí biàn biàn kě yǐ	10
-隋唐两朝志传	suí táng liǎng cháo zhì chuán	10
+隋唐两朝志传	suí táng liǎng cháo zhì zhuàn	10
 隋唐十八好汉	suí táng shí bā hǎo hàn	10
 隋唐五代时期	suí táng wǔ dài shí qī	10
 遂西高速公路	suì xī gāo sù gōng lù	10
@@ -355916,7 +355903,7 @@ sort: by_weight
 体育科学学院	tǐ yù kē xué xué yuàn	10
 体育控股公司	tǐ yù kòng gǔ gōng sī	10
 体育老师教的	tǐ yù lǎo shī jiāo de	10
-体育老师笑传	tǐ yù lǎo shī xiào chuán	10
+体育老师笑传	tǐ yù lǎo shī xiào zhuàn	10
 体育旅游产业	tǐ yù lǚ yóu chǎn yè	10
 体育强国建设	tǐ yù qiáng guó jiàn shè	10
 体育赛事活动	tǐ yù sài shì huó dòng	10
@@ -356433,7 +356420,7 @@ sort: by_weight
 天通苑南街道	tiān tōng yuàn nán jiē dào	10
 天童庄车辆段	tiān tóng zhuāng chē liàng duàn	10
 天外魔境系列	tiān wài mó jìng xì liè	10
-天外魔境真传	tiān wài mó jìng zhēn chuán	10
+天外魔境真传	tiān wài mó jìng zhēn zhuàn	10
 天旺车辆基地	tiān wàng chē liàng jī dì	10
 天王星的卫星	tiān wáng xīng de wèi xīng	10
 天为被地为床	tiān wéi bèi dì wéi chuáng	10
@@ -359440,7 +359427,7 @@ sort: by_weight
 网纹紫瓶子草	wǎng wén zǐ píng zi cǎo	10
 网纹鬃毛石鳖	wǎng wén zōng máo shí biē	10
 亡我之心不死	wáng wǒ zhī xīn bù sǐ	10
-往五天竺国传	wǎng wǔ tiān zhú guó chuán	10
+往五天竺国传	wǎng wǔ tiān zhú guó zhuàn	10
 王羲之的书法	wáng xī zhī de shū fǎ	10
 网下配售股票	wǎng xià pèi shòu gǔ piào	10
 汪先森不吃鱼	wāng xiān sēn bù chī yú	10
@@ -362722,7 +362709,7 @@ sort: by_weight
 五维正多胞体	wǔ wéi zhèng duō bāo tǐ	10
 无纹钩杜父鱼	wú wén gōu dù fù yú	10
 吴文化博物馆	wú wén huà bó wù guǎn	10
-武文世王公传	wǔ wén shì wáng gōng chuán	10
+武文世王公传	wǔ wén shì wáng gōng zhuàn	10
 五五分的身材	wǔ wǔ fēn de shēn cái	10
 物物交换经济	wù wù jiāo huàn jīng jì	10
 舞武器舞乱伎	wǔ wǔ qì wǔ luàn jì	10
@@ -384320,7 +384307,7 @@ sort: by_weight
 中医康复保健	zhōng yī kāng fù bǎo jiàn	10
 中医临床基础	zhōng yī lín chuáng jī chǔ	10
 中医内科专业	zhōng yī nèi kē zhuān yè	10
-忠义水浒全传	zhōng yì shuǐ hǔ quán chuán	10
+忠义水浒全传	zhōng yì shuǐ hǔ quán zhuàn	10
 中医四大经典	zhōng yī sì dà jīng diǎn	10
 中医特色疗法	zhōng yī tè sè liáo fǎ	10
 中医特色治疗	zhōng yī tè sè zhì liáo	10
@@ -392310,7 +392297,7 @@ sort: by_weight
 成功属于奋斗者	chéng gōng shǔ yú fèn dòu zhě	10
 城关镇初级中学	chéng guān zhèn chū jí zhōng xué	10
 城关镇中心小学	chéng guān zhèn zhōng xīn xiǎo xué	10
-程郭董刘蒋刘传	chéng guō dǒng liú jiǎng liú chuán	10
+程郭董刘蒋刘传	chéng guō dǒng liú jiǎng liú zhuàn	10
 橙褐圆盾介壳虫	chéng hè yuán dùn jiè ké chóng	10
 橙红长眼寄居蟹	chéng hóng zhǎng yǎn jì jū xiè	10
 成化斗彩鸡缸杯	chéng huà dòu cǎi jī gāng bēi	10
@@ -392812,7 +392799,7 @@ sort: by_weight
 穿越之清冷公子	chuān yuè zhī qīng lěng gōng zǐ	10
 穿越之若轩格格	chuān yuè zhī ruò xuān gé gé	10
 穿越之我非侬妻	chuān yuè zhī wǒ fēi nóng qī	10
-穿越之武林怪传	chuān yuè zhī wǔ lín guài chuán	10
+穿越之武林怪传	chuān yuè zhī wǔ lín guài zhuàn	10
 穿越之雪影蝶依	chuān yuè zhī xuě yǐng dié yī	10
 船长与船共存亡	chuán zhǎng yǔ chuán gòng cún wáng	10
 穿着白色的裙子	chuān zhe bái sè de qún zi	10
@@ -393018,7 +393005,7 @@ sort: by_weight
 此夕羁人独向隅	cǐ xī jī rén dú xiàng yú	10
 此系身前身后事	cǐ xì shēn qián shēn hòu shì	10
 此消息一经爆出	cǐ xiāo xi yì jīng bào chū	10
-磁信号安全传输	cí xìn hào ān quán chuán shū	10
+磁信号安全传输	cí xìn hào ān quán zhuàn shū	10
 此一时非彼一时	cǐ yì shí fēi bǐ yì shí	10
 此真少卿所亲见	cǐ zhēn shǎo qīng suǒ qīn jiàn	10
 此之谓失其本心	cǐ zhī wèi shī qí běn xīn	10
@@ -394634,7 +394621,7 @@ sort: by_weight
 动力蓄电池回收	dòng lì xù diàn chí huí shōu	10
 动力与机械学院	dòng lì yǔ jī xiè xué yuàn	10
 冻脸有痕皆是血	dòng liǎn yǒu hén jiē shì xuè	10
-董刘马陈董吕传	dǒng liú mǎ chén dǒng lǚ chuán	10
+董刘马陈董吕传	dǒng liú mǎ chén dǒng lǚ zhuàn	10
 动脉闭塞性疾病	dòng mài bì sè xìng jí bìng	10
 动脉瘤性骨囊肿	dòng mài liú xìng gǔ náng zhǒng	10
 动脉瘤样骨囊肿	dòng mài liú yàng gǔ náng zhǒng	10
@@ -400634,7 +400621,7 @@ sort: by_weight
 人造草坪足球场	rén zào cǎo píng zú qiú chǎng	10
 人造蛋白质纤维	rén zào dàn bái zhì xiān wéi	10
 人造放射性核素	rén zào fàng shè xìng hé sù	10
-忍者龙剑传系列	rěn zhě lóng jiàn chuán xì liè	10
+忍者龙剑传系列	rěn zhě lóng jiàn zhuàn xì liè	10
 忍者蛙与双截龙	rěn zhě wā yǔ shuāng jié lóng	10
 仁者先难而后获	rén zhě xiān nán ér hòu huò	10
 认真的男人最帅	rèn zhēn de nán rén zuì shuài	10
@@ -401224,7 +401211,7 @@ sort: by_weight
 提醒广大驾驶人	tí xǐng guǎng dà jià shǐ rén	10
 体重秤上的数字	tǐ zhòng chèng shàng de shù zì	10
 天地八阳神咒经	tiān dì bā yáng shén zhòu jīng	10
-天乩之白蛇传说	tiān jī zhī bái shé chuán shuō	10
+天乩之白蛇传说	tiān jī zhī bái shé zhuàn shuō	10
 天津利中硫酸厂	tiān jīn lì zhōng liú suān chǎng	10
 天然酚抗氧化剂	tiān rán fēn kàng yǎng huà jì	10
 天生臭脸综合症	tiān shēng chòu liǎn zōng hé zhèng	10
