@@ -1,12 +1,6 @@
 # rime dictionary
-# encoding: utf-8
-#https://github.com/amzxyz/RIME-LMDG
 # ------- 联想词库5字及以上长词-------
----
 name: suggestion
-version: "LTS"
-sort: by_weight
-...
 阿巴科群岛	ā bā kē qún dǎo	10
 阿贝尔定理	ā bèi ěr dìng lǐ	10
 阿贝尔群论	ā bèi ěr qún lùn	10
@@ -80,7 +74,6 @@ sort: by_weight
 阿克顿定律	ā kè dùn dìng lǜ	10
 阿克寄蝇属	ā kè jì yíng shǔ	10
 阿克猎龙属	ā kè liè lóng shǔ	10
-阿克苏地区	ā kè sū dì qū	10
 阿克西鸟科	ā kè xī niǎo kē	10
 阿克西鸟属	ā kè xī niǎo shǔ	10
 阿肯色龙属	ā kěn sè lóng shǔ	10
@@ -102,7 +95,6 @@ sort: by_weight
 阿莱斯效应	ā lái sī xiào yìng	10
 阿兰达甲鱼	ā lán dá jiǎ yú	10
 阿勒颇战役	ā lè pō zhàn yì	10
-阿勒泰地区	ā lè tài dì qū	10
 阿勒泰公司	ā lè tài gōng sī	10
 阿累尼乌斯	ā lèi ní wū sī	10
 阿里彩蝇属	ā lǐ cǎi yíng shǔ	10
@@ -3541,7 +3533,6 @@ sort: by_weight
 把眼泪擦干	bǎ yǎn lèi cā gān	10
 巴彦淖尔盟	bā yàn nào ěr méng	10
 巴彦淖尔人	bā yàn nào ěr rén	10
-巴彦淖尔市	bā yàn nào ěr shì	10
 巴彦淖尔站	bā yàn nào ěr zhàn	10
 巴彦淖尔镇	bā yàn nào ěr zhèn	10
 靶洋葱球虫	bǎ yáng cōng qiú chóng	10
@@ -24626,7 +24617,6 @@ sort: by_weight
 尘埃落定了	chén āi luò dìng le	10
 尘埃落定时	chén āi luò dìng shí	10
 尘暗旧貂裘	chén àn jiù diāo qiú	10
-陈巴尔虎旗	chén bā ěr hǔ qí	10
 陈宝琛故居	chén bǎo chēn gù jū	10
 陈宝国老师	chén bǎo guó lǎo shī	10
 陈宝生部长	chén bǎo shēng bù zhǎng	10
@@ -49336,12 +49326,10 @@ sort: by_weight
 额尔登特市	é ěr dēng tè shì	10
 鄂尔多斯的	è ěr duō sī de	10
 鄂尔多斯人	è ěr duō sī rén	10
-鄂尔多斯市	è ěr duō sī shì	10
 鄂尔多斯站	è ěr duō sī zhàn	10
 额尔格图镇	é ěr gé tú zhèn	10
 额尔古纳河	é ěr gǔ nà hé	10
 额尔古纳旗	é ěr gǔ nà qí	10
-额尔古纳市	é ěr gǔ nà shì	10
 鄂尔浑河谷	è ěr hún hé gǔ	10
 额尔金伯爵	é ěr jīn bó jué	10
 厄尔锯鳞鱼	è ěr jù lín yú	10
@@ -49580,7 +49568,6 @@ sort: by_weight
 鄂托克龙属	è tuō kè lóng shǔ	10
 鄂托克鸟属	è tuō kè niǎo shǔ	10
 鄂托克旗人	è tuō kè qí rén	10
-鄂托克前旗	è tuō kè qián qí	10
 鹅脱氧胆酸	é tuō yǎng dǎn suān	10
 额外的帮助	é wài de bāng zhù	10
 额外的保护	é wài de bǎo hù	10
@@ -50400,7 +50387,6 @@ sort: by_weight
 二里岗遗址	èr lǐ gǎng yí zhǐ	10
 二里头文化	èr lǐ tou wén huà	10
 二里头遗址	èr lǐ tou yí zhǐ	10
-二连浩特市	èr lián hào tè shì	10
 二连巨盗龙	èr lián jù dào lóng	10
 饵料的味型	ěr liào de wèi xíng	10
 饵料的状态	ěr liào de zhuàng tài	10
@@ -71668,7 +71654,6 @@ sort: by_weight
 贯彻和执行	guàn chè hé zhí xíng	10
 贯彻落实好	guàn chè luò shí hǎo	10
 贯彻执行题	guàn chè zhí xíng tí	10
-管城回族区	guǎn chéng huí zú qū	10
 莞城美术馆	guǎn chéng měi shù guǎn	10
 管吃不管饱	guǎn chī bù guǎn bǎo	10
 贯穿全过程	guàn chuān quán guò chéng	10
@@ -79637,7 +79622,6 @@ sort: by_weight
 合不合得来	hé bù hé de lái	10
 合不合适啊	hé bù hé shì a	10
 褐布卷管螺	hè bù juǎn guǎn luó	10
-和布克赛尔	hé bù kè sài ěr	10
 合步楼公司	hé bù lóu gōng sī	10
 何不食蛋糕	hé bù shí dàn gāo	10
 何不食肉糜	hé bù shí ròu mí	10
@@ -84905,7 +84889,6 @@ sort: by_weight
 呼和浩特东	hū hé hào tè dōng	10
 呼和浩特局	hū hé hào tè jú	10
 呼和浩特人	hū hé hào tè rén	10
-呼和浩特市	hū hé hào tè shì	10
 呼和浩特站	hū hé hào tè zhàn	10
 呼和木独镇	hū hé mù dú zhèn	10
 呼和诺尔镇	hū hé nuò ěr zhèn	10
@@ -85320,7 +85303,6 @@ sort: by_weight
 呼伦贝尔的	hū lún bèi ěr de	10
 呼伦贝尔盟	hū lún bèi ěr méng	10
 呼伦贝尔人	hū lún bèi ěr rén	10
-呼伦贝尔市	hū lún bèi ěr shì	10
 胡萝卜半根	hú luó bo bàn gēn	10
 胡萝卜菜肴	hú luó bo cài yáo	10
 胡萝卜餐包	hú luó bo cān bāo	10
@@ -114093,7 +114075,6 @@ sort: by_weight
 可靠性增长	kě kào xìng zēng zhǎng	10
 可靠性指标	kě kào xìng zhǐ biāo	10
 可可百合属	kě kě bǎi hé shǔ	10
-可克达拉市	kě kě dá lā shì	10
 苛刻的条件	kē kè de tiáo jiàn	10
 苛刻的要求	kē kè de yāo qiú	10
 客客气气的	kè kè qì qì de	10
@@ -114141,7 +114122,6 @@ sort: by_weight
 克拉伦斯岛	kè lā lún sī dǎo	10
 克拉罗钩鲶	kè lā luó gōu nián	10
 克拉玛公式	kè lā mǎ gōng shì	10
-克拉玛依市	kè lā mǎ yī shì	10
 克拉玛原理	kè lā mǎ yuán lǐ	10
 克拉默法则	kè lā mò fǎ zé	10
 克拉爬鳅属	kè lā pá qiū shǔ	10
@@ -151042,7 +151022,6 @@ sort: by_weight
 齐齐哈尔路	qí qí hā ěr lù	10
 齐齐哈尔南	qí qí hā ěr nán	10
 齐齐哈尔人	qí qí hā ěr rén	10
-齐齐哈尔市	qí qí hā ěr shì	10
 齐齐哈尔站	qí qí hā ěr zhàn	10
 旗鳍棘花鮨	qí qí jí huā yì	10
 旗鳍棘鳞鱼	qí qí jí lín yú	10
@@ -152560,7 +152539,6 @@ sort: by_weight
 牵挂你的我	qiān guà nǐ de wǒ	10
 牵挂一个人	qiān guà yí gè rén	10
 黔桂溪蟹属	qián guì xī xiè shǔ	10
-前郭尔罗斯	qián guō ěr luó sī	10
 前国防部长	qián guó fáng bù zhǎng	10
 前国会议员	qián guó huì yì yuán	10
 牵过你的手	qiān guò nǐ de shǒu	10
@@ -171120,7 +171098,6 @@ sort: by_weight
 神农架地区	shén nóng jià dì qū	10
 神农架机场	shén nóng jià jī chǎng	10
 神农架景区	shén nóng jià jǐng qū	10
-神农架林区	shén nóng jià lín qū	10
 神农架旅游	shén nóng jià lǚ yóu	10
 神农架野人	shén nóng jià yě rén	10
 神女底鼬鳚	shén nǚ dǐ yòu wèi	10
@@ -184837,7 +184814,6 @@ sort: by_weight
 顺峰山公园	shùn fēng shān gōng yuán	10
 顺峰山牌坊	shùn fēng shān pái fāng	10
 顺河高架路	shùn hé gāo jià lù	10
-顺河回族区	shùn hé huí zú qū	10
 顺河街街道	shùn hé jiē jiē dào	10
 顺化古迹群	shùn huà gǔ jì qún	10
 舜华路北口	shùn huá lù běi kǒu	10
@@ -197377,9 +197353,7 @@ sort: by_weight
 涂膜耐水性	tú mó nài shuǐ xìng	10
 涂抹式面膜	tú mǒ shì miàn mó	10
 土默特万户	tǔ mò tè wàn hù	10
-土默特右旗	tǔ mò tè yòu qí	10
 土默特中学	tǔ mò tè zhōng xué	10
-土默特左旗	tǔ mò tè zuǒ qí	10
 土木堡之败	tǔ mù bǎo zhī bài	10
 土木堡之变	tǔ mù bǎo zhī biàn	10
 土木堡之役	tǔ mù bǎo zhī yì	10
@@ -208549,7 +208523,6 @@ sort: by_weight
 武大郎烧饼	wǔ dà láng shāo bǐng	10
 五大连池湖	wǔ dà lián chí hú	10
 五大连池人	wǔ dà lián chí rén	10
-五大连池市	wǔ dà lián chí shì	10
 五大连池站	wǔ dà lián chí zhàn	10
 五大连池镇	wǔ dà lián chí zhèn	10
 五大牧首区	wǔ dà mù shǒu qū	10
@@ -209424,7 +209397,6 @@ sort: by_weight
 勿拉士峇沙	wù lā shì bā shā	10
 乌拉特龙属	wū lā tè lóng shǔ	10
 无赖布鲁斯	wú lài bù lǔ sī	10
-乌兰察布市	wū lán chá bù shì	10
 兀兰地铁站	wù lán dì tiě zhàn	10
 乌兰欧雅鱼	wū lán ōu yǎ yú	10
 五郎八卦棍	wǔ láng bā guà gùn	10
@@ -209743,7 +209715,6 @@ sort: by_weight
 乌鲁木齐七	wū lǔ mù qí qī	10
 乌鲁木齐去	wū lǔ mù qí qù	10
 乌鲁木齐人	wū lǔ mù qí rén	10
-乌鲁木齐市	wū lǔ mù qí shì	10
 吾鲁思不花	wú lǔ sī bù huā	10
 兀鲁思不花	wù lǔ sī bù huā	10
 五路停车场	wǔ lù tíng chē chǎng	10
@@ -212683,9 +212654,7 @@ sort: by_weight
 席琳堡条约	xí lín bǎo tiáo yuē	10
 细鳞肥脂鲤	xì lín féi zhī lǐ	10
 细鳞光鳃鱼	xì lín guāng sāi yú	10
-锡林郭勒盟	xī lín guō lè méng	10
 锡林郭勒人	xī lín guō lè rén	10
-锡林浩特市	xī lín hào tè shì	10
 锡林浩特站	xī lín hào tè zhàn	10
 锡林河水库	xī lín hé shuǐ kù	10
 细鳞红腹鱼	xì lín hóng fù yú	10
@@ -213729,7 +213698,6 @@ sort: by_weight
 西藏轴脉蕨	xī zàng zhóu mài jué	10
 西藏紫柄蕨	xī zàng zǐ bǐng jué	10
 西藏紫锤草	xī zàng zǐ chuí cǎo	10
-西藏自治区	xī zàng zì zhì qū	10
 洗澡的地方	xǐ zǎo de dì fāng	10
 洗澡的时间	xǐ zǎo de shí jiān	10
 洗澡过程中	xǐ zǎo guò chéng zhōng	10
@@ -216897,7 +216865,6 @@ sort: by_weight
 香格里拉号	xiāng gé lǐ lā hào	10
 香格里拉黑	xiāng gé lǐ lā hēi	10
 香格里拉人	xiāng gé lǐ lā rén	10
-香格里拉市	xiāng gé lǐ lā shì	10
 香格里拉站	xiāng gé lǐ lā zhàn	10
 香格里拉镇	xiāng gé lǐ lā zhèn	10
 香格纳画廊	xiāng gé nà huà láng	10
@@ -242487,7 +242454,6 @@ sort: by_weight
 优密欧大学	yōu mì ōu dà xué	10
 疣面关公蟹	yóu miàn guān gōng xiè	10
 油面筋塞肉	yóu miàn jīn sāi ròu	10
-攸面栲栳栳	yōu miàn kǎo lǎo lǎo	10
 莜面栲栳栳	yóu miàn kǎo lǎo lǎo	10
 有苗不愁长	yǒu miáo bù chóu cháng	10
 有敏感信息	yǒu mǐn gǎn xìn xī	10
@@ -273264,7 +273230,6 @@ sort: by_weight
 白缘拟金眼鲷	bái yuán nǐ jīn yǎn diāo	10
 白岳山阿斯达	bái yuè shān ē sī dá	10
 白云大道北站	bái yún dà dào běi zhàn	10
-白云鄂博矿区	bái yún è bó kuàng qū	10
 白云鄂博铁矿	bái yún è bó tiě kuàng	10
 白云国际机场	bái yún guó jì jī chǎng	10
 白云机场北站	bái yún jī chǎng běi zhàn	10
@@ -285625,7 +285590,6 @@ sort: by_weight
 大新金融中心	dà xīn jīn róng zhōng xīn	10
 打心眼里喜欢	dǎ xīn yǎn lǐ xǐ huān	10
 大新银行集团	dà xīn yín háng jí tuán	10
-大兴安岭地区	dà xīng ān lǐng dì qū	10
 大兴安岭火灾	dà xīng ān lǐng huǒ zāi	10
 大兴安岭山脉	dà xīng ān lǐng shān mài	10
 大型百货公司	dà xíng bǎi huò gōng sī	10
@@ -331689,7 +331653,6 @@ sort: by_weight
 内蒙古通辽市	nèi méng gǔ tōng liáo shì	10
 内蒙古乌海市	nèi méng gǔ wū hǎi shì	10
 内蒙古兴安盟	nèi méng gǔ xīng ān méng	10
-内蒙古自治区	nèi méng gǔ zì zhì qū	10
 内蒙呼和浩特	nèi méng hū hé hào tè	10
 内秘书院学士	nèi mì shū yuàn xué shì	10
 内幕交易行为	nèi mù jiāo yì xíng wéi	10
@@ -375161,7 +375124,6 @@ sort: by_weight
 应收清单明细	yīng shōu qīng dān míng xì	10
 营收同比增长	yíng shōu tóng bǐ zēng zhǎng	10
 应收未收利息	yīng shōu wèi shōu lì xī	10
-鹰手营子矿区	yīng shǒu yīng zǐ kuàng qū	10
 应收账款保理	yīng shōu zhàng kuǎn bǎo lǐ	10
 应收账款抵押	yīng shōu zhàng kuǎn dǐ yā	10
 应收账款管理	yīng shōu zhàng kuǎn guǎn lǐ	10
@@ -391929,7 +391891,6 @@ sort: by_weight
 常规心电图检查	cháng guī xīn diàn tú jiǎn chá	10
 长花九头狮子草	cháng huā jiǔ tóu shī zi cǎo	10
 昌吉赣客运专线	chāng jí gàn kè yùn zhuān xiàn	10
-昌吉回族自治州	chāng jí huí zú zì zhì zhōu	10
 昌吉市军户农场	chāng jí shì jūn hù nóng chǎng	10
 长脊玉米卷管螺	cháng jí yù mǐ juǎn guǎn luó	10
 常见故障及解决	cháng jiàn gù zhàng jí jiě jué	10
@@ -403439,7 +403400,6 @@ sort: by_weight
 迅雷不及掩耳盗铃	xùn léi bù jí yǎn ěr dào líng	10
 迅雷不及掩耳之势	xùn léi bù jí yǎn ěr zhī shì	10
 雅鲁藏布江大峡谷	yǎ lǔ zàng bù jiāng dà xiá gǔ	10
-延边朝鲜族自治州	yán biān cháo xiǎn zú zì zhì zhōu	10
 眼高手低好高骛远	yǎn gāo shǒu dī hào gāo wù yuǎn	10
 眼见为实耳听为虚	yǎn jiàn wéi shí ěr tīng wéi xū	10
 眼前一亮醍醐灌顶	yǎn qián yí liàng tí hú guàn dǐng	10
@@ -403596,7 +403556,6 @@ sort: by_weight
 啤酒花矮化类病毒属	pí jiǔ huā ǎi huà lèi bìng dú shǔ	10
 贫穷限制了我的想象	pín qióng xiàn zhì le wǒ de xiǎng xiàng	10
 苹果北美疤类病毒属	píng guǒ běi měi bā lèi bìng dú shǔ	10
-琼中黎族苗族自治县	qióng zhōng lí zú miáo zú zì zhì xiàn	10
 弱水三千只取一瓢饮	ruò shuǐ sān qiān zhī qǔ yì piáo yǐn	10
 双分子亲核取代反应	shuāng fēn zǐ qīn hé qǔ dài fǎn yìng	10
 斯塔堪布瑞德氏菌属	sī tǎ kān bù ruì dé shì jūn shǔ	10
@@ -403651,7 +403610,6 @@ sort: by_weight
 邻苯二甲酰基磺胺噻唑	lín běn èr jiǎ xiān jī huáng àn sāi zuò	10
 麦克斯韦玻尔兹曼分布	mài kè sī wéi bō ěr zī màn fēn bù	10
 南方菜豆花叶病病毒属	nán fāng cài dòu huā yè bìng bìng dú shǔ	10
-黔江土家族苗族自治县	qián jiāng tǔ jiā zú miáo zú zì zhì xiàn	10
 人生不如意事十之八九	rén shēng bù rú yì shì shí zhī bā jiǔ	10
 人事服务及职员关系科	rén shì fú wù jí zhí yuán guān xì kē	10
 三十年河东三十年河西	sān shí nián hé dōng sān shí nián hé xī	10
