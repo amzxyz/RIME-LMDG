@@ -1,6 +1,12 @@
 # rime dictionary
+# encoding: utf-8
+#https://github.com/amzxyz/RIME-LMDG
 # ------- 联想词库5字及以上长词-------
+---
 name: suggestion
+version: "LTS"
+sort: by_weight
+...
 阿巴科群岛	ā bā kē qún dǎo	10
 阿贝尔定理	ā bèi ěr dìng lǐ	10
 阿贝尔群论	ā bèi ěr qún lùn	10
@@ -73845,8 +73851,8 @@ name: suggestion
 硅谷群瞎传	guī gǔ qún xiā zhuàn	10
 硅谷商学院	guī gǔ shāng xué yuàn	10
 鬼故事作家	guǐ gù shì zuò jiā	10
-鬼谷子下山	guǐ gǔ zi xià shān	10
-鬼谷子先生	guǐ gǔ zi xiān shēng	10
+鬼谷子下山	guǐ gǔ zǐ xià shān	10
+鬼谷子先生	guǐ gǔ zǐ xiān shēng	10
 鬼怪战斗机	guǐ guài zhàn dòu jī	10
 桂管观察使	guì guǎn guān chá shǐ	10
 贵广客专线	guì guǎng kè zhuān xiàn	10
@@ -137072,7 +137078,7 @@ name: suggestion
 某社交平台	mǒu shè jiāo píng tái	10
 谋生的工具	móu shēng de gōng jù	10
 谋生的手段	móu shēng de shǒu duàn	10
-谋圣鬼谷子	móu shèng guǐ gǔ zi	10
+谋圣鬼谷子	móu shèng guǐ gǔ zǐ	10
 缪氏暗光鱼	móu shì àn guāng yú	10
 缪氏飞虱属	móu shì fēi shī shǔ	10
 某市公安局	mǒu shì gōng ān jú	10
@@ -401172,7 +401178,7 @@ name: suggestion
 提醒广大驾驶人	tí xǐng guǎng dà jià shǐ rén	10
 体重秤上的数字	tǐ zhòng chèng shàng de shù zì	10
 天地八阳神咒经	tiān dì bā yáng shén zhòu jīng	10
-天乩之白蛇传说	tiān jī zhī bái shé zhuàn shuō	10
+天乩之白蛇传说	tiān jī zhī bái shé chuán shuō	10
 天津利中硫酸厂	tiān jīn lì zhōng liú suān chǎng	10
 天然酚抗氧化剂	tiān rán fēn kàng yǎng huà jì	10
 天生臭脸综合症	tiān shēng chòu liǎn zōng hé zhèng	10
