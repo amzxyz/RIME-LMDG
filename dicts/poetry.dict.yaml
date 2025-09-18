@@ -14513,13 +14513,13 @@ sort: by_weight
 抱瑟不吹竽	bào sè bù chuī yú	6
 宝瑟常馀怨	bǎo sè cháng yú yuàn	6
 宝瑟愁应商	bǎo sè chóu yīng shāng	6
-宝瑟调中妇	bǎo sè diào zhōng fù	6
 宝瑟拂尘匣	bǎo sè fú chén xiá	6
 宝瑟付齐娥	bǎo sè fù qí é	6
 宝瑟和琴韵	bǎo sè hé qín yùn	6
 宝瑟和神农	bǎo sè hé shén nóng	6
 宝瑟连宵怨	bǎo sè lián xiāo yuàn	6
 宝瑟凝凉氛	bǎo sè níng liáng fēn	6
+宝瑟调中妇	bǎo sè tiáo zhōng fù	6
 宝瑟无声怨	bǎo sè wú shēng yuàn	6
 宝瑟有馀声	bǎo sè yǒu yú shēng	6
 宝瑟韵清商	bǎo sè yùn qīng shāng	6
@@ -164968,7 +164968,7 @@ sort: by_weight
 谓天果爱民	wèi tiān guǒ ài mín	6
 为天启玉齿	wéi tiān qǐ yù chǐ	6
 谓天无以清	wèi tiān wú yǐ qīng	6
-为天下师傅	wèi tiān xià shī fù	6
+为天下师傅	wèi tiān xià shī fu	6
 为天下笑者	wèi tiān xià xiào zhě	6
 唯添雪白须	wéi tiān xuě bái xū	6
 惟天有设险	wéi tiān yǒu shè xiǎn	6
@@ -176365,10 +176365,10 @@ sort: by_weight
 弦吟玉柱品	xián yín yù zhù pǐn	6
 贤尹正趋府	xián yǐn zhèng qū fǔ	6
 闲吟昼闭门	xián yín zhòu bì mén	6
-咸英调正乐	xián yīng diào zhèng lè	6
 仙影凤凰飞	xiān yǐng fèng huáng fēi	6
 先应去蟊贼	xiān yīng qù máo zéi	6
 仙迎太子归	xiān yíng tài zǐ guī	6
+咸英调正乐	xián yīng tiáo zhèng lè	6
 闲慵两有馀	xián yōng liǎng yǒu yú	6
 闲咏疏篁近	xián yǒng shū huáng jìn	6
 憸庸已猜忌	xiān yōng yǐ cāi jì	6
@@ -214039,12 +214039,12 @@ sort: by_weight
 征战无已时	zhēng zhàn wú yǐ shí	6
 蒸瘴热于炉	zhēng zhàng rè yú lú	6
 征棹不可停	zhēng zhào bù kě tíng	6
-征招调中腔	zhēng zhāo diào zhōng qiāng	6
 征棹方悠悠	zhēng zhào fāng yōu yōu	6
 征棹忽复举	zhēng zhào hū fù jǔ	6
 征诏环佩随	zhēng zhào huán pèi suí	6
 征棹遽排比	zhēng zhào jù pái bǐ	6
 征棹三江暮	zhēng zhào sān jiāng mù	6
+征招调中腔	zhēng zhāo tiáo zhōng qiāng	6
 征棹下春流	zhēng zhào xià chūn liú	6
 征棹倚芦洲	zhēng zhào yǐ lú zhōu	6
 正者随弱翁	zhèng zhě suí ruò wēng	6
@@ -245240,7 +245240,6 @@ sort: by_weight
 调砧乱杵思自伤	diào zhēn luàn chǔ sī zì shāng	6
 调筝夜坐灯光里	diào zhēng yè zuò dēng guāng lǐ	6
 调之以自然之命	diào zhī yǐ zì rán zhī mìng	6
-调中幽意起春情	diào zhōng yōu yì qǐ chūn qíng	6
 钓周猎秦安黎元	diào zhōu liè qín ān lí yuán	6
 蝶碍芳丛舞不前	dié ài fāng cóng wǔ bù qián	6
 蝶飞参差花宛转	dié fēi cēn cī huā wǎn zhuǎn	6
@@ -295128,6 +295127,7 @@ sort: by_weight
 蜩与学鸠笑之曰	tiáo yǔ xué jiū xiào zhī yuē	6
 跳枝窜叶树木中	tiào zhī cuàn yè shù mù zhōng	6
 跳踯缘冈马断羁	tiào zhí yuán gāng mǎ duàn jī	6
+调中幽意起春情	tiáo zhōng yōu yì qǐ chūn qíng	6
 跳珠撼玉何铿铮	tiào zhū hàn yù hé kēng zhēng	6
 跳珠椀里绿荷香	tiào zhū wǎn lǐ lǜ hé xiāng	6
 铁骢金面青连钱	tiě cōng jīn miàn qīng lián qián	6
