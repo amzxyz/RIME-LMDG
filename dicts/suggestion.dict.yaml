@@ -15068,7 +15068,7 @@ sort: by_weight
 不哗众取宠	bù huá zhòng qǔ chǒng	10
 不怀好意地	bù huái hǎo yì de	10
 不患得患失	bú huàn dé huàn shī	10
-不换行空格	bú huàn háng kōng gé	10
+不换行空格	bú huàn háng kòng gé	10
 不欢迎你们	bù huān yíng nǐ men	10
 不慌不忙地	bù huāng bù máng de	10
 不会安慰人	bú huì ān wèi rén	10
@@ -124961,7 +124961,7 @@ sort: by_weight
 领孔穿盾虫	lǐng kǒng chuān dùn chóng	10
 领口的设计	lǐng kǒu de shè jì	10
 领口和袖口	lǐng kǒu hé xiù kǒu	10
-零宽度空格	líng kuān dù kōng gé	10
+零宽度空格	líng kuān dù kòng gé	10
 零宽连字符	líng kuān lián zì fú	10
 领款通知书	lǐng kuǎn tōng zhī shū	10
 另矿生菌属	lìng kuàng shēng jūn shǔ	10
@@ -138409,7 +138409,6 @@ sort: by_weight
 那怎么办呢	nà zěn me bàn ne	10
 那怎么办呀	nà zěn me bàn ya	10
 那怎么可能	nà zěn me kě néng	10
-那咤俱伐罗	nà zhà jù fá luó	10
 拿着保温杯	ná zhe bǎo wēn bēi	10
 拿着凳子看	ná zhe dèng zi kàn	10
 拿着放大镜	ná zhe fàng dà jìng	10
@@ -139306,7 +139305,7 @@ sort: by_weight
 男性消费者	nán xìng xiāo fèi zhě	10
 男性性功能	nán xìng xìng gōng néng	10
 男性性器官	nán xìng xìng qì guān	10
-男性型秃发	nán xìng xíng tū fā	10
+男性型秃发	nán xìng xíng tū fà	10
 男性型脱发	nán xìng xíng tuō fà	10
 男性艺术家	nán xìng yì shù jiā	10
 男性音乐家	nán xìng yīn yuè jiā	10
@@ -139595,6 +139594,7 @@ sort: by_weight
 呢我不知道	ne wǒ bù zhī dào	10
 呢我是不是	ne wǒ shì bú shì	10
 哪吒爱傲丙	né zhā ài ào bǐng	10
+哪吒俱伐罗	né zhā jù fá luó	10
 哪吒三太子	né zhā sān tài zǐ	10
 哪吒降妖记	né zhā xiáng yāo jì	10
 哪吒与杨戬	né zhā yǔ yáng jiǎn	10
@@ -167582,6 +167582,7 @@ sort: by_weight
 上几个小时	shàng jǐ gè xiǎo shí	10
 上级检察院	shàng jí jiǎn chá yuàn	10
 上基斯滕山	shàng jī sī téng shān	10
+商机探测器	shāng jī tàn cè qì	10
 上级团组织	shàng jí tuán zǔ zhī	10
 上棘足螳属	shàng jí zú táng shǔ	10
 商家的套路	shāng jiā de tào lù	10
@@ -168791,7 +168792,7 @@ sort: by_weight
 少枝新条鳅	shǎo zhī xīn tiáo qiū	10
 韶州府学宫	sháo zhōu fǔ xué gōng	10
 韶州火车站	sháo zhōu huǒ chē zhàn	10
-少主且慢行	shǎo zhǔ qiě màn xíng	10
+少主且慢行	shào zhǔ qiě màn xíng	10
 少壮南丽鱼	shào zhuàng nán lì yú	10
 少壮天竺鲷	shào zhuàng tiān zhú diāo	10
 少壮鹦竺鲷	shào zhuàng yīng zhú diāo	10
@@ -197296,12 +197297,12 @@ sort: by_weight
 突发的情况	tū fā de qíng kuàng	10
 突发的意外	tū fā de yì wài	10
 突发的状况	tū fā de zhuàng kuàng	10
-秃发利鹿孤	tū fā lì lù gū	10
+秃发利鹿孤	tū fà lì lù gū	10
 突发脑出血	tū fā nǎo chū xiě	10
 突发脑溢血	tū fā nǎo yì xuè	10
 突发情况下	tū fā qíng kuàng xià	10
-秃发树机能	tū fā shù jī néng	10
-秃发思复鞬	tū fā sī fù jiān	10
+秃发树机能	tū fà shù jī néng	10
+秃发思复鞬	tū fà sī fù jiān	10
 突发心脏病	tū fā xīn zàng bìng	10
 突发性耳聋	tū fā xìng ěr lóng	10
 突发性洪水	tū fā xìng hóng shuǐ	10
@@ -227274,6 +227275,7 @@ sort: by_weight
 选配助听器	xuǎn pèi zhù tīng qì	10
 癣皮瘤蛾属	xuǎn pí liú é shǔ	10
 癣皮夜蛾属	xuǎn pí yè é shǔ	10
+选品指南针	xuǎn pǐn zhǐ nán zhēn	10
 玄穹高上帝	xuán qióng gāo shàng dì	10
 选取关键词	xuǎn qǔ guān jiàn cí	10
 选权迭代法	xuǎn quán dié dài fǎ	10
@@ -259490,7 +259492,7 @@ sort: by_weight
 指一条明路	zhǐ yì tiáo míng lù	10
 脂溢性皮炎	zhī yì xìng pí yán	10
 脂溢性湿疹	zhī yì xìng shī zhěn	10
-脂溢性秃发	zhī yì xìng tū fā	10
+脂溢性秃发	zhī yì xìng tū fà	10
 脂溢性脱发	zhī yì xìng tuō fà	10
 指引的方向	zhǐ yǐn de fāng xiàng	10
 直饮净水器	zhí yǐn jìng shuǐ qì	10
@@ -313234,7 +313236,7 @@ sort: by_weight
 兽医寄生虫学	shòu yī jì shēng chóng xué	10
 受疫情的影响	shòu yì qíng de yǐng xiǎng	10
 兽医卫生检验	shòu yī wèi shēng jiǎn yàn	10
-受遗诏辅少主	shòu yí zhào fǔ shǎo zhǔ	10
+受遗诏辅少主	shòu yí zhào fǔ shào zhǔ	10
 兽用生物制品	shòu yòng shēng wù zhì pǐn	10
 守在电视机前	shǒu zài diàn shì jī qián	10
 首张创作专辑	shǒu zhāng chuàng zuò zhuān jí	10
@@ -322680,7 +322682,7 @@ sort: by_weight
 雄光体马陆科	xióng guāng tǐ mǎ lù kē	10
 熊孩子的背后	xióng hái zi de bèi hòu	10
 熊吉单趾鼬鱼	xióng jí dān zhǐ yòu yú	10
-雄激素性秃发	xióng jī sù xìng tū fā	10
+雄激素性秃发	xióng jī sù xìng tū fà	10
 雄激素性脱发	xióng jī sù xìng tuō fà	10
 胸甲准项鳍鲶	xiōng jiǎ zhǔn xiàng qí nián	10
 雄纠纠气昂昂	xióng jiū jiū qì áng áng	10
