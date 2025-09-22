@@ -9568,7 +9568,6 @@ sort: by_weight
 北魏樊素安	běi wèi fán sù ān	10
 被微风吹着	bèi wēi fēng chuī zhe	10
 北魏冯太后	běi wèi féng tài hòu	10
-北伟基河畔	běi wěi jī hé pàn	10
 北魏节闵帝	běi wèi jié mǐn dì	10
 北魏明元帝	běi wèi míng yuán dì	10
 卑微魮脂鲤	bēi wēi pí zhī lǐ	10
@@ -58083,6 +58082,7 @@ sort: by_weight
 风起的时候	fēng qǐ de shí hou	10
 风气的时候	fēng qì de shí hou	10
 缝栖蛤总科	fèng qī há zǒng kē	10
+奉其为圭臬	fèng qí wéi guī niè	10
 风起云飞扬	fēng qǐ yún fēi yáng	10
 枫桥湖街道	fēng qiáo hú jiē dào	10
 凤桥楼十郎	fèng qiáo lóu shí láng	10
@@ -201841,18 +201841,14 @@ sort: by_weight
 未婚女青年	wèi hūn nǚ qīng nián	10
 未婚性行为	wèi hūn xìng xíng wéi	10
 为活动致辞	wéi huó dòng zhì cí	10
-喂鸡百科人	wèi jī bǎi kē rén	10
 尾棘背灯鱼	wěi jí bèi dēng yú	10
 为基本称职	wéi jī běn chèn zhí	10
 为基本单位	wéi jī běn dān wèi	10
-伪基大法好	wěi jī dà fǎ hǎo	10
 微机电系统	wēi jī diàn xì tǒng	10
 魏集盾壳虫	wèi jí dùn ké chóng	10
 微积分定理	wēi jī fēn dìng lǐ	10
 微积分历史	wēi jī fēn lì shǐ	10
-伟基河畔南	wěi jī hé pàn nán	10
 危机和挑战	wēi jī hé tiǎo zhàn	10
-伪基考察团	wěi jī kǎo chá tuán	10
 未及时发现	wèi jí shí fā xiàn	10
 未及时回复	wèi jí shí huí fù	10
 未及时缴纳	wèi jí shí jiǎo nà	10
@@ -201861,7 +201857,6 @@ sort: by_weight
 未及时通知	wèi jí shí tōng zhī	10
 为嵇侍中血	wéi jī shì zhōng xuè	10
 微技术刀具	wēi jì shù dāo jù	10
-伪基维新会	wěi jī wéi xīn huì	10
 味极鲜酱油	wèi jí xiān jiàng yóu	10
 危机小百科	wēi jī xiǎo bǎi kē	10
 危基杨圈叉	wēi jī yáng quān chā	10
@@ -202473,7 +202468,6 @@ sort: by_weight
 为人父母者	wéi rén fù mǔ zhě	10
 伟人毛泽东	wěi rén máo zé dōng	10
 为人民服务	wèi rén mín fú wù	10
-喂人民服雾	wèi rén mín fú wù	10
 为人民幸福	wèi rén mín xìng fú	10
 为人权辩护	wéi rén quán biàn hù	10
 为人所不齿	wéi rén suǒ bù chǐ	10
@@ -207252,7 +207246,6 @@ sort: by_weight
 我是一路人	wǒ shì yí lù rén	10
 我是一片云	wǒ shì yí piàn yún	10
 我是一条鱼	wǒ shì yì tiáo yú	10
-窝是一条鱼	wō shì yì tiáo yú	10
 我是一坨屎	wǒ shì yì tuó shǐ	10
 我是一只鸡	wǒ shì yì zhī jī	10
 我是一只猫	wǒ shì yì zhī māo	10
@@ -219981,7 +219974,6 @@ sort: by_weight
 小拟锥螺属	xiǎo nǐ zhuī luó shǔ	10
 小年夜春晚	xiǎo nián yè chūn wǎn	10
 小鸟伏特加	xiǎo niǎo fú tè jiā	10
-小鸟伏特家	xiǎo niǎo fú tè jiā	10
 小鸟居夕花	xiǎo niǎo jū xī huā	10
 小鸟依人型	xiǎo niǎo yī rén xíng	10
 小鸟一生推	xiǎo niǎo yì shēng tuī	10
@@ -222670,7 +222662,6 @@ sort: by_weight
 心理学测试	xīn lǐ xué cè shì	10
 心理学大纲	xīn lǐ xué dà gāng	10
 心理学大师	xīn lǐ xué dà shī	10
-心理学大湿	xīn lǐ xué dà shī	10
 心理学导论	xīn lǐ xué dǎo lùn	10
 心理学分析	xīn lǐ xué fēn xī	10
 心理学分支	xīn lǐ xué fēn zhī	10
@@ -291663,7 +291654,6 @@ sort: by_weight
 黄静诉华硕案	huáng jìng sù huá shuò àn	10
 晃来晃去的人	huǎng lái huǎng qù de rén	10
 黄榄快速干线	huáng lǎn kuài sù gàn xiàn	10
-黄梁梦吕仙祠	huáng liáng mèng lǚ xiān cí	10
 黄粱梦吕仙祠	huáng liáng mèng lǚ xiān cí	10
 黄领牡丹鹦鹉	huáng lǐng mǔ dān yīng wǔ	10
 黄龙慧南禅师	huáng lóng huì nán chán shī	10
@@ -292588,9 +292578,7 @@ sort: by_weight
 基金累计结余	jī jīn lěi jì jié yú	10
 基金累计净值	jī jīn lěi jì jìng zhí	10
 激进民主主义	jī jìn mín zhǔ zhǔ yì	10
-基进女权主义	jī jìn nǚ quán zhǔ yì	10
 激进女权主义	jī jìn nǚ quán zhǔ yì	10
-基进女性主义	jī jìn nǚ xìng zhǔ yì	10
 激进女性主义	jī jìn nǚ xìng zhǔ yì	10
 基金社会主义	jī jīn shè huì zhǔ yì	10
 激进素食主义	jī jìn sù shí zhǔ yì	10
@@ -294724,7 +294712,6 @@ sort: by_weight
 角吻鰕虎鱼属	jiǎo wěn xiā hǔ yú shǔ	10
 教我爱的一切	jiāo wǒ ài de yí qiè	10
 绞吸式挖泥船	jiǎo xī shì wā ní chuán	10
-交响哥德金属	jiāo xiǎng gē dé jīn shǔ	10
 交响歌德金属	jiāo xiǎng gē dé jīn shǔ	10
 交响乐团指挥	jiāo xiǎng yuè tuán zhǐ huī	10
 娇小的女孩子	jiāo xiǎo de nǚ hái zi	10
@@ -295194,7 +295181,6 @@ sort: by_weight
 金刚级战列舰	jīn gāng jí zhàn liè jiàn	10
 金刚界曼荼罗	jīn gāng jiè màn tú luó	10
 金刚萨埵心咒	jīn gāng sà duǒ xīn zhòu	10
-金刚萨垛心咒	jīn gāng sà duǒ xīn zhòu	10
 金刚石对顶砧	jīn gāng shí duì dǐng zhēn	10
 金刚夜叉明王	jīn gāng yè chā míng wáng	10
 金刚银汉鱼属	jīn gāng yín hàn yú shǔ	10
@@ -298861,7 +298847,6 @@ sort: by_weight
 历代通俗演义	lì dài tōng sú yǎn yì	10
 历代文人墨客	lì dài wén rén mò kè	10
 历代羊城八景	lì dài yáng chéng bā jǐng	10
-歴代中国历法	lì dài zhōng guó lì fǎ	10
 历代中国历法	lì dài zhōng guó lì fǎ	10
 理当匡君辅国	lǐ dāng kuāng jūn fǔ guó	10
 离岛建设基金	lí dǎo jiàn shè jī jīn	10
@@ -299052,7 +299037,6 @@ sort: by_weight
 利氏宝莲灯鱼	lì shì bǎo lián dēng yú	10
 李氏波光鳃鱼	lǐ shì bō guāng sāi yú	10
 利氏带天竺鲷	lì shì dài tiān zhú diāo	10
-歴史的仮名遣	lì shǐ de fǎn míng qiǎn	10
 历史的假名遣	lì shǐ de jiǎ míng qiǎn	10
 历史底蕴深厚	lì shǐ dǐ yùn shēn hòu	10
 礼失而求诸野	lǐ shī ér qiú zhū yě	10
@@ -317902,14 +317886,11 @@ sort: by_weight
 渭华起义旧址	wèi huá qǐ yì jiù zhǐ	10
 微黄非洲脂鲤	wēi huáng fēi zhōu zhī lǐ	10
 微辉绿岩状的	wēi huī lǜ yán zhuàng de	10
-喂鸡百科标志	wèi jī bǎi kē biāo zhì	10
-围鸡百科首页	wéi jī bǎi kē shǒu yè	10
 微机保护装置	wēi jī bǎo hù zhuāng zhì	10
 危急存亡之秋	wēi jí cún wáng zhī qiū	10
 危急存亡之时	wēi jí cún wáng zhī shí	10
 微积分学教程	wēi jī fēn xué jiào chéng	10
 危及公共安全	wēi jí gōng gòng ān quán	10
-伪基共享资源	wěi jī gòng xiǎng zī yuán	10
 伪棘冠孔吸虫	wěi jí guān kǒng xī chóng	10
 危及国家安全	wēi jí guó jiā ān quán	10
 微机继电保护	wēi jī jì diàn bǎo hù	10
@@ -317985,12 +317966,6 @@ sort: by_weight
 为了一己私欲	wèi le yì jǐ sī yù	10
 卫理公会教派	wèi lǐ gōng huì jiào pài	10
 卫理公会牧师	wèi lǐ gōng huì mù shī	10
-维利基茨基岛	wéi lì jī cí jī dǎo	10
-韦利科西尔基	wéi lì kē xī ěr jī	10
-韦利奇基夫卡	wéi lì qí jī fū kǎ	10
-韦利奇科瓦河	wéi lì qí kē wǎ hé	10
-韦利奇科维奇	wéi lì qí kē wéi qí	10
-韦利日斯基区	wéi lì rì sī jī qū	10
 唯利是图的人	wéi lì shì tú de rén	10
 威利斯顿盆地	wēi lì sī dùn pén dì	10
 唯理主义哲学	wéi lǐ zhǔ yì zhé xué	10
@@ -318017,8 +317992,6 @@ sort: by_weight
 渭南高级中学	wèi nán gāo jí zhōng xué	10
 渭南师范学院	wèi nán shī fàn xué yuàn	10
 微囊蓝细菌属	wēi náng lán xì jūn shǔ	10
-韦内尔科洛山	wéi nèi ěr kē luò shān	10
-韦内罗科洛峰	wéi nèi luó kē luò fēng	10
 委内瑞拉裙鱼	wěi nèi ruì lā qún yú	10
 未能达成共识	wèi néng dá chéng gòng shí	10
 为你挡风遮雨	wèi nǐ dǎng fēng zhē yǔ	10
@@ -318445,7 +318418,6 @@ sort: by_weight
 我的盖世英雄	wǒ de gài shì yīng xióng	10
 我的狐仙老婆	wǒ de hú xiān lǎo pó	10
 我的狐仙女友	wǒ de hú xiān nǚ yǒu	10
-我的基维百科	wǒ de jī wéi bǎi kē	10
 我的僵尸女儿	wǒ de jiāng shī nǚ ér	10
 我的课余生活	wǒ de kè yú shēng huó	10
 我的老天鹅啊	wǒ de lǎo tiān é a	10
@@ -319482,8 +319454,6 @@ sort: by_weight
 午夜体育报道	wǔ yè tǐ yù bào dào	10
 五一百货大楼	wǔ yī bǎi huò dà lóu	10
 武义成功可汗	wǔ yì chéng gōng kè hán	10
-吴亦凡的粉丝	wú yì fán de fěn sī	10
-吴亦凡的颜值	wú yì fán de yán zhí	10
 五一放假安排	wǔ yī fàng jià ān pái	10
 吴乙峰性骚扰	wú yǐ fēng xìng sāo rǎo	10
 五一假期期间	wǔ yī jiǎ qī qī jiān	10
