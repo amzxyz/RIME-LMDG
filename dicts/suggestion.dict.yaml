@@ -47358,7 +47358,6 @@ sort: by_weight
 对二甲酚蓝	duì èr jiǎ fēn lán	10
 对二氰基苯	duì èr qíng jī běn	10
 对二硝基苯	duì èr xiāo jī běn	10
-對二硝基苯	duì èr xiāo jī běn	10
 对二乙基苯	duì èr yǐ jī běn	10
 对法律失望	duì fǎ lǜ shī wàng	10
 对方当事人	duì fāng dāng shì rén	10
@@ -47406,7 +47405,6 @@ sort: by_weight
 对甲基溴苄	duì jiǎ jī xiù biàn	10
 对甲基乙苯	duì jiǎ jī yǐ běn	10
 对甲氧苯胺	duì jiǎ yǎng běn àn	10
-對甲氧苯胺	duì jiǎ yǎng běn àn	10
 对健康不利	duì jiàn kāng bú lì	10
 对健康有益	duì jiàn kāng yǒu yì	10
 对角论证法	duì jiǎo lùn zhèng fǎ	10
@@ -47618,10 +47616,8 @@ sort: by_weight
 对硝基苄溴	duì xiāo jī biàn xiù	10
 对硝基二硫	duì xiāo jī èr liú	10
 对硝基甲苯	duì xiāo jī jiǎ běn	10
-對硝基甲苯	duì xiāo jī jiǎ běn	10
 对硝基硫酚	duì xiāo jī liú fēn	10
 对硝基氯苯	duì xiāo jī lǜ běn	10
-對硝基氯苯	duì xiāo jī lǜ běn	10
 对硝基溴苯	duì xiāo jī xiù běn	10
 对硝基溴苄	duì xiāo jī xiù biàn	10
 对溴苯丙酮	duì xiù běn bǐng tóng	10
@@ -133313,6 +133309,7 @@ sort: by_weight
 美系豪华车	měi xì háo huá chē	10
 美系肌肉车	měi xì jī ròu chē	10
 美溪林业局	měi xī lín yè jú	10
+梅西耶星表	méi xī yé xīng biǎo	10
 眉县猕猴桃	méi xiàn mí hóu táo	10
 没显示出来	méi xiǎn shì chū lái	10
 没想到大佬	méi xiǎng dào dà lǎo	10
@@ -184306,6 +184303,7 @@ sort: by_weight
 水煤气反应	shuǐ méi qì fǎn yìng	10
 水煤气钢管	shuǐ méi qì gāng guǎn	10
 睡美人城堡	shuì měi rén chéng bǎo	10
+睡美人星系	shuì měi rén xīng xì	10
 谁没有过去	shuí méi yǒu guò qù	10
 水门塘水库	shuǐ mén táng shuǐ kù	10
 水蜜桃冰茶	shuǐ mì táo bīng chá	10
@@ -315555,24 +315553,6 @@ sort: by_weight
 探针力显微镜	tàn zhēn lì xiǎn wēi jìng	10
 碳质球粒陨石	tàn zhì qiú lì yǔn shí	10
 唐博斯科新堡	táng bó sī kē xīn bǎo	10
-唐朝安州刺史	táng cháo ān zhōu cì shǐ	10
-唐朝地方官制	táng cháo dì fāng guān zhì	10
-唐朝国子博士	táng cháo guó zǐ bó shì	10
-唐朝黄州刺史	táng cháo huáng zhōu cì shǐ	10
-唐朝开国战争	táng cháo kāi guó zhàn zhēng	10
-唐朝科举人物	táng cháo kē jǔ rén wù	10
-唐朝礼部侍郎	táng cháo lǐ bù shì láng	10
-唐朝女性人物	táng cháo nǚ xìng rén wù	10
-唐朝尚书左丞	táng cháo shàng shū zuǒ chéng	10
-唐朝诗歌流派	táng cháo shī gē liú pài	10
-唐朝苏州刺史	táng cháo sū zhōu cì shǐ	10
-唐朝天宝年间	táng cháo tiān bǎo nián jiān	10
-唐朝刑部侍郎	táng cháo xíng bù shì láng	10
-唐朝徐州刺史	táng cháo xú zhōu cì shǐ	10
-唐朝以胖为美	táng cháo yǐ pàng wéi měi	10
-唐朝伊斯兰教	táng cháo yī sī lán jiào	10
-唐朝由盛转衰	táng cháo yóu shèng zhuǎn shuāi	10
-唐朝漳州刺史	táng cháo zhāng zhōu cì shǐ	10
 塘承高速公路	táng chéng gāo sù gōng lù	10
 唐创业起居注	táng chuàng yè qǐ jū zhù	10
 糖醋黄河鲤鱼	táng cù huáng hé lǐ yú	10
@@ -335848,7 +335828,6 @@ sort: by_weight
 拆了东墙补西墙	chāi le dōng qiáng bǔ xī qiáng	10
 拆散一对是一对	chāi sàn yí duì shì yí duì	10
 差饷物业估价署	chāi xiǎng wù yè gū jià shǔ	10
-钗于奁内待时飞	chāi yú lián nèi dài shí fēi	10
 颤抖手完美均衡	chàn dǒu shǒu wán měi jūn héng	10
 蟾二烯羟酸内酯	chán èr xī qiǎng suān nèi zhǐ	10
 产甲烷石状菌属	chǎn jiǎ wán shí zhuàng jūn shǔ	10
@@ -338973,7 +338952,6 @@ sort: by_weight
 对待自己的孩子	duì dài zì jǐ de hái zi	10
 对地基基础工程	duì dì jī jī chǔ gōng chéng	10
 对第三丁基甲苯	duì dì sān dīng jī jiǎ běn	10
-對第三丁基甲苯	duì dì sān dīng jī jiǎ běn	10
 对第三人的责任	duì dì sān rén de zé rèn	10
 对碘苯基化合物	duì diǎn běn jī huà hé wù	10
 对二侧锥六角柱	duì èr cè zhuī liù jiǎo zhù	10
