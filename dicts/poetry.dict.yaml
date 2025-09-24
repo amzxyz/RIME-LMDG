@@ -59945,13 +59945,13 @@ sort: by_weight
 官箴易疵瑕	guān zhēn yì cī xiá	6
 关志百牢名	guān zhì bǎi láo míng	6
 馆置城西旁	guǎn zhì chéng xī páng	6
+馆至重湖水	guǎn zhì chóng hú shuǐ	6
 观指非知月	guān zhǐ fēi zhī yuè	6
 冠豸如冠猴	guān zhì rú guān hóu	6
 官秩随年高	guān zhì suí nián gāo	6
 冠栉心多懒	guān zhì xīn duō lǎn	6
 官职滞麟台	guān zhí zhì lín tái	6
 官知止足休	guān zhī zhǐ zú xiū	6
-馆至重湖水	guǎn zhì zhòng hú shuǐ	6
 官重法家流	guān zhòng fǎ jiā liú	6
 关中昔丧败	guān zhōng xī sàng bài	6
 关中昔丧乱	guān zhōng xī sāng luàn	6
@@ -60099,7 +60099,7 @@ sort: by_weight
 光景有顿亏	guāng jǐng yǒu dùn kuī	6
 光景在铭旌	guāng jǐng zài míng jīng	6
 光景在我裳	guāng jǐng zài wǒ shang	6
-光阔重湖水	guāng kuò zhòng hú shuǐ	6
+光阔重湖水	guāng kuò chóng hú shuǐ	6
 桄榔翳碧苔	guāng láng yì bì tái	6
 光连虚象白	guāng lián xū xiàng bái	6
 广林瞻二圣	guǎng lín zhān èr shèng	6
@@ -168719,7 +168719,7 @@ sort: by_weight
 吾尝奇华佗	wú cháng qí huà tuó	6
 吾尝期斯人	wú cháng qī sī rén	6
 武昌人不厌	wǔ chāng rén bú yàn	6
-吾常涉重湖	wú cháng shè zhòng hú	6
+吾常涉重湖	wú cháng shè chóng hú	6
 武昌松风阁	wǔ chāng sōng fēng gé	6
 吾尝闻白眉	wú cháng wén bái méi	6
 吾尝闻之矣	wú cháng wén zhī yǐ	6
@@ -224633,6 +224633,7 @@ sort: by_weight
 充耳以黄乎而	chōng ěr yǐ huáng hū ér	6
 充耳以青乎而	chōng ěr yǐ qīng hū ér	6
 充耳以素乎而	chōng ěr yǐ sù hū ér	6
+重湖叠巘清嘉	chóng hú dié yǎn qīng jiā	6
 重来是事堪嗟	chóng lái shì shì kān jiē	6
 冲气饪而为和	chōng qì rèn ér wéi hé	6
 崇山更用忧何	chóng shān gèng yòng yōu hé	6
@@ -229090,7 +229091,7 @@ sort: by_weight
 肃礼恭禋载展	sù lǐ gōng yīn zài zhǎn	6
 宿灵岩寺上院	sù líng yán sì shàng yuàn	6
 溯泥溪而不前	sù ní xī ér bù qián	6
-宿青草湖重湖	sù qīng cǎo hú zhòng hú	6
+宿青草湖重湖	sù qīng cǎo hú chóng hú	6
 素善留侯张良	sù shàn liú hòu zhāng liáng	6
 宿山中用前韵	sù shān zhōng yòng qián yùn	6
 宿设玄璜浴兰	sù shè xuán huáng yù lán	6
@@ -229405,11 +229406,11 @@ sort: by_weight
 脱京口出门难	tuō jīng kǒu chū mén nán	6
 脱京口出巷难	tuō jīng kǒu chū xiàng nán	6
 脱京口绐北难	tuō jīng kǒu dài běi nán	6
-脱京口得船难	tuō jīng kǒu dé chuán nán	6
+脱京口得船难	tuō jīng kǒu dé chuán nàn	6
 脱京口得风难	tuō jīng kǒu dé fēng nán	6
 脱京口定变难	tuō jīng kǒu dìng biàn nán	6
 脱京口定计难	tuō jīng kǒu dìng jì nán	6
-脱京口候船难	tuō jīng kǒu hòu chuán nán	6
+脱京口候船难	tuō jīng kǒu hòu chuán nàn	6
 脱京口谋人难	tuō jīng kǒu móu rén nán	6
 脱京口入城难	tuō jīng kǒu rù chéng nán	6
 脱京口上岸难	tuō jīng kǒu shàng àn nán	6
@@ -231659,7 +231660,6 @@ sort: by_weight
 终古几人称屈	zhōng gǔ jǐ rén chēng qū	6
 重过秘书旧房	zhòng guò mì shū jiù fáng	6
 重过中庵故园	zhòng guò zhōng ān gù yuán	6
-重湖叠巘清嘉	zhòng hú dié yǎn qīng jiā	6
 重寄表臣二首	zhòng jì biǎo chén èr shǒu	6
 重嗟惋兮何补	zhòng jiē wǎn xī hé bǔ	6
 仲君岂弟多学	zhòng jūn qǐ dì duō xué	6
@@ -250791,7 +250791,7 @@ sort: by_weight
 更待月黑看湖光	gèng dài yuè hēi kàn hú guāng	6
 更待杂芳成艳锦	gèng dài zá fāng chéng yàn jǐn	6
 更当力贫开酒椀	gèng dāng lì pín kāi jiǔ wǎn	6
-更当乞种过江南	gèng dāng qǐ zhǒng guò jiāng nán	6
+更当乞种过江南	gèng dāng qǐ zhòng guò jiāng nán	6
 更当陶令北窗风	gèng dāng táo lìng běi chuāng fēng	6
 更当斋夜忆玄晖	gèng dāng zhāi yè yì xuán huī	6
 更当种子如董仙	gèng dāng zhǒng zi rú dǒng xiān	6
@@ -259301,7 +259301,7 @@ sort: by_weight
 鸡号堕地燕惊去	jī hào duò dì yàn jīng qù	6
 鸡号黑暗通蛮货	jī hào hēi àn tōng mán huò	6
 芰荷采尽荇田田	jì hé cǎi jìn xìng tián tián	6
-芰荷覆水船难进	jì hé fù shuǐ chuán nán jìn	6
+芰荷覆水船难进	jì hé fù shuǐ chuán nàn jìn	6
 霁河千里晓横银	jì hé qiān lǐ xiǎo héng yín	6
 济河水清黄河浑	jì hé shuǐ qīng huáng hé hún	6
 计合一条丝线挽	jì hé yī tiáo sī xiàn wǎn	6
