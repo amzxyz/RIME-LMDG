@@ -7863,7 +7863,7 @@ sort: by_weight
 北冰洋中脊	běi bīng yáng zhōng jí	10
 被剥削阶级	bèi bō xuē jiē jí	10
 背部的肌肉	bèi bù de jī ròu	10
-北部都会区	běi bù dōu huì qū	10
+北部都会区	běi bù dū huì qū	10
 北部方面队	běi bù fāng miàn duì	10
 北部方面军	běi bù fāng miàn jūn	10
 北部工业区	běi bù gōng yè qū	10
@@ -24418,7 +24418,6 @@ sort: by_weight
 彻骨的寒冷	chè gǔ de hán lěng	10
 车轱辘草子	chē gū lù cǎo zǐ	10
 车管所查询	chē guǎn suǒ chá xún	10
-车行道绿化	chē háng dào lǜ huà	10
 车祸发生后	chē huò fā shēng hòu	10
 车祸发生时	chē huò fā shēng shí	10
 车祸猛于虎	chē huò měng yú hǔ	10
@@ -24589,6 +24588,7 @@ sort: by_weight
 撤销决定书	chè xiāo jué dìng shū	10
 撤销原决定	chè xiāo yuán jué dìng	10
 撤销债务人	chè xiāo zhài wù rén	10
+车行道绿化	chē xíng dào lǜ huà	10
 撤药性出血	chè yào xìng chū xiě	10
 车用半导体	chē yòng bàn dǎo tǐ	10
 车用柴油机	chē yòng chái yóu jī	10
@@ -43658,6 +43658,8 @@ sort: by_weight
 叠氮自由基	dié dàn zì yóu jī	10
 跌倒的地方	diē dǎo de dì fāng	10
 跌到了谷底	diē dào le gǔ dǐ	10
+喋喋不休地	dié dié bù xiū de	11
+喋喋不休的	dié dié bù xiū de	10
 迭戈科斯塔	dié gē kē sī tǎ	10
 迭戈卢加诺	dié gē lú jiā nuò	10
 迭戈洛佩斯	dié gē luò pèi sī	10
@@ -56470,8 +56472,8 @@ sort: by_weight
 非洲地鸫属	fēi zhōu dì dōng shǔ	10
 非洲第二白	fēi zhōu dì èr bái	10
 非洲第一手	fēi zhōu dì yī shǒu	10
-非洲都会区	fēi zhōu dōu huì qū	10
 非洲豆蔻属	fēi zhōu dòu kòu shǔ	10
+非洲都会区	fēi zhōu dū huì qū	10
 非洲发电厂	fēi zhōu fā diàn chǎng	10
 非洲肺鱼科	fēi zhōu fèi yú kē	10
 非洲肺鱼属	fēi zhōu fèi yú shǔ	10
@@ -134252,8 +134254,8 @@ sort: by_weight
 猛男捡树枝	měng nán jiǎn shù zhī	10
 梦尼夜蛾属	mèng ní yè é shǔ	10
 锰镍铜合金	měng niè tóng hé jīn	10
-蒙牛酸酸乳	méng niú suān suān rǔ	10
-蒙牛真果粒	méng niú zhēn guǒ lì	10
+蒙牛酸酸乳	měng niú suān suān rǔ	10
+蒙牛真果粒	měng niú zhēn guǒ lì	10
 蒙瓢蜡蝉属	méng piáo là chán shǔ	10
 猛禽德鲁伊	měng qín dé lǔ yī	10
 猛禽发动机	měng qín fā dòng jī	10
@@ -164337,7 +164339,7 @@ sort: by_weight
 三刺泽丝鲶	sān cì zé sī nián	10
 三打白骨精	sān dǎ bái gǔ jīng	10
 三大动力路	sān dà dòng lì lù	10
-三大都会区	sān dà dōu huì qū	10
+三大都会区	sān dà dū huì qū	10
 三大都市圈	sān dà dū shì quān	10
 三大黑土区	sān dà hēi tǔ qū	10
 三大男高音	sān dà nán gāo yīn	10
@@ -195291,6 +195293,7 @@ sort: by_weight
 听了个大概	tīng le gè dà gài	10
 听了他的话	tīng le tā de huà	10
 听了我的话	tīng le wǒ de huà	10
+停了我的卡	tíng le wǒ de kǎ	10
 听了想打人	tīng le xiǎng dǎ rén	10
 听了一会儿	tīng le yí huì er	10
 停了一会儿	tíng le yí huì er	10
@@ -347173,7 +347176,6 @@ sort: by_weight
 地台型构造岩浆区	dì tái xíng gòu zào yán jiāng qū	10
 地震弹性回跳理论	dì zhèn tán xìng huí tiào lǐ lùn	10
 电气式金属检出机	diàn qì shì jīn shǔ jiǎn chū jī	10
-喋喋不休时不我予	dié dié bù xiū shí bù wǒ yǔ	10
 蝶胸肿腿金小蜂属	dié xiōng zhǒng tuǐ jīn xiǎo fēng shǔ	10
 定源式虚实分量法	dìng yuán shì xū shí fèn liàng fǎ	10
 冬练三九夏练三伏	dōng liàn sān jiǔ xià liàn sān fú	10
