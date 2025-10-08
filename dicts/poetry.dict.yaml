@@ -55116,8 +55116,6 @@ sort: by_weight
 各作万里云	gè zuò wàn lǐ yún	1
 各坐一绳床	gè zuò yì shéng chuáng	1
 给丧蹶张辈	gěi sàng jué zhāng bèi	1
-给事东掖垣	gěi shì dōng yē yuán	1
-给事黄门省	gěi shì huáng mén shěng	1
 给受无虚月	gěi shòu wú xū yuè	1
 给授有等伦	gěi shòu yǒu děng lún	1
 给园支遁隐	gěi yuán zhī dùn yǐn	1
@@ -75696,6 +75694,7 @@ sort: by_weight
 季氏第十六	jì shì dì shí liù	1
 迹是雕墙后	jì shì diāo qiáng hòu	1
 迹是东山恋	jì shì dōng shān liàn	1
+给事东掖垣	jǐ shì dōng yē yuán	1
 即事敦夙尚	jí shì dūn sù shàng	1
 济世翻小事	jì shì fān xiǎo shì	1
 几时逢范蠡	jǐ shí féng fàn lǐ	1
@@ -75710,6 +75709,7 @@ sort: by_weight
 几时怀抱宽	jǐ shí huái bào kuān	1
 及时欢且娱	jí shí huān qiě yú	1
 几时还玉京	jǐ shí huán yù jīng	1
+给事黄门省	jǐ shì huáng mén shěng	1
 即事黄州作	jí shì huáng zhōu zuò	1
 即事会赋诗	jí shì huì fù shī	1
 几时回节钺	jǐ shí huí jié yuè	1
@@ -133955,8 +133955,8 @@ sort: by_weight
 三川羽檄驰	sān chuān yǔ xí chí	1
 三春车马客	sān chūn chē mǎ kè	1
 三春多放逸	sān chūn duō fàng yì	1
-三春给事省	sān chūn gěi shì shěng	1
 三春冠盖聚	sān chūn guān gài jù	1
+三春给事省	sān chūn jǐ shì shěng	1
 三春景物滋	sān chūn jǐng wù zī	1
 三春看又尽	sān chūn kàn yòu jìn	1
 三春类早花	sān chūn lèi zǎo huā	1
@@ -250732,7 +250732,6 @@ sort: by_weight
 各自东西南北飞	gè zì dōng xī nán běi fēi	1
 各自无聊各自鸣	gè zì wú liáo gè zì míng	1
 隔座送钩春酒暖	gé zuò sòng gōu chūn jiǔ nuǎn	1
-给事因忤仇军容	gěi shì yīn wǔ chóu jūn róng	1
 给札看君赋云梦	gěi zhá kàn jūn fù yún mèng	1
 艮岑青辉惨么麽	gěn cén qīng huī cǎn me mó	1
 根到九泉无曲处	gēn dào jiǔ quán wú qǔ chù	1
@@ -255746,7 +255745,7 @@ sort: by_weight
 何谓人与天一邪	hé wèi rén yǔ tiān yī xié	1
 何谓无始而非卒	hé wèi wú shǐ ér fēi zú	1
 何谓无受人益难	hé wèi wú shòu rén yì nán	1
-何为西庄王给事	hé wéi xī zhuāng wáng gěi shì	1
+何为西庄王给事	hé wéi xī zhuāng wáng jǐ shì	1
 合为一诏渐强大	hé wéi yī zhào jiàn qiáng dà	1
 河渭萦纡雾壑深	hé wèi yíng yū wù hè shēn	1
 何物春风吹不变	hé wù chūn fēng chuī bú biàn	1
@@ -259750,6 +259749,7 @@ sort: by_weight
 几时携手见衡阳	jǐ shí xié shǒu jiàn héng yáng	1
 几时行县向黔黎	jǐ shí xíng xiàn xiàng qián lí	1
 济世宜引英俊人	jì shì yí yǐn yīng jùn rén	1
+给事因忤仇军容	jǐ shì yīn wǔ chóu jūn róng	1
 嵇氏幼男犹可悯	jī shì yòu nán yóu kě mǐn	1
 济时之才吾岂敢	jì shí zhī cái wú qǐ gǎn	1
 几时知是见君时	jǐ shí zhī shì jiàn jūn shí	1
@@ -324599,7 +324599,7 @@ sort: by_weight
 寄朗州温右史曹长	jì lǎng zhōu wēn yòu shǐ cáo cháng	1
 寄珉笛与宇文舍人	jì mín dí yǔ yǔ wén shè rén	1
 鸡鸣犬吠兮时相闻	jī míng quǎn fèi xī shí xiāng wén	1
-寄毗陵杨给事三首	jì pí líng yáng gěi shì sān shǒu	1
+寄毗陵杨给事三首	jì pí líng yáng jǐ shì sān shǒu	1
 稽其成败兴坏之纪	jī qí chéng bài xìng huài zhī jì	1
 寄润州长山刘隐士	jì rùn zhōu cháng shān liú yǐn shì	1
 寄山阴崔少府国辅	jì shān yīn cuī shào fǔ guó fǔ	1
@@ -325280,7 +325280,7 @@ sort: by_weight
 收吾本心在腔子里	shōu wú běn xīn zài qiāng zi lǐ	1
 殊不知此曲之古今	shū bù zhī cǐ qǔ zhī gǔ jīn	1
 殊风共轨见之周南	shū fēng gòng guǐ jiàn zhī zhōu nán	1
-叔父给事挽词十首	shū fù gěi shì wǎn cí shí shǒu	1
+叔父给事挽词十首	shū fù jǐ shì wǎn cí shí shǒu	1
 书怀赠南陵常赞府	shū huái zèng nán líng cháng zàn fǔ	1
 庶几其果为圣人乎	shù jī qí guǒ wéi shèng rén hū	1
 孰居无事而披拂是	shú jū wú shì ér pī fú shì	1
@@ -325366,7 +325366,7 @@ sort: by_weight
 送辛大之鄂渚不及	sòng xīn dà zhī è zhǔ bù jí	1
 送徐州高仆射赴镇	sòng xú zhōu gāo pú yè fù zhèn	1
 嵩岩仙草兮为谁芳	sōng yán xiān cǎo xī wèi shuí fāng	1
-送杨八给事赴常州	sòng yáng bā gěi shì fù cháng zhōu	1
+送杨八给事赴常州	sòng yáng bā jǐ shì fù cháng zhōu	1
 送义舟师却还黔南	sòng yì zhōu shī què hái qián nán	1
 送友人寻越中山水	sòng yǒu rén xún yuè zhōng shān shuǐ	1
 送张说上集贤学士	sòng zhāng shuō shàng jí xián xué shì	1
@@ -325513,7 +325513,7 @@ sort: by_weight
 望洞庭湖赠张丞相	wàng dòng tíng hú zèng zhāng chéng xiàng	1
 王独不见夫腾猿乎	wáng dú bú jiàn fū téng yuán hū	1
 王兼金一百而不受	wáng jiān jīn yì bǎi ér bú shòu	1
-枉教人立尽梧桐影	wǎng jiāo rén lì jìn wú tóng yǐng	1
+枉教人立尽梧桐影	wǎng jiào rén lì jìn wú tóng yǐng	1
 望庐山瀑布水二首	wàng lú shān pù bù shuǐ èr shǒu	1
 网罗天下放失旧闻	wǎng luó tiān xià fàng shī jiù wén	1
 往年随故府吴兴公	wǎng nián suí gù fǔ wú xīng gōng	1
@@ -326632,7 +326632,6 @@ sort: by_weight
 讲学习讲政治讲正气	jiǎng xué xí jiǎng zhèng zhì jiǎng zhèng qì	1
 将子之春秋故及此乎	jiāng zǐ zhī chūn qiū gù jí cǐ hū	1
 交戟之卫士欲止不内	jiāo jǐ zhī wèi shì yù zhǐ bú nà	1
-教授生徒给事论郑注	jiào shòu shēng tú gěi shì lùn zhèng zhù	1
 皆能以朝诸侯有天下	jiē néng yǐ cháo zhū hóu yǒu tiān xià	1
 嗟生民兮浑浑对酒歌	jiē shēng mín xī hún hún duì jiǔ gē	1
 解兽之群而鸟皆夜鸣	jiě shòu zhī qún ér niǎo jiē yè míng	1
