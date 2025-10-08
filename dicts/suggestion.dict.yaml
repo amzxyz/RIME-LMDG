@@ -2953,7 +2953,7 @@ sort: by_weight
 八桁针矛虫	bā héng zhēn máo chóng	1
 把话说出来	bǎ huà shuō chū lái	1
 把话说明白	bǎ huà shuō míng bái	1
-把话说清楚	bǎ huà shuō qīng chǔ	1
+把话说清楚	bǎ huà shuō qīng chu	1
 把话说完了	bǎ huà shuō wán le	1
 八皇后问题	bā huáng hòu wèn tí	1
 把回忆锁好	bǎ huí yì suǒ hǎo	1
@@ -10722,7 +10722,7 @@ sort: by_weight
 比较判别法	bǐ jiào pàn bié fǎ	1
 比较偏远的	bǐ jiào piān yuǎn de	1
 比较奇怪的	bǐ jiào qí guài de	1
-比较清楚地	bǐ jiào qīng chǔ de	1
+比较清楚地	bǐ jiào qīng chu de	1
 比较轻松地	bǐ jiào qīng sōng de	1
 比较人性化	bǐ jiào rén xìng huà	1
 比较社会学	bǐ jiào shè huì xué	1
@@ -11110,7 +11110,7 @@ sort: by_weight
 必须去医院	bì xū qù yī yuàn	1
 必须认识到	bì xū rèn shi dào	1
 必须是第一	bì xū shì dì yī	1
-必须说清楚	bì xū shuō qīng chǔ	1
+必须说清楚	bì xū shuō qīng chu	1
 必需维生素	bì xū wéi shēng sù	1
 必需消费品	bì xū xiāo fèi pǐn	1
 必须要得到	bì xū yào dé dào	1
@@ -11577,7 +11577,7 @@ sort: by_weight
 边角交会法	biān jiǎo jiāo huì fǎ	1
 扁角菌蚊科	biǎn jiǎo jūn wén kē	1
 扁角叶甲属	biǎn jiǎo yè jiǎ shǔ	1
-边界不清楚	biān jiè bù qīng chǔ	1
+边界不清楚	biān jiè bù qīng chu	1
 边界层分离	biān jiè céng fēn lí	1
 边界层理论	biān jiè céng lǐ lùn	1
 便捷的操作	biàn jié de cāo zuò	1
@@ -12029,7 +12029,7 @@ sort: by_weight
 表处理语言	biǎo chǔ lǐ yǔ yán	1
 表错七日情	biǎo cuò qī rì qíng	1
 表达不出来	biǎo dá bù chū lái	1
-表达不清楚	biǎo dá bù qīng chǔ	1
+表达不清楚	biǎo dá bù qīng chu	1
 表达的方式	biǎo dá de fāng shì	1
 表达的内容	biǎo dá de nèi róng	1
 表达的能力	biǎo dá de néng lì	1
@@ -12706,6 +12706,7 @@ sort: by_weight
 别墅样板房	bié shù yàng bǎn fáng	1
 别墅样板间	bié shù yàng bǎn jiān	1
 别墅阳光房	bié shù yáng guāng fáng	1
+什么也别说	bié shuō	1
 别说得好像	bié shuō de hǎo xiàng	1
 别说对不起	bié shuō duì bù qǐ	1
 别说你们了	bié shuō nǐ men le	1
@@ -13268,7 +13269,7 @@ sort: by_weight
 冰淇淋品牌	bīng qí lín pǐn pái	1
 冰淇淋润饼	bīng qí lín rùn bǐng	1
 冰淇淋苏打	bīng qí lín sū dá	1
-冰淇淋月饼	bīng qí lín yuè bǐng	1
+冰淇淋月饼	bīng qí lín yuè bing	1
 并且成功了	bìng qiě chéng gōng le	1
 并且告诉你	bìng qiě gào sù nǐ	1
 并且我们是	bìng qiě wǒ men shì	1
@@ -14349,6 +14350,7 @@ sort: by_weight
 补丁星期二	bǔ dīng xīng qī èr	1
 不定形艺术	bú dìng xíng yì shù	1
 不定值大数	bú dìng zhí dà shù	1
+什么也不懂	bù dǒng	1
 不懂爱的人	bù dǒng ài de rén	1
 不动孢藻科	bú dòng bāo zǎo kē	1
 不动孢藻属	bú dòng bāo zǎo shǔ	1
@@ -14688,6 +14690,7 @@ sort: by_weight
 不该知道的	bù gāi zhī dào de	1
 不该做的事	bù gāi zuò de shì	1
 不该做什么	bù gāi zuò shén me	1
+什么也不干	bú gàn	1
 不敢打电话	bù gǎn dǎ diàn huà	1
 不感到惊讶	bù gǎn dào jīng yà	1
 不感到意外	bù gǎn dào yì wài	1
@@ -15071,6 +15074,7 @@ sort: by_weight
 不换行空格	bú huàn háng kòng gé	1
 不欢迎你们	bù huān yíng nǐ men	1
 不慌不忙地	bù huāng bù máng de	1
+什么也不会	bú huì	1
 不会安慰人	bú huì ān wèi rén	1
 不会被打破	bú huì bèi dǎ pò	1
 不会被发现	bú huì bèi fā xiàn	1
@@ -16050,10 +16054,10 @@ sort: by_weight
 不切合实际	bú qiè hé shí jì	1
 布切吉山脉	bù qiè jí shān mài	1
 不侵犯条约	bù qīn fàn tiáo yuē	1
-不清楚对方	bù qīng chǔ duì fāng	1
-不清楚情况	bù qīng chǔ qíng kuàng	1
-不清楚原因	bù qīng chǔ yuán yīn	1
-不清楚自己	bù qīng chǔ zì jǐ	1
+不清楚对方	bù qīng chu duì fāng	1
+不清楚情况	bù qīng chu qíng kuàng	1
+不清楚原因	bù qīng chu yuán yīn	1
+不清楚自己	bù qīng chu zì jǐ	1
 不轻言放弃	bù qīng yán fàng qì	1
 不轻易发怒	bù qīng yì fā nù	1
 不轻易放弃	bù qīng yì fàng qì	1
@@ -16079,6 +16083,7 @@ sort: by_weight
 不去幼儿园	bú qù yòu ér yuán	1
 不屈之祭司	bù qū zhī jì sī	1
 不全面审查	bù quán miàn shěn chá	1
+什么也不缺	bù quē	1
 不确定参数	bú què dìng cān shù	1
 不确定的事	bú què dìng de shì	1
 不确定风险	bú què dìng fēng xiǎn	1
@@ -16274,7 +16279,9 @@ sort: by_weight
 补肾的食物	bǔ shèn de shí wù	1
 补肾固齿丸	bǔ shèn gù chǐ wán	1
 补肾益脑丸	bǔ shèn yì nǎo wán	1
+什么也不剩	bú shèng	1
 不胜任工作	bú shèng rèn gōng zuò	1
+什么也不是	bú shì	1
 不是白给的	bú shì bái gěi de	1
 不是白混的	bú shì bái hùn de	1
 不是北京的	bú shì běi jīng de	1
@@ -16699,6 +16706,7 @@ sort: by_weight
 补水护肤品	bǔ shuǐ hù fū pǐn	1
 补税通知单	bǔ shuì tōng zhī dān	1
 不顺心的事	bú shùn xīn de shì	1
+什么也不说	bù shuō	1
 不说点什么	bù shuō diǎn shén me	1
 不说话的星	bù shuō huà de xīng	1
 不说谎恋人	bù shuō huǎng liàn rén	1
@@ -17372,6 +17380,7 @@ sort: by_weight
 不限速下载	bú xiàn sù xià zài	1
 不限制流量	bú xiàn zhì liú liàng	1
 不限制时间	bú xiàn zhì shí jiān	1
+什么也不想	bù xiǎng	1
 不想被打扰	bù xiǎng bèi dǎ rǎo	1
 不想被束缚	bù xiǎng bèi shù fù	1
 不想被左右	bù xiǎng bèi zuǒ yòu	1
@@ -18607,6 +18616,7 @@ sort: by_weight
 不尊重长辈	bù zūn zhòng zhǎng bèi	1
 不尊重中国	bù zūn zhòng zhōng guó	1
 不尊重自己	bù zūn zhòng zì jǐ	1
+什么也不做	bú zuò	1
 不作不会死	bù zuò bú huì sǐ	1
 不做的事情	bú zuò de shì qíng	1
 不作恶原则	bú zuò è yuán zé	1
@@ -36833,7 +36843,7 @@ sort: by_weight
 党领导一切	dǎng lǐng dǎo yí qiè	1
 当洛综合征	dāng luò zōng hé zhēng	1
 当美国总统	dāng měi guó zǒng tǒng	1
-当面说清楚	dāng miàn shuō qīng chǔ	1
+当面说清楚	dāng miàn shuō qīng chu	1
 当尼采哭泣	dāng ní cǎi kū qì	1
 当你沉睡时	dāng nǐ chén shuì shí	1
 当你的朋友	dāng nǐ de péng you	1
@@ -38174,6 +38184,7 @@ sort: by_weight
 的动荡时期	de dòng dàng shí qī	1
 德尔宾反应	dé ěr bīn fǎn yìng	1
 得耳布尔镇	dé ěr bù ěr zhèn	1
+德尔斐神谕	dé ěr fěi shén yù	1
 的二分之一	de èr fēn zhī yī	1
 德尔加杜角	dé ěr jiā dù jiǎo	1
 德尔塔函数	dé ěr tǎ hán shù	1
@@ -45413,7 +45424,7 @@ sort: by_weight
 都忍不住笑	dōu rěn bú zhù xiào	1
 豆乳洗面奶	dòu rǔ xǐ miàn nǎi	1
 豆沙色口红	dòu shā sè kǒu hóng	1
-豆沙馅月饼	dòu shā xiàn yuè bǐng	1
+豆沙馅月饼	dòu shā xiàn yuè bing	1
 都山设治局	dōu shān shè zhì jú	1
 斗山挖掘机	dòu shān wā jué jī	1
 都上了年纪	dōu shàng le nián jì	1
@@ -56708,7 +56719,7 @@ sort: by_weight
 分布和趋势	fēn bù hé qū shì	1
 分布和特征	fēn bù hé tè zhēng	1
 分部积分法	fēn bù jī fēn fǎ	1
-分不清楚了	fēn bù qīng chǔ le	1
+分不清楚了	fēn bù qīng chu le	1
 分不清男女	fēn bù qīng nán nǚ	1
 分不清是非	fēn bù qīng shì fēi	1
 分不清真假	fēn bù qīng zhēn jiǎ	1
@@ -56793,7 +56804,7 @@ sort: by_weight
 分党组成员	fēn dǎng zǔ chéng yuán	1
 分党组书记	fēn dǎng zǔ shū jì	1
 分到一杯羹	fēn dào yì bēi gēng	1
-分得很清楚	fēn de hěn qīng chǔ	1
+分得很清楚	fēn de hěn qīng chu	1
 分得很顺利	fēn de hěn shùn lì	1
 分得一杯羹	fēn de yì bēi gēng	1
 粉蝶虫瘴霉	fěn dié chóng zhàng méi	1
@@ -62680,9 +62691,9 @@ sort: by_weight
 搞不懂法国	gǎo bù dǒng fǎ guó	1
 高不了多少	gāo bù liǎo duō shǎo	1
 搞不明白了	gǎo bù míng bái le	1
-搞不清楚啊	gǎo bù qīng chǔ a	1
-搞不清楚的	gǎo bù qīng chǔ de	1
-搞不清楚了	gǎo bù qīng chǔ le	1
+搞不清楚啊	gǎo bù qīng chu a	1
+搞不清楚的	gǎo bù qīng chu de	1
+搞不清楚了	gǎo bù qīng chu le	1
 搞不清状况	gǎo bù qīng zhuàng kuàng	1
 搞不下去了	gǎo bú xià qù le	1
 高残留农药	gāo cán liú nóng yào	1
@@ -66206,7 +66217,7 @@ sort: by_weight
 根本不明白	gēn běn bù míng bái	1
 根本不能用	gēn běn bù néng yòng	1
 根本不鸟你	gēn běn bù niǎo nǐ	1
-根本不清楚	gēn běn bù qīng chǔ	1
+根本不清楚	gēn běn bù qīng chu	1
 根本不认识	gēn běn bú rèn shi	1
 根本不适合	gēn běn bú shì hé	1
 根本不是人	gēn běn bú shì rén	1
@@ -70586,7 +70597,7 @@ sort: by_weight
 股骨大转子	gǔ gǔ dà zhuàn zǐ	1
 鼓鼓的钱包	gǔ gǔ de qián bāo	1
 股骨干骨折	gǔ gǔ gàn gǔ zhé	1
-姑姑和姑父	gū gū hé gū fu	1
+姑姑和姑父	gū gu hé gū fu	1
 股骨颈骨折	gǔ gǔ jǐng gǔ zhé	1
 咕咕噜噜啦	gū gū lū lū la	1
 股骨头骨折	gǔ gǔ tóu gǔ zhé	1
@@ -76706,7 +76717,7 @@ sort: by_weight
 海防办事处	hǎi fáng bàn shì chù	1
 海分枝杆菌	hǎi fēn zhī gǎn jūn	1
 海丰下美鮨	hǎi fēng xià měi yì	1
-还搞不清楚	hái gǎo bù qīng chǔ	1
+还搞不清楚	hái gǎo bù qīng chu	1
 海更士原理	hǎi gèng shì yuán lǐ	1
 海怪杆菌科	hǎi guài gǎn jūn kē	1
 海怪杆菌属	hǎi guài gǎn jūn shǔ	1
@@ -91701,7 +91712,7 @@ sort: by_weight
 吉卜力乐园	jí bǔ lì lè yuán	1
 吉布梅耶尔	jí bù méi yē ěr	1
 记不起来了	jì bù qǐ lái le	1
-记不清楚了	jì bù qīng chǔ le	1
+记不清楚了	jì bù qīng chu le	1
 极不情愿地	jí bù qíng yuàn de	1
 积不善之家	jī bú shàn zhī jiā	1
 吉布斯采样	jí bù sī cǎi yàng	1
@@ -92042,7 +92053,7 @@ sort: by_weight
 记得多年前	jì de duō nián qián	1
 记得告诉我	jì de gào sù wǒ	1
 记得关注哦	jì de guān zhù ó	1
-记得很清楚	jì de hěn qīng chǔ	1
+记得很清楚	jì de hěn qīng chu	1
 季德基夫齐	jì dé jī fū qí	1
 记得几年前	jì de jǐ nián qián	1
 季德科维奇	jì dé kē wéi qí	1
@@ -109586,7 +109597,7 @@ sort: by_weight
 锯梭螺亚科	jù suō luó yà kē	1
 巨塔玉黍螺	jù tǎ yù shǔ luó	1
 居泰隆家居	jū tài lóng jiā jū	1
-具体不清楚	jù tǐ bù qīng chǔ	1
+具体不清楚	jù tǐ bù qīng chu	1
 具体到个人	jù tǐ dào gè rén	1
 具体的表现	jù tǐ de biǎo xiàn	1
 具体的标准	jù tǐ de biāo zhǔn	1
@@ -112037,7 +112048,7 @@ sort: by_weight
 看不起穷人	kàn bù qǐ qióng rén	1
 看不起中国	kàn bù qǐ zhōng guó	1
 看不清表情	kàn bù qīng biǎo qíng	1
-看不清楚啊	kàn bù qīng chǔ a	1
+看不清楚啊	kàn bù qīng chu a	1
 看不清东西	kàn bù qīng dōng xi	1
 看不清方向	kàn bù qīng fāng xiàng	1
 看不清黑板	kàn bù qīng hēi bǎn	1
@@ -112139,14 +112150,14 @@ sort: by_weight
 看得不过瘾	kàn de bú guò yǐn	1
 看得到希望	kàn de dào xī wàng	1
 坎德格伦德	kǎn dé gé lún dé	1
-看得更清楚	kàn de gèng qīng chǔ	1
+看得更清楚	kàn de gèng qīng chu	1
 看的更清楚	kàn de gèng qīng chǔ	1
 看得更清晰	kàn de gèng qīng xī	1
 看的过程中	kàn de guò chéng zhōng	1
 看得很过瘾	kàn de hěn guò yǐn	1
 看得很开心	kàn de hěn kāi xīn	1
 看得很明白	kàn de hěn míng bái	1
-看得很清楚	kàn de hěn qīng chǔ	1
+看得很清楚	kàn de hěn qīng chu	1
 看得见大家	kàn dé jiàn dà jiā	1
 看得见的手	kàn de jiàn de shǒu	1
 坎德拉里亚	kǎn dé lā lǐ yà	1
@@ -115641,6 +115652,7 @@ sort: by_weight
 肯氏海豚属	kěn shì hǎi tún shǔ	1
 肯氏雅丽鱼	kěn shì yǎ lì yú	1
 肯氏烛焰鲶	kěn shì zhú yàn nián	1
+啃完的骨头	kěn wán de gǔ tou	1
 啃下硬骨头	kěn xià yìng gǔ tou	1
 肯亚古猿属	kěn yà gǔ yuán shǔ	1
 肯亚河马属	kěn yà hé mǎ shǔ	1
@@ -116993,7 +117005,7 @@ sort: by_weight
 快乐的勇士	kuài lè de yǒng shì	1
 快乐的游戏	kuài lè de yóu xì	1
 快乐的源泉	kuài lè de yuán quán	1
-快乐的月饼	kuài lè de yuè bǐng	1
+快乐的月饼	kuài lè de yuè bing	1
 快乐的长大	kuài lè de zhǎng dà	1
 快乐的周末	kuài lè de zhōu mò	1
 快乐的自己	kuài lè de zì jǐ	1
@@ -131558,6 +131570,7 @@ sort: by_weight
 煤改电工程	méi gǎi diàn gōng chéng	1
 煤改电项目	méi gǎi diàn xiàng mù	1
 煤改气工程	méi gǎi qì gōng chéng	1
+什么也没干	méi gàn	1
 镁橄榄石瓷	měi gǎn lǎn shí cí	1
 没赶上火车	méi gǎn shàng huǒ chē	1
 煤钢共同体	méi gāng gòng tóng tǐ	1
@@ -133189,6 +133202,7 @@ sort: by_weight
 美铁芋亚科	měi tiě yù yà kē	1
 镁铁质矿物	měi tiě zhì kuàng wù	1
 镁铁质岩石	měi tiě zhì yán shí	1
+什么也没听	méi tīng	1
 没听说过啊	méi tīng shuō guò a	1
 没听说过呢	méi tīng shuō guò ne	1
 没听说过呀	méi tīng shuō guò ya	1
@@ -133243,7 +133257,7 @@ sort: by_weight
 美味的小吃	měi wèi de xiǎo chī	1
 美味的羊肉	měi wèi de yáng ròu	1
 美味的诱惑	měi wèi de yòu huò	1
-美味的月饼	měi wèi de yuè bǐng	1
+美味的月饼	měi wèi de yuè bing	1
 美味的早餐	měi wèi de zǎo cān	1
 美味的粽子	měi wèi de zòng zi	1
 美味咖喱鸡	měi wèi gā lí jī	1
@@ -133277,6 +133291,7 @@ sort: by_weight
 梅西耶星表	méi xī yé xīng biǎo	1
 眉县猕猴桃	méi xiàn mí hóu táo	1
 没显示出来	méi xiǎn shì chū lái	1
+什么也没想	méi xiǎng	1
 没想到大佬	méi xiǎng dào dà lǎo	1
 没想到的事	méi xiǎng dào de shì	1
 没想到后来	méi xiǎng dào hòu lái	1
@@ -133589,6 +133604,7 @@ sort: by_weight
 没用的垃圾	méi yòng de lā jī	1
 没用的男人	méi yòng de nán rén	1
 没用的事情	méi yòng de shì qíng	1
+什么也没有	méi yǒu	1
 没有爱的人	méi yǒu ài de rén	1
 没有爱过你	méi yǒu ài guò nǐ	1
 没有安全感	méi yǒu ān quán gǎn	1
@@ -133926,6 +133942,7 @@ sort: by_weight
 魅族专卖店	mèi zú zhuān mài diàn	1
 美最高法院	měi zuì gāo fǎ yuàn	1
 美最时洋行	měi zuì shí yáng háng	1
+什么也没做	méi zuò	1
 没做错什么	méi zuò cuò shén me	1
 没做过的事	méi zuò guò de shì	1
 没做好准备	méi zuò hǎo zhǔn bèi	1
@@ -135081,7 +135098,7 @@ sort: by_weight
 藐视法庭罪	miǎo shì fǎ tíng zuì	1
 藐视国会罪	miǎo shì guó huì zuì	1
 妙手小厨师	miào shǒu xiǎo chú shī	1
-描述不清楚	miáo shù bù qīng chǔ	1
+描述不清楚	miáo shù bù qīng chu	1
 描述的一样	miáo shù de yí yàng	1
 描述地质学	miáo shù dì zhì xué	1
 描述和分析	miáo shù hé fēn xī	1
@@ -137416,7 +137433,7 @@ sort: by_weight
 目前版本中	mù qián bǎn běn zhōng	1
 目前不考虑	mù qián bù kǎo lǜ	1
 目前不可能	mù qián bù kě néng	1
-目前不清楚	mù qián bù qīng chǔ	1
+目前不清楚	mù qián bù qīng chu	1
 目前不确定	mù qián bú què dìng	1
 目前不支持	mù qián bù zhī chí	1
 目前不知道	mù qián bù zhī dào	1
@@ -137760,7 +137777,7 @@ sort: by_weight
 那不勒斯门	nà bú lè sī mén	1
 那不勒斯人	nà bú lè sī rén	1
 那不勒斯语	nà bú lè sī yǔ	1
-那不清楚了	nà bù qīng chǔ le	1
+那不清楚了	nà bù qīng chu le	1
 拿不上台面	ná bú shàng tái miàn	1
 那不是爱情	nà bú shì ài qíng	1
 那不是很好	nà bú shì hěn hǎo	1
@@ -139282,7 +139299,7 @@ sort: by_weight
 难以捕捉的	nán yǐ bǔ zhuō de	1
 难以理解的	nán yǐ lǐ jiě de	1
 难以说出口	nán yǐ shuō chū kǒu	1
-难以说清楚	nán yǐ shuō qīng chǔ	1
+难以说清楚	nán yǐ shuō qīng chu	1
 男异性恋者	nán yì xìng liàn zhě	1
 难以逾越的	nán yǐ yú yuè de	1
 难以置信啊	nán yǐ zhì xìn a	1
@@ -139525,7 +139542,7 @@ sort: by_weight
 脑子不够用	nǎo zi bú gòu yòng	1
 脑子不好使	nǎo zi bù hǎo shǐ	1
 脑子不灵光	nǎo zi bù líng guāng	1
-脑子不清楚	nǎo zi bù qīng chǔ	1
+脑子不清楚	nǎo zi bù qīng chu	1
 脑子不清醒	nǎo zi bù qīng xǐng	1
 脑子不太好	nǎo zi bú tài hǎo	1
 脑子不正常	nǎo zi bú zhèng cháng	1
@@ -141077,7 +141094,7 @@ sort: by_weight
 你还不承认	nǐ hái bù chéng rèn	1
 你还不了解	nǐ hái bù liǎo jiě	1
 你还不明白	nǐ hái bù míng bái	1
-你还不清楚	nǐ hái bù qīng chǔ	1
+你还不清楚	nǐ hái bù qīng chu	1
 你还不相信	nǐ hái bù xiāng xìn	1
 你还不晓得	nǐ hái bù xiǎo de	1
 你还不知道	nǐ hái bù zhī dào	1
@@ -141611,7 +141628,7 @@ sort: by_weight
 你们别吵了	nǐ men bié chǎo le	1
 你们别找我	nǐ men bié zhǎo wǒ	1
 你们不合适	nǐ men bù hé shì	1
-你们不清楚	nǐ men bù qīng chǔ	1
+你们不清楚	nǐ men bù qīng chu	1
 你们不适合	nǐ men bú shì hé	1
 你们不晓得	nǐ men bù xiǎo de	1
 你们不要走	nǐ men bú yào zǒu	1
@@ -144061,7 +144078,7 @@ sort: by_weight
 扭转了局面	niǔ zhuǎn liǎo jú miàn	1
 扭转褶口螺	niǔ zhuǎn zhě kǒu luó	1
 牛庄伍氏螺	niú zhuāng wǔ shì luó	1
-弄不清楚的	nòng bù qīng chǔ de	1
+弄不清楚的	nòng bù qīng chu de	1
 农产品安全	nóng chǎn pǐn ān quán	1
 农产品板块	nóng chǎn pǐn bǎn kuài	1
 农产品包装	nóng chǎn pǐn bāo zhuāng	1
@@ -154917,16 +154934,16 @@ sort: by_weight
 清齿龈塞音	qīng chǐ yín sè yīn	1
 清除癌细胞	qīng chú ái xì bāo	1
 清除参考线	qīng chú cān kǎo xiàn	1
-清楚地表明	qīng chǔ de biǎo míng	1
-清楚的记得	qīng chǔ de jì de	1
-清楚地记得	qīng chǔ de jì de	1
+清楚地表明	qīng chu de biǎo míng	1
+清楚的记得	qīng chu de jì de	1
+清楚地记得	qīng chu de jì de	1
 清楚的看到	qīng chǔ de kàn dào	1
-清楚地看到	qīng chǔ de kàn dào	1
-清楚地看见	qīng chǔ de kàn jiàn	1
+清楚地看到	qīng chu de kàn dào	1
+清楚地看见	qīng chu de kàn jiàn	1
 清楚的了解	qīng chǔ de liǎo jiě	1
-清楚地了解	qīng chǔ de liǎo jiě	1
+清楚地了解	qīng chu de liǎo jiě	1
 清楚的认识	qīng chǔ de rèn shi	1
-清楚地知道	qīng chǔ de zhī dào	1
+清楚地知道	qīng chu de zhī dào	1
 清除分泌物	qīng chú fēn mì wù	1
 清除计时器	qīng chú jì shí qì	1
 轻触式按键	qīng chù shì àn jiàn	1
@@ -168349,13 +168366,13 @@ sort: by_weight
 少耙下鱵鱼	shǎo bà xià zhēn yú	1
 少斑地鸫属	shǎo bān dì dōng shǔ	1
 少斑卷管螺	shǎo bān juǎn guǎn luó	1
-烧饼曹鹤阳	shāo bǐng cáo hè yáng	1
-烧饼豆腐脑	shāo bǐng dòu fu nǎo	1
+烧饼曹鹤阳	shāo bing cáo hè yáng	1
+烧饼豆腐脑	shāo bing dòu fu nǎo	1
 哨兵机器人	shào bīng jī qì rén	1
-烧饼夹里脊	shāo bǐng jiā lǐ jǐ	1
-烧饼修改器	shāo bǐng xiū gǎi qì	1
-烧饼真好吃	shāo bǐng zhēn hǎo chī	1
-烧饼芝麻多	shāo bǐng zhī má duō	1
+烧饼夹里脊	shāo bing jiā lǐ jǐ	1
+烧饼修改器	shāo bing xiū gǎi qì	1
+烧饼真好吃	shāo bing zhēn hǎo chī	1
+烧饼芝麻多	shāo bing zhī má duō	1
 烧成收缩率	shāo chéng shōu suō lǜ	1
 少吃多运动	shǎo chī duō yùn dòng	1
 少吃高热量	shǎo chī gāo rè liàng	1
@@ -170958,21 +170975,6 @@ sort: by_weight
 什么样的水	shén me yàng de shuǐ	1
 什么样的心	shén me yàng de xīn	1
 什么样子的	shén me yàng zi de	1
-什么也别说	shén me yě bié shuō	1
-什么也不懂	shén me yě bù dǒng	1
-什么也不干	shén me yě bú gàn	1
-什么也不会	shén me yě bú huì	1
-什么也不缺	shén me yě bù quē	1
-什么也不剩	shén me yě bú shèng	1
-什么也不是	shén me yě bú shì	1
-什么也不说	shén me yě bù shuō	1
-什么也不想	shén me yě bù xiǎng	1
-什么也不做	shén me yě bú zuò	1
-什么也没干	shén me yě méi gàn	1
-什么也没听	shén me yě méi tīng	1
-什么也没想	shén me yě méi xiǎng	1
-什么也没有	shén me yě méi yǒu	1
-什么也没做	shén me yě méi zuò	1
 什么意思啊	shén me yì si a	1
 什么意思了	shén me yì si le	1
 什么意思吗	shén me yì si ma	1
@@ -184657,7 +184659,7 @@ sort: by_weight
 谁也不能动	shuí yě bù néng dòng	1
 谁也不能够	shuí yě bù néng gòu	1
 谁也不欠谁	shuí yě bú qiàn shuí	1
-谁也不清楚	shuí yě bù qīng chǔ	1
+谁也不清楚	shuí yě bù qīng chu	1
 谁也不让谁	shuí yě bú ràng shuí	1
 谁也不认识	shuí yě bú rèn shi	1
 谁也不舍得	shuí yě bù shě dé	1
@@ -184978,7 +184980,7 @@ sort: by_weight
 说得对不对	shuō de duì bú duì	1
 说得很安静	shuō de hěn ān jìng	1
 说得很具体	shuō de hěn jù tǐ	1
-说得很清楚	shuō de hěn qīng chǔ	1
+说得很清楚	shuō de hěn qīng chu	1
 说得很全面	shuō de hěn quán miàn	1
 说的就是你	shuō de jiù shì nǐ	1
 说的就是他	shuō de jiù shì tā	1
@@ -195151,7 +195153,7 @@ sort: by_weight
 听得懂人话	tīng de dǒng rén huà	1
 廷德尔兰丁	tíng dé ěr lán dīng	1
 廷得耳效应	tíng dé ěr xiào yìng	1
-听得很清楚	tīng de hěn qīng chǔ	1
+听得很清楚	tīng de hěn qīng chu	1
 听得太多了	tīng de tài duō le	1
 烃的衍生物	tīng de yǎn shēng wù	1
 廷蒂纳岩石	tíng dì nà yán shí	1
@@ -196715,7 +196717,7 @@ sort: by_weight
 透明质酸钠	tòu míng zhì suān nà	1
 透明柱蜥鱼	tòu míng zhù xī yú	1
 透明状态栏	tòu míng zhuàng tài lán	1
-头脑不清楚	tóu nǎo bù qīng chǔ	1
+头脑不清楚	tóu nǎo bù qīng chu	1
 头脑不清醒	tóu nǎo bù qīng xǐng	1
 头脑大作战	tóu nǎo dà zuò zhàn	1
 头脑风暴法	tóu nǎo fēng bào fǎ	1
@@ -198861,7 +198863,7 @@ sort: by_weight
 外商投资法	wài shāng tóu zī fǎ	1
 外伤性癫痫	wài shāng xìng diān xián	1
 外舌蜾蠃属	wài shé guǒ luǒ shǔ	1
-外甥打灯笼	wài shēng dǎ dēng lóng	1
+外甥打灯笼	wài sheng dǎ dēng lóng	1
 外省第二代	wài shěng dì èr dài	1
 外事办公室	wài shì bàn gōng shì	1
 外事委员会	wài shì wěi yuán huì	1
@@ -199641,7 +199643,7 @@ sort: by_weight
 完全不能吃	wán quán bù néng chī	1
 完全不配合	wán quán bú pèi hé	1
 完全不匹配	wán quán bù pǐ pèi	1
-完全不清楚	wán quán bù qīng chǔ	1
+完全不清楚	wán quán bù qīng chu	1
 完全不认识	wán quán bú rèn shi	1
 完全不认同	wán quán bú rèn tóng	1
 完全不适合	wán quán bú shì hé	1
@@ -201620,7 +201622,7 @@ sort: by_weight
 未兑现支票	wèi duì xiàn zhī piào	1
 围盾介壳虫	wéi dùn jiè ké chóng	1
 维多利亚岛	wéi duō lì yà dǎo	1
-味多美月饼	wèi duō měi yuè bǐng	1
+味多美月饼	wèi duō měi yuè bing	1
 为堕胎辩护	wéi duò tāi biàn hù	1
 巍峨的高山	wēi é de gāo shān	1
 巍峨的群山	wēi é de qún shān	1
@@ -205577,7 +205579,7 @@ sort: by_weight
 我国农产品	wǒ guó nóng chǎn pǐn	1
 我国天然气	wǒ guó tiān rán qì	1
 我还爱着你	wǒ hái ài zhe nǐ	1
-我还不清楚	wǒ hái bù qīng chǔ	1
+我还不清楚	wǒ hái bù qīng chu	1
 我还不想死	wǒ hái bù xiǎng sǐ	1
 我还不相信	wǒ hái bù xiāng xìn	1
 我还不晓得	wǒ hái bù xiǎo de	1
@@ -207332,7 +207334,7 @@ sort: by_weight
 我停不下来	wǒ tíng bú xià lái	1
 我挺吃惊的	wǒ tǐng chī jīng de	1
 我听得出来	wǒ tīng de chū lái	1
-我听得清楚	wǒ tīng de qīng chǔ	1
+我听得清楚	wǒ tīng de qīng chu	1
 我挺烦你的	wǒ tǐng fán nǐ de	1
 我挺烦他的	wǒ tǐng fán tā de	1
 我听风就是	wǒ tīng fēng jiù shì	1
@@ -207492,7 +207494,7 @@ sort: by_weight
 我想变成鸟	wǒ xiǎng biàn chéng niǎo	1
 我想不出来	wǒ xiǎng bù chū lái	1
 我想不起来	wǒ xiǎng bù qǐ lái	1
-我想不清楚	wǒ xiǎng bù qīng chǔ	1
+我想不清楚	wǒ xiǎng bù qīng chu	1
 我想吃草莓	wǒ xiǎng chī cǎo méi	1
 我想吃西瓜	wǒ xiǎng chī xī guā	1
 我想吃鱼卷	wǒ xiǎng chī yú juàn	1
@@ -207715,7 +207717,7 @@ sort: by_weight
 我也不可能	wǒ yě bù kě néng	1
 我也不了解	wǒ yě bù liǎo jiě	1
 我也不明白	wǒ yě bù míng bái	1
-我也不清楚	wǒ yě bù qīng chǔ	1
+我也不清楚	wǒ yě bù qīng chu	1
 我也不去了	wǒ yě bú qù le	1
 我也不确定	wǒ yě bú què dìng	1
 我也不认识	wǒ yě bú rèn shi	1
@@ -208560,7 +208562,7 @@ sort: by_weight
 武大看樱花	wǔ dà kàn yīng huā	1
 邬达克旧居	wū dá kè jiù jū	1
 武大郎开店	wǔ dà láng kāi diàn	1
-武大郎烧饼	wǔ dà láng shāo bǐng	1
+武大郎烧饼	wǔ dà láng shāo bing	1
 五大连池湖	wǔ dà lián chí hú	1
 五大连池人	wǔ dà lián chí rén	1
 五大连池站	wǔ dà lián chí zhàn	1
@@ -221386,7 +221388,7 @@ sort: by_weight
 斜井提升机	xié jǐng tí shēng jī	1
 斜井装岩机	xié jǐng zhuāng yán jī	1
 斜锯牙鲨属	xié jù yá shā shǔ	1
-蟹壳黄烧饼	xiè ké huáng shāo bǐng	1
+蟹壳黄烧饼	xiè ké huáng shāo bing	1
 胁空鸟龙科	xié kōng niǎo lóng kē	1
 胁空鸟龙属	xié kōng niǎo lóng shǔ	1
 斜口鱥鱼属	xié kǒu guì yú shǔ	1
@@ -224980,7 +224982,7 @@ sort: by_weight
 杏花岭分局	xìng huā lǐng fēn jú	1
 杏花岭街道	xìng huā lǐng jiē dào	1
 杏花楼集团	xìng huā lóu jí tuán	1
-杏花楼月饼	xìng huā lóu yuè bǐng	1
+杏花楼月饼	xìng huā lóu yuè bing	1
 兴华路街道	xīng huá lù jiē dào	1
 兴化平话字	xīng huà píng huà zì	1
 杏花弦外雨	xìng huā xián wài yǔ	1
@@ -229371,7 +229373,7 @@ sort: by_weight
 亚硬孔菌属	yà yìng kǒng jūn shǔ	1
 鸭涌河公园	yā yǒng hé gōng yuán	1
 牙蛹蜗牛科	yá yǒng wō niú kē	1
-鸭油酥烧饼	yā yóu sū shāo bǐng	1
+鸭油酥烧饼	yā yóu sū shāo bing	1
 亚油酸乙酯	yà yóu suān yǐ zhǐ	1
 亚原子粒子	yà yuán zǐ lì zǐ	1
 雅乐轩酒店	yǎ yuè xuān jiǔ diàn	1
@@ -232667,7 +232669,7 @@ sort: by_weight
 叶菊石亚目	yè jú shí yà mù	1
 也开始做了	yě kāi shǐ zuò le	1
 也看不出来	yě kàn bù chū lái	1
-也看不清楚	yě kàn bù qīng chǔ	1
+也看不清楚	yě kàn bù qīng chu	1
 椰壳活性炭	yē ké huó xìng tàn	1
 也可以服用	yě kě yǐ fú yòng	1
 也可以看到	yě kě yǐ kàn dào	1
@@ -234416,7 +234418,7 @@ sort: by_weight
 一夫一妻制	yì fū yì qī zhì	1
 衣服怎么穿	yī fu zěn me chuān	1
 衣服真好看	yī fu zhēn hǎo kàn	1
-一概不清楚	yí gài bù qīng chǔ	1
+一概不清楚	yí gài bù qīng chu	1
 依概率收敛	yī gài lǜ shōu liǎn	1
 一杆霸王枪	yì gǎn bà wáng qiāng	1
 乙肝大三阳	yǐ gān dà sān yáng	1
@@ -249683,7 +249685,7 @@ sort: by_weight
 暂时不会有	zàn shí bú huì yǒu	1
 暂时不可能	zàn shí bù kě néng	1
 暂时不可用	zàn shí bù kě yòng	1
-暂时不清楚	zàn shí bù qīng chǔ	1
+暂时不清楚	zàn shí bù qīng chu	1
 暂时不知道	zàn shí bù zhī dào	1
 暂时不准备	zàn shí bù zhǔn bèi	1
 暂时的和平	zàn shí de hé píng	1
@@ -253482,7 +253484,7 @@ sort: by_weight
 真的不明白	zhēn de bù míng bái	1
 真的不能怪	zhēn de bù néng guài	1
 真的不骗你	zhēn de bú piàn nǐ	1
-真的不清楚	zhēn de bù qīng chǔ	1
+真的不清楚	zhēn de bù qīng chu	1
 真的不认识	zhēn de bú rèn shi	1
 真的不忍心	zhēn de bù rěn xīn	1
 真的不容易	zhēn de bù róng yì	1
@@ -261113,7 +261115,7 @@ sort: by_weight
 中青年演员	zhōng qīng nián yǎn yuán	1
 中青年作家	zhōng qīng nián zuò jiā	1
 钟情张国荣	zhōng qíng zhāng guó róng	1
-中秋吃月饼	zhōng qiū chī yuè bǐng	1
+中秋吃月饼	zhōng qiū chī yuè bing	1
 中秋的月亮	zhōng qiū de yuè liàng	1
 中秋国庆节	zhōng qiū guó qìng jié	1
 中秋和国庆	zhōng qiū hé guó qìng	1
@@ -261131,7 +261133,7 @@ sort: by_weight
 中秋节赏月	zhōng qiū jié shǎng yuè	1
 中秋节食品	zhōng qiū jié shí pǐn	1
 中秋节晚会	zhōng qiū jié wǎn huì	1
-中秋节月饼	zhōng qiū jié yuè bǐng	1
+中秋节月饼	zhōng qiū jié yuè bing	1
 中秋赏月险	zhōng qiū shǎng yuè xiǎn	1
 中秋小长假	zhōng qiū xiǎo cháng jià	1
 忠犬八千公	zhōng quǎn bā qiān gōng	1
@@ -276372,6 +276374,17 @@ sort: by_weight
 倡导移风易俗	chàng dǎo yí fēng yì sú	1
 长岛一向一揆	cháng dǎo yí xiàng yì kuí	1
 长岛照明公司	cháng dǎo zhào míng gōng sī	1
+长得不够好看	cháng dé bù gòu hǎo kàn	1
+长得不够漂亮	cháng dé bù gòu piào liang	1
+长得不太好看	cháng dé bù tài hǎo kàn	1
+长得不怎么样	cháng dé bù zěn me yàng	1
+长得都差不多	cháng dé dōu chà bù duō	1
+长得非常好看	cháng dé fēi cháng hǎo kàn	1
+长得非常可爱	cháng dé fēi cháng kě ài	1
+长得非常漂亮	cháng dé fēi cháng piào liang	1
+长得也很漂亮	cháng dé yě hěn piào liang	1
+长得一模一样	cháng dé yī mó yí yàng	1
+长得有点着急	cháng děi yǒu diǎn zháo jí	1
 场地车世锦赛	chǎng dì chē shì jǐn sài	1
 场地地质效应	chǎng dì dì zhì xiào yìng	1
 长电紫盈花城	cháng diàn zǐ yíng huā chéng	1
@@ -285485,7 +285498,7 @@ sort: by_weight
 告别千篇一律	gào bié qiān piān yí lǜ	1
 高波级护卫舰	gāo bō jí hù wèi jiàn	1
 高埗大桥旧址	gāo bù dà qiáo jiù zhǐ	1
-搞不清楚状况	gǎo bù qīng chǔ zhuàng kuàng	1
+搞不清楚状况	gǎo bù qīng chu zhuàng kuàng	1
 高层人事变动	gāo céng rén shì biàn dòng	1
 高昌古城遗址	gāo chāng gǔ chéng yí zhǐ	1
 高昌回鹘汗国	gāo chāng huí hú hàn guó	1
@@ -290076,7 +290089,7 @@ sort: by_weight
 很强的占有欲	hěn qiáng de zhàn yǒu yù	1
 很强烈的感觉	hěn qiáng liè de gǎn jué	1
 很亲密的关系	hěn qīn mì de guān xì	1
-很清楚地知道	hěn qīng chǔ de zhī dào	1
+很清楚地知道	hěn qīng chu de zhī dào	1
 很清新的感觉	hěn qīng xīn de gǎn jué	1
 很容易看出的	hěn róng yì kàn chū de	1
 很少的一部分	hěn shǎo de yī bù fēn	1
@@ -297138,7 +297151,7 @@ sort: by_weight
 坎迪多齿鳄属	kǎn dí duō chǐ è shǔ	1
 看电视的时间	kàn diàn shì de shí jiān	1
 看都不看一眼	kàn dōu bú kàn yì yǎn	1
-看都看不清楚	kàn dōu kàn bù qīng chǔ	1
+看都看不清楚	kàn dōu kàn bù qīng chu	1
 看见是看不见	kàn jiàn shì kàn bú jiàn	1
 看看你的简历	kàn kàn nǐ de jiǎn lì	1
 看看我儿子的	kàn kàn wǒ ér zi de	1
@@ -300405,7 +300418,7 @@ sort: by_weight
 六小龄童老师	liù xiǎo líng tóng lǎo shī	1
 六硝酸甘露醇	liù xiāo suān gān lù chún	1
 六硝酸根合铈	liù xiāo suān gēn hé shì	1
-流心奶黄月饼	liú xīn nǎi huáng yuè bǐng	1
+流心奶黄月饼	liú xīn nǎi huáng yuè bing	1
 流行病学调查	liú xíng bìng xué diào chá	1
 流行病学分析	liú xíng bìng xué fēn xī	1
 流行病学期刊	liú xíng bìng xué qī kān	1
@@ -302826,7 +302839,7 @@ sort: by_weight
 魔法师的帽子	mó fǎ shī de mào zi	1
 魔法师的门徒	mó fǎ shī de mén tú	1
 魔法使的条件	mó fǎ shǐ de tiáo jiàn	1
-魔法师的外甥	mó fǎ shī de wài shēng	1
+魔法师的外甥	mó fǎ shī de wài sheng	1
 魔法使的新娘	mó fǎ shǐ de xīn niáng	1
 魔法师的学徒	mó fǎ shī de xué tú	1
 魔法战士李维	mó fǎ zhàn shì lǐ wéi	1
@@ -303638,7 +303651,7 @@ sort: by_weight
 能明显感受到	néng míng xiǎn gǎn shòu dào	1
 能耐得住寂寞	néng nài de zhù jì mò	1
 能清楚的看到	néng qīng chǔ de kàn dào	1
-能清楚地看到	néng qīng chǔ de kàn dào	1
+能清楚地看到	néng qīng chu de kàn dào	1
 能清晰的看到	néng qīng xī de kàn dào	1
 能清晰地看到	néng qīng xī de kàn dào	1
 能少吃就少吃	néng shǎo chī jiù shǎo chī	1
@@ -309364,7 +309377,7 @@ sort: by_weight
 杀人就要偿命	shā rén jiù yào cháng mìng	1
 厦蓉高速公路	shà róng gāo sù gōng lù	1
 砂蕊象牙椰属	shā ruǐ xiàng yá yē shǔ	1
-傻傻分不清楚	shǎ shǎ fēn bù qīng chǔ	1
+傻傻分不清楚	shǎ shǎ fēn bù qīng chu	1
 莎莎妇女银袋	shā shā fù nǚ yín dài	1
 厦沙高速公路	shà shā gāo sù gōng lù	1
 沙厦高速公路	shā shà gāo sù gōng lù	1
@@ -314789,7 +314802,7 @@ sort: by_weight
 苏氏荣华食品	sū shì róng huá shí pǐn	1
 苏式社会主义	sū shì shè huì zhǔ yì	1
 苏氏吻鰕虎鱼	sū shì wěn xiā hǔ yú	1
-苏式鲜肉月饼	sū shì xiān ròu yuè bǐng	1
+苏式鲜肉月饼	sū shì xiān ròu yuè bing	1
 苏氏须唇飞鱼	sū shì xū chún fēi yú	1
 素食制作技艺	sù shí zhì zuò jì yì	1
 素数倒数幻方	sù shù dào shǔ huàn fāng	1
@@ -316336,7 +316349,7 @@ sort: by_weight
 听到她的声音	tīng dào tā de shēng yīn	1
 听到一声巨响	tīng dào yì shēng jù xiǎng	1
 听到一些风声	tīng dào yì xiē fēng shēng	1
-听得不太清楚	tīng de bú tài qīng chǔ	1
+听得不太清楚	tīng de bú tài qīng chu	1
 听得懂的语言	tīng de dǒng de yǔ yán	1
 廷德尔氏效应	tíng dé ěr shì xiào yìng	1
 听得见的梦想	tīng de jiàn de mèng xiǎng	1
@@ -320275,21 +320288,21 @@ sort: by_weight
 显得格外迷人	xiǎn de gé wài mí rén	1
 显得格外清新	xiǎn de gé wài qīng xīn	1
 显得格外耀眼	xiǎn de gé wài yào yǎn	1
-显得更加成熟	xiǎn de gèng jiā chéng shú	1
-显得更加大气	xiǎn de gèng jiā dà qì	1
-显得更加高挑	xiǎn de gèng jiā gāo tiǎo	1
-显得更加活泼	xiǎn de gèng jiā huó pō	1
-显得更加精致	xiǎn de gèng jiā jīng zhì	1
-显得更加可爱	xiǎn de gèng jiā kě ài	1
-显得更加立体	xiǎn de gèng jiā lì tǐ	1
-显得更加美丽	xiǎn de gèng jiā měi lì	1
-显得更加迷人	xiǎn de gèng jiā mí rén	1
-显得更加年轻	xiǎn de gèng jiā nián qīng	1
-显得更加时尚	xiǎn de gèng jiā shí shàng	1
-显得更加帅气	xiǎn de gèng jiā shuài qì	1
-显得更加修长	xiǎn de gèng jiā xiū cháng	1
-显得更加优雅	xiǎn de gèng jiā yōu yǎ	1
-显得更加专业	xiǎn de gèng jiā zhuān yè	1
+显得更加成熟	xiǎn dé gèng jiā chéng shú	1
+显得更加大气	xiǎn dé gèng jiā dà qì	1
+显得更加高挑	xiǎn dé gèng jiā gāo tiǎo	1
+显得更加活泼	xiǎn dé gèng jiā huó pō	1
+显得更加精致	xiǎn dé gèng jiā jīng zhì	1
+显得更加可爱	xiǎn dé gèng jiā kě ài	1
+显得更加立体	xiǎn dé gèng jiā lì tǐ	1
+显得更加美丽	xiǎn dé gèng jiā měi lì	1
+显得更加迷人	xiǎn dé gèng jiā mí rén	1
+显得更加年轻	xiǎn dé gèng jiā nián qīng	1
+显得更加时尚	xiǎn dé gèng jiā shí shàng	1
+显得更加帅气	xiǎn dé gèng jiā shuài qì	1
+显得更加修长	xiǎn dé gèng jiā xiū cháng	1
+显得更加优雅	xiǎn dé gèng jiā yōu yǎ	1
+显得更加专业	xiǎn dé gèng jiā zhuān yè	1
 显得落落大方	xiǎn de luò luò dà fāng	1
 显得弥足珍贵	xiǎn de mí zú zhēn guì	1
 显得俏皮可爱	xiǎn de qiào pí kě ài	1
@@ -320300,8 +320313,8 @@ sort: by_weight
 显得微不足道	xiǎn de wēi bù zú dào	1
 显得相形见绌	xiǎn de xiāng xíng jiàn chù	1
 显得尤为珍贵	xiǎn de yóu wéi zhēn guì	1
-显得有些呆板	xiǎn de yǒu xiē dāi bǎn	1
-显得有些局促	xiǎn de yǒu xiē jú cù	1
+显得有些呆板	xiǎn dé yǒu xiē dāi bǎn	1
+显得有些局促	xiǎn dé yǒu xiē jú cù	1
 先帝称之曰能	xiān dì chēng zhī yuē néng	1
 先帝创业未半	xiān dì chuàng yè wèi bàn	1
 蚬蝶科导航框	xiǎn dié kē dǎo háng kuàng	1
@@ -325231,11 +325244,11 @@ sort: by_weight
 医师多点执业	yī shī duō diǎn zhí yè	1
 一石二鸟之计	yì shí èr niǎo zhī jì	1
 伊氏副狮子鱼	yī shì fù shī zi yú	1
-一时搞不清楚	yì shí gǎo bù qīng chǔ	1
+一时搞不清楚	yì shí gǎo bù qīng chu	1
 意识和潜意识	yì shí hé qián yì shí	1
 依氏黑头鱼属	yī shì hēi tóu yú shǔ	1
 一时回忆不起	yì shí huí yì bù qǐ	1
-一时记不清楚	yī shí jì bù qīng chǔ	1
+一时记不清楚	yī shí jì bù qīng chu	1
 一是加强营养	yī shì jiā qiáng yíng yǎng	1
 以时间换空间	yǐ shí jiān huàn kōng jiān	1
 意识决定物质	yì shí jué dìng wù zhì	1
@@ -328554,14 +328567,6 @@ sort: by_weight
 张大客运专线	zhāng dà kè yùn zhuān xiàn	1
 张大眼睛看着	zhāng dà yǎn jing kàn zhe	1
 张丹峰和洪欣	zhāng dān fēng hé hóng xīn	1
-长得不够好看	zhǎng de bú gòu hǎo kàn	1
-长得不够漂亮	zhǎng de bú gòu piào liang	1
-长得不太好看	zhǎng de bú tài hǎo kàn	1
-长得不怎么样	zhǎng de bù zěn me yàng	1
-长得都差不多	zhǎng de dōu chà bù duō	1
-长得非常好看	zhǎng de fēi cháng hǎo kàn	1
-长得非常可爱	zhǎng de fēi cháng kě ài	1
-长得非常漂亮	zhǎng de fēi cháng piào liang	1
 彰德军节度使	zhāng dé jūn jié dù shǐ	1
 长得眉清目秀	zhǎng de méi qīng mù xiù	1
 章的前半部分	zhāng de qián bàn bù fèn	1
@@ -328569,9 +328574,6 @@ sort: by_weight
 长得太好看了	zhǎng de tài hǎo kàn le	1
 长得特别好看	zhǎng de tè bié hǎo kàn	1
 长得特别漂亮	zhǎng de tè bié piào liang	1
-长得也很漂亮	zhǎng de yě hěn piào liang	1
-长得一模一样	zhǎng de yì mú yí yàng	1
-长得有点着急	zhǎng de yǒu diǎn zháo jí	1
 长得越来越像	zhǎng de yuè lái yuè xiàng	1
 张店交警大队	zhāng diàn jiāo jǐng dà duì	1
 涨跌停板幅度	zhǎng dié tíng bǎn fú dù	1
@@ -332865,8 +332867,8 @@ sort: by_weight
 做到知己知彼	zuò dào zhī jǐ zhī bǐ	1
 做到知书达理	zuò dào zhī shū dá lǐ	1
 做到知行合一	zuò dào zhī xíng hé yī	1
-做得非常出色	zuò de fēi cháng chū sè	1
-做得非常漂亮	zuò de fēi cháng piào liang	1
+做得非常出色	zuò dé fēi cháng chū sè	1
+做得非常漂亮	zuò dé fēi cháng piào liang	1
 做得风生水起	zuò de fēng shēng shuǐ qǐ	1
 做得还不够好	zuò de hái bú gòu hǎo	1
 做的每一件事	zuò de měi yí jiàn shì	1
@@ -333611,7 +333613,7 @@ sort: by_weight
 八月的棒球甜心	bā yuè de bàng qiú tián xīn	1
 八月里的黄瓜棚	bā yuè lǐ de huáng guā péng	1
 八月秋高风怒号	bā yuè qiū gāo fēng nù háo	1
-八月十五的月饼	bā yuè shí wǔ de yuè bǐng	1
+八月十五的月饼	bā yuè shí wǔ de yuè bing	1
 八月十五的月亮	bā yuè shí wǔ de yuè liàng	1
 八月十五过端阳	bā yuè shí wǔ guò duān yáng	1
 八月十五看龙灯	bā yuè shí wǔ kàn lóng dēng	1
@@ -334585,12 +334587,12 @@ sort: by_weight
 边充电边玩手机	biān chōng diàn biān wán shǒu jī	1
 变得更加的成熟	biàn de gèng jiā de chéng shú	1
 变得熟悉又陌生	biàn de shú xī yòu mò shēng	1
-变得越来越成熟	biàn de yuè lái yuè chéng shú	1
-变得越来越复杂	biàn de yuè lái yuè fù zá	1
-变得越来越漂亮	biàn de yuè lái yuè piào liang	1
+变得越来越成熟	biàn dé yuè lái yuè chéng shú	1
+变得越来越复杂	biàn dé yuè lái yuè fù zá	1
+变得越来越漂亮	biàn dé yuè lái yuè piào liang	1
 变得越来越强大	biàn de yuè lái yuè qiáng dà	1
-变得越来越优秀	biàn de yuè lái yuè yōu xiù	1
-变得越来越自信	biàn de yuè lái yuè zì xìn	1
+变得越来越优秀	biàn dé yuè lái yuè yōu xiù	1
+变得越来越自信	biàn dé yuè lái yuè zì xìn	1
 遍地哀鸿满城血	biàn dì āi hóng mǎn chéng xuè	1
 变分贝叶斯方法	biàn fēn bèi yè sī fāng fǎ	1
 蝙蝠传播的病毒	biān fú chuán bō de bìng dú	1
