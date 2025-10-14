@@ -20638,7 +20638,7 @@ sort: by_weight
 查帕溪脂鲤	chá pà xī zhī lǐ	1
 叉拍尾蜂鸟	chā pāi wěi fēng niǎo	1
 查皮裸吻鱼	chá pí luǒ wěn yú	1
-差热分析仪	chà rè fēn xī yí	1
+差热分析仪	chā rè fēn xī yí	1
 茶人三部曲	chá rén sān bù qǔ	1
 插入超链接	chā rù chāo liàn jiē	1
 插入排序法	chā rù pái xù fǎ	1
@@ -28197,6 +28197,7 @@ sort: by_weight
 出了那么多	chū le nà me duō	1
 除了你以外	chú le nǐ yǐ wài	1
 除了你之外	chú le nǐ zhī wài	1
+出了什么事	chū le shén me shì	1
 出了什么事	chū le shén me shì	1
 除了他以外	chú le tā yǐ wài	1
 除了他之外	chú le tā zhī wài	1
@@ -38254,6 +38255,7 @@ sort: by_weight
 得了肩周炎	dé le jiān zhōu yán	1
 得了精神病	dé le jīng shén bìng	1
 得了颈椎病	dé le jǐng zhuī bìng	1
+得了什么病	dé le shén me bìng	1
 得了什么病	dé le shén me bìng	1
 得了失心疯	dé le shī xīn fēng	1
 得了糖尿病	dé le táng niào bìng	1
@@ -52168,6 +52170,7 @@ sort: by_weight
 发生了口角	fā shēng le kǒu jué	1
 发生了矛盾	fā shēng le máo dùn	1
 发生了什么	fā shēng le shén me	1
+发生了什么	fā shēng le shén me	1
 发生了一次	fā shēng le yí cì	1
 发生了一起	fā shēng le yì qǐ	1
 发生了意外	fā shēng le yì wài	1
@@ -52267,6 +52270,7 @@ sort: by_weight
 发现了另一	fā xiàn le lìng yī	1
 发现了没有	fā xiàn le méi yǒu	1
 发现了商机	fā xiàn le shāng jī	1
+发现了什么	fā xiàn le shén me	1
 发现了什么	fā xiàn le shén me	1
 发现了问题	fā xiàn le wèn tí	1
 发现了一个	fā xiàn le yí gè	1
@@ -55699,6 +55703,7 @@ sort: by_weight
 非纳税收益	fēi nà shuì shōu yì	1
 非那斯特莱	fēi nà sī tè lái	1
 非那雄胺片	fēi nà xióng àn piàn	1
+非奈利酮片	fēi nài lì tóng piàn	1
 肺囊虫肺炎	fèi náng chóng fèi yán	1
 非内阁部门	fēi nèi gé bù mén	1
 非你不挂念	fēi nǐ bú guà niàn	1
@@ -57929,6 +57934,7 @@ sort: by_weight
 疯狂的表现	fēng kuáng de biǎo xiàn	1
 疯狂的蠢贼	fēng kuáng de chǔn zéi	1
 疯狂的代价	fēng kuáng de dài jià	1
+疯狂的地步	fēng kuáng de dì bù	1
 疯狂的粉丝	fēng kuáng de fěn sī	1
 疯狂的攻击	fēng kuáng de gōng jī	1
 疯狂的工作	fēng kuáng de gōng zuò	1
@@ -80993,6 +80999,7 @@ sort: by_weight
 核心领导层	hé xīn lǐng dǎo céng	1
 何信禄龙属	hé xìn lù lóng shǔ	1
 核心路由器	hé xīn lù yóu qì	1
+核心期待感	hé xīn qī dài gǎn	1
 核心启动区	hé xīn qǐ dòng qū	1
 核心驱动力	hé xīn qū dòng lì	1
 核心区范围	hé xīn qū fàn wéi	1
@@ -102350,6 +102357,7 @@ sort: by_weight
 结婚的结婚	jié hūn de jié hūn	1
 结婚的理由	jié hūn de lǐ yóu	1
 结婚的那天	jié hūn de nà tiān	1
+结婚的年纪	jié hūn de nián jì	1
 结婚的年龄	jié hūn de nián líng	1
 结婚的女人	jié hūn de nǚ rén	1
 结婚的女神	jié hūn de nǚ shén	1
@@ -106358,6 +106366,7 @@ sort: by_weight
 经历了风雨	jīng lì le fēng yǔ	1
 经历了高考	jīng lì le gāo kǎo	1
 经历了离婚	jīng lì le lí hūn	1
+经历了什么	jīng lì le shén me	1
 经历了什么	jīng lì le shén me	1
 经历了生死	jīng lì le shēng sǐ	1
 经历了太多	jīng lì le tài duō	1
@@ -112091,6 +112100,7 @@ sort: by_weight
 看到了光明	kàn dào le guāng míng	1
 看到了没有	kàn dào le méi yǒu	1
 看到了商机	kàn dào le shāng jī	1
+看到了什么	kàn dào le shén me	1
 看到了什么	kàn dào le shén me	1
 看到了世界	kàn dào le shì jiè	1
 看到了曙光	kàn dào le shǔ guāng	1
@@ -135465,7 +135475,6 @@ sort: by_weight
 民主革命家	mín zhǔ gé mìng jiā	1
 民主共和党	mín zhǔ gòng hé dǎng	1
 民主共和国	mín zhǔ gòng hé guó	1
-民主共和政	mín zhǔ gòng hé zhèng	1
 民主共和制	mín zhǔ gòng hé zhì	1
 民主捍卫者	mín zhǔ hàn wèi zhě	1
 民主和科学	mín zhǔ hé kē xué	1
@@ -168108,6 +168117,8 @@ sort: by_weight
 上行下给式	shàng xíng xià gěi shì	1
 上学的孩子	shàng xué de hái zi	1
 上学的路上	shàng xué de lù shàng	1
+上学的年纪	shàng xué de nián jì	1
+上学的年龄	shàng xué de nián líng	1
 上学的日子	shàng xué de rì zi	1
 上学的上学	shàng xué de shàng xué	1
 上学的时候	shàng xué de shí hou	1
@@ -177871,6 +177882,7 @@ sort: by_weight
 是啥玩意啊	shì shá wán yì a	1
 是啥意思啊	shì shá yì si a	1
 是啥意思了	shì shá yì si le	1
+是啥原因呢	shì shá yuán yīn ne	1
 石山坂本线	shí shān bǎn běn xiàn	1
 石山本愿寺	shí shān běn yuàn sì	1
 狮山大学城	shī shān dà xué chéng	1
@@ -180703,6 +180715,7 @@ sort: by_weight
 手绘效果图	shǒu huì xiào guǒ tú	1
 收货报告单	shōu huò bào gào dān	1
 收获的果实	shōu huò de guǒ shí	1
+收获的季节	shōu huò de jì jié	1
 收获的季节	shōu huò de jì jié	1
 收获的快乐	shōu huò de kuài lè	1
 收获的日子	shōu huò de rì zi	1
@@ -212187,6 +212200,7 @@ sort: by_weight
 喜欢帮助人	xǐ huān bāng zhù rén	1
 喜欢布莱德	xǐ huān bù lái dé	1
 喜欢不喜欢	xǐ huān bù xǐ huān	1
+喜欢不喜欢	xǐ huān bù xǐ huān	1
 喜欢吃大米	xǐ huān chī dà mǐ	1
 喜欢吃的菜	xǐ huān chī de cài	1
 喜欢吃东西	xǐ huān chī dōng xi	1
@@ -212724,6 +212738,7 @@ sort: by_weight
 溪流下口鲶	xī liú xià kǒu nián	1
 夕露沾我衣	xī lù zhān wǒ yī	1
 溪洛渡电站	xī luò dù diàn zhàn	1
+希律的生日	xī lǜ de shēng rì	1
 喜马灯心草	xǐ mǎ dēng xīn cǎo	1
 锡马尖条鳅	xī mǎ jiān tiáo qiū	1
 喜马拉雅猫	xǐ mǎ lā yǎ māo	1
@@ -226958,6 +226973,7 @@ sort: by_weight
 需要认识到	xū yào rèn shi dào	1
 需要人照顾	xū yào rén zhào gù	1
 需要身份证	xū yào shēn fèn zhèng	1
+需要什么了	xū yào shén me le	1
 需要什么样	xū yào shén me yàng	1
 需要升级了	xū yào shēng jí le	1
 需要使用时	xū yào shǐ yòng shí	1
@@ -230436,7 +230452,9 @@ sort: by_weight
 炎热的天气	yán rè de tiān qì	1
 炎热的午后	yán rè de wǔ hòu	1
 炎热的夏季	yán rè de xià jì	1
+炎热的夏季	yán rè de xià jì	1
 炎热的夏日	yán rè de xià rì	1
+炎热的夏天	yán rè de xià tiān	1
 炎热的下午	yán rè de xià wǔ	1
 炎热的夏夜	yán rè de xià yè	1
 炎热的夜晚	yán rè de yè wǎn	1
@@ -234053,13 +234071,17 @@ sort: by_weight
 一定不会输	yī dìng bú huì shū	1
 一定程度上	yí dìng chéng dù shàng	1
 一定的程度	yí dìng de chéng dù	1
+一定的程度	yí dìng de chéng dù	1
 一定的高度	yí dìng de gāo dù	1
 一定的关系	yí dìng de guān xì	1
 一定的好处	yí dìng de hǎo chù	1
 一定的距离	yí dìng de jù lí	1
+一定的年纪	yí dìng de nián jì	1
+一定的年龄	yí dìng de nián líng	1
 一定的强度	yí dìng de qiáng dù	1
 一定的深度	yí dìng de shēn dù	1
 一定的湿度	yí dìng de shī dù	1
+一定的时间	yí dìng de shí jiān	1
 一定的水平	yí dìng de shuǐ píng	1
 一定的速度	yí dìng de sù dù	1
 一定的温度	yí dìng de wēn dù	1
@@ -236162,6 +236184,7 @@ sort: by_weight
 以肉食为主	yǐ ròu shí wéi zhǔ	1
 以肉眼可见	yǐ ròu yǎn kě jiàn	1
 一如既往地	yì rú jì wǎng de	1
+一如你初妆	yì rú nǐ chū zhuāng	1
 一如年少时	yì rú nián shào shí	1
 亿瑞典克朗	yì ruì diǎn kè lǎng	1
 异蕊落檐属	yì ruǐ luò yán shǔ	1
@@ -237181,6 +237204,7 @@ sort: by_weight
 意味着放弃	yì wèi zhe fàng qì	1
 意味着风险	yì wèi zhe fēng xiǎn	1
 意味着更多	yì wèi zhe gèng duō	1
+意味着什么	yì wèi zhe shén me	1
 意味着什么	yì wèi zhe shén me	1
 意味着未来	yì wèi zhe wèi lái	1
 意味着一切	yì wèi zhe yí qiè	1
@@ -238426,6 +238450,7 @@ sort: by_weight
 隐藏于黑暗	yǐn cáng yú hēi àn	1
 隐藏在角落	yǐn cáng zài jiǎo luò	1
 隐藏在幕后	yǐn cáng zài mù hòu	1
+隐藏着什么	yǐn cáng zhe shén me	1
 隐藏着什么	yǐn cáng zhe shén me	1
 隐藏状态栏	yǐn cáng zhuàng tài lán	1
 阴曹朴丽鱼	yīn cáo pǔ lì yú	1
@@ -247264,6 +247289,7 @@ sort: by_weight
 约定的场所	yuē dìng de chǎng suǒ	1
 约定的地点	yuē dìng de dì diǎn	1
 约定的地方	yuē dìng de dì fāng	1
+约定的时间	yuē dìng de shí jiān	1
 约定的时间	yuē dìng de shí jiān	1
 约定好时间	yuē dìng hǎo shí jiān	1
 约定驾驶人	yuē dìng jià shǐ rén	1
@@ -256784,6 +256810,7 @@ sort: by_weight
 止步于此了	zhǐ bù yú cǐ le	1
 知不知道啊	zhī bù zhī dào a	1
 知不知道呢	zhī bù zhī dào ne	1
+值不值得买	zhí bù zhí dé mǎi	1
 值不值得买	zhí bù zhí dé mǎi	1
 值不值得做	zhí bù zhí dé zuò	1
 制裁俄罗斯	zhì cái é luó sī	1
@@ -270245,6 +270272,7 @@ sort: by_weight
 作词作曲家	zuò cí zuò qǔ jiā	1
 做促销活动	zuò cù xiāo huó dòng	1
 做错的事情	zuò cuò de shì qíng	1
+做错了什么	zuò cuò le shén me	1
 做错了什么	zuò cuò le shén me	1
 做错了事情	zuò cuò liǎo shì qíng	1
 做错一件事	zuò cuò yí jiàn shì	1
@@ -316613,8 +316641,6 @@ sort: by_weight
 同志仍需努力	tóng zhì réng xū nǔ lì	1
 同志仍须努力	tóng zhì réng xū nǔ lì	1
 通直散骑侍郎	tōng zhí sàn qí shì láng	1
-同治陕甘回变	tóng zhì shǎn gān huí biàn	1
-同治陕甘回乱	tóng zhì shǎn gān huí luàn	1
 同志社会运动	tóng zhì shè huì yùn dòng	1
 同知枢密院事	tóng zhī shū mì yuàn shì	1
 同治苏州府志	tóng zhì sū zhōu fǔ zhì	1
@@ -317478,6 +317504,7 @@ sort: by_weight
 网络安全保卫	wǎng luò ān quán bǎo wèi	1
 网络安全攻防	wǎng luò ān quán gōng fáng	1
 网络安全事件	wǎng luò ān quán shì jiàn	1
+网络安全术语	wǎng luò ān quán shù yǔ	1
 网络巴尔干化	wǎng luò bā ěr gān huà	1
 网络暴力事件	wǎng luò bào lì shì jiàn	1
 网络本体语言	wǎng luò běn tǐ yǔ yán	1
@@ -318504,9 +318531,7 @@ sort: by_weight
 我亲爱的父亲	wǒ qīn ài de fù qīn	1
 我亲爱的老师	wǒ qīn ài de lǎo shī	1
 我亲爱的妈妈	wǒ qīn ài de mā ma	1
-我亲爱的秘书	wǒ qīn ài de mì shū	1
 我亲爱的朋友	wǒ qīn ài de péng you	1
-我亲爱的未来	wǒ qīn ài de wèi lái	1
 我亲爱的祖国	wǒ qīn ài de zǔ guó	1
 斡勤巴儿合黑	wò qín bā ér hé hēi	1
 我轻轻的招手	wǒ qīng qīng de zhāo shǒu	1
@@ -337640,20 +337665,12 @@ sort: by_weight
 党的十九大召开	dǎng de shí jiǔ dà zhào kāi	1
 党的十七大精神	dǎng de shí qī dà jīng shén	1
 党的性质和宗旨	dǎng de xìng zhì hé zōng zhǐ	1
-当地的风俗习惯	dāng dì de fēng sú xí guàn	1
-当地的风土人情	dāng dì de fēng tú rén qíng	1
-当地的经济发展	dāng dì de jīng jì fā zhǎn	1
-当地的经济水平	dāng dì de jīng jì shuǐ píng	1
-当地的气候条件	dāng dì de qì hòu tiáo jiàn	1
 当地的生活水平	dāng dì de shēng huó shuǐ píng	1
 当地球停止转动	dāng dì qiú tíng zhǐ zhuàn dòng	1
 当归补血口服液	dāng guī bǔ xuè kǒu fú yè	1
 当归生姜羊肉汤	dāng guī shēng jiāng yáng ròu tāng	1
 当过去就在眼前	dāng guò qù jiù zài yǎn qián	1
-当哈利碰上莎莉	dāng hā lì pèng shàng shā lì	1
 当哈利遇到莎莉	dāng hā lì yù dào shā lì	1
-当哈利遇见莎莉	dāng hā lì yù jiàn shā lì	1
-当哈利遇上莎莉	dāng hā lì yù shàng shā lì	1
 党和人民的事业	dǎng hé rén mín de shì yè	1
 当和尚遇到钻石	dāng hé shàng yù dào zuàn shí	1
 当婚姻走到尽头	dāng hūn yīn zǒu dào jìn tóu	1
@@ -337684,10 +337701,6 @@ sort: by_weight
 当时轻别意中人	dāng shí qīng bié yì zhōng rén	1
 当事人进行主义	dāng shì rén jìn xíng zhǔ yì	1
 当时若不登高望	dāng shí ruò bù dēng gāo wàng	1
-当时我就吓傻了	dāng shí wǒ jiù xià shǎ le	1
-当时我就震惊了	dāng shí wǒ jiù zhèn jīng le	1
-当时怎么没想到	dāng shí zěn me méi xiǎng dào	1
-当时自怕中原复	dāng shí zì pà zhōng yuán fù	1
 当天和尚撞天钟	dàng tiān hé shàng zhuàng tiān zhōng	1
 当铁马遇上战车	dāng tiě mǎ yù shàng zhàn chē	1
 党委办公室主任	dǎng wěi bàn gōng shì zhǔ rèn	1
@@ -337734,25 +337747,6 @@ sort: by_weight
 道德非自然主义	dào dé fēi zì rán zhǔ yì	1
 道德形上学基础	dào dé xíng shàng xué jī chǔ	1
 道德与立法原理	dào dé yǔ lì fǎ yuán lǐ	1
-到底出了什么事	dào dǐ chū le shén me shì	1
-到底得了什么病	dào dǐ dé le shén me bìng	1
-到底发生了什么	dào dǐ fā shēng le shén me	1
-到底发现了什么	dào dǐ fā xiàn le shén me	1
-到底经历了什么	dào dǐ jīng lì le shén me	1
-到底看到了什么	dào dǐ kàn dào le shén me	1
-到底是啥原因呢	dào dǐ shì shá yuán yīn ne	1
-到底喜欢不喜欢	dào dǐ xǐ huān bù xǐ huān	1
-到底需要什么了	dào dǐ xū yào shén me le	1
-到底意味着什么	dào dǐ yì wèi zhe shén me	1
-到底隐藏着什么	dào dǐ yǐn cáng zhe shén me	1
-到底有没有怀孕	dào dǐ yǒu méi yǒu huái yùn	1
-到底有没有整容	dào dǐ yǒu méi yǒu zhěng róng	1
-到底有什么不同	dào dǐ yǒu shén me bù tóng	1
-到底有什么魅力	dào dǐ yǒu shén me mèi lì	1
-到底有什么魔力	dào dǐ yǒu shén me mó lì	1
-到底有什么意义	dào dǐ yǒu shén me yì yì	1
-到底值不值得买	dào dǐ zhí bù zhí dé mǎi	1
-到底做错了什么	dào dǐ zuò cuò le shén me	1
 道耳顿分压定律	dào ěr dùn fēn yā dìng lǜ	1
 道尔顿分压定律	dào ěr dùn fēn yā dìng lǜ	1
 道法自然除心魔	dào fǎ zì rán chú xīn mó	1
@@ -337770,24 +337764,7 @@ sort: by_weight
 到老终无怨恨心	dào lǎo zhōng wú yuàn hèn xīn	1
 倒了八辈子的霉	dào le bā bèi zi de méi	1
 倒了八辈子血霉	dào le bā bèi zi xuè méi	1
-到了吃饭的时间	dào le chī fàn de shí jiān	1
-到了二十一世纪	dào le èr shí yī shì jì	1
-到了疯狂的地步	dào le fēng kuáng de dì bù	1
-到了结婚的年纪	dào le jié hūn de nián jì	1
-到了另一个世界	dào le lìng yí gè shì jiè	1
 到了千年又觉陈	dào le qiān nián yòu jué chén	1
-到了上学的年纪	dào le shàng xué de nián jì	1
-到了上学的年龄	dào le shàng xué de nián líng	1
-到了适婚的年龄	dào le shì hūn de nián líng	1
-到了收获的季节	dào le shōu huò de jì jié	1
-到了希律的生日	dào le xī lǜ de shēng rì	1
-到了炎热的夏季	dào le yán rè de xià jì	1
-到了炎热的夏天	dào le yán rè de xià tiān	1
-到了一定的程度	dào le yí dìng de chéng dù	1
-到了一定的年纪	dào le yí dìng de nián jì	1
-到了一定的年龄	dào le yí dìng de nián líng	1
-到了一定的时间	dào le yí dìng de shí jiān	1
-到了约定的时间	dào le yuē dìng de shí jiān	1
 悼良会之永绝兮	dào liáng huì zhī yǒng jué xī	1
 道林格雷综合征	dào lín gé léi zōng hé zhēng	1
 道路等基础设施	dào lù děng jī chǔ shè shī	1
@@ -338182,19 +338159,6 @@ sort: by_weight
 第十八届超级碗	dì shí bā jiè chāo jí wǎn	1
 第十二世本因坊	dì shí èr shì běn yīn fāng	1
 迪氏拟半齿甲鲶	dí shì nǐ bàn chǐ jiǎ nián	1
-迪士尼动画世界	dí shì ní dòng huà shì jiè	1
-迪士尼度假区线	dí shì ní dù jià qū xiàn	1
-迪士尼飞天巡游	dí shì ní fēi tiān xún yóu	1
-迪士尼公主系列	dí shì ní gōng zhǔ xì liè	1
-迪士尼幻想工程	dí shì ní huàn xiǎng gōng chéng	1
-迪士尼经典动画	dí shì ní jīng diǎn dòng huà	1
-迪士尼九大元老	dí shì ní jiǔ dà yuán lǎo	1
-迪士尼卡通电影	dí shì ní kǎ tōng diàn yǐng	1
-迪士尼快速通行	dí shì ní kuài sù tōng xíng	1
-迪士尼收购福斯	dí shì ní shōu gòu fú sī	1
-迪士尼戏剧集团	dí shì ní xì jù jí tuán	1
-迪士尼戏剧制作	dí shì ní xì jù zhì zuò	1
-迪士尼在逃公主	dí shì ní zài táo gōng zhǔ	1
 第十七世噶玛巴	dì shí qī shì gá mǎ bā	1
 第十四个的目标	dì shí sì gè de mù biāo	1
 蒂氏脱硫念珠菌	dì shì tuō liú niàn zhū jūn	1
@@ -345831,6 +345795,7 @@ sort: by_weight
 胸甲拟半齿甲鲶	xiōng jiǎ nǐ bàn chǐ jiǎ nián	1
 胸廓出口综合征	xiōng kuò chū kǒu zōng hé zhēng	1
 熊去氧胆酸胶囊	xióng qù yǎng dǎn suān jiāo náng	1
+休达及梅利利亚	xiū dá jí méi lì lì yà	1
 溴代邻苯三酚红	xiù dài lín běn sān fēn hóng	1
 溴代三氟甲烷气	xiù dài sān fú jiǎ wán qì	1
 溴化四乙酸二锝	xiù huà sì yǐ suān èr dé	1

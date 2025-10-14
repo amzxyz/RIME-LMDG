@@ -220530,6 +220530,7 @@ sort: by_weight
 拙于林间鸠	zhuō yú lín jiān jiū	1
 濯雨梅香散	zhuó yǔ méi xiāng sàn	1
 捉鱼浅水中	zhuō yú qiǎn shuǐ zhōng	1
+琢玉思坚贞	zhuó yù sī jiān zhēn	1
 酌玉坐相召	zhuó yù zuò xiāng zhào	1
 卓哉居士翁	zhuó zāi jū shì wēng	1
 拙则近于直	zhuō zé jìn yú zhí	1
@@ -221526,7 +221527,7 @@ sort: by_weight
 自使癯者肥	zì shǐ qú zhě féi	1
 自是仁由己	zì shì rén yóu jǐ	1
 子诗如清风	zǐ shī rú qīng fēng	1
-子石如琢玉	zǐ shí rú zuó yù	1
+子石如琢玉	zǐ shí rú zhuó yù	1
 自是山公兴	zì shì shān gōng xīng	1
 自是少年行	zì shì shào nián xíng	1
 自是少闲人	zì shì shǎo xián rén	1
@@ -223965,7 +223966,6 @@ sort: by_weight
 坐隅临郡城	zuò yú lín jùn chéng	1
 坐与琴觞违	zuò yǔ qín shāng wéi	1
 座隅泉出洞	zuò yú quán chū dòng	1
-琢玉思坚贞	zuó yù sī jiān zhēn	1
 坐与西争重	zuò yǔ xī zhēng zhòng	1
 坐与虾蚬同	zuò yǔ xiā xiǎn tóng	1
 坐与亿兆庆	zuò yǔ yì zhào qìng	1
@@ -231024,7 +231024,7 @@ sort: by_weight
 鱼不可胜食也	yú bù kě shèng shí yě	1
 鱼不可脱于渊	yú bù kě tuō yú yuān	1
 余不知其何心	yú bù zhī qí hé xīn	1
-玉不琢不成器	yù bù zuó bù chéng qì	1
+玉不琢不成器	yù bù zhuó bù chéng qì	1
 欲采之以将寿	yù cǎi zhī yǐ jiāng shòu	1
 欲常常而见之	yù cháng cháng ér jiàn zhī	1
 於崇吾得见王	yú chóng wú dé jiàn wáng	1
@@ -238942,7 +238942,7 @@ sort: by_weight
 长羡归鸦自识村	cháng xiàn guī yā zì shí cūn	1
 长羡淮鱼压楚糟	cháng xiàn huái yú yā chǔ zāo	1
 长羡枚邹接长卿	cháng xiàn méi zōu jiē zhǎng qīng	1
-常羡人间琢玉郎	cháng xiàn rén jiān zuó yù láng	1
+常羡人间琢玉郎	cháng xiàn rén jiān zhuó yù láng	1
 长嫌世上浮云客	cháng xián shì shàng fú yún kè	1
 长羡蜗牛犹有舍	cháng xiàn wō niú yóu yǒu shě	1
 长嫌钟鼓聒湖山	cháng xián zhōng gǔ guā hú shān	1
@@ -243333,7 +243333,7 @@ sort: by_weight
 答谢民师论文帖	dá xiè mín shī lùn wén tiē	1
 大杏金黄小麦熟	dà xìng jīn huáng xiǎo mài shú	1
 大雄真迹枕危峦	dà xióng zhēn jì zhěn wēi luán	1
-大学三年闻琢玉	dà xué sān nián wén zuó yù	1
+大学三年闻琢玉	dà xué sān nián wén zhuó yù	1
 大言直取秦丞相	dà yán zhí qǔ qín chéng xiàng	1
 答杨明叔送米颂	dá yáng míng shū sòng mǐ sòng	1
 打叶穿帘雪未干	dǎ yè chuān lián xuě wèi gàn	1
@@ -244183,6 +244183,7 @@ sort: by_weight
 当时珠履三千客	dāng shí zhū lǚ sān qiān kè	1
 当时主母信尔言	dāng shí zhǔ mǔ xìn ěr yán	1
 当时朱弦写心曲	dāng shí zhū xián xiě xīn qū	1
+当时自怕中原复	dāng shí zì pà zhōng yuán fù	1
 当时自谓宗师妙	dāng shí zì wèi zōng shī miào	1
 当时自以为深固	dāng shí zì yǐ wéi shēn gù	1
 当时纵与绿珠去	dāng shí zòng yǔ lǜ zhū qù	1
@@ -302266,6 +302267,7 @@ sort: by_weight
 戏著幼舆岩石里	xì zhù yòu yú yán shí lǐ	1
 昔壮今衰殆不如	xī zhuàng jīn shuāi dài bù rú	1
 洗妆自趁霜钟早	xǐ zhuāng zì chèn shuāng zhōng zǎo	1
+细琢歌词稳称声	xì zhuó gē cí wěn chēng shēng	1
 细酌徐吟犹得在	xì zhuó xú yín yóu dé zài	1
 昔自长淮树去帆	xī zì cháng huái shù qù fān	1
 西自黄河东至淮	xī zì huáng hé dōng zhì huái	1
@@ -302277,7 +302279,6 @@ sort: by_weight
 喜奏声成凤鸟来	xǐ zòu shēng chéng fèng niǎo lái	1
 洗足关门听雨眠	xǐ zú guān mén tīng yǔ mián	1
 喜作肥马人笑之	xǐ zuò féi mǎ rén xiào zhī	1
-细琢歌词稳称声	xì zuó gē cí wěn chēng shēng	1
 戏作小词以送之	xì zuò xiǎo cí yǐ sòng zhī	1
 戏作小诗君一笑	xì zuò xiǎo shī jūn yí xiào	1
 峡隘闻说江陵府	xiá ài wén shuō jiāng líng fǔ	1
