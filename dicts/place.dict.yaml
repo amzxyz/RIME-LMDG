@@ -3027,8 +3027,8 @@ sort: by_weight
 潭头镇	tán tóu zhèn	293
 潭子区	tán zǐ qū	1
 唐家堡	táng jiā bǎo	340
-塘厦镇	táng shà zhèn	404
 汤旺县	tāng wàng xiàn	1
+塘厦镇	táng xià zhèn	404
 汤峪镇	tāng yù zhèn	336
 陶北村	táo běi cūn	219
 陶厂镇	táo chǎng zhèn	127
@@ -3231,7 +3231,6 @@ sort: by_weight
 王渠村	wáng qú cūn	69
 王曲乡	wáng qǔ xiāng	181
 王圈村	wáng quān cūn	127
-望厦村	wàng shà cūn	234
 王沙村	wáng shā cūn	69
 王山村	wáng shān cūn	112
 王石村	wáng shí cūn	1
@@ -3264,6 +3263,7 @@ sort: by_weight
 王屋镇	wáng wū zhèn	163
 王武庄	wáng wǔ zhuāng	210
 王西村	wáng xī cūn	52
+望厦村	wàng xià cūn	234
 王仙镇	wáng xiān zhèn	145
 王巷村	wáng xiàng cūn	139
 王相村	wáng xiāng cūn	52
@@ -16808,7 +16808,6 @@ sort: by_weight
 江热夏乡	jiāng rè xià xiāng	92
 江日堂乡	jiāng rì táng xiāng	116
 蒋三鸡庄	jiǎng sān jī zhuāng	35
-江厦街道	jiāng shà jiē dào	10
 江山底村	jiāng shān dǐ cūn	1
 姜山头村	jiāng shān tóu cūn	1
 蒋山镇村	jiǎng shān zhèn cūn	1
@@ -16837,6 +16836,7 @@ sort: by_weight
 江西营村	jiāng xī yíng cūn	35
 江西俞村	jiāng xī yú cūn	58
 将熙泽村	jiāng xī zé cūn	1
+江厦街道	jiāng xià jiē dào	10
 降香坪村	jiàng xiāng píng cūn	1
 蒋巷镇村	jiǎng xiàng zhèn cūn	1
 蒋辛屯镇	jiǎng xīn tún zhèn	173
@@ -17238,7 +17238,6 @@ sort: by_weight
 金沙夼村	jīn shā kuǎng cūn	1
 金厦山庄	jīn shà shān zhuāng	1
 金沙滩镇	jīn shā tān zhèn	183
-锦厦新村	jǐn shà xīn cūn	1
 金沙新村	jīn shā xīn cūn	1
 金山堡村	jīn shān bǎo cūn	105
 金山店镇	jīn shān diàn zhèn	207
@@ -17289,6 +17288,7 @@ sort: by_weight
 锦溪古镇	jǐn xī gǔ zhèn	387
 金溪山庄	jīn xī shān zhuāng	203
 金霞街道	jīn xiá jiē dào	10
+锦厦新村	jǐn xià xīn cūn	1
 进鲜港村	jìn xiān gǎng cūn	1
 金线沟村	jīn xiàn gōu cūn	1
 金乡街道	jīn xiāng jiē dào	10
@@ -25877,9 +25877,7 @@ sort: by_weight
 沙樊头村	shā fán tóu cūn	1
 沙凤新村	shā fèng xīn cūn	1
 沙岗店村	shā gǎng diàn cūn	1
-厦港街道	shà gǎng jiē dào	10
 沙港头村	shā gǎng tóu cūn	1
-厦港新村	shà gǎng xīn cūn	134
 沙岗子村	shā gǎng zǐ cūn	77
 沙圪垯村	shā gē da cūn	1
 沙圪堵镇	shā gē dǔ zhèn	183
@@ -30726,7 +30724,6 @@ sort: by_weight
 王沙埠村	wáng shā bù cūn	1
 王沙沟村	wáng shā gōu cūn	1
 王沙湾村	wáng shā wān cūn	1
-望厦新村	wàng shà xīn cūn	1
 王山底村	wáng shān dǐ cūn	77
 王山沟村	wáng shān gōu cūn	1
 王芟河村	wáng shān hé cūn	1
@@ -30803,6 +30800,7 @@ sort: by_weight
 王西沟村	wáng xī gōu cūn	1
 王西章乡	wáng xī zhāng xiāng	35
 王喜庄村	wáng xǐ zhuāng cūn	1
+望厦新村	wàng xià xīn cūn	1
 王仙庄村	wáng xiān zhuāng cūn	1
 王香铺村	wáng xiāng pù cūn	1
 王辛店村	wáng xīn diàn cūn	1
@@ -33336,6 +33334,8 @@ sort: by_weight
 下房子村	xià fáng zi cūn	92
 下符桥镇	xià fú qiáo zhèn	116
 下甘沟村	xià gān gōu cūn	1
+厦港街道	xià gǎng jiē dào	10
+厦港新村	xià gǎng xīn cūn	134
 夏各庄村	xià gè zhuāng cūn	92
 夏各庄镇	xià gè zhuāng zhèn	173
 夏格庄镇	xià gé zhuāng zhèn	116

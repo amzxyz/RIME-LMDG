@@ -843,7 +843,7 @@ sort: by_weight
 爱神的阴影	ài shén de yīn yǐng	1
 矮身间吸鳅	ǎi shēn jiān xī qiū	1
 爱神螺亚科	ài shén luó yà kē	1
-爱什么稀罕	ài shén me xī hǎn	1
+爱什么稀罕	ài shén me xī han	1
 爱神巧克力	ài shén qiǎo kè lì	1
 爱神丘比特	ài shén qiū bǐ tè	1
 爱神维纳斯	ài shén wéi nà sī	1
@@ -5635,6 +5635,7 @@ sort: by_weight
 半官方机构	bàn guān fāng jī gòu	1
 半胱天冬酶	bàn guāng tiān dōng méi	1
 半胱亚磺酸	bàn guāng yà huáng suān	1
+搬过几次家	bān guò jǐ cì jiā	1
 半海百合属	bàn hǎi bǎi hé shǔ	1
 搬好小板凳	bān hǎo xiǎo bǎn dèng	1
 半合成机油	bàn hé chéng jī yóu	1
@@ -18692,6 +18693,7 @@ sort: by_weight
 菜单中点击	cài dān zhōng diǎn jī	1
 菜单中选择	cài dān zhòng xuǎn zé	1
 猜到了开头	cāi dào le kāi tóu	1
+踩到棉花上	cǎi dào mián huā shàng	1
 菜刀实名制	cài dāo shí míng zhì	1
 猜到是谁了	cāi dào shì shuí le	1
 菜刀走江湖	cài dāo zǒu jiāng hú	1
@@ -56617,7 +56619,7 @@ sort: by_weight
 非主流网名	fēi zhǔ liú wǎng míng	1
 非主流文化	fēi zhǔ liú wén huà	1
 非主流艺术	fēi zhǔ liú yì shù	1
-非主流音乐	fēi zhǔ liú yīn lè	1
+非主流音乐	fēi zhǔ liú yīn yuè	1
 非主流右派	fēi zhǔ liú yòu pài	1
 非主流造型	fēi zhǔ liú zào xíng	1
 非主流宅人	fēi zhǔ liú zhái rén	1
@@ -66219,7 +66221,7 @@ sort: by_weight
 根本不是人	gēn běn bú shì rén	1
 根本不是事	gēn běn bú shì shì	1
 根本不算啥	gēn běn bú suàn shá	1
-根本不稀罕	gēn běn bù xī hǎn	1
+根本不稀罕	gēn běn bù xī han	1
 根本不喜欢	gēn běn bù xǐ huān	1
 根本不现实	gēn běn bú xiàn shí	1
 根本不想动	gēn běn bù xiǎng dòng	1
@@ -86465,7 +86467,6 @@ sort: by_weight
 华润总公司	huá rùn zǒng gōng sī	1
 滑鳃喉盘鱼	huá sāi hóu pán yú	1
 花色小蛋糕	huā sè xiǎo dàn gāo	1
-华厦大酒店	huá shà dà jiǔ diàn	1
 花山殡仪馆	huā shān bìn yí guǎn	1
 华山风景区	huà shān fēng jǐng qū	1
 华珊瑚蛇属	huá shān hú shé shǔ	1
@@ -86665,6 +86666,7 @@ sort: by_weight
 华西医学院	huá xī yī xué yuàn	1
 华夏常青树	huá xià cháng qīng shù	1
 华夏出版社	huá xià chū bǎn shè	1
+华厦大酒店	huá xià dà jiǔ diàn	1
 华夏大酒店	huá xià dà jiǔ diàn	1
 华夏碘泡虫	huá xià diǎn pào chóng	1
 华夏东路站	huá xià dōng lù zhàn	1
@@ -100163,7 +100165,6 @@ sort: by_weight
 僵人综合征	jiāng rén zōng hé zhēng	1
 姜蓉非洲鱼	jiāng róng fēi zhōu yú	1
 降三世明王	jiàng sān shì míng wáng	1
-江厦桥东站	jiāng shà qiáo dōng zhàn	1
 江沙提克鸟	jiāng shā tí kè niǎo	1
 江山多少年	jiāng shān duō shǎo nián	1
 桨扇发动机	jiǎng shàn fā dòng jī	1
@@ -100424,6 +100425,7 @@ sort: by_weight
 江西中医药	jiāng xī zhōng yī yào	1
 缰鰕虎鱼属	jiāng xiā hǔ yú shǔ	1
 江夏客厅站	jiāng xià kè tīng zhàn	1
+江厦桥东站	jiāng xià qiáo dōng zhàn	1
 江夏区区长	jiāng xià qū qū cháng	1
 绛县长春观	jiàng xiàn cháng chūn guān	1
 绛县公安局	jiàng xiàn gōng ān jú	1
@@ -165707,8 +165709,6 @@ sort: by_weight
 杀出一片天	shā chū yí piàn tiān	1
 杀出一条路	shā chū yì tiáo lù	1
 沙葱鸢尾属	shā cōng yuān wěi shǔ	1
-厦大图书馆	shà dà tú shū guǎn	1
-厦大医院站	shà dà yī yuàn zhàn	1
 砂单胞菌属	shā dān bāo jūn shǔ	1
 鲨胆大话王	shā dǎn dà huà wáng	1
 杀稻瘟菌素	shā dào wēn jūn sù	1
@@ -196305,6 +196305,7 @@ sort: by_weight
 同一款游戏	tóng yī kuǎn yóu xì	1
 统一了思想	tǒng yī le sī xiǎng	1
 统一零售价	tǒng yī líng shòu jià	1
+同一路径下	tóng yī lù jìng xià	1
 统一码标准	tǒng yī mǎ biāo zhǔn	1
 统一码联盟	tǒng yī mǎ lián méng	1
 统一马其顿	tǒng yī mǎ qí dùn	1
@@ -212169,7 +212170,7 @@ sort: by_weight
 嘻哈壹笑堂	xī hā yī xiào táng	1
 嘻哈音乐家	xī hā yīn yuè jiā	1
 喜旱莲子草	xǐ hàn lián zǐ cǎo	1
-稀罕玩意儿	xī hǎn wán yì ér	1
+稀罕玩意儿	xī han wán yì ér	1
 洗好的衣服	xǐ hǎo de yī fu	1
 喜好和预算	xǐ hào hé yù suàn	1
 溪河瑙脂鲤	xī hé nǎo zhī lǐ	1
@@ -213924,6 +213925,8 @@ sort: by_weight
 下次再说吧	xià cì zài shuō ba	1
 下次注意点	xià cì zhù yì diǎn	1
 下大甲溪桥	xià dà jiǎ xī qiáo	1
+厦大图书馆	xià dà tú shū guǎn	1
+厦大医院站	xià dà yī yuàn zhàn	1
 下大雨的天	xià dà yǔ de tiān	1
 下蛋的母鸡	xià dàn de mǔ jī	1
 下单的时候	xià dān de shí hou	1
@@ -217937,6 +217940,7 @@ sort: by_weight
 相同或相近	xiāng tóng huò xiāng jìn	1
 相同或相似	xiāng tóng huò xiāng sì	1
 相同价值观	xiāng tóng jià zhí guān	1
+相同路径下	xiāng tóng lù jìng xià	1
 相同条件下	xiāng tóng tiáo jiàn xià	1
 向同一方向	xiàng tóng yī fāng xiàng	1
 相同与不同	xiāng tóng yǔ bù tóng	1
@@ -307567,7 +307571,6 @@ sort: by_weight
 拳拳爱国之心	quán quán ài guó zhī xīn	1
 拳拳赤子之心	quán quán chì zǐ zhī xīn	1
 泉三高速公路	quán sān gāo sù gōng lù	1
-泉厦高速公路	quán shà gāo sù gōng lù	1
 泉山门停车场	quán shān mén tíng chē chǎng	1
 泉山森林公园	quán shān sēn lín gōng yuán	1
 券商中国记者	quàn shāng zhōng guó jì zhě	1
@@ -307625,6 +307628,7 @@ sort: by_weight
 全膝关节置换	quán xī guān jié zhì huàn	1
 全息玫瑰碎片	quán xī méi guī suì piàn	1
 全息摄影测量	quán xī shè yǐng cè liáng	1
+泉厦高速公路	quán xià gāo sù gōng lù	1
 全县干部职工	quán xiàn gàn bù zhí gōng	1
 全县生产总值	quán xiàn shēng chǎn zǒng zhí	1
 全县脱贫攻坚	quán xiàn tuō pín gōng jiān	1
@@ -309350,7 +309354,6 @@ sort: by_weight
 杀出一匹黑马	shā chū yì pǐ hēi mǎ	1
 杀出一条生路	shā chū yì tiáo shēng lù	1
 厦村邓氏宗祠	shà cūn dèng shì zōng cí	1
-厦大翔安校区	shà dà xiáng ān xiào qū	1
 杀得片甲不留	shā de piàn jiǎ bù liú	1
 沙地䍁牛尾鱼	shā dì suì niú wěi yú	1
 沙地肖叶甲属	shā dì xiào yè jiǎ shǔ	1
@@ -309400,7 +309403,6 @@ sort: by_weight
 傻傻分不清楚	shǎ shǎ fēn bù qīng chu	1
 莎莎妇女银袋	shā shā fù nǚ yín dài	1
 厦沙高速公路	shà shā gāo sù gōng lù	1
-沙厦高速公路	shā shà gāo sù gōng lù	1
 杀伤力的武器	shā shāng lì de wǔ qì	1
 厦深客运专线	shà shēn kè yùn zhuān xiàn	1
 沙氏矮长颌鱼	shā shì ǎi cháng hé yú	1
@@ -309420,6 +309422,7 @@ sort: by_weight
 沙特电信公司	shā tè diàn xìn gōng sī	1
 沙特似真小鲤	shā tè sì zhēn xiǎo lǐ	1
 杀外寄生虫药	shā wài jì shēng chóng yào	1
+沙厦高速公路	shā xià gāo sù gōng lù	1
 傻小子睡凉炕	shǎ xiǎo zi shuì liáng kàng	1
 傻小子学害怕	shǎ xiǎo zi xué hài pà	1
 杀蚜蝇姬蜂属	shā yá yíng jī fēng shǔ	1
@@ -320075,6 +320078,7 @@ sort: by_weight
 吓出一身冷汗	xià chū yì shēn lěng hàn	1
 瑕疵担保责任	xiá cī dān bǎo zé rèn	1
 下次要注意了	xià cì yào zhù yì le	1
+厦大翔安校区	xià dà xiáng ān xiào qū	1
 狭带细鳞盔鱼	xiá dài xì lín kuī yú	1
 侠盗飞车系列	xiá dào fēi chē xì liè	1
 侠盗猎魔系列	xiá dào liè mó xì liè	1
@@ -320132,7 +320136,7 @@ sort: by_weight
 厦门海事法院	xià mén hǎi shì fǎ yuàn	1
 厦门禾山中学	xià mén hé shān zhōng xué	1
 厦门弘爱医院	xià mén hóng ài yī yuàn	1
-厦门华厦学院	xià mén huá shà xué yuàn	1
+厦门华厦学院	xià mén huá xià xué yuàn	1
 厦门建发集团	xià mén jiàn fā jí tuán	1
 厦门马拉松赛	xià mén mǎ lā sōng sài	1
 厦门马垅医院	xià mén mǎ lǒng yī yuàn	1
@@ -330728,7 +330732,7 @@ sort: by_weight
 中煤能源股份	zhōng méi néng yuán gǔ fèn	1
 中煤能源集团	zhōng méi néng yuán jí tuán	1
 中煤平朔集团	zhōng méi píng shuò jí tuán	1
-中美望厦条约	zhōng měi wàng shà tiáo yuē	1
+中美望厦条约	zhōng měi wàng xià tiáo yuē	1
 中美倭松鼠属	zhōng měi wō sōng shǔ shǔ	1
 中美续增条约	zhōng měi xù zēng tiáo yuē	1
 中美洲娇丽鱼	zhōng měi zhōu jiāo lì yú	1
