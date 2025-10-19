@@ -7,6 +7,20 @@ name: suggestion
 version: "LTS"
 sort: by_weight
 ...
+兵鲶	bīng nián	1
+荷属	hé shǔ	1
+葡属	pú shǔ	1
+英属	yīng shǔ	1
+宝丽鱼	bǎo lì yú	1
+盾海鲶	dùn hǎi nián	1
+红脂鲤	hóng zhī lǐ	1
+棘盖鲶	jí gài nián	1
+颊脂鲤	jiá zhī lǐ	1
+琼脂鲤	qióng zhī lǐ	1
+石脂鲤	shí zhī lǐ	1
+溪脂鲤	xī zhī lǐ	1
+泽丝鲶	zé sī nián	1
+驻大使	zhù dà shǐ	1
 阿巴科群岛	ā bā kē qún dǎo	1
 阿贝尔定理	ā bèi ěr dìng lǐ	1
 阿贝尔群论	ā bèi ěr qún lùn	1
@@ -7096,6 +7110,7 @@ sort: by_weight
 保利金香槟	bǎo lì jīn xiāng bīn	1
 宝丽来公司	bǎo lì lái gōng sī	1
 宝利来公司	bǎo lì lái gōng sī	1
+宝利来投资	bǎo lì lái tóu zī	1
 保利领秀山	bǎo lì lǐng xiù shān	1
 暴力罗曼史	bào lì luó màn shǐ	1
 暴力破解法	bào lì pò jiě fǎ	1
@@ -28200,7 +28215,6 @@ sort: by_weight
 除了你以外	chú le nǐ yǐ wài	1
 除了你之外	chú le nǐ zhī wài	1
 出了什么事	chū le shén me shì	1
-出了什么事	chū le shén me shì	1
 除了他以外	chú le tā yǐ wài	1
 除了他之外	chú le tā zhī wài	1
 除了我以外	chú le wǒ yǐ wài	1
@@ -38258,7 +38272,6 @@ sort: by_weight
 得了精神病	dé le jīng shén bìng	1
 得了颈椎病	dé le jǐng zhuī bìng	1
 得了什么病	dé le shén me bìng	1
-得了什么病	dé le shén me bìng	1
 得了失心疯	dé le shī xīn fēng	1
 得了糖尿病	dé le táng niào bìng	1
 得了抑郁症	dé le yì yù zhèng	1
@@ -42688,6 +42701,7 @@ sort: by_weight
 电视公开课	diàn shì gōng kāi kè	1
 电视工作室	diàn shì gōng zuò shì	1
 电视工作者	diàn shì gōng zuò zhě	1
+电视观光塔	diàn shì guān guāng tǎ	1
 电视冠军王	diàn shì guàn jūn wáng	1
 电视广告片	diàn shì guǎng gào piàn	1
 电视柜茶几	diàn shì guì chá jī	1
@@ -42826,6 +42840,7 @@ sort: by_weight
 电视制作人	diàn shì zhì zuò rén	1
 电视中心站	diàn shì zhōng xīn zhàn	1
 电视主持人	diàn shì zhǔ chí rén	1
+电视珠江台	diàn shì zhū jiāng tái	1
 电视主题曲	diàn shì zhǔ tí qǔ	1
 电视转播车	diàn shì zhuǎn bō chē	1
 电视转播权	diàn shì zhuǎn bō quán	1
@@ -52172,7 +52187,6 @@ sort: by_weight
 发生了口角	fā shēng le kǒu jué	1
 发生了矛盾	fā shēng le máo dùn	1
 发生了什么	fā shēng le shén me	1
-发生了什么	fā shēng le shén me	1
 发生了一次	fā shēng le yí cì	1
 发生了一起	fā shēng le yì qǐ	1
 发生了意外	fā shēng le yì wài	1
@@ -52272,7 +52286,6 @@ sort: by_weight
 发现了另一	fā xiàn le lìng yī	1
 发现了没有	fā xiàn le méi yǒu	1
 发现了商机	fā xiàn le shāng jī	1
-发现了什么	fā xiàn le shén me	1
 发现了什么	fā xiàn le shén me	1
 发现了问题	fā xiàn le wèn tí	1
 发现了一个	fā xiàn le yí gè	1
@@ -68140,6 +68153,7 @@ sort: by_weight
 公立图书馆	gōng lì tú shū guǎn	1
 功利心太强	gōng lì xīn tài qiáng	1
 功利心太重	gōng lì xīn tài zhòng	1
+公立医学堂	gōng lì yī xué táng	1
 公立幼儿园	gōng lì yòu ér yuán	1
 公理语义学	gōng lǐ yǔ yì xué	1
 公立中小学	gōng lì zhōng xiǎo xué	1
@@ -69092,6 +69106,7 @@ sort: by_weight
 工业区社区	gōng yè qū shè qū	1
 工业区位论	gōng yè qū wèi lùn	1
 工业社会学	gōng yè shè huì xué	1
+工业设计城	gōng yè shè jì chéng	1
 工业设计家	gōng yè shè jì jiā	1
 工业设计奖	gōng yè shè jì jiǎng	1
 工业设计师	gōng yè shè jì shī	1
@@ -71903,6 +71918,7 @@ sort: by_weight
 冠军的荣耀	guàn jūn de róng yào	1
 冠军的试炼	guàn jūn de shì liàn	1
 冠军的滋味	guàn jūn de zī wèi	1
+冠军方程式	guàn jūn fāng chéng shì	1
 冠军含金量	guàn jūn hán jīn liàng	1
 冠军和亚军	guàn jūn hé yà jūn	1
 冠军候选人	guàn jūn hòu xuǎn rén	1
@@ -74133,7 +74149,6 @@ sort: by_weight
 鲑形锥首鱼	guī xíng zhuī shǒu yú	1
 桂胸歌鹀属	guì xiōng gē wú shǔ	1
 规训与惩罚	guī xùn yǔ chéng fá	1
-圭亚那兵鲶	guī yà nà bīng nián	1
 鬼艳锹形虫	guǐ yàn qiāo xíng chóng	1
 贵阳办事处	guì yáng bàn shì chù	1
 贵阳肠旺面	guì yáng cháng wàng miàn	1
@@ -74954,6 +74969,7 @@ sort: by_weight
 国际贸易史	guó jì mào yì shǐ	1
 国际贸易学	guó jì mào yì xué	1
 国际贸易中	guó jì mào yì zhōng	1
+国际美博会	guó jì měi bó huì	1
 国际美酒展	guó jì měi jiǔ zhǎn	1
 国际美食节	guó jì měi shí jié	1
 国际米兰队	guó jì mǐ lán duì	1
@@ -80703,7 +80719,6 @@ sort: by_weight
 褐首狮子鱼	hè shǒu shī zi yú	1
 核输出信号	hé shū chū xìn hào	1
 荷属东印度	hé shǔ dōng yìn dù	1
-荷属圭亚那	hé shǔ guī yà nà	1
 何叔衡故居	hé shū héng gù jū	1
 荷属加勒比	hé shǔ jiā lè bǐ	1
 荷属马丁尼	hé shǔ mǎ dīng ní	1
@@ -86383,6 +86398,7 @@ sort: by_weight
 花皮胶藤属	huā pí jiāo téng shǔ	1
 化皮溜子镇	huà pí liū zi zhèn	1
 花皮蛛总科	huā pí zhū zǒng kē	1
+话拼音方案	huà pīn yīn fāng àn	1
 花瓶凤凰螺	huā píng fèng huáng luó	1
 花坪高原鳅	huā píng gāo yuán qiū	1
 花坪派出所	huā píng pài chū suǒ	1
@@ -106370,7 +106386,6 @@ sort: by_weight
 经历了高考	jīng lì le gāo kǎo	1
 经历了离婚	jīng lì le lí hūn	1
 经历了什么	jīng lì le shén me	1
-经历了什么	jīng lì le shén me	1
 经历了生死	jīng lì le shēng sǐ	1
 经历了太多	jīng lì le tài duō	1
 经历了许多	jīng lì le xǔ duō	1
@@ -110764,6 +110779,7 @@ sort: by_weight
 军人电影院	jūn rén diàn yǐng yuàn	1
 军人服务社	jūn rén fú wù shè	1
 军人俱乐部	jūn rén jù lè bù	1
+军人联合会	jūn rén lián hé huì	1
 军人身份证	jūn rén shēn fèn zhèng	1
 军人委员会	jūn rén wěi yuán huì	1
 军人运动会	jūn rén yùn dòng huì	1
@@ -112104,7 +112120,6 @@ sort: by_weight
 看到了没有	kàn dào le méi yǒu	1
 看到了商机	kàn dào le shāng jī	1
 看到了什么	kàn dào le shén me	1
-看到了什么	kàn dào le shén me	1
 看到了世界	kàn dào le shì jiè	1
 看到了曙光	kàn dào le shǔ guāng	1
 看到了未来	kàn dào le wèi lái	1
@@ -112832,6 +112847,7 @@ sort: by_weight
 抗日女英雄	kàng rì nǚ yīng xióng	1
 抗日神剧中	kàng rì shén jù zhōng	1
 抗日同盟军	kàng rì tóng méng jūn	1
+抗日先锋队	kàng rì xiān fēng duì	1
 抗日义勇军	kàng rì yì yǒng jūn	1
 抗日游击队	kàng rì yóu jī duì	1
 抗日战争史	kàng rì zhàn zhēng shǐ	1
@@ -113913,6 +113929,7 @@ sort: by_weight
 科技互联网	kē jì hù lián wǎng	1
 科技化配置	kē jì huà pèi zhì	1
 科技活动周	kē jì huó dòng zhōu	1
+科技教育城	kē jì jiào yù chéng	1
 科技教育司	kē jì jiào yù sī	1
 科技界女性	kē jì jiè nǚ xìng	1
 科技进步奖	kē jì jìn bù jiǎng	1
@@ -115066,6 +115083,7 @@ sort: by_weight
 科学家家族	kē xué jiā jiā zú	1
 科学家精神	kē xué jiā jīng shén	1
 科学家列表	kē xué jiā liè biǎo	1
+科学家论坛	kē xué jiā lùn tán	1
 科学家模板	kē xué jiā mú bǎn	1
 科学家提出	kē xué jiā tí chū	1
 科学家团队	kē xué jiā tuán duì	1
@@ -118771,6 +118789,7 @@ sort: by_weight
 蓝缘猪齿鱼	lán yuán zhū chǐ yú	1
 蓝月亮集团	lán yuè liàng jí tuán	1
 蓝月亮曼城	lán yuè liàng màn chéng	1
+蓝月亮实业	lán yuè liàng shí yè	1
 烂在肚子里	làn zài dù zi lǐ	1
 拦在了门外	lán zài le mén wài	1
 蓝枕八色鸫	lán zhěn bā sè dōng	1
@@ -127626,6 +127645,7 @@ sort: by_weight
 陆行鸟赛车	lù xíng niǎo sài chē	1
 陆行鸟系列	lù xíng niǎo xì liè	1
 陆行鸟知鸽	lù xíng niǎo zhī gē	1
+鲁迅纪念馆	lǔ xùn jì niàn guǎn	1
 陆逊陆伯言	lù xùn lù bó yán	1
 卢亚矮脂鲤	lú yà ǎi zhī lǐ	1
 鹭燕大药房	lù yàn dà yào fáng	1
@@ -138719,6 +138739,7 @@ sort: by_weight
 南鹅掌柴属	nán é zhǎng chái shǔ	1
 男儿当入樽	nán ér dāng rù zūn	1
 男儿当自强	nán ér dāng zì qiáng	1
+南二环高速	nán èr huán gāo sù	1
 男儿重意气	nán ér zhòng yì qì	1
 南方白甲鱼	nán fāng bái jiǎ yú	1
 南方盗龙属	nán fāng dào lóng shǔ	1
@@ -138764,6 +138785,7 @@ sort: by_weight
 难过的事情	nán guò de shì qíng	1
 难过的心情	nán guò de xīn qíng	1
 难过美人关	nán guò měi rén guān	1
+南国药业有	nán guó yào yè yǒu	1
 男孩爱女孩	nán hái ài nǚ hái	1
 男孩的爸爸	nán hái de bà ba	1
 男孩的父母	nán hái de fù mǔ	1
@@ -144271,6 +144293,7 @@ sort: by_weight
 农林牧渔类	nóng lín mù yú lèi	1
 农林牧渔业	nóng lín mù yú yè	1
 农林生物质	nóng lín shēng wù zhì	1
+农林试验场	nóng lín shì yàn chǎng	1
 农林水利局	nóng lín shuǐ lì jú	1
 农林水支出	nóng lín shuǐ zhī chū	1
 农林特产税	nóng lín tè chǎn shuì	1
@@ -144327,6 +144350,7 @@ sort: by_weight
 农民和工人	nóng mín hé gōng rén	1
 农民合作社	nóng mín hé zuò shè	1
 农民技术员	nóng mín jì shù yuán	1
+农民讲习所	nóng mín jiǎng xí suǒ	1
 农民经纪人	nóng mín jīng jì rén	1
 农民朋友们	nóng mín péng you men	1
 农民企业家	nóng mín qǐ yè jiā	1
@@ -149631,7 +149655,6 @@ sort: by_weight
 普氏准鼬鲶	pǔ shì zhǔn yòu nián	1
 葡属安哥拉	pú shǔ ān gē lā	1
 葡属东帝汶	pú shǔ dōng dì wèn	1
-葡属圭亚那	pú shǔ guī yà nà	1
 葡属几内亚	pú shǔ jǐ nèi yà	1
 葡属马六甲	pú shǔ mǎ liù jiǎ	1
 葡属塔马奥	pú shǔ tǎ mǎ ào	1
@@ -151961,6 +151984,7 @@ sort: by_weight
 企业家朋友	qǐ yè jiā péng you	1
 企业家群体	qǐ yè jiā qún tǐ	1
 企业家沙龙	qǐ yè jiā shā lóng	1
+企业家商会	qǐ yè jiā shāng huì	1
 企业家投资	qǐ yè jiā tóu zī	1
 企业家协会	qǐ yè jiā xié huì	1
 企业家移民	qǐ yè jiā yí mín	1
@@ -154021,6 +154045,7 @@ sort: by_weight
 强硬的态度	qiáng yìng de tài dù	1
 强有力措施	qiáng yǒu lì cuò shī	1
 羟孕烯醇酮	qiǎng yùn xī chún tóng	1
+强则国家强	qiáng zé guó jiā qiáng	1
 抢占了先机	qiǎng zhàn le xiān jī	1
 强战士龙属	qiáng zhàn shì lóng shǔ	1
 抢占制高点	qiǎng zhàn zhì gāo diǎn	1
@@ -165786,6 +165811,7 @@ sort: by_weight
 沙门氏杆菌	shā mén shì gǎn jūn	1
 沙门氏菌病	shā mén shì jūn bìng	1
 沙门氏菌属	shā mén shì jūn shǔ	1
+沙面建筑群	shā miàn jiàn zhù qún	1
 杀灭癌细胞	shā miè ái xì bāo	1
 杀灭微生物	shā miè wēi shēng wù	1
 沙漠壳菌科	shā mò ké jūn kē	1
@@ -173874,6 +173900,7 @@ sort: by_weight
 生效判决书	shēng xiào pàn jué shū	1
 生肖守护神	shēng xiào shǒu hù shén	1
 生肖姓名学	shēng xiào xìng míng xué	1
+圣心大教堂	shèng xīn dà jiào táng	1
 省新华书店	shěng xīn huá shū diàn	1
 省心又省力	shěng xīn yòu shěng lì	1
 省心又省钱	shěng xīn yòu shěng qián	1
@@ -180718,7 +180745,6 @@ sort: by_weight
 收货报告单	shōu huò bào gào dān	1
 收获的果实	shōu huò de guǒ shí	1
 收获的季节	shōu huò de jì jié	1
-收获的季节	shōu huò de jì jié	1
 收获的快乐	shōu huò de kuài lè	1
 收获的日子	shōu huò de rì zi	1
 收获的时候	shōu huò de shí hou	1
@@ -184275,6 +184301,7 @@ sort: by_weight
 水陆两用车	shuǐ lù liǎng yòng chē	1
 水陆路邮件	shuǐ lù lù yóu jiàn	1
 水陆派出所	shuǐ lù pài chū suǒ	1
+水陆师学堂	shuǐ lù shī xué táng	1
 水轮发电机	shuǐ lún fā diàn jī	1
 水轮机转轮	shuǐ lún jī zhuàn lún	1
 水绿高原鳅	shuǐ lǜ gāo yuán qiū	1
@@ -187428,6 +187455,7 @@ sort: by_weight
 塑料挤出机	sù liào jǐ chū jī	1
 塑料加工厂	sù liào jiā gōng chǎng	1
 塑料检查井	sù liào jiǎn chá jǐng	1
+塑料交易所	sù liào jiāo yì suǒ	1
 塑料姐妹花	sù liào jiě mèi huā	1
 塑料垃圾袋	sù liào lā jī dài	1
 塑料垃圾桶	sù liào lā jī tǒng	1
@@ -193217,7 +193245,7 @@ sort: by_weight
 添加自定义	tiān jiā zì dìng yì	1
 田间持水量	tián jiān chí shuǐ liàng	1
 田间鸭嘴草	tián jiān yā zuǐ cǎo	1
-天将降大任	tiān jiàng jiàng dà rèn	1
+天将降大任	tiān jiāng jiàng dà rèn	1
 天界善世寺	tiān jiè shàn shì sì	1
 天界小神仙	tiān jiè xiǎo shén xiān	1
 天津奥租界	tiān jīn ào zū jiè	1
@@ -204204,6 +204232,8 @@ sort: by_weight
 文明风景线	wén míng fēng jǐng xiàn	1
 文明过马路	wén míng guò mǎ lù	1
 闻名海内外	wén míng hǎi nèi wài	1
+文明号创建	wén míng hào chuàng jiàn	1
+文明号集体	wén míng hào jí tǐ	1
 文明和文化	wén míng hé wén huà	1
 文明或文明	wén míng huò wén míng	1
 文明论概略	wén míng lùn gài lüè	1
@@ -212203,7 +212233,6 @@ sort: by_weight
 喜欢帮助人	xǐ huān bāng zhù rén	1
 喜欢布莱德	xǐ huān bù lái dé	1
 喜欢不喜欢	xǐ huān bù xǐ huān	1
-喜欢不喜欢	xǐ huān bù xǐ huān	1
 喜欢吃大米	xǐ huān chī dà mǐ	1
 喜欢吃的菜	xǐ huān chī de cài	1
 喜欢吃东西	xǐ huān chī dōng xi	1
@@ -215594,6 +215623,7 @@ sort: by_weight
 嫌气性细菌	xián qì xìng xì jūn	1
 掀起涨停潮	xiān qǐ zhǎng tíng cháo	1
 先遣急救员	xiān qiǎn jí jiù yuán	1
+先强药业有	xiān qiáng yào yè yǒu	1
 仙桥地下河	xiān qiáo dì xià hé	1
 线切割机床	xiàn qiē gē jī chuáng	1
 弦切角定理	xián qiē jiǎo dìng lǐ	1
@@ -225726,6 +225756,7 @@ sort: by_weight
 幸运召唤师	xìng yùn zhào huàn shī	1
 星载传感器	xīng zài chuán gǎn qì	1
 星仔走天涯	xīng zǎi zǒu tiān yá	1
+兴则国家兴	xīng zé guó jiā xīng	1
 星战大怒吼	xīng zhàn dà nù hǒu	1
 星战竞技场	xīng zhàn jìng jì chǎng	1
 星战三勇士	xīng zhàn sān yǒng shì	1
@@ -229260,6 +229291,7 @@ sort: by_weight
 亚氏宽背鲶	yà shì kuān bèi nián	1
 亚什兰集团	yà shí lán jí tuán	1
 雅士利国际	yǎ shì lì guó jì	1
+雅士利集团	yǎ shì lì jí tuán	1
 雅士利奶粉	yǎ shì lì nǎi fěn	1
 雅氏尼布鲶	yǎ shì ní bù nián	1
 压实线变道	yā shí xiàn biàn dào	1
@@ -230457,7 +230489,6 @@ sort: by_weight
 炎热的太阳	yán rè de tài yáng	1
 炎热的天气	yán rè de tiān qì	1
 炎热的午后	yán rè de wǔ hòu	1
-炎热的夏季	yán rè de xià jì	1
 炎热的夏季	yán rè de xià jì	1
 炎热的夏日	yán rè de xià rì	1
 炎热的夏天	yán rè de xià tiān	1
@@ -234077,7 +234108,6 @@ sort: by_weight
 一定不会输	yī dìng bú huì shū	1
 一定程度上	yí dìng chéng dù shàng	1
 一定的程度	yí dìng de chéng dù	1
-一定的程度	yí dìng de chéng dù	1
 一定的高度	yí dìng de gāo dù	1
 一定的关系	yí dìng de guān xì	1
 一定的好处	yí dìng de hǎo chù	1
@@ -237211,7 +237241,6 @@ sort: by_weight
 意味着风险	yì wèi zhe fēng xiǎn	1
 意味着更多	yì wèi zhe gèng duō	1
 意味着什么	yì wèi zhe shén me	1
-意味着什么	yì wèi zhe shén me	1
 意味着未来	yì wèi zhe wèi lái	1
 意味着一切	yì wèi zhe yí qiè	1
 意味着责任	yì wèi zhe zé rèn	1
@@ -238457,7 +238486,6 @@ sort: by_weight
 隐藏在角落	yǐn cáng zài jiǎo luò	1
 隐藏在幕后	yǐn cáng zài mù hòu	1
 隐藏着什么	yǐn cáng zhe shén me	1
-隐藏着什么	yǐn cáng zhe shén me	1
 隐藏状态栏	yǐn cáng zhuàng tài lán	1
 阴曹朴丽鱼	yīn cáo pǔ lì yú	1
 阴曹蛇胸鳝	yīn cáo shé xiōng shàn	1
@@ -239532,6 +239560,7 @@ sort: by_weight
 音乐排行榜	yīn yuè pái háng bǎng	1
 音乐培训班	yīn yuè péi xùn bān	1
 音乐评论家	yīn yuè píng lùn jiā	1
+音乐曲艺团	yīn yuè qǔ yì tuán	1
 音乐人许嵩	yīn yuè rén xǔ sōng	1
 音乐生理学	yīn yuè shēng lǐ xué	1
 音乐是什么	yīn yuè shì shén me	1
@@ -239931,6 +239960,7 @@ sort: by_weight
 硬果鳞毛蕨	yìng guǒ lín máo jué	1
 瘿果盘菌科	yǐng guǒ pán jūn kē	1
 瘿果盘菌属	yǐng guǒ pán jūn shǔ	1
+英国艺术家	yīng guó yì shù jiā	1
 英汉大词典	yīng hàn dà cí diǎn	1
 硬汉的形象	yìng hàn de xíng xiàng	1
 硬汉速成班	yìng hàn sù chéng bān	1
@@ -240330,7 +240360,6 @@ sort: by_weight
 英属处女岛	yīng shǔ chǔ nǚ dǎo	1
 英属多哥兰	yīng shǔ duō gē lán	1
 英属盖亚那	yīng shǔ gài yà nà	1
-英属圭亚那	yīng shǔ guī yà nà	1
 英属基地区	yīng shǔ jī dì qū	1
 英属加勒比	yīng shǔ jiā lè bǐ	1
 英属喀麦隆	yīng shǔ kā mài lóng	1
@@ -244351,14 +244380,14 @@ sort: by_weight
 玉蟾岩遗址	yù chán yán yí zhǐ	1
 渔唱起三更	yú chàng qǐ sān gēng	1
 御成败式目	yù chéng bài shì mù	1
-宇称不守恒	yǔ chēng bù shǒu héng	1
+宇称不守恒	yǔ chèng bù shǒu héng	1
 余承东表示	yú chéng dōng biǎo shì	1
-宇称对称性	yǔ chēng duì chèn xìng	1
+宇称对称性	yǔ chèng duì chèn xìng	1
 玉成孔菌属	yù chéng kǒng jūn shǔ	1
 于成龙故居	yú chéng lóng gù jū	1
 庾澄庆专辑	yǔ chéng qìng zhuān jí	1
 禹城市政府	yǔ chéng shì zhèng fǔ	1
-宇称守恒律	yǔ chēng shǒu héng lǜ	1
+宇称守恒律	yǔ chèng shǒu héng lǜ	1
 尉迟伏阇雄	yù chí fú dū xióng	1
 鱼池富士山	yú chí fù shì shān	1
 鱼翅灌汤饺	yú chì guàn tāng jiǎo	1
@@ -247295,7 +247324,6 @@ sort: by_weight
 约定的场所	yuē dìng de chǎng suǒ	1
 约定的地点	yuē dìng de dì diǎn	1
 约定的地方	yuē dìng de dì fāng	1
-约定的时间	yuē dìng de shí jiān	1
 约定的时间	yuē dìng de shí jiān	1
 约定好时间	yuē dìng hǎo shí jiān	1
 约定驾驶人	yuē dìng jià shǐ rén	1
@@ -256817,7 +256845,6 @@ sort: by_weight
 知不知道啊	zhī bù zhī dào a	1
 知不知道呢	zhī bù zhī dào ne	1
 值不值得买	zhí bù zhí dé mǎi	1
-值不值得买	zhí bù zhí dé mǎi	1
 值不值得做	zhí bù zhí dé zuò	1
 制裁俄罗斯	zhì cái é luó sī	1
 制裁菲律宾	zhì cái fēi lǜ bīn	1
@@ -259640,6 +259667,7 @@ sort: by_weight
 志愿者工作	zhì yuàn zhě gōng zuò	1
 志愿者管理	zhì yuàn zhě guǎn lǐ	1
 志愿者合影	zhì yuàn zhě hé yǐng	1
+志愿者活动	zhì yuàn zhě huó dòng	1
 志愿者教师	zhì yuàn zhě jiào shī	1
 志愿者介绍	zhì yuàn zhě jiè shào	1
 志愿者精神	zhì yuàn zhě jīng shén	1
@@ -259663,6 +259691,7 @@ sort: by_weight
 志愿者招募	zhì yuàn zhě zhāo mù	1
 志愿者之家	zhì yuàn zhě zhī jiā	1
 志愿者注册	zhì yuàn zhě zhù cè	1
+志愿者总队	zhì yuàn zhě zǒng duì	1
 志愿者组成	zhì yuàn zhě zǔ chéng	1
 志愿者组织	zhì yuàn zhě zǔ zhī	1
 旨在让学生	zhǐ zài ràng xué shēng	1
@@ -270278,7 +270307,6 @@ sort: by_weight
 作词作曲家	zuò cí zuò qǔ jiā	1
 做促销活动	zuò cù xiāo huó dòng	1
 做错的事情	zuò cuò de shì qíng	1
-做错了什么	zuò cuò le shén me	1
 做错了什么	zuò cuò le shén me	1
 做错了事情	zuò cuò liǎo shì qíng	1
 做错一件事	zuò cuò yí jiàn shì	1
@@ -288092,15 +288120,6 @@ sort: by_weight
 诡屋惊凶实录	guǐ wū jīng xiōng shí lù	1
 贵溪华南溪蟹	guì xī huá nán xī xiè	1
 桂溪生态公园	guì xī shēng tài gōng yuán	1
-圭亚那宝丽鱼	guī yà nà bǎo lì yú	1
-圭亚那盾海鲶	guī yà nà dùn hǎi nián	1
-圭亚那红脂鲤	guī yà nà hóng zhī lǐ	1
-圭亚那棘盖鲶	guī yà nà jí gài nián	1
-圭亚那颊脂鲤	guī yà nà jiá zhī lǐ	1
-圭亚那琼脂鲤	guī yà nà qióng zhī lǐ	1
-圭亚那石脂鲤	guī yà nà shí zhī lǐ	1
-圭亚那溪脂鲤	guī yà nà xī zhī lǐ	1
-圭亚那泽丝鲶	guī yà nà zé sī nián	1
 鬼艳锹形虫属	guǐ yàn qiāo xíng chóng shǔ	1
 贵阳北天主堂	guì yáng běi tiān zhǔ táng	1
 贵阳环城高速	guì yáng huán chéng gāo sù	1
@@ -330624,6 +330643,7 @@ sort: by_weight
 中关村软件园	zhōng guān cūn ruǎn jiàn yuán	1
 中关村示范区	zhōng guān cūn shì fàn qū	1
 中关村五道口	zhōng guān cūn wǔ dào kǒu	1
+中国式现代化	zhōng guó shì xiàn dài huà	1
 忠国信息科技	zhōng guó xìn xī kē jì	1
 中哈合作中心	zhōng hā hé zuò zhōng xīn	1
 中韩天津条约	zhōng hán tiān jīn tiáo yuē	1
@@ -331290,7 +331310,6 @@ sort: by_weight
 烛光里的妈妈	zhú guāng lǐ de mā ma	1
 烛光里的微笑	zhú guāng lǐ de wēi xiào	1
 珠光新城御景	zhū guāng xīn chéng yù jǐng	1
-驻圭亚那大使	zhù guī yà nà dà shǐ	1
 珠海高速公路	zhū hǎi gāo sù gōng lù	1
 珠海高速客轮	zhū hǎi gāo sù kè lún	1
 珠海格力电器	zhū hǎi gé lì diàn qì	1
@@ -342209,33 +342228,6 @@ sort: by_weight
 光的波粒二象性	guāng de bō lì èr xiàng xìng	1
 光电传感器系统	guāng diàn chuán gǎn qì xì tǒng	1
 光电建筑一体化	guāng diàn jiàn zhù yì tǐ huà	1
-广东宝利来投资	guǎng dōng bǎo lì lái tóu zī	1
-广东碧桂园学校	guǎng dōng bì guì yuán xué xiào	1
-广东电视珠江台	guǎng dōng diàn shì zhū jiāng tái	1
-广东扶贫济困日	guǎng dōng fú pín jì kùn rì	1
-广东公立医学堂	guǎng dōng gōng lì yī xué táng	1
-广东公务员考试	guǎng dōng gōng wù yuán kǎo shì	1
-广东工业设计城	guǎng dōng gōng yè shè jì chéng	1
-广东国际大酒店	guǎng dōng guó jì dà jiǔ diàn	1
-广东国际美博会	guǎng dōng guó jì měi bó huì	1
-广东国际赛车场	guǎng dōng guó jì sài chē chǎng	1
-广东教师资格证	guǎng dōng jiào shī zī gé zhèng	1
-广东南国药业有	guǎng dōng nán guó yào yè yǒu	1
-广东农林试验场	guǎng dōng nóng lín shì yàn chǎng	1
-广东拼音输入法	guǎng dōng pīn yīn shū rù fǎ	1
-广东水陆师学堂	guǎng dōng shuǐ lù shī xué táng	1
-广东塑料交易所	guǎng dōng sù liào jiāo yì suǒ	1
-广东通信管理局	guǎng dōng tōng xìn guǎn lǐ jú	1
-广东外国语学院	guǎng dōng wài guó yǔ xué yuàn	1
-广东外经贸大厦	guǎng dōng wài jīng mào dà shà	1
-广东先强药业有	guǎng dōng xiān qiáng yào yè yǒu	1
-广东协和神学院	guǎng dōng xié hé shén xué yuàn	1
-广东雅士利集团	guǎng dōng yǎ shì lì jí tuán	1
-广东音乐曲艺团	guǎng dōng yīn yuè qǔ yì tuán	1
-广东政务服务网	guǎng dōng zhèng wù fú wù wǎng	1
-广东珠三角地区	guǎng dōng zhū sān jiǎo dì qū	1
-广东自贸试验区	guǎng dōng zì mào shì yàn qū	1
-广东自由贸易区	guǎng dōng zì yóu mào yì qū	1
 广发理财年年红	guǎng fā lǐ cái nián nián hóng	1
 广发制造业精选	guǎng fā zhì zào yè jīng xuǎn	1
 广泛性发展障碍	guǎng fàn xìng fā zhǎn zhàng ài	1
@@ -342351,42 +342343,9 @@ sort: by_weight
 广悦堂基悦小学	guǎng yuè táng jī yuè xiǎo xué	1
 光掌硬壳寄居蟹	guāng zhǎng yìng ké jì jū xiè	1
 光照进来的地方	guāng zhào jìn lái de dì fāng	1
-广州暗褐飘拂草	guǎng zhōu àn hè piāo fú cǎo	1
-广州白天鹅宾馆	guǎng zhōu bái tiān é bīn guǎn	1
-广州北二环高速	guǎng zhōu běi èr huán gāo sù	1
-广州城市中轴线	guǎng zhōu chéng shì zhōng zhóu xiàn	1
-广州电视观光塔	guǎng zhōu diàn shì guān guāng tǎ	1
-广州非裔中国人	guǎng zhōu fēi yì zhōng guó rén	1
-广州互联网法院	guǎng zhōu hù lián wǎng fǎ yuàn	1
-广州话拼音方案	guǎng zhōu huà pīn yīn fāng àn	1
-广州华夏大酒店	guǎng zhōu huá xià dà jiǔ diàn	1
-广州科技教育城	guǎng zhōu kē jì jiào yù chéng	1
-光州科学技术院	guāng zhōu kē xué jì shù yuàn	1
-广州蓝月亮实业	guǎng zhōu lán yuè liàng shí yè	1
-广州陆军总医院	guǎng zhōu lù jūn zǒng yī yuàn	1
-广州鲁迅纪念馆	guǎng zhōu lǔ xùn jì niàn guǎn	1
-光州民主化运动	guāng zhōu mín zhǔ huà yùn dòng	1
-广州南二环高速	guǎng zhōu nán èr huán gāo sù	1
-广州农民讲习所	guǎng zhōu nóng mín jiǎng xí suǒ	1
-广州期货交易所	guǎng zhōu qī huò jiāo yì suǒ	1
-广州沙面建筑群	guǎng zhōu shā miàn jiàn zhù qún	1
-广州圣心大教堂	guǎng zhōu shèng xīn dà jiào táng	1
 轨道环吸积假说	guǐ dào huán xī jī jiǎ shuō	1
 癸二酸二异辛酯	guǐ èr suān èr yì xīn zhǐ	1
 硅基超共轭效应	guī jī chāo gòng è xiào yìng	1
-圭亚那半线脂鲤	guī yà nà bàn xiàn zhī lǐ	1
-圭亚那背孔电鳗	guī yà nà bèi kǒng diàn mán	1
-圭亚那短蜴脂鲤	guī yà nà duǎn yì zhī lǐ	1
-圭亚那副牙脂鲤	guī yà nà fù yá zhī lǐ	1
-圭亚那哈氏甲鲶	guī yà nà hā shì jiǎ nián	1
-圭亚那赫氏甲鲶	guī yà nà hè shì jiǎ nián	1
-圭亚那锯腹脂鲤	guī yà nà jù fù zhī lǐ	1
-圭亚那裸背电鳗	guī yà nà luǒ bèi diàn mán	1
-圭亚那犬齿脂鲤	guī yà nà quǎn chǐ zhī lǐ	1
-圭亚那丝鳍脂鲤	guī yà nà sī qí zhī lǐ	1
-圭亚那下臀电鳗	guī yà nà xià tún diàn mán	1
-圭亚那新吸口鲶	guī yà nà xīn xī kǒu nián	1
-圭亚那锈牙脂鲤	guī yà nà xiù yá zhī lǐ	1
 鲑鱼疱疹病毒属	guī yú pào zhěn bìng dú shǔ	1
 桂枝二麻黄一汤	guì zhī èr má huáng yì tāng	1
 桂枝二越婢一汤	guì zhī èr yuè bì yì tāng	1
@@ -342470,21 +342429,6 @@ sort: by_weight
 海藻酸丙二醇酯	hǎi zǎo suān bǐng èr chún zhǐ	1
 孩子毕竟是孩子	hái zi bì jìng shì hái zi	1
 孩子不好好吃饭	hái zi bù hǎo hǎo chī fàn	1
-孩子的表达能力	hái zi de biǎo dá néng lì	1
-孩子的父亲是谁	hái zi de fù qīn shì shuí	1
-孩子的免疫系统	hái zi de miǎn yì xì tǒng	1
-孩子的内心世界	hái zi de nèi xīn shì jiè	1
-孩子的逆反心理	hái zi de nì fǎn xīn lǐ	1
-孩子的认知能力	hái zi de rèn zhī néng lì	1
-孩子的身体发育	hái zi de shēn tǐ fā yù	1
-孩子的睡眠质量	hái zi de shuì mián zhì liàng	1
-孩子的性格特点	hái zi de xìng gé tè diǎn	1
-孩子的学习成绩	hái zi de xué xí chéng jì	1
-孩子的学习态度	hái zi de xué xí tài dù	1
-孩子的爷爷奶奶	hái zi de yé ye nǎi nai	1
-孩子的一举一动	hái zi de yì jǔ yí dòng	1
-孩子的衣食住行	hái zi de yī shí zhù xíng	1
-孩子的自理能力	hái zi de zì lǐ néng lì	1
 孩子缺乏安全感	hái zi quē fá ān quán gǎn	1
 孩子是自己的好	hái zǐ shì zì jǐ de hǎo	1
 孩子特别喜欢吃	hái zi tè bié xǐ huān chī	1
@@ -343995,29 +343939,6 @@ sort: by_weight
 氢离子浓度指数	qīng lí zǐ nóng dù zhǐ shù	1
 青楼烟雨忍相忘	qīng lóu yān yǔ rěn xiāng wàng	1
 青梅如豆柳如眉	qīng méi rú dòu liǔ rú méi	1
-青年冠军方程式	qīng nián guàn jūn fāng chéng shì	1
-青年国际旅行社	qīng nián guó jì lǚ xíng shè	1
-青年教师的成长	qīng nián jiào shī de chéng zhǎng	1
-青年教师的培养	qīng nián jiào shī de péi yǎng	1
-青年军人联合会	qīng nián jūn rén lián hé huì	1
-青年抗日先锋队	qīng nián kàng rì xiān fēng duì	1
-青年科学家论坛	qīng nián kē xué jiā lùn tán	1
-青年企业家商会	qīng nián qǐ yè jiā shāng huì	1
-青年企业家协会	qīng nián qǐ yè jiā xié huì	1
-青年强则国家强	qīng nián qiáng zé guó jiā qiáng	1
-青年摄影家协会	qīng nián shè yǐng jiā xié huì	1
-青年书法家协会	qīng nián shū fǎ jiā xié huì	1
-青年文明号创建	qīng nián wén míng hào chuàng jiàn	1
-青年文明号集体	qīng nián wén míng hào jí tǐ	1
-青年兴则国家兴	qīng nián xīng zé guó jiā xīng	1
-青年英国艺术家	qīng nián yīng guó yì shù jiā	1
-青年志愿服务队	qīng nián zhì yuàn fú wù duì	1
-青年志愿者队伍	qīng nián zhì yuàn zhě duì wǔ	1
-青年志愿者服务	qīng nián zhì yuàn zhě fú wù	1
-青年志愿者活动	qīng nián zhì yuàn zhě huó dòng	1
-青年志愿者协会	qīng nián zhì yuàn zhě xié huì	1
-青年志愿者行动	qīng nián zhì yuàn zhě xíng dòng	1
-青年志愿者总队	qīng nián zhì yuàn zhě zǒng duì	1
 青鸟不到的地方	qīng niǎo bú dào de dì fāng	1
 情人眼里出西施	qíng rén yǎn lǐ chū xī shī	1
 情人约会的地方	qíng rén yuē huì de dì fāng	1
@@ -347553,7 +347474,7 @@ sort: by_weight
 双分子亲核取代反应	shuāng fēn zǐ qīn hé qǔ dài fǎn yìng	1
 斯塔堪布瑞德氏菌属	sī tǎ kān bù ruì dé shì jūn shǔ	1
 甜菜坏死黄脉病毒属	tián cài huài sǐ huáng mài bìng dú shǔ	1
-天将降大任于斯人也	tiān jiàng jiàng dà rèn yú sī rén yě	1
+天将降大任于斯人也	tiān jiāng jiàng dà rèn yú sī rén yě	1
 天下没有白吃的午餐	tiān xià méi yǒu bái chī de wǔ cān	1
 天下没有不散的筵席	tiān xià méi yǒu bú sàn de yán xí	1
 铁打的营盘流水的兵	tiě dǎ de yíng pán liú shuǐ de bīng	1
