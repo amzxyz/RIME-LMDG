@@ -51815,7 +51815,6 @@ sort: by_weight
 俯身迎未落	fǔ shēn yíng wèi luò	1
 俯身逐南北	fǔ shēn zhú nán běi	1
 浮沈逐世流	fú shěn zhú shì liú	1
-浮生长勿勿	fú shēng cháng wù wù	1
 斧声出岩壑	fǔ shēng chū yán hè	1
 浮生大小年	fú shēng dà xiǎo nián	1
 浮生等臊腥	fú shēng děng sāo xīng	1
@@ -170483,6 +170482,7 @@ sort: by_weight
 吾生本无待	wú shēng běn wú dài	1
 无声不断肠	wú shēng bú duàn cháng	1
 无声不见飞	wú shēng bú jiàn fēi	1
+浮生长勿勿	wú shēng cháng wù wù	1
 伍生传或谬	wǔ shēng chuán huò miù	1
 无胜此东轩	wú shèng cǐ dōng xuān	1
 无声但呀呀	wú shēng dàn yā yā	1
@@ -194014,8 +194014,6 @@ sort: by_weight
 移身坐绿阴	yí shēn zuò lǜ yīn	1
 亦生百尺条	yì shēng bǎi chǐ tiáo	1
 一眚奔岷山	yī shěng bēn mín shān	1
-一生长苦节	yì shēng cháng kǔ jié	1
-一生长怗怗	yì shēng cháng tiē tiē	1
 一声肠一断	yì shēng cháng yí duàn	1
 翊圣崇国本	yì shèng chóng guó běn	1
 一声雏凤呼	yì shēng chú fèng hū	1
@@ -194063,6 +194061,8 @@ sort: by_weight
 一生欲报主	yì shēng yù bào zhǔ	1
 一生在慵中	yì shēng zài yōng zhōng	1
 一声早蝉发	yì shēng zǎo chán fā	1
+一生长苦节	yī shēng zhǎng kǔ jié	1
+一生长怗怗	yī shēng zhǎng tiē tiē	1
 一生自孤直	yì shēng zì gū zhí	1
 一生自穷苦	yì shēng zì qióng kǔ	1
 一生自疏旷	yì shēng zì shū kuàng	1
@@ -249728,7 +249728,6 @@ sort: by_weight
 夫神者不自许也	fū shén zhě bú zì xǔ yě	1
 浮生不住叶随风	fú shēng bú zhù yè suí fēng	1
 浮生不作游丝上	fú shēng bú zuò yóu sī shàng	1
-浮生长恨欢娱少	fú shēng cháng hèn huān yú shǎo	1
 浮生复更忧患多	fú shēng fù gèng yōu huàn duō	1
 浮生怳忽若真梦	fú shēng huǎng hū ruò zhēn mèng	1
 浮生聚散云相似	fú shēng jù sàn yún xiāng sì	1
@@ -249740,6 +249739,7 @@ sort: by_weight
 浮生万事蚁旋磨	fú shēng wàn shì yǐ xuán mó	1
 浮生未到无生地	fú shēng wèi dào wú shēng dì	1
 浮生野马悠悠哉	fú shēng yě mǎ yōu yōu zāi	1
+浮生长恨欢娱少	fú shēng zhǎng hèn huān yú shǎo	1
 浮生只合尊前老	fú shēng zhī hé zūn qián lǎo	1
 拂拭宝墨生楚怆	fú shì bǎo mò shēng chǔ chuàng	1
 浮世本来多聚散	fú shì běn lái duō jù sàn	1
@@ -256534,7 +256534,7 @@ sort: by_weight
 后生试觅子渊才	hòu shēng shì mì zǐ yuān cái	1
 后生谁续笑谈余	hòu shēng shuí xù xiào tán yú	1
 后生晚出不勉学	hòu shēng wǎn chū bù miǎn xué	1
-后生相动何寂寥	hòu shēng xiāng dòng hé jì liáo	1
+后生相动何寂寥	hòu shēng xiàng dòng hé jì liáo	1
 后世必为子孙忧	hòu shì bì wéi zǐ sūn yōu	1
 后时连骑莫相违	hòu shí lián qí mò xiāng wéi	1
 后世学问是两截	hòu shì xué wèn shì liǎng jié	1
@@ -310564,9 +310564,6 @@ sort: by_weight
 一声冰铁散岩谷	yì shēng bīng tiě sàn yán gǔ	1
 一生不得文章力	yì shēng bù dé wén zhāng lì	1
 一生不及双黄鹄	yì shēng bù jí shuāng huáng hú	1
-一生长对水晶盘	yì shēng cháng duì shuǐ jīng pán	1
-一生长共月亏盈	yì shēng cháng gòng yuè kuī yíng	1
-一生长恨奈何许	yì shēng cháng hèn nài hé xǔ	1
 一生称意能几人	yì shēng chēng yì néng jǐ rén	1
 一声吹裂翠崖冈	yì shēng chuī liè cuì yá gāng	1
 一声吹裂阶前石	yì shēng chuī liè jiē qián shí	1
@@ -310642,6 +310639,9 @@ sort: by_weight
 一生幽暗又如何	yì shēng yōu àn yòu rú hé	1
 一生忧患萃残年	yì shēng yōu huàn cuì cán nián	1
 一声占尽秋江月	yì shēng zhàn jìn qiū jiāng yuè	1
+一生长对水晶盘	yī shēng zhǎng duì shuǐ jīng pán	1
+一生长共月亏盈	yī shēng zhǎng gòng yuè kuī yíng	1
+一生长恨奈何许	yī shēng zhǎng hèn nài hé xǔ	1
 一生真伪复谁知	yì shēng zhēn wěi fù shuí zhī	1
 一生自猎知无敌	yì shēng zì liè zhī wú dí	1
 一生自是悠悠者	yì shēng zì shì yōu yōu zhě	1
@@ -314562,7 +314562,7 @@ sort: by_weight
 与君言语见君性	yǔ jūn yán yǔ jiàn jūn xìng	1
 与君依旧绿衫行	yǔ jūn yī jiù lǜ shān xíng	1
 与君一日为夫妇	yǔ jūn yí rì wéi fū fù	1
-与君一生长拍浮	yǔ jūn yì shēng cháng pāi fú	1
+与君一生长拍浮	yǔ jūn yī shēng zhǎng pāi fú	1
 与君饮酒细论文	yǔ jūn yǐn jiǔ xì lùn wén	1
 与君营奠复营斋	yǔ jūn yíng diàn fù yíng zhāi	1
 与君约略说杭州	yǔ jūn yuē lüè shuō háng zhōu	1

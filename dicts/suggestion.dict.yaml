@@ -75832,7 +75832,6 @@ sort: by_weight
 国民认知度	guó mín rèn zhī dù	1
 国民荣誉奖	guó mín róng yù jiǎng	1
 国民荣誉赏	guó mín róng yù shǎng	1
-国民身分证	guó mín shēn fèn zhèng	1
 国民身份证	guó mín shēn fèn zhèng	1
 国民收音机	guó mín shōu yīn jī	1
 国民体育会	guó mín tǐ yù huì	1
@@ -84424,7 +84423,7 @@ sort: by_weight
 厚身犀孔鲷	hòu shēn xī kǒng diāo	1
 后生白云岩	hòu shēng bái yún yán	1
 厚生基金会	hòu shēng jī jīn huì	1
-后生角砾岩	hòu shēng jiǎo lì yán	1
+后生角砾岩	hòu shēng jué lì yán	1
 后生可畏啊	hòu shēng kě wèi a	1
 厚生劳动相	hòu shēng láo dòng xiāng	1
 侯氏翅鲎属	hòu shì chì hòu shǔ	1
@@ -159989,6 +159988,7 @@ sort: by_weight
 让你们闭嘴	ràng nǐ men bì zuǐ	1
 让你失望了	ràng nǐ shī wàng le	1
 让你受精了	ràng nǐ shòu jīng le	1
+让你笑话了	ràng nǐ xiào hua le	1
 让您费心了	ràng nín fèi xīn le	1
 让您见笑了	ràng nín jiàn xiào le	1
 让您失望了	ràng nín shī wàng le	1
@@ -172510,7 +172510,6 @@ sort: by_weight
 生旦净末丑	shēng dàn jìng mò chǒu	1
 生旦净末我	shēng dàn jìng mò wǒ	1
 生当复来归	shēng dāng fù lái guī	1
-生当做人杰	shēng dàng zuò rén jié	1
 剩的不多了	shèng de bù duō le	1
 生的是女儿	shēng de shì nǚ er	1
 省电力公司	shěng diàn lì gōng sī	1
@@ -184464,6 +184463,7 @@ sort: by_weight
 水溶性多糖	shuǐ róng xìng duō táng	1
 水溶性肥料	shuǐ róng xìng féi liào	1
 水溶性硅油	shuǐ róng xìng guī yóu	1
+水溶性果胶	shuǐ róng xìng guǒ jiāo	1
 水溶性涂料	shuǐ róng xìng tú liào	1
 水溶性物质	shuǐ róng xìng wù zhì	1
 水溶性纤维	shuǐ róng xìng xiān wéi	1
@@ -253331,7 +253331,7 @@ sort: by_weight
 这也是一切	zhè yě shì yí qiè	1
 这也意味着	zhè yě yì wèi zhe	1
 这也有助于	zhè yě yǒu zhù yú	1
-这也证明了	zhè yě zhèng míng liǎo	1
+这也证明了	zhè yě zhèng míng le	1
 这一场比赛	zhè yì chǎng bǐ sài	1
 这一场战斗	zhè yì chǎng zhàn dòu	1
 这一次意外	zhè yí cì yì wài	1
@@ -255808,7 +255808,7 @@ sort: by_weight
 证明复印件	zhèng míng fù yìn jiàn	1
 证明给你看	zhèng míng gěi nǐ kàn	1
 证明给我看	zhèng míng gěi wǒ kàn	1
-证明了自己	zhèng míng liǎo zì jǐ	1
+证明了自己	zhèng míng le zì jǐ	1
 证明我的爱	zhèng míng wǒ de ài	1
 证明一件事	zhèng míng yí jiàn shì	1
 证明怎么写	zhèng míng zěn me xiě	1
@@ -258161,7 +258161,7 @@ sort: by_weight
 知名俱乐部	zhī míng jù lè bù	1
 知名开发商	zhī míng kāi fā shāng	1
 知名科学家	zhī míng kē xué jiā	1
-指明了方向	zhǐ míng liǎo fāng xiàng	1
+指明了方向	zhǐ míng le fāng xiàng	1
 致命罗密欧	zhì mìng luó mì ōu	1
 致命螺旋丸	zhì mìng luó xuán wán	1
 知名漫画家	zhī míng màn huà jiā	1
@@ -276878,7 +276878,6 @@ sort: by_weight
 长羽柄双盖蕨	cháng yǔ bǐng shuāng gài jué	1
 长羽复叶耳蕨	cháng yǔ fù yè ěr jué	1
 长余高速公路	cháng yú gāo sù gōng lù	1
-长羽毛的恐龙	cháng yǔ máo de kǒng lóng	1
 长余佩之陆离	cháng yú pèi zhī lù lí	1
 长羽深巨口鱼	cháng yǔ shēn jù kǒu yú	1
 长羽芽胞耳蕨	cháng yǔ yá bāo ěr jué	1
@@ -296361,7 +296360,6 @@ sort: by_weight
 聚丙烯睛纤维	jù bǐng xī jīng xiān wéi	1
 聚丙烯腈纤维	jù bǐng xī jīng xiān wéi	1
 聚丙烯酸树脂	jù bǐng xī suān shù zhī	1
-菊部地区有血	jú bù dì qū yǒu xuè	1
 局部二值模式	jú bù èr zhí mó shì	1
 局部过敏反应	jú bù guò mǐn fǎn yìng	1
 局部极限定理	jú bù jí xiàn dìng lǐ	1
@@ -318113,7 +318111,6 @@ sort: by_weight
 韦氏杂色脂鲤	wéi shì zá sè zhī lǐ	1
 维氏真巨口鱼	wéi shì zhēn jù kǒu yú	1
 维氏栉精器鱼	wéi shì zhì jīng qì yú	1
-魏氏智力测验	wèi shì zhì lì cè yàn	1
 韦氏智力测验	wéi shì zhì lì cè yàn	1
 韦氏智力量表	wéi shì zhì lì liàng biǎo	1
 围手术期护理	wéi shǒu shù qī hù lǐ	1
@@ -328722,6 +328719,7 @@ sort: by_weight
 漳永高速公路	zhāng yǒng gāo sù gōng lù	1
 章鱼哔的原罪	zhāng yú bì de yuán zuì	1
 章鱼部屋劳动	zhāng yú bù wū láo dòng	1
+长羽毛的恐龙	zhǎng yǔ máo de kǒng lóng	1
 章鱼噼的原罪	zhāng yú pī de yuán zuì	1
 张雨绮的性格	zhāng yǔ qǐ de xìng gé	1
 张垣绥靖公署	zhāng yuán suí jìng gōng shǔ	1
@@ -346738,7 +346736,6 @@ sort: by_weight
 自古及今皆若斯	zì gǔ jí jīn jiē ruò sī	1
 自古穷通皆有定	zì gǔ qióng tōng jiē yǒu dìng	1
 自古深情留不住	zì gǔ shēn qíng liú bú zhù	1
-自古圣贤多寂寞	zì gǔ shèng xián duō jì mò	1
 自古圣贤皆寂寞	zì gǔ shèng xián jiē jì mò	1
 自古圣贤尽贫贱	zì gǔ shèng xián jìn pín jiàn	1
 自古套路得人心	zì gǔ tào lù dé rén xīn	1
