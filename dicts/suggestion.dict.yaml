@@ -7,20 +7,6 @@ name: suggestion
 version: "LTS"
 sort: by_weight
 ...
-兵鲶	bīng nián	1
-荷属	hé shǔ	1
-葡属	pú shǔ	1
-英属	yīng shǔ	1
-宝丽鱼	bǎo lì yú	1
-盾海鲶	dùn hǎi nián	1
-红脂鲤	hóng zhī lǐ	1
-棘盖鲶	jí gài nián	1
-颊脂鲤	jiá zhī lǐ	1
-琼脂鲤	qióng zhī lǐ	1
-石脂鲤	shí zhī lǐ	1
-溪脂鲤	xī zhī lǐ	1
-泽丝鲶	zé sī nián	1
-驻大使	zhù dà shǐ	1
 阿巴科群岛	ā bā kē qún dǎo	1
 阿贝尔定理	ā bèi ěr dìng lǐ	1
 阿贝尔群论	ā bèi ěr qún lùn	1
@@ -1476,7 +1462,6 @@ sort: by_weight
 氨基甲酸铵	ān jī jiǎ suān ǎn	1
 氨基甲酸钾	ān jī jiǎ suān jiǎ	1
 氨基甲酸盐	ān jī jiǎ suān yán	1
-胺基甲酸酯	àn jī jiǎ suān zhǐ	1
 氨基甲酸酯	ān jī jiǎ suān zhǐ	1
 氨基甲酰基	ān jī jiǎ xiān jī	1
 氨基甲酰氯	ān jī jiǎ xiān lǜ	1
@@ -3610,45 +3595,26 @@ sort: by_weight
 八月狂想曲	bā yuè kuáng xiǎng qǔ	1
 八月廿八日	bā yuè niàn bā rì	1
 八月廿二日	bā yuè niàn èr rì	1
-捌月廿贰日	bā yuè niàn èr rì	1
 八月廿九日	bā yuè niàn jiǔ rì	1
-捌月廿玖日	bā yuè niàn jiǔ rì	1
 八月廿六日	bā yuè niàn liù rì	1
-捌月廿陆日	bā yuè niàn liù rì	1
 八月廿七日	bā yuè niàn qī rì	1
-捌月廿柒日	bā yuè niàn qī rì	1
 八月廿三日	bā yuè niàn sān rì	1
-捌月廿叁日	bā yuè niàn sān rì	1
 八月廿四日	bā yuè niàn sì rì	1
-捌月廿肆日	bā yuè niàn sì rì	1
 八月廿五日	bā yuè niàn wǔ rì	1
-捌月廿伍日	bā yuè niàn wǔ rì	1
 八月廿一日	bā yuè niàn yī rì	1
-捌月廿壹日	bā yuè niàn yī rì	1
-捌月卅壹日	bā yuè sà yī rì	1
 八月三十号	bā yuè sān shí hào	1
 八月三十日	bā yuè sān shí rì	1
-捌月叁拾日	bā yuè sān shí rì	1
 八月十八日	bā yuè shí bā rì	1
-捌月拾捌日	bā yuè shí bā rì	1
 八月十二日	bā yuè shí èr rì	1
-捌月拾贰日	bā yuè shí èr rì	1
-捌月拾玖日	bā yuè shí jiǔ rì	1
 八月十九日	bā yuè shí jiǔ rì	1
 八月十六日	bā yuè shí liù rì	1
-捌月拾陆日	bā yuè shí liù rì	1
 八月十七日	bā yuè shí qī rì	1
-捌月拾柒日	bā yuè shí qī rì	1
 八月十三号	bā yuè shí sān hào	1
 八月十三日	bā yuè shí sān rì	1
-捌月拾叁日	bā yuè shí sān rì	1
 八月十四日	bā yuè shí sì rì	1
-捌月拾肆日	bā yuè shí sì rì	1
 八月十五号	bā yuè shí wǔ hào	1
-捌月拾伍日	bā yuè shí wǔ rì	1
 八月十五日	bā yuè shí wǔ rì	1
 八月十一日	bā yuè shí yī rì	1
-捌月拾壹日	bā yuè shí yī rì	1
 八月照相馆	bā yuè zhào xiàng guǎn	1
 霸占停车位	bà zhàn tíng chē wèi	1
 八丈人参草	bā zhàng rén shēn cǎo	1
@@ -10632,8 +10598,6 @@ sort: by_weight
 壁虎的尾巴	bì hǔ de wěi ba	1
 壁虎在漫步	bì hǔ zài màn bù	1
 笔画排检法	bǐ huà pái jiǎn fǎ	1
-笔划排检法	bǐ huà pái jiǎn fǎ	1
-笔划输入法	bǐ huà shū rù fǎ	1
 笔画输入法	bǐ huà shū rù fǎ	1
 闭环式管理	bì huán shì guǎn lǐ	1
 比黄金还贵	bǐ huáng jīn hái guì	1
@@ -20476,29 +20440,29 @@ sort: by_weight
 差别有点大	chā bié yǒu diǎn dà	1
 差别在哪里	chā bié zài nǎ lǐ	1
 察布查尔病	chá bù chá ěr bìng	1
-差不多半年	chà bù duō bàn nián	1
-差不多到了	chà bù duō dào le	1
-差不多得了	chà bù duō dé le	1
-差不多点的	chà bù duō diǎn de	1
-差不多都快	chà bù duō dōu kuài	1
-差不多都是	chà bù duō dōu shì	1
-差不多刚好	chà bù duō gāng hǎo	1
-差不多就得	chà bù duō jiù děi	1
+差不多半年	chà bu duō bàn nián	1
+差不多到了	chà bu duō dào le	1
+差不多得了	chà bu duō dé le	1
+差不多点的	chà bu duō diǎn de	1
+差不多都快	chà bu duō dōu kuài	1
+差不多都是	chà bu duō dōu shì	1
+差不多刚好	chà bu duō gāng hǎo	1
+差不多就得	chà bu duō jiù děi	1
 差不多就好	chà bù duō jiù hǎo	1
 差不多就是	chà bù duō jiù shì	1
 差不多就行	chà bù duō jiù xíng	1
-差不多了吧	chà bù duō le ba	1
-差不多两年	chà bù duō liǎng nián	1
-差不多没差	chà bù duō méi chà	1
-差不多时间	chà bù duō shí jiān	1
-差不多十年	chà bù duō shí nián	1
-差不多娃娃	chà bù duō wá wa	1
-差不多完成	chà bù duō wán chéng	1
-差不多先生	chà bù duō xiān shēng	1
-差不多小姐	chà bù duō xiǎo jiě	1
-差不多行了	chà bù duō xíng le	1
-差不多一半	chà bù duō yí bàn	1
-差不多一年	chà bù duō yì nián	1
+差不多了吧	chà bu duō le ba	1
+差不多两年	chà bu duō liǎng nián	1
+差不多没差	chà bu duō méi chà	1
+差不多时间	chà bu duō shí jiān	1
+差不多十年	chà bu duō shí nián	1
+差不多娃娃	chà bu duō wá wa	1
+差不多完成	chà bu duō wán chéng	1
+差不多先生	chà bu duō xiān shēng	1
+差不多小姐	chà bu duō xiǎo jiě	1
+差不多行了	chà bu duō xíng le	1
+差不多一半	chà bu duō yí bàn	1
+差不多一年	chà bu duō yì nián	1
 查布华夏鸟	chá bù huá xià niǎo	1
 差不了多少	chà bù liǎo duō shǎo	1
 茶产业发展	chá chǎn yè fā zhǎn	1
@@ -21954,7 +21918,7 @@ sort: by_weight
 场地租赁费	chǎng dì zū lìn fèi	1
 昌东工业园	chāng dōng gōng yè yuán	1
 长度比较长	cháng dù bǐ jiào cháng	1
-长度差不多	cháng dù chà bù duō	1
+长度差不多	cháng dù chà bu duō	1
 长蠹虫下目	cháng dù chóng xià mù	1
 长度的测量	cháng dù de cè liáng	1
 长度刚刚好	cháng dù gāng gāng hǎo	1
@@ -26537,7 +26501,7 @@ sort: by_weight
 赤道坐标系	chì dào zuò biāo xì	1
 吃得比较多	chī de bǐ jiào duō	1
 吃的避孕药	chī de bì yùn yào	1
-吃得差不多	chī de chà bù duō	1
+吃得差不多	chī de chà bu duō	1
 吃得更健康	chī de gèng jiàn kāng	1
 吃的过程中	chī de guò chéng zhōng	1
 吃得好不好	chī de hǎo bù hǎo	1
@@ -32857,7 +32821,7 @@ sort: by_weight
 大概半小时	dà gài bàn xiǎo shí	1
 大概不存在	dà gài bù cún zài	1
 大概不知道	dà gài bù zhī dào	1
-大概差不多	dà gài chà bù duō	1
+大概差不多	dà gài chà bu duō	1
 大概的意思	dà gài de yì si	1
 大概都知道	dà gài dōu zhī dào	1
 大概多少钱	dà gài duō shǎo qián	1
@@ -33179,7 +33143,7 @@ sort: by_weight
 大家不知道	dà jiā bù zhī dào	1
 大家才会好	dà jiā cái huì hǎo	1
 大家猜一下	dà jiā cāi yí xià	1
-大家差不多	dà jiā chà bù duō	1
+大家差不多	dà jiā chà bu duō	1
 大甲慈济宫	dà jiǎ cí jì gōng	1
 大家的厨房	dà jiā de chú fáng	1
 大家的故事	dà jiā de gù shì	1
@@ -34315,7 +34279,7 @@ sort: by_weight
 大小不均匀	dà xiǎo bù jūn yún	1
 大小不一样	dà xiǎo bù yí yàng	1
 大小不一致	dà xiǎo bù yī zhì	1
-大小差不多	dà xiǎo chà bù duō	1
+大小差不多	dà xiǎo chà bu duō	1
 大小端模式	dà xiǎo duān mó shì	1
 大消费板块	dà xiāo fèi bǎn kuài	1
 大消费行业	dà xiāo fèi háng yè	1
@@ -45067,9 +45031,9 @@ sort: by_weight
 都曾出现过	dōu céng chū xiàn guò	1
 都曾经历过	dōu céng jīng lì guò	1
 都曾经有过	dōu céng jīng yǒu guò	1
-都差不多吧	dōu chà bù duō ba	1
-都差不多啦	dōu chà bù duō la	1
-都差不多了	dōu chà bù duō le	1
+都差不多吧	dōu chà bu duō ba	1
+都差不多啦	dōu chà bu duō la	1
+都差不多了	dōu chà bu duō le	1
 都成了奢望	dōu chéng le shē wàng	1
 都成啥样了	dōu chéng shá yàng le	1
 都成这样了	dōu chéng zhè yàng le	1
@@ -51368,7 +51332,6 @@ sort: by_weight
 二月的胜者	èr yuè de shèng zhě	1
 二月二十八	èr yuè èr shí bā	1
 二月二十六	èr yuè èr shí liù	1
-贰月贰拾日	èr yuè èr shí rì	1
 二月二十三	èr yuè èr shí sān	1
 二月二十四	èr yuè èr shí sì	1
 二月革命党	èr yuè gé mìng dǎng	1
@@ -51380,14 +51343,11 @@ sort: by_weight
 二月廿四日	èr yuè niàn sì rì	1
 二月廿五日	èr yuè niàn wǔ rì	1
 二月廿一日	èr yuè niàn yī rì	1
-贰月拾捌日	èr yuè shí bā rì	1
 二月十八日	èr yuè shí bā rì	1
-贰月拾贰日	èr yuè shí èr rì	1
 二月十二日	èr yuè shí èr rì	1
 二月十九日	èr yuè shí jiǔ rì	1
 二月十六日	èr yuè shí liù rì	1
 二月十七日	èr yuè shí qī rì	1
-贰月拾叁日	èr yuè shí sān rì	1
 二月十三日	èr yuè shí sān rì	1
 二月十四日	èr yuè shí sì rì	1
 二月十五号	èr yuè shí wǔ hào	1
@@ -57224,7 +57184,7 @@ sort: by_weight
 分守西宁道	fēn shǒu xī níng dào	1
 分手又复合	fēn shǒu yòu fù hé	1
 分数不理想	fēn shù bù lǐ xiǎng	1
-分数差不多	fēn shù chà bù duō	1
+分数差不多	fēn shù chà bu duō	1
 分数的大小	fēn shù de dà xiǎo	1
 分数的意义	fēn shù de yì yì	1
 分数阶控制	fēn shù jiē kòng zhì	1
@@ -59851,7 +59811,6 @@ sort: by_weight
 富士吉田市	fù shì jí tián shì	1
 富士急行线	fù shì jí xíng xiàn	1
 富士级战舰	fù shì jí zhàn jiàn	1
-复式记帐法	fù shì jì zhàng fǎ	1
 复式记账法	fù shì jì zhàng fǎ	1
 福士甲虫车	fú shì jiǎ chóng chē	1
 副食加工间	fù shí jiā gōng jiān	1
@@ -61631,7 +61590,7 @@ sort: by_weight
 感觉不舒服	gǎn jué bù shū fú	1
 感觉不太好	gǎn jué bú tài hǎo	1
 感觉不一样	gǎn jué bù yí yàng	1
-感觉差不多	gǎn jué chà bù duō	1
+感觉差不多	gǎn jué chà bu duō	1
 感觉超负荷	gǎn jué chāo fù hè	1
 感觉到地震	gǎn jué dào dì zhèn	1
 感觉到什么	gǎn jué dào shén me	1
@@ -62323,7 +62282,6 @@ sort: by_weight
 港岛西联网	gǎng dǎo xī lián wǎng	1
 港岛线西延	gǎng dǎo xiàn xī yán	1
 刚地弓形虫	gāng dì gōng xíng chóng	1
-岗底斯山脉	gǎng dǐ sī shān mài	1
 冈底斯山脉	gāng dǐ sī shān mài	1
 钢都花园站	gāng dōu huā yuán zhàn	1
 刚铎摄政王	gāng duó shè zhèng wáng	1
@@ -66410,7 +66368,7 @@ sort: by_weight
 跟没说一样	gēn méi shuō yí yàng	1
 根囊鞭菌属	gēn náng biān jūn shǔ	1
 跟你不一样	gēn nǐ bù yí yàng	1
-跟你差不多	gēn nǐ chà bù duō	1
+跟你差不多	gēn nǐ chà bu duō	1
 跟你打电话	gēn nǐ dǎ diàn huà	1
 跟你对着干	gēn nǐ duì zhe gàn	1
 跟你很熟吗	gēn nǐ hěn shú ma	1
@@ -66475,7 +66433,7 @@ sort: by_weight
 跟往常一样	gēn wǎng cháng yí yàng	1
 跟往年一样	gēn wǎng nián yí yàng	1
 根文件系统	gēn wén jiàn xì tǒng	1
-跟我差不多	gēn wǒ chà bù duō	1
+跟我差不多	gēn wǒ chà bu duō	1
 跟我处对象	gēn wǒ chù duì xiàng	1
 跟我打电话	gēn wǒ dǎ diàn huà	1
 跟我打一架	gēn wǒ dǎ yí jià	1
@@ -77498,7 +77456,7 @@ sort: by_weight
 海战博物馆	hǎi zhàn bó wù guǎn	1
 还这么淡定	hái zhè me dàn dìng	1
 还真不知道	hái zhēn bù zhī dào	1
-还真差不多	hái zhēn chà bù duō	1
+还真差不多	hái zhēn chà bu duō	1
 还真是有些	hái zhēn shì yǒu xiē	1
 还真说不好	hái zhēn shuō bù hǎo	1
 还真想不到	hái zhēn xiǎng bú dào	1
@@ -80424,7 +80382,7 @@ sort: by_weight
 核能反应炉	hé néng fǎn yìng lú	1
 核能研究所	hé néng yán jiū suǒ	1
 和你不一样	hé nǐ bù yí yàng	1
-和你差不多	hé nǐ chà bù duō	1
+和你差不多	hé nǐ chà bu duō	1
 和你打电话	hé nǐ dǎ diàn huà	1
 和你打招呼	hé nǐ dǎ zhāo hū	1
 和你交朋友	hé nǐ jiāo péng you	1
@@ -80892,7 +80850,7 @@ sort: by_weight
 何文田广场	hé wén tián guǎng chǎng	1
 褐吻鰕虎鱼	hè wěn xiā hǔ yú	1
 褐纹胸鹛属	hè wén xiōng méi shǔ	1
-和我差不多	hé wǒ chà bù duō	1
+和我差不多	hé wǒ chà bu duō	1
 和我处对象	hé wǒ chù duì xiàng	1
 合我的胃口	hé wǒ de wèi kǒu	1
 和我家宝宝	hé wǒ jiā bǎo bao	1
@@ -91575,7 +91533,7 @@ sort: by_weight
 基本不学习	jī běn bù xué xí	1
 基本不影响	jī běn bù yǐng xiǎng	1
 基本不赚钱	jī běn bú zhuàn qián	1
-基本差不多	jī běn chà bù duō	1
+基本差不多	jī běn chà bu duō	1
 基本出发点	jī běn chū fā diǎn	1
 基本传染数	jī běn chuán rǎn shù	1
 基本的操作	jī běn de cāo zuò	1
@@ -95634,7 +95592,7 @@ sort: by_weight
 价格不透明	jià gé bú tòu míng	1
 价格不稳定	jià gé bù wěn dìng	1
 价格不一样	jià gé bù yí yàng	1
-价格差不多	jià gé chà bù duō	1
+价格差不多	jià gé chà bu duō	1
 价格大跳水	jià gé dà tiào shuǐ	1
 价格的变化	jià gé de biàn huà	1
 价格的波动	jià gé de bō dòng	1
@@ -107761,7 +107719,7 @@ sort: by_weight
 韭菜馅饺子	jiǔ cài xiàn jiǎo zi	1
 韭菜园街道	jiǔ cài yuán jiē dào	1
 旧草岭隧道	jiù cǎo lǐng suì dào	1
-就差不多了	jiù chà bù duō le	1
+就差不多了	jiù chà bu duō le	1
 就差点意思	jiù chà diǎn yì si	1
 就差你一个	jiù chà nǐ yí gè	1
 就差一步了	jiù chà yí bù le	1
@@ -110289,7 +110247,7 @@ sort: by_weight
 觉得不舒服	jué de bù shū fú	1
 觉得不应该	jué de bù yīng gāi	1
 觉得不值得	jué de bù zhí dé	1
-觉得差不多	jué de chà bù duō	1
+觉得差不多	jué de chà bu duō	1
 觉得对不住	jué de duì bú zhù	1
 觉得非常好	jué de fēi cháng hǎo	1
 觉得还不错	jué de hái bú cuò	1
@@ -112604,7 +112562,7 @@ sort: by_weight
 看着别人吃	kàn zhe bié rén chī	1
 看着不舒服	kàn zhe bù shū fú	1
 看着不顺眼	kàn zhe bú shùn yǎn	1
-看着差不多	kàn zhe chà bù duō	1
+看着差不多	kàn zhe chà bu duō	1
 看着电视剧	kàn zhe diàn shì jù	1
 看着都难受	kàn zhe dōu nán shòu	1
 看着都心疼	kàn zhe dōu xīn téng	1
@@ -116832,7 +116790,7 @@ sort: by_weight
 快餐店老板	kuài cān diàn lǎo bǎn	1
 快餐连锁店	kuài cān lián suǒ diàn	1
 快餐式爱情	kuài cān shì ài qíng	1
-快差不多了	kuài chà bù duō le	1
+快差不多了	kuài chà bu duō le	1
 快充充电器	kuài chōng chōng diàn qì	1
 快充数据线	kuài chōng shù jù xiàn	1
 快刀洪吉童	kuài dāo hóng jí tóng	1
@@ -123683,7 +123641,7 @@ sort: by_weight
 两张身份证	liǎng zhāng shēn fèn zhèng	1
 两张信用卡	liǎng zhāng xìn yòng kǎ	1
 两张银行卡	liǎng zhāng yín háng kǎ	1
-两者差不多	liǎng zhě chà bù duō	1
+两者差不多	liǎng zhě chà bu duō	1
 两者的不同	liǎng zhě de bù tóng	1
 两者的差别	liǎng zhě de chā bié	1
 两者的差距	liǎng zhě de chā jù	1
@@ -127703,9 +127661,6 @@ sort: by_weight
 陆源沉积物	lù yuán chén jī wù	1
 芦原妃名子	lú yuán fēi míng zǐ	1
 潞苑南大街	lù yuàn nán dà jiē	1
-陆月贰拾日	lù yuè èr shí rì	1
-陆月叁拾日	lù yuè sān shí rì	1
-陆月拾叁日	lù yuè shí sān rì	1
 路越走越宽	lù yuè zǒu yuè kuān	1
 路越走越窄	lù yuè zǒu yuè zhǎi	1
 炉渣混凝土	lú zhā hùn níng tǔ	1
@@ -135233,13 +135188,6 @@ sort: by_weight
 民国廿五年	mín guó niàn wǔ nián	1
 民国廿一年	mín guó niàn yī nián	1
 民国奇女子	mín guó qí nǚ zǐ	1
-民国卅八年	mín guó sà bā nián	1
-民国卅九年	mín guó sà jiǔ nián	1
-民国卅七年	mín guó sà qī nián	1
-民国卅三年	mín guó sà sān nián	1
-民国卅四年	mín guó sà sì nián	1
-民国卅五年	mín guó sà wǔ nián	1
-民国卅一年	mín guó sà yì nián	1
 民国三十年	mín guó sān shí nián	1
 民国十八年	mín guó shí bā nián	1
 民国十二年	mín guó shí èr nián	1
@@ -139891,7 +139839,7 @@ sort: by_weight
 内燃凿岩机	nèi rán záo yán jī	1
 内容被修改	nèi róng bèi xiū gǎi	1
 内容不完整	nèi róng bù wán zhěng	1
-内容差不多	nèi róng chà bù duō	1
+内容差不多	nèi róng chà bu duō	1
 内容创业者	nèi róng chuàng yè zhě	1
 内容创造者	nèi róng chuàng zào zhě	1
 内容创作者	nèi róng chuàng zuò zhě	1
@@ -143044,7 +142992,7 @@ sort: by_weight
 年会邀请函	nián huì yāo qǐng hán	1
 年纪比较小	nián jì bǐ jiào xiǎo	1
 年纪不小了	nián jì bù xiǎo le	1
-年纪差不多	nián jì chà bù duō	1
+年纪差不多	nián jì chà bu duō	1
 年纪大了吧	nián jì dà le ba	1
 年纪大了点	nián jì dà le diǎn	1
 年纪大一点	nián jì dà yì diǎn	1
@@ -143074,7 +143022,7 @@ sort: by_weight
 年龄比较大	nián líng bǐ jiào dà	1
 年龄比较小	nián líng bǐ jiào xiǎo	1
 年龄不饶人	nián líng bù ráo rén	1
-年龄差不多	nián líng chà bù duō	1
+年龄差不多	nián líng chà bu duō	1
 年龄差距大	nián líng chā jù dà	1
 年龄大的人	nián líng dà de rén	1
 年龄大一点	nián líng dà yì diǎn	1
@@ -151047,7 +150995,6 @@ sort: by_weight
 起跑反应时	qǐ pǎo fǎn yìng shí	1
 气泡缓冲材	qì pào huǎn chōng cái	1
 气泡鸟尾蛤	qì pào niǎo wěi há	1
-汽泡排序法	qì pào pái xù fǎ	1
 气泡排序法	qì pào pái xù fǎ	1
 起泡葡萄酒	qǐ pào pú táo jiǔ	1
 气泡水准仪	qì pào shuǐ zhǔn yí	1
@@ -151162,7 +151109,7 @@ sort: by_weight
 其实不用怕	qí shí bú yòng pà	1
 其实不知道	qí shí bù zhī dào	1
 其实不重要	qí shí bú zhòng yào	1
-其实差不多	qí shí chà bù duō	1
+其实差不多	qí shí chà bu duō	1
 其市场价值	qí shì chǎng jià zhí	1
 骑士出任务	qí shì chū rèn wù	1
 其实大多数	qí shí dà duō shù	1
@@ -152212,13 +152159,11 @@ sort: by_weight
 七月廿四日	qī yuè niàn sì rì	1
 七月廿五日	qī yuè niàn wǔ rì	1
 七月七日晴	qī yuè qī rì qíng	1
-柒月叁拾日	qī yuè sān shí rì	1
 七月三十日	qī yuè sān shí rì	1
 七月三十一	qī yuè sān shí yī	1
 齐岳山隧道	qí yuè shān suì dào	1
 七月十八日	qī yuè shí bā rì	1
 七月十二日	qī yuè shí èr rì	1
-柒月拾玖日	qī yuè shí jiǔ rì	1
 七月十九日	qī yuè shí jiǔ rì	1
 七月十六日	qī yuè shí liù rì	1
 七月十七日	qī yuè shí qī rì	1
@@ -152228,7 +152173,6 @@ sort: by_weight
 七月十五号	qī yuè shí wǔ hào	1
 七月十五日	qī yuè shí wǔ rì	1
 七月十一号	qī yuè shí yī hào	1
-柒月拾壹日	qī yuè shí yī rì	1
 七月十一日	qī yuè shí yī rì	1
 契约型基金	qì yuē xíng jī jīn	1
 七月与安生	qī yuè yǔ ān shēng	1
@@ -155699,7 +155643,7 @@ sort: by_weight
 情况不属实	qíng kuàng bù shǔ shí	1
 情况不太好	qíng kuàng bú tài hǎo	1
 情况不一样	qíng kuàng bù yí yàng	1
-情况差不多	qíng kuàng chà bù duō	1
+情况差不多	qíng kuàng chà bu duō	1
 情况的变化	qíng kuàng de biàn huà	1
 情况的工作	qíng kuàng de gōng zuò	1
 情况登记表	qíng kuàng dēng jì biǎo	1
@@ -157691,7 +157635,7 @@ sort: by_weight
 去你家吃饭	qù nǐ jiā chī fàn	1
 去你妈的吧	qù nǐ mā de ba	1
 去年八月份	qù nián bā yuè fèn	1
-去年差不多	qù nián chà bù duō	1
+去年差不多	qù nián chà bu duō	1
 去年春节前	qù nián chūn jié qián	1
 去年到今年	qù nián dào jīn nián	1
 去年的冬天	qù nián de dōng tiān	1
@@ -159598,7 +159542,7 @@ sort: by_weight
 确实不一样	què shí bù yí yàng	1
 确实不应该	què shí bù yīng gāi	1
 确实不知道	què shí bù zhī dào	1
-确实差不多	què shí chà bù duō	1
+确实差不多	què shí chà bu duō	1
 确实打不过	què shí dǎ bú guò	1
 缺失的部分	quē shī de bù fèn	1
 缺失的东西	quē shī de dōng xi	1
@@ -159681,6 +159625,7 @@ sort: by_weight
 缺血再灌注	quē xuè zài guàn zhù	1
 缺氧的小鱼	quē yǎng de xiǎo yú	1
 却一点都不	què yì diǎn dōu bù	1
+却一个字也	què yí gè zì yě	1
 却一无所获	què yī wú suǒ huò	1
 却一笑而过	què yí xiào ér guò	1
 却又不知道	què yòu bù zhī dào	1
@@ -165451,7 +165396,6 @@ sort: by_weight
 三月底以前	sān yuè dǐ yǐ qián	1
 三月杜鹃红	sān yuè dù juān hóng	1
 三月二十七	sān yuè èr shí qī	1
-叁月贰拾日	sān yuè èr shí rì	1
 三月二十日	sān yuè èr shí rì	1
 三月廿八日	sān yuè niàn bā rì	1
 三月廿二日	sān yuè niàn èr rì	1
@@ -165462,16 +165406,12 @@ sort: by_weight
 三月廿四日	sān yuè niàn sì rì	1
 三月廿五日	sān yuè niàn wǔ rì	1
 三月廿一日	sān yuè niàn yī rì	1
-三月卅一日	sān yuè sà yí rì	1
-叁月叁拾日	sān yuè sān shí rì	1
 三月三十日	sān yuè sān shí rì	1
 三月十八日	sān yuè shí bā rì	1
 三月十二日	sān yuè shí èr rì	1
 三月十九日	sān yuè shí jiǔ rì	1
 三月十六日	sān yuè shí liù rì	1
-叁月拾柒日	sān yuè shí qī rì	1
 三月十七日	sān yuè shí qī rì	1
-叁月拾叁日	sān yuè shí sān rì	1
 三月十三日	sān yuè shí sān rì	1
 三月十四日	sān yuè shí sì rì	1
 三月十五日	sān yuè shí wǔ rì	1
@@ -174377,7 +174317,7 @@ sort: by_weight
 食草朴丽鱼	shí cǎo pǔ lì yú	1
 实测过程中	shí cè guò chéng zhōng	1
 实测统计法	shí cè tǒng jì fǎ	1
-是差不多了	shì chà bù duō le	1
+是差不多了	shì chà bu duō le	1
 什刹海冰场	shí chà hǎi bīng chǎng	1
 什刹海会馆	shí chà hǎi huì guǎn	1
 什刹海街道	shí chà hǎi jiē dào	1
@@ -175637,7 +175577,7 @@ sort: by_weight
 时机不成熟	shí jī bù chéng shú	1
 实际操作时	shí jì cāo zuò shí	1
 实际操作中	shí jì cāo zuò zhōng	1
-时机差不多	shí jī chà bù duō	1
+时机差不多	shí jī chà bu duō	1
 实际成交价	shí jì chéng jiāo jià	1
 实际成交量	shí jì chéng jiāo liàng	1
 时机成熟时	shí jī chéng shú shí	1
@@ -186784,7 +186724,6 @@ sort: by_weight
 四月二十号	sì yuè èr shí hào	1
 四月二十六	sì yuè èr shí liù	1
 四月二十七	sì yuè èr shí qī	1
-肆月贰拾日	sì yuè èr shí rì	1
 四月二十日	sì yuè èr shí rì	1
 四月二十三	sì yuè èr shí sān	1
 四月二十五	sì yuè èr shí wǔ	1
@@ -186798,21 +186737,16 @@ sort: by_weight
 四月廿五日	sì yuè niàn wǔ rì	1
 四月廿一日	sì yuè niàn yī rì	1
 四月三十号	sì yuè sān shí hào	1
-肆月叁拾日	sì yuè sān shí rì	1
 四月三十日	sì yuè sān shí rì	1
-肆月拾捌日	sì yuè shí bā rì	1
 四月十八日	sì yuè shí bā rì	1
 四月十二日	sì yuè shí èr rì	1
 四月十九日	sì yuè shí jiǔ rì	1
 四月十六号	sì yuè shí liù hào	1
 四月十六日	sì yuè shí liù rì	1
-肆月拾柒日	sì yuè shí qī rì	1
 四月十七日	sì yuè shí qī rì	1
 四月十三日	sì yuè shí sān rì	1
-肆月拾肆日	sì yuè shí sì rì	1
 四月十四日	sì yuè shí sì rì	1
 四月十五日	sì yuè shí wǔ rì	1
-肆月拾壹日	sì yuè shí yī rì	1
 四月十一日	sì yuè shí yī rì	1
 四月一日的	sì yuè yī rì de	1
 四月樱花飞	sì yuè yīng huā fēi	1
@@ -187545,7 +187479,7 @@ sort: by_weight
 素色獐牙菜	sù sè zhāng yá cài	1
 苏珊娜之歌	sū shān nà zhī gē	1
 苏珊天竺鲷	sū shān tiān zhú diāo	1
-宿舍差不多	sù shè chà bù duō	1
+宿舍差不多	sù shè chà bu duō	1
 宿舍管理员	sù shè guǎn lǐ yuán	1
 宿舍文化节	sù shè wén huà jié	1
 宿舍有空调	sù shè yǒu kōng tiáo	1
@@ -196553,7 +196487,6 @@ sort: by_weight
 头孢泊肟酯	tóu bāo pō wò zhǐ	1
 头孢羟氨苄	tóu bāo qiǎng ān biàn	1
 头孢曲松钠	tóu bāo qū sōng nà	1
-头孢曲松纳	tóu bāo qū sōng nà	1
 投保人豁免	tóu bǎo rén huò miǎn	1
 头孢噻肟钠	tóu bāo sāi wò nà	1
 头孢西丁钠	tóu bāo xī dīng nà	1
@@ -205179,7 +205112,7 @@ sort: by_weight
 我曾爱过你	wǒ céng ài guò nǐ	1
 我曾经来过	wǒ céng jīng lái guò	1
 我曾经说过	wǒ céng jīng shuō guò	1
-我差不多要	wǒ chà bù duō yào	1
+我差不多要	wǒ chà bu duō yào	1
 倭叉角羚属	wō chā jiǎo líng shǔ	1
 我察觉到了	wǒ chá jué dào le	1
 我常常在想	wǒ cháng cháng zài xiǎng	1
@@ -206213,7 +206146,7 @@ sort: by_weight
 我们才发现	wǒ men cái fā xiàn	1
 我们才开始	wǒ men cái kāi shǐ	1
 我们曾相爱	wǒ men céng xiāng ài	1
-我们差不多	wǒ men chà bù duō	1
+我们差不多	wǒ men chà bu duō	1
 我们常常会	wǒ men cháng cháng huì	1
 我们成功了	wǒ men chéng gōng le	1
 我们吃火锅	wǒ men chī huǒ guō	1
@@ -207782,7 +207715,7 @@ sort: by_weight
 我也不着急	wǒ yě bù zháo jí	1
 我也不知道	wǒ yě bù zhī dào	1
 我也曾醉过	wǒ yě céng zuì guò	1
-我也差不多	wǒ yě chà bù duō	1
+我也差不多	wǒ yě chà bu duō	1
 我也发现了	wǒ yě fā xiàn le	1
 我也给你买	wǒ yě gěi nǐ mǎi	1
 我也更希望	wǒ yě gèng xī wàng	1
@@ -211421,8 +211354,6 @@ sort: by_weight
 五月廿四日	wǔ yuè niàn sì rì	1
 五月廿五日	wǔ yuè niàn wǔ rì	1
 五月廿一日	wǔ yuè niàn yī rì	1
-五月卅一日	wǔ yuè sà yí rì	1
-伍月叁拾日	wǔ yuè sān shí rì	1
 五月三十日	wǔ yuè sān shí rì	1
 五月生辰石	wǔ yuè shēng chén shí	1
 五月十八日	wǔ yuè shí bā rì	1
@@ -211436,7 +211367,6 @@ sort: by_weight
 五月十三日	wǔ yuè shí sān rì	1
 五月十四日	wǔ yuè shí sì rì	1
 五月十五日	wǔ yuè shí wǔ rì	1
-伍月拾壹日	wǔ yuè shí yī rì	1
 无约束条件	wú yuē shù tiáo jiàn	1
 五月双子座	wǔ yuè shuāng zǐ zuò	1
 五月天成员	wǔ yuè tiān chéng yuán	1
@@ -219194,7 +219124,7 @@ sort: by_weight
 效果不稳定	xiào guǒ bù wěn dìng	1
 效果不显著	xiào guǒ bù xiǎn zhù	1
 效果不一样	xiào guǒ bù yí yàng	1
-效果差不多	xiào guǒ chà bù duō	1
+效果差不多	xiào guǒ chà bu duō	1
 小果齿果草	xiǎo guǒ chǐ guǒ cǎo	1
 小果齿缘草	xiǎo guǒ chǐ yuán cǎo	1
 小果碘泡虫	xiǎo guǒ diǎn pào chóng	1
@@ -229724,6 +229654,7 @@ sort: by_weight
 延迟满足感	yán chí mǎn zú gǎn	1
 延翅蛇根草	yán chì shé gēn cǎo	1
 延迟一个月	yán chí yí gè yuè	1
+延迟这么高	yán chí zhè me gāo	1
 演出过程中	yǎn chū guò chéng zhōng	1
 演出家协会	yǎn chū jiā xié huì	1
 演出结束后	yǎn chū jié shù hòu	1
@@ -232557,8 +232488,8 @@ sort: by_weight
 野草莓学运	yě cǎo méi xué yùn	1
 野草莓运动	yě cǎo méi yùn dòng	1
 叶层孔菌属	yè céng kǒng jūn shǔ	1
-也差不多啊	yě chà bù duō a	1
-也差不多了	yě chà bù duō le	1
+也差不多啊	yě chà bu duō a	1
+也差不多了	yě chà bu duō le	1
 叶蟾躄鱼属	yè chán bì yú shǔ	1
 邺城博物馆	yè chéng bó wù guǎn	1
 夜闯寡妇村	yè chuǎng guǎ fù cūn	1
@@ -235142,7 +235073,7 @@ sort: by_weight
 已经不需要	yǐ jīng bù xū yào	1
 宜静不宜动	yí jìng bù yí dòng	1
 已经不在了	yǐ jīng bú zài le	1
-已经差不多	yǐ jīng chà bù duō	1
+已经差不多	yǐ jīng chà bu duō	1
 已经超过了	yǐ jīng chāo guò le	1
 已经成为了	yǐ jīng chéng wéi le	1
 已经出来了	yǐ jīng chū lái le	1
@@ -239825,7 +239756,7 @@ sort: by_weight
 应该不行吧	yīng gāi bù xíng ba	1
 应该不应该	yīng gāi bù yīng gāi	1
 应该不至于	yīng gāi bú zhì yú	1
-应该差不多	yīng gāi chà bù duō	1
+应该差不多	yīng gāi chà bu duō	1
 应该称之为	yīng gāi chēng zhī wéi	1
 应该吃多少	yīng gāi chī duō shǎo	1
 应该吃什么	yīng gāi chī shén me	1
@@ -249702,7 +249633,7 @@ sort: by_weight
 簪花仕女图	zān huā shì nǚ tú	1
 暂扣驾驶证	zàn kòu jià shǐ zhèng	1
 咱俩不合适	zán liǎ bù hé shì	1
-咱俩差不多	zán liǎ chà bù duō	1
+咱俩差不多	zán liǎ chà bu duō	1
 咱俩谁跟谁	zán liǎ shuí gēn shuí	1
 赞美和鼓励	zàn měi hé gǔ lì	1
 赞美诗新编	zàn měi shī xīn biān	1
@@ -251556,7 +251487,7 @@ sort: by_weight
 长得不好看	zhǎng de bù hǎo kàn	1
 长得不漂亮	zhǎng de bú piào liàng	1
 长得不一样	zhǎng de bù yí yàng	1
-长得差不多	zhǎng de chà bù duō	1
+长得差不多	zhǎng de chà bu duō	1
 章德窦皇后	zhāng dé dòu huáng hòu	1
 长得都一样	zhǎng de dōu yí yàng	1
 长得非常像	zhǎng de fēi cháng xiàng	1
@@ -253570,7 +253501,7 @@ sort: by_weight
 真的不在乎	zhēn de bú zài hū	1
 真的不知道	zhēn de bù zhī dào	1
 真的不值得	zhēn de bù zhí dé	1
-真的差不多	zhēn de chà bù duō	1
+真的差不多	zhēn de chà bu duō	1
 真的超级棒	zhēn de chāo jí bàng	1
 真的超级好	zhēn de chāo jí hǎo	1
 真的超级美	zhēn de chāo jí měi	1
@@ -265104,7 +265035,7 @@ sort: by_weight
 庄他武里府	zhuāng tā wǔ lǐ fǔ	1
 状态不太好	zhuàng tài bú tài hǎo	1
 状态不稳定	zhuàng tài bù wěn dìng	1
-状态差不多	zhuàng tài chà bù duō	1
+状态差不多	zhuàng tài chà bu duō	1
 状态的变化	zhuàng tài de biàn huà	1
 状态的改变	zhuàng tài de gǎi biàn	1
 状态的起伏	zhuàng tài de qǐ fú	1
@@ -271814,7 +271745,6 @@ sort: by_weight
 氨基甲基噻唑	ān jī jiǎ jī sāi zuò	1
 氨基甲酸甲酯	ān jī jiǎ suān jiǎ zhǐ	1
 氨基甲酸乙酯	ān jī jiǎ suān yǐ zhǐ	1
-胺基甲酸乙酯	àn jī jiǎ suān yǐ zhǐ	1
 氨基甲酸酯类	ān jī jiǎ suān zhǐ lèi	1
 氨基氯苯甲腈	ān jī lǜ běn jiǎ jīng	1
 氨基氯苯甲酸	ān jī lǜ běn jiǎ suān	1
@@ -272389,17 +272319,12 @@ sort: by_weight
 八月二十二日	bā yuè èr shí èr rì	1
 八月二十九日	bā yuè èr shí jiǔ rì	1
 八月二十六日	bā yuè èr shí liù rì	1
-捌月贰拾陆日	bā yuè èr shí liù rì	1
 八月二十七日	bā yuè èr shí qī rì	1
-捌月贰拾叁日	bā yuè èr shí sān rì	1
 八月二十三日	bā yuè èr shí sān rì	1
 八月二十四日	bā yuè èr shí sì rì	1
 八月二十五号	bā yuè èr shí wǔ hào	1
-捌月贰拾伍日	bā yuè èr shí wǔ rì	1
 八月二十五日	bā yuè èr shí wǔ rì	1
-捌月贰拾壹日	bā yuè èr shí yī rì	1
 八月二十一日	bā yuè èr shí yī rì	1
-捌月叁拾壹日	bā yuè sān shí yī rì	1
 八月十五日夜	bā yuè shí wǔ rì yè	1
 八月十五夜月	bā yuè shí wǔ yè yuè	1
 八月宗派事件	bā yuè zōng pài shì jiàn	1
@@ -276171,8 +276096,8 @@ sort: by_weight
 差别如此之大	chā bié rú cǐ zhī dà	1
 茶并盾介壳虫	chá bìng dùn jiè ké chóng	1
 察布查尔锡伯	chá bù chá ěr xī bó	1
-差不多的价格	chà bù duō de jià gé	1
-差不多得了嗷	chà bù duō dé le áo	1
+差不多的价格	chà bu duō de jià gé	1
+差不多得了嗷	chà bu duō dé le áo	1
 茶不思饭不想	chá bù sī fàn bù xiǎng	1
 茶茶的兔斯基	chá chá de tù sī jī	1
 叉齿毛鼻鲶属	chā chǐ máo bí nián shǔ	1
@@ -278940,7 +278865,7 @@ sort: by_weight
 达到最高限价	dá dào zuì gāo xiàn jià	1
 打得不可开交	dǎ de bù kě kāi jiāo	1
 打得不亦乐乎	dǎ de bú yì lè hū	1
-打得差不多了	dǎ de chà bù duō le	1
+打得差不多了	dǎ de chà bu duō le	1
 打得措手不及	dǎ de cuò shǒu bù jí	1
 打得非常出色	dǎ de fēi cháng chū sè	1
 打得落花流水	dǎ de luò huā liú shuǐ	1
@@ -283091,14 +283016,6 @@ sort: by_weight
 二元期权平台	èr yuán qī quán píng tái	1
 二愿妾身常健	èr yuàn qiè shēn cháng jiàn	1
 二元乙丙橡胶	èr yuán yǐ bǐng xiàng jiāo	1
-贰月贰拾捌日	èr yuè èr shí bā rì	1
-贰月贰拾贰日	èr yuè èr shí èr rì	1
-贰月贰拾陆日	èr yuè èr shí liù rì	1
-贰月贰拾柒日	èr yuè èr shí qī rì	1
-贰月贰拾叁日	èr yuè èr shí sān rì	1
-贰月贰拾肆日	èr yuè èr shí sì rì	1
-贰月贰拾伍日	èr yuè èr shí wǔ rì	1
-贰月贰拾壹日	èr yuè èr shí yī rì	1
 二战法国海军	èr zhàn fǎ guó hǎi jūn	1
 二战伤亡人数	èr zhàn shāng wáng rén shù	1
 二战中的苏联	èr zhàn zhōng de sū lián	1
@@ -289249,7 +289166,7 @@ sort: by_weight
 号导弹护卫舰	hào dǎo dàn hù wèi jiàn	1
 号导弹驱逐舰	hào dǎo dàn qū zhú jiàn	1
 好得不能再好	hǎo de bù néng zài hǎo	1
-好得差不多了	hǎo de chà bù duō le	1
+好得差不多了	hǎo de chà bu duō le	1
 好的人际关系	hǎo de rén jì guān xì	1
 好的学习氛围	hǎo de xué xí fēn wéi	1
 好的营商环境	hǎo de yíng shāng huán jìng	1
@@ -293256,7 +293173,7 @@ sort: by_weight
 价格形成机制	jià gé xíng chéng jī zhì	1
 价格需求弹性	jià gé xū qiú tán xìng	1
 价格也不便宜	jià gé yě bù pián yi	1
-价格也差不多	jià gé yě chà bù duō	1
+价格也差不多	jià gé yě chà bu duō	1
 价格也很便宜	jià gé yě hěn pián yi	1
 价格也很亲民	jià gé yě hěn qīn mín	1
 价格也很实惠	jià gé yě hěn shí huì	1
@@ -296301,18 +296218,13 @@ sort: by_weight
 九一式重战车	jiǔ yī shì zhòng zhàn chē	1
 九永高速公路	jiǔ yǒng gāo sù gōng lù	1
 九又四分之三	jiǔ yòu sì fēn zhī sān	1
-玖月贰拾捌日	jiǔ yuè èr shí bā rì	1
 九月二十八日	jiǔ yuè èr shí bā rì	1
-玖月贰拾贰日	jiǔ yuè èr shí èr rì	1
 九月二十二日	jiǔ yuè èr shí èr rì	1
-玖月贰拾玖日	jiǔ yuè èr shí jiǔ rì	1
 九月二十九日	jiǔ yuè èr shí jiǔ rì	1
 九月二十六日	jiǔ yuè èr shí liù rì	1
-玖月贰拾陆日	jiǔ yuè èr shí liù rì	1
 九月二十七日	jiǔ yuè èr shí qī rì	1
 九月二十三日	jiǔ yuè èr shí sān rì	1
 九月二十四号	jiǔ yuè èr shí sì hào	1
-玖月贰拾肆日	jiǔ yuè èr shí sì rì	1
 九月二十四日	jiǔ yuè èr shí sì rì	1
 九月二十五日	jiǔ yuè èr shí wǔ rì	1
 九月二十一日	jiǔ yuè èr shí yī rì	1
@@ -300772,8 +300684,6 @@ sort: by_weight
 鲈鱼不是鲁豫	lú yú bú shì lǔ yù	1
 泸渝高速公路	lú yú gāo sù gōng lù	1
 路域环境整治	lù yù huán jìng zhěng zhì	1
-陆月贰拾肆日	lù yuè èr shí sì rì	1
-陆月贰拾伍日	lù yuè èr shí wǔ rì	1
 路越远心越近	lù yuè yuǎn xīn yuè jìn	1
 鹿寨香桥岩溶	lù zhài xiāng qiáo yán róng	1
 路证券营业部	lù zhèng quàn yíng yè bù	1
@@ -305944,20 +305854,16 @@ sort: by_weight
 起源号探测器	qǐ yuán hào tàn cè qì	1
 祈愿世界和平	qí yuàn shì jiè hé píng	1
 七月二十八日	qī yuè èr shí bā rì	1
-柒月贰拾贰日	qī yuè èr shí èr rì	1
 七月二十二日	qī yuè èr shí èr rì	1
 七月二十九日	qī yuè èr shí jiǔ rì	1
 七月二十六日	qī yuè èr shí liù rì	1
-柒月贰拾柒日	qī yuè èr shí qī rì	1
 七月二十七日	qī yuè èr shí qī rì	1
 七月二十三日	qī yuè èr shí sān rì	1
-柒月贰拾肆日	qī yuè èr shí sì rì	1
 七月二十四日	qī yuè èr shí sì rì	1
 七月二十五日	qī yuè èr shí wǔ rì	1
 七月二十一日	qī yuè èr shí yī rì	1
 七月九日大道	qī yuè jiǔ rì dà dào	1
 七月流血事件	qī yuè liú xuè shì jiàn	1
-柒月叁拾壹日	qī yuè sān shí yī rì	1
 七月三十一日	qī yuè sān shí yī rì	1
 契约自由原则	qì yuē zì yóu yuán zé	1
 骑着高头大马	qí zhe gāo tóu dà mǎ	1
@@ -309306,12 +309212,6 @@ sort: by_weight
 三垣二十八宿	sān yuán èr shí bā xiù	1
 三原色光模式	sān yuán sè guāng mó shì	1
 三元乙丙橡胶	sān yuán yǐ bǐng xiàng jiāo	1
-叁月贰拾捌日	sān yuè èr shí bā rì	1
-叁月贰拾玖日	sān yuè èr shí jiǔ rì	1
-叁月贰拾陆日	sān yuè èr shí liù rì	1
-叁月贰拾肆日	sān yuè èr shí sì rì	1
-叁月贰拾伍日	sān yuè èr shí wǔ rì	1
-叁月叁拾壹日	sān yuè sān shí yī rì	1
 三藏十二部经	sān zàng shí èr bù jīng	1
 三闸极电晶体	sān zhá jí diàn jīng tǐ	1
 三宅纹寄居蟹	sān zhái wén jì jū xiè	1
@@ -314624,12 +314524,9 @@ sort: by_weight
 四月二十八日	sì yuè èr shí bā rì	1
 四月二十二号	sì yuè èr shí èr hào	1
 四月二十二日	sì yuè èr shí èr rì	1
-肆月贰拾玖日	sì yuè èr shí jiǔ rì	1
 四月二十九日	sì yuè èr shí jiǔ rì	1
 四月二十六日	sì yuè èr shí liù rì	1
-肆月贰拾陆日	sì yuè èr shí liù rì	1
 四月二十七日	sì yuè èr shí qī rì	1
-肆月贰拾叁日	sì yuè èr shí sān rì	1
 四月二十三日	sì yuè èr shí sān rì	1
 四月二十四日	sì yuè èr shí sì rì	1
 四月二十五日	sì yuè èr shí wǔ rì	1
@@ -319491,22 +319388,17 @@ sort: by_weight
 无缘无故的恨	wú yuán wú gù de hèn	1
 五月的莫斯科	wǔ yuè de mò sī kē	1
 五月二十八日	wǔ yuè èr shí bā rì	1
-伍月贰拾贰日	wǔ yuè èr shí èr rì	1
 五月二十二日	wǔ yuè èr shí èr rì	1
 五月二十九日	wǔ yuè èr shí jiǔ rì	1
 五月二十六日	wǔ yuè èr shí liù rì	1
 五月二十七日	wǔ yuè èr shí qī rì	1
 五月二十三日	wǔ yuè èr shí sān rì	1
-伍月贰拾肆日	wǔ yuè èr shí sì rì	1
 五月二十四日	wǔ yuè èr shí sì rì	1
-伍月贰拾伍日	wǔ yuè èr shí wǔ rì	1
 五月二十五日	wǔ yuè èr shí wǔ rì	1
-伍月贰拾壹日	wǔ yuè èr shí yī rì	1
 五月二十一日	wǔ yuè èr shí yī rì	1
 五月花号公约	wǔ yuè huā hào gōng yuē	1
 五月九日宪法	wǔ yuè jiǔ rì xiàn fǎ	1
 五月三十五日	wǔ yuè sān shí wǔ rì	1
-伍月叁拾壹日	wǔ yuè sān shí yī rì	1
 五月三十一日	wǔ yuè sān shí yī rì	1
 无约束力决议	wú yuē shù lì jué yì	1
 五月同等学力	wǔ yuè tóng děng xué lì	1
@@ -328610,7 +328502,7 @@ sort: by_weight
 长得不够漂亮	zhǎng de bú gòu piào liang	1
 长得不太好看	zhǎng de bú tài hǎo kàn	1
 长得不怎么样	zhǎng de bù zěn me yàng	1
-长得都差不多	zhǎng de dōu chà bù duō	1
+长得都差不多	zhǎng de dōu chà bu duō	1
 长得非常好看	zhǎng de fēi cháng hǎo kàn	1
 长得非常可爱	zhǎng de fēi cháng kě ài	1
 长得非常漂亮	zhǎng de fēi cháng piào liang	1
@@ -340772,11 +340664,6 @@ sort: by_weight
 改革开放的春风	gǎi gé kāi fàng de chūn fēng	1
 盖革米勒计数器	gài gé mǐ lè jì shù qì	1
 改过自新的机会	gǎi guò zì xīn de jī huì	1
-该来的还是会来	gāi lái de hái shì huì lái	1
-该来的还是要来	gāi lái de hái shì yào lái	1
-该来的终究会来	gāi lái de zhōng jiū huì lái	1
-该来的总是会来	gāi lái de zǒng shì huì lái	1
-该来的总是要来	gāi lái de zǒng shì yào lái	1
 改了一次又一次	gǎi le yí cì yòu yí cì	1
 改良草地符号二	gǎi liáng cǎo dì fú hào èr	1
 改良草地符号一	gǎi liáng cǎo dì fú hào yī	1
@@ -341479,7 +341366,7 @@ sort: by_weight
 根据最新的消息	gēn jù zuì xīn de xiāo xi	1
 跟没事儿人一样	gēn méi shì er rén yí yàng	1
 跟你们说的一样	gēn nǐ men shuō de yí yàng	1
-跟你水平差不多	gēn nǐ shuǐ píng chà bù duō	1
+跟你水平差不多	gēn nǐ shuǐ píng chà bu duō	1
 跟你有什么关系	gēn nǐ yǒu shén me guān xì	1
 根前毛菌病毒属	gēn qián máo jūn bìng dú shǔ	1
 跟上时代的步伐	gēn shàng shí dài de bù fá	1
