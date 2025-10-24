@@ -27930,7 +27930,7 @@ sort: by_weight
 乘云却空回	chéng yún què kōng huí	1
 乘云遂不还	chéng yún suì bù huán	1
 承云舞鹤鶱	chéng yún wǔ hè xiān	1
-乘云已泬寥	chéng yún yǐ jué liáo	1
+乘云已泬寥	chéng yún yǐ xuè liáo	1
 乘运以跃鳞	chéng yùn yǐ yuè lín	1
 诚哉不可陵	chéng zāi bù kě líng	1
 诚哉达人语	chéng zāi dá rén yǔ	1
@@ -58516,7 +58516,7 @@ sort: by_weight
 顾盻劳颈脰	gù xì láo jǐng dòu	1
 故溪无处觅	gù xī wú chǔ mì	1
 古昔有遗叹	gǔ xī yǒu yí tàn	1
-孤霞上泬寥	gū xiá shàng jué liáo	1
+孤霞上泬寥	gū xiá shàng xuè liáo	1
 古匣收遗施	gǔ xiá shōu yí shī	1
 孤霞一片光	gū xiá yí piàn guāng	1
 鼓下坐蛮奴	gǔ xià zuò mán nú	1
@@ -69137,8 +69137,8 @@ sort: by_weight
 壶觞每独谣	hú shāng měi dú yáo	1
 湖上奇峰积	hú shàng qí fēng jī	1
 壶觞洽旧俦	hú shāng qià jiù chóu	1
-湖上秋泬寥	hú shàng qiū jué liáo	1
 湖上秋天高	hú shàng qiū tiān gāo	1
+湖上秋泬寥	hú shàng qiū xuè liáo	1
 壶觞趣不空	hú shāng qù bù kōng	1
 壶觞日笑傲	hú shāng rì xiào ào	1
 湖上山当舍	hú shàng shān dāng shě	1
@@ -88298,10 +88298,6 @@ sort: by_weight
 绝粒不遄死	jué lì bù chuán sǐ	1
 绝粒感楚囚	jué lì gǎn chǔ qiú	1
 绝粮应不死	jué liáng yīng bù sǐ	1
-泬寥空色远	jué liáo kōng sè yuǎn	1
-泬寥清冬时	jué liáo qīng dōng shí	1
-泬寥群动异	jué liáo qún dòng yì	1
-泬寥中秋夜	jué liáo zhōng qiū yè	1
 绝岭上栖烟	jué lǐng shàng qī yān	1
 绝岭夜无家	jué lǐng yè wú jiā	1
 绝流无浅深	jué liú wú qiǎn shēn	1
@@ -97664,7 +97660,7 @@ sort: by_weight
 梁国深文雅	liáng guó shēn wén yǎ	1
 梁国有遗老	liáng guó yǒu yí lǎo	1
 两汉更沦没	liǎng hàn gèng lún mò	1
-凉汉清泬寥	liáng hàn qīng jué liáo	1
+凉汉清泬寥	liáng hàn qīng xuè liáo	1
 梁汉碎胭脂	liáng hàn suì yān zhī	1
 两行灯下泪	liǎng háng dēng xià lèi	1
 两行笼里烛	liǎng háng lóng lǐ zhú	1
@@ -99698,7 +99694,7 @@ sort: by_weight
 令君政有声	lìng jūn zhèng yǒu shēng	1
 灵槛如朝蜃	líng kǎn rú cháo shèn	1
 领客珍重意	lǐng kè zhēn zhòng yì	1
-凌空爱泬寥	líng kōng ài jué liáo	1
+凌空爱泬寥	líng kōng ài xuè liáo	1
 凌空出火珠	líng kōng chū huǒ zhū	1
 陵空翠纛直	líng kōng cuì dào zhí	1
 凌空发瑞云	líng kōng fā ruì yún	1
@@ -123482,7 +123478,7 @@ sort: by_weight
 清高金茎露	qīng gāo jīn jīng lù	1
 青皋丽已净	qīng gāo lì yǐ jìng	1
 请告严程尽	qǐng gào yán chéng jìn	1
-清歌惨泬寥	qīng gē cǎn jué liáo	1
+清歌惨泬寥	qīng gē cǎn xuè liáo	1
 清歌遏流云	qīng gē è liú yún	1
 轻舸泛澄漪	qīng gě fàn chéng yī	1
 清歌芳树下	qīng gē fāng shù xià	1
@@ -126880,7 +126876,7 @@ sort: by_weight
 秋天床席冷	qiū tiān chuáng xí lěng	1
 求田此山下	qiú tián cǐ shān xià	1
 秋天风飒飒	qiū tiān fēng sà sà	1
-秋天更泬寥	qiū tiān gèng jué liáo	1
+秋天更泬寥	qiū tiān gèng xuè liáo	1
 秋天鸿鹄姿	qiū tiān hóng hú zī	1
 秋天鸿雁初	qiū tiān hóng yàn chū	1
 秋田麦稍稀	qiū tián mài shāo xī	1
@@ -185549,6 +185545,10 @@ sort: by_weight
 雪里为谁开	xuě lǐ wèi shuí kāi	1
 学立游夏上	xué lì yóu xià shàng	1
 雪敛属车尘	xuě liǎn shǔ chē chén	1
+泬寥空色远	xuè liáo kōng sè yuǎn	1
+泬寥清冬时	xuè liáo qīng dōng shí	1
+泬寥群动异	xuè liáo qún dòng yì	1
+泬寥中秋夜	xuè liáo zhōng qiū yè	1
 雪鳞芼青蔬	xuě lín mào qīng shū	1
 雪岭大荒西	xuě lǐng dà huāng xī	1
 雪岭对云亭	xuě lǐng duì yún tíng	1
@@ -252834,7 +252834,7 @@ sort: by_weight
 怪秘阴灵与护持	guài mì yīn líng yǔ hù chí	1
 怪鸟鸣唤令人憎	guài niǎo míng huàn lìng rén zēng	1
 怪汝长谣特地愁	guài rǔ cháng yáo tè dì chóu	1
-怪石巉巉上泬寥	guài shí chán chán shàng jué liáo	1
+怪石巉巉上泬寥	guài shí chán chán shàng xuè liáo	1
 怪石巉岩衬马蹄	guài shí chán yán chèn mǎ tí	1
 怪石钓出太湖底	guài shí diào chū tài hú dǐ	1
 怪石寒泉近岩下	guài shí hán quán jìn yán xià	1
@@ -259108,7 +259108,7 @@ sort: by_weight
 或缘香火共灵山	huò yuán xiāng huǒ gòng líng shān	1
 或云灵境归贤者	huò yún líng jìng guī xián zhě	1
 火云满山凝未开	huǒ yún mǎn shān níng wèi kāi	1
-火云峥嵘焚泬寥	huǒ yún zhēng róng fén jué liáo	1
+火云峥嵘焚泬寥	huǒ yún zhēng róng fén xuè liáo	1
 或在拘囚或屠钓	huò zài jū qiú huò tú diào	1
 祸灾流行固无时	huò zāi liú xíng gù wú shí	1
 或在醉中逢夜雪	huò zài zuì zhōng féng yè xuě	1
@@ -268960,7 +268960,7 @@ sort: by_weight
 连明连夜碧潺湲	lián míng lián yè bì chán yuán	1
 帘幕四垂灯焰暖	lián mù sì chuí dēng yàn nuǎn	1
 连木为牌入江住	lián mù wéi pái rù jiāng zhù	1
-帘幕无风起泬寥	lián mù wú fēng qǐ jué liáo	1
+帘幕无风起泬寥	lián mù wú fēng qǐ xuè liáo	1
 莲幕遥临黑水津	lián mù yáo lín hēi shuǐ jīn	1
 帘幕阴阴不见人	lián mù yīn yīn bú jiàn rén	1
 脸腻香薰似有情	liǎn nì xiāng xūn sì yǒu qíng	1
@@ -300003,7 +300003,7 @@ sort: by_weight
 吾非谢尚邀彦伯	wú fēi xiè shàng yāo yàn bó	1
 午风吹断江南梦	wǔ fēng chuī duàn jiāng nán mèng	1
 五凤街头闲勒辔	wǔ fèng jiē tóu xián lè pèi	1
-五凤楼高天泬寥	wǔ fèng lóu gāo tiān jué liáo	1
+五凤楼高天泬寥	wǔ fèng lóu gāo tiān xuè liáo	1
 五凤楼前修造手	wǔ fèng lóu qián xiū zào shǒu	1
 五凤楼西花一园	wǔ fèng lóu xī huā yì yuán	1
 舞凤尚従天目下	wǔ fèng shàng cóng tiān mù xià	1
@@ -310352,7 +310352,7 @@ sort: by_weight
 一去空山五百春	yí qù kōng shān wǔ bǎi chūn	1
 一曲狂歌垆上眠	yì qǔ kuáng gē lú shàng mián	1
 一曲狂歌醉送春	yì qǔ kuáng gē zuì sòng chūn	1
-一曲凉州入泬寥	yì qǔ liáng zhōu rù jué liáo	1
+一曲凉州入泬寥	yì qǔ liáng zhōu rù xuè liáo	1
 一曲凉州无限情	yì qǔ liáng zhōu wú xiàn qíng	1
 一曲淋铃泪数行	yì qǔ lín líng lèi shù xíng	1
 一曲闾阎青荻间	yì qǔ lǘ yán qīng dí jiān	1

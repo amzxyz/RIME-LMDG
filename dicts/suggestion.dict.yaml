@@ -16612,8 +16612,8 @@ sort: by_weight
 不是一样吗	bú shì yí yàng ma	1
 布氏银光鱼	bù shì yín guāng yú	1
 不是因为说	bú shì yīn wèi shuō	1
-不适应环境	bú shì yīng huán jìng	1
-不适应社会	bú shì yīng shè huì	1
+不适应环境	bú shì yìng huán jìng	1
+不适应社会	bú shì yìng shè huì	1
 不使用化肥	bù shǐ yòng huà féi	1
 不使用农药	bù shǐ yòng nóng yào	1
 不使用手机	bù shǐ yòng shǒu jī	1
@@ -54922,7 +54922,7 @@ sort: by_weight
 非常不认同	fēi cháng bú rèn tóng	1
 非常不容易	fēi cháng bù róng yì	1
 非常不适合	fēi cháng bú shì hé	1
-非常不适应	fēi cháng bú shì yīng	1
+非常不适应	fēi cháng bú shì yìng	1
 非常不实用	fēi cháng bù shí yòng	1
 非常不舒服	fēi cháng bù shū fú	1
 非常不熟悉	fēi cháng bù shú xī	1
@@ -65798,7 +65798,7 @@ sort: by_weight
 各种不开心	gè zhǒng bù kāi xīn	1
 各种不靠谱	gè zhǒng bú kào pǔ	1
 各种不确定	gè zhǒng bú què dìng	1
-各种不适应	gè zhǒng bú shì yīng	1
+各种不适应	gè zhǒng bú shì yìng	1
 各种不舒服	gè zhǒng bù shū fú	1
 各种补习班	gè zhǒng bǔ xí bān	1
 各种不锈钢	gè zhǒng bú xiù gāng	1
@@ -87442,7 +87442,7 @@ sort: by_weight
 环境保护厅	huán jìng bǎo hù tīng	1
 环境背景值	huán jìng bèi jǐng zhí	1
 环境避难所	huán jìng bì nàn suǒ	1
-环境不适应	huán jìng bú shì yīng	1
+环境不适应	huán jìng bú shì yìng	1
 环境不熟悉	huán jìng bù shú xī	1
 环境不一样	huán jìng bù yí yàng	1
 环境承载力	huán jìng chéng zài lì	1
@@ -94712,6 +94712,7 @@ sort: by_weight
 技校毕业生	jì xiào bì yè shēng	1
 绩效不达标	jì xiào bù dá biāo	1
 极小多项式	jí xiǎo duō xiàng shì	1
+极小范数解	jí xiǎo fàn shù jiě	1
 及消防安全	jí xiāo fáng ān quán	1
 极小谷精草	jí xiǎo gǔ jīng cǎo	1
 极小化求值	jí xiǎo huà qiú zhí	1
@@ -155552,7 +155553,7 @@ sort: by_weight
 请叫我雷锋	qǐng jiào wǒ léi fēng	1
 请叫我男神	qǐng jiào wǒ nán shén	1
 请叫我女王	qǐng jiào wǒ nǚ wáng	1
-请叫我少爷	qǐng jiào wǒ shào yé	1
+请叫我少爷	qǐng jiào wǒ shào ye	1
 请叫我帅哥	qǐng jiào wǒ shuài gē	1
 请叫我太阳	qǐng jiào wǒ tài yáng	1
 请叫我学渣	qǐng jiào wǒ xué zhā	1
@@ -168699,7 +168700,7 @@ sort: by_weight
 邵阳华溪蟹	shào yáng huá xī xiè	1
 芍药甘草汤	sháo yào gān cǎo tāng	1
 芍药居北里	sháo yào jū běi lǐ	1
-少爷的故事	shào yé de gù shì	1
+少爷的故事	shào ye de gù shì	1
 少一点抱怨	shǎo yì diǎn bào yuàn	1
 少一点套路	shǎo yì diǎn tào lù	1
 邵逸夫慈善	shào yì fū cí shàn	1
@@ -171583,7 +171584,7 @@ sort: by_weight
 身体不健康	shēn tǐ bú jiàn kāng	1
 身体不适合	shēn tǐ bú shì hé	1
 身体不适时	shēn tǐ bú shì shí	1
-身体不适应	shēn tǐ bú shì yīng	1
+身体不适应	shēn tǐ bú shì yìng	1
 身体不适者	shēn tǐ bú shì zhě	1
 身体不舒服	shēn tǐ bù shū fú	1
 身体不太好	shēn tǐ bú tài hǎo	1
@@ -199628,7 +199629,7 @@ sort: by_weight
 完全不认识	wán quán bú rèn shi	1
 完全不认同	wán quán bú rèn tóng	1
 完全不适合	wán quán bú shì hé	1
-完全不适应	wán quán bú shì yīng	1
+完全不适应	wán quán bú shì yìng	1
 完全不熟悉	wán quán bù shú xī	1
 完全不同的	wán quán bù tóng de	1
 完全不同意	wán quán bù tóng yì	1
@@ -200329,7 +200330,7 @@ sort: by_weight
 王家墩北站	wáng jiā dūn běi zhàn	1
 王家墩东站	wáng jiā dūn dōng zhàn	1
 王家墩机场	wáng jiā dūn jī chǎng	1
-王家二少爷	wáng jiā èr shào yé	1
+王家二少爷	wáng jiā èr shào ye	1
 王家峰墓群	wáng jiā fēng mù qún	1
 王家沟街道	wáng jiā gōu jiē dào	1
 王家沟水库	wáng jiā gōu shuǐ kù	1
@@ -202707,7 +202708,7 @@ sort: by_weight
 威氏克奈鱼	wēi shì kè nài yú	1
 维氏丽脂鲤	wéi shì lì zhī lǐ	1
 维氏硫螺菌	wéi shì liú luó jūn	1
-为食龙少爷	wéi shí lóng shào yé	1
+为食龙少爷	wéi shí lóng shào ye	1
 韦氏毛带蟹	wéi shì máo dài xiè	1
 维氏矛丽鱼	wéi shì máo lì yú	1
 未实名认证	wèi shí míng rèn zhèng	1
@@ -231456,7 +231457,7 @@ sort: by_weight
 养鸡专业户	yǎng jī zhuān yè hù	1
 杨家板桥镇	yáng jiā bǎn qiáo zhèn	1
 杨家埠街道	yáng jiā bù jiē dào	1
-杨家大少爷	yáng jiā dà shào yé	1
+杨家大少爷	yáng jiā dà shào ye	1
 养家的重任	yǎng jiā de zhòng rèn	1
 杨家吊炉饼	yáng jiā diào lú bǐng	1
 杨家府演义	yáng jiā fǔ yǎn yì	1
@@ -232214,7 +232215,7 @@ sort: by_weight
 要我怎么做	yào wǒ zěn me zuò	1
 药物半衰期	yào wù bàn shuāi qī	1
 药物不耐受	yào wù bú nài shòu	1
-药物不适应	yào wù bú shì yīng	1
+药物不适应	yào wù bú shì yìng	1
 药物的刺激	yào wù de cì jī	1
 药物的毒性	yào wù de dú xìng	1
 药物的剂量	yào wù de jì liàng	1
@@ -236301,7 +236302,7 @@ sort: by_weight
 一时不代表	yì shí bú dài biǎo	1
 一时不明白	yì shí bù míng bái	1
 意识不清醒	yì shí bù qīng xǐng	1
-一时不适应	yì shí bú shì yīng	1
+一时不适应	yì shí bú shì yìng	1
 一事不再理	yī shì bú zài lǐ	1
 一时不知道	yì shí bù zhī dào	1
 一时成为了	yì shí chéng wéi le	1
@@ -252197,7 +252198,7 @@ sort: by_weight
 召集和主持	zhào jí hé zhǔ chí	1
 肇嘉浜路站	zhào jiā bāng lù zhàn	1
 招架不住啦	zhāo jià bú zhù la	1
-赵家大少爷	zhào jiā dà shào yé	1
+赵家大少爷	zhào jiā dà shào ye	1
 赵家滑遗址	zhào jiā huá yí zhǐ	1
 召稼楼古镇	zhào jià lóu gǔ zhèn	1
 爪甲囊菌科	zhǎo jiǎ náng jūn kē	1
@@ -270002,6 +270003,7 @@ sort: by_weight
 最小对立体	zuì xiǎo duì lì tǐ	1
 最小多项式	zuì xiǎo duō xiàng shì	1
 最小二乘法	zuì xiǎo èr chéng fǎ	1
+最小二乘解	zuì xiǎo èr chéng jiě	1
 最小费用流	zuì xiǎo fèi yòng liú	1
 最小分辨率	zuì xiǎo fēn biàn lǜ	1
 最小割模型	zuì xiǎo gē mó xíng	1
@@ -339003,7 +339005,7 @@ sort: by_weight
 恶魔吹着笛子来	è mó chuī zhe dí zi lái	1
 恶魔短剑的刀身	è mó duǎn jiàn de dāo shēn	1
 恶魔果实的能力	è mó guǒ shí de néng lì	1
-恶魔少爷别吻我	è mó shào yé bié wěn wǒ	1
+恶魔少爷别吻我	è mó shào ye bié wěn wǒ	1
 恶魔头盖骨面具	è mó tóu gài gǔ miàn jù	1
 额木庭高勒苏木	é mù tíng gāo lè sū mù	1
 恶人自有恶人磨	è rén zì yǒu è rén mó	1
@@ -342547,6 +342549,7 @@ sort: by_weight
 脊髓小脑萎缩症	jǐ suǐ xiǎo nǎo wěi suō zhèng	1
 脊髓性肌萎缩症	jǐ suǐ xìng jī wěi suō zhèng	1
 吉特曼氏综合症	jí tè màn shì zōng hé zhèng	1
+极小最小二乘解	jí xiǎo zuì xiǎo èr chéng jiě	1
 机械设计及理论	jī xiè shè jì jí lǐ lùn	1
 急性出血性肠炎	jí xìng chū xuè xìng cháng yán	1
 急性单纯性胃炎	jí xìng dān chún xìng wèi yán	1

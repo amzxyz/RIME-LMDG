@@ -7,6 +7,10 @@ name: compatible
 version: "LTS"
 sort: by_weight
 ...
+糁馆	sá guǎn	88
+糁面	sá miàn	83
+糁粥	sá zhōu	94
+糁汤	sá tāng	67
 吃子	chī zǐ	411
 教授	jiāo shòu	609
 褪去	tùn qù	340
@@ -18,6 +22,10 @@ sort: by_weight
 支着	zhī zhāo	341
 一朝	yì cháo	310
 特勒	tè lēi	310
+玉米糁粥	yù mǐ sá zhōu
+玉米糁汤	yù mǐ sá tāng
+玉米糁面	yù mǐ sá miàn
+玉米糁饼	yù mǐ sá bǐng
 将进酒	jiāng jìn jiǔ	169
 调了吧	tiáo le ba	170
 他调了	tā tiáo le	190
@@ -2879,6 +2887,7 @@ sort: by_weight
 也不熟	yě bù shóu	230
 也熟了	yě shóu le	80
 也熟悉	yě shóu xī	160
+烫熟	tàng shóu	462
 已成熟	yǐ chéng shóu	190
 一锅熟	yì guō shóu	100
 异熟果	yì shóu guǒ	130
