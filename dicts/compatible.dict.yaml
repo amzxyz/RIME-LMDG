@@ -1808,7 +1808,7 @@ sort: by_weight
 这片海	zhèi piàn hǎi	340
 这片湖	zhèi piàn hú	220
 这篇文	zhèi piān wén	440
-这便宜	zhèi pián yì	330
+这便宜	zhèi pián yi	330
 这片子	zhèi piān zi	500
 这票的	zhèi piào de	260
 这破店	zhèi pò diàn	220
@@ -1921,7 +1921,7 @@ sort: by_weight
 这首诗	zhèi shǒu shī	590
 这手速	zhèi shǒu sù	200
 这舒服	zhèi shū fú	230
-这数字	zhèi shù zi	390
+这数字	zhèi shù zì	390
 这双手	zhèi shuāng shǒu	350
 这双鞋	zhèi shuāng xié	500
 这谁啊	zhèi shuí a	300
@@ -4711,7 +4711,7 @@ sort: by_weight
 三个直	sān gè zhí	1
 三个𠙽	sān gè zhì	1
 三个𦉼	sān gè zhì	1
-四个曰	sān gè zhì	1
+四个曰	sì gè rì	1
 三个𣥚	sān gè zhì	1
 三个至	sān gè zhì	1
 三个丶	sān gè zhǔ	1
@@ -4726,7 +4726,7 @@ sort: by_weight
 手指头	shǒu zhǐ tou	1
 四个匕	sì gè bǐ	1
 四个屮	sì gè chè	1
-四个车	sì gè chè	1
+四个车	sì gè chē	1
 四个車	sì gè chē	1
 四个春	sì gè chūn	1
 四个朿	sì gè cì	1
