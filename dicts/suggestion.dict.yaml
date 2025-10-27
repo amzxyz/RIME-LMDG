@@ -1077,11 +1077,11 @@ sort: by_weight
 爱因兹贝伦	ài yīn zī bèi lún	1
 爱樱花的人	ài yīng huā de rén	1
 埃萤叶甲属	āi yíng yè jiǎ shǔ	1
-哎哟不错哦	āi yō bú cuò ó	1
+哎哟不错哦	āi yō bú cuò o	1
 哎哟不错哟	āi yō bú cuò yō	1
 哎哟我的天	āi yō wǒ de tiān	1
 爱泳魮脂鲤	ài yǒng pí zhī lǐ	1
-哎呦不错哦	āi yōu bú cuò ó	1
+哎呦不错哦	āi yōu bú cuò o	1
 矮油我的妈	ǎi yóu wǒ de mā	1
 爱鱼的老四	ài yú de lǎo sì	1
 爱与恨之间	ài yǔ hèn zhī jiān	1
@@ -5043,7 +5043,7 @@ sort: by_weight
 白血病前期	bái xuè bìng qián qī	1
 白血病细胞	bái xuè bìng xì bāo	1
 白血病治疗	bái xuè bìng zhì liáo	1
-白雪粗肋草	bái xuě cū lè cǎo	1
+白雪粗肋草	bái xuě cū lèi cǎo	1
 白雪格粒螺	bái xuě gé lì luó	1
 白雪火绒草	bái xuě huǒ róng cǎo	1
 白穴美体鳗	bái xué měi tǐ mán	1
@@ -14137,7 +14137,7 @@ sort: by_weight
 不错的印象	bú cuò de yìn xiàng	1
 不错的质量	bú cuò de zhì liàng	1
 不错的主意	bú cuò de zhǔ yì	1
-不错哦这样	bú cuò ó zhè yàng	1
+不错哦这样	bú cuò o zhè yàng	1
 不打白不打	bù dǎ bái bù dǎ	1
 不打不成才	bù dǎ bù chéng cái	1
 不打不成交	bù dǎ bù chéng jiāo	1
@@ -20393,7 +20393,6 @@ sort: by_weight
 层内角砾岩	céng nèi jiǎo lì yán	1
 层牛肝菌属	céng niú gān jūn shǔ	1
 曾盛极一时	céng shèng jí yì shí	1
-曾仕强教授	céng shì qiáng jiào shòu	1
 曾受邀参加	céng shòu yāo cān jiā	1
 层束梗孢属	céng shù gěng bāo shǔ	1
 曾为歌舞场	céng wèi gē wǔ chǎng	1
@@ -28360,7 +28359,7 @@ sort: by_weight
 出去走了走	chū qù zǒu le zǒu	1
 出去走一走	chū qù zǒu yì zǒu	1
 出去走走吧	chū qù zǒu zǒu ba	1
-除权除息日	chú quán chú xí rì	1
+除权除息日	chú quán chú xī rì	1
 除权基准日	chú quán jī zhǔn rì	1
 除热得清凉	chú rè dé qīng liáng	1
 出任董事长	chū rèn dǒng shì zhǎng	1
@@ -53654,7 +53653,7 @@ sort: by_weight
 房产空置税	fáng chǎn kōng zhì shuì	1
 房产税出台	fáng chǎn shuì chū tái	1
 房产税改革	fáng chǎn shuì gǎi gé	1
-房产税开征	fáng chǎn shuì kāi zhǐ	1
+房产税开征	fáng chǎn shuì kāi zhēng	1
 房产税试点	fáng chǎn shuì shì diǎn	1
 房产税征收	fáng chǎn shuì zhēng shōu	1
 房产投资者	fáng chǎn tóu zī zhě	1
@@ -78312,7 +78311,6 @@ sort: by_weight
 航空总部站	háng kōng zǒng bù zhàn	1
 航空总医院	háng kōng zǒng yī yuàn	1
 杭濑川之战	háng lài chuān zhī zhàn	1
-珩琅山路站	háng láng shān lù zhàn	1
 行列输入法	háng liè shū rù fǎ	1
 航母打击群	háng mǔ dǎ jī qún	1
 航母的建造	háng mǔ de jiàn zào	1
@@ -82777,6 +82775,7 @@ sort: by_weight
 横口裂腹鱼	héng kǒu liè fù yú	1
 横跨大西洋	héng kuà dà xī yáng	1
 横跨太平洋	héng kuà tài píng yáng	1
+珩琅山路站	héng láng shān lù zhàn	1
 恒力房地产	héng lì fáng dì chǎn	1
 衡量测量值	héng liáng cè liáng zhí	1
 衡量的标准	héng liáng de biāo zhǔn	1
@@ -92016,12 +92015,12 @@ sort: by_weight
 纪德的窄门	jì dé de zhǎi mén	1
 记得第一次	jì de dì yī cì	1
 记得点个赞	jì de diǎn gè zàn	1
-记得点赞哦	jì de diǎn zàn ó	1
+记得点赞哦	jì de diǎn zàn o	1
 记得多穿点	jì de duō chuān diǎn	1
 记得多喝水	jì de duō hē shuǐ	1
 记得多年前	jì de duō nián qián	1
 记得告诉我	jì de gào sù wǒ	1
-记得关注哦	jì de guān zhù ó	1
+记得关注哦	jì de guān zhù o	1
 记得很清楚	jì de hěn qīng chu	1
 季德基夫齐	jì dé jī fū qí	1
 记得几年前	jì de jǐ nián qián	1
@@ -109179,7 +109178,7 @@ sort: by_weight
 聚合反应釜	jù hé fǎn yìng fǔ	1
 聚合反应器	jù hé fǎn yìng qì	1
 橘褐狗母鱼	jú hè gǒu mǔ yú	1
-聚合蓇葖果	jù hé gǔ tū guǒ	1
+聚合蓇葖果	jù hé gū tū guǒ	1
 聚合硫酸铁	jù hé liú suān tiě	1
 聚合氯化铝	jù hé lǜ huà lǚ	1
 聚合硼酸盐	jù hé péng suān yán	1
@@ -111941,9 +111940,9 @@ sort: by_weight
 开着私家车	kāi zhe sī jiā chē	1
 开着拖拉机	kāi zhe tuō lā jī	1
 开这种玩笑	kāi zhè zhǒng wán xiào	1
+开征房产税	kāi zhēng fáng chǎn shuì	1
 开证申请人	kāi zhèng shēn qǐng rén	1
 开证申请书	kāi zhèng shēn qǐng shū	1
-开征房产税	kāi zhǐ fáng chǎn shuì	1
 开支计算法	kāi zhī jì suàn fǎ	1
 开州区街道	kāi zhōu qū jiē dào	1
 开足了马力	kāi zú le mǎ lì	1
@@ -115202,7 +115201,7 @@ sort: by_weight
 可以查询到	kě yǐ chá xún dào	1
 可以查一查	kě yǐ chá yì chá	1
 可以查资料	kě yǐ chá zī liào	1
-可以尝一尝	kě yǐ chàng yì cháng	1
+可以尝一尝	kě yǐ cháng yì cháng	1
 可以抄底了	kě yǐ chāo dǐ le	1
 可以炒着吃	kě yǐ chǎo zhe chī	1
 可以衬托出	kě yǐ chèn tuō chū	1
@@ -147419,7 +147418,7 @@ sort: by_weight
 皮肤美容科	pí fū měi róng kē	1
 皮肤泌尿科	pí fū mì niào kē	1
 皮肤免疫力	pí fū miǎn yì lì	1
-皮肤磨削术	pí fū mó xuè shù	1
+皮肤磨削术	pí fū mó xuē shù	1
 皮肤软组织	pí fū ruǎn zǔ zhī	1
 皮肤瘙痒症	pí fū sào yǎng zhèng	1
 皮肤什么的	pí fū shén me de	1
@@ -196700,7 +196699,7 @@ sort: by_weight
 头脑风暴法	tóu nǎo fēng bào fǎ	1
 头脑很清醒	tóu nǎo hěn qīng xǐng	1
 头脑特工队	tóu nǎo tè gōng duì	1
-头皮屑增多	tóu pi xiè zēng duō	1
+头皮屑增多	tóu pí xiè zēng duō	1
 头偏向一侧	tóu piān xiàng yí cè	1
 投票的结果	tóu piào de jié guǒ	1
 投票结束后	tóu piào jié shù hòu	1
@@ -215044,7 +215043,7 @@ sort: by_weight
 现当代文学	xiàn dāng dài wén xué	1
 现当代艺术	xiàn dāng dài yì shù	1
 先导化合物	xiān dǎo huà hé wù	1
-先到先得哦	xiān dào xiān dé ó	1
+先到先得哦	xiān dào xiān dé o	1
 先导性产业	xiān dǎo xìng chǎn yè	1
 先导预告片	xiān dǎo yù gào piàn	1
 显得不耐烦	xiǎn de bú nài fán	1
@@ -223986,7 +223985,7 @@ sort: by_weight
 信仰治疗师	xìn yǎng zhì liáo shī	1
 心叶薄唇蕨	xīn yè báo chún jué	1
 新叶春蜓属	xīn yè chūn tíng shǔ	1
-心叶粗肋草	xīn yè cū lè cǎo	1
+心叶粗肋草	xīn yè cū lèi cǎo	1
 心叶虎耳草	xīn yè hǔ ěr cǎo	1
 新野口藓属	xīn yě kǒu xiǎn shǔ	1
 心叶蓝钟花	xīn yè lán zhōng huā	1
@@ -231631,7 +231630,7 @@ sort: by_weight
 阳泉市矿区	yáng quán shì kuàng qū	1
 养犬许可证	yǎng quǎn xǔ kě zhèng	1
 氧燃烧过程	yǎng rán shāo guò chéng	1
-羊肉的膻味	yáng ròu de shàn wèi	1
+羊肉的膻味	yáng ròu de shān wèi	1
 羊肉萝卜丝	yáng ròu luó bo sī	1
 杨赛因不花	yáng sài yīn bù huā	1
 氧噻唑烷酸	yǎng sāi zuò wán suān	1
@@ -232677,7 +232676,7 @@ sort: by_weight
 野狼与玛莉	yě láng yǔ mǎ lì	1
 液冷发动机	yè lěng fā dòng jī	1
 液力变矩器	yè lì biàn jǔ qì	1
-液力变扭器	yè lì biàn niu qì	1
+液力变扭器	yè lì biàn niǔ qì	1
 野鲤碘泡虫	yě lǐ diǎn pào chóng	1
 夜礼服假面	yè lǐ fú jiǎ miàn	1
 液力缓速器	yè lì huǎn sù qì	1
@@ -235082,7 +235081,7 @@ sort: by_weight
 已经跟你说	yǐ jīng gēn nǐ shuō	1
 已经公布了	yǐ jīng gōng bù le	1
 已经够多了	yǐ jīng gòu duō le	1
-一茎孤引绿	yí jìng gū yǐn lǜ	1
+一茎孤引绿	yí jīng gū yǐn lǜ	1
 已经关掉了	yǐ jīng guān diào le	1
 异径管接头	yì jìng guǎn jiē tóu	1
 已经过去啦	yǐ jīng guò qù la	1
@@ -244700,7 +244699,7 @@ sort: by_weight
 预计总产量	yù jì zǒng chǎn liàng	1
 预激综合征	yù jī zōng hé zhēng	1
 瑜伽爱好者	yú jiā ài hào zhě	1
-渔家傲秋思	yú jiā ào qiū sì	1
+渔家傲秋思	yú jiā ào qiū sī	1
 余家坝遗址	yú jiā bà yí zhǐ	1
 瑜伽初学者	yú jiā chū xué zhě	1
 瑜伽的动作	yú jiā de dòng zuò	1
@@ -250560,6 +250559,7 @@ sort: by_weight
 曾氏大宗祠	zēng shì dà zōng cí	1
 曾氏金梭鱼	zēng shì jīn suō yú	1
 增施磷钾肥	zēng shī lín jiǎ féi	1
+曾仕强教授	zēng shì qiáng jiào shòu	1
 增施有机肥	zēng shī yǒu jī féi	1
 曾氏猪笼草	zēng shì zhū lóng cǎo	1
 增收不增利	zēng shōu bù zēng lì	1
@@ -297039,7 +297039,7 @@ sort: by_weight
 开展专项整治	kāi zhǎn zhuān xiàng zhěng zhì	1
 开展自查自纠	kāi zhǎn zì chá zì jiū	1
 开展综合整治	kāi zhǎn zōng hé zhěng zhì	1
-开征房地产税	kāi zhǐ fáng dì chǎn shuì	1
+开征房地产税	kāi zhēng fáng dì chǎn shuì	1
 看别人的故事	kàn bié rén de gù shì	1
 看别人的脸色	kàn bié rén de liǎn sè	1
 坎伯诺尔德人	kǎn bó nuò ěr dé rén	1
@@ -341316,7 +341316,7 @@ sort: by_weight
 根本算不了什么	gēn běn suàn bù liǎo shén me	1
 根本算不上什么	gēn běn suàn bú shàng shén me	1
 根本停不下来啊	gēn běn tíng bú xià lái a	1
-根并荷花一茎香	gēn bìng hé huā yí jìng xiāng	1
+根并荷花一茎香	gēn bìng hé huā yí jīng xiāng	1
 根除幽门螺杆菌	gēn chú yōu mén luó gǎn jūn	1
 跟大多数人一样	gēn dà duō shù rén yí yàng	1
 跟打了鸡血一样	gēn dǎ le jī xiě yí yàng	1
