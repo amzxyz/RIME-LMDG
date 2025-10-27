@@ -120,7 +120,7 @@ def userdb_line(cols: list[str]) -> str:
 # ─────────────────────────────────────────────────────────
 skip_set = {
     "compatible.dict.yaml", "corrections.dict.yaml",
-    "chars.dict.yaml", "people.dict.yaml", "encnnum.dict.yaml"
+    "chars.dict.yaml", "people.dict.yaml"
 }
 
 def process_single_file(src: str, dst: str):
