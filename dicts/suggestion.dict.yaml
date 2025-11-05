@@ -6496,6 +6496,7 @@ sort: by_weight
 被告人何某	bèi gào rén hé mǒu	1
 被告人胡某	bèi gào rén hú mǒu	1
 被告人黄某	bèi gào rén huáng mǒu	1
+被告人家属	bèi gào rén jiā shǔ	1
 被告人李某	bèi gào rén lǐ mǒu	1
 被告人林某	bèi gào rén lín mǒu	1
 被告人刘某	bèi gào rén liú mǒu	1
@@ -6559,6 +6560,7 @@ sort: by_weight
 被害人陈述	bèi hài rén chén shù	1
 被害人承诺	bèi hài rén chéng nuò	1
 被害人过错	bèi hài rén guò cuò	1
+被害人家属	bèi hài rén jiā shǔ	1
 被害人李某	bèi hài rén lǐ mǒu	1
 被害人谅解	bèi hài rén liàng jiě	1
 被害人赔偿	bèi hài rén péi cháng	1
@@ -6567,6 +6569,7 @@ sort: by_weight
 被害人张某	bèi hài rén zhāng mǒu	1
 被害妄想型	bèi hài wàng xiǎng xíng	1
 被害妄想症	bèi hài wàng xiǎng zhèng	1
+被害者家属	bèi hài zhě jiā shǔ	1
 被汗水浸湿	bèi hàn shuǐ jìn shī	1
 北汉英武帝	běi hàn yīng wǔ dì	1
 北航体育馆	běi háng tǐ yù guǎn	1
@@ -11129,6 +11132,8 @@ sort: by_weight
 病人的情况	bìng rén de qíng kuàng	1
 病人的生命	bìng rén de shēng mìng	1
 病人的体质	bìng rén de tǐ zhì	1
+病人和家属	bìng rén hé jiā shǔ	1
+病人及家属	bìng rén jí jiā shǔ	1
 并认认真真	bìng rèn rèn zhēn zhēn	1
 并入俄罗斯	bìng rù é luó sī	1
 冰山的一角	bīng shān de yì jiǎo	1
@@ -31968,6 +31973,7 @@ sort: by_weight
 当事人否认	dāng shì rén fǒu rèn	1
 当事人和解	dāng shì rén hé jiě	1
 当事人回应	dāng shì rén huí yìng	1
+当事人家属	dāng shì rén jiā shǔ	1
 当事人举证	dāng shì rén jǔ zhèng	1
 当事人能力	dāng shì rén néng lì	1
 当事人签字	dāng shì rén qiān zì	1
@@ -53030,6 +53036,7 @@ sort: by_weight
 阜阳火车站	fù yáng huǒ chē zhàn	1
 负氧离子高	fù yǎng lí zǐ gāo	1
 富阳区文化	fù yáng qū wén huà	1
+抚养权归属	fǔ yǎng quán guī shǔ	1
 阜阳市乡镇	fù yáng shì xiāng zhèn	1
 阜阳市政府	fù yáng shì zhèng fǔ	1
 阜阳市政协	fù yáng shì zhèng xié	1
@@ -77683,6 +77690,7 @@ sort: by_weight
 患者出院时	huàn zhě chū yuàn shí	1
 患者的福音	huàn zhě de fú yīn	1
 患者的管理	huàn zhě de guǎn lǐ	1
+患者的家属	huàn zhě de jiā shǔ	1
 患者的年龄	huàn zhě de nián líng	1
 患者的情况	huàn zhě de qíng kuàng	1
 患者的情绪	huàn zhě de qíng xù	1
@@ -77702,6 +77710,8 @@ sort: by_weight
 患者的治疗	huàn zhě de zhì liáo	1
 换着花样吃	huàn zhe huā yàng chī	1
 换着花样做	huàn zhe huā yàng zuò	1
+患者或家属	huàn zhě huò jiā shǔ	1
+患者及家属	huàn zhě jí jiā shǔ	1
 患者满意度	huàn zhě mǎn yì dù	1
 患者年龄大	huàn zhě nián líng dà	1
 患者朋友们	huàn zhě péng you men	1
@@ -105968,6 +105978,7 @@ sort: by_weight
 老人的儿子	lǎo rén de ér zi	1
 老人的故事	lǎo rén de gù shì	1
 老人的家人	lǎo rén de jiā rén	1
+老人的家属	lǎo rén de jiā shǔ	1
 老人的健康	lǎo rén de jiàn kāng	1
 老人的女儿	lǎo rén de nǚ er	1
 老人的亲属	lǎo rén de qīn shǔ	1
@@ -154244,6 +154255,7 @@ sort: by_weight
 省体育馆站	shěng tǐ yù guǎn zhàn	1
 省体育中心	shěng tǐ yù zhōng xīn	1
 升天大教堂	shēng tiān dà jiào táng	1
+生田绘梨花	shēng tián huì lí huā	1
 胜田吉太郎	shèng tián jí tài láng	1
 生天目仁美	shēng tiān mù rén měi	1
 生酮氨基酸	shēng tóng ān jī suān	1
@@ -160981,6 +160993,7 @@ sort: by_weight
 受害的一方	shòu hài de yì fāng	1
 受害人陈述	shòu hài rén chén shù	1
 受害人故意	shòu hài rén gù yì	1
+受害人家属	shòu hài rén jiā shǔ	1
 受害者家庭	shòu hài zhě jiā tíng	1
 受害者谴责	shòu hài zhě qiǎn zé	1
 受害者身份	shòu hài zhě shēn fèn	1
@@ -166316,6 +166329,7 @@ sort: by_weight
 四斋蒸鹅心	sì zhāi zhēng é xīn	1
 死者代言人	sǐ zhě dài yán rén	1
 死者的复仇	sǐ zhě de fù chóu	1
+死者的家属	sǐ zhě de jiā shǔ	1
 死者的灵魂	sǐ zhě de líng hún	1
 死者田园祭	sǐ zhě tián yuán jì	1
 思政辅导员	sī zhèng fǔ dǎo yuán	1
@@ -168188,6 +168202,7 @@ sort: by_weight
 所有权保留	suǒ yǒu quán bǎo liú	1
 所有权变更	suǒ yǒu quán biàn gēng	1
 所有权登记	suǒ yǒu quán dēng jì	1
+所有权归属	suǒ yǒu quán guī shǔ	1
 所有权结构	suǒ yǒu quán jié gòu	1
 所有权凭证	suǒ yǒu quán píng zhèng	1
 所有权属于	suǒ yǒu quán shǔ yú	1
@@ -192827,6 +192842,7 @@ sort: by_weight
 嫌疑人供述	xián yí rén gōng shù	1
 嫌疑人胡某	xián yí rén hú mǒu	1
 嫌疑人黄某	xián yí rén huáng mǒu	1
+嫌疑人家属	xián yí rén jiā shǔ	1
 嫌疑人交代	xián yí rén jiāo dài	1
 嫌疑人林某	xián yí rén lín mǒu	1
 嫌疑人刘某	xián yí rén liú mǒu	1
@@ -198442,6 +198458,7 @@ sort: by_weight
 心灵的感受	xīn líng de gǎn shòu	1
 心灵的港湾	xīn líng de gǎng wān	1
 心灵的沟通	xīn líng de gōu tōng	1
+心灵的归属	xīn líng de guī shǔ	1
 心灵的归宿	xīn líng de guī sù	1
 心灵的呼唤	xīn líng de hū huàn	1
 心灵的寄托	xīn líng de jì tuō	1
@@ -219133,6 +219150,7 @@ sort: by_weight
 宇奈月温泉	yǔ nài yuè wēn quán	1
 遇难的亲人	yù nàn de qīn rén	1
 裕南街街道	yù nán jiē jiē dào	1
+遇难者家属	yù nàn zhě jiā shǔ	1
 遇难者遗体	yù nàn zhě yí tǐ	1
 鱼内脏食品	yú nèi zàng shí pǐn	1
 与你的回忆	yǔ nǐ de huí yì	1
@@ -220145,6 +220163,7 @@ sort: by_weight
 员工归属感	yuán gōng guī shǔ gǎn	1
 员工花名册	yuán gōng huā míng cè	1
 员工积极性	yuán gōng jī jí xìng	1
+员工及家属	yuán gōng jí jiā shǔ	1
 员工敬业度	yuán gōng jìng yè dù	1
 员工离职后	yuán gōng lí zhí hòu	1
 员工离职率	yuán gōng lí zhí lǜ	1
@@ -236563,6 +236582,7 @@ sort: by_weight
 著作权登记	zhù zuò quán dēng jì	1
 著作权法律	zhù zuò quán fǎ lǜ	1
 著作权管理	zhù zuò quán guǎn lǐ	1
+著作权归属	zhù zuò quán guī shǔ	1
 著作权合同	zhù zuò quán hé tong	1
 著作权纠纷	zhù zuò quán jiū fēn	1
 著作权侵害	zhù zuò quán qīn hài	1
@@ -236787,6 +236807,7 @@ sort: by_weight
 专利请求书	zhuān lì qǐng qiú shū	1
 专利权保护	zhuān lì quán bǎo hù	1
 专利权出质	zhuān lì quán chū zhì	1
+专利权归属	zhuān lì quán guī shǔ	1
 专利权纠纷	zhuān lì quán jiū fēn	1
 专利权滥用	zhuān lì quán làn yòng	1
 专利权类型	zhuān lì quán lèi xíng	1
@@ -245851,6 +245872,7 @@ sort: by_weight
 冰期起源假说	bīng qī qǐ yuán jiǎ shuō	1
 病情突然加重	bìng qíng tū rán jiā zhòng	1
 丙炔压缩气体	bǐng quē yā suō qì tǐ	1
+病人及其家属	bìng rén jí qí jiā shǔ	1
 丙三醇缩甲醛	bǐng sān chún suō jiǎ quán	1
 冰山上的来客	bīng shān shàng de lái kè	1
 冰是睡着的水	bīng shì shuì zháo de shuǐ	1
@@ -255660,6 +255682,7 @@ sort: by_weight
 革命浪漫主义	gé mìng làng màn zhǔ yì	1
 革命乐观主义	gé mìng lè guān zhǔ yì	1
 革命烈士公墓	gé mìng liè shì gōng mù	1
+革命烈士家属	gé mìng liè shì jiā shǔ	1
 革命烈士陵园	gé mìng liè shì líng yuán	1
 革命烈士诗抄	gé mìng liè shì shī chāo	1
 革命烈士遗物	gé mìng liè shì yí wù	1
@@ -260162,6 +260185,7 @@ sort: by_weight
 还原胺化反应	huán yuán àn huà fǎn yìng	1
 还原谷胱甘肽	huán yuán gǔ guāng gān tài	1
 还原事件真相	huán yuán shì jiàn zhēn xiàng	1
+患者及其家属	huàn zhě jí qí jiā shǔ	1
 患者自控镇痛	huàn zhě zì kòng zhèn tòng	1
 幻之地底遗迹	huàn zhī dì dǐ yí jì	1
 还治其人之身	huán zhì qí rén zhī shēn	1
@@ -269074,6 +269098,7 @@ sort: by_weight
 蒙地卡罗方法	méng dì kǎ luó fāng fǎ	1
 蒙丁迪巴什图	méng dīng dí bā shí tú	1
 懵懂的小书童	měng dǒng de xiǎo shū tóng	1
+孟菲斯的归属	mèng fēi sī de guī shǔ	1
 蒙哥马利算法	méng gē mǎ lì suàn fǎ	1
 孟拱河谷战役	mèng gǒng hé gǔ zhàn yì	1
 猛鬼屋逐个捉	měng guǐ wū zhú gè zhuō	1
@@ -284787,6 +284812,7 @@ sort: by_weight
 线叶唇柱苣苔	xiàn yè chún zhù jù tái	1
 嫌疑犯的献身	xián yí fàn de xiàn shēn	1
 现役航空母舰	xiàn yì háng kōng mǔ jiàn	1
+现役军人家属	xiàn yì jūn rén jiā shǔ	1
 现役军人家庭	xiàn yì jūn rén jiā tíng	1
 现役军人子女	xiàn yì jūn rén zǐ nǚ	1
 现役球员名单	xiàn yì qiú yuán míng dān	1
@@ -289952,6 +289978,7 @@ sort: by_weight
 由此可以推断	yóu cǐ kě yǐ tuī duàn	1
 犹大圣徒乐队	yóu dà shèng tú yuè duì	1
 犹大与黑弥赛	yóu dà yǔ hēi mí sài	1
+优待军人家属	yōu dài jūn rén jiā shǔ	1
 优待清室条件	yōu dài qīng shì tiáo jiàn	1
 诱导未成年人	yòu dǎo wèi chéng nián rén	1
 诱导细胞凋亡	yòu dǎo xì bāo diāo wáng	1
@@ -294498,6 +294525,7 @@ sort: by_weight
 柱状变晶结构	zhù zhuàng biàn jīng jié gòu	1
 朱子晚年定论	zhū zǐ wǎn nián dìng lùn	1
 住左边住右边	zhù zuǒ biān zhù yòu biān	1
+著作权的归属	zhù zuò quán de guī shǔ	1
 著作权的继承	zhù zuò quán de jì chéng	1
 著作权人许可	zhù zuò quán rén xǔ kě	1
 抓不住的时光	zhuā bú zhù de shí guāng	1
@@ -306739,7 +306767,7 @@ sort: by_weight
 受北美法律保护	shòu běi měi fǎ lǜ bǎo hù	1
 手持身份证照片	shǒu chí shēn fèn zhèng zhào piān	1
 受到法律的制裁	shòu dào fǎ lǜ de zhì cái	1
-受害人的近亲属	shòu hài rén de jìn qīn shǔ	
+受害人的近亲属	shòu hài rén de jìn qīn shǔ	1
 守护者皇冠面甲	shǒu hù zhě huáng guān miàn jiǎ	1
 收回土地使用权	shōu huí tǔ dì shǐ yòng quán	1
 受试者期望效应	shòu shì zhě qī wàng xiào yìng	1
@@ -308282,6 +308310,7 @@ sort: by_weight
 专利法意义上的	zhuān lì fǎ yì yì shàng de	1
 专利权授予之日	zhuān lì quán shòu yǔ zhī rì	1
 专利申请的受理	zhuān lì shēn qǐng de shòu lǐ	1
+专利申请权归属	zhuān lì shēn qǐng quán guī shǔ	1
 专利申请权转让	zhuān lì shēn qǐng quán zhuǎn ràng	1
 专门人民检察院	zhuān mén rén mín jiǎn chá yuàn	1
 赚钱才是硬道理	zhuàn qián cái shì yìng dào lǐ	1
