@@ -13069,7 +13069,7 @@ sort: by_weight
 不酒后驾车	bù jiǔ hòu jià chē	1
 不久将来的	bù jiǔ jiāng lái de	1
 不就可以了	bú jiù kě yǐ le	1
-不就上去了	bú jiù shǎng qù le	1
+不就上去了	bú jiù shàng qù le	1
 不就是你吗	bú jiù shì nǐ ma	1
 不就是这么	bú jiù shì zhè me	1
 不就完了吗	bú jiù wán le ma	1
@@ -96624,7 +96624,7 @@ sort: by_weight
 救助直升机	jiù zhù zhí shēng jī	1
 九转还魂丹	jiǔ zhuàn huán hún dān	1
 九转仙灵露	jiǔ zhuàn xiān líng lù	1
-就撞上去了	jiù zhuàng shǎng qù le	1
+就撞上去了	jiù zhuàng shàng qù le	1
 酒壮怂人胆	jiǔ zhuàng sǒng rén dǎn	1
 就自动打开	jiù zì dòng dǎ kāi	1
 九字护身法	jiǔ zì hù shēn fǎ	1
@@ -125534,7 +125534,7 @@ sort: by_weight
 你伤不起啊	nǐ shāng bù qǐ a	1
 你伤害了我	nǐ shāng hài le wǒ	1
 妮裳马戏团	nī shang mǎ xì tuán	1
-你上去看看	nǐ shǎng qù kàn kàn	1
+你上去看看	nǐ shàng qù kàn kàn	1
 拟上市公司	nǐ shàng shì gōng sī	1
 拟上市企业	nǐ shàng shì qǐ yè	1
 你伤心难过	nǐ shāng xīn nán guò	1
@@ -133465,6 +133465,7 @@ sort: by_weight
 起来做早饭	qǐ lái zuò zǎo fàn	1
 起了个绰号	qǐ le gè chuò hào	1
 起了个大早	qǐ le gè dà zǎo	1
+奇了个怪了	qí le gè guài le	1
 起了个名字	qǐ le gè míng zì	1
 起了个外号	qǐ le gè wài hào	1
 其乐无穷的	qí lè wú qióng de	1
@@ -148848,7 +148849,7 @@ sort: by_weight
 商丘市公路	shāng qiū shì gōng lù	1
 商丘新区站	shāng qiū xīn qū zhàn	1
 上屈服强度	shàng qū fú qiáng dù	1
-上去就是干	shǎng qù jiù shì gàn	1
+上去就是干	shàng qù jiù shì gàn	1
 上取整函数	shàng qǔ zhěng hán shù	1
 上泉伊势守	shàng quán yī shì shǒu	1
 上确界原理	shàng què jiè yuán lǐ	1
@@ -174136,7 +174137,7 @@ sort: by_weight
 听蛐蛐儿叫	tīng qū qū ér jiào	1
 听泉水叮咚	tīng quán shuǐ dīng dōng	1
 停乳链球菌	tíng rǔ liàn qiú jūn	1
-听上去不错	tīng shǎng qù bú cuò	1
+听上去不错	tīng shàng qù bú cuò	1
 庭审公开网	tíng shěn gōng kāi wǎng	1
 庭审过程中	tíng shěn guò chéng zhōng	1
 庭审结束后	tíng shěn jié shù hòu	1
@@ -201494,7 +201495,6 @@ sort: by_weight
 兄弟会之剑	xiōng dì huì zhī jiàn	1
 兄弟姐妹多	xiōng dì jiě mèi duō	1
 兄弟姐妹间	xiōng dì jiě mèi jiān	1
-兄弟姐妹没	xiōng dì jiě mèi méi	1
 兄弟姐妹们	xiōng dì jiě mèi men	1
 兄弟如手足	xiōng dì rú shǒu zú	1
 兄弟辛苦了	xiōng dì xīn kǔ le	1
@@ -235682,7 +235682,7 @@ sort: by_weight
 主动补库存	zhǔ dòng bǔ kù cún	1
 主动辞职了	zhǔ dòng cí zhí le	1
 主动凑上来	zhǔ dòng còu shàng lái	1
-主动凑上去	zhǔ dòng còu shǎng qù	1
+主动凑上去	zhǔ dòng còu shàng qù	1
 主动打电话	zhǔ dòng dǎ diàn huà	1
 主动打招呼	zhǔ dòng dǎ zhāo hū	1
 主动的联系	zhǔ dòng de lián xì	1
@@ -237720,6 +237720,7 @@ sort: by_weight
 壮志在我胸	zhuàng zhì zài wǒ xiōng	1
 庄重的仪式	zhuāng zhòng de yí shì	1
 庄周办事处	zhuāng zhōu bàn shì chù	1
+庄子与惠子	zhuāng zǐ yǔ huì zǐ	1
 庄宗李存勖	zhuāng zōng lǐ cún xù	1
 壮族聚居地	zhuàng zú jù jū dì	1
 壮族三月三	zhuàng zú sān yuè sān	1
@@ -239791,6 +239792,7 @@ sort: by_weight
 仔细看了看	zǐ xì kàn le kàn	1
 仔细看我的	zǐ xì kàn wǒ de	1
 仔细看一看	zǐ xì kàn yí kàn	1
+自吸喷射泵	zì xī pēn shè bèng	1
 子系统接口	zǐ xì tǒng jiē kǒu	1
 仔细想了想	zǐ xì xiǎng le xiǎng	1
 仔细想一想	zǐ xì xiǎng yì xiǎng	1
@@ -268273,6 +268275,7 @@ sort: by_weight
 螺旋充气装置	luó xuán chōng qì zhuāng zhì	1
 螺旋拉紧装置	luó xuán lā jǐn zhuāng zhì	1
 螺旋式加料器	luó xuán shì jiā liào qì	1
+洛雪音乐助手	luò xuě yīn yuè zhù shǒu	1
 罗阳高速公路	luó yáng gāo sù gōng lù	1
 洛阳高速公路	luò yáng gāo sù gōng lù	1
 洛阳中级法院	luò yáng zhōng jí fǎ yuàn	1
