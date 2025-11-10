@@ -3695,7 +3695,7 @@ sort: by_weight
 礼物斯具	lǐ wù sī jù	1
 礼先苍璧	lǐ xiān cāng bì	1
 礼相伪也	lǐ xiāng wěi yě	1
-礼协粢盛	lǐ xié zī shèng	1
+礼协粢盛	lǐ xié zī chéng	1
 里行婣恤	lǐ xíng yīn xù	1
 立言补过	lì yán bǔ guò	1
 礼以琮玉	lǐ yǐ cóng yù	1
@@ -8747,7 +8747,7 @@ sort: by_weight
 一方多情	yì fāng duō qíng	1
 亦匪克乐	yì fěi kè lè	1
 一偾一起	yī fèn yì qǐ	1
-以奉粢盛	yǐ fèng zī shèng	1
+以奉粢盛	yǐ fèng zī chéng	1
 一夫百亩	yì fū bǎi mǔ	1
 毅夫发立	yì fū fā lì	1
 以福孙曾	yǐ fú sūn céng	1
@@ -10740,6 +10740,7 @@ sort: by_weight
 子车针虎	zǐ chē zhēn hǔ	1
 子车仲行	zǐ chē zhòng xíng	1
 粢盛不洁	zī chéng bù jié	1
+粢盛以絜	zī chéng yǐ jié	1
 子初郊墅	zǐ chū jiāo shù	1
 子忖度之	zǐ cǔn duó zhī	1
 紫电青霜	zǐ diàn qīng shuāng	1
@@ -10768,7 +10769,6 @@ sort: by_weight
 子如不伤	zǐ rú bù shāng	1
 子如通之	zǐ rú tōng zhī	1
 自伤王建	zì shāng wáng jiàn	1
-粢盛以絜	zī shèng yǐ jié	1
 子是之学	zǐ shì zhī xué	1
 自述二首	zì shù èr shǒu	1
 子术已定	zǐ shù yǐ dìng	1
@@ -21326,7 +21326,7 @@ sort: by_weight
 才难不其然	cái nán bù qí rán	1
 才难不易得	cái nán bú yì dé	1
 才难幸扶将	cái nán xìng fú jiāng	1
-彩囊盛不得	cǎi náng chéng bù dé	1
+彩囊盛不得	cǎi náng shèng bù dé	1
 才能本浅薄	cái néng běn qiǎn bó	1
 才能胜夭折	cái néng shèng yāo zhé	1
 才能收箧笥	cái néng shōu qiè sì	1
@@ -66537,7 +66537,7 @@ sort: by_weight
 何时造化手	hé shí zào huà shǒu	1
 何时占丛竹	hé shí zhàn cóng zhú	1
 何事长门闭	hé shì zhǎng mén bì	1
-何时照我还	hé shí zhào wǒ hái	1
+何时照我还	hé shí zhào wǒ huán	1
 何时谪仙人	hé shí zhé xiān rén	1
 何时真得归	hé shí zhēn de guī	1
 何时种桃核	hé shí zhǒng táo hé	1
@@ -108365,6 +108365,7 @@ sort: by_weight
 明月照人苦	míng yuè zhào rén kǔ	1
 明月照帷秋	míng yuè zhào wéi qiū	1
 明月照我房	míng yuè zhào wǒ fáng	1
+明月照我还	míng yuè zhào wǒ hái	1
 明月照我膝	míng yuè zhào wǒ xī	1
 明月照西园	míng yuè zhào xī yuán	1
 明月照张八	míng yuè zhào zhāng bā	1
@@ -229895,7 +229896,7 @@ sort: by_weight
 物亦不能伤也	wù yì bù néng shāng yě	1
 无一朝之患也	wú yī cháo zhī huàn yě	1
 无以供牺牲也	wú yǐ gōng xī shēng yě	1
-无以供粢盛也	wú yǐ gōng zī shèng yě	1
+无以供粢盛也	wú yǐ gōng zī chéng yě	1
 吾亦既许汝矣	wú yì jì xǔ rǔ yǐ	1
 误以甲为浅俗	wù yǐ jiǎ wéi qiǎn sú	1
 吾以汝为死矣	wú yǐ rǔ wéi sǐ yǐ	1
@@ -274350,6 +274351,7 @@ sort: by_weight
 明月还过鳷鹊楼	míng yuè hái guò zhī què lóu	1
 明月好同三径夜	míng yuè hǎo tóng sān jìng yè	1
 明月何曾是两乡	míng yuè hé céng shì liǎng xiāng	1
+明月何时照我还	míng yuè hé shí zhào wǒ huán	1
 明月横汉满而亏	míng yuè héng hàn mǎn ér kuī	1
 明月既能通忆梦	míng yuè jì néng tōng yì mèng	1
 明月皎皎入华池	míng yuè jiǎo jiǎo rù huá chí	1
@@ -298973,7 +298975,7 @@ sort: by_weight
 闻余大言皆冷笑	wén yú dà yán jiē lěng xiào	1
 问予何故独安然	wèn yǔ hé gù dú ān rán	1
 问余何意栖碧山	wèn yú hé yì qī bì shān	1
-问月何时照我还	wèn yuè hé shí zhào wǒ hái	1
+问月何时照我还	wèn yuè hé shí zhào wǒ huán	1
 文章辩慧皆如此	wén zhāng biàn huì jiē rú cǐ	1
 文章彪炳光陆离	wén zhāng biāo bǐng guāng lù lí	1
 文章不直一杯水	wén zhāng bù zhí yì bēi shuǐ	1
@@ -326253,7 +326255,7 @@ sort: by_weight
 诸葛庙久游巴子国	zhū gě miào jiǔ yóu bā zǐ guó	1
 朱阁朱红色的楼阁	zhū gé zhū hóng sè de lóu gé	1
 诸侯多谋伐寡人者	zhū hóu duō móu fá guǎ rén zhě	1
-诸侯耕助以供粢盛	zhū hóu gēng zhù yǐ gōng zī shèng	1
+诸侯耕助以供粢盛	zhū hóu gēng zhù yǐ gōng zī chéng	1
 诸侯能荐人於天子	zhū hóu néng jiàn rén yú tiān zǐ	1
 诸侯有行文天政者	zhū hóu yǒu xíng wén tiān zhèng zhě	1
 诸史何为忍苦征敛	zhū shǐ hé wéi rěn kǔ zhēng liǎn	1
