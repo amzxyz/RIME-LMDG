@@ -7,6 +7,14 @@ name: poetry
 version: "LTS"
 sort: by_weight
 ...
+大曰逝	dà yuē shì	2
+地法天	dì fǎ tiān	2
+故道大	gù dào dà	2
+人法地	rén fǎ dì	2
+人亦大	rén yì dà	2
+逝曰远	shì yuē yuǎn	2
+天法道	tiān fǎ dào	2
+远曰反	yuǎn yuē fǎn	2
 霭霭春空	ǎi ǎi chūn kōng	1
 哀此孤生	āi cǐ gū shēng	1
 哀此鳏寡	āi cǐ guān guǎ	1
@@ -1104,6 +1112,7 @@ sort: by_weight
 道不可致	dào bù kě zhì	1
 道重天地	dào chóng tiān dì	1
 到此因念	dào cǐ yīn niàn	1
+道法自然	dào fǎ zì rán	2
 道逢驺虞	dào féng zōu yú	1
 道兼于天	dào jiān yú tiān	1
 到今惟有	dào jīn wéi yǒu	1
@@ -2832,6 +2841,7 @@ sort: by_weight
 饥鼯颦呻	jī wú pín shēn	1
 极物之真	jí wù zhī zhēn	1
 击无罪者	jī wú zuì zhě	1
+寂兮寥兮	jì xī liáo xī	1
 缉熙肆靖	jī xī sì jìng	1
 及陷乎罪	jí xiàn hū zuì	1
 及陷於罪	jí xiàn yú zuì	1
@@ -8042,6 +8052,7 @@ sort: by_weight
 贤士尚志	xián shì shàng zhì	1
 闲说王建	xián shuō wáng jiàn	1
 闲题家池	xián tí jiā chí	1
+先天地生	xiān tiān dì shēng	1
 闲庭无事	xián tíng wú shì	1
 先王册府	xiān wáng cè fǔ	1
 闲夜咏怀	xián yè yǒng huái	1
@@ -9421,6 +9432,7 @@ sort: by_weight
 忧我父母	yōu wǒ fù mǔ	1
 诱我远学	yòu wǒ yuǎn xué	1
 有物采之	yǒu wù cǎi zhī	1
+有物混成	yǒu wù hùn chéng	1
 有物实之	yǒu wù shí zhī	1
 有无也者	yǒu wú yě zhě	1
 有物有对	yǒu wù yǒu duì	1
@@ -10835,6 +10847,7 @@ sort: by_weight
 子之汤兮	zǐ zhī tāng xī	1
 子之兄弟	zǐ zhī xiōng dì	1
 兹之永叹	zī zhī yǒng tàn	1
+字之曰道	zì zhī yuē dào	1
 子之知道	zǐ zhī zhī dào	1
 自织之与	zì zhī zhī yǔ	1
 子执子术	zǐ zhí zǐ shù	1
@@ -42541,6 +42554,7 @@ sort: by_weight
 独立沧江鹤	dú lì cāng jiāng hè	1
 独立当瑶阙	dú lì dāng yáo quē	1
 读李杜诗集	dú lǐ dù shī jí	1
+独立而不改	dú lì ér bù gǎi	1
 独立发皓齿	dú lì fā hào chǐ	1
 独立飞鸟外	dú lì fēi niǎo wài	1
 独立风尘首	dú lì fēng chén shǒu	1
@@ -62399,6 +62413,7 @@ sort: by_weight
 海上五百人	hǎi shàng wǔ bǎi rén	1
 还伤夏衣薄	hái shāng xià yī báo	1
 海上一烽火	hǎi shàng yī fēng huǒ	1
+海上一孤舟	hǎi shàng yī gū zhōu	1
 海上移珍木	hǎi shàng yí zhēn mù	1
 海上游三岛	hǎi shàng yóu sān dǎo	1
 海上有仙山	hǎi shàng yǒu xiān shān	1
@@ -132220,6 +132235,7 @@ sort: by_weight
 如彼万里行	rú bǐ wàn lǐ xíng	1
 如彼衣与裳	rú bǐ yī yǔ shang	1
 如彼音与律	rú bǐ yīn yǔ lǜ	1
+如彼游川鱼	rú bǐ yóu chuān yú	1
 如别故关人	rú bié gù guān rén	1
 如摈非尔憎	rú bìn fēi ěr zēng	1
 入并蝉冠影	rù bìng chán guān yǐng	1
@@ -227089,6 +227105,7 @@ sort: by_weight
 可以超绝纷世	kě yǐ chāo jué fēn shì	1
 可以观于天矣	kě yǐ guān yú tiān yǐ	1
 可以金绳探册	kě yǐ jīn shéng tàn cè	1
+可以为天地母	kě yǐ wèi tiān dì mǔ	1
 可以无大过矣	kě yǐ wú dà guò yǐ	1
 可以莹发灵瞩	kě yǐ yíng fā líng zhǔ	1
 可以玉检封禅	kě yǐ yù jiǎn fēng shàn	1
