@@ -4726,7 +4726,7 @@ sort: by_weight
 棒棒堂专辑	bàng bàng táng zhuān jí	1
 帮帮我爱神	bāng bāng wǒ ài shén	1
 帮别人打工	bāng bié rén dǎ gōng	1
-帮别人数钱	bāng bié rén shù qián	1
+帮别人数钱	bāng bié rén shǔ qián	1
 棒棰岛宾馆	bàng chuí dǎo bīn guǎn	1
 绑带的设计	bǎng dài de shè jì	1
 绑带高跟鞋	bǎng dài gāo gēn xié	1
@@ -14877,7 +14877,6 @@ sort: by_weight
 不完善之处	bù wán shàn zhī chù	1
 不玩游戏了	bù wán yóu xì le	1
 不完整列表	bù wán zhěng liè biǎo	1
-不忘初心牛	bú wàng chū xīn niú	1
 不忘少年样	bú wàng shào nián yàng	1
 不妄自菲薄	bú wàng zì fěi bó	1
 不违反法律	bù wéi fǎn fǎ lǜ	1
@@ -27398,7 +27397,7 @@ sort: by_weight
 从一而终也	cóng yī ér zhōng yě	1
 从一穷二白	cóng yī qióng èr bái	1
 从衣食住行	cóng yī shí zhù xíng	1
-从一数到十	cóng yī shù dào shí	1
+从一数到十	cóng yī shǔ dào shí	1
 从医院出来	cóng yī yuàn chū lái	1
 从医院回家	cóng yī yuàn huí jiā	1
 从医院回来	cóng yī yuàn huí lái	1
@@ -106349,7 +106348,7 @@ sort: by_weight
 老子山温泉	lǎo zi shān wēn quán	1
 劳资审裁处	láo zī shěn cái chǔ	1
 老子是你爸	lǎo zi shì nǐ bà	1
-老子数到三	lǎo zi shù dào sān	1
+老子数到三	lǎo zi shǔ dào sān	1
 老子所说的	lǎo zi suǒ shuō de	1
 老子五千文	lǎo zi wǔ qiān wén	1
 老子想尔注	lǎo zi xiǎng ěr zhù	1
@@ -117605,9 +117604,6 @@ sort: by_weight
 没说完的话	méi shuō wán de huà	1
 没说一句话	méi shuō yí jù huà	1
 每说一句话	měi shuō yí jù huà	1
-梅思堡效应	méi sī bǎo xiào yìng	1
-梅斯堡效应	méi sī bǎo xiào yìng	1
-美索不达米	měi suǒ bù dá mǐ	1
 没太大改变	méi tài dà gǎi biàn	1
 没太大感觉	méi tài dà gǎn jué	1
 没太大关系	méi tài dà guān xì	1
@@ -123406,10 +123402,8 @@ sort: by_weight
 脑电图检查	nǎo diàn tú jiǎn chá	1
 脑电图异常	nǎo diàn tú yì cháng	1
 脑洞比较大	nǎo dòng bǐ jiào dà	1
-脑洞大开开	nǎo dòng dà kāi kāi	1
 脑动脉硬化	nǎo dòng mài yìng huà	1
 脑锻炼系列	nǎo duàn liàn xì liè	1
-瑙尔斯基区	nǎo ěr sī jī qū	1
 脑发育不良	nǎo fā yù bù liáng	1
 脑发育不全	nǎo fā yù bù quán	1
 脑干胶质瘤	nǎo gān jiāo zhì liú	1
@@ -162285,7 +162279,7 @@ sort: by_weight
 树大好乘凉	shù dà hǎo chéng liáng	1
 书呆子文化	shū dāi zi wén huà	1
 树倒猢狲散	shù dǎo hú sūn sàn	1
-数到三不哭	shù dào sān bù kū	1
+数到三不哭	shǔ dào sān bù kū	1
 书的爱好者	shū de ài hào zhě	1
 熟的白芝麻	shú de bái zhī má	1
 输得很彻底	shū de hěn chè dǐ	1
@@ -163081,7 +163075,7 @@ sort: by_weight
 属性和方法	shǔ xìng hé fāng fǎ	1
 属性咖啡厅	shǔ xìng kā fēi tīng	1
 属性同好会	shǔ xìng tóng hào huì	1
-数星星的人	shù xīng xīng de rén	1
+数星星的人	shǔ xīng xing de rén	1
 属性选择器	shǔ xìng xuǎn zé qì	1
 属性怎么样	shǔ xìng zěn me yàng	1
 属性字符串	shǔ xìng zì fú chuàn	1
@@ -270431,7 +270425,9 @@ sort: by_weight
 目视飞行规则	mù shì fēi xíng guī zé	1
 木石鱼的传说	mù shí yú de chuán shuō	1
 穆斯堡尔效应	mù sī bǎo ěr xiào yìng	1
-穆斯保尔效应	mù sī bǎo ěr xiào yìng	1
+美索不达米亚	měi suǒ bù dá mǐ yà	1
+大的还可以	dà de hái kě yǐ	1
+打得还可以	dǎ de hái kě yǐ	2
 姆斯蒂斯拉夫	mǔ sī dì sī lā fū	1
 木糖驹形杆菌	mù táng jū xíng gǎn jūn	1
 母系氏族社会	mǔ xì shì zú shè huì	1
@@ -279411,7 +279407,7 @@ sort: by_weight
 暑期社会实践	shǔ qī shè huì shí jiàn	1
 暑期实践活动	shǔ qī shí jiàn huó dòng	1
 数千年的历史	shù qiān nián de lì shǐ	1
-数钱数到手软	shù qián shù dào shǒu ruǎn	1
+数钱数到手软	shǔ qián shǔ dào shǒu ruǎn	1
 树人国际学校	shù rén guó jì xué xiào	1
 熟人和陌生人	shú rén hé mò shēng rén	1
 输入电话号码	shū rù diàn huà hào mǎ	1
@@ -279449,7 +279445,7 @@ sort: by_weight
 鼠型斑疹伤寒	shǔ xíng bān zhěn shāng hán	1
 属性点和技能	shǔ xìng diǎn hé jì néng	1
 数形结合思想	shù xíng jié hé sī xiǎng	1
-数星星的孩子	shù xīng xīng de hái zi	1
+数星星的孩子	shǔ xīng xing de hái zi	1
 数学奥林匹克	shù xué ào lín pǐ kè	1
 数学大公式集	shù xué dà gōng shì jí	1
 数学定理列表	shù xué dìng lǐ liè biǎo	1
