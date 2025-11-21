@@ -43,10 +43,10 @@ octagram:
       language: wanxiang-lts-zh-hans
       collocation_max_length: 8         #命中的最长词组
       collocation_min_length: 2         #命中的最短词组，搭配词频健全的词库时候应当最小值设为3避开2字高频词
-      collocation_penalty: -20          #默认-12 对常见搭配词组施加的惩罚值。较高的负值会降低这些搭配被选中的概率，防止过于频繁地出现某些固定搭配。
+      collocation_penalty: -6           #默认-12 对常见搭配词组施加的惩罚值。较高的负值会降低这些搭配被选中的概率，防止过于频繁地出现某些固定搭配。
       non_collocation_penalty: -17      #默认-12 对非搭配词组施加的惩罚值。较高的负值会降低非搭配词组被选中的概率，避免不合逻辑或不常见的词组组合。
-      weak_collocation_penalty: -5     #默认-24 对弱搭配词组施加的惩罚值。保持默认值通常是为了有效过滤掉不太常见但仍然合理的词组组合。
-      rear_penalty: -18                  #默认-18 对词组中后续词语的位置施加的惩罚值。较高的负值会降低某些词语在句子后部出现的概率，防止句子结构不自然。
+      weak_collocation_penalty: -24     #默认-24 对弱搭配词组施加的惩罚值。保持默认值通常是为了有效过滤掉不太常见但仍然合理的词组组合。
+      rear_penalty: -18                 #默认-18 对词组中后续词语的位置施加的惩罚值。较高的负值会降低某些词语在句子后部出现的概率，防止句子结构不自然。
     translator/contextual_suggestions: false
     translator/max_homophones: 5
     translator/max_homographs: 5
