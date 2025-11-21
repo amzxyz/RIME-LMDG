@@ -119,8 +119,8 @@ def userdb_line(cols: list[str]) -> str:
 # 单文件处理
 # ─────────────────────────────────────────────────────────
 skip_set = {
-    "读音兼容.dict.yaml", "错音错字.dict.yaml",
-    "单字表.dict.yaml", "人名.dict.yaml"
+    "duoyin.dict.yaml", "cuoyin.dict.yaml",
+    "zi.dict.yaml", "renming.dict.yaml"
 }
 
 def process_single_file(src: str, dst: str):
