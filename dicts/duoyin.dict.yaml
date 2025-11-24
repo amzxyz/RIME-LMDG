@@ -7,6 +7,11 @@ name: duoyin
 version: "LTS"
 sort: by_weight
 ...
+血条	xiě tiáo	437
+冲卡	chōng qiǎ	311
+干吗	gàn ma	545
+干吗	gān ma	545
+多少	duō shao	752
 当了	dàng le	555
 星星	xīng xing	747
 盛放	shèng fàng	451
@@ -306,6 +311,7 @@ sort: by_weight
 还回	hái huí	430
 看好他	kān hǎo tā	400
 看好他	kàn hǎo tā	400
+深藏不露	shēn cáng bú lòu	56
 还回去吧	huán huí qù ba	26
 还回去吧	hái huí qù ba	26
 还回去吗	huán huí qù ma	25
@@ -4725,7 +4731,8 @@ sort: by_weight
 三个直	sān gè zhí	1
 三个𠙽	sān gè zhì	1
 三个𦉼	sān gè zhì	1
-四个曰	sì gè rì	1
+四个曰	sì gè yuē	1
+四个日	sì gè rì	1
 三个𣥚	sān gè zhì	1
 三个至	sān gè zhì	1
 三个丶	sān gè zhǔ	1
