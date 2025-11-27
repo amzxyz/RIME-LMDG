@@ -1,7 +1,12 @@
+# rime dictionary
 # encoding: utf-8
+#https://github.com/amzxyz/RIME-LMDG
 # ------- 联想词库5字及以上长词-------
+---
 name: lianxiang
-充氮气	chōng dàn qì	138
+version: "LTS"
+sort: by_weight
+...
 阿巴科群岛	ā bā kē qún dǎo	1
 阿贝尔定理	ā bèi ěr dìng lǐ	1
 阿贝尔群论	ā bèi ěr qún lùn	1
