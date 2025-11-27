@@ -1,0 +1,963 @@
+# rime dictionary
+# encoding	utf-8
+#https://github.com/amzxyz/RIME-LMDG
+# ------地质矿物词库-------
+---
+name: dikuang
+version: "LTS"
+sort: by_weight
+...
+矿床	kuàng chuáng	444
+砾岩	lì yán	363
+岩溶	yán róng	412
+铋矿床	bì kuàng chuáng	92
+变砾岩	biàn lì yán	81
+碲矿床	dì kuàng chuáng	52
+底砾岩	dǐ lì yán	65
+碘矿床	diǎn kuàng chuáng	93
+钒矿床	fán kuàng chuáng	62
+副砾岩	fù lì yán	62
+锆矿床	gào kuàng chuáng	73
+铬矿床	gè kuàng chuáng	75
+镉矿床	gé kuàng chuáng	73
+汞矿床	gǒng kuàng chuáng	100
+铪矿床	hā kuàng chuáng	72
+镓矿床	jiā kuàng chuáng	89
+假砾岩	jiǎ lì yán	67
+假岩溶	jiǎ yán róng	80
+角砾岩	jiǎo lì yán	171
+胶砾岩	jiāo lì yán	86
+金矿床	jīn kuàng chuáng	130
+钪矿床	kàng kuàng chuáng	95
+矿床学	kuàng chuáng xué	117
+铼矿床	lái kuàng chuáng	67
+锂矿床	lǐ kuàng chuáng	99
+磷矿床	lín kuàng chuáng	52
+硫矿床	liú kuàng chuáng	83
+铝矿床	lǚ kuàng chuáng	95
+脉矿床	mài kuàng chuáng	83
+盲矿床	máng kuàng chuáng	63
+镁矿床	měi kuàng chuáng	85
+煤矿床	méi kuàng chuáng	69
+锰矿床	měng kuàng chuáng	63
+钼矿床	mù kuàng chuáng	54
+泥砾岩	ní lì yán	83
+镍矿床	niè kuàng chuáng	98
+硼矿床	péng kuàng chuáng	86
+铍矿床	pī kuàng chuáng	58
+铷矿床	rú kuàng chuáng	66
+铯矿床	sè kuàng chuáng	80
+砂矿床	shā kuàng chuáng	84
+砂砾岩	shā lì yán	74
+扇砾岩	shàn lì yán	96
+砷矿床	shēn kuàng chuáng	64
+水文队	shuǐ wén duì	66
+水文化	shuǐ wén huà	188
+水文局	shuǐ wén jú	184
+水文孔	shuǐ wén kǒng	54
+水文年	shuǐ wén nián	50
+水文人	shuǐ wén rén	76
+水文图	shuǐ wén tú	63
+水文学	shuǐ wén xué	176
+水文站	shuǐ wén zhàn	194
+锶矿床	sī kuàng chuáng	66
+碎砾岩	suì lì yán	90
+铊矿床	tā kuàng chuáng	50
+钛矿床	tài kuàng chuáng	54
+锑矿床	tī kuàng chuáng	93
+铁矿床	tiě kuàng chuáng	100
+铜矿床	tóng kuàng chuáng	94
+钍矿床	tǔ kuàng chuáng	58
+钨矿床	wū kuàng chuáng	70
+硒矿床	xī kuàng chuáng	82
+锡矿床	xī kuàng chuáng	54
+细砾岩	xì lì yán	94
+锌矿床	xīn kuàng chuáng	61
+岩溶地	yán róng dì	81
+岩溶洞	yán róng dòng	92
+岩溶湖	yán róng hú	79
+岩溶化	yán róng huà	95
+岩溶率	yán róng lǜ	52
+岩溶期	yán róng qī	58
+岩溶泉	yán róng quán	73
+岩溶水	yán róng shuǐ	81
+岩溶相	yán róng xiāng	99
+岩溶柱	yán róng zhù	97
+岩溶酌	yán róng zhuó	78
+铟矿床	yīn kuàng chuáng	79
+银矿床	yín kuàng chuáng	68
+铀矿床	yóu kuàng chuáng	100
+圆砾岩	yuán lì yán	93
+锗矿床	zhě kuàng chuáng	69
+正砾岩	zhèng lì yán	98
+钻矿床	zuān kuàng chuáng	52
+白垩矿床	bái è kuàng chuáng	8
+变质矿床	biàn zhì kuàng chuáng	7
+变质砾岩	biàn zhì lì yán	6
+残积矿床	cán jī kuàng chuáng	9
+残留矿床	cán liú kuàng chuáng	8
+层间砾岩	céng jiān lì yán	9
+层间岩溶	céng jiān yán róng	5
+层控矿床	céng kòng kuàng chuáng	10
+层内砾岩	céng nèi lì yán	9
+层状矿床	céng zhuàng kuàng chuáng	7
+长江水文	cháng jiāng shuǐ wén	20
+长石矿床	cháng shí kuàng chuáng	5
+沉积矿床	chén jī kuàng chuáng	18
+成层矿床	chéng céng kuàng chuáng	6
+冲积矿床	chōng jī kuàng chuáng	9
+充填矿床	chōng tián kuàng chuáng	1
+次生矿床	cì shēng kuàng chuáng	16
+单成砾岩	dān chéng lì yán	7
+地下岩溶	dì xià yán róng	10
+叠生矿床	dié shēng kuàng chuáng	1
+叠套矿床	dié tào kuàng chuáng	6
+顶盘砾岩	dǐng pán lì yán	9
+沸石矿床	fèi shí kuàng chuáng	1
+分凝矿床	fēn níng kuàng chuáng	8
+风化矿床	fēng huà kuàng chuáng	1
+复成砾岩	fù chéng lì yán	7
+复合矿床	fù hé kuàng chuáng	8
+铬铁矿床	gè tiě kuàng chuáng	8
+硅石矿床	guī shí kuàng chuáng	9
+海底矿床	hǎi dǐ kuàng chuáng	6
+含金砾岩	hán jīn lì yán	6
+衡水文化	héng shuǐ wén huà	7
+后成矿床	hòu chéng kuàng chuáng	5
+后生矿床	hòu shēng kuàng chuáng	9
+滑石矿床	huá shí kuàng chuáng	1
+黄铁矿床	huáng tiě kuàng chuáng	10
+黄土岩溶	huáng tǔ yán róng	9
+灰岩溶坑	huī yán róng kēng	6
+火山矿床	huǒ shān kuàng chuáng	10
+火山砾岩	huǒ shān lì yán	12
+钾碱矿床	jiǎ jiǎn kuàng chuáng	8
+假角砾岩	jiǎ jiǎo lì yán	7
+钾盐矿床	jiǎ yán kuàng chuáng	14
+交代矿床	jiāo dài kuàng chuáng	8
+接触矿床	jiē chù kuàng chuáng	7
+浸染矿床	jìn rǎn kuàng chuáng	8
+金属矿床	jīn shǔ kuàng chuáng	9
+经济矿床	jīng jì kuàng chuáng	7
+巨角砾岩	jù jiǎo lì yán	10
+可采矿床	kě cǎi kuàng chuáng	5
+块状矿床	kuài zhuàng kuàng chuáng	10
+矿床地质	kuàng chuáng dì zhì	9
+矿床分带	kuàng chuáng fēn dài	10
+矿床几何	kuàng chuáng jǐ hé	10
+矿床开拓	kuàng chuáng kāi tuò	7
+矿床勘探	kuàng chuáng kān tàn	9
+矿床类型	kuàng chuáng lèi xíng	9
+矿床模式	kuàng chuáng mó shì	9
+矿床模型	kuàng chuáng mó xíng	5
+矿床品位	kuàng chuáng pǐn wèi	1
+矿床评价	kuàng chuáng píng jià	6
+矿床疏干	kuàng chuáng shū gàn	1
+矿床系列	kuàng chuáng xì liè	7
+矿床组合	kuàng chuáng zǔ hé	9
+砾岩状的	lì yán zhuàng de	5
+淋积矿床	lín jī kuàng chuáng	7
+陆地水文	lù dì shuǐ wén	9
+铝土矿床	lǚ tǔ kuàng chuáng	3
+芒硝矿床	máng xiāo kuàng chuáng	7
+煤炭矿床	méi tàn kuàng chuáng	9
+磨砾岩相	mó lì yán xiāng	10
+内成矿床	nèi chéng kuàng chuáng	9
+内生矿床	nèi shēng kuàng chuáng	6
+铌钽矿床	ní tǎn kuàng chuáng	16
+粘土矿床	nián tǔ kuàng chuáng	8
+喷流矿床	pēn liú kuàng chuáng	6
+喷气矿床	pēn qì kuàng chuáng	10
+气化矿床	qì huà kuàng chuáng	8
+气体矿床	qì tǐ kuàng chuáng	5
+气象水文	qì xiàng shuǐ wén	41
+浅层岩溶	qiǎn céng yán róng	9
+浅成矿床	qiǎn chéng kuàng chuáng	1
+铅锌矿床	qiān xīn kuàng chuáng	19
+曲水文华	qǔ shuǐ wén huá	3
+燃料矿床	rán liào kuàng chuáng	7
+热泉矿床	rè quán kuàng chuáng	7
+热液矿床	rè yè kuàng chuáng	9
+熔角砾岩	róng jiǎo lì yán	11
+熔离矿床	róng lí kuàng chuáng	10
+熔析矿床	róng xī kuàng chuáng	7
+砂积矿床	shā jī kuàng chuáng	1
+砂金矿床	shā jīn kuàng chuáng	5
+砂锡矿床	shā xī kuàng chuáng	1
+山地水文	shān dì shuǐ wén	6
+山水文化	shān shuǐ wén huà	59
+山水文园	shān shuǐ wén yuán	30
+山水文苑	shān shuǐ wén yuàn	14
+深成矿床	shēn chéng kuàng chuáng	7
+深岩溶洞	shēn yán róng dòng	9
+升华矿床	shēng huá kuàng chuáng	5
+省水文局	shěng shuǐ wén jú	32
+石膏矿床	shí gāo kuàng chuáng	7
+石棉矿床	shí mián kuàng chuáng	5
+石墨矿床	shí mò kuàng chuáng	9
+市水文局	shì shuǐ wén jú	29
+石盐矿床	shí yán kuàng chuáng	3
+石油矿床	shí yóu kuàng chuáng	7
+水热矿床	shuǐ rè kuàng chuáng	6
+水文测报	shuǐ wén cè bào	31
+水文测量	shuǐ wén cè liáng	25
+水文测验	shuǐ wén cè yàn	31
+水文测站	shuǐ wén cè zhàn	43
+水文地质	shuǐ wén dì zhì	41
+水文调查	shuǐ wén diào chá	24
+水文干旱	shuǐ wén gān hàn	15
+水文工程	shuǐ wén gōng chéng	20
+水文工作	shuǐ wén gōng zuò	31
+水文观测	shuǐ wén guān cè	30
+水文过程	shuǐ wén guò chéng	9
+水文化学	shuǐ wén huà xué	10
+水文环境	shuǐ wén huán jìng	30
+水文计算	shuǐ wén jì suàn	13
+水文监测	shuǐ wén jiān cè	50
+水文勘测	shuǐ wén kān cè	20
+水文勘察	shuǐ wén kān chá	10
+水文勘查	shuǐ wén kān chá	1
+水文科学	shuǐ wén kē xué	27
+水文流量	shuǐ wén liú liàng	8
+水文模型	shuǐ wén mó xíng	26
+水文年鉴	shuǐ wén nián jiàn	5
+水文气象	shuǐ wén qì xiàng	42
+水文情报	shuǐ wén qíng bào	37
+水文情况	shuǐ wén qíng kuàng	27
+水文情势	shuǐ wén qíng shì	20
+水文曲线	shuǐ wén qǔ xiàn	1
+水文社区	shuǐ wén shè qū	16
+水文数据	shuǐ wén shù jù	25
+水文水文	shuǐ wén shuǐ wén	13
+水文特征	shuǐ wén tè zhēng	33
+水文条件	shuǐ wén tiáo jiàn	34
+水文条例	shuǐ wén tiáo lì	7
+水文信息	shuǐ wén xìn xī	28
+水文学家	shuǐ wén xué jiā	31
+水文循环	shuǐ wén xún huán	25
+水文要素	shuǐ wén yào sù	17
+水文仪器	shuǐ wén yí qì	1
+水文预报	shuǐ wén yù bào	28
+水文中心	shuǐ wén zhōng xīn	22
+水文状况	shuǐ wén zhuàng kuàng	26
+水文资料	shuǐ wén zī liào	33
+水文总站	shuǐ wén zǒng zhàn	25
+水文组织	shuǐ wén zǔ zhī	4
+水型矿床	shuǐ xíng kuàng chuáng	10
+碎屑沉积	suì xiè chén jī	20
+碎屑废石	suì xiè fèi shí	9
+碎屑结构	suì xiè jié gòu	8
+碎屑矿床	suì xiè kuàng chuáng	10
+碎屑岩脉	suì xiè yán mài	11
+碎屑岩墙	suì xiè yán qiáng	8
+天水文化	tiān shuǐ wén huà	5
+天水文物	tiān shuǐ wén wù	5
+铁结砾岩	tiě jié lì yán	1
+铁矿矿床	tiě kuàng kuàng chuáng	9
+同生矿床	tóng shēng kuàng chuáng	9
+同生砾岩	tóng shēng lì yán	10
+外生矿床	wài shēng kuàng chuáng	12
+武汉岩溶	wǔ hàn yán róng	6
+五泉砾岩	wǔ quán lì yán	5
+细角砾岩	xì jiǎo lì yán	10
+席状矿床	xí zhuàng kuàng chuáng	5
+县水文站	xiàn shuǐ wén zhàn	9
+新生矿床	xīn shēng kuàng chuáng	5
+盐湖矿床	yán hú kuàng chuáng	5
+盐湖岩溶	yán hú yán róng	9
+岩浆矿床	yán jiāng kuàng chuáng	5
+盐类矿床	yán lèi kuàng chuáng	16
+岩溶槽谷	yán róng cáo gǔ	5
+岩溶地层	yán róng dì céng	8
+岩溶地貌	yán róng dì mào	7
+岩溶地面	yán róng dì miàn	8
+岩溶地势	yán róng dì shì	6
+岩溶地质	yán róng dì zhì	32
+岩溶嗲面	yán róng diǎ miàn	8
+岩溶洞穴	yán róng dòng xué	7
+岩溶发育	yán róng fā yù	8
+岩溶高原	yán róng gāo yuán	7
+岩溶工程	yán róng gōng chéng	23
+岩溶管道	yán róng guǎn dào	5
+岩溶河流	yán róng hé liú	9
+岩溶景观	yán róng jǐng guān	7
+岩溶勘察	yán róng kān chá	7
+岩溶类型	yán róng lèi xíng	6
+岩溶漏斗	yán róng lòu dǒu	8
+岩溶盆地	yán róng pén dì	9
+岩溶平原	yán róng píng yuán	6
+岩溶丘陵	yán róng qiū líng	9
+岩溶申报	yán róng shēn bào	10
+岩溶石柱	yán róng shí zhù	10
+岩溶洼地	yán róng wā dì	7
+岩溶悬谷	yán róng xuán gǔ	7
+岩溶旋回	yán róng xuán huí	9
+岩溶嶂谷	yán róng zhàng gǔ	8
+岩溶作用	yán róng zuò yòng	6
+岩塞爆破	yán sāi bào pò	3
+乐水文化	yào shuǐ wén huà	8
+隐伏矿床	yǐn fú kuàng chuáng	1
+隐伏岩溶	yǐn fú yán róng	10
+萤石矿床	yíng shí kuàng chuáng	9
+玉石矿床	yù shí kuàng chuáng	10
+原生矿床	yuán shēng kuàng chuáng	7
+陨磺砾岩	yǔn huáng lì yán	12
+云母矿床	yún mǔ kuàng chuáng	1
+再生矿床	zài shēng kuàng chuáng	7
+蛭石矿床	zhì shí kuàng chuáng	8
+重砂矿床	zhòng shā kuàng chuáng	1
+白垩纪地质	bái è jì dì zhì	1
+白榴凝灰岩	bái liú níng huī yán	1
+白云泥灰岩	bái yún ní huī yán	1
+白云质灰岩	bái yún zhì huī yán	1
+斑状变质岩	bān zhuàng biàn zhì yán	1
+斑状花岗岩	bān zhuàng huā gǎng yán	1
+板状石灰岩	bǎn zhuàng shí huī yán	1
+爆发角砾岩	bào fā jiǎo lì yán	1
+宝塔石灰岩	bǎo tǎ shí huī yán	1
+崩塌角砾岩	bēng tā jiǎo lì yán	1
+碧玉铁质岩	bì yù tiě zhì yán	1
+变质岩石学	biàn zhì yán shí xué	1
+表生成岩酌	biǎo shēng chéng yán zhuó	1
+冰川地质学	bīng chuān dì zhì xué	1
+剥蚀角砾岩	bō shí jiǎo lì yán	1
+擦碎角砾岩	cā suì jiǎo lì yán	1
+测井地质学	cè jǐng dì zhì xué	1
+层间角砾岩	céng jiān jiǎo lì yán	1
+层内角砾岩	céng nèi jiǎo lì yán	1
+长春地质宫	cháng chūn dì zhì gōng	1
+长兴石灰岩	cháng xīng shí huī yán	1
+超镁铁质岩	chāo měi tiě zhì yán	1
+成岩白云岩	chéng yán bái yún yán	1
+成岩分异酌	chéng yán fēn yì zhuó	1
+成岩角砾岩	chéng yán jiǎo lì yán	1
+储层地质学	chǔ céng dì zhì xué	1
+船山石灰岩	chuán shān shí huī yán	1
+粗粒凝灰岩	cū lì níng huī yán	1
+粗面凝灰岩	cū miàn níng huī yán	1
+大气碎屑岩	dà qì suì xiè yán	1
+大屯火山群	dà tún huǒ shān qún	1
+淡色花岗岩	dàn sè huā gǎng yán	1
+低平火山口	dī píng huǒ shān kǒu	1
+第三纪火山	dì sān jì huǒ shān	1
+第四纪地质	dì sì jì dì zhì	1
+第四纪火山	dì sì jì huǒ shān	1
+地震地质学	dì zhèn dì zhì xué	1
+地震断裂带	dì zhèn duàn liè dài	1
+地质博物馆	dì zhì bó wù guǎn	1
+地质出版社	dì zhì chū bǎn shè	1
+地质地貌学	dì zhì dì mào xué	1
+地质地形图	dì zhì dì xíng tú	1
+地质调查局	dì zhì diào chá jú	1
+地质调查院	dì zhì diào chá yuàn	1
+地质工程师	dì zhì gōng chéng shī	1
+地质工作者	dì zhì gōng zuò zhě	1
+地质构造的	dì zhì gòu zào de	1
+地质构造图	dì zhì gòu zào tú	1
+地质构造学	dì zhì gòu zào xué	1
+地质聚合物	dì zhì jù hé wù	1
+地质考古学	dì zhì kǎo gǔ xué	1
+地质科学院	dì zhì kē xué yuàn	1
+地质块段法	dì zhì kuài duàn fǎ	1
+地质矿产部	dì zhì kuàng chǎn bù	1
+地质矿产厅	dì zhì kuàng chǎn tīng	1
+地质类比法	dì zhì lèi bǐ fǎ	1
+地质年代表	dì zhì nián dài biǎo	1
+地质年代学	dì zhì nián dài xué	1
+地质平面图	dì zhì píng miàn tú	1
+地质剖面图	dì zhì pōu miàn tú	1
+地质水文学	dì zhì shuǐ wén xué	1
+地质统计学	dì zhì tǒng jì xué	1
+地质学分科	dì zhì xué fēn kē	1
+地质学基础	dì zhì xué jī chǔ	1
+地质学术语	dì zhì xué shù yǔ	1
+地质学原理	dì zhì xué yuán lǐ	1
+地质学专题	dì zhì xué zhuān tí	1
+地质学专业	dì zhì xué zhuān yè	1
+地质研究所	dì zhì yán jiū suǒ	1
+地质灾害点	dì zhì zāi hài diǎn	1
+电成岩作用	diàn chéng yán zuò yòng	1
+电气花岗岩	diàn qì huā gǎng yán	1
+叠锥状火山	dié zhuī zhuàng huǒ shān	1
+动力变质岩	dòng lì biàn zhì yán	1
+动力地质学	dòng lì dì zhì xué	1
+断层角砾岩	duàn céng jiǎo lì yán	1
+多杂质砾岩	duō zá zhì lì yán	1
+二长花岗岩	èr cháng huā gǎng yán	1
+鲕状石灰岩	ér zhuàng shí huī yán	1
+钒酸盐矿物	fán suān yán kuàng wù	1
+非活跃火山	fēi huó yuè huǒ shān	1
+非均质岩石	fēi jūn zhì yán shí	1
+非洲火山岛	fēi zhōu huǒ shān dǎo	1
+粉砂屑灰岩	fěn shā xiè huī yán	1
+风成碎屑岩	fēng chéng suì xiè yán	1
+风火山隧道	fēng huǒ shān suì dào	1
+风林火山篇	fēng lín huǒ shān piān	1
+副长深成岩	fù cháng shēn chéng yán	1
+复合火山锥	fù hé huǒ shān zhuī	1
+傅科陨石坑	fù kē yǔn shí kēng	1
+复矿碎屑岩	fù kuàng suì xiè yán	1
+腐泥砂屑岩	fǔ ní shā xiè yán	1
+浮石火山锥	fú shí huǒ shān zhuī	1
+浮石凝灰岩	fú shí níng huī yán	1
+钙碱花岗岩	gài jiǎn huā gǎng yán	1
+钙质角砾岩	gài zhì jiǎo lì yán	1
+高于庄灰岩	gāo yú zhuāng huī yán	1
+革老河灰岩	gé lǎo hé huī yán	1
+葛林芝火山	gé lín zhī huǒ shān	1
+铬酸盐矿物	gè suān yán kuàng wù	1
+更长花岗岩	gèng cháng huā gǎng yán	1
+更新世火山	gēng xīn shì huǒ shān	1
+工程地质图	gōng chéng dì zhì tú	1
+工程地质学	gōng chéng dì zhì xué	1
+公馆凝灰岩	gōng guǎn níng huī yán	1
+构造地质学	gòu zào dì zhì xué	1
+古代火山兽	gǔ dài huǒ shān shòu	1
+硅酸盐矿物	guī suān yán kuàng wù	1
+硅质石灰岩	guī zhì shí huī yán	1
+国家地质部	guó jiā dì zhì bù	1
+海岸岩溶型	hǎi àn yán róng xíng	1
+海底地质学	hǎi dǐ dì zhì xué	1
+海底断裂带	hǎi dǐ duàn liè dài	1
+海洋地质所	hǎi yáng dì zhì suǒ	1
+海洋地质学	hǎi yáng dì zhì xué	1
+含金砾岩层	hán jīn lì yán céng	1
+含镁石灰岩	hán měi shí huī yán	1
+河成碎屑岩	hé chéng suì xiè yán	1
+黑色花岗岩	hēi sè huā gǎng yán	1
+黑色火山土	hēi sè huǒ shān tǔ	1
+黑云花岗岩	hēi yún huā gǎng yán	1
+后生角砾岩	hòu shēng jué lì yán	1
+花岗岩地貌	huā gǎng yán dì mào	1
+花岗岩瀑布	huā gǎng yán pù bù	1
+花岗岩铺砌	huā gǎng yán pū qì	1
+花岗岩丘陵	huā gǎng yán qiū líng	1
+花岗岩石材	huā gǎng yán shí cái	1
+花岗岩石块	huā gǎng yán shí kuài	1
+花岗岩台阶	huā gǎng yán tái jiē	1
+花岗岩台面	huā gǎng yán tái miàn	1
+花岗岩质层	huā gǎng yán zhì céng	1
+花岗岩状的	huā gǎng yán zhuàng de	1
+华南花岗岩	huá nán huā gǎng yán	1
+化学石灰岩	huà xué shí huī yán	1
+环斑花岗岩	huán bān huā gǎng yán	1
+环境地质学	huán jìng dì zhì xué	1
+黄龙石灰岩	huáng lóng shí huī yán	1
+灰岩粗毛藤	huī yán cū máo téng	1
+灰岩香茶菜	huī yán xiāng chá cài	1
+灰岩肖韶子	huī yán xiào sháo zǐ	1
+灰岩紫地榆	huī yán zǐ dì yú	1
+灰质结砾岩	huī zhì jié lì yán	1
+灰质泥灰岩	huī zhì ní huī yán	1
+混合花岗岩	hùn hé huā gǎng yán	1
+混合火山锥	hùn hé huǒ shān zhuī	1
+火成变质岩	huǒ chéng biàn zhì yán	1
+火成堆积岩	huǒ chéng duī jī yán	1
+火成角砾岩	huǒ chéng jiǎo lì yán	1
+火成片麻岩	huǒ chéng piàn má yán	1
+火成碎屑物	huǒ chéng suì xiè wù	1
+火成碎屑岩	huǒ chéng suì xiè yán	1
+火成岩产状	huǒ chéng yán chǎn zhuàng	1
+火成岩石学	huǒ chéng yán shí xué	1
+火成岩纹理	huǒ chéng yán wén lǐ	1
+火成岩系列	huǒ chéng yán xì liè	1
+火山爆发后	huǒ shān bào fā hòu	1
+火山碧云寺	huǒ shān bì yún sì	1
+火山大爆发	huǒ shān dà bào fā	1
+火山的意志	huǒ shān de yì zhì	1
+火山地震带	huǒ shān dì zhèn dài	1
+火山地质学	huǒ shān dì zhì xué	1
+火山肺矽病	huǒ shān fèi xī bìng	1
+火山观测站	huǒ shān guān cè zhàn	1
+火山灰活性	huǒ shān huī huó xìng	1
+火山灰水泥	huǒ shān huī shuǐ ní	1
+火山集块岩	huǒ shān jí kuài yán	1
+火山角砾岩	huǒ shān jiǎo lì yán	1
+火山喀斯特	huǒ shān kā sī tè	1
+火山口边缘	huǒ shān kǒu biān yuán	1
+火山口高地	huǒ shān kǒu gāo dì	1
+火山口公园	huǒ shān kǒu gōng yuán	1
+火山泥面膜	huǒ shān ní miàn mó	1
+火山泥石流	huǒ shān ní shí liú	1
+火山凝灰岩	huǒ shān níng huī yán	1
+火山喷出物	huǒ shān pēn chū wù	1
+火山喷气孔	huǒ shān pēn qì kǒng	1
+火山碎屑流	huǒ shān suì xiè liú	1
+火山碎屑物	huǒ shān suì xiè wù	1
+火山碎屑岩	huǒ shān suì xiè yán	1
+火山矽肺病	huǒ shān xī fèi bìng	1
+火山小视频	huǒ shān xiǎo shì pín	1
+火山性地震	huǒ shān xìng dì zhèn	1
+火山岩建造	huǒ shān yán jiàn zào	1
+火山岩系列	huǒ shān yán xì liè	1
+火山岩屑土	huǒ shān yán xiè tǔ	1
+火山岩组合	huǒ shān yán zǔ hé	1
+火星的火山	huǒ xīng de huǒ shān	1
+集块火山锥	jí kuài huǒ shān zhuī	1
+基隆火山群	jī lóng huǒ shān qún	1
+寄生火山口	jì shēng huǒ shān kǒu	1
+寄生火山锥	jì shēng huǒ shān zhuī	1
+机械碎屑岩	jī xiè suì xiè yán	1
+基岩地质图	jī yán dì zhì tú	1
+嘉陵江灰岩	jiā líng jiāng huī yán	1
+假深成岩体	jiǎ shēn chéng yán tǐ	1
+钾玄岩系列	jiǎ xuán yán xì liè	1
+钾质花岗岩	jiǎ zhì huā gǎng yán	1
+碱性花岗岩	jiǎn xìng huā gǎng yán	1
+碱性火成岩	jiǎn xìng huǒ chéng yán	1
+碱性火山岩	jiǎn xìng huǒ shān yán	1
+建造内砾岩	jiàn zào nèi lì yán	1
+礁岛岩溶型	jiāo dǎo yán róng xíng	1
+角闪质岩石	jiǎo shǎn zhì yán shí	1
+接触变质岩	jiē chù biàn zhì yán	1
+结构地质学	jié gòu dì zhì xué	1
+结晶凝灰岩	jié jīng níng huī yán	1
+晶洞花岗岩	jīng dòng huā gǎng yán	1
+景儿峪灰岩	jǐng ér yù huī yán	1
+晶后碎屑岩	jīng hòu suì xiè yán	1
+经济地质学	jīng jì dì zhì xué	1
+巨形角砾岩	jù xíng jiǎo lì yán	1
+考古地质学	kǎo gǔ dì zhì xué	1
+颗粒石灰岩	kē lì shí huī yán	1
+矿床地质学	kuàng chuáng dì zhì xué	1
+矿山地质学	kuàng shān dì zhì xué	1
+狼溪陨石坑	láng xī yǔn shí kēng	1
+雷琼火山群	léi qióng huǒ shān qún	1
+类型花岗岩	lèi xíng huā gǎng yán	1
+历史地质学	lì shǐ dì zhì xué	1
+砾岩型铀矿	lì yán xíng yóu kuàng	1
+磷酸盐矿物	lín suān yán kuàng wù	1
+临湘石灰岩	lín xiāng shí huī yán	1
+硫酸盐矿物	liú suān yán kuàng wù	1
+龙岗火山群	lóng gǎng huǒ shān qún	1
+隆基迈火山	lóng jī mài huǒ shān	1
+乱层火成岩	luàn céng huǒ chéng yán	1
+裸露型岩溶	luǒ lòu xíng yán róng	1
+绿帘花岗岩	lǜ lián huā gǎng yán	1
+绿泥花岗岩	lǜ ní huā gǎng yán	1
+绿色凝灰岩	lǜ sè níng huī yán	1
+埋藏型岩溶	mái cáng xíng yán róng	1
+茅口石灰岩	máo kǒu shí huī yán	1
+茅口组灰岩	máo kǒu zǔ huī yán	1
+毛纳基火山	máo nà jī huǒ shān	1
+冒纳基火山	mào nà jī huǒ shān	1
+煤成岩作用	méi chéng yán zuò yòng	1
+煤炭地质学	méi tàn dì zhì xué	1
+煤田地质局	méi tián dì zhì jú	1
+煤田地质学	méi tián dì zhì xué	1
+镁铁质岩石	měi tiě zhì yán shí	1
+描述地质学	miáo shù dì zhì xué	1
+冥王星地质	míng wáng xīng dì zhì	1
+默奇森陨石	mò qí sēn yǔn shí	1
+钼酸盐矿物	mù suān yán kuàng wù	1
+木卫一火山	mù wèi yī huǒ shān	1
+钠辉细岗岩	nà huī xì gǎng yán	1
+钠闪花岗岩	nà shǎn huā gǎng yán	1
+钠闪微岗岩	nà shǎn wēi gǎng yán	1
+钠质火成岩	nà zhì huǒ chéng yán	1
+泥流角砾岩	ní liú jiǎo lì yán	1
+泥质角砾岩	ní zhì jiǎo lì yán	1
+粘土泥灰岩	nián tǔ ní huī yán	1
+凝灰角砾岩	níng huī jiǎo lì yán	1
+凝灰质砾岩	níng huī zhì lì yán	1
+喷发的火山	pēn fā de huǒ shān	1
+硼酸盐矿物	péng suān yán kuàng wù	1
+婆罗摩火山	pó luó mó huǒ shān	1
+普通地质学	pǔ tōng dì zhì xué	1
+栖霞石灰岩	qī xiá shí huī yán	1
+浅带变质岩	qiǎn dài biàn zhì yán	1
+前地质时期	qián dì zhì shí qī	1
+潜火山地震	qián huǒ shān dì zhèn	1
+前进成岩酌	qián jìn chéng yán zhuó	1
+强风化砾岩	qiáng fēng huà lì yán	1
+侵入火成岩	qīn rù huǒ chéng yán	1
+球颗火成岩	qiú kē huǒ chéng yán	1
+球状花岗岩	qiú zhuàng huā gǎng yán	1
+去花岗岩化	qù huā gǎng yán huà	1
+区域变质岩	qū yù biàn zhì yán	1
+区域地质图	qū yù dì zhì tú	1
+区域地质学	qū yù dì zhì xué	1
+全新世火山	quán xīn shì huǒ shān	1
+缺裂火山锥	quē liè huǒ shān zhuī	1
+热力类岩溶	rè lì lèi yán róng	1
+人造花岗岩	rén zào huā gǎng yán	1
+溶解角砾岩	róng jiě jiǎo lì yán	1
+熔结角砾岩	róng jié jiǎo lì yán	1
+熔结凝灰岩	róng jié níng huī yán	1
+熔壳火山锥	róng ké huǒ shān zhuī	1
+熔岩溪火山	róng yán xī huǒ shān	1
+砂质泥灰岩	shā zhì ní huī yán	1
+山顶火山口	shān dǐng huǒ shān kǒu	1
+深地质处置	shēn dì zhì chǔ zhì	1
+砷酸盐矿物	shēn suān yán kuàng wù	1
+生物层灰岩	shēng wù céng huī yán	1
+生物地质学	shēng wù dì zhì xué	1
+生物礁灰岩	shēng wù jiāo huī yán	1
+生物碎屑岩	shēng wù suì xiè yán	1
+生物滩灰岩	shēng wù tān huī yán	1
+石灰岩道碴	shí huī yán dào chá	1
+石灰岩地形	shí huī yán dì xíng	1
+石灰岩海岸	shí huī yán hǎi àn	1
+石灰岩鹪鹛	shí huī yán jiāo méi	1
+石灰岩矿床	shí huī yán kuàng chuáng	1
+石灰岩溶洞	shí huī yán róng dòng	1
+实验地质学	shí yàn dì zhì xué	1
+石英质岩石	shí yīng zhì yán shí	1
+石油地质学	shí yóu dì zhì xué	1
+石质凝灰岩	shí zhì níng huī yán	1
+水成变质岩	shuǐ chéng biàn zhì yán	1
+水成碎屑岩	shuǐ chéng suì xiè yán	1
+水泥石灰岩	shuǐ ní shí huī yán	1
+水文地质的	shuǐ wén dì zhì de	1
+水文地质图	shuǐ wén dì zhì tú	1
+水文地质学	shuǐ wén dì zhì xué	1
+苏联地质部	sū lián dì zhì bù	1
+碎晶凝灰岩	suì jīng níng huī yán	1
+碎屑角砾岩	suì xiè jiǎo lì yán	1
+碎屑岩岩溶	suì xiè yán yán róng	1
+塌积角砾岩	tā jī jiǎo lì yán	1
+塌陷角砾岩	tā xiàn jiǎo lì yán	1
+太空地质学	tài kōng dì zhì xué	1
+太平洋岩群	tài píng yáng yán qún	1
+钛铁磷灰岩	tài tiě lín huī yán	1
+郯庐断裂带	tán lú duàn liè dài	1
+碳酸盐矿物	tàn suān yán kuàng wù	1
+碳质石灰岩	tàn zhì shí huī yán	1
+天然花岗岩	tiān rán huā gǎng yán	1
+天体地质学	tiān tǐ dì zhì xué	1
+天文地质学	tiān wén dì zhì xué	1
+跳火山的人	tiào huǒ shān de rén	1
+通科科火山	tōng kē kē huǒ shān	1
+同生角砾岩	tóng shēng jiǎo lì yán	1
+同源花岗岩	tóng yuán huā gǎng yán	1
+透长凝灰岩	tòu cháng níng huī yán	1
+外成岩作用	wài chéng yán zuò yòng	1
+外碎屑灰岩	wài suì xiè huī yán	1
+微贝壳灰岩	wēi bèi ké huī yán	1
+我是地质人	wǒ shì dì zhì rén	1
+无根火山锥	wú gēn huǒ shān zhuī	1
+雾迷山灰岩	wù mí shān huī yán	1
+无球粒陨石	wú qiú lì yǔn shí	1
+钨酸盐矿物	wū suān yán kuàng wù	1
+细晶磷灰岩	xì jīng lín huī yán	1
+锡纳朋火山	xī nà péng huǒ shān	1
+稀土火成岩	xī tǔ huǒ chéng yán	1
+陷落火山口	xiàn luò huǒ shān kǒu	1
+小江断裂带	xiǎo jiāng duàn liè dài	1
+硝酸盐矿物	xiāo suān yán kuàng wù	1
+小行星陨石	xiǎo xíng xīng yǔn shí	1
+斜长花岗岩	xié cháng huā gǎng yán	1
+新生代火山	xīn shēng dài huǒ shān	1
+行星地质学	xíng xīng dì zhì xué	1
+休格地陨石	xiū gé dì yǔn shí	1
+岫岩陨石坑	xiù yán yǔn shí kēng	1
+压碎角砾岩	yā suì jiǎo lì yán	1
+岩崩角砾岩	yán bēng jiǎo lì yán	1
+岩浆花岗岩	yán jiāng huā gǎng yán	1
+岩溶剥蚀面	yán róng bō shí miàn	1
+岩溶地面的	yán róng dì miàn de	1
+岩溶洞回填	yán róng dòng huí tián	1
+岩溶多潮泉	yán róng duō cháo quán	1
+岩溶含水层	yán róng hán shuǐ céng	1
+岩溶红色土	yán róng hóng sè tǔ	1
+岩溶基准面	yán róng jī zhǔn miàn	1
+岩溶较发育	yán róng jiào fā yù	1
+岩溶角砾岩	yán róng jiǎo lì yán	1
+盐溶角砾岩	yán róng jiǎo lì yán	1
+岩溶水文学	yán róng shuǐ wén xué	1
+岩溶陷落柱	yán róng xiàn luò zhù	1
+岩溶夷平面	yán róng yí píng miàn	1
+岩溶油气藏	yán róng yóu qì cáng	1
+岩溶准平原	yán róng zhǔn píng yuán	1
+岩尾火山群	yán wěi huǒ shān qún	1
+岩屑砂屑岩	yán xiè shā xiè yán	1
+冶里石灰岩	yě lǐ shí huī yán	1
+野外地质学	yě wài dì zhì xué	1
+异化粒灰岩	yì huà lì huī yán	1
+伊通火山群	yī tōng huǒ shān qún	1
+隐爆角砾岩	yǐn bào jiǎo lì yán	1
+应用地质学	yìng yòng dì zhì xué	1
+铀矿地质学	yóu kuàng dì zhì xué	1
+铀砾岩矿床	yóu lì yán kuàng chuáng	1
+宇宙地质学	yǔ zhòu dì zhì xué	1
+原地花岗岩	yuán dì huā gǎng yán	1
+原始火山岩	yuán shǐ huǒ shān yán	1
+月球地质学	yuè qiú dì zhì xué	1
+月球火成岩	yuè qiú huǒ chéng yán	1
+陨击角砾岩	yǔn jī jiǎo lì yán	1
+杂块花岗岩	zá kuài huā gǎng yán	1
+再生花岗岩	zài shēng huā gǎng yán	1
+张夏石灰岩	zhāng xià shí huī yán	1
+张性角砾岩	zhāng xìng jiǎo lì yán	1
+正长花岗岩	zhèng zhǎng huā gǎng yán	1
+中生代地质	zhōng shēng dài dì zhì	1
+中心式火山	zhōng xīn shì huǒ shān	1
+竹叶状灰岩	zhú yè zhuàng huī yán	1
+竹叶状砾岩	zhú yè zhuàng lì yán	1
+撞击角砾岩	zhuàng jī jiǎo lì yán	1
+紫苏花岗岩	zǐ sū huā gǎng yán	1
+棕灰岩鹪鹛	zōng huī yán jiāo méi	1
+半原地花岗岩	bàn yuán dì huā gǎng yán	1
+保护地质环境	bǎo hù dì zhì huán jìng	1
+北京地质学院	běi jīng dì zhì xué yuàn	1
+北石灰岩山脉	běi shí huī yán shān mài	1
+表生成岩作用	biǎo shēng chéng yán zuò yòng	1
+不良地质作用	bù liáng dì zhì zuò yòng	1
+层硅酸盐矿物	céng guī suān yán kuàng wù	1
+长春地质学院	cháng chūn dì zhì xué yuàn	1
+场地地质效应	chǎng dì dì zhì xiào yìng	1
+超强陨石魔法	chāo qiáng yǔn shí mó fǎ	1
+沉火山角砾岩	chén huǒ shān jiǎo lì yán	1
+沉火山碎屑岩	chén huǒ shān suì xiè yán	1
+沉积成岩作用	chén jī chéng yán zuò yòng	1
+成都地质学院	chéng dū dì zhì xué yuàn	1
+成矿地质背景	chéng kuàng dì zhì bèi jǐng	1
+城市工程地质	chéng shì gōng chéng dì zhì	1
+初步地质勘察	chū bù dì zhì kān chá	1
+次生地质灾害	cì shēng dì zhì zāi hài	1
+大型火成岩区	dà xíng huǒ chéng yán qū	1
+岛硅酸盐矿物	dǎo guī suān yán kuàng wù	1
+倒石锥角砾岩	dào shí zhuī jiǎo lì yán	1
+地球地质历史	dì qiú dì zhì lì shǐ	1
+地震地质效应	dì zhèn dì zhì xiào yìng	1
+地震地质灾害	dì zhèn dì zhì zāi hài	1
+地震工程地质	dì zhèn gōng chéng dì zhì	1
+地质复杂程度	dì zhì fù zá chéng dù	1
+地质工程专业	dì zhì gōng chéng zhuān yè	1
+地质构造体系	dì zhì gòu zào tǐ xì	1
+地质国家公园	dì zhì guó jiā gōng yuán	1
+地质环境保护	dì zhì huán jìng bǎo hù	1
+地质环境破坏	dì zhì huán jìng pò huài	1
+地质环境条件	dì zhì huán jìng tiáo jiàn	1
+地质环境总站	dì zhì huán jìng zǒng zhàn	1
+地质勘查报告	dì zhì kān chá bào gào	1
+地质勘察报告	dì zhì kān chá bào gào	1
+地质勘查资料	dì zhì kān chá zī liào	1
+地质勘探单位	dì zhì kān tàn dān wèi	1
+地质矿产勘查	dì zhì kuàng chǎn kān chá	1
+地质雷达探测	dì zhì léi dá tàn cè	1
+地质历史时期	dì zhì lì shǐ shí qī	1
+地质力学概论	dì zhì lì xué gài lùn	1
+地质年代单位	dì zhì nián dài dān wèi	1
+地质年代学的	dì zhì nián dài xué de	1
+地质透视效应	dì zhì tòu shì xiào yìng	1
+地质研究程度	dì zhì yán jiū chéng dù	1
+地质灾害防治	dì zhì zāi hài fáng zhì	1
+地质灾害气象	dì zhì zāi hài qì xiàng	1
+地质灾害巡查	dì zhì zāi hài xún chá	1
+地质灾害治理	dì zhì zāi hài zhì lǐ	1
+地中海型岩溶	dì zhōng hǎi xíng yán róng	1
+动力地质作用	dòng lì dì zhì zuò yòng	1
+鲕粒亮晶灰岩	ér lì liàng jīng huī yán	1
+鲕粒泥质灰岩	ér lì ní zhì huī yán	1
+尔塔阿雷火山	ěr tǎ ā léi huǒ shān	1
+粪粒泥晶灰岩	fèn lì ní jīng huī yán	1
+风成细粒灰岩	fēng chéng xì lì huī yán	1
+风的地质作用	fēng de dì zhì zuò yòng	1
+副沉积角砾岩	fù chén jī jiǎo lì yán	1
+富铝质火成岩	fù lǚ zhì huǒ chéng yán	1
+负异钠花岗岩	fù yì nà huā gǎng yán	1
+抚州地质学院	fǔ zhōu dì zhì xué yuàn	1
+钙碱性火山岩	gài jiǎn xìng huǒ shān yán	1
+钙质微晶灰岩	gài zhì wēi jīng huī yán	1
+甘科诺拉火山	gān kē nuò lā huǒ shān	1
+甘斯基陨石坑	gān sī jī yǔn shí kēng	1
+各国火成岩学	gè guó huǒ chéng yán xué	1
+耕地质量建设	gēng dì zhì liàng jiàn shè	1
+工程地质测绘	gōng chéng dì zhì cè huì	1
+工程地质单元	gōng chéng dì zhì dān yuán	1
+工程地质调查	gōng chéng dì zhì diào chá	1
+工程地质环境	gōng chéng dì zhì huán jìng	1
+工程地质勘察	gōng chéng dì zhì kān chá	1
+工程地质力学	gōng chéng dì zhì lì xué	1
+工程地质评价	gōng chéng dì zhì píng jià	1
+工程地质特征	gōng chéng dì zhì tè zhēng	1
+工程地质条件	gōng chéng dì zhì tiáo jiàn	1
+工程地质问题	gōng chéng dì zhì wèn tí	1
+工程地质岩组	gōng chéng dì zhì yán zǔ	1
+工程地质钻探	gōng chéng dì zhì zuān tàn	1
+构造后花岗岩	gòu zào hòu huā gǎng yán	1
+固结成岩作用	gù jié chéng yán zuò yòng	1
+牯牛潭石灰岩	gǔ niú tán shí huī yán	1
+古铜无球陨石	gǔ tóng wú qiú yǔn shí	1
+国际地质大会	guó jì dì zhì dà huì	1
+国家地质公园	guó jiā dì zhì gōng yuán	1
+海洋地质调查	hǎi yáng dì zhì diào chá	1
+海洋地质学家	hǎi yáng dì zhì xué jiā	1
+海洋工程地质	hǎi yáng gōng chéng dì zhì	1
+航空地质方法	háng kōng dì zhì fāng fǎ	1
+河北地质大学	hé běi dì zhì dà xué	1
+河北地质学院	hé běi dì zhì xué yuàn	1
+后生成岩作用	hòu shēng chéng yán zuò yòng	1
+湖北地质学院	hú běi dì zhì xué yuàn	1
+华东地质学院	huá dōng dì zhì xué yuàn	1
+花岗岩层下的	huā gǎng yán céng xià de	1
+花岗岩化变质	huā gǎng yán huà biàn zhì	1
+花岗岩类岩石	huā gǎng yán lèi yán shí	1
+花岗岩型铀矿	huā gǎng yán xíng yóu kuàng	1
+花岗状火成岩	huā gǎng zhuàng huǒ chéng yán	1
+环硅酸盐矿物	huán guī suān yán kuàng wù	1
+环境地质调查	huán jìng dì zhì diào chá	1
+环境地质问题	huán jìng dì zhì wèn tí	1
+环境水文地质	huán jìng shuǐ wén dì zhì	1
+灰岩喜鹊苣苔	huī yán xǐ què jù tái	1
+灰岩皱叶报春	huī yán zhòu yè bào chūn	1
+火山沉积矿床	huǒ shān chén jī kuàng chuáng	1
+火山地质公园	huǒ shān dì zhì gōng yuán	1
+火山角砾岩筒	huǒ shān jiǎo lì yán tǒng	1
+火山碎屑熔岩	huǒ shān suì xiè róng yán	1
+火山碎屑岩筒	huǒ shān suì xiè yán tǒng	1
+火山岩型铀矿	huǒ shān yán xíng yóu kuàng	1
+火山柱状节理	huǒ shān zhù zhuàng jié lǐ	1
+捷边科夫火山	jié biān kē fū huǒ shān	1
+进行水文地质	jìn xíng shuǐ wén dì zhì	1
+居间灰岩黄芩	jū jiān huī yán huáng qín	1
+矿区地质环境	kuàng qū dì zhì huán jìng	1
+矿山地质工作	kuàng shān dì zhì gōng zuò	1
+矿山基建地质	kuàng shān jī jiàn dì zhì	1
+链硅酸盐矿物	liàn guī suān yán kuàng wù	1
+硫代酸盐矿物	liú dài suān yán kuàng wù	1
+鹿寨香桥岩溶	lù zhài xiāng qiáo yán róng	1
+铝硅酸盐矿物	lǚ guī suān yán kuàng wù	1
+绿色凝灰岩组	lǜ sè níng huī yán zǔ	1
+冒纳凯阿火山	mào nà kǎi ā huǒ shān	1
+冒纳凯亚火山	mào nà kǎi yà huǒ shān	1
+茂纳凯亚火山	mào nà kǎi yà huǒ shān	1
+冒纳罗亚火山	mào nà luó yà huǒ shān	1
+茂纳洛亚火山	mào nà luò yà huǒ shān	1
+煤层地质基础	méi céng dì zhì jī chǔ	1
+煤田地质勘探	méi tián dì zhì kān tàn	1
+木里灰岩黄芩	mù lǐ huī yán huáng qín	1
+南石灰岩山脉	nán shí huī yán shān mài	1
+内力地质作用	nèi lì dì zhì zuò yòng	1
+凝灰火山渣锥	níng huī huǒ shān zhā zhuī	1
+凝灰质巨砾岩	níng huī zhì jù lì yán	1
+片麻状花岗岩	piàn má zhuàng huā gǎng yán	1
+普通球粒陨石	pǔ tōng qiú lì yǔn shí	1
+强力陨石魔法	qiáng lì yǔn shí mó fǎ	1
+亲花岗岩矿床	qīn huā gǎng yán kuàng chuáng	1
+球粒亮晶灰岩	qiú lì liàng jīng huī yán	1
+球粒泥晶灰岩	qiú lì ní jīng huī yán	1
+球粒微晶灰岩	qiú lì wēi jīng huī yán	1
+区域地质测量	qū yù dì zhì cè liáng	1
+区域地质调查	qū yù dì zhì diào chá	1
+区域地质构造	qū yù dì zhì gòu zào	1
+人为地质灾害	rén wéi de zhì zāi hài	1
+熔火山碎屑岩	róng huǒ shān suì xiè yán	1
+山洪地质灾害	shān hóng dì zhì zāi hài	1
+舍维留奇火山	shě wéi liú qí huǒ shān	1
+省地质测绘院	shěng dì zhì cè huì yuàn	1
+省煤田地质局	shěng méi tián dì zhì jú	1
+生物地质化学	shēng wù dì zhì huà xué	1
+生物堆积灰岩	shēng wù duī jī huī yán	1
+生物构架灰岩	shēng wù gòu jià huī yán	1
+生物骨架灰岩	shēng wù gǔ jià huī yán	1
+生物架构灰岩	shēng wù jià gòu huī yán	1
+生物建造灰岩	shēng wù jiàn zào huī yán	1
+生物泥晶灰岩	shēng wù ní jīng huī yán	1
+生物粘结灰岩	shēng wù nián jié huī yán	1
+生物碎屑灰岩	shēng wù suì xiè huī yán	1
+生物滞积灰岩	shēng wù zhì jī huī yán	1
+石磴子石灰岩	shí dèng zǐ shí huī yán	1
+石灰岩参差面	shí huī yán cēn cī miàn	1
+世界地质公园	shì jiè dì zhì gōng yuán	1
+世界地质奇观	shì jiè dì zhì qí guān	1
+石龙洞石灰岩	shí lóng dòng shí huī yán	1
+石油地质储量	shí yóu dì zhì chǔ liàng	1
+双硅酸盐矿物	shuāng guī suān yán kuàng wù	1
+水滑结晶灰岩	shuǐ huá jié jīng huī yán	1
+水文地质参数	shuǐ wén dì zhì cān shù	1
+水文地质勘察	shuǐ wén dì zhì kān chá	1
+水文地质勘查	shuǐ wén dì zhì kān chá	1
+水文地质手册	shuǐ wén dì zhì shǒu cè	1
+水文地质特征	shuǐ wén dì zhì tè zhēng	1
+水文地质条件	shuǐ wén dì zhì tiáo jiàn	1
+水文地质问题	shuǐ wén dì zhì wèn tí	1
+水文地质学家	shuǐ wén dì zhì xué jiā	1
+水文地质资料	shuǐ wén dì zhì zī liào	1
+水文地质钻探	shuǐ wén dì zhì zuān tàn	1
+水文工程地质	shuǐ wén gōng chéng dì zhì	1
+覃家庙石灰岩	tán jiā miào shí huī yán	1
+探明地质储量	tàn míng dì zhì chǔ liàng	1
+碳质球粒陨石	tàn zhì qiú lì yǔn shí	1
+天河板石灰岩	tiān hé bǎn shí huī yán	1
+同生成岩作用	tóng shēng chéng yán zuò yòng	1
+外力地质作用	wài lì dì zhì zuò yòng	1
+外力碎屑砾岩	wài lì suì xiè lì yán	1
+网硅酸盐矿物	wǎng guī suān yán kuàng wù	1
+微亮晶石灰岩	wēi liàng jīng shí huī yán	1
+五大连池火山	wǔ dà lián chí huǒ shān	1
+武汉地质学院	wǔ hàn dì zhì xué yuàn	1
+无化石石灰岩	wú huà shí shí huī yán	1
+吴家坪石灰岩	wú jiā píng shí huī yán	1
+西安地质学院	xī ān dì zhì xué yuàn	1
+夕拉科加陨石	xī lā kē jiā yǔn shí	1
+腺灰岩紫地榆	xiàn huī yán zǐ dì yú	1
+玄武质凝灰岩	xuán wǔ zhì níng huī yán	1
+岩溶倒虹吸管	yán róng dào hóng xī guǎn	1
+岩溶断块山地	yán róng duàn kuài shān dì	1
+岩溶断陷盆地	yán róng duàn xiàn pén dì	1
+岩溶含水地块	yán róng hán shuǐ dì kuài	1
+岩溶水之间无	yán róng shuǐ zhī jiān wú	1
+岩溶型风化壳	yán róng xíng fēng huà ké	1
+砚瓦山石灰岩	yàn wǎ shān shí huī yán	1
+杨柳岗石灰岩	yáng liǔ gǎng shí huī yán	1
+页硅酸盐矿物	yè guī suān yán kuàng wù	1
+冶金地质学院	yě jīn dì zhì xué yuàn	1
+野柳地质公园	yě liǔ dì zhì gōng yuán	1
+油气地质勘探	yóu qì dì zhì kān tàn	1
+原地生物灰岩	yuán dì shēng wù huī yán	1
+原始地质编录	yuán shǐ dì zhì biān lù	1
+原油地质储量	yuán yóu dì zhì chǔ liàng	1
+杂色灰岩鹪鹛	zá sè huī yán jiāo méi	1
+正斑花岗质岩	zhèng bān huā gǎng zhì yán	1
+滞后弧火山岩	zhì hòu hú huǒ shān yán	1
+竹叶状石灰岩	zhú yè zhuàng shí huī yán	1
+梓门桥石灰岩	zǐ mén qiáo shí huī yán	1
+自然地质灾害	zì rán de zhì zāi hài	1
+层状硅酸盐矿物	céng zhuàng guī suān yán kuàng wù	1
+超镁铁质岩分类	chāo měi tiě zhì yán fēn lèi	1
+纯橄无球粒陨石	chún gǎn wú qiú lì yǔn shí	1
+粗球粒玄武岩的	cū qiú lì xuán wǔ yán de	1
+岛状硅酸盐矿物	dǎo zhuàng guī suān yán kuàng wù	1
+低山沟谷型岩溶	dī shān gōu gǔ xíng yán róng	1
+地质学的类比法	dì zhì xué de lèi bǐ fǎ	1
+断块山地型岩溶	duàn kuài shān dì xíng yán róng	1
+断陷盆地型岩溶	duàn xiàn pén dì xíng yán róng	1
+峰丛谷地型岩溶	fēng cóng gǔ dì xíng yán róng	1
+峰丛洼地型岩溶	fēng cóng wā dì xíng yán róng	1
+峰林谷地型岩溶	fēng lín gǔ dì xíng yán róng	1
+峰林平原型岩溶	fēng lín píng yuán xíng yán róng	1
+富钙无球粒陨石	fù gài wú qiú lì yǔn shí	1
+橄辉无球粒陨石	gǎn huī wú qiú lì yǔn shí	1
+更长环斑花岗岩	gèng cháng huán bān huā gǎng yán	1
+孤峰波地型岩溶	gū fēng bō dì xíng yán róng	1
+古铜钙无粒陨石	gǔ tóng gài wú lì yǔn shí	1
+航空地质甸方法	háng kōng dì zhì diān fāng fǎ	1
+花岗岩化成矿说	huā gǎng yán huà chéng kuàng shuō	1
+环状硅酸盐矿物	huán zhuàng guī suān yán kuàng wù	1
+架状硅酸盐矿物	jià zhuàng guī suān yán kuàng wù	1
+链状硅酸盐矿物	liàn zhuàng guī suān yán kuàng wù	1
+贫钙无球粒陨石	pín gài wú qiú lì yǔn shí	1
+群状硅酸盐矿物	qún zhuàng guī suān yán kuàng wù	1
+热带季风型岩溶	rè dài jì fēng xíng yán róng	1
+钛辉无球粒陨石	tài huī wú qiú lì yǔn shí	1
+顽火无球粒陨石	wán huǒ wú qiú lì yǔn shí	1
+新疆煤田地质局	xīn jiāng méi tián dì zhì jú	1
+原始无球粒陨石	yuán shǐ wú qiú lì yǔn shí	1
+正长球粒霞霓岩	zhèng zhǎng qiú lì xiá ní yán	1
+紫苏斜长花岗岩	zǐ sū xié cháng huā gǎng yán	1
+自碎火成角砾岩	zì suì huǒ chéng jiǎo lì yán	1
+爆破角砾岩型铀矿	bào pò jiǎo lì yán xíng yóu kuàng	1
+北极地质研究所岩	běi jí dì zhì yán jiū suǒ yán	1
+含煤岩系成因类型	hán méi yán xì chéng yīn lèi xíng	1
+含煤岩系旋回结构	hán méi yán xì xuán huí jié gòu	1
+航空地质调查方法	háng kōng dì zhì diào chá fāng fǎ	1
+环境水文地质调查	huán jìng shuǐ wén dì zhì diào chá	1
+火山深成联合岩群	huǒ shān shēn chéng lián hé yán qún	1
+近海煤型含煤岩系	jìn hǎi méi xíng hán méi yán xì	1
+矿区水文地质条件	kuàng qū shuǐ wén dì zhì tiáo jiàn	1
+强斯型圆锥洗煤机	qiáng sī xíng yuán zhuī xǐ méi jī	1
+生物球粒亮晶灰岩	shēng wù qiú lì liàng jīng huī yán	1
+生物球粒泥晶灰岩	shēng wù qiú lì ní jīng huī yán	1
+地质资源与地质工程	dì zhì zī yuán yǔ dì zhì gōng chéng	1
