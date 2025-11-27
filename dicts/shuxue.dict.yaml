@@ -1,0 +1,10 @@
+# rime dictionary
+# encoding	utf-8
+#https://github.com/amzxyz/RIME-LMDG
+# ------数学词库-------
+---
+name: shuxue
+version: "LTS"
+sort: by_weight
+...
+紧复流形	jǐn fù liú xíng	34
