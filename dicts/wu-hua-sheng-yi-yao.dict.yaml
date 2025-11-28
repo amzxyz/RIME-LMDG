@@ -17,7 +17,6 @@ sort: by_weight
 氨基	ān jī	519
 胺基	àn jī	353
 氨解	ān jiě	201
-氨矿	ān kuàng	410
 胺类	àn lèi	407
 氨冷	ān lěng	201
 氨纶	ān lún	402
@@ -61,6 +60,7 @@ sort: by_weight
 苄醇	biàn chún	201
 卞醇	biàn chún	201
 苄腈	biàn jīng	201
+苄醚	biàn mí	201
 鳖酸	biē suān	201
 丙胺	bǐng àn	343
 并苯	bìng běn	201
@@ -80,35 +80,49 @@ sort: by_weight
 醇醚	chún mí	312
 醇钠	chún nà	201
 雌酮	cí tóng	313
+雌烷	cí wán	201
 粗苯	cū běn	309
 醋酸	cù suān	534
 醋酮	cù tóng	201
 哒嗪	dá qín	246
 单胺	dān àn	387
 氮酮	dàn tóng	201
+氮烯	dàn xī	201
+碲醚	dì mí	199
 碲酸	dì suān	201
 碘苯	diǎn běn	201
 碘醇	diǎn chún	201
 碘酸	diǎn suān	334
+碘烷	diǎn wán	211
 蝶啶	dié dìng	201
 丁胺	dīng àn	449
 丁苯	dīng běn	364
 丁醇	dīng chún	462
 丁酮	dīng tóng	348
 丁烯	dīng xī	457
+丁酰	dīng xiān	201
+杜烯	dù xī	201
 对胺	duì àn	201
+多烯	duō xī	201
 锇酸	é suān	201
 恶唑	è zuò	201
 蒽胺	ēn àn	201
 蒽啉	ēn lín	201
+蒽醛	ēn quán	201
 蒽酮	ēn tóng	201
 二苯	èr běn	396
 二醇	èr chún	420
 二氯	èr lǜ	418
+二醛	èr quán	201
+二炔	èr quē	199
 二酮	èr tóng	201
+二烯	èr xī	201
 二乙	èr yǐ	337
 二唑	èr zuò	201
 钒酸	fán suān	201
+芳醚	fāng mí	201
+芳烷	fāng wán	201
+菲醚	fēi mí	199
 肥酸	féi suān	201
 酚酶	fēn méi	201
 吩嗪	fēn qín	201
@@ -121,27 +135,41 @@ sort: by_weight
 庚胺	gēng àn	201
 庚醇	gēng chún	201
 庚腈	gēng jīng	201
+庚醛	gēng quán	201
+庚炔	gēng quē	201
 庚酸	gēng suān	248
 庚酮	gēng tóng	201
+庚烯	gēng xī	201
 谷氨	gǔ ān	261
 固醇	gù chún	473
 钴酶	gǔ méi	199
+冠醚	guān mí	282
 癸胺	guǐ àn	201
 癸苯	guǐ běn	201
 癸醇	guǐ chún	201
+癸醛	guǐ quán	201
+桂醛	guì quán	106
+癸炔	guǐ quē	201
 硅酸	guī suān	359
 癸酸	guǐ suān	280
 桂酸	guì suān	201
 硅酮	guī tóng	334
 癸酮	guǐ tóng	201
+癸烷	guǐ wán	201
+桧烷	guì wán	201
+癸烯	guǐ xī	273
 过醇	guò chún	201
 过氧	guò yǎng	393
 海胺	hǎi àn	201
 含氯	hán lǜ	405
 合酶	hé méi	366
 核酶	hé méi	293
+花烯	huā xī	201
+环醚	huán mí	199
 环酸	huán suān	201
 环酮	huán tóng	301
+环烷	huán wán	238
+环烯	huán xī	201
 磺胺	huáng àn	412
 黄酶	huáng méi	201
 磺酸	huáng suān	392
@@ -152,8 +180,11 @@ sort: by_weight
 己醇	jǐ chún	201
 己腈	jǐ jīng	201
 激酶	jī méi	461
+己醛	jǐ quán	201
+己炔	jǐ quē	201
 己酸	jǐ suān	289
 己酮	jǐ tóng	201
+己烯	jǐ xī	321
 甲胺	jiǎ àn	339
 甲苯	jiǎ běn	495
 甲醇	jiǎ chún	560
@@ -171,12 +202,17 @@ sort: by_weight
 聚苯	jù běn	240
 菊醇	jú chún	201
 咔唑	kā zuò	201
+蒈烯	kǎi xī	201
 崁酮	kàn tóng	201
+莰烷	kǎn wán	201
+莰烯	kǎn xī	201
 糠醇	kāng chún	201
+糠醛	kāng quán	303
 糠酸	kāng suān	276
 康唑	kāng zuò	250
 柯胺	kē àn	201
 枯胺	kū àn	201
+矿烷	kuàng wán	201
 奎胺	kuí àn	201
 喹啉	kuí lín	368
 醌醇	kūn chún	201
@@ -190,14 +226,19 @@ sort: by_weight
 联胺	lián àn	201
 联苯	lián běn	367
 联啶	lián dìng	201
+链炔	liàn quē	201
+链烷	liàn wán	201
 磷酸	lín suān	537
+磷烷	lín wán	201
 硫胺	liú àn	222
 硫醇	liú chún	396
 六氯	liù lǜ	201
 硫酶	liú méi	211
+硫羟	liú qiǎng	201
 硫氰	liú qíng	201
 硫酸	liú suān	570
 卤苯	lǔ běn	199
+螺烷	luó wán	201
 氯胺	lǜ àn	298
 滤氨	lǜ ān	201
 氯苯	lǜ běn	372
@@ -234,17 +275,31 @@ sort: by_weight
 钼酸	mù suān	244
 萘胺	nài àn	201
 萘啶	nài dìng	201
+萘醛	nài quán	201
 萘酸	nài suān	201
 铌酸	ní suān	201
+廿烷	niàn wán	201
+脲醛	niào quán	284
+尿烷	niào wán	201
 尿唑	niào zuò	201
 镍酶	niè méi	199
 苧酮	níng tóng	201
 哌啶	pài dìng	376
 哌嗪	pài qín	336
+蒎烷	pài wán	201
+蒎烯	pài xī	201
+盆烯	pén xī	201
+硼烷	péng wán	373
 硼唑	péng zuò	201
 七氯	qī lǜ	201
 羟胺	qiǎng àn	333
 羟腈	qiǎng jīng	201
+羟片	qiǎng piàn	201
+羟醛	qiǎng quán	334
+羟酸	qiǎng suān	201
+羟盐	qiǎng yán	201
+羟乙	qiǎng yǐ	185
+羟值	qiǎng zhí	201
 嗪蓝	qín lán	201
 氰胺	qíng àn	298
 氰白	qíng bái	201
@@ -257,14 +312,23 @@ sort: by_weight
 醛氨	quán ān	201
 醛醇	quán chún	246
 全酶	quán méi	201
+醛酸	quán suān	298
+醛糖	quán táng	201
 醛肟	quán wò	201
 炔醇	quē chún	201
+炔键	quē jiàn	201
+炔钠	quē nà	201
 炔酸	quē suān	211
+惹烯	rě xī	201
 壬胺	rén àn	201
 壬苯	rén běn	201
 壬醇	rén chún	201
+壬醛	rén quán	201
+壬炔	rén quē	201
 壬酸	rén suān	201
 壬酮	rén tóng	201
+壬烷	rén wán	201
+壬烯	rén xī	201
 乳胺	rǔ àn	201
 乳腈	rǔ jīng	201
 朊酶	ruǎn méi	201
@@ -278,6 +342,7 @@ sort: by_weight
 色胺	sè àn	383
 色酮	sè tóng	201
 沙啉	shā lín	201
+鲨烯	shā xī	286
 砷酸	shēn suān	345
 胂酸	shèn suān	201
 生酮	shēng tóng	474
@@ -286,20 +351,30 @@ sort: by_weight
 输氨	shū ān	201
 叔醇	shū chún	201
 双胍	shuāng guā	464
+双烯	shuāng xī	291
 四氯	sì lǜ	201
 酸胺	suān àn	201
 酸棕	suān zōng	201
 酸腙	suān zōng	201
+缩醛	suō quán	333
+索烃	suǒ tīng	201
 缩酮	suō tóng	201
 酞腈	tài jīng	201
 肽酶	tài méi	333
 酞嗪	tài qín	201
+酞醛	tài quán	201
 钛酸	tài suān	298
+碳炔	tàn quē	201
 钽酸	tǎn suān	201
+碳烯	tàn xī	201
 糖胺	táng àn	201
 糖酶	táng méi	201
+糖醛	táng quán	201
+桃醛	táo quán	201
 锑酸	tī suān	201
 铁酶	tiě méi	199
+萜烯	tiē xī	341
+烃相	tīng xiāng	201
 酮醇	tóng chún	201
 酮化	tóng huà	201
 酮基	tóng jī	201
@@ -316,26 +391,39 @@ sort: by_weight
 酮酯	tóng zhǐ	201
 脱氨	tuō ān	288
 脱氯	tuō lǜ	201
+脱烃	tuō tīng	201
+托烷	tuō wán	201
+烷撑	wán chēng	201
+烷氧	wán yǎng	201
 戊胺	wù àn	201
 无醇	wú chún	347
 戊醇	wù chún	315
 芴醇	wù chún	201
 戊腈	wù jīng	201
 五氯	wǔ lǜ	201
+戊醛	wù quán	201
+戊炔	wù quē	201
 戊酸	wù suān	336
 钨酸	wū suān	297
 戊酮	wù tóng	201
 芴酮	wù tóng	201
+戊烯	wù xī	287
 烯胺	xī àn	201
 洗氨	xǐ ān	201
 醯胺	xī àn	199
 烯醇	xī chún	411
+烯基	xī jī	211
+烯键	xī jiàn	201
+烯炔	xī quē	201
 矽酸	xī suān	398
 锡酸	xī suān	201
 硒酸	xī suān	201
 烯酮	xī tóng	373
 酰胺	xiān àn	460
+酰氟	xiān fú	201
+酰化	xiān huà	353
 酰氯	xiān lǜ	383
+酰脲	xiān niào	201
 香酮	xiāng tóng	201
 硝酸	xiāo suān	514
 硝酮	xiāo tóng	201
@@ -343,12 +431,19 @@ sort: by_weight
 辛胺	xīn àn	201
 辛醇	xīn chún	273
 锌酶	xīn méi	199
+辛醛	xīn quán	201
+辛炔	xīn quē	201
 锌酸	xīn suān	201
 辛酮	xīn tóng	201
+辛烯	xīn xī	201
 雄酮	xióng tóng	201
+雄烷	xióng wán	201
 溴苯	xiù běn	353
+溴醛	xiù quán	201
 溴酸	xiù suān	297
+戌烷	xū wán	201
 血氨	xuè ān	257
+穴醚	xué mí	201
 亚胺	yà àn	392
 吖嗪	yā qín	201
 盐酸	yán suān	571
@@ -363,6 +458,7 @@ sort: by_weight
 异腈	yì jīng	201
 乙脒	yǐ mǐ	201
 乙嗪	yǐ qín	201
+蚁醛	yǐ quán	201
 乙烯	yǐ xī	669
 银氨	yín ān	201
 茚醇	yìn chún	201
@@ -376,6 +472,7 @@ sort: by_weight
 油醇	yóu chún	201
 油腈	yóu jīng	201
 铀酸	yóu suān	201
+铀酰	yóu xiān	201
 余氯	yú lǜ	436
 原醇	yuán chún	201
 晕苯	yūn běn	201
@@ -388,8 +485,11 @@ sort: by_weight
 仲胺	zhòng àn	294
 仲醇	zhòng chún	201
 仲氰	zhòng qíng	201
+仲醛	zhòng quán	201
 苎酮	zhù tóng	201
+苎烯	zhù xī	201
 梓醇	zǐ chún	201
+总醛	zǒng quán	201
 组胺	zǔ àn	425
 阿苯哥	ā běn gē	70
 吖啶橙	ā dìng chéng	56
@@ -476,9 +576,13 @@ sort: by_weight
 白胺酸	bái àn suān	88
 白蛋白	bái dàn bái	250
 柏木醇	bǎi mù chún	100
+柏木烯	bǎi mù xī	70
+白三烯	bái sān xī	182
 白酮酸	bái tóng suān	85
 半苯胺	bàn běn àn	130
 半胱胺	bàn guāng àn	159
+半瞬烯	bàn shùn xī	69
+半缩醛	bàn suō quán	96
 半缩酮	bàn suō tóng	86
 宝丹酮	bǎo dān tóng	92
 保加烷	bǎo jiā wán	97
@@ -642,6 +746,7 @@ sort: by_weight
 苄环烷	biàn huán wán	100
 苄基氯	biàn jī lǜ	78
 苄基酮	biàn jī tóng	69
+苄甲醚	biàn jiǎ mí	58
 苄硫醇	biàn liú chún	73
 变位酶	biàn wèi méi	108
 变旋酶	biàn xuán méi	107
@@ -661,13 +766,16 @@ sort: by_weight
 丙吡胺	bǐng bǐ àn	670
 丙草胺	bǐng cǎo àn	64
 冰醋酸	bīng cù suān	184
+丙搭烯	bǐng dā xī	81
 病毒酶	bìng dú méi	57
 病毒唑	bìng dú zuò	163
 丙二胺	bǐng èr àn	100
 并二苯	bìng èr běn	90
 丙二醇	bǐng èr chún	194
 丙二腈	bǐng èr jīng	86
+丙二醛	bǐng èr quán	136
 丙二酮	bǐng èr tóng	60
+丙二烯	bǐng èr xī	124
 丙谷胺	bǐng gǔ àn	114
 丙环唑	bǐng huán zuò	73
 丙磺酸	bǐng huáng suān	76
@@ -677,12 +785,18 @@ sort: by_weight
 丙利酮	bǐng lì tóng	91
 并六苯	bìng liù běn	86
 丙硫醇	bǐng liú chún	89
+丙硫醛	bǐng liú quán	83
 丙硫酮	bǐng liú tóng	74
 丙咪嗪	bǐng mī qín	153
 丙米嗪	bǐng mǐ qín	100
 丙咪唑	bǐng mǐ zuò	125
+冰片烯	bīng piàn xī	78
 并七苯	bìng qī běn	89
+丙醛酸	bǐng quán suān	86
 丙炔醇	bǐng quē chún	76
+丙炔基	bǐng quē jī	66
+丙炔锂	bǐng quē lǐ	94
+丙炔醛	bǐng quē quán	81
 丙炔酸	bǐng quē suān	59
 并三苯	bìng sān běn	91
 丙三醇	bǐng sān chún	158
@@ -697,8 +811,11 @@ sort: by_weight
 丙戊酸	bǐng wù suān	146
 丙硒醇	bǐng xī chún	92
 丙烯醇	bǐng xī chún	76
+丙烯基	bǐng xī jī	122
 丙烯腈	bǐng xī jīng	176
 丙稀腈	bǐng xī jīng	73
+丙烯醛	bǐng xī quán	162
+丙烯酸	bǐng xī suān	272
 丙烯酮	bǐng xī tóng	111
 丙矽烷	bǐng xī wán	78
 丙酰胺	bǐng xiān àn	89
@@ -722,6 +839,7 @@ sort: by_weight
 草氨酸	cǎo ān suān	85
 草醋酸	cǎo cù suān	85
 草丁膦	cǎo dīng lìn	69
+草莓醛	cǎo méi quán	100
 草酸锕	cǎo suān ā	88
 草酸铵	cǎo suān ǎn	92
 草酸钡	cǎo suān bèi	53
@@ -776,17 +894,21 @@ sort: by_weight
 草酰胺	cǎo xiān àn	71
 草酰氟	cǎo xiān fú	59
 草酰氯	cǎo xiān lǜ	120
+草酰溴	cǎo xiān xiù	75
 侧柏酮	cè bǎi tóng	110
 茶氨酸	chá ān suān	206
 查耳酮	chá ěr tóng	132
-产甲烷	chǎn jiǎ wán	122
 长春胺	cháng chūn àn	100
 肠二醇	cháng èr chún	78
+长叶烯	cháng yè xī	68
 超盐酸	chāo yán suān	53
 橙花醇	chéng huā chún	116
+橙花醛	chéng huā quán	78
+豉虫醛	chǐ chóng quán	93
 齿孔醇	chǐ kǒng chún	95
 赤藓醇	chì xiǎn chún	88
 虫草酸	chóng cǎo suān	108
+虫酰肼	chóng xiān jǐng	87
 重组酶	chóng zǔ méi	108
 串联酶	chuàn lián méi	108
 川芎嗪	chuān xiōng qín	140
@@ -817,6 +939,7 @@ sort: by_weight
 雌三醇	cí sān chún	151
 雌四醇	cí sì chún	85
 刺酮碱	cì tóng jiǎn	144
+刺桐烯	cì tóng xī	70
 次硝酸	cì xiāo suān	86
 次溴酸	cì xiù suān	104
 醋氨酚	cù ān fēn	110
@@ -854,7 +977,9 @@ sort: by_weight
 大麻醇	dà má chún	92
 大马酮	dà mǎ tóng	71
 达玛烷	dá mǎ wán	62
+达玛烯	dá mǎ xī	94
 达那唑	dá nà zuò	107
+大蒜烯	dà suàn xī	82
 大乙烯	dà yǐ xī	88
 戴醇士	dài chún shì	88
 代谢酶	dài xiè méi	166
@@ -921,8 +1046,8 @@ sort: by_weight
 丹参酮	dān shēn tóng	165
 氮十四	dàn shí sì	50
 氮酸酯	dàn suān zhǐ	90
-氮铁矿	dàn tiě kuàng	59
 胆烷酸	dǎn wán suān	63
+单烯烃	dān xī tīng	85
 单硝酸	dān xiāo suān	136
 氮胸苷	dàn xiōng gān	76
 氮循环	dàn xún huán	158
@@ -938,6 +1063,7 @@ sort: by_weight
 氮杂䓬	dàn zá zhuó	92
 胆甾醇	dǎn zāi chún	106
 胆甾烷	dǎn zāi wán	66
+胆甾烯	dǎn zāi xī	93
 氮转化	dàn zhuǎn huà	24
 党还醇	dǎng hái chún	88
 氘代苯	dāo dài běn	96
@@ -960,6 +1086,7 @@ sort: by_weight
 碘丙酮	diǎn bǐng tóng	84
 碘丙烷	diǎn bǐng wán	88
 碘代苯	diǎn dài běn	97
+碘代烃	diǎn dài tīng	66
 碘代烷	diǎn dài wán	66
 碘丁烷	diǎn dīng wán	89
 淀粉酶	diàn fěn méi	222
@@ -971,6 +1098,7 @@ sort: by_weight
 碘化氰	diǎn huà qíng	50
 碘己烷	diǎn jǐ wán	61
 碘甲苯	diǎn jiǎ běn	83
+碘甲醚	diǎn jiǎ mí	78
 碘甲烷	diǎn jiǎ wán	165
 碘帕醇	diǎn pà chún	100
 碘酸铵	diǎn suān ǎn	74
@@ -1037,17 +1165,24 @@ sort: by_weight
 啶虫脒	dìng chóng mǐ	98
 丁醇钠	dīng chún nà	90
 丁醇钛	dīng chún tài	93
+丁搭烯	dīng dā xī	52
 丁二胺	dīng èr àn	99
 丁二醇	dīng èr chún	180
+丁二醛	dīng èr quán	68
+丁二炔	dīng èr quē	67
 丁二酮	dīng èr tóng	124
 丁硅烷	dīng guī wán	75
 丁磺酸	dīng huáng suān	72
 丁基苯	dīng jī běn	96
 丁基氯	dīng jī lǜ	161
+丁基醚	dīng jī mí	135
 丁腈胶	dīng jīng jiāo	330
 丁硫醇	dīng liú chún	87
 丁硼烷	dīng péng wán	85
+丁醛酸	dīng quán suān	67
+丁醛糖	dīng quán táng	95
 丁炔醇	dīng quē chún	759
+丁炔锂	dīng quē lǐ	71
 丁炔酸	dīng quē suān	61
 丁酮酸	dīng tóng suān	100
 丁酮糖	dīng tóng táng	68
@@ -1062,11 +1197,13 @@ sort: by_weight
 丁烯酮	dīng xī tóng	63
 丁酰苯	dīng xiān běn	97
 丁酰氯	dīng xiān lǜ	95
+丁香醛	dīng xiāng quán	73
 董道醇	dǒng dào chún	83
 董二醇	dǒng èr chún	91
 董元醇	dǒng yuán chún	86
 豆固醇	dòu gù chún	404
 豆固烷	dòu gù wán	65
+豆蔻醚	dòu kòu mí	82
 豆甾醇	dòu zāi chún	384
 豆甾烷	dòu zāi wán	65
 毒草胺	dú cǎo àn	58
@@ -1079,15 +1216,18 @@ sort: by_weight
 钝叶醇	dùn yè chún	63
 多巴胺	duō bā àn	286
 多氟多	duō fú duō	270
+多核烃	duō hé tīng	85
 多聚酶	duō jù méi	116
 多磷酸	duō lín suān	75
 多氯萘	duō lǜ nài	72
 多羟醇	duō qiǎng chún	77
+多烯酸	duō xī suān	89
 多效唑	duō xiào zuò	124
 多元醇	duō yuán chún	188
 多种酶	duō zhǒng méi	200
 𫫇噻烷	ě sāi wán	98
 莪术酮	é shù tóng	64
+莪术烯	é shù xī	87
 锇酸酐	é suān gān	96
 锇酸钾	é suān jiǎ	69
 恶唑啉	è zuò lín	112
@@ -1098,6 +1238,7 @@ sort: by_weight
 恩氟醚	ēn fú mí	48
 恩氟烷	ēn fú wán	7
 蒽甲醇	ēn jiǎ chún	97
+蒽甲醛	ēn jiǎ quán	86
 蒽酮紫	ēn tóng zǐ	82
 二氨基	èr ān jī	164
 二胺脲	èr àn niào	78
@@ -1115,17 +1256,20 @@ sort: by_weight
 二吡啶	èr bǐ dìng	84
 二苄胺	èr biàn àn	97
 二丙胺	èr bǐng àn	85
+二丙醚	èr bǐng mí	81
 二氮嗪	èr dàn qín	100
 二氮芴	èr dàn wù	145
 二氮烯	èr dàn xī	96
 二氮䓬	èr dàn zhuó	53
 二碘苯	èr diǎn běn	75
 二丁胺	èr dīng àn	67
+二丁醚	èr dīng mí	85
 二恶烷	èr è wán	160
 二㗁烷	èr è wán	78
 二氟胺	èr fú àn	55
 二氟苯	èr fú běn	73
 二甘醇	èr gān chún	150
+二硅烯	èr guī xī	92
 二磺酸	èr huáng suān	83
 二级胺	èr jí àn	72
 二级醇	èr jí chún	81
@@ -1133,12 +1277,16 @@ sort: by_weight
 二甲苯	èr jiǎ běn	240
 二甲基	èr jiǎ jī	260
 二甲膦	èr jiǎ lìn	80
+二甲醚	èr jiǎ mí	187
+二甲醛	èr jiǎ quán	93
 二甲酮	èr jiǎ tóng	93
 二苦胺	èr kǔ àn	80
 二磷酸	èr lín suān	186
 二膦酸	èr lìn suān	86
 二膦烷	èr lìn wán	84
 二磷烷	èr lín wán	70
+二磷烯	èr lín xī	65
+二硫醚	èr liú mí	79
 二卤苯	èr lǔ běn	66
 二氯胺	èr lǜ àn	100
 二氯苯	èr lǜ běn	150
@@ -1147,12 +1295,17 @@ sort: by_weight
 二氯三	èr lǜ sān	60
 二氯双	èr lǜ shuāng	100
 二氯松	èr lǜ sōng	83
+二羟基	èr qiǎng jī	200
 二嗪磷	èr qín lín	68
 二嗪农	èr qín nóng	149
 二氰基	èr qíng jī	67
+二氢醚	èr qīng mí	87
+二醛基	èr quán jī	63
 二噻嗪	èr sāi qín	38
 二十烷	èr shí wán	76
+二十烯	èr shí xī	89
 二肽酶	èr tài méi	136
+二烯烃	èr xī tīng	85
 二烯酮	èr xī tóng	95
 二酰氯	èr xiān lǜ	87
 二溴苯	èr xiù běn	77
@@ -1168,6 +1321,7 @@ sort: by_weight
 二乙酸	èr yǐ suān	130
 二乙酯	èr yǐ zhǐ	169
 二元醇	èr yuán chún	123
+二元醛	èr yuán quán	72
 发光氨	fā guāng ān	99
 发光胺	fā guāng àn	83
 发酵酶	fā jiào méi	84
@@ -1175,6 +1329,7 @@ sort: by_weight
 范醇敬	fàn chún jìng	86
 钒碘酸	fán diǎn suān	60
 番松醇	fān sōng chún	79
+番松烯	fān sōng xī	98
 钒酸铵	fán suān ǎn	53
 钒酸铋	fán suān bì	95
 钒酸根	fán suān gēn	94
@@ -1182,26 +1337,33 @@ sort: by_weight
 钒酸钕	fán suān nǚ	94
 钒酸盐	fán suān yán	98
 钒酸钇	fán suān yǐ	86
+芳烃类	fāng tīng lèi	136
 方酰胺	fāng xiān àn	63
 芳香胺	fāng xiāng àn	179
 芳香醇	fāng xiāng chún	75
 芳香酶	fāng xiāng méi	102
+芳香醚	fāng xiāng mí	57
+芳香醛	fāng xiāng quán	118
 芳香酮	fāng xiāng tóng	79
 芳樟醇	fāng zhāng chún	146
 方子醇	fāng zi chún	100
 芳族酮	fāng zú tóng	80
 蜚蠊酮	fěi lián tóng	75
 废硫酸	fèi liú suān	137
+非那烯	fēi nà xī	61
 非司酮	fēi sī tóng	59
+非烃类	fēi tīng lèi	52
 酚丁胺	fēn dīng àn	84
 酚甲烷	fēn jiǎ wán	78
 分解酶	fēn jiě méi	189
 分泌酶	fēn mì méi	60
+酚羟基	fēn qiǎng jī	144
 吩噻嗪	fēn sāi qín	142
 酚噻嗪	fēn sāi qín	63
 分散酶	fēn sǎn méi	129
 粪甾烷	fèn zāi wán	75
 凤梨酶	fèng lí méi	56
+枫烯玖	fēng xī jiǔ	69
 佛波醇	fó bō chún	90
 佛尔酮	fó ěr tóng	89
 麸胺酸	fū àn suān	139
@@ -1328,6 +1490,7 @@ sort: by_weight
 氟康唑	fú kāng zuò	197
 氟喹酮	fú kuí tóng	56
 氟乐灵	fú lè líng	78
+福乐烯	fú lè xī	67
 氟利昂	fú lì áng	381
 氟里昂	fú lǐ áng	381
 氟锂铍	fú lǐ pī	79
@@ -1356,7 +1519,6 @@ sort: by_weight
 氟色胺	fú sè àn	91
 氟沙星	fú shā xīng	71
 氟试剂	fú shì jì	65
-氟铈矿	fú shì kuàng	90
 氟鼠灵	fú shǔ líng	63
 辅舒酮	fǔ shū tóng	82
 氟树脂	fú shù zhī	111
@@ -1370,8 +1532,10 @@ sort: by_weight
 氟锑酸	fú tī suān	140
 氟涂层	fú tú céng	94
 氟涂料	fú tú liào	88
+富瓦烯	fù wǎ xī	99
 氟污染	fú wū rǎn	67
 氟戊烷	fú wù wán	97
+富烯类	fù xī lèi	84
 氟西泮	fú xī pàn	157
 氟硒酸	fú xī suān	72
 氟西汀	fú xī tīng	190
@@ -1400,10 +1564,13 @@ sort: by_weight
 甘露醇	gān lù chún	210
 甘遂烷	gān suì wán	73
 肝药酶	gān yào méi	112
+甘油醚	gān yóu mí	145
+甘油醛	gān yóu quán	144
 高纯氨	gāo chún ān	68
 高纯氯	gāo chún lǜ	84
 高醇新	gāo chún xīn	69
 高碘酸	gāo diǎn suān	138
+高钒酰	gāo fán xiān	96
 高氟水	gāo fú shuǐ	84
 睾固酮	gāo gù tóng	95
 高级醇	gāo jí chún	115
@@ -1445,10 +1612,12 @@ sort: by_weight
 铬酰氟	gè xiān fú	44
 铬酰氯	gè xiān lǜ	73
 各种酶	gè zhǒng méi	179
+庚搭烯	gēng dā xī	93
 庚二醇	gēng èr chún	87
 庚七醇	gēng qī chún	69
 庚齐啶	gēng qí dìng	83
 庚三酮	gēng sān tóng	63
+庚三烯	gēng sān xī	98
 庚酸酯	gēng suān zhǐ	66
 庚酮糖	gēng tóng táng	100
 庚酰氯	gēng xiān lǜ	92
@@ -1478,12 +1647,16 @@ sort: by_weight
 胱氨酸	guāng ān suān	248
 胱胺酸	guāng àn suān	152
 光解酶	guāng jiě méi	97
+胱硫醚	guāng liú mí	68
 光甾醇	guāng zāi chún	64
 癸二醇	guǐ èr chún	73
+癸二烯	guǐ èr xī	98
 硅基苯	guī jī běn	86
 桂利嗪	guì lì qín	90
+桂醚酯	guì mí zhǐ	95
 桧木醇	guì mù chún	56
 癸硼烷	guǐ péng wán	82
+桂皮醛	guì pí quán	76
 硅酸铋	guī suān bì	73
 硅酸钙	guī suān gài	144
 硅酸锆	guī suān gào	78
@@ -1502,6 +1675,9 @@ sort: by_weight
 硅酸酯	guī suān zhǐ	88
 硅酮胶	guī tóng jiāo	79
 硅烷醇	guī wán chún	56
+癸五炔	guǐ wǔ quē	94
+癸烯醛	guǐ xī quán	98
+癸烯酸	guǐ xī suān	95
 癸酰氯	guǐ xiān lǜ	85
 硅氧烷	guī yǎng wán	179
 硅杂苯	guī zá běn	76
@@ -1529,6 +1705,8 @@ sort: by_weight
 含氰苷	hán qíng gān	130
 含乙醇	hán yǐ chún	140
 含有氨	hán yǒu ān	98
+蒿甲醚	hāo jiǎ mí	139
+蒿乙醚	hāo yǐ mí	67
 核倍氨	hé bèi ān	66
 合成氨	hé chéng ān	194
 合成酶	hé chéng méi	210
@@ -1548,16 +1726,23 @@ sort: by_weight
 很香醇	hěn xiāng chún	55
 红蛋白	hóng dàn bái	94
 红杉醇	hóng shān chún	79
+红萤烯	hóng yíng xī	97
 红藻酸	hóng zǎo suān	75
+虎刺醛	hǔ cì quán	58
+胡椒醛	hú jiāo quán	68
 葫芦烷	hú lu wán	95
+琥珀醛	hǔ pò quán	94
+琥珀酰	hǔ pò xiān	98
 呼吸酶	hū xī méi	114
 化合物	huà hé wù	335
 花生醇	huā shēng chún	92
 怀特酮	huái tè tóng	69
 环丙醇	huán bǐng chún	83
 环丙腈	huán bǐng jīng	80
+环丙炔	huán bǐng quē	82
 环丙酮	huán bǐng tóng	87
 环丙烷	huán bǐng wán	180
+环丙烯	huán bǐng xī	50
 环丁胺	huán dīng àn	72
 环丁醇	huán dīng chún	96
 环丁酮	huán dīng tóng	98
@@ -1567,17 +1752,24 @@ sort: by_weight
 环二氧	huán èr yǎng	61
 环庚酮	huán gēng tóng	71
 环庚烷	huán gēng wán	82
+环庚烯	huán gēng xī	73
 环癸醇	huán guǐ chún	98
 环癸烷	huán guǐ wán	71
+环癸烯	huán guǐ xī	91
 环化酶	huán huà méi	127
 环己胺	huán jǐ àn	397
 环己醇	huán jǐ chún	130
 环己酮	huán jǐ tóng	153
 环己烷	huán jǐ wán	197
+环己烯	huán jǐ xī	157
 环磷酸	huán lín suān	161
 环氯胍	huán lǜ guā	83
 环嗪酮	huán qín tóng	52
+环炔烃	huán quē tīng	57
+环壬炔	huán rén quē	88
 环壬烷	huán rén wán	89
+环壬烯	huán rén xī	68
+环烃类	huán tīng lèi	68
 环烷基	huán wán jī	94
 环烷酸	huán wán suān	100
 环烷烃	huán wán tīng	157
@@ -1586,8 +1778,12 @@ sort: by_weight
 环戊醇	huán wù chún	456
 环戊酮	huán wù tóng	96
 环戊烷	huán wù wán	140
+环戊烯	huán wù xī	148
+环烯烃	huán xī tīng	73
+环辛炔	huán xīn quē	96
 环辛酮	huán xīn tóng	50
 环辛烷	huán xīn wán	86
+环辛烯	huán xīn xī	94
 环氧酶	huán yǎng méi	92
 环乙胺	huán yǐ àn	86
 还原酶	huán yuán méi	214
@@ -1616,8 +1812,14 @@ sort: by_weight
 黄烷酮	huáng wán tóng	144
 磺酰胺	huáng xiān àn	150
 磺酰氟	huáng xiān fú	44
+磺酰基	huáng xiān jī	68
+磺酰卤	huáng xiān lǔ	61
 磺酰氯	huáng xiān lǜ	71
+磺酰脲	huáng xiān niào	80
+黄樟醚	huáng zhāng mí	83
 茴香胺	huí xiāng àn	89
+茴香醚	huí xiāng mí	118
+茴香醛	huí xiāng quán	79
 回旋酶	huí xuán méi	97
 或苯液	huò běn yè	146
 火烷布	huǒ wán bù	88
@@ -1630,23 +1832,28 @@ sort: by_weight
 己二胺	jǐ èr àn	607
 己二醇	jǐ èr chún	130
 己二腈	jǐ èr jīng	95
+己二醛	jǐ èr quán	90
 己二酮	jǐ èr tóng	100
+己二烯	jǐ èr xī	86
 激活酶	jī huó méi	98
 己六醇	jǐ liù chún	76
 吉马酮	jí mǎ tóng	50
 激酶类	jī méi lèi	54
 己脒定	jǐ mǐ dìng	54
 己硼烷	jǐ péng wán	69
+己醛糖	jǐ quán táng	81
 己酸酯	jǐ suān zhǐ	75
 己糖胺	jǐ táng àn	78
 己酮糖	jǐ tóng táng	84
 季戊烷	jì wù wán	68
+己烯酯	jǐ xī zhǐ	70
 甲氨基	jiǎ ān jī	119
 甲胺磷	jiǎ àn lín	144
 甲苯胺	jiǎ běn àn	71
 甲苯酚	jiǎ běn fēn	24
 甲苯基	jiǎ běn jī	110
 甲吡唑	jiǎ bǐ zuò	95
+甲丙醚	jiǎ bǐng mí	85
 甲草胺	jiǎ cǎo àn	69
 甲醇厂	jiǎ chún chǎng	71
 甲醇钾	jiǎ chún jiǎ	74
@@ -1655,8 +1862,10 @@ sort: by_weight
 甲醇钠	jiǎ chún nà	128
 甲醇盐	jiǎ chún yán	74
 甲碲醇	jiǎ dì chún	64
+甲丁醚	jiǎ dīng mí	96
 甲二胺	jiǎ èr àn	75
 甲二醇	jiǎ èr chún	95
+甲二醛	jiǎ èr quán	77
 甲氟喹	jiǎ fú kuí	78
 加氟酌	jiā fú zhuó	60
 甲睾酮	jiǎ gāo tóng	88
@@ -1667,8 +1876,11 @@ sort: by_weight
 甲基苯	jiǎ jī běn	384
 甲基膦	jiǎ jī lìn	81
 甲基氯	jiǎ jī lǜ	128
+甲基醚	jiǎ jī mí	92
 甲喹酮	jiǎ kuí tóng	78
 甲硫醇	jiǎ liú chún	432
+甲硫醚	jiǎ liú mí	61
+甲硫醛	jiǎ liú quán	100
 甲硫肟	jiǎ liú wò	74
 甲萘胺	jiǎ nài àn	77
 茄尼醇	jiā ní chún	168
@@ -1676,19 +1888,24 @@ sort: by_weight
 甲铅烷	jiǎ qiān wán	99
 加氢苯	jiā qīng běn	96
 甲氰咪	jiǎ qíng mī	92
+甲炔基	jiǎ quē jī	65
 甲三醇	jiǎ sān chún	86
 甲四醇	jiǎ sì chún	70
 甲酸氯	jiǎ suān lǜ	63
 甲酸锰	jiǎ suān měng	88
+甲缩醛	jiǎ suō quán	122
 甲烷冰	jiǎ wán bīng	59
 甲烷湖	jiǎ wán hú	97
 甲烷化	jiǎ wán huà	64
 甲烷菌	jiǎ wán jūn	108
 甲烷水	jiǎ wán shuǐ	71
 甲硒醇	jiǎ xī chún	69
+甲烯蓝	jiǎ xī lán	65
 甲锡烷	jiǎ xī wán	81
 甲酰胺	jiǎ xiān àn	210
 甲酰氟	jiǎ xiān fú	44
+甲酰基	jiǎ xiān jī	144
+甲酰肼	jiǎ xiān jǐng	92
 甲酰氰	jiǎ xiān qíng	84
 甲硝唑	jiǎ xiāo zuò	228
 甲亚胺	jiǎ yà àn	69
@@ -1696,16 +1913,19 @@ sort: by_weight
 甲氧苯	jiǎ yǎng běn	66
 加氧酶	jiā yǎng méi	148
 甲乙胺	jiǎ yǐ àn	54
+甲乙醚	jiǎ yǐ mí	68
 甲乙酮	jiǎ yǐ tóng	139
 甲孕酮	jiǎ yùn tóng	115
 甲锗烷	jiǎ zhě wán	70
 间酪胺	jiān lào àn	92
 间羟胺	jiān qiǎng àn	95
+姜黄烯	jiāng huáng xī	61
 降解酶	jiàng jiě méi	114
 降蒈烷	jiàng kǎi wán	68
 降莰烷	jiàng kǎn wán	95
 江口醇	jiāng kǒu chún	105
 江南醇	jiāng nán chún	98
+姜烯酚	jiāng xī fēn	67
 降纤酶	jiàng xiān méi	134
 将乙醇	jiāng yǐ chún	220
 姜油酮	jiāng yóu tóng	97
@@ -1715,6 +1935,7 @@ sort: by_weight
 焦磷酸	jiāo lín suān	188
 焦硫酸	jiāo liú suān	90
 角鲨烷	jiǎo shā wán	185
+角鲨烯	jiǎo shā xī	167
 胶原酶	jiāo yuán méi	136
 解氨酶	jiě ān méi	56
 结合酶	jié hé méi	98
@@ -1722,6 +1943,7 @@ sort: by_weight
 解旋酶	jiě xuán méi	170
 解脂酶	jiě zhī méi	118
 芥子醇	jiè zǐ chún	90
+芥子醛	jiè zǐ quán	85
 金道烷	jīn dào wán	60
 金刚烷	jīn gāng wán	165
 金属酶	jīn shǔ méi	130
@@ -1738,19 +1960,27 @@ sort: by_weight
 聚丁烯	jù dīng xī	105
 聚对苯	jù duì běn	98
 聚合酶	jù hé méi	254
+聚甲醛	jù jiǎ quán	148
+聚醚砜	jù mí fēng	68
+聚醚型	jù mí xíng	76
 聚凝胺	jù níng àn	93
 聚氰胺	jù qíng àn	39
+聚炔烃	jù quē tīng	64
 聚四氟	jù sì fú	66
+聚缩醛	jù suō quán	51
 聚维酮	jù wéi tóng	68
+聚烯烃	jù xī tīng	172
 聚酰胺	jù xiān àn	178
 聚亚胺	jù yà àn	86
-聚乙烯	jù yǐ xī	242
+聚乙炔	jù yǐ quē	145
 卡达烷	kǎ dá wán	87
 咖啡醇	kā fēi chún	92
+咖啡醛	kā fēi quán	100
 卡西酮	kǎ xī tóng	138
 坎比醇	kǎn bǐ chún	67
 堪非醇	kān fēi chún	321
 坎利酮	kǎn lì tóng	59
+糠偶酰	kāng ǒu xiān	96
 糠酸酯	kāng suān zhǐ	83
 抗体酶	kàng tǐ méi	115
 抗组胺	kàng zǔ àn	204
@@ -1761,7 +1991,9 @@ sort: by_weight
 克酮酸	kè tóng suān	76
 口味醇	kǒu wèi chún	84
 苦氨酸	kǔ ān suān	69
+裤衩烯	kù chǎ xī	61
 苦基氯	kǔ jī lǜ	100
+枯茗醛	kū míng quán	85
 苦硝酸	kǔ xiāo suān	99
 宽叶啉	kuān yè lín	50
 宽缨酮	kuān yīng tóng	74
@@ -1783,6 +2015,7 @@ sort: by_weight
 来曲唑	lái qǔ zuò	134
 篮苯屿	lán běn yǔ	72
 蓝苯屿	lán běn yǔ	68
+榄香烯	lǎn xiāng xī	122
 莨菪醇	làng dàng chún	70
 莨菪烷	làng dàng wán	115
 酪氨醇	lào ān chún	94
@@ -1804,10 +2037,12 @@ sort: by_weight
 棱柱烷	léng zhù wán	64
 离胺酸	lí àn suān	86
 离氨酸	lí ān suān	78
+锂丙醛	lǐ bǐng quán	78
 立方烷	lì fāng wán	478
 利鲁唑	lì lǔ zuò	102
 利培酮	lì péi tóng	149
 恋氨纶	liàn ān lún	61
+联杯烯	lián bēi xī	96
 联苯胺	lián běn àn	428
 联苯酚	lián běn fēn	56
 联苯基	lián běn jī	100
@@ -1817,14 +2052,18 @@ sort: by_weight
 联吡啶	lián bǐ dìng	156
 联呲啶	lián cī dìng	65
 连蛋白	lián dàn bái	96
+连多烯	lián duō xī	87
 联氟螨	lián fú mǎn	78
 链激酶	liàn jī méi	128
 连接酶	lián jiē méi	192
 连结酶	lián jié méi	97
+联糠醛	lián kāng quán	85
 联嘧啶	lián mì dìng	97
 联噻唑	lián sāi zuò	89
 联三苯	lián sān běn	96
 链烷烃	liàn wán tīng	116
+链烯烃	liàn xī tīng	14
+联乙炔	lián yǐ quē	92
 链甾醇	liàn zāi chún	63
 亮氨酸	liàng ān suān	195
 亮胺酸	liàng àn suān	81
@@ -1897,13 +2136,16 @@ sort: by_weight
 磷酰胺	lín xiān àn	111
 磷酰氟	lín xiān fú	41
 磷酰氯	lín xiān lǜ	73
+磷酰溴	lín xiān xiù	54
 磷杂苯	lín zá běn	63
 磷脂酶	lín zhī méi	146
+铃兰醛	líng lán quán	91
 灵猫酮	líng māo tóng	88
 灵芝醇	líng zhī chún	59
 硫胺素	liú àn sù	200
 硫氨酸	liú ān suān	122
 硫苯酚	liú běn fēn	83
+硫丙醛	liú bǐng quán	66
 硫醇基	liú chún jī	66
 硫醇盐	liú chún yán	90
 硫醇酯	liú chún zhǐ	88
@@ -1920,6 +2162,7 @@ sort: by_weight
 六磷酸	liù lín suān	121
 六氯苯	liù lǜ běn	91
 硫嘌呤	liú piào lìng	96
+六羟基	liù qiǎng jī	88
 六氰合	liù qíng hé	142
 硫氰基	liú qíng jī	91
 硫氰酸	liú qíng suān	195
@@ -2003,8 +2246,11 @@ sort: by_weight
 硫酰胺	liú xiān àn	94
 硫酰氟	liú xiān fú	42
 硫酰氯	liú xiān lǜ	107
+硫酰脲	liú xiān niào	92
 六溴苯	liù xiù běn	76
 硫酯酶	liú zhǐ méi	85
+卤代醚	lǔ dài mí	99
+卤代烃	lǔ dài tīng	196
 卤代酮	lǔ dài tóng	97
 卤代烷	lǔ dài wán	157
 卤化氰	lǔ huà qíng	83
@@ -2013,6 +2259,7 @@ sort: by_weight
 卵蛋白	luǎn dàn bái	86
 络氨酸	luò ān suān	102
 螺桨烷	luó jiǎng wán	72
+罗勒烯	luó lè xī	88
 螺烷烃	luó wán tīng	74
 螺戊烷	luó wù wán	95
 螺旋酶	luó xuán méi	62
@@ -2036,6 +2283,7 @@ sort: by_weight
 氯丙烯	lǜ bǐng xī	128
 氯铂酸	lǜ bó suān	112
 氯草定	lǜ cǎo dìng	96
+葎草烯	lǜ cǎo xī	68
 氯测井	lǜ cè jǐng	59
 氯痤疮	lǜ cuó chuāng	105
 氯代氨	lǜ dài ān	64
@@ -2050,14 +2298,12 @@ sort: by_weight
 氯丁腈	lǜ dīng jīng	75
 氯丁酸	lǜ dīng suān	83
 氯丁烷	lǜ dīng wán	106
-氯钒矿	lǜ fán kuàng	97
 氯酚红	lǜ fēn hóng	78
 氯芬松	lǜ fēn sōng	76
 氯分子	lǜ fēn zǐ	104
 氯氟碳	lǜ fú tàn	122
 氯氟烃	lǜ fú tīng	158
 氯钙石	lǜ gài shí	79
-氯汞矿	lǜ gǒng kuàng	53
 氯硅烷	lǜ guī wán	136
 氯含量	lǜ hán liàng	139
 氯化锕	lǜ huà ā	97
@@ -2181,7 +2427,6 @@ sort: by_weight
 氯哌啶	lǜ pài dìng	57
 氯普胺	lǜ pǔ àn	134
 氯气弹	lǜ qì dàn	91
-氯铅矿	lǜ qiān kuàng	64
 氯噻嗪	lǜ sāi qín	114
 氯噻酮	lǜ sāi tóng	88
 氯色胺	lǜ sè àn	90
@@ -2222,7 +2467,6 @@ sort: by_weight
 氯酸铟	lǜ suān yīn	66
 氯梭曼	lǜ suō màn	78
 氯铜矾	lǜ tóng fán	89
-氯铜矿	lǜ tóng kuàng	76
 氯戊烷	lǜ wù wán	79
 铝矽酸	lǚ xī suān	99
 氯酰氟	lǜ xiān fú	54
@@ -2259,6 +2503,7 @@ sort: by_weight
 马乙烯	mǎ yǐ xī	55
 麦角胺	mài jiǎo àn	146
 麦角醇	mài jiǎo chún	74
+迈科烯	mài kē xī	75
 麦芽醇	mài yá chún	56
 螨蜱胺	mǎn pí àn	69
 莽草酸	mǎng cǎo suān	144
@@ -2268,6 +2513,7 @@ sort: by_weight
 酶蛋白	méi dàn bái	149
 酶工程	méi gōng chéng	422
 玫瑰醇	méi guī chún	94
+玫瑰醚	méi guī mí	71
 酶化学	méi huà xué	7
 酶家族	méi jiā zú	98
 美拉唑	měi lā zuò	150
@@ -2296,6 +2542,7 @@ sort: by_weight
 咪多吡	mī duō bǐ	83
 嘧菌酯	mì jūn zhǐ	81
 咪康唑	mī kāng zuò	169
+迷人醛	mí rén quán	65
 米氏酮	mǐ shì tóng	73
 咪鲜胺	mī xiān àn	79
 咪唑类	mǐ zuò lèi	157
@@ -2333,6 +2580,7 @@ sort: by_weight
 钼酸银	mù suān yín	87
 木糖醇	mù táng chún	230
 木酮糖	mù tóng táng	88
+牧夏烯	mù xià xī	82
 纳洛醇	nà luò chún	90
 纳洛酮	nà luò tóng	144
 纳米酶	nà mǐ méi	92
@@ -2342,8 +2590,12 @@ sort: by_weight
 萘氮芥	nài dàn jiè	93
 萘啶酸	nài dìng suān	88
 萘二胺	nài èr àn	67
+萘酚醚	nài fēn mí	81
 萘磺酸	nài huáng suān	116
 萘黄酮	nài huáng tóng	70
+萘基醚	nài jī mí	96
+萘甲醚	nài jiǎ mí	88
+萘甲醛	nài jiǎ quán	69
 萘满酮	nài mǎn tóng	56
 萘咪酮	nài mī tóng	59
 萘乙酮	nài yǐ tóng	85
@@ -2369,11 +2621,14 @@ sort: by_weight
 尿嘧啶	niào mì dìng	182
 脲嘧啶	niào mì dìng	90
 鸟嘌呤	niǎo piào lìng	228
+脲醛胶	niào quán jiāo	40
 尿素氮	niào sù dàn	202
 尿素酶	niào sù méi	140
 尿酸酶	niào suān méi	92
 尿酮体	niào tóng tǐ	150
 凝固酶	níng gù méi	122
+柠檬醛	níng méng quán	135
+柠檬烯	níng méng xī	149
 凝乳酶	níng rǔ méi	146
 凝血酶	níng xuè méi	172
 凝血烷	níng xuè wán	100
@@ -2404,6 +2659,7 @@ sort: by_weight
 潘必啶	pān bì dìng	98
 培他啶	péi tā dìng	100
 彭醇士	péng chún shì	79
+硼球烯	péng qiú xī	87
 硼烷氨	péng wán ān	96
 硼烷肼	péng wán jǐng	62
 硼吖嗪	péng yā qín	77
@@ -2442,18 +2698,35 @@ sort: by_weight
 七氟烷	qī fú wán	122
 歧化酶	qí huà méi	232
 七氯萘	qī lǜ nài	81
+羟铵盐	qiǎng ǎn yán	72
 羟苯酯	qiǎng běn zhǐ	91
+羟丙基	qiǎng bǐng jī	279
+羟胆矾	qiǎng dǎn fán	89
+羟丁基	qiǎng dīng jī	82
+羟丁酸	qiǎng dīng suān	128
+羟汞化	qiǎng gǒng huà	100
 羟钴胺	qiǎng gǔ àn	560
 羟化酶	qiǎng huà méi	170
 羟基胺	qiǎng jī àn	59
 羟基苯	qiǎng jī běn	160
+羟基菲	qiǎng jī fēi	66
+羟基化	qiǎng jī huà	168
+羟基醌	qiǎng jī kūn	85
+羟基脲	qiǎng jī niào	114
+羟基芘	qiǎng jī pí	50
+羟基醛	qiǎng jī quán	105
+羟基酸	qiǎng jī suān	147
 羟基酮	qiǎng jī tóng	110
+羟甲基	qiǎng jiǎ jī	178
 羟考酮	qiǎng kǎo tóng	162
 羟氯喹	qiǎng lǜ kuí	179
 羟哌酯	qiǎng pài zhǐ	84
 羟色胺	qiǎng sè àn	230
 羟肟酸	qiǎng wò suān	68
 羟亚胺	qiǎng yà àn	136
+羟乙基	qiǎng yǐ jī	142
+羟乙醛	qiǎng yǐ quán	61
+羟乙酸	qiǎng yǐ suān	71
 羟吲哚	qiǎng yǐn duǒ	89
 羟孕酮	qiǎng yùn tóng	130
 鞘氨醇	qiào ān chún	136
@@ -2493,6 +2766,7 @@ sort: by_weight
 氢氯酸	qīng lǜ suān	148
 青霉胺	qīng méi àn	157
 青霉烷	qīng méi wán	77
+青霉烯	qīng méi xī	145
 氰尿酸	qíng niào suān	134
 氢氰酸	qīng qíng suān	194
 氰酸铵	qíng suān ǎn	121
@@ -2512,7 +2786,6 @@ sort: by_weight
 巯嘌呤	qiú piào lìng	117
 去蛋白	qù dàn bái	119
 去甲基	qù jiǎ jī	138
-去甲醛	qù jiǎ quán	171
 去甲肾	qù jiǎ shèn	78
 屈螺酮	qū luó tóng	114
 去铁胺	qù tiě àn	32
@@ -2522,29 +2795,39 @@ sort: by_weight
 全氟醇	quán fú chún	60
 醛固醇	quán gù chún	89
 醛固酮	quán gù tóng	200
+醛合成	quán hé chéng	100
 醛和酮	quán hé tóng	89
 全氯萘	quán lǜ nài	71
 醛缩酶	quán suō méi	102
 醛糖胺	quán táng àn	84
+醛糖酸	quán táng suān	89
 醛亚胺	quán yà àn	84
 炔丙胺	quē bǐng àn	62
 炔丙醇	quē bǐng chún	86
+炔丙醛	quē bǐng quán	83
+炔草隆	quē cǎo lóng	90
 炔醇盐	quē chún yán	72
 炔雌醇	quē cí chún	156
+炔化物	quē huà wù	57
 炔诺酮	quē nuò tóng	160
 炔孕酮	quē yùn tóng	82
 群孕酮	qún yùn tóng	86
 人蛋白	rén dàn bái	108
 壬二醇	rén èr chún	74
+壬二烯	rén èr xī	97
 人工酶	rén gōng méi	80
+壬醛糖	rén quán táng	61
+壬四烯	rén sì xī	97
 壬酸铵	rén suān ǎn	79
 壬酸酯	rén suān zhǐ	79
 壬烷双	rén wán shuāng	96
+壬烯醛	rén xī quán	89
 溶解酶	róng jiě méi	159
 溶菌酶	róng jūn méi	189
 溶酶原	róng méi yuán	92
 溶栓酶	róng shuān méi	64
 肉桂醇	ròu guì chún	368
+肉桂醛	ròu guì quán	134
 肉桂酸	ròu guì suān	169
 乳蛋白	rǔ dàn bái	167
 如蛋白	rú dàn bái	132
@@ -2588,6 +2871,8 @@ sort: by_weight
 三氮唑	sān dàn zuò	183
 三碘苯	sān diǎn běn	82
 三叠氮	sān dié dàn	76
+三碟烯	sān dié xī	94
+三蝶烯	sān dié xī	93
 三恶烷	sān è wán	99
 三𫫇烷	sān ě wán	86
 三氟苯	sān fú běn	96
@@ -2610,6 +2895,7 @@ sort: by_weight
 三氯生	sān lǜ shēng	167
 三氯松	sān lǜ sōng	61
 三氯新	sān lǜ xīn	82
+三羟基	sān qiǎng jī	166
 三十烷	sān shí wán	85
 伞形酮	sǎn xíng tóng	99
 三溴苯	sān xiù běn	63
@@ -2631,6 +2917,7 @@ sort: by_weight
 鲨油醇	shā yóu chún	97
 鲨鱼烷	shā yú wán	76
 山椒醇	shān jiāo chún	97
+山榄烯	shān lǎn xī	83
 山梨醇	shān lí chún	172
 山嵛醇	shān yú chún	83
 山竹醇	shān zhú chún	415
@@ -2673,29 +2960,50 @@ sort: by_weight
 生物胺	shēng wù àn	83
 生物酶	shēng wù méi	198
 十八醇	shí bā chún	97
+十八醛	shí bā quán	88
+十八炔	shí bā quē	65
 十八烷	shí bā wán	204
+十八烯	shí bā xī	97
 蓍草酸	shī cǎo suān	87
 史醇甫	shǐ chún fǔ	74
 视蛋白	shì dàn bái	138
 施氮肥	shī dàn féi	156
 十二胺	shí èr àn	96
 十二醇	shí èr chún	94
+十二醛	shí èr quán	72
 十二烷	shí èr wán	154
 视黄醇	shì huáng chún	198
+视黄醛	shì huáng quán	152
 石灰氮	shí huī dàn	96
+十九炔	shí jiǔ quē	54
 十九烷	shí jiǔ wán	90
+十六醛	shí liù quán	82
+十六炔	shí liù quē	71
 十六烷	shí liù wán	128
+十六烯	shí liù xī	93
+莳萝醚	shí luó mí	100
 十氯酮	shí lǜ tóng	79
 石墨烷	shí mò wán	92
 十硼烷	shí péng wán	86
+十七醛	shí qī quán	91
 十七烷	shí qī wán	72
+十三炔	shí sān quē	67
 十三烷	shí sān wán	120
+十四炔	shí sì quē	94
 十四烷	shí sì wán	68
+十四烯	shí sì xī	64
+十五醛	shí wǔ quán	73
 十五烷	shí wǔ wán	79
 十一胺	shí yī àn	85
 十一醇	shí yī chún	67
+十一醛	shí yī quán	70
+十一炔	shí yī quē	339
 十一酮	shí yī tóng	91
 十一烷	shí yī wán	169
+十一烯	shí yī xī	93
+石油醚	shí yóu mí	156
+石油烃	shí yóu tīng	88
+石竹烯	shí zhú xī	86
 石梓醇	shí zǐ chún	51
 叔丁胺	shū dīng àn	66
 叔丁苯	shū dīng běn	65
@@ -2714,10 +3022,15 @@ sort: by_weight
 双氯芬	shuāng lǜ fēn	14
 双氰胺	shuāng qíng àn	292
 双糖酶	shuāng táng méi	105
+双烯体	shuāng xī tǐ	67
 双乙酮	shuāng yǐ tóng	86
+双乙酰	shuāng yǐ xiān	108
 水合酶	shuǐ hé méi	81
 水解酶	shuǐ jiě méi	196
+水芹烯	shuǐ qín xī	93
 水杨醇	shuǐ yáng chún	74
+水杨醛	shuǐ yáng quán	104
+水云烯	shuǐ yún xī	92
 丝氨醇	sī ān chún	93
 丝氨酸	sī ān suān	204
 丝胺酸	sī àn suān	65
@@ -2736,9 +3049,12 @@ sort: by_weight
 四联苯	sì lián běn	59
 四氯苯	sì lǜ běn	100
 四氯二	sì lǜ èr	408
+四羟基	sì qiǎng jī	73
 四伸苯	sì shēn běn	94
 四十烷	sì shí wán	90
 松柏醇	sōng bǎi chún	88
+松柏醛	sōng bǎi quán	62
+松柏烯	sōng bǎi xī	84
 松香烷	sōng xiāng wán	90
 松油醇	sōng yóu chún	117
 苏氨酸	sū ān suān	567
@@ -2751,6 +3067,7 @@ sort: by_weight
 缩氨酸	suō ān suān	112
 羧化酶	suō huà méi	144
 缩节胺	suō jié àn	66
+缩硫醛	suō liú quán	92
 缩硫酮	suō liú tóng	85
 羧酶体	suō méi tǐ	94
 羧肽酶	suō tài méi	88
@@ -2790,6 +3107,7 @@ sort: by_weight
 碳醯氯	tàn xī lǜ	89
 碳酰氟	tàn xiān fú	72
 碳酰氯	tàn xiān lǜ	64
+碳酰溴	tàn xiān xiù	85
 檀香醇	tán xiāng chún	100
 糖醇类	táng chún lèi	118
 糖蛋白	táng dàn bái	219
@@ -2798,6 +3116,7 @@ sort: by_weight
 糖苷酶	táng gān méi	176
 糖化酶	táng huà méi	120
 羰基氟	tāng jī fú	72
+糖醛酸	táng quán suān	188
 糖酮酸	táng tóng suān	60
 特胺灵	tè àn líng	56
 特氟龙	tè fú lóng	246
@@ -2822,7 +3141,11 @@ sort: by_weight
 呫吨酮	tiè dūn tóng	67
 铁氟龙	tiě fú lóng	131
 萜品醇	tiē pǐn chún	91
+萜品烯	tiē pǐn xī	98
 铁氰酸	tiě qíng suān	90
+烃比值	tīng bǐ zhí	72
+烃氧基	tīng yǎng jī	95
+烃源岩	tīng yuán yán	105
 铜氨丝	tóng ān sī	102
 酮啡诺	tóng fēi nuò	60
 酮睾酮	tóng gāo tóng	89
@@ -2841,6 +3164,7 @@ sort: by_weight
 酮戊酸	tóng wù suān	92
 酮血症	tóng xuè zhèng	113
 酮亚胺	tóng yà àn	66
+头孢烯	tóu bāo xī	94
 蜕皮酮	tuì pí tóng	54
 脱氨化	tuō ān huà	95
 脱氨基	tuō ān jī	72
@@ -2849,11 +3173,14 @@ sort: by_weight
 脱氮酌	tuō dàn zhuó	81
 托酚酮	tuō fēn tóng	83
 脱磷酸	tuō lín suān	98
+脱落醛	tuō luò quán	95
 托品酮	tuō pǐn tóng	104
 脱氢酶	tuō qīng méi	236
 脱水酶	tuō shuǐ méi	66
 脱羧酶	tuō suō méi	170
 脱烷基	tuō wán jī	84
+脱乙酰	tuō yǐ xiān	84
+瓦伦烯	wǎ lún xī	95
 外切酶	wài qiē méi	60
 外肽酶	wài tài méi	67
 外源酮	wài yuán tóng	59
@@ -2877,12 +3204,18 @@ sort: by_weight
 烷氧基	wán yǎng jī	153
 维胺酯	wéi àn zhǐ	105
 味醇厚	wèi chún hòu	155
+戊搭烯	wù dā xī	85
 无蛋白	wú dàn bái	78
 戊二胺	wù èr àn	89
 戊二醇	wù èr chún	58
 戊二腈	wù èr jīng	97
+戊二醛	wù èr quán	134
+戊二炔	wù èr quē	100
 戊二酮	wù èr tóng	96
+戊二烯	wù èr xī	57
+戊二酰	wù èr xiān	104
 五氟苯	wǔ fú běn	40
+戊富烯	wù fù xī	87
 无机胺	wú jī àn	100
 无机苯	wú jī běn	88
 无机氮	wú jī dàn	110
@@ -2891,6 +3224,8 @@ sort: by_weight
 五氯苯	wǔ lǜ běn	56
 五氯酚	wǔ lǜ fēn	324
 戊硼烷	wù péng wán	91
+无穷烯	wú qióng xī	82
+戊醛糖	wù quán táng	82
 戊三酮	wù sān tóng	79
 五十烷	wǔ shí wán	92
 钨酸铵	wū suān ǎn	108
@@ -2921,11 +3256,14 @@ sort: by_weight
 乌索烷	wū suǒ wán	93
 戊酮糖	wù tóng táng	81
 戊五醇	wù wǔ chún	362
+戊烯醛	wù xī quán	97
 戊酰氯	wù xiān lǜ	66
 戊唑醇	wù zuò chún	78
 稀氨水	xī ān shuǐ	483
 烯丙胺	xī bǐng àn	86
 烯丙醇	xī bǐng chún	132
+烯丙基	xī bǐng jī	206
+烯丙酯	xī bǐng zhǐ	133
 烯醇化	xī chún huà	115
 烯醇醚	xī chún mí	90
 烯醇式	xī chún shì	150
@@ -2933,11 +3271,16 @@ sort: by_weight
 烯醇盐	xī chún yán	98
 硒醇盐	xī chún yán	75
 烯醇酯	xī chún zhǐ	96
+烯雌酚	xī cí fēn	32
 稀醋酸	xī cù suān	178
 硒蛋白	xī dàn bái	120
 烯二醇	xī èr chún	126
+烯二炔	xī èr quē	88
+烯反应	xī fǎn yìng	98
 西瓜酮	xī guā tóng	74
+烯环钠	xī huán nà	81
 烯基苯	xī jī běn	86
+烯甲酸	xī jiǎ suān	73
 细菌酶	xì jūn méi	84
 稀硫酸	xī liú suān	212
 悉尼酮	xī ní tóng	95
@@ -2996,6 +3339,8 @@ sort: by_weight
 腺苷基	xiàn gān jī	66
 腺苷酸	xiàn gān suān	138
 腺甘酸	xiàn gān suān	72
+酰基化	xiān jī huà	87
+酰基盐	xiān jī yán	93
 纤精酮	xiān jīng tóng	72
 腺嘌呤	xiàn piào lìng	233
 纤溶酶	xiān róng méi	152
@@ -3005,15 +3350,18 @@ sort: by_weight
 腺甾烷	xiàn zāi wán	87
 限制酶	xiàn zhì méi	144
 香草醇	xiāng cǎo chún	63
+香草醛	xiāng cǎo quán	132
 香草酸	xiāng cǎo suān	79
 香醇厚	xiāng chún hòu	120
 香豆酮	xiāng dòu tóng	89
 香蕉啶	xiāng jiāo dìng	81
 香堇酮	xiāng jǐn tóng	83
 香茅醇	xiāng máo chún	124
+香茅醛	xiāng máo quán	125
 香芹醇	xiāng qín chún	86
 香芹酮	xiāng qín tóng	94
 香叶醇	xiāng yè chún	136
+香叶烯	xiāng yè xī	86
 小苯环	xiǎo běn huán	89
 消胆胺	xiāo dǎn àn	114
 硝氮烯	xiāo dàn xī	65
@@ -3054,7 +3402,6 @@ sort: by_weight
 硝酸锔	xiāo suān jū	88
 硝酸锎	xiāo suān kāi	71
 硝酸钪	xiāo suān kàng	86
-硝酸矿	xiāo suān kuàng	83
 硝酸镧	xiāo suān lán	84
 硝酸铑	xiāo suān lǎo	65
 硝酸镭	xiāo suān léi	63
@@ -3113,15 +3460,21 @@ sort: by_weight
 缬草酸	xié cǎo suān	82
 偕二醇	xié èr chún	98
 楔形烷	xiē xíng wán	92
+辛搭烯	xīn dā xī	91
 新丁醇	xīn dīng chún	78
 辛二胺	xīn èr àn	66
 辛二醇	xīn èr chún	96
+辛二烯	xīn èr xī	149
 新庚烷	xīn gēng wán	74
 新癸酸	xīn guǐ suān	84
+心环烯	xīn huán xī	80
 新己醇	xīn jǐ chún	94
 心肌酶	xīn jī méi	186
 新己烷	xīn jǐ wán	83
+新己烯	xīn jǐ xī	95
 辛硫醇	xīn liú chún	96
+辛醛糖	xīn quán táng	60
+辛四烯	xīn sì xī	14
 锌酸钠	xīn suān nà	94
 锌酸盐	xīn suān yán	66
 辛酮糖	xīn tóng táng	80
@@ -3135,11 +3488,13 @@ sort: by_weight
 型并苯	xíng bìng běn	84
 形成酶	xíng chéng méi	73
 性腺轴	xìng xiàn zhóu	172
+雄二烯	xióng èr xī	85
 雄烯酮	xióng xī tóng	100
 雄稀酮	xióng xī tóng	53
 胸腺肽	xiōng xiàn tài	154
 雄甾酮	xióng zāi tóng	92
 雄甾烷	xióng zāi wán	83
+雄甾烯	xióng zāi xī	113
 溴苯胺	xiù běn àn	99
 溴苯酚	xiù běn fēn	44
 溴苯基	xiù běn jī	79
@@ -3147,7 +3502,9 @@ sort: by_weight
 溴吡啶	xiù bǐ dìng	86
 溴丙酮	xiù bǐng tóng	73
 溴丙烷	xiù bǐng wán	60
+溴丙烯	xiù bǐng xī	82
 溴虫腈	xiù chóng jīng	89
+溴代烃	xiù dài tīng	90
 溴代烷	xiù dài wán	59
 溴碘苯	xiù diǎn běn	96
 溴丁烷	xiù dīng wán	65
@@ -3159,6 +3516,7 @@ sort: by_weight
 溴磺酸	xiù huáng suān	94
 溴己烷	xiù jǐ wán	97
 溴甲苯	xiù jiǎ běn	96
+溴甲醚	xiù jiǎ mí	64
 溴甲烷	xiù jiǎ wán	156
 溴金酸	xiù jīn suān	87
 溴菌腈	xiù jūn jīng	86
@@ -3200,6 +3558,8 @@ sort: by_weight
 血栓烷	xuè shuān wán	81
 雪松醇	xuě sōng chún	82
 雪松烷	xuě sōng wán	87
+雪松烯	xuě sōng xī	91
+寻燃烯	xún rán xī	71
 亚氨基	yà ān jī	146
 亚胺类	yà àn lèi	68
 亚氨酸	yà ān suān	99
@@ -3215,6 +3575,7 @@ sort: by_weight
 吖丁啶	yā dīng dìng	99
 亚磺酸	yà huáng suān	134
 亚精胺	yà jīng àn	119
+氩氪烯	yà kè xī	93
 亚磷酸	yà lín suān	142
 亚硫酸	yà liú suān	175
 亚氯化	yà lǜ huà	86
@@ -3224,7 +3585,10 @@ sort: by_weight
 亚硒酸	yà xī suān	150
 亚硝胺	yà xiāo àn	268
 亚硝酸	yà xiāo suān	202
+亚硝酰	yà xiāo xiān	148
 亚溴酸	yà xiù suān	87
+烟草烯	yān cǎo xī	97
+烟碱烯	yān jiǎn xī	92
 烟酸铬	yān suān gè	100
 盐酸根	yán suān gēn	84
 盐酸胍	yán suān guā	62
@@ -3235,8 +3599,11 @@ sort: by_weight
 盐酸盐	yán suān yán	192
 烟酸酯	yān suān zhǐ	94
 烟酰胺	yān xiān àn	230
+烟酰肼	yān xiān jǐng	66
 烟酰氯	yān xiān lǜ	60
 氧苯酮	yǎng běn tóng	96
+氧丙烯	yǎng bǐng xī	91
+羊齿烯	yáng chǐ xī	95
 洋葱烷	yáng cōng wán	73
 氧化胺	yǎng huà àn	110
 氧化氮	yǎng huà dàn	164
@@ -3244,6 +3611,9 @@ sort: by_weight
 氧化氯	yǎng huà lǜ	108
 氧化酶	yǎng huà méi	217
 氧化酮	yǎng huà tóng	84
+氧炔焰	yǎng quē yàn	90
+氧酰基	yǎng xiān jī	92
+氧乙炔	yǎng yǐ quē	92
 叶醇三	yè chún sān	52
 液氮罐	yè dàn guàn	144
 液化氮	yè huà dàn	73
@@ -3258,6 +3628,8 @@ sort: by_weight
 异丙胺	yì bǐng àn	100
 异丙苯	yì bǐng běn	146
 异丙醇	yì bǐng chún	186
+异丙醚	yì bǐng mí	79
+乙丙醚	yǐ bǐng mí	61
 异丙嗪	yì bǐng qín	156
 乙草胺	yǐ cǎo àn	102
 乙醇胺	yǐ chún àn	166
@@ -3277,18 +3649,21 @@ sort: by_weight
 异丁苯	yì dīng běn	82
 异丁醇	yì dīng chún	120
 异丁腈	yì dīng jīng	110
+异丁醛	yì dīng quán	70
 异丁烷	yì dīng wán	132
 异丁烯	yì dīng xī	142
 异恶唑	yì è zuò	122
 乙二胺	yǐ èr àn	172
 乙二醇	yǐ èr chún	229
 乙二膦	yǐ èr lìn	81
+乙二醛	yǐ èr quán	140
 异氟醚	yì fú mí	107
 异氟烷	yì fú wán	81
 异庚烷	yì gēng wán	99
 异构酶	yì gòu méi	172
 睪固酮	yì gù tóng	98
 乙硅烷	yǐ guī wán	57
+乙硅烯	yǐ guī xī	90
 乙琥胺	yǐ hǔ àn	636
 乙磺酸	yǐ huáng suān	94
 异黄酮	yì huáng tóng	244
@@ -3303,35 +3678,49 @@ sort: by_weight
 益康唑	yì kāng zuò	157
 异喹啉	yì kuí lín	148
 异裂酶	yì liè méi	68
+乙磷烯	yǐ lín xī	51
 乙硫醇	yǐ liú chún	297
+乙硫醚	yǐ liú mí	95
 一氯胺	yī lǜ àn	94
 乙铝烷	yǐ lǚ wán	96
 乙螨唑	yǐ mǎn zuò	120
 乙硼烷	yǐ péng wán	150
 异氰基	yì qíng jī	87
 异氰酸	yì qíng suān	152
+乙醛酸	yǐ quán suān	145
 乙醛肟	yǐ quán wò	88
 乙炔醇	yǐ quē chún	70
+乙炔钙	yǐ quē gài	87
+乙炔钾	yǐ quē jiǎ	100
+乙炔锂	yǐ quē lǐ	100
+乙炔钠	yǐ quē nà	71
+乙炔铜	yǐ quē tóng	83
+乙炔银	yǐ quē yín	76
 异壬醇	yì rén chún	36
 异噻唑	yì sāi zuò	152
 乙三醇	yǐ sān chún	100
 乙酸氯	yǐ suān lǜ	85
 乙酸锰	yǐ suān měng	91
+乙缩醛	yǐ suō quán	84
 抑肽酶	yì tài méi	330
 睪丸酮	yì wán tóng	64
 异戊醇	yì wù chún	121
+异戊醛	yì wù quán	79
 异戊酸	yì wù suān	122
 异戊烷	yì wù wán	96
+异戊烯	yì wù xī	102
 乙醯胺	yǐ xī àn	97
 乙醯苯	yǐ xī běn	84
 乙烯厂	yǐ xī chǎng	111
 乙烯醇	yǐ xī chún	100
 乙硒醇	yǐ xī chún	89
+已烯雌	yǐ xī cí	134
 乙烯法	yǐ xī fǎ	137
 乙烯砜	yǐ xī fēng	132
 乙烯基	yǐ xī jī	250
 乙烯类	yǐ xī lèi	388
 乙烯利	yǐ xī lì	213
+乙硒醚	yǐ xī mí	92
 乙烯醚	yǐ xī mí	53
 乙醯氰	yǐ xī qíng	65
 乙烯酮	yǐ xī tóng	130
@@ -3340,9 +3729,14 @@ sort: by_weight
 乙烯酯	yǐ xī zhǐ	200
 乙酰胺	yǐ xiān àn	164
 乙酰苯	yǐ xiān běn	78
+乙酰胆	yǐ xiān dǎn	71
+乙酰碘	yǐ xiān diǎn	58
 乙酰氟	yǐ xiān fú	43
+乙酰化	yǐ xiān huà	170
+乙酰基	yǐ xiān jī	184
 乙酰腈	yǐ xiān jīng	54
 乙酰氯	yǐ xiān lǜ	154
+乙酰溴	yǐ xiān xiù	69
 异辛醇	yì xīn chún	205
 异辛烷	yì xīn wán	156
 乙亚胺	yǐ yà àn	110
@@ -3371,6 +3765,7 @@ sort: by_weight
 荧光酮	yíng guāng tóng	56
 蝇蕈醇	yíng xùn chún	97
 硬脂醇	yìng zhī chún	96
+硬脂酰	yìng zhī xiān	81
 蛹蛋白	yǒng dàn bái	229
 游醇卿	yóu chún qīng	94
 诱导酶	yòu dǎo méi	73
@@ -3385,6 +3780,7 @@ sort: by_weight
 油酸锰	yóu suān měng	60
 铀酸钠	yóu suān nà	88
 铀酸盐	yóu suān yán	71
+铀酰盐	yóu xiān yán	327
 有效氯	yǒu xiào lǜ	122
 预苯酸	yù běn suān	66
 愈创醇	yù chuàng chún	96
@@ -3400,14 +3796,19 @@ sort: by_weight
 元素氟	yuán sù fú	76
 原萜烷	yuán tiē wán	68
 鸢尾酮	yuān wěi tóng	87
+鸢尾烯	yuān wěi xī	99
 原硝酸	yuán xiāo suān	98
 圆柚酮	yuán yòu tóng	88
 月桂胺	yuè guì àn	65
 月桂醇	yuè guì chún	144
 月桂酸	yuè guì suān	157
+月桂烯	yuè guì xī	92
+月桂酰	yuè guì xiān	123
 孕二醇	yùn èr chún	100
+孕二烯	yùn èr xī	97
 陨氯铁	yǔn lǜ tiě	86
 孕三醇	yùn sān chún	77
+孕三烯	yùn sān xī	76
 孕酮低	yùn tóng dī	166
 孕酮值	yùn tóng zhí	128
 孕甾酮	yùn zāi tóng	81
@@ -3430,10 +3831,13 @@ sort: by_weight
 正丙胺	zhèng bǐng àn	96
 正丙苯	zhèng bǐng běn	83
 正丙醇	zhèng bǐng chún	120
+正丙醛	zhèng bǐng quán	70
 正丁胺	zhèng dīng àn	68
 正丁苯	zhèng dīng běn	71
 正丁醇	zhèng dīng chún	154
 正丁腈	zhèng dīng jīng	94
+正丁醚	zhèng dīng mí	88
+正丁醛	zhèng dīng quán	93
 正丁烷	zhèng dīng wán	118
 正丁烯	zhèng dīng xī	77
 正庚醇	zhèng gēng chún	78
@@ -3449,6 +3853,7 @@ sort: by_weight
 正戊胺	zhèng wù àn	91
 正戊醇	zhèng wù chún	94
 正戊腈	zhèng wù jīng	80
+正戊醛	zhèng wù quán	98
 正戊烷	zhèng wù wán	106
 正硝酸	zhèng xiāo suān	79
 正辛胺	zhèng xīn àn	95
@@ -3459,12 +3864,14 @@ sort: by_weight
 脂肪胺	zhī fáng àn	90
 脂肪醇	zhī fáng chún	152
 脂肪酶	zhī fáng méi	194
+脂环烃	zhī huán tīng	79
 脂环酮	zhī huán tóng	60
 制甲醇	zhì jiǎ chún	140
 脂解酶	zhī jiě méi	96
 酯酶类	zhǐ méi lèi	92
 植酸酶	zhí suān méi	120
 植烷酸	zhí wán suān	94
+制烯烃	zhì xī tīng	142
 制乙醇	zhì yǐ chún	84
 制乙烯	zhì yǐ xī	110
 仲胺酸	zhòng àn suān	92
@@ -3480,6 +3887,7 @@ sort: by_weight
 中毒酶	zhòng dú méi	147
 重铬酸	zhòng gè suān	117
 重菇醇	zhòng gū chún	95
+重烃气	zhòng tīng qì	82
 仲戊醇	zhòng wù chún	99
 中性胺	zhōng xìng àn	81
 皱胃酶	zhòu wèi méi	81
@@ -3500,6 +3908,7 @@ sort: by_weight
 紫杉烷	zǐ shān wán	79
 总蛋白	zǒng dàn bái	192
 总黄酮	zǒng huáng tóng	126
+棕榈酰	zōng lǘ xiān	115
 纵烷酮	zòng wán tóng	77
 邹醇甫	zōu chún fǔ	77
 组氨素	zǔ ān sù	74
@@ -3508,6 +3917,7 @@ sort: by_weight
 组胺药	zǔ àn yào	24
 组成酶	zǔ chéng méi	60
 组蛋白	zǔ dàn bái	194
+足球烯	zú qiú xī	95
 组织胺	zǔ zhī àn	212
 尊美醇	zūn měi chún	81
 唑吡坦	zuò bǐ tǎn	150
@@ -3738,8 +4148,8 @@ sort: by_weight
 白蛋白尿	bái dàn bái niào	18
 白桦脂醇	bái huà zhī chún	10
 白藜芦醇	bái lí lú chún	50
-白氯铅矿	bái lǜ qiān kuàng	9
 百秋李醇	bǎi qiū lǐ chún	1
+白三烯类	bái sān xī lèi	3
 伴白蛋白	bàn bái dàn bái	1
 半胱氨酸	bàn guāng ān suān	44
 半胱胺酸	bàn guāng àn suān	8
@@ -3752,9 +4162,11 @@ sort: by_weight
 胞苷磷酸	bāo gān lín suān	16
 饱和氯水	bǎo hé lǜ shuǐ	1
 胞浆蛋白	bāo jiāng dàn bái	1
+孢霉烯族	bāo méi xī zú	8
 包膜蛋白	bāo mó dàn bái	20
 胞影蛋白	bāo yǐng dàn bái	1
 胞转蛋白	bāo zhuǎn dàn bái	1
+倍半萜烯	bèi bàn tiē xī	14
 钡化合物	bèi huà hé wù	34
 倍氯美松	bèi lǜ měi sōng	11
 倍氯米松	bèi lǜ mǐ sōng	25
@@ -4030,7 +4442,9 @@ sort: by_weight
 并二氮杂	bìng èr dàn zá	1
 丙二硫醇	bǐng èr liú chún	6
 丙二酰胺	bǐng èr xiān àn	7
+丙二酰基	bǐng èr xiān jī	3
 丙二酰氯	bǐng èr xiān lǜ	8
+丙二酰脲	bǐng èr xiān niào	5
 丙氟哌酸	bǐng fú pài suān	1
 丙基苯胺	bǐng jī běn àn	5
 丙基吡啶	bǐng jī bǐ dìng	9
@@ -4041,6 +4455,7 @@ sort: by_weight
 丙基溴苯	bǐng jī xiù běn	8
 丙硫咪唑	bǐng liú mǐ zuò	16
 丙氯拉嗪	bǐng lǜ lā qín	9
+丙羟茶碱	bǐng qiǎng chá jiǎn	22
 丙球蛋白	bǐng qiú dàn bái	21
 丙炔草胺	bǐng quē cǎo àn	7
 丙酸睾酮	bǐng suān gāo tóng	26
@@ -4060,13 +4475,23 @@ sort: by_weight
 丙戊酸镁	bǐng wù suān měi	22
 丙戊酸钠	bǐng wù suān nà	38
 丙戊酰胺	bǐng wù xiān àn	14
+丙戊酰脲	bǐng wù xiān niào	6
+丙烯胶囊	bǐng xī jiāo náng	7
 丙烯腈基	bǐng xī jīng jī	5
+丙烯酸锌	bǐng xī suān xīn	9
+丙烯酸盐	bǐng xī suān yán	7
+丙烯酸酯	bǐng xī suān zhǐ	38
+丙烯酸脂	bǐng xī suān zhī	9
 丙烯醯胺	bǐng xī xī àn	8
 丙烯酰胺	bǐng xī xiān àn	48
+丙烯酰基	bǐng xī xiān jī	14
 丙烯酰氯	bǐng xī xiān lǜ	7
 丙烯亚胺	bǐng xī yà àn	8
 丙酰苯胺	bǐng xiān běn àn	8
+丙酰丙二	bǐng xiān bǐng èr	1
 丙酰辅酶	bǐng xiān fǔ méi	31
+丙酰基酚	bǐng xiān jī fēn	9
+丙酰氧基	bǐng xiān yǎng jī	1
 丙氧氨酚	bǐng yǎng ān fēn	1
 伯胺合成	bó àn hé chéng	8
 菠菜甾醇	bō cài zāi chún	10
@@ -4084,6 +4509,7 @@ sort: by_weight
 卟啉环系	bǔ lín huán xì	5
 卟啉镍石	bǔ lín niè shí	16
 布林佐胺	bù lín zuǒ àn	10
+布面丙烯	bù miàn bǐng xī	34
 补体蛋白	bǔ tǐ dàn bái	14
 补体酯酶	bǔ tǐ zhǐ méi	1
 不稳定酶	bù wěn dìng méi	1
@@ -4101,17 +4527,19 @@ sort: by_weight
 草酸溶液	cǎo suān róng yè	5
 草酸钛钾	cǎo suān tài jiǎ	8
 草酸锑钾	cǎo suān tī jiǎ	9
-草酸铁矿	cǎo suān tiě kuàng	10
 草酸亚铁	cǎo suān yà tiě	7
 草酸盐类	cǎo suān yán lèi	3
 草酸氧钛	cǎo suān yǎng tài	5
 草酸铀酰	cǎo suān yóu xiān	14
+草酰二肼	cǎo xiān èr jǐng	7
+草酰乙酸	cǎo xiān yǐ suān	34
 层粘蛋白	céng zhān dàn bái	4
 茶苯海明	chá běn hǎi míng	19
 蟾毒色胺	chán dú sè àn	24
 产甲烷菌	chǎn jiǎ wán jūn	31
 长春酰胺	cháng chūn xiān àn	1
 肠蛋白酶	cháng dàn bái méi	5
+长链酰基	cháng liàn xiān jī	7
 衬氟阀门	chèn fú fá mén	32
 衬氟管道	chèn fú guǎn dào	32
 衬氟设备	chèn fú shè bèi	32
@@ -4227,6 +4655,7 @@ sort: by_weight
 大豆蛋白	dà dòu dàn bái	92
 打发蛋白	dǎ fā dàn bái	37
 𨱏化合物	dā huà hé wù	7
+大茴香醛	dà huí xiāng quán	18
 达卡巴嗪	dá kǎ bā qín	15
 大麻二醇	dà má èr chún	1
 达玛烷型	dá mǎ wán xíng	15
@@ -4284,6 +4713,7 @@ sort: by_weight
 氮碳共渗	dàn tàn gòng shèn	2
 氮同位素	dàn tóng wèi sù	14
 氮烯咪胺	dàn xī mī àn	11
+单酰甘油	dān xiān gān yóu	9
 氮氧化硅	dàn yǎng huà guī	7
 氮氧化物	dàn yǎng huà wù	58
 单乙醇胺	dān yǐ chún àn	7
@@ -4307,6 +4737,7 @@ sort: by_weight
 刀刃氯酸	dāo rèn lǜ suān	7
 锝化合物	dé huà hé wù	29
 的化合物	de huà hé wù	5
+德阳烯碳	dé yáng xī tàn	5
 涤氨汗布	dí ān hàn bù	1
 地巴唑片	dì bā zuò piàn	10
 低醇啤酒	dī chún pí jiǔ	21
@@ -4316,6 +4747,7 @@ sort: by_weight
 低氮锅炉	dī dàn guō lú	1
 低氮燃烧	dī dàn rán shāo	31
 地恩丙胺	dì ēn bǐng àn	7
+低分子烃	dī fēn zǐ tīng	16
 低核苷酸	dī hé gān suān	8
 镝化合物	dī huà hé wù	7
 地黄梓醇	dì huáng zǐ chún	5
@@ -4329,16 +4761,20 @@ sort: by_weight
 碘苯甲酸	diǎn běn jiǎ suān	6
 碘苯扎酸	diǎn běn zhā suān	4
 碘吡啦啥	diǎn bǐ la shá	1
+碘丙烯酸	diǎn bǐng xī suān	7
+碘代芳烃	diǎn dài fāng tīng	6
 碘代烷烃	diǎn dài wán tīng	6
 碘胆固醇	diǎn dǎn gù chún	6
 碘胆甾醇	diǎn dǎn zāi chún	1
 碘化丙啶	diǎn huà bǐng dìng	9
 碘化合物	diǎn huà hé wù	37
+碘化乙酰	diǎn huà yǐ xiān	5
 碘克沙醇	diǎn kè shā chún	11
 碘拉葡胺	diǎn lā pú àn	1
 碘酪氨酸	diǎn lào ān suān	19
 碘尿嘧啶	diǎn niào mì dìng	5
 碘普罗胺	diǎn pǔ luó àn	3
+碘羟拉酸	diǎn qiǎng lā suān	1
 碘酸氢钾	diǎn suān qīng jiǎ	6
 碘酸盐类	diǎn suān yán lèi	1
 碘酸铀酰	diǎn suān yóu xiān	5
@@ -4364,6 +4800,7 @@ sort: by_weight
 丁二醇酯	dīng èr chún zhǐ	10
 丁二硫醇	dīng èr liú chún	7
 丁二酮肟	dīng èr tóng wò	7
+丁二烯类	dīng èr xī lèi	1
 丁二酰氯	dīng èr xiān lǜ	8
 啶核苷酸	dìng hé gān suān	1
 丁基苯基	dīng jī běn jī	5
@@ -4378,6 +4815,7 @@ sort: by_weight
 丁氰橡胶	dīng qíng xiàng jiāo	1
 丁炔二醇	dīng quē èr chún	5
 丁炔二氯	dīng quē èr lǜ	7
+丁炔二酸	dīng quē èr suān	10
 丁酸苯酯	dīng suān běn zhǐ	8
 顶体蛋白	dǐng tǐ dàn bái	13
 丁酮二酸	dīng tóng èr suān	9
@@ -4388,6 +4826,7 @@ sort: by_weight
 丁烯氧化	dīng xī yǎng huà	15
 丁酰苯类	dīng xiān běn lèi	9
 丁酰辅酶	dīng xiān fǔ méi	21
+丁酰基酚	dīng xiān jī fēn	8
 啶氧菌酯	dìng yǎng jūn zhǐ	1
 铥化合物	diū huà hé wù	4
 氡化合物	dōng huà hé wù	8
@@ -4418,6 +4857,7 @@ sort: by_weight
 对氯苯基	duì lǜ běn jī	6
 对氯氟苯	duì lǜ fú běn	8
 对氯甲苯	duì lǜ jiǎ běn	6
+对伞花烃	duì sǎn huā tīng	5
 对亚硝氮	duì yà xiāo dàn	1
 对氧磷酶	duì yǎng lín méi	1
 对乙氧基	duì yǐ yǎng jī	1
@@ -4430,14 +4870,19 @@ sort: by_weight
 多功能酶	duō gōng néng méi	1
 多硅酸盐	duō guī suān yán	8
 多核苷酸	duō hé gān suān	14
+多环芳烃	duō huán fāng tīng	73
+多聚甲醛	duō jù jiǎ quán	6
 多聚磷酸	duō jù lín suān	7
+多聚乙醛	duō jù yǐ quán	8
 多氯联苯	duō lǜ lián běn	37
 多酶体系	duō méi tǐ xì	1
 多酶系统	duō méi xì tǒng	1
+多醚菌素	duō mí jūn sù	1
 多奈哌齐	duō nài pài qí	16
 多廿烷醇	duō niàn wán chún	13
 多潘立酮	duō pān lì tóng	34
 多沙唑嗪	duō shā zuò qín	15
+多烯鱼油	duō xī yú yóu	5
 多溴联苯	duō xiù lián běn	17
 锇化合物	é huà hé wù	30
 砈化合物	ě huà hé wù	6
@@ -4472,6 +4917,7 @@ sort: by_weight
 二吡呋酯	èr bǐ fū zhǐ	26
 二丙二醇	èr bǐng èr chún	12
 二丙酮醇	èr bǐng tóng chún	6
+二丙烯酯	èr bǐng xī zhǐ	8
 儿茶酚胺	ér chá fēn àn	43
 儿茶酚酶	ér chá fēn méi	1
 二醋酸盐	èr cù suān yán	7
@@ -4513,6 +4959,7 @@ sort: by_weight
 铒化合物	ěr huà hé wù	7
 二磺酸钠	èr huáng suān nà	7
 二磺酸盐	èr huáng suān yán	1
+二磺酰肼	èr huáng xiān jǐng	4
 二茴香胺	èr huí xiāng àn	1
 二甲氨基	èr jiǎ ān jī	21
 二甲胺基	èr jiǎ àn jī	13
@@ -4544,6 +4991,8 @@ sort: by_weight
 二甲胂酸	èr jiǎ shèn suān	1
 二甲双胍	èr jiǎ shuāng guā	98
 二甲四氯	èr jiǎ sì lǜ	10
+二甲酰基	èr jiǎ xiān jī	5
+二甲酰肼	èr jiǎ xiān jǐng	6
 二苦氨基	èr kǔ ān jī	5
 二磷酸钙	èr lín suān gài	1
 二膦酸盐	èr lìn suān yán	7
@@ -4600,6 +5049,7 @@ sort: by_weight
 二羟丙酮	èr qiǎng bǐng tóng	7
 二羟黄酮	èr qiǎng huáng tóng	1
 二羟基苯	èr qiǎng jī běn	20
+二羟基萘	èr qiǎng jī nài	5
 二氢吡啶	èr qīng bǐ dìng	14
 二氢蝶啶	èr qīng dié dìng	1
 二氰蒽醌	èr qíng ēn kūn	3
@@ -4616,7 +5066,11 @@ sort: by_weight
 二烷基醚	èr wán jī mí	7
 二烷基酯	èr wán jī zhǐ	7
 二烯丙胺	èr xī bǐng àn	6
+二烯二酸	èr xī èr suān	8
+二烯聚合	èr xī jù hé	6
 二锡酸镝	èr xī suān dī	1
+二烯酸钠	èr xī suān nà	7
+二酰甘油	èr xiān gān yóu	5
 二硝基苯	èr xiāo jī běn	20
 二硝托胺	èr xiāo tuō àn	3
 二溴苯胺	èr xiù běn àn	7
@@ -4624,6 +5078,7 @@ sort: by_weight
 二溴丙醇	èr xiù bǐng chún	9
 二溴丙腈	èr xiù bǐng jīng	8
 二溴丙烷	èr xiù bǐng wán	6
+二溴丙烯	èr xiù bǐng xī	6
 二溴丁醇	èr xiù dīng chún	6
 二溴丁烷	èr xiù dīng wán	8
 二溴丁烯	èr xiù dīng xī	7
@@ -4635,6 +5090,7 @@ sort: by_weight
 二溴壬烷	èr xiù rén wán	7
 二溴戊烷	èr xiù wù wán	6
 二溴乙苯	èr xiù yǐ běn	7
+二溴乙醚	èr xiù yǐ mí	6
 二溴乙烷	èr xiù yǐ wán	14
 二溴乙烯	èr xiù yǐ xī	7
 二盐酸肼	èr yán suān jǐng	7
@@ -4698,6 +5154,7 @@ sort: by_weight
 二乙酰苯	èr yǐ xiān běn	7
 二乙酰基	èr yǐ xiān jī	5
 二正丙胺	èr zhèng bǐng àn	7
+二正丙醚	èr zhèng bǐng mí	32
 二仲丁胺	èr zhòng dīng àn	6
 发烟硫酸	fā yān liú suān	31
 发烟硝酸	fā yān xiāo suān	29
@@ -4706,14 +5163,17 @@ sort: by_weight
 反丁烯酸	fǎn dīng xī suān	24
 钒化合物	fán huà hé wù	34
 泛硫乙胺	fàn liú yǐ àn	10
+反视黄醛	fǎn shì huáng quán	5
 钒酸铵钠	fán suān ǎn nà	10
 钒酸盐类	fán suān yán lèi	5
 泛影葡胺	fàn yǐng pú àn	18
 反转录酶	fǎn zhuǎn lù méi	32
 钫化合物	fāng huà hé wù	5
+芳烃抽提	fāng tīng chōu tí	18
 芳烷基胺	fāng wán jī àn	5
 放线菌酮	fàng xiàn jūn tóng	20
 芳香化酶	fāng xiāng huà méi	30
+芳香烃类	fāng xiāng tīng lèi	25
 非巴氨酯	fēi bā ān zhǐ	5
 非苯芳烃	fēi běn fāng tīng	18
 非蛋白氮	fēi dàn bái dàn	24
@@ -4787,7 +5247,6 @@ sort: by_weight
 氟硅钾石	fú guī jiǎ shí	9
 氟桂利嗪	fú guì lì qín	24
 氟硅钠石	fú guī nà shí	5
-氟硅铈矿	fú guī shì kuàng	6
 氟硅酸铵	fú guī suān ǎn	23
 氟硅酸钡	fú guī suān bèi	12
 氟硅酸钙	fú guī suān gài	9
@@ -4871,7 +5330,6 @@ sort: by_weight
 氟氯甲烷	fú lǜ jiǎ wán	8
 氟氯菊酯	fú lǜ jú zhǐ	1
 氟氯霉素	fú lǜ méi sù	6
-氟氯铅矿	fú lǜ qiān kuàng	5
 氟铝石膏	fú lǚ shí gāo	7
 氟铝酸铵	fú lǚ suān ǎn	14
 氟铝酸钙	fú lǚ suān gài	8
@@ -4889,6 +5347,7 @@ sort: by_weight
 呋喃丙胺	fū nán bǐng àn	10
 呋喃甲胺	fū nán jiǎ àn	9
 呋喃甲醇	fū nán jiǎ chún	5
+呋喃甲醛	fū nán jiǎ quán	6
 呋喃硫胺	fū nán liú àn	3
 呋喃它酮	fū nán tā tóng	13
 呋喃坦啶	fū nán tǎn dìng	18
@@ -4931,7 +5390,6 @@ sort: by_weight
 氟曲马唑	fú qǔ mǎ zuò	8
 氟乳清酸	fú rǔ qīng suān	7
 副肾上腺	fù shèn shàng xiàn	21
-氟铈锎矿	fú shì kāi kuàng	6
 氟水杨酸	fú shuǐ yáng suān	5
 氟塑料泵	fú sù liào bèng	7
 氟他胺片	fú tā àn piàn	1
@@ -4940,7 +5398,6 @@ sort: by_weight
 氟钛酸钾	fú tài suān jiǎ	6
 氟钛酸钠	fú tài suān nà	10
 氟钛酸盐	fú tài suān yán	14
-氟碳铈矿	fú tàn shì kuàng	24
 氟碳树脂	fú tàn shù zhī	11
 氟钽酸钾	fú tǎn suān jiǎ	14
 氟碳涂层	fú tàn tú céng	10
@@ -5011,9 +5468,12 @@ sort: by_weight
 甘草酸铵	gān cǎo suān ǎn	11
 甘草酸苷	gān cǎo suān gān	12
 肝蛋白石	gān dàn bái shí	10
+甘菊环烃	gān jú huán tīng	12
+甘磷酰芥	gān lín xiān jiè	10
 甘露醇针	gān lù chún zhēn	1
 甘露糖胺	gān lù táng àn	5
 甘露糖酶	gān lù táng méi	1
+甘羟铝片	gān qiǎng lǚ piàn	1
 肝球蛋白	gān qiú dàn bái	1
 甘思咪哚	gān sī mī duǒ	16
 甘油激酶	gān yóu jī méi	15
@@ -5105,13 +5565,17 @@ sort: by_weight
 铬酸亚铊	gè suān yà tā	6
 铬酸亚铁	gè suān yà tiě	11
 铬酸盐类	gè suān yán lèi	5
+庚二烯醛	gēng èr xī quán	1
 庚二酰氯	gēng èr xiān lǜ	6
 庚酸睾酮	gēng suān gāo tóng	20
 庚酸甲酯	gēng suān jiǎ zhǐ	6
 庚酸戊酯	gēng suān wù zhǐ	5
 庚酸乙酯	gēng suān yǐ zhǐ	15
 供蛋白质	gōng dàn bái zhì	5
+共轭二烯	gòng è èr xī	5
+共轭双烯	gòng è shuāng xī	5
 汞化合物	gǒng huà hé wù	39
+共聚甲醛	gòng jù jiǎ quán	7
 共生固氮	gòng shēng gù dàn	5
 钴胺辅酶	gǔ àn fǔ méi	1
 谷氨酸胺	gǔ ān suān àn	5
@@ -5160,6 +5624,8 @@ sort: by_weight
 光裂合酶	guāng liè hé méi	9
 光磷酸化	guāng lín suān huà	6
 贵蛋白石	guì dàn bái shí	17
+癸二烯醛	guǐ èr xī quán	11
+癸二烯酸	guǐ èr xī suān	1
 硅化合物	guī huà hé wù	36
 桂利嗪片	guì lì qín piàn	3
 硅磷酸盐	guī lín suān yán	1
@@ -5183,7 +5649,6 @@ sort: by_weight
 癸酸诺龙	guǐ suān nuò lóng	11
 硅酸三钙	guī suān sān gài	15
 硅酸铜钡	guī suān tóng bèi	6
-硅酸钍矿	guī suān tǔ kuàng	1
 硅酸系数	guī suān xì shù	8
 硅酸盐板	guī suān yán bǎn	15
 硅酸盐类	guī suān yán lèi	22
@@ -5194,6 +5659,7 @@ sort: by_weight
 硅酮橡胶	guī tóng xiàng jiāo	5
 硅烷交联	guī wán jiāo lián	12
 硅钨酸钠	guī wū suān nà	6
+癸烯二酸	guǐ xī èr suān	6
 桧烯合酶	guì xī hé méi	6
 硅氧烷类	guī yǎng wán lèi	1
 过碘酸钡	guò diǎn suān bèi	6
@@ -5303,7 +5769,6 @@ sort: by_weight
 褐藻酸钠	hè zǎo suān nà	20
 核质蛋白	hé zhì dàn bái	1
 黑芥子酶	hēi jiè zǐ méi	24
-黑氯铜矿	hēi lǜ tóng kuàng	5
 红没药醇	hóng méi yào chún	27
 红色硝酸	hóng sè xiāo suān	9
 红藻氨酸	hóng zǎo ān suān	12
@@ -5319,15 +5784,23 @@ sort: by_weight
 环苯扎林	huán běn zhā lín	13
 环吡酮胺	huán bǐ tóng àn	14
 环丙氨嗪	huán bǐng ān qín	4
+环丙甲醛	huán bǐng jiǎ quán	5
 环丙甲酮	huán bǐng jiǎ tóng	8
 环丙三酮	huán bǐng sān tóng	11
 环丙烷类	huán bǐng wán lèi	10
+环丙乙炔	huán bǐng yǐ quē	10
 环丙孕酮	huán bǐng yùn tóng	21
+环虫酰肼	huán chóng xiān jǐng	11
 环丁二酮	huán dīng èr tóng	7
+环丁二烯	huán dīng èr xī	13
 环格列酮	huán gé liè tóng	3
+环庚二烯	huán gēng èr xī	16
 环硅酸盐	huán guī suān yán	1
+环癸五烯	huán guǐ wǔ xī	14
 环核苷酸	huán hé gān suān	20
 环己二醇	huán jǐ èr chún	7
+环己二烯	huán jǐ èr xī	19
+环己甲醛	huán jǐ jiǎ quán	10
 环己六醇	huán jǐ liù chún	14
 环己酮肟	huán jǐ tóng wò	5
 环己烯胺	huán jǐ xī àn	6
@@ -5363,16 +5836,22 @@ sort: by_weight
 环烷酸锌	huán wán suān xīn	7
 环烷酸盐	huán wán suān yán	11
 环戊二酮	huán wù èr tóng	22
+环戊二烯	huán wù èr xī	31
 环戊基苯	huán wù jī běn	5
 环戊噻嗪	huán wù sāi qín	10
 环戊五醇	huán wù wǔ chún	1
 环戊五酮	huán wù wǔ tóng	14
+环戊烯基	huán wù xī jī	6
 环腺苷酸	huán xiàn gān suān	30
+环辛三烯	huán xīn sān xī	16
+环辛四烯	huán xīn sì xī	22
 环氧丙醇	huán yǎng bǐng chún	9
 环氧丙烷	huán yǎng bǐng wán	8
 环氧丁烷	huán yǎng dīng wán	26
+环氧酚醛	huán yǎng fēn quán	13
 环氧合酶	huán yǎng hé méi	31
 环氧化酶	huán yǎng huà méi	31
+环氧鲨烯	huán yǎng shā xī	8
 环氧乙烷	huán yǎng yǐ wán	45
 环氧乙烯	huán yǎng yǐ xī	16
 环已六醇	huán yǐ liù chún	1
@@ -5397,8 +5876,6 @@ sort: by_weight
 黄苷磷酸	huáng gān lín suān	1
 磺化合物	huáng huà hé wù	1
 磺基苯酸	huáng jī běn suān	7
-黄氯汞矿	huáng lǜ gǒng kuàng	5
-黄氯铅矿	huáng lǜ qiān kuàng	8
 黄嘌呤类	huáng piào lìng lèi	23
 黄嘌呤尿	huáng piào lìng niào	10
 磺酸树脂	huáng suān shù zhī	3
@@ -5410,7 +5887,9 @@ sort: by_weight
 磺酰胺酸	huáng xiān àn suān	8
 磺酰氟氯	huáng xiān fú lǜ	6
 磺酰氯氟	huáng xiān lǜ fú	5
+磺酰脲类	huáng xiān niào lèi	29
 恢复蛋白	huī fù dàn bái	1
+茴香硫醚	huí xiāng liú mí	14
 混合甲胺	hùn hé jiǎ àn	7
 火蛋白石	huǒ dàn bái shí	26
 或氟维司	huò fú wéi sī	4
@@ -5424,6 +5903,8 @@ sort: by_weight
 几丁质酶	jǐ dīng zhì méi	9
 肌动蛋白	jī dòng dàn bái	31
 己二硫醇	jǐ èr liú chún	6
+己二烯酸	jǐ èr xī suān	12
+己二酰肼	jǐ èr xiān jǐng	4
 肌钙蛋白	jī gài dàn bái	38
 肌苷磷酸	jī gān lín suān	10
 肌苷酸钠	jī gān suān nà	17
@@ -5452,10 +5933,12 @@ sort: by_weight
 激肽原酶	jī tài yuán méi	5
 己糖激酶	jǐ táng jī méi	15
 己糖磷酸	jǐ táng lín suān	3
+己糖醛酸	jǐ táng quán suān	7
 己烷雌酚	jǐ wán cí fēn	5
 己烷庚烷	jǐ wán gēng wán	5
 季戊四醇	jì wù sì chún	29
 基戊酸钠	jī wù suān nà	1
+己烯雌酚	jǐ xī cí fēn	28
 肌纤蛋白	jī xiān dàn bái	10
 基乙二酮	jī yǐ èr tóng	1
 基乙磺酸	jī yǐ huáng suān	10
@@ -5500,10 +5983,13 @@ sort: by_weight
 甲基吡嗪	jiǎ jī bǐ qín	20
 甲基吡唑	jiǎ jī bǐ zuò	25
 甲基苄胺	jiǎ jī biàn àn	6
+甲基丙醛	jiǎ jī bǐng quán	6
 甲基丙酮	jiǎ jī bǐng tóng	7
+甲基丙烯	jiǎ jī bǐng xī	7
 甲基叠氮	jiǎ jī dié dàn	2
 甲基丁胺	jiǎ jī dīng àn	9
 甲基丁醇	jiǎ jī dīng chún	31
+甲基丁醛	jiǎ jī dīng quán	4
 甲基丁酮	jiǎ jī dīng tóng	9
 甲基丁烷	jiǎ jī dīng wán	6
 甲基丁烯	jiǎ jī dīng xī	9
@@ -5518,6 +6004,7 @@ sort: by_weight
 甲基己醇	jiǎ jī jǐ chún	9
 甲基己酸	jiǎ jī jǐ suān	7
 甲基己烷	jiǎ jī jǐ wán	8
+甲基糠醛	jiǎ jī kāng quán	1
 甲基喹啉	jiǎ jī kuí lín	5
 甲基酪胺	jiǎ jī lào àn	1
 甲基联胺	jiǎ jī lián àn	8
@@ -5536,12 +6023,15 @@ sort: by_weight
 甲基色胺	jiǎ jī sè àn	35
 甲基戊胺	jiǎ jī wù àn	9
 甲基戊醇	jiǎ jī wù chún	10
+甲基戊醛	jiǎ jī wù quán	6
 甲基戊酸	jiǎ jī wù suān	6
 甲基戊酮	jiǎ jī wù tóng	19
 甲基戊烷	jiǎ jī wù wán	8
+甲基戊烯	jiǎ jī wù xī	29
 甲基腺苷	jiǎ jī xiàn gān	7
 甲基辛醇	jiǎ jī xīn chún	8
 甲基乙胺	jiǎ jī yǐ àn	5
+甲基乙炔	jiǎ jī yǐ quē	6
 甲基吲哚	jiǎ jī yǐn duǒ	11
 甲基组胺	jiǎ jī zǔ àn	2
 甲腈咪胍	jiǎ jīng mī guā	19
@@ -5558,7 +6048,6 @@ sort: by_weight
 甲氯芬酯	jiǎ lǜ fēn zhǐ	10
 甲氯喹酮	jiǎ lǜ kuí tóng	16
 甲氯灭酸	jiǎ lǜ miè suān	10
-钾氯铅矿	jiǎ lǜ qiān kuàng	9
 甲氯噻嗪	jiǎ lǜ sāi qín	7
 甲氯西泮	jiǎ lǜ xī pàn	5
 加氯消毒	jiā lǜ xiāo dú	29
@@ -5583,10 +6072,12 @@ sort: by_weight
 甲烷磺酸	jiǎ wán huáng suān	8
 甲烷循环	jiǎ wán xún huán	6
 甲烷氧化	jiǎ wán yǎng huà	7
+甲戊醛酸	jiǎ wù quán suān	17
 甲酰胺基	jiǎ xiān àn jī	3
 甲酰胺酶	jiǎ xiān àn méi	3
 甲酰苯胺	jiǎ xiān běn àn	13
 甲酰吗啉	jiǎ xiān ma lín	9
+甲酰氧基	jiǎ xiān yǎng jī	7
 甲硝哒唑	jiǎ xiāo dá zuò	10
 甲硝唑片	jiǎ xiāo zuò piàn	34
 甲硝唑栓	jiǎ xiāo zuò shuān	20
@@ -5622,6 +6113,7 @@ sort: by_weight
 焦钒酸钠	jiāo fán suān nà	5
 焦谷氨酸	jiāo gǔ ān suān	20
 焦硅酸盐	jiāo guī suān yán	8
+胶和烯料	jiāo hé xī liào	1
 焦磷酸钯	jiāo lín suān bǎ	1
 焦磷酸钡	jiāo lín suān bèi	1
 焦磷酸钒	jiāo lín suān fán	7
@@ -5666,6 +6158,7 @@ sort: by_weight
 金刚烷基	jīn gāng wán jī	4
 金刚乙胺	jīn gāng yǐ àn	23
 金合欢醇	jīn hé huān chún	12
+金合欢烯	jīn hé huān xī	16
 金化合物	jīn huà hé wù	32
 锦化氯碱	jǐn huà lǜ jiǎn	25
 金氰化钾	jīn qíng huà jiǎ	32
@@ -5690,6 +6183,8 @@ sort: by_weight
 腈水解酶	jīng shuǐ jiě méi	3
 晶体蛋白	jīng tǐ dàn bái	17
 精液蛋白	jīng yè dàn bái	1
+九碳烯醛	jiǔ tàn xī quán	1
+久置乙醚	jiǔ zhì yǐ mí	7
 聚氨基酸	jù ān jī suān	15
 聚氨酯板	jù ān zhǐ bǎn	15
 聚氨酯厂	jù ān zhǐ chǎng	1
@@ -5707,13 +6202,19 @@ sort: by_weight
 聚苯硫醚	jù běn liú mí	25
 聚苯乙烯	jù běn yǐ xī	47
 聚丙二醇	jù bǐng èr chún	8
+聚丙烯管	jù bǐng xī guǎn	17
 聚丙烯腈	jù bǐng xī jīng	26
+聚丙烯类	jù bǐng xī lèi	7
+聚丙烯酸	jù bǐng xī suān	28
 聚醋酸乙	jù cù suān yǐ	10
+聚丁二炔	jù dīng èr quē	1
+聚丁二烯	jù dīng èr xī	16
 聚钒酸铵	jù fán suān ǎn	8
 聚芳酰胺	jù fāng xiān àn	8
 聚氟乙烯	jù fú yǐ xī	37
 聚甘氨酸	jù gān ān suān	1
 聚谷氨酸	jù gǔ ān suān	18
+聚癸二酰	jù guǐ èr xiān	1
 聚硅酸盐	jù guī suān yán	1
 聚硅氧烷	jù guī yǎng wán	30
 聚合酶和	jù hé méi hé	21
@@ -5732,12 +6233,15 @@ sort: by_weight
 聚氯硫醚	jù lǜ liú mí	8
 聚氯乙烯	jù lǜ yǐ xī	50
 居锰酸钾	jū měng suān jiǎ	6
+聚醚毒素	jù mí dú sù	4
 聚醚醚酮	jù mí mí tóng	24
+聚醚树脂	jù mí shù zhī	1
 聚尿苷酸	jù niào gān suān	1
 聚脯氨酸	jù pú ān suān	17
 聚氢氰酸	jù qīng qíng suān	1
 聚氰酸盐	jù qíng suān yán	5
 巨球蛋白	jù qiú dàn bái	11
+聚醛树脂	jù quán shù zhī	3
 聚山梨醇	jù shān lí chún	14
 聚丝氨酸	jù sī ān suān	8
 聚四氟乙	jù sì fú yǐ	11
@@ -5755,6 +6259,7 @@ sort: by_weight
 聚乙醇酸	jù yǐ chún suān	11
 聚异丁烯	jù yì dīng xī	25
 聚乙二醇	jù yǐ èr chún	38
+聚乙二烯	jù yǐ èr xī	1
 聚乙烯胺	jù yǐ xī àn	7
 聚乙烯板	jù yǐ xī bǎn	12
 聚乙烯醇	jù yǐ xī chún	40
@@ -5787,6 +6292,7 @@ sort: by_weight
 抗千眼醇	kàng qiān yǎn chún	10
 抗氰呼吸	kàng qíng hū xī	2
 抗球蛋白	kàng qiú dàn bái	5
+糠醛树脂	kāng quán shù zhī	10
 抗醛缩酶	kàng quán suō méi	10
 糠酸丁酯	kāng suān dīng zhǐ	5
 糠酸甲酯	kāng suān jiǎ zhǐ	9
@@ -5809,6 +6315,7 @@ sort: by_weight
 克霉唑霜	kè méi zuò shuāng	26
 可溶脂酶	kě róng zhī méi	10
 克烷基化	kè wán jī huà	7
+克酰基化	kè xiān jī huà	8
 壳硬蛋白	ké yìng dàn bái	10
 可阻遏酶	kě zǔ è méi	10
 克唑替尼	kè zuò tì ní	32
@@ -5926,7 +6433,6 @@ sort: by_weight
 邻氯苯酸	lín lǜ běn suān	9
 邻氯代苯	lín lǜ dài běn	4
 邻氯甲苯	lín lǜ jiǎ běn	6
-磷氯铅矿	lín lǜ qiān kuàng	23
 磷钼酸铵	lín mù suān ǎn	19
 磷钼酸氨	lín mù suān ān	10
 磷钼酸钾	lín mù suān jiǎ	6
@@ -6014,11 +6520,14 @@ sort: by_weight
 磷钨酸盐	lín wū suān yán	5
 磷酰胺酶	lín xiān àn méi	1
 磷酰胺酸	lín xiān àn suān	1
+磷酰胆碱	lín xiān dǎn jiǎn	3
 膦酰甲酸	lìn xiān jiǎ suān	1
 磷酰硫酸	lín xiān liú suān	1
 邻硝基苯	lín xiāo jī běn	10
 膦乙酰基	lìn yǐ xiān jī	7
+磷杂乙炔	lín zá yǐ quē	1
 磷脂酶类	lín zhī méi lèi	1
+磷脂酰糖	lín zhī xiān táng	10
 铃兰氨酸	líng lán ān suān	17
 铃兰毒醇	líng lán dú chún	1
 灵芝三醇	líng zhī sān chún	4
@@ -6078,6 +6587,7 @@ sort: by_weight
 六氟磷酸	liù fú lín suān	41
 六氟砷酸	liù fú shēn suān	9
 六氟锑酸	liù fú tī suān	7
+硫富瓦烯	liú fù wǎ xī	4
 六氟乙烷	liù fú yǐ wán	8
 六氟锗酸	liù fú zhě suān	7
 硫化合物	liú huà hé wù	44
@@ -6176,7 +6686,6 @@ sort: by_weight
 硫酸钕𨥙	liú suān nǚ jǐng	5
 硫酸铍钾	liú suān pī jiǎ	8
 硫酸镨铵	liú suān pǔ ǎn	4
-硫酸铅矿	liú suān qiān kuàng	5
 硫酸羟胺	liú suān qiǎng àn	5
 硫酸氢铵	liú suān qīng ǎn	23
 硫酸氢钙	liú suān qīng gài	5
@@ -6237,8 +6746,11 @@ sort: by_weight
 隆甲氯氯	lóng jiǎ lǜ lǜ	1
 龙虾肽酶	lóng xiā tài méi	10
 卤代吡啶	lǔ dài bǐ dìng	7
+卤代烯烃	lǔ dài xī tīng	6
 卤代乙烷	lǔ dài yǐ wán	7
 芦氟沙星	lú fú shā xīng	3
+卤化酰基	lǔ huà xiān jī	1
+卤甲酰基	lǔ jiǎ xiān jī	8
 鲁拉西酮	lǔ lā xī tóng	4
 卤裂合酶	lǔ liè hé méi	7
 卵白蛋白	luǎn bái dàn bái	10
@@ -6257,7 +6769,6 @@ sort: by_weight
 罗格列酮	luó gé liè tóng	29
 洛哌丁胺	luò pài dīng àn	26
 罗哌卡因	luó pài kǎ yīn	22
-氯铵汞矿	lǜ ǎn gǒng kuàng	1
 氯钯酸铵	lǜ bǎ suān ǎn	7
 氯巴占片	lǜ bā zhàn piàn	1
 氯贝丁酯	lǜ bèi dīng zhǐ	14
@@ -6320,7 +6831,6 @@ sort: by_weight
 氯底酚胺	lǜ dǐ fēn àn	5
 氯地孕酮	lǜ dì yùn tóng	14
 氯碘喹啉	lǜ diǎn kuí lín	1
-氯碘铅矿	lǜ diǎn qiān kuàng	1
 氯碘羟喹	lǜ diǎn qiǎng kuí	11
 氯碘乙烷	lǜ diǎn yǐ wán	5
 氯丁二烯	lǜ dīng èr xī	18
@@ -6401,7 +6911,6 @@ sort: by_weight
 氯磺丙脲	lǜ huáng bǐng niào	25
 氯黄菌素	lǜ huáng jūn sù	10
 氯己定碘	lǜ jǐ dìng diǎn	2
-氯钾铵矿	lǜ jiǎ ǎn kuàng	6
 氯甲苯胺	lǜ jiǎ běn àn	8
 氯甲苯酚	lǜ jiǎ běn fēn	1
 氯甲喋呤	lǜ jiǎ dié lìng	4
@@ -6450,7 +6959,6 @@ sort: by_weight
 氯哌噻吨	lǜ pài sāi dūn	3
 氯哌斯汀	lǜ pài sī tīng	3
 氯硼钠石	lǜ péng nà shí	7
-氯硼铜矿	lǜ péng tóng kuàng	1
 氯硼铜石	lǜ péng tóng shí	8
 氯泼尼醇	lǜ pō ní chún	1
 氯普噻吨	lǜ pǔ sāi dūn	9
@@ -6467,7 +6975,6 @@ sort: by_weight
 氯肉桂酸	lǜ ròu guì suān	5
 氯噻西泮	lǜ sāi xī pàn	9
 氯沙坦钾	lǜ shā tǎn jiǎ	18
-氯砷铅矿	lǜ shēn qiān kuàng	1
 氯十八酸	lǜ shí bā suān	6
 氯水杨酸	lǜ shuǐ yáng suān	10
 氯四环素	lǜ sì huán sù	7
@@ -6477,8 +6984,6 @@ sort: by_weight
 氯碳头孢	lǜ tàn tóu bāo	9
 氯羰基化	lǜ tāng jī huà	1
 氯替泼诺	lǜ tì pō nuò	3
-氯锑铅矿	lǜ tī qiān kuàng	9
-氯铜铅矿	lǜ tóng qiān kuàng	5
 氯铜硝石	lǜ tóng xiāo shí	8
 氯𬭩离子	lǜ wēng lí zǐ	4
 氯烯雌醚	lǜ xī cí mí	3
@@ -6490,7 +6995,6 @@ sort: by_weight
 氯溴甲苯	lǜ xiù jiǎ běn	8
 氯溴甲烷	lǜ xiù jiǎ wán	6
 氯溴乙烷	lǜ xiù yǐ wán	6
-氯溴银矿	lǜ xiù yín kuàng	1
 氯亚铂酸	lǜ yà bó suān	16
 氯氧化铋	lǜ yǎng huà bì	19
 氯氧化钒	lǜ yǎng huà fán	7
@@ -6524,6 +7028,8 @@ sort: by_weight
 氯唑沙宗	lǜ zuò shā zōng	11
 氯唑西林	lǜ zuò xī lín	20
 吗叮啉片	ma dīng lín piàn	11
+马来酰基	mǎ lái xiān jī	10
+马来酰肼	mǎ lái xiān jǐng	10
 马来酰氯	mǎ lái xiān lǜ	6
 吗啉乙醇	ma lín yǐ chún	7
 吗氯贝胺	ma lǜ bèi àn	22
@@ -6593,6 +7099,7 @@ sort: by_weight
 酶诊断法	méi zhěn duàn fǎ	10
 酶制剂厂	méi zhì jì chǎng	1
 煤制甲醇	méi zhì jiǎ chún	26
+煤制烯烃	méi zhì xī tīng	34
 酶阻遏剂	méi zǔ è jì	10
 酶作用物	méi zuò yòng wù	1
 门冬氨酸	mén dōng ān suān	25
@@ -6613,6 +7120,7 @@ sort: by_weight
 米非司酮	mǐ fēi sī tóng	40
 米格列醇	mǐ gé liè chún	16
 米谷蛋白	mǐ gǔ dàn bái	1
+醚化作用	mí huà zuò yòng	25
 脒基己酸	mǐ jī jǐ suān	6
 脒基硫脲	mǐ jī liú niào	3
 嘧菌环胺	mì jūn huán àn	3
@@ -6670,6 +7178,7 @@ sort: by_weight
 萘乙酰胺	nài yǐ xiān àn	16
 南瓜氨酸	nán guā ān suān	13
 脑啡肽酶	nǎo fēi tài méi	17
+脑羟脂酸	nǎo qiǎng zhī suān	10
 脑衰蛋白	nǎo shuāi dàn bái	16
 脑铜蛋白	nǎo tóng dàn bái	1
 内衬四氟	nèi chèn sì fú	24
@@ -6705,8 +7214,11 @@ sort: by_weight
 尿皮质醇	niào pí zhì chún	13
 鸟嘌呤基	niǎo piào lìng jī	10
 鸟嘌呤酶	niǎo piào lìng méi	1
+脲醛树脂	niào quán shù zhī	36
+尿素甲醛	niào sù jiǎ quán	5
 尿酸结石	niào suān jié shí	33
 尿酸酶体	niào suān méi tǐ	10
+脲乙醛酸	niào yǐ quán suān	10
 尿总蛋白	niào zǒng dàn bái	3
 凝乳酶原	níng rǔ méi yuán	10
 凝血恶烷	níng xuè è wán	15
@@ -6809,6 +7321,7 @@ sort: by_weight
 平蛋白质	píng dàn bái zhì	5
 苹果酸酶	píng guǒ suān méi	7
 苹果酰胺	píng guǒ xiān àn	10
+苹果酰基	píng guǒ xiān jī	10
 萍蓬草胺	píng péng cǎo àn	5
 苹婆炔酸	píng pó quē suān	10
 钷化合物	pǒ huà hé wù	7
@@ -6822,16 +7335,20 @@ sort: by_weight
 普拉睾酮	pǔ lā gāo tóng	12
 普鲁苯辛	pǔ lǔ běn xīn	18
 普鲁兰酶	pǔ lǔ lán méi	7
+普罗雌烯	pǔ luó cí xī	5
 普罗吩胺	pǔ luó fēn àn	9
 普罗帕酮	pǔ luó pà tóng	27
 普罗托醇	pǔ luó tuō chún	8
 普诺地嗪	pǔ nuò dì qín	1
 扑疟喹啉	pū nüè kuí lín	7
+葡醛内酯	pú quán nèi zhǐ	12
+葡醛酸钠	pú quán suān nà	1
 葡糖胺醇	pú táng àn chún	10
 葡糖苯腙	pú táng běn zōng	10
 葡糖苷酶	pú táng gān méi	19
 葡糖苷酸	pú táng gān suān	22
 葡糖激酶	pú táng jī méi	7
+葡糖醛酸	pú táng quán suān	28
 葡糖酮酸	pú táng tóng suān	10
 葡萄糖胺	pú táo táng àn	36
 齐墩果烷	qí dūn guǒ wán	11
@@ -6863,14 +7380,21 @@ sort: by_weight
 羟苯甲酯	qiǎng běn jiǎ zhǐ	28
 羟苯乙酮	qiǎng běn yǐ tóng	1
 羟苯乙酯	qiǎng běn yǐ zhǐ	12
+羟扁桃酸	qiǎng biǎn táo suān	1
+羟丙茶碱	qiǎng bǐng chá jiǎn	16
+羟丙酰基	qiǎng bǐng xiān jī	10
 羟雌甾酮	qiǎng cí zāi tóng	10
 强蛋白银	qiáng dàn bái yín	19
 羟胆固醇	qiǎng dǎn gù chún	10
 羟胆甾醇	qiǎng dǎn zāi chún	9
+羟丁酸钠	qiǎng dīng suān nà	7
+羟丁酸盐	qiǎng dīng suān yán	1
+羟毒芹碱	qiǎng dú qín jiǎn	10
 羟多巴胺	qiǎng duō bā àn	1
 羟睾甾酮	qiǎng gāo zāi tóng	10
 羟钴胺素	qiǎng gǔ àn sù	10
 羟化酶类	qiǎng huà méi lèi	1
+羟化作用	qiǎng huà zuò yòng	1
 羟基苯胺	qiǎng jī běn àn	5
 羟基苯并	qiǎng jī běn bìng	7
 羟基苯醌	qiǎng jī běn kūn	6
@@ -6878,46 +7402,72 @@ sort: by_weight
 羟基吡啶	qiǎng jī bǐ dìng	25
 羟基苄胺	qiǎng jī biàn àn	7
 羟基丙胺	qiǎng jī bǐng àn	5
+羟基丙基	qiǎng jī bǐng jī	7
 羟基丙腈	qiǎng jī bǐng jīng	10
+羟基丙醛	qiǎng jī bǐng quán	14
+羟基丙酸	qiǎng jī bǐng suān	27
 羟基丙酮	qiǎng jī bǐng tóng	8
 羟基丙烷	qiǎng jī bǐng wán	8
 羟基醋酸	qiǎng jī cù suān	9
 羟基碘苯	qiǎng jī diǎn běn	7
+羟基丁基	qiǎng jī dīng jī	5
+羟基丁醛	qiǎng jī dīng quán	20
+羟基丁酸	qiǎng jī dīng suān	38
 羟基丁酮	qiǎng jī dīng tóng	17
+羟基泛酸	qiǎng jī fàn suān	10
 羟基睾酮	qiǎng jī gāo tóng	8
 羟基癸酸	qiǎng jī guǐ suān	7
+羟基化物	qiǎng jī huà wù	7
 羟基己酸	qiǎng jī jǐ suān	7
+羟基甲基	qiǎng jī jiǎ jī	9
 羟基喹啉	qiǎng jī kuí lín	29
 羟基酪醇	qiǎng jī lào chún	16
 羟基硫胺	qiǎng jī liú àn	10
 羟基氯苯	qiǎng jī lǜ běn	8
 羟基氯喹	qiǎng jī lǜ kuí	18
+羟基萘醌	qiǎng jī nài kūn	7
 羟基萘酸	qiǎng jī nài suān	10
+羟基脲片	qiǎng jī niào piàn	1
 羟基哌啶	qiǎng jī pài dìng	6
 羟基嘌呤	qiǎng jī piào lìng	7
 羟基色酮	qiǎng jī sè tóng	7
+羟基烃酸	qiǎng jī tīng suān	9
 羟基戊酸	qiǎng jī wù suān	7
+羟基烟酸	qiǎng jī yān suān	6
 羟基乙胺	qiǎng jī yǐ àn	6
 羟基乙醇	qiǎng jī yǐ chún	5
 羟基乙腈	qiǎng jī yǐ jīng	6
+羟基乙酸	qiǎng jī yǐ suān	24
 羟基乙烷	qiǎng jī yǐ wán	8
 羟基吲哚	qiǎng jī yǐn duǒ	19
+羟基油酸	qiǎng jī yóu suān	1
+羟甲基脲	qiǎng jiǎ jī niào	7
+羟甲烯龙	qiǎng jiǎ xī lóng	10
 羟甲烟胺	qiǎng jiǎ yān àn	5
 羟甲唑啉	qiǎng jiǎ zuò lín	21
 羟甲唑林	qiǎng jiǎ zuò lín	7
 羟赖氨酸	qiǎng lài ān suān	14
 羟类固醇	qiǎng lèi gù chún	9
 羟氯奎组	qiǎng lǜ kuí zǔ	1
-羟氯铅矿	qiǎng lǜ qiān kuàng	9
 羟吗啡酮	qiǎng mǎ fēi tóng	9
 羟哌替啶	qiǎng pài tì dìng	6
 羟脯氨酸	qiǎng pú ān suān	32
+羟醛缩合	qiǎng quán suō hé	30
 羟色氨酸	qiǎng sè ān suān	24
+羟舒喘宁	qiǎng shū chuǎn níng	9
+羟四环素	qiǎng sì huán sù	8
+羟铁云母	qiǎng tiě yún mǔ	1
 蔷薇苯胺	qiáng wēi běn àn	5
+羟维生素	qiǎng wéi shēng sù	23
+羟喜树碱	qiǎng xǐ shù jiǎn	3
 羟酰辅酶	qiǎng xiān fǔ méi	17
 羟乙磺酸	qiǎng yǐ huáng suān	7
+羟乙基化	qiǎng yǐ jī huà	10
+羟乙酰基	qiǎng yǐ xiān jī	10
+羟自由基	qiǎng zì yóu jī	21
 鞘氨醇酶	qiào ān chún méi	10
 鞘磷脂酶	qiào lín zhī méi	12
+亲二烯体	qīn èr xī tǐ	5
 侵袭性酶	qīn xí xìng méi	3
 氰氨化钙	qíng ān huà gài	22
 氰氨化物	qíng ān huà wù	6
@@ -6955,6 +7505,7 @@ sort: by_weight
 青霉烷砜	qīng méi wán fēng	5
 青哌环素	qīng pài huán sù	6
 氰酸盐类	qíng suān yán lèi	5
+轻烃分离	qīng tīng fēn lí	35
 氰戊菊酯	qíng wù jú zhǐ	22
 氰烯菌酯	qíng xī jūn zhǐ	3
 氰溴甲苯	qíng xiù jiǎ běn	32
@@ -6996,8 +7547,11 @@ sort: by_weight
 曲马唑嗪	qǔ mǎ zuò qín	3
 曲美他嗪	qǔ měi tā qín	32
 曲普利啶	qǔ pǔ lì dìng	9
+去羟肌苷	qù qiǎng jī gān	5
+去羟米松	qù qiǎng mǐ sōng	3
 曲司氯铵	qǔ sī lǜ ǎn	13
 曲托喹酚	qǔ tuō kuí fēn	5
+去氧孕烯	qù yǎng yùn xī	20
 醛变位酶	quán biàn wèi méi	10
 全蛋白质	quán dàn bái zhì	13
 全氟丙酸	quán fú bǐng suān	9
@@ -7023,17 +7577,29 @@ sort: by_weight
 醛连接酶	quán lián jiē méi	10
 全氯乙烯	quán lǜ yǐ xī	14
 犬尿氨酸	quǎn niào ān suān	22
+犬尿烯酸	quǎn niào xī suān	10
 醛歧化酶	quán qí huà méi	10
+醛氢叶酸	quán qīng yè suān	1
+醛水合物	quán shuǐ hé wù	16
+醛酸甲酯	quán suān jiǎ zhǐ	28
+醛酸乙酯	quán suān yǐ zhǐ	28
 醛糖胺醇	quán táng àn chún	10
+醛糖二酸	quán táng èr suān	13
+醛糖糖酸	quán táng táng suān	10
 醛脱氢酶	quán tuō qīng méi	28
 醛氧化酶	quán yǎng huà méi	14
 炔丙基氯	quē bǐng jī lǜ	8
+炔丙基溴	quē bǐng jī xiù	16
+炔丙菊酯	quē bǐng jú zhǐ	18
 炔雌醇片	quē cí chún piàn	18
+炔咪菊酯	quē mī jú zhǐ	5
 炔诺酮片	quē nuò tóng piàn	11
 炔诺孕酮	quē nuò yùn tóng	19
 炔孕酮片	quē yùn tóng piàn	1
 燃料乙醇	rán liào yǐ chún	49
 壬苯醇醚	rén běn chún mí	21
+壬二烯醛	rén èr xī quán	1
+壬二酰基	rén èr xiān jī	10
 人工促酶	rén gōng cù méi	10
 壬基苯酚	rén jī běn fēn	22
 妊马雌酮	rèn mǎ cí tóng	5
@@ -7041,6 +7607,7 @@ sort: by_weight
 壬酸乙酯	rén suān yǐ zhǐ	13
 人血蛋白	rén xuè dàn bái	9
 融合蛋白	róng hé dàn bái	10
+溶解乙炔	róng jiě yǐ quē	9
 溶酶体酶	róng méi tǐ méi	24
 溶于硫酸	róng yú liú suān	16
 溶于乙醇	róng yú yǐ chún	29
@@ -7070,6 +7637,8 @@ sort: by_weight
 软骨糖胺	ruǎn gǔ táng àn	10
 软骨藻酸	ruǎn gǔ zǎo suān	23
 软木醇酸	ruǎn mù chún suān	10
+软酯酰基	ruǎn zhǐ xiān jī	10
+软脂酰基	ruǎn zhī xiān jī	10
 瑞替普酶	ruì tì pǔ méi	1
 弱蛋白银	ruò dàn bái yín	21
 萨姆醇酸	sà mǔ chún suān	10
@@ -7078,6 +7647,7 @@ sort: by_weight
 噻二嗪类	sāi èr qín lèi	1
 噻二唑胺	sāi èr zuò àn	8
 噻二唑基	sāi èr zuò jī	4
+噻吩甲酰	sāi fēn jiǎ xiān	7
 赛庚啶片	sài gēng dìng piàn	5
 赛克利嗪	sài kè lì qín	16
 塞克硝唑	sāi kè xiāo zuò	14
@@ -7143,6 +7713,7 @@ sort: by_weight
 三核苷酸	sān hé gān suān	10
 三甲基苯	sān jiǎ jī běn	7
 三甲双酮	sān jiǎ shuāng tóng	14
+三聚甲醛	sān jù jiǎ quán	10
 三聚磷酸	sān jù lín suān	10
 三聚氰胺	sān jù qíng àn	56
 三聚氰氯	sān jù qíng lǜ	8
@@ -7199,13 +7770,16 @@ sort: by_weight
 三氯乙酯	sān lǜ yǐ zhǐ	8
 三氯蔗糖	sān lǜ zhè táng	37
 三铌酸锂	sān ní suān lǐ	6
+三羟乙基	sān qiǎng yǐ jī	10
 三嗪合成	sān qín hé chéng	5
 三氰化磷	sān qíng huà lín	1
 三十烷醇	sān shí wán chún	12
 三十烷酸	sān shí wán suān	10
 三十一烷	sān shí yī wán	7
+三碳酰肼	sān tàn xiān jǐng	6
 三烷基胺	sān wán jī àn	2
 三烯丙胺	sān xī bǐng àn	9
+三酰甘油	sān xiān gān yóu	32
 三溴苯胺	sān xiù běn àn	4
 三溴苯酚	sān xiù běn fēn	20
 三溴丁烷	sān xiù dīng wán	7
@@ -7223,6 +7797,7 @@ sort: by_weight
 色氨酸酶	sè ān suān méi	3
 色氨酰基	sè ān xiān jī	1
 色苷酸钠	sè gān suān nà	10
+色羟丙钠	sè qiǎng bǐng nà	7
 色酮羧酸	sè tóng suō suān	7
 鲨胆固醇	shā dǎn gù chún	10
 鲨胆甾醇	shā dǎn zāi chún	10
@@ -7250,9 +7825,7 @@ sort: by_weight
 神经氨酸	shén jīng ān suān	16
 神经蛋白	shén jīng dàn bái	10
 神经酰胺	shén jīng xiān àn	44
-砷氯铅矿	shēn lǜ qiān kuàng	9
 肾上腺酸	shèn shàng xiàn suān	4
-砷酸铋矿	shēn suān bì kuàng	7
 砷酸氢汞	shēn suān qīng gǒng	10
 砷酸三钙	shēn suān sān gài	9
 砷酸三钠	shēn suān sān nà	10
@@ -7264,12 +7837,14 @@ sort: by_weight
 生酮作用	shēng tóng zuò yòng	10
 生物醇油	shēng wù chún yóu	22
 生物固氮	shēng wù gù dàn	19
+生物素酰	shēng wù sù xiān	10
 生物脱氮	shēng wù tuō dàn	21
 十八烷醇	shí bā wán chún	17
 十八烷基	shí bā wán jī	16
 十八烷酸	shí bā wán suān	1
 十八烷酰	shí bā wán xiān	10
 十八烯胺	shí bā xī àn	5
+十八烯酸	shí bā xī suān	7
 十二烷醇	shí èr wán chún	9
 十二烷基	shí èr wán jī	25
 十二烷酸	shí èr wán suān	9
@@ -7281,6 +7856,8 @@ sort: by_weight
 十六烷酸	shí liù wán suān	12
 十六烷酰	shí liù wán xiān	10
 十六烷值	shí liù wán zhí	26
+石墨烯基	shí mò xī jī	43
+石墨烯膜	shí mò xī mó	15
 食品酶学	shí pǐn méi xué	10
 十七烷醇	shí qī wán chún	1
 十七烷基	shí qī wán jī	1
@@ -7291,10 +7868,12 @@ sort: by_weight
 十四烷醇	shí sì wán chún	6
 十四烷酸	shí sì wán suān	7
 十四烷酰	shí sì wán xiān	5
+十碳烯醛	shí tàn xī quán	1
 十烷双胺	shí wán shuāng àn	10
 十五烷酮	shí wǔ wán tóng	7
 十一萜醇	shí yī tiē chún	10
 十一烷酸	shí yī wán suān	3
+十一烯酸	shí yī xī suān	12
 食用蛋白	shí yòng dàn bái	30
 受体蛋白	shòu tǐ dàn bái	10
 受体孕酮	shòu tǐ yùn tóng	12
@@ -7350,7 +7929,6 @@ sort: by_weight
 水铝氟石	shuǐ lǚ fú shí	8
 水氯铝石	shuǐ lǜ lǚ shí	8
 水氯镁石	shuǐ lǜ měi shí	11
-水氯铜矿	shuǐ lǜ tóng kuàng	3
 水杨嗪酸	shuǐ yáng qín suān	5
 水杨酸肟	shuǐ yáng suān wò	9
 水杨酰胺	shuǐ yáng xiān àn	16
@@ -7395,6 +7973,7 @@ sort: by_weight
 四甲基苯	sì jiǎ jī běn	9
 四甲基胍	sì jiǎ jī guā	9
 丝胶蛋白	sī jiāo dàn bái	16
+四聚乙醛	sì jù yǐ quán	6
 四联吡啶	sì lián bǐ dìng	6
 四氯苯酚	sì lǜ běn fēn	4
 四氯苯酞	sì lǜ běn tài	5
@@ -7451,6 +8030,7 @@ sort: by_weight
 四氧嘧啶	sì yǎng mì dìng	17
 四唑氮蓝	sì zuò dàn lán	22
 松柏苷酶	sōng bǎi gān méi	10
+素环烯醚	sù huán xī mí	1
 蒜氨酸酶	suàn ān suān méi	18
 酸白蛋白	suān bái dàn bái	10
 酸橙黄酮	suān chéng huáng tóng	10
@@ -7459,12 +8039,15 @@ sort: by_weight
 酸六氨合	suān liù ān hé	1
 蒜硫胺素	suàn liú àn sù	22
 酸清蛋白	suān qīng dàn bái	10
+酸亚硝酰	suān yà xiāo xiān	5
 羧苯磺胺	suō běn huáng àn	12
 缩多氨酸	suō duō ān suān	32
 羧化辅酶	suō huà fǔ méi	10
 羧基苯基	suō jī běn jī	5
 羧基吡啶	suō jī bǐ dìng	5
 梭菌肽酶	suō jūn tài méi	10
+缩醛磷脂	suō quán lín zhī	26
+缩醛树脂	suō quán shù zhī	12
 羧酸吲哚	suō suān yǐn duǒ	6
 羧酸酯酶	suō suān zhǐ méi	14
 羧肽酶类	suō tài méi lèi	5
@@ -7504,6 +8087,7 @@ sort: by_weight
 糖基化酶	táng jī huà méi	19
 糖酵解酶	táng jiào jiě méi	22
 糖鞘氨醇	táng qiào ān chún	1
+糖醛酸盐	táng quán suān yán	10
 糖水解酶	táng shuǐ jiě méi	5
 糖酮酸盐	táng tóng suān yán	10
 糖原合酶	táng yuán hé méi	19
@@ -7524,6 +8108,7 @@ sort: by_weight
 天冬氨酸	tiān dōng ān suān	45
 天冬氨酰	tiān dōng ān xiān	23
 天冬酰胺	tiān dōng xiān àn	32
+甜没药烯	tián méi yào xī	1
 田七氨酸	tián qī ān suān	1
 天仙子胺	tiān xiān zǐ àn	19
 调节蛋白	tiáo jié dàn bái	10
@@ -7533,12 +8118,17 @@ sort: by_weight
 铁硅酸盐	tiě guī suān yán	3
 铁化合物	tiě huà hé wù	41
 铁硫蛋白	tiě liú dàn bái	5
-铁氯铅矿	tiě lǜ qiān kuàng	9
 铁钼蛋白	tiě mù dàn bái	2
 铁氰化钾	tiě qíng huà jiǎ	30
 铁氰化钠	tiě qíng huà nà	16
 铁氰化铁	tiě qíng huà tiě	2
 铁氰化物	tiě qíng huà wù	14
+萜烯树脂	tiē xī shù zhī	12
+烃化作用	tīng huà zuò yòng	32
+烃基金属	tīng jī jīn shǔ	4
+烃类气体	tīng lèi qì tǐ	9
+烃类燃料	tīng lèi rán liào	12
+烃氧羰基	tīng yǎng tāng jī	1
 铜氨溶液	tóng ān róng yè	22
 铜氨纤维	tóng ān xiān wéi	25
 酮醇缩合	tóng chún suō hé	15
@@ -7575,6 +8165,8 @@ sort: by_weight
 头孢氨苄	tóu bāo ān biàn	35
 头孢吡普	tóu bāo bǐ pǔ	7
 头孢吡肟	tóu bāo bǐ wò	25
+头孢丙烯	tóu bāo bǐng xī	23
+头孢布烯	tóu bāo bù xī	14
 头孢氮氟	tóu bāo dàn fú	11
 头孢地嗪	tóu bāo dì qín	16
 头孢呋肟	tóu bāo fū wò	5
@@ -7639,6 +8231,7 @@ sort: by_weight
 脱氢肽酶	tuō qīng tài méi	9
 脱巯基酶	tuō qiú jī méi	1
 脱羧辅酶	tuō suō fǔ méi	7
+脱碳甲醛	tuō tàn jiǎ quán	7
 脱烷基化	tuō wán jī huà	16
 托烷司琼	tuō wán sī qióng	20
 脱酰氨基	tuō xiān ān jī	10
@@ -7648,6 +8241,7 @@ sort: by_weight
 脱氧腺苷	tuō yǎng xiàn gān	10
 脱氧梓醇	tuō yǎng zǐ chún	7
 唾液酸酶	tuò yè suān méi	13
+脱乙酰基	tuō yǐ xiān jī	14
 脱乙酰酶	tuō yǐ xiān méi	24
 外分泌腺	wài fēn mì xiàn	33
 外壳蛋白	wài ké dàn bái	18
@@ -7688,6 +8282,7 @@ sort: by_weight
 乌苯美司	wū běn měi sī	5
 无醇啤酒	wú chún pí jiǔ	30
 无醇燃料	wú chún rán liào	32
+戊二酰基	wù èr xiān jī	10
 物分解酶	wù fēn jiě méi	1
 五氟苯酚	wǔ fú běn fēn	6
 五氟苯酯	wǔ fú běn zhǐ	9
@@ -7740,6 +8335,7 @@ sort: by_weight
 五羟黄酮	wǔ qiǎng huáng tóng	9
 五羟色胺	wǔ qiǎng sè àn	39
 五氰合钴	wǔ qíng hé gǔ	6
+戊炔二酸	wù quē èr suān	5
 无水碘酸	wú shuǐ diǎn suān	5
 无水硅酸	wú shuǐ guī suān	1
 无水甲醇	wú shuǐ jiǎ chún	7
@@ -7747,7 +8343,6 @@ sort: by_weight
 无水乙醇	wú shuǐ yǐ chún	35
 戊酸丙酯	wù suān bǐng zhǐ	8
 戊酸丁酯	wù suān dīng zhǐ	7
-钨酸钙矿	wū suān gài kuàng	6
 戊酸睾酮	wù suān gāo tóng	17
 戊酸甲酯	wù suān jiǎ zhǐ	9
 钨酸亚铊	wū suān yà tā	5
@@ -7755,23 +8350,37 @@ sort: by_weight
 戊酸乙酯	wù suān yǐ zhǐ	9
 戊糖苷酶	wù táng gān méi	10
 乌头酸酶	wū tóu suān méi	24
+戊烯二酸	wù xī èr suān	10
+戊烯二酰	wù xī èr xiān	10
 无盐撑胺	wú yán chēng àn	10
 五乙二醇	wǔ yǐ èr chún	5
+戊乙奎醚	wù yǐ kuí mí	3
 烯胺反应	xī àn fǎn yìng	7
 稀氨溶液	xī ān róng yè	1
 细胞外酶	xì bāo wài méi	5
 西吡氯铵	xī bǐ lǜ ǎn	21
 烯丙雌醇	xī bǐng cí chún	1
 烯丙基苯	xī bǐng jī běn	6
+烯丙基碘	xī bǐng jī diǎn	15
+烯丙基酚	xī bǐng jī fēn	5
 烯丙基氟	xī bǐng jī fú	10
 烯丙基腈	xī bǐng jī jīng	5
+烯丙基硫	xī bǐng jī liú	26
 烯丙基氯	xī bǐng jī lǜ	26
+烯丙基醚	xī bǐng jī mí	6
+烯丙基脲	xī bǐng jī niào	9
 烯丙基氰	xī bǐng jī qíng	7
+烯丙基溴	xī bǐng jī xiù	21
+烯丙菊酯	xī bǐng jú zhǐ	11
 烯丙硫醇	xī bǐng liú chún	9
+烯丙吗啡	xī bǐng mǎ fēi	5
+烯虫乙酯	xī chóng yǐ zhǐ	11
 烯醇化酶	xī chún huà méi	28
 西达本胺	xī dá běn àn	32
 硒代磺酸	xī dài huáng suān	9
 烯啶虫胺	xī dìng chóng àn	14
+烯毒芹碱	xī dú qín jiǎn	1
+烯化反应	xī huà fǎn yìng	8
 矽化合物	xī huà hé wù	7
 醯基辅酶	xī jī fǔ méi	6
 细菌萜醇	xì jūn tiē chún	11
@@ -7780,8 +8389,10 @@ sort: by_weight
 西玛三嗪	xī mǎ sān qín	10
 硒酸高铜	xī suān gāo tóng	9
 硒酸镓十	xī suān jiā shí	7
+烯酸甲酯	xī suān jiǎ zhǐ	10
 矽酸镁铝	xī suān měi lǚ	1
 矽酸乙酯	xī suān yǐ zhǐ	7
+烯碳新材	xī tàn xīn cái	32
 西替利嗪	xī tì lì qín	36
 烯肟菌酯	xī wò jūn zhǐ	1
 烯酰吗啉	xī xiān ma lín	12
@@ -7798,7 +8409,11 @@ sort: by_weight
 腺苷磷酸	xiàn gān lín suān	10
 腺苷酰化	xiàn gān xiān huà	1
 腺苷酰基	xiàn gān xiān jī	10
+酰化试剂	xiān huà shì jì	17
+酰化作用	xiān huà zuò yòng	10
 酰基辅酶	xiān jī fǔ méi	21
+酰基聚炔	xiān jī jù quē	7
+酰基脲类	xiān jī niào lèi	3
 纤连蛋白	xiān lián dàn bái	9
 腺嘧啶核	xiàn mì dìng hé	10
 酰嘧磺隆	xiān mì huáng lóng	5
@@ -7809,6 +8424,7 @@ sort: by_weight
 酰脱氢酶	xiān tuō qīng méi	12
 纤维蛋白	xiān wéi dàn bái	53
 纤维素酶	xiān wéi sù méi	34
+纤维素醚	xiān wéi sù mí	21
 酰亚胺类	xiān yà àn lèi	13
 腺样组织	xiàn yàng zǔ zhī	10
 腺原氨酸	xiàn yuán ān suān	27
@@ -7822,6 +8438,7 @@ sort: by_weight
 硝苯地平	xiāo běn dì píng	39
 小蠹烯醇	xiǎo dù xī chún	1
 小儿氨酚	xiǎo ér ān fēn	11
+硝呋烯腙	xiāo fū xī zōng	1
 消化酶片	xiāo huà méi piàn	3
 硝磺草酮	xiāo huáng cǎo tóng	7
 小茴香醇	xiǎo huí xiāng chún	10
@@ -7901,6 +8518,7 @@ sort: by_weight
 新戊二醇	xīn wù èr chún	32
 辛乙硫醇	xīn yǐ liú chún	8
 锌指蛋白	xīn zhǐ dàn bái	17
+新植二烯	xīn zhí èr xī	1
 星青酶素	xīng qīng méi sù	6
 性腺缺如	xìng xiàn quē rú	3
 胸苷激酶	xiōng gān jī méi	31
@@ -7925,8 +8543,11 @@ sort: by_weight
 溴苯乙酮	xiù běn yǐ tóng	8
 溴苯乙烷	xiù běn yǐ wán	7
 溴丙酰氯	xiù bǐng xiān lǜ	7
+溴丙酰溴	xiù bǐng xiān xiù	10
 溴代丁烷	xiù dài dīng wán	5
+溴代芳烃	xiù dài fāng tīng	4
 溴代烷烃	xiù dài wán tīng	5
+溴代烯烃	xiù dài xī tīng	8
 溴氟甲苯	xiù fú jiǎ běn	7
 溴氟甲烷	xiù fú jiǎ wán	9
 溴氟乙烷	xiù fú yǐ wán	9
@@ -7949,6 +8570,7 @@ sort: by_weight
 溴异戊酸	xiù yì wù suān	6
 溴乙酰胺	xiù yǐ xiān àn	5
 溴乙酰苯	xiù yǐ xiān běn	7
+溴乙酰溴	xiù yǐ xiān xiù	6
 需氧发醇	xū yǎng fā chún	10
 旋花醇酸	xuán huā chún suān	10
 血白蛋白	xuè bái dàn bái	19
@@ -7983,6 +8605,7 @@ sort: by_weight
 芽淀粉酶	yá diàn fěn méi	3
 亚碘酸盐	yà diǎn suān yán	12
 亚碘酰苯	yà diǎn xiān běn	11
+亚碘酰盐	yà diǎn xiān yán	1
 牙氟中毒	yá fú zhòng dú	1
 亚铬酸镍	yà gè suān niè	3
 亚铬酸铜	yà gè suān tóng	12
@@ -8079,6 +8702,7 @@ sort: by_weight
 亚硝态氮	yà xiāo tài dàn	7
 亚硝酰氟	yà xiāo xiān fú	10
 亚溴酸钠	yà xiù suān nà	9
+延胡索酰	yán hú suǒ xiān	13
 烟肼酰胺	yān jǐng xiān àn	5
 燕麦蛋白	yān mài dàn bái	10
 烟嘧磺隆	yān mì huáng lóng	3
@@ -8120,11 +8744,13 @@ sort: by_weight
 岩藻甾醇	yán zǎo zāi chún	14
 胭脂氨酸	yān zhī ān suān	1
 胭脂酮酸	yān zhī tóng suān	10
+氧代丙醛	yǎng dài bǐng quán	1
 氧氮化磷	yǎng dàn huà lín	4
 氧二丙腈	yǎng èr bǐng jīng	9
 氧氟化硼	yǎng fú huà péng	10
 氧氟沙星	yǎng fú shā xīng	41
 氧睾甾酮	yǎng gāo zāi tóng	10
+氧化丙烯	yǎng huà bǐng xī	7
 氧化氮芥	yǎng huà dàn jiè	10
 氧化氮类	yǎng huà dàn lèi	10
 氧化合物	yǎng huà hé wù	37
@@ -8142,8 +8768,17 @@ sort: by_weight
 羊毛蜡酸	yáng máo là suān	10
 羊毛甾醇	yáng máo zāi chún	10
 羊毛甾烷	yáng máo zāi wán	18
+羊毛甾烯	yáng máo zāi xī	7
 杨梅黄酮	yáng méi huáng tóng	24
+洋茉莉醛	yáng mò lì quán	12
+氧气乙炔	yǎng qì yǐ quē	19
 氧氰化汞	yǎng qíng huà gǒng	3
+氧炔吹管	yǎng quē chuī guǎn	3
+氧烯洛尔	yǎng xī luò ěr	12
+氧乙炔焊	yǎng yǐ quē hàn	7
+氧乙炔炬	yǎng yǐ quē jù	1
+氧乙炔气	yǎng yǐ quē qì	12
+氧乙炔焰	yǎng yǐ quē yàn	10
 氧杂蒽酮	yǎng zá ēn tóng	24
 氧杂芑酮	yǎng zá qǐ tóng	10
 扬子乙烯	yáng zǐ yǐ xī	16
@@ -8175,6 +8810,7 @@ sort: by_weight
 异丙硫醇	yì bǐng liú chún	20
 异丙氯肼	yì bǐng lǜ jǐng	1
 异丙嗪片	yì bǐng qín piàn	7
+异丙烯基	yì bǐng xī jī	18
 乙叉二膦	yǐ chā èr lìn	21
 乙叉二氯	yǐ chā èr lǜ	6
 异常蛋白	yì cháng dàn bái	21
@@ -8210,8 +8846,10 @@ sort: by_weight
 乙二醇酯	yǐ èr chún zhǐ	12
 乙二磺酸	yǐ èr huáng suān	6
 乙二醛酶	yǐ èr quán méi	5
+已二烯酸	yǐ èr xī suān	1
 乙二酰氟	yǐ èr xiān fú	6
 乙二酰氯	yǐ èr xiān lǜ	7
+乙二酰脲	yǐ èr xiān niào	8
 乙费景烷	yǐ fèi jǐng wán	11
 一氟化氯	yī fú huà lǜ	9
 一氟化氧	yī fú huà yǎng	8
@@ -8240,9 +8878,11 @@ sort: by_weight
 乙基萘胺	yǐ jī nài àn	9
 乙基哌啶	yǐ jī pài dìng	5
 乙基戊醇	yǐ jī wù chún	7
+乙基戊醛	yǐ jī wù quán	5
 乙基戊烷	yǐ jī wù wán	10
 乙基溴苯	yǐ jī xiù běn	6
 乙基亚胺	yǐ jī yà àn	9
+乙基乙炔	yǐ jī yǐ quē	12
 乙基吲哚	yǐ jī yǐn duǒ	8
 一甲基膦	yī jiǎ jī lìn	9
 乙腈丙酮	yǐ jīng bǐng tóng	14
@@ -8256,6 +8896,7 @@ sort: by_weight
 乙硫氨酸	yǐ liú ān suān	12
 乙硫醇酸	yǐ liú chún suān	6
 异硫氰基	yì liú qíng jī	6
+乙硫酰丙	yǐ liú xiān bǐng	1
 一氯苯酚	yī lǜ běn fēn	6
 一氯醋酸	yī lǜ cù suān	6
 一氯代物	yī lǜ dài wù	24
@@ -8271,6 +8912,7 @@ sort: by_weight
 胰酶解胨	yí méi jiě dòng	10
 胰酶制剂	yí méi zhì jì	15
 依米氨酯	yī mǐ ān zhǐ	1
+乙内酰脲	yǐ nèi xiān niào	27
 异鸟嘌呤	yì niǎo piào lìng	13
 乙哌立松	yǐ pài lì sōng	5
 依普黄酮	yī pǔ huáng tóng	12
@@ -8288,9 +8930,15 @@ sort: by_weight
 伊曲康唑	yī qǔ kāng zuò	42
 乙醛合氨	yǐ quán hé ān	7
 乙醛腈醇	yǐ quán jīng chún	10
+乙醛酸钠	yǐ quán suān nà	10
+乙醛酸盐	yǐ quán suān yán	9
 乙炔丁醇	yǐ quē dīng chún	7
+乙炔化物	yǐ quē huà wù	6
+乙炔化学	yǐ quē huà xué	12
 乙炔基氯	yǐ quē jī lǜ	5
 异炔诺酮	yì quē nuò tóng	18
+乙炔炭黑	yǐ quē tàn hēi	7
+乙炔亚铜	yǐ quē yà tóng	15
 异肉桂酸	yì ròu guì suān	5
 依沙吖啶	yī shā ā dìng	5
 依沙丫啶	yī shā yā dìng	3
@@ -8310,15 +8958,20 @@ sort: by_weight
 依他康唑	yī tā kāng zuò	1
 已糖磷酸	yǐ táng lín suān	1
 异体蛋白	yì tǐ dàn bái	31
+依托孕烯	yī tuō yùn xī	8
 乙烷磺酸	yǐ wán huáng suān	14
 抑胃酶肽	yì wèi méi tài	10
 依维那胺	yī wéi nà àn	4
 异位胰腺	yì wèi yí xiàn	10
+异戊二烯	yì wù èr xī	22
 异戊酸盐	yì wù suān yán	1
 异戊酸酯	yì wù suān zhǐ	6
 异戊烯醇	yì wù xī chún	4
+异戊烯化	yì wù xī huà	14
+异戊烯基	yì wù xī jī	28
 乙烯产量	yǐ xī chǎn liàng	26
 乙烯雌酚	yǐ xī cí fēn	33
+已烯雌酚	yǐ xī cí fēn	10
 乙烯改性	yǐ xī gǎi xìng	7
 乙烯基苯	yǐ xī jī běn	9
 乙烯基醚	yǐ xī jī mí	19
@@ -8345,19 +8998,35 @@ sort: by_weight
 乙酰吡嗪	yǐ xiān bǐ qín	8
 乙酰丙醇	yǐ xiān bǐng chún	7
 乙酰丙嗪	yǐ xiān bǐng qín	12
+乙酰丙醛	yǐ xiān bǐng quán	10
+乙酰丙酸	yǐ xiān bǐng suān	22
 乙酰丙酮	yǐ xiān bǐng tóng	45
+乙酰丙酰	yǐ xiān bǐng xiān	9
 乙酰醋酸	yǐ xiān cù suān	9
+乙酰胆碱	yǐ xiān dǎn jiǎn	49
 乙酰辅酶	yǐ xiān fǔ méi	39
+乙酰呋喃	yǐ xiān fū nán	8
+乙酰化剂	yǐ xiān huà jì	9
 乙酰化酶	yǐ xiān huà méi	25
 乙酰磺胺	yǐ xiān huáng àn	11
 乙酰基胺	yǐ xiān jī àn	9
+乙酰基酚	yǐ xiān jī fēn	6
+乙酰基萘	yǐ xiān jī nài	5
+乙酰肌肽	yǐ xiān jī tài	8
 乙酰酪胺	yǐ xiān lào àn	10
 乙酰磷酸	yǐ xiān lín suān	7
+乙酰硫脲	yǐ xiān liú niào	8
 乙酰咪唑	yǐ xiān mǐ zuò	5
 乙酰萘胺	yǐ xiān nài àn	9
 异腺嘌呤	yì xiàn piào lìng	10
+乙酰肉碱	yǐ xiān ròu jiǎn	13
+乙酰乳酸	yǐ xiān rǔ suān	9
+乙酰噻吩	yǐ xiān sāi fēn	9
 乙酰色胺	yǐ xiān sè àn	5
 乙酰胂胺	yǐ xiān shèn àn	17
+乙酰氧基	yǐ xiān yǎng jī	32
+乙酰乙酸	yǐ xiān yǐ suān	33
+乙酰乙酰	yǐ xiān yǐ xiān	14
 乙酰吲哚	yǐ xiān yǐn duǒ	9
 乙酰酯酶	yǐ xiān zhǐ méi	8
 乙酰唑胺	yǐ xiān zuò àn	31
@@ -8366,6 +9035,7 @@ sort: by_weight
 异辛酸锰	yì xīn suān měng	9
 异雄甾酮	yì xióng zāi tóng	10
 异烟酰胺	yì yān xiān àn	6
+异烟酰肼	yì yān xiān jǐng	10
 一氧化氮	yī yǎng huà dàn	46
 一氧化氟	yī yǎng huà fú	10
 乙氧黄酮	yǐ yǎng huáng tóng	3
@@ -8415,6 +9085,7 @@ sort: by_weight
 荧光蛋白	yíng guāng dàn bái	10
 荧光素酶	yíng guāng sù méi	17
 萤光素酶	yíng guāng sù méi	13
+硬泡聚醚	yìng pào jù mí	7
 硬脂炔酸	yìng zhī quē suān	1
 硬脂酸锰	yìng zhī suān měng	7
 硬脂酰氯	yìng zhī xiān lǜ	1
@@ -8435,6 +9106,7 @@ sort: by_weight
 优球蛋白	yōu qiú dàn bái	5
 油酸酰胺	yóu suān xiān àn	7
 油酸脂酶	yóu suān zhī méi	10
+铀酰离子	yóu xiān lí zǐ	1
 有效磷酸	yǒu xiào lín suān	5
 右旋糖酶	yòu xuán táng méi	10
 油质蛋白	yóu zhì dàn bái	10
@@ -8460,11 +9132,11 @@ sort: by_weight
 月桂酸钠	yuè guì suān nà	7
 月桂酸盐	yuè guì suān yán	15
 月桂酸酯	yuè guì suān zhǐ	17
+月桂烯酸	yuè guì xī suān	6
 月桂酰胺	yuè guì xiān àn	20
 月桂酰氯	yuè guì xiān lǜ	1
 越久越醇	yuè jiǔ yuè chún	26
 孕二烯酮	yùn èr xī tóng	1
-陨氯钛矿	yǔn lǜ tài kuàng	8
 酝酿至醇	yùn niàng zhì chún	6
 孕三烯酮	yùn sān xī tóng	17
 运铁蛋白	yùn tiě dàn bái	16
@@ -8476,9 +9148,11 @@ sort: by_weight
 孕烷三醇	yùn wán sān chún	1
 孕烯醇酮	yùn xī chún tóng	29
 孕烯二酮	yùn xī èr tóng	1
+孕烯诺龙	yùn xī nuò lóng	1
 孕甾二醇	yùn zāi èr chún	10
 孕甾二酮	yùn zāi èr tóng	10
 孕甾三醇	yùn zāi sān chún	10
+孕甾烯醛	yùn zāi xī quán	10
 杂蛋白石	zá dàn bái shí	7
 杂多糖酶	zá duō táng méi	10
 载体蛋白	zài tǐ dàn bái	10
@@ -8523,7 +9197,9 @@ sort: by_weight
 脂氨基酸	zhī ān jī suān	10
 脂蛋白血	zhī dàn bái xuè	1
 脂肪酶原	zhī fáng méi yuán	10
+脂肪酰基	zhī fáng xiān jī	12
 脂肪族胺	zhī fáng zú àn	12
+脂肪族烃	zhī fáng zú tīng	14
 指化合物	zhǐ huà hé wù	36
 致幻色胺	zhì huàn sè àn	6
 支架蛋白	zhī jià dàn bái	7
@@ -8586,6 +9262,7 @@ sort: by_weight
 转甲酰酶	zhuǎn jiǎ xiān méi	10
 转磷酸化	zhuǎn lín suān huà	9
 转磷酸酶	zhuǎn lín suān méi	10
+转磷脂酰	zhuǎn lín zhī xiān	10
 转脒基酶	zhuǎn mǐ jī méi	10
 转眯基酶	zhuǎn mī jī méi	10
 转醛醇酶	zhuǎn quán chún méi	7
@@ -8605,6 +9282,7 @@ sort: by_weight
 锥虫胂胺	zhuī chóng shèn àn	15
 紫胶蜡酸	zǐ jiāo là suān	10
 紫菌红醇	zǐ jūn hóng chún	10
+紫菌红醚	zǐ jūn hóng mí	10
 紫罗兰酮	zǐ luó lán tóng	22
 紫铆黄酮	zǐ mǎo huáng tóng	10
 紫尿酸胺	zǐ niào suān àn	16
@@ -8612,12 +9290,14 @@ sort: by_weight
 滋味醇厚	zī wèi chún hòu	47
 滋味鲜醇	zī wèi xiān chún	28
 总胆固醇	zǒng dǎn gù chún	47
+棕榈酰基	zōng lǘ xiān jī	10
 组氨和类	zǔ ān hé lèi	1
 组氨酸酶	zǔ ān suān méi	9
 组氨酸尿	zǔ ān suān niào	1
 组氨酰基	zǔ ān xiān jī	10
 组蛋白类	zǔ dàn bái lèi	3
 阻遏蛋白	zǔ è dàn bái	19
+组合聚醚	zǔ hé jù mí	24
 阻绿蛋白	zǔ lǜ dàn bái	10
 组球蛋白	zǔ qiú dàn bái	1
 阻抑蛋白	zǔ yì dàn bái	8
@@ -8642,6 +9322,7 @@ sort: by_weight
 阿魏酸哌嗪	ā wèi suān pài qín	1
 艾杜糖醛酸	ài dù táng quán suān	1
 爱喝浓硫酸	ài hē nóng liú suān	1
+爱抗宁甲醚	ài kàng níng jiǎ mí	1
 艾司氯胺酮	ài sī lǜ àn tóng	1
 氨苯恶唑啉	ān běn è zuò lín	1
 氨苯𫫇唑啉	ān běn ě zuò lín	1
@@ -8777,9 +9458,12 @@ sort: by_weight
 氨巯基嘌呤	ān qiú jī piào lìng	1
 氨羧络合剂	ān suō luò hé jì	1
 氨糖软骨素	ān táng ruǎn gǔ sù	1
+安息香丁醚	ān xī xiāng dīng mí	1
+安息香甲醚	ān xī xiāng jiǎ mí	1
 安息香酸铵	ān xī xiāng suān ǎn	1
 安息香酸钙	ān xī xiāng suān gài	1
 安息香酸钠	ān xī xiāng suān nà	1
+安息香乙醚	ān xī xiāng yǐ mí	1
 氨熏晒图纸	ān xūn shài tú zhǐ	1
 氨氧化反应	ān yǎng huà fǎn yìng	1
 氨液分离器	ān yè fēn lí qì	1
@@ -8795,6 +9479,7 @@ sort: by_weight
 巴豆酸乙酯	bā dòu suān yǐ zhǐ	1
 八氟环丁烷	bā fú huán dīng wán	1
 八氯二丙醚	bā lǜ èr bǐng mí	1
+八羟基壬醛	bā qiǎng jī rén quán	1
 八羰基二钴	bā tāng jī èr gǔ	1
 白氟钙铝石	bái fú gài lǚ shí	1
 白喉抗毒素	bái hóu kàng dú sù	1
@@ -8805,7 +9490,6 @@ sort: by_weight
 百万吨乙烯	bǎi wàn dūn yǐ xī	1
 半胱天冬酶	bàn guāng tiān dōng méi	1
 半胱亚磺酸	bàn guāng yà huáng suān	1
-板硫锑铅矿	bǎn liú tī qiān kuàng	1
 半乳糖二酸	bàn rǔ táng èr suān	1
 半乳糖苷酶	bàn rǔ táng gān méi	1
 半乳糖激酶	bàn rǔ táng jī méi	1
@@ -9162,18 +9846,12 @@ sort: by_weight
 波西米亚酸	bō xī mǐ yà suān	1
 不饱和聚酯	bù bǎo hé jù zhǐ	1
 不饱和醛酮	bù bǎo hé quán tóng	1
-补充蛋白质	bǔ chōng dàn bái zhì	1
 不纯氧化钴	bù chún yǎng huà gǔ	1
-部分蛋白质	bù fèn dàn bái zhì	1
 补骨脂内酯	bǔ gǔ zhī nèi zhǐ	1
-不含胆固醇	bù hán dǎn gù chún	1
-补胶原蛋白	bǔ jiāo yuán dàn bái	1
 不均匀硫化	bù jūn yún liú huà	1
 布朗斯特酸	bù lǎng sī tè suān	1
 卟啉化合物	bǔ lín huà hé wù	1
 布仑斯惕酸	bù lún sī tì suān	1
-不溶于乙醇	bù róng yú yǐ chún	1
-补糖醇酸奶	bǔ táng chún suān nǎi	1
 草酸二丁酯	cǎo suān èr dīng zhǐ	1
 草酸二甲酯	cǎo suān èr jiǎ zhǐ	1
 草酸二乙酯	cǎo suān èr yǐ zhǐ	1
@@ -9189,33 +9867,21 @@ sort: by_weight
 层状硅酸盐	céng zhuàng guī suān yán	1
 蟾蜍硫堇碱	chán chú liú jǐn jiǎn	1
 产甲烷作用	chǎn jiǎ wán zuò yòng	1
-产生蛋白质	chǎn shēng dàn bái zhì	1
 肠促胰酶素	cháng cù yí méi sù	1
 长链脂肪酸	cháng liàn zhī fáng suān	1
 常温乳酸菌	cháng wēn rǔ suān jūn	1
 长叶薄荷酮	cháng yè bò he tóng	1
 长叶酸藤子	cháng yè suān téng zi	1
-超低硫柴油	chāo dī liú chái yóu	1
-潮汕酸咸菜	cháo shàn suān xián cài	1
-超威碳酸系	chāo wēi tàn suān xì	1
-超细碳酸钙	chāo xì tàn suān gài	1
-潮州酸咸菜	cháo zhōu suān xián cài	1
 沉淀磷酸钙	chén diàn lín suān gài	1
 沉淀碳酸钡	chén diàn tàn suān bèi	1
 沉淀碳酸钙	chén diàn tàn suān gài	1
-吃胶原蛋白	chī jiāo yuán dàn bái	1
 赤糖酸内酯	chì táng suān nèi zhǐ	1
 重铬酸钾法	chóng gè suān jiǎ fǎ	1
 重组蛋白质	chóng zǔ dàn bái zhì	1
+稠环芳香烃	chóu huán fāng xiāng tīng	1
 除虫菊酯类	chú chóng jú zhǐ lèi	1
 除硫球菌目	chú liú qiú jūn mù	1
-出现蛋白尿	chū xiàn dàn bái niào	1
 穿心莲内酯	chuān xīn lián nèi zhǐ	1
-醇厚的口感	chún hòu de kǒu gǎn	1
-醇亲王载沣	chún qīn wáng zǎi fēng	1
-醇香的咖啡	chún xiāng de kā fēi	1
-醇香的美酒	chún xiāng de měi jiǔ	1
-纯一氧化氮	chún yī yǎng huà dàn	1
 雌激素合酶	cí jī sù hé méi	1
 次氯酸甲酯	cì lǜ suān jiǎ zhǐ	1
 次氯酸离子	cì lǜ suān lí zǐ	1
@@ -9231,9 +9897,7 @@ sort: by_weight
 次亚硫酸钠	cì yà liú suān nà	1
 次亚麻油酸	cì yà má yóu suān	1
 粗苯中间槽	cū běn zhōng jiān cáo	1
-粗蛋白含量	cū dàn bái hán liàng	1
 醋磺内酯钾	cù huáng nèi zhǐ jiǎ	1
-促进蛋白质	cù jìn dàn bái zhì	1
 粗硫酸盐皂	cū liú suān yán zào	1
 醋酸白试验	cù suān bái shì yàn	1
 醋酸苯乙酯	cù suān běn yǐ zhǐ	1
@@ -9266,21 +9930,11 @@ sort: by_weight
 醋酸正庚酯	cù suān zhèng gēng zhǐ	1
 醋酸正戊脂	cù suān zhèng wù zhī	1
 醋硝香豆素	cù xiāo xiāng dòu sù	1
-脆硫砷铅矿	cuì liú shēn qiān kuàng	1
-脆硫锑铅矿	cuì liú tī qiān kuàng	1
-脆硫锑铜矿	cuì liú tī tóng kuàng	1
-脆硫铜铋矿	cuì liú tóng bì kuàng	1
-大豆胺基酸	dà dòu àn jī suān	1
-大豆蛋白粉	dà dòu dàn bái fěn	1
-大豆蛋白质	dà dòu dàn bái zhì	1
 大豆异黄酮	dà dòu yì huáng tóng	1
 大风子油酸	dà fēng zǐ yóu suān	1
 大环内酯类	dà huán nèi zhǐ lèi	1
+大黄素甲醚	dà huáng sù jiǎ mí	1
 大黄硝石汤	dà huáng xiāo shí tāng	1
-打了玻尿酸	dǎ le bō niào suān	1
-大量蛋白尿	dà liàng dàn bái niào	1
-大量蛋白质	dà liàng dàn bái zhì	1
-大量磷酸钙	dà liàng lín suān gài	1
 大麻色烯酸	dà má sè xī suān	1
 大蒜吡喃酮	dà suàn bǐ nán tóng	1
 大王酸浆鱿	dà wáng suān jiāng yóu	1
@@ -9293,35 +9947,21 @@ sort: by_weight
 蛋白二聚体	dàn bái èr jù tǐ	1
 蛋白复合体	dàn bái fù hé tǐ	1
 蛋白复合物	dàn bái fù hé wù	1
-蛋白含量高	dàn bái hán liàng gāo	1
-蛋白和蛋黄	dàn bái hé dàn huáng	1
 蛋白结构域	dàn bái jié gòu yù	1
 蛋白磷酸酶	dàn bái lín suān méi	1
 蛋白酶家族	dàn bái méi jiā zú	1
 蛋白三聚体	dàn bái sān jù tǐ	1
 蛋白水解酶	dàn bái shuǐ jiě méi	1
-蛋白杏仁饼	dàn bái xìng rén bǐng	1
 蛋白抑制剂	dàn bái yì zhì jì	1
 蛋白质变性	dàn bái zhì biàn xìng	1
 蛋白质表达	dàn bái zhì biǎo dá	1
-蛋白质补充	dàn bái zhì bǔ chōng	1
-蛋白质部分	dàn bái zhì bù fèn	1
-蛋白质不足	dàn bái zhì bù zú	1
 蛋白质测序	dàn bái zhì cè xù	1
-蛋白质成分	dàn bái zhì chéng fèn	1
 蛋白质纯化	dàn bái zhì chún huà	1
-蛋白质代谢	dàn bái zhì dài xiè	1
 蛋白质电泳	dàn bái zhì diàn yǒng	1
 蛋白质对接	dàn bái zhì duì jiē	1
 蛋白质方法	dàn bái zhì fāng fǎ	1
-蛋白质分解	dàn bái zhì fēn jiě	1
-蛋白质分子	dàn bái zhì fēn zǐ	1
-蛋白质丰富	dàn bái zhì fēng fù	1
 蛋白质工程	dàn bái zhì gōng chéng	1
 蛋白质构造	dàn bái zhì gòu zào	1
-蛋白质过敏	dàn bái zhì guò mǐn	1
-蛋白质合成	dàn bái zhì hé chéng	1
-蛋白质和钙	dàn bái zhì hé gài	1
 蛋白质化学	dàn bái zhì huà xué	1
 蛋白质激酶	dàn bái zhì jī méi	1
 蛋白质家族	dàn bái zhì jiā zú	1
@@ -9329,20 +9969,11 @@ sort: by_weight
 蛋白质结构	dàn bái zhì jié gòu	1
 蛋白质结合	dàn bái zhì jié hé	1
 蛋白质前体	dàn bái zhì qián tǐ	1
-蛋白质缺乏	dàn bái zhì quē fá	1
-蛋白质热量	dàn bái zhì rè liàng	1
-蛋白质食品	dàn bái zhì shí pǐn	1
-蛋白质食物	dàn bái zhì shí wù	1
 蛋白质水解	dàn bái zhì shuǐ jiě	1
-蛋白质水平	dàn bái zhì shuǐ píng	1
-蛋白质饲料	dàn bái zhì sì liào	1
-蛋白质塑料	dàn bái zhì sù liào	1
 蛋白质体学	dàn bái zhì tǐ xué	1
 蛋白质纤维	dàn bái zhì xiān wéi	1
-蛋白质消化	dàn bái zhì xiāo huà	1
 蛋白质序列	dàn bái zhì xù liè	1
 蛋白质亚基	dàn bái zhì yà jī	1
-蛋白质营养	dàn bái zhì yíng yǎng	1
 蛋白质折叠	dàn bái zhì zhé dié	1
 蛋白质阵列	dàn bái zhì zhèn liè	1
 蛋白质组学	dàn bái zhì zǔ xué	1
@@ -9359,18 +9990,6 @@ sort: by_weight
 单碘酪氨酸	dān diǎn lào ān suān	1
 单端孢霉烯	dān duān bāo méi xī	1
 单氟磷酸钠	dān fú lín suān nà	1
-胆固醇沉积	dǎn gù chún chén jī	1
-胆固醇代谢	dǎn gù chún dài xiè	1
-胆固醇过高	dǎn gù chún guò gāo	1
-胆固醇含量	dǎn gù chún hán liàng	1
-胆固醇合成	dǎn gù chún hé chéng	1
-胆固醇结石	dǎn gù chún jié shí	1
-胆固醇偏高	dǎn gù chún piān gāo	1
-胆固醇升高	dǎn gù chún shēng gāo	1
-胆固醇水平	dǎn gù chún shuǐ píng	1
-胆固醇息肉	dǎn gù chún xī ròu	1
-胆固醇血症	dǎn gù chún xuè zhèng	1
-胆固醇增高	dǎn gù chún zēng gāo	1
 氮化铝铟镓	dàn huà lǚ yīn jiā	1
 氮化铟镓铝	dàn huà yīn jiā lǚ	1
 氮基三乙酸	dàn jī sān yǐ suān	1
@@ -9385,16 +10004,11 @@ sort: by_weight
 单磷酸胸苷	dān lín suān xiōng gān	1
 胆硫乳琼脂	dǎn liú rǔ qióng zhī	1
 单氯丙二醇	dān lǜ bǐng èr chún	1
-氮气冰淇淋	dàn qì bīng qí lín	1
-氮气缓冲罐	dàn qì huǎn chōng guàn	1
-氮气压缩机	dàn qì yā suō jī	1
 单羟基黄酮	dān qiǎng jī huáng tóng	1
 丹参酮胶囊	dān shēn tóng jiāo náng	1
-氮水预冷器	dàn shuǐ yù lěng qì	1
 单酸二乙酯	dān suān èr yǐ zhǐ	1
 单酸甘油酯	dān suān gān yóu zhǐ	1
 氮氧化合物	dàn yǎng huà hé wù	1
-氮液蒸馏塔	dàn yè zhēng liú tǎ	1
 单硬脂酸铝	dān yìng zhī suān lǚ	1
 氮杂狄尔斯	dàn zá dí ěr sī	1
 氮杂环丙烷	dàn zá huán bǐng wán	1
@@ -9424,7 +10038,6 @@ sort: by_weight
 低氮燃烧器	dī dàn rán shāo qì	1
 低级脂肪酸	dī jí zhī fáng suān	1
 迪肯制氯法	dí kěn zhì lǜ fǎ	1
-碲硫镍钴矿	dì liú niè gǔ kuàng	1
 地氯雷他定	dì lǜ léi tā dìng	1
 地诺前列酮	dì nuò qián liè tóng	1
 地屈孕酮片	dì qū yùn tóng piàn	1
@@ -9485,6 +10098,7 @@ sort: by_weight
 丁基磺酰胺	dīng jī huáng xiān àn	1
 丁基磺酰氯	dīng jī huáng xiān lǜ	1
 丁基卡必醇	dīng jī kǎ bì chún	1
+丁基乙基醚	dīng jī yǐ jī mí	1
 丁硫基甲基	dīng liú jī jiǎ jī	1
 丁硫克百威	dīng liú kè bǎi wēi	1
 丁炔酸乙酯	dīng quē suān yǐ zhǐ	1
@@ -9505,6 +10119,7 @@ sort: by_weight
 丁烯二酸酐	dīng xī èr suān gān	1
 丁烯酸甲酯	dīng xī suān jiǎ zhǐ	1
 丁酰芬太尼	dīng xiān fēn tài ní	1
+丁香醛双腙	dīng xiāng quán shuāng zōng	1
 丁香酸甲酯	dīng xiāng suān jiǎ zhǐ	1
 丁氧基苯胺	dīng yǎng jī běn àn	1
 丁氧基丙胺	dīng yǎng jī bǐng àn	1
@@ -9518,7 +10133,6 @@ sort: by_weight
 独脚金内酯	dú jiǎo jīn nèi zhǐ	1
 短链脱氢酶	duǎn liàn tuō qīng méi	1
 短链脂肪酸	duǎn liàn zhī fáng suān	1
-短柱硫银矿	duǎn zhù liú yín kuàng	1
 对氨基苯酚	duì ān jī běn fēn	1
 对氨基苯腈	duì ān jī běn jīng	1
 对氨基二硫	duì ān jī èr liú	1
@@ -9610,6 +10224,7 @@ sort: by_weight
 多吃高蛋白	duō chī gāo dàn bái	1
 多酚氧化酶	duō fēn yǎng huà méi	1
 多花酸藤子	duō huā suān téng zi	1
+多环芳香烃	duō huán fāng xiāng tīng	1
 多聚赖氨酸	duō jù lài ān suān	1
 多聚磷酸酯	duō jù lín suān zhǐ	1
 多孔硝酸铵	duō kǒng xiāo suān ǎn	1
@@ -9746,6 +10361,7 @@ sort: by_weight
 二丁基壬烷	èr dīng jī rén wán	1
 二丁基色胺	èr dīng jī sè àn	1
 二蒽醌亚胺	èr ēn kūn yà àn	1
+二芳醚合成	èr fāng mí hé chéng	1
 二酚基丙烷	èr fēn jī bǐng wán	1
 二氟苯甲腈	èr fú běn jiǎ jīng	1
 二氟苯甲醚	èr fú běn jiǎ mí	1
@@ -9967,6 +10583,7 @@ sort: by_weight
 二氯萤光素	èr lǜ yíng guāng sù	1
 二氯硬脂酸	èr lǜ yìng zhī suān	1
 二茂铁丁酸	èr mào tiě dīng suān	1
+二茂铁甲醛	èr mào tiě jiǎ quán	1
 二茂铁甲酸	èr mào tiě jiǎ suān	1
 二没食子酸	èr mò shí zǐ suān	1
 二萘磺酸钠	èr nài huáng suān nà	1
@@ -10150,7 +10767,6 @@ sort: by_weight
 反式粘糠酸	fǎn shì zhān kāng suān	1
 反式脂肪酸	fǎn shì zhī fáng suān	1
 泛素连接酶	fàn sù lián jiē méi	1
-钒酸钾铀矿	fán suān jiǎ yóu kuàng	1
 反硝化反应	fǎn xiāo huà fǎn yìng	1
 反硝化细菌	fǎn xiāo huà xì jūn	1
 反硝化作用	fǎn xiāo huà zuò yòng	1
@@ -10160,9 +10776,10 @@ sort: by_weight
 钒与硫酸铜	fán yǔ liú suān tóng	1
 芳基环己胺	fāng jī huán jǐ àn	1
 芳基磺酸盐	fāng jī huáng suān yán	1
-方硫铁镍矿	fāng liú tiě niè kuàng	1
+芳基烃受体	fāng jī tīng shòu tǐ	1
 芳香环己胺	fāng xiāng huán jǐ àn	1
 芳香聚酰胺	fāng xiāng jù xiān àn	1
+芳香烃受体	fāng xiāng tīng shòu tǐ	1
 防御蛋白质	fáng yù dàn bái zhì	1
 芳族氨基酸	fāng zú ān jī suān	1
 非甲烷总烃	fēi jiǎ wán zǒng tīng	1
@@ -10171,9 +10788,12 @@ sort: by_weight
 非那雄胺片	fēi nà xióng àn piàn	1
 非奈利酮片	fēi nài lì tóng piàn	1
 非偶氮染料	fēi ǒu dàn rǎn liào	1
+非偶轭环烃	fēi ǒu è huán tīng	1
 沸腾床硫化	fèi téng chuáng liú huà	1
+非烃类气体	fēi tīng lèi qì tǐ	1
 飞行石墨烯	fēi xíng shí mò xī	1
 分解蛋白质	fēn jiě dàn bái zhì	1
+酚醚压塑粉	fēn mí yā sù fěn	1
 分支酸途径	fēn zhī suān tú jìng	1
 风成碳酸岩	fēng chéng tàn suān yán	1
 丰富蛋白质	fēng fù dàn bái zhì	1
@@ -10190,6 +10810,7 @@ sort: by_weight
 氟二溴甲烷	fú èr xiù jiǎ wán	1
 复方氨基酸	fù fāng ān jī suān	1
 复方苯甲酸	fù fāng běn jiǎ suān	1
+复方蒿甲醚	fù fāng hāo jiǎ mí	1
 复方氯化钠	fù fāng lǜ huà nà	1
 复方水杨酸	fù fāng shuǐ yáng suān	1
 氟硅化苯胺	fú guī huà běn àn	1
@@ -10216,8 +10837,6 @@ sort: by_weight
 氟联苯硼酸	fú lián běn péng suān	1
 氟邻苯二酚	fú lín běn èr fēn	1
 弗林蛋白酶	fú lín dàn bái méi	1
-副硫锑钴矿	fù liú tī gǔ kuàng	1
-富硫银铁矿	fù liú yín tiě kuàng	1
 弗罗因德酸	fú luó yīn dé suān	1
 氟氯碘甲烷	fú lǜ diǎn jiǎ wán	1
 氟氯碳化物	fú lǜ tàn huà wù	1
@@ -10249,7 +10868,6 @@ sort: by_weight
 麸酸一钠盐	fū suān yī nà yán	1
 氟碳化合物	fú tàn huà hé wù	1
 氟碳漆喷涂	fú tàn qī pēn tú	1
-氟碳酸铈矿	fú tàn suān shì kuàng	1
 氟五氯乙烷	fú wǔ lǜ yǐ wán	1
 氟硝基苯砜	fú xiāo jī běn fēng	1
 氟硝基甲苯	fú xiāo jī jiǎ běn	1
@@ -10306,6 +10924,7 @@ sort: by_weight
 高蛋白饮食	gāo dàn bái yǐn shí	1
 高锝酸亚铊	gāo dé suān yà tā	1
 高碘酸铁钾	gāo diǎn suān tiě jiǎ	1
+高分子聚醚	gāo fēn zǐ jù mí	1
 高甘油三酯	gāo gān yóu sān zhǐ	1
 高钴氰酸钾	gāo gǔ qíng suān jiǎ	1
 高级脂肪酸	gāo jí zhī fáng suān	1
@@ -10332,7 +10951,6 @@ sort: by_weight
 高尿酸患者	gāo niào suān huàn zhě	1
 高尿酸血症	gāo niào suān xuè zhèng	1
 高硼硼酸钙	gāo péng péng suān gài	1
-高品级氨矿	gāo pǐn jí ān kuàng	1
 高碳富勒烯	gāo tàn fù lè xī	1
 高碳酸血症	gāo tàn suān xuè zhèng	1
 高碳脂肪胺	gāo tàn zhī fáng àn	1
@@ -10382,9 +11000,7 @@ sort: by_weight
 古柯间二酸	gǔ kē jiān èr suān	1
 古柯邻二酸	gǔ kē lín èr suān	1
 钴蓝箭毒蛙	gǔ lán jiàn dú wā	1
-钴硫砷铁矿	gǔ liú shēn tiě kuàng	1
 钴酸锂电池	gǔ suān lǐ diàn chí	1
-钴锑硫镍矿	gǔ tī liú niè kuàng	1
 骨质磷酸钙	gǔ zhì lín suān gài	1
 瓜氨酸血症	guā ān suān xuè zhèng	1
 寡聚核苷酸	guǎ jù hé gān suān	1
@@ -10396,10 +11012,8 @@ sort: by_weight
 光合磷酸化	guāng hé lín suān huà	1
 胱天蛋白酶	guāng tiān dàn bái méi	1
 硅氟催化剂	guī fú cuī huà jì	1
-瑰硫方铅矿	guī liú fāng qiān kuàng	1
 硅硫磷灰石	guī liú lín huī shí	1
 桂皮酸苄酯	guì pí suān biàn zhǐ	1
-硅酸钡钛矿	guī suān bèi tài kuàng	1
 癸酸雌二醇	guǐ suān cí èr chún	1
 硅酸二乙酯	guī suān èr yǐ zhǐ	1
 硅酸根离子	guī suān gēn lí zǐ	1
@@ -10422,7 +11036,6 @@ sort: by_weight
 过二硫酸钠	guò èr liú suān nà	1
 过二硫酰氟	guò èr liú xiān fú	1
 过硫酸氢钾	guò liú suān qīng jiǎ	1
-过硫锑铅矿	guò liú tī qiān kuàng	1
 过氯甲硫醇	guò lǜ jiǎ liú chún	1
 过氯酸甲酯	guò lǜ suān jiǎ zhǐ	1
 过氯乙烯漆	guò lǜ yǐ xī qī	1
@@ -10489,14 +11102,13 @@ sort: by_weight
 核纤层蛋白	hé xiān céng dàn bái	1
 和胰蛋白酶	hé yí dàn bái méi	1
 核转运蛋白	hé zhuǎn yùn dàn bái	1
-黑硫铜镍矿	hēi liú tóng niè kuàng	1
-黑硫银锡矿	hēi liú yín xī kuàng	1
 黑色硫化汞	hēi sè liú huà gǒng	1
 黑色素醇溶	hēi sè sù chún róng	1
 黑云碳酸岩	hēi yún tàn suān yán	1
 红色的硝烟	hóng sè de xiāo yān	1
 红色硫化汞	hóng sè liú huà gǒng	1
 胡椒基丙酮	hú jiāo jī bǐng tóng	1
+胡椒基丁醚	hú jiāo jī dīng mí	1
 琥珀酸半醛	hǔ pò suān bàn quán	1
 琥珀酸二钾	hǔ pò suān èr jiǎ	1
 琥珀酸二钠	hǔ pò suān èr nà	1
@@ -10518,7 +11130,9 @@ sort: by_weight
 环丙磺酰氯	huán bǐng huáng xiān lǜ	1
 环丙基甲胺	huán bǐng jī jiǎ àn	1
 环丙基甲醇	huán bǐng jī jiǎ chún	1
+环丙基甲醛	huán bǐng jī jiǎ quán	1
 环丙基羧酸	huán bǐng jī suō suān	1
+环丙基乙炔	huán bǐng jī yǐ quē	1
 环丙氯地孕	huán bǐng lǜ dì yùn	1
 环丙嘧啶酸	huán bǐng mì dìng suān	1
 环丙烷合成	huán bǐng wán hé chéng	1
@@ -10615,7 +11229,6 @@ sort: by_weight
 黄酮类成分	huáng tóng lèi chéng fèn	1
 黄酮类物质	huáng tóng lèi wù zhì	1
 黄酮木脂素	huáng tóng mù zhī sù	1
-灰硫砷铅矿	huī liú shēn qiān kuàng	1
 茴香酮右旋	huí xiāng tóng yòu xuán	1
 茴香酮左旋	huí xiāng tóng zuǒ xuán	1
 混合二甲苯	hùn hé èr jiǎ běn	1
@@ -10623,7 +11236,6 @@ sort: by_weight
 混合磷酸盐	hùn hé lín suān yán	1
 混合酸发酵	hùn hé suān fā jiào	1
 混酸甘油酯	hùn suān gān yóu zhǐ	1
-火硫锑银矿	huǒ liú tī yín kuàng	1
 藿烯环化酶	huò xī huán huà méi	1
 藿香黄酮醇	huò xiāng huáng tóng chún	1
 活性蛋白质	huó xìng dàn bái zhì	1
@@ -11161,6 +11773,7 @@ sort: by_weight
 聚环氧乙烷	jù huán yǎng yǐ wán	1
 聚肌胞苷酸	jù jī bāo gān suān	1
 聚己内酰胺	jù jǐ nèi xiān àn	1
+聚甲酚磺醛	jù jiǎ fēn huáng quán	1
 聚硫密封胶	jù liú mì fēng jiāo	1
 聚氯丁二烯	jù lǜ dīng èr xī	1
 聚氯乙烯板	jù lǜ yǐ xī bǎn	1
@@ -11234,9 +11847,6 @@ sort: by_weight
 口服氟康唑	kǒu fú fú kāng zuò	1
 口服黄体酮	kǒu fú huáng tǐ tóng	1
 苦味酸钠盐	kǔ wèi suān nà yán	1
-块硫砷铜矿	kuài liú shēn tóng kuàng	1
-块硫锑铅矿	kuài liú tī qiān kuàng	1
-块硫锑铜矿	kuài liú tī tóng kuàng	1
 喹啉碘乙烷	kuí lín diǎn yǐ wán	1
 喹啉硫酸盐	kuí lín liú suān yán	1
 奎宁盐酸盐	kuí níng yán suān yán	1
@@ -11346,8 +11956,6 @@ sort: by_weight
 邻联茴香胺	lín lián huí xiāng àn	1
 邻联甲苯胺	lín lián jiǎ běn àn	1
 邻硫代甲酚	lín liú dài jiǎ fēn	1
-磷硫铅铝矿	lín liú qiān lǚ kuàng	1
-磷硫铅铁矿	lín liú qiān tiě kuàng	1
 邻氯苯甲醛	lín lǜ běn jiǎ quán	1
 邻氯苯甲酸	lín lǜ běn jiǎ suān	1
 邻氯苯甲酮	lín lǜ běn jiǎ tóng	1
@@ -11398,7 +12006,6 @@ sort: by_weight
 磷酸化作用	lín suān huà zuò yòng	1
 磷酸可待因	lín suān kě dài yīn	1
 磷酸酪氨酸	lín suān lào ān suān	1
-磷酸锂铁矿	lín suān lǐ tiě kuàng	1
 磷酸酶底物	lín suān méi dǐ wù	1
 磷酸葡萄糖	lín suān pú táo táng	1
 磷酸氢铵钠	lín suān qīng ǎn nà	1
@@ -11478,10 +12085,6 @@ sort: by_weight
 硫胺盐酸盐	liú àn yán suān yán	1
 六苯基二锡	liù běn jī èr xī	1
 六苯基六砷	liù běn jī liù shēn	1
-硫铋锑镍矿	liú bì tī niè kuàng	1
-硫铋锑铜矿	liú bì tī tóng kuàng	1
-硫铋锑银矿	liú bì tī yín kuàng	1
-硫铋铜铅矿	liú bì tóng qiān kuàng	1
 硫标准溶液	liú biāo zhǔn róng yè	1
 硫代氨基脲	liú dài ān jī niào	1
 硫代苯甲酸	liú dài běn jiǎ suān	1
@@ -11586,18 +12189,15 @@ sort: by_weight
 六氟锗酸锂	liù fú zhě suān lǐ	1
 六氟锗酸镁	liù fú zhě suān měi	1
 六氟锗酸银	liù fú zhě suān yín	1
-硫汞银铜矿	liú gǒng yín tóng kuàng	1
 硫含氧酸盐	liú hán yǎng suān yán	1
 硫化铵固体	liú huà ǎn gù tǐ	1
 硫化促进剂	liú huà cù jìn jì	1
-硫化矿精矿	liú huà kuàng jīng kuàng	1
 硫化矿物类	liú huà kuàng wù lèi	1
 硫化磷酸盐	liú huà lín suān yán	1
 硫化氢含量	liú huà qīng hán liàng	1
 硫化氢气体	liú huà qīng qì tǐ	1
 硫化氢试纸	liú huà qīng shì zhǐ	1
 硫化氢中毒	liú huà qīng zhòng dú	1
-硫化铜钒矿	liú huà tóng fán kuàng	1
 硫化物矿物	liú huà wù kuàng wù	1
 硫化物氧化	liú huà wù yǎng huà	1
 硫化延迟剂	liú huà yán chí jì	1
@@ -11616,8 +12216,6 @@ sort: by_weight
 六甲撑四胺	liù jiǎ chēng sì àn	1
 六甲基四胺	liù jiǎ jī sì àn	1
 六甲基乙烷	liù jiǎ jī yǐ wán	1
-硫钾钠铅矿	liú jiǎ nà qiān kuàng	1
-硫磷铝锶矿	liú lín lǚ sī kuàng	1
 硫柳汞钠盐	liú liǔ gǒng nà yán	1
 六硫化二硒	liù liú huà èr xī	1
 六氯钯酸钾	liù lǜ bǎ suān jiǎ	1
@@ -11627,7 +12225,6 @@ sort: by_weight
 六氯锑酸铵	liù lǜ tī suān ǎn	1
 硫氯氩钾钙	liú lǜ yà jiǎ gài	1
 六氯铱酸铵	liù lǜ yī suān ǎn	1
-硫镍铋锑矿	liú niè bì tī kuàng	1
 六偏磷酸钠	liù piān lín suān nà	1
 硫偏磷酸钠	liú piān lín suān nà	1
 六偏磷酸盐	liù piān lín suān yán	1
@@ -11648,10 +12245,6 @@ sort: by_weight
 硫氰酸乙酯	liú qíng suān yǐ zhǐ	1
 硫氢正丁烷	liú qīng zhèng dīng wán	1
 硫色绚孔菌	liú sè xuàn kǒng jūn	1
-硫砷铅铁矿	liú shēn qiān tiě kuàng	1
-硫砷铊铅矿	liú shēn tā qiān kuàng	1
-硫砷锑铅矿	liú shēn tī qiān kuàng	1
-硫砷铜银矿	liú shēn tóng yín kuàng	1
 硫双二氯酚	liú shuāng èr lǜ fēn	1
 六水氯化钙	liù shuǐ lǜ huà gài	1
 六水氯化镁	liù shuǐ lǜ huà měi	1
@@ -11710,21 +12303,9 @@ sort: by_weight
 硫酸乙烯酯	liú suān yǐ xī zhǐ	1
 硫酸铀酰钾	liú suān yóu xiān jiǎ	1
 硫酸紫霉素	liú suān zǐ méi sù	1
-硫碳酸铅矿	liú tàn suān qiān kuàng	1
 硫弹性沥青	liú tán xìng lì qīng	1
-硫锑铋镍矿	liú tī bì niè kuàng	1
-硫锑铋铅矿	liú tī bì qiān kuàng	1
-硫锑锰银矿	liú tī měng yín kuàng	1
-硫锑铅银矿	liú tī qiān yín kuàng	1
-硫锑铁铅矿	liú tī tiě qiān kuàng	1
-硫锑铜银矿	liú tī tóng yín kuàng	1
-硫锑银铅矿	liú tī yín qiān kuàng	1
 六酮环己烷	liù tóng huán jǐ wán	1
-硫铜铅铋矿	liú tóng qiān bì kuàng	1
 硫微螺菌目	liú wēi luó jūn mù	1
-硫硒铋铅矿	liú xī bì qiān kuàng	1
-硫硒铅铋矿	liú xī qiān bì kuàng	1
-硫锡铁铜矿	liú xī tiě tóng kuàng	1
 六硝基联苯	liù xiāo jī lián běn	1
 六硝基乙烷	liù xiāo jī yǐ wán	1
 硫辛酸胆碱	liú xīn suān dǎn jiǎn	1
@@ -11753,7 +12334,6 @@ sort: by_weight
 轮烷命名法	lún wán mìng míng fǎ	1
 落叶松藁酸	luò yè sōng gǎo suān	1
 落叶松蕈酸	luò yè sōng xùn suān	1
-螺状硫银矿	luó zhuàng liú yín kuàng	1
 氯氨基苯腈	lǜ ān jī běn jīng	1
 氯氨基吡啶	lǜ ān jī bǐ dìng	1
 氯胺坚牢红	lǜ àn jiān láo hóng	1
@@ -11946,7 +12526,6 @@ sort: by_weight
 煤制乙二醇	méi zhì yǐ èr chún	1
 门冬酰胺酶	mén dōng xiān àn méi	1
 锰酸锂电池	měng suān lǐ diàn chí	1
-锰钽酸铁矿	měng tǎn suān tiě kuàng	1
 咪苯甲嗪酮	mī běn jiǎ qín tóng	1
 密齿酸藤子	mì chǐ suān téng zi	1
 糜蛋白酶原	mí dàn bái méi yuán	1
@@ -11995,6 +12574,7 @@ sort: by_weight
 萘磺酸钠盐	nài huáng suān nà yán	1
 萘基苯甲酮	nài jī běn jiǎ tóng	1
 萘基吡咯烷	nài jī bǐ gē wán	1
+萘基苄基醚	nài jī biàn jī mí	1
 萘基磷酸酯	nài jī lín suān zhǐ	1
 萘基异丙胺	nài jī yì bǐng àn	1
 萘基乙二胺	nài jī yǐ èr àn	1
@@ -12030,6 +12610,7 @@ sort: by_weight
 尿苷一磷酸	niào gān yī lín suān	1
 脲基丙酸钠	niào jī bǐng suān nà	1
 脲基异丁酸	niào jī yì dīng suān	1
+脲甲醛树脂	niào jiǎ quán shù zhī	1
 尿酸性肾病	niào suān xìng shèn bìng	1
 尿酸盐沉积	niào suān yán chén jī	1
 尿酸盐结晶	niào suān yán jié jīng	1
@@ -12133,6 +12714,7 @@ sort: by_weight
 七甲基壬烷	qī jiǎ jī rén wán	1
 七硫化二铼	qī liú huà èr lái	1
 七羟基黄酮	qī qiǎng jī huáng tóng	1
+七羟基辛醛	qī qiǎng jī xīn quán	1
 七水硫酸钴	qī shuǐ liú suān gǔ	1
 七水硫酸镁	qī shuǐ liú suān měi	1
 七水硫酸锌	qī shuǐ liú suān xīn	1
@@ -12150,6 +12732,8 @@ sort: by_weight
 羟氨基乙酸	qiǎng ān jī yǐ suān	1
 羟胺盐酸盐	qiǎng àn yán suān yán	1
 羟苯丙酮酸	qiǎng běn bǐng tóng suān	1
+羟丙基甲醚	qiǎng bǐng jī jiǎ mí	1
+羟汞化反应	qiǎng gǒng huà fǎn yìng	1
 羟基阿魏酸	qiǎng jī ā wèi suān	1
 羟基氨基酸	qiǎng jī ān jī suān	1
 羟基胞嘧啶	qiǎng jī bāo mì dìng	1
@@ -12230,6 +12814,7 @@ sort: by_weight
 羟基喜树碱	qiǎng jī xǐ shù jiǎn	1
 羟基香豆素	qiǎng jī xiāng dòu sù	1
 羟基香茅醛	qiǎng jī xiāng máo quán	1
+羟基小团子	qiǎng jī xiǎo tuán zi	1
 羟基氧化铝	qiǎng jī yǎng huà lǚ	1
 羟基氧化镍	qiǎng jī yǎng huà niè	1
 羟基氧化铁	qiǎng jī yǎng huà tiě	1
@@ -12263,6 +12848,7 @@ sort: by_weight
 强酸性溶液	qiáng suān xìng róng yè	1
 羟醯基辅酶	qiǎng xī jī fǔ méi	1
 羟乙基苯胺	qiǎng yǐ jī běn àn	1
+羟乙基淀粉	qiǎng yǐ jī diàn fěn	1
 羟乙基二胺	qiǎng yǐ jī èr àn	1
 羟乙基哌嗪	qiǎng yǐ jī pài qín	1
 羟孕烯醇酮	qiǎng yùn xī chún tóng	1
@@ -12288,7 +12874,6 @@ sort: by_weight
 氰基化合物	qíng jī huà hé wù	1
 氰基异噻唑	qíng jī yì sāi zuò	1
 氰基乙酰胺	qíng jī yǐ xiān àn	1
-轻硫砷铅矿	qīng liú shēn qiān kuàng	1
 氢氯化反应	qīng lǜ huà fǎn yìng	1
 氢氯噻嗪片	qīng lǜ sāi qín piàn	1
 氢柠檬酸铅	qīng níng méng suān qiān	1
@@ -12348,6 +12933,7 @@ sort: by_weight
 全氟异丁烯	quán fú yì dīng xī	1
 醛固酮受体	quán gù tóng shòu tǐ	1
 醛固酮系统	quán gù tóng xì tǒng	1
+醛合成反应	quán hé chéng fǎn yìng	1
 醛基苯硼酸	quán jī běn péng suān	1
 全氯丁二烯	quán lǜ dīng èr xī	1
 全氯甲硫醇	quán lǜ jiǎ liú chún	1
@@ -12481,6 +13067,7 @@ sort: by_weight
 三甲基戊烷	sān jiǎ jī wù wán	1
 三甲基戊烯	sān jiǎ jī wù xī	1
 三甲基溴苯	sān jiǎ jī xiù běn	1
+三甲基乙醛	sān jiǎ jī yǐ quán	1
 三甲基乙酸	sān jiǎ jī yǐ suān	1
 三甲基吲哚	sān jiǎ jī yǐn duǒ	1
 三甲基锗烷	sān jiǎ jī zhě wán	1
@@ -12558,6 +13145,7 @@ sort: by_weight
 三氯乙酰胺	sān lǜ yǐ xiān àn	1
 三氯乙酰氯	sān lǜ yǐ xiān lǜ	1
 三偏磷酸钠	sān piān lín suān nà	1
+三羟基蒽醌	sān qiǎng jī ēn kūn	1
 三羟基黄酮	sān qiǎng jī huáng tóng	1
 三羟甲基膦	sān qiǎng jiǎ jī lìn	1
 三羟甲基烷	sān qiǎng jiǎ jī wán	1
@@ -12622,7 +13210,6 @@ sort: by_weight
 神经氨酸酶	shén jīng ān suān méi	1
 神经胺酸酶	shén jīng àn suān méi	1
 神经珠蛋白	shén jīng zhū dàn bái	1
-砷硫铜铁矿	shēn liú tóng tiě kuàng	1
 神秘果蛋白	shén mì guǒ dàn bái	1
 肾上腺皮质	shèn shàng xiàn pí zhì	1
 肾上腺素红	shèn shàng xiàn sù hóng	1
@@ -12868,6 +13455,8 @@ sort: by_weight
 四氯氧化钨	sì lǜ yǎng huà wū	1
 四氯异苯腈	sì lǜ yì běn jīng	1
 四氯荧光素	sì lǜ yíng guāng sù	1
+四羟基蒽醌	sì qiǎng jī ēn kūn	1
+四羟基二硼	sì qiǎng jī èr péng	1
 四羟基黄酮	sì qiǎng jī huáng tóng	1
 四羟基萘胺	sì qiǎng jī nài àn	1
 四氢苯甲醛	sì qīng běn jiǎ quán	1
@@ -13005,6 +13594,7 @@ sort: by_weight
 羧基苯乙酸	suō jī běn yǐ suān	1
 羧基谷氨酸	suō jī gǔ ān suān	1
 羧甲基哌嗪	suō jiǎ jī pài qín	1
+缩水甘油醚	suō shuǐ gān yóu mí	1
 缩水甘油酸	suō shuǐ gān yóu suān	1
 缩水甘油酯	suō shuǐ gān yóu zhǐ	1
 羧酸根离子	suō suān gēn lí zǐ	1
@@ -13040,7 +13630,6 @@ sort: by_weight
 碳氟化合物	tàn fú huà hé wù	1
 碳氯化合物	tàn lǜ huà hé wù	1
 碳青霉烯类	tàn qīng méi xī lèi	1
-碳酸钡锶矿	tàn suān bèi sī kuàng	1
 碳酸丙叉酯	tàn suān bǐng chā zhǐ	1
 碳酸丙二酯	tàn suān bǐng èr zhǐ	1
 碳酸丙烯酯	tàn suān bǐng xī zhǐ	1
@@ -13050,12 +13639,10 @@ sort: by_weight
 碳酸二甲酯	tàn suān èr jiǎ zhǐ	1
 碳酸二乙酯	tàn suān èr yǐ zhǐ	1
 碳酸二乙脂	tàn suān èr yǐ zhī	1
-碳酸钙钡矿	tàn suān gài bèi kuàng	1
 碳酸钙产业	tàn suān gài chǎn yè	1
 碳酸钙超细	tàn suān gài chāo xì	1
 碳酸钙粉末	tàn suān gài fěn mò	1
 碳酸钙颗粒	tàn suān gài kē lì	1
-碳酸钙镁矿	tàn suān gài měi kuàng	1
 钽酸根离子	tǎn suān gēn lí zǐ	1
 碳酸根离子	tàn suān gēn lí zǐ	1
 碳酸化作用	tàn suān huà zuò yòng	1
@@ -13063,7 +13650,6 @@ sort: by_weight
 碳酸锂价格	tàn suān lǐ jià gé	1
 碳酸磷灰石	tàn suān lín huī shí	1
 碳酸吗啡啉	tàn suān mǎ fēi lín	1
-碳酸镁铬矿	tàn suān měi gè kuàng	1
 碳酸钠钙石	tàn suān nà gài shí	1
 碳酸钠晶体	tàn suān nà jīng tǐ	1
 碳酸钠去垢	tàn suān nà qù gòu	1
@@ -13077,7 +13663,6 @@ sort: by_weight
 碳酸氢钠石	tàn suān qīng nà shí	1
 碳酸氢三钠	tàn suān qīng sān nà	1
 碳酸水装置	tàn suān shuǐ zhuāng zhì	1
-碳酸锶铈矿	tàn suān sī shì kuàng	1
 碳酸脱水酶	tàn suān tuō shuǐ méi	1
 碳酸亚乙酯	tàn suān yà yǐ zhǐ	1
 碳酸盐结核	tàn suān yán jié hé	1
@@ -13105,8 +13690,6 @@ sort: by_weight
 特制硫酸钡	tè zhì liú suān bèi	1
 替代苯乙胺	tì dài běn yǐ àn	1
 惕各酸乙酯	tì gè suān yǐ zhǐ	1
-锑硫砷铅矿	tī liú shēn qiān kuàng	1
-锑硫砷铜矿	tī liú shēn tóng kuàng	1
 体内胆固醇	tǐ nèi dǎn gù chún	1
 体内的尿酸	tǐ nèi de niào suān	1
 锑酸葡甲胺	tī suān pú jiǎ àn	1
@@ -13122,10 +13705,13 @@ sort: by_weight
 甜酸苦辣鲜	tián suān kǔ là xiān	1
 萜醇乙酸酯	tiē chún yǐ suān zhǐ	1
 铁结合蛋白	tiě jié hé dàn bái	1
-铁硫砷钻矿	tiě liú shēn zuān kuàng	1
 萜烯酚树脂	tiē xī fēn shù zhī	1
 萜烯七脂酸	tiē xī qī zhī suān	1
 铁氧还蛋白	tiě yǎng hái dàn bái	1
+烃的衍生物	tīng de yǎn shēng wù	1
+烃类混合物	tīng lèi hùn hé wù	1
+烃氧基金属	tīng yǎng jī jīn shǔ	1
+烃源岩层系	tīng yuán yán céng xì	1
 同半胱氨酸	tóng bàn guāng ān suān	1
 同半胱胺酸	tóng bàn guāng àn suān	1
 酮互变异构	tóng hù biàn yì gòu	1
@@ -13229,6 +13815,7 @@ sort: by_weight
 五氮阳离子	wǔ dàn yáng lí zǐ	1
 五叠氮化砷	wǔ dié dàn huà shēn	1
 五叠氮化锑	wǔ dié dàn huà tī	1
+戊二醛溶液	wù èr quán róng yè	1
 戊二酮铝盐	wù èr tóng lǚ yán	1
 戊二烯二酸	wù èr xī èr suān	1
 戊二酰亚胺	wù èr xiān yà àn	1
@@ -13243,6 +13830,7 @@ sort: by_weight
 五氟氧化碘	wǔ fú yǎng huà diǎn	1
 无规聚丙烯	wú guī jù bǐng xī	1
 无机过氧酸	wú jī guò yǎng suān	1
+戊基肉桂醛	wù jī ròu guì quán	1
 无机酸列表	wú jī suān liè biǎo	1
 戊甲撑二胺	wù jiǎ chēng èr àn	1
 五甲基庚烷	wǔ jiǎ jī gēng wán	1
@@ -13256,8 +13844,9 @@ sort: by_weight
 五氯酚苯汞	wǔ lǜ fēn běn gǒng	1
 五氯环丙烷	wǔ lǜ huán bǐng wán	1
 五氯硝基苯	wǔ lǜ xiāo jī běn	1
-钨钼酸铅矿	wū mù suān qiān kuàng	1
 五羟基黄酮	wǔ qiǎng jī huáng tóng	1
+五羟基己醛	wǔ qiǎng jī jǐ quán	1
+无醛固色剂	wú quán gù sè jì	1
 无水醋酸钙	wú shuǐ cù suān gài	1
 无水醋酸锰	wú shuǐ cù suān měng	1
 无水醋酸钠	wú shuǐ cù suān nà	1
@@ -13306,6 +13895,7 @@ sort: by_weight
 无水硝酸锶	wú shuǐ xiāo suān sī	1
 无水亚硒酸	wú shuǐ yà xī suān	1
 无水乙二胺	wú shuǐ yǐ èr àn	1
+无水乙二醛	wú shuǐ yǐ èr quán	1
 无水乙醛酸	wú shuǐ yǐ quán suān	1
 无水乙酸锂	wú shuǐ yǐ suān lǐ	1
 无水乙酸钠	wú shuǐ yǐ suān nà	1
@@ -13358,7 +13948,6 @@ sort: by_weight
 硒甲硫氨酸	xī jiǎ liú ān suān	1
 硒甲硫胺酸	xī jiǎ liú àn suān	1
 锡金酸蔹藤	xī jīn suān liǎn téng	1
-细硫砷铅矿	xì liú shēn qiān kuàng	1
 稀硫酸反应	xī liú suān fǎn yìng	1
 西门木炔酸	xī mén mù quē suān	1
 硒氰酸苄酯	xī qíng suān biàn zhǐ	1
@@ -13386,7 +13975,6 @@ sort: by_weight
 酰基化反应	xiān jī huà fǎn yìng	1
 酰基化合物	xiān jī huà hé wù	1
 酰基转移酶	xiān jī zhuǎn yí méi	1
-纤硫锑铅矿	xiān liú tī qiān kuàng	1
 腺毛酸藤子	xiàn máo suān téng zi	1
 仙茅甜蛋白	xiān máo tián dàn bái	1
 腺嘌呤核苷	xiàn piào lìng hé gān	1
@@ -13398,6 +13986,7 @@ sort: by_weight
 限制内切酶	xiàn zhì nèi qiē méi	1
 香醇的咖啡	xiāng chún de kā fēi	1
 香醇的美酒	xiāng chún de měi jiǔ	1
+降龙涎香醚	xiáng lóng xián xiāng mí	1
 香叶基丙酮	xiāng yè jī bǐng tóng	1
 香叶乙酸酯	xiāng yè yǐ suān zhǐ	1
 香紫苏内酯	xiāng zǐ sū nèi zhǐ	1
@@ -13491,10 +14080,8 @@ sort: by_weight
 硝酰阳离子	xiāo xiān yáng lí zǐ	1
 硝烟的味道	xiāo yān de wèi dào	1
 硝烟的战场	xiāo yān de zhàn chǎng	1
-斜硫锑铅矿	xié liú tī qiān kuàng	1
 辛癸混合酸	xīn guǐ hùn hé suān	1
 辛基磺酸钠	xīn jī huáng suān nà	1
-锌硫锡铅矿	xīn liú xī qiān kuàng	1
 辛烷磺酸钠	xīn wán huáng suān nà	1
 辛酰羟肟酸	xīn xiān qiǎng wò suān	1
 辛酰水杨酸	xīn xiān shuǐ yáng suān	1
@@ -13974,7 +14561,6 @@ sort: by_weight
 乙硫磷酰胺	yǐ liú lín xiān àn	1
 异硫氰酸盐	yì liú qíng suān yán	1
 异硫氰酸酯	yì liú qíng suān zhǐ	1
-异硫锑铅矿	yì liú tī qiān kuàng	1
 乙硫酰丙喹	yǐ liú xiān bǐng kuí	1
 乙硫异烟胺	yǐ liú yì yān àn	1
 一氯代醋酸	yī lǜ dài cù suān	1
@@ -13983,6 +14569,8 @@ sort: by_weight
 一氯乙酰氯	yī lǜ yǐ xiān lǜ	1
 一氯乙锗烷	yī lǜ yǐ zhě wán	1
 异麦芽糖酶	yì mài yá táng méi	1
+乙醚抽出物	yǐ mí chōu chū wù	1
+乙醚络合物	yǐ mí luò hé wù	1
 乙萘磺酸钠	yǐ nài huáng suān nà	1
 异柠檬酸钠	yì níng méng suān nà	1
 异柠檬酸盐	yì níng méng suān yán	1
@@ -14001,10 +14589,16 @@ sort: by_weight
 乙醛酸循环	yǐ quán suān xún huán	1
 乙醛酸乙酯	yǐ quán suān yǐ zhǐ	1
 乙醛脱氢酶	yǐ quán tuō qīng méi	1
+乙醛性质表	yǐ quán xìng zhì biǎo	1
 乙炔雌二醇	yǐ quē cí èr chún	1
 乙炔二羧酸	yǐ quē èr suō suān	1
+乙炔发生器	yǐ quē fā shēng qì	1
+乙炔化合物	yǐ quē huà hé wù	1
 乙炔基吡啶	yǐ quē jī bǐ dìng	1
 乙炔基甲醇	yǐ quē jī jiǎ chún	1
+乙炔聚合物	yǐ quē jù hé wù	1
+乙炔络合物	yǐ quē luò hé wù	1
+乙炔属烃类	yǐ quē shǔ tīng lèi	1
 异噻唑啉酮	yì sāi zuò lín tóng	1
 一水硫酸铜	yì shuǐ liú suān tóng	1
 一水硫酸锌	yì shuǐ liú suān xīn	1
@@ -14059,6 +14653,8 @@ sort: by_weight
 乙酸仲辛酯	yǐ suān zhòng xīn zhǐ	1
 乙烷配合物	yǐ wán pèi hé wù	1
 乙烷正离子	yǐ wán zhèng lí zǐ	1
+乙位萘甲醚	yǐ wèi nài jiǎ mí	1
+乙位萘乙醚	yǐ wèi nài yǐ mí	1
 异维酸胶囊	yì wéi suān jiāo náng	1
 异戊间二烯	yì wù jiān èr xī	1
 异戊酸苄酯	yì wù suān biàn zhǐ	1
@@ -14272,6 +14868,7 @@ sort: by_weight
 油酸甘油脂	yóu suān gān yóu zhī	1
 油酸甘油酯	yóu suān gān yóu zhǐ	1
 右旋苯丙胺	yòu xuán běn bǐng àn	1
+愈创甘油醚	yù chuàng gān yóu mí	1
 鱼肝油酸钠	yú gān yóu suān nà	1
 玉红介芬胺	yù hóng jiè fēn àn	1
 鱼胶原蛋白	yú jiāo yuán dàn bái	1
@@ -14296,8 +14893,6 @@ sort: by_weight
 孕诺二烯醇	yùn nuò èr xī chún	1
 芸苔素内酯	yún tái sù nèi zhǐ	1
 孕酮阴道环	yùn tóng yīn dào huán	1
-杂硫银铁矿	zá liú yín tiě kuàng	1
-杂硫银铜矿	zá liú yín tóng kuàng	1
 载体蛋白质	zài tǐ dàn bái zhì	1
 藻蛋白酸盐	zǎo dàn bái suān yán	1
 藻酸双酯钠	zǎo suān shuāng zhǐ nà	1
@@ -14309,8 +14904,6 @@ sort: by_weight
 樟脑磺酰啶	zhāng nǎo huáng xiān dìng	1
 樟脑硫磺酸	zhāng nǎo liú huáng suān	1
 锗杂乙酸钾	zhě zá yǐ suān jiǎ	1
-针硫铋铅矿	zhēn liú bì qiān kuàng	1
-针硫锑铅矿	zhēn liú tī qiān kuàng	1
 正丁基苯胺	zhèng dīng jī běn àn	1
 正硅酸丁酯	zhèng guī suān dīng zhǐ	1
 正硅酸甲酯	zhèng guī suān jiǎ zhǐ	1
@@ -14343,6 +14936,7 @@ sort: by_weight
 酯交换反应	zhǐ jiāo huàn fǎn yìng	1
 酯类化合物	zhǐ lèi huà hé wù	1
 支链氨基酸	zhī liàn ān jī suān	1
+直链乙炔碳	zhí liàn yǐ quē tàn	1
 酯酶抑制剂	zhǐ méi yì zhì jì	1
 酯缩合反应	zhǐ suō hé fǎn yìng	1
 植物蛋白质	zhí wù dàn bái zhì	1
@@ -14375,7 +14969,6 @@ sort: by_weight
 重铀酸亚铊	zhòng yóu suān yà tā	1
 重质碳酸钙	zhòng zhì tàn suān gài	1
 皱叶酸藤子	zhòu yè suān téng zi	1
-柱硫锑铅矿	zhù liú tī qiān kuàng	1
 猪去氧胆酸	zhū qù yǎng dǎn suān	1
 注射玻尿酸	zhù shè bō niào suān	1
 猪脱氧胆酸	zhū tuō yǎng dǎn suān	1
@@ -14385,8 +14978,6 @@ sort: by_weight
 转氨酶偏高	zhuǎn ān méi piān gāo	1
 转氨酶升高	zhuǎn ān méi shēng gāo	1
 锥序酸脚杆	zhuī xù suān jiǎo gǎn	1
-准硫铀钙矿	zhǔn liú yóu gài kuàng	1
-紫硫镍铁矿	zǐ liú niè tiě kuàng	1
 自然硫矿床	zì rán liú kuàng chuáng	1
 紫杉醇合成	zǐ shān chún hé chéng	1
 紫杉二烯酮	zǐ shān èr xī tóng	1
@@ -14494,7 +15085,9 @@ sort: by_weight
 氨母液二泥泵	ān mǔ yè èr ní bèng	1
 氨气喷泉实验	ān qì pēn quán shí yàn	1
 氨吸收冷却器	ān xī shōu lěng què qì	1
+安息香双甲醚	ān xī xiāng shuāng jiǎ mí	1
 胺乙基亚磺酸	àn yǐ jī yà huáng suān	1
+八羟丙基蔗糖	bā qiǎng bǐng jī zhè táng	1
 八硝基立方烷	bā xiāo jī lì fāng wán	1
 白氨酰甘氨酸	bái ān xiān gān ān suān	1
 白氨酰酪氨酸	bái ān xiān lào ān suān	1
@@ -14504,6 +15097,7 @@ sort: by_weight
 半乳糖酸内酯	bàn rǔ táng suān nèi zhǐ	1
 饱和聚酯树脂	bǎo hé jù zhǐ shù zhī	1
 薄壳玻珠氨基	báo ké bō zhū ān jī	1
+薄壳玻珠醚基	báo ké bō zhū mí jī	1
 薄壳玻珠氰基	báo ké bō zhū qíng jī	1
 薄壳玻珠烷基	báo ké bō zhū wán jī	1
 报知金酸莓奖	bào zhī jīn suān méi jiǎng	1
@@ -14678,6 +15272,7 @@ sort: by_weight
 充满胶原蛋白	chōng mǎn jiāo yuán dàn bái	1
 充油丁苯橡胶	chōng yóu dīng běn xiàng jiāo	1
 重组蛋白疫苗	chóng zǔ dàn bái yì miáo	1
+除茴蒿油内醚	chú huí hāo yóu nèi mí	1
 除硫单胞菌目	chú liú dān bāo jūn mù	1
 疮疱丙酸杆菌	chuāng pào bǐng suān gǎn jūn	1
 垂体肾上腺轴	chuí tǐ shèn shàng xiàn zhóu	1
@@ -14691,7 +15286,6 @@ sort: by_weight
 次氯酸根离子	cì lǜ suān gēn lí zǐ	1
 次氯酸盐滴定	cì lǜ suān yán dī dìng	1
 次没食子酸铋	cì mò shí zǐ suān bì	1
-次碳酸镁铁矿	cì tàn suān měi tiě kuàng	1
 促进胶原蛋白	cù jìn jiāo yuán dàn bái	1
 促进尿酸排出	cù jìn niào suān pái chū	1
 醋醚水杨酰胺	cù mí shuǐ yáng xiān àn	1
@@ -14715,7 +15309,6 @@ sort: by_weight
 醋酸亚砷酸铜	cù suān yà shēn suān tóng	1
 醋酸异丙烯酯	cù suān yì bǐng xī zhǐ	1
 促性腺素释素	cù xìng xiàn sù shì sù	1
-脆硫锑银铅矿	cuì liú tī yín qiān kuàng	1
 大环酯化反应	dà huán zhǐ huà fǎn yìng	1
 单胺神经递质	dān àn shén jīng dì zhì	1
 蛋白核小球藻	dàn bái hé xiǎo qiú zǎo	1
@@ -14765,6 +15358,7 @@ sort: by_weight
 低白蛋白血症	dī bái dàn bái xuè zhèng	1
 碲代亚砷酸盐	dì dài yà shēn suān yán	1
 低活性强酸土	dī huó xìng qiáng suān tǔ	1
+低甲醚化树脂	dī jiǎ mí huà shù zhī	1
 低磷酸酯酶症	dī lín suān zhǐ méi zhèng	1
 低压脱硫部分	dī yā tuō liú bù fèn	1
 低脂蛋白血症	dī zhī dàn bái xuè zhèng	1
@@ -14800,6 +15394,7 @@ sort: by_weight
 丁烯基化合物	dīng xī jī huà hé wù	1
 丁酰胆碱酯酶	dīng xiān dǎn jiǎn zhǐ méi	1
 丁酰乙酸乙酯	dīng xiān yǐ suān yǐ zhǐ	1
+丁香油酚甲醚	dīng xiāng yóu fēn jiǎ mí	1
 丁溴东莨菪碱	dīng xiù dōng làng dàng jiǎn	1
 端聚线苷酸尾	duān jù xiàn gān suān wěi	1
 对氨基苯砷酸	duì ān jī běn shēn suān	1
@@ -14833,6 +15428,8 @@ sort: by_weight
 对氟三氟甲苯	duì fú sān fú jiǎ běn	1
 对磺基苯甲酸	duì huáng jī běn jiǎ suān	1
 堆积硅球氨基	duī jī guī qiú ān jī	1
+堆积硅球醚基	duī jī guī qiú mí jī	1
+堆积硅珠醚基	duī jī guī zhū mí jī	1
 堆积硅珠氰基	duī jī guī zhū qíng jī	1
 堆积硅珠烷基	duī jī guī zhū wán jī	1
 对甲苯胺磺酸	duì jiǎ běn àn huáng suān	1
@@ -15204,6 +15801,7 @@ sort: by_weight
 二羧基苯氧基	èr suō jī běn yǎng jī	1
 二羧基己二酸	èr suō jī jǐ èr suān	1
 二缩三乙二醇	èr suō sān yǐ èr chún	1
+二缩水甘油醚	èr suō shuǐ gān yóu mí	1
 二特丁基苯酚	èr tè dīng jī běn fēn	1
 二特戊基苯酚	èr tè wù jī běn fēn	1
 二烷基硫酸盐	èr wán jī liú suān yán	1
@@ -15489,9 +16087,7 @@ sort: by_weight
 核糖核酸列表	hé táng hé suān liè biǎo	1
 核糖核酸世界	hé táng hé suān shì jiè	1
 核糖基转移酶	hé táng jī zhuǎn yí méi	1
-黑泥碳酸铁矿	hēi ní tàn suān tiě kuàng	1
 很酸的酸橘子	hěn suān de suān jú zi	1
-红硫锑砷钠矿	hóng liú tī shēn nà kuàng	1
 红霉脱氧糖胺	hóng méi tuō yǎng táng àn	1
 红色发烟硝酸	hóng sè fā yān xiāo suān	1
 红色酸洗担体	hóng sè suān xǐ dān tǐ	1
@@ -15536,6 +16132,7 @@ sort: by_weight
 环戊烯并吡啶	huán wù xī bìng bǐ dìng	1
 环腺苷单磷酸	huán xiàn gān dān lín suān	1
 环辛四烯二钾	huán xīn sì xī èr jiǎ	1
+环氧丙基丁醚	huán yǎng bǐng jī dīng mí	1
 环氧乙烷氨化	huán yǎng yǐ wán ān huà	1
 环氧乙烷二酮	huán yǎng yǐ wán èr tóng	1
 环氧乙烷灭菌	huán yǎng yǐ wán miè jūn	1
@@ -15557,7 +16154,6 @@ sort: by_weight
 黄原酸酯合成	huáng yuán suān zhǐ hé chéng	1
 挥发性盐基氮	huī fā xìng yán jī dàn	1
 火成碳酸盐岩	huǒ chéng tàn suān yán yán	1
-火色硫锑银矿	huǒ sè liú tī yín kuàng	1
 肌醇单磷酸酶	jī chún dān lín suān méi	1
 肌醇六磷酸酶	jī chún liù lín suān méi	1
 己二酸二丙酯	jǐ èr suān èr bǐng zhǐ	1
@@ -15617,7 +16213,6 @@ sort: by_weight
 甲基吡嗪羧酸	jiǎ jī bǐ qín suō suān	1
 甲基苄基苯胺	jiǎ jī biàn jī běn àn	1
 甲基丙烯酸钠	jiǎ jī bǐng xī suān nà	1
-甲基丙烯酸尸	jiǎ jī bǐng xī suān shī	1
 甲基丙烯酸铜	jiǎ jī bǐng xī suān tóng	1
 甲基丙烯酸锌	jiǎ jī bǐng xī suān xīn	1
 甲基丙烯酸酯	jiǎ jī bǐng xī suān zhǐ	1
@@ -15869,6 +16464,7 @@ sort: by_weight
 聚合氯化铝铁	jù hé lǜ huà lǚ tiě	1
 聚核糖聚合酶	jù hé táng jù hé méi	1
 聚肌苷酸钾盐	jù jī gān suān jiǎ yán	1
+聚甲酚磺醛栓	jù jiǎ fēn huáng quán shuān	1
 聚甲基苯乙烯	jù jiǎ jī běn yǐ xī	1
 聚磷酸雌二醇	jù lín suān cí èr chún	1
 聚六亚甲基胍	jù liù yà jiǎ jī guā	1
@@ -15926,7 +16522,6 @@ sort: by_weight
 口服胶原蛋白	kǒu fú jiāo yuán dàn bái	1
 口服氯雷他定	kǒu fú lǜ léi tā dìng	1
 跨环过氧化物	kuà huán guò yǎng huà wù	1
-块状硫砷铜矿	kuài zhuàng liú shēn tóng kuàng	1
 矿用聚乙烯管	kuàng yòng jù yǐ xī guǎn	1
 喹啉甲酸乙酯	kuí lín jiǎ suān yǐ zhǐ	1
 赖氨葡锌颗粒	lài ān pú xīn kē lì	1
@@ -16080,7 +16675,6 @@ sort: by_weight
 磷脂酰乙醇胺	lín zhī xiān yǐ chún àn	1
 六氨合碳酸钴	liù ān hé tàn suān gǔ	1
 六苯酚合铁酸	liù běn fēn hé tiě suān	1
-硫铋铜银铅矿	liú bì tóng yín qiān kuàng	1
 六次甲基四胺	liù cì jiǎ jī sì àn	1
 硫代巴比妥酸	liú dài bā bǐ tuǒ suān	1
 硫代半乳糖苷	liú dài bàn rǔ táng gān	1
@@ -16127,6 +16721,7 @@ sort: by_weight
 硫磺岛升旗照	liú huáng dǎo shēng qí zhào	1
 硫基甲基三唑	liú jī jiǎ jī sān zuò	1
 六甲基二硅胺	liù jiǎ jī èr guī àn	1
+六甲基二硅醚	liù jiǎ jī èr guī mí	1
 六甲基二硅烷	liù jiǎ jī èr guī wán	1
 六甲基磷酰胺	liù jiǎ jī lín xiān àn	1
 六甲基乙硅烷	liù jiǎ jī yǐ guī wán	1
@@ -16196,7 +16791,6 @@ sort: by_weight
 硫酸争光霉素	liú suān zhēng guāng méi sù	1
 硫羰代硫羰酸	liú tāng dài liú tāng suān	1
 硫羰基化合物	liú tāng jī huà hé wù	1
-硫锑铋铁铜矿	liú tī bì tiě tóng kuàng	1
 硫醯基尿素类	liú xī jī niào sù lèi	1
 六硝酸甘露醇	liù xiāo suān gān lù chún	1
 六硝酸根合铈	liù xiāo suān gēn hé shì	1
@@ -16206,7 +16800,6 @@ sort: by_weight
 六亚甲基亚胺	liù yà jiǎ jī yà àn	1
 硫氧化还原酶	liú yǎng huà huán yuán méi	1
 硫英硷正长岩	liú yīng jiǎn zhèng zhǎng yán	1
-硫柱辉铜锑矿	liú zhù huī tóng tī kuàng	1
 卤内酯化反应	lǔ nèi zhǐ huà fǎn yìng	1
 洛瑞酸碱理论	luò ruì suān jiǎn lǐ lùn	1
 氯氨基苯甲酸	lǜ ān jī běn jiǎ suān	1
@@ -16362,6 +16955,7 @@ sort: by_weight
 尿苷磷酸钠盐	niào gān lín suān nà yán	1
 脲基甲酸乙酯	niào jī jiǎ suān yǐ zhǐ	1
 脲嘧啶替加氟	niào mì dìng tì jiā fú	1
+尿素甲醛树脂	niào sù jiǎ quán shù zhī	1
 尿素循环酶类	niào sù xún huán méi lèi	1
 尿微量白蛋白	niào wēi liàng bái dàn bái	1
 柠檬甲酸弧菌	níng méng jiǎ suān hú jūn	1
@@ -16418,7 +17012,6 @@ sort: by_weight
 葡萄糖酸锑钠	pú táo táng suān tī nà	1
 葡萄糖酸锌片	pú táo táng suān xīn piàn	1
 葡萄糖酸亚铁	pú táo táng suān yà tiě	1
-普通硫锑铅矿	pǔ tōng liú tī qiān kuàng	1
 七水硫酸亚铁	qī shuǐ liú suān yà tiě	1
 七硝基立方烷	qī xiāo jī lì fāng wán	1
 前列腺素钠盐	qián liè xiàn sù nà yán	1
@@ -16426,11 +17019,14 @@ sort: by_weight
 羟氨苄青霉素	qiǎng ān biàn qīng méi sù	1
 羟苯基甘氨酸	qiǎng běn jī gān ān suān	1
 羟苯基乙酰胺	qiǎng běn jī yǐ xiān àn	1
+羟丙甲纤维素	qiǎng bǐng jiǎ xiān wéi sù	1
 羟丙酸脱氢酶	qiǎng bǐng suān tuō qīng méi	1
 羟二丙基色胺	qiǎng èr bǐng jī sè àn	1
 羟二乙基色胺	qiǎng èr yǐ jī sè àn	1
 羟癸酸脱氢酶	qiǎng guǐ suān tuō qīng méi	1
 羟化三苯基锡	qiǎng huà sān běn jī xī	1
+羟基阿莫沙平	qiǎng jī ā mò shā píng	1
+羟基安非他命	qiǎng jī ān fēi tā mìng	1
 羟基安非他酮	qiǎng jī ān fēi tā tóng	1
 羟基氨基联苯	qiǎng jī ān jī lián běn	1
 羟基苯并噻唑	qiǎng jī běn bìng sāi zuò	1
@@ -16447,29 +17043,44 @@ sort: by_weight
 羟基丁酰苯胺	qiǎng jī dīng xiān běn àn	1
 羟基二苯甲酮	qiǎng jī èr běn jiǎ tóng	1
 羟基吩𫫇嗪酮	qiǎng jī fēn ě qín tóng	1
+羟基芬那西泮	qiǎng jī fēn nà xī pàn	1
+羟基芬纳西泮	qiǎng jī fēn nà xī pàn	1
 羟基汞苯甲酸	qiǎng jī gǒng běn jiǎ suān	1
 羟基环己烯酮	qiǎng jī huán jǐ xī tóng	1
 羟基甲基吡啶	qiǎng jī jiǎ jī bǐ dìng	1
 羟基甲基丁酸	qiǎng jī jiǎ jī dīng suān	1
+羟基甲基糠醛	qiǎng jī jiǎ jī kāng quán	1
+羟基卡替洛尔	qiǎng jī kǎ tì luò ěr	1
 羟基喹啉磺酸	qiǎng jī kuí lín huáng suān	1
 羟基喹啉铜盐	qiǎng jī kuí lín tóng yán	1
 羟基联苯钠盐	qiǎng jī lián běn nà yán	1
+羟基马桑毒素	qiǎng jī mǎ sāng dú sù	1
 羟基牻牛儿醇	qiǎng jī máng niú ér chún	1
+羟基帽柱木碱	qiǎng jī mào zhù mù jiǎn	1
+羟基木犀草素	qiǎng jī mù xī cǎo sù	1
 羟基萘甲酰肼	qiǎng jī nài jiǎ xiān jǐng	1
 羟基犬尿氨酸	qiǎng jī quǎn niào ān suān	1
 羟基十六烷酸	qiǎng jī shí liù wán suān	1
+羟基水甘草碱	qiǎng jī shuǐ gān cǎo jiǎn	1
 羟基水杨酸铅	qiǎng jī shuǐ yáng suān qiān	1
+羟基纤维素钠	qiǎng jī xiān wéi sù nà	1
 羟基硝基吡啶	qiǎng jī xiāo jī bǐ dìng	1
 羟基硝基喹啉	qiǎng jī xiāo jī kuí lín	1
 羟基硝基联苯	qiǎng jī xiāo jī lián běn	1
 羟基雄烯二酮	qiǎng jī xióng xī èr tóng	1
+羟基伊波加明	qiǎng jī yī bō jiā míng	1
 羟基异丁酰胺	qiǎng jī yì dīng xiān àn	1
 羟基乙基吲哚	qiǎng jī yǐ jī yǐn duǒ	1
+羟基依克多因	qiǎng jī yī kè duō yīn	1
 羟基乙酸乙酯	qiǎng jī yǐ suān yǐ zhǐ	1
 羟基吲哚乙酸	qiǎng jī yǐn duǒ yǐ suān	1
 羟基孕烯醇酮	qiǎng jī yùn xī chún tóng	1
+羟甲基淀粉钠	qiǎng jiǎ jī diàn fěn nà	1
+羟甲基糠醛度	qiǎng jiǎ jī kāng quán dù	1
 羟甲氯四环素	qiǎng jiǎ lǜ sì huán sù	1
 羟皮质类固醇	qiǎng pí zhì lèi gù chún	1
+羟醛缩合反应	qiǎng quán suō hé fǎn yìng	1
+羟醛缩和反应	qiǎng quán suō hé fǎn yìng	1
 羟软木三萜酮	qiǎng ruǎn mù sān tiē tóng	1
 羟异丁酰辅酶	qiǎng yì dīng xiān fǔ méi	1
 鞘氨醇杆菌纲	qiào ān chún gǎn jūn gāng	1
@@ -16523,8 +17134,10 @@ sort: by_weight
 去氧甲基睾酮	qù yǎng jiǎ jī gāo tóng	1
 去氧鸟粪酸钠	qù yǎng niǎo fèn suān nà	1
 去氧皮质甾酮	qù yǎng pí zhì zāi tóng	1
+去氧羟四环素	qù yǎng qiǎng sì huán sù	1
 去氧肾上腺素	qù yǎng shèn shàng xiàn sù	1
 去氧血红蛋白	qù yǎng xuè hóng dàn bái	1
+全反式视黄醛	quán fǎn shì shì huáng quán	1
 全反式维甲酸	quán fǎn shì wéi jiǎ suān	1
 全氟丁磺酸根	quán fú dīng huáng suān gēn	1
 全氟丁磺酸盐	quán fú dīng huáng suān yán	1
@@ -16537,6 +17150,7 @@ sort: by_weight
 醛固酮减少症	quán gù tóng jiǎn shǎo zhèng	1
 犬免疫球蛋白	quǎn miǎn yì qiú dàn bái	1
 醛试剂达美酮	quán shì jì dá měi tóng	1
+炔丙基化合物	quē bǐng jī huà hé wù	1
 炔丙基环己烷	quē bǐng jī huán jǐ wán	1
 炔烷基化合物	quē wán jī huà hé wù	1
 热脱硫杆菌纲	rè tuō liú gǎn jūn gāng	1
@@ -16725,7 +17339,6 @@ sort: by_weight
 上海硅酸盐所	shàng hǎi guī suān yán suǒ	1
 少量的蛋白质	shǎo liàng de dàn bái zhì	1
 神经氨酸苷酶	shén jīng ān suān gān méi	1
-砷硫锑铜银矿	shēn liú tī tóng yín kuàng	1
 肾上腺皮质轴	shèn shàng xiàn pí zhì zhóu	1
 肾上腺素受体	shèn shàng xiàn sù shòu tǐ	1
 肾上腺轴激素	shèn shàng xiàn zhóu jī sù	1
@@ -16779,6 +17392,7 @@ sort: by_weight
 双链核糖核酸	shuāng liàn hé táng hé suān	1
 双硫仑样反应	shuāng liú lún yàng fǎn yìng	1
 双马来酰亚胺	shuāng mǎ lái xiān yà àn	1
+双羟基化反应	shuāng qiǎng jī huà fǎn yìng	1
 双氰乙基苯胺	shuāng qíng yǐ jī běn àn	1
 双氰乙氧基苯	shuāng qíng yǐ yǎng jī běn	1
 双去甲替利定	shuāng qù jiǎ tì lì dìng	1
@@ -16796,7 +17410,6 @@ sort: by_weight
 水井酸化处理	shuǐ jǐng suān huà chǔ lǐ	1
 水里的硫化侣	shuǐ lǐ de liú huà lǚ	1
 水溶性酸或碱	shuǐ róng xìng suān huò jiǎn	1
-水碳酸钙铀矿	shuǐ tàn suān gài yóu kuàng	1
 水扬基荧光酮	shuǐ yáng jī yíng guāng tóng	1
 水杨基荧光酮	shuǐ yáng jī yíng guāng tóng	1
 水杨酸冰片酯	shuǐ yáng suān bīng piàn zhǐ	1
@@ -16837,7 +17450,6 @@ sort: by_weight
 四丁基溴化铵	sì dīng jī xiù huà ǎn	1
 四丁基乙酸铵	sì dīng jī yǐ suān ǎn	1
 四方硫化锌型	sì fāng liú huà xīn xíng	1
-四方硫砷铜矿	sì fāng liú shēn tóng kuàng	1
 四氟二氧化氙	sì fú èr yǎng huà xiān	1
 四氟合钆酸铵	sì fú hé gá suān ǎn	1
 四氟合钆酸钠	sì fú hé gá suān nà	1
@@ -17087,7 +17699,6 @@ sort: by_weight
 硒代半胱氨酸	xī dài bàn guāng ān suān	1
 硒代半胱胺酸	xī dài bàn guāng àn suān	1
 硒代亚砷酸盐	xī dài yà shēn suān yán	1
-锡砷硫钒铜矿	xī shēn liú fán tóng kuàng	1
 锡杂环己三烯	xī zá huán jǐ sān xī	1
 锡杂环戊二烯	xī zá huán wù èr xī	1
 酰胺降解反应	xiān àn jiàng jiě fǎn yìng	1
@@ -17100,6 +17711,7 @@ sort: by_weight
 纤维连接蛋白	xiān wéi lián jiē dàn bái	1
 香草基壬酰胺	xiāng cǎo jī rén xiān àn	1
 向导核糖核酸	xiàng dǎo hé táng hé suān	1
+向山羟醛反应	xiàng shān qiǎng quán fǎn yìng	1
 香叶基香叶醇	xiāng yè jī xiāng yè chún	1
 小核核糖核酸	xiǎo hé hé táng hé suān	1
 硝化甘油火药	xiāo huà gān yóu huǒ yào	1
@@ -17154,7 +17766,6 @@ sort: by_weight
 硝酸纤维素纸	xiāo suān xiān wéi sù zhǐ	1
 硝酸异山梨酯	xiāo suān yì shān lí zhǐ	1
 偕二甲基效应	xié èr jiǎ jī xiào yìng	1
-斜方硫锑铅矿	xié fāng liú tī qiān kuàng	1
 心肌肌钙蛋白	xīn jī jī gài dàn bái	1
 辛基甲基吲哚	xīn jī jiǎ jī yǐn duǒ	1
 辛基硫酸钠盐	xīn jī liú suān nà yán	1
@@ -17372,7 +17983,6 @@ sort: by_weight
 氧化硝基吡啶	yǎng huà xiāo jī bǐ dìng	1
 氧化硝基喹啉	yǎng huà xiāo jī kuí lín	1
 氧化锌脱硫槽	yǎng huà xīn tuō liú cáo	1
-氧化型醇酸尸	yǎng huà xíng chún suān shī	1
 氧硫杂环己烷	yǎng liú zá huán jǐ wán	1
 氧硫杂环戊烷	yǎng liú zá huán wù wán	1
 氧杂环庚三烯	yǎng zá huán gēng sān xī	1
@@ -17390,6 +18000,7 @@ sort: by_weight
 异丙氧乙基苯	yì bǐng yǎng yǐ jī běn	1
 异丙原磺酸钾	yì bǐng yuán huáng suān jiǎ	1
 乙醇酸异辛酯	yǐ chún suān yì xīn zhǐ	1
+异狄氏剂甲醛	yì dí shì jì jiǎ quán	1
 一丁酸甘油酯	yī dīng suān gān yóu zhǐ	1
 异丁烯酸甲酯	yì dīng xī suān jiǎ zhǐ	1
 乙二胺配合物	yǐ èr àn pèi hé wù	1
@@ -17489,8 +18100,10 @@ sort: by_weight
 乙醛氨三聚体	yǐ quán ān sān jù tǐ	1
 乙醛缩二乙醇	yǐ quán suō èr yǐ chún	1
 乙炔基雌二醇	yǐ quē jī cí èr chún	1
+乙炔基化合物	yǐ quē jī huà hé wù	1
 乙炔基环己醇	yǐ quē jī huán jǐ chún	1
 乙炔基环戊醇	yǐ quē jī huán wù chún	1
+乙炔类聚合物	yǐ quē lèi jù hé wù	1
 乙酸阿法多龙	yǐ suān ā fǎ duō lóng	1
 乙酸苯基乙酯	yǐ suān běn jī yǐ zhǐ	1
 乙酸第二丁酯	yǐ suān dì èr dīng zhǐ	1
@@ -17519,6 +18132,7 @@ sort: by_weight
 一缩二乙二醇	yì suō èr yǐ èr chún	1
 异戊二烯途径	yì wù èr xī tú jìng	1
 异戊二烯橡胶	yì wù èr xī xiàng jiāo	1
+异戊基苄基醚	yì wù jī biàn jī mí	1
 异戊酸冰片酯	yì wù suān bīng piàn zhǐ	1
 异戊酸薄荷酯	yì wù suān bò he zhǐ	1
 异戊烯基黄酮	yì wù xī jī huáng tóng	1
@@ -17592,7 +18206,6 @@ sort: by_weight
 吲哚羧酸乙酯	yǐn duǒ suō suān yǐ zhǐ	1
 隐伏碳酸盐岩	yǐn fú tàn suān yán yán	1
 银氯化银电极	yín lǜ huà yín diàn jí	1
-硬硫铋铅铜矿	yìng liú bì qiān tóng kuàng	1
 油反应性酯尸	yóu fǎn yìng xìng zhǐ shī	1
 有机叠氮化物	yǒu jī dié dàn huà wù	1
 有机过氧化物	yǒu jī guò yǎng huà wù	1
@@ -17654,10 +18267,7 @@ sort: by_weight
 重铬酸根离子	zhòng gè suān gēn lí zǐ	1
 重铬酸盐滴定	zhòng gè suān yán dī dìng	1
 重铬酸盐电池	zhòng gè suān yán diàn chí	1
-重硫铋铜铅矿	zhòng liú bì tóng qiān kuàng	1
 中性亚砷酸钾	zhōng xìng yà shēn suān jiǎ	1
-柱硫铋铜铅矿	zhù liú bì tóng qiān kuàng	1
-柱硫锑铅银矿	zhù liú tī qiān yín kuàng	1
 注射胶原蛋白	zhù shè jiāo yuán dàn bái	1
 转谷氨酰胺酶	zhuǎn gǔ ān xiān àn méi	1
 转铁蛋白受体	zhuǎn tiě dàn bái shòu tǐ	1
@@ -17676,6 +18286,8 @@ sort: by_weight
 左旋甲状腺素	zuǒ xuán jiǎ zhuàng xiàn sù	1
 左旋葡萄糖酮	zuǒ xuán pú táo táng tóng	1
 左氧氟沙星片	zuǒ yǎng fú shā xīng piàn	1
+埃文斯羟醛反应	āi wén sī qiǎng quán fǎn yìng	1
+埃文思羟醛反应	āi wén sī qiǎng quán fǎn yìng	1
 氨酚柴胡注射液	ān fēn chái hú zhù shè yè	1
 氨酚羟考酮胶囊	ān fēn qiǎng kǎo tóng jiāo náng	1
 氨酚双氢可待因	ān fēn shuāng qīng kě dài yīn	1
@@ -17711,8 +18323,10 @@ sort: by_weight
 白色聚合氯化铝	bái sè jù hé lǜ huà lǚ	1
 半胱氨酸环受体	bàn guāng ān suān huán shòu tǐ	1
 斑蝥酸钠维生素	bān máo suān nà wéi shēng sù	1
+半日花酚碱甲醚	bàn rì huā fēn jiǎn jiǎ mí	1
 半游离二氧化硫	bàn yóu lí èr yǎng huà liú	1
 饱和十八碳酰胺	bǎo hé shí bā tàn xiān àn	1
+包醛氧淀粉胶囊	bāo quán yǎng diàn fěn jiāo náng	1
 苯丙羟基香豆素	běn bǐng qiǎng jī xiāng dòu sù	1
 苯并三氧化呋咱	běn bìng sān yǎng huà fū zán	1
 苯二氮革类药物	běn èr dàn gé lèi yào wù	1
@@ -17744,6 +18358,7 @@ sort: by_weight
 丙氨酸基移换酶	bǐng ān suān jī yí huàn méi	1
 丙氨酰谷氨酰胺	bǐng ān xiān gǔ ān xiān àn	1
 病毒非结构蛋白	bìng dú fēi jié gòu dàn bái	1
+丙二醛二甲缩醛	bǐng èr quán èr jiǎ suō quán	1
 丙二酸二异丙酯	bǐng èr suān èr yì bǐng zhǐ	1
 丙二酸环异丙酯	bǐng èr suān huán yì bǐng zhǐ	1
 丙二酸亚异丙酯	bǐng èr suān yà yì bǐng zhǐ	1
@@ -17839,6 +18454,7 @@ sort: by_weight
 叠氮化四苯基𬭸	dié dàn huà sì běn jī lín	1
 叠氮基乙酸乙酯	dié dàn jī yǐ suān yǐ zhǐ	1
 叠氮磷酸二苯酯	dié dàn lín suān èr běn zhǐ	1
+丁基羟基茴香醚	dīng jī qiǎng jī huí xiāng mí	1
 丁酸氢化可的松	dīng suān qīng huà kě dì sōng	1
 东北酸白菜火锅	dōng běi suān bái cài huǒ guō	1
 东关酸风射眸子	dōng guān suān fēng shè móu zi	1
@@ -17947,6 +18563,7 @@ sort: by_weight
 二十二碳六烯酸	èr shí èr tàn liù xī suān	1
 二十二碳四烯酸	èr shí èr tàn sì xī suān	1
 二十二碳五烯酸	èr shí èr tàn wǔ xī suān	1
+二叔丁氧基乙炔	èr shū dīng yǎng jī yǐ quē	1
 二水基亚磷酸铅	èr shuǐ jī yà lín suān qiān	1
 二羰基琥珀酸根	èr tāng jī hǔ pò suān gēn	1
 二烯丙基二硫醚	èr xī bǐng jī èr liú mí	1
@@ -17982,6 +18599,7 @@ sort: by_weight
 非类固醇消炎药	fēi lèi gù chún xiāo yán yào	1
 肺泡蛋白沉积症	fèi pào dàn bái chén jī zhèng	1
 肺泡蛋白沉着症	fèi pào dàn bái chén zhuó zhèng	1
+非生物成因烃类	fēi shēng wù chéng yīn tīng lèi	1
 分泌免疫球蛋白	fēn mì miǎn yì qiú dàn bái	1
 丰富的优质蛋白	fēng fù de yōu zhì dàn bái	1
 氟比洛芬巴布膏	fú bǐ luò fēn bā bù gāo	1
@@ -18138,6 +18756,7 @@ sort: by_weight
 磺胺间甲氧嘧啶	huáng àn jiān jiǎ yǎng mì dìng	1
 磺胺嘧啶银乳膏	huáng àn mì dìng yín rǔ gāo	1
 磺吡苄头孢菌素	huáng bǐ biàn tóu bāo jūn sù	1
+磺甲基酚醛树脂	huáng jiǎ jī fēn quán shù zhī	1
 混合功能氧化酶	hùn hé gōng néng yǎng huà méi	1
 火成碳酸盐岩浆	huǒ chéng tàn suān yán yán jiāng	1
 己二酸二癸基酯	jǐ èr suān èr guǐ jī zhǐ	1
@@ -18157,7 +18776,9 @@ sort: by_weight
 甲基丙二酰辅酶	jiǎ jī bǐng èr xiān fǔ méi	1
 甲基丙烯酸丁酯	jiǎ jī bǐng xī suān dīng zhǐ	1
 甲基丙烯酸甲酯	jiǎ jī bǐng xī suān jiǎ zhǐ	1
+甲基丙烯酸树脂	jiǎ jī bǐng xī suān shù zhī	1
 甲基丙烯酸乙酯	jiǎ jī bǐng xī suān yǐ zhǐ	1
+甲基第三丁基醚	jiǎ jī dì sān dīng jī mí	1
 甲基二溴戊二腈	jiǎ jī èr xiù wù èr jīng	1
 甲基反丁烯二酸	jiǎ jī fǎn dīng xī èr suān	1
 甲基环戊二烯基	jiǎ jī huán wù èr xī jī	1
@@ -18447,6 +19068,7 @@ sort: by_weight
 三钾二枸橼酸铋	sān jiǎ èr jǔ yuán suān bì	1
 三甲基叠氮硅烷	sān jiǎ jī dié dàn guī wán	1
 三甲基二氯化砷	sān jiǎ jī èr lǜ huà shēn	1
+三甲基硅基乙炔	sān jiǎ jī guī jī yǐ quē	1
 三甲基硅基乙烷	sān jiǎ jī guī jī yǐ wán	1
 三甲基硅基乙烯	sān jiǎ jī guī jī yǐ xī	1
 三甲基一氯硅烷	sān jiǎ jī yī lǜ guī wán	1
@@ -18501,6 +19123,7 @@ sort: by_weight
 受体酪氨酸激酶	shòu tǐ lào ān suān jī méi	1
 受质阶层磷酸化	shòu zhì jiē céng lín suān huà	1
 叔丁基对苯二酚	shū dīng jī duì běn èr fēn	1
+叔丁基磷杂乙炔	shū dīng jī lín zá yǐ quē	1
 双高塔制酸系统	shuāng gāo tǎ zhì suān xì tǒng	1
 双环辛四烯合镎	shuāng huán xīn sì xī hé ná	1
 双环辛四烯合镤	shuāng huán xīn sì xī hé pú	1
@@ -18703,12 +19326,13 @@ sort: by_weight
 盐酸左卡巴斯汀	yán suān zuǒ kǎ bā sī tīng	1
 盐酸左西替利嗪	yán suān zuǒ xī tì lì qín	1
 盐酸左氧氟沙星	yán suān zuǒ yǎng fú shā xīng	1
-氧矾多矾酸盐矿	yǎng fán duō fán suān yán kuàng	1
 氧化丙酸还原酶	yǎng huà bǐng suān huán yuán méi	1
 氧化伯醇到羧酸	yǎng huà bó chún dào suō suān	1
 氧化磷酸化过程	yǎng huà lín suān huà guò chéng	1
 氧化偶氮苯乙醚	yǎng huà ǒu dàn běn yǐ mí	1
 氧化偶氮化合物	yǎng huà ǒu dàn huà hé wù	1
+氧化羟基自由基	yǎng huà qiǎng jī zì yóu jī	1
+氧化性醇酸树脂	yǎng huà xìng chún suān shù zhī	1
 氧脯氨酸还原酶	yǎng pú ān suān huán yuán méi	1
 氧杂氮杂环丙烯	yǎng zá dàn zá huán bǐng xī	1
 氧杂降冰片二烯	yǎng zá jiàng bīng piàn èr xī	1
@@ -18719,6 +19343,7 @@ sort: by_weight
 异丙氨基化合物	yì bǐng ān jī huà hé wù	1
 一点微酸已著枝	yì diǎn wēi suān yǐ zhù zhī	1
 异丁烷正丁烷比	yì dīng wán zhèng dīng wán bǐ	1
+异丁香油酚甲醚	yì dīng xiāng yóu fēn jiǎ mí	1
 乙二胺双盐酸盐	yǐ èr àn shuāng yán suān yán	1
 乙二醇二硝酸酯	yǐ èr chún èr xiāo suān zhǐ	1
 乙二硫基氯化铋	yǐ èr liú jī lǜ huà bì	1
@@ -18758,6 +19383,7 @@ sort: by_weight
 有机氯农药污染	yǒu jī lǜ nóng yào wū rǎn	1
 有机烷氧基硅烷	yǒu jī wán yǎng jī guī wán	1
 右旋甲基苯丙胺	yòu xuán jiǎ jī běn bǐng àn	1
+右旋糖酐羟丙甲	yòu xuán táng gān qiǎng bǐng jiǎ	1
 愈创木酚磺酸钾	yù chuàng mù fēn huáng suān jiǎ	1
 鱼肝油酸钠溶液	yú gān yóu suān nà róng yè	1
 月桂醇硫酸酯钠	yuè guì chún liú suān zhǐ nà	1
@@ -18803,6 +19429,7 @@ sort: by_weight
 甲基第三級丁基醇	jiǎ jī dì sān jí dīng jī chún	1
 甲基三乙氧基硅烷	jiǎ jī sān yǐ yǎng jī guī wán	1
 间氨基苯甲酸乙酯	jiān ān jī běn jiǎ suān yǐ zhǐ	1
+聚甲酚磺醛阴道栓	jù jiǎ fēn huáng quán yīn dào shuān	1
 聚甲基丙烯酸甲酯	jù jiǎ jī bǐng xī suān jiǎ zhǐ	1
 聚氯乙烯覆面胶带	jù lǜ yǐ xī fù miàn jiāo dài	1
 聚氧乙烯烷基醇醚	jù yǎng yǐ xī wán jī chún mí	1
@@ -18823,6 +19450,7 @@ sort: by_weight
 羟基离子浓度羟胺	qiǎng jī lí zǐ nóng dù qiǎng àn	1
 三羟甲基硝基甲烷	sān qiǎng jiǎ jī xiāo jī jiǎ wán	1
 十二水磷酸氢二钠	shí èr shuǐ lín suān qīng èr nà	1
+石斛醚碱石斛星碱	shí hú mí jiǎn shí hú xīng jiǎn	1
 双二甲氨基乙基醚	shuāng èr jiǎ ān jī yǐ jī mí	1
 双氯芬酸缓释胶囊	shuāng lǜ fēn suān huǎn shì jiāo náng	1
 双氯芬酸钠滴眼液	shuāng lǜ fēn suān nà dī yǎn yè	1
