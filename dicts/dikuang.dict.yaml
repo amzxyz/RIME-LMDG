@@ -8,60 +8,125 @@ version: "LTS"
 sort: by_weight
 ...
 氨矿	ān kuàng	410
+钴矿	gǔ kuàng	199
 红石	hóng shí	490
+矿池	kuàng chí	346
 矿床	kuàng chuáng	444
+矿带	kuàng dài	264
+矿点	kuàng diǎn	333
+矿价	kuàng jià	414
+矿建	kuàng jiàn	399
+矿界	kuàng jiè	208
+矿井	kuàng jǐng	508
+矿块	kuàng kuài	204
+矿骡	kuàng luó	292
+矿棉	kuàng mián	223
+矿泉	kuàng quán	435
+矿权	kuàng quán	384
+矿砂	kuàng shā	324
+矿水	kuàng shuǐ	326
+矿脂	kuàng zhī	201
+矿柱	kuàng zhù	219
+锂矿	lǐ kuàng	402
 砾岩	lì yán	363
+磷矿	lín kuàng	379
+铝矿	lǚ kuàng	298
 绿石	lǜ shí	288
+煤层	méi céng	401
+煤矿	méi kuàng	614
+镁矿	měi kuàng	338
 锰钢	měng gāng	274
 锰矿	měng kuàng	366
 锰片	měng piàn	201
 锰铁	měng tiě	341
+糸矿	mì kuàng	201
+钼矿	mù kuàng	329
+镍矿	niè kuàng	434
+气矿	qì kuàng	201
+铅矿	qiān kuàng	353
+砂矿	shā kuàng	302
 闪石	shǎn shí	298
+涉矿	shè kuàng	246
+石矿	shí kuàng	350
+探矿	tàn kuàng	358
+锑矿	tī kuàng	287
+铜矿	tóng kuàng	504
+脱矿	tuō kuàng	345
+瓦斯	wǎ sī	551
+尾矿	wěi kuàng	395
+钨矿	wū kuàng	380
+锡矿	xī kuàng	405
+锌矿	xīn kuàng	388
+盐矿	yán kuàng	391
+兖矿	yǎn kuàng	310
 岩溶	yán róng	412
+页岩	yè yán	481
+铀矿	yóu kuàng	423
 阿布石	ā bù shí	52
 埃洛石	āi luò shí	92
+安多矿	ān duō kuàng	89
+安康矿	ān kāng kuàng	68
 暗绿石	àn lǜ shí	94
 奥长石	ào cháng shí	98
 八瓣石	bā bàn shí	85
 耙笔石	bà bǐ shí	64
+扒矿机	bā kuàng jī	87
 八面石	bā miàn shí	71
 钯柱石	bǎ zhù shí	64
 白沸石	bái fèi shí	63
 白硅石	bái guī shí	70
 白火石	bái huǒ shí	94
 白金石	bái jīn shí	79
+白矿山	bái kuàng shān	86
 白榴石	bái liú shí	76
 白窿石	bái lóng shí	63
 白锰矾	bái měng fán	50
 白米石	bái mǐ shí	86
 白面石	bái miàn shí	59
 白铍石	bái pī shí	92
+白铅矿	bái qiān kuàng	120
 白秋石	bái qiū shí	86
 白砂石	bái shā shí	55
 白砷石	bái shēn shí	74
 白松石	bái sōng shí	86
 白钛石	bái tài shí	97
 白陶石	bái táo shí	66
+白锑矿	bái tī kuàng	89
+白铁矿	bái tiě kuàng	82
 白铁石	bái tiě shí	80
 百万石	bǎi wàn shí	152
+白钨矿	bái wū kuàng	61
 白锡石	bái xī shí	96
 白霞石	bái xiá shí	67
 白雪石	bái xuě shí	135
 白羊石	bái yáng shí	83
 白玉石	bái yù shí	94
+白云矿	bái yún kuàng	75
 白云石	bái yún shí	187
 斑彩石	bān cǎi shí	86
+斑点矿	bān diǎn kuàng	81
 半化石	bàn huà shí	70
 绊脚石	bàn jiǎo shí	253
 板硼石	bǎn péng shí	53
+伴生矿	bàn shēng kuàng	142
+板钛矿	bǎn tài kuàng	90
+斑铜矿	bān tóng kuàng	104
+磅金矿	bàng jīn kuàng	52
+磅铁矿	bàng tiě kuàng	88
+磅银矿	bàng yín kuàng	98
 抱鼓石	bào gǔ shí	153
 保健石	bǎo jiàn shí	56
 抱角石	bào jiǎo shí	97
 宝金石	bǎo jīn shí	59
+宝矿力	bǎo kuàng lì	176
+薄矿脉	báo kuàng mài	59
 宝丽石	bǎo lì shí	92
+薄煤层	báo méi céng	73
 豹魔石	bào mó shí	84
 包润石	bāo rùn shí	89
+宝石矿	bǎo shí kuàng	112
 宝塔石	bǎo tǎ shí	60
+包头矿	bāo tóu kuàng	78
 包吴石	bāo wú shí	91
 宝玉石	bǎo yù shí	254
 倍长石	bèi cháng shí	83
@@ -71,6 +136,7 @@ sort: by_weight
 被告石	bèi gào shí	1
 贝海石	bèi hǎi shí	86
 钡解石	bèi jiě shí	68
+焙矿炉	bèi kuàng lú	61
 贝塔石	bèi tǎ shí	68
 北投石	běi tóu shí	137
 钡硝石	bèi xiāo shí	69
@@ -80,7 +146,9 @@ sort: by_weight
 闭箭石	bì jiàn shí	58
 闭角石	bì jiǎo shí	66
 铋矿床	bì kuàng chuáng	92
+铋矿床	bì kuàng chuáng	92
 鼻涕石	bí tì shí	69
+铋铜矿	bì tóng kuàng	75
 碧玺石	bì xǐ shí	128
 变锆石	biàn gào shí	97
 扁砾石	biǎn lì shí	51
@@ -102,10 +170,12 @@ sort: by_weight
 玻璃石	bō li shí	98
 勃姆石	bó mǔ shí	79
 玻陨石	bō yǔn shí	52
+采富矿	cǎi fù kuàng	85
 彩虹石	cǎi hóng shí	100
 采砂石	cǎi shā shí	78
 才翁石	cái wēng shí	67
 彩霞石	cǎi xiá shí	68
+蚕豆矿	cán dòu kuàng	90
 苍星石	cāng xīng shí	112
 曹铭石	cáo míng shí	59
 侧平石	cè píng shí	50
@@ -124,30 +194,58 @@ sort: by_weight
 常凯石	cháng kǎi shí	53
 长寿石	cháng shòu shí	52
 长条石	cháng tiáo shí	105
+长协矿	cháng xié kuàng	81
 晁君石	cháo jūn shí	51
+车轮矿	chē lún kuàng	69
 尘沙石	chén shā shí	75
 陈岩石	chén yán shí	419
 城堡石	chéng bǎo shí	121
+橙汞矿	chéng gǒng kuàng	91
 橙汞石	chéng gǒng shí	74
 橙红石	chéng hóng shí	92
 橙黄石	chéng huáng shí	79
+成矿带	chéng kuàng dài	141
+成矿期	chéng kuàng qī	93
+成矿区	chéng kuàng qū	90
+成矿省	chéng kuàng shěng	64
+成矿图	chéng kuàng tú	86
+成矿学	chéng kuàng xué	100
+成矿域	chéng kuàng yù	100
+成矿酌	chéng kuàng zhuó	64
 橙玉石	chéng yù shí	80
 弛菊石	chí jú shí	85
 驰菊石	chí jú shí	62
 齿菊石	chǐ jú shí	49
+赤路矿	chì lù kuàng	65
+赤铅矿	chì qiān kuàng	71
+赤铁矿	chì tiě kuàng	189
+赤铜矿	chì tóng kuàng	164
+稠矿泥	chóu kuàng ní	75
+储矿堆	chǔ kuàng duī	54
+出矿量	chū kuàng liàng	90
 船帆石	chuán fān shí	65
 船菊石	chuán jú shí	73
 垂带石	chuí dài shí	94
 春花石	chūn huā shí	58
 刺笔石	cì bǐ shí	76
 刺菊石	cì jú shí	55
+磁铅矿	cí qiān kuàng	64
+次生矿	cì shēng kuàng	111
+磁铁矿	cí tiě kuàng	194
 磁铁石	cí tiě shí	81
+瓷土矿	cí tǔ kuàng	94
+磁选矿	cí xuǎn kuàng	98
 粗安石	cū ān shí	98
+粗铂矿	cū bó kuàng	70
+粗精矿	cū jīng kuàng	94
 粗菊石	cū jú shí	70
 粗矿石	cū kuàng shí	52
 催化石	cuī huà shí	105
 翠榴石	cuì liú shí	132
+翠镍矿	cuì niè kuàng	88
+翠铜矿	cuì tóng kuàng	74
 翠星石	cuì xīng shí	114
+脆银矿	cuì yín kuàng	71
 大帆石	dà fān shí	69
 大黑石	dà hēi shí	114
 大化石	dà huà shí	116
@@ -156,6 +254,8 @@ sort: by_weight
 大金石	dà jīn shí	79
 打孔石	dǎ kǒng shí	79
 大块石	dà kuài shí	90
+大矿囊	dà kuàng náng	96
+大矿山	dà kuàng shān	96
 大理石	dà lǐ shí	350
 大卵石	dà luǎn shí	49
 大麻石	dà má shí	90
@@ -168,12 +268,15 @@ sort: by_weight
 带化石	dài huà shí	67
 代万石	dài wàn dàn	14
 代赭石	dài zhě shí	160
+丹巴矿	dān bā kuàng	93
 蛋白石	dàn bái shí	234
 单笔石	dān bǐ shí	99
 蛋粪石	dàn fèn shí	58
 蛋化石	dàn huà shí	140
 但化石	dàn huà shí	137
 胆结石	dǎn jié shí	265
+单矿脉	dān kuàng mài	97
+单矿岩	dān kuàng yán	80
 单棱石	dān léng shí	89
 癚榴石	dàn liú shí	76
 丹泉石	dān quán shí	81
@@ -184,18 +287,32 @@ sort: by_weight
 单柱石	dān zhù shí	98
 弹子石	dàn zǐ shí	252
 到黄石	dào huáng shí	239
+捣矿机	dǎo kuàng jī	86
+道马矿	dào mǎ kuàng	80
 到磐石	dào pán shí	168
 道牙石	dào yá shí	82
 得结石	dé jié shí	100
 灯盏石	dēng zhǎn shí	74
+碲钯矿	dì bǎ kuàng	91
+碲铋矿	dì bì kuàng	60
+碲铂矿	dì bó kuàng	78
 迪尔石	dí ěr shí	97
+碲汞矿	dì gǒng kuàng	51
+碲金矿	dì jīn kuàng	84
 地开石	dì kāi shí	122
 迪凯石	dí kǎi shí	91
 迪开石	dí kāi shí	73
+地矿部	dì kuàng bù	118
 碲矿床	dì kuàng chuáng	52
+碲矿床	dì kuàng chuáng	52
+地矿类	dì kuàng lèi	49
 底砾岩	dǐ lì yán	65
+碲镍矿	dì niè kuàng	88
+碲铅矿	dì qiān kuàng	69
 地煞石	dì shà shí	84
 滴水石	dī shuǐ shí	70
+碲铜矿	dì tóng kuàng	70
+碲银矿	dì yín kuàng	80
 碘钙石	diǎn gài shí	52
 碘化锰	diǎn huà měng	61
 奠基石	diàn jī shí	384
@@ -203,7 +320,11 @@ sort: by_weight
 电解锰	diàn jiě měng	148
 点金石	diǎn jīn shí	151
 碘矿床	diǎn kuàng chuáng	93
+碘矿床	diǎn kuàng chuáng	93
 电气石	diàn qì shí	272
+靛铜矿	diàn tóng kuàng	60
+碘铜矿	diǎn tóng kuàng	52
+碘银矿	diǎn yín kuàng	50
 雕笔石	diāo bǐ shí	74
 叠层石	dié céng shí	167
 迭层石	dié céng shí	72
@@ -213,6 +334,7 @@ sort: by_weight
 丁瓯石	dīng ōu shí	84
 丁三石	dīng sān shí	64
 丁铁石	dīng tiě shí	90
+东矿区	dōng kuàng qū	84
 董阆石	dǒng láng shí	84
 东陵石	dōng líng shí	132
 东菱石	dōng líng shí	82
@@ -226,6 +348,8 @@ sort: by_weight
 豆状石	dòu zhuàng shí	74
 独居石	dú jū shí	140
 独立石	dú lì shí	92
+毒铁矿	dú tiě kuàng	52
+毒瓦斯	dú wǎ sī	106
 毒重石	dú zhòng shí	88
 断笔石	duàn bǐ shí	78
 段可石	duàn kě shí	96
@@ -235,45 +359,66 @@ sort: by_weight
 对菊石	duì jú shí	68
 墩台石	dūn tái shí	80
 多棱石	duō léng shí	77
+鄂博矿	è bó kuàng	132
 峨公石	é gōng dàn	82
 萼菊石	è jú shí	56
 鹅卵石	é luǎn shí	255
 鹅软石	é ruǎn shí	128
+锇铱矿	é yī kuàng	51
 二连石	èr lián shí	79
 发沸石	fā fèi shí	56
 发光石	fā guāng shí	100
 法黄石	fǎ huáng shí	65
 法律石	fǎ lǜ shí	90
 法术石	fǎ shù shí	298
+钒铋矿	fán bì kuàng	100
 樊春石	fán chūn shí	94
 钒辉石	fán huī shí	97
 反经石	fǎn jīng shí	60
 钒矿床	fán kuàng chuáng	62
+钒矿床	fán kuàng chuáng	62
+钒镍矿	fán niè kuàng	79
+钒铅矿	fán qiān kuàng	116
+钒铜矿	fán tóng kuàng	99
 藩万石	fān wàn dàn	152
+钒铀矿	fán yóu kuàng	81
+方铂矿	fāng bó kuàng	77
 方沸石	fāng fèi shí	72
 方镉石	fāng gé shí	83
+方钴矿	fāng gǔ kuàng	57
 方徽石	fāng huī shí	62
 房角石	fáng jiǎo shí	132
 方解石	fāng jiě shí	214
+放矿口	fàng kuàng kǒu	73
+方镁矿	fāng měi kuàng	57
 方镁石	fāng měi shí	75
 方锰矿	fāng měng kuàng	79
 方钠石	fāng nà shí	128
 方纳石	fāng nà shí	100
 方硼石	fāng péng shí	89
+方铅矿	fāng qiān kuàng	151
 房山石	fáng shān shí	49
+方锑矿	fāng tī kuàng	82
+方铁矿	fāng tiě kuàng	80
+方铜矿	fāng tóng kuàng	86
 方钍石	fāng tǔ shí	83
+防瓦斯	fáng wǎ sī	66
 方英石	fāng yīng shí	81
+方铀矿	fāng yóu kuàng	70
 仿玉石	fǎng yù shí	98
 防御石	fáng yù shí	68
 仿云石	fǎng yún shí	97
 方柱石	fāng zhù shí	85
 方篆石	fāng zhuàn shí	54
+翡翠矿	fěi cuì kuàng	112
 翡翠石	fěi cuì shí	130
 非化石	fēi huà shí	40
 飞蝗石	fēi huáng shí	81
+废矿渣	fèi kuàng zhā	115
 飞来石	fēi lái shí	228
 斐冷石	fěi lěng shí	82
 啡窿石	fēi lóng shí	76
+非煤矿	fēi méi kuàng	73
 非木石	fēi mù shí	56
 飞行石	fēi xíng shí	132
 费钟石	fèi zhōng shí	99
@@ -281,6 +426,7 @@ sort: by_weight
 芬达石	fēn dá shí	52
 粪化石	fèn huà shí	132
 风动石	fēng dòng shí	152
+峰峰矿	fēng fēng kuàng	78
 风化石	fēng huà shí	112
 凤凰石	fèng huáng shí	94
 风刻石	fēng kè shí	71
@@ -291,9 +437,15 @@ sort: by_weight
 附壁石	fù bì shí	88
 副长石	fù cháng shí	100
 夫妇石	fū fù shí	65
+复合矿	fù hé kuàng	53
 复活石	fù huó shí	207
 腹菊石	fù jú shí	100
+富矿脉	fù kuàng mài	54
 富矿石	fù kuàng shí	78
+富矿体	fù kuàng tǐ	68
+负矿物	fù kuàng wù	97
+副矿物	fù kuàng wù	95
+复矿岩	fù kuàng yán	57
 复理石	fù lǐ shí	63
 副砾岩	fù lì yán	62
 斧劈石	fǔ pī shí	71
@@ -311,9 +463,12 @@ sort: by_weight
 钙蓝石	gài lán shí	63
 钙磷石	gài lín shí	71
 钙榴石	gài liú shí	72
+钙钛矿	gài tài kuàng	214
+钙钨矿	gài wū kuàng	67
 钙霞石	gài xiá shí	98
 钙硝石	gài xiāo shí	95
 该岩石	gāi yán shí	466
+钙铀矿	gài yóu kuàng	75
 该陨石	gāi yǔn shí	448
 钙柱石	gài zhù shí	76
 杆沸石	gān fèi shí	96
@@ -322,27 +477,51 @@ sort: by_weight
 杆菊石	gān jú shí	98
 橄榄石	gǎn lǎn shí	268
 杆棱石	gān léng shí	75
+赣南矿	gàn nán kuàng	84
 干砌石	gàn qì shí	86
+干瓦斯	gàn wǎ sī	90
 罡气石	gāng qì shí	110
+钢铁矿	gāng tiě kuàng	150
 岗岩石	gǎng yán shí	307
 刚玉石	gāng yù shí	76
+高级矿	gāo jí kuàng	90
 高尖石	gāo jiān shí	82
+锆矿床	gào kuàng chuáng	73
 锆矿床	gào kuàng chuáng	73
 高岭石	gāo lǐng shí	307
 高锰钢	gāo měng gāng	140
 高山石	gāo shān shí	112
+锆钛矿	gào tài kuàng	67
+锆钽矿	gào tǎn kuàng	91
 高塘石	gāo táng shí	110
+锆铁矿	gào tiě kuàng	100
+高瓦斯	gāo wǎ sī	122
 高万石	gāo wàn dàn	73
 锆英石	gào yīng shí	114
 戈壁石	gē bì shí	266
+铬红矿	gè hóng kuàng	79
+铬钾矿	gè jiǎ kuàng	80
 铬钾石	gè jiǎ shí	96
 铬矿床	gè kuàng chuáng	75
+铬矿床	gè kuàng chuáng	75
+镉矿床	gé kuàng chuáng	73
 镉矿床	gé kuàng chuáng	73
 铬岭石	gè lǐng shí	93
+铬镍矿	gè niè kuàng	65
+铬铅矿	gè qiān kuàng	78
 歌颂石	gē sòng shí	65
+铬铁矿	gè tiě kuàng	152
+给矿板	gěi kuàng bǎn	100
+给矿槽	gěi kuàng cáo	57
+给矿沟	gěi kuàng gōu	100
+给矿机	gěi kuàng jī	84
+给矿口	gěi kuàng kǒu	74
+给矿量	gěi kuàng liàng	68
 更长石	gèng cháng shí	87
 耿介石	gěng jiè shí	72
 更楼石	gēng lóu shí	89
+贡钯矿	gòng bǎ kuàng	74
+汞钯矿	gǒng bǎ kuàng	64
 弓笔石	gōng bǐ shí	98
 工程石	gōng chéng shí	61
 弓翠石	gōng cuì shí	60
@@ -351,14 +530,25 @@ sort: by_weight
 攻击石	gōng jī shí	92
 弓角石	gōng jiǎo shí	97
 汞矿床	gǒng kuàng chuáng	100
+汞矿床	gǒng kuàng chuáng	100
+工矿灯	gōng kuàng dēng	120
+工矿区	gōng kuàng qū	178
+工矿业	gōng kuàng yè	156
 共鸣石	gòng míng shí	141
+汞铅矿	gǒng qiān kuàng	80
 龚潜石	gōng qián shí	92
+共生矿	gòng shēng kuàng	92
 龚天石	gōng tiān shí	90
 拱心石	gǒng xīn shí	94
+汞银矿	gǒng yín kuàng	86
 钩角石	gōu jiǎo shí	60
 勾菊石	gōu jú shí	63
 钩菊石	gōu jú shí	62
+沟煤矿	gōu méi kuàng	152
+古巴矿	gǔ bā kuàng	94
+古北矿	gǔ běi kuàng	95
 顾耕石	gù gēng shí	73
+谷海矿	gǔ hǎi kuàng	72
 顾汉石	gù hàn shí	52
 顾家石	gù jiā shí	79
 顾缄石	gù jiān shí	70
@@ -366,8 +556,11 @@ sort: by_weight
 咕咾石	gū lǎo shí	75
 古绿石	gǔ lǜ shí	100
 孤赏石	gū shǎng shí	96
+钴土矿	gǔ tǔ kuàng	60
 顾醒石	gù xǐng shí	50
 古月石	gǔ yuè shí	63
+挂帮矿	guà bāng kuàng	142
+官地矿	guān dì kuàng	89
 观赏石	guān shǎng shí	242
 观音石	guān yīn shí	104
 贯云石	guàn yún shí	92
@@ -376,6 +569,7 @@ sort: by_weight
 广绿石	guǎng lǜ shí	58
 光芒石	guāng máng shí	106
 广磐石	guǎng pán shí	77
+光线矿	guāng xiàn kuàng	69
 光线石	guāng xiàn shí	62
 龟背石	guī bèi shí	76
 硅钡石	guī bèi shí	71
@@ -386,21 +580,31 @@ sort: by_weight
 贵榴石	guì liú shí	50
 硅镁石	guī měi shí	69
 硅锰矿	guī měng kuàng	62
+硅镍矿	guī niè kuàng	52
 硅铍石	guī pī shí	94
+硅铅矿	guī qiān kuàng	94
 硅乳石	guī rǔ shí	67
+硅石矿	guī shí kuàng	58
 硅铈石	guī shì shí	77
 硅铁石	guī tiě shí	70
 硅钍石	guī tǔ shí	55
+硅锡矿	guī xī kuàng	88
 硅线石	guī xiàn shí	84
 鬼笑石	guǐ xiào shí	229
+硅锌矿	guī xīn kuàng	71
+硅铀矿	guī yóu kuàng	69
 归元石	guī yuán shí	174
 硅藻石	guī zǎo shí	89
 果阿石	guǒ ā shí	61
+国产矿	guó chǎn kuàng	184
 过门石	guò mén shí	177
+国内矿	guó nèi kuàng	124
 哈八石	hā bā shí	59
 铪锆石	hā gào shí	51
 铪矿床	hā kuàng chuáng	72
+铪矿床	hā kuàng chuáng	72
 蛤蟆石	há má shí	108
+海底矿	hǎi dǐ kuàng	471
 海浮石	hǎi fú shí	102
 海角石	hǎi jiǎo shí	90
 海晶石	hǎi jīng shí	69
@@ -415,6 +619,11 @@ sort: by_weight
 海印石	hǎi yìn shí	56
 海中石	hǎi zhōng shí	99
 海珠石	hǎi zhū shí	92
+含矿层	hán kuàng céng	88
+含矿的	hán kuàng de	60
+含矿率	hán kuàng lǜ	89
+含矿脉	hán kuàng mài	90
+含矿岩	hán kuàng yán	91
 含锰量	hán měng liàng	110
 寒山石	hán shān shí	166
 寒水石	hán shuǐ shí	125
@@ -431,6 +640,9 @@ sort: by_weight
 河卵石	hé luǎn shí	124
 河马石	hé mǎ shí	76
 褐锰矿	hè měng kuàng	90
+褐铅矿	hè qiān kuàng	74
+褐铊矿	hè tā kuàng	98
+褐铁矿	hè tiě kuàng	157
 合纹石	hé wén shí	90
 河西石	hé xī shí	85
 核形石	hé xíng shí	60
@@ -438,27 +650,37 @@ sort: by_weight
 黑洞石	hēi dòng shí	96
 黑礁石	hēi jiāo shí	71
 黑晶石	hēi jīng shí	76
+黑矿层	hēi kuàng céng	97
 黑帘石	hēi lián shí	91
 黑榴石	hēi liú shí	85
 黑锰矿	hēi měng kuàng	55
 黑锰石	hēi měng shí	61
 黑魔石	hēi mó shí	90
+黑镍矿	hēi niè kuàng	66
 黑片石	hēi piàn shí	93
+黑铅矿	hēi qiān kuàng	57
+黑铁矿	hēi tiě kuàng	156
+黑铜矿	hēi tóng kuàng	78
+黑钨矿	hēi wū kuàng	98
 黑星石	hēi xīng shí	84
 黑曜石	hēi yào shí	310
 黑耀石	hēi yào shí	308
 黑月石	hēi yuè shí	51
 黑陨石	hēi yǔn shí	68
+黑柱矿	hēi zhù kuàng	59
 黑柱石	hēi zhù shí	68
 黑钻石	hēi zuàn shí	178
 恒安石	héng ān shí	80
 洪半石	hóng bàn shí	63
 红石谷	hóng dàn gǔ	98
 红锆石	hóng gào shí	96
+红狗矿	hóng gǒu kuàng	51
 红蜡石	hóng là shí	88
 红帘石	hóng lián shí	67
 红榴石	hóng liú shí	89
 红窿石	hóng lóng shí	100
+红镍矿	hóng niè kuàng	67
+红铅矿	hóng qiān kuàng	98
 红砂石	hóng shā shí	134
 红沙石	hóng shā shí	66
 红闪石	hóng shǎn shí	57
@@ -483,11 +705,17 @@ sort: by_weight
 红石岩	hóng shí yán	60
 红石寨	hóng shí zhài	149
 红石站	hóng shí zhàn	70
+红铊矿	hóng tā kuàng	74
+红锑矿	hóng tī kuàng	69
+红土矿	hóng tǔ kuàng	79
 红纹石	hóng wén shí	154
 红榍石	hóng xiè shí	62
+红锌矿	hóng xīn kuàng	95
 红信石	hóng xìn shí	92
 红曜石	hóng yào shí	78
 红药石	hóng yào shí	65
+红钇矿	hóng yǐ kuàng	66
+红铀矿	hóng yóu kuàng	62
 红云石	hóng yún shí	70
 红藻石	hóng zǎo shí	77
 红赭石	hóng zhě shí	98
@@ -495,6 +723,7 @@ sort: by_weight
 红竹石	hóng zhú shí	100
 红钻石	hóng zuàn shí	98
 厚箭石	hòu jiàn shí	100
+厚煤层	hòu méi céng	94
 猴面石	hóu miàn shí	53
 猴子石	hóu zi shí	159
 虎抱石	hǔ bào shí	111
@@ -509,8 +738,10 @@ sort: by_weight
 画面石	huà miàn shí	98
 花乳石	huā rǔ shí	66
 花蕊石	huā ruǐ shí	96
+滑石矿	huá shí kuàng	81
 花纹石	huā wén shí	78
 画像石	huà xiàng shí	314
+化学矿	huà xué kuàng	90
 坏晶石	huài jīng shí	85
 环角石	huán jiǎo shí	51
 环晶石	huán jīng shí	55
@@ -520,8 +751,10 @@ sort: by_weight
 黄砥石	huáng dǐ shí	72
 黄锆石	huáng gào shí	98
 黄工石	huáng gōng shí	50
+黄河矿	huáng hé kuàng	56
 黄河石	huáng hé shí	103
 黄济石	huáng jì shí	64
+黄金矿	huáng jīn kuàng	132
 黄金石	huáng jīn shí	86
 黄晶石	huáng jīng shí	51
 黄九石	huáng jiǔ shí	80
@@ -533,22 +766,38 @@ sort: by_weight
 黄隆石	huáng lóng shí	53
 黄绿石	huáng lǜ shí	89
 黄绮石	huáng qǐ shí	63
+黄铅矿	huáng qiān kuàng	87
 黄少石	huáng shǎo shí	54
+黄锑矿	huáng tī kuàng	90
+黄铁矿	huáng tiě kuàng	194
+黄铜矿	huáng tóng kuàng	142
+黄锡矿	huáng xī kuàng	84
 黄香石	huáng xiāng shí	55
 黄孝石	huáng xiào shí	68
 黄锈石	huáng xiù shí	118
+黄银矿	huáng yín kuàng	54
 黄玉石	huáng yù shí	66
 黄雨石	huáng yǔ shí	54
 黄脂石	huáng zhī shí	88
+辉铋矿	huī bì kuàng	88
 辉长石	huī cháng shí	96
 回城石	huí chéng shí	102
 辉沸石	huī fèi shí	100
+辉钴矿	huī gǔ kuàng	56
 回黄石	huí huáng shí	239
+辉矿类	huī kuàng lèi	91
+辉铼矿	huī lái kuàng	66
 悔梦石	huǐ mèng shí	109
 灰锰氧	huī měng yǎng	150
+辉钼矿	huī mù kuàng	119
 回磐石	huí pán shí	168
 辉闪石	huī shǎn shí	91
+辉锑矿	huī tī kuàng	126
+辉铜矿	huī tóng kuàng	94
+辉钨矿	huī wū kuàng	87
 辉叶石	huī yè shí	55
+辉银矿	huī yín kuàng	71
+珲春矿	hún chūn kuàng	59
 混沌石	hùn dùn shí	49
 魂魄石	hún pò shí	146
 活化石	huó huà shí	488
@@ -564,12 +813,15 @@ sort: by_weight
 集合石	jí hé shí	398
 棘角石	jí jiǎo shí	84
 棘菊石	jí jú shí	85
+即挖矿	jí wā kuàng	137
+蓟县矿	jì xiàn kuàng	90
 鸡血石	jī xiě shí	340
 鸡心石	jī xīn shí	78
 季允石	jì yǔn shí	173
 钾长石	jiǎ cháng shí	144
 钾沸石	jiǎ fèi shí	92
 钾锆石	jiǎ gào shí	87
+镓矿床	jiā kuàng chuáng	89
 镓矿床	jiā kuàng chuáng	89
 假砾岩	jiǎ lì yán	67
 钾锰盐	jiǎ měng yán	53
@@ -580,14 +832,17 @@ sort: by_weight
 贾泰石	jiǎ tài shí	92
 钾霞石	jiǎ xiá shí	79
 钾硝石	jiǎ xiāo shí	92
+钾盐矿	jiǎ yán kuàng	104
 假岩溶	jiǎ yán róng	80
 坚白石	jiān bái shí	86
 碱长石	jiǎn cháng shí	65
 尖晶石	jiān jīng shí	200
 剑菊石	jiàn jú shí	52
+见矿率	jiàn kuàng lǜ	51
 尖棱石	jiān léng shí	95
 简琴石	jiǎn qín shí	97
 姜白石	jiāng bái shí	152
+将矿石	jiāng kuàng shí	252
 浆砌石	jiāng qì shí	356
 姜润石	jiāng rùn shí	80
 将岩石	jiāng yán shí	314
@@ -598,10 +853,16 @@ sort: by_weight
 交沸石	jiāo fèi shí	69
 角砾岩	jiǎo lì yán	171
 胶砾岩	jiāo lì yán	86
+胶磷矿	jiāo lín kuàng	63
 胶岭石	jiāo lǐng shí	88
+胶铝矿	jiāo lǚ kuàng	90
+角铅矿	jiǎo qiān kuàng	65
 角闪石	jiǎo shǎn shí	178
+胶钛矿	jiāo tài kuàng	53
 焦炭石	jiāo tàn shí	83
 焦矽石	jiāo xī shí	92
+角页岩	jiǎo yè yán	76
+角银矿	jiǎo yín kuàng	78
 角柱石	jiǎo zhù shí	211
 结灰石	jié huī shí	61
 阶条石	jiē tiáo shí	91
@@ -618,17 +879,25 @@ sort: by_weight
 进化石	jìn huà shí	304
 金基石	jīn jī shí	82
 进阶石	jìn jiē shí	117
+金精矿	jīn jīng kuàng	90
+进口矿	jìn kǒu kuàng	186
 金矿床	jīn kuàng chuáng	130
+金矿床	jīn kuàng chuáng	130
+金矿脉	jīn kuàng mài	94
+金矿区	jīn kuàng qū	127
 金矿石	jīn kuàng shí	342
+金矿业	jīn kuàng yè	240
 金梦石	jīn mèng shí	78
 堇青石	jǐn qīng shí	126
 金沙石	jīn shā shí	70
 金山石	jīn shān shí	96
+金属矿	jīn shǔ kuàng	238
 金属锰	jīn shǔ měng	138
 金台石	jīn tái shí	144
 金星石	jīn xīng shí	111
 金岩石	jīn yán shí	118
 金曜石	jīn yào shí	294
+金银矿	jīn yín kuàng	134
 金原石	jīn yuán shí	16
 金允石	jīn yǔn shí	132
 金钻石	jīn zuàn shí	148
@@ -637,11 +906,20 @@ sort: by_weight
 静海石	jìng hǎi shí	64
 净化石	jìng huà shí	118
 京怀石	jīng huái shí	89
+精金矿	jīng jīn kuàng	79
+精矿槽	jīng kuàng cáo	54
+精矿库	jīng kuàng kù	129
+精矿站	jīng kuàng zhàn	99
 晶蜡石	jīng là shí	69
 精炼石	jīng liàn shí	156
 静脉石	jìng mài shí	68
 晶魔石	jīng mó shí	68
+晶体矿	jīng tǐ kuàng	95
+镜铁矿	jìng tiě kuàng	50
 镜心石	jìng xīn shí	74
+井陉矿	jǐng xíng kuàng	97
+精选矿	jīng xuǎn kuàng	92
+晶铀矿	jīng yóu kuàng	80
 九龙石	jiǔ lóng shí	90
 韭闪石	jiǔ shǎn shí	90
 救星石	jiù xīng shí	84
@@ -649,33 +927,132 @@ sort: by_weight
 锯笔石	jù bǐ shí	59
 菊花石	jú huā shí	190
 巨箭石	jù jiàn shí	65
+巨矿脉	jù kuàng mài	67
+聚族矿	jù zú kuàng	87
 绝缘石	jué yuán shí	52
 卡迭石	kǎ dié shí	130
 凯乐石	kǎi lè shí	198
 钪辉石	kàng huī shí	96
+钪矿床	kàng kuàng chuáng	95
 钪矿床	kàng kuàng chuáng	95
 康盘石	kāng pán shí	74
 康石石	kāng shí shí	188
 钪钇石	kàng yǐ shí	65
 柯丞石	kē chéng shí	81
 科德石	kē dé shí	54
+钶钽矿	kē tǎn kuàng	78
+钶铁矿	kē tiě kuàng	66
 钶铁石	kē tiě shí	83
 氪星石	kè xīng shí	58
 空角石	kōng jiǎo shí	67
 空晶石	kōng jīng shí	68
+空矿车	kōng kuàng chē	55
 孔雀石	kǒng què shí	434
 酷圣石	kù shèng shí	232
 块矸石	kuài gān shí	84
 块滑石	kuài huá shí	97
+块状矿	kuài zhuàng kuàng	62
+矿博会	kuàng bó huì	126
+矿藏量	kuàng cáng liàng	115
+矿产部	kuàng chǎn bù	132
+矿产地	kuàng chǎn dì	138
+矿产法	kuàng chǎn fǎ	40
+矿产金	kuàng chǎn jīn	149
+矿产局	kuàng chǎn jú	274
+矿产品	kuàng chǎn pǐn	212
+矿产区	kuàng chǎn qū	73
+矿产图	kuàng chǎn tú	90
+矿产业	kuàng chǎn yè	158
+矿产志	kuàng chǎn zhì	79
+矿场主	kuàng chǎng zhǔ	60
+矿车弹	kuàng chē dàn	98
 矿床学	kuàng chuáng xué	117
+矿床学	kuàng chuáng xué	117
+矿灯房	kuàng dēng fáng	61
+矿灯工	kuàng dēng gōng	68
+矿顶相	kuàng dǐng xiāng	60
+矿多错	kuàng duō cuò	53
+矿粉厂	kuàng fěn chǎng	27
+矿根相	kuàng gēn xiāng	55
+矿工厂	kuàng gōng chǎng	88
+矿工村	kuàng gōng cūn	62
+矿工灯	kuàng gōng dēng	96
+矿工队	kuàng gōng duì	114
+矿工费	kuàng gōng fèi	78
+矿工钢	kuàng gōng gāng	57
+矿工会	kuàng gōng huì	116
+矿工路	kuàng gōng lù	98
+矿工们	kuàng gōng men	188
+矿工墓	kuàng gōng mù	63
 邝衡石	kuàng héng shí	57
+矿化带	kuàng huà dài	81
+矿化点	kuàng huà diǎn	68
+矿化度	kuàng huà dù	147
+矿化剂	kuàng huà jì	71
+矿化水	kuàng huà shuǐ	108
+矿化酌	kuàng huà zhuó	100
+矿机厂	kuàng jī chǎng	73
+矿浆泵	kuàng jiāng bèng	60
+矿浆槽	kuàng jiāng cáo	77
+矿浆管	kuàng jiāng guǎn	80
+矿浆桶	kuàng jiāng tǒng	83
+矿井口	kuàng jǐng kǒu	27
+矿井里	kuàng jǐng lǐ	122
+矿井水	kuàng jǐng shuǐ	126
+矿坑水	kuàng kēng shuǐ	59
+矿量二	kuàng liàng èr	98
+矿溜子	kuàng liū zi	73
+矿脉壁	kuàng mài bì	82
+矿棉板	kuàng mián bǎn	100
+矿泥槽	kuàng ní cáo	51
+矿泥的	kuàng ní de	100
+矿胚层	kuàng pēi céng	95
+矿热炉	kuàng rè lú	106
+矿砂船	kuàng shā chuán	110
+矿石仓	kuàng shí cāng	86
+矿石车	kuàng shí chē	66
+矿石粉	kuàng shí fěn	98
+矿石河	kuàng shí hé	61
+矿石类	kuàng shí lèi	100
+矿石量	kuàng shí liàng	128
+矿石学	kuàng shí xué	57
+矿物包	kuàng wù bāo	0
+矿物粉	kuàng wù fěn	102
+矿物化	kuàng wù huà	82
+矿物盐	kuàng wù yán	164
+矿物药	kuàng wù yào	138
+矿物油	kuàng wù yóu	236
+矿物质	kuàng wù zhì	360
+矿物种	kuàng wù zhǒng	52
+矿物资	kuàng wù zī	79
+矿物族	kuàng wù zú	97
+矿下晕	kuàng xià yūn	100
+矿岩尘	kuàng yán chén	60
+矿业宫	kuàng yè gōng	64
+矿业权	kuàng yè quán	196
+矿业史	kuàng yè shǐ	63
+矿异常	kuàng yì cháng	92
+矿医院	kuàng yī yuàn	88
+矿用泵	kuàng yòng bèng	83
+矿用车	kuàng yòng chē	100
+矿源层	kuàng yuán céng	69
+矿源岩	kuàng yuán yán	66
+矿渣棉	kuàng zhā mián	229
+矿渣砖	kuàng zhā zhuān	92
+矿之恋	kuàng zhī liàn	76
+矿之选	kuàng zhī xuǎn	77
+矿资源	kuàng zī yuán	154
+矿总院	kuàng zǒng yuàn	39
 盔菊石	kuī jú shí	79
 昆仑石	kūn lún shí	66
 昆山石	kūn shān shí	66
 昆吾石	kūn wú shí	77
 扩香石	kuò xiāng shí	106
 拉长石	lā cháng shí	134
+垃圾矿	lā jī kuàng	88
+莱河矿	lái hé kuàng	63
 来黄石	lái huáng shí	239
+铼矿床	lái kuàng chuáng	67
 铼矿床	lái kuàng chuáng	67
 来磐石	lái pán shí	168
 赖杉石	lài shān shí	71
@@ -683,23 +1060,32 @@ sort: by_weight
 蓝晶石	lán jīng shí	136
 拦路石	lán lù shí	150
 蓝莓石	lán méi shí	69
+蓝钼矿	lán mù kuàng	97
 蓝闪石	lán shǎn shí	108
 蓝石莲	lán shí lián	79
 蓝石棉	lán shí mián	81
+蓝铁矿	lán tiě kuàng	75
 蓝铁石	lán tiě shí	51
+蓝铜矿	lán tóng kuàng	140
 蓝纹石	lán wén shí	90
 蓝线石	lán xiàn shí	86
 蓝羽石	lán yǔ shí	64
 蓝柱石	lán zhù shí	81
+蓝锥矿	lán zhuī kuàng	104
 蓝钻石	lán zuàn shí	130
 劳厄石	láo è shí	95
 咾咕石	lǎo gū shí	91
 老虎石	lǎo hǔ shí	152
+铑金矿	lǎo jīn kuàng	88
+老矿工	lǎo kuàng gōng	114
+老矿区	lǎo kuàng qū	113
+老矿山	lǎo kuàng shān	104
 老挝石	lǎo wō shí	81
 勒子石	lè zǐ shí	65
 雷打石	léi dǎ shí	123
 擂鼓石	léi gǔ shí	92
 雷击石	léi jī shí	93
+类矿物	lèi kuàng wù	142
 垒磊石	lěi lěi shí	50
 累托石	lèi tuō shí	77
 冷的石	lěng de shí	50
@@ -707,6 +1093,8 @@ sort: by_weight
 棱菊石	léng jú shí	73
 锂辉石	lǐ huī shí	207
 粒辉石	lì huī shí	82
+锂精矿	lǐ jīng kuàng	140
+锂矿床	lǐ kuàng chuáng	99
 锂矿床	lǐ kuàng chuáng	99
 锂矿石	lǐ kuàng shí	104
 黎磊石	lí lěi shí	61
@@ -716,7 +1104,9 @@ sort: by_weight
 犂头石	lí tóu shí	97
 锂霞石	lǐ xiá shí	83
 粒子石	lì zǐ shí	84
+联合矿	lián hé kuàng	88
 镰菊石	lián jú shí	54
+连矿法	lián kuàng fǎ	60
 炼魔石	liàn mó shí	24
 莲水石	lián shuǐ shí	92
 炼妖石	liàn yāo shí	188
@@ -726,57 +1116,100 @@ sort: by_weight
 梁山石	liáng shān shí	98
 梁瑶石	liáng yáo shí	73
 两仪石	liǎng yí shí	82
+鳞迭矿	lín dié kuàng	95
+磷钙矿	lín gài kuàng	67
 磷灰石	lín huī shí	182
 磷矿床	lín kuàng chuáng	52
+磷矿床	lín kuàng chuáng	52
+磷矿粉	lín kuàng fěn	95
 磷矿石	lín kuàng shí	154
+磷矿镇	lín kuàng zhèn	78
 磷铝石	lín lǚ shí	93
 磷镁石	lín měi shí	99
 磷锰矿	lín měng kuàng	65
 磷锰石	lín měng shí	46
+磷铁矿	lín tiě kuàng	50
+鳞铜矿	lín tóng kuàng	76
+磷铜矿	lín tóng kuàng	50
+磷钍矿	lín tǔ kuàng	94
+林西矿	lín xī kuàng	63
 林西石	lín xī shí	80
+磷锌矿	lín xīn kuàng	50
 磷叶石	lín yè shí	48
 磷页石	lín yè shí	42
+磷钇矿	lín yǐ kuàng	102
+磷铀矿	lín yóu kuàng	59
 鳞蛭石	lín zhì shí	84
 灵璧石	líng bì shí	152
 灵壁石	líng bì shí	102
 菱沸石	líng fèi shí	52
+菱镉矿	líng gé kuàng	80
+菱钴矿	líng gǔ kuàng	80
 绫裹石	líng guǒ shí	98
 灵魂石	líng hún shí	237
 玲珑石	líng lóng shí	136
+菱镁矿	líng měi kuàng	157
 菱锰矿	líng měng kuàng	140
 菱锰岩	líng měng yán	52
+菱锶矿	líng sī kuàng	79
+菱铁矿	líng tiě kuàng	117
 领万石	lǐng wàn dàn	92
+菱锌矿	líng xīn kuàng	100
+菱铀矿	líng yóu kuàng	59
 硫铵石	liú ǎn shí	64
+硫镉矿	liú gé kuàng	100
+硫钴矿	liú gǔ kuàng	99
 硫硅石	liú guī shí	67
+硫化矿	liú huà kuàng	98
 硫化锰	liú huà měng	78
+硫磺矿	liú huáng kuàng	122
 硫磺石	liú huáng shí	68
+硫精矿	liú jīng kuàng	98
 硫矿床	liú kuàng chuáng	83
+硫矿床	liú kuàng chuáng	83
+溜矿井	liū kuàng jǐng	100
 硫矿石	liú kuàng shí	54
+硫钌矿	liú liǎo kuàng	89
+硫镁矿	liú měi kuàng	91
 硫锰矿	liú měng kuàng	66
+硫镍矿	liú niè kuàng	73
+硫砷矿	liú shēn kuàng	77
+硫铁矿	liú tiě kuàng	144
+硫锡矿	liú xī kuàng	80
 龙脊石	lóng jǐ shí	49
 龙精石	lóng jīng shí	118
 隆隆石	lóng lóng shí	100
 龙梅石	lóng méi shí	60
 龙门石	lóng mén shí	84
+笼铅矿	lóng qiān kuàng	70
 龙黔石	lóng qián shí	96
 龙头石	lóng tóu shí	71
 龙骧石	lóng xiāng shí	79
 露白石	lòu bái shí	50
+露头矿	lòu tóu kuàng	50
 路边石	lù biān shí	198
 炉甘石	lú gān shí	211
+卤水矿	lǔ shuǐ kuàng	93
 路牙石	lù yá shí	130
 路沿石	lù yán shí	129
 路缘石	lù yuán shí	158
+滦河矿	luán hé kuàng	89
+乱矿流	luàn kuàng liú	95
+论矿冶	lùn kuàng yě	72
 罗丁石	luó dīng shí	79
 螺鼓石	luó gǔ shí	72
 裸菊石	luǒ jú shí	66
 骆驼石	luò tuó shí	92
 落星石	luò xīng shí	88
 氯钒矿	lǜ fán kuàng	97
+铝钒矿	lǚ fán kuàng	68
+绿铬矿	lǜ gè kuàng	53
 氯汞矿	lǜ gǒng kuàng	53
+绿硅矿	lǜ guī kuàng	88
 氯化锰	lǜ huà měng	112
 绿辉石	lǜ huī shí	120
 绿晶石	lǜ jīng shí	278
+铝矿床	lǚ kuàng chuáng	95
 铝矿床	lǚ kuàng chuáng	95
 铝矿石	lǚ kuàng shí	92
 绿帘石	lǜ lián shí	140
@@ -784,7 +1217,9 @@ sort: by_weight
 铝榴石	lǚ liú shí	32
 氯锰矿	lǜ měng kuàng	69
 绿泥石	lǜ ní shí	154
+绿镍矿	lǜ niè kuàng	52
 氯铅矿	lǜ qiān kuàng	64
+绿铅矿	lǜ qiān kuàng	52
 氯闪石	lǜ shǎn shí	81
 绿闪石	lǜ shǎn shí	67
 绿石谷	lǜ shí gǔ	82
@@ -792,37 +1227,57 @@ sort: by_weight
 绿石髓	lǜ shí suǐ	83
 绿石英	lǜ shí yīng	93
 绿松石	lǜ sōng shí	276
+绿铜矿	lǜ tóng kuàng	90
 氯铜矿	lǜ tóng kuàng	76
+铝土矿	lǚ tǔ kuàng	210
 绿脱石	lǜ tuō shí	80
 绿纤石	lǜ xiān shí	67
 铝英石	lǚ yīng shí	68
 绿萤石	lǜ yíng shí	52
+绿铀矿	lǜ yóu kuàng	90
 绿玉石	lǜ yù shí	68
 绿柱石	lǜ zhù shí	172
 马鞍石	mǎ ān shí	77
+玛满矿	mǎ mǎn kuàng	142
 玛瑙石	mǎ nǎo shí	166
 嘛呢石	ma ne shí	60
 玛尼石	mǎ ní shí	172
 麻杏石	má xìng shí	122
 麦饭石	mài fàn shí	192
 脉矿床	mài kuàng chuáng	83
+脉矿床	mài kuàng chuáng	83
+买矿机	mǎi kuàng jī	50
 脉矿石	mài kuàng shí	72
 盲矿床	máng kuàng chuáng	63
+盲矿床	máng kuàng chuáng	63
+盲矿体	máng kuàng tǐ	100
 毛矾石	máo fán shí	64
 毛沸石	máo fèi shí	89
 毛粪石	máo fèn shí	72
 猫睛石	māo jīng shí	50
 毛梦石	máo mèng shí	91
+毛铜矿	máo tóng kuàng	55
 猫眼石	māo yǎn shí	485
+茂页岩	mào yè yán	71
+煤层薄	méi céng báo	60
+煤层气	méi céng qì	224
 镁毒石	měi dú shí	372
 煤矸石	méi gān shí	270
 楣杆石	méi gān shí	89
+镁铬矿	měi gè kuàng	53
 玫瑰石	méi guī shí	188
 梅花石	méi huā shí	73
+煤矿厂	méi kuàng chǎng	79
+镁矿床	měi kuàng chuáng	85
 镁矿床	měi kuàng chuáng	85
 煤矿床	méi kuàng chuáng	69
+煤矿床	méi kuàng chuáng	69
+煤矿井	méi kuàng jǐng	66
 煤矿石	méi kuàng shí	88
 镁磷石	měi lín shí	82
+镁钛矿	měi tài kuàng	91
+煤铁矿	méi tiě kuàng	105
+镁铁矿	měi tiě kuàng	73
 镁硝石	měi xiāo shí	95
 镁柱石	měi zhù shí	89
 锰钡矿	měng bèi kuàng	95
@@ -862,10 +1317,12 @@ sort: by_weight
 密蜡石	mì là shí	80
 秘文石	mì wén shí	122
 秘纹石	mì wén shí	81
+秘银矿	mì yín kuàng	105
 米友石	mǐ yǒu shí	97
 迷踪石	mí zōng shí	86
 苗木石	miáo mù shí	55
 明矾石	míng fán shí	124
+名矿工	míng kuàng gōng	90
 命运石	mìng yùn shí	284
 摩艾石	mó ài shí	14
 魔法石	mó fǎ shí	344
@@ -880,6 +1337,7 @@ sort: by_weight
 魔力石	mó lì shí	265
 磨盘石	mò pán shí	60
 莫桑石	mò sāng shí	157
+墨铜矿	mò tóng kuàng	89
 魔星石	mó xīng shí	75
 磨牙石	mó yá shí	92
 摩押石	mó yā shí	63
@@ -887,11 +1345,17 @@ sort: by_weight
 墨柱石	mò zhù shí	53
 墓碑石	mù bēi shí	71
 木变石	mù biàn shí	144
+钼钙矿	mù gài kuàng	68
 木化石	mù huà shí	153
+钼精矿	mù jīng kuàng	117
+钼矿床	mù kuàng chuáng	54
 钼矿床	mù kuàng chuáng	54
 钼矿石	mù kuàng shí	78
 穆磐石	mù pán shí	64
+钼铅矿	mù qiān kuàng	107
 母亲石	mǔ qīn shí	82
+木铜矿	mù tóng kuàng	79
+钼铜矿	mù tóng kuàng	59
 木纹石	mù wén shí	73
 木鱼石	mù yú shí	202
 木竹石	mù zhú shí	63
@@ -901,51 +1365,71 @@ sort: by_weight
 钠锆石	nà gào shí	70
 钠滑石	nà huá shí	100
 钠榴石	nà liú shí	94
+钠铌矿	nà ní kuàng	72
 钠闪石	nà shǎn shí	54
 钠硝石	nà xiāo shí	81
 钠柱石	nà zhù shí	100
 南极石	nán jí shí	99
 南疆石	nán jiāng shí	92
 南平石	nán píng shí	84
+南山矿	nán shān kuàng	67
 南山石	nán shān shí	49
 南田石	nán tián shí	60
 囊脱石	náng tuō shí	80
 脑钻石	nǎo zuàn shí	77
 内角石	nèi jiǎo shí	73
 能量石	néng liàng shí	240
+铌钙矿	ní gài kuàng	92
 霓辉石	ní huī shí	91
 拟箭石	nǐ jiàn shí	90
 泥砾岩	ní lì yán	83
 倪满石	ní mǎn shí	96
+铌铁矿	ní tiě kuàng	84
+泥铁矿	ní tiě kuàng	58
+泥页岩	ní yè yán	102
+铌钇矿	ní yǐ kuàng	71
 拟锥石	nǐ zhuī shí	91
 你钻石	nǐ zuàn shí	161
+粘土矿	nián tǔ kuàng	178
+黏土矿	nián tǔ kuàng	53
 鸟粪石	niǎo fèn shí	100
 鸟化石	niǎo huà shí	128
 尿结石	niào jié shí	193
 镍钴锰	niè gǔ měng	162
 镍矿床	niè kuàng chuáng	98
+镍矿床	niè kuàng chuáng	98
 镍矿石	niè kuàng shí	122
+镍铁矿	niè tiě kuàng	50
 镍纹石	niè wén shí	118
 凝灰石	níng huī shí	83
 凝块石	níng kuài shí	52
 凝水石	níng shuǐ shí	79
 钮匪石	niǔ fěi shí	96
+农矿部	nóng kuàng bù	116
+暖矿泉	nuǎn kuàng quán	58
 欧清石	ōu qīng shí	79
 呕吐石	ǒu tù shí	56
+排矿槽	pái kuàng cáo	94
+排矿口	pái kuàng kǒu	73
 排衙石	pái yá shí	90
 潘鼎石	pān dǐng shí	87
 盘古石	pán gǔ shí	66
 盘角石	pán jiǎo shí	98
 潘文石	pān wén shí	96
 盘星石	pán xīng shí	78
+泡铋矿	pào bì kuàng	56
 培长石	péi cháng shí	62
+胚胎矿	pēi tāi kuàng	81
 硼铵石	péng ǎn shí	92
 硼钙石	péng gài shí	97
+硼矿床	péng kuàng chuáng	86
 硼矿床	péng kuàng chuáng	86
 硼铝石	péng lǚ shí	96
 硼镁石	péng měi shí	92
 硼铍石	péng pī shí	59
 膨润石	péng rùn shí	73
+硼铁矿	péng tiě kuàng	97
+铍矿床	pī kuàng chuáng	58
 铍矿床	pī kuàng chuáng	58
 铍榴石	pī liú shí	74
 霹破石	pī pò shí	94
@@ -955,6 +1439,7 @@ sort: by_weight
 片榍石	piàn xiè shí	98
 平衡石	píng héng shí	120
 平康石	píng kāng shí	100
+平矿层	píng kuàng céng	83
 平缘石	píng yuán shí	92
 坡缕石	pō lǚ shí	78
 曝黑石	pù hēi shí	92
@@ -982,13 +1467,18 @@ sort: by_weight
 铅辉石	qiān huī shí	94
 铅灰石	qiān huī shí	74
 前箭石	qián jiàn shí	91
+铅精矿	qiān jīng kuàng	134
 钱警石	qián jǐng shí	83
 钱衎石	qián kàn shí	68
+铅矿凹	qiān kuàng āo	75
+铅矿坳	qiān kuàng ào	63
 铅矿石	qiān kuàng shí	110
 铅锰矿	qiān měng kuàng	83
 浅闪石	qiǎn shǎn shí	51
+前铁矿	qián tiě kuàng	84
 钱萚石	qián tuò shí	95
 铅霰石	qiān xiàn shí	74
+铅锌矿	qiān xīn kuàng	182
 千叶石	qiān yè shí	72
 钱亦石	qián yì shí	97
 迁移石	qiān yí shí	87
@@ -1004,17 +1494,21 @@ sort: by_weight
 青河石	qīng hé shí	78
 青辉石	qīng huī shí	100
 青金石	qīng jīn shí	282
+轻矿物	qīng kuàng wù	83
 青龙石	qīng lóng shí	154
 青绿石	qīng lǜ shí	290
+青铅矿	qīng qiān kuàng	73
 青青石	qīng qīng shí	83
 清泉石	qīng quán shí	180
 情人石	qíng rén shí	102
 青苔石	qīng tái shí	53
 青田石	qīng tián shí	226
+青铜矿	qīng tóng kuàng	291
 青铜石	qīng tóng shí	79
 青蛙石	qīng wā shí	131
 磬云石	qìng yún shí	57
 丘间石	qiū jiān shí	83
+球团矿	qiú tuán kuàng	86
 球霰石	qiú xiàn shí	72
 秋叶石	qiū yè shí	95
 酋长石	qiú zhǎng shí	58
@@ -1026,8 +1520,10 @@ sort: by_weight
 全能石	quán néng shí	50
 全山石	quán shān shí	131
 犬牙石	quǎn yá shí	64
+群矿型	qún kuàng xíng	92
 饶漱石	ráo shù shí	190
 热臭石	rè chòu shí	82
+热矿泉	rè kuàng quán	116
 热血石	rè xuè shí	118
 人工石	rén gōng shí	90
 人形石	rén xíng shí	76
@@ -1038,6 +1534,8 @@ sort: by_weight
 日叶石	rì yè shí	64
 日月石	rì yuè shí	74
 熔长石	róng cháng shí	53
+容矿岩	róng kuàng yán	54
+绒铜矿	róng tóng kuàng	81
 熔岩被	róng yán bèi	99
 熔岩饼	róng yán bǐng	78
 熔岩层	róng yán céng	106
@@ -1075,11 +1573,15 @@ sort: by_weight
 肉与石	ròu yǔ shí	75
 乳白石	rǔ bái shí	86
 铷矿床	rú kuàng chuáng	66
+铷矿床	rú kuàng chuáng	66
 如磐石	rú pán shí	155
 蠕状石	rú zhuàng shí	74
+软铋矿	ruǎn bì kuàng	72
 阮机石	ruǎn jī shí	77
 软锰矿	ruǎn měng kuàng	116
 软岩石	ruǎn yán shí	100
+软页岩	ruǎn yè yán	55
+锐钛矿	ruì tài kuàng	102
 弱波石	ruò bō shí	97
 散点石	sàn diǎn shí	81
 三花石	sān huā shí	98
@@ -1096,10 +1598,14 @@ sort: by_weight
 三一石	sān yì shí	80
 铯沸石	sè fèi shí	80
 铯矿床	sè kuàng chuáng	80
+铯矿床	sè kuàng chuáng	80
 色理石	sè lǐ shí	49
 铯榴石	sè liú shí	92
 铯柱石	sè zhù shí	65
+砂金矿	shā jīn kuàng	108
+沙金矿	shā jīn kuàng	84
 砂金石	shā jīn shí	127
+砂矿床	shā kuàng chuáng	84
 砂矿床	shā kuàng chuáng	84
 砂砾石	shā lì shí	62
 砂砾岩	shā lì yán	74
@@ -1107,8 +1613,11 @@ sort: by_weight
 纱帽石	shā mào shí	86
 杀生石	shā shēng shí	51
 沙滩石	shā tān shí	54
+砂锡矿	shā xī kuàng	74
 砂岩石	shā yán shí	89
+砂页岩	shā yè yán	128
 扇白石	shàn bái shí	63
+闪铋矿	shǎn bì kuàng	96
 闪电石	shǎn diàn shí	69
 珊瑚石	shān hú shí	157
 扇砾岩	shàn lì yán	96
@@ -1121,6 +1630,7 @@ sort: by_weight
 闪石类	shǎn shí lèi	61
 闪石玉	shǎn shí yù	79
 山无石	shān wú shí	193
+闪锌矿	shǎn xīn kuàng	159
 闪叶石	shǎn yè shí	93
 山子石	shān zǐ shí	39
 上白石	shàng bái shí	134
@@ -1129,26 +1639,40 @@ sort: by_weight
 上水石	shàng shuǐ shí	81
 上岩石	shàng yán shí	107
 上钻石	shàng zuàn shí	153
+烧结矿	shāo jié kuàng	136
 烧绿石	shāo lǜ shí	84
 舌笔石	shé bǐ shí	82
 蛇菊石	shé jú shí	81
 蛇纹石	shé wén shí	172
+砷铋矿	shēn bì kuàng	90
+砷铂矿	shēn bó kuàng	59
 神恩石	shén ēn shí	108
 砷钙石	shēn gài shí	76
+砷钴矿	shēn gǔ kuàng	68
 神龟石	shén guī shí	89
 砷灰石	shēn huī shí	67
 伸角石	shēn jiǎo shí	72
 肾结石	shèn jié shí	276
 砷矿床	shēn kuàng chuáng	64
+砷矿床	shēn kuàng chuáng	64
 砷镁石	shēn měi shí	78
 神锰矿	shén měng kuàng	69
 砷锰矿	shēn měng kuàng	51
 神秘石	shén mì shí	104
+砷镍矿	shēn niè kuàng	81
+砷铅矿	shēn qiān kuàng	67
 砷铅石	shēn qiān shí	64
+砷锑矿	shēn tī kuàng	78
+砷铁矿	shēn tiě kuàng	70
+砷铜矿	shēn tóng kuàng	56
 砷霞石	shēn xiá shí	89
+砷锌矿	shēn xīn kuàng	64
 砷锌石	shēn xīn shí	61
 砷钇石	shēn yǐ shí	54
+砷银矿	shēn yín kuàng	79
+砷铀矿	shēn yóu kuàng	55
 神乐石	shén yuè shí	94
+生产矿	shēng chǎn kuàng	86
 生辰石	shēng chén shí	263
 圣光石	shèng guāng shí	118
 圣结石	shèng jié shí	92
@@ -1158,11 +1682,14 @@ sort: by_weight
 圣魔石	shèng mó shí	79
 生肖石	shēng xiào shí	63
 升星石	shēng xīng shí	408
+生野矿	shēng yě kuàng	50
 生赭石	shēng zhě shí	84
 师安石	shī ān shí	91
 十二石	shí èr shí	114
+石膏矿	shí gāo kuàng	135
 石高石	shí gāo shí	63
 铈硅石	shì guī shí	66
+石灰矿	shí huī kuàng	63
 石灰石	shí huī shí	286
 试剑石	shì jiàn shí	378
 施见石	shī jiàn shí	97
@@ -1170,7 +1697,10 @@ sort: by_weight
 试金石	shì jīn shí	243
 饰菊石	shì jú shí	58
 时空石	shí kōng shí	84
+石矿场	shí kuàng chǎng	190
 石榴石	shí liú shí	280
+石棉矿	shí mián kuàng	104
+石墨矿	shí mò kuàng	150
 石人石	shí rén shí	53
 释如石	shì rú shí	80
 石山石	shí shān shí	44
@@ -1179,7 +1709,11 @@ sort: by_weight
 石笋石	shí sǔn shí	142
 诗条石	shī tiáo shí	93
 施嵓石	shī yán shí	50
+铈钇矿	shì yǐ kuàng	96
+铈银矿	shì yín kuàng	53
+石英矿	shí yīng kuàng	98
 石英石	shí yīng shí	249
+石油矿	shí yóu kuàng	96
 石陨石	shí yǔn shí	185
 十字石	shí zì shí	104
 狮子石	shī zi shí	68
@@ -1191,6 +1725,7 @@ sort: by_weight
 书画石	shū huà shí	77
 树化石	shù huà shí	50
 舒碣石	shū jié shí	74
+输矿浆	shū kuàng jiāng	83
 书堂石	shū táng shí	95
 属性石	shǔ xìng shí	248
 树枝石	shù zhī shí	93
@@ -1202,19 +1737,24 @@ sort: by_weight
 双牌石	shuāng pái shí	89
 水冲石	shuǐ chōng shí	82
 水滴石	shuǐ dī shí	66
+水钒矿	shuǐ fán kuàng	81
 水锆石	shuǐ gào shí	80
+水钴矿	shuǐ gǔ kuàng	63
 水滑石	shuǐ huá shí	82
 水辉石	shuǐ huī shí	100
 水碱石	shuǐ jiǎn shí	60
 水角石	shuǐ jiǎo shí	73
+水晶矿	shuǐ jīng kuàng	140
 水晶石	shuǐ jīng shí	248
 水榴石	shuǐ liú shí	69
+水铝矿	shuǐ lǚ kuàng	54
 水铝石	shuǐ lǚ shí	160
 水镁石	shuǐ měi shí	104
 水锰矿	shuǐ měng kuàng	87
 水沐石	shuǐ mù shí	97
 水泥石	shuǐ ní shí	295
 水牛石	shuǐ niú shí	128
+水铅矿	shuǐ qiān kuàng	88
 水闪石	shuǐ shǎn shí	97
 水刷石	shuǐ shuā shí	117
 水文队	shuǐ wén duì	66
@@ -1227,6 +1767,8 @@ sort: by_weight
 水文学	shuǐ wén xué	176
 水文站	shuǐ wén zhàn	194
 水洗石	shuǐ xǐ shí	79
+水锌矿	shuǐ xīn kuàng	53
+水铀矿	shuǐ yóu kuàng	63
 水蛭石	shuǐ zhì shí	80
 水脂石	shuǐ zhī shí	77
 四笔石	sì bǐ shí	99
@@ -1238,6 +1780,7 @@ sort: by_weight
 似箭石	sì jiàn shí	62
 似晶石	sì jīng shí	62
 锶矿床	sī kuàng chuáng	66
+锶矿床	sī kuàng chuáng	66
 斯昆石	sī kūn shí	86
 锶帘石	sī lián shí	59
 斯天石	sī tiān shí	82
@@ -1248,6 +1791,8 @@ sort: by_weight
 苏打石	sū dá shí	85
 碎大石	suì dà shí	176
 碎块石	suì kuài shí	77
+碎矿锤	suì kuàng chuí	52
+碎矿机	suì kuàng jī	77
 碎砾岩	suì lì yán	90
 索伦石	suǒ lún shí	68
 塔菲石	tǎ fēi shí	90
@@ -1255,36 +1800,62 @@ sort: by_weight
 塔节石	tǎ jié shí	98
 塔菊石	tǎ jú shí	60
 铊矿床	tā kuàng chuáng	50
+铊矿床	tā kuàng chuáng	50
 他山石	tā shān shí	130
 它山石	tā shān shí	75
 太湖石	tài hú shí	183
 钛辉石	tài huī shí	58
 台阶石	tái jiē shí	66
+台金矿	tái jīn kuàng	54
+钛精矿	tài jīng kuàng	108
+钛矿床	tài kuàng chuáng	54
 钛矿床	tài kuàng chuáng	54
 钛矿石	tài kuàng shí	63
 钛榴石	tài liú shí	95
 泰山石	tài shān shí	148
 钛闪石	tài shǎn shí	55
+泰坦矿	tài tǎn kuàng	14
+钛铁矿	tài tiě kuàng	160
 台湾石	tái wān shí	92
 太阳石	tài yáng shí	190
+钛铀矿	tài yóu kuàng	70
 太子石	tài zǐ shí	102
 碳铵石	tàn ǎn shí	59
+碳钡矿	tàn bèi kuàng	69
 碳硅石	tàn guī shí	319
 探海石	tàn hǎi shí	87
+探矿比	tàn kuàng bǐ	65
+探矿权	tàn kuàng quán	198
 贪矿石	tān kuàng shí	94
+探矿校	tàn kuàng xiào	81
+碳矿质	tàn kuàng zhì	61
+钽铌矿	tǎn ní kuàng	78
 坦桑石	tǎn sāng shí	188
 坦尚石	tǎn shàng shí	79
+碳锶矿	tàn sī kuàng	88
+钽铁矿	tǎn tiě kuàng	122
+钽锡矿	tǎn xī kuàng	94
 碳矽石	tàn xī shí	59
+碳铀矿	tàn yóu kuàng	67
 探真石	tàn zhēn shí	75
 唐根石	táng gēn shí	62
 唐金石	táng jīn shí	54
+唐山矿	táng shān kuàng	112
 唐渔石	táng yú shí	56
 桃花石	táo huā shí	146
 淘松石	táo sōng shí	66
 特寨石	tè zhài shí	55
+锑钯矿	tī bǎ kuàng	71
+锑铂矿	tī bó kuàng	95
 锑钙石	tī gài shí	70
 锑矿床	tī kuàng chuáng	93
+锑矿床	tī kuàng chuáng	93
 提炼石	tí liàn shí	526
+锑铌矿	tī ní kuàng	99
+锑钽矿	tī tǎn kuàng	98
+锑铁矿	tī tiě kuàng	90
+锑铜矿	tī tóng kuàng	91
+锑银矿	tī yín kuàng	63
 锑赭石	tī zhě shí	94
 天罡石	tiān gāng shí	422
 天河石	tiān hé shí	178
@@ -1298,6 +1869,7 @@ sort: by_weight
 填卵石	tián luǎn shí	92
 天魔石	tiān mó shí	108
 天青石	tiān qīng shí	210
+天然矿	tiān rán kuàng	128
 天然石	tiān rán shí	269
 天涯石	tiān yá shí	66
 天鹰石	tiān yīng shí	50
@@ -1307,8 +1879,21 @@ sort: by_weight
 铁鼎石	tiě dǐng shí	87
 铁辉石	tiě huī shí	97
 铁灰石	tiě huī shí	69
+铁精矿	tiě jīng kuàng	136
+铁矿场	tiě kuàng chǎng	90
+铁矿厂	tiě kuàng chǎng	60
 铁矿床	tiě kuàng chuáng	100
+铁矿床	tiě kuàng chuáng	100
+铁矿粉	tiě kuàng fěn	116
+铁矿区	tiě kuàng qū	102
+铁矿砂	tiě kuàng shā	172
+铁矿山	tiě kuàng shān	123
 铁矿石	tiě kuàng shí	300
+铁矿体	tiě kuàng tǐ	125
+铁矿物	tiě kuàng wù	84
+铁矿岩	tiě kuàng yán	50
+铁矿站	tiě kuàng zhàn	94
+铁镍矿	tiě niè kuàng	94
 铁闪石	tiě shǎn shí	95
 铁燧石	tiě suì shí	98
 铁钍石	tiě tǔ shí	87
@@ -1316,12 +1901,27 @@ sort: by_weight
 铁榍石	tiě xiè shí	50
 铁陨石	tiě yǔn shí	209
 听松石	tīng sōng shí	74
+桐柏矿	tóng bǎi kuàng	95
+铜铂矿	tóng bó kuàng	59
+铜碲矿	tóng dì kuàng	96
 铜矾石	tóng fán shí	74
 痛风石	tòng fēng shí	256
+铜钙矿	tóng gài kuàng	61
+铜金矿	tóng jīn kuàng	138
+铜精矿	tóng jīng kuàng	176
 铜矿床	tóng kuàng chuáng	94
+铜矿床	tóng kuàng chuáng	94
+铜矿砂	tóng kuàng shā	94
+铜矿山	tóng kuàng shān	98
 铜矿石	tóng kuàng shí	212
+铜矿体	tóng kuàng tǐ	89
+铜矿物	tóng kuàng wù	56
+铜钼矿	tóng mù kuàng	94
 铜泡石	tóng pào shí	60
+铜铁矿	tóng tiě kuàng	92
 铜硝石	tóng xiāo shí	51
+铜锌矿	tóng xīn kuàng	68
+铜页岩	tóng yè yán	69
 透长石	tòu cháng shí	86
 透光石	tòu guāng shí	94
 透辉石	tòu huī shí	138
@@ -1330,11 +1930,31 @@ sort: by_weight
 透视石	tòu shì shí	67
 吐酒石	tǔ jiǔ shí	53
 钍矿床	tǔ kuàng chuáng	58
+钍矿床	tǔ kuàng chuáng	58
 屠枰石	tú píng shí	60
 突破石	tū pò shí	66
+钍钨矿	tǔ wū kuàng	98
+钍钇矿	tǔ yǐ kuàng	93
+钍铀矿	tǔ yóu kuàng	78
 图章石	tú zhāng shí	65
 拓跋石	tuò bá shí	62
 托帕石	tuō pà shí	183
+瓦斯包	wǎ sī bāo	92
+瓦斯弹	wǎ sī dàn	121
+瓦斯的	wǎ sī de	160
+瓦斯管	wǎ sī guǎn	90
+瓦斯矿	wǎ sī kuàng	84
+瓦斯炉	wǎ sī lú	217
+瓦斯卢	wǎ sī lú	94
+瓦斯煤	wǎ sī méi	80
+瓦斯气	wǎ sī qì	100
+瓦斯枪	wǎ sī qiāng	79
+瓦斯泰	wǎ sī tài	82
+瓦斯特	wǎ sī tè	148
+瓦斯提	wǎ sī tí	122
+瓦斯托	wǎ sī tuō	122
+瓦斯行	wǎ sī xíng	94
+瓦铜矿	wǎ tóng kuàng	89
 挖钻石	wā zuàn shí	105
 歪长石	wāi cháng shí	93
 湾泊石	wān bó shí	59
@@ -1351,8 +1971,15 @@ sort: by_weight
 薇角石	wēi jiǎo shí	90
 胃结石	wèi jié shí	231
 微晶石	wēi jīng shí	219
+尾矿坝	wěi kuàng bà	134
+尾矿槽	wěi kuàng cáo	87
+尾矿池	wěi kuàng chí	67
+尾矿库	wěi kuàng kù	956
+尾矿量	wěi kuàng liàng	53
+尾矿渣	wěi kuàng zhā	53
 微澜石	wēi lán shí	71
 微劈石	wēi pī shí	73
+围山矿	wéi shān kuàng	89
 胃柿石	wèi shì shí	180
 韦万石	wéi wàn dàn	76
 卫闻石	wèi wén shí	94
@@ -1370,6 +1997,7 @@ sort: by_weight
 沃森石	wò sēn shí	73
 卧云石	wò yún shí	67
 我钻石	wǒ zuàn shí	153
+钨铋矿	wū bì kuàng	73
 五彩石	wǔ cǎi shí	154
 乌钢石	wū gāng shí	317
 五光石	wǔ guāng shí	92
@@ -1377,32 +2005,68 @@ sort: by_weight
 五花石	wǔ huā shí	95
 屋基石	wū jī shí	84
 乌金石	wū jīn shí	270
+钨精矿	wū jīng kuàng	174
+钨矿床	wū kuàng chuáng	70
 钨矿床	wū kuàng chuáng	70
 钨矿石	wū kuàng shí	79
+无矿岩	wú kuàng yán	66
 钨锰矿	wū měng kuàng	75
+钨铅矿	wū qiān kuàng	89
+钨铁矿	wū tiě kuàng	80
 钨铁石	wū tiě shí	75
+钨锌矿	wū xīn kuàng	85
 乌心石	wū xīn shí	78
 五行石	wǔ xíng shí	295
 五指石	wǔ zhǐ shí	89
+锡钯矿	xī bǎ kuàng	78
+硒钯矿	xī bǎ kuàng	50
+硒铋矿	xī bì kuàng	61
+喜峰矿	xǐ fēng kuàng	52
 吸附石	xī fù shí	116
+硒汞矿	xī gǒng kuàng	74
+硒钴矿	xī gǔ kuàng	54
 西黄石	xī huáng shí	94
+锡精矿	xī jīng kuàng	79
 细晶石	xì jīng shí	81
+洗矿槽	xǐ kuàng cáo	94
+锡矿场	xī kuàng chǎng	100
+硒矿床	xī kuàng chuáng	82
 硒矿床	xī kuàng chuáng	82
 锡矿床	xī kuàng chuáng	54
+锡矿床	xī kuàng chuáng	54
+锡矿工	xī kuàng gōng	70
+洗矿机	xǐ kuàng jī	74
+西矿街	xī kuàng jiē	92
+锡矿脉	xī kuàng mài	320
+洗矿筛	xǐ kuàng shāi	93
+锡矿山	xī kuàng shān	125
 锡矿石	xī kuàng shí	108
+洗矿塔	xǐ kuàng tǎ	74
+洗矿筒	xǐ kuàng tǒng	69
+洗矿桶	xǐ kuàng tǒng	61
 系缆石	xì lǎn shí	96
 细砾岩	xì lì yán	94
 细料石	xì liào shí	82
+锡铝矿	xī lǚ kuàng	58
 矽镁石	xī měi shí	93
 西盟石	xī méng shí	99
 犀牛石	xī niú shí	62
 矽铍石	xī pī shí	68
+硒铅矿	xī qiān kuàng	100
 吸水石	xī shuǐ shí	520
+硒铁矿	xī tiě kuàng	87
+硒铜矿	xī tóng kuàng	100
+稀土矿	xī tǔ kuàng	182
+锡瓦斯	xī wǎ sī	160
 矽线石	xī xiàn shí	94
 夕线石	xī xiàn shí	70
+矽锌矿	xī xīn kuàng	65
+硒银矿	xī yín kuàng	76
 下白石	xià bái shí	114
 霞沸石	xiá fèi shí	74
 下赣石	xià gàn shí	4
+下矿井	xià kuàng jǐng	114
+下拉矿	xià lā kuàng	84
 下炉石	xià lú shí	76
 下马石	xià mǎ shí	80
 下岩石	xià yán shí	107
@@ -1415,7 +2079,9 @@ sort: by_weight
 仙女石	xiān nǚ shí	64
 纤硼石	xiān péng shí	87
 纤闪石	xiān shǎn shí	97
+纤铁矿	xiān tiě kuàng	89
 纤维石	xiān wéi shí	66
+纤锌矿	xiān xīn kuàng	108
 香花石	xiāng huā shí	62
 香炉石	xiāng lú shí	102
 象形石	xiàng xíng shí	118
@@ -1423,8 +2089,10 @@ sort: by_weight
 像钻石	xiàng zuàn shí	156
 小结石	xiǎo jié shí	153
 萧介石	xiāo jiè shí	91
+小矿巢	xiǎo kuàng cháo	90
 小卵石	xiǎo luǎn shí	112
 小拳石	xiǎo quán shí	100
+硝石矿	xiāo shí kuàng	82
 硝酸矿	xiāo suān kuàng	83
 小碎石	xiǎo suì shí	113
 小藤石	xiǎo téng shí	58
@@ -1433,9 +2101,11 @@ sort: by_weight
 小钻石	xiǎo zuàn shí	158
 谢安石	xiè ān shí	98
 斜长石	xié cháng shí	190
+斜锆矿	xié gào kuàng	77
 斜锆石	xié gào shí	65
 斜辉石	xié huī shí	53
 斜晶石	xié jīng shí	82
+斜矿层	xié kuàng céng	55
 斜帘石	xié lián shí	91
 斜铝石	xié lǚ shí	58
 斜楔石	xié xiē shí	57
@@ -1443,13 +2113,18 @@ sort: by_weight
 心机石	xīn jī shí	56
 新箭石	xīn jiàn shí	59
 新角石	xīn jiǎo shí	53
+锌精矿	xīn jīng kuàng	178
+锌矿床	xīn kuàng chuáng	61
 锌矿床	xīn kuàng chuáng	61
 锌矿石	xīn kuàng shí	95
+新矿物	xīn kuàng wù	125
 锌榴石	xīn liú shí	65
 锌锰矿	xīn měng kuàng	61
 新日石	xīn rì shí	85
 锌乳石	xīn rǔ shí	76
+新三矿	xīn sān kuàng	73
 欣赏石	xīn shǎng shí	91
+锌铜矿	xīn tóng kuàng	63
 心形石	xīn xíng shí	88
 新岩石	xīn yán shí	68
 兴安石	xīng ān shí	75
@@ -1460,9 +2135,12 @@ sort: by_weight
 星叶石	xīng yè shí	92
 幸运石	xìng yùn shí	219
 溴化锰	xiù huà měng	56
+溴银矿	xiù yín kuàng	93
 叙永石	xù yǒng shí	74
 宣惊石	xuān jīng shí	94
+选矿比	xuǎn kuàng bǐ	75
 玄闪石	xuán shǎn shí	89
+玄铁矿	xuán tiě kuàng	105
 玄武石	xuán wǔ shí	102
 血滴石	xuè dī shí	441
 雪花石	xuě huā shí	76
@@ -1523,10 +2201,13 @@ sort: by_weight
 岩石园	yán shí yuán	92
 岩石云	yán shí yún	100
 岩石中	yán shí zhōng	214
+岩盐矿	yán yán kuàng	50
 烟雨石	yān yǔ shí	99
 羊背石	yáng bèi shí	78
 羊额石	yáng é shí	73
+氧钒矿	yǎng fán kuàng	88
 氧化锰	yǎng huà měng	141
+氧钼矿	yǎng mù kuàng	97
 阳起石	yáng qǐ shí	280
 杨天石	yáng tiān shí	184
 阳元石	yáng yuán shí	125
@@ -1535,33 +2216,55 @@ sort: by_weight
 姚瞿石	yáo qú shí	84
 曜日石	yào rì shí	98
 叶笔石	yè bǐ shí	75
+叶碲矿	yè dì kuàng	53
 叶沸石	yè fèi shí	78
 夜光石	yè guāng shí	96
 叶蜡石	yè là shí	179
 叶腊石	yè là shí	125
 夜目石	yè mù shí	80
+页岩的	yè yán de	138
+页岩气	yè yán qì	264
+页岩土	yè yán tǔ	69
+页岩油	yè yán yóu	290
+页岩砖	yè yán zhuān	96
 翼笔石	yì bǐ shí	93
 异剥石	yì bō shí	80
 易潮石	yì cháo shí	77
+铱锇矿	yī é kuàng	53
+铱铬矿	yī gè kuàng	52
+异极矿	yì jí kuàng	76
 易解石	yì jiě shí	56
 溢晶石	yì jīng shí	87
 伊利石	yī lì shí	108
+沂蒙矿	yí méng kuàng	96
+钇钽矿	yǐ tǎn kuàng	84
 钇榍石	yǐ xiè shí	92
 乙辛石	yǐ xīn shí	62
 异性石	yì xìng shí	82
 钇萤石	yǐ yíng shí	72
+钇铀矿	yǐ yóu kuàng	65
 一元石	yì yuán shí	122
 引导石	yǐn dǎo shí	76
 印度石	yìn dù shí	68
+隐伏矿	yǐn fú kuàng	88
+银汞矿	yín gǒng kuàng	68
 尹官石	yǐn guān shí	57
 尹介石	yǐn jiè shí	72
+银金矿	yín jīn kuàng	100
+铟矿床	yīn kuàng chuáng	79
 铟矿床	yīn kuàng chuáng	79
 银矿床	yín kuàng chuáng	68
+银矿床	yín kuàng chuáng	68
+银矿洞	yín kuàng dòng	73
+银矿山	yín kuàng shān	71
 银矿石	yín kuàng shí	125
+银矿湾	yín kuàng wān	90
 阴山石	yīn shān shí	72
 尹瘦石	yǐn shòu shí	210
 殷铁石	yīn tiě shí	82
+银铜矿	yín tóng kuàng	82
 尹熙石	yǐn xī shí	90
+银星矿	yín xīng kuàng	85
 银星石	yín xīng shí	66
 尹燕石	yǐn yàn shí	58
 阴阳石	yīn yáng shí	96
@@ -1576,6 +2279,7 @@ sort: by_weight
 莺歌石	yīng gē shí	59
 荧光石	yíng guāng shí	79
 硬锰矿	yìng měng kuàng	94
+萤石矿	yíng shí kuàng	123
 硬岩石	yìng yán shí	336
 鹰眼石	yīng yǎn shí	89
 硬柱石	yìng zhù shí	89
@@ -1586,10 +2290,17 @@ sort: by_weight
 铀钙石	yóu gài shí	80
 铀硅石	yóu guī shí	82
 铀矿床	yóu kuàng chuáng	100
+铀矿床	yóu kuàng chuáng	100
 铀矿石	yóu kuàng shí	162
+铀矿物	yóu kuàng wù	94
+油矿物	yóu kuàng wù	78
 黝帘石	yǒu lián shí	117
 油麻石	yóu má shí	100
+黝铜矿	yǒu tóng kuàng	81
+铀钍矿	yóu tǔ kuàng	83
+黝锡矿	yǒu xī kuàng	79
 铀霞石	yóu xiá shí	73
+油页岩	yóu yè yán	209
 游钻石	yóu zuàn shí	79
 喻川石	yù chuān shí	50
 玉滴石	yù dī shí	80
@@ -1598,17 +2309,21 @@ sort: by_weight
 雨化石	yǔ huà shí	60
 瑜伽石	yú jiā shí	73
 玉矿石	yù kuàng shí	76
+羽毛矿	yǔ máo kuàng	50
 俞南石	yú nán shí	61
 鱼脑石	yú nǎo shí	121
 俞蒲石	yú pú shí	58
+玉石矿	yù shí kuàng	156
 鱼首石	yú shǒu shí	86
 郁漱石	yù shù shí	72
 鱼眼石	yú yǎn shí	81
 御影石	yù yǐng shí	65
 鱼珠石	yú zhū shí	77
+原矿舍	yuán kuàng shě	76
 原矿石	yuán kuàng shí	132
 圆砾岩	yuán lì yán	93
 园林石	yuán lín shí	62
+原生矿	yuán shēng kuàng	146
 元素石	yuán sù shí	110
 猿岩石	yuán yán shí	85
 月长石	yuè cháng shí	141
@@ -1617,6 +2332,9 @@ sort: by_weight
 月球石	yuè qiú shí	97
 月乳石	yuè rǔ shí	58
 晕长石	yūn cháng shí	72
+运矿车	yùn kuàng chē	102
+云矿机	yún kuàng jī	24
+运矿岩	yùn kuàng yán	52
 云母石	yún mǔ shí	82
 陨铁石	yǔn tiě shí	74
 杂齿石	zá chǐ shí	52
@@ -1634,13 +2352,18 @@ sort: by_weight
 栅笔石	zhà bǐ shí	72
 长结石	zhǎng jié shí	133
 召唤石	zhào huàn shí	310
+沼铁矿	zhǎo tiě kuàng	70
+锗矿床	zhě kuàng chuáng	69
 锗矿床	zhě kuàng chuáng	69
 哲人石	zhé rén shí	110
 针沸石	zhēn fèi shí	98
 镇魂石	zhèn hún shí	112
 甄锦石	zhēn jǐn shí	51
 针镁石	zhēn měi shí	96
+针镍矿	zhēn niè kuàng	67
+针铁矿	zhēn tiě kuàng	136
 针铁石	zhēn tiě shí	71
+真银矿	zhēn yín kuàng	82
 针脂石	zhēn zhī shí	50
 珍珠石	zhēn zhū shí	95
 针柱石	zhēn zhù shí	64
@@ -1657,24 +2380,30 @@ sort: by_weight
 直角石	zhí jiǎo shí	98
 植结石	zhí jié shí	93
 指菊石	zhǐ jú shí	84
+知矿物	zhī kuàng wù	96
 智利石	zhì lì shí	92
 制炼石	zhì liàn shí	106
 治疗石	zhì liáo shí	347
 纸皮石	zhǐ pí shí	92
 直闪石	zhí shǎn shí	110
 炙焰石	zhì yàn shí	96
+钟铂矿	zhōng bó kuàng	57
 中长石	zhōng cháng shí	95
 中沸石	zhōng fèi shí	96
 中国石	zhōng guó shí	121
 重解石	zhòng jiě shí	80
 中金石	zhōng jīn shí	0
 重晶石	zhòng jīng shí	172
+中矿大	zhōng kuàng dà	81
+重矿物	zhòng kuàng wù	66
+中矿箱	zhōng kuàng xiāng	61
 中砾石	zhōng lì shí	63
 钟乳石	zhōng rǔ shí	220
 中心石	zhōng xīn shí	95
 中性石	zhōng xìng shí	87
 中岩石	zhōng yán shí	95
 中柱石	zhōng zhù shí	88
+州煤矿	zhōu méi kuàng	14
 逐安石	zhú ān shí	53
 朱碧石	zhū bì shí	229
 柱顶石	zhù dǐng shí	76
@@ -1684,9 +2413,12 @@ sort: by_weight
 珠角石	zhū jiǎo shí	83
 竹节石	zhú jié shí	66
 柱晶石	zhù jīng shí	67
+主矿物	zhǔ kuàng wù	95
+主矿种	zhǔ kuàng zhǒng	125
 猪肉石	zhū ròu shí	89
 诸西石	zhū xī shí	82
 柱形石	zhù xíng shí	68
+柱铀矿	zhù yóu kuàng	62
 转炉石	zhuàn lú shí	72
 撞击石	zhuàng jī shí	76
 装饰石	zhuāng shì shí	53
@@ -1694,6 +2426,7 @@ sort: by_weight
 锥晶石	zhuī jīng shí	89
 锥纹石	zhuī wén shí	127
 准矿石	zhǔn kuàng shí	80
+准矿物	zhǔn kuàng wù	88
 浊沸石	zhuó fèi shí	60
 紫脆石	zǐ cuì shí	95
 紫金石	zǐ jīn shí	87
@@ -1712,62 +2445,109 @@ sort: by_weight
 祖马石	zǔ mǎ shí	66
 祖正石	zǔ zhèng shí	99
 钻矿床	zuān kuàng chuáng	52
+钻矿床	zuān kuàng chuáng	52
+钻石矿	zuàn shí kuàng	181
 左萝石	zuǒ luó shí	94
 阿钙霞石	ā gài xiá shí	10
 阿门角石	ā mēn jiǎo shí	9
 艾达矿石	ài dá kuàng shí	5
+埃及矿业	āi jí kuàng yè	4
 爱灵松石	ài líng sōng shí	7
+矮人矿工	ǎi rén kuàng gōng	12
 爱石藏石	ài shí cáng shí	1
+暗锇铱矿	àn é yī kuàng	7
+安徽矿业	ān huī kuàng yè	6
 安克锰锌	ān kè měng xīn	5
+安全矿柱	ān quán kuàng zhù	11
 安如磐石	ān rú pán shí	30
 安若磐石	ān ruò pán shí	32
+暗色矿物	àn sè kuàng wù	8
 安于磐石	ān yú pán shí	5
+鞍状矿脉	ān zhuàng kuàng mài	6
 奥贝尔石	ào bèi ěr shí	9
 凹凸棒石	āo tū bàng shí	26
 八颗钻石	bā kē zuàn shí	1
+扒矿沟道	bā kuàng gōu dào	9
+扒矿巷道	bā kuàng hàng dào	5
+扒矿开采	bā kuàng kāi cǎi	5
+扒矿水准	bā kuàng shuǐ zhǔn	8
 八面沸石	bā miàn fèi shí	7
 白斑霞石	bái bān xiá shí	9
 柏比氏石	bǎi bǐ shì shí	6
+白垩矿床	bái è kuàng chuáng	8
 白垩矿床	bái è kuàng chuáng	8
 白硅钙石	bái guī gài shí	5
 白虎魂石	bái hǔ hún shí	5
 白虎秘石	bái hǔ mì shí	1
 白假霞石	bái jiǎ xiá shí	8
 白磷钙石	bái lín gài shí	3
+白磷铁矿	bái lín tiě kuàng	6
 白氯铅矿	bái lǜ qiān kuàng	9
 百慕三石	bǎi mù sān shí	13
+白钠铌矿	bái nà ní kuàng	9
 百年基石	bǎi nián jī shí	6
 白硼钙石	bái péng gài shí	9
 白蛇纹石	bái shé wén shí	1
+白砷镍矿	bái shēn niè kuàng	9
 白兽魂石	bái shòu hún shí	1
+白铁矿族	bái tiě kuàng zú	6
 白透辉石	bái tòu huī shí	5
+白云石矿	bái yún shí kuàng	7
 白针柱石	bái zhēn zhù shí	7
 白脂晶石	bái zhī jīng shí	8
 坂本萤石	bǎn běn yíng shí	6
+板块成矿	bǎn kuài chéng kuàng	9
 板磷钙石	bǎn lín gài shí	9
+板磷铁矿	bǎn lín tiě kuàng	1
 半木半石	bàn mù bàn shí	6
 板硼钙石	bǎn péng gài shí	7
+板铅铀矿	bǎn qiān yóu kuàng	10
+伴生矿物	bàn shēng kuàng wù	29
+斑脱页岩	bān tuō yè yán	9
+斑岩铜矿	bān yán tóng kuàng	18
 板状矿石	bǎn zhuàng kuàng shí	7
 板状岩石	bǎn zhuàng yán shí	10
+保安矿柱	bǎo ān kuàng zhù	12
+包被矿物	bāo bèi kuàng wù	8
 保胆取石	bǎo dǎn qǔ shí	39
+鲍店煤矿	bào diàn méi kuàng	11
+饱和矿物	bǎo hé kuàng wù	9
+宝矿国际	bǎo kuàng guó jì	5
 包林皂石	bāo lín zào shí	7
 包皮结石	bāo pí jié shí	16
+宝山铜矿	bǎo shān tóng kuàng	5
 抱石抱石	bào shí bào shí	6
+宝石矿产	bǎo shí kuàng chǎn	19
+宝石矿工	bǎo shí kuàng gōng	32
+宝石矿脉	bǎo shí kuàng mài	12
+宝石矿石	bǎo shí kuàng shí	12
+包水矿物	bāo shuǐ kuàng wù	9
+薄水铝矿	báo shuǐ lǚ kuàng	7
 包水岩石	bāo shuǐ yán shí	9
+爆炸瓦斯	bào zhà wǎ sī	10
 钡冰长石	bèi bīng cháng shí	7
+备采矿量	bèi cǎi kuàng liàng	7
 北窗竹石	běi chuāng zhú shí	1
 杯迭层石	bēi dié céng shí	7
+北京矿山	běi jīng kuàng shān	7
+北京矿冶	běi jīng kuàng yě	5
+被壳矿物	bèi ké kuàng wù	9
+北矿磁材	běi kuàng cí cái	29
+北矿科技	běi kuàng kē jì	22
 钡磷铝石	bèi lín lǚ shí	8
 钡镁锰矿	bèi měi měng kuàng	6
 钡闪叶石	bèi shǎn yè shí	7
 焙烧矿石	bèi shāo kuàng shí	9
 钡十字石	bèi shí zì shí	7
+北宿煤矿	běi sù méi kuàng	24
 钡天青石	bèi tiān qīng shí	10
 钡铁钛石	bèi tiě tài shí	1
 钡硬锰矿	bèi yìng měng kuàng	14
 铋磷灰石	bì lín huī shí	9
 碧水神石	bì shuǐ shén shí	3
+铋钽铁矿	bì tǎn tiě kuàng	7
 碧玺原石	bì xǐ yuán shí	23
+碧玉矿洞	bì yù kuàng dòng	13
 变成化石	biàn chéng huà shí	9
 变杆沸石	biàn gān fèi shí	9
 变蓝方石	biàn lán fāng shí	10
@@ -1778,14 +2558,25 @@ sort: by_weight
 变水锆石	biàn shuǐ gào shí	6
 变形砾石	biàn xíng lì shí	10
 变铀钍石	biàn yóu tǔ shí	10
+变余矿物	biàn yú kuàng wù	5
+变质矿床	biàn zhì kuàng chuáng	7
 变质矿床	biàn zhì kuàng chuáng	7
 变质砾岩	biàn zhì lì yán	6
+表生矿物	biǎo shēng kuàng wù	3
+标型矿物	biāo xíng kuàng wù	8
 标志化石	biāo zhì huà shí	9
 标准化石	biāo zhǔn huà shí	8
+标准矿物	biāo zhǔn kuàng wù	5
+标准矿样	biāo zhǔn kuàng yàng	9
 别离磐石	bié lí pán shí	8
 冰上溜石	bīng shàng liū shí	22
+伯方煤矿	bó fāng méi kuàng	11
+波兰矿难	bō lán kuàng nàn	7
 玻璃陨石	bō li yǔn shí	42
+勃姆铝矿	bó mǔ lǚ kuàng	5
+剥土探矿	bō tǔ tàn kuàng	9
 搏泽君石	bó zé jūn shí	8
+埠村煤矿	bù cūn méi kuàng	10
 不分玉石	bù fēn yù shí	1
 补天炼石	bǔ tiān liàn shí	5
 补天神石	bǔ tiān shén shí	23
@@ -1796,9 +2587,41 @@ sort: by_weight
 采出矿石	cǎi chū kuàng shí	13
 财富基石	cái fù jī shí	23
 彩虹沙石	cǎi hóng shā shí	8
+采金矿工	cǎi jīn kuàng gōng	12
+采矿程序	cǎi kuàng chéng xù	6
+采矿等级	cǎi kuàng děng jí	5
+采矿方法	cǎi kuàng fāng fǎ	8
+采矿工程	cǎi kuàng gōng chéng	5
+采矿工具	cǎi kuàng gōng jù	8
+采矿工业	cǎi kuàng gōng yè	6
+采矿工艺	cǎi kuàng gōng yì	9
+采矿工作	cǎi kuàng gōng zuò	8
+采矿规程	cǎi kuàng guī chéng	7
+采矿活动	cǎi kuàng huó dòng	9
+采矿技术	cǎi kuàng jì shù	8
+采矿机组	cǎi kuàng jī zǔ	8
+采矿科学	cǎi kuàng kē xué	9
+采矿硫磺	cǎi kuàng liú huáng	6
+采矿品位	cǎi kuàng pǐn wèi	6
+采矿区域	cǎi kuàng qū yù	7
+采矿权利	cǎi kuàng quán lì	1
+采矿权人	cǎi kuàng quán rén	52
+采矿设备	cǎi kuàng shè bèi	6
+采矿设计	cǎi kuàng shè jì	8
+采矿协会	cǎi kuàng xié huì	5
+采矿用地	cǎi kuàng yòng dì	7
+采矿原料	cǎi kuàng yuán liào	6
+彩钼铅矿	cǎi mù qiān kuàng	7
+采石矿区	cǎi shí kuàng qū	9
+采准矿量	cǎi zhǔn kuàng liàng	10
 残积矿床	cán jī kuàng chuáng	9
+残积矿床	cán jī kuàng chuáng	9
+残积砂矿	cán jī shā kuàng	8
 残留结石	cán liú jié shí	14
 残留矿床	cán liú kuàng chuáng	8
+残留矿床	cán liú kuàng chuáng	8
+残留矿渣	cán liú kuàng zhā	5
+残余矿物	cán yú kuàng wù	7
 餐云卧石	cān yún wò shí	11
 沧海顽石	cāng hǎi wán shí	6
 草木竹石	cǎo mù zhú shí	31
@@ -1806,73 +2629,164 @@ sort: by_weight
 层间砾岩	céng jiān lì yán	9
 层间岩溶	céng jiān yán róng	5
 层控矿床	céng kòng kuàng chuáng	10
+层控矿床	céng kòng kuàng chuáng	10
 层内砾岩	céng nèi lì yán	9
 层状矿床	céng zhuàng kuàng chuáng	7
+层状矿床	céng zhuàng kuàng chuáng	7
+层状矿脉	céng zhuàng kuàng mài	5
+层状铁矿	céng zhuàng tiě kuàng	8
 层状岩石	céng zhuàng yán shí	22
 柴达木石	chái dá mù shí	9
 柴苏辉石	chái sū huī shí	10
+常村煤矿	cháng cūn méi kuàng	12
 长江水文	cháng jiāng shuǐ wén	20
+厂矿科协	chǎng kuàng kē xié	1
+厂矿企业	chǎng kuàng qǐ yè	41
 常林钻石	cháng lín zuàn shí	13
+场内矿柱	chǎng nèi kuàng zhù	6
 昌润钻石	chāng rùn zuàn shí	3
+长沙矿山	cháng shā kuàng shān	9
+长沙矿冶	cháng shā kuàng yě	8
+长石矿床	cháng shí kuàng chuáng	5
 长石矿床	cháng shí kuàng chuáng	5
 肠胃结石	cháng wèi jié shí	3
+长坞页岩	cháng wù yè yán	8
 超白窿石	chāo bái lóng shí	7
 超级晶石	chāo jí jīng shí	21
+超级矿工	chāo jí kuàng gōng	13
 超微化石	chāo wēi huà shí	5
 朝鲜辉石	cháo xiǎn huī shí	8
 尘寰遗石	chén huán yí shí	7
 沉积矿床	chén jī kuàng chuáng	18
+沉积矿床	chén jī kuàng chuáng	18
+辰州矿业	chén zhōu kuàng yè	30
 成层矿床	chéng céng kuàng chuáng	6
+成层矿床	chéng céng kuàng chuáng	6
+程潮铁矿	chéng cháo tiě kuàng	7
 橙钒钙石	chéng fán gài shí	8
+澄合矿业	chéng hé kuàng yè	9
 橙尖晶石	chéng jiān jīng shí	8
+成矿构造	chéng kuàng gòu zào	9
+成矿建造	chéng kuàng jiàn zào	6
+成矿阶段	chéng kuàng jiē duàn	10
+成矿壳层	chéng kuàng ké céng	5
+成矿流体	chéng kuàng liú tǐ	6
+成矿模式	chéng kuàng mó shì	8
+成矿母岩	chéng kuàng mǔ yán	5
+成矿区域	chéng kuàng qū yù	10
+成矿时代	chéng kuàng shí dài	5
+成矿系列	chéng kuàng xì liè	9
+成矿序列	chéng kuàng xù liè	8
 成矿岩石	chéng kuàng yán shí	7
+成矿因素	chéng kuàng yīn sù	9
+成矿预测	chéng kuàng yù cè	8
+成矿元素	chéng kuàng yuán sù	7
+成矿作用	chéng kuàng zuò yòng	5
 城市化石	chéng shì huà shí	7
 城中化石	chéng zhōng huà shí	7
 赤城明石	chì chéng míng shí	7
 吃鸡滚石	chī jī gǔn shí	6
 持久化石	chí jiǔ huà shí	6
 齿绿松石	chǐ lǜ sōng shí	9
+赤铁矿法	chì tiě kuàng fǎ	3
+赤铁矿粉	chì tiě kuàng fěn	13
+赤铁矿化	chì tiě kuàng huà	9
 赤铁矿石	chì tiě kuàng shí	14
+赤铁矿族	chì tiě kuàng zú	5
+赤铜铁矿	chì tóng tiě kuàng	6
 持续化石	chí xù huà shí	6
 赤银矿石	chì yín kuàng shí	10
+重复矿化	chóng fù kuàng huà	6
 虫管化石	chóng guǎn huà shí	9
 冲积矿床	chōng jī kuàng chuáng	9
+冲积矿床	chōng jī kuàng chuáng	9
 冲积砾石	chōng jī lì shí	8
+冲积砂矿	chōng jī shā kuàng	14
+重庆矿难	chóng qìng kuàng nàn	4
+重庆气矿	chóng qìng qì kuàng	3
 充填矿床	chōng tián kuàng chuáng	1
+充填矿床	chōng tián kuàng chuáng	1
+出矿品位	chū kuàng pǐn wèi	12
+储矿平巷	chǔ kuàng píng hàng	6
+出矿指挥	chū kuàng zhǐ huī	6
 除铁除锰	chú tiě chú měng	4
+雏形成矿	chú xíng chéng kuàng	7
 储油岩石	chǔ yóu yán shí	10
 穿云裂石	chuān yún liè shí	23
+纯铝土矿	chún lǚ tǔ kuàng	9
 纯绿柱石	chún lǜ zhù shí	5
 纯镁闪石	chún měi shǎn shí	7
 纯钠辉石	chún nà huī shí	6
+纯闪锌矿	chún shǎn xīn kuàng	7
+磁赤铁矿	cí chì tiě kuàng	14
+磁黄铁矿	cí huáng tiě kuàng	25
+磁力选矿	cí lì xuǎn kuàng	7
 次绿泥石	cì lǜ ní shí	8
+磁铅铁矿	cí qiān tiě kuàng	6
 次软岩石	cì ruǎn yán shí	8
 次生化石	cì shēng huà shí	9
 次生矿床	cì shēng kuàng chuáng	16
+次生矿床	cì shēng kuàng chuáng	16
+次生矿物	cì shēng kuàng wù	29
+次铁钒矿	cì tiě fán kuàng	6
+磁铁矿粉	cí tiě kuàng fěn	9
+磁铁矿砂	cí tiě kuàng shā	3
 次透辉石	cì tòu huī shí	8
 磁性化石	cí xìng huà shí	8
 磁性矿石	cí xìng kuàng shí	1
+磁性矿物	cí xìng kuàng wù	7
+磁选精矿	cí xuǎn jīng kuàng	7
+次要矿物	cì yào kuàng wù	8
+簇磷铁矿	cù lín tiě kuàng	6
+粗选尾矿	cū xuǎn wěi kuàng	9
 催化神石	cuī huà shén shí	5
+催泪瓦斯	cuī lèi wǎ sī	18
 脆绿泥石	cuì lǜ ní shí	10
+翠砷铜矿	cuì shēn tóng kuàng	8
 脆性岩石	cuì xìng yán shí	7
+大安山矿	dà ān shān kuàng	5
+大昌矿业	dà chāng kuàng yè	22
 大红袍石	dà hóng páo shí	5
+大黄山矿	dà huáng shān kuàng	14
 大块矿石	dà kuài kuàng shí	10
+大理石矿	dà lǐ shí kuàng	13
+大量采矿	dà liàng cǎi kuàng	6
+达马斯矿	dá mǎ sī kuàng	20
 大猫眼石	dà māo yǎn shí	19
+大明一矿	dà míng yī kuàng	7
 大漠陨石	dà mò yǔn shí	5
+大青山矿	dà qīng shān kuàng	7
+大同矿区	dà tóng kuàng qū	11
+大统矿业	dà tǒng kuàng yè	1
+大同煤矿	dà tóng méi kuàng	33
 大型化石	dà xíng huà shí	5
+大型矿车	dà xíng kuàng chē	9
+大兴煤矿	dà xīng méi kuàng	48
+大雁矿区	dà yàn kuàng qū	1
+大冶铁矿	dà yě tiě kuàng	16
 大禹褐石	dà yǔ hè shí	32
+带刀矿工	dài dāo kuàng gōng	10
 带了一石	dài le yì shí	13
 代森锰锌	dài sēn měng xīn	27
+代替矿物	dài tì kuàng wù	8
+带状矿脉	dài zhuàng kuàng mài	9
 带状矿石	dài zhuàng kuàng shí	8
+岱庄煤矿	dài zhuāng méi kuàng	7
 淡钡钛石	dàn bèi tài shí	6
 单成砾岩	dān chéng lì yán	7
 胆道结石	dǎn dào jié shí	29
+单个矿粒	dān gè kuàng lì	7
 胆管结石	dǎn guǎn jié shí	39
+单硅钙矿	dān guī gài kuàng	8
 单硅钙石	dān guī gài shí	6
 淡硅锰石	dàn guī měng shí	11
 淡红沸石	dàn hóng fèi shí	15
+淡红银矿	dàn hóng yín kuàng	6
+单矿物岩	dān kuàng wù yán	10
 淡蓝顽石	dàn lán wán shí	7
+单硫铁矿	dān liú tiě kuàng	8
 胆囊结石	dǎn náng jié shí	50
+淡砷铜矿	dàn shēn tóng kuàng	5
 单斜锆石	dān xié gào shí	9
 单斜辉石	dān xié huī shí	21
 单斜闪石	dān xié shǎn shí	9
@@ -1882,76 +2796,167 @@ sort: by_weight
 盗采砂石	dào cǎi shā shí	22
 到五块石	dào wǔ kuài shí	10
 到牙克石	dào yá kè shí	12
+德国矿业	dé guó kuàng yè	6
+德国煤矿	dé guó méi kuàng	5
+德兴铜矿	dé xīng tóng kuàng	27
 底板岩石	dǐ bǎn yán shí	6
+碲铋银矿	dì bì yín kuàng	7
+地表采矿	dì biǎo cǎi kuàng	1
+第二油矿	dì èr yóu kuàng	1
+碲金银矿	dì jīn yín kuàng	12
+地矿医院	dì kuàng yī yuàn	7
+低品位矿	dī pǐn wèi kuàng	23
 滴水穿石	dī shuǐ chuān shí	43
+地下矿山	dì xià kuàng shān	5
 地下岩溶	dì xià yán róng	10
 碲锌锰矿	dì xīn měng kuàng	8
 地狱火石	dì yù huǒ shí	7
+地质矿产	dì zhì kuàng chǎn	55
 地之原石	dì zhī yuán shí	1
+地质找矿	dì zhì zhǎo kuàng	32
 地中基石	dì zhōng jī shí	4
 碘铬钙石	diǎn gè gài shí	3
 电光火石	diàn guāng huǒ shí	42
 碘光卤石	diǎn guāng lǔ shí	8
 点金成石	diǎn jīn chéng shí	10
+电力选矿	diàn lì xuǎn kuàng	9
+碘溴银矿	diǎn xiù yín kuàng	8
+电泳选矿	diàn yǒng xuǎn kuàng	6
 钓鱼岛石	diào yú dǎo shí	6
 叠生矿床	dié shēng kuàng chuáng	1
+叠生矿床	dié shēng kuàng chuáng	1
+叠套矿床	dié tào kuàng chuáng	6
 叠套矿床	dié tào kuàng chuáng	6
 顶板岩石	dǐng bǎn yán shí	8
 鼎铛玉石	dǐng chēng yù shí	16
 顶盘砾岩	dǐng pán lì yán	9
 顶天三石	dǐng tiān sān shí	3
 东北角石	dōng běi jiǎo shí	3
+东欢坨矿	dōng huān tuó kuàng	11
+东矿社区	dōng kuàng shè qū	11
 冻蓝闪石	dòng lán shǎn shí	6
 东临碣石	dōng lín jié shí	32
+东露天矿	dōng lù tiān kuàng	10
+东滩煤矿	dōng tān méi kuàng	9
 动物化石	dòng wù huà shí	9
+东乡铜矿	dōng xiāng tóng kuàng	9
+洞穴矿物	dòng xué kuàng wù	7
+豆状铁矿	dòu zhuàng tiě kuàng	5
+杜儿坪矿	dù ér píng kuàng	17
 毒钙镁石	dú gài měi shí	8
 度量钻石	dù liàng zuàn shí	1
+毒气瓦斯	dú qì wǎ sī	17
 短棒角石	duǎn bàng jiǎo shí	23
 短空晶石	duǎn kōng jīng shí	5
 煅阳起石	duàn yáng qǐ shí	4
 钝钠辉石	dùn nà huī shí	5
 多彩燧石	duō cǎi suì shí	3
+多尘矿井	duō chén kuàng jǐng	5
+多金属矿	duō jīn shǔ kuàng	32
 多孔霞石	duō kǒng xiá shí	9
 多孔岩石	duō kǒng yán shí	7
+多矿物岩	duō kuàng wù yán	8
 多蒙药石	duō méng yào shí	32
+多铁矿质	duō tiě kuàng zhì	7
+峨口铁矿	é kǒu tiě kuàng	9
 鄂信钻石	è xìn zuàn shí	18
 恶运钻石	è yùn zuàn shí	12
+鄂庄煤矿	è zhuāng méi kuàng	9
 二灰碎石	èr huī suì shí	19
 二氯化锰	èr lǜ huà měng	3
 鲕绿泥石	ér lǜ ní shí	21
 二十四石	èr shí sì shí	12
 二氧化锰	èr yǎng huà měng	43
 发光沸石	fā guāng fèi shí	9
+发光矿物	fā guāng kuàng wù	7
+法国矿难	fǎ guó kuàng nàn	6
+法国矿业	fǎ guó kuàng yè	5
 发硼钙石	fā péng gài shí	9
 发展基石	fā zhǎn jī shí	32
+钒钡铜矿	fán bèi tóng kuàng	9
 反称笔石	fǎn chēng bǐ shí	10
+钒磁铁矿	fán cí tiě kuàng	3
+钒钙铜矿	fán gài tóng kuàng	1
+钒钙铀矿	fán gài yóu kuàng	1
+范各庄矿	fàn gè zhuāng kuàng	16
 反击磁石	fǎn jī cí shí	12
+钒钾铀矿	fán jiǎ yóu kuàng	16
+矾钾铀矿	fán jiǎ yóu kuàng	6
 钒锰铅矿	fán měng qiān kuàng	7
+钒钼铅矿	fán mù qiān kuàng	7
+钒铅锌矿	fán qiān xīn kuàng	13
+钒铜铅矿	fán tóng qiān kuàng	5
+钒铜铀矿	fán tóng yóu kuàng	7
 反纹长石	fǎn wén cháng shí	8
+钒锌铅矿	fán xīn qiān kuàng	8
+反应矿物	fǎn yìng kuàng wù	5
 仿大理石	fǎng dà lǐ shí	24
+方碲金矿	fāng dì jīn kuàng	10
 放电锰矿	fàng diàn měng kuàng	10
+方黄铜矿	fāng huáng tóng kuàng	13
+方黄锡矿	fāng huáng xī kuàng	6
+方辉铜矿	fāng huī tóng kuàng	6
+房间矿柱	fáng jiān kuàng zhù	6
+放矿点口	fàng kuàng diǎn kǒu	10
+放矿计划	fàng kuàng jì huà	6
+放矿溜道	fàng kuàng liū dào	9
+放矿溜口	fàng kuàng liū kǒu	7
+放矿上山	fàng kuàng shàng shān	8
+放矿速度	fàng kuàng sù dù	5
+放矿制度	fàng kuàng zhì dù	10
+方硫镉矿	fāng liú gé kuàng	7
+方硫镍矿	fāng liú niè kuàng	7
+方硫银矿	fāng liú yín kuàng	8
 方锰铅矿	fāng měng qiān kuàng	9
 方锰铁矿	fāng měng tiě kuàng	9
+方铅矿族	fāng qiān kuàng zú	7
+放射矿物	fàng shè kuàng wù	5
 方霜晶石	fāng shuāng jīng shí	10
+防水矿柱	fáng shuǐ kuàng zhù	3
+方铜铅矿	fāng tóng qiān kuàng	10
+方钨铁矿	fāng wū tiě kuàng	8
+方硒钴矿	fāng xī gǔ kuàng	8
+方黝锡矿	fāng yǒu xī kuàng	10
 翡翠赌石	fěi cuì dǔ shí	40
 翡翠玉石	fěi cuì yù shí	46
 翡翠原石	fěi cuì yuán shí	51
 非法砂石	fēi fǎ shā shí	14
+非金属矿	fēi jīn shǔ kuàng	41
+非晶铀矿	fēi jīng yóu kuàng	9
+非矿大厦	fēi kuàng dà shà	3
+废矿山层	fèi kuàng shān céng	3
+废矿物油	fèi kuàng wù yóu	27
+非矿异常	fēi kuàng yì cháng	5
 飞来神石	fēi lái shén shí	27
+肥料矿物	féi liào kuàng wù	7
+非煤矿山	fēi méi kuàng shān	43
 飞沙走石	fēi shā zǒu shí	43
 飞砂走石	fēi shā zǒu shí	27
 沸石矿床	fèi shí kuàng chuáng	1
+沸石矿床	fèi shí kuàng chuáng	1
+废石尾矿	fèi shí wěi kuàng	21
+非洲矿难	fēi zhōu kuàng nàn	4
+非洲矿业	fēi zhōu kuàng yè	6
 分带化石	fēn dài huà shí	9
 粉硅镁石	fěn guī měi shí	7
 粉红钻石	fěn hóng zuàn shí	21
 分凝矿床	fēn níng kuàng chuáng	8
+分凝矿床	fēn níng kuàng chuáng	8
 粉碎矿石	fěn suì kuàng shí	6
+汾西矿业	fén xī kuàng yè	28
+分乡页岩	fēn xiāng yè yán	7
 粉状矿石	fěn zhuàng kuàng shí	1
 分子化石	fēn zǐ huà shí	10
+风成砂矿	fēng chéng shā kuàng	8
 峰大斑石	fēng dà bān shí	4
 风化矿床	fēng huà kuàng chuáng	1
+风化矿床	fēng huà kuàng chuáng	1
+风化矿苗	fēng huà kuàng miáo	10
 风化矿石	fēng huà kuàng shí	1
 风化岩石	fēng huà yán shí	21
+凤凰山矿	fèng huáng shān kuàng	12
+封矿限采	fēng kuàng xiàn cǎi	4
+风力选矿	fēng lì xuǎn kuàng	7
 风鸟千石	fēng niǎo qiān dàn	7
 风信子石	fēng xìn zi shí	11
 风之精石	fēng zhī jīng shí	7
@@ -1959,21 +2964,40 @@ sort: by_weight
 拂彼白石	fú bǐ bái shí	1
 复成砾岩	fù chéng lì yán	7
 复盖岩石	fù gài yán shí	10
+富钙铀矿	fù gài yóu kuàng	7
 氟硅铈矿	fú guī shì kuàng	6
+复合矿层	fù hé kuàng céng	6
+复合矿床	fù hé kuàng chuáng	8
 复合矿床	fù hé kuàng chuáng	8
 复合矿石	fù hé kuàng shí	6
+复合矿物	fù hé kuàng wù	15
 阜康陨石	fù kāng yǔn shí	19
+富矿带泉	fù kuàng dài quán	6
+阜矿集团	fù kuàng jí tuán	15
 浮雷炬石	fú léi jù shí	4
+富力煤矿	fù lì méi kuàng	7
 氟氯铅矿	fú lǜ qiān kuàng	5
 富锰闪石	fù měng shǎn shí	7
+芙蓉铀矿	fú róng yóu kuàng	7
+富瑟银矿	fù sè yín kuàng	23
+符山铁矿	fú shān tiě kuàng	1
+复砷镍矿	fù shēn niè kuàng	8
 氟铈锎矿	fú shì kāi kuàng	6
 复水锰矿	fù shuǐ měng kuàng	8
 氟碳铈矿	fú tàn shì kuàng	24
 富铁矿石	fù tiě kuàng shí	1
 富铁泥石	fù tiě ní shí	5
 符文血石	fú wén xuè shí	3
+复稀金矿	fù xī jīn kuàng	7
+浮选精矿	fú xuǎn jīng kuàng	3
+浮选矿浆	fú xuǎn kuàng jiāng	9
+浮选尾矿	fú xuǎn wěi kuàng	3
 负异性石	fù yì xìng shí	7
+浮游矿物	fú yóu kuàng wù	7
+浮游选矿	fú yóu xuǎn kuàng	10
 钆镓榴石	gá jiā liú shí	10
+钙铒钇矿	gài ěr yǐ kuàng	7
+钙钒铜矿	gài fán tóng kuàng	9
 钙橄榄石	gài gǎn lǎn shí	1
 钙铬榴石	gài gè liú shí	24
 钙硅铈石	gài guī shì shí	7
@@ -1981,52 +3005,120 @@ sort: by_weight
 钙交沸石	gài jiāo fèi shí	10
 钙孔雀石	gài kǒng què shí	5
 钙磷钙石	gài lín gài shí	1
+钙磷铅矿	gài lín qiān kuàng	7
+钙磷铁矿	gài lín tiě kuàng	1
 钙菱锰矿	gài líng měng kuàng	1
+钙菱锶矿	gài líng sī kuàng	9
 钙铝榴石	gài lǚ liú shí	31
 钙钠长石	gài nà cháng shí	1
 钙铌水石	gài ní shuǐ shí	8
+钙铌钽矿	gài ní tǎn kuàng	5
 钙锘榴石	gài nuò liú shí	6
 钙铍柱石	gài pī zhù shí	7
+钙砷铅矿	gài shēn qiān kuàng	7
+钙砷铁矿	gài shēn tiě kuàng	1
 钙十字石	gài shí zì shí	6
+钙钛铌矿	gài tài ní kuàng	7
 钙铁辉石	gài tiě huī shí	15
 钙铁榴石	gài tiě liú shí	28
 钙斜长石	gài xié cháng shí	7
+钙钇铒矿	gài yǐ ěr kuàng	9
 钙硬锰矿	gài yìng měng kuàng	10
 钙藻化石	gài zǎo huà shí	5
+钙质页岩	gài zhì yè yán	9
+肝赤铜矿	gān chì tóng kuàng	9
 肝胆结石	gān dǎn jié shí	32
+干给矿机	gàn gěi kuàng jī	8
 肝管结石	gān guǎn jié shí	12
+橄榄铜矿	gǎn lǎn tóng kuàng	17
 橄榄雨石	gǎn lǎn yǔ shí	5
 肝内结石	gān nèi jié shí	15
+甘肃矿业	gān sù kuàng yè	5
+钢骑之矿	gāng qí zhī kuàng	27
 钢玉矿石	gāng yù kuàng shí	1
+钢玉石矿	gāng yù shí kuàng	5
 高峰坠石	gāo fēng zhuì shí	10
+锆钙钛矿	gào gài tài kuàng	1
 锆硅钾石	gào guī jiǎ shí	5
 膏肓泉石	gāo huāng quán shí	32
 锆钪钇石	gào kàng yǐ shí	6
+高磷铁矿	gāo lín tiě kuàng	1
+高炉富矿	gāo lú fù kuàng	8
+高炉矿渣	gāo lú kuàng zhā	16
+高铝矿物	gāo lǚ kuàng wù	3
 高能焚石	gāo néng fén shí	3
+高品位矿	gāo pǐn wèi kuàng	13
 睾丸结石	gāo wán jié shí	5
+铬磁铁矿	gè cí tiě kuàng	1
 各国化石	gè guó huà shí	4
+各国矿场	gè guó kuàng chǎng	8
+各国矿工	gè guó kuàng gōng	7
+各国矿难	gè guó kuàng nàn	8
+各国矿业	gè guó kuàng yè	5
+各国煤矿	gè guó méi kuàng	7
+各国铜矿	gè guó tóng kuàng	6
 铬尖晶石	gè jiān jīng shí	16
 铬磷铝石	gè lín lǚ shí	9
 铬绿帘石	gè lǜ lián shí	7
 铬绿泥石	gè lǜ ní shí	9
 铬铝英石	gè lǚ yīng shí	8
 铬镁榴石	gè měi liú shí	8
+各省矿难	gè shěng kuàng nàn	7
+各省矿业	gè shěng kuàng yè	6
 铬铁矿床	gè tiě kuàng chuáng	8
+铬铁矿床	gè tiě kuàng chuáng	8
+铬铁矿浆	gè tiě kuàng jiāng	10
+铬铁矿砂	gè tiě kuàng shā	3
 铬透辉石	gè tòu huī shí	19
 各种结石	gè zhǒng jié shí	29
+给矿粒度	gěi kuàng lì dù	7
+给矿浓度	gěi kuàng nóng dù	7
 功垂金石	gōng chuí jīn shí	32
 躬蹈矢石	gōng dǎo shǐ shí	3
+工矿灯具	gōng kuàng dēng jù	5
+工矿灯罩	gōng kuàng dēng zhào	1
+工矿公司	gōng kuàng gōng sī	26
+工矿配件	gōng kuàng pèi jiàn	16
+工矿企业	gōng kuàng qǐ yè	49
+工矿商贸	gōng kuàng shāng mào	33
+工矿设备	gōng kuàng shè bèi	25
+工矿用地	gōng kuàng yòng dì	25
 躬冒矢石	gōng mào shǐ shí	7
+共生矿物	gòng shēng kuàng wù	6
+汞型矿化	gǒng xíng kuàng huà	9
 工业矿石	gōng yè kuàng shí	8
+工业矿物	gōng yè kuàng wù	6
 故爱雅石	gù ài yǎ shí	4
+孤臣页岩	gū chén yè yán	8
 钴方解石	gǔ fāng jiě shí	8
+孤峰页岩	gū fēng yè yán	7
+古交工矿	gǔ jiāo gōng kuàng	10
+钴菱锌矿	gǔ líng xīn kuàng	1
+姑山铁矿	gū shān tiě kuàng	1
+崮山页岩	gù shān yè yán	6
+钴砷铁矿	gǔ shēn tiě kuàng	9
 钴十字石	gǔ shí zì shí	6
+古书院矿	gǔ shū yuàn kuàng	18
 古铜辉石	gǔ tóng huī shí	25
+关闭矿山	guān bì kuàng shān	9
+贯入矿体	guàn rù kuàng tǐ	7
+管状矿体	guǎn zhuàng kuàng tǐ	6
 光大安石	guāng dà ān shí	27
+光电选矿	guāng diàn xuǎn kuàng	7
+广东矿难	guǎng dōng kuàng nàn	6
+广东矿业	guǎng dōng kuàng yè	6
 光壳节石	guāng ké jié shí	8
+广西矿难	guǎng xī kuàng nàn	5
+广西矿业	guǎng xī kuàng yè	6
+光学矿物	guāng xué kuàng wù	8
+硅钡铍矿	guī bèi pī kuàng	8
+硅钡铁矿	guī bèi tiě kuàng	8
 硅矾钙石	guī fán gài shí	30
 硅钙镁石	guī gài měi shí	9
+硅钙铅矿	guī gài qiān kuàng	8
+硅钙铜矿	guī gài tóng kuàng	5
 硅钙锡石	guī gài xī shí	7
+硅钙铀矿	guī gài yóu kuàng	7
 贵橄榄石	guì gǎn lǎn shí	21
 硅锆钠石	guī gào nà shí	7
 桂硅钙石	guì guī gài shí	8
@@ -2035,145 +3127,326 @@ sort: by_weight
 硅磷灰石	guī lín huī shí	9
 硅磷铈石	guī lín shì shí	8
 硅铝钙石	guī lǚ gài shí	5
+硅铝矿物	guī lǚ kuàng wù	1
+硅镁镍矿	guī měi niè kuàng	3
+硅镁铅矿	guī měi qiān kuàng	8
+硅镁铀矿	guī měi yóu kuàng	7
 硅锰合金	guī měng hé jīn	17
 硅锰铅矿	guī měng qiān kuàng	8
 硅钠锆石	guī nà gào shí	5
 硅钠铌石	guī nà ní shí	8
+硅钠钛矿	guī nà tài kuàng	3
+硅铌钠矿	guī ní nà kuàng	8
 硅硼钙石	guī péng gài shí	16
 硅硼镁石	guī péng měi shí	8
 硅硼钠石	guī péng nà shí	5
+硅铍钇矿	guī pī yǐ kuàng	22
 硅铅锰矿	guī qiān měng kuàng	10
+硅铅铁矿	guī qiān tiě kuàng	9
+硅铅锌矿	guī qiān xīn kuàng	6
+硅铅铀矿	guī qiān yóu kuàng	9
+硅石矿床	guī shí kuàng chuáng	9
 硅石矿床	guī shí kuàng chuáng	9
 硅酸钍矿	guī suān tǔ kuàng	1
 硅钛钠石	guī tài nà shí	6
 硅锑锰矿	guī tī měng kuàng	9
+硅铁钡矿	guī tiě bèi kuàng	1
 硅铁灰石	guī tiě huī shí	12
+硅铜铀矿	guī tóng yóu kuàng	8
 硅钍锆石	guī tǔ gào shí	8
+硅钍钇矿	guī tǔ yǐ kuàng	5
+硅钨镁矿	guī wū měi kuàng	6
 硅稀土石	guī xī tǔ shí	8
 硅锌铝石	guī xīn lǚ shí	6
 硅质岩石	guī zhì yán shí	10
+硅质页岩	guī zhì yè yán	3
+贵州矿难	guì zhōu kuàng nàn	5
 贵州络石	guì zhōu luò shí	11
+国城矿业	guó chéng kuàng yè	7
 国家柱石	guó jiā zhù shí	25
+果园矿场	guǒ yuán kuàng chǎng	7
+哈瓦斯社	hā wǎ sī shè	67
 海岸砾石	hǎi àn lì shí	6
 海边的石	hǎi biān de shí	4
+海滨砂矿	hǎi bīn shā kuàng	9
+海底采矿	hǎi dǐ cǎi kuàng	6
+海底矿产	hǎi dǐ kuàng chǎn	8
 海底矿床	hǎi dǐ kuàng chuáng	6
+海底矿床	hǎi dǐ kuàng chuáng	6
+海底砂矿	hǎi dǐ shā kuàng	5
 海蓝石的	hǎi lán shí de	32
 海蓝柱石	hǎi lán zhù shí	5
 海绿石化	hǎi lǜ shí huà	8
 海绿石砂	hǎi lǜ shí shā	17
+海洋采矿	hǎi yáng cǎi kuàng	7
 海之化石	hǎi zhī huà shí	1
 汉白玉石	hàn bái yù shí	25
+含钡矿物	hán bèi kuàng wù	5
+含铋矿物	hán bì kuàng wù	7
+含钒矿物	hán fán kuàng wù	6
+含钙矿物	hán gài kuàng wù	6
+含锆矿物	hán gào kuàng wù	7
+含镉矿物	hán gé kuàng wù	6
+含铬矿物	hán gè kuàng wù	5
+含汞矿物	hán gǒng kuàng wù	6
+含钴矿物	hán gǔ kuàng wù	4
 汉画像石	hàn huà xiàng shí	33
+含钾矿物	hán jiǎ kuàng wù	7
+含金矿物	hán jīn kuàng wù	6
 含金砾岩	hán jīn lì yán	6
+含矿地带	hán kuàng dì dài	1
+含矿泡沫	hán kuàng pào mò	5
+含矿物质	hán kuàng wù zhì	38
+含矿系数	hán kuàng xì shù	9
 含矿岩石	hán kuàng yán shí	9
+含铼矿物	hán lái kuàng wù	6
+含铑矿物	hán lǎo kuàng wù	7
+含锂矿物	hán lǐ kuàng wù	8
 韩陵片石	hán líng piàn shí	3
+含铝矿物	hán lǚ kuàng wù	28
+含镁矿物	hán měi kuàng wù	25
 含锰矿物	hán měng kuàng wù	16
 含锰砂岩	hán měng shā yán	8
 含锰铁矿	hán měng tiě kuàng	1
+含钼矿物	hán mù kuàng wù	8
+含钠矿物	hán nà kuàng wù	7
+含铌矿物	hán ní kuàng wù	7
+含镍矿物	hán niè kuàng wù	11
+含铍矿物	hán pī kuàng wù	5
+含铅矿物	hán qiān kuàng wù	5
+含铯矿物	hán sè kuàng wù	7
 寒山片石	hán shān piàn shí	3
 韩山片石	hán shān piàn shí	1
+含砷矿物	hán shēn kuàng wù	4
+含铈矿物	hán shì kuàng wù	6
+含锶矿物	hán sī kuàng wù	8
+含铊矿物	hán tā kuàng wù	5
+含钛矿物	hán tài kuàng wù	4
+含钽矿物	hán tǎn kuàng wù	7
+含碳矿物	hán tàn kuàng wù	6
+含锑矿物	hán tī kuàng wù	4
 寒铁矿石	hán tiě kuàng shí	5
 含铁矿石	hán tiě kuàng shí	2
+含铁矿物	hán tiě kuàng wù	8
+含铜矿物	hán tóng kuàng wù	6
+含钍矿物	hán tǔ kuàng wù	8
+含瓦斯的	hán wǎ sī de	8
+韩旺铁矿	hán wàng tiě kuàng	1
+含钨矿物	hán wū kuàng wù	6
+含锡矿物	hán xī kuàng wù	5
+含锌矿物	hán xīn kuàng wù	8
 含盐岩石	hán yán yán shí	5
+含钇矿物	hán yǐ kuàng wù	5
+含银矿物	hán yín kuàng wù	8
+含铀矿物	hán yóu kuàng wù	4
 含油岩石	hán yóu yán shí	8
+含铀页岩	hán yóu yè yán	5
+含锗矿物	hán zhě kuàng wù	5
 号炼金石	hào liàn jīn shí	8
+河北矿难	hé běi kuàng nàn	6
 合成变石	hé chéng biàn shí	3
 合成沸石	hé chéng fèi shí	9
+合成矿物	hé chéng kuàng wù	6
 合成魔石	hé chéng mó shí	3
 合成岩石	hé chéng yán shí	3
 合成钻石	hé chéng zuàn shí	8
+河床砂矿	hé chuáng shā kuàng	9
 河道砂石	hé dào shā shí	36
+赫碲铋矿	hè dì bì kuàng	9
 荷福炬石	hé fú jù shí	4
 褐符山石	hè fú shān shí	5
+河谷砂矿	hé gǔ shā kuàng	7
 褐硅锰矿	hè guī měng kuàng	7
+褐硅铈矿	hè guī shì kuàng	5
 褐堇青石	hè jǐn qīng shí	6
+合矿股份	hé kuàng gǔ fèn	22
+喝矿泉水	hē kuàng quán shuǐ	44
 核磷铝石	hé lín lǚ shí	1
 褐硫钙石	hè liú gài shí	1
 褐硫锰矿	hè liú měng kuàng	6
+赫硫镍矿	hè liú niè kuàng	8
+赫洛宾矿	hè luò bīn kuàng	9
+河南矿难	hé nán kuàng nàn	4
+河南矿业	hé nán kuàng yè	8
 褐闪石岩	hè shǎn shí yán	8
+褐砷镍矿	hè shēn niè kuàng	7
+褐砷铁矿	hè shēn tiě kuàng	5
+褐铁矿化	hè tiě kuàng huà	10
+褐稀土矿	hè xī tǔ kuàng	8
 褐斜闪石	hè xié shǎn shí	7
 褐锌锰矿	hè xīn měng kuàng	9
+褐氧汞矿	hè yǎng gǒng kuàng	7
+褐钇铌矿	hè yǐ ní kuàng	14
+褐钇钽矿	hè yǐ tǎn kuàng	8
+黑铋金矿	hēi bì jīn kuàng	6
+黑辰砂矿	hēi chén shā kuàng	10
+黑碲铜矿	hēi dì tóng kuàng	7
 黑电气石	hēi diàn qì shí	7
 黑贵榴石	hēi guì liú shí	4
 黑金刚石	hēi jīn gāng shí	17
 黑金红石	hēi jīn hóng shí	10
 黑晶脂石	hēi jīng zhī shí	6
 黑氯铜矿	hēi lǜ tóng kuàng	5
+黑钼钴矿	hēi mù gǔ kuàng	5
 黑色磁石	hēi sè cí shí	18
+黑色页岩	hēi sè yè yán	5
 黑色陨石	hēi sè yǔn shí	12
+黑砷铁矿	hēi shēn tiě kuàng	6
+黑稀金矿	hēi xī jīn kuàng	16
+黑稀土矿	hēi xī tǔ kuàng	5
+黑斜钒矿	hēi xié fán kuàng	6
 黑锌锰矿	hēi xīn měng kuàng	1
+黑铀钍矿	hēi yóu tǔ kuàng	8
 痕迹化石	hén jì huà shí	9
 衡水文化	héng shuǐ wén huà	7
+宏达矿业	hóng dá kuàng yè	38
 红电气石	hóng diàn qì shí	6
+红矾铅矿	hóng fán qiān kuàng	10
 红钙长石	hóng gài cháng shí	8
+红铬铅矿	hóng gè qiān kuàng	7
 红硅镁石	hóng guī měi shí	6
 红硅锰矿	hóng guī měng kuàng	8
 红花石蒜	hóng huā shí suàn	28
 红辉沸石	hóng huī fèi shí	6
+洪积砂矿	hóng jī shā kuàng	9
 红坚岭石	hóng jiān lǐng shí	9
 红茎石杉	hóng jīng shí shān	7
 红磷锰矿	hóng lín měng kuàng	6
+红磷钠矿	hóng lín nà kuàng	7
+红磷铁矿	hóng lín tiě kuàng	7
 红菱沸石	hóng líng fèi shí	8
 红绿柱石	hóng lǜ zhù shí	22
 红锰铁矿	hóng měng tiě kuàng	8
 红钠闪石	hóng nà shǎn shí	5
+红铅铀矿	hóng qiān yóu kuàng	7
 红色石英	hóng sè shí yīng	3
 红色岩石	hóng sè yán shí	26
 红砷锰矿	hóng shēn měng kuàng	10
+红砷镍矿	hóng shēn niè kuàng	20
+红砷铁矿	hóng shēn tiě kuàng	8
+红砷锌矿	hóng shēn xīn kuàng	1
 红石砬子	hóng shí lá zǐ	31
 红石榴水	hóng shí liú shuǐ	23
 红石榴镇	hóng shí liú zhèn	6
 红石守护	hóng shí shǒu hù	7
 红石支路	hóng shí zhī lù	5
+红铊铅矿	hóng tā qiān kuàng	11
+宏泰矿业	hóng tài kuàng yè	20
 红钛锰矿	hóng tài měng kuàng	6
+红钛铁矿	hóng tài tiě kuàng	6
 红锑锰矿	hóng tī měng kuàng	5
+红锑镍矿	hóng tī niè kuàng	3
+红卫煤矿	hóng wèi méi kuàng	13
 红纹长石	hóng wén cháng shí	6
+红稀金矿	hóng xī jīn kuàng	6
+红硒铜矿	hóng xī tóng kuàng	6
 红纤维石	hóng xiān wéi shí	7
+红岩煤矿	hóng yán méi kuàng	18
+红阳三矿	hóng yáng sān kuàng	3
 红叶石楠	hóng yè shí nán	33
 后成矿床	hòu chéng kuàng chuáng	5
+后成矿床	hòu chéng kuàng chuáng	5
+后生矿床	hòu shēng kuàng chuáng	9
 后生矿床	hòu shēng kuàng chuáng	9
 湖北黄石	hú běi huáng shí	37
 湖北络石	hú běi luò shí	9
+护顶矿柱	hù dǐng kuàng zhù	4
 护国柱石	hù guó zhù shí	10
+胡乐页岩	hú lè yè yán	8
 湖南角石	hú nán jiǎo shí	8
+湖南矿难	hú nán kuàng nàn	6
 琥珀彩石	hǔ pò cǎi shí	7
 琥珀化石	hǔ pò huà shí	22
 琥珀原石	hǔ pò yuán shí	36
 花斑彩石	huā bān cǎi shí	15
+华丰煤矿	huá fēng méi kuàng	16
 花岗岩石	huā gǎng yán shí	35
+滑硅镍矿	huá guī niè kuàng	8
 华晶钻石	huá jīng zuàn shí	13
+华联矿业	huá lián kuàng yè	38
+花山煤矿	huā shān méi kuàng	3
 滑蛇纹石	huá shé wén shí	5
+滑石矿床	huá shí kuàng chuáng	1
 滑石矿床	huá shí kuàng chuáng	1
 化为滚石	huà wéi gǔn shí	1
 华夏基石	huá xià jī shí	47
 化学化石	huà xué huà shí	10
+化学选矿	huà xué xuǎn kuàng	8
 花叶络石	huā yè luò shí	7
+华艺矿业	huá yì kuàng yè	5
+华钰矿业	huá yù kuàng yè	30
 患胆结石	huàn dǎn jié shí	36
 缓慢叠石	huǎn màn dié shí	4
+寰亚矿业	huán yà kuàng yè	14
 环氧磨石	huán yǎng mó shí	22
 环状矿石	huán zhuàng kuàng shí	9
+环状矿体	huán zhuàng kuàng tǐ	7
 环状列石	huán zhuàng liè shí	32
+黄铵汞矿	huáng ǎn gǒng kuàng	6
+黄钡铀矿	huáng bèi yóu kuàng	8
 黄电气石	huáng diàn qì shí	6
+黄碘银矿	huáng diǎn yín kuàng	1
 黄高岭石	huáng gāo lǐng shí	7
 黄铬钾石	huáng gè jiǎ shí	6
 黄钾铁石	huáng jiǎ tiě shí	6
+皇家盐矿	huáng jiā yán kuàng	10
+黄胶磷矿	huáng jiāo lín kuàng	9
+黄金矿业	huáng jīn kuàng yè	54
+黄磷铁矿	huáng lín tiě kuàng	1
+黄陵矿业	huáng líng kuàng yè	18
+黄菱铀矿	huáng líng yóu kuàng	6
+黄榴砷矿	huáng liú shēn kuàng	8
 黄氯汞矿	huáng lǜ gǒng kuàng	5
 黄绿帘石	huáng lǜ lián shí	5
 黄氯铅矿	huáng lǜ qiān kuàng	8
 黄绿蛭石	huáng lǜ zhì shí	8
+黄钼铀矿	huáng mù yóu kuàng	5
 黄山松石	huáng shān sōng shí	16
 黄砷榴石	huáng shēn liú shí	8
+黄钽铁矿	huáng tǎn tiě kuàng	9
 黄铁矿床	huáng tiě kuàng chuáng	10
+黄铁矿床	huáng tiě kuàng chuáng	10
+黄铁矿化	huáng tiě kuàng huà	15
+黄铁矿硫	huáng tiě kuàng liú	10
 黄铁矿石	huáng tiě kuàng shí	7
+黄铁矿渣	huáng tiě kuàng zhā	1
+黄铁矿族	huáng tiě kuàng zú	8
 黄土岩溶	huáng tǔ yán róng	9
+黄硒铅矿	huáng xī qiān kuàng	10
+黄钇钽矿	huáng yǐ tǎn kuàng	6
+黄铀矾矿	huáng yóu fán kuàng	6
+辉铋镍矿	huī bì niè kuàng	5
+辉铋铅矿	huī bì qiān kuàng	6
+辉铋铜矿	huī bì tóng kuàng	7
+回采矿量	huí cǎi kuàng liàng	8
+回采矿柱	huí cǎi kuàng zhù	9
 回城神石	huí chéng shén shí	10
+辉赤铁矿	huī chì tiě kuàng	8
+辉碲铋矿	huī dì bì kuàng	8
 灰方柱石	huī fāng zhù shí	6
 灰硅钙石	huī guī gài shí	1
 灰贵榴石	huī guì liú shí	9
 辉绿泥石	huī lǜ ní shí	5
+辉铅铋矿	huī qiān bì kuàng	5
 辉闪石类	huī shǎn shí lèi	8
+辉砷钴矿	huī shēn gǔ kuàng	16
+辉砷镍矿	huī shēn niè kuàng	9
+灰砷铜矿	huī shēn tóng kuàng	8
+辉铊锑矿	huī tā tī kuàng	8
+辉锑铋矿	huī tī bì kuàng	8
+辉锑铅矿	huī tī qiān kuàng	12
+辉锑铜矿	huī tī tóng kuàng	10
+辉锑银矿	huī tī yín kuàng	7
+辉铁镍矿	huī tiě niè kuàng	6
+辉铁锑矿	huī tiě tī kuàng	6
+辉铜矿化	huī tóng kuàng huà	6
+辉铜银矿	huī tóng yín kuàng	7
+灰硒汞矿	huī xī gǒng kuàng	10
+辉硒银矿	huī xī yín kuàng	10
 灰岩溶坑	huī yán róng kēng	6
 混合矿石	hùn hé kuàng shí	6
+火币矿池	huǒ bì kuàng chí	32
+火山矿床	huǒ shān kuàng chuáng	10
 火山矿床	huǒ shān kuàng chuáng	10
 火山砾岩	huǒ shān lì yán	12
 火山岩石	huǒ shān yán shí	28
@@ -2181,39 +3454,56 @@ sort: by_weight
 火之精石	huǒ zhī jīng shí	3
 火之原石	huǒ zhī yuán shí	11
 吉丙陨石	jí bǐng yǔn shí	13
+极磁铁矿	jí cí tiě kuàng	6
 激光碎石	jī guāng suì shí	23
 吉林磐石	jí lín pán shí	25
 吉林陨石	jí lín yǔn shí	23
 级魔晶石	jí mó jīng shí	10
 级配砂石	jí pèi shā shí	9
 级配碎石	jí pèi suì shí	22
+济三煤矿	jì sān méi kuàng	5
+吉山铁矿	jí shān tiě kuàng	1
 击石拊石	jī shí fǔ shí	15
 激水漂石	jī shuǐ piāo shí	7
 机弦甩石	jī xián shuǎi shí	7
+机械落矿	jī xiè luò kuàng	7
+机械装矿	jī xiè zhuāng kuàng	7
 基性岩石	jī xìng yán shí	11
 机制砂石	jī zhì shā shí	13
+钾铵铁矿	jiǎ ǎn tiě kuàng	9
 假白榴石	jiǎ bái liú shí	6
 甲贝化石	jiǎ bèi huà shí	1
 钾冰晶石	jiǎ bīng jīng shí	9
+钾钒铀矿	jiǎ fán yóu kuàng	6
 钾钙霞石	jiǎ gài xiá shí	1
 假硅灰石	jiǎ guī huī shí	8
+夹河煤矿	jiā hé méi kuàng	3
+钾碱矿床	jiǎ jiǎn kuàng chuáng	8
 钾碱矿床	jiǎ jiǎn kuàng chuáng	8
 假角砾岩	jiǎ jiǎo lì yán	7
 假晶滑石	jiǎ jīng huá shí	6
 假孔雀石	jiǎ kǒng què shí	8
+家里没矿	jiā lǐ méi kuàng	30
+家里有矿	jiā lǐ yǒu kuàng	32
 假磷灰石	jiǎ lín huī shí	8
+假磷铜矿	jiǎ lín tóng kuàng	6
 假绿泥石	jiǎ lǜ ní shí	7
 钾氯铅矿	jiǎ lǜ qiān kuàng	9
 镓钠长石	jiā nà cháng shí	9
 假钠沸石	jiǎ nà fèi shí	7
+迦纳矿场	jiā nà kuàng chǎng	7
 甲霜锰锌	jiǎ shuāng měng xīn	1
 家无担石	jiā wú dàn shí	17
 家无儋石	jiā wú dàn shí	1
 钾盐矿床	jiǎ yán kuàng chuáng	14
+钾盐矿床	jiǎ yán kuàng chuáng	14
+家中有矿	jiā zhōng yǒu kuàng	12
 假胄菊石	jiǎ zhòu jú shí	5
 家族磐石	jiā zú pán shí	1
+拣出富矿	jiǎn chū fù kuàng	7
 建队基石	jiàn duì jī shí	31
 坚固磐石	jiān gù pán shí	6
+建矿边界	jiàn kuàng biān jiè	6
 尖棱菊石	jiān léng jú shí	10
 碱菱沸石	jiǎn líng fèi shí	7
 碱锰闪石	jiǎn měng shǎn shí	10
@@ -2221,6 +3511,7 @@ sort: by_weight
 睑内结石	jiǎn nèi jié shí	5
 坚如磐石	jiān rú pán shí	45
 坚若磐石	jiān ruò pán shí	34
+建新矿业	jiàn xīn kuàng yè	34
 碱性长石	jiǎn xìng cháng shí	22
 碱性辉石	jiǎn xìng huī shí	7
 碱性矿石	jiǎn xìng kuàng shí	6
@@ -2230,64 +3521,133 @@ sort: by_weight
 浆砌块石	jiāng qì kuài shí	20
 浆砌片石	jiāng qì piàn shí	19
 江山顽石	jiāng shān wán shí	7
+江苏矿业	jiāng sū kuàng yè	7
+江西矿业	jiāng xī kuàng yè	6
 焦熬投石	jiāo áo tóu shí	5
+胶赤铁矿	jiāo chì tiě kuàng	9
+交错矿脉	jiāo cuò kuàng mài	6
 交代矿床	jiāo dài kuàng chuáng	8
+交代矿床	jiāo dài kuàng chuáng	8
+交代矿物	jiāo dài kuàng wù	10
 胶硅锰矿	jiāo guī měng kuàng	10
+胶黄铁矿	jiāo huáng tiě kuàng	5
+胶辉锑矿	jiāo huī tī kuàng	7
+焦家金矿	jiāo jiā jīn kuàng	22
 焦金流石	jiāo jīn liú shí	5
+胶硫钼矿	jiāo liú mù kuàng	1
 角闪石岩	jiǎo shǎn shí yán	15
 角闪石族	jiǎo shǎn shí zú	7
 胶蛇纹石	jiāo shé wén shí	1
+角页岩相	jiǎo yè yán xiāng	8
+胶针铁矿	jiāo zhēn tiě kuàng	7
+杰博矿灯	jié bó kuàng dēng	8
 接触矿床	jiē chù kuàng chuáng	7
+接触矿床	jiē chù kuàng chuáng	7
+接触矿脉	jiē chù kuàng mài	7
+接触矿物	jiē chù kuàng wù	6
+阶地砂矿	jiē dì shā kuàng	10
+阶段矿柱	jiē duàn kuàng zhù	6
+介段磨矿	jiè duàn mó kuàng	7
 结构基石	jié gòu jī shí	3
 结晶岩石	jié jīng yán shí	5
+捷克银矿	jié kè yín kuàng	7
 捷克陨石	jié kè yǔn shí	23
 结膜结石	jié mó jié shí	24
+金宝矿业	jīn bǎo kuàng yè	7
+金鼎矿业	jīn dǐng kuàng yè	19
 金刚贝石	jīn gāng bèi shí	12
+金刚石矿	jīn gāng shí kuàng	16
 金红石型	jīn hóng shí xíng	24
 金红石族	jīn hóng shí zú	7
+晋华宫矿	jìn huá gōng kuàng	21
 金黄洞石	jīn huáng dòng shí	6
+金矿公司	jīn kuàng gōng sī	29
+金矿街道	jīn kuàng jiē dào	10
+金矿开采	jīn kuàng kāi cǎi	36
+金矿矿工	jīn kuàng kuàng gōng	16
+金矿项目	jīn kuàng xiàng mù	25
+金矿遗址	jīn kuàng yí zhǐ	8
+金矿资源	jīn kuàng zī yuán	28
+金岭矿业	jīn lǐng kuàng yè	36
+金岭铁矿	jīn lǐng tiě kuàng	22
 金绿柱石	jīn lǜ zhù shí	16
+金敏煤矿	jīn mǐn méi kuàng	5
 浸染矿床	jìn rǎn kuàng chuáng	8
+浸染矿床	jìn rǎn kuàng chuáng	8
+金瑞矿业	jīn ruì kuàng yè	44
 金色玄石	jīn sè xuán shí	16
 金色炎石	jīn sè yán shí	11
 金色岩石	jīn sè yán shí	8
 金沙江石	jīn shā jiāng shí	12
 金山松石	jīn shān sōng shí	3
+金属精矿	jīn shǔ jīng kuàng	1
+金属矿产	jīn shǔ kuàng chǎn	8
 金属矿床	jīn shǔ kuàng chuáng	9
+金属矿床	jīn shǔ kuàng chuáng	9
+金属矿山	jīn shǔ kuàng shān	6
 金属矿石	jīn shǔ kuàng shí	10
+金属矿物	jīn shǔ kuàng wù	8
 金司堡石	jīn sī bǎo shí	10
 金髓矿石	jīn suǐ kuàng shí	7
 近卫清石	jìn wèi qīng shí	6
+金信矿业	jīn xìn kuàng yè	3
 晶灿钻石	jīng càn zuàn shí	26
 经济矿床	jīng jì kuàng chuáng	7
+经济矿床	jīng jì kuàng chuáng	7
+境界矿柱	jìng jiè kuàng zhù	7
+精金矿脉	jīng jīn kuàng mài	7
 精金矿石	jīng jīn kuàng shí	10
+精矿品位	jīng kuàng pǐn wèi	14
 精囊结石	jīng náng jié shí	9
 景赛赌石	jǐng sài dǔ shí	4
+晶体矿物	jīng tǐ kuàng wù	22
+镜铁山矿	jìng tiě shān kuàng	20
 精卫衔石	jīng wèi xián shí	3
+井下矿工	jǐng xià kuàng gōng	18
 镜下碎石	jìng xià suì shí	16
+荆襄磷矿	jīng xiāng lín kuàng	1
+精选尾矿	jīng xuǎn wěi kuàng	9
+晶质铀矿	jīng zhì yóu kuàng	21
 韭角闪石	jiǔ jiǎo shǎn shí	8
+旧矿遗迹	jiù kuàng yí jì	8
+九里山矿	jiǔ lǐ shān kuàng	1
+九曲分矿	jiǔ qū fēn kuàng	12
 九望白石	jiǔ wàng bái shí	8
 巨大岩石	jù dà yán shí	28
 巨角砾岩	jù jiǎo lì yán	10
 聚马凉石	jù mǎ liáng shí	6
 菊丸大石	jú wán dà shí	19
+巨型银矿	jù xíng yín kuàng	3
 巨型陨石	jù xíng yǔn shí	20
 绢蛇纹石	juàn shé wén shí	9
+掘地矿工	jué dì kuàng gōng	18
 均匀岩石	jūn yún yán shí	10
 开碑裂石	kāi bēi liè shí	10
+开采金矿	kāi cǎi jīn kuàng	30
+开采煤层	kāi cǎi méi céng	12
+开发矿山	kāi fā kuàng shān	8
+开平煤矿	kāi píng méi kuàng	42
 开山采石	kāi shān cǎi shí	45
 开山裂石	kāi shān liè shí	12
 开山劈石	kāi shān pī shí	22
 开山碎石	kāi shān suì shí	5
+开拓矿量	kāi tuò kuàng liàng	7
+开阳磷矿	kāi yáng lín kuàng	1
+勘探矿井	kān tàn kuàng jǐng	6
 抗缠绕石	kàng chán rào shí	1
 抗沉默石	kàng chén mò shí	1
 抗缓慢石	kàng huǎn màn shí	1
 抗蚀岩石	kàng shí yán shí	3
 抗虚弱石	kàng xū ruò shí	1
 抗眩晕石	kàng xuàn yùn shí	1
+可采矿层	kě cǎi kuàng céng	6
+可采矿床	kě cǎi kuàng chuáng	5
 可采矿床	kě cǎi kuàng chuáng	5
 可采矿石	kě cǎi kuàng shí	9
+可采煤层	kě cǎi méi céng	9
 珂兰钻石	kē lán zuàn shí	31
+可能矿量	kě néng kuàng liàng	6
+可燃页岩	kě rán yè yán	10
 可售矿石	kě shòu kuàng shí	6
 可疑化石	kě yí huà shí	8
 科兹窝石	kē zī wō shí	1
@@ -2295,29 +3655,341 @@ sort: by_weight
 龈上牙石	kěn shàng yá shí	22
 龈下牙石	kěn xià yá shí	25
 恐龙化石	kǒng lóng huà shí	64
+孔穴矿脉	kǒng xué kuàng mài	5
 孔状岩石	kǒng zhuàng yán shí	10
 块硅镁石	kuài guī měi shí	1
+块黑铅矿	kuài hēi qiān kuàng	8
 会稽刻石	kuài jī kè shí	13
 块堇青石	kuài jǐn qīng shí	8
 快乐三石	kuài lè sān shí	3
+块硫钴矿	kuài liú gǔ kuàng	9
+块闪锌矿	kuài shǎn xīn kuàng	8
+块砷镍矿	kuài shēn niè kuàng	5
 快用炉石	kuài yòng lú shí	6
 块状矿床	kuài zhuàng kuàng chuáng	10
+块状矿床	kuài zhuàng kuàng chuáng	10
 块状矿石	kuài zhuàng kuàng shí	7
+矿安标志	kuàng ān biāo zhì	11
+矿北社区	kuàng běi shè qū	19
+矿博翼龙	kuàng bó yì lóng	6
+矿层边缘	kuàng céng biān yuán	5
+矿层顶板	kuàng céng dǐng bǎn	6
+矿产储量	kuàng chǎn chǔ liàng	9
+矿产地质	kuàng chǎn dì zhì	25
+矿产公司	kuàng chǎn gōng sī	7
+矿产开发	kuàng chǎn kāi fā	8
+矿产勘查	kuàng chǎn kān chá	39
+矿产普查	kuàng chǎn pǔ chá	7
+矿产取样	kuàng chǎn qǔ yàng	9
+矿产质量	kuàng chǎn zhì liàng	9
+矿产资源	kuàng chǎn zī yuán	10
+矿场标定	kuàng chǎng biāo dìng	8
+矿车联接	kuàng chē lián jiē	9
+矿车列车	kuàng chē liè chē	8
+矿尘爆炸	kuàng chén bào zhà	5
+矿尘测定	kuàng chén cè dìng	6
+矿尘浮选	kuàng chén fú xuǎn	8
+矿储藏量	kuàng chǔ cáng liàng	6
+矿床地质	kuàng chuáng dì zhì	9
 矿床地质	kuàng chuáng dì zhì	9
 矿床分带	kuàng chuáng fēn dài	10
+矿床分带	kuàng chuáng fēn dài	10
+矿床几何	kuàng chuáng jǐ hé	10
 矿床几何	kuàng chuáng jǐ hé	10
 矿床开拓	kuàng chuáng kāi tuò	7
+矿床开拓	kuàng chuáng kāi tuò	7
+矿床勘探	kuàng chuáng kān tàn	9
 矿床勘探	kuàng chuáng kān tàn	9
 矿床类型	kuàng chuáng lèi xíng	9
+矿床类型	kuàng chuáng lèi xíng	9
+矿床模式	kuàng chuáng mó shì	9
 矿床模式	kuàng chuáng mó shì	9
 矿床模型	kuàng chuáng mó xíng	5
+矿床模型	kuàng chuáng mó xíng	5
+矿床品位	kuàng chuáng pǐn wèi	1
 矿床品位	kuàng chuáng pǐn wèi	1
 矿床评价	kuàng chuáng píng jià	6
+矿床评价	kuàng chuáng píng jià	6
+矿床疏干	kuàng chuáng shū gàn	1
 矿床疏干	kuàng chuáng shū gàn	1
 矿床系列	kuàng chuáng xì liè	7
+矿床系列	kuàng chuáng xì liè	7
 矿床组合	kuàng chuáng zǔ hé	9
+矿床组合	kuàng chuáng zǔ hé	9
+矿大附中	kuàng dà fù zhōng	9
+矿道地铁	kuàng dào dì tiě	18
+矿点检查	kuàng diǎn jiǎn chá	5
+矿点评价	kuàng diǎn píng jià	7
+矿洞魔首	kuàng dòng mó shǒu	9
+矿房工祖	kuàng fáng gōng zǔ	6
+矿工规则	kuàng gōng guī zé	8
+矿工互救	kuàng gōng hù jiù	7
+矿工僵尸	kuàng gōng jiāng shī	25
+矿工拳王	kuàng gōng quán wáng	16
+矿工人生	kuàng gōng rén shēng	6
+矿工沙良	kuàng gōng shā liáng	3
+矿工医院	kuàng gōng yī yuàn	18
+矿化流体	kuàng huà liú tǐ	8
+矿化泡沫	kuàng huà pào mò	10
+矿化气泡	kuàng huà qì pào	5
+矿化溶液	kuàng huà róng yè	6
+矿化世代	kuàng huà shì dài	7
+矿化系数	kuàng huà xì shù	5
+矿化作用	kuàng huà zuò yòng	7
+矿机修厂	kuàng jī xiū chǎng	5
+矿浆密度	kuàng jiāng mì dù	8
+矿浆浓度	kuàng jiāng nóng dù	3
+矿浆浓缩	kuàng jiāng nóng suō	10
+矿浆体积	kuàng jiāng tǐ jī	10
+矿浆脱水	kuàng jiāng tuō shuǐ	8
+矿界纠纷	kuàng jiè jiū fēn	11
+矿井报废	kuàng jǐng bào fèi	5
+矿井爆炸	kuàng jǐng bào zhà	7
+矿井测量	kuàng jǐng cè liáng	9
+矿井地面	kuàng jǐng dì miàn	5
+矿井地质	kuàng jǐng dì zhì	12
+矿井堵水	kuàng jǐng dǔ shuǐ	10
+矿井防冻	kuàng jǐng fáng dòng	7
+矿井防火	kuàng jǐng fáng huǒ	10
+矿井防水	kuàng jǐng fáng shuǐ	8
+矿井风量	kuàng jǐng fēng liàng	9
+矿井风流	kuàng jǐng fēng liú	9
+矿井恢复	kuàng jǐng huī fù	8
+矿井火灾	kuàng jǐng huǒ zāi	8
+矿井建设	kuàng jǐng jiàn shè	8
+矿井截流	kuàng jǐng jié liú	6
+矿井开拓	kuàng jǐng kāi tuò	5
+矿井空气	kuàng jǐng kōng qì	10
+矿井漏风	kuàng jǐng lòu fēng	8
+矿井灭火	kuàng jǐng miè huǒ	7
+矿井排水	kuàng jǐng pái shuǐ	8
+矿井气候	kuàng jǐng qì hòu	6
+矿井热源	kuàng jǐng rè yuán	9
+矿井设计	kuàng jǐng shè jì	9
+矿井疏干	kuàng jǐng shū gàn	12
+矿井探水	kuàng jǐng tàn shuǐ	9
+矿井提升	kuàng jǐng tí shēng	6
+矿井通风	kuàng jǐng tōng fēng	8
+矿井突水	kuàng jǐng tū shuǐ	1
+矿井瓦斯	kuàng jǐng wǎ sī	10
+矿井延深	kuàng jǐng yán shēn	3
+矿井涌砂	kuàng jǐng yǒng shā	6
+矿井支架	kuàng jǐng zhī jià	7
+矿井资料	kuàng jǐng zī liào	8
+矿井阻力	kuàng jǐng zǔ lì	9
+矿俱乐部	kuàng jù lè bù	5
+矿坑排水	kuàng kēng pái shuǐ	6
+矿里街道	kuàng lǐ jiē dào	12
+矿量递减	kuàng liàng dì jiǎn	7
+矿量管理	kuàng liàng guǎn lǐ	6
+矿量增加	kuàng liàng zēng jiā	6
+矿脉开采	kuàng mài kāi cǎi	9
+矿脉露头	kuàng mài lòu tóu	3
+矿脉石英	kuàng mài shí yīng	5
+矿脉走向	kuàng mài zǒu xiàng	9
+矿难列表	kuàng nàn liè biǎo	5
+矿内巷道	kuàng nèi hàng dào	10
+矿内火灾	kuàng nèi huǒ zāi	9
+矿内空气	kuàng nèi kōng qì	9
+矿内气体	kuàng nèi qì tǐ	5
+矿内运输	kuàng nèi yùn shū	8
+矿泥产量	kuàng ní chǎn liàng	6
+矿泥浮选	kuàng ní fú xuǎn	7
+矿泥过滤	kuàng ní guò lǜ	9
+矿泥控制	kuàng ní kòng zhì	6
+矿泥摇床	kuàng ní yáo chuáng	6
+矿区范围	kuàng qū fàn wéi	10
+矿区概况	kuàng qū gài kuàng	10
+矿区规模	kuàng qū guī mó	8
+矿区划归	kuàng qū huà guī	10
+矿区医院	kuàng qū yī yuàn	12
+矿泉保湿	kuàng quán bǎo shī	5
+矿泉街道	kuàng quán jiē dào	22
+矿泉疗法	kuàng quán liáo fǎ	15
+矿泉水厂	kuàng quán shuǐ chǎng	28
+矿泉水扣	kuàng quán shuǐ kòu	1
+矿泉水瓶	kuàng quán shuǐ píng	56
+矿泉水桶	kuàng quán shuǐ tǒng	22
+矿泉中学	kuàng quán zhōng xué	5
+矿权转让	kuàng quán zhuǎn ràng	17
+矿砂摇床	kuàng shā yáo chuáng	7
+矿山安全	kuàng shān ān quán	8
+矿山保护	kuàng shān bǎo hù	9
+矿山布置	kuàng shān bù zhì	9
+矿山测量	kuàng shān cè liáng	10
+矿山地质	kuàng shān dì zhì	32
+矿山法则	kuàng shān fǎ zé	6
+矿山防尘	kuàng shān fáng chén	7
+矿山防水	kuàng shān fáng shuǐ	7
 矿山废石	kuàng shān fèi shí	8
+矿山废水	kuàng shān fèi shuǐ	8
+矿山复绿	kuàng shān fù lǜ	18
+矿山供电	kuàng shān gōng diàn	9
+矿山公园	kuàng shān gōng yuán	33
+矿山管理	kuàng shān guǎn lǐ	9
+矿山管区	kuàng shān guǎn qū	10
+矿山规程	kuàng shān guī chéng	9
+矿山轨道	kuàng shān guǐ dào	10
+矿山规模	kuàng shān guī mó	8
+矿山巷道	kuàng shān hàng dào	9
+矿山环境	kuàng shān huán jìng	5
+矿山恢复	kuàng shān huī fù	19
+矿山机电	kuàng shān jī diàn	25
+矿山机械	kuàng shān jī xiè	6
+矿山建设	kuàng shān jiàn shè	9
+矿山交货	kuàng shān jiāo huò	32
+矿山街道	kuàng shān jiē dào	12
+矿山景观	kuàng shān jǐng guān	5
+矿山境界	kuàng shān jìng jiè	9
+矿山救护	kuàng shān jiù hù	8
+矿山开采	kuàng shān kāi cǎi	5
+矿山开发	kuàng shān kāi fā	10
+矿山坑道	kuàng shān kēng dào	6
+矿山力学	kuàng shān lì xué	10
+矿山罗盘	kuàng shān luó pán	9
+矿山绿化	kuàng shān lǜ huà	10
+矿山模型	kuàng shān mó xíng	9
+矿山排水	kuàng shān pái shuǐ	6
+矿山企业	kuàng shān qǐ yè	8
+矿山设备	kuàng shān shè bèi	8
+矿山设计	kuàng shān shè jì	6
+矿山寿命	kuàng shān shòu mìng	8
+矿山水灾	kuàng shān shuǐ zāi	5
+矿山提升	kuàng shān tí shēng	7
+矿山条件	kuàng shān tiáo jiàn	8
+矿山通风	kuàng shān tōng fēng	8
+矿山卫生	kuàng shān wèi shēng	9
+矿山橡胶	kuàng shān xiàng jiāo	7
+矿山项目	kuàng shān xiàng mù	5
+矿山压力	kuàng shān yā lì	10
+矿山压气	kuàng shān yā qì	6
+矿山医院	kuàng shān yī yuàn	7
+矿山运输	kuàng shān yùn shū	9
+矿山照明	kuàng shān zhào míng	9
+矿山整治	kuàng shān zhěng zhì	17
+矿山支架	kuàng shān zhī jià	9
+矿石暗斑	kuàng shí àn bān	9
+矿石宝石	kuàng shí bǎo shí	18
+矿石标本	kuàng shí biāo běn	6
+矿石堆场	kuàng shí duī chǎng	21
+矿石复合	kuàng shí fù hé	6
+矿石构造	kuàng shí gòu zào	7
+矿石建造	kuàng shí jiàn zào	6
+矿石结构	kuàng shí jié gòu	6
+矿石浸出	kuàng shí jìn chū	8
+矿石开采	kuàng shí kāi cǎi	7
+矿石块度	kuàng shí kuài dù	7
+矿石矿物	kuàng shí kuàng wù	25
+矿石贫化	kuàng shí pín huà	9
+矿石品级	kuàng shí pǐn jí	9
+矿石品位	kuàng shí pǐn wèi	27
+矿石破碎	kuàng shí pò suì	6
+矿石湿度	kuàng shí shī dù	7
+矿石损失	kuàng shí sǔn shī	9
+矿石贪化	kuàng shí tān huà	9
+矿石体重	kuàng shí tǐ zhòng	7
+矿石运搬	kuàng shí yùn bān	7
+矿体产状	kuàng tǐ chǎn zhuàng	5
+矿体地质	kuàng tǐ dì zhì	5
+矿体几何	kuàng tǐ jǐ hé	7
+矿体开发	kuàng tǐ kāi fā	9
+矿体露头	kuàng tǐ lòu tóu	6
+矿体圈定	kuàng tǐ quān dìng	10
+矿体形态	kuàng tǐ xíng tài	3
+矿体形状	kuàng tǐ xíng zhuàng	10
+矿田构造	kuàng tián gòu zào	8
+矿外运输	kuàng wài yùn shū	5
+矿枉煤柱	kuàng wǎng méi zhù	9
+矿物宝石	kuàng wù bǎo shí	28
+矿物标本	kuàng wù biāo běn	10
+矿物标型	kuàng wù biāo xíng	9
+矿物产量	kuàng wù chǎn liàng	9
+矿物成分	kuàng wù chéng fèn	10
+矿物分离	kuàng wù fēn lí	10
+矿物共生	kuàng wù gòng shēng	10
+矿物合成	kuàng wù hé chéng	6
+矿物化学	kuàng wù huà xué	7
+矿物集合	kuàng wù jí hé	9
+矿务集团	kuàng wù jí tuán	5
+矿物机油	kuàng wù jī yóu	28
+矿物加工	kuàng wù jiā gōng	8
+矿物晶体	kuàng wù jīng tǐ	37
+矿务局的	kuàng wù jú de	14
+矿物开采	kuàng wù kāi cǎi	6
+矿物勘探	kuàng wù kān tàn	5
+矿物模板	kuàng wù mú bǎn	8
+矿物平衡	kuàng wù píng héng	6
+矿物燃料	kuàng wù rán liào	31
+矿物染料	kuàng wù rǎn liào	14
+矿物世代	kuàng wù shì dài	5
+矿物提出	kuàng wù tí chū	7
+矿物填料	kuàng wù tián liào	6
+矿物污染	kuàng wù wū rǎn	8
+矿物物性	kuàng wù wù xìng	9
+矿物纤维	kuàng wù xiān wéi	11
+矿物相变	kuàng wù xiāng biàn	7
+矿物相律	kuàng wù xiāng lǜ	8
+矿物形态	kuàng wù xíng tài	7
+矿物学的	kuàng wù xué de	6
+矿物学家	kuàng wù xué jiā	45
+矿物颜料	kuàng wù yán liào	7
+矿物颜色	kuàng wù yán sè	9
 矿物岩石	kuàng wù yán shí	36
+矿物元素	kuàng wù yuán sù	75
+矿物质粉	kuàng wù zhì fěn	23
+矿物质钙	kuàng wù zhì gài	37
+矿物质水	kuàng wù zhì shuǐ	45
+矿物质油	kuàng wù zhì yóu	21
+矿物资源	kuàng wù zī yuán	5
+矿物组成	kuàng wù zǔ chéng	5
+矿物组合	kuàng wù zǔ hé	8
+矿晓南矿	kuàng xiǎo nán kuàng	9
+矿业采矿	kuàng yè cǎi kuàng	8
+矿业城市	kuàng yè chéng shì	7
+矿业大学	kuàng yè dà xué	4
+矿业法则	kuàng yè fǎ zé	10
+矿业工程	kuàng yè gōng chéng	46
+矿冶工程	kuàng yě gōng chéng	29
+矿业公司	kuàng yè gōng sī	69
+矿业活动	kuàng yè huó dòng	9
+矿业集团	kuàng yè jí tuán	45
+矿业经济	kuàng yè jīng jì	8
+矿业聚落	kuàng yè jù luò	7
+矿业开采	kuàng yè kāi cǎi	6
+矿业模板	kuàng yè mú bǎn	6
+矿业权人	kuàng yè quán rén	33
+矿业社区	kuàng yè shè qū	4
+矿业石油	kuàng yè shí yóu	28
+矿业投资	kuàng yè tóu zī	45
+矿冶学校	kuàng yě xué xiào	5
+矿业学院	kuàng yè xué yuàn	76
+矿业遗址	kuàng yè yí zhǐ	7
+矿业院校	kuàng yè yuàn xiào	6
+矿用灯泡	kuàng yòng dēng pào	8
+矿用电缆	kuàng yòng diàn lǎn	5
+矿用风门	kuàng yòng fēng mén	32
+矿用隔爆	kuàng yòng gé bào	22
+矿用罐笼	kuàng yòng guàn lóng	5
+矿用机车	kuàng yòng jī chē	8
+矿用绞车	kuàng yòng jiǎo chē	32
+矿用罗盘	kuàng yòng luó pán	6
+矿用水泵	kuàng yòng shuǐ bèng	5
+矿用梯子	kuàng yòng tī zi	9
+矿用橡缆	kuàng yòng xiàng lǎn	6
+矿用炸药	kuàng yòng zhà yào	6
+矿用支柱	kuàng yòng zhī zhù	7
+矿用钻车	kuàng yòng zuān chē	9
+矿渣立磨	kuàng zhā lì mó	14
+矿渣清理	kuàng zhā qīng lǐ	7
+矿渣水泥	kuàng zhā shuǐ ní	10
+矿渣微粉	kuàng zhā wēi fěn	14
+矿质肥料	kuàng zhì féi liào	9
+矿质需求	kuàng zhì xū qiú	10
+矿中社区	kuàng zhōng shè qū	7
+矿柱工祖	kuàng zhù gōng zǔ	9
+矿柱回采	kuàng zhù huí cǎi	8
+矿总公司	kuàng zǒng gōng sī	27
+矿总医院	kuàng zǒng yī yuàn	21
 昆池碣石	kūn chí jié shí	17
 昆仑流石	kūn lún liú shí	7
 蜡硅锰矿	là guī měng kuàng	7
@@ -2328,13 +4000,19 @@ sort: by_weight
 蓝电气石	lán diàn qì shí	8
 蓝方石岩	lán fāng shí yán	10
 蓝缟松石	lán gǎo sōng shí	5
+蓝辉铜矿	lán huī tóng kuàng	6
+蓝磷铁矿	lán lín tiě kuàng	9
+蓝磷铜矿	lán lín tóng kuàng	1
 蓝色陨石	lán sè yǔn shí	7
 蓝石蝴蝶	lán shí hú dié	7
 蓝石甜点	lán shí tián diǎn	4
 蓝天石油	lán tiān shí yóu	3
+蓝铁矿族	lán tiě kuàng zú	4
 蓝铜矿石	lán tóng kuàng shí	7
+蓝铜硒矿	lán tóng xī kuàng	10
 蓝透辉石	lán tòu huī shí	10
 阑尾粪石	lán wěi fèn shí	3
+蓝硒铜矿	lán xī tóng kuàng	7
 蓝锌锰矿	lán xīn měng kuàng	9
 蓝柘榴石	lán zhè liú shí	16
 劳氏笔石	láo shì bǐ shí	9
@@ -2347,6 +4025,8 @@ sort: by_weight
 粒硅钙石	lì guī gài shí	6
 粒硅镁石	lì guī měi shí	14
 粒硅锰矿	lì guī měng kuàng	7
+锂辉石矿	lǐ huī shí kuàng	37
+锂蓝铁矿	lǐ lán tiě kuàng	10
 力量晶石	lì liàng jīng shí	7
 力量原石	lì liàng yuán shí	13
 锂磷铝石	lǐ lín lǚ shí	1
@@ -2354,36 +4034,61 @@ sort: by_weight
 锂绿泥石	lǐ lǜ ní shí	3
 锂锰电池	lǐ měng diàn chí	21
 锂蒙脱石	lǐ méng tuō shí	11
+利民煤矿	lì mín méi kuàng	13
 沥青碎石	lì qīng suì shí	16
+沥青页岩	lì qīng yè yán	7
+沥青铀矿	lì qīng yóu kuàng	8
 利蛇纹石	lì shé wén shí	3
 砾石碎石	lì shí suì shí	5
 梨形钻石	lí xíng zuàn shí	22
 砾岩状的	lì yán zhuàng de	5
 荔枝洞石	lì zhī dòng shí	17
+漓渚铁矿	lí zhǔ tiě kuàng	1
 粒状岩石	lì zhuàng yán shí	3
+连滩页岩	lián tān yè yán	9
+链状矿脉	liàn zhuàng kuàng mài	9
 两大基石	liǎng dà jī shí	27
+良山铁矿	liáng shān tiě kuàng	1
+亮铱锇矿	liàng yī é kuàng	6
 寮国化石	liáo guó huà shí	8
+辽宁矿难	liáo níng kuàng nàn	4
+辽宁矿业	liáo níng kuàng yè	7
+辽宁煤矿	liáo níng méi kuàng	6
+裂缝矿脉	liè fèng kuàng mài	6
 烈火磐石	liè huǒ pán shí	6
 磷铵镁石	lín ǎn měi shí	1
 磷钡铝石	lín bèi lǚ shí	1
+临城煤矿	lín chéng méi kuàng	6
+磷矾铀矿	lín fán yóu kuàng	7
 磷钙铝石	lín gài lǚ shí	1
 磷钙镁石	lín gài měi shí	1
 磷钙锰石	lín gài měng shí	9
+磷钙铁矿	lín gài tiě kuàng	6
+磷钙铀矿	lín gài yóu kuàng	8
 鳞高岭石	lín gāo lǐng shí	9
 磷硅钙石	lín guī gài shí	7
 磷褐帘石	lín hè lián shí	6
+磷灰石矿	lín huī shí kuàng	7
+淋积矿床	lín jī kuàng chuáng	7
 淋积矿床	lín jī kuàng chuáng	7
 磷钾铝石	lín jiǎ lǚ shí	1
+临界矿物	lín jiè kuàng wù	9
+临矿集团	lín kuàng jí tuán	14
+磷矿翼龙	lín kuàng yì lóng	1
 磷锂铝石	lín lǐ lǚ shí	5
 磷锂锰矿	lín lǐ měng kuàng	10
+磷硫铁矿	lín liú tiě kuàng	3
 磷铝钙石	lín lǚ gài shí	1
 磷铝锂石	lín lǚ lǐ shí	3
 磷铝锰矿	lín lǚ měng kuàng	5
 磷铝锰石	lín lǚ měng shí	1
 鳞绿泥石	lín lǜ ní shí	9
 磷氯铅矿	lín lǜ qiān kuàng	23
+磷铝铈矿	lín lǚ shì kuàng	1
 磷铝铈石	lín lǚ shì shí	7
+磷铝锶矿	lín lǚ sī kuàng	9
 磷铝铁石	lín lǚ tiě shí	1
+磷铝铀矿	lín lǚ yóu kuàng	1
 磷镁钙石	lín měi gài shí	3
 磷镁铝石	lín měi lǚ shí	1
 磷锰铁矿	lín měng tiě kuàng	6
@@ -2393,34 +4098,101 @@ sort: by_weight
 磷钠铍石	lín nà pī shí	9
 磷铍钙石	lín pī gài shí	1
 磷铍锰矿	lín pī měng kuàng	9
+磷铅铀矿	lín qiān yóu kuàng	1
+磷砷铅矿	lín shēn qiān kuàng	8
+磷铈镧矿	lín shì lán kuàng	10
+磷铈钇矿	lín shì yǐ kuàng	8
+磷铁铝矿	lín tiě lǚ kuàng	8
 磷铁锰矿	lín tiě měng kuàng	7
+磷铜铁矿	lín tóng tiě kuàng	8
 临危下石	lín wēi xià shí	32
+磷锌铜矿	lín xīn tóng kuàng	1
+磷型矿化	lín xíng kuàng huà	8
 嶙峋怪石	lín xún guài shí	26
 菱钡镁石	líng bèi měi shí	1
 菱独居石	líng dú jū shí	9
+菱钙铈矿	líng gài shì kuàng	8
 羚硅钡石	líng guī bèi shí	8
 灵魂晶石	líng hún jīng shí	16
 灵魂原石	líng hún yuán shí	5
+菱钾铝矿	líng jiǎ lǚ kuàng	1
 菱磷铝石	líng lín lǚ shí	8
+玲珑金矿	líng lóng jīn kuàng	22
+菱镁铀矿	líng měi yóu kuàng	7
 菱锰铁矿	líng měng tiě kuàng	5
+菱钼铀矿	líng mù yóu kuàng	5
 羚砷锌石	líng shēn xīn shí	7
+灵石矿脉	líng shí kuàng mài	32
+菱锶铬矿	líng sī gè kuàng	9
+菱铁镁矿	líng tiě měi kuàng	9
 硫铵钾石	liú ǎn jiǎ shí	8
+硫铋镍矿	liú bì niè kuàng	7
+硫铋铅矿	liú bì qiān kuàng	5
+硫铋铜矿	liú bì tóng kuàng	8
+硫碲铋矿	liú dì bì kuàng	9
 硫钙霞石	liú gài xiá shí	9
+硫汞锑矿	liú gǒng tī kuàng	6
+硫化汞矿	liú huà gǒng kuàng	1
+硫化矿类	liú huà kuàng lèi	9
 硫化矿石	liú huà kuàng shí	7
+硫化铁矿	liú huà tiě kuàng	6
+硫化铜矿	liú huà tóng kuàng	14
+硫镓铜矿	liú jiā tóng kuàng	6
 流金铄石	liú jīn shuò shí	18
+留矿回采	liú kuàng huí cǎi	6
+六矿新区	liù kuàng xīn qū	32
+硫钌锇矿	liú liǎo é kuàng	8
 六面神石	liù miàn shén shí	7
 流明晶石	liú míng jīng shí	3
 硫钠霞石	liú nà xiá shí	8
 硫钠硝石	liú nà xiāo shí	8
+硫镍钴矿	liú niè gǔ kuàng	6
+硫镍铁矿	liú niè tiě kuàng	12
 硫硼镁石	liú péng měi shí	6
+硫铅铋矿	liú qiān bì kuàng	5
+硫砷钴矿	liú shēn gǔ kuàng	5
+硫砷钌矿	liú shēn liǎo kuàng	6
+硫砷铅矿	liú shēn qiān kuàng	5
 硫砷铅石	liú shēn qiān shí	9
+硫砷铁矿	liú shēn tiě kuàng	3
+硫砷铜矿	liú shēn tóng kuàng	25
+硫砷银矿	liú shēn yín kuàng	5
 硫属化锰	liú shǔ huà měng	7
 硫酸铅矿	liú suān qiān kuàng	5
+硫锑铅矿	liú tī qiān kuàng	17
+硫锑铁矿	liú tī tiě kuàng	6
+硫锑银矿	liú tī yín kuàng	5
+硫铁矿硫	liú tiě kuàng liú	1
+硫铁镍矿	liú tiě niè kuàng	1
+硫铁银矿	liú tiě yín kuàng	6
+硫铜铋矿	liú tóng bì kuàng	5
+硫铜钴矿	liú tóng gǔ kuàng	7
+硫铜锑矿	liú tóng tī kuàng	7
+硫铜银矿	liú tóng yín kuàng	11
+硫铜铀矿	liú tóng yóu kuàng	9
+硫钨铅矿	liú wū qiān kuàng	8
 柳下漱石	liǔ xià shù shí	7
+硫锌铅矿	liú xīn qiān kuàng	6
 流星殒石	liú xīng yǔn shí	5
+硫银铋矿	liú yín bì kuàng	6
+硫银铁矿	liú yín tiě kuàng	9
+硫银锡矿	liú yín xī kuàng	9
+硫银锗矿	liú yín zhě kuàng	17
+硫锗铜矿	liú zhě tóng kuàng	9
+龙矿集团	lóng kuàng jí tuán	12
+龙烟铁矿	lóng yān tiě kuàng	30
+漏斗采矿	lòu dǒu cǎi kuàng	8
 陆地水文	lù dì shuǐ wén	9
+庐江矾矿	lú jiāng fán kuàng	11
 庐山三石	lú shān sān shí	13
+露天采矿	lù tiān cǎi kuàng	5
 露天采石	lù tiān cǎi shí	10
+露天矿场	lù tiān kuàng chǎng	9
+露天矿工	lù tiān kuàng gōng	5
+露天矿山	lù tiān kuàng shān	7
+露天煤矿	lù tiān méi kuàng	9
+陆依宝矿	lù yī bǎo kuàng	6
+陆源矿物	lù yuán kuàng wù	10
 卵不敌石	luǎn bù dí shí	32
 轮藻化石	lún zǎo huà shí	5
 落井投石	luò jǐng tóu shí	7
@@ -2429,14 +4201,19 @@ sort: by_weight
 罗马洞石	luó mǎ dòng shí	19
 螺旋笔石	luó xuán bǐ shí	9
 氯铵汞矿	lǜ ǎn gǒng kuàng	1
+铝板钛矿	lǚ bǎn tài kuàng	8
+绿宝石矿	lǜ bǎo shí kuàng	22
 绿电气石	lǜ diàn qì shí	6
 氯碘铅矿	lǜ diǎn qiān kuàng	1
 绿都褐石	lǜ dōu hè shí	6
+铝矾土矿	lǚ fán tǔ kuàng	22
 绿钙闪石	lǜ gài shǎn shí	8
 绿橄榄石	lǜ gǎn lǎn shí	7
 绿高岭石	lǜ gāo lǐng shí	9
+铝铬铁矿	lǚ gè tiě kuàng	1
 绿辉石玉	lǜ huī shí yù	3
 氯钾铵矿	lǜ jiǎ ǎn kuàng	6
+吕家坨矿	lǚ jiā tuó kuàng	18
 绿假霞石	lǜ jiǎ xiá shí	9
 绿尖晶石	lǜ jiān jīng shí	6
 铝蓝闪石	lǚ lán shǎn shí	7
@@ -2444,6 +4221,8 @@ sort: by_weight
 绿帘石岩	lǜ lián shí yán	6
 绿帘石族	lǜ lián shí zú	4
 绿磷锰矿	lǜ lín měng kuàng	5
+绿磷铁矿	lǜ lín tiě kuàng	1
+绿硫钒矿	lǜ liú fán kuàng	5
 绿硫钒石	lǜ liú fán shí	9
 铝绿泥石	lǚ lǜ ní shí	3
 铝镁锰板	lǚ měi měng bǎn	7
@@ -2454,6 +4233,7 @@ sort: by_weight
 绿泥石化	lǜ ní shí huà	8
 氯硼铜矿	lǜ péng tóng kuàng	1
 氯羟锰矿	lǜ qiǎng měng kuàng	9
+绿色矿业	lǜ sè kuàng yè	17
 绿色石门	lǜ sè shí mén	6
 铝蛇纹石	lǚ shé wén shí	12
 氯砷铅矿	lǜ shēn qiān kuàng	1
@@ -2464,51 +4244,111 @@ sort: by_weight
 绿松石色	lǜ sōng shí sè	33
 绿松原石	lǜ sōng yuán shí	3
 氯锑铅矿	lǜ tī qiān kuàng	9
+绿锑铅矿	lǜ tī qiān kuàng	8
+绿铁碲矿	lǜ tiě dì kuàng	7
 绿铁榴石	lǜ tiě liú shí	8
+绿铁铅矿	lǜ tiě qiān kuàng	9
 铝铁闪石	lǚ tiě shǎn shí	9
 绿铁闪石	lǜ tiě shǎn shí	7
 氯铜铅矿	lǜ tóng qiān kuàng	5
+绿铜锌矿	lǜ tóng xīn kuàng	14
+铝土矿床	lǚ tǔ kuàng chuáng	3
 铝土矿床	lǚ tǔ kuàng chuáng	3
 铝土矿石	lǚ tǔ kuàng shí	9
+铝土矿渣	lǚ tǔ kuàng zhā	1
 绿纤石相	lǜ xiān shí xiāng	4
 氯溴银矿	lǜ xiù yín kuàng	1
 绿雪松石	lǜ xuě sōng shí	7
+绿盐铜矿	lǜ yán tóng kuàng	7
 绿荧石色	lǜ yíng shí sè	10
 铝柘榴石	lǚ zhè liú shí	13
 铝直闪石	lǚ zhí shǎn shí	3
 绿柱石化	lǜ zhù shí huà	8
+马基诺矿	mǎ jī nuò kuàng	9
+马坑矿业	mǎ kēng kuàng yè	14
 玛瑙原石	mǎ nǎo yuán shí	31
 麻杏甘石	má xìng gān shí	13
+蚂蚁矿池	mǎ yǐ kuàng chí	9
+埋藏矿砂	mái cáng kuàng shā	5
+埋藏矿体	mái cáng kuàng tǐ	6
+买矿泉水	mǎi kuàng quán shuǐ	35
+脉石矿物	mài shí kuàng wù	15
+馒头页岩	mán tou yè yán	5
 满洲角石	mǎn zhōu jiǎo shí	9
 芒果小石	máng guǒ xiǎo shí	5
 芒硝矿床	máng xiāo kuàng chuáng	7
+芒硝矿床	máng xiāo kuàng chuáng	7
+毛赤铜矿	máo chì tóng kuàng	5
 茅坑顽石	máo kēng wán shí	5
 茅坑无石	máo kēng wú shí	6
 毛坯钻石	máo pī zuàn shí	28
+煤安矿安	méi ān kuàng ān	12
 镁白云石	měi bái yún shí	9
 镁冰晶石	měi bīng jīng shí	7
+煤层变薄	méi céng biàn báo	7
+煤层变化	méi céng biàn huà	7
+煤层底板	méi céng dǐ bǎn	6
+煤层顶板	méi céng dǐng bǎn	5
+煤层对比	méi céng duì bǐ	10
+煤层分叉	méi céng fēn chà	7
+煤层厚度	méi céng hòu dù	19
+煤层结构	méi céng jié gòu	5
+煤层露头	méi céng lòu tóu	10
+煤层煤样	méi céng méi yàng	10
+煤层倾角	méi céng qīng jiǎo	7
+煤层倾斜	méi céng qīng xié	5
+煤层石球	méi céng shí qiú	7
+煤层瓦斯	méi céng wǎ sī	7
+煤层形变	méi céng xíng biàn	9
+煤层形态	méi céng xíng tài	10
 镁电气石	měi diàn qì shí	17
 镁符山石	měi fú shān shí	8
 镁钙闪石	měi gài shǎn shí	1
 镁橄榄石	měi gǎn lǎn shí	31
+镁铬铁矿	měi gè tiě kuàng	1
 镁硅钙石	měi guī gài shí	8
+美国矿场	měi guó kuàng chǎng	6
+美国矿工	měi guó kuàng gōng	7
+美国矿难	měi guó kuàng nàn	6
+美国矿业	měi guó kuàng yè	6
 镁褐帘石	měi hè lián shí	6
 镁黄长石	měi huáng cháng shí	3
 镁碱沸石	měi jiǎn fèi shí	1
 镁尖晶石	měi jiān jīng shí	12
+煤矿安全	méi kuàng ān quán	7
+煤矿沉陷	méi kuàng chén xiàn	5
+煤矿地质	méi kuàng dì zhì	12
+煤矿电机	méi kuàng diàn jī	9
+煤矿防尘	méi kuàng fáng chén	7
+煤矿工人	méi kuàng gōng rén	8
+煤矿公司	méi kuàng gōng sī	70
+煤矿机电	méi kuàng jī diàn	19
+煤矿机械	méi kuàng jī xiè	8
+煤矿井下	méi kuàng jǐng xià	34
+煤矿开采	méi kuàng kāi cǎi	6
+煤矿矿长	méi kuàng kuàng zhǎng	31
+煤矿企业	méi kuàng qǐ yè	95
+煤矿设计	méi kuàng shè jì	7
+煤矿瓦斯	méi kuàng wǎ sī	9
+煤矿医院	méi kuàng yī yuàn	14
+镁菱铁矿	měi líng tiě kuàng	8
 镁铝榴石	měi lǚ liú shí	27
 镁绿泥石	měi lǜ ní shí	9
 镁锰闪石	měi měng shǎn shí	5
 镁钠闪石	měi nà shǎn shí	1
 镁硼锰石	měi péng měng shí	9
+梅山铁矿	méi shān tiě kuàng	18
 镁蛇纹石	měi shé wén shí	3
+煤炭矿床	méi tàn kuàng chuáng	9
 煤炭矿床	méi tàn kuàng chuáng	9
 镁铁辉石	měi tiě huī shí	6
 镁铁榴石	měi tiě liú shí	10
 镁铁闪石	měi tiě shǎn shí	18
 镁星叶石	měi xīng yè shí	8
 没有砖石	méi yǒu zhuān shí	1
+煤峪口矿	méi yù kǒu kuàng	10
 镁直闪石	měi zhí shǎn shí	6
+美卓矿机	měi zhuó kuàng jī	3
 锰白云石	měng bái yún shí	7
 梦窗疏石	mèng chuāng shū shí	20
 锰磁铁矿	měng cí tiě kuàng	1
@@ -2555,19 +4395,37 @@ sort: by_weight
 蜜蜡原石	mì là yuán shí	39
 泌尿结石	mì niào jié shí	38
 米卅五石	mǐ sà wǔ shí	1
+秘银矿脉	mì yín kuàng mài	7
 秘银矿石	mì yín kuàng shí	7
+缅甸矿难	miǎn diàn kuàng nàn	6
+缅甸矿业	miǎn diàn kuàng yè	5
+缅甸铜矿	miǎn diàn tóng kuàng	6
 缅甸玉石	miǎn diàn yù shí	23
 眠云卧石	mián yún wò shí	3
+庙坡页岩	miào pō yè yán	6
 命运云石	mìng yùn yún shí	9
+摩擦选矿	mó cā xuǎn kuàng	7
 蘑菇岩石	mó gū yán shí	9
+磨矿车间	mó kuàng chē jiān	7
+磨矿介质	mó kuàng jiè zhì	2
+磨矿粒度	mó kuàng lì dù	13
+磨矿撂图	mó kuàng liào tú	9
+磨矿设备	mó kuàng shè bèi	32
+魔矿守卫	mó kuàng shǒu wèi	11
+磨矿细度	mó kuàng xì dù	6
+磨矿效率	mó kuàng xiào lǜ	5
 磨砾岩相	mó lì yán xiāng	10
+模拟放矿	mó nǐ fàng kuàng	9
 墨染白石	mò rǎn bái shí	5
 磨石燧石	mó shí suì shí	10
 魔仙彩石	mó xiān cǎi shí	5
 莫依桑石	mò yī sāng shí	4
 模铸化石	mó zhù huà shí	22
 慕白蓝石	mù bái lán shí	5
+木冲沟矿	mù chōng gōu kuàng	5
 钼方钠石	mù fāng nà shí	7
+钼钛铀矿	mù tài yóu kuàng	8
+钼钨钙矿	mù wū gài kuàng	9
 钠矾硝石	nà fán xiāo shí	5
 钠钙长石	nà gài cháng shí	5
 钠钙闪石	nà gài shǎn shí	14
@@ -2581,43 +4439,84 @@ sort: by_weight
 钠透长石	nà tòu cháng shí	5
 钠透闪石	nà tòu shǎn shí	7
 钠正长石	nà zhèng zhǎng shí	6
+耐普矿机	nài pǔ kuàng jī	16
 奶油砂石	nǎi yóu shā shí	8
 南丹陨石	nán dān yǔn shí	15
 南极陨石	nán jí yǔn shí	23
+南山矿区	nán shān kuàng qū	9
+南桐矿区	nán tóng kuàng qū	32
+囊状矿脉	náng zhuàng kuàng mài	8
+闹鬼金矿	nào guǐ jīn kuàng	12
+内成矿床	nèi chéng kuàng chuáng	9
 内成矿床	nèi chéng kuàng chuáng	9
 内生矿床	nèi shēng kuàng chuáng	6
+内生矿床	nèi shēng kuàng chuáng	6
+内生铀矿	nèi shēng yóu kuàng	9
+内石拐矿	nèi shí guǎi kuàng	5
 能量晶石	néng liàng jīng shí	19
+铌钙钛矿	ní gài tài kuàng	1
 泥结碎石	ní jié suì shí	18
+铌铈钇矿	ní shì yǐ kuàng	5
 铌钽矿床	ní tǎn kuàng chuáng	16
+铌钽矿床	ní tǎn kuàng chuáng	16
+铌钽铁矿	ní tǎn tiě kuàng	7
+铌钽铀矿	ní tǎn yóu kuàng	8
 铌铁锰矿	ní tiě měng kuàng	6
 霓透辉石	ní tòu huī shí	7
 铌易解石	ní yì jiě shí	8
+铌钇铀矿	ní yǐ yóu kuàng	9
+泥质页岩	ní zhì yè yán	7
+粘附选矿	nián fù xuǎn kuàng	7
 粘土矿床	nián tǔ kuàng chuáng	8
+粘土矿床	nián tǔ kuàng chuáng	8
+粘土矿物	nián tǔ kuàng wù	36
+黏土矿物	nián tǔ kuàng wù	30
 年夜理石	nián yè lǐ shí	32
 尿道结石	niào dào jié shí	42
+鸟粪磷矿	niǎo fèn lín kuàng	8
 尿路结石	niào lù jié shí	47
+镍磁铁矿	niè cí tiě kuàng	13
+镍黄铁矿	niè huáng tiě kuàng	19
 镍尖晶石	niè jiān jīng shí	8
+镊流铁矿	niè liú tiě kuàng	8
 镍绿泥石	niè lǜ ní shí	5
 镍锰电池	niè měng diàn chí	3
 镍碳铁石	niè tàn tiě shí	6
 镍铁陨石	niè tiě yǔn shí	14
+宁贵华矿	níng guì huá kuàng	4
+宁国页岩	níng guó yè yán	9
+宁夏矿难	níng xià kuàng nàn	6
+宁夏煤矿	níng xià méi kuàng	7
+浓红银矿	nóng hóng yín kuàng	12
+奴隶矿场	nú lì kuàng chǎng	7
 怒猊抉石	nù ní jué shí	3
 女娲彩石	nǚ wā cǎi shí	5
 女娲炼石	nǚ wā liàn shí	24
 女医仓石	nǚ yī cāng shí	9
 欧阳中石	ōu yáng zhōng shí	40
+排矿速度	pái kuàng sù dù	7
+盘古山矿	pán gǔ shān kuàng	4
+潘洛铁矿	pān luò tiě kuàng	31
 番禺大石	pān yú dà shí	25
 膀胱结石	páng guāng jié shí	42
+佩察莫矿	pèi chá mò kuàng	4
 佩戴玉石	pèi dài yù shí	30
 喷流矿床	pēn liú kuàng chuáng	6
+喷流矿床	pēn liú kuàng chuáng	6
+喷气矿床	pēn qì kuàng chuáng	10
 喷气矿床	pēn qì kuàng chuáng	10
 硼符山石	péng fú shān shí	7
+硼硅铈矿	péng guī shì kuàng	8
 澎湖文石	pēng hú wén shí	25
 硼钾镁石	péng jiǎ měi shí	8
+硼锂铍矿	péng lǐ pī kuàng	7
 硼磷镁石	péng lín měi shí	8
 硼铝镁石	péng lǚ měi shí	3
 硼镁锰矿	péng měi měng kuàng	7
+硼镁钛矿	péng měi tài kuàng	8
+硼镁铁矿	péng měi tiě kuàng	5
 硼钠钙石	péng nà gài shí	1
+膨润土矿	péng rùn tǔ kuàng	12
 硼酸钙石	péng suān gài shí	7
 膨胀蛭石	péng zhàng zhì shí	18
 彭志忠石	péng zhì zhōng shí	9
@@ -2626,31 +4525,52 @@ sort: by_weight
 片硅铝石	piàn guī lǚ shí	5
 片水锰矿	piàn shuǐ měng kuàng	6
 片言金石	piàn yán jīn shí	1
+平巷矿柱	píng hàng kuàng zhù	6
+平炉富矿	píng lú fù kuàng	9
+平水铜矿	píng shuǐ tóng kuàng	1
+平卧矿体	píng wò kuàng tǐ	9
+坡积砂矿	pō jī shā kuàng	7
 破碎岩石	pò suì yán shí	20
+普查找矿	pǔ chá zhǎo kuàng	5
 濮水顽石	pú shuǐ wán shí	6
 葡萄硼石	pú táo péng shí	7
 普通辉石	pǔ tōng huī shí	24
 七彩晶石	qī cǎi jīng shí	1
+气成矿物	qì chéng kuàng wù	10
 奇峰怪石	qí fēng guài shí	41
 奇峰异石	qí fēng yì shí	36
 栖管化石	qī guǎn huà shí	9
 气化矿床	qì huà kuàng chuáng	8
+气化矿床	qì huà kuàng chuáng	8
 七煌炉石	qī huáng lú shí	32
+綦江铁矿	qí jiāng tiě kuàng	10
 奇山怪石	qí shān guài shí	26
 奇山异石	qí shān yì shí	28
 奇松怪石	qí sōng guài shí	39
 其他玉石	qí tā yù shí	29
 气体矿床	qì tǐ kuàng chuáng	5
+气体矿床	qì tǐ kuàng chuáng	5
+骑田岭矿	qí tián lǐng kuàng	9
 气象水文	qì xiàng shuǐ wén	41
+七星煤矿	qī xīng méi kuàng	6
 奇岩怪石	qí yán guài shí	31
 浅层岩溶	qiǎn céng yán róng	9
 浅成矿床	qiǎn chéng kuàng chuáng	1
+浅成矿床	qiǎn chéng kuàng chuáng	1
+铅钙铀矿	qiān gài yóu kuàng	9
 浅红晶石	qiǎn hóng jīng shí	5
 千斤巨石	qiān jīn jù shí	13
+浅孔留矿	qiǎn kǒng liú kuàng	4
 铅蓝方石	qiān lán fāng shí	10
 浅蓝暹石	qiǎn lán xiān shí	5
+铅铌铁矿	qiān ní tiě kuàng	8
+浅色矿物	qiǎn sè kuàng wù	8
+铅钛铁矿	qiān tài tiě kuàng	5
+铅锌矿床	qiān xīn kuàng chuáng	19
 铅锌矿床	qiān xīn kuàng chuáng	19
 铅锌矿石	qiān xīn kuàng shí	12
+铅锌铁矿	qiān xīn tiě kuàng	9
+铅锌银矿	qiān xīn yín kuàng	19
 羟钒铜矿	qiǎng fán tóng kuàng	7
 羟硅锰石	qiǎng guī měng shí	6
 羟硅铍石	qiǎng guī pī shí	8
@@ -2664,75 +4584,124 @@ sort: by_weight
 秦汴锈石	qín biàn xiù shí	6
 亲当矢石	qīn dāng shǐ shí	3
 亲冒矢石	qīn mào shǐ shí	19
+亲水矿物	qīn shuǐ kuàng wù	9
 清除矸石	qīng chú gān shí	7
 清除岩石	qīng chú yán shí	10
 青岛金石	qīng dǎo jīn shí	17
 青符山石	qīng fú shān shí	7
 青缸炬石	qīng gāng jù shí	4
+青金石矿	qīng jīn shí kuàng	7
 清理矸石	qīng lǐ gān shí	8
 清理岩石	qīng lǐ yán shí	5
 青磷灰石	qīng lín huī shí	9
 青龙魂石	qīng lóng hún shí	5
 青铝闪石	qīng lǚ shǎn shí	6
 青钠闪石	qīng nà shǎn shí	5
+清平磷矿	qīng píng lín kuàng	1
 清水白石	qīng shuǐ bái shí	4
 青溪白石	qīng xī bái shí	6
+倾斜矿脉	qīng xié kuàng mài	5
+倾斜煤层	qīng xié méi céng	7
 氢氧钙石	qīng yǎng gài shí	8
 氢氧化锰	qīng yǎng huà měng	21
 氢氧镁石	qīng yǎng měi shí	6
 球队基石	qiú duì jī shí	26
 球粒陨石	qiú lì yǔn shí	46
+球菱铁矿	qiú líng tiě kuàng	8
+球泡铋矿	qiú pào bì kuàng	8
 球砷锰矿	qiú shēn měng kuàng	5
 瞿人犁石	qú rén lí shí	6
 曲水文华	qǔ shuǐ wén huá	3
 去牙克石	qù yá kè shí	10
 泉胶岩石	quán jiāo yán shí	7
+全市煤矿	quán shì méi kuàng	20
+燃料矿产	rán liào kuàng chǎn	8
+燃料矿床	rán liào kuàng chuáng	7
 燃料矿床	rán liào kuàng chuáng	7
 热泉矿床	rè quán kuàng chuáng	7
+热泉矿床	rè quán kuàng chuáng	7
+热液矿床	rè yè kuàng chuáng	9
 热液矿床	rè yè kuàng chuáng	9
 人非木石	rén fēi mù shí	23
 人非土石	rén fēi tǔ shí	32
 人工砂石	rén gōng shā shí	32
 韧皮络石	rèn pí luò shí	9
 人造沸石	rén zào fèi shí	6
+人造富矿	rén zào fù kuàng	8
+人造矿物	rén zào kuàng wù	8
+日本金矿	rì běn jīn kuàng	8
+日本矿场	rì běn kuàng chǎng	7
+日本矿难	rì běn kuàng nàn	5
+日本矿山	rì běn kuàng shān	4
+日本矿业	rì běn kuàng yè	5
+日本煤矿	rì běn méi kuàng	5
+日本铜矿	rì běn tóng kuàng	8
+日本银矿	rì běn yín kuàng	5
 日光榴石	rì guāng liú shí	10
 熔化矿石	róng huà kuàng shí	5
 熔角砾岩	róng jiǎo lì yán	11
 熔离矿床	róng lí kuàng chuáng	10
+熔离矿床	róng lí kuàng chuáng	10
+绒毛紫矿	róng máo zǐ kuàng	5
+熔析矿床	róng xī kuàng chuáng	7
 熔析矿床	róng xī kuàng chuáng	7
 熔岩巨石	róng yán jù shí	5
+溶液采矿	róng yè cǎi kuàng	5
 肉红长石	ròu hóng cháng shí	8
 肉色柱石	ròu sè zhù shí	6
 乳埃洛石	rǔ āi luò shí	9
+乳白铅矿	rǔ bái qiān kuàng	9
 如大理石	rú dà lǐ shí	23
 如何铁石	rú hé tiě shí	1
 蠕绿泥石	rú lǜ ní shí	6
 如水投石	rú shuǐ tóu shí	1
 如意钻石	rú yì zuàn shí	6
+软硅铜矿	ruǎn guī tóng kuàng	8
 软绿脱石	ruǎn lǜ tuō shí	8
 软弱岩石	ruǎn ruò yán shí	10
+软砷铜矿	ruǎn shēn tóng kuàng	7
 软水铝石	ruǎn shuǐ lǚ shí	10
+弱矿化湖	ruò kuàng huà hú	6
+萨塞瓦斯	sà sāi wǎ sī	4
 散布漂石	sàn bù piāo shí	10
 三大基石	sān dà jī shí	32
 三和松石	sān hé sōng shí	3
+三级矿量	sān jí kuàng liàng	5
+三矿中学	sān kuàng zhōng xué	3
+三菱矿业	sān líng kuàng yè	7
 三泉中石	sān quán zhōng shí	32
 三三三石	sān sān sān shí	5
+三水铝矿	sān shuǐ lǚ kuàng	10
 三水铝石	sān shuǐ lǚ shí	14
 三羰基锰	sān tāng jī měng	8
+三峡炭矿	sān xiá tàn kuàng	8
 三斜闪石	sān xié shǎn shí	6
 三斜霞石	sān xié xiá shí	6
+瑟银矿脉	sè yín kuàng mài	3
 瑟银矿石	sè yín kuàng shí	9
 沙方解石	shā fāng jiě shí	7
 沙佛莱石	shā fó lái shí	24
 沙弗莱石	shā fú lái shí	36
 砂积矿床	shā jī kuàng chuáng	1
+砂积矿床	shā jī kuàng chuáng	1
 砂夹碎石	shā jiā suì shí	5
 砂金矿床	shā jīn kuàng chuáng	5
+砂金矿床	shā jīn kuàng chuáng	5
+砂矿测量	shā kuàng cè liáng	8
+砂矿工祖	shā kuàng gōng zǔ	7
+砂矿开采	shā kuàng kāi cǎi	6
+砂矿取样	shā kuàng qǔ yàng	6
+砂矿淘采	shā kuàng táo cǎi	8
 砂锡矿床	shā xī kuàng chuáng	1
+砂锡矿床	shā xī kuàng chuáng	1
+砂质页岩	shā zhì yè yán	16
 筛选矿石	shāi xuǎn kuàng shí	6
 山地水文	shān dì shuǐ wén	6
 闪电管石	shǎn diàn guǎn shí	9
 山顶乱石	shān dǐng luàn shí	32
+山东地矿	shān dōng dì kuàng	78
+山东矿难	shān dōng kuàng nàn	7
+山东矿业	shān dōng kuàng yè	7
 珊瑚碎石	shān hú suì shí	16
 山间一石	shān jiān yì shí	6
 闪石化酌	shǎn shí huà zhuó	9
@@ -2742,90 +4711,177 @@ sort: by_weight
 山水文园	shān shuǐ wén yuán	30
 山水文苑	shān shuǐ wén yuàn	14
 山体岩石	shān tǐ yán shí	27
+山西矿监	shān xī kuàng jiān	7
+山西矿难	shān xī kuàng nàn	8
+陕西矿难	shǎn xī kuàng nàn	6
+陕西矿业	shǎn xī kuàng yè	5
+山西矿业	shān xī kuàng yè	5
+陕西煤矿	shǎn xī méi kuàng	8
 山下顽石	shān xià wán shí	7
+闪锌矿星	shǎn xīn kuàng xīng	9
 山中一石	shān zhōng yì shí	6
 上八洞石	shàng bā dòng shí	9
+上海矿业	shàng hǎi kuàng yè	6
 商品矿石	shāng pǐn kuàng shí	7
+设想的矿	shè xiǎng de kuàng	5
+砷钡铀矿	shēn bèi yóu kuàng	8
+砷铋铜矿	shēn bì tóng kuàng	5
+深部砂矿	shēn bù shā kuàng	9
+深成矿床	shēn chéng kuàng chuáng	7
 深成矿床	shēn chéng kuàng chuáng	7
 身当矢石	shēn dāng shǐ shí	9
+砷钒铅矿	shēn fán qiān kuàng	9
 身非木石	shēn fēi mù shí	10
 砷钙镁石	shēn gài měi shí	17
+砷钙铜矿	shēn gài tóng kuàng	17
+砷钙锌矿	shēn gài xīn kuàng	5
+砷钙铀矿	shēn gài yóu kuàng	9
+神冈矿业	shén gāng kuàng yè	7
 肾硅锰矿	shèn guī měng kuàng	10
 砷硅锰矿	shēn guī měng kuàng	8
 深海沉石	shēn hǎi chén shí	7
 深红榴石	shēn hóng liú shí	10
+深红银矿	shēn hóng yín kuàng	7
+砷黄铁矿	shēn huáng tiě kuàng	21
+深黄铀矿	shēn huáng yóu kuàng	8
 深蓝燧石	shēn lán suì shí	6
+砷硫银矿	shēn liú yín kuàng	6
+深露天矿	shēn lù tiān kuàng	7
 深绿辉石	shēn lǜ huī shí	9
 砷氯铅矿	shēn lǜ qiān kuàng	9
 砷锰钙石	shēn měng gài shí	1
 砷锰铅矿	shēn měng qiān kuàng	6
+砷镍钴矿	shēn niè gǔ kuàng	7
+砷镍铁矿	shēn niè tiě kuàng	9
 砷硼钙石	shēn péng gài shí	1
+砷铅铁矿	shēn qiān tiě kuàng	1
+深色矿物	shēn sè kuàng wù	7
+砷闪锌矿	shēn shǎn xīn kuàng	5
 神圣原石	shén shèng yuán shí	3
 砷水锰矿	shēn shuǐ měng kuàng	5
 砷酸铋矿	shēn suān bì kuàng	7
+深铁矿洞	shēn tiě kuàng dòng	5
+砷铁铝矿	shēn tiě lǚ kuàng	7
+砷铁镍矿	shēn tiě niè kuàng	1
+砷铜铅矿	shēn tóng qiān kuàng	16
+砷锌铜矿	shēn xīn tóng kuàng	5
 深岩溶洞	shēn yán róng dòng	9
+砷铀铋矿	shēn yóu bì kuàng	5
+砷黝铜矿	shēn yǒu tóng kuàng	16
 肾盂结石	shèn yú jié shí	12
 肾脏结石	shèn zàng jié shí	28
+深圳矿场	shēn zhèn kuàng chǎng	5
 生白云石	shēng bái yún shí	3
+生产矿量	shēng chǎn kuàng liàng	6
+生产矿脉	shēng chǎn kuàng mài	10
+生产矿山	shēng chǎn kuàng shān	6
+生产探矿	shēng chǎn tàn kuàng	3
+盛达矿业	shèng dá kuàng yè	43
+盛大矿业	shèng dà kuàng yè	1
+省地矿局	shěng dì kuàng jú	32
+省地矿厅	shěng dì kuàng tīng	1
 升华矿床	shēng huá kuàng chuáng	5
+升华矿床	shēng huá kuàng chuáng	5
+生矿物学	shēng kuàng wù xué	9
+生硫化矿	shēng liú huà kuàng	1
 生命晶石	shēng mìng jīng shí	3
 圣魔光石	shèng mó guāng shí	10
 声如金石	shēng rú jīn shí	9
 省水文局	shěng shuǐ wén jú	32
+盛屯矿业	shèng tún kuàng yè	41
+生物采矿	shēng wù cǎi kuàng	10
+生物浸矿	shēng wù jìn kuàng	10
 石奥加石	shí ào jiā shí	4
+蚀变矿物	shí biàn kuàng wù	13
 蚀变岩石	shí biàn yán shí	6
+石材矿山	shí cái kuàng shān	23
 石大斑石	shí dà bān shí	1
+史碲银矿	shǐ dì yín kuàng	6
+湿法磨矿	shī fǎ mó kuàng	5
+铈钙钛矿	shì gài tài kuàng	1
+石膏矿床	shí gāo kuàng chuáng	7
 石膏矿床	shí gāo kuàng chuáng	7
 铈黑帘石	shì hēi lián shí	10
+石灰石矿	shí huī shí kuàng	31
+石灰岩矿	shí huī yán kuàng	18
+世纪矿难	shì jì kuàng nàn	7
 世纪钻石	shì jì zuàn shí	12
+石矿矿工	shí kuàng kuàng gōng	3
+市矿务局	shì kuàng wù jú	10
 石匮书石	shí kuì shū shí	4
 石榴子石	shí liú zǐ shí	29
+石录矿区	shí lù kuàng qū	5
+石棉矿床	shí mián kuàng chuáng	5
 石棉矿床	shí mián kuàng chuáng	5
 石墨矿床	shí mò kuàng chuáng	9
+石墨矿床	shí mò kuàng chuáng	9
+石牌页岩	shí pái yè yán	10
 铈片榍石	shì piàn xiè shí	8
 市水文局	shì shuǐ wén jú	29
 实体化石	shí tǐ huà shí	9
 石铁陨石	shí tiě yǔn shí	40
 石盐矿床	shí yán kuàng chuáng	3
+石盐矿床	shí yán kuàng chuáng	3
+试验矿井	shì yàn kuàng jǐng	7
 石英脉石	shí yīng mài shí	6
 石英萤石	shí yīng yíng shí	5
 石油矿床	shí yóu kuàng chuáng	7
+石油矿床	shí yóu kuàng chuáng	7
 石质陨石	shí zhì yǔn shí	20
 十字沸石	shí zì fèi shí	10
+蜀南气矿	shǔ nán qì kuàng	3
 输尿管石	shū niào guǎn shí	7
 书女爱石	shū nǚ ài shí	5
+疏水矿物	shū shuǐ kuàng wù	8
 疏松岩石	shū sōng yán shí	3
 双房角石	shuāng fáng jiǎo shí	9
+双矿物法	shuāng kuàng wù fǎ	6
 霜脲锰锌	shuāng niào měng xīn	1
 双肾结石	shuāng shèn jié shí	30
 双头笔石	shuāng tóu bǐ shí	7
 双纹长石	shuāng wén cháng shí	10
 双鱼陨石	shuāng yú yǔn shí	10
 水铵硼石	shuǐ ǎn péng shí	10
+水白铅矿	shuǐ bái qiān kuàng	1
 水白云石	shuǐ bái yún shí	5
 水城菊石	shuǐ chéng jú shí	6
+水赤铁矿	shuǐ chì tiě kuàng	1
+水碲铁矿	shuǐ dì tiě kuàng	9
 水底顽石	shuǐ dǐ wán shí	5
 水钒钡石	shuǐ fán bèi shí	9
 水钒钙石	shuǐ fán gài shí	8
 水钒镁石	shuǐ fán měi shí	7
+水钒铁矿	shuǐ fán tiě kuàng	10
 水方解石	shuǐ fāng jiě shí	5
 水方锰矿	shuǐ fāng měng kuàng	10
 水方硼石	shuǐ fāng péng shí	5
+水复钒矿	shuǐ fù fán kuàng	6
 水钙沸石	shuǐ gài fèi shí	1
 水钙硝石	shuǐ gài xiāo shí	6
+水钴镍矿	shuǐ gǔ niè kuàng	9
+水硅钡矿	shuǐ guī bèi kuàng	7
 水硅钙石	shuǐ guī gài shí	7
 水硅灰石	shuǐ guī huī shí	1
 水硅锰矿	shuǐ guī měng kuàng	7
 水硅铍石	shuǐ guī pī shí	5
+水硅铁矿	shuǐ guī tiě kuàng	8
 水硅铀石	shuǐ guī yóu shí	7
+水化矿物	shuǐ huà kuàng wù	5
 水黄长石	shuǐ huáng cháng shí	10
+水晶矿场	shuǐ jīng kuàng chǎng	18
+水晶矿厂	shuǐ jīng kuàng chǎng	5
 水晶原石	shuǐ jīng yuán shí	16
+水力采矿	shuǐ lì cǎi kuàng	13
 水磷钙石	shuǐ lín gài shí	5
 水磷钾石	shuǐ lín jiǎ shí	6
 水磷铝石	shuǐ lín lǚ shí	1
 水磷锰石	shuǐ lín měng shí	1
+水磷铈矿	shuǐ lín shì kuàng	8
 水磷铁石	shuǐ lín tiě shí	10
+水磷铀矿	shuǐ lín yóu kuàng	7
+水菱镁矿	shuǐ líng měi kuàng	12
 水菱镁石	shuǐ líng měi shí	13
+水菱钇矿	shuǐ líng yǐ kuàng	8
 水灵原石	shuǐ líng yuán shí	1
 水铝钙石	shuǐ lǚ gài shí	19
 水绿榴石	shuǐ lǜ liú shí	1
@@ -2833,23 +4889,34 @@ sort: by_weight
 水氯铜矿	shuǐ lǜ tóng kuàng	3
 水铝氧石	shuǐ lǚ yǎng shí	6
 水铝英石	shuǐ lǚ yīng shí	12
+水镁矾矿	shuǐ měi fán kuàng	1
 水镁锰矿	shuǐ měi měng kuàng	7
 水镁铁石	shuǐ měi tiě shí	6
 水镁硝石	shuǐ měi xiāo shí	9
 水锰辉石	shuǐ měng huī shí	9
+水钼铁矿	shuǐ mù tiě kuàng	1
+水钼铀矿	shuǐ mù yóu kuàng	6
 水钠锰矿	shuǐ nà měng kuàng	3
+水钠铀矿	shuǐ nà yóu kuàng	1
 水泥碎石	shuǐ ní suì shí	14
 水泥蛭石	shuǐ ní zhì shí	1
 水硼钙石	shuǐ péng gài shí	1
 水硼镁石	shuǐ péng měi shí	8
 水硼钠石	shuǐ péng nà shí	1
 水硼锶石	shuǐ péng sī shí	1
+水硼铁矿	shuǐ péng tiě kuàng	7
+水平矿层	shuǐ píng kuàng céng	8
+水平矿柱	shuǐ píng kuàng zhù	7
+水热矿床	shuǐ rè kuàng chuáng	6
 水热矿床	shuǐ rè kuàng chuáng	6
 水蛇纹石	shuǐ shé wén shí	1
 水砷锰石	shuǐ shēn měng shí	5
+水砷锌矿	shuǐ shēn xīn kuàng	16
 水铈钛石	shuǐ shì tài shí	8
+水钛铌矿	shuǐ tài ní kuàng	9
 水碳镁石	shuǐ tàn měi shí	9
 水碳硼石	shuǐ tàn péng shí	8
+水锑铅矿	shuǐ tī qiān kuàng	1
 水文测报	shuǐ wén cè bào	31
 水文测量	shuǐ wén cè liáng	25
 水文测验	shuǐ wén cè yàn	31
@@ -2897,7 +4964,10 @@ sort: by_weight
 水文组织	shuǐ wén zǔ zhī	4
 水锌锰矿	shuǐ xīn měng kuàng	8
 水型矿床	shuǐ xíng kuàng chuáng	10
+水型矿床	shuǐ xíng kuàng chuáng	10
 水星叶石	shuǐ xīng yè shí	5
+水铀铅矿	shuǐ yóu qiān kuàng	7
+水针铁矿	shuǐ zhēn tiě kuàng	3
 水之漂石	shuǐ zhī piāo shí	7
 水之原石	shuǐ zhī yuán shí	7
 泗滨砭石	sì bīn biān shí	25
@@ -2906,19 +4976,27 @@ sort: by_weight
 斯担硅石	sī dān guī shí	7
 似电气石	sì diàn qì shí	6
 丝光沸石	sī guāng fèi shí	6
+四老沟矿	sì lǎo gōu kuàng	13
 锶磷灰石	sī lín huī shí	1
 四氯化锰	sì lǜ huà měng	1
 丝钠铝石	sī nà lǚ shí	6
 似钠闪石	sì nà shǎn shí	8
 锶片沸石	sī piàn fèi shí	1
+丝绒金矿	sī róng jīn kuàng	18
 似石榴石	sì shí liú shí	6
 四十原石	sì shí yuán shí	32
+四水硼矿	sì shuǐ péng kuàng	8
 丝竹金石	sī zhú jīn shí	32
 松果体石	sōng guǒ tǐ shí	10
 松化为石	sōng huà wéi shí	1
+松藻煤矿	sōng zǎo méi kuàng	17
+苏联矿工	sū lián kuàng gōng	5
 塑性岩石	sù xìng yán shí	7
 肃之嘉石	sù zhī jiā shí	6
 酸性矿石	suān xìng kuàng shí	5
+酸性矿水	suān xìng kuàng shuǐ	6
+碎矿车间	suì kuàng chē jiān	10
+碎矿设备	suì kuàng shè bèi	3
 碎屑沉积	suì xiè chén jī	20
 碎屑废石	suì xiè fèi shí	9
 碎屑结构	suì xiè jié gòu	8
@@ -2926,35 +5004,77 @@ sort: by_weight
 碎屑岩脉	suì xiè yán mài	11
 碎屑岩墙	suì xiè yán qiáng	8
 岁月磐石	suì yuè pán shí	6
+梭式矿车	suō shì kuàng chē	9
 踏山裂石	tà shān liè shí	12
+他生矿物	tā shēng kuàng wù	6
 塔斯钻石	tǎ sī zuàn shí	13
+钛赤铁矿	tài chì tiě kuàng	9
+钛磁铁矿	tài cí tiě kuàng	18
 钛橄榄石	tài gǎn lǎn shí	9
+钛锆钍矿	tài gào tǔ kuàng	9
+钛铬铁矿	tài gè tiě kuàng	8
 泰国化石	tài guó huà shí	5
 钛角闪石	tài jiǎo shǎn shí	5
 太空岩石	tài kōng yán shí	24
+钛镁铁矿	tài měi tiě kuàng	8
+钛铌钽矿	tài ní tǎn kuàng	5
 泰山刻石	tài shān kè shí	27
 泰山磐石	tài shān pán shí	5
+钛铈钙矿	tài shì gài kuàng	10
 钛铁晶石	tài tiě jīng shí	1
 钛铁矿石	tài tiě kuàng shí	5
+钛铁矿族	tài tiě kuàng zú	5
+钛型矿化	tài xíng kuàng huà	7
+钛钇针矿	tài yǐ zhēn kuàng	10
 太阴魂石	tài yīn hún shí	10
+泰宇矿产	tài yǔ kuàng chǎn	5
 碳大理石	tàn dà lǐ shí	7
+钽锆钇矿	tǎn gào yǐ kuàng	8
 碳硅钙石	tàn guī gài shí	1
 钽金红石	tǎn jīn hóng shí	6
+坛金矿业	tán jīn kuàng yè	12
+探矿工程	tàn kuàng gōng chéng	22
+探矿技术	tàn kuàng jì shù	7
+炭矿梅萨	tàn kuàng méi sà	7
+探矿权人	tàn kuàng quán rén	48
+探矿系数	tàn kuàng xì shù	6
 碳磷灰石	tàn lín huī shí	1
+碳铝铅矿	tàn lǚ qiān kuàng	10
+碳镁铁矿	tàn měi tiě kuàng	10
+碳酸钡矿	tàn suān bèi kuàng	7
+碳酸锶矿	tàn suān sī kuàng	1
+钽稀金矿	tǎn xī jīn kuàng	10
 弹性岩石	tán xìng yán shí	6
+钽钇铌矿	tǎn yǐ ní kuàng	9
+碳铀钍矿	tàn yóu tǔ kuàng	8
+炭质页岩	tàn zhì yè yán	28
+碳质页岩	tàn zhì yè yán	14
+唐口煤矿	táng kǒu méi kuàng	7
 棠垭笔石	táng yā bǐ shí	8
 洮河绿石	táo hé lǜ shí	3
+桃矿街道	táo kuàng jiē dào	14
+腾冲铀矿	téng chōng yóu kuàng	8
+锑蒂铋矿	tī dì bì kuàng	7
+锑方铅矿	tī fāng qiān kuàng	8
 梯级角石	tī jí jiǎo shí	14
+锑硫镍矿	tī liú niè kuàng	10
 锑钠铝石	tī nà lǚ shí	6
+锑铅银矿	tī qiān yín kuàng	9
+锑砷铋矿	tī shēn bì kuàng	9
 锑砷锰矿	tī shēn měng kuàng	8
+锑铁钛矿	tī tiě tài kuàng	1
 体外碎石	tǐ wài suì shí	34
+梯状矿脉	tī zhuàng kuàng mài	7
 天机魂石	tiān jī hún shí	18
 天机巨石	tiān jī jù shí	5
 天机神石	tiān jī shén shí	25
 田间三石	tián jiān sān shí	7
 天降陨石	tiān jiàng yǔn shí	20
+天津矿业	tiān jīn kuàng yè	7
 天青金石	tiān qīng jīn shí	6
+天然磁矿	tiān rán cí kuàng	8
 天然磁石	tiān rán cí shí	22
+天然矿泉	tiān rán kuàng quán	31
 天然卵石	tiān rán luǎn shí	11
 天然砂石	tiān rán shā shí	15
 天然硝石	tiān rán xiāo shí	10
@@ -2971,41 +5091,70 @@ sort: by_weight
 天元锰业	tiān yuán měng yè	5
 条纹长石	tiáo wén cháng shí	16
 铁白云石	tiě bái yún shí	10
+铁板钛矿	tiě bǎn tài kuàng	1
 铁电气石	tiě diàn qì shí	6
 铁方解石	tiě fāng jiě shí	9
 铁橄榄石	tiě gǎn lǎn shí	25
 铁高岭石	tiě gāo lǐng shí	6
+铁辉钴矿	tiě huī gǔ kuàng	6
 铁尖晶石	tiě jiān jīng shí	16
 铁角闪石	tiě jiǎo shǎn shí	1
 铁结砾岩	tiě jié lì yán	1
 铁金红石	tiě jīn hóng shí	10
 铁堇青石	tiě jǐn qīng shí	1
+铁坑铁矿	tiě kēng tiě kuàng	9
+铁矿村乡	tiě kuàng cūn xiāng	6
 铁矿矿床	tiě kuàng kuàng chuáng	9
+铁矿矿床	tiě kuàng kuàng chuáng	9
+铁矿医院	tiě kuàng yī yuàn	1
 铁矿原石	tiě kuàng yuán shí	1
 铁磷钙石	tiě lín gài shí	10
 铁磷灰石	tiě lín huī shí	1
+铁菱镁矿	tiě líng měi kuàng	1
+铁菱锌矿	tiě líng xīn kuàng	6
 铁铝榴石	tiě lǚ liú shí	27
 铁绿泥石	tiě lǜ ní shí	1
 铁氯铅矿	tiě lǜ qiān kuàng	9
 铁铝氧石	tiě lǚ yǎng shí	5
+铁镁矿物	tiě měi kuàng wù	9
 铁锰合金	tiě měng hé jīn	2
 铁锰辉石	tiě měng huī shí	6
 铁锰结核	tiě měng jié hé	3
 铁锰铜金	tiě měng tóng jīn	1
+铁闪锌矿	tiě shǎn xīn kuàng	5
 铁蛇纹石	tiě shé wén shí	1
 铁石陨石	tiě shí yǔn shí	1
+铁钛铀矿	tiě tài yóu kuàng	9
 铁锑钙石	tiě tī gài shí	6
 铁纤硼石	tiě xiān péng shí	9
 铁锌晶石	tiě xīn jīng shí	7
+铁型矿化	tiě xíng kuàng huà	10
 铁铀钍石	tiě yóu tǔ shí	9
 铁柘榴石	tiě zhè liú shí	1
+铁质页岩	tiě zhì yè yán	5
+铜白钨矿	tóng bái wū kuàng	7
+铜碘银矿	tóng diǎn yín kuàng	10
 铜钴锰土	tóng gǔ měng tǔ	9
+铜辉铋矿	tóng huī bì kuàng	8
+同家梁矿	tóng jiā liáng kuàng	14
+铜矿产量	tóng kuàng chǎn liàng	28
+铜矿开采	tóng kuàng kāi cǎi	27
+铜矿项目	tóng kuàng xiàng mù	31
+铜矿遗址	tóng kuàng yí zhǐ	5
+铜矿资源	tóng kuàng zī yuán	29
+铜菱镁矿	tóng líng měi kuàng	9
+铜菱锌矿	tóng líng xīn kuàng	1
+铜硫铅矿	tóng liú qiān kuàng	10
+铜绿山矿	tóng lǜ shān kuàng	23
 铜锰合金	tóng měng hé jīn	5
 铜蒙脱石	tóng méng tuō shí	8
 铜铅霰石	tóng qiān xiàn shí	6
 同生矿床	tóng shēng kuàng chuáng	9
+同生矿床	tóng shēng kuàng chuáng	9
 同生砾岩	tóng shēng lì yán	10
 同纹长石	tóng wén cháng shí	8
+铜硒铁矿	tóng xī tiě kuàng	7
+铜锌精矿	tóng xīn jīng kuàng	1
 同源岩石	tóng yuán yán shí	7
 头带角石	tóu dài jiǎo shí	7
 头骨化石	tóu gǔ huà shí	38
@@ -3018,9 +5167,30 @@ sort: by_weight
 透蛇纹石	tòu shé wén shí	7
 透斜长石	tòu xié cháng shí	10
 投掷岩石	tóu zhì yán shí	5
+土硅铜矿	tǔ guī tóng kuàng	6
+土黑铜矿	tǔ hēi tóng kuàng	7
+土磷铁矿	tǔ lín tiě kuàng	5
+土硫铀矿	tǔ liú yóu kuàng	9
+土壤矿物	tǔ rǎng kuàng wù	5
+钍钛铀矿	tǔ tài yóu kuàng	8
 土状萤石	tǔ zhuàng yíng shí	10
+脱矿质水	tuō kuàng zhì shuǐ	1
+挖多少矿	wā duō shǎo kuàng	32
+挖矿小李	wā kuàng xiǎo lǐ	7
+瓦斯爆炸	wǎ sī bào zhà	59
+瓦斯超限	wǎ sī chāo xiàn	16
+瓦斯抽放	wǎ sī chōu fàng	24
+瓦斯叮当	wǎ sī dīng dāng	9
+瓦斯含量	wǎ sī hán liàng	7
+瓦斯聚集	wǎ sī jù jí	10
+瓦斯开采	wǎ sī kāi cǎi	39
+瓦斯煤层	wǎ sī méi céng	7
+瓦斯煤矿	wǎ sī méi kuàng	7
+瓦斯外泄	wǎ sī wài xiè	7
+瓦斯涌出	wǎ sī yǒng chū	3
 瓦兹利石	wǎ zī lì shí	18
 外模化石	wài mó huà shí	10
+外生矿床	wài shēng kuàng chuáng	12
 外生矿床	wài shēng kuàng chuáng	12
 外星岩石	wài xīng yán shí	5
 万古磐石	wàn gǔ pán shí	6
@@ -3028,15 +5198,23 @@ sort: by_weight
 网格笔石	wǎng gé bǐ shí	8
 网金红石	wǎng jīn hóng shí	8
 网络化石	wǎng luò huà shí	7
+王台铺矿	wáng tái pù kuàng	7
 王谢安石	wáng xiè ān shí	7
+王庄煤矿	wáng zhuāng méi kuàng	11
 微玻陨石	wēi bō yǔn shí	9
 伪顶岩石	wěi dǐng yán shí	8
+韦岗铁矿	wéi gǎng tiě kuàng	13
 伟晶蜡石	wěi jīng là shí	9
 伟晶腊石	wěi jīng là shí	7
 维克托石	wéi kè tuō shí	5
+尾矿产量	wěi kuàng chǎn liàng	9
+尾矿干排	wěi kuàng gàn pái	8
+尾矿品位	wěi kuàng pǐn wèi	5
+尾矿再选	wěi kuàng zài xuǎn	7
 微体化石	wēi tǐ huà shí	27
 微纹长石	wēi wén cháng shí	5
 微斜长石	wēi xié cháng shí	29
+稳定矿物	wěn dìng kuàng wù	7
 稳固岩石	wěn gù yán shí	10
 纹绿泥石	wén lǜ ní shí	7
 稳如磐石	wěn rú pán shí	35
@@ -3046,57 +5224,108 @@ sort: by_weight
 我心匪石	wǒ xīn fěi shí	26
 我在黄石	wǒ zài huáng shí	1
 五彩神石	wǔ cǎi shén shí	7
+五峰页岩	wǔ fēng yè yán	6
+乌格页岩	wū gé yè yán	7
 武汉岩溶	wǔ hàn yán róng	6
+无机矿物	wú jī kuàng wù	27
+五金矿产	wǔ jīn kuàng chǎn	55
 乌金矿石	wū jīn kuàng shí	9
+五矿发展	wǔ kuàng fā zhǎn	42
+五矿集团	wǔ kuàng jí tuán	7
+无矿物油	wú kuàng wù yóu	31
+五矿学校	wǔ kuàng xué xiào	6
+五矿证券	wǔ kuàng zhèng quàn	44
+物理选矿	wù lǐ xuǎn kuàng	9
 钨锰铁矿	wū měng tiě kuàng	17
 无名燧石	wú míng suì shí	7
+钨钼铅矿	wū mù qiān kuàng	8
 五泉砾岩	wǔ quán lì yán	5
 五日一石	wǔ rì yì shí	3
 五色晶石	wǔ sè jīng shí	24
 无色榴石	wú sè liú shí	7
 五色神石	wǔ sè shén shí	1
+武山铜矿	wǔ shān tóng kuàng	3
 无水矾石	wú shuǐ fán shí	10
 钨酸钙矿	wū suān gài kuàng	6
+无瓦斯矿	wú wǎ sī kuàng	7
 无限原石	wú xiàn yuán shí	20
 无限钻石	wú xiàn zuàn shí	12
 五行晶石	wǔ xíng jīng shí	3
 五行神石	wǔ xíng shén shí	17
+无烟煤矿	wú yān méi kuàng	22
+五阳煤矿	wǔ yáng méi kuàng	7
 钨硬锰矿	wū yìng měng kuàng	9
 无羽笔石	wú yǔ bǐ shí	6
+西北矿冶	xī běi kuàng yě	5
 希波箭石	xī bō jiàn shí	24
+西部矿业	xī bù kuàng yè	77
+锡成矿业	xī chéng kuàng yè	10
+硒碲铋矿	xī dì bì kuàng	8
 矽钒钙石	xī fán gài shí	1
 细梗络石	xì gěng luò shí	12
 西湖村石	xī hú cūn shí	1
 细角砾岩	xì jiǎo lì yán	10
+硒金银矿	xī jīn yín kuàng	8
 细菌化石	xì jūn huà shí	8
+西矿环保	xī kuàng huán bǎo	5
+西矿集团	xī kuàng jí tuán	12
+锡矿山阶	xī kuàng shān jiē	10
+锡矿山期	xī kuàng shān qī	8
+锡矿山组	xī kuàng shān zǔ	8
+洗矿摇床	xǐ kuàng yáo chuáng	6
+细粒精矿	xì lì jīng kuàng	6
 硒磷灰石	xī lín huī shí	8
+西露天矿	xī lù tiān kuàng	22
 锡铁山石	xī tiě shān shí	7
+硒铜镍矿	xī tóng niè kuàng	7
+硒铜铅矿	xī tóng qiān kuàng	8
+硒铜银矿	xī tóng yín kuàng	8
 稀土锆石	xī tǔ gào shí	8
+稀土精矿	xī tǔ jīng kuàng	25
+稀土矿场	xī tǔ kuàng chǎng	7
 细网笔石	xì wǎng bǐ shí	15
 烯酰锰锌	xī xiān měng xīn	5
 稀有矿石	xī yǒu kuàng shí	12
+锡黝铜矿	xī yǒu tóng kuàng	8
+西峪煤矿	xī yù méi kuàng	10
 席状矿床	xí zhuàng kuàng chuáng	5
+席状矿床	xí zhuàng kuàng chuáng	5
+席状矿体	xí zhuàng kuàng tǐ	6
 夏不睡石	xià bú shuì shí	25
 下井投石	xià jǐng tóu shí	12
 夏目漱石	xià mù shù shí	53
 下铺白石	xià pù bái shí	1
 夏日漱石	xià rì shù shí	16
 纤钡锂石	xiān bèi lǐ shí	9
+贤成矿业	xián chéng kuàng yè	31
 纤钒钙石	xiān fán gài shí	1
 纤方解石	xiān fāng jiě shí	7
+纤硅铜矿	xiān guī tóng kuàng	7
 纤磷铝石	xiān lín lǚ shí	7
+纤磷铁矿	xiān lín tiě kuàng	6
+纤鳞铜矿	xiān lín tóng kuàng	7
+纤磷铜矿	xiān lín tóng kuàng	6
 纤绿闪石	xiān lǜ shǎn shí	6
 纤锰柱石	xiān měng zhù shí	10
 纤硼钙石	xiān péng gài shí	1
 先期砾石	xiān qī lì shí	21
+县铅锌矿	xiàn qiān xīn kuàng	1
 纤闪石化	xiān shǎn shí huà	1
 纤蛇纹石	xiān shé wén shí	12
 县水文站	xiàn shuǐ wén zhàn	9
+纤碳铀矿	xiān tàn yóu kuàng	9
+纤维锌矿	xiān wéi xīn kuàng	7
+纤铀铋矿	xiān yóu bì kuàng	5
+湘东铁矿	xiāng dōng tiě kuàng	1
 香港菊石	xiāng gǎng jú shí	9
+香港矿场	xiāng gǎng kuàng chǎng	6
+湘江铀矿	xiāng jiāng yóu kuàng	6
 巷九曜石	xiàng jiǔ yào shí	1
+相邻矿体	xiāng lín kuàng tǐ	21
 相心雨石	xiāng xīn yǔ shí	8
 小壳化石	xiǎo ké huà shí	3
 小溪顽石	xiǎo xī wán shí	6
+小型矿车	xiǎo xíng kuàng chē	10
 小雨花石	xiǎo yǔ huā shí	7
 斜板晶石	xié bǎn jīng shí	7
 斜发沸石	xié fā fèi shí	7
@@ -3108,50 +5337,96 @@ sort: by_weight
 斜钙榴石	xié gài liú shí	9
 斜硅钙石	xié guī gài shí	3
 斜硅镁石	xié guī měi shí	19
+斜交矿脉	xié jiāo kuàng mài	10
+斜矿硐室	xié kuàng dòng shì	7
 斜磷锰矿	xié lín měng kuàng	6
 斜绿泥石	xié lǜ ní shí	16
 斜钠钙石	xié nà gài shí	10
 斜钠锆石	xié nà gào shí	7
 斜铁辉石	xié tiě huī shí	5
 斜顽辉石	xié wán huī shí	3
+斜钨铅矿	xié wū qiān kuàng	8
 斜黝帘石	xié yǒu lián shí	14
+锌白铅矿	xīn bái qiān kuàng	6
+新城金矿	xīn chéng jīn kuàng	21
 新单笔石	xīn dān bǐ shí	6
 锌方解石	xīn fāng jiě shí	9
 心非木石	xīn fēi mù shí	16
+鑫海矿装	xīn hǎi kuàng zhuāng	7
 锌黑锰矿	xīn hēi měng kuàng	10
+新华四矿	xīn huá sì kuàng	1
 锌黄长石	xīn huáng cháng shí	1
+锌黄锡矿	xīn huáng xī kuàng	1
 锌尖晶石	xīn jiān jīng shí	9
+新疆矿业	xīn jiāng kuàng yè	6
+新疆煤矿	xīn jiāng méi kuàng	7
 新井白石	xīn jǐng bái shí	17
+新矿集团	xīn kuàng jí tuán	22
+新矿院路	xīn kuàng yuàn lù	7
+新矿资源	xīn kuàng zī yuán	17
 锌菱锰矿	xīn líng měng kuàng	7
 锌锰电池	xīn měng diàn chí	27
 锌锰辉石	xīn měng huī shí	10
 锌蒙脱石	xīn méng tuō shí	9
+新浦磷矿	xīn pǔ lín kuàng	1
 新生矿床	xīn shēng kuàng chuáng	5
+新生矿床	xīn shēng kuàng chuáng	5
+新汶矿业	xīn wèn kuàng yè	17
+新兴矿业	xīn xīng kuàng yè	16
+新兴煤矿	xīn xīng méi kuàng	24
+锌黝铜矿	xīn yǒu tóng kuàng	9
+鑫源矿业	xīn yuán kuàng yè	19
 信运汉石	xìn yùn hàn shí	27
 新振锰业	xīn zhèn měng yè	9
 心中大石	xīn zhōng dà shí	16
+荥矿机器	xíng kuàng jī qì	5
+邢台矿业	xíng tái kuàng yè	3
+兴业矿业	xīng yè kuàng yè	37
 星状耳石	xīng zhuàng ěr shí	10
 锈毛络石	xiù máo luò shí	10
 修整钻石	xiū zhěng zuàn shí	5
+许厂煤矿	xǔ chǎng méi kuàng	9
+虚构矿工	xū gòu kuàng gōng	5
+徐矿集团	xú kuàng jí tuán	26
 需选矿石	xū xuǎn kuàng shí	6
+选矿技术	xuǎn kuàng jì shù	6
+选矿撂图	xuǎn kuàng liào tú	7
+选矿流程	xuǎn kuàng liú chéng	7
+选矿磨碎	xuǎn kuàng mó suì	7
+选矿设备	xuǎn kuàng shè bèi	6
+选矿试验	xuǎn kuàng shì yàn	14
+选矿尾矿	xuǎn kuàng wěi kuàng	5
+选矿摇床	xuǎn kuàng yáo chuáng	7
+选矿指标	xuǎn kuàng zhǐ biāo	9
 玄女血石	xuán nǚ xuè shí	30
 玄武辉石	xuán wǔ huī shí	6
 玄武魂石	xuán wǔ hún shí	5
 玄武闪石	xuán wǔ shǎn shí	10
 玄武岩石	xuán wǔ yán shí	18
 炫玉贾石	xuàn yù gǔ shí	32
+选择磨矿	xuǎn zé mó kuàng	7
 旋转磨石	xuán zhuǎn mó shí	3
 雪白云石	xuě bái yún shí	9
 雪硅钙石	xuě guī gài shí	10
 血红石蒜	xuè hóng shí suàn	4
 寻获陨石	xún huò yǔn shí	9
+压覆矿产	yā fù kuàng chǎn	26
 压碎砾石	yā suì lì shí	7
 牙形化石	yá xíng huà shí	3
+延长油矿	yán cháng yóu kuàng	19
+雁行矿脉	yàn háng kuàng mài	6
+盐湖矿床	yán hú kuàng chuáng	5
 盐湖矿床	yán hú kuàng chuáng	5
 盐湖岩溶	yán hú yán róng	9
 岩浆矿床	yán jiāng kuàng chuáng	5
+岩浆矿床	yán jiāng kuàng chuáng	5
 岩浆矿石	yán jiāng kuàng shí	10
+岩矿测试	yán kuàng cè shì	12
+兖矿集团	yǎn kuàng jí tuán	37
 盐类矿床	yán lèi kuàng chuáng	16
+盐类矿床	yán lèi kuàng chuáng	16
+淹没的矿	yān mò de kuàng	5
+淹没矿井	yān mò kuàng jǐng	7
 岩溶槽谷	yán róng cáo gǔ	5
 岩溶地层	yán róng dì céng	8
 岩溶地貌	yán róng dì mào	7
@@ -3262,60 +5537,114 @@ sort: by_weight
 岩石之间	yán shí zhī jiān	22
 岩石植物	yán shí zhí wù	18
 岩石组构	yán shí zǔ gòu	9
+氧磁铁矿	yǎng cí tiě kuàng	10
+杨村煤矿	yáng cūn méi kuàng	3
 洋底岩石	yáng dǐ yán shí	5
 氧化矿石	yǎng huà kuàng shí	5
 氧角闪石	yǎng jiǎo shǎn shí	7
 氧磷灰石	yǎng lín huī shí	9
+摇床精矿	yáo chuáng jīng kuàng	7
+瑶岭矿业	yáo lǐng kuàng yè	7
 腰弩八石	yāo nǔ bā shí	6
 乐水文化	yào shuǐ wén huà	8
+叶碲铋矿	yè dì bì kuàng	5
+叶碲金矿	yè dì jīn kuàng	9
 野复理石	yě fù lǐ shí	7
+叶腊石矿	yè là shí kuàng	12
 耶律大石	yē lǜ dà shí	32
 叶绿泥石	yè lǜ ní shí	8
 叶钠长石	yè nà cháng shí	9
 叶蛇纹石	yè shé wén shí	17
 叶双晶石	yè shuāng jīng shí	10
+液体矿脂	yè tǐ kuàng zhī	10
+页岩裂缝	yè yán liè fèng	8
+页岩密度	yè yán mì dù	6
+页岩气田	yè yán qì tián	29
+页岩陶粒	yè yán táo lì	25
+页岩油气	yè yán yóu qì	46
+页岩砖厂	yè yán zhuān chǎng	21
+页岩状的	yè yán zhuàng de	8
+页岩状煤	yè yán zhuàng méi	7
+页岩状沙	yè yán zhuàng shā	8
+一般富矿	yì bān fù kuàng	8
 易变辉石	yì biàn huī shí	23
 异剥辉石	yì bō huī shí	7
 钇方解石	yǐ fāng jiě shí	5
 钇褐帘石	yǐ hè lián shí	9
 钇褐榴石	yǐ hè liú shí	9
 遗迹化石	yí jì huà shí	34
+益矿钻采	yì kuàng zuān cǎi	5
 钇磷灰石	yǐ lín huī shí	9
 钇铝榴石	yǐ lǚ liú shí	15
 乙铝锰锌	yǐ lǚ měng xīn	1
+钇铌铁矿	yǐ ní tiě kuàng	1
 以七耀石	yǐ qī yào shí	6
+钇铅铀矿	yǐ qiān yóu kuàng	7
 以升量石	yǐ shēng liáng dàn	32
 钇铈锆石	yǐ shì gào shí	8
 易碎岩石	yì suì yán shí	7
+钇钽铁矿	yǐ tǎn tiě kuàng	7
 一土山石	yī tǔ shān shí	7
 一氧化锰	yī yǎng huà měng	3
 钇易解石	yǐ yì jiě shí	12
+钇杂铌矿	yǐ zá ní kuàng	9
 一锗化锰	yī zhě huà měng	7
+一种矿物	yì zhǒng kuàng wù	7
+一座金矿	yí zuò jīn kuàng	32
 隐藏岩石	yǐn cáng yán shí	5
+印度矿业	yìn dù kuàng yè	7
+印度煤矿	yìn dù méi kuàng	5
 隐伏矿床	yǐn fú kuàng chuáng	1
+隐伏矿床	yǐn fú kuàng chuáng	1
+隐伏矿体	yǐn fú kuàng tǐ	9
 隐伏岩溶	yǐn fú yán róng	10
+银矿遗址	yín kuàng yí zhǐ	6
+银漫矿业	yín màn kuàng yè	19
+银泉矿洞	yín quán kuàng dòng	5
 银色钻石	yín sè zuàn shí	23
 隐纹长石	yǐn wén cháng shí	8
 印象化石	yìn xiàng huà shí	8
+银黝铜矿	yín yǒu tóng kuàng	3
 硬硅钙石	yìng guī gài shí	1
 英国化石	yīng guó huà shí	5
+英国矿工	yīng guó kuàng gōng	8
+英国矿业	yīng guó kuàng yè	7
+应力矿物	yīng lì kuàng wù	5
 硬绿泥石	yìng lǜ ní shí	9
 硬锰矿族	yìng měng kuàng zú	6
 硬硼钙石	yìng péng gài shí	11
 硬蛇纹石	yìng shé wén shí	6
 萤石矿床	yíng shí kuàng chuáng	9
+萤石矿床	yíng shí kuàng chuáng	9
 硬铈钍石	yìng shì tǔ shí	10
+硬水铝矿	yìng shuǐ lǚ kuàng	9
 硬水铝石	yìng shuǐ lǚ shí	20
 硬质岩石	yìng zhì yán shí	10
 永久冰石	yǒng jiǔ bīng shí	7
 永久磁石	yǒng jiǔ cí shí	6
+永平铜矿	yǒng píng tóng kuàng	13
 铀铵磷石	yóu ǎn lín shí	7
 右岸玉石	yòu àn yù shí	6
+铀方钍矿	yóu fāng tǔ kuàng	8
+铀钙铜矿	yóu gài tóng kuàng	9
+有机矿物	yǒu jī kuàng wù	7
+有价矿物	yǒu jià kuàng wù	1
+油矿地质	yóu kuàng dì zhì	8
+铀矿浸出	yóu kuàng jìn chū	7
 尤莱辉石	yóu lái huī shí	7
 柚木沙石	yóu mù shā shí	7
+油母页岩	yóu mǔ yè yán	22
 悠然磐石	yōu rán pán shí	6
+有色矿业	yǒu sè kuàng yè	6
 铀烧绿石	yóu shāo lǜ shí	8
+铀钛铁矿	yóu tài tiě kuàng	9
+铀钽铌矿	yóu tǎn ní kuàng	8
+黝锑银矿	yǒu tī yín kuàng	8
 铀细晶石	yóu xì jīng shí	10
+油页岩矿	yóu yè yán kuàng	19
+铀钇钽矿	yóu yǐ tǎn kuàng	7
+有用矿物	yǒu yòng kuàng wù	21
+油脂选矿	yóu zhī xuǎn kuàng	10
 鱼火日石	yú huǒ rì shí	5
 瑜伽小石	yú jiā xiǎo shí	4
 豫金刚石	yù jīn gāng shí	32
@@ -3326,6 +5655,8 @@ sort: by_weight
 鱼鳍化石	yú qí huà shí	10
 于是怀石	yú shì huái shí	9
 玉石矿床	yù shí kuàng chuáng	10
+玉石矿床	yù shí kuàng chuáng	10
+玉石矿洞	yù shí kuàng dòng	3
 玉石原石	yù shí yuán shí	25
 玉髓燧石	yù suǐ suì shí	12
 鱼牙化石	yú yá huà shí	10
@@ -3335,17 +5666,27 @@ sort: by_weight
 原地岩石	yuán dì yán shí	5
 原方解石	yuán fāng jiě shí	8
 原钾霞石	yuán jiǎ xiá shí	5
+原矿给料	yuán kuàng gěi liào	7
+原矿品位	yuán kuàng pǐn wèi	13
+原矿重量	yuán kuàng zhòng liàng	9
+原矿紫泥	yuán kuàng zǐ ní	16
+原矿紫砂	yuán kuàng zǐ shā	27
 元灵晶石	yuán líng jīng shí	3
+原铝土矿	yuán lǚ tǔ kuàng	1
 原生化石	yuán shēng huà shí	6
+原生矿床	yuán shēng kuàng chuáng	7
 原生矿床	yuán shēng kuàng chuáng	7
 原生矿石	yuán shēng kuàng shí	16
 远生矿石	yuǎn shēng kuàng shí	8
+原生矿物	yuán shēng kuàng wù	6
 原生岩石	yuán shēng yán shí	7
 圆树脂石	yuán shù zhī shí	8
 原水磨石	yuán shuǐ mó shí	1
 圆形钻石	yuán xíng zuàn shí	24
 源之洪石	yuán zhī hóng shí	6
 源质矿石	yuán zhì kuàng shí	5
+圆柱锡矿	yuán zhù xī kuàng	3
+悦达矿业	yuè dá kuàng yè	12
 越南化石	yuè nán huà shí	7
 月球岩石	yuè qiú yán shí	35
 月球陨石	yuè qiú yǔn shí	37
@@ -3357,50 +5698,123 @@ sort: by_weight
 云母长石	yún mǔ cháng shí	16
 云母滑石	yún mǔ huá shí	10
 云母矿床	yún mǔ kuàng chuáng	1
+云母矿床	yún mǔ kuàng chuáng	1
+云母铁矿	yún mǔ tiě kuàng	1
+云母铜矿	yún mǔ tóng kuàng	5
+云母铀矿	yún mǔ yóu kuàng	8
+云母原矿	yún mǔ yuán kuàng	7
+云南矿难	yún nán kuàng nàn	6
+云南矿业	yún nán kuàng yè	4
 云南络石	yún nán luò shí	5
+陨石矿物	yǔn shí kuàng wù	20
+云锡矿业	yún xī kuàng yè	8
 杂臭葱石	zá chòu cōng shí	9
+杂碲铅矿	zá dì qiān kuàng	8
+杂硅锌矿	zá guī xīn kuàng	1
 杂褐锰矿	zá hè měng kuàng	9
+杂磷锌矿	zá lín xīn kuàng	6
 杂菱锰矿	zá líng měng kuàng	9
+杂砷银矿	zá shēn yín kuàng	9
 杂云英石	zá yún yīng shí	6
 再沉化石	zài chén huà shí	10
+在金矿上	zài jīn kuàng shàng	18
+再矿化法	zài kuàng huà fǎ	3
+在矿务局	zài kuàng wù jú	9
+再生矿床	zài shēng kuàng chuáng	7
 再生矿床	zài shēng kuàng chuáng	7
 在五块石	zài wǔ kuài shí	13
 在牙克石	zài yá kè shí	17
+枣矿集团	zǎo kuàng jí tuán	17
+造岩矿物	zào yán kuàng wù	26
+增生矿脉	zēng shēng kuàng mài	7
+窄轨矿车	zhǎi guǐ kuàng chē	10
+赵各庄矿	zhào gè zhuāng kuàng	5
+招金矿业	zhāo jīn kuàng yè	33
+找矿标志	zhǎo kuàng biāo zhì	6
+找矿方法	zhǎo kuàng fāng fǎ	8
+浙江矿业	zhè jiāng kuàng yè	4
+针磅全矿	zhēn bàng quán kuàng	6
+镇城底矿	zhèn chéng dǐ kuàng	13
 震旦角石	zhèn dàn jué shí	14
 针电气石	zhēn diàn qì shí	9
+振动磨矿	zhèn dòng mó kuàng	8
 针钒钙石	zhēn fán gài shí	1
 针碱钙石	zhēn jiǎn gài shí	5
 针碱铌石	zhēn jiǎn ní shí	9
+针磷铒矿	zhēn lín ěr kuàng	5
+针磷铁矿	zhēn lín tiě kuàng	8
 针六方石	zhēn liù fāng shí	7
+针硫镍矿	zhēn liú niè kuàng	8
 枕流漱石	zhěn liú shù shí	18
 针钠钙石	zhēn nà gài shí	17
 真蹄菊石	zhēn tí jú shí	3
+针铁矿法	zhēn tiě kuàng fǎ	1
 真银矿石	zhēn yín kuàng shí	3
+珍珠岩矿	zhēn zhū yán kuàng	11
 针状矿石	zhēn zhuàng kuàng shí	8
 正白云石	zhèng bái yún shí	6
 正钾长石	zhèng jiǎ cháng shí	10
 正石灰石	zhèng shí huī shí	8
+整体精矿	zhěng tǐ jīng kuàng	5
 政治基石	zhèng zhì jī shí	18
 支承垫石	zhī chéng diàn shí	18
+支承矿柱	zhī chéng kuàng zhù	9
 芝罘刻石	zhī fú kè shí	5
+智慧矿山	zhì huì kuàng shān	14
 智利化石	zhì lì huà shí	8
+智利矿场	zhì lì kuàng chǎng	5
+智利矿难	zhì lì kuàng nàn	7
 智利硝石	zhì lì xiāo shí	22
 脂磷钙石	zhī lín gài shí	10
 致密矿石	zhì mì kuàng shí	8
+智能矿山	zhì néng kuàng shān	16
+脂铅铀矿	zhī qiān yóu kuàng	6
 指示化石	zhǐ shì huà shí	9
 蛭石矿床	zhì shí kuàng chuáng	8
+蛭石矿床	zhì shí kuàng chuáng	8
+指示矿物	zhǐ shì kuàng wù	9
 植物化石	zhí wù huà shí	10
 指相化石	zhǐ xiāng huà shí	12
 之柘榴石	zhī zhè liú shí	6
 支座垫石	zhī zuò diàn shí	32
 忠贯金石	zhōng guàn jīn shí	32
 重硅线石	zhòng guī xiàn shí	7
+中国金矿	zhōng guó jīn kuàng	5
+中国矿场	zhōng guó kuàng chǎng	7
+中国矿难	zhōng guó kuàng nàn	4
+中国矿业	zhōng guó kuàng yè	92
+中国银矿	zhōng guó yín kuàng	7
+中和矿路	zhōng hé kuàng lù	5
+中厚矿层	zhōng hòu kuàng céng	7
+中厚煤层	zhōng hòu méi céng	6
 中华角石	zhōng huá jiǎo shí	8
+中级采矿	zhōng jí cǎi kuàng	3
+重介选矿	zhòng jiè xuǎn kuàng	7
+重晶石矿	zhòng jīng shí kuàng	16
+中矿宾馆	zhōng kuàng bīn guǎn	6
+中矿集团	zhōng kuàng jí tuán	14
+中矿微星	zhōng kuàng wēi xīng	24
+中矿再磨	zhōng kuàng zài mó	8
+中矿资源	zhōng kuàng zī yuán	31
+重力选矿	zhòng lì xuǎn kuàng	13
+中煤矿山	zhōng méi kuàng shān	7
+重膜矿带	zhòng mó kuàng dài	7
+重膜矿脉	zhòng mó kuàng mài	7
+重铌铁矿	zhòng ní tiě kuàng	1
 重砂矿床	zhòng shā kuàng chuáng	1
+重砂矿床	zhòng shā kuàng chuáng	1
+重砂矿物	zhòng shā kuàng wù	8
 重烧绿石	zhòng shāo lǜ shí	10
+重钽铁矿	zhòng tǎn tiě kuàng	7
 中铁陨石	zhōng tiě yǔn shí	21
 中信大锰	zhōng xìn dà měng	14
+中兖矿业	zhōng yǎn kuàng yè	7
+中央矿层	zhōng yāng kuàng céng	5
+重液选矿	zhòng yè xuǎn kuàng	7
 中雨花石	zhōng yǔ huā shí	6
+帚状矿脉	zhǒu zhuàng kuàng mài	5
+珠海矿场	zhū hǎi kuàng chǎng	4
+柱晶磷矿	zhù jīng lín kuàng	10
 柱磷铝石	zhù lín lǚ shí	7
 柱绿泥石	zhù lǜ ní shí	8
 柱硼镁石	zhù péng měi shí	1
@@ -3408,63 +5822,121 @@ sort: by_weight
 朱砂矿石	zhū shā kuàng shí	10
 铸型结石	zhù xíng jié shí	12
 柱星叶石	zhù xīng yè shí	19
+主要矿物	zhǔ yào kuàng wù	7
 株洲钻石	zhū zhōu zuàn shí	7
 转沈宏石	zhuǎn shěn hóng shí	4
+装矿硐室	zhuāng kuàng dòng shì	9
 装运废石	zhuāng yùn fèi shí	8
 锥叠层石	zhuī dié céng shí	10
 锥迭层石	zhuī dié céng shí	9
+锥稀土矿	zhuī xī tǔ kuàng	9
 锥形块石	zhuī xíng kuài shí	9
 准埃洛石	zhǔn āi luò shí	5
+准油矿物	zhǔn yóu kuàng wù	6
 紫瓣石斛	zǐ bàn shí hú	10
 紫苞石柑	zǐ bāo shí gān	9
 紫电气石	zǐ diàn qì shí	7
 紫方钠石	zǐ fāng nà shí	5
 紫花络石	zǐ huā luò shí	10
+紫金矿业	zǐ jīn kuàng yè	48
+淄矿集团	zī kuàng jí tuán	18
 紫锂辉石	zǐ lǐ huī shí	20
 籽料原石	zǐ liào yuán shí	30
+紫硫镍矿	zǐ liú niè kuàng	8
+紫钼铀矿	zǐ mù yóu kuàng	9
 紫钠闪石	zǐ nà shǎn shí	10
 自然原石	zì rán yuán shí	1
+资深矿工	zī shēn kuàng gōng	12
+自生矿物	zì shēng kuàng wù	6
 紫石英号	zǐ shí yīng hào	42
+紫水晶矿	zǐ shuǐ jīng kuàng	24
 紫苏辉石	zǐ sū huī shí	25
+自卸矿车	zì xiè kuàng chē	8
 紫心石大	zǐ xīn shí dà	1
 紫心石小	zǐ xīn shí xiǎo	5
 子夜丑石	zǐ yè chǒu shí	5
+自有矿山	zì yǒu kuàng shān	18
+综合找矿	zōng hé zhǎo kuàng	10
 足迹化石	zú jì huà shí	6
+钻石母矿	zuàn shí mǔ kuàng	7
 钻石原石	zuàn shí yuán shí	29
+最后精矿	zuì hòu jīng kuàng	9
+最终尾矿	zuì zhōng wěi kuàng	6
 做金刚石	zuò jīn gāng shí	1
+安全灯煤矿	ān quán dēng méi kuàng	1
 白垩纪地质	bái è jì dì zhì	1
 白榴凝灰岩	bái liú níng huī yán	1
 百寿岩石刻	bǎi shòu yán shí kè	1
+白云鄂博矿	bái yún è bó kuàng	1
 白云泥灰岩	bái yún ní huī yán	1
+白云岩矿床	bái yún yán kuàng chuáng	1
 白云质灰岩	bái yún zhì huī yán	1
 板硫锑铅矿	bǎn liú tī qiān kuàng	1
+半透明矿物	bàn tòu míng kuàng wù	1
+斑岩钼矿床	bān yán mù kuàng chuáng	1
+斑岩铜矿床	bān yán tóng kuàng chuáng	1
 斑状变质岩	bān zhuàng biàn zhì yán	1
 斑状花岗岩	bān zhuàng huā gǎng yán	1
 板状石灰岩	bǎn zhuàng shí huī yán	1
 爆发角砾岩	bào fā jiǎo lì yán	1
+宝矿力水特	bǎo kuàng lì shuǐ tè	1
+宝石矿物学	bǎo shí kuàng wù xué	1
 宝塔石灰岩	bǎo tǎ shí huī yán	1
+北京矿务局	běi jīng kuàng wù jú	1
+北票矿务局	běi piào kuàng wù jú	1
+本溪湖煤矿	běn xī hú méi kuàng	1
+崩落采矿法	bēng luò cǎi kuàng fǎ	1
 崩塌角砾岩	bēng tā jiǎo lì yán	1
+比特币矿工	bǐ tè bì kuàng gōng	1
+比特币矿机	bǐ tè bì kuàng jī	1
+比特币挖矿	bǐ tè bì wā kuàng	1
 碧玉铁质岩	bì yù tiě zhì yán	1
 碧云岩石刻	bì yún yán shí kè	1
 变质岩石学	biàn zhì yán shí xué	1
 表生成岩酌	biǎo shēng chéng yán zhuó	1
+玢岩铁矿床	bīn yán tiě kuàng chuáng	1
 冰川地质学	bīng chuān dì zhì xué	1
 剥蚀角砾岩	bō shí jiǎo lì yán	1
+补充矿物质	bǔ chōng kuàng wù zhì	1
+不含矿物油	bù hán kuàng wù yóu	1
+不可采煤层	bù kě cǎi méi céng	1
 不蚀变岩石	bù shí biàn yán shí	1
 不透水岩石	bú tòu shuǐ yán shí	1
 擦碎角砾岩	cā suì jiǎo lì yán	1
+采矿工程师	cǎi kuàng gōng chéng shī	1
+采矿工作面	cǎi kuàng gōng zuò miàn	1
+采矿回收率	cǎi kuàng huí shōu lǜ	1
+采矿贫化率	cǎi kuàng pín huà lǜ	1
+采矿权出让	cǎi kuàng quán chū ràng	1
+采矿权延续	cǎi kuàng quán yán xù	1
+采矿权转让	cǎi kuàng quán zhuǎn ràng	1
+采矿许可证	cǎi kuàng xǔ kě zhèng	1
+残积砂矿床	cán jī shā kuàng chuáng	1
+残余页岩体	cán yú yè yán tǐ	1
 测井地质学	cè jǐng dì zhì xué	1
+侧卸式矿车	cè xiè shì kuàng chē	1
 层间角砾岩	céng jiān jiǎo lì yán	1
 层内角砾岩	céng nèi jiǎo lì yán	1
+层状铜矿床	céng zhuàng tóng kuàng chuáng	1
 长春地质宫	cháng chūn dì zhì gōng	1
+长石类矿物	cháng shí lèi kuàng wù	1
 长兴石灰岩	cháng xīng shí huī yán	1
+长云角页岩	cháng yún jiǎo yè yán	1
 超镁铁质岩	chāo měi tiě zhì yán	1
 沉积岩石学	chén jī yán shí xué	1
+成矿预测图	chéng kuàng yù cè tú	1
+成矿远景区	chéng kuàng yuǎn jǐng qū	1
+成矿专属性	chéng kuàng zhuān shǔ xìng	1
 成岩白云岩	chéng yán bái yún yán	1
 成岩分异酌	chéng yán fēn yì zhuó	1
 成岩角砾岩	chéng yán jiǎo lì yán	1
+成因矿物学	chéng yīn kuàng wù xué	1
 成因岩石学	chéng yīn yán shí xué	1
+冲积砂矿床	chōng jī shā kuàng chuáng	1
+重聚矿石镇	chóng jù kuàng shí zhèn	1
+充填采矿法	chōng tián cǎi kuàng fǎ	1
 储层地质学	chǔ céng dì zhì xué	1
+串岭沟页岩	chuàn lǐng gōu yè yán	1
 船山石灰岩	chuán shān shí huī yán	1
 次生氧化矿	cì shēng yǎng huà kuàng	1
 粗粒凝灰岩	cū lì níng huī yán	1
@@ -3476,13 +5948,18 @@ sort: by_weight
 翠绿锂辉石	cuì lǜ lǐ huī shí	1
 翠砷铜铀矿	cuì shēn tóng yóu kuàng	1
 大气碎屑岩	dà qì suì xiè yán	1
+大同矿务局	dà tóng kuàng wù jú	1
 大屯火山群	dà tún huǒ shān qún	1
+大型选矿厂	dà xíng xuǎn kuàng chǎng	1
 淡色花岗岩	dàn sè huā gǎng yán	1
+但是矿泉水	dàn shì kuàng quán shuǐ	1
+倒堆采矿法	dào duī cǎi kuàng fǎ	1
 碲硫镍钴矿	dì liú niè gǔ kuàng	1
 低平火山口	dī píng huǒ shān kǒu	1
 第三纪火山	dì sān jì huǒ shān	1
 第四纪地质	dì sì jì dì zhì	1
 第四纪火山	dì sì jì huǒ shān	1
+低瓦斯矿井	dī wǎ sī kuàng jǐng	1
 地震地质学	dì zhèn dì zhì xué	1
 地震断裂带	dì zhèn duàn liè dài	1
 地质博物馆	dì zhì bó wù guǎn	1
@@ -3519,61 +5996,109 @@ sort: by_weight
 地质灾害点	dì zhì zāi hài diǎn	1
 电成岩作用	diàn chéng yán zuò yòng	1
 电气花岗岩	diàn qì huā gǎng yán	1
+吊水洞煤矿	diào shuǐ dòng méi kuàng	1
 叠锥状火山	dié zhuī zhuàng huǒ shān	1
 动力变质岩	dòng lì biàn zhì yán	1
 动力地质学	dòng lì dì zhì xué	1
+独立工矿区	dú lì gōng kuàng qū	1
 读书岩石刻	dú shū yán shí kè	1
 断层角砾岩	duàn céng jiǎo lì yán	1
 短柱硫银矿	duǎn zhù liú yín kuàng	1
 多铋硒铅矿	duō bì xī qiān kuàng	1
+多金属矿床	duō jīn shǔ kuàng chuáng	1
+多金属矿业	duō jīn shǔ kuàng yè	1
 多杂质砾岩	duō zá zhì lì yán	1
+多种矿物质	duō zhǒng kuàng wù zhì	1
 二长花岗岩	èr cháng huā gǎng yán	1
 鲕状石灰岩	ér zhuàng shí huī yán	1
+凡口铅锌矿	fán kǒu qiān xīn kuàng	1
 钒酸钾铀矿	fán suān jiǎ yóu kuàng	1
 钒酸盐矿物	fán suān yán kuàng wù	1
 钒钛磁铁矿	fán tài cí tiě kuàng	1
+反应力矿物	fǎn yìng lì kuàng wù	1
 方硫铁镍矿	fāng liú tiě niè kuàng	1
+放射性矿泉	fàng shè xìng kuàng quán	1
+放射性矿石	fàng shè xìng kuàng shí	1
+放射性矿物	fàng shè xìng kuàng wù	1
+房柱采矿法	fáng zhù cǎi kuàng fǎ	1
+肥城矿务局	féi chéng kuàng wù jú	1
+非磁性矿物	fēi cí xìng kuàng wù	1
+非法采矿罪	fēi fǎ cǎi kuàng zuì	1
 非活跃火山	fēi huó yuè huǒ shān	1
+非金属矿产	fēi jīn shǔ kuàng chǎn	1
+非金属矿床	fēi jīn shǔ kuàng chuáng	1
+非金属矿石	fēi jīn shǔ kuàng shí	1
+非金属矿物	fēi jīn shǔ kuàng wù	1
 非均质岩石	fēi jūn zhì yán shí	1
+废弃的矿山	fèi qì de kuàng shān	1
+飞仙关页岩	fēi xiān guān yè yán	1
 非洲火山岛	fēi zhōu huǒ shān dǎo	1
 粉砂屑灰岩	fěn shā xiè huī yán	1
+汾西矿务局	fén xī kuàng wù jú	1
+丰城矿务局	fēng chéng kuàng wù jú	1
 风成碎屑岩	fēng chéng suì xiè yán	1
+峰峰矿务局	fēng fēng kuàng wù jú	1
+丰富的矿藏	fēng fù de kuàng cáng	1
+丰富的矿产	fēng fù de kuàng chǎn	1
 风化的岩石	fēng huà de yán shí	1
+风化壳矿床	fēng huà ké kuàng chuáng	1
+凤凰山矿区	fèng huáng shān kuàng qū	1
 风火山隧道	fēng huǒ shān suì dào	1
 风林火山篇	fēng lín huǒ shān piān	1
 副长深成岩	fù cháng shēn chéng yán	1
+富含矿物质	fù hán kuàng wù zhì	1
 复合火山锥	fù hé huǒ shān zhuī	1
 傅科陨石坑	fù kē yǔn shí kēng	1
+抚矿工学院	fǔ kuàng gōng xué yuàn	1
 复矿碎屑岩	fù kuàng suì xiè yán	1
 副硫锑钴矿	fù liú tī gǔ kuàng	1
 富硫银铁矿	fù liú yín tiě kuàng	1
 腐泥砂屑岩	fǔ ní shā xiè yán	1
 浮石火山锥	fú shí huǒ shān zhuī	1
 浮石凝灰岩	fú shí níng huī yán	1
+抚顺矿务局	fǔ shùn kuàng wù jú	1
 氟碳酸铈矿	fú tàn suān shì kuàng	1
+富碳油页岩	fù tàn yóu yè yán	1
+伽马探矿法	gā mǎ tàn kuàng fǎ	1
+钙等矿物质	gài děng kuàng wù zhì	1
 钙碱花岗岩	gài jiǎn huā gǎng yán	1
+钙钛矿材料	gài tài kuàng cái liào	1
+钙钛矿电池	gài tài kuàng diàn chí	1
+钙钛矿结构	gài tài kuàng jié gòu	1
 该岩类岩石	gāi yán lèi yán shí	1
 钙质角砾岩	gài zhì jiǎo lì yán	1
+高家边页岩	gāo jiā biān yè yán	1
+高岭土矿床	gāo lǐng tǔ kuàng chuáng	1
 高品级氨矿	gāo pǐn jí ān kuàng	1
+高品位矿石	gāo pǐn wèi kuàng shí	1
+高瓦斯矿井	gāo wǎ sī kuàng jǐng	1
 高于庄灰岩	gāo yú zhuāng huī yán	1
 革老河灰岩	gé lǎo hé huī yán	1
 葛林芝火山	gé lín zhī huǒ shān	1
 铬酸盐矿物	gè suān yán kuàng wù	1
+各种矿物质	gè zhǒng kuàng wù zhì	1
 更长花岗岩	gèng cháng huā gǎng yán	1
 更新世火山	gēng xīn shì huǒ shān	1
 工程地质图	gōng chéng dì zhì tú	1
 工程地质学	gōng chéng dì zhì xué	1
 公馆凝灰岩	gōng guǎn níng huī yán	1
+工艺矿物学	gōng yì kuàng wù xué	1
 工艺岩石学	gōng yì yán shí xué	1
 构造地质学	gòu zào dì zhì xué	1
 构造岩石学	gòu zào yán shí xué	1
 钴硫砷铁矿	gǔ liú shēn tiě kuàng	1
 钴锑硫镍矿	gǔ tī liú niè kuàng	1
 古丈红石林	gǔ zhàng hóng shí lín	1
+关闭的矿山	guān bì de kuàng shān	1
 观音岩石窟	guān yīn yán shí kū	1
+光性矿物学	guāng xìng kuàng wù xué	1
+光学矿物学	guāng xué kuàng wù xué	1
+贵金属矿床	guì jīn shǔ kuàng chuáng	1
 瑰硫方铅矿	guī liú fāng qiān kuàng	1
+硅铝质矿物	guī lǚ zhì kuàng wù	1
 硅酸钡钛矿	guī suān bèi tài kuàng	1
 硅酸盐矿物	guī suān yán kuàng wù	1
+硅藻土矿床	guī zǎo tǔ kuàng chuáng	1
 硅质石灰岩	guī zhì shí huī yán	1
 滚动的岩石	gǔn dòng de yán shí	1
 国家地质部	guó jiā dì zhì bù	1
@@ -3584,6 +6109,8 @@ sort: by_weight
 海底断裂带	hǎi dǐ duàn liè dài	1
 海洋地质所	hǎi yáng dì zhì suǒ	1
 海洋地质学	hǎi yáng dì zhì xué	1
+邯郸峰峰矿	hán dān fēng fēng kuàng	1
+邯郸矿务局	hán dān kuàng wù jú	1
 含金砾岩层	hán jīn lì yán céng	1
 含沥青岩石	hán lì qīng yán shí	1
 含镁石灰岩	hán měi shí huī yán	1
@@ -3591,11 +6118,14 @@ sort: by_weight
 合成金红石	hé chéng jīn hóng shí	1
 合成绿松石	hé chéng lǜ sōng shí	1
 河成碎屑岩	hé chéng suì xiè yán	1
+鹤岗矿务局	hè gǎng kuàng wù jú	1
+黑矿型矿床	hēi kuàng xíng kuàng chuáng	1
 黑硫铜镍矿	hēi liú tóng niè kuàng	1
 黑硫银锡矿	hēi liú yín xī kuàng	1
 黑色花岗岩	hēi sè huā gǎng yán	1
 黑色火山土	hēi sè huǒ shān tǔ	1
 黑云花岗岩	hēi yún huā gǎng yán	1
+横巷采矿法	héng xiàng cǎi kuàng fǎ	1
 红硅钙锰矿	hóng guī gài měng kuàng	1
 红帘石片岩	hóng lián shí piàn yán	1
 红色的石头	hóng sè de shí tou	1
@@ -3611,9 +6141,13 @@ sort: by_weight
 红石峡水库	hóng shí xiá shuǐ kù	1
 红石崖街道	hóng shí yá jiē dào	1
 红石中继器	hóng shí zhōng jì qì	1
+洪水庄页岩	hóng shuǐ zhuāng yè yán	1
 红心番石榴	hóng xīn fān shí liú	1
+红柱角页岩	hóng zhù jiǎo yè yán	1
+后的矿泉水	hòu de kuàng quán shuǐ	1
 后生角砾岩	hòu shēng jué lì yán	1
 湖北绿松石	hú běi lǜ sōng shí	1
+湖水矿化度	hú shuǐ kuàng huà dù	1
 花岗岩地貌	huā gǎng yán dì mào	1
 花岗岩瀑布	huā gǎng yán pù bù	1
 花岗岩铺砌	huā gǎng yán pū qì	1
@@ -3627,9 +6161,15 @@ sort: by_weight
 华南花岗岩	huá nán huā gǎng yán	1
 化石岩石学	huà shí yán shí xué	1
 化学石灰岩	huà xué shí huī yán	1
+淮北矿务局	huái běi kuàng wù jú	1
 环斑花岗岩	huán bān huā gǎng yán	1
 环境地质学	huán jìng dì zhì xué	1
+环境矿物学	huán jìng kuàng wù xué	1
 黄龙石灰岩	huáng lóng shí huī yán	1
+黄马青页岩	huáng mǎ qīng yè yán	1
+黄泥岗页岩	huáng ní gǎng yè yán	1
+黄铁矿结核	huáng tiě kuàng jié hé	1
+黄铁矿矿床	huáng tiě kuàng kuàng chuáng	1
 灰硫砷铅矿	huī liú shēn qiān kuàng	1
 辉锑锡铅矿	huī tī xī qiān kuàng	1
 辉硒铅铋矿	huī xī qiān bì kuàng	1
@@ -3686,10 +6226,12 @@ sort: by_weight
 火星的火山	huǒ xīng de huǒ shān	1
 集块火山锥	jí kuài huǒ shān zhuī	1
 基隆火山群	jī lóng huǒ shān qún	1
+急倾斜煤层	jí qīng xié méi céng	1
 寄生火山口	jì shēng huǒ shān kǒu	1
 寄生火山锥	jì shēng huǒ shān zhuī	1
 机械碎屑岩	jī xiè suì xiè yán	1
 基岩地质图	jī yán dì zhì tú	1
+钾等矿物质	jiǎ děng kuàng wù zhì	1
 嘉陵江灰岩	jiā líng jiāng huī yán	1
 假深成岩体	jiǎ shēn chéng yán tǐ	1
 假象赤铁矿	jiǎ xiàng chì tiě kuàng	1
@@ -3704,22 +6246,115 @@ sort: by_weight
 建造内砾岩	jiàn zào nèi lì yán	1
 礁岛岩溶型	jiāo dǎo yán róng xíng	1
 角闪质岩石	jiǎo shǎn zhì yán shí	1
+角页岩构造	jiǎo yè yán gòu zào	1
 接触变质岩	jiē chù biàn zhì yán	1
 结构地质学	jié gòu dì zhì xué	1
+结晶矿物学	jié jīng kuàng wù xué	1
 结晶凝灰岩	jié jīng níng huī yán	1
+解渴矿泉水	jiě kě kuàng quán shuǐ	1
+晋城矿务局	jìn chéng kuàng wù jú	1
+近单矿物岩	jìn dān kuàng wù yán	1
+金刚石矿床	jīn gāng shí kuàng chuáng	1
 金红石结构	jīn hóng shí jié gòu	1
+进口铁矿石	jìn kǒu tiě kuàng shí	1
+浸染状矿石	jìn rǎn zhuàng kuàng shí	1
+金属矿相学	jīn shǔ kuàng xiāng xué	1
+堇云角页岩	jǐn yún jiǎo yè yán	1
+静电选矿机	jìng diàn xuǎn kuàng jī	1
 晶洞花岗岩	jīng dòng huā gǎng yán	1
 景儿峪灰岩	jǐng ér yù huī yán	1
 晶后碎屑岩	jīng hòu suì xiè yán	1
 经济地质学	jīng jì dì zhì xué	1
+京西矿务局	jīng xī kuàng wù jú	1
+井下采矿法	jǐng xià cǎi kuàng fǎ	1
+井陉矿务局	jǐng xíng kuàng wù jú	1
+巨量矿物质	jù liàng kuàng wù zhì	1
 巨形角砾岩	jù xíng jiǎo lì yán	1
+开滦矿务局	kāi luán kuàng wù jú	1
+开滦唐山矿	kāi luán táng shān kuàng	1
+开平矿务局	kāi píng kuàng wù jú	1
 考古地质学	kǎo gǔ dì zhì xué	1
 颗粒石灰岩	kē lì shí huī yán	1
+可燃性页岩	kě rán xìng yè yán	1
+壳溪页岩层	ké xī yè yán céng	1
+科学找矿法	kē xué zhǎo kuàng fǎ	1
+空场采矿法	kōng chǎng cǎi kuàng fǎ	1
 块硫砷铜矿	kuài liú shēn tóng kuàng	1
 块硫锑铅矿	kuài liú tī qiān kuàng	1
 块硫锑铜矿	kuài liú tī tóng kuàng	1
+矿藏开采权	kuàng cáng kāi cǎi quán	1
+矿产储量表	kuàng chǎn chǔ liàng biǎo	1
+矿产分布图	kuàng chǎn fēn bù tú	1
+矿产金产量	kuàng chǎn jīn chǎn liàng	1
+矿产经济学	kuàng chǎn jīng jì xué	1
+矿产品加工	kuàng chǎn pǐn jiā gōng	1
+矿产资源法	kuàng chǎn zī yuán fǎ	1
 矿床地质学	kuàng chuáng dì zhì xué	1
+矿粉压球机	kuàng fěn yā qiú jī	1
+矿工安全帽	kuàng gōng ān quán mào	1
+矿工俱乐部	kuàng gōng jù lè bù	1
+矿井等积孔	kuàng jǐng děng jī kǒng	1
+矿井防灭火	kuàng jǐng fáng miè huǒ	1
+矿井内火灾	kuàng jǐng nèi huǒ zāi	1
+矿井内空气	kuàng jǐng nèi kōng qì	1
+矿井内气体	kuàng jǐng nèi qì tǐ	1
+矿井热环境	kuàng jǐng rè huán jìng	1
+矿井水处理	kuàng jǐng shuǐ chǔ lǐ	1
+矿井提升机	kuàng jǐng tí shēng jī	1
+矿井选煤厂	kuàng jǐng xuǎn méi chǎng	1
+矿井涌水量	kuàng jǐng yǒng shuǐ liàng	1
+矿坑勘探法	kuàng kēng kān tàn fǎ	1
+矿棉吸音板	kuàng mián xī yīn bǎn	1
+矿区办事处	kuàng qū bàn shì chù	1
+矿泉水公司	kuàng quán shuǐ gōng sī	1
+矿泉水品牌	kuàng quán shuǐ pǐn pái	1
+矿泉水瓶盖	kuàng quán shuǐ píng gài	1
+矿泉水瓶装	kuàng quán shuǐ píng zhuāng	1
+矿泉水瓶子	kuàng quán shuǐ píng zi	1
+矿泉水生产	kuàng quán shuǐ shēng chǎn	1
+矿泉游泳场	kuàng quán yóu yǒng chǎng	1
+矿山安全法	kuàng shān ān quán fǎ	1
+矿山测量学	kuàng shān cè liáng xué	1
 矿山地质学	kuàng shān dì zhì xué	1
+矿山集街道	kuàng shān jí jiē dào	1
+矿山机械厂	kuàng shān jī xiè chǎng	1
+矿山监察局	kuàng shān jiān chá jú	1
+矿山救护车	kuàng shān jiù hù chē	1
+矿山救护队	kuàng shān jiù hù duì	1
+矿山路街道	kuàng shān lù jiē dào	1
+矿山年产量	kuàng shān nián chǎn liàng	1
+矿山自动化	kuàng shān zì dòng huà	1
+矿山自卸车	kuàng shān zì xiè chē	1
+矿石回采率	kuàng shí huí cǎi lǜ	1
+矿石可选性	kuàng shí kě xuǎn xìng	1
+矿石矿物学	kuàng shí kuàng wù xué	1
+矿石贫化率	kuàng shí pín huà lǜ	1
+矿石破碎机	kuàng shí pò suì jī	1
+矿石烧结机	kuàng shí shāo jié jī	1
+矿石收音机	kuàng shí shōu yīn jī	1
+矿石损失率	kuàng shí sǔn shī lǜ	1
+矿体投影图	kuàng tǐ tóu yǐng tú	1
+矿物博物馆	kuàng wù bó wù guǎn	1
+矿物化学式	kuàng wù huà xué shì	1
+矿物化妆品	kuàng wù huà zhuāng pǐn	1
+矿物皮质素	kuàng wù pí zhì sù	1
+矿物物理学	kuàng wù wù lǐ xué	1
+矿物性颜料	kuàng wù xìng yán liào	1
+矿物质成分	kuàng wù zhì chéng fèn	1
+矿物质丰富	kuàng wù zhì fēng fù	1
+矿物质含量	kuàng wù zhì hán liàng	1
+矿物质机油	kuàng wù zhì jī yóu	1
+矿物质纤维	kuàng wù zhì xiān wéi	1
+矿物质元素	kuàng wù zhì yuán sù	1
+矿相显微镜	kuàng xiāng xiǎn wēi jìng	1
+矿业博物馆	kuàng yè bó wù guǎn	1
+矿业工程师	kuàng yè gōng chéng shī	1
+矿业工程学	kuàng yè gōng chéng xué	1
+矿业权交易	kuàng yè quán jiāo yì	1
+矿业权评估	kuàng yè quán píng gū	1
+矿业权转让	kuàng yè quán zhuǎn ràng	1
+矿用自卸车	kuàng yòng zì xiè chē	1
+矿渣混凝土	kuàng zhā hùn níng tǔ	1
 蓝晶石片岩	lán jīng shí piàn yán	1
 蓝色搜魂石	lán sè sōu hún shí	1
 蓝色托帕石	lán sè tuō pà shí	1
@@ -3729,16 +6364,27 @@ sort: by_weight
 蓝丝黛尔石	lán sī dài ěr shí	1
 蓝尾石龙子	lán wěi shí lóng zǐ	1
 狼溪陨石坑	láng xī yǔn shí kēng	1
+崂山矿泉水	láo shān kuàng quán shuǐ	1
 雷琼火山群	léi qióng huǒ shān qún	1
 类型花岗岩	lèi xíng huā gǎng yán	1
+沥青质页岩	lì qīng zhì yè yán	1
 历史地质学	lì shǐ dì zhì xué	1
+砾石找矿法	lì shí zhǎo kuàng fǎ	1
 砾岩型铀矿	lì yán xíng yóu kuàng	1
+粒状角页岩	lì zhuàng jiǎo yè yán	1
+联合采矿法	lián hé cǎi kuàng fǎ	1
+涟邵矿务局	lián shào kuàng wù jú	1
+两瓶矿泉水	liǎng píng kuàng quán shuǐ	1
+磷等矿物质	lín děng kuàng wù zhì	1
+磷灰石矿床	lín huī shí kuàng chuáng	1
+磷块岩矿床	lín kuài yán kuàng chuáng	1
 磷硫铅铝矿	lín liú qiān lǚ kuàng	1
 磷硫铅铁矿	lín liú qiān tiě kuàng	1
 磷砷锌铜矿	lín shēn xīn tóng kuàng	1
 磷酸锂铁矿	lín suān lǐ tiě kuàng	1
 磷酸盐矿物	lín suān yán kuàng wù	1
 临湘石灰岩	lín xiāng shí huī yán	1
+临沂矿务局	lín yí kuàng wù jú	1
 硫铋锑镍矿	liú bì tī niè kuàng	1
 硫铋锑铜矿	liú bì tī tóng kuàng	1
 硫铋锑银矿	liú bì tī yín kuàng	1
@@ -3747,6 +6393,8 @@ sort: by_weight
 硫化矿精矿	liú huà kuàng jīng kuàng	1
 硫化铜钒矿	liú huà tóng fán kuàng	1
 硫钾钠铅矿	liú jiǎ nà qiān kuàng	1
+留矿采矿法	liú kuàng cǎi kuàng fǎ	1
+留矿开采法	liú kuàng kāi cǎi fǎ	1
 硫磷铝锶矿	liú lín lǚ sī kuàng	1
 硫镍铋锑矿	liú niè bì tī kuàng	1
 硫砷铅铁矿	liú shēn qiān tiě kuàng	1
@@ -3768,9 +6416,21 @@ sort: by_weight
 硫锡铁铜矿	liú xī tiě tóng kuàng	1
 龙岗火山群	lóng gǎng huǒ shān qún	1
 隆基迈火山	lóng jī mài huǒ shān	1
+龙马溪页岩	lóng mǎ xī yè yán	1
+漏斗采矿法	lòu dǒu cǎi kuàng fǎ	1
+潞安矿务局	lù ān kuàng wù jú	1
+卤化物矿物	lǔ huà wù kuàng wù	1
+芦荟矿物晶	lú huì kuàng wù jīng	1
+露天采矿法	lù tiān cǎi kuàng fǎ	1
+露天矿边坡	lù tiān kuàng biān pō	1
+露天矿街道	lù tiān kuàng jiē dào	1
+露天矿开拓	lù tiān kuàng kāi tuò	1
+露天矿运输	lù tiān kuàng yùn shū	1
 乱层火成岩	luàn céng huǒ chéng yán	1
 裸露的岩石	luǒ lòu de yán shí	1
 裸露型岩溶	luǒ lòu xíng yán róng	1
+螺旋给矿机	luó xuán gěi kuàng jī	1
+螺旋选矿机	luó xuán xuǎn kuàng jī	1
 螺状硫银矿	luó zhuàng liú yín kuàng	1
 绿帘花岗岩	lǜ lián huā gǎng yán	1
 绿泥花岗岩	lǜ ní huā gǎng yán	1
@@ -3779,17 +6439,34 @@ sort: by_weight
 绿松石耳坠	lǜ sōng shí ěr zhuì	1
 绿松石项链	lǜ sōng shí xiàng liàn	1
 绿松石原石	lǜ sōng shí yuán shí	1
+麻辣矿泉水	má là kuàng quán shuǐ	1
 埋藏型岩溶	mái cáng xíng yán róng	1
 茅口石灰岩	máo kǒu shí huī yán	1
 茅口组灰岩	máo kǒu zǔ huī yán	1
 毛纳基火山	máo nà jī huǒ shān	1
 冒纳基火山	mào nà jī huǒ shān	1
+帽天山页岩	mào tiān shān yè yán	1
+冒险与挖矿	mào xiǎn yǔ wā kuàng	1
+煤层气产业	méi céng qì chǎn yè	1
+煤层气公司	méi céng qì gōng sī	1
+煤层气开发	méi céng qì kāi fā	1
+煤层总厚度	méi céng zǒng hòu dù	1
 煤成岩作用	méi chéng yán zuò yòng	1
+镁等矿物质	měi děng kuàng wù zhì	1
 玫红尖晶石	méi hóng jiān jīng shí	1
+煤矿安监局	méi kuàng ān jiān jú	1
+煤矿博物馆	méi kuàng bó wù guǎn	1
+煤矿采空区	méi kuàng cǎi kōng qū	1
+煤矿机械厂	méi kuàng jī xiè chǎng	1
+煤矿文工团	méi kuàng wén gōng tuán	1
+煤矿智能化	méi kuàng zhì néng huà	1
+煤矿自动化	méi kuàng zì dòng huà	1
 煤炭地质学	méi tàn dì zhì xué	1
 煤田地质局	méi tián dì zhì jú	1
 煤田地质学	méi tián dì zhì xué	1
+镁铁质矿物	měi tiě zhì kuàng wù	1
 镁铁质岩石	měi tiě zhì yán shí	1
+煤中矿物质	méi zhōng kuàng wù zhì	1
 锰钽酸铁矿	měng tǎn suān tiě kuàng	1
 描述地质学	miáo shù dì zhì xué	1
 描述岩石学	miáo shù yán shí xué	1
@@ -3798,37 +6475,52 @@ sort: by_weight
 磨蚀性岩石	mó shí xìng yán shí	1
 钼酸盐矿物	mù suān yán kuàng wù	1
 木卫一火山	mù wèi yī huǒ shān	1
+那高岭页岩	nà gāo lǐng yè yán	1
 钠辉细岗岩	nà huī xì gǎng yán	1
 钠闪花岗岩	nà shǎn huā gǎng yán	1
 钠闪微岗岩	nà shǎn wēi gǎng yán	1
 钠质火成岩	nà zhì huǒ chéng yán	1
+内蒙古矿业	nèi méng gǔ kuàng yè	1
+内蒙古煤矿	nèi méng gǔ méi kuàng	1
 泥流角砾岩	ní liú jiǎo lì yán	1
 泥质角砾岩	ní zhì jiǎo lì yán	1
+鲶矿泉前站	nián kuàng quán qián zhàn	1
 粘土泥灰岩	nián tǔ ní huī yán	1
+黏土质页岩	nián tǔ zhì yè yán	1
 凝灰角砾岩	níng huī jiǎo lì yán	1
 凝灰质砾岩	níng huī zhì lì yán	1
+凝灰质页岩	níng huī zhì yè yán	1
+牛马司煤矿	niú mǎ sī méi kuàng	1
 喷发的火山	pēn fā de huǒ shān	1
 硼酸盐矿物	péng suān yán kuàng wù	1
+瓶装矿泉水	píng zhuāng kuàng quán shuǐ	1
 婆罗摩火山	pó luó mó huǒ shān	1
 破碎的岩石	pò suì de yán shí	1
 普通地质学	pǔ tōng dì zhì xué	1
 起傅岩石刻	qǐ fù yán shí kè	1
+其他矿物质	qí tā kuàng wù zhì	1
 栖霞石灰岩	qī xiá shí huī yán	1
 浅带变质岩	qiǎn dài biàn zhì yán	1
 前地质时期	qián dì zhì shí qī	1
 潜火山地震	qián huǒ shān dì zhèn	1
 前进成岩酌	qián jìn chéng yán zhuó	1
+欠压实页岩	qiàn yā shí yè yán	1
+强磁性矿物	qiáng cí xìng kuàng wù	1
 强风化砾岩	qiáng fēng huà lì yán	1
 羟硅硼钙石	qiǎng guī péng gài shí	1
 侵入火成岩	qīn rù huǒ chéng yán	1
+亲水性矿物	qīn shuǐ xìng kuàng wù	1
 轻硫砷铅矿	qīng liú shēn qiān kuàng	1
 球颗火成岩	qiú kē huǒ chéng yán	1
 球状花岗岩	qiú zhuàng huā gǎng yán	1
 去花岗岩化	qù huā gǎng yán huà	1
 区域变质岩	qū yù biàn zhì yán	1
+区域成矿学	qū yù chéng kuàng xué	1
 区域地质图	qū yù dì zhì tú	1
 区域地质学	qū yù dì zhì xué	1
 区域岩石学	qū yù yán shí xué	1
+全面采矿法	quán miàn cǎi kuàng fǎ	1
+全球铁矿石	quán qiú tiě kuàng shí	1
 全新世火山	quán xīn shì huǒ shān	1
 缺裂火山锥	quē liè huǒ shān zhuī	1
 热力类岩溶	rè lì lèi yán róng	1
@@ -3839,9 +6531,14 @@ sort: by_weight
 熔壳火山锥	róng ké huǒ shān zhuī	1
 熔岩溪火山	róng yán xī huǒ shān	1
 软弱的岩石	ruǎn ruò de yán shí	1
+三道岭矿区	sān dào lǐng kuàng qū	1
+三道岭煤矿	sān dào lǐng méi kuàng	1
 砂岩型铀矿	shā yán xíng yóu kuàng	1
 砂质泥灰岩	shā zhì ní huī yán	1
 山顶火山口	shān dǐng huǒ shān kǒu	1
+膳食矿物质	shàn shí kuàng wù zhì	1
+闪锌矿结构	shǎn xīn kuàng jié gòu	1
+烧结页岩砖	shāo jié yè yán zhuān	1
 深地质处置	shēn dì zhì chǔ zhì	1
 砷硫铜铁矿	shēn liú tóng tiě kuàng	1
 砷酸盐矿物	shēn suān yán kuàng wù	1
@@ -3851,19 +6548,26 @@ sort: by_weight
 生物礁灰岩	shēng wù jiāo huī yán	1
 生物碎屑岩	shēng wù suì xiè yán	1
 生物滩灰岩	shēng wù tān huī yán	1
+石灰石矿山	shí huī shí kuàng shān	1
 石灰岩道碴	shí huī yán dào chá	1
 石灰岩地形	shí huī yán dì xíng	1
 石灰岩海岸	shí huī yán hǎi àn	1
 石灰岩鹪鹛	shí huī yán jiāo méi	1
 石灰岩矿床	shí huī yán kuàng chuáng	1
 石灰岩溶洞	shí huī yán róng dòng	1
+石家庄矿区	shí jiā zhuāng kuàng qū	1
 实验地质学	shí yàn dì zhì xué	1
+实验矿床学	shí yàn kuàng chuáng xué	1
+实验矿物学	shí yàn kuàng wù xué	1
 实验岩石学	shí yàn yán shí xué	1
 石英质岩石	shí yīng zhì yán shí	1
 石油地质学	shí yóu dì zhì xué	1
 石质凝灰岩	shí zhì níng huī yán	1
+受变质矿床	shòu biàn zhì kuàng chuáng	1
 水成变质岩	shuǐ chéng biàn zhì yán	1
 水成碎屑岩	shuǐ chéng suì xiè yán	1
+水电瓦斯费	shuǐ diàn wǎ sī fèi	1
+水井沱页岩	shuǐ jǐng tuó yè yán	1
 水泥石灰岩	shuǐ ní shí huī yán	1
 水文地质的	shuǐ wén dì zhì de	1
 水文地质图	shuǐ wén dì zhì tú	1
@@ -3877,6 +6581,9 @@ sort: by_weight
 太空地质学	tài kōng dì zhì xué	1
 太平洋岩群	tài píng yáng yán qún	1
 钛铁磷灰岩	tài tiě lín huī yán	1
+探矿权保留	tàn kuàng quán bǎo liú	1
+探矿权设置	tàn kuàng quán shè zhì	1
+探矿权转让	tàn kuàng quán zhuǎn ràng	1
 郯庐断裂带	tán lú duàn liè dài	1
 弹塑性岩石	tán sù xìng yán shí	1
 碳酸钡锶矿	tàn suān bèi sī kuàng	1
@@ -3886,61 +6593,112 @@ sort: by_weight
 碳酸锶铈矿	tàn suān sī shì kuàng	1
 碳酸盐矿物	tàn suān yán kuàng wù	1
 碳质石灰岩	tàn zhì shí huī yán	1
+陶托那金矿	táo tuō nà jīn kuàng	1
 锑硫砷铅矿	tī liú shēn qiān kuàng	1
 锑硫砷铜矿	tī liú shēn tóng kuàng	1
+天鹅绒金矿	tiān é róng jīn kuàng	1
 天桂岩石刻	tiān guì yán shí kè	1
 天然花岗岩	tiān rán huā gǎng yán	1
+天然碱矿床	tiān rán jiǎn kuàng chuáng	1
+天然矿泉水	tiān rán kuàng quán shuǐ	1
+天然矿物质	tiān rán kuàng wù zhì	1
 天体地质学	tiān tǐ dì zhì xué	1
 天文地质学	tiān wén dì zhì xué	1
 条带状铁矿	tiáo dài zhuàng tiě kuàng	1
 跳火山的人	tiào huǒ shān de rén	1
+铁磁性矿物	tiě cí xìng kuàng wù	1
+铁等矿物质	tiě děng kuàng wù zhì	1
 铁基钙钛矿	tiě jī gài tài kuàng	1
+铁矿石出口	tiě kuàng shí chū kǒu	1
+铁矿石价格	tiě kuàng shí jià gé	1
+铁矿石进口	tiě kuàng shí jìn kǒu	1
+铁矿石开采	tiě kuàng shí kāi cǎi	1
+铁矿石贸易	tiě kuàng shí mào yì	1
+铁矿石品位	tiě kuàng shí pǐn wèi	1
+铁矿石期货	tiě kuàng shí qī huò	1
+铁矿石市场	tiě kuàng shí shì chǎng	1
+铁矿石谈判	tiě kuàng shí tán pàn	1
+铁矿石涨价	tiě kuàng shí zhǎng jià	1
+铁矿石指数	tiě kuàng shí zhǐ shù	1
 铁硫砷钻矿	tiě liú shēn zuān kuàng	1
+铁镁质矿物	tiě měi zhì kuàng wù	1
 廷蒂纳岩石	tíng dì nà yán shí	1
+铜川矿务局	tóng chuān kuàng wù jú	1
 统计岩石学	tǒng jì yán shí xué	1
 通科科火山	tōng kē kē huǒ shān	1
 同生角砾岩	tóng shēng jiǎo lì yán	1
 通天岩石窟	tōng tiān yán shí kū	1
 同源花岗岩	tóng yuán huā gǎng yán	1
+桶装矿泉水	tǒng zhuāng kuàng quán shuǐ	1
 透长凝灰岩	tòu cháng níng huī yán	1
+透镜状矿体	tòu jìng zhuàng kuàng tǐ	1
 突出的岩石	tū chū de yán shí	1
+瓦斯涌出量	wǎ sī yǒng chū liàng	1
 外成岩作用	wài chéng yán zuò yòng	1
 外碎屑灰岩	wài suì xiè huī yán	1
+外岩浆矿床	wài yán jiāng kuàng chuáng	1
+王家岭矿难	wáng jiā lǐng kuàng nàn	1
+王家岭煤矿	wáng jiā lǐng méi kuàng	1
 微贝壳灰岩	wēi bèi ké huī yán	1
+伟晶岩矿床	wěi jīng yán kuàng chuáng	1
+伟晶岩矿物	wěi jīng yán kuàng wù	1
+尾矿处理厂	wěi kuàng chǔ lǐ chǎng	1
+尾矿库安全	wěi kuàng kù ān quán	1
+尾矿压滤机	wěi kuàng yā lǜ jī	1
+微量矿物质	wēi liàng kuàng wù zhì	1
 我是地质人	wǒ shì dì zhì rén	1
 无根火山锥	wú gēn huǒ shān zhuī	1
+无机矿物质	wú jī kuàng wù zhì	1
 五莲红石材	wǔ lián hóng shí cái	1
 雾迷山灰岩	wù mí shān huī yán	1
 钨钼酸铅矿	wū mù suān qiān kuàng	1
 无球粒陨石	wú qiú lì yǔn shí	1
 钨酸盐矿物	wū suān yán kuàng wù	1
 五塔岩石塔	wǔ tǎ yán shí tǎ	1
+硒等矿物质	xī děng kuàng wù zhì	1
+硒化物矿物	xī huà wù kuàng wù	1
 细晶磷灰岩	xì jīng lín huī yán	1
+矽卡岩矿床	xī kǎ yán kuàng chuáng	1
+夕卡岩矿物	xī kǎ yán kuàng wù	1
+锡矿山街道	xī kuàng shān jiē dào	1
 细硫砷铅矿	xì liú shēn qiān kuàng	1
 锡纳朋火山	xī nà péng huǒ shān	1
 悉尼岩石区	xī ní yán shí qū	1
 硒铊银铜矿	xī tā yín tóng kuàng	1
 硒铜铅镍矿	xī tóng qiān niè kuàng	1
 稀土火成岩	xī tǔ huǒ chéng yán	1
+锡瓦斯体育	xī wǎ sī tǐ yù	1
+下马岭页岩	xià mǎ lǐng yè yán	1
 纤硫锑铅矿	xiān liú tī qiān kuàng	1
 陷落火山口	xiàn luò huǒ shān kǒu	1
 显微岩石学	xiǎn wēi yán shí xué	1
 纤维状岩石	xiān wéi zhuàng yán shí	1
 小江断裂带	xiǎo jiāng duàn liè dài	1
 硝酸盐矿物	xiāo suān yán kuàng wù	1
+小行星采矿	xiǎo xíng xīng cǎi kuàng	1
 小行星陨石	xiǎo xíng xīng yǔn shí	1
 逍遥岩石刻	xiāo yáo yán shí kè	1
 斜长花岗岩	xié cháng huā gǎng yán	1
 斜硫锑铅矿	xié liú tī qiān kuàng	1
+锌等矿物质	xīn děng kuàng wù zhì	1
 锌硫锡铅矿	xīn liú xī qiān kuàng	1
 新生代火山	xīn shēng dài huǒ shān	1
+兴隆庄煤矿	xīng lóng zhuāng méi kuàng	1
+邢台矿务局	xíng tái kuàng wù jú	1
 行星地质学	xíng xīng dì zhì xué	1
 休格地陨石	xiū gé dì yǔn shí	1
 岫岩陨石坑	xiù yán yǔn shí kēng	1
+徐州矿务局	xú zhōu kuàng wù jú	1
+选别采矿法	xuǎn bié cǎi kuàng fǎ	1
+选矿回收率	xuǎn kuàng huí shōu lǜ	1
 玄武岩石辊	xuán wǔ yán shí gǔn	1
 压碎角砾岩	yā suì jiǎo lì yán	1
 岩崩角砾岩	yán bēng jiǎo lì yán	1
+岩基成矿说	yán jī chéng kuàng shuō	1
+岩浆成矿酌	yán jiāng chéng kuàng zhuó	1
 岩浆花岗岩	yán jiāng huā gǎng yán	1
+岩浆内矿床	yán jiāng nèi kuàng chuáng	1
+岩矿心采样	yán kuàng xīn cǎi yàng	1
 岩溶剥蚀面	yán róng bō shí miàn	1
 岩溶地面的	yán róng dì miàn de	1
 岩溶洞回填	yán róng dòng huí tián	1
@@ -4010,22 +6768,54 @@ sort: by_weight
 岩石硬度比	yán shí yìng dù bǐ	1
 岩尾火山群	yán wěi huǒ shān qún	1
 岩屑砂屑岩	yán xiè shā xiè yán	1
+岩钟成矿说	yán zhōng chéng kuàng shuō	1
+兖州矿务局	yǎn zhōu kuàng wù jú	1
+氧化物矿物	yǎng huà wù kuàng wù	1
+阳泉矿务局	yáng quán kuàng wù jú	1
+阳泉市矿区	yáng quán shì kuàng qū	1
 冶里石灰岩	yě lǐ shí huī yán	1
 野外地质学	yě wài dì zhì xué	1
+页岩化作用	yè yán huà zuò yòng	1
+页岩气革命	yè yán qì gé mìng	1
+页岩气开采	yè yán qì kāi cǎi	1
+页岩气开发	yè yán qì kāi fā	1
+页岩气勘探	yè yán qì kān tàn	1
+页岩油产量	yè yán yóu chǎn liàng	1
+页岩油开采	yè yán yóu kāi cǎi	1
+页岩油提炼	yè yán yóu tí liàn	1
+怡宝矿泉水	yí bǎo kuàng quán shuǐ	1
 异化粒灰岩	yì huà lì huī yán	1
+易家湾页岩	yì jiā wān yè yán	1
+医疗热矿水	yī liáo rè kuàng shuǐ	1
 异硫锑铅矿	yì liú tī qiān kuàng	1
 易溶性岩石	yì róng xìng yán shí	1
 伊通火山群	yī tōng huǒ shān qún	1
+依云矿泉水	yī yún kuàng quán shuǐ	1
 隐爆角砾岩	yǐn bào jiǎo lì yán	1
+饮料矿泉水	yǐn liào kuàng quán shuǐ	1
+隐岩浆矿床	yǐn yán jiāng kuàng chuáng	1
+饮用矿泉水	yǐn yòng kuàng quán shuǐ	1
+鹰手营子矿	yīng shǒu yíng zǐ kuàng	1
 应用地质学	yìng yòng dì zhì xué	1
+英云角页岩	yīng yún jiǎo yè yán	1
 铀矿地质学	yóu kuàng dì zhì xué	1
 铀砾岩矿床	yóu lì yán kuàng chuáng	1
+有色金属矿	yǒu sè jīn shǔ kuàng	1
+油页岩产业	yóu yè yán chǎn yè	1
+油页岩储量	yóu yè yán chǔ liàng	1
+油页岩工业	yóu yè yán gōng yè	1
+油页岩技术	yóu yè yán jì shù	1
+油页岩开采	yóu yè yán kāi cǎi	1
+优质矿泉水	yōu zhì kuàng quán shuǐ	1
 宇宙地质学	yǔ zhòu dì zhì xué	1
 原地花岗岩	yuán dì huā gǎng yán	1
 原始火山岩	yuán shǐ huǒ shān yán	1
+远岩浆矿床	yuǎn yán jiāng kuàng chuáng	1
+圆锥选矿机	yuán zhuī xuǎn kuàng jī	1
 月球地质学	yuè qiú dì zhì xué	1
 月球火成岩	yuè qiú huǒ chéng yán	1
 月球岩石圈	yuè qiú yán shí quān	1
+月岩新矿物	yuè yán xīn kuàng wù	1
 陨击角砾岩	yǔn jī jiǎo lì yán	1
 云母赤铁矿	yún mǔ chì tiě kuàng	1
 杂块花岗岩	zá kuài huā gǎng yán	1
@@ -4033,29 +6823,54 @@ sort: by_weight
 杂硫银铜矿	zá liú yín tóng kuàng	1
 杂硒铅汞矿	zá xī qiān gǒng kuàng	1
 再生花岗岩	zài shēng huā gǎng yán	1
+造岩矿物学	zào yán kuàng wù xué	1
+枣庄矿务局	zǎo zhuāng kuàng wù jú	1
 张夏石灰岩	zhāng xià shí huī yán	1
 张性角砾岩	zhāng xìng jiǎo lì yán	1
+找矿矿物学	zhǎo kuàng kuàng wù xué	1
 赵巧岩石窟	zhào qiǎo yán shí kū	1
 针硫铋铅矿	zhēn liú bì qiān kuàng	1
 针硫锑铅矿	zhēn liú tī qiān kuàng	1
+珍珠岩矿床	zhēn zhū yán kuàng chuáng	1
+蒸发岩矿床	zhēng fā yán kuàng chuáng	1
+正岩浆矿床	zhèng yán jiāng kuàng chuáng	1
 正长花岗岩	zhèng zhǎng huā gǎng yán	1
+郑州矿务局	zhèng zhōu kuàng wù jú	1
+支柱采矿法	zhī zhù cǎi kuàng fǎ	1
+重介质选矿	zhòng jiè zhì xuǎn kuàng	1
+重晶石矿床	zhòng jīng shí kuàng chuáng	1
+重力选矿厂	zhòng lì xuǎn kuàng chǎng	1
+重力选矿法	zhòng lì xuǎn kuàng fǎ	1
+重力选矿机	zhòng lì xuǎn kuàng jī	1
+重砂找矿法	zhòng shā zhǎo kuàng fǎ	1
 中生代地质	zhōng shēng dài dì zhì	1
 中心式火山	zhōng xīn shì huǒ shān	1
 柱硫锑铅矿	zhù liú tī qiān kuàng	1
+烛煤质页岩	zhú méi zhì yè yán	1
+柱式采矿法	zhù shì cǎi kuàng fǎ	1
 竹叶状灰岩	zhú yè zhuàng huī yán	1
 竹叶状砾岩	zhú yè zhuàng lì yán	1
 撞击角砾岩	zhuàng jī jiǎo lì yán	1
 准硫铀钙矿	zhǔn liú yóu gài kuàng	1
+淄博矿务局	zī bó kuàng wù jú	1
+自动化煤矿	zì dòng huà méi kuàng	1
 紫硫镍铁矿	zǐ liú niè tiě kuàng	1
 紫苏花岗岩	zǐ sū huā gǎng yán	1
 紫苏闪石岩	zǐ sū shǎn shí yán	1
 棕灰岩鹪鹛	zōng huī yán jiāo méi	1
+白银厂铜矿床	bái yín chǎng tóng kuàng chuáng	1
+斑岩铜矿模式	bān yán tóng kuàng mó shì	1
 半原地花岗岩	bàn yuán dì huā gǎng yán	1
 保护地质环境	bǎo hù dì zhì huán jìng	1
+保晋矿务公司	bǎo jìn kuàng wù gōng sī	1
+宝矿国际大厦	bǎo kuàng guó jì dà shà	1
 北京地质学院	běi jīng dì zhì xué yuàn	1
 北石灰岩山脉	běi shí huī yán shān mài	1
+变质成矿作用	biàn zhì chéng kuàng zuò yòng	1
 表生成岩作用	biǎo shēng chéng yán zuò yòng	1
+铂族元素矿床	bó zú yuán sù kuàng chuáng	1
 不良地质作用	bù liáng dì zhì zuò yòng	1
+采矿工程师岩	cǎi kuàng gōng chéng shī yán	1
 层硅酸盐矿物	céng guī suān yán kuàng wù	1
 长春地质学院	cháng chūn dì zhì xué yuàn	1
 场地地质效应	chǎng dì dì zhì xiào yìng	1
@@ -4063,18 +6878,24 @@ sort: by_weight
 超岩石圈断裂	chāo yán shí quān duàn liè	1
 沉火山角砾岩	chén huǒ shān jiǎo lì yán	1
 沉火山碎屑岩	chén huǒ shān suì xiè yán	1
+沉积变质矿床	chén jī biàn zhì kuàng chuáng	1
 沉积成岩作用	chén jī chéng yán zuò yòng	1
+沉积喷流矿床	chén jī pēn liú kuàng chuáng	1
 成都地质学院	chéng dū dì zhì xué yuàn	1
 成矿地质背景	chéng kuàng dì zhì bèi jǐng	1
 城市工程地质	chéng shì gōng chéng dì zhì	1
 初步地质勘察	chū bù dì zhì kān chá	1
 次生地质灾害	cì shēng dì zhì zāi hài	1
+次生晕找矿法	cì shēng yūn zhǎo kuàng fǎ	1
 次碳酸镁铁矿	cì tàn suān měi tiě kuàng	1
 脆硫锑银铅矿	cuì liú tī yín qiān kuàng	1
+大型工矿企业	dà xíng gōng kuàng qǐ yè	1
 大型火成岩区	dà xíng huǒ chéng yán qū	1
+单斜晶系矿物	dān xié jīng xì kuàng wù	1
 岛硅酸盐矿物	dǎo guī suān yán kuàng wù	1
 倒石锥角砾岩	dào shí zhuī jiǎo lì yán	1
 地球地质历史	dì qiú dì zhì lì shǐ	1
+地球化学探矿	dì qiú huà xué tàn kuàng	1
 低铁假板钛矿	dī tiě jiǎ bǎn tài kuàng	1
 地下岩石孔缝	dì xià yán shí kǒng fèng	1
 地震地质效应	dì zhèn dì zhì xiào yìng	1
@@ -4111,13 +6932,21 @@ sort: by_weight
 鲕粒亮晶灰岩	ér lì liàng jīng huī yán	1
 鲕粒泥质灰岩	ér lì ní zhì huī yán	1
 尔塔阿雷火山	ěr tǎ ā léi huǒ shān	1
+二氧化硅矿物	èr yǎng huà guī kuàng wù	1
+肥城矿业集团	féi chéng kuàng yè jí tuán	1
+非煤矿山安全	fēi méi kuàng shān ān quán	1
+非煤矿山企业	fēi méi kuàng shān qǐ yè	1
+废弃的小矿井	fèi qì de xiǎo kuàng jǐng	1
 非渗透性岩石	fēi shèn tòu xìng yán shí	1
 粪粒泥晶灰岩	fèn lì ní jīng huī yán	1
+分散流找矿法	fēn sǎn liú zhǎo kuàng fǎ	1
 风成细粒灰岩	fēng chéng xì lì huī yán	1
 风的地质作用	fēng de dì zhì zuò yòng	1
 副沉积角砾岩	fù chén jī jiǎo lì yán	1
 附法岩石高仑	fù fǎ yán shí gāo lún	1
+涪陵页岩气田	fú líng yè yán qì tián	1
 富铝质火成岩	fù lǚ zhì huǒ chéng yán	1
+抚顺西露天矿	fǔ shùn xī lù tiān kuàng	1
 负异钠花岗岩	fù yì nà huā gǎng yán	1
 抚州地质学院	fǔ zhōu dì zhì xué yuàn	1
 钙碱性火山岩	gài jiǎn xìng huǒ shān yán	1
@@ -4140,8 +6969,13 @@ sort: by_weight
 工程地质问题	gōng chéng dì zhì wèn tí	1
 工程地质岩组	gōng chéng dì zhì yán zǔ	1
 工程地质钻探	gōng chéng dì zhì zuān tàn	1
+工矿仓储用地	gōng kuàng cāng chǔ yòng dì	1
+工矿建设用地	gōng kuàng jiàn shè yòng dì	1
 构造后花岗岩	gòu zào hòu huā gǎng yán	1
+构造控岩控矿	gòu zào kòng yán kòng kuàng	1
 固结成岩作用	gù jié chéng yán zuò yòng	1
+骨矿物质含量	gǔ kuàng wù zhì hán liàng	1
+骨矿物质密度	gǔ kuàng wù zhì mì dù	1
 牯牛潭石灰岩	gǔ niú tán shí huī yán	1
 古铜无球陨石	gǔ tóng wú qiú yǔn shí	1
 滚刀破碎岩石	gǔn dāo pò suì yán shí	1
@@ -4154,7 +6988,9 @@ sort: by_weight
 航空地质方法	háng kōng dì zhì fāng fǎ	1
 河北地质大学	hé běi dì zhì dà xué	1
 河北地质学院	hé běi dì zhì xué yuàn	1
+河北矿冶学院	hé běi kuàng yě xué yuàn	1
 黑泥碳酸铁矿	hēi ní tàn suān tiě kuàng	1
+黑色碳质页岩	hēi sè tàn zhì yè yán	1
 红硅硼铝钙石	hóng guī péng lǚ gài shí	1
 红帘石英片岩	hóng lián shí yīng piàn yán	1
 红硫锑砷钠矿	hóng liú tī shēn nà kuàng	1
@@ -4162,18 +6998,23 @@ sort: by_weight
 红条毛肤石鳖	hóng tiáo máo fū shí biē	1
 后生成岩作用	hòu shēng chéng yán zuò yòng	1
 湖北地质学院	hú běi dì zhì xué yuàn	1
+笏山金矿事故	hù shān jīn kuàng shì gù	1
 华东地质学院	huá dōng dì zhì xué yuàn	1
 花岗岩层下的	huā gǎng yán céng xià de	1
 花岗岩化变质	huā gǎng yán huà biàn zhì	1
 花岗岩类岩石	huā gǎng yán lèi yán shí	1
 花岗岩型铀矿	huā gǎng yán xíng yóu kuàng	1
 花岗状火成岩	huā gǎng zhuàng huǒ chéng yán	1
+化学沉积矿床	huà xué chén jī kuàng chuáng	1
 环硅酸盐矿物	huán guī suān yán kuàng wù	1
 环境地质调查	huán jìng dì zhì diào chá	1
 环境地质问题	huán jìng dì zhì wèn tí	1
 环境水文地质	huán jìng shuǐ wén dì zhì	1
+黄铁炭质页岩	huáng tiě tàn zhì yè yán	1
+黄铁碳质页岩	huáng tiě tàn zhì yè yán	1
 灰岩喜鹊苣苔	huī yán xǐ què jù tái	1
 灰岩皱叶报春	huī yán zhòu yè bào chūn	1
+混合岩化矿床	hùn hé yán huà kuàng chuáng	1
 火色硫锑银矿	huǒ sè liú tī yín kuàng	1
 火山沉积矿床	huǒ shān chén jī kuàng chuáng	1
 火山地质公园	huǒ shān dì zhì gōng yuán	1
@@ -4183,27 +7024,53 @@ sort: by_weight
 火山岩型铀矿	huǒ shān yán xíng yóu kuàng	1
 火山柱状节理	huǒ shān zhù zhuàng jié lǐ	1
 火星岩石列表	huǒ xīng yán shí liè biǎo	1
+及多种矿物质	jí duō zhǒng kuàng wù zhì	1
+机械沉积矿床	jī xiè chén jī kuàng chuáng	1
 基性磷锰铁矿	jī xìng lín měng tiě kuàng	1
 基性磷铁锰矿	jī xìng lín tiě měng kuàng	1
 坚固稳定岩石	jiān gù wěn dìng yán shí	1
 碱性岩型铀矿	jiǎn xìng yán xíng yóu kuàng	1
+焦作矿业学院	jiāo zuò kuàng yè xué yuàn	1
+焦作路矿学堂	jiāo zuò lù kuàng xué táng	1
 捷边科夫火山	jié biān kē fū huǒ shān	1
+接触变质矿床	jiē chù biàn zhì kuàng chuáng	1
+金矿开采公司	jīn kuàng kāi cǎi gōng sī	1
 进行水文地质	jìn xíng shuǐ wén dì zhì	1
 居间灰岩黄芩	jū jiān huī yán huáng qín	1
+开采的小矿井	kāi cǎi de xiǎo kuàng jǐng	1
 块状硫砷铜矿	kuài zhuàng liú shēn tóng kuàng	1
+矿产资源勘查	kuàng chǎn zī yuán kān chá	1
+矿床充水因素	kuàng chuáng chōng shuǐ yīn sù	1
+矿大南湖校区	kuàng dà nán hú xiào qū	1
+矿工的安全帽	kuàng gōng de ān quán mào	1
+矿井反风装置	kuàng jǐng fǎn fēng zhuāng zhì	1
+矿井富水系数	kuàng jǐng fù shuǐ xì shù	1
+矿块结构要素	kuàng kuài jié gòu yào sù	1
 矿区地质环境	kuàng qū dì zhì huán jìng	1
+矿区平均品位	kuàng qū píng jūn pǐn wèi	1
 矿山地质工作	kuàng shān dì zhì gōng zuò	1
 矿山基建地质	kuàng shān jī jiàn dì zhì	1
 矿山岩石力学	kuàng shān yán shí lì xué	1
+矿山总体布置	kuàng shān zǒng tǐ bù zhì	1
+矿石工业品级	kuàng shí gōng yè pǐn jí	1
+矿务铁路学堂	kuàng wù tiě lù xué táng	1
+矿务铁路总局	kuàng wù tiě lù zǒng jú	1
+矿物性皮质素	kuàng wù xìng pí zhì sù	1
+矿岩氧化自燃	kuàng yán yǎng huà zì rán	1
+矿业秩序整顿	kuàng yè zhì xù zhěng dùn	1
 蓝色石蕊试纸	lán sè shí ruǐ shì zhǐ	1
 蓝闪石片岩相	lán shǎn shí piàn yán xiāng	1
+利明顿矿泉市	lì míng dùn kuàng quán shì	1
 粒状岩石风化	lì zhuàng yán shí fēng huà	1
+炼钢用铁矿石	liàn gāng yòng tiě kuàng shí	1
 链硅酸盐矿物	liàn guī suān yán kuàng wù	1
+炼铁用铁矿石	liàn tiě yòng tiě kuàng shí	1
 灵应岩石桅子	líng yīng yán shí wéi zǐ	1
 硫铋铜银铅矿	liú bì tóng yín qiān kuàng	1
 硫代酸盐矿物	liú dài suān yán kuàng wù	1
 硫锑铋铁铜矿	liú tī bì tiě tóng kuàng	1
 硫柱辉铜锑矿	liú zhù huī tóng tī kuàng	1
+潞安矿业集团	lù ān kuàng yè jí tuán	1
 鹿寨香桥岩溶	lù zhài xiāng qiáo yán róng	1
 铝硅酸盐矿物	lǚ guī suān yán kuàng wù	1
 绿色凝灰岩组	lǜ sè níng huī yán zǔ	1
@@ -4213,7 +7080,12 @@ sort: by_weight
 冒纳罗亚火山	mào nà luó yà huǒ shān	1
 茂纳洛亚火山	mào nà luò yà huǒ shān	1
 煤层地质基础	méi céng dì zhì jī chǔ	1
+煤层顶板页岩	méi céng dǐng bǎn yè yán	1
+煤层瓦斯含量	méi céng wǎ sī hán liàng	1
+煤矿安全监察	méi kuàng ān quán jiān chá	1
+煤矿历史遗址	méi kuàng lì shǐ yí zhǐ	1
 煤田地质勘探	méi tián dì zhì kān tàn	1
+煤与瓦斯突出	méi yǔ wǎ sī tū chū	1
 木里灰岩黄芩	mù lǐ huī yán huáng qín	1
 南石灰岩山脉	nán shí huī yán shān mài	1
 内力地质作用	nèi lì dì zhì zuò yòng	1
@@ -4222,10 +7094,13 @@ sort: by_weight
 片麻状花岗岩	piàn má zhuàng huā gǎng yán	1
 普通硫锑铅矿	pǔ tōng liú tī qiān kuàng	1
 普通球粒陨石	pǔ tōng qiú lì yǔn shí	1
+气化热液矿床	qì huà rè yè kuàng chuáng	1
+浅成热液矿床	qiǎn chéng rè yè kuàng chuáng	1
 强力陨石魔法	qiáng lì yǔn shí mó fǎ	1
 切削破碎岩石	qiē xiāo pò suì yán shí	1
 亲花岗岩矿床	qīn huā gǎng yán kuàng chuáng	1
 倾斜岩石巷道	qīng xié yán shí hàng dào	1
+氢氧化物矿物	qīng yǎng huà wù kuàng wù	1
 球粒亮晶灰岩	qiú lì liàng jīng huī yán	1
 球粒泥晶灰岩	qiú lì ní jīng huī yán	1
 球粒微晶灰岩	qiú lì wēi jīng huī yán	1
@@ -4235,9 +7110,15 @@ sort: by_weight
 热力破碎岩石	rè lì pò suì yán shí	1
 人为地质灾害	rén wéi de zhì zāi hài	1
 熔火山碎屑岩	róng huǒ shān suì xiè yán	1
+三菱金属矿业	sān líng jīn shǔ kuàng yè	1
+砂矿边沿基岩	shā kuàng biān yán jī yán	1
+山东路矿公司	shān dōng lù kuàng gōng sī	1
 山洪地质灾害	shān hóng dì zhì zāi hài	1
+山西潞安矿业	shān xī lù ān kuàng yè	1
 舍维留奇火山	shě wéi liú qí huǒ shān	1
+深成热液矿床	shēn chéng rè yè kuàng chuáng	1
 砷硫锑铜银矿	shēn liú tī tóng yín kuàng	1
+深热矿井通风	shēn rè kuàng jǐng tōng fēng	1
 省地质测绘院	shěng dì zhì cè huì yuàn	1
 省煤田地质局	shěng méi tián dì zhì jú	1
 生物地质化学	shēng wù dì zhì huà xué	1
@@ -4258,6 +7139,7 @@ sort: by_weight
 石油地质储量	shí yóu dì zhì chǔ liàng	1
 双硅酸盐矿物	shuāng guī suān yán kuàng wù	1
 水滑结晶灰岩	shuǐ huá jié jīng huī yán	1
+水力开采矿井	shuǐ lì kāi cǎi kuàng jǐng	1
 水碳酸钙铀矿	shuǐ tàn suān gài yóu kuàng	1
 水文地质参数	shuǐ wén dì zhì cān shù	1
 水文地质勘察	shuǐ wén dì zhì kān chá	1
@@ -4275,24 +7157,45 @@ sort: by_weight
 覃家庙石灰岩	tán jiā miào shí huī yán	1
 探明地质储量	tàn míng dì zhì chǔ liàng	1
 碳质球粒陨石	tàn zhì qiú lì yǔn shí	1
+特征变质矿物	tè zhēng biàn zhì kuàng wù	1
 藤壶比尔岩石	téng hú bǐ ěr yán shí	1
 天河板石灰岩	tiān hé bǎn shí huī yán	1
+铜矿指示植物	tóng kuàng zhǐ shì zhí wù	1
 同生成岩作用	tóng shēng chéng yán zuò yòng	1
+屯兰煤矿事故	tún lán méi kuàng shì gù	1
 外力地质作用	wài lì dì zhì zuò yòng	1
 外力碎屑砾岩	wài lì suì xiè lì yán	1
+外生成矿作用	wài shēng chéng kuàng zuò yòng	1
+晚期岩浆矿床	wǎn qī yán jiāng kuàng chuáng	1
 网硅酸盐矿物	wǎng guī suān yán kuàng wù	1
 伟晶岩型铀矿	wěi jīng yán xíng yóu kuàng	1
+伟俊矿业集团	wěi jùn kuàng yè jí tuán	1
 微亮晶石灰岩	wēi liàng jīng shí huī yán	1
 五大连池火山	wǔ dà lián chí huǒ shān	1
 武汉地质学院	wǔ hàn dì zhì xué yuàn	1
 无化石石灰岩	wú huà shí shí huī yán	1
 吴家坪石灰岩	wú jiā píng shí huī yán	1
+五矿崇文金城	wǔ kuàng chóng wén jīn chéng	1
+五矿二十三冶	wǔ kuàng èr shí sān yě	1
+五矿经易期货	wǔ kuàng jīng yì qī huò	1
 西安地质学院	xī ān dì zhì xué yuàn	1
 夕拉科加陨石	xī lā kē jiā yǔn shí	1
 锡砷硫钒铜矿	xī shēn liú fán tóng kuàng	1
+稀有元素矿床	xī yǒu yuán sù kuàng chuáng	1
+现代盐湖矿床	xiàn dài yán hú kuàng chuáng	1
 腺灰岩紫地榆	xiàn huī yán zǐ dì yú	1
+斜方晶系矿物	xié fāng jīng xì kuàng wù	1
 斜方硫锑铅矿	xié fāng liú tī qiān kuàng	1
+新疆矿冶学院	xīn jiāng kuàng yě xué yuàn	1
+新疆新鑫矿业	xīn jiāng xīn xīn kuàng yè	1
+徐州矿务集团	xú zhōu kuàng wù jí tuán	1
 玄武质凝灰岩	xuán wǔ zhì níng huī yán	1
+岩浆成矿作用	yán jiāng chéng kuàng zuò yòng	1
+岩浆分结矿床	yán jiāng fēn jié kuàng chuáng	1
+岩浆期后矿床	yán jiāng qī hòu kuàng chuáng	1
+岩矿鉴定取样	yán kuàng jiàn dìng qǔ yàng	1
+兖矿煤化公司	yǎn kuàng méi huà gōng sī	1
+岩矿心采取率	yán kuàng xīn cǎi qǔ lǜ	1
 岩溶倒虹吸管	yán róng dào hóng xī guǎn	1
 岩溶断块山地	yán róng duàn kuài shān dì	1
 岩溶断陷盆地	yán róng duàn xiàn pén dì	1
@@ -4352,58 +7255,91 @@ sort: by_weight
 岩石钻磨工具	yán shí zuān mó gōng jù	1
 砚瓦山石灰岩	yàn wǎ shān shí huī yán	1
 杨柳岗石灰岩	yáng liǔ gǎng shí huī yán	1
+杨庄红色页岩	yáng zhuāng hóng sè yè yán	1
 页硅酸盐矿物	yè guī suān yán kuàng wù	1
 冶金地质学院	yě jīn dì zhì xué yuàn	1
 野柳地质公园	yě liǔ dì zhì gōng yuán	1
 易落上层岩石	yì luò shàng céng yán shí	1
+英岗岭矿务局	yīng gǎng lǐng kuàng wù jú	1
 硬硫铋铅铜矿	yìng liú bì qiān tóng kuàng	1
 油气地质勘探	yóu qì dì zhì kān tàn	1
 原地生物灰岩	yuán dì shēng wù huī yán	1
+原生晕找矿法	yuán shēng yūn zhǎo kuàng fǎ	1
 原始地质编录	yuán shǐ dì zhì biān lù	1
 原油地质储量	yuán yóu dì zhì chǔ liàng	1
 杂色灰岩鹪鹛	zá sè huī yán jiāo méi	1
+早期岩浆矿床	zǎo qī yán jiāng kuàng chuáng	1
 正斑花岗质岩	zhèng bān huā gǎng zhì yán	1
+蒸发沉积矿床	zhēng fā chén jī kuàng chuáng	1
 滞后弧火山岩	zhì hòu hú huǒ shān yán	1
 重硫铋铜铅矿	zhòng liú bì tóng qiān kuàng	1
+中南矿冶学院	zhōng nán kuàng yě xué yuàn	1
+中兴煤矿公司	zhōng xīng méi kuàng gōng sī	1
 柱硫铋铜铅矿	zhù liú bì tóng qiān kuàng	1
 柱硫锑铅银矿	zhù liú tī qiān yín kuàng	1
 竹叶状石灰岩	zhú yè zhuàng shí huī yán	1
+住友金属矿山	zhù yǒu jīn shǔ kuàng shān	1
+紫金矿业集团	zǐ jīn kuàng yè jí tuán	1
 梓门桥石灰岩	zǐ mén qiáo shí huī yán	1
 自然地质灾害	zì rán de zhì zāi hài	1
 紫色石蕊试液	zǐ sè shí ruǐ shì yè	1
 紫石英号事件	zǐ shí yīng hào shì jiàn	1
+总平巷矿井口	zǒng píng hàng kuàng jǐng kǒu	1
+采矿许可证年检	cǎi kuàng xǔ kě zhèng nián jiǎn	1
 层状硅酸盐矿物	céng zhuàng guī suān yán kuàng wù	1
 超镁铁质岩分类	chāo měi tiě zhì yán fēn lèi	1
 冲回压岩石突出	chōng huí yā yán shí tū chū	1
 纯橄无球粒陨石	chún gǎn wú qiú lì yǔn shí	1
 粗球粒玄武岩的	cū qiú lì xuán wǔ yán de	1
+单层崩落采矿法	dān céng bēng luò cǎi kuàng fǎ	1
 岛状硅酸盐矿物	dǎo zhuàng guī suān yán kuàng wù	1
+地球化学探矿法	dì qiú huà xué tàn kuàng fǎ	1
 低山沟谷型岩溶	dī shān gōu gǔ xíng yán róng	1
+地下矿开拓方法	dì xià kuàng kāi tuò fāng fǎ	1
 地质学的类比法	dì zhì xué de lèi bǐ fǎ	1
 电气绿泥石英岩	diàn qì lǜ ní shí yīng yán	1
 断块山地型岩溶	duàn kuài shān dì xíng yán róng	1
 断陷盆地型岩溶	duàn xiàn pén dì xíng yán róng	1
+钒钛磁铁矿矿床	fán tài cí tiě kuàng kuàng chuáng	1
+放射性元素矿床	fàng shè xìng yuán sù kuàng chuáng	1
+非金属矿物制品	fēi jīn shǔ kuàng wù zhì pǐn	1
+分层崩落采矿法	fēn céng bēng luò cǎi kuàng fǎ	1
+分段崩落采矿法	fēn duàn bēng luò cǎi kuàng fǎ	1
+分段矿房采矿法	fēn duàn kuàng fáng cǎi kuàng fǎ	1
 峰丛谷地型岩溶	fēng cóng gǔ dì xíng yán róng	1
 峰丛洼地型岩溶	fēng cóng wā dì xíng yán róng	1
 风化壳型铝土矿	fēng huà ké xíng lǚ tǔ kuàng	1
 峰林谷地型岩溶	fēng lín gǔ dì xíng yán róng	1
 峰林平原型岩溶	fēng lín píng yuán xíng yán róng	1
 富钙无球粒陨石	fù gài wú qiú lì yǔn shí	1
+富含多种矿物质	fù hán duō zhǒng kuàng wù zhì	1
 橄辉无球粒陨石	gǎn huī wú qiú lì yǔn shí	1
 更长环斑花岗岩	gèng cháng huán bān huā gǎng yán	1
 工业矿物和岩石	gōng yè kuàng wù hé yán shí	1
 孤峰波地型岩溶	gū fēng bō dì xíng yán róng	1
 古铜钙无粒陨石	gǔ tóng gài wú lì yǔn shí	1
+广泛应用于矿山	guǎng fàn yìng yòng yú kuàng shān	1
 航空地质甸方法	háng kōng dì zhì diān fāng fǎ	1
 花岗岩化成矿说	huā gǎng yán huà chéng kuàng shuō	1
 环状硅酸盐矿物	huán zhuàng guī suān yán kuàng wù	1
 架状硅酸盐矿物	jià zhuàng guī suān yán kuàng wù	1
+金属非金属矿山	jīn shǔ fēi jīn shǔ kuàng shān	1
+金属互化物矿物	jīn shǔ hù huà wù kuàng wù	1
+绝对瓦斯涌出量	jué duì wǎ sī yǒng chū liàng	1
+矿井进风流净化	kuàng jǐng jìn fēng liú jìng huà	1
+矿井提升防坠器	kuàng jǐng tí shēng fáng zhuì qì	1
+矿井通风静压头	kuàng jǐng tōng fēng jìng yā tóu	1
+矿坑涌水量预测	kuàng kēng yǒng shuǐ liàng yù cè	1
 链状硅酸盐矿物	liàn zhuàng guī suān yán kuàng wù	1
+露天矿采剥方法	lù tiān kuàng cǎi bō fāng fǎ	1
+美国页岩油产量	měi guó yè yán yóu chǎn liàng	1
 贫钙无球粒陨石	pín gài wú qiú lì yǔn shí	1
 群状硅酸盐矿物	qún zhuàng guī suān yán kuàng wù	1
 热带季风型岩溶	rè dài jì fēng xíng yán róng	1
 钛辉无球粒陨石	tài huī wú qiú lì yǔn shí	1
 顽火无球粒陨石	wán huǒ wú qiú lì yǔn shí	1
+五元素建造矿床	wǔ yuán sù jiàn zào kuàng chuáng	1
+矽卡岩型铜矿床	xī kǎ yán xíng tóng kuàng chuáng	1
 新疆煤田地质局	xīn jiāng méi tián dì zhì jú	1
 氧矾多矾酸盐矿	yǎng fán duō fán suān yán kuàng	1
 原始无球粒陨石	yuán shǐ wú qiú lì yǔn shí	1
@@ -4413,13 +7349,17 @@ sort: by_weight
 爆破地面大块岩石	bào pò dì miàn dà kuài yán shí	1
 爆破角砾岩型铀矿	bào pò jiǎo lì yán xíng yóu kuàng	1
 北极地质研究所岩	běi jí dì zhì yán jiū suǒ yán	1
+非铀矿山排氡通风	fēi yóu kuàng shān pái dōng tōng fēng	1
+硅质页岩及石煤层	guī zhì yè yán jí shí méi céng	1
 含煤岩系成因类型	hán méi yán xì chéng yīn lèi xíng	1
 含煤岩系旋回结构	hán méi yán xì xuán huí jié gòu	1
 航空地质调查方法	háng kōng dì zhì diào chá fāng fǎ	1
 环境水文地质调查	huán jìng shuǐ wén dì zhì diào chá	1
 火山深成联合岩群	huǒ shān shēn chéng lián hé yán qún	1
 近海煤型含煤岩系	jìn hǎi méi xíng hán méi yán xì	1
+矿井通风速度压头	kuàng jǐng tōng fēng sù dù yā tóu	1
 矿区水文地质条件	kuàng qū shuǐ wén dì zhì tiáo jiàn	1
+六苴含铜砂岩矿床	liù jū hán tóng shā yán kuàng chuáng	1
 普氏岩石强度指数	pǔ shì yán shí qiáng dù zhǐ shù	1
 强斯型圆锥洗煤机	qiáng sī xíng yuán zhuī xǐ méi jī	1
 生物球粒亮晶灰岩	shēng wù qiú lì liàng jīng huī yán	1
