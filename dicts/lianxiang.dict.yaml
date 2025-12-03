@@ -2896,7 +2896,7 @@ sort: by_weight
 拜耳莱定律	bài ěr lái dìng lǜ	1
 拜耳命名法	bài ěr mìng míng fǎ	1
 拜耳乌丁根	bài ěr wū dīng gēn	1
-白发变黑发	bái fà biàn hēi fā	1
+白发变黑发	bái fà biàn hēi fà	1
 百法明门论	bǎi fǎ míng mén lùn	1
 白发魔女传	bái fà mó nǚ zhuàn	1
 摆放的位置	bǎi fàng de wèi zhì	1
@@ -4492,6 +4492,7 @@ sort: by_weight
 帮你带孩子	bāng nǐ dài hái zi	1
 帮你一个忙	bāng nǐ yí gè máng	1
 帮你做家务	bāng nǐ zuò jiā wù	1
+帮派内黑话	bāng pài nèi hēi huà	1
 帮亲不帮理	bāng qīn bù bāng lǐ	1
 棒球大联盟	bàng qiú dà lián méng	1
 棒球代表队	bàng qiú dài biǎo duì	1
@@ -11291,7 +11292,6 @@ sort: by_weight
 不得不答应	bù dé bù dā yìng	1
 不得不等待	bù dé bù děng dài	1
 不得不低头	bù dé bù dī tóu	1
-不得不调整	bù dé bú diào zhěng	1
 不得不放弃	bù dé bú fàng qì	1
 不得不放手	bù dé bú fàng shǒu	1
 不得不分开	bù dé bù fēn kāi	1
@@ -11325,6 +11325,7 @@ sort: by_weight
 不得不叹服	bù dé bú tàn fú	1
 不得不提到	bù dé bù tí dào	1
 不得不提起	bù dé bù tí qǐ	1
+不得不调整	bù dé bù tiáo zhěng	1
 不得不停止	bù dé bù tíng zhǐ	1
 不得不同意	bù dé bù tóng yì	1
 不得不吐槽	bù dé bù tǔ cáo	1
@@ -55854,8 +55855,10 @@ sort: by_weight
 个性的一面	gè xìng de yí miàn	1
 个性的造型	gè xìng de zào xíng	1
 个性定制化	gè xìng dìng zhì huà	1
+个性化壁纸	gè xìng huà bì zhǐ	1
 个性化表达	gè xìng huà biǎo dá	1
 个性化标签	gè xìng huà biāo qiān	1
+个性化标识	gè xìng huà biāo shí	1
 个性化差异	gè xìng huà chā yì	1
 个性化产品	gè xìng huà chǎn pǐn	1
 个性化程度	gè xìng huà chéng dù	1
@@ -55863,22 +55866,26 @@ sort: by_weight
 个性化发展	gè xìng huà fā zhǎn	1
 个性化方案	gè xìng huà fāng àn	1
 个性化风格	gè xìng huà fēng gé	1
+个性化封面	gè xìng huà fēng miàn	1
 个性化辅导	gè xìng huà fǔ dǎo	1
 个性化服务	gè xìng huà fú wù	1
 个性化功能	gè xìng huà gōng néng	1
 个性化管理	gè xìng huà guǎn lǐ	1
 个性化广告	gè xìng huà guǎng gào	1
+个性化海报	gè xìng huà hǎi bào	1
 个性化健康	gè xìng huà jiàn kāng	1
 个性化检索	gè xìng huà jiǎn suǒ	1
 个性化教学	gè xìng huà jiào xué	1
 个性化教育	gè xìng huà jiào yù	1
 个性化课程	gè xìng huà kè chéng	1
 个性化空间	gè xìng huà kōng jiān	1
+个性化礼物	gè xìng huà lǐ wù	1
 个性化旅游	gè xìng huà lǚ yóu	1
 个性化内容	gè xìng huà nèi róng	1
 个性化培训	gè xìng huà péi xùn	1
 个性化培养	gè xìng huà péi yǎng	1
 个性化配置	gè xìng huà pèi zhì	1
+个性化皮肤	gè xìng huà pí fū	1
 个性化品牌	gè xìng huà pǐn pái	1
 个性化色彩	gè xìng huà sè cǎi	1
 个性化设计	gè xìng huà shè jì	1
@@ -55891,14 +55898,18 @@ sort: by_weight
 个性化特点	gè xìng huà tè diǎn	1
 个性化特征	gè xìng huà tè zhēng	1
 个性化体验	gè xìng huà tǐ yàn	1
+个性化贴纸	gè xìng huà tiē zhǐ	1
+个性化图案	gè xìng huà tú àn	1
 个性化推荐	gè xìng huà tuī jiàn	1
 个性化推送	gè xìng huà tuī sòng	1
+个性化文案	gè xìng huà wén àn	1
 个性化问题	gè xìng huà wèn tí	1
 个性化消费	gè xìng huà xiāo fèi	1
 个性化信息	gè xìng huà xìn xī	1
 个性化需求	gè xìng huà xū qiú	1
 个性化选择	gè xìng huà xuǎn zé	1
 个性化学习	gè xìng huà xué xí	1
+个性化样式	gè xìng huà yàng shì	1
 个性化要求	gè xìng huà yāo qiú	1
 个性化医疗	gè xìng huà yī liáo	1
 个性化营销	gè xìng huà yíng xiāo	1
@@ -55909,6 +55920,8 @@ sort: by_weight
 个性化诊疗	gè xìng huà zhěn liáo	1
 个性化指导	gè xìng huà zhǐ dǎo	1
 个性化治疗	gè xìng huà zhì liáo	1
+个性化主题	gè xìng huà zhǔ tí	1
+个性化装扮	gè xìng huà zhuāng bàn	1
 个性化装饰	gè xìng huà zhuāng shì	1
 个性化装修	gè xìng huà zhuāng xiū	1
 个性婚纱照	gè xìng hūn shā zhào	1
@@ -67634,6 +67647,7 @@ sort: by_weight
 行业毛利率	háng yè máo lì lǜ	1
 行业门槛低	háng yè mén kǎn dī	1
 行业内公司	háng yè nèi gōng sī	1
+行业内黑话	háng yè nèi hēi huà	1
 行业内竞争	háng yè nèi jìng zhēng	1
 行业内领先	háng yè nèi lǐng xiān	1
 行业内企业	háng yè nèi qǐ yè	1
@@ -71456,6 +71470,7 @@ sort: by_weight
 红富士苹果	hóng fù shì píng guǒ	1
 鸿福堂集团	hóng fú táng jí tuán	1
 红拂夜奔人	hóng fú yè bēn rén	1
+宏福苑大火	hóng fú yuàn dà huǒ	1
 烘干机设备	hōng gān jī shè bèi	1
 红高粱家族	hóng gāo liang jiā zú	1
 洪格尔苏木	hóng gé ěr sū mù	1
@@ -97640,6 +97655,7 @@ sort: by_weight
 考试总成绩	kǎo shì zǒng chéng jì	1
 考试综合症	kǎo shì zōng hé zhèng	1
 靠手艺吃饭	kào shǒu yì chī fàn	1
+靠休息缓解	kào xiū xi huǎn jiě	1
 考选委员会	kǎo xuǎn wěi yuán huì	1
 烤鸭好好吃	kǎo yā hǎo hǎo chī	1
 考研参考书	kǎo yán cān kǎo shū	1
@@ -105167,6 +105183,9 @@ sort: by_weight
 脸部的皮肤	liǎn bù de pí fū	1
 脸部的线条	liǎn bù de xiàn tiáo	1
 脸部红血丝	liǎn bù hóng xuè sī	1
+连不了电脑	lián bù liǎo diàn nǎo	1
+连不了设备	lián bù liǎo shè bèi	1
+连不了手机	lián bù liǎo shǒu jī	1
 脸部去角质	liǎn bù qù jiǎo zhì	1
 连不上电脑	lián bú shàng diàn nǎo	1
 敛财的工具	liǎn cái de gōng jù	1
@@ -137215,6 +137234,7 @@ sort: by_weight
 全自动相机	quán zì dòng xiàng jī	1
 全自动运行	quán zì dòng yùn xíng	1
 全自动智能	quán zì dòng zhì néng	1
+圈子内黑话	quān zi nèi hēi huà	1
 全资孙公司	quán zī sūn gōng sī	1
 全资子企业	quán zī zǐ qǐ yè	1
 全总文工团	quán zǒng wén gōng tuán	1
@@ -166941,6 +166961,7 @@ sort: by_weight
 体制和机制	tǐ zhì hé jī zhì	1
 体制内单位	tǐ zhì nèi dān wèi	1
 体制内工作	tǐ zhì nèi gōng zuò	1
+体制内黑话	tǐ zhì nèi hēi huà	1
 体质人类学	tǐ zhì rén lèi xué	1
 体制性障碍	tǐ zhì xìng zhàng ài	1
 体质虚弱者	tǐ zhì xū ruò zhě	1
@@ -206156,6 +206177,7 @@ sort: by_weight
 一眼看上去	yì yǎn kàn shàng qù	1
 一眼看世界	yì yǎn kàn shì jiè	1
 一砚梨花雨	yī yàn lí huā yǔ	1
+已严肃学习	yǐ yán sù xué xí	1
 一眼望到底	yì yǎn wàng dào dǐ	1
 一眼一万年	yì yǎn yí wàn nián	1
 一样不一样	yí yàng bù yí yàng	1
@@ -209533,6 +209555,7 @@ sort: by_weight
 用行动说话	yòng xíng dòng shuō huà	1
 用行动证明	yòng xíng dòng zhèng míng	1
 永兴派出所	yǒng xīng pài chū suǒ	1
+用休息缓解	yòng xiū xi huǎn jiě	1
 永续盘存制	yǒng xù pán cún zhì	1
 用眼睛看的	yòng yǎn jing kàn de	1
 永曜北小学	yǒng yào běi xiǎo xué	1
@@ -251483,7 +251506,7 @@ sort: by_weight
 黑端扁趾铁甲	hēi duān biǎn zhǐ tiě jiǎ	1
 黑恶势力犯罪	hēi è shì lì fàn zuì	1
 黑恶势力团伙	hēi è shì lì tuán huǒ	1
-黑发的犬夜叉	hēi fā de quǎn yè chā	1
+黑发的犬夜叉	hēi fà de quǎn yè chā	1
 黑腹果蝇基因	hēi fù guǒ yíng jī yīn	1
 黑格尔的哲学	hēi gé ěr de zhé xué	1
 黑公交轮奸案	hēi gōng jiāo lún jiān àn	1
@@ -283628,6 +283651,7 @@ sort: by_weight
 终不察夫民心	zhōng bù chá fū mín xīn	1
 中部高速公路	zhōng bù gāo sù gōng lù	1
 仲裁庭的组成	zhòng cái tíng de zǔ chéng	1
+中场休息环节	zhōng chǎng xiū xi huán jié	1
 中超颁奖典礼	zhōng chāo bān jiǎng diǎn lǐ	1
 中朝边界条约	zhōng cháo biān jiè tiáo yuē	1
 中超最佳新人	zhōng chāo zuì jiā xīn rén	1
@@ -285176,6 +285200,7 @@ sort: by_weight
 自由共产主义	zì yóu gòng chǎn zhǔ yì	1
 自由国际秩序	zì yóu guó jì zhì xù	1
 自由国际主义	zì yóu guó jì zhǔ yì	1
+自由活动环节	zì yóu huó dòng huán jié	1
 自由基起始剂	zì yóu jī qǐ shǐ jì	1
 自由价格机制	zì yóu jià gé jī zhì	1
 自由进步主义	zì yóu jìn bù zhǔ yì	1
@@ -286497,7 +286522,7 @@ sort: by_weight
 白发愁看泪眼枯	bái fà chóu kàn lèi yǎn kū	1
 白发戴花君莫笑	bái fà dài huā jūn mò xiào	1
 白发卢郎情未已	bái fà lú láng qíng wèi yǐ	1
-白发人送黑发人	bái fà rén sòng hēi fā rén	1
+白发人送黑发人	bái fà rén sòng hēi fà rén	1
 白发无情侵老境	bái fà wú qíng qīn lǎo jìng	1
 白发萧萧卧泽中	bái fà xiāo xiāo wò zé zhōng	1
 白发渔樵江渚上	bái fà yú qiáo jiāng zhǔ shàng	1
