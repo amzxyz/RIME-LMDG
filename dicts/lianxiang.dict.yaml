@@ -7,7 +7,6 @@ name: lianxiang
 version: "LTS"
 sort: by_weight
 ...
-第一定律	dì yī dìng lǜ	1
 阿巴科群岛	ā bā kē qún dǎo	1
 阿贝比长仪	ā bèi bǐ cháng yí	1
 阿贝不变量	ā bèi bú biàn liàng	4
@@ -3073,7 +3072,6 @@ sort: by_weight
 百度工具栏	bǎi dù gōng jù lán	1
 百度关键词	bǎi dù guān jiàn cí	1
 百度开放云	bǎi dù kāi fàng yún	1
-拜杜科夫岛	bài dù kē fū dǎo	1
 百度客户端	bǎi dù kè hù duān	1
 百度李彦宏	bǎi dù lǐ yàn hóng	1
 百度浏览器	bǎi dù liú lǎn qì	1
@@ -3983,7 +3981,6 @@ sort: by_weight
 白云东平站	bái yún dōng píng zhàn	1
 白云朵朵飘	bái yún duǒ duǒ piāo	1
 白云鄂博矿	bái yún è bó kuàng	1
-白云公园站	bái yún gōng yuán zhàn	1
 白云公园站	bái yún gōng yuán zhàn	1
 白云湖公园	bái yún hú gōng yuán	1
 白云湖街道	bái yún hú jiē dào	1
@@ -7958,7 +7955,6 @@ sort: by_weight
 北宇治高中	běi yǔ zhì gāo zhōng	1
 北原多香子	běi yuán duō xiāng zǐ	1
 北园高架路	běi yuán gāo jià lù	1
-北苑路北站	běi yuàn lù běi zhàn	1
 北苑路北站	běi yuàn lù běi zhàn	1
 北院门街道	běi yuàn mén jiē dào	1
 北苑派出所	běi yuàn pài chū suǒ	1
@@ -51992,7 +51988,6 @@ sort: by_weight
 凤凰网时尚	fèng huáng wǎng shí shàng	1
 凤凰网娱乐	fèng huáng wǎng yú lè	1
 凤凰新村站	fèng huáng xīn cūn zhàn	1
-凤凰新村站	fèng huáng xīn cūn zhàn	1
 凤凰新媒体	fèng huáng xīn méi tǐ	1
 凤凰影剧院	fèng huáng yǐng jù yuàn	1
 凤凰院凶真	fèng huáng yuàn xiōng zhēn	1
@@ -62642,7 +62637,6 @@ sort: by_weight
 巩义石窟寺	gǒng yì shí kū sì	1
 公益图书馆	gōng yì tú shū guǎn	1
 公益微电影	gōng yì wēi diàn yǐng	1
-公益西桥站	gōng yì xī qiáo zhàn	1
 公益西桥站	gōng yì xī qiáo zhàn	1
 公益夏令营	gōng yì xià lìng yíng	1
 工艺相结合	gōng yì xiāng jié hé	1
@@ -86536,7 +86530,6 @@ sort: by_weight
 家和万事成	jiā hé wàn shì chéng	1
 家和万事惊	jiā hé wàn shì jīng	1
 家和万事兴	jiā hé wàn shì xīng	1
-嘉禾望岗站	jiā hé wàng gǎng zhàn	1
 嘉禾望岗站	jiā hé wàng gǎng zhàn	1
 嘉和园小区	jiā hé yuán xiǎo qū	1
 夹河子水库	jiā hé zǐ shuǐ kù	1
@@ -112156,7 +112149,6 @@ sort: by_weight
 亮相发布会	liàng xiàng fā bù huì	1
 两厢福克斯	liǎng xiāng fú kè sī	1
 良乡南关站	liáng xiāng nán guān zhàn	1
-良乡南关站	liáng xiāng nán guān zhàn	1
 两相三线制	liǎng xiāng sān xiàn zhì	1
 良乡影剧院	liáng xiāng yǐng jù yuàn	1
 两小儿辩日	liǎng xiǎo ér biàn rì	1
@@ -130448,7 +130440,6 @@ sort: by_weight
 农业南路站	nóng yè nán lù zhàn	1
 农业内卷化	nóng yè nèi juǎn huà	1
 农业农村部	nóng yè nóng cūn bù	1
-农业农村部	nóng yè nóng cūn bù	1
 农业农村局	nóng yè nóng cūn jú	1
 农业农村厅	nóng yè nóng cūn tīng	1
 农业气象学	nóng yè qì xiàng xué	1
@@ -147541,7 +147532,6 @@ sort: by_weight
 溶解在水中	róng jiě zài shuǐ zhōng	1
 荣金大戏院	róng jīn dà xì yuàn	1
 荣京东街站	róng jīng dōng jiē zhàn	1
-荣京东街站	róng jīng dōng jiē zhàn	1
 荣久庵宪司	róng jiǔ ān xiàn sī	1
 荣军院广场	róng jūn yuàn guǎng chǎng	1
 融科东南海	róng kē dōng nán hǎi	1
@@ -164147,7 +164137,7 @@ sort: by_weight
 收藏加购率	shōu cáng jiā gòu lǜ	1
 收藏家协会	shōu cáng jiā xié huì	1
 收藏价值高	shōu cáng jià zhí gāo	1
-收藏马未都	shōu cáng mǎ wèi dōu	1
+收藏马未都	shōu cáng mǎ wèi dū	1
 收藏品市场	shōu cáng pǐn shì chǎng	1
 收藏起来吧	shōu cáng qǐ lái ba	1
 收藏艺术品	shōu cáng yì shù pǐn	1
@@ -176799,7 +176789,6 @@ sort: by_weight
 天天座理世	tiān tiān zuò lǐ shì	1
 天天琢磨着	tiān tiān zuó mo zhe	1
 甜筒冰淇淋	tián tǒng bīng qí lín	1
-天通苑北站	tiān tōng yuàn běi zhàn	1
 天通苑北站	tiān tōng yuàn běi zhàn	1
 天通苑东站	tiān tōng yuàn dōng zhàn	1
 天通苑南站	tiān tōng yuàn nán zhàn	1
@@ -210690,13 +210679,11 @@ sort: by_weight
 羊城新八景	yáng chéng xīn bā jǐng	1
 羊齿类植物	yáng chǐ lèi zhí wù	1
 恙虫东方体	yàng chóng dōng fāng tǐ	1
-阳春布德泽	yáng chūn bù dé zé	1
 阳春全垒打	yáng chūn quán lěi dǎ	1
 洋葱炒鸡蛋	yáng cōng chǎo jī dàn	1
 洋葱炒牛肉	yáng cōng chǎo niú ròu	1
 洋葱的味道	yáng cōng de wèi dào	1
 洋葱和大蒜	yáng cōng hé dà suàn	1
-洋葱路由器	yáng cōng lù yóu qì	1
 洋葱切成丝	yáng cōng qiē chéng sī	1
 洋葱形圆顶	yáng cōng xíng yuán dǐng	1
 羊村大崩坏	yáng cūn dà bēng huài	1
@@ -243859,7 +243846,6 @@ sort: by_weight
 自己打自己	zì jǐ dǎ zì jǐ	1
 自己待会儿	zì jǐ dāi huì ér	1
 自己的爱好	zì jǐ de ài hào	1
-自己的爱好	zì jǐ de ài hào	1
 自己的安全	zì jǐ de ān quán	1
 自己的爸妈	zì jǐ de bà mā	1
 自己的百姓	zì jǐ de bǎi xìng	1
@@ -243929,7 +243915,6 @@ sort: by_weight
 自己的脑袋	zì jǐ de nǎo dai	1
 自己的内心	zì jǐ de nèi xīn	1
 自己的能力	zì jǐ de néng lì	1
-自己的能力	zì jǐ de néng lì	1
 自己的年度	zì jǐ de nián dù	1
 自己的努力	zì jǐ de nǔ lì	1
 自己的女儿	zì jǐ de nǚ er	1
@@ -243949,7 +243934,6 @@ sort: by_weight
 自己的日子	zì jǐ de rì zi	1
 自己的弱点	zì jǐ de ruò diǎn	1
 自己的上帝	zì jǐ de shàng dì	1
-自己的身材	zì jǐ de shēn cái	1
 自己的身材	zì jǐ de shēn cái	1
 自己的身份	zì jǐ de shēn fèn	1
 自己的神话	zì jǐ de shén huà	1
@@ -243988,7 +243972,6 @@ sort: by_weight
 自己的无知	zì jǐ de wú zhī	1
 自己的习惯	zì jǐ de xí guàn	1
 自己的希望	zì jǐ de xī wàng	1
-自己的想法	zì jǐ de xiǎng fǎ	1
 自己的想法	zì jǐ de xiǎng fǎ	1
 自己的小窝	zì jǐ de xiǎo wō	1
 自己的写照	zì jǐ de xiě zhào	1
@@ -315111,12 +315094,6 @@ sort: by_weight
 官封弼马心何足	guān fēng bì mǎ xīn hé zú	1
 鳏寡孤独废疾者	guān guǎ gū dú fèi jí zhě	1
 管好自己的嘴巴	guǎn hǎo zì jǐ de zuǐ ba	1
-关键词的相关性	guān jiàn cí de xiāng guān xìng	1
-关键词排名查询	guān jiàn cí pái míng chá xún	1
-关键词排名提升	guān jiàn cí pái míng tí shēng	1
-关键词排名优化	guān jiàn cí pái míng yōu huà	1
-关键词挖掘工具	guān jiàn cí wā jué gōng jù	1
-关键词优化排名	guān jiàn cí yōu huà pái míng	1
 关键链项目管理	guān jiàn liàn xiàng mù guǎn lǐ	1
 关键时刻的表现	guān jiàn shí kè de biǎo xiàn	1
 关键字驱动测试	guān jiàn zì qū dòng cè shì	1
@@ -315540,11 +315517,6 @@ sort: by_weight
 机场旅客吞吐量	jī chǎng lǚ kè tūn tǔ liàng	1
 集成粒子滤波法	jí chéng lì zǐ lǜ bō fǎ	1
 基尔霍夫方程组	jī ěr huò fū fāng chéng zǔ	3
-己二酸二癸基酯	jǐ èr suān èr guǐ jī zhǐ	3
-己二酸二环己酯	jǐ èr suān èr huán jǐ zhǐ	3
-己二酸二异丁酯	jǐ èr suān èr yì dīng zhǐ	3
-己二酸二异癸酯	jǐ èr suān èr yì guǐ zhǐ	3
-己二酸二异辛酯	jǐ èr suān èr yì xīn zhǐ	2
 极服妙采照万方	jí fú miào cǎi zhào wàn fāng	1
 激光粒子计数器	jī guāng lì zǐ jì shù qì	1
 积极思考的力量	jī jí sī kǎo de lì liàng	1
@@ -315742,22 +315714,6 @@ sort: by_weight
 价值的主观理论	jià zhí de zhǔ guān lǐ lùn	1
 甲种换地权益书	jiǎ zhǒng huàn dì quán yì shū	1
 架状硅酸盐矿物	jià zhuàng guī suān yán kuàng wù	1
-甲状腺刺激激素	jiǎ zhuàng xiàn cì jī jī sù	1
-甲状腺刺激抗体	jiǎ zhuàng xiàn cì jī kàng tǐ	1
-甲状腺促素释素	jiǎ zhuàng xiàn cù sù shì sù	1
-甲状腺毒性危象	jiǎ zhuàng xiàn dú xìng wēi xiàng	1
-甲状腺功能低减	jiǎ zhuàng xiàn gōng néng dī jiǎn	1
-甲状腺功能检查	jiǎ zhuàng xiàn gōng néng jiǎn chá	1
-甲状腺功能亢进	jiǎ zhuàng xiàn gōng néng kàng jìn	1
-甲状腺机能不足	jiǎ zhuàng xiàn jī néng bù zú	1
-甲状腺机能低下	jiǎ zhuàng xiàn jī néng dī xià	1
-甲状腺激素抵抗	jiǎ zhuàng xiàn jī sù dǐ kàng	1
-甲状腺激素受体	jiǎ zhuàng xiàn jī sù shòu tǐ	1
-甲状腺乳腺外科	jiǎ zhuàng xiàn rǔ xiàn wài kē	1
-甲状腺素脱碘酶	jiǎ zhuàng xiàn sù tuō diǎn méi	1
-甲状腺相关眼病	jiǎ zhuàng xiàn xiāng guān yǎn bìng	1
-甲状腺抑制试验	jiǎ zhuàng xiàn yì zhì shì yàn	1
-甲状腺最下动脉	jiǎ zhuàng xiàn zuì xià dòng mài	1
 甲子兰酒文物馆	jiǎ zǐ lán jiǔ wén wù guǎn	1
 甲子神将王文卿	jiǎ zǐ shén jiàng wáng wén qīng	1
 甲子乙丑海中金	jiǎ zǐ yǐ chǒu hǎi zhōng jīn	1
@@ -316721,11 +316677,6 @@ sort: by_weight
 取得阶段性进展	qǔ dé jiē duàn xìng jìn zhǎn	1
 取得阶段性胜利	qǔ dé jiē duàn xìng shèng lì	1
 取得决定性胜利	qǔ dé jué dìng xìng shèng lì	1
-取得了明显成效	qǔ dé le míng xiǎn chéng xiào	1
-取得了全面胜利	qǔ dé le quán miàn shèng lì	1
-取得了显著成效	qǔ dé le xiǎn zhù chéng xiào	1
-取得了一些成功	qǔ dé le yì xiē chéng gōng	1
-取得了一些进展	qǔ dé le yì xiē jìn zhǎn	1
 取得历史性突破	qǔ dé lì shǐ xìng tū pò	1
 取得理想的成绩	qǔ dé lǐ xiǎng de chéng jì	1
 取得实质性进展	qǔ dé shí zhì xìng jìn zhǎn	1
@@ -316952,14 +316903,6 @@ sort: by_weight
 热泪盈眶的感觉	rè lèi yíng kuàng de gǎn jué	1
 热利基什福卢德	rè lì jī shí fú lú dé	1
 热力型氮氧化物	rè lì xíng dàn yǎng huà wù	1
-热力学第二定律	rè lì xué dì èr dìng lǜ	3
-热力学第零定律	rè lì xué dì líng dìng lǜ	3
-热力学第三定律	rè lì xué dì sān dìng lǜ	3
-热力学第一定律	rè lì xué dì yī dìng lǜ	3
-热力学基本定律	rè lì xué jī běn dìng lǜ	1
-热力学基本方程	rè lì xué jī běn fāng chéng	1
-热力学基本关系	rè lì xué jī běn guān xì	1
-热力学特性函数	rè lì xué tè xìng hán shù	1
 热脸贴了冷屁股	rè liǎn tiē le lěng pì gu	1
 热烈的中华饭店	rè liè de zhōng huá fàn diàn	1
 热门的旅游景点	rè mén de lǚ yóu jǐng diǎn	1
@@ -317114,26 +317057,10 @@ sort: by_weight
 人免疫缺陷病毒	rén miǎn yì quē xiàn bìng dú	1
 人民北路二段北	rén mín běi lù èr duàn běi	1
 人民北路一段号	rén mín běi lù yí duàn hào	1
-人民币贬值压力	rén mín bì biǎn zhí yā lì	1
-人民币贷款增加	rén mín bì dài kuǎn zēng jiā	1
-人民币的国际化	rén mín bì de guó jì huà	1
-人民币汇率升值	rén mín bì huì lǜ shēng zhí	1
-人民币汇率弹性	rén mín bì huì lǜ tán xìng	1
-人民币汇率指数	rén mín bì huì lǜ zhǐ shù	1
-人民币跨境结算	rén mín bì kuà jìng jié suàn	1
-人民币普通股票	rén mín bì pǔ tōng gǔ piào	1
-人民币升值压力	rén mín bì shēng zhí yā lì	1
-人民币升值预期	rén mín bì shēng zhí yù qī	1
-人民币特种股票	rén mín bì tè zhǒng gǔ piào	1
 人民城市人民建	rén mín chéng shì rén mín jiàn	1
 人民城市为人民	rén mín chéng shì wèi rén mín	1
 人民大会堂宾馆	rén mín dà huì táng bīn guǎn	1
 人民代表大会制	rén mín dài biǎo dà huì zhì	1
-人民的美好生活	rén mín de měi hǎo shēng huó	1
-人民的日常生活	rén mín de rì cháng shēng huó	1
-人民的生活水平	rén mín de shēng huó shuǐ píng	1
-人民的生活质量	rén mín de shēng huó zhì liàng	1
-人民的幸福生活	rén mín de xìng fú shēng huó	1
 人民电业为人民	rén mín diàn yè wèi rén mín	1
 人民东正教阵线	rén mín dōng zhèng jiào zhèn xiàn	1
 人民法院案例选	rén mín fǎ yuàn àn lì xuǎn	1
@@ -317262,10 +317189,6 @@ sort: by_weight
 人鱼号沉没事故	rén yú hào chén mò shì gù	1
 人与化工俱不易	rén yǔ huà gōng jù bú yì	1
 人与梅花一样清	rén yǔ méi huā yí yàng qīng	1
-人与人之间关系	rén yú rén zhī jiān guān xì	1
-人与人之间交往	rén yú rén zhī jiān jiāo wǎng	1
-人与人之间距离	rén yú rén zhī jiān jù lí	1
-人与人之间相处	rén yú rén zhī jiān xiāng chǔ	1
 人与生物圈计划	rén yǔ shēng wù quān jì huà	1
 人与桃花隔不远	rén yǔ táo huā gé bù yuǎn	1
 人于心上起经纶	rén yú xīn shàng qǐ jīng lún	1
@@ -317319,41 +317242,19 @@ sort: by_weight
 软骨发育不全症	ruǎn gǔ fā yù bù quán zhèng	1
 瑞典太阳系模型	ruì diǎn tài yáng xì mó xíng	1
 若干黄单胞杆菌	ruò gān huáng dān bāo gǎn jūn	1
-若有人对你们说	ruò yǒu rén duì nǐ men shuō	1
 萨雷特氧化反应	sà léi tè yǎng huà fǎn yìng	1
 塞耳迈耶尔方程	sāi ěr mài yé ěr fāng chéng	1
-三氨基三硝基苯	sān ān jī sān xiāo jī běn	1
-三苯基二氯化膦	sān běn jī èr lǜ huà lìn	1
-三苯基膦配合物	sān běn jī lìn pèi hé wù	1
-三苯基锡化合物	sān běn jī xī huà hé wù	1
 三碲代亚砷酸钴	sān dì dài yà shēn suān gǔ	1
 三碲代亚砷酸钾	sān dì dài yà shēn suān jiǎ	1
 三碘甲腺原氨酸	sān diǎn jiǎ xiàn yuán ān suān	1
 三碘甲状腺氨酸	sān diǎn jiǎ zhuàng xiàn ān suān	1
 三碘甲状腺激素	sān diǎn jiǎ zhuàng xiàn jī sù	1
-三叠氮三硝基苯	sān dié dàn sān xiāo jī běn	1
 三芳基甲烷染料	sān fāng jī jiǎ wán rǎn liào	1
-三氟甲磺酸甲酯	sān fú jiǎ huáng suān jiǎ zhǐ	1
-三氟甲磺酸硝酰	sān fú jiǎ huáng suān xiāo xiān	1
-三氟甲磺酸亚铊	sān fú jiǎ huáng suān yà tā	1
-三氟甲磺酸氧钒	sān fú jiǎ huáng suān yǎng fán	1
-三氟甲磺酸铀酰	sān fú jiǎ huáng suān yóu xiān	1
-三氟甲硫醇亚铜	sān fú jiǎ liú chún yà tóng	1
 三氟亚硝基甲烷	sān fú yà xiāo jī jiǎ wán	1
 三过氧化三丙酮	sān guò yǎng huà sān bǐng tóng	1
 三国之见龙卸甲	sān guó zhī jiàn lóng xiè jiǎ	1
 三级方程式赛车	sān jí fāng chéng shì sài chē	1
-三甲苯三羰基钼	sān jiǎ běn sān tāng jī mù	1
 三钾二枸橼酸铋	sān jiǎ èr jǔ yuán suān bì	1
-三甲港海滨乐园	sān jiǎ gǎng hǎi bīn lè yuán	1
-三甲基叠氮硅烷	sān jiǎ jī dié dàn guī wán	1
-三甲基二氯化砷	sān jiǎ jī èr lǜ huà shēn	1
-三甲基硅基乙炔	sān jiǎ jī guī jī yǐ quē	1
-三甲基硅基乙烷	sān jiǎ jī guī jī yǐ wán	1
-三甲基硅基乙烯	sān jiǎ jī guī jī yǐ xī	1
-三甲基一氯硅烷	sān jiǎ jī yī lǜ guī wán	1
-三甲基乙酸甲酯	sān jiǎ jī yǐ suān jiǎ zhǐ	2
-三甲基乙酸乙酯	sān jiǎ jī yǐ suān yǐ zhǐ	2
 三甲氧基苯丙酮	sān jiǎ yǎng jī běn bǐng tóng	1
 三甲氧基苯甲醛	sān jiǎ yǎng jī běn jiǎ quán	1
 三甲氧基苯甲酸	sān jiǎ yǎng jī běn jiǎ suān	1
@@ -317362,25 +317263,16 @@ sort: by_weight
 三九皮炎平软膏	sān jiǔ pí yán píng ruǎn gāo	1
 三聚氰胺尸清漆	sān jù qíng àn shī qīng qī	3
 三均三甲苯基铱	sān jūn sān jiǎ běn jī yī	1
-三磷酸胞苷二钠	sān lín suān bāo gān èr nà	1
-三磷酸脱氧腺苷	sān lín suān tuō yǎng xiàn gān	1
-三磷酸腺苷二钠	sān lín suān xiàn gān èr nà	1
-三磷酸腺苷辅酶	sān lín suān xiàn gān fǔ méi	1
 三硫代亚砷酸钾	sān liú dài yà shēn suān jiǎ	1
 三硫代亚砷酸锂	sān liú dài yà shēn suān lǐ	1
 三硫代亚砷酸钠	sān liú dài yà shēn suān nà	1
 三氯合铅酸甲铵	sān lǜ hé qiān suān jiǎ ǎn	1
-三氯化六氨合钴	sān lǜ huà liù ān hé gǔ	1
 三氯亚硝基甲烷	sān lǜ yà xiāo jī jiǎ wán	1
 三氯异三聚氰酸	sān lǜ yì sān jù qíng suān	2
 三氯異三聚氰酸	sān lǜ yì sān jù qíng suān	1
-三羧酸转运体系	sān suō suān zhuǎn yùn tǐ xì	1
 三硒代亚砷酸钾	sān xī dài yà shēn suān jiǎ	1
 三硒代亚砷酸钠	sān xī dài yà shēn suān nà	1
-三硝基均苯三胺	sān xiāo jī jūn běn sān àn	1
-三硝基三叠氮苯	sān xiāo jī sān dié dàn běn	1
 三溴合铅酸甲铵	sān xiù hé qiān suān jiǎ ǎn	1
-三乙胺氢氟酸盐	sān yǐ àn qīng fú suān yán	1
 三乙二醇二甲醚	sān yǐ èr chún èr jiǎ mí	1
 三乙二酸苯六酯	sān yǐ èr suān běn liù zhǐ	1
 三乙烯亚胺三嗪	sān yǐ xī yà àn sān qín	3
@@ -317706,7 +317598,6 @@ sort: by_weight
 斯特里贝克曲线	sī tè lǐ bèi kè qū xiàn	1
 斯特瑞克装甲车	sī tè ruì kè zhuāng jiǎ chē	1
 斯托尔波沃条约	sī tuō ěr bō wò tiáo yuē	1
-斯托尔博沃条约	sī tuō ěr bó wò tiáo yuē	1
 四硝酸根合金酸	sì xiāo suān gēn hé jīn suān	1
 四溴环己二烯酮	sì xiù huán jǐ èr xī tóng	1
 思益梵天所问经	sī yì fàn tiān suǒ wèn jīng	1
@@ -317858,7 +317749,6 @@ sort: by_weight
 托德西拉斯条约	tuō dé xī lā sī tiáo yuē	1
 驼峰喜马赤翅甲	tuó fēng xǐ mǎ chì chì jiǎ	1
 脱磷酸裸盖菇素	tuō lín suān luǒ gài gū sù	1
-陀螺仪定向测量	tuó luó yí dìng xiàng cè liáng	1
 脱镁叶绿甲酯酸	tuō měi yè lǜ jiǎ zhǐ suān	1
 拓扑伽罗瓦理论	tuò pū gā luó wǎ lǐ lùn	1
 拓扑量子场理论	tuò pū liàng zǐ chǎng lǐ lùn	1
@@ -320027,3 +319917,33 @@ sort: by_weight
 木防己去石膏加茯苓芒硝汤	mù fáng jǐ qù shí gāo jiā fú líng máng xiāo tāng	1
 桂枝去芍药加蜀漆牡蛎龙骨救逆汤	guì zhī qù sháo yào jiā shǔ qī mǔ lì lóng gǔ jiù nì tāng	1
 玉女煎去牛膝熟地加细生地元参方	yù nǚ jiān qù niú xī shú dì jiā xì shēng dì yuán shēn fāng	1
+sān běn jī xī huà hé wù	sān běn jī xī huà hé wù	1
+sān jiǎ jī guī jī yǐ xī	sān jiǎ jī guī jī yǐ xī	1
+sān lǜ huà liù ān hé gǔ	sān lǜ huà liù ān hé gǔ	1
+sān běn jī èr lǜ huà lìn	sān běn jī èr lǜ huà lìn	1
+sān běn jī lìn pèi hé wù	sān běn jī lìn pèi hé wù	1
+sān jiǎ jī guī jī yǐ quē	sān jiǎ jī guī jī yǐ quē	1
+sān jiǎ jī guī jī yǐ wán	sān jiǎ jī guī jī yǐ wán	1
+sān jiǎ jī yī lǜ guī wán	sān jiǎ jī yī lǜ guī wán	1
+sān ān jī sān xiāo jī běn	sān ān jī sān xiāo jī běn	1
+sān jiǎ jī èr lǜ huà shēn	sān jiǎ jī èr lǜ huà shēn	1
+sān jiǎ jī yǐ suān yǐ zhǐ	sān jiǎ jī yǐ suān yǐ zhǐ	2
+sān jiǎ běn sān tāng jī mù	sān jiǎ běn sān tāng jī mù	1
+sān jiǎ jī dié dàn guī wán	sān jiǎ jī dié dàn guī wán	1
+sān jiǎ jī yǐ suān jiǎ zhǐ	sān jiǎ jī yǐ suān jiǎ zhǐ	2
+sān lín suān bāo gān èr nà	sān lín suān bāo gān èr nà	1
+sān xiāo jī jūn běn sān àn	sān xiāo jī jūn běn sān àn	1
+ruò yǒu rén duì nǐ men shuō	ruò yǒu rén duì nǐ men shuō	1
+sān dié dàn sān xiāo jī běn	sān dié dàn sān xiāo jī běn	1
+sān fú jiǎ huáng suān yà tā	sān fú jiǎ huáng suān yà tā	1
+sān fú jiǎ liú chún yà tóng	sān fú jiǎ liú chún yà tóng	1
+sān lín suān xiàn gān èr nà	sān lín suān xiàn gān èr nà	1
+sān xiāo jī sān dié dàn běn	sān xiāo jī sān dié dàn běn	1
+sān jiǎ gǎng hǎi bīn lè yuán	sān jiǎ gǎng hǎi bīn lè yuán	1
+sān lín suān xiàn gān fǔ méi	sān lín suān xiàn gān fǔ méi	1
+sān suō suān zhuǎn yùn tǐ xì	sān suō suān zhuǎn yùn tǐ xì	1
+sān fú jiǎ huáng suān jiǎ zhǐ	sān fú jiǎ huáng suān jiǎ zhǐ	1
+sān fú jiǎ huáng suān yǎng fán	sān fú jiǎ huáng suān yǎng fán	1
+sān fú jiǎ huáng suān yóu xiān	sān fú jiǎ huáng suān yóu xiān	1
+sān lín suān tuō yǎng xiàn gān	sān lín suān tuō yǎng xiàn gān	1
+sān fú jiǎ huáng suān xiāo xiān	sān fú jiǎ huáng suān xiāo xiān	1
