@@ -43279,7 +43279,7 @@ sort: by_weight
 多少钱一米	duō shǎo qián yì mǐ	1
 多少钱一年	duō shǎo qián yì nián	1
 多少钱一瓶	duō shǎo qián yì píng	1
-多少钱一平	duō shǎo qián yī píng	1
+多少钱一平	duō shǎo qián yì píng	1
 多少钱一台	duō shǎo qián yì tái	1
 多少钱一套	duō shǎo qián yí tào	1
 多少钱一天	duō shǎo qián yì tiān	1
@@ -69677,7 +69677,7 @@ sort: by_weight
 还记得曾经	hái jì de céng jīng	1
 还记得多少	hái jì de duō shǎo	1
 还记得那年	hái jì de nà nián	1
-还记得我不	hái jì de wǒ bù	1
+还记得我不	hái jì de wǒ bu	1
 还记得我吗	hái jì de wǒ ma	1
 还记得我妈	hái jì de wǒ mā	1
 还记得我么	hái jì de wǒ me	1
@@ -146837,6 +146837,7 @@ sort: by_weight
 认为不可能	rèn wéi bù kě néng	1
 人为的破坏	rén wéi de pò huài	1
 人为的因素	rén wéi de yīn sù	1
+人为什么要	rén wèi shén me yào	1
 认为是自己	rèn wéi shì zì jǐ	1
 认为我们俩	rèn wéi wǒ men liǎ	1
 人为误操作	rén wéi wù cāo zuò	1
@@ -169177,7 +169178,7 @@ sort: by_weight
 丝克伍事件	sī kè wǔ shì jiàn	1
 司寇伦定理	sī kòu lún dìng lǐ	1
 斯库顿定理	sī kù dùn dìng lǐ	1
-四库一平台	sì kù yī píng tái	1
+四库一平台	sì kù yì píng tái	1
 四块钱的饼	sì kuài qián de bǐng	1
 四狂神战记	sì kuáng shén zhàn jì	1
 撕拉式面膜	sī lā shì miàn mó	1
@@ -251603,16 +251604,11 @@ sort: by_weight
 玻尔原子理论	bō ěr yuán zǐ lǐ lùn	1
 玻尔原子模型	bō ěr yuán zǐ mó xíng	5
 玻尔兹曼常量	bō ěr zī màn cháng liàng	2
-玻尔兹曼常量	bō ěr zī màn cháng liàng	1
 玻尔兹曼常数	bō ěr zī màn cháng shù	3
 波尔兹曼常数	bō ěr zī màn cháng shù	1
-玻尔兹曼常数	bō ěr zī màn cháng shù	1
 玻尔兹曼定律	bō ěr zī màn dìng lǜ	4
-玻尔兹曼定律	bō ěr zī màn dìng lǜ	2
-玻尔兹曼方程	bō ěr zī màn fāng chéng	1
 玻尔兹曼方程	bō ěr zī màn fāng chéng	1
 玻尔兹曼分布	bō ěr zī màn fēn bù	3
-玻尔兹曼分布	bō ěr zī màn fēn bù	2
 波尔兹曼分布	bō ěr zī màn fēn bù	1
 玻尔兹曼公式	bō ěr zī màn gōng shì	2
 玻尔兹曼关系	bō ěr zī màn guān xì	4
@@ -251621,7 +251617,6 @@ sort: by_weight
 玻尔兹曼因子	bō ěr zī màn yīn zǐ	2
 玻尔兹曼原理	bō ěr zī màn yuán lǐ	1
 波尔兹曼原理	bō ěr zī màn yuán lǐ	1
-玻尔兹曼原理	bō ěr zī màn yuán lǐ	1
 播放背景音乐	bō fàng bèi jǐng yīn yuè	1
 伯夫里拉福雷	bó fū lǐ lā fú léi	1
 伯格曼的电影	bó gé màn de diàn yǐng	1
@@ -306885,8 +306880,6 @@ sort: by_weight
 爱你却要说分手	ài nǐ què yào shuō fēn shǒu	1
 爱你所以离开你	ài nǐ suǒ yǐ lí kāi nǐ	1
 爱你在心口难开	ài nǐ zài xīn kǒu nán kāi	1
-爱奇艺迷雾剧场	ài qí yì mí wù jù chǎng	1
-爱琴海购物公园	ài qín hǎi gòu wù gōng yuán	1
 爱情败犬向前冲	ài qíng bài quǎn xiàng qián chōng	1
 爱情冲昏了头脑	ài qíng chōng hūn le tóu nǎo	1
 爱情到底是什么	ài qíng dào dǐ shì shén me	1
@@ -306894,9 +306887,7 @@ sort: by_weight
 爱情没什么道理	ài qíng méi shén me dào lǐ	1
 爱情没有那么美	ài qíng méi yǒu nà me měi	1
 爱情能用钱买吗	ài qíng néng yòng qián mǎi ma	1
-爱情是一种遇见	ài qíng shì yì zhǒng yù jiàn	1
 爱情悠悠药草香	ài qíng yōu yōu yào cǎo xiāng	1
-爱情中的两个人	ài qíng zhōng de liǎng gè rén	1
 爱情最好的模样	ài qíng zuì hǎo de mú yàng	1
 爱情最好的样子	ài qíng zuì hǎo de yàng zi	1
 爱情最美的样子	ài qíng zuì měi de yàng zi	1
@@ -306921,8 +306912,6 @@ sort: by_weight
 爱斯普拉纳地街	ài sī pǔ lā nà dì jiē	1
 爱死亡与机器人	ài sǐ wáng yǔ jī qì rén	1
 哀恸的人有福了	āi tòng de rén yǒu fú le	1
-埃文斯羟醛反应	āi wén sī qiǎng quán fǎn yìng	1
-埃文思羟醛反应	āi wén sī qiǎng quán fǎn yìng	1
 爱我就别伤害我	ài wǒ jiù bié shāng hài wǒ	1
 爱我就别想太多	ài wǒ jiù bié xiǎng tài duō	1
 爱我你就抱抱我	ài wǒ nǐ jiù bào bào wǒ	1
@@ -306963,12 +306952,9 @@ sort: by_weight
 爱真的需要勇气	ài zhēn de xū yào yǒng qì	1
 癌症基因组图谱	ái zhèng jī yīn zǔ tú pǔ	1
 爱知万国博览会	ài zhī wàn guó bó lǎn huì	1
-爱自己的那个人	ài zì jǐ de nà ge rén	1
 矮子里面拔将军	ǎi zi lǐ miàn bá jiāng jūn	1
-案板上的擀面杖	àn bǎn shàng de gǎn miàn zhàng	1
 暗堡里的三恶人	àn bǎo lǐ de sān è rén	1
 岸滨交替单胞菌	àn bīn jiāo tì dān bāo jūn	1
-按病种分值付费	àn bìng zhǒng fēn zhí fù fèi	1
 安德鲁索沃条约	ān dé lǔ suǒ wò tiáo yuē	1
 氨酚柴胡注射液	ān fēn chái hú zhù shè yè	1
 氨酚羟考酮胶囊	ān fēn qiǎng kǎo tóng jiāo náng	1
@@ -307009,8 +306995,6 @@ sort: by_weight
 安培林娱乐公司	ān péi lín yú lè gōng sī	1
 安全才是第一位	ān quán cái shì dì yī wèi	1
 安全操作与维护	ān quán cāo zuò yǔ wéi hù	1
-安全带提醒装置	ān quán dài tí xǐng zhuāng zhì	1
-安全带未系提醒	ān quán dài wèi xì tí xǐng	1
 安全到达目的地	ān quán dào dá mù dì dì	1
 安全导航运算符	ān quán dǎo háng yùn suàn fú	1
 安全得不到保障	ān quán dé bú dào bǎo zhàng	1
@@ -307084,8 +307068,6 @@ sort: by_weight
 盎萨格电导理论	àng sà gé diàn dǎo lǐ lùn	1
 嗷嗷待哺的孩子	áo áo dài bǔ de hái zi	1
 嗷嗷待哺的婴儿	áo áo dài bǔ de yīng ér	1
-澳大利亚牧牛犬	ào dà lì yà mù niú quǎn	1
-澳大利亚犭更犬	ào dà lì yà quǎn gèng quǎn	1
 奥弗曼重排反应	ào fú màn chóng pái fǎn yìng	1
 奥林达历史中心	ào lín dá lì shǐ zhōng xīn	1
 澳纽军团纪念日	ào niǔ jūn tuán jì niàn rì	1
@@ -307185,11 +307167,6 @@ sort: by_weight
 八氯合二铼酸钾	bā lǜ hé èr lái suān jiǎ	1
 八氯合二钼酸钾	bā lǜ hé èr mù suān jiǎ	1
 把你捧在手心里	bǎ nǐ pěng zài shǒu xīn lǐ	1
-八年级上册语文	bā nián jí shàng cè yǔ wén	1
-八年级数学上册	bā nián jí shù xué shàng cè	1
-八年级数学下册	bā nián jí shù xué xià cè	1
-八年级物理上册	bā nián jí wù lǐ shàng cè	1
-八年级下册英语	bā nián jí xià cè yīng yǔ	1
 八旗二马路小学	bā qí èr mǎ lù xiǎo xué	1
 把钱花在刀刃上	bǎ qián huā zài dāo rèn shàng	1
 八千里路云与月	bā qiān lǐ lù yún yǔ yuè	1
@@ -307239,34 +307216,22 @@ sort: by_weight
 八月十五过端阳	bā yuè shí wǔ guò duān yáng	1
 八月十五看龙灯	bā yuè shí wǔ kàn lóng dēng	1
 八月十五夜玩月	bā yuè shí wǔ yè wán yuè	1
-把责任推给别人	bǎ zé rèn tuī gěi bié rén	1
 坝镇国土资源所	bà zhèn guó tǔ zī yuán suǒ	1
 八字还没有一撇	bā zì hái méi yǒu yì piě	1
-把自己包裹起来	bǎ zì jǐ bāo guǒ qǐ lái	1
-把自己封闭起来	bǎ zì jǐ fēng bì qǐ lái	1
-把自己关在房间	bǎ zì jǐ guān zài fáng jiān	1
-把自己关在家里	bǎ zì jǐ guān zài jiā lǐ	1
 把最好的给孩子	bǎ zuì hǎo de gěi hái zi	1
 白百何和陈羽凡	bái bǎi hé hé chén yǔ fán	1
 白白嫩嫩的皮肤	bái bái nèn nèn de pí fū	1
-百白破联合疫苗	bǎi bái pò lián hé yì miáo	1
-百白破三联疫苗	bǎi bái pò sān lián yì miáo	1
 白斑翅拟蜡嘴雀	bái bān chì nǐ là zuǐ què	1
 百般红紫斗芳菲	bǎi bān hóng zǐ dòu fāng fēi	1
 白边侧足海天牛	bái biān cè zú hǎi tiān niú	1
 百变小樱魔术卡	bǎi biàn xiǎo yīng mó shù kǎ	1
-百步亭花园路站	bǎi bù tíng huā yuán lù zhàn	1
 白菜地里耍镰刀	bái cài dì lǐ shuǎ lián dāo	1
 白炒三七花田鸡	bái chǎo sān qī huā tián jī	1
-白城市生态新区	bái chéng shì shēng tài xīn qū	1
 百尺虾须在玉钩	bǎi chǐ xiā xū zài yù gōu	1
 白川乡合掌造村	bái chuān xiāng hé zhǎng zào cūn	1
 白带显微镜检查	bái dài xiǎn wēi jìng jiǎn chá	1
-白蛋白测定试剂	bái dàn bái cè dìng shì jì	1
 白到发光的皮肤	bái dào fā guāng de pí fū	1
 白点翅拟蜡嘴雀	bái diǎn chì nǐ là zuǐ què	1
-白癜风发病原因	bái diàn fēng fā bìng yuán yīn	1
-白癜风康复工程	bái diàn fēng kāng fù gōng chéng	1
 摆动性眼球震颤	bǎi dòng xìng yǎn qiú zhèn chàn	1
 百度百科的解释	bǎi dù bǎi kē de jiě shì	1
 百度等搜索引擎	bǎi dù děng sōu suǒ yǐn qíng	1
@@ -307277,7 +307242,6 @@ sort: by_weight
 百度手机输入法	bǎi dù shǒu jī shū rù fǎ	1
 百度信息流广告	bǎi dù xìn xī liú guǎng gào	1
 百度总裁张亚勤	bǎi dù zǒng cái zhāng yà qín	1
-白垩纪末大灭绝	bái è jì mò dà miè jué	1
 白垩奇异伪蕈甲	bái è qí yì wěi xùn jiǎ	1
 白垩异特伪蕈甲	bái è yì tè wěi xùn jiǎ	1
 白蛾周氏啮小蜂	bái é zhōu shì niè xiǎo fēng	1
@@ -307467,7 +307431,6 @@ sort: by_weight
 版纳热带花卉园	bǎn nà rè dài huā huì yuán	1
 班宁堡陆军基地	bān níng bǎo lù jūn jī dì	1
 半坡公交枢纽站	bàn pō gōng jiāo shū niǔ zhàn	1
-版权归属原作者	bǎn quán guī shǔ yuán zuò zhě	1
 版权及免责声明	bǎn quán jí miǎn zé shēng míng	1
 版权属于原作者	bǎn quán shǔ yú yuán zuò zhě	1
 版权与免责声明	bǎn quán yǔ miǎn zé shēng míng	1
@@ -308098,10 +308061,6 @@ sort: by_weight
 比赛的最后时刻	bǐ sài de zuì hòu shí kè	1
 比赛还没有结束	bǐ sài hái méi yǒu jié shù	1
 比赛最后一分钟	bǐ sài zuì hòu yì fēn zhōng	1
-碧色全无翠色深	bì sè quán wú cuì sè shēn	1
-碧纱窗下水沈烟	bì shā chuāng xià shuǐ shěn yān	1
-碧沙岗公园北门	bì shā gǎng gōng yuán běi mén	1
-碧沙岗公园西门	bì shā gǎng gōng yuán xī mén	1
 碧纱帐里梦魂香	bì shā zhàng lǐ mèng hún xiāng	1
 碧山还被暮云遮	bì shān hái bèi mù yún zhē	1
 彼氏彼女的故事	bǐ shì bǐ nǚ de gù shì	1
@@ -308344,11 +308303,6 @@ sort: by_weight
 病毒抗体复合物	bìng dú kàng tǐ fù hé wù	1
 病毒性脑膜脑炎	bìng dú xìng nǎo mó nǎo yán	1
 冰墩墩和雪容融	bīng dūn dūn hé xuě róng róng	1
-丙二醛二甲缩醛	bǐng èr quán èr jiǎ suō quán	1
-丙二酸二异丙酯	bǐng èr suān èr yì bǐng zhǐ	1
-丙二酸环异丙酯	bǐng èr suān huán yì bǐng zhǐ	1
-丙二酸亚异丙酯	bǐng èr suān yà yì bǐng zhǐ	1
-丙二酸酯合成法	bǐng èr suān zhǐ hé chéng fǎ	1
 并非完全不可能	bìng fēi wán quán bù kě néng	1
 饼干老师星星糖	bǐng gān lǎo shī xīng xīng táng	1
 病骨支离纱帽宽	bìng gǔ zhī lí shā mào kuān	1
@@ -315124,9 +315078,6 @@ sort: by_weight
 观音奉旨上长安	guān yīn fèng zhǐ shàng cháng ān	1
 观音赴会问原因	guān yīn fù huì wèn yuán yīn	1
 观音救难现鱼篮	guān yīn jiù nán xiàn yú lán	1
-观音山梦幻海岸	guān yīn shān mèng huàn hǎi àn	1
-观音岩摩岩造像	guān yīn yán mó yán zào xiàng	1
-观音院唐僧脱难	guān yīn yuàn táng sēng tuō nán	1
 观于海者难为水	guān yú hǎi zhě nán wéi shuǐ	1
 灌园叟晚逢仙女	guàn yuán sǒu wǎn féng xiān nǚ	1
 观众对他的印象	guān zhòng duì tā de yìn xiàng	1
@@ -315186,9 +315137,6 @@ sort: by_weight
 光华教育基金会	guāng huá jiào yù jī jīn huì	1
 光华数位新天地	guāng huá shù wèi xīn tiān dì	1
 光滑水平桌面上	guāng huá shuǐ píng zhuō miàn shàng	1
-光化学当量定律	guāng huà xué dāng liàng dìng lǜ	1
-光化学第二定律	guāng huà xué dì èr dìng lǜ	1
-光化学第一定律	guāng huà xué dì yī dìng lǜ	1
 光辉基督清真寺	guāng huī jī dū qīng zhēn sì	1
 光辉级航空母舰	guāng huī jí háng kōng mǔ jiàn	1
 广汇美居物流园	guǎng huì měi jū wù liú yuán	1
@@ -315404,10 +315352,6 @@ sort: by_weight
 红橙黄绿蓝靛紫	hóng chéng huáng lǜ lán diàn zǐ	1
 红橙黄绿青蓝紫	hóng chéng huáng lǜ qīng lán zǐ	1
 红隼反装甲火箭	hóng sǔn fǎn zhuāng jiǎ huǒ jiàn	1
-红细胞分布宽度	hóng xì bāo fēn bù kuān dù	1
-红细胞聚集指数	hóng xì bāo jù jí zhǐ shù	1
-红细胞平均体积	hóng xì bāo píng jūn tǐ jī	1
-红血球生成激素	hóng xuè qiú shēng chéng jī sù	1
 弘扬社会正能量	hóng yáng shè huì zhèng néng liàng	1
 猴耳环消炎颗粒	hóu ěr huán xiāo yán kē lì	1
 后金庸武侠圣经	hòu jīn yōng wǔ xiá shèng jīng	1
@@ -315702,10 +315646,6 @@ sort: by_weight
 甲型肝炎减毒活	jiǎ xíng gān yán jiǎn dú huó	1
 甲型肝炎灭活疫	jiǎ xíng gān yán miè huó yì	1
 甲戌乙亥山头火	jiǎ xū yǐ hài shān tóu huǒ	1
-甲氧基苯丙炔酸	jiǎ yǎng jī běn bǐng quē suān	1
-甲氧基苯酚乙酸	jiǎ yǎng jī běn fēn yǐ suān	1
-甲氧基苯甲硫醚	jiǎ yǎng jī běn jiǎ liú mí	1
-甲氧基哌拉酰胺	jiǎ yǎng jī pài lā xiān àn	1
 甲寅年总理中学	jiǎ yín nián zǒng lǐ zhōng xué	1
 甲寅乙卯大溪水	jiǎ yín yǐ mǎo dà xī shuǐ	1
 价值的主观理论	jià zhí de zhǔ guān lǐ lùn	1
@@ -315717,11 +315657,6 @@ sort: by_weight
 间氨基三氟甲苯	jiān ān jī sān fú jiǎ běn	1
 间氨基乙酰苯胺	jiān ān jī yǐ xiān běn àn	1
 坚持下去的理由	jiān chí xià qù de lǐ yóu	1
-坚持自己的初心	jiān chí zì jǐ de chū xīn	1
-坚持自己的风格	jiān chí zì jǐ de fēng gé	1
-坚持自己的选择	jiān chí zì jǐ de xuǎn zé	1
-坚持自己的意见	jiān chí zì jǐ de yì jiàn	1
-坚持自己的原则	jiān chí zì jǐ de yuán zé	1
 监督计算机方法	jiān dū jì suàn jī fāng fǎ	1
 肩峰撞击综合征	jiān fēng zhuàng jī zōng hé zhēng	1
 艰苦朴素的作风	jiān kǔ pǔ sù de zuò fēng	1
@@ -315910,8 +315845,6 @@ sort: by_weight
 卡利什和平条约	kǎ lì shí hé píng tiáo yuē	1
 卡斯奇里恩战役	kǎ sī qí lǐ ēn zhàn yì	1
 凯恩斯利率效应	kǎi ēn sī lì lǜ xiào yìng	1
-开尔文环量定理	kāi ěr wén huán liàng dìng lǐ	1
-开尔文环流定理	kāi ěr wén huán liú dìng lǐ	1
 开弓没有回头箭	kāi gōng méi yǒu huí tóu jiàn	1
 看到网友的评论	kàn dào wǎng yǒu de píng lùn	1
 看得最远的地方	kàn de zuì yuǎn de dì fāng	1
@@ -316206,12 +316139,6 @@ sort: by_weight
 马来酸溴苯那敏	mǎ lái suān xiù běn nà mǐn	2
 马来酸伊索拉定	mǎ lái suān yī suǒ lā dìng	1
 马来酸左旋氨氯	mǎ lái suān zuǒ xuán ān lǜ	1
-马六甲表扬勋章	mǎ liù jiǎ biǎo yáng xūn zhāng	1
-马六甲成员勋章	mǎ liù jiǎ chéng yuán xūn zhāng	1
-马六甲辉煌勋章	mǎ liù jiǎ huī huáng xūn zhāng	1
-马六甲联足球会	mǎ liù jiǎ lián zú qiú huì	1
-马六甲培风中学	mǎ liù jiǎ péi fēng zhōng xué	1
-马六甲苏丹王朝	mǎ liù jiǎ sū dān wáng cháo	1
 妈妈我想对你说	mā ma wǒ xiǎng duì nǐ shuō	1
 麻绳专挑细处断	má shéng zhuān tiāo xì chù duàn	1
 马斯洛需求理论	mǎ sī luò xū qiú lǐ lùn	1
@@ -317167,8 +317094,6 @@ sort: by_weight
 人体新陈代谢率	rén tǐ xīn chén dài xiè lǜ	1
 人体自身免疫力	rén tǐ zì shēn miǎn yì lì	1
 人体最大的器官	rén tǐ zuì dà de qì guān	1
-人为什么要活着	rén wèi shén me yào huó zhe	1
-人为什么要结婚	rén wèi shén me yào jié hūn	1
 人为丝轻那忍折	rén wéi sī qīng nà rěn zhé	1
 人文和社会科学	rén wén hé shè huì kē xué	1
 人文与社会科学	rén wén yǔ shè huì kē xué	1
@@ -317581,14 +317506,8 @@ sort: by_weight
 四氯乙烯共聚物	sì lǜ yǐ xī gòng jù wù	2
 斯米尔宁斯基角	sī mǐ ěr níng sī jī jiǎo	1
 四年级数学上册	sì nián jí shù xué shàng cè	1
-四羟基合铝酸钠	sì qiǎng jī hé lǚ suān nà	1
-四羟基合锌酸钠	sì qiǎng jī hé xīn suān nà	1
 四羟甲基氯化𬭸	sì qiǎng jiǎ jī lǜ huà lín	1
 斯泰林的甲虫壳	sī tài lín de jiǎ chóng ké	1
-四羰基合钴酸汞	sì tāng jī hé gǔ suān gǒng	1
-四羰基合钴酸钾	sì tāng jī hé gǔ suān jiǎ	1
-四羰基合钴酸钠	sì tāng jī hé gǔ suān nà	1
-四羰基铁酸二钠	sì tāng jī tiě suān èr nà	1
 斯特赖桑德效应	sī tè lài sāng dé xiào yìng	1
 斯特里贝克曲线	sī tè lǐ bèi kè qū xiàn	1
 斯特瑞克装甲车	sī tè ruì kè zhuāng jiǎ chē	1
@@ -317972,7 +317891,6 @@ sort: by_weight
 纤溶酶原激活物	xiān róng méi yuán jī huó wù	1
 显式和隐式方法	xiǎn shì hé yǐn shì fāng fǎ	1
 先天成骨不全症	xiān tiān chéng gǔ bù quán zhèng	1
-先天性小眼球症	xiān tiān xìng xiǎo yǎn qiú zhèng	1
 纤维鼻咽镜检查	xiān wéi bí yān jìng jiǎn chá	1
 纤维蛋白溶解酶	xiān wéi dàn bái róng jiě méi	1
 纤维蛋白溶解药	xiān wéi dàn bái róng jiě yào	1
@@ -318146,12 +318064,6 @@ sort: by_weight
 新能源补贴政策	xīn néng yuán bǔ tiē zhèng cè	1
 新生儿单纯疱疹	xīn shēng ér dān chún pào zhěn	1
 信息化和数字化	xìn xī huà hé shù zì huà	1
-新鲜的白鳞鲑鱼	xīn xiān de bái lín guī yú	1
-新鲜的长嘴泥鳅	xīn xiān de cháng zuǐ ní qiū	1
-新鲜的光滑大鱼	xīn xiān de guāng huá dà yú	1
-新鲜的滑皮鲭鱼	xīn xiān de huá pí qīng yú	1
-新鲜的阳鳞鲑鱼	xīn xiān de yáng lín guī yú	1
-新鲜的夜鳞鲷鱼	xīn xiān de yè lín diāo yú	1
 新鲜蔬菜和水果	xīn xiān shū cài hé shuǐ guǒ	1
 新鲜水果和蔬菜	xīn xiān shuǐ guǒ hé shū cài	1
 新鲜王子妙事多	xīn xiān wáng zǐ miào shì duō	1
@@ -318238,11 +318150,6 @@ sort: by_weight
 亚氯酸盐氯醋酸	yà lǜ suān yán lǜ cù suān	1
 亚酸的低价金属	yà suān de dī jià jīn shǔ	1
 亚特兰蒂斯传说	yà tè lán dì sī chuán shuō	1
-亚硝基化滴定法	yà xiāo jī huà dī dìng fǎ	1
-亚硝基三羰合钴	yà xiāo jī sān tāng hé gǔ	1
-亚硝基三羰基钴	yà xiāo jī sān tāng jī gǔ	1
-亚硝基铁氰化钠	yà xiāo jī tiě qíng huà nà	2
-亚硝基铁氰酸钠	yà xiāo jī tiě qíng suān nà	1
 亚硝酸盐的含量	yà xiāo suān yán de hán liàng	1
 亚硝酸异戊酯吸	yà xiāo suān yì wù zhǐ xī	1
 亚乙二氧基噻吩	yà yǐ èr yǎng jī sāi fēn	1
@@ -318532,10 +318439,6 @@ sort: by_weight
 乙烯丙烯共聚物	yǐ xī bǐng xī gòng jù wù	1
 乙烯醋酸乙烯共	yǐ xī cù suān yǐ xī gòng	1
 乙烯高压法聚合	yǐ xī gāo yā fǎ jù hé	2
-乙烯基三丁基锡	yǐ xī jī sān dīng jī xī	1
-乙烯基三氯硅烷	yǐ xī jī sān lǜ guī wán	2
-乙烯基三氯矽烷	yǐ xī jī sān lǜ xī wán	3
-乙烯基异丁基醚	yǐ xī jī yì dīng jī mí	3
 乙烯四羧酸二酐	yǐ xī sì suō suān èr gān	1
 乙醯乙酸酯合成	yǐ xī yǐ suān zhǐ hé chéng	1
 以下单位和个人	yǐ xià dān wèi hé gè rén	1
