@@ -32140,7 +32140,7 @@ sort: by_weight
 单一性原则	dān yī xìng yuán zé	1
 单一制企业	dān yī zhì qǐ yè	1
 单音节语言	dān yīn jié yǔ yán	1
-单硬酯酸铝	dān yìng zhǐ suān lǚ	1
+单硬脂酸铝	dān yìng zhī suān lǚ	1
 单用户模式	dān yòng hù mó shì	1
 但又不知道	dàn yòu bù zhī dào	1
 担忧和烦恼	dān yōu hé fán nǎo	1
@@ -44873,7 +44873,7 @@ sort: by_weight
 二氯乙酰氯	èr lǜ yǐ xiān lǜ	1
 二氯荧光素	èr lǜ yíng guāng sù	1
 二氯萤光素	èr lǜ yíng guāng sù	1
-二氯硬酯酸	èr lǜ yìng zhǐ suān	1
+二氯硬脂酸	èr lǜ yìng zhī suān	1
 二马路街道	èr mǎ lù jiē dào	1
 二茂铁丁酸	èr mào tiě dīng suān	3
 二茂铁甲醛	èr mào tiě jiǎ quán	1
@@ -99546,6 +99546,7 @@ sort: by_weight
 聚氧化乙烯	jù yǎng huà yǐ xī	5
 据央视新闻	jù yāng shì xīn wén	1
 聚氧乙烯醚	jù yǎng yǐ xī mí	1
+聚氧乙烯酯	jù yǎng yǐ xī zhǐ	2
 巨野河街道	jù yě hé jiē dào	1
 聚伊德科特	jù yī dé kē tè	1
 举一个例子	jǔ yí gè lì zi	1
@@ -115651,7 +115652,7 @@ sort: by_weight
 录音和回放	lù yīn hé huí fàng	1
 录音麦克风	lù yīn mài kè fēng	1
 录音室专辑	lù yīn shì zhuān jí	1
-录音转文字	lù yīn zhuǎi wén zì	1
+录音转文字	lù yīn zhuǎn wén zì	1
 录影带首映	lù yǐng dài shǒu yìng	1
 露萤叶甲族	lù yíng yè jiǎ zú	1
 录用公务员	lù yòng gōng wù yuán	1
@@ -139104,7 +139105,7 @@ sort: by_weight
 羟基乙酸钠	qiǎng jī yǐ suān nà	3
 羟基异酞酸	qiǎng jī yì tài suān	3
 羟基乙酰胺	qiǎng jī yǐ xiān àn	1
-羟基硬酯酸	qiǎng jī yìng zhǐ suān	1
+羟基硬脂酸	qiǎng jī yìng zhī suān	1
 腔棘鱼亚纲	qiāng jí yú yà gāng	1
 羟基孕甾酮	qiǎng jī yùn zāi tóng	1
 羟基脂肪酸	qiǎng jī zhī fáng suān	3
@@ -162051,6 +162052,7 @@ sort: by_weight
 史诗级大片	shǐ shī jí dà piàn	1
 什什基夫卡	shí shí jī fū kǎ	1
 什什基夫齐	shí shí jī fū qí	1
+实实际际地	shí shí jì jì dì	1
 史诗级加强	shǐ shī jí jiā qiáng	1
 实时计算机	shí shí jì suàn jī	1
 师氏剑齿象	shī shì jiàn chǐ xiàng	1
@@ -167260,7 +167262,7 @@ sort: by_weight
 双赢的局面	shuāng yíng de jú miàn	1
 双赢的选择	shuāng yíng de xuǎn zé	1
 双影共分红	shuāng yǐng gòng fēn hóng	1
-双硬酯酸铝	shuāng yìng zhǐ suān lǚ	3
+双硬脂酸铝	shuāng yìng zhī suān lǚ	3
 双有理变换	shuāng yǒu lǐ biàn huàn	1
 双有理等价	shuāng yǒu lǐ děng jià	1
 双有理几何	shuāng yǒu lǐ jǐ hé	1
@@ -179889,7 +179891,7 @@ sort: by_weight
 图片与文字	tú piàn yǔ wén zì	1
 图片中看到	tú piàn zhōng kàn dào	1
 图片著作权	tú piàn zhù zuò quán	1
-图片转文字	tú piàn zhuǎi wén zì	1
+图片转文字	tú piàn zhuǎn wén zì	1
 图片自适应	tú piàn zì shì yīng	1
 突破出版社	tū pò chū bǎn shè	1
 突破次元壁	tū pò cì yuán bì	1
@@ -212955,8 +212957,6 @@ sort: by_weight
 异剥橄榄岩	yì bō gǎn lǎn yán	1
 一波接一波	yì bō jiē yì bō	1
 易卜拉希马	yì bo lā xī mǎ	1
-易卜生戏剧	yì bo shēng xì jù	1
-易卜生主义	yì bo shēng zhǔ yì	1
 一步步成长	yí bù bù chéng zhǎng	1
 一步步地走	yí bù bù de zǒu	1
 一步步调整	yí bù bù tiáo zhěng	1
@@ -212983,6 +212983,8 @@ sort: by_weight
 已步入正轨	yǐ bù rù zhèng guǐ	1
 一步三回头	yí bù sān huí tóu	1
 已不省人事	yǐ bù shěng rén shì	1
+易卜生戏剧	yì bǔ shēng xì jù	1
+易卜生主义	yì bǔ shēng zhǔ yì	1
 已不是当年	yǐ bú shì dāng nián	1
 以不同方式	yǐ bù tóng fāng shì	1
 一步一步地	yí bù yí bù dì	1
@@ -219796,12 +219798,12 @@ sort: by_weight
 硬质玻璃管	yìng zhì bō li guǎn	1
 应知和明知	yīng zhī hé míng zhī	1
 硬酯四烯酸	yìng zhǐ sì xī suān	1
-硬酯酸丁酯	yìng zhǐ suān dīng zhǐ	6
-硬酯酸甲酯	yìng zhǐ suān jiǎ zhǐ	6
-硬酯酸萘酯	yìng zhǐ suān nài zhǐ	3
-硬酯酸双铝	yìng zhǐ suān shuāng lǚ	3
-硬酯酸酰胺	yìng zhǐ suān xiān àn	3
-硬酯酸乙酯	yìng zhǐ suān yǐ zhǐ	3
+硬脂酸丁酯	yìng zhī suān dīng zhǐ	6
+硬脂酸甲酯	yìng zhī suān jiǎ zhǐ	6
+硬脂酸萘酯	yìng zhī suān nài zhǐ	3
+硬脂酸双铝	yìng zhī suān shuāng lǚ	3
+硬脂酸酰胺	yìng zhī suān xiān àn	3
+硬脂酸乙酯	yìng zhī suān yǐ zhǐ	3
 应重点关注	yīng zhòng diǎn guān zhù	1
 颍州的孩子	yǐng zhōu de hái zi	1
 颖州的孩子	yǐng zhōu de hái zi	1
@@ -223270,6 +223272,7 @@ sort: by_weight
 遇到一些人	yù dào yì xiē rén	1
 遇到一些事	yù dào yì xiē shì	1
 遇到障碍物	yù dào zhàng ài wù	1
+遇到这么多	yù dào zhè me duō	1
 遇到猪队友	yù dào zhū duì yǒu	1
 欲得而甘心	yù dé ér gān xīn	1
 鱼的汞污染	yú de gǒng wū rǎn	1
@@ -224388,7 +224391,7 @@ sort: by_weight
 语音学软件	yǔ yīn xué ruǎn jiàn	1
 语音验证码	yǔ yīn yàn zhèng mǎ	1
 与音乐无关	yǔ yīn yuè wú guān	1
-语音转文字	yǔ yīn zhuǎi wén zì	1
+语音转文字	yǔ yīn zhuǎn wén zì	1
 余因子矩阵	yú yīn zǐ jǔ zhèn	1
 语音字母表	yǔ yīn zì mǔ biǎo	1
 语音组合法	yǔ yīn zǔ hé fǎ	1
@@ -251599,26 +251602,26 @@ sort: by_weight
 驳二艺术特区	bó èr yì shù tè qū	1
 玻尔原子理论	bō ěr yuán zǐ lǐ lùn	1
 玻尔原子模型	bō ěr yuán zǐ mó xíng	5
-玻耳兹曼常量	bō ěr zī màn cháng liàng	2
+玻尔兹曼常量	bō ěr zī màn cháng liàng	2
 玻尔兹曼常量	bō ěr zī màn cháng liàng	1
 玻尔兹曼常数	bō ěr zī màn cháng shù	3
 波尔兹曼常数	bō ěr zī màn cháng shù	1
-玻耳兹曼常数	bō ěr zī màn cháng shù	1
+玻尔兹曼常数	bō ěr zī màn cháng shù	1
 玻尔兹曼定律	bō ěr zī màn dìng lǜ	4
-玻耳兹曼定律	bō ěr zī màn dìng lǜ	2
+玻尔兹曼定律	bō ěr zī màn dìng lǜ	2
 玻尔兹曼方程	bō ěr zī màn fāng chéng	1
-玻耳兹曼方程	bō ěr zī màn fāng chéng	1
+玻尔兹曼方程	bō ěr zī màn fāng chéng	1
 玻尔兹曼分布	bō ěr zī màn fēn bù	3
-玻耳兹曼分布	bō ěr zī màn fēn bù	2
+玻尔兹曼分布	bō ěr zī màn fēn bù	2
 波尔兹曼分布	bō ěr zī màn fēn bù	1
 玻尔兹曼公式	bō ěr zī màn gōng shì	2
-玻耳兹曼关系	bō ěr zī màn guān xì	4
-玻耳兹曼函数	bō ěr zī màn hán shù	1
-玻耳兹曼统计	bō ěr zī màn tǒng jì	4
-玻耳兹曼因子	bō ěr zī màn yīn zǐ	2
+玻尔兹曼关系	bō ěr zī màn guān xì	4
+玻尔兹曼函数	bō ěr zī màn hán shù	1
+玻尔兹曼统计	bō ěr zī màn tǒng jì	4
+玻尔兹曼因子	bō ěr zī màn yīn zǐ	2
 玻尔兹曼原理	bō ěr zī màn yuán lǐ	1
 波尔兹曼原理	bō ěr zī màn yuán lǐ	1
-玻耳兹曼原理	bō ěr zī màn yuán lǐ	1
+玻尔兹曼原理	bō ěr zī màn yuán lǐ	1
 播放背景音乐	bō fàng bèi jǐng yīn yuè	1
 伯夫里拉福雷	bó fū lǐ lā fú léi	1
 伯格曼的电影	bó gé màn de diàn yǐng	1
@@ -259531,7 +259534,7 @@ sort: by_weight
 二乙氧基苯胺	èr yǐ yǎng jī běn àn	3
 二乙氧基甲烷	èr yǐ yǎng jī jiǎ wán	3
 二吲哚基甲烷	èr yǐn duǒ jī jiǎ wán	1
-二硬酯酸羟铝	èr yìng zhǐ suān qiǎng lǚ	1
+二硬脂酸羟铝	èr yìng zhī suān qiǎng lǚ	1
 二油酸甘油酯	èr yóu suān gān yóu zhǐ	3
 而御六气之辩	ér yù liù qì zhī biàn	1
 二圆的内切线	èr yuán de nèi qiē xiàn	1
@@ -264852,7 +264855,7 @@ sort: by_weight
 国际形势变化	guó jì xíng shì biàn huà	1
 国际刑事法庭	guó jì xíng shì fǎ tíng	1
 国际刑事法院	guó jì xíng shì fǎ yuàn	1
-国际易卜生奖	guó jì yì bo shēng jiǎng	1
+国际易卜生奖	guó jì yì bǔ shēng jiǎng	1
 国际影评人奖	guó jì yǐng píng rén jiǎng	1
 国际营商环境	guó jì yíng shāng huán jìng	1
 国际游泳中心	guó jì yóu yǒng zhōng xīn	1
@@ -270095,7 +270098,7 @@ sort: by_weight
 碱式硝酸苯汞	jiǎn shì xiāo suān běn gǒng	3
 简氏信息集团	jiǎn shì xìn xī jí tuán	1
 碱式亚磷酸铅	jiǎn shì yà lín suān qiān	1
-碱式硬酯酸铝	jiǎn shì yìng zhǐ suān lǚ	3
+碱式硬脂酸铝	jiǎn shì yìng zhī suān lǚ	3
 监视资本主义	jiān shì zī běn zhǔ yì	1
 坚守公平正义	jiān shǒu gōng píng zhèng yì	1
 肩水金关遗址	jiān shuǐ jīn guān yí zhǐ	1
@@ -300082,8 +300085,8 @@ sort: by_weight
 营造舆论氛围	yíng zào yú lùn fēn wéi	1
 硬质合金刀具	yìng zhì hé jīn dāo jù	1
 硬质泡沫塑料	yìng zhì pào mò sù liào	3
-硬酯酸甘油酯	yìng zhǐ suān gān yóu zhǐ	1
-硬酯酸异丁酯	yìng zhǐ suān yì dīng zhǐ	3
+硬脂酸甘油酯	yìng zhī suān gān yóu zhǐ	1
+硬脂酸异丁酯	yìng zhī suān yì dīng zhǐ	3
 硬酯酰乳酸钙	yìng zhǐ xiān rǔ suān gài	3
 硬质阳极氧化	yìng zhì yáng jí yǎng huà	1
 英中贸易协会	yīng zhōng mào yì xié huì	1
@@ -304897,8 +304900,6 @@ sort: by_weight
 驻俄罗斯大使	zhù é luó sī dà shǐ	1
 驻法国外交官	zhù fǎ guó wài jiāo guān	1
 住房保障支出	zhù fáng bǎo zhàng zhī chū	1
-住房公积金卡	zhù fáng gōng jī jīn kǎ	1
-住房公积金网	zhù fáng gōng jī jīn wǎng	1
 住房和建设局	zhù fáng hé jiàn shè jú	1
 住房实物分配	zhù fáng shí wù fēn pèi	1
 驻菲律宾大使	zhù fēi lǜ bīn dà shǐ	1
@@ -307457,7 +307458,6 @@ sort: by_weight
 办理施工许可证	bàn lǐ shī gōng xǔ kě zhèng	1
 办理税务登记证	bàn lǐ shuì wù dēng jì zhèng	1
 办理一般纳税人	bàn lǐ yì bān nà shuì rén	1
-办理住房公积金	bàn lǐ zhù fáng gōng jī jīn	1
 半轮鸡唱五更残	bàn lún jī chàng wǔ gēng cán	1
 半裸的蒙娜丽莎	bàn luǒ de méng nà lì shā	1
 斑马条码打印机	bān mǎ tiáo mǎ dǎ yìn jī	1
@@ -308410,7 +308410,7 @@ sort: by_weight
 玻尔量子化条件	bō ěr liàng zǐ huà tiáo jiàn	1
 玻尔氢原子理论	bō ěr qīng yuán zǐ lǐ lùn	1
 玻尔兹曼熵定理	bō ěr zī màn shāng dìng lǐ	2
-玻耳兹曼统计法	bō ěr zī màn tǒng jì fǎ	1
+玻尔兹曼统计法	bō ěr zī màn tǒng jì fǎ	1
 伯格曼环化反应	bó gé màn huán huà fǎn yìng	1
 勃根地属尼德兰	bó gēn dì shǔ ní dé lán	1
 勃艮第属尼德兰	bó gěn dì shǔ ní dé lán	1
@@ -308496,7 +308496,6 @@ sort: by_weight
 补充各种维生素	bǔ chōng gè zhǒng wéi shēng sù	1
 补充和替代医学	bǔ chōng hé tì dài yī xué	1
 补充优质蛋白质	bǔ chōng yōu zhì dàn bái zhì	1
-补充住房公积金	bǔ chōng zhù fáng gōng jī jīn	1
 补充足够的水分	bǔ chōng zú gòu de shuǐ fèn	1
 补充足够的营养	bǔ chōng zú gòu de yíng yǎng	1
 不愁无处下金钩	bù chóu wú chǔ xià jīn gōu	1
@@ -309785,7 +309784,6 @@ sort: by_weight
 成都永康制药有	chéng dū yǒng kāng zhì yào yǒu	1
 成都远洋太古里	chéng dū yuǎn yáng tài gǔ lǐ	1
 成都中国旅行社	chéng dū zhōng guó lǚ xíng shè	1
-成都住房公积金	chéng dū zhù fáng gōng jī jīn	1
 乘鄂渚而反顾兮	chéng è zhǔ ér fǎn gù xī	1
 承恩数上南薰殿	chéng ēn shù shàng nán xūn diàn	1
 乘风破浪的姐姐	chéng fēng pò làng de jiě jie	1
@@ -310991,7 +310989,6 @@ sort: by_weight
 单唾液酸四己糖	dān tuò yè suān sì jǐ táng	1
 单位法定代表人	dān wèi fǎ dìng dài biǎo rén	1
 单位时间的效率	dān wèi shí jiān de xiào lǜ	1
-单位住房公积金	dān wèi zhù fáng gōng jī jīn	1
 单位主要负责人	dān wèi zhǔ yào fù zé rén	1
 单稳多谐振荡器	dān wěn duō xié zhèn dàng qì	1
 但闻人马之行声	dàn wén rén mǎ zhī xíng shēng	1
@@ -311012,7 +311009,7 @@ sort: by_weight
 单一欧元支付区	dān yī ōu yuán zhī fù qū	1
 单一同位素元素	dān yī tóng wèi sù yuán sù	1
 单因素方差分析	dān yīn sù fāng chà fēn xī	1
-单硬酯酸甘油酯	dān yìng zhǐ suān gān yóu zhǐ	1
+单硬脂酸甘油酯	dān yìng zhī suān gān yóu zhǐ	1
 但有故人供禄米	dàn yǒu gù rén gōng lù mǐ	1
 但有绿杨堪系马	dàn yǒu lǜ yáng kān xì mǎ	1
 胆欲大而心欲小	dǎn yù dà ér xīn yù xiǎo	1
@@ -312451,7 +312448,7 @@ sort: by_weight
 二异氰酸甲苯酯	èr yì qíng suān jiǎ běn zhǐ	1
 二乙酸雄烯二醇	èr yǐ suān xióng xī èr chún	1
 而议者谓为非计	ér yì zhě wèi wéi fēi jì	1
-二硬酯酸雌二醇	èr yìng zhǐ suān cí èr chún	1
+二硬脂酸雌二醇	èr yìng zhī suān cí èr chún	1
 而勇夺三军之帅	ér yǒng duó sān jūn zhī shuài	1
 尔有觌于彼者乎	ěr yǒu dí yú bǐ zhě hū	1
 而游者皆暴日中	ér yóu zhě jiē bào rì zhōng	1
@@ -313909,10 +313906,10 @@ sort: by_weight
 感应电流的方向	gǎn yìng diàn liú de fāng xiàng	1
 感应激发极化法	gǎn yìng jī fā jí huà fǎ	1
 感应脉冲瞬变法	gǎn yìng mài chōng shùn biàn fǎ	1
-甘油二硬酯酸酯	gān yóu èr yìng zhǐ suān zhǐ	3
+甘油二硬脂酸酯	gān yóu èr yìng zhī suān zhǐ	3
 甘油三月桂酸酯	gān yóu sān yuè guì suān zhǐ	1
 甘油三酯的含量	gān yóu sān zhǐ de hán liàng	1
-甘油一硬酯酸酯	gān yóu yī yìng zhǐ suān zhǐ	3
+甘油一硬脂酸酯	gān yóu yī yìng zhī suān zhǐ	3
 敢于担当的精神	gǎn yú dān dāng de jīng shén	1
 甘于奉献的精神	gān yú fèng xiàn de jīng shén	1
 赣榆经济开发区	gàn yú jīng jì kāi fā qū	1
@@ -316806,7 +316803,6 @@ sort: by_weight
 全国游泳锦标赛	quán guó yóu yǒng jǐn biāo sài	1
 全国智力运动会	quán guó zhì lì yùn dòng huì	1
 全国中草药汇编	quán guó zhōng cǎo yào huì biān	1
-全国住房公积金	quán guó zhù fáng gōng jī jīn	1
 全国总决赛冠军	quán guó zǒng jué sài guàn jūn	1
 全国最具影响力	quán guó zuì jù yǐng xiǎng lì	1
 拳击手型失智症	quán jī shǒu xíng shī zhì zhèng	1
@@ -317421,7 +317417,6 @@ sort: by_weight
 使用正则表达式	shǐ yòng zhèng zé biǎo dá shì	1
 使用执法记录仪	shǐ yòng zhí fǎ jì lù yí	1
 使用支付宝支付	shǐ yòng zhī fù bǎo zhī fù	1
-使用住房公积金	shǐ yòng zhù fáng gōng jī jīn	1
 石油含氮化合物	shí yóu hán dàn huà hé wù	1
 石油含硫化合物	shí yóu hán liú huà hé wù	1
 石油含氧化合物	shí yóu hán yǎng huà hé wù	1
@@ -317775,7 +317770,6 @@ sort: by_weight
 外周血单核细胞	wài zhōu xuè dān hé xì bāo	1
 顽火无球粒陨石	wán huǒ wú qiú lì yǔn shí	1
 烷基联苯化合物	wán jī lián běn huà hé wù	1
-完美的身材曲线	wán měi de shēn cái qū xiàn	1
 完美睡眠主义症	wán měi shuì mián zhǔ yì zhèng	1
 完美小姐进化论	wán měi xiǎo jiě jìn huà lùn	1
 完全非弹性碰撞	wán quán fēi tán xìng pèng zhuàng	3
@@ -317884,11 +317878,8 @@ sort: by_weight
 无限小应变理论	wú xiàn xiǎo yìng biàn lǐ lùn	1
 物像空间不变式	wù xiàng kōng jiān bú biàn shì	1
 五氧化二钒粉尘	wǔ yǎng huà èr fán fěn chén	2
-五氧化二釩粉塵	wǔ yǎng huà èr fǎn fěn chén	1
 五氧化二钒熏烟	wǔ yǎng huà èr fán xūn yān	2
-五氧化二釩熏煙	wǔ yǎng huà èr fǎn xūn yān	1
 五氧化二钽粉尘	wǔ yǎng huà èr tǎn fěn chén	2
-五氧化二鉭粉塵	wǔ yǎng huà èr tǎn fěn chén	1
 吴用智取生辰纲	wú yòng zhì qǔ shēng chén gāng	1
 五元素建造矿床	wǔ yuán sù jiàn zào kuàng chuáng	1
 乌镇互联网大会	wū zhèn hù lián wǎng dà huì	1
@@ -317897,7 +317888,6 @@ sort: by_weight
 西安奔驰女车主	xī ān bēn chí nǚ chē zhǔ	1
 西安城北客运站	xī ān chéng běi kè yùn zhàn	1
 西安城南客运站	xī ān chéng nán kè yùn zhàn	1
-西安出口加工区	xī ān chū kǒu jiā gōng qū	1
 西安电影制片厂	xī ān diàn yǐng zhì piàn chǎng	1
 西安红旗机械厂	xī ān hóng qí jī xiè chǎng	1
 西安力邦制药有	xī ān lì bāng zhì yào yǒu	1
@@ -317906,7 +317896,6 @@ sort: by_weight
 西安外国语大学	xī ān wài guó yǔ dà xué	1
 西安一四一医院	xī ān yī sì yī yī yuàn	1
 西安正大制药有	xī ān zhèng dà zhì yào yǒu	1
-西安住房公积金	xī ān zhù fáng gōng jī jīn	1
 细胞程序化死亡	xì bāo chéng xù huà sǐ wáng	1
 细胞程序性死亡	xì bāo chéng xù xìng sǐ wáng	1
 细胞的新陈代谢	xì bāo de xīn chén dài xiè	1
@@ -318629,8 +318618,8 @@ sort: by_weight
 英雄连勇气传说	yīng xióng lián yǒng qì chuán shuō	1
 营养必需氨基酸	yíng yǎng bì xū ān jī suān	1
 应用糖皮质激素	yìng yòng táng pí zhì jī sù	1
-硬酯酸单甘油酯	yìng zhǐ suān dān gān yóu zhǐ	2
-硬酯酸乙二醇酯	yìng zhǐ suān yǐ èr chún zhǐ	3
+硬脂酸单甘油酯	yìng zhī suān dān gān yóu zhǐ	2
+硬脂酸乙二醇酯	yìng zhī suān yǐ èr chún zhǐ	3
 勇敢号装甲列车	yǒng gǎn hào zhuāng jiǎ liè chē	1
 永久性收入假说	yǒng jiǔ xìng shōu rù jiǎ shuō	1
 拥有强大的力量	yōng yǒu qiáng dà de lì liàng	1
@@ -319522,7 +319511,6 @@ sort: by_weight
 氯霉素甘油滴耳液	lǜ méi sù gān yóu dī ěr yè	1
 麦克斯韦速度分布	mài kè sī wéi sù dù fēn bù	1
 麦克斯韦速率分布	mài kè sī wéi sù lǜ fēn bù	3
-慢慢腾腾歪歪扭扭	màn màn téng téng wāi wāi niǔ niǔ	1
 毛刷润湿机松度值	máo shuā rùn shī jī sōng dù zhí	1
 美国普林斯顿大学	měi guó pǔ lín sī dùn dà xué	1
 煤矿用聚乙烯束管	méi kuàng yòng jù yǐ xī shù guǎn	1
@@ -319701,7 +319689,6 @@ sort: by_weight
 雅鲁藏布江大峡谷	yǎ lǔ zàng bù jiāng dà xiá gǔ	1
 眼高手低好高骛远	yǎn gāo shǒu dī hào gāo wù yuǎn	1
 眼见为实耳听为虚	yǎn jiàn wéi shí ěr tīng wéi xū	1
-眼前一亮醍醐灌顶	yǎn qián yí liàng tí hú guàn dǐng	1
 燕雀安知鸿鹄之志	yàn què ān zhī hóng hú zhī zhì	1
 岩石动态弹性模量	yán shí dòng tài tán xìng mó liàng	1
 岩石孔隙压缩系数	yán shí kǒng xì yā suō xì shù	1
@@ -319723,7 +319710,7 @@ sort: by_weight
 一波未平一波又起	yì bō wèi píng yì bō yòu qǐ	1
 以德报德以直报怨	yǐ dé bào dé yǐ zhí bào yuàn	1
 议而不决决而不行	yì ér bù jué jué ér bù xíng	1
-乙二醇二硬酯酸酯	yǐ èr chún èr yìng zhǐ suān zhǐ	3
+乙二醇二硬脂酸酯	yǐ èr chún èr yìng zhī suān zhǐ	3
 乙二醇甲醚醋酸酯	yǐ èr chún jiǎ mí cù suān zhǐ	3
 乙二醇乙醚醋酸酯	yǐ èr chún yǐ mí cù suān zhǐ	3
 一方水土养一方人	yì fāng shuǐ tǔ yǎng yì fāng rén	1
@@ -319745,17 +319732,15 @@ sort: by_weight
 议温明董卓叱丁原	yì wēn míng dǒng zhuó chì dīng yuán	1
 乙烯丙烯二烃单体	yǐ xī bǐng xī èr tīng dān tǐ	1
 乙烯丙烯共怪物物	yǐ xī bǐng xī gòng guài wù wù	2
-乙酰过氧化苯甲酰	yǐ xiān guò yǎng huà běn jiǎ xiān	4
+乙酰过氧化苯甲酰	yǐ xiān guò yǎng huà běn jiǎ xiān	1
 以牙还牙以血还血	yǐ yá huán yá yǐ xuè huán xuè	1
 一言既出驷马难追	yì yán jì chū sì mǎ nán zhuī	1
-一氧化碳血红蛋白	yī yǎng huà tàn xuè hóng dàn bái	3
 一叶障目不见泰山	yí yè zhàng mù bú jiàn tài shān	1
 一着不慎满盘皆输	yī zhāo bú shèn mǎn pán jiē shū	1
 乙酯乙烯酯共聚物	yǐ zhǐ yǐ xī zhǐ gòng jù wù	2
 银装素裹分外妖娆	yín zhuāng sù guǒ fèn wài yāo ráo	1
 荧光检测圆二色性	yíng guāng jiǎn cè yuán èr sè xìng	1
 硬聚氯乙烯塑料管	yìng jù lǜ yǐ xī sù liào guǎn	1
-硬酯酸聚氧乙烯酯	yìng zhǐ suān jù yǎng yǐ xī zhǐ	2
 用人不疑疑人不用	yòng rén bù yí yí rén bú yòng	1
 用稀土金属储存氢	yòng xī tǔ jīn shǔ chǔ cún qīng	1
 有法可依有章可循	yǒu fǎ kě yī yǒu zhāng kě xún	1
@@ -319878,7 +319863,7 @@ sort: by_weight
 质谱测定法质量传递	zhì pǔ cè dìng fǎ zhì liàng chuán dì	1
 紫蝶丽馨蕾琦洛凤颜	zǐ dié lì xīn lěi qí luò fèng yán	1
 做一天和尚撞一天钟	zuò yì tiān hé shàng zhuàng yì tiān zhōng	1
-玻耳兹曼积分微分方程	bō ěr zī màn jī fēn wēi fēn fāng chéng	2
+玻尔兹曼积分微分方程	bō ěr zī màn jī fēn wēi fēn fāng chéng	2
 玻尔兹曼能量分布定律	bō ěr zī màn néng liàng fēn bù dìng lǜ	1
 布朗斯特劳瑞酸碱理论	bù lǎng sī tè láo ruì suān jiǎn lǐ lùn	1
 柴胡去半夏加栝蒌根汤	chái hú qù bàn xià jiā guā lóu gēn tāng	1
@@ -319917,33 +319902,3 @@ sort: by_weight
 木防己去石膏加茯苓芒硝汤	mù fáng jǐ qù shí gāo jiā fú líng máng xiāo tāng	1
 桂枝去芍药加蜀漆牡蛎龙骨救逆汤	guì zhī qù sháo yào jiā shǔ qī mǔ lì lóng gǔ jiù nì tāng	1
 玉女煎去牛膝熟地加细生地元参方	yù nǚ jiān qù niú xī shú dì jiā xì shēng dì yuán shēn fāng	1
-sān běn jī xī huà hé wù	sān běn jī xī huà hé wù	1
-sān jiǎ jī guī jī yǐ xī	sān jiǎ jī guī jī yǐ xī	1
-sān lǜ huà liù ān hé gǔ	sān lǜ huà liù ān hé gǔ	1
-sān běn jī èr lǜ huà lìn	sān běn jī èr lǜ huà lìn	1
-sān běn jī lìn pèi hé wù	sān běn jī lìn pèi hé wù	1
-sān jiǎ jī guī jī yǐ quē	sān jiǎ jī guī jī yǐ quē	1
-sān jiǎ jī guī jī yǐ wán	sān jiǎ jī guī jī yǐ wán	1
-sān jiǎ jī yī lǜ guī wán	sān jiǎ jī yī lǜ guī wán	1
-sān ān jī sān xiāo jī běn	sān ān jī sān xiāo jī běn	1
-sān jiǎ jī èr lǜ huà shēn	sān jiǎ jī èr lǜ huà shēn	1
-sān jiǎ jī yǐ suān yǐ zhǐ	sān jiǎ jī yǐ suān yǐ zhǐ	2
-sān jiǎ běn sān tāng jī mù	sān jiǎ běn sān tāng jī mù	1
-sān jiǎ jī dié dàn guī wán	sān jiǎ jī dié dàn guī wán	1
-sān jiǎ jī yǐ suān jiǎ zhǐ	sān jiǎ jī yǐ suān jiǎ zhǐ	2
-sān lín suān bāo gān èr nà	sān lín suān bāo gān èr nà	1
-sān xiāo jī jūn běn sān àn	sān xiāo jī jūn běn sān àn	1
-ruò yǒu rén duì nǐ men shuō	ruò yǒu rén duì nǐ men shuō	1
-sān dié dàn sān xiāo jī běn	sān dié dàn sān xiāo jī běn	1
-sān fú jiǎ huáng suān yà tā	sān fú jiǎ huáng suān yà tā	1
-sān fú jiǎ liú chún yà tóng	sān fú jiǎ liú chún yà tóng	1
-sān lín suān xiàn gān èr nà	sān lín suān xiàn gān èr nà	1
-sān xiāo jī sān dié dàn běn	sān xiāo jī sān dié dàn běn	1
-sān jiǎ gǎng hǎi bīn lè yuán	sān jiǎ gǎng hǎi bīn lè yuán	1
-sān lín suān xiàn gān fǔ méi	sān lín suān xiàn gān fǔ méi	1
-sān suō suān zhuǎn yùn tǐ xì	sān suō suān zhuǎn yùn tǐ xì	1
-sān fú jiǎ huáng suān jiǎ zhǐ	sān fú jiǎ huáng suān jiǎ zhǐ	1
-sān fú jiǎ huáng suān yǎng fán	sān fú jiǎ huáng suān yǎng fán	1
-sān fú jiǎ huáng suān yóu xiān	sān fú jiǎ huáng suān yóu xiān	1
-sān lín suān tuō yǎng xiàn gān	sān lín suān tuō yǎng xiàn gān	1
-sān fú jiǎ huáng suān xiāo xiān	sān fú jiǎ huáng suān xiāo xiān	1
