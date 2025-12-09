@@ -108796,6 +108796,7 @@ sort: by_weight
 类金融机构	lèi jīn róng jī gòu	1
 类金属元素	lèi jīn shǔ yuán sù	1
 类精神药品	lèi jīng shén yào pǐn	1
+类抗生物素	lèi kàng shēng wù sù	1
 累了个半死	lèi le gè bàn sǐ	1
 累了就休息	lèi le jiù xiū xi	1
 累了一天了	lèi le yì tiān le	1
@@ -116874,6 +116875,7 @@ sort: by_weight
 马鞍山中心	mǎ ān shān zhōng xīn	1
 马奥尼方程	mǎ ào ní fāng chéng	1
 玛巴洛沙韦	mǎ bā luò shā wéi	1
+玛巴洛沙韦	mǎ bā luò shā wéi	1
 麻痹性痴呆	má bì xìng chī dāi	1
 麻痹性斜视	má bì xìng xié shì	1
 马鞭草烯醇	mǎ biān cǎo xī chún	1
@@ -117223,6 +117225,7 @@ sort: by_weight
 马氏卵鸟蛤	mǎ shì luǎn niǎo há	1
 马氏试砷法	mǎ shì shì shēn fǎ	1
 麻糬冰淇淋	má shǔ bīng qí lín	1
+玛舒拉沙韦	mǎ shū lā shā wéi	1
 马斯巴特岛	mǎ sī bā tè dǎo	1
 马斯蒂克岛	mǎ sī dì kè dǎo	1
 马斯洛理论	mǎ sī luò lǐ lùn	1
@@ -278702,6 +278705,7 @@ sort: by_weight
 能量不灭定律	néng liàng bú miè dìng lǜ	1
 能量储存元件	néng liàng chǔ cún yuán jiàn	1
 能量动量张量	néng liàng dòng liàng zhāng liàng	4
+能量分布定律	néng liàng fēn bù dìng lǜ	1
 能量耗散原理	néng liàng hào sàn yuán lǐ	3
 能量均分定理	néng liàng jūn fēn dìng lǐ	2
 能量均分定律	néng liàng jūn fēn dìng lǜ	1
@@ -319673,9 +319677,7 @@ sort: by_weight
 走过路过不要错过	zǒu guò lù guò bú yào cuò guò	1
 嘴巴给我放干净点	zuǐ ba gěi wǒ fàng gān jìng diǎn	1
 最低工业米百分值	zuì dī gōng yè mǐ bǎi fēn zhí	1
-阿累尼乌斯酸碱理论	ā lèi ní wū sī suān jiǎn lǐ lùn	1
-阿仑尼乌斯酸碱理论	ā lún ní wū sī suān jiǎn lǐ lùn	2
-氨基糖苷类抗生物素	ān jī táng gān lèi kàng shēng wù sù	3
+阿仑尼乌斯酸碱理论	ā lún ní wū sī suān jiǎn lǐ lùn	1
 白头翁加甘草阿胶汤	bái tóu wēng jiā gān cǎo ē jiāo tāng	1
 搬起石头砸自己的脚	bān qǐ shí tou zá zì jǐ de jiǎo	1
 被人卖了还帮着数钱	bèi rén mài le hái bāng zhāo shù qián	1
@@ -319700,7 +319702,6 @@ sort: by_weight
 到什么山上唱什么歌	dào shén me shān shàng chàng shén me gē	1
 到什么时候说什么话	dào shén me shí hòu shuō shén me huà	1
 德拜休克尔极限定律	dé bài xiū kè ěr jí xiàn dìng lǜ	1
-的高锰酸钾值涂料磨	de gāo měng suān jiǎ zhí tú liào mó	2
 地质资源与地质工程	dì zhì zī yuán yǔ dì zhì gōng chéng	1
 躲了初一躲不了十五	duǒ le chū yī duǒ bù liǎo shí wǔ	1
 二维核磁共振波谱学	èr wéi hé cí gòng zhèn bō pǔ xué	1
@@ -319746,10 +319747,7 @@ sort: by_weight
 丈二和尚摸不着头脑	zhàng èr hé shàng mō bù zháo tóu nǎo	1
 滞后现象亚硫酸氢盐	zhì hòu xiàn xiàng yà liú suān qīng yán	1
 质谱测定法质量传递	zhì pǔ cè dìng fǎ zhì liàng chuán dì	1
-紫蝶丽馨蕾琦洛凤颜	zǐ dié lì xīn lěi qí luò fèng yán	1
 做一天和尚撞一天钟	zuò yì tiān hé shàng zhuàng yì tiān zhōng	1
-玻尔兹曼积分微分方程	bō ěr zī màn jī fēn wēi fēn fāng chéng	2
-玻尔兹曼能量分布定律	bō ěr zī màn néng liàng fēn bù dìng lǜ	1
 布朗斯特劳瑞酸碱理论	bù lǎng sī tè láo ruì suān jiǎn lǐ lùn	1
 柴胡去半夏加栝蒌根汤	chái hú qù bàn xià jiā guā lóu gēn tāng	1
 常在河边走哪有不湿鞋	cháng zài hé biān zǒu nǎ yǒu bù shī xié	1
@@ -319763,7 +319761,6 @@ sort: by_weight
 既想当婊子又要立牌坊	jì xiǎng dāng biǎo zi yòu yào lì pái fāng	1
 可怜之人必有可恨之处	kě lián zhī rén bì yǒu kě hèn zhī chù	1
 洛伦兹变换的双曲形式	luò lún zī biàn huàn de shuāng qǔ xíng shì	2
-麦克斯韦玻尔兹曼分布	mài kè sī wéi bō ěr zī màn fēn bù	1
 人生不如意事十之八九	rén shēng bù rú yì shì shí zhī bā jiǔ	1
 人事服务及职员关系科	rén shì fú wù jí zhí yuán guān xì kē	1
 三十年河东三十年河西	sān shí nián hé dōng sān shí nián hé xī	1
