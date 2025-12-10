@@ -11377,6 +11377,7 @@ sort: by_weight
 丙烯酸丙酯	bǐng xī suān bǐng zhǐ	3
 丙烯酸丁酯	bǐng xī suān dīng zhǐ	6
 丙烯酸甲酯	bǐng xī suān jiǎ zhǐ	10
+丙烯酸甲脂	bǐng xī suān jiǎ zhī	1
 丙烯酸乳液	bǐng xī suān rǔ yè	1
 丙烯酸试验	bǐng xī suān shì yàn	3
 丙烯酸树脂	bǐng xī suān shù zhī	4
@@ -11388,6 +11389,7 @@ sort: by_weight
 丙烯酸乙酯	bǐng xī suān yǐ zhǐ	6
 丙烯酸酯化	bǐng xī suān zhǐ huà	2
 丙烯酸酯类	bǐng xī suān zhǐ lèi	1
+丙烯酰亚胺	bǐng xī xiān yà àn	1
 丙酰白霉素	bǐng xiān bái méi sù	1
 丙酰基联苯	bǐng xiān jī lián běn	1
 冰鲜三文鱼	bīng xiān sān wén yú	1
@@ -12280,7 +12282,7 @@ sort: by_weight
 不动就会死	bú dòng jiù huì sǐ	1
 不懂就算了	bù dǒng jiù suàn le	1
 不懂就要问	bù dǒng jiù yào wèn	1
-不懂没关系	bù dǒng méi guān xì	1
+不懂没关系	bù dǒng méi guān xi	1
 不动明王传	bú dòng míng wáng zhuàn	1
 不懂女人心	bù dǒng nǚ rén xīn	1
 不懂什么是	bù dǒng shén me shì	1
@@ -12780,7 +12782,7 @@ sort: by_weight
 不过接下来	bú guò jiē xià lái	1
 不过近几年	bú guò jìn jǐ nián	1
 不过看起来	bú guò kàn qǐ lái	1
-不过没关系	bú guò méi guān xì	1
+不过没关系	bú guò méi guān xi	1
 不过梦一场	bú guò mèng yì chǎng	1
 不过那时候	bú guò nà shí hou	1
 不过情人节	bú guò qíng rén jié	1
@@ -59890,7 +59892,7 @@ sort: by_weight
 跟你对着干	gēn nǐ duì zhe gàn	1
 跟你很熟吗	gēn nǐ hěn shú ma	1
 跟你开玩笑	gēn nǐ kāi wán xiào	1
-跟你没关系	gēn nǐ méi guān xì	1
+跟你没关系	gēn nǐ méi guān xi	1
 跟你们分享	gēn nǐ men fēn xiǎng	1
 跟你们一样	gēn nǐ men yí yàng	1
 跟你说个事	gēn nǐ shuō gè shì	1
@@ -59955,7 +59957,7 @@ sort: by_weight
 跟我发消息	gēn wǒ fā xiāo xi	1
 跟我回家吧	gēn wǒ huí jiā ba	1
 跟我结婚吧	gēn wǒ jié hūn ba	1
-跟我没关系	gēn wǒ méi guān xì	1
+跟我没关系	gēn wǒ méi guān xi	1
 跟我们一起	gēn wǒ men yì qǐ	1
 跟我生气了	gēn wǒ shēng qì le	1
 跟我说爱我	gēn wǒ shuō ài wǒ	1
@@ -71601,7 +71603,7 @@ sort: by_weight
 好的管理者	hǎo de guǎn lǐ zhě	1
 号的化合物	hào de huà hé wù	1
 好的肯德基	hǎo de kěn dé jī	1
-好的没关系	hǎo de méi guān xì	1
+好的没关系	hǎo de méi guān xi	1
 好的没问题	hǎo de méi wèn tí	1
 好的葡萄酒	hǎo de pú táo jiǔ	1
 好的倾听者	hǎo de qīng tīng zhě	1
@@ -73148,7 +73150,7 @@ sort: by_weight
 和你打招呼	hé nǐ dǎ zhāo hū	1
 和你交朋友	hé nǐ jiāo péng you	1
 和你聊一聊	hé nǐ liáo yì liáo	1
-和你没关系	hé nǐ méi guān xì	1
+和你没关系	hé nǐ méi guān xi	1
 和你面对面	hé nǐ miàn duì miàn	1
 和你男朋友	hé nǐ nán péng you	1
 和你说什么	hé nǐ shuō shén me	1
@@ -73553,7 +73555,7 @@ sort: by_weight
 和我见面的	hé wǒ jiàn miàn de	1
 和我结婚吧	hé wǒ jié hūn ba	1
 和我聊一聊	hé wǒ liáo yì liáo	1
-和我没关系	hé wǒ méi guān xì	1
+和我没关系	hé wǒ méi guān xi	1
 和我们分享	hé wǒ men fēn xiǎng	1
 和我们互动	hé wǒ men hù dòng	1
 和我们交流	hé wǒ men jiāo liú	1
@@ -116875,7 +116877,6 @@ sort: by_weight
 马鞍山中心	mǎ ān shān zhōng xīn	1
 马奥尼方程	mǎ ào ní fāng chéng	1
 玛巴洛沙韦	mǎ bā luò shā wéi	1
-玛巴洛沙韦	mǎ bā luò shā wéi	1
 麻痹性痴呆	má bì xìng chī dāi	1
 麻痹性斜视	má bì xìng xié shì	1
 马鞭草烯醇	mǎ biān cǎo xī chún	1
@@ -118848,7 +118849,7 @@ sort: by_weight
 美股研究社	měi gǔ yán jiū shè	1
 美股中概股	měi gǔ zhōng gài gǔ	1
 美观的设计	měi guān de shè jì	1
-没关系慢慢	méi guān xì màn màn	1
+没关系慢慢	méi guān xi màn màn	1
 玫瑰大酒店	méi guī dà jiǔ diàn	1
 玫瑰大头菜	méi guī dà tóu cài	1
 玫瑰的故事	méi guī de gù shì	1
@@ -124979,7 +124980,7 @@ sort: by_weight
 那也不至于	nà yě bú zhì yú	1
 那也没办法	nà yě méi bàn fǎ	1
 那也没必要	nà yě méi bì yào	1
-那也没关系	nà yě méi guān xì	1
+那也没关系	nà yě méi guān xi	1
 拿也没拿过	ná yě méi ná guò	1
 那也没什么	nà yě méi shén me	1
 哪也去不了	nǎ yě qù bù liǎo	1
@@ -136686,7 +136687,7 @@ sort: by_weight
 起始楼面价	qǐ shǐ lóu miàn jià	1
 启示录章节	qǐ shì lù zhāng jié	1
 欺实马事件	qī shí mǎ shì jiàn	1
-其实没关系	qí shí méi guān xì	1
+其实没关系	qí shí méi guān xi	1
 其实没啥用	qí shí méi shá yòng	1
 其实没什么	qí shí méi shén me	1
 起始密码子	qǐ shǐ mì mǎ zǐ	1
@@ -180617,6 +180618,7 @@ sort: by_weight
 脱甲基作用	tuō jiǎ jī zuò yòng	1
 脱甲金霉素	tuō jiǎ jīn méi sù	1
 脱缰的野马	tuō jiāng de yě mǎ	1
+脱壳穿甲弹	tuō ké chuān jiǎ dàn	1
 脱口秀表演	tuō kǒu xiù biǎo yǎn	1
 脱口秀大会	tuō kǒu xiù dà huì	1
 脱口秀节目	tuō kǒu xiù jié mù	1
@@ -180699,7 +180701,6 @@ sort: by_weight
 拖欠工程款	tuō qiàn gōng chéng kuǎn	1
 拖欠供应商	tuō qiàn gōng yìng shāng	1
 拖欠物业费	tuō qiàn wù yè fèi	1
-脱壳穿甲弹	tuō qiào chuān jiǎ dàn	1
 脱氢表雄酮	tuō qīng biǎo xióng tóng	1
 脱氢胆固醇	tuō qīng dǎn gù chún	1
 脱氢胆甾醇	tuō qīng dǎn zāi chún	3
@@ -182001,7 +182002,7 @@ sort: by_weight
 完全没道理	wán quán méi dào lǐ	1
 完全没概念	wán quán méi gài niàn	1
 完全没感觉	wán quán méi gǎn jué	1
-完全没关系	wán quán méi guān xì	1
+完全没关系	wán quán méi guān xi	1
 完全没看懂	wán quán méi kàn dǒng	1
 完全没料到	wán quán méi liào dào	1
 完全没毛病	wán quán méi máo bìng	1
@@ -212106,7 +212107,7 @@ sort: by_weight
 也没办法啊	yě méi bàn fǎ a	1
 也没办法的	yě méi bàn fǎ de	1
 也没办法说	yě méi bàn fǎ shuō	1
-也没关系啦	yě méi guān xì la	1
+也没关系啦	yě méi guān xi la	1
 野玫瑰之恋	yě méi guī zhī liàn	1
 页眉和页脚	yè méi hé yè jiǎo	1
 也没啥意思	yě méi shá yì si	1
@@ -231841,7 +231842,7 @@ sort: by_weight
 真的蛮好看	zhēn de mán hǎo kàn	1
 真的没办法	zhēn de méi bàn fǎ	1
 真的没感觉	zhēn de méi gǎn jué	1
-真的没关系	zhēn de méi guān xì	1
+真的没关系	zhēn de méi guān xi	1
 真的没见过	zhēn de méi jiàn guò	1
 真的没联系	zhēn de méi lián xì	1
 真的没什么	zhēn de méi shén me	1
@@ -317184,8 +317185,6 @@ sort: by_weight
 三乙二酸苯六酯	sān yǐ èr suān běn liù zhǐ	1
 三乙烯亚胺三嗪	sān yǐ xī yà àn sān qín	3
 三乙氧基苯乙胺	sān yǐ yǎng jī běn yǐ àn	1
-三元线性方程组	sān yuán xiàn xìng fāng chéng zǔ	1
-三元一次方程组	sān yuán yí cì fāng chéng zǔ	1
 三月桂酸甘油酯	sān yuè guì suān gān yóu zhǐ	1
 扫描隧道显微术	sǎo miáo suì dào xiǎn wēi shù	1
 沙门不敬王者论	shā mén bú jìng wáng zhě lùn	1
@@ -319350,9 +319349,6 @@ sort: by_weight
 井下交叉闭合导线	jǐng xià jiāo chā bì hé dǎo xiàn	1
 聚丙烯无规共聚物	jù bǐng xī wú guī gòng jù wù	2
 聚甲酚磺醛阴道栓	jù jiǎ fēn huáng quán yīn dào shuān	1
-聚甲基丙烯酸甲酯	jù jiǎ jī bǐng xī suān jiǎ zhǐ	11
-聚甲基丙烯酸甲脂	jù jiǎ jī bǐng xī suān jiǎ zhī	2
-聚甲基丙烯酰亚胺	jù jiǎ jī bǐng xī xiān yà àn	2
 聚氯乙烯覆面胶带	jù lǜ yǐ xī fù miàn jiāo dài	1
 聚四氟乙烯滑动板	jù sì fú yǐ xī huá dòng bǎn	1
 聚氧乙烯烷基醇醚	jù yǎng yǐ xī wán jī chún mí	2
@@ -319375,16 +319371,6 @@ sort: by_weight
 离子交换器卡伯值	lí zǐ jiāo huàn qì kǎ bó zhí	1
 离子选择场效应管	lí zǐ xuǎn zé chǎng xiào yìng guǎn	1
 良莠不齐鱼龙混杂	liáng yǒu bù qí yú lóng hùn zá	1
-邻苯二甲酸二癸酯	lín běn èr jiǎ suān èr guǐ zhǐ	3
-邻苯二甲酸二甲酯	lín běn èr jiǎ suān èr jiǎ zhǐ	4
-鄰苯二甲酸二甲酯	lín běn èr jiǎ suān èr jiǎ zhǐ	1
-邻苯二甲酸二辛酯	lín běn èr jiǎ suān èr xīn zhǐ	2
-鄰苯二甲酸二辛酯	lín běn èr jiǎ suān èr xīn zhǐ	1
-邻苯二甲酸二乙酯	lín běn èr jiǎ suān èr yǐ zhǐ	4
-鄰苯二甲酸二乙酯	lín běn èr jiǎ suān èr yǐ zhǐ	1
-邻苯二酸二异戊酯	lín běn èr suān èr yì wù zhǐ	3
-邻苯二酸二异辛酯	lín běn èr suān èr yì xīn zhǐ	3
-邻苯甲酰甲酸甲酯	lín běn jiǎ xiān jiǎ suān jiǎ zhǐ	1
 磷酸二苯基异辛酯	lín suān èr běn jī yì xīn zhǐ	2
 邻乙氧基苯甲酰肼	lín yǐ yǎng jī běn jiǎ xiān jǐng	2
 六基坑开挖与降水	liù jī kēng kāi wā yǔ jiàng shuǐ	1
@@ -319398,8 +319384,6 @@ sort: by_weight
 绿基正长云英斑岩	lǜ jī zhèng zhǎng yún yīng bān yán	1
 绿帘金红角闪片岩	lǜ lián jīn hóng jiǎo shǎn piàn yán	1
 氯霉素甘油滴耳液	lǜ méi sù gān yóu dī ěr yè	1
-麦克斯韦速度分布	mài kè sī wéi sù dù fēn bù	1
-麦克斯韦速率分布	mài kè sī wéi sù lǜ fēn bù	3
 毛刷润湿机松度值	máo shuā rùn shī jī sōng dù zhí	1
 美国普林斯顿大学	měi guó pǔ lín sī dùn dà xué	1
 煤矿用聚乙烯束管	méi kuàng yòng jù yǐ xī shù guǎn	1
@@ -319472,7 +319456,6 @@ sort: by_weight
 如果大家都拥有海	rú guǒ dà jiā dōu yōng yǒu hǎi	1
 塞翁失马焉知非福	sài wēng shī mǎ yān zhī fēi fú	1
 三羟甲基硝基甲烷	sān qiǎng jiǎ jī xiāo jī jiǎ wán	2
-三元一次不定方程	sān yuán yí cì bú dìng fāng chéng	1
 上天无路入地无门	shàng tiān wú lù rù dì wú mén	1
 上向梯段式回采法	shàng xiàng tī duàn shì huí cǎi fǎ	1
 射线光电子能谱学	shè xiàn guāng diàn zǐ néng pǔ xué	1
