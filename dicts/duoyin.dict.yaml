@@ -7,6 +7,9 @@ name: duoyin
 version: "LTS"
 sort: by_weight
 ...
+自己打的	zì jǐ dǎ de	80
+怎么打的	zěn me dǎ de	49
+打的	dǎ de	600
 实在	shí zai	814
 长有	zhǎng yǒu	510
 识记	shí jì	452
@@ -3347,7 +3350,7 @@ sort: by_weight
 谁出资	shéi chū zī	180
 谁聪明	shéi cōng míng	230
 谁错了	shéi cuò le	330
-谁打的	shéi dǎ dī	310
+谁打的	shéi dǎ de	310
 谁打你	shéi dǎ nǐ	190
 谁打谁	shéi dǎ shéi	330
 谁打我	shéi dǎ wǒ	290
@@ -5324,3 +5327,4 @@ sort: by_weight
 提拉塔嘛的喇嘛拿塔嘛打了别喇叭的哑巴一塔嘛	tí lā tǎ ma de lǎ ma ná tǎ ma dǎ le bié lǎ bā de yǎ bā yī tǎ ma	1
 也不知别喇叭的哑巴拿喇巴打坏了提拉塔嘛喇嘛的塔嘛	yě bù zhī bié lǎ bā de yǎ bā ná lǎ bā dǎ huài le tí lā tǎ ma lǎ ma de tǎ ma	1
 也不知提拉塔嘛的喇嘛拿塔嘛打坏了别喇叭哑巴的喇叭	yě bù zhī tí lā tǎ ma de lǎ ma ná tǎ ma dǎ huài le bié lǎ bā yǎ bā de lǎ bā	1
+打飞的	dǎ fēi dī	1

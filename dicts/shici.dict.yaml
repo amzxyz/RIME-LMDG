@@ -8,7 +8,7 @@ version: "LTS"
 sort: by_weight
 ...
 书愤	shū fèn	242
-爱恶欲	ài è yù	16
+爱恶欲	ài wù yù	16
 八百载	bā bǎi zǎi	94
 百而千	bǎi ér qiān	81
 北元魏	běi yuán wèi	16
@@ -1169,7 +1169,7 @@ sort: by_weight
 初夏闲吟	chū xià xián yín	1
 除夜言怀	chú yè yán huái	1
 除夜有怀	chú yè yǒu huái	1
-鉏耰棘矜	chú yōu jí jīn	1
+鉏耰棘矜	chú yōu jí qín	1
 除于国南	chú yú guó nán	1
 出于林中	chū yú lín zhōng	1
 出於其类	chū yú qí lèi	1
@@ -61244,8 +61244,8 @@ sort: by_weight
 龟宁欺我哉	guī níng qī wǒ zāi	1
 归弄白云浔	guī nòng bái yún xún	1
 归弄小女姹	guī nòng xiǎo nǚ chà	1
-闺女求天女	guī nǚ qiú tiān nǚ	1
-闺女夜登楼	guī nǚ yè dēng lóu	1
+闺女求天女	guī nü qiú tiān nǚ	1
+闺女夜登楼	guī nü yè dēng lóu	1
 鬼疟朝朝避	guǐ nüè zhāo zhāo bì	1
 归旆拥通庄	guī pèi yōng tōng zhuāng	1
 归瓶得冰雪	guī píng dé bīng xuě	1
@@ -179135,10 +179135,10 @@ sort: by_weight
 晓笛别乡泪	xiǎo dí bié xiāng lèi	1
 小弟发亦白	xiǎo dì fā yì bái	1
 小弟更孩幼	xiǎo dì gèng hái yòu	1
+孝弟行里闾	xiào dì háng lǐ lǘ	1
 小堤如冈陵	xiǎo dī rú gāng líng	1
 小敌谓可骄	xiǎo dí wèi kě jiāo	1
 小敌信所怯	xiǎo dí xìn suǒ qiè	1
-孝弟行里闾	xiào dì xíng lǐ lǘ	1
 孝弟一同规	xiào dì yì tóng guī	1
 小店关门树	xiǎo diàn guān mén shù	1
 小簟六尺床	xiǎo diàn liù chǐ chuáng	1
@@ -212166,7 +212166,7 @@ sort: by_weight
 漳滨与蒿里	zhāng bīn yǔ hāo lǐ	1
 漳滨恣闲逸	zhāng bīn zì xián yì	1
 张兵夺云旗	zhāng bīng duó yún qí	1
-张兵挠棘矜	zhāng bīng náo jí jīn	1
+张兵挠棘矜	zhāng bīng náo jí qín	1
 张苍何为者	zhāng cāng hé wéi zhě	1
 杖策步幽巘	zhàng cè bù yōu yǎn	1
 杖策出蓬荜	zhàng cè chū péng bì	1
@@ -275022,7 +275022,7 @@ sort: by_weight
 莫怪殷勤悲此曲	mò guài yīn qín bēi cǐ qǔ	1
 莫怪殷勤醉相忆	mò guài yīn qín zuì xiāng yì	1
 摩诃池上春光早	mó hē chí shàng chūn guāng zǎo	1
-莫恨东西沟水别	mò hèn dōng xi gōu shuǐ bié	1
+莫恨东西沟水别	mò hèn dōng xī gōu shuǐ bié	1
 莫恨伏辕身未老	mò hèn fú yuán shēn wèi lǎo	1
 莫恨名姬中夜没	mò hèn míng jī zhōng yè méi	1
 莫恨殷勤留此地	mò hèn yīn qín liú cǐ dì	1
@@ -287910,7 +287910,7 @@ sort: by_weight
 深闺洞房语恩怨	shēn guī dòng fáng yǔ ēn yuàn	1
 深闺静几试笔墨	shēn guī jìng jǐ shì bǐ mò	1
 深闺旅馆遥相忆	shēn guī lǚ guǎn yáo xiāng yì	1
-深闺女儿莫愁年	shēn guī nǚ ér mò chóu nián	1
+深闺女儿莫愁年	shēn guī nü ér mò chóu nián	1
 身过花间沾湿好	shēn guò huā jiān zhān shī hǎo	1
 身过黄堆烽上云	shēn guò huáng duī fēng shàng yún	1
 申韩百家爇火起	shēn hán bǎi jiā ruò huǒ qǐ	1
@@ -288917,7 +288917,7 @@ sort: by_weight
 十方三世本来空	shí fāng sān shì běn lái kōng	1
 十方无壁又无门	shí fāng wú bì yòu wú mén	1
 十方虚空百杂碎	shí fāng xū kōng bǎi zá suì	1
-是非爱恶销停尽	shì fēi ài è xiāo tíng jìn	1
+是非爱恶销停尽	shì fēi ài wù xiāo tíng jìn	1
 是非倒置自古有	shì fēi dào zhì zì gǔ yǒu	1
 是非得失付闲人	shì fēi dé shī fù xián rén	1
 是非衮衮书生老	shì fēi gǔn gǔn shū shēng lǎo	1
@@ -313466,8 +313466,8 @@ sort: by_weight
 有骨已剁觜春葱	yǒu gǔ yǐ duò zī chūn cōng	1
 游观须知此地佳	yóu guān xū zhī cǐ dì jiā	1
 幽关鸦轧胡雁悲	yōu guān yā yà hú yàn bēi	1
-幽闺女儿爱颜色	yōu guī nǚ ér ài yán sè	1
-幽闺女儿惜颜色	yōu guī nǚ ér xī yán sè	1
+幽闺女儿爱颜色	yōu guī nü ér ài yán sè	1
+幽闺女儿惜颜色	yōu guī nü ér xī yán sè	1
 幽闺少妇罢裁缝	yōu guī shào fù bà cái féng	1
 忧国朝廷自有贤	yōu guó cháo tíng zì yǒu xián	1
 犹过无穷来往人	yóu guò wú qióng lái wǎng rén	1
