@@ -2190,7 +2190,7 @@ sort: by_weight
 高乎视低	gāo hū shì dī	1
 高接混茫	gāo jiē hùn máng	1
 告劳伊何	gào láo yī hé	1
-高帘落子	gāo lián lào zǐ	1
+高帘落子	gāo lián lào zi	1
 高林露清	gāo lín lù qīng	1
 高陵书情	gāo líng shū qíng	1
 高灵下堕	gāo líng xià duò	1
@@ -40141,6 +40141,7 @@ sort: by_weight
 帝德千年日	dì dé qiān nián rì	1
 地得青乌相	dì de qīng wū xiāng	1
 帝德已光辉	dì dé yǐ guāng huī	1
+地得一以灵	dì de yī yǐ líng	1
 地得一以宁	dì de yī yǐ níng	1
 滴滴洞穴中	dī dī dòng xué zhōng	1
 地底孤灯冷	dì dǐ gū dēng lěng	1
@@ -57472,6 +57473,7 @@ sort: by_weight
 故德交归焉	gù dé jiāo guī yān	1
 故得天下喜	gù de tiān xià xǐ	1
 谷得一以生	gǔ dé yī yǐ shēng	1
+谷得一以盈	gǔ dé yī yǐ yíng	1
 孤灯案上书	gū dēng àn shàng shū	1
 孤灯暗又明	gū dēng àn yòu míng	1
 孤灯伴不眠	gū dēng bàn bù mián	1
@@ -81746,7 +81748,7 @@ sort: by_weight
 解缆逐归流	jiě lǎn zhú guī liú	1
 解缆坐回舟	jiě lǎn zuò huí zhōu	1
 结浪冰初镜	jié làng bīng chū jìng	1
-皆落子房术	jiē lào zǐ fáng shù	1
+皆落子房术	jiē lào zi fáng shù	1
 劫累终期灭	jié lèi zhōng qī miè	1
 竭力不敢惮	jié lì bù gǎn dàn	1
 揭厉朝将夕	jiē lì cháo jiāng xī	1
@@ -95468,7 +95470,7 @@ sort: by_weight
 老竹移时小	lǎo zhú yí shí xiǎo	1
 老逐众人行	lǎo zhú zhòng rén xíng	1
 老子叨专席	lǎo zi dāo zhuān xí	1
-落子还苍翠	lào zǐ hái cāng cuì	1
+落子还苍翠	lào zi hái cāng cuì	1
 老子经行处	lǎo zi jīng xíng chù	1
 老子苦乖慵	lǎo zi kǔ guāi yōng	1
 劳子去自巡	láo zǐ qù zì xún	1
@@ -119874,6 +119876,7 @@ sort: by_weight
 弃置在寒谿	qì zhì zài hán xī	1
 契之在深衷	qì zhī zài shēn zhōng	1
 岂知造化神	qǐ zhī zào huà shén	1
+其致之一也	qí zhì zhī yī yě	1
 岂知中道间	qǐ zhī zhōng dào jiān	1
 其中尽碧流	qí zhōng jìn bì liú	1
 棋终局未收	qí zhōng jú wèi shōu	1
@@ -139181,6 +139184,7 @@ sort: by_weight
 深到影中天	shēn dào yǐng zhōng tiān	1
 身得见全盛	shēn dé jiàn quán shèng	1
 神得一以灵	shén dé yī yǐ líng	1
+神得一以宁	shén dé yī yǐ níng	1
 身得遭太平	shēn dé zāo tài píng	1
 深得坐忘心	shēn de zuò wàng xīn	1
 身登青云梯	shēn dēng qīng yún tī	1
@@ -164999,7 +165003,7 @@ sort: by_weight
 未任供臼磨	wèi rèn gōng jiù mó	1
 唯人即不尔	wéi rén jí bù ěr	1
 未忍即开口	wèi rěn jí kāi kǒu	1
-未忍践落子	wèi rěn jiàn lào zǐ	1
+未忍践落子	wèi rěn jiàn lào zi	1
 畏人江北草	wèi rén jiāng běi cǎo	1
 未忍遽弃捐	wèi rěn jù qì juān	1
 未任筐筥载	wèi rèn kuāng jǔ zài	1
@@ -229847,6 +229851,7 @@ sort: by_weight
 万物不得不昌	wàn wù bù dé bù chāng	1
 万物畜而不知	wàn wù chù ér bù zhī	1
 万物出乎无有	wàn wù chū hū wú yǒu	1
+万物得一以生	wàn wù dé yī yǐ shēng	1
 万物而不为主	wàn wù ér bú wèi zhǔ	1
 万物皆出于机	wàn wù jiē chū yú jī	1
 万物莫不比方	wàn wù mò bù bǐ fāng	1
@@ -257800,8 +257805,8 @@ sort: by_weight
 画栏开处冠中秋	huà lán kāi chù guān zhōng qiū	1
 花浪翻天雪相激	huā làng fān tiān xuě xiāng jī	1
 花老室空谁作主	huā lǎo shì kōng shuí zuò zhǔ	1
-花落子成二千岁	huā lào zǐ chéng èr qiān suì	1
-花落子成三千岁	huā lào zǐ chéng sān qiān suì	1
+花落子成二千岁	huā lào zi chéng èr qiān suì	1
+花落子成三千岁	huā lào zi chéng sān qiān suì	1
 花冷回心玉一床	huā lěng huí xīn yù yì chuáng	1
 花里逢君醉一回	huā lǐ féng jūn zuì yì huí	1
 花里间关百啭莺	huā lǐ jiān guān bǎi zhuàn yīng	1
