@@ -7,6 +7,8 @@ name: lianxiang
 version: "LTS"
 sort: by_weight
 ...
+从来	cóng lái
+更大的想	gèng dà de xiǎng
 阿巴二氏病	ā bā èr shì bìng	1
 阿巴科群岛	ā bā kē qún dǎo	1
 阿贝比长仪	ā bèi bǐ cháng yí	1
@@ -10154,7 +10156,6 @@ sort: by_weight
 痹痛宁胶囊	bì tòng níng jiāo náng	1
 碧潼战俘营	bì tóng zhàn fú yíng	1
 闭图像定理	bì tú xiàng dìng lǐ	1
-闭图象定理	bì tú xiàng dìng lǐ	1
 比兔子还快	bǐ tù zi hái kuài	1
 比我大两岁	bǐ wǒ dà liǎng suì	1
 比我大一岁	bǐ wǒ dà yí suì	1
@@ -16583,7 +16584,7 @@ sort: by_weight
 不喜欢我了	bù xǐ huan wǒ le	1
 不喜欢洗澡	bù xǐ huan xǐ zǎo	1
 不喜欢小孩	bù xǐ huan xiǎo hái	1
-不喜欢肖战	bù xǐ huan xiào zhàn	1
+不喜欢肖战	bù xǐ huan xiāo zhàn	1
 不喜欢学习	bù xǐ huan xué xí	1
 不喜欢阳光	bù xǐ huan yáng guāng	1
 不喜欢阅读	bù xǐ huan yuè dú	1
@@ -28278,7 +28279,6 @@ sort: by_weight
 创造性人才	chuàng zào xìng rén cái	1
 创造性人格	chuàng zào xìng rén gé	1
 创造性思维	chuàng zào xìng sī wéi	1
-创造性想像	chuàng zào xìng xiǎng xiàng	1
 创造性想象	chuàng zào xìng xiǎng xiàng	1
 创造性写作	chuàng zào xìng xiě zuò	1
 创造性要求	chuàng zào xìng yāo qiú	1
@@ -28938,7 +28938,6 @@ sort: by_weight
 磁各向异性	cí gè xiàng yì xìng	1
 次共变张量	cì gòng biàn zhāng liàng	1
 磁共振成像	cí gòng zhèn chéng xiàng	1
-磁共振成象	cí gòng zhèn chéng xiàng	1
 磁共振检查	cí gòng zhèn jiǎn chá	1
 磁共振内镜	cí gòng zhèn nèi jìng	1
 磁共振平扫	cí gòng zhèn píng sǎo	1
@@ -29555,7 +29554,6 @@ sort: by_weight
 从来没听过	cóng lái méi tīng guò	1
 从来没想到	cóng lái méi xiǎng dào	1
 从来没想过	cóng lái méi xiǎng guò	1
-从来没想象	cóng lái méi xiǎng xiàng	1
 从来没赢过	cóng lái méi yíng guò	1
 从来没用过	cóng lái méi yòng guò	1
 从来没有变	cóng lái méi yǒu biàn	1
@@ -44883,7 +44881,7 @@ sort: by_weight
 短柱开采法	duǎn zhù kāi cǎi fǎ	1
 短柱硫银矿	duǎn zhù liú yín kuàng	1
 短柱铁线莲	duǎn zhù tiě xiàn lián	1
-短柱肖菝葜	duǎn zhù xiào bá qiā	1
+短柱肖菝葜	duǎn zhù xiāo bá qiā	1
 短柱小百合	duǎn zhù xiǎo bǎi hé	1
 短柱珍珠菜	duǎn zhù zhēn zhū cài	1
 短柱猪毛菜	duǎn zhù zhū máo cài	1
@@ -76554,7 +76552,6 @@ sort: by_weight
 函数的积分	hán shù de jī fēn	1
 函数的极限	hán shù de jí xiàn	1
 函数的图像	hán shù de tú xiàng	1
-函数的图象	hán shù de tú xiàng	1
 函数的凸性	hán shù de tū xìng	1
 函数的微分	hán shù de wēi fēn	1
 函数的用法	hán shù de yòng fǎ	1
@@ -87190,7 +87187,7 @@ sort: by_weight
 慧眼识英才	huì yǎn shí yīng cái	1
 慧眼识英雄	huì yǎn shí yīng xióng	1
 灰岩香茶菜	huī yán xiāng chá cài	1
-灰岩肖韶子	huī yán xiào sháo zǐ	1
+灰岩肖韶子	huī yán xiāo sháo zǐ	1
 会厌游离缘	huì yàn yóu lí yuán	1
 灰岩紫地榆	huī yán zǐ dì yú	1
 惠阳碧桂园	huì yáng bì guì yuán	1
@@ -124845,7 +124842,6 @@ sort: by_weight
 路线怎么走	lù xiàn zěn me zǒu	1
 录像带首映	lù xiàng dài shǒu yìng	1
 录像一体机	lù xiàng yì tǐ jī	1
-录象一体机	lù xiàng yì tǐ jī	1
 陆小凤传奇	lù xiǎo fèng chuán qí	1
 陆行鸟赛车	lù xíng niǎo sài chē	1
 陆行鸟系列	lù xíng niǎo xì liè	1
@@ -192129,6 +192125,8 @@ sort: by_weight
 听着不舒服	tīng zhe bù shū fú	1
 挺着大肚子	tǐng zhe dà dù zi	1
 挺着个肚子	tǐng zhe gè dù zi	1
+听着这些歌	tīng zhe zhè xiē gē	2
+听着这些个	tīng zhe zhè xiē gè	1
 听诊器耳塞	tīng zhěn qì ěr sāi	1
 听诊器胶管	tīng zhěn qì jiāo guǎn	1
 听诊器效应	tīng zhěn qì xiào yìng	1
@@ -214378,7 +214376,6 @@ sort: by_weight
 想想有道理	xiǎng xiǎng yǒu dào lǐ	1
 想象与现实	xiǎng xiàng yǔ xiàn shí	1
 湘乡云门寺	xiāng xiāng yún mén sì	1
-想像中的你	xiǎng xiàng zhōng de nǐ	1
 想象中美好	xiǎng xiàng zhōng měi hǎo	1
 像小编一样	xiàng xiǎo biān yí yàng	1
 像小狗一样	xiàng xiǎo gǒu yí yàng	1
@@ -214793,9 +214790,9 @@ sort: by_weight
 小半夏汤方	xiǎo bàn xià tāng fāng	1
 小坂由美子	xiǎo bǎn yóu měi zǐ	1
 小班制教学	xiǎo bān zhì jiào xué	1
-肖邦的夜曲	xiào bāng de yè qǔ	1
+肖邦的夜曲	xiāo bāng de yè qǔ	1
 萧邦练习曲	xiāo bāng liàn xí qǔ	1
-肖邦前奏曲	xiào bāng qián zòu qǔ	1
+肖邦前奏曲	xiāo bāng qián zòu qǔ	1
 小保方晴子	xiǎo bǎo fāng qíng zǐ	1
 小苞沟酸浆	xiǎo bāo gōu suān jiāng	1
 小宝和老财	xiǎo bǎo hé lǎo cái	1
@@ -215055,11 +215052,11 @@ sort: by_weight
 小恶魔来了	xiǎo è mó lái le	1
 小鳄鱼没牙	xiǎo è yú méi yá	1
 小鳄鱼游戏	xiǎo è yú yóu xì	1
-肖恩巴蒂尔	xiào ēn bā dì ěr	1
+肖恩巴蒂尔	xiāo ēn bā dì ěr	1
 小恩达遗址	xiǎo ēn dá yí zhǐ	1
-肖恩康纳利	xiào ēn kāng nà lì	1
-肖恩马里昂	xiào ēn mǎ lǐ áng	1
-肖恩约翰逊	xiào ēn yuē hàn xùn	1
+肖恩康纳利	xiāo ēn kāng nà lì	1
+肖恩马里昂	xiāo ēn mǎ lǐ áng	1
+肖恩约翰逊	xiāo ēn yuē hàn xùn	1
 小儿氨基酸	xiǎo ér ān jī suān	1
 小儿百乐片	xiǎo ér bǎi lè piàn	1
 小儿百日咳	xiǎo ér bǎi rì hāi	1
@@ -215069,7 +215066,7 @@ sort: by_weight
 小儿保安丸	xiǎo ér bǎo ān wán	1
 小儿宝泰康	xiǎo ér bǎo tài kāng	1
 小儿鼻炎片	xiǎo ér bí yán piàn	1
-肖尔布拉克	xiào ěr bù lā kè	1
+肖尔布拉克	xiāo ěr bù lā kè	1
 小儿补血药	xiǎo ér bǔ xuè yào	1
 小儿常见病	xiǎo ér cháng jiàn bìng	1
 小儿肠胃康	xiǎo ér cháng wèi kāng	1
@@ -215815,7 +215812,7 @@ sort: by_weight
 小家电品牌	xiǎo jiā diàn pǐn pái	1
 小家电市场	xiǎo jiā diàn shì chǎng	1
 小家电维修	xiǎo jiā diàn wéi xiū	1
-肖家河街道	xiào jiā hé jiē dào	1
+肖家河街道	xiāo jiā hé jiē dào	1
 小甲与巨甲	xiǎo jiǎ yǔ jù jiǎ	1
 小见川千明	xiǎo jiàn chuān qiān míng	1
 小间距产品	xiǎo jiān jù chǎn pǐn	1
@@ -215842,8 +215839,8 @@ sort: by_weight
 小金川土司	xiǎo jīn chuān tǔ sī	1
 小金刚菩提	xiǎo jīn gāng pú tí	1
 萧劲光大将	xiāo jìn guāng dà jiāng	1
-肖劲光大将	xiào jìn guāng dà jiāng	1
-肖劲光故居	xiào jìn guāng gù jū	1
+肖劲光大将	xiāo jìn guāng dà jiāng	1
+肖劲光故居	xiāo jìn guāng gù jū	1
 小金井公园	xiǎo jīn jǐng gōng yuán	1
 小金口街道	xiǎo jīn kǒu jiē dào	1
 晓金斯基区	xiǎo jīn sī jī qū	1
@@ -215955,7 +215952,7 @@ sort: by_weight
 小林丑三郎	xiǎo lín chǒu sān láng	1
 小林多喜二	xiǎo lín duō xǐ èr	1
 小林可梦伟	xiǎo lín kě mèng wěi	1
-肖霖喵喵哒	xiào lín miāo miāo dā	1
+肖霖喵喵哒	xiāo lín miāo miāo dā	1
 小鳞南非鳎	xiǎo lín nán fēi tǎ	1
 小林浅三郎	xiǎo lín qiǎn sān láng	1
 小林贤太郎	xiǎo lín xián tài láng	1
@@ -216129,7 +216126,7 @@ sort: by_weight
 孝穆成皇后	xiào mù chéng huáng hòu	1
 小木虫论坛	xiǎo mù chóng lùn tán	1
 孝穆纪太后	xiào mù jì tài hòu	1
-肖穆罗多夫	xiào mù luó duō fū	1
+肖穆罗多夫	xiāo mù luó duō fū	1
 小奶狗男友	xiǎo nǎi gǒu nán yǒu	1
 小南国餐饮	xiǎo nán guó cān yǐn	1
 小南国集团	xiǎo nán guó jí tuán	1
@@ -216225,9 +216222,9 @@ sort: by_weight
 小屏幕手机	xiǎo píng mù shǒu jī	1
 萧平实导师	xiāo píng shí dǎo shī	1
 小普济尔基	xiǎo pǔ jì ěr jī	1
-肖普朗大学	xiào pǔ lǎng dà xué	1
+肖普朗大学	xiāo pǔ lǎng dà xué	1
 小普里齐基	xiǎo pǔ lǐ qí jī	1
-肖普斯基湾	xiào pǔ sī jī wān	1
+肖普斯基湾	xiāo pǔ sī jī wān	1
 萧普提斯基	xiāo pǔ tí sī jī	1
 小汽车摇号	xiǎo qì chē yáo hào	1
 小气大财神	xiǎo qì dà cái shén	1
@@ -216370,8 +216367,8 @@ sort: by_weight
 小舌清擦音	xiǎo shé qīng cā yīn	1
 小舌浊擦音	xiǎo shé zhuó cā yīn	1
 孝慎成皇后	xiào shèn chéng huáng hòu	1
-肖申克监狱	xiào shēn kè jiān yù	1
-肖申克救赎	xiào shēn kè jiù shú	1
+肖申克监狱	xiāo shēn kè jiān yù	1
+肖申克救赎	xiāo shēn kè jiù shú	1
 小升初报名	xiǎo shēng chū bào míng	1
 小升初家长	xiǎo shēng chū jiā zhǎng	1
 小升初简历	xiǎo shēng chū jiǎn lì	1
@@ -216435,7 +216432,7 @@ sort: by_weight
 消失的子弹	xiāo shī de zǐ dàn	1
 小时电视剧	xiǎo shí diàn shì jù	1
 小时都不够	xiǎo shí dōu bú gòu	1
-肖氏反射弧	xiào shì fǎn shè hú	1
+肖氏反射弧	xiāo shì fǎn shè hú	1
 硝石矾石散	xiāo shí fán shí sàn	1
 消石矾石散	xiāo shí fán shí sàn	1
 硝石各四两	xiāo shí gè sì liǎng	1
@@ -216682,8 +216679,8 @@ sort: by_weight
 小汤山模式	xiǎo tāng shān mó shì	1
 小汤山温泉	xiǎo tāng shān wēn quán	1
 小汤山医院	xiǎo tāng shān yī yuàn	1
-肖特基缺陷	xiào tè jī quē xiàn	1
-肖特基效应	xiào tè jī xiào yìng	1
+肖特基缺陷	xiāo tè jī quē xiàn	1
+肖特基效应	xiāo tè jī xiào yìng	1
 小提琴比赛	xiǎo tí qín bǐ sài	1
 小提琴大师	xiǎo tí qín dà shī	1
 小提琴独奏	xiǎo tí qín dú zòu	1
@@ -216725,8 +216722,8 @@ sort: by_weight
 小腿外侧区	xiǎo tuǐ wài cè qū	1
 小腿再植术	xiǎo tuǐ zài zhí shù	1
 小屯水泥厂	xiǎo tún shuǐ ní chǎng	1
-肖脱基缺陷	xiào tuō jī quē xiàn	1
-肖脱基势垒	xiào tuō jī shì lěi	1
+肖脱基缺陷	xiāo tuō jī quē xiàn	1
+肖脱基势垒	xiāo tuō jī shì lěi	1
 校外辅导班	xiào wài fǔ dǎo bān	1
 校外辅导员	xiào wài fǔ dǎo yuán	1
 校外培训班	xiào wài péi xùn bān	1
@@ -248311,7 +248308,7 @@ sort: by_weight
 掌浅静脉弓	zhǎng qiǎn jìng mài gōng	1
 张骞通西域	zhāng qiān tōng xī yù	1
 张丘建算经	zhāng qiū jiàn suàn jīng	1
-漳泉肖铁路	zhāng quán xiào tiě lù	1
+漳泉肖铁路	zhāng quán xiāo tiě lù	1
 张荣发家族	zhāng róng fā jiā zú	1
 张荣味家族	zhāng róng wèi jiā zú	1
 张若昀饰演	zhāng ruò yún shì yǎn	1
@@ -268023,7 +268020,6 @@ sort: by_weight
 阿巴奥科罗岛	ā bā ào kē luó dǎo	1
 阿贝比长原理	ā bèi bǐ cháng yuán lǐ	1
 阿贝成像理论	ā bèi chéng xiàng lǐ lùn	1
-阿贝成象原理	ā bèi chéng xiàng yuán lǐ	2
 阿贝成像原理	ā bèi chéng xiàng yuán lǐ	1
 阿贝尔不等式	ā bèi ěr bù děng shì	1
 阿贝耳不等式	ā bèi ěr bù děng shì	1
@@ -269389,7 +269385,7 @@ sort: by_weight
 白滑苔黑心舌	bái huá tái hēi xīn shé	1
 白花西南鸢尾	bái huā xī nán yuān wěi	1
 白花小红门兰	bái huā xiǎo hóng mén lán	1
-白花肖头蕊兰	bái huā xiào tóu ruǐ lán	1
+白花肖头蕊兰	bái huā xiāo tóu ruǐ lán	1
 白花异叶苣苔	bái huā yì yè jù tái	1
 白花紫苞鸢尾	bái huā zǐ bāo yuān wěi	1
 百汇医疗集团	bǎi huì yī liáo jí tuán	1
@@ -270215,8 +270211,8 @@ sort: by_weight
 贝博二氏手术	bèi bó èr shì shǒu shù	1
 贝伯克二氏病	bèi bó kè èr shì bìng	1
 贝伯绍三氏病	bèi bó shào sān shì bìng	1
-贝伯肖三氏病	bèi bó xiào sān shì bìng	1
-贝伯肖综合征	bèi bó xiào zōng hé zhēng	1
+贝伯肖三氏病	bèi bó xiāo sān shì bìng	1
+贝伯肖综合征	bèi bó xiāo zōng hé zhēng	1
 贝布二氏现象	bèi bù èr shì xiàn xiàng	1
 被不公平对待	bèi bù gōng píng duì dài	1
 背部指纹识别	bèi bù zhǐ wén shí bié	1
@@ -290197,7 +290193,6 @@ sort: by_weight
 河出书房新社	hé chū shū fáng xīn shè	1
 合穿一条裤子	hé chuān yì tiáo kù zi	1
 核磁共振波谱	hé cí gòng zhèn bō pǔ	2
-核磁共振成象	hé cí gòng zhèn chéng xiàng	2
 核磁共振成像	hé cí gòng zhèn chéng xiàng	1
 核磁共振技术	hé cí gòng zhèn jì shù	2
 核磁共振氢谱	hé cí gòng zhèn qīng pǔ	1
@@ -298409,7 +298404,6 @@ sort: by_weight
 局部全层萎缩	jú bù quán céng wěi suō	1
 局部热动平衡	jú bù rè dòng píng héng	1
 局部同态函数	jú bù tóng tài hán shù	1
-局部图象放大	jú bù tú xiàng fàng dà	2
 局部图像放大	jú bù tú xiàng fàng dà	1
 据不完全统计	jù bù wán quán tǒng jì	1
 局部无偏检验	jú bù wú piān jiǎn yàn	1
@@ -300490,7 +300484,7 @@ sort: by_weight
 库利科夫战役	kù lì kē fū zhàn yì	1
 库里科沃战役	kù lǐ kē wò zhàn yì	1
 库利科沃战役	kù lì kē wò zhàn yì	1
-库里肖夫效应	kù lǐ xiào fū xiào yìng	1
+库里肖夫效应	kù lǐ xiāo fū xiào yìng	1
 苦练杀敌本领	kǔ liàn shā dí běn lǐng	1
 库鲁航天中心	kù lǔ háng tiān zhōng xīn	1
 库伦摩擦定律	kù lún mó cā dìng lǜ	1
@@ -300928,7 +300922,7 @@ sort: by_weight
 蓝荷明口服液	lán hé míng kǒu fú yè	1
 蓝甲板彼拉多	lán jiǎ bǎn bǐ lā duō	1
 蓝剑饮品集团	lán jiàn yǐn pǐn jí tuán	1
-蓝角胸肖叶甲	lán jiǎo xiōng xiào yè jiǎ	1
+蓝角胸肖叶甲	lán jiǎo xiōng xiāo yè jiǎ	1
 蓝鲸财经记者	lán jīng cái jīng jì zhě	1
 兰克二氏钻头	lán kè èr shì zuàn tóu	1
 兰科维奇主义	lán kē wéi qí zhǔ yì	1
@@ -308751,7 +308745,7 @@ sort: by_weight
 平稳时间序列	píng wěn shí jiān xù liè	1
 平稳随机过程	píng wěn suí jī guò chéng	1
 平西高速公路	píng xī gāo sù gōng lù	1
-平肖国家森林	píng xiào guó jiā sēn lín	1
+平肖国家森林	píng xiāo guó jiā sēn lín	1
 平消片薄膜衣	píng xiāo piàn báo mó yī	1
 评新编历史剧	píng xīn biān lì shǐ jù	1
 平行板电容器	píng xíng bǎn diàn róng qì	1
@@ -310477,7 +310471,6 @@ sort: by_weight
 庆大霉素溶液	qìng dà méi sù róng yè	1
 庆大霉素中毒	qìng dà méi sù zhòng dú	1
 清代匠作则例	qīng dài jiàng zuò zé lì	1
-清代学者像传	qīng dài xué zhě xiàng zhuàn	1
 清代学者象传	qīng dài xué zhě xiàng zhuàn	1
 清代伊斯兰教	qīng dài yī sī lán jiào	1
 清代职官年表	qīng dài zhí guān nián biǎo	1
@@ -317707,7 +317700,7 @@ sort: by_weight
 十一氧化六镨	shí yī yǎng huà liù pǔ	1
 时亦犹其未央	shí yì yóu qí wèi yāng	1
 十一月的萧邦	shí yī yuè de xiāo bāng	1
-十一月的肖邦	shí yī yuè de xiào bāng	1
+十一月的肖邦	shí yī yuè de xiāo bāng	1
 十一周年纪念	shí yī zhōu nián jì niàn	1
 石银高速公路	shí yín gāo sù gōng lù	1
 嗜银性类癌瘤	shì yín xìng lèi ái liú	1
@@ -322100,7 +322093,6 @@ sort: by_weight
 童贞女玛利亚	tóng zhēn nǚ mǎ lì yà	1
 通政使司副使	tōng zhèng shǐ sī fù shǐ	1
 同志爱情电影	tóng zhì ài qíng diàn yǐng	1
-同质多象变体	tóng zhì duō xiàng biàn tǐ	1
 统治攻防两端	tǒng zhì gōng fáng liǎng duān	1
 同质化的产品	tóng zhì huà de chǎn pǐn	1
 同志骄傲游行	tóng zhì jiāo ào yóu xíng	1
@@ -323402,7 +323394,6 @@ sort: by_weight
 胃肠吻合口炎	wèi cháng wěn hé kǒu yán	1
 胃肠型荨麻疹	wèi cháng xíng xún má zhěn	1
 胃超声显像液	wèi chāo shēng xiǎn xiàng yè	1
-胃超声显象液	wèi chāo shēng xiǎn xiàng yè	1
 伪钞者之末路	wěi chāo zhě zhī mò lù	1
 未尘封的往事	wèi chén fēng de wǎng shì	1
 惟陈言之务去	wéi chén yán zhī wù qù	1
@@ -327300,9 +327291,9 @@ sort: by_weight
 消毒水的味道	xiāo dú shuǐ de wèi dào	1
 小额免密免签	xiǎo é miǎn mì miǎn qiān	1
 小额免密支付	xiǎo é miǎn mì zhī fù	1
-肖恩哈格算法	xiào ēn hā gé suàn fǎ	1
-肖恩利文斯顿	xiào ēn lì wén sī dùn	1
-肖恩威廉姆斯	xiào ēn wēi lián mǔ sī	1
+肖恩哈格算法	xiāo ēn hā gé suàn fǎ	1
+肖恩利文斯顿	xiāo ēn lì wén sī dùn	1
+肖恩威廉姆斯	xiāo ēn wēi lián mǔ sī	1
 小儿氨酚那敏	xiǎo ér ān fēn nà mǐn	1
 小儿氨酚匹林	xiǎo ér ān fēn pǐ lín	1
 小儿氨酚烷胺	xiǎo ér ān fēn wán àn	1
@@ -327313,8 +327304,8 @@ sort: by_weight
 小儿贝诺酯散	xiǎo ér bèi nuò zhǐ sàn	1
 小儿贝诺酯维	xiǎo ér bèi nuò zhǐ wéi	1
 小儿扁桃体炎	xiǎo ér biǎn táo tǐ yán	1
-肖尔布拉克酒	xiào ěr bù lā kè jiǔ	1
-肖尔布拉克镇	xiào ěr bù lā kè zhèn	1
+肖尔布拉克酒	xiāo ěr bù lā kè jiǔ	1
+肖尔布拉克镇	xiāo ěr bù lā kè zhèn	1
 小儿布洛芬栓	xiǎo ér bù luò fēn shuān	1
 小儿补血糖片	xiǎo ér bǔ xuè táng piàn	1
 小儿参术健脾	xiǎo ér cān shù jiàn pí	1
@@ -327443,7 +327434,7 @@ sort: by_weight
 小飞侠候群症	xiǎo fēi xiá hòu qún zhèng	1
 小飞鱼喜欢飞	xiǎo fēi yú xǐ huan fēi	1
 消风止痒颗粒	xiāo fēng zhǐ yǎng kē lì	1
-肖夫科夫斯基	xiào fū kē fū sī jī	1
+肖夫科夫斯基	xiāo fū kē fū sī jī	1
 小弗拉基米尔	xiǎo fú lā jī mǐ ěr	1
 小弗里德里希	xiǎo fú lǐ dé lǐ xī	1
 小腹微微隆起	xiǎo fù wēi wēi lóng qǐ	1
@@ -327584,7 +327575,7 @@ sort: by_weight
 小龙女和杨过	xiǎo lóng nǚ hé yáng guò	1
 小楼昨夜听风	xiǎo lóu zuó yè tīng fēng	1
 小卢基里乌斯	xiǎo lú jī lǐ wū sī	1
-肖洛霍夫斯基	xiào luò huò fū sī jī	1
+肖洛霍夫斯基	xiāo luò huò fū sī jī	1
 小罗斯福新政	xiǎo luó sī fú xīn zhèng	1
 消络痛片糖衣	xiāo luò tòng piàn táng yī	1
 消瘰夏枯草膏	xiāo luǒ xià kū cǎo gāo	1
@@ -327614,7 +327605,7 @@ sort: by_weight
 小魔女得意妹	xiǎo mó nǚ dé yì mèi	1
 小墨山核电站	xiǎo mò shān hé diàn zhàn	1
 小莫什基夫齐	xiǎo mò shí jī fū qí	1
-肖奈和贝微微	xiào nài hé bèi wēi wēi	1
+肖奈和贝微微	xiāo nài hé bèi wēi wēi	1
 小男孩的妈妈	xiǎo nán hái de mā ma	1
 小脑扁桃体支	xiǎo nǎo biǎn táo tǐ zhī	1
 小脑恶性肿瘤	xiǎo nǎo è xìng zhǒng liú	1
@@ -327680,7 +327671,7 @@ sort: by_weight
 小沙普基夫卡	xiǎo shā pǔ jī fū kǎ	1
 萧山开元广场	xiāo shān kāi yuán guǎng chǎng	1
 小山日本料理	xiǎo shān rì běn liào lǐ	1
-肖申克的救赎	xiào shēn kè de jiù shú	1
+肖申克的救赎	xiāo shēn kè de jiù shú	1
 消声狙击步枪	xiāo shēng jū jī bù qiāng	1
 小圣詹姆斯岛	xiǎo shèng zhān mǔ sī dǎo	1
 消石矾石散方	xiāo shí fán shí sàn fāng	1
@@ -327784,8 +327775,8 @@ sort: by_weight
 小腿内侧皮支	xiǎo tuǐ nèi cè pí zhī	1
 小腿浅表冻伤	xiǎo tuǐ qiǎn biǎo dòng shāng	1
 小腿前肌间隔	xiǎo tuǐ qián jī jiàn gé	1
-肖脱基二极管	xiào tuō jī èr jí guǎn	1
-肖脱基晶体管	xiào tuō jī jīng tǐ guǎn	1
+肖脱基二极管	xiāo tuō jī èr jí guǎn	1
+肖脱基晶体管	xiāo tuō jī jīng tǐ guǎn	1
 校外实践基地	xiào wài shí jiàn jī dì	1
 小丸子的粉丝	xiǎo wán zi de fěn sī	1
 小丸子的家人	xiǎo wán zi de jiā rén	1
@@ -327909,7 +327900,7 @@ sort: by_weight
 校园言情小说	xiào yuán yán qíng xiǎo shuō	1
 小月龄的宝宝	xiǎo yuè líng de bǎo bao	1
 消灾吉祥神咒	xiāo zāi jí xiáng shén zhòu	1
-肖战粉丝事件	xiào zhàn fěn sī shì jiàn	1
+肖战粉丝事件	xiāo zhàn fěn sī shì jiàn	1
 小召前街街道	xiǎo zhào qián jiē jiē dào	1
 小智的皮卡丘	xiǎo zhì de pí kǎ qiū	1
 消痔灵注射液	xiāo zhì líng zhù shè yè	1
@@ -335628,7 +335619,7 @@ sort: by_weight
 原间千金藤碱	yuán jiān qiān jīn téng jiǎn	1
 援建希望小学	yuán jiàn xī wàng xiǎo xué	1
 原焦高速公路	yuán jiāo gāo sù gōng lù	1
-圆角胸肖叶甲	yuán jiǎo xiōng xiào yè jiǎ	1
+圆角胸肖叶甲	yuán jiǎo xiōng xiāo yè jiǎ	1
 远节指骨粗隆	yuǎn jié zhǐ gǔ cū lóng	1
 远节趾骨粗隆	yuǎn jié zhǐ gǔ cū lóng	1
 愿景和价值观	yuàn jǐng hé jià zhí guān	1
@@ -342307,7 +342298,7 @@ sort: by_weight
 阿昔洛韦葡萄糖	ā xī luò wéi pú táo táng	1
 阿昔洛韦注射液	ā xī luò wéi zhù shè yè	1
 阿昔莫司分散片	ā xī mò sī fēn sǎn piàn	1
-阿肖二氏综合症	ā xiào èr shì zōng hé zhèng	1
+阿肖二氏综合症	ā xiāo èr shì zōng hé zhèng	1
 阿谢二氏综合症	ā xiè èr shì zōng hé zhèng	1
 阿歇特出版公司	ā xiē tè chū bǎn gōng sī	1
 阿耶萨氏综合症	ā yé sà shì zōng hé zhèng	1
@@ -353571,7 +353562,6 @@ sort: by_weight
 更大的发挥空间	gèng dà de fā huī kōng jiān	1
 更大的上升空间	gèng dà de shàng shēng kōng jiān	1
 更大的社会价值	gèng dà de shè huì jià zhí	1
-更大的想象空间	gèng dà de xiǎng xiàng kōng jiān	1
 更大的选择空间	gèng dà de xuǎn zé kōng jiān	1
 更大的意义在于	gèng dà de yì yì zài yú	1
 更大容量的电池	gèng dà róng liàng de diàn chí	1
@@ -356287,7 +356277,7 @@ sort: by_weight
 绞股蓝总甙胶囊	jiǎo gǔ lán zǒng dài jiāo náng	1
 绞股蓝总苷胶囊	jiǎo gǔ lán zǒng gān jiāo náng	1
 绞股蓝总苷颗粒	jiǎo gǔ lán zǒng gān kē lì	1
-角基角胸肖叶甲	jiǎo jī jiǎo xiōng xiào yè jiǎ	1
+角基角胸肖叶甲	jiǎo jī jiǎo xiōng xiāo yè jiǎ	1
 焦痂开窗植皮术	jiāo jiā kāi chuāng zhí pí shù	1
 焦痂切除植皮术	jiāo jiā qiē chú zhí pí shù	1
 焦痂下细菌计数	jiāo jiā xià xì jūn jì shù	1
@@ -363678,7 +363668,7 @@ sort: by_weight
 小腿静脉性溃疡	xiǎo tuǐ jìng mài xìng kuì yáng	1
 小腿开放性伤口	xiǎo tuǐ kāi fàng xìng shāng kǒu	1
 小腿慢性毛囊炎	xiǎo tuǐ màn xìng máo náng yán	1
-肖维涅舍弃判据	xiào wéi niè shě qì pàn jù	3
+肖维涅舍弃判据	xiāo wéi niè shě qì pàn jù	3
 小涎腺恶性肿瘤	xiǎo xián xiàn è xìng zhǒng liú	1
 小涎腺良性肿瘤	xiǎo xián xiàn liáng xìng zhǒng liú	1
 小心驶得万年船	xiǎo xīn shǐ de wàn nián chuán	1
@@ -365118,7 +365108,7 @@ sort: by_weight
 艺人新媒体指数	yì rén xīn méi tǐ zhǐ shù	1
 溢乳闭经综合征	yì rǔ bì jīng zōng hé zhēng	1
 怡瑞西沙比利片	yí ruì xī shā bǐ lì piàn	1
-异色角胸肖叶甲	yì sè jiǎo xiōng xiào yè jiǎ	1
+异色角胸肖叶甲	yì sè jiǎo xiōng xiāo yè jiǎ	1
 依沙吖啶注射液	yī shā ā dìng zhù shè yè	1
 异山梨醇口服液	yì shān lí chún kǒu fú yè	1
 异山梨酯缓释片	yì shān lí zhǐ huǎn shì piàn	1
