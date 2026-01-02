@@ -45,7 +45,7 @@ octagram:
       collocation_penalty: -10
       non_collocation_penalty: -20
       weak_collocation_penalty: -45
-      rear_penalty: -5
+      rear_penalty: -12
     translator/contextual_suggestions: false
     translator/max_homophones: 5
     translator/max_homographs: 5
