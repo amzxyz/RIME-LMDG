@@ -1,0 +1,314 @@
+name: Auto Build Wanxiang Tools
+
+on:
+  push:
+    branches: 
+      - wanxiang
+    paths:
+      - 'pypinyin/**'
+      - 'wanxiang-tools.py'
+  workflow_dispatch:
+
+jobs:
+  # =================================================
+  # 1. Linux 构建 (Debian + 图标 + 依赖增强)
+  # =================================================
+  build-linux:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - run: sudo apt-get update && sudo apt-get install -y binutils imagemagick
+
+      - run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install PySide6 requests pyinstaller
+          
+          if [ ! -f icon.ico ]; then touch icon.ico; fi
+          # 转换图标
+          convert icon.ico -resize 256x256 wanxiang-tools.png
+          
+          pyinstaller -F -w \
+            --clean \
+            --name wanxiang-tools \
+            --paths . \
+            --add-data "pypinyin:pypinyin" \
+            --hidden-import requests \
+            --exclude-module tkinter \
+            --exclude-module numpy \
+            --exclude-module matplotlib \
+            --exclude-module libsystemd \
+            --exclude-module PIL \
+            --exclude-module cv2 \
+            --exclude-module PySide6.QtQml \
+            --exclude-module PySide6.QtQuick \
+            --exclude-module PySide6.QtWebEngine \
+            --exclude-module PySide6.Qt3DCore \
+            -i icon.ico \
+            wanxiang-tools.py
+
+          strip dist/wanxiang-tools
+
+      # --- 制作 .deb 包 ---
+      - run: |
+          VERSION="1.0.${{ github.run_number }}"
+          mkdir -p dist/deb/usr/local/bin
+          mkdir -p dist/deb/usr/share/pixmaps
+          mkdir -p dist/deb/usr/share/applications
+          mkdir -p dist/deb/DEBIAN
+
+          cp dist/wanxiang-tools dist/deb/usr/local/bin/
+          cp wanxiang-tools.png dist/deb/usr/share/pixmaps/
+
+          cat > dist/deb/usr/share/applications/wanxiang-tools.desktop <<EOF
+          [Desktop Entry]
+          Name=Wanxiang Tools
+          Name[zh_CN]=万象词库工具
+          Comment=万象词库方案更新工具
+          Exec=/usr/local/bin/wanxiang-tools
+          Icon=wanxiang-tools
+          Terminal=false
+          Type=Application
+          Categories=Utility;System;
+          StartupWMClass=wanxiang-tools
+          EOF
+
+          chmod 755 dist/wanxiang-tools dist/deb/DEBIAN
+          
+          cat > dist/deb/DEBIAN/control <<EOF
+          Package: wanxiang-tools
+          Version: ${VERSION}
+          Section: utils
+          Priority: optional
+          Architecture: amd64
+          Depends: libc6, libgcc1, libgl1, libxkbcommon-x11-0, libegl1
+          Maintainer: Wanxiang <user@example.com>
+          Description: 万象词库-刷拼音-辅助码工具
+           支持rime用户词库与固定词库格式，用于帮助维护自己的挂接词库与非万象词库生成的用户词库迁移到万象。
+          EOF
+          
+          dpkg-deb --build dist/deb dist/wanxiang-tools_linux_amd64.deb
+
+      # 【关键修复】整理所有文件到一个扁平目录，避免目录结构混乱
+      - name: Prepare Artifacts
+        run: |
+          mkdir -p upload_stage
+          cp dist/wanxiang-tools upload_stage/
+          cp dist/*.deb upload_stage/
+          cp wanxiang-tools.png upload_stage/
+
+      # 上传扁平化后的目录
+      - name: Upload Linux Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-dist
+          path: upload_stage/*
+
+  package-arch:
+    needs: build-linux
+    runs-on: ubuntu-latest
+    container: archlinux:base-devel
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: linux-dist
+          path: build_dir
+
+      - name: Build Arch Package
+        run: |
+          # 1. 预安装依赖
+          pacman -Sy --noconfirm
+          pacman -S --noconfirm libglvnd libxcb libxkbcommon fontconfig git
+
+          cd build_dir
+          chmod +x wanxiang-tools
+          
+          # 生成 desktop
+          cat > wanxiang-tools.desktop <<EOF
+          [Desktop Entry]
+          Name=Wanxiang Tools
+          Name[zh_CN]=万象词库工具
+          Comment=万象词库方案更新工具
+          Exec=/usr/bin/wanxiang-tools
+          Icon=wanxiang-tools
+          Terminal=false
+          Type=Application
+          Categories=Utility;System;
+          StartupWMClass=wanxiang-tools
+          EOF
+          
+          cp wanxiang-tools.png wanxiang-tools.png.bk
+
+          VERSION="1.0.${{ github.run_number }}"
+          
+          # 2. 生成 PKGBUILD (加入 !debug 选项)
+          cat > PKGBUILD <<EOF
+          # Maintainer: Auto Build <ci@github>
+          pkgname=wanxiang-tools
+          pkgver=${VERSION}
+          pkgrel=1
+          pkgdesc="万象词库方案更新工具 (Auto Build)"
+          arch=('x86_64')
+          url="https://github.com/${{ github.repository }}"
+          license=('GPL')
+          depends=('glibc' 'libglvnd' 'libxcb' 'libxkbcommon' 'fontconfig')
+          source=("wanxiang-tools" "wanxiang-tools.png" "wanxiang-tools.desktop")
+          sha256sums=('SKIP' 'SKIP' 'SKIP')
+          
+          # 【关键】禁用 debug 包生成，禁用 strip (因为二进制已经是 strip 过的了)
+          options=('!debug' '!strip') 
+
+          package() {
+              install -Dm755 "\$srcdir/wanxiang-tools" "\$pkgdir/usr/bin/wanxiang-tools"
+              install -Dm644 "\$srcdir/wanxiang-tools.png" "\$pkgdir/usr/share/pixmaps/wanxiang-tools.png"
+              install -Dm644 "\$srcdir/wanxiang-tools.desktop" "\$pkgdir/usr/share/applications/wanxiang-tools.desktop"
+          }
+          EOF
+
+          useradd builder -m
+          chown -R builder:builder .
+          su builder -c "makepkg -f --noconfirm"
+          
+          mv *.pkg.tar.zst ../
+
+      - name: Upload Arch Package
+        uses: actions/upload-artifact@v4
+        with:
+          name: arch-pkg
+          path: ./*.pkg.tar.zst
+  # =================================================
+  # 3. Windows 构建
+  # =================================================
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: Build with PyInstaller
+        shell: bash
+        run: |
+          pip install PySide6 requests pyinstaller
+          if [ ! -f icon.ico ]; then touch icon.ico; fi
+
+          pyinstaller -F -w \
+            --name wanxiang-tools \
+            --paths . \
+            --add-data "pypinyin;pypinyin" \
+            --hidden-import requests \
+            --exclude-module tkinter \
+            --exclude-module numpy \
+            --exclude-module matplotlib \
+            --exclude-module PySide6.QtQml \
+            --exclude-module PySide6.QtQuick \
+            --exclude-module PySide6.QtWebEngine \
+            -i icon.ico \
+            wanxiang-tools.py
+
+      - name: Upload Windows Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-dist
+          path: dist/*.exe
+
+  # =================================================
+  # 4. macOS 构建
+  # =================================================
+  build-macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install PySide6 requests pyinstaller pillow
+      - run: |
+          if [ ! -f icon.ico ]; then touch icon.ico; fi
+
+          pyinstaller -F -w \
+            --name wanxiang-tools \
+            --paths . \
+            --add-data "pypinyin:pypinyin" \
+            --hidden-import requests \
+            --exclude-module tkinter \
+            --exclude-module numpy \
+            --exclude-module matplotlib \
+            --exclude-module PySide6.QtQml \
+            --exclude-module PySide6.QtQuick \
+            --exclude-module PySide6.QtWebEngine \
+            -i icon.ico \
+            wanxiang-tools.py
+          
+          cd dist
+          zip -r wanxiang-tools-macos.zip wanxiang-tools.app
+
+      - name: Upload macOS Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-dist
+          path: dist/*.zip
+
+  # =================================================
+  # 5. 统一发布
+  # =================================================
+  publish:
+    needs: [build-linux, package-arch, build-windows, build-macos]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: release_files
+          merge-multiple: true
+
+      # 【关键步骤】清理不需要发布的文件
+      - name: Clean up artifacts
+        run: |
+          cd release_files
+          # 删除中间产物 png
+          rm -f *.png
+          # 双重保险：如果有残留的 debug 包也删掉
+          rm -f *-debug-*.pkg.tar.zst
+          ls -R # 检查一下最终要发布的文件列表
+
+      - name: Delete old Release and Tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release delete tool --cleanup-tag --yes || true
+          git push origin --delete tool || true
+          sleep 5
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: tool
+          target_commitish: ${{ github.sha }}
+          name: "万象词库-刷拼音-辅助码工具 (自动更新)"
+          body: |
+            ## 功能说明
+            - 支持rime用户词库与固定词库格式，用于帮助维护自己的挂接词库与非万象词库生成的用户词库迁移到万象。
+            - 公共拼音标注工具 (pypinyin GUI简版)。
+            - 支持更新万象各方案、词库、模型，在线更新方案GUI。
+
+            ## 📦 Linux 安装说明
+            - **Debian/Ubuntu**: 下载 `.deb` 包，运行 `sudo dpkg -i wanxiang-tools*.deb`
+            - **Arch Linux/Manjaro**:  下载 `.pkg.tar.zst` 包，运行:
+              \`sudo pacman -U wanxiang-tools-*.pkg.tar.zst\`
+            - **通用版**: 下载无后缀文件，运行 `chmod +x` 后启动。
+
+            ## 🍎 macOS 用户注意
+            本版本适用于 Apple Silicon (M1/M2/M3)。如果提示“文件损坏”：
+            \`sudo xattr -rd com.apple.quarantine /path/to/wanxiang-tools-macos\`
+          files: release_files/*

@@ -10,7 +10,12 @@ sort: by_weight
 自己打的	zì jǐ dǎ de	80
 怎么打的	zěn me dǎ de	49
 谁都不会服谁	shéi dōu bú huì fú shéi	1
+调来调去	tiáo lái tiáo qù	33
 不会服谁	bú huì fú shéi	29
+空着	kòng zhe	549
+大夫们	dà fū men	194
+咱家	zá jiā	207
+咱家的	zá jiā de	118
 打的	dǎ de	600
 实在	shí zai	814
 长有	zhǎng yǒu	510
@@ -56,9 +61,20 @@ sort: by_weight
 落子不悔	lào zǐ bù huǐ	7
 落子布局	lào zǐ bù jú	32
 长虫子	cháng chóng zi	146
+也不长	yě bù zhǎng	446
+出血线	chū xuè xiàn	261
+出血	chū xuè	450
+逻辑	luó jí	810
+此行	cí háng	559
+上头	shàng tou	533
 长虫	zhǎng chóng	377
 落子	lào zǐ	480
 卡住	kǎ zhù	442
+本事	běn shi	668
+还上了	huán shàng le	440
+她穿着	tā chuān zhuó	394
+他穿着	tā chuān zhuó	416
+一定还	yí dìng huán	531
 将进酒	jiāng jìn jiǔ	169
 调了吧	tiáo le ba	170
 他调了	tā tiáo le	190
@@ -3447,6 +3463,7 @@ sort: by_weight
 谁跟谁	shéi gēn shéi	370
 谁跟他	shéi gēn tā	300
 谁跟我	shéi gēn wǒ	380
+谁更	shéi gèng	339
 谁更爱	shéi gèng ài	250
 谁更惨	shéi gèng cǎn	250
 谁更大	shéi gèng dà	290
