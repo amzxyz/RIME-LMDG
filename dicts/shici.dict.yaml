@@ -136,6 +136,7 @@ sort: by_weight
 廖行之	liào xíng zhī	4
 辽与金	liáo yǔ jīn	16
 六百载	liù bǎi zǎi	96
+柳阴直	liǔ yīn zhí	4
 论语者	lún yǔ zhě	96
 马牛羊	mǎ niú yáng	173
 麦黍稷	mài shǔ jì	32
@@ -9667,7 +9668,7 @@ sort: by_weight
 有怀载迁	yǒu huái zài qiān	1
 有怀载殷	yǒu huái zài yīn	1
 游环胁驱	yóu huán xié qū	1
-有皇上帝	yǒu huáng shàng dì	1
+有皇上帝	yǒu huáng shang dì	1
 犹或不可	yóu huò bù kě	1
 右击槁枝	yòu jī gǎo zhī	1
 游集灵观	yóu jí líng guān	1
@@ -97638,10 +97639,10 @@ sort: by_weight
 连台盘拗倒	lián tái pán ǎo dào	1
 连潭万木影	lián tán wàn mù yǐng	1
 莲塘倒箭靫	lián táng dào jiàn chá	1
+莲塘属意疏	lián táng shǔ yì shū	1
 莲塘想旧叶	lián táng xiǎng jiù yè	1
 莲塘晓独行	lián táng xiǎo dú xíng	1
 莲塘烟露滋	lián táng yān lù zī	1
-莲塘属意疏	lián táng zhǔ yì shū	1
 连蹄蜀栈刓	lián tí shǔ zhàn wán	1
 连天草木秋	lián tiān cǎo mù qiū	1
 连天草树芳	lián tiān cǎo shù fāng	1
@@ -103033,7 +103034,7 @@ sort: by_weight
 鸾皇得比肩	luán huáng dé bǐ jiān	1
 鸾皇苟不存	luán huáng gǒu bù cún	1
 鸾皇期一举	luán huáng qī yì jǔ	1
-鸾皇上寥廓	luán huáng shàng liáo kuò	1
+鸾皇上寥廓	luán huáng shang liáo kuò	1
 鸾皇已不羁	luán huáng yǐ bù jī	1
 鸾凰一见稀	luán huáng yí jiàn xī	1
 鸾回刻篆新	luán huí kè zhuàn xīn	1
@@ -111792,7 +111793,7 @@ sort: by_weight
 婥婥为当垆	nào nào wéi dāng lú	1
 恼破春情绪	nǎo pò chūn qíng xù	1
 恼人香未展	nǎo rén xiāng wèi zhǎn	1
-恼人自作乐	nǎo rén zì zuò yuè	1
+恼人自作乐	nǎo rén zì zuò lè	1
 闹若蚁运壤	nào ruò yǐ yùn rǎng	1
 闹若雨前蚁	nào ruò yǔ qián yǐ	1
 恼杀蹋青娘	nǎo shā tà qīng niáng	1
@@ -147124,6 +147125,7 @@ sort: by_weight
 叔夜未可量	shū yè wèi kě liàng	1
 暑夜醉相和	shǔ yè zuì xiāng hé	1
 庶以白黑谗	shù yǐ bái hēi chán	1
+属意澹交人	shǔ yì dàn jiāo rén	1
 庶以道自全	shù yǐ dào zì quán	1
 庶矣对康哉	shù yǐ duì kāng zāi	1
 殊异乎公路	shū yì hū gōng lù	1
@@ -147140,6 +147142,7 @@ sort: by_weight
 庶以心相应	shù yǐ xīn xiāng yīng	1
 树依兴善老	shù yī xīng shàn lǎo	1
 数已逾前贤	shù yǐ yú qián xián	1
+属意在章句	shǔ yì zài zhāng jù	1
 庶以知君诚	shù yǐ zhī jūn chéng	1
 书因北雁稀	shū yīn běi yàn xī	1
 疏阴不自覆	shū yīn bú zì fù	1
@@ -220089,7 +220092,6 @@ sort: by_weight
 朱衣乘白马	zhū yī chéng bái mǎ	1
 朱衣垂素舸	zhū yī chuí sù gě	1
 珠疑大火悬	zhū yí dà huǒ xuán	1
-属意澹交人	zhǔ yì dàn jiāo rén	1
 注译及评介	zhù yì jí píng jiè	1
 诸姨烂红裙	zhū yí làn hóng qún	1
 朱衣满江中	zhū yī mǎn jiāng zhōng	1
@@ -220104,7 +220106,6 @@ sort: by_weight
 住亦无忧恼	zhù yì wú yōu nǎo	1
 朱衣俨别筵	zhū yī yǎn bié yán	1
 主意在人安	zhǔ yi zài rén ān	1
-属意在章句	zhǔ yì zài zhāng jù	1
 烛以智慧日	zhú yǐ zhì huì rì	1
 伫因舂斗粟	zhù yīn chōng dòu sù	1
 竹阴交前浦	zhú yīn jiāo qián pǔ	1
@@ -220397,11 +220398,11 @@ sort: by_weight
 转转伤怀抱	zhuǎn zhuǎn shāng huái bào	1
 撰酌辍行叹	zhuàn zhuó chuò xíng tàn	1
 转作壶中天	zhuǎn zuò hú zhōng tiān	1
+转作乐府诗	zhuǎn zuò lè fǔ shī	1
 转作日销霜	zhuǎn zuò rì xiāo shuāng	1
 转作水波溶	zhuǎn zuò shuǐ bō róng	1
 转作潇湘游	zhuǎn zuò xiāo xiāng yóu	1
 转作猿啼苦	zhuǎn zuò yuán tí kǔ	1
-转作乐府诗	zhuǎn zuò yuè fǔ shī	1
 妆罢出帘帷	zhuāng bà chū lián wéi	1
 妆罢含情坐	zhuāng bà hán qíng zuò	1
 妆罢暂裴回	zhuāng bà zàn péi huí	1
@@ -255362,8 +255363,8 @@ sort: by_weight
 好字先从殿里来	hǎo zì xiān cóng diàn lǐ lái	1
 好作祠堂傍修竹	hǎo zuò cí táng bàng xiū zhú	1
 好作开成第二春	hǎo zuò kāi chéng dì èr chūn	1
+号作乐天应不错	hào zuò lè tiān yìng bú cuò	1
 好作明年杨柳春	hǎo zuò míng nián yáng liǔ chūn	1
-号作乐天应不错	hào zuò yuè tiān yìng bú cuò	1
 合暗报来门锁了	hé àn bào lái mén suǒ le	1
 河北不知虚几州	hé běi bù zhī xū jǐ zhōu	1
 河北将军尽入朝	hé běi jiāng jūn jìn rù cháo	1
@@ -265237,7 +265238,7 @@ sort: by_weight
 居民来说水泉甘	jū mín lái shuō shuǐ quán gān	1
 居民萧条杂麋鹿	jū mín xiāo tiáo zá mí lù	1
 举目风烟非旧时	jǔ mù fēng yān fēi jiù shí	1
-举目尽妨人作乐	jǔ mù jìn fáng rén zuò yuè	1
+举目尽妨人作乐	jǔ mù jìn fáng rén zuò lè	1
 举目萧条总是愁	jǔ mù xiāo tiáo zǒng shì chóu	1
 举目云山要自迷	jǔ mù yún shān yào zì mí	1
 举目争能不惆怅	jǔ mù zhēng néng bù chóu chàng	1
@@ -284244,7 +284245,7 @@ sort: by_weight
 人生直作百岁翁	rén shēng zhí zuò bǎi suì wēng	1
 人生自古谁无死	rén shēng zì gǔ shéi wú sǐ	1
 人生自是有情痴	rén shēng zì shì yǒu qíng chī	1
-人生作乐须及辰	rén shēng zuò yuè xū jí chén	1
+人生作乐须及辰	rén shēng zuò lè xū jí chén	1
 人世百年能几许	rén shì bǎi nián néng jǐ xǔ	1
 人世悲哀老自添	rén shì bēi āi lǎo zì tiān	1
 人世悲欢暂相遣	rén shì bēi huān zàn xiāng qiǎn	1
@@ -298945,7 +298946,7 @@ sort: by_weight
 为之弹剑作哀吟	wéi zhī dàn jiàn zuò āi yín	1
 未知东郭清明酒	wèi zhī dōng guō qīng míng jiǔ	1
 为之斗斛以量之	wéi zhī dòu hú yǐ liàng zhī	1
-未至妨人作乐无	wèi zhì fáng rén zuò yuè wú	1
+未至妨人作乐无	wèi zhì fáng rén zuò lè wú	1
 为之符玺以信之	wéi zhī fú xǐ yǐ xìn zhī	1
 未知肝胆向谁是	wèi zhī gān dǎn xiàng shuí shì	1
 未知公议道何人	wèi zhī gōng yì dào hé rén	1
@@ -322165,7 +322166,7 @@ sort: by_weight
 转侧屋闾无处求	zhuǎn cè wū lǘ wú chǔ qiú	1
 专城书素至留台	zhuān chéng shū sù zhì liú tái	1
 专城一鼓妖氛静	zhuān chéng yì gǔ yāo fēn jìng	1
-转得忧人作乐人	zhuǎn de yōu rén zuò yuè rén	1
+转得忧人作乐人	zhuǎn de yōu rén zuò lè rén	1
 转关护索动有神	zhuǎn guān hù suǒ dòng yǒu shén	1
 转过回阑叩玉钗	zhuǎn guò huí lán kòu yù chāi	1
 转见千秋万古情	zhuǎn jiàn qiān qiū wàn gǔ qíng	1
