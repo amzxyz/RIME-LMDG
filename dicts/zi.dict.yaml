@@ -8421,7 +8421,8 @@ sort: by_weight
 驮	duò	1
 额	é	741
 俄	é	688
-恶	è	686
+呃	è	686
+恶	è	680
 饿	è	630
 鹅	é	625
 恶	ě	590
@@ -8431,7 +8432,6 @@ sort: by_weight
 鳄	è	537
 阿	ē	533
 遏	è	529
-呃	è	524
 峨	é	521
 娥	é	518
 扼	è	515
@@ -26395,8 +26395,8 @@ sort: by_weight
 𫝹	niàn	1
 娘	niáng	682
 酿	niàng	595
-嬢	niáng	365
-孃	niáng	298
+孃	niáng	365
+嬢	niáng	298
 釀	niàng	295
 醸	niàng	258
 䖆	niàng	1
@@ -47857,8 +47857,8 @@ sort: by_weight
 𪘪	zhàn	1
 𫗞	zhān	1
 𰵨	zhān	1
-长	zhǎng	802
-张	zhāng	780
+张	zhāng	802
+长	zhǎng	780
 章	zhāng	744
 涨	zhǎng	719
 障	zhàng	703

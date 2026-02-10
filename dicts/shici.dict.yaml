@@ -48680,6 +48680,7 @@ sort: by_weight
 分浇宋玉田	fēn jiāo sòng yù tián	1
 分交载酒过	fēn jiāo zài jiǔ guò	1
 分阶舞影连	fēn jiē wǔ yǐng lián	1
+分金差一线	fēn jīn chà yī xiàn	1
 分襟二年内	fēn jīn èr nián nèi	1
 分襟日复斜	fēn jīn rì fù xié	1
 汾晋为丰沛	fén jìn wéi fēng pèi	1
@@ -51566,6 +51567,7 @@ sort: by_weight
 富贵本非望	fù guì běn fēi wàng	1
 富贵本先定	fù guì běn xiān dìng	1
 富贵不能淫	fù guì bù néng yín	1
+富贵不相见	fù guì bù xiāng jiàn	1
 富贵不相忘	fù guì bù xiāng wàng	1
 簠簋彻香萁	fǔ guǐ chè xiāng qí	1
 凫归初命侣	fú guī chū mìng lǚ	1
@@ -63904,7 +63906,7 @@ sort: by_weight
 寒日外澹泊	hán rì wài dàn bó	1
 汉日五铢建	hàn rì wǔ zhū jiàn	1
 寒日下枫林	hán rì xià fēng lín	1
-寒日一线长	hán rì yī xiàn cháng	1
+寒日一线长	hán rì yí xiàn cháng	1
 汉日羽林郎	hàn rì yǔ lín láng	1
 旱日与炎风	hàn rì yǔ yán fēng	1
 寒日征西将	hán rì zhēng xī jiāng	1
@@ -83416,7 +83418,7 @@ sort: by_weight
 今年燕子来	jīn nián yàn zi lái	1
 今年一齿落	jīn nián yī chǐ luò	1
 今年已入手	jīn nián yǐ rù shǒu	1
-今年一线在	jīn nián yī xiàn zài	1
+今年一线在	jīn nián yí xiàn zài	1
 今年已学步	jīn nián yǐ xué bù	1
 今年迎气始	jīn nián yíng qì shǐ	1
 今年又拜侯	jīn nián yòu bài hóu	1
@@ -114098,7 +114100,7 @@ sort: by_weight
 爬搔未云足	pá sāo wèi yún zú	1
 怕天教何处	pà tiān jiào hé chù	1
 怕听钟声坐	pà tīng zhōng shēng zuò	1
-怕万里长鲸	pà wàn lǐ zhǎng jīng	1
+怕万里长鲸	pà wàn lǐ cháng jīng	1
 葩叶相妩媚	pā yè xiāng wǔ mèi	1
 怕在事不成	pà zài shì bù chéng	1
 怕重愁拈镜	pà zhòng chóu niān jìng	1
@@ -161455,6 +161457,8 @@ sort: by_weight
 万里长城家	wàn lǐ cháng chéng jiā	1
 万里长江边	wàn lǐ cháng jiāng biān	1
 万里长江水	wàn lǐ cháng jiāng shuǐ	1
+万里长飘飖	wàn lǐ cháng piāo yáo	1
+万里长相思	wàn lǐ cháng xiāng sī	1
 万里长征战	wàn lǐ cháng zhēng zhàn	1
 万里车书通	wàn lǐ chē shū tōng	1
 万里乘飞电	wàn lǐ chéng fēi diàn	1
@@ -161704,8 +161708,6 @@ sort: by_weight
 万里云海空	wàn lǐ yún hǎi kōng	1
 万里云沙涨	wàn lǐ yún shā zhǎng	1
 万里宅神州	wàn lǐ zhái shén zhōu	1
-万里长飘飖	wàn lǐ zhǎng piāo yáo	1
-万里长相思	wàn lǐ zhǎng xiāng sī	1
 万里诏书催	wàn lǐ zhào shū cuī	1
 万里正含情	wàn lǐ zhèng hán qíng	1
 万里整前期	wàn lǐ zhěng qián qī	1
@@ -236052,7 +236054,7 @@ sort: by_weight
 不辞瘦马骑冲雪	bù cí shòu mǎ qí chōng xuě	1
 不辞手足皆胼胝	bù cí shǒu zú jiē pián zhī	1
 不辞鶗鴂妒年芳	bù cí tí jué dù nián fāng	1
-不辞万里长为客	bù cí wàn lǐ zhǎng wéi kè	1
+不辞万里长为客	bù cí wàn lǐ cháng wéi kè	1
 不辞相送到黄州	bù cí xiàng sòng dào huáng zhōu	1
 不辞相望阻寒宵	bù cí xiāng wàng zǔ hán xiāo	1
 不辞辛苦来东道	bù cí xīn kǔ lái dōng dào	1
@@ -239748,7 +239750,7 @@ sort: by_weight
 尘尘三昧开门户	chén chén sān mèi kāi mén hù	1
 沉沉夏夜兰堂开	chén chén xià yè lán táng kāi	1
 沈沈延阁抱丹墀	chén chén yán gé bào dān chí	1
-沉沉一线穿南北	chén chén yī xiàn chuān nán běi	1
+沉沉一线穿南北	chén chén yí xiàn chuān nán běi	1
 沉沉朱户横金锁	chén chén zhū hù héng jīn suǒ	1
 陈宠觱栗沈平笙	chén chǒng bì lì shěn píng shēng	1
 陈词今见唐风盛	chén cí jīn jiàn táng fēng shèng	1
@@ -240793,7 +240795,7 @@ sort: by_weight
 愁人倚月思无端	chóu rén yǐ yuè sī wú duān	1
 愁人正在书窗下	chóu rén zhèng zài shū chuāng xià	1
 愁人昨夜相思苦	chóu rén zuó yè xiāng sī kǔ	1
-愁日愁随一线长	chóu rì chóu suí yī xiàn cháng	1
+愁日愁随一线长	chóu rì chóu suí yí xiàn cháng	1
 愁如回飙乱白雪	chóu rú huí biāo luàn bái xuě	1
 愁如塞月恨边云	chóu rú sāi yuè hèn biān yún	1
 愁杀多情骢马郎	chóu shā duō qíng cōng mǎ láng	1
@@ -251282,7 +251284,7 @@ sort: by_weight
 更怀父子东归得	gèng huái fù zǐ dōng guī dé	1
 更回门向寺前开	gèng huí mén xiàng sì qián kāi	1
 更藉残红作醉茵	gèng jí cán hóng zuò zuì yīn	1
-更积微阳一线功	gèng jī wēi yáng yī xiàn gōng	1
+更积微阳一线功	gèng jī wēi yáng yí xiàn gōng	1
 耕稼逍遥似子真	gēng jià xiāo yáo sì zǐ zhēn	1
 更煎双井苍鹰爪	gèng jiān shuāng jǐng cāng yīng zhǎo	1
 更将嘲笑调朋友	gèng jiāng cháo xiào diào péng you	1
@@ -254407,7 +254409,7 @@ sort: by_weight
 海上青山隔暮云	hǎi shàng qīng shān gé mù yún	1
 海上三年竟何得	hǎi shàng sān nián jìng hé dé	1
 海上谁知鲁仲连	hǎi shàng shuí zhī lǔ zhòng lián	1
-海上涛头一线来	hǎi shàng tāo tóu yī xiàn lái	1
+海上涛头一线来	hǎi shàng tāo tóu yí xiàn lái	1
 海上天涯应共见	hǎi shàng tiān yá yīng gòng jiàn	1
 海上我时断去舟	hǎi shàng wǒ shí duàn qù zhōu	1
 海上先声入管弦	hǎi shàng xiān shēng rù guǎn xián	1
@@ -273932,7 +273934,7 @@ sort: by_weight
 梦觉邯郸黍一炊	mèng jué hán dān shǔ yī chuī	1
 梦觉酒醒闻好句	mèng jué jiǔ xǐng wén hǎo jù	1
 梦觉青楼最可怜	mèng jué qīng lóu zuì kě lián	1
-梦觉透窗风一线	mèng jué tòu chuāng fēng yī xiàn	1
+梦觉透窗风一线	mèng jué tòu chuāng fēng yí xiàn	1
 梦觉瑶楼空断魂	mèng jué yáo lóu kōng duàn hún	1
 梦觉真同鹿覆蕉	mèng jué zhēn tóng lù fù jiāo	1
 梦君频问向南行	mèng jūn pín wèn xiàng nán xíng	1
@@ -296760,6 +296762,8 @@ sort: by_weight
 万里苍梧一洗空	wàn lǐ cāng wú yì xǐ kōng	1
 万里长城今犹在	wàn lǐ cháng chéng jīn yóu zài	1
 万里长江一酒杯	wàn lǐ cháng jiāng yī jiǔ bēi	1
+万里长鸣望蜀门	wàn lǐ cháng míng wàng shǔ mén	1
+万里长闻随战角	wàn lǐ cháng wén suí zhàn jiǎo	1
 万里长征人未还	wàn lǐ cháng zhēng rén wèi huán	1
 万里潮州一逐臣	wàn lǐ cháo zhōu yī zhú chén	1
 万里朝宗诚可羡	wàn lǐ cháo zōng chéng kě xiàn	1
@@ -296931,8 +296935,6 @@ sort: by_weight
 万里云天雁断行	wàn lǐ yún tiān yàn duàn xíng	1
 万里云霞麒骥路	wàn lǐ yún xiá qí jì lù	1
 万里张侯能奉使	wàn lǐ zhāng hóu néng fèng shǐ	1
-万里长鸣望蜀门	wàn lǐ zhǎng míng wàng shǔ mén	1
-万里长闻随战角	wàn lǐ zhǎng wén suí zhàn jiǎo	1
 万里征鸿小作程	wàn lǐ zhēng hóng xiǎo zuò chéng	1
 万里征人尚未还	wàn lǐ zhēng rén shàng wèi huán	1
 万里知君一梦刘	wàn lǐ zhī jūn yí mèng liú	1
@@ -315416,7 +315418,7 @@ sort: by_weight
 玉人贪睡坠钗云	yù rén tān shuì zhuì chāi yún	1
 与人同生亦同死	yú rén tóng shēng yì tóng sǐ	1
 与人同状不同科	yú rén tóng zhuàng bù tóng kē	1
-与人万里长相随	yú rén wàn lǐ zhǎng xiāng suí	1
+与人万里长相随	yú rén wàn lǐ cháng xiāng suí	1
 渔人网集澄潭下	yú rén wǎng jí chéng tán xià	1
 玉人为开桃李颜	yù rén wéi kāi táo lǐ yán	1
 圉人畏诮仍相惑	yǔ rén wèi qiào réng xiāng huò	1
@@ -327532,7 +327534,7 @@ sort: by_weight
 投宿吴氏泉湖四望楼	tóu sù wú shì quán hú sì wàng lóu	1
 途经先圣擒建德之所	tú jīng xiān shèng qín jiàn dé zhī suǒ	1
 抟扶摇而上者九万里	tuán fú yáo ér shàng zhě jiǔ wàn lǐ	1
-万里长空且为忠魂舞	wàn lǐ zhǎng kōng qiě wéi zhōng hún wǔ	1
+万里长空且为忠魂舞	wàn lǐ cháng kōng qiě wéi zhōng hún wǔ	1
 万物皆往资焉而不匮	wàn wù jiē wǎng zī yān ér bù kuì	1
 万物恃之以生而不辞	wàn wù shì zhī yǐ shēng ér bù cí	1
 万丈长缨要把鲲鹏缚	wàn zhàng cháng yīng yào bǎ kūn péng fù	1
