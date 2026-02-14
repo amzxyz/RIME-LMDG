@@ -12,26 +12,20 @@ sort: by_weight
 阿贝比长仪	ā bèi bǐ cháng yí	1
 阿贝不变量	ā bèi bú biàn liàng	4
 阿贝尔变换	ā bèi ěr biàn huàn	1
-阿贝尔簇的	ā bèi ěr cù de	1
-阿贝耳代数	ā bèi ěr dài shù	1
+阿贝尔代数	ā bèi ěr dài shù	1
 阿贝尔定理	ā bèi ěr dìng lǐ	1
-阿贝耳定理	ā bèi ěr dìng lǐ	1
 阿贝尔范畴	ā bèi ěr fàn chóu	1
-阿贝耳方程	ā bèi ěr fāng chéng	1
+阿贝尔方程	ā bèi ěr fāng chéng	1
 阿贝尔富度	ā bèi ěr fù dù	1
 阿贝尔概形	ā bèi ěr gài xíng	1
-阿贝耳广群	ā bèi ěr guǎng qún	1
-阿贝耳函数	ā bèi ěr hán shù	1
+阿贝尔广群	ā bèi ěr guǎng qún	1
 阿贝尔函数	ā bèi ěr hán shù	1
-阿贝耳函子	ā bèi ěr hán zi	1
-阿贝耳积分	ā bèi ěr jī fēn	1
+阿贝尔函子	ā bèi ěr hán zi	1
 阿贝尔积分	ā bèi ěr jī fēn	1
 阿贝尔晶体	ā bèi ěr jīng tǐ	1
-阿贝耳扩张	ā bèi ěr kuò zhāng	1
 阿贝尔扩张	ā bèi ěr kuò zhāng	1
 阿贝尔群层	ā bèi ěr qún céng	1
 阿贝尔群论	ā bèi ěr qún lùn	1
-阿贝耳微分	ā bèi ěr wēi fēn	1
 阿贝尔微分	ā bèi ěr wēi fēn	1
 阿贝尔问题	ā bèi ěr wèn tí	1
 阿贝尔引理	ā bèi ěr yǐn lǐ	1
@@ -30513,7 +30507,7 @@ sort: by_weight
 大尺寸液晶	dà chǐ cùn yè jīng	1
 大尺寸照片	dà chǐ cùn zhào piān	1
 大尺度结构	dà chǐ dù jié gòu	1
-大翅异齿𫚢	dà chì yì chǐ 𫚢	1
+大翅异齿鰋	dà chì yì chǐ yǎn	1
 大臭鼠效应	dà chòu shǔ xiào yìng	1
 打出的伤害	dǎ chū de shāng hài	1
 打出好成绩	dǎ chū hǎo chéng jì	1
@@ -33267,7 +33261,6 @@ sort: by_weight
 代总参谋长	dài zǒng cān móu zhǎng	1
 带阻滤波器	dài zǔ lǜ bō qì	1
 傣族泼水节	dǎi zú pō shuǐ jié	1
-单阿贝耳簇	dān ā bèi ěr cù	1
 单阿贝尔簇	dān ā bèi ěr cù	1
 单胺释放剂	dān àn shì fàng jì	1
 蛋氨酸胆碱	dàn ān suān dǎn jiǎn	1
@@ -95536,7 +95529,19 @@ sort: by_weight
 捡来的孩子	jiǎn lái de hái zi	1
 捡了大便宜	jiǎn le dà pián yi	1
 剪了短发后	jiǎn le duǎn fā hòu	1
+见了个发小	jiàn le gè fà xiǎo	1
+见了个高人	jiàn le gè gāo rén	1
+见了个怪人	jiàn le gè guài rén	2
+见了个贵人	jiàn le gè guì rén	1
+见了个客户	jiàn le gè kè hù	1
+见了个邻居	jiàn le gè lín jū	1
+见了个领导	jiàn le gè lǐng dǎo	1
+见了个朋友	jiàn le gè péng you	1
 捡了个便宜	jiǎn le gè pián yi	1
+见了个亲戚	jiàn le gè qīn qī	1
+见了个熟人	jiàn le gè shú rén	1
+见了个同学	jiàn le gè tóng xué	1
+见了个网友	jiàn le gè wǎng yǒu	1
 捡了一条命	jiǎn le yì tiáo mìng	1
 减累计折旧	jiǎn lěi jì zhé jiù	1
 建立安全感	jiàn lì ān quán gǎn	1
@@ -195408,6 +195413,7 @@ sort: by_weight
 完全不相信	wán quán bù xiāng xìn	1
 完全不晓得	wán quán bù xiǎo de	1
 完全不信任	wán quán bú xìn rèn	1
+完全不需要	wán quán bù xū yào	1
 完全不逊色	wán quán bú xùn sè	1
 完全不一样	wán quán bù yí yàng	1
 完全不一致	wán quán bù yí zhì	1
@@ -266470,13 +266476,11 @@ sort: by_weight
 阿贝成像理论	ā bèi chéng xiàng lǐ lùn	1
 阿贝成像原理	ā bèi chéng xiàng yuán lǐ	1
 阿贝尔不等式	ā bèi ěr bù děng shì	1
-阿贝耳不等式	ā bèi ěr bù děng shì	1
-阿贝耳函数域	ā bèi ěr hán shù yù	1
 阿贝尔函数域	ā bèi ěr hán shù yù	1
-阿贝耳恒等式	ā bèi ěr héng děng shì	1
+阿贝尔恒等式	ā bèi ěr héng děng shì	1
 阿贝尔化函子	ā bèi ěr huà hán zi	1
 阿贝尔李代数	ā bèi ěr lǐ dài shù	1
-阿贝耳求和法	ā bèi ěr qiú hé fǎ	1
+阿贝尔求和法	ā bèi ěr qiú hé fǎ	1
 阿贝尔群范畴	ā bèi ěr qún fàn chóu	1
 阿贝尔试验器	ā bèi ěr shì yàn qì	3
 阿贝正弦条件	ā bèi zhèng xián tiáo jiàn	2
@@ -272710,7 +272714,7 @@ sort: by_weight
 长宗我部元亲	cháng zōng wǒ bù yuán qīn	1
 长租公寓行业	cháng zū gōng yù háng yè	1
 长租公寓运营	cháng zū gōng yù yùn yíng	1
-超阿贝耳函数	chāo ā bèi ěr hán shù	1
+超阿贝尔函数	chāo ā bèi ěr hán shù	1
 潮安片薄膜衣	cháo ān piàn báo mó yī	1
 超薄智能手机	chāo báo zhì néng shǒu jī	1
 超长基线干涉	chāo cháng jī xiàn gān shè	1
@@ -278664,7 +278668,6 @@ sort: by_weight
 对女性的暴力	duì nǚ xìng de bào lì	1
 对女性的侮辱	duì nǚ xìng de wǔ rǔ	1
 对女性的尊称	duì nǚ xìng de zūn chēng	1
-对偶阿贝耳簇	duì ǒu ā bèi ěr cù	1
 对偶阿贝尔簇	duì ǒu ā bèi ěr cù	1
 对偶变数方法	duì ǒu biàn shù fāng fǎ	1
 对偶单纯形法	duì ǒu dān chún xíng fǎ	1
@@ -306653,7 +306656,7 @@ sort: by_weight
 陪孩子的时间	péi hái zi de shí jiān	1
 配合配位理论	pèi hé pèi wèi lǐ lùn	1
 配合医护人员	pèi hé yī hù rén yuán	1
-配极阿贝耳簇	pèi jí ā bèi ěr cù	1
+配极阿贝尔簇	pèi jí ā bèi ěr cù	1
 配极可展曲面	pèi jí kě zhǎn qū miàn	1
 培佳双语学校	péi jiā shuāng yǔ xué xiào	1
 配筋砌体结构	pèi jīn qì tǐ jié gòu	1
@@ -320942,7 +320945,6 @@ sort: by_weight
 脱贫攻坚政策	tuō pín gōng jiān zhèng cè	1
 脱贫攻坚专题	tuō pín gōng jiān zhuān tí	1
 脱贫致富之路	tuō pín zhì fù zhī lù	1
-拓扑阿贝耳群	tuò pū ā bèi ěr qún	1
 拓扑阿贝尔群	tuò pū ā bèi ěr qún	1
 拓扑等价空间	tuò pū děng jià kōng jiān	1
 拓扑动力系统	tuò pū dòng lì xì tǒng	1
@@ -321234,7 +321236,7 @@ sort: by_weight
 万安生命科技	wàn ān shēng mìng kē jì	1
 万邦都市花园	wàn bāng dū shì huā yuán	1
 万宝盛华集团	wàn bǎo shèng huá jí tuán	1
-完备阿贝耳簇	wán bèi ā bèi ěr cù	1
+完备阿贝尔簇	wán bèi ā bèi ěr cù	1
 完备测度空间	wán bèi cè duó kōng jiān	1
 完备度量空间	wán bèi dù liàng kōng jiān	1
 完备公理系统	wán bèi gōng lǐ xì tǒng	1
@@ -321753,7 +321755,7 @@ sort: by_weight
 王子与灰姑娘	wáng zǐ yǔ huī gū niang	1
 网走分屯基地	wǎng zǒu fēn tún jī dì	1
 王祖蓝李亚男	wáng zǔ lán lǐ yà nán	1
-伪阿贝耳范畴	wěi ā bèi ěr fàn chóu	1
+伪阿贝尔范畴	wěi ā bèi ěr fàn chóu	1
 胃癌的发病率	wèi ái de fā bìng lǜ	1
 胃癌根切除术	wèi ái gēn qiē chú shù	1
 为埃斯米而作	wéi āi sī mǐ ér zuò	1
@@ -338958,7 +338960,7 @@ sort: by_weight
 准确的判断力	zhǔn què de pàn duàn lì	1
 准确理解把握	zhǔn què lǐ jiě bǎ wò	1
 准确适用法律	zhǔn què shì yòng fǎ lǜ	1
-准素阿贝耳群	zhǔn sù ā bèi ěr qún	1
+准素阿贝尔群	zhǔn sù ā bèi ěr qún	1
 准希耳伯特模	zhǔn xī ěr bó tè mó	1
 准心理咨询师	zhǔn xīn lǐ zī xún shī	1
 准予迁入证明	zhǔn yǔ qiān rù zhèng míng	1

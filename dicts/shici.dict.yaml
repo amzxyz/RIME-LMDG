@@ -62402,7 +62402,6 @@ sort: by_weight
 还拂楚王襟	hái fú chǔ wáng jīn	1
 还复此微吟	hái fù cǐ wēi yín	1
 还复寄琼瑰	hái fù jì qióng guī	1
-还复来游否	hái fù lái yóu fǒu	1
 还复茅檐下	hái fù máo yán xià	1
 还浮入海船	hái fú rù hǎi chuán	1
 还赴上林乡	hái fù shàng lín xiāng	1
@@ -71429,6 +71428,7 @@ sort: by_weight
 欢奉九衢樽	huān fèng jiǔ qú zūn	1
 欢逢通世友	huān féng tōng shì yǒu	1
 欢冯醉尽呈	huān féng zuì jìn chéng	1
+还复来游否	huán fù lái yóu fǒu	1
 缓歌春兴曲	huǎn gē chūn xīng qǔ	1
 缓歌将醉舞	huǎn gē jiāng zuì wǔ	1
 缓歌寻极浦	huǎn gē xún jí pǔ	1
@@ -108273,13 +108273,13 @@ sort: by_weight
 明日归长安	míng rì guī cháng ān	1
 明日过闾里	míng rì guò lǘ lǐ	1
 明日过吴门	míng rì guò wú mén	1
-明日还复来	míng rì hái fù lái	1
 明日还相见	míng rì hái xiāng jiàn	1
 明日河梁上	míng rì hé liáng shàng	1
 明日何其多	míng rì hé qí duō	1
 明日淮南去	míng rì huái nán qù	1
 明日怀贤处	míng rì huái xián chù	1
 明日淮阴市	míng rì huái yīn shì	1
+明日还复来	míng rì huán fù lái	1
 明日见花开	míng rì jiàn huā kāi	1
 明日旧山去	míng rì jiù shān qù	1
 明日凯歌归	míng rì kǎi gē guī	1
@@ -279947,7 +279947,7 @@ sort: by_weight
 千金买铅徒一割	qiān jīn mǎi qiān tú yī gē	1
 千金女儿倚门立	qiān jīn nǚ ér yǐ mén lì	1
 千金求买市中无	qiān jīn qiú mǎi shì zhōng wú	1
-千金散尽还复来	qiān jīn sàn jìn hái fù lái	1
+千金散尽还复来	qiān jīn sàn jìn huán fù lái	1
 千金市骨今何有	qiān jīn shì gǔ jīn hé yǒu	1
 千金寿君君笑唾	qiān jīn shòu jūn jūn xiào tuò	1
 千金未必能移性	qiān jīn wèi bì néng yí xìng	1
@@ -323587,6 +323587,7 @@ sort: by_weight
 组练三千夹将坛	zǔ liàn sān qiān jiā jiāng tán	1
 祖龙浮海不成桥	zǔ lóng fú hǎi bù chéng qiáo	1
 祖龙黄须珊瑚鞭	zǔ lóng huáng xū shān hú biān	1
+祖龙魂死业犹在	zǔ lóng hún sǐ yè yóu zài	1
 足钱便可不须侯	zú qián biàn kě bù xū hóu	1
 足泉多竹少埃尘	zú quán duō zhú shǎo āi chén	1
 崒然眉骨皆尔曹	zú rán méi gǔ jiē ěr cáo	1
