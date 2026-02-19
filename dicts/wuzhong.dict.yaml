@@ -15907,12 +15907,22 @@ sort: by_weight
 黑背丛雀	hēi bèi cóng què	18
 黑背蚜属	hēi bèi yá shǔ	5
 黑边鼬鱼	hēi biān yòu yú	6
+黑草乌叶	hēi cǎo wū yè	3
 黑层孔属	hēi céng kǒng shǔ	7
 黑叉齿鱼	hēi chā chǐ yú	9
+黑长臂猿	hēi cháng bì yuán	18
+黑长尾猴	hēi cháng wěi hóu	9
+黑长尾雉	hēi cháng wěi zhì	22
 黑扯旗鱼	hēi chě qí yú	9
+黑翅草雁	hēi chì cǎo yàn	6
+黑齿常之	hēi chǐ cháng zhī	42
+黑齿法螺	hēi chǐ fǎ luó	15
 黑翅雀鹎	hēi chì què bēi	16
+黑翅鹟鵙	hēi chì wēng jú	12
 黑翅鸢属	hēi chì yuān shǔ	7
+黑刺粉虱	hēi cì fěn shī	24
 黑刺尻鱼	hēi cì kāo yú	6
+黑刺蕊草	hēi cì ruǐ cǎo	7
 黑慈鱼属	hēi cí yú shǔ	5
 黑带锦鱼	hēi dài jǐn yú	9
 黑带盔鱼	hēi dài kuī yú	6
@@ -15930,14 +15940,30 @@ sort: by_weight
 黑粉蝶属	hēi fěn dié shǔ	7
 黑粉菌属	hēi fěn jūn shǔ	43
 黑腹鸨属	hēi fù bǎo shǔ	5
+黑腹滨鹬	hēi fù bīn yù	68
+黑腹仓鼠	hēi fù cāng shǔ	5
+黑腹果蝇	hēi fù guǒ yíng	60
+黑腹绒鼠	hēi fù róng shǔ	18
+黑腹沙鸡	hēi fù shā jī	17
+黑腹蛇鹈	hēi fù shé tí	17
 黑格兽科	hēi gé shòu kē	6
 黑钩叶属	hēi gōu yè shǔ	7
 黑孤鸫属	hēi gū dōng shǔ	7
 黑姑鱼属	hēi gū yú shǔ	4
 黑冠鸨属	hēi guān bǎo shǔ	7
+黑管唇釉	hēi guǎn chún yòu	55
+黑冠黄鹎	hēi guān huáng bēi	18
+黑冠鹃隼	hēi guān juān sǔn	47
 黑管菌属	hēi guǎn jūn shǔ	5
+黑冠椋鸟	hēi guān liáng niǎo	13
+黑冠麻鹭	hēi guān má lù	21
 黑冠山雀	hēi guān shān què	19
 黑光鳃鱼	hēi guāng sāi yú	6
+黑果冬青	hēi guǒ dōng qīng	18
+黑果枸杞	hēi guǒ gǒu qǐ	59
+黑果栒子	hēi guǒ xún zǐ	12
+黑果越橘	hēi guǒ yuè jú	23
+黑果越桔	hēi guǒ yuè jú	3
 黑荷包鱼	hēi hé bāo yú	8
 黑红衣属	hēi hóng yī shǔ	5
 黑喉歌鸲	hēi hóu gē qú	16
@@ -27626,7 +27652,7 @@ sort: by_weight
 田氏鲨属	tián shì shā shǔ	7
 天使螳科	tiān shǐ táng kē	7
 天使螳属	tiān shǐ táng shǔ	7
-田氏𫚪属	tián shì 𫚪 shǔ	7
+田氏鱊属	tián shì yù shǔ	7
 田鼠亚科	tián shǔ yà kē	6
 天梯蕨属	tiān tī jué shǔ	5
 田头菇属	tián tóu gū shǔ	8
@@ -40497,7 +40523,7 @@ sort: by_weight
 短尾鞭蝎目	duǎn wěi biān xiē mù	1
 短尾病毒科	duǎn wěi bìng dú kē	1
 短尾仓鼠属	duǎn wěi cāng shǔ shǔ	1
-短尾长身𫚪	duǎn wěi cháng shēn 𫚪
+短尾长身鱊	duǎn wěi cháng shēn yù
 短尾翠蜂鸟	duǎn wěi cuì fēng niǎo	1
 短尾大眼鲷	duǎn wěi dà yǎn diāo	1
 短尾德凯鲶	duǎn wěi dé kǎi nián	1
@@ -44814,11 +44840,11 @@ sort: by_weight
 华山石头花	huà shān shí tou huā	1
 华山新麦草	huà shān xīn mài cǎo	1
 花身副丽鱼	huā shēn fù lì yú	1
-华氏亮丽鲷	huà shì liàng lì diāo	1
-华氏田鸡属	huà shì tián jī shǔ	1
-华氏秧鸡属	huà shì yāng jī shǔ	1
+华氏亮丽鲷	huá shì liàng lì diāo	1
+华氏田鸡属	huá shì tián jī shǔ	1
+华氏秧鸡属	huá shì yāng jī shǔ	1
 化石翼龙属	huà shí yì lóng shǔ	1
-华氏鱼龙属	huà shì yú lóng shǔ	1
+华氏鱼龙属	huá shì yú lóng shǔ	1
 华疏花苔草	huá shū huā tái cǎo	1
 花穗水莎草	huā suì shuǐ suō cǎo	1
 华他卡藤属	huá tā kǎ téng shǔ	1
