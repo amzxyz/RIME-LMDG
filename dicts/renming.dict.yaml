@@ -5753,7 +5753,6 @@ sort: by_weight
 朱治	zhū zhì
 朱竹	zhū zhú
 朱梓	zhū zǐ
-卢昱晓	1
 白一骢	bái yī cōng
 白音华	bái yīn huá
 白英杰	bái yīng jié
@@ -20587,6 +20586,7 @@ sort: by_weight
 鲁幽公	lǔ yōu gōng
 鲁雨亭	lǔ yǔ tíng
 鲁豫问	lǔ yù wèn
+卢昱晓	lú yù xiǎo
 鲁豫约	lǔ yù yuē
 鲁元公	lǔ yuán gōng
 鲁泽伍	lǔ zé wǔ
@@ -61495,6 +61495,14 @@ sort: by_weight
 植田海	zhí tián hǎi	90
 志田数	zhì tián shù	88
 志田未	zhì tián wèi	0
+中村俊	zhōng cūn jùn	204
+中村亮	zhōng cūn liàng	100
+中村隆	zhōng cūn lóng	128
+中村宪	zhōng cūn xiàn	146
+中村悠	zhōng cūn yōu	205
+中村元	zhōng cūn yuán	106
+中村正	zhōng cūn zhèng	164
+中村中	zhōng cūn zhōng	110
 周阿根	zhōu ā gēn
 周爱民	zhōu ài mín
 周哀王	zhōu āi wáng

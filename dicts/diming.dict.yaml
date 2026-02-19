@@ -90,7 +90,6 @@ sort: by_weight
 徽县	huī xiàn	361
 吉县	jí xiàn	398
 吉镇	jí zhèn	1
-茄萣	jiā dìng	1
 郏县	jiá xiàn	483
 佳县	jiā xiàn	420
 贾镇	jiǎ zhèn	1
@@ -172,10 +171,10 @@ sort: by_weight
 乾安	qián ān	1
 前金	qián jīn	411
 乾县	qián xiàn	1
+茄萣	qié dìng	1
 钦南	qīn nán	306
 沁县	qìn xiàn	383
 青县	qīng xiàn	345
-芎林	qiōng lín	1
 邱县	qiū xiàn	370
 曲松	qū sōng	400
 渠县	qú xiàn	403
@@ -249,6 +248,7 @@ sort: by_weight
 兴和	xīng hé	1
 兴县	xīng xiàn	438
 兴镇	xīng zhèn	1
+芎林	xiōng lín	1
 雄县	xióng xiàn	383
 雪乡	xuě xiāng	489
 薛镇	xuē zhèn	1
@@ -1523,7 +1523,7 @@ sort: by_weight
 泊于镇	bó yú zhèn	1
 博峪镇	bó yù zhèn	1
 播植镇	bō zhí zhèn	1
-播州区	bō zhōu qū	162
+播州区	bò zhōu qū	162
 波洲镇	bō zhōu zhèn	1
 卜庄镇	bo zhuāng zhèn	1
 埠场镇	bù chǎng zhèn	1
@@ -3269,7 +3269,6 @@ sort: by_weight
 党坝镇	dǎng bà zhèn	1
 当壁镇	dāng bì zhèn	1
 党岔镇	dǎng chà zhèn	1
-宕昌县	dàng chāng xiàn	162
 党城乡	dǎng chéng xiāng	1
 砀城镇	dàng chéng zhèn	1
 党川镇	dǎng chuān zhèn	1
@@ -6583,7 +6582,6 @@ sort: by_weight
 宏村镇	hóng cūn zhèn	1
 宏道镇	hóng dào zhèn	1
 洪德镇	hóng dé zhèn	1
-洪洞县	hóng dòng xiàn	208
 红渡镇	hóng dù zhèn	1
 洪渡镇	hóng dù zhèn	1
 洪墩镇	hóng dūn zhèn	1
@@ -6681,6 +6679,7 @@ sort: by_weight
 洪塘镇	hóng táng zhèn	1
 鸿塘镇	hóng táng zhèn	1
 洪田镇	hóng tián zhèn	1
+洪洞县	hóng tóng xiàn	208
 红土乡	hóng tǔ xiāng	1
 宏图镇	hóng tú zhèn	1
 红土镇	hóng tǔ zhèn	1
@@ -7832,8 +7831,6 @@ sort: by_weight
 贾得乡	jiǎ dé xiāng	1
 家地乡	jiā dì xiāng	1
 嘉定区	jiā dìng qū	248
-茄萣区	jiā dìng qū	1
-茄萣区	jiā dìng qū	1
 嘉定县	jiā dìng xiàn	180
 嘉定镇	jiā dìng zhèn	1
 加定镇	jiā dìng zhèn	1
@@ -14219,6 +14216,8 @@ sort: by_weight
 乔梓乡	qiáo zǐ xiāng	1
 桥梓镇	qiáo zǐ zhèn	1
 癿藏镇	qié cáng zhèn	1
+茄萣区	qié dìng qū	1
+茄萣区	qié dìng qū	1
 切吉乡	qiè jí xiāng	1
 郄马镇	qiè mǎ zhèn	1
 且末县	qiě mò xiàn	162
@@ -14452,8 +14451,6 @@ sort: by_weight
 琼结镇	qióng jié zhèn	1
 邛崃市	qióng lái shì	202
 邛崃县	qióng lái xiàn	102
-芎林乡	qiōng lín xiāng	1
-芎林乡	qiōng lín xiāng	1
 琼瑠县	qióng liú xiàn	104
 琼山区	qióng shān qū	203
 琼山县	qióng shān xiàn	165
@@ -17000,6 +16997,7 @@ sort: by_weight
 坦埠镇	tǎn bù zhèn	1
 炭步镇	tàn bù zhèn	1
 潭布镇	tán bù zhèn	1
+宕昌县	tàn chāng xiàn	162
 郯城县	tán chéng xiàn	210
 潭城乡	tán chéng xiāng	1
 坛城镇	tán chéng zhèn	1
@@ -20319,6 +20317,8 @@ sort: by_weight
 熊家镇	xióng jiā zhèn	1
 雄江镇	xióng jiāng zhèn	1
 熊口镇	xióng kǒu zhèn	1
+芎林乡	xiōng lín xiāng	1
+芎林乡	xiōng lín xiāng	1
 雄玛乡	xióng mǎ xiāng	1
 雄麦乡	xióng mài xiāng	1
 雄梅镇	xióng méi zhèn	1
@@ -26592,7 +26592,7 @@ sort: by_weight
 藏驾庄村	cáng jià zhuāng cūn	1
 苍颉庙村	cāng jié miào cūn	1
 沧口街道	cāng kǒu jiē dào	1
-沧浪街道	cāng làng jiē dào	1
+沧浪街道	cāng láng jiē dào	1
 苍龙街道	cāng lóng jiē dào	1
 仓前街道	cāng qián jiē dào	1
 苍山街道	cāng shān jiē dào	1
@@ -31648,7 +31648,6 @@ sort: by_weight
 墩巴格乡	dūn bā gé xiāng	1
 墩墩石村	dūn dūn shí cūn	1
 顿坊店乡	dùn fāng diàn xiāng	1
-沌口街道	dùn kǒu jiē dào	1
 墩阔坦村	dūn kuò tǎn cūn	1
 墩阔坦乡	dūn kuò tǎn xiāng	1
 墩阔坦镇	dūn kuò tǎn zhèn	1
@@ -35443,7 +35442,6 @@ sort: by_weight
 红岛街道	hóng dǎo jiē dào	1
 洪殿街道	hóng diàn jiē dào	1
 洪殿新村	hóng diàn xīn cūn	1
-洪洞庵村	hóng dòng ān cūn	1
 红东二村	hóng dōng èr cūn	1
 红洞沟村	hóng dòng gōu cūn	1
 红豆杉庄	hóng dòu shān zhuāng	1
@@ -35686,6 +35684,7 @@ sort: by_weight
 红桃山村	hóng táo shān cūn	1
 虹梯关乡	hóng tī guān xiāng	1
 鸿亭街道	hóng tíng jiē dào	1
+洪洞庵村	hóng tóng ān cūn	1
 红铜营村	hóng tóng yíng cūn	1
 红透山镇	hóng tòu shān zhèn	1
 红土堡村	hóng tǔ bǎo cūn	1
@@ -40381,8 +40380,8 @@ sort: by_weight
 礼明庄镇	lǐ míng zhuāng zhèn	1
 里磨疃村	lǐ mó tuǎn cūn	1
 里木店镇	lǐ mù diàn zhèn	1
-里木栅村	lǐ mù shān cūn	1
 黎母山镇	lí mǔ shān zhèn	1
+里木栅村	lǐ mù zhà cūn	1
 李木庄村	lǐ mù zhuāng cūn	1
 李南岗村	lǐ nán gǎng cūn	1
 李埝坨村	lǐ niàn tuó cūn	1
@@ -42688,7 +42687,7 @@ sort: by_weight
 旅游大县	lǚ yóu dà xiàn	1
 旅游名县	lǚ yóu míng xiàn	1
 旅游强县	lǚ yóu qiáng xiàn	1
-旅游兴县	lǚ yóu xìng xiàn	1
+旅游兴县	lǚ yóu xīng xiàn	1
 绿园街道	lǜ yuán jiē dào	1
 绿园山庄	lǜ yuán shān zhuāng	1
 绿苑山庄	lǜ yuàn shān zhuāng	1
@@ -64138,6 +64137,7 @@ sort: by_weight
 转角房村	zhuǎn jiǎo fáng cūn	1
 转经召村	zhuǎn jīng zhào cūn	1
 转咀子村	zhuǎn jǔ zǐ cūn	1
+沌口街道	zhuàn kǒu jiē dào	1
 转龙桥村	zhuǎn lóng qiáo cūn	1
 转龙湾村	zhuǎn lóng wān cūn	1
 转路沟村	zhuǎn lù gōu cūn	1
@@ -64747,7 +64747,7 @@ sort: by_weight
 蔡寨回族乡	cài zhài huí zú xiāng	1
 蔡子池街道	cài zǐ chí jiē dào	1
 沧湖开发区	cāng hú kāi fā qū	1
-沧浪山林场	cāng làng shān lín chǎng	1
+沧浪山林场	cāng láng shān lín chǎng	1
 仓门街街道	cāng mén jiē jiē dào	1
 仓山区街道	cāng shān qū jiē dào	1
 草场街街道	cǎo chǎng jiē jiē dào	1
@@ -67817,7 +67817,7 @@ sort: by_weight
 养马甸子乡	yǎng mǎ diàn zǐ xiāng	1
 阳明洞街道	yáng míng dòng jiē dào	1
 杨木林子镇	yáng mù lín zi zhèn	1
-杨木栅子乡	yáng mù shān zǐ xiāng	1
+杨木栅子乡	yáng mù zhà zi xiāng	1
 扬农管理处	yáng nóng guǎn lǐ chù
 杨泡满族乡	yáng pào mǎn zú xiāng	1
 羊坪彝族乡	yáng píng yí zú xiāng	1
