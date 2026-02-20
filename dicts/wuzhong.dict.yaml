@@ -3062,7 +3062,6 @@ sort: by_weight
 脊柱科	jǐ zhù kē	134
 姬蛛科	jī zhū kē	96
 姬猪属	jī zhū shǔ	400
-茄参属	jiā cān shǔ	77
 家蚕属	jiā cán shǔ	69
 荚蛏属	jiá chēng shǔ	69
 加茨科	jiā cí kē	70
@@ -3110,7 +3109,6 @@ sort: by_weight
 假螳属	jiǎ táng shǔ	64
 家蚊属	jiā wén shǔ	100
 甲虾科	jiǎ xiā kē	75
-茄亚科	jiā yà kē	99
 假叶目	jiǎ yè mù	143
 甲衣属	jiǎ yī shǔ	56
 家蝇科	jiā yíng kē	78
@@ -5232,9 +5230,11 @@ sort: by_weight
 鞘藻科	qiào zǎo kē	68
 翘蛛属	qiào zhū shǔ	94
 乔竹属	qiáo zhú shǔ	77
+茄参属	qié cān shǔ	77
 切唇鱼	qiè chún yú	67
 切蛋鱼	qiè dàn yú	99
 切利科	qiè lì kē	88
+茄亚科	qié yà kē	99
 窃衣属	qiè yī shǔ	58
 琴鸡属	qín jī shǔ	55
 芹榄属	qín lǎn shǔ	64
@@ -15451,10 +15451,6 @@ sort: by_weight
 海花蝇属	hǎi huā yíng shǔ	5
 海灰蝶属	hǎi huī dié shǔ	5
 海积鸟属	hǎi jī niǎo shǔ	8
-海茄冬科	hǎi jiā dōng kē	8
-海茄苳科	hǎi jiā dōng kē	7
-海茄苳属	hǎi jiā dōng shǔ	8
-海茄冬属	hǎi jiā dōng shǔ	8
 海金沙科	hǎi jīn shā kē	19
 海金沙属	hǎi jīn shā shǔ	22
 骇鲸龙属	hài jīng lóng shǔ	7
@@ -15516,6 +15512,10 @@ sort: by_weight
 亥普衣科	hài pǔ yī kē	6
 海栖菌属	hǎi qī jūn shǔ	5
 海茜树属	hǎi qiàn shù shǔ	1
+海茄冬科	hǎi qié dōng kē	8
+海茄苳科	hǎi qié dōng kē	7
+海茄苳属	hǎi qié dōng shǔ	8
+海茄冬属	hǎi qié dōng shǔ	8
 海球菌属	hǎi qiú jūn shǔ	7
 海人树科	hǎi rén shù kē	5
 海人树属	hǎi rén shù shǔ	1
@@ -24523,7 +24523,6 @@ sort: by_weight
 球花藜属	qiú huā lí shǔ	5
 球花柞科	qiú huā zhà kē	4
 秋吉螺属	qiū jí luó shǔ	6
-秋茄树属	qiū jiā shù shǔ	15
 酋家鼠属	qiú jiā shǔ shǔ	6
 丘茧兰属	qiū jiǎn lán shǔ	5
 球结苔草	qiú jié tái cǎo	12
@@ -24549,6 +24548,7 @@ sort: by_weight
 球盘菌属	qiú pán jūn shǔ	7
 球腔菌科	qiú qiāng jūn kē	4
 球腔菌属	qiú qiāng jūn shǔ	8
+秋茄树属	qiū qié shù shǔ	15
 球蠼螋科	qiú qú sōu kē	5
 球蕊戟属	qiú ruǐ jǐ shǔ	7
 秋沙鸭属	qiū shā yā shǔ	6
@@ -45854,7 +45854,6 @@ sort: by_weight
 假三毛孢属	jiǎ sān máo bāo shǔ	1
 假散囊菌科	jiǎ sàn náng jūn kē	1
 假散囊菌属	jiǎ sàn náng jūn shǔ	1
-茄色蛹笔螺	jiā sè yǒng bǐ luó	1
 假鲨齿龙属	jiǎ shā chǐ lóng shǔ	1
 假山龙眼属	jiǎ shān lóng yǎn shǔ	1
 假蛇尾草属	jiǎ shé wěi cǎo shǔ	1
@@ -45916,7 +45915,6 @@ sort: by_weight
 假小喙菊属	jiǎ xiǎo huì jú shǔ	1
 假小尾孢属	jiǎ xiǎo wěi bāo shǔ	1
 戛小叶蝉属	jiá xiǎo yè chán shǔ	1
-茄形碘泡虫	jiā xíng diǎn pào chóng	1
 嘉兴碘泡虫	jiā xīng diǎn pào chóng	1
 假熊猴亚科	jiǎ xióng hóu yà kē	1
 假穴环肋螺	jiǎ xué huán lèi luó	1
@@ -52134,8 +52132,10 @@ sort: by_weight
 切顶姬蜂属	qiè dǐng jī fēng shǔ	1
 切短拟管螺	qiē duǎn nǐ guǎn luó	1
 切喙鳄亚科	qiè huì è yà kē	1
+茄色蛹笔螺	qié sè yǒng bǐ luó	1
 切氏炬灯鱼	qiè shì jù dēng yú	1
 切头叶甲属	qiè tóu yè jiǎ shǔ	1
+茄形碘泡虫	qié xíng diǎn pào chóng	1
 茄叶通泉草	qié yè tōng quán cǎo	1
 茄叶咸虾花	qié yè xián xiā huā	1
 切叶野螟属	qiè yè yě míng shǔ	1
@@ -67432,7 +67432,6 @@ sort: by_weight
 拟脊额叶蝉属	nǐ jǐ é yè chán shǔ	1
 拟棘尾线虫属	nǐ jí wěi xiàn chóng shǔ	1
 拟甲烷球菌属	nǐ jiǎ wán qiú jūn shǔ	1
-拟茄形碘泡虫	nǐ jiā xíng diǎn pào chóng	1
 拟箭形单极虫	nǐ jiàn xíng dān jí chóng	1
 拟尖形碘泡虫	nǐ jiān xíng diǎn pào chóng	1
 拟角萼翠雀花	nǐ jiǎo è cuì què huā	1
@@ -67471,6 +67470,7 @@ sort: by_weight
 拟佩氏朴丽鱼	nǐ pèi shì pǔ lì yú	1
 拟片脊叶蝉属	nǐ piàn jǐ yè chán shǔ	1
 拟前感线虫属	nǐ qián gǎn xiàn chóng shǔ	1
+拟茄形碘泡虫	nǐ qié xíng diǎn pào chóng	1
 拟球须裂虫属	nǐ qiú xū liè chóng shǔ	1
 拟犬同盘吸虫	nǐ quǎn tóng pán xī chóng	1
 拟全异碘泡虫	nǐ quán yì diǎn pào chóng	1

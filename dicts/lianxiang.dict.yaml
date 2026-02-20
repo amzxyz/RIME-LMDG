@@ -2422,8 +2422,8 @@ sort: by_weight
 傲之追猎者	ào zhī zhuī liè zhě	1
 澳洲肺鱼目	ào zhōu fèi yú mù	1
 澳洲籍华人	ào zhōu jí huá rén	1
-澳洲茄边碱	ào zhōu jiā biān jiǎn	1
 澳洲膜翅目	ào zhōu mó chì mù	1
+澳洲茄边碱	ào zhōu qié biān jiǎn	1
 澳洲土著人	ào zhōu tǔ zhù rén	1
 澳洲鸭脚木	ào zhōu yā jiǎo mù	1
 澳洲有袋类	ào zhōu yǒu dài lèi	1
@@ -9389,7 +9389,7 @@ sort: by_weight
 鼻病毒感染	bí bìng dú gǎn rǎn	1
 鼻部错构瘤	bí bù cuò gòu liú	1
 比蔡二氏征	bǐ cài èr shì zhēng	1
-荜澄茄油烯	bì chéng jiā yóu xī	1
+荜澄茄油烯	bì chéng qié yóu xī	1
 吡虫啉原药	bǐ chóng lín yuán yào	1
 鼻出血鼻衄	bí chū xiě bí nǜ	1
 鼻唇淋巴结	bí chún lín bā jié	1
@@ -18843,7 +18843,6 @@ sort: by_weight
 沧海一声笑	cāng hǎi yì shēng xiào	1
 沧海一声啸	cāng hǎi yì shēng xiào	1
 沧海月明珠	cāng hǎi yuè míng zhū	1
-藏茄流浸膏	cáng jiā liú jìn gāo	1
 藏降脂胶囊	cáng jiàng zhī jiāo náng	1
 苍颉检字法	cāng jié jiǎn zì fǎ	1
 仓颉输入法	cāng jié shū rù fǎ	1
@@ -18874,6 +18873,7 @@ sort: by_weight
 苍南火车站	cāng nán huǒ chē zhàn	1
 舱内航天服	cāng nèi háng tiān fú	1
 仓配一体化	cāng pèi yì tǐ huà	1
+藏茄流浸膏	cáng qié liú jìn gāo	1
 苍穹红莲队	cāng qióng hóng lián duì	1
 苍穹之禁城	cāng qióng zhī jìn chéng	1
 苍穹之战神	cāng qióng zhī zhàn shén	1
@@ -27271,7 +27271,7 @@ sort: by_weight
 传女不传男	chuán nǚ bù chuán nán	1
 穿膀胱壁处	chuān páng guāng bì chù	1
 穿漂亮衣服	chuān piào liang yī fu	1
-穿破石茄根	chuān pò shí jiā gēn	1
+穿破石茄根	chuān pò shí qié gēn	1
 传奇编年史	chuán qí biān nián shǐ	1
 传奇的诞生	chuán qí de dàn shēng	1
 传奇的故事	chuán qí de gù shi	1
@@ -55319,7 +55319,6 @@ sort: by_weight
 逢甲陈列室	féng jiǎ chén liè shì	1
 逢甲纪念亭	féng jiǎ jì niàn tíng	1
 逢甲扛坝子	féng jiǎ káng bà zi	1
-风茄平喘膏	fēng jiā píng chuǎn gāo	1
 冯家山水库	féng jiā shān shuǐ kù	1
 封建大家庭	fēng jiàn dà jiā tíng	1
 封建的思想	fēng jiàn de sī xiǎng	1
@@ -55528,6 +55527,7 @@ sort: by_weight
 奉其为圭臬	fèng qí wéi guī niè	1
 风起云飞扬	fēng qǐ yún fēi yáng	1
 凤桥楼十郎	fèng qiáo lóu shí láng	1
+风茄平喘膏	fēng qié píng chuǎn gāo	1
 风琴马铃薯	fēng qín mǎ líng shǔ	1
 风情不摇晃	fēng qíng bù yáo huàng	1
 凤庆大叶茶	fèng qìng dà yè chá	1
@@ -92484,7 +92484,6 @@ sort: by_weight
 甲硅烷基膦	jiǎ guī wán jī lìn	1
 甲过度弯曲	jiǎ guò dù wān qū	1
 荚果蕨贯众	jiá guǒ jué guàn zhòng	1
-茄果类蔬菜	jiā guǒ lèi shū cài	1
 荚果凝集素	jiá guǒ níng jí sù	1
 加害人过错	jiā hài rén guò cuò	1
 加号和减号	jiā hào hé jiǎn hào	1
@@ -141028,7 +141027,7 @@ sort: by_weight
 欧盟领导人	ōu méng lǐng dǎo rén	1
 欧盟委员会	ōu méng wěi yuán huì	1
 欧米加常数	ōu mǐ jiā cháng shù	1
-欧米茄常数	ōu mǐ jiā cháng shù	1
+欧米茄常数	ōu mǐ qié cháng shù	1
 欧尼的酸叶	ōu ní de suān yè	1
 欧佩克大会	ōu pèi kè dà huì	1
 欧佩克组织	ōu pèi kè zǔ zhī	1
@@ -149960,6 +149959,7 @@ sort: by_weight
 切割抛光机	qiē gē pāo guāng jī	1
 切割平面法	qiē gē píng miàn fǎ	1
 切割线定理	qiē gē xiàn dìng lǐ	1
+茄果类蔬菜	qié guǒ lèi shū cài	1
 窃国者诸侯	qiè guó zhě zhū hóu	1
 切好的葱段	qiē hǎo de cōng duàn	1
 切好的葱花	qiē hǎo de cōng huā	1
@@ -160076,9 +160076,9 @@ sort: by_weight
 三草汤人民	sān cǎo tāng rén mín	1
 三层板配筋	sān céng bǎn pèi jīn	1
 三层茴香丸	sān céng huí xiāng wán	1
-三层茄香丸	sān céng jiā xiāng wán	1
 三层交换机	sān céng jiāo huàn jī	1
 三层梁配筋	sān céng liáng pèi jīn	1
+三层茄香丸	sān céng qié xiāng wán	1
 三岔河大桥	sān chà hé dà qiáo	1
 三岔河水库	sān chà hé shuǐ kù	1
 三叉汇接区	sān chā huì jiē qū	1
@@ -195732,7 +195732,7 @@ sort: by_weight
 万岁毛主席	wàn suì máo zhǔ xí	1
 万岁通天帖	wàn suì tōng tiān tiē	1
 万索科查湖	wàn suǒ kē chá hú	1
-万桃花水茄	wàn táo huā shuǐ jiā	1
+万桃花水茄	wàn táo huā shuǐ qié	1
 万替妥单抗	wàn tì tuǒ dān kàng	1
 烷烃异构体	wán tīng yì gòu tǐ	1
 顽童合唱团	wán tóng hé chàng tuán	1
@@ -279493,7 +279493,6 @@ sort: by_weight
 二甲苯磺酸铵	èr jiǎ běn huáng suān ǎn	3
 二甲苯磺酸钠	èr jiǎ běn huáng suān nà	3
 二甲苯可溶物	èr jiǎ běn kě róng wù	1
-尔茄的精灵石	ěr jiā de jīng líng shí	1
 二加二等于四	èr jiā èr děng yú sì	1
 二加二等于五	èr jiā èr děng yú wǔ	1
 二价钴配合物	èr jià gǔ pèi hé wù	1
@@ -279880,6 +279879,7 @@ sort: by_weight
 二羟酮环戊烯	èr qiǎng tóng huán wù xī	1
 二羟乙基氨酸	èr qiǎng yǐ jī ān suān	1
 二羟乙基苯胺	èr qiǎng yǐ jī běn àn	3
+尔茄的精灵石	ěr qié de jīng líng shí	1
 而秦兵又至矣	ér qín bīng yòu zhì yǐ	1
 二氢埃托啡片	èr qīng āi tuō fēi piàn	1
 耳清创缝合术	ěr qīng chuàng féng hé shù	1
@@ -306398,7 +306398,7 @@ sort: by_weight
 欧陆理性主义	ōu lù lǐ xìng zhǔ yì	1
 欧盟外部边界	ōu méng wài bù biān jiè	1
 欧盟宪法条约	ōu méng xiàn fǎ tiáo yuē	1
-欧米茄表公司	ōu mǐ jiā biǎo gōng sī	1
+欧米茄表公司	ōu mǐ qié biǎo gōng sī	1
 欧乃影注射液	ōu nǎi yǐng zhù shè yè	1
 偶然治瘥一病	ǒu rán zhì chài yí bìng	1
 偶然中的必然	ǒu rán zhōng de bì rán	1
