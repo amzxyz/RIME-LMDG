@@ -1333,15 +1333,22 @@ class UpdateWorker(QThread):
                                     if any(filename.endswith('.dict.yaml') for filename in f):
                                         found_root = r; break
                                 if found_root:
-                                    parent_dir = os.path.dirname(found_root)
-                                    if os.path.basename(found_root) != 'dicts':
-                                        new_path = os.path.join(parent_dir, 'dicts')
-                                        if os.path.exists(new_path): shutil.rmtree(new_path)
-                                        os.rename(found_root, new_path)
-                                    real_source_dir = parent_dir
+                                    # 【核心修复】如果结构是扁平的，严禁 parent_dir 逃逸到存放 zip 的外层目录
+                                    if found_root == extract_temp:
+                                        safe_wrap = os.path.join(temp_root, "safe_wrap")
+                                        os.makedirs(safe_wrap, exist_ok=True)
+                                        new_path = os.path.join(safe_wrap, 'dicts')
+                                        os.rename(extract_temp, new_path)
+                                        real_source_dir = safe_wrap
+                                    else:
+                                        parent_dir = os.path.dirname(found_root)
+                                        if os.path.basename(found_root) != 'dicts':
+                                            new_path = os.path.join(parent_dir, 'dicts')
+                                            if os.path.exists(new_path): shutil.rmtree(new_path)
+                                            os.rename(found_root, new_path)
+                                        real_source_dir = parent_dir
                             else:
                                 real_source_dir = self._detect_smart_root(extract_temp, t_type)
-                            # ==========================================
 
                             self._safe_merge_dir(real_source_dir, dst_dir)
 
@@ -1352,7 +1359,7 @@ class UpdateWorker(QThread):
                             if not real_hash and os.path.exists(src_path):
                                 real_hash = self._calculate_sha256(src_path)
 
-                            # 【关键修改】只有在使用 GitHub 源时，才记录本地 Hash 供以后校验
+                            # 只有在使用 GitHub 源时，才记录本地 Hash 供以后校验
                             if not self.cfg.use_mirror:
                                 if t_type == '词库组件' and real_hash:
                                     self.version_sig.emit("dict_hash", real_hash)
