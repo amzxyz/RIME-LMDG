@@ -266,21 +266,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 从 wanxiang-tools.py 中提取版本号
+      - name: Extract Version
+        run: |
+          # 自动匹配 TOOL_VERSION = "v2.8.0" 或单引号，提取其中的 v2.8.0
+          EXTRACTED_VER=$(grep -E "^TOOL_VERSION\s*=" wanxiang-tools.py | awk -F'['\''"]' '{print $2}')
+          echo "从源码中提取到版本号: $EXTRACTED_VER"
+          echo "TOOL_VER=$EXTRACTED_VER" >> $GITHUB_ENV
+
       - name: Download all artifacts
         uses: actions/download-artifact@v4
         with:
           path: release_files
           merge-multiple: true
 
-      # 【关键步骤】清理不需要发布的文件
       - name: Clean up artifacts
         run: |
           cd release_files
-          # 删除中间产物 png
           rm -f *.png
-          # 双重保险：如果有残留的 debug 包也删掉
           rm -f *-debug-*.pkg.tar.zst
-          ls -R # 检查一下最终要发布的文件列表
+          ls -R
 
       - name: Delete old Release and Tag
         env:
@@ -295,7 +300,7 @@ jobs:
         with:
           tag_name: tool
           target_commitish: ${{ github.sha }}
-          name: "万象词库-刷拼音-辅助码工具 (自动更新)"
+          name: "万象词库-刷拼音-辅助码工具 - ${{ env.TOOL_VER }}"
           body: |
             ## 功能说明
             - 支持rime用户词库与固定词库格式，用于帮助维护自己的挂接词库与非万象词库生成的用户词库迁移到万象。
@@ -305,10 +310,10 @@ jobs:
             ## 📦 Linux 安装说明
             - **Debian/Ubuntu**: 下载 `.deb` 包，运行 `sudo dpkg -i wanxiang-tools*.deb`
             - **Arch Linux/Manjaro**:  下载 `.pkg.tar.zst` 包，运行:
-              \`sudo pacman -U wanxiang-tools-*.pkg.tar.zst\`
+              `sudo pacman -U wanxiang-tools-*.pkg.tar.zst`
             - **通用版**: 下载无后缀文件，运行 `chmod +x` 后启动。
 
             ## 🍎 macOS 用户注意
             本版本适用于 Apple Silicon (M1/M2/M3)。如果提示“文件损坏”：
-            \`sudo xattr -rd com.apple.quarantine /path/to/wanxiang-tools-macos\`
+            `sudo xattr -rd com.apple.quarantine /path/to/wanxiang-tools-macos`
           files: release_files/*

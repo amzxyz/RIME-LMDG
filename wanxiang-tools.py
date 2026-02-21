@@ -11,6 +11,7 @@ import zipfile
 import tempfile
 import requests
 import subprocess
+import webbrowser
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional, Set, Callable
 from dataclasses import dataclass
@@ -54,6 +55,8 @@ from PySide6.QtWidgets import (
 )
 
 # ============== 常量/工具 ==============
+TOOL_VERSION = "v2.8.0"
+
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
 DEFAULT_SKIP_SET: Set[str] = {
@@ -1243,8 +1246,10 @@ class UpdateWorker(QThread):
                     self.log(f"   ℹ️ [检测结果] {task_type}")
                     self.log(f"      本地记录: {local_ver} | 在线发现: {tag}")
                     
-                    if task_type == '词库组件':
-                        local_hash = self.cfg.current_versions.get("dict_hash", "")
+                    if task_type in ['词库组件', '语法模型']:
+                        suffix = "_cnb" if self.cfg.use_mirror else "_gh"
+                        key = "dict_hash" if task_type == '词库组件' else "model_hash"
+                        local_hash = self.cfg.current_versions.get(f"{key}{suffix}", "")
                         d_l = local_hash[:8] if local_hash else "无"
                         d_r = remote_hash[:8] if remote_hash else "无(直链)"
                         self.log(f"      Hash对比: 本地[{d_l}] vs 在线[{d_r}]")
@@ -1253,18 +1258,16 @@ class UpdateWorker(QThread):
                     if self.cfg.force_update:
                         self.log("⚠️ [强制模式] 忽略校验，准备强制下载...")
                     else:
-                        if task_type == '词库组件':
-                            if not self.cfg.use_mirror:
-                                local_dict_hash = self.cfg.current_versions.get("dict_hash", "")
-                                if remote_hash and local_dict_hash == remote_hash:
-                                    self.log(f"✨ 校验一致: 词库未改变，跳过。")
-                                    should_skip = True
-                        elif task_type == '语法模型':
-                            local_real_hash = self._calculate_sha256(os.path.join(final_dest, MODEL_FILE))
-                            if local_real_hash and remote_hash and local_real_hash == remote_hash:
-                                self.log(f"✨ 校验一致: 模型已最新，跳过。")
+                        if task_type in ['词库组件', '语法模型']:
+                            # 区分 CNB 和 GitHub 的 Hash
+                            suffix = "_cnb" if self.cfg.use_mirror else "_gh"
+                            key = "dict_hash" if task_type == '词库组件' else "model_hash"
+                            local_hash = self.cfg.current_versions.get(f"{key}{suffix}", "")
+                            if remote_hash and local_hash == remote_hash:
+                                self.log(f"✨ 校验一致: {task_type}未改变，跳过。")
                                 should_skip = True
                         elif task_type != 'CustomZip':
+                            # 这里处理“方案组件”的版本号 Tag 对比
                             if tag == self.cfg.current_versions.get(task_type, "0.0.0") and tag != "custom":
                                 self.log(f"✨ 版本一致: {tag} 已最新，跳过。")
                                 should_skip = True
@@ -1347,8 +1350,17 @@ class UpdateWorker(QThread):
 
                         if not self.cfg.custom_url:
                             self.version_sig.emit(t_type, task['ver'])
-                            if t_type == '词库组件' and task['hash']:
-                                self.version_sig.emit("dict_hash", task['hash'])
+                            
+                            real_hash = task['hash']
+                            if not real_hash and os.path.exists(src_path):
+                                real_hash = self._calculate_sha256(src_path)
+
+                            # 区分 CNB 和 GitHub 隔离存储 Hash
+                            suffix = "_cnb" if self.cfg.use_mirror else "_gh"
+                            if t_type == '词库组件' and real_hash:
+                                self.version_sig.emit(f"dict_hash{suffix}", real_hash)
+                            if t_type == '语法模型' and real_hash:
+                                self.version_sig.emit(f"model_hash{suffix}", real_hash)
                         
                         needs_deploy = True
                         self.log(f"✅ {t_type} 安装成功。")
@@ -1368,6 +1380,150 @@ class UpdateWorker(QThread):
                 import traceback
                 self.log(f"❌ 严重错误: {e}")
                 self.done_sig.emit(False, f"更新异常: {e}")
+# ============== 检查更新机制 ==============
+class CheckUpdateWorker(QThread):
+    result_sig = Signal(dict)
+
+    def __init__(self, is_cnb):
+        super().__init__()
+        self.is_cnb = is_cnb
+
+    def run(self):
+        results = {}
+        headers = {"User-Agent": "Rime-Wanxiang-Tool"}
+        
+        # 1. 检查软件自身版本
+        try:
+            r = requests.get("https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/tool", headers=headers, timeout=8)
+            if r.status_code == 200:
+                full_name = r.json().get('name', '未知')
+                # 解析诸如 "万象词库-刷拼音-辅助码工具 - v2.8.0" 中的版本号
+                if " - " in full_name:
+                    results['tool'] = full_name.split(" - ")[-1].strip()
+                else:
+                    results['tool'] = full_name
+            else:
+                results['tool'] = '获取失败'
+        except:
+            results['tool'] = '网络错误'
+            
+        # 2. 检查方案组件版本
+        try:
+            r = requests.get("https://api.github.com/repos/amzxyz/rime_wanxiang/releases/latest", headers=headers, timeout=8)
+            results['schema'] = r.json().get('tag_name', '未知') if r.status_code == 200 else '获取失败'
+        except:
+            results['schema'] = '网络错误'
+            
+        # 3. 检查词库与模型
+        if self.is_cnb:
+            # CNB 的词库和模型走的是无 Hash 的直链，无法在线比对
+            results['dict'] = 'CNB无在线校验'
+            results['model'] = 'CNB无在线校验'
+        else:
+            # GitHub 模式下，获取最新 Release 中 Zip 的 Hash 前 8 位
+            try:
+                r = requests.get(f"https://api.github.com/repos/amzxyz/rime_wanxiang/releases/tags/{DICT_TAG}", headers=headers, timeout=8)
+                if r.status_code == 200:
+                    assets = r.json().get('assets', [])
+                    remote_hash = next((a.get('sha256', '') or (a.get('digest', '').split(':')[-1] if 'digest' in a else '')) for a in assets if 'dicts.zip' in a['name'])
+                    results['dict'] = remote_hash[:8] if remote_hash else DICT_TAG
+                else: results['dict'] = DICT_TAG
+            except: results['dict'] = '网络错误'
+
+            try:
+                r = requests.get(f"https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/{MODEL_TAG}", headers=headers, timeout=8)
+                if r.status_code == 200:
+                    assets = r.json().get('assets', [])
+                    remote_hash = next((a.get('sha256', '') or (a.get('digest', '').split(':')[-1] if 'digest' in a else '')) for a in assets if a['name'] == MODEL_FILE)
+                    results['model'] = remote_hash[:8] if remote_hash else 'model'
+                else: results['model'] = 'model'
+            except: results['model'] = '网络错误'
+        
+        self.result_sig.emit(results)
+
+
+class UpdateCheckDialog(QDialog):
+    def __init__(self, parent, local_vers, remote_vers):
+        super().__init__(parent)
+        self.setWindowTitle("检查更新")
+        self.setMinimumWidth(500)
+        self.parent_win = parent
+        
+        lay = QVBoxLayout(self)
+        lay.setSpacing(15)
+        
+        # 标题区域
+        lbl_title = QLabel("<b>万象拼音组件与工具箱版本状态</b>")
+        lbl_title.setAlignment(Qt.AlignCenter)
+        lbl_title.setStyleSheet("font-size: 16px; margin-bottom: 5px;")
+        lay.addWidget(lbl_title)
+        
+        # 表格布局
+        grid = QGridLayout()
+        grid.setVerticalSpacing(10)
+        grid.setHorizontalSpacing(15)
+        
+        headers = ["组件名称", "当前版本", "最新版本", "操作"]
+        for col, text in enumerate(headers):
+            lbl = QLabel(f"<b>{text}</b>")
+            lbl.setAlignment(Qt.AlignCenter)
+            grid.addWidget(lbl, 0, col)
+            
+        # 数据映射 (scope_id: -1=工具本身, 0=全量, 1=方案, 2=词库, 3=模型)
+        items = [
+            ("工具箱本身", local_vers['tool'], remote_vers.get('tool', '未知'), -1),
+            ("全量更新", local_vers['schema'], remote_vers.get('schema', '未知'), 0),
+            ("方案组件", local_vers['schema'], remote_vers.get('schema', '未知'), 1),
+            ("词库组件", local_vers['dict'], remote_vers.get('dict', DICT_TAG), 2),
+            ("语法模型", local_vers['model'], remote_vers.get('model', 'model'), 3),
+        ]
+        
+        for i, (name, loc, rem, scope_id) in enumerate(items, 1):
+            # 判别是否有新版本（对于未记录的，也视为有更新）
+            has_update = (loc != rem and rem not in ['获取失败', '网络错误', '未知', 'CNB无在线校验'])
+            
+            lbl_name = QLabel(name)
+            lbl_loc = QLabel(loc)
+            lbl_loc.setAlignment(Qt.AlignCenter)
+            
+            lbl_rem = QLabel(rem)
+            lbl_rem.setAlignment(Qt.AlignCenter)
+            if has_update:
+                lbl_rem.setStyleSheet("color: #d9534f; font-weight: bold;") # 红色高亮新版本
+            else:
+                lbl_rem.setStyleSheet("color: #5cb85c;") # 绿色代表已最新
+                
+            btn = QPushButton("下载更新" if has_update else "重新下载")
+            btn.setCursor(Qt.PointingHandCursor)
+            if has_update:
+                # 绿色显眼按钮
+                btn.setStyleSheet("background-color: #5cb85c; color: white; border: none; border-radius: 4px; padding: 6px 12px; font-weight: bold;")
+            else:
+                # 默认次级按钮
+                btn.setStyleSheet("padding: 6px 12px;")
+                
+            btn.clicked.connect(lambda checked, s=scope_id, u=has_update: self.do_action(s, u))
+            
+            grid.addWidget(lbl_name, i, 0)
+            grid.addWidget(lbl_loc, i, 1)
+            grid.addWidget(lbl_rem, i, 2)
+            grid.addWidget(btn, i, 3)
+            
+        lay.addLayout(grid)
+        
+        # 底部关闭按钮
+        btn_close = QPushButton("关闭")
+        btn_close.setFixedWidth(100)
+        btn_close.clicked.connect(self.accept)
+        lay.addWidget(btn_close, alignment=Qt.AlignCenter)
+        
+    def do_action(self, scope_id, is_update):
+        if scope_id == -1:
+            webbrowser.open("https://github.com/amzxyz/RIME-LMDG/releases/tag/tool")
+        else:
+            # 触发主界面的更新逻辑，如果没有更新(重新下载)，则传递 force=True
+            self.parent_win.trigger_update_from_dialog(scope_id, not is_update)
+            self.accept()
 # ============== 可拖拽路径输入 ==============
 class PathEdit(QLineEdit):
     def __init__(self, placeholder: str = ""):
@@ -1390,7 +1546,7 @@ class PathEdit(QLineEdit):
 class MainWin(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Rime万象拼音工具箱 v2.7")
+        self.setWindowTitle(f"Rime万象拼音工具箱 {TOOL_VERSION}")
         self.setMinimumWidth(980)
         self.resize(980, 750)
         self.settings = QSettings("amzxyz", "WanXiangSettings")
@@ -1406,6 +1562,10 @@ class MainWin(QWidget):
         
         self.menubar = QMenuBar(self)
         menu_app = self.menubar.addMenu("应用")
+        act_check_update = QAction("检查更新…", self)
+        act_check_update.triggered.connect(self.check_update)
+        menu_app.addAction(act_check_update)
+        menu_app.addSeparator()
         act_export_log = QAction("导出日志…", self); act_export_log.triggered.connect(self.export_log)
         act_clear_log = QAction("清空日志", self); act_clear_log.triggered.connect(lambda: self.log.clear())
         act_reset = QAction("恢复默认配置", self)
@@ -1459,7 +1619,56 @@ class MainWin(QWidget):
         self.apply_palette(self.act_dark.isChecked())
         self.tabs.currentChanged.connect(self.on_tab_change)
         self.on_tab_change(0)  #初始化是运行，手动刷新为更新
+    # ====================检查更新调度函数 ====================
+    def check_update(self):
+        self.status.setText("正在获取最新版本信息，请稍候...")
+        self.log.appendPlainText(">>> 正在连接 API 获取最新版本...")
+        is_cnb = (self.bg_src.checkedId() == 1)
+        self.check_worker = CheckUpdateWorker(is_cnb)
+        self.check_worker.result_sig.connect(self.on_check_update_result)
+        self.check_worker.start()
+        
+    def on_check_update_result(self, remote_vers):
+        self.status.setText("就绪")
+        is_cnb = (self.bg_src.checkedId() == 1)
+        suffix = "_cnb" if is_cnb else "_gh" # 关键：根据当前源加上后缀
+        
+        # 读取带后缀的本地 Hash 记录，只取前 8 位展示
+        local_dict = self.settings.value(f"installed_versions/dict_hash{suffix}", "0.0.0")
+        local_dict_display = local_dict[:8] if len(local_dict) > 8 else local_dict
+        
+        local_model = self.settings.value(f"installed_versions/model_hash{suffix}", "0.0.0")
+        local_model_display = local_model[:8] if len(local_model) > 8 else local_model
+        
+        local_vers = {
+            'tool': TOOL_VERSION,
+            'schema': self.settings.value("installed_versions/方案组件", "0.0.0"),
+            'dict': local_dict_display,
+            'model': local_model_display
+        }
+        for k in local_vers:
+            if local_vers[k] == "0.0.0" or not local_vers[k]: local_vers[k] = "未记录"
+            
+        dlg = UpdateCheckDialog(self, local_vers, remote_vers)
+        dlg.exec()
 
+    def trigger_update_from_dialog(self, scope_id, force):
+        """由弹窗调用的自动更新触发器"""
+        self.tabs.setCurrentIndex(0) # 自动切到在线更新 Tab
+        
+        # 选中对应的更新范围
+        if self.bg_scope.button(scope_id):
+            self.bg_scope.button(scope_id).setChecked(True)
+            self.bg_scope.idClicked.emit(scope_id) # 触发布局联动
+            
+        # 根据是否是 "重新下载" 决定是否开启强制更新机制
+        self.chk_force.setChecked(force)
+        
+        if force:
+            self.log.appendPlainText("💡 [提示] 触发重新下载，已自动开启【强制更新】模式。")
+            
+        # 直接运行
+        self.run_update()
     def _build_tab_update(self) -> QWidget:
         w = QWidget()
         l = QVBoxLayout(w)
