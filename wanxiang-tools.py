@@ -51,7 +51,7 @@ from PySide6.QtWidgets import (
     QLineEdit, QPushButton, QFileDialog, QTabWidget, QCheckBox,
     QPlainTextEdit, QProgressBar, QLabel, QMessageBox, QGroupBox,
     QStyleFactory, QMenuBar, QDialog, QDialogButtonBox,
-    QRadioButton, QButtonGroup, QComboBox, QGridLayout
+    QRadioButton, QButtonGroup, QComboBox, QGridLayout, QFrame
 )
 
 # ============== 常量/工具 ==============
@@ -1247,9 +1247,8 @@ class UpdateWorker(QThread):
                     self.log(f"      本地记录: {local_ver} | 在线发现: {tag}")
                     
                     if task_type in ['词库组件', '语法模型']:
-                        suffix = "_cnb" if self.cfg.use_mirror else "_gh"
                         key = "dict_hash" if task_type == '词库组件' else "model_hash"
-                        local_hash = self.cfg.current_versions.get(f"{key}{suffix}", "")
+                        local_hash = self.cfg.current_versions.get(key, "")
                         d_l = local_hash[:8] if local_hash else "无"
                         d_r = remote_hash[:8] if remote_hash else "无(直链)"
                         self.log(f"      Hash对比: 本地[{d_l}] vs 在线[{d_r}]")
@@ -1259,15 +1258,13 @@ class UpdateWorker(QThread):
                         self.log("⚠️ [强制模式] 忽略校验，准备强制下载...")
                     else:
                         if task_type in ['词库组件', '语法模型']:
-                            # 区分 CNB 和 GitHub 的 Hash
-                            suffix = "_cnb" if self.cfg.use_mirror else "_gh"
+                            # 改回无后缀读取
                             key = "dict_hash" if task_type == '词库组件' else "model_hash"
-                            local_hash = self.cfg.current_versions.get(f"{key}{suffix}", "")
+                            local_hash = self.cfg.current_versions.get(key, "")
                             if remote_hash and local_hash == remote_hash:
                                 self.log(f"✨ 校验一致: {task_type}未改变，跳过。")
                                 should_skip = True
                         elif task_type != 'CustomZip':
-                            # 这里处理“方案组件”的版本号 Tag 对比
                             if tag == self.cfg.current_versions.get(task_type, "0.0.0") and tag != "custom":
                                 self.log(f"✨ 版本一致: {tag} 已最新，跳过。")
                                 should_skip = True
@@ -1355,12 +1352,12 @@ class UpdateWorker(QThread):
                             if not real_hash and os.path.exists(src_path):
                                 real_hash = self._calculate_sha256(src_path)
 
-                            # 区分 CNB 和 GitHub 隔离存储 Hash
-                            suffix = "_cnb" if self.cfg.use_mirror else "_gh"
-                            if t_type == '词库组件' and real_hash:
-                                self.version_sig.emit(f"dict_hash{suffix}", real_hash)
-                            if t_type == '语法模型' and real_hash:
-                                self.version_sig.emit(f"model_hash{suffix}", real_hash)
+                            # 【关键修改】只有在使用 GitHub 源时，才记录本地 Hash 供以后校验
+                            if not self.cfg.use_mirror:
+                                if t_type == '词库组件' and real_hash:
+                                    self.version_sig.emit("dict_hash", real_hash)
+                                if t_type == '语法模型' and real_hash:
+                                    self.version_sig.emit("model_hash", real_hash)
                         
                         needs_deploy = True
                         self.log(f"✅ {t_type} 安装成功。")
@@ -1383,10 +1380,6 @@ class UpdateWorker(QThread):
 # ============== 检查更新机制 ==============
 class CheckUpdateWorker(QThread):
     result_sig = Signal(dict)
-
-    def __init__(self, is_cnb):
-        super().__init__()
-        self.is_cnb = is_cnb
 
     def run(self):
         results = {}
@@ -1414,33 +1407,26 @@ class CheckUpdateWorker(QThread):
         except:
             results['schema'] = '网络错误'
             
-        # 3. 检查词库与模型
-        if self.is_cnb:
-            # CNB 的词库和模型走的是无 Hash 的直链，无法在线比对
-            results['dict'] = 'CNB无在线校验'
-            results['model'] = 'CNB无在线校验'
-        else:
-            # GitHub 模式下，获取最新 Release 中 Zip 的 Hash 前 8 位
-            try:
-                r = requests.get(f"https://api.github.com/repos/amzxyz/rime_wanxiang/releases/tags/{DICT_TAG}", headers=headers, timeout=8)
-                if r.status_code == 200:
-                    assets = r.json().get('assets', [])
-                    remote_hash = next((a.get('sha256', '') or (a.get('digest', '').split(':')[-1] if 'digest' in a else '')) for a in assets if 'dicts.zip' in a['name'])
-                    results['dict'] = remote_hash[:8] if remote_hash else DICT_TAG
-                else: results['dict'] = DICT_TAG
-            except: results['dict'] = '网络错误'
+        # 3. 检查词库与模型 (纯 GitHub 模式)
+        try:
+            r = requests.get(f"https://api.github.com/repos/amzxyz/rime_wanxiang/releases/tags/{DICT_TAG}", headers=headers, timeout=8)
+            if r.status_code == 200:
+                assets = r.json().get('assets', [])
+                remote_hash = next(((a.get('sha256', '') or (a.get('digest', '').split(':')[-1] if 'digest' in a else '')) for a in assets if 'dicts.zip' in a['name']), "")
+                results['dict'] = remote_hash[:8] if remote_hash else DICT_TAG
+            else: results['dict'] = DICT_TAG
+        except: results['dict'] = '网络错误'
 
-            try:
-                r = requests.get(f"https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/{MODEL_TAG}", headers=headers, timeout=8)
-                if r.status_code == 200:
-                    assets = r.json().get('assets', [])
-                    remote_hash = next((a.get('sha256', '') or (a.get('digest', '').split(':')[-1] if 'digest' in a else '')) for a in assets if a['name'] == MODEL_FILE)
-                    results['model'] = remote_hash[:8] if remote_hash else 'model'
-                else: results['model'] = 'model'
-            except: results['model'] = '网络错误'
+        try:
+            r = requests.get(f"https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/{MODEL_TAG}", headers=headers, timeout=8)
+            if r.status_code == 200:
+                assets = r.json().get('assets', [])
+                remote_hash = next(((a.get('sha256', '') or (a.get('digest', '').split(':')[-1] if 'digest' in a else '')) for a in assets if a['name'] == MODEL_FILE), "")
+                results['model'] = remote_hash[:8] if remote_hash else 'model'
+            else: results['model'] = 'model'
+        except: results['model'] = '网络错误'
         
         self.result_sig.emit(results)
-
 
 class UpdateCheckDialog(QDialog):
     def __init__(self, parent, local_vers, remote_vers):
@@ -1562,10 +1548,6 @@ class MainWin(QWidget):
         
         self.menubar = QMenuBar(self)
         menu_app = self.menubar.addMenu("应用")
-        act_check_update = QAction("检查更新…", self)
-        act_check_update.triggered.connect(self.check_update)
-        menu_app.addAction(act_check_update)
-        menu_app.addSeparator()
         act_export_log = QAction("导出日志…", self); act_export_log.triggered.connect(self.export_log)
         act_clear_log = QAction("清空日志", self); act_clear_log.triggered.connect(lambda: self.log.clear())
         act_reset = QAction("恢复默认配置", self)
@@ -1597,8 +1579,28 @@ class MainWin(QWidget):
         # 3. 刷辅助码 (现在的 Index 2)
         self.tabs.addTab(self.tab_aux, "刷新辅助码（拼音;辅助码）")
         self.tabs.addTab(self.tab_sp, "双拼编码转换")
-        self.btn_run = QPushButton("运行"); self.btn_run.clicked.connect(self.run_job)
+
+        self.btn_run = QPushButton("运行")
+        self.btn_run.setCursor(Qt.PointingHandCursor)
+        self.btn_run.setStyleSheet("""
+            QPushButton {
+                background-color: #61A165; 
+                color: white; 
+                border: none; 
+                border-radius: 4px; 
+                padding: 6px 25px; /* 让主按钮稍微长一点，更显眼 */
+                font-size: 13px;
+                font-weight: bold;
+            }
+            QPushButton:hover { background-color: #559159; }
+            QPushButton:pressed { background-color: #49814D; }
+            /* 运行中被禁用时的颜色：浅灰绿 */
+            QPushButton:disabled { background-color: #A8C7AA; color: #F0F5F1; }
+        """)
+        self.btn_run.clicked.connect(self.run_job)
+        
         self.btn_stop = QPushButton("停止"); self.btn_stop.setEnabled(False); self.btn_stop.clicked.connect(self.stop_job)
+
         self.chk_force = QCheckBox("强制更新")
         self.chk_force.setToolTip("勾选后将忽略版本号和Hash校验，强制重新下载并覆盖文件。")
         self.chk_force.hide() # 默认隐藏，只有切到Tab 3才显示
@@ -1621,23 +1623,25 @@ class MainWin(QWidget):
         self.on_tab_change(0)  #初始化是运行，手动刷新为更新
     # ====================检查更新调度函数 ====================
     def check_update(self):
+        # 【关键交互】点击检查更新时，自动帮用户切换到 GitHub 下载源
+        self.rb_src_gh.setChecked(True)
+        self.bg_src.idClicked.emit(0) 
+
         self.status.setText("正在获取最新版本信息，请稍候...")
         self.log.appendPlainText(">>> 正在连接 API 获取最新版本...")
-        is_cnb = (self.bg_src.checkedId() == 1)
-        self.check_worker = CheckUpdateWorker(is_cnb)
+        
+        self.check_worker = CheckUpdateWorker() # 恢复原来的无参数调用
         self.check_worker.result_sig.connect(self.on_check_update_result)
         self.check_worker.start()
         
     def on_check_update_result(self, remote_vers):
         self.status.setText("就绪")
-        is_cnb = (self.bg_src.checkedId() == 1)
-        suffix = "_cnb" if is_cnb else "_gh" # 关键：根据当前源加上后缀
         
-        # 读取带后缀的本地 Hash 记录，只取前 8 位展示
-        local_dict = self.settings.value(f"installed_versions/dict_hash{suffix}", "0.0.0")
+        # 恢复读取没有后缀的 dict_hash 和 model_hash
+        local_dict = self.settings.value("installed_versions/dict_hash", "0.0.0")
         local_dict_display = local_dict[:8] if len(local_dict) > 8 else local_dict
         
-        local_model = self.settings.value(f"installed_versions/model_hash{suffix}", "0.0.0")
+        local_model = self.settings.value("installed_versions/model_hash", "0.0.0")
         local_model_display = local_model[:8] if len(local_model) > 8 else local_model
         
         local_vers = {
@@ -1655,7 +1659,10 @@ class MainWin(QWidget):
     def trigger_update_from_dialog(self, scope_id, force):
         """由弹窗调用的自动更新触发器"""
         self.tabs.setCurrentIndex(0) # 自动切到在线更新 Tab
-        
+        # 强制将顶部的大分类切回“万象更新”官方源，防止被自定义链接拦截
+        if self.bg_source_type.checkedId() != 0:
+            self.bg_source_type.button(0).setChecked(True)
+            self.bg_source_type.idClicked.emit(0)
         # 选中对应的更新范围
         if self.bg_scope.button(scope_id):
             self.bg_scope.button(scope_id).setChecked(True)
@@ -1666,6 +1673,9 @@ class MainWin(QWidget):
         
         if force:
             self.log.appendPlainText("💡 [提示] 触发重新下载，已自动开启【强制更新】模式。")
+            
+        # 直接运行
+        self.run_update()
             
         # 直接运行
         self.run_update()
@@ -1807,12 +1817,48 @@ class MainWin(QWidget):
         self.rb_src_auto = QRadioButton("自动(CNB>GitHub)")
         self.rb_src_gh = QRadioButton("GitHub")
         self.bg_src.addButton(self.rb_src_auto, 1)
+        # [视觉容器] GitHub + 检查更新
+        self.gh_frame = QFrame()
+        self.gh_frame.setObjectName("ghBox")
+        # 换成极浅的鼠尾草绿底色和边框
+        self.gh_frame.setStyleSheet("""
+            #ghBox {
+                background-color: #F0F5F1; 
+                border: 1px solid #A8C7AA;
+                border-radius: 5px;
+            }
+        """)
+        gh_lay = QHBoxLayout(self.gh_frame)
+        gh_lay.setContentsMargins(8, 2, 8, 2)
+        
+        self.rb_src_gh = QRadioButton("GitHub")
         self.bg_src.addButton(self.rb_src_gh, 0)
+        
+        self.btn_check_update = QPushButton("检查更新")
+        self.btn_check_update.setCursor(Qt.PointingHandCursor)
+        # 换成护眼的莫兰迪灰绿 (Sage Green)
+        self.btn_check_update.setStyleSheet("""
+            QPushButton {
+                background-color: #61A165; 
+                color: white; 
+                border: none; 
+                border-radius: 4px; 
+                padding: 3px 12px; 
+                font-weight: bold;
+            }
+            QPushButton:hover { background-color: #559159; }
+            QPushButton:pressed { background-color: #49814D; }
+        """)
+        self.btn_check_update.clicked.connect(self.check_update)
+        
+        gh_lay.addWidget(self.rb_src_gh)
+        gh_lay.addSpacing(10)
+        gh_lay.addWidget(self.btn_check_update)
         self.rb_src_auto.setChecked(True)
         row_src.addWidget(self.rb_src_auto)
-        row_src.addWidget(self.rb_src_gh)
+        row_src.addSpacing(15)
+        row_src.addWidget(self.gh_frame)
         row_src.addStretch()
-
         self.upd_token = QLineEdit(); self.upd_token.setPlaceholderText("GitHub Token (可选)")
         self.upd_token.setEchoMode(QLineEdit.Password)
         
@@ -1824,10 +1870,8 @@ class MainWin(QWidget):
         l_left.addWidget(self.custom_url_input)
         self.custom_url_input.hide()
         l_left.addLayout(row_mid)
-        # l_left.addWidget(self.gb_aux) <--- 删除这一行
         l_left.addWidget(gb_cfg)
         l_left.addStretch()
-
         # ==================== 右侧：白名单与安全 ====================
         gb_wl = QGroupBox("白名单与安全")
         l_wl = QVBoxLayout(gb_wl)
@@ -2192,11 +2236,70 @@ class MainWin(QWidget):
             pal.setColor(QPalette.Highlight, QColor(42, 130, 218))
             pal.setColor(QPalette.HighlightedText, Qt.black)
             QApplication.setPalette(pal)
+            
+            self.tabs.setStyleSheet("""
+                QTabWidget::pane { border: 1px solid #444; top: -1px; border-radius: 4px; }
+                QTabBar::tab { background-color: #353535; color: #ccc; border: 1px solid #444; padding: 6px 16px; margin-right: 2px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+                QTabBar::tab:selected { background-color: #2b542c; color: white; border: 1px solid #5cb85c; font-weight: bold; }
+                QTabBar::tab:hover:!selected { background-color: #444; }
+            """)
+            self.progress.setStyleSheet("""
+                QProgressBar {
+                    border: 1px solid #444;
+                    border-radius: 4px;
+                    text-align: center;
+                    background-color: #353535;
+                    color: #eee;
+                    font-weight: bold;
+                }
+                QProgressBar::chunk {
+                    background-color: #49814D; /* 暗色模式下稍微深一点的绿 */
+                    border-radius: 3px;
+                }
+            """)
         else:
             QApplication.setStyle(QStyleFactory.create("Fusion"))
             QApplication.setPalette(QApplication.style().standardPalette())
+            self.tabs.setStyleSheet("""
+                QTabWidget::pane { 
+                    border: 1px solid #A8C7AA; 
+                    top: -1px; 
+                    border-radius: 4px; 
+                }
+                QTabBar::tab { 
+                    background-color: #F0F5F1; 
+                    color: #333; 
+                    border: 1px solid #A8C7AA; 
+                    padding: 6px 16px; 
+                    margin-right: 2px; 
+                    border-top-left-radius: 4px; 
+                    border-top-right-radius: 4px; 
+                }
+                QTabBar::tab:selected { 
+                    background-color: #61A165;  /* 柔和的莫兰迪灰绿 */
+                    color: white; 
+                    border: 1px solid #61A165; 
+                    font-weight: bold; 
+                }
+                QTabBar::tab:hover:!selected { 
+                    background-color: #E2ECE3; 
+                }
+            """)
+            self.progress.setStyleSheet("""
+                QProgressBar {
+                    border: 1px solid #A8C7AA;
+                    border-radius: 4px;
+                    text-align: center;
+                    background-color: #F0F5F1;  /* 与标签页未选中背景同色，显得干净 */
+                    color: #333;
+                    font-weight: bold;
+                }
+                QProgressBar::chunk {
+                    background-color: #61A165; /* 核心莫兰迪绿 */
+                    border-radius: 3px;
+                }
+            """)
         self.settings.setValue('ui/dark', dark)
-
     def show_about(self):
         links_html = "<br>".join([f'• <a href="{u}">{t}</a>' for t, u in GITHUB_LINKS]) or "（未配置链接）"
         dlg = QDialog(self)
