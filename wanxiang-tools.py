@@ -55,7 +55,7 @@ from PySide6.QtWidgets import (
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v2.8.0"
+TOOL_VERSION = "v2.8.1"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -1240,6 +1240,8 @@ class UpdateWorker(QThread):
                         self.log(f"⚠️ 跳过: 未能获取到 {task_type} 的远程资源。"); continue
 
                     url, tag, remote_hash = remote_data['url'], remote_data['tag'], remote_data.get('hash')
+                    if task_type == '方案组件' and tag.lower().startswith('v'):
+                        tag = tag[1:]
                     local_ver = self.cfg.current_versions.get(task_type, "0.0.0")
                     if local_ver == "0.0.0": local_ver = "未记录"
 
@@ -1407,13 +1409,23 @@ class CheckUpdateWorker(QThread):
         except:
             results['tool'] = '网络错误'
             
-        # 2. 检查方案组件版本
+        # 2. 检查方案组件版本 (修复 Latest 被自动构建 Tag 顶替的 Bug)
         try:
-            r = requests.get("https://api.github.com/repos/amzxyz/rime_wanxiang/releases/latest", headers=headers, timeout=8)
-            results['schema'] = r.json().get('tag_name', '未知') if r.status_code == 200 else '获取失败'
+            r = requests.get("https://api.github.com/repos/amzxyz/rime_wanxiang/releases", headers=headers, timeout=8)
+            if r.status_code == 200:
+                releases = r.json()
+                schema_tag = '未知'
+                for rel in releases:
+                    t_name = rel.get('tag_name', '')
+                    # 过滤掉词库和模型这类自动化 Tag，寻找真正的版本号 (如 v14.7.3)
+                    if t_name and t_name != DICT_TAG and 'model' not in t_name.lower():
+                        schema_tag = t_name
+                        break
+                results['schema'] = schema_tag
+            else:
+                results['schema'] = '获取失败'
         except:
             results['schema'] = '网络错误'
-            
         # 3. 检查词库与模型 (纯 GitHub 模式)
         try:
             r = requests.get(f"https://api.github.com/repos/amzxyz/rime_wanxiang/releases/tags/{DICT_TAG}", headers=headers, timeout=8)
@@ -1650,10 +1662,34 @@ class MainWin(QWidget):
         
         local_model = self.settings.value("installed_versions/model_hash", "0.0.0")
         local_model_display = local_model[:8] if len(local_model) > 8 else local_model
-        
+        schema_ver = ""
+        rime_dir = self.upd_rime.text().strip()
+        version_file = os.path.join(rime_dir, "version.txt")
+        if os.path.isfile(version_file):
+            try:
+                with open(version_file, "r", encoding="utf-8") as f:
+                    content = f.read().strip()
+                    if content:
+                        # 去除开头的 v 或 V
+                        if content.lower().startswith('v'):
+                            content = content[1:]
+                        schema_ver = content
+            except Exception as e:
+                self.log.appendPlainText(f"[Warn] 读取 version.txt 出错: {e}")
+                
+        # 如果文件不存在或为空，则回退到设置记录
+        if not schema_ver:
+            schema_ver = self.settings.value("installed_versions/方案组件", "0.0.0")
+            if schema_ver and schema_ver.lower().startswith('v'):
+                schema_ver = schema_ver[1:]
+                
+        # 同步处理远程方案版本（去除 v/V），防止本地无 v 远程有 v 导致一直提示更新
+        rem_schema = remote_vers.get('schema', '未知')
+        if rem_schema not in ['获取失败', '网络错误', '未知'] and rem_schema.lower().startswith('v'):
+            remote_vers['schema'] = rem_schema[1:]
         local_vers = {
             'tool': TOOL_VERSION,
-            'schema': self.settings.value("installed_versions/方案组件", "0.0.0"),
+            'schema': schema_ver,
             'dict': local_dict_display,
             'model': local_model_display
         }
@@ -1662,7 +1698,6 @@ class MainWin(QWidget):
             
         dlg = UpdateCheckDialog(self, local_vers, remote_vers)
         dlg.exec()
-
     def trigger_update_from_dialog(self, scope_id, force):
         """由弹窗调用的自动更新触发器"""
         self.tabs.setCurrentIndex(0) # 自动切到在线更新 Tab
@@ -1987,6 +2022,25 @@ class MainWin(QWidget):
         self.settings.beginGroup("installed_versions")
         for key in self.settings.childKeys(): versions[key] = self.settings.value(key, "0.0.0")
         self.settings.endGroup()
+        # 更新执行前：方案版本优先读取 version.txt
+        version_file = os.path.join(rime_dir, "version.txt")
+        schema_ver_from_file = ""
+        if os.path.isfile(version_file):
+            try:
+                with open(version_file, "r", encoding="utf-8") as f:
+                    v_content = f.read().strip()
+                    if v_content:
+                        if v_content.lower().startswith('v'):
+                            v_content = v_content[1:]
+                        schema_ver_from_file = v_content
+            except: pass
+            
+        if schema_ver_from_file:
+            versions["方案组件"] = schema_ver_from_file
+        else:
+            old_sch = versions.get("方案组件", "")
+            if old_sch.lower().startswith('v'):
+                versions["方案组件"] = old_sch[1:]
         
         clean_mode = self.chk_clean.isChecked()
         if clean_mode:
