@@ -1862,14 +1862,7 @@ class MainWin(QWidget):
         # [视觉容器] GitHub + 检查更新
         self.gh_frame = QFrame()
         self.gh_frame.setObjectName("ghBox")
-        # 换成极浅的鼠尾草绿底色和边框
-        self.gh_frame.setStyleSheet("""
-            #ghBox {
-                background-color: #F0F5F1; 
-                border: 1px solid #A8C7AA;
-                border-radius: 5px;
-            }
-        """)
+        # 样式已移交 apply_palette 统一管理，支持暗黑模式切换
         gh_lay = QHBoxLayout(self.gh_frame)
         gh_lay.setContentsMargins(8, 2, 8, 2)
         
@@ -2318,6 +2311,13 @@ class MainWin(QWidget):
                     border-radius: 3px;
                 }
             """)
+            self.gh_frame.setStyleSheet("""
+                #ghBox {
+                    background-color: #2b302b; /* 极深邃的暗灰绿色，融于暗色背景 */
+                    border: 1px solid #445044;
+                    border-radius: 5px;
+                }
+            """)
         else:
             QApplication.setStyle(QStyleFactory.create("Fusion"))
             QApplication.setPalette(QApplication.style().standardPalette())
@@ -2358,6 +2358,13 @@ class MainWin(QWidget):
                 QProgressBar::chunk {
                     background-color: #61A165; /* 核心莫兰迪绿 */
                     border-radius: 3px;
+                }
+            """)
+            self.gh_frame.setStyleSheet("""
+                #ghBox {
+                    background-color: #F0F5F1; /* 莫兰迪浅绿底色 */
+                    border: 1px solid #A8C7AA;
+                    border-radius: 5px;
                 }
             """)
         self.settings.setValue('ui/dark', dark)
