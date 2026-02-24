@@ -24693,6 +24693,7 @@ sort: by_weight
 吃得也不多	chī de yě bù duō	1
 吃得有品位	chī de yǒu pǐn wèi	1
 吃得怎么样	chī de zěn me yàng	1
+吃的这么光	chī de zhè me guāng	1
 吃点东西吧	chī diǎn dōng xi ba	1
 吃点儿好的	chī diǎn ér hǎo de	1
 吃点感冒药	chī diǎn gǎn mào yào	1
@@ -44467,7 +44468,7 @@ sort: by_weight
 短信提示音	duǎn xìn tí shì yīn	1
 短信息服务	duǎn xìn xī fú wù	1
 短信验证码	duǎn xìn yàn zhèng mǎ	1
-短信一月追	duǎn xìn yí yuè zhuī	1
+短信一月追	duǎn xìn yī yuè zhuī	1
 短袖连衣裙	duǎn xiù lián yī qún	1
 短袖针织衫	duǎn xiù zhēn zhī shān	1
 短序唇苣苔	duǎn xù chún jù tái	1
@@ -50504,6 +50505,7 @@ sort: by_weight
 反卫星试验	fǎn wèi xīng shì yàn	1
 反卫星卫星	fǎn wèi xīng wèi xīng	1
 反卫星武器	fǎn wèi xīng wǔ qì	1
+范围这么广	fàn wéi zhè me guǎng	1
 范文澜故居	fàn wén lán gù jū	1
 反温室效应	fǎn wēn shì xiào yìng	1
 梵文文化圈	fàn wén wén huà quān	1
@@ -100695,7 +100697,7 @@ sort: by_weight
 今年要结婚	jīn nián yào jié hūn	1
 今年一季度	jīn nián yí jì dù	1
 今年以来的	jīn nián yǐ lái de	1
-今年一月份	jīn nián yí yuè fèn	1
+今年一月份	jīn nián yī yuè fèn	1
 今年元宵节	jīn nián yuán xiāo jié	1
 今年中秋节	jīn nián zhōng qiū jié	1
 今年总决赛	jīn nián zǒng jué sài	1
@@ -104746,6 +104748,7 @@ sort: by_weight
 就不接电话	jiù bù jiē diàn huà	1
 旧布科莱班	jiù bù kē lái bān	1
 就不咳嗽了	jiù bù ké sòu le	1
+就不可以吧	jiù bù kě yǐ ba	1
 就不理我了	jiù bù lǐ wǒ le	1
 就不能成为	jiù bù néng chéng wéi	1
 就不上学了	jiù bú shàng xué le	1
@@ -233169,28 +233172,28 @@ sort: by_weight
 医院综合楼	yī yuàn zōng hé lóu	1
 医院做产检	yī yuàn zuò chǎn jiǎn	1
 医院做手术	yī yuàn zuò shǒu shù	1
-一月二十号	yí yuè èr shí hào	1
-一月二十日	yí yuè èr shí rì	1
-一月二十一	yí yuè èr shí yī	1
-一月廿八日	yí yuè niàn bā rì	1
-一月廿九日	yí yuè niàn jiǔ rì	1
-一月廿六日	yí yuè niàn liù rì	1
-一月廿七日	yí yuè niàn qī rì	1
-一月廿三日	yí yuè niàn sān rì	1
-一月廿四日	yí yuè niàn sì rì	1
-一月廿五日	yí yuè niàn wǔ rì	1
-一月廿一日	yí yuè niàn yī rì	1
+一月二十号	yī yuè èr shí hào	1
+一月二十日	yī yuè èr shí rì	1
+一月二十一	yī yuè èr shí yī	1
+一月廿八日	yī yuè niàn bā rì	1
+一月廿九日	yī yuè niàn jiǔ rì	1
+一月廿六日	yī yuè niàn liù rì	1
+一月廿七日	yī yuè niàn qī rì	1
+一月廿三日	yī yuè niàn sān rì	1
+一月廿四日	yī yuè niàn sì rì	1
+一月廿五日	yī yuè niàn wǔ rì	1
+一月廿一日	yī yuè niàn yī rì	1
 壹月叁拾日	yī yuè sān shí rì	1
-一月三十日	yí yuè sān shí rì	1
+一月三十日	yī yuè sān shí rì	1
 壹月拾捌日	yī yuè shí bā rì	1
-一月十八日	yí yuè shí bā rì	1
-一月十二日	yí yuè shí èr rì	1
-一月十九日	yí yuè shí jiǔ rì	1
-一月十六日	yí yuè shí liù rì	1
-一月十三日	yí yuè shí sān rì	1
-一月十五日	yí yuè shí wǔ rì	1
+一月十八日	yī yuè shí bā rì	1
+一月十二日	yī yuè shí èr rì	1
+一月十九日	yī yuè shí jiǔ rì	1
+一月十六日	yī yuè shí liù rì	1
+一月十三日	yī yuè shí sān rì	1
+一月十五日	yī yuè shí wǔ rì	1
 壹月拾壹日	yī yuè shí yī rì	1
-一月十一日	yí yuè shí yī rì	1
+一月十一日	yī yuè shí yī rì	1
 以月为单位	yǐ yuè wéi dān wèi	1
 以月一日发	yǐ yuè yī rì fā	1
 一月一主题	yī yuè yì zhǔ tí	1
@@ -331764,23 +331767,23 @@ sort: by_weight
 亿元以上企业	yì yuán yǐ shàng qǐ yè	1
 沂源猿人遗址	yí yuán yuán rén yí zhǐ	1
 一元运算符号	yì yuán yùn suàn fú hào	1
-一月二十八日	yí yuè èr shí bā rì	1
-一月二十二日	yí yuè èr shí èr rì	1
+一月二十八日	yī yuè èr shí bā rì	1
+一月二十二日	yī yuè èr shí èr rì	1
 壹月贰拾贰日	yī yuè èr shí èr rì	1
-一月二十九日	yí yuè èr shí jiǔ rì	1
+一月二十九日	yī yuè èr shí jiǔ rì	1
 壹月贰拾玖日	yī yuè èr shí jiǔ rì	1
-一月二十六日	yí yuè èr shí liù rì	1
+一月二十六日	yī yuè èr shí liù rì	1
 壹月贰拾陆日	yī yuè èr shí liù rì	1
-一月二十七日	yí yuè èr shí qī rì	1
+一月二十七日	yī yuè èr shí qī rì	1
 壹月贰拾柒日	yī yuè èr shí qī rì	1
 壹月贰拾叁日	yī yuè èr shí sān rì	1
-一月二十三日	yí yuè èr shí sān rì	1
-一月二十四号	yí yuè èr shí sì hào	1
+一月二十三日	yī yuè èr shí sān rì	1
+一月二十四号	yī yuè èr shí sì hào	1
 壹月贰拾肆日	yī yuè èr shí sì rì	1
-一月二十四日	yí yuè èr shí sì rì	1
-一月二十五日	yí yuè èr shí wǔ rì	1
+一月二十四日	yī yuè èr shí sì rì	1
+一月二十五日	yī yuè èr shí wǔ rì	1
 壹月贰拾伍日	yī yuè èr shí wǔ rì	1
-一月二十一日	yí yuè èr shí yī rì	1
+一月二十一日	yī yuè èr shí yī rì	1
 壹月叁拾壹日	yī yuè sān shí yī rì	1
 以怎样的方式	yǐ zěn yàng de fāng shì	1
 遗赠扶养协议	yí zèng fú yǎng xié yì	1
