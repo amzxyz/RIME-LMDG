@@ -1343,7 +1343,6 @@ sort: by_weight
 李瀚	lǐ hàn
 李菡	lǐ hàn
 李航	lǐ háng
-李珩	lǐ háng
 李昊	lǐ hào
 李浩	lǐ hào
 李好	lǐ hǎo
@@ -1353,6 +1352,7 @@ sort: by_weight
 李贺	lǐ hè
 李赫	lǐ hè
 李鹤	lǐ hè
+李珩	lǐ héng
 李亨	lǐ hēng
 李恒	lǐ héng
 李衡	lǐ héng
@@ -1651,7 +1651,6 @@ sort: by_weight
 李湾	lǐ wān
 李王	lǐ wáng
 李旺	lǐ wàng
-李沇	lǐ wěi
 李玮	lǐ wěi
 李炜	lǐ wěi
 李威	lǐ wēi
@@ -1728,6 +1727,7 @@ sort: by_weight
 李雅	lǐ yǎ
 李亚	lǐ yà
 李娅	lǐ yà
+李沇	lǐ yǎn
 李岩	lǐ yán
 李延	lǐ yán
 李嫣	lǐ yān
@@ -2660,22 +2660,22 @@ sort: by_weight
 秦制	qín zhì
 秦中	qín zhōng
 秦子	qín zǐ
-任光	rén guāng
-任航	rén háng
-任豪	rén háo
-任红	rén hóng
-任华	rén huá
-任玠	rén jiè
-任杰	rén jié
-任静	rén jìng
-任军	rén jūn
-任南	rén nán
-任鹏	rén péng
-任翔	rén xiáng
-任雪	rén xuě
-任烨	rén yè
-任勇	rén yǒng
-任泽	rén zé
+任光	rèn guāng
+任航	rèn háng
+任豪	rèn háo
+任红	rèn hóng
+任华	rèn huá
+任玠	rèn jiè
+任杰	rèn jié
+任静	rèn jìng
+任军	rèn jūn
+任南	rèn nán
+任鹏	rèn péng
+任翔	rèn xiáng
+任雪	rèn xuě
+任烨	rèn yè
+任勇	rèn yǒng
+任泽	rèn zé
 沈岸	shěn àn
 沈斌	shěn bīn
 沈彬	shěn bīn
@@ -3158,13 +3158,13 @@ sort: by_weight
 王罕	wáng hǎn
 王含	wáng hán
 王航	wáng háng
-王珩	wáng háng
 王浩	wáng hào
 王昊	wáng hào
 王豪	wáng háo
 王河	wáng hé
 王鹤	wáng hè
 王合	wáng hé
+王珩	wáng héng
 王衡	wáng héng
 王洪	wáng hóng
 王红	wáng hóng
@@ -4510,6 +4510,7 @@ sort: by_weight
 张丹	zhāng dān
 张单	zhāng dān
 张道	zhāng dào
+张焘	zhāng dào
 张德	zhāng dé
 张登	zhāng dēng
 张迪	zhāng dí
@@ -4572,7 +4573,6 @@ sort: by_weight
 张瀚	zhāng hàn
 张晗	zhāng hán
 张航	zhāng háng
-张珩	zhāng háng
 张浩	zhāng hào
 张昊	zhāng hào
 张皓	zhāng hào
@@ -4584,6 +4584,7 @@ sort: by_weight
 张贺	zhāng hè
 张翮	zhāng hé
 张黑	zhāng hēi
+张珩	zhāng héng
 张恒	zhāng héng
 张横	zhāng héng
 张纮	zhāng hóng
@@ -4791,7 +4792,7 @@ sort: by_weight
 张清	zhāng qīng
 张晴	zhāng qíng
 张琼	zhāng qióng
-张曲	zhāng qū
+张曲	zhāng qǔ
 张泉	zhāng quán
 张权	zhāng quán
 张铨	zhāng quán
@@ -4856,7 +4857,6 @@ sort: by_weight
 张汤	zhāng tāng
 张唐	zhāng táng
 张堂	zhāng táng
-张焘	zhāng tāo
 张韬	zhāng tāo
 张特	zhāng tè
 张悌	zhāng tì
@@ -6067,6 +6067,26 @@ sort: by_weight
 岑勇康	cén yǒng kāng
 岑毓英	cén yù yīng
 岑智明	cén zhì míng
+曾立岩	céng lì yán
+曾立志	céng lì zhì
+曾奇峰	céng qí fēng
+曾启荣	céng qǐ róng
+曾乾曜	céng qián yào
+曾庆荣	céng qìng róng
+曾庆乙	céng qìng yǐ
+曾绍山	céng shào shān
+曾少宗	céng shǎo zōng
+曾石甫	céng shí fǔ
+曾石塘	céng shí táng
+曾石虞	céng shí yú
+曾万钟	céng wàn zhōng
+曾熙丙	céng xī bǐng
+曽汐莉	cēng xī lì
+曾晞颜	céng xī yán
+曾泽生	céng zé shēng
+曾昭科	céng zhāo kē
+曾昭抡	céng zhāo lūn
+曾振甲	céng zhèn jiǎ
 陈阿娇	chén ā jiāo
 陈阿金	chén ā jīn
 陈阿婆	chén ā pó
@@ -6179,7 +6199,7 @@ sort: by_weight
 陈北洋	chén běi yáng
 陈北元	chén běi yuán
 陈弼臣	chén bì chén
-陈彼得	chén bǐ dé
+陈彼得	chén bǐ de
 陈碧舸	chén bì gě
 陈璧君	chén bì jūn
 陈璧琳	chén bì lín
@@ -6331,7 +6351,7 @@ sort: by_weight
 陈存仁	chén cún rén
 陈达邦	chén dá bāng
 陈大悲	chén dà bēi
-陈大方	chén dà fāng
+陈大方	chén dà fang
 陈大海	chén dà hǎi
 陈大河	chén dà hé
 陈大惠	chén dà huì
@@ -7955,7 +7975,7 @@ sort: by_weight
 陈绍馨	chén shào xīn
 陈劭雄	chén shào xióng
 陈绍雄	chén shào xióng
-陈少爷	chén shào yé
+陈少爷	chén shào ye
 陈绍英	chén shào yīng
 陈少勇	chén shǎo yǒng
 陈少游	chén shǎo yóu
@@ -8345,7 +8365,7 @@ sort: by_weight
 陈韦伶	chén wéi líng
 陈维龄	chén wéi líng
 陈维龙	chén wéi lóng
-陈为民	chén wéi mín
+陈为民	chén wèi mín
 陈慰民	chén wèi mín
 陈伟明	chén wěi míng
 陈微明	chén wēi míng
@@ -8552,7 +8572,7 @@ sort: by_weight
 陈翔橙	chén xiáng chéng
 陈翔点	chén xiáng diǎn
 陈向东	chén xiàng dōng
-陈相公	chén xiàng gōng
+陈相公	chén xiàng gong
 陈祥贵	chén xiáng guì
 陈向宏	chén xiàng hóng
 陈湘娟	chén xiāng juān
@@ -8666,7 +8686,7 @@ sort: by_weight
 陈晓曦	chén xiǎo xī
 陈小霞	chén xiǎo xiá
 陈晓霞	chén xiǎo xiá
-陈肖霞	chén xiào xiá
+陈肖霞	chén xiāo xiá
 陈小小	chén xiǎo xiǎo
 陈晓晓	chén xiǎo xiǎo
 陈晓欣	chén xiǎo xīn
@@ -8870,9 +8890,9 @@ sort: by_weight
 陈彦成	chén yàn chéng
 陈彦妃	chén yàn fēi
 陈燕飞	chén yàn fēi
-陈燕珩	chén yàn háng
 陈燕航	chén yàn háng
 陈彦豪	chén yàn háo
+陈燕珩	chén yàn héng
 陈彦衡	chén yàn héng
 陈艳红	chén yàn hóng
 陈彦宏	chén yàn hóng
@@ -8993,7 +9013,7 @@ sort: by_weight
 陈逸鸣	chén yì míng
 陈乙宁	chén yǐ níng
 陈怡宁	chén yí níng
-陈一诺	chén yī nuò
+陈一诺	chén yí nuò
 陈怡萍	chén yí píng
 陈贻权	chén yí quán
 陈奕仁	chén yì rén
@@ -9016,7 +9036,7 @@ sort: by_weight
 陈奕先	chén yì xiān
 陈译贤	chén yì xián
 陈以信	chén yǐ xìn
-陈一新	chén yī xīn
+陈一新	chén yì xīn
 陈怡馨	chén yí xīn
 陈义信	chén yì xìn
 陈仪馨	chén yí xīn
@@ -9905,7 +9925,7 @@ sort: by_weight
 褚圣麟	chǔ shèng lín
 褚师段	chǔ shī duàn
 褚栓忠	chǔ shuān zhōng
-褚蒜子	chǔ suàn zǐ
+褚蒜子	chǔ suàn zi
 褚廷璋	chǔ tíng zhāng
 褚万里	chǔ wàn lǐ
 楚溪春	chǔ xī chūn
@@ -9953,12 +9973,12 @@ sort: by_weight
 崔恩映	cuī ēn yìng
 崔杋圭	cuī fán guī
 崔凡克	cuī fán kè
+崔佛洛	cuī fó luò
+崔佛史	cuī fó shǐ
+崔佛斯	cuī fó sī
 崔府君	cuī fǔ jūn
-崔佛洛	cuī fú luò
 崔富日	cuī fù rì
 崔福生	cuī fú shēng
-崔佛史	cuī fú shǐ
-崔佛斯	cuī fú sī
 崔根良	cuī gēn liáng
 崔恭祖	cuī gōng zǔ
 崔圭丙	cuī guī bǐng
@@ -10065,7 +10085,7 @@ sort: by_weight
 崔仁师	cuī rén shī
 崔容俊	cuī róng jùn
 崔汝珍	cuī rǔ zhēn
-崔如琢	cuī rú zuó
+崔如琢	cuī rú zhuó
 崔叡娜	cuī ruì nà
 崔润喜	cuī rùn xǐ
 崔善姬	cuī shàn jī
@@ -10252,9 +10272,9 @@ sort: by_weight
 丁丁张	dīng dīng zhāng
 丁菲飞	dīng fēi fēi
 丁飞俊	dīng fēi jùn
+丁佛言	dīng fó yán
 丁福保	dīng fú bǎo
 丁福根	dīng fú gēn
-丁佛言	dīng fú yán
 丁辅之	dīng fǔ zhī
 丁干学	dīng gàn xué
 丁公著	dīng gōng zhù
@@ -10448,7 +10468,7 @@ sort: by_weight
 丁已神	dīng yǐ shén
 丁义兴	dīng yì xīng
 丁一宇	dīng yī yǔ
-丁一元	dīng yī yuán
+丁一元	dīng yì yuán
 丁胤甲	dīng yìn jiǎ
 丁荫楠	dīng yīn nán
 丁勇岱	dīng yǒng dài
@@ -10706,7 +10726,7 @@ sort: by_weight
 杜鹏程	dù péng chéng
 杜朋朋	dù péng péng
 杜鹏宇	dù péng yǔ
-杜婆婆	dù pó pó
+杜婆婆	dù pó po
 杜泊羊	dù pō yáng
 杜普兰	dù pǔ lán
 杜普里	dù pǔ lǐ
@@ -10732,8 +10752,8 @@ sort: by_weight
 杜少卿	dù shǎo qīng
 杜少如	dù shǎo rú
 杜舍克	dù shě kè
-杜什库	dù shén kù
 杜世成	dù shì chéng
+杜什库	dù shí kù
 杜诗梅	dù shī méi
 杜氏藻	dù shì zǎo
 杜受田	dù shòu tián
@@ -10880,8 +10900,8 @@ sort: by_weight
 段德彰	duàn dé zhāng
 段第一	duàn dì yī
 段端武	duàn duān wǔ
+段佛荣	duàn fó róng
 段覆盖	duàn fù gài
-段佛荣	duàn fú róng
 段改线	duàn gǎi xiàn
 段管线	duàn guǎn xiàn
 段广东	duàn guǎng dōng
@@ -10992,7 +11012,7 @@ sort: by_weight
 段智祥	duàn zhì xiáng
 段智兴	duàn zhì xīng
 段志玄	duàn zhì xuán
-段子璋	duàn zǐ zhāng
+段子璋	duàn zi zhāng
 冯爱军	féng ài jūn
 冯安邦	féng ān bāng
 冯白驹	féng bái jū
@@ -11292,8 +11312,8 @@ sort: by_weight
 冯应瑞	féng yìng ruì
 冯应湘	féng yīng xiāng
 冯盈盈	féng yíng yíng
-冯营子	féng yíng zǐ
-冯英子	féng yīng zǐ
+冯营子	féng yíng zi
+冯英子	féng yīng zi
 冯永兵	féng yǒng bīng
 冯咏恩	féng yǒng ēn
 冯永辉	féng yǒng huī
@@ -12088,7 +12108,7 @@ sort: by_weight
 韩晓鹏	hán xiǎo péng
 韩晓清	hán xiǎo qīng
 韩小野	hán xiǎo yě
-韩肖胄	hán xiào zhòu
+韩肖胄	hán xiāo zhòu
 韩信才	hán xìn cái
 韩信草	hán xìn cǎo
 韩信岭	hán xìn lǐng
@@ -12763,7 +12783,7 @@ sort: by_weight
 姜弄蝶	jiāng nòng dié
 姜珮瑶	jiāng pèi yáo
 姜鹏飞	jiāng péng fēi
-蒋澎龙	jiǎng pēng lóng
+蒋澎龙	jiǎng péng lóng
 姜鹏翔	jiāng péng xiáng
 姜片茶	jiāng piàn chá
 姜片虫	jiāng piàn chóng
@@ -12828,7 +12848,7 @@ sort: by_weight
 蒋渭川	jiǎng wèi chuān
 姜卫东	jiāng wèi dōng
 蒋伟烈	jiǎng wěi liè
-蒋为民	jiǎng wéi mín
+蒋为民	jiǎng wèi mín
 姜卫鹏	jiāng wèi péng
 蒋维平	jiǎng wéi píng
 姜维平	jiāng wéi píng
@@ -12846,14 +12866,14 @@ sort: by_weight
 蒋文滔	jiǎng wén tāo
 姜吻吻	jiāng wěn wěn
 蒋文文	jiǎng wén wén
-姜窝子	jiāng wō zǐ
+姜窝子	jiāng wō zi
 姜西园	jiāng xī yuán
 姜先诚	jiāng xiān chéng
 姜贤秀	jiāng xián xiù
 蒋祥墀	jiǎng xiáng chí
 蒋湘青	jiǎng xiāng qīng
 姜小白	jiāng xiǎo bái
-蒋肖斌	jiǎng xiào bīn
+蒋肖斌	jiǎng xiāo bīn
 蒋小涵	jiǎng xiǎo hán
 蒋小华	jiǎng xiǎo huá
 姜晓龙	jiāng xiǎo lóng
@@ -12890,7 +12910,7 @@ sort: by_weight
 姜艺彬	jiāng yì bīn
 蒋忆德	jiǎng yì dé
 姜宜菁	jiāng yí jīng
-姜一郎	jiāng yì láng
+姜一郎	jiāng yī láng
 蒋一铭	jiǎng yī míng
 蒋义渠	jiǎng yì qú
 姜艺瑟	jiāng yì sè
@@ -13202,8 +13222,8 @@ sort: by_weight
 雷蒂尼	léi dì ní
 雷迪年	léi dí nián
 雷蒂区	léi dì qū
-雷迪什	léi dí shén
 雷迪生	léi dí shēng
+雷迪什	léi dí shí
 雷迪斯	léi dí sī
 雷迪特	léi dí tè
 雷帝网	léi dì wǎng
@@ -13454,8 +13474,8 @@ sort: by_weight
 雷苏丹	léi sū dān
 雷素云	léi sù yún
 雷琐辛	léi suǒ xīn
-雷探长	léi tàn cháng
 雷坛河	léi tán hé
+雷探长	léi tàn zhǎng
 雷陶勒	léi táo lè
 雷特河	léi tè hé
 雷特年	léi tè nián
@@ -13555,7 +13575,7 @@ sort: by_weight
 雷州府	léi zhōu fǔ
 雷州歌	léi zhōu gē
 雷州湾	léi zhōu wān
-雷子乐	léi zǐ lè
+雷子乐	léi zi lè
 雷兹纳	léi zī nà
 雷兹省	léi zī shěng
 雷祖殿	léi zǔ diàn
@@ -13641,7 +13661,7 @@ sort: by_weight
 李宝椿	lǐ bǎo chūn
 李葆春	lǐ bǎo chūn
 李保东	lǐ bǎo dōng
-李宝儿	lǐ bǎo ér
+李宝儿	lǐ bǎo er
 李保芳	lǐ bǎo fāng
 李宝峰	lǐ bǎo fēng
 李宝刚	lǐ bǎo gāng
@@ -13845,7 +13865,7 @@ sort: by_weight
 李常受	lǐ cháng shòu
 李长寿	lǐ cháng shòu
 李长顺	lǐ cháng shùn
-李长泰	lǐ chāng tài
+李长泰	lǐ cháng tài
 李长伟	lǐ cháng wěi
 李昌文	lǐ chāng wén
 李昌宪	lǐ chāng xiàn
@@ -13873,6 +13893,7 @@ sort: by_weight
 李超时	lǐ chāo shí
 李朝威	lǐ cháo wēi
 李焯雄	lǐ chāo xióng
+李朝阳	lǐ cháo yáng
 李澈河	lǐ chè hé
 李扯火	lǐ chě huǒ
 李晨晨	lǐ chén chén
@@ -13932,7 +13953,6 @@ sort: by_weight
 李诚铭	lǐ chéng míng
 李成年	lǐ chéng nián
 李承鹏	lǐ chéng péng
-李成蹊	lǐ chéng qī
 李成器	lǐ chéng qì
 李成仁	lǐ chéng rén
 李成儒	lǐ chéng rú
@@ -13945,6 +13965,7 @@ sort: by_weight
 李成旺	lǐ chéng wàng
 李成文	lǐ chéng wén
 李成武	lǐ chéng wǔ
+李成蹊	lǐ chéng xī
 李丞汐	lǐ chéng xī
 李承先	lǐ chéng xiān
 李承仙	lǐ chéng xiān
@@ -13978,6 +13999,7 @@ sort: by_weight
 李持正	lǐ chí zhèng
 李崇光	lǐ chóng guāng
 李充节	lǐ chōng jié
+李重进	lǐ chóng jìn
 李崇矩	lǐ chóng jǔ
 李崇礼	lǐ chóng lǐ
 李崇萍	lǐ chóng píng
@@ -14382,6 +14404,7 @@ sort: by_weight
 李凤云	lǐ fèng yún
 李凤藻	lǐ fèng zǎo
 李凤洲	lǐ fèng zhōu
+李佛金	lǐ fó jīn
 李佛子	lǐ fó zǐ
 李福成	lǐ fú chéng
 李富春	lǐ fù chūn
@@ -14389,7 +14412,6 @@ sort: by_weight
 李富贵	lǐ fù guì
 李辅国	lǐ fǔ guó
 李富华	lǐ fù huá
-李佛金	lǐ fú jīn
 李福林	lǐ fú lín
 李福民	lǐ fú mín
 李富强	lǐ fù qiáng
@@ -15353,7 +15375,7 @@ sort: by_weight
 李尽忠	lǐ jìn zhōng
 李进忠	lǐ jìn zhōng
 李金柱	lǐ jīn zhù
-李金子	lǐ jīn zǐ
+李金子	lǐ jīn zi
 李敬爱	lǐ jìng ài
 李景伯	lǐ jǐng bó
 李敬伯	lǐ jìng bó
@@ -15975,7 +15997,7 @@ sort: by_weight
 李念慈	lǐ niàn cí
 李念修	lǐ niàn xiū
 李念兹	lǐ niàn zī
-李娘子	lǐ niáng zi
+李娘子	lǐ niáng zǐ
 李宁宁	lǐ níng níng
 李宁牌	lǐ níng pái
 李宁鞋	lǐ níng xié
@@ -16368,7 +16390,7 @@ sort: by_weight
 李绍先	lǐ shào xiān
 李绍祥	lǐ shào xiáng
 李少言	lǐ shǎo yán
-李少爷	lǐ shào yé
+李少爷	lǐ shào ye
 李少元	lǐ shǎo yuán
 李少云	lǐ shǎo yún
 李少芸	lǐ shǎo yún
@@ -16944,7 +16966,7 @@ sort: by_weight
 李维康	lǐ wéi kāng
 李伟坤	lǐ wěi kūn
 李威利	lǐ wēi lì
-李为民	lǐ wéi mín
+李为民	lǐ wèi mín
 李卫民	lǐ wèi mín
 李伟民	lǐ wěi mín
 李维民	lǐ wéi mín
@@ -16979,7 +17001,6 @@ sort: by_weight
 李伟伟	lǐ wěi wěi
 李娓娓	lǐ wěi wěi
 李伟文	lǐ wěi wén
-李沇熹	lǐ wěi xī
 李维新	lǐ wéi xīn
 李伟信	lǐ wěi xìn
 李伟新	lǐ wěi xīn
@@ -17274,7 +17295,7 @@ sort: by_weight
 李晓春	lǐ xiǎo chūn
 李晓丹	lǐ xiǎo dān
 李小丹	lǐ xiǎo dān
-李肖聃	lǐ xiào dān
+李肖聃	lǐ xiāo dān
 李晓迪	lǐ xiǎo dí
 李小丢	lǐ xiǎo diū
 李晓东	lǐ xiǎo dōng
@@ -17390,7 +17411,7 @@ sort: by_weight
 李小武	lǐ xiǎo wǔ
 李小溪	lǐ xiǎo xī
 李孝先	lǐ xiào xiān
-李肖肖	lǐ xiào xiào
+李肖肖	lǐ xiāo xiāo
 李潇潇	lǐ xiāo xiāo
 李小小	lǐ xiǎo xiǎo
 李笑笑	lǐ xiào xiào
@@ -17401,7 +17422,7 @@ sort: by_weight
 李小雪	lǐ xiǎo xuě
 李小岩	lǐ xiǎo yán
 李晓岩	lǐ xiǎo yán
-李肖岩	lǐ xiào yán
+李肖岩	lǐ xiāo yán
 李晓燕	lǐ xiǎo yàn
 李小燕	lǐ xiǎo yàn
 李晓艳	lǐ xiǎo yàn
@@ -17747,6 +17768,7 @@ sort: by_weight
 李晏榕	lǐ yàn róng
 李言荣	lǐ yán róng
 李延寿	lǐ yán shòu
+李沇熹	lǐ yǎn xī
 李妍熙	lǐ yán xī
 李延禧	lǐ yán xǐ
 李延霞	lǐ yán xiá
@@ -17809,7 +17831,7 @@ sort: by_weight
 李亦航	lǐ yì háng
 李义河	lǐ yì hé
 李意恒	lǐ yì héng
-李一花	lǐ yī huā
+李一花	lǐ yì huā
 李壹花	lǐ yī huā
 李逸骅	lǐ yì huá
 李贻煌	lǐ yí huáng
@@ -17833,7 +17855,7 @@ sort: by_weight
 李一男	lǐ yì nán
 李毅男	lǐ yì nán
 李姨娘	lǐ yí niáng
-李一诺	lǐ yī nuò
+李一诺	lǐ yí nuò
 李一平	lǐ yī píng
 李乙容	lǐ yǐ róng
 李羿蓉	lǐ yì róng
@@ -17915,7 +17937,7 @@ sort: by_weight
 李应章	lǐ yīng zhāng
 李应祯	lǐ yīng zhēn
 李颖芝	lǐ yǐng zhī
-李英子	lǐ yīng zǐ
+李英子	lǐ yīng zi
 李永安	lǐ yǒng ān
 李永波	lǐ yǒng bō
 李永昌	lǐ yǒng chāng
@@ -18217,8 +18239,8 @@ sort: by_weight
 李云芳	lǐ yún fāng
 李云飞	lǐ yún fēi
 李云枫	lǐ yún fēng
-李韫珩	lǐ yùn háng
 李云鹤	lǐ yún hè
+李韫珩	lǐ yùn héng
 李蕴华	lǐ yùn huá
 李运杰	lǐ yùn jié
 李云杰	lǐ yún jié
@@ -18330,7 +18352,6 @@ sort: by_weight
 李昭象	lǐ zhāo xiàng
 李肇星	lǐ zhào xīng
 李兆熊	lǐ zhào xióng
-李朝阳	lǐ zhāo yáng
 李昭仪	lǐ zhāo yí
 李兆珍	lǐ zhào zhēn
 李兆忠	lǐ zhào zhōng
@@ -18602,7 +18623,6 @@ sort: by_weight
 李仲虺	lǐ zhòng huī
 李重诲	lǐ zhòng huì
 李忠杰	lǐ zhōng jié
-李重进	lǐ zhòng jìn
 李仲久	lǐ zhòng jiǔ
 李仲举	lǐ zhòng jǔ
 李重俊	lǐ zhòng jùn
@@ -18748,7 +18768,7 @@ sort: by_weight
 李子勇	lǐ zi yǒng
 李子酉	lǐ zi yǒu
 李子玉	lǐ zi yù
-李子园	lǐ zi yuán
+李子园	lǐ zǐ yuán
 李子元	lǐ zi yuán
 李自云	lǐ zì yún
 李子云	lǐ zi yún
@@ -18916,7 +18936,7 @@ sort: by_weight
 梁慧恩	liáng huì ēn
 梁辉宗	liáng huī zōng
 梁继昌	liáng jì chāng
-梁纪昌	liáng jì chāng
+梁纪昌	liáng jǐ chāng
 梁基爵	liáng jī jué
 梁吉林	liáng jí lín
 梁辑卿	liáng jí qīng
@@ -19293,15 +19313,15 @@ sort: by_weight
 梁卓长	liáng zhuó cháng
 梁卓伟	liáng zhuó wěi
 梁倬轩	liáng zhuō xuān
-梁子超	liáng zǐ chāo
-梁子成	liáng zǐ chéng
-梁子岛	liáng zǐ dǎo
-梁子骏	liáng zǐ jùn
-梁子美	liáng zǐ měi
-梁子山	liáng zǐ shān
-梁子翁	liáng zǐ wēng
+梁子超	liáng zi chāo
+梁子成	liáng zi chéng
+梁子岛	liáng zi dǎo
+梁子骏	liáng zi jùn
+梁子美	liáng zi měi
+梁子山	liáng zi shān
+梁子翁	liáng zi wēng
 梁梓禧	liáng zǐ xǐ
-梁子颖	liáng zǐ yǐng
+梁子颖	liáng zi yǐng
 梁宗岱	liáng zōng dài
 梁祖尧	liáng zǔ yáo
 梁祖仪	liáng zǔ yí
@@ -19857,20 +19877,20 @@ sort: by_weight
 林之雨	lín zhī yǔ
 林志远	lín zhì yuǎn
 林芷筠	lín zhǐ yún
-林子超	lín zǐ chāo
-林子都	lín zǐ dōu
-林子方	lín zǐ fāng
-林子峰	lín zǐ fēng
-林子涵	lín zǐ hán
-林子濠	lín zǐ háo
-林子闳	lín zǐ hóng
-林子杰	lín zǐ jié
-林子口	lín zǐ kǒu
-林子良	lín zǐ liáng
+林子超	lín zi chāo
+林子都	lín zi dōu
+林子方	lín zi fāng
+林子峰	lín zi fēng
+林子涵	lín zi hán
+林子濠	lín zi háo
+林子闳	lín zi hóng
+林子杰	lín zi jié
+林子口	lín zi kǒu
+林子良	lín zi liáng
 林姿妙	lín zī miào
-林子萱	lín zǐ xuān
-林子扬	lín zǐ yáng
-林子渊	lín zǐ yuān
+林子萱	lín zi xuān
+林子扬	lín zi yáng
+林子渊	lín zi yuān
 林宗仁	lín zōng rén
 林宗素	lín zōng sù
 林宗兴	lín zōng xīng
@@ -20016,7 +20036,7 @@ sort: by_weight
 刘纪鹏	liú jì péng
 刘季孙	liú jì sūn
 刘纪文	liú jì wén
-刘脊虚	liú jí xū
+刘脊虚	liú jǐ xū
 刘继业	liú jì yè
 刘继卣	liú jì yǒu
 刘继元	liú jì yuán
@@ -20227,7 +20247,7 @@ sort: by_weight
 刘小明	liú xiǎo míng
 刘小宁	liú xiǎo níng
 刘晓艳	liú xiǎo yàn
-刘肖岩	liú xiào yán
+刘肖岩	liú xiāo yán
 刘新华	liú xīn huá
 刘心武	liú xīn wǔ
 刘心悠	liú xīn yōu
@@ -20504,7 +20524,7 @@ sort: by_weight
 鲁尼年	lǔ ní nián
 鲁乓球	lǔ pāng qiú
 鲁培军	lǔ péi jūn
-鲁佩什	lǔ pèi shén
+鲁佩什	lǔ pèi shí
 鲁皮奥	lǔ pí ào
 鲁平公	lǔ píng gōng
 鲁普奖	lǔ pǔ jiǎng
@@ -20997,7 +21017,7 @@ sort: by_weight
 罗平的	luó píng de
 罗平国	luó píng guó
 罗平站	luó píng zhàn
-罗婆婆	luó pó pó
+罗婆婆	luó pó po
 罗泊湾	luó pō wān
 罗普道	luó pǔ dào
 罗普卢	luó pǔ lú
@@ -21117,7 +21137,7 @@ sort: by_weight
 罗婉枫	luó wǎn fēng
 罗婉娴	luó wǎn xián
 罗万藻	luó wàn zǎo
-罗望子	luó wàng zǐ
+罗望子	luó wàng zi
 罗王子	luó wáng zǐ
 罗维道	luó wéi dào
 罗卫东	luó wèi dōng
@@ -21346,7 +21366,7 @@ sort: by_weight
 吕费克	lǚ fèi kè
 吕霏侠	lǚ fēi xiá
 吕菲耶	lǚ fēi yé
-吕佛庭	lǚ fú tíng
+吕佛庭	lǚ fó tíng
 吕公弼	lǚ gōng bì
 吕公绰	lǚ gōng chuò
 吕公孺	lǚ gōng rú
@@ -21676,12 +21696,12 @@ sort: by_weight
 马大马	mǎ dà mǎ
 马达山	mǎ dá shān
 马达斯	mǎ dá sī
+马大王	mǎ dà wáng
 马达卫	mǎ dá wèi
 马大勇	mǎ dà yǒng
 马大元	mǎ dà yuán
 马大正	mǎ dà zhèng
 马达座	mǎ dá zuò
-马大王	mǎ dài wáng
 马丹娜	mǎ dān nà
 马丹妮	mǎ dān nī
 马丹省	mǎ dān shěng
@@ -21756,7 +21776,7 @@ sort: by_weight
 马杜赖	mǎ dù lài
 马杜尼	mǎ dù ní
 马度云	mǎ dù yún
-马肚子	mǎ dǔ zi
+马肚子	mǎ dù zi
 马端街	mǎ duān jiē
 马端临	mǎ duān lín
 马队长	mǎ duì zhǎng
@@ -21779,7 +21799,7 @@ sort: by_weight
 马尔德	mǎ ěr dé
 马尔登	mǎ ěr dēng
 马尔顿	mǎ ěr dùn
-马耳朵	mǎ ěr duǒ
+马耳朵	mǎ ěr duo
 马耳峰	mǎ ěr fēng
 马尔高	mǎ ěr gāo
 马尔谷	mǎ ěr gǔ
@@ -21938,9 +21958,9 @@ sort: by_weight
 马宏伟	mǎ hóng wěi
 马洪文	mǎ hóng wén
 马洪新	mǎ hóng xīn
-马葫芦	mǎ hú lú
+马葫芦	mǎ hú lu
 马胡马	mǎ hú mǎ
-马虎山	mǎ hǔ shān
+马虎山	mǎ hu shān
 马华干	mǎ huá gàn
 马怀德	mǎ huái dé
 马欢岛	mǎ huān dǎo
@@ -22207,7 +22227,7 @@ sort: by_weight
 马磊磊	mǎ lěi lěi
 马雷罗	mǎ léi luó
 马雷讷	mǎ léi nè
-马雷什	mǎ léi shén
+马雷什	mǎ léi shí
 马雷特	mǎ léi tè
 马利安	mǎ lì ān
 马利奥	mǎ lì ào
@@ -22453,7 +22473,7 @@ sort: by_weight
 马千乘	mǎ qiān shèng
 马桥河	mǎ qiáo hé
 马乔里	mǎ qiáo lǐ
-马切达	mǎ qiè dá
+马切达	mǎ qiē dá
 马青骅	mǎ qīng huá
 马青林	mǎ qīng lín
 马青山	mǎ qīng shān
@@ -22498,7 +22518,7 @@ sort: by_weight
 马萨马	mǎ sà mǎ
 马萨诺	mǎ sà nuò
 马萨塞	mǎ sà sāi
-马萨什	mǎ sà shén
+马萨什	mǎ sà shí
 马萨特	mǎ sà tè
 马萨亚	mǎ sà yà
 马塞奥	mǎ sāi ào
@@ -22511,7 +22531,7 @@ sort: by_weight
 马塞里	mǎ sāi lǐ
 马塞罗	mǎ sāi luó
 马赛罗	mǎ sài luó
-马赛曲	mǎ sài qū
+马赛曲	mǎ sài qǔ
 马赛人	mǎ sài rén
 马塞史	mǎ sāi shǐ
 马塞亚	mǎ sāi yà
@@ -22694,7 +22714,7 @@ sort: by_weight
 马蹄蟹	mǎ tí xiè
 马蹄袖	mǎ tí xiù
 马蹄印	mǎ tí yìn
-马蹄子	mǎ tí zǐ
+马蹄子	mǎ tí zi
 马田艾	mǎ tián ài
 马田臣	mǎ tián chén
 马天君	mǎ tiān jūn
@@ -22985,7 +23005,7 @@ sort: by_weight
 马应祥	mǎ yīng xiáng
 马英行	mǎ yīng xíng
 马英尧	mǎ yīng yáo
-马营子	mǎ yíng zǐ
+马营子	mǎ yíng zi
 马永安	mǎ yǒng ān
 马永成	mǎ yǒng chéng
 马永华	mǎ yǒng huá
@@ -23336,7 +23356,7 @@ sort: by_weight
 钱铭怡	qián míng yí
 钱明逸	qián míng yì
 钱纳水	qián nà shuǐ
-钱难挣	qián nán zhēng
+钱难挣	qián nán zhèng
 钱牛牛	qián niú niú
 钱佩卿	qián pèi qīng
 钱沛筠	qián pèi yún
@@ -23344,7 +23364,7 @@ sort: by_weight
 钱盆网	qián pén wǎng
 钱皮恩	qián pí ēn
 钱皮诺	qián pí nuò
-钱婆婆	qián pó pó
+钱婆婆	qián pó po
 钱启敏	qián qǐ mǐn
 钱清站	qián qīng zhàn
 钱仁康	qián rén kāng
@@ -23403,7 +23423,7 @@ sort: by_weight
 钱也收	qián yě shōu
 钱一本	qián yì běn
 钱仪吉	qián yí jí
-钱一交	qián yī jiāo
+钱一交	qián yì jiāo
 钱引安	qián yǐn ān
 钱银子	qián yín zi
 钱应溥	qián yīng pǔ
@@ -23593,53 +23613,53 @@ sort: by_weight
 秦佐子	qín zuǒ zǐ
 任北平	rén běi píng
 任北洋	rén běi yáng
-任灿灿	rén càn càn
-任传文	rén chuán wén
-任冬梅	rén dōng méi
-任淦庭	rén gàn tíng
-任国立	rén guó lì
-任国民	rén guó mín
-任国强	rén guó qiáng
-任国子	rén guó zǐ
-任海涛	rén hǎi tāo
-任洪斌	rén hóng bīn
-任洪国	rén hóng guó
-任红军	rén hóng jūn
-任宏伟	rén hóng wěi
-任建军	rén jiàn jūn
-任建宇	rén jiàn yǔ
-任九单	rén jiǔ dān
-任九实	rén jiǔ shí
-任骏飞	rén jùn fēi
-任军号	rén jūn hào
-任骏威	rén jùn wēi
-任俊威	rén jùn wēi
-任柯诺	rén kē nuò
-任兰生	rén lán shēng
-任兰舟	rén lán zhōu
-任乃强	rén nǎi qiáng
-任仁发	rén rén fā
-任容萱	rén róng xuān
-任文君	rén wén jūn
-任献青	rén xiàn qīng
-任显群	rén xiǎn qún
-任晓军	rén xiǎo jūn
-任晓雯	rén xiǎo wén
-任晓燕	rén xiǎo yàn
-任新安	rén xīn ān
-任兴洲	rén xīng zhōu
-任旭阳	rén xù yáng
-任雅相	rén yǎ xiàng
-任言恺	rén yán kǎi
-任燕翔	rén yàn xiáng
-任玉岭	rén yù lǐng
-任宇昕	rén yǔ xīn
-任远征	rén yuǎn zhēng
-任月丽	rén yuè lì
-任志强	rén zhì qiáng
-任卓宣	rén zhuó xuān
-任子威	rén zǐ wēi
-任子行	rén zǐ xíng
+任灿灿	rèn càn càn
+任传文	rèn chuán wén
+任冬梅	rèn dōng méi
+任淦庭	rèn gàn tíng
+任国立	rèn guó lì
+任国民	rèn guó mín
+任国强	rèn guó qiáng
+任国子	rèn guó zǐ
+任海涛	rèn hǎi tāo
+任洪斌	rèn hóng bīn
+任洪国	rèn hóng guó
+任红军	rèn hóng jūn
+任宏伟	rèn hóng wěi
+任建军	rèn jiàn jūn
+任建宇	rèn jiàn yǔ
+任九单	rèn jiǔ dān
+任九实	rèn jiǔ shí
+任骏飞	rèn jùn fēi
+任军号	rèn jūn hào
+任骏威	rèn jùn wēi
+任俊威	rèn jùn wēi
+任柯诺	rèn kē nuò
+任兰生	rèn lán shēng
+任兰舟	rèn lán zhōu
+任乃强	rèn nǎi qiáng
+任仁发	rèn rén fā
+任容萱	rèn róng xuān
+任文君	rèn wén jūn
+任献青	rèn xiàn qīng
+任显群	rèn xiǎn qún
+任晓军	rèn xiǎo jūn
+任晓雯	rèn xiǎo wén
+任晓燕	rèn xiǎo yàn
+任新安	rèn xīn ān
+任兴洲	rèn xīng zhōu
+任旭阳	rèn xù yáng
+任雅相	rèn yǎ xiàng
+任言恺	rèn yán kǎi
+任燕翔	rèn yàn xiáng
+任玉岭	rèn yù lǐng
+任宇昕	rèn yǔ xīn
+任远征	rèn yuǎn zhēng
+任月丽	rèn yuè lì
+任志强	rèn zhì qiáng
+任卓宣	rèn zhuó xuān
+任子威	rèn zǐ wēi
+任子行	rèn zǐ xíng
 山本宽	shān běn kuān
 山本武	shān běn wǔ
 山本直	shān běn zhí
@@ -23782,7 +23802,7 @@ sort: by_weight
 沈力星	shěn lì xīng
 沈联芳	shěn lián fāng
 沈琳宸	shěn lín chén
-沈林子	shěn lín zǐ
+沈林子	shěn lín zi
 沈玲玲	shěn líng líng
 沈凌云	shěn líng yún
 沈龙元	shěn lóng yuán
@@ -24408,7 +24428,7 @@ sort: by_weight
 宋作文	sòng zuò wén
 苏爱群	sū ài qún
 苏艾省	sū ài shěng
-苏巴什	sū bā shén
+苏巴什	sū bā shí
 苏巴提	sū bā tí
 苏柏豪	sū bǎi háo
 苏百钧	sū bǎi jūn
@@ -24472,7 +24492,7 @@ sort: by_weight
 苏高新	sū gāo xīn
 苏高宇	sū gāo yǔ
 苏高中	sū gāo zhōng
-苏格登	sū gē dēng
+苏格登	sū gé dēng
 苏格格	sū gé gé
 苏更生	sū gēng shēng
 苏公祠	sū gōng cí
@@ -24625,7 +24645,7 @@ sort: by_weight
 苏珮仪	sū pèi yí
 苏皮基	sū pí jī
 苏频陀	sū pín tuó
-苏婆婆	sū pó pó
+苏婆婆	sū pó po
 苏仆延	sū pū yán
 苏启诚	sū qǐ chéng
 苏起来	sū qǐ lái
@@ -24879,7 +24899,7 @@ sort: by_weight
 孙博文	sūn bó wén
 孙伯翔	sūn bó xiáng
 孙伯黡	sūn bó yǎn
-孙不二	sūn bù èr
+孙不二	sūn bú èr
 孙彩艳	sūn cǎi yàn
 孙彩瑛	sūn cǎi yīng
 孙策军	sūn cè jūn
@@ -24997,7 +25017,6 @@ sort: by_weight
 孙海燕	sūn hǎi yàn
 孙海洋	sūn hǎi yáng
 孙汉霖	sūn hàn lín
-孙珩超	sūn háng chāo
 孙浩浩	sūn hào hào
 孙皓晖	sūn hào huī
 孙浩俊	sūn hào jùn
@@ -25009,6 +25028,7 @@ sort: by_weight
 孙贺男	sūn hè nán
 孙和平	sūn hé píng
 孙河站	sūn hé zhàn
+孙珩超	sūn héng chāo
 孙宏开	sūn hóng kāi
 孙红丽	sūn hóng lì
 孙鸿烈	sūn hóng liè
@@ -25187,7 +25207,7 @@ sort: by_weight
 孙铭阳	sūn míng yáng
 孙鸣阳	sūn míng yáng
 孙明贞	sūn míng zhēn
-孙墨佛	sūn mò fú
+孙墨佛	sūn mò fó
 孙墨龙	sūn mò lóng
 孙女儿	sūn nǚ ér
 孙鹏飞	sūn péng fēi
@@ -25675,7 +25695,7 @@ sort: by_weight
 陶洛斯	táo luò sī
 陶珞依	táo luò yī
 陶履谦	táo lǚ qiān
-陶马什	táo mǎ shén
+陶马什	táo mǎ shí
 陶嫚曼	táo mān màn
 陶纳特	táo nà tè
 陶努斯	táo nǔ sī
@@ -25754,7 +25774,7 @@ sort: by_weight
 藤真希	téng zhēn xī
 藤真彦	téng zhēn yàn
 藤正臣	téng zhèng chén
-钭江明	tí jiāng míng
+钭江明	tǒu jiāng míng
 王阿婆	wáng ā pó
 王爱爱	wáng ài ài
 王爱忱	wáng ài chén
@@ -26099,11 +26119,11 @@ sort: by_weight
 王大道	wáng dà dào
 王大地	wáng dà dì
 王大凡	wáng dà fán
-王大方	wáng dà fāng
+王大方	wáng dà fang
 王大妃	wáng dà fēi
 王大富	wáng dà fù
 王大海	wáng dà hǎi
-王大珩	wáng dà háng
+王大珩	wáng dà héng
 王大虎	wáng dà hǔ
 王大花	wáng dà huā
 王大华	wáng dà huá
@@ -26785,7 +26805,7 @@ sort: by_weight
 王虎峰	wáng hǔ fēng
 王沪宁	wáng hù níng
 王虎剩	wáng hǔ shèng
-王胡子	wáng hú zǐ
+王胡子	wáng hú zi
 王化成	wáng huà chéng
 王化澄	wáng huà chéng
 王华东	wáng huá dōng
@@ -27340,7 +27360,7 @@ sort: by_weight
 王康明	wáng kāng míng
 王康平	wáng kāng píng
 王康怡	wáng kāng yí
-王可儿	wáng kě ér
+王可儿	wáng kě er
 王克己	wáng kè jǐ
 王克俭	wáng kè jiǎn
 王克捷	wáng kè jié
@@ -27606,7 +27626,7 @@ sort: by_weight
 王茂元	wáng mào yuán
 王茂章	wáng mào zhāng
 王毛仲	wáng máo zhòng
-王毛子	wáng máo zǐ
+王毛子	wáng máo zi
 王美芳	wáng měi fāng
 王美华	wáng měi huá
 王美花	wáng měi huā
@@ -28380,7 +28400,7 @@ sort: by_weight
 王台铺	wáng tái pù
 王台卿	wáng tái qīng
 王泰升	wáng tài shēng
-王太太	wáng tài tài
+王太太	wáng tài tai
 王太伊	wáng tài yī
 王太医	wáng tài yī
 王太元	wáng tài yuán
@@ -28801,7 +28821,7 @@ sort: by_weight
 王小斌	wáng xiǎo bīn
 王小兵	wáng xiǎo bīng
 王晓冰	wáng xiǎo bīng
-王肖兵	wáng xiào bīng
+王肖兵	wáng xiāo bīng
 王晓波	wáng xiǎo bō
 王小丑	wáng xiǎo chǒu
 王晓初	wáng xiǎo chū
@@ -29247,7 +29267,7 @@ sort: by_weight
 王延辉	wáng yán huī
 王砚辉	wáng yàn huī
 王延钧	wáng yán jūn
-王燕军	wáng yàn jūn
+王燕军	wáng yān jūn
 王延军	wáng yán jūn
 王艳丽	wáng yàn lì
 王彦霖	wáng yàn lín
@@ -29277,7 +29297,7 @@ sort: by_weight
 王彦威	wáng yàn wēi
 王雁威	wáng yàn wēi
 王艳薇	wáng yàn wēi
-王燕文	wáng yàn wén
+王燕文	wáng yān wén
 王延武	wáng yán wǔ
 王炎午	wáng yán wǔ
 王延羲	wáng yán xī
@@ -29308,8 +29328,8 @@ sort: by_weight
 王尧山	wáng yáo shān
 王耀新	wáng yào xīn
 王耀祖	wáng yào zǔ
-王爷坟	wáng yé fén
-王爷府	wáng yé fǔ
+王爷坟	wáng ye fén
+王爷府	wáng ye fǔ
 王耶律	wáng yē lǜ
 王冶秋	wáng yě qiū
 王以才	wáng yǐ cái
@@ -29317,7 +29337,7 @@ sort: by_weight
 王一辰	wáng yī chén
 王乙成	wáng yǐ chéng
 王义川	wáng yì chuān
-王一川	wáng yī chuān
+王一川	wáng yì chuān
 王一淳	wáng yī chún
 王易从	wáng yì cóng
 王毅的	wáng yì de
@@ -29364,7 +29384,7 @@ sort: by_weight
 王易木	wáng yì mù
 王一楠	wáng yī nán
 王乙诺	wáng yǐ nuò
-王一诺	wáng yī nuò
+王一诺	wáng yí nuò
 王艺诺	wáng yì nuò
 王一鸥	wáng yī ōu
 王一鹏	wáng yī péng
@@ -29389,12 +29409,12 @@ sort: by_weight
 王艺曈	wáng yì tóng
 王义桅	wáng yì wéi
 王一文	wáng yì wén
-王一新	wáng yī xīn
+王一新	wáng yì xīn
 王贻兴	wáng yí xīng
 王义雄	wáng yì xióng
 王艺璇	wáng yì xuán
 王一样	wáng yí yàng
-王一扬	wáng yī yáng
+王一扬	wáng yì yáng
 王艺颖	wáng yì yǐng
 王贻永	wáng yí yǒng
 王毅斋	wáng yì zhāi
@@ -29569,8 +29589,8 @@ sort: by_weight
 王渝凤	wáng yú fèng
 王玉国	wáng yù guó
 王玉海	wáng yù hǎi
-王昱珩	wáng yù háng
 王宇航	wáng yǔ háng
+王昱珩	wáng yù héng
 王玉红	wáng yù hóng
 王与后	wáng yǔ hòu
 王玉胡	wáng yù hú
@@ -29816,7 +29836,7 @@ sort: by_weight
 王战营	wáng zhàn yíng
 王占元	wáng zhàn yuán
 王站长	wáng zhàn zhǎng
-王杖子	wáng zhàng zǐ
+王杖子	wáng zhàng zi
 王兆国	wáng zhào guó
 王兆海	wáng zhào hǎi
 王兆华	wáng zhào huá
@@ -30348,7 +30368,7 @@ sort: by_weight
 卫翰韬	wèi hàn tāo
 魏浩然	wèi hào rán
 魏鹤龄	wèi hè líng
-魏和尚	wèi hé shàng
+魏和尚	wèi hé shang
 卫赫索	wèi hè suǒ
 魏红兵	wèi hóng bīng
 魏弘简	wèi hóng jiǎn
@@ -30658,6 +30678,7 @@ sort: by_weight
 吴超梅	wú chāo méi
 吴超荣	wú chāo róng
 吴抄手	wú chāo shǒu
+吴朝阳	wú cháo yáng
 吴晨光	wú chén guāng
 吴辰君	wú chén jūn
 吴成德	wú chéng dé
@@ -30718,7 +30739,7 @@ sort: by_weight
 吴大海	wú dà hǎi
 吴大恺	wú dà kǎi
 吴达礼	wú dá lǐ
-吴达澎	wú dá pēng
+吴达澎	wú dá péng
 吴达善	wú dá shàn
 吴大维	wú dà wéi
 吴大伟	wú dà wěi
@@ -30833,10 +30854,10 @@ sort: by_weight
 吴功溥	wú gōng pǔ
 吴钩剑	wú gōu jiàn
 吴官田	wú guān tián
-吴冠希	wú guān xī
-吴冠勋	wú guān xūn
-吴冠英	wú guān yīng
-吴冠宇	wú guān yǔ
+吴冠希	wú guàn xī
+吴冠勋	wú guàn xūn
+吴冠英	wú guàn yīng
+吴冠宇	wú guàn yǔ
 吴官正	wú guān zhèng
 吴光浩	wú guāng hào
 吴光华	wú guāng huá
@@ -31243,7 +31264,7 @@ sort: by_weight
 吴茂昆	wú mào kūn
 吴茂林	wú mào lín
 吴美凤	wú měi fèng
-吴美珩	wú měi háng
+吴美珩	wú měi héng
 吴美姬	wú měi jī
 吴美锦	wú měi jǐn
 吴美玲	wú měi líng
@@ -31421,7 +31442,7 @@ sort: by_weight
 吴三大	wú sān dà
 吴三国	wú sān guó
 吴三连	wú sān lián
-吴三省	wú sān xǐng
+吴三省	wú sān shěng
 吴森林	wú sēn lín
 吴山高	wú shān gāo
 吴山开	wú shān kāi
@@ -32037,7 +32058,6 @@ sort: by_weight
 吴肇铜	wú zhào tóng
 吴钊燮	wú zhāo xiè
 吴肇轩	wú zhào xuān
-吴朝阳	wú zhāo yáng
 吴肇毅	wú zhào yì
 吴哲晗	wú zhé hán
 吴哲源	wú zhé yuán
@@ -32369,7 +32389,7 @@ sort: by_weight
 夏忠庆	xià zhōng qìng
 夏姿陈	xià zī chén
 夏梓桐	xià zǐ tóng
-谢冠森	xiè guàn sēn
+谢冠森	xiè guān sēn
 熊建秋	xióng jiàn qiū
 许爱国	xǔ ài guó
 徐爱华	xú ài huá
@@ -32556,6 +32576,7 @@ sort: by_weight
 许凤仪	xǔ fèng yí
 许凤藻	xǔ fèng zǎo
 徐奉洙	xú fèng zhū
+徐佛苏	xú fó sū
 徐福祠	xú fú cí
 徐复观	xú fù guān
 徐富贵	xú fù guì
@@ -32566,7 +32587,6 @@ sort: by_weight
 徐傅霖	xú fù lín
 徐福墓	xú fú mù
 徐福年	xú fú nián
-徐佛苏	xú fú sū
 许府巷	xǔ fǔ xiàng
 许富翔	xǔ fù xiáng
 徐福祥	xú fú xiáng
@@ -33416,7 +33436,7 @@ sort: by_weight
 许翔宇	xǔ xiáng yǔ
 徐小宝	xú xiǎo bǎo
 徐小斌	xú xiǎo bīn
-徐肖冰	xú xiào bīng
+徐肖冰	xú xiāo bīng
 徐小波	xú xiǎo bō
 徐晓波	xú xiǎo bō
 许晓丹	xǔ xiǎo dān
@@ -33533,7 +33553,7 @@ sort: by_weight
 许燕吉	xǔ yàn jí
 徐堰铃	xú yàn líng
 许艳梅	xǔ yàn méi
-徐燕青	xú yàn qīng
+徐燕青	xú yān qīng
 徐彦若	xú yàn ruò
 徐延寿	xú yán shòu
 许延寿	xǔ yán shòu
@@ -33595,7 +33615,7 @@ sort: by_weight
 许莹英	xǔ yíng yīng
 许应元	xǔ yīng yuán
 徐应元	xú yīng yuán
-徐英子	xú yīng zǐ
+徐英子	xú yīng zi
 徐永昌	xú yǒng chāng
 徐永恩	xú yǒng ēn
 徐永革	xú yǒng gé
@@ -33801,6 +33821,7 @@ sort: by_weight
 徐志远	xú zhì yuǎn
 徐忠波	xú zhōng bō
 许忠富	xǔ zhōng fù
+徐中行	xú zhōng háng
 许钟豪	xǔ zhōng háo
 徐仲辉	xú zhòng huī
 许仲琳	xǔ zhòng lín
@@ -33815,7 +33836,6 @@ sort: by_weight
 徐中舒	xú zhōng shū
 徐仲巳	xú zhòng sì
 徐忠信	xú zhōng xìn
-徐中行	xú zhōng xíng
 徐中雄	xú zhōng xióng
 许仲宣	xǔ zhòng xuān
 徐钟恂	xú zhōng xún
@@ -34023,7 +34043,7 @@ sort: by_weight
 杨宝玉	yáng bǎo yù
 杨宝璋	yáng bǎo zhāng
 杨宝桢	yáng bǎo zhēn
-杨包子	yáng bāo zǐ
+杨包子	yáng bāo zi
 杨保宗	yáng bǎo zōng
 杨贝贝	yáng bèi bèi
 杨北京	yáng běi jīng
@@ -34644,7 +34664,7 @@ sort: by_weight
 杨梅站	yáng méi zhàn
 杨梅中	yáng méi zhōng
 杨梅洲	yáng méi zhōu
-杨梅子	yáng méi zǐ
+杨梅子	yáng méi zi
 杨蒙恩	yáng méng ēn
 杨孟霖	yáng mèng lín
 杨梦露	yáng mèng lù
@@ -34902,7 +34922,7 @@ sort: by_weight
 杨树园	yáng shù yuán
 杨舒越	yáng shū yuè
 杨树云	yáng shù yún
-杨叔子	yáng shū zǐ
+杨叔子	yáng shū zi
 杨水军	yáng shuǐ jūn
 杨思标	yáng sī biāo
 杨嗣昌	yáng sì chāng
@@ -35151,7 +35171,7 @@ sort: by_weight
 杨欣怡	yáng xīn yí
 杨欣颖	yáng xīn yǐng
 杨新宇	yáng xīn yǔ
-杨杏佛	yáng xìng fú
+杨杏佛	yáng xìng fó
 杨兴华	yáng xīng huá
 杨兴林	yáng xīng lín
 杨兴平	yáng xīng píng
@@ -35240,7 +35260,7 @@ sort: by_weight
 杨耀祖	yáng yào zǔ
 杨业功	yáng yè gōng
 杨业明	yáng yè míng
-杨叶澎	yáng yè pēng
+杨叶澎	yáng yè péng
 杨义臣	yáng yì chén
 杨易辰	yáng yì chén
 杨一帆	yáng yī fān
@@ -35260,7 +35280,7 @@ sort: by_weight
 杨沂孙	yáng yí sūn
 杨一威	yáng yī wēi
 杨易溪	yáng yì xī
-杨一展	yáng yī zhǎn
+杨一展	yáng yì zhǎn
 杨义贞	yáng yì zhēn
 杨沂中	yáng yí zhōng
 杨逸洲	yáng yì zhōu
@@ -35654,9 +35674,9 @@ sort: by_weight
 尤萨夫	yóu sà fū
 尤塞恩	yóu sāi ēn
 尤瑟夫	yóu sè fū
-尤什谢	yóu shén xiè
 尤世禄	yóu shì lù
 尤世威	yóu shì wēi
+尤什谢	yóu shí xiè
 尤丝丁	yóu sī dīng
 尤斯顿	yóu sī dùn
 尤斯科	yóu sī kē
@@ -35682,7 +35702,7 @@ sort: by_weight
 尤西斯	yóu xī sī
 尤溪洲	yóu xī zhōu
 尤晓迪	yóu xiǎo dí
-尤肖虎	yóu xiào hǔ
+尤肖虎	yóu xiāo hǔ
 尤嬿妮	yóu yàn nī
 尤扬祖	yóu yáng zǔ
 尤勇智	yóu yǒng zhì
@@ -35747,26 +35767,6 @@ sort: by_weight
 岳钟琪	yuè zhōng qí
 岳锺琪	yuè zhōng qí
 岳州窑	yuè zhōu yáo
-曾立岩	zēng lì yán
-曾立志	zēng lì zhì
-曾奇峰	zēng qí fēng
-曾启荣	zēng qǐ róng
-曾乾曜	zēng qián yào
-曾庆荣	zēng qìng róng
-曾庆乙	zēng qìng yǐ
-曾绍山	zēng shào shān
-曾少宗	zēng shǎo zōng
-曾石甫	zēng shí fǔ
-曾石塘	zēng shí táng
-曾石虞	zēng shí yú
-曾万钟	zēng wàn zhōng
-曾熙丙	zēng xī bǐng
-曽汐莉	zēng xī lì
-曾晞颜	zēng xī yán
-曾泽生	zēng zé shēng
-曾昭科	zēng zhāo kē
-曾昭抡	zēng zhāo lūn
-曾振甲	zēng zhèn jiǎ
 张阿婆	zhāng ā pó
 张阿三	zhāng ā sān
 张阿生	zhāng ā shēng
@@ -35833,7 +35833,7 @@ sort: by_weight
 张宝宝	zhāng bǎo bao
 张宝成	zhāng bǎo chéng
 张宝春	zhāng bǎo chūn
-张宝儿	zhāng bǎo ér
+张宝儿	zhāng bǎo er
 张保皋	zhāng bǎo gāo
 张宝贵	zhāng bǎo guì
 张保国	zhāng bǎo guó
@@ -36044,6 +36044,7 @@ sort: by_weight
 张崇邦	zhāng chóng bāng
 张崇和	zhāng chóng hé
 张充和	zhāng chōng hé
+张重华	zhāng chóng huá
 张崇基	zhāng chóng jī
 张充满	zhāng chōng mǎn
 张重庆	zhāng chóng qìng
@@ -36378,6 +36379,7 @@ sort: by_weight
 张凤仪	zhāng fèng yí
 张凤英	zhāng fèng yīng
 张风子	zhāng fēng zǐ
+张佛泉	zhāng fó quán
 张福成	zhāng fú chéng
 张富贵	zhāng fù guì
 张福海	zhāng fú hǎi
@@ -36399,7 +36401,6 @@ sort: by_weight
 张福起	zhāng fú qǐ
 张富强	zhāng fù qiáng
 张富清	zhāng fù qīng
-张佛泉	zhāng fú quán
 张福权	zhāng fú quán
 张富荣	zhāng fù róng
 张芙蓉	zhāng fú róng
@@ -36832,7 +36833,7 @@ sort: by_weight
 张厚琬	zhāng hòu wǎn
 张虎臣	zhāng hǔ chén
 张虎成	zhāng hǔ chéng
-张胡子	zhāng hú zǐ
+张胡子	zhāng hú zi
 张华浜	zhāng huá bāng
 张华标	zhāng huá biāo
 张化东	zhāng huà dōng
@@ -37638,7 +37639,7 @@ sort: by_weight
 张令仪	zhāng lìng yí
 张灵玉	zhāng líng yù
 张凌云	zhāng líng yún
-张玲子	zhāng líng zǐ
+张玲子	zhāng líng zi
 张刘陈	zhāng liú chén
 张留孙	zhāng liú sūn
 张刘涛	zhāng liú tāo
@@ -37660,7 +37661,7 @@ sort: by_weight
 张鲁一	zhāng lǔ yī
 张鲁张	zhāng lǔ zhāng
 张伦硕	zhāng lún shuò
-张罗的	zhāng luó de
+张罗的	zhāng luo de
 张洛君	zhāng luò jūn
 张洛行	zhāng luò xíng
 张洛源	zhāng luò yuán
@@ -38041,13 +38042,13 @@ sort: by_weight
 张秋霞	zhāng qiū xiá
 张秋月	zhāng qiū yuè
 张秋云	zhāng qiū yún
-张曲次	zhāng qū cì
-张曲分	zhāng qū fēn
-张曲期	zhāng qū qī
-张曲取	zhāng qū qǔ
-张曲时	zhāng qū shí
-张曲真	zhāng qū zhēn
-张曲作	zhāng qū zuò
+张曲次	zhāng qǔ cì
+张曲分	zhāng qǔ fēn
+张曲期	zhāng qǔ qī
+张曲取	zhāng qǔ qǔ
+张曲时	zhāng qǔ shí
+张曲真	zhāng qǔ zhēn
+张曲作	zhāng qǔ zuò
 张全成	zhāng quán chéng
 张全蛋	zhāng quán dàn
 张全海	zhāng quán hǎi
@@ -38260,9 +38261,9 @@ sort: by_weight
 张士贵	zhāng shì guì
 张世国	zhāng shì guó
 张诗涵	zhāng shī hán
-张士珩	zhāng shì háng
 张世豪	zhāng shì háo
 张士豪	zhāng shì háo
+张士珩	zhāng shì héng
 张士衡	zhāng shì héng
 张世简	zhāng shì jiǎn
 张世界	zhāng shì jiè
@@ -38506,7 +38507,7 @@ sort: by_weight
 张太平	zhāng tài píng
 张泰山	zhāng tài shān
 张泰苏	zhāng tài sū
-张太太	zhāng tài tài
+张太太	zhāng tài tai
 张太维	zhāng tài wéi
 张泰岩	zhāng tài yán
 张台子	zhāng tái zi
@@ -38666,7 +38667,7 @@ sort: by_weight
 张伟林	zhāng wěi lín
 张维伦	zhāng wéi lún
 张伟民	zhāng wěi mín
-张为民	zhāng wéi mín
+张为民	zhāng wèi mín
 张卫民	zhāng wèi mín
 张维民	zhāng wéi mín
 张伟明	zhāng wěi míng
@@ -38938,7 +38939,7 @@ sort: by_weight
 张祥安	zhāng xiáng ān
 张向晨	zhāng xiàng chén
 张向东	zhāng xiàng dōng
-张相公	zhāng xiàng gōng
+张相公	zhāng xiàng gong
 张祥河	zhāng xiáng hé
 张向红	zhāng xiàng hóng
 张向华	zhāng xiàng huá
@@ -39452,7 +39453,7 @@ sort: by_weight
 张艳飞	zhāng yàn fēi
 张燕芬	zhāng yàn fēn
 张彦峰	zhāng yàn fēng
-张严佛	zhāng yán fú
+张严佛	zhāng yán fó
 张彦刚	zhāng yàn gāng
 张延翰	zhāng yán hàn
 张艳红	zhāng yàn hóng
@@ -39464,7 +39465,7 @@ sort: by_weight
 张延军	zhāng yán jūn
 张彦君	zhāng yàn jūn
 张艳军	zhāng yàn jūn
-张燕军	zhāng yàn jūn
+张燕军	zhāng yān jūn
 张延昆	zhāng yán kūn
 张延来	zhāng yán lái
 张延朗	zhāng yán lǎng
@@ -39555,18 +39556,18 @@ sort: by_weight
 张耀宗	zhāng yào zōng
 张耀祖	zhāng yào zǔ
 张尧佐	zhāng yáo zuǒ
-张掖的	zhāng yē de
+张掖的	zhāng yè de
 张业法	zhāng yè fǎ
 张叶飞	zhāng yè fēi
-张掖郡	zhāng yē jùn
+张掖郡	zhāng yè jùn
 张爷庙	zhāng yé miào
 张业遂	zhāng yè suì
-张掖站	zhāng yē zhàn
+张掖站	zhāng yè zhàn
 张晔子	zhāng yè zǐ
 张一白	zhāng yì bái
 张义堡	zhāng yì bǎo
-张一兵	zhāng yī bīng
-张一博	zhāng yī bó
+张一兵	zhāng yì bīng
+张一博	zhāng yì bó
 张轶婵	zhāng yì chán
 张议潮	zhāng yì cháo
 张义超	zhāng yì chāo
@@ -39610,7 +39611,7 @@ sort: by_weight
 张义明	zhāng yì míng
 张译木	zhāng yì mù
 张艺娜	zhāng yì nà
-张一诺	zhāng yī nuò
+张一诺	zhāng yí nuò
 张一鹏	zhāng yī péng
 张翼鹏	zhāng yì péng
 张一平	zhāng yī píng
@@ -40188,7 +40189,7 @@ sort: by_weight
 张志海	zhāng zhì hǎi
 张智涵	zhāng zhì hán
 张志韩	zhāng zhì hán
-张支行	zhāng zhǐ háng
+张支行	zhāng zhī háng
 张志豪	zhāng zhì háo
 张志浩	zhāng zhì hào
 张志和	zhāng zhì hé
@@ -40307,8 +40308,8 @@ sort: by_weight
 张中国	zhāng zhōng guó
 张中海	zhāng zhōng hǎi
 张仲瀚	zhāng zhòng hàn
+张中行	zhāng zhōng háng
 张中和	zhāng zhōng hé
-张重华	zhāng zhòng huá
 张中华	zhāng zhōng huá
 张忠华	zhāng zhōng huá
 张仲举	zhāng zhòng jǔ
@@ -40341,7 +40342,6 @@ sort: by_weight
 张仲武	zhāng zhòng wǔ
 张忠信	zhāng zhōng xìn
 张仲炘	zhāng zhòng xīn
-张中行	zhāng zhōng xíng
 张仲宣	zhāng zhòng xuān
 张忠义	zhāng zhōng yì
 张仲宇	zhāng zhòng yǔ
@@ -40844,7 +40844,7 @@ sort: by_weight
 赵宝珠	zhào bǎo zhū	3
 赵保柱	zhào bǎo zhù	2
 赵宝柱	zhào bǎo zhù	1
-赵包子	zhào bāo zǐ
+赵包子	zhào bāo zi
 赵贝贝	zhào bèi bèi	13
 赵蓓蓓	zhào bèi bèi	8
 赵北昌	zhào běi chāng	1
@@ -42686,7 +42686,7 @@ sort: by_weight
 赵德祥	zhào dé xiáng	12
 赵德香	zhào dé xiāng	3
 赵得翔	zhào dé xiáng	1
-赵德肖	zhào dé xiào	1
+赵德肖	zhào dé xiāo	1
 赵德鑫	zhào dé xīn	2
 赵德新	zhào dé xīn	1
 赵德馨	zhào dé xīn
@@ -45693,7 +45693,7 @@ sort: by_weight
 赵慧贤	zhào huì xián
 赵惠祥	zhào huì xiáng	1
 赵卉香	zhào huì xiāng	1
-赵会肖	zhào huì xiào	2
+赵会肖	zhào huì xiāo	2
 赵会信	zhào huì xìn	2
 赵惠欣	zhào huì xīn	1
 赵慧新	zhào huì xīn	1
@@ -48792,9 +48792,9 @@ sort: by_weight
 赵玲侠	zhào líng xiá	9
 赵凌翔	zhào líng xiáng	1
 赵凌骁	zhào líng xiāo	3
-赵灵肖	zhào líng xiào	1
+赵灵肖	zhào líng xiāo	1
 赵凌霄	zhào líng xiāo	1
-赵玲肖	zhào líng xiào	1
+赵玲肖	zhào líng xiāo	1
 赵凌萱	zhào líng xuān	2
 赵玲萱	zhào líng xuān	1
 赵凌璇	zhào líng xuán	1
@@ -49897,7 +49897,7 @@ sort: by_weight
 赵平英	zhào píng yīng	1
 赵平原	zhào píng yuán	5
 赵破奴	zhào pò nú	1
-赵婆婆	zhào pó pó
+赵婆婆	zhào pó po
 赵泊阳	zhào pō yáng	1
 赵泊羽	zhào pō yǔ	1
 赵泊远	zhào pō yuǎn	1
@@ -50423,7 +50423,7 @@ sort: by_weight
 赵清贤	zhào qīng xián	1
 赵庆祥	zhào qìng xiáng	2
 赵庆香	zhào qìng xiāng
-赵庆肖	zhào qìng xiào	1
+赵庆肖	zhào qìng xiāo	1
 赵庆鑫	zhào qìng xīn	4
 赵庆新	zhào qìng xīn	2
 赵庆兴	zhào qìng xīng	2
@@ -52832,7 +52832,7 @@ sort: by_weight
 赵天与	zhào tiān yǔ	1
 赵添堉	zhào tiān yù	1
 赵添玉	zhào tiān yù	1
-赵天雨	zhào tiān yù	1
+赵天雨	zhào tiān yǔ	1
 赵天玉	zhào tiān yù	1
 赵田园	zhào tián yuán	1
 赵天悦	zhào tiān yuè	3
@@ -54346,7 +54346,7 @@ sort: by_weight
 赵小登	zhào xiǎo dēng	1
 赵小弟	zhào xiǎo dì	2
 赵晓迪	zhào xiǎo dí	1
-赵肖迪	zhào xiào dí	1
+赵肖迪	zhào xiāo dí	1
 赵晓笛	zhào xiǎo dí	1
 赵小丁	zhào xiǎo dīng
 赵晓东	zhào xiǎo dōng	20
@@ -54357,7 +54357,7 @@ sort: by_weight
 赵小尔	zhào xiǎo ěr	1
 赵小二	zhào xiǎo èr	1
 赵晓凡	zhào xiǎo fán	1
-赵肖帆	zhào xiào fān	1
+赵肖帆	zhào xiāo fān	1
 赵晓芳	zhào xiǎo fāng	16
 赵小方	zhào xiǎo fāng	4
 赵小芳	zhào xiǎo fāng	4
@@ -54371,7 +54371,7 @@ sort: by_weight
 赵晓锋	zhào xiǎo fēng	12
 赵晓凤	zhào xiǎo fèng	10
 赵晓峰	zhào xiǎo fēng	6
-赵肖峰	zhào xiào fēng	4
+赵肖峰	zhào xiāo fēng	4
 赵小锋	zhào xiǎo fēng	2
 赵晓风	zhào xiǎo fēng	1
 赵小凤	zhào xiǎo fèng	1
@@ -54413,7 +54413,7 @@ sort: by_weight
 赵小华	zhào xiǎo huá	14
 赵晓华	zhào xiǎo huá	9
 赵小花	zhào xiǎo huā	2
-赵肖华	zhào xiào huá	1
+赵肖华	zhào xiāo huá	1
 赵小环	zhào xiǎo huán	1
 赵小慧	zhào xiǎo huì	9
 赵晓慧	zhào xiǎo huì	6
@@ -54424,7 +54424,7 @@ sort: by_weight
 赵小辉	zhào xiǎo huī	2
 赵小惠	zhào xiǎo huì	1
 赵晓晖	zhào xiǎo huī	1
-赵肖辉	zhào xiào huī	1
+赵肖辉	zhào xiāo huī	1
 赵晓卉	zhào xiǎo huì
 赵晓佳	zhào xiǎo jiā	5
 赵小将	zhào xiǎo jiàng	1
@@ -54435,13 +54435,13 @@ sort: by_weight
 赵小洁	zhào xiǎo jié	4
 赵小杰	zhào xiǎo jié	3
 赵小姐	zhào xiǎo jiě	1
-赵肖杰	zhào xiào jié	1
+赵肖杰	zhào xiāo jié	1
 赵晓今	zhào xiǎo jīn	9
 赵小金	zhào xiǎo jīn	3
 赵小静	zhào xiǎo jìng	15
 赵晓静	zhào xiǎo jìng	7
 赵小京	zhào xiǎo jīng	2
-赵肖静	zhào xiào jìng	2
+赵肖静	zhào xiāo jìng	2
 赵晓晶	zhào xiǎo jīng	1
 赵小敬	zhào xiǎo jìng	1
 赵小鸠	zhào xiǎo jiū
@@ -54470,7 +54470,7 @@ sort: by_weight
 赵小乐	zhào xiǎo lè	1
 赵晓磊	zhào xiǎo lěi	6
 赵晓雷	zhào xiǎo léi	2
-赵肖磊	zhào xiào lěi	1
+赵肖磊	zhào xiāo lěi	1
 赵小磊	zhào xiǎo lěi	1
 赵晓丽	zhào xiǎo lì	14
 赵小丽	zhào xiǎo lì	5
@@ -54479,7 +54479,7 @@ sort: by_weight
 赵晓立	zhào xiǎo lì	2
 赵小莉	zhào xiǎo lì	2
 赵晓莉	zhào xiǎo lì	1
-赵肖丽	zhào xiào lì	1
+赵肖丽	zhào xiāo lì	1
 赵晓莲	zhào xiǎo lián	4
 赵晓连	zhào xiǎo lián	1
 赵孝廉	zhào xiào lián	1
@@ -54532,7 +54532,7 @@ sort: by_weight
 赵晓沫	zhào xiǎo mò	2
 赵晓娜	zhào xiǎo nà	14
 赵小娜	zhào xiǎo nà	4
-赵肖娜	zhào xiào nà	1
+赵肖娜	zhào xiāo nà	1
 赵晓楠	zhào xiǎo nán	3
 赵晓南	zhào xiǎo nán	2
 赵小妮	zhào xiǎo nī	2
@@ -54717,7 +54717,7 @@ sort: by_weight
 赵啸宇	zhào xiào yǔ	1
 赵晓钰	zhào xiǎo yù	1
 赵笑宇	zhào xiào yǔ	1
-赵肖宇	zhào xiào yǔ	1
+赵肖宇	zhào xiāo yǔ	1
 赵潇雨	zhào xiāo yǔ	1
 赵小媛	zhào xiǎo yuàn	2
 赵小源	zhào xiǎo yuán	1
@@ -57164,7 +57164,7 @@ sort: by_weight
 赵英州	zhào yīng zhōu	1
 赵迎子	zhào yíng zǐ	4
 赵英姿	zhào yīng zī	1
-赵樱子	zhào yīng zǐ
+赵樱子	zhào yīng zi
 赵唷宏	zhào yō hóng	1
 赵永安	zhào yǒng ān	7
 赵雍白	zhào yōng bái	1
@@ -59014,7 +59014,7 @@ sort: by_weight
 赵增洲	zhào zēng zhōu	1
 赵增柱	zhào zēng zhù	2
 赵札玉	zhào zhá yù	1
-赵寨子	zhào zhài zǐ
+赵寨子	zhào zhài zi
 赵占鳌	zhào zhàn áo	1
 赵战标	zhào zhàn biāo	2
 赵占彬	zhào zhàn bīn	1
@@ -59544,7 +59544,6 @@ sort: by_weight
 赵志杭	zhào zhì háng	1
 赵志航	zhào zhì háng	1
 赵之航	zhào zhī háng	1
-赵之珩	zhào zhī háng
 赵志号	zhào zhì hào	9
 赵志浩	zhào zhì hào	9
 赵志豪	zhào zhì háo	6
@@ -59555,6 +59554,7 @@ sort: by_weight
 赵智贺	zhào zhì hè	1
 赵志恒	zhào zhì héng	3
 赵知恒	zhào zhī héng	1
+赵之珩	zhào zhī héng
 赵志红	zhào zhì hóng	6
 赵志宏	zhào zhì hóng	1
 赵志泓	zhào zhì hóng	1
@@ -59729,7 +59729,7 @@ sort: by_weight
 赵致祥	zhào zhì xiáng	1
 赵志霄	zhào zhì xiāo	7
 赵志虓	zhào zhì xiāo	2
-赵志肖	zhào zhì xiào	1
+赵志肖	zhào zhì xiāo	1
 赵志新	zhào zhì xīn	6
 赵执信	zhào zhí xìn	5
 赵治信	zhào zhì xìn	2
@@ -60859,7 +60859,6 @@ sort: by_weight
 郑景军	zhèng jǐng jūn
 郑景康	zhèng jǐng kāng
 郑景雯	zhèng jǐng wén
-郑靓歆	zhèng jìng xīn
 郑景银	zhèng jǐng yín
 郑居中	zhèng jū zhōng
 郑娟娟	zhèng juān juān
@@ -60923,6 +60922,7 @@ sort: by_weight
 郑联科	zhèng lián kē
 郑连生	zhèng lián shēng
 郑良士	zhèng liáng shì
+郑靓歆	zhèng liàng xīn
 郑林楷	zhèng lín kǎi
 郑麟趾	zhèng lín zhǐ
 郑灵公	zhèng líng gōng
@@ -61102,7 +61102,7 @@ sort: by_weight
 郑思琪	zhèng sī qí
 郑斯仁	zhèng sī rén
 郑思维	zhèng sī wéi
-郑思肖	zhèng sī xiào
+郑思肖	zhèng sī xiāo
 郑思远	zhèng sī yuǎn
 郑松泰	zhèng sōng tài
 郑松岩	zhèng sōng yán
@@ -61434,7 +61434,7 @@ sort: by_weight
 郑州到	zhèng zhōu dào
 郑州道	zhèng zhōu dào
 郑州店	zhèng zhōu diàn
-郑州都	zhèng zhōu dōu
+郑州都	zhèng zhōu dū
 郑州段	zhèng zhōu duàn
 郑州分	zhèng zhōu fēn
 郑州还	zhèng zhōu hái
@@ -61517,7 +61517,7 @@ sort: by_weight
 周柏年	zhōu bǎi nián
 周柏雅	zhōu bǎi yǎ
 周榜名	zhōu bǎng míng
-周榜曲	zhōu bǎng qū
+周榜曲	zhōu bǎng qǔ
 周榜位	zhōu bǎng wèi
 周宝安	zhōu bǎo ān
 周报表	zhōu bào biǎo
@@ -62404,7 +62404,7 @@ sort: by_weight
 周秀芳	zhōu xiù fāng
 周休馆	zhōu xiū guǎn
 周秀兰	zhōu xiù lán
-周休息	zhōu xiū xī
+周休息	zhōu xiū xi
 周秀英	zhōu xiù yīng
 周秀云	zhōu xiù yún
 周旭东	zhōu xù dōng
@@ -62754,6 +62754,7 @@ sort: by_weight
 朱昌颐	zhū chāng yí
 朱昌祚	zhū chāng zuò
 朱超石	zhū chāo shí
+朱朝阳	zhū cháo yáng
 朱辰杰	zhū chén jié
 朱谌之	zhū chén zhī
 朱诚澯	zhū chéng càn
@@ -63388,7 +63389,7 @@ sort: by_weight
 朱奕龙	zhū yì lóng
 朱翊銮	zhū yì luán
 朱翊铭	zhū yì míng
-朱一诺	zhū yī nuò
+朱一诺	zhū yí nuò
 朱毅先	zhū yì xiān
 朱怡欣	zhū yí xīn
 朱亿宗	zhū yì zōng
@@ -63474,7 +63475,6 @@ sort: by_weight
 朱章赓	zhū zhāng gēng
 朱兆基	zhū zhào jī
 朱兆雪	zhū zhào xuě
-朱朝阳	zhū zhāo yáng
 朱哲伟	zhū zhé wěi
 朱振庚	zhū zhèn gēng
 朱震亨	zhū zhèn hēng
@@ -63584,7 +63584,7 @@ sort: by_weight
 安田未央	ān tián wèi yāng
 安田显元	ān tián xiǎn yuán
 岸田香织	àn tián xiāng zhī
-安田祥子	ān tián xiáng zǐ
+安田祥子	ān tián xiáng zi
 安田早希	ān tián zǎo xī
 安田章大	ān tián zhāng dà
 安武方清	ān wǔ fāng qīng
@@ -63687,7 +63687,7 @@ sort: by_weight
 长井卫安	cháng jǐng wèi ān
 长井雪枝	cháng jǐng xuě zhī
 长井真琴	cháng jǐng zhēn qín
-成田长泰	chéng tián chāng tài
+成田长泰	chéng tián cháng tài
 成田长忠	chéng tián cháng zhōng
 成田东旭	chéng tián dōng xù
 成田觉子	chéng tián jué zǐ
@@ -63844,6 +63844,7 @@ sort: by_weight
 冈泽塞恩	gāng zé sāi ēn
 冈真里子	gāng zhēn lǐ zi
 冈真佐子	gāng zhēn zuǒ zǐ
+高山重友	gāo shān chóng yǒu
 高善继墓	gāo shàn jì mù
 高杉晋助	gāo shān jìn zhù
 高杉晋作	gāo shān jìn zuò
@@ -63860,7 +63861,6 @@ sort: by_weight
 高杉真吾	gāo shān zhēn wú
 高山真藓	gāo shān zhēn xiǎn
 高杉真宙	gāo shān zhēn zhòu
-高山重友	gāo shān zhòng yǒu
 高野八诚	gāo yě bā chéng	7
 高野健一	gāo yě jiàn yī	1
 高野康弘	gāo yě kāng hóng	11
@@ -63970,7 +63970,7 @@ sort: by_weight
 加藤雅美	jiā téng yǎ měi
 加藤雅也	jiā téng yǎ yě
 加藤燕卿	jiā téng yàn qīng
-加藤一郎	jiā téng yì láng
+加藤一郎	jiā téng yī láng
 加藤乙女	jiā téng yǐ nǚ
 加藤一彦	jiā téng yī yàn
 加藤优里	jiā téng yōu lǐ
@@ -64024,23 +64024,23 @@ sort: by_weight
 铃木达央	líng mù dá yāng
 铃木大拙	líng mù dà zhuō
 铃木冬青	líng mù dōng qīng
-铃木敦子	líng mù dūn zi
-铃木富子	líng mù fù zi
+铃木敦子	líng mù dūn zǐ
+铃木富子	líng mù fù zǐ
 铃木恭辅	líng mù gōng fǔ
 铃木恭介	líng mù gōng jiè
 铃木光司	líng mù guāng sī
 铃木贵宏	líng mù guì hóng
-铃木圭子	líng mù guī zi
+铃木圭子	líng mù guī zǐ
 铃木浩介	líng mù hào jiè
 铃木豪爵	líng mù háo jué
-铃木弘子	líng mù hóng zi
+铃木弘子	líng mù hóng zǐ
 铃木虎雄	líng mù hǔ xióng
 铃木绘理	líng mù huì lǐ
 铃木绘美	líng mù huì měi
 铃木纪夫	líng mù jì fū
-铃木纪子	líng mù jì zi
+铃木纪子	líng mù jì zǐ
 铃木京香	líng mù jīng xiāng
-铃木晶子	líng mù jīng zi
+铃木晶子	líng mù jīng zǐ
 铃木俊隆	líng mù jùn lóng
 铃木考太	líng mù kǎo tài
 铃木扩树	líng mù kuò shù
@@ -64050,7 +64050,7 @@ sort: by_weight
 铃木里美	líng mù lǐ měi
 铃木里香	líng mù lǐ xiāng
 铃木梨央	líng mù lí yāng
-铃木丽子	líng mù lì zi
+铃木丽子	líng mù lì zǐ
 铃木亮平	líng mù liàng píng
 铃木良武	líng mù liáng wǔ
 铃木羚羊	líng mù líng yáng
@@ -64061,12 +64061,12 @@ sort: by_weight
 铃木美帆	líng mù měi fān
 铃木美惠	líng mù měi huì
 铃木美生	líng mù měi shēng
-铃木美子	líng mù měi zi
+铃木美子	líng mù měi zǐ
 铃木米香	líng mù mǐ xiāng
 铃木敏文	líng mù mǐn wén
-铃木明子	líng mù míng zi
+铃木明子	líng mù míng zǐ
 铃木茉美	líng mù mò měi
-铃木朋子	líng mù péng zi
+铃木朋子	líng mù péng zǐ
 铃木启太	líng mù qǐ tài
 铃木启悦	líng mù qǐ yuè
 铃木千晶	líng mù qiān jīng
@@ -64090,17 +64090,17 @@ sort: by_weight
 铃木雄介	líng mù xióng jiè
 铃木秀男	líng mù xiù nán
 铃木秀香	líng mù xiù xiāng
-铃木绚子	líng mù xuàn zi
+铃木绚子	líng mù xuàn zǐ
 铃木亚纪	líng mù yà jì
 铃木亚弥	líng mù yà mí
 铃木雅之	líng mù yǎ zhī
-铃木阳子	líng mù yáng zi
+铃木阳子	líng mù yáng zǐ
 铃木一彻	líng mù yī chè
 铃木一郎	líng mù yī láng
 铃木一朗	líng mù yī lǎng
 铃木依美	líng mù yī měi
 铃木义尾	líng mù yì wěi
-铃木一真	líng mù yī zhēn
+铃木一真	líng mù yì zhēn
 铃木佑梨	líng mù yòu lí
 铃木悠里	líng mù yōu lǐ
 铃木由美	líng mù yóu měi
@@ -64117,7 +64117,7 @@ sort: by_weight
 铃木贞一	líng mù zhēn yī
 铃木正三	líng mù zhèng sān
 铃木智晴	líng mù zhì qíng
-铃木智子	líng mù zhì zi
+铃木智子	líng mù zhì zǐ
 铃木重朝	líng mù zhòng cháo
 铃木重康	líng mù zhòng kāng
 铃木重秀	líng mù zhòng xiù
@@ -64318,7 +64318,7 @@ sort: by_weight
 浅野长重	qiǎn yě cháng zhòng
 千叶彻弥	qiān yè chè mí
 浅野典子	qiǎn yě diǎn zǐ
-千叶豆腐	qiān yè dòu fǔ
+千叶豆腐	qiān yè dòu fu
 前野光保	qián yě guāng bǎo
 浅野和之	qiǎn yě hé zhī
 浅野克己	qiǎn yě kè jǐ
@@ -64342,7 +64342,7 @@ sort: by_weight
 千叶眼镜	qiān yè yǎn jìng
 千叶药包	qiān yè yào bāo
 浅野要二	qiǎn yě yào èr
-千叶一伸	qiān yè yī shēn
+千叶一伸	qiān yè yì shēn
 浅野优子	qiǎn yě yōu zǐ
 浅野裕子	qiǎn yě yù zǐ
 前野悦辉	qián yě yuè huī
@@ -64512,8 +64512,8 @@ sort: by_weight
 山本耀司	shān běn yào sī
 山本一夫	shān běn yì fū
 杉本一夫	shān běn yì fū
-山本一郎	shān běn yì láng
-山本一木	shān běn yī mù
+山本一郎	shān běn yī láng
+山本一木	shān běn yí mù
 山本一庆	shān běn yī qìng
 衫本依伊	shān běn yī yī
 山本英夫	shān běn yīng fū
@@ -64755,7 +64755,7 @@ sort: by_weight
 藤堂高次	téng táng gāo cì
 藤堂高虎	téng táng gāo hǔ
 藤堂高英	téng táng gāo yīng
-藤堂麻子	téng táng má zǐ
+藤堂麻子	téng táng má zi
 藤堂美沙	téng táng měi shā
 藤堂平助	téng táng píng zhù
 藤堂夏央	téng táng xià yāng
@@ -64832,7 +64832,7 @@ sort: by_weight
 藤原师实	téng yuán shī shí
 藤原师通	téng yuán shī tōng
 藤原氏宗	téng yuán shì zōng
-藤原塔子	téng yuán tǎ zǐ
+藤原塔子	téng yuán tǎ zi
 藤原泰浩	téng yuán tài hào
 藤原文太	téng yuán wén tài
 藤原温子	téng yuán wēn zǐ
@@ -64902,11 +64902,11 @@ sort: by_weight
 田口智朗	tián kǒu zhì lǎng	28
 田茂木野	tián mào mù yě
 田仁志慧	tián rén zhì huì	16
+田山重忠	tián shān chóng zhōng
+畠山重忠	tián shān chóng zhōng
 田山淳朗	tián shān chún lǎng	6
 畠山政长	tián shān zhèng cháng
 畠山政国	tián shān zhèng guó
-田山重忠	tián shān zhòng zhōng
-畠山重忠	tián shān zhòng zhōng
 田神景世	tián shén jǐng shì	4
 田中爱里	tián zhōng ài lǐ
 田中爱美	tián zhōng ài měi
@@ -65120,7 +65120,7 @@ sort: by_weight
 优木加奈	yōu mù jiā nài
 有泽孝纪	yǒu zé xiào jì	7
 玉田圭司	yù tián guī sī	27
-远藤璃菜	yuǎn téng lǐ cài
+远藤璃菜	yuǎn téng lí cài
 原田彩枫	yuán tián cǎi fēng
 原田春菜	yuán tián chūn cài
 原田德子	yuán tián dé zǐ
@@ -65412,7 +65412,7 @@ sort: by_weight
 佐藤隆文	zuǒ téng lóng wén
 佐藤隆彦	zuǒ téng lóng yàn
 佐藤麻衣	zuǒ téng má yī
-佐藤麻子	zuǒ téng má zǐ
+佐藤麻子	zuǒ téng má zi
 佐藤美保	zuǒ téng měi bǎo
 佐藤美菜	zuǒ téng měi cài
 佐藤美贵	zuǒ téng měi guì
@@ -65590,16 +65590,6 @@ sort: by_weight
 本因坊知策	běn yīn fāng zhī cè
 本因坊智策	běn yīn fāng zhì cè
 本因坊治勋	běn yīn fāng zhì xūn
-朝比奈京子	cháo bǐ nài jīng zǐ
-朝比奈琉依	cháo bǐ nài liú yī
-朝比奈瑠依	cháo bǐ nài liú yī
-朝比奈瑠衣	cháo bǐ nài liú yī
-朝比奈沙罗	cháo bǐ nài shā luó
-朝比奈泰朝	cháo bǐ nài tài cháo
-朝比奈泰能	cháo bǐ nài tài néng
-朝比奈泰彦	cháo bǐ nài tài yàn
-朝比奈信置	cháo bǐ nài xìn zhì
-朝比奈优弥	cháo bǐ nài yōu mí
 渡边菜生子	dù biān cài shēng zǐ	1
 渡边锭太郎	dù biān dìng tài láng	1
 渡边久美子	dù biān jiǔ měi zǐ	1
@@ -65607,11 +65597,21 @@ sort: by_weight
 渡边美优纪	dù biān měi yōu jì	1
 渡边美智雄	dù biān měi zhì xióng	1
 渡边奈绪子	dù biān nài xù zǐ	1
-渡边信一郎	dù biān xìn yì láng	1
+渡边信一郎	dù biān xìn yī láng	1
 木下和津实	mù xià hé jīn shí
 木下杢太郎	mù xià jiang tài láng
 木下藤吉郎	mù xià téng jí láng
 木下亚由美	mù xià yà yóu měi
 木下优树菜	mù xià yōu shù cài
-朝比奈实玖留	cháo bǐ nài shí jiǔ liú
-朝比奈实玖瑠	cháo bǐ nài shí jiǔ liú
+朝比奈京子	zhāo bǐ nài jīng zǐ
+朝比奈琉依	zhāo bǐ nài liú yī
+朝比奈瑠依	zhāo bǐ nài liú yī
+朝比奈瑠衣	zhāo bǐ nài liú yī
+朝比奈沙罗	zhāo bǐ nài shā luó
+朝比奈泰朝	zhāo bǐ nài tài cháo
+朝比奈泰能	zhāo bǐ nài tài néng
+朝比奈泰彦	zhāo bǐ nài tài yàn
+朝比奈信置	zhāo bǐ nài xìn zhì
+朝比奈优弥	zhāo bǐ nài yōu mí
+朝比奈实玖留	zhāo bǐ nài shí jiǔ liú
+朝比奈实玖瑠	zhāo bǐ nài shí jiǔ liú
