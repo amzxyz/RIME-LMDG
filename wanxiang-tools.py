@@ -55,7 +55,7 @@ from PySide6.QtWidgets import (
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v2.8.1"
+TOOL_VERSION = "v2.8.2"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -68,7 +68,7 @@ DEFAULT_WL_REGEX = [
     r".*userdb$", 
     r".*userdb\.txt", 
     r"sequence.*txt", 
-    r".*\.custom\.yaml$", 
+    r"^(?!custom/).*\.custom\.yaml$", 
     r"^user\.yaml$", 
     r"^installation\.yaml$", 
     r"^sync/.*"
@@ -910,11 +910,14 @@ class UpdateWorker(QThread):
         return "unknown"
 
     def _is_whitelisted(self, filename, rel_path):
-        """检查文件是否在白名单内 (保持原样)"""
+        """检查文件是否在白名单内 (优化路径匹配逻辑，完美解决 custom 目录问题)"""
         rel_path = rel_path.replace("\\", "/")
         if rel_path.startswith("./"): rel_path = rel_path[2:]
+        
         for pat in self.whitelist_patterns:
-            if pat.search(filename) or pat.search(rel_path):
+            if pat.search(rel_path):
+                return True
+            if "/" not in pat.pattern and pat.search(filename):
                 return True
         return False
 
