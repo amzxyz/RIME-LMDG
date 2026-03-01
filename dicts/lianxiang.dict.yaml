@@ -446,7 +446,7 @@ sort: by_weight
 爱快罗蜜欧	ài kuài luó mì ōu	1
 爱拉托逊纪	ài lā tuō xùn jì	1
 爱来的刚好	ài lái de gāng hǎo	1
-爱唠叨的鸟	ài láo dāo de niǎo	1
+爱唠叨的鸟	ài láo dao de niǎo	1
 爱了就爱了	ài le jiù ài le	1
 埃勒曼炸弹	āi lè màn zhà dàn	1
 挨了一巴掌	āi le yì bā zhǎng	1
@@ -53410,7 +53410,7 @@ sort: by_weight
 非稳态电路	fēi wěn tài diàn lù	1
 肥沃的土地	féi wò de tǔ dì	1
 肥沃的土壤	féi wò de tǔ rǎng	1
-匪我求童蒙	fěi wǒ qiú tóng méng	1
+匪我求童蒙	fēi wǒ qiú tóng méng	1
 飞舞的蝴蝶	fēi wǔ de hú dié	1
 废物的排出	fèi wù de pái chū	1
 废物的排泄	fèi wù de pái xiè	1
@@ -57261,7 +57261,7 @@ sort: by_weight
 父母的角色	fù mǔ de jué sè	1
 父母的肯定	fù mǔ de kěn dìng	1
 父母的控制	fù mǔ de kòng zhì	1
-父母的唠叨	fù mǔ de láo dāo	1
+父母的唠叨	fù mǔ de láo dao	1
 父母的离婚	fù mǔ de lí hūn	1
 父母的理解	fù mǔ de lǐ jiě	1
 父母的离异	fù mǔ de lí yì	1
@@ -115831,8 +115831,8 @@ sort: by_weight
 老大方程式	lǎo dà fāng chéng shì	1
 老大如是说	lǎo dà rú shì shuō	1
 酪蛋白酸钠	lào dàn bái suān nà	4
-唠叨个不停	láo dāo gè bù tíng	1
-唠叨个没完	láo dāo gè méi wán	1
+唠叨个不停	láo dao gè bù tíng	1
+唠叨个没完	láo dao gè méi wán	1
 劳德代尔堡	láo dé dài ěr bǎo	1
 铹的同位素	láo de tóng wèi sù	1
 铑的同位素	lǎo de tóng wèi sù	1
@@ -125659,7 +125659,7 @@ sort: by_weight
 妈妈的教育	mā ma de jiào yù	1
 妈妈的角色	mā ma de jué sè	1
 妈妈的口红	mā ma de kǒu hóng	1
-妈妈的唠叨	mā ma de láo dāo	1
+妈妈的唠叨	mā ma de láo dao	1
 妈妈的礼物	mā ma de lǐ wù	1
 妈妈的妈妈	mā ma de mā ma	1
 妈妈的名字	mā ma de míng zì	1
@@ -133260,7 +133260,7 @@ sort: by_weight
 母亲的教育	mǔ qīn de jiào yù	1
 母亲的角色	mǔ qīn de jué sè	1
 母亲的抉择	mǔ qīn de jué zé	1
-母亲的唠叨	mǔ qīn de láo dāo	1
+母亲的唠叨	mǔ qīn de láo dao	1
 母亲的离世	mǔ qīn de lí shì	1
 母亲的礼物	mǔ qīn de lǐ wù	1
 母亲的梦想	mǔ qīn de mèng xiǎng	1
@@ -140436,7 +140436,7 @@ sort: by_weight
 女人的精致	nǚ rén de jīng zhì	1
 女人的觉醒	nǚ rén de jué xǐng	1
 女人的抉择	nǚ rén de jué zé	1
-女人的唠叨	nǚ rén de láo dāo	1
+女人的唠叨	nǚ rén de láo dao	1
 女人的力量	nǚ rén de lì liàng	1
 女人的美丽	nǚ rén de měi lì	1
 女人的魅力	nǚ rén de mèi lì	1
@@ -210128,6 +210128,7 @@ sort: by_weight
 闲得没事干	xián de méi shì gàn	1
 闲得没事做	xián de méi shì zuò	1
 氙的同位素	xiān de tóng wèi sù	1
+显得我小气	xiǎn de wǒ xiǎo qì	1
 显得有点小	xiǎn de yǒu diǎn xiǎo	1
 县第二小学	xiàn dì èr xiǎo xué	1
 县第二中学	xiàn dì èr zhōng xué	1
@@ -293163,6 +293164,7 @@ sort: by_weight
 架空输电线路	jià kōng shū diàn xiàn lù	1
 加快高速公路	jiā kuài gāo sù gōng lù	1
 加拉巴哥群岛	jiā lā bā gē qún dǎo	1
+加拉帕戈斯化	jiā lā pà gē sī huà	1
 加勒比海鸟类	jiā lè bǐ hǎi niǎo lèi	1
 加勒比海群岛	jiā lè bǐ hǎi qún dǎo	1
 加勒比海洋流	jiā lè bǐ hǎi yáng liú	1
@@ -303501,7 +303503,7 @@ sort: by_weight
 梅捏劳斯定理	méi niē láo sī dìng lǐ	1
 梅涅劳斯定理	méi niè láo sī dìng lǐ	1
 美浓国诸旧记	měi nóng guó zhū jiù jì	1
-美女们的唠叨	měi nǚ men de láo dāo	1
+美女们的唠叨	měi nǚ men de láo dao	1
 美女明星程宁	měi nǚ míng xīng chéng níng	1
 梅平高速公路	méi píng gāo sù gōng lù	1
 美扑伪麻胶囊	měi pū wěi má jiāo náng	1

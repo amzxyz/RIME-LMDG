@@ -1917,7 +1917,7 @@ sort: by_weight
 非天之罪	fēi tiān zhī zuì	1
 非我圣母	fēi wǒ shèng mǔ	1
 非我天子	fēi wǒ tiān zǐ	1
-匪我为之	fěi wǒ wéi zhī	1
+匪我为之	fēi wǒ wéi zhī	1
 非我志也	fēi wǒ zhì yě	1
 霏雾弄晴	fēi wù nòng qíng	1
 非无圣主	fēi wú shèng zhǔ	1
@@ -9644,7 +9644,7 @@ sort: by_weight
 右繁体字	yòu fán tǐ zì	1
 有匪君子	yǒu fěi jūn zǐ	1
 有斐君子	yǒu fěi jūn zǐ	1
-有匪我心	yǒu fěi wǒ xīn	1
+有匪我心	yǒu fēi wǒ xīn	1
 有蕡其实	yǒu fén qí shí	1
 有分有辩	yǒu fèn yǒu biàn	1
 有富无窭	yǒu fù wú jù	1
@@ -21755,6 +21755,7 @@ sort: by_weight
 裁诗炼土风	cái shī liàn tǔ fēng	1
 裁诗岂易酬	cái shī qǐ yì chóu	1
 裁什情何厚	cái shí qíng hé hòu	1
+才始送春归	cái shǐ sòng chūn guī	1
 采石夜归州	cǎi shí yè guī zhōu	1
 裁诗怨索居	cái shī yuàn suǒ jū	1
 材收佛宫余	cái shōu fó gōng yú	1
@@ -201972,6 +201973,7 @@ sort: by_weight
 又送残阳去	yòu sòng cán yáng qù	1
 幽松出高岑	yōu sōng chū gāo cén	1
 又送黄昏雨	yòu sòng huáng hūn yǔ	1
+又送君归去	yòu sòng jūn guī qù	1
 犹诵麦青青	yóu sòng mài qīng qīng	1
 又送上人归	yòu sòng shàng rén guī	1
 有松数十株	yǒu sōng shù shí zhū	1
@@ -285444,6 +285446,7 @@ sort: by_weight
 若到此中还断肠	ruò dào cǐ zhōng hái duàn cháng	1
 若到故园应觅我	ruò dào gù yuán yīng mì wǒ	1
 若道归仁滩更好	ruò dào guī rén tān gèng hǎo	1
+若到江南赶上春	ruò dào jiāng nán gǎn shàng chūn	1
 若到阆中还赴海	ruò dào láng zhōng hái fù hǎi	1
 若道老君是知者	ruò dào lǎo jūn shì zhī zhě	1
 若到麻源第三谷	ruò dào má yuán dì sān gǔ	1
@@ -292987,6 +292990,7 @@ sort: by_weight
 松柏一迳趋灵宫	sōng bǎi yī jìng qū líng gōng	1
 松柏一径趋灵宫	sōng bǎi yī jìng qū líng gōng	1
 松柏自穿空地少	sōng bǎi zì chuān kōng dì shǎo	1
+送鲍浩然之浙东	sòng bào hào rán zhī zhè dōng	1
 送别南台便黯然	sòng bié nán tái biàn àn rán	1
 送别千回独未归	sòng bié qiān huí dú wèi guī	1
 松鬓改梳鸾凤髻	sōng bìn gǎi shū luán fèng jì	1
@@ -315740,6 +315744,7 @@ sort: by_weight
 欲问其心不能问	yù wèn qí xīn bù néng wèn	1
 欲问吴江别来意	yù wèn wú jiāng bié lái yì	1
 宇文新州之懿范	yǔ wén xīn zhōu zhī yì fàn	1
+欲问行人去那边	yù wèn xíng rén qù nǎ biān	1
 欲闻要言今告汝	yù wén yào yán jīn gào rǔ	1
 欲问以书无去鸿	yù wèn yǐ shū wú qù hóng	1
 欲问云公觅心地	yù wèn yún gōng mì xīn dì	1
