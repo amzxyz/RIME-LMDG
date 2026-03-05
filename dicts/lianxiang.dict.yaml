@@ -2861,6 +2861,7 @@ sort: by_weight
 巴黎总主教	bā lí zǒng zhǔ jiào	1
 八连城遗址	bā lián chéng yí zhǐ	1
 把脸洗干净	bǎ liǎn xǐ gān jìng	1
+巴列维王朝	bā liè wéi wáng cháo	1
 坝陵河大桥	bà líng hé dà qiáo	1
 霸凌军公教	bà líng jūn gōng jiào	1
 八菱科技累	bā líng kē jì lèi	1
@@ -26504,6 +26505,8 @@ sort: by_weight
 出奇的安静	chū qí de ān jìng	1
 出奇的冷静	chū qí de lěng jìng	1
 出奇的平静	chū qí de píng jìng	1
+出奇的一致	chū qí de yí zhì	2
+初期的一直	chū qī de yì zhí	1
 出钱又出力	chū qián yòu chū lì	1
 畜禽养殖场	chù qín yǎng zhí chǎng	1
 畜禽养殖业	chù qín yǎng zhí yè	1
@@ -35873,6 +35876,7 @@ sort: by_weight
 德国康德于	dé guó kāng dé yú	1
 德国式装置	dé guó shì zhuāng zhì	1
 德国胃必治	dé guó wèi bì zhì	1
+得国最正者	de guó zuì zhèng zhě	1
 德哈斯效应	dé hā sī xiào yìng	1
 的海德格尔	de hǎi dé gé ěr	1
 的号是什么	de hào shì shén me	1
@@ -78979,6 +78983,7 @@ sort: by_weight
 菏泽火车站	hé zé huǒ chē zhàn	1
 菏泽牡丹区	hé zé mǔ dān qū	1
 菏泽市政府	hé zé shì zhèng fǔ	1
+核战避难所	hé zhàn bì nàn suǒ	1
 和丈夫离婚	hé zhàng fū lí hūn	1
 喝这么多酒	hē zhè me duō jiǔ	1
 喝珍珠奶茶	hē zhēn zhū nǎi chá	1
@@ -113404,7 +113409,7 @@ sort: by_weight
 孔子庙堂碑	kǒng zǐ miào táng bēi	1
 孔子扫盲奖	kǒng zǐ sǎo máng jiǎng	1
 孔子圣迹图	kǒng zǐ shèng jì tú	1
-孔子说得对	kǒng zǐ shuō dé duì	1
+孔子说得对	kǒng zǐ shuō de duì	1
 孔子文化节	kǒng zǐ wén huà jié	1
 孔子研究院	kǒng zǐ yán jiū yuàn	1
 孔子与老子	kǒng zǐ yǔ lǎo zi	1
@@ -134063,7 +134068,7 @@ sort: by_weight
 那一段日子	nà yí duàn rì zi	1
 那一段时光	nà yí duàn shí guāng	1
 那一段时间	nà yí duàn shí jiān	1
-那一个不是	nà yí gè bú shì	1
+那一个不是	nà yī gè bú shì	1
 哪一个层次	nǎ yí gè céng cì	1
 那一个瞬间	nà yí gè shùn jiān	1
 那一个晚上	nà yí gè wǎn shàng	1
@@ -156068,6 +156073,7 @@ sort: by_weight
 热空气硫化	rè kōng qì liú huà	1
 热扩散时间	rè kuò sàn shí jiān	1
 热扩散系数	rè kuò sàn xì shù	1
+热辣香骨鸡	rè là xiāng gǔ jī	1
 热莱兹尼基	rè lái zī ní jī	1
 热浪球爱战	rè làng qiú ài zhàn	1
 惹了大麻烦	rě le dà má fán	1
@@ -187334,7 +187340,6 @@ sort: by_weight
 特点及优势	tè diǎn jí yōu shì	1
 特点是什么	tè diǎn shì shén me	1
 特点与优势	tè diǎn yǔ yōu shì	1
-特调鸡尾酒	tè diào jī wěi jiǔ	1
 特定的场合	tè dìng de chǎng hé	1
 特定的场景	tè dìng de chǎng jǐng	1
 特定的地点	tè dìng de dì diǎn	1
@@ -187616,6 +187621,7 @@ sort: by_weight
 特斯拉宣布	tè sī lā xuān bù	1
 特斯拉员工	tè sī lā yuán gōng	1
 特斯拉中国	tè sī lā zhōng guó	1
+特调鸡尾酒	tè tiáo jī wěi jiǔ	1
 特威德三角	tè wēi dé sān jiǎo	1
 特务警察队	tè wù jǐng chá duì	1
 特武琴斯基	tè wǔ qín sī jī	1
@@ -195071,7 +195077,6 @@ sort: by_weight
 玩具小汽车	wán jù xiǎo qì chē	1
 玩具销售员	wán jù xiāo shòu yuán	1
 玩具制造商	wán jù zhì zào shāng	1
-玩具总动园	wán jù zǒng dòng yuán	1
 玩具总动员	wán jù zǒng dòng yuán	1
 玩绝地求生	wán jué dì qiú shēng	1
 万卡尔基区	wàn kǎ ěr jī qū	1
@@ -196874,7 +196879,7 @@ sort: by_weight
 王子变青蛙	wáng zǐ biàn qīng wā	1
 王子不是我	wáng zǐ bú shì wǒ	1
 王子朝之乱	wáng zǐ cháo zhī luàn	1
-望子成龙的	wàng zi chéng lóng de	1
+望子成龙的	wàng zǐ chéng lóng de	1
 王子大饭店	wáng zǐ dà fàn diàn	1
 王子大酒店	wáng zǐ dà jiǔ diàn	1
 王子带之乱	wáng zǐ dài zhī luàn	1
@@ -197573,7 +197578,7 @@ sort: by_weight
 胃架扩散型	wèi jià kuò sàn xíng	1
 维甲酸乳膏	wéi jiǎ suān rǔ gāo	1
 维甲酸维酯	wéi jiǎ suān wéi zhǐ	3
-为家乡点赞	wéi jiā xiāng diǎn zàn	1
+为家乡点赞	wèi jiā xiāng diǎn zàn	1
 违建拆除后	wéi jiàn chāi chú hòu	1
 违建当事人	wéi jiàn dāng shì rén	1
 韦坚斯基区	wéi jiān sī jī qū	1
@@ -229628,12 +229633,12 @@ sort: by_weight
 一个棒棒糖	yí gè bàng bàng táng	1
 一个比一个	yí gè bǐ yí gè	1
 一个布袋子	yí gè bù dài zi	1
-一个不回家	yí gè bù huí jiā	1
-一个不可逆	yí gè bù kě nì	1
-一个不留神	yí gè bù liú shén	1
-一个不能少	yí gè bù néng shǎo	1
-一个不小心	yí gè bù xiǎo xīn	1
-一个不注意	yí gè bú zhù yì	1
+一个不回家	yī gè bù huí jiā	1
+一个不可逆	yī gè bù kě nì	1
+一个不留神	yī gè bù liú shén	1
+一个不能少	yī gè bù néng shǎo	1
+一个不小心	yī gè bù xiǎo xīn	1
+一个不注意	yī gè bú zhù yì	1
 一个传染俩	yí gè chuán rǎn liǎ	1
 一个大笨蛋	yí gè dà bèn dàn	1
 一个大逼兜	yí gè dà bī dōu	1
@@ -283103,7 +283108,7 @@ sort: by_weight
 腹膜脂肪坏死	fù mó zhī fáng huài sǐ	1
 父母包办婚姻	fù mǔ bāo bàn hūn yīn	1
 父母或监护人	fù mǔ huò jiān hù rén	1
-父母望子成龙	fù mǔ wàng zi chéng lóng	1
+父母望子成龙	fù mǔ wàng zǐ chéng lóng	1
 父母言传身教	fù mǔ yán chuán shēn jiào	1
 父母以身作则	fù mǔ yǐ shēn zuò zé	1
 父母重男轻女	fù mǔ zhòng nán qīng nǚ	1
@@ -285921,8 +285926,6 @@ sort: by_weight
 购买新能源车	gòu mǎi xīn néng yuán chē	1
 购买烟花爆竹	gòu mǎi yān huā bào zhú	1
 购买自住住房	gòu mǎi zì zhù zhù fáng	1
-狗娘养的青春	gǒu niáng yǎng de qīng chūn	1
-狗皮膏改进型	gǒu pí gāo gǎi jìn xíng	1
 勾起你的回忆	gōu qǐ nǐ de huí yì	1
 枸杞消渴胶囊	gǒu qǐ xiāo kě jiāo náng	1
 枸杞益肾胶囊	gǒu qǐ yì shèn jiāo náng	1
@@ -321778,7 +321781,7 @@ sort: by_weight
 网状细胞肉瘤	wǎng zhuàng xì bāo ròu liú	1
 网状细胞增多	wǎng zhuàng xì bāo zēng duō	1
 网状小脑纤维	wǎng zhuàng xiǎo nǎo xiān wéi	1
-望子成龙学校	wàng zi chéng lóng xué xiào	1
+望子成龙学校	wàng zǐ chéng lóng xué xiào	1
 往自己头上扣	wǎng zì jǐ tóu shàng kòu	1
 枉自温柔和顺	wǎng zì wēn róu hé shùn	1
 王子猷居山阴	wáng zǐ yóu jū shān yīn	1
@@ -322623,7 +322626,7 @@ sort: by_weight
 我的地老天荒	wǒ de dì lǎo tiān huāng	1
 我的逗比老师	wǒ de dòu bǐ lǎo shī	1
 我的二哥二嫂	wǒ de èr gē èr sǎo	1
-我得儿意地笑	wǒ de ér yì dì xiào	1
+我得儿意地笑	wǒ de ér yì de xiào	1
 我的盖世英雄	wǒ de gài shì yīng xióng	1
 我的狐仙老婆	wǒ de hú xiān lǎo pó	1
 我的狐仙女友	wǒ de hú xiān nǚ yǒu	1
@@ -365584,7 +365587,7 @@ sort: by_weight
 王婆卖瓜自卖自夸	wáng pó mài guā zì mài zì kuā	1
 王司徒巧使连环计	wáng sī tú qiǎo shǐ lián huán jì	1
 亡羊补牢为时未晚	wáng yáng bǔ láo wéi shí wèi wǎn	1
-望子成龙望女成凤	wàng zi chéng lóng wàng nǚ chéng fèng	1
+望子成龙望女成凤	wàng zǐ chéng lóng wàng nǚ chéng fèng	1
 围得里三层外三层	wéi de lǐ sān céng wài sān céng	1
 微观经济效益审计	wēi guān jīng jì xiào yì shěn jì	1
 为官一任造福一方	wéi guān yí rèn zào fú yì fāng	1
