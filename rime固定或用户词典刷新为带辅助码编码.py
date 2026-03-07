@@ -12,7 +12,6 @@ from __future__ import annotations
 import os, re, shutil
 from pathlib import Path
 from typing import Dict, List, Optional
-from tqdm import tqdm
 
 # ─────────────── 配 置 区 ────────────────
 INPUT_PATH  = "/home/amz/Documents/输入法方案/万象拼音/dicts/jichu.dict.yaml"          # 目录或单文件
@@ -196,7 +195,6 @@ def process_single_file(src: str, dst: str, aux_map: Dict[str, str]):
 
             d.write('\t'.join(cols) + '\n')
 
-
 # ---------- 目录递归 ----------
 def process_files(path_in: str, path_out: str, aux_map: Dict[str, str]):
     if os.path.isfile(path_in):
@@ -218,11 +216,30 @@ def process_files(path_in: str, path_out: str, aux_map: Dict[str, str]):
             tasks.append((os.path.join(root, fn),
                           os.path.join(ddir, fn)))
 
-    bar = tqdm(tasks, desc="刷辅助码", unit="file", ncols=90)
-    for src, dst in bar:
-        bar.set_postfix(file=os.path.basename(src))
+    total = len(tasks)
+    bar_length = 30  # 进度条长度
+
+    for i, (src, dst) in enumerate(tasks, 1):
         process_single_file(src, dst, aux_map)
-        tqdm.write(f"✓ 完成 {os.path.basename(src)} → {os.path.relpath(dst, path_out)}")
+        
+        # 模仿 tqdm.write，先清除当前行，打印文件处理完成日志，然后再重绘进度条
+        print(f"\r{' ' * 100}\r✓ 完成 {os.path.basename(src)} → {os.path.relpath(dst, path_out)}")
+        
+        # 计算进度条参数
+        percent = i / total
+        filled_len = int(bar_length * percent)
+        bar = '█' * filled_len + '-' * (bar_length - filled_len)
+        
+        # 截断过长的文件名以防进度条被挤得太长
+        file_name = os.path.basename(src)
+        if len(file_name) > 18:
+            file_name = file_name[:15] + "..."
+            
+        # 在末尾同行输出动态进度条，使用 flush=True 强制立即刷新
+        print(f"\r刷辅助码: {int(percent * 100):3d}%|{bar}| {i}/{total} [file={file_name}]", end="", flush=True)
+
+    if tasks:
+        print()  # 跑完换行防遮挡
 
 # ---------- 主入口 ----------
 if __name__ == "__main__":

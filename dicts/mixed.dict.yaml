@@ -1,0 +1,52 @@
+# Rime dictionary
+# encoding: utf-8
+# #https://github.com/amzxyz/RIME-LMDG
+---
+name: mixed
+version: "LTS"
+sort: by_weight
+...
+C语言	C yǔ yán	131
+Go语言	Go yǔ yán	97
+JD京东	JD jīng dōng	97
+JD自营	JD zì yíng	331
+JK制服	JK zhì fú	297
+LAN口	LAN kǒu	97
+LED灯	LED dēng	97
+LED屏	LED píng	97
+Mac版	Mac bǎn	172
+Mac端	Mac duān	107
+Q群管家	Q qún guǎn jiā	33
+QQ表情	QQ biǎo qíng	33
+QQ等级	QQ děng jí	33
+QQ登录	QQ dēng lù	33
+QQ动态	QQ dòng tài	33
+QQ飞车	QQ fēi chē	33
+QQ号码	QQ hào mǎ	33
+QQ好友	QQ hǎo yǒu	33
+QQ红包	QQ hóng bāo	33
+QQ会员	QQ huì yuán	33
+QQ空间	QQ kōng jiān	33
+QQ聊天	QQ liáo tiān	33
+QQ密码	QQ mì mǎ	33
+QQ拼音	QQ pīn yīn	33
+QQ钱包	QQ qián bāo	33
+QQ签名	QQ qiān míng	33
+QQ三国	QQ sān guó	33
+QQ视频	QQ shì pín	33
+QQ相册	QQ xiàng cè	33
+QQ消息	QQ xiāo xī	33
+QQ音速	QQ yīn sù	33
+QQ音乐	QQ yīn yuè	33
+QQ影音	QQ yǐng yīn	33
+QQ游戏	QQ yóu xì	33
+QQ邮箱	QQ yóu xiāng	33
+QQ语音	QQ yǔ yīn	33
+QQ注册	QQ zhù cè	33
+哆啦A梦	duō lā A mèng	39
+飞牛OS	fēi niú OS	74
+改bug	gǎi BUG	256
+公网IP	gōng wǎng IP	229
+CNC加工	CNC jiā gōng	65
+CNY账户	CNY zhàng hù	39
+WiFi伴侣	WIFI bàn lǚ	139
