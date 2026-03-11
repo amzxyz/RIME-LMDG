@@ -51,11 +51,11 @@ from PySide6.QtWidgets import (
     QLineEdit, QPushButton, QFileDialog, QTabWidget, QCheckBox,
     QPlainTextEdit, QProgressBar, QLabel, QMessageBox, QGroupBox,
     QStyleFactory, QMenuBar, QDialog, QDialogButtonBox,
-    QRadioButton, QButtonGroup, QComboBox, QGridLayout, QFrame
+    QRadioButton, QButtonGroup, QComboBox, QGridLayout, QFrame, QSpinBox
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v2.8.2"
+TOOL_VERSION = "v2.8.3"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -1549,7 +1549,199 @@ class PathEdit(QLineEdit):
                 if local: self.setText(local)
             e.acceptProposedAction()
         else: super().dropEvent(e)
+# 用户词整理 (Userdb Sort)
+class UserDbWorker(QThread):
+    log_sig = Signal(str)
+    done_sig = Signal(bool, str)
 
+    def __init__(self, rime_dir, min_len, max_len, use_dedup, out_path):
+        super().__init__()
+        self.rime_dir = rime_dir
+        self.min_len = min_len
+        self.max_len = max_len
+        self.use_dedup = use_dedup
+        self.out_path = out_path
+
+    def run(self):
+        try:
+            self.log_sig.emit(">>> 开始解析 installation.yaml 查找 sync 目录...")
+            sync_dir = ""
+            install_yaml = os.path.join(self.rime_dir, "installation.yaml")
+            if os.path.exists(install_yaml):
+                try:
+                    with open(install_yaml, 'r', encoding='utf-8') as f:
+                        for line in f:
+                            if "sync_dir:" in line:
+                                val = line.split(":", 1)[1].strip()
+                                val = val.strip("'\"")  # 去除首尾引号
+                                val = val.replace('\\\\', '\\')  # 处理双斜杠
+                                sync_dir = os.path.normpath(val) # 规范化斜杠
+                                break
+                except Exception as e:
+                    self.log_sig.emit(f"[Warn] 读取 installation.yaml 出错: {e}")
+            
+            if not sync_dir:
+                sync_dir = os.path.join(self.rime_dir, "sync")
+                self.log_sig.emit("未找到自定义 sync_dir，使用默认路径。")
+
+            self.log_sig.emit(f"📂 正在扫描目录: {sync_dir}")
+            if not os.path.exists(sync_dir):
+                self.done_sig.emit(False, f"同步目录不存在: {sync_dir}")
+                return
+
+            # 1. 提取新增词
+            new_words = set()
+            file_count = 0
+            for root, _, files in os.walk(sync_dir):
+                for file in files:
+                    if file.endswith('.userdb.txt'):
+                        file_count += 1
+                        try:
+                            with open(os.path.join(root, file), 'r', encoding='utf-8') as f:
+                                for line in f:
+                                    if line.startswith('#'): continue
+                                    parts = line.split('\t')
+                                    if len(parts) >= 2:
+                                        word = parts[1].strip()
+                                        if re.search(r'[a-zA-Z]', word):
+                                            continue
+                                        if self.min_len <= len(word) <= self.max_len:
+                                            new_words.add(word)
+                        except Exception as e:
+                            self.log_sig.emit(f"[Warn] 读取文件失败 {file}: {e}")
+            
+            self.log_sig.emit(f"✅ 扫描了 {file_count} 个 userdb 文件，初步提取了 {len(new_words)} 个符合长度的词组。")
+
+            # 2. 词库去重
+            if self.use_dedup:
+                dicts_dir = os.path.join(self.rime_dir, "dicts")
+                self.log_sig.emit(f"🔎 正在扫描固定词库进行去重: {dicts_dir}")
+                dict_words = set()
+                dict_count = 0
+                if os.path.exists(dicts_dir):
+                    for root, _, files in os.walk(dicts_dir):
+                        for file in files:
+                            if file.endswith('.dict.yaml'):
+                                dict_count += 1
+                                try:
+                                    with open(os.path.join(root, file), 'r', encoding='utf-8') as f:
+                                        for line in f:
+                                            if line.startswith('#') or line.startswith(YAML_HEADS): continue
+                                            parts = line.split('\t')
+                                            if parts and parts[0].strip():
+                                                dict_words.add(parts[0].strip())
+                                except Exception as e:
+                                    pass
+                
+                original_len = len(new_words)
+                new_words = new_words - dict_words
+                self.log_sig.emit(f"✅ 扫描了 {dict_count} 个词库文件。去重后剩余: {len(new_words)} 个（过滤了 {original_len - len(new_words)} 个已有词）。")
+
+            # 3. 写入输出文件
+            if not new_words:
+                self.done_sig.emit(True, "没有找到符合条件的新增词。")
+                return
+
+            with open(self.out_path, 'w', encoding='utf-8') as f:
+                for w in sorted(new_words, key=lambda x: (len(x), x)):
+                    f.write(w + '\n')
+
+            self.done_sig.emit(True, f"🎉 整理完成！共保存 {len(new_words)} 个词到：\n{self.out_path}")
+        except Exception as e:
+            import traceback
+            traceback.print_exc()
+            self.done_sig.emit(False, f"发生异常: {e}")
+
+class UserDbSortDialog(QDialog):
+    def __init__(self, parent=None, rime_dir=""):
+        super().__init__(parent)
+        self.setWindowTitle("用户新增词整理")
+        self.setMinimumWidth(500)
+        self.rime_dir = rime_dir
+        self.settings = QSettings("amzxyz", "WanXiangSettings")
+
+        lay = QVBoxLayout(self)
+        
+        # 长度设置
+        h_len = QHBoxLayout()
+        self.spin_min = QSpinBox()
+        self.spin_min.setRange(1, 20)
+        self.spin_max = QSpinBox()
+        self.spin_max.setRange(1, 50)
+        
+        # 读取设置记忆
+        self.spin_min.setValue(int(self.settings.value("userdb/min_len", 3)))
+        self.spin_max.setValue(int(self.settings.value("userdb/max_len", 6)))
+
+        h_len.addWidget(QLabel("字数长度限制：最小"))
+        h_len.addWidget(self.spin_min)
+        h_len.addWidget(QLabel("最大"))
+        h_len.addWidget(self.spin_max)
+        h_len.addStretch()
+        lay.addLayout(h_len)
+
+        # 去重选项
+        self.chk_dedup = QCheckBox("使用固定词库去重 (自动扫描 Rime/dicts 目录)")
+        self.chk_dedup.setChecked(self.settings.value("userdb/dedup", True, type=bool))
+        lay.addWidget(self.chk_dedup)
+
+        # 输出路径
+        h_out = QHBoxLayout()
+        self.out_edit = PathEdit("拖拽或选择：输出的 txt 文件路径")
+        self.out_edit.setText(self.settings.value("userdb/out_path", ""))
+        btn_out = QPushButton("选择...")
+        btn_out.clicked.connect(self.pick_output)
+        h_out.addWidget(self.out_edit)
+        h_out.addWidget(btn_out)
+        lay.addLayout(h_out)
+
+        # 按钮与日志
+        self.btn_run = QPushButton("开始整理")
+        self.btn_run.setStyleSheet("background-color: #61A165; color: white; padding: 6px; font-weight: bold; border-radius: 4px;")
+        self.btn_run.clicked.connect(self.run_sort)
+        lay.addWidget(self.btn_run)
+
+        self.log_view = QPlainTextEdit()
+        self.log_view.setReadOnly(True)
+        lay.addWidget(self.log_view)
+
+    def pick_output(self):
+        dlg = QFileDialog(self, "选择输出文件")
+        dlg.setAcceptMode(QFileDialog.AcceptSave)
+        dlg.selectFile("万象新增词提取.txt")
+        dlg.setNameFilter("Text Files (*.txt);;All Files (*)")
+        if dlg.exec():
+            files = dlg.selectedFiles()
+            if files: self.out_edit.setText(files[0])
+
+    def run_sort(self):
+        out_path = self.out_edit.text().strip()
+        if not out_path:
+            QMessageBox.warning(self, "错误", "请选择输出路径！")
+            return
+        if not self.rime_dir or not os.path.exists(self.rime_dir):
+            QMessageBox.warning(self, "错误", "主界面的 Rime 目录无效，请先返回配置！")
+            return
+
+        # 记忆当前配置
+        self.settings.setValue("userdb/min_len", self.spin_min.value())
+        self.settings.setValue("userdb/max_len", self.spin_max.value())
+        self.settings.setValue("userdb/dedup", self.chk_dedup.isChecked())
+        self.settings.setValue("userdb/out_path", out_path)
+
+        self.btn_run.setEnabled(False)
+        self.log_view.clear()
+        
+        self.worker = UserDbWorker(self.rime_dir, self.spin_min.value(), self.spin_max.value(), self.chk_dedup.isChecked(), out_path)
+        self.worker.log_sig.connect(self.log_view.appendPlainText)
+        self.worker.done_sig.connect(self.on_done)
+        self.worker.start()
+
+    def on_done(self, ok, msg):
+        self.btn_run.setEnabled(True)
+        self.log_view.appendPlainText("-" * 30)
+        self.log_view.appendPlainText(msg)
+        if ok: QMessageBox.information(self, "完成", msg)
 # ============== GUI ==============
 class MainWin(QWidget):
     def __init__(self):
@@ -1594,6 +1786,7 @@ class MainWin(QWidget):
         self.tab_aux = self._build_tab_aux()
         self.tab_upd = self._build_tab_update()
         self.tab_sp = self._build_tab_shuangpin()
+        self.tab_more = self._build_tab_more()
         # 1. 在线更新 (现在的 Index 0)
         self.tabs.addTab(self.tab_upd, "在线更新与部署")
         # 2. 刷拼音 (现在的 Index 1)
@@ -1601,7 +1794,7 @@ class MainWin(QWidget):
         # 3. 刷辅助码 (现在的 Index 2)
         self.tabs.addTab(self.tab_aux, "刷新辅助码（拼音;辅助码）")
         self.tabs.addTab(self.tab_sp, "双拼编码转换")
-
+        self.tabs.addTab(self.tab_more, "更多功能")
         self.btn_run = QPushButton("运行")
         self.btn_run.setCursor(Qt.PointingHandCursor)
         self.btn_run.setStyleSheet("""
@@ -2273,6 +2466,52 @@ class MainWin(QWidget):
         f.addRow("输出路径:", r_out)
         
         lay.addWidget(gb_io)
+        lay.addStretch()
+        
+        return w
+    def _build_tab_more(self) -> QWidget:
+        w = QWidget()
+        lay = QVBoxLayout(w)
+        lay.setContentsMargins(15, 15, 15, 15)
+        btn_userdb = QPushButton("用户新增词整理")
+        btn_userdb.setCursor(Qt.PointingHandCursor)
+        btn_userdb.setStyleSheet("""
+            QPushButton {
+                padding: 12px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #61A165; /* <--- 字体颜色也改为莫兰迪绿 */
+                border: 1px solid #A8C7AA; /* 静态时的浅绿边框 */
+                border-radius: 6px;
+                background-color: transparent; 
+            }
+            QPushButton:hover {
+                border: 1px solid #61A165; /* 悬浮时边框加深 */
+                background-color: rgba(97, 161, 101, 0.1); /* 悬浮时的淡绿底色底纹 */
+            }
+            QPushButton:pressed {
+                background-color: rgba(97, 161, 101, 0.2);
+            }
+        """)
+        btn_userdb.setToolTip(
+            "自动读取 installation.yaml 获取同步路径。\n"
+            "扫描 userdb 提取您输入的新词，\n"
+            "支持按字数过滤，以及在 dicts 目录中进行去重验证。"
+        )
+        
+        def open_userdb_dialog():
+            rime_dir = self.upd_rime.text().strip()
+            dlg = UserDbSortDialog(self, rime_dir)
+            dlg.exec()
+            
+        btn_userdb.clicked.connect(open_userdb_dialog)
+        grid = QGridLayout()
+        grid.addWidget(btn_userdb, 0, 0)
+        grid.setColumnStretch(0, 1)
+        grid.setColumnStretch(1, 1)
+        grid.setColumnStretch(2, 1)
+        grid.setColumnStretch(3, 1)
+        lay.addLayout(grid)
         lay.addStretch()
         
         return w
