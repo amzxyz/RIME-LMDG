@@ -55,7 +55,7 @@ from PySide6.QtWidgets import (
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v2.8.3"
+TOOL_VERSION = "v2.8.4"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -1154,15 +1154,15 @@ class UpdateWorker(QThread):
         return False
 
     def _detect_smart_root(self, extract_root: str, task_type: str) -> str:
-        """智能解压根目录检测 (保持原样)"""
+        """智能解压根目录检测"""
         self.log(f"🔎 正在智能分析解压路径 ({task_type})...")
-        if task_type == 'dict':
+        if task_type in ['dict', '词库组件']:
             for root, dirs, files in os.walk(extract_root):
                 for f in files:
                     if f.endswith('.dict.yaml'):
                         return root
             return extract_root
-        if task_type in ['CustomZip', 'scheme']:
+        if task_type in ['CustomZip', 'scheme', '方案组件', '预览方案']: 
             for root, dirs, files in os.walk(extract_root):
                 if 'lua' in dirs: return root
             for root, dirs, files in os.walk(extract_root):
@@ -1220,6 +1220,11 @@ class UpdateWorker(QThread):
                     if self.cfg.scope in [0, 1]: 
                         pat = f"*{scheme_key}*fuzhu.zip" if self.cfg.scheme_type == 'pro' else "*base.zip"
                         tasks.append(('方案组件', REPO, CNB_REPO, pat, self.cfg.rime_dir, None))
+                    if self.cfg.scope == 4:
+                        pat = f"*{scheme_key}*fuzhu.zip" if self.cfg.scheme_type == 'pro' else "*base.zip"
+                        # 核心：CNB 去 v1.0.0 找，GitHub 去 dict-nightly 找
+                        preview_tag = "v1.0.0" if self.cfg.use_mirror else DICT_TAG
+                        tasks.append(('预览方案', REPO, CNB_REPO, pat, self.cfg.rime_dir, preview_tag))
                     # 词库组件
                     if self.cfg.scope in [0, 2]:
                         pat = f"*{scheme_key}*dicts.zip" if self.cfg.scheme_type == 'pro' else "*base*dicts.zip"
@@ -1251,7 +1256,7 @@ class UpdateWorker(QThread):
                     self.log(f"   ℹ️ [检测结果] {task_type}")
                     self.log(f"      本地记录: {local_ver} | 在线发现: {tag}")
                     
-                    if task_type in ['词库组件', '语法模型']:
+                    if task_type in ['词库组件', '语法模型', '预览方案']:
                         key = "dict_hash" if task_type == '词库组件' else "model_hash"
                         local_hash = self.cfg.current_versions.get(key, "")
                         d_l = local_hash[:8] if local_hash else "无"
@@ -1262,7 +1267,7 @@ class UpdateWorker(QThread):
                     if self.cfg.force_update:
                         self.log("⚠️ [强制模式] 忽略校验，准备强制下载...")
                     else:
-                        if task_type in ['词库组件', '语法模型']:
+                        if task_type in ['词库组件', '语法模型', '预览方案']:
                             # 改回无后缀读取
                             key = "dict_hash" if task_type == '词库组件' else "model_hash"
                             local_hash = self.cfg.current_versions.get(key, "")
@@ -1364,12 +1369,11 @@ class UpdateWorker(QThread):
                             if not real_hash and os.path.exists(src_path):
                                 real_hash = self._calculate_sha256(src_path)
 
-                            # 只有在使用 GitHub 源时，才记录本地 Hash 供以后校验
-                            if not self.cfg.use_mirror:
-                                if t_type == '词库组件' and real_hash:
-                                    self.version_sig.emit("dict_hash", real_hash)
-                                if t_type == '语法模型' and real_hash:
-                                    self.version_sig.emit("model_hash", real_hash)
+                            # 记录本地 Hash 供以后校验
+                            if real_hash:
+                                if t_type == '词库组件': self.version_sig.emit("dict_hash", real_hash)
+                                if t_type == '语法模型': self.version_sig.emit("model_hash", real_hash)
+                                if t_type == '预览方案': self.version_sig.emit("preview_hash", real_hash)
                         
                         needs_deploy = True
                         self.log(f"✅ {t_type} 安装成功。")
@@ -1747,7 +1751,7 @@ class MainWin(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle(f"Rime万象拼音工具箱 {TOOL_VERSION}")
-        self.setMinimumWidth(980)
+        self.setMinimumWidth(1000)
         self.resize(980, 750)
         self.settings = QSettings("amzxyz", "WanXiangSettings")
         self.worker: Optional[Worker] = None
@@ -1961,6 +1965,7 @@ class MainWin(QWidget):
         self.bg_scope = QButtonGroup(self)
         rb_full = QRadioButton("全量"); rb_full.setChecked(True)
         rb_schema = QRadioButton("仅方案")
+        rb_preview = QRadioButton("预览方案")
         rb_dict = QRadioButton("仅词库")
         rb_mod = QRadioButton("仅模型")
 
@@ -1968,7 +1973,8 @@ class MainWin(QWidget):
         self.bg_scope.addButton(rb_schema, 1)
         self.bg_scope.addButton(rb_dict, 2)
         self.bg_scope.addButton(rb_mod, 3)
-        hb_scope.addWidget(rb_full); hb_scope.addWidget(rb_schema); hb_scope.addWidget(rb_dict); hb_scope.addWidget(rb_mod); hb_scope.addStretch()
+        self.bg_scope.addButton(rb_preview, 4)
+        hb_scope.addWidget(rb_full); hb_scope.addWidget(rb_schema); hb_scope.addWidget(rb_preview); hb_scope.addWidget(rb_dict); hb_scope.addWidget(rb_mod); hb_scope.addStretch()
         
         # Version & Aux (版本 & 辅助码下拉框)
         self.gb_ver = QGroupBox("方案版本")
