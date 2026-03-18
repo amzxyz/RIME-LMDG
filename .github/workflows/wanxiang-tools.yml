@@ -26,7 +26,7 @@ jobs:
       - run: |
           python -m venv venv
           source venv/bin/activate
-          pip install PySide6 requests pyinstaller
+          pip install PySide6 requests pyinstaller ruamel.yaml
           
           if [ ! -f icon.ico ]; then touch icon.ico; fi
           # 转换图标
@@ -38,6 +38,7 @@ jobs:
             --paths . \
             --add-data "pypinyin:pypinyin" \
             --hidden-import requests \
+            --collect-all ruamel.yaml \
             --exclude-module tkinter \
             --exclude-module numpy \
             --exclude-module matplotlib \
@@ -203,6 +204,7 @@ jobs:
             --paths . \
             --add-data "pypinyin;pypinyin" \
             --hidden-import requests \
+            --collect-all ruamel.yaml \
             --exclude-module tkinter \
             --exclude-module numpy \
             --exclude-module matplotlib \
@@ -237,6 +239,7 @@ jobs:
             --paths . \
             --add-data "pypinyin:pypinyin" \
             --hidden-import requests \
+            --collect-all ruamel.yaml \
             --exclude-module tkinter \
             --exclude-module numpy \
             --exclude-module matplotlib \
