@@ -1226,7 +1226,7 @@ SCHEMA_META_CONFIG = {
             "enable_completion": {"title": "开启补全提示", "type": "bool"},
             "enable_sentence": {"title": "开启自动造句", "type": "bool"},
             "initial_quality": {"title": "初始权重值", "type": "str", "desc": "如: 2.1"},
-            "comment_format": {"title": "注释格式化规则", "type": "list_text", "desc": "去除带声调字母防崩溃"},
+            "comment_format": {"title": "注释格式化规则", "type": "raw_yaml", "desc": "去除带声调字母防崩溃"},
             "english_spacing": {"title": "自动加空格模式", "type": "select", "options": ["smart", "off", "before", "after"], "desc": "smart: 智能加空格"},
             "spacing_timeout": {"title": "空格状态超时(秒)", "type": "int", "desc": "0为不超时"},
             "max_candidates": {"title": "最大候选数", "type": "int", "desc": "英文候选输出最大数量"},
@@ -5729,8 +5729,16 @@ class MainWin(QWidget):
                 elif v_type in ["list_text", "raw_yaml"]:
                     clean_v = sanitize_val(val)
                     if v_type == "raw_yaml":
-                        import yaml as _y
-                        txt_v = _y.safe_dump(clean_v, allow_unicode=True, default_flow_style=False, sort_keys=False).strip() if isinstance(clean_v, (dict, list)) else str(clean_v if clean_v is not None else "")
+                        if isinstance(clean_v, (dict, list)):
+                            from ruamel.yaml import YAML
+                            from io import StringIO
+                            _y = YAML()
+                            _y.default_flow_style = False
+                            buf = StringIO()
+                            _y.dump(clean_v, buf)
+                            txt_v = buf.getvalue().strip()
+                        else:
+                            txt_v = str(clean_v if clean_v is not None else "")
                     else:
                         if isinstance(clean_v, list):
                             if all(len(str(x)) <= 10 and '\n' not in str(x) for x in clean_v): txt_v = "[" + ", ".join(str(x) for x in clean_v) + "]"
@@ -5845,15 +5853,23 @@ class MainWin(QWidget):
             elif v_type in ["list_text", "raw_yaml"]:
                 clean_v = sanitize_val(curr_v) 
                 if v_type == "raw_yaml":
-                    import yaml as _y
-                    txt_v = _y.safe_dump(clean_v, allow_unicode=True, default_flow_style=False, sort_keys=False).strip() if isinstance(clean_v, (dict, list)) else str(clean_v if clean_v is not None else "")
+                    if isinstance(clean_v, (dict, list)):
+                        from ruamel.yaml import YAML
+                        from io import StringIO
+                        _y = YAML()
+                        _y.default_flow_style = False
+                        buf = StringIO()
+                        _y.dump(clean_v, buf)
+                        txt_v = buf.getvalue().strip()
+                    else:
+                        txt_v = str(clean_v if clean_v is not None else "")
                 else:
                     if isinstance(clean_v, list):
                         if all(len(str(x)) <= 10 and '\n' not in str(x) for x in clean_v): txt_v = "[" + ", ".join(str(x) for x in clean_v) + "]"
                         else: txt_v = "\n".join(str(x) for x in clean_v)
                     else: txt_v = str(clean_v if clean_v is not None else "")
                 real_w = DynamicMultiLineWidget(txt_v, "支持输入任意多行文本或规则...") 
-                real_w.needs_resize.connect(lambda h, itm=p_item: safe_apply_size(itm, h)) 
+                real_w.needs_resize.connect(lambda h, itm=p_item: safe_apply_size(itm, h))
             else:
                 if isinstance(curr_v, list): display_text = "[" + ", ".join(str(x) for x in curr_v) + "]"
                 else: display_text = str(curr_v if curr_v is not None else "")
@@ -6049,24 +6065,26 @@ class MainWin(QWidget):
                 return seq
             return val
 
-        def parse_list_text(txt):
+        from ruamel.yaml import YAML
+        _safe_yaml = YAML(typ='safe')
+
+        def parse_list_text(txt, orig_val=None, base_val=None, key_name=""):
             txt = txt.strip()
-            if not txt: return None
-            # 1. 用户显式指定了数组 [a, b]
+            # 🌟 智能自愈：只要底层是数组或名字带 format/rules，绝对不降级为字符串！
+            is_array = isinstance(orig_val, list) or isinstance(base_val, list) or "format" in key_name or "rules" in key_name
+            if not txt: return [] if is_array else None
+            
             if txt.startswith('[') and txt.endswith(']'):
-                import yaml as _y
-                try: return _y.safe_load(txt)
+                try: 
+                    res = _safe_yaml.load(txt)
+                    return res if isinstance(res, list) else [res]
                 except: return [txt]
-            # 2. 标量降级：只有单行且无逗号，解析为原生值 (bool, int, str)
-            if '\n' not in txt and ',' not in txt:
-                import yaml as _y
-                try: return _y.safe_load(txt)
-                except: return txt
-            # 3. 逗号分隔列表
-            if '\n' not in txt and ',' in txt:
-                return [x.strip() for x in txt.split(',') if x.strip()]
-            # 4. 回车多行列表
-            return [line.strip() for line in txt.splitlines() if line.strip()]
+                
+            if '\n' in txt: return [line.strip() for line in txt.splitlines() if line.strip()]
+            if ',' in txt: return [x.strip() for x in txt.split(',') if x.strip()]
+            if is_array: return [txt]
+            try: return _safe_yaml.load(txt)
+            except: return txt
 
         allowed_paths = set()
         if target_id == "wanxiang_algebra.yaml":
@@ -6106,20 +6124,17 @@ class MainWin(QWidget):
                     try: current_val = int(val_str)
                     except: current_val = val_str
             elif v_type == "list_text":
-                current_val = parse_list_text(widget.text_field.toPlainText())
+                current_val = parse_list_text(widget.text_field.toPlainText(), orig_val=display_val, base_val=schema_val, key_name=full_path.split('/')[-1])
             elif v_type == "raw_yaml":
                 txt = widget.text_field.toPlainText().strip()
                 if txt:
-                    try:
-                        import yaml as _y
-                        current_val = _y.safe_load(txt)
+                    try: current_val = _safe_yaml.load(txt)
                     except: current_val = [line.strip() for line in txt.splitlines() if line.strip()]
             else:
                 val_str = widget.text().strip()
                 if val_str:
                     if val_str.startswith('[') and val_str.endswith(']'):
-                        import yaml as _y
-                        try: current_val = _y.safe_load(val_str)
+                        try: current_val = _safe_yaml.load(val_str)
                         except: current_val = val_str
                     elif val_str.isdigit(): current_val = int(val_str)
                     else: current_val = val_str
@@ -6232,8 +6247,8 @@ class MainWin(QWidget):
                             txt = w.text().strip()
                             if txt:
                                 if txt.startswith('[') and txt.endswith(']'):
-                                    import yaml as _y
-                                    try: val = _y.safe_load(txt)
+                                    from ruamel.yaml import YAML
+                                    try: val = YAML(typ='safe').load(txt)
                                     except: val = txt
                                 elif txt.lower() == "true": val = True
                                 elif txt.lower() == "false": val = False
