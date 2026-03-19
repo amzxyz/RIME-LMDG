@@ -1226,7 +1226,7 @@ SCHEMA_META_CONFIG = {
             "enable_completion": {"title": "开启补全提示", "type": "bool"},
             "enable_sentence": {"title": "开启自动造句", "type": "bool"},
             "initial_quality": {"title": "初始权重值", "type": "str", "desc": "如: 2.1"},
-            "comment_format": {"title": "注释格式化规则", "type": "raw_yaml", "desc": "去除带声调字母防崩溃"},
+            "comment_format": {"title": "注释格式化规则", "type": "list_text", "desc": "去除带声调字母防崩溃"},
             "english_spacing": {"title": "自动加空格模式", "type": "select", "options": ["smart", "off", "before", "after"], "desc": "smart: 智能加空格"},
             "spacing_timeout": {"title": "空格状态超时(秒)", "type": "int", "desc": "0为不超时"},
             "max_candidates": {"title": "最大候选数", "type": "int", "desc": "英文候选输出最大数量"},
@@ -6286,14 +6286,19 @@ class MainWin(QWidget):
                                 try: v = int(v)
                                 except: pass
                             elif "填列表" in desc or "数组" in desc:
-                                v = parse_list_text(str(v))
+                                v = parse_list_text(str(v), orig_val=[], base_val=[], key_name=k)
                             current_val[k] = smart_seq(v)
 
             if is_direct_mode:
                 if is_really_changed(current_val, schema_val):
                     patches_to_apply[full_path] = current_val
             else:
-                if isinstance(current_val, dict):
+                if v_type in ["reverse_algebra", "english_algebra", "mixed_algebra"]:
+                    if is_really_changed(current_val, schema_val):
+                        patches_to_apply[full_path] = current_val
+                    else:
+                        patches_to_remove.append(full_path)
+                elif isinstance(current_val, dict):
                     raw_patch = self._yaml_cache.get(target_id, ({}, {}))[1]
                     is_full_override = full_path in raw_patch and isinstance(raw_patch[full_path], dict)
                     
@@ -6314,7 +6319,7 @@ class MainWin(QWidget):
                                 
                         for k in display_dict:
                             if k not in current_val: patches_to_remove.append(f"{full_path}/{k}")
-                else:
+                elif isinstance(current_val, list):
                     if is_really_changed(current_val, display_val):
                         if is_empty(current_val) or not is_really_changed(current_val, schema_val):
                             patches_to_remove.append(full_path)
@@ -6323,8 +6328,8 @@ class MainWin(QWidget):
                             is_append = False
                             schema_list = schema_val if isinstance(schema_val, list) else []
                             n = len(schema_list)
-                            
-                            if len(current_val) >= n and not is_really_changed(current_val[:n], schema_list):
+
+                            if "__patch" not in full_path and len(current_val) >= n and not is_really_changed(current_val[:n], schema_list):
                                 is_append = True
                                 appended_items = current_val[n:]
                             
@@ -6337,7 +6342,12 @@ class MainWin(QWidget):
                             else:
                                 patches_to_apply[full_path] = current_val
                                 patches_to_remove.append(full_path + "/+")
-
+                else:
+                    if is_really_changed(current_val, display_val):
+                        if is_empty(current_val) or not is_really_changed(current_val, schema_val):
+                            patches_to_remove.append(full_path)
+                        else:
+                            patches_to_apply[full_path] = current_val
         # 底层智能写入引擎
         from ruamel.yaml import YAML
         yaml = YAML(); yaml.preserve_quotes = True; yaml.width = 1024
@@ -6461,8 +6471,22 @@ class MainWin(QWidget):
                             return
                 for p, v in patches_to_apply.items(): set_patch_val(custom_data['patch'], p, v)
                 for p in patches_to_remove: del_patch_val(custom_data['patch'], p)
-                    
                 if 'patch' in custom_data and not custom_data['patch']: del custom_data['patch']
+                def _force_order(d):
+                    if isinstance(d, dict):
+                        if "__include" in d and "__patch" in d:
+                            _keys = list(d.keys())
+                            if _keys.index("__include") > _keys.index("__patch"):
+                                _v = d.pop("__patch")
+                                d["__patch"] = _v
+                        for v in d.values():
+                            if isinstance(v, (dict, list)): _force_order(v)
+                    elif isinstance(d, list):
+                        for item in d:
+                            if isinstance(item, (dict, list)): _force_order(item)
+                
+                if 'patch' in custom_data:
+                    _force_order(custom_data['patch'])
 
                 with open(custom_path, 'w', encoding='utf-8') as f: yaml.dump(custom_data, f)
                 self.log.appendPlainText(f"💾 [补丁] {self.current_custom_file} 已保存! (更新 {len(patches_to_apply)} 项, 剔除 {len(patches_to_remove)} 项)")
