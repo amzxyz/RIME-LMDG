@@ -545,11 +545,11 @@ def exec(proj_dir, work_dir, repository_url):
     exec_success = True
 
     # ① 同步仓库
-    repository_url = repository_url or "https://github.com/amzxyz/rime_wanxiang.git"
+    repository_url = repository_url or "https://cnb.cool/amzxyz/rime-wanxiang.git"
     repository_name = repository_url.split('/')[-1][:-4] # 如 rime_wanxiang
     local_directory = (proj_dir / work_dir / repository_name).resolve()
     out_dict = f'cn_dicts_{repository_name}'
-    cn_dicts = 'cn_dicts' if repo_type != '1' else 'zh_dicts' # 万象改字典名称了……
+    cn_dicts = 'cn_dicts' if repo_type != '1' else 'dicts' # 万象改字典名称了……
 
     # --- 仓库克隆 ---
     if int(dict_type) == 1:
@@ -748,7 +748,7 @@ if __name__ == "__main__":
     # ⑤ --- 仓库指定 ---
     # 字典来源类型 → ¹仓库克隆  ²远程下载  ³本地词典
     # ----------
-    repository_url_wanxiang = "https://github.com/amzxyz/rime_wanxiang.git"
+    repository_url_wanxiang = "https://cnb.cool/amzxyz/rime-wanxiang.git"
     repository_url_frost = "https://github.com/gaboolic/rime-frost.git"
     repository_url_ice = "https://github.com/iDvel/rime-ice.git"
     # 
@@ -787,7 +787,7 @@ if __name__ == "__main__":
     # 其中 .temp_rime 与 scripts 父级目录同级
     # ----------
     # url_dict_rime_ice = "https://github.com/iDvel/rime-ice/releases/download/2025.04.06/cn_dicts.zip"
-    url_dict_rime_wanxiang = "https://github.com/amzxyz/rime_wanxiang/releases/download/dict-nightly/cn_dicts.zip"
+    url_dict_rime_wanxiang = "https://github.com/amzxyz/rime_wanxiang/releases/download/dict-nightly/base-dicts.zip"
     # 
     # --- ³本地词典 ---
     # 为了不增加脚本复杂性，我们固定本地词库文件夹为 .temp_rime/rime_local/cn_dicts
@@ -798,7 +798,7 @@ if __name__ == "__main__":
     # 
     # 是否需要下载语言大模型
     is_download_gram = bool(int(is_download_gram))
-    url_gram = 'https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram'
+    url_gram = 'https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/model/wanxiang-lts-zh-hans.gram'
 
     # ⑥ --- 是否清除声调 ---
     # 万象拼音词库本身是带声调的
