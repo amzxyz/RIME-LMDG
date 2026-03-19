@@ -6293,12 +6293,16 @@ class MainWin(QWidget):
                 if is_really_changed(current_val, schema_val):
                     patches_to_apply[full_path] = current_val
             else:
-                # 🌟 核心修复 1：这三个专用挂载器，无视差分，永远全量写入双行！
                 if v_type in ["reverse_algebra", "english_algebra", "mixed_algebra"]:
-                    patches_to_apply[full_path] = current_val
-                    # 将可能导致单行 Bug 的残余废包加入专杀名单！
-                    patches_to_remove.append(full_path + "/__patch")
-                    patches_to_remove.append(full_path + "/__include")
+                    patches_to_remove.append(full_path) # 删可能的字典格式
+                    patches_to_remove.append(f"{full_path}/__patch")   # 删平铺 __patch
+                    patches_to_remove.append(f"{full_path}/__include") # 删平铺 __include
+                    if "__include" in current_val:
+                        patches_to_apply[f"{full_path}/__include"] = current_val["__include"]
+                    if "__patch" in current_val:
+                        patches_to_apply[f"{full_path}/__patch"] = current_val["__patch"]
+                    continue 
+                    
                 elif isinstance(current_val, dict):
                     raw_patch = self._yaml_cache.get(target_id, ({}, {}))[1]
                     is_full_override = full_path in raw_patch and isinstance(raw_patch[full_path], dict)
@@ -6411,22 +6415,6 @@ class MainWin(QWidget):
                 
                 from ruamel.yaml.comments import CommentedMap
                 def set_patch_val(p_dict, path, val):
-                    if path.endswith("/__patch") or path.endswith("/__include"):
-                        base_path, op = path.rsplit('/', 1)
-                        if base_path not in p_dict or not isinstance(p_dict[base_path], dict):
-                            p_dict[base_path] = CommentedMap()
-                        p_dict[base_path][op] = val
-                        
-                        _node = p_dict[base_path]
-                        if "__include" in _node and "__patch" in _node:
-                            _keys = list(_node.keys())
-                            if _keys.index("__include") > _keys.index("__patch"):
-                                _v_patch = _node.pop("__patch")
-                                _node["__patch"] = _v_patch
-                                
-                        if path in p_dict: del p_dict[path] 
-                        return
-                        
                     parts = path.split('/')
                     if path.endswith("/+"):
                         parts = parts[:-2] + [parts[-2] + "/+"]
@@ -6444,15 +6432,6 @@ class MainWin(QWidget):
                     self._safe_assign(p_dict, path, val)
 
                 def del_patch_val(p_dict, path):
-                    if path.endswith("/__patch") or path.endswith("/__include"):
-                        base_path, op = path.rsplit('/', 1)
-                        if base_path in p_dict and isinstance(p_dict[base_path], dict):
-                            if op in p_dict[base_path]:
-                                del p_dict[base_path][op]
-                                if not p_dict[base_path]: del p_dict[base_path] # 空了连母节点一起删
-                        if path in p_dict: del p_dict[path]
-                        return
-                        
                     if path in p_dict:
                         del p_dict[path]
                         return
@@ -6472,7 +6451,10 @@ class MainWin(QWidget):
                             return
                 for p in patches_to_remove: del_patch_val(custom_data['patch'], p)
                 for p, v in patches_to_apply.items(): set_patch_val(custom_data['patch'], p, v)
+                    
                 if 'patch' in custom_data and not custom_data['patch']: del custom_data['patch']
+
+                with open(custom_path, 'w', encoding='utf-8') as f: yaml.dump(custom_data, f)
                 def _force_order(d):
                     if isinstance(d, dict):
                         if "__include" in d and "__patch" in d:
