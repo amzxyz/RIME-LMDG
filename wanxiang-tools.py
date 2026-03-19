@@ -6293,8 +6293,10 @@ class MainWin(QWidget):
                 if is_really_changed(current_val, schema_val):
                     patches_to_apply[full_path] = current_val
             else:
+                # 🌟 核心修复 1：这三个专用挂载器，无视差分，永远全量写入双行！
                 if v_type in ["reverse_algebra", "english_algebra", "mixed_algebra"]:
                     patches_to_apply[full_path] = current_val
+                    # 将可能导致单行 Bug 的残余废包加入专杀名单！
                     patches_to_remove.append(full_path + "/__patch")
                     patches_to_remove.append(full_path + "/__include")
                 elif isinstance(current_val, dict):
