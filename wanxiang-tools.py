@@ -674,6 +674,11 @@ class ReverseAlgebraWidget(QWidget):
         self.cb_stroke.setStyleSheet(style_cb if not is_direct else style_cb_disabled)
 
     def set_value(self, val_dict):
+        # 兼容 librime 补丁语法产生的列表嵌套字典
+        if isinstance(val_dict, list):
+            dict_item = next((item for item in val_dict if isinstance(item, dict) and ("__patch" in item or "__include" in item)), None)
+            val_dict = dict_item if dict_item else {}
+            
         if not isinstance(val_dict, dict): val_dict = {}
         
         # 提取 __include (拼音方案)
@@ -686,6 +691,7 @@ class ReverseAlgebraWidget(QWidget):
             self.cb_pinyin.setCurrentText(py_scheme)
         else:
             self.cb_pinyin.setCurrentText("自然码")
+            
         patch_val = val_dict.get("__patch", "")
         if isinstance(patch_val, list) and patch_val: patch_val = patch_val[0]
         patch_str = str(patch_val)
@@ -745,7 +751,13 @@ class EnglishAlgebraWidget(QWidget):
         self.cb_schema.setStyleSheet(style_cb if not is_direct else style_cb_disabled)
 
     def set_value(self, val_dict):
+        # 兼容 librime 补丁语法产生的列表嵌套字典
+        if isinstance(val_dict, list):
+            dict_item = next((item for item in val_dict if isinstance(item, dict) and ("__patch" in item or "__include" in item)), None)
+            val_dict = dict_item if dict_item else {}
+            
         if not isinstance(val_dict, dict): val_dict = {}
+        
         patch_val = val_dict.get("__patch", "")
         if isinstance(patch_val, list) and patch_val: patch_val = patch_val[0]
         patch_str = str(patch_val)
@@ -803,7 +815,13 @@ class MixedAlgebraWidget(QWidget):
         self.cb_schema.setStyleSheet(style_cb if not is_direct else style_cb_disabled)
 
     def set_value(self, val_dict):
+        # 兼容 librime 补丁语法产生的列表嵌套字典
+        if isinstance(val_dict, list):
+            dict_item = next((item for item in val_dict if isinstance(item, dict) and ("__patch" in item or "__include" in item)), None)
+            val_dict = dict_item if dict_item else {}
+            
         if not isinstance(val_dict, dict): val_dict = {}
+        
         patch_val = val_dict.get("__patch", "")
         if isinstance(patch_val, list) and patch_val: patch_val = patch_val[0]
         patch_str = str(patch_val)
@@ -6151,9 +6169,11 @@ class MainWin(QWidget):
                     
                     for k, v in current_val.items():
                         sub_path = f"{full_path}/{k}"
-                        if is_really_changed(v, schema_dict.get(k)):
+                        if k in ["__include", "__patch"]:
                             patches_to_apply[sub_path] = v
-                        else:
+                        elif is_really_changed(v, schema_dict.get(k)): 
+                            patches_to_apply[sub_path] = v
+                        else: 
                             patches_to_remove.append(sub_path)
                             
                     for k in display_dict:
@@ -6293,17 +6313,7 @@ class MainWin(QWidget):
                 if is_really_changed(current_val, schema_val):
                     patches_to_apply[full_path] = current_val
             else:
-                if v_type in ["reverse_algebra", "english_algebra", "mixed_algebra"]:
-                    patches_to_remove.append(full_path) # 删可能的字典格式
-                    patches_to_remove.append(f"{full_path}/__patch")   # 删平铺 __patch
-                    patches_to_remove.append(f"{full_path}/__include") # 删平铺 __include
-                    if "__include" in current_val:
-                        patches_to_apply[f"{full_path}/__include"] = current_val["__include"]
-                    if "__patch" in current_val:
-                        patches_to_apply[f"{full_path}/__patch"] = current_val["__patch"]
-                    continue 
-                    
-                elif isinstance(current_val, dict):
+                if isinstance(current_val, dict):
                     raw_patch = self._yaml_cache.get(target_id, ({}, {}))[1]
                     is_full_override = full_path in raw_patch and isinstance(raw_patch[full_path], dict)
                     
@@ -6319,12 +6329,16 @@ class MainWin(QWidget):
                         
                         for k, v in current_val.items():
                             sub_path = f"{full_path}/{k}"
-                            if is_really_changed(v, schema_dict.get(k)): patches_to_apply[sub_path] = v
-                            else: patches_to_remove.append(sub_path)
+                            if k in ["__include", "__patch"]: 
+                                patches_to_apply[sub_path] = v
+                            elif is_really_changed(v, schema_dict.get(k)): 
+                                patches_to_apply[sub_path] = v
+                            else: 
+                                patches_to_remove.append(sub_path)
                                 
                         for k in display_dict:
                             if k not in current_val: patches_to_remove.append(f"{full_path}/{k}")
-                elif isinstance(current_val, list):
+                else:
                     if is_really_changed(current_val, display_val):
                         if is_empty(current_val) or not is_really_changed(current_val, schema_val):
                             patches_to_remove.append(full_path)
@@ -6333,8 +6347,8 @@ class MainWin(QWidget):
                             is_append = False
                             schema_list = schema_val if isinstance(schema_val, list) else []
                             n = len(schema_list)
-
-                            if "__patch" not in full_path and len(current_val) >= n and not is_really_changed(current_val[:n], schema_list):
+                            
+                            if len(current_val) >= n and not is_really_changed(current_val[:n], schema_list):
                                 is_append = True
                                 appended_items = current_val[n:]
                             
@@ -6347,12 +6361,7 @@ class MainWin(QWidget):
                             else:
                                 patches_to_apply[full_path] = current_val
                                 patches_to_remove.append(full_path + "/+")
-                else:
-                    if is_really_changed(current_val, display_val):
-                        if is_empty(current_val) or not is_really_changed(current_val, schema_val):
-                            patches_to_remove.append(full_path)
-                        else:
-                            patches_to_apply[full_path] = current_val
+
         # 底层智能写入引擎
         from ruamel.yaml import YAML
         yaml = YAML(); yaml.preserve_quotes = True; yaml.width = 1024
@@ -6415,6 +6424,22 @@ class MainWin(QWidget):
                 
                 from ruamel.yaml.comments import CommentedMap
                 def set_patch_val(p_dict, path, val):
+                    if path.endswith("/__patch") or path.endswith("/__include"):
+                        base_path, op = path.rsplit('/', 1)
+                        if base_path not in p_dict or not isinstance(p_dict[base_path], dict):
+                            p_dict[base_path] = CommentedMap()
+                        p_dict[base_path][op] = val
+                        
+                        _node = p_dict[base_path]
+                        if "__include" in _node and "__patch" in _node:
+                            _keys = list(_node.keys())
+                            if _keys.index("__include") > _keys.index("__patch"):
+                                _v_patch = _node.pop("__patch")
+                                _node["__patch"] = _v_patch
+                                
+                        if path in p_dict: del p_dict[path] 
+                        return
+                        
                     parts = path.split('/')
                     if path.endswith("/+"):
                         parts = parts[:-2] + [parts[-2] + "/+"]
@@ -6432,6 +6457,15 @@ class MainWin(QWidget):
                     self._safe_assign(p_dict, path, val)
 
                 def del_patch_val(p_dict, path):
+                    if path.endswith("/__patch") or path.endswith("/__include"):
+                        base_path, op = path.rsplit('/', 1)
+                        if base_path in p_dict and isinstance(p_dict[base_path], dict):
+                            if op in p_dict[base_path]:
+                                del p_dict[base_path][op]
+                                if not p_dict[base_path]: del p_dict[base_path] # 空了连母节点一起删
+                        if path in p_dict: del p_dict[path]
+                        return
+                        
                     if path in p_dict:
                         del p_dict[path]
                         return
@@ -6449,27 +6483,10 @@ class MainWin(QWidget):
                                 del _node[sub_parts[-1]]
                             except: pass
                             return
-                for p in patches_to_remove: del_patch_val(custom_data['patch'], p)
                 for p, v in patches_to_apply.items(): set_patch_val(custom_data['patch'], p, v)
+                for p in patches_to_remove: del_patch_val(custom_data['patch'], p)
                     
                 if 'patch' in custom_data and not custom_data['patch']: del custom_data['patch']
-
-                with open(custom_path, 'w', encoding='utf-8') as f: yaml.dump(custom_data, f)
-                def _force_order(d):
-                    if isinstance(d, dict):
-                        if "__include" in d and "__patch" in d:
-                            _keys = list(d.keys())
-                            if _keys.index("__include") > _keys.index("__patch"):
-                                _v = d.pop("__patch")
-                                d["__patch"] = _v
-                        for v in d.values():
-                            if isinstance(v, (dict, list)): _force_order(v)
-                    elif isinstance(d, list):
-                        for item in d:
-                            if isinstance(item, (dict, list)): _force_order(item)
-                
-                if 'patch' in custom_data:
-                    _force_order(custom_data['patch'])
 
                 with open(custom_path, 'w', encoding='utf-8') as f: yaml.dump(custom_data, f)
                 self.log.appendPlainText(f"💾 [补丁] {self.current_custom_file} 已保存! (更新 {len(patches_to_apply)} 项, 剔除 {len(patches_to_remove)} 项)")
