@@ -6294,10 +6294,9 @@ class MainWin(QWidget):
                     patches_to_apply[full_path] = current_val
             else:
                 if v_type in ["reverse_algebra", "english_algebra", "mixed_algebra"]:
-                    if is_really_changed(current_val, schema_val):
-                        patches_to_apply[full_path] = current_val
-                    else:
-                        patches_to_remove.append(full_path)
+                    patches_to_apply[full_path] = current_val
+                    patches_to_remove.append(full_path + "/__patch")
+                    patches_to_remove.append(full_path + "/__include")
                 elif isinstance(current_val, dict):
                     raw_patch = self._yaml_cache.get(target_id, ({}, {}))[1]
                     is_full_override = full_path in raw_patch and isinstance(raw_patch[full_path], dict)
@@ -6469,8 +6468,8 @@ class MainWin(QWidget):
                                 del _node[sub_parts[-1]]
                             except: pass
                             return
-                for p, v in patches_to_apply.items(): set_patch_val(custom_data['patch'], p, v)
                 for p in patches_to_remove: del_patch_val(custom_data['patch'], p)
+                for p, v in patches_to_apply.items(): set_patch_val(custom_data['patch'], p, v)
                 if 'patch' in custom_data and not custom_data['patch']: del custom_data['patch']
                 def _force_order(d):
                     if isinstance(d, dict):
