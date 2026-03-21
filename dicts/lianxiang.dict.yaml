@@ -10376,7 +10376,7 @@ sort: by_weight
 苄氨基嘌呤	biàn ān jī piào lìng	3
 苄氨基乙醇	biàn ān jī yǐ chún	3
 变安山岩化	biàn ān shān yán huà	1
-便把令来行	biàn bǎ lìng lái xíng	1
+便把令来行	biàn bǎ lìng lái háng	1
 变比测试仪	biàn bǐ cè shì yí	1
 扁鼻奇非鲫	biǎn bí qí fēi jì	1
 边边边定理	biān biān biān dìng lǐ	1
@@ -25124,7 +25124,7 @@ sort: by_weight
 持续渔获量	chí xù yú huò liàng	1
 尺血管损伤	chǐ xuè guǎn sǔn shāng	1
 吃学习的苦	chī xué xí de kǔ	1
-吃鸭血粉丝	chī yā xiě fěn sī	1
+吃鸭血粉丝	chī yā xuè fěn sī	1
 迟延履行金	chí yán lǚ xíng jīn	1
 炽焰咆哮虎	chì yàn páo xiào hǔ	1
 吃药不忌嘴	chī yào bú jì zuǐ	1
@@ -174935,6 +174935,8 @@ sort: by_weight
 十香软筋散	shí xiāng ruǎn jīn sàn	1
 实相寺昭雄	shí xiàng sì zhāo xióng	1
 视向速度仪	shì xiàng sù dù yí	1
+是相同的吧	shì xiāng tóng de ba	2
+是想通的吧	shì xiǎng tōng de ba	1
 十香止痛丸	shí xiāng zhǐ tòng wán	1
 十相自在图	shí xiāng zì zài tú	1
 是小产权房	shì xiǎo chǎn quán fáng	1
@@ -185893,6 +185895,7 @@ sort: by_weight
 太小题大做	tài xiǎo tí dà zuò	1
 太谢谢您了	tài xiè xie nín le	1
 胎心监护仪	tāi xīn jiān hù yí	1
+太忻一体化	tài xīn yì tǐ huà	1
 太兴茶餐厅	tài xīng chá cān tīng	1
 太幸福了吧	tài xìng fú le ba	1
 太兴新世代	tài xīng xīn shì dài	1
@@ -224424,10 +224427,10 @@ sort: by_weight
 亚硝酸盐类	yà xiāo suān yán lèi	1
 亚硝酸乙酯	yà xiāo suān yǐ zhǐ	3
 亚硝酰硫酸	yà xiāo xiān liú suān	3
-鸭血粉丝汤	yā xiě fěn sī tāng	1
-鸭血麻辣烫	yā xiě má là tàng	1
 鸭形玻璃注	yā xíng bō li zhù	1
 亚选择公理	yà xuǎn zé gōng lǐ	1
+鸭血粉丝汤	yā xuè fěn sī tāng	1
+鸭血麻辣烫	yā xuè má là tàng	1
 亚循环方程	yà xún huán fāng chéng	1
 压延加工业	yā yán jiā gōng yè	1
 亚演替顶极	yà yǎn tì dǐng jí	1
@@ -230293,7 +230296,6 @@ sort: by_weight
 一见不钟情	yí jiàn bù zhōng qíng	1
 意见陈述书	yì jiàn chén shù shū	1
 已建成项目	yǐ jiàn chéng xiàng mù	1
-一简对多繁	yì jiǎn duì duō fán	1
 一简对多繁	yì jiǎn duì duō fán	1
 意见反馈表	yì jiàn fǎn kuì biǎo	1
 意见反馈会	yì jiàn fǎn kuì huì	1
@@ -340886,7 +340888,7 @@ sort: by_weight
 爱巴尔二氏病毒	ài bā ěr èr shì bìng dú	1
 爱把鸳鸯两处笼	ài bǎ yuān yāng liǎng chù lóng	1
 艾比二氏综合征	ài bǐ èr shì zōng hé zhēng	1
-挨鞭子不挨棍子	āi biān zi bù āi gùn zi	1
+挨鞭子不挨棍子	ái biān zi bù āi gùn zi	1
 爱伯斯坦氏异常	ài bó sī tǎn shì yì cháng	1
 埃布施泰因异常	āi bù shī tài yīn yì cháng	1
 挨打的狗去咬鸡	ái dǎ de gǒu qù yǎo jī	1
@@ -353829,7 +353831,7 @@ sort: by_weight
 回生第一丹胶囊	huí shēng dì yī dān jiāo náng	1
 回苏剂意外中毒	huí sū jì yì wài zhòng dú	1
 惠特灵大道战役	huì tè líng dà dào zhàn yì	1
-回味鸭血粉丝汤	huí wèi yā xiě fěn sī tāng	1
+回味鸭血粉丝汤	huí wèi yā xuè fěn sī tāng	1
 茴香橘核丸水丸	huí xiāng jú hé wán shuǐ wán	1
 回旋镖装甲车族	huí xuán biāo zhuāng jiǎ chē zú	1
 会厌病变切除术	huì yàn bìng biàn qiē chú shù	1
@@ -354939,7 +354941,7 @@ sort: by_weight
 锦葵花素葡糖苷	jǐn kuí huā sù pú táng gān	1
 锦葵色素葡糖苷	jǐn kuí sè sù pú táng gān	1
 金莲清热泡腾片	jīn lián qīng rè pào téng piàn	1
-金陵鸭血粉丝汤	jīn líng yā xiě fěn sī tāng	1
+金陵鸭血粉丝汤	jīn líng yā xuè fěn sī tāng	1
 金龙补肾口服液	jīn lóng bǔ shèn kǒu fú yè	1
 金龙胆草浸膏片	jīn lóng dǎn cǎo jìn gāo piàn	1
 金龙胆草提取物	jīn lóng dǎn cǎo tí qǔ wù	1

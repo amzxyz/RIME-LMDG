@@ -7451,7 +7451,7 @@ sort: by_weight
 王竟携酒	wáng jìng xié jiǔ	1
 王迥十九	wáng jiǒng shí jiǔ	1
 罔克攸遂	wǎng kè yōu suì	1
-往来行言	wǎng lái xíng yán	1
+往来行言	wǎng lái háng yán	1
 忘了临行	wàng le lín xíng	1
 王丽真女	wáng lì zhēn nǚ	1
 王门关业	wáng mén guān yè	1
@@ -36631,7 +36631,7 @@ sort: by_weight
 大块熔群品	dà kuài róng qún pǐn	1
 大隗七圣迷	dà kuí qī shèng mí	1
 大来敢遐望	dà lái gǎn xiá wàng	1
-大来行可期	dà lái xíng kě qī	1
+大来行可期	dà lái háng kě qī	1
 大浪固尝谙	dà làng gù cháng ān	1
 沓浪竞奔注	dá làng jìng bēn zhù	1
 大乐本天地	dà lè běn tiān dì	1
@@ -124367,6 +124367,7 @@ sort: by_weight
 情来不自觉	qíng lái bú zì jué	1
 顷来多谑浪	qǐng lái duō xuè làng	1
 顷来废章句	qǐng lái fèi zhāng jù	1
+顷来行已远	qǐng lái háng yǐ yuǎn	1
 晴来景物新	qíng lái jǐng wù xīn	1
 情来偏似醉	qíng lái piān sì zuì	1
 顷来迫世务	qǐng lái pò shì wù	1
@@ -124374,7 +124375,6 @@ sort: by_weight
 顷来树嘉政	qǐng lái shù jiā zhèng	1
 晴来望尽通	qíng lái wàng jìn tōng	1
 擎来问夫婿	qíng lái wèn fū xù	1
-顷来行已远	qǐng lái xíng yǐ yuǎn	1
 顷来压尘网	qǐng lái yā chén wǎng	1
 晴来意态行	qíng lái yì tài xíng	1
 擎来玉盘里	qíng lái yù pán lǐ	1
@@ -162762,6 +162762,7 @@ sort: by_weight
 往来度飞鞯	wǎng lái dù fēi jiān	1
 往来供十吏	wǎng lái gōng shí lì	1
 往来固无咎	wǎng lái gù wú jiù	1
+往来行旅弊	wǎng lái háng lǚ bì	1
 往来何时息	wǎng lái hé shí xī	1
 往来互栖托	wǎng lái hù qī tuō	1
 往来花不发	wǎng lái huā bù fā	1
@@ -162790,7 +162791,6 @@ sort: by_weight
 往来相告报	wǎng lái xiāng gào bào	1
 往来乡信断	wǎng lái xiāng xìn duàn	1
 往来忻莫间	wǎng lái xīn mò jiān	1
-往来行旅弊	wǎng lái xíng lǚ bì	1
 往来吁可怪	wǎng lái xū kě guài	1
 往来杨柳陌	wǎng lái yáng liǔ mò	1
 往来亦诚亡	wǎng lái yì chéng wáng	1
@@ -168058,6 +168058,7 @@ sort: by_weight
 我来歌此事	wǒ lái gē cǐ shì	1
 我来顾渚源	wǒ lái gù zhǔ yuán	1
 我来观雅制	wǒ lái guān yǎ zhì	1
+我来行正倦	wǒ lái háng zhèng juàn	1
 我来黄冈下	wǒ lái huáng gāng xià	1
 我来荐苹蘩	wǒ lái jiàn píng fán	1
 我来交趾郡	wǒ lái jiāo zhǐ jùn	1
@@ -168094,7 +168095,6 @@ sort: by_weight
 我来限于役	wǒ lái xiàn yú yì	1
 我来闲濯足	wǒ lái xián zhuó zú	1
 我来幸因依	wǒ lái xìng yīn yī	1
-我来行正倦	wǒ lái xíng zhèng juàn	1
 我来宣城郡	wǒ lái xuān chéng jùn	1
 我来寻梓慎	wǒ lái xún zǐ shèn	1
 我来严冬时	wǒ lái yán dōng shí	1
@@ -262905,6 +262905,7 @@ sort: by_weight
 近来海内为长句	jìn lái hǎi nèi wéi cháng jù	1
 今来海上升高望	jīn lái hǎi shàng shēng gāo wàng	1
 近来还有长卿无	jìn lái hái yǒu zhǎng qīng wú	1
+近来行到门前少	jìn lái háng dào mén qián shǎo	1
 近来何处有吾愁	jìn lái hé chù yǒu wú chóu	1
 今来何谢袁家郎	jīn lái hé xiè yuán jiā láng	1
 近来胡骑休南牧	jìn lái hú qí xiū nán mù	1
@@ -262941,7 +262942,6 @@ sort: by_weight
 今来县宰加朱绂	jīn lái xiàn zǎi jiā zhū fú	1
 近来乡梦不多成	jìn lái xiāng mèng bù duō chéng	1
 今来萧瑟万井空	jīn lái xiāo sè wàn jǐng kōng	1
-近来行到门前少	jìn lái xíng dào mén qián shǎo	1
 近来学得赵清献	jìn lái xué dé zhào qīng xiàn	1
 今来已恐邻人非	jīn lái yǐ kǒng lín rén fēi	1
 近来又报秋风紧	jìn lái yòu bào qiū fēng jǐn	1
@@ -263182,7 +263182,7 @@ sort: by_weight
 尽弃其学而学焉	jìn qì qí xué ér xué yān	1
 劲气森爽竹竿竦	jìn qì sēn shuǎng zhú gān sǒng	1
 金气肃肃开星躔	jīn qì sù sù kāi xīng chán	1
-金砌雨来行步滑	jīn qì yǔ lái xíng bù huá	1
+金砌雨来行步滑	jīn qì yǔ lái háng bù huá	1
 劲气坐中掩虎口	jìn qì zuò zhōng yǎn hǔ kǒu	1
 尽遣降来拜御沟	jìn qiǎn jiàng lái bài yù gōu	1
 襟前林壑敛暝色	jīn qián lín hè liǎn míng sè	1
@@ -263598,7 +263598,7 @@ sort: by_weight
 尽是死生离别处	jìn shì sǐ shēng lí bié chù	1
 晋室闻琴下寥廓	jìn shì wén qín xià liáo kuò	1
 尽是湘妃泣泪痕	jìn shì xiāng fēi qì lèi hén	1
-尽是向来行乐事	jìn shì xiàng lái xíng lè shì	1
+尽是向来行乐事	jìn shì xiàng lái háng lè shì	1
 尽是猩蜃与熊白	jìn shì xīng shèn yǔ xióng bái	1
 今时亦弃青云士	jīn shí yì qì qīng yún shì	1
 今世有此古丈夫	jīn shì yǒu cǐ gǔ zhàng fū	1
@@ -283241,7 +283241,7 @@ sort: by_weight
 劝农冠盖闹如云	quàn nóng guān gài nào rú yún	1
 劝农使者不汝容	quàn nóng shǐ zhě bù rǔ róng	1
 劝农使者古丈夫	quàn nóng shǐ zhě gǔ zhàng fū	1
-劝农使者来行水	quàn nóng shǐ zhě lái xíng shuǐ	1
+劝农使者来行水	quàn nóng shǐ zhě lái háng shuǐ	1
 泉葩映兮烟茑临	quán pā yìng xī yān niǎo lín	1
 劝葺城头五月凉	quàn qì chéng tóu wǔ yuè liáng	1
 权奇蹴踏无尘埃	quán qí cù tà wú chén āi	1
@@ -306050,6 +306050,7 @@ sort: by_weight
 行来北凉岁月深	xíng lái běi liáng suì yuè shēn	1
 兴来促席唯同舍	xìng lái cù xí wéi tóng shě	1
 醒来还爱浮萍草	xǐng lái hái ài fú píng cǎo	1
+行来行去尽哀怜	xíng lái háng qù jìn āi lián	1
 兴来活脔牛心熟	xìng lái huó luán niú xīn shú	1
 兴来兼酌酒开颜	xìng lái jiān zhuó jiǔ kāi yán	1
 兴来今日尽君欢	xìng lái jīn rì jìn jūn huān	1
@@ -306063,7 +306064,6 @@ sort: by_weight
 兴来下笔到奇景	xìng lái xià bǐ dào qí jǐng	1
 兴来小豁胸襟气	xìng lái xiǎo huō xiōng jīn qì	1
 兴来携妓恣经过	xìng lái xié jì zì jīng guò	1
-行来行去尽哀怜	xíng lái xíng qù jìn āi lián	1
 兴来一挥百纸尽	xìng lái yì huī bǎi zhǐ jìn	1
 兴来逸气如涛涌	xìng lái yì qì rú tāo yǒng	1
 兴来吟咏从成癖	xìng lái yín yǒng cóng chéng pǐ	1
@@ -310060,7 +310060,7 @@ sort: by_weight
 一饭且从吾党说	yí fàn qiě cóng wú dǎng shuō	1
 一番通籍清都阙	yì fān tōng jí qīng dōu quē	1
 一饭未曾留俗客	yí fàn wèi céng liú sú kè	1
-已烦仙袂来行雨	yǐ fán xiān mèi lái xíng yǔ	1
+已烦仙袂来行雨	yǐ fán xiān mèi lái háng yǔ	1
 一番匀了一番多	yì fān yún le yì fān duō	1
 一放狂歌一破颜	yí fàng kuáng gē yí pò yán	1
 一方明月可中庭	yì fāng míng yuè kě zhōng tíng	1
