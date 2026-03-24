@@ -57,7 +57,7 @@ from PySide6.QtWidgets import (
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.0.0beta"
+TOOL_VERSION = "v3.0.1beta"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -1219,6 +1219,24 @@ SCHEMA_META_CONFIG = {
                     "disable_user_dict_for_patterns": "不记录调频的正则 (填列表)"
                 }
             }
+        }
+    },
+    "user_predict": {
+        "_root_key": "user_predict",
+        "_title": "🔮 用户长句预测 (user_predict)",
+        "_desc": "控制上屏后自动预测与输入时上下文调频的高级行为。",
+        "nodes": {
+            "db_name": {"title": "数据库名称", "type": "str", "desc": "默认: lua/predict (将生成 predict.userdb)"},
+            "enable_post_predict": {"title": "上屏后预测", "type": "bool", "desc": "开启后，上屏词汇后会自动给出后续词联想"},
+            "enable_context_reorder": {"title": "输入时调频", "type": "bool", "desc": "开启后，会根据前文动态调整当前候选词的权重"},
+            "max_candidates": {"title": "最大联想词数", "type": "int", "desc": "屏幕最多显示的联想词数量"},
+            "max_predictions": {"title": "连续预测限制", "type": "int", "desc": "连续触发预测的最高次数限制"},
+            "expiry_days": {"title": "绝对寿命(天)", "type": "int", "desc": "不命中则物理销毁"},
+            "activation_days": {"title": "激活期限(天)", "type": "int", "desc": "冷冻期内输入第2次转正"},
+            "max_memory_branches": {"title": "记忆分支上限", "type": "int", "desc": "单前缀最多保留后续预测的数量"},
+            "decay_rate": {"title": "记忆衰减率", "type": "str", "desc": "如 0.85 (单日时间权重打85折)"},
+            "enable_predict_space": {"title": "联想时空格上屏空格", "type": "bool", "desc": "true: 联想时按空格上屏空格\nfalse: 默认行为（一般手机开电脑关）"},
+            "context_timeout": {"title": "上文超时(毫秒)", "type": "int", "desc": "超过该时间未输入，视为上下文断裂 (默认: 5000)"}
         }
     },
     "custom_phrase": {
@@ -4985,24 +5003,43 @@ class MainWin(QWidget):
         combo.addItems(["开启 (true)", "关闭 (false)"])
         combo.setStyleSheet("border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px;")
         
-        # 智能读取当前配置 (优先读补丁)
-        d_data, d_patch = self._yaml_cache.get("wanxiang.schema.yaml", ({}, {}))
-        
-        def get_val(path_str, def_v):
-            if isinstance(d_patch, dict):
-                if path_str in d_patch: return d_patch[path_str]
-                parts = path_str.split('/')
-                if len(parts) == 2 and parts[0] in d_patch and isinstance(d_patch[parts[0]], dict):
-                    if parts[1] in d_patch[parts[0]]: return d_patch[parts[0]][parts[1]]
-            val = _get_nested_val(d_data, path_str)
-            return val if val is not None else def_v
+        # 🌟 智能三重探测：探测 default(看谁是主力) -> 探测 patch(看用户改没改) -> 探测 schema(看底层默认)
+        base_data, base_patch = self._yaml_cache.get("wanxiang.schema.yaml", ({}, {}))
+        pro_data, pro_patch = self._yaml_cache.get("wanxiang_pro.schema.yaml", ({}, {}))
+        def_data, def_patch = self._yaml_cache.get("default.yaml", ({}, {}))
 
-        # 默认开启，增加安全的真假校验 (防 "false" 字符串引发的 Bug)
-        current_val_raw = get_val("translator/enable_user_dict", True)
-        if isinstance(current_val_raw, str):
-            current_val = current_val_raw.lower() == "true"
+        # 1. 揪出当前主力方案是谁
+        active_schema = "wanxiang_pro" # 默认假定是 Pro
+        schema_list = def_patch.get("schema_list") if isinstance(def_patch, dict) and "schema_list" in def_patch else _get_nested_val(def_data, "schema_list", [])
+        
+        if isinstance(schema_list, list):
+            for s in schema_list:
+                s_id = s.get("schema") if isinstance(s, dict) else ""
+                if s_id in ["wanxiang", "wanxiang_pro"]:
+                    active_schema = s_id
+                    break
+        
+        # 2. 提取配置的通用函数 (带严格布尔强转)
+        def extract_bool(patch_dict, schema_data, fallback_val):
+            # 优先读补丁
+            if isinstance(patch_dict, dict):
+                v = patch_dict.get("translator/enable_user_dict")
+                if v is None and "translator" in patch_dict and isinstance(patch_dict["translator"], dict):
+                    v = patch_dict["translator"].get("enable_user_dict")
+                if v is not None:
+                    return str(v).lower() == 'true' if isinstance(v, str) else bool(v)
+            # 其次读底层文件
+            if isinstance(schema_data, dict):
+                v = _get_nested_val(schema_data, "translator/enable_user_dict")
+                if v is not None:
+                    return str(v).lower() == 'true' if isinstance(v, str) else bool(v)
+            return fallback_val
+
+        # 3. 完美对应：你是谁，我就读谁的真实数据
+        if active_schema == "wanxiang_pro":
+            current_val = extract_bool(pro_patch, pro_data, True)
         else:
-            current_val = bool(current_val_raw)
+            current_val = extract_bool(base_patch, base_data, True)
 
         combo.setCurrentIndex(0 if current_val else 1)
         

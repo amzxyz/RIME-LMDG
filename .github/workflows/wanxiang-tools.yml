@@ -7,6 +7,8 @@ on:
     paths:
       - 'pypinyin/**'
       - 'wanxiang-tools.py'
+      - 'wanxiang-updater/**'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 jobs:
@@ -16,8 +18,8 @@ jobs:
   build-linux:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       
@@ -94,7 +96,6 @@ jobs:
           
           dpkg-deb --build dist/deb dist/wanxiang-tools_linux_amd64.deb
 
-      # 【关键修复】整理所有文件到一个扁平目录，避免目录结构混乱
       - name: Prepare Artifacts
         run: |
           mkdir -p upload_stage
@@ -102,13 +103,15 @@ jobs:
           cp dist/*.deb upload_stage/
           cp wanxiang-tools.png upload_stage/
 
-      # 上传扁平化后的目录
       - name: Upload Linux Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: linux-dist
           path: upload_stage/*
 
+  # =================================================
+  # 2. Arch Linux 构建
+  # =================================================
   package-arch:
     needs: build-linux
     runs-on: ubuntu-latest
@@ -122,14 +125,12 @@ jobs:
 
       - name: Build Arch Package
         run: |
-          # 1. 预安装依赖
           pacman -Sy --noconfirm
           pacman -S --noconfirm libglvnd libxcb libxkbcommon fontconfig git
 
           cd build_dir
           chmod +x wanxiang-tools
           
-          # 生成 desktop
           cat > wanxiang-tools.desktop <<EOF
           [Desktop Entry]
           Name=Wanxiang Tools
@@ -147,9 +148,7 @@ jobs:
 
           VERSION="1.0.${{ github.run_number }}"
           
-          # 2. 生成 PKGBUILD (加入 !debug 选项)
           cat > PKGBUILD <<EOF
-          # Maintainer: Auto Build <ci@github>
           pkgname=wanxiang-tools
           pkgver=${VERSION}
           pkgrel=1
@@ -161,7 +160,6 @@ jobs:
           source=("wanxiang-tools" "wanxiang-tools.png" "wanxiang-tools.desktop")
           sha256sums=('SKIP' 'SKIP' 'SKIP')
           
-          # 【关键】禁用 debug 包生成，禁用 strip (因为二进制已经是 strip 过的了)
           options=('!debug' '!strip') 
 
           package() {
@@ -174,22 +172,22 @@ jobs:
           useradd builder -m
           chown -R builder:builder .
           su builder -c "makepkg -f --noconfirm"
-          
           mv *.pkg.tar.zst ../
 
       - name: Upload Arch Package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: arch-pkg
           path: ./*.pkg.tar.zst
+
   # =================================================
   # 3. Windows 构建
   # =================================================
   build-windows:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       
@@ -215,7 +213,7 @@ jobs:
             wanxiang-tools.py
 
       - name: Upload Windows Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: windows-dist
           path: dist/*.exe
@@ -226,8 +224,8 @@ jobs:
   build-macos:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - run: pip install PySide6 requests pyinstaller pillow ruamel.yaml
@@ -253,26 +251,63 @@ jobs:
           zip -r wanxiang-tools-macos.zip wanxiang-tools.app
 
       - name: Upload macOS Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: macos-dist
           path: dist/*.zip
 
   # =================================================
-  # 5. 统一发布
+  # 5. Android APK 构建 (Kotlin + Compose)
+  # =================================================
+  build-android:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📦 Checkout 代码
+        uses: actions/checkout@v5
+
+      - name: ☕ 设置 JDK 17
+        uses: actions/setup-java@v5
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: 🐘 设置官方 Gradle 环境
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.5'
+
+      - name: 🔐 解码签名文件
+        run: |
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > wanxiang-updater/app/release.jks
+
+      - name: 🔨 编译 Release 正式版 APK
+        working-directory: ./wanxiang-updater
+        env:
+          KEYSTORE_FILE: release.jks
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: gradle assembleRelease
+
+      - name: Upload Android Artifact
+        uses: actions/upload-artifact@v5
+        with:
+          name: android-apk
+          path: wanxiang-updater/app/build/outputs/apk/release/app-release.apk
+
+  # =================================================
+  # 6. 统一发布到 GitHub Release (覆盖 tool 标签)
   # =================================================
   publish:
-    needs: [build-linux, package-arch, build-windows, build-macos]
+    needs: [build-linux, package-arch, build-windows, build-macos, build-android]
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      # 从 wanxiang-tools.py 中提取版本号
       - name: Extract Version
         run: |
-          # 自动匹配 TOOL_VERSION = "v2.8.0" 或单引号，提取其中的 v2.8.0
           EXTRACTED_VER=$(grep -E "^TOOL_VERSION\s*=" wanxiang-tools.py | awk -F'['\''"]' '{print $2}')
           echo "从源码中提取到版本号: $EXTRACTED_VER"
           echo "TOOL_VER=$EXTRACTED_VER" >> $GITHUB_ENV
@@ -283,11 +318,13 @@ jobs:
           path: release_files
           merge-multiple: true
 
-      - name: Clean up artifacts
+      - name: Clean up and Rename Artifacts
         run: |
           cd release_files
           rm -f *.png
           rm -f *-debug-*.pkg.tar.zst
+          # 给安卓包重命名，看起来更专业
+          mv app-release.apk Wanxiang-Updater-Android.apk || true
           ls -R
 
       - name: Delete old Release and Tag
@@ -305,18 +342,21 @@ jobs:
           target_commitish: ${{ github.sha }}
           name: "万象词库-刷拼音-辅助码工具 - ${{ env.TOOL_VER }}"
           body: |
-            ## 功能说明
-            - 支持rime用户词库与固定词库格式，用于帮助维护自己的挂接词库与非万象词库生成的用户词库迁移到万象。
+            ## 💻 桌面端工具功能
+            - 支持 rime 用户词库与固定词库格式，用于帮助维护自己的挂接词库与非万象词库生成的用户词库迁移到万象。
             - 公共拼音标注工具 (pypinyin GUI简版)。
-            - 支持更新万象各方案、词库、模型，在线更新方案GUI。
+            - 支持更新万象各方案、词库、模型，在线更新方案 GUI。
+
+            ## 📱 安卓移动端 (万象更新 App)
+            - 断点续传、纯原生 Kotlin + Compose 极简编译。
+            - 一键下载并部署全量更新、方案、词库、模型至同文/Fcitx5目录。
 
             ## 📦 Linux 安装说明
             - **Debian/Ubuntu**: 下载 `.deb` 包，运行 `sudo dpkg -i wanxiang-tools*.deb`
             - **Arch Linux/Manjaro**:  下载 `.pkg.tar.zst` 包，运行:
               `sudo pacman -U wanxiang-tools-*.pkg.tar.zst`
-            - **通用版**: 下载无后缀文件，运行 `chmod +x` 后启动。
 
             ## 🍎 macOS 用户注意
-            本版本适用于 Apple Silicon (M1/M2/M3)。如果提示“文件损坏”：
+            如果提示“文件损坏”：
             `sudo xattr -rd com.apple.quarantine /path/to/wanxiang-tools-macos`
           files: release_files/*
