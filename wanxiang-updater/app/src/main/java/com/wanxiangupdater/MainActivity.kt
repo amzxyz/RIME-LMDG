@@ -8,9 +8,8 @@ import android.os.Environment
 import android.provider.Settings
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -50,13 +49,25 @@ class TaskState(val title: String, val url: String) {
 }
 
 class MainActivity : ComponentActivity() {
+
+    var customRimeUri by mutableStateOf<Uri?>(null)
+    
+    private val dirPickerLauncher = registerForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
+        if (uri != null) {
+            contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
+            customRimeUri = uri
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && !Environment.isExternalStorageManager()) {
             val intent = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION)
             intent.data = Uri.parse("package:$packageName")
             startActivity(intent)
         }
+        
         setContent {
             MaterialTheme(
                 colorScheme = lightColorScheme(
@@ -65,7 +76,11 @@ class MainActivity : ComponentActivity() {
                 )
             ) {
                 Surface(modifier = Modifier.fillMaxSize(), color = Color(0xFFFAFAFA)) {
-                    WanxiangDownloaderApp()
+                    WanxiangDownloaderApp(
+                        customRimeUri = customRimeUri,
+                        onSelectCustomDir = { dirPickerLauncher.launch(null) },
+                        onResetDir = { customRimeUri = null }
+                    )
                 }
             }
         }
@@ -74,7 +89,11 @@ class MainActivity : ComponentActivity() {
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
-fun WanxiangDownloaderApp() {
+fun WanxiangDownloaderApp(
+    customRimeUri: Uri?,
+    onSelectCustomDir: () -> Unit,
+    onResetDir: () -> Unit
+) {
     var isPro by remember { mutableStateOf(true) }
     var auxScheme by remember { mutableStateOf("zrm") }
     var downloadSource by remember { mutableStateOf("CNB") }
@@ -91,8 +110,41 @@ fun WanxiangDownloaderApp() {
 
     Column(modifier = Modifier.padding(16.dp).verticalScroll(rememberScrollState())) {
         Text("📱 万象拼音更新器", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
-        Text("v1.1 • 断点续传 & 智能解压引擎", fontSize = 12.sp, color = Color.Gray)
+        Text("v1.2 • 断点续传 & 原生解压", fontSize = 12.sp, color = Color.Gray)
         Spacer(modifier = Modifier.height(16.dp))
+
+        Card(
+            colors = CardDefaults.cardColors(containerColor = MorandiLightGreen),
+            border = CardDefaults.outlinedCardBorder(true),
+            elevation = CardDefaults.cardElevation(2.dp),
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Column(modifier = Modifier.padding(16.dp)) {
+                Text("📁 部署路径", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
+                Spacer(modifier = Modifier.height(4.dp))
+                Text(
+                    text = if (customRimeUri == null) "默认: 手机根目录 /rime" else "自定义: ${customRimeUri.path?.substringAfterLast(":")}",
+                    fontSize = 13.sp, color = Color.DarkGray, maxLines = 2, overflow = TextOverflow.Ellipsis
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    OutlinedButton(
+                        onClick = onSelectCustomDir,
+                        modifier = Modifier.weight(1f).height(36.dp),
+                        contentPadding = PaddingValues(0.dp)
+                    ) { Text("选择自定义目录", fontSize = 12.sp) }
+                    
+                    if (customRimeUri != null) {
+                        TextButton(
+                            onClick = onResetDir,
+                            modifier = Modifier.height(36.dp),
+                            contentPadding = PaddingValues(horizontal = 8.dp)
+                        ) { Text("恢复默认", fontSize = 12.sp, color = Color.Gray) }
+                    }
+                }
+            }
+        }
+        Spacer(modifier = Modifier.height(12.dp))
 
         Card(
             colors = CardDefaults.cardColors(containerColor = Color.White),
@@ -183,7 +235,7 @@ fun WanxiangDownloaderApp() {
         val modelUrl = if (downloadSource == "CNB") "$cnbModel/wanxiang-lts-zh-hans.gram" else "$ghModel/wanxiang-lts-zh-hans.gram"
 
         val tasksMap = listOf(
-            "🚀 全量更新 (推荐)" to listOf(schemaUrl, dictUrl, modelUrl),
+            "🚀 全量更新" to listOf(schemaUrl, dictUrl, modelUrl),
             "⚙️ 仅方案组件" to listOf(schemaUrl),
             "🕮 仅词库组件" to listOf(dictUrl),
             "🧠 仅语法模型" to listOf(modelUrl)
@@ -217,49 +269,74 @@ fun WanxiangDownloaderApp() {
         }
 
         Text("执行下载与覆盖:", fontWeight = FontWeight.Bold, color = Color.DarkGray, modifier = Modifier.padding(bottom = 8.dp))
-        tasksMap.forEach { (name, urls) ->
-            Button(
-                onClick = {
-                    if (!isDownloading) {
-                        coroutineScope.launch {
-                            isDownloading = true
-                            activeTasks = urls.map { url -> 
-                                val fName = url.substringAfterLast("/")
-                                val title = when {
-                                    fName.contains("dicts") -> "词库包 ($fName)"
-                                    fName.contains("gram") -> "语法模型 ($fName)"
-                                    else -> "主方案 ($fName)"
-                                }
-                                TaskState(title, url) 
-                            }
-                            
-                            for (task in activeTasks) {
-                                downloadAndDeployTask(task, githubToken)
-                                if (task.isError) break 
-                            }
-                            isDownloading = false
-                        }
+        
+        Column(modifier = Modifier.fillMaxWidth()) {
+            for (i in tasksMap.indices step 2) {
+                Row(modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    val task1 = tasksMap[i]
+                    Button(
+                        onClick = { executeTasks(task1.second, coroutineScope, { isDownloading = it }, { activeTasks = it }, githubToken, customRimeUri) },
+                        modifier = Modifier.weight(1f).height(48.dp),
+                        enabled = !isDownloading,
+                        colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen),
+                        shape = RoundedCornerShape(8.dp)
+                    ) { Text(task1.first, fontSize = 14.sp, fontWeight = FontWeight.Bold) }
+
+                    if (i + 1 < tasksMap.size) {
+                        val task2 = tasksMap[i + 1]
+                        Button(
+                            onClick = { executeTasks(task2.second, coroutineScope, { isDownloading = it }, { activeTasks = it }, githubToken, customRimeUri) },
+                            modifier = Modifier.weight(1f).height(48.dp),
+                            enabled = !isDownloading,
+                            colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen),
+                            shape = RoundedCornerShape(8.dp)
+                        ) { Text(task2.first, fontSize = 14.sp, fontWeight = FontWeight.Bold) }
+                    } else {
+                        Spacer(modifier = Modifier.weight(1f))
                     }
-                },
-                modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp).height(48.dp),
-                enabled = !isDownloading,
-                colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen),
-                shape = RoundedCornerShape(8.dp)
-            ) {
-                Text(name, fontSize = 15.sp, fontWeight = FontWeight.Bold)
+                }
             }
         }
         Spacer(modifier = Modifier.height(30.dp))
     }
 }
 
-suspend fun downloadAndDeployTask(task: TaskState, token: String) {
+fun executeTasks(
+    urls: List<String>, scope: kotlinx.coroutines.CoroutineScope,
+    setDownloading: (Boolean) -> Unit, setTasks: (List<TaskState>) -> Unit,
+    token: String, customUri: Uri?
+) {
+    scope.launch {
+        setDownloading(true)
+        val activeTasks = urls.map { url -> 
+            val fName = url.substringAfterLast("/")
+            val title = when {
+                fName.contains("dicts") -> "词库包 ($fName)"
+                fName.contains("gram") -> "语法模型 ($fName)"
+                else -> "主方案 ($fName)"
+            }
+            TaskState(title, url) 
+        }
+        setTasks(activeTasks)
+        
+        for (task in activeTasks) {
+            downloadAndDeployTask(task, token, customUri)
+            if (task.isError) break 
+        }
+        setDownloading(false)
+    }
+}
+
+suspend fun downloadAndDeployTask(task: TaskState, token: String, customUri: Uri?) {
     withContext(Dispatchers.IO) {
-        val rimeDirs = listOf(
-            File(Environment.getExternalStorageDirectory(), "rime"),
-            File(Environment.getExternalStorageDirectory(), "Android/data/com.osfans.trime/files/rime")
-        )
-        val rimeDir = rimeDirs.firstOrNull { it.exists() } ?: rimeDirs[0]
+        
+        val rimeDir = if (customUri != null) {
+            val path = customUri.path?.replaceFirst(Regex("^/tree/.*?/document/primary:"), "/storage/emulated/0/")
+            if (path != null) File(path) else File(Environment.getExternalStorageDirectory(), "rime")
+        } else {
+            File(Environment.getExternalStorageDirectory(), "rime")
+        }
+        
         if (!rimeDir.exists()) rimeDir.mkdirs()
 
         val fileName = task.url.substringAfterLast("/")
@@ -335,20 +412,23 @@ suspend fun downloadAndDeployTask(task: TaskState, token: String) {
             return@withContext
         }
 
+        // 🌟 核心清理：没有花里胡哨的寻址，直接就地解压！
         try {
             withContext(Dispatchers.Main) { task.status = "正在解压部署..."; task.progress = 1.0f }
             if (fileName.endsWith(".zip")) {
                 val isDictZip = fileName.contains("dicts")
-                val extractDir = File(rimeDir, "wanxiang_tmp_ext")
-                if (extractDir.exists()) extractDir.deleteRecursively()
-                extractDir.mkdirs()
+                
+                // 判断：如果是词库 zip，就解压到 rime/dicts；否则解压到当前根目录
+                val targetDir = if (isDictZip) File(rimeDir, "dicts") else rimeDir
+                if (!targetDir.exists()) targetDir.mkdirs()
 
                 ZipInputStream(tmpFile.inputStream()).use { zis ->
                     var entry = zis.nextEntry
                     while (entry != null) {
-                        val file = File(extractDir, entry.name)
-                        if (entry.isDirectory) file.mkdirs()
-                        else {
+                        val file = File(targetDir, entry.name)
+                        if (entry.isDirectory) {
+                            file.mkdirs()
+                        } else {
                             file.parentFile?.mkdirs()
                             FileOutputStream(file).use { fos -> zis.copyTo(fos) }
                         }
@@ -357,26 +437,6 @@ suspend fun downloadAndDeployTask(task: TaskState, token: String) {
                     }
                 }
                 tmpFile.delete()
-
-                fun copyContentsTo(srcDir: File, destDir: File) {
-                    if (!destDir.exists()) destDir.mkdirs()
-                    srcDir.listFiles()?.forEach { child -> child.copyRecursively(File(destDir, child.name), overwrite = true) }
-                }
-
-                if (isDictZip) {
-                    var dictRoot = extractDir
-                    extractDir.walkTopDown().forEach { file ->
-                        if (file.name.endsWith(".dict.yaml")) { dictRoot = file.parentFile!!; return@forEach }
-                    }
-                    copyContentsTo(dictRoot, File(rimeDir, "dicts"))
-                } else {
-                    var schemaRoot = extractDir
-                    extractDir.walkTopDown().forEach { file ->
-                        if (file.name == "default.yaml" || file.name == "rime.lua") { schemaRoot = file.parentFile!!; return@forEach }
-                    }
-                    copyContentsTo(schemaRoot, rimeDir)
-                }
-                extractDir.deleteRecursively()
             } else {
                 val finalFile = File(rimeDir, fileName)
                 if (finalFile.exists()) finalFile.delete()
