@@ -323,89 +323,139 @@ fun executeTasks(urls: List<String>, scope: kotlinx.coroutines.CoroutineScope, s
 suspend fun downloadAndDeployTask(task: TaskState, token: String, customUri: Uri?, context: Context) {
     withContext(Dispatchers.IO) {
         val stagingDir = File(context.cacheDir, "wanxiang_staging")
-        if (stagingDir.exists()) stagingDir.deleteRecursively()
-        stagingDir.mkdirs()
+        if (!stagingDir.exists()) stagingDir.mkdirs()
+        
         val fileName = task.url.substringAfterLast("/")
         val tmpFile = File(stagingDir, "$fileName.tmp")
         
         var success = false
-        try {
-            val url = URL(task.url)
-            val conn = url.openConnection() as HttpURLConnection
-            conn.setRequestProperty("User-Agent", "Rime-Wanxiang-Android")
-            
-            // 🚨 修复点：这下 GitHub Token 终于起效了！
-            if (task.url.contains("github.com") && token.isNotBlank()) {
-                conn.setRequestProperty("Authorization", "Bearer $token")
-            }
-            
-            conn.connect()
-            if (conn.responseCode != 200) throw Exception("HTTP ${conn.responseCode}")
-            
-            val totalSize = conn.contentLength.toLong()
-            conn.inputStream.use { input ->
-                FileOutputStream(tmpFile).use { output ->
-                    val data = ByteArray(16384)
-                    var downloaded = 0L
-                    var count: Int
-                    while (input.read(data).also { count = it } != -1) {
-                        downloaded += count
-                        output.write(data, 0, count)
-                        withContext(Dispatchers.Main) {
-                            task.progress = downloaded.toFloat() / totalSize
-                            task.status = "${String.format("%.1f", downloaded/1024.0/1024.0)}MB"
+        var lastErrorMsg = ""
+
+        // 🌟 基因修复 1：真·断点续传与 3 次重试机制回归
+        for (attempt in 1..3) {
+            try {
+                withContext(Dispatchers.Main) { task.status = if (attempt > 1) "重试中($attempt/3)" else "连接中..." }
+                var downloadedLen = if (tmpFile.exists()) tmpFile.length() else 0L
+
+                val url = URL(task.url)
+                val conn = url.openConnection() as HttpURLConnection
+                conn.setRequestProperty("User-Agent", "Rime-Wanxiang-Android")
+                if (task.url.contains("github.com") && token.isNotBlank()) {
+                    conn.setRequestProperty("Authorization", "Bearer $token")
+                }
+                // 告诉服务器：从我断开的地方接着传！
+                if (downloadedLen > 0) conn.setRequestProperty("Range", "bytes=$downloadedLen-")
+                conn.connect()
+
+                val responseCode = conn.responseCode
+                val isAppend = responseCode == HttpURLConnection.HTTP_PARTIAL // 206 才是续传
+                
+                if (responseCode != 200 && responseCode != 206) {
+                    if (responseCode == 416) { tmpFile.delete(); continue } // 范围错误，删了重下
+                    throw Exception("HTTP $responseCode")
+                }
+                
+                if (!isAppend && downloadedLen > 0) {
+                    downloadedLen = 0L
+                    tmpFile.delete()
+                }
+
+                val contentLength = conn.contentLength.toLong()
+                val totalSize = if (contentLength < 0) -1L else if (isAppend) downloadedLen + contentLength else contentLength
+
+                conn.inputStream.use { input ->
+                    // isAppend = true 确保不会把之前下好的清空
+                    FileOutputStream(tmpFile, isAppend).use { output ->
+                        val data = ByteArray(16384)
+                        var count: Int
+                        while (input.read(data).also { count = it } != -1) {
+                            downloadedLen += count
+                            output.write(data, 0, count)
+                            withContext(Dispatchers.Main) {
+                                task.progress = if (totalSize > 0) downloadedLen.toFloat() / totalSize else 0.5f
+                                task.status = "${String.format("%.1f", downloadedLen/1024.0/1024.0)}MB"
+                            }
                         }
                     }
                 }
+                success = true
+                break // 成功了就跳出重试循环
+            } catch (e: Exception) {
+                lastErrorMsg = e.message ?: "网络异常"
+                delay(1000)
             }
-            success = true
-        } catch (e: Exception) {
-            withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 下载失败: ${e.message}" }
         }
 
-        if (success) {
-            try {
-                withContext(Dispatchers.Main) { task.status = "正在部署..." }
-                val extractDir = File(stagingDir, "extracted").apply { mkdirs() }
-                if (fileName.endsWith(".zip")) {
-                    ZipInputStream(tmpFile.inputStream()).use { zis ->
-                        var entry = zis.nextEntry
-                        while (entry != null) {
-                            val f = File(extractDir, entry.name)
-                            if (entry.isDirectory) f.mkdirs() else {
-                                f.parentFile?.mkdirs()
-                                FileOutputStream(f).use { zis.copyTo(it) }
-                            }
-                            entry = zis.nextEntry
-                        }
-                    }
-                } else tmpFile.copyTo(File(extractDir, fileName))
+        if (!success) {
+            withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 下载失败: $lastErrorMsg" }
+            return@withContext
+        }
 
-                if (customUri != null) {
-                    val rootDoc = DocumentFile.fromTreeUri(context, customUri)!!
-                    val targetDoc = if (fileName.contains("dicts")) rootDoc.findFile("dicts") ?: rootDoc.createDirectory("dicts")!! else rootDoc
-                    fun copySaf(src: File, dest: DocumentFile) {
-                        src.listFiles()?.forEach { file ->
-                            if (file.isDirectory) copySaf(file, dest.findFile(file.name) ?: dest.createDirectory(file.name)!!)
-                            else {
-                                dest.findFile(file.name)?.delete()
-                                dest.createFile("*/*", file.name)?.let { doc ->
-                                    context.contentResolver.openOutputStream(doc.uri)?.use { out -> file.inputStream().use { it.copyTo(out) } }
+        try {
+            withContext(Dispatchers.Main) { task.status = "正在解压..." }
+            val extractDir = File(stagingDir, "extracted_${System.currentTimeMillis()}").apply { mkdirs() }
+            
+            if (fileName.endsWith(".zip")) {
+                ZipInputStream(tmpFile.inputStream()).use { zis ->
+                    var entry = zis.nextEntry
+                    while (entry != null) {
+                        val f = File(extractDir, entry.name)
+                        if (entry.isDirectory) f.mkdirs() else {
+                            f.parentFile?.mkdirs()
+                            FileOutputStream(f).use { zis.copyTo(it) }
+                        }
+                        entry = zis.nextEntry
+                    }
+                }
+            } else tmpFile.copyTo(File(extractDir, fileName))
+
+            // 🌟 基因修复 2：智能去套娃（极其关键！）
+            // 检查解压出来的文件夹里，是不是只包了一个孤独的根目录
+            var realSrcDir = extractDir
+            val subFiles = extractDir.listFiles()
+            if (subFiles != null && subFiles.size == 1 && subFiles[0].isDirectory) {
+                // 如果发现套娃，直接扒掉外衣，深入核心目录！
+                realSrcDir = subFiles[0] 
+            }
+
+            withContext(Dispatchers.Main) { task.status = "正在覆盖部署..." }
+            
+            if (customUri != null) {
+                val rootDoc = DocumentFile.fromTreeUri(context, customUri) ?: throw Exception("授权失效")
+                val isDict = task.url.contains("dicts")
+                val targetDoc = if (isDict) rootDoc.findFile("dicts") ?: rootDoc.createDirectory("dicts")!! else rootDoc
+                
+                fun copySaf(src: File, dest: DocumentFile) {
+                    src.listFiles()?.forEach { file ->
+                        if (file.isDirectory) {
+                            copySaf(file, dest.findFile(file.name) ?: dest.createDirectory(file.name)!!)
+                        } else {
+                            dest.findFile(file.name)?.delete() // 写入前必删，防止冲突
+                            dest.createFile("*/*", file.name)?.let { doc ->
+                                context.contentResolver.openOutputStream(doc.uri)?.use { out -> 
+                                    file.inputStream().use { it.copyTo(out) } 
                                 }
                             }
                         }
                     }
-                    copySaf(extractDir, targetDoc)
-                } else {
-                    val rimeDir = File(Environment.getExternalStorageDirectory(), "rime")
-                    val target = if (fileName.contains("dicts")) File(rimeDir, "dicts") else rimeDir
-                    extractDir.copyRecursively(target, true)
                 }
-                withContext(Dispatchers.Main) { task.isFinished = true; task.status = "✅ 完成" }
-            } catch (e: Exception) {
-                withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 部署失败" }
+                copySaf(realSrcDir, targetDoc)
+            } else {
+                // 默认根目录逻辑
+                val rimeDir = File(Environment.getExternalStorageDirectory(), "rime")
+                val target = if (task.url.contains("dicts")) File(rimeDir, "dicts") else rimeDir
+                if (!target.exists()) target.mkdirs()
+                // 把“核心文件”覆盖过去，绝对不再套娃
+                realSrcDir.copyRecursively(target, overwrite = true)
             }
+            
+            withContext(Dispatchers.Main) { task.isFinished = true; task.status = "✅ 部署完成" }
+            tmpFile.delete() // 成功后清理下载的压缩包
+        } catch (e: Exception) {
+            e.printStackTrace()
+            withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 部署失败" }
+        } finally {
+            stagingDir.deleteRecursively()
         }
-        stagingDir.deleteRecursively()
     }
 }
