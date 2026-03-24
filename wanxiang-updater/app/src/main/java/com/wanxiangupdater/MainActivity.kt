@@ -213,6 +213,22 @@ fun WanxiangDownloaderApp(
                     RadioButton(selected = downloadSource == "GitHub", onClick = { downloadSource = "GitHub" })
                     Text("GitHub", fontSize = 14.sp)
                 }
+
+                if (downloadSource == "GitHub") {
+                    OutlinedTextField(
+                        value = githubToken,
+                        onValueChange = { githubToken = it },
+                        label = { Text("GitHub Token (可选, 防限流)", fontSize = 12.sp) },
+                        visualTransformation = PasswordVisualTransformation(),
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
+                        modifier = Modifier.fillMaxWidth().height(60.dp),
+                        singleLine = true,
+                        colors = OutlinedTextFieldDefaults.colors(
+                            focusedBorderColor = MorandiGreen,
+                            focusedLabelColor = MorandiDarkGreen
+                        )
+                    )
+                }
             }
         }
 
@@ -221,7 +237,7 @@ fun WanxiangDownloaderApp(
         // 🔗 核心链接生成逻辑
         val schemeStr = if (isPro) auxScheme else "base"
         
-        // 🚦 核心分流：正式版用嗅探的 Tag，预览版用固定 Tag
+        // 🚦 主方案分流：正式版用嗅探的 Tag，预览版用固定 Tag
         val cnbTag = if (updateChannel == "Stable") latestStableTag else "v1.0.0"
         val ghTag = if (updateChannel == "Stable") latestStableTag else "dict-nightly"
 
@@ -230,8 +246,15 @@ fun WanxiangDownloaderApp(
             "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$activeTag"
             else "https://github.com/amzxyz/rime_wanxiang/releases/download/$activeTag"
 
+        // 🚨 词库强制分流：无论正式还是预览，词库永远走固定的预览版标签
+        val dictTag = if (downloadSource == "CNB") "v1.0.0" else "dict-nightly"
+        val dictBaseUrl = if (downloadSource == "CNB") 
+            "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$dictTag"
+            else "https://github.com/amzxyz/rime_wanxiang/releases/download/$dictTag"
+
+        // 组装最终链接
         val schemaUrl = "$baseDownloadUrl/rime-wanxiang-$schemeStr${if(isPro) "-fuzhu" else ""}.zip"
-        val dictUrl = "$baseDownloadUrl/${if(isPro) "pro-$schemeStr-fuzhu" else "base"}-dicts.zip"
+        val dictUrl = "$dictBaseUrl/${if(isPro) "pro-$schemeStr-fuzhu" else "base"}-dicts.zip"
         val modelUrl = if (downloadSource == "CNB") 
             "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/model/wanxiang-lts-zh-hans.gram"
             else "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
@@ -310,6 +333,12 @@ suspend fun downloadAndDeployTask(task: TaskState, token: String, customUri: Uri
             val url = URL(task.url)
             val conn = url.openConnection() as HttpURLConnection
             conn.setRequestProperty("User-Agent", "Rime-Wanxiang-Android")
+            
+            // 🚨 修复点：这下 GitHub Token 终于起效了！
+            if (task.url.contains("github.com") && token.isNotBlank()) {
+                conn.setRequestProperty("Authorization", "Bearer $token")
+            }
+            
             conn.connect()
             if (conn.responseCode != 200) throw Exception("HTTP ${conn.responseCode}")
             
@@ -331,7 +360,7 @@ suspend fun downloadAndDeployTask(task: TaskState, token: String, customUri: Uri
             }
             success = true
         } catch (e: Exception) {
-            withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 下载失败" }
+            withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 下载失败: ${e.message}" }
         }
 
         if (success) {
