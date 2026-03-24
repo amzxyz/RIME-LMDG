@@ -4997,8 +4997,13 @@ class MainWin(QWidget):
             val = _get_nested_val(d_data, path_str)
             return val if val is not None else def_v
 
-        # 默认开启
-        current_val = get_val("translator/enable_user_dict", True)
+        # 默认开启，增加安全的真假校验 (防 "false" 字符串引发的 Bug)
+        current_val_raw = get_val("translator/enable_user_dict", True)
+        if isinstance(current_val_raw, str):
+            current_val = current_val_raw.lower() == "true"
+        else:
+            current_val = bool(current_val_raw)
+
         combo.setCurrentIndex(0 if current_val else 1)
         
         c_lay.addWidget(combo)
@@ -5030,19 +5035,42 @@ class MainWin(QWidget):
         edit.setFixedHeight(34); edit.setFixedWidth(180)
         edit.setStyleSheet("border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px;")
         
-        # 智能读取当前配置 (优先读补丁)
-        d_data, d_patch = self._yaml_cache.get("wanxiang.schema.yaml", ({}, {}))
+        # 探测 patch(看用户改没改) -> 探测 schema(看底层默认)
+        base_data, base_patch = self._yaml_cache.get("wanxiang.schema.yaml", ({}, {}))
+        pro_data, pro_patch = self._yaml_cache.get("wanxiang_pro.schema.yaml", ({}, {}))
+        def_data, def_patch = self._yaml_cache.get("default.yaml", ({}, {}))
         
-        def get_val(path_str, def_v):
-            if isinstance(d_patch, dict):
-                if path_str in d_patch: return d_patch[path_str]
-                parts = path_str.split('/')
-                if len(parts) == 2 and parts[0] in d_patch and isinstance(d_patch[parts[0]], dict):
-                    if parts[1] in d_patch[parts[0]]: return d_patch[parts[0]][parts[1]]
-            val = _get_nested_val(d_data, path_str)
-            return val if val is not None else def_v
+        # 1. 揪出当前主力方案是谁
+        active_schema = "wanxiang_pro" # 默认假定是 Pro
+        schema_list = def_patch.get("schema_list") if isinstance(def_patch, dict) and "schema_list" in def_patch else _get_nested_val(def_data, "schema_list", [])
+        
+        if isinstance(schema_list, list):
+            for s in schema_list:
+                s_id = s.get("schema") if isinstance(s, dict) else ""
+                if s_id in ["wanxiang", "wanxiang_pro"]:
+                    active_schema = s_id
+                    break # 找到排在最前面的万象方案，认定为主力
+                    
+        # 2. 提取配置的通用函数
+        def extract_dict(patch_dict, schema_data, fallback_name):
+            # 优先读用户补丁
+            if isinstance(patch_dict, dict):
+                v = patch_dict.get("translator/dictionary")
+                if not v and "translator" in patch_dict and isinstance(patch_dict["translator"], dict):
+                    v = patch_dict["translator"].get("dictionary")
+                if v: return v
+            # 其次读底层文件
+            if isinstance(schema_data, dict):
+                v = _get_nested_val(schema_data, "translator/dictionary")
+                if v: return v
+            return fallback_name
 
-        current_val = get_val("translator/dictionary", "wanxiang")
+        # 3. 完美对应：你是谁，我就读谁的真实数据
+        if active_schema == "wanxiang_pro":
+            current_val = extract_dict(pro_patch, pro_data, "wanxiang_pro")
+        else:
+            current_val = extract_dict(base_patch, base_data, "wanxiang")
+
         edit.setText(str(current_val))
         
         c_lay.addWidget(edit)
@@ -5057,7 +5085,7 @@ class MainWin(QWidget):
         def validate(text):
             t = text.strip()
             if not t:
-                msg = f"❌ 不能为空！请输入词库名称（恢复默认请填 wanxiang）。\n{desc}"
+                msg = f"❌ 不能为空！请输入词库名称（恢复默认请填 wanxiang 或 wanxiang_pro）。\n{desc}"
                 lbl.setStyleSheet("color: #d9534f; font-weight: bold; font-size: 13px; padding: 4px;")
             elif not t.replace("_", "").isalnum():
                 msg = f"❌ 格式错误！词库名只能包含字母、数字和下划线。\n{desc}"
@@ -5236,7 +5264,7 @@ class MainWin(QWidget):
         self._ui_cache.setdefault("VIRTUAL_GLOBAL", {}).setdefault("widgets", {})["reverse_lookup"] = edit
         tree._py_refs.extend([container, edit, lbl])
     def _check_conflict_base(self, target_symbols, ignore_sends, lbl, item, check_alphabet=True):
-        """共用的底层冲突扫描引擎：支持正则免疫与编码集开关"""
+        """共用的底层冲突扫描引擎：支持正则免疫与编码集、分隔符开关"""
         if not target_symbols:
             msg = "✨ 安全：当前选项无系统级冲突风险\n(实时检测按键是否被占用)"
             lbl.setText(msg); lbl.setStyleSheet("color: #61A165; font-size: 13px; padding: 4px;")
@@ -5251,12 +5279,20 @@ class MainWin(QWidget):
         for fname, (data, patch) in self._yaml_cache.items():
             if fname in IGNORE_SCHEMAS: continue
             
-            # 1. 查输入编码集 (仅在需要时检查)
+            # 1. 查输入编码集、分隔符、首字母 (仅在需要时检查)
             if check_alphabet:
                 alpha = str(_get_nested_val(data, "speller/alphabet", ""))
+                delimiter = str(_get_nested_val(data, "speller/delimiter", ""))
+                initials = str(_get_nested_val(data, "speller/initials", ""))
+                
                 for sym in target_symbols:
-                    if len(sym) == 1 and sym in alpha: 
-                        conflicts.append(f"[{fname}] 已被【输入编码集】(alphabet) 占用: '{sym}'")
+                    if len(sym) == 1:
+                        if sym in alpha: 
+                            conflicts.append(f"[{fname}] 已被【输入编码集】(alphabet) 占用: '{sym}'")
+                        if sym in delimiter:
+                            conflicts.append(f"[{fname}] 已被【拼写分隔符】(delimiter) 占用: '{sym}'")
+                        if sym in initials:
+                            conflicts.append(f"[{fname}] 已被【首字母集】(initials) 占用: '{sym}'")
             
             # 2. 查快捷键
             bindings = _get_nested_val(data, "key_binder/bindings", [])
@@ -5740,7 +5776,9 @@ class MainWin(QWidget):
                 v_type = info["type"]
                 w = None
                 if v_type == "bool":
-                    w = QCheckBox("开启"); w.setChecked(bool(val))
+                    w = QCheckBox("开启")
+                    bool_val = str(val).lower() == 'true' if isinstance(val, str) else bool(val)
+                    w.setChecked(bool_val)
                 elif v_type == "select":
                     w = QComboBox(); w.addItems(info["options"]); w.setStyleSheet(style_m); w.setFixedHeight(36)
                     w.setCurrentText("true" if val is True else "false" if val is False else str(val or ""))
@@ -5863,7 +5901,9 @@ class MainWin(QWidget):
                 else: display_text = str(curr_v if curr_v is not None else "")
                 real_w = QLineEdit(display_text); real_w.setStyleSheet(style_m); real_w.setFixedHeight(36)
             elif v_type == "bool":
-                real_w = QCheckBox("启用"); real_w.setChecked(bool(curr_v))
+                real_w = QCheckBox("启用")
+                bool_val = str(curr_v).lower() == 'true' if isinstance(curr_v, str) else bool(curr_v)
+                real_w.setChecked(bool_val)
             elif v_type == "select":
                 real_w = QComboBox(); real_w.addItems(n_info.get("options", [])); real_w.setStyleSheet(style_m); real_w.setFixedHeight(36)
                 val_str = "true" if curr_v is True else "false" if curr_v is False else str(curr_v) if curr_v is not None else ""
@@ -6064,6 +6104,9 @@ class MainWin(QWidget):
                 elif isinstance(obj, (list, tuple)) or hasattr(obj, 'append'):
                     cleaned = [normalize(x) for x in obj if x is not None and str(x).strip() != ""]
                     return cleaned if cleaned else ""
+                # === [核心修复]：强制将字符串 "true"/"false" 降维打击成纯正的布尔值 ===
+                elif isinstance(obj, str) and obj.lower() in ['true', 'false']:
+                    return obj.lower() == 'true'
                 elif isinstance(obj, bool): return obj
                 elif obj is None: return ""
                 else: return str(obj).strip()
@@ -6692,12 +6735,15 @@ class MainWin(QWidget):
                 for f_name in ["wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
                     base_f_path = os.path.join(rime_dir, f_name)
                     if not os.path.exists(base_f_path): continue 
-
                     target_file = f_name if is_direct else f_name.replace(".schema.yaml", ".custom.yaml")
                     f_path = os.path.join(rime_dir, target_file)
-                    
                     base_data = self._yaml_cache.get(f_name, ({}, {}))[0]
-                    orig_dict = _get_nested_val(base_data, "translator/dictionary", "wanxiang")
+                    schema_default_dict = "wanxiang_pro" if "pro" in f_name else "wanxiang"
+                    orig_dict = _get_nested_val(base_data, "translator/dictionary", schema_default_dict)
+                    if main_dict_val in ["wanxiang", "wanxiang_pro"]:
+                        target_val = schema_default_dict
+                    else:
+                        target_val = main_dict_val
                     
                     if not os.path.exists(f_path) and not is_direct: target_data = {"patch": {}}
                     elif os.path.exists(f_path):
@@ -6716,9 +6762,9 @@ class MainWin(QWidget):
                                 curr = curr[k]
                             if curr.get(keys[-1]) != val: curr[keys[-1]] = val; modified = True
                                 
-                        set_direct("translator/dictionary", main_dict_val)
-                        set_direct("user_dict_set/dictionary", main_dict_val)
-                        set_direct("add_user_dict/dictionary", main_dict_val)
+                        set_direct("translator/dictionary", target_val)
+                        set_direct("user_dict_set/dictionary", target_val)
+                        set_direct("add_user_dict/dictionary", target_val)
                     else:
                         if "patch" not in target_data or target_data["patch"] is None: target_data["patch"] = {}
                         def patch_field(k, nv, bv):
@@ -6727,9 +6773,9 @@ class MainWin(QWidget):
                                 if target_data["patch"].get(k) != nv: self._safe_assign(target_data["patch"], k, nv); modified = True
                             elif k in target_data["patch"]: del target_data["patch"][k]; modified = True
                                     
-                        patch_field("translator/dictionary", main_dict_val, orig_dict)
-                        patch_field("user_dict_set/dictionary", main_dict_val, orig_dict)
-                        patch_field("add_user_dict/dictionary", main_dict_val, orig_dict)
+                        patch_field("translator/dictionary", target_val, orig_dict)
+                        patch_field("user_dict_set/dictionary", target_val, orig_dict)
+                        patch_field("add_user_dict/dictionary", target_val, orig_dict)
 
                     if modified:
                         if _smart_write(f_path, target_data, f_name, is_direct):

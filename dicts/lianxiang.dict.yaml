@@ -10376,7 +10376,7 @@ sort: by_weight
 苄氨基嘌呤	biàn ān jī piào lìng	3
 苄氨基乙醇	biàn ān jī yǐ chún	3
 变安山岩化	biàn ān shān yán huà	1
-便把令来行	biàn bǎ lìng lái háng	1
+便把令来行	biàn bǎ lìng lái xíng	1
 变比测试仪	biàn bǐ cè shì yí	1
 扁鼻奇非鲫	biǎn bí qí fēi jì	1
 边边边定理	biān biān biān dìng lǐ	1
@@ -10419,7 +10419,6 @@ sort: by_weight
 变成樱花树	biàn chéng yīng huā shù	1
 变成有钱人	biàn chéng yǒu qián rén	1
 编程语言类	biān chéng yǔ yán lèi	1
-编程语言之	biān chéng yǔ yán zhī	1
 编程源代码	biān chéng yuán dài mǎ	1
 变成这样了	biàn chéng zhè yàng le	1
 变成左撇子	biàn chéng zuǒ piě zǐ	1
@@ -48582,6 +48581,7 @@ sort: by_weight
 二者病郁冒	èr zhě bìng yù mào	1
 二者的关系	èr zhě de guān xì	1
 二者的结合	èr zhě de jié hé	1
+二者兼可抛	èr zhě jiān kě pāo	1
 二者皆可抛	èr zhě jiē kě pāo	1
 二者可互换	èr zhě kě hù huàn	1
 而这恰恰是	ér zhè qià qià shì	1
@@ -223989,6 +223989,7 @@ sort: by_weight
 雅戈比方程	yǎ gē bǐ fāng chéng	1
 雅戈比矩阵	yǎ gē bǐ jǔ zhèn	1
 雅各布森根	yǎ gè bù sēn gēn	1
+雅各布天梯	yǎ gè bù tiān tī	1
 雅戈尔大道	yǎ gē ěr dà dào	1
 雅戈尔服饰	yǎ gē ěr fú shì	1
 雅戈尔集团	yǎ gē ěr jí tuán	1
@@ -226003,7 +226004,7 @@ sort: by_weight
 眼外肌手术	yǎn wài jī shǒu shù	1
 嬿婉及良时	yàn wǎn jí liáng shí	1
 颜王孙红雷	yán wáng sūn hóng léi	1
-阎王在人间	yán wáng zài rén jiān	1
+阎王在人间	yán wang zài rén jiān	1
 燕尾佛法僧	yàn wěi fó fǎ sēng	1
 岩尾火山群	yán wěi huǒ shān qún	1
 眼纹斑叩甲	yǎn wén bān kòu jiǎ	1
