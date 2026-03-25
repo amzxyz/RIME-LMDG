@@ -323,8 +323,9 @@ jobs:
           cd release_files
           rm -f *.png
           rm -f *-debug-*.pkg.tar.zst
-          # 给安卓包重命名，看起来更专业
-          mv app-release.apk Wanxiang-Updater-Android.apk || true
+          ANDROID_VER=$(grep -E 'versionName\s*=\s*"[^"]+"' ../wanxiang-updater/app/build.gradle.kts | awk -F'"' '{print $2}')
+          echo "提取到安卓版本号: $ANDROID_VER"
+          mv app-release.apk Wanxiang-Updater-Android-v${ANDROID_VER}.apk || true
           ls -R
 
       - name: Delete old Release and Tag

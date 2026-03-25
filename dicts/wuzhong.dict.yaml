@@ -15,7 +15,6 @@ sort: by_weight
 豹属	bào shǔ	80
 鲍属	bào shǔ	70
 鸨属	bǎo shǔ	49
-薄叶	báo yè	343
 贝属	bèi shǔ	351
 鹎属	bēi shǔ	59
 鲾属	bī shǔ	60
@@ -29,14 +28,11 @@ sort: by_weight
 鲳属	chāng shǔ	67
 鲿属	cháng shǔ	48
 梣属	chén shǔ	64
-齿叶	chǐ yè	309
 椆属	chóu shǔ	68
 鯙属	chún shǔ	79
 鹑属	chún shǔ	59
 莼属	chún shǔ	41
 葱属	cōng shǔ	336
-翠叶	cuì yè	341
-大叶	dà yè	498
 稻属	dào shǔ	52
 德属	dé shǔ	417
 貂属	diāo shǔ	78
@@ -46,7 +42,6 @@ sort: by_weight
 鮗属	dōng shǔ	58
 鸫属	dōng shǔ	51
 椴属	duàn shǔ	72
-多叶	duō yè	352
 鳄目	è mù	322
 鳄属	è shǔ	68
 鹗属	è shǔ	66
@@ -79,7 +74,6 @@ sort: by_weight
 黑叶	hēi yè	273
 鸻属	héng shǔ	43
 猴属	hóu shǔ	65
-厚叶	hòu yè	337
 狐属	hú shǔ	67
 鳠属	hù shǔ	47
 桦属	huà shǔ	43
@@ -98,16 +92,12 @@ sort: by_weight
 菅属	jiān shǔ	60
 鳒属	jiān shǔ	51
 鲣属	jiān shǔ	47
-尖叶	jiān yè	381
-剑叶	jiàn yè	302
 鳉属	jiāng shǔ	57
 姜属	jiāng shǔ	54
 椒属	jiāo shǔ	59
 鲸目	jīng mù	332
 菊属	jú shǔ	342
 榉属	jǔ shǔ	70
-菊叶	jú yè	317
-卷叶	juàn yè	351
 蕨属	jué shǔ	396
 栲属	kǎo shǔ	43
 柯属	kē shǔ	60
@@ -257,7 +247,6 @@ sort: by_weight
 鹬属	yù shǔ	41
 鸢属	yuān shǔ	63
 鼋属	yuán shǔ	51
-圆叶	yuán yè	381
 藻属	zǎo shǔ	443
 蚤属	zǎo shǔ	64
 枣属	zǎo shǔ	51

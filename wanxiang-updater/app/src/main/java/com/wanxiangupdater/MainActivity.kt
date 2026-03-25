@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.os.Environment
 import android.provider.Settings
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.AnimatedVisibility
@@ -44,7 +45,6 @@ val MorandiDarkGreen = Color(0xFF49814D)
 val MorandiLightGreen = Color(0xFFF0F5F1)
 val MorandiBorder = Color(0xFFA8C7AA)
 
-// 🌟 对齐：默认的防覆盖正则列表（完美复刻你的 Python 脚本）
 val DEFAULT_EXCLUDE_RULES = listOf(
     """^custom_phrase\.txt$""",
     """.*userdb$""",
@@ -64,14 +64,6 @@ class TaskState(val title: String, val url: String) {
 }
 
 class MainActivity : ComponentActivity() {
-    var customRimeUri by mutableStateOf<Uri?>(null)
-    private val dirPickerLauncher = registerForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
-        if (uri != null) {
-            contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
-            customRimeUri = uri
-        }
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -82,11 +74,7 @@ class MainActivity : ComponentActivity() {
                 )
             ) {
                 Surface(modifier = Modifier.fillMaxSize(), color = Color(0xFFFAFAFA)) {
-                    WanxiangDownloaderApp(
-                        customRimeUri = customRimeUri,
-                        onSelectCustomDir = { dirPickerLauncher.launch(null) },
-                        onResetDir = { customRimeUri = null }
-                    )
+                    WanxiangDownloaderApp()
                 }
             }
         }
@@ -95,25 +83,24 @@ class MainActivity : ComponentActivity() {
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
-fun WanxiangDownloaderApp(
-    customRimeUri: Uri?,
-    onSelectCustomDir: () -> Unit,
-    onResetDir: () -> Unit
-) {
+fun WanxiangDownloaderApp() {
     val context = LocalContext.current
     val sharedPref = context.getSharedPreferences("WanxiangPrefs", Context.MODE_PRIVATE)
 
-    // 对齐：优雅的权限解释弹窗
+    // 获取当前本地版本
+    val localVersionName = remember {
+        try { context.packageManager.getPackageInfo(context.packageName, 0).versionName ?: "1.0" } catch (e: Exception) { "1.0" }
+    }
+
     var showPermissionDialog by remember { 
         mutableStateOf(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && !Environment.isExternalStorageManager()) 
     }
 
     if (showPermissionDialog) {
         AlertDialog(
-            onDismissRequest = { /* 必须做出选择 */ },
+            onDismissRequest = { },
             title = { Text("需要存储访问权限", fontWeight = FontWeight.Bold, fontSize = 18.sp, color = MorandiDarkGreen) },
             text = {
-                // 🚨 修复了你发来的代码里这里漏掉逗号导致报错的问题
                 Text(
                     text = "万象更新器需要【所有文件访问权限】。\n\n" +
                            "这是因为我们需要将最新下载的方案和词库文件，直接写入到您手机根目录的 /rime 文件夹，或小企鹅输入法的私有目录中。",
@@ -142,28 +129,84 @@ fun WanxiangDownloaderApp(
     var auxScheme by remember { mutableStateOf("zrm") }
     var downloadSource by remember { mutableStateOf("CNB") }
     var updateChannel by remember { mutableStateOf("Stable") } 
-    var githubToken by remember { mutableStateOf("") }
     
-    // 🌟 对齐：读取本地保存的正则规则
-    var excludeRulesText by remember { 
-        mutableStateOf(sharedPref.getString("exclude_rules", DEFAULT_EXCLUDE_RULES) ?: DEFAULT_EXCLUDE_RULES) 
+    // 🌟 修复：把 GitHub Token 恢复并带上持久化记忆功能
+    var githubToken by remember { 
+        mutableStateOf(sharedPref.getString("gh_token", "") ?: "") 
     }
+    
+    var excludeRulesText by remember { mutableStateOf(sharedPref.getString("exclude_rules", DEFAULT_EXCLUDE_RULES) ?: DEFAULT_EXCLUDE_RULES) }
     var showAdvancedRules by remember { mutableStateOf(false) }
 
-    // 动态版本探测引擎
+    var savedPaths by remember { 
+        mutableStateOf(sharedPref.getStringSet("deploy_paths", setOf("DEFAULT"))?.toList() ?: listOf("DEFAULT")) 
+    }
+    
+    val dirPickerLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
+        if (uri != null) {
+            context.contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
+            val newPaths = (savedPaths + uri.toString()).distinct()
+            savedPaths = newPaths
+            sharedPref.edit().putStringSet("deploy_paths", newPaths.toSet()).apply()
+        }
+    }
+
+    // 🌟 核心修正：双核雷达逻辑 (增加 Timeout 和 User-Agent 防止 403)
     var latestStableTag by remember { mutableStateOf("v1.0.0") }
+    var cloudVersionName by remember { mutableStateOf("") }
+    var updaterDownloadUrl by remember { mutableStateOf("") }
+    var isCheckingUpdate by remember { mutableStateOf(true) }
+
     LaunchedEffect(Unit) {
         withContext(Dispatchers.IO) {
+            // 1. 探测主方案 Tag
             try {
                 val url = URL("https://api.github.com/repos/amzxyz/rime_wanxiang/releases/latest")
                 val conn = url.openConnection() as HttpURLConnection
+                conn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
+                
+                // 🌟 修复：在云端探测时如果填写了 Token 也带上防限流
+                if (githubToken.isNotBlank()) conn.setRequestProperty("Authorization", "Bearer $githubToken")
+                
+                conn.connectTimeout = 10000
                 conn.connect()
                 if (conn.responseCode == 200) {
                     val content = conn.inputStream.bufferedReader().readText()
-                    val regex = Regex("\"tag_name\"\\s*:\\s*\"([^\"]+)\"")
-                    regex.find(content)?.groupValues?.get(1)?.let { latestStableTag = it }
+                    Regex("\"tag_name\"\\s*:\\s*\"([^\"]+)\"").find(content)?.groupValues?.get(1)?.let { latestStableTag = it }
                 }
             } catch (e: Exception) { e.printStackTrace() }
+
+            // 2. 探测更新器自身 (修复 403 和卡死)
+            try {
+                val toolUrl = URL("https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/tool")
+                val toolConn = toolUrl.openConnection() as HttpURLConnection
+                toolConn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent") // 必须加，否则易报 403
+                
+                // 🌟 修复：在云端探测时如果填写了 Token 也带上防限流
+                if (githubToken.isNotBlank()) toolConn.setRequestProperty("Authorization", "Bearer $githubToken")
+                
+                toolConn.connectTimeout = 10000
+                toolConn.readTimeout = 10000
+                toolConn.connect()
+                
+                if (toolConn.responseCode == 200) {
+                    val content = toolConn.inputStream.bufferedReader().readText()
+                    val json = org.json.JSONObject(content)
+                    val assets = json.getJSONArray("assets")
+                    for (i in 0 until assets.length()) {
+                        val asset = assets.getJSONObject(i)
+                        val name = asset.getString("name")
+                        // 🌟 精准前缀提取：必须 Wanxiang-Updater-Android 开头
+                        if (name.startsWith("Wanxiang-Updater-Android") && name.endsWith(".apk")) {
+                            updaterDownloadUrl = asset.getString("browser_download_url")
+                            val versionMatch = Regex("""Wanxiang-Updater-Android.*?(\d+\.\d+(\.\d+)?)""").find(name)
+                            cloudVersionName = versionMatch?.groupValues?.get(1) ?: ""
+                            break
+                        }
+                    }
+                }
+            } catch (e: Exception) { e.printStackTrace() }
+            isCheckingUpdate = false
         }
     }
 
@@ -171,27 +214,70 @@ fun WanxiangDownloaderApp(
     var activeTasks by remember { mutableStateOf<List<TaskState>>(emptyList()) }
     val coroutineScope = rememberCoroutineScope()
 
-    val auxMap = mapOf(
-        "zrm" to "自然码", "flypy" to "小鹤", "moqi" to "墨奇",
-        "hanxin" to "汉心", "shouyou" to "首右", "tiger" to "虎码", "wubi" to "五笔"
-    )
+    val auxMap = mapOf("zrm" to "自然码", "flypy" to "小鹤", "moqi" to "墨奇", "hanxin" to "汉心", "shouyou" to "首右", "tiger" to "虎码", "wubi" to "五笔")
 
     Column(modifier = Modifier.padding(16.dp).verticalScroll(rememberScrollState())) {
         Text("📱 万象拼音更新器", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
-        Text("v1.8 • 权限提示与护盾全开", fontSize = 12.sp, color = Color.Gray)
+        Text("v$localVersionName • 多核分发 & 自我更新", fontSize = 12.sp, color = Color.Gray)
         Spacer(modifier = Modifier.height(16.dp))
 
-        // 部署路径卡片
+        // 🌟 新增 UI：版本对狙卡片
+        Card(
+            colors = CardDefaults.cardColors(containerColor = Color.White), 
+            border = CardDefaults.outlinedCardBorder(true), 
+            elevation = CardDefaults.cardElevation(2.dp),
+            modifier = Modifier.fillMaxWidth().padding(bottom = 12.dp)
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(12.dp).fillMaxWidth()) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text("🔧 更新器检测", fontWeight = FontWeight.Bold, color = Color.DarkGray, fontSize = 14.sp)
+                    Text(
+                        text = if (isCheckingUpdate) "正在检测云端..." 
+                               else if (cloudVersionName.isEmpty()) "未发现有效更新包"
+                               else if (cloudVersionName > localVersionName) "发现新版本: v$cloudVersionName"
+                               else "已是最新版本",
+                        fontSize = 12.sp, 
+                        color = if (!isCheckingUpdate && cloudVersionName > localVersionName) MorandiGreen else Color.Gray
+                    )
+                }
+                val hasNewVersion = !isCheckingUpdate && cloudVersionName.isNotEmpty() && cloudVersionName > localVersionName
+                Button(
+                    onClick = { if (updaterDownloadUrl.isNotBlank()) context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(updaterDownloadUrl))) },
+                    enabled = hasNewVersion,
+                    colors = ButtonDefaults.buttonColors(containerColor = if (hasNewVersion) MorandiGreen else Color.LightGray),
+                    modifier = Modifier.height(32.dp),
+                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp)
+                ) {
+                    Text(if (hasNewVersion) "立即更新" else "无需操作", fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                }
+            }
+        }
+
+        // 路径展示卡片
         Card(colors = CardDefaults.cardColors(containerColor = MorandiLightGreen), border = CardDefaults.outlinedCardBorder(true), modifier = Modifier.fillMaxWidth()) {
             Column(modifier = Modifier.padding(16.dp)) {
-                Text("📁 部署路径", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
-                Text(text = if (customRimeUri == null) "默认: 手机根目录 /rime" else "自定义: 已通过系统授权", fontSize = 13.sp, color = Color.DarkGray)
+                Text("📁 目标集 (同时分发至以下目录)", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
                 Spacer(modifier = Modifier.height(8.dp))
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    OutlinedButton(onClick = onSelectCustomDir, modifier = Modifier.weight(1f).height(36.dp)) { Text("选择自定义目录", fontSize = 12.sp) }
-                    if (customRimeUri != null) {
-                        TextButton(onClick = onResetDir) { Text("恢复默认", fontSize = 12.sp, color = Color.Gray) }
+                if (savedPaths.isEmpty()) Text("⚠️ 未配置路径", fontSize = 12.sp, color = Color.Red)
+                savedPaths.forEach { pathStr ->
+                    Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
+                        Text(
+                            text = if (pathStr == "DEFAULT") "🎯 默认: 手机根目录 /rime" else "🎯 授权: ${Uri.decode(pathStr).substringAfterLast("%3A")}",
+                            fontSize = 13.sp, color = Color.DarkGray, modifier = Modifier.weight(1f), maxLines = 1, overflow = TextOverflow.Ellipsis
+                        )
+                        TextButton(onClick = { 
+                            val newPaths = savedPaths - pathStr
+                            savedPaths = newPaths
+                            sharedPref.edit().putStringSet("deploy_paths", newPaths.toSet()).apply()
+                        }, contentPadding = PaddingValues(0.dp), modifier = Modifier.height(24.dp)) { Text("移除", fontSize = 12.sp, color = Color.Red) }
                     }
+                }
+                Divider(color = MorandiBorder, modifier = Modifier.padding(vertical = 8.dp))
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    OutlinedButton(onClick = { dirPickerLauncher.launch(null) }, modifier = Modifier.weight(1f).height(36.dp)) { Text("➕ 添加授权目录", fontSize = 12.sp) }
+                    if (!savedPaths.contains("DEFAULT")) TextButton(onClick = { 
+                        savedPaths = savedPaths + "DEFAULT"; sharedPref.edit().putStringSet("deploy_paths", savedPaths.toSet()).apply()
+                    }) { Text("➕ 恢复默认", fontSize = 12.sp, color = MorandiDarkGreen) }
                 }
             }
         }
@@ -211,11 +297,9 @@ fun WanxiangDownloaderApp(
                 Divider(color = MorandiLightGreen, modifier = Modifier.padding(vertical = 8.dp))
                 Text("📦 方案版本", fontWeight = FontWeight.Bold, color = Color.DarkGray)
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    RadioButton(selected = isPro, onClick = { isPro = true })
-                    Text("Pro版 (辅助码)", fontSize = 14.sp)
+                    RadioButton(selected = isPro, onClick = { isPro = true }); Text("Pro版", fontSize = 14.sp)
                     Spacer(modifier = Modifier.width(16.dp))
-                    RadioButton(selected = !isPro, onClick = { isPro = false })
-                    Text("Base版 (纯拼音)", fontSize = 14.sp)
+                    RadioButton(selected = !isPro, onClick = { isPro = false }); Text("Base版", fontSize = 14.sp)
                 }
                 if (isPro) {
                     Divider(color = MorandiLightGreen, modifier = Modifier.padding(vertical = 8.dp))
@@ -229,85 +313,70 @@ fun WanxiangDownloaderApp(
         }
         Spacer(modifier = Modifier.height(12.dp))
 
-        // 🌟 对齐：高级保护规则面板（赋予用户自定义能力）
+        // 高级规则
         Card(colors = CardDefaults.cardColors(containerColor = Color.White), border = CardDefaults.outlinedCardBorder(true), modifier = Modifier.fillMaxWidth()) {
             Column(modifier = Modifier.fillMaxWidth()) {
-                TextButton(
-                    onClick = { showAdvancedRules = !showAdvancedRules },
-                    modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp)
-                ) {
+                TextButton(onClick = { showAdvancedRules = !showAdvancedRules }, modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp)) {
                     Text(if (showAdvancedRules) "▼ 收起护盾配置" else "▶ 展开防覆盖保护配置 (高级)", color = MorandiDarkGreen, fontWeight = FontWeight.Bold)
                 }
                 AnimatedVisibility(visible = showAdvancedRules) {
                     Column(modifier = Modifier.padding(start = 16.dp, end = 16.dp, bottom = 16.dp)) {
-                        Text("如果解压的文件相对路径匹配以下正则，且本地已有该文件，将强制跳过覆盖。每行一个规则：", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 8.dp))
+                        Text("相对路径命中正则且本地已有该文件，强制跳过覆盖：", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 8.dp))
                         OutlinedTextField(
                             value = excludeRulesText,
-                            onValueChange = { 
-                                excludeRulesText = it
-                                sharedPref.edit().putString("exclude_rules", it).apply()
-                            },
+                            onValueChange = { excludeRulesText = it; sharedPref.edit().putString("exclude_rules", it).apply() },
                             modifier = Modifier.fillMaxWidth().height(160.dp),
                             textStyle = androidx.compose.ui.text.TextStyle(fontSize = 12.sp, fontFamily = androidx.compose.ui.text.font.FontFamily.Monospace)
                         )
-                        TextButton(
-                            onClick = { 
-                                excludeRulesText = DEFAULT_EXCLUDE_RULES
-                                sharedPref.edit().putString("exclude_rules", DEFAULT_EXCLUDE_RULES).apply()
-                            },
-                            modifier = Modifier.align(Alignment.End)
-                        ) { Text("恢复默认规则", fontSize = 12.sp, color = Color.Red) }
+                        TextButton(onClick = { 
+                            excludeRulesText = DEFAULT_EXCLUDE_RULES; sharedPref.edit().putString("exclude_rules", DEFAULT_EXCLUDE_RULES).apply()
+                        }, modifier = Modifier.align(Alignment.End)) { Text("恢复默认规则", fontSize = 12.sp, color = Color.Red) }
                     }
                 }
             }
         }
         Spacer(modifier = Modifier.height(12.dp))
 
-        // 下载源配置
+        // 下载源
         Card(colors = CardDefaults.cardColors(containerColor = Color.White), border = CardDefaults.outlinedCardBorder(true), modifier = Modifier.fillMaxWidth()) {
             Column(modifier = Modifier.padding(16.dp)) {
                 Text("🌐 下载源配置", fontWeight = FontWeight.Bold, color = Color.DarkGray)
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    RadioButton(selected = downloadSource == "CNB", onClick = { downloadSource = "CNB" })
-                    Text("CNB", fontSize = 14.sp)
+                    RadioButton(selected = downloadSource == "CNB", onClick = { downloadSource = "CNB" }); Text("CNB", fontSize = 14.sp)
                     Spacer(modifier = Modifier.width(8.dp))
-                    RadioButton(selected = downloadSource == "GitHub", onClick = { downloadSource = "GitHub" })
-                    Text("GitHub", fontSize = 14.sp)
+                    RadioButton(selected = downloadSource == "GitHub", onClick = { downloadSource = "GitHub" }); Text("GitHub", fontSize = 14.sp)
                 }
+                
+                // 🌟 修复：把 GitHub Token 输入框带回来了
                 if (downloadSource == "GitHub") {
+                    Spacer(modifier = Modifier.height(8.dp))
                     OutlinedTextField(
-                        value = githubToken, onValueChange = { githubToken = it },
-                        label = { Text("GitHub Token (可选, 防限流)", fontSize = 12.sp) },
+                        value = githubToken,
+                        onValueChange = { 
+                            githubToken = it
+                            sharedPref.edit().putString("gh_token", it).apply() 
+                        },
+                        label = { Text("GitHub Token (可选，防限流)", fontSize = 12.sp) },
                         visualTransformation = PasswordVisualTransformation(),
                         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                        modifier = Modifier.fillMaxWidth().height(60.dp), singleLine = true
+                        modifier = Modifier.fillMaxWidth().height(56.dp),
+                        singleLine = true
                     )
                 }
             }
         }
         Spacer(modifier = Modifier.height(16.dp))
 
-        // 🔗 核心链接生成逻辑
+        // 核心下载逻辑
         val schemeStr = if (isPro) auxScheme else "base"
-        val cnbTag = if (updateChannel == "Stable") latestStableTag else "v1.0.0"
-        val ghTag = if (updateChannel == "Stable") latestStableTag else "dict-nightly"
-        val activeTag = if (downloadSource == "CNB") cnbTag else ghTag
+        val activeTag = if (downloadSource == "CNB") (if (updateChannel == "Stable") latestStableTag else "v1.0.0") else (if (updateChannel == "Stable") latestStableTag else "dict-nightly")
         val baseDownloadUrl = if (downloadSource == "CNB") "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$activeTag" else "https://github.com/amzxyz/rime_wanxiang/releases/download/$activeTag"
-        
-        // 🚨 词库强制分流
         val dictTag = if (downloadSource == "CNB") "v1.0.0" else "dict-nightly"
         val dictBaseUrl = if (downloadSource == "CNB") "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$dictTag" else "https://github.com/amzxyz/rime_wanxiang/releases/download/$dictTag"
-
         val schemaUrl = "$baseDownloadUrl/rime-wanxiang-$schemeStr${if(isPro) "-fuzhu" else ""}.zip"
         val dictUrl = "$dictBaseUrl/${if(isPro) "pro-$schemeStr-fuzhu" else "base"}-dicts.zip"
         val modelUrl = if (downloadSource == "CNB") "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/model/wanxiang-lts-zh-hans.gram" else "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
-
-        val tasksMap = listOf(
-            "🚀 全量更新" to listOf(schemaUrl, dictUrl, modelUrl),
-            "⚙️ 仅方案组件" to listOf(schemaUrl),
-            "📖 仅词库组件" to listOf(dictUrl),
-            "🧠 仅语法模型" to listOf(modelUrl)
-        )
+        val tasksMap = listOf("🚀 全量更新" to listOf(schemaUrl, dictUrl, modelUrl), "⚙️ 仅方案" to listOf(schemaUrl), "📖 仅词库" to listOf(dictUrl), "🧠 仅模型" to listOf(modelUrl))
 
         AnimatedVisibility(visible = activeTasks.isNotEmpty()) {
             Card(colors = CardDefaults.cardColors(containerColor = MorandiLightGreen), modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp)) {
@@ -332,12 +401,11 @@ fun WanxiangDownloaderApp(
                 rowTasks.forEach { (name, urls) ->
                     Button(
                         onClick = { 
-                            // 🌟 传递动态获取的规则列表给下载引擎
-                            val currentRules = excludeRulesText.lines().filter { it.isNotBlank() }
-                            executeTasks(urls, coroutineScope, { isDownloading = it }, { activeTasks = it }, githubToken, customRimeUri, context, currentRules) 
+                            if (savedPaths.isEmpty()) return@Button 
+                            executeTasks(urls, coroutineScope, { isDownloading = it }, { activeTasks = it }, githubToken, savedPaths, context, excludeRulesText.lines().filter { it.isNotBlank() }) 
                         },
                         modifier = Modifier.weight(1f).height(48.dp),
-                        enabled = !isDownloading,
+                        enabled = !isDownloading && savedPaths.isNotEmpty(),
                         shape = RoundedCornerShape(8.dp)
                     ) { Text(name, fontSize = 13.sp, fontWeight = FontWeight.Bold) }
                 }
@@ -346,77 +414,50 @@ fun WanxiangDownloaderApp(
     }
 }
 
-fun executeTasks(urls: List<String>, scope: kotlinx.coroutines.CoroutineScope, setDownloading: (Boolean) -> Unit, setTasks: (List<TaskState>) -> Unit, token: String, customUri: Uri?, context: Context, rules: List<String>) {
+fun executeTasks(urls: List<String>, scope: kotlinx.coroutines.CoroutineScope, setDownloading: (Boolean) -> Unit, setTasks: (List<TaskState>) -> Unit, token: String, targetPaths: List<String>, context: Context, rules: List<String>) {
     scope.launch {
         setDownloading(true)
         val activeTasks = urls.map { url -> 
             val fName = url.substringAfterLast("/")
-            val title = when {
-                fName.contains("dicts") -> "词库包"
-                fName.contains("gram") -> "模型"
-                else -> "方案"
-            }
-            TaskState("$title ($fName)", url) 
+            TaskState("${if (fName.contains("dicts")) "词库包" else if (fName.contains("gram")) "模型" else "方案"} ($fName)", url) 
         }
         setTasks(activeTasks)
         for (task in activeTasks) {
-            downloadAndDeployTask(task, token, customUri, context, rules)
+            downloadAndDeployTask(task, token, targetPaths, context, rules)
             if (task.isError) break 
         }
         setDownloading(false)
     }
 }
 
-suspend fun downloadAndDeployTask(task: TaskState, token: String, customUri: Uri?, context: Context, rules: List<String>) {
+suspend fun downloadAndDeployTask(task: TaskState, token: String, targetPaths: List<String>, context: Context, rules: List<String>) {
     withContext(Dispatchers.IO) {
-        val stagingDir = File(context.cacheDir, "wanxiang_staging")
-        if (!stagingDir.exists()) stagingDir.mkdirs()
-        
-        val fileName = task.url.substringAfterLast("/")
-        val tmpFile = File(stagingDir, "$fileName.tmp")
-        
+        val stagingDir = File(context.cacheDir, "wanxiang_staging").apply { mkdirs() }
+        val tmpFile = File(stagingDir, "${task.url.substringAfterLast("/")}.tmp")
         var success = false
         var lastErrorMsg = ""
 
-        // 🌟 对齐：真·断点续传与 3 次重试机制
         for (attempt in 1..3) {
             try {
                 withContext(Dispatchers.Main) { task.status = if (attempt > 1) "重试中($attempt/3)" else "连接中..." }
                 var downloadedLen = if (tmpFile.exists()) tmpFile.length() else 0L
-
                 val url = URL(task.url)
                 val conn = url.openConnection() as HttpURLConnection
-                conn.setRequestProperty("User-Agent", "Rime-Wanxiang-Android")
-                if (task.url.contains("github.com") && token.isNotBlank()) {
-                    conn.setRequestProperty("Authorization", "Bearer $token")
-                }
+                conn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
+                
+                // 请求体这里也完好保留了你的 Token 逻辑
+                if (task.url.contains("github.com") && token.isNotBlank()) conn.setRequestProperty("Authorization", "Bearer $token")
                 
                 if (downloadedLen > 0) conn.setRequestProperty("Range", "bytes=$downloadedLen-")
-                conn.connect()
-
-                val responseCode = conn.responseCode
-                val isAppend = responseCode == HttpURLConnection.HTTP_PARTIAL
-                
-                if (responseCode != 200 && responseCode != 206) {
-                    if (responseCode == 416) { tmpFile.delete(); continue } 
-                    throw Exception("HTTP $responseCode")
-                }
-                
-                if (!isAppend && downloadedLen > 0) {
-                    downloadedLen = 0L
-                    tmpFile.delete()
-                }
-
-                val contentLength = conn.contentLength.toLong()
-                val totalSize = if (contentLength < 0) -1L else if (isAppend) downloadedLen + contentLength else contentLength
-
+                conn.connectTimeout = 10000; conn.connect()
+                val isAppend = conn.responseCode == 206
+                if (conn.responseCode != 200 && conn.responseCode != 206) throw Exception("HTTP ${conn.responseCode}")
+                val totalSize = if (isAppend) downloadedLen + conn.contentLength.toLong() else conn.contentLength.toLong()
                 conn.inputStream.use { input ->
                     FileOutputStream(tmpFile, isAppend).use { output ->
-                        val data = ByteArray(16384)
-                        var count: Int
+                        val data = ByteArray(16384); var count: Int
                         while (input.read(data).also { count = it } != -1) {
-                            downloadedLen += count
-                            output.write(data, 0, count)
+                            downloadedLen += count; output.write(data, 0, count)
                             withContext(Dispatchers.Main) {
                                 task.progress = if (totalSize > 0) downloadedLen.toFloat() / totalSize else 0.5f
                                 task.status = "${String.format("%.1f", downloadedLen/1024.0/1024.0)}MB"
@@ -424,113 +465,71 @@ suspend fun downloadAndDeployTask(task: TaskState, token: String, customUri: Uri
                         }
                     }
                 }
-                success = true
-                break 
-            } catch (e: Exception) {
-                lastErrorMsg = e.message ?: "网络异常"
-                delay(1000)
-            }
+                success = true; break 
+            } catch (e: Exception) { lastErrorMsg = e.message ?: "异常"; delay(1000) }
         }
 
-        if (!success) {
-            withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 下载失败: $lastErrorMsg" }
-            return@withContext
-        }
-
-        try {
-            withContext(Dispatchers.Main) { task.status = "正在解压..." }
-            val extractDir = File(stagingDir, "extracted_${System.currentTimeMillis()}").apply { mkdirs() }
-            
-            if (fileName.endsWith(".zip")) {
-                ZipInputStream(tmpFile.inputStream()).use { zis ->
-                    var entry = zis.nextEntry
-                    while (entry != null) {
-                        val f = File(extractDir, entry.name)
-                        if (entry.isDirectory) f.mkdirs() else {
-                            f.parentFile?.mkdirs()
-                            FileOutputStream(f).use { zis.copyTo(it) }
+        if (success) {
+            try {
+                withContext(Dispatchers.Main) { task.status = "部署中..." }
+                val extractDir = File(stagingDir, "extracted_${System.currentTimeMillis()}").apply { mkdirs() }
+                if (task.url.endsWith(".zip")) {
+                    ZipInputStream(tmpFile.inputStream()).use { zis ->
+                        var entry = zis.nextEntry
+                        while (entry != null) {
+                            val f = File(extractDir, entry.name)
+                            if (entry.isDirectory) f.mkdirs() else { f.parentFile?.mkdirs(); FileOutputStream(f).use { zis.copyTo(it) } }
+                            entry = zis.nextEntry
                         }
-                        entry = zis.nextEntry
                     }
-                }
-            } else tmpFile.copyTo(File(extractDir, fileName))
+                } else tmpFile.copyTo(File(extractDir, task.url.substringAfterLast("/")))
 
-            // 🌟 对齐：智能去套娃
-            var realSrcDir = extractDir
-            val subFiles = extractDir.listFiles()
-            if (subFiles != null && subFiles.size == 1 && subFiles[0].isDirectory) {
-                realSrcDir = subFiles[0] 
-            }
+                var realSrcDir = extractDir
+                val subFiles = extractDir.listFiles()
+                if (subFiles != null && subFiles.size == 1 && subFiles[0].isDirectory) realSrcDir = subFiles[0] 
 
-            withContext(Dispatchers.Main) { task.status = "正在覆盖部署..." }
-            
-            // 🌟 对齐：动态编译用户的正则，并带有相对路径处理 (防崩溃设计)
-            val excludeRegexList = rules.mapNotNull { 
-                try { Regex(it) } catch (e: Exception) { null } 
-            }
-
-            if (customUri != null) {
-                val rootDoc = DocumentFile.fromTreeUri(context, customUri) ?: throw Exception("授权失效")
+                val excludeRegexList = rules.mapNotNull { try { Regex(it) } catch (e: Exception) { null } }
                 val isDict = task.url.contains("dicts")
-                val targetDoc = if (isDict) rootDoc.findFile("dicts") ?: rootDoc.createDirectory("dicts")!! else rootDoc
-                
-                fun copySaf(src: File, dest: DocumentFile, currentPath: String = "") {
-                    src.listFiles()?.forEach { file ->
-                        // 动态获取相对路径用于正则验证 (例如: "custom/my.yaml" 或 "sync/log.txt")
-                        val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
-                        
-                        // 🛡️ 护盾触发
-                        if (excludeRegexList.any { it.containsMatchIn(relPath) } && dest.findFile(file.name) != null) {
-                            return@forEach 
-                        }
 
-                        if (file.isDirectory) {
-                            val nextDest = dest.findFile(file.name) ?: dest.createDirectory(file.name)!!
-                            copySaf(file, nextDest, relPath)
-                        } else {
-                            dest.findFile(file.name)?.delete() 
-                            dest.createFile("*/*", file.name)?.let { doc ->
-                                context.contentResolver.openOutputStream(doc.uri)?.use { out -> 
-                                    file.inputStream().use { it.copyTo(out) } 
-                                }
-                            }
+                for (pathStr in targetPaths) {
+                    if (pathStr == "DEFAULT") {
+                        val target = if (isDict) File(Environment.getExternalStorageDirectory(), "rime/dicts") else File(Environment.getExternalStorageDirectory(), "rime")
+                        copyNormal(realSrcDir, target, excludeRegexList)
+                    } else {
+                        val rootDoc = DocumentFile.fromTreeUri(context, Uri.parse(pathStr))
+                        if (rootDoc != null) {
+                            val targetDoc = if (isDict) rootDoc.findFile("dicts") ?: rootDoc.createDirectory("dicts")!! else rootDoc
+                            copySaf(context, realSrcDir, targetDoc, excludeRegexList)
                         }
                     }
                 }
-                copySaf(realSrcDir, targetDoc)
-            } else {
-                val rimeDir = File(Environment.getExternalStorageDirectory(), "rime")
-                val target = if (task.url.contains("dicts")) File(rimeDir, "dicts") else rimeDir
-                if (!target.exists()) target.mkdirs()
-                
-                fun copyNormal(src: File, dest: File, currentPath: String = "") {
-                    src.listFiles()?.forEach { file ->
-                        val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
-                        val targetFile = File(dest, file.name)
-                        
-                        // 🛡️ 护盾触发
-                        if (excludeRegexList.any { it.containsMatchIn(relPath) } && targetFile.exists()) {
-                            return@forEach
-                        }
-                        
-                        if (file.isDirectory) {
-                            targetFile.mkdirs()
-                            copyNormal(file, targetFile, relPath)
-                        } else {
-                            file.copyTo(targetFile, overwrite = true)
-                        }
-                    }
-                }
-                copyNormal(realSrcDir, target)
-            }
-            
-            withContext(Dispatchers.Main) { task.isFinished = true; task.status = "✅ 部署完成" }
-            tmpFile.delete() 
-        } catch (e: Exception) {
-            e.printStackTrace()
-            withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 部署失败" }
-        } finally {
-            stagingDir.deleteRecursively()
+                withContext(Dispatchers.Main) { task.isFinished = true; task.status = "✅ 完成" }
+            } catch (e: Exception) { withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 部署失败" } }
+        } else { withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 下载失败" } }
+        stagingDir.deleteRecursively()
+    }
+}
+
+fun copyNormal(src: File, dest: File, rules: List<Regex>, currentPath: String = "") {
+    if (!dest.exists()) dest.mkdirs()
+    src.listFiles()?.forEach { file ->
+        val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
+        if (rules.any { it.containsMatchIn(relPath) } && File(dest, file.name).exists()) return@forEach
+        if (file.isDirectory) copyNormal(file, File(dest, file.name), rules, relPath)
+        else file.copyTo(File(dest, file.name), true)
+    }
+}
+
+fun copySaf(context: Context, src: File, dest: DocumentFile, rules: List<Regex>, currentPath: String = "") {
+    src.listFiles()?.forEach { file ->
+        val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
+        if (rules.any { it.containsMatchIn(relPath) } && dest.findFile(file.name) != null) return@forEach
+        if (file.isDirectory) {
+            val nextDest = dest.findFile(file.name) ?: dest.createDirectory(file.name)!!
+            copySaf(context, file, nextDest, rules, relPath)
+        } else {
+            dest.findFile(file.name)?.delete()
+            dest.createFile("*/*", file.name)?.let { doc -> context.contentResolver.openOutputStream(doc.uri)?.use { out -> file.inputStream().use { it.copyTo(out) } } }
         }
     }
 }
