@@ -627,32 +627,44 @@ suspend fun downloadAndDeployTask(
                 }
                 val isDict = task.url.contains("dicts")
 
-                // 🌟 核心防御网：给每个路径加隔离舱，互不干扰！
+                // 🌟 核心防御网：给每个路径加隔离舱，并加入幽灵缓存回捞机制！
                 var successCount = 0
                 val errorList = mutableListOf<String>()
 
                 for ((index, pathStr) in targetPaths.withIndex()) {
                     try {
+                        if (index > 0) delay(500) // 双路并发时给硬盘一点喘息时间
                         withContext(Dispatchers.Main) { task.status = "部署目标 ${index + 1}/${targetPaths.size}..." }
+                        
                         if (pathStr == "DEFAULT") {
                             val target = if (isDict) File(Environment.getExternalStorageDirectory(), "rime/dicts") else File(Environment.getExternalStorageDirectory(), "rime")
                             copyNormal(realSrcDir, target, excludeRegexList)
                         } else {
                             val rootDoc = DocumentFile.fromTreeUri(context, Uri.parse(pathStr))
                             if (rootDoc != null) {
-                                val targetDoc = if (isDict) {
-                                    rootDoc.findFile("dicts") ?: rootDoc.createDirectory("dicts") ?: throw Exception("无法创建dicts目录")
-                                } else rootDoc
+                                var targetDoc = rootDoc
+                                if (isDict) {
+                                    // 👻 幽灵缓存对抗：找不到 -> 新建 -> 失败的话强行再找一次！
+                                    var dictsDoc = rootDoc.findFile("dicts")
+                                    if (dictsDoc == null) {
+                                        dictsDoc = rootDoc.createDirectory("dicts")
+                                        if (dictsDoc == null) dictsDoc = rootDoc.findFile("dicts") 
+                                    }
+                                    if (dictsDoc != null) {
+                                        targetDoc = dictsDoc
+                                    } else {
+                                        throw Exception("SAF底层拒绝访问或创建dicts")
+                                    }
+                                }
                                 copySaf(context, realSrcDir, targetDoc, excludeRegexList)
                             } else {
-                                throw Exception("授权已失效")
+                                throw Exception("授权目录已失效")
                             }
                         }
                         successCount++
                     } catch (e: Exception) {
                         e.printStackTrace()
                         val pathName = if (pathStr == "DEFAULT") "默认" else "授权${index + 1}"
-                        // 🌟 把 e.message 换成更详细的错误捕获，就算是 NullPointerException 也能显示出来！
                         val errMsg = e.message ?: e.javaClass.simpleName
                         errorList.add("$pathName($errMsg)")
                     }
@@ -676,10 +688,7 @@ suspend fun downloadAndDeployTask(
                 withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 解压或准备部署失败" } 
             }
         } else { 
-            withContext(Dispatchers.Main) { 
-                task.isError = true
-                task.status = "❌ 下载失败: $lastErrorMsg" 
-            } 
+            withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 下载失败: $lastErrorMsg" } 
         }
         stagingDir.deleteRecursively()
     }
@@ -702,14 +711,16 @@ fun copyNormal(src: File, dest: File, rules: List<Regex>, currentPath: String = 
         if (file.isDirectory) {
             copyNormal(file, targetFile, rules, relPath)
         } else {
-            // 物理级强力斩杀
-            if (targetFile.exists()) targetFile.delete()
+            // 🔪 物理级强力斩杀：不管成不成功，先发个 delete 指令打碎系统文件锁
+            if (targetFile.exists()) {
+                targetFile.delete()
+            }
             file.copyTo(targetFile, overwrite = true)
         }
     }
 }
 
-// 🌟 完美防崩溃版 SAF 复制逻辑 (消灭了所有的 !!)
+// 🌟 对抗安卓 SAF 幽灵缓存的完全体复制逻辑
 fun copySaf(context: Context, src: File, dest: DocumentFile, rules: List<Regex>, currentPath: String = "") {
     src.listFiles()?.forEach { file ->
         val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
@@ -720,32 +731,35 @@ fun copySaf(context: Context, src: File, dest: DocumentFile, rules: List<Regex>,
         }
         
         if (file.isDirectory) {
-            // 安全获取或创建目录，如果都失败抛出明确异常，绝不闪退
+            // 👻 幽灵缓存对抗：找不到 -> 新建 -> 失败的话强行再找一次！
             var nextDest = dest.findFile(file.name)
             if (nextDest == null) {
                 nextDest = dest.createDirectory(file.name)
+                if (nextDest == null) nextDest = dest.findFile(file.name)
             }
             if (nextDest != null) {
                 copySaf(context, file, nextDest, rules, relPath)
             } else {
-                throw Exception("SAF创建目录失败:${file.name}")
+                throw Exception("系统锁定了目录:${file.name}")
             }
         } else {
-            // 🔪 安全的先删后写机制
+            // 🔪 暴力摧毁旧文件
             val existingFile = dest.findFile(file.name)
             if (existingFile != null && existingFile.exists()) {
-                existingFile.delete()
+                existingFile.delete() // 强力删除旧文件
             }
             
-            // 如果 createFile 返回 null，就去查是不是被系统缓存“坑”了已经存在，都找不到才抛异常
-            val newDoc = dest.createFile("*/*", file.name) ?: dest.findFile(file.name)
+            // 👻 再次对抗幽灵缓存：如果新建文件返回空，说明缓存说没删干净，那就再把它找出来硬覆盖！
+            var newDoc = dest.createFile("*/*", file.name)
+            if (newDoc == null) newDoc = dest.findFile(file.name)
             
             if (newDoc != null) {
-                context.contentResolver.openOutputStream(newDoc.uri)?.use { out -> 
+                // "wt" 模式：写入并截断清空（最强硬的覆写模式）
+                context.contentResolver.openOutputStream(newDoc.uri, "wt")?.use { out -> 
                     file.inputStream().use { it.copyTo(out) } 
-                } ?: throw Exception("SAF写入流被拒绝:${file.name}")
+                } ?: throw Exception("文件流被占用拒绝写入:${file.name}")
             } else {
-                throw Exception("SAF文件冲突或无法创建:${file.name}")
+                throw Exception("文件冲突无法创建:${file.name}")
             }
         }
     }
