@@ -627,6 +627,7 @@ suspend fun downloadAndDeployTask(
                 }
                 val isDict = task.url.contains("dicts")
 
+                // 🌟 核心防御网：给每个路径加隔离舱，互不干扰！
                 var successCount = 0
                 val errorList = mutableListOf<String>()
 
@@ -640,18 +641,20 @@ suspend fun downloadAndDeployTask(
                             val rootDoc = DocumentFile.fromTreeUri(context, Uri.parse(pathStr))
                             if (rootDoc != null) {
                                 val targetDoc = if (isDict) {
-                                    rootDoc.findFile("dicts") ?: rootDoc.createDirectory("dicts") ?: throw Exception("无法创建dicts")
+                                    rootDoc.findFile("dicts") ?: rootDoc.createDirectory("dicts") ?: throw Exception("无法创建dicts目录")
                                 } else rootDoc
                                 copySaf(context, realSrcDir, targetDoc, excludeRegexList)
                             } else {
-                                throw Exception("授权失效")
+                                throw Exception("授权已失效")
                             }
                         }
                         successCount++
                     } catch (e: Exception) {
                         e.printStackTrace()
                         val pathName = if (pathStr == "DEFAULT") "默认" else "授权${index + 1}"
-                        errorList.add("$pathName(${e.message})")
+                        // 🌟 把 e.message 换成更详细的错误捕获，就算是 NullPointerException 也能显示出来！
+                        val errMsg = e.message ?: e.javaClass.simpleName
+                        errorList.add("$pathName($errMsg)")
                     }
                 }
 
@@ -661,7 +664,7 @@ suspend fun downloadAndDeployTask(
                         task.isFinished = true
                         task.status = "✅ 部署完成"
                     } else if (successCount > 0) {
-                        task.isFinished = true // 只要有一个成功，也算此任务有效，不阻断后续其他压缩包
+                        task.isFinished = true 
                         task.status = "⚠️ 部分完成 [失败: ${errorList.joinToString()}]"
                     } else {
                         task.isError = true
@@ -699,16 +702,14 @@ fun copyNormal(src: File, dest: File, rules: List<Regex>, currentPath: String = 
         if (file.isDirectory) {
             copyNormal(file, targetFile, rules, relPath)
         } else {
-            // 🔪 物理级强力斩杀：不管存不存在，先删了再说，杜绝覆盖失败
-            if (targetFile.exists()) {
-                targetFile.delete()
-            }
+            // 物理级强力斩杀
+            if (targetFile.exists()) targetFile.delete()
             file.copyTo(targetFile, overwrite = true)
         }
     }
 }
 
-// 🌟 物理强杀版 SAF 复制逻辑
+// 🌟 完美防崩溃版 SAF 复制逻辑 (消灭了所有的 !!)
 fun copySaf(context: Context, src: File, dest: DocumentFile, rules: List<Regex>, currentPath: String = "") {
     src.listFiles()?.forEach { file ->
         val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
@@ -719,15 +720,32 @@ fun copySaf(context: Context, src: File, dest: DocumentFile, rules: List<Regex>,
         }
         
         if (file.isDirectory) {
-            val nextDest = dest.findFile(file.name) ?: dest.createDirectory(file.name)!!
-            copySaf(context, file, nextDest, rules, relPath)
+            // 安全获取或创建目录，如果都失败抛出明确异常，绝不闪退
+            var nextDest = dest.findFile(file.name)
+            if (nextDest == null) {
+                nextDest = dest.createDirectory(file.name)
+            }
+            if (nextDest != null) {
+                copySaf(context, file, nextDest, rules, relPath)
+            } else {
+                throw Exception("SAF创建目录失败:${file.name}")
+            }
         } else {
-            // 🔪 SAF 专属强力斩杀
-            dest.findFile(file.name)?.delete()
-            dest.createFile("*/*", file.name)?.let { doc -> 
-                context.contentResolver.openOutputStream(doc.uri)?.use { out -> 
+            // 🔪 安全的先删后写机制
+            val existingFile = dest.findFile(file.name)
+            if (existingFile != null && existingFile.exists()) {
+                existingFile.delete()
+            }
+            
+            // 如果 createFile 返回 null，就去查是不是被系统缓存“坑”了已经存在，都找不到才抛异常
+            val newDoc = dest.createFile("*/*", file.name) ?: dest.findFile(file.name)
+            
+            if (newDoc != null) {
+                context.contentResolver.openOutputStream(newDoc.uri)?.use { out -> 
                     file.inputStream().use { it.copyTo(out) } 
-                } 
+                } ?: throw Exception("SAF写入流被拒绝:${file.name}")
+            } else {
+                throw Exception("SAF文件冲突或无法创建:${file.name}")
             }
         }
     }
