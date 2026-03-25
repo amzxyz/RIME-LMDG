@@ -133,10 +133,11 @@ fun WanxiangDownloaderApp() {
         )
     }
 
-    var isPro by remember { mutableStateOf(true) }
-    var auxScheme by remember { mutableStateOf("zrm") }
-    var downloadSource by remember { mutableStateOf("CNB") }
-    var updateChannel by remember { mutableStateOf("Stable") } 
+    // 🌟 记忆读取：尝试从小账本里拿，拿不到再用默认值
+    var isPro by remember { mutableStateOf(sharedPref.getBoolean("is_pro", true)) }
+    var auxScheme by remember { mutableStateOf(sharedPref.getString("aux_scheme", "zrm") ?: "zrm") }
+    var downloadSource by remember { mutableStateOf(sharedPref.getString("download_source", "CNB") ?: "CNB") }
+    var updateChannel by remember { mutableStateOf(sharedPref.getString("update_channel", "Stable") ?: "Stable") }
     
     // GitHub Token 记忆
     var githubToken by remember { 
@@ -333,24 +334,24 @@ fun WanxiangDownloaderApp() {
         }
         Spacer(modifier = Modifier.height(12.dp))
 
-        // 方案选择卡片
+        // 方案与通道选择
         Card(colors = CardDefaults.cardColors(containerColor = Color.White), border = CardDefaults.outlinedCardBorder(true), modifier = Modifier.fillMaxWidth()) {
             Column(modifier = Modifier.padding(16.dp)) {
                 Text("🚀 更新通道", fontWeight = FontWeight.Bold, color = Color.DarkGray)
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    RadioButton(selected = updateChannel == "Stable", onClick = { updateChannel = "Stable" })
+                    RadioButton(selected = updateChannel == "Stable", onClick = { updateChannel = "Stable"; sharedPref.edit().putString("update_channel", "Stable").apply() })
                     Text("正式版 (${latestStableTag})", fontSize = 14.sp)
                     Spacer(modifier = Modifier.width(16.dp))
-                    RadioButton(selected = updateChannel == "Preview", onClick = { updateChannel = "Preview" })
+                    RadioButton(selected = updateChannel == "Preview", onClick = { updateChannel = "Preview"; sharedPref.edit().putString("update_channel", "Preview").apply() })
                     Text("预览版", fontSize = 14.sp, color = MorandiGreen)
                 }
                 Divider(color = MorandiLightGreen, modifier = Modifier.padding(vertical = 8.dp))
                 Text("📦 方案版本", fontWeight = FontWeight.Bold, color = Color.DarkGray)
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    RadioButton(selected = isPro, onClick = { isPro = true })
+                    RadioButton(selected = isPro, onClick = { isPro = true; sharedPref.edit().putBoolean("is_pro", true).apply() })
                     Text("Pro版", fontSize = 14.sp)
                     Spacer(modifier = Modifier.width(16.dp))
-                    RadioButton(selected = !isPro, onClick = { isPro = false })
+                    RadioButton(selected = !isPro, onClick = { isPro = false; sharedPref.edit().putBoolean("is_pro", false).apply() })
                     Text("Base版", fontSize = 14.sp)
                 }
                 if (isPro) {
@@ -359,7 +360,10 @@ fun WanxiangDownloaderApp() {
                         auxMap.forEach { (key, name) ->
                             FilterChip(
                                 selected = (auxScheme == key), 
-                                onClick = { auxScheme = key }, 
+                                onClick = { 
+                                    auxScheme = key 
+                                    sharedPref.edit().putString("aux_scheme", key).apply() // 🌟 存入选择的辅助码
+                                }, 
                                 label = { Text(name, fontSize = 12.sp) }
                             )
                         }
@@ -410,10 +414,10 @@ fun WanxiangDownloaderApp() {
             Column(modifier = Modifier.padding(16.dp)) {
                 Text("🌐 下载源配置", fontWeight = FontWeight.Bold, color = Color.DarkGray)
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    RadioButton(selected = downloadSource == "CNB", onClick = { downloadSource = "CNB" })
+                    RadioButton(selected = downloadSource == "CNB", onClick = { downloadSource = "CNB"; sharedPref.edit().putString("download_source", "CNB").apply() })
                     Text("CNB", fontSize = 14.sp)
                     Spacer(modifier = Modifier.width(8.dp))
-                    RadioButton(selected = downloadSource == "GitHub", onClick = { downloadSource = "GitHub" })
+                    RadioButton(selected = downloadSource == "GitHub", onClick = { downloadSource = "GitHub"; sharedPref.edit().putString("download_source", "GitHub").apply() })
                     Text("GitHub", fontSize = 14.sp)
                 }
                 
