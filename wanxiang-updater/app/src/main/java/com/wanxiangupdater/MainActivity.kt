@@ -479,7 +479,7 @@ fun WanxiangDownloaderApp() {
                         onClick = { 
                             if (savedPaths.isEmpty()) return@Button 
                             
-                            // 🌟 拦截机制：如果包含默认路径且没给所有文件权限，直接弹窗不准下载！
+                            // 🌟 强力拦截：如果包含了默认路径，且没给所有文件权限，直接弹窗拦截！
                             if (savedPaths.contains("DEFAULT") && Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && !Environment.isExternalStorageManager()) {
                                 showPermissionDialog = true
                                 return@Button
@@ -627,28 +627,50 @@ suspend fun downloadAndDeployTask(
                 }
                 val isDict = task.url.contains("dicts")
 
-                for (pathStr in targetPaths) {
-                    if (pathStr == "DEFAULT") {
-                        val target = if (isDict) File(Environment.getExternalStorageDirectory(), "rime/dicts") else File(Environment.getExternalStorageDirectory(), "rime")
-                        copyNormal(realSrcDir, target, excludeRegexList)
-                    } else {
-                        val rootDoc = DocumentFile.fromTreeUri(context, Uri.parse(pathStr))
-                        if (rootDoc != null) {
-                            val targetDoc = if (isDict) rootDoc.findFile("dicts") ?: rootDoc.createDirectory("dicts")!! else rootDoc
-                            copySaf(context, realSrcDir, targetDoc, excludeRegexList)
+                var successCount = 0
+                val errorList = mutableListOf<String>()
+
+                for ((index, pathStr) in targetPaths.withIndex()) {
+                    try {
+                        withContext(Dispatchers.Main) { task.status = "部署目标 ${index + 1}/${targetPaths.size}..." }
+                        if (pathStr == "DEFAULT") {
+                            val target = if (isDict) File(Environment.getExternalStorageDirectory(), "rime/dicts") else File(Environment.getExternalStorageDirectory(), "rime")
+                            copyNormal(realSrcDir, target, excludeRegexList)
+                        } else {
+                            val rootDoc = DocumentFile.fromTreeUri(context, Uri.parse(pathStr))
+                            if (rootDoc != null) {
+                                val targetDoc = if (isDict) {
+                                    rootDoc.findFile("dicts") ?: rootDoc.createDirectory("dicts") ?: throw Exception("无法创建dicts")
+                                } else rootDoc
+                                copySaf(context, realSrcDir, targetDoc, excludeRegexList)
+                            } else {
+                                throw Exception("授权失效")
+                            }
                         }
+                        successCount++
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                        val pathName = if (pathStr == "DEFAULT") "默认" else "授权${index + 1}"
+                        errorList.add("$pathName(${e.message})")
                     }
                 }
+
+                // 汇总最终结果
                 withContext(Dispatchers.Main) { 
-                    task.isFinished = true
-                    task.status = "✅ 部署完成" 
+                    if (successCount == targetPaths.size) {
+                        task.isFinished = true
+                        task.status = "✅ 部署完成"
+                    } else if (successCount > 0) {
+                        task.isFinished = true // 只要有一个成功，也算此任务有效，不阻断后续其他压缩包
+                        task.status = "⚠️ 部分完成 [失败: ${errorList.joinToString()}]"
+                    } else {
+                        task.isError = true
+                        task.status = "❌ 全部失败 [${errorList.joinToString()}]"
+                    }
                 }
             } catch (e: Exception) { 
                 e.printStackTrace()
-                withContext(Dispatchers.Main) { 
-                    task.isError = true
-                    task.status = "❌ 部署失败: 没有权限或路径错误" 
-                } 
+                withContext(Dispatchers.Main) { task.isError = true; task.status = "❌ 解压或准备部署失败" } 
             }
         } else { 
             withContext(Dispatchers.Main) { 
@@ -660,7 +682,7 @@ suspend fun downloadAndDeployTask(
     }
 }
 
-// 🌟 完全展开的强杀版普通复制逻辑
+// 🌟 物理强杀版普通复制逻辑
 fun copyNormal(src: File, dest: File, rules: List<Regex>, currentPath: String = "") {
     if (!dest.exists()) {
         dest.mkdirs()
@@ -677,7 +699,7 @@ fun copyNormal(src: File, dest: File, rules: List<Regex>, currentPath: String = 
         if (file.isDirectory) {
             copyNormal(file, targetFile, rules, relPath)
         } else {
-            // 🔪 物理级强力斩杀：不管存不存在，先删了再说
+            // 🔪 物理级强力斩杀：不管存不存在，先删了再说，杜绝覆盖失败
             if (targetFile.exists()) {
                 targetFile.delete()
             }
@@ -686,7 +708,7 @@ fun copyNormal(src: File, dest: File, rules: List<Regex>, currentPath: String = 
     }
 }
 
-// 🌟 完全展开的强杀版 SAF 复制逻辑
+// 🌟 物理强杀版 SAF 复制逻辑
 fun copySaf(context: Context, src: File, dest: DocumentFile, rules: List<Regex>, currentPath: String = "") {
     src.listFiles()?.forEach { file ->
         val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
