@@ -29,7 +29,7 @@ sort: by_weight
 阿贝尔微分	ā bèi ěr wēi fēn	1
 阿贝尔问题	ā bèi ěr wèn tí	1
 阿贝尔引理	ā bèi ěr yǐn lǐ	1
-阿贝折射计	ā bèi zhé shè jì	4
+阿贝折射计	ā bèi zhé shè jì	1
 阿倍仲麻吕	ā bèi zhòng má lǚ	1
 阿苯达唑片	ā běn dá zuò piàn	1
 阿比多尔片	ā bǐ duō ěr piàn	1
@@ -43986,7 +43986,7 @@ sort: by_weight
 读书岩石刻	dú shū yán shí kè	1
 读书有三到	dú shū yǒu sān dào	1
 读书月活动	dú shū yuè huó dòng	1
-读书长见识	dú shū zhǎng jiàn shí	1
+读书长见识	dú shū zhǎng jiàn shi	1
 读数值属性	dú shù zhí shǔ xìng	1
 读数准确度	dú shù zhǔn què dù	1
 杜斯二氏病	dù sī èr shì bìng	1
@@ -128751,7 +128751,7 @@ sort: by_weight
 没什么技术	méi shén me jì shù	1
 没什么价值	méi shén me jià zhí	1
 没什么架子	méi shén me jià zi	1
-没什么见识	méi shén me jiàn shí	1
+没什么见识	méi shén me jiàn shi	1
 没什么交流	méi shén me jiāo liú	1
 没什么结果	méi shén me jié guǒ	1
 没什么进步	méi shén me jìn bù	1
@@ -178911,7 +178911,7 @@ sort: by_weight
 数亿人民币	shù yì rén mín bì	1
 数以十万计	shù yǐ shí wàn jì	1
 数以十亿计	shù yǐ shí yì jì	1
-数以万计的	shǔ yǐ wàn jì de	1
+数以万计的	shù yǐ wàn jì de	1
 数以万亿计	shù yǐ wàn yì jì	1
 数以亿计的	shù yǐ yì jì de	1
 舒阴洁洗剂	shū yīn jié xǐ jì	1
@@ -183665,7 +183665,7 @@ sort: by_weight
 算是比较高	suàn shì bǐ jiào gāo	1
 算是比较好	suàn shì bǐ jiào hǎo	1
 酸式滴定管	suān shì dī dìng guǎn	3
-算是见识到	suàn shì jiàn shí dào	1
+算是见识到	suàn shì jiàn shi dào	1
 酸式磷酸锰	suān shì lín suān měng	3
 酸式硫酸钾	suān shì liú suān jiǎ	3
 酸式硫酸钠	suān shì liú suān nà	3
@@ -202839,6 +202839,7 @@ sort: by_weight
 我是李小龙	wǒ shì lǐ xiǎo lóng	1
 卧式离心泵	wò shì lí xīn bèng	1
 卧式离心机	wò shì lí xīn jī	1
+我是练习生	wǒ shì liàn xí shēng	1
 我是路人甲	wǒ shì lù rén jiǎ	1
 我是马布里	wǒ shì mǎ bù lǐ	1
 我是妈妈的	wǒ shì mā ma de	1
@@ -229227,12 +229228,12 @@ sort: by_weight
 铱的同位素	yī de tóng wèi sù	1
 钇的同位素	yǐ de tóng wèi sù	1
 镱的同位素	yì de tóng wèi sù	1
-一等承恩公	yì děng chéng ēn gōng	1
-一等潜水舰	yì děng qián shuǐ jiàn	1
-一等士官长	yì děng shì guān zhǎng	1
-一等延恩侯	yì děng yán ēn hóu	1
-一等毅勇侯	yì děng yì yǒng hóu	1
-一等忠勇公	yì děng zhōng yǒng gōng	1
+一等承恩公	yī děng chéng ēn gōng	1
+一等潜水舰	yī děng qián shuǐ jiàn	1
+一等士官长	yī děng shì guān zhǎng	1
+一等延恩侯	yī děng yán ēn hóu	1
+一等毅勇侯	yī děng yì yǒng hóu	1
+一等忠勇公	yī děng zhōng yǒng gōng	1
 一地的鸡毛	yí dì de jī máo	1
 异地公积金	yì dì gōng jī jīn	1
 异地候机楼	yì dì hòu jī lóu	1
@@ -245874,7 +245875,7 @@ sort: by_weight
 增长极理论	zēng zhǎng jí lǐ lùn	1
 增长了不少	zēng zhǎng le bù shǎo	1
 增长了多少	zēng zhǎng le duō shǎo	1
-增长了见识	zēng zhǎng le jiàn shí	1
+增长了见识	zēng zhǎng le jiàn shi	1
 增长了知识	zēng zhǎng le zhī shi	1
 增长确定性	zēng zhǎng què dìng xìng	1
 增长速度快	zēng zhǎng sù dù kuài	1
@@ -301696,7 +301697,7 @@ sort: by_weight
 六甲人工岛线	liù jiǎ rén gōng dǎo xiàn	1
 六甲收费道路	liù jiǎ shōu fèi dào lù	1
 六价硒化合物	liù jià xī huà hé wù	1
-六加一等于七	liù jiā yì děng yú qī	1
+六加一等于七	liù jiā yī děng yú qī	1
 六甲有马索道	liù jiǎ yǒu mǎ suǒ dào	1
 六检验试剂类	liù jiǎn yàn shì jì lèi	1
 瘤间置修复术	liú jiān zhì xiū fù shù	1
@@ -305696,6 +305697,8 @@ sort: by_weight
 你身边永是我	nǐ shēn biān yǒng shì wǒ	1
 你身上的味道	nǐ shēn shàng de wèi dào	1
 拟肾上腺素药	nǐ shèn shàng xiàn sù yào	1
+你是不是忘了	nǐ shì bú shì wàng le	2
+你是不失望了	nǐ shì bù shī wàng le	1
 你是独一无二	nǐ shì dú yī wú èr	1
 泥石流等灾害	ní shí liú děng zāi hài	1
 尼史密夫定律	ní shǐ mì fū dìng lǜ	1
@@ -318709,7 +318712,7 @@ sort: by_weight
 酸奶芝士蛋糕	suān nǎi zhī shì dàn gāo	1
 酸牛奶的时间	suān niú nǎi de shí jiān	1
 酸溶性完井液	suān róng xìng wán jǐng yè	2
-算是见识到了	suàn shì jiàn shí dào le	1
+算是见识到了	suàn shì jiàn shi dào le	1
 酸式焦磷酸钠	suān shì jiāo lín suān nà	1
 算是锦上添花	suàn shì jǐn shàng tiān huā	1
 酸式离解常数	suān shì lí jiě cháng shù	1
@@ -328383,7 +328386,7 @@ sort: by_weight
 循序渐进原则	xún xù jiàn jìn yuán zé	1
 浔阳晚报记者	xún yáng wǎn bào jì zhě	1
 薰衣草的花语	xūn yī cǎo de huā yǔ	1
-勋一等瑞宝章	xūn yì děng ruì bǎo zhāng	1
+勋一等瑞宝章	xūn yī děng ruì bǎo zhāng	1
 鲟鱼级核潜艇	xún yú jí hé qián tǐng	1
 寻找阿拉斯加	xún zhǎo ā lā sī jiā	1
 寻找背海的人	xún zhǎo bèi hǎi de rén	1
@@ -330541,11 +330544,11 @@ sort: by_weight
 依德里斯朱索	yī dé lǐ sī zhū suǒ	1
 乙德投资控股	yǐ dé tóu zī kòng gǔ	1
 医德医风建设	yī dé yī fēng jiàn shè	1
-一等奉国将军	yì děng fèng guó jiāng jūn	1
-一等辅国将军	yì děng fǔ guó jiāng jūn	1
+一等奉国将军	yī děng fèng guó jiāng jūn	1
+一等辅国将军	yī děng fǔ guó jiāng jūn	1
 乙等高级警长	yǐ děng gāo jí jǐng zhǎng	1
-一等轻车都尉	yì děng qīng chē dū wèi	1
-一等云麾勋章	yì děng yún huī xūn zhāng	1
+一等轻车都尉	yī děng qīng chē dū wèi	1
+一等云麾勋章	yī děng yún huī xūn zhāng	1
 异地的魔法师	yì dì de mó fǎ shī	1
 一滴都没有了	yì dī dōu méi yǒu le	1
 易地扶贫搬迁	yì dì fú pín bān qiān	1
@@ -351555,7 +351558,7 @@ sort: by_weight
 高清网络摄像头	gāo qīng wǎng luò shè xiàng tóu	1
 高情已逐晓云空	gāo qíng yǐ zhú xiǎo yún kōng	1
 高清硬盘播放器	gāo qīng yìng pán bō fàng qì	1
-高人一等的感觉	gāo rén yì děng de gǎn jué	1
+高人一等的感觉	gāo rén yī děng de gǎn jué	1
 高乳糜微粒血症	gāo rǔ mí wēi lì xuè zhèng	1
 告汝十二郎之灵	gào rǔ shí èr láng zhī líng	1
 高山上的世界杯	gāo shān shàng de shì jiè bēi	1
