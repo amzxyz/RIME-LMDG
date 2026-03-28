@@ -57,7 +57,7 @@ from PySide6.QtWidgets import (
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.0.1beta"
+TOOL_VERSION = "v3.0.2beta"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -2605,34 +2605,42 @@ class UpdateWorker(QThread):
             elif im == "ibus":
                 self._deploy_linux_ibus()
     def _deploy_linux_fcitx5_safe(self):
-        """Linux Fcitx5 部署方案 (使用 qdbus6)"""
-        self.log(">>> [Fcitx5] 正在触发 Rime 部署 (qdbus6)...")
+        """Linux Fcitx5 部署方案 (使用 dbus-send)"""
+        self.log(">>> [Fcitx5] 正在触发 Rime 部署 (dbus-send)...")
 
-        qdbus_tool = shutil.which("qdbus6")
+        import shutil
+        import subprocess
+
+        dbus_tool = shutil.which("dbus-send")
         
-        if not qdbus_tool:
-            self.log("❌ 错误: 未找到 qdbus6 工具。请检查是否安装了 qt6-tools。")
+        if not dbus_tool:
+            self.log("❌ 错误: 未找到 dbus-send 工具。请检查系统是否安装了 dbus。")
             return
 
         try:
-            # 2. 构建命令
+            # 2. 构建命令 (dbus-send 强制指定类型为 string 和 variant)
             cmd = [
-                qdbus_tool,  # 这里引用上面定义的变量
-                "org.fcitx.Fcitx5",
+                dbus_tool,
+                "--session",
+                "--dest=org.fcitx.Fcitx5",
+                "--type=method_call",
                 "/controller",
                 "org.fcitx.Fcitx.Controller1.SetConfig",
-                "fcitx://config/addon/rime/deploy",
-                ""
+                "string:fcitx://config/addon/rime/deploy",
+                "variant:string:"  # 注意这里，对应 Fcitx5 需要的 variant 类型空值
             ]
             
-            self.log("📡 发送 DBus 信号指令")
+            self.log("📡 发送 DBus 信号指令: " + " ".join(cmd))
             
             # 3. 执行
             subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             self.log("✅ Fcitx5 部署信号发送成功。")
 
         except subprocess.CalledProcessError as e:
-            self.log(f"❌ 部署失败 (命令返回非零): {e}")
+            # 划重点：把底层真正的英文报错内容解出来！
+            error_details = e.stderr.decode('utf-8', errors='ignore').strip() if e.stderr else "无详细错误信息"
+            self.log(f"❌ 部署失败 (命令返回非零): {e.returncode}")
+            self.log(f"🔍 详细原因: {error_details}")
         except Exception as e:
             self.log(f"❌ 发送指令时发生异常: {e}")
 
