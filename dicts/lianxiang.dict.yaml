@@ -19022,6 +19022,7 @@ sort: by_weight
 草盛豆苗稀	cǎo shèng dòu miáo xī	1
 草食类动物	cǎo shí lèi dòng wù	1
 草食性动物	cǎo shí xìng dòng wù	1
+草书楷化字	cǎo shū kǎi huà zì	1
 草书千字文	cǎo shū qiān zì wén	1
 草酸二丁酯	cǎo suān èr dīng zhǐ	3
 草酸二甲酯	cǎo suān èr jiǎ zhǐ	3
@@ -56929,7 +56930,7 @@ sort: by_weight
 附加值不高	fù jiā zhí bù gāo	1
 附加值产品	fù jiā zhí chǎn pǐn	1
 附加值服务	fù jiā zhí fú wù	1
-附加值更高	fù jiā zhí gèng gāo	1
+附加值更高	fù jiā zhí gēng gāo	1
 附加值较低	fù jiā zhí jiào dī	1
 附加值较高	fù jiā zhí jiào gāo	1
 复加之五合	fù jiā zhī wǔ hé	1
@@ -134208,7 +134209,7 @@ sort: by_weight
 那种孤独感	nà zhǒng gū dú gǎn	1
 拿中国说事	ná zhōng guó shuō shì	1
 那种恐惧感	nà zhǒng kǒng jù gǎn	1
-那种满足感	nà zhǒng mǎn zú gǎn	1
+那种满足感	nà zhòng mǎn zú gǎn	1
 那种无力感	nà zhǒng wú lì gǎn	1
 那种心理的	nà zhǒng xīn lǐ de	1
 那种幸福感	nà zhǒng xìng fú gǎn	1
@@ -158273,7 +158274,6 @@ sort: by_weight
 认真的完成	rèn zhēn de wán chéng	1
 认真地完成	rèn zhēn de wán chéng	1
 认真的玩笑	rèn zhēn de wán xiào	1
-认真的学习	rèn zhēn de xué xí	1
 认真地学习	rèn zhēn de xué xí	1
 认真的研究	rèn zhēn de yán jiū	1
 认真的眼神	rèn zhēn de yǎn shén	1
@@ -275471,9 +275471,7 @@ sort: by_weight
 达克罗宁油剂	dá kè luó níng yóu jì	1
 达克谢维奇核	dá kè xiè wéi qí hé	1
 大孔径穿流板	dà kǒng jìng chuān liú bǎn	1
-大孔吸附树脂	dà kǒng xī fù shù zhī	3
-大口叉齿龙䲢	dà kǒu chā chǐ lóng téng	1
-大口大口的吃	dà kǒu dà kǒu de chī	1
+大孔吸附树脂	dà kǒng xī fù shù zhī	1
 大口大口地吃	dà kǒu dà kǒu de chī	1
 大口径截止阀	dà kǒu jìng jié zhǐ fá	2
 大口径止回阀	dà kǒu jìng zhǐ huí fá	2
