@@ -2607,10 +2607,6 @@ class UpdateWorker(QThread):
     def _deploy_linux_fcitx5_safe(self):
         """Linux Fcitx5 部署方案 (使用 dbus-send)"""
         self.log(">>> [Fcitx5] 正在触发 Rime 部署 (dbus-send)...")
-
-        import shutil
-        import subprocess
-
         dbus_tool = shutil.which("dbus-send")
         
         if not dbus_tool:
@@ -2631,9 +2627,10 @@ class UpdateWorker(QThread):
             ]
             
             self.log("📡 发送 DBus 信号指令: " + " ".join(cmd))
-            
-            # 3. 执行
-            subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            clean_env = os.environ.copy()
+            if 'LD_LIBRARY_PATH' in clean_env:
+                clean_env['LD_LIBRARY_PATH'] = clean_env.get('LD_LIBRARY_PATH_ORIG', '')
+            subprocess.run(cmd, env=clean_env, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             self.log("✅ Fcitx5 部署信号发送成功。")
 
         except subprocess.CalledProcessError as e:
