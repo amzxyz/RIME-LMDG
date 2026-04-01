@@ -1849,10 +1849,12 @@ MODEL_TAG = "LTS"
 
 SCHEME_MAP = {
     'zrm': '自然码辅助 (Zrm)',
+    'wx': '万象辅助 (WX)',
     'flypy': '小鹤辅助 (Flypy)',
     'moqi': '墨奇辅助 (Moqi)',
     'hanxin': '汉心辅助 (Hanxin)',
     'shouyou': '首右辅助 (Shouyou)',
+    'shyplus': '首右+辅助 (Shyplus)',
     'tiger': '虎码辅助 (Tiger)',
     'wubi': '五笔辅助 (Wubi)'
 

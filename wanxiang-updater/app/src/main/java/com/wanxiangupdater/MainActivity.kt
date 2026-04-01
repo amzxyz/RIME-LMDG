@@ -280,7 +280,7 @@ fun WanxiangDownloaderApp() {
     var activeTasks by remember { mutableStateOf<List<TaskState>>(emptyList()) }
     val coroutineScope = rememberCoroutineScope()
 
-    val auxMap = mapOf("zrm" to "自然码", "flypy" to "小鹤", "moqi" to "墨奇", "hanxin" to "汉心", "shouyou" to "首右", "tiger" to "虎码", "wubi" to "五笔")
+    val auxMap = mapOf("zrm" to "自然码", "wx" to "万象", "flypy" to "小鹤", "moqi" to "墨奇", "hanxin" to "汉心", "shouyou" to "首右", "shyplus" to "首右", "tiger" to "虎码", "wubi" to "五笔")
 
     // --- 新增：Tab状态与自定义任务状态 ---
     var selectedTabIndex by remember { mutableStateOf(0) }
