@@ -40,7 +40,7 @@ octagram:
   __patch:
     grammar:
       language: wanxiang-lts-zh-hans
-      collocation_max_length: 7
+      collocation_max_length: 8
       collocation_min_length: 2
       collocation_penalty: -10
       non_collocation_penalty: -20
