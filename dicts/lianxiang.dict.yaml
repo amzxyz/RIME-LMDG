@@ -30385,6 +30385,7 @@ sort: by_weight
 河南开发区	hé nán kāi fā qū	1
 河南开封的	hé nán kāi fēng de	1
 河南开封市	hé nán kāi fēng shì	1
+河南漯河市	hé nán luò hé shì	1
 河南洛阳的	hé nán luò yáng de	1
 荷南美食区	hé nán měi shí qū	1
 河南南阳的	hé nán nán yáng de	1
@@ -30394,7 +30395,6 @@ sort: by_weight
 河南省纪委	hé nán shěng jì wěi	1
 河南省省长	hé nán shěng shěng zhǎng	1
 河南省语委	hé nán shěng yǔ wěi	1
-河南漯河市	hé nán tà hé shì	1
 河南信阳市	hé nán xìn yáng shì	1
 河南许昌的	hé nán xǔ chāng de	1
 河南战狼队	hé nán zhàn láng duì	1
@@ -49369,7 +49369,11 @@ sort: by_weight
 罗汉果玉竹	luó hàn guǒ yù zhú	1
 络合催化剂	luò hé cuī huà jì	1
 络合滴定法	luò hé dī dìng fǎ	1
+漯河南街村	luò hé nán jiē cūn	1
 络合氢化物	luò hé qīng huà wù	1
+漯河市公路	luò hé shì gōng lù	1
+漯河市政府	luò hé shì zhèng fǔ	1
+漯河市政协	luò hé shì zhèng xié	1
 落合小夜里	luò hé xiǎo yè lǐ	1
 罗红霉素片	luó hóng méi sù piàn	1
 落后的国家	luò hòu de guó jiā	1
@@ -62863,7 +62867,7 @@ sort: by_weight
 褥疮酊附一	rù chuāng dīng fù yī	1
 如春风拂面	rú chūn fēng fú miàn	1
 如此爱你月	rú cǐ ài nǐ yuè	1
-如此地美好	rú cǐ dì měi hǎo	1
+如此地美好	rú cǐ de měi hǎo	1
 如此怀念的	rú cǐ huái niàn de	1
 如大家所愿	rú dà jiā suǒ yuàn	1
 铷的同位素	rú de tóng wèi sù	1
@@ -73683,10 +73687,6 @@ sort: by_weight
 他跟我说这	tā gēn wǒ shuō zhè	1
 他还是不懂	tā hái shì bù dǒng	1
 她还是不懂	tā hái shì bù dǒng	1
-漯河南街村	tà hé nán jiē cūn	1
-漯河市公路	tà hé shì gōng lù	1
-漯河市政府	tà hé shì zhèng fǔ	1
-漯河市政协	tà hé shì zhèng xié	1
 她和她的猫	tā hé tā de māo	1
 她和她老公	tā hé tā lǎo gōng	1
 他横任他横	tā héng rèn tā héng	1
@@ -126570,11 +126570,11 @@ sort: by_weight
 河南省济源市	hé nán shěng jì yuán shì	1
 河南省焦作市	hé nán shěng jiāo zuò shì	1
 河南省开封市	hé nán shěng kāi fēng shì	1
+河南省漯河市	hé nán shěng luò hé shì	1
 河南省洛阳市	hé nán shěng luò yáng shì	1
 河南省南阳市	hé nán shěng nán yáng shì	1
 河南省濮阳市	hé nán shěng pú yáng shì	1
 河南省商丘市	hé nán shěng shāng qiū shì	1
-河南省漯河市	hé nán shěng tà hé shì	1
 河南省新乡市	hé nán shěng xīn xiāng shì	1
 河南省信阳市	hé nán shěng xìn yáng shì	1
 河南省许昌市	hé nán shěng xǔ chāng shì	1
@@ -139168,8 +139168,10 @@ sort: by_weight
 罗汉果柿饼汤	luó hàn guǒ shì bǐng tāng	1
 罗汉果止咳膏	luó hàn guǒ zhǐ ké gāo	1
 罗汉果止咳片	luó hàn guǒ zhǐ ké piàn	1
+漯河高速公路	luò hé gāo sù gōng lù	1
 络合交织性能	luò hé jiāo zhī xìng néng	1
 落合南长崎站	luò hé nán cháng qí zhàn	1
+漯河实验中学	luò hé shí yàn zhōng xué	1
 络合物色谱法	luò hé wù sè pǔ fǎ	3
 罗红霉素胶囊	luó hóng méi sù jiāo náng	1
 罗红霉素颗粒	luó hóng méi sù kē lì	1
@@ -154614,8 +154616,6 @@ sort: by_weight
 塔二氏综合征	tǎ èr shì zōng hé zhēng	1
 塔尔油脂肪酸	tǎ ěr yóu zhī fáng suān	3
 他改变了中国	tā gǎi biàn le zhōng guó	1
-漯河高速公路	tà hé gāo sù gōng lù	1
-漯河实验中学	tà hé shí yàn zhōng xué	1
 他和她的故事	tā hé tā de gù shi	1
 她和她的孩子	tā hé tā de hái zi	1
 她和她的迷藏	tā hé tā de mí cáng	1
