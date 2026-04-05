@@ -952,17 +952,29 @@ suspend fun downloadAndDeployTask(
                     
                     val totalSize = if (isAppend) downloadedLen + conn.contentLength.toLong() else conn.contentLength.toLong()
                     
-                    conn.inputStream.use { input ->
-                        FileOutputStream(tmpFile, isAppend).use { output ->
-                            val data = ByteArray(16384)
+                    conn.inputStream.buffered().use { input ->
+                        FileOutputStream(tmpFile, isAppend).buffered().use { output ->
+                            val data = ByteArray(131072) 
                             var count: Int
+                            var lastUpdateTime = System.currentTimeMillis()
+
                             while (input.read(data).also { count = it } != -1) {
                                 downloadedLen += count
                                 output.write(data, 0, count)
-                                withContext(Dispatchers.Main) {
-                                    task.progress = if (totalSize > 0) downloadedLen.toFloat() / totalSize else -1f
-                                    task.status = "${String.format("%.1f", downloadedLen/1024.0/1024.0)}MB"
+                                
+                                val currentTime = System.currentTimeMillis()
+                                if (currentTime - lastUpdateTime > 150) {
+                                    lastUpdateTime = currentTime
+                                    withContext(Dispatchers.Main) {
+                                        task.progress = if (totalSize > 0) downloadedLen.toFloat() / totalSize else -1f
+                                        task.status = "${String.format("%.1f", downloadedLen/1024.0/1024.0)}MB"
+                                    }
                                 }
+                            }
+                            
+                            withContext(Dispatchers.Main) {
+                                task.progress = if (totalSize > 0) downloadedLen.toFloat() / totalSize else -1f
+                                task.status = "${String.format("%.1f", downloadedLen/1024.0/1024.0)}MB"
                             }
                         }
                     }
