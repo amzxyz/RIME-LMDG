@@ -930,54 +930,99 @@ suspend fun downloadAndDeployTask(
                     withContext(Dispatchers.Main) { 
                         task.status = if (attempt > 1) "重试中($attempt/3)" else "连接中..." 
                     }
-                    var downloadedLen = if (tmpFile.exists()) tmpFile.length() else 0L
                     val url = URL(task.url)
-                    val conn = url.openConnection() as HttpURLConnection
-                    conn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
                     
+                    // 1. 发送 HEAD 请求，就像浏览器一样先探测文件有多大
+                    var totalSize = 0L
+                    val sizeConn = url.openConnection() as HttpURLConnection
+                    sizeConn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
                     if (task.url.contains("github.com") && token.isNotBlank()) {
-                        conn.setRequestProperty("Authorization", "Bearer $token")
+                        sizeConn.setRequestProperty("Authorization", "Bearer $token")
                     }
-                    
-                    if (downloadedLen > 0) {
-                        conn.setRequestProperty("Range", "bytes=$downloadedLen-")
-                    }
-                    conn.connectTimeout = 10000
-                    conn.connect()
-                    
-                    val isAppend = conn.responseCode == 206
-                    if (conn.responseCode != 200 && conn.responseCode != 206) {
-                        throw Exception("HTTP ${conn.responseCode}")
-                    }
-                    
-                    val totalSize = if (isAppend) downloadedLen + conn.contentLength.toLong() else conn.contentLength.toLong()
-                    
-                    conn.inputStream.buffered().use { input ->
-                        FileOutputStream(tmpFile, isAppend).buffered().use { output ->
-                            val data = ByteArray(131072) 
-                            var count: Int
-                            var lastUpdateTime = System.currentTimeMillis()
+                    sizeConn.requestMethod = "HEAD" 
+                    totalSize = sizeConn.contentLength.toLong()
+                    sizeConn.disconnect()
 
-                            while (input.read(data).also { count = it } != -1) {
-                                downloadedLen += count
-                                output.write(data, 0, count)
-                                
-                                val currentTime = System.currentTimeMillis()
-                                if (currentTime - lastUpdateTime > 150) {
-                                    lastUpdateTime = currentTime
-                                    withContext(Dispatchers.Main) {
-                                        task.progress = if (totalSize > 0) downloadedLen.toFloat() / totalSize else -1f
-                                        task.status = "${String.format("%.1f", downloadedLen/1024.0/1024.0)}MB"
+                    if (totalSize > 0) {
+                        val threadCount = 3
+                        val chunkSize = totalSize / threadCount
+                        val downloadedLen = java.util.concurrent.atomic.AtomicLong(0)
+                        var lastUpdateTime = System.currentTimeMillis()
+
+                        kotlinx.coroutines.coroutineScope {
+                            // 开启 3 个并发协程
+                            val deferreds = (0 until threadCount).map { i ->
+                                kotlinx.coroutines.async(Dispatchers.IO) {
+                                    val start = i * chunkSize
+                                    val end = if (i == threadCount - 1) totalSize - 1 else (start + chunkSize - 1)
+                                    
+                                    val partConn = URL(task.url).openConnection() as HttpURLConnection
+                                    partConn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
+                                    if (task.url.contains("github.com") && token.isNotBlank()) {
+                                        partConn.setRequestProperty("Authorization", "Bearer $token")
+                                    }
+                                    partConn.setRequestProperty("Range", "bytes=$start-$end")
+                                    partConn.connectTimeout = 10000
+                                    partConn.readTimeout = 10000
+                                    
+                                    val partFile = File(stagingDir, "${tmpFile.name}.part$i")
+                                    partConn.inputStream.buffered().use { input ->
+                                        FileOutputStream(partFile).buffered().use { output ->
+                                            val data = ByteArray(65536)
+                                            var count: Int
+                                            while (input.read(data).also { count = it } != -1) {
+                                                output.write(data, 0, count)
+                                                val currentDownloaded = downloadedLen.addAndGet(count.toLong())
+                                                val currentTime = System.currentTimeMillis()
+                                                if (currentTime - lastUpdateTime > 150) {
+                                                    lastUpdateTime = currentTime
+                                                    withContext(Dispatchers.Main) {
+                                                        task.progress = currentDownloaded.toFloat() / totalSize
+                                                        task.status = "${String.format("%.1f", currentDownloaded/1024.0/1024.0)}MB (多线程)"
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
-                            
-                            withContext(Dispatchers.Main) {
-                                task.progress = if (totalSize > 0) downloadedLen.toFloat() / totalSize else -1f
-                                task.status = "${String.format("%.1f", downloadedLen/1024.0/1024.0)}MB"
+                            deferreds.awaitAll()
+                        }
+                        withContext(Dispatchers.Main) { task.status = "文件拼装中..." }
+                        FileOutputStream(tmpFile).buffered().use { output ->
+                            for (i in 0 until threadCount) {
+                                val partFile = File(stagingDir, "${tmpFile.name}.part$i")
+                                partFile.inputStream().buffered().use { it.copyTo(output) }
+                                partFile.delete() // 阅后即焚，不留垃圾
+                            }
+                        }
+                        withContext(Dispatchers.Main) { task.progress = 1f }
+
+                    } else {
+                        val conn = url.openConnection() as HttpURLConnection
+                        conn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
+                        if (task.url.contains("github.com") && token.isNotBlank()) {
+                            conn.setRequestProperty("Authorization", "Bearer $token")
+                        }
+                        conn.inputStream.buffered().use { input ->
+                            FileOutputStream(tmpFile).buffered().use { output ->
+                                val data = ByteArray(131072)
+                                var count: Int
+                                var downloaded = 0L
+                                var lastUpdateTime = System.currentTimeMillis()
+                                while (input.read(data).also { count = it } != -1) {
+                                    downloaded += count
+                                    output.write(data, 0, count)
+                                    val currentTime = System.currentTimeMillis()
+                                    if (currentTime - lastUpdateTime > 150) {
+                                        lastUpdateTime = currentTime
+                                        withContext(Dispatchers.Main) { task.status = "${String.format("%.1f", downloaded/1024.0/1024.0)}MB (单线)" }
+                                    }
+                                }
                             }
                         }
                     }
+
                     success = true
                     break 
                 } catch (e: Exception) { 
