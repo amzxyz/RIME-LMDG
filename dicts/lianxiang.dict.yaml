@@ -11999,7 +11999,7 @@ sort: by_weight
 打个稀巴烂	dǎ gè xī bā làn	1
 打个小盹儿	dǎ gè xiǎo dǔn er	1
 打个预防针	dǎ gè yù fáng zhēn	1
-打个招呼吧	dǎ gè zhāo hū ba	1
+打个招呼吧	dǎ gè zhāo hu ba	1
 大根香叶烷	dà gēn xiāng yè wán	5
 大功率电机	dà gōng lǜ diàn jī	1
 打狗看主人	dǎ gǒu kàn zhǔ rén	1
@@ -12017,7 +12017,7 @@ sort: by_weight
 打过的电话	dǎ guò de diàn huà	1
 打过电话来	dǎ guò diàn huà lái	1
 大过滤理论	dà guò lǜ lǐ lùn	1
-打过招呼后	dǎ guò zhāo hū hòu	1
+打过招呼后	dǎ guò zhāo hu hòu	1
 大海的波浪	dà hǎi de bō làng	1
 大海的波涛	dà hǎi de bō tāo	1
 大海的潮汐	dà hǎi de cháo xī	1
@@ -12190,7 +12190,7 @@ sort: by_weight
 打了个手势	dǎ le gè shǒu shì	1
 打了个死结	dǎ le gè sǐ jié	1
 打了个响指	dǎ le gè xiǎng zhǐ	1
-打了声招呼	dǎ le shēng zhāo hū	1
+打了声招呼	dǎ le shēng zhāo hu	1
 搭了顺风车	dā le shùn fēng chē	1
 打雷的时候	dǎ léi de shí hou	1
 打雷要下雨	dǎ léi yào xià yǔ	1
@@ -20448,18 +20448,17 @@ sort: by_weight
 仿真棕榈树	fǎng zhēn zōng lǘ shù	1
 方正兰亭黑	fāng zhèng lán tíng hēi	1
 方正小标宋	fāng zhèng xiǎo biāo sòng	1
-防治艾滋病	fáng zhì ài zī bìng	1
+防治艾滋病	fáng zhì ài zī bìng	2
 防止艾滋病	fáng zhǐ ài zī bìng	1
 防芷鼻炎片	fáng zhǐ bí yán piàn	1
 防治病虫害	fáng zhì bìng chóng hài	1
 防止病虫害	fáng zhǐ bìng chóng hài	1
+防止并发症	fáng zhǐ bìng fā zhèng	2
 防治并发症	fáng zhì bìng fā zhèng	1
-防止并发症	fáng zhǐ bìng fā zhèng	1
 纺织博物馆	fǎng zhī bó wù guǎn	1
 纺织产业链	fǎng zhī chǎn yè liàn	1
 纺织产业园	fǎng zhī chǎn yè yuán	1
 方志出版社	fāng zhì chū bǎn shè	1
-方智出版社	fāng zhì chū bǎn shè	1
 纺织出版社	fǎng zhī chū bǎn shè	1
 防治传染病	fáng zhì chuán rǎn bìng	1
 放置的位置	fàng zhì de wèi zhì	1
@@ -33858,7 +33857,7 @@ sort: by_weight
 会是什么样	huì shì shén me yàng	1
 惠氏营养品	huì shì yíng yǎng pǐn	1
 会是怎么样	huì shì zěn me yàng	1
-挥手打招呼	huī shǒu dǎ zhāo hū	1
+挥手打招呼	huī shǒu dǎ zhāo hu	1
 回收的材料	huí shōu de cái liào	1
 回首来时路	huí shǒu lái shí lù	1
 挥手说再见	huī shǒu shuō zài jiàn	1
@@ -52952,7 +52951,7 @@ sort: by_weight
 磨灭的记忆	mó miè de jì yì	1
 默默地承受	mò mò de chéng shòu	1
 默默地等待	mò mò de děng dài	1
-嬷嬷的法法	mó mó de fǎ fǎ	1
+嬷嬷的法法	mó mo de fǎ fǎ	1
 默默地付出	mò mò de fù chū	1
 默默的关注	mò mò de guān zhù	1
 默默地关注	mò mò de guān zhù	1
@@ -53399,6 +53398,7 @@ sort: by_weight
 那打素医院	nà dǎ sù yī yuàn	1
 那档子事儿	nà dàng zi shì er	1
 那倒不一定	nà dào bù yí dìng	1
+那倒不至于	nà dào bù zhì yú	1
 拿到驾照后	ná dào jià zhào hòu	1
 拿到试卷后	ná dào shì juàn hòu	1
 拿到手机后	ná dào shǒu jī hòu	1
@@ -62079,8 +62079,8 @@ sort: by_weight
 热膨胀系数	rè péng zhàng xì shù	1
 热迫膀胱证	rè pò páng guāng zhèng	1
 热气腾腾的	rè qì téng téng de	1
-热情的招呼	rè qíng de zhāo hū	1
-热情地招呼	rè qíng de zhāo hū	1
+热情的招呼	rè qíng de zhāo hu	1
+热情地招呼	rè qíng de zhāo hu	1
 热情和友好	rè qíng hé yǒu hǎo	1
 热缺血时间	rè quē xuè shí jiān	1
 热扰心神证	rè rǎo xīn shén zhèng	1
@@ -99388,7 +99388,7 @@ sort: by_weight
 赵国平原君	zhào guó píng yuán jūn	1
 赵邯郸故城	zhào hán dān gù chéng	1
 找好了下家	zhǎo hǎo le xià jiā	1
-招呼都不打	zhāo hū dōu bù dǎ	1
+招呼都不打	zhāo hu dōu bù dǎ	1
 照葫芦画瓢	zhào hú lu huà piáo	1
 照花前后镜	zhào huā qián hòu jìng	1
 召唤师奖杯	zhào huàn shī jiǎng bēi	1
@@ -113777,7 +113777,7 @@ sort: by_weight
 从此一蹶不振	cóng cǐ yì jué bú zhèn	1
 从此与众不同	cóng cǐ yǔ zhòng bù tóng	1
 从大海到大海	cóng dà hǎi dào dà hǎi	1
-从打招呼开始	cóng dǎ zhāo hū kāi shǐ	1
+从打招呼开始	cóng dǎ zhāo hu kāi shǐ	1
 丛的分裂映射	cóng de fēn liè yìng shè	1
 从低端到高端	cóng dī duān dào gāo duān	1
 从地球到月球	cóng dì qiú dào yuè qiú	1
@@ -114674,8 +114674,8 @@ sort: by_weight
 打造智慧物流	dǎ zào zhì huì wù liú	1
 打造智能工厂	dǎ zào zhì néng gōng chǎng	1
 大张皮移植术	dà zhāng pí yí zhí shù	1
-打招呼的方式	dǎ zhāo hū de fāng shì	1
-打招呼的关系	dǎ zhāo hū de guān xì	1
+打招呼的方式	dǎ zhāo hu de fāng shì	1
+打招呼的关系	dǎ zhāo hu de guān xì	1
 打着爱的旗号	dǎ zhe ài de qí hào	1
 打着你的旗号	dǎ zhe nǐ de qí hào	1
 打着我的名义	dǎ zhe wǒ de míng yì	1
@@ -155431,7 +155431,7 @@ sort: by_weight
 塔里木河流域	tǎ lǐ mù hé liú yù	1
 塔罗斯的法则	tǎ luó sī de fǎ zé	1
 她妈妈的公主	tā mā ma de gōng zhǔ	1
-他们打个招呼	tā men dǎ gè zhāo hū	1
+他们打个招呼	tā men dǎ gè zhāo hu	1
 它们或多或少	tā men huò duō huò shǎo	1
 她们家的故事	tā men jiā de gù shi	1
 他们行色匆匆	tā men xíng sè cōng cōng	1
@@ -163568,7 +163568,7 @@ sort: by_weight
 溴代异十六烷	xiù dài yì shí liù wán	3
 溴代异十三烷	xiù dài yì shí sān wán	3
 修道院的秘密	xiū dào yuàn de mì mì	1
-修道院的嬷嬷	xiū dào yuàn de mó mó	1
+修道院的嬷嬷	xiū dào yuàn de mó mo	1
 秀逗妈妈月美	xiù dòu mā ma yuè měi	1
 秀恩爱的方式	xiù ēn ài de fāng shì	1
 秀恩爱死的快	xiù ēn ài sǐ de kuài	1
