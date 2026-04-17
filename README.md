@@ -43,12 +43,12 @@ octagram:
       collocation_max_length: 8
       collocation_min_length: 2
       collocation_penalty: 0
-      non_collocation_penalty: -20
+      non_collocation_penalty: 0
       weak_collocation_penalty: -35
       rear_penalty: -12
     translator/contextual_suggestions: false
-    translator/max_homophones: 5
-    translator/max_homographs: 5
+    translator/max_homophones: 8
+    translator/max_homographs: 8
 ```
 
 ### 词库脚本使用方法：
