@@ -42,7 +42,7 @@ octagram:
       language: wanxiang-lts-zh-hans
       collocation_max_length: 8
       collocation_min_length: 2
-      collocation_penalty: -10
+      collocation_penalty: 0
       non_collocation_penalty: -20
       weak_collocation_penalty: -35
       rear_penalty: -12
