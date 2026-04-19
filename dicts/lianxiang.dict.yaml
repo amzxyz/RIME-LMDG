@@ -5896,9 +5896,9 @@ sort: by_weight
 不断革命论	bú duàn gé mìng lùn	1
 不断增长的	bú duàn zēng zhǎng de	1
 部队办公室	bù duì bàn gōng shì	1
-不对称氢化	bú duì chēng qīng huà	1
-不对称原子	bú duì chēng yuán zǐ	1
-不对称褶皱	bú duì chēng zhě zhòu	1
+不对称氢化	bú duì chèn qīng huà	1
+不对称原子	bú duì chèn yuán zǐ	1
+不对称褶皱	bú duì chèn zhě zhòu	1
 部队的生活	bù duì de shēng huó	1
 部队文工团	bù duì wén gōng tuán	1
 部队战斗力	bù duì zhàn dòu lì	1
@@ -7474,6 +7474,7 @@ sort: by_weight
 侧臣位通气	cè chén wèi tōng qì	1
 测地线旋进	cè dì xiàn xuán jìn	1
 测地坐标系	cè dì zuò biāo xì	1
+测度与概率	cè duó yǔ gài lǜ	1
 测辐射热计	cè fú shè rè jì	1
 策划和组织	cè huà hé zǔ zhī	1
 侧滑全键盘	cè huá quán jiàn pán	1
@@ -15382,6 +15383,7 @@ sort: by_weight
 点击进入后	diǎn jī jìn rù hòu	1
 电机控制器	diàn jī kòng zhì qì	1
 电机驱动器	diàn jī qū dòng qì	1
+点击任意处	diǎn jī rèn yì chù	1
 点集拓扑学	diǎn jí tuò pū xué	1
 电机与电器	diàn jī yǔ diàn qì	1
 奠基者效应	diàn jī zhě xiào yìng	1
@@ -17019,7 +17021,7 @@ sort: by_weight
 杜仲平压片	dù zhòng píng yā piàn	1
 杜仲壮骨丸	dù zhòng zhuàng gǔ wán	1
 肚子变大了	dù zi biàn dà le	1
-肚子不舒服	dù zi bù shū fú	1
+肚子不舒服	dù zi bù shū fu	1
 肚子不争气	dù zi bù zhēng qì	1
 肚子都饿了	dù zi dōu è le	1
 肚子搞大了	dù zi gǎo dà le	1
@@ -30330,7 +30332,7 @@ sort: by_weight
 喝个下午茶	hē gè xià wǔ chá	1
 合工大附中	hé gōng dà fù zhōng	1
 核共振谱学	hé gòng zhèn pǔ xué	1
-颌骨不对称	hé gǔ bú duì chēng	1
+颌骨不对称	hé gǔ bú duì chèn	1
 颌骨骨髓炎	hé gǔ gǔ suǐ yán	1
 颌骨间关系	hé gǔ jiān guān xì	1
 颌骨肉芽肿	hé gǔ ròu yá zhǒng	1
@@ -35891,7 +35893,7 @@ sort: by_weight
 急性鼻咽炎	jí xìng bí yān yán	1
 极性表面积	jí xìng biǎo miàn jī	1
 急性并发症	jí xìng bìng fā zhèng	1
-记性不太好	jì xìng bú tài hǎo	1
+记性不太好	jì xing bú tài hǎo	1
 急性肠梗阻	jí xìng cháng gěng zǔ	1
 急性肠胃炎	jí xìng cháng wèi yán	1
 即兴重复段	jí xìng chóng fù duàn	1
@@ -43424,6 +43426,7 @@ sort: by_weight
 看着都难受	kàn zhe dōu nán shòu	1
 看这篇文章	kàn zhè piān wén zhāng	1
 看着手中的	kàn zhe shǒu zhōng de	1
+看着也不像	kàn zhe yě bú xiàng	1
 堪折直须折	kān zhé zhí xū zhé	1
 看重的东西	kàn zhòng de dōng xi	1
 抗阿米巴素	kàng ā mǐ bā sù	1
@@ -48083,7 +48086,7 @@ sort: by_weight
 领导的赏识	lǐng dǎo de shǎng shí	1
 领导的想法	lǐng dǎo de xiǎng fǎ	1
 领导的信任	lǐng dǎo de xìn rèn	1
-领导的心思	lǐng dǎo de xīn sī	1
+领导的心思	lǐng dǎo de xīn si	1
 领导的要求	lǐng dǎo de yāo qiú	1
 领导的支持	lǐng dǎo de zhī chí	1
 领导的指示	lǐng dǎo de zhǐ shì	1
@@ -52823,7 +52826,7 @@ sort: by_weight
 默比乌斯带	mò bǐ wū sī dài	1
 莫比乌斯环	mò bǐ wū sī huán	1
 魔兵惊天录	mó bīng jīng tiān lù	1
-膜不对称性	mó bú duì chēng xìng	1
+膜不对称性	mó bú duì chèn xìng	1
 抹不去的伤	mǒ bú qù de shāng	1
 摸不着边际	mō bù zháo biān jì	1
 摸不着头脑	mō bù zháo tóu nǎo	1
@@ -55537,7 +55540,7 @@ sort: by_weight
 女儿的思念	nǚ er de sī niàn	1
 女儿的同学	nǚ er de tóng xué	1
 女儿的问题	nǚ er de wèn tí	1
-女儿的心思	nǚ er de xīn sī	1
+女儿的心思	nǚ er de xīn si	1
 女儿的幸福	nǚ er de xìng fú	1
 女儿的性命	nǚ er de xìng mìng	1
 女儿的学习	nǚ er de xué xí	1
@@ -55565,7 +55568,7 @@ sort: by_weight
 女孩的母亲	nǚ hái de mǔ qīn	1
 女孩的身体	nǚ hái de shēn tǐ	1
 女孩的头发	nǚ hái de tóu fa	1
-女孩的心思	nǚ hái de xīn sī	1
+女孩的心思	nǚ hái de xīn si	1
 女孩的眼睛	nǚ hái de yǎn jing	1
 女孩的眼神	nǚ hái de yǎn shén	1
 女孩的样子	nǚ hái de yàng zi	1
@@ -78758,7 +78761,7 @@ sort: by_weight
 微波治疗术	wēi bō zhì liáo shù	1
 微波治疗仪	wēi bō zhì liáo yí	1
 韦伯综合征	wéi bó zōng hé zhēng	1
-胃部不舒服	wèi bù bù shū fú	1
+胃部不舒服	wèi bù bù shū fu	1
 尾部的设计	wěi bù de shè jì	1
 尾部的造型	wěi bù de zào xíng	1
 威布尔分布	wēi bù ěr fēn bù	1
@@ -79071,7 +79074,7 @@ sort: by_weight
 为了一个钱	wèi le yí gè qián	1
 为了这个家	wèi le zhè ge jiā	1
 伪类选择器	wěi lèi xuǎn zé qì	1
-胃里不舒服	wèi lǐ bù shū fú	1
+胃里不舒服	wèi lǐ bù shū fu	1
 胃里的食物	wèi lǐ de shí wù	1
 微粒分散型	wēi lì fēn sǎn xíng	1
 魏立格反应	wèi lì gé fǎn yìng	1
@@ -82630,7 +82633,7 @@ sort: by_weight
 细腻的文笔	xì nì de wén bǐ	1
 细腻的纹理	xì nì de wén lǐ	1
 细腻的线条	xì nì de xiàn tiáo	1
-细腻的心思	xì nì de xīn sī	1
+细腻的心思	xì nì de xīn si	1
 细腻的质感	xì nì de zhì gǎn	1
 细腻的做工	xì nì de zuò gōng	1
 西尼地平片	xī ní dì píng piàn	1
@@ -83621,6 +83624,7 @@ sort: by_weight
 现实和未来	xiàn shí hé wèi lái	1
 现实和虚拟	xiàn shí hé xū nǐ	1
 显示和隐藏	xiǎn shì hé yǐn cáng	1
+现实很骨感	xiàn shí hěn gǔ gǎn	1
 现时汇率法	xiàn shí huì lǜ fǎ	1
 现实紧迫性	xiàn shí jǐn pò xìng	1
 现实可能性	xiàn shí kě néng xìng	1
@@ -98824,17 +98828,17 @@ sort: by_weight
 渣酿白兰地	zhā niàng bái lán dì	1
 诈骗等违法	zhà piàn děng wéi fǎ	1
 炸品处理科	zhá pǐn chǔ lǐ kē	1
-扎实的唱功	zhā shí de chàng gōng	1
-扎实的底盘	zhā shí de dǐ pán	1
-扎实的功底	zhā shí de gōng dǐ	1
-扎实的工作	zhā shí de gōng zuò	1
-扎实的技术	zhā shí de jì shù	1
-扎实的剧本	zhā shí de jù běn	1
-扎实的演技	zhā shí de yǎn jì	1
-扎实的用料	zhā shí de yòng liào	1
-扎实的专业	zhā shí de zhuān yè	1
-扎实的作风	zhā shí de zuò fēng	1
-扎实的做工	zhā shí de zuò gōng	1
+扎实的唱功	zhā shi de chàng gōng	1
+扎实的底盘	zhā shi de dǐ pán	1
+扎实的功底	zhā shi de gōng dǐ	1
+扎实的工作	zhā shi de gōng zuò	1
+扎实的技术	zhā shi de jì shù	1
+扎实的剧本	zhā shi de jù běn	1
+扎实的演技	zhā shi de yǎn jì	1
+扎实的用料	zhā shi de yòng liào	1
+扎实的专业	zhā shi de zhuān yè	1
+扎实的作风	zhā shi de zuò fēng	1
+扎实的做工	zhā shi de zuò gōng	1
 眨眼的功夫	zhǎ yǎn de gōng fu	1
 眨眼的瞬间	zhǎ yǎn de shùn jiān	1
 炸药的燃烧	zhà yào de rán shāo	1
@@ -104733,7 +104737,7 @@ sort: by_weight
 自旋再取向	zì xuán zài qǔ xiàng	1
 自选作品辑	zì xuǎn zuò pǐn jí	1
 自学的能力	zì xué de néng lì	1
-资讯不对称	zī xùn bú duì chēng	1
+资讯不对称	zī xùn bú duì chèn	1
 资讯不对等	zī xùn bú duì děng	1
 资讯不流通	zī xùn bù liú tōng	1
 咨询等服务	zī xún děng fú wù	1
@@ -106020,7 +106024,7 @@ sort: by_weight
 坐在桌子前	zuò zài zhuō zi qián	1
 作战指挥室	zuò zhàn zhǐ huī shì	1
 左张量乘积	zuǒ zhāng liàng chéng jī	1
-坐着不舒服	zuò zhe bù shū fú	1
+坐着不舒服	zuò zhe bù shū fu	1
 坐着公交车	zuò zhe gōng jiāo chē	1
 坐着聊聊天	zuò zhe liáo liao tiān	1
 坐着玩手机	zuò zhe wán shǒu jī	1
@@ -110066,12 +110070,12 @@ sort: by_weight
 不断开拓进取	bú duàn kāi tuò jìn qǔ	1
 不断推陈出新	bú duàn tuī chén chū xīn	1
 不断线不断链	bú duàn xiàn bú duàn liàn	1
-不对称的偏位	bú duì chēng de piān wèi	2
-不对称的设计	bú duì chēng de shè jì	1
-不对称二苯肼	bú duì chēng èr běn jǐng	3
-不对称联体儿	bú duì chēng lián tǐ ér	1
-不对称射线图	bú duì chēng shè xiàn tú	1
-不对称碳原子	bú duì chēng tàn yuán zǐ	4
+不对称的偏位	bú duì chèn de piān wèi	2
+不对称的设计	bú duì chèn de shè jì	1
+不对称二苯肼	bú duì chèn èr běn jǐng	3
+不对称联体儿	bú duì chèn lián tǐ ér	1
+不对称射线图	bú duì chèn shè xiàn tú	1
+不对称碳原子	bú duì chèn tàn yuán zǐ	4
 布尔巴基学派	bù ěr bā jī xué pài	1
 布尔登气压计	bù ěr dēng qì yā jì	1
 布尔纳维氏病	bù ěr nà wéi shì bìng	1
@@ -110670,8 +110674,8 @@ sort: by_weight
 不受欢迎人士	bù shòu huān yíng rén shì	1
 不受欢迎人物	bù shòu huān yíng rén wù	1
 不授予专利权	bú shòu yǔ zhuān lì quán	1
-不舒服的地方	bù shū fú de dì fāng	1
-不舒服的感觉	bù shū fú de gǎn jué	1
+不舒服的地方	bù shū fu de dì fāng	1
+不舒服的感觉	bù shū fu de gǎn jué	1
 不熟练的工人	bù shú liàn de gōng rén	1
 不熟悉的环境	bù shú xī de huán jìng	1
 不熟悉的朋友	bù shú xī de péng you	1
@@ -116345,6 +116349,7 @@ sort: by_weight
 电机控制系统	diàn jī kòng zhì xì tǒng	1
 典籍里的中国	diǎn jí lǐ de zhōng guó	1
 电机驱动系统	diàn jī qū dòng xì tǒng	1
+点击任意位置	diǎn jī rèn yì wèi zhì	1
 点击鼠标右键	diǎn jī shǔ biāo yòu jiàn	1
 电机输出功率	diàn jī shū chū gōng lǜ	1
 电击小说大奖	diàn jī xiǎo shuō dà jiǎng	1
@@ -117462,7 +117467,7 @@ sort: by_weight
 对称四极测深	duì chèn sì jí cè shēn	1
 对称陀螺分子	duì chèn tuó luó fēn zǐ	1
 对称性的破坏	duì chèn xìng de pò huài	1
-对称与不对称	duì chèn yǔ bú duì chēng	1
+对称与不对称	duì chèn yǔ bú duì chèn	1
 对城市的轰炸	duì chéng shì de hōng zhà	1
 对冲基金经理	duì chōng jī jīn jīng lǐ	1
 对春晚的批评	duì chūn wǎn de pī píng	1
@@ -137699,7 +137704,7 @@ sort: by_weight
 里路二氏现象	lǐ lù èr shì xiàn xiàng	1
 藜芦碱硫酸盐	lí lú jiǎn liú suān yán	3
 理论功底深厚	lǐ lùn gōng dǐ shēn hòu	1
-理论功底扎实	lǐ lùn gōng dǐ zhā shí	1
+理论功底扎实	lǐ lùn gōng dǐ zhā shi	1
 理论和实践中	lǐ lùn hé shí jiàn zhōng	1
 理论核物理学	lǐ lùn hé wù lǐ xué	1
 理论结合实践	lǐ lùn jié hé shí jiàn	1
@@ -143519,7 +143524,7 @@ sort: by_weight
 女孩与机器人	nǚ hái yǔ jī qì rén	1
 女孩子的名字	nǚ hái zi de míng zì	1
 女孩子的声音	nǚ hái zi de shēng yīn	1
-女孩子的心思	nǚ hái zi de xīn sī	1
+女孩子的心思	nǚ hái zi de xīn si	1
 女孩子的样子	nǚ hái zi de yàng zi	1
 女黑侠木兰花	nǚ hēi xiá mù lán huā	1
 女假两性畸形	nǚ jiǎ liǎng xìng jī xíng	1
@@ -158760,7 +158765,7 @@ sort: by_weight
 喂自己一袋盐	wèi zì jǐ yí dài yán	1
 为作用作用在	wéi zuò yòng zuò yòng zài	2
 温布尔登现象	wēn bù ěr dēng xiàn xiàng	1
-稳步扎实推进	wěn bù zhā shí tuī jìn	1
+稳步扎实推进	wěn bù zhā shi tuī jìn	1
 温彻斯特步枪	wēn chè sī tè bù qiāng	1
 玟翅美洲石鱥	wén chì měi zhōu shí guì	1
 蚊虫叮咬软膏	wén chóng dīng yǎo ruǎn gāo	1
@@ -173616,7 +173621,7 @@ sort: by_weight
 周围循环衰竭	zhōu wéi xún huán shuāi jié	1
 周围有很多人	zhōu wéi yǒu hěn duō rén	1
 轴向薄壁组织	zhóu xiàng báo bì zǔ zhī	1
-轴向不对称性	zhóu xiàng bú duì chēng xìng	5
+轴向不对称性	zhóu xiàng bú duì chèn xìng	5
 轴向探察线图	zhóu xiàng tàn chá xiàn tú	1
 周星驰的电影	zhōu xīng chí de diàn yǐng	1
 周星驰的喜剧	zhōu xīng chí de xǐ jù	1
@@ -178473,9 +178478,9 @@ sort: by_weight
 不断进取的精神	bú duàn jìn qǔ de jīng shén	1
 不断开发新产品	bú duàn kāi fā xīn chǎn pǐn	1
 不断提高的过程	bú duàn tí gāo de guò chéng	1
-不对称变形振动	bú duì chēng biàn xíng zhèn dòng	3
-不对称伸缩振动	bú duì chēng shēn suō zhèn dòng	3
-不对称资讯理论	bú duì chēng zī xùn lǐ lùn	1
+不对称变形振动	bú duì chèn biàn xíng zhèn dòng	3
+不对称伸缩振动	bú duì chèn shēn suō zhèn dòng	3
+不对称资讯理论	bú duì chèn zī xùn lǐ lùn	1
 布尔德烯烃合成	bù ěr dé xī tīng hé chéng	1
 不儿罕合勒敦山	bù ér hǎn hé lè dūn shān	1
 布尔萨血红蛋白	bù ěr sà xuè hóng dàn bái	1
@@ -183517,7 +183522,7 @@ sort: by_weight
 二丁酰环磷腺苷	èr dīng xiān huán lín xiàn gān	1
 二冬生地当归身	èr dōng shēng dì dāng guī shēn	1
 尔独何辜限河梁	ěr dú hé gū xiàn hé liáng	1
-耳朵有点不舒服	ěr duo yǒu diǎn bù shū fú	1
+耳朵有点不舒服	ěr duo yǒu diǎn bù shū fu	1
 二二八和平公园	èr èr bā hé píng gōng yuán	1
 二芳基甲烷染料	èr fāng jī jiǎ wán rǎn liào	1
 二分梁甫一分骚	èr fēn liáng fǔ yì fēn sāo	1
@@ -187272,7 +187277,7 @@ sort: by_weight
 更加有力的举措	gèng jiā yǒu lì de jǔ cuò	1
 更加优异的成绩	gèng jiā yōu yì de chéng jì	1
 更加优质的服务	gèng jiā yōu zhì de fú wù	1
-更加扎实的作风	gèng jiā zhā shí de zuò fēng	1
+更加扎实的作风	gèng jiā zhā shi de zuò fēng	1
 更加知柏成八味	gèng jiā zhī bǎi chéng bā wèi	1
 更将金蕊泛流霞	gèng jiāng jīn ruǐ fàn liú xiá	1
 更觉鹤心通杳冥	gèng jué hè xīn tōng yǎo míng	1
@@ -200982,7 +200987,7 @@ sort: by_weight
 含煤岩系旋回结构	hán méi yán xì xuán huí jié gòu	1
 航空地质调查方法	háng kōng dì zhì diào chá fāng fǎ	1
 毫不利己专门利人	háo bú lì jǐ zhuān mén lì rén	1
-好记性不如烂笔头	hǎo jì xìng bù rú làn bǐ tóu	1
+好记性不如烂笔头	hǎo jì xing bù rú làn bǐ tóu	1
 合成孔径侧视雷达	hé chéng kǒng jìng cè shì léi dá	1
 红装素裹分外妖娆	hóng zhuāng sù guǒ fèn wài yāo ráo	1
 葫芦里卖的什么药	hú lu lǐ mài de shén me yào	1
