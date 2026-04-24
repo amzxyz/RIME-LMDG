@@ -24886,7 +24886,7 @@ sort: by_weight
 兵粮如山积	bīng liáng rú shān jī	1
 冰鳞看吞吐	bīng lín kàn tūn tǔ	1
 炳灵精气奔	bǐng líng jīng qì bēn	1
-病柳伤摧折	bìng liǔ shāng cuī shé	1
+病柳伤摧折	bìng liǔ shāng cuī zhé	1
 兵流指诸掌	bīng liú zhǐ zhū zhǎng	1
 秉纶归国工	bǐng lún guī guó gōng	1
 冰轮横海阔	bīng lún héng hǎi kuò	1
@@ -42917,10 +42917,6 @@ sort: by_weight
 翠色影长津	cuì sè yǐng cháng jīn	1
 翠色枝枝满	cuì sè zhī zhī mǎn	1
 翠山来彻底	cuì shān lái chè dǐ	1
-摧折不自守	cuī shé bú zì shǒu	1
-摧折成病痾	cuī shé chéng bìng ē	1
-摧折气愈下	cuī shé qì yù xià	1
-摧折如短辕	cuī shé rú duǎn yuán	1
 翠深开断壁	cuì shēn kāi duàn bì	1
 崔生何傲岸	cuī shēng hé ào àn	1
 崔十八新池	cuī shí bā xīn chí	1
@@ -43027,6 +43023,10 @@ sort: by_weight
 毳帐差池见	cuì zhàng chā chí jiàn	1
 翠仗萦船岸	cuì zhàng yíng chuán àn	1
 崔昭生崔芸	cuī zhāo shēng cuī yún	1
+摧折不自守	cuī zhé bú zì shǒu	1
+摧折成病痾	cuī zhé chéng bìng ē	1
+摧折气愈下	cuī zhé qì yù xià	1
+摧折如短辕	cuī zhé rú duǎn yuán	1
 翠轴卷琼琚	cuì zhóu juǎn qióng jū	1
 翠帚扫春风	cuì zhǒu sǎo chūn fēng	1
 翠竹摇清秋	cuì zhú yáo qīng qiū	1
@@ -43160,7 +43160,7 @@ sort: by_weight
 寸心东北驰	cùn xīn dōng běi chí	1
 寸心贵不忘	cùn xīn guì bú wàng	1
 寸心何所望	cùn xīn hé suǒ wàng	1
-寸心久摧折	cùn xīn jiǔ cuī shé	1
+寸心久摧折	cùn xīn jiǔ cuī zhé	1
 寸心明白日	cùn xīn míng bai rì	1
 寸心铭佩牢	cùn xīn míng pèi láo	1
 寸心宁死别	cùn xīn níng sǐ bié	1
@@ -59080,7 +59080,7 @@ sort: by_weight
 肤润玉肌丰	fū rùn yù jī fēng	1
 抚弱复绥强	fǔ ruò fù suí qiáng	1
 夫三年之丧	fū sān nián zhī sàng	1
-扶桑半摧折	fú sāng bàn cuī shé	1
+扶桑半摧折	fú sāng bàn cuī zhé	1
 扶桑寒日薄	fú sāng hán rì báo	1
 扶桑如可扪	fú sāng rú kě mén	1
 扶桑色昕昕	fú sāng sè xīn xīn	1
@@ -90127,7 +90127,7 @@ sort: by_weight
 尽力穷窟穴	jìn lì qióng kū xué	1
 筋力上楼知	jīn lì shàng lóu zhī	1
 槿篱生白花	jǐn lí shēng bái huā	1
-筋力苏摧折	jīn lì sū cuī shé	1
+筋力苏摧折	jīn lì sū cuī zhé	1
 筋力未全衰	jīn lì wèi quán shuāi	1
 筋力羡丁夫	jīn lì xiàn dīng fū	1
 锦里烟尘外	jǐn lǐ yān chén wài	1
@@ -104940,7 +104940,7 @@ sort: by_weight
 良工不弃捐	liáng gōng bú qì juān	1
 良工不我顾	liáng gōng bù wǒ gù	1
 两宫初旰食	liǎng gōng chū gàn shí	1
-良弓摧折久	liáng gōng cuī shé jiǔ	1
+良弓摧折久	liáng gōng cuī zhé jiǔ	1
 两公但取醉	liǎng gōng dàn qǔ zuì	1
 两宫各警跸	liǎng gōng gè jǐng bì	1
 良工古昔少	liáng gōng gǔ xī shǎo	1
@@ -112314,7 +112314,7 @@ sort: by_weight
 貌苦夜霜严	mào kǔ yè shuāng yán	1
 茂礼雕龙昔	mào lǐ diāo lóng xī	1
 毛厘亦耻言	máo lí yì chǐ yán	1
-茂林久摧折	mào lín jiǔ cuī shé	1
+茂林久摧折	mào lín jiǔ cuī zhé	1
 茂林延疏光	mào lín yán shū guāng	1
 茂林予偃息	mào lín yǔ yǎn xī	1
 茂陵多病后	mào líng duō bìng hòu	1
@@ -154965,7 +154965,7 @@ sort: by_weight
 双双瞻客上	shuāng shuāng zhān kè shàng	1
 双双镇璧全	shuāng shuāng zhèn bì quán	1
 霜丝青桂楫	shuāng sī qīng guì jí	1
-霜松摧折身	shuāng sōng cuī shé shēn	1
+霜松摧折身	shuāng sōng cuī zhé shēn	1
 双松在前轩	shuāng sōng zài qián xuān	1
 霜松贞雅节	shuāng sōng zhēn yǎ jié	1
 霜随驱夏暑	shuāng suí qū xià shǔ	1
@@ -241611,7 +241611,7 @@ sort: by_weight
 奔走清波不自由	bēn zǒu qīng bō bú zì yóu	1
 奔走吴会输金钱	bēn zǒu wú huì shū jīn qián	1
 奔走卒岁官淮沂	bēn zǒu zú suì guān huái yí	1
-崩槎卧木争摧折	bēng chá wò mù zhēng cuī shé	1
+崩槎卧木争摧折	bēng chá wò mù zhēng cuī zhé	1
 崩城毁壁至今在	bēng chéng huǐ bì zhì jīn zài	1
 迸火石上飞星裂	bèng huǒ shí shàng fēi xīng liè	1
 迸泪幽吟事如昨	bèng lèi yōu yín shì rú zuó	1
@@ -253536,7 +253536,7 @@ sort: by_weight
 独鹤不知何事舞	dú hè bù zhī hé shì wǔ	1
 独鹤初冲太虚日	dú hè chū chōng tài xū rì	1
 独贺崔侯最庆荣	dú hè cuī hóu zuì qìng róng	1
-独鹤声哀羽摧折	dú hè shēng āi yǔ cuī shé	1
+独鹤声哀羽摧折	dú hè shēng āi yǔ cuī zhé	1
 渡河问我游梁园	dù hé wèn wǒ yóu liáng yuán	1
 独和先生于蒍于	dú hé xiān shēng yú wěi yú	1
 独鹤有声知半夜	dú hè yǒu shēng zhī bàn yè	1
@@ -261841,7 +261841,7 @@ sort: by_weight
 含情起立问傍人	hán qíng qǐ lì wèn páng rén	1
 含情少妇悲春草	hán qíng shào fù bēi chūn cǎo	1
 寒轻市上山烟碧	hán qīng shì shàng shān yān bì	1
-含情收取摧折枝	hán qíng shōu qǔ cuī shé zhī	1
+含情收取摧折枝	hán qíng shōu qǔ cuī zhé zhī	1
 含情无语倚楼西	hán qíng wú yǔ yǐ lóu xī	1
 含情掩泪独回头	hán qíng yǎn lèi dú huí tóu	1
 寒轻夜浅绕回廊	hán qīng yè qiǎn rào huí láng	1
@@ -267891,7 +267891,7 @@ sort: by_weight
 见寄聊且慰分司	jiàn jì liáo qiě wèi fēn sī	1
 兼寄浙东李侍郎	jiān jì zhè dōng lǐ shì láng	1
 蒹葭白水绕长洲	jiān jiā bái shuǐ rào cháng zhōu	1
-蒹葭摧折不自守	jiān jiā cuī shé bú zì shǒu	1
+蒹葭摧折不自守	jiān jiā cuī zhé bú zì shǒu	1
 蒹葭浩荡双蓬鬓	jiān jiā hào dàng shuāng péng bìn	1
 蒹葭露白莲塘浅	jiān jiā lòu bái lián táng qiǎn	1
 蒹葭曙色苍苍远	jiān jiā shǔ sè cāng cāng yuǎn	1
@@ -274512,7 +274512,7 @@ sort: by_weight
 况得数子发嘉兴	kuàng de shù zǐ fā jiā xīng	1
 旷度交欢云雾披	kuàng dù jiāo huān yún wù pī	1
 况对东溪野枇杷	kuàng duì dōng xī yě pí pá	1
-狂风暴雨终摧折	kuáng fēng bào yǔ zhōng cuī shé	1
+狂风暴雨终摧折	kuáng fēng bào yǔ zhōng cuī zhé	1
 狂风愁杀峭帆人	kuáng fēng chóu shā qiào fān rén	1
 狂风吹去落谁家	kuáng fēng chuī qù luò shuí jiā	1
 狂风吹却妾心断	kuáng fēng chuī què qiè xīn duàn	1
@@ -297320,7 +297320,7 @@ sort: by_weight
 始意类萝新托柏	shǐ yì lèi luó xīn tuō bǎi	1
 诗意留连重物华	shī yì liú lián zhòng wù huá	1
 拾遗流落锦官城	shí yí liú luò jǐn guān chéng	1
-时忆笼中摧折羽	shí yì lóng zhōng cuī shé yǔ	1
+时忆笼中摧折羽	shí yì lóng zhōng cuī zhé yǔ	1
 失意每多如意少	shī yì měi duō rú yì shǎo	1
 十一年来见此翁	shí yī nián lái jiàn cǐ wēng	1
 十一年前梦一场	shí yī nián qián mèng yì chǎng	1
@@ -332216,7 +332216,7 @@ sort: by_weight
 君不见穆王三日哭	jūn bú jiàn mù wáng sān rì kū	1
 君不见抛官彭泽令	jūn bú jiàn pāo guān péng zé lìng	1
 君不见钱塘宦游客	jūn bú jiàn qián táng huàn yóu kè	1
-君不见前者摧折桐	jūn bú jiàn qián zhě cuī shé tóng	1
+君不见前者摧折桐	jūn bú jiàn qián zhě cuī zhé tóng	1
 君不见秦时蜀太守	jūn bú jiàn qín shí shǔ tài shǒu	1
 君不见秦赵城易璧	jūn bú jiàn qín zhào chéng yì bì	1
 君不见沙场征战苦	jūn bú jiàn shā chǎng zhēng zhàn kǔ	1

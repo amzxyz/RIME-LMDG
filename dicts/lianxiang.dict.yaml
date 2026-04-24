@@ -3009,7 +3009,6 @@ sort: by_weight
 保住了性命	bǎo zhu le xìng mìng	1
 豹主战坦克	bào zhǔ zhàn tǎn kè	1
 堡状层积云	bǎo zhuàng céng jī yún	1
-包装的很好	bāo zhuāng de hěn hǎo	1
 包装得很好	bāo zhuāng de hěn hǎo	1
 堡状高积云	bǎo zhuàng gāo jī yún	1
 包装和运输	bāo zhuāng hé yùn shū	1
@@ -11011,7 +11010,7 @@ sort: by_weight
 春夏秋三季	chūn xià qiū sān jì	1
 醇香的咖啡	chún xiāng de kā fēi	1
 醇香的美酒	chún xiāng de měi jiǔ	1
-纯香芝麻油	chún xiāng zhī má yóu	1
+纯香芝麻油	chún xiāng zhī ma yóu	1
 春咲和津实	chūn xiào hé jīn shí	1
 纯信用贷款	chún xìn yòng dài kuǎn	1
 唇形科植物	chún xíng kē zhí wù	1
@@ -11780,7 +11779,7 @@ sort: by_weight
 大败毒胶囊	dà bài dú jiāo náng	1
 打败拦路虎	dǎ bài lán lù hǔ	1
 大半壁江山	dà bàn bì jiāng shān	1
-打扮的很潮	dǎ bàn de hěn cháo	1
+打扮得很潮	dǎ bàn de hěn cháo	1
 大半个世纪	dà bàn gè shì jì	1
 大般涅槃经	dà bān niè pán jīng	1
 搭伴式养老	dā bàn shì yǎng lǎo	1
@@ -16203,6 +16202,7 @@ sort: by_weight
 东方的传说	dōng fāng de chuán shuō	1
 东方福尔灵	dōng fāng fú ěr líng	1
 东方和西方	dōng fāng hé xī fāng	1
+东方红一号	dōng fāng hóng yī hào	1
 洞房花烛夜	dòng fáng huā zhú yè	1
 东方活血膏	dōng fāng huó xuè gāo	1
 东方铠甲虾	dōng fāng kǎi jiǎ xiā	1
@@ -16661,7 +16661,7 @@ sort: by_weight
 豆状核下部	dòu zhuàng hé xià bù	1
 都自愧不如	dōu zì kuì bù rú	1
 都自叹不如	dōu zì tàn bù rú	1
-豆子芝麻茶	dòu zi zhī má chá	1
+豆子芝麻茶	dòu zi zhī ma chá	1
 都足以说明	dōu zú yǐ shuō míng	1
 都足以证明	dōu zú yǐ zhèng míng	1
 都阻止不了	dōu zǔ zhǐ bù liǎo	1
@@ -17099,6 +17099,7 @@ sort: by_weight
 断裂重接酶	duàn liè zhòng jiē méi	1
 短路带磁通	duǎn lù dài cí tōng	1
 端毛轮幼虫	duān máo lún yòu chóng	1
+端面耦合器	duān miàn ǒu hé qì	1
 端明殿学士	duān míng diàn xué shì	1
 断奶的孩子	duàn nǎi de hái zi	1
 短篇鬼故事	duǎn piān guǐ gù shi	1
@@ -18606,6 +18607,7 @@ sort: by_weight
 二进制反码	èr jìn zhì fǎn mǎ	1
 二进制枚举	èr jìn zhì méi jǔ	1
 二进制数系	èr jìn zhì shù xì	1
+二进制算术	èr jìn zhì suàn shù	1
 二聚羟丁醛	èr jù qiǎng dīng quán	1
 二句三年得	èr jù sān nián dé	1
 耳壳流痰病	ěr ké liú tán bìng	1
@@ -26873,6 +26875,7 @@ sort: by_weight
 工作及生活	gōng zuò jí shēng huó	1
 工作家庭党	gōng zuò jiā tíng dǎng	1
 工作经验吧	gōng zuò jīng yàn ba	1
+工作没意义	gōng zuò méi yì yì	1
 工作任务重	gōng zuò rèn wù zhòng	1
 工作人员称	gōng zuò rén yuán chēng	1
 工作人员会	gōng zuò rén yuán huì	1
@@ -28289,6 +28292,7 @@ sort: by_weight
 硅存储科技	guī cún chǔ kē jì	1
 鬼盗船魔咒	guǐ dào chuán mó zhòu	1
 轨道飞行器	guǐ dào fēi xíng qì	1
+轨道角动量	guǐ dào jiǎo dòng liàng	1
 轨道鸳鸯站	guǐ dào yuān yāng zhàn	1
 归德府城墙	guī dé fǔ chéng qiáng	1
 归德节度使	guī dé jié dù shǐ	1
@@ -28865,6 +28869,7 @@ sort: by_weight
 国家或地区	guó jiā huò dì qū	1
 国家级大师	guó jiā jí dà shī	1
 国家及地区	guó jiā jí dì qū	1
+国家及地区	guó jiā jí dì qū	1
 国家级副职	guó jiā jí fù zhí	1
 国家级工法	guó jiā jí gōng fǎ	1
 国家纪念区	guó jiā jì niàn qū	1
@@ -29297,6 +29302,7 @@ sort: by_weight
 海岸巡防署	hǎi àn xún fáng shǔ	1
 海岸岩溶型	hǎi àn yán róng xíng	1
 海巴青霉素	hǎi bā qīng méi sù	1
+海报和标志	hǎi bào hé biāo zhì	1
 海豹肢畸形	hǎi bào zhī jī xíng	1
 海不可斗量	hǎi bù kě dǒu liáng	1
 还不了解吗	hái bù liǎo jiě ma	1
@@ -31136,6 +31142,7 @@ sort: by_weight
 很硬的男人	hěn yìng de nán rén	1
 很有趣的事	hěn yǒu qù de shì	1
 很有实力的	hěn yǒu shí lì de	1
+很有文艺范	hěn yǒu wén yì fàn	1
 很有诱惑力	hěn yǒu yòu huò lì	1
 很与众不同	hěn yǔ zhòng bù tóng	1
 很重要的事	hěn zhòng yào de shì	1
@@ -34981,6 +34988,7 @@ sort: by_weight
 季后赛席位	jì hòu sài xí wèi	1
 季后赛形势	jì hòu sài xíng shì	1
 季后赛以来	jì hòu sài yǐ lái	1
+几乎看不见	jī hū kàn bú jiàn	1
 计划单列市	jì huà dān liè shì	1
 计划的实施	jì huà de shí shī	1
 计划的制定	jì huà de zhì dìng	1
@@ -41832,7 +41840,7 @@ sort: by_weight
 九品官人法	jiǔ pǐn guān rén fǎ	1
 九品三十阶	jiǔ pǐn sān shí jiē	1
 九品十八阶	jiǔ pǐn shí bā jiē	1
-九品芝麻官	jiǔ pǐn zhī má guān	1
+九品芝麻官	jiǔ pǐn zhī ma guān	1
 九品中正制	jiǔ pǐn zhōng zhèng zhì	1
 九评共产党	jiǔ píng gòng chǎn dǎng	1
 旧瓶装新酒	jiù píng zhuāng xīn jiǔ	1
@@ -62704,9 +62712,8 @@ sort: by_weight
 韧性供应链	rèn xìng gōng yìng liàn	1
 人形何首乌	rén xíng hé shǒu wū	1
 人行横道线	rén xíng héng dào xiàn	1
-人型机器人	rén xíng jī qì rén	1
 人形机器人	rén xíng jī qì rén	1
-人型机械人	rén xíng jī xiè rén	1
+人形机械人	rén xíng jī xiè rén	1
 韧性剪切带	rèn xìng jiǎn qiē dài	1
 人形净琉璃	rén xíng jìng liú lí	1
 人形浄瑠璃	rén xíng jìng liú lí	1
@@ -65532,7 +65539,7 @@ sort: by_weight
 商住两用房	shāng zhù liǎng yòng fáng	1
 哨兵机器人	shào bīng jī qì rén	1
 烧饼夹里脊	shāo bing jiā lǐ ji	1
-烧饼芝麻多	shāo bing zhī má duō	1
+烧饼芝麻多	shāo bing zhī ma duō	1
 少吃或不吃	shǎo chī huò bù chī	1
 烧冲复合伤	shāo chōng fù hé shāng	1
 烧瓷牙崩瓷	shāo cí yá bēng cí	1
@@ -66131,6 +66138,7 @@ sort: by_weight
 沈曾植故居	shěn céng zhí gù jū	1
 肾茶袋泡茶	shèn chá dài pào chá	1
 审查调查室	shěn chá diào chá shì	1
+审查和封锁	shěn chá hé fēng suǒ	1
 审查和批准	shěn chá hé pī zhǔn	1
 审查用副本	shěn chá yòng fù běn	1
 神产巢日神	shén chǎn cháo rì shén	1
@@ -67197,6 +67205,7 @@ sort: by_weight
 生活服务圈	shēng huó fú wù quān	1
 生活和爱情	shēng huó hé ài qíng	1
 生活和家庭	shēng huó hé jiā tíng	1
+生活和时代	shēng huó hé shí dài	1
 生活和事业	shēng huó hé shì yè	1
 生活和思想	shēng huó hé sī xiǎng	1
 生活和艺术	shēng huó hé yì shù	1
@@ -71065,7 +71074,7 @@ sort: by_weight
 舒胆片糖衣	shū dǎn piàn táng yī	1
 树倒猢狲散	shù dǎo hú sūn sàn	1
 书的爱好者	shū de ài hào zhě	1
-熟的白芝麻	shú de bái zhī má	1
+熟的白芝麻	shú de bái zhī ma	1
 书的后半部	shū de hòu bàn bù	1
 数的几何学	shù de jǐ hé xué	1
 输电运检室	shū diàn yùn jiǎn shì	1
@@ -71519,6 +71528,7 @@ sort: by_weight
 耍耍小脾气	shuǎ shuǎ xiǎo pí qì	1
 耍耍嘴皮子	shuǎ shuǎ zuǐ pí zi	1
 刷新知识库	shuā xīn zhī shi kù	1
+刷牙刷出血	shuā yá shuā chū xiě	1
 刷牙刷到吐	shuā yá shuā dào tǔ	1
 耍阴谋诡计	shuǎ yīn móu guǐ jì	1
 衰变曲线𫟷	shuāi biàn qū xiàn lì	1
@@ -73587,6 +73597,7 @@ sort: by_weight
 酸式碳酸钾	suān shì tàn suān jiǎ	4
 酸式碳酸锂	suān shì tàn suān lǐ	1
 酸式碳酸钠	suān shì tàn suān nà	6
+算术平方根	suàn shù píng fāng gēn	1
 算术平均数	suàn shù píng jūn shù	1
 算数平均数	suàn shù píng jūn shù	1
 酸水回流罐	suān shuǐ huí liú guàn	1
@@ -77619,6 +77630,7 @@ sort: by_weight
 拖出去斩了	tuō chū qù zhǎn le	1
 脱垂性内痔	tuō chuí xìng nèi zhì	1
 脱垂性外痔	tuō chuí xìng wài zhì	1
+托大家的福	tuō dà jiā de fú	1
 托达罗模型	tuō dá luó mó xíng	1
 脱单的机会	tuō dān de jī huì	1
 脱氮鸟嘌呤	tuō dàn niǎo piào lìng	1
@@ -78587,6 +78599,7 @@ sort: by_weight
 王阳明全集	wáng yáng míng quán jí	1
 王阳明心学	wáng yáng míng xīn xué	1
 网页的设计	wǎng yè de shè jì	1
+网页浏览器	wǎng yè liú lǎn qì	1
 王翼马开局	wáng yì mǎ kāi jú	1
 网易闪电邮	wǎng yì shǎn diàn yóu	1
 网友的猜测	wǎng yǒu de cāi cè	1
@@ -79666,6 +79679,7 @@ sort: by_weight
 胃左淋巴结	wèi zuǒ lín bā jié	1
 胃左右动脉	wèi zuǒ yòu dòng mài	1
 纹斑巴非蛤	wén bān bā fēi há	1
+文本编辑器	wén běn biān jí qì	1
 文本编写器	wén běn biān xiě qì	1
 文本到语音	wén běn dào yǔ yīn	1
 闻不到异味	wén bú dào yì wèi	1
@@ -85913,6 +85927,7 @@ sort: by_weight
 斜对称矩阵	xié duì chèn jǔ zhèn	1
 斜对称张量	xié duì chèn zhāng liàng	1
 斜多项式环	xié duō xiàng shì huán	1
+邪恶大小姐	xié è dà xiǎo jiě	1
 邪恶坏女巫	xié è huài nǚ wū	1
 邪遏卫气证	xié è wèi qì zhèng	1
 邪恶与疯狂	xié è yǔ fēng kuáng	1
@@ -101350,9 +101365,9 @@ sort: by_weight
 致罗马人书	zhì luó mǎ rén shū	1
 直罗镇战斗	zhí luó zhèn zhàn dòu	1
 直罗镇战役	zhí luó zhèn zhàn yì	1
-芝麻的香味	zhī má de xiāng wèi	1
-芝麻开花花	zhī má kāi huā huā	1
-芝麻湾半岛	zhī má wān bàn dǎo	1
+芝麻的香味	zhī ma de xiāng wèi	1
+芝麻开花花	zhī ma kāi huā huā	1
+芝麻湾半岛	zhī ma wān bàn dǎo	1
 直埋保温管	zhí mái bǎo wēn guǎn	1
 脂脉康胶囊	zhī mài kāng jiāo náng	1
 指脉氧监测	zhǐ mài yǎng jiān cè	1
@@ -112150,7 +112165,7 @@ sort: by_weight
 超世纪谍杀案	chāo shì jì dié shā àn	1
 超世纪封神榜	chāo shì jì fēng shén bǎng	1
 潮湿敏感等级	cháo shī mǐn gǎn děng jí	1
-炒熟的黑芝麻	chǎo shú de hēi zhī má	1
+炒熟的黑芝麻	chǎo shú de hēi zhī ma	1
 超双曲型方程	chāo shuāng qǔ xíng fāng chéng	1
 超说明书用药	chāo shuō míng shū yòng yào	1
 超速效胰岛素	chāo sù xiào yí dǎo sù	1
@@ -112251,7 +112266,7 @@ sort: by_weight
 沉淀二氧化硅	chén diàn èr yǎng huà guī	2
 陈废帝陈伯宗	chén fèi dì chén bó zōng	1
 陈高祖陈霸先	chén gāo zǔ chén bà xiān	1
-陈谷子烂芝麻	chén gǔ zi làn zhī má	1
+陈谷子烂芝麻	chén gǔ zi làn zhī ma	1
 宸鸿光电科技	chén hóng guāng diàn kē jì	1
 陈化成纪念馆	chén huà chéng jì niàn guǎn	1
 沉火山角砾岩	chén huǒ shān jiǎo lì yán	1
@@ -112321,7 +112336,7 @@ sort: by_weight
 沉鱼落雁之容	chén yú luò yàn zhī róng	1
 陈竽瑟兮浩倡	chén yú sè xī hào chàng	1
 衬于文字下方	chèn yú wén zì xià fāng	1
-陈芝麻烂谷子	chén zhī má làn gǔ zi	1
+陈芝麻烂谷子	chén zhī ma làn gǔ zi	1
 郴州籍运动员	chēn zhōu jí yùn dòng yuán	1
 趁自己还年轻	chèn zì jǐ hái nián qīng	1
 成巴高速公路	chéng bā gāo sù gōng lù	1
@@ -115477,20 +115492,13 @@ sort: by_weight
 德杜二氏麻醉	dé dù èr shì má zuì	1
 德都红花七味	dé dū hóng huā qī wèi	1
 锝二甲苯双酸	dé èr jiǎ běn shuāng suān	1
-的二进制算术	de èr jìn zhì suàn shù	1
 德尔卡斯蒂略	dé ěr kǎ sī dì lüè	1
 德福二氏试验	dé fú èr shì shì yàn	1
 德弗里斯方程	dé fú lǐ sī fāng chéng	1
 的感觉更多的	de gǎn jué gèng duō de	1
-的工作没意义	de gōng zuò méi yì yì	1
 德国国家标准	dé guó guó jiā biāo zhǔn	2
-的国家及地区	de guó jiā jí dì qū	1
 德哈特综合征	dé hā tè zōng hé zhēng	1
 德哈维兰公司	dé hā wéi lán gōng sī	1
-的海报和标志	de hǎi bào hé biāo zhì	1
-的很有文艺范	de hěn yǒu wén yì fàn	1
-的基础上采用	de jī chǔ shàng cǎi yòng	1
-得几乎看不见	de jī hū kàn bú jiàn	1
 德甲多特蒙德	dé jiǎ duō tè méng dé	1
 德甲勒沃库森	dé jiǎ lè wò kù sēn	1
 德甲联赛冠军	dé jiǎ lián sài guàn jūn	1
@@ -115514,24 +115522,17 @@ sort: by_weight
 德勤关黄陈方	dé qín guān huáng chén fāng	1
 德上高速公路	dé shàng gāo sù gōng lù	1
 德商高速公路	dé shāng gāo sù gōng lù	1
-的审查和封锁	de shěn chá hé fēng suǒ	1
-的生活和时代	de shēng huó hé shí dài	1
 得失安之于数	dé shī ān zhī yú shù	1
 德史二氏导管	dé shǐ èr shì dǎo guǎn	1
 德事商务中心	dé shì shāng wù zhōng xīn	1
 德属东非公司	dé shǔ dōng fēi gōng sī	1
 德属东非战役	dé shǔ dōng fēi zhàn yì	1
 得似洋洋河水	dé sì yáng yáng hé shuǐ	1
-的算术平方根	de suàn shù píng fāng gēn	1
 德索拉西翁岛	dé suǒ lā xī wēng dǎo	1
-的托大家的福	de tuō dà jiā de fú	1
-的网页浏览器	de wǎng yè liú lǎn qì	1
 得卫特方程式	dé wèi tè fāng chéng shì	1
-的文本编辑器	de wén běn biān jí qì	1
 德婺高速公路	dé wù gāo sù gōng lù	1
 德乌里诺条约	dé wū lǐ nuò tiáo yuē	1
 得仙人之旧馆	dé xiān rén zhī jiù guǎn	1
-的邪恶大小姐	de xié è dà xiǎo jiě	1
 得以征服万物	dé yǐ zhēng fú wàn wù	1
 得与王子同舟	dé yǔ wáng zǐ tóng zhōu	1
 得知此消息后	dé zhī cǐ xiāo xi hòu	1
@@ -153423,7 +153424,7 @@ sort: by_weight
 受诅咒的魔杖	shòu zǔ zhòu de mó zhàng	1
 舒巴坦匹戊酯	shū bā tǎn pǐ wù zhǐ	1
 数百年之久的	shù bǎi nián zhī jiǔ de	1
-熟白芝麻适量	shú bái zhī má shì liàng	1
+熟白芝麻适量	shú bái zhī ma shì liàng	1
 叔本华的意志	shū běn huá de yì zhì	1
 舒必利注射液	shū bì lì zhù shè yè	1
 鼠标右键点击	shǔ biāo yòu jiàn diǎn jī	1
@@ -172172,8 +172173,8 @@ sort: by_weight
 直鲁豫巡阅使	zhí lǔ yù xún yuè shǐ	1
 治乱世用重典	zhì luàn shì yòng zhòng diǎn	1
 直落布兰雅站	zhí luò bù lán yǎ zhàn	1
-芝麻虫昌蜗牛	zhī má chóng chāng wō niú	1
-芝麻鬼脸天蛾	zhī má guǐ liǎn tiān é	1
+芝麻虫昌蜗牛	zhī ma chóng chāng wō niú	1
+芝麻鬼脸天蛾	zhī ma guǐ liǎn tiān é	1
 直埋式保温管	zhí mái shì bǎo wēn guǎn	1
 脂酶水平异常	zhī méi shuǐ píng yì cháng	1
 制霉素片糖衣	zhì méi sù piàn táng yī	1
@@ -201029,7 +201030,7 @@ sort: by_weight
 加氢脱烷基催化剂	jiā qīng tuō wán jī cuī huà jì	2
 间氨基苯甲酸乙酯	jiān ān jī běn jiǎ suān yǐ zhǐ	2
 坚定信心上下同欲	jiān dìng xìn xīn shàng xià tóng yù	1
-拣了芝麻丢了西瓜	jiǎn le zhī má diū le xī guā	1
+拣了芝麻丢了西瓜	jiǎn le zhī ma diū le xī guā	1
 减色效应淡色效应	jiǎn sè xiào yìng dàn sè xiào yìng	1
 兼听则明偏听则暗	jiān tīng zé míng piān tīng zé àn	1
 碱性碘化汞钾试液	jiǎn xìng diǎn huà gǒng jiǎ shì yè	1
