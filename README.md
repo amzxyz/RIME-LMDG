@@ -43,7 +43,7 @@ octagram:
       collocation_max_length: 8
       collocation_min_length: 2
       collocation_penalty: -5
-      non_collocation_penalty: 0
+      non_collocation_penalty: -5
       weak_collocation_penalty: -35
       rear_penalty: -12
     translator/contextual_suggestions: false
