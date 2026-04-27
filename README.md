@@ -41,10 +41,10 @@ octagram:
     grammar:
       language: wanxiang-lts-zh-hans
       collocation_max_length: 8
-      collocation_min_length: 2
+      collocation_min_length: 3
       collocation_penalty: -10
-      non_collocation_penalty: -10
-      weak_collocation_penalty: -35
+      non_collocation_penalty: -5
+      weak_collocation_penalty: -100
       rear_penalty: -5
     translator/contextual_suggestions: false
     translator/max_homophones: 8
