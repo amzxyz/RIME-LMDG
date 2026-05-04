@@ -59,7 +59,6 @@ sort: by_weight
 曾诞	céng dàn	55
 曾觌	céng dí	55
 曾栋	céng dòng	55
-曾揆	céng kuí	55
 曾隶	céng lì	55
 曾协	céng xié	55
 曾肇	céng zhào	55
@@ -1281,6 +1280,7 @@ sort: by_weight
 仄平	zè píng	55
 则易	zé yì	55
 仄韵	zè yùn	55
+曾揆	zēng kuí	55
 赠内	zèng nèi	55
 赠言	zèng yán	55
 斋戒	zhāi jiè	55
@@ -123501,7 +123501,7 @@ sort: by_weight
 平生困一箪	píng shēng kùn yī dān	1
 平生赖击蒙	píng shēng lài jī méng	1
 平生懒拙意	píng shēng lǎn zhuō yì	1
-平生凉薄资	píng shēng liáng báo zī	1
+平生凉薄资	píng shēng liáng bó zī	1
 平生谅所钦	píng shēng liàng suǒ qīn	1
 平生刘宗正	píng shēng liú zōng zhèng	1
 平生漫岁晚	píng shēng màn suì wǎn	1
@@ -162354,7 +162354,7 @@ sort: by_weight
 谈笑接清扬	tán xiào jiē qīng yáng	1
 谈笑皆王公	tán xiào jiē wáng gōng	1
 谈笑尽豪英	tán xiào jìn háo yīng	1
-谈笑凯歌还	tán xiào kǎi gē hái	1
+谈笑凯歌还	tán xiào kǎi gē huán	1
 谈笑开中否	tán xiào kāi zhōng fǒu	1
 谈笑考百工	tán xiào kǎo bǎi gōng	1
 谈笑迷朝曛	tán xiào mí cháo xūn	1
@@ -232246,6 +232246,7 @@ sort: by_weight
 答骑马入空台	dá qí mǎ rù kōng tái	1
 大人屼当安之	dà rén wù dāng ān zhī	1
 大社观献捷诗	dà shè guān xiàn jié shī	1
+大宋宣和遗事	dà sòng xuān hé yí shì	1
 大通禅师真赞	dà tōng chán shī zhēn zàn	1
 答王晦之见寄	dá wáng huì zhī jiàn jì	1
 大笑拂衣归矣	dà xiào fú yī guī yǐ	1
@@ -300029,6 +300030,7 @@ sort: by_weight
 松间沙路净无泥	sōng jiān shā lù jìng wú ní	1
 松间倘许幽人住	sōng jiān tǎng xǔ yōu rén zhù	1
 颂简庭空不用关	sòng jiǎn tíng kōng bú yòng guān	1
+宋江三十六人赞	sòng jiāng sān shí liù rén zàn	1
 松江蟹舍主人欢	sōng jiāng xiè shě zhǔ rén huān	1
 松江烟雨晚疏疏	sōng jiāng yān yǔ wǎn shū shū	1
 宋晋郑女歌声发	sòng jìn zhèng nǚ gē shēng fā	1
