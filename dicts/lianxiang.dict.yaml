@@ -11248,6 +11248,7 @@ sort: by_weight
 此树是我栽	cǐ shù shì wǒ zāi	10
 刺鼠肽基因	cì shǔ tài jī yīn	10
 次水杨酸铋	cì shuǐ yáng suān bì	10
+磁随机存储	cí suí jī cún chǔ	10
 瓷胎画珐琅	cí tāi huà fà láng	10
 次碳酸铋片	cì tàn suān bì piàn	10
 次碳酸铋油	cì tàn suān bì yóu	10
@@ -14733,6 +14734,7 @@ sort: by_weight
 第三方控件	dì sān fāng kòng jiàn	10
 第三方权利	dì sān fāng quán lì	10
 第三方势力	dì sān fāng shì lì	10
+第三方依赖	dì sān fāng yī lài	10
 第三方质检	dì sān fāng zhì jiǎn	10
 第三腓骨肌	dì sān féi gǔ jī	10
 第三个环节	dì sān gè huán jié	10
@@ -86173,7 +86175,6 @@ sort: by_weight
 辛差分格式	xīn chā fēn gé shì	10
 新产品推出	xīn chǎn pǐn tuī chū	10
 新长车务段	xīn cháng chē wù duàn	10
-信长之野望	xìn cháng zhī yě wàng	10
 新潮的设计	xīn cháo de shè jì	10
 新车的价格	xīn chē de jià gé	10
 新车的内饰	xīn chē de nèi shì	10
@@ -87064,9 +87065,6 @@ sort: by_weight
 新造车势力	xīn zào chē shì lì	10
 信噪失真比	xìn zào shī zhēn bǐ	10
 新增病例中	xīn zēng bìng lì zhōng	10
-信长的忍者	xìn zhǎng de rěn zhě	10
-信长的野望	xìn zhǎng de yě wàng	10
-信长的主厨	xìn zhǎng de zhǔ chú	10
 新正统主义	xīn zhēng tǒng zhǔ yì	10
 心智的成熟	xīn zhì de chéng shú	10
 心智的成长	xīn zhì de chéng zhǎng	10
@@ -104763,12 +104761,15 @@ sort: by_weight
 自旋标记法	zì xuán biāo jì fǎ	10
 自旋磁共振	zì xuán cí gòng zhèn	10
 自旋电子学	zì xuán diàn zǐ xué	10
+自旋轨道矩	zì xuán guǐ dào jǔ	10
+自旋极化流	zì xuán jí huà liú	10
 自旋角动量	zì xuán jiǎo dòng liàng	12
 自旋量子数	zì xuán liàng zǐ shù	10
 自旋密度波	zì xuán mì dù bō	10
 自旋双重态	zì xuán shuāng chóng tài	10
 自旋亚能级	zì xuán yà néng jí	10
 自旋再取向	zì xuán zài qǔ xiàng	10
+自旋转移矩	zì xuán zhuǎn yí jǔ	10
 自选作品辑	zì xuǎn zuò pǐn jí	10
 自学的能力	zì xué de néng lì	10
 资讯不对称	zī xùn bú duì chèn	10
@@ -134243,6 +134244,7 @@ sort: by_weight
 景天虫草含片	jǐng tiān chóng cǎo hán piàn	10
 惊天地泣鬼神	jīng tiān dì qì guǐ shén	10
 景天庚酮糖酐	jǐng tiān gēng tóng táng gān	3
+竞天公诚律师	jìng tiān gōng chéng lǜ shī	10
 景天红花胶囊	jǐng tiān hóng huā jiāo náng	10
 景天科酸代谢	jǐng tiān kē suān dài xiè	10
 景天清肺胶囊	jǐng tiān qīng fèi jiāo náng	10
@@ -174772,14 +174774,18 @@ sort: by_weight
 子虚乌有的事	zǐ xū wū yǒu de shì	10
 自旋磁量子数	zì xuán cí liàng zǐ shù	10
 自旋非相干性	zì xuán fēi xiāng gān xìng	10
+自旋轨道力矩	zì xuán guǐ dào lì jǔ	10
 自旋轨道耦合	zì xuán guǐ dào ǒu hé	5
 自旋轨道劈裂	zì xuán guǐ dào pī liè	10
+自旋霍尔电导	zì xuán huò ěr diàn dǎo	10
+自旋霍尔效应	zì xuán huò ěr xiào yìng	10
 自旋交换张弛	zì xuán jiāo huàn zhāng chí	10
 自旋晶格弛豫	zì xuán jīng gé chí yù	10
 自旋密度矩阵	zì xuán mì dù jǔ zhèn	10
 自旋匹配组态	zì xuán pǐ pèi zǔ tài	5
 自旋统计定理	zì xuán tǒng jì dìng lǐ	10
 自旋统计关系	zì xuán tǒng jì guān xì	12
+自旋转移力矩	zì xuán zhuǎn yí lì jǔ	10
 资讯安全策略	zī xùn ān quán cè lüè	10
 资讯奥林匹亚	zī xùn ào lín pǐ yà	10
 资讯传播学系	zī xùn chuán bō xué xì	10
