@@ -14511,7 +14511,6 @@ sort: by_weight
 笛卡尔主义	dí kǎ ěr zhǔ yì	10
 笛卡儿坐标	dí kǎ ér zuò biāo	10
 笛卡尔坐标	dí kǎ ěr zuò biāo	10
-笛卡尔座标	dí kǎ ěr zuò biāo	10
 抵抗力低下	dǐ kàng lì dī xià	10
 抵抗力较差	dǐ kàng lì jiào chà	10
 抵抗力较低	dǐ kàng lì jiào dī	10
@@ -84251,6 +84250,7 @@ sort: by_weight
 橡胶避震喉	xiàng jiāo bì zhèn hóu	10
 橡胶促进剂	xiàng jiāo cù jìn jì	10
 橡胶导尿管	xiàng jiāo dǎo niào guǎn	10
+相交的夹角	xiāng jiāo de jiā jiǎo	10
 香蕉的热量	xiāng jiāo de rè liàng	10
 香蕉等水果	xiāng jiāo děng shuǐ guǒ	10
 橡胶防老剂	xiàng jiāo fáng lǎo jì	10
@@ -105691,7 +105691,7 @@ sort: by_weight
 做变性手术	zuò biàn xìng shǒu shù	10
 坐标的变换	zuò biāo dì biàn huàn	10
 坐标的原点	zuò biāo dì yuán diǎn	10
-座标方位仪	zuò biāo fāng wèi yí	10
+坐标方位仪	zuò biāo fāng wèi yí	10
 坐标量度仪	zuò biāo liàng dù yí	10
 坐标轮换法	zuò biāo lún huàn fǎ	10
 做表面功夫	zuò biǎo miàn gōng fu	10
@@ -183227,7 +183227,7 @@ sort: by_weight
 对全球化的批判	duì quán qiú huà de pī pàn	10
 对全球化的批评	duì quán qiú huà de pī píng	10
 对殊俗兮非我宜	duì shū sú xī fēi wǒ yí	10
-对数直线座标图	duì shù zhí xiàn zuò biāo tú	10
+对数直线坐标图	duì shù zhí xiàn zuò biāo tú	10
 对斯佳品酬佳节	duì sī jiā pǐn chóu jiā jié	10
 对酸甜食物敏感	duì suān tián shí wù mǐn gǎn	10
 对孙中山的评价	duì sūn zhōng shān de píng jià	10
