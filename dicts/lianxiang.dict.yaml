@@ -18133,7 +18133,7 @@ sort: by_weight
 恶女罗曼死	è nǚ luó màn sǐ	100
 鳄皮状鳞癣	è pí zhuàng lín xuǎn	100
 鄂齐尔图汗	è qí ěr tú hàn	100
-额前的碎发	é qián de suì fā	100
+额前的碎发	é qián de suì fà	100
 饿求齐胶囊	è qiú qí jiāo náng	100
 鹅去氧胆酸	é qù yǎng dǎn suān	100
 恶人先告状	è rén xiān gào zhuàng	100
@@ -28113,7 +28113,7 @@ sort: by_weight
 光明与磊落	guāng míng yǔ lěi luò	100
 光明与希望	guāng míng yǔ xī wàng	100
 光明照耀的	guāng míng zhào yào de	100
-光明正大地	guāng míng zhèng dà dì	100
+光明正大地	guāng míng zhèng dà de	100
 光南大批发	guāng nán dà pī fā	100
 光年的距离	guāng nián de jù lí	100
 广平王李俶	guǎng píng wáng lǐ chù	100
@@ -65549,6 +65549,7 @@ sort: by_weight
 上中心序列	shàng zhōng xīn xù liè	100
 上州富冈站	shàng zhōu fù gāng zhàn	100
 商周青铜器	shāng zhōu qīng tóng qì	100
+商周青铜器	shāng zhōu qīng tóng qì	100
 商纣王帝辛	shāng zhòu wáng dì xīn	100
 商住两用房	shāng zhù liǎng yòng fáng	100
 哨兵机器人	shào bīng jī qì rén	100
@@ -67814,6 +67815,8 @@ sort: by_weight
 是不是人了	shì bú shì rén le	100
 是不是傻啊	shì bú shì shǎ a	100
 是不是傻了	shì bú shì shǎ le	100
+是不是想起	shì bú shì xiǎng qǐ	120
+时不时想起	shí bù shí xiǎng qǐ	100
 是不是想死	shì bú shì xiǎng sǐ	100
 是不实在的	shì bù shí zài de	100
 是不是长了	shì bú shì zhǎng le	100
@@ -69493,7 +69496,7 @@ sort: by_weight
 事实和证据	shì shí hé zhèng jù	100
 什什基夫卡	shí shí jī fū kǎ	100
 什什基夫齐	shí shí jī fū qí	100
-实实际际地	shí shí jì jì dì	100
+实实际际地	shí shí jì jì de	100
 实时计算机	shí shí jì suàn jī	100
 师氏剑齿象	shī shì jiàn chǐ xiàng	100
 时时刻刻都	shí shí kè kè dōu	100
@@ -87513,6 +87516,7 @@ sort: by_weight
 行为实施地	xíng wéi shí shī dì	100
 行为型模式	xíng wéi xíng mó shì	100
 性味与归经	xìng wèi yǔ guī jīng	100
+醒悟的一天	xǐng wù de yì tiān	100
 星系的演化	xīng xì de yǎn huà	100
 星系际尘埃	xīng xì jì chén āi	100
 星系际恒星	xīng xì jì héng xīng	100
@@ -171518,6 +171522,7 @@ sort: by_weight
 蒸汽机的发明	zhēng qì jī de fā míng	100
 蒸汽凝结速率	zhēng qì níng jié sù lǜ	120
 蒸气杀人实验	zhēng qì shā rén shí yàn	100
+政企数据泄露	zhèng qǐ shù jù xiè lòu	100
 蒸汽吸入损伤	zhēng qì xī rù sǔn shāng	100
 蒸气压力曲线	zhēng qì yā lì qū xiàn	100
 蒸气压缩制冷	zhēng qì yā suō zhì lěng	100
@@ -184832,7 +184837,6 @@ sort: by_weight
 肺组织胞浆菌病	fèi zǔ zhī bāo jiāng jūn bìng	100
 肺组织黏性阻力	fèi zǔ zhī nián xìng zǔ lì	100
 非最小相位系统	fēi zuì xiǎo xiàng wèi xì tǒng	100
-肺І核初Н涂阳	fèi І hé chū Н tú yáng	100
 粪便微生物移植	fèn biàn wēi shēng wù yí zhí	100
 分别善恶报应经	fēn bié shàn è bào yìng jīng	100
 奋不顾身的爱情	fèn bú gù shēn de ài qíng	100
