@@ -28,7 +28,15 @@
 ### 模型使用方法：
 ⚠️⚠️⚠️ 云插件和模型二者不可兼得，云插件会无差别占用翻译器特定长度的候选，因此就等于模型失效，所以使用云就放弃模型好了！
 
-**软件**：小狼毫、鼠须管直接配置即可，fcitx5需要配合安装```librime-plugin-octagram```不同的Linux发行版包名可能不同
+**软件**：
+
+小狼毫、鼠须管直接配置即可，fcitx5需要配合安装```librime-plugin-octagram```不同的Linux发行版包名可能不同
+
+**说明**：
+
+1. 基于拼音权重排序序列优化，对形码无特殊处理，因此只推荐运用在以拼音序列为基础的词库中，当然更推荐使用万象词库，数据间有更多优化。
+
+2. 支持简体字模型：wanxiang-lts-zh-hans ， 繁体字模型：wanxiang-lts-zh-hant ，名称一个字母区别注意区分。
 
 **参数**：
 配置如下：
@@ -42,8 +50,8 @@ octagram:
       language: wanxiang-lts-zh-hans
       collocation_max_length: 8
       collocation_min_length: 2
-      collocation_penalty: -10
-      non_collocation_penalty: -5
+      collocation_penalty: -5
+      non_collocation_penalty: -1
       weak_collocation_penalty: -100
       rear_penalty: -10
     translator/contextual_suggestions: false
