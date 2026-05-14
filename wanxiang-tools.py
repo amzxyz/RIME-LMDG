@@ -57,7 +57,7 @@ from PySide6.QtWidgets import (
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.0.2beta"
+TOOL_VERSION = "v3.0.3beta"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -94,8 +94,8 @@ class DynamicInputWidget(QWidget):
         self._is_updating = False 
         
         # 【视觉核心】：全局统一标准
-        self.normal_style = "border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; margin: 0px; padding: 4px 8px;"
-        self.hover_style = "border: 1px solid #61A165; border-bottom: 2px solid #49814D; background: #FFFFFF; border-radius: 4px; margin: 0px; padding: 4px 8px;"
+        self.normal_style = ""
+        self.hover_style = ""
         
         self.input_field.setStyleSheet(self.normal_style)
         self.input_field.setFixedHeight(34) # 锁死单行高度
@@ -168,7 +168,7 @@ class DynamicActionWidget(QWidget):
         self.btn_del.clicked.connect(lambda *args: self.delete_requested.emit())
         
         self.desc_label = QLabel(desc_text)
-        self.desc_label.setStyleSheet("color: #666; font-size: 13px; padding-top: 3px;")
+        self.desc_label.setStyleSheet("font-size: 13px; padding-top: 3px;")
         self.layout.addWidget(self.desc_label, stretch=1)
         
         self._buttons_visible = False
@@ -253,11 +253,11 @@ class DynamicKeyValueWidget(QWidget):
         self._hover_active = False
         self._is_updating = False 
         
-        self.style_single = "border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; margin: 0px; padding: 4px 8px;"
-        self.style_single_hover = "border: 1px solid #61A165; border-bottom: 2px solid #49814D; background: #FFFFFF; border-radius: 4px; margin: 0px; padding: 4px 8px;"
+        self.style_single = ""
+        self.style_single_hover = ""
         
-        self.style_multi = "border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; margin: 0px; padding: 6px 8px;"
-        self.style_multi_hover = "border: 1px solid #61A165; border-bottom: 2px solid #49814D; background: #FFFFFF; border-radius: 4px; margin: 0px; padding: 6px 8px;"
+        self.style_multi = ""
+        self.style_multi_hover = ""
         
         self.key_box.setStyleSheet(self.style_single)
         self.val_line.setStyleSheet(self.style_single)
@@ -485,7 +485,6 @@ class AlgebraPatchWidget(QWidget):
         
         # --- 3. 细分模糊音 (网格紧凑布局) ---
         gb_mohu = QGroupBox("☁️ 模糊音")
-        gb_mohu.setStyleSheet("QGroupBox { font-weight: bold; color: #555; border: 1px solid #D5E3D6; border-radius: 4px; margin-top: 5px; } QGroupBox::title { subcontrol-origin: margin; left: 10px; padding: 0 3px 0 3px; }")
         gl = QGridLayout(gb_mohu)
         gl.setContentsMargins(10, 15, 10, 5)
         gl.setVerticalSpacing(2)
@@ -534,8 +533,8 @@ class AlgebraPatchWidget(QWidget):
         self.is_direct = is_direct
         self.warn_lbl.setVisible(is_direct)
         
-        style_cb = "border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px; font-weight: bold; color: #333;"
-        style_cb_disabled = "border: 1px solid #D5E3D6; background: #F0F5F1; border-radius: 4px; padding: 4px 8px; color: #aaa; font-weight: bold;"
+        style_cb = ""
+        style_cb_disabled = ""
         
         # 拼写方案：如果在直写模式则置灰不可用
         self.cb_scheme.setEnabled(not is_direct)
@@ -550,18 +549,17 @@ class AlgebraPatchWidget(QWidget):
             self.cb_aux.setToolTip("")
             
         # 其他控件跟随 is_direct 状态
-        self.chk_tiquan.setStyleSheet("font-weight: bold; color: #333;" if not is_direct else "font-weight: bold; color: #aaa;")
+        self.chk_tiquan.setStyleSheet("font-weight: bold;")
         if is_direct:
             self.chk_tiquan.setEnabled(False)
         else:
-            self._on_scheme_changed(self.cb_scheme.currentText()) # 解锁时重新触发一次提权可用性校验
+            self._on_scheme_changed(self.cb_scheme.currentText()) 
             
         for cb in self.fuzzy_checks.values():
             cb.setEnabled(not is_direct)
-            cb.setStyleSheet("color: #333;" if not is_direct else "color: #aaa;")
+            cb.setStyleSheet("")
             
         self.ext_edit.setReadOnly(is_direct)
-        self.ext_edit.setStyleSheet("border: 1px solid #D5E3D6; background: #FFFFFF; border-radius: 4px; padding: 6px;" if not is_direct else "background: #F0F5F1; border: 1px solid #D5E3D6; border-radius: 4px; padding: 6px; color: #aaa;")
         self.ext_edit.setPlaceholderText("自定义扩展，回车换行，无需写 -" if not is_direct else "只读展示")
 
     def _on_scheme_changed(self, text):
@@ -665,8 +663,8 @@ class ReverseAlgebraWidget(QWidget):
     def set_direct_mode(self, is_direct):
         self.warn_lbl.setVisible(is_direct)
         
-        style_cb = "border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px; font-weight: bold; color: #333;"
-        style_cb_disabled = "border: 1px solid #D5E3D6; background: #F0F5F1; border-radius: 4px; padding: 4px 8px; color: #aaa; font-weight: bold;"
+        style_cb = ""
+        style_cb_disabled = ""
         
         self.cb_pinyin.setEnabled(not is_direct)
         self.cb_pinyin.setStyleSheet(style_cb if not is_direct else style_cb_disabled)
@@ -727,7 +725,7 @@ class EnglishAlgebraWidget(QWidget):
         self.txt_include = QLineEdit("通用规则 (自动强制挂载)")
         self.txt_include.setFixedHeight(34)
         self.txt_include.setReadOnly(True)
-        self.txt_include.setStyleSheet("border: 1px solid #D5E3D6; background: #F0F5F1; border-radius: 4px; padding: 4px 8px; color: #888; font-weight: bold;")
+        self.txt_include.setStyleSheet("background: rgba(128, 128, 128, 0.1); border-radius: 4px; padding: 4px 8px; color: #888; font-weight: bold;")
         h1.addWidget(QLabel("📚 基础规则:"), 0); h1.addWidget(self.txt_include, 1)
         self.layout.addLayout(h1)
 
@@ -744,8 +742,8 @@ class EnglishAlgebraWidget(QWidget):
 
     def set_direct_mode(self, is_direct):
         self.warn_lbl.setVisible(is_direct)
-        style_cb = "border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px; font-weight: bold; color: #333;"
-        style_cb_disabled = "border: 1px solid #D5E3D6; background: #F0F5F1; border-radius: 4px; padding: 4px 8px; color: #aaa; font-weight: bold;"
+        style_cb = ""
+        style_cb_disabled = ""
         
         self.cb_schema.setEnabled(not is_direct)
         self.cb_schema.setStyleSheet(style_cb if not is_direct else style_cb_disabled)
@@ -791,7 +789,7 @@ class MixedAlgebraWidget(QWidget):
         self.txt_include = QLineEdit("通用派生规则 (自动强制挂载)")
         self.txt_include.setFixedHeight(34)
         self.txt_include.setReadOnly(True)
-        self.txt_include.setStyleSheet("border: 1px solid #D5E3D6; background: #F0F5F1; border-radius: 4px; padding: 4px 8px; color: #888; font-weight: bold;")
+        self.txt_include.setStyleSheet("background: rgba(128, 128, 128, 0.1); border-radius: 4px; padding: 4px 8px; color: #888; font-weight: bold;")
         h1.addWidget(QLabel("📚 基础规则:"), 0); h1.addWidget(self.txt_include, 1)
         self.layout.addLayout(h1)
 
@@ -808,8 +806,8 @@ class MixedAlgebraWidget(QWidget):
 
     def set_direct_mode(self, is_direct):
         self.warn_lbl.setVisible(is_direct)
-        style_cb = "border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px; font-weight: bold; color: #333;"
-        style_cb_disabled = "border: 1px solid #D5E3D6; background: #F0F5F1; border-radius: 4px; padding: 4px 8px; color: #aaa; font-weight: bold;"
+        style_cb = ""
+        style_cb_disabled = ""
         
         self.cb_schema.setEnabled(not is_direct)
         self.cb_schema.setStyleSheet(style_cb if not is_direct else style_cb_disabled)
@@ -866,8 +864,8 @@ class DynamicMultiLineWidget(QWidget):
         self._is_updating = False 
         
         # 纯白底色 + 莫兰迪绿边框
-        self.style_normal = "border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 5px; padding: 6px 10px;"
-        self.style_hover = "border: 1px solid #61A165; border-bottom: 2px solid #49814D; background: #FFFFFF; border-radius: 5px; padding: 6px 10px;"
+        self.style_normal = ""
+        self.style_hover = ""
         
         self.text_field.setStyleSheet(self.style_normal)
         self.layout.addWidget(self.text_field)
@@ -3528,7 +3526,7 @@ class YamlFixDialog(QDialog):
 
         # --- 错误详情（方便看行号） ---
         lbl_details = QLabel(error_details)
-        lbl_details.setStyleSheet("color: #666; background-color: #f8f9fa; padding: 5px; border: 1px solid #ccc;")
+        lbl_details.setStyleSheet("background-color: #f8f9fa; padding: 5px; border: 1px solid #ccc;")
         lbl_details.setWordWrap(True)
         lay.addWidget(lbl_details)
 
@@ -3608,7 +3606,7 @@ class YamlDuplicateFixDialog(QDialog):
             font.setFamily("Consolas")
             font.setPointSize(11)
             edit.setFont(font)
-            edit.setStyleSheet("background-color: #f8f9fa; padding: 6px; border: 1px solid #ccc; border-radius: 4px;")
+            
             edit.setPlaceholderText("（清空此框将自动删除该行代码）")
             
             flay.addWidget(edit)
@@ -3710,7 +3708,7 @@ class SchemaCheckboxesWidget(QWidget):
         self.lay.setContentsMargins(12, 12, 12, 12)
         self.lay.setSpacing(6) 
         self.checkboxes = []
-        self.setStyleSheet("background-color: #FFFFFF; border: 1px solid #D5E3D6; border-radius: 8px;")
+        self.setStyleSheet("background-color: transparent;")
         
         import glob, os
         schemas = []
@@ -3765,24 +3763,21 @@ class SchemaCheckboxesWidget(QWidget):
                 cb = QCheckBox(s['name'])
                 cb.setProperty("schema_id", s['id'])
                 # 设置复选框样式：加粗字体，莫兰迪绿色的勾选感
-                cb.setStyleSheet("""
-                    QCheckBox { font-size: 14px; font-weight: bold; color: #333; }
-                    QCheckBox::indicator { width: 18px; height: 18px; }
-                """)
+                cb.setStyleSheet("QCheckBox { font-size: 14px; font-weight: bold; }")
                 if s['id'] in active_ids: cb.setChecked(True)
                 cb.clicked.connect(self.validate_at_least_one)
                 # (id) 莫兰迪绿圈圈部分
                 lbl_id = QLabel(s['id'])
                 lbl_id.setStyleSheet("""
                     QLabel {
-                        background-color: #E2ECE3; 
-                        color: #49814D; 
+                        background-color: rgba(97, 161, 101, 0.15); 
+                        color: #61A165; 
                         border-radius: 12px; 
                         padding: 2px 12px; 
                         font-size: 11px; 
                         font-weight: bold;
                         font-family: 'Consolas', 'Monaco', monospace;
-                        border: 1px solid #C1D4C3;
+                        border: 1px solid rgba(97, 161, 101, 0.3);
                     }
                 """)
                 
@@ -4006,7 +4001,7 @@ class MainWin(QWidget):
         
         # --- 顶部提示 ---
         lbl_info = QLabel("【提示】请先选择更新源。GitHub源可能需要配置Token。\n CNB源为国内镜像。词库、模型选项因没有版本差异，所以不具备检测校验后下载的能力。")
-        lbl_info.setStyleSheet("color: #666; font-size: 14px; margin-bottom: 2px;")
+        lbl_info.setStyleSheet("font-size: 14px; margin-bottom: 2px;")
         lbl_info.setWordWrap(True)
         l.addWidget(lbl_info)
 
@@ -4603,7 +4598,6 @@ class MainWin(QWidget):
         left_lay.setSpacing(0)
         
         self.left_frame.setMinimumWidth(220)
-        self.left_frame.setStyleSheet("#leftNavFrame { border: 1px solid #61A165; border-radius: 6px; background-color: #F8FAF8; }")
 
         nav_tool_lay = QHBoxLayout()
         nav_tool_lay.setSpacing(1)
@@ -4633,13 +4627,7 @@ class MainWin(QWidget):
         self.nav_tree.setItemsExpandable(False) 
         self.nav_tree.setIndentation(18) 
 
-        self.nav_tree.setStyleSheet("""
-            QTreeWidget { background-color: transparent; font-size: 13px; outline: none; selection-background-color: transparent; }
-            QTreeWidget::branch { background-color: transparent; }
-            QTreeWidget::item { padding: 8px 6px; border-radius: 4px; margin: 2px 4px; }
-            QTreeWidget::item:hover { background-color: rgba(97, 161, 101, 0.1); }
-            QTreeWidget::item:selected { background-color: #61A165; color: white; font-weight: bold; }
-        """)
+        self.nav_tree.setObjectName("leftNavTree")
         self.nav_tree.itemClicked.connect(self.on_nav_item_clicked)
         left_lay.addWidget(self.nav_tree)
         self.splitter.addWidget(self.left_frame)
@@ -4665,7 +4653,7 @@ class MainWin(QWidget):
         self.rb_direct_mode.setToolTip("警告：修改将直接覆盖原文件！(不支持 patch 的文件必须使用此项)")
         
         radio_style = """
-            QRadioButton { font-size: 13px; font-weight: bold; color: #555; }
+            QRadioButton { font-size: 13px; font-weight: bold; }
             QRadioButton::indicator { width: 14px; height: 14px; border-radius: 7px; border: 1px solid #A8C7AA; background-color: white; }
             QRadioButton::indicator:checked { background-color: #61A165; border: 2px solid #C1D4C3; }
             QRadioButton:disabled { color: #aaa; }
@@ -4710,7 +4698,7 @@ class MainWin(QWidget):
         self.cfg_stack = QStackedWidget()
         
         self.loading_page = QWidget()
-        self.loading_page.setStyleSheet("background-color: rgba(240, 245, 241, 0.95); border-radius: 8px; border: 1px solid #C1D4C3;")
+        self.loading_page.setObjectName("loadingPage")
         load_lay = QVBoxLayout(self.loading_page)
         self.lbl_giant_load = QLabel("⏳ 准备就绪...")
         self.lbl_giant_load.setAlignment(Qt.AlignCenter)
@@ -4736,6 +4724,8 @@ class MainWin(QWidget):
     def _create_cfg_tree(self):
         """工厂函数：生成带绝美样式的 QTreeWidget"""
         from PySide6.QtWidgets import QTreeWidget, QHeaderView, QAbstractItemView
+        from PySide6.QtCore import Qt
+        
         tree = QTreeWidget()
         tree.setHeaderLabels(["设置项目", "当前配置值", "功能说明"])
         tree.header().setSectionResizeMode(0, QHeaderView.ResizeToContents)
@@ -4746,16 +4736,34 @@ class MainWin(QWidget):
         tree.setAlternatingRowColors(False) 
         tree.setSelectionMode(QAbstractItemView.NoSelection)
         tree.setFocusPolicy(Qt.NoFocus)
+        
+        # 【完美解法】：使用 Qt 原生的 palette() 变量，不写死任何颜色！
+        # 这样它会自动跟随系统的明暗主题，彻底告别发白！
         tree.setStyleSheet("""
-            QTreeWidget { font-size: 14px; border: 1px solid #E0E0E0; border-radius: 8px; background-color: white; outline: none; }
-            QTreeWidget::item { min-height: 42px; border-bottom: 1px solid #F5F5F5; }
-            QTreeWidget::item:selected, QTreeWidget::item:focus { background-color: transparent; color: #333; border: none; border-bottom: 1px solid #F5F5F5; }
-            QHeaderView::section { background-color: #F0F5F1; color: #333; font-size: 14px; font-weight: bold; padding: 10px; border: none; border-bottom: 2px solid #61A165; }
-            QLineEdit, QComboBox { border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; border-radius: 5px; padding: 4px 10px; background-color: #FFFFFF; font-size: 14px; color: #333; min-height: 24px; margin: 6px 4px; selection-background-color: #61A165; }
-            QLineEdit:hover, QComboBox:hover { border: 1px solid #61A165; border-bottom: 2px solid #49814D; background-color: #FFFFFF; }
-            QLineEdit:focus, QComboBox:focus { border: 2px solid #61A165; background-color: #FFFFFF; }
-            QComboBox::drop-down { subcontrol-origin: padding; subcontrol-position: top right; width: 25px; border-left: 1px solid #D5E3D6; background-color: transparent; border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
-            QComboBox::drop-down:hover { background-color: #E2ECE3; }
+            QTreeWidget { 
+                font-size: 14px; 
+                border: 1px solid palette(midlight); 
+                border-radius: 8px; 
+                background-color: transparent; 
+                outline: none; 
+            }
+            QTreeWidget::item { 
+                min-height: 42px; 
+                border-bottom: 1px solid palette(alternate-base); 
+            }
+            QTreeWidget::item:selected, QTreeWidget::item:focus { 
+                background-color: transparent; 
+                border: none; 
+                border-bottom: 1px solid palette(highlight); 
+            }
+            QHeaderView::section { 
+                background-color: palette(window); 
+                font-size: 14px; 
+                font-weight: bold; 
+                padding: 10px; 
+                border: none; 
+                border-bottom: 2px solid #61A165; 
+            }
         """)
         return tree
     # 模块化全局中控台
@@ -4814,14 +4822,14 @@ class MainWin(QWidget):
         combo.setFixedHeight(34); combo.setFixedWidth(180)
         # 提供三个操作态，严格遵守 WYSIWYG
         combo.addItems(["保持当前配置", "写入推荐参数", "清除推荐参数 (恢复默认)"])
-        combo.setStyleSheet("border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px;")
+        
         
         c_lay.addWidget(combo)
         tree.setItemWidget(item, 1, container)
         
         lbl = QLabel("一键将最优的 language、词频惩罚以及 translator 关联参数完美写入配置。")
         lbl.setWordWrap(True)
-        lbl.setStyleSheet("color: #666; font-size: 13px; padding: 4px;")
+        lbl.setStyleSheet("font-size: 13px; padding: 4px;")
         tree.setItemWidget(item, 2, lbl)
         
         self._dynamic_row_height(item, lbl.text())
@@ -4844,7 +4852,7 @@ class MainWin(QWidget):
         edit = QLineEdit()
         # 视觉对齐：强行锁死宽度 180
         edit.setFixedHeight(34); edit.setFixedWidth(180)
-        edit.setStyleSheet("border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px;")
+        
         edit.setValidator(QIntValidator(1, 10)) 
         
         # 智能读取：同时查阅 default 的底包和 custom 补丁
@@ -4905,7 +4913,7 @@ class MainWin(QWidget):
         # 视觉对齐：强行锁死宽度 180
         combo.setFixedHeight(34); combo.setFixedWidth(180)
         combo.addItems(["默认 (PageUp/Dn)", "逗号句号 ( , . )", "中括号 ( [ ] )", "减号等号 ( - = )"])
-        combo.setStyleSheet("border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px;")
+        
         
         accs = set()
         for b in self._get_active_bindings():
@@ -4943,21 +4951,20 @@ class MainWin(QWidget):
         c_lay.setContentsMargins(0, 4, 0, 4)
         c_lay.setAlignment(Qt.AlignLeft | Qt.AlignVCenter)
         
-        style_single = "border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px;"
         inv_map = {v: k for k, v in RIME_KEY_MAP.items()} 
         
         lbl2 = QLabel("次选 (2):")
-        lbl2.setStyleSheet("font-size: 13px; font-weight: bold; color: #555;")
+        lbl2.setStyleSheet("font-size: 13px; font-weight: bold; ")
         edit2 = QLineEdit()
         # 视觉对齐：两个框各占 60，配合间距正好和 180 差不多宽
         edit2.setFixedHeight(34); edit2.setFixedWidth(60); edit2.setAlignment(Qt.AlignCenter)
-        edit2.setStyleSheet(style_single)
+
         
         lbl3 = QLabel(" 三选 (3):")
-        lbl3.setStyleSheet("font-size: 13px; font-weight: bold; color: #555;")
+        lbl3.setStyleSheet("font-size: 13px; font-weight: bold; ")
         edit3 = QLineEdit()
         edit3.setFixedHeight(34); edit3.setFixedWidth(60); edit3.setAlignment(Qt.AlignCenter)
-        edit3.setStyleSheet(style_single)
+
 
         key2, key3 = "", ""
         for b in self._get_active_bindings():
@@ -5008,7 +5015,7 @@ class MainWin(QWidget):
         combo = QComboBox()
         combo.setFixedHeight(34); combo.setFixedWidth(180)
         combo.addItems(["开启 (true)", "关闭 (false)"])
-        combo.setStyleSheet("border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px;")
+        
         
         # 🌟 智能三重探测：探测 default(看谁是主力) -> 探测 patch(看用户改没改) -> 探测 schema(看底层默认)
         base_data, base_patch = self._yaml_cache.get("wanxiang.schema.yaml", ({}, {}))
@@ -5055,7 +5062,7 @@ class MainWin(QWidget):
         
         lbl = QLabel("全局控制是否开启输入法对你打过的词进行动态记忆与自动词频调整。")
         lbl.setWordWrap(True)
-        lbl.setStyleSheet("color: #666; font-size: 13px; padding: 4px;")
+        lbl.setStyleSheet("font-size: 13px; padding: 4px;")
         tree.setItemWidget(item, 2, lbl)
         
         self._dynamic_row_height(item, lbl.text())
@@ -5077,7 +5084,7 @@ class MainWin(QWidget):
         
         edit = QLineEdit()
         edit.setFixedHeight(34); edit.setFixedWidth(180)
-        edit.setStyleSheet("border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px;")
+        
         
         # 探测 patch(看用户改没改) -> 探测 schema(看底层默认)
         base_data, base_patch = self._yaml_cache.get("wanxiang.schema.yaml", ({}, {}))
@@ -5153,7 +5160,6 @@ class MainWin(QWidget):
         root_item = QTreeWidgetItem(tree, ["💡 超级提示模块 (super_tips)", "", "控制实时提示数据的路径、按键与屏蔽类型"])
         root_item.setFlags(root_item.flags() & ~Qt.ItemIsSelectable)
         
-        style_single = "border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px;"
         
         def get_current_val(path_str, default_val):
             pro_data, pro_patch = self._yaml_cache.get("wanxiang_pro.schema.yaml", ({}, {}))
@@ -5204,7 +5210,7 @@ class MainWin(QWidget):
             if v_type == "str":
                 edit = QLineEdit()
                 edit.setFixedHeight(34); edit.setFixedWidth(180) 
-                edit.setStyleSheet(style_single)
+                
                 edit.setText(str(val))
                 c_lay.addWidget(edit)
                 widgets[key] = edit
@@ -5219,7 +5225,7 @@ class MainWin(QWidget):
             tree.setItemWidget(item, 1, container)
             
             lbl = QLabel(desc)
-            lbl.setStyleSheet("color: #666; font-size: 13px; padding: 4px;")
+            lbl.setStyleSheet("font-size: 13px; padding: 4px;")
             lbl.setWordWrap(True)
             tree.setItemWidget(item, 2, lbl)
             
@@ -5260,7 +5266,7 @@ class MainWin(QWidget):
         
         edit = QLineEdit()
         edit.setFixedHeight(34); edit.setFixedWidth(180)
-        edit.setStyleSheet("border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 4px; padding: 4px 8px;")
+        
         edit.setMaxLength(1)
         
         # 智能读取当前配置 (优先读补丁)
@@ -5653,7 +5659,7 @@ class MainWin(QWidget):
                 self._yaml_dynamic_lists = file_dynamic_lists
             return
 
-        style_m = "border: 1px solid #D5E3D6; border-bottom: 2px solid #C1D4C3; background: #FFFFFF; border-radius: 5px; padding: 6px 10px;"
+        style_m = ""
         
         def safe_apply_size(itm, h):
             try:
@@ -6268,7 +6274,8 @@ class MainWin(QWidget):
                             patches_to_remove.append(f"{full_path}/{k}")
                 elif isinstance(current_val, list):
                     if is_really_changed(current_val, display_val):
-                        if is_empty(current_val) or not is_really_changed(current_val, schema_val):
+                        is_special = full_path.endswith("/__patch") or full_path.endswith("/__include")
+                        if is_empty(current_val) or (not is_special and not is_really_changed(current_val, schema_val)):
                             patches_to_remove.append(full_path)
                             patches_to_remove.append(full_path + "/+")
                         else:
@@ -6291,7 +6298,8 @@ class MainWin(QWidget):
                                 patches_to_remove.append(full_path + "/+")
                 else:
                     if is_really_changed(current_val, display_val):
-                        if is_empty(current_val) or not is_really_changed(current_val, schema_val):
+                        is_special = full_path.endswith("/__patch") or full_path.endswith("/__include")
+                        if is_empty(current_val) or (not is_special and not is_really_changed(current_val, schema_val)):
                             patches_to_remove.append(full_path)
                         else:
                             patches_to_apply[full_path] = current_val
@@ -6406,7 +6414,8 @@ class MainWin(QWidget):
                     
                     if is_full_override:
                         if is_really_changed(current_val, display_val):
-                            if is_empty(current_val) or not is_really_changed(current_val, schema_val):
+                            is_special = full_path.endswith("/__patch") or full_path.endswith("/__include")
+                            if is_empty(current_val) or (not is_special and not is_really_changed(current_val, schema_val)):
                                 patches_to_remove.append(full_path)
                             else:
                                 patches_to_apply[full_path] = current_val
@@ -6427,7 +6436,8 @@ class MainWin(QWidget):
                             if k not in current_val: patches_to_remove.append(f"{full_path}/{k}")
                 else:
                     if is_really_changed(current_val, display_val):
-                        if is_empty(current_val) or not is_really_changed(current_val, schema_val):
+                        is_special = full_path.endswith("/__patch") or full_path.endswith("/__include")
+                        if is_empty(current_val) or (not is_special and not is_really_changed(current_val, schema_val)):
                             patches_to_remove.append(full_path)
                             patches_to_remove.append(full_path + "/+")
                         else:
@@ -7241,97 +7251,190 @@ class MainWin(QWidget):
         w = QWidget(); w.setLayout(inner); return w
 
     def apply_palette(self, dark: bool):
-        if dark:
-            QApplication.setStyle(QStyleFactory.create("Fusion"))
-            pal = QPalette()
-            pal.setColor(QPalette.Window, QColor(53, 53, 53))
-            pal.setColor(QPalette.WindowText, Qt.white)
-            pal.setColor(QPalette.Base, QColor(35, 35, 35))
-            pal.setColor(QPalette.AlternateBase, QColor(53, 53, 53))
-            pal.setColor(QPalette.Text, Qt.white)
-            pal.setColor(QPalette.Button, QColor(53, 53, 53))
-            pal.setColor(QPalette.ButtonText, Qt.white)
-            pal.setColor(QPalette.Highlight, QColor(42, 130, 218))
-            pal.setColor(QPalette.HighlightedText, Qt.black)
-            QApplication.setPalette(pal)
+        # 【性能优化】：冻结界面刷新，切主题时绝不卡顿
+        self.setUpdatesEnabled(False)
+        
+        try:
+            if dark:
+                from PySide6.QtWidgets import QApplication, QStyleFactory
+                from PySide6.QtGui import QPalette, QColor
+                from PySide6.QtCore import Qt
+                
+                QApplication.setStyle(QStyleFactory.create("Fusion"))
+                pal = QPalette()
+                pal.setColor(QPalette.Window, QColor(53, 53, 53))
+                pal.setColor(QPalette.WindowText, Qt.white)
+                pal.setColor(QPalette.Base, QColor(35, 35, 35))
+                pal.setColor(QPalette.AlternateBase, QColor(53, 53, 53))
+                pal.setColor(QPalette.Text, Qt.white)
+                pal.setColor(QPalette.Button, QColor(53, 53, 53))
+                pal.setColor(QPalette.ButtonText, Qt.white)
+                pal.setColor(QPalette.Highlight, QColor(42, 130, 218))
+                pal.setColor(QPalette.HighlightedText, Qt.black)
+                QApplication.setPalette(pal)
+                
+                self.tabs.setStyleSheet("""
+                    QTabWidget::pane { border: 1px solid #444; top: -1px; border-radius: 4px; }
+                    QTabBar::tab { background-color: #353535; color: #ccc; border: 1px solid #444; padding: 6px 16px; margin-right: 2px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+                    QTabBar::tab:selected { background-color: #2b542c; color: white; border: 1px solid #5cb85c; font-weight: bold; }
+                    QTabBar::tab:hover:!selected { background-color: #444; }
+                """)
+                self.progress.setStyleSheet("""
+                    QProgressBar { border: 1px solid #444; border-radius: 4px; text-align: center; background-color: #353535; color: #eee; font-weight: bold; }
+                    QProgressBar::chunk { background-color: #49814D; border-radius: 3px; }
+                """)
+                self.gh_frame.setStyleSheet("#ghBox { background-color: #2b302b; border: 1px solid #445044; border-radius: 5px; }")
+                
+                # 暗黑模式 - 莫兰迪绿高级样式
+                yaml_theme_css = """
+                    QTreeWidget { font-size: 14px; border: 1px solid #444; border-radius: 8px; background-color: #2b2b2b; outline: none; color: #eee; }
+                    QTreeWidget::item { min-height: 42px; border-bottom: 1px solid #444; }
+                    QTreeWidget::item:selected, QTreeWidget::item:focus { background-color: transparent; color: #fff; border: none; border-bottom: 1px solid #444; }
+                    QHeaderView::section { background-color: #353535; color: #eee; font-size: 14px; font-weight: bold; padding: 10px; border: none; border-bottom: 1px solid #444; }
+                    
+                    QLineEdit, QComboBox, QPlainTextEdit {
+                        background-color: transparent; 
+                        border: 1px solid #49814D;
+                        border-radius: 4px;
+                        padding: 4px 8px;
+                        color: #eee;
+                        selection-background-color: #61A165;
+                        selection-color: black;
+                    }
+                    QLineEdit:hover, QComboBox:hover, QPlainTextEdit:hover {
+                        border: 1px solid #61A165;
+                    }
+                    QLineEdit:focus, QComboBox:focus, QPlainTextEdit:focus {
+                        border: 1px solid #61A165;
+                        background-color: rgba(97, 161, 101, 0.05);
+                    }
+                    QLineEdit:disabled, QComboBox:disabled, QPlainTextEdit:disabled {
+                        border: 1px solid #444; color: #888;
+                    }
+                    
+                    QComboBox::drop-down { border: none; width: 24px; }
+                    QComboBox QAbstractItemView { background-color: #353535; color: #eee; selection-background-color: #61A165; selection-color: black; border: 1px solid #49814D; }
+                    
+                    QGroupBox { 
+                        border: 1px solid #49814D; 
+                        border-radius: 5px; 
+                        margin-top: 15px;
+                        padding-top: 10px;
+                        background-color: transparent;
+                        font-weight: bold; 
+                        color: #eee; 
+                    }
+                    QGroupBox::title { 
+                        subcontrol-origin: margin; 
+                        subcontrol-position: top left;
+                        left: 10px; 
+                        padding: 0 5px; 
+                        color: #eee;
+                    }
+                    
+                    #leftNavFrame { border: 1px solid #444; border-radius: 6px; background-color: #2b2b2b; }
+                    #leftNavTree { background-color: transparent; font-size: 13px; outline: none; selection-background-color: transparent; color: #eee; }
+                    #leftNavTree::branch { background-color: transparent; }
+                    #leftNavTree::item { padding: 8px 6px; border-radius: 4px; margin: 2px 4px; }
+                    #leftNavTree::item:hover { background-color: rgba(97, 161, 101, 0.3); }
+                    #leftNavTree::item:selected { background-color: #49814D; color: white; font-weight: bold; }
+                    
+                    #loadingPage { background-color: rgba(43, 43, 43, 0.95); border-radius: 8px; border: 1px solid #444; }
+                """
+                self.setStyleSheet(yaml_theme_css)
+
+            else:
+                from PySide6.QtWidgets import QApplication, QStyleFactory
+                QApplication.setStyle(QStyleFactory.create("Fusion"))
+                QApplication.setPalette(QApplication.style().standardPalette())
+                
+                self.tabs.setStyleSheet("""
+                    QTabWidget::pane { border: 1px solid #A8C7AA; top: -1px; border-radius: 4px; }
+                    QTabBar::tab { background-color: #F0F5F1; color: #333; border: 1px solid #A8C7AA; padding: 6px 16px; margin-right: 2px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+                    QTabBar::tab:selected { background-color: #61A165; color: white; border: 1px solid #61A165; font-weight: bold; }
+                    QTabBar::tab:hover:!selected { background-color: #E2ECE3; }
+                """)
+                self.progress.setStyleSheet("""
+                    QProgressBar { border: 1px solid #A8C7AA; border-radius: 4px; text-align: center; background-color: #F0F5F1; color: #333; font-weight: bold; }
+                    QProgressBar::chunk { background-color: #61A165; border-radius: 3px; }
+                """)
+                self.gh_frame.setStyleSheet("#ghBox { background-color: #F0F5F1; border: 1px solid #A8C7AA; border-radius: 5px; }")
+                
+                # 亮色模式 - 莫兰迪绿高级样式
+                yaml_theme_css = """
+                    QTreeWidget { font-size: 14px; border: 1px solid #E0E0E0; border-radius: 8px; background-color: white; outline: none; color: #333; }
+                    QTreeWidget::item { min-height: 42px; border-bottom: 1px solid #F5F5F5; }
+                    QTreeWidget::item:selected, QTreeWidget::item:focus { background-color: transparent; color: #333; border: none; border-bottom: 1px solid #F5F5F5; }
+                    QHeaderView::section { background-color: #F0F5F1; color: #333; font-size: 14px; font-weight: bold; padding: 10px; border: none; border-bottom: 1px solid #C1D4C3; }
+                    
+                    QLineEdit, QComboBox, QPlainTextEdit {
+                        background-color: transparent;
+                        border: 1px solid #A8C7AA;
+                        border-radius: 4px;
+                        padding: 4px 8px;
+                        color: #333;
+                        selection-background-color: #61A165;
+                        selection-color: white;
+                    }
+                    QLineEdit:hover, QComboBox:hover, QPlainTextEdit:hover {
+                        border: 1px solid #61A165;
+                    }
+                    QLineEdit:focus, QComboBox:focus, QPlainTextEdit:focus {
+                        border: 1px solid #61A165;
+                        background-color: rgba(97, 161, 101, 0.05);
+                    }
+                    QLineEdit:disabled, QComboBox:disabled, QPlainTextEdit:disabled {
+                        border: 1px solid #ddd; color: #aaa;
+                    }
+                    
+                    QComboBox::drop-down { border: none; width: 24px; }
+                    QComboBox QAbstractItemView { background-color: #FFFFFF; color: #333; selection-background-color: #E2ECE3; selection-color: #333; border: 1px solid #A8C7AA; }
+                    
+                    QGroupBox { 
+                        border: 1px solid #61A165;
+                        border-radius: 5px; 
+                        margin-top: 15px; 
+                        padding-top: 10px; 
+                        background-color: transparent;
+                        font-weight: bold; 
+                        color: #333; 
+                    }
+                    QGroupBox::title { 
+                        subcontrol-origin: margin; 
+                        subcontrol-position: top left;
+                        left: 10px; 
+                        padding: 0 5px; 
+                        color: #333;
+                    }
+                    
+                    #leftNavFrame { border: 1px solid #61A165; border-radius: 6px; background-color: #F8FAF8; }
+                    #leftNavTree { background-color: transparent; font-size: 13px; outline: none; selection-background-color: transparent; color: #333; }
+                    #leftNavTree::branch { background-color: transparent; }
+                    #leftNavTree::item { padding: 8px 6px; border-radius: 4px; margin: 2px 4px; }
+                    #leftNavTree::item:hover { background-color: rgba(97, 161, 101, 0.1); }
+                    #leftNavTree::item:selected { background-color: #61A165; color: white; font-weight: bold; }
+                    
+                    #loadingPage { background-color: rgba(240, 245, 241, 0.95); border-radius: 8px; border: 1px solid #C1D4C3; }
+                """
+                self.setStyleSheet(yaml_theme_css)
+
+            self.settings.setValue('ui/dark', dark)
             
-            self.tabs.setStyleSheet("""
-                QTabWidget::pane { border: 1px solid #444; top: -1px; border-radius: 4px; }
-                QTabBar::tab { background-color: #353535; color: #ccc; border: 1px solid #444; padding: 6px 16px; margin-right: 2px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
-                QTabBar::tab:selected { background-color: #2b542c; color: white; border: 1px solid #5cb85c; font-weight: bold; }
-                QTabBar::tab:hover:!selected { background-color: #444; }
-            """)
-            self.progress.setStyleSheet("""
-                QProgressBar {
-                    border: 1px solid #444;
-                    border-radius: 4px;
-                    text-align: center;
-                    background-color: #353535;
-                    color: #eee;
-                    font-weight: bold;
-                }
-                QProgressBar::chunk {
-                    background-color: #49814D; /* 暗色模式下稍微深一点的绿 */
-                    border-radius: 3px;
-                }
-            """)
-            self.gh_frame.setStyleSheet("""
-                #ghBox {
-                    background-color: #2b302b; /* 极深邃的暗灰绿色，融于暗色背景 */
-                    border: 1px solid #445044;
-                    border-radius: 5px;
-                }
-            """)
-        else:
-            QApplication.setStyle(QStyleFactory.create("Fusion"))
-            QApplication.setPalette(QApplication.style().standardPalette())
-            self.tabs.setStyleSheet("""
-                QTabWidget::pane { 
-                    border: 1px solid #A8C7AA; 
-                    top: -1px; 
-                    border-radius: 4px; 
-                }
-                QTabBar::tab { 
-                    background-color: #F0F5F1; 
-                    color: #333; 
-                    border: 1px solid #A8C7AA; 
-                    padding: 6px 16px; 
-                    margin-right: 2px; 
-                    border-top-left-radius: 4px; 
-                    border-top-right-radius: 4px; 
-                }
-                QTabBar::tab:selected { 
-                    background-color: #61A165;  /* 柔和的莫兰迪灰绿 */
-                    color: white; 
-                    border: 1px solid #61A165; 
-                    font-weight: bold; 
-                }
-                QTabBar::tab:hover:!selected { 
-                    background-color: #E2ECE3; 
-                }
-            """)
-            self.progress.setStyleSheet("""
-                QProgressBar {
-                    border: 1px solid #A8C7AA;
-                    border-radius: 4px;
-                    text-align: center;
-                    background-color: #F0F5F1;  /* 与标签页未选中背景同色，显得干净 */
-                    color: #333;
-                    font-weight: bold;
-                }
-                QProgressBar::chunk {
-                    background-color: #61A165; /* 核心莫兰迪绿 */
-                    border-radius: 3px;
-                }
-            """)
-            self.gh_frame.setStyleSheet("""
-                #ghBox {
-                    background-color: #F0F5F1; /* 莫兰迪浅绿底色 */
-                    border: 1px solid #A8C7AA;
-                    border-radius: 5px;
-                }
-            """)
-        self.settings.setValue('ui/dark', dark)
+            # 【细节】：联动 Windows 标题栏变黑（沉浸式暗色模式）
+            import sys
+            if sys.platform == 'win32':
+                try:
+                    import ctypes
+                    hwnd = int(self.winId())
+                    rendering_mode = ctypes.c_int(1 if dark else 0)
+                    ctypes.windll.dwmapi.DwmSetWindowAttribute(hwnd, 20, ctypes.byref(rendering_mode), ctypes.sizeof(rendering_mode))
+                    ctypes.windll.dwmapi.DwmSetWindowAttribute(hwnd, 19, ctypes.byref(rendering_mode), ctypes.sizeof(rendering_mode))
+                except Exception:
+                    pass
+
+        finally:
+            # 【收尾】：切完主题后恢复屏幕刷新，瞬间出图！
+            self.setUpdatesEnabled(True)
     def show_about(self):
         links_html = "<br>".join([f'• <a href="{u}">{t}</a>' for t, u in GITHUB_LINKS]) or "（未配置链接）"
         dlg = QDialog(self)
