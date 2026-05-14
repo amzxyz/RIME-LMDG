@@ -1,7 +1,7 @@
 # Rime dictionary
 # encoding: utf-8
 #https://github.com/amzxyz/RIME-LMDG
-#兼容詞庫，對於多字詞匯兩種讀音的場景，手動維護到本表以及一些其他的雜項
+#兼容詞庫，對於多字詞彙兩種讀音的場景，手動維護到本表以及一些其他的雜項
 ---
 name: duoyin
 version: "LTS"
@@ -10,153 +10,174 @@ sort: by_weight
 自己打的	zì jǐ dǎ de	80
 怎麼打的	zěn me dǎ de	49
 誰都不會服誰	shéi dōu bú huì fú shéi	1
-調來調去	tiáo lái tiáo qù	33
+調來調去	tiáo lái tiáo qù	1122
 不會服誰	bú huì fú shéi	29
-天雨	tiān yù	431
+很得勁	hěn dé jìn	121
+真得勁	zhēn dé jìn	322
+可得勁兒	kě dé jìn er	178
+同行的	tóng háng de	198
+調到了	diào dào le	614
+不落	bú là	1258
+一戰	yī zhàn	1241
+一戰前	yī zhàn qián	714
+一戰中	yī zhàn zhōng	858
+一戰時	yī zhàn shí	1150
+一戰後	yī zhàn hòu	871
+乾了	gān le	1254
+裁縫	cái feng	1092
+輕薄	qīng báo	9145
+強人	qiáng rén	939
+天雨	tiān yù	754
 臨了	lín liǎo	411
 臨了了	lín liǎo le	143
-空著	kòng zhe	549
+空着	kòng zhe	2177
 大夫們	dà fū men	194
-校本	xiào běn	200
+校本	xiào běn	868
 特調	tè diào	500
 你行	nǐ háng	207
 我行	wǒ háng	350
-咱家	zá jiā	207
+咱家	zá jiā	768
 咱家的	zá jiā de	118
 得叫	děi jiào	401
 得從	děi cóng	518
-成角	chéng jué	375
-打的	dǎ de	600
-實在	shí zai	814
-長有	zhǎng yǒu	510
-識記	shí jì	452
-血條	xiě tiáo	437
+成角	chéng jué	29
+打的	dǎ de	1560
+實在	shí zai	1128
+長有	zhǎng yǒu	898
+識記	shí jì	2064
+血條	xiě tiáo	14379
 沖卡	chōng qiǎ	311
-幹嗎	gàn ma	545
-幹嗎	gān ma	545
-多少	duō shao	752
-當了	dàng le	555
-星星	xīng xing	747
-盛放	shèng fàng	451
-願為	yuàn wèi	490
-東西	dōng xī	885
+幹嗎	gàn ma	1229
+幹嗎	gān ma	1199
+多少	duō shao	157648
+當了	dàng le	11666
+星星	xīng xing	15308
+盛放	shèng fàng	858
+願爲	yuàn wèi	1124
+東西	dōng xī	367386
 捏壞	niē pēi	120
 糝館	sá guǎn	88
 糝麵	sá miàn	83
 糝粥	sá zhōu	94
-糝湯	sá tāng	67
-吃子	chī zǐ	411
-傾倒	qīng dào	553
-教授	jiāo shòu	609
+糝湯	sá tāng	215
+吃子	chī zǐ	1115
+傾倒	qīng dào	1187
+教授	jiāo shòu	1170
 褪去	tùn qù	340
-一簡	yī jiǎn	340
-散發	sàn fà	560
-好事	hào shì	310
-勒腳	lè jiǎo	330
-調了	tiáo le	680
-支著	zhī zhāo	341
-一朝	yì cháo	310
+一簡	yī jiǎn	1754
+散發	sàn fà	1038
+好事	hào shì	1367
+勒腳	lè jiǎo	1303
+調了	tiáo le	3948
+支着	zhī zhāo	977
+一朝	yì cháo	762
 特勒	tè lēi	310
-大汗	dà hán	481
-指甲	zhī jia	369
-好色	hǎo sè	551
-一本	yī běn	866
-一線	yí xiàn	644
-一級	yī jí	702
-一級傷殘	yī jí shāng cán	32
+大汗	dà hán	1307
+指甲	zhī jia	1527
+好色	hǎo sè	1706
+一本	yī běn	6814
+一線	yí xiàn	1384
+一級	yī jí	2025
+一級傷殘	yī jí shāng cán	516
 普通話一級	pǔ tōng huà yī jí	1
 一級字表	yī jí zì biǎo	32
-降了吧	xiáng le ba	175
+降了吧	xiáng le ba	253
 降了沒	xiáng le méi	194
-對不了	duì bu liǎo	223
+對不了	duì bu liǎo	704
 玉米糝粥	yù mǐ sá zhōu
 玉米糝湯	yù mǐ sá tāng
 玉米糝麵	yù mǐ sá miàn
 玉米糝餅	yù mǐ sá bǐng
 落子無悔	lào zǐ wú huǐ	37
-落子不悔	lào zǐ bù huǐ	7
+落子不悔	lào zǐ bù huǐ	426
 落子佈局	lào zǐ bù jú	32
 長蟲子	cháng chóng zi	146
-也不長	yě bù zhǎng	446
-出血线	chū xuè xiàn	261
-出血	chū xuè	450
-邏輯	luó jí	810
-此行	cí háng	559
-上頭	shàng tou	533
+也不長	yě bù zhǎng	547
+出血線	chū xuè xiàn	261
+出血	chū xuè	952
+邏輯	luó jí	1087
+此行	cí háng	1292
+上頭	shàng tou	1474
 長蟲	zhǎng chóng	377
-落子	lào zǐ	480
+落子	lào zǐ	1160
 卡住	kǎ zhù	442
-本事	běn shi	668
-還上了	huán shàng le	440
-她穿著	tā chuān zhuó	394
-他穿著	tā chuān zhuó	416
+本事	běn shi	1661
+還上了	huán shàng le	1813
+她穿着	tā chuān zhuó	394
+他穿着	tā chuān zhuó	416
 一定還	yí dìng huán	531
 將進酒	jiāng jìn jiǔ	169
-調了吧	tiáo le ba	170
-他調了	tā tiáo le	190
-我調了	wǒ tiáo le	190
-又調了	yòu tiáo le	280
-將棋手	jiāng qí shǒu	204
-將棋盤	jiāng qí pán	160
-將棋子	jiāng qí zǐ	155
-這一	zhè yí	746
-這一	zhè yì	795
-炸焦	zhá jiāo	410
-炸點	zhá diǎn	343
-炸好	zhá hǎo	413
-炸成	zhá chéng	483
-炸起	zhá qǐ	311
-炸著	zhá zhe	288
-炸起了	zhá qǐ le	152
-炸起來	zhá qǐ lái	156
-炸好的	zhá hǎo de	270
-炸成了	zhá chéng le	162
-炸過了	zhá guò le	158
-炸出了	zhá chū le	155
-炸過吧	zhá guò ba	169
-炸出來了	zhá chū lái le	10
-香炸	xiāng zhá	416
-還上	huán shàng	640
-重重	zhòng zhòng	470
-還得了	huán de liǎo	200
-盡量	jìn liàng	800
-背上	bēi shàng	570
-調至	diào zhì	550
-重裝	zhòng zhuāng	440
-孫子	sūn zǐ	650
-老子	lǎo zǐ	660
-和樂	hé yuè	420
-落在	là zài	430
-重刻	chóng kè	550
-咳咳	ke ke	200
-編輯	biān ji	840
-播種	bō zhòng	300
-密鑰	mì yuè	480
-糖色	táng shǎi	350
-又得	yòu děi	420
-拂過	bì guò	480
-黏著	zhān zhe	510
-當時	dàng shí	766
-當日	dàng rì	534
-當年	dàng nián	521
-當頭	dàng tóu	503
-鐵騎	tiě qí	482
+調了吧	tiáo le ba	354
+他調了	tā tiáo le	579
+我調了	wǒ tiáo le	822
+又調了	yòu tiáo le	606
+將棋手	jiāng qí shǒu	336
+將棋盤	jiāng qí pán	529
+將棋子	jiāng qí zǐ	745
+這誰了	zhè shéi le	108
+有爲	yǒu wèi	1552
+這一	zhè yí	8084
+這一	zhè yì	8383
+炸焦	zhá jiāo	696
+炸點	zhá diǎn	691
+炸好	zhá hǎo	1141
+炸成	zhá chéng	690
+炸起	zhá qǐ	720
+炸着	zhá zhe	89
+炸起了	zhá qǐ le	295
+炸起來	zhá qǐ lái	111
+炸好的	zhá hǎo de	146
+炸成了	zhá chéng le	628
+炸過了	zhá guò le	359
+炸出了	zhá chū le	650
+炸過吧	zhá guò ba	218
+炸出來了	zhá chū lái le	583
+香炸	xiāng zhá	776
+還上	huán shàng	1537
+重重	zhòng zhòng	1618
+還得了	huán de liǎo	556
+盡量	jìn liàng	674
+背上	bēi shàng	1505
+調至	diào zhì	744
+重裝	zhòng zhuāng	817
+孫子	sūn zǐ	13079
+老子	lǎo zǐ	1190
+和樂	hé yuè	863
+落在	là zài	10369
+得往	děi wǎng	482
+落在這	là zài zhè	307
+還不完	huán bù wán	4
+漯河	tà hé	1161
+重刻	chóng kè	970
+咳咳	ke ke	1216
+編輯	biān ji	1103
+播種	bō zhòng	1015
+密鑰	mì yuè	509
+糖色	táng shǎi	369
+又得	yòu děi	4202
+拂過	bì guò	959
+粘着	zhān zhe	1195
+當時	dàng shí	1468
+當日	dàng rì	7440
+當年	dàng nián	170745
+當頭	dàng tóu	824
+鐵騎	tiě qí	1298
 墊圈	diàn juàn	285
 大黃	dài huáng	209
-調調	tiáo tiáo	460
-明朝	míng zhāo	330
-沒入	mò rù	4330
-說客	shuō kè	441
-高中	gāo zhòng	545
-高中了	gāo zhōng le	134
-正中了	zhèng zhōng le	141
+調調	tiáo tiáo	854
+明朝	míng zhāo	754
+沒入	mò rù	578
+說客	shuō kè	1383
+高中	gāo zhòng	61159
+高中了	gāo zhōng le	862
+正中了	zhèng zhōng le	574
 沒入了	mò rù le	156
-卡在	qiǎ zài	341
+卡在	qiǎ zài	6149
 卡在了	qiǎ zài le	161
-睡著覺	shuì zhe jiào	136
-他卡在	tā kǎ zài	136
-我卡在	wǒ kǎ zài	118
-還不還	huán bù huán	170
+睡着覺	shuì zhe jiào	136
+他卡在	tā kǎ zài	344
+我卡在	wǒ kǎ zài	444
+還不還	huán bù huán	331
 忒過癮	tēi guò yǐn	80
 忒好吃	tēi hǎo chī	140
 忒好看	tēi hǎo kàn	60
@@ -184,12 +205,12 @@ sort: by_weight
 沒落地	mò luò de	310
 血債血還	xuè zhài xiě huán
 血債血償	xuè zhài xiě cháng
-難兄難弟	nán xiōng nàn dì	12
+難兄難弟	nán xiōng nàn dì	717
 卡在那裡	qiǎ zài nà lǐ	39
 卡在哪裡	qiǎ zài nǎ lǐ	32
 就卡在那裡了	jiù qiǎ zài nà lǐ le	1
-礙著您了	ài zháo nín le
-忒矮了吧	tēi ǎi le ba	60
+礙着您了	ài zháo nín le
+忒矮了吧	tēi ǎi le ba	43
 忒白了吧	tēi bái le ba	60
 忒薄了吧	tēi báo le ba	60
 忒不方便	tēi bù fāng biàn	11
@@ -203,20 +224,20 @@ sort: by_weight
 忒不聽話	tēi bù tīng huà	5
 忒不喜歡	tēi bù xǐ huān	1
 忒不要臉	tēi bú yào liǎn	14
-忒醜了吧	tēi chǒu le ba	60
+忒醜了吧	tēi chǒu le ba	142
 忒長了吧	tēi cháng le ba	60
-忒大了吧	tēi dà le ba	21
-忒短了吧	tēi duǎn le ba	60
-忒對不起	tēi duì bù qǐ	8
-忒多了吧	tēi duō le ba	60
-忒高了吧	tēi gāo le ba	12
-忒貴了吧	tēi guì le ba	60
+忒大了吧	tēi dà le ba	23
+忒短了吧	tēi duǎn le ba	115
+忒對不起	tēi duì bù qǐ	128
+忒多了吧	tēi duō le ba	295
+忒高了吧	tēi gāo le ba	1
+忒貴了吧	tēi guì le ba	250
 忒好了吧	tēi hǎo le ba	60
 忒黑了吧	tēi hēi le ba	60
 忒黑了點	tēi hēi le diǎn	7
 忒紅了吧	tēi hóng le ba	60
-忒厚了吧	tēi hòu le ba	60
-忒壞了吧	tēi huài le ba	60
+忒厚了吧	tēi hòu le ba	115
+忒壞了吧	tēi huài le ba	43
 忒黃了吧	tēi huáng le ba	60
 忒賤了吧	tēi jiàn le ba	60
 忒近了吧	tēi jìn le ba	41
@@ -245,122 +266,122 @@ sort: by_weight
 忒甜了吧	tēi tián le ba	60
 忒小了吧	tēi xiǎo le ba	60
 忒新了吧	tēi xīn le ba	60
-忒硬了吧	tēi yìng le ba	60
+忒硬了吧	tēi yìng le ba	2
 忒有意思	tēi yǒu yì sī	12
 忒遠了吧	tēi yuǎn le ba	60
 忒髒了吧	tēi zāng le ba	60
 忒窄了吧	tēi zhǎi le ba	60
 忒長了吧	tēi zhǎng le ba	60
 忒重了吧	tēi zhòng le ba	60
-沒收	méi shōu	410
-暴曬	pù shài	430
-大王	dài wang	430
-教會	jiāo huì	700
-愛教	ài jiāo	350
-不教	bù jiāo	490
-回調	huí diào	510
-回調函數	huí diào hán shù	320
-結果	jiē guǒ	810
+沒收	méi shōu	1010
+暴曬	pù shài	234
+大王	dài wang	876
+教會	jiāo huì	1391
+愛教	ài jiāo	60
+不教	bù jiāo	1073
+回調	huí diào	5725
+回調函數	huí diào hán shù	265
+結果	jiē guǒ	1086
 看不了	kàn bù le	260
-卡住	qiǎ zhù	430
-睡著	shuì zhe	511
+卡住	qiǎ zhù	3355
+睡着	shuì zhe	664
 沒地	mò dì
-辦不了	bàn bù le	230
+辦不了	bàn bù le	1213
 報不了	bào bù le	180
-軟彈	ruǎn tán	199
-露出	lù chū	400
-丁丁	zhēng zhēng	400
-沒看著	méi kàn zháo	140
-下不了	xià bù liǎo	220
+軟彈	ruǎn tán	55
+露出	lù chū	640
+丁丁	zhēng zhēng	1027
+沒看着	méi kàn zháo	140
+下不了	xià bù liǎo	295
 有多重	yǒu duō chóng	250
-多重	duō zhòng	630
-不幹	bù gān	570
-大夫	dà fū	231
-薄膜	bó mó	600
+多重	duō zhòng	36513
+不幹	bù gān	1619
+大夫	dà fū	1245
+薄膜	bó mó	858
 沒過了	mò guò le
 沒過我	mò guò wǒ
 沒過線	mò guò xiàn
-沒過	mò guò	350
-摩挲	mó suō	470
-公差	gōng chā	480
-好高	hào gāo	490
-好強	hào qiáng	490
+沒過	mò guò	1069
+摩挲	mó suō	14040
+公差	gōng chā	853
+好高	hào gāo	497
+好強	hào qiáng	2692
 攢個	cuán gè	390
-攢個	zǎn gè	390
-揹著	bēi zhe	550
-外傳	wài chuán	460
+攢個	zǎn gè	739
+背着	bēi zhe	1632
+外傳	wài chuán	3753
 長點兒	cháng diǎn ér	290
-長點兒	zhǎng diǎn ér	290
+長點兒	zhǎng diǎn ér	264
 有的行	yǒu de háng	230
-就得到	jiù děi dào	500
+就得到	jiù děi dào	1204
 就得到	jiù dé dào	500
-調回來	tiáo huí lái	190
-調回了	tiáo huí le	150
-調回去	tiáo huí qù	140
-長了	cháng le	690
-哀樂	āi lè	410
-炸鍋	zhá guō	470
-調回	tiáo huí	510
+調回來	tiáo huí lái	284
+調回了	tiáo huí le	385
+調回去	tiáo huí qù	120
+長了	cháng le	1245
+哀樂	āi lè	1195
+炸鍋	zhá guō	662
+調回	tiáo huí	381
 掉色	diào sè	550
 掉色	diào shǎi	550
-大方	dà fang	680
-落魄	luò tuò	530
-落魄	luò bó	530
-沉甸甸	chén diān diān	380
-沉甸甸	chén diàn diàn	380
-熱騰騰	rè téng téng	450
-熱騰騰	rè tēng tēng	450
-大爺	dà yé	650
-兄弟	xiōng di	740
-姑父	gū fù	490
-女婿	nǚ xù	600
-朝陽	zhāo yáng	660
-朝陽	cháo yáng	660
-單行	dān xíng	500
-單行	dān háng	600
-串行	chuàn xíng	440
-串行	chuàn háng	540
-同行	tóng háng	710
-同行	tóng xíng	600
-多行	duō xíng	360
-多行	duō háng	490
-不了了	bù liǎo liǎo	540
-不了了	bù liǎo le	410
+大方	dà fang	1357
+落魄	luò tuò	3091
+落魄	luò bó	984
+沉甸甸	chén diān diān	1147
+沉甸甸	chén diàn diàn	1117
+熱騰騰	rè téng téng	142
+熱騰騰	rè tēng tēng	112
+大爺	dà yé	1237
+兄弟	xiōng di	41923
+姑父	gū fù	1100
+女婿	nǚ xù	1492
+得說	děi shuō	400
+朝陽	zhāo yáng	17711
+朝陽	cháo yáng	2920
+單行	dān xíng	4473
+單行	dān háng	2600
+串行	chuàn xíng	830
+串行	chuàn háng	679
+同行	tóng háng	20561
+同行	tóng xíng	20561
+多行	duō xíng	1154
+多行	duō háng	1490
+不了了	bù liǎo liǎo	1622
+不了了	bù liǎo le	1081
 爿字旁	chuáng zì páng
 爿字旁	pán zì páng
-肚子	dù zi	650
-肚子	dǔ zi	310
-落了	là le	540
-落了	luò le	600
-迫降	pò xiáng	120
-迫降	pò jiàng	520
-淺淺	jiān jiān	470
-淺淺	qiǎn qiǎn	670
-不了	bù liǎo	890
-不了	bù le	850
-着人	zhuó rén	390
-閒着	xián zhāo	370
-閒着	xián zhe	570
-琢磨	zuó mo	620
-琢磨	zhuó mó	460
-線長	xiàn zhǎng	460
-看好	kān hǎo	610
-看著	kān zhe	700
+肚子	dù zi	1002
+肚子	dǔ zi	972
+落了	là le	6074
+落了	luò le	4731
+迫降	pò xiáng	290
+迫降	pò jiàng	3918
+淺淺	jiān jiān	1191
+淺淺	qiǎn qiǎn	1056
+不了	bù liǎo	2133
+不了	bù le	45437
+着人	zhuó rén	149
+閒着	xián zhāo	817
+琢磨	zuó mo	13214
+琢磨	zhuó mó	13214
+線長	xiàn zhǎng	767
+看好	kān hǎo	18643
+看着	kān zhe	809
 好這口	hào zhè kǒu	490
 好這口	hào zhèi kǒu	490
-不得	bù dé	760
-不得	bù děi	220
+不得	bù dé	25935
+不得	bù děi	320
 調對了	tiáo duì le	310
-調對了	diào duì le	510
+調對了	diào duì le	624
 轉來轉去	zhuàn lái zhuàn qù	60
 轉來轉去	zhuǎn lái zhuǎn qù	25
 得了	dé liǎo	610
-得了	dé le	730
+得了	dé le	2610
 贏得了	yíng de liǎo
-得是	de shì	560
+得是	de shì	848
 得是	děi shì	410
-還回	huán huí	310
-還回	hái huí	430
+還回	huán huí	1312
+還回	hái huí	1792
 看好他	kān hǎo tā	400
 看好他	kàn hǎo tā	400
 深藏不露	shēn cáng bú lòu	56
@@ -374,12 +395,12 @@ sort: by_weight
 還回來了	hái huí lái le	26
 還回來啊	huán huí lái a	8
 還回來啊	hái huí lái a	17
-還回來吧	huán huí lái ba	19
+還回來吧	huán huí lái ba	7
 還回來吧	hái huí lái ba	9
-還回去	huán huí qù	490
-還回去	hái huí qù	290
-還回來	huán huí lái	350
-還回來	hái huí lái	460
+還回去	huán huí qù	102
+還回去	hái huí qù	1201
+還回來	huán huí lái	794
+還回來	hái huí lái	733
 還給那	hái gěi nà	90
 還給你	hái gěi nǐ	250
 還給誰	hái gěi shuí	50
@@ -389,46 +410,46 @@ sort: by_weight
 還給這	hái gěi zhè	110
 你還給	nǐ hái gěi	140
 他還給	tā hái gěi	130
-我還給	wǒ hái gěi	150
+我還給	wǒ hái gěi	898
 還給你錢	hái gěi nǐ qián	22
 還給她過	hái gěi tā guò	7
 還給她們	hái gěi tā men	30
 什麼時候還	shén me shí hòu huán	1
 下次一定還	xià cì yī dìng huán	1
-還都	huán dū	580
-還都	hái dōu	580
-重載	zhòng zài	500
-重載	chóng zǎi	250
-罷了	bà le	890
-總長	zǒng cháng	710
-總長	zǒng zhǎng	440
+還都	huán dū	95
+還都	hái dōu	2580
+重載	zhòng zài	1086
+重載	chóng zǎi	808
+罷了	bà le	1236
+總長	zǒng cháng	3710
+總長	zǒng zhǎng	450
 罷了	bà liǎo	650
-白廟	bái miào	10
-便宜	biàn yí	200
-不長	bǔ cháng	570
-不為	bú wèi	610
-不為	bù wéi	620
-不長	bù zhǎng	330
-長的	cháng de	800
-咳痰	kǎ tán	210
-委屈	wěi qu	656
-精神	jīng shen	816
-朴樹	pò shù	400
+白廟	bái miào	1436
+便宜	biàn yí	1187
+不長	bǔ cháng	1304
+不為	bú wèi	1329
+不為	bù wéi	1359
+不長	bù zhǎng	1909
+長的	cháng de	1244
+咳痰	kǎ tán	51
+委屈	wěi qu	922
+精神	jīng shen	1270
+朴樹	pò shù	2837
 干將	gān jiāng
-長不長	cháng bù cháng	330
-長頭髮	cháng tóu fā	500
-長頭髮	zhǎng tóu fā	500
-長尾巴	cháng wěi bā	400
+長不長	cháng bù cháng	408
+長頭發	cháng tóu fā	645
+長頭發	zhǎng tóu fā	500
+長尾巴	cháng wěi bā	108
 長尾巴	zhǎng wěi bā	400
-長細紋	cháng xì wén	250
+長細紋	cháng xì wén	20
 長細紋	zhǎng xì wén	250
 長羽毛	cháng yǔ máo	250
-長羽毛	zhǎng yǔ máo	250
+長羽毛	zhǎng yǔ máo	11
 區隊長	qū duì zhǎng	280
-會落下	huì là xià	168
-落下了	là xià le	234
-他落下	tā là xià	110
-我落下	wǒ là xià	109
+會落下	huì là xià	470
+落下了	là xià le	120
+他落下	tā là xià	588
+我落下	wǒ là xià	511
 已落下	yǐ là xià	110
 落下的	là xià de	312
 落下一個	là xià yí gè	1
@@ -439,77 +460,79 @@ sort: by_weight
 落下的課程	là xià de kè chéng	1
 已經落下了	yǐ jīng là xià le	1
 誰認得	shéi rèn de	444
-貼吧	tiē bā	695
-找著	zhǎo zhe	388
-再長	zài cháng	550
-行道	háng dào	165
-重讀	zhòng dú	552
-一專	yī zhuān	388
-磨豆腐	mò dòu fu	182
-顏色差	yán sè chā	18
-冷戰	lěng zhan	580
-打冷戰	dǎ lěng zhan	162
-打個冷戰	dǎ gè lěng zhàn	14
+乾爽了	gàn shuǎng le	358
+一點	yī diǎn	972
+湯湯	tāng tāng	930
+貼吧	tiē bā	19915
+找着	zhǎo zhe	1496
+再長	zài cháng	1056
+行道	háng dào	1257
+重讀	zhòng dú	1434
+一專	yī zhuān	1048
+磨豆腐	mò dòu fu	55
+顏色差	yán sè chā	758
+冷戰	lěng zhan	4039
+打冷戰	dǎ lěng zhan	73
+打個冷戰	dǎ gè lěng zhàn	358
 打了個冷戰	dǎ le gè lěng zhan	1
-重活	chóng huó	120
-重天	chóng tiān	500
-穿著	chuān zhuó	640
-穿著清涼	chuān zhe qīng liáng	23
-趕場	gǎn cháng	426
+重活	chóng huó	609
+重天	chóng tiān	809
+穿着	chuān zhuó	640
+穿着清涼	chuān zhe qīng liáng	23
+趕場	gǎn cháng	207
 調配	diào pèi	690
-更爲	gèng wèi	970
-更爲	gēng wéi	920
+更爲	gèng wèi	1313
+更爲	gēng wéi	143
 行長	háng zhǎng	470
-見長	jiàn cháng	510
-見長	jiàn zhǎng	620
-落下	là xià	760
-累累	léi léi	580
-累累	lěi lěi	510
-落下	luò xià	820
-落下	luò xià	400
+見長	jiàn cháng	851
+見長	jiàn zhǎng	980
+落下	là xià	10762
+累累	léi léi	473
+累累	lěi lěi	443
+落下	luò xià	10764
 略長	lüè cháng	450
-掠奪	lüè duó	690
-掠奪	lüě duó	300
+掠奪	lüè duó	988
+掠奪	lüě duó	958
 略長	lüè zhǎng	180
-美的	měi dì	470
-命中	mìng zhōng	710
-命中	mìng zhòng	660
-年長	nián cháng	450
-年長	nián zhǎng	520
-便宜	pián yi	560
+美的	měi dì	20709
+命中	mìng zhōng	6999
+命中	mìng zhòng	5760
+年長	nián cháng	1450
+年長	nián zhǎng	2520
+便宜	pián yi	1164
 大都	dà dū		350
-數次	shù cì	770
-數次	shuò cì	520
+數次	shù cì	6083
+數次	shuò cì	5006
 隨行	suí háng	550
-隨行	suí xíng	780
-所長	suǒ cháng	610
-所長	suǒ zhǎng	790
+隨行	suí xíng	1729
+所長	suǒ cháng	3222
+所長	suǒ zhǎng	2790
 調配	tiáo pèi	620
-調為	tiáo wéi	470
-都為	dōu wéi	630
-我爲	wǒ wèi	660
-我爲	wǒ wéi	470
-五行	wǔ háng	560
-五行	wǔ xíng	610
-相稱	xiāng chèn	400
-相稱	xiāng chēng	500
-血暈	xiě yùn	220
-血暈	xuè yùn	70
-一行	yì háng	620
-一通	yí tòng	700
-一通	yì tōng	610
-一行	yì xíng	530
-越長	yuè cháng	270
-越長	yuè zhǎng	350
-炸魚	zhá yú	540
-炸魚	zhà yú	30
-喜樂	xǐ yuè	360
-長的	zhǎng de	920
-長牙	zhǎng yá	580
-長牙	cháng yá	380
-長芽	cháng yá	370
-重活	zhòng huó	390
-重活	chóng huó	270
+調為	tiáo wéi	5995
+都為	dōu wéi	977
+我爲	wǒ wèi	2042
+我爲	wǒ wéi	1612
+五行	wǔ háng	3367
+五行	wǔ xíng	1474
+相稱	xiāng chèn	827
+相稱	xiāng chēng	651
+血暈	xiě yùn	374
+血暈	xuè yùn	1769
+一行	yì háng	966
+一通	yí tòng	1226
+一通	yì tōng	1196
+一行	yì xíng	1391
+越長	yuè cháng	2270
+越長	yuè zhǎng	3972
+炸魚	zhá yú	2636
+炸魚	zhà yú	2606
+喜樂	xǐ yuè	781
+長的	zhǎng de	1055
+長牙	zhǎng yá	293
+長牙	cháng yá	382
+長芽	cháng yá	352
+重活	zhòng huó	1859
+重活	chóng huó	639
 按這	àn zhèi	400
 把這	bǎ zhèi	650
 被這	bèi zhèi	530
@@ -539,7 +562,7 @@ sort: by_weight
 送這	sòng zhèi	340
 他這	tā zhèi	630
 她這	tā zhèi	520
-為這	wèi zhèi	560
+爲這	wèi zhèi	560
 問這	wèn zhèi	600
 我這	wǒ zhèi	690
 用這	yòng zhèi	560
@@ -582,7 +605,7 @@ sort: by_weight
 這車	zhèi chē	590
 這城	zhèi chéng	330
 這處	zhèi chù	530
-這齣	zhèi chū	450
+這出	zhèi chū	450
 這串	zhèi chuàn	440
 這船	zhèi chuán	330
 這次	zhèi cì	810
@@ -628,7 +651,7 @@ sort: by_weight
 這幅	zhèi fú	600
 這副	zhèi fù	510
 這該	zhèi gāi	430
-這桿	zhèi gān	330
+這杆	zhèi gān	330
 這個	zhèi ge	960
 這歌	zhèi gē	490
 這哥	zhèi gē	390
@@ -698,7 +721,7 @@ sort: by_weight
 這款	zhèi kuǎn	810
 這來	zhèi lái	410
 這類	zhèi lèi	760
-這裡	zhèi lǐ	850
+這裏	zhèi lǐ	850
 這粒	zhèi lì	440
 這倆	zhèi liǎ	600
 這臉	zhèi liǎn	420
@@ -746,7 +769,7 @@ sort: by_weight
 這券	zhèi quàn	300
 這卻	zhèi què	450
 這確	zhèi què	300
-這群	zhèi qún	640
+這羣	zhèi qún	640
 這讓	zhèi ràng	680
 這人	zhèi rén	600
 這日	zhèi rì	390
@@ -774,7 +797,7 @@ sort: by_weight
 這艘	zhèi sōu	560
 這算	zhèi suàn	560
 這所	zhèi suǒ	620
-這台	zhèi tái	640
+這臺	zhèi tái	640
 這太	zhèi tài	460
 這攤	zhèi tān	320
 這趟	zhèi tàng	520
@@ -797,7 +820,7 @@ sort: by_weight
 這碗	zhèi wǎn	530
 這晚	zhèi wǎn	370
 這位	zhèi wèi	750
-這為	zhèi wéi	580
+這爲	zhèi wéi	580
 這味	zhèi wèi	420
 這窩	zhèi wō	250
 這屋	zhèi wū	320
@@ -835,14 +858,14 @@ sort: by_weight
 這招	zhèi zhāo	570
 這真	zhèi zhēn	440
 這陣	zhèi zhèn	370
-這隻	zhèi zhǐ	700
+這只	zhèi zhǐ	700
 這支	zhèi zhī	620
 這紙	zhèi zhǐ	350
 這枝	zhèi zhī	320
 這種	zhèi zhǒng	890
-這週	zhèi zhōu	590
+這周	zhèi zhōu	590
 這株	zhèi zhū	430
-這註	zhèi zhù	360
+這注	zhèi zhù	360
 這樁	zhèi zhuāng	480
 這幢	zhèi zhuàng	450
 這桌	zhèi zhuō	510
@@ -852,7 +875,7 @@ sort: by_weight
 這罪	zhèi zuì	330
 這尊	zhèi zūn	510
 這座	zhèi zuò	710
-在不了	zài bu le	200
+在不了	zài bu le	439
 啊這是	a zhèi shì	520
 啊這些	a zhèi xiē	500
 愛這個	ài zhèi ge	490
@@ -869,7 +892,7 @@ sort: by_weight
 把這個	bǎ zhèi ge	690
 把這集	bǎ zhèi jí	200
 把這類	bǎ zhèi lèi	370
-把這裡	bǎ zhèi lǐ	480
+把這裏	bǎ zhèi lǐ	480
 把這兩	bǎ zhèi liǎng	390
 把這項	bǎ zhèi xiàng	420
 把這些	bǎ zhèi xiē	660
@@ -895,10 +918,10 @@ sort: by_weight
 趁這時	chèn zhèi shí	170
 成這樣	chéng zhèi yàng	600
 成這種	chéng zhèi zhǒng	340
-吃這個	chī zhèi ge	620
-吃這類	chī zhèi lèi	370
-吃這裡	chī zhèi lǐ	410
-吃這套	chī zhèi tào	320
+喫這個	chī zhèi ge	620
+喫這類	chī zhèi lèi	370
+喫這裏	chī zhèi lǐ	410
+喫這套	chī zhèi tào	320
 持這樣	chí zhèi yàng	270
 持這種	chí zhèi zhǒng	420
 穿這個	chuān zhèi ge	410
@@ -908,7 +931,7 @@ sort: by_weight
 從這裏	cóng zhèi lǐ	640
 打這個	dǎ zhèi ge	440
 打這裏	dǎ zhèi lǐ	220
-帶這裡	dài zhèi lǐ	250
+帶這裏	dài zhèi lǐ	250
 但這次	dàn zhèi cì	590
 但這都	dàn zhèi dōu	370
 但這會	dàn zhèi huì	320
@@ -919,12 +942,12 @@ sort: by_weight
 到這點	dào zhèi diǎn	400
 到這個	dào zhèi ge	670
 到這來	dào zhèi lái	460
-到這裡	dào zhèi lǐ	710
+到這裏	dào zhèi lǐ	710
 到這時	dào zhèi shí	400
 得這樣	dé zhèi yàng	390
 等這些	děng zhèi xiē	720
 點這個	diǎn zhèi ge	560
-點這裡	diǎn zhèi lǐ	520
+點這裏	diǎn zhèi lǐ	520
 點這樣	diǎn zhèi yàng	400
 定這個	dìng zhèi ge	340
 都這個	dōu zhèi ge	450
@@ -936,7 +959,7 @@ sort: by_weight
 對這裏	duì zhèi lǐ	510
 對這沒	duì zhèi méi	70
 對這種	duì zhèi zhǒng	630
-多這裡	duō zhèi lǐ	360
+多這裏	duō zhèi lǐ	360
 而這次	ér zhèi cì	560
 而這個	ér zhèi ge	670
 而這裏	ér zhèi lǐ	500
@@ -950,7 +973,7 @@ sort: by_weight
 犯這種	fàn zhèi zhǒng	400
 放這吧	fàng zhèi ba	190
 放這個	fàng zhèi ge	380
-放這裡	fàng zhèi lǐ	380
+放這裏	fàng zhèi lǐ	380
 放這首	fàng zhèi shǒu	160
 幹這個	gàn zhèi ge	500
 幹這活	gàn zhèi huó	300
@@ -960,7 +983,7 @@ sort: by_weight
 搞這種	gǎo zhèi zhǒng	420
 給這邊	gěi zhèi biān	160
 給這類	gěi zhèi lèi	300
-給這裡	gěi zhèi lǐ	340
+給這裏	gěi zhèi lǐ	340
 給這些	gěi zhèi xiē	510
 跟這個	gēn zhèi ge	550
 管這個	guǎn zhèi ge	430
@@ -968,7 +991,7 @@ sort: by_weight
 過這樣	guò zhèi yàng	520
 還這樣	hái zhèi yàng	470
 還這種	hái zhèi zhǒng	310
-好這裡	hǎo zhèi lǐ	320
+好這裏	hǎo zhèi lǐ	320
 和這種	hé zhèi zhǒng	500
 畫這個	huà zhèi ge	340
 換這個	huàn zhèi ge	380
@@ -1001,7 +1024,7 @@ sort: by_weight
 據這位	jù zhèi wèi	370
 開這個	kāi zhèi ge	480
 看這個	kàn zhèi ge	640
-看這裡	kàn zhèi lǐ	570
+看這裏	kàn zhèi lǐ	570
 看這樣	kàn zhèi yàng	420
 靠這個	kào zhèi ge	520
 考這個	kǎo zhèi ge	420
@@ -1014,13 +1037,13 @@ sort: by_weight
 來這邊	lái zhèi biān	590
 來這點	lái zhèi diǎn	270
 來這個	lái zhèi ge	550
-來這裡	lái zhèi lǐ	770
+來這裏	lái zhèi lǐ	770
 來這套	lái zhèi tào	290
 老這個	lǎo zhèi ge	260
 老這樣	lǎo zhèi yàng	350
 老這種	lǎo zhèi zhǒng	160
 累這樣	lèi zhèi yàng	130
-離這裡	lí zhèi lǐ	480
+離這裏	lí zhèi lǐ	480
 連這個	lián zhèi ge	500
 聊這個	liáo zhèi ge	410
 聊這事	liáo zhèi shì	200
@@ -1032,7 +1055,7 @@ sort: by_weight
 毛這種	máo zhèi zhǒng	210
 沒這店	méi zhèi diàn	300
 沒這個	méi zhèi ge	530
-美這裡	měi zhèi lǐ	190
+美這裏	měi zhèi lǐ	190
 沒這命	méi zhèi mìng	140
 沒這樣	méi zhèi yàng	330
 沒這種	méi zhèi zhǒng	400
@@ -1058,7 +1081,7 @@ sort: by_weight
 你這個	nǐ zhèi ge	650
 你這會	nǐ zhèi huì	190
 你這來	nǐ zhèi lái	210
-你這裡	nǐ zhèi lǐ	470
+你這裏	nǐ zhèi lǐ	470
 你這面	nǐ zhèi miàn	120
 你這年	nǐ zhèi nián	240
 你這人	nǐ zhèi rén	420
@@ -1071,7 +1094,7 @@ sort: by_weight
 你這下	nǐ zhèi xià	200
 你這些	nǐ zhèi xiē	410
 你這樣	nǐ zhèi yàng	580
-你這樣	nǐ zhèi yě	330
+你這也	nǐ zhèi yě	330
 你這種	nǐ zhèi zhǒng	540
 您這邊	nín zhèi biān	300
 您這個	nín zhèi ge	440
@@ -1081,7 +1104,7 @@ sort: by_weight
 配這個	pèi zhèi ge	390
 氣這樣	qì zhèi yàng	190
 錢這是	qián zhèi shì	410
-去這裡	qù zhèi lǐ	590
+去這裏	qù zhèi lǐ	590
 卻這樣	què zhèi yàng	200
 讓這個	ràng zhèi ge	610
 讓這顆	ràng zhèi kē	260
@@ -1091,7 +1114,7 @@ sort: by_weight
 人這樣	rén zhèi yàng	470
 上這來	shàng zhèi lái	340
 上這類	shàng zhèi lèi	350
-上這裡	shàng zhèi lǐ	440
+上這裏	shàng zhèi lǐ	440
 是這吧	shì zhèi ba	300
 是這不	shì zhèi bù	260
 是這的	shì zhèi de	410
@@ -1103,11 +1126,11 @@ sort: by_weight
 是這種	shì zhèi zhǒng	610
 耍這個	shuǎ zhèi ge	160
 耍這些	shuǎ zhèi xiē	220
-睡這裡	shuì zhèi lǐ	170
+睡這裏	shuì zhèi lǐ	170
 說這多	shuō zhèi duō	210
 說這個	shuō zhèi ge	680
 說這話	shuō zhèi huà	540
-說這裡	shuō zhèi lǐ	560
+說這裏	shuō zhèi lǐ	560
 說這事	shuō zhèi shì	450
 說這些	shuō zhèi xiē	600
 說這種	shuō zhèi zhǒng	560
@@ -1132,10 +1155,10 @@ sort: by_weight
 玩這套	wán zhèi tào	290
 玩這些	wán zhèi xiē	390
 往這走	wǎng zhèi zǒu	180
-為這個	wèi zhèi gè	600
-為這事	wèi zhèi shì	460
-為這些	wèi zhèi xiē	560
-問這裡	wèn zhèi lǐ	280
+爲這個	wèi zhèi gè	600
+爲這事	wèi zhèi shì	460
+爲這些	wèi zhèi xiē	560
+問這裏	wèn zhèi lǐ	280
 我這般	wǒ zhèi bān	300
 我這邊	wǒ zhèi biān	560
 我這才	wǒ zhèi cái	420
@@ -1154,7 +1177,7 @@ sort: by_weight
 我這就	wǒ zhèi jiù	420
 我這塊	wǒ zhèi kuài	300
 我這來	wǒ zhèi lái	300
-我這裡	wǒ zhèi lǐ	640
+我這裏	wǒ zhèi lǐ	640
 我這面	wǒ zhèi miàn	170
 我這拿	wǒ zhèi ná	120
 我這年	wǒ zhèi nián	320
@@ -1174,11 +1197,11 @@ sort: by_weight
 我這周	wǒ zhèi zhōu	330
 我這組	wǒ zhèi zǔ	140
 下這個	xià zhèi ge	580
-下這裡	xià zhèi lǐ	350
+下這裏	xià zhèi lǐ	350
 先這樣	xiān zhèi yàng	390
 向這邊	xiàng zhèi biān	290
 像這個	xiàng zhèi ge	450
-向這裡	xiàng zhèi lǐ	300
+向這裏	xiàng zhèi lǐ	300
 向這些	xiàng zhèi xiē	460
 想這些	xiǎng zhèi xiē	420
 像這樣	xiàng zhèi yàng	600
@@ -1192,7 +1215,7 @@ sort: by_weight
 選這個	xuǎn zhèi ge	500
 選這種	xuǎn zhèi zhǒng	360
 學這個	xué zhèi ge	510
-呀這裡	ya zhèi lǐ	300
+呀這裏	ya zhèi lǐ	300
 演這種	yǎn zhèi zhǒng	320
 要這樣	yào zhèi yàng	530
 也這樣	yě zhèi yàng	550
@@ -1206,9 +1229,9 @@ sort: by_weight
 用這種	yòng zhèi zhǒng	620
 有這大	yǒu zhèi dà	190
 有這的	yǒu zhèi de	270
-有這麼多	yǒu zhèi duō	220
+有這多	yǒu zhèi duō	220
 有這個	yǒu zhèi ge	660
-有這麼好	yǒu zhèi hǎo	210
+有這好	yǒu zhèi hǎo	210
 有這話	yǒu zhèi huà	110
 有這空	yǒu zhèi kōng	160
 有這錢	yǒu zhèi qián	360
@@ -1219,15 +1242,15 @@ sort: by_weight
 有這種	yǒu zhèi zhǒng	660
 與這些	yǔ zhèi xiē	570
 咋這樣	zǎ zhèi yàng	270
-再這裡	zài zhèi lǐ	400
+再這裏	zài zhèi lǐ	400
 再這樣	zài zhèi yàng	530
 咱這個	zán zhèi ge	300
-咱這裡	zán zhèi lǐ	260
+咱這裏	zán zhèi lǐ	260
 咱這些	zán zhèi xiē	240
-早這裡	zǎo zhèi lǐ	170
+早這裏	zǎo zhèi lǐ	170
 則這個	zé zhèi ge	420
 站這邊	zhàn zhèi biān	210
-站這裡	zhàn zhèi lǐ	290
+站這裏	zhàn zhèi lǐ	290
 照這個	zhào zhèi ge	460
 找這個	zhǎo zhèi ge	460
 照這樣	zhào zhèi yàng	450
@@ -1328,8 +1351,8 @@ sort: by_weight
 這城裡	zhèi chéng lǐ	190
 這城市	zhèi chéng shì	410
 這充分	zhèi chōng fèn	480
-這齣劇	zhèi chū jù	280
-這齣戲	zhèi chū xì	420
+這出劇	zhèi chū jù	280
+這出戲	zhèi chū xì	420
 這次不	zhèi cì bù	420
 這次的	zhèi cì de	700
 這次第	zhèi cì dì	310
@@ -1356,7 +1379,7 @@ sort: by_weight
 這代表	zhèi dài biǎo	490
 這代碼	zhèi dài mǎ	290
 這代人	zhèi dài rén	510
-這呆著	zhèi dāi zhe	210
+這呆着	zhèi dāi zhe	210
 這當口	zhèi dāng kǒu	270
 這當然	zhèi dāng rán	550
 這當中	zhèi dāng zhōng	500
@@ -1446,7 +1469,7 @@ sort: by_weight
 這複雜	zhèi fù zá	250
 這嘎達	zhèi gā dá	250
 這感覺	zhèi gǎn jué	510
-這桿槍	zhèi gān qiāng	180
+這杆槍	zhèi gān qiāng	180
 這崗位	zhèi gǎng wèi	280
 這搞得	zhèi gǎo de	190
 這高的	zhèi gāo de	150
@@ -1537,9 +1560,9 @@ sort: by_weight
 這個哦	zhèi ge ó	360
 這個片	zhèi ge piàn	360
 這個錢	zhèi ge qián	580
-這個簽	zhèi ge qiān	240
+這個籤	zhèi ge qiān	240
 這個秋	zhèi ge qiū	270
-這個群	zhèi ge qún	450
+這個羣	zhèi ge qún	450
 這個人	zhèi ge rén	730
 這個騷	zhèi ge sāo	210
 這歌聲	zhèi gē shēng	270
@@ -1573,7 +1596,7 @@ sort: by_weight
 這個真	zhèi ge zhēn	480
 這個證	zhèi ge zhèng	460
 這個值	zhèi ge zhí	490
-這個週	zhèi ge zhōu	330
+這個周	zhèi ge zhōu	330
 這個字	zhèi ge zì	600
 這個總	zhèi ge zǒng	340
 這個組	zhèi ge zǔ	390
@@ -1581,7 +1604,7 @@ sort: by_weight
 這給我	zhèi gěi wǒ	380
 這根本	zhèi gēn běn	540
 這根刺	zhèi gēn cì	260
-這根樑	zhèi gēn liáng	170
+這根梁	zhèi gēn liáng	170
 這跟我	zhèi gēn wǒ	390
 這根弦	zhèi gēn xián	420
 這根線	zhèi gēn xiàn	360
@@ -1629,7 +1652,7 @@ sort: by_weight
 這後來	zhèi hòu lái	320
 這後生	zhèi hòu shēng	200
 這鬍子	zhèi hú zi	210
-這話裡	zhèi huà lǐ	200
+這話裏	zhèi huà lǐ	200
 這話題	zhèi huà tí	420
 這環境	zhèi huán jìng	450
 這會都	zhèi huì dōu	180
@@ -1772,29 +1795,29 @@ sort: by_weight
 這類詞	zhèi lèi cí	150
 這類人	zhèi lèi rén	600
 這裏啊	zhèi lǐ a	420
-這裏吧	zhèi lǐ ba	520
-這裡邊	zhèi lǐ biān	480
-這裡曾	zhèi lǐ céng	420
+這裡吧	zhèi lǐ ba	520
+這裏邊	zhèi lǐ biān	480
+這裏曾	zhèi lǐ céng	420
 這裡的	zhèi lǐ de	850
-這裡等	zhèi lǐ děng	360
-這裡過	zhèi lǐ guò	320
+這裏等	zhèi lǐ děng	360
+這裏過	zhèi lǐ guò	320
 這厲害	zhèi lì hài	140
-這裡好	zhèi lǐ hǎo	420
-這裡會	zhèi lǐ huì	460
-這裡建	zhèi lǐ jiàn	280
-這裡將	zhèi lǐ jiāng	470
-這裡就	zhèi lǐ jiù	640
-這裡來	zhèi lǐ lái	510
-這裡連	zhèi lǐ lián	350
-這裡嗎	zhèi lǐ ma	390
-這裡買	zhèi lǐ mǎi	570
-這裡沒	zhèi lǐ méi	460
+這裏好	zhèi lǐ hǎo	420
+這裏會	zhèi lǐ huì	460
+這裏建	zhèi lǐ jiàn	280
+這裏將	zhèi lǐ jiāng	470
+這裏就	zhèi lǐ jiù	640
+這裏來	zhèi lǐ lái	510
+這裏連	zhèi lǐ lián	350
+這裏嗎	zhèi lǐ ma	390
+這裏買	zhèi lǐ mǎi	570
+這裏沒	zhèi lǐ méi	460
 這裏面	zhèi lǐ miàn	670
-這裡木	zhèi lǐ mù	160
-這裡那	zhèi lǐ nà	310
+這裏木	zhèi lǐ mù	160
+這裏那	zhèi lǐ nà	310
 這裏能	zhèi lǐ néng	430
 這裏是	zhèi lǐ shì	720
-這裡耍	zhèi lǐ shuǎ	150
+這裏耍	zhèi lǐ shuǎ	150
 這裏我	zhèi lǐ wǒ	600
 這裏雪	zhèi lǐ xuě	150
 這裏也	zhèi lǐ yě	610
@@ -1831,7 +1854,7 @@ sort: by_weight
 這兩年	zhèi liǎng nián	680
 這兩批	zhèi liǎng pī	280
 這兩票	zhèi liǎng piào	160
-這兩個人	zhèi liǎng rén	530
+這兩人	zhèi liǎng rén	530
 這兩日	zhèi liǎng rì	410
 這兩首	zhèi liǎng shǒu	420
 這兩雙	zhèi liǎng shuāng	260
@@ -1915,7 +1938,7 @@ sort: by_weight
 這情況	zhèi qíng kuàng	490
 這區區	zhèi qū qū	330
 這泉水	zhèi quán shuǐ	190
-這群狗	zhèi qún gǒu	220
+這羣狗	zhèi qún gǒu	220
 這群裡	zhèi qún lǐ	190
 這群人	zhèi qún rén	550
 這讓她	zhèi ràng tā	470
@@ -2029,8 +2052,8 @@ sort: by_weight
 這歲數	zhèi sui shù	320
 這孫子	zhèi sūn zi	400
 這他媽	zhèi tā mā	450
-這台風	zhèi tái fēng	230
-這台機	zhèi tái jī	350
+這臺風	zhèi tái fēng	230
+這臺機	zhèi tái jī	350
 這太陽	zhèi tài yáng	230
 這堂課	zhèi táng kè	420
 這套房	zhèi tào fáng	420
@@ -2091,11 +2114,11 @@ sort: by_weight
 這先生	zhèi xiān shēng	200
 這小哥	zhèi xiǎo gē	330
 這小孩	zhèi xiǎo hái	410
-這小伙	zhèi xiǎo huǒ	350
+這小夥	zhèi xiǎo huǒ	350
 這瀟灑	zhèi xiāo sǎ	130
 這小樣	zhèi xiǎo yàng	160
 這小子	zhèi xiǎo zi	510
-這些錶	zhèi xiē biǎo	340
+這些表	zhèi xiē biǎo	340
 這些廠	zhèi xiē chǎng	240
 這些場	zhèi xiē chǎng	230
 這些車	zhèi xiē chē	500
@@ -2117,7 +2140,7 @@ sort: by_weight
 這些年	zhèi xiē nián	680
 這些票	zhèi xiē piào	330
 這些錢	zhèi xiē qián	600
-這些群	zhèi xiē qún	330
+這些羣	zhèi xiē qún	330
 這些人	zhèi xiē rén	720
 這些是	zhèi xiē shì	600
 這些事	zhèi xiē shì	600
@@ -2244,7 +2267,7 @@ sort: by_weight
 這一層	zhèi yì céng	510
 這一茬	zhèi yì chá	300
 這一場	zhèi yì chǎng	540
-這一齣	zhèi yì chū	410
+這一出	zhèi yì chū	410
 這一處	zhèi yí chù	390
 這一串	zhèi yí chuàn	390
 這一次	zhèi yí cì	700
@@ -2322,7 +2345,7 @@ sort: by_weight
 這一首	zhèi yì shǒu	430
 這一手	zhèi yì shǒu	420
 這意思	zhèi yì sī	430
-這一台	zhèi yì tái	350
+這一臺	zhèi yì tái	350
 這一趟	zhèi yí tàng	440
 這一套	zhèi yí tào	590
 這一天	zhèi yì tiān	670
@@ -2353,9 +2376,9 @@ sort: by_weight
 這一陣	zhèi yí zhèn	370
 這一幀	zhèi yí zhēn	240
 這一支	zhèi yì zhī	430
-這一隻	zhèi yì zhī	400
+這一只	zhèi yì zhī	400
 這一種	zhèi yì zhǒng	540
-這一週	zhèi yì zhōu	520
+這一周	zhèi yì zhōu	520
 這一株	zhèi yì zhū	220
 這一轉	zhèi yí zhuǎn	300
 這一字	zhèi yì zì	250
@@ -2375,14 +2398,14 @@ sort: by_weight
 這在哪	zhèi zài nǎ	170
 這渣男	zhèi zhā nán	190
 這張車	zhèi zhāng chē	80
-這張床	zhèi zhāng chuáng	340
+這張牀	zhèi zhāng chuáng	340
 這張單	zhèi zhāng dān	280
 這張的	zhèi zhāng de	410
 這張好	zhèi zhāng hǎo	260
 這張臉	zhèi zhāng liǎn	470
 這張牌	zhèi zhāng pái	460
 這張圖	zhèi zhāng tú	650
-著這座	zhe zhèi zuò	380
+着這座	zhe zhèi zuò	380
 這陣容	zhèi zhèn róng	360
 這真是	zhèi zhēn shì	590
 這陣子	zhèi zhèn zi	440
@@ -2390,16 +2413,16 @@ sort: by_weight
 這正是	zhèi zhèng shì	610
 這之間	zhèi zhī jiān	420
 這之類	zhèi zhī lèi	180
-這隻貓	zhèi zhǐ māo	490
+這只貓	zhèi zhǐ māo	490
 這只能	zhèi zhǐ néng	460
-這隻鳥	zhèi zhǐ niǎo	370
-這隻票	zhèi zhǐ piào	300
+這只鳥	zhèi zhǐ niǎo	370
+這只票	zhèi zhǐ piào	300
 這之前	zhèi zhī qián	500
 這智商	zhèi zhì shāng	400
 這只是	zhèi zhǐ shì	700
 這只要	zhèi zhǐ yào	270
-這隻鷹	zhèi zhǐ yīng	280
-這隻豬	zhèi zhǐ zhū	300
+這只鷹	zhèi zhǐ yīng	280
+這只豬	zhèi zhǐ zhū	300
 這種啊	zhèi zhǒng a	280
 這種愛	zhèi zhǒng ài	460
 這種表	zhèi zhǒng biǎo	290
@@ -2438,11 +2461,11 @@ sort: by_weight
 這周六	zhèi zhōu liù	390
 這周末	zhèi zhōu mò	490
 這周內	zhèi zhōu nà	240
-這週日	zhèi zhōu rì	340
-這週三	zhèi zhōu sān	290
-這週四	zhèi zhōu sì	280
-這週天	zhèi zhōu tiān	170
-這週五	zhèi zhōu wǔ	380
+這周日	zhèi zhōu rì	340
+這周三	zhèi zhōu sān	290
+這周四	zhèi zhōu sì	280
+這周天	zhèi zhōu tiān	170
+這周五	zhèi zhōu wǔ	380
 這主播	zhèi zhǔ bō	190
 這主意	zhèi zhǔ yì	350
 這專業	zhèi zhuān yè	420
@@ -2464,128 +2487,128 @@ sort: by_weight
 做這事	zuò zhèi shì	380
 做這些	zuò zhèi xiē	540
 做這種	zuò zhèi zhǒng	520
-諳熟	ān shóu	370
-半熟	bàn shóu	490
-保熟	bǎo shóu	410
-背熟	bèi shóu	460
-變熟	biàn shóu	370
-不熟	bù shóu	580
-常熟	cháng shóu	530
-炒熟	chǎo shóu	570
-成熟	chéng shóu	740
-初熟	chū shóu	250
-純熟	chún shóu	490
-醇熟	chún shóu	360
-催熟	cuī shóu	480
-大熟	dà shóu	260
-蛋熟	dàn shóu	380
-讀熟	dú shóu	360
-燉熟	dùn shóu	440
-耳熟	ěr shóu	420
-腐熟	fǔ shóu	430
-剛熟	gāng shóu	360
-搞熟	gǎo shóu	230
-瓜熟	guā shóu	290
-過熟	guò shóu	440
-果熟	guǒ shóu	320
-很熟	hěn shóu	550
-湖熟	hú shóu	380
+諳熟	ān shóu	1
+半熟	bàn shóu	868
+保熟	bǎo shóu	1216
+背熟	bèi shóu	771
+變熟	biàn shóu	937
+不熟	bù shóu	1149
+常熟	cháng shóu	1006
+炒熟	chǎo shóu	609
+成熟	chéng shóu	19557
+初熟	chū shóu	1153
+純熟	chún shóu	794
+醇熟	chún shóu	764
+催熟	cuī shóu	1888
+大熟	dà shóu	1161
+蛋熟	dàn shóu	1010
+讀熟	dú shóu	359
+燉熟	dùn shóu	862
+耳熟	ěr shóu	1478
+腐熟	fǔ shóu	1146
+剛熟	gāng shóu	1948
+搞熟	gǎo shóu	1722
+瓜熟	guā shóu	51
+過熟	guò shóu	736
+果熟	guǒ shóu	706
+很熟	hěn shóu	1154
+湖熟	hú shóu	924
 混熟	hùn shóu	460
-記熟	jì shóu	400
-即熟	jí shóu	390
-較熟	jiào shóu	300
-精熟	jīng shóu	370
-烤熟	kǎo shóu	560
-快熟	kuài shóu	400
-爛熟	làn shóu	490
-老熟	lǎo shóu	360
-臉熟	liǎn shóu	450
-練熟	liàn shóu	400
-兩熟	liǎng shóu	300
-蠻熟	mán shóu	290
-沒熟	méi shóu	410
-面熟	miàn shóu	400
-摸熟	mō shóu	310
-輕熟	qīng shóu	420
-全熟	quán shóu	530
-稔熟	rěn shóu	260
+記熟	jì shóu	1145
+即熟	jí shóu	1115
+較熟	jiào shóu	1140
+精熟	jīng shóu	1118
+烤熟	kǎo shóu	1040
+快熟	kuài shóu	9610
+爛熟	làn shóu	162
+老熟	lǎo shóu	4925
+臉熟	liǎn shóu	1226
+練熟	liàn shóu	1196
+兩熟	liǎng shóu	3308
+蠻熟	mán shóu	526
+沒熟	méi shóu	980
+面熟	miàn shóu	1168
+摸熟	mō shóu	821
+輕熟	qīng shóu	380
+全熟	quán shóu	2020
+稔熟	rěn shóu	1489
 軟熟	ruǎn shóu	380
-殺熟	shā shóu	410
-燒熟	shāo shóu	450
-生熟	shēng shóu	480
-手熟	shǒu shóu	410
+殺熟	shā shóu	12147
+燒熟	shāo shóu	255
+生熟	shēng shóu	247
+手熟	shǒu shóu	1053
 熟啊	shóu a	460
-熟諳	shóu ān	380
-熟背	shóu bèi	380
-熟菜	shóu cài	470
-熟茶	shóu chá	500
-熟成	shóu chéng	460
-熟詞	shóu cí	380
-熟的	shóu de	640
-熟得	shóu de	370
-熟地	shóu dì	480
-熟點	shóu diǎn	280
-熟讀	shóu dú	520
-熟度	shóu dù	480
-熟飯	shóu fàn	340
-熟果	shóu guǒ	330
-熟後	shóu hòu	530
-熟化	shóu huà	400
-熟記	shóu jì	720
-熟筋	shóu jīn	340
-熟客	shóu kè	530
-熟爛	shóu làn	480
-熟了	shóu le	600
-熟練	shóu liàn	280
-熟臉	shóu liǎn	360
+熟諳	shóu ān	182
+熟背	shóu bèi	1581
+熟菜	shóu cài	404
+熟茶	shóu chá	158
+熟成	shóu chéng	956
+熟詞	shóu cí	1280
+熟的	shóu de	1493
+熟得	shóu de	1463
+熟地	shóu dì	61
+熟點	shóu diǎn	1082
+熟讀	shóu dú	10272
+熟度	shóu dù	10242
+熟飯	shóu fàn	42
+熟果	shóu guǒ	1100
+熟後	shóu hòu	1218
+熟化	shóu huà	883
+熟記	shóu jì	1107
+熟筋	shóu jīn	1107
+熟客	shóu kè	712
+熟爛	shóu làn	146
+熟了	shóu le	1802
+熟練	shóu liàn	1134
+熟臉	shóu liǎn	1164
 熟料	shóu liào	450
-熟路	shóu lù	320
-熟絡	shóu luò	480
-熟慮	shóu lǜ	320
+熟路	shóu lù	1177
+熟絡	shóu luò	205
+熟慮	shóu lǜ	1147
 熟女	shóu nǚ	520
-熟皮	shóu pí	220
-熟普	shóu pǔ	370
-熟人	shóu rén	570
-熟稔	shóu rěn	440
-熟肉	shóu ròu	450
-熟食	shóu shí	590
-熟識	shóu shí	530
-熟時	shóu shí	460
-熟手	shóu shǒu	440
-熟水	shóu shuǐ	280
-熟鐵	shóu tiě	370
-熟透	shóu tòu	600
-熟悉	shóu xī	730
-熟習	shóu xí	380
-熟蝦	shóu xiā	330
-熟用	shóu yòng	350
-熟油	shóu yóu	390
-熟語	shóu yǔ	390
-熟知	shóu zhī	570
-熟製	shóu zhì	350
-睡熟	shuì shóu	370
-太熟	tài shóu	430
-挺熟	tǐng shóu	370
-晚熟	wǎn shóu	410
-玩熟	wán shóu	330
-完熟	wán shóu	270
-未熟	wèi shóu	430
-我熟	wǒ shóu	340
-嫻熟	xián shóu	560
-相熟	xiāng shóu	480
-眼熟	yǎn shóu	480
-一熟	yì shóu	320
-用熟	yòng shóu	350
-圓熟	yuán shóu	330
-再熟	zài shóu	330
-早熟	zǎo shóu	510
-炸熟	zhà shóu	450
-蒸熟	zhēng shóu	560
-至熟	zhì shóu	520
-煮熟	zhǔ shóu	680
-最熟	zuì shóu	270
+熟皮	shóu pí	3895
+熟普	shóu pǔ	822
+熟人	shóu rén	903
+熟稔	shóu rěn	873
+熟肉	shóu ròu	2287
+熟食	shóu shí	1553
+熟識	shóu shí	1523
+熟時	shóu shí	1493
+熟手	shóu shǒu	1083
+熟水	shóu shuǐ	2510
+熟鐵	shóu tiě	632
+熟透	shóu tòu	8313
+熟悉	shóu xī	901
+熟習	shóu xí	871
+熟蝦	shóu xiā	1380
+熟用	shóu yòng	853
+熟油	shóu yóu	1064
+熟語	shóu yǔ	1153
+熟知	shóu zhī	1203
+熟製	shóu zhì	1173
+睡熟	shuì shóu	1380
+太熟	tài shóu	1411
+挺熟	tǐng shóu	934
+晚熟	wǎn shóu	324
+玩熟	wán shóu	294
+完熟	wán shóu	264
+未熟	wèi shóu	1107
+我熟	wǒ shóu	1474
+嫺熟	xián shóu	1237
+相熟	xiāng shóu	1044
+眼熟	yǎn shóu	1146
+一熟	yì shóu	1506
+用熟	yòng shóu	12213
+圓熟	yuán shóu	1146
+再熟	zài shóu	1384
+早熟	zǎo shóu	11647
+炸熟	zhà shóu	208
+蒸熟	zhēng shóu	1128
+至熟	zhì shóu	1304
+煮熟	zhǔ shóu	1178
+最熟	zuì shóu	976
 八成熟	bā chéng shóu	230
-八分熟	bā fēn shóu	270
+八分熟	bā fēn shóu	565
 把熟睡	bǎ shóu shuì	100
 把蒸熟	bǎ zhēng shóu	100
 把煮熟	bǎ zhǔ shóu	140
@@ -2595,41 +2618,41 @@ sort: by_weight
 半熟蛋	bàn shóu dàn	180
 半熟的	bàn shóu de	210
 半熟練	bàn shóu liàn	120
-半熟人	bàn shóu rén	150
+半熟人	bàn shóu rén	1395
 半熟時	bàn shóu shí	50
-被催熟	bèi cuī shóu	130
+被催熟	bèi cuī shóu	390
 被烤熟	bèi kǎo shóu	140
-背熟了	bèi shóu le	170
+背熟了	bèi shóu le	655
 被煮熟	bèi zhǔ shóu	120
-比較熟	bǐ jiào shóu	10
+比較熟	bǐ jiào shóu	938
 變成熟	biàn chéng shóu	190
 並不熟	bìng bù shóu	160
 不成熟	bù chéng shóu	310
 不催熟	bù cuī shóu	80
 不熟啊	bù shóu a	130
-不熟吧	bù shóu ba	160
-不熟練	bù shóu liàn	250
+不熟吧	bù shóu ba	272
+不熟練	bù shóu liàn	822
 不熟悉	bù shóu xī	320
-不太熟	bú tài shóu	230
-不嫻熟	bù xián shóu	150
-不眼熟	bù yǎn shóu	90
-菜熟了	cài shóu le	100
+不太熟	bú tài shóu	4
+不嫺熟	bù xián shóu	462
+不眼熟	bù yǎn shóu	20
+菜熟了	cài shóu le	588
 常熟的	cháng shóu de	190
-常熟話	cháng shóu huà	100
-常熟路	cháng shóu lù	190
+常熟話	cháng shóu huà	155
+常熟路	cháng shóu lù	11
 常熟人	cháng shóu rén	170
-常熟市	cháng shóu shì	300
+常熟市	cháng shóu shì	223
 常熟縣	cháng shóu xiàn	180
 常熟有	cháng shóu yǒu	60
 常熟站	cháng shóu zhàn	80
 炒不熟	chǎo bù shóu	130
 炒熟後	chǎo shóu hòu	220
 炒熟了	chǎo shóu le	160
-成熟啊	chéng shóu a	150
-成熟吧	chéng shóu ba	150
+成熟啊	chéng shóu a	372
+成熟吧	chéng shóu ba	412
 成熟的	chéng shóu de	420
 成熟點	chéng shóu diǎn	190
-成熟度	chéng shóu dù	280
+成熟度	chéng shóu dù	1979
 成熟範	chéng shóu fàn	50
 成熟風	chéng shóu fēng	140
 成熟感	chéng shóu gǎn	170
@@ -2638,7 +2661,7 @@ sort: by_weight
 成熟後	chéng shóu hòu	260
 成熟化	chéng shóu huà	180
 成熟季	chéng shóu jì	120
-成熟了	chéng shóu le	340
+成熟了	chéng shóu le	1822
 成熟臉	chéng shóu liǎn	60
 成熟林	chéng shóu lín	70
 成熟美	chéng shóu měi	140
@@ -2646,45 +2669,45 @@ sort: by_weight
 成熟男	chéng shóu nán	170
 成熟女	chéng shóu nǚ	150
 成熟期	chéng shóu qí	260
-成熟前	chéng shóu qián	160
+成熟前	chéng shóu qián	272
 成熟區	chéng shóu qū	100
-成熟人	chéng shóu rén	120
+成熟人	chéng shóu rén	39
 成熟乳	chéng shóu rǔ	120
-成熟時	chéng shóu shí	260
+成熟時	chéng shóu shí	430
 成熟體	chéng shóu tǐ	90
 成熟些	chéng shóu xiē	170
 成熟性	chéng shóu xìng	240
 成熟型	chéng shóu xíng	190
 成熟早	chéng shóu zǎo	130
 成熟中	chéng shóu zhōng	150
-吃熟食	chī shóu shí	170
-初熟的	chū shóu de	90
+喫熟食	chī shóu shí	170
+初熟的	chū shóu de	1272
 從熟睡	cóng shóu shuì	50
 從熟悉	cóng shóu xī	30
 催熟劑	cuī shóu jì	190
 大家熟	dà jiā shóu	90
 到常熟	dào cháng shóu	240
-的熟了	de shóu le	170
-等熟了	děng shóu le	190
+的熟了	de shóu le	177
+等熟了	děng shóu le	277
 地不熟	dì bù shóu	480
 東京熟	dōng jīng shóu	50
 都不熟	dōu bù shóu	240
 都成熟	dōu chéng shóu	150
-都熟了	dōu shóu le	90
+都熟了	dōu shóu le	199
 都熟悉	dōu shóu xī	210
 都早熟	dōu zǎo shóu	80
-多熟了	duō shóu le	180
+多熟了	duō shóu le	794
 多熟期	duō shóu qī	230
 多熟悉	duō shóu xī	170
 二回熟	èr huí shóu	160
 耳熟啊	ěr shóu a	140
-耳熟吧	ěr shóu ba	170
+耳熟吧	ěr shóu ba	304
 耳熟了	ěr shóu le	140
-非常熟	fēi cháng shóu	160
-分熟吧	fēn shóu ba	160
-分熟了	fēn shóu le	160
+非常熟	fēi cháng shóu	637
+分熟吧	fēn shóu ba	356
+分熟了	fēn shóu le	2874
 幹熟麼	gàn shóu me	80
-搞熟了	gǎo shóu le	80
+搞熟了	gǎo shóu le	804
 更成熟	gèng chéng shóu	240
 更熟練	gèng shóu liàn	170
 更熟悉	gèng shóu xī	220
@@ -2693,11 +2716,11 @@ sort: by_weight
 過熟了	guò shóu le	170
 果熟期	guǒ shóu qī	120
 過熟期	guò shóu qī	80
-還不熟	hái bù shóu	180
+還不熟	hái bù shóu	161
 還算熟	hái suàn shóu	100
 好成熟	hǎo chéng shóu	70
 好耳熟	hǎo ěr shóu	120
-好面熟	hǎo miàn shóu	140
+好麵熟	hǎo miàn shóu	140
 好熟悉	hǎo shóu xī	190
 好眼熟	hǎo yǎn shóu	190
 很成熟	hěn chéng shóu	250
@@ -2709,55 +2732,55 @@ sort: by_weight
 很熟但	hěn shóu dàn	300
 很熟很	hěn shóu hěn	350
 很熟了	hěn shóu le	240
-很熟練	hěn shóu liàn	240
+很熟練	hěn shóu liàn	416
 很熟絡	hěn shóu luò	300
 很熟稔	hěn shóu rěn	340
-很熟識	hěn shóu shí	220
+很熟識	hěn shóu shí	484
 很熟悉	hěn shóu xī	290
-很嫻熟	hěn xián shóu	320
+很嫺熟	hěn xián shóu	754
 很眼熟	hěn yǎn shóu	80
 很早熟	hěn zǎo shóu	180
 後熟期	hòu shóu qī	80
-回常熟	huí cháng shóu	240
-會熟練	huì shóu liàn	200
+回常熟	huí cháng shóu	7
+會熟練	huì shóu liàn	750
 混臉熟	hùn liǎn shóu	170
 混熟吧	hùn shóu ba	180
 混熟了	hùn shóu le	170
 混眼熟	hùn yǎn shóu	100
 幾成熟	jǐ chéng shóu	190
 幾分熟	jǐ fēn shóu	260
-記熟了	jì shóu le	160
-將熟時	jiāng shóu shí	270
+記熟了	jì shóu le	570
+將熟時	jiāng shóu shí	421
 將熟睡	jiāng shóu shuì	240
-將蒸熟	jiāng zhēng shóu	280
-將煮熟	jiāng zhǔ shóu	130
+將蒸熟	jiāng zhēng shóu	516
+將煮熟	jiāng zhǔ shóu	376
 較成熟	jiào chéng shóu	180
 九成熟	jiǔ chéng shóu	170
-九分熟	jiǔ fēn shóu	130
-就熟了	jiù shóu le	160
+九分熟	jiǔ fēn shóu	1078
+就熟了	jiù shóu le	621
 就熟時	jiù shóu shí	310
 就熟悉	jiù shóu xī	150
-看熟了	kàn shóu le	180
+看熟了	kàn shóu le	367
 烤熟後	kǎo shóu hòu	200
 烤熟了	kǎo shóu le	160
-可成熟	kě chéng shóu	130
+可成熟	kě chéng shóu	988
 可熟了	kě shóu le	90
 可熟悉	kě shóu xī	130
-快熟了	kuài shóu le	140
-快熟麵	kuài shóu miàn	100
-快熟時	kuài shóu shí	120
+快熟了	kuài shóu le	493
+快熟面	kuài shóu miàn	100
+快熟時	kuài shóu shí	650
 來常熟	lái cháng shóu	240
-來熟了	lái shóu le	170
+來熟了	lái shóu le	458
 爛熟時	làn shóu shí	480
 老熟客	lǎo shóu kè	140
 老熟人	lǎo shóu rén	210
-臉熟吧	liǎn shóu ba	190
-臉熟了	liǎn shóu le	170
-練熟了	liàn shóu le	160
+臉熟吧	liǎn shóu ba	462
+臉熟了	liǎn shóu le	420
+練熟了	liàn shóu le	390
 兩次熟	liǎng cì shóu	50
 六分熟	liù fēn shóu	160
 路不熟	lù bù shóu	160
-賣熟食	mài shóu shí	170
+賣熟食	mài shóu shí	95
 沒炒熟	méi chǎo shóu	90
 沒成熟	méi chéng shóu	130
 沒烤熟	méi kǎo shóu	440
@@ -2768,23 +2791,23 @@ sort: by_weight
 沒熟人	méi shóu rén	500
 沒熟似	méi shóu sì	230
 沒熟透	méi shóu tòu	60
-沒有熟	méi yǒu shóu	390
+沒有熟	méi yǒu shóu	108
 沒蒸熟	méi zhēng shóu	120
 沒煮熟	méi zhǔ shóu	110
 面熟吧	miàn shóu ba	190
-摸熟了	mō shóu le	170
-能成熟	néng chéng shóu	120
+摸熟了	mō shóu le	689
+能成熟	néng chéng shóu	3863
 能熟練	néng shóu liàn	240
-你不熟	nǐ bù shóu	100
-你成熟	nǐ chéng shóu	140
-你很熟	nǐ hěn shóu	300
-你熟練	nǐ shóu liàn	130
+你不熟	nǐ bù shóu	477
+你成熟	nǐ chéng shóu	718
+你很熟	nǐ hěn shóu	488
+你熟練	nǐ shóu liàn	370
 你熟人	nǐ shóu rén	100
 你熟睡	nǐ shóu shuì	160
 你熟悉	nǐ shóu xī	200
-你熟知	nǐ shóu zhī	90
+你熟知	nǐ shóu zhī	578
 你眼熟	nǐ yǎn shóu	180
-你最熟	nǐ zuì shóu	110
+你最熟	nǐ zuì shóu	466
 您熟悉	nín shóu xī	170
 弄熟了	nòng shóu le	170
 偏成熟	piān chéng shóu	170
@@ -2796,94 +2819,94 @@ sort: by_weight
 輕熟齡	qīng shóu líng	140
 輕熟男	qīng shóu nán	130
 輕熟女	qīng shóu nǚ	220
-去常熟	qù cháng shóu	240
+去常熟	qù cháng shóu	434
 去熟悉	qù shóu xī	180
 全熟吧	quán shóu ba	180
-全熟了	quán shóu le	170
+全熟了	quán shóu le	552
 人不熟	rén bù shóu	100
 人熟人	rén shóu rén	40
-容易熟	róng yì shóu	190
-三分熟	sān fēn shóu	190
-燒熟了	shāo shóu le	160
+容易熟	róng yì shóu	547
+三分熟	sān fēn shóu	628
+燒熟了	shāo shóu le	502
 生變熟	shēng biàn shóu	90
 生吃熟	shēng chī shóu	160
-生地熟地	shēng shóu dì	160
+生熟地	shēng shóu dì	160
 是常熟	shì cháng shóu	130
 十成熟	shí chéng shóu	130
 十分熟	shí fēn shóu	130
 是熟麼	shì shóu me	100
-熟不熟	shóu bù shóu	180
+熟不熟	shóu bù shóu	312
 熟菜油	shóu cài yóu	150
 熟吃好	shóu chī hǎo	130
 熟大黃	shóu dài huáng	70
 熟蛋黃	shóu dàn huáng	150
-熟當時	shóu dāng shí	100
-熟的吧	shóu de ba	160
-熟得快	shóu de kuài	170
-熟的了	shóu de le	140
+熟當時	shóu dāng shí	629
+熟的吧	shóu de ba	283
+熟得快	shóu de kuài	14
+熟的了	shóu de le	356
 熟地黃	shóu dì huáng	210
-熟讀了	shóu dú le	150
+熟讀了	shóu dú le	448
 熟歸熟	shóu guī shóu	110
 熟過頭	shóu guò tóu	150
-熟花生	shóu huā shēng	170
+熟花生	shóu huā shēng	295
 熟火腿	shóu huǒ tuǐ	170
-熟雞蛋	shóu jī dàn	210
-熟客吧	shóu kè ba	170
+熟雞蛋	shóu jī dàn	484
+熟客吧	shóu kè ba	218
 熟爛時	shóu làn shí	70
-熟了吧	shóu le ba	230
+熟了吧	shóu le ba	94
 熟了後	shóu le hòu	170
-熟了嗎	shóu le ma	100
+熟了嗎	shóu le ma	42
 熟了麼	shóu le me	80
-熟了沒	shóu le méi	110
+熟了沒	shóu le méi	11
 熟梨糕	shóu lí gāo	120
 熟練啊	shóu liàn a	140
-熟練吧	shóu liàn ba	150
-熟練地	shóu liàn de	340
-熟練的	shóu liàn de	290
+熟練吧	shóu liàn ba	277
+熟練地	shóu liàn de	1593
+熟練的	shóu liàn de	1563
 熟練度	shóu liàn dù	260
 熟練工	shóu liàn gōng	210
 熟練後	shóu liàn hòu	210
 熟練活	shóu liàn huó	10
-熟練了	shóu liàn le	150
+熟練了	shóu liàn le	1010
 熟練那	shóu liàn nà	60
-熟練時	shóu liàn shí	170
-熟練性	shóu liàn xìng	110
-熟練於	shóu liàn yú	90
+熟練時	shóu liàn shí	444
+熟練性	shóu liàn xìng	315
+熟練於	shóu liàn yú	606
 熟練者	shóu liàn zhě	140
-熟齡肌	shóu líng jī	130
-熟絡了	shóu luò le	150
-熟沒熟	shóu méi shóu	120
+熟齡肌	shóu líng jī	367
+熟絡了	shóu luò le	488
+熟沒熟	shóu méi shóu	29
 熟米飯	shóu mǐ fàn	180
 熟面孔	shóu miàn kǒng	200
 熟牛排	shóu niú pái	160
-熟牛肉	shóu niú ròu	190
+熟牛肉	shóu niú ròu	858
 熟女網	shóu nǚ wǎng	170
 熟女系	shóu nǚ xì	130
 熟螃蟹	shóu páng xiè	100
 熟朋友	shóu péng yǒu	110
-熟蘋果	shóu píng guǒ	150
-熟起來	shóu qǐ lái	170
+熟蘋果	shóu píng guǒ	430
+熟起來	shóu qǐ lái	1672
 熟人啊	shóu rén a	130
-熟人吧	shóu rén ba	160
+熟人吧	shóu rén ba	264
 熟人帶	shóu rén dài	150
 熟人多	shóu rén duō	140
-熟人間	shóu rén jiān	190
-熟稔了	shóu rěn le	140
-熟人了	shóu rén le	140
-熟人們	shóu rén men	100
+熟人間	shóu rén jiān	552
+熟稔了	shóu rěn le	502
+熟人了	shóu rén le	472
+熟人們	shóu rén men	660
 熟人圈	shóu rén quān	160
 熟三七	shóu sān qī	100
 樹上熟	shù shàng shóu	80
-熟食吧	shóu shí ba	170
-熟食店	shóu shí diàn	280
-熟石膏	shóu shí gāo	130
+熟食吧	shóu shí ba	20
+熟食店	shóu shí diàn	67
+熟石膏	shóu shí gāo	596
 熟食櫃	shóu shí guì	80
 熟石灰	shóu shí huī	170
-熟識了	shóu shí le	150
-熟食類	shóu shí lèi	150
-熟食品	shóu shí pǐn	170
+熟識了	shóu shí le	408
+熟食類	shóu shí lèi	416
+熟食品	shóu shí pǐn	574
 熟食區	shóu shí qū	180
-熟熟的	shóu shóu de	100
+熟熟的	shóu shóu de	485
 熟睡的	shóu shuì de	290
 熟睡了	shóu shuì le	150
 熟睡時	shóu shuì shí	80
@@ -2896,7 +2919,7 @@ sort: by_weight
 熟悉啊	shóu xī a	180
 熟悉吧	shóu xī ba	120
 熟悉不	shóu xī bù	170
-熟悉的	shóu xī de	370
+熟悉的	shóu xī de	583
 熟悉度	shóu xī dù	210
 熟悉感	shóu xī gǎn	210
 熟悉很	shóu xī hěn	80
@@ -2908,102 +2931,102 @@ sort: by_weight
 熟悉時	shóu xī shí	120
 熟悉他	shóu xī tā	170
 熟悉下	shóu xī xià	180
-熟一個	shóu yí gè	90
-熟一些	shóu yì xiē	10
+熟一個	shóu yí gè	240
+熟一些	shóu yì xiē	560
 熟語料	shóu yǔ liào	760
-熟玉米	shóu yù mǐ	110
-熟知的	shóu zhī de	310
+熟玉米	shóu yù mǐ	552
+熟知的	shóu zhī de	1168
 熟芝麻	shóu zhī má	210
 熟製品	shóu zhì pǐn	110
 熟豬油	shóu zhū yóu	210
 睡不熟	shuì bù shóu	100
-睡熟了	shuì shóu le	160
+睡熟了	shuì shóu le	336
 四書熟	sì shū shóu	20
 所熟悉	suǒ shóu xī	220
 所熟知	suǒ shóu zhī	290
-他不熟	tā bù shóu	110
-他成熟	tā chéng shóu	200
-他很熟	tā hěn shóu	70
+他不熟	tā bù shóu	20
+他成熟	tā chéng shóu	704
+他很熟	tā hěn shóu	434
 他混熟	tā hùn shóu	80
-他熟讀	tā shóu dú	170
-他熟練	tā shóu liàn	190
+他熟讀	tā shóu dú	570
+他熟練	tā shóu liàn	542
 他熟絡	tā shóu luò	90
-他熟稔	tā shóu rěn	100
-他熟識	tā shóu shí	70
+他熟稔	tā shóu rěn	390
+他熟識	tā shóu shí	808
 他熟睡	tā shóu shuì	160
 他熟悉	tā shóu xī	120
-他熟知	tā shóu zhī	70
+他熟知	tā shóu zhī	848
 他睡熟	tā shuì shóu	250
-他太熟	tā tài shóu	160
-他嫻熟	tā xián shóu	120
-他相熟	tā xiāng shóu	70
+他太熟	tā tài shóu	321
+他嫺熟	tā xián shóu	120
+他相熟	tā xiāng shóu	321
 他眼熟	tā yǎn shóu	120
-他早熟	tā zǎo shóu	150
+他早熟	tā zǎo shóu	624
 太成熟	tài chéng shóu	200
-太熟了	tài shóu le	200
+太熟了	tài shóu le	416
 太熟練	tài shóu liàn	150
 太熟悉	tài shóu xī	250
 太早熟	tài zǎo shóu	110
 燙熟後	tàng shóu hòu	170
-燙熟了	tàng shóu le	130
+燙熟了	tàng shóu le	524
 特眼熟	tè yǎn shóu	80
 挺成熟	tǐng chéng shóu	140
-托熟人	tuō shóu rén	160
+託熟人	tuō shóu rén	160
 晚熟的	wǎn shóu de	150
 玩熟了	wán shóu le	180
-晚熟期	wǎn shóu qī	230
-餵不熟	wèi bù shóu	120
+晚熟期	wǎn shóu qī	169
+喂不熟	wèi bù shóu	120
 未成熟	wèi chéng shóu	220
-未熟的	wèi shóu de	170
+未熟的	wèi shóu de	1478
 未熟透	wèi shóu tòu	170
 未煮熟	wèi zhǔ shóu	210
-我不熟	wǒ bù shóu	170
-我成熟	wǒ chéng shóu	150
-我都熟	wǒ dōu shóu	200
-我很熟	wǒ hěn shóu	90
-我們熟	wǒ men shóu	180
+我不熟	wǒ bù shóu	511
+我成熟	wǒ chéng shóu	745
+我都熟	wǒ dōu shóu	642
+我很熟	wǒ hěn shóu	786
+我們熟	wǒ men shóu	619
 我熟得	wǒ shóu de	80
 我熟的	wǒ shóu de	70
-我熟練	wǒ shóu liàn	120
-我熟識	wǒ shóu shí	120
+我熟練	wǒ shóu liàn	462
+我熟識	wǒ shóu shí	242
 我熟睡	wǒ shóu shuì	110
-我熟悉	wǒ shóu xī	130
-我熟知	wǒ shóu zhī	130
+我熟悉	wǒ shóu xī	349
+我熟知	wǒ shóu zhī	686
 我睡熟	wǒ shuì shóu	90
-我相熟	wǒ xiāng shóu	50
+我相熟	wǒ xiāng shóu	848
 我眼熟	wǒ yǎn shóu	110
-我早熟	wǒ zǎo shóu	140
+我早熟	wǒ zǎo shóu	588
 五成熟	wǔ chéng shóu	200
 五分熟	wǔ fēn shóu	220
 顯成熟	xiǎn chéng shóu	150
-嫻熟地	xián shóu dì	200
-嫻熟了	xián shóu le	140
+嫺熟地	xián shóu dì	200
+嫺熟了	xián shóu le	560
 先熟悉	xiān shóu xī	200
-相熟了	xiāng shóu le	140
+相熟了	xiāng shóu le	1200
 小成熟	xiǎo chéng shóu	90
 性成熟	xìng chéng shóu	230
 性早熟	xìng zǎo shóu	250
 眼熟啊	yǎn shóu a	140
 眼熟吧	yǎn shóu ba	170
-眼熟了	yǎn shóu le	140
+眼熟了	yǎn shóu le	76
 眼熟嗎	yǎn shóu ma	170
 養不熟	yǎng bù shóu	140
-也不熟	yě bù shóu	230
-也熟了	yě shóu le	80
-也熟悉	yě shóu xī	160
-燙熟	tàng shóu	462
+也不熟	yě bù shóu	830
+也熟了	yě shóu le	606
+也熟悉	yě shóu xī	470
+燙熟	tàng shóu	990
 已成熟	yǐ chéng shóu	190
 一鍋熟	yì guō shóu	100
 異熟果	yì shóu guǒ	130
-異熟識	yì shóu shí	100
+異熟識	yì shóu shí	2274
 用熟了	yòng shóu le	180
 又不熟	yòu bù shóu	160
-有熟人	yǒu shóu rén	230
+有熟人	yǒu shóu rén	286
 園梅熟	yuán méi shóu	10
-在常熟	zài cháng shóu	240
+在常熟	zài cháng shóu	668
 在成熟	zài chéng shóu	250
 再成熟	zài chéng shóu	150
-再熟了	zài shóu le	170
+再熟了	zài shóu le	480
 再熟悉	zài shóu xī	250
 早成熟	zǎo chéng shóu	100
 早熟吧	zǎo shóu ba	190
@@ -3011,21 +3034,21 @@ sort: by_weight
 早熟禾	zǎo shóu hé	200
 早熟梨	zǎo shóu lí	100
 早熟性	zǎo shóu xìng	110
-這麼熟	zhè me shóu	170
+這麼熟	zhè me shóu	812
 真不熟	zhēn bù shóu	90
 蒸不熟	zhēng bù shóu	120
 蒸熟的	zhēng shóu de	240
 蒸熟後	zhēng shóu hòu	230
-蒸熟了	zhēng shóu le	160
+蒸熟了	zhēng shóu le	583
 中晚熟	zhōng wǎn shóu	110
 中早熟	zhōng zǎo shóu	50
 煮不熟	zhǔ bù shóu	210
 煮熟後	zhǔ shóu hòu	290
-煮熟了	zhǔ shóu le	240
-煮熟時	zhǔ shóu shí	80
+煮熟了	zhǔ shóu le	475
+煮熟時	zhǔ shóu shí	340
 裝成熟	zhuāng chéng shóu	140
 自來熟	zì lái shóu	210
-自然熟	zì rán shóu	130
+自然熟	zì rán shóu	416
 最成熟	zuì chéng shóu	40
 最熟的	zuì shóu de	160
 最熟悉	zuì shóu xī	230
@@ -3153,7 +3176,7 @@ sort: by_weight
 送誰	sòng shéi	300
 挑誰	tiāo shéi	220
 聽誰	tīng shéi	330
-為誰	wéi shéi	530
+爲誰	wéi shéi	530
 問誰	wèn shéi	460
 向誰	xiàng shéi	470
 像誰	xiàng shéi	400
@@ -3175,7 +3198,7 @@ sort: by_weight
 愛上誰	ài shàng shéi	340
 愛誰啊	ài shéi a	110
 愛誰誰	ài shéi shéi	420
-愛著誰	ài zhe shéi	280
+愛着誰	ài zhe shéi	280
 把誰誰	bǎ shéi shéi	110
 幫助誰	bāng zhù shéi	260
 比誰差	bǐ shéi chà	270
@@ -3193,7 +3216,7 @@ sort: by_weight
 打給誰	dǎ gěi shéi	280
 代表誰	dài biǎo shéi	290
 但誰也	dàn shéi yě	440
-到底是誰	dào dǐ shéi	550
+到底誰	dào dǐ shéi	550
 到誰了	dào shéi le	310
 爹是誰	diē shì shéi	240
 都是誰	dōu shì shéi	450
@@ -3234,7 +3257,7 @@ sort: by_weight
 跟誰姓	gēn shéi xìng	320
 跟誰也	gēn shéi yě	160
 跟誰走	gēn shéi zǒu	290
-跟著誰	gēn zhe shéi	260
+跟着誰	gēn zhe shéi	260
 更像誰	gèng xiàng shéi	130
 勾引誰	gōu yǐn shéi	190
 關於誰	guān yú shéi	280
@@ -3423,7 +3446,7 @@ sort: by_weight
 誰的臉	shéi de liǎn	350
 誰的夢	shéi de mèng	210
 誰的錢	shéi de qián	420
-誰的群	shéi de qún	150
+誰的羣	shéi de qún	150
 誰的人	shéi de rén	230
 誰的事	shéi de shì	220
 誰的手	shéi de shǒu	320
@@ -3464,7 +3487,7 @@ sort: by_weight
 誰敢把	shéi gǎn bǎ	230
 誰敢不	shéi gǎn bù	250
 誰幹的	shéi gàn de	420
-誰乾淨	shéi gān jìng	70
+誰幹淨	shéi gān jìng	70
 誰敢攔	shéi gǎn lán	170
 誰敢娶	shéi gǎn qǔ	240
 誰敢惹	shéi gǎn rě	270
@@ -3585,7 +3608,7 @@ sort: by_weight
 誰來演	shéi lái yǎn	350
 誰來養	shéi lái yǎng	230
 誰來找	shéi lái zhǎo	180
-誰來著	shéi lái zhe	290
+誰來着	shéi lái zhe	290
 誰來做	shéi lái zuò	390
 誰了麼	shéi le me	150
 誰了呢	shéi le ne	200
@@ -3608,7 +3631,7 @@ sort: by_weight
 誰能把	shéi néng bǎ	410
 誰能保	shéi néng bǎo	110
 誰能比	shéi néng bǐ	340
-誰能吃	shéi néng chī	180
+誰能喫	shéi néng chī	180
 誰能帶	shéi néng dài	190
 誰能敵	shéi néng dí	230
 誰能懂	shéi néng dǒng	320
@@ -3690,11 +3713,11 @@ sort: by_weight
 誰投資	shéi tóu zī	290
 誰玩過	shéi wán guò	280
 誰玩誰	shéi wán shéi	280
-誰為你	shéi wéi nǐ	290
-誰為誰	shéi wéi shéi	280
-誰為我	shéi wèi wǒ	250
+誰爲你	shéi wéi nǐ	290
+誰爲誰	shéi wéi shéi	280
+誰爲我	shéi wèi wǒ	250
 誰維修	shéi wéi xiū	130
-誰為主	shéi wéi zhǔ	230
+誰爲主	shéi wéi zhǔ	230
 誰問的	shéi wèn de	230
 誰污染	shéi wū rǎn	320
 誰侮辱	shéi wǔ rǔ	160
@@ -3750,7 +3773,7 @@ sort: by_weight
 誰用過	shéi yòng guò	460
 誰擁有	shéi yōng yǒu	410
 誰有病	shéi yǒu bìng	230
-誰有髮	shéi yǒu fā	140
+誰有發	shéi yǒu fā	140
 誰有空	shéi yǒu kòng	350
 誰有理	shéi yǒu lǐ	320
 誰又能	shéi yòu néng	480
@@ -3829,12 +3852,12 @@ sort: by_weight
 投靠誰	tóu kào shéi	210
 忘記誰	wàng jì shéi	210
 忘了誰	wàng le shéi	280
-為了誰	wèi le shéi	430
-為誰開	wéi shéi kāi	260
-為誰留	wéi shéi liú	160
-為誰落	wéi shéi luò	180
-為誰忙	wéi shéi máng	240
-為誰去	wéi shéi qù	90
+爲了誰	wèi le shéi	430
+爲誰開	wéi shéi kāi	260
+爲誰留	wéi shéi liú	160
+爲誰落	wéi shéi luò	180
+爲誰忙	wéi shéi máng	240
+爲誰去	wéi shéi qù	90
 問是誰	wèn shì shéi	350
 問誰來	wèn shéi lái	90
 問誰能	wèn shéi néng	220
@@ -3860,14 +3883,14 @@ sort: by_weight
 向誰訴	xiàng shéi sù	210
 相信誰	xiāng xìn shéi	380
 想要誰	xiǎng yào shéi	190
-想著誰	xiǎng zhe shéi	250
+想着誰	xiǎng zhe shéi	250
 寫給誰	xiě gěi shéi	310
 需要誰	xū yào shéi	250
 選擇誰	xuǎn zé shéi	440
 也沒誰	yě méi shéi	300
 依靠誰	yī kào shéi	320
 依賴誰	yī lài shéi	190
-因為誰	yīn wèi shéi	420
+因爲誰	yīn wèi shéi	420
 用誰的	yòng shéi de	310
 又被誰	yòu bèi shéi	220
 又是誰	yòu shì shéi	470
@@ -3966,7 +3989,7 @@ sort: by_weight
 跟誰倆呢	gēn shéi liǎ ne	22
 跟誰聊呢	gēn shéi liáo ne	8
 跟誰有仇	gēn shéi yǒu chóu	29
-更為誰羞	gēng wéi shéi xiū	6
+更爲誰羞	gēng wéi shéi xiū	6
 更喜歡誰	gèng xǐ huān shéi	46
 更有誰知	gèng yǒu shéi zhī	1
 共誰同航	gòng shéi tóng háng	28
@@ -4017,7 +4040,7 @@ sort: by_weight
 可誰知道	kě shéi zhī dào	42
 離不開誰	lí bù kāi shéi	1
 簾影誰搖	lián yǐng shéi yáo	6
-鹿死誰手	lù sǐ shéi shǒu	51
+鹿死誰手	lù sǐ shéi shǒu	296
 賣給了誰	mài gěi le shéi	30
 賣給誰了	mài gěi shéi le	1
 滿庭誰掃	mǎn tíng shéi sǎo	1
@@ -4075,10 +4098,10 @@ sort: by_weight
 認不出誰	rèn bù chū shéi	8
 人誰無過	rén shéi wú guò	33
 人在誰邊	rén zài shéi biān	12
-捨你其誰	shě nǐ qí shéi	1
-捨他其誰	shě tā qí shéi	25
+舍你其誰	shě nǐ qí shéi	1
+舍他其誰	shě tā qí shéi	25
 舍我復誰	shě wǒ fù shéi	1
-捨我其誰	shě wǒ qí shéi	54
+舍我其誰	shě wǒ qí shéi	54
 生父是誰	shēng fù shì shéi	27
 生母是誰	shēng mǔ shì shéi	24
 師父是誰	shī fu shì shéi	23
@@ -4192,10 +4215,10 @@ sort: by_weight
 誰更優秀	shéi gèng yōu xiù	38
 誰更重要	shéi gèng zhòng yào	41
 誰攻誰受	shéi gōng shéi shòu	25
-誰管得著	shéi guǎn de zháo	20
+誰管得着	shéi guǎn de zháo	20
 誰規定的	shéi guī dìng de	42
 誰還打牌	shéi hái dǎ pái	1
-誰還以為	shéi hái yǐ wéi	4
+誰還以爲	shéi hái yǐ wéi	4
 誰和你在	shéi hé nǐ zài	1
 誰和我開	shéi hé wǒ kāi	1
 誰和我約	shéi hé wǒ yuē	1
@@ -4291,7 +4314,7 @@ sort: by_weight
 誰誰誰去	shéi shéi shéi qù	23
 誰誰誰誰	shéi shéi shéi shéi	25
 誰說的啊	shéi shuō de a	29
-誰說的瞭	shéi shuō de le	35
+誰說的了	shéi shuō de le	35
 誰說的清	shéi shuō de qīng	1
 誰說的呀	shéi shuō de ya	13
 誰說謊了	shéi shuō huǎng le	4
@@ -4304,8 +4327,8 @@ sort: by_weight
 誰他媽信	shéi tā mā xìn	6
 誰偷了我	shéi tōu le wǒ	27
 誰玩得過	shéi wán dé guò	13
-誰為情種	shéi wéi qíng zhǒng	21
-誰為為之	shéi wéi wéi zhī	6
+誰爲情種	shéi wéi qíng zhǒng	21
+誰爲爲之	shéi wéi wéi zhī	6
 誰問旗亭	shéi wèn qí tíng	1
 誰我喜歡	shéi wǒ xǐ huān	4
 誰喜歡誰	shéi xǐ huān shéi	33
@@ -4340,7 +4363,7 @@ sort: by_weight
 誰與爭風	shéi yǔ zhēng fēng	13
 誰於爭鋒	shéi yú zhēng fēng	1
 誰與爭功	shéi yǔ zhēng gōng	6
-誰願為首	shéi yuàn wéi shǒu	8
+誰願爲首	shéi yuàn wéi shǒu	8
 誰在背後	shéi zài bèi hòu	32
 誰在北京	shéi zài běi jīng	21
 誰在唱歌	shéi zài chàng gē	1
@@ -4353,7 +4376,7 @@ sort: by_weight
 誰在濟南	shéi zài jǐ nán	1
 誰在家的	shéi zài jiā de	6
 誰在浪費	shéi zài làng fèi	1
-誰在裡面	shéi zài lǐ miàn	21
+誰在裏面	shéi zài lǐ miàn	21
 誰在裸泳	shéi zài luǒ yǒng	45
 誰在那裡	shéi zài nà lǐ	25
 誰在鞦韆	shéi zài qiū qiān	11
@@ -4365,7 +4388,7 @@ sort: by_weight
 誰在西安	shéi zài xī ān	1
 誰在一起	shéi zài yì qǐ	42
 誰在意我	shéi zài yì wǒ	1
-誰在這裡	shéi zài zhè lǐ	26
+誰在這裏	shéi zài zhè lǐ	26
 誰在追你	shéi zài zhuī nǐ	1
 誰怎麼說	shéi zěn me shuō	12
 誰照的呀	shéi zhào de ya	4
@@ -4377,7 +4400,7 @@ sort: by_weight
 誰知道的	shéi zhī dào de	46
 誰知道來	shéi zhī dào lái	13
 誰知道了	shéi zhī dào le	28
-誰知道裏	shéi zhī dào lǐ	13
+誰知道里	shéi zhī dào lǐ	13
 誰知道吶	shéi zhī dào nà	15
 誰知到那	shéi zhī dào nà	14
 誰知道囊	shéi zhī dào náng	1
@@ -4411,11 +4434,11 @@ sort: by_weight
 聽誰說的	tīng shéi shuō de	40
 聽誰說了	tīng shéi shuō le	6
 忘記了誰	wàng jì le shéi	25
-為誰而鳴	wéi shéi ér míng	44
-為誰而戰	wéi shéi ér zhàn	33
-為誰而做	wéi shéi ér zuò	23
-為誰凝佇	wéi shéi níng zhù	1
-為誰攀折	wéi shéi pān zhé	1
+爲誰而鳴	wéi shéi ér míng	44
+爲誰而戰	wéi shéi ér zhàn	33
+爲誰而做	wéi shéi ér zuò	23
+爲誰凝佇	wéi shéi níng zhù	1
+爲誰攀折	wéi shéi pān zhé	1
 問花笑誰	wèn huā xiào shéi	13
 問你問誰	wèn nǐ wèn shéi	6
 我跟誰過	wǒ gēn shéi guò	1
@@ -4428,14 +4451,14 @@ sort: by_weight
 嚇不了誰	xià bù liǎo shéi	1
 想掐死誰	xiǎng qiā sǐ shéi	1
 向誰傾訴	xiàng shéi qīng sù	31
-心裡比誰	xīn lǐ bǐ shéi	31
+心裏比誰	xīn lǐ bǐ shéi	31
 心事誰同	xīn shì shéi tóng	1
 心事誰知	xīn shì shéi zhī	6
 姓甚名誰	xìng shèn míng shéi	43
 演給誰看	yǎn gěi shéi kàn	1
 也沒誰了	yě méi shéi le	40
-以為是誰	yǐ wéi shì shéi	1
-以為誰呢	yǐ wéi shéi ne	1
+以爲是誰	yǐ wéi shì shéi	1
+以爲誰呢	yǐ wéi shéi ne	1
 用的誰的	yòng de shéi de	1
 又會是誰	yòu huì shì shéi	33
 有沒有誰	yǒu méi yǒu shéi	47
@@ -4478,263 +4501,263 @@ sort: by_weight
 主人是誰	zhǔ rén shì shéi	38
 賺誰的錢	zhuàn shéi de qián	39
 裝給誰看	zhuāng gěi shéi kàn	1
-準不準誰	zhǔn bù zhǔn shéi	1
+準不准誰	zhǔn bù zhǔn shéi	1
 捉兔	zhuō tù	200
-白石塔	bái shí tǎ	10
+白石塔	bái shí tǎ	33
 板凳寬	bǎn dèng kuān	10
-扁擔長	biǎn dàn cháng	10
-剝桔子	bō jú zi	10
-常練習	cháng liàn xí	10
+扁擔長	biǎn dàn cháng	362
+剝桔子	bō jú zi	462
+常練習	cháng liàn xí	111
 盛魚翅	chéng yú chì	10
 醋濕布	cù shī bù	10
 打罷秋	dǎ bà qiū	10
 打翻醋	dǎ fān cù	10
 打了醋	dǎ le cù	10
 燈映星	dēng yìng xīng	10
-弟弟說	dì di shuō	10
+弟弟說	dì di shuō	871
 董兩家	dǒng liǎng jiā	10
 放下布	fàng xià bù	10
 飛了鷹	fēi le yīng	10
-粉鳳凰	fěn fèng huáng	10
-幹不幹	gàn bú gàn	380
-幹不幹	gān bù gān	80
-哥哥說	gē ge shuō	10
+粉鳳凰	fěn fèng huáng	308
+乾不幹	gàn bú gàn	844
+乾不幹	gān bù gān	814
+哥哥說	gē ge shuō	416
 擱下醋	gē xià cù	10
-紅鳳凰	hóng fèng huáng	10
+紅鳳凰	hóng fèng huáng	439
 花鳳凰	huā fèng huáng	10
 花鳥叫	huā niǎo jiào	10
-黃鳳凰	huáng fèng huáng	10
+黃鳳凰	huáng fèng huáng	232
 接住豆	jiē zhù dòu	10
-九重天	jiǔ chóng tiān	560
-兩個八	liǎng gè bā	1
-兩個白	liǎng gè bái	1
-兩個百	liǎng gè bǎi	1
+九重天	jiǔ chóng tiān	249
+兩個八	liǎng gè bā	736
+兩個白	liǎng gè bái	781
+兩個百	liǎng gè bǎi	751
 兩個貝	liǎng gè bèi	1
-兩個比	liǎng gè bǐ	1
-兩個匕	liǎng gè bǐ	1
-兩個秉	liǎng gè bǐng	1
-兩個不	liǎng gè bù	1
+兩個比	liǎng gè bǐ	948
+兩個匕	liǎng gè bǐ	918
+兩個秉	liǎng gè bǐng	574
+兩個不	liǎng gè bù	1420
 兩個倉	liǎng gè cāng	1
-兩個昌	liǎng gè chāng	1
+兩個昌	liǎng gè chāng	29
 兩個巢	liǎng gè cháo	1
-兩個屮	liǎng gè chè	1
-兩個車	liǎng gè chē	1
+兩個屮	liǎng gè chè	934
+兩個車	liǎng gè chē	904
 兩個臣	liǎng gè chén	1
 兩個齒	liǎng gè chǐ	1
 兩個蟲	liǎng gè chóng	1
-兩個巛	liǎng gè chuān	1
-兩個串	liǎng gè chuàn	1
-兩個朿	liǎng gè cì	1
-兩個大	liǎng gè dà	1
+兩個巛	liǎng gè chuān	457
+兩個串	liǎng gè chuàn	427
+兩個朿	liǎng gè cì	1446
+兩個大	liǎng gè dà	1455
 兩個歹	liǎng gè dǎi	1
 兩個呆	liǎng gè dāi	1
-兩個東	liǎng gè dōng	1
-兩個二	liǎng gè èr	1
-兩個而	liǎng gè ér	1
-兩個耳	liǎng gè ěr	1
+兩個東	liǎng gè dōng	686
+兩個二	liǎng gè èr	758
+兩個而	liǎng gè ér	728
+兩個耳	liǎng gè ěr	698
 兩個凡	liǎng gè fán	1
 兩個飛	liǎng gè fēi	1
-兩個風	liǎng gè fēng	1
+兩個風	liǎng gè fēng	740
 兩個夫	liǎng gè fū	1
 兩個巿	liǎng gè fú	1
 兩個畐	liǎng gè fú	1
-兩個乾	liǎng gè gàn	1
+兩個幹	liǎng gè gàn	668
 兩個戈	liǎng gè gē	1
 兩個弓	liǎng gè gōng	1
 兩個古	liǎng gè gǔ	1
-兩個瓜	liǎng gè guā	1
-兩個果	liǎng gè guǒ	1
+兩個瓜	liǎng gè guā	416
+兩個果	liǎng gè guǒ	754
 兩個𢎘	liǎng gè hàn	1
 兩個禾	liǎng gè hé	1
 兩個戶	liǎng gè hù	1
 兩個虎	liǎng gè hǔ	1
-兩個火	liǎng gè huǒ	1
-兩個彐	liǎng gè jì	1
-兩個吉	liǎng gè jí	1
-兩個幾	liǎng gè jǐ	1
-兩個旡	liǎng gè jì	1
-兩個見	liǎng gè jiàn	1
-兩個卪	liǎng gè jié	1
-兩個巾	liǎng gè jīn	1
-兩個金	liǎng gè jīn	1
-兩個斤	liǎng gè jīn	1
+兩個火	liǎng gè huǒ	736
+兩個彐	liǎng gè jì	601
+兩個吉	liǎng gè jí	571
+兩個幾	liǎng gè jǐ	541
+兩個旡	liǎng gè jì	511
+兩個見	liǎng gè jiàn	164
+兩個卪	liǎng gè jié	898
+兩個巾	liǎng gè jīn	781
+兩個金	liǎng gè jīn	751
+兩個斤	liǎng gè jīn	721
 兩個井	liǎng gè jǐng	1
 兩個竟	liǎng gè jìng	1
 兩個競	liǎng gè jìng	1
 兩個九	liǎng gè jiǔ	1
-兩個句	liǎng gè jù	1
-兩個口	liǎng gè kǒu	1
-兩個來	liǎng gè lái	1
-兩個來	liǎng gè lái	1
-兩個老	liǎng gè lǎo	1
-兩個力	liǎng gè lì	1
-兩個立	liǎng gè lì	1
-兩個隸	liǎng gè lì	1
+兩個句	liǎng gè jù	498
+兩個口	liǎng gè kǒu	840
+兩個來	liǎng gè lái	894
+兩個來	liǎng gè lái	864
+兩個老	liǎng gè lǎo	1168
+兩個力	liǎng gè lì	660
+兩個立	liǎng gè lì	630
+兩個隸	liǎng gè lì	600
 兩個龍	liǎng gè lóng	1
 兩個龍	liǎng gè lóng	1
-兩個馬	liǎng gè mǎ	1
-兩個馬	liǎng gè mǎ	1
+兩個馬	liǎng gè mǎ	435
+兩個馬	liǎng gè mǎ	405
 兩個毛	liǎng gè máo	1
-兩個米	liǎng gè mǐ	1
-兩個麵	liǎng gè miàn	1
+兩個米	liǎng gè mǐ	560
+兩個面	liǎng gè miàn	907
 兩個明	liǎng gè míng	1
 兩個牟	liǎng gè móu	1
 兩個母	liǎng gè mǔ	1
 兩個木	liǎng gè mù	1
 兩個目	liǎng gè mù	1
-兩個男	liǎng gè nán	1
-兩個𡥦	liǎng gè nǐ	1
-兩個廿	liǎng gè niàn	1
-兩個卄	liǎng gè niàn	1
+兩個男	liǎng gè nán	1334
+兩個𡥦	liǎng gè nǐ	691
+兩個廿	liǎng gè niàn	1110
+兩個卄	liǎng gè niàn	1080
 兩個鳥	liǎng gè niǎo	1
-兩個牛	liǎng gè niú	1
-兩個女	liǎng gè nǚ	1
-兩個𠂢	liǎng gè pài	1
+兩個牛	liǎng gè niú	650
+兩個女	liǎng gè nǚ	1542
+兩個𠂢	liǎng gè pài	696
 兩個片	liǎng gè piàn	1
-兩個啓	liǎng gè qǐ	1
-兩個桼	liǎng gè qī	1
-兩個奇	liǎng gè qí	1
-兩個乞	liǎng gè qǐ	1
-兩個欠	liǎng gè qiàn	1
-兩個僉	liǎng gè qiān	1
-兩個區	liǎng gè qū	1
-兩個犬	liǎng gè quǎn	1
-兩個夋	liǎng gè qūn	1
-兩個人	liǎng gè rén	1
-兩個日	liǎng gè rì	1
+兩個啓	liǎng gè qǐ	502
+兩個桼	liǎng gè qī	472
+兩個奇	liǎng gè qí	442
+兩個乞	liǎng gè qǐ	412
+兩個欠	liǎng gè qiàn	606
+兩個僉	liǎng gè qiān	576
+兩個區	liǎng gè qū	979
+兩個犬	liǎng gè quǎn	660
+兩個夋	liǎng gè qūn	817
+兩個人	liǎng gè rén	52094
+兩個日	liǎng gè rì	817
 兩個入	liǎng gè rù	1
 兩個卅	liǎng gè sà	1
-兩個山	liǎng gè shān	1
-兩個善	liǎng gè shàn	1
+兩個山	liǎng gè shān	655
+兩個善	liǎng gè shàn	625
 兩個舌	liǎng gè shé	1
-兩個申	liǎng gè shēn	1
-兩個生	liǎng gè shēng	1
-兩個屍	liǎng gè shī	1
-兩個石	liǎng gè shí	1
-兩個示	liǎng gè shì	1
-兩個豕	liǎng gè shǐ	1
-兩個手	liǎng gè shǒu	1
-兩個束	liǎng gè shù	1
-兩個水	liǎng gè shuǐ	1
-兩個厶	liǎng gè sī	1
-兩個田	liǎng gè tián	1
-兩個天	liǎng gè tiān	1
-兩個土	liǎng gè tǔ	1
-兩個罒	liǎng gè wǎng	1
-兩個王	liǎng gè wáng	1
-兩個兀	liǎng gè wù	1
-兩個㐅	liǎng gè wǔ	1
+兩個申	liǎng gè shēn	583
+兩個生	liǎng gè shēng	202
+兩個屍	liǎng gè shī	804
+兩個石	liǎng gè shí	774
+兩個示	liǎng gè shì	744
+兩個豕	liǎng gè shǐ	714
+兩個手	liǎng gè shǒu	1074
+兩個束	liǎng gè shù	1200
+兩個水	liǎng gè shuǐ	826
+兩個厶	liǎng gè sī	718
+兩個田	liǎng gè tián	840
+兩個天	liǎng gè tiān	810
+兩個土	liǎng gè tǔ	844
+兩個罒	liǎng gè wǎng	727
+兩個王	liǎng gè wáng	697
+兩個兀	liǎng gè wù	812
+兩個㐅	liǎng gè wǔ	782
 兩個夕	liǎng gè xī	1
 兩個習	liǎng gè xí	1
 兩個昔	liǎng gè xī	1
 兩個喜	liǎng gè xǐ	1
-兩個㔾	liǎng gè xiān	1
-兩個先	liǎng gè xiān	1
-兩個香	liǎng gè xiāng	1
-兩個享	liǎng gè xiǎng	1
-兩個心	liǎng gè xīn	1
-兩個辛	liǎng gè xīn	1
+兩個㔾	liǎng gè xiān	682
+兩個先	liǎng gè xiān	652
+兩個香	liǎng gè xiāng	466
+兩個享	liǎng gè xiǎng	436
+兩個心	liǎng gè xīn	740
+兩個辛	liǎng gè xīn	710
 兩個兄	liǎng gè xiōng	1
-兩個玄	liǎng gè xuán	1
-兩個牙	liǎng gè yá	1
-兩個言	liǎng gè yán	1
-兩個炎	liǎng gè yán	1
-兩個羊	liǎng gè yáng	1
+兩個玄	liǎng gè xuán	547
+兩個牙	liǎng gè yá	534
+兩個言	liǎng gè yán	812
+兩個炎	liǎng gè yán	782
+兩個羊	liǎng gè yáng	758
 兩個幺	liǎng gè yāo	1
 兩個堯	liǎng gè yáo	1
-兩個一	liǎng gè yī	1
-兩個乂	liǎng gè yì	1
-兩個乙	liǎng gè yǐ	1
-兩個亦	liǎng gè yì	1
-兩個易	liǎng gè yì	1
-兩個㣇	liǎng gè yì	1
-兩個邑	liǎng gè yì	1
-兩個音	liǎng gè yīn	1
-兩個尹	liǎng gè yǐn	1
+兩個一	liǎng gè yī	350
+兩個乂	liǎng gè yì	320
+兩個乙	liǎng gè yǐ	290
+兩個亦	liǎng gè yì	260
+兩個易	liǎng gè yì	230
+兩個㣇	liǎng gè yì	200
+兩個邑	liǎng gè yì	170
+兩個音	liǎng gè yīn	902
+兩個尹	liǎng gè yǐn	872
 兩個永	liǎng gè yǒng	1
-兩個又	liǎng gè yòu	1
-兩個魚	liǎng gè yú	1
-兩個餘	liǎng gè yú	1
-兩個予	liǎng gè yǔ	1
-兩個禺	liǎng gè yú	1
-兩個月	liǎng gè yuè	1
-兩個曰	liǎng gè yuē	1
-兩個真	liǎng gè zhēn	1
-兩個止	liǎng gè zhǐ	1
-兩個支	liǎng gè zhī	1
-兩個隻	liǎng gè zhī	1
-兩個至	liǎng gè zhì	1
+兩個又	liǎng gè yòu	673
+兩個魚	liǎng gè yú	601
+兩個餘	liǎng gè yú	571
+兩個予	liǎng gè yǔ	541
+兩個禺	liǎng gè yú	511
+兩個月	liǎng gè yuè	18847
+兩個曰	liǎng gè yuē	18817
+兩個真	liǎng gè zhēn	808
+兩個止	liǎng gè zhǐ	709
+兩個支	liǎng gè zhī	679
+兩個隻	liǎng gè zhī	649
+兩個至	liǎng gè zhì	619
 兩個隹	liǎng gè zhuī	1
-兩個子	liǎng gè zi	1
-兩個走	liǎng gè zǒu	1
-兩個足	liǎng gè zú	1
+兩個子	liǎng gè zi	12734
+兩個走	liǎng gè zǒu	632
+兩個足	liǎng gè zú	920
 兩個左	liǎng gè zuǒ	1
-買了布	mǎi le bù	1
+買了布	mǎi le bù	552
 那是蟬	nà shì chán	1
 跑了兔	pǎo le tù	1
-青葡萄	qīng pú táo	1
-認真學	rèn zhēn xué	1
+青葡萄	qīng pú táo	462
+認真學	rèn zhēn xué	1684
 如霧裏	rú wù lǐ	1
 軟舌頭	ruǎn shé tou	1
-三個白	sān gè bái	1
-三個百	sān gè bǎi	1
-三個寶	sān gè bǎo	1
+三個白	sān gè bái	592
+三個百	sān gè bǎi	562
+三個寶	sān gè bǎo	718
 三個貝	sān gè bèi	1
-三個屮	sān gè chè	1
-三個車	sān gè chē	1
+三個屮	sān gè chè	704
+三個車	sān gè chē	674
 三個蟲	sān gè chóng	1
 三個䖝	sān gè chóng	1
-三個朿	sān gè cì	1
-三個大	sān gè dà	1
+三個朿	sān gè cì	453
+三個大	sān gè dà	1177
 三個刀	sān gè dāo	1
-三個動	sān gè dòng	1
-三個鬥	sān gè dòu	1
-三個耳	sān gè ěr	1
+三個動	sān gè dòng	570
+三個鬥	sān gè dòu	1020
+三個耳	sān gè ěr	556
 三個方	sān gè fāng	1
 三個飛	sān gè fēi	1
 三個風	sān gè fēng	1
 三個蓋	sān gè gài	1
-三個個	sān gè gè	1
-三個弓	sān gè gōng	1
+三個個	sān gè gè	628
+三個弓	sān gè gōng	376
 三個瓜	sān gè guā	1
 三個光	sān gè guāng	1
 三個果	sān gè guǒ	1
 三個寒	sān gè hán	1
-三個戶	sān gè hù	1
+三個戶	sān gè hù	416
 三個火	sān gè huǒ	1
 三個吉	sān gè jí	1
-三個甲	sān gè jiǎ	1
-三個加	sān gè jiā	1
+三個甲	sān gè jiǎ	624
+三個加	sān gè jiā	594
 三個介	sān gè jiè	1
-三個金	sān gè jīn	1
+三個金	sān gè jīn	646
 三個九	sān gè jiǔ	1
-三個可	sān gè kě	1
-三個客	sān gè kè	1
-三個空	sān gè kōng	1
-三個口	sān gè kǒu	1
-三個老	sān gè lǎo	1
-三個了	sān gè le	1
-三個雷	sān gè léi	1
+三個可	sān gè kě	912
+三個客	sān gè kè	882
+三個空	sān gè kōng	650
+三個口	sān gè kǒu	664
+三個老	sān gè lǎo	835
+三個了	sān gè le	786
+三個雷	sān gè léi	0
 三個力	sān gè lì	1
-三個立	sān gè lì	1
+三個立	sān gè lì	0
 三個林	sān gè lín	1
 三個龍	sān gè lóng	1
-三個鹿	sān gè lù	1
-三個圥	sān gè lù	1
-三個馬	sān gè mǎ	1
-三個亇	sān gè ma	1
+三個鹿	sān gè lù	588
+三個圥	sān gè lù	558
+三個馬	sān gè mǎ	538
+三個亇	sān gè ma	508
 三個毛	sān gè máo	1
-三個門	sān gè mén	1
+三個門	sān gè mén	673
 三個米	sān gè mǐ	1
-三個麵	sān gè miàn	1
+三個面	sān gè miàn	704
 三個木	sān gè mù	1
 三個目	sān gè mù	1
-三個男	sān gè nán	1
+三個男	sān gè nán	1051
 三個鳥	sān gè niǎo	1
 三個鳥	sān gè niǎo	1
 三個㖖	sān gè niè	1
 三個牛	sān gè niú	1
-三個女	sān gè nǚ	1
+三個女	sān gè nǚ	1244
 三個丿	sān gè piě	1
 三個七	sān gè qī	1
 三個企	sān gè qǐ	1
@@ -4742,161 +4765,161 @@ sort: by_weight
 三個千	sān gè qiān	1
 三個羗	sān gè qiāng	1
 三個秦	sān gè qín	1
-三個去	sān gè qù	1
-三個泉	sān gè quán	1
-三個犬	sān gè quǎn	1
-三個全	sān gè quán	1
-三個𡿨	sān gè quǎn	1
-三個人	sān gè rén	1
-三個日	sān gè rì	1
+三個去	sān gè qù	902
+三個泉	sān gè quán	458
+三個犬	sān gè quǎn	428
+三個全	sān gè quán	398
+三個𡿨	sān gè quǎn	368
+三個人	sān gè rén	13095
+三個日	sān gè rì	601
 三個若	sān gè ruò	1
-三個山	sān gè shān	1
+三個山	sān gè shān	466
 三個少	sān gè shǎo	1
 三個舌	sān gè shé	1
 三個舍	sān gè shě	1
 三個申	sān gè shēn	1
-三個生	sān gè shēng	1
-三個市	sān gè shì	1
-三個十	sān gè shí	1
-三個士	sān gè shì	1
-三個石	sān gè shí	1
+三個生	sān gè shēng	76
+三個市	sān gè shì	568
+三個十	sān gè shí	538
+三個士	sān gè shì	508
+三個石	sān gè shí	478
 三個手	sān gè shǒu	1
-三個束	sān gè shù	1
+三個束	sān gè shù	948
 三個水	sān gè shuǐ	1
 三個朔	sān gè shuò	1
-三個厶	sān gè sī	1
+三個厶	sān gè sī	606
 三個太	sān gè tài	1
-三個田	sān gè tián	1
-三個天	sān gè tiān	1
+三個田	sān gè tián	290
+三個天	sān gè tiān	260
 三個𠧪	sān gè tiáo	1
 三個土	sān gè tǔ	1
 三個兔	sān gè tù	1
 三個妥	sān gè tuǒ	1
-三個罒	sān gè wǎng	1
+三個罒	sān gè wǎng	601
 三個文	sān gè wén	1
 三個夏	sān gè xià	1
 三個㔾	sān gè xiān	1
 三個県	sān gè xiàn	1
-三個香	sān gè xiāng	1
-三個小	sān gè xiǎo	1
-三個心	sān gè xīn	1
+三個香	sān gè xiāng	380
+三個小	sān gè xiǎo	1465
+三個心	sān gè xīn	799
 三個興	sān gè xìng	1
-三個言	sān gè yán	1
+三個言	sān gè yán	457
 三個羊	sān gè yáng	1
 三個頁	sān gè yè	1
 三個也	sān gè yě	1
-三個宜	sān gè yí	1
+三個宜	sān gè yí	48
 三個因	sān gè yīn	1
 三個用	sān gè yòng	1
 三個又	sān gè yòu	1
 三個魚	sān gè yú	1
 三個玉	sān gè yù	1
-三個原	sān gè yuán	1
-三個厡	sān gè yuán	1
-三個月	sān gè yuè	1
+三個原	sān gè yuán	606
+三個厡	sān gè yuán	576
+三個月	sān gè yuè	24223
 三個雲	sān gè yún	1
 三個爪	sān gè zhǎo	1
-三個止	sān gè zhǐ	1
-三個直	sān gè zhí	1
-三個𠙽	sān gè zhì	1
-三個𦉼	sān gè zhì	1
-四個曰	sì gè yuē	1
+三個止	sān gè zhǐ	664
+三個直	sān gè zhí	634
+三個𠙽	sān gè zhì	604
+三個𦉼	sān gè zhì	574
+四個曰	sì gè yuē	4614
 四個日	sì gè rì	1
-三個𣥚	sān gè zhì	1
-三個至	sān gè zhì	1
-三個丶	sān gè zhǔ	1
-三個竹	sān gè zhú	1
+三個𣥚	sān gè zhì	544
+三個至	sān gè zhì	514
+三個丶	sān gè zhǔ	1105
+三個竹	sān gè zhú	1075
 三個隹	sān gè zhuī	1
-三個子	sān gè zi	1
-三個足	sān gè zú	1
+三個子	sān gè zi	5659
+三個足	sān gè zú	799
 十和四	shí hé sì	1
-十是十	shí shì shí	1
-史肖石	shǐ xiào shí	1
+十是十	shí shì shí	981
+史肖石	shǐ xiào shí	603
 石小四	shí xiǎo sì	1
-手指頭	shǒu zhǐ tou	1
+手指頭	shǒu zhǐ tou	2309
 四個匕	sì gè bǐ	1
-四個屮	sì gè chè	1
-四個車	sì gè chē	2
+四個屮	sì gè chè	715
+四個車	sì gè chē	745
 四個春	sì gè chūn	1
-四個朿	sì gè cì	1
+四個朿	sì gè cì	637
 四個風	sì gè fēng	1
 四個工	sì gè gōng	1
 四個果	sì gè guǒ	1
 四個火	sì gè huǒ	1
 四個甲	sì gè jiǎ	1
 四個金	sì gè jīn	1
-四個口	sì gè kǒu	1
+四個口	sì gè kǒu	583
 四個困	sì gè kùn	1
 四個老	sì gè lǎo	1
-四個雷	sì gè léi	1
+四個雷	sì gè léi	0
 四個林	sì gè lín	1
 四個龍	sì gè lóng	1
-四個門	sì gè mén	1
+四個門	sì gè mén	588
 四個牛	sì gè niú	1
 四個且	sì gè qiě	1
-四個囚	sì gè qiú	1
-四個泉	sì gè quán	1
-四個人	sì gè rén	1
+四個囚	sì gè qiú	610
+四個泉	sì gè quán	1082
+四個人	sì gè rén	7000
 四個日	sì gè rì	1
-四個石	sì gè shí	1
+四個石	sì gè shí	520
 四個水	sì gè shuǐ	1
-四個厶	sì gè sī	1
+四個厶	sì gè sī	552
 四個天	sì gè tiān	1
 四個田	sì gè tián	1
 四個土	sì gè tǔ	1
 四個先	sì gè xiān	1
-四個小	sì gè xiǎo	1
+四個小	sì gè xiǎo	1280
 四個興	sì gè xìng	1
 四個言	sì gè yán	1
-四個乂	sì gè yì	1
-四個又	sì gè yòu	1
+四個乂	sì gè yì	73
+四個又	sì gè yòu	628
 四個魚	sì gè yú	1
-四個月	sì gè yuè	1
+四個月	sì gè yuè	4584
 四個雲	sì gè yún	1
-四個竹	sì gè zhú	1
-四是四	sì shì sì	1
-四十四	sì shí sì	1
+四個竹	sì gè zhú	894
+四是四	sì shì sì	557
+四十四	sì shí sì	527
 提錫壺	tí xī hú	1
 聽物理	tīng wù lǐ	1
 腿說嘴	tuǐ shuō zuǐ	1
-為一名	wéi yì míng	1
-為一名	wèi yì míng	1
+爲一名	wéi yì míng	1956
+爲一名	wèi yì míng	1926
 星映燈	xīng yìng dēng	1
 楊家羊	yáng jiā yáng	1
-硬石頭	yìng shí tou	1
-遊西湖	yóu xī hú	1
-越長越	yuè cháng yuè	1
-越長大	yuè zhǎng dà	1
-越長越	yuè zhǎng yuè	1
+硬石頭	yìng shí tou	426
+遊西湖	yóu xī hú	700
+越長越	yuè cháng yuè	353
+越長大	yuè zhǎng dà	1890
+越長越	yuè zhǎng yuè	2111
 這是蠶	zhè shì cán	1
 紫瓷盤	zǐ cí pán	1
-紫葡萄	zǐ pú táo	1
+紫葡萄	zǐ pú táo	55
 嘴不黑	zuǐ bù hēi	1
 嘴說腿	zuǐ shuō tuǐ	1
-白白的鵝	bái bái de é	1
+白白的鵝	bái bái de é	169
 便不便宜	biàn bú biàn yí	1
-便宜行事	biàn yí xíng shì	1
+便宜行事	biàn yí xíng shì	73
 便宜之內	biàn yí zhī nèi	1
-不剝桔子	bù bō jú zi	1
-不吃桔子	bù chī jú zi	1
-不是字紙	bú shì zì zhǐ	1
-鵝要過河	é yào guò hé	1
-肥肥的鵝	féi féi de é	1
-粉紅鳳凰	fěn hóng fèng huáng	1
+不剝桔子	bù bō jú zi	74
+不吃桔子	bù chī jú zi	128
+不是字紙	bú shì zì zhǐ	97
+鵝要過河	é yào guò hé	187
+肥肥的鵝	féi féi de é	178
+粉紅鳳凰	fěn hóng fèng huáng	272
 河要渡鵝	hé yào dù é	1
 紅粉鳳凰	hóng fěn fèng huáng	1
-蔣家的牆	jiǎng jiā de qiáng	1
-寬寬的河	kuān kuān de hé	1
-略長一些	lüè cháng yì xiē	4
-略長幾歲	lüè zhǎng jǐ suì	1
+蔣家的牆	jiǎng jiā de qiáng	200
+寬寬的河	kuān kuān de hé	264
+略長一些	lüè cháng yì xiē	372
+略長幾歲	lüè zhǎng jǐ suì	128
 啪啪砰砰	pā pā pēng pēng	1
 砰砰啪啪	pēng pēng pā pā	1
 同種冬瓜	tóng zhǒng dōng guā	1
 勿理物理	wù lǐ wù lǐ	1
-惜乎錫壺	xī hū xī hú	1
-小直搖頭	xiǎo zhí yáo tóu	1
-越長越好	yuè cháng yuè hǎo	1
-越長越快	yuè zhǎng yuè kuài	1
+惜乎錫壺	xī hū xī hú	300
+小直搖頭	xiǎo zhí yáo tóu	97
+越長越好	yuè cháng yuè hǎo	529
+越長越快	yuè zhǎng yuè kuài	4
 安心唱愛歌	ān xīn chàng ài gē	1
 昂首吸飛蛾	áng shǒu xī fēi é	1
 遨遊真快活	áo yóu zhēn kuài huó	1
@@ -4917,13 +4940,13 @@ sort: by_weight
 窗上一支槍	chuāng shàng yì zhī qiāng	1
 窗下一籮糠	chuāng xià yī luó kāng	1
 窗要糠讓槍	chuāng yào kāng ràng qiāng	1
-吹著小喇叭	chuī zhe xiǎo lǎ bā	1
+吹着小喇叭	chuī zhe xiǎo lǎ bā	1
 搭好白石塔	dā hǎo bái shí tǎ	1
-帶著臘梅花	dài zhe là méi huā	1
+帶着臘梅花	dài zhe là méi huā	1
 地上滿山燈	dì shàng mǎn shān dēng	1
 地上七塊冰	dì shàng qī kuài bīng	1
-地上一隻貓	dì shàng yì zhī māo	1
-地上有隻貓	dì shàng yǒu zhǐ māo	1
+地上一只貓	dì shàng yì zhī māo	1
+地上有只貓	dì shàng yǒu zhǐ māo	1
 地下有石頭	dì xià yǒu shí tou	1
 弟子三十三	dì zǐ sān shí sān	1
 雕嚇走了貓	diāo xià zǒu le māo	1
@@ -4951,7 +4974,7 @@ sort: by_weight
 糠埋住了槍	kāng mái zhù le qiāng	1
 糠要槍上牆	kāng yào qiāng shàng qiáng	1
 吭哧吭哧走	kēng chī kēng chī zǒu	1
-口渴要吃梨	kǒu kě yào chī lí	1
+口渴要喫梨	kǒu kě yào chī lí	1
 來到山坡坡	lái dào shān pō pō	1
 老劉誇小牛	lǎo liú kuā xiǎo niú	1
 李虎滿屋轉	lǐ hǔ mǎn wū zhuǎn	1
@@ -4966,7 +4989,7 @@ sort: by_weight
 牆上七枚釘	qiáng shàng qī méi dīng	1
 牆要槍上窗	qiáng yào qiāng shàng chuāng	1
 撒了羊骨頭	sā le yáng gǔ tou	1
-山裏有個寺	shān lǐ yǒu gè sì	1
+山裡有個寺	shān lǐ yǒu gè sì	1
 山外有個市	shān wài yǒu gè shì	1
 伸手拿骨頭	shēn shǒu ná gǔ tou	1
 師傅四十四	shī fù sì shí sì	1
@@ -4977,7 +5000,7 @@ sort: by_weight
 樹下蹲條狗	shù xià dūn tiáo gǒu	1
 四十和十四	sì shí hé shí sì	1
 四十是四十	sì shí shì sì shí	1
-台上七盞燈	tái shàng qī zhǎn dēng	1
+臺上七盞燈	tái shàng qī zhǎn dēng	1
 天上七顆星	tiān shàng qī kē xīng	1
 駝子打鬍子	tuó zi dǎ hú zi	1
 駝子挑螺螄	tuó zi tiāo luó sī	1
@@ -4992,7 +5015,7 @@ sort: by_weight
 一盤生魚翅	yì pán shēng yú chì	1
 一盤熟魚翅	yì pán shú yú chì	1
 一天天下雨	yì tiān tiān xià yǔ	1
-有吃又有喝	yǒu chī yòu yǒu hē	1
+有喫又有喝	yǒu chī yòu yǒu hē	1
 沾了一身泥	zhān le yì shēn ní	1
 只得去過河	zhǐ de qù guò hé	1
 只需洗掉泥	zhǐ xū xǐ diào ní	1
@@ -5009,14 +5032,14 @@ sort: by_weight
 蟬常在林裡唱	chán cháng zài lín lǐ chàng	1
 喫桔子喫桔子	chī jú zi chī jú zi	1
 到底是布補鼓	dào dǐ shì bù bǔ gǔ	1
-地上有隻白貓	dì shàng yǒu zhǐ bái māo	1
+地上有只白貓	dì shàng yǒu zhǐ bái māo	1
 地下的硬石頭	dì xià de yìng shí tou	1
 地下有塊石頭	dì xià yǒu kuài shí tou	1
 二班有個王克	èr bān yǒu gè wáng kè	1
-房子裡有箱子	fáng zi lǐ yǒu xiāng zi	1
+房子裏有箱子	fáng zi lǐ yǒu xiāng zi	1
 光動腿不動嘴	guāng dòng tuǐ bú dòng zuǐ	1
 光動嘴不動腿	guāng dòng zuǐ bú dòng tuǐ	1
-盒子裡有鐲子	hé zi lǐ yǒu zhuó zi	1
+盒子裏有鐲子	hé zi lǐ yǒu zhuó zi	1
 盒子外有匣子	hé zi wài yǒu xiá zi	1
 黑貓的白鼻子	hēi māo de bái bí zi	1
 紅紅想要紅花	hóng hóng xiǎng yào hóng huā	1
@@ -5034,18 +5057,18 @@ sort: by_weight
 四和十四和十	sì hé shí sì hé shí	1
 天上有個日頭	tiān shàng yǒu gè rì tou	1
 腿說嘴愛賣嘴	tuǐ shuō zuǐ ài mài zuǐ	1
-匣子裡有盒子	xiá zi lǐ yǒu hé zi	1
+匣子裏有盒子	xiá zi lǐ yǒu hé zi	1
 匣子外有箱子	xiá zi wài yǒu xiāng zi	1
-箱子裡有匣子	xiāng zi lǐ yǒu xiá zi	1
+箱子裏有匣子	xiāng zi lǐ yǒu xiá zi	1
 箱子外有房子	xiāng zi wài yǒu fáng zi	1
 丫丫會吹喇叭	yā yā huì chuī lǎ bā	1
 一班有個黃賀	yì bān yǒu gè huáng hè	1
 鐲子外有盒子	zhuó zi wài yǒu hé zi	1
-嘴裏的軟舌頭	zuǐ lǐ de ruǎn shé tou	1
+嘴裡的軟舌頭	zuǐ lǐ de ruǎn shé tou	1
 嘴裏有個舌頭	zuǐ lǐ yǒu gè shé tou	1
 嘴說腿愛跑腿	zuǐ shuō tuǐ ài pǎo tuǐ	1
 每隻大石獅子	měi zhī dà shí shī zi	1
-一隻小石獅子	yì zhī xiǎo shí shī zi	1
+一只小石獅子	yì zhī xiǎo shí shī zi	1
 四隻小石獅子	sì zhī xiǎo shí shī zi	1
 八百標兵奔北坡	bā bǎi biāo bīng bēn běi pō	1
 八朵粉紅大荷花	bā duǒ fěn hóng dà hé huā	1
@@ -5061,7 +5084,7 @@ sort: by_weight
 吃完柿子玩石子	chī wán shì zi wán shí zǐ	1
 從北邊來個啞吧	cóng běi biān lái gè yǎ ba	1
 大渠水流進小渠	dà qú shuǐ liú jìn xiǎo qú	1
-到了家裏吃柿子	dào le jiā lǐ chī shì zi	1
+到了家裡喫柿子	dào le jiā lǐ chī shì zi	1
 地下有塊破磚頭	dì xià yǒu kuài pò zhuān tóu	1
 二人山前來比腿	èr rén shān qián lái bǐ tuǐ	1
 二人山前來比眼	èr rén shān qián lái bǐ yǎn	1
@@ -5109,7 +5132,7 @@ sort: by_weight
 面鋪還是門朝南	miàn pù hái shì mén cháo nán	1
 莫把四字說成十	mò bǎ sì zì shuō chéng shí	1
 嬤嬤默默拔蘿蔔	mó mó mò mò bá luó bo	1
-拿著四個小籃子	ná zhe sì gè xiǎo lán zi	1
+拿着四個小籃子	ná zhe sì gè xiǎo lán zi	1
 泥裡兩對鳥倒吊	ní lǐ liǎng duì niǎo dào diào	1
 妞妞趕牛牛不走	niū niū gǎn niú niú bù zǒu	1
 妞妞護柳牛扭頭	niū niū hù liǔ niú niǔ tóu	1
@@ -5118,17 +5141,17 @@ sort: by_weight
 妞妞扭牛牛更拗	niū niū niǔ niú niú gèng ǎo	1
 妞妞扭牛牛更牛	niū niū niǔ niú niú gèng niú	1
 牛牛扭頭瞅妞妞	niú niú niǔ tóu chǒu niū niū	1
-牛牛要吃河邊柳	niú niú yào chī hé biān liǔ	1
+牛牛要喫河邊柳	niú niú yào chī hé biān liǔ	1
 牛牛要頂小妞妞	niú niú yào dǐng xiǎo niū niū	1
-趴著八隻活蛤蟆	pā zhe bā zhǐ huó há má	1
-趴著一隻活蛤蟆	pā zhe yì zhī huó há má	1
+趴着八隻活蛤蟆	pā zhe bā zhǐ huó há má	1
+趴着一只活蛤蟆	pā zhe yì zhī huó há má	1
 炮兵怕把標兵碰	pào bīng pà bǎ biāo bīng pèng	1
 婆婆默默採蘑菇	pó pó mò mò cǎi mó gū	1
-坡上立著一隻鵝	pō shàng lì zhe yì zhī é	1
-坡上臥著一隻鵝	pō shàng wò zhe yì zhī é	1
+坡上立着一只鵝	pō shàng lì zhe yì zhī é	1
+坡上臥着一只鵝	pō shàng wò zhe yì zhī é	1
 坡下就是一條河	pō xià jiù shì yì tiáo hé	1
-坡下流著一條河	pō xià liú zhe yì tiáo hé	1
-橋西走來一隻猴	qiáo xī zǒu lái yì zhī hóu	1
+坡下流着一條河	pō xià liú zhe yì tiáo hé	1
+橋西走來一只猴	qiáo xī zǒu lái yì zhī hóu	1
 青龍洞中湧出龍	qīng lóng dòng zhōng yǒng chū lóng	1
 青龍做夢出龍洞	qīng lóng zuò mèng chū lóng dòng	1
 山後有個崔腿粗	shān hòu yǒu gè cuī tuǐ cū	1
@@ -5136,7 +5159,7 @@ sort: by_weight
 山前有個崔粗腿	shān qián yǒu gè cuī cū tuǐ	1
 山前有個嚴圓眼	shān qián yǒu gè yán yuán yǎn	1
 上街打醋又買布	shàng jiē dǎ cù yòu mǎi bù	1
-前去追鷹和兔	shàng qián qù zhuī yīng hé tù	1
+上前去追鷹和兔	shàng qián qù zhuī yīng hé tù	1
 拾了四十小石子	shí le sì shí xiǎo shí zi	1
 石小四和史肖石	shí xiǎo sì hé shǐ xiào shí	1
 樹上結了白果果	shù shàng jié le bái guǒ guǒ	1
@@ -5167,11 +5190,11 @@ sort: by_weight
 休將十字說成四	xiū jiāng shí zì shuō chéng sì	1
 壓死了楊家的羊	yā sǐ le yáng jiā de yáng	1
 丫丫只會吹喇叭	yā yā zhǐ huì chuī lǎ bā	1
-眼看著梨手捏泥	yǎn kàn zhe lí shǒu niē ní	1
-楊家養了一隻羊	yáng jiā yǎng le yì zhī yáng	1
+眼看着梨手捏泥	yǎn kàn zhe lí shǒu niē ní	1
+楊家養了一只羊	yáng jiā yǎng le yì zhī yáng	1
 楊家要蔣家賠羊	yáng jiā yào jiǎng jiā péi yáng	1
-要吃清蒸美魚翅	yào chī qīng zhēng měi yú chì	1
-腰裡別着個喇叭	yāo lǐ bié zhe gè lǎ bā	1
+要喫清蒸美魚翅	yào chī qīng zhēng měi yú chì	1
+腰裏別着個喇叭	yāo lǐ bié zhe gè lǎ bā	1
 一次撕下橫字紙	yí cì sī xià héng zì zhǐ	1
 一次撕下豎字紙	yí cì sī xià shù zì zhǐ	1
 一口魚翅剛到嘴	yì kǒu yú chì gāng dào zuǐ	1
@@ -5193,9 +5216,9 @@ sort: by_weight
 白石塔白石白又滑	bái shí tǎ bái shí bái yòu huá	1
 扁擔和板凳板凳寬	biǎn dàn hé bǎn dèng bǎn dèng kuān	1
 扁擔要綁在板凳上	biǎn dàn yào bǎng zài bǎn dèng shàng	1
-吃葡萄不吐葡萄皮	chī pú táo bù tǔ pú táo pí	1
+喫葡萄不吐葡萄皮	chī pú táo bù tǔ pú táo pí	1
 從南邊來了個喇嘛	cóng nán biān lái le gè lǎ ma	1
-雕與貓樹上有隻雕	diāo yǔ māo shù shàng yǒu zhǐ diāo	1
+雕與貓樹上有只雕	diāo yǔ māo shù shàng yǒu zhǐ diāo	1
 董家都懂得種冬瓜	dǒng jiā dōu dǒng de zhǒng dōng guā	1
 分不清是燈還是星	fēn bù qīng shì dēng hái shì xīng	1
 分果果多多和哥哥	fēn guǒ guǒ duō duō hé gē ge	1
@@ -5215,7 +5238,7 @@ sort: by_weight
 賣不出雞卵難買飯	mài bù chū jī luǎn nán mǎi fàn	1
 貓鼻子白貓黑鼻子	māo bí zi bái māo hēi bí zi	1
 門東董家懂種冬瓜	mén dōng dǒng jiā dǒng zhǒng dōng guā	1
-鳥和貓樹上一隻鳥	niǎo hé māo shù shàng yì zhī niǎo	1
+鳥和貓樹上一只鳥	niǎo hé māo shù shàng yì zhī niǎo	1
 盆和瓶桌上放個盆	pén hé píng zhuō shàng fàng gè pén	1
 碰破了白貓黑鼻子	pèng pò le bái māo hēi bí zi	1
 槍和糠牆上一個窗	qiāng hé kāng qiáng shàng yí gè chuāng	1
@@ -5242,18 +5265,18 @@ sort: by_weight
 打那百十百個白斑鳩	dǎ nà bǎi shí bǎi gè bái bān jiū	1
 地下是石頭不是日頭	dì xià shì shí tou bú shì rì tou	1
 董兩家的冬瓜比桶大	dǒng liǎng jiā de dōng guā bǐ tǒng dà	1
-胳膊上挎著個破笆鬥	gē bo shàng kuà zhe gè pò bā dǒu	1
+胳膊上挎着個破笆鬥	gē bo shàng kuà zhe gè pò bā dǒu	1
 黑豬聽罷笑得嘿嘿嘿	hēi zhū tīng bà xiào dé hēi hēi hēi	1
 胡亂燒把爛草取取暖	hú luàn shāo bǎ làn cǎo qǔ qǔ nuǎn	1
 黃賀幫助王克寫詩歌	huáng hè bāng zhù wáng kè xiě shī gē	1
 借給六斗六升綠綠豆	jiè gěi liù dòu liù shēng lǜ lǜ dòu	1
 吭唷吭唷拔脫七枚釘	kēng yō kēng yō bá tuō qī méi dīng	1
 來教東門童家種冬瓜	lái jiào dōng mén tóng jiā zhòng dōng guā	1
-門上掛著藍布棉門簾	mén shàng guà zhe lán bù mián mén lián	1
+門上掛着藍布棉門簾	mén shàng guà zhe lán bù mián mén lián	1
 嬤嬤帶了一個薄笸籮	mó mó dài le yí gè báo pǒ luó	1
 嬤嬤賣了蘿蔔買饃饃	mó mó mài le luó bo mǎi mó mó	1
 你猜老劉讓小牛還油	nǐ cāi lǎo liú ràng xiǎo niú hái yóu	1
-你就隔著窗戶撕字紙	nǐ jiù gé zhe chuāng hù sī zì zhǐ	1
+你就隔着窗戶撕字紙	nǐ jiù gé zhe chuāng hù sī zì zhǐ	1
 喔噓喔噓趕走七隻鶯	ō xū ō xū gǎn zǒu qī zhǐ yīng	1
 乒乒乓乓踏壞七塊冰	pīng pīng pāng pāng tà huài qī kuài bīng	1
 瓶中是塞頭不是舌頭	píng zhōng shì sāi tóu bú shì shé tou	1
@@ -5283,7 +5306,7 @@ sort: by_weight
 倒吊鳥梁上兩對倒吊鳥	dào diào niǎo liáng shàng liǎng duì dào diào niǎo	1
 弟弟叫麗麗出來做遊戲	dì di jiào lì lì chū lái zuò yóu xì	1
 地上的貓想咬樹上的鳥	dì shàng de māo xiǎng yǎo shù shàng de niǎo	1
-惦著泥裡的兩對鳥倒吊	diàn zhe ní lǐ de liǎng duì niǎo dào diào	1
+惦着泥裡的兩對鳥倒吊	diàn zhe ní lǐ de liǎng duì niǎo dào diào	1
 鵝過河哥哥弟弟坡前坐	é guò hé gē ge dì di pō qián zuò	1
 飛蛾啄不住岸邊去找窩	fēi é zhuó bú zhù àn biān qù zhǎo wō	1
 河要渡鵝不知是鵝過河	hé yào dù é bù zhī shì é guò hé	1
@@ -5301,7 +5324,7 @@ sort: by_weight
 呂教練在男籃訓練藍南	lǚ jiào liàn zài nán lán xùn liàn lán nán	1
 忙遞給年十四的石小四	máng dì gěi nián shí sì de shí xiǎo sì	1
 忙遞給年四十的史肖石	máng dì gěi nián sì shí de shǐ xiào shí	1
-每排是十四隻大石獅子	měi pái shì shí sì zhǐ dà shí shī zi	1
+每排是十四只大石獅子	měi pái shì shí sì zhǐ dà shí shī zi	1
 嬤嬤拔了一笸籮大蘿蔔	mó mó bá le yī pǒ luó dà luó bo	1
 婆婆採了半簸箕小蘑菇	pó pó cǎi le bàn bò ji xiǎo mó gū	1
 青龍洞青龍洞中龍做夢	qīng lóng dòng qīng lóng dòng zhōng lóng zuò mèng	1
@@ -5314,9 +5337,9 @@ sort: by_weight
 天上七顆星天上七顆星	tiān shàng qī kē xīng tiān shàng qī kē xīng	1
 駝子來打騎驢子的鬍子	tuó zi lái dǎ qí lǘ zǐ de hú zi	1
 小牛硬要把油還給老劉	xiǎo niú yìng yào bǎ yóu huán gěi lǎo liú	1
-學捏梨盤裡放著一個梨	xué niē lí pán lǐ fàng zhe yí gè lí	1
+學捏梨盤裡放着一個梨	xué niē lí pán lǐ fàng zhe yí gè lí	1
 白髮老公公掉了一頂白帽	bái fà lǎo gōng gōng diào le yì dǐng bái mào	1
-白貓叼著白帽跑進一白廟	bái māo diāo zhe bái mào pǎo jìn yī bái miào	1
+白貓叼着白帽跑進一白廟	bái māo diāo zhe bái mào pǎo jìn yī bái miào	1
 板凳不讓扁擔綁在板凳上	bǎn dèng bú ràng biǎn dàn bǎng zài bǎn dèng shàng	1
 大渠裏有了小魚不見大魚	dà qú lǐ yǒu le xiǎo yú bú jiàn dà yú	1
 地上的貓想叼走樹上的雕	dì shàng de māo xiǎng diāo zǒu shù shàng de diāo	1
@@ -5329,8 +5352,8 @@ sort: by_weight
 小牛賠油小牛放學去打球	xiǎo niú péi yóu xiǎo niú fàng xué qù dǎ qiú	1
 小渠裏有了大魚不見小魚	xiǎo qú lǐ yǒu le dà yú bú jiàn xiǎo yú	1
 養魚大渠養大魚不養小魚	yǎng yú dà qú yǎng dà yú bù yǎng xiǎo yú	1
-也惦著梁上的兩對倒吊鳥	yě diàn zhe liáng shàng de liǎng duì dào diào niǎo	1
-再吃掉籃子裡幾個軟雞卵	zài chī diào lán zi lǐ jǐ gè ruǎn jī luǎn	1
+也惦着梁上的兩對倒吊鳥	yě diàn zhe liáng shàng de liǎng duì dào diào niǎo	1
+再吃掉籃子裏幾個軟雞卵	zài chī diào lán zi lǐ jǐ gè ruǎn jī luǎn	1
 種冬瓜東門童家門東董家	zhǒng dōng guā dōng mén tóng jiā mén dōng dǒng jiā	1
 板凳不讓扁擔綁在那板凳上	bǎn dèng bú ràng biǎn dàn bǎng zài nà bǎn dèng shàng	1
 還是崔腿粗比崔粗腿的腿粗	hái shì cuī tuǐ cū bǐ cuī cū tuǐ de tuǐ cū	1
@@ -5338,7 +5361,7 @@ sort: by_weight
 荷花和蛤蟆一朵粉紅大荷花	hé huā hé há má yì duǒ fěn hóng dà hé huā	1
 六叔和六舅好六叔和好六舅	liù shū hé liù jiù hǎo liù shū hé hǎo liù jiù	1
 年十四的石小四見了好報紙	nián shí sì de shí xiǎo sì jiàn le hǎo bào zhǐ	1
-妞妞和牛牛牛牛要吃河邊柳	niū niū hé niú niú niú niú yào chī hé biān liǔ	1
+妞妞和牛牛牛牛要喫河邊柳	niū niū hé niú niú niú niú yào chī hé biān liǔ	1
 三娘翻過山梁去找三隻山羊	sān niáng fān guò shān liáng qù zhǎo sān zhǐ shān yáng	1
 三十三的弟子在寺裏練寫字	sān shí sān de dì zǐ zài sì lǐ liàn xiě zì	1
 石獅寺前有四十四個石獅子	shí shī sì qián yǒu sì shí sì gè shí shī zi	1
@@ -5347,7 +5370,7 @@ sort: by_weight
 白果樹上站着百十百個白斑鳩	bái guǒ shù shàng zhàn zhe bǎi shí bǎi gè bái bān jiū	1
 不知是崔粗腿比崔腿粗的腿粗	bù zhī shì cuī cū tuǐ bǐ cuī tuǐ cū de tuǐ cū	1
 橫豎兩次撕了四十四張溼字紙	héng shù liǎng cì sī le sì shí sì zhāng shī zì zhǐ	1
-看見伯爹伯媽門前種著白果樹	kàn jiàn bó diē bó mā mén qián zhǒng zhe bái guǒ shù	1
+看見伯爹伯媽門前種着白果樹	kàn jiàn bó diē bó mā mén qián zhǒng zhe bái guǒ shù	1
 麗麗和弟弟麗麗家來了小弟弟	lì lì hé dì di lì lì jiā lái le xiǎo dì dì	1
 那個扁擔偏要綁在那個板凳上	nà gè biǎn dàn piān yào bǎng zài nà gè bǎn dèng shàng	1
 年四十的史肖石發現了好詩詞	nián sì shí de shǐ xiào shí fā xiàn le hǎo shī cí	1
@@ -5369,7 +5392,7 @@ sort: by_weight
 四十四個澀柿子倒喫四十四個石獅子	sì shí sì gè sè shì zi dào chī sì shí sì gè shí shī zi	1
 四十四個石獅子不吃四十四個澀柿子	sì shí sì gè shí shī zi bù chī sì shí sì gè sè shì zi	1
 烏鴉說豬黑烏鴉站在黑豬脊上說黑豬黑	wū yā shuō zhū hēi wū yā zhàn zài hēi zhū jí shàng shuō hēi zhū hēi	1
-你說共數出多少隻大石獅子和多少隻小石獅子	nǐ shuō gòng shǔ chū duō shǎo zhǐ dà shí shī zi hé duō shǎo zhǐ xiǎo shí shī zi	1
+你說共數出多少只大石獅子和多少只小石獅子	nǐ shuō gòng shǔ chū duō shǎo zhǐ dà shí shī zi hé duō shǎo zhǐ xiǎo shí shī zi	1
 提拉塔嘛的喇嘛拿塔嘛打了別喇叭的啞巴一塔嘛	tí lā tǎ ma de lǎ ma ná tǎ ma dǎ le bié lǎ bā de yǎ bā yī tǎ ma	1
 也不知別喇叭的啞巴拿喇巴打壞了提拉塔嘛喇嘛的塔嘛	yě bù zhī bié lǎ bā de yǎ bā ná lǎ bā dǎ huài le tí lā tǎ ma lǎ ma de tǎ ma	1
 也不知提拉塔嘛的喇嘛拿塔嘛打壞了別喇叭啞巴的喇叭	yě bù zhī tí lā tǎ ma de lǎ ma ná tǎ ma dǎ huài le bié lǎ bā yǎ bā de lǎ bā	1
