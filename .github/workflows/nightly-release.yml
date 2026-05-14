@@ -7,6 +7,7 @@ on:
       - wanxiang
     paths:
       - 'dicts/**'
+      - 'dicts_hant/**'
       - 'pypinyin/**'
       - 'pinyin_data/**'
       - 'tqdm/**'
@@ -33,6 +34,18 @@ jobs:
             echo "Packing completed: dist/dicts.zip"
           else
             echo "Warning: dicts folder does not exist, skipping."
+          fi
+
+
+      - name: Pack dicts_hant.zip
+        run: |
+          mkdir -p dist
+          echo "Packing dicts_hant..."
+          if [ -d "dicts_hant" ]; then
+            zip -r dist/dicts_hant.zip dicts_hant
+            echo "Packing completed: dist/dicts_hant.zip"
+          else
+            echo "Warning: dicts_hant folder does not exist, skipping."
           fi
 
       - name: Pack dict-tools.zip
@@ -86,10 +99,12 @@ jobs:
           tag_name: dict-nightly
           name: "词库更新与拼音标注工具包"
           body: |
-            - `dicts.zip`：最新中文词库文件。
+            - `dicts.zip`：最新中文简体词库文件。
+            - `dicts_hant.zip`：最新中文繁体词库文件。
             - `dict-pinyin-tools.zip`：包含 pypinyin、pinyin_data、tqdm、rime固定*.py 工具脚本。
           files: |
             dist/dicts.zip
+            dist/dicts_hant.zip
             dist/dict-pinyin-tools.zip
           draft: false
           prerelease: false
