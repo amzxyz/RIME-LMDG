@@ -104901,6 +104901,7 @@ sort: by_weight
 自愿供骨者	zì yuàn gōng gǔ zhě	100
 自愿供肾者	zì yuàn gōng shèn zhě	100
 资源共享的	zī yuán gòng xiǎng de	100
+资源管理器	zī yuán guǎn lǐ qì	100
 资源和环境	zī yuán hé huán jìng	100
 资源和能源	zī yuán hé néng yuán	100
 资源和人脉	zī yuán hé rén mài	100
@@ -104997,7 +104998,7 @@ sort: by_weight
 自转旋翼机	zì zhuàn xuán yì jī	100
 自准直谱仪	zì zhǔn zhí pǔ yí	100
 孜孜不倦地	zī zī bú juàn de	100
-仔仔细细地	zǐ zǐ xì xì dì	100
+仔仔细细地	zǐ zǐ xì xì de	100
 子自旋转动	zǐ zì xuán zhuàn dòng	100
 孜孜以求者	zī zī yǐ qiú zhě	100
 自作多情了	zì zuò duō qíng le	100
@@ -113210,6 +113211,7 @@ sort: by_weight
 出于某种原因	chū yú mǒu zhǒng yuán yīn	100
 出于人道主义	chū yú rén dào zhǔ yì	100
 处于弱势地位	chǔ yú ruò shì dì wèi	100
+出于什么考虑	chū yú shén me kǎo lǜ	100
 出于什么目的	chū yú shén me mù dì	100
 处于失业状态	chǔ yú shī yè zhuàng tài	100
 处于同一水平	chǔ yú tóng yī shuǐ píng	100
@@ -149545,200 +149547,10 @@ sort: by_weight
 上鼓室冲洗术	shàng gǔ shì chōng xǐ shù	100
 上古十大神器	shàng gǔ shí dà shén qì	100
 上古石器时代	shàng gǔ shí qì shí dài	100
-上海巴士二汽	shàng hǎi bā shì èr qì	100
-上海巴士六汽	shàng hǎi bā shì liù qì	100
-上海巴士三汽	shàng hǎi bā shì sān qì	100
-上海巴士实业	shàng hǎi bā shì shí yè	100
-上海巴士四汽	shàng hǎi bā shì sì qì	100
-上海巴士新新	shàng hǎi bā shì xīn xīn	100
-上海巴士一汽	shàng hǎi bā shì yī qì	100
-上海百代唱片	shàng hǎi bǎi dài chàng piān	100
-上海半岛酒店	shàng hǎi bàn dǎo jiǔ diàn	100
-上海宝冶集团	shàng hǎi bǎo yě jí tuán	100
-上海博击长空	shàng hǎi bó jī cháng kōng	100
-上海踩踏事件	shàng hǎi cǎi tà shì jiàn	100
-上海柴油机厂	shàng hǎi chái yóu jī chǎng	100
-上海城开集团	shàng hǎi chéng kāi jí tuán	100
-上海城投水务	shàng hǎi chéng tóu shuǐ wù	100
-上海船舶工业	shàng hǎi chuán bó gōng yè	100
-上海大场机场	shàng hǎi dà chǎng jī chǎng	100
-上海达龙科技	shàng hǎi dá lóng kē jì	100
-上海达内科技	shàng hǎi dá nèi kē jì	100
-上海大屯煤电	shàng hǎi dà tún méi diàn	100
-上海大学校史	shàng hǎi dà xué xiào shǐ	100
-上海大众公用	shàng hǎi dà zhòng gōng yòng	100
-上海打字机厂	shàng hǎi dǎ zì jī chǎng	100
-上海第一生化	shàng hǎi dì yī shēng huà	100
-上海电机学院	shàng hǎi diàn jī xué yuàn	100
-上海电力大学	shàng hǎi diàn lì dà xué	100
-上海电力公司	shàng hǎi diàn lì gōng sī	100
-上海电力学院	shàng hǎi diàn lì xué yuàn	100
-上海电气公司	shàng hǎi diàn qì gōng sī	100
-上海电气集团	shàng hǎi diàn qì jí tuán	100
-上海电视节的	shàng hǎi diàn shì jié de	100
-上海动物园站	shàng hǎi dòng wù yuán zhàn	100
-上海都市菜园	shàng hǎi dū shì cài yuán	100
-上海多媒体谷	shàng hǎi duō méi tǐ gǔ	100
-上海法国学校	shàng hǎi fǎ guó xué xiào	100
-上海法政大学	shàng hǎi fǎ zhèng dà xué	100
-上海纺织工业	shàng hǎi fǎng zhī gōng yè	100
-上海纺织集团	shàng hǎi fǎng zhī jí tuán	100
-上海奉贤巴士	shàng hǎi fèng xián bā shì	100
-上海佛学书局	shàng hǎi fó xué shū jú	100
-上海复旦大学	shàng hǎi fù dàn dà xué	100
-上海复旦张江	shàng hǎi fù dàn zhāng jiāng	100
-上海高速公路	shàng hǎi gāo sù gōng lù	100
-上海格致中学	shàng hǎi gé zhì zhōng xué	100
-上海公共租界	shàng hǎi gōng gòng zū jiè	100
-上海公兴搬场	shàng hǎi gōng xīng bān chǎng	100
-上海公用事业	shàng hǎi gōng yòng shì yè	100
-上海孤岛时期	shàng hǎi gū dǎo shí qī	100
-上海古籍书店	shàng hǎi gǔ jí shū diàn	100
-上海冠生园队	shàng hǎi guān shēng yuán duì	100
-上海广电大厦	shàng hǎi guǎng diàn dà shà	100
-上海广电集团	shàng hǎi guǎng diàn jí tuán	100
-上海广方言馆	shàng hǎi guǎng fāng yán guǎn	100
-上海光华大学	shàng hǎi guāng huá dà xué	100
-上海硅酸盐所	shàng hǎi guī suān yán suǒ	100
-上海国际花展	shàng hǎi guó jì huā zhǎn	100
-上海国际影展	shàng hǎi guó jì yǐng zhǎn	100
-上海海事大学	shàng hǎi hǎi shì dà xué	100
-上海海事法院	shàng hǎi hǎi shì fǎ yuàn	100
-上海汉霸机电	shàng hǎi hàn bà jī diàn	100
-上海和黄白猫	shàng hǎi hé huáng bái māo	100
-上海华峰超纤	shàng hǎi huá fēng chāo xiān	100
-上海华信证券	shàng hǎi huá xìn zhèng quàn	100
-上海华谊集团	shàng hǎi huá yì jí tuán	100
-上海环贸广场	shàng hǎi huán mào guǎng chǎng	100
-上海火车北站	shàng hǎi huǒ chē běi zhàn	100
-上海机电股份	shàng hǎi jī diàn gǔ fèn	100
-上海基督教史	shàng hǎi jī dū jiào shǐ	100
-上海级护卫艇	shàng hǎi jí hù wèi tǐng	100
-上海暨南大学	shàng hǎi jì nán dà xué	100
-上海集优机械	shàng hǎi jí yōu jī xiè	100
-上海嘉定城发	shàng hǎi jiā dìng chéng fā	100
-上海佳豪船舶	shàng hǎi jiā háo chuán bó	100
-上海家化品牌	shàng hǎi jiā huà pǐn pái	100
-伤害减到最小	shāng hài jiǎn dào zuì xiǎo	100
-上海建桥学院	shàng hǎi jiàn qiáo xué yuàn	100
 伤害降到最低	shāng hài jiàng dào zuì dī	100
-上海江湾机场	shàng hǎi jiāng wān jī chǎng	100
-上海交大附中	shàng hǎi jiāo dà fù zhōng	100
-上海交大排名	shàng hǎi jiāo dà pái míng	100
-上海锦江饭店	shàng hǎi jǐn jiāng fàn diàn	100
-上海锦江酒店	shàng hǎi jǐn jiāng jiǔ diàn	100
-上海金茂大厦	shàng hǎi jīn mào dà shà	100
-上海静安大火	shàng hǎi jìng ān dà huǒ	100
-上海久联证券	shàng hǎi jiǔ lián zhèng quàn	100
-上海久事大厦	shàng hǎi jiǔ shì dà shà	100
-上海久事公司	shàng hǎi jiǔ shì gōng sī	100
-上海久事集团	shàng hǎi jiǔ shì jí tuán	100
 伤害就是伤害	shāng hài jiù shì shāng hài	100
-上海均瑶集团	shàng hǎi jūn yáo jí tuán	100
-上海军医大学	shàng hǎi jūn yī dà xué	100
-上海砍人事件	shàng hǎi kǎn rén shì jiàn	100
-上海科技馆站	shàng hǎi kē jì guǎn zhàn	100
-上海科技人物	shàng hǎi kē jì rén wù	100
-上海力宝广场	shàng hǎi lì bǎo guǎng chǎng	100
-上海立达学院	shàng hǎi lì dá xué yuàn	100
-上海丽都花园	shàng hǎi lì dū huā yuán	100
-上海联影医疗	shàng hǎi lián yǐng yī liáo	100
-上海良友集团	shàng hǎi liáng yǒu jí tuán	100
-上海烈士陵园	shàng hǎi liè shì líng yuán	100
-上海龙华庙会	shàng hǎi lóng huá miào huì	100
-上海路立交桥	shàng hǎi lù lì jiāo qiáo	100
-上海轮胎橡胶	shàng hǎi lún tāi xiàng jiāo	100
-上海绿地申花	shàng hǎi lǜ dì shēn huā	100
-上海绿谷制药	shàng hǎi lǜ gǔ zhì yào	100
-上海旅游景点	shàng hǎi lǚ yóu jǐng diǎn	100
-上海美术大展	shàng hǎi měi shù dà zhǎn	100
-上海沐瞳科技	shàng hǎi mù tóng kē jì	100
-上海南北高架	shàng hǎi nán běi gāo jià	100
-上海南洋大学	shàng hǎi nán yáng dà xué	100
-上海南洋公学	shàng hǎi nán yáng gōng xué	100
-上海南洋中学	shàng hǎi nán yáng zhōng xué	100
-上海农商银行	shàng hǎi nóng shāng yín háng	100
-上海女子图鉴	shàng hǎi nǚ zǐ tú jiàn	100
-上海牌照拍卖	shàng hǎi pái zhào pāi mài	100
-上海浦东中邦	shàng hǎi pǔ dōng zhōng bāng	100
-上海钱业公会	shàng hǎi qián yè gōng huì	100
-上海绕城高速	shàng hǎi rào chéng gāo sù	100
-上海仁济医院	shàng hǎi rén jì yī yuàn	100
-上海如心文化	shàng hǎi rú xīn wén huà	100
-上海三联书店	shàng hǎi sān lián shū diàn	100
-上海三枪集团	shàng hǎi sān qiāng jí tuán	100
-上海杉达学院	shàng hǎi shān dá xué yuàn	100
-上海商科大学	shàng hǎi shāng kē dà xué	100
-上海尚世影业	shàng hǎi shàng shì yǐng yè	100
-上海商务中心	shàng hǎi shāng wù zhōng xīn	100
-上海申迪集团	shàng hǎi shēn dí jí tuán	100
-上海申花历史	shàng hǎi shēn huā lì shǐ	100
-上海申花联盛	shàng hǎi shēn huā lián shèng	100
-上海申花球员	shàng hǎi shēn huā qiú yuán	100
-上海申花数据	shàng hǎi shēn huā shù jù	100
 伤害身体健康	shāng hài shēn tǐ jiàn kāng	100
-上海申鑫球员	shàng hǎi shēn xīn qiú yuán	100
-上海圣三一堂	shàng hǎi shèng sān yì táng	100
-上海师范大学	shàng hǎi shī fàn dà xué	100
-上海师范学院	shàng hǎi shī fàn xué yuàn	100
-上海石化总厂	shàng hǎi shí huà zǒng chǎng	100
-上海世纪出版	shàng hǎi shì jì chū bǎn	100
-上海世纪大道	shàng hǎi shì jì dà dào	100
-上海世纪广场	shàng hǎi shì jì guǎng chǎng	100
-上海世贸商城	shàng hǎi shì mào shāng chéng	100
-上海食品公司	shàng hǎi shí pǐn gōng sī	100
-上海实业集团	shàng hǎi shí yè jí tuán	100
-上海实业控股	shàng hǎi shí yè kòng gǔ	100
-上海石油化工	shàng hǎi shí yóu huà gōng	100
 伤害输出能力	shāng hài shū chū néng lì	100
-上海四季酒店	shàng hǎi sì jì jiǔ diàn	100
-上海体育馆站	shàng hǎi tǐ yù guǎn zhàn	100
-上海天玑科技	shàng hǎi tiān jī kē jì	100
-上海天主教堂	shàng hǎi tiān zhǔ jiào táng	100
-上海同济医院	shàng hǎi tóng jì yī yuàn	100
-上海同仁医院	shàng hǎi tóng rén yī yuàn	100
-上海同文书院	shàng hǎi tóng wén shū yuàn	100
-上海通轩实业	shàng hǎi tōng xuān shí yè	100
-上海图书馆站	shàng hǎi tú shū guǎn zhàn	100
-上海外环高速	shàng hǎi wài huán gāo sù	100
-上海万国公墓	shàng hǎi wàn guó gōng mù	100
-上海万国商团	shàng hǎi wàn guó shāng tuán	100
-上海宛平剧院	shàng hǎi wǎn píng jù yuàn	100
-上海维西公司	shàng hǎi wéi xī gōng sī	100
-上海文广演艺	shàng hǎi wén guǎng yǎn yì	100
-上海文明书局	shàng hǎi wén míng shū jú	100
-上海无轨电车	shàng hǎi wú guǐ diàn chē	100
-上海西岸开发	shàng hǎi xī àn kāi fā	100
-上海西郊宾馆	shàng hǎi xī jiāo bīn guǎn	100
-上海西郊公园	shàng hǎi xī jiāo gōng yuán	100
-上海小红楼案	shàng hǎi xiǎo hóng lóu àn	100
-上海刑事案件	shàng hǎi xíng shì àn jiàn	100
-上海兴伟学院	shàng hǎi xīng wěi xué yuàn	100
-上海延安饭店	shàng hǎi yán ān fàn diàn	100
-上海姚记扑克	shàng hǎi yáo jì pū kè	100
-上海耀皮玻璃	shàng hǎi yào pí bō li	100
-上海仪电电子	shàng hǎi yí diàn diàn zǐ	100
-上海仪电控股	shàng hǎi yí diàn kòng gǔ	100
-伤害已经造成	shāng hài yǐ jīng zào chéng	100
-上海医科大学	shàng hǎi yī kē dà xué	100
-上海异人娼馆	shàng hǎi yì rén chāng guǎn	100
-上海一网通办	shàng hǎi yī wǎng tōng bàn	100
-上海影评人奖	shàng hǎi yǐng píng rén jiǎng	100
-上海永福园陵	shàng hǎi yǒng fú yuán líng	100
-上海永利带业	shàng hǎi yǒng lì dài yè	100
-上海邮电医院	shàng hǎi yóu diàn yī yuàn	100
-上海邮通科技	shàng hǎi yóu tōng kē jì	100
-上海有线电视	shàng hǎi yǒu xiàn diàn shì	100
-上海游泳馆站	shàng hǎi yóu yǒng guǎn zhàn	100
-上海源甲餐饮	shàng hǎi yuán jiǎ cān yǐn	100
-上海远洋宾馆	shàng hǎi yuǎn yáng bīn guǎn	100
-上海振华重工	shàng hǎi zhèn huá zhòng gōng	100
-上海针织九厂	shàng hǎi zhēn zhī jiǔ chǎng	100
-上海政法学院	shàng hǎi zhèng fǎ xué yuàn	100
-上海置地广场	shàng hǎi zhì dì guǎng chǎng	100
-上海支援全国	shàng hǎi zhī yuán quán guó	100
-上海中国画院	shàng hǎi zhōng guó huà yuàn	100
-上海中学东校	shàng hǎi zhōng xué dōng xiào	100
 伤寒和副伤寒	shāng hán hé fù shāng hán	100
 伤寒沙门氏菌	shāng hán shā mén shì jūn	100
 伤寒十居其七	shāng hán shí jū qí qī	100
@@ -181292,7 +181104,6 @@ sort: by_weight
 打开天窗说亮话	dǎ kāi tiān chuāng shuō liàng huà	100
 打开网络适配器	dǎ kāi wǎng luò shì pèi qì	100
 打开新世界大门	dǎ kāi xīn shì jiè dà mén	100
-打开资源管理器	dǎ kāi zī yuán guǎn lǐ qì	100
 达克二氏颅骨钳	dá kè èr shì lú gǔ qián	100
 大颗粒淋巴细胞	dà kē lì lín bā xì bāo	100
 达克罗宁胶浆剂	dá kè luó níng jiāo jiāng jì	100
