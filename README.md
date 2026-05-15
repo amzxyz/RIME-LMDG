@@ -14,7 +14,7 @@
 
  示例项目：
 
- [万象拼音-全拼双拼-声调辅助-反查辅助-中英混输](https://github.com/amzxyz/rime_wanxiang)   
+ [万象拼音-全拼双拼-声调辅助-反查辅助-中英混输](https://github.com/amzxyz/rime-wanxiang)   
 
 | 词库类型 | 文件名称     | 描述                   |
 |----------|--------------|------------------------|
@@ -75,5 +75,5 @@ octagram:
 ### 赞赏：
 如果觉得项目好用，可以请AMZ喝咖啡
 
-   <img src="https://github.com/amzxyz/rime_wanxiang/blob/wanxiang/custom/%E8%B5%9E%E8%B5%8F.jpg" width="400">   
+   <img src="https://github.com/amzxyz/rime-wanxiang/blob/wanxiang/custom/%E8%B5%9E%E8%B5%8F.jpg" width="400">   
 

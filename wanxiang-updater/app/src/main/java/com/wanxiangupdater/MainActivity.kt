@@ -223,7 +223,7 @@ fun WanxiangDownloaderApp() {
         withContext(Dispatchers.IO) {
             // 1. 探测主方案 Tag
             try {
-                val url = URL("https://api.github.com/repos/amzxyz/rime_wanxiang/releases/latest")
+                val url = URL("https://api.github.com/repos/amzxyz/rime-wanxiang/releases/latest")
                 val conn = url.openConnection() as HttpURLConnection
                 conn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
                 if (githubToken.isNotBlank()) {
@@ -520,9 +520,9 @@ fun WanxiangDownloaderApp() {
                 // 核心下载逻辑变量生成
                 val schemeStr = if (isPro) auxScheme else "base"
                 val activeTag = if (downloadSource == "CNB") (if (updateChannel == "Stable") latestStableTag else "v1.0.0") else (if (updateChannel == "Stable") latestStableTag else "dict-nightly")
-                val baseDownloadUrl = if (downloadSource == "CNB") "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$activeTag" else "https://github.com/amzxyz/rime_wanxiang/releases/download/$activeTag"
+                val baseDownloadUrl = if (downloadSource == "CNB") "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$activeTag" else "https://github.com/amzxyz/rime-wanxiang/releases/download/$activeTag"
                 val dictTag = if (downloadSource == "CNB") "v1.0.0" else "dict-nightly"
-                val dictBaseUrl = if (downloadSource == "CNB") "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$dictTag" else "https://github.com/amzxyz/rime_wanxiang/releases/download/$dictTag"
+                val dictBaseUrl = if (downloadSource == "CNB") "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$dictTag" else "https://github.com/amzxyz/rime-wanxiang/releases/download/$dictTag"
                 
                 val schemaUrl = "$baseDownloadUrl/rime-wanxiang-$schemeStr${if(isPro) "-fuzhu" else ""}.zip"
                 val dictUrl = "$dictBaseUrl/${if(isPro) "pro-$schemeStr-fuzhu" else "base"}-dicts.zip"

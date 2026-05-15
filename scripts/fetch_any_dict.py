@@ -471,7 +471,7 @@ def fetch_url_file(url, out_dir, is_download_gram = False):
     out_dir - 存放目录  
     is_download_gram - 是否下载大模型  
     '''
-    default_url = "https://github.com/amzxyz/rime_wanxiang.git"
+    default_url = "https://github.com/amzxyz/rime-wanxiang.git"
     url = url or default_url
 
     filename = os.path.basename(url)
@@ -499,12 +499,12 @@ def fetch_url_file(url, out_dir, is_download_gram = False):
 @timer
 def download_dict(url_dict, out_url_directory, is_download_gram = False):
     """
-    url_dict - 如 https://github.com/amzxyz/rime_wanxiang/releases/download/dict-nightly/cn_dicts.zip
+    url_dict - 如 https://github.com/amzxyz/rime-wanxiang/releases/download/dict-nightly/cn_dicts.zip
     out_url_directory - 如 C:\\Users\\jack\\AppData\\Roaming\\.temp_rime\\rime_url
     is_download_gram - False 默认不下载大模型
     """
     # 直接下载仓库词典文件
-    url_dict = url_dict or url_dict_rime_wanxiang                                         # 远程资源地址
+    url_dict = url_dict or url_dict_rime-wanxiang                                         # 远程资源地址
     out_url_directory = out_url_directory or (proj_dir / work_dir / 'rime_url').resolve() # 预设下载目录
     out_file = 'cn_dicts.zip'
 
@@ -546,7 +546,7 @@ def exec(proj_dir, work_dir, repository_url):
 
     # ① 同步仓库
     repository_url = repository_url or "https://cnb.cool/amzxyz/rime-wanxiang.git"
-    repository_name = repository_url.split('/')[-1][:-4] # 如 rime_wanxiang
+    repository_name = repository_url.split('/')[-1][:-4] # 如 rime-wanxiang
     local_directory = (proj_dir / work_dir / repository_name).resolve()
     out_dict = f'cn_dicts_{repository_name}'
     cn_dicts = 'cn_dicts' if repo_type != '1' else 'dicts' # 万象改字典名称了……
@@ -561,7 +561,7 @@ def exec(proj_dir, work_dir, repository_url):
     if int(dict_type) == 2:
         print('🔜  === 〔 远程下载 〕开始获取最新词库文件 ===')
         # 直接下载仓库词典文件
-        url_dict = url_dict_rime_wanxiang
+        url_dict = url_dict_rime-wanxiang
         out_url_directory = (proj_dir / work_dir / 'rime_url').resolve()
 
         download_dict(url_dict, out_url_directory)
@@ -764,7 +764,7 @@ if __name__ == "__main__":
 # 目标候选仓库：
 # ¹ 万象拼音 ² 白霜拼音  ³ 雾凇拼音  ⁰ 其它完整仓库地址 
 
-如：0 ➭ https://github.com/amzxyz/rime_wanxiang.git
+如：0 ➭ https://github.com/amzxyz/rime-wanxiang.git
 ------------------------------------------------------------------------------
             ''')
             repo_type = input(f"🔔  默认「 万象拼音 」? (1): ").strip().lower() or "1"
@@ -787,7 +787,7 @@ if __name__ == "__main__":
     # 其中 .temp_rime 与 scripts 父级目录同级
     # ----------
     # url_dict_rime_ice = "https://github.com/iDvel/rime-ice/releases/download/2025.04.06/cn_dicts.zip"
-    url_dict_rime_wanxiang = "https://github.com/amzxyz/rime_wanxiang/releases/download/dict-nightly/base-dicts.zip"
+    url_dict_rime-wanxiang = "https://github.com/amzxyz/rime-wanxiang/releases/download/dict-nightly/base-dicts.zip"
     # 
     # --- ³本地词典 ---
     # 为了不增加脚本复杂性，我们固定本地词库文件夹为 .temp_rime/rime_local/cn_dicts
