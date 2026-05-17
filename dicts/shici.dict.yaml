@@ -9021,7 +9021,6 @@ sort: by_weight
 乐国乐国	lè guó yuè guó	44
 乐和礼备	lè he lǐ bèi	100
 乐郊乐郊	lè jiāo lè jiāo	44
-乐节礼乐	lè jié lǐ lè	44
 乐酒无厌	lè jiǔ wú yàn	100
 乐且有融	lè qiě yǒu róng	100
 乐且有仪	lè qiě yǒu yí	44
@@ -16905,6 +16904,7 @@ sort: by_weight
 约何时再	yuē hé shí zài	100
 月华如练	yuè huá rú liàn	100
 阅江楼记	yuè jiāng lóu jì	44
+乐节礼乐	yuè jié lǐ yuè	44
 悦可饮者	yuè kě yǐn zhě	100
 月冷阑干	yuè lěng lán gān	100
 岳列天孙	yuè liè tiān sūn	100
@@ -102531,7 +102531,6 @@ sort: by_weight
 乐其可知也	lè qí kě zhī yě	100
 勒骑下平原	lè qí xià píng yuán	100
 了然无一碍	le rán wú yī ài	100
-乐人惜日促	lè rén xī rì cù	100
 乐任主人为	lè rèn zhǔ rén wéi	100
 乐如同队鱼	lè rú tóng duì yú	100
 乐善不防身	lè shàn bù fáng shēn	100
@@ -102611,9 +102610,9 @@ sort: by_weight
 乐职在中和	lè zhí zài zhōng hé	100
 乐助长歌逸	lè zhù zhǎng gē yì	100
 了自不相顾	le zì bù xiāng gù	100
-乐子之无家	lè zǐ zhī wú jiā	100
-乐子之无室	lè zǐ zhī wú shì	100
-乐子之无知	lè zǐ zhī wú zhī	100
+乐子之无家	lè zi zhī wú jiā	100
+乐子之无室	lè zi zhī wú shì	100
+乐子之无知	lè zi zhī wú zhī	100
 乐奏曾无歇	lè zòu céng wú xiē	100
 乐奏天恩满	lè zòu tiān ēn mǎn	100
 乐作林猿觑	lè zuò lín yuán qù	100
@@ -140437,7 +140436,7 @@ sort: by_weight
 如银践相映	rú yín jiàn xiāng yìng	100
 褥隐绣芙蓉	rù yǐn xiù fú róng	100
 汝颍俱宿好	rǔ yǐng jù sù hǎo	100
-汝应奴隶蔡	rǔ yīng nú lì cài
+汝应奴隶蔡	rǔ yīng nú lì cài	100
 汝颖无奇士	rǔ yǐng wú qí shì	100
 如用霍去病	rú yòng huò qù bìng	100
 入用随茗椀	rù yòng suí míng wǎn	100
@@ -215757,6 +215756,7 @@ sort: by_weight
 阅人清镜空	yuè rén qīng jìng kōng	100
 阅人如海鸥	yuè rén rú hǎi ōu	100
 阅人如阅川	yuè rén rú yuè chuān	100
+乐人惜日促	yuè rén xī rì cù	100
 越人遥捧翟	yuè rén yáo pěng dí	100
 越人语天姥	yuè rén yǔ tiān mǔ	100
 月如芳草远	yuè rú fāng cǎo yuǎn	100
@@ -261226,7 +261226,7 @@ sort: by_weight
 国风冲融迈三五	guó fēng chōng róng mài sān wǔ	100
 国风纯正不欹斜	guó fēng chún zhèng bù yī xié	100
 过扶风精舍旧居	guò fú fēng jīng shè jiù jū	100
-国府乐手弹箜篌	guó fǔ lè shǒu tán kōng hóu	100
+国府乐手弹箜篌	guó fǔ yuè shǒu tán kōng hóu	100
 国工施手岂须臾	guó gōng shī shǒu qǐ xū yú	100
 虢国夫人承主恩	guó guó fū rén chéng zhǔ ēn	100
 虢国门前闹如市	guó guó mén qián nào rú shì	100
@@ -275759,7 +275759,6 @@ sort: by_weight
 乐取於人以为善	lè qǔ yú rén yǐ wéi shàn	100
 乐全居士全于天	lè quán jū shì quán yú tiān	100
 乐全老子今禅伯	lè quán lǎo zi jīn chán bó	100
-乐人争唱卷中诗	lè rén zhēng chàng juǎn zhōng shī	100
 乐如南有嘉鱼时	lè rú nán yǒu jiā yú shí	100
 乐生东去终居赵	lè shēng dōng qù zhōng jū zhào	100
 乐是风波钓是闲	lè shì fēng bō diào shì xián	100
@@ -277010,13 +277009,13 @@ sort: by_weight
 两州风气此横分	liǎng zhōu fēng qì cǐ héng fēn	100
 两州何事偏相忆	liǎng zhōu hé shì piān xiāng yì	100
 凉州胡人为我吹	liáng zhōu hú rén wèi wǒ chuī	100
-梁州乐人世嫌旧	liáng zhōu lè rén shì xián jiù	100
 凉州七里十万家	liáng zhōu qī lǐ shí wàn jiā	100
 凉州声韵喜参差	liáng zhōu shēng yùn xǐ cēn cī	100
 凉州四边沙皓皓	liáng zhōu sì biān shā hào hào	100
 凉州陷来四十年	liáng zhōu xiàn lái sì shí nián	100
 凉州陷没知不知	liáng zhōu xiàn mò zhī bù zhī	100
 梁州一曲当时事	liáng zhōu yì qǔ dāng shí shì	100
+梁州乐人世嫌旧	liáng zhōu yuè rén shì xián jiù	100
 两株惨裂苔藓皮	liǎng zhū cǎn liè tái xiǎn pí	100
 两柱高张秋菌细	liǎng zhù gāo zhāng qiū jūn xì	100
 两株玉蕊明朝暾	liǎng zhū yù ruǐ míng cháo tūn	100
@@ -287661,7 +287660,7 @@ sort: by_weight
 强梁御史人觑步	qiáng liáng yù shǐ rén qù bù	100
 强梁者不得其死	qiáng liáng zhě bù dé qí sǐ	100
 墙柳谁家晒麹尘	qiáng liǔ shuí jiā shài qū chén	100
-强名水乐人人笑	qiáng míng shuǐ lè rén rén xiào	100
+强名水乐人人笑	qiáng míng shuǐ yuè rén rén xiào	100
 强名太守古徐州	qiáng míng tài shǒu gǔ xú zhōu	100
 墙内池亭万境闲	qiáng nèi chí tíng wàn jìng xián	100
 强能骑马出来无	qiáng néng qí mǎ chū lái wú	100
@@ -324155,6 +324154,7 @@ sort: by_weight
 越人翠被今何夕	yuè rén cuì bèi jīn hé xī	100
 阅人朦胧似有味	yuè rén méng lóng sì yǒu wèi	100
 越人偶见而奇之	yuè rén ǒu jiàn ér qí zhī	100
+乐人争唱卷中诗	yuè rén zhēng chàng juǎn zhōng shī	100
 越人自贡珊瑚树	yuè rén zì gòng shān hú shù	100
 月入孤舟夜半晴	yuè rù gū zhōu yè bàn qíng	100
 月入金樽动酒豪	yuè rù jīn zūn dòng jiǔ háo	100
