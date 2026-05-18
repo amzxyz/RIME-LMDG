@@ -57,7 +57,7 @@ from PySide6.QtWidgets import (
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.0.3beta"
+TOOL_VERSION = "v3.0.4beta"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -1831,14 +1831,14 @@ def _set_nested_val(d, path, val):
     curr[keys[-1]] = val
 # —— GitHub 链接 ——
 GITHUB_LINKS = [
-    ("万象拼音项目主页", "https://github.com/amzxyz/rime_wanxiang"),
+    ("万象拼音项目主页", "https://github.com/amzxyz/rime-wanxiang"),
     ("万象语法模型与词库工具", "https://github.com/amzxyz/RIME-LMDG"),
     ("CNB国内仓库",   "https://cnb.cool/amzxyz/rime-wanxiang"),
 ]
 
 # —— 在线更新相关常量 ——
 OWNER = "amzxyz"
-REPO = "rime_wanxiang"
+REPO = "rime-wanxiang"
 CNB_REPO = "rime-wanxiang"
 MODEL_REPO = "RIME-LMDG"
 DICT_TAG = "dict-nightly"
@@ -3180,7 +3180,7 @@ class CheckUpdateWorker(QThread):
             
         # 2. 检查方案组件版本 (修复 Latest 被自动构建 Tag 顶替的 Bug)
         try:
-            r = requests.get("https://api.github.com/repos/amzxyz/rime_wanxiang/releases", headers=headers, timeout=8)
+            r = requests.get("https://api.github.com/repos/amzxyz/rime-wanxiang/releases", headers=headers, timeout=8)
             if r.status_code == 200:
                 releases = r.json()
                 schema_tag = '未知'
@@ -3197,7 +3197,7 @@ class CheckUpdateWorker(QThread):
             results['schema'] = '网络错误'
         # 3. 检查词库与模型 (纯 GitHub 模式)
         try:
-            r = requests.get(f"https://api.github.com/repos/amzxyz/rime_wanxiang/releases/tags/{DICT_TAG}", headers=headers, timeout=8)
+            r = requests.get(f"https://api.github.com/repos/amzxyz/rime-wanxiang/releases/tags/{DICT_TAG}", headers=headers, timeout=8)
             if r.status_code == 200:
                 assets = r.json().get('assets', [])
                 remote_hash = next(((a.get('sha256', '') or (a.get('digest', '').split(':')[-1] if 'digest' in a else '')) for a in assets if 'dicts.zip' in a['name']), "")
