@@ -42,6 +42,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.coroutineScope
 import java.io.File
 import java.io.FileOutputStream
 import java.net.HttpURLConnection
@@ -184,8 +187,7 @@ fun WanxiangDownloaderApp() {
         )
     }
 
-    // 🌟 记忆读取：尝试从小账本里拿，拿不到再用默认值
-    var isPro by remember { mutableStateOf(sharedPref.getBoolean("is_pro", true)) }
+        var isPro by remember { mutableStateOf(sharedPref.getBoolean("is_pro", true)) }
     var auxScheme by remember { mutableStateOf(sharedPref.getString("aux_scheme", "zrm") ?: "zrm") }
     var downloadSource by remember { mutableStateOf(sharedPref.getString("download_source", "CNB") ?: "CNB") }
     var updateChannel by remember { mutableStateOf(sharedPref.getString("update_channel", "Stable") ?: "Stable") }
@@ -276,8 +278,12 @@ fun WanxiangDownloaderApp() {
         }
     }
 
-    var isDownloading by remember { mutableStateOf(false) }
-    var activeTasks by remember { mutableStateOf<List<TaskState>>(emptyList()) }
+    // 左侧主更新专用状态
+    var isMainDownloading by remember { mutableStateOf(false) }
+    var mainActiveTasks by remember { mutableStateOf<List<TaskState>>(emptyList()) }
+
+    // 右侧自定义专用状态
+    var customActiveTasks by remember { mutableStateOf<List<TaskState>>(emptyList()) }
     val coroutineScope = rememberCoroutineScope()
 
     val auxMap = mapOf("zrm" to "自然码", "wx" to "万象", "flypy" to "小鹤", "moqi" to "墨奇", "hanxin" to "汉心", "shouyou" to "首右", "shyplus" to "首右+", "tiger" to "虎码", "wubi" to "五笔")
@@ -287,8 +293,7 @@ fun WanxiangDownloaderApp() {
     var customTasks by remember { mutableStateOf(loadCustomTasks(sharedPref.getString("custom_tasks_data", "[]") ?: "[]")) }
 
     Column(modifier = Modifier.fillMaxSize()) {
-        // 🌟 物理隔离墙：顶层标签页
-        TabRow(
+                TabRow(
             selectedTabIndex = selectedTabIndex,
             containerColor = MorandiLightGreen,
             contentColor = MorandiDarkGreen
@@ -324,7 +329,7 @@ fun WanxiangDownloaderApp() {
                         modifier = Modifier.padding(12.dp).fillMaxWidth()
                     ) {
                         Column(modifier = Modifier.weight(1f)) {
-                            Text("🔧 更新器检测", fontWeight = FontWeight.Bold, color = Color.DarkGray, fontSize = 14.sp)
+                            Text("🔧 更新器自身检测", fontWeight = FontWeight.Bold, color = Color.DarkGray, fontSize = 14.sp)
                             Text(
                                 text = if (isCheckingUpdate) "正在检测云端..." 
                                        else if (cloudVersionName.isEmpty()) "未发现有效更新包"
@@ -430,15 +435,18 @@ fun WanxiangDownloaderApp() {
                             RadioButton(selected = !isPro, onClick = { isPro = false; sharedPref.edit().putBoolean("is_pro", false).apply() })
                             Text("Base版", fontSize = 14.sp)
                         }
+                        
                         if (isPro) {
                             Divider(color = MorandiLightGreen, modifier = Modifier.padding(vertical = 8.dp))
-                            FlowRow(modifier = Modifier.fillMaxWidth().padding(top = 8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            Text("⌨️ 辅助类型：", fontWeight = FontWeight.Bold, color = Color.DarkGray, fontSize = 13.sp, modifier = Modifier.padding(bottom = 4.dp))
+                            
+                            FlowRow(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                                 auxMap.forEach { (key, name) ->
                                     FilterChip(
                                         selected = (auxScheme == key), 
                                         onClick = { 
                                             auxScheme = key 
-                                            sharedPref.edit().putString("aux_scheme", key).apply() // 🌟 存入选择的辅助码
+                                            sharedPref.edit().putString("aux_scheme", key).apply() 
                                         }, 
                                         label = { Text(name, fontSize = 12.sp) }
                                     )
@@ -535,11 +543,11 @@ fun WanxiangDownloaderApp() {
                     "🧠 仅模型" to listOf(modelUrl)
                 )
 
-                AnimatedVisibility(visible = activeTasks.isNotEmpty()) {
+                                AnimatedVisibility(visible = mainActiveTasks.isNotEmpty()) {
                     Card(colors = CardDefaults.cardColors(containerColor = MorandiLightGreen), modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp)) {
                         Column(modifier = Modifier.padding(16.dp)) {
                             Text("📥 任务进度", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
-                            activeTasks.forEach { task ->
+                            mainActiveTasks.forEach { task ->
                                 Column(modifier = Modifier.padding(vertical = 4.dp)) {
                                     Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
                                         Text(task.title, fontSize = 12.sp, modifier = Modifier.weight(1f), maxLines = 1)
@@ -560,17 +568,25 @@ fun WanxiangDownloaderApp() {
                                 onClick = { 
                                     if (savedPaths.isEmpty()) return@Button 
                                     
-                                    // 🌟 强力拦截：如果包含了默认路径，且没给所有文件权限，直接弹窗拦截！
                                     if (savedPaths.contains("DEFAULT") && Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && !Environment.isExternalStorageManager()) {
                                         showPermissionDialog = true
                                         return@Button
                                     }
 
                                     val currentRules = excludeRulesText.lines().filter { it.isNotBlank() }
-                                    executeTasks(urls, coroutineScope, { isDownloading = it }, { activeTasks = it }, githubToken, savedPaths, context, currentRules) 
+                                                                        executeTasks(
+                                        urls = urls, 
+                                        scope = coroutineScope, 
+                                        setDownloading = { isMainDownloading = it }, 
+                                        setTasks = { mainActiveTasks = it }, 
+                                        token = githubToken, 
+                                        targetPaths = savedPaths, 
+                                        context = context, 
+                                        rules = currentRules
+                                    ) 
                                 },
                                 modifier = Modifier.weight(1f).height(48.dp),
-                                enabled = !isDownloading && savedPaths.isNotEmpty(),
+                                                                enabled = !isMainDownloading && savedPaths.isNotEmpty(),
                                 shape = RoundedCornerShape(8.dp)
                             ) { 
                                 Text(name, fontSize = 13.sp, fontWeight = FontWeight.Bold) 
@@ -580,7 +596,6 @@ fun WanxiangDownloaderApp() {
                 }
             }
         } else {
-            // 自定义模式 UI
             CustomModeTab(
                 customTasks = customTasks,
                 savedPaths = savedPaths,
@@ -588,17 +603,11 @@ fun WanxiangDownloaderApp() {
                     customTasks = newTasks
                     saveCustomTasks(newTasks, sharedPref)
                 },
-                // 🌟 新增：在这里接收自定义页面新授权的目录，并同步给底座
-                onNewPathAuthorized = { newPath ->
-                    val newPaths = (savedPaths + newPath).distinct()
-                    savedPaths = newPaths
-                    sharedPref.edit().putStringSet("deploy_paths", newPaths.toSet()).apply()
-                },
                 coroutineScope = coroutineScope,
-                setDownloading = { isDownloading = it },
-                setTasks = { activeTasks = it },
+                setDownloading = {},
+                setTasks = { customActiveTasks = it },
                 context = context,
-                activeTasks = activeTasks
+                activeTasks = customActiveTasks
             )
         }
     }
@@ -610,7 +619,6 @@ fun CustomModeTab(
     customTasks: List<CustomTask>,
     savedPaths: List<String>,
     onTasksChange: (List<CustomTask>) -> Unit,
-    onNewPathAuthorized: (String) -> Unit,
     coroutineScope: kotlinx.coroutines.CoroutineScope,
     setDownloading: (Boolean) -> Unit,
     setTasks: (List<TaskState>) -> Unit,
@@ -628,8 +636,7 @@ fun CustomModeTab(
         if (uri != null) {
             context.contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
             val pathStr = uri.toString()
-            onNewPathAuthorized(pathStr)
-            taskAwaitingPath?.let { taskId ->
+                        taskAwaitingPath?.let { taskId ->
                 val updated = customTasks.map { task ->
                     if (task.id == taskId) task.copy(boundPath = pathStr) else task
                 }
@@ -757,7 +764,6 @@ fun CustomModeTab(
                         Column(modifier = Modifier.padding(start = 12.dp, end = 12.dp, bottom = 12.dp)) {
                             Divider(color = MorandiLightGreen, modifier = Modifier.padding(bottom = 12.dp))
                             
-                            // 🌟 1. 任务别名：标签浮在上面，框压低到 38dp
                             Text("任务别名 (选填)", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 4.dp))
                             androidx.compose.foundation.text.BasicTextField(
                                 value = task.name,
@@ -773,7 +779,6 @@ fun CustomModeTab(
                             )
                             Spacer(modifier = Modifier.height(10.dp))
                             
-                            // 🌟 2. 下载链接：标签浮在上面，框压低到 38dp
                             Text("直链 URL 或 绝对路径 (.zip)", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 4.dp))
                             androidx.compose.foundation.text.BasicTextField(
                                 value = task.url,
@@ -789,7 +794,6 @@ fun CustomModeTab(
                             )
                             Spacer(modifier = Modifier.height(10.dp))
 
-                            // 🌟 3. 解压路径与配置按钮
                             Text("目标解压路径", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 4.dp))
                             Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
                                 androidx.compose.foundation.text.BasicTextField(
@@ -949,10 +953,9 @@ suspend fun downloadAndDeployTask(
                         val downloadedLen = java.util.concurrent.atomic.AtomicLong(0)
                         var lastUpdateTime = System.currentTimeMillis()
 
-                        kotlinx.coroutines.coroutineScope {
-                            // 开启 3 个并发协程
+                        coroutineScope {
                             val deferreds = (0 until threadCount).map { i ->
-                                kotlinx.coroutines.async(Dispatchers.IO) {
+                                async(Dispatchers.IO) {
                                     val start = i * chunkSize
                                     val end = if (i == threadCount - 1) totalSize - 1 else (start + chunkSize - 1)
                                     
@@ -1132,7 +1135,6 @@ suspend fun downloadAndDeployTask(
     }
 }
 
-// 🌟 物理强杀版普通复制逻辑
 fun copyNormal(src: File, dest: File, rules: List<Regex>, currentPath: String = "") {
     if (!dest.exists()) {
         dest.mkdirs()
@@ -1158,7 +1160,6 @@ fun copyNormal(src: File, dest: File, rules: List<Regex>, currentPath: String = 
     }
 }
 
-// 🌟 对抗安卓 SAF 幽灵缓存的完全体复制逻辑
 fun copySaf(context: Context, src: File, dest: DocumentFile, rules: List<Regex>, currentPath: String = "") {
     src.listFiles()?.forEach { file ->
         val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
