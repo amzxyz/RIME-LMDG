@@ -2160,7 +2160,7 @@ sort: by_weight
 冠蚌属	guān bàng shǔ	94
 冠鹎属	guān bēi shǔ	71
 管唇鱼	guǎn chún yú	82
-冠带鱼	guàn dài yú	67
+冠带鱼	guān dài yú	67
 冠鲽科	guān dié kē	54
 冠鲽属	guān dié shǔ	84
 管萼科	guǎn è kē	86
@@ -14559,7 +14559,7 @@ sort: by_weight
 高原鱼属	gāo yuán yú shǔ	6
 藁趾虎科	gǎo zhǐ hǔ kē	7
 高志龙属	gāo zhì lóng shǔ	8
-高知鲈属	gāo zhì lú shǔ	6
+高知鲈属	gāo zhī lú shǔ	6
 高柱花科	gāo zhù huā kē	6
 高柱花属	gāo zhù huā shǔ	8
 革鞍螨属	gé ān mǎn shǔ	8
@@ -15096,9 +15096,9 @@ sort: by_weight
 管唇鱼属	guǎn chún yú shǔ	6
 冠刺蛾属	guān cì é shǔ	6
 灌丛蜥属	guàn cóng xī shǔ	5
-冠带鲉属	guàn dài yóu shǔ	5
-冠带鱼科	guàn dài yú kē	6
-冠带鱼属	guàn dài yú shǔ	6
+冠带鲉属	guān dài yóu shǔ	5
+冠带鱼科	guān dài yú kē	6
+冠带鱼属	guān dài yú shǔ	6
 冠盗龙属	guān dào lóng shǔ	7
 管点扁鱼	guǎn diǎn biǎn yú	6
 管洞贝科	guǎn dòng bèi kē	7
@@ -33317,7 +33317,7 @@ sort: by_weight
 针杆藻属	zhēn gān zǎo shǔ	12
 真肛参科	zhēn gāng cān kē	7
 真革螨属	zhēn gé mǎn shǔ	7
-真冠带鱼	zhēn guàn dài yú	6
+真冠带鱼	zhēn guān dài yú	6
 真管螺属	zhēn guǎn luó shǔ	4
 针果芹属	zhēn guǒ qín shǔ	12
 真海豚属	zhēn hǎi tún shǔ	7
@@ -34539,8 +34539,8 @@ sort: by_weight
 阿兰达甲鱼	ā lán dá jiǎ yú	1
 阿里彩蝇属	ā lǐ cǎi yíng shǔ	1
 阿里欧雅鱼	ā lǐ ōu yǎ yú	1
+阿马加龙属	ā mǎ gā lóng shǔ	1
 阿玛加鳄属	ā mǎ jiā è shǔ	1
-阿马加龙属	ā mǎ jiā lóng shǔ	1
 阿马帕兵鲶	ā mǎ pà bīng nián	1
 阿玛斯龙属	ā mǎ sī lóng shǔ	1
 阿迈喀鳉属	ā mài kā jiāng shǔ	1
@@ -35018,7 +35018,7 @@ sort: by_weight
 凹片叶蝉属	āo piàn yè chán shǔ	1
 奥泊灰蝶属	ào pō huī dié shǔ	1
 凹鳍柄竺鲷	āo qí bǐng zhú diāo	1
-凹鳍冠带鱼	āo qí guàn dài yú	1
+凹鳍冠带鱼	āo qí guān dài yú	1
 凹鳍绵鳚属	āo qí mián wèi shǔ	1
 凹鳍牛尾鱼	āo qí niú wěi yú	1
 奥芮氏菌属	ào ruì shì jūn shǔ	1
@@ -42393,7 +42393,7 @@ sort: by_weight
 高原线虫草	gāo yuán xiàn chóng cǎo	1
 高云束腰蟹	gāo yún shù yāo xiè	1
 高掌折颚蟹	gāo zhǎng zhé è xiè	1
-高知锯鳞鱼	gāo zhì jù lín yú	1
+高知锯鳞鱼	gāo zhī jù lín yú	1
 高止山蟹属	gāo zhǐ shān xiè shǔ	1
 高株鹅观草	gāo zhū é guān cǎo	1
 高足杯虫属	gāo zú bēi chóng shǔ	1
@@ -47763,7 +47763,7 @@ sort: by_weight
 拉氏短枝鲶	lā shì duǎn zhī nián	1
 拉氏多鳍鱼	lā shì duō qí yú	1
 拉氏杆菌属	lā shì gǎn jūn shǔ	1
-拉氏冠带鱼	lā shì guàn dài yú	1
+拉氏冠带鱼	lā shì guān dài yú	1
 拉氏红娘鱼	lā shì hóng niáng yú	1
 拉氏红眼鱼	lā shì hóng yǎn yú	1
 拉氏棘花鮨	lā shì jí huā yì	1
@@ -60876,7 +60876,7 @@ sort: by_weight
 贞丰蹄盖蕨	zhēn fēng tí gài jué	1
 真副狮子鱼	zhēn fù shī zi yú	1
 针杆菊石属	zhēn gān jú shí shǔ	1
-真冠带鱼属	zhēn guàn dài yú shǔ	1
+真冠带鱼属	zhēn guān dài yú shǔ	1
 真管缨虫属	zhēn guǎn yīng chóng shǔ	1
 针盒珊瑚属	zhēn hé shān hú shǔ	1
 真厚角石属	zhēn hòu jiǎo shí shǔ	1
@@ -61927,9 +61927,9 @@ sort: by_weight
 阿留西亚螳属	ā liú xī yà táng shǔ	1
 阿鲁达巨龙属	ā lǔ dá jù lóng shǔ	1
 阿卢恩光唇鱼	ā lú ēn guāng chún yú	1
+阿马加巨龙属	ā mǎ gā jù lóng shǔ	1
 阿马格巨龙属	ā mǎ gé jù lóng shǔ	1
 阿马河兔脂鲤	ā mǎ hé tù zhī lǐ	1
-阿马加巨龙属	ā mǎ jiā jù lóng shǔ	1
 阿玛瘤尾虎属	ā mǎ liú wěi hǔ shǔ	1
 阿马隆魮脂鲤	ā mǎ lóng pí zhī lǐ	1
 阿玛裸眼蜥属	ā mǎ luǒ yǎn xī shǔ	1
