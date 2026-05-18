@@ -117,6 +117,7 @@ fun saveCustomTasks(tasks: List<CustomTask>, sharedPref: android.content.SharedP
     }
     sharedPref.edit().putString("custom_tasks_data", array.toString()).apply()
 }
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -187,7 +188,7 @@ fun WanxiangDownloaderApp() {
         )
     }
 
-        var isPro by remember { mutableStateOf(sharedPref.getBoolean("is_pro", true)) }
+    var isPro by remember { mutableStateOf(sharedPref.getBoolean("is_pro", true)) }
     var auxScheme by remember { mutableStateOf(sharedPref.getString("aux_scheme", "zrm") ?: "zrm") }
     var downloadSource by remember { mutableStateOf(sharedPref.getString("download_source", "CNB") ?: "CNB") }
     var updateChannel by remember { mutableStateOf(sharedPref.getString("update_channel", "Stable") ?: "Stable") }
@@ -262,7 +263,6 @@ fun WanxiangDownloaderApp() {
                     for (i in 0 until assets.length()) {
                         val asset = assets.getJSONObject(i)
                         val name = asset.getString("name")
-                        // 精准前缀正则提取
                         if (name.startsWith("Wanxiang-Updater-Android") && name.endsWith(".apk")) {
                             updaterDownloadUrl = asset.getString("browser_download_url")
                             val versionMatch = Regex("""Wanxiang-Updater-Android.*?(\d+\.\d+(\.\d+)?)""").find(name)
@@ -278,22 +278,21 @@ fun WanxiangDownloaderApp() {
         }
     }
 
-    // 左侧主更新专用状态
+    // 左侧主更新专用状态分离
     var isMainDownloading by remember { mutableStateOf(false) }
     var mainActiveTasks by remember { mutableStateOf<List<TaskState>>(emptyList()) }
 
-    // 右侧自定义专用状态
+    // 右侧自定义专用状态分离
     var customActiveTasks by remember { mutableStateOf<List<TaskState>>(emptyList()) }
     val coroutineScope = rememberCoroutineScope()
 
     val auxMap = mapOf("zrm" to "自然码", "wx" to "万象", "flypy" to "小鹤", "moqi" to "墨奇", "hanxin" to "汉心", "shouyou" to "首右", "shyplus" to "首右+", "tiger" to "虎码", "wubi" to "五笔")
 
-    // --- 新增：Tab状态与自定义任务状态 ---
     var selectedTabIndex by remember { mutableStateOf(0) }
     var customTasks by remember { mutableStateOf(loadCustomTasks(sharedPref.getString("custom_tasks_data", "[]") ?: "[]")) }
 
     Column(modifier = Modifier.fillMaxSize()) {
-                TabRow(
+        TabRow(
             selectedTabIndex = selectedTabIndex,
             containerColor = MorandiLightGreen,
             contentColor = MorandiDarkGreen
@@ -311,13 +310,11 @@ fun WanxiangDownloaderApp() {
         }
 
         if (selectedTabIndex == 0) {
-            // 原有的主界面内容
             Column(modifier = Modifier.padding(16.dp).verticalScroll(rememberScrollState()).weight(1f)) {
                 Text("📱 万象拼音更新器", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
                 Text("v$localVersionName • 全功能终极版", fontSize = 12.sp, color = Color.Gray)
                 Spacer(modifier = Modifier.height(16.dp))
 
-                // UI：版本对狙卡片
                 Card(
                     colors = CardDefaults.cardColors(containerColor = Color.White), 
                     border = CardDefaults.outlinedCardBorder(true), 
@@ -356,7 +353,6 @@ fun WanxiangDownloaderApp() {
                     }
                 }
 
-                // 目标路径卡片
                 Card(
                     colors = CardDefaults.cardColors(containerColor = MorandiLightGreen), 
                     border = CardDefaults.outlinedCardBorder(true), 
@@ -415,7 +411,6 @@ fun WanxiangDownloaderApp() {
                 }
                 Spacer(modifier = Modifier.height(12.dp))
 
-                // 方案与通道选择
                 Card(colors = CardDefaults.cardColors(containerColor = Color.White), border = CardDefaults.outlinedCardBorder(true), modifier = Modifier.fillMaxWidth()) {
                     Column(modifier = Modifier.padding(16.dp)) {
                         Text("🚀 更新通道", fontWeight = FontWeight.Bold, color = Color.DarkGray)
@@ -457,7 +452,6 @@ fun WanxiangDownloaderApp() {
                 }
                 Spacer(modifier = Modifier.height(12.dp))
 
-                // 高级规则卡片
                 Card(colors = CardDefaults.cardColors(containerColor = Color.White), border = CardDefaults.outlinedCardBorder(true), modifier = Modifier.fillMaxWidth()) {
                     Column(modifier = Modifier.fillMaxWidth()) {
                         TextButton(
@@ -494,7 +488,6 @@ fun WanxiangDownloaderApp() {
                 }
                 Spacer(modifier = Modifier.height(12.dp))
 
-                // 下载源及 Token 配置
                 Card(colors = CardDefaults.cardColors(containerColor = Color.White), border = CardDefaults.outlinedCardBorder(true), modifier = Modifier.fillMaxWidth()) {
                     Column(modifier = Modifier.padding(16.dp)) {
                         Text("🌐 下载源配置", fontWeight = FontWeight.Bold, color = Color.DarkGray)
@@ -525,7 +518,6 @@ fun WanxiangDownloaderApp() {
                 }
                 Spacer(modifier = Modifier.height(16.dp))
 
-                // 核心下载逻辑变量生成
                 val schemeStr = if (isPro) auxScheme else "base"
                 val activeTag = if (downloadSource == "CNB") (if (updateChannel == "Stable") latestStableTag else "v1.0.0") else (if (updateChannel == "Stable") latestStableTag else "dict-nightly")
                 val baseDownloadUrl = if (downloadSource == "CNB") "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$activeTag" else "https://github.com/amzxyz/rime-wanxiang/releases/download/$activeTag"
@@ -543,7 +535,7 @@ fun WanxiangDownloaderApp() {
                     "🧠 仅模型" to listOf(modelUrl)
                 )
 
-                                AnimatedVisibility(visible = mainActiveTasks.isNotEmpty()) {
+                AnimatedVisibility(visible = mainActiveTasks.isNotEmpty()) {
                     Card(colors = CardDefaults.cardColors(containerColor = MorandiLightGreen), modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp)) {
                         Column(modifier = Modifier.padding(16.dp)) {
                             Text("📥 任务进度", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
@@ -574,7 +566,7 @@ fun WanxiangDownloaderApp() {
                                     }
 
                                     val currentRules = excludeRulesText.lines().filter { it.isNotBlank() }
-                                                                        executeTasks(
+                                    executeTasks(
                                         urls = urls, 
                                         scope = coroutineScope, 
                                         setDownloading = { isMainDownloading = it }, 
@@ -586,7 +578,7 @@ fun WanxiangDownloaderApp() {
                                     ) 
                                 },
                                 modifier = Modifier.weight(1f).height(48.dp),
-                                                                enabled = !isMainDownloading && savedPaths.isNotEmpty(),
+                                enabled = !isMainDownloading && savedPaths.isNotEmpty(),
                                 shape = RoundedCornerShape(8.dp)
                             ) { 
                                 Text(name, fontSize = 13.sp, fontWeight = FontWeight.Bold) 
@@ -636,7 +628,7 @@ fun CustomModeTab(
         if (uri != null) {
             context.contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
             val pathStr = uri.toString()
-                        taskAwaitingPath?.let { taskId ->
+            taskAwaitingPath?.let { taskId ->
                 val updated = customTasks.map { task ->
                     if (task.id == taskId) task.copy(boundPath = pathStr) else task
                 }
@@ -899,21 +891,15 @@ suspend fun downloadAndDeployTask(
         var success = false
         var lastErrorMsg = ""
 
-        // 判断是不是本地路径 (以 / 或 file:// 或 content:// 开头)
         val isLocalFile = task.url.startsWith("/") || task.url.startsWith("file://") || task.url.startsWith("content://")
 
         if (isLocalFile) {
-
             try {
                 withContext(Dispatchers.Main) { 
                     task.status = "读取本地文件..." 
-                    task.progress = -1f // 无限流动动画
+                    task.progress = -1f 
                 }
-                
-                // 兼容普通路径和 content URI
                 val uri = if (task.url.startsWith("/")) Uri.fromFile(File(task.url)) else Uri.parse(task.url)
-                
-                // 利用 ContentResolver 流式复制到沙盒中，完美兼容安卓各种玄学权限
                 context.contentResolver.openInputStream(uri)?.use { input ->
                     FileOutputStream(tmpFile).use { output ->
                         input.copyTo(output)
@@ -934,24 +920,55 @@ suspend fun downloadAndDeployTask(
                     withContext(Dispatchers.Main) { 
                         task.status = if (attempt > 1) "重试中($attempt/3)" else "连接中..." 
                     }
-                    val url = URL(task.url)
                     
-                    // 1. 发送 HEAD 请求，就像浏览器一样先探测文件有多大
+                    // 🌟 1. 雷达追踪：手动追踪 302 重定向，直达真正的 CDN 物理资源地址
+                    var finalUrlStr = task.url
+                    var redirectCount = 0
+                    while (redirectCount < 5) {
+                        val redirectConn = URL(finalUrlStr).openConnection() as HttpURLConnection
+                        redirectConn.instanceFollowRedirects = false 
+                        redirectConn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+                        if (finalUrlStr.contains("github.com") && token.isNotBlank()) {
+                            redirectConn.setRequestProperty("Authorization", "Bearer $token")
+                        }
+                        redirectConn.requestMethod = "HEAD"
+                        redirectConn.connectTimeout = 10000
+                        
+                        val code = redirectConn.responseCode
+                        if (code == 301 || code == 302 || code == 303 || code == 307 || code == 308) {
+                            val location = redirectConn.getHeaderField("Location")
+                            if (!location.isNullOrBlank()) {
+                                finalUrlStr = if (location.startsWith("http")) location else URL(URL(finalUrlStr), location).toString()
+                                redirectCount++
+                                redirectConn.disconnect()
+                                continue
+                            }
+                        }
+                        redirectConn.disconnect()
+                        break
+                    }
+                    
+                    val url = URL(finalUrlStr)
+                    
+                    // 2. 用剥离出来的真实 CDN 地址去向服务器索要文件真实体积
                     var totalSize = 0L
                     val sizeConn = url.openConnection() as HttpURLConnection
-                    sizeConn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
-                    if (task.url.contains("github.com") && token.isNotBlank()) {
+                    sizeConn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+                    if (finalUrlStr.contains("github.com") && token.isNotBlank()) {
                         sizeConn.setRequestProperty("Authorization", "Bearer $token")
                     }
                     sizeConn.requestMethod = "HEAD" 
-                    totalSize = sizeConn.contentLength.toLong()
+                    sizeConn.connectTimeout = 10000
+                    if (sizeConn.responseCode == 200 || sizeConn.responseCode == 206) {
+                        totalSize = sizeConn.contentLength.toLong()
+                    }
                     sizeConn.disconnect()
 
                     if (totalSize > 0) {
                         val threadCount = 3
                         val chunkSize = totalSize / threadCount
                         val downloadedLen = java.util.concurrent.atomic.AtomicLong(0)
-                        var lastUpdateTime = System.currentTimeMillis()
+                        val lastUpdateTime = java.util.concurrent.atomic.AtomicLong(System.currentTimeMillis())
 
                         coroutineScope {
                             val deferreds = (0 until threadCount).map { i ->
@@ -959,9 +976,9 @@ suspend fun downloadAndDeployTask(
                                     val start = i * chunkSize
                                     val end = if (i == threadCount - 1) totalSize - 1 else (start + chunkSize - 1)
                                     
-                                    val partConn = URL(task.url).openConnection() as HttpURLConnection
-                                    partConn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
-                                    if (task.url.contains("github.com") && token.isNotBlank()) {
+                                    val partConn = URL(finalUrlStr).openConnection() as HttpURLConnection
+                                    partConn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+                                    if (finalUrlStr.contains("github.com") && token.isNotBlank()) {
                                         partConn.setRequestProperty("Authorization", "Bearer $token")
                                     }
                                     partConn.setRequestProperty("Range", "bytes=$start-$end")
@@ -977,9 +994,9 @@ suspend fun downloadAndDeployTask(
                                                 output.write(data, 0, count)
                                                 val currentDownloaded = downloadedLen.addAndGet(count.toLong())
                                                 val currentTime = System.currentTimeMillis()
-                                                if (currentTime - lastUpdateTime > 150) {
-                                                    lastUpdateTime = currentTime
-                                                    withContext(Dispatchers.Main) {
+                                                if (currentTime - lastUpdateTime.get() > 150) {
+                                                    lastUpdateTime.set(currentTime)
+                                                    launch(Dispatchers.Main) {
                                                         task.progress = currentDownloaded.toFloat() / totalSize
                                                         task.status = "${String.format("%.1f", currentDownloaded/1024.0/1024.0)}MB (多线程)"
                                                     }
@@ -996,17 +1013,24 @@ suspend fun downloadAndDeployTask(
                             for (i in 0 until threadCount) {
                                 val partFile = File(stagingDir, "${tmpFile.name}.part$i")
                                 partFile.inputStream().buffered().use { it.copyTo(output) }
-                                partFile.delete() // 阅后即焚，不留垃圾
+                                partFile.delete() 
                             }
                         }
                         withContext(Dispatchers.Main) { task.progress = 1f }
 
                     } else {
+                        // 🌟 3. 单线程兜底修复：完全灌注进度色彩计算
                         val conn = url.openConnection() as HttpURLConnection
-                        conn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
-                        if (task.url.contains("github.com") && token.isNotBlank()) {
+                        conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+                        if (finalUrlStr.contains("github.com") && token.isNotBlank()) {
                             conn.setRequestProperty("Authorization", "Bearer $token")
                         }
+                        
+                        val fallbackSize = conn.contentLength.toLong()
+                        withContext(Dispatchers.Main) { 
+                            task.progress = if (fallbackSize > 0) 0f else -1f 
+                        }
+
                         conn.inputStream.buffered().use { input ->
                             FileOutputStream(tmpFile).buffered().use { output ->
                                 val data = ByteArray(131072)
@@ -1019,11 +1043,19 @@ suspend fun downloadAndDeployTask(
                                     val currentTime = System.currentTimeMillis()
                                     if (currentTime - lastUpdateTime > 150) {
                                         lastUpdateTime = currentTime
-                                        withContext(Dispatchers.Main) { task.status = "${String.format("%.1f", downloaded/1024.0/1024.0)}MB (单线)" }
+                                        launch(Dispatchers.Main) { 
+                                            if (fallbackSize > 0) {
+                                                task.progress = downloaded.toFloat() / fallbackSize
+                                                task.status = "${String.format("%.1f", downloaded/1024.0/1024.0)}MB / ${String.format("%.1f", fallbackSize/1024.0/1024.0)}MB"
+                                            } else {
+                                                task.status = "${String.format("%.1f", downloaded/1024.0/1024.0)}MB (单线)" 
+                                            }
+                                        }
                                     }
                                 }
                             }
                         }
+                        withContext(Dispatchers.Main) { task.progress = 1f }
                     }
 
                     success = true
@@ -1143,7 +1175,6 @@ fun copyNormal(src: File, dest: File, rules: List<Regex>, currentPath: String = 
         val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
         val targetFile = File(dest, file.name)
         
-        // 护盾检测
         if (rules.any { it.containsMatchIn(relPath) } && targetFile.exists()) {
             return@forEach
         }
@@ -1151,7 +1182,6 @@ fun copyNormal(src: File, dest: File, rules: List<Regex>, currentPath: String = 
         if (file.isDirectory) {
             copyNormal(file, targetFile, rules, relPath)
         } else {
-            // 🔪 物理级强力斩杀：不管成不成功，先发个 delete 指令打碎系统文件锁
             if (targetFile.exists()) {
                 targetFile.delete()
             }
@@ -1164,13 +1194,11 @@ fun copySaf(context: Context, src: File, dest: DocumentFile, rules: List<Regex>,
     src.listFiles()?.forEach { file ->
         val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
         
-        // 护盾检测
         if (rules.any { it.containsMatchIn(relPath) } && dest.findFile(file.name) != null) {
             return@forEach
         }
         
         if (file.isDirectory) {
-            // 👻 幽灵缓存对抗：找不到 -> 新建 -> 失败的话强行再找一次！
             var nextDest = dest.findFile(file.name)
             if (nextDest == null) {
                 nextDest = dest.createDirectory(file.name)
@@ -1182,18 +1210,15 @@ fun copySaf(context: Context, src: File, dest: DocumentFile, rules: List<Regex>,
                 throw Exception("系统锁定了目录:${file.name}")
             }
         } else {
-            // 🔪 暴力摧毁旧文件
             val existingFile = dest.findFile(file.name)
             if (existingFile != null && existingFile.exists()) {
-                existingFile.delete() // 强力删除旧文件
+                existingFile.delete() 
             }
             
-            // 👻 再次对抗幽灵缓存：如果新建文件返回空，说明缓存说没删干净，那就再把它找出来硬覆盖！
             var newDoc = dest.createFile("*/*", file.name)
             if (newDoc == null) newDoc = dest.findFile(file.name)
             
             if (newDoc != null) {
-                // "wt" 模式：写入并截断清空（最强硬的覆写模式）
                 context.contentResolver.openOutputStream(newDoc.uri, "wt")?.use { out -> 
                     file.inputStream().use { it.copyTo(out) } 
                 } ?: throw Exception("文件流被占用拒绝写入:${file.name}")
