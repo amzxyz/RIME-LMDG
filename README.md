@@ -41,6 +41,8 @@
 **参数**：
 配置如下：
 
+注意该参数只适用于万象词库，别的词库可根据实际需求微调！
+
 ```
 __include: octagram   #启用语法模型
 #语法模型
@@ -50,7 +52,7 @@ octagram:
       language: wanxiang-lts-zh-hans
       collocation_max_length: 8
       collocation_min_length: 2
-      collocation_penalty: -5
+      collocation_penalty: -15
       non_collocation_penalty: -1
       weak_collocation_penalty: -100
       rear_penalty: -10
