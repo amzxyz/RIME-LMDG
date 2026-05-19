@@ -32,7 +32,6 @@ sort: by_weight
 阿醋美沙朵	ā cù měi shā duǒ	100
 阿達馬導數	ā dá mǎ dǎo shù	100
 阿達馬矩陣	ā dá mǎ jǔ zhèn	100
-阿達瑪矩陣	ā dá mǎ jǔ zhèn	100
 阿達姆斯圓	ā dá mǔ sī yuán	100
 阿德福韋酯	ā dé fú wéi zhǐ	100
 阿德門圖斯	ā dé mén tú sī	100
@@ -65,7 +64,6 @@ sort: by_weight
 阿弗他潰瘍	ā fú tā kuì yáng	100
 阿弗他咽炎	ā fú tā yān yán	100
 阿呋唑嗪片	ā fū zuò qín piàn	100
-阿岡二氏法	ā gāng èr shì fǎ	100
 阿格二氏法	ā gé èr shì fǎ	100
 阿格蘭德法	ā gé lán dé fǎ	100
 啊還有後續	a hái yǒu hòu xù	100
@@ -103,8 +101,8 @@ sort: by_weight
 阿羅二氏徵	ā luó èr shì zhēng	100
 阿羅氏瞳孔	ā luó shì tóng kǒng	100
 阿洛西林鈉	ā luò xī lín nà	100
+阿馬加定律	ā mǎ gā dìng lǜ	100
 阿馬格定律	ā mǎ gé dìng lǜ	100
-阿馬加定律	ā mǎ jiā dìng lǜ	100
 阿米巴痢疾	ā mǐ bā lì jí	100
 阿米巴膿腫	ā mǐ bā nóng zhǒng	100
 阿米洛利片	ā mǐ luò lì piàn	100
@@ -2402,6 +2400,7 @@ sort: by_weight
 半索動物門	bàn suǒ dòng wù mén	100
 班台萊耶夫	bān tái lái yé fū	100
 班坦戈科託	bān tǎn gē kē tuō	100
+半條命似的	bàn tiáo mìng shì de	100
 半同步軌道	bàn tóng bù guǐ dào	100
 半透半反鏡	bàn tòu bàn fǎn jìng	100
 斑頭綠翅鴨	bān tóu lǜ chì yā	100
@@ -2585,6 +2584,7 @@ sort: by_weight
 爆表的顏值	bào biǎo de yán zhí	100
 薄冰上履過	báo bīng shàng lǚ guò	100
 薄餅狀穹丘	báo bǐng zhuàng qióng qiū	100
+報菜名似的	bào cài míng shì de	100
 飽餐了一頓	bǎo cān le yí dùn	100
 飽餐一頓後	bǎo cān yí dùn hòu	100
 保產無憂散	bǎo chǎn wú yōu sàn	100
@@ -5731,6 +5731,7 @@ sort: by_weight
 不存在的爽	bù cún zài de shuǎng	100
 不存在了的	bù cún zài le de	100
 不存在人物	bù cún zài rén wù	100
+不存在似的	bù cún zài shì de	100
 不存在事物	bù cún zài shì wù	100
 不錯的兼職	bú cuò de jiān zhí	100
 不錯的主意	bú cuò de zhǔ yi	100
@@ -5918,6 +5919,7 @@ sort: by_weight
 不凡的人生	bù fán de rén shēng	100
 不放的時候	bú fàng de shí hou	100
 不放回抽樣	bú fàng huí chōu yàng	100
+不放心似的	bú fàng xīn shì de	100
 不放在心上	bú fàng zài xīn shàng	100
 不放在眼裡	bú fàng zài yǎn lǐ	100
 不菲的財富	bù fěi de cái fù	100
@@ -6396,6 +6398,7 @@ sort: by_weight
 不趨炎附勢	bù qū yán fù shì	100
 不屈之祭司	bù qū zhī jì sī	100
 不確定的事	bú què dìng de shì	100
+不確定似的	bú què dìng shì de	100
 不確定事件	bú què dìng shì jiàn	100
 不確定事實	bú què dìng shì shí	100
 不確定性大	bú què dìng xìng dà	100
@@ -6525,6 +6528,7 @@ sort: by_weight
 不死矯亂論	bù sǐ jiǎo luàn lùn	100
 布斯曼方程	bù sī màn fāng chéng	100
 不似少年遊	bú sì shào nián yóu	100
+不死心似的	bù sǐ xīn shì de	100
 不死也殘廢	bù sǐ yě cán fèi	100
 布斯陰道鏡	bù sī yīn dào jìng	100
 不似在人間	bú sì zài rén jiān	100
@@ -6763,6 +6767,7 @@ sort: by_weight
 不要亂動啊	bú yào luàn dòng a	100
 不要罵我哦	bú yào mà wǒ o	100
 不要面子的	bú yào miàn zi de	100
+不要命似的	bú yào mìng shì de	100
 不要那麼土	bú yào nà me tǔ	100
 不要輕易去	bú yào qīng yì qù	100
 不要去理會	bú yào qù lǐ huì	100
@@ -6837,6 +6842,7 @@ sort: by_weight
 不怨天尤人	bú yuàn tiān yóu rén	100
 不願意回憶	bú yuàn yì huí yì	100
 不願意理他	bú yuàn yì lǐ tā	100
+不願意似的	bú yuàn yì shì de	100
 不願做奴隸	bú yuàn zuò nú lì	100
 不約而同地	bù yuē ér tóng de	100
 不孕不育科	bú yùn bú yù kē	100
@@ -10183,6 +10189,7 @@ sort: by_weight
 出口和投資	chū kǒu hé tóu zī	100
 儲庫營衚衕	chǔ kù yíng hú tòng	100
 出來的人物	chū lái de rén wù	100
+出來了似的	chū lái le shì de	100
 出了不少力	chū le bù shǎo lì	100
 出了大問題	chū le dà wèn tí	100
 出了地鐵站	chū le dì tiě zhàn	100
@@ -10321,8 +10328,8 @@ sort: by_weight
 楚王好細腰	chǔ wáng hǎo xì yāo	100
 楚王司馬瑋	chǔ wáng sī mǎ wěi	100
 廚王爭霸賽	chú wáng zhēng bà sài	100
-出位樂人谷	chū wèi lè rén gǔ	100
 儲位密建法	chǔ wèi mì jiàn fǎ	100
+出位樂人谷	chū wèi yuè rén gǔ	100
 初五拜財神	chū wǔ bài cái shén	100
 初五啟市錄	chū wǔ qǐ shì lù	100
 處無期徒刑	chù wú qī tú xíng	100
@@ -12038,6 +12045,7 @@ sort: by_weight
 大海的顏色	dà hǎi de yán sè	100
 大海裡撈針	dà hǎi lǐ lāo zhēn	100
 打還是不打	dǎ hái shì bù dǎ	100
+大孩子似的	dà hái zi shì de	100
 大寒犯肺證	dà hán fàn fèi zhèng	100
 大寒肺熱證	dà hán fèi rè zhèng	100
 大漢和辭典	dà hàn hé cí diǎn	100
@@ -12111,6 +12119,7 @@ sort: by_weight
 打擊的力度	dǎ jī de lì dù	100
 大集法門經	dà jí fǎ mén jīng	100
 大戟各等分	dà jǐ gè děng fēn	100
+打雞血似的	dǎ jī xiě shì de	100
 打擊樂協會	dǎ jī yuè xié huì	100
 大薊止血片	dà jì zhǐ xuè piàn	100
 打架吧鬼神	dǎ jià ba guǐ shén	100
@@ -12243,6 +12252,7 @@ sort: by_weight
 大民族主義	dà mín zú zhǔ yì	100
 大明混一圖	dà míng hùn yī tú	100
 打磨到極致	dǎ mó dào jí zhì	100
+打磨過似的	dǎ mó guò shì de	100
 達摩破相論	dá mó pò xiàng lùn	100
 達摩血脈論	dá mó xuè mài lùn	100
 大拇指朝下	dà mǔ zhǐ cháo xià	100
@@ -12654,6 +12664,7 @@ sort: by_weight
 代碼的語言	dài mǎ de yǔ yán	100
 代碼壞味道	dài mǎ huài wèi dào	100
 代碼片段庫	dài mǎ piàn duàn kù	100
+代碼託管站	dài mǎ tuō guǎn zhàn	100
 代麥綜合徵	dài mài zōng hé zhēng	100
 戴美弗定理	dài měi fú dìng lǐ	100
 帶魔杖的人	dài mó zhàng de rén	100
@@ -13468,6 +13479,7 @@ sort: by_weight
 到本世紀初	dào běn shì jì chū	100
 到本世紀末	dào běn shì jì mò	100
 道本語語法	dào běn yǔ yǔ fǎ	100
+倒閉了似的	dǎo bì le shì de	100
 到比賽結束	dào bǐ sài jié shù	100
 到別的地方	dào bié de dì fāng	100
 島倉千代子	dǎo cāng qiān dài zǐ	100
@@ -16112,6 +16124,7 @@ sort: by_weight
 頂葉後動脈	dǐng yè hòu dòng mài	100
 頂葉前動脈	dǐng yè qián dòng mài	100
 定一段時間	dìng yí duàn shí jiān	100
+定義個按鍵	dìng yì gè àn jiàn	100
 釘一個釘子	dīng yí gè dīng zi	100
 定義及分類	dìng yì jí fēn lèi	100
 丁伊拉賀教	dīng yī lā hè jiào	100
@@ -16515,6 +16528,7 @@ sort: by_weight
 豆腐的營養	dòu fu de yíng yǎng	100
 豆腐果苷片	dòu fu guǒ gān piàn	100
 豆腐火腩煲	dòu fu huǒ nǎn bāo	100
+豆腐塊似的	dòu fu kuài shì de	100
 都付笑談中	dōu fù xiào tán zhōng	100
 都感覺不到	dōu gǎn jué bú dào	100
 都幹什麼了	dōu gàn shén me le	100
@@ -16742,7 +16756,7 @@ sort: by_weight
 獨家的記憶	dú jiā de jì yì	100
 渡嘉敷來夢	dù jiā fū lái mèng	100
 獨家供應商	dú jiā gōng yìng shāng	100
-獨家冠名商	dú jiā guān míng shāng	100
+獨家冠名商	dú jiā guàn míng shāng	100
 獨家經銷商	dú jiā jīng xiāo shāng	100
 獨家經營權	dú jiā jīng yíng quán	100
 度假區高架	dù jià qū gāo jià	100
@@ -17593,7 +17607,7 @@ sort: by_weight
 多的不得了	duō de bù dé liǎo	100
 多得不得了	duō de bù dé liǎo	100
 躲得了一時	duǒ de liǎo yì shí	100
-奪得三冠王	duó dé sān guān wáng	100
+奪得三冠王	duó dé sān guàn wáng	100
 奪得世界盃	duó de shì jiè bēi	100
 多的是女人	duō de shì nǚ rén	100
 多得數不清	duō de shǔ bù qīng	100
@@ -19264,6 +19278,7 @@ sort: by_weight
 法爾斯特島	fǎ ěr sī tè dǎo	100
 發發朋友圈	fā fā péng you quān	100
 發反反覆覆	fā fǎn fǎn fù fù	100
+發瘋了似的	fā fēng le shì de	100
 發福的身材	fā fú de shēn cái	100
 法福二氏病	fǎ fú èr shì bìng	100
 發改等部門	fā gǎi děng bù mén	100
@@ -19403,6 +19418,7 @@ sort: by_weight
 發生的時間	fā shēng de shí jiān	100
 發生關係後	fā shēng guān xì hòu	100
 發生過的事	fā shēng guò de shì	100
+發生過似的	fā shēng guò shì de	100
 發生糾紛後	fā shēng jiū fēn hòu	100
 發生了口角	fā shēng le kǒu jué	100
 發生了爭執	fā shēng le zhēng zhí	100
@@ -19430,6 +19446,7 @@ sort: by_weight
 發現和創造	fā xiàn hé chuàng zào	100
 發現和解決	fā xiàn hé jiě jué	100
 發現了商機	fā xiàn le shāng jī	100
+發現了似的	fā xiàn le shì de	100
 法線式方程	fǎ xiàn shì fāng chéng	100
 發現式學習	fā xiàn shì xué xí	100
 發現問題後	fā xiàn wèn tí hòu	100
@@ -24252,6 +24269,7 @@ sort: by_weight
 橄鈦輝長岩	gǎn tài huī cháng yán	100
 肝泰舒膠囊	gān tài shū jiāo náng	100
 肝糖儲積症	gān táng chǔ jī zhèng	100
+趕趟兒似的	gǎn tàng er shì de	100
 肝糖蓄積症	gān táng xù jī zhèng	100
 感特靈膠囊	gǎn tè líng jiāo náng	100
 甘特圖控件	gān tè tú kòng jiàn	100
@@ -24460,7 +24478,6 @@ sort: by_weight
 肛門環縮術	gāng mén huán suō shù	100
 肛門環扎術	gāng mén huán zhā shù	100
 肛門瘙癢症	gāng mén sào yǎng zhèng	100
-肛門搔癢症	gāng mén sāo yǎng zhèng	100
 肛門溼瘍病	gāng mén shī yáng bìng	100
 岡南飛行場	gāng nán fēi xíng chǎng	100
 崗前培訓班	gǎng qián péi xùn bān	100
@@ -25209,7 +25226,7 @@ sort: by_weight
 高質量黨建	gāo zhì liàng dǎng jiàn	100
 高質量見效	gāo zhì liàng jiàn xiào	100
 高職升本科	gāo zhí shēng běn kē	100
-高知識分子	gāo zhì shí fēn zǐ	100
+高知識分子	gāo zhī shi fèn zǐ	100
 高脂血症型	gāo zhī xuè zhèng xíng	100
 高職專科批	gāo zhí zhuān kē pī	100
 高中或中專	gāo zhōng huò zhōng zhuān	100
@@ -25377,6 +25394,7 @@ sort: by_weight
 各金融機構	gè jīn róng jī gòu	100
 各景區景點	gè jǐng qū jǐng diǎn	100
 各經營單位	gè jīng yíng dān wèi	100
+割韭菜似的	gē jiǔ cài shì de	100
 歌劇合唱團	gē jù hé chàng tuán	100
 各居民小區	gè jū mín xiǎo qū	100
 歌劇評論家	gē jù píng lùn jiā	100
@@ -25451,6 +25469,7 @@ sort: by_weight
 各旅遊企業	gè lǚ yóu qǐ yè	100
 個美麗城市	gè měi lì chéng shì	100
 歌門的榮光	gē mén de róng guāng	100
+哥們兒似的	gē men er shì de	100
 各民主黨派	gè mín zhǔ dǎng pài	100
 革命鬥爭史	gé mìng dòu zhēng shǐ	100
 革命和建設	gé mìng hé jiàn shè	100
@@ -25715,6 +25734,7 @@ sort: by_weight
 給最愛的你	gěi zuì ài de nǐ	100
 給最愛的人	gěi zuì ài de rén	100
 根癌農桿菌	gēn ái nóng gǎn jūn	100
+跟北京似的	gēn běi jīng shì de	100
 根本不是事	gēn běn bú shì shì	100
 根本不現實	gēn běn bú xiàn shí	100
 根本的問題	gēn běn de wèn tí	100
@@ -25723,16 +25743,26 @@ sort: by_weight
 根本沒有路	gēn běn méi yǒu lù	100
 根本性變革	gēn běn xìng biàn gé	100
 根本攢不下	gēn běn zǎn bú xià	100
+跟便秘似的	gēn biàn mì shì de	100
 跟別的男人	gēn bié de nán rén	100
 跟不上步伐	gēn bú shàng bù fá	100
 跟不上形勢	gēn bú shàng xíng shì	100
 跟蒼蠅一樣	gēn cāng ying yí yàng	100
+跟吵架似的	gēn chǎo jià shì de	100
+跟抽筋似的	gēn chōu jīn shì de	100
+跟打架似的	gēn dǎ jià shì de	100
+跟打仗似的	gēn dǎ zhàng shì de	100
 跟打仗一樣	gēn dǎ zhàng yí yàng	100
 根達綜合徵	gēn dá zōng hé zhēng	100
+跟盜版似的	gēn dào bǎn shì de	100
 根的判別式	gēn de pàn bié shì	100
 跟跌不跟漲	gēn diē bù gēn zhǎng	100
+跟度假似的	gēn dù jià shì de	100
 跟隊友一起	gēn duì yǒu yì qǐ	100
 跟粉絲互動	gēn fěn sī hù dòng	100
+跟瘋狗似的	gēn fēng gǒu shì de	100
+跟趕場似的	gēn gǎn chǎng shì de	100
+跟趕集似的	gēn gǎn jí shì de	100
 根谷美智子	gēn gǔ měi zhì zǐ	100
 跟骨牽引術	gēn gǔ qiān yǐn shù	100
 跟骨切骨術	gēn gǔ qiè gǔ shù	100
@@ -25747,7 +25777,10 @@ sort: by_weight
 根管填充器	gēn guǎn tián chōng qì	100
 跟閨蜜逛街	gēn guī mì guàng jiē	100
 跟國際接軌	gēn guó jì jiē guǐ	100
+跟過節似的	gēn guò jié shì de	100
+跟耗子似的	gēn hào zi shì de	100
 根河林業局	gēn hé lín yè jú	100
+跟猴兒似的	gēn hóu er shì de	100
 跟家長溝通	gēn jiā zhǎng gōu tōng	100
 根間截骨術	gēn jiān jié gǔ shù	100
 根尖切除術	gēn jiān qiē chú shù	100
@@ -25760,18 +25793,25 @@ sort: by_weight
 根尖周吸收	gēn jiān zhōu xī shōu	100
 根尖周組織	gēn jiān zhōu zǔ zhī	100
 跟腱轉位術	gēn jiàn zhuàn wèi shù	100
+跟漿糊似的	gēn jiāng hú shì de	100
 根津美術館	gēn jīn měi shù guǎn	100
+跟舊書似的	gēn jiù shū shì de	100
 根據血統法	gēn jù xuè tǒng fǎ	100
 根絕赤禍案	gēn jué chì huò àn	100
 跟客戶溝通	gēn kè hù gōu tōng	100
 根口水母目	gēn kǒu shuǐ mǔ mù	100
+跟筷子似的	gēn kuài zi shì de	100
 跟老公吵架	gēn lǎo gōng chǎo jià	100
 跟老公商量	gēn lǎo gōng shāng liang	100
+跟老鼠似的	gēn lǎo shǔ shì de	100
 跟媽媽一樣	gēn mā ma yí yàng	100
+跟貓兒似的	gēn māo ér shì de	100
 根麵平整術	gēn miàn píng zhěng shù	100
+跟模特似的	gēn mó tè shì de	100
 根內固位體	gēn nèi gù wèi tǐ	100
 跟你很熟嗎	gēn nǐ hěn shú ma	100
 跟女人聊天	gēn nǚ rén liáo tiān	100
+跟女人似的	gēn nǚ rén shì de	100
 跟女生聊天	gēn nǚ shēng liáo tiān	100
 根培烏孜山	gēn péi wū zī shān	100
 跟平常一樣	gēn píng cháng yí yàng	100
@@ -25781,20 +25821,31 @@ sort: by_weight
 艮山快速路	gěn shān kuài sù lù	100
 艮山流水苑	gěn shān liú shuǐ yuàn	100
 跟社會脫節	gēn shè huì tuō jié	100
+跟什麼似的	gēn shén me shì de	100
 根式的指數	gēn shì de zhǐ shù	100
 跟所有人說	gēn suǒ yǒu rén shuō	100
 跟她男朋友	gēn tā nán péng you	100
+跟逃命似的	gēn táo mìng shì de	100
 根特祭壇畫	gēn tè jì tán huà	100
+跟銅鈴似的	gēn tóng líng shì de	100
 跟同學打架	gēn tóng xué dǎ jià	100
 跟往常一樣	gēn wǎng cháng yí yàng	100
 跟往年一樣	gēn wǎng nián yí yàng	100
 根文件系統	gēn wén jiàn xì tǒng	100
+跟我們似的	gēn wǒ men shì de	100
 跟膝脛試驗	gēn xī jìng shì yàn	100
+跟洗澡似的	gēn xǐ zǎo shì de	100
+跟下雨似的	gēn xià yǔ shì de	100
+跟仙境似的	gēn xiān jìng shì de	100
+跟仙女似的	gēn xiān nǚ shì de	100
 跟小編一樣	gēn xiǎo biān yí yàng	100
 跟小朋友玩	gēn xiǎo péng you wán	100
 跟新的一樣	gēn xīn de yí yàng	100
+跟兄弟似的	gēn xiōng dì shì de	100
+跟演戲似的	gēn yǎn xì shì de	100
 跟以往不同	gēn yǐ wǎng bù tóng	100
 跟以往一樣	gēn yǐ wǎng yí yàng	100
+跟油畫似的	gēn yóu huà shì de	100
 跟着版本走	gēn zhe bǎn běn zǒu	100
 跟着導航走	gēn zhe dǎo háng zǒu	100
 跟着風景走	gēn zhe fēng jǐng zǒu	100
@@ -25804,9 +25855,11 @@ sort: by_weight
 跟着項目走	gēn zhe xiàng mù zǒu	100
 跟真的似的	gēn zhēn de shì de	100
 跟真的一樣	gēn zhēn de yí yàng	100
+跟針扎似的	gēn zhēn zhā shì de	100
 跟之前相比	gēn zhī qián xiāng bǐ	100
 跟之前一樣	gēn zhī qián yí yàng	100
 根值審斂法	gēn zhí shěn liǎn fǎ	100
+跟竹竿似的	gēn zhú gān shì de	100
 根子在上面	gēn zi zài shàng miàn	100
 根子在總部	gēn zi zài zǒng bù	100
 跟蹤及考核	gēn zōng jí kǎo hé	100
@@ -27859,7 +27912,7 @@ sort: by_weight
 冠心通絡片	guān xīn tōng luò piàn	100
 管型吻合器	guǎn xíng wěn hé qì	100
 慣性系拖曳	guàn xìng xì tuō yè	100
-冠亞名錶城	guān yà míng biǎo chéng	100
+冠亞名錶城	guàn yà míng biǎo chéng	100
 貫葉金絲桃	guàn yè jīn sī táo	100
 觀音山展線	guān yīn shān zhǎn xiàn	100
 慣用的伎倆	guàn yòng de jì liǎng	100
@@ -28133,6 +28186,7 @@ sort: by_weight
 光榮和驕傲	guāng róng hé jiāo ào	100
 光榮和夢想	guāng róng hé mèng xiǎng	100
 光榮特庫摩	guāng róng tè kù mó	100
+光柵耦合器	guāng shān ǒu hé qì	100
 光攝影檢測	guāng shè yǐng jiǎn cè	100
 廣深港高速	guǎng shēn gǎng gāo sù	100
 光申中星儀	guāng shēn zhōng xīng yí	100
@@ -29279,8 +29333,8 @@ sort: by_weight
 哈傑爾山脈	hā jié ěr shān mài	100
 哈力多長效	hā lì duō cháng xiào	100
 哈羅理論家	hā luo lǐ lùn jiā	100
-蛤蟆通水庫	há má tōng shuǐ kù	100
-蛤蟆蕈氨酸	há má xùn ān suān	100
+蛤蟆通水庫	há ma tōng shuǐ kù	100
+蛤蟆蕈氨酸	há ma xùn ān suān	100
 哈密頓迴路	hā mì dùn huí lù	100
 哈密爾頓量	hā mì ěr dùn liàng	100
 哈密爾頓圖	hā mì ěr dùn tú	100
@@ -29626,6 +29680,7 @@ sort: by_weight
 含金量之高	hán jīn liàng zhī gāo	100
 含金屬噴氣	hán jīn shǔ pēn qì	100
 汗空軍基地	hàn kōng jūn jī dì	100
+喊口號似的	hǎn kǒu hào shì de	100
 含淚的微笑	hán lèi de wēi xiào	100
 寒冷的北方	hán lěng de běi fāng	100
 寒冷的北極	hán lěng de běi jí	100
@@ -29966,6 +30021,7 @@ sort: by_weight
 好或者不好	hǎo huò zhě bù hǎo	100
 郝吉二氏病	hǎo jí èr shì bìng	100
 好幾個月裏	hǎo jǐ gè yuè lǐ	100
+好及時調整	hǎo jí shí tiáo zhěng	100
 蒿甲醚膠丸	hāo jiǎ mí jiāo wán	100
 郝家臺遺址	hǎo jiā tái yí zhǐ	100
 好家在哪裏	hǎo jiā zài nǎ lǐ	100
@@ -30025,6 +30081,7 @@ sort: by_weight
 好男不當兵	hǎo nán bù dāng bīng	100
 好女十八嫁	hǎo nǚ shí bā jià	100
 好朋友丁強	hǎo péng you dīng qiáng	100
+好朋友似的	hǎo péng you shì de	100
 好奇的孩子	hào qí de hái zi	100
 好奇的懶人	hào qí de lǎn rén	100
 好奇的貓貓	hào qí de māo māo	100
@@ -30817,6 +30874,7 @@ sort: by_weight
 合資中級車	hé zī zhōng jí chē	100
 合資中型車	hé zī zhōng xíng chē	100
 喝足夠的水	hē zú gòu de shuǐ	100
+喝醉了似的	hē zuì le shì de	100
 合作的誠意	hé zuò de chéng yì	100
 合作的對象	hé zuò de duì xiàng	100
 合作的方式	hé zuò de fāng shì	100
@@ -31100,6 +31158,7 @@ sort: by_weight
 很好地完成	hěn hǎo de wán chéng	100
 很好地再現	hěn hǎo de zài xiàn	100
 很好的主意	hěn hǎo de zhǔ yi	100
+很好玩似的	hěn hǎo wán shì de	100
 很黑很後台	hěn hēi hěn hòu tái	100
 狠狠的教訓	hěn hěn de jiào xun	100
 狠狠地教訓	hěn hěn de jiào xun	100
@@ -32151,6 +32210,7 @@ sort: by_weight
 虎頭湛金槍	hǔ tóu zhàn jīn qiāng	100
 糊塗的媽媽	hú tu de mā ma	100
 糊塗的明白	hú tu de míng bai	100
+糊塗了似的	hú tu le shì de	100
 戶外的運動	hù wài de yùn dòng	100
 戶外活動時	hù wài huó dòng shí	100
 戶外寫真布	hù wài xiě zhēn bù	100
@@ -33654,6 +33714,7 @@ sort: by_weight
 回二連浩特	huí èr lián hào tè	100
 惠耳助聽器	huì ěr zhù tīng qì	100
 會發光的樹	huì fā guāng de shù	100
+會發光似的	huì fā guāng shì de	100
 輝發那拉氏	huī fā nà lā shì	100
 揮發性精油	huī fā xìng jīng yóu	100
 揮發性溶劑	huī fā xìng róng jì	100
@@ -34322,6 +34383,7 @@ sort: by_weight
 火鍋的靈魂	huǒ guō de líng hún	100
 火鍋的味道	huǒ guō de wèi dào	100
 獲國家專利	huò guó jiā zhuān lì	100
+活過來似的	huó guò lái shì de	100
 禍害遺千年	huò hài yí qiān nián	100
 霍赫二氏病	huò hè èr shì bìng	100
 霍赫方程式	huò hè fāng chéng shì	100
@@ -36026,6 +36088,7 @@ sort: by_weight
 積雪草總苷	jī xuě cǎo zǒng gān	100
 基亞波戰役	jī yà bō zhàn yì	100
 積壓的庫存	jī yā de kù cún	100
+擠牙膏似的	jǐ yá gāo shì de	100
 季亞基夫卡	jì yà jī fū kǎ	100
 積亞基連倫	jī yà jī lián lún	100
 季亞科諾夫	jì yà kē nuò fū	100
@@ -36248,7 +36311,7 @@ sort: by_weight
 甲胺鹽酸鹽	jiǎ àn yán suān yán	100
 加巴噴丁片	jiā bā pēn dīng piàn	100
 加柏實一分	jiā bǎi shí yì fēn	100
-夾板綁紮法	jiā bǎn bǎng zhā fǎ	100
+夾板綁紮法	jiā bǎn bǎng zā fǎ	100
 加班到半夜	jiā bān dào bàn yè	100
 加班到很晚	jiā bān dào hěn wǎn	100
 甲拌磷伏螟	jiǎ bàn lín fú míng	100
@@ -37730,6 +37793,7 @@ sort: by_weight
 肩關節脫位	jiān guān jié tuō wèi	100
 肩關節旋內	jiān guān jié xuán nèi	100
 見光不見燈	jiàn guāng bú jiàn dēng	100
+見鬼了似的	jiàn guǐ le shì de	100
 建國北路站	jiàn guó běi lù zhàn	100
 建國大學校	jiàn guó dà xué xiào	100
 建國大學站	jiàn guó dà xué zhàn	100
@@ -38422,6 +38486,7 @@ sort: by_weight
 講給我們聽	jiǎng gěi wǒ men tīng	100
 蔣公的面子	jiǎng gōng de miàn zi	100
 蔣公紀念歌	jiǎng gōng jì niàn gē	100
+講故事似的	jiǎng gù shi shì de	100
 漿果赤黴素	jiāng guǒ chì méi sù	100
 繮核腳間束	jiāng hé jiǎo jiān shù	100
 將何去何從	jiāng hé qù hé cóng	100
@@ -42672,6 +42737,7 @@ sort: by_weight
 絕命後衛師	jué mìng hòu wèi shī	100
 決明降脂片	jué míng jiàng zhī piàn	100
 決明山綠茶	jué míng shān lǜ chá	100
+絕命小魔星	jué mìng xiǎo mó xīng	100
 絕命終結站	jué mìng zhōng jié zhàn	100
 崛起的城市	jué qǐ de chéng shì	100
 崛起的人生	jué qǐ de rén shēng	100
@@ -43219,6 +43285,7 @@ sort: by_weight
 開玩笑的呀	kāi wán xiào de ya	100
 開玩笑呢吧	kāi wán xiào ne ba	100
 開玩笑呢你	kāi wán xiào ne nǐ	100
+開玩笑似的	kāi wán xiào shì de	100
 凱爲半導體	kǎi wéi bàn dǎo tǐ	100
 開胃理脾丸	kāi wèi lǐ pí wán	100
 凱文科斯納	kǎi wén kē sī nà	100
@@ -45727,6 +45794,7 @@ sort: by_weight
 勞爾方程式	láo ěr fāng chéng shì	100
 勞爾加西亞	láo ěr jiā xī yà	100
 老鳳祥金店	lǎo fèng xiáng jīn diàn	100
+老父親似的	lǎo fù qīn shì de	100
 老乾媽豆豉	lǎo gān mā dòu chǐ	100
 勞工保險局	láo gōng bǎo xiǎn jú	100
 老共產黨員	lǎo gòng chǎn dǎng yuán	100
@@ -46077,6 +46145,7 @@ sort: by_weight
 蕾切爾薇姿	lěi qiè ěr wēi zī	100
 雷瓊火山羣	léi qióng huǒ shān qún	100
 類熱帶潰瘍	lèi rè dài kuì yáng	100
+淚人兒似的	lèi rén ér shì de	100
 羸人服半錢	léi rén fú bàn qián	100
 類人機器人	lèi rén jī qì rén	100
 類人猿下目	lèi rén yuán xià mù	100
@@ -47197,7 +47266,7 @@ sort: by_weight
 憐取眼前人	lián qǔ yǎn qián rén	100
 聯權共有人	lián quán gòng yǒu rén	100
 戀人的感覺	liàn rén de gǎn jué	100
-聯賽和歐冠	lián sài hé ōu guān	100
+聯賽和歐冠	lián sài hé ōu guàn	100
 聯三苯叉基	lián sān běn chā jī	100
 戀色空模樣	liàn sè kōng mú yàng	100
 蓮山設治局	lián shān shè zhì jú	100
@@ -48642,7 +48711,7 @@ sort: by_weight
 流浪的白雲	liú làng de bái yún	100
 流浪的迪潘	liú làng de dí pān	100
 流浪的動物	liú làng de dòng wù	100
-流浪的蛤蟆	liú làng de há má	100
+流浪的蛤蟆	liú làng de há ma	100
 流浪的孩子	liú làng de hái zi	100
 流浪的蝴蝶	liú làng de hú dié	100
 流浪的混混	liú làng de hùn hùn	100
@@ -51189,6 +51258,7 @@ sort: by_weight
 每次抽獎都	měi cì chōu jiǎng dōu	100
 每次的都在	měi cì de dōu zài	100
 美大集成竈	měi dà jí chéng zào	100
+沒打開似的	méi dǎ kāi shì de	100
 沒大沒小的	méi dà méi xiǎo de	100
 美達消腫膏	měi dá xiāo zhǒng gāo	100
 每當變幻時	měi dāng biàn huàn shí	100
@@ -51349,6 +51419,7 @@ sort: by_weight
 黴菌性須瘡	méi jūn xìng xū chuāng	100
 黴菌性陰炎	méi jūn xìng yīn yán	100
 黴菌陰道炎	méi jūn yīn dào yán	100
+沒看到似的	méi kàn dào shì de	100
 沒殼的蝸牛	méi ké de wō niú	100
 梅克爾憩室	méi kè ěr qì shì	100
 美克洛嗪片	měi kè luò qín piàn	100
@@ -51638,6 +51709,7 @@ sort: by_weight
 每時每刻都	měi shí měi kè dōu	100
 美食排行榜	měi shí pái háng bǎng	100
 美食評論家	měi shí píng lùn jiā	100
+沒事人似的	méi shì rén shì de	100
 美式三明治	měi shì sān míng zhì	100
 美仕唐納滋	měi shì táng nà zī	100
 美式田園風	měi shì tián yuán fēng	100
@@ -51709,6 +51781,7 @@ sort: by_weight
 妹調教日記	mèi tiáo jiào rì jì	100
 鎂鐵尖晶石	měi tiě jiān jīng shí	100
 鎂鐵質岩石	měi tiě zhì yán shí	100
+沒聽到似的	méi tīng dào shì de	100
 沒聽說過呢	méi tīng shuō guò ne	100
 沒聽說過呀	méi tīng shuō guò ya	100
 梅童魚東島	méi tóng yú dōng dǎo	100
@@ -53123,6 +53196,7 @@ sort: by_weight
 魔域口袋版	mó yù kǒu dài bǎn	100
 摸着良心說	mō zhe liáng xīn shuō	100
 魔偵探洛基	mó zhēn tàn luò jī	100
+魔怔了似的	mó zhēng le shì de	100
 膜質子傳導	mó zhì zǐ chuán dǎo	100
 魔鍾奇幻屋	mó zhōng qí huàn wū	100
 秣周東路站	mò zhōu dōng lù zhàn	100
@@ -53776,6 +53850,7 @@ sort: by_weight
 男孩要窮養	nán hái yào qióng yǎng	100
 南海一條魚	nán hǎi yì tiáo yú	100
 男孩與女孩	nán hái yǔ nǚ hái	100
+男孩子似的	nán hái zi shì de	100
 南極輻合帶	nán jí fú hé dài	100
 南極和北極	nán jí hé běi jí	100
 南極沒有熊	nán jí méi yǒu xióng	100
@@ -54452,6 +54527,7 @@ sort: by_weight
 你管得着嗎	nǐ guǎn de zháo ma	100
 逆光電效應	nì guāng diàn xiào yìng	100
 倪光南院士	ní guāng nán yuàn shì	100
+你過段時間	nǐ guò duàn shí jiān	100
 你還愛他嗎	nǐ hái ài tā ma	100
 你還活着嗎	nǐ hái huó zhe ma	100
 你還記得她	nǐ hái jì de tā	100
@@ -55098,6 +55174,7 @@ sort: by_weight
 寧格羅海岸	níng gé luó hǎi àn	100
 凝固的記憶	níng gù de jì yì	100
 凝固的歷史	níng gù de lì shǐ	100
+凝固了似的	níng gù le shì de	100
 寧國節度使	níng guó jié dù shǐ	100
 寧杭甬高鐵	níng háng yǒng gāo tiě	100
 凝灰角礫岩	níng huī jiǎo lì yán	100
@@ -56247,6 +56324,7 @@ sort: by_weight
 培訓班學員	péi xùn bān xué yuán	100
 培訓等服務	péi xùn děng fú wù	100
 培訓等活動	péi xùn děng huó dòng	100
+培訓過似的	péi xùn guò shì de	100
 培訓和考核	péi xùn hé kǎo hé	100
 培訓和考試	péi xùn hé kǎo shì	100
 培訓和認證	péi xùn hé rèn zhèng	100
@@ -57662,7 +57740,10 @@ sort: by_weight
 七氟丙氧基	qī fú bǐng yǎng jī	100
 七氟丁酸酐	qī fú dīng suān gān	100
 齊夫基夫齊	qí fū jī fū qí	100
+欺負了似的	qī fu le shì de	100
 其父母有罪	qí fù mǔ yǒu zuì	100
+欺負你似的	qī fu nǐ shì de	100
+欺負人似的	qī fu rén shì de	100
 七福神巡禮	qī fú shén xún lǐ	100
 七氟鉭酸鉀	qī fú tǎn suān jiǎ	100
 起傅岩石刻	qǐ fù yán shí kè	100
@@ -58914,6 +58995,7 @@ sort: by_weight
 前蘇聯解體	qián sū lián jiě tǐ	100
 千歲船橋站	qiān suì chuán qiáo zhàn	100
 前所未有的	qián suǒ wèi yǒu de	100
+欠他們似的	qiàn tā men shì de	100
 前台的工作	qián tái de gōng zuò	100
 前台和後台	qián tái hé hòu tái	100
 前灘太古里	qián tān tài gǔ lǐ	100
@@ -61825,6 +61907,7 @@ sort: by_weight
 卻紋絲不動	què wén sī bú dòng	100
 缺隙保持器	quē xì bǎo chí qì	100
 缺陷的原因	quē xiàn de yuán yīn	100
+缺心眼似的	quē xīn yǎn shì de	100
 缺血缺氧腦	quē xuè quē yǎng nǎo	100
 缺血性卒中	quē xuè xìng cù zhòng	100
 缺血性停搏	quē xuè xìng tíng bó	100
@@ -62604,6 +62687,8 @@ sort: by_weight
 人事任免權	rén shì rèn miǎn quán	100
 人食人實錄	rén shí rén shí lù	100
 任氏水煮魚	rén shì shuǐ zhǔ yú	100
+認識他似的	rèn shi tā shì de	100
+認識我似的	rèn shi wǒ shì de	100
 人事心理學	rén shì xīn lǐ xué	100
 人事信息網	rén shì xìn xī wǎng	100
 人事行政部	rén shì xíng zhèng bù	100
@@ -63579,7 +63664,7 @@ sort: by_weight
 撒母耳記上	sā mǔ ěr jì shàng	100
 撒母耳記下	sā mǔ ěr jì xià	100
 薩帕塔主義	sà pà tǎ zhǔ yì	100
-撒泡尿照照	sā pào niào zhào zhào	100
+撒泡尿照照	sā pāo niào zhào zhào	100
 撒切爾主義	sā qiè ěr zhǔ yì	100
 薩熱大鵬丸	sà rè dà péng wán	100
 灑灑分不清	sǎ sǎ fēn bù qīng	100
@@ -63865,6 +63950,7 @@ sort: by_weight
 三甲基乙醛	sān jiǎ jī yǐ quán	100
 三甲基乙酸	sān jiǎ jī yǐ suān	100
 三甲基鍺烷	sān jiǎ jī zhě wán	100
+散架了似的	sǎn jià le shì de	100
 三甲三爺宮	sān jiǎ sān yé gōng	100
 三價鐵離子	sān jià tiě lí zǐ	100
 三甲氧基苯	sān jiǎ yǎng jī běn	100
@@ -65509,6 +65595,7 @@ sort: by_weight
 上議院成員	shàng yì yuàn chéng yuán	100
 上議院領袖	shàng yì yuàn lǐng xiù	100
 上醫治未病	shàng yī zhì wèi bìng	100
+上癮了似的	shàng yǐn le shì de	100
 上游產業鏈	shàng yóu chǎn yè liàn	100
 上幼兒園後	shàng yòu ér yuán hòu	100
 上幼兒園時	shàng yòu ér yuán shí	100
@@ -68831,6 +68918,7 @@ sort: by_weight
 視力障礙者	shì lì zhàng ài zhě	100
 勢力最大的	shì lì zuì dà de	100
 失戀歌迷黨	shī liàn gē mí dǎng	100
+失戀了似的	shī liàn le shì de	100
 是臉上還是	shì liǎn shàng hái shì	100
 市聯通公司	shì lián tōng gōng sī	100
 矢量處理器	shǐ liàng chǔ lǐ qì	100
@@ -70535,6 +70623,7 @@ sort: by_weight
 失蹤的事情	shī zōng de shì qíng	100
 失蹤的王子	shī zōng de wáng zǐ	100
 失蹤的原因	shī zōng de yuán yīn	100
+失蹤了似的	shī zōng le shì de	100
 世宗完顏雍	shì zōng wán yán yōng	100
 世宗研究所	shì zōng yán jiū suǒ	100
 濕阻腸道證	shī zǔ cháng dào zhèng	100
@@ -71992,6 +72081,7 @@ sort: by_weight
 誰把誰當真	shuí bǎ shuí dāng zhēn	100
 水泵接合器	shuǐ bèng jiē hé qì	100
 水變油事件	shuǐ biàn yóu shì jiàn	100
+誰不會似的	shuí bú huì shì de	100
 誰不喜歡呢	shuí bù xǐ huan ne	100
 睡不醒的貓	shuì bù xǐng de māo	100
 水部員外郎	shuǐ bù yuán wài láng	100
@@ -72342,6 +72432,7 @@ sort: by_weight
 睡在辦公室	shuì zài bàn gōng shì	100
 誰在那邊唱	shuí zài nà biān chàng	100
 睡着的孩子	shuì zháo de hái zi	100
+睡着了似的	shuì zháo le shì de	100
 水珍魚亞目	shuǐ zhēn yú yà mù	100
 水蒸氣蒸餾	shuǐ zhēng qì zhēng liú	100
 水蒸汽蒸餾	shuǐ zhēng qì zhēng liú	100
@@ -72916,6 +73007,7 @@ sort: by_weight
 四驅尊享版	sì qū zūn xiǎng bǎn	100
 四驅尊雅版	sì qū zūn yǎ bǎn	100
 四人幫興亡	sì rén bāng xīng wáng	100
+死人了似的	sǐ rén le shì de	100
 私人使用區	sī rén shǐ yòng qū	100
 私人收藏家	sī rén shōu cáng jiā	100
 四人性行為	sì rén xìng xíng wéi	100
@@ -73997,6 +74089,7 @@ sort: by_weight
 他氟前列素	tā fú qián liè sù	100
 踏歌廣場舞	tà gē guǎng chǎng wǔ	100
 他跟我說這	tā gēn wǒ shuō zhè	100
+他過段時間	tā guò duàn shí jiān	100
 他還是不懂	tā hái shì bù dǒng	100
 她還是不懂	tā hái shì bù dǒng	100
 她和她的貓	tā hé tā de māo	100
@@ -76437,6 +76530,7 @@ sort: by_weight
 聽說了此事	tīng shuō le cǐ shì	100
 亭臺六七座	tíng tái liù qī zuò	100
 聽探子檢查	tīng tàn zi jiǎn chá	100
+聽天書似的	tīng tiān shū shì de	100
 聽天由命吧	tīng tiān yóu mìng ba	100
 亭亭出水中	tíng tíng chū shuǐ zhōng	100
 聽聽那冷雨	tīng tīng nà lěng yǔ	100
@@ -80091,6 +80185,7 @@ sort: by_weight
 文字和圖形	wén zì hé tú xíng	100
 蚊子很討厭	wén zi hěn tǎo yàn	100
 文字及圖片	wén zì jí tú piàn	100
+蚊子叫似的	wén zi jiào shì de	100
 溫子仁電影	wēn zǐ rén diàn yǐng	100
 蚊子銜秤砣	wén zi xián chèng tuó	100
 文字敘述式	wén zì xù shù shì	100
@@ -80223,6 +80318,7 @@ sort: by_weight
 蝸管前庭壁	wō guǎn qián tíng bì	100
 蝸管外側壁	wō guǎn wài cè bì	100
 我過得很好	wǒ guò de hěn hǎo	100
+我過段時間	wǒ guò duàn shí jiān	100
 我過幾天去	wǒ guò jǐ tiān qù	100
 我還沒有睡	wǒ hái méi yǒu shuì	100
 我還是不得	wǒ hái shì bù dé	100
@@ -83201,7 +83297,7 @@ sort: by_weight
 夏天來了咪	xià tiān lái le mī	100
 夏天要到了	xià tiān yào dào le	100
 夏天也很冷	xià tiān yě hěn lěng	100
-夏天有知了	xià tiān yǒu zhī le	100
+夏天有知了	xià tiān yǒu zhī liǎo	100
 下推自動機	xià tuī zì dòng jī	100
 夏娃的愛情	xià wá de ài qíng	100
 下瓦爾登州	xià wǎ ěr dēng zhōu	100
@@ -84074,6 +84170,9 @@ sort: by_weight
 想吃的東西	xiǎng chī de dōng xi	100
 想吃的美食	xiǎng chī de měi shí	100
 想吃就能喫	xiǎng chī jiù néng chī	100
+想吃口好的	xiǎng chī kǒu hǎo de	100
+像抽筋似的	xiàng chōu jīn shì de	100
+像觸電似的	xiàng chù diàn shì de	100
 像觸電一樣	xiàng chù diàn yí yàng	100
 想出人頭地	xiǎng chū rén tóu dì	100
 想穿白襯衫	xiǎng chuān bái chèn shān	100
@@ -84088,6 +84187,7 @@ sort: by_weight
 像打了雞血	xiàng dǎ le jī xiě	100
 像大人一樣	xiàng dà rén yí yàng	100
 向大師致敬	xiàng dà shī zhì jìng	100
+像大爺似的	xiàng dà ye shì de	100
 香丹注射液	xiāng dān zhù shè yè	100
 像當初一樣	xiàng dāng chū yí yàng	100
 相當的霸氣	xiāng dāng de bà qì	100
@@ -84101,6 +84201,7 @@ sort: by_weight
 想當漫畫家	xiǎng dāng màn huà jiā	100
 鄉黨委書記	xiāng dǎng wěi shū jì	100
 相當於宰相	xiāng dāng yú zǎi xiàng	100
+像盜版似的	xiàng dào bǎn shì de	100
 像刀割一樣	xiàng dāo gē yí yàng	100
 想倒是想過	xiǎng dào shì xiǎng guò	100
 想得不一樣	xiǎng de bù yí yàng	100
@@ -84143,6 +84244,7 @@ sort: by_weight
 湘鄂西蘇區	xiāng è xī sū qū	100
 香二翅豆木	xiāng èr chì dòu mù	100
 像兒子一樣	xiàng ér zi yí yàng	100
+像發瘋似的	xiàng fā fēng shì de	100
 襄樊市郊區	xiāng fán shì jiāo qū	100
 香坊火車站	xiāng fāng huǒ chē zhàn	100
 想飛的鳥仔	xiǎng fēi de niǎo zǎi	100
@@ -84152,10 +84254,12 @@ sort: by_weight
 像瘋狗一樣	xiàng fēng gǒu yí yàng	100
 像瘋了一樣	xiàng fēng le yí yàng	100
 相逢是首歌	xiāng féng shì shǒu gē	100
+像瘋子似的	xiàng fēng zi shì de	100
 向父母求助	xiàng fù mǔ qiú zhù	100
 香附丸水丸	xiāng fù wán shuǐ wán	100
 相輔相成的	xiāng fǔ xiāng chéng de	100
 相干單位制	xiāng gān dān wèi zhì	100
+像趕集似的	xiàng gǎn jí shì de	100
 相干勢近似	xiāng gān shì jìn sì	100
 湘贛蘇維埃	xiāng gàn sū wéi āi	100
 像哥哥一樣	xiàng gē ge yí yàng	100
@@ -84188,13 +84292,17 @@ sort: by_weight
 湘桂大撤退	xiāng guì dà chè tuì	100
 香桂活血膏	xiāng guì huó xuè gāo	100
 香果健消片	xiāng guǒ jiàn xiāo piàn	100
+像過節似的	xiàng guò jié shì de	100
 像過節一樣	xiàng guò jié yí yàng	100
 香鍋麻辣燙	xiāng guō má là tàng	100
+像過年似的	xiàng guò nián shì de	100
 像過年一樣	xiàng guò nián yí yàng	100
 向國旗敬禮	xiàng guó qí jìng lǐ	100
 像海浪一樣	xiàng hǎi làng yí yàng	100
 像海綿一樣	xiàng hǎi mián yí yàng	100
 向孩子道歉	xiàng hái zi dào qiàn	100
+像孩子似的	xiàng hái zi shì de	100
+像孩子似的	xiàng hái zi shì de	100
 像孩子一般	xiàng hái zi yì bān	100
 響號驅逐艦	xiǎng hào qū zhú jiàn	100
 祥和的春節	xiáng hé de chūn jié	100
@@ -84300,6 +84408,7 @@ sort: by_weight
 想哭的衝動	xiǎng kū de chōng dòng	100
 想哭的感覺	xiǎng kū de gǎn jué	100
 向快樂出發	xiàng kuài lè chū fā	100
+像喇叭似的	xiàng lǎ bā shì de	100
 像垃圾一樣	xiàng lā jī yí yàng	100
 鑲藍旗漢軍	xiāng lán qí hàn jūn	100
 向老師請教	xiàng lǎo shī qǐng jiào	100
@@ -84353,9 +84462,11 @@ sort: by_weight
 向美國靠攏	xiàng měi guó kào lǒng	100
 向美國宣戰	xiàng měi guó xuān zhàn	100
 向美國學習	xiàng měi guó xué xí	100
+像沒事似的	xiàng méi shì shì de	100
 想矇混過關	xiǎng méng hùn guò guān	100
 向夢想出發	xiàng mèng xiǎng chū fā	100
 向夢想致敬	xiàng mèng xiǎng zhì jìng	100
+像蜜蜂似的	xiàng mì fēng shì de	100
 香蜜湖北站	xiāng mì hú běi zhàn	100
 鄉民的正義	xiāng mín de zhèng yì	100
 向民警求助	xiàng mín jǐng qiú zhù	100
@@ -84381,6 +84492,7 @@ sort: by_weight
 項目實施後	xiàng mù shí shī hòu	100
 項目式學習	xiàng mù shì xué xí	100
 項目停復產	xiàng mù tíng fù chǎn	100
+像木頭似的	xiàng mù tou shì de	100
 像木頭一樣	xiàng mù tou yí yàng	100
 項目爲抓手	xiàng mù wéi zhuā shǒu	100
 向哪個方向	xiàng nǎ ge fāng xiàng	100
@@ -84409,6 +84521,7 @@ sort: by_weight
 香濃的咖啡	xiāng nóng de kā fēi	100
 像女人一樣	xiàng nǚ rén yí yàng	100
 像噴泉一樣	xiàng pēn quán yí yàng	100
+像朋友似的	xiàng péng you shì de	100
 像朋友一樣	xiàng péng you yí yàng	100
 橡皮生肌膏	xiàng pí shēng jī gāo	100
 象皮生肌膏	xiàng pí shēng jī gāo	100
@@ -84466,13 +84579,16 @@ sort: by_weight
 香砂養胃丸	xiāng shā yǎng wèi wán	100
 像煞有介事	xiàng shà yǒu jiè shì	100
 香砂枳術丸	xiāng shā zhǐ shù wán	100
+像傻子似的	xiàng shǎ zi shì de	100
 向善的力量	xiàng shàn de lì liàng	100
+像閃電似的	xiàng shǎn diàn shì de	100
 象山影視城	xiàng shān yǐng shì chéng	100
 向上帝祈禱	xiàng shàng dì qí dǎo	100
 向上和向下	xiàng shàng hé xiàng xià	100
 向上或向下	xiàng shàng huò xiàng xià	100
 向上級反映	xiàng shàng jí fǎn yìng	100
 向社會公示	xiàng shè huì gōng shì	100
+像什麼似的	xiàng shén me shì de	100
 像什麼樣子	xiàng shén me yàng zi	100
 想深入了解	xiǎng shēn rù liǎo jiě	100
 相聲第二班	xiàng sheng dì èr bān	100
@@ -84572,6 +84688,7 @@ sort: by_weight
 相位穩定性	xiàng wèi wěn dìng xìng	100
 相位相干態	xiàng wèi xiāng gān tài	100
 相位型光柵	xiàng wèi xíng guāng shān	100
+像我們似的	xiàng wǒ men shì de	100
 向我展示了	xiàng wǒ zhǎn shì le	100
 向污染宣戰	xiàng wū rǎn xuān zhàn	100
 湘西大劇院	xiāng xī dà jù yuàn	100
@@ -84591,6 +84708,7 @@ sort: by_weight
 向線上轉移	xiàng xiàn shàng zhuǎn yí	100
 向現實低頭	xiàng xiàn shí dī tóu	100
 向現實妥協	xiàng xiàn shí tuǒ xié	100
+像現在似的	xiàng xiàn zài shì de	100
 想象的翅膀	xiǎng xiàng de chì bǎng	100
 想象的空間	xiǎng xiàng de kōng jiān	100
 想象的世界	xiǎng xiàng de shì jiè	100
@@ -84650,6 +84768,7 @@ sort: by_weight
 想也想不到	xiǎng yě xiǎng bú dào	100
 像一道閃電	xiàng yí dào shǎn diàn	100
 像一面鏡子	xiàng yí miàn jìng zi	100
+像以前似的	xiàng yǐ qián shì de	100
 想一死了之	xiǎng yì sǐ liǎo zhī	100
 想一探究竟	xiǎng yí tàn jiū jìng	100
 像一條巨龍	xiàng yì tiáo jù lóng	100
@@ -84680,6 +84799,7 @@ sort: by_weight
 享有和承擔	xiǎng yǒu hé chéng dān	100
 相遇的輪迴	xiāng yù de lún huí	100
 相遇的奇蹟	xiāng yù de qí jì	100
+像雨點似的	xiàng yǔ diǎn shì de	100
 像魚兒一樣	xiàng yú ér yí yàng	100
 享譽國內外	xiǎng yù guó nèi wài	100
 享譽海內外	xiǎng yù hǎi nèi wài	100
@@ -84700,6 +84820,7 @@ sort: by_weight
 像戰士一樣	xiàng zhàn shì yí yàng	100
 想找個人陪	xiǎng zhǎo gè rén péi	100
 想着想着就	xiǎng zhe xiǎng zhe jiù	100
+像真的似的	xiàng zhēn de shì de	100
 像針扎一樣	xiàng zhēn zhā yí yàng	100
 鄉政府駐地	xiāng zhèng fǔ zhù dì	100
 象徵性權力	xiàng zhēng xìng quán lì	100
@@ -85050,6 +85171,7 @@ sort: by_weight
 小古城遺址	xiǎo gǔ chéng yí zhǐ	100
 小谷城之戰	xiǎo gǔ chéng zhī zhàn	100
 簫鼓流漢思	xiāo gǔ liú hàn sī	100
+小姑娘似的	xiǎo gū niang shì de	100
 小孤山中裏	xiǎo gū shān zhōng lǐ	100
 小孤星馬高	xiǎo gū xīng mǎ gāo	100
 小寡婦上墳	xiǎo guǎ fù shàng fén	100
@@ -85197,6 +85319,7 @@ sort: by_weight
 硝基異喹啉	xiāo jī yì kuí lín	100
 硝基乙酰酯	xiāo jī yǐ xiān zhǐ	100
 消極優生學	xiāo jí yōu shēng xué	100
+小雞崽似的	xiǎo jī zǎi shì de	100
 消積正元散	xiāo jī zhèng yuán sàn	100
 小家碧玉型	xiǎo jiā bì yù xíng	100
 小甲與巨甲	xiǎo jiǎ yǔ jù jiǎ	100
@@ -85384,6 +85507,7 @@ sort: by_weight
 孝穆成皇后	xiào mù chéng huáng hòu	100
 孝穆紀太后	xiào mù jì tài hòu	100
 肖穆羅多夫	xiāo mù luó duō fū	100
+小奶狗似的	xiǎo nǎi gǒu shì de	100
 小南國餐飲	xiǎo nán guó cān yǐn	100
 小南海石窟	xiǎo nán hǎi shí kū	100
 小南海水庫	xiǎo nán hǎi shuǐ kù	100
@@ -85417,8 +85541,10 @@ sort: by_weight
 小寧國公主	xiǎo níng guó gōng zhǔ	100
 小諾黴素片	xiǎo nuò méi sù piàn	100
 小女兒李嫣	xiǎo nǚ ér lǐ yān	100
+小女孩似的	xiǎo nǚ hái shì de	100
 小女花不棄	xiǎo nǚ huā bú qì	100
 小女神花鈴	xiǎo nǚ shén huā líng	100
+小女生似的	xiǎo nǚ shēng shì de	100
 小帕特里克	xiǎo pà tè lǐ kè	100
 小排量轎車	xiǎo pái liàng jiào chē	100
 小盤題材股	xiǎo pán tí cái gǔ	100
@@ -85490,6 +85616,7 @@ sort: by_weight
 蕭瑟的秋天	xiāo sè de qiū tiān	100
 小森拒不了	xiǎo sēn jù bù le	100
 小沙果衚衕	xiǎo shā guǒ hú tòng	100
+小傻子似的	xiǎo shǎ zi shì de	100
 蕭山博物館	xiāo shān bó wù guǎn	100
 蕭山高教園	xiāo shān gāo jiào yuán	100
 蕭山火車站	xiāo shān huǒ chē zhàn	100
@@ -85533,6 +85660,7 @@ sort: by_weight
 消食健脾丸	xiāo shí jiàn pí wán	100
 消食健胃片	xiāo shí jiàn wèi piàn	100
 消失就消失	xiāo shī jiù xiāo shī	100
+消失了似的	xiāo shī le shì de	100
 消失了一般	xiāo shī le yì bān	100
 消失了一半	xiāo shī le yí bàn	100
 小市慢太郎	xiǎo shì màn tài láng	100
@@ -85677,6 +85805,7 @@ sort: by_weight
 小蝦虎魚族	xiǎo xiā hǔ yú zú	100
 消下破血湯	xiāo xià pò xuè tāng	100
 孝賢純皇后	xiào xián chún huáng hòu	100
+小仙女似的	xiǎo xiān nǚ shì de	100
 小仙壇窯址	xiǎo xiān tán yáo zhǐ	100
 硝酰陽離子	xiāo xiān yáng lí zǐ	100
 瀟湘晨報社	xiāo xiāng chén bào shè	100
@@ -85770,6 +85899,7 @@ sort: by_weight
 小葉藍丁香	xiǎo yè lán dīng xiāng	100
 小葉羅漢松	xiǎo yè luó hàn sōng	100
 小葉買麻藤	xiǎo yè mǎi má téng	100
+小野貓似的	xiǎo yě māo shì de	100
 笑也沒笑過	xiào yě méi xiào guò	100
 小葉尼塞河	xiǎo yè ní sāi hé	100
 小葉委陵菜	xiǎo yè wěi líng cài	100
@@ -85902,6 +86032,7 @@ sort: by_weight
 小組賽出局	xiǎo zǔ sài chū jú	100
 小組賽出線	xiǎo zǔ sài chū xiàn	100
 曉組織成員	xiǎo zǔ zhī chéng yuán	100
+小作坊似的	xiǎo zuō fang shì de	100
 小佐內由紀	xiǎo zuǒ nèi yóu jì	100
 薤白野白頭	xiè bái yě bái tóu	100
 斜斑粗安岩	xié bān cū ān yán	100
@@ -87077,7 +87208,7 @@ sort: by_weight
 鋅指核酸酶	xīn zhǐ hé suān méi	100
 新殖民主義	xīn zhí mín zhǔ yì	100
 新質生產力	xīn zhì shēng chǎn lì	100
-新知識分子	xīn zhī shí fēn zǐ	100
+新知識分子	xīn zhī shi fèn zǐ	100
 心中的道德	xīn zhōng de dào dé	100
 心中的苦楚	xīn zhōng de kǔ chǔ	100
 心中的漣漪	xīn zhōng de lián yī	100
@@ -90687,6 +90818,7 @@ sort: by_weight
 要從此路過	yào cóng cǐ lù guò	100
 腰叢神經病	yāo cóng shén jīng bìng	100
 腰大肌膿腫	yāo dà jī nóng zhǒng	100
+要打架似的	yào dǎ jià shì de	100
 要打掃衛生	yào dǎ sǎo wèi shēng	100
 腰帶的搭配	yāo dài de dā pèi	100
 腰帶的設計	yāo dài de shè jì	100
@@ -90700,6 +90832,7 @@ sort: by_weight
 要掉腦袋的	yào diào nǎo dai de	100
 要鬥智鬥勇	yào dòu zhì dòu yǒng	100
 要多加練習	yào duō jiā liàn xí	100
+要飯的似的	yào fàn de shì de	100
 要放大招了	yào fàng dà zhāo le	100
 腰腹部吸脂	yāo fù bù xī zhī	100
 遙感研究所	yáo gǎn yán jiū suǒ	100
@@ -90781,6 +90914,7 @@ sort: by_weight
 要認清形勢	yào rèn qīng xíng shì	100
 要認真履行	yào rèn zhēn lǚ xíng	100
 邀三五好友	yāo sān wǔ hǎo yǒu	100
+要殺人似的	yào shā rén shì de	100
 瑤山丁公藤	yáo shān dīng gōng téng	100
 堯山風景區	yáo shān fēng jǐng qū	100
 腰疝修補術	yāo shàn xiū bǔ shù	100
@@ -90796,6 +90930,7 @@ sort: by_weight
 鷂式戰鬥機	yào shì zhàn dòu jī	100
 要始終堅持	yào shǐ zhōng jiān chí	100
 要收拾東西	yào shōu shi dōng xi	100
+要死了似的	yào sǐ le shì de	100
 要天天開心	yào tiān tiān kāi xīn	100
 窈窕的身材	yǎo tiǎo de shēn cái	100
 窈窕的身姿	yǎo tiǎo de shēn zī	100
@@ -91460,6 +91595,7 @@ sort: by_weight
 一觸即通卡	yī chù jí tōng kǎ	100
 已初具規模	yǐ chū jù guī mó	100
 移除烤肉串	yí chú kǎo ròu chuàn	100
+溢出來似的	yì chū lái shì de	100
 移出了房間	yí chū le fáng jiān	100
 易初始素極	yì chū shǐ sù jí	100
 衣櫥整理師	yī chú zhěng lǐ shī	100
@@ -91851,6 +91987,7 @@ sort: by_weight
 異紅粉苔酸	yì hóng fěn tái suān	100
 伊紅染色劑	yī hóng rǎn sè jì	100
 伊紅染色液	yī hóng rǎn sè yè	100
+以厚德載物	yǐ hòu dé zài wù	100
 醫護工作者	yī hù gōng zuò zhě	100
 依葫蘆畫瓢	yī hú lu huà piáo	100
 醫護人員們	yī hù rén yuán men	100
@@ -93032,6 +93169,7 @@ sort: by_weight
 藝文印書館	yì wén yìn shū guǎn	100
 異渦蟲亞門	yì wō chóng yà mén	100
 異渦動物門	yì wō dòng wù mén	100
+一窩蜂似的	yì wō fēng shì de	100
 亦我所欲也	yì wǒ suǒ yù yě	100
 以我爲驕傲	yǐ wǒ wéi jiāo ào	100
 一窩一窩的	yì wō yì wō de	100
@@ -97805,6 +97943,7 @@ sort: by_weight
 約翰內斯堡	yuē hàn nèi sī bǎo	100
 約翰森氏菌	yuē hàn sēn shì jūn	100
 約翰斯頓島	yuē hàn sī dùn dǎo	100
+約好了似的	yuē hǎo le shì de	100
 月黑風高夜	yuè hēi fēng gāo yè	100
 月黑殺人夜	yuè hēi shā rén yè	100
 月後待鑲牙	yuè hòu dài xiāng yá	100
@@ -99581,6 +99720,7 @@ sort: by_weight
 折斷的刀刃	zhé duàn de dāo rèn	100
 折斷的樹枝	zhé duàn de shù zhī	100
 折斷的羽翼	zhé duàn de yǔ yì	100
+折斷了似的	zhé duàn le shì de	100
 哲爾尼亞斯	zhé ěr ní yà sī	100
 這符合常理	zhè fú hé cháng lǐ	100
 蟄伏脂肪瘤	zhé fú zhī fáng liú	100
@@ -99672,6 +99812,8 @@ sort: by_weight
 這是不是得	zhè shì bú shì děi	100
 這事兒鬧的	zhè shì er nào de	100
 這是個好娃	zhè shì gè hǎo wá	100
+這是個啥字	zhè shì gè shá zì	120
+這是個傻子	zhè shì gè shǎ zi	100
 這事還沒完	zhè shì hái méi wán	100
 這是殭屍嗎	zhè shì jiāng shī ma	100
 這是巧合嗎	zhè shì qiǎo hé ma	100
@@ -100244,6 +100386,7 @@ sort: by_weight
 正常重力線	zhèng cháng zhòng lì xiàn	100
 整超越函數	zhěng chāo yuè hán shù	100
 鄭成功北伐	zhèng chéng gōng běi fá	100
+蒸出的蛋糊	zhēng chū de dàn hú	100
 正磁致伸縮	zhèng cí zhì shēn suō	100
 鄭大二附院	zhèng dà èr fù yuàn	100
 政大金旋獎	zhèng dà jīn xuán jiǎng	100
@@ -100286,6 +100429,7 @@ sort: by_weight
 正二十面體	zhèng èr shí miàn tǐ	100
 政法各部門	zhèng fǎ gè bù mén	100
 政法各單位	zhèng fǎ gè dān wèi	100
+蒸發了似的	zhēng fā le shì de	100
 政法類院校	zhèng fǎ lèi yuàn xiào	100
 正法明如來	zhèng fǎ míng rú lái	100
 正法念處經	zhèng fǎ niàn chù jīng	100
@@ -102210,7 +102354,7 @@ sort: by_weight
 中長斜長岩	zhōng cháng xié cháng yán	100
 中長玄武岩	zhōng cháng xuán wǔ yán	100
 中長英安岩	zhōng cháng yīng ān yán	100
-中超八冠王	zhōng chāo bā guān wáng	100
+中超八冠王	zhōng chāo bā guàn wáng	100
 忠誠的代價	zhōng chéng de dài jià	100
 忠誠的夥伴	zhōng chéng de huǒ bàn	100
 忠誠的客戶	zhōng chéng de kè hù	100
@@ -102256,6 +102400,7 @@ sort: by_weight
 中都大興府	zhōng dū dà xīng fǔ	100
 重度高血壓	zhòng dù gāo xuè yā	100
 中度高血壓	zhōng dù gāo xuè yā	100
+中毒了似的	zhòng dú le shì de	100
 中都留守司	zhōng dū liú shǒu sī	100
 重度漏斗胸	zhòng dù lòu dǒu xiōng	100
 重度膿毒症	zhòng dù nóng dú zhèng	100
@@ -104901,6 +105046,7 @@ sort: by_weight
 自願供骨者	zì yuàn gōng gǔ zhě	100
 自願供腎者	zì yuàn gōng shèn zhě	100
 資源共享的	zī yuán gòng xiǎng de	100
+資源管理器	zī yuán guǎn lǐ qì	100
 資源和環境	zī yuán hé huán jìng	100
 資源和能源	zī yuán hé néng yuán	100
 資源和人脈	zī yuán hé rén mài	100
@@ -104997,7 +105143,7 @@ sort: by_weight
 自轉旋翼機	zì zhuàn xuán yì jī	100
 自準直譜儀	zì zhǔn zhí pǔ yí	100
 孜孜不倦地	zī zī bú juàn de	100
-仔仔細細地	zǐ zǐ xì xì dì	100
+仔仔細細地	zǐ zǐ xì xì de	100
 子自旋轉動	zǐ zì xuán zhuàn dòng	100
 孜孜以求者	zī zī yǐ qiú zhě	100
 自作多情了	zì zuò duō qíng le	100
@@ -105923,6 +106069,7 @@ sort: by_weight
 做上門女婿	zuò shàng mén nǚ xu	100
 左射影空間	zuǒ shè yǐng kōng jiān	100
 做什麼的啊	zuò shén me de a	100
+做什麼似的	zuò shén me shì de	100
 做伸展運動	zuò shēn zhǎn yùn dòng	100
 做生意的料	zuò shēng yì de liào	100
 坐式大便器	zuò shì dà biàn qì	100
@@ -108924,7 +109071,7 @@ sort: by_weight
 本賽季的表現	běn sài jì de biǎo xiàn	100
 本賽季的冠軍	běn sài jì de guàn jūn	100
 本賽季的目標	běn sài jì de mù biāo	100
-本賽季的歐冠	běn sài jì de ōu guān	100
+本賽季的歐冠	běn sài jì de ōu guàn	100
 苯三酚三乙酯	běn sān fēn sān yǐ zhǐ	100
 苯三唑十八胺	běn sān zuò shí bā àn	100
 本森級驅逐艦	běn sēn jí qū zhú jiàn	100
@@ -112835,7 +112982,7 @@ sort: by_weight
 吃薯條不蘸醬	chī shǔ tiáo bù zhàn jiàng	100
 喫松果的松鼠	chī sōng guǒ de sōng shǔ	100
 吃素還真能瘦	chī sù hái zhēn néng shòu	100
-喫天鵝的蛤蟆	chī tiān é de há má	100
+喫天鵝的蛤蟆	chī tiān é de há ma	100
 赤通高速公路	chì tōng gāo sù gōng lù	100
 赤銅礦型結構	chì tóng kuàng xíng jié gòu	100
 翅托葉豬屎豆	chì tuō yè zhū shǐ dòu	100
@@ -113210,6 +113357,7 @@ sort: by_weight
 出於某種原因	chū yú mǒu zhǒng yuán yīn	100
 出於人道主義	chū yú rén dào zhǔ yì	100
 處於弱勢地位	chǔ yú ruò shì dì wèi	100
+出於什麼考慮	chū yú shén me kǎo lǜ	100
 出於什麼目的	chū yú shén me mù dì	100
 處於失業狀態	chǔ yú shī yè zhuàng tài	100
 處於同一水平	chǔ yú tóng yī shuǐ píng	100
@@ -117248,7 +117396,7 @@ sort: by_weight
 獨活寄生顆粒	dú huó jì shēng kē lì	100
 獨活止痛搽劑	dú huó zhǐ tòng chá jì	100
 獨家代理協議	dú jiā dài lǐ xié yì	100
-獨家冠名播出	dú jiā guān míng bō chū	100
+獨家冠名播出	dú jiā guàn míng bō chū	100
 獨家合作夥伴	dú jiā hé zuò huǒ bàn	100
 獨家合作協議	dú jiā hé zuò xié yì	100
 獨家戰略合作	dú jiā zhàn lüè hé zuò	100
@@ -123192,7 +123340,7 @@ sort: by_weight
 高職分類考試	gāo zhí fèn lèi kǎo shì	100
 高職高專教育	gāo zhí gāo zhuān jiào yù	100
 高職高專院校	gāo zhí gāo zhuān yuàn xiào	100
-高知工科大學	gāo zhì gōng kē dà xué	100
+高知工科大學	gāo zhī gōng kē dà xué	100
 高質量的產品	gāo zhì liàng de chǎn pǐn	100
 高質量的單身	gāo zhì liàng de dān shēn	100
 高質量的獨處	gāo zhì liàng de dú chǔ	100
@@ -124399,7 +124547,6 @@ sort: by_weight
 鉤藤鹼氧化物	gōu téng jiǎn yǎng huà wù	100
 溝通的重要性	gōu tōng de zhòng yào xìng	100
 溝通式教學法	gōu tōng shì jiào xué fǎ	100
-狗頭軍師袁紹	gǒu tóu jūn shī yuán shào	100
 溝紋的流程圖	gōu wén de liú chéng tú	120
 購物狂的自白	gòu wù kuáng de zì bái	100
 購物者的天堂	gòu wù zhě de tiān táng	100
@@ -125054,7 +125201,7 @@ sort: by_weight
 慣性靜電約束	guàn xìng jìng diàn yuē shù	100
 慣性約束聚變	guàn xìng yuē shù jù biàn	100
 冠血管擴張藥	guān xuè guǎn kuò zhāng yào	100
-冠亞城市花園	guān yà chéng shì huā yuán	100
+冠亞城市花園	guàn yà chéng shì huā yuán	100
 管夷吾舉於士	guǎn yí wú jǔ yú shì	100
 觀音菩薩道場	guān yīn pú sà dào chǎng	100
 觀音菩薩坐像	guān yīn pú sà zuò xiàng	100
@@ -133383,7 +133530,7 @@ sort: by_weight
 金雞納生物鹼	jīn jī nà shēng wù jiǎn	100
 近幾年的時間	jìn jǐ nián de shí jiān	100
 近幾年的作品	jìn jǐ nián de zuò pǐn	100
-晉級歐冠決賽	jìn jí ōu guān jué sài	100
+晉級歐冠決賽	jìn jí ōu guàn jué sài	100
 近畿日本鐵道	jìn jī rì běn tiě dào	100
 緊急突發事件	jǐn jí tū fā shì jiàn	100
 緊急脫離系統	jǐn jí tuō lí xì tǒng	100
@@ -143672,7 +143819,7 @@ sort: by_weight
 女子捷甲球員	nǚ zǐ jié jiǎ qiú yuán	100
 女子街頭滑板	nǚ zǐ jiē tóu huá bǎn	100
 女子七項全能	nǚ zǐ qī xiàng quán néng	100
-女子十二樂坊	nǚ zǐ shí èr lè fāng	100
+女子十二樂坊	nǚ zǐ shí èr yuè fāng	100
 女子師範學校	nǚ zǐ shī fàn xué xiào	100
 女子師範學院	nǚ zǐ shī fàn xué yuàn	100
 女子十七不嫁	nǚ zǐ shí qī bú jià	100
@@ -149545,200 +149692,10 @@ sort: by_weight
 上鼓室沖洗術	shàng gǔ shì chōng xǐ shù	100
 上古十大神器	shàng gǔ shí dà shén qì	100
 上古石器時代	shàng gǔ shí qì shí dài	100
-上海巴士二汽	shàng hǎi bā shì èr qì	100
-上海巴士六汽	shàng hǎi bā shì liù qì	100
-上海巴士三汽	shàng hǎi bā shì sān qì	100
-上海巴士實業	shàng hǎi bā shì shí yè	100
-上海巴士四汽	shàng hǎi bā shì sì qì	100
-上海巴士新新	shàng hǎi bā shì xīn xīn	100
-上海巴士一汽	shàng hǎi bā shì yī qì	100
-上海百代唱片	shàng hǎi bǎi dài chàng piān	100
-上海半島酒店	shàng hǎi bàn dǎo jiǔ diàn	100
-上海寶冶集團	shàng hǎi bǎo yě jí tuán	100
-上海博擊長空	shàng hǎi bó jī cháng kōng	100
-上海踩踏事件	shàng hǎi cǎi tà shì jiàn	100
-上海柴油機廠	shàng hǎi chái yóu jī chǎng	100
-上海城開集團	shàng hǎi chéng kāi jí tuán	100
-上海城投水務	shàng hǎi chéng tóu shuǐ wù	100
-上海船舶工業	shàng hǎi chuán bó gōng yè	100
-上海大場機場	shàng hǎi dà chǎng jī chǎng	100
-上海達龍科技	shàng hǎi dá lóng kē jì	100
-上海達內科技	shàng hǎi dá nèi kē jì	100
-上海大屯煤電	shàng hǎi dà tún méi diàn	100
-上海大學校史	shàng hǎi dà xué xiào shǐ	100
-上海大眾公用	shàng hǎi dà zhòng gōng yòng	100
-上海打字機廠	shàng hǎi dǎ zì jī chǎng	100
-上海第一生化	shàng hǎi dì yī shēng huà	100
-上海電機學院	shàng hǎi diàn jī xué yuàn	100
-上海電力大學	shàng hǎi diàn lì dà xué	100
-上海電力公司	shàng hǎi diàn lì gōng sī	100
-上海電力學院	shàng hǎi diàn lì xué yuàn	100
-上海電氣公司	shàng hǎi diàn qì gōng sī	100
-上海電氣集團	shàng hǎi diàn qì jí tuán	100
-上海電視節的	shàng hǎi diàn shì jié de	100
-上海動物園站	shàng hǎi dòng wù yuán zhàn	100
-上海都市菜園	shàng hǎi dū shì cài yuán	100
-上海多媒體谷	shàng hǎi duō méi tǐ gǔ	100
-上海法國學校	shàng hǎi fǎ guó xué xiào	100
-上海法政大學	shàng hǎi fǎ zhèng dà xué	100
-上海紡織工業	shàng hǎi fǎng zhī gōng yè	100
-上海紡織集團	shàng hǎi fǎng zhī jí tuán	100
-上海奉賢巴士	shàng hǎi fèng xián bā shì	100
-上海佛學書局	shàng hǎi fó xué shū jú	100
-上海復旦大學	shàng hǎi fù dàn dà xué	100
-上海復旦張江	shàng hǎi fù dàn zhāng jiāng	100
-上海高速公路	shàng hǎi gāo sù gōng lù	100
-上海格致中學	shàng hǎi gé zhì zhōng xué	100
-上海公共租界	shàng hǎi gōng gòng zū jiè	100
-上海公興搬場	shàng hǎi gōng xīng bān chǎng	100
-上海公用事業	shàng hǎi gōng yòng shì yè	100
-上海孤島時期	shàng hǎi gū dǎo shí qī	100
-上海古籍書店	shàng hǎi gǔ jí shū diàn	100
-上海冠生園隊	shàng hǎi guān shēng yuán duì	100
-上海廣電大廈	shàng hǎi guǎng diàn dà shà	100
-上海廣電集團	shàng hǎi guǎng diàn jí tuán	100
-上海廣方言館	shàng hǎi guǎng fāng yán guǎn	100
-上海光華大學	shàng hǎi guāng huá dà xué	100
-上海硅酸鹽所	shàng hǎi guī suān yán suǒ	100
-上海國際花展	shàng hǎi guó jì huā zhǎn	100
-上海國際影展	shàng hǎi guó jì yǐng zhǎn	100
-上海海事大學	shàng hǎi hǎi shì dà xué	100
-上海海事法院	shàng hǎi hǎi shì fǎ yuàn	100
-上海漢霸機電	shàng hǎi hàn bà jī diàn	100
-上海和黃白貓	shàng hǎi hé huáng bái māo	100
-上海華峯超纖	shàng hǎi huá fēng chāo xiān	100
-上海華信證券	shàng hǎi huá xìn zhèng quàn	100
-上海華誼集團	shàng hǎi huá yì jí tuán	100
-上海環貿廣場	shàng hǎi huán mào guǎng chǎng	100
-上海火車北站	shàng hǎi huǒ chē běi zhàn	100
-上海機電股份	shàng hǎi jī diàn gǔ fèn	100
-上海基督教史	shàng hǎi jī dū jiào shǐ	100
-上海級護衛艇	shàng hǎi jí hù wèi tǐng	100
-上海暨南大學	shàng hǎi jì nán dà xué	100
-上海集優機械	shàng hǎi jí yōu jī xiè	100
-上海嘉定城發	shàng hǎi jiā dìng chéng fā	100
-上海佳豪船舶	shàng hǎi jiā háo chuán bó	100
-上海家化品牌	shàng hǎi jiā huà pǐn pái	100
-傷害減到最小	shāng hài jiǎn dào zuì xiǎo	100
-上海建橋學院	shàng hǎi jiàn qiáo xué yuàn	100
 傷害降到最低	shāng hài jiàng dào zuì dī	100
-上海江灣機場	shàng hǎi jiāng wān jī chǎng	100
-上海交大附中	shàng hǎi jiāo dà fù zhōng	100
-上海交大排名	shàng hǎi jiāo dà pái míng	100
-上海錦江飯店	shàng hǎi jǐn jiāng fàn diàn	100
-上海錦江酒店	shàng hǎi jǐn jiāng jiǔ diàn	100
-上海金茂大廈	shàng hǎi jīn mào dà shà	100
-上海靜安大火	shàng hǎi jìng ān dà huǒ	100
-上海久聯證券	shàng hǎi jiǔ lián zhèng quàn	100
-上海久事大廈	shàng hǎi jiǔ shì dà shà	100
-上海久事公司	shàng hǎi jiǔ shì gōng sī	100
-上海久事集團	shàng hǎi jiǔ shì jí tuán	100
 傷害就是傷害	shāng hài jiù shì shāng hài	100
-上海均瑤集團	shàng hǎi jūn yáo jí tuán	100
-上海軍醫大學	shàng hǎi jūn yī dà xué	100
-上海砍人事件	shàng hǎi kǎn rén shì jiàn	100
-上海科技館站	shàng hǎi kē jì guǎn zhàn	100
-上海科技人物	shàng hǎi kē jì rén wù	100
-上海力寶廣場	shàng hǎi lì bǎo guǎng chǎng	100
-上海立達學院	shàng hǎi lì dá xué yuàn	100
-上海麗都花園	shàng hǎi lì dū huā yuán	100
-上海聯影醫療	shàng hǎi lián yǐng yī liáo	100
-上海良友集團	shàng hǎi liáng yǒu jí tuán	100
-上海烈士陵園	shàng hǎi liè shì líng yuán	100
-上海龍華廟會	shàng hǎi lóng huá miào huì	100
-上海路立交橋	shàng hǎi lù lì jiāo qiáo	100
-上海輪胎橡膠	shàng hǎi lún tāi xiàng jiāo	100
-上海綠地申花	shàng hǎi lǜ dì shēn huā	100
-上海綠谷製藥	shàng hǎi lǜ gǔ zhì yào	100
-上海旅遊景點	shàng hǎi lǚ yóu jǐng diǎn	100
-上海美術大展	shàng hǎi měi shù dà zhǎn	100
-上海沐瞳科技	shàng hǎi mù tóng kē jì	100
-上海南北高架	shàng hǎi nán běi gāo jià	100
-上海南洋大學	shàng hǎi nán yáng dà xué	100
-上海南洋公學	shàng hǎi nán yáng gōng xué	100
-上海南洋中學	shàng hǎi nán yáng zhōng xué	100
-上海農商銀行	shàng hǎi nóng shāng yín háng	100
-上海女子圖鑑	shàng hǎi nǚ zǐ tú jiàn	100
-上海牌照拍賣	shàng hǎi pái zhào pāi mài	100
-上海浦東中邦	shàng hǎi pǔ dōng zhōng bāng	100
-上海錢業公會	shàng hǎi qián yè gōng huì	100
-上海繞城高速	shàng hǎi rào chéng gāo sù	100
-上海仁濟醫院	shàng hǎi rén jì yī yuàn	100
-上海如心文化	shàng hǎi rú xīn wén huà	100
-上海三聯書店	shàng hǎi sān lián shū diàn	100
-上海三槍集團	shàng hǎi sān qiāng jí tuán	100
-上海杉達學院	shàng hǎi shān dá xué yuàn	100
-上海商科大學	shàng hǎi shāng kē dà xué	100
-上海尚世影業	shàng hǎi shàng shì yǐng yè	100
-上海商務中心	shàng hǎi shāng wù zhōng xīn	100
-上海申迪集團	shàng hǎi shēn dí jí tuán	100
-上海申花歷史	shàng hǎi shēn huā lì shǐ	100
-上海申花聯盛	shàng hǎi shēn huā lián shèng	100
-上海申花球員	shàng hǎi shēn huā qiú yuán	100
-上海申花數據	shàng hǎi shēn huā shù jù	100
 傷害身體健康	shāng hài shēn tǐ jiàn kāng	100
-上海申鑫球員	shàng hǎi shēn xīn qiú yuán	100
-上海聖三一堂	shàng hǎi shèng sān yì táng	100
-上海師範大學	shàng hǎi shī fàn dà xué	100
-上海師範學院	shàng hǎi shī fàn xué yuàn	100
-上海石化總廠	shàng hǎi shí huà zǒng chǎng	100
-上海世紀出版	shàng hǎi shì jì chū bǎn	100
-上海世紀大道	shàng hǎi shì jì dà dào	100
-上海世紀廣場	shàng hǎi shì jì guǎng chǎng	100
-上海世貿商城	shàng hǎi shì mào shāng chéng	100
-上海食品公司	shàng hǎi shí pǐn gōng sī	100
-上海實業集團	shàng hǎi shí yè jí tuán	100
-上海實業控股	shàng hǎi shí yè kòng gǔ	100
-上海石油化工	shàng hǎi shí yóu huà gōng	100
 傷害輸出能力	shāng hài shū chū néng lì	100
-上海四季酒店	shàng hǎi sì jì jiǔ diàn	100
-上海體育館站	shàng hǎi tǐ yù guǎn zhàn	100
-上海天璣科技	shàng hǎi tiān jī kē jì	100
-上海天主教堂	shàng hǎi tiān zhǔ jiào táng	100
-上海同濟醫院	shàng hǎi tóng jì yī yuàn	100
-上海同仁醫院	shàng hǎi tóng rén yī yuàn	100
-上海同文書院	shàng hǎi tóng wén shū yuàn	100
-上海通軒實業	shàng hǎi tōng xuān shí yè	100
-上海圖書館站	shàng hǎi tú shū guǎn zhàn	100
-上海外環高速	shàng hǎi wài huán gāo sù	100
-上海萬國公墓	shàng hǎi wàn guó gōng mù	100
-上海萬國商團	shàng hǎi wàn guó shāng tuán	100
-上海宛平劇院	shàng hǎi wǎn píng jù yuàn	100
-上海維西公司	shàng hǎi wéi xī gōng sī	100
-上海文廣演藝	shàng hǎi wén guǎng yǎn yì	100
-上海文明書局	shàng hǎi wén míng shū jú	100
-上海無軌電車	shàng hǎi wú guǐ diàn chē	100
-上海西岸開發	shàng hǎi xī àn kāi fā	100
-上海西郊賓館	shàng hǎi xī jiāo bīn guǎn	100
-上海西郊公園	shàng hǎi xī jiāo gōng yuán	100
-上海小紅樓案	shàng hǎi xiǎo hóng lóu àn	100
-上海刑事案件	shàng hǎi xíng shì àn jiàn	100
-上海興偉學院	shàng hǎi xīng wěi xué yuàn	100
-上海延安飯店	shàng hǎi yán ān fàn diàn	100
-上海姚記撲克	shàng hǎi yáo jì pū kè	100
-上海耀皮玻璃	shàng hǎi yào pí bō li	100
-上海儀電電子	shàng hǎi yí diàn diàn zǐ	100
-上海儀電控股	shàng hǎi yí diàn kòng gǔ	100
-傷害已經造成	shāng hài yǐ jīng zào chéng	100
-上海醫科大學	shàng hǎi yī kē dà xué	100
-上海異人娼館	shàng hǎi yì rén chāng guǎn	100
-上海一網通辦	shàng hǎi yī wǎng tōng bàn	100
-上海影評人獎	shàng hǎi yǐng píng rén jiǎng	100
-上海永福園陵	shàng hǎi yǒng fú yuán líng	100
-上海永利帶業	shàng hǎi yǒng lì dài yè	100
-上海郵電醫院	shàng hǎi yóu diàn yī yuàn	100
-上海郵通科技	shàng hǎi yóu tōng kē jì	100
-上海有線電視	shàng hǎi yǒu xiàn diàn shì	100
-上海遊泳館站	shàng hǎi yóu yǒng guǎn zhàn	100
-上海源甲餐飲	shàng hǎi yuán jiǎ cān yǐn	100
-上海遠洋賓館	shàng hǎi yuǎn yáng bīn guǎn	100
-上海振華重工	shàng hǎi zhèn huá zhòng gōng	100
-上海針織九廠	shàng hǎi zhēn zhī jiǔ chǎng	100
-上海政法學院	shàng hǎi zhèng fǎ xué yuàn	100
-上海置地廣場	shàng hǎi zhì dì guǎng chǎng	100
-上海支援全國	shàng hǎi zhī yuán quán guó	100
-上海中國畫院	shàng hǎi zhōng guó huà yuàn	100
-上海中學東校	shàng hǎi zhōng xué dōng xiào	100
 傷寒和副傷寒	shāng hán hé fù shāng hán	100
 傷寒沙門氏菌	shāng hán shā mén shì jūn	100
 傷寒十居其七	shāng hán shí jū qí qī	100
@@ -159257,7 +159214,7 @@ sort: by_weight
 五分鐘的時間	wǔ fēn zhōng de shí jiān	100
 無縫不鏽鋼管	wú fèng bú xiù gāng guǎn	100
 五峰高速公路	wǔ fēng gāo sù gōng lù	100
-無縫冠壓模機	wú fèng guān yā mó jī	100
+無縫冠壓模機	wú fèng guàn yā mó jī	100
 舞風號驅逐艦	wǔ fēng hào qū zhú jiàn	100
 吳鳳科技大學	wú fèng kē jì dà xué	100
 五氟苯甲酰氯	wǔ fú běn jiǎ xiān lǜ	100
@@ -181292,7 +181249,6 @@ sort: by_weight
 打開天窗說亮話	dǎ kāi tiān chuāng shuō liàng huà	100
 打開網絡適配器	dǎ kāi wǎng luò shì pèi qì	100
 打開新世界大門	dǎ kāi xīn shì jiè dà mén	100
-打開資源管理器	dǎ kāi zī yuán guǎn lǐ qì	100
 達克二氏顱骨鉗	dá kè èr shì lú gǔ qián	100
 大顆粒淋巴細胞	dà kē lì lín bā xì bāo	100
 達克羅寧膠漿劑	dá kè luó níng jiāo jiāng jì	100
@@ -190502,6 +190458,7 @@ sort: by_weight
 頸總動脈造影術	jǐng zǒng dòng mài zào yǐng shù	100
 經足中部截斷術	jīng zú zhōng bù jié duàn shù	100
 救必應胃痛膠囊	jiù bì yīng wèi tòng jiāo náng	100
+酒不醉人人自醉	jiǔ bú zuì rén rén zì zuì	100
 灸刺諸藥不能治	jiǔ cì zhū yào bù néng zhì	100
 九二式重裝甲車	jiǔ èr shì zhòng zhuāng jiǎ chē	100
 酒國英雄口服液	jiǔ guó yīng xióng kǒu fú yè	100
@@ -194719,6 +194676,7 @@ sort: by_weight
 人生莫受老來貧	rén shēng mò shòu lǎo lái pín	100
 人生南北多歧路	rén shēng nán běi duō qí lù	100
 人生能有幾回搏	rén shēng néng yǒu jǐ huí bó	100
+人生七十古來稀	rén shēng qī shí gǔ lái xī	100
 人生若如初相見	rén shēng ruò rú chū xiāng jiàn	100
 人生若只初相見	rén shēng ruò zhǐ chū xiāng jiàn	100
 人生是一場旅程	rén shēng shì yì chǎng lǚ chéng	100
@@ -199539,6 +199497,7 @@ sort: by_weight
 油漆和染料中毒	yóu qī hé rǎn liào zhòng dú	100
 有其母必有其女	yǒu qí mǔ bì yǒu qí nǚ	100
 有錢能使鬼推磨	yǒu qián néng shǐ guǐ tuī mò	100
+有情人終成眷屬	yǒu qíng rén zhōng chéng juàn shǔ	100
 右室刺傷修補術	yòu shì cì shāng xiū bǔ shù	100
 優勢反應強化說	yōu shì fǎn yìng qiáng huà shuō	100
 右室流出道狹窄	yòu shì liú chū dào xiá zhǎi	100
@@ -199679,6 +199638,7 @@ sort: by_weight
 雲夢澤智慧平台	yún mèng zé zhì huì píng tái	100
 孕早期產前診斷	yùn zǎo qī chǎn qián zhěn duàn	100
 雲芝胞內糖肽片	yún zhī bāo nèi táng tài piàn	100
+扎緊織密防護網	zā jǐn zhī mì fáng hù wǎng	100
 雜療方第二十三	zá liáo fāng dì èr shí sān	100
 再加附子更扶陽	zài jiā fù zǐ gèng fú yáng	100
 在看不見的地方	zài kàn bú jiàn de dì fāng	100
@@ -199721,7 +199681,7 @@ sort: by_weight
 澤瀉白朮與二苓	zé xiè bái zhú yǔ èr líng	100
 澤瀉蒸餅糊丸服	zé xiè zhēng bǐng hú wán fú	100
 怎能對你弟兄說	zěn néng duì nǐ dì xiōng shuō	100
-增加冠脈血流量	zēng jiā guàn mài xuè liú liàng	100
+增加冠脈血流量	zēng jiā guān mài xuè liú liàng	100
 增加藥物穩定性	zēng jiā yào wù wěn dìng xìng	100
 增抗寧片薄膜衣	zēng kàng níng piàn báo mó yī	100
 增生性布倫納瘤	zēng shēng xìng bù lún nà liú	100
@@ -199737,7 +199697,6 @@ sort: by_weight
 增殖性視網膜病	zēng zhí xìng shì wǎng mó bìng	100
 增殖性視網膜炎	zēng zhí xìng shì wǎng mó yán	100
 增殖性心內膜炎	zēng zhí xìng xīn nèi mó yán	100
-扎緊織密防護網	zhā jǐn zhī mì fáng hù wǎng	100
 扎來普隆分散片	zhā lái pǔ lóng fēn sǎn piàn	100
 蚱蜢鬥公雞玩命	zhà měng dòu gōng jī wán mìng	100
 楂曲平胃口服液	zhā qǔ píng wèi kǒu fú yè	100
@@ -201093,7 +201052,7 @@ sort: by_weight
 礦井通風速度壓頭	kuàng jǐng tōng fēng sù dù yā tóu	100
 礦區水文地質條件	kuàng qū shuǐ wén dì zhì tiáo jiàn	100
 饋金珠李肅說呂布	kuì jīn zhū lǐ sù shuō lǚ bù	100
-癩蛤蟆想吃天鵝肉	lài há má xiǎng chī tiān é ròu	100
+癩蛤蟆想吃天鵝肉	lài há ma xiǎng chī tiān é ròu	100
 老虎嘴裡拔牙找死	lǎo hǔ zuǐ lǐ bá yá zhǎo sǐ	100
 老鼠的兒子會打洞	lǎo shǔ de ér zi huì dǎ dòng	100
 老鼠過街人人喊打	lǎo shǔ guò jiē rén rén hǎn dǎ	100
@@ -201518,6 +201477,7 @@ sort: by_weight
 我不入地獄誰入地獄	wǒ bú rù dì yù shuí rù dì yù	1001
 小人之心度君子之腹	xiǎo rén zhī xīn duó jūn zǐ zhī fù	100
 新制氫氧化銅懸濁液	xīn zhì qīng yǎng huà tóng xuán zhuó yè	100
+修身齊家治國平天下	xiū shēn qí jiā zhì guó píng tiān xià	100
 鹽酸特比萘芬噴霧劑	yán suān tè bǐ nài fēn pēn wù jì	100
 英雄聯盟全球總決賽	yīng xióng lián méng quán qiú zǒng jué sài	100
 約翰斯霍普金斯大學	yuē hàn sī huò pǔ jīn sī dà xué	100
@@ -201533,6 +201493,7 @@ sort: by_weight
 撐死膽大的餓死膽小的	chēng sǐ dǎn dà de è sǐ dǎn xiǎo de	100
 醜媳婦早晚也得見公婆	chǒu xí fù zǎo wǎn yě de jiàn gōng pó	100
 打柴的不能跟放羊的走	dǎ chái de bù néng gēn fàng yáng de zǒu	100
+地勢坤君子以厚德載物	dì shì kūn jūn zǐ yǐ hòu dé zài wù	100
 躲得了初一躲不過十五	duǒ de liǎo chū yī duǒ bú guò shí wǔ	100
 桂枝去桂加茯苓白朮湯	guì zhī qù guì jiā fú líng bái zhú tāng	100
 過了這個村就沒這個店	guò le zhè ge cūn jiù méi zhè ge diàn	100
