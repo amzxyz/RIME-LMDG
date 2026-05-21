@@ -7270,22 +7270,24 @@ class MainWin(QWidget):
                 /* 强行接管勾选框和单选框的绘制，彻底解决无边界隐形问题 */
                 QCheckBox::indicator, QRadioButton::indicator {
                     width: 16px; height: 16px; border-radius: 4px; 
-                    border: 1.5px solid #A8C7AA; background-color: transparent;
+                    border: 1px solid #A8C7AA; /* <--- 削薄到 1px 极简细线 */
+                    background-color: transparent;
                 }
                 QRadioButton::indicator { border-radius: 8px; }
                 QCheckBox::indicator:hover, QRadioButton::indicator:hover { 
-                    border: 1.5px solid #61A165; background-color: rgba(97, 161, 101, 0.1); 
+                    border: 1px solid #61A165; /* <--- 悬浮框也保持 1px */
+                    background-color: rgba(97, 161, 101, 0.1); 
                 }
                 QCheckBox::indicator:checked {
-                    background-color: #61A165; border: 1.5px solid #61A165;
+                    background-color: #61A165; border: 1px solid #61A165;
                     image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5bGluZSBwb2ludHM9IjIwIDYgOSAxNyA0IDEyIj48L3BvbHlsaW5lPjwvc3ZnPg==);
                 }
                 QRadioButton::indicator:checked {
-                    background-color: #61A165; border: 1.5px solid #61A165;
+                    background-color: #61A165; border: 1px solid #61A165;
                     image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=);
                 }
                 QCheckBox::indicator:disabled, QRadioButton::indicator:disabled { 
-                    border: 1.5px solid #666; background-color: rgba(100, 100, 100, 0.2);
+                    border: 1px solid #666; background-color: rgba(100, 100, 100, 0.2);
                 }
                 
                 /* 高级定制滚动条 (隐形轨道 + 莫兰迪绿悬浮) */
