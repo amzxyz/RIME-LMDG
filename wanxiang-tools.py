@@ -7255,85 +7255,77 @@ class MainWin(QWidget):
         self.setUpdatesEnabled(False)
         
         try:
+            from PySide6.QtWidgets import QApplication, QStyleFactory
+            from PySide6.QtGui import QPalette, QColor
+            from PySide6.QtCore import Qt
+            
+            # 统一跨平台基底风格
+            QApplication.setStyle(QStyleFactory.create("Fusion"))
+            pal = QPalette()
+            
             if dark:
-                from PySide6.QtWidgets import QApplication, QStyleFactory
-                from PySide6.QtGui import QPalette, QColor
-                from PySide6.QtCore import Qt
+                # ==========================================
+                #   暗色模式：引入专业的护眼莫兰迪灰白
+                # ==========================================
+                off_white = QColor(210, 210, 210) # 即 #D2D2D2，专业暗色阅读灰度
+                bg_dark = QColor(45, 45, 45)      # 柔和底色，非死黑
                 
-                QApplication.setStyle(QStyleFactory.create("Fusion"))
-                pal = QPalette()
-                pal.setColor(QPalette.Window, QColor(53, 53, 53))
-                pal.setColor(QPalette.WindowText, Qt.white)
-                pal.setColor(QPalette.Base, QColor(35, 35, 35))
-                pal.setColor(QPalette.AlternateBase, QColor(53, 53, 53))
-                pal.setColor(QPalette.Text, Qt.white)
-                pal.setColor(QPalette.Button, QColor(53, 53, 53))
-                pal.setColor(QPalette.ButtonText, Qt.white)
-                pal.setColor(QPalette.Highlight, QColor(42, 130, 218))
-                pal.setColor(QPalette.HighlightedText, Qt.black)
+                pal.setColor(QPalette.Window, bg_dark)
+                pal.setColor(QPalette.WindowText, off_white)
+                pal.setColor(QPalette.Base, QColor(30, 30, 30))
+                pal.setColor(QPalette.AlternateBase, bg_dark)
+                pal.setColor(QPalette.Text, off_white)
+                pal.setColor(QPalette.Button, QColor(60, 60, 60))
+                pal.setColor(QPalette.ButtonText, off_white)
+                pal.setColor(QPalette.Highlight, QColor(97, 161, 101))
+                pal.setColor(QPalette.HighlightedText, Qt.white)
                 QApplication.setPalette(pal)
                 
                 self.tabs.setStyleSheet("""
                     QTabWidget::pane { border: 1px solid #444; top: -1px; border-radius: 4px; }
-                    QTabBar::tab { background-color: #353535; color: #ccc; border: 1px solid #444; padding: 6px 16px; margin-right: 2px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
-                    QTabBar::tab:selected { background-color: #2b542c; color: white; border: 1px solid #5cb85c; font-weight: bold; }
+                    QTabBar::tab { background-color: #353535; color: #D4D4D4; border: 1px solid #444; padding: 6px 16px; margin-right: 2px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+                    QTabBar::tab:selected { background-color: #49814D; color: white; border: 1px solid #61A165; font-weight: bold; }
                     QTabBar::tab:hover:!selected { background-color: #444; }
                 """)
                 self.progress.setStyleSheet("""
-                    QProgressBar { border: 1px solid #444; border-radius: 4px; text-align: center; background-color: #353535; color: #eee; font-weight: bold; }
+                    QProgressBar { border: 1px solid #444; border-radius: 4px; text-align: center; background-color: #353535; color: #D4D4D4; font-weight: bold; }
                     QProgressBar::chunk { background-color: #49814D; border-radius: 3px; }
                 """)
                 self.gh_frame.setStyleSheet("#ghBox { background-color: #2b302b; border: 1px solid #445044; border-radius: 5px; }")
                 
-                # 暗黑模式 - 莫兰迪绿高级样式
+                # 修复核心：所有文字颜色改为 #D4D4D4；去除了 QGroupBox 全局的 color 和 font-weight 阻止继承！
                 yaml_theme_css = """
-                    QTreeWidget { font-size: 14px; border: 1px solid #444; border-radius: 8px; background-color: #2b2b2b; outline: none; color: #eee; }
+                    MainWin { background-color: #2D2D2D; } 
+                    
+                    QTreeWidget { font-size: 14px; border: 1px solid #444; border-radius: 8px; background-color: #262626; outline: none; color: #D4D4D4; }
                     QTreeWidget::item { min-height: 42px; border-bottom: 1px solid #444; }
                     QTreeWidget::item:selected, QTreeWidget::item:focus { background-color: transparent; color: #fff; border: none; border-bottom: 1px solid #444; }
-                    QHeaderView::section { background-color: #353535; color: #eee; font-size: 14px; font-weight: bold; padding: 10px; border: none; border-bottom: 1px solid #444; }
+                    QHeaderView::section { background-color: #353535; color: #D4D4D4; font-size: 14px; font-weight: bold; padding: 10px; border: none; border-bottom: 1px solid #444; }
                     
                     QLineEdit, QComboBox, QPlainTextEdit {
                         background-color: transparent; 
-                        border: 1px solid #49814D;
-                        border-radius: 4px;
-                        padding: 4px 8px;
-                        color: #eee;
-                        selection-background-color: #61A165;
-                        selection-color: black;
+                        border: 1px solid #49814D; border-radius: 4px; padding: 4px 8px;
+                        color: #D4D4D4; selection-background-color: #61A165; selection-color: white;
                     }
-                    QLineEdit:hover, QComboBox:hover, QPlainTextEdit:hover {
-                        border: 1px solid #61A165;
-                    }
-                    QLineEdit:focus, QComboBox:focus, QPlainTextEdit:focus {
-                        border: 1px solid #61A165;
-                        background-color: rgba(97, 161, 101, 0.05);
-                    }
-                    QLineEdit:disabled, QComboBox:disabled, QPlainTextEdit:disabled {
-                        border: 1px solid #444; color: #888;
-                    }
+                    QLineEdit:hover, QComboBox:hover, QPlainTextEdit:hover { border: 1px solid #61A165; }
+                    QLineEdit:focus, QComboBox:focus, QPlainTextEdit:focus { border: 1px solid #61A165; background-color: rgba(97, 161, 101, 0.05); }
+                    QLineEdit:disabled, QComboBox:disabled, QPlainTextEdit:disabled { border: 1px solid #444; color: #777; }
                     
                     QComboBox::drop-down { border: none; width: 24px; }
-                    QComboBox QAbstractItemView { background-color: #353535; color: #eee; selection-background-color: #61A165; selection-color: black; border: 1px solid #49814D; }
+                    QComboBox QAbstractItemView { background-color: #353535; color: #D4D4D4; selection-background-color: #61A165; selection-color: white; border: 1px solid #49814D; }
                     
+                    /* 修复继承 Bug：移除了此处的 color 和 font-weight */
                     QGroupBox { 
-                        border: 1px solid #49814D; 
-                        border-radius: 5px; 
-                        margin-top: 15px;
-                        padding-top: 10px;
-                        background-color: transparent;
-                        font-weight: bold; 
-                        color: #eee; 
+                        border: 1px solid #49814D; border-radius: 5px; margin-top: 15px; padding-top: 10px; background-color: transparent;
                     }
+                    /* 把文字颜色限制在标题上，里面的 QCheckBox 就不会受干扰了 */
                     QGroupBox::title { 
-                        subcontrol-origin: margin; 
-                        subcontrol-position: top left;
-                        left: 10px; 
-                        padding: 0 5px; 
-                        color: #eee;
+                        subcontrol-origin: margin; subcontrol-position: top left; left: 10px; padding: 0 5px; 
+                        color: #D4D4D4; font-weight: bold; 
                     }
                     
                     #leftNavFrame { border: 1px solid #444; border-radius: 6px; background-color: #2b2b2b; }
-                    #leftNavTree { background-color: transparent; font-size: 13px; outline: none; selection-background-color: transparent; color: #eee; }
+                    #leftNavTree { background-color: transparent; font-size: 13px; outline: none; selection-background-color: transparent; color: #D4D4D4; }
                     #leftNavTree::branch { background-color: transparent; }
                     #leftNavTree::item { padding: 8px 6px; border-radius: 4px; margin: 2px 4px; }
                     #leftNavTree::item:hover { background-color: rgba(97, 161, 101, 0.3); }
@@ -7343,10 +7335,34 @@ class MainWin(QWidget):
                 """
                 self.setStyleSheet(yaml_theme_css)
 
+                # 联动 Windows 暗色标题栏
+                import sys
+                if sys.platform == 'win32':
+                    try:
+                        import ctypes
+                        hwnd = int(self.winId())
+                        rendering_mode = ctypes.c_int(1)
+                        ctypes.windll.dwmapi.DwmSetWindowAttribute(hwnd, 20, ctypes.byref(rendering_mode), ctypes.sizeof(rendering_mode))
+                        ctypes.windll.dwmapi.DwmSetWindowAttribute(hwnd, 19, ctypes.byref(rendering_mode), ctypes.sizeof(rendering_mode))
+                    except Exception: pass
+
             else:
-                from PySide6.QtWidgets import QApplication, QStyleFactory
-                QApplication.setStyle(QStyleFactory.create("Fusion"))
-                QApplication.setPalette(QApplication.style().standardPalette())
+                # ==========================================
+                #   亮色模式：手动锁死深灰字，防止被系统白字干扰
+                # ==========================================
+                dark_gray = QColor(51, 51, 51)    # 高级深灰 #333
+                bg_light = QColor(245, 245, 245)
+                
+                pal.setColor(QPalette.Window, bg_light)
+                pal.setColor(QPalette.WindowText, dark_gray)
+                pal.setColor(QPalette.Base, Qt.white)
+                pal.setColor(QPalette.AlternateBase, bg_light)
+                pal.setColor(QPalette.Text, dark_gray)
+                pal.setColor(QPalette.Button, QColor(240, 240, 240))
+                pal.setColor(QPalette.ButtonText, dark_gray)
+                pal.setColor(QPalette.Highlight, QColor(97, 161, 101))
+                pal.setColor(QPalette.HighlightedText, Qt.white)
+                QApplication.setPalette(pal)
                 
                 self.tabs.setStyleSheet("""
                     QTabWidget::pane { border: 1px solid #A8C7AA; top: -1px; border-radius: 4px; }
@@ -7360,51 +7376,32 @@ class MainWin(QWidget):
                 """)
                 self.gh_frame.setStyleSheet("#ghBox { background-color: #F0F5F1; border: 1px solid #A8C7AA; border-radius: 5px; }")
                 
-                # 亮色模式 - 莫兰迪绿高级样式
                 yaml_theme_css = """
+                    MainWin { background-color: #F5F5F5; }
+                    
                     QTreeWidget { font-size: 14px; border: 1px solid #E0E0E0; border-radius: 8px; background-color: white; outline: none; color: #333; }
                     QTreeWidget::item { min-height: 42px; border-bottom: 1px solid #F5F5F5; }
                     QTreeWidget::item:selected, QTreeWidget::item:focus { background-color: transparent; color: #333; border: none; border-bottom: 1px solid #F5F5F5; }
                     QHeaderView::section { background-color: #F0F5F1; color: #333; font-size: 14px; font-weight: bold; padding: 10px; border: none; border-bottom: 1px solid #C1D4C3; }
                     
                     QLineEdit, QComboBox, QPlainTextEdit {
-                        background-color: transparent;
-                        border: 1px solid #A8C7AA;
-                        border-radius: 4px;
-                        padding: 4px 8px;
-                        color: #333;
-                        selection-background-color: #61A165;
-                        selection-color: white;
+                        background-color: transparent; border: 1px solid #A8C7AA; border-radius: 4px; padding: 4px 8px;
+                        color: #333; selection-background-color: #61A165; selection-color: white;
                     }
-                    QLineEdit:hover, QComboBox:hover, QPlainTextEdit:hover {
-                        border: 1px solid #61A165;
-                    }
-                    QLineEdit:focus, QComboBox:focus, QPlainTextEdit:focus {
-                        border: 1px solid #61A165;
-                        background-color: rgba(97, 161, 101, 0.05);
-                    }
-                    QLineEdit:disabled, QComboBox:disabled, QPlainTextEdit:disabled {
-                        border: 1px solid #ddd; color: #aaa;
-                    }
+                    QLineEdit:hover, QComboBox:hover, QPlainTextEdit:hover { border: 1px solid #61A165; }
+                    QLineEdit:focus, QComboBox:focus, QPlainTextEdit:focus { border: 1px solid #61A165; background-color: rgba(97, 161, 101, 0.05); }
+                    QLineEdit:disabled, QComboBox:disabled, QPlainTextEdit:disabled { border: 1px solid #ddd; color: #aaa; }
                     
                     QComboBox::drop-down { border: none; width: 24px; }
                     QComboBox QAbstractItemView { background-color: #FFFFFF; color: #333; selection-background-color: #E2ECE3; selection-color: #333; border: 1px solid #A8C7AA; }
                     
+                    /* 修复继承 Bug：同理移除 color */
                     QGroupBox { 
-                        border: 1px solid #61A165;
-                        border-radius: 5px; 
-                        margin-top: 15px; 
-                        padding-top: 10px; 
-                        background-color: transparent;
-                        font-weight: bold; 
-                        color: #333; 
+                        border: 1px solid #61A165; border-radius: 5px; margin-top: 15px; padding-top: 10px; background-color: transparent;
                     }
                     QGroupBox::title { 
-                        subcontrol-origin: margin; 
-                        subcontrol-position: top left;
-                        left: 10px; 
-                        padding: 0 5px; 
-                        color: #333;
+                        subcontrol-origin: margin; subcontrol-position: top left; left: 10px; padding: 0 5px; 
+                        color: #333; font-weight: bold; 
                     }
                     
                     #leftNavFrame { border: 1px solid #61A165; border-radius: 6px; background-color: #F8FAF8; }
@@ -7418,19 +7415,18 @@ class MainWin(QWidget):
                 """
                 self.setStyleSheet(yaml_theme_css)
 
+                # 联动 Windows 亮色标题栏
+                import sys
+                if sys.platform == 'win32':
+                    try:
+                        import ctypes
+                        hwnd = int(self.winId())
+                        rendering_mode = ctypes.c_int(0)
+                        ctypes.windll.dwmapi.DwmSetWindowAttribute(hwnd, 20, ctypes.byref(rendering_mode), ctypes.sizeof(rendering_mode))
+                        ctypes.windll.dwmapi.DwmSetWindowAttribute(hwnd, 19, ctypes.byref(rendering_mode), ctypes.sizeof(rendering_mode))
+                    except Exception: pass
+
             self.settings.setValue('ui/dark', dark)
-            
-            # 【细节】：联动 Windows 标题栏变黑（沉浸式暗色模式）
-            import sys
-            if sys.platform == 'win32':
-                try:
-                    import ctypes
-                    hwnd = int(self.winId())
-                    rendering_mode = ctypes.c_int(1 if dark else 0)
-                    ctypes.windll.dwmapi.DwmSetWindowAttribute(hwnd, 20, ctypes.byref(rendering_mode), ctypes.sizeof(rendering_mode))
-                    ctypes.windll.dwmapi.DwmSetWindowAttribute(hwnd, 19, ctypes.byref(rendering_mode), ctypes.sizeof(rendering_mode))
-                except Exception:
-                    pass
 
         finally:
             # 【收尾】：切完主题后恢复屏幕刷新，瞬间出图！
