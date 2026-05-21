@@ -33183,9 +33183,6 @@ sort: by_weight
 阁老峪村	gé lǎo yù cūn	1
 革勒车乡	gé lè chē xiāng	1
 革勒车镇	gé lè chē zhèn	1
-歌乐山村	gē lè shān cūn	1
-歌乐山镇	gē lè shān zhèn	1
-歌乐沱乡	gē lè tuó xiāng	1
 格里坪镇	gé lǐ píng zhèn	1
 葛礼瓦镇	gé lǐ wǎ zhèn	1
 格林街道	gé lín jiē dào	1
@@ -33239,6 +33236,9 @@ sort: by_weight
 隔洋塘村	gé yáng táng cūn	1
 葛崾岘乡	gé yǎo xiàn xiāng	1
 葛渔城镇	gé yú chéng zhèn	1
+歌乐山村	gē yuè shān cūn	1
+歌乐山镇	gē yuè shān zhèn	1
+歌乐沱乡	gē yuè tuó xiāng	1
 革镇堡镇	gé zhèn bǎo zhèn	1
 圪针梁村	gē zhēn liáng cūn	1
 格针庙村	gé zhēn miào cūn	1
@@ -65262,13 +65262,13 @@ sort: by_weight
 高寨子街道	gāo zhài zi jiē dào	1
 葛店开发区	gé diàn kāi fā qū	1
 葛家满族乡	gé jiā mǎn zú xiāng	1
-歌乐山街道	gē lè shān jiē dào	1
 格球山农场	gé qiú shān nóng chǎng	1
 格日僧苏木	gé rì sēng sū mù
 各苏木乡镇	gè sū mù xiāng zhèn	1
 各塔埠街道	gè tǎ bù jiē dào	1
 各乡镇街道	gè xiāng zhèn jiē dào	1
 革新街街道	gé xīn jiē jiē dào	1
+歌乐山街道	gē yuè shān jiē dào	1
 革镇堡街道	gé zhèn bǎo jiē dào	1
 葛洲坝街道	gé zhōu bà jiē dào	1
 根德营子乡	gēn dé yíng zi xiāng	1
