@@ -7263,12 +7263,53 @@ class MainWin(QWidget):
             QApplication.setStyle(QStyleFactory.create("Fusion"))
             pal = QPalette()
             
+            # ==========================================
+            #   共用：高级定制滚动条与 SVG 矢量勾选框
+            # ==========================================
+            common_scrollbar_and_checkbox_css = """
+                /* 强行接管勾选框和单选框的绘制，彻底解决无边界隐形问题 */
+                QCheckBox::indicator, QRadioButton::indicator {
+                    width: 16px; height: 16px; border-radius: 4px; 
+                    border: 1.5px solid #A8C7AA; background-color: transparent;
+                }
+                QRadioButton::indicator { border-radius: 8px; }
+                QCheckBox::indicator:hover, QRadioButton::indicator:hover { 
+                    border: 1.5px solid #61A165; background-color: rgba(97, 161, 101, 0.1); 
+                }
+                QCheckBox::indicator:checked {
+                    background-color: #61A165; border: 1.5px solid #61A165;
+                    image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwb2x5bGluZSBwb2ludHM9IjIwIDYgOSAxNyA0IDEyIj48L3BvbHlsaW5lPjwvc3ZnPg==);
+                }
+                QRadioButton::indicator:checked {
+                    background-color: #61A165; border: 1.5px solid #61A165;
+                    image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=);
+                }
+                QCheckBox::indicator:disabled, QRadioButton::indicator:disabled { 
+                    border: 1.5px solid #666; background-color: rgba(100, 100, 100, 0.2);
+                }
+                
+                /* 高级定制滚动条 (隐形轨道 + 莫兰迪绿悬浮) */
+                QScrollBar:vertical { border: none; background: transparent; width: 12px; margin: 0px; }
+                QScrollBar::handle:vertical { background: rgba(150, 150, 150, 0.4); border-radius: 6px; min-height: 30px; margin: 2px; }
+                QScrollBar::handle:vertical:hover { background: #61A165; }
+                QScrollBar::handle:vertical:pressed { background: #49814D; }
+                QScrollBar::sub-line:vertical, QScrollBar::add-line:vertical { border: none; background: none; height: 0px; }
+                QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { background: none; }
+                
+                QScrollBar:horizontal { border: none; background: transparent; height: 12px; margin: 0px; }
+                QScrollBar::handle:horizontal { background: rgba(150, 150, 150, 0.4); border-radius: 6px; min-width: 30px; margin: 2px; }
+                QScrollBar::handle:horizontal:hover { background: #61A165; }
+                QScrollBar::handle:horizontal:pressed { background: #49814D; }
+                QScrollBar::sub-line:horizontal, QScrollBar::add-line:horizontal { border: none; background: none; width: 0px; }
+                QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { background: none; }
+            """
+
             if dark:
                 # ==========================================
                 #   暗色模式：引入专业的护眼莫兰迪灰白
                 # ==========================================
-                off_white = QColor(210, 210, 210) # 即 #D2D2D2，专业暗色阅读灰度
-                bg_dark = QColor(45, 45, 45)      # 柔和底色，非死黑
+                off_white = QColor(210, 210, 210) # #D2D2D2，专业暗色阅读灰度
+                bg_dark = QColor(45, 45, 45)      # 柔和底色
                 
                 pal.setColor(QPalette.Window, bg_dark)
                 pal.setColor(QPalette.WindowText, off_white)
@@ -7293,9 +7334,9 @@ class MainWin(QWidget):
                 """)
                 self.gh_frame.setStyleSheet("#ghBox { background-color: #2b302b; border: 1px solid #445044; border-radius: 5px; }")
                 
-                # 修复核心：所有文字颜色改为 #D4D4D4；去除了 QGroupBox 全局的 color 和 font-weight 阻止继承！
                 yaml_theme_css = """
                     MainWin { background-color: #2D2D2D; } 
+                    QLabel, QCheckBox, QRadioButton { color: #D4D4D4; background-color: transparent; }
                     
                     QTreeWidget { font-size: 14px; border: 1px solid #444; border-radius: 8px; background-color: #262626; outline: none; color: #D4D4D4; }
                     QTreeWidget::item { min-height: 42px; border-bottom: 1px solid #444; }
@@ -7303,8 +7344,7 @@ class MainWin(QWidget):
                     QHeaderView::section { background-color: #353535; color: #D4D4D4; font-size: 14px; font-weight: bold; padding: 10px; border: none; border-bottom: 1px solid #444; }
                     
                     QLineEdit, QComboBox, QPlainTextEdit {
-                        background-color: transparent; 
-                        border: 1px solid #49814D; border-radius: 4px; padding: 4px 8px;
+                        background-color: transparent; border: 1px solid #49814D; border-radius: 4px; padding: 4px 8px;
                         color: #D4D4D4; selection-background-color: #61A165; selection-color: white;
                     }
                     QLineEdit:hover, QComboBox:hover, QPlainTextEdit:hover { border: 1px solid #61A165; }
@@ -7314,15 +7354,8 @@ class MainWin(QWidget):
                     QComboBox::drop-down { border: none; width: 24px; }
                     QComboBox QAbstractItemView { background-color: #353535; color: #D4D4D4; selection-background-color: #61A165; selection-color: white; border: 1px solid #49814D; }
                     
-                    /* 修复继承 Bug：移除了此处的 color 和 font-weight */
-                    QGroupBox { 
-                        border: 1px solid #49814D; border-radius: 5px; margin-top: 15px; padding-top: 10px; background-color: transparent;
-                    }
-                    /* 把文字颜色限制在标题上，里面的 QCheckBox 就不会受干扰了 */
-                    QGroupBox::title { 
-                        subcontrol-origin: margin; subcontrol-position: top left; left: 10px; padding: 0 5px; 
-                        color: #D4D4D4; font-weight: bold; 
-                    }
+                    QGroupBox { border: 1px solid #49814D; border-radius: 5px; margin-top: 15px; padding-top: 10px; background-color: transparent; }
+                    QGroupBox::title { subcontrol-origin: margin; subcontrol-position: top left; left: 10px; padding: 0 5px; color: #D4D4D4; font-weight: bold; }
                     
                     #leftNavFrame { border: 1px solid #444; border-radius: 6px; background-color: #2b2b2b; }
                     #leftNavTree { background-color: transparent; font-size: 13px; outline: none; selection-background-color: transparent; color: #D4D4D4; }
@@ -7332,7 +7365,8 @@ class MainWin(QWidget):
                     #leftNavTree::item:selected { background-color: #49814D; color: white; font-weight: bold; }
                     
                     #loadingPage { background-color: rgba(43, 43, 43, 0.95); border-radius: 8px; border: 1px solid #444; }
-                """
+                """ + common_scrollbar_and_checkbox_css
+                
                 self.setStyleSheet(yaml_theme_css)
 
                 # 联动 Windows 暗色标题栏
@@ -7348,7 +7382,7 @@ class MainWin(QWidget):
 
             else:
                 # ==========================================
-                #   亮色模式：手动锁死深灰字，防止被系统白字干扰
+                #   亮色模式：手动锁死深灰字，防止系统白字干扰
                 # ==========================================
                 dark_gray = QColor(51, 51, 51)    # 高级深灰 #333
                 bg_light = QColor(245, 245, 245)
@@ -7378,6 +7412,7 @@ class MainWin(QWidget):
                 
                 yaml_theme_css = """
                     MainWin { background-color: #F5F5F5; }
+                    QLabel, QCheckBox, QRadioButton { color: #333; background-color: transparent; }
                     
                     QTreeWidget { font-size: 14px; border: 1px solid #E0E0E0; border-radius: 8px; background-color: white; outline: none; color: #333; }
                     QTreeWidget::item { min-height: 42px; border-bottom: 1px solid #F5F5F5; }
@@ -7395,14 +7430,8 @@ class MainWin(QWidget):
                     QComboBox::drop-down { border: none; width: 24px; }
                     QComboBox QAbstractItemView { background-color: #FFFFFF; color: #333; selection-background-color: #E2ECE3; selection-color: #333; border: 1px solid #A8C7AA; }
                     
-                    /* 修复继承 Bug：同理移除 color */
-                    QGroupBox { 
-                        border: 1px solid #61A165; border-radius: 5px; margin-top: 15px; padding-top: 10px; background-color: transparent;
-                    }
-                    QGroupBox::title { 
-                        subcontrol-origin: margin; subcontrol-position: top left; left: 10px; padding: 0 5px; 
-                        color: #333; font-weight: bold; 
-                    }
+                    QGroupBox { border: 1px solid #61A165; border-radius: 5px; margin-top: 15px; padding-top: 10px; background-color: transparent; }
+                    QGroupBox::title { subcontrol-origin: margin; subcontrol-position: top left; left: 10px; padding: 0 5px; color: #333; font-weight: bold; }
                     
                     #leftNavFrame { border: 1px solid #61A165; border-radius: 6px; background-color: #F8FAF8; }
                     #leftNavTree { background-color: transparent; font-size: 13px; outline: none; selection-background-color: transparent; color: #333; }
@@ -7412,7 +7441,8 @@ class MainWin(QWidget):
                     #leftNavTree::item:selected { background-color: #61A165; color: white; font-weight: bold; }
                     
                     #loadingPage { background-color: rgba(240, 245, 241, 0.95); border-radius: 8px; border: 1px solid #C1D4C3; }
-                """
+                """ + common_scrollbar_and_checkbox_css
+                
                 self.setStyleSheet(yaml_theme_css)
 
                 # 联动 Windows 亮色标题栏
