@@ -81340,6 +81340,7 @@ sort: by_weight
 无聊的人呀	wú liáo de rén ya	100
 物料的性质	wù liào de xìng zhì	100
 物料提升机	wù liào tí shēng jī	100
+无磷保水剂	wú lín bǎo shuǐ jì	100
 无临床症状	wú lín chuáng zhèng zhuàng	100
 五淋化石丸	wǔ lín huà shí wán	100
 武林笼中对	wǔ lín lóng zhōng duì	100
@@ -121838,6 +121839,7 @@ sort: by_weight
 辅酶合成酶类	fǔ méi hé chéng méi lèi	100
 辅酶焦磷酸酶	fǔ méi jiāo lín suān méi	100
 辅酶连接酶类	fǔ méi lián jiē méi lèi	100
+富煤少油少气	fù méi shǎo yóu shǎo qì	100
 氟美瞳滴眼液	fú měi tóng dī yǎn yè	100
 腐煤型天然气	fǔ méi xíng tiān rán qì	120
 辅酶转移酶类	fǔ méi zhuǎn yí méi lèi	100
@@ -141030,8 +141032,6 @@ sort: by_weight
 美到让人窒息	měi dào ràng rén zhì xī	100
 美得不可方物	měi de bù kě fāng wù	100
 美得不可思议	měi de bù kě sī yì	100
-美的电热水器	měi de diàn rè shuǐ qì	100
-美的电压力锅	měi de diàn yā lì guō	100
 美得动人心魄	měi de dòng rén xīn pò	100
 煤的工业分析	méi de gōng yè fēn xī	100
 美得惊心动魄	měi de jīng xīn dòng pò	100
@@ -141048,6 +141048,8 @@ sort: by_weight
 煤的综合利用	méi de zōng hé lì yòng	100
 美登木属柄荚	měi dēng mù shǔ bǐng jiá	100
 镁等微量元素	měi děng wēi liàng yuán sù	100
+美的电热水器	měi dì diàn rè shuǐ qì	100
+美的电压力锅	měi dì diàn yā lì guō	100
 煤电价格联动	méi diàn jià gé lián dòng	100
 梅毒抗体测定	méi dú kàng tǐ cè dìng	100
 梅毒性白斑病	méi dú xìng bái bān bìng	100
@@ -145713,7 +145715,7 @@ sort: by_weight
 千元智能手机	qiān yuán zhì néng shǒu jī	100
 签约仪式现场	qiān yuē yí shì xiàn chǎng	100
 前鲗鱼涌学校	qián zéi yú yǒng xué xiào	100
-千兆乙太网路	qiān zhào yǐ tài wǎng lù	100
+千兆以太网路	qiān zhào yǐ tài wǎng lù	100
 牵着爱人的手	qiān zhe ài rén de shǒu	100
 牵着别人的手	qiān zhe bié rén de shǒu	100
 牵着孩子的手	qiān zhe hái zi de shǒu	100
