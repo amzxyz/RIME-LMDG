@@ -57,7 +57,7 @@ from PySide6.QtWidgets import (
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.0.5beta"
+TOOL_VERSION = "v3.0.6beta"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -2737,35 +2737,28 @@ class UpdateWorker(QThread):
     def _check_url(self, repo_cnb, repo_gh, pattern, specific_tag=None, task_type=None):
         # ==================== [核心修改：双通道硬编码直链 (同时支持 CNB 与 GitHub)] ====================
         if task_type in ['词库组件', '预览方案']:
-            # 1. 确定文件名
             if task_type == '预览方案':
+                # 方案包：rime-wanxiang-xxx-fuzhu.zip 或 rime-wanxiang-base.zip
                 real_fn = f"rime-wanxiang-{self.cfg.aux_scheme}-fuzhu.zip" if self.cfg.scheme_type == 'pro' else "rime-wanxiang-base.zip"
-                tag = "v1.0.0"
             else:
+                # 词库包：pro-xxx-fuzhu-dicts.zip 或 base-dicts.zip
                 real_fn = f"pro-{self.cfg.aux_scheme}-fuzhu-dicts.zip" if self.cfg.scheme_type == 'pro' else "base-dicts.zip"
-                tag = DICT_TAG
-
-            # 2. 生成下载链接
+            
             if self.cfg.use_mirror:
-                direct_url = f"https://cnb.cool/{OWNER}/{repo_cnb}/-/releases/download/{tag}/{real_fn}"
+                # CNB 源直链
+                release_tag = "v1.0.0"
+                direct_url = f"https://cnb.cool/{OWNER}/{repo_cnb}/-/releases/download/{release_tag}/{real_fn}"
                 src_name = "CNB (Direct Link)"
             else:
-                direct_url = f"https://github.com/{OWNER}/{repo_gh}/releases/download/{tag}/{real_fn}"
+                # GitHub 源直链
+                release_tag = DICT_TAG 
+                direct_url = f"https://github.com/{OWNER}/{repo_gh}/releases/download/{release_tag}/{real_fn}"
                 src_name = "GitHub (Direct Link)"
             
-            # 3. 静默查询 API 获取时间戳
-            api_time = ""
-            try:
-                gh_url = f"https://api.github.com/repos/{OWNER}/{repo_gh}/releases/tags/{tag}"
-                data = self._get_api(gh_url, False)
-                if data and 'published_at' in data:
-                    api_time = data['published_at'][:16].replace('T', '_')
-            except: pass
-            
-            self.log(f">>> {task_type}: 检查版本 (直链下载)")
+            self.log(f">>> {task_type}: 使用直链下载")
             return {
-                "url": direct_url, "tag": tag, "src": src_name,
-                "hash": "", "time": api_time, "name": real_fn
+                "url": direct_url, "tag": release_tag, "src": src_name,
+                "hash": "", "time": "", "name": real_fn
             }
         # --- 以下是原有逻辑：方案组件尝试走 CNB API，模型走直链 ---
         cnb_info = None
@@ -2840,14 +2833,6 @@ class UpdateWorker(QThread):
             if isinstance(gh_data, dict) and 'assets' in gh_data:
                 for asset in gh_data['assets']:
                     if fnmatch.fnmatch(asset['name'], pattern):
-                        return {
-                            "url": asset.get('browser_download_url'),
-                            "tag": gh_data.get('tag_name', '0.0.0'),
-                            "src": "GitHub",
-                            "hash": asset.get('sha256') or "", 
-                            "time": asset.get('updated_at', ''),
-                            "name": asset['name']
-                        }
                         return extract_asset_info(asset, gh_data.get('tag_name', '0.0.0'))
             
             elif isinstance(gh_data, list):
