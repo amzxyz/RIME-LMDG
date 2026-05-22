@@ -57,7 +57,7 @@ from PySide6.QtWidgets import (
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.0.4beta"
+TOOL_VERSION = "v3.0.5beta"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -2606,7 +2606,6 @@ class UpdateWorker(QThread):
                 self._deploy_linux_ibus()
     def _deploy_linux_fcitx5_safe(self):
         """Linux Fcitx5 部署方案 (使用 dbus-send)"""
-        self.log(">>> [Fcitx5] 正在触发 Rime 部署 (dbus-send)...")
         dbus_tool = shutil.which("dbus-send")
         
         if not dbus_tool:
@@ -2626,13 +2625,10 @@ class UpdateWorker(QThread):
                 "variant:string:"  # 注意这里，对应 Fcitx5 需要的 variant 类型空值
             ]
             
-            self.log("📡 发送 DBus 信号指令: " + " ".join(cmd))
             clean_env = os.environ.copy()
             if 'LD_LIBRARY_PATH' in clean_env:
                 clean_env['LD_LIBRARY_PATH'] = clean_env.get('LD_LIBRARY_PATH_ORIG', '')
             subprocess.run(cmd, env=clean_env, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-            self.log("✅ Fcitx5 部署信号发送成功。")
-
         except subprocess.CalledProcessError as e:
             # 划重点：把底层真正的英文报错内容解出来！
             error_details = e.stderr.decode('utf-8', errors='ignore').strip() if e.stderr else "无详细错误信息"
@@ -2648,7 +2644,6 @@ class UpdateWorker(QThread):
         if ibus_cmd:
             try:
                 subprocess.run([ibus_cmd, "restart"], check=True)
-                self.log("✅ [IBus] 重启指令已发送")
             except Exception as e:
                 self.log(f"❌ IBus 重启指令失败: {e}")
 
@@ -2742,28 +2737,35 @@ class UpdateWorker(QThread):
     def _check_url(self, repo_cnb, repo_gh, pattern, specific_tag=None, task_type=None):
         # ==================== [核心修改：双通道硬编码直链 (同时支持 CNB 与 GitHub)] ====================
         if task_type in ['词库组件', '预览方案']:
+            # 1. 确定文件名
             if task_type == '预览方案':
-                # 方案包：rime-wanxiang-xxx-fuzhu.zip 或 rime-wanxiang-base.zip
                 real_fn = f"rime-wanxiang-{self.cfg.aux_scheme}-fuzhu.zip" if self.cfg.scheme_type == 'pro' else "rime-wanxiang-base.zip"
+                tag = "v1.0.0"
             else:
-                # 词库包：pro-xxx-fuzhu-dicts.zip 或 base-dicts.zip
                 real_fn = f"pro-{self.cfg.aux_scheme}-fuzhu-dicts.zip" if self.cfg.scheme_type == 'pro' else "base-dicts.zip"
-            
+                tag = DICT_TAG
+
+            # 2. 生成下载链接
             if self.cfg.use_mirror:
-                # CNB 源直链
-                release_tag = "v1.0.0"
-                direct_url = f"https://cnb.cool/{OWNER}/{repo_cnb}/-/releases/download/{release_tag}/{real_fn}"
+                direct_url = f"https://cnb.cool/{OWNER}/{repo_cnb}/-/releases/download/{tag}/{real_fn}"
                 src_name = "CNB (Direct Link)"
             else:
-                # GitHub 源直链
-                release_tag = DICT_TAG 
-                direct_url = f"https://github.com/{OWNER}/{repo_gh}/releases/download/{release_tag}/{real_fn}"
+                direct_url = f"https://github.com/{OWNER}/{repo_gh}/releases/download/{tag}/{real_fn}"
                 src_name = "GitHub (Direct Link)"
             
-            self.log(f"⚡ [{src_name}] 跳过 API 检查，直接连接: {real_fn}")
+            # 3. 静默查询 API 获取时间戳
+            api_time = ""
+            try:
+                gh_url = f"https://api.github.com/repos/{OWNER}/{repo_gh}/releases/tags/{tag}"
+                data = self._get_api(gh_url, False)
+                if data and 'published_at' in data:
+                    api_time = data['published_at'][:16].replace('T', '_')
+            except: pass
+            
+            self.log(f">>> {task_type}: 检查版本 (直链下载)")
             return {
-                "url": direct_url, "tag": release_tag, "src": src_name,
-                "hash": "", "time": "", "name": real_fn
+                "url": direct_url, "tag": tag, "src": src_name,
+                "hash": "", "time": api_time, "name": real_fn
             }
         # --- 以下是原有逻辑：方案组件尝试走 CNB API，模型走直链 ---
         cnb_info = None
@@ -2808,7 +2810,7 @@ class UpdateWorker(QThread):
         if cnb_info: return cnb_info
 
         # 2. === 检查 GitHub ===
-        self.log(f"⏳ 正在连接 GitHub API 查找: {pattern} ...")
+        self.log(f">>> {task_type} 检查: 通过 API 获取")
         gh_urls = [
             f"https://api.github.com/repos/{OWNER}/{repo_gh}/releases/tags/{specific_tag}" if specific_tag else None,
             f"https://api.github.com/repos/{OWNER}/{repo_gh}/releases"
@@ -2838,6 +2840,14 @@ class UpdateWorker(QThread):
             if isinstance(gh_data, dict) and 'assets' in gh_data:
                 for asset in gh_data['assets']:
                     if fnmatch.fnmatch(asset['name'], pattern):
+                        return {
+                            "url": asset.get('browser_download_url'),
+                            "tag": gh_data.get('tag_name', '0.0.0'),
+                            "src": "GitHub",
+                            "hash": asset.get('sha256') or "", 
+                            "time": asset.get('updated_at', ''),
+                            "name": asset['name']
+                        }
                         return extract_asset_info(asset, gh_data.get('tag_name', '0.0.0'))
             
             elif isinstance(gh_data, list):
@@ -2907,7 +2917,6 @@ class UpdateWorker(QThread):
 
     def _detect_smart_root(self, extract_root: str, task_type: str) -> str:
         """智能解压根目录检测"""
-        self.log(f"🔎 正在智能分析解压路径 ({task_type})...")
         if task_type in ['dict', '词库组件']:
             for root, dirs, files in os.walk(extract_root):
                 for f in files:
@@ -2958,8 +2967,8 @@ class UpdateWorker(QThread):
                     self.done_sig.emit(False, "❌ 错误: Rime用户目录无效"); return
                 
                 mode_dict = {0: '全量', 1: '仅方案', 2: '仅词库', 3: '仅模型', 4: '预览方案'}
-                self.log(f"🚀 开始更新任务 | 模式: {mode_dict.get(self.cfg.scope, '未知')}")
-                self.log(f"📂 目标目录: {self.cfg.rime_dir}")
+                self.log(f">>> 开始更新任务: {mode_dict.get(self.cfg.scope, '未知')}")
+                self.log(f">>> 目标目录: {self.cfg.rime_dir}")
                 
                 # --- 1. 任务分发---
                 extract_temp = os.path.join(temp_root, "extract")
@@ -2990,9 +2999,7 @@ class UpdateWorker(QThread):
                 # --- 2. 纯下载循环 (进程活跃中) ---
                 for task_type, gh_repo, cnb_repo, pattern, final_dest, specific_tag in tasks:
                     if self._stop: break
-                    
-                    self.log(f"\n📦 正在检查 {task_type}...")
-                    
+
                     if task_type == 'CustomZip':
                         remote_data = {"url": self.cfg.custom_url, "tag": "custom", "src": "Custom URL", "hash": "", "time": "", "name": "custom.zip"}
                     else:
@@ -3000,13 +3007,12 @@ class UpdateWorker(QThread):
                         remote_data = self._check_url(cnb_repo, gh_repo, pattern, specific_tag, task_type)
                     
                     if not remote_data:
-                        self.log(f"⚠️ 跳过: 未能获取到 {task_type} 的远程资源。"); continue
+                        self.log(f">>> {task_type}: 未能获取到远程资源。"); continue
 
                     url, tag, remote_hash = remote_data['url'], remote_data['tag'], remote_data.get('hash')
                     should_skip = False
                     if task_type == '预览方案':
-                        self.log(f"   ℹ️ [检测结果] {task_type} (内测)")
-                        self.log(f"      ✨ 预览版不参与版本比对，直接执行覆盖下载！")
+                        self.log(f">>> {task_type}: 预览模式，跳过比对直接下载")
                         should_skip = False  # 永远不跳过
                         
                     elif task_type == '方案组件':
@@ -3014,35 +3020,37 @@ class UpdateWorker(QThread):
                         local_ver = self.cfg.current_versions.get('方案组件', "0.0.0")
                         if local_ver == "0.0.0": local_ver = "未记录"
                         
-                        self.log(f"   ℹ️ [检测结果] {task_type}")
-                        self.log(f"      版本对比: 本地[{local_ver}] vs 在线[{tag}]")
+                        self.log(f">>> {task_type}: 本地[{local_ver}] 在线[{tag}]")
                         
                         if not self.cfg.force_update and tag == local_ver:
-                            self.log(f"      ✨ 版本一致: {tag} 已最新，跳过。")
                             should_skip = True
 
                     elif task_type == 'CustomZip':
-                        self.log(f"   ℹ️ [检测结果] 自定义压缩包直连")
+                        self.log(f">>> {task_type}: 自定义压缩包直连")
                         
                     else:
                         key_map = {'词库组件': 'dict_hash', '语法模型': 'model_hash'}
                         key = key_map.get(task_type, "")
-                        local_hash = self.cfg.current_versions.get(key, "")
+                        local_ver_id = self.cfg.current_versions.get(key, "")
+                        remote_ver_id = remote_data.get('time', '')
+                        if remote_ver_id:
+                            remote_ver_id = remote_ver_id[:16].replace('T', '_')
+                        if not remote_ver_id:
+                            remote_ver_id = remote_hash
                         
-                        d_l = local_hash[:8] if local_hash else "无"
-                        d_r = remote_hash[:8] if remote_hash else "无(直链模式)"
+                        d_l = local_ver_id if local_ver_id else "无"
+                        d_r = remote_ver_id if remote_ver_id else "无(无法校验)"
                         
-                        self.log(f"   ℹ️ [检测结果] {task_type} (独立更新通道)")
-                        self.log(f"      Hash对比: 本地[{d_l}] vs 在线[{d_r}]")
+                        self.log(f">>> {task_type}: 本地[{d_l}] 在线[{d_r}]")
                         
                         if not self.cfg.force_update:
-                            if remote_hash and local_hash == remote_hash:
-                                self.log(f"      ✨ 校验一致: 文件未改变，跳过。")
+                            if remote_ver_id and local_ver_id == remote_ver_id:
+                                self.log(f"✓ 版本一致: 文件未改变，跳过")
                                 should_skip = True
 
                     if should_skip: continue
 
-                    self.log(f"🌐 来源: [{remote_data['src']}] | 🚀 正在下载...")
+                    self.log(f"✓ {task_type} 下载中...")
                     fname = os.path.basename(url.split('?')[0]) or f"update_{task_type}.tmp"
                     local_download_path = os.path.join(temp_root, fname)
                     
@@ -3057,23 +3065,23 @@ class UpdateWorker(QThread):
                             'path': local_download_path,
                             'dest': final_dest,
                             'ver': tag,
-                            'hash': remote_hash
+                            'hash': remote_hash,
+                            'time': remote_data.get('time', '')
                         })
-                        self.log(f"📥 {task_type} 下载完毕，进入安装队列。")
+                        self.log(f"✓ {task_type} 下载完毕，进入安装队列。")
 
                 # --- 3. 统一杀进程 ---
                 if not pending_tasks and not self.cfg.clean_before:
-                    self.log("✅ 检查完毕，无需更新。")
-                    self.done_sig.emit(True, "所有组件已是最新。"); return
+                    self.log("✓ 版本一致，无需更新。")
+                    self.done_sig.emit(True, "✓ 所有组件已是最新。"); return
                 time.sleep(2)
                 if self._stop: return
 
-                self.log(f"\n{'='*40}")
-                self.log("🛑 下载全部完成，正在终止进程以开始安装...")
+                self.log(">>> 开始安装任务")
                 self._kill_rime_process() # 此时才杀进程
 
                 if self.cfg.clean_before:
-                    self.log("🧹 [清理] 正在执行Clean模式...")
+                    self.log("✓ 执行清理模式")
                     target = os.path.join(self.cfg.rime_dir, "dicts") if self.cfg.scope == 2 else self.cfg.rime_dir
                     self._clean_dir_recursive(target)
 
@@ -3084,8 +3092,7 @@ class UpdateWorker(QThread):
                     t_type = task['type']
                     src_path = task['path']
                     dst_dir = task['dest']
-                    
-                    self.log(f"📦 正在安装: {t_type} ...")
+
                     try:
                         if t_type == '语法模型':
                             os.makedirs(dst_dir, exist_ok=True)
@@ -3124,30 +3131,51 @@ class UpdateWorker(QThread):
                             self._safe_merge_dir(real_source_dir, dst_dir)
 
                         if not self.cfg.custom_url:
-                            # 修改这里：只有正式版方案才记录版本号
                             if t_type == '方案组件':
                                 self.version_sig.emit("方案组件", task['ver'])
                             
-                            real_hash = task['hash']
-                            if not real_hash and os.path.exists(src_path):
-                                real_hash = self._calculate_sha256(src_path)
-
-                            # 修改这里：不记录预览方案的 Hash
-                            if real_hash:
-                                if t_type == '词库组件': self.version_sig.emit("dict_hash", real_hash)
-                                elif t_type == '语法模型': self.version_sig.emit("model_hash", real_hash)
+                            # 【核心修改】：词库和模型：强行摒弃 Hash，强制使用时间作为版本标识！
+                            elif t_type in ['词库组件', '语法模型']:
+                                time_str = str(task.get('time', ''))
+                                
+                                # 如果走直链没有抓到时间，主动通过 API 抓取
+                                if not time_str:
+                                    try:
+                                        api_url = ""
+                                        if t_type == '词库组件':
+                                            api_url = "https://api.github.com/repos/amzxyz/rime-wanxiang/releases/tags/dict-nightly"
+                                        elif t_type == '语法模型':
+                                            api_url = "https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/LTS"
+                                        
+                                        if api_url:
+                                            api_data = self._get_api(api_url, False)
+                                            if isinstance(api_data, dict):
+                                                for a in api_data.get('assets', []):
+                                                    if (t_type == '词库组件' and 'dicts.zip' in a['name']) or \
+                                                       (t_type == '语法模型' and 'wanxiang-lts-zh-hans.gram' in a['name']):
+                                                        time_str = a.get('updated_at', '')
+                                                        break
+                                    except Exception:
+                                        pass
+                                
+                                # 如果成功获取到时间，就用时间；否则才退化使用 Hash
+                                remote_ver_id = time_str[:16].replace('T', '_') if time_str else task.get('hash', '')
+                                
+                                # 发送信号保存
+                                if remote_ver_id:
+                                    if t_type == '词库组件': self.version_sig.emit("dict_hash", remote_ver_id)
+                                    elif t_type == '语法模型': self.version_sig.emit("model_hash", remote_ver_id)
                         
                         needs_deploy = True
-                        self.log(f"✅ {t_type} 安装成功。")
+                        self.log(f"✓ {t_type} 安装完成")
 
                     except Exception as e:
-                        self.log(f"❌ 安装 {t_type} 失败: {e}")
-
+                        self.log(f"✓ {t_type} 安装失败: {e}")
                 # --- 5. 部署 ---
                 if needs_deploy or self.cfg.clean_build:
-                    self.log("⚙️ 正在触发部署...")
+                    self.log(">>> 正在触发部署")
                     self._start_and_deploy()
-                    self.done_sig.emit(True, "✨ 更新并部署完成。")
+                    self.done_sig.emit(True, "✓ 更新完成。")
                 else:
                     self.done_sig.emit(True, "更新流程结束。")
 
@@ -3199,20 +3227,35 @@ class CheckUpdateWorker(QThread):
         try:
             r = requests.get(f"https://api.github.com/repos/amzxyz/rime-wanxiang/releases/tags/{DICT_TAG}", headers=headers, timeout=8)
             if r.status_code == 200:
-                assets = r.json().get('assets', [])
-                remote_hash = next(((a.get('sha256', '') or (a.get('digest', '').split(':')[-1] if 'digest' in a else '')) for a in assets if 'dicts.zip' in a['name']), "")
-                results['dict'] = remote_hash[:8] if remote_hash else DICT_TAG
-            else: results['dict'] = DICT_TAG
-        except: results['dict'] = '网络错误'
+                # 【千万别漏了这一行】先把网络请求的结果解析成 assets 列表！
+                assets = r.json().get('assets', []) 
+                
+                asset = next((a for a in assets if 'dicts.zip' in a['name']), None)
+                if asset:
+                    # 提取 GitHub 的更新时间，例如 "2024-05-22T10:00:00Z"，截取年月日时分作为版本号
+                    updated_time = asset.get('updated_at', '')[:16].replace('T', '_')
+                    results['dict'] = updated_time if updated_time else DICT_TAG
+                else:
+                    results['dict'] = DICT_TAG
+            else: 
+                results['dict'] = DICT_TAG
+        except: 
+            results['dict'] = '网络错误'
 
         try:
             r = requests.get(f"https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/{MODEL_TAG}", headers=headers, timeout=8)
             if r.status_code == 200:
                 assets = r.json().get('assets', [])
-                remote_hash = next(((a.get('sha256', '') or (a.get('digest', '').split(':')[-1] if 'digest' in a else '')) for a in assets if a['name'] == MODEL_FILE), "")
-                results['model'] = remote_hash[:8] if remote_hash else 'model'
-            else: results['model'] = 'model'
-        except: results['model'] = '网络错误'
+                asset = next((a for a in assets if a['name'] == MODEL_FILE), None)
+                if asset:
+                    updated_time = asset.get('updated_at', '')[:16].replace('T', '_')
+                    results['model'] = updated_time if updated_time else 'model'
+                else: 
+                    results['model'] = 'model'
+            else: 
+                results['model'] = 'model'
+        except: 
+            results['model'] = '网络错误'
         
         self.result_sig.emit(results)
 
@@ -3928,12 +3971,10 @@ class MainWin(QWidget):
     def on_check_update_result(self, remote_vers):
         self.status.setText("就绪")
         
-        # 恢复读取没有后缀的 dict_hash 和 model_hash
         local_dict = self.settings.value("installed_versions/dict_hash", "0.0.0")
-        local_dict_display = local_dict[:8] if len(local_dict) > 8 else local_dict
-        
+        local_dict_display = local_dict[:8] if len(local_dict) > 20 else local_dict
         local_model = self.settings.value("installed_versions/model_hash", "0.0.0")
-        local_model_display = local_model[:8] if len(local_model) > 8 else local_model
+        local_model_display = local_model[:8] if len(local_model) > 20 else local_model
         schema_ver = ""
         rime_dir = self.upd_rime.text().strip()
         version_file = os.path.join(rime_dir, "version.txt")
@@ -4343,7 +4384,6 @@ class MainWin(QWidget):
         )
         
         self.log.clear()
-        self.log.appendPlainText(">>> 开始在线更新任务")
         self.save_settings()
         
         self.upd_worker = UpdateWorker(cfg)
@@ -4369,6 +4409,9 @@ class MainWin(QWidget):
         self.tabs.setEnabled(True)
         self.status.setText("完成" if ok else "失败")
         self.log.appendPlainText(msg)
+        self.settings.sync()
+        self.save_settings()
+        
         if ok: QMessageBox.information(self, "完成", msg)
         else: QMessageBox.warning(self, "错误", msg)
     def do_import_switches(self, text_field):
@@ -7189,7 +7232,6 @@ class MainWin(QWidget):
             import traceback; self.log.appendPlainText(traceback.format_exc())
             QMessageBox.critical(self, "全局保存失败", str(e))
     def _start_and_deploy_from_main(self):
-        self.log.appendPlainText("⚙️ 正在触发部署...")
         if SYSTEM_TYPE == 'windows':
             dep_path = getattr(self, 'detected_deployer', '')
             if dep_path and os.path.exists(dep_path):
