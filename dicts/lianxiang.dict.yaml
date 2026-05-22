@@ -5672,6 +5672,8 @@ sort: by_weight
 不被人认可	bú bèi rén rèn kě	100
 不被人重视	bú bèi rén zhòng shì	100
 不被人注意	bú bèi rén zhù yì	100
+不卑也不亢	bù bēi yě bú kàng	100
+不卑也不亢	bù bēi yě bú kàng	100
 不比别人差	bù bǐ bié rén chà	100
 不比不知道	bù bǐ bù zhī dào	100
 不比任何人	bù bǐ rèn hé rén	100
@@ -5700,8 +5702,10 @@ sort: by_weight
 补偿计数管	bǔ cháng jì shù guǎn	100
 步长脑心通	bù cháng nǎo xīn tōng	100
 补偿性正义	bǔ cháng xìng zhèng yì	100
+不长也不短	bù cháng yě bù duǎn	100
 补偿义务人	bǔ cháng yì wù rén	100
 不超速行驶	bù chāo sù xíng shǐ	100
+不吵也不闹	bù chǎo yě bú nào	100
 不沉的山姆	bù chén de shān mǔ	100
 不沉的太阳	bù chén de tài yáng	100
 不承保资产	bù chéng bǎo zī chǎn	100
@@ -5728,6 +5732,7 @@ sort: by_weight
 不穿胸罩的	bù chuān xiōng zhào de	100
 不纯氧化钴	bù chún yǎng huà gǔ	100
 不从国教者	bù cóng guó jiào zhě	100
+不粗也不细	bù cū yě bú xì	100
 不存在的岛	bù cún zài de dǎo	100
 不存在的爽	bù cún zài de shuǎng	100
 不存在了的	bù cún zài le de	100
@@ -5907,6 +5912,7 @@ sort: by_weight
 部队文工团	bù duì wén gōng tuán	100
 部队战斗力	bù duì zhàn dòu lì	100
 部队招待所	bù duì zhāo dài suǒ	100
+不多也不少	bù duō yě bù shǎo	100
 布尔多项式	bù ěr duō xiàng shì	100
 布尔基战役	bù ěr jī zhàn yì	100
 布尔什维克	bù ěr shí wéi kè	100
@@ -5959,7 +5965,9 @@ sort: by_weight
 不敢稍逾约	bù gǎn shāo yú yuē	100
 不干涉主义	bù gān shè zhǔ yì	100
 布干维尔岛	bù gàn wéi ěr dǎo	100
+不干也不湿	bú gàn yě bù shī	100
 不干预主义	bù gān yù zhǔ yì	100
+不高也不低	bù gāo yě bù dī	100
 不高也不低	bù gāo yě bù dī	100
 不给你玩了	bù gěi nǐ wán le	100
 不跟你玩了	bù gēn nǐ wán le	100
@@ -5995,6 +6003,7 @@ sort: by_weight
 不好的回忆	bù hǎo de huí yì	100
 不好高骛远	bù hǎo gāo wù yuǎn	100
 不好也不坏	bù hǎo yě bú huài	100
+不好也不坏	bù hǎo yě bú huài	100
 不好意思吃	bù hǎo yì si chī	100
 不好意思哈	bù hǎo yì si hā	100
 不好意思看	bù hǎo yì si kàn	100
@@ -6010,6 +6019,7 @@ sort: by_weight
 不和你玩了	bù hé nǐ wán le	100
 不合时宜地	bù hé shí yí de	100
 不和我说话	bù hé wǒ shuō huà	100
+不厚也不薄	bú hòu yě bù báo	100
 不胡思乱想	bù hú sī luàn xiǎng	100
 不花帖木儿	bù huā tiē mù ér	100
 不哗众取宠	bù huá zhòng qǔ chǒng	100
@@ -6066,6 +6076,7 @@ sort: by_weight
 不计免赔险	bú jì miǎn péi xiǎn	100
 布基纳法索	bù jī nà fǎ suǒ	100
 不及时清洗	bù jí shí qīng xǐ	100
+不急也不躁	bù jí yě bú zào	100
 不及召下兵	bù jí zhào xià bīng	100
 布加勒斯特	bù jiā lè sī tè	100
 不加区别地	bù jiā qū bié de	100
@@ -6086,6 +6097,7 @@ sort: by_weight
 不矫揉造作	bù jiǎo róu zào zuò	100
 不脚踏实地	bù jiǎo tà shí dì	100
 不交物业费	bù jiāo wù yè fèi	100
+不骄也不躁	bù jiāo yě bú zào	100
 补胶原蛋白	bǔ jiāo yuán dàn bái	100
 不交轴光线	bù jiāo zhóu guāng xiàn	100
 不竭的动力	bù jié de dòng lì	100
@@ -6107,6 +6119,7 @@ sort: by_weight
 步进驱动器	bù jìn qū dòng qì	100
 不尽如人意	bú jìn rú rén yì	100
 不仅是知识	bù jǐn shì zhī shi	100
+不紧也不松	bù jǐn yě bù sōng	100
 不进一家门	bú jìn yì jiā mén	100
 不进娱乐圈	bú jìn yú lè quān	100
 不敬的语言	bú jìng de yǔ yán	100
@@ -6202,6 +6215,9 @@ sort: by_weight
 不可阻挡地	bù kě zǔ dǎng de	100
 不空成就佛	bù kōng chéng jiù fó	100
 不空如来藏	bù kōng rú lái cáng	100
+不苦也不涩	bù kǔ yě bú sè	100
+不快也不慢	bú kuài yě bú màn	100
+不宽也不窄	bù kuān yě bù zhǎi	100
 布拉德利病	bù lā dé lì bìng	100
 布拉菲格子	bù lā fēi gé zi	100
 布喇格方程	bù lǎ gé fāng chéng	100
@@ -6217,6 +6233,7 @@ sort: by_weight
 布喇开光谱	bù lǎ kāi guāng pǔ	100
 布拉乌斯流	bù lā wū sī liú	100
 不来白不来	bù lái bái bù lái	100
+不来也不往	bù lái yě bù wǎng	100
 不来一发吗	bù lái yì fā ma	100
 布莱兹反应	bù lái zī fǎn yìng	100
 布朗斯特酸	bù lǎng sī tè suān	100
@@ -6237,6 +6254,7 @@ sort: by_weight
 布雷格公式	bù léi gé gōng shì	100
 布雷斯悖论	bù léi sī bèi lùn	100
 不冷也不热	bù lěng yě bú rè	100
+不冷也不热	bù lěng yě bú rè	100
 不利的后果	bú lì de hòu guǒ	100
 不利的条件	bú lì de tiáo jiàn	100
 不利的言论	bú lì de yán lùn	100
@@ -6246,6 +6264,7 @@ sort: by_weight
 不礼让行人	bù lǐ ràng xíng rén	100
 不离世间觉	bù lí shì jiān jué	100
 布里斯托尔	bù lǐ sī tuō ěr	100
+不离也不弃	bù lí yě bú qì	100
 不利有攸往	bú lì yǒu yōu wǎng	100
 不利于消化	bú lì yú xiāo huà	100
 布里渊函数	bù lǐ yuān hán shù	100
@@ -6342,6 +6361,7 @@ sort: by_weight
 不拿白不拿	bù ná bái bù ná	100
 不那么显眼	bú nà me xiǎn yǎn	100
 不那么真实	bú nà me zhēn shí	100
+不难也不易	bù nán yě bú yì	100
 补脑安神片	bǔ nǎo ān shén piàn	100
 不能比拟的	bù néng bǐ nǐ de	100
 不能查封的	bù néng chá fēng de	100
@@ -6361,6 +6381,7 @@ sort: by_weight
 捕鸟者亨利	bǔ niǎo zhě hēng lì	100
 不凝滞于物	bù níng zhì yú wù	100
 不弄虚作假	bú nòng xū zuò jiǎ	100
+不浓也不淡	bù nóng yě bú dàn	100
 布努二氏腺	bù nǔ èr shì xiàn	100
 不怕人不敬	bú pà rén bú jìng	100
 补拍婚纱照	bǔ pāi hūn shā zhào	100
@@ -6369,6 +6390,7 @@ sort: by_weight
 布皮二氏瘤	bù pí èr shì liú	100
 补脾消食片	bǔ pí xiāo shí piàn	100
 补脾益肠丸	bǔ pí yì cháng wán	100
+不偏也不倚	bù piān yě bù yǐ	100
 不平等条约	bù píng děng tiáo yuē	100
 不平凡的事	bù píng fán de shì	100
 不平衡力矩	bù píng héng lì jǔ	100
@@ -6388,6 +6410,7 @@ sort: by_weight
 布切吉山脉	bù qiè jí shān mài	100
 布秦二氏病	bù qín èr shì bìng	100
 不侵犯条约	bù qīn fàn tiáo yuē	100
+不轻也不重	bù qīng yě bú zhòng	100
 步青云布丁	bù qīng yún bù dīng	100
 不请自来了	bù qǐng zì lái le	100
 不去白不去	bú qù bái bú qù	100
@@ -6434,6 +6457,7 @@ sort: by_weight
 不如意的事	bù rú yì de shì	100
 不如意之事	bù rú yì zhī shì	100
 步入中年后	bù rù zhōng nián hòu	100
+不软也不硬	bù ruǎn yě bú yìng	100
 不散的宴席	bú sàn de yàn xí	100
 不擅长的事	bú shàn cháng de shì	100
 不善于交际	bú shàn yú jiāo jì	100
@@ -6458,6 +6482,7 @@ sort: by_weight
 补肾温阳酒	bǔ shèn wēn yáng jiǔ	100
 补肾消食片	bǔ shèn xiāo shí piàn	100
 补肾养血丸	bǔ shèn yǎng xuè wán	100
+不深也不浅	bù shēn yě bù qiǎn	100
 补肾益精酒	bǔ shèn yì jīng jiǔ	100
 补肾益精洒	bǔ shèn yì jīng sǎ	100
 补肾益精丸	bǔ shèn yì jīng wán	100
@@ -6537,6 +6562,7 @@ sort: by_weight
 不溯及既往	bù sù jí jì wǎng	100
 不算个事儿	bú suàn gè shì er	100
 不算什么太	bú suàn shén me tài	100
+不酸也不甜	bù suān yě bù tián	100
 不随波逐流	bù suí bō zhú liú	100
 不碎胶托修	bú suì jiāo tuō xiū	100
 不随意想象	bù suí yì xiǎng xiàng	100
@@ -6544,6 +6570,7 @@ sort: by_weight
 不太主动的	bú tài zhǔ dòng de	100
 不太准确了	bú tài zhǔn què le	100
 不贪小便宜	bù tān xiǎo pián yi	100
+不贪也不占	bù tān yě bú zhàn	100
 补糖醇酸奶	bǔ táng chún suān nǎi	100
 布提二氏卵	bù tí èr shì luǎn	100
 补体复合物	bǔ tǐ fù hé wù	100
@@ -6631,6 +6658,7 @@ sort: by_weight
 不闻机杼声	bù wén jī zhù shēng	100
 不文明用语	bù wén míng yòng yǔ	100
 不问为什么	bú wèn wèi shén me	100
+不问也不听	bú wèn yě bù tīng	100
 不无理取闹	bù wú lǐ qǔ nào	100
 不系安全带	bú xì ān quán dài	100
 补习班老师	bǔ xí bān lǎo shī	100
@@ -6756,6 +6784,7 @@ sort: by_weight
 不雅的动作	bù yǎ de dòng zuò	100
 不言的世界	bù yán de shì jiè	100
 不厌其烦地	bú yàn qí fán de	100
+不言也不语	bù yán yě bù yǔ	100
 补阳还五汤	bǔ yáng hái wǔ tāng	100
 不要啊杰哥	bú yào a jié gē	100
 不要白不要	bú yào bái bú yào	100
@@ -6841,6 +6870,7 @@ sort: by_weight
 不远的未来	bù yuǎn de wèi lái	100
 补远基诺语	bǔ yuǎn jī nuò yǔ	100
 不怨天尤人	bú yuàn tiān yóu rén	100
+不远也不近	bù yuǎn yě bú jìn	100
 不愿意回忆	bú yuàn yì huí yì	100
 不愿意理他	bú yuàn yì lǐ tā	100
 不愿意似的	bú yuàn yì shì de	100
@@ -6849,6 +6879,7 @@ sort: by_weight
 不孕不育科	bú yùn bú yù kē	100
 不孕不育症	bú yùn bú yù zhèng	100
 不孕及不育	bú yùn jí bú yù	100
+不愠也不火	bù yùn yě bù huǒ	100
 不在北京了	bú zài běi jīng le	100
 不在风里面	bú zài fēng lǐ miàn	100
 不在话下的	bú zài huà xià de	100
@@ -6860,14 +6891,17 @@ sort: by_weight
 不再喜欢你	bú zài xǐ huan nǐ	100
 不再像以前	bú zài xiàng yǐ qián	100
 不早也不晚	bù zǎo yě bù wǎn	100
+不早也不晚	bù zǎo yě bù wǎn	100
 不择手段地	bù zé shǒu duàn de	100
 不怎么上心	bù zěn me shàng xīn	100
 不怎么样啊	bù zěn me yàng a	100
 不怎么值钱	bù zěn me zhí qián	100
 不增不减经	bù zēng bù jiǎn jīng	100
+不增也不减	bù zēng yě bù jiǎn	100
 不占白不占	bú zhàn bái bú zhàn	100
 不沾阳春水	bù zhān yáng chūn shuǐ	100
 部长岛耕作	bù zhǎng dǎo gēng zuò	100
+不涨也不跌	bù zhǎng yě bù diē	100
 不长脂肪粒	bù zhǎng zhī fáng lì	100
 不召而自来	bù zhào ér zì lái	100
 不着陆飞行	bù zháo lù fēi xíng	100
@@ -6879,6 +6913,7 @@ sort: by_weight
 不整合岩基	bù zhěng hé yán jī	100
 补正通知书	bǔ zhèng tōng zhī shū	100
 补正续骨丸	bǔ zhèng xù gǔ wán	100
+不争也不抢	bù zhēng yě bù qiǎng	100
 不知不觉地	bù zhī bù jué de	100
 不知不觉间	bù zhī bù jué jiān	100
 不知不觉就	bù zhī bù jué jiù	100
@@ -6969,6 +7004,7 @@ sort: by_weight
 不作亏心事	bú zuò kuī xīn shì	100
 不做亏心事	bú zuò kuī xīn shì	100
 不做生意了	bú zuò shēng yì le	100
+不左也不右	bù zuǒ yě bù yòu	100
 不左转科学	bù zuǒ zhuǎn kē xué	100
 擦出的火花	cā chū de huǒ huā	100
 擦窗机器人	cā chuāng jī qì rén	100
