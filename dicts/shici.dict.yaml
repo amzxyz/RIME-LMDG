@@ -3922,7 +3922,7 @@ sort: by_weight
 众称异	zhòng chēng yì	16
 钟离春	zhōng lí chūn	44
 钟离权	zhōng lí quán	44
-种荔枝	zhǒng lì zhī	44
+种荔枝	zhòng lì zhī	44
 终南山	zhōng nán shān	44
 中秋月	zhōng qiū yuè	44
 螽斯羽	zhōng sī yǔ	44
@@ -50696,9 +50696,9 @@ sort: by_weight
 短短北涧杨	duǎn duǎn běi jiàn yáng	100
 锻堕今跕跕	duàn duò jīn diǎn diǎn	100
 端二逢始生	duān èr féng shǐ shēng	100
-短发寄簪缨	duǎn fā jì zān yīng	100
-短发余会撮	duǎn fā yú huì cuō	100
-短发予近梳	duǎn fā yǔ jìn shū	100
+短发寄簪缨	duǎn fà jì zān yīng	100
+短发余会撮	duǎn fà yú huì cuō	100
+短发予近梳	duǎn fà yǔ jìn shū	100
 断幡犹挂刹	duàn fān yóu guà shā	100
 断风疏晚竹	duàn fēng shū wǎn zhú	100
 短服改胡衣	duǎn fú gǎi hú yī	100
@@ -58177,8 +58177,6 @@ sort: by_weight
 佛雨生慈根	fó yǔ shēng cí gēn	100
 佛帐扫余馥	fó zhàng sǎo yú fù	100
 佛子继调御	fó zǐ jì diào yù	100
-否极尝闻泰	fǒu jí cháng wén tài	100
-否极时还泰	fǒu jí shí hái tài	100
 否运争三国	fǒu yùn zhēng sān guó	100
 否臧太常议	fǒu zāng tài cháng yì	100
 否臧太磊磊	fǒu zāng tài lěi lěi	100
@@ -79411,7 +79409,7 @@ sort: by_weight
 皇情玩无斁	huáng qíng wán wú yì	100
 皇情喜乂安	huáng qíng xǐ yì ān	100
 皇穹故匪仁	huáng qióng gù fěi rén	100
-皇穹雪冤枉	huáng qióng xuě yuān wǎng	100
+皇穹雪冤枉	huáng qióng xuě yuān wang	100
 荒衢且升腾	huāng qú qiě shēng téng	100
 皇衢日更清	huáng qú rì gèng qīng	100
 荒衢通猎骑	huāng qú tōng liè jì	100
@@ -122074,6 +122072,8 @@ sort: by_weight
 披豁惭深眷	pī huō cán shēn juàn	100
 披豁对吾真	pī huō duì wú zhēn	100
 披豁露天悭	pī huō lù tiān qiān	100
+否极尝闻泰	pǐ jí cháng wén tài	100
+否极时还泰	pǐ jí shí hái tài	100
 劈箭入高浪	pī jiàn rù gāo làng	100
 辟疆旧林间	pì jiāng jiù lín jiān	100
 辟疆年正少	pì jiāng nián zhèng shǎo	100
@@ -161851,7 +161851,7 @@ sort: by_weight
 太空流素月	tài kōng liú sù yuè	100
 太空秋色凉	tài kōng qiū sè liáng	100
 泰来拔茅连	tài lái bá máo lián	100
-泰来由否极	tài lái yóu fǒu jí	100
+泰来由否极	tài lái yóu pǐ jí	100
 泰来忧胜无	tài lái yōu shèng wú	100
 台郎选才俊	tái láng xuǎn cái jùn	100
 台笠冒山雨	tái lì mào shān yǔ	100
@@ -251763,7 +251763,7 @@ sort: by_weight
 当昔襄阳雄盛时	dāng xī xiāng yáng xióng shèng shí	100
 当须举白便浮君	dāng xū jǔ bái biàn fú jūn	100
 当轩半落天河水	dāng xuān bàn luò tiān hé shuǐ	100
-当轩发色映楼台	dāng xuān fā sè yìng lóu tái	100
+当轩发色映楼台	dāng xuān fà sè yìng lóu tái	100
 当轩下马入锦茵	dāng xuān xià mǎ rù jǐn yīn	100
 当筵吹帽落台头	dāng yán chuī mào luò tái tóu	100
 当筵意气凌九霄	dāng yán yì qì líng jiǔ xiāo	100
@@ -254187,7 +254187,7 @@ sort: by_weight
 短笛无腔信口吹	duǎn dí wú qiāng xìn kǒu chuī	100
 短笛先催月上楼	duǎn dí xiān cuī yuè shàng lóu	100
 短短桃花临水岸	duǎn duǎn táo huā lín shuǐ àn	100
-短发萧骚襟袖冷	duǎn fā xiāo sāo jīn xiù lěng	100
+短发萧骚襟袖冷	duǎn fà xiāo sāo jīn xiù lěng	100
 端复得之名誉早	duān fù dé zhī míng yù zǎo	100
 短歌溷公更一和	duǎn gē hùn gōng gèng yī hé	100
 短歌无穷日已倾	duǎn gē wú qióng rì yǐ qīng	100
@@ -258541,7 +258541,7 @@ sort: by_weight
 更入新年恐不禁	gèng rù xīn nián kǒng bù jīn	100
 更挼猩血染殷红	gèng ruá xīng xuè rǎn yān hóng	100
 更洒湘江斑竹枝	gèng sǎ xiāng jiāng bān zhú zhī	100
-更搔短发东南望	gèng sāo duǎn fā dōng nán wàng	100
+更搔短发东南望	gèng sāo duǎn fà dōng nán wàng	100
 更上高楼望江水	gèng shàng gāo lóu wàng jiāng shuǐ	100
 更上西峰见远公	gèng shàng xī fēng jiàn yuǎn gōng	100
 更上西楼看远帆	gèng shàng xī lóu kàn yuǎn fān	100
@@ -269833,7 +269833,7 @@ sort: by_weight
 金貂再领三公府	jīn diāo zài lǐng sān gōng fǔ	100
 金貂主人汉三老	jīn diāo zhǔ rén hàn sān lǎo	100
 金鼎对筵调野膳	jīn dǐng duì yán diào yě shàn	100
-金鼎发色正焜煌	jīn dǐng fā sè zhèng kūn huáng	100
+金鼎发色正焜煌	jīn dǐng fà sè zhèng kūn huáng	100
 金鼎调和天膳美	jīn dǐng tiáo hé tiān shàn měi	100
 金鼎转丹光吐夜	jīn dǐng zhuǎn dān guāng tǔ yè	100
 今冬腊候不严凝	jīn dōng là hòu bù yán níng	100
@@ -270535,7 +270535,7 @@ sort: by_weight
 今日凭君君莫辞	jīn rì píng jūn jūn mò cí	100
 今日仆姑晴自语	jīn rì pū gū qíng zì yǔ	100
 今日栖迟那可追	jīn rì qī chí nà kě zhuī	100
-今日岂堪簪短发	jīn rì qǐ kān zān duǎn fā	100
+今日岂堪簪短发	jīn rì qǐ kān zān duǎn fà	100
 今日亲来洞里天	jīn rì qīn lái dòng lǐ tiān	100
 今日清词事不同	jīn rì qīng cí shì bù tóng	100
 今日清光昨夜月	jīn rì qīng guāng zuó yè yuè	100
@@ -277739,7 +277739,7 @@ sort: by_weight
 柳亸莺娇花复殷	liǔ duǒ yīng jiāo huā fù yīn	100
 柳发花开映古城	liǔ fā huā kāi yìng gǔ chéng	100
 流芳不待龟巢叶	liú fāng bú dài guī cháo yè	100
-流芳发色绣户中	liú fāng fā sè xiù hù zhōng	100
+流芳发色绣户中	liú fāng fà sè xiù hù zhōng	100
 柳放寒条秋已老	liǔ fàng hán tiáo qiū yǐ lǎo	100
 刘放未归鸡树老	liú fàng wèi guī jī shù lǎo	100
 六飞南幸芙蓉苑	liù fēi nán xìng fú róng yuàn	100
@@ -283028,7 +283028,6 @@ sort: by_weight
 那知此别成千古	nà zhī cǐ bié chéng qiān gǔ	100
 那知粉绘能相负	nà zhī fěn huì néng xiāng fù	100
 那知粉缋能相负	nà zhī fěn huì néng xiāng fù	100
-那知否极休征至	nà zhī fǒu jí xiū zhēng zhì	100
 那知高处有清风	nà zhī gāo chù yǒu qīng fēng	100
 那知根无鬼神会	nà zhī gēn wú guǐ shén huì	100
 那知后阁走穷宾	nà zhī hòu gé zǒu qióng bīn	100
@@ -283043,6 +283042,7 @@ sort: by_weight
 那知空门不是仙	nà zhī kōng mén bú shì xiān	100
 那知老病浑无用	nà zhī lǎo bìng hún wú yòng	100
 那知沦落天涯日	nà zhī lún luò tiān yá rì	100
+那知否极休征至	nà zhī pǐ jí xiū zhēng zhì	100
 那知青更忆江南	nà zhī qīng gèng yì jiāng nán	100
 那知疏散负杯盘	nà zhī shū sàn fù bēi pán	100
 那知望拜马蹄下	nà zhī wàng bài mǎ tí xià	100
@@ -309622,7 +309622,7 @@ sort: by_weight
 喜外弟卢纶见宿	xǐ wài dì lú lún jiàn sù	100
 西望不见红日围	xī wàng bú jiàn hóng rì wéi	100
 西望长安不见家	xī wàng cháng ān bú jiàn jiā	100
-西望国门搔短发	xī wàng guó mén sāo duǎn fā	100
+西望国门搔短发	xī wàng guó mén sāo duǎn fà	100
 西望千山万山赤	xī wàng qiān shān wàn shān chì	100
 西望太白横峨岷	xī wàng tài bái héng é mín	100
 西望天涯几日通	xī wàng tiān yá jǐ rì tōng	100
@@ -313645,7 +313645,7 @@ sort: by_weight
 羞将白发对华簪	xiū jiāng bái fà duì huá zān	100
 羞将百万呈双蛾	xiū jiāng bǎi wàn chéng shuāng é	100
 羞将簿领到君家	xiū jiāng bù lǐng dào jūn jiā	100
-羞将短发还吹帽	xiū jiāng duǎn fā hái chuī mào	100
+羞将短发还吹帽	xiū jiāng duǎn fà hái chuī mào	100
 休将火艾灸浮云	xiū jiāng huǒ ài jiǔ fú yún	100
 羞将离恨向东风	xiū jiāng lí hèn xiàng dōng fēng	100
 休嗟李广不封侯	xiū jiē lǐ guǎng bù fēng hóu	100
@@ -323304,7 +323304,7 @@ sort: by_weight
 玉烛时和君会否	yù zhú shí hé jūn huì fǒu	100
 纡朱拖紫且开眉	yū zhū tuō zǐ qiě kāi méi	100
 欲逐羲和去得无	yù zhú xī hé qù de wú	100
-欲著先须短发乾	yù zhù xiān xū duǎn fā qián	100
+欲著先须短发乾	yù zhù xiān xū duǎn fà qián	100
 玉箸应啼别离后	yù zhù yīng tí bié lí hòu	100
 玉箸应啼红粉颜	yù zhù yīng tí hóng fěn yán	100
 玉烛于是而文明	yù zhú yú shì ér wén míng	100
@@ -330215,9 +330215,9 @@ sort: by_weight
 自嫌野性共人疏	zì xián yě xìng gòng rén shū	100
 自想蔡邕今已老	zì xiǎng cài yōng jīn yǐ lǎo	100
 自想身非富贵身	zì xiǎng shēn fēi fù guì shēn	100
-自向庭中种荔枝	zì xiàng tíng zhōng zhǒng lì zhī	100
+自向庭中种荔枝	zì xiàng tíng zhōng zhòng lì zhī	100
 自想形骸非贵人	zì xiǎng xíng hái fēi guì rén	100
-自向中庭种荔枝	zì xiàng zhōng tíng zhǒng lì zhī	100
+自向中庭种荔枝	zì xiàng zhōng tíng zhòng lì zhī	100
 自笑不如湘浦雁	zì xiào bù rú xiāng pǔ yàn	100
 自笑餐毡典属国	zì xiào cān zhān diǎn shǔ guó	100
 自笑尘劳馀一念	zì xiào chén láo yú yí niàn	100
