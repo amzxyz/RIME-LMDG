@@ -2198,6 +2198,7 @@ sort: by_weight
 半导体整流	bàn dǎo tǐ zhěng liú	100
 半导体制程	bàn dǎo tǐ zhì chéng	100
 半岛无核化	bàn dǎo wú hé huà	100
+办的那些事	bàn de nà xiē shì	1000
 斑点比基尼	bān diǎn bǐ jī ní	100
 斑点叉尾𫚔	bān diǎn chā wěi huí	100
 斑点带子案	bān diǎn dài zi àn	100
@@ -2306,6 +2307,7 @@ sort: by_weight
 班兰糯米糕	bān lán nuò mǐ gāo	100
 伴郎和伴娘	bàn láng hé bàn niáng	100
 扮了个鬼脸	bàn le gè guǐ liǎn	100
+办了哪些事	bàn le nǎ xiē shì	1000
 办理的流程	bàn lǐ de liú chéng	100
 板栗红烧肉	bǎn lì hóng shāo ròu	100
 办理业务时	bàn lǐ yè wù shí	100
@@ -23990,6 +23992,7 @@ sort: by_weight
 干得不错啊	gàn de bú cuò a	100
 甘德怀事件	gān dé huái shì jiàn	100
 肝得乐胶囊	gān dé lè jiāo náng	100
+干的那些事	gàn de nà xiē shì	1000
 干得怎么样	gàn de zěn me yàng	100
 肝得治胶囊	gān děi zhì jiāo náng	100
 甘地诞辰日	gān dì dàn chén rì	100
@@ -72588,6 +72591,7 @@ sort: by_weight
 说得很清楚	shuō de hěn qīng chu	100
 说得很全面	shuō de hěn quán miàn	100
 说得没错啊	shuō de méi cuò a	100
+说的那些事	shuō de nà xiē shì	1000
 说的是人话	shuō de shì rén huà	100
 说得太对了	shuō de tài duì le	100
 说得太好了	shuō de tài hǎo le	100
@@ -72607,6 +72611,7 @@ sort: by_weight
 说话又好听	shuō huà yòu hǎo tīng	100
 说华语运动	shuō huá yǔ yùn dòng	100
 说谎的女人	shuō huǎng de nǚ rén	100
+说了哪些事	shuō le nǎ xiē shì	1000
 说没就没了	shuō méi jiù méi le	100
 说明方法有	shuō míng fāng fǎ yǒu	100
 说散就散了	shuō sàn jiù sàn le	100
@@ -84255,6 +84260,7 @@ sort: by_weight
 像刀割一样	xiàng dāo gē yí yàng	100
 想倒是想过	xiǎng dào shì xiǎng guò	100
 想得不一样	xiǎng de bù yí yàng	100
+想的那些事	xiǎng de nà xiē shì	1000
 想得太多了	xiǎng de tài duō le	100
 想得太简单	xiǎng de tài jiǎn dān	100
 想得太美好	xiǎng de tài měi hǎo	100
@@ -84466,6 +84472,7 @@ sort: by_weight
 向老师学习	xiàng lǎo shī xué xí	100
 向老师致敬	xiàng lǎo shī zhì jìng	100
 想了个主意	xiǎng le gè zhǔ yi	100
+想了哪些事	xiǎng le nǎ xiē shì	1000
 享乐适应症	xiǎng lè shì yìng zhèng	100
 享乐主义者	xiǎng lè zhǔ yì zhě	100
 相乐左之助	xiāng lè zuǒ zhī zhù	100
@@ -105933,6 +105940,7 @@ sort: by_weight
 做得很不错	zuò de hěn bú cuò	100
 做得很出色	zuò de hěn chū sè	100
 做得很漂亮	zuò de hěn piào liang	100
+做的那些事	zuò de nà xiē shì	1000
 做得太过分	zuò de tài guò fèn	100
 做得特别好	zuò de tè bié hǎo	100
 做得怎么样	zuò de zěn me yàng	100
@@ -106020,7 +106028,7 @@ sort: by_weight
 做了个实验	zuò le gè shí yàn	100
 做了个试验	zuò le gè shì yàn	100
 做了个手势	zuò le gè shǒu shì	100
-做了哪些事	zuò le nǎ xiē shì	100
+做了哪些事	zuò le nǎ xiē shì	1000
 做了什么孽	zuò le shén me niè	100
 坐了一会儿	zuò le yí huì er	100
 做力量训练	zuò lì liàng xùn liàn	100
@@ -192675,7 +192683,6 @@ sort: by_weight
 那你为什么不和	nà nǐ wèi shén me bù hé	100
 那你准备怎么做	nà nǐ zhǔn bèi zěn me zuò	100
 那年花开月正圆	nà nián huā kāi yuè zhèng yuán	100
-那年那兔那些事	nà nián nà tù nà xiē shì	100
 那年夏天的台风	nà nián xià tiān de tái fēng	100
 拿起法律的武器	ná qǐ fǎ lǜ de wǔ qì	100
 那仁和布克牧场	nà rén hé bù kè mù chǎng	100
