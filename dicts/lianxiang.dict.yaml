@@ -758,7 +758,6 @@ sort: by_weight
 氨基正辛酸	ān jī zhèng xīn suān	100
 氨基转移酶	ān jī zhuǎn yí méi	100
 氨甲苯酸片	ān jiǎ běn suān piàn	100
-氨甲蝶呤度	ān jiǎ dié lìng dù	100
 氨甲环酸片	ān jiǎ huán suān piàn	100
 氨钾环酸片	ān jiǎ huán suān piàn	100
 氨甲基吡啶	ān jiǎ jī bǐ dìng	100
@@ -3968,6 +3967,7 @@ sort: by_weight
 苯酚磺酸钠	běn fēn huáng suān nà	100
 苯酚甲醛尸	běn fēn jiǎ quán shī	100
 苯酚伪麻片	běn fēn wěi má piàn	100
+苯酚消毒液	běn fēn xiāo dú yè	100
 奔福德定律	bēn fú dé dìng lǜ	100
 本弗二氏法	běn fú èr shì fǎ	100
 笨港天后宫	bèn gǎng tiān hòu gōng	100
@@ -4456,7 +4456,6 @@ sort: by_weight
 碧绿的叶子	bì lǜ de yè zi	100
 比马龙效应	bǐ mǎ lóng xiào yìng	100
 毕马龙效应	bì mǎ lóng xiào yìng	100
-蓖麻油附一	bì má yóu fù yī	100
 必麦森凝胶	bì mài sēn níng jiāo	100
 铋镁豆蔻片	bì měi dòu kòu piàn	100
 吡嘧司特钾	bǐ mì sī tè jiǎ	100
@@ -5676,7 +5675,6 @@ sort: by_weight
 不被人重视	bú bèi rén zhòng shì	100
 不被人注意	bú bèi rén zhù yì	100
 不卑也不亢	bù bēi yě bú kàng	100
-不卑也不亢	bù bēi yě bú kàng	100
 不比别人差	bù bǐ bié rén chà	100
 不比不知道	bù bǐ bù zhī dào	100
 不比任何人	bù bǐ rèn hé rén	100
@@ -5971,7 +5969,6 @@ sort: by_weight
 不干也不湿	bú gàn yě bù shī	100
 不干预主义	bù gān yù zhǔ yì	100
 不高也不低	bù gāo yě bù dī	100
-不高也不低	bù gāo yě bù dī	100
 不给你玩了	bù gěi nǐ wán le	100
 不跟你玩了	bù gēn nǐ wán le	100
 不公的待遇	bù gōng de dài yù	100
@@ -6005,7 +6002,6 @@ sort: by_weight
 不薅白不薅	bù hāo bái bù hāo	100
 不好的回忆	bù hǎo de huí yì	100
 不好高骛远	bù hǎo gāo wù yuǎn	100
-不好也不坏	bù hǎo yě bú huài	100
 不好也不坏	bù hǎo yě bú huài	100
 不好意思吃	bù hǎo yì si chī	100
 不好意思哈	bù hǎo yì si hā	100
@@ -6257,7 +6253,6 @@ sort: by_weight
 布雷格公式	bù léi gé gōng shì	100
 布雷斯悖论	bù léi sī bèi lùn	100
 不冷也不热	bù lěng yě bú rè	100
-不冷也不热	bù lěng yě bú rè	100
 不利的后果	bú lì de hòu guǒ	100
 不利的条件	bú lì de tiáo jiàn	100
 不利的言论	bú lì de yán lùn	100
@@ -6481,6 +6476,7 @@ sort: by_weight
 补肾固齿丸	bǔ shèn gù chǐ wán	100
 补肾健骨丸	bǔ shèn jiàn gǔ wán	100
 补肾强身片	bǔ shèn qiáng shēn piàn	100
+补肾祛毒丸	bǔ shèn qū dú wán	100
 补肾填精丸	bǔ shèn tián jīng wán	100
 补肾温阳酒	bǔ shèn wēn yáng jiǔ	100
 补肾消食片	bǔ shèn xiāo shí piàn	100
@@ -6893,7 +6889,6 @@ sort: by_weight
 不在五行中	bú zài wǔ xíng zhōng	100
 不再喜欢你	bú zài xǐ huan nǐ	100
 不再像以前	bú zài xiàng yǐ qián	100
-不早也不晚	bù zǎo yě bù wǎn	100
 不早也不晚	bù zǎo yě bù wǎn	100
 不择手段地	bù zé shǒu duàn de	100
 不怎么上心	bù zěn me shàng xīn	100
@@ -10529,7 +10524,6 @@ sort: by_weight
 川花止痛膜	chuān huā zhǐ tòng mó	100
 川黄口服液	chuān huáng kǒu fú yè	100
 穿黄清热片	chuān huáng qīng rè piàn	100
-川黄乙散二	chuān huáng yǐ sàn èr	100
 船火儿张横	chuán huǒ ér zhāng héng	100
 船家的孩子	chuán jiā de hái zi	100
 船津辰一郎	chuán jīn chén yī láng	100
@@ -10576,6 +10570,7 @@ sort: by_weight
 船上的午宴	chuán shàng de wǔ yàn	100
 穿上的效果	chuān shàng de xiào guǒ	100
 传输和存储	chuán shū hé cún chǔ	100
+喘舒口服液	chuǎn shū kǒu fú yè	100
 传说的存在	chuán shuō de cún zài	100
 传说的开始	chuán shuō de kāi shǐ	100
 传说的魔女	chuán shuō de mó nǚ	100
@@ -11649,6 +11644,7 @@ sort: by_weight
 醋酸甲诺酮	cù suān jiǎ nuò tóng	100
 醋酸奎孕醇	cù suān kuí yùn chún	100
 醋酸里哪酯	cù suān lǐ nǎ zhǐ	100
+醋酸氯已定	cù suān lǜ yǐ dìng	100
 醋酸泼松片	cù suān pō sōng piàn	100
 醋酸铅试纸	cù suān qiān shì zhǐ	100
 醋酸沙拉新	cù suān shā lā xīn	100
@@ -12055,7 +12051,6 @@ sort: by_weight
 大根香叶烷	dà gēn xiāng yè wán	100
 大功率电机	dà gōng lǜ diàn jī	100
 打狗看主人	dǎ gǒu kàn zhǔ rén	100
-大骨节病度	dà gǔ jié bìng dù	100
 大规模关店	dà guī mó guān diàn	100
 大规模集会	dà guī mó jí huì	100
 大规模监听	dà guī mó jiān tīng	100
@@ -13027,6 +13022,7 @@ sort: by_weight
 胆碱能受体	dǎn jiǎn néng shòu tǐ	100
 单肩手提包	dān jiān shǒu tí bāo	100
 单肩斜挎包	dān jiān xié kuà bāo	100
+胆碱氧化酶	dǎn jiǎn yǎng huà méi	100
 胆碱转磷酶	dǎn jiǎn zhuǎn lín méi	100
 丹江大观苑	dān jiāng dà guān yuàn	100
 丹江口大坝	dān jiāng kǒu dà bà	100
@@ -15279,6 +15275,7 @@ sort: by_weight
 点斑澳岩鲿	diǎn bān ào yán cháng	100
 点斑原海豚	diǎn bān yuán hǎi tún	100
 电报式言语	diàn bào shì yán yǔ	100
+碘苯酚涂剂	diǎn běn fēn tú jì	100
 碘苯磺酰氯	diǎn běn huáng xiān lǜ	100
 碘苯甲基胍	diǎn běn jiǎ jī guā	100
 点本人桩法	diǎn běn rén zhuāng fǎ	100
@@ -15346,7 +15343,6 @@ sort: by_weight
 碘淀粉反应	diǎn diàn fěn fǎn yìng	100
 点点头说道	diǎn diǎn tóu shuō dào	100
 点点线性段	diǎn diǎn xiàn xìng duàn	100
-碘酊一七五	diǎn dǐng yī qī wǔ	100
 滇东北苗文	diān dōng běi miáo wén	100
 电动车电瓶	diàn dòng chē diàn píng	100
 电动车防盗	diàn dòng chē fáng dào	100
@@ -15384,7 +15380,8 @@ sort: by_weight
 垫付医疗费	diàn fù yī liáo fèi	100
 垫付医药费	diàn fù yī yào fèi	100
 碘苷滴眼液	diǎn gān dī yǎn yè	100
-碘甘油附一	diǎn gān yóu fù yī	100
+碘甘油龙岩	diǎn gān yóu lóng yán	100
+碘甘油南平	diǎn gān yóu nán píng	100
 殿阁大学士	diàn gé dà xué shì	100
 电功率之比	diàn gōng lǜ zhī bǐ	100
 电光超能人	diàn guāng chāo néng rén	100
@@ -15410,7 +15407,7 @@ sort: by_weight
 电话等方式	diàn huà děng fāng shì	100
 电话或短信	diàn huà huò duǎn xìn	100
 电话或微信	diàn huà huò wēi xìn	100
-碘化钾附一	diǎn huà jiǎ fù yī	100
+碘化钾溶液	diǎn huà jiǎ róng yè	100
 碘化钾试纸	diǎn huà jiǎ shì zhǐ	100
 电化教育馆	diàn huà jiào yù guǎn	100
 碘化酪氨酸	diǎn huà lào ān suān	100
@@ -16218,6 +16215,7 @@ sort: by_weight
 丢失或被盗	diū shī huò bèi dào	100
 丢失或损坏	diū shī huò sǔn huài	100
 东宝肝泰片	dōng bǎo gān tài piàn	100
+冬宝口服液	dōng bǎo kǒu fú yè	100
 东北深震带	dōng běi shēn zhèn dài	100
 动臂起重机	dòng bì qǐ zhòng jī	100
 动不动就想	dòng bú dòng jiù xiǎng	100
@@ -19047,6 +19045,7 @@ sort: by_weight
 二烷基酰胺	èr wán jī xiān àn	100
 二王八司马	èr wáng bā sī mǎ	100
 尔王庄水库	ěr wáng zhuāng shuǐ kù	100
+二味拔毒散	èr wèi bá dú sàn	100
 二维码防伪	èr wéi mǎ fáng wěi	100
 二维码门牌	èr wéi mǎ mén pái	100
 二维葡钙片	èr wéi pú gài piàn	100
@@ -20994,6 +20993,7 @@ sort: by_weight
 费密相互酌	fèi mì xiāng hù zhuó	100
 非迷向平面	fēi mí xiàng píng miàn	100
 非迷向向量	fēi mí xiàng xiàng liàng	100
+非那根糖浆	fēi nà gēn táng jiāng	100
 非纳税收益	fēi nà shuì shōu yì	100
 非那斯特莱	fēi nà sī tè lái	100
 非那雄胺片	fēi nà xióng àn piàn	100
@@ -21543,7 +21543,6 @@ sort: by_weight
 分车带绿化	fēn chē dài lǜ huà	100
 粉虫贪污案	fěn chóng tān wū àn	100
 分次肺活量	fēn cì fèi huó liàng	100
-粉刺膏人民	fěn cì gāo rén mín	100
 粉刺口服液	fěn cì kǒu fú yè	100
 粉刺去除术	fěn cì qù chú shù	100
 粉刺一扫光	fěn cì yì sǎo guāng	100
@@ -22547,8 +22546,10 @@ sort: by_weight
 复方半夏片	fù fāng bàn xià piàn	100
 复方贝母片	fù fāng bèi mǔ piàn	100
 复方贝母散	fù fāng bèi mǔ sàn	100
+复方苯甲酸	fù fāng běn jiǎ suān	100
 复方苯硝扑	fù fāng běn xiāo pū	100
 复方薄荷酊	fù fāng bò he dīng	100
+复方薄荷脑	fù fāng bò hé nǎo	100
 复方补骨脂	fù fāng bǔ gǔ zhī	100
 复方草玉梅	fù fāng cǎo yù méi	100
 复方茶丹片	fù fāng chá dān piàn	100
@@ -22593,6 +22594,7 @@ sort: by_weight
 复方磺胺脒	fù fāng huáng àn mǐ	100
 复方黄柏液	fù fāng huáng bò yè	100
 复方黄黛片	fù fāng huáng dài piàn	100
+复方黄连膏	fù fāng huáng lián gāo	100
 复方黄芩片	fù fāng huáng qín piàn	100
 复方活脑舒	fù fāng huó nǎo shū	100
 复方藿香片	fù fāng huò xiāng piàn	100
@@ -22626,6 +22628,7 @@ sort: by_weight
 复方南五加	fù fāng nán wǔ jiā	100
 复方尿维氨	fù fāng niào wéi ān	100
 复方诺孕酯	fù fāng nuò yùn zhǐ	100
+复方硼砂散	fù fāng péng shā sàn	100
 复方平喘酮	fù fāng píng chuǎn tóng	100
 复方蒲芩片	fù fāng pú qín piàn	100
 复方气管炎	fù fāng qì guǎn yán	100
@@ -22663,6 +22666,7 @@ sort: by_weight
 复方消痊栓	fù fāng xiāo quán shuān	100
 复方消炎散	fù fāng xiāo yán sàn	100
 复方消痔栓	fù fāng xiāo zhì shuān	100
+复方锌硼散	fù fāng xīn péng sàn	100
 复方锌铁钙	fù fāng xīn tiě gài	100
 复方辛戊胺	fù fāng xīn wù àn	100
 复方溴咖片	fù fāng xiù kā piàn	100
@@ -25481,6 +25485,7 @@ sort: by_weight
 葛雷克氏症	gé léi kè shì zhèng	100
 各类型诗歌	gè lèi xíng shī gē	100
 格雷型突触	gé léi xíng tū chù	100
+格里高利历	gé lǐ gāo lì lì	1000
 格理论学家	gé lǐ lùn xué jiā	100
 隔离七日情	gé lí qī rì qíng	100
 蛤蜊巧达汤	gé lí qiǎo dá tāng	100
@@ -26801,7 +26806,8 @@ sort: by_weight
 共形对称性	gòng xíng duì chèn xìng	100
 共性和个性	gòng xìng hé gè xìng	100
 弓形腿支具	gōng xíng tuǐ zhī jù	100
-汞溴红附一	gǒng xiù hóng fù yī	100
+汞溴红溶液	gǒng xiù hóng róng yè	100
+汞溴红药水	gǒng xiù hóng yào shuǐ	100
 工序交接单	gōng xù jiāo jiē dān	100
 供需紧平衡	gōng xū jǐn píng héng	100
 肱血管损伤	gōng xuè guǎn sǔn shāng	100
@@ -26995,7 +27001,6 @@ sort: by_weight
 狗不嫌家贫	gǒu bù xián jiā pín	100
 构成的威胁	gòu chéng de wēi xié	100
 钩翅弄蝶族	gōu chì nòng dié zú	100
-枸椽酸钠二	gǒu chuán suān nà èr	100
 狗耷拉舌头	gǒu dā la shé tou	100
 勾搭在一起	gōu dā zài yì qǐ	100
 钩蛋白质类	gōu dàn bái zhì lèi	100
@@ -27667,7 +27672,6 @@ sort: by_weight
 雇佣兵队长	gù yōng bīng duì zhǎng	100
 故用兵之法	gù yòng bīng zhī fǎ	100
 固有变曲点	gù yǒu biàn qǔ diǎn	100
-骨友灵擦剂	gǔ yǒu líng cā jì	100
 骨友灵搽剂	gǔ yǒu líng chá jì	100
 骨友灵贴膏	gǔ yǒu líng tiē gāo	100
 骨犹切除术	gǔ yóu qiē chú shù	100
@@ -27700,7 +27704,6 @@ sort: by_weight
 骨折再生丸	gǔ zhé zài shēng wán	100
 古镇灯博会	gǔ zhèn dēng bó huì	100
 骨质磷酸钙	gǔ zhì lín suān gài	100
-骨质宁擦剂	gǔ zhì níng cā jì	100
 骨质宁搽剂	gǔ zhì níng chá jì	100
 骨质软化症	gǔ zhì ruǎn huà zhèng	100
 骨质疏松症	gǔ zhì shū sōng zhèng	100
@@ -28972,7 +28975,6 @@ sort: by_weight
 国家和组织	guó jiā hé zǔ zhī	100
 国家或地区	guó jiā huò dì qū	100
 国家级大师	guó jiā jí dà shī	100
-国家及地区	guó jiā jí dì qū	100
 国家及地区	guó jiā jí dì qū	100
 国家级副职	guó jiā jí fù zhí	100
 国家级工法	guó jiā jí gōng fǎ	100
@@ -31208,7 +31210,7 @@ sort: by_weight
 很火的节目	hěn huǒ de jié mù	100
 很简单的事	hěn jiǎn dān de shì	100
 很久没哭了	hěn jiǔ méi kū le	100
-很卡哇伊的	hěn kǎ wa yī de	100
+很卡哇伊的	hěn kǎ wā yī de	100
 很理想主义	hěn lǐ xiǎng zhǔ yì	100
 痕量同位素	hén liàng tóng wèi sù	100
 很麻烦的事	hěn má fan de shì	100
@@ -34484,7 +34486,6 @@ sort: by_weight
 火硫锑银矿	huǒ liú tī yín kuàng	100
 霍乱携带者	huò luàn xié dài zhě	100
 活络健身液	huó luò jiàn shēn yè	100
-活络水人民	huó luò shuǐ rén mín	100
 活络效灵丹	huó luò xiào líng dān	100
 活络效灵汤	huó luò xiào líng tāng	100
 活络消痛片	huó luò xiāo tòng piàn	100
@@ -37192,6 +37193,7 @@ sort: by_weight
 加味建中汤	jiā wèi jiàn zhōng tāng	100
 加味姜附汤	jiā wèi jiāng fù tāng	100
 加味解毒汤	jiā wèi jiě dú tāng	100
+加味金黄散	jiā wèi jīn huáng sàn	100
 加味坎离丸	jiā wèi kǎn lí wán	100
 加味葵子散	jiā wèi kuí zǐ sàn	100
 加味烂积丸	jiā wèi làn jī wán	100
@@ -38303,7 +38305,6 @@ sort: by_weight
 间歇性禁食	jiàn xiē xìng jìn shí	100
 间歇性斜视	jiàn xiē xìng xié shì	100
 坚信爱会赢	jiān xìn ài huì yíng	100
-健心颗粒二	jiàn xīn kē lì èr	100
 健心糖衣片	jiàn xīn táng yī piàn	100
 碱性氨基酸	jiǎn xìng ān jī suān	100
 碱性蛋白胨	jiǎn xìng dàn bái dòng	100
@@ -41887,7 +41888,6 @@ sort: by_weight
 酒精消毒液	jiǔ jīng xiāo dú yè	100
 酒精性肌病	jiǔ jīng xìng jī bìng	100
 酒精依赖症	jiǔ jīng yī lài zhèng	100
-酒精一七五	jiǔ jīng yī qī wǔ	100
 酒精与癌症	jiǔ jīng yǔ ái zhèng	100
 酒精与健康	jiǔ jīng yǔ jiàn kāng	100
 九九八十一	jiǔ jiǔ bā shí yī	100
@@ -42418,7 +42418,6 @@ sort: by_weight
 距离判别法	jù lí pàn bié fǎ	100
 据历史记载	jù lì shǐ jì zǎi	100
 距离衰减律	jù lí shuāi jiǎn lǜ	100
-距离新星度	jù lí xīn xīng dù	100
 居里研究所	jū lǐ yán jiū suǒ	100
 举两个例子	jǔ liǎng gè lì zi	100
 矩量母函数	jǔ liàng mǔ hán shù	100
@@ -42623,6 +42622,7 @@ sort: by_weight
 枸橼酸铋钾	jǔ yuán suān bì jiǎ	100
 枸橼酸胆碱	jǔ yuán suān dǎn jiǎn	100
 枸橼酸氢镁	jǔ yuán suān qīng měi	100
+枸橼酸溶液	jǔ yuán suān róng yè	100
 枸橼酸铁铵	jǔ yuán suān tiě ǎn	100
 枸橼酸锌片	jǔ yuán suān xīn piàn	100
 枸橼酸一钠	jǔ yuán suān yī nà	100
@@ -44790,6 +44790,7 @@ sort: by_weight
 口服清胃酶	kǒu fú qīng wèi méi	100
 口服洗肠剂	kǒu fú xǐ cháng jì	100
 口服洗肠散	kǒu fú xǐ cháng sàn	100
+口服洗肠盐	kǒu fú xǐ cháng yán	100
 口服心不服	kǒu fú xīn bù fú	100
 口服液体剂	kǒu fú yè tǐ jì	100
 口服胰糜酶	kǒu fú yí mí méi	100
@@ -45531,7 +45532,7 @@ sort: by_weight
 来开玩笑的	lái kāi wán xiào de	100
 来看一下这	lái kàn yí xià zhè	100
 来克拉玛依	lái kè lā mǎ yī	100
-来来回回就	lái lái huí huí jiù	100
+来来回回就	lái lái huí hui jiù	100
 来了个大转	lái le gè dà zhuǎn	100
 来了个新人	lái le gè xīn rén	100
 来俩大腰子	lái liǎ dà yāo zi	100
@@ -46119,6 +46120,7 @@ sort: by_weight
 类风湿尘肺	lèi fēng shī chén fèi	100
 类风湿结节	lèi fēng shī jié jié	100
 类风湿因子	lèi fēng shī yīn zǐ	100
+雷佛奴尔液	léi fó nú ěr yè	100
 雷公炮炙论	léi gōng páo zhì lùn	100
 雷公藤多甙	léi gōng téng duō dài	100
 雷公藤多苷	léi gōng téng duō gān	100
@@ -46344,7 +46346,6 @@ sort: by_weight
 礼部左侍郎	lǐ bù zuǒ shì láng	100
 力测量检查	lì cè liáng jiǎn chá	100
 离差的度量	lí chà de dù liàng	100
-理查森信度	lǐ chá sēn xìn dù	100
 理查特结构	lǐ chá tè jié gòu	100
 力长度关系	lì cháng dù guān xì	100
 离尘不离城	lí chén bù lí chéng	100
@@ -47947,6 +47948,7 @@ sort: by_weight
 邻苯二甲酐	lín běn èr jiǎ gān	100
 邻苯二甲腈	lín běn èr jiǎ jīng	100
 邻苯二甲醛	lín běn èr jiǎ quán	100
+邻苯二甲醛	lín běn èr jiǎ quán	100
 邻苯二甲酸	lín běn èr jiǎ suān	100
 邻苯基乙苯	lín běn jī yǐ běn	100
 邻苯三酚红	lín běn sān fēn hóng	100
@@ -48631,7 +48633,6 @@ sort: by_weight
 六氟环丙烷	liù fú huán bǐng wán	100
 六氟环丁烯	liù fú huán dīng xī	100
 六氟磷酸铵	liù fú lín suān ǎn	100
-六氟磷酸二	liù fú lín suān èr	100
 六氟磷酸根	liù fú lín suān gēn	100
 六氟磷酸钴	liù fú lín suān gǔ	100
 六氟磷酸钾	liù fú lín suān jiǎ	120
@@ -48918,6 +48919,7 @@ sort: by_weight
 六速变速箱	liù sù biàn sù xiāng	100
 流苏的设计	liú sū de shè jì	100
 流速容量圈	liú sù róng liàng quān	100
+硫酸阿托品	liú suān ā tuō pǐn	100
 硫酸氨基酚	liú suān ān jī fēn	100
 硫酸苯乙肼	liú suān běn yǐ jǐng	100
 硫酸齿钠石	liú suān chǐ nà shí	100
@@ -48936,6 +48938,7 @@ sort: by_weight
 硫酸抗敌素	liú suān kàng dí sù	100
 硫酸奎宁片	liú suān kuí níng piàn	100
 硫酸吗啡碱	liú suān mǎ fēi jiǎn	100
+硫酸镁溶液	liú suān měi róng yè	100
 硫酸脒基脲	liú suān mǐ jī niào	100
 硫酸耐而蓝	liú suān nài ér lán	100
 硫酸粘菌素	liú suān nián jūn sù	100
@@ -49969,6 +49972,7 @@ sort: by_weight
 铝合金支架	lǚ hé jīn zhī jià	100
 铝合金铸件	lǚ hé jīn zhù jiàn	100
 绿红东美螈	lǜ hóng dōng měi yuán	100
+氯化铵合剂	lǜ huà ǎn hé jì	100
 氯化氨基汞	lǜ huà ān jī gǒng	100
 氯化巴马汀	lǜ huà bā mǎ tīng	100
 氯化苯甲酰	lǜ huà běn jiǎ xiān	100
@@ -49979,6 +49983,7 @@ sort: by_weight
 氯化甲基苯	lǜ huà jiǎ jī běn	100
 氯化甲基汞	lǜ huà jiǎ jī gǒng	100
 氯化甲基镁	lǜ huà jiǎ jī měi	100
+氯化钾溶液	lǜ huà jiǎ róng yè	100
 氯化聚丙烯	lǜ huà jù bǐng xī	100
 氯化聚乙烯	lǜ huà jù yǐ xī	120
 氯化氯乙酰	lǜ huà lǜ yǐ xiān	100
@@ -50091,6 +50096,7 @@ sort: by_weight
 氯普鲁卡因	lǜ pǔ lǔ kǎ yīn	100
 氯普噻吨片	lǜ pǔ sāi dūn piàn	100
 绿鳍马面鲀	lǜ qí mǎ miàn tún	100
+氯强滴眼液	lǜ qiáng dī yǎn yè	100
 氯羟基吡啶	lǜ qiǎng jī bǐ dìng	100
 氯羟基喹啉	lǜ qiǎng jī kuí lín	100
 氯氢化反应	lǜ qīng huà fǎn yìng	100
@@ -50401,6 +50407,7 @@ sort: by_weight
 马普替林片	mǎ pǔ tì lín piàn	100
 玛其朵咖啡	mǎ qí duǒ kā fēi	100
 玛奇英雄传	mǎ qí yīng xióng zhuàn	100
+麻强滴鼻液	má qiáng dī bí yè	100
 马乔林溃疡	mǎ qiáo lín kuì yáng	100
 麻雀要革命	má què yào gé mìng	100
 麻雀与小孩	má què yǔ xiǎo hái	100
@@ -50542,6 +50549,7 @@ sort: by_weight
 卖狗皮膏药	mài gǒu pí gāo yào	100
 脉管壁血管	mài guǎn bì xuè guǎn	100
 脉管复康片	mài guǎn fù kāng piàn	100
+脉管号胶囊	mài guǎn hào jiāo náng	100
 脉管通胶囊	mài guǎn tōng jiāo náng	100
 买还是不买	mǎi hái shì bù mǎi	100
 卖还是不卖	mài hái shì bú mài	100
@@ -52542,6 +52550,8 @@ sort: by_weight
 灭绝的动物	miè jué de dòng wù	100
 灭绝级事件	miè jué jí shì jiàn	100
 灭绝种族罪	miè jué zhǒng zú zuì	100
+灭菌纯化水	miè jūn chún huà shuǐ	100
+灭菌蒸馏水	miè jūn zhēng liú shuǐ	100
 灭龙魔导士	miè lóng mó dǎo shì	100
 灭丘口服液	miè qiū kǒu fú yè	100
 灭却心头火	miè què xīn tóu huǒ	100
@@ -54969,6 +54979,7 @@ sort: by_weight
 年满六周岁	nián mǎn liù zhōu suì	100
 黏膜白斑病	nián mó bái bān bìng	100
 黏膜骨膜瓣	nián mó gǔ mó bàn	100
+黏膜溃疡膏	nián mó kuì yáng gāo	100
 黏膜下肌瘤	nián mó xià jī liú	100
 黏膜雅司病	nián mó yǎ sī bìng	100
 黏膜牙龈界	nián mó yá yín jiè	100
@@ -56506,8 +56517,10 @@ sort: by_weight
 硼酸三丁酯	péng suān sān dīng zhǐ	100
 硼酸三甲酯	péng suān sān jiǎ zhǐ	100
 硼酸三乙酯	péng suān sān yǐ zhǐ	100
+硼酸氧化锌	péng suān yǎng huà xīn	100
 碰我的肩膀	pèng wǒ de jiān bǎng	100
 鹏欣水游城	péng xīn shuǐ yóu chéng	100
+硼锌鱼软膏	péng xīn yú ruǎn gāo	100
 碰也没碰过	pèng yě méi pèng guò	100
 碰一鼻子灰	pèng yì bí zi huī	100
 彭亦非的翼	péng yì fēi de yì	100
@@ -57227,7 +57240,6 @@ sort: by_weight
 平时不烧香	píng shí bù shāo xiāng	100
 平时的穿搭	píng shí de chuān dā	100
 平实的语言	píng shí de yǔ yán	100
-平时荣获二	píng shí róng huò èr	100
 平视显示器	píng shì xiǎn shì qì	100
 评税通知书	píng shuì tōng zhī shū	100
 平斯克公国	píng sī kè gōng guó	100
@@ -57562,7 +57574,6 @@ sort: by_weight
 葡萄酒样痣	pú táo jiǔ yàng zhì	100
 葡萄酒知识	pú táo jiǔ zhī shi	100
 葡萄酒庄园	pú táo jiǔ zhuāng yuán	100
-葡萄糖附一	pú táo táng fù yī	100
 葡萄糖激酶	pú táo táng jī méi	100
 葡萄糖酸钾	pú táo táng suān jiǎ	100
 葡萄糖酸镁	pú táo táng suān měi	100
@@ -59362,6 +59373,7 @@ sort: by_weight
 羟甲芬太尼	qiǎng jiǎ fēn tài ní	100
 羟甲基吡啶	qiǎng jiǎ jī bǐ dìng	100
 羟甲基冠醚	qiǎng jiǎ jī guān mí	100
+羟甲基糠醛	qiǎng jiǎ jī kāng quán	100
 羟甲金霉素	qiǎng jiǎ jīn méi sù	100
 羟甲司坦片	qiǎng jiǎ sī tǎn piàn	100
 羟甲戊二酰	qiǎng jiǎ wù èr xiān	100
@@ -59739,6 +59751,7 @@ sort: by_weight
 亲近的父亲	qīn jìn de fù qīn	100
 亲近的朋友	qīn jìn de péng you	100
 秦晋殽之战	qín jìn xiáo zhī zhàn	100
+芩蓝滴鼻液	qín lán dī bí yè	100
 勤劳的蜜蜂	qín láo de mì fēng	100
 勤劳感谢日	qín láo gǎn xiè rì	100
 芩连四物汤	qín lián sì wù tāng	100
@@ -59852,7 +59865,6 @@ sort: by_weight
 情爱妄想型	qíng ài wàng xiǎng xíng	100
 情安喘定片	qíng ān chuǎn dìng piàn	100
 庆安枪击案	qìng ān qiāng jī àn	100
-清白散人民	qīng bái sǎn rén mín	100
 青斑叉鼻鲀	qīng bān chā bí tún	100
 青斑脉管炎	qīng bān mài guǎn yán	100
 青斑血管炎	qīng bān xuè guǎn yán	100
@@ -60208,7 +60220,6 @@ sort: by_weight
 氢过氧化物	qīng guò yǎng huà wù	100
 倾国银弹波	qīng guó yín dàn bō	100
 青果止嗽丸	qīng guǒ zhǐ sòu wán	100
-青蛤散人民	qīng há sǎn rén mín	100
 青海湖鸟岛	qīng hǎi hú niǎo dǎo	100
 清海节度使	qīng hǎi jié dù shǐ	100
 氢氦锂铍硼	qīng hài lǐ pī péng	100
@@ -61053,7 +61064,6 @@ sort: by_weight
 秋收的季节	qiū shōu de jì jié	100
 秋收起义歌	qiū shōu qǐ yì gē	100
 秋水共长天	qiū shuǐ gòng cháng tiān	100
-秋水仙胺度	qiū shuǐ xiān àn dù	100
 秋水仙碱片	qiū shuǐ xiān jiǎn piàn	100
 秋水仙酰胺	qiū shuǐ xiān xiān àn	100
 丘斯综合征	qiū sī zōng hé zhēng	100
@@ -61120,7 +61130,6 @@ sort: by_weight
 驱白巴布期	qū bái bā bù qī	100
 取百家之长	qǔ bǎi jiā zhī cháng	100
 祛斑的方法	qū bān de fāng fǎ	100
-祛斑散人民	qū bān sǎn rén mín	100
 祛斑小妙招	qū bān xiǎo miào zhāo	100
 祛斑小窍门	qū bān xiǎo qiào mén	100
 曲吡那敏片	qǔ bǐ nà mǐn piàn	100
@@ -61187,6 +61196,7 @@ sort: by_weight
 祛痘祛痘印	qū dòu qū dòu yìn	100
 祛痘去痘印	qū dòu qù dòu yìn	100
 去痘印产品	qù dòu yìn chǎn pǐn	100
+祛毒灌肠液	qū dú guàn cháng yè	100
 去对面野区	qù duì miàn yě qū	100
 去鄂尔多斯	qù è ěr duō sī	100
 去额尔古纳	qù é ěr gǔ nà	100
@@ -61197,7 +61207,6 @@ sort: by_weight
 去房地产化	qù fáng dì chǎn huà	100
 驱风保济油	qū fēng bǎo jì yóu	100
 祛风除湿药	qū fēng chú shī yào	100
-驱风合剂二	qū fēng hé jì èr	100
 祛风化痰丸	qū fēng huà tán wán	100
 祛风胜湿酒	qū fēng shèng shī jiǔ	100
 驱风苏合丸	qū fēng sū hé wán	100
@@ -61475,6 +61484,7 @@ sort: by_weight
 区直各部门	qū zhí gè bù mén	100
 区直各单位	qū zhí gè dān wèi	100
 区职教中心	qū zhí jiào zhōng xīn	100
+祛止咳合剂	qū zhǐ ké hé jì	100
 曲直濑道三	qū zhí lài dào sān	100
 去殖民地化	qù zhí mín dì huà	100
 祛脂生发精	qū zhī shēng fà jīng	100
@@ -63255,7 +63265,6 @@ sort: by_weight
 蠕虫状结构	rú chóng zhuàng jié gòu	100
 如出水芙蓉	rú chū shuǐ fú róng	100
 如出现问题	rú chū xiàn wèn tí	100
-褥疮酊附一	rù chuāng dīng fù yī	100
 如春风拂面	rú chūn fēng fú miàn	100
 如此爱你月	rú cǐ ài nǐ yuè	100
 如此地美好	rú cǐ de měi hǎo	100
@@ -63362,6 +63371,7 @@ sort: by_weight
 如惊弓之鸟	rú jīng gōng zhī niǎo	100
 如涓涓细流	rú juān juān xì liú	100
 入开水锅中	rù kāi shuǐ guō zhōng	100
+乳康口服液	rǔ kāng kǒu fú yè	100
 乳康软胶囊	rǔ kāng ruǎn jiāo náng	100
 茹科夫斯基	rú kē fū sī jī	100
 入口的东西	rù kǒu de dōng xi	100
@@ -63481,6 +63491,7 @@ sort: by_weight
 如仙女下凡	rú xiān nǚ xià fán	100
 乳腺增生病	rǔ xiàn zēng shēng bìng	100
 乳香黄连木	rǔ xiāng huáng lián mù	100
+乳消号胶囊	rǔ xiāo hào jiāo náng	100
 如新鲜蔬菜	rú xīn xiān shū cài	100
 如行云流水	rú xíng yún liú shuǐ	100
 如需帮助请	rú xū bāng zhù qǐng	100
@@ -63575,8 +63586,6 @@ sort: by_weight
 软预算约束	ruǎn yù suàn yuē shù	100
 软枣猕猴桃	ruǎn zǎo mí hóu táo	100
 软皂溶液一	ruǎn zào róng yè yī	100
-软皂液附一	ruǎn zào yè fù yī	100
-软皂液协和	ruǎn zào yè xié hé	100
 软装的搭配	ruǎn zhuāng de dā pèi	100
 软组织挫伤	ruǎn zǔ zhī cuò shāng	100
 软组织萎缩	ruǎn zǔ zhī wěi suō	100
@@ -63807,7 +63816,6 @@ sort: by_weight
 三步杀人曲	sān bù shā rén qǔ	100
 三才封髓丸	sān cái fēng suǐ wán	100
 三参降脂液	sān cān jiàng zhī yè	100
-三草汤人民	sān cǎo tāng rén mín	100
 三层茴香丸	sān céng huí xiāng wán	100
 三层茄香丸	sān céng qié xiāng wán	100
 三叉汇接区	sān chā huì jiē qū	100
@@ -63960,10 +63968,10 @@ sort: by_weight
 三环己基膦	sān huán jǐ jī lìn	100
 三环十二少	sān huán shí èr shǎo	100
 三黄宝蜡丸	sān huáng bǎo là wán	100
+三黄颠倒散	sān huáng diān dǎo sàn	100
 三皇炮捶门	sān huáng pào chuí mén	100
 三黄片糖衣	sān huáng piàn táng yī	100
 三黄清解片	sān huáng qīng jiě piàn	100
-三黄散人民	sān huáng sǎn rén mín	100
 三回啊三回	sān huí a sān huí	100
 三季度以来	sān jì dù yǐ lái	100
 三季度营收	sān jì dù yíng shōu	100
@@ -66455,7 +66463,6 @@ sort: by_weight
 深交所主板	shēn jiāo suǒ zhǔ bǎn	100
 伸筋丹胶囊	shēn jīn dān jiāo náng	100
 伸筋活络丸	shēn jīn huó luò wán	100
-伸筋散人民	shēn jīn sǎn rén mín	100
 神经胺酸酶	shén jīng àn suān méi	100
 神经氨酸酶	shén jīng ān suān méi	100
 肾精不足证	shèn jīng bù zú zhèng	100
@@ -67022,6 +67029,7 @@ sort: by_weight
 肾旋转异常	shèn xuán zhuǎn yì cháng	100
 肾血管畸形	shèn xuè guǎn jī xíng	100
 肾血浆流量	shèn xuè jiāng liú liàng	100
+肾血宁胶囊	shèn xuè níng jiāo náng	100
 神学研究院	shén xué yán jiū yuàn	100
 申雪赵宏博	shēn xuě zhào hóng bó	100
 神学政治论	shén xué zhèng zhì lùn	100
@@ -68681,6 +68689,7 @@ sort: by_weight
 视交叉疾患	shì jiāo chā jí huàn	100
 视交叉上核	shì jiāo chā shàng hé	100
 实缴出资额	shí jiǎo chū zī é	100
+施胶度滑脱	shī jiāo dù huá tuō	100
 十角馆事件	shí jiǎo guǎn shì jiàn	100
 市交警支队	shì jiāo jǐng zhī duì	100
 市交投集团	shì jiāo tóu jí tuán	100
@@ -71273,6 +71282,7 @@ sort: by_weight
 疏风活血汤	shū fēng huó xuè tāng	100
 疏风再造丸	shū fēng zài zào wán	100
 舒肤止痒酊	shū fū zhǐ yǎng dīng	100
+舒肝安胶囊	shū gān ān jiāo náng	100
 舒肝保坤丸	shū gān bǎo kūn wán	100
 舒肝和胃丸	shū gān hé wèi wán	100
 舒肝健胃丸	shū gān jiàn wèi wán	100
@@ -71336,6 +71346,7 @@ sort: by_weight
 疏筋活血汤	shū jīn huó xuè tāng	100
 舒筋活血丸	shū jīn huó xuè wán	100
 舒筋止痛酊	shū jīn zhǐ tòng dīng	100
+舒筋止痛水	shū jīn zhǐ tòng shuǐ	100
 输精管闭锁	shū jīng guǎn bì suǒ	100
 输精管壶腹	shū jīng guǎn hú fù	100
 输精管畸形	shū jīng guǎn jī xíng	100
@@ -72209,7 +72220,6 @@ sort: by_weight
 水果和零食	shuǐ guǒ hé líng shí	100
 水果与蔬菜	shuǐ guǒ yǔ shū cài	100
 水寒射肺证	shuǐ hán shè fèi zhèng	100
-水合氯醛二	shuǐ hé lǜ quán èr	100
 水户德川家	shuǐ hù dé chuān jiā	100
 睡虎地秦简	shuì hǔ dì qín jiǎn	100
 睡虎地秦墓	shuì hǔ dì qín mù	100
@@ -72429,7 +72439,6 @@ sort: by_weight
 水杨酸苄酯	shuǐ yáng suān biàn zhǐ	100
 水杨酸搽剂	shuǐ yáng suān chá jì	100
 水杨酸丁酯	shuǐ yáng suān dīng zhǐ	100
-水杨酸附一	shuǐ yáng suān fù yī	100
 水杨酸己酯	shuǐ yáng suān jǐ zhǐ	100
 水杨酸甲酯	shuǐ yáng suān jiǎ zhǐ	100
 水杨酸甲脂	shuǐ yáng suān jiǎ zhī	100
@@ -74914,7 +74923,6 @@ sort: by_weight
 碳酸钠去垢	tàn suān nà qù gòu	100
 碳酸内二酯	tàn suān nèi èr zhǐ	100
 碳酸氢甲酯	tàn suān qīng jiǎ zhǐ	100
-碳酸氢钠二	tàn suān qīng nà èr	100
 碳酸氢钠粉	tàn suān qīng nà fěn	100
 碳酸氢钠片	tàn suān qīng nà piàn	100
 碳酸氢钠石	tàn suān qīng nà shí	100
@@ -75080,6 +75088,7 @@ sort: by_weight
 膛口制退器	táng kǒu zhì tuì qì	100
 唐拉昂曲峰	táng lā áng qǔ fēng	100
 糖磷酸代谢	táng lín suān dài xiè	100
+糖络通胶囊	táng luò tōng jiāo náng	100
 糖脉康颗粒	táng mài kāng kē lì	100
 唐灭高句丽	táng miè gāo gōu lí	100
 汤姆孙系数	tāng mǔ sūn xì shù	120
@@ -75998,7 +76007,6 @@ sort: by_weight
 天蓬大元帅	tiān péng dà yuán shuài	100
 天平的两端	tiān píng de liǎng duān	100
 天平节度使	tiān píng jié dù shǐ	100
-天平军节度	tiān píng jūn jié dù	100
 天气比较凉	tiān qì bǐ jiào liáng	100
 天启大爆炸	tiān qǐ dà bào zhà	100
 天气的变化	tiān qì de biàn huà	100
@@ -78608,7 +78616,7 @@ sort: by_weight
 往后的日子	wǎng hòu de rì zi	100
 往后的岁月	wǎng hòu de suì yuè	100
 望花亭水库	wàng huā tíng shuǐ kù	100
-王回回狗皮	wáng huí huí gǒu pí	100
+王回回狗皮	wáng huí hui gǒu pí	100
 往火坑里跳	wǎng huǒ kēng lǐ tiào	100
 往火坑里推	wǎng huǒ kēng lǐ tuī	100
 网际加速器	wǎng jì jiā sù qì	100
@@ -81144,7 +81152,6 @@ sort: by_weight
 武汉硚口区	wǔ hàn qiáo kǒu qū	100
 武汉青山区	wǔ hàn qīng shān qū	100
 武汉深之度	wǔ hàn shēn zhī dù	100
-武汉市甲康	wǔ hàn shì jiǎ kāng	100
 武汉十一中	wǔ hàn shí yī zhōng	100
 武汉市一中	wǔ hàn shì yī zhōng	100
 武汉素食人	wǔ hàn sù shí rén	100
@@ -84358,7 +84365,6 @@ sort: by_weight
 像海绵一样	xiàng hǎi mián yí yàng	100
 向孩子道歉	xiàng hái zi dào qiàn	100
 像孩子似的	xiàng hái zi shì de	100
-像孩子似的	xiàng hái zi shì de	100
 像孩子一般	xiàng hái zi yì bān	100
 响号驱逐舰	xiǎng hào qū zhú jiàn	100
 祥和的春节	xiáng hé de chūn jié	100
@@ -85797,6 +85803,7 @@ sort: by_weight
 硝酸乙醯酯	xiāo suān yǐ xī zhǐ	100
 硝酸乙酰酯	xiāo suān yǐ xiān zhǐ	100
 硝酸一叶碱	xiāo suān yí yè jiǎn	100
+硝酸银溶液	xiāo suān yín róng yè	100
 硝酸正戊酯	xiāo suān zhèng wù zhǐ	100
 小塔科伊河	xiǎo tǎ kē yī hé	100
 小太保阿基	xiǎo tài bǎo ā jī	100
@@ -85932,6 +85939,7 @@ sort: by_weight
 小岩井小鸟	xiǎo yán jǐng xiǎo niǎo	100
 消炎灵胶囊	xiāo yán líng jiāo náng	100
 小眼鳗鳞鳕	xiǎo yǎn mán lín xuě	100
+消炎生肌膏	xiāo yán shēng jī gāo	100
 小眼一眨巴	xiǎo yǎn yì zhǎ bā	100
 消炎止痢灵	xiāo yán zhǐ lì líng	100
 消炎止痢丸	xiāo yán zhǐ lì wán	100
@@ -88735,6 +88743,7 @@ sort: by_weight
 学年的时光	xué nián de shí guāng	100
 学年或学期	xué nián huò xué qī	100
 血尿安胶囊	xuè niào ān jiāo náng	100
+血尿灵合剂	xuè niào líng hé jì	100
 血宁片糖衣	xuè níng piàn táng yī	100
 学平面设计	xué píng miàn shè jì	100
 血气分析仪	xuè qì fēn xī yí	100
@@ -89488,6 +89497,7 @@ sort: by_weight
 牙龈分离膏	yá yín fēn lí gāo	100
 牙龈活检术	yá yín huó jiǎn shù	100
 亚油酸甲酯	yà yóu suān jiǎ zhǐ	100
+亚油酸甲酯	yà yóu suān jiǎ zhǐ	100
 亚油酸胶丸	yà yóu suān jiāo wán	100
 亚油酸乙酯	yà yóu suān yǐ zhǐ	100
 亚原生质体	yà yuán shēng zhì tǐ	100
@@ -90176,6 +90186,7 @@ sort: by_weight
 盐酸巴马汀	yán suān bā mǎ tīng	100
 盐酸巴米品	yán suān bā mǐ pǐn	100
 盐酸倍他唑	yán suān bèi tā zuò	100
+盐酸吡哆胺	yán suān bǐ duō àn	100
 盐酸吡多胺	yán suān bǐ duō àn	100
 盐酸吡哆辛	yán suān bǐ duō xīn	100
 盐酸比生群	yán suān bǐ shēng qún	100
@@ -90195,6 +90206,7 @@ sort: by_weight
 盐酸地孟丁	yán suān dì mèng dīng	100
 盐酸丁二胍	yán suān dīng èr guā	100
 盐酸丁福明	yán suān dīng fú míng	100
+盐酸丁卡因	yán suān dīng kǎ yīn	100
 盐酸丁氯喘	yán suān dīng lǜ chuǎn	100
 盐酸二乙嗪	yán suān èr yǐ qín	100
 盐酸芬布酯	yán suān fēn bù zhǐ	100
@@ -90218,6 +90230,7 @@ sort: by_weight
 盐酸氯苯胍	yán suān lǜ běn guā	100
 盐酸氯苯肼	yán suān lǜ běn jǐng	100
 盐酸氯哌丁	yán suān lǜ pài dīng	100
+盐酸麻黄碱	yán suān má huáng jiǎn	100
 盐酸吗啉呱	yán suān ma lín gū	100
 盐酸吗茚酮	yán suān ma yìn tóng	100
 盐酸美司坦	yán suān měi sī tǎn	100
@@ -90256,6 +90269,7 @@ sort: by_weight
 盐酸溴马秦	yán suān xiù mǎ qín	100
 烟酸盐酸盐	yān suān yán suān yán	100
 盐酸氧氮芥	yán suān yǎng dàn jiè	100
+盐酸异丙嗪	yán suān yì bǐng qín	100
 盐酸茚洛秦	yán suān yìn luò qín	100
 盐酸茚唑林	yán suān yìn zuò lín	100
 盐酸优降宁	yán suān yōu jiàng níng	100
@@ -90597,6 +90611,7 @@ sort: by_weight
 氧化萎锈灵	yǎng huà wēi xiù líng	100
 氧化物浮选	yǎng huà wù fú xuǎn	100
 氧化物阴极	yǎng huà wù yīn jí	100
+氧化锌擦剂	yǎng huà xīn cā jì	100
 氧化锌搽剂	yǎng huà xīn chá jì	100
 氧化锌试补	yǎng huà xīn shì bǔ	100
 氧化锌洗剂	yǎng huà xīn xǐ jì	100
@@ -91415,7 +91430,6 @@ sort: by_weight
 野猪装甲车	yě zhū zhuāng jiǎ chē	100
 叶状囊肉瘤	yè zhuàng náng ròu liú	100
 叶状乳头炎	yè zhuàng rǔ tóu yán	100
-液状石蜡二	yè zhuàng shí là èr	100
 椰子啊椰子	yē zi a yē zi	100
 依阿华大学	yī ā huá dà xué	100
 衣阿华大学	yī ā huá dà xué	100
@@ -92737,7 +92751,6 @@ sort: by_weight
 异色光度计	yì sè guāng dù jì	100
 一色三节高	yí sè sān jié gāo	100
 以色事人者	yǐ sè shì rén zhě	100
-依沙吖啶二	yī shā ā dìng èr	100
 依沙吖啶片	yī shā ā dìng piàn	100
 依沙吖啶贴	yī shā ā dìng tiē	100
 伊莎贝拉岛	yī shā bèi lā dǎo	100
@@ -92764,6 +92777,7 @@ sort: by_weight
 蚁神护宝液	yǐ shén hù bǎo yè	100
 益肾回春丸	yì shèn huí chūn wán	100
 益肾健骨片	yì shèn jiàn gǔ piàn	100
+益肾降糖饮	yì shèn jiàng táng yǐn	100
 益肾蠲痹丸	yì shèn juān bì wán	100
 益肾康胶囊	yì shèn kāng jiāo náng	100
 益肾灵冲剂	yì shèn líng chōng jì	100
@@ -93963,6 +93977,7 @@ sort: by_weight
 因癌症离世	yīn ái zhèng lí shì	100
 因癌症去世	yīn ái zhèng qù shì	100
 银氨络离子	yín ān luò lí zǐ	120
+茵白冲剂号	yīn bái chōng jì hào	100
 银版摄影术	yín bǎn shè yǐng shù	100
 隐爆角砾岩	yǐn bào jiǎo lì yán	100
 隐孢子虫病	yǐn bāo zǐ chóng bìng	100
@@ -94621,6 +94636,7 @@ sort: by_weight
 婴儿期创伤	yīng ér qī chuāng shāng	100
 婴儿润肤药	yīng ér rùn fū yào	100
 婴儿散胶囊	yīng ér sàn jiāo náng	100
+婴儿爽身粉	yīng ér shuǎng shēn fěn	100
 婴儿消食散	yīng ér xiāo shí sàn	100
 婴儿性痉挛	yīng ér xìng jìng luán	100
 婴儿性偏瘫	yīng ér xìng piān tān	100
@@ -96618,7 +96634,6 @@ sort: by_weight
 愈肝龙颗粒	yù gān lóng kē lì	100
 愈肝龙糖浆	yù gān lóng táng jiāng	100
 鱼肝油滴剂	yú gān yóu dī jì	100
-鱼肝油附一	yú gān yóu fù yī	100
 鱼肝油酸钠	yú gān yóu suān nà	100
 余甘子喉片	yú gān zǐ hóu piàn	100
 浴缸和淋浴	yù gāng hé lín yù	100
@@ -98980,7 +98995,6 @@ sort: by_weight
 怎么这样呢	zěn me zhè yàng ne	100
 赠澳大熊猫	zèng ào dà xióng māo	100
 赠白马王彪	zèng bái mǎ wáng biāo	100
-增白散人民	zēng bái sǎn rén mín	100
 增变器方法	zēng biàn qì fāng fǎ	100
 曾布字子宣	zēng bù zì zǐ xuān	100
 增产不增收	zēng chǎn bù zēng shōu	100
@@ -99468,6 +99482,7 @@ sort: by_weight
 张量子空间	zhāng liàng zǐ kōng jiān	100
 账龄分析表	zhàng líng fēn xī biǎo	100
 账龄分析法	zhàng líng fēn xī fǎ	100
+樟硫炉洗剂	zhāng liú lú xǐ jì	100
 长门大明神	zhǎng mén dà míng shén	100
 张鸣歧旧居	zhāng míng qí jiù jū	100
 掌拇指握法	zhǎng mǔ zhǐ wò fǎ	100
@@ -99475,6 +99490,7 @@ sort: by_weight
 樟脑磺酰啶	zhāng nǎo huáng xiān dìng	100
 樟脑硫磺酸	zhāng nǎo liú huáng suān	100
 樟脑柳酸醑	zhāng nǎo liǔ suān xǔ	100
+樟脑醑龙岩	zhāng nǎo xǔ lóng yán	100
 漳平水仙茶	zhāng píng shuǐ xiān chá	100
 漳平至龙岩	zhāng píng zhì lóng yán	100
 胀气的食物	zhàng qì de shí wù	100
@@ -99543,7 +99559,6 @@ sort: by_weight
 掌叶覆盆子	zhǎng yè fù pén zi	100
 张毅百科王	zhāng yì bǎi kē wáng	100
 彰义节度使	zhāng yì jié dù shǐ	100
-彰义军节度	zhāng yì jūn jié dù	100
 张伊丽莎白	zhāng yī lì shā bái	100
 张艺谋新片	zhāng yì móu xīn piàn	100
 张艺谋执导	zhāng yì móu zhí dǎo	100
@@ -102194,6 +102209,7 @@ sort: by_weight
 芷阳广场站	zhǐ yáng guǎng chǎng zhàn	100
 止痒洗剂立	zhǐ yǎng xǐ jì lì	100
 止痒洗剂皮	zhǐ yǎng xǐ jì pí	100
+止痒消炎水	zhǐ yǎng xiāo yán shuǐ	100
 止痒消炎王	zhǐ yǎng xiāo yán wáng	100
 制药等行业	zhì yào děng háng yè	100
 只要一出现	zhǐ yào yì chū xiàn	100
@@ -104334,7 +104350,6 @@ sort: by_weight
 兹巴拉斯基	zī bā lā sī jī	100
 兹巴拉兹基	zī bā lā zī jī	100
 紫白癜风病	zǐ bái diàn fēng bìng	100
-紫白膏人民	zǐ bái gāo rén mín	100
 自伴随算子	zì bàn suí suàn zǐ	100
 字宝宝乐园	zì bǎo bao lè yuán	100
 自暴自弃者	zì bào zì qì zhě	100
@@ -107625,8 +107640,6 @@ sort: by_weight
 白花异叶苣苔	bái huā yì yè jù tái	100
 白花紫苞鸢尾	bái huā zǐ bāo yuān wěi	100
 百济复国运动	bǎi jì fù guó yùn dòng	100
-白及胶浆人民	bái jí jiāo jiāng rén mín	100
-白及胶浆协和	bái jí jiāo jiāng xié hé	100
 百佳超级市场	bǎi jiā chāo jí shì chǎng	100
 白加黑感冒片	bái jiā hēi gǎn mào piàn	100
 摆架式卸纸台	bǎi jià shì xiè zhǐ tái	100
@@ -107741,7 +107754,6 @@ sort: by_weight
 白色皮片缺血	bái sè pí piàn quē xuè	100
 白色酸洗担体	bái sè suān xǐ dān tǐ	100
 百色田阳机场	bǎi sè tián yáng jī chǎng	100
-白色洗剂附一	bái sè xǐ jì fù yī	100
 白色珍珠项链	bái sè zhēn zhū xiàng liàn	100
 拜沙达竞技场	bài shā dá jìng jì chǎng	100
 拜沙达体育场	bài shā dá tǐ yù chǎng	100
@@ -110075,7 +110087,6 @@ sort: by_weight
 薄荷桉油含片	bò he ān yóu hán piàn	100
 伯赫门基尔希	bó hè mén jī ěr xī	100
 薄荷麝香草酚	bò he shè xiāng cǎo fēn	100
-薄荷水一七五	bò he shuǐ yī qī wǔ	100
 薄荷糖的味道	bò he táng de wèi dào	100
 薄荷通吸入剂	bò he tōng xī rù jì	100
 驳回再审申请	bó huí zài shěn shēn qǐng	100
@@ -115122,7 +115133,6 @@ sort: by_weight
 单纯庖疹病毒	dān chún páo zhěn bìng dú	100
 单纯疱疹病毒	dān chún pào zhěn bìng dú	100
 单纯上链复形	dān chún shàng liàn fù xíng	100
-单纯霜一七五	dān chún shuāng yī qī wǔ	100
 单纯性雀斑痣	dān chún xìng què bān zhì	100
 单纯性肾变病	dān chún xìng shèn biàn bìng	100
 单纯性肾囊肿	dān chún xìng shèn náng zhǒng	100
@@ -115204,7 +115214,6 @@ sort: by_weight
 胆碱能神经元	dǎn jiǎn néng shén jīng yuán	100
 胆碱能药中毒	dǎn jiǎn néng yào zhòng dú	100
 胆碱能综合征	dǎn jiǎn néng zōng hé zhēng	100
-胆碱氧化酶度	dǎn jiǎn yǎng huà méi dù	100
 胆碱酯酶减少	dǎn jiǎn zhǐ méi jiǎn shǎo	100
 胆碱酯酶试纸	dǎn jiǎn zhǐ méi shì zhǐ	100
 胆碱酯酶增加	dǎn jiǎn zhǐ méi zēng jiā	100
@@ -115332,7 +115341,6 @@ sort: by_weight
 丹锡高速公路	dān xī gāo sù gōng lù	100
 丹霞地貌景观	dān xiá dì mào jǐng guān	100
 弹匣释放按钮	dàn xiá shì fàng àn niǔ	100
-胆仙胶囊人民	dǎn xiān jiāo náng rén mín	100
 单纤维肌电图	dān xiān wéi jī diàn tú	100
 单项补体测定	dān xiàng bǔ tǐ cè dìng	100
 单向方差分析	dān xiàng fāng chā fēn xī	100
@@ -116165,7 +116173,6 @@ sort: by_weight
 狄仁杰祠堂碑	dí rén jié cí táng bēi	100
 低熔冰盐合晶	dī róng bīng yán hé jīng	120
 低熔冰盐结晶	dī róng bīng yán jié jīng	100
-地塞米松擦剂	dì sāi mǐ sōng cā jì	100
 地塞米松乳膏	dì sāi mǐ sōng rǔ gāo	100
 地塞米松软膏	dì sāi mǐ sōng ruǎn gāo	100
 地塞米松涂剂	dì sāi mǐ sōng tú jì	100
@@ -116708,8 +116715,6 @@ sort: by_weight
 电气总平面图	diàn qì zǒng píng miàn tú	100
 电潜单螺杆泵	diàn qián dān luó gǎn bèng	120
 殿前都指挥使	diàn qián dū zhǐ huī shǐ	100
-颠茄合剂附一	diān qié hé jì fù yī	100
-颠茄合剂协和	diān qié hé jì xié hé	100
 颠茄磺苄啶片	diān qié huáng biàn dìng piàn	100
 碘曲伦注射液	diǎn qǔ lún zhù shè yè	100
 点燃式发动机	diǎn rán shì fā dòng jī	100
@@ -117671,7 +117676,6 @@ sort: by_weight
 对暴力的垄断	duì bào lì de lǒng duàn	100
 对苯二胺皮炎	duì běn èr àn pí yán	100
 对苯二甲硫肼	duì běn èr jiǎ liú jǐng	100
-对苯二甲酸二	duì běn èr jiǎ suān èr	100
 对苯二甲酸钠	duì běn èr jiǎ suān nà	100
 对苯二甲酸盐	duì běn èr jiǎ suān yán	100
 对苯二甲酸酯	duì běn èr jiǎ suān zhǐ	100
@@ -118416,7 +118420,6 @@ sort: by_weight
 二帝四王之乱	èr dì sì wáng zhī luàn	100
 二碘二氟甲烷	èr diǎn èr fú jiǎ wán	100
 二碘二氧化钨	èr diǎn èr yǎng huà wū	100
-二碘合银酸二	èr diǎn hé yín suān èr	100
 二碘甲腺氨酸	èr diǎn jiǎ xiàn ān suān	100
 二叠氮亚氨基	èr dié dàn yà ān jī	100
 二丁氨基酮酸	èr dīng ān jī tóng suān	100
@@ -118599,7 +118602,6 @@ sort: by_weight
 二甲基氰化砷	èr jiǎ jī qíng huà shēn	100
 二甲基溶纤剂	èr jiǎ jī róng xiān jì	100
 二甲基噻吩烷	èr jiǎ jī sāi fēn wán	100
-二甲基胂基二	èr jiǎ jī shèn jī èr	100
 二甲基胂酸钠	èr jiǎ jī shèn suān nà	100
 二甲基砷酸钠	èr jiǎ jī shēn suān nà	100
 二甲基生育酚	èr jiǎ jī shēng yù fēn	100
@@ -120782,7 +120784,6 @@ sort: by_weight
 纷纷伸出援手	fēn fēn shēn chū yuán shǒu	100
 分分钟的事儿	fēn fēn zhōng de shì er	100
 酚甘油滴耳液	fēn gān yóu dī ěr yè	100
-酚甘油一七五	fēn gān yóu yī qī wǔ	100
 焚膏油以继晷	fén gào yóu yǐ jì guǐ	100
 芬格博德科纳	fēn gé bó dé kē nà	100
 分工协作机制	fēn gōng xié zuò jī zhì	100
@@ -122438,8 +122439,6 @@ sort: by_weight
 钙质微晶灰岩	gài zhì wēi jīng huī yán	100
 改宗伊斯兰教	gǎi zōng yī sī lán jiào	100
 肝癌高危人群	gān ái gāo wēi rén qún	100
-甘安合剂肺科	gān ān hé jì fèi kē	100
-甘安合剂附一	gān ān hé jì fù yī	100
 甘氨酸茶碱钠	gān ān suān chá jiǎn nà	100
 甘氨酸冲洗液	gān ān suān chōng xǐ yè	100
 甘氨酸类糖苷	gān ān suān lèi táng gān	100
@@ -122749,10 +122748,8 @@ sort: by_weight
 甘油标绘示数	gān yóu biāo huì shì shù	100
 甘油二硬脂酸	gān yóu èr yìng zhī suān	100
 甘油果糖软袋	gān yóu guǒ táng ruǎn dài	100
-甘油合剂附一	gān yóu hé jì fù yī	100
 甘油醛磷酸盐	gān yóu quán lín suān yán	100
 甘油醛磷酸酯	gān yóu quán lín suān zhǐ	100
-甘油溶液附一	gān yóu róng yè fù yī	100
 甘油三硝酸酯	gān yóu sān xiāo suān zhǐ	100
 甘油三乙酸酯	gān yóu sān yǐ suān zhǐ	100
 甘油三酯过高	gān yóu sān zhǐ guò gāo	100
@@ -125059,7 +125056,6 @@ sort: by_weight
 古爪哇穿山甲	gǔ zhǎo wā chuān shān jiǎ	100
 骨折挫伤胶囊	gǔ zhé cuò shāng jiāo náng	100
 骨折骨再折术	gǔ zhé gǔ zài zhé shù	100
-骨折后个人史	gǔ zhé hòu gè rén shǐ	100
 骨折畸形愈合	gǔ zhé jī xíng yù hé	100
 骨折连接不正	gǔ zhé lián jiē bú zhèng	100
 骨折型股骨柄	gǔ zhé xíng gǔ gǔ bǐng	100
@@ -136028,7 +136024,6 @@ sort: by_weight
 抗美援越战争	kàng měi yuán yuè zhàn zhēng	100
 抗米勒管激素	kàng mǐ lè guǎn jī sù	100
 抗免疫球蛋白	kàng miǎn yì qiú dàn bái	100
-抗敏灵散人民	kàng mǐn líng sǎn rén mín	100
 康乃狄克大学	kāng nǎi dí kè dà xué	100
 康乃狄克州人	kāng nǎi dí kè zhōu rén	100
 康尼查罗反应	kāng ní chá luó fǎn yìng	100
@@ -137711,7 +137706,6 @@ sort: by_weight
 类小行星天体	lèi xiǎo xíng xīng tiān tǐ	100
 类型特征之比	lèi xíng tè zhēng zhī bǐ	100
 类亚类错牙合	lèi yà lèi cuò yá hé	100
-雷杨酊一七五	léi yáng dīng yī qī wǔ	100
 雷耶氏综合征	léi yé shì zōng hé zhēng	100
 耒宜高速公路	lěi yí gāo sù gōng lù	100
 类银河恶魔城	lèi yín hé è mó chéng	100
@@ -138814,8 +138808,6 @@ sort: by_weight
 淋巴胸管损伤	lín bā xiōng guǎn sǔn shāng	100
 淋巴样白血病	lín bā yàng bái xuè bìng	100
 邻苯二甲基酐	lín běn èr jiǎ jī gān	100
-邻苯二甲醛度	lín běn èr jiǎ quán dù	100
-邻苯二甲酸二	lín běn èr jiǎ suān èr	100
 邻苯二甲酸酐	lín běn èr jiǎ suān gān	100
 邻苯二钾酸酐	lín běn èr jiǎ suān gān	100
 邻苯二甲酸铜	lín běn èr jiǎ suān tóng	100
@@ -139485,7 +139477,6 @@ sort: by_weight
 硫酸阿奇霉素	liú suān ā qí méi sù	100
 硫酸阿司米星	liú suān ā sī mǐ xīng	100
 硫酸阿糖霉素	liú suān ā táng méi sù	100
-硫酸阿托品毒	liú suān ā tuō pǐn dú	100
 硫酸阿托品片	liú suān ā tuō pǐn piàn	100
 硫酸奥西那林	liú suān ào xī nà lín	100
 硫酸巴龙霉素	liú suān bā lóng méi sù	100
@@ -143328,7 +143319,6 @@ sort: by_weight
 尿毒灵灌肠液	niào dú líng guàn cháng yè	100
 尿毒症性脑病	niào dú zhèng xìng nǎo bìng	100
 尿苷成套试剂	niào gān chéng tào shì jì	100
-尿感合剂人民	niào gǎn hé jì rén mín	100
 鸟苷环磷酸钠	niǎo gān huán lín suān nà	100
 尿苷磷酸钠盐	niào gān lín suān nà yán	100
 鸟苷磷酸钠盐	niǎo gān lín suān nà yán	100
@@ -144874,6 +144864,7 @@ sort: by_weight
 七彩云南翡翠	qī cǎi yún nán fěi cuì	100
 芪参补气胶囊	qí cān bǔ qì jiāo náng	100
 杞参补肾颗粒	qǐ cān bǔ shèn kē lì	100
+芪参健心颗粒	qí cān jiàn xīn kē lì	100
 芪参通络胶囊	qí cān tōng luò jiāo náng	100
 汽车博览公园	qì chē bó lǎn gōng yuán	100
 汽车博览中心	qì chē bó lǎn zhōng xīn	100
@@ -145926,7 +145917,6 @@ sort: by_weight
 羟甲基淀粉钠	qiǎng jiǎ jī diàn fěn nà	100
 羟甲基泛粉钠	qiǎng jiǎ jī fàn fěn nà	100
 羟甲基磺酸钠	qiǎng jiǎ jī huáng suān nà	100
-羟甲基糠醛度	qiǎng jiǎ jī kāng quán dù	100
 羟甲基纤维素	qiǎng jiǎ jī xiān wéi sù	100
 羟甲基烟酰胺	qiǎng jiǎ jī yān xiān àn	100
 羟甲氯四环素	qiǎng jiǎ lǜ sì huán sù	100
@@ -149555,7 +149545,6 @@ sort: by_weight
 陕蒙高速公路	shǎn méng gāo sù gōng lù	100
 山柰酚山柰素	shān nài fēn shān nài sù	100
 陕南秦巴山区	shǎn nán qín bā shān qū	100
-山南西道节度	shān nán xī dào jié dù	100
 山平高速公路	shān píng gāo sù gōng lù	100
 山葡健脾颗粒	shān pú jiàn pí kē lì	100
 山普拉古墓群	shān pǔ lā gǔ mù qún	100
@@ -150341,7 +150330,6 @@ sort: by_weight
 社区支部书记	shè qū zhī bù shū jì	100
 舌全部切除术	shé quán bù qiē chú shù	100
 佘山天主教堂	shé shān tiān zhǔ jiào táng	100
-蛇伤胶囊人民	shé shāng jiāo náng rén mín	100
 佘诗曼的演技	shé shī màn de yǎn jì	100
 设视频分会场	shè shì pín fēn huì chǎng	100
 射手座的女人	shè shǒu zuò de nǚ rén	100
@@ -151033,7 +151021,6 @@ sort: by_weight
 声电子相互酌	shēng diàn zǐ xiāng hù zhuó	100
 声东击西之计	shēng dōng jī xī zhī jì	100
 生而不可与死	shēng ér bù kě yǔ sǐ	100
-生发灵一七五	shēng fà líng yī qī wǔ	100
 省发展改革委	shěng fā zhǎn gǎi gé wěi	100
 生附四君子汤	shēng fù sì jūn zǐ tāng	100
 省港旗兵系列	shěng gǎng qí bīng xì liè	100
@@ -152024,8 +152011,7 @@ sort: by_weight
 时间最优控制	shí jiān zuì yōu kòng zhì	100
 视交叉综合征	shì jiāo chā zōng hé zhēng	100
 是叫地上太平	shì jiào dì shàng tài píng	100
-施胶度滑脱度	shī jiāo dù huá tuō dù	100
-施胶度墨水漂	shī jiāo dù mò shuǐ piāo	120
+施胶度墨水漂	shī jiāo dù mò shuǐ piāo	100
 市郊旅客列车	shì jiāo lǚ kè liè chē	100
 时矫首而遐观	shí jiǎo shǒu ér xiá guān	100
 市交巡警支队	shì jiāo xún jǐng zhī duì	100
@@ -154110,7 +154096,6 @@ sort: by_weight
 水果和蔬菜中	shuǐ guǒ hé shū cài zhōng	100
 水合二氧化碳	shuǐ hé èr yǎng huà tàn	100
 水和二氧化碳	shuǐ hé èr yǎng huà tàn	100
-水合氯醛附一	shuǐ hé lǜ quán fù yī	100
 水合氯醛合剂	shuǐ hé lǜ quán hé jì	100
 水合氯醛溶液	shuǐ hé lǜ quán róng yè	100
 水合氢氧化铝	shuǐ hé qīng yǎng huà lǚ	100
@@ -155813,8 +155798,6 @@ sort: by_weight
 碳酸氯乙叉酯	tàn suān lǜ yǐ chā zhǐ	100
 碳酸氯乙烯酯	tàn suān lǜ yǐ xī zhǐ	100
 碳酸氢根离子	tàn suān qīng gēn lí zǐ	100
-碳酸氢钠附一	tàn suān qīng nà fù yī	100
-碳酸氢钠机关	tàn suān qīng nà jī guān	100
 碳酸氢钠溶液	tàn suān qīng nà róng yè	100
 碳酸亚乙叉酯	tàn suān yà yǐ chā zhǐ	100
 碳酸亚乙烯酯	tàn suān yà yǐ xī zhǐ	100
@@ -156435,7 +156418,6 @@ sort: by_weight
 天宁万寿禅寺	tiān níng wàn shòu chán sì	100
 天疱疮样反应	tiān pào chuāng yàng fǎn yìng	100
 甜品店的店员	tián pǐn diàn de diàn yuán	100
-天平军节度使	tiān píng jūn jié dù shǐ	100
 天气变化无常	tiān qì biàn huà wú cháng	100
 天气变幻莫测	tiān qì biàn huàn mò cè	100
 天杞补肾胶囊	tiān qǐ bǔ shèn jiāo náng	100
@@ -157977,7 +157959,7 @@ sort: by_weight
 网红经纪公司	wǎng hóng jīng jì gōng sī	100
 网红雪花丁香	wǎng hóng xuě huā dīng xiāng	100
 往后的日子里	wǎng hòu de rì zi lǐ	100
-王回回狗皮膏	wáng huí huí gǒu pí gāo	100
+王回回狗皮膏	wáng huí hui gǒu pí gāo	100
 忘记该忘记的	wàng jì gāi wàng jì de	100
 望基湖停车场	wàng jī hú tíng chē chǎng	100
 网际网路文法	wǎng jì wǎng lù wén fǎ	100
@@ -164484,7 +164466,6 @@ sort: by_weight
 牙用不锈钢丝	yá yòng bú xiù gāng sī	100
 牙用不锈钢线	yá yòng bú xiù gāng xiàn	100
 鸦有反哺之义	yā yǒu fǎn bǔ zhī yì	100
-亚油酸甲酯度	yà yóu suān jiǎ zhǐ dù	100
 亚油酸乙酯钙	yà yóu suān yǐ zhǐ gài	100
 牙源性黏液瘤	yá yuán xìng nián yè liú	100
 牙源性纤维瘤	yá yuán xìng xiān wéi liú	100
@@ -165019,7 +165000,6 @@ sort: by_weight
 盐酸苯环壬酯	yán suān běn huán rén zhǐ	100
 盐酸苯羟甲胺	yán suān běn qiǎng jiǎ àn	100
 盐酸苯乙双胍	yán suān běn yǐ shuāng guā	100
-盐酸吡哆胺度	yán suān bǐ duō àn dù	100
 盐酸吡格列酮	yán suān bǐ gé liè tóng	100
 盐酸吡硫醇片	yán suān bǐ liú chún piàn	100
 盐酸比哌立登	yán suān bǐ pài lì dēng	100
@@ -165069,9 +165049,7 @@ sort: by_weight
 盐酸地匹福林	yán suān dì pǐ fú lín	100
 盐酸地昔帕明	yán suān dì xī pà míng	100
 盐酸丁丙诺啡	yán suān dīng bǐng nuò fēi	100
-盐酸丁丙诺非	yán suān dīng bǐng nuò fēi	100
 盐酸丁咯地尔	yán suān dīng gē dì ěr	1006
-盐酸丁卡因胶	yán suān dīng kǎ yīn jiāo	100
 盐酸丁卡因片	yán suān dīng kǎ yīn piàn	100
 盐酸丁螺环酮	yán suān dīng luó huán tóng	100
 盐酸丁氯喘片	yán suān dīng lǜ chuǎn piàn	100
@@ -165079,7 +165057,6 @@ sort: by_weight
 盐酸度洛西汀	yán suān dù luò xī tīng	100
 盐酸多奈哌齐	yán suān duō nài pài qí	100
 盐酸多匹可明	yán suān duō pǐ kě míng	100
-盐酸多柔吡星	yán suān duō róu bǐ xīng	100
 盐酸多柔比星	yán suān duō róu bǐ xīng	100
 盐酸多塞平片	yán suān duō sāi píng piàn	100
 盐酸多沙普仑	yán suān duō shā pǔ lún	100
@@ -165992,7 +165969,6 @@ sort: by_weight
 液体接界电池	yè tǐ jiē jiè diàn chí	100
 液体接界电势	yè tǐ jiē jiè diàn shì	100
 液体热交换器	yè tǐ rè jiāo huàn qì	100
-液体石蜡附一	yè tǐ shí là fù yī	100
 液体阻力系数	yè tǐ zǔ lì xì shù	120
 叶天士温热论	yè tiān shì wēn rè lùn	100
 野外火源管控	yě wài huǒ yuán guǎn kòng	100
@@ -167035,7 +167011,6 @@ sort: by_weight
 以色列放线菌	yǐ sè liè fàng xiàn jūn	100
 异色性虹膜炎	yì sè xìng hóng mó yán	100
 异色性皮肌炎	yì sè xìng pí jī yán	100
-依沙吖啶附一	yī shā ā dìng fù yī	100
 依沙吖啶凝胶	yī shā ā dìng níng jiāo	100
 依沙吖啶溶液	yī shā ā dìng róng yè	100
 依沙吖啶软膏	yī shā ā dìng ruǎn gāo	100
@@ -168067,7 +168042,6 @@ sort: by_weight
 银屑病关节炎	yín xiè bìng guān jié yán	100
 银屑病性肾炎	yín xiè bìng xìng shèn yán	100
 银屑病样尿布	yín xiè bìng yàng niào bù	100
-银锌霜一七五	yín xīn shuāng yī qī wǔ	100
 隐性变数理论	yǐn xìng biàn shù lǐ lùn	100
 银杏色的初恋	yín xìng sè de chū liàn	100
 银杏酮酯滴丸	yín xìng tóng zhǐ dī wán	100
@@ -170896,7 +170870,6 @@ sort: by_weight
 樟叶木防己碱	zhāng yè mù fáng jǐ jiǎn	100
 樟宜国际机场	zhāng yí guó jì jī chǎng	100
 樟宜海军基地	zhāng yí hǎi jūn jī dì	100
-彰义军节度使	zhāng yì jūn jié dù shǐ	100
 樟宜空军基地	zhāng yí kōng jūn jī dì	100
 张艺谋的电影	zhāng yì móu de diàn yǐng	100
 张艺谋的妻子	zhāng yì móu de qī zǐ	100
@@ -172121,8 +172094,6 @@ sort: by_weight
 痔康舒口服液	zhì kāng shū kǒu fú yè	100
 治咳川贝枇杷	zhì ké chuān bèi pí pá	100
 止咳喘热参片	zhǐ ké chuǎn rè cān piàn	100
-止咳合剂人民	zhǐ ké hé jì rén mín	100
-止咳合剂协和	zhǐ ké hé jì xié hé	100
 止咳桔红颗粒	zhǐ ké jú hóng kē lì	100
 止咳橘红颗粒	zhǐ ké jú hóng kē lì	100
 止咳灵口服液	zhǐ ké líng kǒu fú yè	100
@@ -175022,7 +174993,6 @@ sort: by_weight
 总侵蚀基准面	zǒng qīn shí jī zhǔn miàn	100
 纵情山河万里	zòng qíng shān hé wàn lǐ	100
 纵然相思入骨	zòng rán xiāng sī rù gǔ	100
-棕色合剂人民	zōng sè hé jì rén mín	100
 总是不厌其烦	zǒng shì bú yàn qí fán	100
 总是反反复复	zǒng shì fǎn fǎn fù fù	100
 总是后知后觉	zǒng shì hòu zhī hòu jué	100
@@ -176677,7 +176647,6 @@ sort: by_weight
 八月十五看龙灯	bā yuè shí wǔ kàn lóng dēng	100
 八月十五夜玩月	bā yuè shí wǔ yè wán yuè	100
 坝镇国土资源所	bà zhèn guó tǔ zī yuán suǒ	100
-八珍合剂一七五	bā zhēn hé jì yī qī wǔ	100
 八珍颗粒无糖型	bā zhēn kē lì wú táng xíng	100
 八正颗粒无糖型	bā zhèng kē lì wú táng xíng	100
 八正木通与车前	bā zhèng mù tōng yǔ chē qián	100
@@ -177602,12 +177571,6 @@ sort: by_weight
 苯二氮平类药物	běn èr dàn píng lèi yào wù	100
 苯二氮卓类药物	běn èr dàn zhuó lèi yào wù	100
 苯二甲酸二丁酯	běn èr jiǎ suān èr dīng zhǐ	100
-苯酚滴耳液省二	běn fēn dī ěr yè shěng èr	100
-苯酚滴耳液市一	běn fēn dī ěr yè shì yī	100
-苯酚滴耳液协和	běn fēn dī ěr yè xié hé	100
-苯酚甘油一七五	běn fēn gān yóu yī qī wǔ	100
-苯酚溶液一七五	běn fēn róng yè yī qī wǔ	100
-苯酚消毒液协和	běn fēn xiāo dú yè xié hé	100
 本福德号驱逐舰	běn fú dé hào qū zhú jiàn	100
 苯海拉明注射液	běn hǎi lā míng zhù shè yè	100
 苯磺酸阿曲库铵	běn huáng suān ā qǔ kù ǎn	100
@@ -178570,7 +178533,6 @@ sort: by_weight
 不顾别人的感受	bú gù bié rén de gǎn shòu	100
 不顾难以图后兮	bú gù nán yǐ tú hòu xī	100
 不顾世俗的眼光	bú gù shì sú de yǎn guāng	100
-补骨酯酊一七五	bǔ gǔ zhǐ dīng yī qī wǔ	100
 不顾自己的安危	bú gù zì jǐ de ān wēi	100
 不顾自己的身体	bú gù zì jǐ de shēn tǐ	100
 不顾自己的生命	bú gù zì jǐ de shēng mìng	100
@@ -178885,7 +178847,6 @@ sort: by_weight
 补肾安神口服液	bǔ shèn ān shén kǒu fú yè	100
 补肾斑龙片糖衣	bǔ shèn bān lóng piàn táng yī	100
 补肾健脾口服液	bǔ shèn jiàn pí kǒu fú yè	100
-补肾祛毒丸省二	bǔ shèn qū dú wán shěng èr	100
 补肾润肺口服液	bǔ shèn rùn fèi kǒu fú yè	100
 补肾填精口服液	bǔ shèn tián jīng kǒu fú yè	100
 补肾养血口服液	bǔ shèn yǎng xuè kǒu fú yè	100
@@ -180612,7 +180573,6 @@ sort: by_weight
 船上管弦江面渌	chuán shàng guǎn xián jiāng miàn lù	100
 穿上漂亮的衣服	chuān shàng piào liang de yī fu	100
 穿什么样的衣服	chuān shén me yàng de yī fu	100
-喘舒口服液肺科	chuǎn shū kǒu fú yè fèi kē	100
 传说在很早以前	chuán shuō zài hěn zǎo yǐ qián	100
 传说中的女网警	chuán shuō zhōng de nǚ wǎng jǐng	100
 川苏救心喷雾剂	chuān sū jiù xīn pēn wù jì	100
@@ -181135,7 +181095,6 @@ sort: by_weight
 醋酸氯己定贴膏	cù suān lǜ jǐ dìng tiē gāo	100
 醋酸氯己定涂膜	cù suān lǜ jǐ dìng tú mó	100
 醋酸氯已定贴膏	cù suān lǜ yǐ dìng tiē gāo	100
-醋酸氯已定协和	cù suān lǜ yǐ dìng xié hé	100
 醋酸泼尼松龙片	cù suān pō ní sōng lóng piàn	100
 醋酸泼尼松乳膏	cù suān pō ní sōng rǔ gāo	100
 醋酸泼尼松眼膏	cù suān pō ní sōng yǎn gāo	100
@@ -182474,7 +182433,6 @@ sort: by_weight
 帝冢山四丁目站	dì zhǒng shān sì dīng mù zhàn	100
 地主家的傻儿子	dì zhǔ jiā de shǎ ér zi	100
 点背不能怨社会	diǎn bèi bù néng yuàn shè huì	100
-碘苯酚涂剂协和	diǎn běn fēn tú jì xié hé	100
 碘吡啶酮乙酸钠	diǎn bǐ dìng tóng yǐ suān nà	100
 电波女与青春男	diàn bō nǚ yǔ qīng chūn nán	100
 电场的叠加原理	diàn chǎng de dié jiā yuán lǐ	100
@@ -182529,11 +182487,8 @@ sort: by_weight
 淀粉转葡糖苷酶	diàn fěn zhuǎn pú táng gān méi	100
 淀粉转葡糖基酶	diàn fěn zhuǎn pú táng jī méi	100
 颠覆国家政权罪	diān fù guó jiā zhèng quán zuì	100
-碘伏溶液一七五	diǎn fú róng yè yī qī wǔ	100
 电感式接近开关	diàn gǎn shì jiē jìn kāi guān	100
 碘甘油龙岩市二	diǎn gān yóu lóng yán shì èr	100
-碘甘油龙岩市一	diǎn gān yóu lóng yán shì yī	100
-碘甘油南平市一	diǎn gān yóu nán píng shì yī	100
 碘甘油厦门市二	diǎn gān yóu xià mén shì èr	100
 电光超人古立特	diàn guāng chāo rén gǔ lì tè	100
 电光源混合气体	diàn guāng yuán hùn hé qì tǐ	100
@@ -182545,8 +182500,6 @@ sort: by_weight
 碘化二苯基碘𬭩	diǎn huà èr běn jī diǎn wēng	100
 电话或电子邮件	diàn huà huò diàn zǐ yóu jiàn	100
 碘化钾淀粉试纸	diǎn huà jiǎ diàn fěn shì zhǐ	100
-碘化钾溶液市一	diǎn huà jiǎ róng yè shì yī	100
-碘化钾溶液协和	diǎn huà jiǎ róng yè xié hé	100
 电化学反射光谱	diàn huà xué fǎn shè guāng pǔ	100
 电极过程动力学	diàn jí guò chéng dòng lì xué	100
 点击可查看大图	diǎn jī kě chá kàn dà tú	100
@@ -183859,7 +183812,6 @@ sort: by_weight
 儿童之家幼儿园	ér tóng zhī jiā yòu ér yuán	100
 二万五千里长征	èr wàn wǔ qiān lǐ cháng zhēng	100
 二王八司马事件	èr wáng bā sī mǎ shì jiàn	100
-二味拔毒散省二	èr wèi bá dú sàn shěng èr	100
 二维超声心动图	èr wéi chāo shēng xīn dòng tú	100
 二维傅立叶变换	èr wéi fù lì yè biàn huàn	100
 二维呋喃唑酮片	èr wéi fū nán zuò tóng piàn	100
@@ -184667,7 +184619,6 @@ sort: by_weight
 肺弥散功能降低	fèi mí sàn gōng néng jiàng dī	100
 非免疫规划疫苗	fēi miǎn yì guī huà yì miáo	100
 非灭菌普通棉签	fēi miè jūn pǔ tōng mián qiān	100
-非那根糖浆人民	fēi nà gēn táng jiāng rén mín	100
 非那根止咳糖浆	fēi nà gēn zhǐ ké táng jiāng	100
 非那雄胺分散片	fēi nà xióng àn fēn sǎn piàn	100
 肺囊性纤维化病	fèi náng xìng xiān wéi huà bìng	100
@@ -184832,7 +184783,6 @@ sort: by_weight
 非洲木薯花叶病	fēi zhōu mù shǔ huā yè bìng	100
 非洲人类锥虫病	fēi zhōu rén lèi zhuī chóng bìng	100
 非洲猪瘟病毒目	fēi zhōu zhū wēn bìng dú mù	100
-痱子粉南平市皮	fèi zǐ fěn nán píng shì pí	100
 非自民连立政权	fēi zì mín lián lì zhèng quán	100
 非子天机清妙者	fēi zǐ tiān jī qīng miào zhě	100
 非宗派化基督教	fēi zōng pài huà jī dū jiào	100
@@ -185332,17 +185282,12 @@ sort: by_weight
 复方贝母氯化铵	fù fāng bèi mǔ lǜ huà ǎn	100
 复方北五味子片	fù fāng běi wǔ wèi zǐ piàn	100
 复方苯甲酸搽剂	fù fāng běn jiǎ suān chá jì	100
-复方苯甲酸附一	fù fāng běn jiǎ suān fù yī	100
 复方苯甲酸软膏	fù fāng běn jiǎ suān ruǎn gāo	100
 复方苯甲酸涂剂	fù fāng běn jiǎ suān tú jì	100
 复方苯硝那敏片	fù fāng běn xiāo nà mǐn piàn	100
 复方鳖甲软肝片	fù fāng biē jiǎ ruǎn gān piàn	100
 复方丙谷胺胶囊	fù fāng bǐng gǔ àn jiāo náng	100
 复方薄荷滴鼻液	fù fāng bò he dī bí yè	100
-复方薄荷脑鼻用	fù fāng bò hé nǎo bí yòng	100
-复方薄荷脑滴鼻	fù fāng bò hé nǎo dī bí	100
-复方薄荷脑附一	fù fāng bò hé nǎo fù yī	100
-复方薄荷脑人民	fù fāng bò hé nǎo rén mín	100
 复方薄荷脑软膏	fù fāng bò hé nǎo ruǎn gāo	100
 复方薄荷油滴鼻	fù fāng bò he yóu dī bí	100
 复方菠萝蛋白酶	fù fāng bō luó dàn bái méi	100
@@ -185394,10 +185339,6 @@ sort: by_weight
 复方地塞米松软	fù fāng dì sāi mǐ sōng ruǎn	100
 复方颠茄铋镁片	fù fāng diān qié bì měi piàn	100
 复方颠茄口服液	fù fāng diān qié kǒu fú yè	100
-复方碘溶液附一	fù fāng diǎn róng yè fù yī	100
-复方碘溶液人民	fù fāng diǎn róng yè rén mín	100
-复方碘溶液市一	fù fāng diǎn róng yè shì yī	100
-复方碘溶液协和	fù fāng diǎn róng yè xié hé	100
 复方丁香开胃贴	fù fāng dīng xiāng kāi wèi tiē	100
 复方丁香罗勒油	fù fāng dīng xiāng luó lè yóu	100
 复方冬凌草含片	fù fāng dōng líng cǎo hán piàn	100
@@ -185461,7 +185402,6 @@ sort: by_weight
 复方磺胺嘧啶锌	fù fāng huáng àn mì dìng xīn	100
 复方磺胺氧化锌	fù fāng huáng àn yǎng huà xīn	100
 复方磺胺异恶唑	fù fāng huáng àn yì è zuò	100
-复方黄连膏人民	fù fāng huáng lián gāo rén mín	100
 复方黄芪口服液	fù fāng huáng qí kǒu fú yè	100
 复方活脑舒胶囊	fù fāng huó nǎo shū jiāo náng	100
 复方鸡骨草胶囊	fù fāng jī gǔ cǎo jiāo náng	100
@@ -185531,9 +185471,6 @@ sort: by_weight
 复方硫酸软骨素	fù fāng liú suān ruǎn gǔ sù	100
 复方硫酸新霉素	fù fāng liú suān xīn méi sù	100
 复方硫酸亚铁片	fù fāng liú suān yà tiě piàn	100
-复方硫洗剂附一	fù fāng liú xǐ jì fù yī	100
-复方硫洗剂省皮	fù fāng liú xǐ jì shěng pí	100
-复方硫洗剂协和	fù fāng liú xǐ jì xié hé	100
 复方柳唑气雾剂	fù fāng liǔ zuò qì wù jì	100
 复方龙脑樟脑油	fù fāng lóng nǎo zhāng nǎo yóu	100
 复方炉甘石洗剂	fù fāng lú gān shí xǐ jì	100
@@ -185583,7 +185520,6 @@ sort: by_weight
 复方牛磺酸胶囊	fù fāng niú huáng suān jiāo náng	100
 复方胚肝铁铵片	fù fāng pēi gān tiě ǎn piàn	100
 复方硼砂含漱液	fù fāng péng shā hán shù yè	100
-复方硼砂散省立	fù fāng péng shā sàn shěng lì	100
 复方硼砂漱口片	fù fāng péng shā shù kǒu piàn	100
 复方枇杷氯化铵	fù fāng pí pá lǜ huà ǎn	100
 复方皮维碘溶液	fù fāng pí wéi diǎn róng yè	100
@@ -185699,7 +185635,6 @@ sort: by_weight
 复方锌布颗粒剂	fù fāng xīn bù kē lì jì	100
 复方新霉素软膏	fù fāng xīn méi sù ruǎn gāo	100
 复方新霉素眼药	fù fāng xīn méi sù yǎn yào	100
-复方锌硼散协和	fù fāng xīn péng sàn xié hé	100
 复方锌硼散足粉	fù fāng xīn péng sàn zú fěn	100
 复方锌铁钙颗粒	fù fāng xīn tiě gài kē lì	100
 复方杏香兔耳风	fù fāng xìng xiāng tù ěr fēng	100
@@ -185927,7 +185862,6 @@ sort: by_weight
 氟罗沙星注射液	fú luó shā xīng zhù shè yè	100
 氟氯烷类化合物	fú lǜ wán lèi huà hé wù	100
 氟氯西林钠胶囊	fú lǜ xī lín nà jiāo náng	100
-呋麻滴鼻液市一	fū má dī bí yè shì yī	100
 富马酸阿奇霉素	fù mǎ suān ā qí méi sù	100
 富马酸比索洛尔	fù mǎ suān bǐ suǒ luò ěr	100
 富马酸福莫特罗	fù mǎ suān fú mò tè luó	100
@@ -186489,7 +186423,6 @@ sort: by_weight
 甘油古洛庚酮糖	gān yóu gǔ luò gēng tóng táng	100
 甘油果糖塑料瓶	gān yóu guǒ táng sù liào píng	100
 甘油果糖注射液	gān yóu guǒ táng zhù shè yè	100
-甘油合剂一七五	gān yóu hé jì yī qī wǔ	100
 甘油抗坏血酸钠	gān yóu kàng huài xuè suān nà	100
 甘油磷酸脱氢酶	gān yóu lín suān tuō qīng méi	100
 甘油磷酸氧化酶	gān yóu lín suān yǎng huà méi	100
@@ -187613,9 +187546,6 @@ sort: by_weight
 工信部综合油耗	gōng xìn bù zōng hé yóu hào	100
 弓形体抗体测定	gōng xíng tǐ kàng tǐ cè dìng	100
 弓形体属心肌炎	gōng xíng tǐ shǔ xīn jī yán	100
-汞溴红溶液市一	gǒng xiù hóng róng yè shì yī	100
-汞溴红溶液协和	gǒng xiù hóng róng yè xié hé	100
-汞溴红药水机关	gǒng xiù hóng yào shuǐ jī guān	100
 供血动脉夹闭术	gōng xuè dòng mài jiā bì shù	100
 功勋国家合唱团	gōng xūn guó jiā hé chàng tuán	100
 供养亲属抚恤金	gōng yǎng qīn shǔ fǔ xù jīn	100
@@ -189687,7 +189617,6 @@ sort: by_weight
 假醛固酮减少症	jiǎ quán gù tóng jiǎn shǎo zhèng	100
 甲醛合次硫酸氢	jiǎ quán hé cì liú suān qīng	100
 甲醛空气净化器	jiǎ quán kōng qì jìng huà qì	100
-甲醛溶液一七五	jiǎ quán róng yè yī qī wǔ	100
 加权算术平均法	jiā quán suàn shù píng jūn fǎ	100
 加权最小二乘法	jiā quán zuì xiǎo èr chéng fǎ	100
 甲炔诺酮埋植剂	jiǎ quē nuò tóng mái zhí jì	100
@@ -189753,7 +189682,6 @@ sort: by_weight
 加味藿香正气丸	jiā wèi huò xiāng zhèng qì wán	100
 加味霍香正气丸	jiā wèi huò xiāng zhèng qì wán	100
 加味健步虎潜丸	jiā wèi jiàn bù hǔ qián wán	100
-加味金黄散省二	jiā wèi jīn huáng sàn shěng èr	100
 加味葵子茯苓散	jiā wèi kuí zǐ fú líng sàn	100
 加味六味地黄汤	jiā wèi liù wèi dì huáng tāng	100
 加味散结痤疮丸	jiā wèi sàn jié cuó chuāng wán	100
@@ -189790,7 +189718,6 @@ sort: by_weight
 甲溴贝那替嗪片	jiǎ xiù bèi nà tì qín piàn	100
 甲溴贝那替秦片	jiǎ xiù bèi nà tì qín piàn	100
 甲戌乙亥山头火	jiǎ xū yǐ hài shān tóu huǒ	100
-甲癣搽剂号市皮	jiǎ xuǎn chá jì hào shì pí	100
 加压空心钉纯钛	jiā yā kōng xīn dīng chún tài	100
 甲氧苄胺嘧啶片	jiǎ yǎng biàn àn mì dìng piàn	100
 甲氧苄啶注射液	jiǎ yǎng biàn dìng zhù shè yè	100
@@ -189838,7 +189765,6 @@ sort: by_weight
 甲状腺上下动脉	jiǎ zhuàng xiàn shàng xià dòng mài	100
 甲状腺最下动脉	jiǎ zhuàng xiàn zuì xià dòng mài	100
 甲子兰酒文物馆	jiǎ zǐ lán jiǔ wén wù guǎn	100
-甲紫溶液一七五	jiǎ zǐ róng yè yī qī wǔ	100
 甲子神将王文卿	jiǎ zǐ shén jiàng wáng wén qīng	100
 甲子乙丑海中金	jiǎ zǐ yǐ chǒu hǎi zhōng jīn	100
 家族黑蒙性白痴	jiā zú hēi méng xìng bái chī	100
@@ -190256,8 +190182,6 @@ sort: by_weight
 金威二氏综合征	jīn wēi èr shì zōng hé zhēng	100
 晋西北七城战役	jìn xī běi qī chéng zhàn yì	100
 尽信书不如无书	jìn xìn shū bù rú wú shū	100
-金星消毒液机关	jīn xīng xiāo dú yè jī guān	100
-金星消毒液协和	jīn xīng xiāo dú yè xié hé	100
 进行性白质脑病	jìn xíng xìng bái zhì nǎo bìng	100
 进行性脊髓麻痹	jìn xíng xìng jǐ suǐ má bì	100
 进行性肌萎缩症	jìn xíng xìng jī wěi suō zhèng	100
@@ -190673,7 +190597,6 @@ sort: by_weight
 枸橼酸喷托维林	jǔ yuán suān pēn tuō wéi lín	100
 枸橼酸苹果酸钙	jǔ yuán suān píng guǒ suān gài	100
 枸橼酸曲吡那敏	jǔ yuán suān qǔ bǐ nà mǐn	100
-枸橼酸溶液协和	jǔ yuán suān róng yè xié hé	100
 枸橼酸舒芬太尼	jǔ yuán suān shū fēn tài ní	100
 枸橼酸他莫昔芬	jǔ yuán suān tā mò xī fēn	100
 枸橼酸坦度螺酮	jǔ yuán suān tǎn dù luó tóng	100
@@ -190757,7 +190680,6 @@ sort: by_weight
 卡普二氏培养基	kǎ pǔ èr shì péi yǎng jī	100
 卡普兰迈耶曲线	kǎ pǔ lán mài yé qū xiàn	100
 卡塞二氏综合征	kǎ sāi èr shì zōng hé zhēng	100
-卡氏擦剂一七五	kǎ shì cā jì yī qī wǔ	100
 卡氏肺囊虫肺炎	kǎ shì fèi náng chóng fèi yán	100
 卡氏肺囊虫感染	kǎ shì fèi náng chóng gǎn rǎn	100
 卡斯奇里恩战役	kǎ sī qí lǐ ēn zhàn yì	100
@@ -191099,7 +191021,6 @@ sort: by_weight
 口服水解蛋白粉	kǒu fú shuǐ jiě dàn bái fěn	100
 口服四维葡萄糖	kǒu fú sì wéi pú táo táng	100
 口服五维葡萄糖	kǒu fú wǔ wéi pú táo táng	100
-口服洗肠盐协和	kǒu fú xǐ cháng yán xié hé	100
 口角病损切除术	kǒu jué bìng sǔn qiē chú shù	100
 口糜淋痛小肠火	kǒu mí lín tòng xiǎo cháng huǒ	100
 口面指型综合征	kǒu miàn zhǐ xíng zōng hé zhēng	100
@@ -191380,7 +191301,6 @@ sort: by_weight
 类风湿性心脏病	lèi fēng shī xìng xīn zàng bìng	100
 类风湿性血管炎	lèi fēng shī xìng xuè guǎn yán	100
 类风湿因子测定	lèi fēng shī yīn zǐ cè dìng	100
-雷佛奴尔液省皮	léi fó nú ěr yè shěng pí	100
 雷福二氏持针钳	léi fú èr shì chí zhēn qián	100
 雷夫叙姆综合征	léi fū xù mǔ zōng hé zhēng	100
 类高血糖素多肽	lèi gāo xuè táng sù duō tài	100
@@ -191664,7 +191584,6 @@ sort: by_weight
 淋巴组织生成素	lín bā zǔ zhī shēng chéng sù	100
 淋巴组织增生病	lín bā zǔ zhī zēng shēng bìng	100
 邻苯二甲酸丁酯	lín běn èr jiǎ suān dīng zhǐ	120
-邻苯二甲酸二酯	lín běn èr jiǎ suān èr zhǐ	100
 邻苯二甲酸氢钾	lín běn èr jiǎ suān qīng jiǎ	100
 邻苯二甲酸氢铜	lín běn èr jiǎ suān qīng tóng	100
 邻苯二甲酰亚胺	lín běn èr jiǎ xiān yà àn	100
@@ -191808,6 +191727,8 @@ sort: by_weight
 流动性偏好理论	liú dòng xìng piān hǎo lǐ lùn	100
 流动性升水理论	liú dòng xìng shēng shuǐ lǐ lùn	100
 六氟化硫稀释法	liù fú huà liú xī shì fǎ	100
+六氟磷酸二茂钴	liù fú lín suān èr mào gǔ	100
+六氟磷酸二茂铁	liù fú lín suān èr mào tiě	100
 六氟磷酸根离子	liù fú lín suān gēn lí zǐ	100
 流感病毒相变异	liú gǎn bìng dú xiāng biàn yì	100
 流感病毒抑制物	liú gǎn bìng dú yì zhì wù	100
@@ -191842,10 +191763,6 @@ sort: by_weight
 六叔丁氧基二钨	liù shū dīng yǎng jī èr wū	100
 六水丁二酸二钠	liù shuǐ dīng èr suān èr nà	120
 六水硫酸亚铁铵	liù shuǐ liú suān yà tiě ǎn	120
-硫酸阿托品附一	liú suān ā tuō pǐn fù yī	100
-硫酸阿托品机关	liú suān ā tuō pǐn jī guān	100
-硫酸阿托品人民	liú suān ā tuō pǐn rén mín	100
-硫酸阿托品省二	liú suān ā tuō pǐn shěng èr	100
 硫酸阿托品眼膏	liú suān ā tuō pǐn yǎn gāo	100
 硫酸氨基葡萄糖	liú suān ān jī pú táo táng	100
 硫酸巴龙霉素片	liú suān bā lóng méi sù piàn	100
@@ -191859,11 +191776,6 @@ sort: by_weight
 硫酸吗啡控释片	liú suān mǎ fēi kòng shì piàn	100
 硫酸吗啡注射液	liú suān mǎ fēi zhù shè yè	100
 硫酸镁溶液传染	liú suān měi róng yè chuán rǎn	100
-硫酸镁溶液附一	liú suān měi róng yè fù yī	100
-硫酸镁溶液省二	liú suān měi róng yè shěng èr	100
-硫酸镁溶液省立	liú suān měi róng yè shěng lì	100
-硫酸镁溶液市一	liú suān měi róng yè shì yī	100
-硫酸镁溶液协和	liú suān měi róng yè xié hé	100
 硫酸普拉睾酮钠	liú suān pǔ lā gāo tóng nà	100
 硫酸庆大霉素片	liú suān qìng dà méi sù piàn	100
 硫酸氢氯吡格雷	liú suān qīng lǜ bǐ gé léi	100
@@ -192107,29 +192019,19 @@ sort: by_weight
 氯酚待因复方片	lǜ fēn dài yīn fù fāng piàn	100
 氯芬黄敏片糖衣	lǜ fēn huáng mǐn piàn táng yī	100
 氯睾丸素醋酸酯	lǜ gāo wán sù cù suān zhǐ	100
-氯化铵合剂市一	lǜ huà ǎn hé jì shì yī	100
 氯化氨基汞软膏	lǜ huà ān jī gǒng ruǎn gāo	100
 氯化铵基汞软膏	lǜ huà ǎn jī gǒng ruǎn gāo	100
 氯化钾环戊噻嗪	lǜ huà jiǎ huán wù sāi qín	100
 氯化甲基烟酰胺	lǜ huà jiǎ jī yān xiān àn	100
 氯化钾口服溶液	lǜ huà jiǎ kǒu fú róng yè	100
 氯化钾溶液传染	lǜ huà jiǎ róng yè chuán rǎn	100
-氯化钾溶液肺科	lǜ huà jiǎ róng yè fèi kē	100
-氯化钾溶液附一	lǜ huà jiǎ róng yè fù yī	100
-氯化钾溶液省二	lǜ huà jiǎ róng yè shěng èr	100
-氯化钾溶液省立	lǜ huà jiǎ róng yè shěng lì	100
-氯化钾溶液市一	lǜ huà jiǎ róng yè shì yī	100
-氯化钾溶液协和	lǜ huà jiǎ róng yè xié hé	100
 氯化镁四水合物	lǜ huà měi sì shuǐ hé wù	100
-氯化钠溶液附一	lǜ huà nà róng yè fù yī	100
-氯化钠溶液市一	lǜ huà nà róng yè shì yī	100
 氯化三甲基硅烷	lǜ huà sān jiǎ jī guī wán	100
 氯化三甲基矽烷	lǜ huà sān jiǎ jī xī wán	100
 氯化四吡啶合钴	lǜ huà sì bǐ dìng hé gǔ	100
 氯化四吡啶合镍	lǜ huà sì bǐ dìng hé niè	100
 氯化四吡啶合铁	lǜ huà sì bǐ dìng hé tiě	100
 氯化四乙酸二锝	lǜ huà sì yǐ suān èr dé	100
-氯化锌擦剂市一	lǜ huà xīn cā jì shì yī	100
 氯化亚铊注射液	lǜ huà yà tā zhù shè yè	100
 氯化亚锡冻干品	lǜ huà yà xī dòng gān pǐn	100
 氯化乙酰甲胆碱	lǜ huà yǐ xiān jiǎ dǎn jiǎn	100
@@ -192159,7 +192061,6 @@ sort: by_weight
 滤泡性甲状腺癌	lǜ pào xìng jiǎ zhuàng xiàn ái	100
 氯普噻吨片糖衣	lǜ pǔ sāi dūn piàn táng yī	100
 氯普噻吨注射液	lǜ pǔ sāi dūn zhù shè yè	100
-氯强滴眼液市一	lǜ qiáng dī yǎn yè shì yī	100
 氯屈膦酸二钠片	lǜ qū lìn suān èr nà piàn	100
 氯醛半缩醛睾酮	lǜ quán bàn suō quán gāo tóng	100
 氯醛亚硝基萘酚	lǜ quán yà xiāo jī nài fēn	100
@@ -192236,7 +192137,6 @@ sort: by_weight
 玛木然止泻胶囊	mǎ mù rán zhǐ xiè jiāo náng	100
 马尼神经松解术	mǎ ní shén jīng sōng jiě shù	100
 马尿酸乌洛托品	mǎ niào suān wū luò tuō pǐn	100
-麻强滴鼻液协和	má qiáng dī bí yè xié hé	100
 麻仁润肠软胶囊	má rén rùn cháng ruǎn jiāo náng	100
 麻绳专挑细处断	má shéng zhuān tiāo xì chù duàn	100
 马斯洛需求理论	mǎ sī luò xū qiú lǐ lùn	100
@@ -192272,7 +192172,6 @@ sort: by_weight
 麦冬芍药当归配	mài dōng sháo yào dāng guī pèi	100
 麦冬生地大麻仁	mài dōng shēng dì dà má rén	100
 脉管复康片糖衣	mài guǎn fù kāng piàn táng yī	100
-脉管号胶囊人民	mài guǎn hào jiāo náng rén mín	100
 脉缓舌黄身又痛	mài huǎn shé huáng shēn yòu tòng	100
 卖火柴的小女孩	mài huǒ chái de xiǎo nǚ hái	100
 麦角胺咖啡因片	mài jiǎo àn kā fēi yīn piàn	100
@@ -192576,9 +192475,7 @@ sort: by_weight
 面中部发育不良	miàn zhōng bù fā yù bù liáng	100
 妙法内攻并外攘	miào fǎ nèi gōng bìng wài rǎng	100
 苗生红中医诊所	miáo shēng hóng zhōng yī zhěn suǒ	100
-灭菌纯化水附一	miè jūn chún huà shuǐ fù yī	100
 灭菌凡士林纱布	miè jūn fán shì lín shā bù	100
-灭菌蒸馏水协和	miè jūn zhēng liú shuǐ xié hé	100
 敏迪特非那丁片	mǐn dí tè fēi nà dīng piàn	100
 民航旅客运输量	mín háng lǚ kè yùn shū liàng	100
 闵可夫斯基度规	mǐn kě fū sī jī dù guī	100
@@ -192929,7 +192826,6 @@ sort: by_weight
 捻发音蜂窝织炎	niǎn fā yīn fēng wō zhī yán	100
 年龄性别死亡率	nián líng xìng bié sǐ wáng lǜ	100
 黏膜白色海绵痣	nián mó bái sè hǎi mián zhì	100
-黏膜溃疡膏附一	nián mó kuì yáng gāo fù yī	100
 黏膜下浸润麻醉	nián mó xià jìn rùn má zuì	100
 年平均日交通量	nián píng jūn rì jiāo tōng liàng	100
 年轻地球创造论	nián qīng dì qiú chuàng zào lùn	100
@@ -193017,7 +192913,6 @@ sort: by_weight
 尿流改道复原术	niào liú gǎi dào fù yuán shù	100
 尿路排石口服液	niào lù pái shí kǒu fú yè	100
 尿嘧啶替加氟片	niào mì dìng tì jiā fú piàn	100
-尿囊素霜一七五	niào náng sù shuāng yī qī wǔ	100
 尿浓缩稀释试验	niào nóng suō xī shì shì yàn	100
 尿培养阳性所见	niào péi yǎng yáng xìng suǒ jiàn	100
 尿乳糜定性检查	niào rǔ mí dìng xìng jiǎn chá	100
@@ -193322,21 +193217,10 @@ sort: by_weight
 蓬莱长扁朽木甲	péng lái cháng biǎn xiǔ mù jiǎ	100
 硼砂甘油钾溶液	péng shā gān yóu jiǎ róng yè	100
 硼酸冰片滴耳液	péng suān bīng piàn dī ěr yè	100
-硼酸滴耳液省二	péng suān dī ěr yè shěng èr	100
-硼酸滴耳液省立	péng suān dī ěr yè shěng lì	100
-硼酸滴耳液市一	péng suān dī ěr yè shì yī	100
-硼酸滴耳液协和	péng suān dī ěr yè xié hé	100
 硼酸甘油滴耳液	péng suān gān yóu dī ěr yè	100
-硼酸甘油一七五	péng suān gān yóu yī qī wǔ	100
 硼酸酒精滴耳液	péng suān jiǔ jīng dī ěr yè	100
-硼酸酒精一七五	péng suān jiǔ jīng yī qī wǔ	100
-硼酸溶液一七五	péng suān róng yè yī qī wǔ	100
-硼酸氧化锌附一	péng suān yǎng huà xīn fù yī	100
 硼酸氧化锌软膏	péng suān yǎng huà xīn ruǎn gāo	100
 膨体聚四氟乙烯	péng tǐ jù sì fú yǐ xī	100
-硼锌鱼软膏附一	péng xīn yú ruǎn gāo fù yī	100
-硼锌鱼软膏省皮	péng xīn yú ruǎn gāo shěng pí	100
-硼锌鱼软膏市皮	péng xīn yú ruǎn gāo shì pí	100
 朋友我们的传说	péng you wǒ men de chuán shuō	100
 皮瓣逆转设计法	pí bàn nì zhuǎn shè jì fǎ	100
 匹多莫德分散片	pǐ duō mò dé fēn sǎn piàn	100
@@ -193371,7 +193255,6 @@ sort: by_weight
 皮肤瘘管切除术	pí fū lòu guǎn qiē chú shù	100
 皮肤挛缩松解术	pí fū luán suō sōng jiě shù	100
 皮肤毛细血管瘤	pí fū máo xì xuè guǎn liú	100
-皮肤墨水一七五	pí fū mò shuǐ yī qī wǔ	100
 皮肤囊肿切除术	pí fū náng zhǒng qiē chú shù	100
 皮肤黏膜无苍白	pí fū nián mó wú cāng bái	100
 皮肤黏膜消毒液	pí fū nián mó xiāo dú yè	100
@@ -193843,7 +193726,6 @@ sort: by_weight
 切连科夫计数器	qiè lián kē fū jì shù qì	100
 芩暴红止咳颗粒	qín bào hóng zhǐ ké kē lì	100
 芩暴红止咳糖浆	qín bào hóng zhǐ ké táng jiāng	100
-芩蓝滴鼻液省二	qín lán dī bí yè shěng èr	100
 芩连归桂槟草香	qín lián guī guì bīn cǎo xiāng	100
 芩连芪柏共煎尝	qín lián qí bǎi gòng jiān cháng	100
 芩连曲术茯苓襄	qín lián qǔ shù fú líng xiāng	100
@@ -194078,7 +193960,6 @@ sort: by_weight
 取得资格的人员	qǔ dé zī gé de rén yuán	100
 取得最后的胜利	qǔ dé zuì hòu de shèng lì	100
 取得最终的胜利	qǔ dé zuì zhōng de shèng lì	100
-祛毒灌肠液省二	qū dú guàn cháng yè shěng èr	100
 驱毒养颜口服液	qū dú yǎng yán kǒu fú yè	100
 取锻灶下灰一斗	qǔ duàn zào xià huī yì dǒu	100
 祛风骨痛巴布膏	qū fēng gǔ tòng bā bù gāo	100
@@ -194155,7 +194036,6 @@ sort: by_weight
 区政务服务中心	qū zhèng wù fú wù zhōng xīn	100
 屈指功能重建术	qū zhǐ gōng néng chóng jiàn shù	100
 区职工培训中心	qū zhí gōng péi xùn zhōng xīn	100
-祛止咳合剂市一	qū zhǐ ké hé jì shì yī	100
 屈指浅肌切除术	qū zhǐ qiǎn jī qiē chú shù	100
 屈肘功能重建术	qū zhǒu gōng néng chóng jiàn shù	100
 全病毒灭活疫苗	quán bìng dú miè huó yì miáo	100
@@ -194874,7 +194754,6 @@ sort: by_weight
 乳房肿物切除术	rǔ fáng zhǒng wù qiē chú shù	100
 乳杆菌活菌胶囊	rǔ gǎn jūn huó jūn jiāo náng	100
 乳果糖口服溶液	rǔ guǒ táng kǒu fú róng yè	100
-乳康口服液人民	rǔ kāng kǒu fú yè rén mín	100
 乳糜心包引流术	rǔ mí xīn bāo yǐn liú shù	100
 乳糜性心包积液	rǔ mí xìng xīn bāo jī yè	100
 乳宁胶囊石刁柏	rǔ níng jiāo náng shí diāo bǎi	100
@@ -194940,7 +194819,6 @@ sort: by_weight
 乳腺肿物穿刺术	rǔ xiàn zhǒng wù chuān cì shù	100
 乳腺肿物切除术	rǔ xiàn zhǒng wù qiē chú shù	100
 乳香风湿气雾剂	rǔ xiāng fēng shī qì wù jì	100
-乳消号胶囊省二	rǔ xiāo hào jiāo náng shěng èr	100
 乳牙预成冠修复	rǔ yá yù chéng guān xiū fù	100
 如意定喘片糖衣	rú yì dìng chuǎn piàn táng yī	100
 如意算盘打得响	rú yì suàn pán dǎ de xiǎng	100
@@ -195033,7 +194911,6 @@ sort: by_weight
 三号蛇胆川贝片	sān hào shé dǎn chuān bèi piàn	100
 三合激素注射液	sān hé jī sù zhù shè yè	100
 三踝开放性骨折	sān huái kāi fàng xìng gǔ zhé	100
-三黄颠倒散省二	sān huáng diān dǎo sàn shěng èr	100
 三级方程式赛车	sān jí fāng chéng shì sài chē	100
 三级医疗保健网	sān jí yī liáo bǎo jiàn wǎng	100
 三钾二枸橼酸铋	sān jiǎ èr jǔ yuán suān bì	100
@@ -195162,6 +195039,7 @@ sort: by_weight
 疝环充填式补片	shàn huán chōng tián shì bǔ piàn	100
 山梨醇单油酸酯	shān lí chún dān yóu suān zhǐ	100
 山梨酸及其钾盐	shān lí suān jí qí jiǎ yán	100
+山南西道节度使	shān nán xī dào jié dù shǐ	100
 疝囊高位结扎术	shàn náng gāo wèi jié zā shù	100
 膳食碳水化合物	shàn shí tàn shuǐ huà hé wù	100
 单县卫生防疫部	shàn xiàn wèi shēng fáng yì bù	100
@@ -195429,7 +195307,6 @@ sort: by_weight
 肾虚不固阴虚证	shèn xū bú gù yīn xū zhèng	100
 肾血管肌脂肪瘤	shèn xuè guǎn jī zhī fáng liú	100
 肾血管性高血压	shèn xuè guǎn xìng gāo xuè yā	100
-肾血宁胶囊省二	shèn xuè níng jiāo náng shěng èr	100
 深血栓性静脉炎	shēn xuè shuān xìng jìng mài yán	100
 肾炎康复糖衣片	shèn yán kāng fù táng yī piàn	100
 肾炎肾小球肾炎	shèn yán shèn xiǎo qiú shèn yán	100
@@ -195844,7 +195721,6 @@ sort: by_weight
 舒肝快胃丸水丸	shū gān kuài wèi wán shuǐ wán	100
 舒肝调气丸水丸	shū gān tiáo qì wán shuǐ wán	100
 舒筋活血定痛散	shū jīn huó xuè dìng tòng sàn	100
-舒筋止痛水省二	shū jīn zhǐ tòng shuǐ shěng èr	100
 庶可以见病知源	shù kě yǐ jiàn bìng zhī yuán	100
 输卵管妊娠流产	shū luǎn guǎn rèn shēn liú chǎn	100
 输卵管妊娠破裂	shū luǎn guǎn rèn shēn pò liè	100
@@ -196054,8 +195930,6 @@ sort: by_weight
 水杨酸苯酚贴膏	shuǐ yáng suān běn fēn tiē gāo	100
 水杨酸苯甲酸松	shuǐ yáng suān běn jiǎ suān sōng	100
 水杨酸苯佐卡因	shuǐ yáng suān běn zuǒ kǎ yīn	100
-水杨酸擦剂省立	shuǐ yáng suān cā jì shěng lì	100
-水杨酸搽剂省立	shuǐ yáng suān chá jì shěng lì	100
 水杨酸毒扁豆碱	shuǐ yáng suān dú biǎn dòu jiǎn	100
 水杨酸复合洗剂	shuǐ yáng suān fù hé xǐ jì	100
 水杨酸钠可可碱	shuǐ yáng suān nà kě kě jiǎn	100
@@ -196296,7 +196170,6 @@ sort: by_weight
 碳酸酐酶抑制剂	tàn suān gān méi yì zhì jì	100
 碳酸甲酯肉桂酯	tàn suān jiǎ zhǐ ròu guì zhǐ	100
 碳酸氢钠滴耳液	tàn suān qīng nà dī ěr yè	100
-碳酸氢钠粉协和	tàn suān qīng nà fěn xié hé	100
 碳酸氢钠注射液	tàn suān qīng nà zhù shè yè	100
 碳酸四氯乙叉酯	tàn suān sì lǜ yǐ chā zhǐ	100
 碳酸四氯乙烯酯	tàn suān sì lǜ yǐ xī zhǐ	100
@@ -196309,7 +196182,6 @@ sort: by_weight
 碳足迹追踪评价	tàn zú jì zhuī zōng píng jià	100
 唐菖蒲伯克氏菌	táng chāng pú bó kè shì jūn	100
 糖类碳水化合物	táng lèi tàn shuǐ huà hé wù	100
-糖络通胶囊人民	táng luò tōng jiāo náng rén mín	100
 糖尿病患者妊娠	táng niào bìng huàn zhě rèn shēn	100
 糖尿病酮酸血症	táng niào bìng tóng suān xuè zhèng	100
 糖皮质激素增加	táng pí zhì jī sù zēng jiā	100
@@ -196487,7 +196359,6 @@ sort: by_weight
 头部毛囊周围炎	tóu bù máo náng zhōu wéi yán	100
 头部乳头状皮炎	tóu bù rǔ tóu zhuàng pí yán	100
 头部伤口清创术	tóu bù shāng kǒu qīng chuàng shù	100
-头发洗剂号市皮	tóu fa xǐ jì hào shì pí	100
 透过经济看政治	tòu guò jīng jì kàn zhèng zhì	100
 透过生态看管理	tòu guò shēng tài kān guǎn lǐ	100
 透过问题看责任	tòu guò wèn tí kàn zé rèn	100
@@ -196904,6 +196775,7 @@ sort: by_weight
 午饭同伴综合征	wǔ fàn tóng bàn zōng hé zhēng	100
 五氟苯基化合物	wǔ fú běn jī huà hé wù	100
 五氟硫基苯甲醛	wǔ fú liú jī běn jiǎ quán	100
+武汉市甲康医院	wǔ hàn shì jiǎ kāng yī yuàn	100
 五号甲板室行动	wǔ hào jiǎ bǎn shì xíng dòng	100
 无患有司之不公	wú huàn yǒu sī zhī bù gōng	100
 五甲基环戊二烯	wǔ jiǎ jī huán wù èr xī	100
@@ -197524,7 +197396,6 @@ sort: by_weight
 硝酸异山梨醇酯	xiāo suān yì shān lí chún zhǐ	100
 硝酸异山梨酯片	xiāo suān yì shān lí zhǐ piàn	100
 硝酸异山梨脂片	xiāo suān yì shān lí zhī piàn	100
-硝酸银溶液市一	xiāo suān yín róng yè shì yī	100
 小腿残端修整术	xiǎo tuǐ cán duān xiū zhěng shù	100
 小腿多发性骨折	xiǎo tuǐ duō fā xìng gǔ zhé	100
 小腿假肢成人型	xiǎo tuǐ jiǎ zhī chéng rén xíng	100
@@ -197551,7 +197422,6 @@ sort: by_weight
 消炎解痛巴布膏	xiāo yán jiě tòng bā bù gāo	100
 消炎利胆片糖衣	xiāo yán lì dǎn piàn táng yī	100
 消炎利胆软胶囊	xiāo yán lì dǎn ruǎn jiāo náng	100
-消炎生肌膏人民	xiāo yán shēng jī gāo rén mín	100
 消炎止带外洗液	xiāo yán zhǐ dài wài xǐ yè	100
 消炎止咳口服液	xiāo yán zhǐ ké kǒu fú yè	100
 逍遥法外的方法	xiāo yáo fǎ wài de fāng fǎ	100
@@ -198027,7 +197897,6 @@ sort: by_weight
 血脉清片薄膜衣	xuè mài qīng piàn báo mó yī	100
 血脉荣卫之通塞	xuè mài róng wèi zhī tōng sāi	100
 血美安片薄膜衣	xuè měi ān piàn báo mó yī	100
-血尿灵合剂人民	xuè niào líng hé jì rén mín	100
 血凝仪专用试剂	xuè níng yí zhuān yòng shì jì	100
 血偏衰者则脉涩	xuè piān shuāi zhě zé mài sè	100
 血气毛细采血管	xuè qì máo xì cǎi xiě guǎn	100
@@ -198392,7 +198261,6 @@ sort: by_weight
 盐酸地卡因溶液	yán suān dì kǎ yīn róng yè	100
 盐酸地美索酯片	yán suān dì měi suǒ zhǐ piàn	100
 盐酸丁咯地尔片	yán suān dīng gē dì ěr piàn	100
-盐酸丁卡因附一	yán suān dīng kǎ yīn fù yī	100
 盐酸丁卡因胶浆	yán suān dīng kǎ yīn jiāo jiāng	100
 盐酸丁螺环酮片	yán suān dīng luó huán tóng piàn	100
 盐酸对氯苯丁胺	yán suān duì lǜ běn dīng àn	100
@@ -198480,7 +198348,6 @@ sort: by_weight
 盐酸吗啡控释片	yán suān mǎ fēi kòng shì piàn	100
 盐酸吗啡注射液	yán suān mǎ fēi zhù shè yè	100
 盐酸麻黄碱糖浆	yán suān má huáng jiǎn táng jiāng	100
-盐酸麻黄碱协和	yán suān má huáng jiǎn xié hé	100
 盐酸马普替林片	yán suān mǎ pǔ tì lín piàn	100
 盐酸毛果芸香碱	yán suān máo guǒ yún xiāng jiǎn	100
 盐酸美克洛嗪片	yán suān měi kè luò qín piàn	100
@@ -198560,7 +198427,6 @@ sort: by_weight
 盐酸小檗碱胶囊	yán suān xiǎo bò jiǎn jiāo náng	100
 盐酸缬更昔洛韦	yán suān xié gèng xī luò wéi	100
 盐酸乙胺丁醇片	yán suān yǐ àn dīng chún piàn	100
-盐酸异丙嗪附一	yán suān yì bǐng qín fù yī	100
 盐酸异可利定片	yán suān yì kě lì dìng piàn	100
 盐酸乙哌立松片	yán suān yǐ pài lì sōng piàn	100
 盐酸依匹斯汀片	yán suān yī pǐ sī tīng piàn	100
@@ -198627,11 +198493,7 @@ sort: by_weight
 氧化偶氮苯乙醚	yǎng huà ǒu dàn běn yǐ mí	100
 氧化偶氮化合物	yǎng huà ǒu dàn huà hé wù	100
 氧化羟基自由基	yǎng huà qiǎng jī zì yóu jī	100
-氧化锌擦剂市皮	yǎng huà xīn cā jì shì pí	100
-氧化锌擦剂协和	yǎng huà xīn cā jì xié hé	100
-氧化锌搽剂市一	yǎng huà xīn chá jì shì yī	100
 氧化锌丁香油酚	yǎng huà xīn dīng xiāng yóu fēn	100
-氧化锌油一七五	yǎng huà xīn yóu yī qī wǔ	100
 氧化性醇酸树脂	yǎng huà xìng chún suān shù zhī	100
 氧化焰和还原焰	yǎng huà yàn hé huán yuán yàn	100
 氧化樟脑注射液	yǎng huà zhāng nǎo zhù shè yè	100
@@ -199020,7 +198882,6 @@ sort: by_weight
 以深化中央巡视	yǐ shēn huà zhōng yāng xún shì	100
 益肾健胃口服液	yì shèn jiàn wèi kǒu fú yè	100
 益肾健腰口服液	yì shèn jiàn yāo kǒu fú yè	100
-益肾降糖饮人民	yì shèn jiàng táng yǐn rén mín	100
 一身尽发热而黄	yì shēn jìn fā rè ér huáng	100
 益肾蠲痹丸水丸	yì shèn juān bì wán shuǐ wán	100
 以什么样的方式	yǐ shén me yàng de fāng shì	100
@@ -199399,7 +199260,6 @@ sort: by_weight
 婴儿黏液性水肿	yīng ér nián yè xìng shuǐ zhǒng	100
 婴儿丘疹性皮炎	yīng ér qiū zhěn xìng pí yán	100
 婴儿手足搐搦症	yīng ér shǒu zú chù nuò zhèng	100
-婴儿爽身粉省立	yīng ér shuǎng shēn fěn shěng lì	100
 婴儿松软综合征	yīng ér sōng ruǎn zōng hé zhēng	100
 婴儿臀部肉芽肿	yīng ér tún bù ròu yá zhǒng	100
 婴儿型肾多囊病	yīng ér xíng shèn duō náng bìng	100
@@ -199770,10 +199630,8 @@ sort: by_weight
 掌骨开放性骨折	zhǎng gǔ kāi fàng xìng gǔ zhé	100
 掌骨肿瘤刮除术	zhǎng gǔ zhǒng liú guā chú shù	100
 掌筋膜纤维瘤病	zhǎng jīn mó xiān wéi liú bìng	100
-樟硫炉洗剂省皮	zhāng liú lú xǐ jì shěng pí	100
 掌挛缩病切除术	zhǎng luán suō bìng qiē chú shù	100
 樟脑水合氯醛酊	zhāng nǎo shuǐ hé lǜ quán dīng	100
-樟脑醑龙岩市一	zhāng nǎo xǔ lóng yán shì yī	100
 掌深动静脉损伤	zhǎng shēn dòng jìng mài sǔn shāng	100
 掌声指关节扭伤	zhǎng shēng zhǐ guān jié niǔ shāng	100
 张翼德怒鞭督邮	zhāng yì dé nù biān dū yóu	100
@@ -200051,8 +199909,6 @@ sort: by_weight
 止血宁片薄膜衣	zhǐ xuè níng piàn báo mó yī	100
 止血祛瘀明目片	zhǐ xuè qū yū míng mù piàn	100
 痔炎消片薄膜衣	zhì yán xiāo piàn báo mó yī	100
-止痒冷霜一七五	zhǐ yǎng lěng shuāng yī qī wǔ	100
-止痒消炎水省皮	zhǐ yǎng xiāo yán shuǐ shěng pí	100
 职业临床心理学	zhí yè lín chuáng xīn lǐ xué	100
 智欲圆而行欲方	zhì yù yuán ér xíng yù fāng	100
 支原体性尿道炎	zhī yuán tǐ xìng niào dào yán	100
@@ -200953,7 +200809,6 @@ sort: by_weight
 独此一家别无分号	dú cǐ yì jiā bié wú fēn hào	100
 独乐乐不如众乐乐	dú yuè lè bù rú zhòng yuè lè	100
 断章取义驴唇马嘴	duàn zhāng qǔ yì lǘ chún mǎ zuǐ	100
-对苯二甲酸二甲酯	duì běn èr jiǎ suān èr jiǎ zhǐ	100
 多分子层吸附理论	duō fēn zǐ céng xī fù lǐ lùn	100
 多劳多得少劳少得	duō láo duō dé shǎo láo shǎo dé	100
 多一事不如少一事	duō yí shì bù rú shǎo yí shì	100
@@ -201091,6 +200946,7 @@ sort: by_weight
 聚氯乙烯覆面胶带	jù lǜ yǐ xī fù miàn jiāo dài	100
 聚四氟乙烯滑动板	jù sì fú yǐ xī huá dòng bǎn	100
 聚氧乙烯烷基醇醚	jù yǎng yǐ xī wán jī chún mí	120
+枸橼酸钠二水合物	jǔ yuán suān nà èr shuǐ hé wù	100
 君子不立危墙之下	jūn zǐ bú lì wēi qiáng zhī xià	100
 君子一言驷马难追	jūn zǐ yì yán sì mǎ nán zhuī	100
 开链式鱼尾式喷射	kāi liàn shì yú wěi shì pēn shè	100
@@ -201116,6 +200972,7 @@ sort: by_weight
 良莠不齐鱼龙混杂	liáng yǒu bù qí yú lóng hùn zá	100
 磷酸二苯基异辛酯	lín suān èr běn jī yì xīn zhǐ	120
 邻乙氧基苯甲酰肼	lín yǐ yǎng jī běn jiǎ xiān jǐng	120
+六氟磷酸二苯碘鎓	liù fú lín suān èr běn diǎn wēng	100
 六基坑开挖与降水	liù jī kēng kāi wā yǔ jiàng shuǐ	100
 六苴含铜砂岩矿床	liù jū hán tóng shā yán kuàng chuáng	100
 流水不腐户枢不蠹	liú shuǐ bù fǔ hù shū bú dù	100
