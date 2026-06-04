@@ -51152,7 +51152,6 @@ sort: by_weight
 黏液杆菌属	nián yè gǎn jūn shǔ	1
 黏液蛞蝓科	nián yè kuò yú kē	1
 黏液球菌科	nián yè qiú jūn kē	1
-粘液球菌科	nián yè qiú jūn kē	1
 念珠凤仙花	niàn zhū fèng xiān huā	1
 念珠菊石科	niàn zhū jú shí kē	1
 念珠冷水花	niàn zhū lěng shuǐ huā	1
@@ -60720,6 +60719,7 @@ sort: by_weight
 瞻星锡伯鲶	zhān xīng xī bó nián	1
 展须野螟属	zhǎn xū yě míng shǔ	1
 展叶凤仙花	zhǎn yè fèng xiān huā	1
+粘液球菌科	zhān yè qiú jūn kē	1
 展羽假瘤蕨	zhǎn yǔ jiǎ liú jué	1
 詹札克鲸属	zhān zhá kè jīng shǔ	1
 展枝唐松草	zhǎn zhī táng sōng cǎo	1
@@ -64385,7 +64385,6 @@ sort: by_weight
 富妮灰蝶亚科	fù nī huī dié yà kē	1
 副泥鳅粘体虫	fù ní qiu zhān tǐ chóng	1
 副黏液病毒科	fù nián yè bìng dú kē	1
-副粘液病毒科	fù nián yè bìng dú kē	1
 腹瓢鰕虎鱼属	fù piáo xiā hǔ yú shǔ	1
 副球孢子菌属	fù qiú bāo zǐ jūn shǔ	1
 辐射海百合科	fú shè hǎi bǎi hé kē	1
@@ -64432,6 +64431,7 @@ sort: by_weight
 浮游蓝丝藻属	fú yóu lán sī zǎo shǔ	1
 副原腹吸鳅属	fù yuán fù xī qiū shǔ	1
 腹盏喉盘鱼属	fù zhǎn hóu pán yú shǔ	1
+副粘液病毒科	fù zhān yè bìng dú kē	1
 副直口朴丽鱼	fù zhí kǒu pǔ lì yú	1
 附肢炭壳菌属	fù zhī tàn ké jūn shǔ	1
 副朱里桑贝属	fù zhū lǐ sāng bèi shǔ	1
@@ -67555,8 +67555,6 @@ sort: by_weight
 黏胶球形菌科	nián jiāo qiú xíng jūn kē	1
 黏身索深鼬鱼	nián shēn suǒ shēn yòu yú	1
 黏液乳杆菌属	nián yè rǔ gǎn jūn shǔ	1
-粘液乳杆菌属	nián yè rǔ gǎn jūn shǔ	1
-粘液双边凹螺	nián yè shuāng biān āo luó	1
 捻转血矛线虫	niǎn zhuǎn xuè máo xiàn chóng	1
 鸟氨酸微菌属	niǎo ān suān wēi jūn shǔ	1
 鸟斑隆头丽鱼	niǎo bān lóng tóu lì yú	1
@@ -68406,8 +68404,6 @@ sort: by_weight
 施迈斯内果属	shī mài sī nèi guǒ shǔ	1
 施米德狮子鱼	shī mǐ dé shī zi yú	1
 食泥甲姬蜂属	shí ní jiǎ jī fēng shǔ	1
-嗜粘液蛞蝓科	shì nián yè kuò yú kē	1
-嗜粘液蛞蝓属	shì nián yè kuò yú shǔ	1
 噬脯氨酸菌属	shì pú ān suān jūn shǔ	1
 石墙乳杆菌属	shí qiáng rǔ gǎn jūn shǔ	1
 食芹岩雅罗鱼	shí qín yán yǎ luó yú	1
@@ -68471,6 +68467,8 @@ sort: by_weight
 始源大花蚤属	shǐ yuán dà huā zǎo shǔ	1
 始原灵猫兽属	shǐ yuán líng māo shòu shǔ	1
 始源小菊虎属	shǐ yuán xiǎo jú hǔ shǔ	1
+嗜粘液蛞蝓科	shì zhān yè kuò yú kē	1
+嗜粘液蛞蝓属	shì zhān yè kuò yú shǔ	1
 食植瓢虫亚科	shí zhí piáo chóng yà kē	1
 始中国羽龙属	shǐ zhōng guó yǔ lóng shǔ	1
 饰妆背斜眼鳚	shì zhuāng bèi xié yǎn wèi	1
@@ -70702,6 +70700,8 @@ sort: by_weight
 展鳍真巨口鱼	zhǎn qí zhēn jù kǒu yú	1
 詹氏直线脂鲤	zhān shì zhí xiàn zhī lǐ	1
 瞻星大陶乐鲶	zhān xīng dà táo lè nián	1
+粘液乳杆菌属	zhān yè rǔ gǎn jūn shǔ	1
+粘液双边凹螺	zhān yè shuāng biān āo luó	1
 展枝玉叶金花	zhǎn zhī yù yè jīn huā	1
 胀管玉叶金花	zhàng guǎn yù yè jīn huā	1
 张吉营锦州鸟	zhāng jí yíng jǐn zhōu niǎo	1
@@ -71509,10 +71509,10 @@ sort: by_weight
 副链肠锡叶吸虫	fù liàn cháng xī yè xī chóng	1
 覆裂云南金莲花	fù liè yún nán jīn lián huā	1
 副矛鳍石首鱼属	fù máo qí shí shǒu yú shǔ	1
-副粘液病毒亚科	fù nián yè bìng dú yà kē	1
 副三角锥齿兽属	fù sān jiǎo zhuī chǐ shòu shǔ	1
 富永沼银汉鱼属	fù yǒng zhǎo yín hàn yú shǔ	1
 腹疣柄牛肝菌属	fù yóu bǐng niú gān jūn shǔ	1
+副粘液病毒亚科	fù zhān yè bìng dú yà kē	1
 副爪哇闪皮蛇属	fù zhǎo wā shǎn pí shé shǔ	1
 伽马线形病毒科	gā mǎ xiàn xíng bìng dú kē	1
 盖氏小体石脂鲤	gài shì xiǎo tǐ shí zhī lǐ	1

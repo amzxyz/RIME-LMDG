@@ -1264,6 +1264,7 @@ sort: by_weight
 摆动负重相	bǎi dòng fù zhòng xiāng	100
 百度百家号	bǎi dù bǎi jiā hào	100
 百度百科中	bǎi dù bǎi kē zhōng	100
+百度的技术	bǎi dù de jì shù	100
 百度的搜索	bǎi dù de sōu suǒ	100
 白毒鹅膏菌	bái dú é gāo jūn	100
 百度研究院	bǎi dù yán jiū yuàn	100
@@ -2394,6 +2395,7 @@ sort: by_weight
 宝山区法院	bǎo shān qū fǎ yuàn	100
 宝山寺大殿	bǎo shān sì dà diàn	100
 报社的记者	bào shè de jì zhě	100
+宝生物技术	bǎo shēng wù jì shù	100
 宝世达集团	bǎo shì dá jí tuán	100
 宝石的颜色	bǎo shí de yán sè	100
 暴食的罪书	bào shí de zuì shū	100
@@ -2901,6 +2903,7 @@ sort: by_weight
 北京市小学	běi jīng shì xiǎo xué	100
 北京市宣武	běi jīng shì xuān wǔ	100
 北京市学校	běi jīng shì xué xiào	100
+北京市艺术	běi jīng shì yì shù	100
 北京十一中	běi jīng shí yī zhōng	100
 北京市饮食	běi jīng shì yǐn shí	100
 北京市语委	běi jīng shì yǔ wěi	100
@@ -4760,6 +4763,7 @@ sort: by_weight
 不定式短语	bú dìng shì duǎn yǔ	100
 不定项选择	bú dìng xiàng xuǎn zé	100
 不定向选择	bú dìng xiàng xuǎn zé	100
+不定形艺术	bú dìng xíng yì shù	100
 不定值大数	bú dìng zhí dà shù	100
 不懂不装懂	bù dǒng bù zhuāng dǒng	100
 不动产买卖	bú dòng chǎn mǎi mài	100
@@ -6635,6 +6639,7 @@ sort: by_weight
 产品和市场	chǎn pǐn hé shì chǎng	100
 产品和系统	chǎn pǐn hé xì tǒng	100
 产品和用户	chǎn pǐn hé yòng hù	100
+产品或技术	chǎn pǐn huò jì shù	100
 产品及方案	chǎn pǐn jí fāng àn	100
 产品及服务	chǎn pǐn jí fú wù	100
 产品及配件	chǎn pǐn jí pèi jiàn	100
@@ -7375,11 +7380,13 @@ sort: by_weight
 耖你的基巴	chào nǐ de jī bā	100
 超平面截面	chāo píng miàn jié miàn	100
 超期运作到	chāo qī yùn zuò dào	100
+超前的技术	chāo qián de jì shù	100
 超前的理念	chāo qián de lǐ niàn	100
 超前的设计	chāo qián de shè jì	100
 超前的思维	chāo qián de sī wéi	100
 超前的眼光	chāo qián de yǎn guāng	100
 超前的意识	chāo qián de yì shí	100
+超前沿技术	chāo qián yán jì shù	100
 超强台风级	chāo qiáng tái fēng jí	100
 超青春姐弟	chāo qīng chūn jiě dì	100
 朝青龙明德	cháo qīng lóng míng dé	100
@@ -9355,6 +9362,7 @@ sort: by_weight
 创新的工作	chuàng xīn de gōng zuò	100
 创新的过程	chuàng xīn de guò chéng	100
 创新的活力	chuàng xīn de huó lì	100
+创新的技术	chuàng xīn de jì shù	100
 创新的基因	chuàng xīn de jī yīn	100
 创新的精神	chuàng xīn de jīng shén	100
 创新的举措	chuàng xīn de jǔ cuò	100
@@ -9385,6 +9393,7 @@ sort: by_weight
 创新和创造	chuàng xīn hé chuàng zào	100
 创新和改变	chuàng xīn hé gǎi biàn	100
 创新和改革	chuàng xīn hé gǎi gé	100
+创新和技术	chuàng xīn hé jì shù	100
 创新和进步	chuàng xīn hé jìn bù	100
 创新和升级	chuàng xīn hé shēng jí	100
 创新和实践	chuàng xīn hé shí jiàn	100
@@ -9404,6 +9413,8 @@ sort: by_weight
 创新型城市	chuàng xīn xíng chéng shì	100
 创新型公司	chuàng xīn xíng gōng sī	100
 创新型国家	chuàng xīn xíng guó jiā	100
+创新性技术	chuàng xīn xìng jì shù	100
+创新型技术	chuàng xīn xíng jì shù	100
 创新型金融	chuàng xīn xíng jīn róng	100
 创新型经济	chuàng xīn xíng jīng jì	100
 创新型企业	chuàng xīn xíng qǐ yè	100
@@ -10129,7 +10140,7 @@ sort: by_weight
 从小养到大	cóng xiǎo yǎng dào dà	100
 从颜值上看	cóng yán zhí shàng kàn	100
 从央视离职	cóng yāng shì lí zhí	100
-从一重处断	cóng yì chóng chù duàn	100
+从一重处断	cóng yī chóng chù duàn	100
 从一而终也	cóng yī ér zhōng yě	100
 从一穷二白	cóng yī qióng èr bái	100
 从衣食住行	cóng yī shí zhù xíng	100
@@ -12255,12 +12266,21 @@ sort: by_weight
 德兰得尔表	dé lán dé ěr biǎo	100
 的老婆就是	de lǎo pó jiù shì	100
 的老师每天	de lǎo shī měi tiān	100
+得了艾滋病	dé le ài zī bìng	100
 得了白癜风	dé le bái diàn fēng	100
+得了白血病	dé le bái xuè bìng	100
+得了妇科病	dé le fù kē bìng	100
 得了高血压	dé le gāo xuè yā	100
 得了个外号	dé le gè wài hào	100
 得了灰指甲	dé le huī zhǐ jia	100
+得了肩周炎	dé le jiān zhōu yán	100
+得了精神病	dé le jīng shén bìng	100
+得了颈椎病	dé le jǐng zhuī bìng	100
+得了什么病	dé le shén me bìng	100
 得了失心疯	dé le shī xīn fēng	100
+得了糖尿病	dé le táng niào bìng	100
 得了抑郁症	dé le yì yù zhèng	100
+得了一种病	dé le yì zhǒng bìng	100
 得了脂肪肝	dé le zhī fáng gān	100
 得了重感冒	dé le zhòng gǎn mào	100
 德雷伯分类	dé léi bó fēn lèi	100
@@ -14184,6 +14204,7 @@ sort: by_weight
 定家小酥肉	dìng jiā xiǎo sū ròu	100
 丁家洲之战	dīng jiā zhōu zhī zhàn	100
 丁家庄南站	dīng jiā zhuāng nán zhàn	100
+顶尖的技术	dǐng jiān de jì shù	100
 顶尖的人才	dǐng jiān de rén cái	100
 顶尖的设计	dǐng jiān de shè jì	100
 丁坚地瀑布	dīng jiān dì pù bù	100
@@ -14581,6 +14602,7 @@ sort: by_weight
 东西方关系	dōng xi fāng guān xì	100
 东西方文化	dōng xi fāng wén huà	100
 东西方文明	dōng xi fāng wén míng	100
+东西方艺术	dōng xi fāng yì shù	100
 东西方中心	dōng xi fāng zhōng xīn	100
 东邪黄药师	dōng xié huáng yào shī	100
 洞穴震积岩	dòng xué zhèn jī yán	100
@@ -14961,6 +14983,7 @@ sort: by_weight
 独身主义者	dú shēn zhǔ yì zhě	100
 独生子女费	dú shēng zǐ nǚ fèi	100
 独生子女户	dú shēng zǐ nǚ hù	100
+独生子女证	dú shēng zǐ nǚ zhèng	100
 都市的霓虹	dū shì de ní hóng	100
 都市的人们	dū shì de rén men	100
 都市的童话	dū shì de tóng huà	100
@@ -15016,6 +15039,7 @@ sort: by_weight
 独特的机会	dú tè de jī huì	100
 独特的技能	dú tè de jì néng	100
 独特的技巧	dú tè de jì qiǎo	100
+独特的技术	dú tè de jì shù	100
 独特的记忆	dú tè de jì yì	100
 独特的价值	dú tè de jià zhí	100
 独特的剪裁	dú tè de jiǎn cái	100
@@ -17456,6 +17480,7 @@ sort: by_weight
 方法和程序	fāng fǎ hé chéng xù	100
 方法和措施	fāng fǎ hé cuò shī	100
 方法和公式	fāng fǎ hé gōng shì	100
+方法和技术	fāng fǎ hé jì shù	100
 方法和手段	fāng fǎ hé shǒu duàn	100
 方法和途径	fāng fǎ hé tú jìng	100
 方法与步骤	fāng fǎ yǔ bù zhòu	100
@@ -17476,6 +17501,7 @@ sort: by_weight
 仿佛若有光	fǎng fú ruò yǒu guāng	100
 防辐射眼镜	fáng fú shè yǎn jìng	100
 防腐蚀处理	fáng fǔ shí chǔ lǐ	100
+防腐蚀技术	fáng fǔ shí jì shù	100
 防腐蚀设计	fáng fǔ shí shè jì	100
 防腐蚀性能	fáng fǔ shí xìng néng	100
 防腐性能好	fáng fǔ xìng néng hǎo	100
@@ -17771,6 +17797,8 @@ sort: by_weight
 仿真棕榈树	fǎng zhēn zōng lǘ shù	100
 方正兰亭黑	fāng zhèng lán tíng hēi	100
 方正小标宋	fāng zhèng xiǎo biāo sòng	100
+防治艾滋病	fáng zhì ài zī bìng	120
+防止艾滋病	fáng zhǐ ài zī bìng	100
 防治病虫害	fáng zhì bìng chóng hài	100
 防止病虫害	fáng zhǐ bìng chóng hài	100
 防止并发症	fáng zhǐ bìng fā zhèng	120
@@ -17780,6 +17808,7 @@ sort: by_weight
 纺织产业园	fǎng zhī chǎn yè yuán	100
 方志出版社	fāng zhì chū bǎn shè	100
 纺织出版社	fǎng zhī chū bǎn shè	100
+防治传染病	fáng zhì chuán rǎn bìng	100
 放置的位置	fàng zhì de wèi zhì	100
 纺织等行业	fǎng zhī děng háng yè	100
 纺织服装类	fǎng zhī fú zhuāng lèi	100
@@ -17788,9 +17817,12 @@ sort: by_weight
 防止高血压	fáng zhǐ gāo xuè yā	100
 纺织工程师	fǎng zhī gōng chéng shī	100
 纺织工业部	fǎng zhī gōng yè bù	100
+防治冠心病	fáng zhì guān xīn bìng	120
+防止冠心病	fáng zhǐ guān xīn bìng	100
 纺织和服装	fǎng zhī hé fú zhuāng	100
 防止和克服	fáng zhǐ hé kè fú	100
 纺织化学品	fǎng zhī huà xué pǐn	100
+防治坏血病	fáng zhì huài xuè bìng	100
 防治荒漠化	fáng zhì huāng mò huà	100
 放置活性炭	fàng zhì huó xìng tàn	100
 纺织机械厂	fǎng zhī jī xiè chǎng	100
@@ -17800,10 +17832,13 @@ sort: by_weight
 防止虐畜会	fáng zhǐ nüè chù huì	100
 纺织品贸易	fǎng zhī pǐn mào yì	100
 纺织器材厂	fǎng zhī qì cái chǎng	100
+防治乳腺癌	fáng zhì rǔ xiàn ái	100
 纺织设计师	fǎng zhī shè jì shī	100
 防治水方案	fáng zhì shuǐ fāng àn	100
 防治水污染	fáng zhì shuǐ wū rǎn	100
 防止水污染	fáng zhǐ shuǐ wū rǎn	100
+防治糖尿病	fáng zhì táng niào bìng	120
+防止糖尿病	fáng zhǐ táng niào bìng	100
 放置洗衣机	fàng zhì xǐ yī jī	100
 纺织新材料	fǎng zhī xīn cái liào	100
 纺织艺术家	fǎng zhī yì shù jiā	100
@@ -17957,6 +17992,7 @@ sort: by_weight
 非电离辐射	fēi diàn lí fú shè	100
 沸点升高法	fèi diǎn shēng gāo fǎ	100
 非定式动词	fēi dìng shì dòng cí	100
+非定形艺术	fēi dìng xíng yì shù	100
 肺动脉闭锁	fèi dòng mài bì suǒ	100
 腓动脉损伤	féi dòng mài sǔn shāng	100
 肺动脉楔压	fèi dòng mài xiē yā	100
@@ -19467,6 +19503,7 @@ sort: by_weight
 附睾上韧带	fù gāo shàng rèn dài	100
 附睾下韧带	fù gāo xià rèn dài	100
 附睾阴囊瘘	fù gāo yīn náng lòu	100
+赋格的艺术	fù gé de yì shù	100
 伏格列波糖	fú gé liè bō táng	100
 富格林金币	fù gé lín jīn bì	100
 服枸杞根方	fú gǒu qǐ gēn fāng	100
@@ -19981,6 +20018,7 @@ sort: by_weight
 服务的公司	fú wù de gōng sī	100
 服务的行业	fú wù de háng yè	100
 服务的机会	fú wù de jī huì	100
+服务的技术	fú wù de jì shù	100
 服务的价格	fú wù de jià gé	100
 服务的价值	fú wù de jià zhí	100
 服务的精神	fú wù de jīng shén	100
@@ -20014,6 +20052,7 @@ sort: by_weight
 服务和保障	fú wù hé bǎo zhàng	100
 服务和产品	fú wù hé chǎn pǐn	100
 服务和管理	fú wù hé guǎn lǐ	100
+服务和技术	fú wù hé jì shù	100
 服务和体验	fú wù hé tǐ yàn	100
 服务和支持	fú wù hé zhī chí	100
 服务及产品	fú wù jí chǎn pǐn	100
@@ -20910,10 +20949,13 @@ sort: by_weight
 高超的工艺	gāo chāo de gōng yì	100
 高超的技能	gāo chāo de jì néng	100
 高超的技巧	gāo chāo de jì qiǎo	100
+高超的技术	gāo chāo de jì shù	100
 高超的技艺	gāo chāo de jì yì	100
 高超的球技	gāo chāo de qiú jì	100
 高超的武艺	gāo chāo de wǔ yì	100
 高超的演技	gāo chāo de yǎn jì	100
+高超的艺术	gāo chāo de yì shù	100
+高超的医术	gāo chāo de yī shù	100
 高超的智慧	gāo chāo de zhì huì	100
 高程控制点	gāo chéng kòng zhì diǎn	100
 高程控制网	gāo chéng kòng zhì wǎng	100
@@ -21145,6 +21187,7 @@ sort: by_weight
 搞迷信活动	gǎo mí xìn huó dòng	100
 高明的手段	gāo míng de shǒu duàn	100
 高明的医生	gāo míng de yī shēng	100
+高明的医术	gāo míng de yī shù	100
 高楠顺次郎	gāo nán shùn cì láng	100
 高能粒子流	gāo néng lì zǐ liú	100
 高能手办团	gāo néng shǒu bàn tuán	100
@@ -21301,6 +21344,7 @@ sort: by_weight
 高糖的食物	gāo táng de shí wù	100
 高糖高热量	gāo táng gāo rè liàng	100
 高特弗雷德	gāo tè fú léi dé	100
+搞题海战术	gǎo tí hǎi zhàn shù	100
 高体小沙丁	gāo tǐ xiǎo shā dīng	100
 高田真史帆	gāo tián zhēn shǐ fān	100
 高挑的身材	gāo tiǎo de shēn cái	100
@@ -21355,6 +21399,7 @@ sort: by_weight
 高效的工作	gāo xiào de gōng zuò	100
 高效的沟通	gāo xiào de gōu tōng	100
 高效的管理	gāo xiào de guǎn lǐ	100
+高效的技术	gāo xiào de jì shù	100
 高效的交通	gāo xiào de jiāo tōng	100
 高校的老师	gāo xiào de lǎo shī	100
 高校的领导	gāo xiào de lǐng dǎo	100
@@ -21426,6 +21471,7 @@ sort: by_weight
 高性能电机	gāo xìng néng diàn jī	100
 高性能轿车	gāo xìng néng jiào chē	100
 搞形式主义	gǎo xíng shì zhǔ yì	100
+搞行为艺术	gǎo xíng wéi yì shù	100
 搞形象工程	gǎo xíng xiàng gōng chéng	100
 高雄海洋星	gāo xióng hǎi yáng xīng	100
 高雄警备府	gāo xióng jǐng bèi fǔ	100
@@ -21442,6 +21488,7 @@ sort: by_weight
 高压变质带	gāo yā biàn zhì dài	100
 高雅的品味	gāo yǎ de pǐn wèi	100
 高雅的气质	gāo yǎ de qì zhì	100
+高雅的艺术	gāo yǎ de yì shù	100
 高雅海神蛤	gāo yǎ hǎi shén há	100
 高压钠灯泡	gāo yā nà dēng pào	100
 高压喷雾机	gāo yā pēn wù jī	100
@@ -21548,6 +21595,7 @@ sort: by_weight
 哥德黑金属	gē dé hēi jīn shǔ	100
 歌德式风格	gē dé shì fēng gé	100
 歌德式建筑	gē dé shì jiàn zhù	100
+歌德式艺术	gē dé shì yì shù	100
 割的双眼皮	gē de shuāng yǎn pí	100
 戈德斯通模	gē dé sī tōng mó	100
 歌德谈话录	gē dé tán huà lù	100
@@ -21823,6 +21871,7 @@ sort: by_weight
 各位小主们	gè wèi xiǎo zhǔ men	100
 各位置肌肉	gè wèi zhì jī ròu	100
 各文化传说	gè wén huà chuán shuō	100
+各文化艺术	gè wén huà yì shù	100
 各问题分类	gè wèn tí fēn lèi	100
 歌舞伎座塔	gē wǔ jì zuò tǎ	100
 各务原抚子	gè wù yuán fǔ zǐ	100
@@ -22236,6 +22285,7 @@ sort: by_weight
 更好地恢复	gèng hǎo de huī fù	100
 更好的机会	gèng hǎo de jī huì	100
 更好的记录	gèng hǎo de jì lù	100
+更好的技术	gèng hǎo de jì shù	100
 更好的记忆	gèng hǎo de jì yì	100
 更好的价格	gèng hǎo de jià gé	100
 更好的家庭	gèng hǎo de jiā tíng	100
@@ -22496,6 +22546,7 @@ sort: by_weight
 工程分析计	gōng chéng fēn xī jì	100
 工程概况表	gōng chéng gài kuàng biǎo	100
 工程概预算	gōng chéng gài yù suàn	100
+工程和技术	gōng chéng hé jì shù	100
 工程和数学	gōng chéng hé shù xué	100
 工程科学系	gōng chéng kē xué xì	100
 功成名就后	gōng chéng míng jiù hòu	100
@@ -22650,6 +22701,7 @@ sort: by_weight
 宫厩尹弃疾	gōng jiù yǐn qì jí	100
 工具和材料	gōng jù hé cái liào	100
 共聚合方程	gòng jù hé fāng chéng	100
+工具和技术	gōng jù hé jì shù	100
 工具和设备	gōng jù hé shè bèi	100
 工具和资源	gōng jù hé zī yuán	100
 工具型产品	gōng jù xíng chǎn pǐn	100
@@ -22734,6 +22786,7 @@ sort: by_weight
 巩乃斯林场	gǒng nǎi sī lín chǎng	100
 宫内避孕器	gōng nèi bì yùn qì	100
 功能更齐全	gōng néng gèng qí quán	100
+功能和技术	gōng néng hé jì shù	100
 功能和价值	gōng néng hé jià zhí	100
 功能和特点	gōng néng hé tè diǎn	100
 功能和特性	gōng néng hé tè xìng	100
@@ -22941,6 +22994,7 @@ sort: by_weight
 工艺等方面	gōng yì děng fāng miàn	100
 工艺工程师	gōng yì gōng chéng shī	100
 公益和慈善	gōng yì hé cí shàn	100
+工艺和技术	gōng yì hé jì shù	100
 工艺和设备	gōng yì hé shè bèi	100
 公益黑鬼油	gōng yì hēi guǐ yóu	100
 工艺技术员	gōng yì jì shù yuán	100
@@ -23807,6 +23861,7 @@ sort: by_weight
 管理和安全	guǎn lǐ hé ān quán	100
 管理和保护	guǎn lǐ hé bǎo hù	100
 管理和规划	guǎn lǐ hé guī huà	100
+管理和技术	guǎn lǐ hé jì shù	100
 管理和监督	guǎn lǐ hé jiān dū	100
 管理和监控	guǎn lǐ hé jiān kòng	100
 管理和教学	guǎn lǐ hé jiào xué	100
@@ -24198,6 +24253,7 @@ sort: by_weight
 光纤陀螺仪	guāng xiān tuó luó yí	100
 光纤预制棒	guāng xiān yù zhì bàng	100
 光相位共轭	guāng xiàng wèi gòng è	100
+光效应艺术	guāng xiào yìng yì shù	100
 光谐波发生	guāng xié bō fā shēng	100
 广新交易会	guǎng xīn jiāo yì huì	100
 光性矿物学	guāng xìng kuàng wù xué	100
@@ -25034,6 +25090,7 @@ sort: by_weight
 果实成熟时	guǒ shí chéng shú shí	100
 国史大辞典	guó shǐ dà cí diǎn	100
 过时的东西	guò shí de dōng xi	100
+过时的技术	guò shí de jì shù	100
 过世的母亲	guò shì de mǔ qīn	100
 过失的认定	guò shī de rèn dìng	100
 国士馆大学	guó shì guǎn dà xué	100
@@ -25109,6 +25166,7 @@ sort: by_weight
 过硬的本事	guò yìng de běn shì	100
 过硬的产品	guò yìng de chǎn pǐn	100
 过硬的技能	guò yìng de jì néng	100
+过硬的技术	guò yìng de jì shù	100
 过硬的能力	guò yìng de néng lì	100
 过硬的品质	guò yìng de pǐn zhì	100
 过硬的实力	guò yìng de shí lì	100
@@ -25651,6 +25709,7 @@ sort: by_weight
 行业成长性	háng yè chéng zhǎng xìng	100
 行业的精英	háng yè de jīng yīng	100
 行业和公司	háng yè hé gōng sī	100
+行业和技术	háng yè hé jì shù	100
 行业和领域	háng yè hé lǐng yù	100
 行业和企业	háng yè hé qǐ yè	100
 行业和市场	háng yè hé shì chǎng	100
@@ -28190,6 +28249,7 @@ sort: by_weight
 华为的产品	huá wéi de chǎn pǐn	100
 华为的成功	huá wéi de chéng gōng	100
 华为的冬天	huá wéi de dōng tiān	100
+华为的技术	huá wéi de jì shù	100
 华为的崛起	huá wéi de jué qǐ	100
 华为的麒麟	huá wéi de qí lín	100
 华为的荣耀	huá wéi de róng yào	100
@@ -29533,6 +29593,7 @@ sort: by_weight
 混合均匀后	hùn hé jūn yún hòu	100
 混合气过浓	hùn hé qì guò nóng	100
 混合气泡室	hùn hé qì pào shì	100
+混合式武术	hùn hé shì wǔ shù	100
 混合相伴式	hùn hé xiāng bàn shì	100
 混合型癫痫	hùn hé xíng diān xián	100
 混合性发绀	hùn hé xìng fā gàn	100
@@ -32330,6 +32391,7 @@ sort: by_weight
 监督检查室	jiān dū jiǎn chá shì	100
 监督式学习	jiān dū shì xué xí	100
 监督性监测	jiān dū xìng jiān cè	100
+尖端的技术	jiān duān de jì shù	100
 尖端的科技	jiān duān de kē jì	100
 尖端恐惧症	jiān duān kǒng jù zhèng	100
 剪短了头发	jiǎn duǎn le tóu fa	100
@@ -34263,6 +34325,7 @@ sort: by_weight
 仅几步之遥	jǐn jǐ bù zhī yáo	100
 近几场比赛	jìn jǐ chǎng bǐ sài	100
 禁忌的爱恋	jìn jì de ài liàn	100
+禁忌的魔术	jìn jì de mó shù	100
 紧急的事情	jǐn jí de shì qíng	100
 禁忌的游戏	jìn jì de yóu xì	100
 晋级第二轮	jìn jí dì èr lún	100
@@ -35539,6 +35602,7 @@ sort: by_weight
 经验关系式	jīng yàn guān xì shì	100
 经验和成果	jīng yàn hé chéng guǒ	100
 经验和技能	jīng yàn hé jì néng	100
+经验和技术	jīng yàn hé jì shù	100
 经验和教训	jīng yàn hé jiào xun	100
 经验和金钱	jīng yàn hé jīn qián	100
 经验和人脉	jīng yàn hé rén mài	100
@@ -35625,6 +35689,8 @@ sort: by_weight
 精湛的球技	jīng zhàn de qiú jì	100
 精湛的手艺	jīng zhàn de shǒu yì	100
 精湛的舞技	jīng zhàn de wǔ jì	100
+精湛的艺术	jīng zhàn de yì shù	100
+精湛的医术	jīng zhàn de yī shù	100
 京张路口北	jīng zhāng lù kǒu běi	100
 净账面价值	jìng zhàng miàn jià zhí	100
 景真八角亭	jǐng zhēn bā jiǎo tíng	100
@@ -37793,6 +37859,7 @@ sort: by_weight
 科技和工业	kē jì hé gōng yè	100
 科技和人才	kē jì hé rén cái	100
 科技和文化	kē jì hé wén huà	100
+科技和艺术	kē jì hé yì shù	100
 客机黑匣子	kè jī hēi xiá zi	100
 科技情报堂	kē jì qíng bào táng	100
 可即使如此	kě jí shǐ rú cǐ	100
@@ -38117,9 +38184,11 @@ sort: by_weight
 科学笃实处	kē xué dǔ shí chù	100
 科学方法史	kē xué fāng fǎ shǐ	100
 科学怪军团	kē xué guài jūn tuán	100
+科学和技术	kē xué hé jì shù	100
 科学和民主	kē xué hé mín zhǔ	100
 科学和人文	kē xué hé rén wén	100
 科学和数学	kē xué hé shù xué	100
+科学和艺术	kē xué hé yì shù	100
 科学幻想者	kē xué huàn xiǎng zhě	100
 科学记数法	kē xué jì shù fǎ	100
 科学技术馆	kē xué jì shù guǎn	100
@@ -40145,6 +40214,7 @@ sort: by_weight
 理念的世界	lǐ niàn de shì jiè	100
 理念的转变	lǐ niàn de zhuǎn biàn	100
 理念和方式	lǐ niàn hé fāng shì	100
+理念和技术	lǐ niàn hé jì shù	100
 理念和文化	lǐ niàn hé wén huà	100
 利尿的食物	lì niào de shí wù	100
 力诺活力素	lì nuò huó lì sù	100
@@ -41569,6 +41639,7 @@ sort: by_weight
 领先的产品	lǐng xiān de chǎn pǐn	100
 领先的地位	lǐng xiān de dì wèi	100
 领先的公司	lǐng xiān de gōng sī	100
+领先的技术	lǐng xiān de jì shù	100
 领先的教育	lǐng xiān de jiào yù	100
 领先的科技	lǐng xiān de kē jì	100
 领先的设计	lǐng xiān de shè jì	100
@@ -42520,6 +42591,7 @@ sort: by_weight
 漯河市政协	luò hé shì zhèng xié	100
 落合小夜里	luò hé xiǎo yè lǐ	100
 落后的国家	luò hòu de guó jiā	100
+落后的技术	luò hòu de jì shù	100
 落后的交通	luò hòu de jiāo tōng	100
 落后的农村	luò hòu de nóng cūn	100
 落后的思想	luò hòu de sī xiǎng	100
@@ -46564,6 +46636,7 @@ sort: by_weight
 能力的限制	néng lì de xiàn zhì	100
 能力的增长	néng lì de zēng zhǎng	100
 能力的证明	néng lì de zhèng míng	100
+能力和技术	néng lì hé jì shù	100
 能力和潜力	néng lì hé qián lì	100
 能力和素质	néng lì hé sù zhì	100
 能力和条件	néng lì hé tiáo jiàn	100
@@ -48473,6 +48546,7 @@ sort: by_weight
 批发和零售	pī fā hé líng shòu	100
 批发兼零售	pī fā jiān líng shòu	100
 批发与零售	pī fā yǔ líng shòu	100
+皮肤窗技术	pí fū chuāng jì shù	100
 皮肤的保养	pí fū de bǎo yǎng	100
 皮肤的变化	pí fū de biàn huà	100
 皮肤的代谢	pí fū de dài xiè	100
@@ -48809,6 +48883,7 @@ sort: by_weight
 品牌的优势	pǐn pái de yōu shì	100
 品牌的运营	pǐn pái de yùn yíng	100
 品牌的战略	pǐn pái de zhàn lüè	100
+品牌和技术	pǐn pái hé jì shù	100
 品牌和渠道	pǐn pái hé qú dào	100
 品牌和设计	pǐn pái hé shè jì	100
 品牌和市场	pǐn pái hé shì chǎng	100
@@ -49038,6 +49113,7 @@ sort: by_weight
 平台的研发	píng tái de yán fā	100
 平台的用户	píng tái de yòng hù	100
 平台的责任	píng tái de zé rèn	100
+平台和技术	píng tái hé jì shù	100
 平台和企业	píng tái hé qǐ yè	100
 平台和渠道	píng tái hé qú dào	100
 平台和资源	píng tái hé zī yuán	100
@@ -49961,6 +50037,7 @@ sort: by_weight
 企业的核心	qǐ yè de hé xīn	100
 企业的活力	qǐ yè de huó lì	100
 企业的机会	qǐ yè de jī huì	100
+企业的技术	qǐ yè de jì shù	100
 企业的角度	qǐ yè de jiǎo dù	100
 企业的精神	qǐ yè de jīng shén	100
 企业的竞争	qǐ yè de jìng zhēng	100
@@ -51807,6 +51884,7 @@ sort: by_weight
 青少年视力	qīng shào nián shì lì	100
 青少年事务	qīng shào nián shì wù	100
 青少年围棋	qīng shào nián wéi qí	100
+青少年武术	qīng shào nián wǔ shù	100
 青少年心理	qīng shào nián xīn lǐ	100
 青少年抑郁	qīng shào nián yì yù	100
 青少年之家	qīng shào nián zhī jiā	100
@@ -52150,6 +52228,7 @@ sort: by_weight
 球队的训练	qiú duì de xùn liàn	100
 球队的引援	qiú duì de yǐn yuán	100
 球队的战绩	qiú duì de zhàn jì	100
+球队的战术	qiú duì de zhàn shù	100
 球队的阵容	qiú duì de zhèn róng	100
 球队的中场	qiú duì de zhōng chǎng	100
 球队的主场	qiú duì de zhǔ chǎng	100
@@ -53337,6 +53416,7 @@ sort: by_weight
 人才的招聘	rén cái de zhāo pìn	100
 人才的支持	rén cái de zhī chí	100
 人才等资源	rén cái děng zī yuán	100
+人才和技术	rén cái hé jì shù	100
 人才和企业	rén cái hé qǐ yè	100
 人才和团队	rén cái hé tuán duì	100
 人才和资金	rén cái hé zī jīn	100
@@ -54360,8 +54440,10 @@ sort: by_weight
 软骨溶解症	ruǎn gǔ róng jiě zhèng	100
 软骨移植物	ruǎn gǔ yí zhí wù	100
 软骨鱼亚纲	ruǎn gǔ yú yà gāng	100
+软光刻技术	ruǎn guāng kè jì shù	100
 软核处理器	ruǎn hé chǔ lǐ qì	100
 软化的黄油	ruǎn huà de huáng yóu	100
+软件和技术	ruǎn jiàn hé jì shù	100
 软件和算法	ruǎn jiàn hé suàn fǎ	100
 软件即服务	ruǎn jiàn jí fú wù	100
 软件及服务	ruǎn jiàn jí fú wù	100
@@ -56248,6 +56330,7 @@ sort: by_weight
 设备和材料	shè bèi hé cái liào	100
 设备和产品	shè bèi hé chǎn pǐn	100
 设备和工艺	shè bèi hé gōng yì	100
+设备和技术	shè bèi hé jì shù	100
 设备和人员	shè bèi hé rén yuán	100
 设备和设施	shè bèi hé shè shī	100
 设备和网络	shè bèi hé wǎng luò	100
@@ -56377,6 +56460,7 @@ sort: by_weight
 涉及的范围	shè jí de fàn wéi	100
 涉及的风险	shè jí de fēng xiǎn	100
 涉及的行业	shè jí de háng yè	100
+涉及的技术	shè jí de jì shù	100
 涉及的金额	shè jí de jīn é	100
 涉及的内容	shè jí de nèi róng	100
 涉及的人物	shè jí de rén wù	100
@@ -56394,6 +56478,7 @@ sort: by_weight
 设计和工艺	shè jì hé gōng yì	100
 设计和管理	shè jì hé guǎn lǐ	100
 设计和规划	shè jì hé guī huà	100
+设计和技术	shè jì hé jì shù	100
 设计和建设	shè jì hé jiàn shè	100
 设计和建造	shè jì hé jiàn zào	100
 设计和建筑	shè jì hé jiàn zhù	100
@@ -56402,6 +56487,7 @@ sort: by_weight
 设计和实现	shè jì hé shí xiàn	100
 设计和销售	shè jì hé xiāo shòu	100
 设计和研发	shè jì hé yán fā	100
+设计和艺术	shè jì hé yì shù	100
 设计和营销	shè jì hé yíng xiāo	100
 设计和应用	shè jì hé yìng yòng	100
 设计和制作	shè jì hé zhì zuò	100
@@ -56567,6 +56653,7 @@ sort: by_weight
 摄影器材城	shè yǐng qì cái chéng	100
 摄影器材展	shè yǐng qì cái zhǎn	100
 摄影是减法	shè yǐng shì jiǎn fǎ	100
+摄影是艺术	shè yǐng shì yì shù	100
 射影线性群	shè yǐng xiàn xìng qún	100
 摄影与录像	shè yǐng yǔ lù xiàng	100
 摄影与摄像	shè yǐng yǔ shè xiàng	100
@@ -56722,6 +56809,7 @@ sort: by_weight
 深厚的功力	shēn hòu de gōng lì	100
 深厚的关系	shēn hòu de guān xì	100
 深厚的积淀	shēn hòu de jī diàn	100
+深厚的技术	shēn hòu de jì shù	100
 深厚的经验	shēn hòu de jīng yàn	100
 深厚的历史	shēn hòu de lì shǐ	100
 深厚的内功	shēn hòu de nèi gōng	100
@@ -56898,6 +56986,7 @@ sort: by_weight
 什么是现实	shén me shì xiàn shí	100
 什么是心理	shén me shì xīn lǐ	100
 什么是信息	shén me shì xìn xī	100
+什么是艺术	shén me shì yì shù	100
 什么是营销	shén me shì yíng xiāo	100
 什么是永恒	shén me shì yǒng héng	100
 什么是有趣	shén me shì yǒu qù	100
@@ -57461,6 +57550,7 @@ sort: by_weight
 生活和时代	shēng huó hé shí dài	100
 生活和事业	shēng huó hé shì yè	100
 生活和思想	shēng huó hé sī xiǎng	100
+生活和艺术	shēng huó hé yì shù	100
 生活和饮食	shēng huó hé yǐn shí	100
 生活和娱乐	shēng huó hé yú lè	100
 生活或工作	shēng huó huò gōng zuò	100
@@ -60172,6 +60262,8 @@ sort: by_weight
 使用的功能	shǐ yòng de gōng néng	100
 使用的剂量	shǐ yòng de jì liàng	100
 实用的技能	shí yòng de jì néng	100
+使用的技术	shǐ yòng de jì shù	100
+实用的技术	shí yòng de jì shù	100
 实用的角度	shí yòng de jiǎo dù	100
 实用的课程	shí yòng de kè chéng	100
 实用的空间	shí yòng de kōng jiān	100
@@ -61128,6 +61220,7 @@ sort: by_weight
 数据标注工	shù jù biāo zhù gōng	100
 数据的收集	shù jù de shōu jí	100
 数据防泄漏	shù jù fáng xiè lòu	100
+数据和技术	shù jù hé jì shù	100
 数据和计算	shù jù hé jì suàn	100
 数据和事实	shù jù hé shì shí	100
 数据和算法	shù jù hé suàn fǎ	100
@@ -62710,6 +62803,7 @@ sort: by_weight
 思想的形成	sī xiǎng de xíng chéng	100
 思想和精神	sī xiǎng hé jīng shén	100
 思想和情感	sī xiǎng hé qíng gǎn	100
+思想和艺术	sī xiǎng hé yì shù	100
 思想家李贽	sī xiǎng jiā lǐ zhì	100
 似橡胶弹性	sì xiàng jiāo tán xìng	100
 四象生八卦	sì xiàng shēng bā guà	100
@@ -63005,6 +63099,7 @@ sort: by_weight
 苏联地质部	sū lián dì zhì bù	100
 苏联国籍法	sū lián guó jí fǎ	100
 苏联海运部	sū lián hǎi yùn bù	100
+苏联核技术	sū lián hé jì shù	100
 苏联解体时	sū lián jiě tǐ shí	100
 苏联近卫军	sū lián jìn wèi jūn	100
 苏联经济史	sū lián jīng jì shǐ	100
@@ -63860,44 +63955,6 @@ sort: by_weight
 抬头的瞬间	tái tóu de shùn jiān	100
 抬头举颏法	tái tóu jǔ kē fǎ	100
 台湾阿里山	tái wān ā lǐ shān	100
-台湾半导体	tái wān bàn dǎo tǐ	100
-台湾编舞家	tái wān biān wǔ jiā	100
-台湾插画家	tái wān chā huà jiā	100
-台湾出版家	tái wān chū bǎn jiā	100
-台湾慈善家	tái wān cí shàn jiā	100
-台湾雕刻家	tái wān diāo kè jiā	100
-台湾雕塑家	tái wān diāo sù jiā	100
-台湾丁公藤	tái wān dīng gōng téng	100
-台湾短翅鸫	tái wān duǎn chì dōng	100
-台湾短翅莺	tái wān duǎn chì yīng	100
-台湾发明家	tái wān fā míng jiā	100
-台湾法学家	tái wān fǎ xué jiā	100
-台湾翻译家	tái wān fān yì jiā	100
-台湾钢琴家	tái wān gāng qín jiā	100
-台湾黄鳝藤	tái wān huáng shàn téng	100
-台湾建筑奖	tái wān jiàn zhù jiǎng	100
-台湾教育家	tái wān jiào yù jiā	100
-台湾金马奖	tái wān jīn mǎ jiǎng	100
-台湾金曲奖	tái wān jīn qǔ jiǎng	100
-台湾金融家	tái wān jīn róng jiā	100
-台湾金钟奖	tái wān jīn zhōng jiǎng	100
-台湾精品奖	tái wān jīng pǐn jiǎng	100
-台湾科学家	tái wān kē xué jiā	100
-台湾评论家	tái wān píng lùn jiā	100
-台湾企业家	tái wān qǐ yè jiā	100
-台湾设计奖	tái wān shè jì jiǎng	100
-台湾声乐家	tái wān shēng yuè jiā	100
-台湾史学家	tái wān shǐ xué jiā	100
-台湾收藏家	tái wān shōu cáng jiā	100
-台湾书法家	tái wān shū fǎ jiā	100
-台湾书画家	tái wān shū huà jiā	100
-台湾思想家	tái wān sī xiǎng jiā	100
-台湾陶艺家	tái wān táo yì jiā	100
-台湾艺术家	tái wān yì shù jiā	100
-台湾油画家	tái wān yóu huà jiā	100
-台湾哲学家	tái wān zhé xué jiā	100
-台湾政治家	tái wān zhèng zhì jiā	100
-台湾指挥家	tái wān zhǐ huī jiā	100
 太王四神记	tài wáng sì shén jì	100
 太微不足道	tài wēi bù zú dào	100
 太微右垣二	tài wēi yòu yuán èr	100
@@ -64704,6 +64761,7 @@ sort: by_weight
 体育场北门	tǐ yù chǎng běi mén	100
 体育场围网	tǐ yù chǎng wéi wǎng	100
 体育和旅游	tǐ yù hé lǚ yóu	100
+体育和艺术	tǐ yù hé yì shù	100
 体育和娱乐	tǐ yù hé yú lè	100
 体育活动家	tǐ yù huó dòng jiā	100
 体育界人士	tǐ yù jiè rén shì	100
@@ -65963,6 +66021,7 @@ sort: by_weight
 统一的规则	tǒng yī de guī zé	100
 统一的国家	tǒng yī de guó jiā	100
 统一的货币	tǒng yī de huò bì	100
+统一的技术	tǒng yī de jì shù	100
 统一的价格	tǒng yī de jià gé	100
 统一的目标	tǒng yī de mù biāo	100
 统一的培训	tǒng yī de péi xùn	100
@@ -68558,6 +68617,7 @@ sort: by_weight
 文化和文明	wén huà hé wén míng	100
 文化和习俗	wén huà hé xí sú	100
 文化和信仰	wén huà hé xìn yǎng	100
+文化和艺术	wén huà hé yì shù	100
 文化和娱乐	wén huà hé yú lè	100
 文化和知识	wén huà hé zhī shi	100
 文化和自然	wén huà hé zì rán	100
@@ -68778,6 +68838,7 @@ sort: by_weight
 文学的力量	wén xué de lì liàng	100
 文学的魅力	wén xué de mèi lì	100
 文学革命论	wén xué gé mìng lùn	100
+文学和艺术	wén xué hé yì shù	100
 文学批评史	wén xué pī píng shǐ	100
 文学艺术界	wén xué yì shù jiè	100
 文学与人生	wén xué yú rén shēng	100
@@ -71137,6 +71198,7 @@ sort: by_weight
 细腻的感情	xì nì de gǎn qíng	100
 细腻的画面	xì nì de huà miàn	100
 细腻的肌肤	xì nì de jī fū	100
+细腻的技术	xì nì de jì shù	100
 细腻的口感	xì nì de kǒu gǎn	100
 细腻的描写	xì nì de miáo xiě	100
 细腻的内心	xì nì de nèi xīn	100
@@ -72113,6 +72175,7 @@ sort: by_weight
 娴熟的动作	xián shú de dòng zuò	100
 娴熟的技能	xián shú de jì néng	100
 娴熟的技巧	xián shú de jì qiǎo	100
+娴熟的技术	xián shú de jì shù	100
 娴熟的技艺	xián shú de jì yì	100
 娴熟的手法	xián shú de shǒu fǎ	100
 弦数者多热	xián shù zhě duō rè	100
@@ -74090,6 +74153,7 @@ sort: by_weight
 邪气盛则实	xié qì shèng zé shí	100
 携枪流浪汉	xié qiāng liú làng hàn	100
 蟹去脉冲星	xiè qù mài chōng xīng	100
+协商的技术	xié shāng de jì shù	100
 协商式民主	xié shāng shì mín zhǔ	100
 写上我的名	xiě shàng wǒ de míng	100
 邪神的呼唤	xié shén de hū huàn	100
@@ -74785,6 +74849,7 @@ sort: by_weight
 信息的度量	xìn xī de dù liàng	100
 信息的收集	xìn xī de shōu jí	100
 信息的译码	xìn xī de yì mǎ	100
+信息和技术	xìn xī hé jì shù	100
 信息和通信	xìn xī hé tōng xìn	100
 信息和知识	xìn xī hé zhī shi	100
 信息和资源	xìn xī hé zī yuán	100
@@ -75573,6 +75638,7 @@ sort: by_weight
 胸横突间肌	xiōng héng tū jiān jī	100
 雄厚的背景	xióng hòu de bèi jǐng	100
 雄厚的财力	xióng hòu de cái lì	100
+雄厚的技术	xióng hòu de jì shù	100
 雄厚的实力	xióng hòu de shí lì	100
 雄厚的师资	xióng hòu de shī zī	100
 雄厚的资本	xióng hòu de zī běn	100
@@ -76938,6 +77004,7 @@ sort: by_weight
 研发部经理	yán fā bù jīng lǐ	100
 研发和测试	yán fā hé cè shì	100
 研发和创新	yán fā hé chuàng xīn	100
+研发和技术	yán fā hé jì shù	100
 研发和设计	yán fā hé shè jì	100
 研发和销售	yán fā hé xiāo shòu	100
 研发和运营	yán fā hé yùn yíng	100
@@ -78315,6 +78382,7 @@ sort: by_weight
 业务的拓展	yè wù de tuò zhǎn	100
 业务和产品	yè wù hé chǎn pǐn	100
 业务和管理	yè wù hé guǎn lǐ	100
+业务和技术	yè wù hé jì shù	100
 业务交换点	yè wù jiāo huàn diǎn	100
 也无可厚非	yě wú kě hòu fēi	100
 也无可奈何	yě wú kě nài hé	100
@@ -78948,7 +79016,7 @@ sort: by_weight
 异化粒灰岩	yì huà lì huī yán	100
 一化三改造	yí huà sān gǎi zào	100
 一画胜千言	yí huà shèng qiān yán	100
-一划一重天	yí huà yì chóng tiān	100
+一划一重天	yí huà yī chóng tiān	100
 一花一世界	yì huā yí shì jiè	100
 一花一天堂	yì huā yì tiān táng	100
 一画值千言	yí huà zhí qiān yán	100
@@ -79667,6 +79735,7 @@ sort: by_weight
 艺术的真谛	yì shù de zhēn dì	100
 艺术的真实	yì shù de zhēn shí	100
 艺术地再现	yì shù dì zài xiàn	100
+艺术和技术	yì shù hé jì shù	100
 艺术和建筑	yì shù hé jiàn zhù	100
 艺术和科技	yì shù hé kē jì	100
 艺术和科学	yì shù hé kē xué	100
@@ -79827,6 +79896,7 @@ sort: by_weight
 一万种快乐	yí wàn zhǒng kuài lè	100
 以往的比赛	yǐ wǎng de bǐ sài	100
 以往的活动	yǐ wǎng de huó dòng	100
+以往的技术	yǐ wǎng de jì shù	100
 以往的经历	yǐ wǎng de jīng lì	100
 以王的名义	yǐ wáng de míng yì	100
 遗忘的誓言	yí wàng de shì yán	100
@@ -80839,6 +80909,7 @@ sort: by_weight
 银月桂叶奖	yín yuè guì yè jiǎng	100
 音乐和电影	yīn yuè hé diàn yǐng	100
 音乐和舞蹈	yīn yuè hé wǔ dǎo	100
+音乐和艺术	yīn yuè hé yì shù	100
 银月湖子爵	yín yuè hú zǐ jué	100
 音乐家肖像	yīn yuè jiā xiào xiàng	100
 音乐他律论	yīn yuè tā lǜ lùn	100
@@ -81238,6 +81309,7 @@ sort: by_weight
 应用程序域	yìng yòng chéng xù yù	100
 英勇的战士	yīng yǒng de zhàn shì	100
 应用和功能	yìng yòng hé gōng néng	100
+应用和技术	yìng yòng hé jì shù	100
 应用和推广	yìng yòng hé tuī guǎng	100
 应用及服务	yìng yòng jí fú wù	100
 应用技术型	yìng yòng jì shù xíng	100
@@ -83672,6 +83744,7 @@ sort: by_weight
 远离负能量	yuǎn lí fù néng liàng	100
 远离过敏原	yuǎn lí guò mǐn yuán	100
 远离过敏源	yuǎn lí guò mǐn yuán	100
+原理和技术	yuán lǐ hé jì shù	100
 元力活性炭	yuán lì huó xìng tàn	100
 原理及特点	yuán lǐ jí tè diǎn	100
 远离居民区	yuǎn lí jū mín qū	100
@@ -85046,6 +85119,7 @@ sort: by_weight
 扎实的底盘	zhā shi de dǐ pán	100
 扎实的功底	zhā shi de gōng dǐ	100
 扎实的工作	zhā shi de gōng zuò	100
+扎实的技术	zhā shi de jì shù	100
 扎实的剧本	zhā shi de jù běn	100
 扎实的演技	zhā shi de yǎn jì	100
 扎实的用料	zhā shi de yòng liào	100
@@ -85198,12 +85272,14 @@ sort: by_weight
 战略的眼光	zhàn lüè de yǎn guāng	100
 战略的制定	zhàn lüè de zhì dìng	100
 战略和规划	zhàn lüè hé guī huà	100
+战略和战术	zhàn lüè hé zhàn shù	100
 战略忽悠局	zhàn lüè hū yōu jú	100
 战略新兴板	zhàn lüè xīn xīng bǎn	100
 战略性重组	zhàn lüè xìng chóng zǔ	100
 战略性反攻	zhàn lüè xìng fǎn gōng	100
 战略性新兴	zhàn lüè xìng xīn xīng	100
 战略研究院	zhàn lüè yán jiū yuàn	100
+战略与战术	zhàn lüè yǔ zhàn shù	100
 战略钟模型	zhàn lüè zhōng mó xíng	100
 战马工作室	zhàn mǎ gōng zuò shì	100
 沾满了鲜血	zhān mǎn le xiān xuè	100
@@ -85473,6 +85549,7 @@ sort: by_weight
 张网捕星光	zhāng wǎng bǔ xīng guāng	100
 张卫健饰演	zhāng wèi jiàn shì yǎn	100
 张文祥刺马	zhāng wén xiáng cì mǎ	100
+掌握的技术	zhǎng wò de jì shù	100
 掌握的资源	zhǎng wò de zī yuán	100
 掌握和运用	zhǎng wò hé yùn yòng	100
 掌握了知识	zhǎng wò le zhī shi	100
@@ -86253,6 +86330,7 @@ sort: by_weight
 真正的人性	zhēn zhèng de rén xìng	100
 真正的伤害	zhēn zhèng de shāng hài	100
 真正的绅士	zhēn zhèng de shēn shì	100
+真正的武术	zhēn zhèng de wǔ shù	100
 真正的无线	zhēn zhèng de wú xiàn	100
 真正的现实	zhēn zhèng de xiàn shí	100
 真正的学者	zhēn zhèng de xué zhě	100
@@ -87475,6 +87553,7 @@ sort: by_weight
 智能化变革	zhì néng huà biàn gé	100
 智能化编制	zhì néng huà biān zhì	100
 智能化程度	zhì néng huà chéng dù	100
+智能化技术	zhì néng huà jì shù	100
 智能化家居	zhì néng huà jiā jū	100
 智能化监测	zhì néng huà jiān cè	100
 智能化升级	zhì néng huà shēng jí	100
@@ -87676,6 +87755,7 @@ sort: by_weight
 知识工作者	zhī shí gōng zuò zhě	100
 只是过客呀	zhǐ shì guò kè ya	100
 知识和方法	zhī shi hé fāng fǎ	100
+知识和技术	zhī shi hé jì shù	100
 知识和经验	zhī shi hé jīng yàn	100
 知识和理解	zhī shi hé lǐ jiě	100
 知识和能力	zhī shi hé néng lì	100
@@ -87717,6 +87797,7 @@ sort: by_weight
 知识型员工	zhī shi xíng yuán gōng	100
 知是行之始	zhī shì xíng zhī shǐ	100
 知识与创新	zhī shi yǔ chuàng xīn	100
+知识与技术	zhī shi yǔ jì shù	100
 知识与经验	zhī shi yǔ jīng yàn	100
 知识与能力	zhī shi yǔ néng lì	100
 知识与生活	zhī shi yǔ shēng huó	100
@@ -88225,6 +88306,7 @@ sort: by_weight
 中国的时区	zhōng guó de shí qū	100
 中国的石油	zhōng guó de shí yóu	100
 中国的统一	zhōng guó de tǒng yī	100
+中国的武术	zhōng guó de wǔ shù	100
 中国的校服	zhōng guó de xiào fú	100
 中国的姓氏	zhōng guó de xìng shì	100
 中国的优势	zhōng guó de yōu shì	100
@@ -89677,6 +89759,8 @@ sort: by_weight
 撞色的设计	zhuàng sè de shè jì	100
 庄生晓迷糊	zhuāng shēng xiǎo mí hu	100
 装饰材料城	zhuāng shì cái liào chéng	100
+装饰风艺术	zhuāng shì fēng yì shù	100
+装饰派艺术	zhuāng shì pài yì shù	100
 壮士十年归	zhuàng shì shí nián guī	100
 装饰与罪恶	zhuāng shì yǔ zuì è	100
 装饰者模式	zhuāng shì zhě mó shì	100
@@ -89924,6 +90008,7 @@ sort: by_weight
 资本的注入	zī běn de zhù rù	100
 资本的助推	zī běn de zhù tuī	100
 资本和产业	zī běn hé chǎn yè	100
+资本和技术	zī běn hé jì shù	100
 资本和劳动	zī běn hé láo dòng	100
 资本还原值	zī běn huán yuán zhí	100
 资本或股本	zī běn huò gǔ běn	100
@@ -90182,6 +90267,7 @@ sort: by_weight
 资金管理岗	zī jīn guǎn lǐ gǎng	100
 资金管理权	zī jīn guǎn lǐ quán	100
 紫金国际台	zǐ jīn guó jì tái	100
+资金和技术	zī jīn hé jì shù	100
 资金和人才	zī jīn hé rén cái	100
 资金和资源	zī jīn hé zī yuán	100
 紫金红葫芦	zǐ jīn hóng hú lu	100
@@ -92008,6 +92094,7 @@ sort: by_weight
 爱上她的理由	ài shàng tā de lǐ yóu	100
 爱上一匹野马	ài shàng yì pǐ yě mǎ	100
 爱上有妇之夫	ài shàng yǒu fù zhī fū	100
+爱生活的艺术	ài shēng huó de yì shù	100
 矮生长蒴苣苔	ǎi shēng zhǎng shuò jù tái	100
 矮生紫背金盘	ǎi shēng zǐ bèi jīn pán	100
 爱时代少年团	ài shí dài shào nián tuán	100
@@ -92376,6 +92463,7 @@ sort: by_weight
 奥尔米茨条约	ào ěr mǐ cí tiáo yuē	100
 奥尔拴菲方程	ào ěr shuān fēi fāng chéng	100
 奥佛豪塞效应	ào fó háo sāi xiào yìng	100
+奥富二氏技术	ào fù èr shì jì shù	100
 奥富二氏试验	ào fù èr shì shì yàn	100
 奥哈二氏试验	ào hā èr shì shì yàn	100
 傲娇的大魔王	ào jiāo de dà mó wáng	100
@@ -94313,6 +94401,7 @@ sort: by_weight
 表面不均匀性	biǎo miàn bù jūn yún xìng	100
 表面等离激元	biǎo miàn děng lí jī yuán	100
 表面等离子体	biǎo miàn děng lí zǐ tǐ	100
+表面改性技术	biǎo miàn gǎi xìng jì shù	100
 表面光滑平整	biǎo miàn guāng huá píng zhěng	100
 表面光洁度好	biǎo miàn guāng jié dù hǎo	100
 表面光鲜亮丽	biǎo miàn guāng xiān liàng lì	100
@@ -94322,7 +94411,9 @@ sort: by_weight
 表面静电喷塑	biǎo miàn jìng diàn pēn sù	100
 表面平整光滑	biǎo miàn píng zhěng guāng huá	100
 表面特性记述	biǎo miàn tè xìng jì shù	100
+表面贴装技术	biǎo miàn tiē zhuāng jì shù	100
 表面涂布不匀	biǎo miàn tú bù bù yún	100
+表面涂覆技术	biǎo miàn tú fù jì shù	100
 表面细纤维化	biǎo miàn xì xiān wéi huà	100
 表面张力系数	biǎo miàn zhāng lì xì shù	100
 标明有效期限	biāo míng yǒu xiào qī xiàn	100
@@ -94661,6 +94752,7 @@ sort: by_weight
 勃起硬度等级	bó qǐ yìng dù děng jí	100
 博让二氏反应	bó ràng èr shì fǎn yìng	100
 博让二氏杆菌	bó ràng èr shì gǎn jūn	100
+博让二氏技术	bó ràng èr shì jì shù	100
 博让二氏现象	bó ràng èr shì xiàn xiàng	100
 般若波罗蜜多	bō rě bō luó mì duō	100
 伯仁由我而死	bó rén yóu wǒ ér sǐ	100
@@ -94696,6 +94788,7 @@ sort: by_weight
 博益出版集团	bó yì chū bǎn jí tuán	100
 播音主持培训	bō yīn zhǔ chí péi xùn	100
 播音主持艺考	bō yīn zhǔ chí yì kǎo	100
+播音主持艺术	bō yīn zhǔ chí yì shù	100
 播音主持专业	bō yīn zhǔ chí zhuān yè	100
 拨云锭滴眼液	bō yún dìng dī yǎn yè	100
 波兹曼熵公式	bō zī màn shāng gōng shì	100
@@ -96362,6 +96455,7 @@ sort: by_weight
 尝起来像鸡肉	cháng qǐ lái xiàng jī ròu	100
 长期两地分居	cháng qī liǎng dì fēn jū	100
 长期稳健增值	cháng qī wěn jiàn zēng zhí	100
+长期演进技术	cháng qī yǎn jìn jì shù	100
 长崎医科大学	cháng qí yī kē dà xué	100
 长期抑制作用	cháng qī yì zhì zuò yòng	100
 长期应付帐款	cháng qī yīng fù zhàng kuǎn	100
@@ -97141,6 +97235,7 @@ sort: by_weight
 承兴国际控股	chéng xīng guó jì kòng gǔ	100
 乘性线性泛函	chéng xìng xiàn xìng fàn hán	100
 橙胸口孵非鲫	chéng xiōng kǒu fū fēi jì	100
+程序监定技术	chéng xù jiān dìng jì shù	100
 程序设计范型	chéng xù shè jì fàn xíng	100
 程序设计实践	chéng xù shè jì shí jiàn	100
 程序升温脱附	chéng xù shēng wēn tuō fù	100
@@ -98005,6 +98100,7 @@ sort: by_weight
 刺客信条枭雄	cì kè xìn tiáo xiāo xióng	100
 磁控管真空计	cí kòng guǎn zhēn kōng jì	100
 磁控溅射镀膜	cí kòng jiàn shè dù mó	100
+磁控溅射技术	cí kòng jiàn shè jì shù	100
 磁空气动力学	cí kōng qì dòng lì xué	100
 次连续可微的	cì lián xù kě wēi de	100
 次临界反应堆	cì lín jiè fǎn yìng duī	100
@@ -100337,6 +100433,7 @@ sort: by_weight
 电力安装工程	diàn lì ān zhuāng gōng chéng	100
 电力安装公司	diàn lì ān zhuāng gōng sī	100
 电力处理数据	diàn lì chǔ lǐ shù jù	100
+电力电子技术	diàn lì diàn zǐ jì shù	100
 电力电子器件	diàn lì diàn zǐ qì jiàn	100
 电力电子装置	diàn lì diàn zǐ zhuāng zhì	100
 电力调度中心	diàn lì diào dù zhōng xīn	100
@@ -101339,6 +101436,7 @@ sort: by_weight
 顿河哥萨克人	dùn hé gē sà kè rén	100
 顿河集团军群	dùn hé jí tuán jūn qún	100
 敦化南路一段	dūn huà nán lù yí duàn	100
+敦煌壁画艺术	dūn huáng bì huà yì shù	100
 敦煌乌鲁木齐	dūn huáng wū lǔ mù qí	100
 敦霍尔德城堡	dūn huò ěr dé chéng bǎo	100
 敦君与女朋友	dūn jūn yǔ nǚ péng you	100
@@ -101442,6 +101540,7 @@ sort: by_weight
 多兰二氏抗体	duō lán èr shì kàng tǐ	100
 多兰二氏试验	duō lán èr shì shì yàn	100
 多兰冷溶血素	duō lán lěng róng xuè sù	100
+多路复用技术	duō lù fù yòng jì shù	100
 多洛米蒂山脉	duō luò mǐ dì shān mài	100
 堕落者的复仇	duò luò zhě de fù chóu	100
 堕落之血事件	duò luò zhī xuè shì jiàn	100
@@ -103239,6 +103338,7 @@ sort: by_weight
 飞跃式的进步	fēi yuè shì de jìn bù	100
 非匀相催化剂	fēi yún xiāng cuī huà jì	100
 非甾体抗炎药	fēi zāi tǐ kàng yán yào	100
+肺脏介入技术	fèi zàng jiè rù jì shù	100
 非增重排函数	fēi zēng zhòng pái hán shù	100
 非战角壳灰介	fēi zhàn jiǎo ké huī jiè	100
 非真实感绘制	fēi zhēn shí gǎn huì zhì	100
@@ -104154,6 +104254,7 @@ sort: by_weight
 腹主动脉硬化	fù zhǔ dòng mài yìng huà	100
 辅助控制通气	fǔ zhù kòng zhì tōng qì	100
 副助理国务卿	fù zhù lǐ guó wù qīng	100
+辅助生殖技术	fǔ zhù shēng zhí jì shù	100
 辅助生殖医疗	fǔ zhù shēng zhí yī liáo	100
 辅助生殖中心	fǔ zhù shēng zhí zhōng xīn	100
 付诸实际行动	fù zhū shí jì xíng dòng	100
@@ -105410,7 +105511,7 @@ sort: by_weight
 各种妇科炎症	gè zhǒng fù kē yán zhèng	100
 各种各样的花	gè zhǒng gè yàng de huā	100
 各种各样的事	gè zhǒng gè yàng de shì	100
-各种花里胡哨	gè zhǒng huā lǐ hú shào	100
+各种花里胡哨	gè zhǒng huā li hú shào	100
 各种化学试剂	gè zhǒng huà xué shì jì	100
 各种化学物质	gè zhǒng huà xué wù zhì	100
 各种流言蜚语	gè zhǒng liú yán fēi yǔ	100
@@ -106205,6 +106306,7 @@ sort: by_weight
 古典主义建筑	gǔ diǎn zhǔ yì jiàn zhù	100
 古典主义时期	gǔ diǎn zhǔ yì shí qī	100
 古典主义文学	gǔ diǎn zhǔ yì wén xué	100
+古典主义艺术	gǔ diǎn zhǔ yì yì shù	100
 古典主义音乐	gǔ diǎn zhǔ yì yīn yuè	100
 古典自由主义	gǔ diǎn zì yóu zhǔ yì	100
 固定床反应器	gù dìng chuáng fǎn yìng qì	100
@@ -107410,6 +107512,7 @@ sort: by_weight
 国际象棋术语	guó jì xiàng qí shù yǔ	100
 国际象棋协会	guó jì xiàng qí xié huì	100
 国际象棋游戏	guó jì xiàng qí yóu xì	100
+国际象棋战术	guó jì xiàng qí zhàn shù	100
 国际象棋中局	guó jì xiàng qí zhōng jú	100
 国际形势变化	guó jì xíng shì biàn huà	100
 国际刑事法庭	guó jì xíng shì fǎ tíng	100
@@ -107934,6 +108037,7 @@ sort: by_weight
 海洋科学集刊	hǎi yáng kē xué jí kān	100
 海洋缺氧事件	hǎi yáng quē yǎng shì jiàn	100
 海洋生产总值	hǎi yáng shēng chǎn zǒng zhí	100
+海洋石油技术	hǎi yáng shí yóu jì shù	120
 海洋石油平台	hǎi yáng shí yóu píng tái	100
 海洋新兴产业	hǎi yáng xīn xīng chǎn yè	100
 海洋巡防总局	hǎi yáng xún fáng zǒng jú	100
@@ -108405,6 +108509,7 @@ sort: by_weight
 合冲三次曲线	hé chōng sān cì qū xiàn	100
 河出书房新社	hé chū shū fáng xīn shè	100
 合穿一条裤子	hé chuān yì tiáo kù zi	100
+核磁共振技术	hé cí gòng zhèn jì shù	120
 鹤大高速公路	hè dà gāo sù gōng lù	100
 河道整治工程	hé dào zhěng zhì gōng chéng	100
 河道综合整治	hé dào zōng hé zhěng zhì	100
@@ -108428,6 +108533,7 @@ sort: by_weight
 赫尔维茨公式	hè ěr wéi cí gōng shì	100
 赫尔维茨矩阵	hè ěr wéi cí jǔ zhèn	100
 赫尔血红蛋白	hè ěr xuè hóng dàn bái	100
+核反应堆技术	hé fǎn yìng duī jì shù	100
 核反应堆控制	hé fǎn yìng duī kòng zhì	100
 核反应堆列表	hé fǎn yìng duī liè biǎo	100
 合肥叉车总厂	hé féi chā chē zǒng chǎng	100
@@ -109156,6 +109262,7 @@ sort: by_weight
 弘扬新风正气	hóng yáng xīn fēng zhèng qì	100
 弘扬延安精神	hóng yáng yán ān jīng shén	100
 弘扬沂蒙精神	hóng yáng yí méng jīng shén	100
+弘扬中华武术	hóng yáng zhōng huá wǔ shù	100
 红叶碧桃的花	hóng yè bì táo de huā	100
 弘毅号火星车	hóng yì hào huǒ xīng chē	100
 红与黑的碰撞	hóng yǔ hēi de pèng zhuàng	120
@@ -109488,6 +109595,7 @@ sort: by_weight
 琥珀酰合成酶	hǔ pò xiān hé chéng méi	100
 湖泊星罗棋布	hú pō xīng luó qí bù	100
 呼气潮气容积	hū qì cháo qì róng jī	100
+呼气负压技术	hū qì fù yā jì shù	100
 呼气末肺容量	hū qì mò fèi róng liàng	100
 呼气末氧分压	hū qì mò yǎng fēn yā	100
 呼气末氧浓度	hū qì mò yǎng nóng dù	100
@@ -114290,6 +114398,7 @@ sort: by_weight
 竞业禁止条款	jìng yè jìn zhǐ tiáo kuǎn	100
 竞业禁止协议	jìng yè jìn zhǐ xié yì	100
 竞业禁止义务	jìng yè jìn zhǐ yì wù	100
+精液冷冻技术	jīng yè lěng dòng jì shù	100
 景业名邦集团	jǐng yè míng bāng jí tuán	100
 精液囊肿抽吸	jīng yè náng zhǒng chōu xī	100
 竞业限制条款	jìng yè xiàn zhì tiáo kuǎn	100
@@ -114379,6 +114488,7 @@ sort: by_weight
 精准脱贫攻坚	jīng zhǔn tuō pín gōng jiān	100
 精子成活率低	jīng zǐ chéng huó lǜ dī	100
 精子精液异常	jīng zǐ jīng yè yì cháng	100
+精子冷冻技术	jīng zǐ lěng dòng jì shù	100
 精子质量下降	jīng zǐ zhì liàng xià jiàng	100
 井组动态分析	jǐng zǔ dòng tài fēn xī	120
 静坐常思己过	jìng zuò cháng sī jǐ guò	100
@@ -115067,6 +115177,7 @@ sort: by_weight
 卡拉比丘空间	kǎ lā bǐ qiū kōng jiān	100
 卡拉杰克模型	kǎ lā jié kè mó xíng	100
 喀喇昆仑山脉	kā lǎ kūn lún shān mài	100
+卡赖二氏技术	kǎ lài èr shì jì shù	100
 卡劳二氏症状	kǎ láo èr shì zhèng zhuàng	100
 喀里多尼亚岛	kā lǐ duō ní yà dǎo	100
 卡利贩毒集团	kǎ lì fàn dú jí tuán	100
@@ -115398,6 +115509,7 @@ sort: by_weight
 看看喜不喜欢	kàn kàn xǐ bù xǐ huan	100
 看快乐大本营	kàn kuài lè dà běn yíng	100
 看了一部电影	kàn le yí bù diàn yǐng	100
+坎马二氏技术	kǎn mǎ èr shì jì shù	100
 看陌生的风景	kàn mò shēng de fēng jǐng	100
 看男人的眼光	kàn nán rén de yǎn guāng	100
 看能不能进去	kàn néng bù néng jìn qù	100
@@ -116402,6 +116514,7 @@ sort: by_weight
 快舟运载火箭	kuài zhōu yùn zài huǒ jiàn	100
 快滋生反应器	kuài zī shēng fǎn yìng qì	100
 宽大的办公桌	kuān dà de bàn gōng zhuō	100
+宽带去偶技术	kuān dài qù ǒu jì shù	100
 宽带隙半导体	kuān dài xì bàn dǎo tǐ	100
 款冬花各三两	kuǎn dōng huā gè sān liǎng	100
 髋关节半脱位	kuān guān jié bàn tuō wèi	100
@@ -116719,6 +116832,7 @@ sort: by_weight
 浪漫主义诗歌	làng màn zhǔ yì shī gē	100
 浪漫主义诗人	làng màn zhǔ yì shī rén	100
 浪漫主义文学	làng màn zhǔ yì wén xué	100
+浪漫主义艺术	làng màn zhǔ yì yì shù	100
 浪漫主义音乐	làng màn zhǔ yì yīn yuè	100
 朗缪尔膜天平	lǎng móu ěr mó tiān píng	100
 琅岐闽江大桥	láng qí mǐn jiāng dà qiáo	100
@@ -117203,6 +117317,7 @@ sort: by_weight
 礼失而求诸野	lǐ shī ér qiú zhū yě	100
 里施二氏细胞	lǐ shī èr shì xì bāo	100
 历史发展机遇	lì shǐ fā zhǎn jī yù	100
+理士国际技术	lǐ shì guó jì jì shù	100
 利氏汉法词典	lì shì hàn fǎ cí diǎn	100
 利时集团控股	lì shí jí tuán kòng gǔ	100
 立式加工中心	lì shì jiā gōng zhōng xīn	100
@@ -117213,6 +117328,7 @@ sort: by_weight
 利什尼扬斯基	lì shí ní yáng sī jī	100
 历史人物故事	lì shǐ rén wù gù shi	100
 历史人物肖像	lì shǐ rén wù xiào xiàng	100
+历史上的武术	lì shǐ shàng de wǔ shù	100
 历史上的宪法	lì shǐ shàng de xiàn fǎ	100
 砺石商业评论	lì shí shāng yè píng lùn	100
 历史唯物主义	lì shǐ wéi wù zhǔ yì	100
@@ -117402,6 +117518,7 @@ sort: by_weight
 利兹艺术学院	lì zī yì shù xué yuàn	100
 离子抑制色谱	lí zǐ yì zhì sè pǔ	100
 利兹音乐学院	lì zī yīn yuè xué yuàn	100
+离子注入技术	lí zǐ zhù rù jì shù	100
 粒子转移反应	lì zǐ zhuǎn yí fǎn yìng	100
 立足本职岗位	lì zú běn zhí gǎng wèi	100
 立足检察职能	lì zú jiǎn chá zhí néng	100
@@ -118591,6 +118708,7 @@ sort: by_weight
 伦基夫克鲁赫	lún jī fū kè lǔ hè	100
 轮机工程学院	lún jī gōng chéng xué yuàn	100
 轮机工程专业	lún jī gōng chéng zhuān yè	100
+论科学与艺术	lùn kē xué yǔ yì shù	100
 伦理利己主义	lún lǐ lì jǐ zhǔ yì	100
 伦理社会主义	lún lǐ shè huì zhǔ yì	100
 伦理自然主义	lún lǐ zì rán zhǔ yì	100
@@ -119017,6 +119135,7 @@ sort: by_weight
 脉冲式多普勒	mài chōng shì duō pǔ lè	100
 脉冲式中子源	mài chōng shì zhōng zǐ yuán	100
 脉冲星计时阵	mài chōng xīng jì shí zhèn	100
+脉冲振荡技术	mài chōng zhèn dàng jì shù	100
 迈出的第一步	mài chū de dì yī bù	100
 迈出的每一步	mài chū de měi yí bù	100
 迈出的一大步	mài chū de yí dà bù	100
@@ -119866,6 +119985,7 @@ sort: by_weight
 闵行体育公园	mǐn háng tǐ yù gōng yuán	100
 闵行文化公园	mǐn háng wén huà gōng yuán	100
 敏惠恭和元妃	mǐn huì gōng hé yuán fēi	100
+民间剪纸艺术	mín jiān jiǎn zhǐ yì shù	100
 民间借贷案件	mín jiān jiè dài àn jiàn	100
 民间借贷公司	mín jiān jiè dài gōng sī	100
 民间借贷关系	mín jiān jiè dài guān xì	100
@@ -121547,6 +121667,7 @@ sort: by_weight
 女性主义神学	nǚ xìng zhǔ yì shén xué	100
 女性主义书籍	nǚ xìng zhǔ yì shū jí	100
 女性主义文学	nǚ xìng zhǔ yì wén xué	100
+女性主义艺术	nǚ xìng zhǔ yì yì shù	100
 女性主义运动	nǚ xìng zhǔ yì yùn dòng	100
 女性主义哲学	nǚ xìng zhǔ yì zhé xué	100
 女性主义主题	nǚ xìng zhǔ yì zhǔ tí	100
@@ -123592,6 +123713,7 @@ sort: by_weight
 轻钢龙骨吊顶	qīng gāng lóng gǔ diào dǐng	100
 轻钢龙骨隔墙	qīng gāng lóng gǔ gé qiáng	100
 清高宗继皇后	qīng gāo zōng jì huáng hòu	100
+轻工生物技术	qīng gōng shēng wù jì shù	100
 轻工业部标准	qīng gōng yè bù biāo zhǔn	120
 氰钴胺素缺乏	qíng gǔ àn sù quē fá	100
 情归阿拉巴马	qíng guī ā lā bā mǎ	100
@@ -124184,6 +124306,7 @@ sort: by_weight
 全丰中央广场	quán fēng zhōng yāng guǎng chǎng	100
 全福立交桥东	quán fú lì jiāo qiáo dōng	100
 全覆装甲骑兵	quán fù zhuāng jiǎ qí bīng	100
+全攻全守战术	quán gōng quán shǒu zhàn shù	100
 全攻全守足球	quán gōng quán shǒu zú qiú	100
 颧骨颧弓骨折	quán gǔ quán gōng gǔ zhé	100
 权贵资本主义	quán guì zī běn zhǔ yì	100
@@ -124445,6 +124568,7 @@ sort: by_weight
 缺乏可操作性	quē fá kě cāo zuò xìng	100
 缺乏事实根据	quē fá shì shí gēn jù	100
 缺乏事实依据	quē fá shì shí yī jù	100
+缺区补救技术	quē qū bǔ jiù jì shù	100
 缺什么补什么	quē shén me bǔ shén me	100
 确实出乎意料	què shí chū hū yì liào	100
 缺项三角级数	quē xiàng sān jiǎo jí shù	100
@@ -125077,6 +125201,7 @@ sort: by_weight
 人体轻伤鉴定	rén tǐ qīng shāng jiàn dìng	100
 人体生理功能	rén tǐ shēng lǐ gōng néng	100
 人体生殖系统	rén tǐ shēng zhí xì tǒng	100
+人体塑化技术	rén tǐ sù huà jì shù	100
 人体特异功能	rén tǐ tè yì gōng néng	100
 人体五脏六腑	rén tǐ wǔ zàng liù fǔ	100
 人体新陈代谢	rén tǐ xīn chén dài xiè	100
@@ -125238,6 +125363,7 @@ sort: by_weight
 溶剂非溶剂法	róng jì fēi róng jì fǎ	100
 容积辅助通气	róng jī fǔ zhù tōng qì	100
 容积控制通气	róng jī kòng zhì tōng qì	100
+容积再现技术	róng jī zài xiàn jì shù	100
 容积支持通气	róng jī zhī chí tōng qì	100
 溶胶原纤维酶	róng jiāo yuán xiān wéi méi	100
 溶解槽卸料管	róng jiě cáo xiè liào guǎn	100
@@ -126857,6 +126983,7 @@ sort: by_weight
 身教胜于言教	shēn jiào shèng yú yán jiào	100
 身教重于言传	shēn jiào zhòng yú yán chuán	100
 身教重于言教	shēn jiào zhòng yú yán jiào	100
+神经义肢技术	shén jīng yì zhī jì shù	100
 神鹫号鱼雷艇	shén jiù hào yú léi tǐng	100
 肾开放性损伤	shèn kāi fàng xìng sǔn shāng	100
 肾开窍于二阴	shèn kāi qiào yú èr yīn	100
@@ -126980,6 +127107,7 @@ sort: by_weight
 申索平衡基金	shēn suǒ píng héng jī jīn	100
 申塔林斯基区	shēn tǎ lín sī jī qū	100
 神探福尔摩斯	shén tàn fú ěr mó sī	100
+渗碳制钢技术	shèn tàn zhì gāng jì shù	100
 身体被掏空了	shēn tǐ bèi tāo kōng le	100
 身体表浅异物	shēn tǐ biǎo qiǎn yì wù	100
 身体出现不适	shēn tǐ chū xiàn bú shì	100
@@ -127346,6 +127474,7 @@ sort: by_weight
 省委老干部局	shěng wěi lǎo gàn bù jú	100
 生物安全等级	shēng wù ān quán děng jí	100
 生物百科图鉴	shēng wù bǎi kē tú jiàn	100
+生物辨识技术	shēng wù biàn shí jì shù	100
 生物虫害防治	shēng wù chóng hài fáng zhì	100
 生物的多样性	shēng wù de duō yàng xìng	100
 生物地质化学	shēng wù dì zhì huà xué	100
@@ -127376,6 +127505,7 @@ sort: by_weight
 生物粘结灰岩	shēng wù nián jié huī yán	100
 生物试验中心	shēng wù shì yàn zhōng xīn	100
 生物水准基点	shēng wù shuǐ zhǔn jī diǎn	100
+生物塑化技术	shēng wù sù huà jì shù	100
 生物碎屑灰岩	shēng wù suì xiè huī yán	100
 生物土壤结皮	shēng wù tǔ rǎng jié pí	100
 生物无机化学	shēng wù wú jī huà xué	100
@@ -128468,6 +128598,7 @@ sort: by_weight
 湿式电除尘器	shī shì diàn chú chén qì	100
 实时动态测量	shí shí dòng tài cè liáng	100
 实施动态管理	shí shī dòng tài guǎn lǐ	100
+实时动态技术	shí shí dòng tài jì shù	100
 实时动态监测	shí shí dòng tài jiān cè	100
 实时动态监控	shí shí dòng tài jiān kòng	100
 誓师动员大会	shì shī dòng yuán dà huì	100
@@ -132091,6 +132222,7 @@ sort: by_weight
 通鉴纪事本末	tōng jiàn jì shì běn mò	100
 同江铁路大桥	tóng jiāng tiě lù dà qiáo	100
 同晶型混合物	tóng jīng xíng hùn hé wù	100
+通孔插装技术	tōng kǒng chā zhuāng jì shù	100
 铜矿指示植物	tóng kuàng zhǐ shì zhí wù	100
 铜蓝蛋白测定	tóng lán dàn bái cè dìng	100
 同乐饮食集团	tóng lè yǐn shí jí tuán	100
@@ -133205,16 +133337,9 @@ sort: by_weight
 网友众说纷纭	wǎng yǒu zhòng shuō fēn yún	100
 网域名称系统	wǎng yù míng chēng xì tǒng	100
 网宇实体系统	wǎng yǔ shí tǐ xì tǒng	100
-王源的女朋友	wáng yuán de nǚ péng you	100
 王源和王俊凯	wáng yuán hé wáng jùn kǎi	100
 望园西里小区	wàng yuán xī lǐ xiǎo qū	100
 王源易烊千玺	wáng yuán yì yáng qiān xǐ	100
-王岳伦和李湘	wáng yuè lún hé lǐ xiāng	100
-王者荣耀妲己	wáng zhě róng yào dá jǐ	100
-王者荣耀大乔	wáng zhě róng yào dà qiáo	100
-王者荣耀李白	wáng zhě róng yào lǐ bái	100
-王者荣耀小乔	wáng zhě róng yào xiǎo qiáo	100
-王者荣耀虞姬	wáng zhě róng yào yú jī	100
 王政复辟时期	wáng zhèng fù bì shí qī	100
 旺中媒体集团	wàng zhōng méi tǐ jí tuán	100
 网状结缔组织	wǎng zhuàng jié dì zǔ zhī	100
@@ -133745,6 +133870,7 @@ sort: by_weight
 位移互等定理	wèi yí hù děng dìng lǐ	100
 唯一拿得出手	wéi yī ná de chū shǒu	100
 卫衣女中长款	wèi yī nǚ zhōng cháng kuǎn	100
+为艺术而艺术	wéi yì shù ér yì shù	100
 唯一析因定理	wéi yī xī yīn dìng lǐ	100
 唯一析因整环	wéi yī xī yīn zhěng huán	100
 位移型铁电体	wèi yí xíng tiě diàn tǐ	100
@@ -133832,6 +133958,7 @@ sort: by_weight
 文化学园大学	wén huà xué yuán dà xué	100
 文华影片公司	wén huá yǐng piàn gōng sī	100
 文华影业公司	wén huá yǐng yè gōng sī	100
+文化与纯艺术	wén huà yǔ chún yì shù	100
 文化源远流长	wén huà yuán yuǎn liú cháng	100
 文化殖民主义	wén huà zhí mín zhǔ yì	100
 稳健货币政策	wěn jiàn huò bì zhèng cè	100
@@ -135539,6 +135666,7 @@ sort: by_weight
 现代主义设计	xiàn dài zhǔ yì shè jì	100
 现代主义诗人	xiàn dài zhǔ yì shī rén	100
 现代主义文学	xiàn dài zhǔ yì wén xué	100
+现代主义艺术	xiàn dài zhǔ yì yì shù	100
 现代主义音乐	xiàn dài zhǔ yì yīn yuè	100
 现代主义作家	xiàn dài zhǔ yì zuò jiā	100
 现代资本主义	xiàn dài zī běn zhǔ yì	100
@@ -135804,6 +135932,7 @@ sort: by_weight
 纤维素水合物	xiān wéi sù shuǐ hé wù	100
 纤维素衍生物	xiān wéi sù yǎn shēng wù	100
 纤维素样坏死	xiān wéi sù yàng huài sǐ	100
+显微外科技术	xiǎn wēi wài kē jì shù	100
 显微血管外科	xiǎn wēi xuè guǎn wài kē	100
 显微照相装置	xiǎn wēi zhào xiàng zhuāng zhì	100
 纤维织布流槽	xiān wéi zhī bù liú cáo	100
@@ -136312,6 +136441,7 @@ sort: by_weight
 象征主义画作	xiàng zhēng zhǔ yì huà zuò	100
 象征主义诗人	xiàng zhēng zhǔ yì shī rén	100
 象征主义文学	xiàng zhēng zhǔ yì wén xué	100
+象征主义艺术	xiàng zhēng zhǔ yì yì shù	100
 象征主义作家	xiàng zhēng zhǔ yì zuò jiā	100
 想知道的更多	xiǎng zhī dào de gèng duō	100
 相转移催化剂	xiāng zhuǎn yí cuī huà jì	100
@@ -137524,6 +137654,7 @@ sort: by_weight
 刑事鉴识中心	xíng shì jiàn shí zhōng xīn	100
 型式检验报告	xíng shì jiǎn yàn bào gào	100
 刑释解教人员	xíng shì jiě jiào rén yuán	100
+刑事科学技术	xíng shì kē xué jì shù	100
 刑事立案标准	xíng shì lì àn biāo zhǔn	100
 刑事立案监督	xíng shì lì àn jiān dū	100
 形式幂级数环	xíng shì mì jí shù huán	100
@@ -139064,6 +139195,7 @@ sort: by_weight
 遥不可及的梦	yáo bù kě jí de mèng	100
 腰部支撑调节	yāo bù zhī chēng tiáo jié	100
 遥测地震台网	yáo cè dì zhèn tái wǎng	100
+遥测同步技术	yáo cè tóng bù jì shù	100
 遥测心电监护	yáo cè xīn diàn jiān hù	100
 姚晨和凌潇肃	yáo chén hé líng xiāo sù	100
 要愁那得工夫	yào chóu nà de gōng fu	100
@@ -140212,6 +140344,7 @@ sort: by_weight
 以太网反绞线	yǐ tài wǎng fǎn jiǎo xiàn	100
 以太网路供电	yǐ tài wǎng lù gōng diàn	100
 异特龙属的种	yì tè lóng shǔ de zhǒng	100
+遗体保存技术	yí tǐ bǎo cún jì shù	100
 遗体保存科技	yí tǐ bǎo cún kē jì	100
 遗体防腐保存	yí tǐ fáng fǔ bǎo cún	100
 遗体告别仪式	yí tǐ gào bié yí shì	100
@@ -140738,6 +140871,7 @@ sort: by_weight
 阴极射线发光	yīn jí shè xiàn fā guāng	100
 阴极射线显示	yīn jí shè xiàn xiǎn shì	100
 阴极线示波器	yīn jí xiàn shì bō qì	100
+印迹杂交技术	yìn jì zá jiāo jì shù	100
 银建国际实业	yín jiàn guó jì shí yè	100
 银建汽车租赁	yín jiàn qì chē zū lìn	100
 引江补汉工程	yǐn jiāng bǔ hàn gōng chéng	100
@@ -141121,6 +141255,7 @@ sort: by_weight
 影响生育能力	yǐng xiǎng shēng yù néng lì	100
 影响新陈代谢	yǐng xiǎng xīn chén dài xiè	100
 影响心理健康	yǐng xiǎng xīn lǐ jiàn kāng	100
+影像压缩技术	yǐng xiàng yā suō jì shù	100
 影响智力发育	yǐng xiǎng zhì lì fā yù	100
 硬性隐形眼镜	yìng xìng yǐn xíng yǎn jìng	100
 英雄不问出处	yīng xióng bú wèn chū chù	100
@@ -141813,6 +141948,7 @@ sort: by_weight
 有线数字电视	yǒu xiàn shù zì diàn shì	100
 有限完全范畴	yǒu xiàn wán quán fàn chóu	100
 有限维扩张域	yǒu xiàn wéi kuò zhāng yù	100
+有限稀释技术	yǒu xiàn xī shì jì shù	100
 有线新闻节目	yǒu xiàn xīn wén jié mù	100
 有鲜艳的颜色	yǒu xiān yàn de yán sè	100
 有限增量定理	yǒu xiàn zēng liàng dìng lǐ	100
@@ -142523,6 +142659,7 @@ sort: by_weight
 原位旁肝移植	yuán wèi páng gān yí zhí	100
 原位小肠移植	yuán wèi xiǎo cháng yí zhí	100
 原位心脏移植	yuán wèi xīn zàng yí zhí	100
+原位杂交技术	yuán wèi zá jiāo jì shù	100
 缘尾帚齿非鲫	yuán wěi zhǒu chǐ fēi jì	100
 原位资源利用	yuán wèi zī yuán lì yòng	100
 愿我们的爱情	yuàn wǒ men de ài qíng	100
@@ -144477,6 +144614,7 @@ sort: by_weight
 致加西亚的信	zhì jiā xī yà de xìn	100
 趾甲周新生物	zhǐ jiǎ zhōu xīn shēng wù	100
 指间关节强直	zhǐ jiān guān jié qiáng zhí	100
+指尖上的艺术	zhǐ jiān shàng de yì shù	100
 指尖痛性小结	zhǐ jiān tòng xìng xiǎo jié	100
 之江大学旧址	zhī jiāng dà xué jiù zhǐ	100
 之江文化中心	zhī jiāng wén huà zhōng xīn	100
@@ -144750,6 +144888,7 @@ sort: by_weight
 智能双碳管理	zhì néng shuāng tàn guǎn lǐ	100
 智能四驱系统	zhì néng sì qū xì tǒng	100
 智能搜索引擎	zhì néng sōu suǒ yǐn qíng	100
+智能天线技术	zhì néng tiān xiàn jì shù	100
 只能听天由命	zhǐ néng tīng tiān yóu mìng	100
 智能推荐算法	zhì néng tuī jiàn suàn fǎ	100
 智能网联汽车	zhì néng wǎng lián qì chē	100
@@ -144764,6 +144903,7 @@ sort: by_weight
 智能物流中心	zhì néng wù liú zhōng xīn	100
 智能物流装备	zhì néng wù liú zhuāng bèi	100
 智能无人系统	zhì néng wú rén xì tǒng	100
+智能响应技术	zhì néng xiǎng yìng jì shù	100
 智能消防水炮	zhì néng xiāo fáng shuǐ pào	100
 只能小心翼翼	zhǐ néng xiǎo xīn yì yì	100
 智能信息系统	zhì néng xìn xī xì tǒng	100
@@ -145684,6 +145824,7 @@ sort: by_weight
 重要历史人物	zhòng yào lì shǐ rén wù	100
 重要历史事件	zhòng yào lì shǐ shì jiàn	100
 重要旅游景点	zhòng yào lǚ yóu jǐng diǎn	100
+中药炮制技术	zhōng yào páo zhì jì shù	100
 中药炮制技艺	zhōng yào páo zhì jì yì	100
 中药塌渍治疗	zhōng yào tā zì zhì liáo	100
 中药特殊调配	zhōng yào tè shū tiáo pèi	100
@@ -145810,6 +145951,7 @@ sort: by_weight
 中子通量周期	zhōng zǐ tōng liàng zhōu qī	100
 中子吸收分析	zhōng zǐ xī shōu fēn xī	100
 中子吸收截面	zhōng zǐ xī shōu jié miàn	100
+中子衍射技术	zhōng zǐ yǎn shè jì shù	100
 种子植物超门	zhǒng zi zhí wù chāo mén	100
 种子植物总门	zhǒng zi zhí wù zǒng mén	100
 种族隔离主义	zhǒng zú gé lí zhǔ yì	100
@@ -146270,6 +146412,7 @@ sort: by_weight
 主题征文比赛	zhǔ tí zhēng wén bǐ sài	100
 主题征文活动	zhǔ tí zhēng wén huó dòng	100
 主体资格证明	zhǔ tǐ zī gé zhèng míng	100
+铸铁柔化技术	zhù tiě róu huà jì shù	100
 嘱停该组液体	zhǔ tíng gāi zǔ yè tǐ	100
 助听器的历史	zhù tīng qì de lì shǐ	100
 驻土耳其大使	zhù tǔ ěr qí dà shǐ	100
@@ -146520,6 +146663,7 @@ sort: by_weight
 桩核根帽修复	zhuāng hé gēn mào xiū fù	100
 装糊涂的高手	zhuāng hú tú de gāo shǒu	100
 装机必备软件	zhuāng jī bì bèi ruǎn jiàn	100
+桩基动测技术	zhuāng jī dòng cè jì shù	100
 桩基检测报告	zhuāng jī jiǎn cè bào gào	100
 装甲部队将军	zhuāng jiǎ bù duì jiāng jūn	100
 装甲掷弹兵旅	zhuāng jiǎ zhì dàn bīng lǚ	100
@@ -146673,6 +146817,7 @@ sort: by_weight
 自动挡的车型	zì dòng dǎng de chē xíng	100
 自动挡的汽车	zì dòng dǎng de qì chē	100
 自动导星装置	zì dòng dǎo xīng zhuāng zhì	100
+自动对接技术	zì dòng duì jiē jì shù	100
 自动化的机器	zì dòng huà de jī qì	100
 自动换刀装置	zì dòng huàn dāo zhuāng zhì	100
 自动驾驶仿真	zì dòng jià shǐ fǎng zhēn	100
@@ -146930,6 +147075,7 @@ sort: by_weight
 资讯科技新闻	zī xùn kē jì xīn wén	100
 资讯科技周刊	zī xùn kē jì zhōu kān	100
 资讯科技总监	zī xùn kē jì zǒng jiān	100
+资讯通信技术	zī xùn tōng xìn jì shù	100
 资讯统整理论	zī xùn tǒng zhěng lǐ lùn	100
 资讯有限公司	zī xùn yǒu xiàn gōng sī	100
 资讯整合理论	zī xùn zhěng hé lǐ lùn	100
@@ -149197,6 +149343,7 @@ sort: by_weight
 本次新闻发布会	běn cì xīn wén fā bù huì	100
 笨蛋测试召唤兽	bèn dàn cè shì zhào huàn shòu	100
 笨蛋测验召唤兽	bèn dàn cè yàn zhào huàn shòu	100
+本顿戴维斯技术	běn dùn dài wéi sī jì shù	100
 本顿戴维斯杂交	běn dùn dài wéi sī zá jiāo	100
 本福德号驱逐舰	běn fú dé hào qū zhú jiàn	100
 本霍柯三氏试剂	běn huò kē sān shì shì jì	100
@@ -149746,6 +149893,7 @@ sort: by_weight
 波阳县卫生学校	bō yáng xiàn wèi shēng xué xiào	100
 波义耳查理定律	bō yì ěr chá lǐ dìng lǜ	100
 播音台的姊妹花	bō yīn tái de zǐ mèi huā	100
+播音与主持艺术	bō yīn yǔ zhǔ chí yì shù	100
 播音与主持专业	bō yīn yǔ zhǔ chí zhuān yè	100
 剥纸辊疲劳试验	bō zhǐ gǔn pí láo shì yàn	120
 脖子以下都是腿	bó zi yǐ xià dōu shì tuǐ	100
@@ -151025,6 +151173,7 @@ sort: by_weight
 超神学院第二季	chāo shén xué yuàn dì èr jì	100
 超声波屏下指纹	chāo shēng bō píng xià zhǐ wén	100
 超声波塑料焊接	chāo shēng bō sù liào hàn jiē	100
+超声波探测技术	chāo shēng bō tàn cè jì shù	100
 超声间动电疗法	chāo shēng jiān dòng diàn liáo fǎ	100
 超声雾化吸入法	chāo shēng wù huà xī rù fǎ	100
 超声心动图异常	chāo shēng xīn dòng tú yì cháng	100
@@ -151517,6 +151666,7 @@ sort: by_weight
 抽烟对身体不好	chōu yān duì shēn tǐ bù hǎo	100
 抽油机平衡方式	chōu yóu jī píng héng fāng shì	120
 抽油机最大扭矩	chōu yóu jī zuì dà niǔ jǔ	120
+抽油井诊断技术	chōu yóu jǐng zhěn duàn jì shù	120
 愁云淡淡雨潇潇	chóu yún dàn dàn yǔ xiāo xiāo	100
 抽真空测试纸包	chōu zhēn kōng cè shì zhǐ bāo	100
 愁中不觉已春深	chóu zhōng bù jué yǐ chūn shēn	100
@@ -151871,6 +152021,7 @@ sort: by_weight
 磁各向异性效应	cí gè xiàng yì xìng xiào yìng	100
 次轨道太空飞行	cì guǐ dào tài kōng fēi xíng	100
 雌虎装甲运输车	cí hǔ zhuāng jiǎ yùn shū chē	100
+次画素优视技术	cì huà sù yōu shì jì shù	100
 此花真合在瑶池	cǐ huā zhēn hé zài yáo chí	100
 此欢能有几人知	cǐ huān néng yǒu jǐ rén zhī	100
 刺激反应心理学	cì jī fǎn yìng xīn lǐ xué	100
@@ -153329,6 +153480,7 @@ sort: by_weight
 定点性咀嚼剧痛	dìng diǎn xìng jǔ jué jù tòng	100
 丁丁和太阳神庙	dīng dīng hé tài yáng shén miào	100
 丁丁与丛林战士	dīng dīng yǔ cóng lín zhàn shì	100
+丁丁与字母艺术	dīng dīng yǔ zì mǔ yì shù	100
 丁房阙与无铭阙	dīng fáng quē yǔ wú míng quē	100
 定幅带定边宽度	dìng fú dài dìng biān kuān dù	100
 定幅装置定边板	dìng fú zhuāng zhì dìng biān bǎn	100
@@ -153826,6 +153978,7 @@ sort: by_weight
 多器官联合移植	duō qì guān lián hé yí zhí	100
 多器官整块移植	duō qì guān zhěng kuài yí zhí	100
 多态性信息含量	duō tài xìng xìn xī hán liàng	100
+多位数乘一位数	duō wèi shù chéng yí wèi shù	100
 多维铁口服溶液	duō wéi tiě kǒu fú róng yè	100
 多稳态模棱函数	duō wěn tài mó léng hán shù	100
 多腺体机能亢进	duō xiàn tǐ jī néng kàng jìn	100
@@ -154487,6 +154640,7 @@ sort: by_weight
 放在现实生活中	fàng zài xiàn shí shēng huó zhōng	100
 放在阴凉的地方	fàng zài yīn liáng de dì fāng	100
 放在阴凉通风处	fàng zài yīn liáng tōng fēng chù	100
+仿真科学与技术	fǎng zhēn kē xué yǔ jì shù	100
 放置宫内节育器	fàng zhì gōng nèi jié yù qì	100
 防止核扩散条约	fáng zhǐ hé kuò sàn tiáo yuē	100
 纺织科学与工程	fǎng zhī kē xué yǔ gōng chéng	100
@@ -154647,6 +154801,7 @@ sort: by_weight
 非交换调和分析	fēi jiāo huàn tiáo hé fēn xī	100
 非教派犹太会堂	fēi jiào pài yóu tài huì táng	100
 非交通性脑积水	fēi jiāo tōng xìng nǎo jī shuǐ	100
+肺结节分析技术	fèi jié jié fēn xī jì shù	100
 非姐妹染色单体	fēi jiě mèi rǎn sè dān tǐ	100
 非金属肠道支架	fēi jīn shǔ cháng dào zhī jià	100
 非金属胆道支架	fēi jīn shǔ dǎn dào zhī jià	100
@@ -154724,6 +154879,7 @@ sort: by_weight
 非水溶液滴定法	fēi shuǐ róng yè dī dìng fǎ	100
 非私不可咖啡馆	fēi sī bù kě kā fēi guǎn	100
 非丝虫性乳糜胸	fēi sī chóng xìng rǔ mí xiōng	100
+废塑料分离技术	fèi sù liào fēn lí jì shù	100
 非汤武而薄周孔	fēi tāng wǔ ér báo zhōu kǒng	100
 非特异投射系统	fēi tè yì tóu shè xì tǒng	100
 非体育道德行为	fēi tǐ yù dào dé xíng wéi	100
@@ -154775,6 +154931,7 @@ sort: by_weight
 非裔波多黎各人	fēi yì bō duō lí gè rén	100
 非裔玻利维亚人	fēi yì bō lì wéi yà rén	100
 非裔马来西亚人	fēi yì mǎ lái xī yà rén	100
+非裔美国人艺术	fēi yì měi guó rén yì shù	100
 非一朝一夕之故	fēi yì zhāo yì xī zhī gù	100
 飞鹰号航空母舰	fēi yīng hào háng kōng mǔ jiàn	100
 飞鹰号鱼雷炮舰	fēi yīng hào yú léi pào jiàn	100
@@ -156752,6 +156909,7 @@ sort: by_weight
 固乱流其鲜终兮	gù luàn liú qí xiān zhōng xī	100
 固伦端献长公主	gù lún duān xiàn zhǎng gōng zhǔ	100
 固伦淑慧长公主	gù lún shū huì zhǎng gōng zhǔ	100
+骨密度分析技术	gǔ mì dù fēn xī jì shù	100
 故民入川泽山林	gù mín rù chuān zé shān lín	100
 鼓膜切开伴置管	gǔ mó qiē kāi bàn zhì guǎn	100
 鼓膜上鼓室穿孔	gǔ mó shàng gǔ shì chuān kǒng	100
@@ -157514,6 +157672,7 @@ sort: by_weight
 藿香正气腹皮苏	huò xiāng zhèng qì fù pí sū	100
 和药汁煎取八合	huò yào zhī jiān qǔ bā hé	100
 火影之宁次传说	huǒ yǐng zhī níng cì chuán shuō	100
+基巴波三氏技术	jī bā bō sān shì jì shù	100
 基本的犯罪构成	jī běn de fàn zuì gòu chéng	100
 基本对称多项式	jī běn duì chèn duō xiàng shì	100
 基本多文种平面	jī běn duō wén zhǒng píng miàn	100
@@ -158234,6 +158393,8 @@ sort: by_weight
 看得最远的地方	kàn de zuì yuǎn de dì fāng	100
 坎卡基血红蛋白	kǎn kǎ jī xuè hóng dàn bái	100
 看看网友的评论	kàn kàn wǎng yǒu de píng lùn	100
+坎宁安蚀斑技术	kǎn níng ān shí bān jì shù	100
+坎农马歇尔技术	kǎn nóng mǎ xiē ěr jì shù	100
 坎珀当血红蛋白	kǎn pò dāng xuè hóng dàn bái	100
 堪萨斯分枝杆菌	kān sà sī fēn zhī gǎn jūn	100
 坎斯二氏培养基	kǎn sī èr shì péi yǎng jī	100
@@ -158919,6 +159080,7 @@ sort: by_weight
 免疫球蛋白缺乏	miǎn yì qiú dàn bái quē fá	100
 免疫球蛋白亚类	miǎn yì qiú dàn bái yà lèi	100
 免疫球蛋白增加	miǎn yì qiú dàn bái zēng jiā	100
+免疫铁蛋白技术	miǎn yì tiě dàn bái jì shù	100
 免疫细胞化学法	miǎn yì xì bāo huà xué fǎ	100
 免疫组织化学法	miǎn yì zǔ zhī huà xué fǎ	100
 面中部发育不良	miàn zhōng bù fā yù bù liáng	100
@@ -158940,6 +159102,7 @@ sort: by_weight
 漠河卫生检疫局	mò hé wèi shēng jiǎn yì jú	100
 膜基材透气胶带	mó jī cái tòu qì jiāo dài	100
 莫洛坚斯基理论	mò luò jiān sī jī lǐ lùn	100
+膜免疫荧光技术	mó miǎn yì yíng guāng jì shù	100
 模拟数字转换器	mó nǐ shù zì zhuǎn huàn qì	100
 末日皮甲的组件	mò rì pí jiǎ de zǔ jiàn	100
 莫桑比克共和国	mò sāng bǐ kè gòng hé guó	100
@@ -159394,6 +159557,7 @@ sort: by_weight
 其数则始乎诵经	qí shù zé shǐ hū sòng jīng	100
 其他新能源汽车	qí tā xīn néng yuán qì chē	100
 气体动理学理论	qì tǐ dòng lǐ xué lǐ lùn	120
+气体反溶剂技术	qì tǐ fǎn róng jì jì shù	100
 气体分子运动论	qì tǐ fēn zǐ yùn dòng lùn	100
 企无精神则不强	qǐ wú jīng shén zé bù qiáng	100
 齐心协力抓落实	qí xīn xié lì zhuā luò shí	100
@@ -159784,6 +159948,7 @@ sort: by_weight
 燃气发生器循环	rán qì fā shēng qì xún huán	100
 染色体三倍体症	rǎn sè tǐ sān bèi tǐ zhèng	100
 染色体疏松抗原	rǎn sè tǐ shū sōng kàng yuán	100
+染色体显带技术	rǎn sè tǐ xiǎn dài jì shù	100
 染色体原位杂交	rǎn sè tǐ yuán wèi zá jiāo	100
 燃烧我的卡路里	rán shāo wǒ de kǎ lù lǐ	100
 让吃苦的人吃香	ràng chī kǔ de rén chī xiāng	100
@@ -160430,6 +160595,7 @@ sort: by_weight
 嗜巨噬细胞抗体	shì jù shì xì bāo kàng tǐ	100
 视觉模拟评分法	shì jué mó nǐ píng fēn fǎ	100
 势均力敌的较量	shì jūn lì dí de jiào liàng	100
+噬菌体展示技术	shì jūn tǐ zhǎn shì jì shù	100
 是可忍孰不可忍	shì kě rěn shú bù kě rěn	100
 始可与言于兹矣	shǐ kě yǔ yán yú zī yǐ	100
 失控的温室效应	shī kòng de wēn shì xiào yìng	100
@@ -161728,7 +161894,7 @@ sort: by_weight
 亚里士多德错觉	yà lǐ shì duō dé cuò jué	100
 压力蒸汽灭菌器	yā lì zhēng qì miè jūn qì	100
 氩离子激光疗法	yà lí zǐ jī guāng liáo fǎ	100
-雅鲁藏布大峡谷	yǎ lǔ cáng bù dà xiá gǔ	100
+雅鲁藏布大峡谷	yǎ lǔ zàng bù dà xiá gǔ	100
 压配式球形臼罩	yā pèi shì qiú xíng jiù zhào	100
 亚染色单体畸变	yà rǎn sè dān tǐ jī biàn	100
 牙髓活力测验器	yá suǐ huó lì cè yàn qì	100
