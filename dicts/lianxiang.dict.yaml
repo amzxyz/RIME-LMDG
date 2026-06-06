@@ -189,7 +189,6 @@ sort: by_weight
 埃尔托霍乱	āi ěr tuō huò luàn	100
 爱发朋友圈	ài fā péng you quān	100
 埃菲尔铁塔	āi fēi ěr tiě tǎ	100
-暧非同一般	ài fēi tóng yì bān	100
 爱干啥干啥	ài gàn shá gàn shá	100
 埃戈二氏笛	āi gē èr shì dí	100
 埃格林试验	āi gé lín shì yàn	100
@@ -1706,6 +1705,7 @@ sort: by_weight
 百褶半身裙	bǎi zhě bàn shēn qún	100
 百褶的设计	bǎi zhě de shè jì	100
 百褶连衣裙	bǎi zhě lián yī qún	100
+掰着手指头	bāi zhe shǒu zhǐ tou	100
 白芷杭白芷	bái zhǐ háng bái zhǐ	100
 白质后连合	bái zhì hòu lián hé	100
 白汁鸡皇饭	bái zhī jī huáng fàn	100
@@ -1728,7 +1728,6 @@ sort: by_weight
 白术麦门冬	bái zhú mài mén dōng	100
 白术芍药汤	bái zhú sháo yào tāng	100
 白术苡仁汤	bái zhú yǐ rén tāng	100
-掰着手指头	bāi zhuó shǒu zhǐ tou	100
 稗子的比喻	bài zi de bǐ yù	100
 柏孜克里克	bǎi zī kè lǐ kè	100
 百子里公园	bǎi zǐ lǐ gōng yuán	100
@@ -10992,6 +10991,7 @@ sort: by_weight
 打压式教育	dǎ yā shì jiào yù	100
 大亚洲主义	dà yà zhōu zhǔ yì	100
 大眼瞪小眼	dà yǎn dèng xiǎo yǎn	100
+大氧化事件	dà yǎng huà shì jiàn	100
 打养生篮球	dǎ yǎng shēng lán qiú	100
 打野奥拉夫	dǎ yě ào lā fū	100
 打也打不得	dǎ yě dǎ bù de	100
@@ -11040,6 +11040,7 @@ sort: by_weight
 大丈夫所为	dà zhàng fū suǒ wéi	100
 打仗亲兄弟	dǎ zhàng qīn xiōng dì	100
 打着擦边球	dǎ zhe cā biān qiú	100
+打着手电筒	dǎ zhe shǒu diàn tǒng	100
 大侦探波罗	dà zhēn tàn bō luó	100
 大侦探波洛	dà zhēn tàn bō luò	100
 大众传播史	dà zhòng chuán bō shǐ	100
@@ -11063,7 +11064,6 @@ sort: by_weight
 大专或本科	dà zhuān huò běn kē	100
 大赚了一笔	dà zhuàn le yì bǐ	100
 大庄严论经	dà zhuāng yán lùn jīng	100
-打着手电筒	dǎ zhuó shǒu diàn tǒng	100
 打字机键盘	dǎ zì jī jiàn pán	100
 大自流盆地	dà zì liú pén dì	100
 大自然的美	dà zì rán de měi	100
@@ -12125,6 +12125,7 @@ sort: by_weight
 导演兼主演	dǎo yǎn jiān zhǔ yǎn	100
 导演协会奖	dǎo yǎn xié huì jiǎng	100
 导演与演员	dǎo yǎn yǔ yǎn yuán	100
+道也道不明	dào yě dào bù míng	100
 到一定程度	dào yí dìng chéng dù	100
 到一定境界	dào yí dìng jìng jiè	100
 到一定年龄	dào yí dìng nián líng	100
@@ -12134,6 +12135,7 @@ sort: by_weight
 到阴间出差	dào yīn jiān chū chāi	100
 倒应变椭球	dào yìng biàn tuǒ qiú	100
 倒影中的灯	dào yǐng zhōng de dēng	100
+道又道不明	dào yòu dào bù míng	100
 道友请留步	dào yǒu qǐng liú bù	100
 岛屿巨型化	dǎo yǔ jù xíng huà	100
 岛屿侏儒化	dǎo yǔ zhū rú huà	100
@@ -20206,8 +20208,7 @@ sort: by_weight
 浮则汗自出	fú zé hàn zì chū	100
 富泽美智惠	fù zé měi zhì huì	100
 负责任大国	fù zé rèn dà guó	100
-负责任的好	fù zé rèn de hǎo	100
-负责任的说	fù zé rèn de shuō	100
+负责任地说	fù zé rèn dì shuō	100
 负责任态度	fù zé rèn tài dù	100
 伏则小便难	fú zé xiǎo biàn nán	100
 负债和权益	fù zhài hé quán yì	100
@@ -33607,6 +33608,7 @@ sort: by_weight
 交银施罗德	jiāo yín shī luó dé	100
 交友不慎啊	jiāo yǒu bú shèn a	100
 较有代表性	jiào yǒu dài biǎo xìng	100
+教又教不会	jiào yòu jiāo bú huì	100
 焦油中间槽	jiāo yóu zhōng jiān cáo	100
 教育部印发	jiào yù bù yìn fā	100
 教育部直属	jiào yù bù zhí shǔ	100
@@ -46082,13 +46084,13 @@ sort: by_weight
 那怎么办呢	nà zěn me bàn ne	100
 那怎么办呀	nà zěn me bàn ya	100
 拿着凳子看	ná zhe dèng zi kàn	100
+拿着手机玩	ná zhe shǒu jī wán	100
 那正适合你	nà zhèng shì hé nǐ	120
 那正是和你	nà zhèng shì hé nǐ	100
 那智不二越	nà zhì bú èr yuè	100
 钠质火成岩	nà zhì huǒ chéng yán	100
 拿中国说事	ná zhōng guó shuō shì	100
 那种心理的	nà zhǒng xīn lǐ de	100
-拿着手机玩	ná zhuó shǒu jī wán	100
 拿作品说话	ná zuò pǐn shuō huà	100
 奈伯特文字	nài bó tè wén zì	100
 乃不知有汉	nǎi bù zhī yǒu hàn	100
@@ -62341,6 +62343,7 @@ sort: by_weight
 说西班牙语	shuō xī bān yá yǔ	100
 说也说不完	shuō yě shuō bù wán	100
 说一切有部	shuō yí qiè yǒu bù	100
+说又说不清	shuō yòu shuō bù qīng	100
 说与山鬼听	shuō yǔ shān guǐ tīng	100
 说走就走了	shuō zǒu jiù zǒu le	100
 说走咱就走	shuō zǒu zán jiù zǒu	100
@@ -85898,6 +85901,7 @@ sort: by_weight
 这是个傻子	zhè shì gè shǎ zi	100
 这事还没完	zhè shì hái méi wán	100
 这是僵尸吗	zhè shì jiāng shī ma	100
+这是哪一集	zhè shì nǎ yì jí	100
 这是巧合吗	zhè shì qiǎo hé ma	100
 这是徒劳的	zhè shì tú láo de	100
 这是我的岛	zhè shì wǒ de dǎo	100
@@ -104220,13 +104224,13 @@ sort: by_weight
 负责任的表现	fù zé rèn de biǎo xiàn	100
 负责任的大国	fù zé rèn de dà guó	100
 负责任的方式	fù zé rèn de fāng shì	100
-负责任的告诉	fù zé rèn de gào sù	100
 负责任的老师	fù zé rèn de lǎo shī	100
 负责任的男人	fù zé rèn de nán rén	100
-负责任的披露	fù zé rèn de pī lù	100
 负责任的企业	fù zé rèn de qǐ yè	100
 负责任的态度	fù zé rèn de tài dù	100
 负责任的做法	fù zé rèn de zuò fǎ	100
+负责任地告诉	fù zé rèn dì gào sù	100
+负责任地披露	fù zé rèn dì pī lù	100
 负责日常事务	fù zé rì cháng shì wù	100
 负责组织实施	fù zé zǔ zhī shí shī	100
 负债抵销科目	fù zhài dǐ xiāo kē mù	100
@@ -117820,7 +117824,7 @@ sort: by_weight
 两人日久生情	liǎng rén rì jiǔ shēng qíng	100
 两人十指紧扣	liǎng rén shí zhǐ jǐn kòu	100
 两人十指相扣	liǎng rén shí zhǐ xiāng kòu	100
-两人手牵着手	liǎng rén shǒu qiān zhuó shǒu	100
+两人手牵着手	liǎng rén shǒu qiān zhe shǒu	100
 两人相濡以沫	liǎng rén xiāng rú yǐ mò	100
 两人相识相恋	liǎng rén xiāng shí xiāng liàn	100
 两人相视一笑	liǎng rén xiāng shì yí xiào	100
@@ -140299,7 +140303,7 @@ sort: by_weight
 一时琢磨不透	yì shí zuó mo bú tòu	100
 一首歌的时间	yì shǒu gē de shí jiān	100
 已受教育程度	yǐ shòu jiào yù chéng dù	100
-一手拿着手机	yì shǒu ná zhuó shǒu jī	100
+一手拿着手机	yì shǒu ná zhe shǒu jī	100
 艺术创作硕士	yì shù chuàng zuò shuò shì	100
 艺术氛围浓厚	yì shù fēn wéi nóng hòu	100
 艺术家的创作	yì shù jiā de chuàng zuò	100
@@ -158985,7 +158989,7 @@ sort: by_weight
 麦冬芍药当归配	mài dōng sháo yào dāng guī pèi	100
 麦冬生地大麻仁	mài dōng shēng dì dà má rén	100
 脉缓舌黄身又痛	mài huǎn shé huáng shēn yòu tòng	100
-卖火柴的小女孩	mài huǒ chái de xiǎo nǚ hái	100
+卖火柴的小女孩	mài huǒ chái de xiǎo nǚ hái	120
 麦角隐亭咖啡因	mài jiǎo yǐn tíng kā fēi yīn	100
 脉解篇第四十九	mài jiě piān dì sì shí jiǔ	100
 麦康比去氧反应	mài kāng bǐ qù yǎng fǎn yìng	100
