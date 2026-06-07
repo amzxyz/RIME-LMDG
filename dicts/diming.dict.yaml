@@ -884,6 +884,7 @@ sort: by_weight
 百省乡	bǎi shěng xiāng	1
 百胜镇	bǎi shèng zhèn	1
 白石村	bái shí cūn	341
+百石角	bǎi shí jiǎo	99
 白石乡	bái shí xiāng	215
 白什乡	bái shí xiāng	1
 白石镇	bái shí zhèn	325
@@ -17745,7 +17746,6 @@ sort: by_weight
 万春镇	wàn chūn zhèn	100
 万村乡	wàn cūn xiāng	1
 万丹乡	wàn dān xiāng	1
-万石镇	wàn dàn zhèn	1
 万德镇	wàn dé zhèn	470
 万堤镇	wàn dī zhèn	1
 万第镇	wàn dì zhèn	1
@@ -17804,6 +17804,7 @@ sort: by_weight
 万山镇	wàn shān zhèn	1
 万善镇	wàn shàn zhèn	1
 万胜镇	wàn shèng zhèn	1
+万石镇	wàn shí zhèn	1
 万市镇	wàn shì zhèn	1
 万寿村	wàn shòu cūn	100
 万寿镇	wàn shòu zhèn	1
@@ -29095,7 +29096,6 @@ sort: by_weight
 丹东街道	dān dōng jiē dào	1
 丹都街道	dān dōu jiē dào	1
 丹凤街道	dān fèng jiē dào	1
-石谷寺村	dàn gǔ sì cūn	1
 丹桂街道	dān guì jiē dào	1
 丹河街道	dān hé jiē dào	1
 淡家沟村	dàn jiā gōu cūn	1
@@ -49708,6 +49708,7 @@ sort: by_weight
 石鼓沟村	shí gǔ gōu cūn	1
 石鼓河村	shí gǔ hé cūn	1
 尸骨还乡	shī gǔ huán xiāng	1
+石谷寺村	shí gǔ sì cūn	1
 石牯塘镇	shí gǔ táng zhèn	1
 石鼓西村	shí gǔ xī cūn	1
 石崮新村	shí gù xīn cūn	1
@@ -53383,7 +53384,6 @@ sort: by_weight
 万昌店村	wàn chāng diàn cūn	1
 万春街道	wàn chūn jiē dào	1
 万村千乡	wàn cūn qiān xiāng	1
-万石坑村	wàn dàn kēng cūn	1
 万德号村	wàn dé hào cūn	1
 万德街道	wàn dé jiē dào	1
 万德新村	wàn dé xīn cūn	1
@@ -53495,6 +53495,7 @@ sort: by_weight
 万盛街道	wàn shèng jiē dào	1
 万盛山庄	wàn shèng shān zhuāng	1
 万胜永乡	wàn shèng yǒng xiāng	1
+万石坑村	wàn shí kēng cūn	1
 万仕桥村	wàn shì qiáo cūn	1
 万寿街道	wàn shòu jiē dào	1
 万寿桥村	wàn shòu qiáo cūn	1
@@ -70662,7 +70663,7 @@ sort: by_weight
 音河达斡尔鄂温克民族乡	yīn hé dá wò ěr è wēn kè mín zú xiāng	1
 永吉经济开发区特殊乡镇	yǒng jí jīng jì kāi fā qū tè shū xiāng zhèn	1
 豫东综合物流产业聚集区	yù dōng zōng hé wù liú chǎn yè jù jí qū	1
-原平市石豹沟煤矿工矿区	yuán píng shì dàn bào gōu méi kuàng gōng kuàng qū	1
+原平市石豹沟煤矿工矿区	yuán píng shì shí bào gōu méi kuàng gōng kuàng qū	1
 月亮河彝族布依族苗族乡	yuè liàng hé yí zú bù yī zú miáo zú xiāng	1
 云南省嵩明职业教育基地	yún nán shěng sōng míng zhí yè jiào yù jī dì	1
 湛江市坡头区官渡工业园	zhàn jiāng shì pō tóu qū guān dù gōng yè yuán	1
