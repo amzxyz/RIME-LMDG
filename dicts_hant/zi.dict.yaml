@@ -9607,6 +9607,7 @@ sort: by_weight
 泔	gān	140
 疳	gān	126
 坩	gān	102
+乾	gān	100
 矸	gān	92
 玕	gān	83
 扞	gǎn	75
@@ -9641,7 +9642,6 @@ sort: by_weight
 魐	gān	1
 㽏	gàn	1
 𣹟	gàn	1
-乾	gān	1
 佄	gàn	1
 咁	gān	1
 澸	gǎn	1
@@ -10699,8 +10699,8 @@ sort: by_weight
 莞	guǎn	434
 棺	guān	412
 觀	guàn	391
+鸛	guàn	287
 関	guān	256
-鸛	guàn	207
 観	guān	186
 盥	guàn	150
 倌	guān	135
@@ -13875,6 +13875,7 @@ sort: by_weight
 姬	jī	34
 脊	jǐ	32
 飢	jī	30
+錤	jī	21
 磯	jī	17
 稽	jī	16
 冀	jì	15
@@ -13953,7 +13954,6 @@ sort: by_weight
 蟣	jǐ	1
 禨	jī	1
 茍	jì	1
-錤	jī	1
 垍	jì	1
 掎	jǐ	1
 墼	jī	1
@@ -16426,7 +16426,7 @@ sort: by_weight
 居	jū	2588
 舉	jǔ	2458
 句	jù	2335
-聚	jù	953
+聚	jù	1953
 距	jù	905
 巨	jù	698
 拒	jù	548
@@ -30786,8 +30786,8 @@ sort: by_weight
 𫝣	shēng	1
 𫝢	shēng	1
 是	shì	5651523
+時	shí	90160
 十	shí	10368
-時	shí	10160
 事	shì	9956
 拾	shí	3175
 使	shǐ	3016
@@ -36823,6 +36823,7 @@ sort: by_weight
 冼	xiǎn	27
 霰	xiàn	25
 見	xiàn	21
+鍁	xiān	21
 祆	xiān	19
 啣	xián	16
 憸	xiān	15
@@ -36831,7 +36832,6 @@ sort: by_weight
 洗	xiǎn	6
 躚	xiān	4
 憪	xián	3
-鍁	xiān	1
 鷳	xián	1
 僊	xiān	1
 綫	xiàn	1

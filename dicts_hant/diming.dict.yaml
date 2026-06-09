@@ -469,8 +469,8 @@ sort: by_weight
 安仁鄉	ān rén xiāng	1
 安仁鎮	ān rén zhèn	324
 安榮鄉	ān róng xiāng	1
-安塞區	ān sāi qū	154
-安塞縣	ān sāi xiàn	174
+安塞區	ān sài qū	154
+安塞縣	ān sài xiàn	174
 安砂鎮	ān shā zhèn	1
 安沙鎮	ān shā zhèn	1
 安山鄉	ān shān xiāng	1
@@ -884,6 +884,7 @@ sort: by_weight
 百省鄉	bǎi shěng xiāng	1
 百勝鎮	bǎi shèng zhèn	1
 白石村	bái shí cūn	341
+百石角	bǎi shí jiǎo	99
 白石鄉	bái shí xiāng	215
 白什鄉	bái shí xiāng	1
 白石鎮	bái shí zhèn	325
@@ -9686,7 +9687,7 @@ sort: by_weight
 禮安鎮	lǐ ān zhèn	1
 李岙村	lǐ ào cūn	185
 李壩村	lǐ bà cūn	133
-籬笆鎮	lí bā zhèn	1
+籬笆鎮	lí ba zhèn	1
 裏壩鎮	lǐ bà zhèn	1
 黎壩鎮	lí bà zhèn	1
 李堡村	lǐ bǎo cūn	145
@@ -10685,6 +10686,7 @@ sort: by_weight
 留山鎮	liú shān zhèn	1
 流山鎮	liú shān zhèn	1
 六哨鄉	liù shào xiāng	1
+留神峪	liú shén yù	112
 劉升鎮	liú shēng zhèn	1
 六市鄉	liù shì xiāng	1
 留史鎮	liú shǐ zhèn	1
@@ -13061,7 +13063,7 @@ sort: by_weight
 能仁鄉	néng rén xiāng	1
 尼傲鄉	ní ào xiāng	1
 尼巴村	ní bā cūn	113
-泥巴鄉	ní bā xiāng	1
+泥巴鄉	ní ba xiāng	1
 坭壩鄉	ní bà xiāng	1
 尼巴鎮	ní bā zhèn	1
 坭陂鎮	ní bēi zhèn	1
@@ -17744,7 +17746,6 @@ sort: by_weight
 萬春鎮	wàn chūn zhèn	100
 萬村鄉	wàn cūn xiāng	1
 萬丹鄉	wàn dān xiāng	1
-萬石鎮	wàn dàn zhèn	1
 萬德鎮	wàn dé zhèn	470
 萬堤鎮	wàn dī zhèn	1
 萬第鎮	wàn dì zhèn	1
@@ -17803,6 +17804,7 @@ sort: by_weight
 萬山鎮	wàn shān zhèn	1
 萬善鎮	wàn shàn zhèn	1
 萬勝鎮	wàn shèng zhèn	1
+萬石鎮	wàn shí zhèn	1
 萬市鎮	wàn shì zhèn	1
 萬壽村	wàn shòu cūn	100
 萬壽鎮	wàn shòu zhèn	1
@@ -29094,7 +29096,6 @@ sort: by_weight
 丹東街道	dān dōng jiē dào	1
 丹都街道	dān dōu jiē dào	1
 丹鳳街道	dān fèng jiē dào	1
-石谷寺村	dàn gǔ sì cūn	1
 丹桂街道	dān guì jiē dào	1
 丹河街道	dān hé jiē dào	1
 淡家溝村	dàn jiā gōu cūn	1
@@ -33183,9 +33184,6 @@ sort: by_weight
 閣老峪村	gé lǎo yù cūn	1
 革勒車鄉	gé lè chē xiāng	1
 革勒車鎮	gé lè chē zhèn	1
-歌樂山村	gē lè shān cūn	1
-歌樂山鎮	gē lè shān zhèn	1
-歌樂沱鄉	gē lè tuó xiāng	1
 格里坪鎮	gé lǐ píng zhèn	1
 葛禮瓦鎮	gé lǐ wǎ zhèn	1
 格林街道	gé lín jiē dào	1
@@ -33239,6 +33237,9 @@ sort: by_weight
 隔洋塘村	gé yáng táng cūn	1
 葛崾峴鄉	gé yǎo xiàn xiāng	1
 葛漁城鎮	gé yú chéng zhèn	1
+歌樂山村	gē yuè shān cūn	1
+歌樂山鎮	gē yuè shān zhèn	1
+歌樂沱鄉	gē yuè tuó xiāng	1
 革鎮堡鎮	gé zhèn bǎo zhèn	1
 圪針梁村	gē zhēn liáng cūn	1
 格針廟村	gé zhēn miào cūn	1
@@ -41637,7 +41638,7 @@ sort: by_weight
 龍寶山村	lóng bǎo shān cūn	1
 龍寶峪村	lóng bǎo yù cūn	1
 龍背街道	lóng bèi jiē dào	1
-龍背頭村	lóng bèi tóu cūn	1
+龍背頭村	lóng bēi tóu cūn	1
 龍蒼溝鄉	lóng cāng gōu xiāng	1
 龍蒼溝鎮	lóng cāng gōu zhèn	1
 龍草坪村	lóng cǎo píng cūn	1
@@ -49707,6 +49708,7 @@ sort: by_weight
 石鼓溝村	shí gǔ gōu cūn	1
 石鼓河村	shí gǔ hé cūn	1
 屍骨還鄉	shī gǔ huán xiāng	1
+石谷寺村	shí gǔ sì cūn	1
 石牯塘鎮	shí gǔ táng zhèn	1
 石鼓西村	shí gǔ xī cūn	1
 石崮新村	shí gù xīn cūn	1
@@ -53382,7 +53384,6 @@ sort: by_weight
 萬昌店村	wàn chāng diàn cūn	1
 萬春街道	wàn chūn jiē dào	1
 萬村千鄉	wàn cūn qiān xiāng	1
-萬石坑村	wàn dàn kēng cūn	1
 萬德號村	wàn dé hào cūn	1
 萬德街道	wàn dé jiē dào	1
 萬德新村	wàn dé xīn cūn	1
@@ -53494,6 +53495,7 @@ sort: by_weight
 萬盛街道	wàn shèng jiē dào	1
 萬盛山莊	wàn shèng shān zhuāng	1
 萬勝永鄉	wàn shèng yǒng xiāng	1
+萬石坑村	wàn shí kēng cūn	1
 萬仕橋村	wàn shì qiáo cūn	1
 萬壽街道	wàn shòu jiē dào	1
 萬壽橋村	wàn shòu qiáo cūn	1
@@ -60515,8 +60517,6 @@ sort: by_weight
 一間房村	yì jiān fáng cūn	1
 一建新村	yī jiàn xīn cūn	1
 一街新村	yī jiē xīn cūn	1
-衣錦過鄉	yì jǐn guò xiāng	1
-衣錦還鄉	yì jǐn huán xiāng	1
 以金佐鎮	yǐ jīn zuǒ zhèn	1
 義井街道	yì jǐng jiē dào	1
 怡景新村	yí jǐng xīn cūn	1
@@ -65262,13 +65262,13 @@ sort: by_weight
 高寨子街道	gāo zhài zi jiē dào	1
 葛店開發區	gé diàn kāi fā qū	1
 葛家滿族鄉	gé jiā mǎn zú xiāng	1
-歌樂山街道	gē lè shān jiē dào	1
 格球山農場	gé qiú shān nóng chǎng	1
 格日僧蘇木	gé rì sēng sū mù
 各蘇木鄉鎮	gè sū mù xiāng zhèn	1
 各塔埠街道	gè tǎ bù jiē dào	1
 各鄉鎮街道	gè xiāng zhèn jiē dào	1
 革新街街道	gé xīn jiē jiē dào	1
+歌樂山街道	gē yuè shān jiē dào	1
 革鎮堡街道	gé zhèn bǎo jiē dào	1
 葛洲壩街道	gé zhōu bà jiē dào	1
 根德營子鄉	gēn dé yíng zi xiāng	1
@@ -70663,7 +70663,7 @@ sort: by_weight
 音河達斡爾鄂溫克民族鄉	yīn hé dá wò ěr è wēn kè mín zú xiāng	1
 永吉經濟開發區特殊鄉鎮	yǒng jí jīng jì kāi fā qū tè shū xiāng zhèn	1
 豫東綜合物流產業聚集區	yù dōng zōng hé wù liú chǎn yè jù jí qū	1
-原平市石豹溝煤礦工礦區	yuán píng shì dàn bào gōu méi kuàng gōng kuàng qū	1
+原平市石豹溝煤礦工礦區	yuán píng shì shí bào gōu méi kuàng gōng kuàng qū	1
 月亮河彝族布依族苗族鄉	yuè liàng hé yí zú bù yī zú miáo zú xiāng	1
 雲南省嵩明職業教育基地	yún nán shěng sōng míng zhí yè jiào yù jī dì	1
 湛江市坡頭區官渡工業園	zhàn jiāng shì pō tóu qū guān dù gōng yè yuán	1

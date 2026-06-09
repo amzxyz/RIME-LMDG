@@ -4766,7 +4766,7 @@ sort: by_weight
 瑙蒂科	nǎo dì kē	98
 惱鱷屬	nǎo è shǔ	58
 內蝨科	nèi shī kē	61
-泥巴魚	ní bā yú	54
+泥巴魚	ní ba yú	54
 擬白魚	nǐ bái yú	66
 泥蟾科	ní chán kē	100
 擬蟾魚	nǐ chán yú	55
@@ -4813,8 +4813,8 @@ sort: by_weight
 擬鮃屬	nǐ píng shǔ	92
 泥萍屬	ní píng shǔ	71
 尼普科	ní pǔ kē	102
-泥鰍屬	ní qiū shǔ	59
-泥鰍魚	ní qiū yú	123
+泥鰍屬	ní qiu shǔ	59
+泥鰍魚	ní qiu yú	123
 擬雀屬	nǐ què shǔ	98
 坭蛇屬	ní shé shǔ	60
 泥蛇屬	ní shé shǔ	55
@@ -14295,7 +14295,7 @@ sort: by_weight
 副南鰍屬	fù nán qiū shǔ	5
 輻泥蛤屬	fú ní há shǔ	6
 負泥甲科	fù ní jiǎ kē	1
-副泥鰍屬	fù ní qiū shǔ	6
+副泥鰍屬	fù ní qiu shǔ	6
 副擬鰨屬	fù nǐ tǎ shǔ	7
 富寧藤屬	fù níng téng shǔ	1
 甫弄蝶屬	fǔ nòng dié shǔ	5
@@ -38306,7 +38306,7 @@ sort: by_weight
 赤綠海豬魚	chì lǜ hǎi zhū yú	1
 齒片玉鳳花	chǐ piàn yù fèng huā	1
 赤鰭棘鱗魚	chì qí jí lín yú	1
-痴情小泥鰍	chī qíng xiǎo ní qiū	1
+痴情小泥鰍	chī qíng xiǎo ní qiu	1
 齒球鳳梨屬	chǐ qiú fèng lí shǔ	1
 翅拳師螳屬	chì quán shī táng shǔ	1
 赤色鋸竺鯛	chì sè jù zhú diāo	1
@@ -50949,12 +50949,12 @@ sort: by_weight
 擬鞘線蟲屬	nǐ qiào xiàn chóng shǔ	1
 擬鍬形蟲科	nǐ qiāo xíng chóng kē	1
 擬青石斑魚	nǐ qīng shí bān yú	1
-泥鰍單極蟲	ní qiū dān jí chóng	1
-泥鰍好棒棒	ní qiū hǎo bàng bàng	1
+泥鰍單極蟲	ní qiu dān jí chóng	1
+泥鰍好棒棒	ní qiu hǎo bàng bàng	1
 擬丘頭鯰屬	nǐ qiū tóu nián shǔ	1
-泥鰍養殖網	ní qiū yǎng zhí wǎng	1
+泥鰍養殖網	ní qiu yǎng zhí wǎng	1
 擬鰍羽油鯰	nǐ qiū yǔ yóu nián	1
-泥鰍鑽豆腐	ní qiū zuān dòu fu	1
+泥鰍鑽豆腐	ní qiu zuān dòu fu	1
 擬屈翅螢屬	nǐ qū chì yíng shǔ	1
 擬雀啄果鳥	nǐ què zhuó guǒ niǎo	1
 擬髯棘花鮨	nǐ rán jí huā yì	1
@@ -51152,7 +51152,6 @@ sort: by_weight
 黏液桿菌屬	nián yè gǎn jūn shǔ	1
 黏液蛞蝓科	nián yè kuò yú kē	1
 黏液球菌科	nián yè qiú jūn kē	1
-粘液球菌科	nián yè qiú jūn kē	1
 念珠鳳仙花	niàn zhū fèng xiān huā	1
 念珠菊石科	niàn zhū jú shí kē	1
 念珠冷水花	niàn zhū lěng shuǐ huā	1
@@ -51717,11 +51716,11 @@ sort: by_weight
 瀑布矛麗魚	pù bù máo lì yú	1
 瀑布雨燕屬	pù bù yǔ yàn shǔ	1
 蒲登溪蟹屬	pú dēng xī xiè shǔ	1
-鋪地蝙蝠草	pù dì biān fú cǎo	1
+鋪地蝙蝠草	pū dì biān fú cǎo	1
 舖地錦竹草	pù dì jǐn zhú cǎo	1
-鋪地狼尾草	pù dì láng wěi cǎo	1
+鋪地狼尾草	pū dì láng wěi cǎo	1
 匍地蛇根草	pú dì shé gēn cǎo	1
-鋪地蜈蚣屬	pù dì wú gōng shǔ	1
+鋪地蜈蚣屬	pū dì wú gōng shǔ	1
 舖地蜈蚣屬	pù dì wú gōng shǔ	1
 普爾塔龍屬	pǔ ěr tǎ lóng shǔ	1
 匍蜚蠊總科	pú fěi lián zǒng kē	1
@@ -55219,7 +55218,7 @@ sort: by_weight
 糖單孢菌屬	táng dān bāo jūn shǔ	1
 糖多孢菌屬	táng duō bāo jūn shǔ	1
 唐古拉苔草	táng gǔ lā tái cǎo	1
-唐海小泥鰍	táng hǎi xiǎo ní qiū	1
+唐海小泥鰍	táng hǎi xiǎo ní qiu	1
 唐加拉雀屬	táng jiā lā què shǔ	1
 唐納雀鵐屬	táng nà què wú shǔ	1
 塘棲尾孢蟲	táng qī wěi bāo chóng	1
@@ -60720,6 +60719,7 @@ sort: by_weight
 瞻星錫伯鯰	zhān xīng xī bó nián	1
 展須野螟屬	zhǎn xū yě míng shǔ	1
 展葉鳳仙花	zhǎn yè fèng xiān huā	1
+粘液球菌科	zhān yè qiú jūn kē	1
 展羽假瘤蕨	zhǎn yǔ jiǎ liú jué	1
 詹札克鯨屬	zhān zhá kè jīng shǔ	1
 展枝唐松草	zhǎn zhī táng sōng cǎo	1
@@ -62238,7 +62238,7 @@ sort: by_weight
 巴拉圭細脂鯉	bā lā guī xì zhī lǐ	1
 巴拉拿大鉤鯰	bā lā ná dà gōu nián	1
 巴拉那兔脂鯉	bā lā nà tù zhī lǐ	1
-巴拉萬石松屬	bā lā wàn dàn sōng shǔ	1
+巴拉萬石松屬	bā lā wàn shí sōng shǔ	1
 巴拉望缺鰭鯰	bā lā wàng quē qí nián	1
 巴拉望苔鼩屬	bā lā wàng tái qú shǔ	1
 巴拉烏爾龍屬	bā lā wū ěr lóng shǔ	1
@@ -63646,7 +63646,7 @@ sort: by_weight
 大眾新甲殼蟲	dà zhòng xīn jiǎ ké chóng	1
 大錐體康吉鰻	dà zhuī tǐ kāng jí mán	1
 帶斑䲁杜父魚	dài bān wèi dù fù yú	1
-呆呆泥巴鯉魚	dāi dāi ní bā lǐ yú	1
+呆呆泥巴鯉魚	dāi dāi ní ba lǐ yú	1
 帶管蝸牛亞科	dài guǎn wō niú yà kē	1
 帶龍佔麗魚屬	dài lóng zhàn lì yú shǔ	1
 戴娜角鮟鱇屬	dài nà jiǎo ān kāng shǔ	1
@@ -64383,9 +64383,8 @@ sort: by_weight
 復膜孢酵母科	fù mó bāo jiào mǔ kē	1
 復膜孢酵母屬	fù mó bāo jiào mǔ shǔ	1
 富妮灰蝶亞科	fù nī huī dié yà kē	1
-副泥鰍粘體蟲	fù ní qiū zhān tǐ chóng	1
+副泥鰍粘體蟲	fù ní qiu zhān tǐ chóng	1
 副黏液病毒科	fù nián yè bìng dú kē	1
-副粘液病毒科	fù nián yè bìng dú kē	1
 腹瓢鰕虎魚屬	fù piáo xiā hǔ yú shǔ	1
 副球孢子菌屬	fù qiú bāo zǐ jūn shǔ	1
 輻射海百合科	fú shè hǎi bǎi hé kē	1
@@ -64432,6 +64431,7 @@ sort: by_weight
 浮游藍絲藻屬	fú yóu lán sī zǎo shǔ	1
 副原腹吸鰍屬	fù yuán fù xī qiū shǔ	1
 腹盞喉盤魚屬	fù zhǎn hóu pán yú shǔ	1
+副粘液病毒科	fù zhān yè bìng dú kē	1
 副直口樸麗魚	fù zhí kǒu pǔ lì yú	1
 附肢炭殼菌屬	fù zhī tàn ké jūn shǔ	1
 副朱里桑貝屬	fù zhū lǐ sāng bèi shǔ	1
@@ -67555,8 +67555,6 @@ sort: by_weight
 黏膠球形菌科	nián jiāo qiú xíng jūn kē	1
 黏身索深鼬魚	nián shēn suǒ shēn yòu yú	1
 黏液乳桿菌屬	nián yè rǔ gǎn jūn shǔ	1
-粘液乳桿菌屬	nián yè rǔ gǎn jūn shǔ	1
-粘液雙邊凹螺	nián yè shuāng biān āo luó	1
 捻轉血矛線蟲	niǎn zhuǎn xuè máo xiàn chóng	1
 鳥氨酸微菌屬	niǎo ān suān wēi jūn shǔ	1
 鳥斑隆頭麗魚	niǎo bān lóng tóu lì yú	1
@@ -67938,7 +67936,7 @@ sort: by_weight
 青斑德州麗魚	qīng bān dé zhōu lì yú	1
 晴班福氏躄魚	qíng bān fú shì bì yú	1
 晴斑突頜麗魚	qíng bān tū hé lì yú	1
-青猴病病毒屬	qīng hóu bìng bìng dú shǔ	1
+青猴病病毒屬	qīng hóu bìng bing dú shǔ	1
 清境食植瓢蟲	qīng jìng shí zhí piáo chóng	1
 青鱗小沙丁魚	qīng lín xiǎo shā dīng yú	1
 青綠闊嘴蜂鳥	qīng lǜ kuò zuǐ fēng niǎo	1
@@ -68406,8 +68404,6 @@ sort: by_weight
 施邁斯內果屬	shī mài sī nèi guǒ shǔ	1
 施米德獅子魚	shī mǐ dé shī zi yú	1
 食泥甲姬蜂屬	shí ní jiǎ jī fēng shǔ	1
-嗜粘液蛞蝓科	shì nián yè kuò yú kē	1
-嗜粘液蛞蝓屬	shì nián yè kuò yú shǔ	1
 噬脯氨酸菌屬	shì pú ān suān jūn shǔ	1
 石牆乳桿菌屬	shí qiáng rǔ gǎn jūn shǔ	1
 食芹巖雅羅魚	shí qín yán yǎ luó yú	1
@@ -68471,6 +68467,8 @@ sort: by_weight
 始源大花蚤屬	shǐ yuán dà huā zǎo shǔ	1
 始原靈貓獸屬	shǐ yuán líng māo shòu shǔ	1
 始源小菊虎屬	shǐ yuán xiǎo jú hǔ shǔ	1
+嗜粘液蛞蝓科	shì zhān yè kuò yú kē	1
+嗜粘液蛞蝓屬	shì zhān yè kuò yú shǔ	1
 食植瓢蟲亞科	shí zhí piáo chóng yà kē	1
 始中國羽龍屬	shǐ zhōng guó yǔ lóng shǔ	1
 飾妝背斜眼䲁	shì zhuāng bèi xié yǎn wèi	1
@@ -69302,7 +69300,7 @@ sort: by_weight
 微腺叉牙鯰屬	wēi xiàn chā yá nián shǔ	1
 微小奧拿吸蟲	wēi xiǎo ào ná xī chóng	1
 微小楚克拉蟲	wēi xiǎo chǔ kè lā chóng	1
-微笑的回回魚	wēi xiào de huí huí yú	1
+微笑的回回魚	wēi xiào de huí hui yú	1
 微小噬菌體科	wēi xiǎo shì jūn tǐ kē	1
 微小雙邊凹螺	wēi xiǎo shuāng biān āo luó	1
 微小微莖吸蟲	wēi xiǎo wēi jīng xī chóng	1
@@ -70702,6 +70700,8 @@ sort: by_weight
 展鰭真巨口魚	zhǎn qí zhēn jù kǒu yú	1
 詹氏直線脂鯉	zhān shì zhí xiàn zhī lǐ	1
 瞻星大陶樂鯰	zhān xīng dà táo lè nián	1
+粘液乳桿菌屬	zhān yè rǔ gǎn jūn shǔ	1
+粘液雙邊凹螺	zhān yè shuāng biān āo luó	1
 展枝玉葉金花	zhǎn zhī yù yè jīn huā	1
 脹管玉葉金花	zhàng guǎn yù yè jīn huā	1
 張吉營錦州鳥	zhāng jí yíng jǐn zhōu niǎo	1
@@ -71509,10 +71509,10 @@ sort: by_weight
 副鏈腸錫葉吸蟲	fù liàn cháng xī yè xī chóng	1
 覆裂雲南金蓮花	fù liè yún nán jīn lián huā	1
 副矛鰭石首魚屬	fù máo qí shí shǒu yú shǔ	1
-副粘液病毒亞科	fù nián yè bìng dú yà kē	1
 副三角錐齒獸屬	fù sān jiǎo zhuī chǐ shòu shǔ	1
 富永沼銀漢魚屬	fù yǒng zhǎo yín hàn yú shǔ	1
 腹疣柄牛肝菌屬	fù yóu bǐng niú gān jūn shǔ	1
+副粘液病毒亞科	fù zhān yè bìng dú yà kē	1
 副爪哇閃皮蛇屬	fù zhǎo wā shǎn pí shé shǔ	1
 伽馬線形病毒科	gā mǎ xiàn xíng bìng dú kē	1
 蓋氏小體石脂鯉	gài shì xiǎo tǐ shí zhī lǐ	1
@@ -72153,7 +72153,7 @@ sort: by_weight
 肝去氧核糖核酸病毒科	gān qù yǎng hé táng hé suān bìng dú kē	1
 解支鏈澱粉芽胞桿菌屬	jiě zhī liàn diàn fěn yá bāo gǎn jūn shǔ	1
 巨型雙核糖核酸病毒科	jù xíng shuāng hé táng hé suān bìng dú kē	1
-南方菜豆花葉病病毒屬	nán fāng cài dòu huā yè bìng bìng dú shǔ	1
+南方菜豆花葉病病毒屬	nán fāng cài dòu huā yè bìng bing dú shǔ	1
 葡萄孢菌烏爾米耶病毒科	pú táo bāo jūn wū ěr mǐ yé bìng dú kē	1
 藻類去氧核糖核酸病毒科	zǎo lèi qù yǎng hé táng hé suān bìng dú kē	1
 正肝去氧核糖核酸病毒屬	zhèng gān qù yǎng hé táng hé suān bìng dú shǔ	1
