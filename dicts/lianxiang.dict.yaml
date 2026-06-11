@@ -589,6 +589,7 @@ sort: by_weight
 安全保障权	ān quán bǎo zhàng quán	100
 安全边际高	ān quán biān jì gāo	100
 安全出口灯	ān quán chū kǒu dēng	100
+安全大检查	ān quán dà jiǎn chá	100
 安全大于天	ān quán dà yú tiān	100
 安全带插扣	ān quán dài chā kòu	100
 安全地进行	ān quán de jìn xíng	100
@@ -7513,6 +7514,7 @@ sort: by_weight
 车辆的灯光	chē liàng de dēng guāng	100
 车辆的动力	chē liàng de dòng lì	100
 车辆的管理	chē liàng de guǎn lǐ	100
+车辆的检查	chē liàng de jiǎn chá	100
 车辆的轮胎	chē liàng de lún tāi	100
 车辆的配置	chē liàng de pèi zhì	100
 车辆的刹车	chē liàng de shā chē	100
@@ -14152,6 +14154,7 @@ sort: by_weight
 顶起半边天	dǐng qǐ bàn biān tiān	100
 定期的保养	dìng qī de bǎo yǎng	100
 定期的复查	dìng qī de fù chá	100
+定期的检查	dìng qī de jiǎn chá	100
 定期的维护	dìng qī de wéi hù	100
 定期国会法	dìng qī guó huì fǎ	100
 丁清祥铜像	dīng qīng xiáng tóng xiàng	100
@@ -29870,6 +29873,7 @@ sort: by_weight
 火之丸相扑	huǒ zhī wán xiàng pū	100
 获重大突破	huò zhòng dà tū pò	100
 活捉张三郎	huó zhuō zhāng sān láng	100
+活字印刷术	huó zì yìn shuā shù	100
 火足岩非鲫	huǒ zú yán fēi jì	100
 基阿连山脉	jī ā lián shān mài	100
 集安博物馆	jí ān bó wù guǎn	100
@@ -32218,12 +32222,14 @@ sort: by_weight
 监督不行届	jiān dū bù xíng jiè	100
 监督管理科	jiān dū guǎn lǐ kē	100
 监督和管理	jiān dū hé guǎn lǐ	100
+监督和检查	jiān dū hé jiǎn chá	100
 监督和控制	jiān dū hé kòng zhì	100
 监督和指导	jiān dū hé zhǐ dǎo	100
 减毒活疫苗	jiǎn dú huó yì miáo	100
 监督检查室	jiān dū jiǎn chá shì	100
 监督式学习	jiān dū shì xué xí	100
 监督性监测	jiān dū xìng jiān cè	100
+监督与检查	jiān dū yǔ jiǎn chá	100
 尖端的技术	jiān duān de jì shù	100
 尖端的科技	jiān duān de kē jì	100
 尖端恐惧症	jiān duān kǒng jù zhèng	100
@@ -39692,6 +39698,7 @@ sort: by_weight
 礼部员外郎	lǐ bù yuán wài láng	100
 吏部左侍郎	lì bù zuǒ shì láng	100
 礼部左侍郎	lǐ bù zuǒ shì láng	100
+力测量检查	lì cè liáng jiǎn chá	100
 离差的度量	lí chà de dù liàng	100
 理查特结构	lǐ chá tè jié gòu	100
 力长度关系	lì cháng dù guān xì	100
@@ -56019,6 +56026,7 @@ sort: by_weight
 设备的供应	shè bèi de gōng yìng	100
 设备的管理	shè bèi de guǎn lǐ	100
 设备的价格	shè bèi de jià gé	100
+设备的检查	shè bèi de jiǎn chá	100
 设备的结构	shè bèi de jié gòu	100
 设备的开发	shè bèi de kāi fā	100
 设备的控制	shè bèi de kòng zhì	100
@@ -71110,6 +71118,7 @@ sort: by_weight
 细致的工作	xì zhì de gōng zuò	100
 细致的观察	xì zhì de guān chá	100
 细致地观察	xì zhì de guān chá	100
+细致的检查	xì zhì de jiǎn chá	100
 细致的讲解	xì zhì de jiǎng jiě	100
 细致的描绘	xì zhì de miáo huì	100
 细致的设计	xì zhì de shè jì	100
@@ -80546,6 +80555,7 @@ sort: by_weight
 影帝张家辉	yǐng dì zhāng jiā huī	100
 影帝周润发	yǐng dì zhōu rùn fā	100
 影碟出租店	yǐng dié chū zū diàn	100
+应定期检查	yīng dìng qī jiǎn chá	100
 英东体育场	yīng dōng tǐ yù chǎng	100
 英东体育馆	yīng dōng tǐ yù guǎn	100
 英东游泳馆	yīng dōng yóu yǒng guǎn	100
@@ -98878,6 +98888,7 @@ sort: by_weight
 当带三尺之剑	dāng dài sān chǐ zhī jiàn	100
 当代资本主义	dāng dài zī běn zhǔ yì	100
 党的根本宗旨	dǎng de gēn běn zōng zhǐ	100
+党的纪律检查	dǎng de jì lǜ jiǎn chá	100
 党的纪律建设	dǎng de jì lǜ jiàn shè	100
 党的建设缺失	dǎng de jiàn shè quē shī	100
 党的性质宗旨	dǎng de xìng zhì zōng zhǐ	100
@@ -122246,6 +122257,7 @@ sort: by_weight
 器质性妄想性	qì zhì xìng wàng xiǎng xìng	100
 气质与众不同	qì zhì yǔ zhòng bù tóng	100
 期中财务报表	qī zhōng cái wù bào biǎo	100
+期中教学检查	qī zhōng jiào xué jiǎn chá	100
 期中考试成绩	qī zhōng kǎo shì chéng jì	100
 期中考试试卷	qī zhōng kǎo shì shì juàn	100
 期中考试总结	qī zhōng kǎo shì zǒng jié	100
@@ -150815,6 +150827,7 @@ sort: by_weight
 除却半夏名异功	chú què bàn xià míng yì gōng	100
 初入江湖的少侠	chū rù jiāng hú de shǎo xiá	100
 出入境办证大厅	chū rù jìng bàn zhèng dà tīng	100
+出入境边防检查	chū rù jìng biān fáng jiǎn chá	100
 出入境管理大队	chū rù jìng guǎn lǐ dà duì	100
 出入境管理支队	chū rù jìng guǎn lǐ zhī duì	100
 出入境接待大厅	chū rù jìng jiē dài dà tīng	100
@@ -152926,6 +152939,7 @@ sort: by_weight
 短暂性肢体麻痹	duǎn zàn xìng zhī tǐ má bì	100
 短暂性中暑疲劳	duǎn zàn xìng zhòng shǔ pí láo	100
 端着丝粒染色体	duān zhe sī lì rǎn sè tǐ	100
+对比敏感度检查	duì bǐ mǐn gǎn dù jiǎn chá	100
 对称式加密方法	duì chèn shì jiā mì fāng fǎ	100
 对称性掌跖角质	duì chèn xìng zhǎng zhí jiǎo zhì	100
 对待爱情的态度	duì dài ài qíng de tài dù	100
@@ -159165,6 +159179,7 @@ sort: by_weight
 认真负责的态度	rèn zhēn fù zé de tài dù	100
 认真过好每一天	rèn zhēn guò hǎo měi yì tiān	100
 认真和我谈恋爱	rèn zhēn hé wǒ tán liàn ài	100
+认真细致的检查	rèn zhēn xì zhì de jiǎn chá	100
 认知不协调理论	rèn zhī bù xié diào lǐ lùn	100
 认知发展阶段论	rèn zhī fā zhǎn jiē duàn lùn	100
 忍字头上一把刀	rěn zì tóu shàng yì bǎ dāo	100
