@@ -489,6 +489,7 @@ sort: by_weight
 按工程进度	àn gōng chéng jìn dù	100
 安宫牛黄栓	ān gōng niú huáng shuān	100
 按国籍分类	àn guó jí fēn lèi	100
+安国药王庙	ān guó yào wáng miào	100
 安河桥北站	ān hé qiáo běi zhàn	100
 暗黑魔导师	àn hēi mó dǎo shī	100
 暗黑山老妖	àn hēi shān lǎo yāo	100
@@ -1576,6 +1577,7 @@ sort: by_weight
 白天与夜晚	bái tiān yǔ yè wǎn	100
 白头不相离	bái tóu bù xiāng lí	100
 白头山密营	bái tóu shān mì yíng	100
+白头山天池	bái tóu shān tiān chí	100
 白头翁茎叶	bái tóu wēng jīng yè	100
 白头翁汤方	bái tóu wēng tāng fāng	100
 白头翁止痢	bái tóu wēng zhǐ lì	100
@@ -2699,6 +2701,7 @@ sort: by_weight
 北国商城站	běi guó shāng chéng zhàn	100
 北国先天下	běi guó xiān tiān xià	100
 北国以色列	běi guó yǐ sè liè	100
+北海及团城	běi hǎi jí tuán chéng	100
 被害妄想型	bèi hài wàng xiǎng xíng	100
 贝寒尔日数	bèi hán ěr rì shù	100
 被汗水浸湿	bèi hàn shuǐ jìn shī	100
@@ -2771,6 +2774,7 @@ sort: by_weight
 背景的颜色	bèi jǐng de yán sè	100
 北京等城市	běi jīng děng chéng shì	100
 北京冬奥村	běi jīng dōng ào cūn	100
+北京动物园	běi jīng dòng wù yuán	100
 北京东燕郊	běi jīng dōng yān jiāo	100
 北京房山区	běi jīng fáng shān qū	100
 北京丰台区	běi jīng fēng tái qū	100
@@ -4281,6 +4285,7 @@ sort: by_weight
 冰凉的触感	bīng liáng de chù gǎn	100
 冰凉的小手	bīng liáng de xiǎo shǒu	100
 丙亮脑啡肽	bǐng liàng nǎo fēi tài	100
+炳灵寺石窟	bǐng líng sì shí kū	100
 冰龙超级版	bīng lóng chāo jí bǎn	100
 并没有大碍	bìng méi yǒu dà ài	100
 并没有交集	bìng méi yǒu jiāo jí	100
@@ -4470,6 +4475,7 @@ sort: by_weight
 博落回肿痒	bó luò huí zhǒng yǎng	100
 菠萝蜜多斩	bō luó mì duō zhǎn	100
 菠萝蜜奶茶	bō luó mì nǎi chá	100
+浡泥国王墓	bó ní guó wáng mù	100
 伯努利试验	bó nǔ lì shì yàn	100
 伯努利推移	bó nǔ lì tuī yí	100
 薄情的世界	bó qíng de shì jiè	100
@@ -5991,6 +5997,7 @@ sort: by_weight
 采用新工艺	cǎi yòng xīn gōng yì	100
 采玉大勋章	cǎi yù dà xūn zhāng	100
 财源滚滚来	cái yuán gǔn gǔn lái	100
+蔡元培故居	cài yuán péi gù jū	100
 财园信贷通	cái yuán xìn dài tōng	100
 彩云国物语	cǎi yún guó wù yǔ	100
 踩在棉花上	cǎi zài mián huā shàng	100
@@ -6192,6 +6199,7 @@ sort: by_weight
 苍鹰教练机	cāng yīng jiào liàn jī	100
 沧州节度使	cāng zhōu jié dù shǐ	100
 沧州开发区	cāng zhōu kāi fā qū	100
+沧州铁狮子	cāng zhōu tiě shī zi	100
 草包族科学	cǎo bāo zú kē xué	100
 曹操的儿子	cáo cāo de ér zi	100
 曹操的军队	cáo cāo de jūn duì	100
@@ -6638,8 +6646,10 @@ sort: by_weight
 长白山宾馆	cháng bái shān bīn guǎn	100
 长白山的雪	cháng bái shān de xuě	100
 长白山飞狐	cháng bái shān fēi hú	100
+长白山瀑布	cháng bái shān pù bù	100
 长白山鼠兔	cháng bái shān shǔ tù	100
 长白山橐吾	cháng bái shān tuó wú	100
+长白山温泉	cháng bái shān wēn quán	100
 长白山羊茅	cháng bái shān yáng máo	100
 长白山罂粟	cháng bái shān yīng sù	100
 长白山珍坊	cháng bái shān zhēn fāng	100
@@ -6674,6 +6684,7 @@ sort: by_weight
 唱出爱火花	chàng chū ài huǒ huā	100
 长处和短处	cháng chù hé duǎn chù	100
 唱出味道来	chàng chū wèi dào lái	100
+长川一号墓	cháng chuān yī hào mù	100
 长春朝阳区	cháng chūn cháo yáng qū	100
 长春的天气	cháng chūn de tiān qì	100
 长春高新区	cháng chūn gāo xīn qū	100
@@ -8146,6 +8157,8 @@ sort: by_weight
 成珠小凤饼	chéng zhū xiǎo fèng bǐng	100
 程庄路北口	chéng zhuāng lù běi kǒu	100
 成自泸高速	chéng zì lú gāo sù	100
+城子山山城	chéng zǐ shān shān chéng	100
+城子山遗址	chéng zǐ shān yí zhǐ	100
 城子崖遗址	chéng zǐ yá yí zhǐ	100
 成自宜高铁	chéng zì yí gāo tiě	100
 成最大赢家	chéng zuì dà yíng jiā	100
@@ -8553,6 +8566,7 @@ sort: by_weight
 冲绳防卫局	chōng shéng fáng wèi jú	100
 冲绳红烧肉	chōng shéng hóng shāo ròu	100
 冲绳料理店	chōng shéng liào lǐ diàn	100
+崇圣寺三塔	chóng shèng sì sān tǎ	100
 虫实附地菜	chóng shí fù dì cài	100
 充填采矿法	chōng tián cǎi kuàng fǎ	100
 充填开采法	chōng tián kāi cǎi fǎ	100
@@ -10257,6 +10271,7 @@ sort: by_weight
 大般涅槃经	dà bān niè pán jīng	100
 搭伴式养老	dā bàn shì yǎng lǎo	100
 大半夏汤方	dà bàn xià tāng fāng	100
+大报恩寺碑	dà bào ēn sì bēi	100
 大报恩寺塔	dà bào ēn sì tǎ	100
 打报警电话	dǎ bào jǐng diàn huà	100
 打爆你的头	dǎ bào nǐ de tóu	100
@@ -10402,6 +10417,7 @@ sort: by_weight
 打电话不接	dǎ diàn huà bù jiē	100
 打电话我爸	dǎ diàn huà wǒ bà	100
 打点计时器	dǎ diǎn jì shí qì	100
+大甸子遗址	dà diàn zǐ yí zhǐ	100
 打电子游戏	dǎ diàn zǐ yóu xì	100
 大调单簧管	dà diào dān huáng guǎn	100
 大调回旋曲	dà diào huí xuán qǔ	100
@@ -10436,6 +10452,7 @@ sort: by_weight
 大分子物质	dà fēn zǐ wù zhì	100
 达峰容积比	dá fēng róng jī bǐ	100
 达峰时间比	dá fēng shí jiān bǐ	100
+大佛寺石窟	dà fó sì shí kū	100
 大附子一枚	dà fù zǐ yì méi	100
 大概率事件	dà gài lǜ shì jiàn	100
 大港分公司	dà gǎng fēn gōng sī	100
@@ -10459,6 +10476,7 @@ sort: by_weight
 打个招呼吧	dǎ gè zhāo hu ba	100
 大功率电机	dà gōng lǜ diàn jī	100
 打狗看主人	dǎ gǒu kàn zhǔ rén	100
+大沽口炮台	dà gū kǒu pào tái	100
 大规模关店	dà guī mó guān diàn	100
 大规模集会	dà guī mó jí huì	100
 大规模监听	dà guī mó jiān tīng	100
@@ -10504,6 +10522,7 @@ sort: by_weight
 打好预防针	dǎ hǎo yù fáng zhēn	100
 打好主动仗	dǎ hǎo zhǔ dòng zhàng	100
 打好组合拳	dǎ hǎo zǔ hé quán	100
+大河村遗址	dà hé cūn yí zhǐ	100
 打虎将李忠	dǎ hǔ jiāng lǐ zhōng	100
 打呼噜贼响	dǎ hū lū zéi xiǎng	100
 打虎亲兄弟	dǎ hǔ qīn xiōng dì	100
@@ -10662,6 +10681,7 @@ sort: by_weight
 大面积延误	dà miàn jī yán wù	100
 大缅族主义	dà miǎn zú zhǔ yì	100
 大民族主义	dà mín zú zhǔ yì	100
+大明宫遗址	dà míng gōng yí zhǐ	100
 大明混一图	dà míng hùn yī tú	100
 打磨到极致	dǎ mó dào jí zhì	100
 打磨过似的	dǎ mó guò shì de	100
@@ -10836,6 +10856,7 @@ sort: by_weight
 打完疫苗后	dǎ wán yì miáo hòu	100
 大网膜机化	dà wǎng mó jī huà	100
 大卫长阎甲	dà wèi cháng yán jiǎ	100
+大汶口遗址	dà wèn kǒu yí zhǐ	100
 大乌苏里岛	dà wū sū lǐ dǎo	100
 大希腊主义	dà xī là zhǔ yì	100
 大西洋主义	dà xī yáng zhǔ yì	100
@@ -11015,6 +11036,7 @@ sort: by_weight
 待风平浪静	dài fēng píng làng jìng	100
 带负荷试车	dài fù hè shì chē	100
 带狗上班日	dài gǒu shàng bān rì	100
+岱海遗址群	dài hǎi yí zhǐ qún	100
 代号基亚斯	dài hào jī yà sī	100
 代号美洲豹	dài hào měi zhōu bào	100
 代号十三钗	dài hào shí sān chāi	100
@@ -11207,6 +11229,7 @@ sort: by_weight
 单变油浸法	dān biàn yóu jìn fǎ	100
 单兵轻武器	dān bīng qīng wǔ qì	100
 单兵携行具	dān bīng xié xíng jù	100
+澹泊敬诚殿	dàn bó jìng chéng diàn	100
 淡泊以明志	dàn bó yǐ míng zhì	100
 但不幸的是	dàn bú xìng de shì	100
 单步骤反应	dān bù zhòu fǎn yìng	100
@@ -12223,6 +12246,7 @@ sort: by_weight
 的身材不错	de shēn cái bú cuò	100
 的神奇冒险	de shén qí mào xiǎn	100
 的生活纪录	de shēng huó jì lù	100
+德胜门箭楼	dé shèng mén jiàn lóu	100
 得势不得分	dé shì bù dé fēn	100
 得势不饶人	dé shì bù ráo rén	100
 的是非对错	de shì fēi duì cuò	100
@@ -13164,6 +13188,7 @@ sort: by_weight
 地下采石场	dì xià cǎi shí chǎng	100
 底下的评论	dǐ xià de píng lùn	100
 地下共同管	dì xià gòng tóng guǎn	100
+地下熔岩洞	dì xià róng yán dòng	100
 地下室底板	dì xià shì dǐ bǎn	100
 地下室抗浮	dì xià shì kàng fú	100
 地下室手记	dì xià shì shǒu jì	100
@@ -13343,6 +13368,7 @@ sort: by_weight
 敌在本能寺	dí zài běn néng sì	100
 地藏本行经	dì zàng běn háng jīng	100
 地藏十轮经	dì zàng shí lún jīng	100
+地藏寺经幢	dì zàng sì jīng chuáng	100
 地藏占察经	dì zàng zhàn chá jīng	100
 地泽二十四	dì zé èr shí sì	100
 嫡长继承制	dí zhǎng jì chéng zhì	100
@@ -14405,6 +14431,7 @@ sort: by_weight
 东日清脂灵	dōng rì qīng zhī líng	100
 冻融裂解物	dòng róng liè jiě wù	100
 动筛跳汰机	dòng shāi tiào tài jī	100
+东山嘴遗址	dōng shān zuǐ yí zhǐ	100
 动生电动势	dòng shēng diàn dòng shì	100
 东圣止咳灵	dōng shèng zhǐ ké líng	100
 董事会换届	dǒng shì huì huàn jiè	100
@@ -14416,9 +14443,11 @@ sort: by_weight
 董事长一职	dǒng shì zhǎng yì zhí	100
 董事长职务	dǒng shì zhǎng zhí wù	100
 董事长助理	dǒng shì zhǎng zhù lǐ	100
+董氏砖雕墓	dǒng shì zhuān diāo mù	100
 动手的乐趣	dòng shǒu de lè qù	100
 动手的能力	dòng shǒu de néng lì	100
 动手又动脑	dòng shǒu yòu dòng nǎo	100
+东四清真寺	dōng sì qīng zhēn sì	100
 冬笋的滋味	dōng sǔn de zī wèi	100
 动态暗间隙	dòng tài àn jiàn xì	100
 动态和静态	dòng tài hé jìng tài	100
@@ -14487,6 +14516,7 @@ sort: by_weight
 东西方文明	dōng xi fāng wén míng	100
 东西方艺术	dōng xi fāng yì shù	100
 东西方中心	dōng xi fāng zhōng xīn	100
+东下冯遗址	dōng xià féng yí zhǐ	100
 东邪黄药师	dōng xié huáng yào shī	100
 洞穴震积岩	dòng xué zhèn jī yán	100
 东洋盟主论	dōng yáng méng zhǔ lùn	100
@@ -15430,6 +15460,7 @@ sort: by_weight
 多巴葡糖苷	duō bā pú táng gān	100
 多巴脱羧酶	duō bā tuō suō méi	100
 夺宝大作战	duó bǎo dà zuò zhàn	100
+多宝琉璃塔	duō bǎo liú lí tǎ	100
 夺宝冒险王	duó bǎo mào xiǎn wáng	100
 夺宝幸运星	duó bǎo xìng yùn xīng	100
 朵奔篾儿干	duǒ bēn miè ér gàn	100
@@ -15960,6 +15991,7 @@ sort: by_weight
 婀娜的身段	ē nuó de shēn duàn	100
 婀娜的身姿	ē nuó de shēn zī	100
 恶女罗曼死	è nǚ luó màn sǐ	100
+阿房宫遗址	ē páng gōng yí zhǐ	100
 鳄皮状鳞癣	è pí zhuàng lín xuǎn	100
 鄂齐尔图汗	è qí ěr tú hàn	100
 额前的碎发	é qián de suì fà	100
@@ -17374,6 +17406,7 @@ sort: by_weight
 妨害名誉罪	fáng hài míng yù zuì	100
 妨害作证罪	fáng hài zuò zhèng zuì	100
 芳贺优里亚	fāng hè yōu lǐ yà	100
+防洪纪念塔	fáng hóng jì niàn tǎ	100
 枋湖北二路	fāng hú běi èr lù	100
 防护等级高	fáng hù děng jí gāo	100
 防化兵指挥	fáng huà bīng zhǐ huī	100
@@ -18980,6 +19013,7 @@ sort: by_weight
 风力涡轮机	fēng lì wō lún jī	100
 凤梨佐鳗夷	fèng lí zuǒ mán yí	100
 枫蓼肠胃康	fēng liǎo cháng wèi kāng	100
+丰林保护区	fēng lín bǎo hù qū	100
 风林火山篇	fēng lín huǒ shān piān	100
 风铃的声音	fēng líng de shēng yīn	100
 风流绝畅图	fēng liú jué chàng tú	100
@@ -20458,6 +20492,7 @@ sort: by_weight
 甘露六烟酯	gān lù liù yān zhǐ	100
 甘露葡萄糖	gān lù pú táo táng	100
 甘露寺蜜璃	gān lù sì mì lí	100
+甘露寺铁塔	gān lù sì tiě tǎ	100
 甘露糖苷酶	gān lù táng gān méi	100
 甘露糖受体	gān lù táng shòu tǐ	100
 甘露陀罗尼	gān lù tuó luó ní	100
@@ -20846,6 +20881,7 @@ sort: by_weight
 高尔夫球具	gāo ěr fū qiú jù	100
 高尔夫物语	gāo ěr fū wù yǔ	100
 高尔基作品	gāo ěr jī zuò pǐn	100
+高尔山山城	gāo ěr shān shān chéng	100
 高法伯基金	gāo fǎ bó jī jīn	100
 高幡不动站	gāo fān bú dòng zhàn	100
 高防服务器	gāo fáng fú wù qì	100
@@ -21715,6 +21751,7 @@ sort: by_weight
 各有关部门	gè yǒu guān bù mén	100
 各有关单位	gè yǒu guān dān wèi	100
 各有关企业	gè yǒu guān qǐ yè	100
+阁院禅林寺	gé yuàn chán lín sì	100
 膈圆顶上升	gé yuán dǐng shàng shēng	100
 割圆多项式	gē yuán duō xiàng shì	100
 个月及以下	gè yuè jí yǐ xià	100
@@ -23047,6 +23084,7 @@ sort: by_weight
 古拜杜丽娜	gǔ bài dù lì nà	100
 古坂大魔王	gǔ bǎn dà mó wáng	100
 股暴跌事件	gǔ bào diē shì jiàn	100
+古北口长城	gǔ běi kǒu cháng chéng	100
 古北口提督	gǔ běi kǒu tí dū	100
 古本说话集	gǔ běn shuō huà jí	100
 固本延龄丹	gù běn yán líng dān	100
@@ -23057,12 +23095,14 @@ sort: by_weight
 钴博来霉素	gǔ bó lái méi sù	100
 谷不得下者	gǔ bù dé xià zhě	100
 古布金斯基	gǔ bù jīn sī jī	100
+古长城说碑	gǔ cháng chéng shuō bēi	100
 古长城遗址	gǔ cháng chéng yí zhǐ	100
 故尝试证明	gù cháng shì zhèng míng	100
 古车博物馆	gǔ chē bó wù guǎn	100
 古城顶遗址	gǔ chéng dǐng yí zhǐ	100
 古城荆棘王	gǔ chéng jīng jí wáng	100
 古城墙遗址	gǔ chéng qiáng yí zhǐ	100
+古城寨城址	gǔ chéng zhài chéng zhǐ	100
 古虫动物门	gǔ chóng dòng wù mén	100
 谷川登志夫	gǔ chuān dēng zhì fū	100
 骨脆性增加	gǔ cuì xìng zēng jiā	100
@@ -23128,6 +23168,7 @@ sort: by_weight
 骨肥大膨大	gǔ féi dà péng dà	100
 股份的转让	gǔ fèn de zhuǎn ràng	100
 古风式微笑	gǔ fēng shì wēi xiào	100
+古佛舍利塔	gǔ fó shè lì tǎ	100
 古夫金字塔	gǔ fū jīn zì tǎ	100
 骨感的身材	gǔ gǎn de shēn cái	100
 骨感的现实	gǔ gǎn de xiàn shí	100
@@ -23528,6 +23569,7 @@ sort: by_weight
 瓜德罗普岛	guā dé luó pǔ dǎo	100
 瓜分中国图	guā fēn zhōng guó tú	100
 胍基丁酰胺	guā jī dīng xiān àn	100
+挂甲山石刻	guà jiǎ shān shí kè	100
 寡居的一年	guǎ jū de yì nián	100
 栝蒌桂枝汤	guā lóu guì zhī tāng	100
 栝蒌牛蒡汤	guā lóu niú bàng tāng	100
@@ -23933,6 +23975,7 @@ sort: by_weight
 光脚穿皮鞋	guāng jiǎo chuān pí xié	100
 光洁的额头	guāng jié de é tóu	100
 光洁的皮肤	guāng jié de pí fū	100
+广开上王碑	guǎng kāi shàng wáng bēi	100
 广开土大王	guǎng kāi tǔ dà wáng	100
 广开土王碑	guǎng kāi tǔ wáng bēi	100
 光科网彗星	guāng kē wǎng huì xīng	100
@@ -24788,6 +24831,7 @@ sort: by_weight
 国民征用令	guó mín zhēng yòng lìng	100
 国民总所得	guó mín zǒng suǒ dé	100
 过命的交情	guò mìng de jiāo qíng	100
+郭沫若故居	guō mò ruò gù jū	100
 国木田独步	guó mù tián dú bù	100
 腘囊肿破裂	guó náng zhǒng pò liè	100
 国内第一台	guó nèi dì yī tái	100
@@ -26603,6 +26647,7 @@ sort: by_weight
 黑森林饼皇	hēi sēn lín bǐng huáng	100
 黑沙环新街	hēi shā huán xīn jiē	100
 黑砂糖布丁	hēi shā táng bù dīng	100
+黑山头城址	hēi shān tóu chéng zhǐ	100
 黑社会背景	hēi shè huì bèi jǐng	100
 黑社会势力	hēi shè huì shì lì	100
 黑社会主义	hēi shè huì zhǔ yì	100
@@ -27108,6 +27153,7 @@ sort: by_weight
 红星资本局	hóng xīng zī běn jú	100
 红胸黑翅萤	hóng xiōng hēi chì yíng	100
 红胸秋沙鸭	hóng xiōng qiū shā yā	100
+洪秀全故居	hóng xiù quán gù jū	100
 洪秀全演义	hóng xiù quán yǎn yì	100
 红学考证派	hóng xué kǎo zhèng pài	100
 红血球异常	hóng xuè qiú yì cháng	100
@@ -27142,6 +27188,7 @@ sort: by_weight
 轰炸机联队	hōng zhà jī lián duì	100
 红肿的眼睛	hóng zhǒng de yǎn jing	100
 洪仲丘事件	hóng zhòng qiū shì jiàn	100
+洪州窑遗址	hóng zhōu yáo yí zhǐ	100
 红柱角页岩	hóng zhù jiǎo yè yán	100
 哄自己开心	hǒng zì jǐ kāi xīn	100
 后白河法皇	hòu bái hé fǎ huáng	100
@@ -27287,6 +27334,7 @@ sort: by_weight
 后世界末日	hòu shì jiè mò rì	100
 后视镜外壳	hòu shì jìng wài ké	100
 后视镜支架	hòu shì jìng zhī jià	100
+猴石山遗址	hóu shí shān yí zhǐ	100
 后视摄像头	hòu shì shè xiàng tóu	100
 后使徒时代	hòu shǐ tú shí dài	100
 后实证主义	hòu shí zhèng zhǔ yì	100
@@ -27624,9 +27672,11 @@ sort: by_weight
 沪蓉西高速	hù róng xī gāo sù	100
 忽如远行客	hū rú yuǎn xíng kè	100
 湖森林公园	hú sēn lín gōng yuán	100
+壶山水神堂	hú shān shuǐ shén táng	100
 忽上忽下的	hū shàng hū xià de	100
 湖上升明月	hú shàng shēng míng yuè	100
 互射十二码	hù shè shí èr mǎ	100
+虎神枪记碑	hǔ shén qiāng jì bēi	100
 沪市成交量	hù shì chéng jiāo liàng	100
 护士的工作	hù shì de gōng zuò	100
 湖湿地公园	hú shī dì gōng yuán	100
@@ -27648,6 +27698,7 @@ sort: by_weight
 护庭十三队	hù tíng shí sān duì	100
 互通立交桥	hù tōng lì jiāo qiáo	100
 互通连接线	hù tōng lián jiē xiàn	100
+虎头关帝庙	hǔ tóu guān dì miào	100
 虎头鲸鱼鳍	hǔ tóu jīng yú qí	100
 湖头贤良祠	hú tóu xián liáng cí	100
 虎头湛金枪	hǔ tóu zhàn jīn qiāng	100
@@ -28112,6 +28163,10 @@ sort: by_weight
 化学云采网	huà xué yún cǎi wǎng	100
 滑雪运动员	huá xuě yùn dòng yuán	100
 化学治疗剂	huà xué zhì liáo jì	100
+华严寺壁藏	huá yán sì bì cáng	100
+华严寺壁画	huá yán sì bì huà	100
+华严寺辽塑	huá yán sì liáo sù	100
+华严寺塑像	huá yán sì sù xiàng	100
 华岩中心站	huá yán zhōng xīn zhàn	100
 华严宗三祖	huá yán zōng sān zǔ	100
 花样的年华	huā yàng de nián huá	100
@@ -30105,6 +30160,7 @@ sort: by_weight
 己庚辛壬癸	jǐ gēng xīn rén guǐ	100
 济公斗蟋蟀	jì gōng dòu xī shuài	100
 技工抛磨机	jì gōng pāo mó jī	100
+鸡公山遗址	jī gōng shān yí zhǐ	100
 技工室染色	jì gōng shì rǎn sè	100
 纪工委书记	jì gōng wěi shū jì	100
 及工作计划	jí gōng zuò jì huà	100
@@ -30459,6 +30515,7 @@ sort: by_weight
 激酶激酶类	jī méi jī méi lèi	100
 基梅里板块	jī méi lǐ bǎn kuài	100
 吉美前列素	jí měi qián liè sù	100
+蓟门烟树碑	jì mén yān shù bēi	100
 吉米巴特勒	jí mǐ bā tè lè	100
 吉米多维奇	jí mǐ duō wéi qí	100
 济米夫尼基	jì mǐ fū ní jī	100
@@ -30668,6 +30725,7 @@ sort: by_weight
 肌肉纤维化	jī ròu xiān wéi huà	100
 肌肉助推器	jī ròu zhù tuī qì	100
 积沙积石墓	jī shā jī shí mù	100
+纪山楚墓群	jì shān chǔ mù qún	100
 矶山沙耶加	jī shān shā yé jiā	100
 矶山沙也加	jī shān shā yě jiā	100
 积善有余庆	jī shàn yǒu yú qìng	100
@@ -31060,6 +31118,7 @@ sort: by_weight
 记忆的深处	jì yì de shēn chù	100
 记忆的炎夏	jì yì de yán xià	100
 记忆力评定	jì yì lì píng dìng	100
+稷益庙壁画	jì yì miào bì huà	100
 极易溶于水	jí yì róng yú shuǐ	100
 极一时之盛	jí yì shí zhī shèng	100
 记忆体泄漏	jì yì tǐ xiè lòu	100
@@ -33895,6 +33954,7 @@ sort: by_weight
 紧绷的状态	jǐn bēng de zhuàng tài	100
 紧闭的大门	jǐn bì de dà mén	100
 紧闭的双眼	jǐn bì de shuāng yǎn	100
+金鳖玉蝀桥	jīn biē yù dōng qiáo	100
 金箔验电器	jīn bó yàn diàn qì	100
 进步的阶梯	jìn bù de jiē tī	100
 进步的空间	jìn bù de kōng jiān	100
@@ -33955,6 +34015,7 @@ sort: by_weight
 劲道的面条	jìn dào de miàn tiáo	100
 金道贵金属	jīn dào guì jīn shǔ	100
 金德尔伯格	jīn dé ěr bó gé	100
+金灯寺石窟	jīn dēng sì shí kū	100
 近地球轨道	jìn dì qiú guǐ dào	100
 近地小行星	jìn dì xiǎo xíng xīng	100
 尽地主之谊	jìn dì zhǔ zhī yì	100
@@ -34076,6 +34137,7 @@ sort: by_weight
 近江屋事件	jìn jiāng wū shì jiàn	100
 锦江小礼堂	jǐn jiāng xiǎo lǐ táng	100
 晋江原创网	jìn jiāng yuán chuàng wǎng	100
+金界壕遗迹	jīn jiè háo yí jì	100
 紧结染色体	jǐn jié rǎn sè tǐ	100
 紧紧抱着你	jǐn jǐn bào zhe nǐ	100
 紧紧抱着我	jǐn jǐn bào zhe wǒ	100
@@ -34409,6 +34471,7 @@ sort: by_weight
 近听水无声	jìn tīng shuǐ wú shēng	100
 尽头的风穴	jìn tóu de fēng xué	100
 尽头的回忆	jìn tóu de huí yì	100
+金土城遗址	jīn tǔ chéng yí zhǐ	100
 进退也共鸣	jìn tuì yě gòng míng	100
 近外来岩体	jìn wài lái yán tǐ	100
 今晚报大厦	jīn wǎn bào dà shà	100
@@ -34608,6 +34671,7 @@ sort: by_weight
 警备司令部	jǐng bèi sī lìng bù	100
 警备总司令	jǐng bèi zǒng sī lìng	100
 经本人申请	jīng běn rén shēn qǐng	100
+靖边营遗址	jìng biān yíng yí zhǐ	100
 经表皮排出	jīng biǎo pí pái chū	100
 经别第十一	jīng bié dì shí yī	100
 痉病似天钓	jìng bìng sì tiān diào	100
@@ -36254,6 +36318,7 @@ sort: by_weight
 巨序剪股颖	jù xù jiǎn gǔ yǐng	100
 聚伊德科特	jù yī dé kē tè	100
 掬一捧月光	jū yì pěng yuè guāng	100
+居庸关云台	jū yōng guān yún tái	100
 具有成长性	jù yǒu chéng zhǎng xìng	100
 具有的功能	jù yǒu de gōng néng	100
 具有典型性	jù yǒu diǎn xíng xìng	100
@@ -36593,6 +36658,7 @@ sort: by_weight
 君主专制制	jūn zhǔ zhuān zhì zhì	100
 菌状导尿管	jūn zhuàng dǎo niào guǎn	100
 君子爱淑女	jūn zǐ ài shū nǚ	100
+君子长生馆	jūn zǐ cháng shēng guǎn	100
 君子馆之战	jūn zǐ guǎn zhī zhàn	100
 君子和小人	jūn zǐ hé xiǎo rén	100
 君子世无双	jūn zǐ shì wú shuāng	100
@@ -38693,6 +38759,7 @@ sort: by_weight
 困难和挑战	kùn nan hé tiǎo zhàn	100
 困难与挫折	kùn nan yǔ cuò zhé	100
 困难与问题	kùn nan yǔ wèn tí	100
+坤柔圣母庙	kūn róu shèng mǔ miào	100
 昆山高新区	kūn shān gāo xīn qū	100
 昆山月岩寺	kūn shān yuè yán sì	100
 昆士兰狮吼	kūn shì lán shī hǒu	100
@@ -39267,6 +39334,7 @@ sort: by_weight
 老歪脖子树	lǎo wāi bó zi shù	100
 劳务报酬税	láo wù bào chou shuì	100
 劳务成本制	láo wù chéng běn zhì	100
+老西开教堂	lǎo xī kāi jiào táng	100
 劳心者治人	láo xīn zhě zhì rén	100
 劳亚食虫目	láo yà shí chóng mù	100
 老爷的夫人	lǎo yé de fū rén	100
@@ -39553,13 +39621,16 @@ sort: by_weight
 理查特结构	lǐ chá tè jié gòu	100
 力长度关系	lì cháng dù guān xì	100
 离尘不离城	lí chén bù lí chéng	100
+李成梁石坊	lǐ chéng liáng shí fāng	100
 历城区西营	lì chéng qū xī yíng	100
 鲤城区政府	lǐ chéng qū zhèng fǔ	100
 历城区政府	lì chéng qū zhèng fǔ	100
 丽池夜总会	lì chí yè zǒng huì	100
 锂充电电池	lǐ chōng diàn diàn chí	100
 励磁变压器	lì cí biàn yā qì	100
+李大钊故居	lǐ dà zhāo gù jū	100
 历代的巫术	lì dài de wū shù	100
+历代帝王庙	lì dài dì wáng miào	100
 历代名画记	lì dài míng huà jì	100
 历代年号考	lì dài nián hào kǎo	100
 历代三宝纪	lì dài sān bǎo jì	100
@@ -40332,6 +40403,7 @@ sort: by_weight
 莲花的眼泪	lián huā de yǎn lèi	100
 莲花山砂岩	lián huā shān shā yán	100
 莲花山水道	lián huā shān shuǐ dào	100
+莲花石公园	lián huā shí gōng yuán	100
 莲花士勋章	lián huā shì xūn zhāng	100
 莲花手菩萨	lián huā shǒu pú sà	100
 炼化一体化	liàn huà yì tǐ huà	100
@@ -40494,6 +40566,7 @@ sort: by_weight
 链形岛屿带	liàn xíng dǎo yǔ dài	100
 脸型和五官	liǎn xíng hé wǔ guān	100
 镰形洁治器	lián xíng jié zhì qì	100
+莲性寺白塔	lián xìng sì bái tǎ	100
 链形植物门	liàn xíng zhí wù mén	100
 连续变化法	lián xù biàn huà fǎ	100
 连续波振荡	lián xù bō zhèn dàng	100
@@ -41386,6 +41459,7 @@ sort: by_weight
 镏的同位素	liú de tóng wèi sù	100
 六等星之夜	liù děng xīng zhī yè	100
 柳丁搁来乱	liǔ dīng gē lái luàn	100
+六顶山古墓	liù dǐng shān gǔ mù	100
 流动的风景	liú dòng de fēng jǐng	100
 流动的河水	liú dòng de hé shuǐ	100
 流动的空白	liú dòng de kòng bái	100
@@ -41795,6 +41869,7 @@ sort: by_weight
 隆起的小腹	lóng qǐ de xiǎo fù	100
 龙虬庄遗址	lóng qiú zhuāng yí zhǐ	100
 龙泉寺大殿	lóng quán sì dà diàn	100
+龙泉寺石狮	lóng quán sì shí shī	100
 龙泉窑青瓷	lóng quán yáo qīng cí	100
 龙仁轻电铁	lóng rén qīng diàn tiě	100
 龙麝聚圣丹	lóng shè jù shèng dān	100
@@ -42183,6 +42258,7 @@ sort: by_weight
 论永久和平	lùn yǒng jiǔ hé píng	100
 论语郑氏注	lún yǔ zhèng shì zhù	100
 论证和试验	lùn zhèng hé shì yàn	100
+沦州铁狮子	lún zhōu tiě shī zi	100
 论住宅问题	lùn zhù zhái wèn tí	100
 轮转法调度	lún zhuàn fǎ diào dù	100
 论自由意志	lùn zì yóu yì zhì	100
@@ -42212,6 +42288,7 @@ sort: by_weight
 裸盖鱼亚目	luǒ gài yú yà mù	100
 罗汉果银花	luó hàn guǒ yín huā	100
 罗汉果玉竹	luó hàn guǒ yù zhú	100
+罗汉院遗址	luó hàn yuàn yí zhǐ	100
 络合催化剂	luò hé cuī huà jì	100
 络合滴定法	luò hé dī dìng fǎ	100
 漯河南街村	luò hé nán jiē cūn	100
@@ -42241,6 +42318,7 @@ sort: by_weight
 逻辑学讲义	luó ji xué jiǎng yì	100
 螺髻岩遗址	luó jì yán yí zhǐ	100
 逻辑哲学论	luó ji zhé xué lùn	100
+罗家坝遗址	luó jiā bà yí zhǐ	100
 洛迦诺条约	luò jiā nuò tiáo yuē	100
 罗加指数法	luó jiā zhǐ shù fǎ	100
 罗巨格公式	luó jù gé gōng shì	100
@@ -42778,6 +42856,7 @@ sort: by_weight
 卖还是不卖	mài hái shì bú mài	100
 买货币基金	mǎi huò bì jī jīn	100
 麦吉尔大学	mài jí ěr dà xué	100
+麦积山石窟	mài jī shān shí kū	100
 脉极虚芤迟	mài jí xū kōu chí	100
 麦加拉学派	mài jiā lā xué pài	100
 买家已付款	mǎi jiā yǐ fù kuǎn	100
@@ -44565,6 +44644,7 @@ sort: by_weight
 庙小妖风大	miào xiǎo yāo fēng dà	100
 描写月亮的	miáo xiě yuè liàng de	100
 喵星人之神	miāo xīng rén zhī shén	100
+妙应寺白塔	miào yīng sì bái tǎ	100
 瞄准基线长	miáo zhǔn jī xiàn cháng	100
 庙子沟遗址	miào zi gōu yí zhǐ	100
 苗族花山节	miáo zú huā shān jié	100
@@ -44714,6 +44794,7 @@ sort: by_weight
 民族路夜市	mín zú lù yè shì	100
 民族歧视罪	mín zú qí shì zuì	100
 民族文化村	mín zú wén huà cūn	100
+民族文化宫	mín zú wén huà gōng	100
 民族与文化	mín zú yǔ wén huà	100
 民族语言网	mín zú yǔ yán wǎng	100
 民族整合体	mín zú zhěng hé tǐ	100
@@ -45423,6 +45504,7 @@ sort: by_weight
 暮宿黄河边	mù sù huáng hé biān	100
 慕塔芝玛哈	mù tǎ zhī mǎ hā	100
 木蹄层孔菌	mù tí céng kǒng jūn	100
+慕田峪长城	mù tián yù cháng chéng	100
 木通叉丝壳	mù tōng chā sī ké	100
 木通马兜铃	mù tōng mǎ dōu líng	100
 木通屋奇应	mù tōng wū qí yīng	100
@@ -45777,6 +45859,7 @@ sort: by_weight
 难缠的对手	nán chán de duì shǒu	100
 难缠的家伙	nán chán de jiā huo	100
 难缠的客户	nán chán de kè hù	100
+南禅寺大殿	nán chán sì dà diàn	100
 南昌局集团	nán chāng jú jí tuán	100
 南赤道洋流	nán chì dào yáng liú	100
 难吃的食物	nán chī de shí wù	100
@@ -45839,6 +45922,7 @@ sort: by_weight
 南极洲半岛	nán jí zhōu bàn dǎo	100
 南甲海灵殿	nán jiǎ hǎi líng diàn	100
 难解型问题	nán jiě xíng wèn tí	100
+南京博物院	nán jīng bó wù yuàn	100
 南京攻略战	nán jīng gōng lüè zhàn	100
 南凯科斯岛	nán kǎi kē sī dǎo	100
 南开区法院	nán kāi qū fǎ yuàn	100
@@ -45894,6 +45978,7 @@ sort: by_weight
 楠塔基特湾	nán tǎ jī tè wān	100
 南塔克特岛	nán tǎ kè tè dǎo	100
 楠田亚衣奈	nán tián yà yī nài	100
+南通博物苑	nán tōng bó wù yuàn	100
 南通分公司	nán tōng fēn gōng sī	100
 男同性恋者	nán tóng xìng liàn zhě	100
 难忘的回忆	nán wàng de huí yì	100
@@ -45901,6 +45986,8 @@ sort: by_weight
 难闻的味道	nán wén de wèi dào	100
 男喜剧演员	nán xǐ jù yǎn yuán	100
 难下定义的	nán xià dìng yì de	100
+南翔寺经幢	nán xiáng sì jīng chuáng	100
+南翔寺砖塔	nán xiáng sì zhuān tǎ	100
 男性的工作	nán xìng de gōng zuò	100
 男性的精子	nán xìng de jīng zǐ	100
 男性的身体	nán xìng de shēn tǐ	100
@@ -45911,6 +45998,7 @@ sort: by_weight
 男性主义者	nán xìng zhǔ yì zhě	100
 南雪祛痘霜	nán xuě qū dòu shuāng	100
 难言的苦衷	nán yán de kǔ zhōng	100
+南阳公主祠	nán yáng gōng zhǔ cí	100
 南洋鸟尾蛤	nán yáng niǎo wěi há	100
 难以捕捉的	nán yǐ bǔ zhuō de	100
 男异性恋者	nán yì xìng liàn zhě	100
@@ -45923,6 +46011,7 @@ sort: by_weight
 男友力满满	nán yǒu lì mǎn mǎn	100
 南诏风情岛	nán zhào fēng qíng dǎo	100
 难治性癫痫	nán zhì xìng diān xián	100
+南庄头遗址	nán zhuāng tóu yí zhǐ	100
 难追难回味	nán zhuī nán huí wèi	100
 男子的家人	nán zǐ de jiā rén	100
 男子的妻子	nán zǐ de qī zǐ	100
@@ -47107,6 +47196,7 @@ sort: by_weight
 纽斯特里亚	niǔ sī tè lǐ yà	100
 纽斯特利亚	niǔ sī tè lì yà	100
 牛头人战士	niú tóu rén zhàn shì	100
+牛王庙戏台	niú wáng miào xì tái	100
 牛尾岭水库	niú wěi lǐng shuǐ kù	100
 纽沃德科技	niǔ wò dé kē jì	100
 纽沃斯之战	niǔ wò sī zhī zhàn	100
@@ -48839,6 +48929,7 @@ sort: by_weight
 坡印亭矢量	pō yìn tíng shǐ liàng	120
 坡印廷矢量	pō yìn tíng shǐ liàng	100
 坡印廷向量	pō yìn tíng xiàng liàng	100
+泊镇清真寺	pō zhèn qīng zhēn sì	100
 破之如豆大	pò zhī rú dòu dà	100
 剖面监测器	pōu miàn jiān cè qì	100
 普阿松分布	pǔ ā sōng fēn bù	100
@@ -49235,6 +49326,7 @@ sort: by_weight
 期货经纪商	qī huò jīng jì shāng	100
 期货与现货	qī huò yǔ xiàn huò	100
 期货转现货	qī huò zhuǎn xiàn huò	100
+七级浮屠塔	qī jí fú tú tǎ	100
 七级公务员	qī jí gōng wù yuán	100
 戚继光故里	qī jì guāng gù lǐ	100
 戚继光牌坊	qī jì guāng pái fāng	100
@@ -51280,6 +51372,7 @@ sort: by_weight
 请领导吃饭	qǐng lǐng dǎo chī fàn	100
 庆铃五十铃	qìng líng wǔ shí líng	100
 情令眼浅了	qíng lìng yǎn qiǎn le	100
+青龙倒吸水	qīng lóng dào xī shuǐ	100
 青龙寺大殿	qīng lóng sì dà diàn	100
 青龙寺遗址	qīng lóng sì yí zhǐ	100
 青龙湾减河	qīng lóng wān jiǎn hé	100
@@ -51657,6 +51750,7 @@ sort: by_weight
 情有独钟啊	qíng yǒu dú zhōng a	100
 请有关部门	qǐng yǒu guān bù mén	100
 青玉案元夕	qīng yù àn yuán xī	100
+清与路故城	qīng yǔ lù gù chéng	100
 情遇曼哈顿	qíng yù màn hā dùn	100
 庆余辟瘟丹	qìng yú pì wēn dān	100
 青鱼跃东沼	qīng yú yuè dōng zhǎo	100
@@ -52794,6 +52888,7 @@ sort: by_weight
 绕丝加固法	rào sī jiā gù fǎ	100
 绕行星变轨	rào xíng xīng biàn guǐ	100
 桡血管损伤	ráo xuè guǎn sǔn shāng	100
+饶阳店古塔	ráo yáng diàn gǔ tǎ	100
 热爱的工作	rè ài de gōng zuò	100
 热爱的事情	rè ài de shì qíng	100
 热爱的事业	rè ài de shì yè	100
@@ -53131,6 +53226,7 @@ sort: by_weight
 人民币一元	rén mín bì yì yuán	100
 人民币战士	rén mín bì zhàn shì	100
 人民币真香	rén mín bì zhēn xiāng	100
+人民大会堂	rén mín dà huì táng	100
 人民大街北	rén mín dà jiē běi	100
 人民的福祉	rén mín de fú zhǐ	100
 人民的旗手	rén mín de qí shǒu	100
@@ -54898,6 +54994,7 @@ sort: by_weight
 珊瑚海海战	shān hú hǎi hǎi zhàn	100
 珊瑚七十味	shān hú qī shí wèi	100
 闪化辉绿岩	shǎn huà huī lǜ yán	100
+善化寺山门	shàn huà sì shān mén	100
 闪辉黄煌岩	shǎn huī huáng huáng yán	100
 闪辉正煌岩	shǎn huī zhèng huáng yán	100
 山鸡大补酒	shān jī dà bǔ jiǔ	100
@@ -55276,6 +55373,7 @@ sort: by_weight
 上海保税区	shàng hǎi bǎo shuì qū	100
 上海本地话	shàng hǎi běn dì huà	100
 上海兵工厂	shàng hǎi bīng gōng chǎng	100
+上海博物馆	shàng hǎi bó wù guǎn	100
 上海长宁区	shàng hǎi cháng níng qū	100
 上海磁浮线	shàng hǎi cí fú xiàn	100
 上海大旅社	shàng hǎi dà lǚ shè	100
@@ -55283,6 +55381,7 @@ sort: by_weight
 上海道小学	shàng hǎi dào xiǎo xué	100
 上海等城市	shàng hǎi děng chéng shì	100
 上海等省市	shàng hǎi děng shěng shì	100
+上海动物园	shàng hǎi dòng wù yuán	100
 上海东站站	shàng hǎi dōng zhàn zhàn	100
 伤害非常高	shāng hài fēi cháng gāo	100
 上海奉贤区	shàng hǎi fèng xián qū	100
@@ -55332,6 +55431,7 @@ sort: by_weight
 上海松江区	shàng hǎi sōng jiāng qū	100
 上海滩赌圣	shàng hǎi tān dǔ shèng	100
 上海特别市	shàng hǎi tè bié shì	100
+上海体育馆	shàng hǎi tǐ yù guǎn	100
 上海文化史	shàng hǎi wén huà shǐ	100
 上海西站站	shàng hǎi xī zhàn zhàn	100
 上海消保委	shàng hǎi xiāo bǎo wěi	100
@@ -55345,6 +55445,7 @@ sort: by_weight
 上海越剧院	shàng hǎi yuè jù yuàn	100
 上海政策网	shàng hǎi zhèng cè wǎng	100
 上海直属站	shàng hǎi zhí shǔ zhàn	100
+上海植物园	shàng hǎi zhí wù yuán	100
 上海制皂厂	shàng hǎi zhì zào chǎng	100
 上海周公馆	shàng hǎi zhōu gōng guǎn	100
 伤寒明理论	shāng hán míng lǐ lùn	100
@@ -57274,6 +57375,7 @@ sort: by_weight
 嵊泗设治局	shèng sì shè zhì jú	100
 生素食主义	shēng sù shí zhǔ yì	100
 生髓育麟丹	shēng suǐ yù lín dān	100
+圣塔院寺塔	shèng tǎ yuàn sì tǎ	100
 生态保育区	shēng tài bǎo yù qū	100
 生态的构建	shēng tài de gòu jiàn	100
 生态的建设	shēng tài de jiàn shè	100
@@ -58127,6 +58229,7 @@ sort: by_weight
 世嘉三四郎	shì jiā sān sì láng	100
 十佳摄影师	shí jiā shè yǐng shī	100
 式家庭教育	shì jiā tíng jiào yù	100
+释迦文佛塔	shì jiā wén fó tǎ	100
 市价盈利率	shì jià yíng lì lǜ	100
 世嘉游戏机	shì jiā yóu xì jī	100
 十佳运动员	shí jiā yùn dòng yuán	100
@@ -58450,8 +58553,10 @@ sort: by_weight
 什科茨扬区	shí kē cí yáng qū	100
 什科尔金娜	shí kē ěr jīn nà	100
 适可而止吧	shì kě ér zhǐ ba	100
+史可法祠墓	shǐ kě fǎ cí mù	100
 什科夫利察	shí kē fū lì chá	100
 使客户满意	shǐ kè hù mǎn yì	100
+石刻及其他	shí kè jí qí tā	100
 什克里尼亚	shí kè lǐ ní yà	100
 史克里亚宾	shǐ kè lǐ yà bīn	100
 什科利亚里	shí kē lì yà lǐ	100
@@ -58731,6 +58836,7 @@ sort: by_weight
 史派克琼斯	shǐ pài kè qióng sī	100
 市排水公司	shì pái shuǐ gōng sī	100
 室旁垂体束	shì páng chuí tǐ shù	100
+石棚山石棚	shí péng shān shí péng	100
 视皮层疾患	shì pí céng jí huàn	100
 市批发市场	shì pī fā shì chǎng	100
 什皮基夫卡	shí pí jī fū kǎ	100
@@ -59984,6 +60090,7 @@ sort: by_weight
 时钟驱动器	shí zhōng qū dòng qì	100
 市中区法院	shì zhōng qū fǎ yuàn	100
 始终如一地	shǐ zhōng rú yí dì	100
+石钟山石窟	shí zhōng shān shí kū	100
 是中文版的	shì zhōng wén bǎn de	100
 市中小企业	shì zhōng xiǎo qǐ yè	100
 市中心十字	shì zhōng xīn shí zì	100
@@ -60179,6 +60286,7 @@ sort: by_weight
 首都内罗毕	shǒu dū nèi luó bì	100
 手度烧伤双	shǒu dù shāo shāng shuāng	100
 首都特别市	shǒu dū tè bié shì	100
+首都体育馆	shǒu dū tǐ yù guǎn	100
 首都外环道	shǒu dū wài huán dào	100
 手段之残忍	shǒu duàn zhī cán rěn	100
 首尔江南区	shǒu ěr jiāng nán qū	100
@@ -61261,6 +61369,7 @@ sort: by_weight
 双四角锥柱	shuāng sì jiǎo zhuī zhù	100
 双叟咖啡馆	shuāng sǒu kā fēi guǎn	100
 双缩脲试剂	shuāng suō niào shì jì	100
+双塔岭双塔	shuāng tǎ lǐng shuāng tǎ	100
 双胎儿妊娠	shuāng tāi ér rèn shēn	100
 双塘派出所	shuāng táng pài chū suǒ	100
 双筒望远镜	shuāng tǒng wàng yuǎn jìng	100
@@ -62366,6 +62475,7 @@ sort: by_weight
 宋徽宗之女	sòng huī zōng zhī nǚ	100
 宋家场水库	sòng jiā chǎng shuǐ kù	100
 宋家三姐妹	sòng jiā sān jiě mèi	100
+松江清真寺	sōng jiāng qīng zhēn sì	100
 宋江上梁山	sòng jiāng shàng liáng shān	100
 松江唐经幢	sōng jiāng táng jīng chuáng	100
 宋教仁遇刺	sòng jiào rén yù cì	100
@@ -62393,6 +62503,7 @@ sort: by_weight
 松浦弥太郎	sōng pǔ mí tài láng	100
 送亲朋好友	sòng qīn péng hǎo yǒu	100
 宋钦宗赵桓	sòng qīn zōng zhào huán	100
+宋庆龄故屠	sòng qìng líng gù tú	100
 宋庆龄旧居	sòng qìng líng jiù jū	100
 宋庆龄陵园	sòng qìng líng líng yuán	100
 宋卿体育馆	sòng qīng tǐ yù guǎn	100
@@ -62828,6 +62939,7 @@ sort: by_weight
 孙中山全集	sūn zhōng shān quán jí	100
 孙中山逝世	sūn zhōng shān shì shì	100
 孙中山铜像	sūn zhōng shān tóng xiàng	100
+孙中山行馆	sūn zhōng shān xíng guǎn	100
 孙中山选集	sūn zhōng shān xuǎn jí	100
 孙子兵法中	sūn zǐ bīng fǎ zhōng	100
 所爱的一切	suǒ ài de yí qiè	100
@@ -63102,6 +63214,7 @@ sort: by_weight
 她在我腿上	tā zài wǒ tuǐ shàng	100
 他怎么想的	tā zěn me xiǎng de	100
 她真的很好	tā zhēn de hěn hǎo	100
+塔子城遗址	tǎ zi chéng yí zhǐ	100
 她走了之后	tā zǒu le zhī hòu	100
 他唑巴坦钠	tā zuò bā tǎn nà	100
 钛白粉价格	tài bái fěn jià gé	100
@@ -63207,6 +63320,7 @@ sort: by_weight
 太过于苛刻	tài guò yú kē kè	100
 太过于真实	tài guò yú zhēn shí	100
 台海出版社	tái hǎi chū bǎn shè	100
+太行第一峰	tài háng dì yī fēng	100
 太行山路站	tài háng shān lù zhàn	100
 太昊伏羲氏	tài hào fú xī shì	100
 太和城遗址	tài hé chéng yí zhǐ	100
@@ -63652,6 +63766,7 @@ sort: by_weight
 唐蕃关系史	táng fān guān xì shǐ	100
 唐蕃会盟碑	táng fān huì méng bēi	100
 糖苷化反应	táng gān huà fǎn yìng	100
+汤岗子温泉	tāng gǎng zi wēn quán	100
 唐高宗李治	táng gāo zōng lǐ zhì	100
 唐高宗永徽	táng gāo zōng yǒng huī	100
 唐高祖武德	táng gāo zǔ wǔ dé	100
@@ -63848,6 +63963,7 @@ sort: by_weight
 套期保值者	tào qī bǎo zhí zhě	100
 淘气的孩子	táo qì de hái zi	100
 陶清河水库	táo qīng hé shuǐ kù	100
+陶然亭公园	táo rán tíng gōng yuán	100
 桃仁红花汤	táo rén hóng huā tāng	100
 套式病毒目	tào shì bìng dú mù	100
 陶寺北墓地	táo sì běi mù dì	100
@@ -64467,6 +64583,7 @@ sort: by_weight
 天留我不留	tiān liú wǒ bù liú	100
 天龙八部里	tiān lóng bā bù lǐ	100
 天龙八部中	tiān lóng bā bù zhōng	100
+天龙山石窟	tiān lóng shān shí kū	100
 天龙寺造像	tiān lóng sì zào xiàng	100
 天龙特攻队	tiān lóng tè gōng duì	100
 天龙源一郎	tiān lóng yuán yī láng	100
@@ -64516,6 +64633,8 @@ sort: by_weight
 甜腻的食物	tián nì de shí wù	100
 天鸟的喧嚣	tiān niǎo de xuān xiāo	100
 天宁寺大殿	tiān níng sì dà diàn	100
+天宁寺木塔	tiān níng sì mù tǎ	100
+天宁寺双塔	tiān níng sì shuāng tǎ	100
 天诺亚方舟	tiān nuò yà fāng zhōu	100
 天女浴躬池	tiān nǚ yù gōng chí	100
 天蓬大元帅	tiān péng dà yuán shuài	100
@@ -64872,6 +64991,7 @@ sort: by_weight
 调中大成汤	tiáo zhōng dà chéng tāng	100
 调中益气汤	tiáo zhōng yì qì tāng	100
 铁铵锌铜维	tiě ǎn xīn tóng wéi	100
+铁背山山城	tiě bèi shān shān chéng	100
 铁臂膊蔡福	tiě bì bó cài fú	100
 铁场客家围	tiě chǎng kè jiā wéi	100
 铁锤与镰刀	tiě chuí yǔ lián dāo	100
@@ -65595,6 +65715,7 @@ sort: by_weight
 偷得半日闲	tōu dé bàn rì xián	100
 头低脚高位	tóu dī jiǎo gāo wèi	100
 投敌叛变罪	tóu dí pàn biàn zuì	100
+透雕石牌搂	tòu diāo shí pái lǒu	100
 头顶的天空	tóu dǐng de tiān kōng	100
 头顶的头发	tóu dǐng de tóu fa	100
 头顶的星空	tóu dǐng de xīng kōng	100
@@ -65962,6 +66083,7 @@ sort: by_weight
 兔子山遗址	tù zi shān yí zhǐ	100
 图自同构群	tú zì tóng gòu qún	100
 徒子徒孙们	tú zǐ tú sūn men	100
+团城演武厅	tuán chéng yǎn wǔ tīng	100
 团队的管理	tuán duì de guǎn lǐ	100
 团队的核心	tuán duì de hé xīn	100
 团队的合作	tuán duì de hé zuò	100
@@ -66431,6 +66553,7 @@ sort: by_weight
 万德庄大街	wàn dé zhuāng dà jiē	100
 玩点不一样	wán diǎn bù yí yàng	100
 玩懂手机网	wán dǒng shǒu jī wǎng	100
+丸都山故城	wán dōu shān gù chéng	100
 腕度烧伤双	wàn dù shāo shāng shuāng	100
 万多洛斯基	wàn duō luò sī jī	100
 万夺命奇案	wàn duó mìng qí àn	100
@@ -66440,6 +66563,7 @@ sort: by_weight
 万芳亭公园	wàn fāng tíng gōng yuán	100
 万芳医院站	wàn fāng yī yuàn zhàn	100
 万丰工业区	wàn fēng gōng yè qū	100
+万佛堂石窟	wàn fó táng shí kū	100
 万福玛利亚	wàn fú mǎ lì yà	100
 万福玛丽亚	wàn fú mǎ lì yà	100
 腕辐状韧带	wàn fú zhuàng rèn dài	100
@@ -66621,6 +66745,7 @@ sort: by_weight
 完全整闭的	wán quán zhěng bì de	100
 完全正交系	wán quán zhèng jiāo xì	100
 万人的数字	wàn rén de shù zì	100
+万荣东岳庙	wàn róng dōng yuè miào	100
 玩杀人游戏	wán shā rén yóu xì	100
 完善的售前	wán shàn de shòu qián	100
 万山管理区	wàn shān guǎn lǐ qū	100
@@ -66774,6 +66899,7 @@ sort: by_weight
 网店经营者	wǎng diàn jīng yíng zhě	100
 网店怎么开	wǎng diàn zěn me kāi	100
 忘都忘不了	wàng dōu wàng bù liǎo	100
+望都壁画墓	wàng dū bì huà mù	100
 王度庐小说	wáng dù lú xiǎo shuō	100
 望断天涯路	wàng duàn tiān yá lù	100
 旺多姆公爵	wàng duō mǔ gōng jué	100
@@ -69394,6 +69520,7 @@ sort: by_weight
 物流与配送	wù liú yǔ pèi sòng	100
 五陇坂之战	wǔ lǒng bǎn zhī zhàn	100
 五陇阪之战	wǔ lǒng bǎn zhī zhàn	100
+五龙背温泉	wǔ lóng bèi wēn quán	100
 五龙电动车	wǔ lóng diàn dòng chē	100
 武隆芙蓉洞	wǔ lóng fú róng dòng	100
 武隆喀斯特	wǔ lóng kā sī tè	100
@@ -69473,6 +69600,7 @@ sort: by_weight
 武宁节度使	wǔ níng jié dù shǐ	100
 无扭交换群	wú niǔ jiāo huàn qún	100
 乌诺夫效应	wū nuò fū xiào yìng	100
+五女山山城	wǔ nǚ shān shān chéng	100
 无盘工作站	wú pán gōng zuò zhàn	100
 五盘三胜制	wǔ pán sān shèng zhì	100
 屋旁的青草	wū páng de qīng cǎo	100
@@ -69622,6 +69750,7 @@ sort: by_weight
 无声的证词	wú shēng de zhèng cí	100
 无绳电话机	wú shéng diàn huà jī	100
 无声仿有声	wú shēng fǎng yǒu shēng	100
+无盛号石桥	wú shèng hào shí qiáo	100
 五省六曹制	wǔ shěng liù cáo zhì	100
 无绳吸尘器	wú shéng xī chén qì	100
 五声性调式	wǔ shēng xìng diào shì	100
@@ -69643,6 +69772,7 @@ sort: by_weight
 五十二病方	wǔ shí èr bìng fāng	100
 五十二赫兹	wǔ shí èr hè zī	100
 无实际意义	wú shí jì yì yì	100
+五十家子塔	wǔ shí jiā zǐ tǎ	100
 吴氏巨颅兽	wú shì jù lú shòu	100
 五十岚大介	wǔ shí lán dà jiè	100
 五十岚广行	wǔ shí lán guǎng xíng	100
@@ -70260,6 +70390,7 @@ sort: by_weight
 西安临潼区	xī ān lín tóng qū	100
 西安美立方	xī ān měi lì fāng	100
 西安门大街	xī ān mén dà jiē	100
+西安清真寺	xī ān qīng zhēn sì	100
 西安事变后	xī ān shì biàn hòu	100
 锡安威廉森	xī ān wēi lián sēn	100
 西安未央区	xī ān wèi yāng qū	100
@@ -70404,6 +70535,7 @@ sort: by_weight
 西红花多甙	xī hóng huā duō dài	100
 戏红人不红	xì hóng rén bù hóng	100
 洗烘一体机	xǐ hōng yì tǐ jī	100
+西侯度遗址	xī hóu dù yí zhǐ	100
 西湖莼菜汤	xī hú chún cài tāng	100
 吸呼气转换	xī hū qì zhuǎn huàn	100
 西湖区法院	xī hú qū fǎ yuàn	100
@@ -70552,6 +70684,8 @@ sort: by_weight
 锡米伦科韦	xī mǐ lún kē wéi	100
 洗面奶洁面	xǐ miàn nǎi jié miàn	100
 熄灭的蜡烛	xī miè de là zhú	100
+析木城全塔	xī mù chéng quán tǎ	100
+析木城石棚	xī mù chéng shí péng	100
 西姆拉条约	xī mǔ lā tiáo yuē	100
 西姆松定理	xī mǔ sōng dìng lǐ	100
 锡那罗亚州	xī nà luó yà zhōu	100
@@ -70632,6 +70766,7 @@ sort: by_weight
 细软的沙滩	xì ruǎn de shā tān	100
 细弱翦股颖	xì ruò jiǎn gǔ yǐng	100
 西沙永兴岛	xī shā yǒng xīng dǎo	100
+西山八大处	xī shān bā dà chù	100
 喜山短翅鸫	xǐ shān duǎn chì dōng	100
 溪山美地园	xī shān měi dì yuán	100
 溪山清远图	xī shān qīng yuǎn tú	100
@@ -70649,6 +70784,7 @@ sort: by_weight
 细石混凝土	xì shí hùn níng tǔ	100
 西式建筑群	xī shì jiàn zhù qún	100
 吸食可卡因	xī shí kě kǎ yīn	100
+西什库教堂	xī shí kù jiào táng	100
 喜湿螺总目	xǐ shī luó zǒng mù	100
 细石器时代	xì shí qì shí dài	100
 细石器文化	xì shí qì wén huà	100
@@ -70897,6 +71033,7 @@ sort: by_weight
 下跌趋势线	xià diē qū shì xiàn	100
 下跌趋势中	xià diē qū shì zhōng	100
 下跌三连阴	xià diē sān lián yīn	100
+下定林寺塔	xià dìng lín sì tǎ	100
 下都武阳城	xià dōu wǔ yáng chéng	100
 下多大的雨	xià duō dà de yǔ	100
 下二段动词	xià èr duàn dòng cí	100
@@ -71959,6 +72096,7 @@ sort: by_weight
 想飞的鸵鸟	xiǎng fēi de tuó niǎo	100
 香妃玉香粉	xiāng fēi yù xiāng fěn	100
 想分一杯羹	xiǎng fēn yì bēi gēng	100
+襄汾造像碑	xiāng fén zào xiàng bēi	100
 像疯狗一样	xiàng fēng gǒu yí yàng	100
 像疯了一样	xiàng fēng le yí yàng	100
 相逢是首歌	xiāng féng shì shǒu gē	100
@@ -72333,6 +72471,8 @@ sort: by_weight
 向塘火车站	xiàng táng huǒ chē zhàn	100
 向塘机务段	xiàng táng jī wù duàn	100
 响堂山石窟	xiǎng táng shān shí kū	100
+响堂寺石富	xiǎng táng sì shí fù	100
+响堂寺石庙	xiǎng táng sì shí miào	100
 向田邦子赏	xiàng tián bāng zǐ shǎng	100
 香甜的水果	xiāng tián de shuǐ guǒ	100
 香甜的味道	xiāng tián de wèi dào	100
@@ -73165,6 +73305,7 @@ sort: by_weight
 小太刀右京	xiǎo tài dāo yòu jīng	100
 笑谈广东话	xiào tán guǎng dōng huà	100
 小唐玛丽施	xiǎo táng mǎ lì shī	100
+小汤山温泉	xiǎo tāng shān wēn quán	100
 小提琴大师	xiǎo tí qín dà shī	100
 小提琴老师	xiǎo tí qín lǎo shī	100
 筱田麻里子	xiǎo tián má lǐ zi	100
@@ -73549,6 +73690,7 @@ sort: by_weight
 斜月三星洞	xié yuè sān xīng dòng	100
 写在脸上了	xiě zài liǎn shàng le	100
 谐振变压器	xié zhèn biàn yā qì	100
+解州关帝庙	xiè zhōu guān dì miào	100
 鞋子的搭配	xié zi de dā pèi	100
 鞋子的款式	xié zi de kuǎn shì	100
 鞋子的设计	xié zi de shè jì	100
@@ -73644,6 +73786,7 @@ sort: by_weight
 新东方厨师	xīn dōng fāng chú shī	100
 新东方老师	xīn dōng fāng lǎo shī	100
 新东方美食	xīn dōng fāng měi shí	100
+新洞人遗址	xīn dòng rén yí zhǐ	100
 心动则心痛	xīn dòng zé xīn tòng	100
 心都在滴血	xīn dōu zài dī xuè	100
 新都桥湍蛙	xīn dū qiáo tuān wā	100
@@ -75197,6 +75340,7 @@ sort: by_weight
 虚构的世界	xū gòu de shì jiè	100
 虚构的武器	xū gòu de wǔ qì	100
 序贯字函数	xù guàn zì hán shù	100
+徐光启故屠	xú guāng qǐ gù tú	100
 许国璋英语	xǔ guó zhāng yīng yǔ	100
 续航和充电	xù háng hé chōng diàn	100
 续航里程短	xù háng lǐ chéng duǎn	100
@@ -75243,6 +75387,7 @@ sort: by_weight
 序列弱完备	xù liè ruò wán bèi	100
 序列同系性	xù liè tóng xì xìng	100
 需密切关注	xū mì qiè guān zhù	100
+须弥山石窟	xū mí shān shí kū	100
 续命的膜法	xù mìng de mó fǎ	100
 续名医类案	xù míng yī lèi àn	100
 须磨弥吉郎	xū mó mí jí láng	100
@@ -75576,6 +75721,7 @@ sort: by_weight
 学甲鼎农村	xué jiǎ dǐng nóng cūn	100
 学甲放鸽笭	xué jiǎ fàng gē líng	100
 薛家岗文化	xuē jiā gǎng wén huà	100
+薛家岗遗址	xuē jiā gǎng yí zhǐ	100
 学甲公学校	xué jiǎ gōng xué xiào	100
 学甲龙佛宫	xué jiǎ lóng fó gōng	100
 学甲区的里	xué jiǎ qū de lǐ	100
@@ -75624,6 +75770,7 @@ sort: by_weight
 血染的图腾	xuè rǎn de tú téng	100
 血染雪山堡	xuè rǎn xuě shān bǎo	100
 血热妄行证	xuè rè wàng xíng zhèng	100
+薛仁贵寒窑	xuē rén guì hán yáo	100
 薛仁贵征东	xuē rén guì zhēng dōng	100
 血溶量过多	xuè róng liàng guò duō	100
 雪山飞狐哦	xuě shān fēi hú ó	100
@@ -76014,6 +76161,7 @@ sort: by_weight
 雅丁藏茶枕	yǎ dīng cáng chá zhěn	100
 压都压不住	yā dōu yā bú zhù	100
 雅尔达密约	yǎ ěr dá mì yuē	100
+雅尔湖故城	yǎ ěr hú gù chéng	100
 雅尔若战役	yǎ ěr ruò zhàn yì	100
 雅尔塔体制	yǎ ěr tǎ tǐ zhì	100
 牙发生疾患	yá fā shēng jí huàn	100
@@ -76337,6 +76485,7 @@ sort: by_weight
 艳福不浅啊	yàn fú bù qiǎn a	100
 烟腹毛脚燕	yān fù máo jiǎo yàn	100
 盐麸树白皮	yán fū shù bái pí	100
+衍福寺双塔	yǎn fú sì shuāng tǎ	100
 烟感报警器	yān gǎn bào jǐng qì	100
 严格按照市	yán gé àn zhào shì	100
 严格单弹数	yán gé dān dàn shù	100
@@ -77172,6 +77321,7 @@ sort: by_weight
 养天地正气	yǎng tiān dì zhèng qì	100
 氧通气当量	yǎng tōng qì dāng liàng	100
 氧同位素法	yǎng tóng wèi sù fǎ	100
+羊头山石窟	yáng tóu shān shí kū	100
 杨湾卫生室	yáng wān wèi shēng shì	100
 养胃的食物	yǎng wèi de shí wù	100
 阳痿的症状	yáng wěi de zhèng zhuàng	100
@@ -77573,6 +77723,7 @@ sort: by_weight
 耶鲁法学院	yé lǔ fǎ xué yuàn	100
 夜落的声音	yè luò de shēng yīn	100
 叶落鸟窝现	yè luò niǎo wō xiàn	100
+耶律楚材墓	yē lǜ chǔ cái mù	100
 耶律忙古带	yē lǜ máng gǔ dài	100
 野吕荣太郎	yě lǚ róng tài láng	100
 叶绿素铜钠	yè lǜ sù tóng nà	100
@@ -82022,6 +82173,7 @@ sort: by_weight
 预测与补货	yù cè yǔ bǔ huò	100
 鱼叉海扇蛤	yú chā hǎi shàn há	100
 玉蝉出牙环	yù chán chū yá huán	100
+雨禅寺大殿	yǔ chán sì dà diàn	100
 玉蟾岩遗址	yù chán yán yí zhǐ	100
 渔唱起三更	yú chàng qǐ sān gēng	100
 御成败式目	yù chéng bài shì mù	100
@@ -82306,6 +82458,7 @@ sort: by_weight
 余粮收集制	yú liáng shōu jí zhì	100
 玉林串串香	yù lín chuàn chuàn xiāng	100
 玉林狗肉节	yù lín gǒu ròu jié	100
+郁林观石刻	yù lín guān shí kè	100
 鱼鳞海菊蛤	yú lín hǎi jú há	100
 御林军教头	yù lín jūn jiào tóu	100
 御林军统领	yù lín jūn tǒng lǐng	100
@@ -83075,6 +83228,7 @@ sort: by_weight
 圆山天文台	yuán shān tiān wén tái	100
 圆山忠烈祠	yuán shān zhōng liè cí	100
 远上白云间	yuǎn shàng bái yún jiān	100
+元上城遗址	yuán shàng chéng yí zhǐ	100
 愿上帝保佑	yuàn shàng dì bǎo yòu	100
 元上都遗址	yuán shàng dōu yí zhǐ	100
 原审被告人	yuán shěn bèi gào rén	100
@@ -83563,6 +83717,7 @@ sort: by_weight
 孕妇的饮食	yùn fù de yǐn shí	100
 孕妇和儿童	yùn fù hé ér tóng	100
 云橄粗安岩	yún gǎn cū ān yán	100
+云冈五华洞	yún gāng wǔ huá dòng	100
 云海玉弓缘	yún hǎi yù gōng yuán	100
 云和大数据	yún hé dà shù jù	100
 云何获圆通	yún hé huò yuán tōng	100
@@ -83585,6 +83740,7 @@ sort: by_weight
 云里雾里开	yún lǐ wù lǐ kāi	100
 陨磷钙钠石	yǔn lín gài nà shí	100
 陨磷铁镍石	yǔn lín tiě niè shí	100
+云龙山石佛	yún lóng shān shí fó	100
 陨落的螺丝	yǔn luò de luó sī	100
 孕妈的肚子	yùn mā de dù zi	100
 孕妈的身体	yùn mā de shēn tǐ	100
@@ -84138,6 +84294,7 @@ sort: by_weight
 糟糕的状态	zāo gāo de zhuàng tài	100
 糟糕透顶了	zāo gāo tòu dǐng le	100
 造还是不造	zào hái shì bú zào	100
+皂河龙王庙	zào hé lóng wáng miào	100
 遭黑客攻击	zāo hēi kè gōng jī	100
 遭黑客入侵	zāo hēi kè rù qīn	100
 糟化辉绿岩	zāo huà huī lǜ yán	100
@@ -84564,6 +84721,7 @@ sort: by_weight
 战死的士兵	zhàn sǐ de shì bīng	100
 粘弹性地基	zhān tán xìng dì jī	100
 占田课田制	zhàn tián kè tián zhì	100
+詹天佑铜像	zhān tiān yòu tóng xiàng	100
 粘贴的内容	zhān tiē de nèi róng	100
 粘贴手术巾	zhān tiē shǒu shù jīn	100
 占统治地位	zhàn tǒng zhì dì wèi	100
@@ -85339,6 +85497,7 @@ sort: by_weight
 镇江开发区	zhèn jiāng kāi fā qū	100
 镇江直属站	zhèn jiāng zhí shǔ zhàn	100
 帧校验序列	zhēn jiào yàn xù liè	100
+贞节贾母碑	zhēn jié jiǎ mǔ bēi	100
 真解决问题	zhēn jiě jué wèn tí	100
 真节肢动物	zhēn jié zhī dòng wù	100
 镇静催眠药	zhèn jìng cuī mián yào	100
@@ -85605,6 +85764,7 @@ sort: by_weight
 正白旗佐领	zhèng bái qí zuǒ lǐng	100
 正半定矩阵	zhèng bàn dìng jǔ zhèn	100
 正版和盗版	zhèng bǎn hé dào bǎn	100
+郑板桥故居	zhèng bǎn qiáo gù jū	100
 正比电离室	zhèng bǐ diàn lí shì	100
 整比化合物	zhěng bǐ huà hé wù	100
 正比计数管	zhèng bǐ jì shù guǎn	100
@@ -87302,6 +87462,7 @@ sort: by_weight
 制造和销售	zhì zào hé xiāo shòu	100
 制造和装配	zhì zào hé zhuāng pèi	100
 制造及销售	zhì zào jí xiāo shòu	100
+织造署旧址	zhī zào shǔ jiù zhǐ	100
 制造业大国	zhì zào yè dà guó	100
 制造业大省	zhì zào yè dà shěng	100
 制造业大市	zhì zào yè dà shì	100
@@ -87531,6 +87692,7 @@ sort: by_weight
 中国的姓氏	zhōng guó de xìng shì	100
 中国的优势	zhōng guó de yōu shì	100
 中国的智慧	zhōng guó de zhì huì	100
+中国美术馆	zhōng guó měi shù guǎn	100
 中国现代史	zhōng guó xiàn dài shǐ	100
 忠海制造所	zhōng hǎi zhì zào suǒ	100
 钟汉良饰演	zhōng hàn liáng shì yǎn	100
@@ -88097,6 +88259,7 @@ sort: by_weight
 周冬雨饰演	zhōu dōng yǔ shì yǎn	100
 昼短苦夜长	zhòu duǎn kǔ yè cháng	100
 轴对称岩组	zhóu duì chèn yán zǔ	100
+周恩来故居	zhōu ēn lái gù jū	100
 周恩来诗碑	zhōu ēn lái shī bēi	100
 周恩来逝世	zhōu ēn lái shì shì	100
 周恩来同志	zhōu ēn lái tóng zhì	100
@@ -91146,6 +91309,7 @@ sort: by_weight
 阿奇霉素散剂	ā qí méi sù sǎn jì	100
 阿奇霉素悉美	ā qí méi sù xī měi	100
 阿什伯顿条约	ā shí bó dùn tiáo yuē	100
+阿什哈达摩崖	ā shí hǎ dá mó yá	100
 阿斯二氏反应	ā sī èr shì fǎn yìng	100
 阿斯科尔德岛	ā sī kē ěr dé dǎo	100
 阿斯科利定理	ā sī kē lì dìng lǐ	100
@@ -91248,6 +91412,7 @@ sort: by_weight
 爱海中的荷花	ài hǎi zhōng de hé huā	100
 埃豪二氏试验	āi háo èr shì shì yàn	100
 艾豪二氏试验	ài háo èr shì shì yàn	100
+叆河尖古城址	ài hé jiān gǔ chéng zhǐ	100
 爱护公共财物	ài hù gōng gòng cái wù	100
 爱胡闹的布丁	ài hú nào de bù dīng	100
 霭华押业信贷	ǎi huá yā yè xìn dài	100
@@ -91782,6 +91947,7 @@ sort: by_weight
 巴拿赫星代数	bā ná hè xīng dài shù	100
 八旗都统衙门	bā qí dū tǒng yá mén	100
 八七会议会址	bā qī huì yì huì zhǐ	100
+八七会议旧址	bā qī huì yì jiù zhǐ	100
 八旗通志初集	bā qí tōng zhì chū jí	100
 八旗值年大臣	bā qí zhí nián dà chén	100
 八千麻袋事件	bā qiān má dài shì jiàn	100
@@ -92795,10 +92961,12 @@ sort: by_weight
 北京大立教育	běi jīng dà lì jiào yù	100
 北京大兴机场	běi jīng dà xīng jī chǎng	100
 北京大兴旧宫	běi jīng dà xīng jiù gōng	100
+北京大学红楼	běi jīng dà xué hóng lóu	100
 北京大学校史	běi jīng dà xué xiào shǐ	100
 北京登峰国际	běi jīng dēng fēng guó jì	100
 北京低端人口	běi jīng dī duān rén kǒu	100
 北京地坛医院	běi jīng dì tán yī yuàn	100
+北京地下铁道	běi jīng dì xià tiě dào	100
 北京第一监狱	běi jīng dì yī jiān yù	100
 北京地质学院	běi jīng dì zhì xué yuàn	100
 北京电力学院	běi jīng diàn lì xué yuàn	100
@@ -93031,6 +93199,7 @@ sort: by_weight
 贝塞尔不等式	bèi sāi ěr bù děng shì	100
 北桑提内尔岛	běi sāng tí nèi ěr dǎo	100
 北森蒂纳尔岛	běi sēn dì nà ěr dǎo	100
+北山摩崖造象	běi shān mó yá zào xiàng	100
 北山摩崖造像	běi shān mó yá zào xiàng	100
 北山摩岩造像	běi shān mó yán zào xiàng	100
 北山森林公园	běi shān sēn lín gōng yuán	100
@@ -93094,6 +93263,7 @@ sort: by_weight
 被污染的水源	bèi wū rǎn de shuǐ yuán	100
 被污染的物品	bèi wū rǎn de wù pǐn	100
 贝西劳里单位	bèi xī láo lǐ dān wèi	100
+北响堂寺石窟	běi xiǎng táng sì shí kū	100
 北小辛庄西街	běi xiǎo xīn zhuāng xī jiē	100
 背斜构造理论	bèi xié gòu zào lǐ lùn	100
 北信瑞丰基金	běi xìn ruì fēng jī jīn	100
@@ -95194,6 +95364,7 @@ sort: by_weight
 糙皮病陪粒格	cāo pí bìng péi lì gé	100
 草桥欣园小区	cǎo qiáo xīn yuán xiǎo qū	100
 槽色层分析法	cáo sè céng fēn xī fǎ	100
+曹氏家族墓群	cáo shì jiā zú mù qún	100
 草乌甲素冻干	cǎo wū jiǎ sù dòng gān	100
 草酰二脲二肟	cǎo xiān èr niào èr wò	100
 草酰基化合物	cǎo xiān jī huà hé wù	100
@@ -95426,6 +95597,7 @@ sort: by_weight
 长城画片公司	cháng chéng huà piān gōng sī	100
 长城环亚控股	cháng chéng huán yà kòng gǔ	100
 长程心理治疗	cháng chéng xīn lǐ zhì liáo	100
+长城一八达龄	cháng chéng yī bā dá líng	100
 长程预警雷达	cháng chéng yù jǐng léi dá	100
 肠弛缓药中毒	cháng chí huǎn yào zhòng dú	100
 肠出血性伤寒	cháng chū xuè xìng shāng hán	100
@@ -97187,6 +97359,7 @@ sort: by_weight
 次动车组列车	cì dòng chē zǔ liè chē	100
 磁镀线存储器	cí dù xiàn cún chǔ qì	100
 茨尔恩科维奇	cí ěr ēn kē wéi qí	100
+赐儿山云帛寺	cì ér shān yún bó sì	100
 茨尔文达基奇	cí ěr wén dá jī qí	100
 此法无实无虚	cǐ fǎ wú shí wú xū	100
 赐福镇宅圣君	cì fú zhèn zhái shèng jūn	100
@@ -97670,6 +97843,7 @@ sort: by_weight
 大阪血红蛋白	dà bǎn xuè hóng dàn bái	100
 大报恩寺遗址	dà bào ēn sì yí zhǐ	100
 大保高速公路	dà bǎo gāo sù gōng lù	100
+大葆台西汉墓	dà bǎo tái xī hàn mù	100
 大爆炸宇宙论	dà bào zhà yǔ zhòu lùn	100
 大孢子母细胞	dà bāo zǐ mǔ xì bāo	100
 大北电报公司	dà běi diàn bào gōng sī	100
@@ -97823,6 +97997,7 @@ sort: by_weight
 打个措手不及	dǎ gè cuò shǒu bù jí	100
 打个电话给我	dǎ gè diàn huà gěi wǒ	100
 打勾勾的记忆	dǎ gōu gōu de jì yì	100
+大观圣作之碑	dà guān shèng zuò zhī bēi	100
 大广高速公路	dà guǎng gāo sù gōng lù	100
 大规模的生产	dà guī mó de shēng chǎn	100
 大规模的数据	dà guī mó de shù jù	100
@@ -98112,6 +98287,7 @@ sort: by_weight
 大冶有色金属	dà yě yǒu sè jīn shǔ	100
 打一辈子光棍	dǎ yí bèi zi guāng gùn	100
 打一枪换一炮	dǎ yì qiāng huàn yí pào	100
+大伊山石棺墓	dà yī shān shí guān mù	100
 打一数学名词	dǎ yī shù xué míng cí	100
 答应别人的事	dā yìng bié rén de shì	100
 大英民族主义	dà yīng mín zú zhǔ yì	100
@@ -99900,6 +100076,7 @@ sort: by_weight
 鼎丰集团控股	dǐng fēng jí tuán kòng gǔ	100
 定福庄第二小	dìng fú zhuāng dì èr xiǎo	100
 丁戈尔斯豪森	dīng gē ěr sī háo sēn	100
+定光佛舍利塔	dìng guāng fó shè lì tǎ	100
 定国军节度使	dìng guó jūn jié dù shǐ	100
 顶果钦哲法王	dǐng guǒ qīn zhé fǎ wáng	100
 鼎好电子大厦	dǐng hǎo diàn zǐ dà shà	100
@@ -100071,6 +100248,7 @@ sort: by_weight
 动量守恒定律	dòng liàng shǒu héng dìng lǜ	100
 动量转移截面	dòng liàng zhuǎn yí jié miàn	100
 动量转移理论	dòng liàng zhuǎn yí lǐ lùn	100
+东林书院旧址	dōng lín shū yuàn jiù zhǐ	100
 咚隆隆炎魔君	dōng lóng lóng yán mó jūn	100
 东吕高速公路	dōng lǚ gāo sù gōng lù	100
 东马德雷山脉	dōng mǎ dé léi shān mài	100
@@ -100095,6 +100273,7 @@ sort: by_weight
 动脉粥状硬化	dòng mài zhōu zhuàng yìng huà	100
 动漫中的人物	dòng màn zhōng de rén wù	100
 东名高速公路	dōng míng gāo sù gōng lù	100
+东南域角角楼	dōng nán yù jiǎo jiǎo lóu	100
 动能的减少量	dòng néng de jiǎn shǎo liàng	100
 东普鲁士战役	dōng pǔ lǔ shì zhàn yì	100
 东青高速公路	dōng qīng gāo sù gōng lù	100
@@ -100236,6 +100415,7 @@ sort: by_weight
 杜拜购物中心	dù bài gòu wù zhōng xīn	100
 杜波二氏定律	dù bō èr shì dìng lǜ	100
 独裁者的秋天	dú cái zhě de qiū tiān	100
+都城隍庙大殿	dū chéng huáng miào dà diàn	100
 都道府县警察	dū dào fǔ xiàn jǐng chá	100
 都道府县知事	dū dào fǔ xiàn zhī shì	100
 独岛级登陆舰	dú dǎo jí dēng lù jiàn	100
@@ -102766,6 +102946,8 @@ sort: by_weight
 封装继承多态	fēng zhuāng jì chéng duō tài	100
 佛尔递降反应	fó ěr dì jiàng fǎn yìng	100
 佛弗二氏琼脂	fó fú èr shì qióng zhī	100
+佛宫寺释迦塔	fó gōng sì shì jiā tǎ	100
+佛官寺释迦塔	fó guān sì shì jiā tǎ	100
 佛江高速公路	fó jiāng gāo sù gōng lù	100
 佛教恐怖主义	fó jiào kǒng bù zhǔ yì	100
 佛教社会主义	fó jiào shè huì zhǔ yì	100
@@ -105454,6 +105636,7 @@ sort: by_weight
 鼓膜贴补治疗	gǔ mó tiē bǔ zhì liáo	100
 骨膜下种植体	gǔ mó xià zhǒng zhí tǐ	100
 鼓膜张肌半管	gǔ mó zhāng jī bàn guǎn	100
+古木兰院石塔	gǔ mù lán yuàn shí tǎ	100
 古墓丽影暗影	gǔ mù lì yǐng àn yǐng	100
 古墓丽影崛起	gǔ mù lì yǐng jué qǐ	100
 古墓丽影系列	gǔ mù lì yǐng xì liè	100
@@ -105679,6 +105862,7 @@ sort: by_weight
 灌凤高速公路	guàn fèng gāo sù gōng lù	100
 莞佛高速公路	guǎn fó gāo sù gōng lù	100
 官港森林公园	guān gǎng sēn lín gōng yuán	100
+关沟七十二景	guān gōu qī shí èr jǐng	100
 管好自己的嘴	guǎn hǎo zì jǐ de zuǐ	100
 冠华国际控股	guān huá guó jì kòng gǔ	100
 官话合声字母	guān huà hé shēng zì mǔ	100
@@ -106130,6 +106314,7 @@ sort: by_weight
 广州高速公路	guǎng zhōu gāo sù gōng lù	100
 广州歌剧院站	guǎng zhōu gē jù yuàn zhàn	100
 广州公交车夜	guǎng zhōu gōng jiāo chē yè	100
+广州公社旧址	guǎng zhōu gōng shè jiù zhǐ	100
 广州广船国际	guǎng zhōu guǎng chuán guó jì	100
 广州海事法院	guǎng zhōu hǎi shì fǎ yuàn	100
 广州号驱逐舰	guǎng zhōu hào qū zhú jiàn	100
@@ -106881,6 +107066,7 @@ sort: by_weight
 国语流行音乐	guó yǔ liú xíng yīn yuè	100
 国誉文化传播	guó yù wén huà chuán bō	100
 国语注音符号	guó yǔ zhù yīn fú hào	100
+果园新城墓群	guǒ yuán xīn chéng mù qún	100
 过怎样的生活	guò zěn yàng de shēng huó	100
 国债报偿运动	guó zhài bào cháng yùn dòng	100
 国债期货事件	guó zhài qī huò shì jiàn	100
@@ -107155,6 +107341,7 @@ sort: by_weight
 罕布什尔学院	hǎn bù shí ěr xué yuàn	100
 寒蝉鸣泣之时	hán chán míng qì zhī shí	100
 寒蝉泣鸣之时	hán chán qì míng zhī shí	100
+汉长安城遗址	hàn cháng ān chéng yí zhǐ	100
 韩超语系假说	hán chāo yǔ xì jiǎ shuō	100
 汗出已辄轻者	hàn chū yǐ zhé qīng zhě	100
 寒带冰原气候	hán dài bīng yuán qì hòu	100
@@ -107216,6 +107403,7 @@ sort: by_weight
 含瓦斯的岩石	hán wǎ sī de yán shí	100
 罕王实业集团	hǎn wáng shí yè jí tuán	100
 捍卫公平正义	hàn wèi gōng píng zhèng yì	100
+汉魏洛阳故城	hàn wèi luò yáng gù chéng	100
 寒温性针叶林	hán wēn xìng zhēn yè lín	100
 韩熙载夜宴图	hán xī zài yè yàn tú	100
 汉学研究中心	hàn xué yán jiū zhōng xīn	100
@@ -107774,6 +107962,7 @@ sort: by_weight
 核同质异能素	hé tóng zhì yì néng sù	100
 核同质异能性	hé tóng zhì yì néng xìng	100
 合同主体资格	hé tong zhǔ tǐ zī gé	100
+赫图阿拉老城	hè tú ā lā lǎo chéng	100
 核外电子层数	hé wài diàn zǐ céng shù	100
 核外电子排布	hé wài diàn zǐ pái bù	120
 赫维赛德函数	hè wéi sài dé hán shù	100
@@ -108337,6 +108526,7 @@ sort: by_weight
 喉咙有异物感	hóu lóng yǒu yì wù gǎn	100
 后路植骨融合	hòu lù zhí gǔ róng hé	100
 后轮转向系统	hòu lún zhuàn xiàng xì tǒng	100
+侯马晋国遗址	hóu mǎ jìn guó yí zhǐ	100
 后马克思主义	hòu mǎ kè sī zhǔ yì	100
 侯麦二氏染色	hóu mài èr shì rǎn sè	100
 猴面包树大道	hóu miàn bāo shù dà dào	100
@@ -108598,6 +108788,7 @@ sort: by_weight
 呼气末氧分压	hū qì mò yǎng fēn yā	100
 呼气末氧浓度	hū qì mò yǎng nóng dù	100
 呼气气流受限	hū qì qì liú shòu xiàn	100
+虎丘摩崖题刻	hǔ qiū mó yá tí kè	100
 湖区高速公路	hú qū gāo sù gōng lù	100
 忽然传来一声	hū rán chuán lái yì shēng	100
 忽然灵机一动	hū rán líng jī yí dòng	100
@@ -108619,6 +108810,7 @@ sort: by_weight
 湖墅路沈塘桥	hú shù lù shěn táng qiáo	100
 湖水碧波荡漾	hú shuǐ bì bō dàng yàng	100
 湖水清澈见底	hú shuǐ qīng chè jiàn dǐ	100
+湖田古瓷窑址	hú tián gǔ cí yáo zhǐ	100
 护廷十三番队	hù tíng shí sān fān duì	100
 沪通长江大桥	hù tōng cháng jiāng dà qiáo	100
 互通立交工程	hù tōng lì jiāo gōng chéng	100
@@ -109506,6 +109698,7 @@ sort: by_weight
 灰色的夹克衫	huī sè de jiá kè shān	100
 辉山乳业控股	huī shān rǔ yè kòng gǔ	100
 惠山森林公园	huì shān sēn lín gōng yuán	100
+惠山唐宋经幢	huì shān táng sòng jīng chuáng	100
 惠深高速公路	huì shēn gāo sù gōng lù	100
 惠深沿海高速	huì shēn yán hǎi gāo sù	100
 会是什么反应	huì shì shén me fǎn yìng	100
@@ -110975,6 +111168,7 @@ sort: by_weight
 嘉庆二十五年	jiā qìng èr shí wǔ nián	100
 加氢酰化反应	jiā qīng xiān huà fǎn yìng	100
 甲巯基吩噻嗪	jiǎ qiú jī fēn sāi qín	100
+甲渠侯官遗址	jiǎ qú hóu guān yí zhǐ	100
 加权股价指数	jiā quán gǔ jià zhǐ shù	100
 加权轮询算法	jiā quán lún xún suàn fǎ	100
 加权算术平均	jiā quán suàn shù píng jūn	100
@@ -112629,6 +112823,7 @@ sort: by_weight
 今天比昨天更	jīn tiān bǐ zuó tiān gèng	100
 今天到此为止	jīn tiān dào cǐ wéi zhǐ	100
 今天发生的事	jīn tiān fā shēng de shì	100
+金田起义地址	jīn tián qǐ yì dì zhǐ	100
 今天上午九点	jīn tiān shàng wǔ jiǔ diǎn	100
 今天事今天毕	jīn tiān shì jīn tiān bì	100
 今天乌鲁木齐	jīn tiān wū lǔ mù qí	100
@@ -114110,6 +114305,7 @@ sort: by_weight
 开元旅业集团	kāi yuán lǚ yè jí tuán	100
 开源人工智能	kāi yuán rén gōng zhì néng	100
 开元十八学士	kāi yuán shí bā xué shì	100
+开元寺无梁殿	kāi yuán sì wú liáng diàn	100
 开元天宝遗事	kāi yuán tiān bǎo yí shì	100
 开元万寿禅寺	kāi yuán wàn shòu chán sì	100
 开源微处理器	kāi yuán wēi chǔ lǐ qì	100
@@ -114931,6 +115127,7 @@ sort: by_weight
 可转动的阀盘	kě zhuàn dòng de fá pán	100
 可装配性设计	kě zhuāng pèi xìng shè jì	100
 可追踪性矩阵	kě zhuī zōng xìng jǔ zhèn	100
+克孜尔千佛洞	kè zī ěr qiān fó dòng	100
 科兹洛杜伊岛	kē zī luò dù yī dǎo	100
 垦丁国家公园	kěn dīng guó jiā gōng yuán	100
 龈沟液测量仪	kěn gōu yè cè liáng yí	100
@@ -115552,6 +115749,7 @@ sort: by_weight
 狼吞虎咽地吃	láng tūn hǔ yàn dì chī	100
 狼心狗肺之辈	láng xīn gǒu fèi zhī bèi	100
 狼行千里吃肉	láng xíng qiān lǐ chī ròu	100
+狼牙山烈士增	láng yá shān liè shì zēng	100
 狼牙特种部队	láng yá tè zhǒng bù duì	100
 朗之万方程式	lǎng zhī wàn fāng chéng shì	100
 廊涿高速公路	láng zhuō gāo sù gōng lù	100
@@ -116163,6 +116361,7 @@ sort: by_weight
 梨园主题公园	lí yuán zhǔ tí gōng yuán	100
 利云杜夫斯基	lì yún dù fū sī jī	100
 丽泽商务区站	lì zé shāng wù qū zhàn	100
+李兆麟将军墓	lǐ zhào lín jiāng jūn mù	100
 粒重力过滤机	lì zhòng lì guò lǜ jī	100
 粒状变晶结构	lì zhuàng biàn jīng jié gòu	100
 粒状岩石风化	lì zhuàng yán shí fēng huà	100
@@ -116548,6 +116747,7 @@ sort: by_weight
 两西西里王国	liǎng xī xī lǐ wáng guó	100
 两西西里王后	liǎng xī xī lǐ wáng hòu	100
 良乡大学城站	liáng xiāng dà xué chéng zhàn	100
+良乡多室佛塔	liáng xiāng duō shì fó tǎ	100
 两项国家标准	liǎng xiàng guó jiā biāo zhǔn	100
 两相交平面镜	liǎng xiāng jiāo píng miàn jìng	100
 良乡理工大学	liáng xiāng lǐ gōng dà xué	100
@@ -116626,12 +116826,15 @@ sort: by_weight
 辽宁高速公路	liáo níng gāo sù gōng lù	100
 辽宁宏运球员	liáo níng hóng yùn qiú yuán	100
 辽宁沈阳宏运	liáo níng shěn yáng hóng yùn	100
+辽宁省博物馆	liáo níng shěng bó wù guǎn	100
 辽宁师范大学	liáo níng shī fàn dà xué	100
 辽宁师范学院	liáo níng shī fàn xué yuàn	100
 辽宁药都本溪	liáo níng yào dōu běn xī	100
 辽宁医科大学	liáo níng yī kē dà xué	100
 辽宁忠旺集团	liáo níng zhōng wàng jí tuán	100
+辽庆州城遗址	liáo qìng zhōu chéng yí zhǐ	100
 撩人的小妖精	liáo rén de xiǎo yāo jīng	100
+辽上京城遗址	liáo shàng jīng chéng yí zhǐ	100
 辽史纪事本末	liáo shǐ jì shì běn mò	100
 辽事通健康码	liáo shì tōng jiàn kāng mǎ	100
 辽太祖耶律亿	liáo tài zǔ yē lǜ yì	100
@@ -116646,7 +116849,9 @@ sort: by_weight
 辽阳农商银行	liáo yáng nóng shāng yín háng	100
 聊斋艳谭续集	liáo zhāi yàn tán xù jí	100
 辽中环线高速	liáo zhōng huán xiàn gāo sù	100
+辽中京城遗址	liáo zhōng jīng chéng yí zhǐ	100
 廖兹年斯基区	liào zī nián sī jī qū	100
+辽祖州城遗址	liáo zǔ zhōu chéng yí zhǐ	100
 劣币驱逐良币	liè bì qū zhú liáng bì	100
 列别江斯基区	liè bié jiāng sī jī qū	100
 列朝诗集小传	liè cháo shī jí xiǎo zhuàn	100
@@ -116934,6 +117139,7 @@ sort: by_weight
 刘德华的粉丝	liú dé huá de fěn sī	100
 柳蒂布罗德岩	liǔ dì bù luó dé yán	100
 柳丁绿好好喝	liǔ dīng lǜ hǎo hǎo hē	100
+六顶山古墓群	liù dǐng shān gǔ mù qún	100
 六顶思考帽子	liù dǐng sī kǎo mào zi	100
 流动的风景线	liú dòng de fēng jǐng xiàn	100
 流动的现代性	liú dòng de xiàn dài xìng	100
@@ -116962,6 +117168,7 @@ sort: by_weight
 六横公路大桥	liù héng gōng lù dà qiáo	100
 六横跨海大桥	liù héng kuà hǎi dà qiáo	100
 六红球斯诺克	liù hóng qiú sī nuò kè	100
+刘胡兰纪念馆	liú hú lán jì niàn guǎn	100
 流化床反应器	liú huà chuáng fǎn yìng qì	100
 流化催化裂化	liú huà cuī huà liè huà	100
 刘辉履历事件	liú huī lǚ lì shì jiàn	100
@@ -117130,6 +117337,7 @@ sort: by_weight
 龙斌大话电影	lóng bīn dà huà diàn yǐng	100
 隆博米尔斯基	lóng bó mǐ ěr sī jī	100
 垄茶高速公路	lǒng chá gāo sù gōng lù	100
+隆昌寺无梁殿	lóng chāng sì wú liáng diàn	100
 龙川胡氏宗祠	lóng chuān hú shì zōng cí	100
 泷川克里斯汀	lóng chuān kè lǐ sī tīng	100
 龙大高速公路	lóng dà gāo sù gōng lù	100
@@ -117940,6 +118148,7 @@ sort: by_weight
 盲点监测系统	máng diǎn jiān cè xì tǒng	100
 芒果芝士蛋糕	máng guǒ zhī shì dàn gāo	100
 芒果周播剧场	máng guǒ zhōu bō jù chǎng	100
+莽吉塔站故城	mǎng jí tǎ zhàn gù chéng	100
 茫茫黑夜漫游	máng máng hēi yè màn yóu	100
 盲区监测系统	máng qū jiān cè xì tǒng	100
 茫然不知所措	máng rán bù zhī suǒ cuò	100
@@ -118047,6 +118256,7 @@ sort: by_weight
 冒着枪林弹雨	mào zhe qiāng lín dàn yǔ	100
 毛周角质管型	máo zhōu jiǎo zhì guǎn xíng	100
 毛主席的光辉	máo zhǔ xí de guāng huī	100
+毛主席纪念堂	máo zhǔ xí jì niàn táng	100
 没安什么好心	méi ān shén me hǎo xīn	100
 美白补水保湿	měi bái bǔ shuǐ bǎo shī	100
 美白补水面膜	měi bái bǔ shuǐ miàn mó	100
@@ -118794,6 +119004,7 @@ sort: by_weight
 明二黄先生墓	míng èr huáng xiān shēng mù	100
 命犯天煞孤星	mìng fàn tiān shā gū xīng	100
 明华澳汉科技	míng huá ào hàn kē jì	100
+明惠大师石塔	míng huì dà shī shí tǎ	100
 名杰出教练员	míng jié chū jiào liàn yuán	100
 命疗结界术诀	mìng liáo jié jiè shù jué	100
 命令提示字元	mìng lìng tí shì zì yuán	100
@@ -119097,6 +119308,7 @@ sort: by_weight
 目光所及之处	mù guāng suǒ jí zhī chù	100
 暮光之城破晓	mù guāng zhī chéng pò xiǎo	100
 暮光之城系列	mù guāng zhī chéng xì liè	100
+穆桂英点将台	mù guì yīng diǎn jiàng tái	100
 慕赫堡装甲师	mù hè bǎo zhuāng jiǎ shī	100
 目黑寄生虫馆	mù hēi jì shēng chóng guǎn	100
 姆吉拉的假面	mǔ jí lā de jiǎ miàn	100
@@ -119323,6 +119535,7 @@ sort: by_weight
 南极长生大帝	nán jí cháng shēng dà dì	100
 南极的北极熊	nán jí de běi jí xióng	100
 南极圈臭氧孔	nán jí quān chòu yǎng kǒng	100
+南京长江大桥	nán jīng cháng jiāng dà qiáo	100
 难经汇注笺正	nán jīng huì zhù jiān zhèng	100
 难经经释补正	nán jīng jīng shì bǔ zhèng	100
 南京虐童事件	nán jīng nüè tóng shì jiàn	100
@@ -119372,6 +119585,7 @@ sort: by_weight
 难为无米之炊	nán wéi wú mǐ zhī chuī	100
 南梧高速公路	nán wú gāo sù gōng lù	100
 南乌拉尔山脉	nán wù lā ěr shān mài	100
+南响堂寺石窟	nán xiǎng táng sì shí kū	100
 南小鸟的老公	nán xiǎo niǎo de lǎo gōng	100
 男性不孕不育	nán xìng bú yùn bú yù	100
 男性的荷尔蒙	nán xìng de hé ěr méng	100
@@ -119484,6 +119698,7 @@ sort: by_weight
 脑子是浆糊的	nǎo zi shì jiāng hú de	100
 脑子越用越灵	nǎo zi yuè yòng yuè líng	100
 哪吒魔童降世	né zhā mó tóng jiàng shì	100
+内边长城敌台	nèi biān cháng chéng dí tái	100
 内禀温度涨落	nèi bǐng wēn dù zhǎng luò	100
 内博重排反应	nèi bó chóng pái fǎn yìng	100
 内部产销壁垒	nèi bù chǎn xiāo bì lěi	100
@@ -119671,6 +119886,7 @@ sort: by_weight
 你还有完没完	nǐ hái yǒu wán méi wán	100
 你还知道哪些	nǐ hái zhī dào nǎ xiē	100
 你好大的胆子	nǐ hǎo dà de dǎn zi	100
+泥河湾遗址群	ní hé wān yí zhǐ qún	100
 拟合优度检验	nǐ hé yōu dù jiǎn yàn	100
 你会死得很惨	nǐ huì sǐ de hěn cǎn	100
 你会写代码吗	nǐ huì xiě dài mǎ ma	100
@@ -119963,6 +120179,7 @@ sort: by_weight
 宁德师范学院	níng dé shī fàn xué yuàn	100
 宁定高速公路	níng dìng gāo sù gōng lù	100
 宁高高速公路	níng gāo gāo sù gōng lù	100
+宁古塔城遗址	níng gǔ tǎ chéng yí zhǐ	100
 宁广高速公路	níng guǎng gāo sù gōng lù	100
 宁国军节度使	níng guó jūn jié dù shǐ	100
 宁杭城际铁路	níng háng chéng jì tiě lù	100
@@ -121078,6 +121295,7 @@ sort: by_weight
 普通楔式闸阀	pǔ tōng xiē shì zhá fá	120
 普通型股骨柄	pǔ tōng xíng gǔ gǔ bǐng	100
 普通型偏头痛	pǔ tōng xíng piān tóu tòng	100
+普陀宗乘之庙	pǔ tuó zōng chéng zhī miào	100
 蒲洼中心小学	pú wā zhōng xīn xiǎo xué	100
 谱线精细结构	pǔ xiàn jīng xì jié gòu	100
 谱线强度因子	pǔ xiàn qiáng dù yīn zǐ	100
@@ -121437,6 +121655,7 @@ sort: by_weight
 栖息地的破坏	qī xī dì de pò huài	100
 其喜洋洋者矣	qí xǐ yáng yáng zhě yǐ	100
 栖霞高速公路	qī xiá gāo sù gōng lù	100
+栖霞寺舍利塔	qī xiá sì shè lì tǎ	100
 起下钻泥浆罐	qǐ xià zuān ní jiāng guàn	120
 期限届满之日	qī xiàn jiè mǎn zhī rì	100
 七仙女与董永	qī xiān nǚ yǔ dǒng yǒng	100
@@ -122582,6 +122801,7 @@ sort: by_weight
 青衣科技学院	qīng yī kē jì xué yuàn	100
 青一块紫一块	qīng yí kuài zǐ yí kuài	100
 请以实物为准	qǐng yǐ shí wù wéi zhǔn	100
+清怡贤亲王墓	qīng yí xián qīn wáng mù	100
 青银高速公路	qīng yín gāo sù gōng lù	100
 庆应义塾大学	qìng yīng yì shú dà xué	100
 请予接洽为盼	qǐng yǔ jiē qià wéi pàn	100
@@ -122688,6 +122908,7 @@ sort: by_weight
 取除人工晶体	qǔ chú rén gōng jīng tǐ	100
 祛除体内湿气	qū chú tǐ nèi shī qì	100
 去除牙周固定	qù chú yá zhōu gù dìng	100
+曲村天马遗址	qǔ cūn tiān mǎ yí zhǐ	100
 取代度润湿度	qǔ dài dù rùn shī dù	100
 区带离心分离	qū dài lí xīn fēn lí	100
 区党工委书记	qū dǎng gōng wěi shū jì	100
@@ -122733,6 +122954,7 @@ sort: by_weight
 区华利基金会	qū huá lì jī jīn huì	100
 趋化因子受体	qū huà yīn zǐ shòu tǐ	100
 区环境监测站	qū huán jìng jiān cè zhàn	100
+曲回寺石佛冢	qǔ huí sì shí fó zhǒng	100
 曲回寺石像冢	qǔ huí sì shí xiàng zhǒng	100
 区婚姻登记处	qū hūn yīn dēng jì chù	100
 区纪委区监委	qū jì wěi qū jiān wěi	100
@@ -124175,6 +124397,7 @@ sort: by_weight
 睿富房产基金	ruì fù fáng chǎn jī jīn	100
 瑞赣高速公路	ruì gàn gāo sù gōng lù	100
 瑞惠金融集团	ruì huì jīn róng jí tuán	100
+瑞金革命遗址	ruì jīn gé mìng yí zhǐ	100
 瑞京华人协会	ruì jīng huá rén xié huì	100
 瑞利辐射公式	ruì lì fú shè gōng shì	100
 瑞丽高速公路	ruì lì gāo sù gōng lù	100
@@ -124240,6 +124463,7 @@ sort: by_weight
 萨克逊伍兹势	sà kè xùn wǔ zī shì	100
 撒拉尔语语法	sā lā ěr yǔ yǔ fǎ	100
 撒拉森装甲车	sā lā sēn zhuāng jiǎ chē	100
+萨拉乌苏遗址	sà lā wū sū yí zhǐ	100
 撒路斯提乌斯	sā lù sī tí wū sī	100
 萨谬尔森陷阱	sà miù ěr sēn xiàn jǐng	100
 萨缪尔森定理	sà móu ěr sēn dìng lǐ	100
@@ -124349,6 +124573,7 @@ sort: by_weight
 三国志孔明传	sān guó zhì kǒng míng zhuàn	100
 三国志赵云传	sān guó zhì zhào yún zhuàn	100
 三好清海入道	sān hǎo qīng hǎi rù dào	100
+三横四直图碑	sān héng sì zhí tú bēi	100
 伞花素水印辊	sǎn huā sù shuǐ yìn gǔn	100
 三环抗抑郁剂	sān huán kàng yì yù jì	100
 三环抗抑郁药	sān huán kàng yì yù yào	100
@@ -124516,6 +124741,7 @@ sort: by_weight
 三亚乙基四胺	sān yà yǐ jī sì àn	100
 三亚有轨电车	sān yà yǒu guǐ diàn chē	100
 三叶虫三片叶	sān yè chóng sān piàn yè	100
+三一八烈士墓	sān yī bā liè shì mù	100
 三异丙基硅基	sān yì bǐng jī guī jī	100
 三义国际机场	sān yì guó jì jī chǎng	100
 散逸可测变换	sàn yì kě cè biàn huàn	100
@@ -124663,6 +124889,7 @@ sort: by_weight
 山地自行车赛	shān dì zì xíng chē sài	100
 闪电般的速度	shǎn diàn bān de sù dù	100
 闪点行动系列	shǎn diǎn xíng dòng xì liè	100
+山顶洞人遗址	shān dǐng dòng rén yí zhǐ	100
 山东布政使司	shān dōng bù zhèng shǐ sī	100
 山东大学校区	shān dōng dà xué xiào qū	100
 山东范公酒业	shān dōng fàn gōng jiǔ yè	100
@@ -124738,6 +124965,8 @@ sort: by_weight
 珊瑚礁鱼毒素	shān hú jiāo yú dú sù	100
 珊瑚面关节柄	shān hú miàn guān jié bǐng	100
 珊瑚状白内障	shān hú zhuàng bái nèi zhàng	100
+善化寺普贤阁	shàn huà sì pǔ xián gé	100
+善化寺三圣殿	shàn huà sì sān shèng diàn	100
 闪辉沸霞斜岩	shǎn huī fèi xiá xié yán	100
 闪击延安计划	shǎn jī yán ān jì huà	100
 山间之四时也	shān jiān zhī sì shí yě	100
@@ -124764,6 +124993,7 @@ sort: by_weight
 山区地基处理	shān qū dì jī chǔ lǐ	100
 山染修眉新绿	shān rǎn xiū méi xīn lǜ	100
 山人自有妙计	shān rén zì yǒu miào jì	100
+山神峪千佛洞	shān shén yù qiān fó dòng	100
 膳食抗氧化剂	shàn shí kàng yǎng huà jì	100
 善书者不择笔	shàn shū zhě bù zé bǐ	100
 山水林田湖草	shān shuǐ lín tián hú cǎo	100
@@ -124828,6 +125058,7 @@ sort: by_weight
 陕西上市公司	shǎn xī shàng shì gōng sī	100
 陕西省安康市	shǎn xī shěng ān kāng shì	100
 陕西省宝鸡市	shǎn xī shěng bǎo jī shì	100
+山西省博物馆	shān xī shěng bó wù guǎn	100
 山西省长治市	shān xī shěng cháng zhì shì	100
 山西省大同市	shān xī shěng dà tóng shì	100
 陕西省汉中市	shǎn xī shěng hàn zhōng shì	100
@@ -124944,8 +125175,10 @@ sort: by_weight
 上古石器时代	shàng gǔ shí qì shí dài	100
 伤害降到最低	shāng hài jiàng dào zuì dī	100
 伤害就是伤害	shāng hài jiù shì shāng hài	100
+上海鲁迅故属	shàng hǎi lǔ xùn gù shǔ	100
 伤害身体健康	shāng hài shēn tǐ jiàn kāng	100
 伤害输出能力	shāng hài shū chū néng lì	100
+上海中山故居	shàng hǎi zhōng shān gù jū	100
 伤寒和副伤寒	shāng hán hé fù shāng hán	100
 伤寒沙门氏菌	shāng hán shā mén shì jūn	100
 伤寒十居其七	shāng hán shí jū qí qī	100
@@ -126021,6 +126254,7 @@ sort: by_weight
 省时省心省力	shěng shí shěng xīn shěng lì	100
 省实顺德学校	shěng shí shùn dé xué xiào	100
 省试湘灵鼓瑟	shěng shì xiāng líng gǔ sè	100
+圣寿寺舍利塔	shèng shòu sì shè lì tǎ	100
 省属重点高校	shěng shǔ zhòng diǎn gāo xiào	100
 省水产研究所	shěng shuǐ chǎn yán jiū suǒ	100
 省水稻研究所	shěng shuǐ dào yán jiū suǒ	100
@@ -127766,6 +128000,7 @@ sort: by_weight
 十字韧带损伤	shí zì rèn dài sǔn shāng	100
 施兹氏眼压计	shī zī shì yǎn yā jì	100
 柿子挑软的捏	shì zi tiāo ruǎn de niē	100
+狮子窝琉璃塔	shī zi wō liú lí tǎ	100
 式自行火箭炮	shì zì xíng huǒ jiàn pào	100
 式自行榴弹炮	shì zì xíng liú dàn pào	100
 式自行迫击炮	shì zì xíng pǎi jī pào	100
@@ -128922,11 +129157,13 @@ sort: by_weight
 死马当活马医	sǐ mǎ dāng huó mǎ yī	100
 司马辽太郎奖	sī mǎ liáo tài láng jiǎng	100
 司马庙立交桥	sī mǎ miào lì jiāo qiáo	100
+司马迁墓和祠	sī mǎ qiān mù hé cí	100
 司马迁著史记	sī mǎ qiān zhù shǐ jì	100
 司马懿的儿子	sī mǎ yì de ér zi	100
 斯梅尔向量场	sī méi ěr xiàng liàng chǎng	100
 斯密特正交化	sī mì tè zhèng jiāo huà	100
 思妙文化传播	sī miào wén huà chuán bō	100
+四明公所旧址	sì míng gōng suǒ jiù zhǐ	100
 四明公所事件	sì míng gōng suǒ shì jiàn	100
 似魔鬼的步伐	sì mó guǐ de bù fá	100
 司母戊大方鼎	sī mǔ wù dà fang dǐng	100
@@ -129123,6 +129360,7 @@ sort: by_weight
 宋家庄枢纽站	sòng jiā zhuāng shū niǔ zhàn	100
 松建高速公路	sōng jiàn gāo sù gōng lù	100
 松江花鸟园站	sōng jiāng huā niǎo yuán zhàn	100
+松江明刻照壁	sōng jiāng míng kè zhào bì	100
 松江有轨电车	sōng jiāng yǒu guǐ diàn chē	100
 送教下乡活动	sòng jiào xià xiāng huó dòng	100
 宋金海上之盟	sòng jīn hǎi shàng zhī méng	100
@@ -129585,6 +129823,7 @@ sort: by_weight
 塔希提岛鸟类	tǎ xī tí dǎo niǎo lèi	100
 踏下加速踏板	tà xià jiā sù tà bǎn	100
 他项权利登记	tā xiàng quán lì dēng jì	100
+塔营子古城址	tǎ yíng zi gǔ chéng zhǐ	100
 他与她的事情	tā yǔ tā de shì qíng	100
 她在睡前哭泣	tā zài shuì qián kū qì	100
 他在乌鲁木齐	tā zài wū lǔ mù qí	100
@@ -129881,6 +130120,7 @@ sort: by_weight
 碳质球粒陨石	tàn zhì qiú lì yǔn shí	100
 碳足迹数据库	tàn zú jì shù jù kù	100
 唐博斯科新堡	táng bó sī kē xīn bǎo	100
+唐长安城遗址	táng cháng ān chéng yí zhǐ	100
 塘承高速公路	táng chéng gāo sù gōng lù	100
 唐创业起居注	táng chuàng yè qǐ jū zhù	100
 糖醋鱼不要醋	táng cù yú bú yào cù	100
@@ -129902,6 +130142,7 @@ sort: by_weight
 堂吉诃德精神	táng jí hē dé jīng shén	100
 唐击焉耆之战	táng jī yān qí zhī zhàn	100
 唐津高速公路	táng jīn gāo sù gōng lù	100
+唐九成宫遗址	táng jiǔ chéng gōng yí zhǐ	100
 唐雎不辱使命	táng jū bù rǔ shǐ mìng	100
 唐军的突厥人	táng jūn de tū jué rén	100
 唐骏欧铃汽车	táng jùn ōu líng qì chē	100
@@ -130950,6 +131191,7 @@ sort: by_weight
 通州师范学校	tōng zhōu shī fàn xué xiào	100
 同主音大小调	tóng zhǔ yīn dà xiǎo diào	100
 童子拜观音石	tóng zǐ bài guān yīn shí	100
+童子寺燃灯塔	tóng zǐ sì rán dēng tǎ	100
 偷百姓的盗贼	tōu bǎi xìng de dào zéi	100
 投标文件编制	tóu biāo wén jiàn biān zhì	100
 头部黑色素痣	tóu bù hēi sè sù zhì	100
@@ -131511,6 +131753,7 @@ sort: by_weight
 万东医疗装备	wàn dōng yī liáo zhuāng bèi	100
 万都底盘部件	wàn dōu dǐ pán bù jiàn	100
 玩俄罗斯方块	wán é luó sī fāng kuài	100
+万发拨子遗址	wàn fā bá zi yí zhǐ	100
 万佛华侨陵园	wàn fó huá qiáo líng yuán	100
 万夫不当之勇	wàn fū bù dāng zhī yǒng	100
 万盖国家公园	wàn gài guó jiā gōng yuán	100
@@ -132196,6 +132439,7 @@ sort: by_weight
 维隆气单胞菌	wéi lóng qì dān bāo jūn	100
 韦伦斯症候群	wéi lún sī zhèng hòu qún	100
 伪满洲国皇帝	wěi mǎn zhōu guó huáng dì	100
+伪满洲国皇宫	wěi mǎn zhōu guó huáng gōng	100
 唯美主义运动	wéi měi zhǔ yì yùn dòng	100
 魏灭中山之战	wèi miè zhōng shān zhī zhàn	100
 为民务实清廉	wèi mín wù shí qīng lián	100
@@ -132974,6 +133218,7 @@ sort: by_weight
 雾化吸入治疗	wù huà xī rù zhì liáo	100
 武黄城际铁路	wǔ huáng chéng jì tiě lù	100
 芜黄高速公路	wú huáng gāo sù gōng lù	100
+五回头城遗址	wǔ huí tóu chéng yí zhǐ	100
 武吉班让轻轨	wǔ jí bān ràng qīng guǐ	100
 无机保温砂浆	wú jī bǎo wēn shā jiāng	100
 无机非水溶剂	wú jī fēi shuǐ róng jì	100
@@ -133058,6 +133303,7 @@ sort: by_weight
 五矿崇文金城	wǔ kuàng chóng wén jīn chéng	100
 五矿二十三冶	wǔ kuàng èr shí sān yě	100
 五矿经易期货	wǔ kuàng jīng yì qī huò	100
+五盔坟五号墓	wǔ kuī fén wǔ hào mù	100
 武昆高速公路	wǔ kūn gāo sù gōng lù	100
 勿拉士峇沙路	wù lā shì bā shā lù	100
 勿兰克福条约	wù lán kè fú tiáo yuē	100
@@ -133591,6 +133837,7 @@ sort: by_weight
 西安清真大寺	xī ān qīng zhēn dà sì	100
 西安绕城高速	xī ān rào chéng gāo sù	100
 锡安社会主义	xī ān shè huì zhǔ yì	100
+西安事变旧址	xī ān shì biàn jiù zhǐ	100
 西安师范学校	xī ān shī fàn xué xiào	100
 西安师范学院	xī ān shī fàn xué yuàn	100
 西安石油大学	xī ān shí yóu dà xué	100
@@ -134411,6 +134658,7 @@ sort: by_weight
 现实自由主义	xiàn shí zì yóu zhǔ yì	100
 县属国有企业	xiàn shǔ guó yǒu qǐ yè	100
 弦数者风发也	xián shù zhě fēng fā yě	100
+仙水岩崖墓群	xiān shuǐ yán yá mù qún	100
 纤丝滑动模型	xiān sī huá dòng mó xíng	100
 线速度的方向	xiàn sù dù de fāng xiàng	100
 闲谈莫论人非	xián tán mò lùn rén fēi	100
@@ -136414,6 +136662,7 @@ sort: by_weight
 徐家漕长乐站	xú jiā cáo cháng lè zhàn	100
 虚假出资证明	xū jiǎ chū zī zhèng míng	100
 虚假的安全感	xū jiǎ de ān quán gǎn	100
+徐家汇天主堂	xú jiā huì tiān zhǔ táng	100
 虚假或误导性	xū jiǎ huò wù dǎo xìng	100
 虚假诉讼案件	xū jiǎ sù sòng àn jiàn	100
 虚假新闻事件	xū jiǎ xīn wén shì jiàn	100
@@ -136548,6 +136797,7 @@ sort: by_weight
 绚濑绘鲤鱼王	xuàn lài huì lǐ yú wáng	100
 悬链锚腿系泊	xuán liàn máo tuǐ jì bó	120
 旋律鞭击金属	xuán lǜ biān jī jīn shǔ	100
+玄妙观三清殿	xuán miào guān sān qīng diàn	100
 选民资格案件	xuǎn mín zī gé àn jiàn	100
 旋钮式的换挡	xuán niǔ shì de huàn dǎng	100
 选派第一书记	xuǎn pài dì yī shū jì	100
@@ -137024,6 +137274,7 @@ sort: by_weight
 延安东路外滩	yán ān dōng lù wài tān	100
 延安干部学院	yán ān gàn bù xué yuàn	100
 延安高速公路	yán ān gāo sù gōng lù	100
+延安革命遗址	yán ān gé mìng yí zhǐ	100
 延安军事学院	yán ān jūn shì xué yuàn	100
 延安军政学院	yán ān jūn zhèng xué yuàn	100
 延安马列学院	yán ān mǎ liè xué yuàn	100
@@ -137226,6 +137477,7 @@ sort: by_weight
 严厉批评教育	yán lì pī píng jiào yù	100
 延链补链强链	yán liàn bǔ liàn qiáng liàn	100
 阎良试飞中心	yán liáng shì fēi zhōng xīn	100
+延陵季子墓碑	yán líng jì zǐ mù bēi	100
 岩流岛之决斗	yán liú dǎo zhī jué dòu	100
 炎龙骑士团二	yán lóng qí shì tuán èr	100
 眼轮匝肌麻痹	yǎn lún zā jī má bì	100
@@ -137252,6 +137504,7 @@ sort: by_weight
 眼前为之一亮	yǎn qián wéi zhī yí liàng	100
 眼前一片黑暗	yǎn qián yí piàn hēi àn	100
 眼前一片漆黑	yǎn qián yí piàn qī hēi	100
+延庆寺大佛殿	yán qìng sì dà fó diàn	100
 言情小说推荐	yán qíng xiǎo shuō tuī jiàn	100
 眼球共轭运动	yǎn qiú gòng è yùn dòng	100
 眼球结膜移植	yǎn qiú jié mó yí zhí	100
@@ -137595,6 +137848,7 @@ sort: by_weight
 杨森波多黎各	yáng sēn bō duō lí gè	100
 洋山保税港区	yáng shān bǎo shuì gǎng qū	100
 仰山慧寂禅师	yǎng shān huì jì chán shī	100
+阳山孝陵碑材	yáng shān xiào líng bēi cái	100
 仰韶文化时期	yǎng sháo wén huà shí qī	100
 仰韶文化遗址	yǎng sháo wén huà yí zhǐ	100
 洋参虫草益肾	yáng shēn chóng cǎo yì shèn	100
@@ -137631,6 +137885,7 @@ sort: by_weight
 扬州树人学校	yáng zhōu shù rén xué xiào	100
 扬州树人中学	yáng zhōu shù rén zhōng xué	100
 扬州泰州机场	yáng zhōu tài zhōu jī chǎng	100
+扬州唐城遗址	yáng zhōu táng chéng yí zhǐ	100
 杨庄红色页岩	yáng zhuāng hóng sè yè yán	100
 扬子饭店旧址	yáng zǐ fàn diàn jiù zhǐ	100
 阳字号驱逐舰	yáng zì hào qū zhú jiàn	100
@@ -139427,6 +139682,7 @@ sort: by_weight
 英超金手套奖	yīng chāo jīn shǒu tào jiǎng	100
 英超总射手榜	yīng chāo zǒng shè shǒu bǎng	100
 应承担的责任	yìng chéng dān de zé rèn	100
+营城子壁画墓	yíng chéng zǐ bì huà mù	100
 盈创动力大厦	yíng chuàng dòng lì dà shà	100
 赢创工业集团	yíng chuàng gōng yè jí tuán	100
 迎春阁之风波	yíng chūn gé zhī fēng bō	100
@@ -139707,6 +139963,7 @@ sort: by_weight
 影子如影随行	yǐng zi rú yǐng suí xíng	100
 影子武士系列	yǐng zi wǔ shì xì liè	100
 永安军节度使	yǒng ān jūn jié dù shǐ	100
+永安莽喀诗碑	yǒng ān mǎng kā shī bēi	100
 永葆青春活力	yǒng bǎo qīng chūn huó lì	100
 拥抱人工智能	yōng bào rén gōng zhì néng	100
 永葆政治本色	yǒng bǎo zhèng zhì běn sè	100
@@ -139830,6 +140087,7 @@ sort: by_weight
 拥有不死之身	yōng yǒu bù sǐ zhī shēn	100
 用友财务软件	yòng yǒu cái wù ruǎn jiàn	100
 拥有盛世美颜	yōng yǒu shèng shì měi yán	100
+永佑寺舍利塔	yǒng yòu sì shè lì tǎ	100
 拥有一技之长	yōng yǒu yí jì zhī cháng	100
 拥有一口好牙	yōng yǒu yì kǒu hǎo yá	100
 拥有一席之地	yōng yǒu yì xí zhī dì	100
@@ -140626,6 +140884,7 @@ sort: by_weight
 域名和服务器	yù míng hé fú wù qì	100
 与陌生人共舞	yǔ mò shēng rén gòng wǔ	100
 榆木疙瘩脑袋	yú mù gē da nǎo dai	100
+于木兰作诗碑	yú mù lán zuò shī bēi	100
 玉南电气铁道	yù nán diàn qì tiě dào	100
 渝南高速公路	yú nán gāo sù gōng lù	100
 豫能控股股份	yù néng kòng gǔ gǔ fèn	100
@@ -140656,6 +140915,7 @@ sort: by_weight
 舆情监测系统	yú qíng jiān cè xì tǒng	100
 玉清元始天尊	yù qīng yuán shǐ tiān zūn	100
 与全世界为敌	yǔ quán shì jiè wéi dí	100
+玉泉寺及铁塔	yù quán sì jí tiě tǎ	100
 余热回收利用	yú rè huí shōu lì yòng	100
 余热回收装置	yú rè huí shōu zhuāng zhì	100
 遇热痛遇冷痛	yù rè tòng yù lěng tòng	100
@@ -140964,6 +141224,7 @@ sort: by_weight
 元山葛麻机场	yuán shān gé má jī chǎng	100
 元山水产大学	yuán shān shuǐ chǎn dà xué	100
 愿上帝祝福你	yuàn shàng dì zhù fú nǐ	100
+元上都城遗址	yuán shàng dōu chéng yí zhǐ	100
 源深体育中心	yuán shēn tǐ yù zhōng xīn	100
 原生化学沉积	yuán shēng huà xué chén jī	100
 原生家庭伤害	yuán shēng jiā tíng shāng hài	100
@@ -141206,6 +141467,10 @@ sort: by_weight
 孕妇防辐射服	yùn fù fáng fú shè fú	100
 允富土魠鱼羹	yǔn fù tǔ tuō yú gēng	100
 云服务器产品	yún fú wù qì chǎn pǐn	100
+云冈东部窟群	yún gāng dōng bù kū qún	100
+云冈露天大佛	yún gāng lù tiān dà fó	100
+云冈昙曜五窟	yún gāng tán yào wǔ kū	100
+云冈西部窟群	yún gāng xī bù kū qún	100
 云桂高速铁路	yún guì gāo sù tiě lù	100
 云和山的彼端	yún hé shān de bǐ duān	100
 云贺网络科技	yún hè wǎng luò kē jì	100
@@ -141281,6 +141546,7 @@ sort: by_weight
 运行的稳定性	yùn xíng de wěn dìng xìng	100
 运行以下命令	yùn xíng yǐ xià mìng lìng	100
 运讯网络科技	yùn xùn wǎng luò kē jì	100
+云岩寺二山门	yún yán sì èr shān mén	100
 云阳长江大桥	yún yáng cháng jiāng dà qiáo	100
 云阳高速公路	yún yáng gāo sù gōng lù	100
 孕婴世界连锁	yùn yīng shì jiè lián suǒ	100
@@ -142440,6 +142706,7 @@ sort: by_weight
 正规单形映射	zhèng guī dān xíng yìng shè	100
 正癸基化合物	zhèng guǐ jī huà hé wù	100
 正规线性算子	zhèng guī xiàn xìng suàn zǐ	100
+郑国渠首遗址	zhèng guó qú shǒu yí zhǐ	100
 郑韩故城遗址	zhèng hán gù chéng yí zhǐ	100
 郑合高速铁路	zhèng hé gāo sù tiě lù	100
 郑和号训练舰	zhèng hé hào xùn liàn jiàn	100
@@ -143852,6 +144119,7 @@ sort: by_weight
 忠国信息科技	zhōng guó xìn xī kē jì	100
 中国页岩革命	zhōng guó yè yán gé mìng	100
 中国邮路问题	zhōng guó yóu lù wèn tí	100
+中国猿人遗址	zhōng guó yuán rén yí zhǐ	100
 中哈合作中心	zhōng hā hé zuò zhōng xīn	100
 中韩天津条约	zhōng hán tiān jīn tiáo yuē	100
 中韩通商条约	zhōng hán tōng shāng tiáo yuē	100
@@ -145263,7 +145531,9 @@ sort: by_weight
 子女教育支出	zǐ nǚ jiào yù zhī chū	100
 自配极三角形	zì pèi jí sān jiǎo xíng	100
 自配极四面形	zì pèi jí sì miàn xíng	100
+紫气东来城关	zǐ qì dōng lái chéng guān	100
 自前世而固然	zì qián shì ér gù rán	100
+紫全山天文台	zǐ quán shān tiān wén tái	100
 自然保湿因子	zì rán bǎo shī yīn zǐ	100
 自然保育人士	zì rán bǎo yù rén shì	100
 自然保育组织	zì rán bǎo yù zǔ zhī	100
@@ -146826,6 +147096,7 @@ sort: by_weight
 八路军南下支队	bā lù jūn nán xià zhī duì	100
 巴罗科罗拉多岛	bā luó kē luó lā duō dǎo	100
 把你捧在手心里	bǎ nǐ pěng zài shǒu xīn lǐ	100
+八女投江纪念地	bā nǚ tóu jiāng jì niàn dì	100
 巴佩二氏眼压计	bā pèi èr shì yǎn yā jì	100
 八旗二马路小学	bā qí èr mǎ lù xiǎo xué	100
 把钱花在刀刃上	bǎ qián huā zài dāo rèn shàng	100
@@ -147268,6 +147539,7 @@ sort: by_weight
 宝刀争夺大作战	bǎo dāo zhēng duó dà zuò zhàn	100
 抱得秋情不忍眠	bào dé qiū qíng bù rěn mián	100
 宝鼎茶闲烟尚绿	bǎo dǐng chá xián yān shàng lǜ	100
+宝顶山摩崖造象	bǎo dǐng shān mó yá zào xiàng	100
 宝顶山摩岩造像	bǎo dǐng shān mó yán zào xiàng	100
 鲍尔科学成就奖	bào ěr kē xué chéng jiù jiǎng	100
 鲍尔通亨特试剂	bào ěr tōng hēng tè shì jì	100
@@ -147354,6 +147626,7 @@ sort: by_weight
 包容对方的缺点	bāo róng duì fāng de quē diǎn	100
 包容你的小脾气	bāo róng nǐ de xiǎo pí qì	100
 宝瑟泠泠千古调	bǎo sè líng líng qiān gǔ diào	100
+保圣寺罗汉塑像	bǎo shèng sì luó hàn sù xiàng	100
 保氏非洲剑水蚤	bǎo shì fēi zhōu jiàn shuǐ zǎo	100
 保时捷博克斯特	bǎo shí jié bó kè sī tè	100
 保时捷帕纳美拉	bǎo shí jié pà nà měi lā	100
@@ -148272,6 +148545,7 @@ sort: by_weight
 不对称伸缩振动	bú duì chèn shēn suō zhèn dòng	100
 不对称资讯理论	bú duì chèn zī xùn lǐ lùn	100
 不儿罕合勒敦山	bù ér hǎn hé lè dūn shān	100
+布尔很哈达岩画	bù ěr hěn hǎ dá yán huà	100
 布尔萨血红蛋白	bù ěr sà xuè hóng dàn bái	100
 布尔素理想定理	bù ěr sù lǐ xiǎng dìng lǐ	100
 不放过任何细节	bú fàng guò rèn hé xì jié	100
@@ -149753,6 +150027,8 @@ sort: by_weight
 惩治反革命条例	chéng zhì fǎn gé mìng tiáo lì	100
 称重模块进水阀	chēng zhòng mó kuài jìn shuǐ fá	100
 呈逐年上升趋势	chéng zhú nián shàng shēng qū shì	100
+城子后山城遗址	chéng zǐ hòu shān chéng yí zhǐ	100
+城子山山城遗址	chéng zǐ shān shān chéng yí zhǐ	100
 承租土地使用权	chéng zū tǔ dì shǐ yòng quán	100
 乘坐的交通工具	chéng zuò de jiāo tōng gōng jù	100
 乘坐交通工具时	chéng zuò jiāo tōng gōng jù shí	100
@@ -150592,6 +150868,8 @@ sort: by_weight
 大家心里都明白	dà jiā xīn lǐ dōu míng bai	100
 大将南征胆气豪	dà jiàng nán zhēng dǎn qì háo	100
 大接地电流系统	dà jiē dì diàn liú xì tǒng	100
+大金得胜陀颂碑	dà jīn dé shèng tuó sòng bēi	100
+大井古铜矿遗址	dà jǐng gǔ tóng kuàng yí zhǐ	100
 打开窗户说亮话	dǎ kāi chuāng hu shuō liàng huà	100
 打开盒子的时候	dǎ kāi hé zi de shí hou	100
 打开了一扇窗户	dǎ kāi le yí shàn chuāng hu	100
@@ -150611,6 +150889,7 @@ sort: by_weight
 大力发展生产力	dà lì fā zhǎn shēng chǎn lì	100
 答里台斡惕赤斤	dá lǐ tái wò tì chì jīn	100
 大连石化分公司	dà lián shí huà fēn gōng sī	100
+大连自然博物馆	dà lián zì rán bó wù guǎn	100
 大量不保留灌肠	dà liàng bù bǎo liú guàn cháng	100
 大龄单身男青年	dà líng dān shēn nán qīng nián	100
 大龄单身女青年	dà líng dān shēn nǚ qīng nián	100
@@ -151790,9 +152069,11 @@ sort: by_weight
 丢失枪支不报罪	diū shī qiāng zhī bú bào zuì	100
 东安发动机公司	dōng ān fā dòng jī gōng sī	100
 栋巴罗夫斯基区	dòng bā luó fū sī jī qū	100
+东北烈士纪念馆	dōng běi liè shì jì niàn guǎn	100
 东贝斯基德山脉	dōng bèi sī jī dé shān mài	100
 东北特殊钢集团	dōng běi tè shū gāng jí tuán	100
 冬虫夏草的功效	dōng chóng xià cǎo de gōng xiào	100
+董存瑞烈士陵园	dǒng cún ruì liè shì líng yuán	100
 懂得什么是珍贵	dǒng de shén me shì zhēn guì	100
 动地惊天爱恋过	dòng dì jīng tiān ài liàn guò	100
 东阿尔卑斯山脉	dōng ē ěr bēi sī shān mài	100
@@ -151810,6 +152091,7 @@ sort: by_weight
 冻干鼠疫活菌苗	dòng gān shǔ yì huó jūn miáo	100
 冻干鼠疫活疫苗	dòng gān shǔ yì huó yì miáo	100
 冻干水痘减毒活	dòng gān shuǐ dòu jiǎn dú huó	100
+洞沟第十二号墓	dòng gōu dì shí èr hào mù	100
 冬菇雪耳猪胰汤	dōng gū xuě ěr zhū yí tāng	100
 冬瓜海带瘦肉汤	dōng guā hǎi dài shòu ròu tāng	100
 东莞市篮球中心	dōng guǎn shì lán qiú zhōng xīn	100
@@ -152346,6 +152628,7 @@ sort: by_weight
 耳廓软组织感染	ěr kuò ruǎn zǔ zhī gǎn rǎn	100
 二连浩特市政府	èr lián hào tè shì zhèng fǔ	100
 二林基督教医院	èr lín jī dū jiào yī yuàn	100
+二龙湖古城遗址	èr lóng hú gǔ chéng yí zhǐ	100
 耳聋康复研究所	ěr lóng kāng fù yán jiū suǒ	100
 而命以仆妾之役	ér mìng yǐ pū qiè zhī yì	100
 耳目一新的感觉	ěr mù yì xīn de gǎn jué	100
@@ -154138,6 +154421,7 @@ sort: by_weight
 高科西路锦绣路	gāo kē xī lù jǐn xiù lù	100
 高雷二氏螺旋体	gāo léi èr shì luó xuán tǐ	100
 高丽八万大藏经	gāo lí bā wàn dà zàng jīng	100
+高丽城山城遗址	gāo lí chéng shān chéng yí zhǐ	100
 高立的未来世界	gāo lì de wèi lái shì jiè	100
 高力国际灯具港	gāo lì guó jì dēng jù gǎng	100
 高丽槐素葡萄糖	gāo lí huái sù pú táo táng	100
@@ -154284,6 +154568,7 @@ sort: by_weight
 高岩山摩崖石刻	gāo yán shān mó yá shí kè	100
 高颜值的小姐姐	gāo yán zhí de xiǎo jiě jie	100
 高椅村古建筑群	gāo yǐ cūn gǔ jiàn zhù qún	100
+高颐墓阙及石刻	gāo yí mù quē jí shí kè	100
 高罂粟花症候群	gāo yīng sù huā zhèng hòu qún	100
 高邮龙虬庄遗址	gāo yóu lóng qiú zhuāng yí zhǐ	100
 高余冠之岌岌兮	gāo yú guān zhī jí jí xī	100
@@ -155512,6 +155797,7 @@ sort: by_weight
 哈利托诺夫定理	hā lì tuō nuò fū dìng lǐ	100
 哈密顿运动方程	hā mì dùn yùn dòng fāng chéng	100
 哈塔勒鼠人头目	hā tǎ lè shǔ rén tóu mù	100
+海城仙人洞遗址	hǎi chéng xiān rén dòng yí zhǐ	100
 海胆科维尔氏菌	hǎi dǎn kē wéi ěr shì jūn	100
 海底取岩芯钻机	hǎi dǐ qǔ yán xīn zuàn jī	100
 海底无核化条约	hǎi dǐ wú hé huà tiáo yuē	100
@@ -155695,6 +155981,7 @@ sort: by_weight
 后外侧中央动脉	hòu wài cè zhōng yāng dòng mài	100
 后稳定型膝关节	hòu wěn dìng xíng xī guān jié	100
 后抑制反弹效应	hòu yì zhì fǎn tán xiào yìng	100
+后召庙辽石窟寺	hòu zhào miào liáo shí kū sì	100
 厚重黑曜石胸甲	hòu zhòng hēi yào shí xiōng jiǎ	100
 厚重异种虫胸甲	hòu zhòng yì zhǒng chóng xiōng jiǎ	100
 胡贝图斯堡条约	hú bèi tú sī bǎo tiáo yuē	100
@@ -155750,6 +156037,7 @@ sort: by_weight
 化学性胃腐蚀伤	huà xué xìng wèi fǔ shí shāng	100
 化学性吸入损伤	huà xué xìng xī rù sǔn shāng	100
 化学性眼部灼伤	huà xué xìng yǎn bù zhuó shāng	100
+华严寺大雄宝殿	huá yán sì dà xióng bǎo diàn	100
 华语科幻星云奖	huá yǔ kē huàn xīng yún jiǎng	100
 化妆品皮肤损害	huà zhuāng pǐn pí fū sǔn hài	100
 化妆品意外中毒	huà zhuāng pǐn yì wài zhòng dú	100
@@ -155798,6 +156086,7 @@ sort: by_weight
 黄杉素单加氧酶	huáng shān sù dān jiā yǎng méi	100
 黄鼠狼给鸡拜年	huáng shǔ láng gěi jī bài nián	100
 皇天不负苦心人	huáng tiān bú fù kǔ xīn rén	100
+皇泽寺摩崖造象	huáng zé sì mó yá zào xiàng	100
 回肠造口术维护	huí cháng zào kǒu shù wéi hù	100
 挥发有机化合物	huī fā yǒu jī huà hé wù	100
 毁灭世界的力量	huǐ miè shì jiè de lì liàng	100
@@ -156277,8 +156566,10 @@ sort: by_weight
 介子一质子散射	jiè zi yī zhì zǐ sǎn shè	100
 金胺若丹明染色	jīn àn ruò dān míng rǎn sè	100
 津巴布韦共和国	jīn bā bù wéi gòng hé guó	100
+晋祠之铭并序碑	jìn cí zhī míng bìng xù bēi	100
 金德尔伯格陷阱	jīn dé ěr bó gé xiàn jǐng	100
 金刚磨面股骨柄	jīn gāng mò miàn gǔ gǔ bǐng	100
+金刚座舍利宝塔	jīn gāng zuò shè lì bǎo tǎ	100
 金光明最胜王经	jīn guāng míng zuì shèng wáng jīng	100
 金匮肾气治肾虚	jīn guì shèn qì zhì shèn xū	100
 金海清咽袋泡茶	jīn hǎi qīng yàn dài pào chá	100
@@ -156337,8 +156628,10 @@ sort: by_weight
 进行性扭转痉挛	jìn xíng xìng niǔ zhuǎn jìng luán	100
 进行性周期缩短	jìn xíng xìng zhōu qī suō duǎn	100
 禁一切鱼肉大蒜	jìn yí qiè yú ròu dà suàn	100
+金源乳峰太虚洞	jīn yuán rǔ fēng tài xū dòng	100
 今朝有酒今朝醉	jīn zhāo yǒu jiǔ jīn zhāo zuì	100
 金栀咽喉袋泡茶	jīn zhī yān hóu dài pào chá	100
+金中都水关遗址	jīn zhōng dū shuǐ guān yí zhǐ	100
 近中邻颌面深龋	jìn zhōng lín hé miàn shēn qǔ	100
 近中切远中窝洞	jìn zhōng qiè yuǎn zhōng wō dòng	100
 经表皮排除疾患	jīng biǎo pí pái chú jí huàn	100
@@ -156357,6 +156650,7 @@ sort: by_weight
 颈动脉动脉硬化	jǐng dòng mài dòng mài yìng huà	100
 静动脉血分流率	jìng dòng mài xuè fēn liú lǜ	100
 颈动脉血栓形成	jǐng dòng mài xuè shuān xíng chéng	100
+井冈山革命遗址	jǐng gāng shān gé mìng yí zhǐ	100
 胫骨粗隆皮下囊	jìng gǔ cū lóng pí xià náng	100
 胫骨后天性缺损	jìng gǔ hòu tiān xìng quē sǔn	100
 胫骨前肌腱下囊	jìng gǔ qián jī jiàn xià náng	100
@@ -156516,6 +156810,7 @@ sort: by_weight
 开普敦血红蛋白	kāi pǔ dūn xuè hóng dàn bái	100
 开拓创新的闯劲	kāi tuò chuàng xīn de chuǎng jìn	100
 开拓创新谱新篇	kāi tuò chuàng xīn pǔ xīn piān	100
+开元寺钟楼及塔	kāi yuán sì zhōng lóu jí tǎ	100
 看到网友的评论	kàn dào wǎng yǒu de píng lùn	100
 看得最远的地方	kàn de zuì yuǎn de dì fāng	100
 坎卡基血红蛋白	kǎn kǎ jī xuè hóng dàn bái	100
@@ -156683,6 +156978,7 @@ sort: by_weight
 空气栓塞创伤性	kōng qì shuān sè chuāng shāng xìng	100
 空调出风口下方	kōng tiáo chū fēng kǒu xià fāng	100
 空调和加湿器肺	kōng tiáo hé jiā shī qì fèi	100
+孔望山摩崖造像	kǒng wàng shān mó yá zào xiàng	100
 孔粘贴伤口敷料	kǒng zhān tiē shāng kǒu fū liào	100
 控制碳水化合物	kòng zhì tàn shuǐ huà hé wù	100
 口服大蓟止血粉	kǒu fú dà jì zhǐ xuè fěn	100
@@ -156722,6 +157018,7 @@ sort: by_weight
 库利卡特二氏瓣	kù lì kǎ tè èr shì bàn	100
 库仑土压力理论	kù lún tǔ yā lì lǐ lùn	100
 库伦土压力理论	kù lún tǔ yā lì lǐ lùn	100
+库木吐喇千佛洞	kù mù tǔ lǎ qiān fó dòng	100
 苦杏仁意外中毒	kǔ xìng rén yì wài zhòng dú	100
 跨膜信号转换器	kuà mó xìn hào zhuǎn huàn qì	100
 跨生命周期采购	kuà shēng mìng zhōu qī cǎi gòu	100
@@ -156841,6 +157138,7 @@ sort: by_weight
 利伯二氏标绘图	lì bó èr shì biāo huì tú	100
 利伯二氏方程式	lì bó èr shì fāng chéng shì	100
 力长度关系肌肉	lì cháng dù guān xì jī ròu	100
+李大钊烈士陵园	lǐ dà zhāo liè shì líng yuán	100
 锂电新能源产业	lǐ diàn xīn néng yuán chǎn yè	100
 利多卡因薄荷脑	lì duō kǎ yīn bò hé nǎo	100
 利福霉素类中毒	lì fú méi sù lèi zhòng dú	100
@@ -156938,6 +157236,8 @@ sort: by_weight
 量子复杂性理论	liàng zǐ fù zá xìng lǐ lùn	100
 量子生物物理学	liàng zǐ shēng wù wù lǐ xué	100
 蓼科内丝白粉菌	liǎo kē nèi sī bái fěn jūn	100
+辽沈战役纪念馆	liáo shěn zhàn yì jì niàn guǎn	100
+廖仲恺何香凝墓	liào zhòng kǎi hé xiāng níng mù	100
 烈火情天避孕套	liè huǒ qíng tiān bì yùn tào	100
 猎人装甲战斗车	liè rén zhuāng jiǎ zhàn dòu chē	100
 淋病病原携带者	lìn bìng bìng yuán xié dài zhě	100
@@ -156967,12 +157267,14 @@ sort: by_weight
 流产后空气栓塞	liú chǎn hòu kōng qì shuān sè	100
 流产后延迟出血	liú chǎn hòu yán chí chū xiě	100
 流产后子宫穿孔	liú chǎn hòu zǐ gōng chuān kǒng	100
+六顶山渤海墓群	liù dǐng shān bó hǎi mù qún	100
 流动镶嵌膜模型	liú dòng xiāng qiàn mó mó xíng	100
 流动性偏好理论	liú dòng xìng piān hǎo lǐ lùn	100
 流动性升水理论	liú dòng xìng shēng shuǐ lǐ lùn	100
 流感病毒相变异	liú gǎn bìng dú xiāng biàn yì	100
 流感病毒抑制物	liú gǎn bìng dú yì zhì wù	100
 琉肝理脾奏效奇	liú gān lǐ pí zòu xiào qí	100
+琉璃河商周遗址	liú lí hé shāng zhōu yí zhǐ	100
 流量流容积波形	liú liàng liú róng jī bō xíng	100
 流脑多糖体疫苗	liú nǎo duō táng tǐ yì miáo	100
 六年级上册数学	liù nián jí shàng cè shù xué	100
@@ -157059,6 +157361,7 @@ sort: by_weight
 马里氏共济失调	mǎ lǐ shì gòng jì shī tiáo	100
 马栗种子提取物	mǎ lì zhǒng zi tí qǔ wù	100
 妈妈我想对你说	mā ma wǒ xiǎng duì nǐ shuō	100
+马桥古文化遗址	mǎ qiáo gǔ wén huà yí zhǐ	100
 麻绳专挑细处断	má shéng zhuān tiāo xì chù duàn	100
 马斯洛需求理论	mǎ sī luò xū qiú lǐ lùn	100
 马阴道隐秘杆菌	mǎ yīn dào yǐn mì gǎn jūn	100
@@ -157097,6 +157400,7 @@ sort: by_weight
 漫画准则管理局	màn huà zhǔn zé guǎn lǐ jú	100
 曼齐刻尔特战役	màn qí kè ěr tè zhàn yì	100
 芒塞尔颜色立体	máng sāi ěr yán sè lì tǐ	100
+茅村汉画像石墓	máo cūn hàn huà xiàng shí mù	100
 毛骨悚然撞鬼经	máo gǔ sǒng rán zhuàng guǐ jīng	100
 毛里求斯共和国	máo lǐ qiú sī gòng hé guó	100
 冒天下之大不韪	mào tiān xià zhī dà bù wěi	100
@@ -157274,6 +157578,7 @@ sort: by_weight
 奈马克扩张定理	nài mǎ kè kuò zhāng dìng lǐ	100
 萘哌地尔片博帝	nài pài dì ěr piàn bó dì	100
 南北杏仁鹌鹑汤	nán běi xìng rén ān chún tāng	100
+南朝萧绩墓石刻	nán cháo xiāo jì mù shí kè	100
 男儿膝下有黄金	nán ér xī xià yǒu huáng jīn	100
 南港项目管理部	nán gǎng xiàng mù guǎn lǐ bù	100
 南极科学考察站	nán jí kē xué kǎo chá zhàn	100
@@ -157386,6 +157691,7 @@ sort: by_weight
 牛肺表面活性剂	niú fèi biǎo miàn huó xìng jì	100
 牛黄清心丸局方	niú huáng qīng xīn wán jú fāng	100
 牛津法律大辞典	niú jīn fǎ lǜ dà cí diǎn	100
+牛首山破金故垒	niú shǒu shān pò jīn gù lěi	100
 牛牙卷发骨硬化	niú yá juǎn fà gǔ yìng huà	100
 纽约证交所指数	niǔ yuē zhèng jiāo suǒ zhǐ shù	100
 农产品生产质量	nóng chǎn pǐn shēng chǎn zhì liàng	100
@@ -157725,6 +158031,7 @@ sort: by_weight
 取得最后的胜利	qǔ dé zuì hòu de shèng lì	100
 取得最终的胜利	qǔ dé zuì zhōng de shèng lì	100
 取锻灶下灰一斗	qǔ duàn zào xià huī yì dǒu	100
+曲阜孔庙及孔府	qū fù kǒng miào jí kǒng fǔ	100
 躯干部炎性肿物	qū gàn bù yán xìng zhǒng wù	100
 躯干多处挤压伤	qū gàn duō chù jǐ yā shāng	100
 躯干多发性骨折	qū gàn duō fā xìng gǔ zhé	100
@@ -157815,6 +158122,7 @@ sort: by_weight
 全国纳税人联盟	quán guó nà shuì rén lián méng	100
 全国乃至全世界	quán guó nǎi zhì quán shì jiè	100
 全国农民运动会	quán guó nóng mín yùn dòng huì	100
+全国农业展览馆	quán guó nóng yè zhǎn lǎn guǎn	100
 全国女排锦标赛	quán guó nǚ pái jǐn biāo sài	100
 全国人大环资委	quán guó rén dà huán zī wěi	100
 全国三八红旗手	quán guó sān bā hóng qí shǒu	100
@@ -157914,6 +158222,7 @@ sort: by_weight
 染色体显带技术	rǎn sè tǐ xiǎn dài jì shù	100
 染色体原位杂交	rǎn sè tǐ yuán wèi zá jiāo	100
 燃烧我的卡路里	rán shāo wǒ de kǎ lù lǐ	100
+冉庄地道战遗址	rǎn zhuāng dì dào zhàn yí zhǐ	100
 让吃苦的人吃香	ràng chī kǔ de rén chī xiāng	100
 让我好好看看你	ràng wǒ hǎo hǎo kàn kàn nǐ	100
 让我欢喜让我忧	ràng wǒ huān xǐ ràng wǒ yōu	100
@@ -158281,6 +158590,7 @@ sort: by_weight
 肉蔻五味丸匝迪	ròu kòu wǔ wèi wán zā dí	100
 肉芽肿荚膜杆菌	ròu yá zhǒng jiá mó gǎn jūn	100
 如地狱般的地方	rú dì yù bān de dì fāng	100
+入崖口有作诗碑	rù yá kǒu yǒu zuò shī bēi	100
 如意算盘打得响	rú yì suàn pán dǎ de xiǎng	100
 如有物在皮中状	rú yǒu wù zài pí zhōng zhuàng	100
 软腭裂伴有唇裂	ruǎn è liè bàn yǒu chún liè	100
@@ -158316,12 +158626,15 @@ sort: by_weight
 沙塔尔精炼臂甲	shā tǎ ěr jīng liàn bì jiǎ	100
 沙特朱拜勒炼厂	shā tè zhū bài lè liàn chǎng	100
 山登绝顶我为峰	shān dēng jué dǐng wǒ wéi fēng	100
+善化寺大雄宝殿	shàn huà sì dà xióng bǎo diàn	100
 山南西道节度使	shān nán xī dào jié dù shǐ	100
 膳食碳水化合物	shàn shí tàn shuǐ huà hé wù	100
 单县卫生防疫部	shàn xiàn wèi shēng fáng yì bù	100
 商标在先使用权	shāng biāo zài xiān shǐ yòng quán	100
 上二十三味为末	shàng èr shí sān wèi wéi mò	100
+上海自然博物馆	shàng hǎi zì rán bó wù guǎn	100
 上焦手太阴肺经	shàng jiāo shǒu tài yīn fèi jīng	100
+上京会宁府遗址	shàng jīng huì níng fǔ yí zhǐ	100
 上梁不正下梁歪	shàng liáng bú zhèng xià liáng wāi	100
 上下牙排列不齐	shàng xià yá pái liè bù qí	100
 赏心乐事共谁论	shǎng xīn lè shì gòng shuí lùn	100
@@ -158423,8 +158736,10 @@ sort: by_weight
 食管腐蚀性灼伤	shí guǎn fǔ shí xìng zhuó shāng	100
 食管内压力测定	shí guǎn nèi yā lì cè dìng	100
 食管自发性破裂	shí guǎn zì fā xìng pò liè	100
+释迦如来舍利塔	shì jiā rú lái shè lì tǎ	100
 时间曲线下面积	shí jiān qū xiàn xià miàn jī	100
 时间数字转换器	shí jiān shù zì zhuǎn huàn qì	100
+石景山冰川擦痕	shí jǐng shān bīng chuān cā hén	100
 嗜巨噬细胞抗体	shì jù shì xì bāo kàng tǐ	100
 视觉模拟评分法	shì jué mó nǐ píng fēn fǎ	100
 势均力敌的较量	shì jūn lì dí de jiào liàng	100
@@ -158465,6 +158780,7 @@ sort: by_weight
 是细菌感染引起	shì xì jūn gǎn rǎn yǐn qǐ	100
 实现梦想的地方	shí xiàn mèng xiǎng de dì fāng	100
 实现数字化转型	shí xiàn shù zì huà zhuǎn xíng	100
+室相寺旭华之阁	shì xiāng sì xù huá zhī gé	100
 市消防救援支队	shì xiāo fáng jiù yuán zhī duì	100
 失泄密风险隐患	shī xiè mì fēng xiǎn yǐn huàn	100
 嗜压科维尔氏菌	shì yā kē wéi ěr shì jūn	100
@@ -158654,6 +158970,7 @@ sort: by_weight
 斯科特斯伯格角	sī kē tè sī bó gé jiǎo	100
 四库全书医家类	sì kù quán shū yī jiā lèi	100
 斯隆数字化巡天	sī lóng shù zì huà xún tiān	100
+司马光墓及祖茔	sī mǎ guāng mù jí zǔ yíng	100
 斯米尔宁斯基角	sī mǐ ěr níng sī jī jiǎo	100
 四逆汤方方见上	sì nì tāng fāng fāng jiàn shàng	100
 四年级数学上册	sì nián jí shù xué shàng cè	100
@@ -158671,8 +158988,11 @@ sort: by_weight
 四肢为诸阳之本	sì zhī wéi zhū yáng zhī běn	100
 松风一起知虎来	sōng fēng yì qǐ zhī hǔ lái	100
 宋元数学四大家	sòng yuán shù xué sì dà jiā	100
+崧泽古文化遗址	sōng zé gǔ wén huà yí zhǐ	100
+苏巴什佛寺遗址	sū bā shí fó sì yí zhǐ	100
 速发相哮喘反应	sù fā xiāng xiào chuǎn fǎn yìng	100
 速发型超敏反应	sù fà xíng chāo mǐn fǎn yìng	100
+苏军烈士纪念塔	sū jūn liè shì jì niàn tǎ	100
 粟粒性脑膜结核	sù lì xìng nǎo mó jié hé	100
 塑料车针消毒盒	sù liào chē zhēn xiāo dú hé	100
 塑料容器检查法	sù liào róng qì jiǎn chá fǎ	100
@@ -158713,6 +159033,13 @@ sort: by_weight
 胎盘粘连伴出血	tāi pán zhān lián bàn chū xiě	100
 胎盘滞留伴出血	tāi pán zhì liú bàn chū xiě	100
 胎盘植入伴出血	tāi pán zhí rù bàn chū xiě	100
+太平天国戴王府	tài píng tiān guó dài wáng fǔ	100
+太平天国辅王府	tài píng tiān guó fǔ wáng fǔ	100
+太平天国护王府	tài píng tiān guó hù wáng fǔ	100
+太平天国烈士墓	tài píng tiān guó liè shì mù	100
+太平天国侍王府	tài píng tiān guó shì wáng fǔ	100
+太平天国忠王府	tài píng tiān guó zhōng wáng fǔ	100
+太平无国忠王府	tài píng wú guó zhōng wáng fǔ	100
 太平洋鲍曼氏菌	tài píng yáng bào màn shì jūn	100
 太清导引养生经	tài qīng dǎo yǐn yǎng shēng jīng	100
 泰瑞克斯装甲车	tài ruì kè sī zhuāng jiǎ chē	100
@@ -158748,6 +159075,7 @@ sort: by_weight
 唐氏综合征筛查	táng shì zōng hé zhēng shāi chá	100
 唐氏综合征易位	táng shì zōng hé zhēng yì wèi	100
 桃花盛开的地方	táo huā shèng kāi de dì fāng	100
+桃温万户府故城	táo wēn wàn hù fǔ gù chéng	100
 特定秘密保护法	tè dìng mì mì bǎo hù fǎ	100
 特发性肺纤维化	tè fā xìng fèi xiān wéi huà	100
 特克斯科斯群岛	tè kè sī kē sī qún dǎo	100
@@ -158805,6 +159133,7 @@ sort: by_weight
 体重无明显下降	tǐ zhòng wú míng xiǎn xià jiàng	100
 天地八阳神咒经	tiān dì bā yáng shén zhòu jīng	100
 天乩之白蛇传说	tiān jī zhī bái shé chuán shuō	100
+天马山摩崖石刻	tiān mǎ shān mó yá shí kè	100
 天然酚抗氧化剂	tiān rán fēn kàng yǎng huà jì	100
 天堂最近的地方	tiān táng zuì jìn de dì fāng	100
 天体粒子物理学	tiān tǐ lì zǐ wù lǐ xué	100
@@ -158946,6 +159275,9 @@ sort: by_weight
 腕和手多处损伤	wàn hé shǒu duō chù sǔn shāng	100
 腕和手浅表冻伤	wàn hé shǒu qiǎn biǎo dòng shāng	100
 顽火无球粒陨石	wán huǒ wú qiú lì yǔn shí	100
+万里长城八达岭	wàn lǐ cháng chéng bā dá lǐng	100
+万里长城嘉峪关	wàn lǐ cháng chéng jiā yù guān	100
+万里长城山海关	wàn lǐ cháng chéng shān hǎi guān	100
 完美小姐进化论	wán měi xiǎo jiě jìn huà lùn	100
 晚期潜伏性梅毒	wǎn qī qián fú xìng méi dú	100
 完全非弹性碰撞	wán quán fēi tán xìng pèng zhuàng	100
@@ -159132,6 +159464,7 @@ sort: by_weight
 细长刺刚毛状菌	xì cháng cì gāng máo zhuàng jūn	100
 洗发剂意外中毒	xǐ fà jì yì wài zhòng dú	100
 西方阿拉伯数字	xī fāng ā lā bó shù zì	100
+息烽集中营旧址	xī fēng jí zhōng yíng jiù zhǐ	100
 吸附无细胞百白	xī fù wú xì bāo bǎi bái	100
 习惯和冲突障碍	xí guàn hé chōng tū zhàng ài	100
 膝关节髌骨假体	xī guān jié bìn gǔ jiǎ tǐ	100
@@ -159427,6 +159760,7 @@ sort: by_weight
 新生儿重度窒息	xīn shēng ér zhòng dù zhì xī	100
 新时代青年先锋	xīn shí dài qīng nián xiān fēng	100
 新世纪福音战士	xīn shì jì fú yīn zhàn shì	100
+新四军军部旧址	xīn sì jūn jūn bù jiù zhǐ	100
 心外膜起搏导线	xīn wài mó qǐ bó dǎo xiàn	100
 信息和金融服务	xìn xī hé jīn róng fú wù	100
 信息化和数字化	xìn xī huà hé shù zì huà	100
@@ -159544,6 +159878,7 @@ sort: by_weight
 蚜虫巴克纳氏菌	yá chóng bā kè nà shì jūn	100
 鸦胆子油口服乳	yā dǎn zi yóu kǒu fú rǔ	100
 亚德里安堡战役	yà dé lǐ ān bǎo zhàn yì	100
+亚沟摩崖石刻像	yà gōu mó yá shí kè xiàng	100
 压力感受器反射	yā lì gǎn shòu qì fǎn shè	100
 压力感受性反射	yā lì gǎn shòu xìng fǎn shè	100
 压力连接管长管	yā lì lián jiē guǎn cháng guǎn	100
@@ -159601,6 +159936,7 @@ sort: by_weight
 亚洲巡回演唱会	yà zhōu xún huí yǎn chàng huì	100
 亚洲游泳锦标赛	yà zhōu yóu yǒng jǐn biāo sài	100
 亚洲越野拉力赛	yà zhōu yuè yě lā lì sài	100
+焉不拉克古墓群	yān bù lā kè gǔ mù qún	100
 严防严控筑防线	yán fáng yán kòng zhù fáng xiàn	100
 眼睛瞪得像铜铃	yǎn jing dèng de xiàng tóng líng	100
 研究生培养质量	yán jiū shēng péi yǎng zhì liàng	100
@@ -159623,6 +159959,7 @@ sort: by_weight
 扬帆新肤螨灵霜	yáng fān xīn fū mǎn líng shuāng	100
 氧分压梯度分布	yǎng fēn yā tī dù fēn bù	100
 养肝益肾袋泡茶	yǎng gān yì shèn dài pào chá	100
+杨根思烈士陵园	yáng gēn sī liè shì líng yuán	100
 阳光充足的地方	yáng guāng chōng zú de dì fāng	100
 氧化剂和还原剂	yǎng huà jì hé huán yuán jì	100
 阳离子非离子型	yáng lí zǐ fēi lí zǐ xíng	100
@@ -159634,6 +159971,7 @@ sort: by_weight
 羊蹄甲生小煤炱	yáng tí jiǎ shēng xiǎo méi tái	100
 养阴明月加杞菊	yǎng yīn míng yuè jiā qǐ jú	100
 鞅中心极限定理	yāng zhōng xīn jí xiàn dìng lǐ	100
+杨子荣烈士陵园	yáng zǐ róng liè shì líng yuán	100
 要提高政治站位	yào tí gāo zhèng zhì zhàn wèi	100
 液氨蒸发外冷器	yè ān zhēng fā wài lěng qì	120
 射干麻黄汤主之	yè gān má huáng tāng zhǔ zhī	100
@@ -159917,6 +160255,7 @@ sort: by_weight
 因为经上记着说	yīn wèi jīng shàng jì zhe shuō	100
 饮邪上逆胸胁满	yǐn xié shàng nì xiōng xié mǎn	100
 盈博顿克拉霉素	yíng bó dùn kè lā méi sù	100
+应昌路故城遗址	yīng chāng lù gù chéng yí zhǐ	100
 荧光分光光度法	yíng guāng fēn guāng guāng dù fǎ	100
 荧光分光光度计	yíng guāng fēn guāng guāng dù jì	100
 荧光素标记抗体	yíng guāng sù biāo jì kàng tǐ	100
@@ -160014,6 +160353,7 @@ sort: by_weight
 预防幽门螺杆菌	yù fáng yōu mén luó gǎn jūn	100
 愈酚喷托异丙嗪	yù fēn pēn tuō yì bǐng qín	100
 鱼肝油级代用胶	yú gān yóu jí dài yòng jiāo	100
+雨涅水石刻造像	yǔ niè shuǐ shí kè zào xiàng	100
 预判了你的预判	yù pàn le nǐ de yù pàn	100
 预判了我的预判	yù pàn le wǒ de yù pàn	100
 与时俱进求创新	yǔ shí jù jìn qiú chuàng xīn	100
@@ -160049,6 +160389,7 @@ sort: by_weight
 约旦哈希姆王国	yuē dàn hā xī mǔ wáng guó	100
 越法梵尔赛条约	yuè fǎ fàn ěr sài tiáo yuē	100
 月经抽吸或调节	yuè jīng chōu xī huò tiáo jié	100
+粤军阵亡烈士墓	yuè jūn zhèn wáng liè shì mù	100
 越南红花羊蹄甲	yuè nán hóng huā yáng tí jiǎ	100
 运筹学与控制论	yùn chóu xué yǔ kòng zhì lùn	100
 运动发酵单胞菌	yùn dòng fā jiào dān bāo jūn	100
@@ -160057,6 +160398,7 @@ sort: by_weight
 运动后过耗氧量	yùn dòng hòu guò hào yǎng liàng	100
 运动后过量氧耗	yùn dòng hòu guò liàng yǎng hào	100
 运动性语言中枢	yùn dòng xìng yǔ yán zhōng shū	100
+云冈第五第大窟	yún gāng dì wǔ dì dà kū	100
 匀浆流延成膜法	yún jiāng liú yán chéng mó fǎ	100
 云梦泽智慧平台	yún mèng zé zhì huì píng tái	100
 孕早期产前诊断	yùn zǎo qī chǎn qián zhěn duàn	100
@@ -160095,6 +160437,7 @@ sort: by_weight
 增值税电子发票	zēng zhí shuì diàn zǐ fā piào	100
 增值税留抵退税	zēng zhí shuì liú dǐ tuì shuì	100
 增值税收入审计	zēng zhí shuì shōu rù shěn jì	100
+扎龙自然保护区	zhā lóng zì rán bǎo hù qū	100
 蚱蜢斗公鸡玩命	zhà měng dòu gōng jī wán mìng	100
 债券收益率曲线	zhài quàn shōu yì lǜ qū xiàn	100
 占察善恶业报经	zhàn chá shàn è yè bào jīng	100
@@ -160109,6 +160452,7 @@ sort: by_weight
 找个安静的地方	zhǎo gè ān jìng de dì fāng	100
 找个没人的地方	zhǎo gè méi rén de dì fāng	100
 兆誉隆祛风止痛	zhào yù lóng qū fēng zhǐ tòng	100
+赵州陀罗尼经幢	zhào zhōu tuó luó ní jīng chuáng	100
 遮风挡雨的地方	zhē fēng dǎng yǔ de dì fāng	100
 这可如何是好啊	zhè kě rú hé shì hǎo a	100
 这么低级的错误	zhè me dī jí de cuò wù	100
@@ -160120,6 +160464,7 @@ sort: by_weight
 阵发性心房纤颤	zhèn fā xìng xīn fáng xiān chàn	100
 阵发性指趾发绀	zhèn fā xìng zhǐ zhǐ fā gàn	100
 针解篇第五十四	zhēn jiě piān dì wǔ shí sì	100
+真觉寺金刚宝座	zhēn jué sì jīn gāng bǎo zuò	100
 真菌培养及鉴定	zhēn jūn péi yǎng jí jiàn dìng	100
 真菌显色培养皿	zhēn jūn xiǎn sè péi yǎng mǐn	100
 真菌性角膜溃疡	zhēn jūn xìng jiǎo mó kuì yáng	100
@@ -160252,6 +160597,8 @@ sort: by_weight
 中隔束传导阻滞	zhōng gé shù chuán dǎo zǔ zhì	100
 中隔支传导阻滞	zhōng gé zhī chuán dǎo zǔ zhì	100
 中共最高领导人	zhōng gòng zuì gāo lǐng dǎo rén	100
+中国革命博物馆	zhōng guó gé mìng bó wù guǎn	100
+中国历史博物馆	zhōng guó lì shǐ bó wù guǎn	100
 中华人民共和国	zhōng huá rén mín gòng hé guó	100
 中级工程师职称	zhōng jí gōng chéng shī zhí chēng	100
 中级及以上职称	zhōng jí jí yǐ shàng zhí chēng	100
@@ -160290,6 +160637,7 @@ sort: by_weight
 中枢性呼吸衰竭	zhōng shū xìng hū xī shuāi jié	100
 中枢性眼球震颤	zhōng shū xìng yǎn qiú zhèn chàn	100
 中苏不侵犯条约	zhōng sū bù qīn fàn tiáo yuē	100
+中苏友谊纪念塔	zhōng sū yǒu yì jì niàn tǎ	100
 中小学数学教学	zhōng xiǎo xué shù xué jiào xué	100
 中新奖学金项目	zhōng xīn jiǎng xué jīn xiàng mù	100
 中心组学习会议	zhōng xīn zǔ xué xí huì yì	100
@@ -160743,6 +161091,7 @@ sort: by_weight
 最小作用量原理	zuì xiǎo zuò yòng liàng yuán lǐ	120
 最有魅力的地方	zuì yǒu mèi lì de dì fāng	100
 尊前拟把归期说	zūn qián nǐ bǎ guī qī shuō	100
+尊胜陀罗尼经幢	zūn shèng tuó luó ní jīng chuáng	100
 遵守国家的法律	zūn shǒu guó jiā de fǎ lǜ	100
 遵守宪法和法律	zūn shǒu xiàn fǎ hé fǎ lǜ	100
 做出相应的回应	zuò chū xiāng yìng de huí yìng	100
@@ -160770,9 +161119,12 @@ sort: by_weight
 白刀子进红刀子出	bái dāo zi jìn hóng dāo zi chū	100
 百舸争流鹰击长空	bǎi gě zhēng liú yīng jī cháng kōng	100
 百花齐放百家争鸣	bǎi huā qí fàng bǎi jiā zhēng míng	100
+白求恩手术室旧址	bái qiú ēn shǒu shù shì jiù zhǐ	100
+柏孜克里克千佛洞	bǎi zī kè lǐ kè qiān fó dòng	100
 百足之虫死而不僵	bǎi zú zhī chóng sǐ ér bù jiāng	100
 爆破地面大块岩石	bào pò dì miàn dà kuài yán shí	100
 北大西洋公约组织	běi dà xī yáng gōng yuē zǔ zhī	100
+北戴河秦行宫遗址	běi dài hé qín xíng gōng yí zhǐ	100
 北国风光千里冰封	běi guó fēng guāng qiān lǐ bīng fēng	100
 北极地质研究所岩	běi jí dì zhì yán jiū suǒ yán	100
 北京航空航天大学	běi jīng háng kōng háng tiān dà xué	100
@@ -160802,12 +161154,14 @@ sort: by_weight
 恻隐之心人皆有之	cè yǐn zhī xīn rén jiē yǒu zhī	100
 差之毫厘谬以千里	chā zhī háo lí miù yǐ qiān lǐ	100
 差之毫厘失之千里	chā zhī háo lí shī zhī qiān lǐ	100
+长白山自然保护区	cháng bái shān zì rán bǎo hù qū	100
 长壁放顶煤采煤法	cháng bì fàng dǐng méi cǎi méi fǎ	100
 常数组分复合反应	cháng shù zǔ fèn fù hé fǎn yìng	100
 长烟一空皓月千里	cháng yān yì kōng hào yuè qiān lǐ	100
 场址动力反应分析	chǎng zhǐ dòng lì fǎn yìng fēn xī	100
 潮汐共振分裂假说	cháo xī gòng zhèn fēn liè jiǎ shuō	100
 城门失火殃及池鱼	chéng mén shī huǒ yāng jí chí yú	100
+城墙磖子山城遗址	chéng qiáng lá zǐ shān chéng yí zhǐ	100
 成事不足败事有余	chéng shì bù zú bài shì yǒu yú	100
 城市抗震防灾规划	chéng shì kàng zhèn fáng zāi guī huà	100
 乘兴而来败兴而归	chéng xìng ér lái bài xìng ér guī	100
@@ -160828,6 +161182,7 @@ sort: by_weight
 大门不出二门不迈	dà mén bù chū èr mén bú mài	100
 大难不死必有后福	dà nàn bù sǐ bì yǒu hòu fú	100
 大事化小小事化了	dà shì huà xiǎo xiǎo shì huà le	100
+大窑村石器制造场	dà yáo cūn shí qì zhì zào chǎng	100
 打着灯笼都找不到	dǎ zhe dēng lóng dōu zhǎo bú dào	100
 待冲基建支出核算	dài chōng jī jiàn zhī chū hé suàn	100
 代尔夫特理工大学	dài ěr fū tè lǐ gōng dà xué	100
@@ -160876,6 +161231,7 @@ sort: by_weight
 非洲棋盘格式构造	fēi zhōu qí pán gé shì gòu zào	100
 分批次一点一点把	fēn pī cì yī diǎn yì diǎn bǎ	100
 分子亲核取代反应	fēn zǐ qīn hé qǔ dài fǎn yìng	100
+凤凰山高句丽山城	fèng huáng shān gāo gōu lí shān chéng	100
 逢山开路遇水搭桥	féng shān kāi lù yù shuǐ dā qiáo	100
 逢山开路遇水架桥	féng shān kāi lù yù shuǐ jià qiáo	100
 风声鹤唳草木皆兵	fēng shēng hè lì cǎo mù jiē bīng	100
@@ -160905,6 +161261,7 @@ sort: by_weight
 国家兴亡匹夫有责	guó jiā xīng wáng pǐ fū yǒu zé	100
 海岸动力模拟实验	hǎi àn dòng lì mó nǐ shí yàn	100
 海底多金属热液沉	hǎi dǐ duō jīn shǔ rè yè chén	100
+海丰红宫红场旧址	hǎi fēng hóng gōng hóng chǎng jiù zhǐ	100
 亥姆霍兹函数判据	hài mǔ huò zī hán shù pàn jù	120
 含煤岩系成因类型	hán méi yán xì chéng yīn lèi xíng	100
 含煤岩系旋回结构	hán méi yán xì xuán huí jié gòu	100
@@ -160912,12 +161269,17 @@ sort: by_weight
 毫不利己专门利人	háo bú lì jǐ zhuān mén lì rén	100
 好记性不如烂笔头	hǎo jì xing bù rú làn bǐ tóu	100
 合成孔径侧视雷达	hé chéng kǒng jìng cè shì léi dá	100
+和林格尔汉墓壁画	hé lín gé ěr hàn mù bì huà	100
 红装素裹分外妖娆	hóng zhuāng sù guǒ fèn wài yāo ráo	100
+呼和浩特清真大寺	hū hé hào tè qīng zhēn dà sì	100
 葫芦里卖的什么药	hú lu lǐ mài de shén me yào	100
 呼之即来挥之即去	hū zhī jí lái huī zhī jí qù	100
+华北军区烈士陵园	huá běi jūn qū liè shì líng yuán	100
 花开花落云卷云舒	huā kāi huā luò yún juǎn yún shū	100
 花开两朵各表一枝	huā kāi liǎng duǒ gè biǎo yì zhī	100
+华严寺薄伽教藏殿	huá yán sì báo gā jiào zàng diàn	100
 环境水文地质调查	huán jìng shuǐ wén dì zhì diào chá	100
+黄桥决战革命旧址	huáng qiáo jué zhàn gé mìng jiù zhǐ	100
 会哭的孩子有奶吃	huì kū de hái zi yǒu nǎi chī	100
 会者不难难者不会	huì zhě bù nán nán zhě bú huì	100
 活人不能让尿憋死	huó rén bù néng ràng niào biē sǐ	100
@@ -160939,6 +161301,7 @@ sort: by_weight
 家家有本难念的经	jiā jiā yǒu běn nán niàn de jīng	100
 伽利略相对性原理	jiā lì lüè xiāng duì xìng yuán lǐ	100
 价廉物美物超所值	jià lián wù měi wù chāo suǒ zhí	100
+嘉祥武氏墓群石刻	jiā xiáng wǔ shì mù qún shí kè	100
 坚定信心上下同欲	jiān dìng xìn xīn shàng xià tóng yù	100
 拣了芝麻丢了西瓜	jiǎn le zhī ma diū le xī guā	100
 减色效应淡色效应	jiǎn sè xiào yìng dàn sè xiào yìng	100
@@ -160946,9 +161309,14 @@ sort: by_weight
 箭在弦上不得不发	jiàn zài xián shàng bù dé bù fā	100
 江山易改本性难移	jiāng shān yì gǎi běn xìng nán yí	100
 将欲取之必先予之	jiāng yù qǔ zhī bì xiān yǔ zhī	100
+江孜宗山抗英遗址	jiāng zī zōng shān kàng yīng yí zhǐ	100
 教会徒弟饿死师傅	jiāo huì tú dì è sǐ shī fu	100
+焦山抗英炮台遗址	jiāo shān kàng yīng pào tái yí zhǐ	100
+焦庄户地道战遗址	jiāo zhuāng hù dì dào zhàn yí zhǐ	100
 津格尔星对测时法	jīn gé ěr xīng duì cè shí fǎ	100
 近海煤型含煤岩系	jìn hǎi méi xíng hán méi yán xì	100
+晋冀鲁豫烈士陵园	jìn jì lǔ yù liè shì líng yuán	100
+金上京会宁府遗址	jīn shàng jīng huì níng fǔ yí zhǐ	100
 金玉其外败絮其中	jīn yù qí wài bài xù qí zhōng	100
 精诚所至金石为开	jīng chéng suǒ zhì jīn shí wèi kāi	100
 静电场的环路定理	jìng diàn chǎng de huán lù dìng lǐ	100
@@ -160965,6 +161333,7 @@ sort: by_weight
 看不到明天的太阳	kàn bú dào míng tiān de tài yáng	100
 看看不一样的风景	kàn kàn bù yí yàng de fēng jǐng	100
 抗剪强度总应力法	kàng jiǎn qiáng dù zǒng yīng lì fǎ	100
+抗美援朝烈士陵园	kàng měi yuán cháo liè shì líng yuán	100
 靠山吃山靠水吃水	kào shān chī shān kào shuǐ chī shuǐ	100
 坑道进尺米毫克值	kēng dào jìn chǐ mǐ háo kè zhí	100
 夸克胶子等离子体	kuā kè jiāo zǐ děng lí zǐ tǐ	100
@@ -160985,6 +161354,8 @@ sort: by_weight
 六基坑开挖与降水	liù jī kēng kāi wā yǔ jiàng shuǐ	100
 六苴含铜砂岩矿床	liù jū hán tóng shā yán kuàng chuáng	100
 流水不腐户枢不蠹	liú shuǐ bù fǔ hù shū bú dù	100
+龙泉寺戚继光诗碑	lóng quán sì qī jì guāng shī bēi	100
+龙潭山高句丽山城	lóng tán shān gāo gōu lí shān chéng	100
 路见不平拔刀相助	lù jiàn bù píng bá dāo xiāng zhù	100
 露天设备范围非圆	lù tiān shè bèi fàn wéi fēi yuán	100
 伦敦政治经济学院	lún dūn zhèng zhì jīng jì xué yuàn	100
@@ -160998,6 +161369,7 @@ sort: by_weight
 美国普林斯顿大学	měi guó pǔ lín sī dùn dà xué	100
 美国职业篮球联赛	měi guó zhí yè lán qiú lián sài	100
 没有规矩不成方圆	méi yǒu guī ju bù chéng fāng yuán	100
+蒙古文天文图石刻	měng gǔ wén tiān wén tú shí kè	100
 密克罗尼西亚联邦	mì kè luó ní xī yà lián bāng	100
 闵可夫斯基坐标系	mǐn kě fū sī jī zuò biāo xì	100
 名额有限额满为止	míng é yǒu xiàn é mǎn wéi zhǐ	100
@@ -161073,10 +161445,13 @@ sort: by_weight
 如临深渊如履薄冰	rú lín shēn yuān rú lǚ bó bīng	100
 如人饮水冷暖自知	rú rén yǐn shuǐ lěng nuǎn zì zhī	100
 塞翁失马焉知非福	sài wēng shī mǎ yān zhī fēi fú	100
+三元里平英团遗址	sān yuán lǐ píng yīng tuán yí zhǐ	100
 上天无路入地无门	shàng tiān wú lù rù dì wú mén	100
 上向梯段式回采法	shàng xiàng tī duàn shì huí cǎi fǎ	100
 上有天堂下有苏杭	shàng yǒu tiān táng xià yǒu sū háng	100
 上知天文下知地理	shàng zhī tiān wén xià zhī dì lǐ	100
+烧锅营子燕长城址	shāo guō yíng zi yàn cháng chéng zhǐ	100
+韶山冲毛主席旧居	sháo shān chōng máo zhǔ xí jiù jū	100
 射线光电子能谱学	shè xiàn guāng diàn zǐ néng pǔ xué	100
 射线吸收近边结构	shè xiàn xī shōu jìn biān jié gòu	100
 射线吸收精细结构	shè xiàn xī shōu jīng xì jié gòu	100
@@ -161128,14 +161503,17 @@ sort: by_weight
 螳螂捕蝉黄雀在后	táng láng bǔ chán huáng què zài hòu	100
 桃李不言下自成蹊	táo lǐ bù yán xià zì chéng xī	100
 特立尼达和多巴哥	tè lì ní dá hé duō bā gē	100
+天津市艺术博物馆	tiān jīn shì yì shù bó wù guǎn	100
 天然纤维天然木素	tiān rán xiān wéi tiān rán mù sù	100
 天外有天人上有人	tiān wài yǒu tiān rén shàng yǒu rén	100
 天网恢恢疏而不漏	tiān wǎng huī huī shū ér bú lòu	100
+天下第一江山石刻	tiān xià dì yī jiāng shān shí kè	100
 天下无不散之筵席	tiān xià wú bù sàn zhī yán xí	100
 天下兴亡匹夫有责	tiān xià xīng wáng pǐ fū yǒu zé	100
 天旋地转咕咚一声	tiān xuán dì zhuàn gū dōng yì shēng	100
 天涯海角蜈支洲岛	tiān yá hǎi jiǎo wú zhī zhōu dǎo	100
 天知地知你知我知	tiān zhī dì zhī nǐ zhī wǒ zhī	100
+铜录山古铜矿遗址	tóng lù shān gǔ tóng kuàng yí zhǐ	100
 同声相应同气相求	tóng shēng xiāng yìng tóng qì xiāng qiú	100
 同造山期的岩浆酌	tóng zào shān qī de yán jiāng zhuó	100
 透射电子显微镜法	tòu shè diàn zǐ xiǎn wēi jìng fǎ	100
@@ -161143,6 +161521,9 @@ sort: by_weight
 投之以桃报之以李	tóu zhī yǐ táo bào zhī yǐ lǐ	100
 完全类质同象系列	wán quán lèi zhì tóng xiàng xì liè	100
 万事俱备只欠东风	wàn shì jù bèi zhǐ qiàn dōng fēng	100
+万寿山昆明湖石碑	wàn shòu shān kūn míng hú shí bēi	100
+完颜希尹家族墓地	wán yán xī yǐn jiā zú mù dì	100
+王城岗及阳城遗址	wáng chéng gǎng jí yáng chéng yí zhǐ	100
 王侯将相宁有种乎	wáng hóu jiàng xiàng níng yǒu zhǒng hū	100
 王婆卖瓜自卖自夸	wáng pó mài guā zì mài zì kuā	100
 王司徒巧使连环计	wáng sī tú qiǎo shǐ lián huán jì	100
@@ -161162,11 +161543,13 @@ sort: by_weight
 夏练三伏冬练三九	xià liàn sān fú dōng liàn sān jiǔ	100
 相对论性流体力学	xiāng duì lùn xìng liú tǐ lì xué	120
 项庄舞剑意在沛公	xiàng zhuāng wǔ jiàn yì zài pèi gōng	100
+孝堂山郭氏墓石祠	xiào táng shān guō shì mù shí cí	100
 心比天高命比纸薄	xīn bǐ tiān gāo mìng bǐ zhǐ báo	100
 心急吃不了热豆腐	xīn jí chī bù liǎo rè dòu fu	100
 新年快乐阖家幸福	xīn nián kuài lè hé jiā xìng fú	100
 行不更名坐不改姓	xíng bù gēng míng zuò bù gǎi xìng	100
 星星之火可以燎原	xīng xīng zhī huǒ kě yǐ liáo yuán	100
+许家窑侯家窑遗址	xǔ jiā yáo hòu jiā yáo yí zhǐ	100
 迅雷不及掩耳盗铃	xùn léi bù jí yǎn ěr dào líng	100
 迅雷不及掩耳之势	xùn léi bù jí yǎn ěr zhī shì	100
 眼高手低好高骛远	yǎn gāo shǒu dī hào gāo wù yuǎn	100
@@ -161233,6 +161616,7 @@ sort: by_weight
 站着说话不嫌腰疼	zhàn zhe shuō huà bù xián yāo téng	100
 招之即来挥之即去	zhāo zhī jí lái huī zhī jí qù	100
 真不懂还是装不懂	zhēn bù dǒng hái shì zhuāng bù dǒng	100
+阵庆歼灭战纪念碑	zhèn qìng jiān miè zhàn jì niàn bēi	100
 真是百闻不如一见	zhēn shì bǎi wén bù rú yí jiàn	100
 真是闻名不如见面	zhēn shì wén míng bù rú jiàn miàn	100
 睁一只眼闭一只眼	zhēng yì zhī yǎn bì yì zhī yǎn	100
@@ -161251,8 +161635,10 @@ sort: by_weight
 种瓜得瓜种豆得豆	zhòng guā dé guā zhòng dòu dé dòu	100
 中国科学技术大学	zhōng guó kē xué jì shù dà xué	100
 众口铄金积毁销骨	zhòng kǒu shuò jīn jī huǐ xiāo gǔ	100
+钟山陆游题名石刻	zhōng shān lù yóu tí míng shí kè	100
 重赏之下必有勇夫	zhòng shǎng zhī xià bì yǒu yǒng fū	100
 重要的事情说三遍	zhòng yào de shì qíng shuō sān biàn	100
+周口店鱼化石产地	zhōu kǒu diàn yú huà shí chǎn dì	100
 主动脉瓣关闭不全	zhǔ dòng mài bàn guān bì bù quán	100
 壮士一去兮不复返	zhuàng shì yí qù xī bú fù fǎn	100
 自己一步一个脚印	zì jǐ yí bù yí gè jiǎo yìn	100
@@ -161260,8 +161646,10 @@ sort: by_weight
 走过路过不要错过	zǒu guò lù guò bú yào cuò guò	100
 嘴巴给我放干净点	zuǐ ba gěi wǒ fàng gān jìng diǎn	100
 最低工业米百分值	zuì dī gōng yè mǐ bǎi fēn zhí	100
+八路军总司令部旧址	bā lù jūn zǒng sī lìng bù jiù zhǐ	100
 白头翁加甘草阿胶汤	bái tóu wēng jiā gān cǎo ē jiāo tāng	100
 搬起石头砸自己的脚	bān qǐ shí tou zá zì jǐ de jiǎo	100
+宝山六道沟冶钢遗址	bǎo shān liù dào gōu yě gāng yí zhǐ	100
 被人卖了还帮着数钱	bèi rén mài le hái bāng zhāo shù qián	100
 冰冻三尺非一日之寒	bīng dòng sān chǐ fēi yí rì zhī hán	100
 玻意耳盖吕萨克定律	bō yì ěr gài lǚ sà kè dìng lǜ	100
@@ -161272,8 +161660,11 @@ sort: by_weight
 不求同年同月同日生	bù qiú tóng nián tóng yuè tóng rì shēng	100
 不要在一棵树上吊死	bú yào zài yì kē shù shàng diào sǐ	100
 布宜诺斯艾利斯大学	bù yí nuò sī ài lì sī dà xué	100
+长辛店二七革命遗址	cháng xīn diàn èr qī gé mìng yí zhǐ	100
 吃别人嚼过的馍不香	chī bié rén jiáo guò de mó bù xiāng	100
+重修护国寺感应塔碑	chóng xiū hù guó sì gǎn yìng tǎ bēi	100
 筹资产生的现金流量	chóu zī chǎn shēng de xiàn jīn liú liàng	100
+初祖庵及少林寺塔林	chū zǔ ān jí shǎo lín sì tǎ lín	100
 打酒向提瓶子的要钱	dǎ jiǔ xiàng tí píng zi de yào qián	100
 打碎了牙往肚子里咽	dǎ suì le yá wǎng dù zi lǐ yàn	100
 但求同年同月同日死	dàn qiú tóng nián tóng yuè tóng rì sǐ	100
@@ -161283,17 +161674,28 @@ sort: by_weight
 德拜休克尔极限定律	dé bài xiū kè ěr jí xiàn dìng lǜ	100
 地质资源与地质工程	dì zhì zī yuán yǔ dì zhì gōng chéng	100
 躲了初一躲不了十五	duǒ le chū yī duǒ bù liǎo shí wǔ	100
+房山云居寺塔及石经	fáng shān yún jū sì tǎ jí shí jīng	100
 该放松的时候就放松	gāi fàng sōng de shí hou jiù fàng sōng	100
 干姜黄芩黄连人参汤	gān jiāng huáng qín huáng lián rén shēn tāng	100
+高蠡暴动烈士纪念塔	gāo lí bào dòng liè shì jì niàn tǎ	100
 格罗图斯德雷珀定律	gé luó tú sī dé léi pò dìng lǜ	100
+广元千佛崖摩崖造象	guǎng yuán qiān fó yá mó yá zào xiàng	100
 桂枝甘草龙骨牡蛎汤	guì zhī gān cǎo lóng gǔ mǔ lì tāng	100
 国际奥林匹克委员会	guó jì ào lín pǐ kè wěi yuán huì	100
+汉书遗址西团山遗址	hàn shū yí zhǐ xī tuán shān yí zhǐ	100
+和林格尔土城子遗址	hé lín gé ěr tǔ chéng zǐ yí zhǐ	100
 沪苏通长江公铁大桥	hù sū tōng cháng jiāng gōng tiě dà qiáo	100
+淮海战役烈士纪念塔	huái hǎi zhàn yì liè shì jì niàn tǎ	100
+黄花岗七十二烈士墓	huáng huā gǎng qī shí èr liè shì mù	100
 火焰分光光度测定法	huǒ yàn fēn guāng guāng dù cè dìng fǎ	100
 机会是给有准备的人	jī huì shì gěi yǒu zhǔn bèi de rén	100
 加州大学伯克利分校	jiā zhōu dà xué bó kè lì fēn xiào	100
 加州大学洛杉矶分校	jiā zhōu dà xué luò shān jī fēn xiào	100
+晋绥解放区烈士陵园	jìn suí jiě fàng qū liè shì líng yuán	100
+金太祖阿骨打御陵址	jīn tài zǔ ā gǔ dǎ yù líng zhǐ	100
 九百六十万平方公里	jiǔ bǎi liù shí wàn píng fāng gōng lǐ	100
+孔望山汉代摩崖造像	kǒng wàng shān hàn dài mó yá zào xiàng	100
+辽沈战役烈士纪念塔	liáo shěn zhàn yì liè shì jì niàn tǎ	100
 麻黄杏仁甘草石膏汤	má huáng xìng rén gān cǎo shí gāo tāng	100
 麻黄杏仁薏苡甘草汤	má huáng xìng rén yì yǐ gān cǎo tāng	100
 没有对比就没有伤害	méi yǒu duì bǐ jiù méi yǒu shāng hài	100
@@ -161302,10 +161704,17 @@ sort: by_weight
 跑得了和尚跑不了庙	pǎo de liǎo hé shang pǎo bù liǎo miào	100
 贫穷限制了我的想象	pín qióng xiàn zhì le wǒ de xiǎng xiàng	100
 弱水三千只取一瓢饮	ruò shuǐ sān qiān zhī qǔ yì piáo yǐn	100
+三道壕西汉村落遗址	sān dào háo xī hàn cūn luò yí zhǐ	100
 双分子亲核取代反应	shuāng fēn zǐ qīn hé qǔ dài fǎn yìng	100
 司马昭之心路人皆知	sī mǎ zhāo zhī xīn lù rén jiē zhī	100
 斯莫卢霍夫斯基理论	sī mò lú huò fū sī jī lǐ lùn	100
 苏黎世联邦理工学院	sū lí shì lián bāng lǐ gōng xué yuàn	100
+苏州文庙内宋代石刻	sū zhōu wén miào nèi sòng dài shí kè	100
+绥远城将军衙署旧址	suí yuǎn chéng jiāng jūn yá shǔ jiù zhǐ	100
+太平天国历史博物馆	tài píng tiān guó lì shǐ bó wù guǎn	100
+太平天国天王府遗址	tài píng tiān guó tiān wáng fǔ yí zhǐ	100
+唐单于都护府城遗址	táng chán yú dū hù fǔ chéng yí zhǐ	100
+堂子街太平天国壁画	táng zi jiē tài píng tiān guó bì huà	100
 特克斯和凯科斯群岛	tè kè sī hé kǎi kē sī qún dǎo	100
 天将降大任于是人也	tiān jiāng jiàng dà rèn yú shì rén yě	100
 天下没有白吃的午餐	tiān xià méi yǒu bái chī de wǔ cān	100
@@ -161316,21 +161725,33 @@ sort: by_weight
 王子犯法与庶民同罪	wáng zǐ fàn fǎ yǔ shù mín tóng zuì	100
 唯女子与小人难养也	wéi nǚ zǐ yǔ xiǎo rén nán yǎng yě	100
 我不入地狱谁入地狱	wǒ bú rù dì yù shuí rù dì yù	1001
+武昌起义军政府旧址	wǔ chāng qǐ yì jūn zhèng fǔ jiù zhǐ	100
+西柏坡中共中央旧址	xī bǎi pō zhōng gòng zhōng yāng jiù zhǐ	100
+夏允彝夏完淳父子墓	xià yǔn yí xià wán chún fù zǐ mù	100
+响堂铺伏击战纪念碑	xiǎng táng pù fú jī zhàn jì niàn bēi	100
 小人之心度君子之腹	xiǎo rén zhī xīn duó jūn zǐ zhī fù	100
+新乐新石器时代遗址	xīn lè xīn shí qì shí dài yí zhǐ	100
 修身齐家治国平天下	xiū shēn qí jiā zhì guó píng tiān xià	100
+姚存天祚岩题名石刻	yáo cún tiān zuò yán tí míng shí kè	100
 英雄联盟全球总决赛	yīng xióng lián méng quán qiú zǒng jué sài	100
+永安湃围场殪虎诗碑	yǒng ān pài wéi chǎng yì hǔ shī bēi	100
 约翰斯霍普金斯大学	yuē hàn sī huò pǔ jīn sī dà xué	100
 丈二和尚摸不着头脑	zhàng èr hé shang mō bù zháo tóu nǎo	100
 质谱测定法质量传递	zhì pǔ cè dìng fǎ zhì liàng chuán dì	100
 知其然不知其所以然	zhī qí rán bù zhī qí suǒ yǐ rán	100
 知其然而知其所以然	zhī qí rán ér zhī qí suǒ yǐ rán	100
+周恩来在津活动旧址	zhōu ēn lái zài jīn huó dòng jiù zhǐ	100
+自求恩模范病室旧址	zì qiú ēn mó fàn bìng shì jiù zhǐ	100
 做一天和尚撞一天钟	zuò yì tiān hé shang zhuàng yì tiān zhōng	100
+渤海国上京龙泉府遗址	bó hǎi guó shàng jīng lóng quán fǔ yí zhǐ	100
 柴胡去半夏加栝蒌根汤	chái hú qù bàn xià jiā guā lóu gēn tāng	100
 常在河边走哪有不湿鞋	cháng zài hé biān zǒu nǎ yǒu bù shī xié	100
 撑死胆大的饿死胆小的	chēng sǐ dǎn dà de è sǐ dǎn xiǎo de	100
 丑媳妇早晚也得见公婆	chǒu xí fù zǎo wǎn yě de jiàn gōng pó	100
 打柴的不能跟放羊的走	dǎ chái de bù néng gēn fàng yáng de zǒu	100
+大工山凤凰山铜矿遗址	dà gōng shān fèng huáng shān tóng kuàng yí zhǐ	100
 地势坤君子以厚德载物	dì shì kūn jūn zǐ yǐ hòu dé zài wù	100
+段氏与三十七部会盟碑	duàn shì yǔ sān shí qī bù huì méng bēi	100
 躲得了初一躲不过十五	duǒ de liǎo chū yī duǒ bú guò shí wǔ	100
 过了这个村就没这个店	guò le zhè ge cūn jiù méi zhè ge diàn	100
 好人不长命祸害遗千年	hǎo rén bù cháng mìng huò hài yí qiān nián	100
@@ -161339,8 +161760,10 @@ sort: by_weight
 克里斯蒂亚诺罗纳尔多	kè lǐ sī dì yà nuò luó nà ěr duō	100
 可怜之人必有可恨之处	kě lián zhī rén bì yǒu kě hèn zhī chù	100
 洛伦兹变换的双曲形式	luò lún zī biàn huàn de shuāng qǔ xíng shì	120
+蒲津渡与蒲州故城遗址	pú jīn dù yǔ pú zhōu gù chéng yí zhǐ	100
 人生不如意事十之八九	rén shēng bù rú yì shì shí zhī bā jiǔ	100
 人事服务及职员关系科	rén shì fú wù jí zhí yuán guān xì kē	100
+三江平原汉魏时期遗址	sān jiāng píng yuán hàn wèi shí qī yí zhǐ	100
 三十年河东三十年河西	sān shí nián hé dōng sān shí nián hé xī	100
 圣文森特和格林纳丁斯	shèng wén sēn tè hé gé lín nà dīng sī	100
 师傅领进门修行在个人	shī fu lǐng jìn mén xiū xíng zài gè rén	100
@@ -161348,16 +161771,28 @@ sort: by_weight
 天地不仁以万物为刍狗	tiān dì bù rén yǐ wàn wù wéi chú gǒu	100
 听君一席话胜读十年书	tīng jūn yì xí huà shèng dú shí nián shū	100
 相对论性速度加法公式	xiāng duì lùn xìng sù dù jiā fǎ gōng shì	120
+义和团吕祖堂坛口遗址	yì hé tuán lǚ zǔ táng tán kǒu yí zhǐ	100
 伊利诺伊大学香槟分校	yī lì nuò yī dà xué xiāng bīn fēn xiào	100
 一万五千一百四十四卷	yí wàn wǔ qiān yì bǎi sì shí sì juǎn	100
 一朝被蛇咬十年怕井绳	yì zhāo bèi shé yǎo shí nián pà jǐng shéng	100
 紫外线分光光度测定法	zǐ wài xiàn fēn guāng guāng dù cè dìng fǎ	100
+安源路矿工人俱乐部旧址	ān yuán lù kuàng gōng rén jù lè bù jiù zhǐ	100
+褒斜道石门及其摩崖石刻	bāo xié dào shí mén jí qí mó yá shí kè	100
 当归四逆加吴茱萸生姜汤	dāng guī sì nì jiā wú zhū yú shēng jiāng tāng	100
 得克萨斯大学奥斯汀分校	dé kè sà sī dà xué ào sī tīng fēn xiào	100
+古建筑及历史纪念建筑物	gǔ jiàn zhù jí lì shǐ jì niàn jiàn zhù wù	100
+广州农民运动讲习所旧址	guǎng zhōu nóng mín yùn dòng jiǎng xí suǒ jiù zhǐ	100
 过了这个村就没这个店了	guò le zhè ge cūn jiù méi zhè ge diàn le	100
 厚朴生姜半夏甘草人参汤	hòu pò shēng jiāng bàn xià gān cǎo rén shēn tāng	100
+明中都皇故城及皇陵石刻	míng zhōng dū huáng gù chéng jí huáng líng shí kè	100
 你不说话没人把你当哑巴	nǐ bù shuō huà méi rén bǎ nǐ dāng yǎ bā	100
 你不说话没人当你是哑巴	nǐ bù shuō huà méi rén dāng nǐ shì yǎ bā	100
+秋收起义文家市会师旧址	qiū shōu qǐ yì wén jiā shì huì shī jiù zhǐ	100
 让暴风雨来得更猛烈些吧	ràng bào fēng yǔ lái de gèng měng liè xiē ba	100
 压死骆驼的最后一根稻草	yā sǐ luò tuó de zuì hòu yì gēn dào cǎo	100
+峨眉山圣寿万年寺铜铁佛像	é méi shān shèng shòu wàn nián sì tóng tiě fó xiàng	100
+革命遗址及革命纪念建筑物	gé mìng yí zhǐ jí gé mìng jì niàn jiàn zhù wù	100
 苓甘五味加姜辛半夏杏仁汤	líng gān wǔ wèi jiā jiāng xīn bàn xià xìng rén tāng	100
+林则徐销烟池与虎门炮台旧址	lín zé xú xiāo yān chí yǔ hǔ mén pào tái jiù zhǐ	100
+中国社会主义青年团中央机关旧址	zhōng guó shè huì zhǔ yì qīng nián tuán zhōng yāng jī guān jiù zhǐ	100
+中国共产党第一次全国代表大会会址	zhōng guó gòng chǎn dǎng dì yí cì quán guó dài biǎo dà huì huì zhǐ	100
