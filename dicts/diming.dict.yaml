@@ -1,7 +1,7 @@
 # Rime dictionary
 # encoding: utf-8
 #https://github.com/amzxyz/RIME-LMDG
-#------行政区划、地理、地标、实体------
+#------行政区划、地理、地标、景区、实体------
 ---
 name: diming
 version: "LTS"
@@ -227,7 +227,11 @@ sort: by_weight
 万镇	wàn zhèn	1
 湾沚	wān zhǐ	509
 望安	wàng ān	463
+王村	wáng cūn	904
 望都	wàng dū	252
+王寺	wáng sì	178
+王屋	wáng wū	729
+王庄	wáng zhuāng	900
 卫滨	wèi bīn	43
 威县	wēi xiàn	1094
 魏县	wèi xiàn	1064
@@ -17948,6 +17952,7 @@ sort: by_weight
 王殿村	wáng diàn cūn	52
 王店乡	wáng diàn xiāng	217
 王店镇	wáng diàn zhèn	353
+王顶堤	wáng dǐng dī	6
 王东村	wáng dōng cūn	1
 汪洞乡	wāng dòng xiāng	1
 往洞镇	wǎng dòng zhèn	1
@@ -17963,7 +17968,9 @@ sort: by_weight
 王坟镇	wáng fén zhèn	188
 望丰乡	wàng fēng xiāng	1
 王奉镇	wáng fèng zhèn	1
+王佛寺	wáng fó sì	32
 王府村	wáng fǔ cūn	159
+王府井	wáng fǔ jǐng	766
 王阜乡	wáng fù xiāng	538
 王府镇	wáng fǔ zhèn	167
 望夫镇	wàng fū zhèn	1
@@ -17986,6 +17993,7 @@ sort: by_weight
 汪沟镇	wāng gōu zhèn	1
 王拐村	wáng guǎi cūn	94
 王官村	wáng guān cūn	145
+王官屯	wáng guān tún	72
 望关镇	wàng guān zhèn	1
 王官庄	wáng guān zhuāng	1
 王郭村	wáng guō cūn	112
@@ -18022,12 +18030,14 @@ sort: by_weight
 王家河	wáng jiā hé	327
 王家井	wáng jiā jǐng	226
 王家口	wáng jiā kǒu	120
+王家岭	wáng jiā lǐng	396
 王家楼	wáng jiā lóu	145
 王家庙	wáng jiā miào	133
 王家弄	wáng jiā nòng	69
 王家坪	wáng jiā píng	312
 王家坡	wáng jiā pō	215
 王家桥	wáng jiā qiáo	270
+王家沙	wáng jiā shā	50
 王家山	wáng jiā shān	246
 王家台	wáng jiā tái	263
 王家滩	wáng jiā tān	94
@@ -18100,7 +18110,9 @@ sort: by_weight
 王民乡	wáng mín xiāng	1
 望谟县	wàng mó xiàn	168
 王磨镇	wáng mó zhèn	1
+王母池	wáng mǔ chí	302
 王木村	wáng mù cūn	145
+王母宫	wáng mǔ gōng	6
 王南村	wáng nán cūn	31
 汪棚镇	wāng péng zhèn	1
 王坪村	wáng píng cūn	263
@@ -18197,6 +18209,7 @@ sort: by_weight
 汪洋镇	wāng yáng zhèn	1
 王窑村	wáng yáo cūn	82
 王窑镇	wáng yáo zhèn	1
+王爷庙	wáng ye miào	6
 王益区	wáng yì qū	1
 王尹镇	wáng yǐn zhèn	1
 王营村	wáng yíng cūn	185
@@ -18225,9 +18238,12 @@ sort: by_weight
 王召乡	wáng zhào xiāng	139
 王助镇	wáng zhù zhèn	1
 王庄村	wáng zhuāng cūn	424
+王庄路	wáng zhuāng lù	213
 王庄乡	wáng zhuāng xiāng	300
+王庄站	wáng zhuāng zhàn	266
 王庄镇	wáng zhuāng zhèn	348
 王子村	wáng zǐ cūn	252
+王子路	wáng zǐ lù	382
 王子镇	wáng zǐ zhèn	155
 王子庄	wáng zǐ zhuāng	133
 王佐村	wáng zuǒ cūn	159
