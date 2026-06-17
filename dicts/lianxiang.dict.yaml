@@ -9,8 +9,6 @@ name: lianxiang
 version: "LTS"
 sort: by_weight
 ...
-燃料铀	rán liào yóu	124
-燃料棒铀	rán liào bàng yóu	144
 阿巴科群岛	ā bā kē qún dǎo	100
 阿贝比长仪	ā bèi bǐ cháng yí	100
 阿贝不变量	ā bèi bú biàn liàng	100
@@ -21752,8 +21750,6 @@ sort: by_weight
 各学校教师	gè xué xiào jiào shī	100
 个沿海省份	gè yán hǎi shěng fèn	100
 歌谣大祝祭	gē yáo dà zhù jì	100
-革叶华蟹甲	gé yè huá xiè jiǎ	100
-革叶马兜铃	gé yè mǎ dōu líng	100
 各业务部室	gè yè wù bù shì	100
 各业务条线	gè yè wù tiáo xiàn	100
 各医疗单位	gè yī liáo dān wèi	100
@@ -41177,6 +41173,7 @@ sort: by_weight
 林忠四郎线	lín zhōng sì láng xiàn	100
 鳞柱交接部	lín zhù jiāo jiē bù	100
 岭澳核电站	lǐng ào hé diàn zhàn	100
+灵宝大法师	líng bǎo dà fǎ shī	21
 灵宝护心丹	líng bǎo hù xīn dān	100
 岭北三路站	lǐng běi sān lù zhàn	100
 领鞭毛虫纲	lǐng biān máo chóng gāng	100
@@ -45448,6 +45445,7 @@ sort: by_weight
 幕后主使者	mù hòu zhǔ shǐ zhě	100
 木花开耶姬	mù huā kāi yé jī	100
 木花咲耶姬	mù huā xiào yé jī	100
+穆皇后吴氏	mù huáng hòu wú shì	1
 沐火村村长	mù huǒ cūn cūn zhǎng	100
 木火土金水	mù huǒ tǔ jīn shuǐ	100
 母鸡带小鸭	mǔ jī dài xiǎo yā	100
@@ -70560,6 +70558,7 @@ sort: by_weight
 膝关节正位	xī guān jié zhèng wèi	100
 习惯性脱位	xí guàn xìng tuō wèi	100
 嘻哈壹笑堂	xī hā yī xiào táng	100
+西汉前少帝	xī hàn qián shǎo dì
 洗好的衣服	xǐ hǎo de yī fu	100
 西红花多甙	xī hóng huā duō dài	100
 戏红人不红	xì hóng rén bù hóng	100
@@ -122835,6 +122834,7 @@ sort: by_weight
 轻型自卸货车	qīng xíng zì xiè huò chē	100
 情绪大起大落	qíng xù dà qǐ dà luò	100
 清虚道德真君	qīng xū dào dé zhēn jūn	100
+清虚道德真君	qīng xū dào dé zhēn jūn	15
 情绪的不稳定	qíng xù de bù wěn dìng	100
 情绪极不稳定	qíng xù jí bù wěn dìng	100
 情绪起伏不定	qíng xù qǐ fú bú dìng	100
@@ -132808,6 +132808,7 @@ sort: by_weight
 温肾助阳药酒	wēn shèn zhù yáng yào jiǔ	100
 温室大棚种植	wēn shì dà péng zhòng zhí	100
 温氏食品集团	wēn shì shí pǐn jí tuán	100
+文殊广法天尊	wén shū guǎng fǎ tiān zūn	17
 文殊说般若经	wén shū shuō bō rě jīng	100
 温水洗净便座	wēn shuǐ xǐ jìng biàn zuò	100
 问松我醉何如	wèn sōng wǒ zuì hé rú	100
