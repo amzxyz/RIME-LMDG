@@ -4764,7 +4764,7 @@ sort: by_weight
 不夙则莫	bù sù zé mò	100
 不算飘零	bú suàn piāo líng	100
 卜算子慢	bǔ suàn zǐ màn	44
-不遂其媾	bù suí qí gòu	100
+不遂其媾	bú suì qí gòu	100
 不同其事	bù tóng qí shì	100
 不通舆马	bù tōng yú mǎ	100
 不网不钓	bù wǎng bú diào	100
@@ -7781,7 +7781,7 @@ sort: by_weight
 骥不骤进	jì bù zhòu jìn	100
 既差我马	jì chà wǒ mǎ	100
 寄陈适用	jì chén shì yòng	100
-饥成不遂	jī chéng bù suí	100
+饥成不遂	jī chéng bú suì	100
 既成我服	jì chéng wǒ fú	100
 屐齿莓苔	jī chǐ méi tái	100
 几处闲田	jǐ chù xián tián	100
@@ -27310,15 +27310,15 @@ sort: by_weight
 不速自同归	bú sù zì tóng guī	100
 不算子牟心	bú suàn zǐ móu xīn	100
 卜算子咏梅	bǔ suàn zǐ yǒng méi	100
-不遂苍生望	bù suí cāng shēng wàng	100
+不遂苍生望	bú suì cāng shēng wàng	100
 不随迟日尽	bù suí chí rì jìn	100
 不随凤凰族	bù suí fèng huáng zú	100
 不随骨销朽	bù suí gǔ xiāo xiǔ	100
 不随淮海变	bù suí huái hǎi biàn	100
 不随其所废	bù suí qí suǒ fèi	100
-不遂卿将伯	bù suí qīng jiāng bó	100
+不遂卿将伯	bú suì qīng jiāng bó	100
 不随晴野尽	bù suí qíng yě jìn	100
-不遂青云望	bù suí qīng yún wàng	100
+不遂青云望	bú suì qīng yún wàng	100
 不随水俱逝	bù suí shuǐ jù shì	100
 步随仙路远	bù suí xiān lù yuǎn	100
 不随夜台去	bù suí yè tái qù	100
@@ -41127,7 +41127,7 @@ sort: by_weight
 辞华哲匠能	cí huá zhé jiàng néng	100
 此怀差自适	cǐ huái chà zì shì	100
 此怀何由极	cǐ huái hé yóu jí	100
-此怀今不遂	cǐ huái jīn bù suí	100
+此怀今不遂	cǐ huái jīn bú suì	100
 此怀聊自宽	cǐ huái liáo zì kuān	100
 此怀谁与呈	cǐ huái shuí yǔ chéng	100
 此怀谁与同	cǐ huái shuí yǔ tóng	100
@@ -41849,7 +41849,7 @@ sort: by_weight
 此行收遗甿	cǐ xíng shōu yí méng	100
 此行殊访戴	cǐ xíng shū fǎng dài	100
 此兴殊未恶	cǐ xīng shū wèi è	100
-此行傥不遂	cǐ xíng tǎng bù suí	100
+此行傥不遂	cǐ xíng tǎng bú suì	100
 此行为知己	cǐ xíng wéi zhī jǐ	100
 此行我累君	cǐ xíng wǒ lèi jūn	100
 此行无愠色	cǐ xíng wú yùn sè	100
@@ -52568,7 +52568,7 @@ sort: by_weight
 而我倦栖屑	ér wǒ juàn qī xiè	100
 而我懒拙病	ér wǒ lǎn zhuō bìng	100
 而我乐名山	ér wǒ lè míng shān	100
-而我两不遂	ér wǒ liǎng bù suí	100
+而我两不遂	ér wǒ liǎng bú suì	100
 而我岂高致	ér wǒ qǐ gāo zhì	100
 而我弃乡国	ér wǒ qì xiāng guó	100
 而我钦清芬	ér wǒ qīn qīng fēn	100
@@ -84661,7 +84661,7 @@ sort: by_weight
 家书空万轴	jiā shū kōng wàn zhóu	100
 嘉蔬绿笋茎	jiā shū lǜ sǔn jīng	100
 嘉树满中园	jiā shù mǎn zhōng yuán	100
-嘉蔬没混浊	jiā shū méi hún zhuó	100
+嘉蔬没混浊	jiā shū méi hùn zhuó	100
 价数千金贵	jià shù qiān jīn guì	100
 嘉树如我心	jiā shù rú wǒ xīn	100
 嘉树始氤氲	jiā shù shǐ yīn yūn	100
@@ -109526,7 +109526,7 @@ sort: by_weight
 露梅飘暗香	lù méi piāo àn xiāng	100
 鹿门不返者	lù mén bù fǎn zhě	100
 鹿门上冢回	lù mén shàng zhǒng huí	100
-鹿门携不遂	lù mén xié bù suí	100
+鹿门携不遂	lù mén xié bú suì	100
 鹿门有佳士	lù mén yǒu jiā shì	100
 鹿门自此往	lù mén zì cǐ wǎng	100
 禄米尝不足	lù mǐ cháng bù zú	100
@@ -149758,7 +149758,7 @@ sort: by_weight
 诗来苦相宽	shī lái kǔ xiāng kuān	100
 时来窥方丈	shí lái kuī fāng zhàng	100
 时来命不来	shí lái mìng bù lái	100
-时来命不遂	shí lái mìng bù suí	100
+时来命不遂	shí lái mìng bú suì	100
 适来鸣佩者	shì lái míng pèi zhě	100
 时来名位彰	shí lái míng wèi zhāng	100
 事来磨其锋	shì lái mó qí fēng	100
@@ -158204,7 +158204,7 @@ sort: by_weight
 四牖炳灯鱼	sì yǒu bǐng dēng yú	100
 似有故园归	sì yǒu gù yuán guī	100
 似游华胥国	sì yóu huá xū guó	100
-斯游恐不遂	sī yóu kǒng bù suí	100
+斯游恐不遂	sī yóu kǒng bú suì	100
 斯游岂易得	sī yóu qǐ yì dé	100
 似有宿世情	sì yǒu sù shì qíng	100
 死有所乎归	sǐ yǒu suǒ hū guī	100
@@ -193533,7 +193533,7 @@ sort: by_weight
 勋业青冥上	xūn yè qīng míng shàng	100
 勋业在临洮	xūn yè zài lín táo	100
 勋业振青史	xūn yè zhèn qīng shǐ	100
-勋业终不遂	xūn yè zhōng bù suí	100
+勋业终不遂	xūn yè zhōng bú suì	100
 徇义不邀勋	xùn yì bù yāo xūn	100
 徇义当由此	xùn yì dāng yóu cǐ	100
 旬以会亲宾	xún yǐ huì qīn bīn	100
@@ -215029,7 +215029,7 @@ sort: by_weight
 愿言解缨绂	yuàn yán jiě yīng fú	100
 愿言借余力	yuàn yán jiè yú lì	100
 愿言金丹寿	yuàn yán jīn dān shòu	100
-愿言竟不遂	yuàn yán jìng bù suí	100
+愿言竟不遂	yuàn yán jìng bú suì	100
 愿言均此施	yuàn yán jūn cǐ shī	100
 怨咽空自悲	yuàn yàn kōng zì bēi	100
 远烟笼碧树	yuǎn yān lóng bì shù	100
@@ -247169,7 +247169,7 @@ sort: by_weight
 城门四走公卿士	chéng mén sì zǒu gōng qīng shì	100
 城门昼开眠百贾	chéng mén zhòu kāi mián bǎi jiǎ	100
 城门昼开眠贾客	chéng mén zhòu kāi mián jiǎ kè	100
-成名不遂双旌远	chéng míng bù suí shuāng jīng yuǎn	100
+成名不遂双旌远	chéng míng bú suì shuāng jīng yuǎn	100
 承明长短君应入	chéng míng cháng duǎn jūn yīng rù	100
 承明重入莫拘牵	chéng míng chóng rù mò jū qiān	100
 成名共记甲科上	chéng míng gòng jì jiǎ kē shàng	100
@@ -274758,7 +274758,7 @@ sort: by_weight
 匡庐南岭并西湖	kuāng lú nán lǐng bìng xī hú	100
 匡庐先生古君子	kuāng lú xiān shēng gǔ jūn zǐ	100
 匡庐一带不停留	kuāng lú yí dài bù tíng liú	100
-狂谋谬算百不遂	kuáng móu miù suàn bǎi bù suí	100
+狂谋谬算百不遂	kuáng móu miù suàn bǎi bú suì	100
 况乃迟暮加烦促	kuàng nǎi chí mù jiā fán cù	100
 况乃纷纷不知数	kuàng nǎi fēn fēn bù zhī shù	100
 况乃故园名池台	kuàng nǎi gù yuán míng chí tái	100
@@ -334425,7 +334425,7 @@ sort: by_weight
 苹花绕郭香出守吴兴	píng huā rào guō xiāng chū shǒu wú xīng	100
 平平平平平平平平平	píng píng píng píng píng píng píng píng píng	100
 平生傲岸其志不可测	píng shēng ào àn qí zhì bù kě cè	100
-颇恨挽留之不遂夜半	pō hèn wǎn liú zhī bù suí yè bàn	100
+颇恨挽留之不遂夜半	pō hèn wǎn liú zhī bú suì yè bàn	100
 破镜尘筝一梦经年瘦	pò jìng chén zhēng yí mèng jīng nián shòu	100
 菩萨蛮书江西造口壁	pú sà mán shū jiāng xī zào kǒu bì	100
 岂不绰绰然有馀裕哉	qǐ bù chuò chuò rán yǒu yú yù zāi	100
