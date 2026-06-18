@@ -527,9 +527,11 @@ sort: by_weight
 寿县	shòu xiàn	1241
 水林	shuǐ lín	455
 泗县	sì xiàn	636
+宋村	sòng cūn	878
 嵩县	sōng xiàn	434
 睢县	suī xiàn	395
 随县	suí xiàn	372
+孙村	sūn cūn	307
 孙桥	sūn qiáo	29
 孙镇	sūn zhèn	1
 索县	suǒ xiàn	884
@@ -8624,6 +8626,7 @@ sort: by_weight
 黄邱村	huáng qiū cūn	1
 黄渠村	huáng qú cūn	103
 黄渠镇	huáng qú zhèn	1
+黄荣村	huáng róng cūn	20
 黄桑乡	huáng sāng xiāng	1
 黄沙村	huáng shā cūn	249
 黄砂村	huáng shā cūn	103
@@ -11421,6 +11424,7 @@ sort: by_weight
 李口村	lǐ kǒu cūn	31
 李口镇	lǐ kǒu zhèn	213
 历口镇	lì kǒu zhèn	1
+李朗村	lǐ lǎng cūn	10
 里老乡	lǐ lǎo xiāng	1
 黎里镇	lí lǐ zhèn	202
 李林村	lǐ lín cūn	103
@@ -11498,6 +11502,7 @@ sort: by_weight
 礼士镇	lǐ shì zhèn	552
 立石镇	lì shí zhèn	522
 李士庄	lǐ shì zhuāng	127
+李树村	lǐ shù cūn	5
 梨树区	lí shù qū	123
 梨树县	lí shù xiàn	178
 梨树乡	lí shù xiāng	1
@@ -11542,6 +11547,7 @@ sort: by_weight
 李圩村	lǐ wéi cūn	1
 李维县	lǐ wéi xiàn	56
 黎圩镇	lí wéi zhèn	1
+李沃村	lǐ wò cūn	10
 犁倭镇	lí wō zhèn	1
 李屋村	lǐ wū cūn	231
 蠡吾镇	lí wú zhèn	1
@@ -25674,6 +25680,7 @@ sort: by_weight
 赵和镇	zhào hé zhèn	1
 赵湖村	zhào hú cūn	159
 赵虎镇	zhào hǔ zhèn	1
+赵化村	zhào huà cūn	9
 昭化区	zhāo huà qū	158
 赵化镇	zhào huà zhèn	181
 昭化镇	zhāo huà zhèn	1
@@ -25684,6 +25691,7 @@ sort: by_weight
 赵家堡	zhào jiā bǎo	295
 赵家场	zhào jiā chǎng	274
 赵家村	zhào jiā cūn	312
+赵家村	zhào jiā cūn	2	278
 赵家店	zhào jiā diàn	243
 赵家渡	zhào jiā dù	270
 赵家墩	zhào jiā dūn	212
@@ -51272,6 +51280,7 @@ sort: by_weight
 前进林场	qián jìn lín chǎng	1
 前进农场	qián jìn nóng chǎng	1
 前荆沟村	qián jīng gōu cūn	1
+浅井头村	qiǎn jǐng tóu cūn	10
 前景庄村	qián jǐng zhuāng cūn	1
 前旧县村	qián jiù xiàn cūn	1
 前巨仁村	qián jù rén cūn	1
@@ -51468,6 +51477,7 @@ sort: by_weight
 前桃洼村	qián táo wā cūn	1
 前桃塬村	qián táo yuán cūn	1
 前桃园村	qián táo yuán cūn	1
+前田楼村	qián tián lóu cūn	20
 前田庄村	qián tián zhuāng cūn	1
 前铁社区	qián tiě shè qū	99
 前亭子村	qián tíng zi cūn	1
@@ -57279,6 +57289,7 @@ sort: by_weight
 特塔鲁乡	tè tǎ lǔ xiāng	1
 特乌鲁乡	tè wū lǔ xiāng	1
 特兴街道	tè xīng jiē dào	1
+藤公山村	téng gōng shān cūn	40
 滕家河村	téng jiā hé cūn	1
 滕家庄村	téng jiā zhuāng cūn	1
 腾龙街道	téng lóng jiē dào	1
@@ -57577,6 +57588,7 @@ sort: by_weight
 田镇街道	tián zhèn jiē dào	1
 天置山庄	tiān zhì shān zhuāng	1
 天中街道	tiān zhōng jiē dào	1
+田中央村	tián zhōng yāng cūn	20
 天竺地区	tiān zhú dì qū	1
 天竺岗村	tiān zhú gǎng cūn	1
 天柱山村	tiān zhù shān cūn	1
