@@ -3062,6 +3062,7 @@ sort: by_weight
 懺	chàn	431
 潺	chán	388
 蟾	chán	349
+産	chǎn	322
 攙	chān	283
 嬋	chán	255
 單	chán	242
@@ -3070,7 +3071,6 @@ sort: by_weight
 孱	chán	167
 滻	chǎn	150
 澶	chán	135
-産	chǎn	122
 覘	chān	99
 瀍	chán	89
 廛	chán	65
@@ -12418,12 +12418,12 @@ sort: by_weight
 𫌩	hǒu	1
 𫝗	hòu	1
 戶	hù	10805
+胡	hú	8766
 護	hù	3420
 互	hù	3078
 乎	hū	2770
 湖	hú	2493
 呼	hū	1605
-胡	hú	766
 虎	hǔ	727
 忽	hū	607
 狐	hú	546
@@ -13831,8 +13831,8 @@ sort: by_weight
 𫙇	huò	1
 嚄	huō	1
 鍃	huō	1
-即	jí	289489
-及	jí	117088
+及	jí	289489
+即	jí	117088
 既	jì	16948
 計	jì	5508
 急	jí	5397
@@ -16070,6 +16070,7 @@ sort: by_weight
 逕	jìng	20
 儆	jǐng	19
 肼	jǐng	18
+鶄	jīng	17
 暻	jǐng	11
 瀞	jìng	10
 鼱	jīng	9
@@ -16091,7 +16092,6 @@ sort: by_weight
 丼	jǐng	1
 弳	jìng	1
 妌	jìng	1
-鶄	jīng	1
 橸	jīng	1
 穽	jǐng	1
 誩	jìng	1
@@ -35060,6 +35060,7 @@ sort: by_weight
 桅	wéi	14
 偎	wēi	13
 諉	wěi	12
+闈	wéi	12
 梶	wěi	8
 隈	wēi	7
 鮪	wěi	5
@@ -35068,7 +35069,6 @@ sort: by_weight
 衞	wèi	2
 囗	wéi	1
 嵬	wéi	1
-闈	wéi	1
 艉	wěi	1
 逶	wēi	1
 潿	wéi	1
@@ -36820,6 +36820,7 @@ sort: by_weight
 峴	xiàn	38
 蜆	xiǎn	36
 県	xiàn	31
+綫	xiàn	31
 冼	xiǎn	27
 霰	xiàn	25
 見	xiàn	21
@@ -36834,7 +36835,6 @@ sort: by_weight
 憪	xián	3
 鷳	xián	1
 僊	xiān	1
-綫	xiàn	1
 燹	xiǎn	1
 顕	xiǎn	1
 筅	xiǎn	1
@@ -47119,6 +47119,7 @@ sort: by_weight
 攥	zuàn	2004
 纘	zuǎn	1222
 躦	zuān	196
+賺	zuàn	185
 纉	zuǎn	105
 籫	zuǎn	85
 繤	zuǎn	76
@@ -47128,7 +47129,6 @@ sort: by_weight
 攢	zuān	1
 欑	zuàn	1
 篹	zuàn	1
-賺	zuàn	1
 鉆	zuān	1
 鑚	zuān	1
 㷪	zuǎn	1

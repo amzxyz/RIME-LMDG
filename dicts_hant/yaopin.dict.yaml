@@ -184,10 +184,28 @@ sort: by_weight
 盤龍七片	pán lóng qī piàn	100
 盆炎淨片	pén yán jìng piàn	100
 普樂安片	pǔ lè ān piàn	100
+普魯托醇	pǔ lǔ tuō chún	45
+普侖司特	pǔ lún sī tè	4
+普洛必達	pǔ luò bì dá	4
+普羅布考	pǔ luó bù kǎo	202
+普羅布可	pǔ luó bù kě	76
+普羅雌烯	pǔ luó cí xī	153
+普羅碘銨	pǔ luó diǎn ǎn	4
+普羅吩胺	pǔ luó fēn àn	99
+普羅庚嗪	pǔ luó gēng qín	4
+普羅嗎酯	pǔ luó ma zhǐ	45
+普洛萘爾	pǔ luò nài ěr	45
+普羅帕酮	pǔ luó pà tóng	16
+普羅司泰	pǔ luó sī tài	45
+普羅替林	pǔ luó tì lín	153
+普羅托醇	pǔ luó tuō chún	50
+普羅新希	pǔ luó xīn xī	45
+普美拉泰	pǔ měi lā tài	45
 普適泰片	pǔ shì tài piàn	100
 清開靈片	qīng kāi líng piàn	100
 青黴胺片	qīng méi àn piàn	100
 熱淋清片	rè lín qīng piàn	100
+人參甘草	rén shēn gān cǎo	100
 人胎盤片	rén tāi pán piàn	100
 乳增寧片	rǔ zēng níng piàn	100
 善存銀片	shàn cún yín piàn	100
@@ -196,6 +214,7 @@ sort: by_weight
 腎炎舒片	shèn yán shū piàn	100
 生血寧片	shēng xuè níng piàn	100
 雙黃連片	shuāng huáng lián piàn	100
+司帕沙星	sī pà shā xīng	310
 替硝唑片	tì xiāo zuò piàn	100
 托吡酯片	tuō bǐ zhǐ piàn	100
 托卡朋片	tuō kǎ péng piàn	100
@@ -232,6 +251,7 @@ sort: by_weight
 益坤寧片	yì kūn níng piàn	100
 益脈康片	yì mài kāng piàn	100
 益腦寧片	yì nǎo níng piàn	100
+茵白沖劑	yīn bái chōng jì	100
 銀杏葉片	yín xìng yè piàn	100
 瘀血痹片	yū xuè bì piàn	100
 增抗寧片	zēng kàng níng piàn	100
@@ -282,7 +302,12 @@ sort: by_weight
 安貝氯銨片	ān bèi lǜ ǎn piàn	100
 氨苯蝶啶片	ān běn dié dìng piàn	100
 氨苯僞麻片	ān běn wěi má piàn	100
+氨苄毒黴素	ān biàn dú méi sù	100
+氨苄哌替啶	ān biàn pài tì dìng	100
+氨苄青黴素	ān biàn qīng méi sù	100
+氨苄西林鈉	ān biàn xī lín nà	100
 氨苄西林片	ān biàn xī lín piàn	100
+氨苄西林栓	ān biàn xī lín shuān	100
 安搏律定片	ān bó lǜ dìng piàn	100
 安達芬乳膏	ān dá fēn rǔ gāo	100
 安多霖膠囊	ān duō lín jiāo náng	100
@@ -309,6 +334,7 @@ sort: by_weight
 安凱舒顆粒	ān kǎi shū kē lì	100
 安康欣膠囊	ān kāng xīn jiāo náng	100
 安坤贊育丸	ān kūn zàn yù wán	100
+安利滴耳液	ān lì dī ěr yè	100
 氨魯米特片	ān lǔ mǐ tè piàn	100
 安絡風濕靈	ān luò fēng shī líng	100
 安絡化纖丸	ān luò huà xiān wán	100
@@ -320,13 +346,16 @@ sort: by_weight
 安尿通膠囊	ān niào tōng jiāo náng	100
 安神寶顆粒	ān shén bǎo kē lì	100
 安神補腦片	ān shén bǔ nǎo piàn	100
+安神補腦液	ān shén bǔ nǎo yè	100
 安神補氣丸	ān shén bǔ qì wán	100
 安神補心片	ān shén bǔ xīn piàn	100
 安神補心丸	ān shén bǔ xīn wán	100
 安神定志丸	ān shén dìng zhì wán	100
+安神健腦液	ān shén jiàn nǎo yè	100
 安神養心丸	ān shén yǎng xīn wán	100
 安神益腦丸	ān shén yì nǎo wán	100
 安嗽化痰丸	ān sòu huà tán wán	100
+氨羧絡合劑	ān suō luò hé jì	100
 安他唑啉片	ān tā zuò lín piàn	100
 安胎益母丸	ān tāi yì mǔ wán	100
 安特爾膠丸	ān tè ěr jiāo wán	100
@@ -343,6 +372,7 @@ sort: by_weight
 奧佛林膠囊	ào fó lín jiāo náng	100
 奧卡西平片	ào kǎ xī píng piàn	100
 奧拉米特片	ào lā mǐ tè piàn	100
+奧沙拉秦鈉	ào shā lā qín nà	100
 奧沙普嗪片	ào shā pǔ qín piàn	100
 奧沙普秦片	ào shā pǔ qín piàn	100
 奧沙西泮片	ào shā xī pàn piàn	100
@@ -365,6 +395,7 @@ sort: by_weight
 巴坎西林片	bā kǎn xī lín piàn	100
 巴柳氮鈉片	bā liǔ dàn nà piàn	100
 巴龍黴素片	bā lóng méi sù piàn	100
+巴特芬搽劑	bā tè fēn chá jì	100
 八味安寧散	bā wèi ān níng sàn	100
 八味沉香散	bā wèi chén xiāng sàn	100
 八味沉香丸	bā wèi chén xiāng wán	100
@@ -383,6 +414,7 @@ sort: by_weight
 拔雲復光散	bá yún fù guāng sàn	100
 八珍益母片	bā zhēn yì mǔ piàn	100
 八正口服液	bā zhèng kǒu fú yè	100
+百寶丹搽劑	bǎi bǎo dān chá jì	100
 百補增力丸	bǎi bǔ zēng lì wán	100
 白帶淨膠囊	bái dài jìng jiāo náng	100
 白帶丸水丸	bái dài wán shuǐ wán	100
@@ -405,10 +437,13 @@ sort: by_weight
 白芷護心散	bái zhǐ hù xīn sàn	100
 白朮安胃散	bái zhú ān wèi sàn	100
 白朮芍藥散	bái zhú sháo yào sàn	100
+白朮芍藥湯	bái zhú sháo yào tāng	100
 柏子養心片	bǎi zǐ yǎng xīn piàn	100
 柏子養心丸	bǎi zǐ yǎng xīn wán	100
 柏子滋心丸	bǎi zǐ zī xīn wán	100
 半固體製劑	bàn gù tǐ zhì jì	100
+板藍根沖劑	bǎn lán gēn chōng jì	100
+板蘭根沖劑	bǎn lán gēn chōng jì	100
 板藍根滴丸	bǎn lán gēn dī wán	100
 板藍根顆粒	bǎn lán gēn kē lì	100
 板蘭根顆粒	bǎn lán gēn kē lì	100
@@ -417,6 +452,7 @@ sort: by_weight
 斑蝥酸鈉片	bān máo suān nà piàn	100
 半夏茯神散	bàn xià fú shén sàn	100
 半夏乾薑散	bàn xià gān jiāng sàn	100
+半夏露沖劑	bàn xià lù chōng jì	100
 半夏露顆粒	bàn xià lù kē lì	100
 半夏露糖漿	bàn xià lù táng jiāng	100
 半夏麻黃丸	bàn xià má huáng wán	100
@@ -424,6 +460,7 @@ sort: by_weight
 寶寶樂顆粒	bǎo bao lè kē lì	100
 寶寶牛黃散	bǎo bao niú huáng sàn	100
 保產無憂散	bǎo chǎn wú yōu sàn	100
+保兒安沖劑	bǎo ér ān chōng jì	100
 保兒安顆粒	bǎo ér ān kē lì	100
 寶兒康糖漿	bǎo er kāng táng jiāng	100
 保兒寧顆粒	bǎo ér níng kē lì	100
@@ -440,6 +477,7 @@ sort: by_weight
 寶咳寧顆粒	bǎo ké níng kē lì	100
 寶咳寧糖漿	bǎo ké níng táng jiāng	100
 保利爾膠囊	bǎo lì ěr jiāo náng	100
+保目明眼液	bǎo mù míng yǎn yè	100
 保胎無憂片	bǎo tāi wú yōu piàn	100
 保胎無憂散	bǎo tāi wú yōu sàn	100
 保童化痰丸	bǎo tóng huà tán wán	100
@@ -472,26 +510,33 @@ sort: by_weight
 苯乙雙胍片	běn yǐ shuāng guā piàn	100
 苯扎貝特片	běn zhā bèi tè piàn	100
 比拜克膠囊	bǐ bài kè jiāo náng	100
+吡呋青黴素	bǐ fū qīng méi sù	100
 萆解分清丸	bì jiě fēn qīng wán	100
 比卡魯胺片	bǐ kǎ lǔ àn piàn	100
 吡拉西坦片	bǐ lā xī tǎn piàn	100
 吡羅昔康片	bǐ luó xī kāng piàn	100
 鉍鎂豆蔻片	bì měi dòu kòu piàn	100
+鼻敏滴鼻液	bí mǐn dī bí yè	100
 鼻寧噴霧劑	bí níng pēn wù jì	100
 吡嗪吡胺片	bǐ qín bǐ àn piàn	100
 吡嗪酰胺片	bǐ qín xiān àn piàn	100
 比沙可啶片	bǐ shā kě dìng piàn	100
 鼻舒口服液	bí shū kǒu fú yè	100
 比索洛爾片	bǐ suǒ luò ěr piàn	100
+鼻通滴鼻液	bí tōng dī bí yè	100
 痹痛寧膠囊	bì tòng níng jiāo náng	100
 萆薢分清丸	bì xiè fēn qīng wán	100
+鼻炎寧沖劑	bí yán níng chōng jì	100
 鼻炎寧膠囊	bí yán níng jiāo náng	100
 鼻炎寧顆粒	bí yán níng kē lì	100
 鼻淵口服液	bí yuān kǒu fú yè	100
 鼻淵舒膠囊	bí yuān shū jiāo náng	100
 苄氟噻嗪片	biàn fú sāi qín piàn	100
+苄基芬太尼	biàn jī fēn tài ní	100
+苄基青黴素	biàn jī qīng méi sù	100
 便秘舒膠囊	biàn mì shū jiāo náng	100
 苄普地爾片	biàn pǔ dì ěr piàn	100
+苄星青黴素	biàn xīng qīng méi sù	100
 表熱清顆粒	biǎo rè qīng kē lì	100
 鱉龍軟肝片	biē lóng ruǎn gān piàn	100
 冰醋酸塗劑	bīng cù suān tú jì	100
@@ -500,6 +545,7 @@ sort: by_weight
 檳榔七味丸	bīng láng qī wèi wán	100
 檳榔四消片	bīng láng sì xiāo piàn	100
 檳榔四消丸	bīng láng sì xiāo wán	100
+冰連滴耳劑	bīng lián dī ěr jì	100
 丙硫咪唑片	bǐng liú mī zuò piàn	100
 冰梅上清丸	bīng méi shàng qīng wán	100
 冰硼咽喉散	bīng péng yān hóu sàn	100
@@ -572,6 +618,7 @@ sort: by_weight
 參精止渴丸	cān jīng zhǐ kě wán	100
 參藍口服液	cān lán kǒu fú yè	100
 參苓健兒膏	cān líng jiàn ér gāo	100
+參苓健體粉	cān líng jiàn tǐ fěn	100
 參靈藍膠囊	cān líng lán jiāo náng	100
 參龍養血膏	cān lóng yǎng xuè gāo	100
 蠶鹿口服液	cán lù kǒu fú yè	100
@@ -601,6 +648,7 @@ sort: by_weight
 蒼蓮感冒片	cāng lián gǎn mào piàn	100
 藏茄流浸膏	cáng qié liú jìn gāo	100
 蒼辛氣霧劑	cāng xīn qì wù jì	100
+蒼夷滴鼻液	cāng yí dī bí yè	100
 藏茵陳膠囊	cáng yīn chén jiāo náng	100
 藏茵陳顆粒	cáng yīn chén kē lì	100
 草烏甲素片	cǎo wū jiǎ sù piàn	100
@@ -625,6 +673,7 @@ sort: by_weight
 柴芍六君丸	chái sháo liù jūn wán	100
 柴銀口服液	chái yín kǒu fú yè	100
 柴枳四逆散	chái zhǐ sì nì sàn	100
+產婦安合劑	chǎn fù ān hé jì	100
 產婦安膠囊	chǎn fù ān jiāo náng	100
 產婦安顆粒	chǎn fù ān kē lì	100
 產復康顆粒	chǎn fù kāng kē lì	100
@@ -647,6 +696,7 @@ sort: by_weight
 腸胃寧膠囊	cháng wèi níng jiāo náng	100
 腸胃適膠囊	cháng wèi shì jiāo náng	100
 腸胃舒膠囊	cháng wèi shū jiāo náng	100
+長效青黴素	cháng xiào qīng méi sù	100
 腸炎靈膠囊	cháng yán líng jiāo náng	100
 腸炎寧膠囊	cháng yán níng jiāo náng	100
 腸炎寧顆粒	cháng yán níng kē lì	100
@@ -663,15 +713,16 @@ sort: by_weight
 沉香舒鬱片	chén xiāng shū yù piàn	100
 沉香舒鬱丸	chén xiāng shū yù wán	100
 沉香四寶丸	chén xiāng sì bǎo wán	100
-喫顆定心丸	chī kē dìng xīn wán	100
 齒痛冰硼散	chǐ tòng bīng péng sàn	100
 蟲草川貝膏	chóng cǎo chuān bèi gāo	100
+蟲草靈芝液	chóng cǎo líng zhī yè	100
 蟲草參芪膏	chóng cǎo shēn qí gāo	100
 蟲咬皮炎膏	chóng yǎo pí yán gāo	100
 除濕白帶丸	chú shī bái dài wán	100
 除痰止嗽丸	chú tán zhǐ sòu wán	100
 除翳明目片	chú yì míng mù piàn	100
 除脂生髮片	chú zhī shēng fà piàn	100
+川貝半夏液	chuān bèi bàn xià yè	100
 川貝枇杷片	chuān bèi pí pá piàn	100
 川貝雪梨膏	chuān bèi xuě lí gāo	100
 川黃口服液	chuān huáng kǒu fú yè	100
@@ -716,8 +767,6 @@ sort: by_weight
 大黃錯蟲丸	dà huáng cuò chóng wán	100
 大黃甘草湯	dà huáng gān cǎo tāng	100
 大黃甘遂湯	dà huáng gān suì tāng	100
-大黃各三兩	dà huáng gè sān liǎng	100
-大黃各一兩	dà huáng gè yì liǎng	100
 大黃化瘀丸	dà huáng huà yū wán	100
 大黃降脂素	dà huáng jiàng zhī sù	100
 大黃牡丹湯	dà huáng mǔ dān tāng	100
@@ -740,6 +789,7 @@ sort: by_weight
 代阿布洛嶺	dài ā bù luò lǐng	100
 帶通濾波片	dài tōng lǜ bō piàn	100
 蛋白抑制劑	dàn bái yì zhì jì	100
+丹紅滴注液	dān hóng dī zhù yè	100
 丹紅注射液	dān hóng zhù shè yè	100
 丹花口服液	dān huā kǒu fú yè	100
 氮芥注射液	dàn jiè zhù shè yè	100
@@ -752,6 +802,7 @@ sort: by_weight
 丹芪和血片	dān qí hé xuè piàn	100
 丹七軟膠囊	dān qī ruǎn jiāo náng	100
 丹芎跌打膏	dān qiōng diē dǎ gāo	100
+丹參滴注液	dān shēn dī zhù yè	100
 丹參口服液	dān shēn kǒu fú yè	100
 丹參注射液	dān shēn zhù shè yè	100
 膽石利通片	dǎn shí lì tōng piàn	100
@@ -772,6 +823,7 @@ sort: by_weight
 丹梔逍遙散	dān zhī xiāo yáo sàn	100
 丹梔逍遙丸	dān zhī xiāo yáo wán	100
 丹枝逍遙丸	dān zhī xiāo yáo wán	100
+盪滌靈沖劑	dàng dí líng chōng jì	100
 盪滌靈顆粒	dàng dí líng kē lì	100
 當歸補血丸	dāng guī bǔ xuè wán	100
 當歸黃精膏	dāng guī huáng jīng gāo	100
@@ -805,12 +857,15 @@ sort: by_weight
 地榆升白片	dì yú shēng bái piàn	100
 滇白珠糖漿	diān bái zhū táng jiāng	100
 碘苯酚塗劑	diǎn běn fēn tú jì	100
+碘苷滴眼液	diǎn gān dī yǎn yè	100
 碘化油膠丸	diǎn huà yóu jiāo wán	100
+碘間碘苄胍	diǎn jiān diǎn biàn guā	100
 電介質色散	diàn jiè zhì sè sàn	100
 癲狂龍虎丸	diān kuáng lóng hǔ wán	100
 癲狂馬寶散	diān kuáng mǎ bǎo sàn	100
 電免疫擴散	diàn miǎn yì kuò sàn	100
 顛茄鉍鎂片	diān qié bì měi piàn	100
+顛茄磺苄啶	diān qié huáng biàn dìng	100
 癲癇康膠囊	diān xián kāng jiāo náng	100
 調肝和胃丸	diào gān hé wèi wán	100
 調胃丹水丸	diào wèi dān shuǐ wán	100
@@ -823,6 +878,7 @@ sort: by_weight
 跌打扭傷散	diē dǎ niǔ shāng sàn	100
 跌打七厘片	diē dǎ qī lí piàn	100
 跌打損傷丸	diē dǎ sǔn shāng wán	100
+跌打止痛液	diē dǎ zhǐ tòng yè	100
 跌傷靈貼膏	diē shāng líng tiē gāo	100
 丁丙諾非片	dīng bǐng nuò fēi piàn	100
 丁沉透膈丸	dīng chén tòu gé wán	100
@@ -833,11 +889,13 @@ sort: by_weight
 丁桂溫胃散	dīng guì wēn wèi sàn	100
 丁蔻理中丸	dīng kòu lǐ zhōng wán	100
 丁螺環酮片	dīng luó huán tóng piàn	100
+丁硼漱口液	dīng péng shù kǒu yè	100
 丁香爛飯丸	dīng xiāng làn fàn wán	100
 東寶肝泰片	dōng bǎo gān tài piàn	100
 冬寶口服液	dōng bǎo kǒu fú yè	100
 凍瘡未潰膏	dòng chuāng wèi kuì gāo	100
 東方活血膏	dōng fāng huó xuè gāo	100
+凍可消搽劑	dòng kě xiāo chá jì	100
 東莨菪鹼片	dōng làng dàng jiǎn piàn	100
 凍傷護膚膏	dòng shāng hù fū gāo	100
 東聖護肝片	dōng shèng hù gān piàn	100
@@ -883,6 +941,7 @@ sort: by_weight
 二陳口服液	èr chén kǒu fú yè	100
 二陳濃縮丸	èr chén nóng suō wán	100
 耳聰口服液	ěr cōng kǒu fú yè	100
+兒膚康搽劑	ér fū kāng chá jì	100
 二氟尼柳片	èr fú ní liǔ piàn	100
 二甲弗林片	èr jiǎ fú lín piàn	100
 二甲硅油片	èr jiǎ guī yóu piàn	100
@@ -918,20 +977,24 @@ sort: by_weight
 法莫替丁片	fǎ mò tì dīng piàn	100
 法莫替丁散	fǎ mò tì dīng sàn	100
 伐昔洛韋片	fá xī luò wéi piàn	100
+返魂草沖劑	fǎn hún cǎo chōng jì	100
 泛硫乙胺片	fàn liú yǐ àn piàn	100
 反氣旋消散	fǎn qì xuán xiāo sàn	100
 泛昔洛韋片	fàn xī luò wéi piàn	100
 反應抑制劑	fǎn yìng yì zhì jì	100
 防風通聖散	fáng fēng tōng shèng sàn	100
 防風通聖丸	fáng fēng tōng shèng wán	100
+防己茯苓湯	fáng jǐ fú líng tāng	100
 防己茯苓丸	fáng jǐ fú líng wán	100
 防己關節丸	fáng jǐ guān jié wán	100
 防衰益壽丸	fáng shuāi yì shòu wán	100
 防芷鼻炎片	fáng zhǐ bí yán piàn	100
 肺寶三效片	fèi bǎo sān xiào piàn	100
+肥達氏菌液	féi dá shì jūn yè	100
 肥兒寶顆粒	féi ér bǎo kē lì	100
 肥兒口服液	féi ér kǒu fú yè	100
 非金屬墊片	fēi jīn shǔ diàn piàn	100
+肺力咳合劑	fèi lì ké hé jì	100
 飛龍奪命丸	fēi lóng duó mìng wán	100
 非洛貝特片	fēi luò bèi tè piàn	100
 非洛地平片	fēi luò dì píng piàn	100
@@ -940,19 +1003,23 @@ sort: by_weight
 非奈利酮片	fēi nài lì tóng piàn	100
 肺寧口服液	fèi níng kǒu fú yè	100
 非諾貝特片	fēi nuò bèi tè piàn	100
+肺泡灌洗液	fèi pào guàn xǐ yè	100
 非普拉宗片	fēi pǔ lā zōng piàn	100
 肺熱普清散	fèi rè pǔ qīng sàn	100
 緋色的彈丸	fēi sè de dàn wán	100
 緋色的欠片	fēi sè de qiàn piàn	100
+沸騰的血液	fèi téng de xuè yè	100
 酚氨咖敏片	fēn ān kā mǐn piàn	100
 芬布芬膠囊	fēn bù fēn jiāo náng	100
 粉刺口服液	fěn cì kǒu fú yè	100
+酚丁安搽劑	fēn dīng ān chá jì	100
 芬氟拉明片	fēn fú lā míng piàn	100
 酚磺乙胺片	fēn huáng yǐ àn piàn	100
 分解抑制劑	fēn jiě yì zhì jì	100
 酚麻美敏片	fēn má měi mǐn piàn	100
 酚明僞麻片	fēn míng wěi má piàn	100
 分清五淋丸	fēn qīng wǔ lín wán	100
+芬太尼貼劑	fēn tài ní tiē jì	100
 蜂毒注射液	fēng dú zhù shè yè	100
 風寒骨痛丸	fēng hán gǔ tòng wán	100
 風寒咳嗽丸	fēng hán ké sòu wán	100
@@ -986,6 +1053,7 @@ sort: by_weight
 氟胞嘧啶片	fú bāo mì dìng piàn	100
 氟比洛芬片	fú bǐ luò fēn piàn	100
 婦必舒膠囊	fù bì shū jiāo náng	100
+呋苄西林鈉	fū biàn xī lín nà	100
 福多司坦片	fú duō sī tǎn piàn	100
 福爾可定片	fú ěr kě dìng piàn	100
 複方巴旦仁	fù fāng bā dàn rén	100
@@ -1018,7 +1086,6 @@ sort: by_weight
 復方黨參片	fù fāng dǎng shēn piàn	100
 復方地龍片	fù fāng dì lóng piàn	100
 複方地舍平	fù fāng dì shě píng	100
-複方碘溶液	fù fāng diǎn róng yè	100
 復方杜鵑片	fù fāng dù juān piàn	100
 復方杜仲片	fù fāng dù zhòng piàn	100
 復方阿膠漿	fù fāng ē jiāo jiāng	100
@@ -1126,6 +1193,7 @@ sort: by_weight
 氟芬那酸片	fú fēn nà suān piàn	100
 氟奮乃靜片	fú fèn nǎi jìng piàn	100
 氟伏沙明片	fú fú shā míng piàn	100
+復肝康沖劑	fù gān kāng chōng jì	100
 復肝康顆粒	fù gān kāng kē lì	100
 復肝能膠囊	fù gān néng jiāo náng	100
 復骨健步片	fù gǔ jiàn bù piàn	100
@@ -1135,6 +1203,8 @@ sort: by_weight
 氟桂嗪膠囊	fú guì qín jiāo náng	100
 附桂紫金膏	fù guì zǐ jīn gāo	100
 氟化鈉糊劑	fú huà nà hú jì	100
+膚淨康洗劑	fū jìng kāng xǐ jì	100
+婦康寶合劑	fù kāng bǎo hé jì	100
 婦康寶煎膏	fù kāng bǎo jiān gāo	100
 婦康寶顆粒	fù kāng bǎo kē lì	100
 婦康口服液	fù kāng kǒu fú yè	100
@@ -1156,8 +1226,11 @@ sort: by_weight
 婦科養榮丸	fù kē yǎng róng wán	100
 婦科止帶片	fù kē zhǐ dài piàn	100
 伏立康唑片	fú lì kāng zuò piàn	100
+茯苓甘草湯	fú líng gān cǎo tāng	100
 蝮龍抗栓丸	fù lóng kàng shuān wán	100
 氟羅沙星片	fú luó shā xīng piàn	100
+呋麻滴鼻液	fū má dī bí yè	100
+呋嘛滴鼻液	fū ma dī bí yè	100
 附馬開痹片	fù mǎ kāi bì piàn	100
 復脈定膠囊	fù mài dìng jiāo náng	100
 復脈定顆粒	fù mài dìng kē lì	100
@@ -1178,6 +1251,8 @@ sort: by_weight
 氟輕鬆搽劑	fú qīng sōng chá jì	100
 氟輕鬆軟膏	fú qīng sōng ruǎn gāo	100
 膚輕鬆軟膏	fū qīng sōng ruǎn gāo	100
+芙蓉滴耳液	fú róng dī ěr yè	100
+蝮蛇康樂液	fù shé kāng lè yè	100
 復腎寧膠囊	fù shèn níng jiāo náng	100
 復生康膠囊	fù shēng kāng jiāo náng	100
 腐蝕抑制劑	fǔ shí yì zhì jì	100
@@ -1191,8 +1266,10 @@ sort: by_weight
 婦炎淨膠囊	fù yán jìng jiāo náng	100
 婦炎康復片	fù yán kāng fù piàn	100
 婦炎靈膠囊	fù yán líng jiāo náng	100
+膚炎寧搽劑	fū yán níng chá jì	100
 婦炎平膠囊	fù yán píng jiāo náng	100
 婦炎清糖漿	fù yán qīng táng jiāng	100
+婦炎清洗劑	fù yán qīng xǐ jì	100
 婦炎舒膠囊	fù yán shū jiāo náng	100
 婦炎泰顆粒	fù yán tài kē lì	100
 浮翳墜翳丸	fú yì zhuì yì wán	100
@@ -1208,6 +1285,7 @@ sort: by_weight
 複製抑制劑	fù zhì yì zhì jì	100
 附子理中片	fù zǐ lǐ zhōng piàn	100
 附子理中丸	fù zǐ lǐ zhōng wán	100
+附子理中液	fù zǐ lǐ zhōng yè	100
 肝安注射液	gān ān zhù shè yè	100
 肝必復膠囊	gān bì fù jiāo náng	100
 甘草甜素片	gān cǎo tián sù piàn	100
@@ -1228,6 +1306,7 @@ sort: by_weight
 肝淨注射液	gān jìng zhù shè yè	100
 甘桔冰梅片	gān jú bīng méi piàn	100
 肝康口服液	gān kāng kǒu fú yè	100
+橄欖晶沖劑	gǎn lǎn jīng chōng jì	100
 橄欖晶顆粒	gǎn lǎn jīng kē lì	100
 肝樂欣膠囊	gān lè xīn jiāo náng	100
 甘磷酰芥片	gān lín xiān jiè piàn	100
@@ -1240,6 +1319,7 @@ sort: by_weight
 感冒解痛散	gǎn mào jiě tòng sàn	100
 感冒康膠囊	gǎn mào kāng jiāo náng	100
 感冒咳嗽片	gǎn mào ké sòu piàn	100
+感冒靈沖劑	gǎn mào líng chōng jì	100
 感冒疏風片	gǎn mào shū fēng piàn	100
 感冒疏風丸	gǎn mào shū fēng wán	100
 感冒舒顆粒	gǎn mào shū kē lì	100
@@ -1255,6 +1335,7 @@ sort: by_weight
 肝腎康糖漿	gān shèn kāng táng jiāng	100
 肝腎糠糖漿	gān shèn kāng táng jiāng	100
 甘石創愈散	gān shí chuàng yù sàn	100
+肝舒樂沖劑	gān shū lè chōng jì	100
 肝舒樂顆粒	gān shū lè kē lì	100
 肝舒寧顆粒	gān shū níng kē lì	100
 感速康膠囊	gǎn sù kāng jiāo náng	100
@@ -1277,6 +1358,7 @@ sort: by_weight
 葛根芩蓮片	gé gēn qín lián piàn	100
 葛根芩連片	gé gēn qín lián piàn	100
 葛根芩連丸	gé gēn qín lián wán	100
+葛根湯合劑	gé gēn tāng hé jì	100
 蛤蚧補腎丸	gé jiè bǔ shèn wán	100
 蛤蚧大補丸	gé jiè dà bǔ wán	100
 蛤蚧黨參膏	gé jiè dǎng shēn gāo	100
@@ -1284,6 +1366,7 @@ sort: by_weight
 蛤蚧養肺丸	gé jiè yǎng fèi wán	100
 蛤蚧治癆丸	gé jiè zhì láo wán	100
 格拉司瓊片	gé lā sī qióng piàn	100
+革蘭氏染液	gé lán shì rǎn yè	100
 格列苯脲片	gé liè běn niào piàn	100
 格列本脲片	gé liè běn niào piàn	100
 格列吡嗪片	gé liè bǐ qín piàn	100
@@ -1308,6 +1391,7 @@ sort: by_weight
 宮炎康膠囊	gōng yán kāng jiāo náng	100
 宮炎康顆粒	gōng yán kāng kē lì	100
 宮炎平膠囊	gōng yán píng jiāo náng	100
+工業的血液	gōng yè de xuè yè	100
 公子小魚丸	gōng zǐ xiǎo yú wán	100
 枸磺新啶片	gǒu huáng xīn dìng piàn	100
 古庵心腎丸	gǔ ān xīn shèn wán	100
@@ -1321,6 +1405,7 @@ sort: by_weight
 骨刺祛痛膏	gǔ cì qū tòng gāo	100
 骨刺消貼膏	gǔ cì xiāo tiē gāo	100
 骨刺消痛片	gǔ cì xiāo tòng piàn	100
+骨刺消痛液	gǔ cì xiāo tòng yè	100
 骨刺止痛丸	gǔ cì zhǐ tòng wán	100
 骨風寧膠囊	gǔ fēng níng jiāo náng	100
 骨骼風痛片	gǔ gé fēng tòng piàn	100
@@ -1347,10 +1432,12 @@ sort: by_weight
 固體顆粒比	gù tǐ kē lì bǐ	100
 股頭康復片	gǔ tóu kāng fù piàn	100
 呱西替柳片	gū xī tì liǔ piàn	100
+骨友靈搽劑	gǔ yǒu líng chá jì	100
 骨友靈貼膏	gǔ yǒu líng tiē gāo	100
 骨愈靈膠囊	gǔ yù líng jiāo náng	100
 骨增生痛膏	gǔ zēng shēng tòng gāo	100
 骨折再生丸	gǔ zhé zài shēng wán	100
+骨質寧搽劑	gǔ zhì níng chá jì	100
 瓜蒂神妙散	guā dì shén miào sàn	100
 栝蔞牡蠣散	guā lóu mǔ lì sàn	100
 栝蔞青黛丸	guā lóu qīng dài wán	100
@@ -1408,14 +1495,17 @@ sort: by_weight
 硅烷處理劑	guī wán chǔ lǐ jì	100
 桂香祛暑散	guì xiāng qū shǔ sàn	100
 桂香祛署散	guì xiāng qū shǔ sàn	100
+歸源功能液	guī yuán gōng néng yè	100
 歸元健腦片	guī yuán jiàn nǎo piàn	100
 歸圓口服液	guī yuán kǒu fú yè	100
 桂枝茯苓片	guì zhī fú líng piàn	100
 桂枝茯苓丸	guì zhī fú líng wán	100
 桂枝茯芩丸	guì zhī fú qín wán	100
 桂枝口服液	guì zhī kǒu fú yè	100
+桂枝芍藥湯	guì zhī sháo yào tāng	100
 過碘酸染劑	guò diǎn suān rǎn jì	100
 國木田花丸	guó mù tián huā wán	100
+海巴青黴素	hǎi bā qīng méi sù	100
 海藏當歸丸	hǎi cáng dāng guī wán	100
 海藏紫菀散	hǎi cáng zǐ wǎn sàn	100
 氦丁烷合劑	hài dīng wán hé jì	100
@@ -1432,6 +1522,7 @@ sort: by_weight
 含化上清片	hán huà shàng qīng piàn	100
 含氯消毒劑	hán lǜ xiāo dú jì	100
 寒熱痹膠囊	hán rè bì jiāo náng	100
+汗爲心之液	hàn wéi xīn zhī yè	100
 河車大造丸	hé chē dà zào wán	100
 合成抑制劑	hé chéng yì zhì jì	100
 核酪口服液	hé lào kǒu fú yè	100
@@ -1461,6 +1552,7 @@ sort: by_weight
 喉痛消炎丸	hóu tòng xiāo yán wán	100
 厚元行氣丸	hòu yuán xíng qì wán	100
 猴棗牛黃散	hóu zǎo niú huáng sàn	100
+狐臭爽身液	hú chòu shuǎng shēn yè	100
 護肝寧膠囊	hù gān níng jiāo náng	100
 虎力散膠囊	hǔ lì sàn jiāo náng	100
 琥珀抱龍丸	hǔ pò bào lóng wán	100
@@ -1497,6 +1589,7 @@ sort: by_weight
 環戊噻嗪片	huán wù sāi qín piàn	100
 磺胺多辛片	huáng àn duō xīn piàn	100
 磺胺嘧啶片	huáng àn mì dìng piàn	100
+磺苄西林鈉	huáng biàn xī lín nà	100
 黃柏八味散	huáng bò bā wèi sàn	100
 黃疸肝炎丸	huáng dǎn gān yán wán	100
 磺啶冰黃片	huáng dìng bīng huáng piàn	100
@@ -1528,6 +1621,7 @@ sort: by_weight
 惠血生膠囊	huì xuè shēng jiāo náng	100
 混合核苷片	hùn hé hé gān piàn	100
 火把花根片	huǒ bǎ huā gēn piàn	100
+活絡健身液	huó luò jiàn shēn yè	100
 活絡消痛片	huó luò xiāo tòng piàn	100
 活絡止痛丸	huó luò zhǐ tòng wán	100
 藿砂口服液	huò shā kǒu fú yè	100
@@ -1537,7 +1631,9 @@ sort: by_weight
 霍香正氣片	huò xiāng zhèng qì piàn	100
 藿香正氣丸	huò xiāng zhèng qì wán	100
 霍香正氣丸	huò xiāng zhèng qì wán	100
+藿香正氣液	huò xiāng zhèng qì yè	100
 活心丸水丸	huó xīn wán shuǐ wán	100
+活性鈣沖劑	huó xìng gài chōng jì	100
 活血風寒膏	huó xuè fēng hán gāo	100
 活血化瘀丸	huó xuè huà yū wán	100
 活血健骨片	huó xuè jiàn gǔ piàn	100
@@ -1560,11 +1656,13 @@ sort: by_weight
 己椒藶黃丸	jǐ jiāo lì huáng wán	100
 肌瘤內消丸	jī liú nèi xiāo wán	100
 激酶抑制劑	jī méi yì zhì jì	100
+吉姆薩染液	jí mǔ sà rǎn yè	100
 濟生橘核丸	jì shēng jú hé wán	100
 濟生腎氣片	jì shēng shèn qì piàn	100
 濟生腎氣丸	jì shēng shèn qì wán	100
 濟生聖氣丸	jì shēng shèng qì wán	100
 戟生止痛膏	jǐ shēng zhǐ tòng gāo	100
+寄生追風液	jì shēng zhuī fēng yè	100
 即食燕麥片	jí shí yān mài piàn	100
 己酸鋅膠囊	jǐ suān xīn jiāo náng	100
 吉他黴素片	jí tā méi sù piàn	100
@@ -1590,6 +1688,7 @@ sort: by_weight
 加減內固丸	jiā jiǎn nèi gù wán	100
 加減三黃丸	jiā jiǎn sān huáng wán	100
 加減神術散	jiā jiǎn shén shù sàn	100
+佳麗潔陰液	jiā lì jié yīn yè	100
 甲硫氨酸片	jiǎ liú ān suān piàn	100
 甲麻黃鹼片	jiǎ má huáng jiǎn piàn	100
 家祕肝腎丸	jiā mì gān shèn wán	100
@@ -1618,6 +1717,7 @@ sort: by_weight
 加味二妙丸	jiā wèi èr miào wán	100
 加味二母丸	jiā wèi èr mǔ wán	100
 加味佛手散	jiā wèi fó shǒu sàn	100
+加味茯苓湯	jiā wèi fú líng tāng	100
 加味感冒丸	jiā wèi gǎn mào wán	100
 加味歸脾丸	jiā wèi guī pí wán	100
 加味歸芪片	jiā wèi guī qí piàn	100
@@ -1661,6 +1761,7 @@ sort: by_weight
 甲硝唑片片	jiǎ xiāo zuò piàn piàn	100
 甲硝唑維片	jiǎ xiāo zuò wéi piàn	100
 甲氧苄啶片	jiǎ yǎng biàn dìng piàn	100
+甲氧苄喹酯	jiǎ yǎng biàn kuí zhǐ	100
 甲氧那明片	jiǎ yǎng nà míng piàn	100
 甲氧沙林片	jiǎ yǎng shā lín piàn	100
 甲魚軟堅膏	jiǎ yú ruǎn jiān gāo	100
@@ -1668,6 +1769,8 @@ sort: by_weight
 健步虎潛丸	jiàn bù hǔ qián wán	100
 健步強身丸	jiàn bù qiáng shēn wán	100
 健步壯骨丸	jiàn bù zhuàng gǔ wán	100
+健兒清解液	jiàn ér qīng jiě yè	100
+健兒素沖劑	jiàn ér sù chōng jì	100
 健兒素顆粒	jiàn ér sù kē lì	100
 減肥通聖片	jiǎn féi tōng shèng piàn	100
 健肝樂顆粒	jiàn gān lè kē lì	100
@@ -1675,6 +1778,7 @@ sort: by_weight
 健骨注射液	jiàn gǔ zhù shè yè	100
 健康補脾丸	jiàn kāng bǔ pí wán	100
 健民咽喉片	jiàn mín yān hóu piàn	100
+健那綠染液	jiàn nà lǜ rǎn yè	100
 健腦安神片	jiàn nǎo ān shén piàn	100
 健腦益氣片	jiàn nǎo yì qì piàn	100
 健脾補血片	jiàn pí bǔ xuè piàn	100
@@ -1705,10 +1809,6 @@ sort: by_weight
 健胃止痛片	jiàn wèi zhǐ tòng piàn	100
 健胃助食片	jiàn wèi zhù shí piàn	100
 健心糖衣片	jiàn xīn táng yī piàn	100
-鹼性乾燥劑	jiǎn xìng gān zào jì	100
-鹼性清潔劑	jiǎn xìng qīng jié jì	100
-鹼性清洗劑	jiǎn xìng qīng xǐ jì	100
-鹼性洗滌劑	jiǎn xìng xǐ dí jì	100
 健延齡膠囊	jiàn yán líng jiāo náng	100
 薑膽咳喘片	jiāng dǎn ké chuǎn piàn	100
 薑黃清脂片	jiāng huáng qīng zhī piàn	100
@@ -1747,6 +1847,9 @@ sort: by_weight
 解毒萬靈丸	jiě dú wàn líng wán	100
 解毒維康片	jiě dú wéi kāng piàn	100
 解毒消炎膏	jiě dú xiāo yán gāo	100
+潔而美洗液	jié ér měi xǐ yè	100
+潔爾舒洗劑	jié ěr shū xǐ jì	100
+潔膚淨洗劑	jié fū jìng xǐ jì	100
 秸稈顆粒機	jiē gǎn kē lì jī	100
 桔梗冬花片	jié gěng dōng huā piàn	100
 桔梗流浸膏	jié gěng liú jìn gāo	100
@@ -1761,11 +1864,14 @@ sort: by_weight
 解肌寧嗽片	jiě jī níng sòu piàn	100
 解肌寧嗽丸	jiě jī níng sòu wán	100
 解肌清肺丸	jiě jī qīng fèi wán	100
+潔康舒洗劑	jié kāng shū xǐ jì	100
 睫毛打底膏	jié máo dǎ dǐ gāo	100
 截瘧七寶丸	jié nüè qī bǎo wán	100
 結石康膠囊	jié shí kāng jiāo náng	100
 結石清膠囊	jié shí qīng jiāo náng	100
 潔牙拋光膏	jié yá pāo guāng gāo	100
+潔陰靈洗劑	jié yīn líng xǐ jì	100
+潔陰舒洗液	jié yīn shū xǐ yè	100
 解鬱和肝丸	jiě yù hé gān wán	100
 解鬱丸水丸	jiě yù wán shuǐ wán	100
 節齋化痰丸	jié zhāi huà tán wán	100
@@ -1781,6 +1887,7 @@ sort: by_weight
 金剛烷胺片	jīn gāng wán àn piàn	100
 筋骨跌打丸	jīn gǔ diē dǎ wán	100
 金骨蓮膠囊	jīn gǔ lián jiāo náng	100
+筋骨寧搽劑	jīn gǔ níng chá jì	100
 筋骨痛消丸	jīn gǔ tòng xiāo wán	100
 筋骨止痛膏	jīn gǔ zhǐ tòng gāo	100
 金匱腎氣片	jīn guì shèn qì piàn	100
@@ -1833,6 +1940,7 @@ sort: by_weight
 金縮固精丸	jīn suō gù jīng wán	100
 金胃泰膠囊	jīn wèi tài jiāo náng	100
 盡向毛孔散	jìn xiàng máo kǒng sàn	100
+金葉滴眼劑	jīn yè dī yǎn jì	100
 金衣萬應丸	jīn yī wàn yīng wán	100
 金澤冠心片	jīn zé guān xīn piàn	100
 金振口服液	jīn zhèn kǒu fú yè	100
@@ -1858,8 +1966,11 @@ sort: by_weight
 精製狗皮膏	jīng zhì gǒu pí gāo	100
 精製冠心片	jīng zhì guān xīn piàn	100
 精製猴棗散	jīng zhì hóu zǎo sàn	100
+精子分離液	jīng zǐ fēn lí yè	100
+精子制動液	jīng zǐ zhì dòng yè	100
 酒調洗肝散	jiǔ diào xǐ gān sàn	100
 救爾心膠囊	jiù ěr xīn jiāo náng	100
+酒花素搽劑	jiǔ huā sù chá jì	100
 救急稀涎散	jiù jí xī xián sàn	100
 九膠丸膠囊	jiǔ jiāo wán jiāo náng	100
 酒浸牛膝丸	jiǔ jìn niú xī wán	100
@@ -1882,6 +1993,7 @@ sort: by_weight
 九製香附丸	jiǔ zhì xiāng fù wán	100
 酒煮當歸丸	jiǔ zhǔ dāng guī wán	100
 酒煮黃連丸	jiǔ zhǔ huáng lián wán	100
+九株濃縮液	jiǔ zhū nóng suō yè	100
 橘半枳朮丸	jú bàn zhǐ shù wán	100
 桔貝口服液	jú bèi kǒu fú yè	100
 局方至寶散	jú fāng zhì bǎo sàn	100
@@ -1892,6 +2004,8 @@ sort: by_weight
 橘紅化痰丸	jú hóng huà tán wán	100
 橘紅枇杷片	jú hóng pí pá piàn	100
 橘紅疝氣丸	jú hóng shàn qì wán	100
+橘紅痰咳液	jú hóng tán ké yè	100
+桔紅痰咳液	jú hóng tán ké yè	100
 菊花茶調散	jú huā chá tiáo sàn	100
 菊明降壓片	jú míng jiàng yā piàn	100
 菊明降壓丸	jú míng jiàng yā wán	100
@@ -1900,10 +2014,12 @@ sort: by_weight
 蠲痹抗生丸	juān bì kàng shēng wán	100
 決明降脂片	jué míng jiàng zhī piàn	100
 皸裂護膚膏	jūn liè hù fū gāo	100
+君子蘭玉液	jūn zǐ lán yù yè	100
 卡巴克絡片	kǎ bā kè luò piàn	100
 卡比多巴片	kǎ bǐ duō bā piàn	100
 卡比馬唑片	kǎ bǐ mǎ zuò piàn	100
 卡波羅孟片	kǎ bō luó mèng piàn	100
+卡達二氏液	kǎ dá èr shì yè	100
 咖酚偽麻片	kā fēn wěi má piàn	100
 卡絡磺鈉片	kǎ luò huáng nà piàn	100
 卡馬西平片	kǎ mǎ xī píng piàn	100
@@ -1922,7 +2038,9 @@ sort: by_weight
 開鬱舒肝丸	kāi yù shū gān wán	100
 開鬱順氣丸	kāi yù shùn qì wán	100
 康艾注射液	kāng ài zhù shè yè	100
+抗病毒沖劑	kàng bìng dú chōng jì	100
 抗病毒滴丸	kàng bìng dú dī wán	100
+抗病毒合劑	kàng bìng dú hé jì	100
 康齒寧乳膏	kāng chǐ níng rǔ gāo	100
 康兒靈顆粒	kāng ér líng kē lì	100
 康爾心膠囊	kāng ěr xīn jiāo náng	100
@@ -1957,6 +2075,7 @@ sort: by_weight
 康欣口服液	kāng xīn kǒu fú yè	100
 抗炎蘭顆粒	kàng yán lán kē lì	100
 抗炎退熱片	kàng yán tuì rè piàn	100
+烤瓷包埋液	kǎo cí bāo mái yè	100
 考來烯胺散	kǎo lái xī àn sàn	100
 克痹骨泰片	kè bì gǔ tài piàn	100
 克比熱提片	kè bǐ rè tí piàn	100
@@ -1964,6 +2083,7 @@ sort: by_weight
 咳喘化痰散	ké chuǎn huà tán sàn	100
 咳喘靜糖漿	ké chuǎn jìng táng jiāng	100
 咳喘口服液	ké chuǎn kǒu fú yè	100
+克感敏沖劑	kè gǎn mǐn chōng jì	100
 可可鈣糖片	kě kě gài táng piàn	100
 克拉黴素片	kè lā méi sù piàn	100
 可樂定滴丸	kě lè dìng dī wán	100
@@ -1971,6 +2091,7 @@ sort: by_weight
 渴樂寧顆粒	kě lè níng kē lì	100
 顆粒的大小	kē lì de dà xiǎo	100
 顆粒度均勻	kē lì dù jūn yún	100
+可利肝沖劑	kě lì gān chōng jì	100
 可利肝顆粒	kě lì gān kē lì	100
 顆粒溶解素	kē lì róng jiě sù	100
 克痢痧膠囊	kè lì shā jiāo náng	100
@@ -1989,24 +2110,30 @@ sort: by_weight
 可溶顆粒劑	kě róng kē lì jì	100
 克賽注射液	kè sài zhù shè yè	100
 咳煞消喘片	ké shā xiāo chuǎn piàn	100
+克傷痛搽劑	kè shāng tòng chá jì	100
 咳嗽痰喘丸	ké sòu tán chuǎn wán	100
 咳速停膠囊	ké sù tíng jiāo náng	100
 咳速停糖漿	ké sù tíng táng jiāng	100
 咳特靈膠囊	ké tè líng jiāo náng	100
 咳特靈顆粒	ké tè líng kē lì	100
 克瀉敏顆粒	kè xiè mǐn kē lì	100
+克癢舒洗液	kè yǎng shū xǐ yè	100
 克銀口服液	kè yín kǒu fú yè	100
 孔聖枕中丸	kǒng shèng zhěn zhōng wán	100
 控釋顆粒劑	kòng shì kē lì jì	100
 空心服七丸	kōng xīn fú qī wán	100
 口服洗腸散	kǒu fú xǐ cháng sàn	100
 口服液體劑	kǒu fú yè tǐ jì	100
+口潔含漱液	kǒu jié hán shù yè	100
 口潔噴霧劑	kǒu jié pēn wù jì	100
 口腔崩解片	kǒu qiāng bēng jiě piàn	100
 口腔潰瘍散	kǒu qiāng kuì yáng sàn	100
+口中有津液	kǒu zhōng yǒu jīn yè	100
 苦碟注射液	kǔ dié zhù shè yè	100
 苦黃注射液	kǔ huáng zhù shè yè	100
 苦木注射液	kǔ mù zhù shè yè	100
+苦雙黃洗劑	kǔ shuāng huáng xǐ jì	100
+快安感冒液	kuài ān gǎn mào yè	100
 快減服膠囊	kuài jiǎn fú jiāo náng	100
 快胃舒肝丸	kuài wèi shū gān wán	100
 髖人字石膏	kuān rén zì shí gāo	100
@@ -2053,6 +2180,7 @@ sort: by_weight
 樂甲緩釋片	lè jiǎ huǎn shì piàn	100
 勒馬回膠囊	lè mǎ huí jiāo náng	100
 樂脈口服液	lè mài kǒu fú yè	100
+雷佛奴爾液	léi fó nú ěr yè	100
 雷卡注射液	léi kǎ zhù shè yè	100
 雷米普利片	léi mǐ pǔ lì piàn	100
 雷尼替丁片	léi ní tì dīng piàn	100
@@ -2066,6 +2194,7 @@ sort: by_weight
 利膽舒膠囊	lì dǎn shū jiāo náng	100
 利膽止痛片	lì dǎn zhǐ tòng piàn	100
 利爾眠膠囊	lì ěr mián jiāo náng	100
+利夫康洗劑	lì fū kāng xǐ jì	100
 利富平膠囊	lì fù píng jiāo náng	100
 利福平膠囊	lì fú píng jiāo náng	100
 利福平膠丸	lì fú píng jiāo wán	100
@@ -2073,6 +2202,7 @@ sort: by_weight
 利福平乳膏	lì fú píng rǔ gāo	100
 利福昔明片	lì fú xī míng piàn	100
 利肝和胃丸	lì gān hé wèi wán	100
+利肝隆沖劑	lì gān lóng chōng jì	100
 利肝窿膠囊	lì gān lóng jiāo náng	100
 利肝隆膠囊	lì gān lóng jiāo náng	100
 利肝隆顆粒	lì gān lóng kē lì	100
@@ -2133,6 +2263,7 @@ sort: by_weight
 靈芝北芪片	líng zhī běi qí piàn	100
 靈芝浸膏片	líng zhī jìn gāo piàn	100
 柳胺酚膠囊	liǔ àn fēn jiāo náng	100
+流動的血液	liú dòng de xuè yè	100
 六和定中丸	liù hé dìng zhōng wán	100
 六合定中丸	liù hé dìng zhōng wán	100
 硫化延遲劑	liú huà yán chí jì	100
@@ -2146,6 +2277,7 @@ sort: by_weight
 硫普羅寧片	liú pǔ luó níng piàn	100
 硫酸奎寧片	liú suān kuí níng piàn	100
 硫酸亞鐵片	liú suān yà tiě piàn	100
+流淌的血液	liú tǎng de xuè yè	100
 六味安消散	liù wèi ān xiāo sàn	100
 六味地黃膏	liù wèi dì huáng gāo	100
 六味地黃片	liù wèi dì huáng piàn	100
@@ -2172,10 +2304,12 @@ sort: by_weight
 龍生蛭膠囊	lóng shēng zhì jiāo náng	100
 癃疏清顆粒	lóng shū qīng kē lì	100
 龍心素膠囊	lóng xīn sù jiāo náng	100
+龍掌口含液	lóng zhǎng kǒu hán yè	100
 龍珠平亢丸	lóng zhū píng kàng wán	100
 鹿參正元膏	lù cān zhèng yuán gāo	100
 鹿丹芪膠囊	lù dān qí jiāo náng	100
 蘆氟沙星片	lú fú shā xīng piàn	100
+爐甘石洗劑	lú gān shí xǐ jì	100
 鹿茸洋參片	lù róng yáng shēn piàn	100
 蘆沙坦鉀片	lú shā tǎn jiǎ piàn	100
 陸氏潤字丸	lù shì rùn zì wán	100
@@ -2184,6 +2318,7 @@ sort: by_weight
 鹿尾補腎丸	lù wěi bǔ shèn wán	100
 鹿仙補腎片	lù xiān bǔ shèn piàn	100
 鹿珠口服液	lù zhū kǒu fú yè	100
+卵泡沖洗液	luǎn pào chōng xǐ yè	100
 羅布麻浸膏	luó bù má jìn gāo	100
 洛布桑膠囊	luò bù sāng jiāo náng	100
 洛伐他汀片	luò fá tā tīng piàn	100
@@ -2221,6 +2356,7 @@ sort: by_weight
 氯咖黃敏片	lǜ kā huáng mǐn piàn	100
 氯雷他定片	lǜ léi tā dìng piàn	100
 鋁鎂顛茄片	lǚ měi diān qié piàn	100
+鋁鎂混懸液	lǚ měi hùn xuán yè	100
 鋁鎂咀嚼片	lǚ měi jǔ jué piàn	100
 鋁鎂匹林片	lǚ měi pǐ lín piàn	100
 氯黴素搽劑	lǜ méi sù chá jì	100
@@ -2264,18 +2400,22 @@ sort: by_weight
 脈血康膠囊	mài xuè kāng jiāo náng	100
 慢肝寧膠囊	màn gān níng jiāo náng	100
 滿金止咳片	mǎn jīn zhǐ ké piàn	100
+慢腎寶合劑	màn shèn bǎo hé jì	100
 慢支紫紅丸	màn zhī zǐ hóng wán	100
 慢阻固本丸	màn zǔ gù běn wán	100
 慢阻通氣丸	màn zǔ tōng qì wán	100
 毛皮護甲片	máo pí hù jiǎ piàn	100
+毛葉草芍藥	máo yè cǎo sháo yào	100
 貓抓草膠囊	māo zhuā cǎo jiāo náng	100
 美寶燒傷膏	měi bǎo shāo shāng gāo	100
 美達消腫膏	měi dá xiāo zhǒng gāo	100
 美酚僞麻片	měi fēn wěi má piàn	100
 玫瑰花糖膏	méi gui huā táng gāo	100
+玫瑰糠洗劑	méi gui kāng xǐ jì	100
 玫果口服液	méi guǒ kǒu fú yè	100
 梅花點舌片	méi huā diǎn shé piàn	100
 梅花點舌丸	méi huā diǎn shé wán	100
+煤焦油洗劑	méi jiāo yóu xǐ jì	100
 美克洛嗪片	měi kè luò qín piàn	100
 梅苓口服液	méi líng kǒu fú yè	100
 玫蘆消痤膏	méi lú xiāo cuó gāo	100
@@ -2290,6 +2430,7 @@ sort: by_weight
 美托洛爾片	měi tuō luò ěr piàn	100
 梅翁退熱片	méi wēng tuì rè piàn	100
 美息偽麻片	měi xī wěi má piàn	100
+鎂氧混合劑	měi yǎng hùn hé jì	100
 門冬酰胺片	mén dōng xiān àn piàn	100
 礞石滾痰片	méng shí gǔn tán piàn	100
 礞石滾痰丸	méng shí gǔn tán wán	100
@@ -2306,6 +2447,7 @@ sort: by_weight
 米格來寧片	mǐ gé lái níng piàn	100
 米格列醇片	mǐ gé liè chún piàn	100
 秘訣清涼散	mì jué qīng liáng sàn	100
+咪康唑搽劑	mī kāng zuò chá jì	100
 密麗除疤膏	mì lì chú bā gāo	100
 泌淋清膠囊	mì lín qīng jiāo náng	100
 泌尿寧膠囊	mì niào níng jiāo náng	100
@@ -2318,6 +2460,7 @@ sort: by_weight
 秘製舒肝丸	mì zhì shū gān wán	100
 秘製太和丸	mì zhì tài hé wán	100
 咪唑立賓片	mī zuò lì bīn piàn	100
+眠安寧合劑	mián ān níng hé jì	100
 眠安寧顆粒	mián ān níng kē lì	100
 免疫抑制劑	miǎn yì yì zhì jì	100
 妙泰口服液	miào tài kǒu fú yè	100
@@ -2331,6 +2474,7 @@ sort: by_weight
 明目上清片	míng mù shàng qīng piàn	100
 明目羊肝丸	míng mù yáng gān wán	100
 明目滋腎片	míng mù zī shèn piàn	100
+膜腹透析液	mó fù tòu xī yè	100
 莫家清寧丸	mò jiā qīng níng wán	100
 莫雷西嗪片	mò léi xī qín piàn	100
 摩羅口服液	mó luó kǒu fú yè	100
@@ -2353,6 +2497,7 @@ sort: by_weight
 那如三味片	nà rú sān wèi piàn	100
 那如三味丸	nà rú sān wèi wán	100
 萘丁美酮片	nài dīng měi tóng piàn	100
+萘非滴眼液	nài fēi dī yǎn yè	100
 奈福泮膠囊	nài fú pàn jiāo náng	100
 萘哌地爾片	nài pài dì ěr piàn	100
 奈普待因片	nài pǔ dài yīn piàn	100
@@ -2360,6 +2505,7 @@ sort: by_weight
 萘普生鈉片	nài pǔ shēng nà piàn	100
 奈韋拉平片	nài wéi lā píng piàn	100
 男春寶膠囊	nán chūn bǎo jiāo náng	100
+男人的精液	nán rén de jīng yè	100
 腦得生膠囊	nǎo dé shēng jiāo náng	100
 腦得生顆粒	nǎo dé shēng kē lì	100
 腦康泰膠囊	nǎo kāng tài jiāo náng	100
@@ -2399,9 +2545,11 @@ sort: by_weight
 逆線性色散	nì xiàn xìng sè sàn	100
 尼扎替丁片	ní zhā tì dīng piàn	100
 黏膜潰瘍膏	nián mó kuì yáng gāo	100
+尿道球腺液	niào dào qiú xiàn yè	100
 尿毒靈軟膏	niào dú líng ruǎn gāo	100
 尿毒排析散	niào dú pái xī sàn	100
 尿毒清顆粒	niào dú qīng kē lì	100
+尿感寧沖劑	niào gǎn níng chōng jì	100
 尿感寧顆粒	niào gǎn níng kē lì	100
 尿路康顆粒	niào lù kāng kē lì	100
 尿清舒顆粒	niào qīng shū kē lì	100
@@ -2442,6 +2590,7 @@ sort: by_weight
 牛黃益金片	niú huáng yì jīn piàn	100
 牛黃鬱金丸	niú huáng yù jīn wán	100
 牛黃至寶丸	niú huáng zhì bǎo wán	100
+牛皮癬洗劑	niú pí xuǎn xǐ jì	100
 牛心包補片	niú xīn bāo bǔ piàn	100
 牛至肝康丸	niú zhì gān kāng wán	100
 濃縮養榮丸	nóng suō yǎng róng wán	100
@@ -2465,17 +2614,21 @@ sort: by_weight
 盤骨止痛膏	pán gǔ zhǐ tòng gāo	100
 泮托拉唑片	pàn tuō lā zuò piàn	100
 泡騰顆粒劑	pào téng kē lì jì	100
+泡騰性沖劑	pào téng xìng chōng jì	100
 培哚普利片	péi duǒ pǔ lì piàn	100
 培氟沙星片	péi fú shā xīng piàn	100
 培高利特片	péi gāo lì tè piàn	100
 培他司汀片	péi tā sī tīng piàn	100
+胚胎解凍液	pēi tāi jiě dòng yè	100
 噴托維林片	pēn tuō wéi lín piàn	100
 盆炎淨膠囊	pén yán jìng jiāo náng	100
 盆炎淨顆粒	pén yán jìng kē lì	100
 硼酸軟膏一	péng suān ruǎn gāo yī	100
 硼鋅魚軟膏	péng xīn yú ruǎn gāo	100
+匹氨青黴素	pǐ ān qīng méi sù	100
 匹多莫德片	pǐ duō mò dé piàn	100
 匹多莫德散	pǐ duō mò dé sàn	100
+皮膚康洗液	pí fū kāng xǐ yè	100
 啤酒花浸膏	pí jiǔ huā jìn gāo	100
 匹林咖敏片	pǐ lín kā mǐn piàn	100
 皮敏消膠囊	pí mǐn xiāo jiāo náng	100
@@ -2602,6 +2755,7 @@ sort: by_weight
 噙化上清丸	qín huà shàng qīng wán	100
 秦艽白朮丸	qín jiāo bái zhú wán	100
 秦艽鱉甲散	qín jiāo biē jiǎ sàn	100
+芩藍滴鼻液	qín lán dī bí yè	100
 芩連丸微丸	qín lián wán wēi wán	100
 芩翹口服液	qín qiào kǒu fú yè	100
 秦蘇緩釋片	qín sū huǎn shì piàn	100
@@ -2631,6 +2785,7 @@ sort: by_weight
 青蒿鱉甲片	qīng hāo biē jiǎ piàn	100
 青蒿琥脂片	qīng hāo hǔ zhī piàn	100
 青蒿琥酯片	qīng hāo hǔ zhǐ piàn	100
+清喉咽合劑	qīng hóu yān hé jì	100
 清喉咽顆粒	qīng hóu yān kē lì	100
 氫化催化劑	qīng huà cuī huà jì	100
 清火明目丸	qīng huǒ míng mù wán	100
@@ -2644,7 +2799,9 @@ sort: by_weight
 氫氯吡格片	qīng lǜ bǐ gé piàn	100
 氫氯噻嗪片	qīng lǜ sāi qín piàn	100
 青黴素鉀片	qīng méi sù jiǎ piàn	100
+青黴素鉀鹽	qīng méi sù jiǎ yán	100
 清腦安神丸	qīng nǎo ān shén wán	100
+清腦復神液	qīng nǎo fù shén yè	100
 清腦降壓片	qīng nǎo jiàng yā piàn	100
 清寧濃縮丸	qīng níng nóng suō wán	100
 清氣化痰丸	qīng qì huà tán wán	100
@@ -2707,6 +2864,7 @@ sort: by_weight
 祛痹舒肩丸	qū bì shū jiān wán	100
 齲齒寧含片	qǔ chǐ níng hán piàn	100
 驅蟲消食片	qū chóng xiāo shí piàn	100
+祛毒灌腸液	qū dú guàn cháng yè	100
 祛風化痰丸	qū fēng huà tán wán	100
 驅風蘇合丸	qū fēng sū hé wán	100
 祛風息痛丸	qū fēng xī tòng wán	100
@@ -2743,6 +2901,7 @@ sort: by_weight
 熱淋清顆粒	rè lín qīng kē lì	100
 熱淋清糖漿	rè lín qīng táng jiāng	100
 熱痛淨糖丸	rè tòng jìng táng wán	100
+熱炎寧合劑	rè yán níng hé jì	100
 熱炎寧膠囊	rè yán níng jiāo náng	100
 熱炎寧顆粒	rè yán níng kē lì	100
 人工牛黃片	rén gōng niú huáng piàn	100
@@ -2762,6 +2921,8 @@ sort: by_weight
 忍者茶茶丸	rěn zhě chá chá wán	100
 人字形石膏	rén zì xíng shí gāo	100
 日曬防治膏	rì shài fáng zhì gāo	100
+日舒安洗劑	rì shū ān xǐ jì	100
+日舒安洗液	rì shū ān xǐ yè	100
 蓉丹口服液	róng dān kǒu fú yè	100
 融合抑制劑	róng hé yì zhì jì	100
 溶鏈菌製劑	róng liàn jūn zhì jì	100
@@ -2770,12 +2931,14 @@ sort: by_weight
 蓉仙口服液	róng xiān kǒu fú yè	100
 榕消得生片	róng xiāo de shēng piàn	100
 茸血安神丸	róng xuè ān shén wán	100
+茸血補腦液	róng xuè bǔ nǎo yè	100
 茸血補心丸	róng xuè bǔ xīn wán	100
 柔肝順氣丸	róu gān shùn qì wán	100
 肉蔻五味丸	ròu kòu wǔ wèi wán	100
 鞣酸蛋白片	róu suān dàn bái piàn	100
 乳必寧顆粒	rǔ bì níng kē lì	100
 乳核內消片	rǔ hé nèi xiāo piàn	100
+乳核內消液	rǔ hé nèi xiāo yè	100
 乳核散結片	rǔ hé sàn jié piàn	100
 乳疾靈膠囊	rǔ jí líng jiāo náng	100
 乳疾靈顆粒	rǔ jí líng kē lì	100
@@ -2796,16 +2959,20 @@ sort: by_weight
 如意定喘丸	rú yì dìng chuǎn wán	100
 乳增寧膠囊	rǔ zēng níng jiāo náng	100
 乳增愈膠囊	rǔ zēng yù jiāo náng	100
+乳濁液型液	rǔ zhuó yè xíng yè	100
 軟堅口服液	ruǎn jiān kǒu fú yè	100
 軟膠囊膠丸	ruǎn jiāo náng jiāo wán	100
 阮氏上清丸	ruǎn shì shàng qīng wán	100
 瑞巴派特片	ruì bā pài tè piàn	100
 瑞格列奈片	ruì gé liè nài piàn	100
+瑞氏染色液	ruì shì rǎn sè yè	100
 潤腸寧神膏	rùn cháng níng shén gāo	100
 潤肺化核膏	rùn fèi huà hé gāo	100
 潤肺化痰丸	rùn fèi huà tán wán	100
 潤肺止嗽丸	rùn fèi zhǐ sòu wán	100
 潤肌皮膚膏	rùn jī pí fū gāo	100
+潤清護理液	rùn qīng hù lǐ yè	100
+潤舒滴眼液	rùn shū dī yǎn yè	100
 潤伊容膠囊	rùn yī róng jiāo náng	100
 薩熱大鵬丸	sà rè dà péng wán	100
 賽庚定軟膏	sài gēng dìng ruǎn gāo	100
@@ -2823,6 +2990,7 @@ sort: by_weight
 塞曲司特片	sāi qǔ sī tè piàn	100
 噻肟唑頭孢	sāi wò zuò tóu bāo	100
 三才封髓丸	sān cái fēng suǐ wán	100
+三參降脂液	sān cān jiàng zhī yè	100
 三層茴香丸	sān céng huí xiāng wán	100
 三層茄香丸	sān céng qié xiāng wán	100
 三分三浸膏	sān fēn sān jìn gāo	100
@@ -2892,6 +3060,7 @@ sort: by_weight
 山蠟梅葉片	shān là méi yè piàn	100
 山莨菪鹼片	shān làng dàng jiǎn piàn	100
 閃亮的名片	shǎn liàng de míng piàn	100
+閃亮滴眼液	shǎn liàng dī yǎn yè	100
 山麥口服液	shān mài kǒu fú yè	100
 山牡丹膠囊	shān mǔ dān jiāo náng	100
 山藥參芪丸	shān yào shēn qí wán	100
@@ -2919,12 +3088,16 @@ sort: by_weight
 少腹祛瘀丸	shǎo fù qū yū wán	100
 少腹逐瘀丸	shǎo fù zhú yū wán	100
 少名針妙丸	shǎo míng zhēn miào wán	100
+燒傷膚康液	shāo shāng fū kāng yè	100
+芍藥甘草湯	sháo yào gān cǎo tāng	100
 蛇膽半夏片	shé dǎn bàn xià piàn	100
 蛇膽貝母片	shé dǎn bèi mǔ piàn	100
 蛇膽貝母散	shé dǎn bèi mǔ sàn	100
 蛇膽陳皮片	shé dǎn chén pí piàn	100
 蛇膽陳皮散	shé dǎn chén pí sàn	100
+蛇膽陳皮液	shé dǎn chén pí yè	100
 蛇膽川貝散	shé dǎn chuān bèi sàn	100
+蛇膽川貝液	shé dǎn chuān bèi yè	100
 蛇膽南星片	shé dǎn nán xīng piàn	100
 蛇膽南星散	shé dǎn nán xīng sàn	100
 蛇膽追風丸	shé dǎn zhuī fēng wán	100
@@ -2938,22 +3111,35 @@ sort: by_weight
 蛇傷解毒片	shé shāng jiě dú piàn	100
 麝香拔溼膏	shè xiāng bá shī gāo	100
 麝香保心丸	shè xiāng bǎo xīn wán	100
+麝香草酚藍	shè xiāng cǎo fēn lán	100
+麝香草酚酞	shè xiāng cǎo fēn tài	100
 麝香風濕片	shè xiāng fēng shī piàn	100
 麝香狗皮膏	shè xiāng gǒu pí gāo	100
 麝香虎骨膏	shè xiāng hǔ gǔ gāo	100
 麝香回陽膏	shè xiāng huí yáng gāo	100
 麝香解痛膏	shè xiāng jiě tòng gāo	100
 麝香抗栓丸	shè xiāng kàng shuān wán	100
+麝香腦脈康	shè xiāng nǎo mài kāng	100
 麝香牛黃丸	shè xiāng niú huáng wán	100
 麝香暖臍膏	shè xiāng nuǎn qí gāo	100
 麝香奇應丸	shè xiāng qí yīng wán	100
 麝香三妙膏	shè xiāng sān miào gāo	100
+麝香舒活精	shè xiāng shū huó jīng	100
+麝香舒活靈	shè xiāng shū huó líng	100
+麝香心腦樂	shè xiāng xīn nǎo lè	100
+麝香心腦通	shè xiāng xīn nǎo tōng	100
 麝香心痛膏	shè xiāng xīn tòng gāo	100
+麝香心痛寧	shè xiāng xīn tòng níng	100
 麝香熊羚丸	shè xiāng xióng líng wán	100
+麝香正骨酊	shè xiāng zhèng gǔ dīng	100
+麝香正骨水	shè xiāng zhèng gǔ shuǐ	100
+麝香痔瘡栓	shè xiāng zhì chuāng shuān	100
 麝香止痛膏	shè xiāng zhǐ tòng gāo	100
+麝香止痛貼	shè xiāng zhǐ tòng tiē	100
 麝香壯骨膏	shè xiāng zhuàng gǔ gāo	100
 麝香追風膏	shè xiāng zhuī fēng gāo	100
 麝雄至寶丸	shè xióng zhì bǎo wán	100
+麝珠明目液	shè zhū míng mù yè	100
 腎安乾糖漿	shèn ān gàn táng jiāng	100
 腎安注射液	shèn ān zhù shè yè	100
 腎寶口服液	shèn bǎo kǒu fú yè	100
@@ -2974,7 +3160,9 @@ sort: by_weight
 參苓白朮丸	shēn líng bái zhú wán	100
 參苓歸元膏	shēn líng guī yuán gāo	100
 參苓健脾丸	shēn líng jiàn pí wán	100
+參苓健脾胃	shēn líng jiàn pí wèi	100
 參苓口服液	shēn líng kǒu fú yè	100
+參苓益腎酒	shēn líng yì shèn jiǔ	100
 腎寧散膠囊	shèn níng sàn jiāo náng	100
 神農茶顆粒	shén nóng chá kē lì	100
 參芪二仙片	shēn qí èr xiān piàn	100
@@ -2999,6 +3187,7 @@ sort: by_weight
 參茸延齡片	shēn róng yán líng piàn	100
 參茸珍寶片	shēn róng zhēn bǎo piàn	100
 參茸壯骨丸	shēn róng zhuàng gǔ wán	100
+腎石通沖劑	shèn shí tōng chōng jì	100
 腎石通顆粒	shèn shí tōng kē lì	100
 神衰果素片	shén shuāi guǒ sù piàn	100
 神衰康膠囊	shén shuāi kāng jiāo náng	100
@@ -3022,6 +3211,7 @@ sort: by_weight
 腎炎消腫片	shèn yán xiāo zhǒng piàn	100
 神州跌打丸	shén zhōu diē dǎ wán	100
 生白口服液	shēng bái kǒu fú yè	100
+生達潤眼液	shēng dá rùn yǎn yè	100
 生爾發糖漿	shēng ěr fā táng jiāng	100
 生乾地黃散	shēng gān dì huáng sàn	100
 生乾地黃丸	shēng gān dì huáng wán	100
@@ -3041,7 +3231,9 @@ sort: by_weight
 生乳口服液	shēng rǔ kǒu fú yè	100
 生熟地黃丸	shēng shú dì huáng wán	100
 生物鹼試劑	shēng wù jiǎn shì jì	100
+生血寶合劑	shēng xuè bǎo hé jì	100
 生血寶顆粒	shēng xuè bǎo kē lì	100
+生血康合劑	shēng xuè kāng hé jì	100
 升血靈膠囊	shēng xuè líng jiāo náng	100
 升血靈顆粒	shēng xuè líng kē lì	100
 生長抑制劑	shēng zhǎng yì zhì jì	100
@@ -3054,17 +3246,21 @@ sort: by_weight
 十復生膠囊	shí fù shēng jiāo náng	100
 石膏瀉白散	shí gāo xiè bái sàn	100
 石斛明目丸	shí hú míng mù wán	100
+石斛牛膝湯	shí hú niú xī tāng	100
 石斛夜光丸	shí hú yè guāng wán	100
 石黃抗菌片	shí huáng kàng jūn piàn	100
 食積口服液	shí jī kǒu fú yè	100
+是菌敵洗液	shì jūn dí xǐ yè	100
 石刻安腎丸	shí kè ān shèn wán	100
 濕了一大片	shī le yí dà piàn	100
+石淋通沖劑	shí lín tōng chōng jì	100
 石淋通膠囊	shí lín tōng jiāo náng	100
 石淋通顆粒	shí lín tōng kē lì	100
 石榴健胃丸	shí liú jiàn wèi wán	100
 石榴蓮花散	shí liú lián huā sàn	100
 石榴普安散	shí liú pǔ ān sàn	100
 石榴日輪丸	shí liú rì lún wán	100
+視明滴眼液	shì míng dī yǎn yè	100
 視頻和相片	shì pín hé xiàng piān	100
 十全大補膏	shí quán dà bǔ gāo	100
 十全大補片	shí quán dà bǔ piàn	100
@@ -3106,6 +3302,7 @@ sort: by_weight
 樹倒猢猻散	shù dǎo hú sūn sàn	100
 舒爾經膠囊	shū ěr jīng jiāo náng	100
 舒爾經顆粒	shū ěr jīng kē lì	100
+舒爾陰洗液	shū ěr yīn xǐ yè	100
 疏風定痛丸	shū fēng dìng tòng wán	100
 舒風定痛丸	shū fēng dìng tòng wán	100
 疏風活絡片	shū fēng huó luò piàn	100
@@ -3124,6 +3321,7 @@ sort: by_weight
 舒肝順氣丸	shū gān shùn qì wán	100
 舒肝調氣丸	shū gān tiáo qì wán	100
 舒肝消積丸	shū gān xiāo jī wán	100
+舒肝益脾液	shū gān yì pí yè	100
 舒肝止痛丸	shū gān zhǐ tòng wán	100
 舒冠通糖漿	shū guān tōng táng jiāng	100
 舒筋跌打膏	shū jīn diē dǎ gāo	100
@@ -3133,13 +3331,16 @@ sort: by_weight
 舒筋活血片	shū jīn huó xuè piàn	100
 舒筋活血丸	shū jīn huó xuè wán	100
 舒頸口服液	shū jǐng kǒu fú yè	100
+舒康寧洗液	shū kāng níng xǐ yè	100
 舒樂康膠囊	shū lè kāng jiāo náng	100
 鼠李鉍鎂片	shǔ lǐ bì měi piàn	100
+輸卵管通液	shū luǎn guǎn tōng yè	100
 舒絡養肝丸	shū luò yǎng gān wán	100
 舒泌通膠囊	shū mì tōng jiāo náng	100
 舒腦欣滴丸	shū nǎo xīn dī wán	100
 舒神靈膠囊	shū shén líng jiāo náng	100
 舒心降脂片	shū xīn jiàng zhī piàn	100
+舒陰潔洗劑	shū yīn jié xǐ jì	100
 舒鬱九寶丸	shū yù jiǔ bǎo wán	100
 薯蕷皂苷片	shǔ yù zào gān piàn	100
 舒脂軟膠囊	shū zhī ruǎn jiāo náng	100
@@ -3163,7 +3364,9 @@ sort: by_weight
 雙水楊酯片	shuāng shuǐ yáng zhǐ piàn	100
 雙藤筋骨片	shuāng téng jīn gǔ piàn	100
 雙香豆素片	shuāng xiāng dòu sù piàn	100
+雙子參洗液	shuāng zǐ cān xǐ yè	100
 雙唑泰軟膏	shuāng zuò tài ruǎn gāo	100
+水基鑽井液	shuǐ jī zuàn jǐng yè	100
 水陸二味片	shuǐ lù èr wèi piàn	100
 水陸二味丸	shuǐ lù èr wèi wán	100
 水楊酸搽劑	shuǐ yáng suān chá jì	100
@@ -3185,6 +3388,7 @@ sort: by_weight
 四季潤喉片	sì jì rùn hóu piàn	100
 四季三黃片	sì jì sān huáng piàn	100
 四季三黃丸	sì jì sān huáng wán	100
+四君子合劑	sì jūn zǐ hé jì	100
 四兩拔乾片	sì liǎng bá gān piàn	100
 飼料顆粒機	sì liào kē lì jī	100
 四妙丸水丸	sì miào wán shuǐ wán	100
@@ -3208,6 +3412,7 @@ sort: by_weight
 四蒸木瓜丸	sì zhēng mù guā wán	100
 四制抱龍丸	sì zhì bào lóng wán	100
 四製香附丸	sì zhì xiāng fù wán	100
+松節油搽劑	sōng jié yóu chá jì	100
 搜風理肺丸	sōu fēng lǐ fèi wán	100
 搜風順氣丸	sōu fēng shùn qì wán	100
 蘇菲咳糖漿	sū fēi ké táng jiāng	100
@@ -3217,21 +3422,26 @@ sort: by_weight
 蘇嘉湖小片	sū jiā hú xiǎo piàn	100
 速克感冒片	sù kè gǎn mào piàn	100
 蘇樂康膠囊	sū lè kāng jiāo náng	100
+塑料複合劑	sù liào fù hé jì	100
 蘇梅爽含片	sū méi shuǎng hán piàn	100
 速寧注射液	sù níng zhù shè yè	100
 蘇諾注射液	sū nuò zhù shè yè	100
 速效感冒片	sù xiào gǎn mào piàn	100
 速效救心丸	sù xiào jiù xīn wán	100
 速效牛黃丸	sù xiào niú huáng wán	100
+速效止癢液	sù xiào zhǐ yǎng yè	100
 蘇子降氣丸	sū zǐ jiàng qì wán	100
 酸棗仁合劑	suān zǎo rén hé jì	100
 損傷熏洗散	sǔn shāng xūn xǐ sàn	100
+羧苄青黴素	suō biàn qīng méi sù	100
+羧苄西林鈉	suō biàn xī lín nà	100
 羧甲司坦片	suō jiǎ sī tǎn piàn	100
 索他洛爾片	suǒ tā luò ěr piàn	100
 索陽固精丸	suǒ yáng gù jīng wán	100
 鎖陽固精丸	suǒ yáng gù jīng wán	100
 鎖陽三味片	suǒ yáng sān wèi piàn	100
 他莫昔芬片	tā mò xī fēn piàn	100
+酞丁安搽劑	tài dīng ān chá jì	100
 太和妙靈丸	tài hé miào líng wán	100
 太極升降丸	tài jí shēng jiàng wán	100
 太空養心丸	tài kōng yǎng xīn wán	100
@@ -3284,9 +3494,11 @@ sort: by_weight
 天杞口服液	tiān qǐ kǒu fú yè	100
 田七痛經散	tián qī tòng jīng sàn	100
 天芪消渴片	tiān qí xiāo kě piàn	100
+天然氣凝液	tiān rán qì níng yè	100
 天台烏藥散	tiān tāi wū yào sàn	100
 天王補心片	tiān wáng bǔ xīn piàn	100
 天王補心丸	tiān wáng bǔ xīn wán	100
+天王補心液	tiān wáng bǔ xīn yè	100
 填隙式擴散	tián xì shì kuò sàn	100
 天鬱老蔻丸	tiān yù lǎo kòu wán	100
 天芝草膠囊	tiān zhī cǎo jiāo náng	100
@@ -3339,6 +3551,7 @@ sort: by_weight
 通絡止痛丸	tōng luò zhǐ tòng wán	100
 通脈降脂片	tōng mài jiàng zhī piàn	100
 通脈降脂丸	tōng mài jiàng zhī wán	100
+通脈康洗液	tōng mài kāng xǐ yè	100
 通脈口服液	tōng mài kǒu fú yè	100
 通脈四逆散	tōng mài sì nì sàn	100
 通脈養心丸	tōng mài yǎng xīn wán	100
@@ -3369,7 +3582,6 @@ sort: by_weight
 頭孢丙烯顆	tóu bāo bǐng xī kē	100
 頭孢丙烯片	tóu bāo bǐng xī piàn	100
 頭孢布烯鈉	tóu bāo bù xī nà	100
-頭孢地嗪鈉	tóu bāo dì qín nà	100
 頭孢地秦鈉	tóu bāo dì qín nà	100
 頭孢呋肟鈉	tóu bāo fū wò nà	100
 頭孢呋辛鈉	tóu bāo fū xīn nà	100
@@ -3427,16 +3639,17 @@ sort: by_weight
 託哌酮膠囊	tuō pài tóng jiāo náng	100
 妥舒沙星片	tuǒ shū shā xīng piàn	100
 托特羅定片	tuō tè luó dìng piàn	100
+託西溴苄銨	tuō xī xiù biàn ǎn	100
 外感風痧片	wài gǎn fēng shā piàn	100
 外顆粒層紋	wài kē lì céng wén	100
 外傷如意膏	wài shāng rú yì gāo	100
+外臺茯苓飲	wài tái fú líng yǐn	100
 外用潰瘍散	wài yòng kuì yáng sàn	100
 外用萬應膏	wài yòng wàn yīng gāo	100
 外用無敵膏	wài yòng wú dí gāo	100
+外用熏洗劑	wài yòng xūn xǐ jì	100
 外用止咳散	wài yòng zhǐ ké sàn	100
 萬寶口服液	wàn bǎo kǒu fú yè	100
-烷基化試劑	wán jī huà shì jì	100
-烷基鋰試劑	wán jī lǐ shì jì	120
 萬靈筋骨膏	wàn líng jīn gǔ gāo	100
 萬靈五香膏	wàn líng wǔ xiāng gāo	100
 萬通炎康片	wàn tōng yán kāng piàn	100
@@ -3453,6 +3666,7 @@ sort: by_weight
 胃腸復元膏	wèi cháng fù yuán gāo	100
 胃腸健膠囊	wèi cháng jiàn jiāo náng	100
 胃腸靈膠囊	wèi cháng líng jiāo náng	100
+胃腸寧沖劑	wèi cháng níng chōng jì	100
 胃腸寧膠囊	wèi cháng níng jiāo náng	100
 胃腸寧顆粒	wèi cháng níng kē lì	100
 胃腸適膠囊	wèi cháng shì jiāo náng	100
@@ -3462,7 +3676,9 @@ sort: by_weight
 胃得安膠囊	wèi dé ān jiāo náng	100
 胃得寧膠囊	wèi dé níng jiāo náng	100
 維爾康膠囊	wéi ěr kāng jiāo náng	100
+維兒康洗液	wéi ér kāng xǐ yè	100
 維爾新膠囊	wéi ěr xīn jiāo náng	100
+維婦康洗液	wéi fù kāng xǐ yè	100
 胃復寧膠囊	wèi fù níng jiāo náng	100
 胃復舒膠囊	wèi fù shū jiāo náng	100
 胃福通膠囊	wèi fú tōng jiāo náng	100
@@ -3474,6 +3690,7 @@ sort: by_weight
 微管抑制劑	wēi guǎn yì zhì jì	100
 胃可安膠囊	wèi kě ān jiāo náng	100
 維拉帕米片	wéi lā pà mǐ piàn	100
+胃樂新沖劑	wèi lè xīn chōng jì	100
 胃樂新膠囊	wèi lè xīn jiāo náng	100
 胃樂新顆粒	wèi lè xīn kē lì	100
 胃力康顆粒	wèi lì kāng kē lì	100
@@ -3536,6 +3753,7 @@ sort: by_weight
 翁瀝通膠囊	wēng lì tōng jiāo náng	100
 翁瀝通顆粒	wēng lì tōng kē lì	100
 我孫子武丸	wǒ sūn zi wǔ wán	100
+五柏參洗液	wǔ bǎi cān xǐ yè	100
 無比山藥丸	wú bǐ shān yào wán	100
 無敵丹膠囊	wú dí dān jiāo náng	100
 五福化毒片	wǔ fú huà dú piàn	100
@@ -3557,6 +3775,7 @@ sort: by_weight
 武力拔寒散	wǔ lì bá hán sàn	100
 五粒回春丸	wǔ lì huí chūn wán	100
 五淋化石丸	wǔ lín huà shí wán	100
+無磷助洗劑	wú lín zhù xǐ jì	100
 五羚丹膠囊	wǔ líng dān jiāo náng	100
 五靈止痛片	wǔ líng zhǐ tòng piàn	100
 烏洛托品片	wū luò tuō pǐn piàn	100
@@ -3612,10 +3831,10 @@ sort: by_weight
 豨薟風濕片	xī xiān fēng shī piàn	100
 豨薟風濕丸	xī xiān fēng shī wán	100
 貕薟風濕丸	xī xiān fēng shī wán	100
+豨薟通絡液	xī xiān tōng luò yè	100
 豨薟通栓丸	xī xiān tōng shuān wán	100
 豯薟通栓丸	xī xiān tōng shuān wán	100
 西園喉藥散	xī yuán hóu yào sàn	100
-下利去大黃	xià lì qù dà huáng	100
 仙參口服液	xiān cān kǒu fú yè	100
 仙方活命片	xiān fāng huó mìng piàn	100
 腺苷鈷胺片	xiàn gān gǔ àn piàn	100
@@ -3629,11 +3848,13 @@ sort: by_weight
 鮮天麻蜜膏	xiān tiān má mì gāo	100
 仙樂雄膠囊	xiān yuè xióng jiāo náng	100
 限制酶斷片	xiàn zhì méi duàn piàn	100
+鮮竹瀝合劑	xiān zhú lì hé jì	100
 香丹注射液	xiāng dān zhù shè yè	100
 香附丸水丸	xiāng fù wán shuǐ wán	100
 香菇多醣片	xiāng gū duō táng piàn	100
 香桂活血膏	xiāng guì huó xuè gāo	100
 香果健消片	xiāng guǒ jiàn xiāo piàn	100
+香菊含漱液	xiāng jú hán shù yè	100
 香菊活血丸	xiāng jú huó xuè wán	100
 香連化滯片	xiāng lián huà zhì piàn	100
 香連化滯丸	xiāng lián huà zhì wán	100
@@ -3660,6 +3881,7 @@ sort: by_weight
 消白口服液	xiāo bái kǒu fú yè	100
 硝苯地平片	xiāo běn dì píng piàn	100
 小檗眼藥膏	xiǎo bò yǎn yào gāo	100
+小柴胡沖劑	xiǎo chái hú chōng jì	100
 小柴胡湯丸	xiǎo chái hú tāng wán	100
 哮喘寧顆粒	xiào chuǎn níng kē lì	100
 哮喘貼敷散	xiào chuǎn tiē fū sàn	100
@@ -3778,9 +4000,11 @@ sort: by_weight
 消積順氣丸	xiāo jī shùn qì wán	100
 消積通經丸	xiāo jī tōng jīng wán	100
 消積正元散	xiāo jī zhèng yuán sàn	100
+小建中合劑	xiǎo jiàn zhōng hé jì	100
 小建中膠囊	xiǎo jiàn zhōng jiāo náng	100
 小建中顆粒	xiǎo jiàn zhōng kē lì	100
 消結安膠囊	xiāo jié ān jiāo náng	100
+消潔防疤液	xiāo jié fáng bā yè	100
 消結神應丸	xiāo jié shén yīng wán	100
 小金丸糊丸	xiǎo jīn wán hú wán	100
 消渴安膠囊	xiāo kě ān jiāo náng	100
@@ -3800,7 +4024,10 @@ sort: by_weight
 消痞阿魏丸	xiāo pǐ ā wèi wán	100
 消癖口服液	xiāo pǐ kǒu fú yè	100
 消疲靈顆粒	xiāo pí líng kē lì	100
+小青龍合劑	xiǎo qīng lóng hé jì	100
 消乳癖膠囊	xiāo rǔ pǐ jiāo náng	100
+消傷痛搽劑	xiāo shāng tòng chá jì	100
+消食保和液	xiāo shí bǎo hé yè	100
 硝石礬石散	xiāo shí fán shí sàn	100
 消石礬石散	xiāo shí fán shí sàn	100
 消食化痰丸	xiāo shí huà tán wán	100
@@ -3813,6 +4040,7 @@ sort: by_weight
 消食養胃片	xiāo shí yǎng wèi piàn	100
 消暑十全散	xiāo shǔ shí quán sàn	100
 消栓口服液	xiāo shuān kǒu fú yè	100
+消栓通沖劑	xiāo shuān tōng chōng jì	100
 消栓通顆粒	xiāo shuān tōng kē lì	100
 消栓通絡片	xiāo shuān tōng luò piàn	100
 消栓再造丸	xiāo shuān zài zào wán	100
@@ -3874,6 +4102,7 @@ sort: by_weight
 欣力隆膠囊	xīn lì lóng jiāo náng	100
 心靈丸水丸	xīn líng wán shuǐ wán	100
 辛龍桂枝膏	xīn lóng guì zhī gāo	100
+新麻滴鼻液	xīn má dī bí yè	100
 心脈通膠囊	xīn mài tōng jiāo náng	100
 心慢靈顆粒	xīn màn líng kē lì	100
 心腦健膠囊	xīn nǎo jiàn jiāo náng	100
@@ -3884,6 +4113,7 @@ sort: by_weight
 新清寧膠囊	xīn qīng níng jiāo náng	100
 新氫鬆軟膏	xīn qīng sōng ruǎn gāo	100
 心榮口服液	xīn róng kǒu fú yè	100
+新生化沖劑	xīn shēng huà chōng jì	100
 新生化顆粒	xīn shēng huà kē lì	100
 心舒寶膠囊	xīn shū bǎo jiāo náng	100
 心速寧膠囊	xīn sù níng jiāo náng	100
@@ -3896,6 +4126,8 @@ sort: by_weight
 心血管補片	xīn xuè guǎn bǔ piàn	100
 辛夷鼻炎丸	xīn yí bí yán wán	100
 心益好膠囊	xīn yì hǎo jiāo náng	100
+心臟麻痹液	xīn zàng má bì yè	100
+心臟停搏液	xīn zàng tíng bó yè	100
 型電熱管片	xíng diàn rè guǎn piàn	100
 醒酒寶膠囊	xǐng jiǔ bǎo jiāo náng	100
 醒腦安神片	xǐng nǎo ān shén piàn	100
@@ -3904,6 +4136,7 @@ sort: by_weight
 杏蘇二陳丸	xìng sū èr chén wán	100
 杏蘇口服液	xìng sū kǒu fú yè	100
 熊膽跌打膏	xióng dǎn diē dǎ gāo	100
+熊膽復明液	xióng dǎn fù míng yè	100
 熊膽開明片	xióng dǎn kāi míng piàn	100
 熊膽排石片	xióng dǎn pái shí piàn	100
 熊膽丸膠囊	xióng dǎn wán jiāo náng	100
@@ -3924,16 +4157,23 @@ sort: by_weight
 血復生膠囊	xuè fù shēng jiāo náng	100
 血府逐瘀片	xuè fǔ zhú yū piàn	100
 血府逐瘀丸	xuè fǔ zhú yū wán	100
+血漿代用液	xuè jiāng dài yòng yè	100
 血康口服液	xuè kāng kǒu fú yè	100
 血樂口服液	xuè lè kǒu fú yè	100
 血絡通膠囊	xuè luò tōng jiāo náng	100
 雪馬口服液	xuě mǎ kǒu fú yè	100
 血美安膠囊	xuè měi ān jiāo náng	100
 血尿安膠囊	xuè niào ān jiāo náng	100
+血尿靈合劑	xuè niào líng hé jì	100
 血情高鈣片	xuè qíng gāo gài piàn	100
+血球定標液	xuè qiú dìng biāo yè	100
+血球清洗液	xuè qiú qīng xǐ yè	100
+血球稀釋液	xuè qiú xī shì yè	100
+血球質控液	xuè qiú zhì kòng yè	100
 血塞通滴丸	xuè sāi tōng dī wán	100
 血騷普清散	xuè sāo pǔ qīng sàn	100
 雪山胃寶丸	xuě shān wèi bǎo wán	100
+雪上花搽劑	xuě shàng huā chá jì	100
 血生口服液	xuè shēng kǒu fú yè	100
 血速升顆粒	xuè sù shēng kē lì	100
 血壓平膠囊	xuè yā píng jiāo náng	100
@@ -3942,6 +4182,7 @@ sort: by_weight
 血脂靈膠囊	xuè zhī líng jiāo náng	100
 血脂平膠囊	xuè zhī píng jiāo náng	100
 血滯通膠囊	xuè zhì tōng jiāo náng	100
+熏洗灌腸液	xūn xǐ guàn cháng yè	100
 雅叫哈頓散	yǎ jiào hā dùn sàn	100
 牙刷和牙膏	yá shuā hé yá gāo	100
 牙痛安膠囊	yá tòng ān jiāo náng	100
@@ -3954,6 +4195,7 @@ sort: by_weight
 炎必消膠囊	yán bì xiāo jiāo náng	100
 炎得平膠囊	yán dé píng jiāo náng	100
 炎得平膠丸	yán dé píng jiāo wán	100
+岩果止咳液	yán guǒ zhǐ ké yè	100
 芫蒿護肝片	yán hāo hù gān piàn	100
 咽喉清喉片	yān hóu qīng hóu piàn	100
 咽喉消炎丸	yān hóu xiāo yán wán	100
@@ -3963,6 +4205,7 @@ sort: by_weight
 咽立爽滴丸	yàn lì shuǎng dī wán	100
 炎立消膠囊	yán lì xiāo jiāo náng	100
 炎熱清膠囊	yán rè qīng jiāo náng	100
+延生護寶液	yán shēng hù bǎo yè	100
 厭食康顆粒	yàn shí kāng kē lì	100
 咽舒口服液	yàn shū kǒu fú yè	100
 煙酸緩釋片	yān suān huǎn shì piàn	100
@@ -3971,6 +4214,7 @@ sort: by_weight
 煙酸注射液	yān suān zhù shè yè	100
 咽特佳含片	yàn tè jiā hán piàn	100
 炎痛喜康片	yán tòng xǐ kāng piàn	100
+眼用灌注液	yǎn yòng guàn zhù yè	100
 眼用製劑類	yǎn yòng zhì jì lèi	100
 延枳丹膠囊	yán zhǐ dān jiāo náng	100
 陽春口服液	yáng chūn kǒu fú yè	100
@@ -4027,7 +4271,9 @@ sort: by_weight
 益鼻噴霧劑	yì bí pēn wù jì	100
 宜鱉甲煎丸	yí biē jiǎ jiān wán	100
 一部大爛片	yí bù dà làn piàn	100
+益腸灌腸液	yì cháng guàn cháng yè	100
 胰膽舒顆粒	yí dǎn shū kē lì	100
+胰膽炎合劑	yí dǎn yán hé jì	100
 胰島生膠囊	yí dǎo shēng jiāo náng	100
 益多酯膠囊	yì duō zhǐ jiāo náng	100
 益肺清化膏	yì fèi qīng huà gāo	100
@@ -4039,8 +4285,10 @@ sort: by_weight
 益肝靈滴丸	yì gān líng dī wán	100
 乙肝靈膠囊	yǐ gān líng jiāo náng	100
 益肝靈膠囊	yì gān líng jiāo náng	100
+乙肝寧沖劑	yǐ gān níng chōng jì	100
 乙肝寧顆粒	yǐ gān níng kē lì	100
 益冠靈膠囊	yì guān líng jiāo náng	100
+伊紅染色液	yī hóng rǎn sè yè	100
 蟻黃口服液	yǐ huáng kǒu fú yè	100
 益金解毒片	yì jīn jiě dú piàn	100
 益精口服液	yì jīng kǒu fú yè	100
@@ -4052,6 +4300,7 @@ sort: by_weight
 蟻靈口服液	yǐ líng kǒu fú yè	100
 益脈康膠囊	yì mài kāng jiāo náng	100
 胰酶腸溶片	yí méi cháng róng piàn	100
+益母草沖劑	yì mǔ cǎo chōng jì	100
 益母草煎丸	yì mǔ cǎo jiān wán	100
 益母康顆粒	yì mǔ kāng kē lì	100
 益母口服液	yì mǔ kǒu fú yè	100
@@ -4092,12 +4341,15 @@ sort: by_weight
 依沙吖啶片	yī shā ā dìng piàn	100
 異山梨酯片	yì shān lí zhǐ piàn	100
 益腎安神膏	yì shèn ān shén gāo	100
+益腎補骨液	yì shèn bǔ gǔ yè	100
 益腎婦靈丸	yì shèn fù líng wán	100
 益腎固本丸	yì shèn gù běn wán	100
+蟻神護寶液	yǐ shén hù bǎo yè	100
 益腎回春丸	yì shèn huí chūn wán	100
 益腎健骨片	yì shèn jiàn gǔ piàn	100
 益腎蠲痹丸	yì shèn juān bì wán	100
 益腎康膠囊	yì shèn kāng jiāo náng	100
+益腎靈沖劑	yì shèn líng chōng jì	100
 益腎靈膠囊	yì shèn líng jiāo náng	100
 益腎靈顆粒	yì shèn líng kē lì	100
 益腎強身丸	yì shèn qiáng shēn wán	100
@@ -4136,8 +4388,6 @@ sort: by_weight
 薏苡附子散	yì yǐ fù zǐ sàn	100
 以飲服一丸	yǐ yǐn fú yì wán	100
 益陰腎氣丸	yì yīn shèn qì wán	100
-醫用電極片	yī yòng diàn jí piàn	100
-醫用橡皮膏	yī yòng xiàng pí gāo	100
 益貞女金片	yì zhēn nǚ jīn piàn	100
 益智康腦丸	yì zhì kāng nǎo wán	100
 益脂平膠囊	yì zhī píng jiāo náng	100
@@ -4153,6 +4403,8 @@ sort: by_weight
 銀翅解毒丸	yín chì jiě dú wán	100
 吲噠帕胺片	yǐn dā pà àn piàn	100
 吲達帕胺片	yǐn dá pà àn piàn	100
+陰道沖洗液	yīn dào chōng xǐ yè	100
+陰道分泌液	yīn dào fēn mì yè	100
 陰道泡騰片	yīn dào pào téng piàn	100
 吲哚布芬片	yǐn duǒ bù fēn piàn	100
 吲哚咯爾片	yǐn duǒ gē ěr piàn	100
@@ -4169,6 +4421,7 @@ sort: by_weight
 銀翹敗毒散	yín qiào bài dú sàn	100
 銀翹解毒片	yín qiào jiě dú piàn	100
 銀翹解毒丸	yín qiào jiě dú wán	100
+銀翹解毒液	yín qiào jiě dú yè	100
 銀翹口服液	yín qiào kǒu fú yè	100
 銀翹馬勃散	yín qiào mǎ bó sàn	100
 茵山蓮顆粒	yīn shān lián kē lì	100
@@ -4178,7 +4431,10 @@ sort: by_weight
 銀杏葉滴丸	yín xìng yè dī wán	100
 陰虛骨痛片	yīn xū gǔ tòng piàn	100
 陰虛胃痛片	yīn xū wèi tòng piàn	100
+陰炎淨洗液	yīn yán jìng xǐ yè	100
+陰癢康洗劑	yīn yǎng kāng xǐ jì	100
 引陽索顆粒	yǐn yáng suǒ kē lì	100
+陰癢熏洗液	yīn yǎng xūn xǐ yè	100
 音樂和影片	yīn yuè hé yǐng piàn	100
 銀珠化毒丸	yín zhū huà dú wán	100
 嬰兒保肺散	yīng ér bǎo fèi sàn	100
@@ -4187,12 +4443,14 @@ sort: by_weight
 嬰兒消食散	yīng ér xiāo shí sàn	100
 瑩肌如玉散	yíng jī rú yù sàn	100
 永龍感冒片	yǒng lóng gǎn mào piàn	100
+右苄替米特	yòu biàn tì mǐ tè	100
 優福寧膠囊	yōu fú níng jiāo náng	100
+油基壓裂液	yóu jī yā liè yè	100
 友來特顆粒	yǒu lái tè kē lì	100
 右美沙芬片	yòu měi shā fēn piàn	100
 郵票狀皮片	yóu piào zhuàng pí piàn	100
-遊戲王卡片	yóu xì wáng kǎ piàn	100
 有效成分片	yǒu xiào chéng fèn piàn	100
+幼瀉寧沖劑	yòu xiè níng chōng jì	100
 幼瀉寧顆粒	yòu xiè níng kē lì	100
 右旋布洛芬	yòu xuán bù luò fēn	100
 友誼雪花膏	yǒu yì xuě huā gāo	100
@@ -4221,11 +4479,13 @@ sort: by_weight
 魚石脂軟膏	yú shí zhī ruǎn gāo	100
 玉屑無憂散	yù xiè wú yōu sàn	100
 愈心痛膠囊	yù xīn tòng jiāo náng	100
+魚腥草合劑	yú xīng cǎo hé jì	100
 瘀血痹膠囊	yū xuè bì jiāo náng	100
 瘀血痹顆粒	yū xuè bì kē lì	100
 玉葉清火片	yù yè qīng huǒ piàn	100
 育陰降糖丸	yù yīn jiàng táng wán	100
 御製平安丸	yù zhì píng ān wán	100
+鳶都寒痹液	yuān dōu hán bì yè	100
 猿飛木葉丸	yuán fēi mù yè wán	100
 元和正胃片	yuán hé zhèng wèi piàn	100
 元胡止痛片	yuán hú zhǐ tòng piàn	100
@@ -4241,6 +4501,7 @@ sort: by_weight
 月泰貼臍片	yuè tài tiē qí piàn	100
 粵語莞寶片	yuè yǔ guǎn bǎo piàn	100
 月芝軟膠囊	yuè zhī ruǎn jiāo náng	100
+孕寶營養液	yùn bǎo yíng yǎng yè	100
 運動創傷膏	yùn dòng chuāng shāng gāo	100
 孕二烯酮片	yùn èr xī tóng piàn	100
 孕婦金花片	yùn fù jīn huā piàn	100
@@ -4261,8 +4522,10 @@ sort: by_weight
 再造生血片	zài zào shēng xuè piàn	100
 再障生血片	zài zhàng shēng xuè piàn	100
 贊化鹿茸丸	zàn huà lù róng wán	100
+藏青果沖劑	zàng qīng guǒ chōng jì	100
 藏青果喉片	zàng qīng guǒ hóu piàn	100
 棗參口服液	zǎo cān kǒu fú yè	100
+棗仁安神液	zǎo rén ān shén yè	100
 澤菲注射液	zé fēi zhù shè yè	100
 澤桂癃爽片	zé guì lóng shuǎng piàn	100
 增力再生丸	zēng lì zài shēng wán	100
@@ -4286,6 +4549,7 @@ sort: by_weight
 珍石燒傷膏	zhēn shí shāo shāng gāo	100
 振源口服液	zhèn yuán kǒu fú yè	100
 珍元清咽散	zhēn yuán qīng yàn sàn	100
+珍珠明目液	zhēn zhū míng mù yè	100
 珍珠牛黃散	zhēn zhū niú huáng sàn	100
 珍珠胃安丸	zhēn zhū wèi ān wán	100
 珍珠消積丸	zhēn zhū xiāo jī wán	100
@@ -4300,14 +4564,17 @@ sort: by_weight
 知柏地黃丸	zhī bǎi dì huáng wán	100
 至寶三鞭丸	zhì bǎo sān biān wán	100
 志倉千代丸	zhì cāng qiān dài wán	100
+直腸透析液	zhí cháng tòu xī yè	100
 痔瘡軟膏一	zhì chuāng ruǎn gāo yī	100
 痔瘡止血丸	zhì chuāng zhǐ xuè wán	100
+稚兒靈沖劑	zhì ér líng chōng jì	100
 稚兒靈顆粒	zhì ér líng kē lì	100
 芷風口服液	zhǐ fēng kǒu fú yè	100
 治感佳膠囊	zhì gǎn jiā jiāo náng	100
 治感靈顆粒	zhì gǎn líng kē lì	100
 止骨增生丸	zhǐ gǔ zēng shēng wán	100
 止紅腸闢丸	zhǐ hóng cháng pì wán	100
+支架包埋液	zhī jià bāo mái yè	100
 止咳喘顆粒	zhǐ ké chuǎn kē lì	100
 止咳定喘片	zhǐ ké dìng chuǎn piàn	100
 止咳定喘丸	zhǐ ké dìng chuǎn wán	100
@@ -4329,6 +4596,7 @@ sort: by_weight
 治偏痛顆粒	zhì piān tòng kē lì	100
 支氣管炎片	zhī qì guǎn yán piàn	100
 脂芪口服液	zhī qí kǒu fú yè	100
+梔芩清熱液	zhī qín qīng rè yè	100
 治疝茴香丸	zhì shàn huí xiāng wán	100
 治傷跌打丸	zhì shāng diē dǎ wán	100
 治傷消瘀丸	zhì shāng xiāo yū wán	100
@@ -4337,6 +4605,7 @@ sort: by_weight
 枳實理中丸	zhǐ shí lǐ zhōng wán	100
 治溼平胃丸	zhì shī píng wèi wán	100
 枳實消痞丸	zhǐ shí xiāo pǐ wán	100
+痔舒適洗液	zhì shū shì xǐ yè	100
 止嗽定喘片	zhǐ sòu dìng chuǎn piàn	100
 止嗽定喘丸	zhǐ sòu dìng chuǎn wán	100
 止嗽化痰丸	zhǐ sòu huà tán wán	100
@@ -4346,6 +4615,7 @@ sort: by_weight
 止嗽掃痰丸	zhǐ sòu sǎo tán wán	100
 痔速寧膠囊	zhì sù níng jiāo náng	100
 痔特佳膠囊	zhì tè jiā jiāo náng	100
+痔痛安搽劑	zhì tòng ān chá jì	100
 止痛風濕丸	zhǐ tòng fēng shī wán	100
 止痛化膠囊	zhǐ tòng huà jiāo náng	100
 止痛化癥片	zhǐ tòng huà zhèng piàn	100
@@ -4378,6 +4648,7 @@ sort: by_weight
 中斷的影片	zhōng duàn de yǐng piàn	100
 中風回春片	zhòng fēng huí chūn piàn	100
 中風回春丸	zhòng fēng huí chūn wán	100
+中匯川黃液	zhōng huì chuān huáng yè	100
 中焦寧顆粒	zhōng jiāo níng kē lì	100
 腫節風浸膏	zhǒng jié fēng jìn gāo	100
 仲景胃靈片	zhòng jǐng wèi líng piàn	100
@@ -4385,9 +4656,8 @@ sort: by_weight
 中滿分消丸	zhōng mǎn fēn xiāo wán	100
 腫痛安膠囊	zhǒng tòng ān jiāo náng	100
 腫痛氣霧劑	zhǒng tòng qì wù jì	100
+中藥注射劑	zhōng yào zhù shè jì	100
 中藥注射液	zhōng yào zhù shè yè	100
-眾議院解散	zhòng yì yuàn jiě sàn	100
-忠州大黃蜂	zhōng zhōu dà huáng fēng	100
 種子三達丸	zhǒng zi sān dá wán	100
 周氏回生丸	zhōu shì huí shēng wán	100
 珠貝定喘丸	zhū bèi dìng chuǎn wán	100
@@ -4413,6 +4683,7 @@ sort: by_weight
 壯腰健腎片	zhuàng yāo jiàn shèn piàn	100
 壯腰健腎丸	zhuàng yāo jiàn shèn wán	100
 壯腰健身丸	zhuàng yāo jiàn shēn wán	100
+壯腰消痛液	zhuàng yāo xiāo tòng yè	100
 追風活血膏	zhuī fēng huó xuè gāo	100
 追風透骨片	zhuī fēng tòu gǔ piàn	100
 追風透骨丸	zhuī fēng tòu gǔ wán	100
@@ -4432,6 +4703,7 @@ sort: by_weight
 紫花杜鵑片	zǐ huā dù juān piàn	100
 紫花燒傷膏	zǐ huā shāo shāng gāo	100
 紫菁玉蓉膏	zǐ jīng yù róng gāo	100
+滋腎健腦液	zī shèn jiàn nǎo yè	100
 滋腎寧神丸	zī shèn níng shén wán	100
 紫腎通關丸	zǐ shèn tōng guān wán	100
 滋腎育胎丸	zī shèn yù tāi wán	100
@@ -4448,6 +4720,7 @@ sort: by_weight
 紫芝多糖漿	zǐ zhī duō táng jiāng	100
 紫芝多糖片	zǐ zhī duō táng piàn	100
 子仲益腎丸	zǐ zhòng yì shèn wán	100
+紫珠止血液	zǐ zhū zhǐ xuè yè	100
 祖卡木顆粒	zǔ kǎ mù kē lì	100
 足利茶茶丸	zú lì chá chá wán	100
 鑽山風糖漿	zuān shān fēng táng jiāng	100
@@ -4467,8 +4740,10 @@ sort: by_weight
 阿卡波糖膠囊	ā kǎ bō táng jiāo náng	100
 阿拉坦五味丸	ā lā tǎn wǔ wèi wán	100
 阿侖膦酸鈉片	ā lún lìn suān nà piàn	100
+阿米卡星洗劑	ā mǐ kǎ xīng xǐ jì	100
 阿莫西林膠囊	ā mò xī lín jiāo náng	100
 阿莫西林顆粒	ā mò xī lín kē lì	100
+阿娜爾婦潔液	ā nà ěr fù jié yè	100
 阿那日八味散	ā nà rì bā wèi sàn	100
 阿那日五味散	ā nà rì wǔ wèi sàn	100
 阿尼西坦膠囊	ā ní xī tǎn jiāo náng	100
@@ -4479,6 +4754,7 @@ sort: by_weight
 阿奇黴素糖漿	ā qí méi sù táng jiāng	100
 嗄日迪五味丸	á rì dí wǔ wèi wán	100
 阿司可咖膠囊	ā sī kě kā jiāo náng	100
+阿托品滴眼液	ā tuō pǐn dī yǎn yè	100
 阿托品注射液	ā tuō pǐn zhù shè yè	100
 阿魏酸哌嗪片	ā wèi suān pài qín piàn	100
 阿昔洛韋膠囊	ā xī luò wéi jiāo náng	100
@@ -4492,12 +4768,15 @@ sort: by_weight
 愛維心口服液	ài wéi xīn kǒu fú yè	100
 艾葉油軟膠囊	ài yè yóu ruǎn jiāo náng	100
 安吖啶注射液	ān ā dìng zhù shè yè	100
+氨苄青黴素鈉	ān biàn qīng méi sù nà	100
 氨苄西林膠囊	ān biàn xī lín jiāo náng	100
 氨苄西林顆粒	ān biàn xī lín kē lì	100
 氨茶緩控釋片	ān chá huǎn kòng shì piàn	100
 氨茶鹼緩釋片	ān chá jiǎn huǎn shì piàn	100
 氨茶鹼注射液	ān chá jiǎn zhù shè yè	100
+安達芬滴眼液	ān dá fēn dī yǎn yè	100
 安達美注射液	ān dá měi zhù shè yè	100
+氨碘肽滴眼液	ān diǎn tài dī yǎn yè	100
 氨碘肽注射液	ān diǎn tài zhù shè yè	100
 胺碘酮注射液	àn diǎn tóng zhù shè yè	100
 安爾克注射液	ān ěr kè zhù shè yè	100
@@ -4515,6 +4794,7 @@ sort: by_weight
 安宮黃體酮片	ān gōng huáng tǐ tóng piàn	100
 氨基己磺酸片	ān jī jǐ huáng suān piàn	100
 氨基葡萄糖片	ān jī pú táo táng piàn	100
+氨基酸口服液	ān jī suān kǒu fú yè	100
 氨基酸注射液	ān jī suān zhù shè yè	100
 氨甲環酸膠囊	ān jiǎ huán suān jiāo náng	100
 氨鉀環酸膠囊	ān jiǎ huán suān jiāo náng	100
@@ -4531,6 +4811,8 @@ sort: by_weight
 氨氯地平膠囊	ān lǜ dì píng jiāo náng	100
 安眠補腦糖漿	ān mián bǔ nǎo táng jiāng	100
 安鈉咖注射液	ān nà kā zhù shè yè	100
+安乃近滴鼻液	ān nǎi jìn dī bí yè	100
+安乃近灌腸液	ān nǎi jìn guàn cháng yè	100
 安乃近注射液	ān nǎi jìn zhù shè yè	100
 安腦牛黃膠囊	ān nǎo niú huáng jiāo náng	100
 安腦丸小蜜丸	ān nǎo wán xiǎo mì wán	100
@@ -4553,6 +4835,8 @@ sort: by_weight
 奧沙普嗪膠囊	ào shā pǔ qín jiāo náng	100
 奧司他韋膠囊	ào sī tā wéi jiāo náng	100
 奧硝唑分散片	ào xiāo zuò fēn sǎn piàn	100
+奧硝唑葡萄糖	ào xiāo zuò pú táo táng	100
+奧硝唑陰道栓	ào xiāo zuò yīn dào shuān	100
 奧硝唑注射液	ào xiāo zuò zhù shè yè	100
 巴恩二氏顆粒	bā ēn èr shì kē lì	100
 巴戟振陽膠囊	bā jǐ zhèn yáng jiāo náng	100
@@ -4561,6 +4845,7 @@ sort: by_weight
 巴柳氮鈉顆粒	bā liǔ dàn nà kē lì	100
 巴曲酶注射液	bā qǔ méi zhù shè yè	100
 巴桑母酥油丸	bā sāng mǔ sū yóu wán	100
+巴斯淨消毒液	bā sī jìng xiāo dú yè	100
 巴特日七味丸	bā tè rì qī wèi wán	100
 八味沉香膠囊	bā wèi chén xiāng jiāo náng	100
 八味金礞石散	bā wèi jīn méng shí sàn	100
@@ -4585,6 +4870,7 @@ sort: by_weight
 白毛夏枯草片	bái máo xià kū cǎo piàn	100
 百梅止咳顆粒	bǎi méi zhǐ ké kē lì	100
 百梅止咳糖漿	bǎi méi zhǐ ké táng jiāng	100
+白內停滴眼液	bái nèi tíng dī yǎn yè	100
 白葡奈氏菌片	bái pú nài shì jūn piàn	100
 白葡萄球菌片	bái pú táo qiú jūn piàn	100
 白絨止咳糖漿	bái róng zhǐ ké táng jiāng	100
@@ -4593,7 +4879,9 @@ sort: by_weight
 白頭翁止痢片	bái tóu wēng zhǐ lì piàn	100
 白消安注射液	bái xiāo ān zhù shè yè	100
 百癬夏塔熱片	bǎi xuǎn xià tǎ rè piàn	100
+柏梔祛濕洗液	bǎi zhī qū shī xǐ yè	100
 柏子養心膠囊	bǎi zǐ yǎng xīn jiāo náng	100
+半合成青黴素	bàn hé chéng qīng méi sù	100
 板蘭大青顆粒	bǎn lán dà qīng kē lì	100
 板藍大青顆粒	bǎn lán dà qīng kē lì	100
 板藍根咀嚼片	bǎn lán gēn jǔ jué piàn	100
@@ -4620,13 +4908,16 @@ sort: by_weight
 被動靶向製劑	bèi dòng bǎ xiàng zhì jì	100
 北豆根咀嚼片	běi dòu gēn jǔ jué piàn	100
 貝復濟噴霧劑	bèi fù jì pēn wù jì	100
+貝復舒滴眼液	bèi fù shū dī yǎn yè	100
 貝桔止咳糖漿	bèi jú zhǐ ké táng jiāng	100
 貝美格注射液	bèi měi gé zhù shè yè	100
 貝母花流浸膏	bèi mǔ huā liú jìn gāo	100
+倍諾喜滴眼液	bèi nuò xǐ dī yǎn yè	100
 貝諾酯分散片	bèi nuò zhǐ fēn sǎn piàn	100
 貝諾酯咀嚼片	bèi nuò zhǐ jǔ jué piàn	100
 貝諾酯維顆粒	bèi nuò zhǐ wéi kē lì	100
 北芪精口服液	běi qí jīng kǒu fú yè	100
+倍他米松搽劑	bèi tā mǐ sōng chá jì	100
 倍他米松乳膏	bèi tā mǐ sōng rǔ gāo	100
 倍他米松軟膏	bèi tā mǐ sōng ruǎn gāo	100
 苯巴比妥鈉片	běn bā bǐ tuǒ nà piàn	100
@@ -4640,6 +4931,7 @@ sort: by_weight
 苯佐卡因糊劑	běn zuǒ kǎ yīn hú jì	100
 苯唑西林鈉片	běn zuò xī lín nà piàn	100
 鼻竇炎口服液	bí dòu yán kǒu fú yè	100
+吡呋氨卡西林	bǐ fū ān kǎ xī lín	100
 吡格列酮膠囊	bǐ gé liè tóng jiāo náng	100
 比卡魯胺膠囊	bǐ kǎ lǔ àn jiāo náng	100
 吡喹酮緩釋片	bǐ kuí tóng huǎn shì piàn	100
@@ -4647,6 +4939,7 @@ sort: by_weight
 吡拉西坦顆粒	bǐ lā xī tǎn kē lì	100
 蓽鈴胃痛顆粒	bì líng wèi tòng kē lì	100
 吡硫醇注射液	bǐ liú chún zhù shè yè	100
+吡羅昔康搽劑	bǐ luó xī kāng chá jì	100
 吡羅昔康膠囊	bǐ luó xī kāng jiāo náng	100
 吡羅昔康軟膏	bǐ luó xī kāng ruǎn gāo	100
 吡羅昔康貼片	bǐ luó xī kāng tiē piàn	100
@@ -4656,12 +4949,15 @@ sort: by_weight
 吡哌酸鋅軟膏	bǐ pài suān xīn ruǎn gāo	100
 鼻竅通口服液	bí qiào tōng kǒu fú yè	100
 吡嗪酰胺膠囊	bǐ qín xiān àn jiāo náng	100
+鼻塞通滴鼻液	bí sāi tōng dī bí yè	100
 鼻咽解毒膠囊	bí yān jiě dú jiāo náng	100
 鼻炎康糖衣片	bí yán kāng táng yī piàn	100
 鼻炎靈丸水丸	bí yán líng wán shuǐ wán	100
 鼻咽清毒顆粒	bí yān qīng dú kē lì	100
 鼻淵舒口服液	bí yuān shū kǒu fú yè	100
 鼻淵通竅顆粒	bí yuān tōng qiào kē lì	100
+苄基抗羥色胺	biàn jī kàng qiǎng sè àn	100
+苄星青黴素鈉	biàn xīng qīng méi sù nà	100
 編織填料墊片	biān zhī tián liào diàn piàn	100
 表實感冒顆粒	biǎo shí gǎn mào kē lì	100
 表虛感冒顆粒	biǎo xū gǎn mào kē lì	100
@@ -4684,6 +4980,7 @@ sort: by_weight
 玻璃微纖維片	bō li wēi xiān wéi piàn	100
 玻璃纖維濾片	bō lí xiān wéi lǜ piàn	100
 波紋金屬墊片	bō wén jīn shǔ diàn piàn	100
+撥雲錠滴眼液	bō yún dìng dī yǎn yè	100
 補肺活血膠囊	bǔ fèi huó xuè jiāo náng	100
 補骨續斷膠囊	bǔ gǔ xù duàn jiāo náng	100
 補骨脂注射液	bǔ gǔ zhī zhù shè yè	100
@@ -4719,15 +5016,19 @@ sort: by_weight
 補虛通瘀顆粒	bǔ xū tōng yū kē lì	100
 補血生乳顆粒	bǔ xuè shēng rǔ kē lì	100
 補血益母顆粒	bǔ xuè yì mǔ kē lì	100
+補中益氣合劑	bǔ zhōng yì qì hé jì	100
 補中益氣顆粒	bǔ zhōng yì qì kē lì	100
 補中益氣水丸	bǔ zhōng yì qì shuǐ wán	100
+參柏舒陰洗液	cān bǎi shū yīn xǐ yè	100
 參貝北瓜顆粒	cān bèi běi guā kē lì	100
 參貝止咳顆粒	cān bèi zhǐ ké kē lì	100
+參伯舒陰洗液	cān bó shū yīn xǐ yè	100
 蠶參健脾顆粒	cán cān jiàn pí kē lì	100
 參蟾消解膠囊	cān chán xiāo jiě jiāo náng	100
 參丹散結膠囊	cān dān sàn jié jiāo náng	100
 參地益陰膠囊	cān dì yì yīn jiāo náng	100
 參附脫毒膠囊	cān fù tuō dú jiāo náng	100
+參歸潤燥搽劑	cān guī rùn zào chá jì	100
 參蛤平喘膠囊	cān há píng chuǎn jiāo náng	100
 參黃消渴膠囊	cān huáng xiāo kě jiāo náng	100
 參黃養陰膠囊	cān huáng yǎng yīn jiāo náng	100
@@ -4742,6 +5043,7 @@ sort: by_weight
 參鹿扶正膠囊	cān lù fú zhèng jiāo náng	100
 參鹿健肺膠囊	cān lù jiàn fèi jiāo náng	100
 參麥止嗽糖漿	cān mài zhǐ sòu táng jiāng	100
+參梅養胃沖劑	cān méi yǎng wèi chōng jì	100
 參梅養胃顆粒	cān méi yǎng wèi kē lì	100
 參南星口服液	cān nán xīng kǒu fú yè	100
 參七腦康膠囊	cān qī nǎo kāng jiāo náng	100
@@ -4789,6 +5091,7 @@ sort: by_weight
 腸溶控釋膠囊	cháng róng kòng shì jiāo náng	100
 腸溶空心膠囊	cháng róng kōng xīn jiāo náng	100
 腸舒止瀉膠囊	cháng shū zhǐ xiè jiāo náng	100
+腸炎康灌腸液	cháng yán kāng guàn cháng yè	100
 超低色散鏡片	chāo dī sè sàn jìng piàn	100
 超強酸催化劑	chāo qiáng suān cuī huà jì	100
 車前番瀉顆粒	chē qián fān xiè kē lì	100
@@ -4797,7 +5100,6 @@ sort: by_weight
 陳香露白露片	chén xiāng lòu bái lù piàn	100
 沉香十七味丸	chén xiāng shí qī wèi wán	100
 赤丹退黃顆粒	chì dān tuì huáng kē lì	100
-吃了顆定心丸	chī le kē dìng xīn wán	100
 喫六味地黃丸	chī liù wèi dì huáng wán	100
 魑魅魍魎退散	chī mèi wǎng liǎng tuì sàn	100
 豉翹清熱顆粒	chǐ qiào qīng rè kē lì	100
@@ -4806,9 +5108,12 @@ sort: by_weight
 蟲草頭孢菌粉	chóng cǎo tóu bāo jūn fěn	100
 蟲草五味顆粒	chóng cǎo wǔ wèi kē lì	100
 蟲草洋參膠囊	chóng cǎo yáng shēn jiāo náng	100
+稠化水壓裂液	chóu huà shuǐ yā liè yè	120
 除濕止癢軟膏	chú shī zhǐ yǎng ruǎn gāo	100
+除濕止癢洗液	chú shī zhǐ yǎng xǐ yè	100
 出血熱預防片	chū xiě rè yù fáng piàn	100
 除障則海甫片	chú zhàng zé hǎi fǔ piàn	100
+川百止癢洗劑	chuān bǎi zhǐ yǎng xǐ jì	100
 川貝雪梨糖漿	chuān bèi xuě lí táng jiāng	100
 川貝銀耳糖漿	chuān bèi yín ěr táng jiāng	100
 川參通注射液	chuān cān tōng zhù shè yè	100
@@ -4828,10 +5133,12 @@ sort: by_weight
 創傷止痛乳膏	chuāng shāng zhǐ tòng rǔ gāo	100
 垂體後葉粉散	chuí tǐ hòu yè fěn sàn	100
 雌二醇注射液	cí èr chún zhù shè yè	100
+刺五加腦靈液	cì wǔ jiā nǎo líng yè	100
 刺五加注射液	cì wǔ jiā zhù shè yè	100
 磁性控釋製劑	cí xìng kòng shì zhì jì	100
 磁性藥物製劑	cí xìng yào wù zhì jì	100
 磁致旋光色散	cí zhì xuán guāng sè sàn	100
+蓯蓉通便口液	cōng róng tōng biàn kǒu yè	100
 蓯蓉益腎顆粒	cōng róng yì shèn kē lì	100
 蓯蓉總苷膠囊	cōng róng zǒng gān jiāo náng	100
 醋氨己酸鋅片	cù ān jǐ suān xīn piàn	100
@@ -4904,8 +5211,11 @@ sort: by_weight
 燈盞生脈膠囊	dēng zhǎn shēng mài jiāo náng	100
 燈盞細辛膠囊	dēng zhǎn xì xīn jiāo náng	100
 燈盞細辛浸膏	dēng zhǎn xì xīn jìn gāo	100
+狄奧寧滴眼液	dí ào níng dī yǎn yè	100
 地奧心血康片	dì ào xīn xuè kāng piàn	100
+地巴唑滴眼液	dì bā zuò dī yǎn yè	100
 地丁三味湯散	dì dīng sān wèi tāng sàn	100
+低毒性壓裂液	dī dú xìng yā liè yè	100
 地高辛口服液	dì gāo xīn kǒu fú yè	100
 地高辛注射液	dì gāo xīn zhù shè yè	100
 地骨降糖膠囊	dì gǔ jiàng táng jiāo náng	100
@@ -4915,6 +5225,7 @@ sort: by_weight
 地麥消渴膠囊	dì mài xiāo kě jiāo náng	100
 地塞米松乳膏	dì sāi mǐ sōng rǔ gāo	100
 地塞米松軟膏	dì sāi mǐ sōng ruǎn gāo	100
+地塞米松眼液	dì sāi mǐ sōng yǎn yè	100
 地芍消渴顆粒	dì sháo xiāo kě kē lì	100
 地西泮注射液	dì xī pàn zhù shè yè	100
 地仲強骨膠囊	dì zhòng qiáng gǔ jiāo náng	100
@@ -4929,9 +5240,11 @@ sort: by_weight
 碘化鈉口服液	diǎn huà nà kǒu fú yè	100
 碘化油咀嚼片	diǎn huà yóu jǔ jué piàn	100
 碘化油注射液	diǎn huà yóu zhù shè yè	100
+電解質平衡液	diàn jiě zhì píng héng yè	100
 碘帕醇注射液	diǎn pà chún zhù shè yè	100
 顛茄磺苄啶片	diān qié huáng biàn dìng piàn	100
 碘曲倫注射液	diǎn qǔ lún zhù shè yè	100
+碘酸鉀口服液	diǎn suān jiǎ kǒu fú yè	100
 靛胭脂注射液	diàn yān zhī zhù shè yè	100
 貂胰防裂軟膏	diāo yí fáng liè ruǎn gāo	100
 貂油治裂軟膏	diāo yóu zhì liè ruǎn gāo	100
@@ -4945,6 +5258,7 @@ sort: by_weight
 丁苯酞軟膠囊	dīng běn tài ruǎn jiāo náng	100
 定風止痛膠囊	dìng fēng zhǐ tòng jiāo náng	100
 丁公藤注射液	dīng gōng téng zhù shè yè	100
+丁卡因滴眼液	dīng kǎ yīn dī yǎn yè	100
 丁卡因注射液	dīng kǎ yīn zhù shè yè	100
 定坤丹大蜜丸	dìng kūn dān dà mì wán	100
 定坤丹水蜜丸	dìng kūn dān shuǐ mì wán	100
@@ -4957,9 +5271,13 @@ sort: by_weight
 東莨菪鹼貼片	dōng làng dàng jiǎn tiē piàn	100
 冬凌草糖衣片	dōng líng cǎo táng yī piàn	100
 東梅止咳顆粒	dōng méi zhǐ ké kē lì	100
+冬眠合劑二號	dōng mián hé jì èr hào	100
+冬眠合劑三號	dōng mián hé jì sān hào	100
 冬茸補腎膠囊	dōng róng bǔ shèn jiāo náng	100
 冬菀止咳顆粒	dōng wǎn zhǐ ké kē lì	100
+獨活寄生合劑	dú huó jì shēng hé jì	100
 獨活寄生顆粒	dú huó jì shēng kē lì	100
+獨活止痛搽劑	dú huó zhǐ tòng chá jì	100
 毒性中藥飲片	dú xìng zhōng yào yǐn piàn	100
 獨一味分散片	dú yí wèi fēn sǎn piàn	100
 獨一味咀嚼片	dú yí wèi jǔ jué piàn	100
@@ -4984,7 +5302,9 @@ sort: by_weight
 多種維生素片	duō zhǒng wéi shēng sù piàn	100
 厄貝沙坦膠囊	è bèi shā tǎn jiāo náng	100
 厄多司坦膠囊	è duō sī tǎn jiāo náng	100
+阿膠當歸合劑	ē jiāo dāng guī hé jì	100
 阿膠鈣口服液	ē jiāo gài kǒu fú yè	100
+阿膠鈣營養液	ē jiāo gài yíng yǎng yè	100
 鵝去氧膽酸片	é qù yǎng dǎn suān piàn	100
 莪術油注射液	é zhú yóu zhù shè yè	100
 恩丹西酮膠囊	ēn dān xī tóng jiāo náng	100
@@ -5004,6 +5324,7 @@ sort: by_weight
 二十味金湯散	èr shí wèi jīn tāng sàn	100
 兒童感熱清丸	ér tóng gǎn rè qīng wán	100
 二維亞鐵顆粒	èr wéi yà tiě kē lì	100
+法可林滴眼液	fǎ kě lín dī yǎn yè	100
 法莫替丁膠囊	fǎ mò tì dīng jiāo náng	100
 法莫替丁顆粒	fǎ mò tì dīng kē lì	100
 伐昔洛韋膠囊	fá xī luò wéi jiāo náng	100
@@ -5011,8 +5332,11 @@ sort: by_weight
 礬藤痔注射液	fán téng zhì zhù shè yè	100
 泛昔洛韋膠囊	fàn xī luò wéi jiāo náng	100
 泛昔洛韋顆粒	fàn xī luò wéi kē lì	100
+泛影葡胺膠液	fàn yǐng pú àn jiāo yè	100
 防參止癢顆粒	fáng cān zhǐ yǎng kē lì	100
 防風通聖顆粒	fáng fēng tōng shèng kē lì	100
+防己茯苓湯方	fáng jǐ fú líng tāng fāng	100
+防脫生髮香液	fáng tuō shēng fà xiāng yè	100
 非等向性擴散	fēi děng xiàng xìng kuò sàn	100
 肥兒疳積顆粒	féi ér gān jī kē lì	100
 肺力咳口服液	fèi lì ké kǒu fú yè	100
@@ -5031,6 +5355,7 @@ sort: by_weight
 酚氨咖敏顆粒	fēn ān kā mǐn kē lì	100
 酚苄明注射液	fēn biàn míng zhù shè yè	100
 粉塵蟎注射液	fěn chén mǎn zhù shè yè	100
+酚甘油滴耳液	fēn gān yóu dī ěr yè	100
 酚黃那敏顆粒	fēn huáng nà mǐn kē lì	100
 酚磺酞注射液	fēn huáng tài zhù shè yè	100
 酚咖麻敏膠囊	fēn kā má mǐn jiāo náng	100
@@ -5039,6 +5364,7 @@ sort: by_weight
 酚麻美軟膠囊	fēn má měi ruǎn jiāo náng	100
 奮乃靜注射液	fèn nǎi jìng zhù shè yè	100
 芬太尼注射液	fēn tài ní zhù shè yè	100
+風寒感冒沖劑	fēng hán gǎn mào chōng jì	100
 風寒雙離拐片	fēng hán shuāng lí guǎi piàn	100
 楓蓼腸胃康片	fēng liǎo cháng wèi kāng piàn	100
 風熱清口服液	fēng rè qīng kǒu fú yè	100
@@ -5240,7 +5566,6 @@ sort: by_weight
 複方腦安泰片	fù fāng nǎo ān tài piàn	100
 複方牛黃清胃	fù fāng niú huáng qīng wèi	100
 複方胚肝鐵銨	fù fāng pēi gān tiě ǎn	100
-複方硼砂溶液	fù fāng péng shā róng yè	100
 複方硼砂漱口	fù fāng péng shā shù kǒu	100
 複方枇杷葉膏	fù fāng pí pá yè gāo	100
 複方蒲岑膠囊	fù fāng pú cén jiāo náng	100
@@ -5378,12 +5703,14 @@ sort: by_weight
 氟桂利嗪膠囊	fú guì lì qín jiāo náng	100
 複合維生素片	fù hé wéi shēng sù piàn	100
 婦潔康噴霧劑	fù jié kāng pēn wù jì	100
+婦潔消毒洗液	fù jié xiāo dú xǐ yè	100
 婦康寶口服液	fù kāng bǎo kǒu fú yè	100
 婦康丸水蜜丸	fù kāng wán shuǐ mì wán	100
 氟康唑分散片	fú kāng zuò fēn sǎn piàn	100
 氟康唑氣霧劑	fú kāng zuò qì wù jì	100
 氟康唑注射液	fú kāng zuò zhù shè yè	100
 婦科千金膠囊	fù kē qiān jīn jiāo náng	100
+婦科千金洗液	fù kē qiān jīn xǐ yè	100
 婦科十味膠囊	fù kē shí wèi jiāo náng	100
 婦科養榮膠囊	fù kē yǎng róng jiāo náng	100
 婦科止帶膠囊	fù kē zhǐ dài jiāo náng	100
@@ -5393,6 +5720,8 @@ sort: by_weight
 氟氯西林膠囊	fú lǜ xī lín jiāo náng	100
 富馬酸亞鐵片	fù mǎ suān yà tiě piàn	100
 呋喃米注射液	fū nán mǐ zhù shè yè	100
+呋脲苄西林鉀	fū niào biàn xī lín jiǎ	100
+呋脲苄西林鈉	fū niào biàn xī lín nà	100
 氟尿嘧啶乳劑	fú niào mì dìng rǔ jì	100
 氟尿嘧啶軟膏	fú niào mì dìng ruǎn gāo	100
 氟哌啶注射液	fú pài dìng zhù shè yè	100
@@ -5400,6 +5729,7 @@ sort: by_weight
 芙樸感冒膠囊	fú pǔ gǎn mào jiāo náng	100
 芙樸感冒顆粒	fú pǔ gǎn mào kē lì	100
 複芪止汗顆粒	fù qí zhǐ hàn kē lì	100
+膚芪止癢洗劑	fū qí zhǐ yǎng xǐ jì	100
 芙蓉抗流感片	fú róng kàng liú gǎn piàn	100
 呋噻米注射液	fū sāi mǐ zhù shè yè	100
 呋塞米注射液	fū sāi mǐ zhù shè yè	100
@@ -5421,6 +5751,7 @@ sort: by_weight
 扶正化瘀膠囊	fú zhèng huà yū jiāo náng	100
 扶正解毒膠囊	fú zhèng jiě dú jiāo náng	100
 扶正蠲痹膠囊	fú zhèng juān bì jiāo náng	100
+扶正散結合劑	fú zhèng sàn jié hé jì	100
 咖喱味的牙膏	gā lí wèi de yá gāo	100
 嘎日迪五味丸	gā rì dí wǔ wèi wán	100
 釓雙胺注射液	gá shuāng àn zhù shè yè	100
@@ -5443,10 +5774,14 @@ sort: by_weight
 甘露消渴膠囊	gān lù xiāo kě jiāo náng	100
 甘氯林氣霧劑	gān lǜ lín qì wù jì	100
 感冒解毒顆粒	gǎn mào jiě dú kē lì	100
+感冒咳嗽沖劑	gǎn mào ké sòu chōng jì	100
 感冒清解顆粒	gǎn mào qīng jiě kē lì	100
+感冒清熱沖劑	gǎn mào qīng rè chōng jì	100
 感冒疏風顆粒	gǎn mào shū fēng kē lì	100
+感冒退熱沖劑	gǎn mào tuì rè chōng jì	100
 感冒欣噴霧劑	gǎn mào xīn pēn wù jì	100
 感冒炎咳靈片	gǎn mào yán ké líng piàn	100
+感冒止咳沖劑	gǎn mào zhǐ ké chōng jì	100
 甘珀酸鈉膠囊	gān pò suān nà jiāo náng	100
 甘芪和胃顆粒	gān qí hé wèi kē lì	100
 干擾素注射液	gān rǎo sù zhù shè yè	100
@@ -5467,12 +5802,14 @@ sort: by_weight
 葛根芩連膠囊	gé gēn qín lián jiāo náng	100
 葛根芩連顆粒	gé gēn qín lián kē lì	100
 葛根芩連微丸	gé gēn qín lián wēi wán	100
+葛根素滴眼液	gé gēn sù dī yǎn yè	100
 葛根素注射液	gé gēn sù zhù shè yè	100
 葛根湯口服液	gé gēn tāng kǒu fú yè	100
 蛤蚧補腎膠囊	gé jiè bǔ shèn jiāo náng	100
 蛤蚧大補膠囊	gé jiè dà bǔ jiāo náng	100
 蛤蚧定喘膠囊	gé jiè dìng chuǎn jiāo náng	100
 格拉司瓊膠囊	gé lā sī qióng jiāo náng	100
+革蘭氏染色液	gé lán shì rǎn sè yè	100
 格列本脲膠囊	gé liè běn niào jiāo náng	100
 格列吡嗪膠囊	gé liè bǐ qín jiāo náng	100
 格列喹酮膠囊	gé liè kuí tóng jiāo náng	100
@@ -5483,6 +5820,7 @@ sort: by_weight
 葛山降脂顆粒	gé shān jiàng zhī kē lì	100
 隔山消積顆粒	gé shān xiāo jī kē lì	100
 鉻酸鈉注射液	gè suān nà zhù shè yè	100
+鉻天青混合液	gè tiān qīng hùn hé yè	100
 葛酮通絡膠囊	gé tóng tōng luò jiāo náng	100
 各主題科幻片	gè zhǔ tí kē huàn piàn	100
 給藥系統製劑	gěi yào xì tǒng zhì jì	100
@@ -5556,14 +5894,18 @@ sort: by_weight
 龜芪壯骨顆粒	guī qí zhuàng gǔ kē lì	100
 歸芍活血膠囊	guī sháo huó xuè jiāo náng	100
 硅酸鹽粘固劑	guī suān yán zhān gù jì	100
+桂圓瓊玉沖劑	guì yuán qióng yù chōng jì	100
 桂圓瓊玉顆粒	guì yuán qióng yù kē lì	100
 桂枝茯苓膠囊	guì zhī fú líng jiāo náng	100
 桂枝茯芩膠囊	guì zhī fú qín jiāo náng	100
 桂枝加大黃湯	guì zhī jiā dà huáng tāng	100
+桂枝加芍藥湯	guì zhī jiā sháo yào tāng	100
+桂枝去芍藥湯	guì zhī qù sháo yào tāng	100
 蛤杞白朮膠囊	há qǐ bái zhú jiāo náng	100
 哈日十二味散	hā rì shí èr wèi sàn	100
 哈西奈德乳膏	hā xī nài dé rǔ gāo	100
 哈西奈德軟膏	hā xī nài dé ruǎn gāo	100
+海巴明青黴素	hǎi bā míng qīng méi sù	100
 海貝胃瘍膠囊	hǎi bèi wèi yáng jiāo náng	100
 海浮石滑石散	hǎi fú shí huá shí sàn	100
 還精煎口服液	hái jīng jiān kǒu fú yè	100
@@ -5577,6 +5919,7 @@ sort: by_weight
 海益元口服液	hǎi yì yuán kǒu fú yè	100
 海藻酸鈉軟膏	hǎi zǎo suān nà ruǎn gāo	100
 海珠喘息定片	hǎi zhū chuǎn xī dìng piàn	100
+海珠神滴眼液	hǎi zhū shén dī yǎn yè	100
 寒喘祖帕顆粒	hán chuǎn zǔ pà kē lì	100
 含醇液體製劑	hán chún yè tǐ zhì jì	100
 漢防己甲素片	hàn fáng jǐ jiǎ sù piàn	100
@@ -5594,6 +5937,7 @@ sort: by_weight
 和肝利膽顆粒	hé gān lì dǎn kē lì	100
 和肝利膽糖漿	hé gān lì dǎn táng jiāng	100
 合劑含口服液	hé jì hán kǒu fú yè	100
+核酪口服溶液	hé lào kǒu fú róng yè	100
 訶苓止瀉膠囊	hē líng zhǐ xiè jiāo náng	100
 和絡疏肝膠囊	hé luò shū gān jiāo náng	100
 和絡舒肝膠囊	hé luò shū gān jiāo náng	100
@@ -5605,19 +5949,27 @@ sort: by_weight
 黑首生髮顆粒	hēi shǒu shēng fà kē lì	100
 恆制咳喘膠囊	héng zhì ké chuǎn jiāo náng	100
 紅草止鼾顆粒	hóng cǎo zhǐ hān kē lì	100
+紅核婦潔洗液	hóng hé fù jié xǐ yè	100
 紅茴香注射液	hóng huí xiāng zhù shè yè	100
 紅金消結膠囊	hóng jīn xiāo jié jiāo náng	100
 紅黴素腸溶片	hóng méi sù cháng róng piàn	100
 紅黴素腸溶散	hóng méi sù cháng róng sàn	100
+紅黴素腸溶液	hóng méi sù cháng róng yè	100
 紅黴素注射液	hóng méi sù zhù shè yè	100
 紅色正金軟膏	hóng sè zhèng jīn ruǎn gāo	100
+紅細胞保存液	hóng xì bāo bǎo cún yè	100
+紅血球濃厚液	hóng xuè qiú nóng hòu yè	100
 紅羊填精膠囊	hóng yáng tián jīng jiāo náng	100
 猴耳環消炎片	hóu ěr huán xiāo yán piàn	100
 猴菇飲口服液	hóu gū yǐn kǒu fú yè	100
 厚朴大黃湯方	hòu pò dà huáng tāng fāng	100
+厚朴排氣合劑	hòu pò pái qì hé jì	100
+後期岩漿殘液	hòu qī yán jiāng cán yè	100
 猴頭健胃膠囊	hóu tóu jiàn wèi jiāo náng	100
 猴頭菌糖衣片	hóu tóu jūn táng yī piàn	100
 喉咽清口服液	hóu yān qīng kǒu fú yè	100
+護花天使洗液	hù huā tiān shǐ xǐ yè	100
+虎黃燒傷搽劑	hǔ huáng shāo shāng chá jì	100
 虎駒乙肝膠囊	hǔ jū yǐ gān jiāo náng	100
 虎駒乙肝顆粒	hǔ jū yǐ gān kē lì	100
 胡蘿蔔素膠丸	hú luó bo sù jiāo wán	100
@@ -5627,6 +5979,7 @@ sort: by_weight
 琥珀消石顆粒	hǔ pò xiāo shí kē lì	100
 胡日查六味丸	hú rì chá liù wèi wán	100
 琥乙紅黴素片	hǔ yǐ hóng méi sù piàn	100
+虎杖礬石搽劑	hǔ zhàng fán shí chá jì	100
 華蟾素口服液	huá chán sù kǒu fú yè	100
 華蟾素注射液	huá chán sù zhù shè yè	100
 花旗牌洋參丸	huā qí pái yáng shēn wán	100
@@ -5680,6 +6033,7 @@ sort: by_weight
 黃連上清膠囊	huáng lián shàng qīng jiāo náng	100
 黃連上清顆粒	huáng lián shàng qīng kē lì	100
 黃龍咳喘膠囊	huáng lóng ké chuǎn jiāo náng	100
+黃蒲潔膚洗劑	huáng pú jié fū xǐ jì	100
 黃芪降糖膠囊	huáng qí jiàng táng jiāo náng	100
 黃芪精口服液	huáng qí jīng kǒu fú yè	100
 黃芩素鋁膠囊	huáng qín sù lǚ jiāo náng	100
@@ -5713,6 +6067,7 @@ sort: by_weight
 藿蓉補腎顆粒	huò róng bǔ shèn kē lì	100
 藿香清胃膠囊	huò xiāng qīng wèi jiāo náng	100
 藿香正氣滴丸	huò xiāng zhèng qì dī wán	100
+霍香正氣合劑	huò xiāng zhèng qì hé jì	100
 藿香正氣膠囊	huò xiāng zhèng qì jiāo náng	100
 霍香正氣膠囊	huò xiāng zhèng qì jiāo náng	100
 藿香正氣顆粒	huò xiāng zhèng qì kē lì	100
@@ -5720,6 +6075,8 @@ sort: by_weight
 藿陽補腎膠囊	huò yáng bǔ shèn jiāo náng	100
 己胺丁醇膠囊	jǐ àn dīng chún jiāo náng	100
 肌醇煙酸酯片	jī chún yān suān zhǐ piàn	100
+雞膽口服溶液	jī dǎn kǒu fú róng yè	100
+棘豆消癢洗劑	jí dòu xiāo yǎng xǐ jì	100
 己二烯雌酚片	jǐ èr xī cí fēn piàn	100
 吉非羅齊膠囊	jí fēi luó qí jiāo náng	100
 急肝退黃膠囊	jí gān tuì huáng jiāo náng	100
@@ -5739,6 +6096,7 @@ sort: by_weight
 假單胞菌製劑	jiǎ dān bāo jūn zhì jì	100
 嘉菲牌洋參丸	jiā fēi pái yáng shēn wán	100
 甲芬那酸膠囊	jiǎ fēn nà suān jiāo náng	100
+甲酚皁消毒液	jiǎ fēn zào xiāo dú yè	100
 甲碸黴素膠囊	jiǎ fēng méi sù jiāo náng	100
 甲碸黴素顆粒	jiǎ fēng méi sù kē lì	100
 甲鈷胺分散片	jiǎ gǔ àn fēn sǎn piàn	100
@@ -5759,6 +6117,7 @@ sort: by_weight
 甲芪肝纖顆粒	jiǎ qí gān xiān kē lì	100
 甲羥孕酮膠囊	jiǎ qiǎng yùn tóng jiāo náng	100
 甲巰咪唑軟膏	jiǎ qiú mī zuò ruǎn gāo	100
+甲醛甲酚溶液	jiǎ quán jiǎ fēn róng yè	100
 加替沙星膠囊	jiā tì shā xīng jiāo náng	100
 加味靈芝菌片	jiā wèi líng zhī jūn piàn	100
 加味生化顆粒	jiā wèi shēng huà kē lì	100
@@ -5767,19 +6126,33 @@ sort: by_weight
 加味逍遙顆粒	jiā wèi xiāo yáo kē lì	100
 加味益母草膏	jiā wèi yì mǔ cǎo gāo	100
 加味益毋草膏	jiā wèi yì wú cǎo gāo	100
+甲硝唑芬布芬	jiǎ xiāo zuò fēn bù fēn	100
+甲硝唑含漱液	jiǎ xiāo zuò hán shù yè	100
+甲硝唑含嗽液	jiǎ xiāo zuò hán sòu yè	100
 甲硝唑緩釋片	jiǎ xiāo zuò huǎn shì piàn	100
+甲硝唑混懸液	jiǎ xiāo zuò hùn xuán yè	100
 甲硝唑口含片	jiǎ xiāo zuò kǒu hán piàn	100
 甲硝唑口頰片	jiǎ xiāo zuò kǒu jiá piàn	100
 甲硝唑泡騰片	jiǎ xiāo zuò pào téng piàn	100
+甲硝唑葡萄糖	jiǎ xiāo zuò pú táo táng	100
+甲硝唑注射劑	jiǎ xiāo zuò zhù shè jì	100
 甲硝唑注射液	jiǎ xiāo zuò zhù shè yè	100
 甲溴阿托品片	jiǎ xiù ā tuō pǐn piàn	100
+甲氧苄氨嘧啶	jiǎ yǎng biàn ān mì dìng	100
 甲氧苄啶顆粒	jiǎ yǎng biàn dìng kē lì	100
+甲氧補骨脂素	jiǎ yǎng bǔ gǔ zhī sù	100
+甲氧補骨酯素	jiǎ yǎng bǔ gǔ zhǐ sù	100
+甲氧基紅黴素	jiǎ yǎng jī hóng méi sù	100
+甲氧基辛可芬	jiǎ yǎng jī xīn kě fēn	100
 甲氧氯普胺片	jiǎ yǎng lǜ pǔ àn piàn	100
 甲氧明注射液	jiǎ yǎng míng zhù shè yè	100
+甲氧沙林溶液	jiǎ yǎng shā lín róng yè	100
+甲氧異腈凍乾	jiǎ yǎng yì jīng dòng gān	100
 甲狀腺素製劑	jiǎ zhuàng xiàn sù zhì jì	100
 健兒強骨顆粒	jiàn ér qiáng gǔ kē lì	100
 健兒止瀉顆粒	jiàn ér zhǐ xiè kē lì	100
 健腦通絡膠囊	jiàn nǎo tōng luò jiāo náng	100
+健腦益智服液	jiàn nǎo yì zhì fú yè	100
 健脾降脂顆粒	jiàn pí jiàng zhī kē lì	100
 健脾生血顆粒	jiàn pí shēng xuè kē lì	100
 健脾丸濃縮丸	jiàn pí wán nóng suō wán	100
@@ -5797,11 +6170,15 @@ sort: by_weight
 健胃癒瘍顆粒	jiàn wèi yù yáng kē lì	100
 建胃愈瘍顆粒	jiàn wèi yù yáng kē lì	100
 降安每五脂片	jiàng ān měi wǔ zhī piàn	100
+薑紅祛痛搽劑	jiāng hóng qū tòng chá jì	100
 薑黃清脂膠囊	jiāng huáng qīng zhī jiāo náng	100
+薑黃消痤搽劑	jiāng huáng xiāo cuó chá jì	100
+薑腦止痛搽劑	jiāng nǎo zhǐ tòng chá jì	100
 降糖甲腸溶片	jiàng táng jiǎ cháng róng piàn	100
 降糖樂口服液	jiàng táng lè kǒu fú yè	100
 降糖通脈膠囊	jiàng táng tōng mài jiāo náng	100
 降纖酶注射液	jiàng xiān méi zhù shè yè	100
+薑棗祛寒沖劑	jiāng zǎo qū hán chōng jì	100
 薑棗祛寒顆粒	jiāng zǎo qū hán kē lì	100
 降脂減肥膠囊	jiàng zhī jiǎn féi jiāo náng	100
 降脂靈糖衣片	jiàng zhī líng táng yī piàn	100
@@ -5834,8 +6211,11 @@ sort: by_weight
 結合雌激素片	jié hé cí jī sù piàn	100
 結核丸大蜜丸	jié hé wán dà mì wán	100
 潔康寧噴霧劑	jié kāng níng pēn wù jì	100
+潔陰止癢洗液	jié yīn zhǐ yǎng xǐ yè	100
+解鬱安神沖劑	jiě yù ān shén chōng jì	100
 解鬱安神顆粒	jiě yù ān shén kē lì	100
 解鬱肝舒膠囊	jiě yù gān shū jiāo náng	100
+金參潤喉合劑	jīn cān rùn hóu hé jì	100
 金參疏肝膠囊	jīn cān shū gān jiāo náng	100
 金膽薄膜衣片	jīn dǎn báo mó yī piàn	100
 金防感冒顆粒	jīn fáng gǎn mào kē lì	100
@@ -5887,10 +6267,12 @@ sort: by_weight
 金嗓散結膠囊	jīn sǎng sàn jié jiāo náng	100
 金嗓子潤喉片	jīn sǎng zi rùn hóu piàn	100
 金鱔消渴顆粒	jīn shàn xiāo kě kē lì	100
+近視樂滴眼液	jìn shì lè dī yǎn yè	100
 金世力德顆粒	jīn shì lì dé kē lì	100
 金石清熱顆粒	jīn shí qīng rè kē lì	100
 金水寶口服液	jīn shuǐ bǎo kǒu fú yè	100
 金水康蟲草膏	jīn shuǐ kāng chóng cǎo gāo	100
+金松止癢洗液	jīn sōng zhǐ yǎng xǐ yè	100
 金鎖固精蜜丸	jīn suǒ gù jīng mì wán	100
 金鎖昆都爾片	jīn suǒ kūn dōu ěr piàn	100
 金維氨口服液	jīn wéi ān kǒu fú yè	100
@@ -5901,9 +6283,11 @@ sort: by_weight
 金茵利膽膠囊	jīn yīn lì dǎn jiāo náng	100
 金銀三七膠囊	jīn yín sān qī jiāo náng	100
 金澤冠心膠囊	jīn zé guān xīn jiāo náng	100
+金珠燒傷搽劑	jīn zhū shāo shāng chá jì	100
 精氨洛芬顆粒	jīng ān luò fēn kē lì	100
 精氨酸注射液	jīng ān suān zhù shè yè	100
 景參益氣顆粒	jǐng cān yì qì kē lì	100
+經帶寧潔陰液	jīng dài níng jié yīn yè	100
 經典動畫長片	jīng diǎn dòng huà cháng piàn	100
 荊膚止癢顆粒	jīng fū zhǐ yǎng kē lì	100
 荊花胃康膠丸	jīng huā wèi kāng jiāo wán	100
@@ -5927,6 +6311,7 @@ sort: by_weight
 九龍解毒膠囊	jiǔ lóng jiě dú jiāo náng	100
 九氣拈痛膠囊	jiǔ qì niān tòng jiāo náng	100
 久強腦立清丸	jiǔ qiáng nǎo lì qīng wán	100
+九三活血搽劑	jiǔ sān huó xuè chá jì	100
 九味參蓉膠囊	jiǔ wèi cān róng jiāo náng	100
 九味沉香膠囊	jiǔ wèi chén xiāng jiāo náng	100
 九味肝泰膠囊	jiǔ wèi gān tài jiāo náng	100
@@ -5942,6 +6327,7 @@ sort: by_weight
 橘半止咳顆粒	jú bàn zhǐ ké kē lì	100
 橘貝半夏顆粒	jú bèi bàn xià kē lì	100
 局部製劑中毒	jú bù zhì jì zhòng dú	100
+聚合劑加入器	jù hé jì jiā rù qì	120
 橘紅顆粒沖劑	jú hóng kē lì chōng jì	100
 橘紅痰咳煎膏	jú hóng tán ké jiān gāo	100
 橘紅痰咳顆粒	jú hóng tán ké kē lì	100
@@ -5960,7 +6346,10 @@ sort: by_weight
 決明平脂膠囊	jué míng píng zhī jiāo náng	100
 卡巴匹林鈣散	kǎ bā pǐ lín gài sàn	100
 卡巴匹林鎂散	kǎ bā pǐ lín měi sàn	100
+卡波姆滴眼液	kǎ bō mǔ dī yǎn yè	100
+卡爾費休試液	kǎ ěr fèi xiū shì yè	100
 卡爾特注射液	kǎ ěr tè zhù shè yè	100
+卡林優滴眼液	kǎ lín yōu dī yǎn yè	100
 卡馬西平膠囊	kǎ mǎ xī píng jiāo náng	100
 卡馬西平糖漿	kǎ mǎ xī píng táng jiāng	100
 卡曼舒口服液	kǎ màn shū kǒu fú yè	100
@@ -5988,6 +6377,7 @@ sort: by_weight
 康富來洋參膏	kāng fù lái yáng shēn gāo	100
 抗感解毒膠囊	kàng gǎn jiě dú jiāo náng	100
 抗感解毒顆粒	kàng gǎn jiě dú kē lì	100
+抗感解熱沖劑	kàng gǎn jiě rè chōng jì	100
 抗感冒咳喘丸	kàng gǎn mào ké chuǎn wán	100
 抗宮炎軟膠囊	kàng gōng yán ruǎn jiāo náng	100
 抗骨增生膠囊	kàng gǔ zēng shēng jiāo náng	100
@@ -6018,11 +6408,13 @@ sort: by_weight
 克感利咽顆粒	kè gǎn lì yān kē lì	100
 克拉黴素膠囊	kè lā méi sù jiāo náng	100
 克拉黴素顆粒	kè lā méi sù kē lì	100
+可樂定滴眼液	kě lè dìng dī yǎn yè	100
 可樂定注射液	kě lè dìng zhù shè yè	100
 可力地高辛片	kě lì dì gāo xīn piàn	100
 顆粒性微栓子	kē lì xìng wēi shuān zi	100
 顆粒狀的骨粉	kē lì zhuàng de gǔ fěn	100
 克林黴素膠囊	kè lín méi sù jiāo náng	100
+克林黴素溶液	kè lín méi sù róng yè	100
 克侖特羅含片	kè lún tè luó hán piàn	100
 克羅米通乳膏	kè luó mǐ tōng rǔ gāo	100
 克黴唑噴霧劑	kè méi zuò pēn wù jì	100
@@ -6032,10 +6424,13 @@ sort: by_weight
 空腹酒服一丸	kōng fù jiǔ fú yì wán	100
 空心螺釘墊片	kōng xīn luó dīng diàn piàn	100
 口服固體製劑	kǒu fú gù tǐ zhì jì	100
+口服氯雷他定	kǒu fú lǜ léi tā dìng	100
 口腔炎噴霧劑	kǒu qiāng yán pēn wù jì	100
 口腔愈瘍顆粒	kǒu qiāng yù yáng kē lì	100
+苦柏止癢洗液	kǔ bǎi zhǐ yǎng xǐ yè	100
 苦碟子注射液	kǔ dié zi zhù shè yè	100
 苦丁降壓膠囊	kǔ dīng jiàng yā jiāo náng	100
+苦豆子油搽劑	kǔ dòu zi yóu chá jì	100
 苦參鹼注射液	kǔ shēn jiǎn zhù shè yè	100
 苦參素軟膠囊	kǔ shēn sù ruǎn jiāo náng	100
 苦參素注射液	kǔ shēn sù zhù shè yè	100
@@ -6062,6 +6457,7 @@ sort: by_weight
 雷公藤總萜片	léi gōng téng zǒng tiē piàn	100
 雷尼替丁膠囊	léi ní tì dīng jiāo náng	100
 雷尼替丁糖漿	léi ní tì dīng táng jiāng	100
+冷心髒停搏液	lěng xīn zàng tíng bó yè	100
 利巴韋林含片	lì bā wéi lín hán piàn	100
 利巴韋林膠囊	lì bā wéi lín jiāo náng	100
 利巴韋林顆粒	lì bā wéi lín kē lì	100
@@ -6076,12 +6472,15 @@ sort: by_weight
 利凡諾注射液	lì fán nuò zhù shè yè	100
 利福噴丁膠囊	lì fú pēn dīng jiāo náng	100
 利福噴汀膠囊	lì fú pēn tīng jiāo náng	100
+利福平滴眼液	lì fú píng dī yǎn yè	100
 利福平注射液	lì fú píng zhù shè yè	100
 利福昔明膠囊	lì fú xī míng jiāo náng	100
 利肝消脂顆粒	lì gān xiāo zhī kē lì	100
 荔花鼻竇炎片	lì huā bí dòu yán piàn	100
+利口清含漱液	lì kǒu qīng hán shù yè	100
 利拉萘脂乳膏	lì lā nài zhī rǔ gāo	100
 利拉萘酯乳膏	lì lā nài zhǐ rǔ gāo	100
+利培酮口服液	lì péi tóng kǒu fú yè	100
 理氣和胃膠囊	lǐ qì hé wèi jiāo náng	100
 利塞膦酸鈉片	lì sāi lìn suān nà piàn	100
 力生吸血膠囊	lì shēng xī xuè jiāo náng	100
@@ -6105,6 +6504,9 @@ sort: by_weight
 聯發科的芯片	lián fā kē de xīn piàn	100
 連花清瘟膠囊	lián huā qīng wēn jiāo náng	100
 連花清瘟顆粒	lián huā qīng wēn kē lì	100
+聯磺甲氧苄啶	lián huáng jiǎ yǎng biàn dìng	100
+鏈黴素滴鼻液	liàn méi sù dī bí yè	100
+鏈黴素滴眼液	liàn méi sù dī yǎn yè	100
 鏈黴素注射液	liàn méi sù zhù shè yè	100
 煉蜜合為四丸	liàn mì hé wéi sì wán	100
 連蒲雙清膠囊	lián pú shuāng qīng jiāo náng	100
@@ -6112,12 +6514,14 @@ sort: by_weight
 蓮芝消炎膠囊	lián zhī xiāo yán jiāo náng	100
 梁財信跌打丸	liáng cái xìn diē dǎ wán	100
 良薑胃瘍膠囊	liáng jiāng wèi yáng jiāo náng	100
+亮菌口服溶液	liàng jūn kǒu fú róng yè	100
 涼血解毒顆粒	liáng xuè jiě dú kē lì	100
 涼血祛風糖漿	liáng xuè qū fēng táng jiāng	100
 良園枇杷葉膏	liáng yuán pí pá yè gāo	100
 療癬卡西甫散	liáo xuǎn kǎ xī fǔ sàn	100
 療癬卡西甫丸	liáo xuǎn kǎ xī fǔ wán	100
 林可黴素膠囊	lín kě méi sù jiāo náng	100
+林可黴素溶液	lín kě méi sù róng yè	100
 林可黴素軟膏	lín kě méi sù ruǎn gāo	100
 磷黴素鈣膠囊	lín méi sù gài jiāo náng	100
 磷黴素鈣顆粒	lín méi sù gài kē lì	100
@@ -6128,6 +6532,7 @@ sort: by_weight
 磷酸咯萘啶片	lín suān gē nài dìng piàn	100
 磷酸硅粘固劑	lín suān guī zhān gù jì	100
 磷酸可待因片	lín suān kě dài yīn piàn	100
+磷酸鈉口服液	lín suān nà kǒu fú yè	100
 磷酸鈉注射液	lín suān nà zhù shè yè	100
 磷酸萘酚喹片	lín suān nài fēn kuí piàn	100
 磷酸腺嘌呤片	lín suān xiàn piào lìng piàn	100
@@ -6172,10 +6577,12 @@ sort: by_weight
 硫酸粘菌素片	liú suān nián jūn sù piàn	100
 硫酸黏菌素片	liú suān nián jūn sù piàn	100
 硫酸羥氯喹片	liú suān qiǎng lǜ kuí piàn	100
+硫酸鋅口服液	liú suān xīn kǒu fú yè	100
 硫酸新黴素片	liú suān xīn méi sù piàn	100
 硫酸亞鐵含片	liú suān yà tiě hán piàn	100
 硫糖鋁分散片	liú táng lǚ fēn sǎn piàn	100
 硫糖鋁咀嚼片	liú táng lǚ jǔ jué piàn	100
+硫糖鋁口服液	liú táng lǚ kǒu fú yè	100
 硫糖鋁懸膠劑	liú táng lǚ xuán jiāo jì	100
 六味安消膠囊	liù wèi ān xiāo jiāo náng	100
 六味補血顆粒	liù wèi bǔ xuè kē lì	100
@@ -6204,6 +6611,7 @@ sort: by_weight
 龍菊清肝膠囊	lóng jú qīng gān jiāo náng	100
 龍苓春口服液	lóng líng chūn kǒu fú yè	100
 隴馬陸胃藥片	lǒng mǎ lù wèi yào piàn	100
+龍牡壯骨沖劑	lóng mǔ zhuàng gǔ chōng jì	100
 龍牡壯骨顆粒	lóng mǔ zhuàng gǔ kē lì	100
 龍芪溶栓膠囊	lóng qí róng shuān jiāo náng	100
 龍香平喘膠囊	lóng xiāng píng chuǎn jiāo náng	100
@@ -6261,10 +6669,12 @@ sort: by_weight
 氯己定含漱劑	lǜ jǐ dìng hán shù jì	100
 綠及咳喘顆粒	lǜ jí ké chuǎn kē lì	100
 氯甲環酸膠囊	lǜ jiǎ huán suān jiāo náng	100
+驢膠補血沖劑	lǘ jiāo bǔ xuè chōng jì	100
 驢膠補血顆粒	lǘ jiāo bǔ xuè kē lì	100
 氯咖黃敏膠囊	lǜ kā huáng mǐn jiāo náng	100
 氯雷他定膠囊	lǜ léi tā dìng jiāo náng	100
 氯膦酸二鈉片	lǜ lìn suān èr nà piàn	100
+鋁鎂加混懸液	lǚ měi jiā hùn xuán yè	100
 氯黴素軟膠囊	lǜ méi sù ruǎn jiāo náng	100
 氯黴素注射液	lǜ méi sù zhù shè yè	100
 綠梅止瀉顆粒	lǜ méi zhǐ xiè kē lì	100
@@ -6274,8 +6684,10 @@ sort: by_weight
 氯唑沙宗膠囊	lǜ zuò shā zōng jiāo náng	100
 嗎多明氣霧劑	ma duō míng qì wù jì	100
 麻黃鹼注射液	má huáng jiǎn zhù shè yè	100
+麻黃素滴鼻液	má huáng sù dī bí yè	100
 麻黃素注射液	má huáng sù zhù shè yè	100
 馬蘭感寒膠囊	mǎ lán gǎn hán jiāo náng	100
+嗎啉胍滴眼液	ma lín guā dī yǎn yè	100
 嗎啉胍注射液	ma lín guā zhù shè yè	100
 馬藺子素膠囊	mǎ lìn zǐ sù jiāo náng	100
 嗎氯貝胺膠囊	ma lǜ bèi àn jiāo náng	100
@@ -6304,20 +6716,27 @@ sort: by_weight
 滿山紅油膠丸	mǎn shān hóng yóu jiāo wán	100
 慢腎寶口服液	màn shèn bǎo kǒu fú yè	100
 慢腎寧口服液	màn shèn níng kǒu fú yè	100
+慢咽舒寧沖劑	màn yàn shū níng chōng jì	100
 慢支固本顆粒	màn zhī gù běn kē lì	100
 毛冬青注射液	máo dōng qīng zhù shè yè	100
 毛果芸香鹼片	máo guǒ yún xiāng jiǎn piàn	100
+美爾偽麻溶液	měi ěr wěi má róng yè	100
+美伏明滴眼液	měi fú míng dī yǎn yè	100
 玫瑰花口服液	méi gui huā kǒu fú yè	100
 梅花點舌膠囊	méi huā diǎn shé jiāo náng	100
+美開朗滴眼液	měi kāi lǎng dī yǎn yè	100
 美絡寧注射液	měi luò níng zhù shè yè	100
 美羅胃痛寧片	měi luó wèi tòng níng piàn	100
 美洛昔康膠囊	měi luò xī kāng jiāo náng	100
 美滿黴素膠囊	měi mǎn méi sù jiāo náng	100
+美敏偽麻溶液	měi mǐn wěi má róng yè	100
 美撲偽麻膠囊	měi pū wěi má jiāo náng	100
 美撲偽麻顆粒	měi pū wěi má kē lì	100
 美沙酮戒毒片	měi shā tóng jiè dú piàn	100
+美沙酮口服液	měi shā tóng kǒu fú yè	100
 美沙酮注射液	měi shā tóng zhù shè yè	100
 美聲喉泰含片	měi shēng hóu tài hán piàn	100
+美司鈉注射劑	měi sī nà zhù shè jì	100
 美司那注射液	měi sī nà zhù shè yè	100
 美司鈉注射液	měi sī nà zhù shè yè	100
 美索巴莫膠囊	měi suǒ bā mò jiāo náng	100
@@ -6336,6 +6755,7 @@ sort: by_weight
 孟魯司特鈉片	mèng lǔ sī tè nà piàn	100
 蒙脫石分散片	méng tuō shí fēn sǎn piàn	100
 米非司酮膠囊	mǐ fēi sī tóng jiāo náng	100
+密蓋息鼻噴劑	mì gài xī bí pēn jì	100
 密蓋息注射液	mì gài xī zhù shè yè	100
 彌可保注射液	mí kě bǎo zhù shè yè	100
 咪喹莫特乳膏	mī kuí mò tè rǔ gāo	100
@@ -6353,6 +6773,7 @@ sort: by_weight
 莫匹羅星軟膏	mò pǐ luó xīng ruǎn gāo	100
 木瓜酶腸溶片	mù guā méi cháng róng piàn	100
 木瓜丸大蜜丸	mù guā wán dà mì wán	100
+木糖醇口服液	mù táng chún kǒu fú yè	100
 木糖醇注射液	mù táng chún zhù shè yè	100
 木香順氣顆粒	mù xiāng shùn qì kē lì	100
 納催離緩釋片	nà cuī lí huǎn shì piàn	100
@@ -6364,12 +6785,15 @@ sort: by_weight
 那敏僞麻膠囊	nà mǐn wěi má jiāo náng	100
 萘丁美酮膠囊	nài dīng měi tóng jiāo náng	100
 奈福泮注射液	nài fú pàn zhù shè yè	100
+萘敏維滴眼液	nài mǐn wéi dī yǎn yè	100
 萘哌地爾膠囊	nài pài dì ěr jiāo náng	100
 萘普生分散片	nài pǔ shēng fēn sàn piàn	100
 萘普生緩釋片	nài pǔ shēng huǎn shì piàn	100
 萘普生鈉膠囊	nài pǔ shēng nà jiāo náng	100
 萘普生鈉顆粒	nài pǔ shēng nà kē lì	100
 萘普生注射液	nài pǔ shēng zhù shè yè	100
+奈撲維滴眼液	nài pū wéi dī yǎn yè	100
+萘撲維滴眼液	nài pū wéi dī yǎn yè	100
 奈韋拉平膠囊	nài wéi lā píng jiāo náng	100
 南板藍根顆粒	nán bǎn lán gēn kē lì	100
 喃氟啶注射液	nán fú dìng zhù shè yè	100
@@ -6401,6 +6825,7 @@ sort: by_weight
 尼索地平膠囊	ní suǒ dì píng jiāo náng	100
 尼索地平膠丸	ní suǒ dì píng jiāo wán	100
 尼扎替丁膠囊	ní zhā tì dīng jiāo náng	100
+尿毒靈灌腸液	niào dú líng guàn cháng yè	100
 尿激酶注射液	niào jī méi zhù shè yè	100
 尿囊素鋁顆粒	niào náng sù lǚ kē lì	100
 寧紅欣注射液	níng hóng xīn zhù shè yè	100
@@ -6413,6 +6838,7 @@ sort: by_weight
 牛黃消炎靈丸	niú huáng xiāo yán líng wán	100
 牛尾蒿油滴丸	niú wěi hāo yóu dī wán	100
 濃柏靈口服液	nóng bǎi líng kǒu fú yè	100
+濃煤焦油溶液	nóng méi jiāo yóu róng yè	100
 濃縮水牛角片	nóng suō shuǐ niú jiǎo piàn	100
 暖臍膏橡膠膏	nuǎn qí gāo xiàng jiāo gāo	100
 暖胃舒樂顆粒	nuǎn wèi shū lè kē lì	100
@@ -6431,6 +6857,7 @@ sort: by_weight
 排齦線排齦膏	pái kěn xiàn pái kěn gāo	100
 排石利膽顆粒	pái shí lì dǎn kē lì	100
 哌替啶注射液	pài tì dìng zhù shè yè	100
+皰疹淨滴眼液	pào zhěn jìng dī yǎn yè	100
 培氟沙星膠囊	péi fú shā xīng jiāo náng	100
 培氟沙星軟膏	péi fú shā xīng ruǎn gāo	100
 培坤丸小蜜丸	péi kūn wán xiǎo mì wán	100
@@ -6448,6 +6875,7 @@ sort: by_weight
 脾胃健口服液	pí wèi jiàn kǒu fú yè	100
 皮下注射用片	pí xià zhù shè yòng piàn	100
 平喘益氣顆粒	píng chuǎn yì qì kē lì	100
+潑尼松滴眼液	pō ní sōng dī yǎn yè	100
 潑尼松龍軟膏	pō ní sōng lóng ruǎn gāo	100
 蒲地藍消炎片	pú dì lán xiāo yán piàn	100
 撲爾敏注射液	pū ěr mǐn zhù shè yè	100
@@ -6456,6 +6884,7 @@ sort: by_weight
 葡磷泛三鈣片	pú lín fàn sān gài piàn	100
 普魯卡地魯片	pǔ lǔ kǎ dì lǔ piàn	100
 普魯卡因胺片	pǔ lǔ kǎ yīn àn piàn	100
+普魯卡因溶液	pǔ lǔ kǎ yīn róng yè	100
 普侖司特膠囊	pǔ lún sī tè jiāo náng	100
 普羅雌烯乳膏	pǔ luó cí xī rǔ gāo	100
 普羅帕酮膠囊	pǔ luó pà tóng jiāo náng	100
@@ -6521,6 +6950,7 @@ sort: by_weight
 奇正消痛貼膏	qí zhèng xiāo tòng tiē gāo	100
 芪蛭降糖膠囊	qí zhì jiàng táng jiāo náng	100
 芪蛭通絡膠囊	qí zhì tōng luò jiāo náng	100
+氣滯胃痛沖劑	qì zhì wèi tòng chōng jì	100
 氣滯胃痛膠囊	qì zhì wèi tòng jiāo náng	100
 氣滯胃痛顆粒	qì zhì wèi tòng kē lì	100
 千柏鼻炎膠囊	qiān bǎi bí yán jiāo náng	100
@@ -6534,7 +6964,9 @@ sort: by_weight
 前列舒樂顆粒	qián liè shū lè kē lì	100
 前列舒通膠囊	qián liè shū tōng jiāo náng	100
 前列通瘀膠囊	qián liè tōng yū jiāo náng	100
+羥氨苄青黴素	qiǎng ān biàn qīng méi sù	100
 羥苯磺酸鈣片	qiǎng běn huáng suān gài piàn	100
+羥苄唑滴眼液	qiǎng biàn zuò dī yǎn yè	100
 羥癸甲氧醌片	qiǎng guǐ jiǎ yǎng kūn piàn	100
 羥甲司坦含片	qiǎng jiǎ sī tǎn hán piàn	100
 羥甲司坦顆粒	qiǎng jiǎ sī tǎn kē lì	100
@@ -6546,6 +6978,7 @@ sort: by_weight
 強力腦清素片	qiáng lì nǎo qīng sù piàn	100
 強力神口服液	qiáng lì shén kǒu fú yè	100
 強力鐵口服液	qiáng lì tiě kǒu fú yè	100
+強力珍珠眼液	qiáng lì zhēn zhū yǎn yè	100
 強龍益腎膠囊	qiáng lóng yì shèn jiāo náng	100
 強人牌洋參丸	qiǎng rén pái yáng shēn wán	100
 強腎養心膠囊	qiáng shèn yǎng xīn jiāo náng	100
@@ -6558,9 +6991,11 @@ sort: by_weight
 芩暴紅止咳片	qín bào hóng zhǐ ké piàn	100
 芩黃喉症膠囊	qín huáng hóu zhèng jiāo náng	100
 秦皮接骨膠囊	qín pí jiē gǔ jiāo náng	100
+青柏潔身洗液	qīng bǎi jié shēn xǐ yè	100
 清腸通便膠囊	qīng cháng tōng biàn jiāo náng	100
 慶大黴素膠囊	qìng dà méi sù jiāo náng	100
 慶大黴素顆粒	qìng dà méi sù kē lì	100
+慶大黴素溶液	qìng dà méi sù róng yè	100
 清肺十八味丸	qīng fèi shí bā wèi wán	100
 清肺十三味散	qīng fèi shí sān wèi sàn	100
 清感穿心蓮片	qīng gǎn chuān xīn lián piàn	100
@@ -6584,9 +7019,11 @@ sort: by_weight
 清開靈軟膠囊	qīng kāi líng ruǎn jiāo náng	100
 清開靈注射液	qīng kāi líng zhù shè yè	100
 清咳平喘顆粒	qīng ké píng chuǎn kē lì	100
+清涼止癢搽劑	qīng liáng zhǐ yǎng chá jì	100
 氫氯吡格雷片	qīng lǜ bǐ gé léi piàn	100
 青黴素鉀膠囊	qīng méi sù jiǎ jiāo náng	100
 青黴素鉀顆粒	qīng méi sù jiǎ kē lì	100
+青黴素皮試液	qīng méi sù pí shì yè	100
 清腦降壓膠囊	qīng nǎo jiàng yā jiāo náng	100
 清腦降壓顆粒	qīng nǎo jiàng yā kē lì	100
 清寧丸濃縮丸	qīng níng wán nóng suō wán	100
@@ -6598,6 +7035,8 @@ sort: by_weight
 清熱解毒顆粒	qīng rè jiě dú kē lì	100
 清熱解毒糖漿	qīng rè jiě dú táng jiāng	100
 清熱利膽顆粒	qīng rè lì dǎn kē lì	100
+清熱祛痱搽劑	qīng rè qū fèi chá jì	100
+清熱祛濕沖劑	qīng rè qū shī chōng jì	100
 清熱祛濕顆粒	qīng rè qū shī kē lì	100
 清熱散結膠囊	qīng rè sàn jié jiāo náng	100
 清熱通淋膠囊	qīng rè tōng lín jiāo náng	100
@@ -6608,6 +7047,7 @@ sort: by_weight
 清熱宣肺貼膏	qīng rè xuān fèi tiē gāo	100
 清熱銀花糖漿	qīng rè yín huā táng jiāng	100
 清熱止消膠囊	qīng rè zhǐ xiāo jiāo náng	100
+清熱止癢洗劑	qīng rè zhǐ yǎng xǐ jì	100
 清暑解毒顆粒	qīng shǔ jiě dú kē lì	100
 青藤鹼腸溶片	qīng téng jiǎn cháng róng piàn	100
 擎天柱健力片	qíng tiān zhù jiàn lì piàn	100
@@ -6619,6 +7059,7 @@ sort: by_weight
 清血八味膠囊	qīng xuè bā wèi jiāo náng	100
 清咽丸清音丸	qīng yàn wán qīng yīn wán	100
 清胰利膽顆粒	qīng yí lì dǎn kē lì	100
+清燥潤肺合劑	qīng zào rùn fèi hé jì	100
 清障明目膠囊	qīng zhàng míng mù jiāo náng	100
 清脂果酯膠囊	qīng zhī guǒ zhǐ jiāo náng	100
 清濁益腎膠囊	qīng zhuó yì shèn jiāo náng	100
@@ -6634,6 +7075,7 @@ sort: by_weight
 祛風濕清熱藥	qū fēng shī qīng rè yào	100
 祛風濕散寒藥	qū fēng shī sàn hán yào	100
 祛風濕止痛散	qū fēng shī zhǐ tòng sàn	100
+祛風痛解搽劑	qū fēng tòng jiě chá jì	100
 祛風止痛膠囊	qū fēng zhǐ tòng jiāo náng	100
 去感熱注射液	qù gǎn rè zhù shè yè	100
 去甲斑蝥素片	qù jiǎ bān máo sù piàn	100
@@ -6647,6 +7089,7 @@ sort: by_weight
 曲尼司特顆粒	qǔ ní sī tè kē lì	100
 去羥肌苷顆粒	qù qiǎng jī gān kē lì	100
 祛痰靈口服液	qū tán líng kǒu fú yè	100
+祛痰止咳沖劑	qū tán zhǐ ké chōng jì	100
 祛痰止咳顆粒	qū tán zhǐ ké kē lì	100
 曲昔派特膠囊	qǔ xī pài tè jiāo náng	100
 曲昔匹特膠囊	qǔ xī pǐ tè jiāo náng	100
@@ -6665,11 +7108,14 @@ sort: by_weight
 熱可平注射液	rè kě píng zhù shè yè	100
 熱炎寧口服液	rè yán níng kǒu fú yè	100
 人工智能芯片	rén gōng zhì néng xīn piàn	100
+人臍帶組織液	rén qí dài zǔ zhī yè	100
 人參敗毒膠囊	rén shēn bài dú jiāo náng	100
 人參鱉甲煎丸	rén shēn biē jiǎ jiān wán	100
 人參補氣膠囊	rén shēn bǔ qì jiāo náng	100
 人參補丸膠囊	rén shēn bǔ wán jiāo náng	100
 人參首烏膠囊	rén shēn shǒu wū jiāo náng	100
+人胎盤組織液	rén tāi pán zǔ zhī yè	100
+人血清蛋白液	rén xuè qīng dàn bái yè	100
 人知降糖膠囊	rén zhī jiàng táng jiāo náng	100
 茸參補腎膠囊	róng cān bǔ shèn jiāo náng	100
 茸參益腎膠囊	róng cān yì shèn jiāo náng	100
@@ -6678,31 +7124,38 @@ sort: by_weight
 溶菌酶口含片	róng jūn méi kǒu hán piàn	100
 溶栓腦通膠囊	róng shuān nǎo tōng jiāo náng	100
 榮心丸大蜜丸	róng xīn wán dà mì wán	100
-溶液型噴霧劑	róng yè xíng pēn wù jì	100
 鞣酸苦參鹼片	róu suān kǔ shēn jiǎn piàn	100
 鞣酸小檗鹼片	róu suān xiǎo bò jiǎn piàn	100
 乳安散結膠囊	rǔ ān sàn jié jiāo náng	100
 乳果糖口服液	rǔ guǒ táng kǒu fú yè	100
 乳核內消顆粒	rǔ hé nèi xiāo kē lì	100
+乳化型液壓液	rǔ huà xíng yè yā yè	120
 乳康丸濃縮丸	rǔ kāng wán nóng suō wán	100
 乳酶菌素顆粒	rǔ méi jūn sù kē lì	100
 乳寧薄膜衣片	rǔ níng báo mó yī piàn	100
 乳癖安消膠囊	rǔ pǐ ān xiāo jiāo náng	100
 乳癖散結膠囊	rǔ pǐ sàn jié jiāo náng	100
 乳酸鈣咀嚼片	rǔ suān gài jǔ jué piàn	100
+乳酸鈣口服液	rǔ suān gài kǒu fú yè	100
 乳酸鈉注射液	rǔ suān nà zhù shè yè	100
 乳酸心可定片	rǔ suān xīn kě dìng piàn	100
+乳酸鋅口服液	rǔ suān xīn kǒu fú yè	100
 乳酸亞鐵膠囊	rǔ suān yà tiě jiāo náng	100
+乳酸亞鐵口服	rǔ suān yà tiě kǒu fú	100
 乳腺康注射液	rǔ xiàn kāng zhù shè yè	100
+如意舒絡洗劑	rú yì shū luò xǐ jì	100
+軟骨素滴眼液	ruǎn gǔ sù dī yǎn yè	100
 軟骨素鈉膠囊	ruǎn gǔ sù nà jiāo náng	100
 軟骨素注射液	ruǎn gǔ sù zhù shè yè	100
 阮骨增生膠囊	ruǎn gǔ zēng shēng jiāo náng	100
 阮骨增生顆粒	ruǎn gǔ zēng shēng kē lì	100
 軟膠囊劑膠丸	ruǎn jiāo náng jì jiāo wán	100
 軟脈靈口服液	ruǎn mài líng kǒu fú yè	100
+瑞姬氏染色液	ruì jī shì rǎn sè yè	100
 瑞易寧控釋片	ruì yì níng kòng shì piàn	100
 潤腸果子糖片	rùn cháng guǒ zi táng piàn	100
 潤腸丸濃縮丸	rùn cháng wán nóng suō wán	100
+潤可明滴眼液	rùn kě míng dī yǎn yè	100
 潤伊容口服液	rùn yī róng kǒu fú yè	100
 塞克硝唑膠囊	sāi kè xiāo zuò jiāo náng	100
 塞來昔布膠囊	sāi lái xī bù jiāo náng	100
@@ -6739,7 +7192,6 @@ sort: by_weight
 三七養血膠囊	sān qī yǎng xuè jiāo náng	100
 三七脂肝顆粒	sān qī zhī gān kē lì	100
 三七止血膠囊	sān qī zhǐ xuè jiāo náng	100
-散熱器暖氣片	sàn rè qì nuǎn qì piàn	100
 三蛇膽川貝膏	sān shé dǎn chuān bèi gāo	100
 三蛇風濕藥酒	sān shé fēng shī yào jiǔ	100
 三參芪口服液	sān shēn qí kǒu fú yè	100
@@ -6755,6 +7207,7 @@ sort: by_weight
 三益新腳氣膏	sān yì xīn jiǎo qì gāo	100
 桑薑感冒膠囊	sāng jiāng gǎn mào jiāo náng	100
 桑菊感昌顆粒	sāng jú gǎn chāng kē lì	100
+桑菊感冒沖劑	sāng jú gǎn mào chōng jì	100
 桑龍利肝顆粒	sāng lóng lì gān kē lì	100
 桑螵蛸酒調散	sāng piāo shāo jiǔ diào sàn	100
 桑杞腦康顆粒	sāng qǐ nǎo kāng kē lì	100
@@ -6762,9 +7215,11 @@ sort: by_weight
 沙刺油軟膠囊	shā cì yóu ruǎn jiāo náng	100
 沙丁胺醇膠囊	shā dīng àn chún jiāo náng	100
 沙棘籽油膠丸	shā jí zǐ yóu jiāo wán	100
+殺菌止癢洗劑	shā jūn zhǐ yǎng xǐ jì	100
 砂連和胃膠囊	shā lián hé wèi jiāo náng	100
 沙梅消渴膠囊	shā méi xiāo kě jiāo náng	100
 沙參止咳湯散	shā shēn zhǐ ké tāng sàn	100
+山白消食合劑	shān bái xiāo shí hé jì	100
 山達基記錄片	shān dá jī jì lù piàn	100
 山荷葉口服液	shān hé yè kǒu fú yè	100
 珊瑚七十味丸	shān hú qī shí wèi wán	100
@@ -6778,6 +7233,7 @@ sort: by_weight
 山楂精降脂片	shān zhā jīng jiàng zhī piàn	100
 山楂麥麴顆粒	shān zhā mài qū kē lì	100
 山楂內金膠囊	shān zhā nèi jīn jiāo náng	100
+傷風感冒沖劑	shāng fēng gǎn mào chōng jì	100
 傷風感冒顆粒	shāng fēng gǎn mào kē lì	100
 傷風淨噴霧劑	shāng fēng jìng pēn wù jì	100
 傷風止咳糖漿	shāng fēng zhǐ ké táng jiāng	100
@@ -6797,11 +7253,13 @@ sort: by_weight
 麝香通心滴丸	shè xiāng tōng xīn dī wán	100
 麝香心腦樂片	shè xiāng xīn nǎo lè piàn	100
 麝香心痛寧片	shè xiāng xīn tòng níng piàn	100
+麝香醒神搽劑	shè xiāng xǐng shén chá jì	100
 麝香止痛貼膏	shè xiāng zhǐ tòng tiē gāo	100
 神黃鈉鋁膠囊	shén huáng nà lǚ jiāo náng	100
 腎顆粒細胞癌	shèn kē lì xì bāo ái	100
 參苓白朮膠囊	shēn líng bái zhú jiāo náng	100
 參苓白朮顆粒	shēn líng bái zhú kē lì	100
+參苓蛤蚧合劑	shēn líng gé jiè hé jì	100
 參苓精口服液	shēn líng jīng kǒu fú yè	100
 參龍寧心膠囊	shēn lóng níng xīn jiāo náng	100
 神牡安神膠囊	shén mǔ ān shén jiāo náng	100
@@ -6810,10 +7268,12 @@ sort: by_weight
 參芪復脈顆粒	shēn qí fù mài kē lì	100
 參芪肝康膠囊	shēn qí gān kāng jiāo náng	100
 腎氣歸口服液	shèn qì guī kǒu fú yè	100
+參芪健胃沖劑	shēn qí jiàn wèi chōng jì	100
 參芪健胃顆粒	shēn qí jiàn wèi kē lì	100
 參芪降糖膠囊	shēn qí jiàng táng jiāo náng	100
 參芪降糖顆粒	shēn qí jiàng táng kē lì	100
 參芪力得康片	shēn qí lì dé kāng piàn	100
+參芪沙棘合劑	shēn qí shā jí hé jì	100
 參芪五味子片	shēn qí wǔ wèi zǐ piàn	100
 參芪消渴膠囊	shēn qí xiāo kě jiāo náng	100
 參芪消渴顆粒	shēn qí xiāo kě kē lì	100
@@ -6823,6 +7283,8 @@ sort: by_weight
 參茸三腎膠囊	shēn róng sān shèn jiāo náng	100
 參茸益腎膠囊	shēn róng yì shèn jiāo náng	100
 腎上腺色腙片	shèn shàng xiàn sè zōng piàn	100
+腎衰康灌腸液	shèn shuāi kāng guàn cháng yè	100
+腎衰寧灌腸液	shèn shuāi níng guàn cháng yè	100
 參松養心膠囊	shēn sōng yǎng xīn jiāo náng	100
 腎炎四味膠囊	shèn yán sì wèi jiāo náng	100
 腎炎四味顆粒	shèn yán sì wèi kē lì	100
@@ -6837,6 +7299,7 @@ sort: by_weight
 升氣血口服液	shēng qì xuè kǒu fú yè	100
 升氣養元糖漿	shēng qì yǎng yuán táng jiāng	100
 生乳靈口服液	shēng rǔ líng kǒu fú yè	100
+生物酶清洗液	shēng wù méi qīng xǐ yè	100
 生物製劑治療	shēng wù zhì jì zhì liáo	100
 生血寶口服液	shēng xuè bǎo kǒu fú yè	100
 生血康口服液	shēng xuè kāng kǒu fú yè	100
@@ -6925,6 +7388,7 @@ sort: by_weight
 舒心通脈膠囊	shū xīn tōng mài jiāo náng	100
 舒血寧注射液	shū xuè níng zhù shè yè	100
 疏血通注射液	shū xuè tōng zhù shè yè	100
+輸血用抗凝液	shū xuè yòng kàng níng yè	100
 舒咽清噴霧劑	shū yàn qīng pēn wù jì	100
 蜀中奶味鈣片	shǔ zhōng nǎi wèi gài piàn	100
 雙參安神糖漿	shuāng cān ān shén táng jiāng	100
@@ -6934,10 +7398,14 @@ sort: by_weight
 雙分僞麻膠囊	shuāng fēn wěi má jiāo náng	100
 雙酚偽麻膠囊	shuāng fēn wěi má jiāo náng	100
 雙酚偽麻糖漿	shuāng fēn wěi má táng jiāng	100
+爽膚水和乳液	shuǎng fū shuǐ hé rǔ yè	100
 雙骨三子膠囊	shuāng gǔ sān zǐ jiāo náng	100
 雙瓜糖安膠囊	shuāng guā táng ān jiāo náng	100
 雙虎清膽顆粒	shuāng hǔ qīng dǎn kē lì	100
 雙虎清肝顆粒	shuāng hǔ qīng gān kē lì	100
+雙黃連滴眼劑	shuāng huáng lián dī yǎn jì	100
+雙黃連滴眼液	shuāng huáng lián dī yǎn yè	100
+雙黃連滴注液	shuāng huáng lián dī zhù yè	100
 雙黃連咀嚼片	shuāng huáng lián jǔ jué piàn	100
 雙黃連口服液	shuāng huáng lián kǒu fú yè	100
 雙黃連泡騰片	shuāng huáng lián pào téng piàn	100
@@ -6946,6 +7414,7 @@ sort: by_weight
 雙黃連注射液	shuāng huáng lián zhù shè yè	100
 雙黃平喘顆粒	shuāng huáng píng chuǎn kē lì	100
 雙黃消炎膠囊	shuāng huáng xiāo yán jiāo náng	100
+雙黃止癢洗液	shuāng huáng zhǐ yǎng xǐ yè	100
 雙解止瀉顆粒	shuāng jiě zhǐ xiè kē lì	100
 雙金連口服液	shuāng jīn lián kǒu fú yè	100
 雙金胃瘍膠囊	shuāng jīn wèi yáng jiāo náng	100
@@ -6953,6 +7422,7 @@ sort: by_weight
 雙氯非那胺片	shuāng lǜ fēi nà àn piàn	100
 雙氯芬酸鉀片	shuāng lǜ fēn suān jiǎ piàn	100
 雙氯芬酸鈉片	shuāng lǜ fēn suān nà piàn	100
+雙嘧啶混懸液	shuāng mì dìng hùn xuán yè	100
 雙撲偽麻膠囊	shuāng pū wěi má jiāo náng	100
 雙撲偽麻顆粒	shuāng pū wěi má kē lì	100
 雙嗪利血平片	shuāng qín lì xuè píng piàn	100
@@ -6962,6 +7432,8 @@ sort: by_weight
 雙炔失碳酯片	shuāng quē shī tàn zhǐ piàn	100
 雙香排石顆粒	shuāng xiāng pái shí kē lì	100
 雙香順氣膠囊	shuāng xiāng shùn qì jiāo náng	100
+雙星明滴眼液	shuāng xīng míng dī yǎn yè	100
+雙氧水滴耳液	shuāng yǎng shuǐ dī ěr yè	100
 雙唑泰泡騰片	shuāng zuò tài pào téng piàn	100
 水飛薊賓膠囊	shuǐ fēi jì bīn jiāo náng	100
 水飛薊素膠囊	shuǐ fēi jì sù jiāo náng	100
@@ -6994,22 +7466,31 @@ sort: by_weight
 四味益氣膠囊	sì wèi yì qì jiāo náng	100
 四子填精膠囊	sì zǐ tián jīng jiāo náng	100
 松補力口服液	sōng bǔ lì kǒu fú yè	100
+松膽元胡搽劑	sōng dǎn yuán hú chá jì	100
 楤木胃痛顆粒	sǒng mù wèi tòng kē lì	100
 搜刮民脂民膏	sōu guā mín zhī mín gāo	100
 速碧林注射液	sù bì lín zhù shè yè	100
 素高捷療眼膏	sù gāo jié liáo yǎn gāo	100
 蘇黃止咳膠囊	sū huáng zhǐ ké jiāo náng	100
 速克感冒膠囊	sù kè gǎn mào jiāo náng	100
+蘇木素染色液	sū mù sù rǎn sè yè	100
 蘇南山肚痛丸	sū nán shān dù tòng wán	100
+速溶阿膠沖劑	sù róng ē jiāo chōng jì	100
 速溶金鈣顆粒	sù róng jīn gài kē lì	100
+速效感冒沖劑	sù xiào gǎn mào chōng jì	100
 速效感冒膠囊	sù xiào gǎn mào jiāo náng	100
 速效感冒顆粒	sù xiào gǎn mào kē lì	100
 速效傷風膠囊	sù xiào shāng fēng jiāo náng	100
 速效心痛滴丸	sù xiào xīn tòng dī wán	100
 速效止瀉膠囊	sù xiào zhǐ xiè jiāo náng	100
 速止水瀉顆粒	sù zhǐ shuǐ xiè kē lì	100
+酸棗仁口服液	suān zǎo rén kǒu fú yè	100
 損傷復元糖漿	sǔn shāng fù yuán táng jiāng	100
 損傷接骨藥膏	sǔn shāng jiē gǔ yào gāo	100
+羧苄青黴素鈉	suō biàn qīng méi sù nà	100
+羧苄西林二鈉	suō biàn xī lín èr nà	100
+羧苄西林雙鈉	suō biàn xī lín shuāng nà	100
+羧苄西林茚滿	suō biàn xī lín yìn mǎn	100
 縮宮素注射液	suō gōng sù zhù shè yè	100
 羧甲司坦含片	suō jiǎ sī tǎn hán piàn	100
 羧甲司坦顆粒	suō jiǎ sī tǎn kē lì	100
@@ -7018,6 +7499,9 @@ sort: by_weight
 他克莫司膠囊	tā kè mò sī jiāo náng	100
 他克莫司軟膏	tā kè mò sī ruǎn gāo	100
 他扎羅汀乳膏	tā zhā luó tīng rǔ gāo	100
+酞丁安滴眼液	tài dīng ān dī yǎn yè	100
+酞丁胺滴眼液	tài dīng àn dī yǎn yè	100
+酞丁安眼滴液	tài dīng ān yǎn dī yè	100
 太和洞久咳丸	tài hé dòng jiǔ ké wán	100
 酞磺胺噻唑片	tài huáng àn sāi zuò piàn	100
 泰諾寧康膠囊	tài nuò níng kāng jiāo náng	100
@@ -7028,8 +7512,11 @@ sort: by_weight
 碳酸鋰緩釋片	tàn suān lǐ huǎn shì piàn	100
 坦索羅辛膠囊	tǎn suǒ luó xīn jiāo náng	100
 彈性酶腸溶片	tán xìng méi cháng róng piàn	100
+糖酸鈣口服液	táng suān gài kǒu fú yè	100
 糖泰得口服液	táng tài dé kǒu fú yè	100
 桃芪生血膠囊	táo qí shēng xuè jiāo náng	100
+特比萘芬搽劑	tè bǐ nài fēn chá jì	100
+特比萘芬溶液	tè bǐ nài fēn róng yè	100
 特比萘芬乳膏	tè bǐ nài fēn rǔ gāo	100
 特比萘芬軟膏	tè bǐ nài fēn ruǎn gāo	100
 特非那丁膠囊	tè fēi nà dīng jiāo náng	100
@@ -7072,6 +7559,7 @@ sort: by_weight
 鐵棒錘止痛膏	tiě bàng chuí zhǐ tòng gāo	100
 鐵皮楓斗膠囊	tiě pí fēng dòu jiāo náng	100
 鐵皮楓斗顆粒	tiě pí fēng dòu kē lì	100
+鐵亞鐵混合液	tiě yà tiě hùn hé yè	100
 葶藶降血膠囊	tíng lì jiàng xuè jiāo náng	100
 葶藶降血脂片	tíng lì jiàng xuè zhī piàn	100
 通便秘口服液	tōng biàn mì kǒu fú yè	100
@@ -7130,19 +7618,24 @@ sort: by_weight
 托姆斯顆粒層	tuō mǔ sī kē lì céng	100
 橢圓環形墊片	tuǒ yuán huán xíng diàn piàn	100
 娃娃寧泡騰片	wá wa níng pào téng piàn	100
+外參比補充液	wài cān bǐ bǔ chōng yè	100
 外感風痧顆粒	wài gǎn fēng shā kē lì	100
 皖貝止咳膠囊	wǎn bèi zhǐ ké jiāo náng	100
 萬金香氣霧劑	wàn jīn xiāng qì wù jì	100
 萬拉法新膠囊	wàn lā fǎ xīn jiāo náng	100
 萬乃洛韋膠囊	wàn nǎi luò wéi jiāo náng	100
 萬托林氣霧劑	wàn tuō lín qì wù jì	100
+萬托林霧化液	wàn tuō lín wù huà yè	100
 尪痹復康顆粒	wāng bì fù kāng kē lì	100
 王回回狗皮膏	wáng huí hui gǒu pí gāo	100
+維氨啉滴眼液	wéi ān lín dī yǎn yè	100
 維胺酯維乳膏	wéi àn zhǐ wéi rǔ gāo	100
 維丙胺注射液	wéi bǐng àn zhù shè yè	100
 胃腸安丸水丸	wèi cháng ān wán shuǐ wán	100
+胃超聲顯像液	wèi chāo shēng xiǎn xiàng yè	100
 維橙皮苷顆粒	wéi chéng pí gān kē lì	100
 微達康口服液	wēi dá kāng kǒu fú yè	100
+胃蛋白酶合劑	wèi dàn bái méi hé jì	100
 胃蛋白酶顆粒	wèi dàn bái méi kē lì	100
 維顛茄鋁膠囊	wéi diān qié lǚ jiāo náng	100
 維顛茄鋁鎂片	wéi diān qié lǚ měi piàn	100
@@ -7163,6 +7656,7 @@ sort: by_weight
 維鋅鐵鈣膠囊	wéi xīn tiě gài jiāo náng	100
 維血寧口服液	wéi xuè níng kǒu fú yè	100
 蚊蟲叮咬軟膏	wén chóng dīng yǎo ruǎn gāo	100
+溫經養血合劑	wēn jīng yǎng xuè hé jì	100
 文拉法辛膠囊	wén lā fǎ xīn jiāo náng	100
 溫腎前列膠囊	wēn shèn qián liè jiāo náng	100
 溫腎蘇拉甫片	wēn shèn sū lā fǔ piàn	100
@@ -7171,6 +7665,8 @@ sort: by_weight
 戊巴比妥鈉片	wù bā bǐ tuǒ nà piàn	100
 烏苯美司膠囊	wū běn měi sī jiāo náng	100
 烏丹降脂顆粒	wū dān jiàng zhī kē lì	100
+無敵止痛搽劑	wú dí zhǐ tòng chá jì	100
+戊二醛消毒液	wù èr quán xiāo dú yè	100
 無環鳥苷軟膏	wú huán niǎo gān ruǎn gāo	100
 無環鳥苷眼膏	wú huán niǎo gān yǎn gāo	100
 烏雞白鳳膠囊	wū jī bái fèng jiāo náng	100
@@ -7184,10 +7680,14 @@ sort: by_weight
 五加生化膠囊	wǔ jiā shēng huà jiāo náng	100
 烏蘭三味湯散	wū lán sān wèi tāng sàn	100
 五淋化石膠囊	wǔ lín huà shí jiāo náng	100
+烏苓蓯蓉合劑	wū líng cōng róng hé jì	100
 五靈肝復膠囊	wǔ líng gān fù jiāo náng	100
 五靈止痛膠囊	wǔ líng zhǐ tòng jiāo náng	100
+烏洛托品溶液	wū luò tuō pǐn róng yè	100
 五仁醇軟膠囊	wǔ rén chún ruǎn jiāo náng	100
+無色酚酞試液	wú sè fēn tài shì yè	100
 五參芪口服液	wǔ shēn qí kǒu fú yè	100
+無水氨苄西林	wú shuǐ ān biàn xī lín	100
 戊四氮注射液	wù sì dàn zhù shè yè	100
 戊四硝酸酯片	wù sì xiāo suān zhǐ piàn	100
 戊酸雌二醇片	wù suān cí èr chún piàn	100
@@ -7215,6 +7715,7 @@ sort: by_weight
 西洛他唑膠囊	xī luò tā zuò jiāo náng	100
 西咪替丁膠囊	xī mī tì dīng jiāo náng	100
 西尼地平膠囊	xī ní dì píng jiāo náng	100
+西帕依固齦液	xī pà yī gù kěn yè	100
 息熱痛注射液	xī rè tòng zhù shè yè	100
 西沙必利膠囊	xī shā bì lì jiāo náng	100
 系統基礎晶片	xì tǒng jī chǔ jīng piàn	100
@@ -7226,11 +7727,13 @@ sort: by_weight
 嚇得魂飛魄散	xià de hún fēi pò sàn	100
 夏枯草口服液	xià kū cǎo kǒu fú yè	100
 夏桑菊口服液	xià sāng jú kǒu fú yè	100
+夏天無滴眼液	xià tiān wú dī yǎn yè	100
 夏天無注射液	xià tiān wú zhù shè yè	100
 狹葉紅景天片	xiá yè hóng jǐng tiān piàn	100
 現代藥物製劑	xiàn dài yào wù zhì jì	100
 顯鋒感冒膠囊	xiǎn fēng gǎn mào jiāo náng	100
 先鋒四號膠囊	xiān fēng sì hào jiāo náng	100
+仙藿補腎合劑	xiān huò bǔ shèn hé jì	100
 仙戟補腎膠囊	xiān jǐ bǔ shèn jiāo náng	100
 仙靈骨葆膠囊	xiān líng gǔ bǎo jiāo náng	100
 仙芪眩寧顆粒	xiān qí xuàn níng kē lì	100
@@ -7369,6 +7872,7 @@ sort: by_weight
 硝普鈉注射液	xiāo pǔ nà zhù shè yè	100
 小青龍口服液	xiǎo qīng lóng kǒu fú yè	100
 消乳散結膠囊	xiāo rǔ sàn jié jiāo náng	100
+消食健兒沖劑	xiāo shí jiàn ér chōng jì	100
 消食健兒顆粒	xiāo shí jiàn ér kē lì	100
 消食健兒糖漿	xiāo shí jiàn ér táng jiāng	100
 消食開胃顆粒	xiāo shí kāi wèi kē lì	100
@@ -7395,14 +7899,21 @@ sort: by_weight
 蟹黃膚寧軟膏	xiè huáng fū níng ruǎn gāo	100
 纈沙坦分散片	xié shā tǎn fēn sǎn piàn	100
 心達康分散片	xīn dá kāng fēn sǎn piàn	100
+新地松滴眼液	xīn dì sōng dī yǎn yè	100
 辛伐他汀滴丸	xīn fá tā tīng dī wán	100
 辛伐他汀膠囊	xīn fá tā tīng jiāo náng	100
 辛芳鼻炎膠囊	xīn fāng bí yán jiāo náng	100
 新複方大青葉	xīn fù fāng dà qīng yè	100
+新福林滴眼劑	xīn fú lín dī yǎn jì	100
+新福林滴眼液	xīn fú lín dī yǎn yè	100
 新膚蟎靈軟膏	xīn fū mǎn líng ruǎn gāo	100
 新膚蛇脂軟膏	xīn fū shé zhī ruǎn gāo	100
+新潔而滅溶液	xīn jié ér miè róng yè	100
 心可舒咀嚼片	xīn kě shū jǔ jué piàn	100
+新樂敦滴眼液	xīn lè dūn dī yǎn yè	100
 心脈隆注射液	xīn mài lóng zhù shè yè	100
+新黴素滴眼劑	xīn méi sù dī yǎn jì	100
+新黴素滴眼液	xīn méi sù dī yǎn yè	100
 心腦清軟膠囊	xīn nǎo qīng ruǎn jiāo náng	100
 心腦舒口服液	xīn nǎo shū kǒu fú yè	100
 心腦舒通膠囊	xīn nǎo shū tōng jiāo náng	100
@@ -7425,10 +7936,12 @@ sort: by_weight
 行氣活血顆粒	xíng qì huó xuè kē lì	100
 杏仁止咳顆粒	xìng rén zhǐ ké kē lì	100
 杏仁止咳糖漿	xìng rén zhǐ ké táng jiāng	100
+杏蘇感冒沖劑	xìng sū gǎn mào chōng jì	100
 杏蘇感冒顆粒	xìng sū gǎn mào kē lì	100
 杏蘇止咳顆粒	xìng sū zhǐ ké kē lì	100
 杏蘇止咳糖漿	xìng sū zhǐ ké táng jiāng	100
 杏香兔耳風片	xìng xiāng tù ěr fēng piàn	100
+熊膽粉滴眼液	xióng dǎn fěn dī yǎn yè	100
 熊膽救心丹丸	xióng dǎn jiù xīn dān wán	100
 雄根增長膠囊	xióng gēn zēng zhǎng jiāo náng	100
 熊去氧膽酸片	xióng qù yǎng dǎn suān piàn	100
@@ -7446,7 +7959,9 @@ sort: by_weight
 虛寒胃痛顆粒	xū hán wèi tòng kē lì	100
 玄柏爽聲顆粒	xuán bǎi shuǎng shēng kē lì	100
 宣肺止咳顆粒	xuān fèi zhǐ ké kē lì	100
+宣肺止嗽合劑	xuān fèi zhǐ sòu hé jì	100
 宣肺止嗽顆粒	xuān fèi zhǐ sòu kē lì	100
+玄麥甘桔沖劑	xuán mài gān jú chōng jì	100
 玄麥甘桔含片	xuán mài gān jú hán piàn	100
 玄麥甘桔膠囊	xuán mài gān jú jiāo náng	100
 玄麥甘桔顆粒	xuán mài gān jú kē lì	100
@@ -7478,6 +7993,7 @@ sort: by_weight
 亞線粒體顆粒	yà xiàn lì tǐ kē lì	100
 亞葉酸鈣膠囊	yà yè suān gài jiāo náng	100
 眼安寧口服液	yǎn ān níng kǒu fú yè	100
+眼氨肽滴眼液	yǎn ān tài dī yǎn yè	100
 眼氨肽注射液	yǎn ān tài zhù shè yè	100
 煙胺佔替諾片	yān àn zhàn tì nuò piàn	100
 延參健胃膠囊	yán cān jiàn wèi jiāo náng	100
@@ -7490,6 +8006,7 @@ sort: by_weight
 延胡索乙素片	yán hú suǒ yǐ sù piàn	100
 延胡胃安膠囊	yán hú wèi ān jiāo náng	100
 巖黃連注射液	yán huáng lián zhù shè yè	100
+研立爽滴眼液	yán lì shuǎng dī yǎn yè	100
 延齡長春膠囊	yán líng cháng chūn jiāo náng	100
 岩鹿乳康膠囊	yán lù rǔ kāng jiāo náng	100
 炎熱清軟膠囊	yán rè qīng ruǎn jiāo náng	100
@@ -7564,6 +8081,7 @@ sort: by_weight
 氧化型緩蝕劑	yǎng huà xíng huǎn shí jì	120
 氧化型殺菌劑	yǎng huà xíng shā jūn jì	120
 羊藿三川顆粒	yáng huò sān chuān kē lì	100
+氧哌嗪青黴素	yǎng pài qín qīng méi sù	100
 洋參保肺膠囊	yáng shēn bǎo fèi jiāo náng	100
 洋參保肺顆粒	yáng shēn bǎo fèi kē lì	100
 養腎補血顆粒	yǎng shèn bǔ xuè kē lì	100
@@ -7573,13 +8091,16 @@ sort: by_weight
 養血固本膠囊	yǎng xuè gù běn jiāo náng	100
 養血清腦顆粒	yǎng xuè qīng nǎo kē lì	100
 養血榮髮顆粒	yǎng xuè róng fā kē lì	100
+養血生髮洗劑	yǎng xuè shēng fà xǐ jì	100
 養血飲口服液	yǎng xuè yǐn kǒu fú yè	100
 養陰扶正膠囊	yǎng yīn fú zhèng jiāo náng	100
 養陰護齒含片	yǎng yīn hù chǐ hán piàn	100
 養陰降壓膠囊	yǎng yīn jiàng yā jiāo náng	100
+養陰口香合劑	yǎng yīn kǒu xiāng hé jì	100
 養陰清肺顆粒	yǎng yīn qīng fèi kē lì	100
 養陰清肺糖漿	yǎng yīn qīng fèi táng jiāng	100
 養陰清胃顆粒	yǎng yīn qīng wèi kē lì	100
+養陰生血合劑	yǎng yīn shēng xuè hé jì	100
 養陰通秘膠囊	yǎng yīn tōng mì jiāo náng	100
 養真生發顆粒	yǎng zhēn shēng fà kē lì	100
 養正消積膠囊	yǎng zhèng xiāo jī jiāo náng	100
@@ -7613,6 +8134,7 @@ sort: by_weight
 宜肺止咳顆粒	yí fèi zhǐ ké kē lì	100
 異福酰胺膠囊	yì fú xiān àn jiāo náng	100
 益鈣寧注射液	yì gài níng zhù shè yè	100
+益肝除濕合劑	yì gān chú shī hé jì	100
 乙肝解毒膠囊	yǐ gān jiě dú jiāo náng	100
 已肝解毒膠囊	yǐ gān jiě dú jiāo náng	100
 益肝靈分散片	yì gān líng fēn sǎn piàn	100
@@ -7641,6 +8163,7 @@ sort: by_weight
 依諾沙星膠囊	yī nuò shā xīng jiāo náng	100
 依諾沙星乳膏	yī nuò shā xīng rǔ gāo	100
 依諾沙星軟膏	yī nuò shā xīng ruǎn gāo	100
+異帕米星注液	yì pà mǐ xīng zhù yè	100
 依帕司他膠囊	yī pà sī tā jiāo náng	100
 依普黃酮膠囊	yī pǔ huáng tóng jiāo náng	100
 益氣補腎膠囊	yì qì bǔ shèn jiāo náng	100
@@ -7663,6 +8186,7 @@ sort: by_weight
 益氣止消膠囊	yì qì zhǐ xiāo jiāo náng	100
 益氣止血顆粒	yì qì zhǐ xuè kē lì	100
 伊曲康唑膠囊	yī qǔ kāng zuò jiāo náng	100
+依沙吖啶溶液	yī shā ā dìng róng yè	100
 依沙吖啶軟膏	yī shā ā dìng ruǎn gāo	100
 易善復注射液	yì shàn fù zhù shè yè	100
 異山梨酯乳膏	yì shān lí zhǐ rǔ gāo	100
@@ -7671,6 +8195,7 @@ sort: by_weight
 益腎十七味丸	yì shèn shí qī wèi wán	100
 益腎消渴膠囊	yì shèn xiāo kě jiāo náng	100
 益腎興陽膠囊	yì shèn xīng yáng jiāo náng	100
+益腎養元合劑	yì shèn yǎng yuán hé jì	100
 益腎止暈顆粒	yì shèn zhǐ yūn kē lì	100
 益腎壯骨膠囊	yì shèn zhuàng gǔ jiāo náng	100
 益視明目顆粒	yì shì míng mù kē lì	100
@@ -7685,9 +8210,19 @@ sort: by_weight
 異戊巴比妥片	yì wù bā bǐ tuǒ piàn	100
 乙烯雌酚軟膏	yǐ xī cí fēn ruǎn gāo	100
 乙酰胺注射液	yǐ xiān àn zhù shè yè	100
+乙酰穀氨酰胺	yǐ xiān gǔ ān xiān àn	100
+乙酰穀胱甘肽	yǐ xiān gǔ guāng gān tài	100
+乙酰基青霉胺	yǐ xiān jī qīng méi àn	100
+乙酰吉他黴素	yǐ xiān jí tā méi sù	100
+乙酰吉它黴素	yǐ xiān jí tā méi sù	100
+乙酰羅沙替丁	yǐ xiān luó shā tì dīng	100
+乙酰螺旋黴素	yǐ xiān luó xuán méi sù	100
+乙酰麥迪黴素	yǐ xiān mài dí méi sù	100
 乙酰水楊酸片	yǐ xiān shuǐ yáng suān piàn	100
+乙酰水楊酰胺	yǐ xiān shuǐ yáng xiān àn	100
 乙酰天麻素片	yǐ xiān tiān má sù piàn	100
 乙酰烏頭鹼片	yǐ xiān wū tóu jiǎn piàn	100
+乙酰氧基嗎啡	yǐ xiān yǎng jī mǎ fēi	100
 益心復脈顆粒	yì xīn fù mài kē lì	100
 益心健脾顆粒	yì xīn jiàn pí kē lì	100
 益心康泰膠囊	yì xīn kāng tài jiāo náng	100
@@ -7701,9 +8236,11 @@ sort: by_weight
 益元黃精糖漿	yì yuán huáng jīng táng jiāng	100
 益中生血膠囊	yì zhōng shēng xuè jiāo náng	100
 一洲洋參膠囊	yì zhōu yáng shēn jiāo náng	100
+茵白肝炎沖劑	yīn bái gān yán chōng jì	100
 茵白肝炎膠囊	yīn bái gān yán jiāo náng	100
 茵白肝炎顆粒	yīn bái gān yán kē lì	100
 銀貝止咳顆粒	yín bèi zhǐ ké kē lì	100
+陰必清消毒液	yīn bì qīng xiāo dú yè	100
 銀參通絡膠囊	yín cān tōng luò jiāo náng	100
 茵陳退黃膠囊	yīn chén tuì huáng jiāo náng	100
 茵陳五苓糖漿	yīn chén wǔ líng táng jiāng	100
@@ -7711,6 +8248,7 @@ sort: by_weight
 吲達帕胺膠囊	yǐn dá pà àn jiāo náng	100
 茵膽平肝膠囊	yīn dǎn píng gān jiāo náng	100
 銀丹心泰滴丸	yín dān xīn tài dī wán	100
+吲哚美辛搽劑	yǐn duǒ měi xīn chá jì	100
 吲哚美辛膠囊	yǐn duǒ měi xīn jiāo náng	100
 吲哚美辛乳膏	yǐn duǒ měi xīn rǔ gāo	100
 吲哚美辛軟膏	yǐn duǒ měi xīn ruǎn gāo	100
@@ -7724,8 +8262,11 @@ sort: by_weight
 蚓激酶腸溶片	yǐn jī méi cháng róng piàn	100
 銀桔利咽含片	yín jú lì yān hán piàn	100
 銀菊清咽顆粒	yín jú qīng yàn kē lì	100
+茵蓮清肝合劑	yīn lián qīng gān hé jì	100
 茵蓮清肝顆粒	yīn lián qīng gān kē lì	100
+引流仍有膿液	yǐn liú réng yǒu nóng yè	100
 茵芪肝復顆粒	yīn qí gān fù kē lì	100
+銀翹解毒合劑	yín qiào jiě dú hé jì	100
 銀翹解毒膠囊	yín qiào jiě dú jiāo náng	100
 銀翹解毒顆粒	yín qiào jiě dú kē lì	100
 銀翹傷風膠囊	yín qiào shāng fēng jiāo náng	100
@@ -7745,12 +8286,14 @@ sort: by_weight
 茵梔黃注射液	yīn zhī huáng zhù shè yè	100
 茵梔益肝顆粒	yīn zhī yì gān kē lì	100
 嬰兒保肺寧散	yīng ér bǎo fèi níng sàn	100
+鷹牌靈芝沖劑	yīng pái líng zhī chōng jì	100
 罌粟鹼注射液	yīng sù jiǎn zhù shè yè	100
 蛹蟲草菌膠囊	yǒng chóng cǎo jūn jiāo náng	100
 右苄替米特片	yòu biàn tì mǐ tè piàn	100
 右美沙芬緩片	yòu měi shā fēn huǎn piàn	100
 右美沙芬膠囊	yòu měi shā fēn jiāo náng	100
 右美沙芬顆粒	yòu měi shā fēn kē lì	100
+右美沙芬溶液	yòu měi shā fēn róng yè	100
 右美沙芬糖漿	yòu měi shā fēn táng jiāng	100
 右旋布洛芬片	yòu xuán bù luò fēn piàn	100
 右旋布洛芬栓	yòu xuán bù luò fēn shuān	100
@@ -7765,8 +8308,11 @@ sort: by_weight
 餘甘子粉膠囊	yú gān zǐ fěn jiāo náng	100
 瘀淨飲口服液	yū jìng yǐn kǒu fú yè	100
 玉蘭降糖膠囊	yù lán jiàng táng jiāo náng	100
+餘麥口咽合劑	yú mài kǒu yān hé jì	100
 玉屏風口服液	yù píng fēng kǒu fú yè	100
 愈消復原膠囊	yù xiāo fù yuán jiāo náng	100
+魚腥草滴眼劑	yú xīng cǎo dī yǎn jì	100
+魚腥草滴眼液	yú xīng cǎo dī yǎn yè	100
 魚腥草素鈉片	yú xīng cǎo sù nà piàn	100
 魚腥草注射液	yú xīng cǎo zhù shè yè	100
 玉葉解毒顆粒	yù yè jiě dú kē lì	100
@@ -7785,7 +8331,9 @@ sort: by_weight
 運德素注射液	yùn dé sù zhù shè yè	100
 孕婦金花膠囊	yùn fù jīn huā jiāo náng	100
 孕婦康口服液	yùn fù kāng kǒu fú yè	100
+孕康口服注液	yùn kāng kǒu fú zhù yè	100
 孕三烯酮膠囊	yùn sān xī tóng jiāo náng	100
+雲實感冒合劑	yún shí gǎn mào hé jì	100
 孕酮檢測試劑	yùn tóng jiǎn cè shì jì	100
 雲香十五味丸	yún xiāng shí wǔ wèi wán	100
 雲芝多糖膠囊	yún zhī duō táng jiāo náng	100
@@ -7807,6 +8355,7 @@ sort: by_weight
 扎萊普隆膠囊	zhā lái pǔ lóng jiāo náng	100
 楂麥健脾顆粒	zhā mài jiàn pí kē lì	100
 楂明調脂顆粒	zhā míng diào zhī kē lì	100
+粘蛋白腺癌液	zhān dàn bái xiàn ái yè	100
 樟柳鹼注射液	zhāng liǔ jiǎn zhù shè yè	100
 照山白浸膏片	zhào shān bái jìn gāo piàn	100
 蔗糖鐵注射液	zhè táng tiě zhù shè yè	100
@@ -7821,8 +8370,10 @@ sort: by_weight
 珍芪降糖膠囊	zhēn qí jiàng táng jiāo náng	100
 貞芪利咽顆粒	zhēn qí lì yān kē lì	100
 貞蓉丹口服液	zhēn róng dān kǒu fú yè	100
+珍視明滴眼液	zhēn shì míng dī yǎn yè	100
 珍芝安神膠囊	zhēn zhī ān shén jiāo náng	100
 珍珠層粉膠囊	zhēn zhū céng fěn jiāo náng	100
+正柴胡飲沖劑	zhèng chái hú yǐn chōng jì	100
 正柴胡飲膠囊	zhèng chái hú yǐn jiāo náng	100
 正柴胡飲顆粒	zhèng chái hú yǐn kē lì	100
 正精風痛寧片	zhèng jīng fēng tòng níng piàn	100
@@ -7844,6 +8395,7 @@ sort: by_weight
 止咳橘紅顆粒	zhǐ ké jú hóng kē lì	100
 止咳靈口服液	zhǐ ké líng kǒu fú yè	100
 止咳寧嗽膠囊	zhǐ ké níng sòu jiāo náng	100
+止咳枇杷合劑	zhǐ ké pí pá hé jì	100
 止咳祛痰顆粒	zhǐ ké qū tán kē lì	100
 止咳祛痰糖漿	zhǐ ké qū tán táng jiāng	100
 止痢十五味丸	zhǐ lì shí wǔ wèi wán	100
@@ -7852,6 +8404,7 @@ sort: by_weight
 治糜靈泡騰片	zhì mí líng pào téng piàn	100
 智能安全芯片	zhì néng ān quán xīn piàn	100
 智能手機芯片	zhì néng shǒu jī xīn piàn	100
+枳實芍藥散方	zhǐ shí sháo yào sàn fāng	100
 枳術寬中膠囊	zhǐ shù kuān zhōng jiāo náng	100
 止嗽立效膠囊	zhǐ sòu lì xiào jiāo náng	100
 制酸止痛膠囊	zhì suān zhǐ tòng jiāo náng	100
@@ -7887,6 +8440,7 @@ sort: by_weight
 珠子肝泰膠囊	zhū zi gān tài jiāo náng	100
 轉化糖注射液	zhuǎn huà táng zhù shè yè	100
 轉移因子膠囊	zhuǎn yí yīn zǐ jiāo náng	100
+轉移因子溶液	zhuǎn yí yīn zǐ róng yè	100
 壯骨伸筋膠囊	zhuàng gǔ shēn jīn jiāo náng	100
 壯腎健腰膠囊	zhuàng shèn jiàn yāo jiāo náng	100
 壯腎益氣顆粒	zhuàng shèn yì qì kē lì	100
@@ -7901,6 +8455,7 @@ sort: by_weight
 紫桔止咳糖漿	zǐ jú zhǐ ké táng jiāng	100
 紫蔻丸大蜜丸	zǐ kòu wán dà mì wán	100
 紫樓胃康膠囊	zǐ lóu wèi kāng jiāo náng	100
+紫色石蕊試液	zǐ sè shí ruǐ shì yè	100
 紫杉醇注射液	zǐ shān chún zhù shè yè	100
 滋腎健腦顆粒	zī shèn jiàn nǎo kē lì	100
 滋腎明目膠囊	zī shèn míng mù jiāo náng	100
@@ -7924,6 +8479,7 @@ sort: by_weight
 左羥丙哌嗪片	zuǒ qiǎng bǐng pài qín piàn	100
 左炔諾孕酮片	zuǒ quē nuò yùn tóng piàn	100
 左旋多巴膠囊	zuǒ xuán duō bā jiāo náng	100
+左旋咪唑搽劑	zuǒ xuán mī zuò chá jì	100
 左氧氟沙星片	zuǒ yǎng fú shā xīng piàn	100
 左乙拉西坦片	zuǒ yǐ lā xī tǎn piàn	100
 阿苯達唑咀嚼片	ā běn dá zuò jǔ jué piàn	100
@@ -7933,6 +8489,7 @@ sort: by_weight
 阿法羅定注射液	ā fǎ luó dìng zhù shè yè	100
 阿歸養血口服液	ā guī yǎng xuè kǒu fú yè	100
 阿加曲班注射液	ā jiā qǔ bān zhù shè yè	100
+阿米卡星滴眼液	ā mǐ kǎ xīng dī yǎn yè	100
 阿米卡星注射液	ā mǐ kǎ xīng zhù shè yè	100
 阿米替林注射液	ā mǐ tì lín zhù shè yè	100
 阿莫西林分散片	ā mò xī lín fēn sǎn piàn	100
@@ -7943,6 +8500,7 @@ sort: by_weight
 阿撲嗎啡注射液	ā pū mǎ fēi zhù shè yè	100
 阿奇黴素腸溶片	ā qí méi sù cháng róng piàn	100
 阿奇黴素分散片	ā qí méi sù fēn sàn piàn	100
+阿奇黴素混懸劑	ā qí méi sù hùn xuán jì	100
 阿奇黴素顆粒劑	ā qí méi sù kē lì jì	100
 阿奇黴素軟膠囊	ā qí méi sù ruǎn jiāo náng	100
 阿奇黴素注射液	ā qí méi sù zhù shè yè	100
@@ -7958,6 +8516,7 @@ sort: by_weight
 阿託伐他汀鈣片	ā tuō fá tā tīng gài piàn	100
 阿魏麝香化積膏	ā wèi shè xiāng huà jī gāo	100
 阿魏酸鈉注射液	ā wèi suān nà zhù shè yè	100
+阿昔洛韋滴眼液	ā xī luò wéi dī yǎn yè	100
 阿昔洛韋分散片	ā xī luò wéi fēn sǎn piàn	100
 阿昔洛韋緩釋片	ā xī luò wéi huǎn shì piàn	100
 阿昔洛韋咀嚼片	ā xī luò wéi jǔ jué piàn	100
@@ -7967,6 +8526,8 @@ sort: by_weight
 愛活尿通腸溶片	ài huó niào tōng cháng róng piàn	100
 艾司洛爾注射液	ài sī luò ěr zhù shè yè	100
 艾司唑侖注射液	ài sī zuò lún zhù shè yè	100
+氨苄青黴素鈉栓	ān biàn qīng méi sù nà shuān	100
+氨苄西林丙磺舒	ān biàn xī lín bǐng huáng shū	100
 氨丁三醇注射液	ān dīng sān chún zhù shè yè	100
 氨酚比林注射液	ān fēn bǐ lín zhù shè yè	100
 氨酚柴胡注射液	ān fēn chái hú zhù shè yè	100
@@ -8003,15 +8564,17 @@ sort: by_weight
 氨糖美辛腸溶片	ān táng měi xīn cháng róng piàn	100
 安特鎮腦寧顆粒	ān tè zhèn nǎo níng kē lì	100
 氨溴索緩釋膠囊	ān xiù suǒ huǎn shì jiāo náng	100
+氨溴索口服溶液	ān xiù suǒ kǒu fú róng yè	100
 氨溴特羅口服液	ān xiù tè luó kǒu fú yè	100
 氨愈美麻分散片	ān yù měi má fēn sǎn piàn	100
 安置精華散膠囊	ān zhì jīng huá sàn jiāo náng	100
 昂丹司瓊注射液	áng dān sī qióng zhù shè yè	100
 昂立一號口服液	áng lì yī hào kǒu fú yè	100
+奧布卡因滴眼液	ào bù kǎ yīn dī yǎn yè	100
 奧芬溴銨注射液	ào fēn xiù ǎn zhù shè yè	100
 奧拉西坦注射液	ào lā xī tǎn zhù shè yè	100
+奧洛他定滴眼液	ào luò tā dìng dī yǎn yè	100
 奧美拉唑腸溶片	ào měi lā zuò cháng róng piàn	100
-奧沙拉嗪鈉膠囊	ào shā lā qín nà jiāo náng	100
 奧沙拉秦鈉膠囊	ào shā lā qín nà jiāo náng	100
 奧沙利鉑注射液	ào shā lì bó zhù shè yè	100
 奧沙普嗪腸溶片	ào shā pǔ qín cháng róng piàn	100
@@ -8038,7 +8601,6 @@ sort: by_weight
 柏子滋心濃縮丸	bǎi zǐ zī xīn nóng suō wán	100
 板藍解毒注射液	bǎn lán jiě dú zhù shè yè	100
 斑蝥酸鈉注射液	bān máo suān nà zhù shè yè	100
-板式換熱器板片	bǎn shì huàn rè qì bǎn piàn	100
 胞磷膽鹼鈉膠囊	bāo lín dǎn jiǎn nà jiāo náng	100
 保靈孕寶口服液	bǎo líng yùn bǎo kǒu fú yè	100
 鮑曼伯克抑制劑	bào màn bó kè yì zhì jì	100
@@ -8051,9 +8613,11 @@ sort: by_weight
 倍他司丁注射液	bèi tā sī dīng zhù shè yè	100
 倍他司汀口服液	bèi tā sī tīng kǒu fú yè	100
 倍他司汀注射液	bèi tā sī tīng zhù shè yè	100
+被折磨者的血液	bèi zhé mó zhě de xuè yè	100
 苯海拉明注射液	běn hǎi lā míng zhù shè yè	100
 苯甲酸苄酯搽劑	běn jiǎ suān biàn zhǐ chá jì	100
 苯卡巴肼腸溶片	běn kǎ bā jǐng cháng róng piàn	100
+苯替酪胺口服液	běn tì lào àn kǒu fú yè	100
 苯酰甲硝唑膠囊	běn xiān jiǎ xiāo zuò jiāo náng	100
 苯唑西林鈉膠囊	běn zuò xī lín nà jiāo náng	100
 吡貝地爾緩釋片	bǐ bèi dì ěr huǎn shì piàn	100
@@ -8064,12 +8628,15 @@ sort: by_weight
 吡羅昔康腸溶片	bǐ luó xī kāng cháng róng piàn	100
 吡羅昔康注射液	bǐ luó xī kāng zhù shè yè	100
 鉍鎂碳酸氫鈉片	bì měi tàn suān qīng nà piàn	100
+吡諾克辛滴眼液	bǐ nuò kè xīn dī yǎn yè	100
 吡柔比星注射液	bǐ róu bǐ xīng zhù shè yè	100
 比沙可啶腸溶片	bǐ shā kě dìng cháng róng piàn	100
 萆薢分清丸水丸	bì xiè fēn qīng wán shuǐ wán	100
 碧雲砂乙肝顆粒	bì yún shā yǐ gān kē lì	100
 編號五味子糖漿	biān hào wǔ wèi zǐ táng jiāng	100
-萹蓄大黃滑石研	biǎn xù dà huáng huá shí yán	100
+苄基青黴素鈉鹽	biàn jī qīng méi sù nà yán	100
+苄基去甲利福平	biàn jī qù jiǎ lì fú píng	100
+苄乙二胺青黴素	biàn yǐ èr àn qīng méi sù	100
 表柔比星注射液	biǎo róu bǐ xīng zhù shè yè	100
 別嘌醇緩釋膠囊	bié piào chún huǎn shì jiāo náng	100
 檳藿痛風口服液	bīn huò tòng fēng kǒu fú yè	100
@@ -8081,17 +8648,24 @@ sort: by_weight
 丙酸睾酮注射液	bǐng suān gāo tóng zhù shè yè	100
 丙戊酸鎂緩釋片	bǐng wù suān měi huǎn shì piàn	100
 丙戊酸鈉緩釋片	bǐng wù suān nà huǎn shì piàn	100
+丙戊酸鈉口服液	bǐng wù suān nà kǒu fú yè	100
 丙戊酸鈉糖衣片	bǐng wù suān nà táng yī piàn	100
 丙氧氨酚複方片	bǐng yǎng ān fēn fù fāng piàn	100
+冰珍清目滴眼液	bīng zhēn qīng mù dī yǎn yè	100
+冰珍去翳滴眼液	bīng zhēn qù yì dī yǎn yè	100
 冰梔傷痛氣霧劑	bīng zhī shāng tòng qì wù jì	100
 博萊黴素注射液	bó lái méi sù zhù shè yè	100
+玻璃離子粘固液	bō li lí zǐ zhān gù yè	100
 玻璃酸酶注射液	bō li suān méi zhù shè yè	100
 玻璃酸鈉注射液	bō li suān nà zhù shè yè	100
 搏延補腎斑龍片	bó yán bǔ shèn bān lóng piàn	100
 布比卡因注射液	bù bǐ kǎ yīn zhù shè yè	100
 布布二氏移植片	bù bù èr shì yí zhí piàn	100
 步長腦心通膠囊	bù cháng nǎo xīn tōng jiāo náng	100
+布地奈德鼻噴劑	bù dì nài dé bí pēn jì	100
 布地奈德氣霧劑	bù dì nài dé qì wù jì	100
+布地奈德霧化劑	bù dì nài dé wù huà jì	100
+布林佐胺滴眼液	bù lín zuǒ àn dī yǎn yè	100
 布洛芬乾混懸劑	bù luò fēn gàn hùn xuán jì	100
 布洛芬緩釋膠囊	bù luò fēn huǎn shì jiāo náng	100
 布洛芬混懸滴劑	bù luò fēn hùn xuán dī jì	100
@@ -8150,14 +8724,14 @@ sort: by_weight
 長春瑞濱軟膠囊	cháng chūn ruì bīn ruǎn jiāo náng	100
 長春瑞濱注射液	cháng chūn ruì bīn zhù shè yè	100
 長春西汀注射液	cháng chūn xī tīng zhù shè yè	100
+腸內營養混懸液	cháng nèi yíng yǎng hùn xuán yè	100
 長慶風濕鎮痛片	cháng qìng fēng shī zhèn tòng piàn	100
 腸溶緩釋顆粒劑	cháng róng huǎn shì kē lì jì	100
+腸嗜酸性肉芽腫	cháng shì suān xìng ròu yá zhǒng	100
 常松八味沉香散	cháng sōng bā wèi chén xiāng sàn	100
 陳香露白露膠囊	chén xiāng lòu bái lù jiāo náng	100
-吃了一顆定心丸	chī le yì kē dìng xīn wán	100
 齒痛消炎靈顆粒	chǐ tòng xiāo yán líng kē lì	100
 赤痛消炎靈顆粒	chì tòng xiāo yán líng kē lì	100
-吃下一顆定心丸	chī xià yì kē dìng xīn wán	100
 蟲草被孢菌膠囊	chóng cǎo bèi bāo jūn jiāo náng	100
 蟲草川貝止咳膏	chóng cǎo chuān bèi zhǐ ké gāo	100
 蟲草參芪口服液	chóng cǎo shēn qí kǒu fú yè	100
@@ -8198,14 +8772,10 @@ sort: by_weight
 醋酸氯己定軟膏	cù suān lǜ jǐ dìng ruǎn gāo	100
 醋酸潑尼松龍片	cù suān pō ní sōng lóng piàn	100
 大補陰丸水蜜丸	dà bǔ yīn wán shuǐ mì wán	100
-大柴胡湯用大黃	dà chái hú tāng yòng dà huáng	100
 達肝素鈉注射液	dá gān sù nà zhù shè yè	100
-大黃甘草湯主之	dà huáng gān cǎo tāng zhǔ zhī	100
 大黃黃連瀉心湯	dà huáng huáng lián xiè xīn tāng	100
-大黃石生態系統	dà huáng shí shēng tài xì tǒng	100
 大黃碳酸氫鈉片	dà huáng tàn suān qīng nà piàn	100
 大黃葉綠素銅鈉	dà huáng yè lǜ sù tóng nà	100
-大黃蟄蟲丸主之	dà huáng zhé chóng wán zhǔ zhī	100
 大活絡丸大蜜丸	dà huó luò wán dà mì wán	100
 達卡巴嗪注射液	dá kǎ bā qín zhù shè yè	100
 大顆粒淋巴細胞	dà kē lì lín bā xì bāo	100
@@ -8217,11 +8787,13 @@ sort: by_weight
 丹藍通絡口服液	dān lán tōng luò kǒu fú yè	100
 氮普噻噸注射液	dàn pǔ sāi dūn zhù shè yè	100
 丹參顆粒無糖型	dān shēn kē lì wú táng xíng	100
+膽維丁口服乳液	dǎn wéi dīng kǒu fú rǔ yè	100
 丹溪玉屏風顆粒	dān xī yù píng fēng kē lì	100
 丹香冠心注射液	dān xiāng guān xīn zhù shè yè	100
 單硝酸山梨酯片	dān xiāo suān shān lí zhǐ piàn	100
 膽影葡胺注射液	dǎn yǐng pú àn zhù shè yè	100
 丹中接骨續筋片	dān zhōng jiē gǔ xù jīn piàn	100
+氮卓斯汀鼻噴劑	dàn zhuó sī tīng bí pēn jì	100
 當飛利肝寧膠囊	dāng fēi lì gān níng jiāo náng	100
 當歸補血口服液	dāng guī bǔ xuè kǒu fú yè	100
 當歸腹痛寧滴丸	dāng guī fù tòng níng dī wán	100
@@ -8242,8 +8814,12 @@ sort: by_weight
 地紅黴素腸溶片	dì hóng méi sù cháng róng piàn	100
 地黃潤通口服液	dì huáng rùn tōng kǒu fú yè	100
 地牡寧神口服液	dì mǔ níng shén kǒu fú yè	100
+低泡金屬清洗劑	dī pào jīn shǔ qīng xǐ jì	120
+地匹福林滴眼液	dì pǐ fú lín dī yǎn yè	100
+地塞米松滴眼液	dì sāi mǐ sōng dī yǎn yè	100
 地塞米松粘貼片	dì sāi mǐ sōng zhān tiē piàn	100
 地塞米松注射液	dì sāi mǐ sōng zhù shè yè	100
+低溫心臟停搏液	dī wēn xīn zàng tíng bó yè	100
 滇桂艾納香膠囊	diān guì ài nà xiāng jiāo náng	100
 碘解磷定注射液	diǎn jiě lín dìng zhù shè yè	100
 碘克沙醇注射液	diǎn kè shā chún zhù shè yè	100
@@ -8266,6 +8842,7 @@ sort: by_weight
 東聖止瀉靈顆粒	dōng shèng zhǐ xiè líng kē lì	100
 獨活寄生口服液	dú huó jì shēng kǒu fú yè	100
 毒毛花苷注射液	dú máo huā gān zhù shè yè	100
+毒素類毒素合劑	dú sù lèi dú sù hé jì	100
 肚痛健胃整腸丸	dù tòng jiàn wèi zhěng cháng wán	100
 杜仲補腰口服液	dù zhòng bǔ yāo kǒu fú yè	100
 杜仲顆粒無糖型	dù zhòng kē lì wú táng xíng	100
@@ -8278,7 +8855,9 @@ sort: by_weight
 多潘立酮分散片	duō pān lì tóng fēn sǎn piàn	100
 多柔比星注射液	duō róu bǐ xīng zhù shè yè	100
 多沙普侖注射液	duō shā pǔ lún zhù shè yè	100
+多索茶鹼口服液	duō suǒ chá jiǎn kǒu fú yè	100
 多索茶鹼注射液	duō suǒ chá jiǎn zhù shè yè	100
+多維鐵口服溶液	duō wéi tiě kǒu fú róng yè	100
 多維元素分散片	duō wéi yuán sù fēn sàn piàn	100
 多維元素咀嚼片	duō wéi yuán sù jǔ jué piàn	100
 多西他賽注射液	duō xī tā sài zhù shè yè	100
@@ -8327,6 +8906,7 @@ sort: by_weight
 二十五味竺黃散	èr shí wǔ wèi zhú huáng sàn	100
 二疏丙醇注射液	èr shū bǐng chún zhù shè yè	100
 二疏丁二酸膠囊	èr shū dīng èr suān jiāo náng	100
+兒童百服嚀溶液	ér tóng bǎi fú níng róng yè	100
 兒童清肺口服液	ér tóng qīng fèi kǒu fú yè	100
 兒童清熱導滯丸	ér tóng qīng rè dǎo zhì wán	100
 兒童清熱口服液	ér tóng qīng rè kǒu fú yè	100
@@ -8346,6 +8926,8 @@ sort: by_weight
 防風通聖濃縮丸	fáng fēng tōng shèng nóng suō wán	100
 防風通聖丸水丸	fáng fēng tōng shèng wán shuǐ wán	100
 方名柴胡疏肝散	fāng míng chái hú shū gān sàn	100
+仿細胞內液型液	fǎng xì bāo nèi yè xíng yè	100
+仿細胞外液型液	fǎng xì bāo wài yè xíng yè	100
 非飽和水流擴散	fēi bǎo hé shuǐ liú kuò sàn	100
 非布丙醇軟膠囊	fēi bù bǐng chún ruǎn jiāo náng	100
 非均質旋轉色散	fēi jūn zhì xuán zhuǎn sè sàn	100
@@ -8358,13 +8940,16 @@ sort: by_weight
 肺炎清熱口服液	fèi yán qīng rè kǒu fú yè	100
 非洲刺李素膠囊	fēi zhōu cì lǐ sù jiāo náng	100
 酚磺乙胺注射液	fēn huáng yǐ àn zhù shè yè	100
+酚麻美敏混懸液	fēn má měi mǐn hùn xuán yè	100
 酚麻美敏咀嚼片	fēn má měi mǐn jǔ jué piàn	100
 酚麻美敏口服液	fēn má měi mǐn kǒu fú yè	100
+芬太尼透皮貼劑	fēn tài ní tòu pí tiē jì	100
 酚妥拉明分散片	fēn tuǒ lā míng fēn sǎn piàn	100
 酚妥拉明注射液	fēn tuǒ lā míng zhù shè yè	100
 風寒感冒寧顆粒	fēng hán gǎn mào níng kē lì	100
 風寒雙離拐膠囊	fēng hán shuāng lí guǎi jiāo náng	100
 風力發電機葉片	fēng lì fā diàn jī yè piàn	100
+楓蓼腸胃康合劑	fēng liǎo cháng wèi kāng hé jì	100
 楓蓼腸胃康膠囊	fēng liǎo cháng wèi kāng jiāo náng	100
 楓蓼腸胃康顆粒	fēng liǎo cháng wèi kāng kē lì	100
 風濕骨痛寧膠囊	fēng shī gǔ tòng níng jiāo náng	100
@@ -8523,7 +9108,6 @@ sort: by_weight
 複方卡比多巴片	fù fāng kǎ bǐ duō bā piàn	100
 複方卡力孜然酊	fù fāng kǎ lì zī rán dīng	100
 複方卡托普利片	fù fāng kǎ tuō pǔ lì piàn	100
-複方克黴唑溶液	fù fāng kè méi zuò róng yè	100
 複方克黴唑乳膏	fù fāng kè méi zuò rǔ gāo	100
 複方克黴唑軟膏	fù fāng kè méi zuò ruǎn gāo	100
 複方口服避孕藥	fù fāng kǒu fú bì yùn yào	100
@@ -8535,7 +9119,6 @@ sort: by_weight
 複方奎寧注射液	fù fāng kuí níng zhù shè yè	100
 複方勒馬回顆粒	fù fāng lè mǎ huí kē lì	100
 複方雷尼替丁片	fù fāng léi ní tì dīng piàn	100
-複方雷鎖辛溶液	fù fāng léi suǒ xīn róng yè	100
 複方利多卡因乳	fù fāng lì duō kǎ yīn rǔ	100
 複方利福平膠囊	fù fāng lì fú píng jiāo náng	100
 複方梨汁潤肺茶	fù fāng lí zhī rùn fèi chá	100
@@ -8571,7 +9154,6 @@ sort: by_weight
 複方滿山紅糖漿	fù fāng mǎn shān hóng táng jiāng	100
 複方曼陀羅藥水	fù fāng màn tuó luó yào shuǐ	100
 複方美沙芬膠囊	fù fāng měi shā fēn jiāo náng	100
-複方美沙芬溶液	fù fāng měi shā fēn róng yè	100
 複方米非司酮片	fù fāng mǐ fēi sī tóng piàn	100
 複方咪康唑軟膏	fù fāng mī kāng zuò ruǎn gāo	100
 複方木雞口服液	fù fāng mù jī kǒu fú yè	100
@@ -8586,7 +9168,6 @@ sort: by_weight
 複方胚肝鐵銨片	fù fāng pēi gān tiě ǎn piàn	100
 複方硼砂含漱液	fù fāng péng shā hán shù yè	100
 複方硼砂漱口片	fù fāng péng shā shù kǒu piàn	100
-複方皮維碘溶液	fù fāng pí wéi diǎn róng yè	100
 複方片仔癀軟膏	fù fāng piàn zǎi huáng ruǎn gāo	100
 複方平貝口服液	fù fāng píng bèi kǒu fú yè	100
 複方蒲公英注射	fù fāng pú gōng yīng zhù shè	100
@@ -8601,7 +9182,6 @@ sort: by_weight
 複方青蒿安乃近	fù fāng qīng hāo ān nǎi jìn	100
 複方青蒿噴霧劑	fù fāng qīng hāo pēn wù jì	100
 複方氫氧化鋁片	fù fāng qīng yǎng huà lǚ piàn	100
-複方曲安龍溶液	fù fāng qǔ ān lóng róng yè	100
 複方曲肽注射液	fù fāng qǔ tài zhù shè yè	100
 複方炔諾孕酮片	fù fāng quē nuò yùn tóng piàn	100
 複方軟肥皂搽劑	fù fāng ruǎn féi zào chá jì	100
@@ -8612,7 +9192,6 @@ sort: by_weight
 複方桑菊感冒片	fù fāng sāng jú gǎn mào piàn	100
 複方桑椹口服液	fù fāng sāng shèn kǒu fú yè	100
 複方沙棘籽油栓	fù fāng shā jí zǐ yóu shuān	100
-複方珊瑚薑溶液	fù fāng shān hú jiāng róng yè	100
 複方蛇床子洗劑	fù fāng shé chuáng zi xǐ jì	100
 複方蛇膽陳皮末	fù fāng shé dǎn chén pí mò	100
 複方蛇膽川貝末	fù fāng shé dǎn chuān bèi mò	100
@@ -8743,6 +9322,7 @@ sort: by_weight
 婦科白鳳口服液	fù kē bái fèng kǒu fú yè	100
 婦科分清丸水丸	fù kē fēn qīng wán shuǐ wán	100
 婦科養榮濃縮丸	fù kē yǎng róng nóng suō wán	100
+茯苓杏仁甘草湯	fú líng xìng rén gān cǎo tāng	100
 氟羅沙星分散片	fú luó shā xīng fēn sǎn piàn	100
 氟羅沙星注射液	fú luó shā xīng zhù shè yè	100
 氟氯西林鈉膠囊	fú lǜ xī lín nà jiāo náng	100
@@ -8754,11 +9334,16 @@ sort: by_weight
 氟馬西尼注射液	fú mǎ xī ní zhù shè yè	100
 呋喃硫胺注射液	fū nán liú àn zhù shè yè	100
 呋喃妥因腸溶片	fū nán tuǒ yīn cháng róng piàn	100
+呋脲苄青黴素鉀	fū niào biàn qīng méi sù jiǎ	100
+呋脲苄青黴素鈉	fū niào biàn qīng méi sù nà	100
+氟尿嘧啶口服乳	fú niào mì dìng kǒu fú rǔ	100
+氟尿嘧啶口服液	fú niào mì dìng kǒu fú yè	100
 氟尿嘧啶注射液	fú niào mì dìng zhù shè yè	100
 氟哌啶醇注射液	fú pài dìng chún zhù shè yè	100
 氟哌利多注射液	fú pài lì duō zhù shè yè	100
 蝮蛇抗風濕膠囊	fù shé kàng fēng shī jiāo náng	100
 夫西地酸乳膏劑	fū xī dì suān rǔ gāo jì	100
+福西二氏酚試液	fú xī èr shì fēn shì yè	100
 腹瀉寧泡騰顆粒	fù xiè níng pào téng kē lì	100
 富血鐵葉酸膠囊	fù xuè tiě yè suān jiāo náng	100
 婦炎康復咀嚼片	fù yán kāng fù jǔ jué piàn	100
@@ -8771,6 +9356,7 @@ sort: by_weight
 鈣蛋白酶抑制劑	gài dàn bái méi yì zhì jì	100
 甘氨酸茶鹼鈉片	gān ān suān chá jiǎn nà piàn	100
 甘草酸單鉀鹽片	gān cǎo suān dān jiǎ yán piàn	100
+甘草酸二銨腸溶	gān cǎo suān èr ǎn cháng róng	100
 甘草酸二銨膠囊	gān cǎo suān èr ǎn jiāo náng	100
 甘草酸二胺膠囊	gān cǎo suān èr àn jiāo náng	100
 甘草甜素糖衣片	gān cǎo tián sù táng yī piàn	100
@@ -8795,6 +9381,7 @@ sort: by_weight
 高碘酸希夫試劑	gāo diǎn suān xī fū shì jì	100
 高果糖玉米糖漿	gāo guǒ táng yù mǐ táng jiāng	100
 高錳酸鉀外用片	gāo měng suān jiǎ wài yòng piàn	100
+高滲葡萄糖溶液	gāo shèn pú táo táng róng yè	100
 睾酮雌酮注射劑	gāo tóng cí tóng zhù shè jì	100
 高烏甲素注射液	gāo wū jiǎ sù zhù shè yè	100
 葛根黃豆苷元片	gé gēn huáng dòu gān yuán piàn	100
@@ -8808,6 +9395,7 @@ sort: by_weight
 格列齊特緩釋片	gé liè qí tè huǎn shì piàn	100
 格列西隆注射液	gé liè xī lóng zhù shè yè	100
 根痛平薄膜衣片	gēn tòng píng báo mó yī piàn	100
+更昔洛韋滴眼液	gèng xī luò wéi dī yǎn yè	100
 更昔洛韋注射液	gèng xī luò wéi zhù shè yè	100
 更有丹梔逍遙散	gèng yǒu dān zhī xiāo yáo sàn	100
 功勞運河火膠囊	gōng láo yùn hé huǒ jiāo náng	100
@@ -8823,7 +9411,9 @@ sort: by_weight
 固精養元口服液	gù jīng yǎng yuán kǒu fú yè	100
 骨傷消腫口服液	gǔ shāng xiāo zhǒng kǒu fú yè	100
 骨髓蛋白口服液	gǔ suǐ dàn bái kǒu fú yè	100
+骨髓蛋白營養液	gǔ suǐ dàn bái yíng yǎng yè	100
 骨炎靈薄膜衣片	gǔ yán líng báo mó yī piàn	100
+骨質增生導入液	gǔ zhì zēng shēng dǎo rù yè	100
 瓜霜退熱靈膠囊	guā shuāng tuì rè líng jiāo náng	100
 關節鎮痛巴布膏	guān jié zhèn tòng bā bù gāo	100
 觀看警示教育片	guān kàn jǐng shì jiào yù piàn	100
@@ -8840,6 +9430,7 @@ sort: by_weight
 歸芪補血口服液	guī qí bǔ xuè kǒu fú yè	100
 歸芪三七口服液	guī qí sān qī kǒu fú yè	100
 歸芎花粉口服液	guī qiōng huā fěn kǒu fú yè	100
+桂枝芍藥知母湯	guì zhī sháo yào zhī mǔ tāng	100
 果糖二磷酸鈣片	guǒ táng èr lín suān gài piàn	100
 果糖二磷酸鈉片	guǒ táng èr lín suān nà piàn	100
 果糖酸鈣注射液	guǒ táng suān gài zhù shè yè	100
@@ -8854,6 +9445,7 @@ sort: by_weight
 核酸合成抑制劑	hé suān hé chéng yì zhì jì	100
 核糖黴素注射液	hé táng méi sù zhù shè yè	100
 黑加侖油軟膠囊	hēi jiā lún yóu ruǎn jiāo náng	100
+恆古骨傷癒合劑	héng gǔ gǔ shāng yù hé jì	100
 紅花注射液精製	hóng huā zhù shè yè jīng zhì	100
 紅甲蟲草口服液	hóng jiǎ chóng cǎo kǒu fú yè	100
 紅黴素腸溶膠囊	hóng méi sù cháng róng jiāo náng	100
@@ -8861,7 +9453,6 @@ sort: by_weight
 猴耳環消炎膠囊	hóu ěr huán xiāo yán jiāo náng	100
 猴耳環消炎顆粒	hóu ěr huán xiāo yán kē lì	100
 喉疾靈薄膜衣片	hóu jí líng báo mó yī piàn	100
-厚朴大黃湯主之	hòu pò dà huáng tāng zhǔ zhī	100
 厚朴排氣口服液	hòu pò pái qì kǒu fú yè	100
 喉舒寧薄膜衣片	hóu shū níng báo mó yī piàn	100
 猴頭健胃靈膠囊	hóu tóu jiàn wèi líng jiāo náng	100
@@ -8878,13 +9469,18 @@ sort: by_weight
 華陀風痛寶膠囊	huá tuó fēng tòng bǎo jiāo náng	100
 華軒繡轂皆銷散	huá xuān xiù gǔ jiē xiāo sàn	100
 化瘀固精口服液	huà yū gù jīng kǒu fú yè	100
+化瘀散結灌腸液	huà yū sàn jié guàn cháng yè	100
 化癥回生口服液	huà zhèng huí shēng kǒu fú yè	100
+環孢素口服溶液	huán bāo sù kǒu fú róng yè	100
+環丙沙星滴耳液	huán bǐng shā xīng dī ěr yè	100
+環丙沙星滴眼液	huán bǐng shā xīng dī yǎn yè	100
 環丙沙星緩釋片	huán bǐng shā xīng huǎn shì piàn	100
 環丙沙星注射液	huán bǐng shā xīng zhù shè yè	100
 環磷酰胺注射液	huán lín xiān àn zhù shè yè	100
 環磷腺苷注射液	huán lín xiàn gān zhù shè yè	100
 環氧乙烷消毒劑	huán yǎng yǐ wán xiāo dú jì	100
 磺胺二甲嘧啶片	huáng àn èr jiǎ mì dìng piàn	100
+磺胺嘧啶混懸劑	huáng àn mì dìng hùn xuán jì	100
 磺胺嘧啶速釋片	huáng àn mì dìng sù shì piàn	100
 磺胺嘧啶鋅軟膏	huáng àn mì dìng xīn ruǎn gāo	100
 磺胺嘧啶銀乳膏	huáng àn mì dìng yín rǔ gāo	100
@@ -8917,6 +9513,7 @@ sort: by_weight
 肌氨肽苷注射液	jī ān tài gān zhù shè yè	100
 吉春抗骨增生片	jí chūn kàng gǔ zēng shēng piàn	100
 肌醇煙酸酯軟膏	jī chún yān suān zhǐ ruǎn gāo	100
+雞骨草肝炎沖劑	jī gǔ cǎo gān yán chōng jì	100
 雞骨草肝炎顆粒	jī gǔ cǎo gān yán kē lì	100
 己酸羥孕酮膠囊	jǐ suān qiǎng yùn tóng jiāo náng	100
 己烯雌酚注射液	jǐ xī cí fēn zhù shè yè	100
@@ -8943,6 +9540,7 @@ sort: by_weight
 甲羥孕酮注射液	jiǎ qiǎng yùn tóng zhù shè yè	100
 甲炔諾酮埋植劑	jiǎ quē nuò tóng mái zhí jì	100
 甲胂酸鈉注射液	jiǎ shèn suān nà zhù shè yè	100
+加替沙星滴眼液	jiā tì shā xīng dī yǎn yè	100
 加替沙星注射液	jiā tì shā xīng zhù shè yè	100
 加味八珍益母膏	jiā wèi bā zhēn yì mǔ gāo	100
 加味板藍根顆粒	jiā wèi bǎn lán gēn kē lì	100
@@ -8960,6 +9558,7 @@ sort: by_weight
 加味消遙口服液	jiā wèi xiāo yáo kǒu fú yè	100
 加味逍遙口服液	jiā wèi xiāo yáo kǒu fú yè	100
 加味左金丸水丸	jiā wèi zuǒ jīn wán shuǐ wán	100
+加香甲酚皁溶液	jiā xiāng jiǎ fēn zào róng yè	100
 甲溴貝那替嗪片	jiǎ xiù bèi nà tì qín piàn	100
 甲溴貝那替秦片	jiǎ xiù bèi nà tì qín piàn	100
 甲氧苄胺嘧啶片	jiǎ yǎng biàn àn mì dìng piàn	100
@@ -8967,6 +9566,7 @@ sort: by_weight
 間苯三酚注射液	jiān běn sān fēn zhù shè yè	100
 健兒排鉛口服液	jiàn ér pái qiān kǒu fú yè	100
 健兒消食口服液	jiàn ér xiāo shí kǒu fú yè	100
+健兒消食營養液	jiàn ér xiāo shí yíng yǎng yè	100
 健腦補腎口服液	jiàn nǎo bǔ shèn kǒu fú yè	100
 健脾安神口服液	jiàn pí ān shén kǒu fú yè	100
 健脾顆粒無糖型	jiàn pí kē lì wú táng xíng	100
@@ -8995,9 +9595,11 @@ sort: by_weight
 結合雌激素乳膏	jié hé cí jī sù rǔ gāo	100
 結合雌激素軟膏	jié hé cí jī sù ruǎn gāo	100
 解肌寧嗽口服液	jiě jī níng sòu kǒu fú yè	100
+芥子氣磷混合劑	jiè zǐ qì lín hùn hé jì	100
 金邦前列通膠囊	jīn bāng qián liè tōng jiāo náng	100
 金貝痰咳清顆粒	jīn bèi tán ké qīng kē lì	100
 金參潤喉口服液	jīn cān rùn hóu kǒu fú yè	100
+金刺參九正合劑	jīn cì shēn jiǔ zhèng hé jì	100
 金典蟲草口服液	jīn diǎn chóng cǎo kǒu fú yè	100
 金豆開胃口服液	jīn dòu kāi wèi kǒu fú yè	100
 筋骨活天麻膠囊	jīn gǔ huó tiān má jiāo náng	100
@@ -9014,8 +9616,11 @@ sort: by_weight
 金蕎麥薄膜衣片	jīn qiáo mài báo mó yī piàn	100
 金日心源素膠囊	jīn rì xīn yuán sù jiāo náng	100
 金時雨乳泰顆粒	jīn shí yǔ rǔ tài kē lì	100
+金薯葉止血合劑	jīn shǔ yè zhǐ xuè hé jì	100
 金鎖固精濃縮丸	jīn suǒ gù jīng nóng suō wán	100
 金熊嚴必克膠囊	jīn xióng yán bì kè jiāo náng	100
+金梔潔齦含漱液	jīn zhī jié kěn hán shù yè	100
+晶體心臟停搏液	jīng tǐ xīn zàng tíng bó yè	100
 靜心助眠口服液	jìng xīn zhù mián kǒu fú yè	100
 精業本草素女散	jīng yè běn cǎo sù nǚ sàn	100
 經悅白鳳口服液	jīng yuè bái fèng kǒu fú yè	100
@@ -9037,6 +9642,7 @@ sort: by_weight
 九味獐牙菜膠囊	jiǔ wèi zhāng yá cài jiāo náng	100
 桔貝止咳祛痰片	jú bèi zhǐ ké qū tán piàn	100
 橘紅痰咳泡騰片	jú hóng tán ké pào téng piàn	100
+聚甲酚磺醛溶液	jù jiǎ fēn huáng quán róng yè	100
 菊藍抗流感膠囊	jú lán kàng liú gǎn jiāo náng	100
 聚明膠肽注射液	jù míng jiāo tài zhù shè yè	100
 巨仁風溼定膠囊	jù rén fēng shī dìng jiāo náng	100
@@ -9045,18 +9651,23 @@ sort: by_weight
 聚維酮碘泡騰片	jù wéi tóng diǎn pào téng piàn	100
 枸櫞酸鉍鉀膠囊	jǔ yuán suān bì jiǎ jiāo náng	100
 枸櫞酸鈣咀嚼片	jǔ yuán suān gài jǔ jué piàn	100
+枸櫞酸鉀口服液	jǔ yuán suān jiǎ kǒu fú yè	100
 枸櫞酸氯米芬片	jǔ yuán suān lǜ mǐ fēn piàn	100
 枸櫞酸鈉抗凝劑	jǔ yuán suān nà kàng níng jì	100
+枸櫞酸鹽口服液	jǔ yuán suān yán kǒu fú yè	100
 枸櫞酸乙胺嗪片	jǔ yuán suān yǐ àn qín piàn	100
 卡巴膽鹼注射液	kǎ bā dǎn jiǎn zhù shè yè	100
 卡巴克絡注射液	kǎ bā kè luò zhù shè yè	100
 卡巴匹林鈣顆粒	kǎ bā pǐ lín gài kē lì	100
+卡地洛爾滴眼液	kǎ dì luò ěr dī yǎn yè	100
 卡絡磺鈉注射液	kǎ luò huáng nà zhù shè yè	100
 卡馬西平緩釋片	kǎ mǎ xī píng huǎn shì piàn	100
 卡馬西平控釋片	kǎ mǎ xī píng kòng shì piàn	100
 卡米可林注射液	kǎ mǐ kě lín zhù shè yè	100
 卡莫司汀注射液	kǎ mò sī tīng zhù shè yè	100
+卡那黴素滴眼液	kǎ nà méi sù dī yǎn yè	100
 卡那黴素注射液	kǎ nà méi sù zhù shè yè	100
+卡替洛爾滴眼液	kǎ tì luò ěr dī yǎn yè	100
 卡托普利緩釋片	kǎ tuō pǔ lì huǎn shì piàn	100
 卡托普利注射液	kǎ tuō pǔ lì zhù shè yè	100
 開胃消食口服液	kāi wèi xiāo shí kǒu fú yè	100
@@ -9077,10 +9688,12 @@ sort: by_weight
 康氏牛黃解毒片	kāng shì niú huáng jiě dú piàn	100
 康氏牛黃解毒丸	kāng shì niú huáng jiě dú wán	100
 康泰克緩釋膠囊	kāng tài kè huǎn shì jiāo náng	100
+抗中耳炎滴耳劑	kàng zhōng ěr yán dī ěr jì	100
 克感利咽口服液	kè gǎn lì yān kǒu fú yè	100
 克拉黴素分散片	kè lā méi sù fēn sàn piàn	100
 克拉黴素緩釋片	kè lā méi sù huǎn shì piàn	100
 克拉屈濱注射液	kè lā qū bīn zhù shè yè	100
+可樂定透皮貼劑	kě lè dìng tòu pí tiē jì	100
 顆粒二叉韌革菌	kē lì èr chā rèn gé jūn	100
 顆粒間質細胞瘤	kē lì jiān zhì xì bāo liú	100
 顆粒卵泡膜細胞	kē lì luǎn pào mó xì bāo	100
@@ -9098,9 +9711,11 @@ sort: by_weight
 咳特靈薄膜衣片	ké tè líng báo mó yī piàn	100
 克沃二氏移植片	kè wò èr shì yí zhí piàn	100
 空氣中的顆粒物	kōng qì zhōng de kē lì wù	100
+口服補液鹽溶液	kǒu fú bǔ yè yán róng yè	100
 口腔潰瘍被膜散	kǒu qiāng kuì yáng bèi mó sàn	100
 苦參陰道泡騰片	kǔ shēn yīn dào pào téng piàn	100
 苦參總鹼注射液	kǔ shēn zǒng jiǎn zhù shè yè	100
+快速多酶清洗液	kuài sù duō méi qīng xǐ yè	100
 寬胸舒氣化滯丸	kuān xiōng shū qì huà zhì wán	100
 狂飈龍力壯膠囊	kuáng biāo lóng lì zhuàng jiāo náng	100
 坤元通乳口服液	kūn yuán tōng rǔ kǒu fú yè	100
@@ -9119,7 +9734,10 @@ sort: by_weight
 雷尼替丁口服液	léi ní tì dīng kǒu fú yè	100
 雷尼替丁注射液	léi ní tì dīng zhù shè yè	100
 肋柱花四味湯散	lèi zhù huā sì wèi tāng sàn	100
+裏埃二氏稀釋液	lǐ āi èr shì xī shì yè	100
 利巴林韋注射液	lì bā lín wéi zhù shè yè	100
+利巴韋林滴鼻液	lì bā wéi lín dī bí yè	100
+利巴韋林滴眼液	lì bā wéi lín dī yǎn yè	100
 利巴韋林分散片	lì bā wéi lín fēn sǎn piàn	100
 利巴韋林口服液	lì bā wéi lín kǒu fú yè	100
 利巴韋林噴霧劑	lì bā wéi lín pēn wù jì	100
@@ -9141,17 +9759,21 @@ sort: by_weight
 亮菌甲素注射液	liàng jūn jiǎ sù zhù shè yè	100
 涼血退熱排毒丸	liáng xuè tuì rè pái dú wán	100
 膦甲酸鈉注射液	lìn jiǎ suān nà zhù shè yè	100
+林可黴素滴耳液	lín kě méi sù dī ěr yè	100
+林可黴素滴眼液	lín kě méi sù dī yǎn yè	100
 林可黴素注射液	lín kě méi sù zhù shè yè	100
 磷酸氨基嘌呤片	lín suān ān jī piào lìng piàn	100
 磷酸苯丙哌林片	lín suān běn bǐng pài lín piàn	100
 磷酸川芎嗪膠囊	lín suān chuān xiōng qín jiāo náng	100
 磷酸可待因膠囊	lín suān kě dài yīn jiāo náng	100
 磷酸氯喹注射液	lín suān lǜ kuí zhù shè yè	100
+磷酸鈉鹽灌腸液	lín suān nà yán guàn cháng yè	100
 磷酸氫鈣咀嚼片	lín suān qīng gài jǔ jué piàn	100
 磷酸組胺注射液	lín suān zǔ àn zhù shè yè	100
 靈孢多糖注射液	líng bāo duō táng zhù shè yè	100
 苓暴紅止咳顆粒	líng bào hóng zhǐ ké kē lì	100
 苓桂咳喘寧膠囊	líng guì ké chuǎn níng jiāo náng	100
+羚甲澱粉鈉溶液	líng jiǎ diàn fěn nà róng yè	100
 嶺南萬應止痛膏	lǐng nán wàn yīng zhǐ tòng gāo	100
 靈芪養心口服液	líng qí yǎng xīn kǒu fú yè	100
 靈杞益肝口服液	líng qǐ yì gān kǒu fú yè	100
@@ -9181,6 +9803,7 @@ sort: by_weight
 硫酸雙肼屈嗪片	liú suān shuāng jǐng qū qín piàn	100
 硫酸特布他林片	liú suān tè bù tā lín piàn	100
 硫酸小諾黴素片	liú suān xiǎo nuò méi sù piàn	100
+硫酸鋅口服溶液	liú suān xīn kǒu fú róng yè	100
 硫酸新黴素軟膏	liú suān xīn méi sù ruǎn gāo	100
 硫酸亞鐵緩釋片	liú suān yà tiě huǎn shì piàn	100
 硫酸茚地那韋片	liú suān yìn dì nà wéi piàn	100
@@ -9202,6 +9825,7 @@ sort: by_weight
 隴馬陸胃藥膠囊	lǒng mǎ lù wèi yào jiāo náng	100
 龍牡壯骨咀嚼片	lóng mǔ zhuàng gǔ jǔ jué piàn	100
 龍血竭腸溶膠囊	lóng xiě jié cháng róng jiāo náng	100
+爐甘石樟腦洗劑	lú gān shí zhāng nǎo xǐ jì	100
 蘆根枇杷葉顆粒	lú gēn pí pá yè kē lì	100
 鹿瓜多肽注射液	lù guā duō tài zhù shè yè	100
 蘆薈康排毒膠囊	lú huì kāng pái dú jiāo náng	100
@@ -9210,7 +9834,9 @@ sort: by_weight
 卵巢顆粒細胞瘤	luǎn cháo kē lì xì bāo liú	100
 卵磷脂薄膜衣片	luǎn lín zhī báo mó yī piàn	100
 卵磷脂絡合碘片	luǎn lín zhī luò hé diǎn piàn	100
+卵子體外成熟液	luǎn zǐ tǐ wài chéng shú yè	100
 羅補甫克比日丸	luó bǔ fǔ kè bǐ rì wán	100
+洛度沙胺滴眼液	luò dù shā àn dī yǎn yè	100
 洛伐他汀分散片	luò fá tā tīng fēn sǎn piàn	100
 洛芬待因緩釋片	luò fēn dài yīn huǎn shì piàn	100
 洛芬葡鋅那敏片	luò fēn pú xīn nà mǐn piàn	100
@@ -9225,6 +9851,8 @@ sort: by_weight
 羅紅黴素緩釋片	luó hóng méi sù huǎn shì piàn	100
 裸花紫珠口服液	luǒ huā zǐ zhū kǒu fú yè	100
 羅庫溴銨注射液	luó kù xiù ǎn zhù shè yè	100
+洛美沙星滴耳液	luò měi shā xīng dī ěr yè	100
+洛美沙星滴眼液	luò měi shā xīng dī yǎn yè	100
 洛美沙星注射液	luò měi shā xīng zhù shè yè	100
 羅哌卡因注射液	luó pài kǎ yīn zhù shè yè	100
 洛索洛芬鈉膠囊	luò suǒ luò fēn nà jiāo náng	100
@@ -9237,6 +9865,7 @@ sort: by_weight
 氯酚待因複方片	lǜ fēn dài yīn fù fāng piàn	100
 氯化氨基汞軟膏	lǜ huà ān jī gǒng ruǎn gāo	100
 氯化銨基汞軟膏	lǜ huà ǎn jī gǒng ruǎn gāo	100
+氯化鉀口服溶液	lǜ huà jiǎ kǒu fú róng yè	100
 氯化亞鉈注射液	lǜ huà yà tā zhù shè yè	100
 氯解磷定注射液	lǜ jiě lín dìng zhù shè yè	100
 氯雷他定分散片	lǜ léi tā dìng fēn sàn piàn	100
@@ -9261,7 +9890,6 @@ sort: by_weight
 麻杏甘石軟膠囊	má xìng gān shí ruǎn jiāo náng	100
 螞蟻雙參通痹丸	mǎ yǐ shuāng cān tōng bì wán	100
 馬應龍八寶眼膏	mǎ yìng lóng bā bǎo yǎn gāo	100
-麥冬加入長壽丸	mài dōng jiā rù cháng shòu wán	100
 麥角胺咖啡因片	mài jiǎo àn kā fēi yīn piàn	100
 麥角新鹼注射液	mài jiǎo xīn jiǎn zhù shè yè	100
 麥神開胃口服液	mài shén kāi wèi kǒu fú yè	100
@@ -9280,6 +9908,7 @@ sort: by_weight
 美沙拉嗪腸溶片	měi shā lā qín cháng róng piàn	100
 美沙拉秦腸溶片	měi shā lā qín cháng róng piàn	100
 美索巴莫注射液	měi suǒ bā mò zhù shè yè	100
+美太蛋白營養液	měi tài dàn bái yíng yǎng yè	100
 美托洛爾緩釋片	měi tuō luò ěr huǎn shì piàn	100
 美托洛爾注射液	měi tuō luò ěr zhù shè yè	100
 美息偽麻軟膠囊	měi xī wěi má ruǎn jiāo náng	100
@@ -9304,6 +9933,8 @@ sort: by_weight
 木香順氣丸水丸	mù xiāng shùn qì wán shuǐ wán	100
 那如三味丸水丸	nà rú sān wèi wán shuǐ wán	100
 萘丁美酮分散片	nài dīng měi tóng fēn sǎn piàn	100
+萘甲唑啉滴鼻液	nài jiǎ zuò lín dī bí yè	100
+萘甲唑啉滴眼液	nài jiǎ zuò lín dī yǎn yè	100
 萘哌地爾分散片	nài pài dì ěr fēn sǎn piàn	100
 奈普生緩釋膠囊	nài pǔ shēng huǎn shì jiāo náng	100
 萘普生緩釋膠囊	nài pǔ shēng huǎn shì jiāo náng	100
@@ -9337,6 +9968,7 @@ sort: by_weight
 尿路排石口服液	niào lù pái shí kǒu fú yè	100
 尿嘧啶替加氟片	niào mì dìng tì jiā fú piàn	100
 尿石通丸濃縮丸	niào shí tōng wán nóng suō wán	100
+尿液通用質控液	niào yè tōng yòng zhì kòng yè	100
 寧心益腎口服液	níng xīn yì shèn kǒu fú yè	100
 寧心益智口服液	níng xīn yì zhì kǒu fú yè	100
 牛黃解毒軟膠囊	niú huáng jiě dú ruǎn jiāo náng	100
@@ -9344,11 +9976,15 @@ sort: by_weight
 牛黃清腦開竅丸	niú huáng qīng nǎo kāi qiào wán	100
 牛黃上清軟膠囊	niú huáng shàng qīng ruǎn jiāo náng	100
 牛黃蛇膽川貝散	niú huáng shé dǎn chuān bèi sàn	100
+牛黃蛇膽川貝液	niú huáng shé dǎn chuān bèi yè	100
 牛黃消炎靈膠囊	niú huáng xiāo yán líng jiāo náng	100
 牛黃醒消丸水丸	niú huáng xǐng xiāo wán shuǐ wán	100
+濃甲硝唑含漱液	nóng jiǎ xiāo zuò hán shù yè	100
 濃氯化鈉注射液	nóng lǜ huà nà zhù shè yè	100
+濃人工腎透析液	nóng rén gōng shèn tòu xī yè	100
 濃縮水牛角顆粒	nóng suō shuǐ niú jiǎo kē lì	100
 濃縮益腎蠲痹丸	nóng suō yì shèn juān bì wán	100
+濃替硝唑含漱液	nóng tì xiāo zuò hán shù yè	100
 濃維生素注射液	nóng wéi shēng sù zhù shè yè	100
 暖宮七味丸水丸	nuǎn gōng qī wèi wán shuǐ wán	100
 諾氟沙星注射液	nuò fú shā xīng zhù shè yè	100
@@ -9366,10 +10002,13 @@ sort: by_weight
 培氟沙星注射液	péi fú shā xīng zhù shè yè	100
 培他司汀注射液	péi tā sī tīng zhù shè yè	100
 噴他佐辛注射液	pēn tā zuǒ xīn zhù shè yè	100
+硼砂甘油鉀溶液	péng shā gān yóu jiǎ róng yè	100
 硼酸氧化鋅軟膏	péng suān yǎng huà xīn ruǎn gāo	100
 匹多莫德分散片	pǐ duō mò dé fēn sǎn piàn	100
 匹多莫德口服液	pǐ duō mò dé kǒu fú yè	100
 皮膚代謝抑制劑	pí fū dài xiè yì zhì jì	100
+皮膚黏膜消毒液	pí fū nián mó xiāo dú yè	100
+匹羅卡品滴眼液	pǐ luó kǎ pǐn dī yǎn yè	100
 皮質醇檢測試劑	pí zhì chún jiǎn cè shì jì	100
 平痤祛斑靈膠囊	píng cuó qū bān líng jiāo náng	100
 平肝潛陽口服液	píng gān qián yáng kǒu fú yè	100
@@ -9377,6 +10016,9 @@ sort: by_weight
 潑尼松尿素乳膏	pō ní sōng niào sù rǔ gāo	100
 蒲地藍消炎膠囊	pú dì lán xiāo yán jiāo náng	100
 撲爾敏控釋膠囊	pū ěr mǐn kòng shì jiāo náng	100
+普拉洛芬滴眼劑	pǔ lā luò fēn dī yǎn jì	100
+普拉洛芬滴眼液	pǔ lā luò fēn dī yǎn yè	100
+普魯卡因青黴素	pǔ lǔ kǎ yīn qīng méi sù	100
 普魯卡因注射液	pǔ lǔ kǎ yīn zhù shè yè	100
 普羅碘銨注射液	pǔ luó diǎn ǎn zhù shè yè	100
 普洛萘爾注射液	pǔ luò nài ěr zhù shè yè	100
@@ -9387,9 +10029,11 @@ sort: by_weight
 葡醛酸鈉注射液	pú quán suān nà zhù shè yè	100
 樸實顆粒無糖型	pǔ shí kē lì wú táng xíng	100
 葡萄糖酸鈣含片	pú táo táng suān gài hán piàn	100
+葡萄糖酸鈣口服	pú táo táng suān gài kǒu fú	100
 葡萄糖酸鋅沖劑	pú táo táng suān xīn chōng jì	100
 葡萄糖酸鋅合劑	pú táo táng suān xīn hé jì	100
 葡萄糖酸鋅膠囊	pú táo táng suān xīn jiāo náng	100
+葡萄糖酸鋅口服	pú táo táng suān xīn kǒu fú	100
 葡萄糖酸鋅軟膏	pú táo táng suān xīn ruǎn gāo	100
 葡萄糖酸亞鐵片	pú táo táng suān yà tiě piàn	100
 芪柏養心口服液	qí bǎi yǎng xīn kǒu fú yè	100
@@ -9420,6 +10064,8 @@ sort: by_weight
 氣血雙補口服液	qì xuè shuāng bǔ kǒu fú yè	100
 氣血雙生口服液	qì xuè shuāng shēng kǒu fú yè	100
 杞藥消渴口服液	qǐ yào xiāo kě kǒu fú yè	100
+七葉洋地黃雙苷	qī yè yáng dì huáng shuāng gān	100
+七葉皂苷鈉搽劑	qī yè zào gān nà chá jì	100
 芪蛭通絡口服液	qí zhì tōng luò kǒu fú yè	100
 七子填精口服液	qī zǐ tián jīng kǒu fú yè	100
 前德安參陽膠囊	qián dé ān shēn yáng jiāo náng	100
@@ -9430,12 +10076,15 @@ sort: by_weight
 前列舒樂軟膠囊	qián liè shū lè ruǎn jiāo náng	100
 前列舒丸水蜜丸	qián liè shū wán shuǐ mì wán	100
 錢氏七味白朮散	qián shì qī wèi bái zhú sàn	100
+羥氨苄青黴素鈉	qiǎng ān biàn qīng méi sù nà	100
 羥苯磺酸鈣膠囊	qiǎng běn huáng suān gài jiāo náng	100
 羥丁酸鈉注射液	qiǎng dīng suān nà zhù shè yè	100
 強骨生血口服液	qiáng gǔ shēng xuè kǒu fú yè	100
+羥甲澱粉鈉溶液	qiǎng jiǎ diàn fěn nà róng yè	100
 羥甲司坦口服液	qiǎng jiǎ sī tǎn kǒu fú yè	100
 羥甲香豆素膠囊	qiǎng jiǎ xiāng dòu sù jiāo náng	100
 羥甲煙酰胺膠囊	qiǎng jiǎ yān xiān àn jiāo náng	100
+羥甲唑啉滴鼻液	qiǎng jiǎ zuò lín dī bí yè	100
 羥甲唑啉噴霧劑	qiǎng jiǎ zuò lín pēn wù jì	100
 強力多維營養膏	qiáng lì duō wéi yíng yǎng gāo	100
 強力防感口服液	qiáng lì fáng gǎn kǒu fú yè	100
@@ -9449,6 +10098,7 @@ sort: by_weight
 芩暴紅止咳糖漿	qín bào hóng zhǐ ké táng jiāng	100
 芩石利咽口服液	qín shí lì yān kǒu fú yè	100
 芩玄解毒口服液	qín xuán jiě dú kǒu fú yè	100
+慶大黴素滴眼液	qìng dà méi sù dī yǎn yè	100
 慶大黴素緩釋片	qìng dà méi sù huǎn shì piàn	100
 慶大黴素咀嚼片	qìng dà méi sù jǔ jué piàn	100
 慶大黴素口服液	qìng dà méi sù kǒu fú yè	100
@@ -9510,6 +10160,7 @@ sort: by_weight
 去氧氟尿苷膠囊	qù yǎng fú niào gān jiāo náng	100
 去氧孕烯雙相片	qù yǎng yùn xī shuāng xiàng piān	100
 全錢通啉口服液	quán qián tōng lín kǒu fú yè	100
+熱藏胎盤組織液	rè cáng tāi pán zǔ zhī yè	100
 人白介素注射液	rén bái jiè sù zhù shè yè	100
 壬苯醇醚外用片	rén běn chún mí wài yòng piàn	100
 壬苯醇醚陰道片	rén běn chún mí yīn dào piàn	100
@@ -9518,6 +10169,7 @@ sort: by_weight
 人參固本口服液	rén shēn gù běn kǒu fú yè	100
 人參莖葉皂苷片	rén shēn jīng yè zào gān piàn	100
 人參糖肽注射液	rén shēn táng tài zhù shè yè	100
+人參五味子沖劑	rén shēn wǔ wèi zǐ chōng jì	100
 人參五味子顆粒	rén shēn wǔ wèi zǐ kē lì	100
 人參五味子糖漿	rén shēn wǔ wèi zǐ táng jiāng	100
 人參珍珠口服液	rén shēn zhēn zhū kǒu fú yè	100
@@ -9526,6 +10178,12 @@ sort: by_weight
 蓉蛾益腎口服液	róng é yì shèn kǒu fú yè	100
 茸桂補腎口服液	róng guì bǔ shèn kǒu fú yè	100
 茸蛤益腎口服液	róng há yì shèn kǒu fú yè	100
+溶菌酶口腔藥膜	róng jūn méi kǒu qiāng yào mó	100
+絨毛促性腺激素	róng máo cù xìng xiàn jī sù	100
+溶媒結晶粉針劑	róng méi jié jīng fěn zhēn jì	100
+溶酶小球菌底物	róng méi xiǎo qiú jūn dǐ wù	100
+絨膜促性腺激素	róng mó cù xìng xiàn jī sù	100
+茸杞補腎健脾茶	róng qǐ bǔ shèn jiàn pí chá	100
 茸芪益腎口服液	róng qí yì shèn kǒu fú yè	100
 茸蓉補腎口服液	róng róng bǔ shèn kǒu fú yè	100
 茸萸補腎口服液	róng yú bǔ shèn kǒu fú yè	100
@@ -9534,21 +10192,30 @@ sort: by_weight
 柔肝解毒口服液	róu gān jiě dú kǒu fú yè	100
 鞣酸苦參鹼膠囊	róu suān kǔ shēn jiǎn jiāo náng	100
 乳桿菌活菌膠囊	rǔ gǎn jūn huó jūn jiāo náng	100
+乳果糖口服溶液	rǔ guǒ táng kǒu fú róng yè	100
 乳癖安消口服液	rǔ pǐ ān xiāo kǒu fú yè	100
 乳泉顆粒無糖型	rǔ quán kē lì wú táng xíng	100
 乳酸氟羅沙星片	rǔ suān fú luó shā xīng piàn	100
+乳酸鈣口服溶液	rǔ suān gài kǒu fú róng yè	100
 乳酸菌素分散片	rǔ suān jūn sù fēn sàn piàn	100
 乳酸菌陰道膠囊	rǔ suān jūn yīn dào jiāo náng	100
 乳酸司帕沙星片	rǔ suān sī pà shā xīng piàn	100
+乳酸亞鐵口服液	rǔ suān yà tiě kǒu fú yè	100
 乳腺增生口服液	rǔ xiàn zēng shēng kǒu fú yè	100
 乳香風濕氣霧劑	rǔ xiāng fēng shī qì wù jì	100
 如意珍寶丸水丸	rú yì zhēn bǎo wán shuǐ wán	100
 軟骨素鈉注射液	ruǎn gǔ sù nà zhù shè yè	100
+瑞氏快速染色液	ruì shì kuài sù rǎn sè yè	100
 潤肺止咳口服液	rùn fèi zhǐ ké kǒu fú yè	100
 塞克硝唑分散片	sāi kè xiāo zuò fēn sǎn piàn	100
 賽力西洋參含片	sài lì xī yáng shēn hán piàn	100
 塞隆風濕軟膠囊	sāi lóng fēng shī ruǎn jiāo náng	100
+塞洛唑啉滴鼻液	sāi luò zuò lín dī bí yè	100
+賽洛唑啉滴鼻液	sài luò zuò lín dī bí yè	100
+噻嗎洛爾滴眼液	sāi ma luò ěr dī yǎn yè	100
 噻嗎洛爾注射液	sāi ma luò ěr zhù shè yè	100
+噻嗎心安滴眼液	sāi ma xīn ān dī yǎn yè	100
+腮腺混合瘤惡變	sāi xiàn hùn hé liú è biàn	100
 三白草肝炎顆粒	sān bái cǎo gān yán kē lì	100
 三白草肝炎糖漿	sān bái cǎo gān yán táng jiāng	100
 三苯雙脒腸溶片	sān běn shuāng mǐ cháng róng piàn	100
@@ -9556,7 +10223,9 @@ sort: by_weight
 三鞭參茸固本丸	sān biān shēn róng gù běn wán	100
 三參通脈口服液	sān cān tōng mài kǒu fú yè	100
 三參益氣口服液	sān cān yì qì kǒu fú yè	100
+三氮唑核甘口膠	sān dàn zuò hé gān kǒu jiāo	100
 三丁酸鈉注射液	sān dīng suān nà zhù shè yè	100
+散發性斑疹傷寒	sàn fā xìng bān zhěn shāng hán	100
 散寒解熱口服液	sàn hán jiě rè kǒu fú yè	100
 三號蛇膽川貝片	sān hào shé dǎn chuān bèi piàn	100
 三合激素注射液	sān hé jī sù zhù shè yè	100
@@ -9566,6 +10235,7 @@ sort: by_weight
 三九皮炎平軟膏	sān jiǔ pí yán píng ruǎn gāo	100
 三九童泰口服液	sān jiǔ tóng tài kǒu fú yè	100
 三七參蜂口服液	sān qī cān fēng kǒu fú yè	100
+三七冠心寧合劑	sān qī guān xīn níng hé jì	100
 三七冠心寧膠囊	sān qī guān xīn níng jiāo náng	100
 三七蜜精口服液	sān qī mì jīng kǒu fú yè	100
 三七血傷寧膠囊	sān qī xuè shāng níng jiāo náng	100
@@ -9575,12 +10245,18 @@ sort: by_weight
 三維亞鐵咀嚼片	sān wéi yà tiě jǔ jué piàn	100
 三維亞鐵口服液	sān wéi yà tiě kǒu fú yè	100
 三烏膠丸包衣丸	sān wū jiāo wán bāo yī wán	100
+三香跌打損傷酒	sān xiāng diē dǎ sǔn shāng jiǔ	100
+三效熱原滅活劑	sān xiào rè yuán miè huó jì	100
+三乙基金膦化物	sān yǐ jī jīn lìn huà wù	100
 三益克黴唑軟膏	sān yì kè méi zuò ruǎn gāo	100
 三益酞丁安軟膏	sān yì tài dīng ān ruǎn gāo	100
 三子茸腎口服液	sān zǐ róng shèn kǒu fú yè	100
 桑薑感冒注射液	sāng jiāng gǎn mào zhù shè yè	100
 桑菊感冒口服液	sāng jú gǎn mào kǒu fú yè	100
+色甘那敏滴眼液	sè gān nà mǐn dī yǎn yè	100
 色甘酸鈉氣霧劑	sè gān suān nà qì wù jì	100
+色羥丙鈉滴鼻液	sè qiǎng bǐng nà dī bí yè	100
+色羥丙鈉滴眼液	sè qiǎng bǐng nà dī yǎn yè	100
 沙丁胺醇緩釋片	shā dīng àn chún huǎn shì piàn	100
 沙丁胺醇氣霧劑	shā dīng àn chún qì wù jì	100
 沙丁胺醇注射液	shā dīng àn chún zhù shè yè	100
@@ -9594,7 +10270,6 @@ sort: by_weight
 少林跌打止痛膏	shǎo lín diē dǎ zhǐ tòng gāo	100
 少林風濕跌打膏	shǎo lín fēng shī diē dǎ gāo	100
 少林祛風止痛散	shǎo lín qū fēng zhǐ tòng sàn	100
-芍藥湯中用大黃	sháo yào tāng zhōng yòng dà huáng	100
 蛇標草藥治痛膏	shé biāo cǎo yào zhì tòng gāo	100
 蛇膽陳皮化痰散	shé dǎn chén pí huà tán sàn	100
 蛇膽陳皮口服液	shé dǎn chén pí kǒu fú yè	100
@@ -9604,6 +10279,7 @@ sort: by_weight
 舍雷肽酶腸溶片	shě léi tài méi cháng róng piàn	100
 舍尼通薄膜衣片	shě ní tōng báo mó yī piàn	100
 麝香保心丸水丸	shè xiāng bǎo xīn wán shuǐ wán	100
+麝香草酚滴耳液	shè xiāng cǎo fēn dī ěr yè	100
 麝香跌打風濕膏	shè xiāng diē dǎ fēng shī gāo	100
 麝香風濕跌打膏	shè xiāng fēng shī diē dǎ gāo	100
 麝香關節止痛膏	shè xiāng guān jié zhǐ tòng gāo	100
@@ -9616,6 +10292,7 @@ sort: by_weight
 麝香心腦通膠囊	shè xiāng xīn nǎo tōng jiāo náng	100
 麝香壯骨巴布膏	shè xiāng zhuàng gǔ bā bù gāo	100
 麝香追風止痛膏	shè xiāng zhuī fēng zhǐ tòng gāo	100
+麝珠明目滴眼液	shè zhū míng mù dī yǎn yè	100
 腎康寧薄膜衣片	shèn kāng níng báo mó yī piàn	100
 參苓白朮口服液	shēn líng bái zhú kǒu fú yè	100
 參苓蛤蚧口服液	shēn líng gé jiè kǒu fú yè	100
@@ -9644,12 +10321,14 @@ sort: by_weight
 腎炎康復糖衣片	shèn yán kāng fù táng yī piàn	100
 生髮神效黑豆膏	shēng fà shén xiào hēi dòu gāo	100
 勝紅抗炎素膠囊	shèng hóng kàng yán sù jiāo náng	100
+生化通用定標液	shēng huà tōng yòng dìng biāo yè	100
+生化通用質控液	shēng huà tōng yòng zhì kòng yè	100
 生脈顆粒黨參方	shēng mài kē lì dǎng shēn fāng	100
 生脈糖漿黨參方	shēng mài táng jiāng dǎng shēn fāng	100
 生脈增液通膠囊	shēng mài zēng yè tōng jiāo náng	100
 生物技術藥製劑	shēng wù jì shù yào zhì jì	100
-生物質顆粒燃料	shēng wù zhì kē lì rán liào	100
 生血復元口服液	shēng xuè fù yuán kǒu fú yè	100
+十二味痹通搽劑	shí èr wèi bì tōng chá jì	100
 十二味齒齦康散	shí èr wèi chǐ yín kāng sàn	100
 十二味奇效湯散	shí èr wèi qí xiào tāng sàn	100
 十二味肉豆蔻丸	shí èr wèi ròu dòu kòu wán	100
@@ -9684,6 +10363,8 @@ sort: by_weight
 使用免疫抑制劑	shǐ yòng miǎn yì yì zhì jì	100
 食慾抑制劑中毒	shí yù yì zhì jì zhòng dú	100
 首杞補腎口服液	shǒu qǐ bǔ shèn kǒu fú yè	100
+手術消毒擦手液	shǒu shù xiāo dú cā shǒu yè	100
+手術消毒洗手液	shǒu shù xiāo dú xǐ shǒu yè	100
 舒巴坦鈉注射液	shū bā tǎn nà zhù shè yè	100
 舒芬太尼注射液	shū fēn tài ní zhù shè yè	100
 舒肝和胃口服液	shū gān hé wèi kǒu fú yè	100
@@ -9703,6 +10384,7 @@ sort: by_weight
 雙龍風濕跌打膏	shuāng lóng fēng shī diē dǎ gāo	100
 雙氯芬酸鉀膠囊	shuāng lǜ fēn suān jiǎ jiāo náng	100
 雙氯芬酸鈉搽劑	shuāng lǜ fēn suān nà chá jì	100
+雙氯芬酸鈉腸溶	shuāng lǜ fēn suān nà cháng róng	100
 雙氯芬酸鈉含片	shuāng lǜ fēn suān nà hán piàn	100
 雙氯芬酸鈉貼片	shuāng lǜ fēn suān nà tiē piàn	100
 雙氯青黴素鈉片	shuāng lǜ qīng méi sù nà piàn	100
@@ -9721,6 +10403,7 @@ sort: by_weight
 雙羊喉痹通顆粒	shuāng yáng hóu bì tōng kē lì	100
 雙陽益腎口服液	shuāng yáng yì shèn kǒu fú yè	100
 雙異丙酚注射液	shuāng yì bǐng fēn zhù shè yè	100
+水合氯醛口服液	shuǐ hé lǜ quán kǒu fú yè	100
 水解蛋白口服液	shuǐ jiě dàn bái kǒu fú yè	100
 水解蛋白注射液	shuǐ jiě dàn bái zhù shè yè	100
 水楊酸苯酚軟膏	shuǐ yáng suān běn fēn ruǎn gāo	100
@@ -9746,6 +10429,7 @@ sort: by_weight
 彈性酶腸溶膠囊	tán xìng méi cháng róng jiāo náng	100
 特比萘芬噴霧劑	tè bǐ nài fēn pēn wù jì	100
 特布他林氣霧劑	tè bù tā lín qì wù jì	100
+特布他林霧化劑	tè bù tā lín wù huà jì	100
 特非那丁分散片	tè fēi nà dīng fēn sǎn piàn	100
 特效新膚松乳膏	tè xiào xīn fū sōng rǔ gāo	100
 替尼泊苷注射液	tì ní pō gān zhù shè yè	100
@@ -9781,6 +10465,8 @@ sort: by_weight
 頭孢妥侖匹酯片	tóu bāo tuǒ lún pǐ zhǐ piàn	100
 頭顱側位定位片	tóu lú cè wèi dìng wèi piàn	100
 退熱解毒注射液	tuì rè jiě dú zhù shè yè	100
+托吡卡胺滴眼液	tuō bǐ kǎ àn dī yǎn yè	100
+妥布黴素滴眼液	tuǒ bù méi sù dī yǎn yè	100
 妥布黴素注射液	tuǒ bù méi sù zhù shè yè	100
 妥拉唑林注射液	tuǒ lā zuò lín zhù shè yè	100
 脫氧核苷酸鈉片	tuō yǎng hé gān suān nà piàn	100
@@ -9794,6 +10480,7 @@ sort: by_weight
 維四高絲注射液	wéi sì gāo sī zhù shè yè	100
 維思通利培酮片	wéi sī tōng lì péi tóng piàn	100
 胃蘇顆粒無糖型	wèi sū kē lì wú táng xíng	100
+維他保健滴眼液	wéi tā bǎo jiàn dī yǎn yè	100
 溫補氣血口服液	wēn bǔ qì xuè kǒu fú yè	100
 溫經養血口服液	wēn jīng yǎng xuè kǒu fú yè	100
 溫胃阿亞然及片	wēn wèi ā yà rán jí piàn	100
@@ -9805,6 +10492,7 @@ sort: by_weight
 豨紅通絡口服液	xī hóng tōng luò kǒu fú yè	100
 豯紅通絡口服液	xī hóng tōng luò kǒu fú yè	100
 細減肥降脂膠囊	xì jiǎn féi jiàng zhī jiāo náng	100
+犀角地黃芍藥丹	xī jiǎo dì huáng sháo yào dān	100
 細菌溶解物膠囊	xì jūn róng jiě wù jiāo náng	100
 硒杞補肝口服液	xī qǐ bǔ gān kǒu fú yè	100
 莧菜黃連素膠囊	xiàn cài huáng lián sù jiāo náng	100
@@ -9818,6 +10506,7 @@ sort: by_weight
 香茯益血口服液	xiāng fú yì xuè kǒu fú yè	100
 香菇多醣注射液	xiāng gū duō táng zhù shè yè	100
 香魂一縷隨風散	xiāng hún yì lǚ suí fēng sàn	100
+香青百草油搽劑	xiāng qīng bǎi cǎo yóu chá jì	100
 香砂六君口服液	xiāng shā liù jūn kǒu fú yè	100
 香砂六君濃縮丸	xiāng shā liù jūn nóng suō wán	100
 香砂六君丸水丸	xiāng shā liù jūn wán shuǐ wán	100
@@ -9913,6 +10602,7 @@ sort: by_weight
 消咳平喘口服液	xiāo ké píng chuǎn kǒu fú yè	100
 小麥纖維素顆粒	xiǎo mài xiān wéi sù kē lì	100
 消糜陰道泡騰片	xiāo mí yīn dào pào téng piàn	100
+小諾黴素滴眼液	xiǎo nuò méi sù dī yǎn yè	100
 小諾黴素乾糖漿	xiǎo nuò méi sù gàn táng jiāng	100
 小諾黴素口服液	xiǎo nuò méi sù kǒu fú yè	100
 小諾黴素注射液	xiǎo nuò méi sù zhù shè yè	100
@@ -9935,6 +10625,7 @@ sort: by_weight
 硝旋山莨菪鹼片	xiāo xuán shān làng dàng jiǎn piàn	100
 消炎解痛巴布膏	xiāo yán jiě tòng bā bù gāo	100
 消炎利膽軟膠囊	xiāo yán lì dǎn ruǎn jiāo náng	100
+消炎止帶外洗液	xiāo yán zhǐ dài wài xǐ yè	100
 消炎止咳口服液	xiāo yán zhǐ ké kǒu fú yè	100
 逍遙顆粒無糖型	xiāo yáo kē lì wú táng xíng	100
 消症扶正口服液	xiāo zhèng fú zhèng kǒu fú yè	100
@@ -9943,6 +10634,7 @@ sort: by_weight
 新賽斯平軟膠囊	xīn sài sī píng ruǎn jiāo náng	100
 新腎必氨注射液	xīn shèn bì ān zhù shè yè	100
 醒腦降壓丸水丸	xǐng nǎo jiàng yā wán shuǐ wán	100
+型腦鈉肽定標液	xíng nǎo nà tài dìng biāo yè	100
 醒腦牛黃清心片	xǐng nǎo niú huáng qīng xīn piàn	100
 杏仁止咳口服液	xìng rén zhǐ ké kǒu fú yè	100
 杏蘇止咳口服液	xìng sū zhǐ ké kǒu fú yè	100
@@ -9950,6 +10642,7 @@ sort: by_weight
 杏香兔耳風膠囊	xìng xiāng tù ěr fēng jiāo náng	100
 杏香兔耳風顆粒	xìng xiāng tù ěr fēng kē lì	100
 熊膽川貝口服液	xióng dǎn chuān bèi kǒu fú yè	100
+熊膽黃芩滴眼液	xióng dǎn huáng qín dī yǎn yè	100
 熊膽茵陳口服液	xióng dǎn yīn chén kǒu fú yè	100
 雄蛾參茸口服液	xióng é shēn róng kǒu fú yè	100
 熊去氧膽酸膠囊	xióng qù yǎng dǎn suān jiāo náng	100
@@ -9959,6 +10652,7 @@ sort: by_weight
 溴甲貝那替嗪片	xiù jiǎ bèi nà tì qín piàn	100
 溴甲貝那替秦片	xiù jiǎ bèi nà tì qín piàn	100
 溴甲東莨菪鹼片	xiù jiǎ dōng làng dàng jiǎn piàn	100
+溴甲託品滴眼液	xiù jiǎ tuō pǐn dī yǎn yè	100
 修正烏雞白鳳丸	xiū zhèng wū jī bái fèng wán	100
 虛空毒蛇腿甲片	xū kōng dú shé tuǐ jiǎ piàn	100
 虛空裂蹄腿甲片	xū kōng liè tí tuǐ jiǎ piàn	100
@@ -9970,10 +10664,14 @@ sort: by_weight
 血府逐瘀泡騰片	xuè fǔ zhú yū pào téng piàn	100
 血府逐瘀丸水丸	xuè fǔ zhú yū wán shuǐ wán	100
 雪哈蟲草軟膠囊	xuě hā chóng cǎo ruǎn jiāo náng	100
+血紅蛋白溶血液	xuè hóng dàn bái róng xuè yè	100
 雪蓮蟲草口服液	xuě lián chóng cǎo kǒu fú yè	100
 雪蓮歸芪口服液	xuě lián guī qí kǒu fú yè	100
 血塞通薄膜衣片	xuè sāi tōng báo mó yī piàn	100
 血栓心脈寧膠囊	xuè shuān xīn mài níng jiāo náng	100
+血液濾過置換液	xuè yè lǜ guò zhì huàn yè	100
+血液心臟麻痹液	xuè yè xīn zàng má bì yè	100
+血液心臟停搏液	xuè yè xīn zàng tíng bó yè	100
 鴉膽子油軟膠囊	yā dǎn zi yóu ruǎn jiāo náng	100
 牙痛清火口服液	yá tòng qīng huǒ kǒu fú yè	100
 亞硝酸鈉注射液	yà xiāo suān nà zhù shè yè	100
@@ -9995,6 +10693,7 @@ sort: by_weight
 鹽酸安非他酮片	yán suān ān fēi tā tóng piàn	100
 鹽酸安他唑啉片	yán suān ān tā zuò lín piàn	100
 鹽酸氨溴索膠囊	yán suān ān xiù suǒ jiāo náng	100
+鹽酸氨溴索口服	yán suān ān xiù suǒ kǒu fú	100
 鹽酸昂丹司瓊片	yán suān áng dān sī qióng piàn	100
 鹽酸奧昔布寧片	yán suān ào xī bù níng piàn	100
 鹽酸奧昔非君片	yán suān ào xī fēi jūn piàn	100
@@ -10185,12 +10884,14 @@ sort: by_weight
 乙肝清熱解毒片	yǐ gān qīng rè jiě dú piàn	100
 益宮寧血口服液	yì gōng níng xuè kǒu fú yè	100
 蟻紅通絡口服液	yǐ hóng tōng luò kǒu fú yè	100
+乙基嗎啡滴眼液	yǐ jī mǎ fēi dī yǎn yè	100
 依降鈣素注射液	yī jiàng gài sù zhù shè yè	100
 益津降糖口服液	yì jīn jiàng táng kǒu fú yè	100
 依卡倍特鈉顆粒	yī kǎ bèi tè nà kē lì	100
 益母草顆粒沖劑	yì mǔ cǎo kē lì chōng jì	100
 益母顆粒無糖型	yì mǔ kē lì wú táng xíng	100
 益腦晶睛口服液	yì nǎo jīng jīng kǒu fú yè	100
+依諾沙星滴眼液	yī nuò shā xīng dī yǎn yè	100
 依諾沙星注射液	yī nuò shā xīng zhù shè yè	100
 益氣復脈口服液	yì qì fù mài kǒu fú yè	100
 益氣健脾口服液	yì qì jiàn pí kǒu fú yè	100
@@ -10202,6 +10903,7 @@ sort: by_weight
 伊曲康唑注射液	yī qǔ kāng zuò zhù shè yè	100
 怡瑞西沙比利片	yí ruì xī shā bǐ lì piàn	100
 依沙吖啶注射液	yī shā ā dìng zhù shè yè	100
+異山梨醇口服液	yì shān lí chún kǒu fú yè	100
 異山梨酯緩釋片	yì shān lí zhǐ huǎn shì piàn	100
 異山梨酯噴霧劑	yì shān lí zhǐ pēn wù jì	100
 異山梨酯氣霧劑	yì shān lí zhǐ qì wù jì	100
@@ -10230,14 +10932,14 @@ sort: by_weight
 乙酰麥迪黴素片	yǐ xiān mài dí méi sù piàn	100
 乙氧苯柳胺膠囊	yǐ yǎng běn liǔ àn jiāo náng	100
 乙氧苯柳胺軟膏	yǐ yǎng běn liǔ àn ruǎn gāo	100
-薏苡附子敗醬散	yì yǐ fù zǐ bài jiàng sàn	100
+醫用超聲耦合劑	yī yòng chāo shēng ǒu hé jì	100
 醫用含氯消毒片	yī yòng hán lǜ xiāo dú piàn	100
-抑制癌細胞擴散	yì zhì ái xì bāo kuò sàn	100
 益智安神口服液	yì zhì ān shén kǒu fú yè	100
 益智溫腎十味丸	yì zhì wēn shèn shí wèi wán	100
 吲達帕胺緩釋片	yǐn dá pà àn huǎn shì piàn	100
 吲哚美辛巴布膏	yǐn duǒ měi xīn bā bù gāo	100
 吲哚美辛腸溶片	yǐn duǒ měi xīn cháng róng piàn	100
+吲哚美辛滴眼液	yǐn duǒ měi xīn dī yǎn yè	100
 吲哚美辛緩釋片	yǐn duǒ měi xīn huǎn shì piàn	100
 吲哚美辛控釋片	yǐn duǒ měi xīn kòng shì piàn	100
 銀胡抗感口服液	yín hú kàng gǎn kǒu fú yè	100
@@ -10246,6 +10948,7 @@ sort: by_weight
 蚓激酶腸溶膠囊	yǐn jī méi cháng róng jiāo náng	100
 銀藍通絡口服液	yín lán tōng luò kǒu fú yè	100
 茵蓮清肝口服液	yīn lián qīng gān kǒu fú yè	100
+銀翹解毒滴鼻液	yín qiào jiě dú dī bí yè	100
 銀翹解毒口服液	yín qiào jiě dú kǒu fú yè	100
 銀翹解毒軟膠囊	yín qiào jiě dú ruǎn jiāo náng	100
 銀翹解毒丸蜜丸	yín qiào jiě dú wán mì wán	100
@@ -10257,8 +10960,10 @@ sort: by_weight
 銀杏葉提取物片	yín xìng yè tí qǔ wù piàn	100
 嬰兒保肺寧膠囊	yīng ér bǎo fèi níng jiāo náng	100
 嬰兒健脾口服液	yīng ér jiàn pí kǒu fú yè	100
+熒光素鈉滴眼液	yíng guāng sù nà dī yǎn yè	100
 熒光素鈉注射液	yíng guāng sù nà zhù shè yè	100
 英卡膦酸二鈉片	yīng kǎ lìn suān èr nà piàn	100
+硬腦膜下積水液	yìng nǎo mó xià jī shuǐ yè	100
 鷹牌花旗參膠囊	yīng pái huā qí shēn jiāo náng	100
 盈信氨酚偽麻片	yíng xìn ān fēn wěi má piàn	100
 硬脂酸紅黴素片	yìng zhī suān hóng méi sù piàn	100
@@ -10268,6 +10973,7 @@ sort: by_weight
 右美沙芬口服液	yòu měi shā fēn kǒu fú yè	100
 右美沙芬注射液	yòu měi shā fēn zhù shè yè	100
 右旋布洛芬膠囊	yòu xuán bù luò fēn jiāo náng	100
+右旋糖酐滴眼劑	yòu xuán táng gān dī yǎn jì	100
 右旋糖酐注射液	yòu xuán táng gān zhù shè yè	100
 魚鰾補腎丸水丸	yú biào bǔ shèn wán shuǐ wán	100
 魚鰾參杞益精丸	yú biào cān qǐ yì jīng wán	100
@@ -10295,6 +11001,7 @@ sort: by_weight
 楂曲平胃口服液	zhā qǔ píng wèi kǒu fú yè	100
 張大寧精昂膠囊	zhāng dà níng jīng áng jiāo náng	100
 珍芪補血口服液	zhēn qí bǔ xuè kǒu fú yè	100
+珍珠明目滴眼液	zhēn zhū míng mù dī yǎn yè	100
 珍珠蘄蛇口服液	zhēn zhū qí shé kǒu fú yè	100
 珍珠胃安丸水丸	zhēn zhū wèi ān wán shuǐ wán	100
 正清風痛寧膠囊	zhèng qīng fēng tòng níng jiāo náng	100
@@ -10304,9 +11011,9 @@ sort: by_weight
 止客川貝末膠囊	zhǐ kè chuān bèi mò jiāo náng	100
 止咳化痰口服液	zhǐ ké huà tán kǒu fú yè	100
 止咳橘紅口服液	zhǐ ké jú hóng kǒu fú yè	100
+止渴抗疲勞沖劑	zhǐ kě kàng pí láo chōng jì	100
 止咳枇杷口服液	zhǐ ké pí pá kǒu fú yè	100
 治傷消瘀丸水丸	zhì shāng xiāo yū wán shuǐ wán	100
-枳實導滯首大黃	zhǐ shí dǎo zhì shǒu dà huáng	100
 止嗽安喘口服液	zhǐ sòu ān chuǎn kǒu fú yè	100
 止嗽定喘口服液	zhǐ sòu dìng chuǎn kǒu fú yè	100
 止嗽定喘濃縮丸	zhǐ sòu dìng chuǎn nóng suō wán	100
@@ -10314,8 +11021,6 @@ sort: by_weight
 止嗽青果口服液	zhǐ sòu qīng guǒ kǒu fú yè	100
 止血復脈口服液	zhǐ xuè fù mài kǒu fú yè	100
 止血祛瘀明目片	zhǐ xuè qū yū míng mù piàn	100
-梔子大黃湯主之	zhī zi dà huáng tāng zhǔ zhī	100
-梔子大黃組成方	zhī zi dà huáng zǔ chéng fāng	100
 中風復元口服液	zhòng fēng fù yuán kǒu fú yè	100
 中風醒神口服液	zhòng fēng xǐng shén kǒu fú yè	100
 豬肺磷脂注射液	zhū fèi lín zhī zhù shè yè	100
@@ -10349,6 +11054,7 @@ sort: by_weight
 坐珠達西丸水丸	zuò zhū dá xī wán shuǐ wán	100
 氨酚匹林咖啡因片	ān fēn pǐ lín kā fēi yīn piàn	100
 氨基酸螯合鈣膠囊	ān jī suān áo hé gài jiāo náng	100
+吡嘧司特鉀滴眼液	bǐ mì sī tè jiǎ dī yǎn yè	100
 丹參川芎嗪注射液	dān shēn chuān xiōng qín zhù shè yè	100
 複方氨酚那敏顆粒	fù fāng ān fēn nà mǐn kē lì	100
 複方柴胡安神顆粒	fù fāng chái hú ān shén kē lì	100
@@ -10364,5 +11070,15 @@ sort: by_weight
 小兒四維葡鈣顆粒	xiǎo ér sì wéi pú gài kē lì	100
 元素的集中和分散	yuán sù de jí zhōng hé fēn sǎn	100
 苯胺凸版印刷凝聚劑	běn àn tū bǎn yìn shuā níng jù jì	100
+茯苓桂枝白朮甘草湯	fú líng guì zhī bái zhú gān cǎo tāng	100
+茯苓桂枝甘草大棗湯	fú líng guì zhī gān cǎo dà zǎo tāng	100
+甘草乾薑茯苓白朮湯	gān cǎo gān jiāng fú líng bái zhú tāng	100
+桂枝去芍藥加附子湯	guì zhī qù sháo yào jiā fù zǐ tāng	100
+桂枝去芍藥加皂莢湯	guì zhī qù sháo yào jiā zào jiá tāng	100
+黃芪芍藥桂枝苦酒湯	huáng qí sháo yào guì zhī kǔ jiǔ tāng	100
 鹽酸特比萘芬噴霧劑	yán suān tè bǐ nài fēn pēn wù jì	100
+桂枝去桂加茯苓白朮湯	guì zhī qù guì jiā fú líng bái zhú tāng	100
 小兒雙磺甲氧苄啶顆粒	xiǎo ér shuāng huáng jiǎ yǎng biàn dìng kē lì	100
+木防己去石膏加茯苓芒硝湯	mù fáng jǐ qù shí gāo jiā fú líng máng xiāo tāng	100
+桂枝去芍藥加蜀漆牡蠣龍骨救逆湯	guì zhī qù sháo yào jiā shǔ qī mǔ lì lóng gǔ jiù nì tāng	100
+玉女煎去牛膝熟地加細生地元參方	yù nǚ jiān qù niú xī shú dì jiā xì shēng dì yuán shēn fāng	100

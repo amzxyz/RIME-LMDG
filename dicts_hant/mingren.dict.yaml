@@ -1,0 +1,5273 @@
+# rime dictionary
+# encoding: utf-8
+# https://github.com/amzxyz/RIME-LMDG
+# 名人(歷史人物、學者、作家、政治家、企業家、公眾人物等)
+---
+name: mingren
+version: "LTS"
+sort: by_weight
+...
+蔡暢	cài chàng	512
+蔡鍔	cài è	223
+蔡孚	cài fú	35
+蔡京	cài jīng	832
+蔡戡	cài kān	1496
+蔡瀾	cài lán	128
+蔡倫	cài lún	144
+蔡瑁	cài mào	220
+蔡薿	cài nǐ	35
+蔡奇	cài qí	444
+蔡牽	cài qiān	407
+蔡確	cài què	500
+蔡伸	cài shēn	239
+蔡襄	cài xiāng	345
+蔡琰	cài yǎn	15
+蔡陽	cài yáng	508
+蔡邕	cài yōng	664
+蔡澤	cài zé	558
+曹昂	cáo áng	706
+曹彬	cáo bīn	345
+曹豳	cáo bīn	202
+曹參	cáo cān	955
+曹操	cáo cāo	39350
+曹沖	cáo chōng	1127
+曹娥	cáo é	6
+曹芳	cáo fāng	963
+曹洪	cáo hóng	1049
+曹姬	cáo jī	127
+曹節	cáo jié	216
+曹軍	cáo jūn	1181
+曹錕	cáo kūn	878
+曹劉	cáo liú	95
+曹髦	cáo máo	684
+曹丕	cáo pī	17972
+曹仁	cáo rén	2574
+曹睿	cáo ruì	828
+曹叡	cáo ruì	787
+曹爽	cáo shuǎng	917
+曹松	cáo sōng	374
+曹嵩	cáo sōng	194
+曹唐	cáo táng	302
+曹襄	cáo xiāng	17
+曹休	cáo xiū	1504
+曹鄴	cáo yè	105
+曹寅	cáo yín	684
+曹禺	cáo yú	373
+曹宇	cáo yǔ	336
+曹緣	cáo yuán	536
+曹彰	cáo zhāng	932
+曹真	cáo zhēn	824
+曾江	céng jiāng	447
+陳安	chén ān	1120
+陳策	chén cè	580
+陳誠	chén chéng	160
+陳到	chén dào	142
+陳登	chén dēng	295
+陳賡	chén gēng	484
+陳宮	chén gōng	534
+陳光	chén guāng	1166
+陳珪	chén guī	58
+陳矯	chén jiǎo	48
+陳菊	chén jú	783
+陳亮	chén liàng	837
+陳漫	chén màn	489
+陳美	chén měi	994
+陳歐	chén ōu	783
+陳群	chén qún	761
+陳睿	chén ruì	647
+陳深	chén shēn	846
+陳勝	chén shèng	1207
+陳壽	chén shòu	2097
+陳泰	chén tài	375
+陳湯	chén tāng	658
+陳豨	chén xī	156
+陳毅	chén yì	1978
+陳儀	chén yí	630
+陳餘	chén yú	420
+陳雲	chén yún	1052
+陳朝	chén zhāo	950
+陳真	chén zhēn	1083
+陳軫	chén zhěn	40
+陳祗	chén zhī	31
+楚王	chǔ wáng	2300
+崔澹	cuī dàn	205
+崔滌	cuī dí	509
+崔峒	cuī dòng	193
+崔藩	cuī fān	45
+崔恭	cuī gōng	323
+崔瓘	cuī guàn	288
+崔珪	cuī guī	252
+崔浩	cuī hào	110
+崔顥	cuī hào	104
+崔櫓	cuī lǔ	83
+崔璞	cuī pú	171
+崔琦	cuī qí	616
+崔翹	cuī qiào	230
+崔融	cuī róng	387
+崔湜	cuī shí	209
+崔曙	cuī shǔ	572
+崔樞	cuī shū	161
+崔塗	cuī tú	279
+崔鉉	cuī xuàn	387
+崔琰	cuī yǎn	170
+崔郾	cuī yǎn	7
+崔液	cuī yè	209
+崔膺	cuī yīng	26
+崔杼	cuī zhù	148
+戴妃	dài fēi	498
+戴進	dài jìn	139
+戴軍	dài jūn	756
+戴逵	dài kuí	423
+戴笠	dài lì	22883
+戴琳	dài lín	729
+戴旭	dài xù	529
+戴震	dài zhèn	639
+戴宗	dài zōng	1192
+鄧艾	dèng ài	3350
+鄧迪	dèng dí	744
+鄧飛	dèng fēi	706
+鄧公	dèng gōng	729
+鄧華	dèng huá	42
+鄧肯	dèng kěn	4195
+鄧鏗	dèng kēng	436
+鄧肅	dèng sù	116
+鄧綏	dèng suí	450
+鄧通	dèng tōng	621
+鄧拓	dèng tuò	585
+鄧禹	dèng yǔ	630
+鄧愈	dèng yù	271
+鄧芝	dèng zhī	567
+鄧騭	dèng zhì	364
+鄧陟	dèng zhì	35
+鄧忠	dèng zhōng	128
+丁度	dīng dù	450
+丁奉	dīng fèng	424
+丁復	dīng fù	418
+丁黼	dīng fǔ	205
+丁固	dīng gù	18
+丁蘭	dīng lán	86
+丁磊	dīng lěi	1724
+丁玲	dīng líng	824
+丁滿	dīng mǎn	66
+丁墨	dīng mò	680
+丁寧	dīng níng	322
+丁謂	dīng wèi	131
+丁蟹	dīng xiè	212
+丁儀	dīng yí	412
+丁原	dīng yuán	226
+丁真	dīng zhēn	2123
+樊川	fán chuān	269
+樊綱	fán gāng	102
+范公	fàn gōng	556
+樊晃	fán huǎng	153
+范進	fàn jìn	851
+范雎	fàn jū	2487
+范寬	fàn kuān	598
+范蠡	fàn lǐ	2396
+樊敏	fán mǐn	226
+范欽	fàn qīn	3
+樊瑞	fán ruì	567
+范睢	fàn suī	562
+范閑	fàn xián	659
+樊珣	fán xún	90
+范揚	fàn yáng	868
+范遙	fàn yáo	233
+范曄	fàn yè	3193
+范瑛	fàn yīng	360
+范雲	fàn yún	380
+范增	fàn zēng	1011
+范曾	fàn zēng	960
+馮飛	féng fēi	765
+馮劫	féng jié	46
+馮軻	féng kē	1022
+馮侖	féng lún	332
+馮唐	féng táng	966
+顧城	gù chéng	3541
+顧況	gù kuàng	522
+郭川	guō chuān	1146
+郭淮	guō huái	1032
+郭槐	guō huái	466
+郭解	guō jiě	174
+郭巨	guō jù	413
+郭開	guō kāi	143
+郭隗	guō kuí	83
+郭汜	guō sì	478
+韓琮	hán cóng	320
+韓當	hán dāng	283
+韓非	hán fēi	2145
+韓廣	hán guǎng	423
+韓寒	hán hán	7329
+韓翃	hán hóng	468
+韓璜	hán huáng	122
+韓暨	hán jì	8
+韓絳	hán jiàng	102
+韓駒	hán jū	265
+韓琦	hán qí	655
+韓爍	hán shuò	732
+韓遂	hán suì	480
+韓王	hán wáng	2100
+韓信	hán xìn	11511
+韓休	hán xiū	139
+韓玄	hán xuán	164
+韓弇	hán yǎn	1
+韓愈	hán yù	18994
+韓昭	hán zhāo	639
+韓縝	hán zhěn	342
+韓正	hán zhèng	901
+何澹	hé dàn	414
+何帆	hé fān	576
+何鍵	hé jiàn	222
+何鸞	hé luán	180
+何平	hé píng	13009
+何適	hé shì	148
+何瑭	hé táng	120
+何新	hé xīn	1089
+何晏	hé yàn	346
+何勇	hé yǒng	613
+何焯	hé zhuó	1094
+華妃	huá fēi	25786
+華歆	huá xīn	345
+華雄	huá xióng	622
+華胥	huá xū	1930
+華箏	huá zhēng	624
+霍查	huò chá	765
+霍達	huò dá	647
+霍都	huò dōu	657
+霍頓	huò dùn	176
+霍金	huò jīn	3159
+霍峻	huò jùn	81
+霍弋	huò yì	29
+霍禹	huò yǔ	712
+江澄	jiāng chéng	109
+蔣川	jiǎng chuān	283
+蔣凡	jiǎng fán	650
+江藩	jiāng fān	286
+江妃	jiāng fēi	58
+蔣幹	jiǎng gàn	949
+姜戈	jiāng gē	2516
+江歌	jiāng gē	2320
+江革	jiāng gé	157
+蔣公	jiǎng gōng	867
+蔣渙	jiǎng huàn	220
+蔣濟	jiǎng jì	125
+姜皎	jiāng jiǎo	749
+江姐	jiāng jiě	632
+蔣捷	jiǎng jié	127
+姜夔	jiāng kuí	320
+江平	jiāng píng	286
+蔣欽	jiǎng qīn	182
+江青	jiāng qīng	471
+姜戎	jiāng róng	626
+蔣蓉	jiǎng róng	595
+姜尚	jiāng shàng	596
+姜濤	jiāng tāo	968
+蔣琬	jiǎng wǎn	614
+姜晞	jiāng xī	59
+蔣勳	jiǎng xūn	900
+江淹	jiāng yān	99
+姜岩	jiāng yán	89
+江永	jiāng yǒng	1513
+金九	jīn jiǔ	915
+金農	jīn nóng	878
+金庸	jīn yōng	2619
+金吒	jīn zhā	22
+孔明	kǒng míng	3259
+孔丘	kǒng qiū	742
+孔融	kǒng róng	741
+孔笙	kǒng shēng	242
+孔宣	kǒng xuān	169
+孔夷	kǒng yí	110
+孔顒	kǒng yóng	4
+孔侑	kǒng yòu	546
+孔子	kǒng zǐ	12817
+李安	lǐ ān	847
+李昂	lǐ áng	2739
+李敖	lǐ áo	981
+李白	lǐ bái	21242
+李闖	lǐ chuǎng	1031
+厲兌	lì duì	290
+厲鶚	lì è	19
+李靖	lǐ jìng	5031
+李傕	lǐ jué	728
+李逵	lǐ kuí	1400
+李悝	lǐ kuī	179
+李鵬	lǐ péng	581
+李儒	lǐ rú	449
+李斯	lǐ sī	1274
+李肅	lǐ sù	109
+厲王	lì wáng	872
+李衛	lǐ wèi	219
+李想	lǐ xiǎng	35537
+李嚴	lǐ yán	1067
+李由	lǐ yóu	134
+李漁	lǐ yú	557
+李淵	lǐ yuān	2895
+李治	lǐ zhì	13762
+林白	lín bái	819
+林彪	lín biāo	700
+林斌	lín bīn	670
+林逋	lín bū	97
+林超	lín chāo	896
+林沖	lín chōng	1451
+林聰	lín cōng	31
+林達	lín dá	895
+林旦	lín dàn	378
+林動	lín dòng	818
+林鐸	lín duó	450
+林楓	lín fēng	952
+林皋	lín gāo	141
+林海	lín hǎi	555
+林虎	lín hǔ	68
+林肯	lín kěn	3071
+林立	lín lì	1567
+林奈	lín nài	832
+林寧	lín níng	657
+林奇	lín qí	528
+林強	lín qiáng	157
+林全	lín quán	868
+林群	lín qún	986
+林森	lín sēn	122
+林申	lín shēn	309
+林殊	lín shū	790
+林紓	lín shū	749
+林濤	lín tāo	173
+林夕	lín xī	6855
+林希	lín xī	6170
+林蕭	lín xiāo	1017
+林燮	lín xiè	273
+林旭	lín xù	144
+林瓔	lín yīng	632
+林藻	lín zǎo	279
+林昭	lín zhāo	675
+林植	lín zhí	488
+林鐘	lín zhōng	504
+林洙	lín zhū	45
+林滋	lín zī	224
+劉安	liú ān	811
+劉巴	liú bā	292
+劉邦	liú bāng	30744
+劉備	liú bèi	32311
+劉濞	liú bì	251
+劉表	liú biǎo	1700
+劉徹	liú chè	3350
+劉德	liú dé	611
+劉肥	liú féi	221
+劉封	liú fēng	830
+劉馥	liú fù	63
+劉賀	liú hè	850
+劉鶴	liú hè	784
+劉恆	liú héng	879
+劉弘	liú hóng	769
+劉基	liú jī	6641
+劉瑾	liú jǐn	687
+劉據	liú jù	347
+劉駿	liú jùn	317
+劉能	liú néng	157
+劉闢	liú pì	558
+劉琦	liú qí	1423
+劉啟	liú qǐ	719
+劉謙	liú qiān	1447
+劉禪	liú shàn	5385
+劉劭	liú shào	54
+劉勝	liú shèng	850
+劉宋	liú sòng	898
+劉煒	liú wěi	349
+劉向	liú xiàng	425
+劉襄	liú xiāng	108
+劉勰	liú xié	4081
+劉協	liú xié	3566
+劉歆	liú xīn	268
+劉玄	liú xuán	364
+劉琰	liú yǎn	144
+劉曜	liú yào	695
+劉繇	liú yáo	151
+劉曄	liú yè	810
+劉毅	liú yì	7605
+劉廙	liú yì	22
+劉盈	liú yíng	907
+劉墉	liú yōng	1907
+劉裕	liú yù	1266
+劉瑜	liú yú	935
+劉虞	liú yú	143
+劉源	liú yuán	122
+劉淵	liú yuān	57
+劉璋	liú zhāng	1090
+劉楨	liú zhēn	103
+劉仲	liú zhòng	696
+婁燁	lóu yè	686
+陸翱	lù áo	107
+陸川	lù chuān	824
+陸昊	lù hào	526
+陸機	lù jī	353
+陸績	lù jì	286
+陸賈	lù jiǎ	292
+陸慷	lù kāng	738
+陸康	lù kāng	701
+陸抗	lù kàng	664
+陸磊	lù lěi	522
+陸奇	lù qí	499
+陸叡	lù ruì	333
+陸壓	lù yā	121
+陸扆	lù yǐ	34
+陸游	lù yóu	1426
+陸羽	lù yǔ	796
+陸雲	lù yún	330
+陸終	lù zhōng	134
+羅本	luó běn	2136
+羅丹	luó dān	969
+羅敷	luó fū	968
+羅京	luó jīng	44
+羅蘭	luó lán	2025
+羅琳	luó lín	1372
+羅曼	luó màn	1623
+羅素	luó sù	2962
+呂布	lǚ bù	1336
+呂公	lǚ gōng	1269
+呂后	lǚ hòu	1012
+呂嘉	lǚ jiā	1320
+呂克	lǚ kè	1003
+呂林	lǚ lín	210
+呂蒙	lǚ méng	1022
+呂尚	lǚ shàng	444
+呂渭	lǚ wèi	77
+呂溫	lǚ wēn	372
+呂乂	lǚ yì	9
+呂岳	lǚ yuè	296
+呂雉	lǚ zhì	399
+呂祖	lǚ zǔ	734
+馬岱	mǎ dài	742
+馬戴	mǎ dài	512
+馬登	mǎ dēng	404
+馬恩	mǎ ēn	198
+馬芳	mǎ fāng	74
+馬逢	mǎ féng	390
+馬鋼	mǎ gāng	9
+馬漢	mǎ hàn	100
+馬建	mǎ jiàn	620
+馬凱	mǎ kǎi	129
+馬勒	mǎ lè	4302
+馬林	mǎ lín	516
+馬麟	mǎ lín	489
+馬隆	mǎ lóng	693
+馬鳴	mǎ míng	701
+馬奈	mǎ nài	120
+馬融	mǎ róng	259
+馬謖	mǎ sù	4271
+馬太	mǎ tài	144
+馬王	mǎ wáng	1108
+馬武	mǎ wǔ	738
+馬殷	mǎ yīn	666
+馬原	mǎ yuán	6789
+馬援	mǎ yuán	635
+馬遠	mǎ yuǎn	525
+馬雲	mǎ yún	15163
+馬忠	mǎ zhōng	342
+馬周	mǎ zhōu	45
+馬祖	mǎ zǔ	134
+孟昶	mèng chǎng	60
+孟遲	mèng chí	197
+孟德	mèng dé	847
+孟珙	mèng gǒng	508
+孟貫	mèng guàn	144
+孟光	mèng guāng	38
+孟獲	mèng huò	549
+孟簡	mèng jiǎn	315
+孟郊	mèng jiāo	173
+孟康	mèng kāng	508
+孟軻	mèng kē	767
+孟良	mèng liáng	788
+孟母	mèng mǔ	78
+孟起	mèng qǐ	151
+孟森	mèng sēn	621
+孟優	mèng yōu	68
+孟子	mèng zǐ	4179
+孟宗	mèng zōng	104
+穆旦	mù dàn	626
+穆迪	mù dí	86719
+穆公	mù gōng	932
+穆青	mù qīng	29
+穆聖	mù shèng	646
+穆王	mù wáng	838
+穆宗	mù zōng	976
+聶耳	niè ěr	129
+聶風	niè fēng	163
+聶政	niè zhèng	135
+裴漼	péi cuǐ	270
+裴迪	péi dí	50
+裴度	péi dù	571
+裴航	péi háng	356
+裴寂	péi jì	712
+裴矩	péi jǔ	526
+裴潾	péi lín	101
+裴杞	péi qǐ	178
+裴潛	péi qián	12
+裴說	péi shuō	289
+裴休	péi xiū	720
+裴秀	péi xiù	684
+裴諝	péi xū	207
+裴炎	péi yán	33
+裴贽	péi zhì	163
+齊妃	qí fēi	6568
+齊浣	qí huàn	168
+戚姬	qī jī	84
+齊己	qí jǐ	76
+齊秦	qí qín	681
+齊泰	qí tài	604
+齊王	qí wáng	27611
+喬巴	qiáo bā	1099
+喬丹	qiáo dān	14366
+喬峰	qiáo fēng	1441
+喬良	qiáo liáng	513
+喬琪	qiáo qí	1041
+喬燃	qiáo rán	540
+喬石	qiáo shí	158
+喬叟	qiáo sǒu	603
+喬托	qiáo tuō	670
+喬羽	qiáo yǔ	322
+喬治	qiáo zhì	11816
+秦剛	qín gāng	53
+秦觀	qín guān	600
+秦檜	qín huì	3928
+秦暉	qín huī	652
+秦嘉	qín jiā	338
+秦君	qín jūn	7058
+秦朗	qín lǎng	100
+秦宓	qín mì	109
+秦瓊	qín qióng	317
+秦升	qín shēng	1336
+秦王	qín wáng	4304
+秦越	qín yuè	28
+秦鐘	qín zhōng	966
+秦仲	qín zhòng	361
+冉閔	rǎn mǐn	502
+冉求	rǎn qiú	472
+冉有	rǎn yǒu	580
+阮籍	ruǎn jí	778
+阮瑀	ruǎn yǔ	85
+阮閱	ruǎn yuè	212
+邵華	shào huá	786
+邵謁	shào yè	193
+邵雍	shào yōng	1816
+瀋崇	shěn chóng	706
+沈飛	shěn fēi	1089
+沈復	shěn fù	1912
+沈浩	shěn hào	775
+沈晦	shěn huì	248
+沈括	shěn kuò	424
+沈煉	shěn liàn	691
+沈邈	shěn miǎo	180
+沈鵬	shěn péng	50
+沈約	shěn yuē	638
+沈周	shěn zhōu	697
+沈醉	shěn zuì	616
+施琅	shī láng	3736
+施洋	shī yáng	109
+宋慈	sòng cí	1014
+宋健	sòng jiàn	511
+宋江	sòng jiāng	3180
+宋柯	sòng kē	259
+宋濂	sòng lián	693
+宋平	sòng píng	688
+宋祁	sòng qí	429
+宋萬	sòng wàn	524
+宋琬	sòng wǎn	257
+宋雍	sòng yōng	332
+孫策	sūn cè	3423
+孫恩	sūn ēn	107
+孫魴	sūn fáng	153
+孫皓	sūn hào	7878
+孫峻	sūn jùn	101
+孫科	sūn kē	881
+孫亮	sūn liàng	201
+孫乾	sūn qián	422
+孫權	sūn quán	15687
+孫文	sūn wén	427
+孫武	sūn wǔ	1630
+孫吳	sūn wú	1548
+孫休	sūn xiū	684
+孫瑜	sūn yú	60
+王賁	wáng bēn	163
+王弼	wáng bì	308
+王勃	wáng bó	1376
+王粲	wáng càn	530
+王充	wáng chōng	230
+王寵	wáng chǒng	218
+王丹	wáng dān	69
+王導	wáng dǎo	5930
+王敦	wáng dūn	89
+王符	wáng fú	178
+王翰	wáng hàn	603
+王齕	wáng hé	198
+王吉	wáng jí	398
+王基	wáng jī	359
+王績	wáng jì	94
+王堅	wáng jiān	1822
+王健	wáng jiàn	1681
+王翦	wáng jiǎn	1316
+王建	wáng jiàn	648
+王朗	wáng lǎng	983
+王力	wáng lì	3320
+王離	wáng lí	830
+王倫	wáng lún	385
+王莽	wáng mǎng	2926
+王猛	wáng měng	976
+王冕	wáng miǎn	850
+王澍	wáng shù	449
+王朔	wáng shuò	996
+王肅	wáng sù	136
+王維	wáng wéi	2322
+王微	wáng wēi	420
+王吸	wáng xī	78
+王獻	wáng xiàn	832
+王祥	wáng xiáng	588
+王脩	wáng xiū	28
+王選	wáng xuǎn	141
+王衍	wáng yǎn	169
+王毅	wáng yì	27158
+王垠	wáng yín	769
+王允	wáng yǔn	1022
+王佐	wáng zuǒ	764
+魏東	wèi dōng	1085
+魏扶	wèi fú	47
+衛瓘	wèi guàn	150
+魏宏	wèi hóng	257
+衛覬	wèi jì	7
+魏傑	wèi jié	108
+衛伉	wèi kàng	33
+魏克	wèi kè	463
+魏坤	wèi kūn	729
+魏明	wèi míng	2703
+魏謨	wèi mó	198
+魏樸	wèi pǔ	4
+魏杞	wèi qǐ	59
+衛青	wèi qīng	7591
+魏冉	wèi rǎn	196
+魏收	wèi shōu	299
+魏斯	wèi sī	1152
+魏延	wèi yán	11465
+魏源	wèi yuán	848
+衛哲	wèi zhé	1580
+衛臻	wèi zhēn	21
+魏徵	wèi zhēng	1950
+衛莊	wèi zhuāng	7028
+溫格	wēn gé	1176
+溫公	wēn gōng	1197
+溫侯	wēn hóu	504
+溫恢	wēn huī	122
+溫嶠	wēn jiào	367
+溫王	wēn wáng	612
+溫憲	wēn xiàn	332
+吳澄	wú chéng	126
+吳鳳	wú fèng	612
+吳廣	wú guǎng	609
+吳晗	wú hán	976
+吳漢	wú hàn	609
+吳宓	wú mì	709
+吳起	wú qǐ	42252
+吳思	wú sī	728
+吳王	wú wáng	3173
+吳邪	wú xié	411
+吳用	wú yòng	9301
+吳子	wú zǐ	134
+奚斤	xī jīn	106
+奚仲	xī zhòng	540
+肖邦	xiāo bāng	6180
+肖鋼	xiāo gāng	857
+肖紅	xiāo hóng	1851
+肖華	xiāo huá	226
+肖奈	xiāo nài	914
+肖欽	xiāo qīn	280
+肖全	xiāo quán	370
+肖揚	xiāo yáng	106
+肖鷹	xiāo yīng	102
+謝安	xiè ān	1048
+謝彬	xiè bīn	671
+謝丹	xiè dān	876
+謝端	xiè duān	705
+謝頓	xiè dùn	630
+謝飛	xiè fēi	176
+謝非	xiè fēi	158
+謝鋒	xiè fēng	221
+謝公	xiè gōng	18
+謝赫	xiè hè	826
+謝華	xiè huá	661
+謝晦	xiè huì	413
+謝絳	xiè jiàng	225
+謝科	xiè kē	89
+謝薖	xiè kē	72
+謝朗	xiè lǎng	626
+謝磊	xiè lěi	392
+謝林	xiè lín	850
+謝懋	xiè mào	144
+謝邈	xiè miǎo	51
+謝平	xiè píng	31
+謝遷	xiè qiān	864
+謝尚	xiè shàng	584
+謝特	xiè tè	752
+謝添	xiè tiān	34
+謝偉	xiè wěi	435
+謝燮	xiè xiè	40
+謝玄	xiè xuán	179
+謝遜	xiè xùn	1890
+謝琰	xiè yǎn	424
+謝偃	xiè yǎn	161
+謝燁	xiè yè	21989
+徐冰	xú bīng	720
+徐晨	xú chén	742
+許褚	xǔ chǔ	1630
+徐達	xú dá	1743
+徐妃	xú fēi	529
+徐福	xú fú	859
+許負	xǔ fù	174
+徐晃	xú huǎng	2497
+徐惠	xú huì	1071
+許渾	xǔ hún	477
+許稷	xǔ jì	91
+許將	xǔ jiāng	216
+許靖	xǔ jìng	237
+徐克	xú kè	5909
+徐亮	xú liàng	364
+徐邈	xú miǎo	27
+徐明	xú míng	3408
+許慎	xǔ shèn	684
+徐盛	xú shèng	835
+徐庶	xú shù	553
+許棠	xǔ táng	602
+徐渭	xú wèi	4838
+許仙	xǔ xiān	2118
+徐翔	xú xiáng	790
+徐宣	xú xuān	20
+徐奕	xú yì	73
+許攸	xǔ yōu	1438
+許由	xǔ yóu	977
+許哲	xǔ zhé	876
+薛霸	xuē bà	475
+薛逢	xuē féng	81
+薛剛	xuē gāng	16
+薛稷	xuē jì	95
+薛舉	xuē jǔ	579
+薛據	xuē jù	64
+薛禮	xuē lǐ	102
+薛訥	xuē nè	446
+薛能	xuē néng	1351
+薛蟠	xuē pán	214
+薛紹	xuē shào	915
+薛式	xuē shì	69
+薛燧	xuē suì	38
+薛濤	xuē tāo	680
+薛瑄	xuē xuān	13
+薛雪	xuē xuě	424
+薛洋	xuē yáng	1113
+薛曜	xuē yào	112
+薛瑩	xuē yíng	564
+薛岳	xuē yuè	498
+閆安	yán ān	440
+嚴彬	yán bīn	9
+閆芳	yán fāng	308
+閻防	yán fáng	32
+嚴復	yán fù	418
+閻羅	yán luó	195
+閻魔	yán mó	1270
+閻柔	yán róu	16
+嚴嵩	yán sōng	1047
+閻王	yán wang	1319
+閻行	yán xíng	14
+閻焱	yán yàn	262
+閻宇	yán yǔ	81
+閻志	yán zhì	94
+楊度	yáng dù	927
+楊妃	yáng fēi	232
+楊阜	yáng fù	80
+楊廣	yáng guǎng	18966
+楊過	yáng guò	5787
+楊弘	yáng hóng	151
+楊戩	yáng jiǎn	977
+楊堅	yáng jiān	818
+楊絳	yáng jiàng	928
+楊炯	yáng jiǒng	50
+楊駿	yáng jùn	778
+楊浚	yáng jùn	102
+楊濬	yáng jùn	47
+楊康	yáng kāng	949
+楊寬	yáng kuān	698
+楊逵	yáng kuí	558
+楊夔	yáng kuí	137
+楊牢	yáng láo	46
+楊樸	yáng pǔ	323
+楊任	yáng rèn	110
+楊榮	yáng róng	475
+楊慎	yáng shèn	310
+楊素	yáng sù	474
+楊損	yáng sǔn	234
+楊雄	yáng xióng	914
+楊修	yáng xiū	958
+楊業	yáng yè	2704
+楊儀	yáng yí	2285
+楊昭	yáng zhāo	910
+楊震	yáng zhèn	242
+楊朱	yáng zhū	644
+姚濱	yáo bīn	517
+姚萇	yáo cháng	340
+姚崇	yáo chóng	466
+姚合	yáo hé	1539
+姚泓	yáo hóng	433
+姚鵠	yáo hú	116
+姚賈	yáo jiǎ	20
+姚揆	yáo kuí	4
+姚勉	yáo miǎn	53
+姚敏	yáo mǐn	66
+姚明	yáo míng	18316
+姚鼐	yáo nài	50
+姚謙	yáo qiān	6136
+姚仙	yáo xiān	436
+姚襄	yáo xiāng	117
+姚興	yáo xīng	350
+姚洋	yáo yáng	1296
+姚瑩	yáo yíng	299
+葉凡	yè fán	1026
+葉飛	yè fēi	1274
+葉公	yè gōng	85
+葉桂	yè guì	390
+葉開	yè kāi	986
+葉瀾	yè lán	280
+葉朗	yè lǎng	441
+葉莉	yè lì	274
+葉茂	yè mào	933
+葉梅	yè méi	634
+葉秋	yè qiū	1048
+葉群	yè qún	778
+葉適	yè shì	153
+葉帥	yè shuài	572
+葉檀	yè tán	200
+葉挺	yè tǐng	8902
+葉問	yè wèn	9816
+葉修	yè xiū	922
+葉芝	yè zhī	4985
+尤權	yóu quán	7744
+尤侗	yóu tóng	88
+余靖	yú jìng	109
+鬱亮	yù liàng	984
+袁安	yuán ān	444
+袁彬	yuán bīn	549
+袁庚	yuán gēng	504
+袁瓘	yuán guàn	71
+袁洪	yuán hóng	122
+袁宏	yuán hóng	110
+袁渙	yuán huàn	7
+袁郊	yuán jiāo	60
+袁珂	yuán kē	74
+袁朗	yuán lǎng	262
+袁枚	yuán méi	486
+袁敏	yuán mǐn	450
+袁尚	yuán shàng	1292
+袁術	yuán shù	1188
+袁殊	yuán shū	167
+袁譚	yuán tán	212
+袁綯	yuán táo	38
+袁熙	yuán xī	472
+袁耀	yuán yào	414
+袁鷹	yuán yīng	202
+袁岳	yuán yuè	191
+臧霸	zāng bà	826
+臧洪	zāng hóng	437
+曾誠	zēng chéng	832
+曾鞏	zēng gǒng	389
+曾揆	zēng kuí	45
+曾子	zēng zǐ	873
+張敖	zhāng áo	122
+張寶	zhāng bǎo	961
+張楚	zhāng chǔ	4728
+張純	zhāng chún	1074
+張達	zhāng dá	777
+張岱	zhāng dài	405
+張耳	zhāng ěr	107
+張範	zhāng fàn	126
+張飛	zhāng fēi	7960
+張菲	zhāng fēi	765
+張嘎	zhāng gā	6
+張郃	zhāng hé	3162
+張衡	zhāng héng	817
+張紘	zhāng hóng	62
+張華	zhāng huá	471
+張繼	zhāng jì	1152
+張籍	zhāng jí	472
+張濟	zhāng jì	366
+張既	zhāng jì	0
+張謇	zhāng jiǎn	1089
+張角	zhāng jiǎo	1762
+張潔	zhāng jié	764
+張矩	zhāng jǔ	226
+張闓	zhāng kǎi	20
+張磊	zhāng lěi	1184
+張亮	zhāng liàng	5721
+張良	zhāng liáng	5435
+張魯	zhāng lǔ	898
+張茂	zhāng mào	774
+張寧	zhāng níng	223
+張騫	zhāng qiān	695
+張說	zhāng shuō	986
+張松	zhāng sōng	886
+張庭	zhāng tíng	2492
+張煒	zhāng wěi	542
+張繡	zhāng xiù	990
+張旭	zhāng xù	327
+張懸	zhāng xuán	914
+張勳	zhāng xūn	855
+張巡	zhāng xún	812
+張毅	zhāng yì	1490
+張儀	zhāng yí	1076
+張嶷	zhāng yí	0
+張宇	zhāng yǔ	3847
+張載	zhāng zài	2604
+張昭	zhāng zhāo	716
+張照	zhāng zhào	644
+張震	zhāng zhèn	1105
+趙高	zhào gāo	2525
+趙構	zhào gòu	1316
+趙恆	zhào héng	788
+趙姬	zhào jī	673
+趙佶	zhào jí	500
+趙普	zhào pǔ	697
+趙奢	zhào shē	620
+趙佗	zhào tuó	742
+趙王	zhào wáng	2528
+趙儼	zhào yǎn	35
+趙翼	zhào yì	806
+趙雲	zhào yún	7900
+鄭和	zhèng hé	22003
+鄭經	zhèng jīng	798
+鄭獬	zhèng xiè	240
+鄭信	zhèng xìn	165
+鄭袖	zhèng xiù	97
+鄭玄	zhèng xuán	238
+鍾華	zhōng huá	352
+鍾輅	zhōng lù	25
+鍾謨	zhōng mó	256
+鍾嶸	zhōng róng	299
+鐘王	zhōng wáng	216
+鍾繇	zhōng yáo	386
+鍾毓	zhōng yù	136
+周勃	zhōu bó	1483
+周倉	zhōu cāng	217
+周昌	zhōu chāng	648
+周處	zhōu chǔ	41
+周魴	zhōu fáng	121
+周公	zhōu gōng	2173
+周后	zhōu hòu	1193
+周濟	zhōu jì	440
+周郎	zhōu láng	301
+周密	zhōu mì	1052
+周強	zhōu qiáng	88
+周泰	zhōu tài	942
+周王	zhōu wáng	1154
+朱褒	zhū bāo	380
+朱標	zhū biāo	346
+朱德	zhū dé	7228
+朱棣	zhū dì	4397
+朱放	zhū fàng	156
+朱楓	zhū fēng	310
+朱服	zhū fú	67
+朱貴	zhū guì	724
+朱渙	zhū huàn	468
+朱駿	zhū jùn	1454
+朱逵	zhū kuí	252
+朱穆	zhū mù	95
+朱權	zhū quán	684
+朱然	zhū rán	579
+朱松	zhū sōng	36
+朱仝	zhū tóng	300
+朱鮪	zhū wěi	21
+朱溫	zhū wēn	212
+朱武	zhū wǔ	42
+朱祐	zhū yòu	224
+朱治	zhū zhì	62
+莊奴	zhuāng nú	922
+莊王	zhuāng wáng	968
+莊羽	zhuāng yǔ	410
+莊周	zhuāng zhōu	612
+莊子	zhuāng zǐ	4481
+莊宗	zhuāng zōng	110
+鄒忌	zōu jì	229
+鄒容	zōu róng	28
+鄒衍	zōu yǎn	139
+蔡哀侯	cài āi hóu	82
+蔡百銓	cài bǎi quán	328
+蔡邦華	cài bāng huá	270
+蔡秉德	cài bǐng dé	292
+蔡炳坤	cài bǐng kūn	315
+蔡伯喈	cài bó jiē	320
+蔡伯勵	cài bó lì	284
+蔡辰洲	cài chén zhōu	351
+蔡承甲	cài chéng jiǎ	50
+蔡成勳	cài chéng xūn	387
+蔡崇達	cài chóng dá	94
+蔡崇信	cài chóng xìn	720
+蔡楚生	cài chǔ shēng	395
+蔡達標	cài dá biāo	630
+蔡達峰	cài dá fēng	3
+蔡道恭	cài dào gōng	220
+蔡德芳	cài dé fāng	346
+蔡丁貴	cài dīng guì	504
+蔡鼎甲	cài dǐng jiǎ	45
+蔡丁贊	cài dīng zàn	130
+蔡東藩	cài dōng fān	94
+蔡東青	cài dōng qīng	53
+蔡爾德	cài ěr dé	333
+蔡爾康	cài ěr kāng	270
+蔡根培	cài gēn péi	279
+蔡公時	cài gōng shí	16
+蔡冠倫	cài guān lún	369
+蔡冠深	cài guān shēn	432
+蔡官治	cài guān zhì	243
+蔡國公	cài guó gōng	342
+蔡國強	cài guó qiáng	345
+蔡國聲	cài guó shēng	378
+蔡漢卿	cài hàn qīng	306
+蔡和森	cài hé sēn	44
+蔡洪平	cài hóng píng	338
+蔡鴻生	cài hóng shēng	230
+蔡桓公	cài huán gōng	57
+蔡桓侯	cài huán hóu	288
+蔡煌瑯	cài huáng láng	378
+蔡惠如	cài huì rú	369
+蔡濟民	cài jì mín	396
+蔡繼明	cài jì míng	6
+蔡加敏	cài jiā mǐn	288
+蔡加怡	cài jiā yí	243
+蔡加贊	cài jiā zàn	3
+蔡建華	cài jiàn huá	288
+蔡金塗	cài jīn tú	328
+蔡景侯	cài jǐng hóu	261
+蔡景璋	cài jǐng zhāng	297
+蔡禮旭	cài lǐ xù	405
+蔡良蟬	cài liáng chán	504
+蔡林森	cài lín sēn	369
+蔡靈侯	cài líng hóu	297
+蔡龍雲	cài lóng yún	28
+蔡美彪	cài měi biāo	396
+蔡孟堅	cài mèng jiān	31
+蔡銘超	cài míng chāo	35
+蔡明介	cài míng jiè	274
+蔡明亮	cài míng liàng	680
+蔡名照	cài míng zhào	423
+蔡明忠	cài míng zhōng	364
+蔡南海	cài nán hǎi	144
+蔡攀龍	cài pān lóng	284
+蔡培慧	cài péi huì	346
+蔡培火	cài péi huǒ	540
+蔡平侯	cài píng hóu	194
+蔡其昌	cài qí chāng	477
+蔡啟芳	cài qǐ fāng	369
+蔡啟僔	cài qǐ zǔn	171
+蔡清祥	cài qīng xiáng	297
+蔡榮祖	cài róng zǔ	252
+蔡儒楷	cài rú kǎi	279
+蔡瑞月	cài ruì yuè	464
+蔡若虹	cài ruò hóng	266
+蔡若蓮	cài ruò lián	464
+蔡善繼	cài shàn jì	220
+蔡尚君	cài shàng jūn	364
+蔡紹基	cài shào jī	306
+蔡申熙	cài shēn xī	16
+蔡詩萍	cài shī píng	310
+蔡士英	cài shì yīng	207
+蔡世遠	cài shì yuǎn	38
+蔡守訓	cài shǒu xùn	310
+蔡叔度	cài shū dù	31
+蔡樹藩	cài shù fān	378
+蔡樞衡	cài shū héng	189
+蔡松年	cài sōng nián	324
+蔡松坡	cài sōng pō	6
+蔡嵩松	cài sōng sōng	185
+蔡天鐸	cài tiān duó	243
+蔡天新	cài tiān xīn	526
+蔡廷鍇	cài tíng kǎi	13
+蔡廷蘭	cài tíng lán	310
+蔡同榮	cài tóng róng	648
+蔡萬霖	cài wàn lín	464
+蔡文恭	cài wén gōng	4
+蔡文侯	cài wén hóu	207
+蔡文姬	cài wén jī	948
+蔡文勝	cài wén shèng	531
+蔡希寂	cài xī jì	4
+蔡細歷	cài xì lì	405
+蔡希陶	cài xī táo	225
+蔡錫勇	cài xī yǒng	248
+蔡獻臣	cài xiàn chén	207
+蔡孝幹	cài xiào gàn	621
+蔡笑晚	cài xiào wǎn	324
+蔡興麟	cài xīng lín	328
+蔡興宗	cài xīng zōng	382
+蔡押衙	cài yā yá	45
+蔡言厚	cài yán hòu	378
+蔡衍明	cài yǎn míng	13
+蔡義江	cài yì jiāng	334
+蔡易餘	cài yì yú	450
+蔡隱丘	cài yǐn qiū	50
+蔡英挺	cài yīng tǐng	356
+蔡英文	cài yīng wén	273
+蔡永祥	cài yǒng xiáng	364
+蔡毓榮	cài yù róng	310
+蔡元定	cài yuán dìng	360
+蔡元放	cài yuán fàng	266
+蔡元培	cài yuán péi	625
+蔡元雲	cài yuán yún	288
+蔡允恭	cài yǔn gōng	179
+蔡章獻	cài zhāng xiàn	320
+蔡昭侯	cài zhāo hóu	35
+蔡哲夫	cài zhé fū	202
+蔡振華	cài zhèn huá	414
+蔡正國	cài zhèng guó	266
+蔡正元	cài zhèng yuán	688
+蔡智堪	cài zhì kān	252
+蔡志忠	cài zhì zhōng	44
+蔡中郎	cài zhōng láng	346
+蔡仲南	cài zhòng nán	382
+蔡莊侯	cài zhuāng hóu	266
+蔡子民	cài zǐ mín	356
+蔡子明	cài zǐ míng	47
+曹阿瞞	cáo ā mán	104
+曹安民	cáo ān mín	69
+曹保平	cáo bǎo píng	229
+曹變蛟	cáo biàn jiāo	22
+曹德旺	cáo dé wàng	741
+曹荻秋	cáo dí qiū	428
+曹鳳岐	cáo fèng qí	531
+曹剛川	cáo gāng chuān	410
+曹光彪	cáo guāng biāo	450
+曹國公	cáo guó gōng	25
+曹國舅	cáo guó jiù	536
+曹國偉	cáo guó wěi	132
+曹化淳	cáo huà chún	57
+曹皇后	cáo huáng hòu	464
+曹吉祥	cáo jí xiáng	38
+曹建明	cáo jiàn míng	16
+曹景宗	cáo jǐng zōng	88
+曹炯芳	cáo jiǒng fāng	369
+曹聚仁	cáo jù rén	72
+曹漫之	cáo màn zhī	369
+曹孟德	cáo mèng dé	521
+曹汝霖	cáo rǔ lín	25
+曹瑞原	cáo ruì yuán	356
+曹太后	cáo tài hòu	526
+曹文軒	cáo wén xuān	465
+曹文詔	cáo wén zhào	6
+曹興誠	cáo xīng chéng	441
+曹修古	cáo xiū gǔ	144
+曹雪芹	cáo xuě qín	1645
+曹雪濤	cáo xuě tāo	78
+曹薰鉉	cáo xūn xuàn	66
+曹燕華	cáo yàn huá	16
+曹雲祥	cáo yún xiáng	400
+曹振鏞	cáo zhèn yōng	22
+曹忠榮	cáo zhōng róng	333
+曹莊公	cáo zhuāng gōng	212
+曹子建	cáo zǐ jiàn	229
+曾來德	céng lái dé	248
+曾剃頭	céng tì tóu	78
+曾憲義	céng xiàn yì	324
+曾憲梓	céng xiàn zǐ	526
+曾虛白	céng xū bái	432
+曾蔭權	céng yīn quán	896
+曾寅孫	céng yín sūn	45
+曾約農	céng yuē nóng	346
+陳阿嬌	chén ā jiāo
+陳安之	chén ān zhī	223
+陳安眾	chén ān zhòng	698
+陳霸先	chén bà xiān	198
+陳白露	chén bái lù	16
+陳寶生	chén bǎo shēng	22
+陳璧君	chén bì jūn	113
+陳伯達	chén bó dá	44
+陳布雷	chén bù léi	63
+陳昌浩	chén chāng hào	25
+陳澄波	chén chéng bō	603
+陳春花	chén chūn huā	630
+陳大年	chén dà nián	60
+陳東升	chén dōng shēng	88
+陳獨秀	chén dú xiù	3143
+陳二狗	chén èr gǒu	13
+陳公博	chén gōng bó	38
+陳光標	chén guāng biāo	981
+陳光誠	chén guāng chéng	598
+陳光甫	chén guāng fǔ	3
+陳國富	chén guó fù	648
+陳果夫	chén guǒ fū	521
+陳浩南	chén hào nán	484
+陳鶴琴	chén hè qín	78
+陳後主	chén hòu zhǔ	97
+陳皇后	chén huáng hòu	173
+陳輝陽	chén huī yáng	97
+陳吉寧	chén jí níng	13
+陳濟棠	chén jì táng	135
+陳嘉庚	chén jiā gēng	166
+陳家洛	chén jiā luò	226
+陳嘉上	chén jiā shàng	88
+陳家瑛	chén jiā yīng	132
+陳建仁	chén jiàn rén	9
+陳潔如	chén jié rú	63
+陳近南	chén jìn nán	424
+陳鏡湖	chén jìng hú	315
+陳經綸	chén jīng lún	3
+陳景潤	chén jǐng rùn	182
+陳炯明	chén jiǒng míng	270
+陳俊生	chén jùn shēng	41
+陳可辛	chén kě xīn	427
+陳老蓮	chén lǎo lián	22
+陳立夫	chén lì fū	91
+陳良宇	chén liáng yǔ	3
+陳留王	chén liú wáng	69
+陳茂波	chén mào bō	630
+陳敏爾	chén mǐn ěr	616
+陳明仁	chén míng rén	44
+陳銘樞	chén míng shū	35
+陳木勝	chén mù shèng	421
+陳納德	chén nà dé	53
+陳盆濱	chén pén bīn	788
+陳啟禮	chén qǐ lǐ	13
+陳其邁	chén qí mài	634
+陳其美	chén qí měi	104
+陳慶炎	chén qìng yán	621
+陳慶之	chén qìng zhī	392
+陳省身	chén shěng shēn	720
+陳世美	chén shì měi	116
+陳時中	chén shí zhōng	524
+陳叔寶	chén shū bǎo	119
+陳水扁	chén shuǐ biǎn	141
+陳潭秋	chén tán qiū	16
+陳唐山	chén táng shān	567
+陳天橋	chén tiān qiáo	1382
+陳偉鴻	chén wěi hóng	13
+陳文帝	chén wén dì	35
+陳文茜	chén wén qiàn	22
+陳錫聯	chén xī lián	19
+陳香梅	chén xiāng méi	3
+陳小千	chén xiǎo qiān	2631
+陳曉卿	chén xiǎo qīng	392
+陳孝正	chén xiào zhèng	1470
+陳戌源	chén xū yuán	860
+陳宣帝	chén xuān dì	28
+陳岩石	chén yán shí	35
+陳一丹	chén yī dān	31
+陳逸飛	chén yì fēi	25
+陳一舟	chén yì zhōu	371
+陳寅恪	chén yín kè	1149
+陳永貴	chén yǒng guì	13
+陳永華	chén yǒng huá	60
+陳永仁	chén yǒng rén	487
+陳友諒	chén yǒu liàng	929
+陳雨露	chén yǔ lù	580
+陳圓圓	chén yuán yuán	160
+陳雲林	chén yún lín	616
+陳澤民	chén zé mín	50
+陳正道	chén zhèng dào	38
+陳政高	chén zhèng gāo	3
+陳之漢	chén zhī hàn	102
+陳志全	chén zhì quán	590
+陳志武	chén zhì wǔ	126
+陳仲金	chén zhòng jīn	585
+陳忠實	chén zhōng shí	414
+陳子昂	chén zǐ áng	349
+楚哀王	chǔ āi wáng	306
+楚霸王	chǔ bà wáng	267
+楚成王	chǔ chéng wáng	414
+楚悼王	chǔ dào wáng	85
+褚福靈	chǔ fú líng	562
+楚共王	chǔ gòng wáng	9
+楚寒鏡	chǔ hán jìng	230
+楚懷王	chǔ huái wáng	914
+楚惠王	chǔ huì wáng	25
+楚簡王	chǔ jiǎn wáng	266
+楚江王	chǔ jiāng wáng	338
+楚康王	chǔ kāng wáng	13
+楚靈王	chǔ líng wáng	78
+楚留香	chǔ liú xiāng	885
+楚穆王	chǔ mù wáng	94
+楚南公	chǔ nán gōng	324
+楚平王	chǔ píng wáng	97
+楚人美	chǔ rén měi	97
+褚時健	chǔ shí jiàn	266
+楚肅王	chǔ sù wáng	22
+褚遂良	chǔ suì liáng	524
+褚太后	chǔ tài hòu	306
+楚天驕	chǔ tiān jiāo	603
+楚圖南	chǔ tú nán	486
+楚威後	chǔ wēi hòu	5
+楚威王	chǔ wēi wáng	35
+楚文王	chǔ wén wáng	75
+楚武王	chǔ wǔ wáng	163
+楚襄王	chǔ xiāng wáng	44
+楚孝王	chǔ xiào wáng	256
+楚宣王	chǔ xuān wáng	25
+楚義帝	chǔ yì dì	346
+楚幽王	chǔ yōu wáng	107
+楚雨蕁	chǔ yǔ xún	91
+楚元王	chǔ yuán wáng	50
+楚雲飛	chǔ yún fēi	144
+楚昭王	chǔ zhāo wáng	122
+楚莊王	chǔ zhuāng wáng	732
+楚子航	chǔ zǐ háng	1036
+崔安潛	cuī ān qián	396
+崔昌益	cuī chāng yì	356
+崔承喜	cuī chéng xǐ	405
+崔東樹	cuī dōng shù	41
+崔敦禮	cuī dūn lǐ	297
+崔國輔	cuī guó fǔ	274
+崔季卿	cuī jì qīng	76
+崔建遠	cuī jiàn yuǎn	245
+崔居儉	cuī jū jiǎn	180
+崔龍海	cuī lóng hǎi	612
+崔龍洙	cuī lóng zhū	53
+崔判官	cuī pàn guān	378
+崔日用	cuī rì yòng	351
+崔日知	cuī rì zhī	225
+崔若礪	cuī ruò lì	50
+崔世安	cuī shì ān	752
+崔順實	cuī shùn shí	19
+崔泰之	cuī tài zhī	180
+崔信明	cuī xìn míng	202
+崔興宗	cuī xīng zōng	180
+崔玄亮	cuī xuán liàng	256
+崔鶯兒	cuī yīng ér	675
+崔永元	cuī yǒng yuán	2308
+崔玉濤	cuī yù tāo	57
+崔與之	cuī yǔ zhī	292
+崔元範	cuī yuán fàn	45
+崔元翰	cuī yuán hàn	189
+崔元略	cuī yuán lüè	270
+崔宗之	cuī zōng zhī	13
+戴安瀾	dài ān lán	44
+戴安娜	dài ān nà	1159
+戴葆庭	dài bǎo tíng	360
+戴本孝	dài běn xiào	189
+戴表元	dài biǎo yuán	205
+戴秉國	dài bǐng guó	500
+戴炳南	dài bǐng nán	292
+戴潮春	dài cháo chūn	662
+戴春林	dài chūn lín	306
+戴道晉	dài dào jìn	405
+戴德豐	dài dé fēng	302
+戴德生	dài dé shēng	562
+戴東昌	dài dōng chāng	266
+戴敦邦	dài dūn bāng	16
+戴恩賽	dài ēn sài	266
+戴法興	dài fǎ xīng	3
+戴芳瀾	dài fāng lán	6
+戴復古	dài fù gǔ	35
+戴高樂	dài gāo lè	1093
+戴鴻慈	dài hóng cí	396
+戴季陶	dài jì táo	144
+戴季英	dài jì yīng	6
+戴建業	dài jiàn yè	4
+戴錦華	dài jǐn huá	540
+戴克林	dài kè lín	238
+戴名世	dài míng shì	6
+戴乃迭	dài nǎi dié	63
+戴卿堯	dài qīng yáo	230
+戴瓊海	dài qióng hǎi	130
+戴衢亨	dài qú hēng	252
+戴叔倫	dài shū lún	75
+戴順智	dài shùn zhì	310
+戴思聰	dài sī cōng	35
+戴思恭	dài sī gōng	454
+戴思傑	dài sī jié	356
+戴鐵郎	dài tiě láng	57
+戴望舒	dài wàng shū	257
+戴維德	dài wéi dé	558
+戴偉浚	dài wěi jùn	6
+戴維斯	dài wéi sī	3953
+戴相龍	dài xiāng lóng	38
+戴曉蓮	dài xiǎo lián	243
+戴秀麗	dài xiù lì	189
+戴休顏	dài xiū yán	310
+戴炎輝	dài yán huī	333
+戴耀廷	dài yào tíng	22
+戴永革	dài yǒng gé	189
+戴雨森	dài yǔ sēn	310
+戴運軌	dài yùn guǐ	364
+戴志堅	dài zhì jiān	274
+戴志康	dài zhì kāng	44
+戴自更	dài zì gèng	310
+戴資穎	dài zī yǐng	57
+鄧巴頓	dèng bā dùn	464
+鄧百川	dèng bǎi chuān	6
+鄧白氏	dèng bái shì	47
+鄧邦述	dèng bāng shù	248
+鄧寶珊	dèng bǎo shān	526
+鄧本殷	dèng běn yīn	464
+鄧碧珊	dèng bì shān	234
+鄧炳強	dèng bǐng qiáng	3
+鄧嬋玉	dèng chán yù	35
+鄧昌國	dèng chāng guó	315
+鄧昌友	dèng chāng yǒu	3
+鄧成波	dèng chéng bō	351
+鄧處訥	dèng chù nè	266
+鄧傳楷	dèng chuán kǎi	396
+鄧萃英	dèng cuì yīng	315
+鄧達智	dèng dá zhì	351
+鄧定侯	dèng dìng hóu	460
+鄧恩銘	dèng ēn míng	9
+鄧爾雅	dèng ěr yǎ	220
+鄧符協	dèng fú xié	284
+鄧廣漢	dèng guǎng hàn	230
+鄧廣銘	dèng guǎng míng	312
+鄧涵文	dèng hán wén	104
+鄧惠文	dèng huì wén	328
+鄧季惺	dèng jì xīng	353
+鄧繼增	dèng jì zēng	238
+鄧家彪	dèng jiā biāo	432
+鄧稼先	dèng jià xiān	867
+鄧家彥	dèng jiā yàn	266
+鄧建國	dèng jiàn guó	585
+鄧鏡波	dèng jìng bō	468
+鄧景煌	dèng jǐng huáng	252
+鄧九公	dèng jiǔ gōng	428
+鄧俊輝	dèng jùn huī	346
+鄧樂軍	dèng lè jūn	351
+鄧力群	dèng lì qún	3
+鄧利維	dèng lì wéi	60
+鄧蓮如	dèng lián rú	482
+鄧龍光	dèng lóng guāng	374
+鄧茂七	dèng mào qī	3
+鄧猛女	dèng měng nǚ	284
+鄧南遮	dèng nán zhē	490
+鄧尼茨	dèng ní cí	41
+鄧尼金	dèng ní jīn	38
+鄧普頓	dèng pǔ dùn	126
+鄧樸方	dèng pǔ fāng	477
+鄧普斯	dèng pǔ sī	22
+鄧普西	dèng pǔ xī	35
+鄧普希	dèng pǔ xī	29
+鄧清河	dèng qīng hé	266
+鄧清明	dèng qīng míng	396
+鄧散木	dèng sàn mù	28
+鄧森悅	dèng sēn yuè	266
+鄧世昌	dèng shì chāng	110
+鄧世平	dèng shì píng	333
+鄧石如	dèng shí rú	97
+鄧士載	dèng shì zài	279
+鄧書弟	dèng shū dì	356
+鄧樹榮	dèng shù róng	320
+鄧斯坦	dèng sī tǎn	405
+鄧太后	dèng tài hòu	25
+鄧鐵梅	dèng tiě méi	76
+鄧鐵濤	dèng tiě tāo	78
+鄧廷楨	dèng tíng zhēn	459
+鄧偉標	dèng wěi biāo	230
+鄧偉傑	dèng wěi jié	284
+鄧偉雄	dèng wěi xióng	378
+鄧文迪	dèng wén dí	320
+鄧文儀	dèng wén yí	490
+鄧文原	dèng wén yuán	436
+鄧錫侯	dèng xī hóu	554
+鄧希賢	dèng xī xián	3
+鄧顯鶴	dèng xiǎn hè	220
+鄧先群	dèng xiān qún	194
+鄧向陽	dèng xiàng yáng	320
+鄧小剛	dèng xiǎo gāng	369
+鄧曉芒	dèng xiǎo máng	355
+鄧秀新	dèng xiù xīn	9
+鄧演達	dèng yǎn dá	41
+鄧豔紅	dèng yàn hóng	324
+鄧一光	dèng yī guāng	9
+鄧以海	dèng yǐ hǎi	324
+鄧以蟄	dèng yǐ zhé	306
+鄧蔭南	dèng yīn nán	369
+鄧穎超	dèng yǐng chāo	182
+鄧迎香	dèng yíng xiāng	351
+鄧永鏘	dèng yǒng qiāng	296
+鄧友梅	dèng yǒu méi	22
+鄧玉芬	dèng yù fēn	374
+鄧玉函	dèng yù hán	320
+鄧育昆	dèng yù kūn	382
+鄧玉麟	dèng yù lín	400
+鄧禹平	dèng yǔ píng	374
+鄧裕強	dèng yù qiáng	320
+鄧玉婷	dèng yù tíng	102
+鄧聿文	dèng yù wén	356
+鄧雨賢	dèng yǔ xián	500
+鄧元覺	dèng yuán jué	9
+鄧月薇	dèng yuè wēi	320
+鄧澤如	dèng zé rú	500
+鄧肇堅	dèng zhào jiān	639
+鄧兆棠	dèng zhào táng	378
+鄧兆祥	dèng zhào xiáng	6
+鄧振中	dèng zhèn zhōng	320
+鄧正來	dèng zhèng lái	405
+鄧之誠	dèng zhī chéng	410
+鄧志剛	dèng zhì gāng	194
+鄧志謨	dèng zhì mó	306
+鄧智偉	dèng zhì wěi	281
+鄧中翰	dèng zhōng hàn	6
+鄧中夏	dèng zhōng xià	53
+鄧仲元	dèng zhòng yuán	284
+鄧卓棣	dèng zhuó dì	536
+鄧子恢	dèng zǐ huī	28
+鄧子龍	dèng zǐ lóng	22
+鄧子瑜	dèng zǐ yú	252
+丁寶楨	dīng bǎo zhēn	204
+丁承宗	dīng chéng zōng	45
+丁春秋	dīng chūn qiū	283
+丁大全	dīng dà quán	450
+丁甘仁	dīng gān rén	28
+丁甘如	dīng gān rú	171
+丁關根	dīng guān gēn	446
+丁光宏	dīng guāng hóng	207
+丁光訓	dīng guāng xùn	432
+丁幾仲	dīng jǐ zhòng	90
+丁建華	dīng jiàn huá	423
+丁拉基	dīng lā jī	459
+丁立國	dīng lì guó	207
+丁敏君	dīng mǐn jūn	204
+丁能通	dīng néng tōng	212
+丁甌石	dīng ōu shí	45
+丁確庵	dīng què ān	45
+丁日昌	dīng rì chāng	3
+丁汝昌	dīng rǔ chāng	113
+丁若鏞	dīng ruò yōng	423
+丁三石	dīng sān shí	116
+丁善德	dīng shàn dé	327
+丁山人	dīng shān rén	252
+丁尚彪	dīng shàng biāo	19
+丁紹光	dīng shào guāng	378
+丁石僧	dīng shí sēng	50
+丁石生	dīng shí shēng	45
+丁石孫	dīng shí sūn	97
+丁書苗	dīng shū miáo	454
+丁思甜	dīng sī tián	66
+丁太升	dīng tài shēng	135
+丁西林	dīng xī lín	19
+丁羲叟	dīng xī sǒu	4
+丁小柔	dīng xiǎo róu	50
+丁義珍	dīng yì zhēn	110
+丁元英	dīng yuán yīng	248
+丁肇中	dīng zhào zhōng	148
+丁仲禮	dīng zhòng lǐ	367
+范艾克	fàn ài kè	518
+范艾倫	fàn ài lún	490
+范愛農	fàn ài nóng	446
+樊愛貞	fán ài zhēn	374
+范百祿	fàn bǎi lù	356
+范比滕	fàn bǐ téng	428
+范伯倫	fàn bó lún	472
+范布倫	fàn bù lún	22
+范長江	fàn cháng jiāng	13
+范長龍	fàn cháng lóng	702
+范長生	fàn cháng shēng	378
+樊長使	fán cháng shǐ	0
+樊昌信	fán chāng xìn	328
+范成大	fàn chéng dà	330
+范承謨	fàn chéng mó	364
+范承勳	fàn chéng xūn	225
+樊崇義	fán chóng yì	310
+范廚師	fàn chú shī	163
+范傳正	fàn chuán zhèng	320
+范傳質	fàn chuán zhì	90
+樊春海	fán chūn hǎi	171
+范純仁	fàn chún rén	214
+樊粹庭	fán cuì tíng	220
+范達姆	fàn dá mǔ	234
+范戴克	fàn dài kè	1309
+樊代明	fán dài míng	396
+范德彪	fàn dé biāo	129
+范德華	fàn dé huá	57
+范德薩	fàn dé sà	295
+范迪安	fàn dí ān	19
+范迪克	fàn dí kè	732
+范恩斯	fàn ēn sī	482
+范甘迪	fàn gān dí	342
+范光陵	fàn guāng líng	279
+樊國梁	fán guó liáng	297
+范海倫	fàn hǎi lún	69
+范海濤	fàn hǎi tāo	315
+范海辛	fàn hǎi xīn	78
+范漢傑	fàn hàn jié	9
+范恒山	fàn héng shān	3
+范鴻劼	fàn hóng jié	270
+范鴻齡	fàn hóng líng	297
+范鴻仙	fàn hóng xiān	270
+范華平	fàn huá píng	243
+范霍夫	fàn huò fū	333
+范霍文	fàn huò wén	482
+范加爾	fàn jiā ěr	4248
+樊建川	fán jiàn chuān	6
+范劍平	fàn jiàn píng	346
+樊錦詩	fán jǐn shī	261
+范景文	fàn jǐng wén	3
+范景翔	fàn jǐng xiáng	364
+范敬宜	fàn jìng yí	261
+范景中	fàn jǐng zhōng	364
+范可新	fàn kě xīn	245
+范立礎	fàn lì chǔ	230
+樊梨花	fán lí huā	16
+范麗青	fàn lì qīng	486
+范良極	fàn liáng jí	891
+范凌志	fàn líng zhì	338
+范柳原	fàn liǔ yuán	38
+范龍佩	fàn lóng pèi	405
+樊路遠	fán lù yuǎn	225
+范履冰	fàn lǚ bīng	310
+范美忠	fàn měi zhōng	9
+范跑跑	fàn pǎo pǎo	50
+范佩西	fàn pèi xī	2327
+范平明	fàn píng míng	522
+樊其輝	fán qí huī	243
+范榮康	fàn róng kāng	230
+范瑞平	fàn ruì píng	356
+范銳平	fàn ruì píng	65
+范若若	fàn ruò ruò	138
+范桑特	fàn sāng tè	351
+范紹增	fàn shào zēng	6
+樊勝美	fán shèng měi	232
+范時崇	fàn shí chóng	189
+范師道	fàn shī dào	297
+范石生	fàn shí shēng	3
+範壽康	fàn shòu kāng	6
+樊守義	fán shǒu yì	288
+樊樹志	fán shù zhì	396
+范思轍	fàn sī zhé	225
+范蘇圓	fàn sū yuán	531
+范廷鈺	fàn tíng yù	6
+范托夫	fàn tuō fū	364
+樊於期	fán wū jī	482
+范武子	fàn wǔ zǐ	279
+范喜良	fàn xǐ liáng	364
+范西屏	fàn xī píng	9
+范熙壬	fàn xī rén	297
+范現國	fàn xiàn guó	234
+范獻子	fàn xiàn zǐ	274
+范祥雍	fàn xiáng yōng	248
+樊馨蔓	fán xīn màn	446
+范秀明	fàn xiù míng	266
+范旭東	fàn xù dōng	19
+范宣子	fàn xuān zǐ	405
+範堯佐	fàn yáo zuǒ	45
+樊映川	fán yìng chuān	202
+范勇宏	fàn yǒng hóng	252
+范雨素	fàn yǔ sù	13
+范源濂	fàn yuán lián	410
+范允臨	fàn yǔn lín	266
+范蘊若	fàn yùn ruò	454
+樊增祥	fán zēng xiáng	6
+範昭子	fàn zhāo zǐ	180
+范振緒	fàn zhèn xù	212
+范正辭	fàn zhèng cí	261
+樊知古	fán zhī gǔ	189
+范志紅	fàn zhì hóng	126
+范忠信	fàn zhōng xìn	9
+樊鍾秀	fán zhōng xiù	60
+范仲淹	fàn zhòng yān	1265
+范築先	fàn zhù xiān	320
+樊子蓋	fán zǐ gài	310
+樊子鵠	fán zǐ hú	224
+範子俠	fàn zǐ xiá	270
+範宗沛	fàn zōng pèi	22
+樊宗師	fán zōng shī	252
+範宗尹	fàn zōng yǐn	320
+范祖禹	fàn zǔ yǔ	63
+馮楚瞻	féng chǔ zhān	50
+馮大輝	féng dà huī	148
+馮國璋	féng guó zhāng	122
+馮煥闕	féng huàn quē	200
+馮皇后	féng huáng hòu	300
+馮驥才	féng jì cái	182
+馮卡門	féng kǎ mén	590
+馮夢龍	féng mèng lóng	327
+馮珊珊	féng shān shān	25
+馮時可	féng shí kě	189
+馮太后	féng tài hòu	69
+馮天薇	féng tiān wēi	72
+馮瀟霆	féng xiāo tíng	810
+馮雪峰	féng xuě fēng	232
+馮友蘭	féng yǒu lán	791
+馮玉祥	féng yù xiáng	1645
+高秉涵	gāo bǐng hán	374
+高秉鈞	gāo bǐng jūn	99
+高丙中	gāo bǐng zhōng	144
+高伯龍	gāo bó lóng	306
+高成炫	gāo chéng xuàn	562
+高崇文	gāo chóng wén	387
+高崇熙	gāo chóng xī	315
+高春明	gāo chūn míng	180
+高鳳閣	gāo fèng gé	22
+高鳳翰	gāo fèng hàn	436
+高洪波	gāo hóng bō	958
+高鴻鈞	gāo hóng jūn	31
+高洪勝	gāo hóng shèng	338
+高弘圖	gāo hóng tú	306
+高紅衛	gāo hóng wèi	482
+高鴻業	gāo hóng yè	1272
+高宏志	gāo hóng zhì	382
+高厚良	gāo hòu liáng	346
+高華德	gāo huá dé	544
+高華斯	gāo huá sī	266
+高華柱	gāo huá zhù	428
+高懷德	gāo huái dé	13
+高紀凡	gāo jì fán	220
+高季興	gāo jì xīng	281
+高繼勳	gāo jì xūn	256
+高建成	gāo jiàn chéng	378
+高劍父	gāo jiàn fù	16
+高建國	gāo jiàn guó	346
+高建華	gāo jiàn huá	3
+高建軍	gāo jiàn jūn	356
+高漸離	gāo jiàn lí	1046
+高建民	gāo jiàn mín	19
+高建平	gāo jiàn píng	400
+高建群	gāo jiàn qún	13
+高居翰	gāo jū hàn	450
+高卷杏	gāo juǎn xìng	22
+高覺敷	gāo jué fū	44
+高君雅	gāo jūn yǎ	19
+高君宇	gāo jūn yǔ	9
+高立新	gāo lì xīn	261
+高名衡	gāo míng héng	540
+高銘暄	gāo míng xuān	66
+高明遠	gāo míng yuǎn	91
+高墨達	gāo mò dá	234
+高模翰	gāo mó hàn	248
+高培勇	gāo péi yǒng	19
+高其佩	gāo qí pèi	346
+高起潛	gāo qǐ qián	9
+高啟強	gāo qǐ qiáng	1372
+高啟盛	gāo qǐ shèng	151
+高潤霖	gāo rùn lín	382
+高若訥	gāo ruò nè	256
+高紹德	gāo shào dé	288
+高升泰	gāo shēng tài	342
+高西慶	gāo xī qìng	400
+高希舜	gāo xī shùn	256
+高仙芝	gāo xiān zhī	317
+高孝珩	gāo xiào héng	351
+高彥儔	gāo yàn chóu	324
+高延宗	gāo yán zōng	405
+高耀潔	gāo yào jié	540
+高怡平	gāo yí píng	333
+高永文	gāo yǒng wén	526
+高育良	gāo yù liáng	289
+高玉倫	gāo yù lún	382
+高育仁	gāo yù rén	365
+高雲龍	gāo yún lóng	333
+高甑生	gāo zèng shēng	288
+高志丹	gāo zhì dān	308
+高志航	gāo zhì háng	526
+高志凱	gāo zhì kǎi	9
+高志鵬	gāo zhì péng	3
+高智昇	gāo zhì shēng	25
+高仲密	gāo zhòng mì	364
+高仲武	gāo zhòng wǔ	252
+高宗武	gāo zōng wǔ	598
+高遵裕	gāo zūn yù	320
+顧拜旦	gù bài dàn	104
+顧雛軍	gù chú jūn	25
+顧方舟	gù fāng zhōu	44
+顧非熊	gù fēi xióng	202
+顧觀光	gù guān guāng	225
+顧橫波	gù héng bō	392
+顧閎中	gù hóng zhōng	410
+顧皇后	gù huáng hòu	567
+顧覬之	gù jì zhī	336
+顧嘉輝	gù jiā huī	60
+顧家明	gù jiā míng	418
+顧頡剛	gù jié gāng	801
+顧介石	gù jiè shí	90
+顧景舟	gù jǐng zhōu	16
+顧愷之	gù kǎi zhī	176
+顧立雄	gù lì xióng	495
+顧明遠	gù míng yuǎn	513
+顧南風	gù nán fēng	414
+顧平生	gù píng shēng	1170
+顧千帆	gù qiān fān	25
+顧傾城	gù qīng chéng	734
+顧清風	gù qīng fēng	630
+顧清歡	gù qīng huān	423
+顧紹培	gù shào péi	450
+顧勝男	gù shèng nán	31
+顧順章	gù shùn zhāng	160
+顧太清	gù tài qīng	255
+顧亭林	gù tíng lín	418
+顧維鈞	gù wéi jūn	248
+顧薇薇	gù wēi wēi	1269
+顧兮兮	gù xī xī	891
+顧憲成	gù xiàn chéng	28
+顧小白	gù xiǎo bái	3
+顧小北	gù xiǎo běi	28
+顧曉夢	gù xiǎo mèng	116
+顧星辰	gù xīng chén	626
+顧秀蓮	gù xiù lián	536
+顧炎武	gù yán wǔ	550
+顧憶羅	gù yì luó	212
+顧雲昌	gù yún chāng	626
+顧貞觀	gù zhēn guàn	91
+顧祝同	gù zhù tóng	242
+顧祖禹	gù zǔ yǔ	69
+郭伯雄	guō bó xióng	824
+郭凡生	guō fán shēng	41
+郭奉孝	guō fèng xiào	72
+郭剛堂	guō gāng táng	756
+郭廣昌	guō guǎng chāng	742
+郭貴妃	guō guì fēi	57
+郭皇后	guō huáng hòu	170
+郭惠妃	guō huì fēi	234
+郭稽中	guō jī zhōng	45
+郭金龍	guō jīn lóng	666
+郭敬仲	guō jìng zhòng	45
+郭居易	guō jū yì	45
+郭履道	guō lǚ dào	38
+郭沬若	guō mèi ruò	162
+郭明錤	guō míng jī	45
+郭沫若	guō mò ruò	9508
+郭日生	guō rì shēng	50
+郭汝端	guō rǔ duān	45
+郭聲琨	guō shēng kūn	720
+郭聖通	guō shèng tōng	647
+郭守敬	guō shǒu jìng	380
+郭樹清	guō shù qīng	151
+郭嵩燾	guō sōng dào	85
+郭松齡	guō sōng líng	706
+郭太后	guō tài hòu	135
+郭台銘	guō tái míng	132
+郭田勇	guō tián yǒng	6
+郭藥師	guō yào shī	97
+郭永懷	guō yǒng huái	374
+郭右陶	guō yòu táo	45
+郭正亮	guō zhèng liàng	22
+郭子儀	guō zǐ yí	650
+郭子章	guō zǐ zhāng	3
+韓安國	hán ān guó	170
+韓拔陵	hán bá líng	392
+韓昌黎	hán chāng lí	44
+韓春雨	hán chūn yǔ	198
+韓德勤	hán dé qín	44
+韓德讓	hán dé ràng	60
+韓非子	hán fēi zǐ	1281
+韓復矩	hán fù jǔ	702
+韓復齡	hán fù líng	288
+韓國瑜	hán guó yú	900
+韓浩月	hán hào yuè	3
+韓嘉彥	hán jiā yàn	189
+韓康子	hán kāng zǐ	132
+韓匡嗣	hán kuāng sì	3
+韓林兒	hán lín ér	185
+韓菱紗	hán líng shā	995
+韓美林	hán měi lín	53
+韓梅梅	hán méi méi	320
+韓慕俠	hán mù xiá	44
+韓全誨	hán quán huì	405
+韓山童	hán shān tóng	122
+韓少功	hán shǎo gōng	126
+韓世忠	hán shì zhōng	405
+韓書力	hán shū lì	300
+韓思復	hán sī fù	297
+韓思彥	hán sī yàn	297
+韓素音	hán sù yīn	19
+韓侂胄	hán tuō zhòu	644
+韓王信	hán wáng xìn	248
+韓武子	hán wǔ zǐ	320
+韓熙載	hán xī zài	69
+韓湘子	hán xiāng zǐ	16
+韓小瑩	hán xiǎo yíng	60
+韓新月	hán xīn yuè	333
+韓宣子	hán xuān zǐ	396
+韓彥古	hán yàn gǔ	346
+韓幼娘	hán yòu niáng	729
+韓元吉	hán yuán jí	266
+韓昭侯	hán zhāo hóu	35
+韓兆琦	hán zhào qí	410
+韓昭裔	hán zhāo yì	99
+韓仲宣	hán zhòng xuān	4
+韓杼濱	hán zhù bīn	364
+何寶榮	hé bǎo róng	1061
+何弼學	hé bì xué	414
+何伯權	hé bó quán	35
+何超鳳	hé chāo fèng	360
+何超蓮	hé chāo lián	13
+何超瓊	hé chāo qióng	22
+何超盈	hé chāo yíng	338
+何朝宗	hé cháo zōng	324
+何鋤翁	hé chú wēng	90
+何冠昌	hé guān chāng	47
+何光遠	hé guāng yuǎn	369
+何國舅	hé guó jiù	138
+何鴻鑾	hé hóng luán	410
+何鴻燊	hé hóng shēn	148
+何紅藥	hé hóng yào	13
+何鴻章	hé hóng zhāng	364
+何厚鏵	hé hòu huá	16
+何懷宏	hé huái hóng	19
+何皇后	hé huáng hòu	513
+何基灃	hé jī fēng	3
+何經華	hé jīng huá	171
+何景明	hé jǐng míng	16
+何君堯	hé jūn yáo	13
+何立偉	hé lì wěi	360
+何良俊	hé liáng jùn	315
+何莫修	hé mò xiū	248
+何其滄	hé qí cāng	230
+何其芳	hé qí fāng	41
+何清漣	hé qīng lián	6
+何叔衡	hé shū héng	41
+何書桓	hé shū huán	91
+何太沖	hé tài chòng	188
+何太后	hé tài hòu	163
+何騰蛟	hé téng jiāo	13
+何鐵手	hé tiě shǒu	16
+何文秀	hé wén xiù	6
+何仙姑	hé xiān gū	13
+何香凝	hé xiāng níng	75
+何小鵬	hé xiǎo péng	132
+何以琛	hé yǐ chēn	842
+何應欽	hé yīng qīn	261
+何澤慧	hé zé huì	38
+何兆武	hé zhào wǔ	295
+何振梁	hé zhèn liáng	495
+何志平	hé zhì píng	464
+何柱國	hé zhù guó	16
+華天龍	huá tiān lóng	279
+華文漪	huá wén yī	284
+華錫鈞	huá xī jūn	310
+華胥國	huá xū guó	315
+華胥氏	huá xū shì	85
+華學明	huá xué míng	40
+華以剛	huá yǐ gāng	16
+華益慰	huá yì wèi	297
+華英雄	huà yīng xióng	35
+華雲龍	huá yún lóng	6
+華子良	huá zǐ liáng	306
+黃志祥	huáng zhì xiáng	6
+黃志雄	huáng zhì xióng	450
+黃智勇	huáng zhì yǒng	3
+黃執中	huáng zhí zhōng	164
+黃忠義	huáng zhōng yì	356
+黃仲則	huáng zhòng zé	22
+黃仲昭	huáng zhòng zhāo	292
+黃宗漢	huáng zōng hàn	346
+黃宗羲	huáng zōng xī	336
+黃宗仰	huáng zōng yǎng	238
+黃宗智	huáng zōng zhì	201
+黃宗治	huáng zōng zhì	181
+黃尊秋	huáng zūn qiū	252
+黃尊素	huáng zūn sù	346
+黃遵憲	huáng zūn xiàn	44
+黃佐臨	huáng zuǒ lín	405
+黃作梅	huáng zuò méi	306
+霍秉權	huò bǐng quán	292
+霍布斯	huò bù sī	2936
+霍成君	huò chéng jūn	317
+霍春陽	huò chūn yáng	6
+霍殿閣	huò diàn gé	248
+霍東閣	huò dōng gé	13
+霍爾丹	huò ěr dān	41
+霍費爾	huò fèi ěr	504
+霍夫曼	huò fū màn	1064
+霍華德	huò huá dé	749
+霍集占	huò jí zhàn	16
+霍加木	huò jiā mù	189
+霍建寧	huò jiàn níng	6
+霍克尼	huò kè ní	176
+霍梅尼	huò méi ní	214
+霍姆斯	huò mǔ sī	264
+霍諾留	huò nuò liú	459
+霍啟剛	huò qǐ gāng	399
+霍啟山	huò qǐ shān	129
+霍青桐	huò qīng tóng	38
+霍去病	huò qù bìng	6340
+霍守業	huò shǒu yè	302
+霍守義	huò shǒu yì	9
+霍水仙	huò shuǐ xiān	220
+霍斯勞	huò sī láo	639
+霍韜晦	huò tāo huì	292
+霍汶希	huò wèn xī	16
+霍仙姑	huò xiān gū	338
+霍嘯林	huò xiào lín	22
+霍秀秀	huò xiù xiù	57
+霍彥威	huò yàn wēi	436
+霍耀良	huò yào liáng	25
+霍英東	huò yīng dōng	138
+霍雨浩	huò yǔ hào	50
+霍元甲	huò yuán jiǎ	2104
+霍震寰	huò zhèn huán	387
+霍震霆	huò zhèn tíng	119
+霍仲孺	huò zhòng rú	41
+蔣百里	jiǎng bǎi lǐ	254
+姜白石	jiāng bái shí	436
+江寶釵	jiāng bǎo chāi	414
+姜保紅	jiāng bǎo hóng	297
+江本勝	jiāng běn shèng	382
+蔣碧微	jiǎng bì wēi	472
+蔣碧薇	jiǎng bì wēi	315
+江必新	jiāng bì xīn	19
+江別鶴	jiāng bié hè	41
+江濱柳	jiāng bīn liǔ	410
+蔣丙煌	jiǎng bǐng huáng	360
+江丙坤	jiāng bǐng kūn	544
+姜伯約	jiāng bó yuē	163
+江采蘋	jiāng cǎi píng	224
+江采萍	jiāng cǎi píng	88
+蔣采蘋	jiǎng cǎi píng	26
+蔣昌建	jiǎng chāng jiàn	283
+蔣超良	jiǎng chāo liáng	3
+姜宸英	jiāng chén yīng	324
+蔣承縉	jiǎng chéng jìn	256
+蔣崇璟	jiǎng chóng jǐng	171
+蔣傳海	jiǎng chuán hǎi	238
+江川卓	jiāng chuān zhuó	338
+蔣春霖	jiǎng chūn lín	292
+江春霖	jiāng chūn lín	198
+姜春雲	jiāng chūn yún	400
+江達琳	jiāng dá lín	99
+姜大明	jiāng dà míng	536
+江德量	jiāng dé liàng	76
+江德藻	jiāng dé zǎo	207
+姜登選	jiāng dēng xuǎn	91
+姜帝圭	jiāng dì guī	518
+蔣鼎文	jiǎng dǐng wén	63
+江冬秀	jiāng dōng xiù	508
+蔣方良	jiǎng fāng liáng	3
+蔣方舟	jiǎng fāng zhōu	964
+江楓眠	jiāng fēng mián	312
+江港生	jiāng gǎng shēng	324
+蔣高明	jiǎng gāo míng	356
+姜公輔	jiāng gōng fǔ	315
+蔣光慈	jiǎng guāng cí	28
+蔣光鼐	jiǎng guāng nài	16
+江國豪	jiāng guó háo	410
+江寒汀	jiāng hán tīng	374
+江浩然	jiāng hào rán	608
+江宏傑	jiāng hóng jié	526
+江建民	jiāng jiàn mín	436
+姜建清	jiāng jiàn qīng	19
+蔣潔敏	jiǎng jié mǐn	832
+蔣介卿	jiǎng jiè qīng	6
+蔣介石	jiǎng jiè shí	513
+蔣經國	jiǎng jīng guó	699
+江凱文	jiāng kǎi wén	207
+江亢虎	jiāng kàng hǔ	13
+姜克實	jiāng kè shí	388
+江坤宇	jiāng kūn yǔ	284
+蔣麗芸	jiǎng lì yún	504
+姜亮夫	jiāng liàng fū	423
+江流兒	jiāng liú ér	688
+江茂森	jiāng mào sēn	180
+蔣門神	jiǎng mén shén	176
+蔣夢麟	jiǎng mèng lín	60
+江綿恆	jiāng mián héng	3
+江鳴久	jiāng míng jiǔ	202
+江明學	jiāng míng xué	387
+蔣南翔	jiǎng nán xiáng	9
+蔣能傑	jiǎng néng jié	166
+姜培琳	jiāng péi lín	297
+江佩珍	jiāng pèi zhēn	238
+江鵬堅	jiāng péng jiān	418
+江啟臣	jiāng qǐ chén	558
+姜奇平	jiāng qí píng	396
+江奇濤	jiāng qí tāo	6
+蔣慶泉	jiǎng qìng quán	252
+江日升	jiāng rì shēng	310
+姜汝祥	jiāng rǔ xiáng	3
+江上達	jiāng shàng dá	162
+江上青	jiāng shàng qīng	400
+江紹基	jiāng shào jī	153
+江少虞	jiāng shǎo yú	160
+蔣勝男	jiǎng shèng nán	702
+姜世離	jiāng shì lí	270
+蔣士銓	jiǎng shì quán	331
+蔣樹聲	jiǎng shù shēng	302
+姜思達	jiāng sī dá	756
+江孫芸	jiāng sūn yún	351
+姜太公	jiāng tài gōng	226
+姜太后	jiāng tài hòu	238
+姜特立	jiāng tè lì	144
+江騰蛟	jiāng téng jiāo	472
+江天鐸	jiāng tiān duó	153
+江天勇	jiāng tiān yǒng	369
+蔣廷黻	jiǎng tíng fú	132
+蔣萬安	jiǎng wàn ān	482
+江萬里	jiāng wàn lǐ	456
+蔣緯國	jiǎng wěi guó	44
+蔣偉寧	jiǎng wěi níng	418
+江味農	jiāng wèi nóng	274
+蔣維喬	jiǎng wéi qiáo	3
+江渭清	jiāng wèi qīng	414
+蔣渭水	jiǎng wèi shuǐ	648
+江文湛	jiāng wén zhàn	310
+姜錫柱	jiāng xī zhù	274
+蔣顯斌	jiǎng xiǎn bīn	248
+蔣先雲	jiǎng xiān yún	28
+江小涓	jiāng xiǎo juān	346
+蔣孝文	jiǎng xiào wén	495
+蔣孝嚴	jiǎng xiào yán	626
+江小魚	jiāng xiǎo yú	422
+江曉原	jiāng xiǎo yuán	365
+蔣孝章	jiǎng xiào zhāng	211
+江燮元	jiāng xiè yuán	261
+蔣興權	jiǎng xīng quán	66
+江休復	jiāng xiū fù	160
+姜旭光	jiāng xù guāng	45
+蔣學模	jiǎng xué mó	400
+蔣彥士	jiǎng yàn shì	102
+蔣耀平	jiǎng yào píng	160
+江逸塵	jiāng yì chén	189
+江宜樺	jiāng yí huà	688
+姜異康	jiāng yì kāng	446
+蔣翊武	jiǎng yì wǔ	246
+江映月	jiāng yìng yuè	1012
+江永華	jiāng yǒng huá	288
+江擁輝	jiāng yōng huī	292
+蔣友柏	jiǎng yǒu bǎi	518
+蔣玉菡	jiǎng yù hàn	85
+江玉郎	jiāng yù láng	63
+江玉燕	jiāng yù yàn	334
+姜雲凡	jiāng yún fán	182
+江澤涵	jiāng zé hán	346
+江澤慧	jiāng zé huì	346
+江澤林	jiāng zé lín	382
+江澤民	jiāng zé mín	85
+姜增偉	jiāng zēng wěi	333
+蔣兆和	jiǎng zhào hé	28
+江兆申	jiāng zhào shēn	306
+蔣正華	jiǎng zhèng huá	418
+江志強	jiāng zhì qiáng	536
+江直樹	jiāng zhí shù	418
+江忠源	jiāng zhōng yuán	365
+蔣中正	jiǎng zhōng zhèng	157
+江鑄久	jiāng zhù jiǔ	57
+江竹筠	jiāng zhú jūn	382
+蔣子龍	jiǎng zǐ lóng	28
+姜子牙	jiāng zǐ yá	1755
+蔣作賓	jiǎng zuò bīn	3
+江作良	jiāng zuò liáng	333
+金炳萬	jīn bǐng wàn	6
+金燦榮	jīn càn róng	82
+金蟬子	jīn chán zǐ	254
+金蟾子	jīn chán zǐ	229
+金沖及	jīn chōng jí	25
+金釧兒	jīn chuàn ér	16
+金翠蓮	jīn cuì lián	31
+金大堅	jīn dà jiān	100
+金達康	jīn dá kāng	261
+金大升	jīn dà shēng	261
+金大中	jīn dà zhōng	148
+金德宗	jīn dé zōng	189
+金地藏	jīn dì cáng	342
+金冬心	jīn dōng xīn	382
+金冬雁	jīn dōng yàn	25
+金甫炅	jīn fǔ jiǒng	315
+金富軾	jīn fù shì	300
+金觀濤	jīn guān tāo	432
+金光瑤	jīn guāng yáo	540
+金韓松	jīn hán sōng	279
+金亨稷	jīn hēng jì	410
+金弘道	jīn hóng dào	320
+金弘集	jīn hóng jí	432
+金皇后	jīn huáng hòu	423
+金基德	jīn jī dé	344
+金開誠	jīn kāi chéng	297
+金凱瑞	jīn kǎi ruì	254
+金克木	jīn kè mù	154
+金克絲	jīn kè sī	100
+金里奇	jīn lǐ qí	6
+金立群	jīn lì qún	47
+金羅漢	jīn luó hàn	396
+金履祥	jīn lǚ xiáng	248
+金美齡	jīn měi líng	351
+金末帝	jīn mò dì	297
+金木研	jīn mù yán	35
+金尼閣	jīn ní gé	396
+金培達	jīn péi dá	6
+金槍客	jīn qiāng kè	364
+金槍手	jīn qiāng shǒu	382
+金喬覺	jīn qiáo jué	387
+金人慶	jīn rén qìng	9
+金仁問	jīn rén wèn	292
+金日成	jīn rì chéng	288
+金軟景	jīn ruǎn jǐng	9
+金睿宗	jīn ruì zōng	256
+金潤發	jīn rùn fā	526
+金世遺	jīn shì yí	100
+金世宗	jīn shì zōng	66
+金世祖	jīn shì zǔ	258
+金首露	jīn shǒu lù	360
+金素月	jīn sù yuè	212
+金太狼	jīn tài láng	675
+金太郎	jīn tài láng	429
+金太宗	jīn tài zōng	35
+金太祖	jīn tài zǔ	47
+金天氏	jīn tiān shì	340
+金鐵霖	jīn tiě lín	464
+金廷標	jīn tíng biāo	288
+金頭陀	jīn tóu tuó	441
+金萬德	jīn wàn dé	289
+金王孫	jīn wáng sūn	320
+金維剛	jīn wéi gāng	684
+金維映	jīn wéi yìng	288
+金文聲	jīn wén shēng	405
+金玟哉	jīn wén zāi	195
+金無怠	jīn wú dài	3
+金兀朮	jīn wù zhú	580
+金熙宗	jīn xī zōng	630
+金信煜	jīn xìn yù	41
+金性堯	jīn xìng yáo	306
+金雄白	jīn xióng bái	342
+金宣宗	jīn xuān zōng	63
+金訓華	jīn xùn huá	306
+金雅朗	jīn yǎ lǎng	153
+金眼彪	jīn yǎn biāo	356
+金妍兒	jīn yán ér	716
+金延璟	jīn yán jǐng	350
+金岩石	jīn yán shí	236
+金燕西	jīn yàn xī	352
+金耀基	jīn yào jī	387
+金怡濂	jīn yí lián	180
+金依萌	jīn yī méng	364
+金一南	jīn yì nán	60
+金英權	jīn yīng quán	163
+金永南	jīn yǒng nán	554
+金泳三	jīn yǒng sān	38
+金幼孜	jīn yòu zī	3
+金宇澄	jīn yǔ chéng	72
+金毓黻	jīn yù fú	423
+金魚姬	jīn yú jī	554
+金魚精	jīn yú jīng	279
+金玉均	jīn yù jūn	486
+金玉奴	jīn yù nú	19
+金庾信	jīn yǔ xìn	482
+金宇中	jīn yǔ zhōng	13
+金元鳳	jīn yuán fèng	297
+金鴛鴦	jīn yuān yāng	297
+金岳霖	jīn yuè lín	371
+金運昌	jīn yùn chāng	252
+金韻蓉	jīn yùn róng	400
+金載圭	jīn zài guī	513
+金章宗	jīn zhāng zōng	60
+金兆蕃	jīn zhào fān	238
+金兆鈞	jīn zhào jūn	310
+金正恩	jīn zhèng ēn	185
+金正男	jīn zhèng nán	16
+金正日	jīn zhèng rì	60
+金正淑	jīn zhèng shū	243
+金鍾泌	jīn zhōng mì	16
+金逐流	jīn zhú liú	230
+金壯龍	jīn zhuàng lóng	356
+金子軒	jīn zi xuān	162
+金宗瑞	jīn zōng ruì	374
+金祖淳	jīn zǔ chún	279
+金祖同	jīn zǔ tóng	256
+孔多塞	kǒng duō sāi	540
+孔繁森	kǒng fán sēn	16
+孔飛力	kǒng fēi lì	91
+孔父嘉	kǒng fù jiā	48
+孔夫子	kǒng fū zǐ	829
+孔老二	kǒng lǎo èr	151
+孔令華	kǒng lìng huá	410
+孔令輝	kǒng lìng huī	330
+孔令偉	kǒng lìng wěi	400
+孔平仲	kǒng píng zhòng	13
+孔慶東	kǒng qìng dōng	236
+孔仁玉	kǒng rén yù	400
+孔尚任	kǒng shàng rèn	91
+孔紹安	kǒng shào ān	238
+孔聖人	kǒng shèng rén	144
+孔四貞	kǒng sì zhēn	490
+孔祥熙	kǒng xiáng xī	151
+孔孝真	kǒng xiào zhēn	66
+孔乙己	kǒng yǐ jǐ	1768
+孔穎達	kǒng yǐng dá	195
+孔有德	kǒng yǒu dé	369
+孔稚圭	kǒng zhì guī	37
+厲檳源	lì bīn yuán	190
+李承乾	lǐ chéng qián	94
+李淳風	lǐ chún fēng	94
+李達康	lǐ dá kāng	308
+李大釗	lǐ dà zhāo	1149
+李登輝	lǐ dēng huī	295
+厲飛雨	lì fēi yǔ	526
+李光弼	lǐ guāng bì	289
+李光耀	lǐ guāng yào	703
+李鴻章	lǐ hóng zhāng	4299
+李家超	lǐ jiā chāo	527
+李嘉誠	lǐ jiā chéng	1755
+李佳薇	lǐ jiā wēi	129
+李建成	lǐ jiàn chéng	823
+厲景琛	lì jǐng chēn	788
+李開復	lǐ kāi fù	1212
+李克農	lǐ kè nóng	50
+李克強	lǐ kè qiáng	82
+李立國	lǐ lì guó	594
+李立三	lǐ lì sān	135
+李蓮英	lǐ lián yīng	122
+李靚蕾	lǐ liàng lěi	756
+李烈鈞	lǐ liè jūn	9
+李林甫	lǐ lín fǔ	386
+厲麟似	lì lín sì	328
+李龍大	lǐ lóng dà	648
+李隆基	lǐ lóng jī	1583
+厲曼婷	lì màn tíng	310
+李茂貞	lǐ mào zhēn	449
+李明博	lǐ míng bó	141
+李莫愁	lǐ mò chóu	449
+李瓶兒	lǐ píng ér	317
+李清照	lǐ qīng zhào	1733
+李秋平	lǐ qiū píng	38
+李秋水	lǐ qiū shuǐ	170
+李如松	lǐ rú sōng	258
+李瑞環	lǐ ruì huán	25
+厲若海	lì ruò hǎi	680
+李森科	lǐ sēn kē	630
+李善長	lǐ shàn cháng	110
+李商隱	lǐ shāng yǐn	1513
+厲勝男	lì shèng nán	378
+李士材	lǐ shì cái	130
+李石曾	lǐ shí céng	361
+李世民	lǐ shì mín	10302
+李士群	lǐ shì qún	9
+李世石	lǐ shì shí	346
+李師師	lǐ shī shī	120
+李時珍	lǐ shí zhēn	644
+李書福	lǐ shū fú	314
+李叔同	lǐ shū tóng	273
+李舜臣	lǐ shùn chén	132
+李四光	lǐ sì guāng	192
+李斯特	lǐ sī tè	2364
+李嗣業	lǐ sì yè	252
+李嗣源	lǐ sì yuán	248
+李太白	lǐ tài bái	443
+厲天閏	lì tiān rùn	16
+李天一	lǐ tiān yī	783
+李鐵拐	lǐ tiě guǎi	432
+李維漢	lǐ wéi hàn	16
+李維斯	lǐ wéi sī	766
+李文亮	lǐ wén liàng	135
+李文秀	lǐ wén xiù	57
+李文正	lǐ wén zhèng	44
+李文忠	lǐ wén zhōng	317
+厲無畏	lì wú wèi	410
+李顯龍	lǐ xiǎn lóng	69
+李先念	lǐ xiān niàn	113
+李香君	lǐ xiāng jūn	19
+李小加	lǐ xiǎo jiā	53
+李笑來	lǐ xiào lái	810
+李小龍	lǐ xiǎo lóng	12503
+李小男	lǐ xiǎo nán	693
+李逍遙	lǐ xiāo yáo	2465
+李興霸	lǐ xīng bà	171
+李秀成	lǐ xiù chéng	163
+李秀滿	lǐ xiù mǎn	364
+李雪峰	lǐ xuě fēng	9
+李雪蓮	lǐ xuě lián	999
+李學勤	lǐ xué qín	173
+李尋歡	lǐ xún huān	578
+李迅雷	lǐ xùn léi	680
+李延年	lǐ yán nián	182
+李一男	lǐ yì nán	426
+厲以寧	lì yǐ níng	69
+李憶如	lǐ yì rú	254
+李銀河	lǐ yín hé	650
+李銀橋	lǐ yín qiáo	102
+李永樂	lǐ yǒng lè	896
+李宇明	lǐ yǔ míng	279
+李元霸	lǐ yuán bà	380
+李源潮	lǐ yuán cháo	13
+李元芳	lǐ yuán fāng	349
+李元昊	lǐ yuán hào	226
+李元吉	lǐ yuán jí	377
+李遠哲	lǐ yuǎn zhé	25
+李約瑟	lǐ yuē sè	301
+李雲龍	lǐ yún lóng	1363
+李在明	lǐ zài míng	35
+李在鎔	lǐ zài róng	122
+李澤厚	lǐ zé hòu	465
+李澤鉅	lǐ zé jù	6
+李澤楷	lǐ zé kǎi	135
+李章洙	lǐ zhāng zhū	100
+李肇星	lǐ zhào xīng	621
+李鎮西	lǐ zhèn xī	28
+李政道	lǐ zhèng dào	427
+李柱銘	lǐ zhù míng	3
+李卓人	lǐ zhuó rén	652
+李自成	lǐ zì chéng	1900
+李子君	lǐ zi jūn	644
+李總兵	lǐ zǒng bīng	238
+李宗仁	lǐ zōng rén	999
+李宗偉	lǐ zōng wěi	1121
+李宗吾	lǐ zōng wú	22
+李作鵬	lǐ zuò péng	13
+林白水	lín bái shuǐ	13
+林百欣	lín bǎi xīn	6
+林伯強	lín bó qiáng	6
+林伯渠	lín bó qú	31
+林采宜	lín cǎi yí	69
+林昶佐	lín chǎng zuǒ	603
+林朝棟	lín cháo dòng	477
+林超攀	lín chāo pān	428
+林超賢	lín chāo xián	242
+林崇德	lín chóng dé	464
+林岱樺	lín dài huà	428
+林黛玉	lín dài yù	1529
+林丹汗	lín dān hàn	176
+林道靜	lín dào jìng	25
+林迪安	lín dí ān	369
+林帝浣	lín dì huàn	306
+林棟甫	lín dòng fǔ	6
+林豆豆	lín dòu dòu	418
+林多美	lín duō měi	9
+林飛帆	lín fēi fān	612
+林風眠	lín fēng mián	612
+林鳳祥	lín fèng xiáng	25
+林富士	lín fù shì	333
+林甘泉	lín gān quán	374
+林格倫	lín gé lún	38
+林谷芳	lín gǔ fāng	6
+林桂生	lín guì shēng	387
+林海峰	lín hǎi fēng	141
+林海音	lín hǎi yīn	104
+林漢達	lín hàn dá	35
+林行規	lín háng guī	194
+林浩然	lín hào rán	414
+林和靖	lín hé jìng	69
+林合隆	lín hé lóng	400
+林鶴年	lín hè nián	342
+林紅玉	lín hóng yù	9
+林懷民	lín huái mín	22
+林煥彰	lín huàn zhāng	414
+林徽因	lín huī yīn	2722
+林徽音	lín huī yīn	450
+林基路	lín jī lù	428
+林加德	lín jiā dé	673
+林佳龍	lín jiā lóng	680
+林嘉茉	lín jiā mò	53
+林建岳	lín jiàn yuè	50
+林教頭	lín jiào tóu	135
+林教主	lín jiào zhǔ	207
+林斤瀾	lín jīn lán	3
+林覺民	lín jué mín	47
+林克昌	lín kè chāng	338
+林克慶	lín kè qìng	378
+林可勝	lín kě shèng	38
+林立果	lín lì guǒ	41
+林良實	lín liáng shí	680
+林嶺東	lín lǐng dōng	634
+林靈素	lín líng sù	9
+林洛景	lín luò jǐng	504
+林羅山	lín luó shān	428
+林洛雪	lín luò xuě	9
+林邁可	lín mài kě	657
+林妹妹	lín mèi mei	336
+林楠笙	lín nán shēng	195
+林娘子	lín niáng zǐ	464
+林品如	lín pǐn rú	306
+林平侯	lín píng hóu	310
+林平之	lín píng zhī	923
+林啟正	lín qǐ zhèng	3
+林巧稚	lín qiǎo zhì	270
+林清玄	lín qīng xuán	411
+林秋離	lín qiū lí	459
+林權澤	lín quán zé	423
+林仁肇	lín rén zhào	333
+林容生	lín róng shēng	315
+林如海	lín rú hǎi	116
+林若寧	lín ruò níng	549
+林散之	lín sàn zhī	3
+林森浩	lín sēn hào	837
+林姍姍	lín shān shān	44
+林尚義	lín shàng yì	441
+林少春	lín shǎo chūn	382
+林少華	lín shǎo huá	706
+林生斌	lín shēng bīn	210
+林盛斌	lín shèng bīn	189
+林世功	lín shì gōng	410
+林士弘	lín shì hóng	3
+林世傑	lín shì jié	567
+林世玲	lín shì líng	414
+林世榮	lín shì róng	38
+林詩音	lín shī yīn	16
+林實之	lín shí zhī	90
+林式之	lín shì zhī	76
+林壽圖	lín shòu tú	230
+林書成	lín shū chéng	297
+林淑芬	lín shū fēn	9
+林書豪	lín shū háo	2481
+林樹梅	lín shù méi	220
+林述慶	lín shù qìng	292
+林樹森	lín shù sēn	9
+林書緯	lín shū wěi	450
+林書煒	lín shū wěi	209
+林書宇	lín shū yǔ	364
+林爽文	lín shuǎng wén	19
+林水鏡	lín shuǐ jìng	338
+林順潮	lín shùn cháo	3
+林四娘	lín sì niáng	297
+林太醫	lín tài yī	428
+林騰蛟	lín téng jiāo	378
+林天愛	lín tiān ài	171
+林天南	lín tiān nán	163
+林庭機	lín tíng jī	194
+林挺生	lín tǐng shēng	374
+林同炎	lín tóng yán	405
+林韋翰	lín wéi hàn	382
+林偉賢	lín wěi xián	392
+林維源	lín wéi yuán	410
+林文慶	lín wén qìng	418
+林希妤	lín xī yú	3
+林下樗	lín xià chū	4
+林仙兒	lín xiān ér	598
+林獻堂	lín xiàn táng	657
+林賢治	lín xián zhì	405
+林祥謙	lín xiáng qiān	450
+林孝埈	lín xiào jùn	38
+林小宅	lín xiǎo zhái	28
+林興珠	lín xīng zhū	410
+林燕妮	lín yàn nī	35
+林耀華	lín yào huá	22
+林詣彬	lín yì bīn	562
+林毅夫	lín yì fū	685
+林奕含	lín yì hán	455
+林奕華	lín yì huá	75
+林姨娘	lín yí niáng	562
+林益世	lín yì shì	48
+林義雄	lín yì xióng	693
+林永升	lín yǒng shēng	6
+林玉芬	lín yù fēn	387
+林育南	lín yù nán	441
+林毓生	lín yù shēng	236
+林語堂	lín yǔ táng	1718
+林育英	lín yù yīng	508
+林遠圖	lín yuǎn tú	60
+林岳平	lín yuè píng	396
+林月琴	lín yuè qín	392
+林月如	lín yuè rú	882
+林昀儒	lín yún rú	97
+林則徐	lín zé xú	1187
+林占梅	lín zhàn méi	428
+林兆華	lín zhào huá	38
+林震南	lín zhèn nán	176
+林振強	lín zhèn qiáng	154
+林真心	lín zhēn xīn	544
+林鎮夷	lín zhèn yí	274
+林正疆	lín zhèng jiāng	634
+林智堅	lín zhì jiān	598
+林直勉	lín zhí miǎn	3
+林之孝	lín zhī xiào	9
+林中斌	lín zhōng bīn	495
+林忠欽	lín zhōng qīn	6
+林卓廷	lín zhuó tíng	3
+劉病已	liú bìng yǐ	318
+劉伯承	liú bó chéng	226
+劉伯明	liú bó míng	229
+劉伯溫	liú bó wēn	320
+劉熾平	liú chì píng	195
+劉純燕	liú chún yàn	31
+劉賜貴	liú cì guì	590
+劉慈欣	liú cí xīn	5539
+劉大為	liú dà wéi	524
+劉德華	liú dé huá	4126
+劉弗陵	liú fú líng	581
+劉畊宏	liú gēng hóng	774
+劉黑闥	liú hēi tà	223
+劉胡蘭	liú hú lán	82
+劉華清	liú huá qīng	597
+劉皇發	liú huáng fā	590
+劉皇叔	liú huáng shū	308
+劉惠雲	liú huì yún	626
+劉寄奴	liú jì nú	41
+劉家良	liú jiā liáng	232
+劉建國	liú jiàn guó	66
+劉建宏	liú jiàn hóng	82
+劉建明	liú jiàn míng	399
+劉珂矣	liú kē yǐ	428
+劉坤一	liú kūn yī	141
+劉蘭芝	liú lán zhī	371
+劉姥姥	liú lǎo lao	480
+劉牢之	liú láo zhī	41
+劉鑾雄	liú luán xióng	113
+劉銘傳	liú míng chuán	66
+劉強東	liú qiáng dōng	4534
+劉青山	liú qīng shān	19
+劉如意	liú rú yì	553
+劉少奇	liú shào qí	276
+劉世錦	liú shì jǐn	40
+劉士余	liú shì yú	158
+劉太公	liú tài gōng	78
+劉鐵男	liú tiě nán	774
+劉孝孫	liú xiào sūn	324
+劉心武	liú xīn wǔ	386
+劉玄德	liú xuán dé	364
+劉亞樓	liú yà lóu	104
+劉亞洲	liú yà zhōu	554
+劉延東	liú yán dōng	13
+劉義隆	liú yì lóng	44
+劉益謙	liú yì qiān	74
+劉永福	liú yǒng fú	38
+劉永好	liú yǒng hǎo	113
+劉語熙	liú yǔ xī	820
+劉禹錫	liú yǔ xī	644
+劉雲山	liú yún shān	3
+劉長卿	liú zhǎng qīng	572
+劉招華	liú zhāo huá	1419
+劉鎮偉	liú zhèn wěi	647
+劉震雲	liú zhèn yún	543
+劉志丹	liú zhì dān	273
+劉志軍	liú zhì jūn	41
+劉知遠	liú zhī yuǎn	201
+劉梓晨	liú zǐ chén	44
+婁勤儉	lóu qín jiǎn	16
+婁師白	lóu shī bái	3
+婁師德	lóu shī dé	138
+婁太后	lóu tài hòu	270
+婁一晨	lóu yī chén	252
+婁昭君	lóu zhāo jūn	522
+陸伯言	lù bó yán	129
+陸步軒	lù bù xuān	60
+陸長源	lù cháng yuán	292
+陸乘風	lù chéng fēng	13
+陸春齡	lù chūn líng	288
+陸次雲	lù cì yún	194
+陸大有	lù dà yǒu	69
+陸丹林	lù dān lín	207
+陸德明	lù dé míng	41
+陸定一	lù dìng yī	31
+陸東福	lù dōng fú	3
+陸法言	lù fǎ yán	22
+陸放翁	lù fàng wēng	25
+陸費逵	lù fèi kuí	16
+陸復禮	lù fù lǐ	90
+陸恭蕙	lù gōng huì	392
+陸冠英	lù guān yīng	41
+陸光祖	lù guāng zǔ	356
+陸龜蒙	lù guī méng	38
+陸皓東	lù hào dōng	19
+陸浩明	lù hào míng	504
+陸鴻漸	lù hóng jiàn	220
+陸弘休	lù hóng xiū	50
+陸惠玲	lù huì líng	670
+陸繼輅	lù jì lù	194
+陸建章	lù jiàn zhāng	472
+陸晶清	lù jīng qīng	266
+陸景融	lù jǐng róng	549
+陸九淵	lù jiǔ yuān	223
+陸久之	lù jiǔ zhī	346
+陸居仁	lù jū rén	186
+陸侃如	lù kǎn rú	418
+陸克文	lù kè wén	47
+陸肯堂	lù kěn táng	238
+陸蘭秀	lù lán xiù	284
+陸勵成	lù lì chéng	567
+陸林軒	lù lín xuān	31
+陸令萱	lù lìng xuān	423
+陸隴其	lù lǒng qí	9
+陸敏全	lù mǐn quán	423
+陸平原	lù píng yuán	508
+陸橋山	lù qiáo shān	310
+陸刃波	lù rèn bō	392
+陸榮廷	lù róng tíng	242
+陸如萍	lù rú píng	252
+陸潤庠	lù rùn xiáng	400
+陸三金	lù sān jīn	82
+陸士諤	lù shì è	356
+陸士衡	lù shì héng	252
+陸士嘉	lù shì jiā	346
+陸世儀	lù shì yí	243
+陸樹聲	lù shù shēng	284
+陸頌雄	lù sòng xióng	392
+陸探微	lù tàn wēi	328
+陸天明	lù tiān míng	47
+陸維釗	lù wéi zhāo	31
+陸文夫	lù wén fū	44
+陸文龍	lù wén lóng	405
+陸武成	lù wǔ chéng	423
+陸無雙	lù wú shuāng	116
+陸希道	lù xī dào	243
+陸希聲	lù xī shēng	310
+陸小鳳	lù xiǎo fèng	631
+陸小曼	lù xiǎo màn	3310
+陸小千	lù xiǎo qiān	3
+陸心源	lù xīn yuán	28
+陸星兒	lù xīng ér	518
+陸行鳥	lù xíng niǎo	144
+陸秀夫	lù xiù fū	144
+陸修靜	lù xiū jìng	459
+陸雪琪	lù xuě qí	72
+陸學藝	lù xué yì	3
+陸儼少	lù yǎn shǎo	44
+陸焉識	lù yān shí	471
+陸亦可	lù yì kě	9
+陸依萍	lù yī píng	9
+陸淵雷	lù yuān léi	315
+陸增祥	lù zēng xiáng	238
+陸展博	lù zhǎn bó	369
+陸展元	lù zhǎn yuán	19
+陸兆禧	lù zhào xǐ	122
+陸振華	lù zhèn huá	464
+陸徵祥	lù zhēng xiáng	13
+陸正耀	lù zhèng yào	254
+陸之昂	lù zhī áng	223
+陸志廉	lù zhì lián	346
+陸志韋	lù zhì wéi	378
+陸治原	lù zhì yuán	208
+陸仲亨	lù zhòng hēng	320
+陸子剛	lù zǐ gāng	418
+陸子岡	lù zǐ gāng	160
+陸宗輿	lù zōng yú	418
+羅保銘	luó bǎo míng	576
+羅炳輝	luó bǐng huī	13
+羅爾綱	luó ěr gāng	22
+羅芳伯	luó fāng bó	428
+羅福助	luó fú zhù	418
+羅工柳	luó gōng liǔ	3
+羅貫中	luó guàn zhōng	1413
+羅豪才	luó háo cái	9
+羅洪先	luó hóng xiān	405
+羅弘信	luó hóng xìn	428
+羅泓軫	luó hóng zhěn	428
+羅嘉良	luó jiā liáng	60
+羅家倫	luó jiā lún	44
+羅家英	luó jiā yīng	85
+羅樂林	luó lè lín	9
+羅隆基	luó lóng jī	6
+羅美薇	luó měi wēi	9
+羅密歐	luó mì ōu	568
+羅納德	luó nà dé	367
+羅啟銳	luó qǐ ruì	454
+羅青長	luó qīng cháng	508
+羅榮桓	luó róng huán	113
+羅汝才	luó rǔ cái	13
+羅瑞卿	luó ruì qīng	57
+羅時豐	luó shí fēng	459
+羅士信	luó shì xìn	28
+羅斯福	luó sī fú	2314
+羅永浩	luó yǒng hào	10268
+羅澤南	luó zé nán	53
+羅振玉	luó zhèn yù	657
+羅志祥	luó zhì xiáng	1039
+羅仲謙	luó zhòng qiān	9
+羅卓瑤	luó zhuó yáo	356
+羅卓英	luó zhuó yīng	9
+呂本富	lǚ běn fù	288
+呂本中	lǚ běn zhōng	414
+呂碧城	lǚ bì chéng	544
+呂伯奢	lǚ bó shē	490
+呂不韋	lǚ bù wéi	932
+呂純陽	lǚ chún yáng	450
+呂大防	lǚ dà fáng	428
+呂大臨	lǚ dà lín	374
+呂洞賓	lǚ dòng bīn	842
+呂奉先	lǚ fèng xiān	450
+呂鳳子	lǚ fèng zǐ	392
+呂歸塵	lǚ guī chén	666
+呂赫若	lǚ hè ruò	500
+呂會會	lǚ huì huì	369
+呂惠卿	lǚ huì qīng	576
+呂留良	lǚ liú liáng	616
+呂馬童	lǚ mǎ tóng	418
+呂蒙正	lǚ méng zhèng	540
+呂南公	lǚ nán gōng	99
+呂品昌	lǚ pǐn chāng	274
+呂其恩	lǚ qí ēn	441
+呂泉生	lǚ quán shēng	423
+呂日周	lǚ rì zhōu	225
+呂世浩	lǚ shì hào	436
+呂斯百	lǚ sī bǎi	297
+呂思勉	lǚ sī miǎn	810
+呂四娘	lǚ sì niáng	472
+呂思清	lǚ sī qīng	544
+呂太后	lǚ tài hòu	531
+呂廷傑	lǚ tíng jié	194
+呂渭老	lǚ wèi lǎo	144
+呂文德	lǚ wén dé	454
+呂希純	lǚ xī chún	162
+呂錫文	lǚ xī wén	608
+呂秀才	lǚ xiù cái	644
+呂秀蓮	lǚ xiù lián	729
+呂岩松	lǚ yán sōng	288
+呂頤浩	lǚ yí hào	396
+呂永岩	lǚ yǒng yán	279
+呂振羽	lǚ zhèn yǔ	382
+呂正操	lǚ zhèng cāo	630
+呂直夫	lǚ zhí fū	45
+呂忠梅	lǚ zhōng méi	297
+呂紫劍	lǚ zǐ jiàn	410
+呂子明	lǚ zǐ míng	320
+呂子喬	lǚ zǐ qiáo	572
+呂祖善	lǚ zǔ shàn	324
+馬愛農	mǎ ài nóng	472
+馬邦德	mǎ bāng dé	1156
+馬伯庸	mǎ bó yōng	446
+馬步芳	mǎ bù fāng	50
+馬布里	mǎ bù lǐ	750
+馬查多	mǎ chá duō	3
+馬朝旭	mǎ cháo xù	382
+馬春花	mǎ chūn huā	31
+馬大帥	mǎ dà shuài	66
+馬德興	mǎ dé xīng	13
+馬蒂奇	mǎ dì qí	1002
+馬蒂斯	mǎ dì sī	471
+馬鼎盛	mǎ dǐng shèng	378
+馬冬梅	mǎ dōng méi	2182
+馬東敏	mǎ dōng mǐn	603
+馬杜羅	mǎ dù luó	19
+馬爾福	mǎ ěr fú	1454
+馬爾羅	mǎ ěr luó	594
+馬爾斯	mǎ ěr sī	298
+馬蓋蒂	mǎ gài dì	35
+馬國翰	mǎ guó hàn	16
+馬哈迪	mǎ hā dí	9
+馬哈爾	mǎ hā ěr	500
+馬哈木	mǎ hā mù	163
+馬海德	mǎ hǎi dé	330
+馬赫迪	mǎ hè dí	662
+馬鶴凌	mǎ hè líng	396
+馬黑麻	mǎ hēi má	486
+馬恆昌	mǎ héng chāng	261
+馬鴻逵	mǎ hóng kuí	13
+馬化龍	mǎ huà lóng	468
+馬化騰	mǎ huà téng	3909
+馬懷素	mǎ huái sù	256
+馬皇后	mǎ huáng hòu	236
+馬季奇	mǎ jì qí	13
+馬加比	mǎ jiā bǐ	598
+馬加爾	mǎ jiā ěr	414
+馬佳佳	mǎ jiā jiā	648
+馬加爵	mǎ jiā jué	480
+馬加什	mǎ jiā shí	680
+馬加特	mǎ jiā tè	333
+馬建忠	mǎ jiàn zhōng	31
+馬金鳳	mǎ jīn fèng	446
+馬君武	mǎ jūn wǔ	41
+馬克白	mǎ kè bái	634
+馬克龍	mǎ kè lóng	769
+馬可尼	mǎ kě ní	69
+馬克思	mǎ kè sī	9203
+馬奎爾	mǎ kuí ěr	770
+馬雷克	mǎ léi kè	119
+馬雷斯	mǎ léi sī	576
+馬里昂	mǎ lǐ áng	512
+馬利基	mǎ lì jī	680
+馬立克	mǎ lì kè	465
+馬利克	mǎ lì kè	418
+馬儷文	mǎ lì wén	13
+馬禮遜	mǎ lǐ xùn	72
+馬利亞	mǎ lì yà	1080
+馬聯甲	mǎ lián jiǎ	333
+馬連良	mǎ lián liáng	239
+馬倫科	mǎ lún kē	189
+馬洛里	mǎ luò lǐ	662
+馬洛伊	mǎ luò yī	28
+馬呂斯	mǎ lǚ sī	828
+馬孟起	mǎ mèng qǐ	19
+馬明心	mǎ míng xīn	364
+馬明哲	mǎ míng zhé	738
+馬末沙	mǎ mò shā	459
+馬翩然	mǎ piān rán	630
+馬親王	mǎ qīn wáng	680
+馬清偉	mǎ qīng wěi	490
+馬榮成	mǎ róng chéng	75
+馬薩林	mǎ sà lín	540
+馬薩喬	mǎ sà qiáo	57
+馬塞爾	mǎ sāi ěr	261
+馬塞洛	mǎ sāi luò	907
+馬三娘	mǎ sān niáng	251
+馬士兵	mǎ shì bīng	57
+馬識途	mǎ shí tú	35
+馬思聰	mǎ sī cōng	50
+馬斯克	mǎ sī kè	10541
+馬斯洛	mǎ sī luò	612
+馬松亭	mǎ sōng tíng	356
+馬蘇德	mǎ sū dé	657
+馬滕斯	mǎ téng sī	410
+馬廷鸞	mǎ tíng luán	243
+馬圖林	mǎ tú lín	405
+馬萬祺	mǎ wàn qí	684
+馬王爺	mǎ wáng yé	35
+馬文瑞	mǎ wén ruì	428
+馬文升	mǎ wén shēng	44
+馬希爾	mǎ xī ěr	472
+馬西尼	mǎ xī ní	482
+馬錫五	mǎ xī wǔ	392
+馬湘蘭	mǎ xiāng lán	9
+馬曉春	mǎ xiǎo chūn	515
+馬曉光	mǎ xiǎo guāng	6
+馬曉霖	mǎ xiǎo lín	228
+馬小跳	mǎ xiǎo tiào	75
+馬歇爾	mǎ xiē ěr	1234
+馬些路	mǎ xiē lù	414
+馬興瑞	mǎ xīng ruì	16
+馬星野	mǎ xīng yě	598
+馬修斯	mǎ xiū sī	609
+馬敘倫	mǎ xù lún	50
+馬寅初	mǎ yín chū	78
+馬英九	mǎ yīng jiǔ	232
+馬友友	mǎ yǒu yǒu	179
+馬元義	mǎ yuán yì	396
+馬悅凌	mǎ yuè líng	464
+馬占鰲	mǎ zhàn áo	364
+馬占山	mǎ zhàn shān	116
+馬致遠	mǎ zhì yuǎn	160
+馬仲英	mǎ zhòng yīng	3
+孟賓於	mèng bīn yú	144
+孟嘗君	mèng cháng jūn	597
+孟超然	mèng chāo rán	364
+孟稱舜	mèng chēng shùn	202
+孟德爾	mèng dé ěr	609
+孟德海	mèng dé hǎi	97
+孟恩遠	mèng ēn yuǎn	382
+孟二冬	mèng èr dōng	306
+孟繁華	mèng fán huá	16
+孟煩了	mèng fán le	62
+孟凡利	mèng fán lì	378
+孟扶搖	mèng fú yáo	279
+孟公綽	mèng gōng chuò	180
+孟公威	mèng gōng wēi	302
+孟關良	mèng guān liáng	3
+孟廣祿	mèng guǎng lù	38
+孟海公	mèng hǎi gōng	3
+孟浩然	mèng hào rán	851
+孟宏偉	mèng hóng wěi	418
+孟懷玉	mèng huái yù	261
+孟皇后	mèng huáng hòu	360
+孟建民	mèng jiàn mín	13
+孟建柱	mèng jiàn zhù	247
+孟姜女	mèng jiāng nǚ	860
+孟錦雲	mèng jǐn yún	57
+孟靜嫻	mèng jìng xián	490
+孟麗君	mèng lì jūn	38
+孟祿丁	mèng lù dīng	180
+孟洛川	mèng luò chuān	274
+孟明視	mèng míng shì	454
+孟穆伯	mèng mù bó	387
+孟佩傑	mèng pèi jié	248
+孟祈佑	mèng qí yòu	230
+孟喬芳	mèng qiáo fāng	310
+孟喬森	mèng qiáo sēn	418
+孟神通	mèng shén tōng	248
+孟蘇平	mèng sū píng	369
+孟孫氏	mèng sūn shì	6
+孟庭葦	mèng tíng wěi	66
+孟衛東	mèng wèi dōng	360
+孟席斯	mèng xí sī	28
+孟憲承	mèng xiàn chéng	333
+孟憲實	mèng xiàn shí	360
+孟獻子	mèng xiàn zǐ	356
+孟祥斌	mèng xiáng bīn	13
+孟祥青	mèng xiáng qīng	225
+孟祥偉	mèng xiáng wěi	486
+孟小冬	mèng xiǎo dōng	879
+孟曉駿	mèng xiǎo jùn	66
+孟曉蘇	mèng xiǎo sū	3
+孟星魂	mèng xīng hún	60
+孟玄朗	mèng xuán lǎng	3
+孟學農	mèng xué nóng	428
+孟懿子	mèng yì zǐ	364
+孟玉樓	mèng yù lóu	88
+孟羽童	mèng yǔ tóng	31
+孟元老	mèng yuán lǎo	428
+孟雲卿	mèng yún qīng	212
+孟昭文	mèng zhāo wén	328
+孟知祥	mèng zhī xiáng	31
+穆迪埃	mù dí āi	53
+穆爾西	mù ěr xī	57
+穆法沙	mù fǎ shā	266
+穆逢春	mù féng chūn	238
+穆桂英	mù guì yīng	254
+穆加貝	mù jiā bèi	38
+穆鳩平	mù jiū píng	220
+穆坎喬	mù kǎn qiáo	212
+穆克登	mù kè dēng	464
+穆克吉	mù kè jí	22
+穆克什	mù kè shí	16
+穆拉丁	mù lā dīng	584
+穆里爾	mù lǐ ěr	482
+穆里奇	mù lǐ qí	670
+穆尼爾	mù ní ěr	69
+穆念慈	mù niàn cí	188
+穆藕初	mù ǒu chū	324
+穆齊爾	mù qí ěr	410
+穆人清	mù rén qīng	41
+穆薩維	mù sà wéi	3
+穆塔基	mù tǎ jī	256
+穆塔茲	mù tǎ zī	333
+穆提婆	mù tí pó	396
+穆圖善	mù tú shàn	306
+穆希卡	mù xī kǎ	639
+穆夏拉	mù xià lā	57
+穆祥雄	mù xiáng xióng	288
+穆曉光	mù xiǎo guāng	25
+穆謝奎	mù xiè kuí	3
+穆玄英	mù xuán yīng	234
+穆雅斕	mù yǎ lán	405
+穆彰阿	mù zhāng ā	72
+聶辰席	niè chén xí	6
+聶崇義	niè chóng yì	212
+聶德權	niè dé quán	450
+聶鳳智	niè fèng zhì	3
+聶紺弩	niè gàn nǔ	53
+聶海勝	niè hǎi shèng	286
+聶赫留	niè hè liú	387
+聶鶴亭	niè hè tíng	3
+聶華苓	niè huá líng	490
+聶輝華	niè huī huá	50
+聶緝槼	niè jī guī	346
+聶魯達	niè lǔ dá	706
+聶梅生	niè méi shēng	432
+聶明玦	niè míng jué	266
+聶榮臻	niè róng zhēn	279
+聶慎兒	niè shèn ér	212
+聶勝瓊	niè shèng qióng	252
+聶士成	niè shì chéng	66
+聶騰飛	niè téng fēi	328
+聶騰雲	niè téng yún	346
+聶危谷	niè wēi gǔ	225
+聶衛平	niè wèi píng	901
+聶憲藩	niè xiàn fān	153
+聶小鳳	niè xiǎo fèng	270
+聶小倩	niè xiǎo qiàn	119
+聶鑫森	niè xīn sēn	288
+聶夷中	niè yí zhōng	270
+聶隱娘	niè yǐn niáng	220
+聶永真	niè yǒng zhēn	482
+聶宇晟	niè yǔ chéng	234
+聶元梓	niè yuán zǐ	247
+聶雲臺	niè yún tái	369
+聶震寧	niè zhèn níng	25
+裴昌會	péi chāng huì	22
+裴春亮	péi chūn liàng	230
+裴存藩	péi cún fān	220
+裴大章	péi dà zhāng	45
+裴多菲	péi duō fēi	41
+裴恩才	péi ēn cái	3
+裴光庭	péi guāng tíng	374
+裴懷古	péi huái gǔ	302
+裴懷亮	péi huái liàng	252
+裴交泰	péi jiāo tài	45
+裴金佳	péi jīn jiā	508
+裴景福	péi jǐng fú	328
+裴禮康	péi lǐ kāng	342
+裴虔餘	péi qián yú	117
+裴虔餘	péi qián yú	4
+裴擒虎	péi qín hǔ	308
+裴仁基	péi rén jī	428
+裴尚軒	péi shàng xuān	734
+裴石民	péi shí mín	400
+裴世清	péi shì qīng	297
+裴士淹	péi shì yān	153
+裴守真	péi shǒu zhēn	256
+裴樹唐	péi shù táng	212
+裴叔業	péi shū yè	482
+裴思謙	péi sī qiān	234
+裴松之	péi sōng zhī	653
+裴廷裕	péi tíng yù	130
+裴文中	péi wén zhōng	3
+裴行儉	péi xíng jiǎn	185
+裴行儼	péi xíng yǎn	310
+裴虛己	péi xū jǐ	234
+裴玄智	péi xuán zhì	45
+裴艷玲	péi yàn líng	53
+裴耀卿	péi yào qīng	387
+裴逸辰	péi yì chén	1179
+裴夷直	péi yí zhí	212
+裴蔭森	péi yīn sēn	284
+裴元慶	péi yuán qìng	28
+裴元紹	péi yuán shào	13
+裴伷先	péi zhòu xiān	256
+裴子野	péi zǐ yě	338
+朴槿惠	piáo jǐn huì	289
+朴正熙	piáo zhèng xī	540
+朴恩善	pǔ ēn shàn	454
+朴恆緒	pǔ héng xù	342
+朴惠蓮	pǔ huì lián	212
+朴南基	pǔ nán jī	288
+朴仁妃	pǔ rén fēi	356
+朴勝羲	pǔ shèng xī	194
+樸世莉	pǔ shì lì	387
+朴泰桓	pǔ tài huán	850
+朴泰夏	pǔ tài xià	554
+朴廷桓	pǔ tíng huán	765
+樸文垚	pǔ wén yáo	400
+朴殷植	pǔ yīn zhí	360
+朴泳孝	pǔ yǒng xiào	418
+朴永訓	pǔ yǒng xùn	454
+朴裕河	pǔ yù hé	171
+朴元淳	pǔ yuán chún	454
+朴淵次	pǔ yuān cì	248
+朴元宗	pǔ yuán zōng	297
+朴贊浩	pǔ zàn hào	374
+朴贊郁	pǔ zàn yù	711
+朴智星	pǔ zhì xīng	598
+朴趾源	pǔ zhǐ yuán	262
+朴周永	pǔ zhōu yǒng	320
+朴柱奉	pǔ zhù fèng	346
+朴柱昊	pǔ zhù hào	405
+朴主永	pǔ zhǔ yǒng	378
+齊哀王	qí āi wáng	0
+戚百草	qī bǎi cǎo	400
+齊白石	qí bái shí	1093
+齊邦媛	qí bāng yuàn	16
+戚本禹	qī běn yǔ	9
+齊柏林	qí bó lín	264
+戚長髮	qī cháng fà	490
+齊達內	qí dá nèi	4493
+齊悼公	qí dào gōng	6
+齊丁公	qí dīng gōng	328
+戚發軔	qī fā rèn	327
+戚夫人	qī fū rén	774
+齊高帝	qí gāo dì	608
+齊格飛	qí gé fēi	91
+齊菡萏	qí hàn dàn	45
+齊和帝	qí hé dì	418
+齊恆公	qí héng gōng	22
+齊後主	qí hòu zhǔ	558
+齊桓公	qí huán gōng	1473
+齊惠公	qí huì gōng	382
+戚繼光	qī jì guāng	2270
+戚建波	qī jiàn bō	324
+齊簡公	qí jiǎn gōng	35
+戚建國	qī jiàn guó	369
+齊傑拉	qí jié lā	122
+戚金興	qī jīn xīng	255
+齊景公	qí jǐng gōng	166
+齊康公	qí kāng gōng	28
+齊克果	qí kè guǒ	410
+齊良遲	qí liáng chí	266
+戚蓼生	qī liǎo shēng	324
+齊靈公	qí líng gōng	13
+齊美爾	qí měi ěr	598
+齊閔王	qí mǐn wáng	100
+齊湣王	qí mǐn wáng	90
+齊愍王	qí mǐn wáng	81
+齊默曼	qí mò màn	41
+戚其義	qī qí yì	391
+齊頃公	qí qǐng gōng	3
+齊如山	qí rú shān	28
+戚少商	qī shǎo shāng	217
+齊世榮	qí shì róng	369
+齊世英	qí shì yīng	35
+齊漱溟	qí shù míng	338
+齊思和	qí sī hé	99
+齊塔瑞	qí tǎ ruì	53
+齊太公	qí tài gōng	53
+齊鐵嘴	qí tiě zuǐ	698
+戚同文	qī tóng wén	288
+齊萬年	qí wàn nián	319
+齊王建	qí wáng jiàn	138
+齊王冏	qí wáng jiǒng	405
+齊王田	qí wáng tián	116
+齊威王	qí wēi wáng	418
+齊武帝	qí wǔ dì	41
+齊僖公	qí xī gōng	69
+齊向東	qí xiàng dōng	16
+齊襄公	qí xiāng gōng	353
+齊襄王	qí xiāng wáng	79
+齊孝公	qí xiào gōng	19
+戚逍遙	qī xiāo yáo	45
+齊燮元	qí xiè yuán	549
+齊宣王	qí xuān wáng	349
+齊玄宗	qí xuán zōng	69
+齊學啟	qí xué qǐ	288
+齊亞諾	qí yà nuò	25
+齊燕銘	qí yàn míng	410
+齊乙公	qí yǐ gōng	369
+齊懿公	qí yì gōng	175
+齊澤克	qí zé kè	424
+齊扎拉	qí zhā lā	324
+齊莊公	qí zhuāng gōng	31
+錢伯常	qián bó cháng	45
+錢伯海	qián bó hǎi	99
+錢伯鈞	qián bó jūn	45
+錢伯斯	qián bó sī	182
+錢昌照	qián chāng zhào	454
+錢澄海	qián chéng hǎi	284
+錢春湖	qián chūn hú	45
+錢大成	qián dà chéng	117
+錢達爾	qián dá ěr	396
+錢大鈞	qián dà jūn	9
+錢大昕	qián dà xīn	69
+錢大用	qián dà yòng	4
+錢德洪	qián dé hóng	6
+錢德拉	qián dé lā	141
+錢德勒	qián dé lè	1394
+錢東奇	qián dōng qí	292
+錢逢勝	qián féng shèng	176
+錢國賓	qián guó bīn	4
+錢國偉	qián guó wěi	446
+錢經綸	qián jīng lún	45
+錢均夫	qián jūn fū	346
+錢君陶	qián jūn táo	220
+錢立富	qián lì fù	266
+錢理群	qián lǐ qún	323
+錢良玉	qián liáng yù	45
+錢能訓	qián néng xùn	414
+錢其琛	qián qí chēn	41
+錢七虎	qián qī hǔ	129
+錢汝礪	qián rǔ lì	45
+錢三強	qián sān qiáng	337
+錢石庵	qián shí ān	45
+錢石臣	qián shí chén	45
+錢石義	qián shí yì	42
+錢石中	qián shí zhōng	45
+錢思亮	qián sī liàng	414
+錢松漢	qián sōng hàn	45
+錢松岩	qián sōng yán	279
+錢萚石	qián tuò shí	4
+錢偉長	qián wěi cháng	286
+錢維城	qián wéi chéng	3
+錢聞禮	qián wén lǐ	320
+錢文忠	qián wén zhōng	574
+錢秀昌	qián xiù chāng	4
+錢玄同	qián xuán tóng	455
+錢學森	qián xué sēn	6114
+錢彥深	qián yàn shēn	45
+錢亦石	qián yì shí	67
+錢穎一	qián yǐng yī	842
+錢愈庵	qián yù ān	45
+錢原濬	qián yuán jùn	45
+錢運錄	qián yùn lù	369
+錢雲巖	qián yún yán	45
+錢正英	qián zhèng yīng	3
+錢仲聯	qián zhòng lián	396
+錢鍾書	qián zhōng shū	868
+錢中文	qián zhōng wén	225
+錢仲陽	qián zhòng yáng	50
+錢眾仲	qián zhòng zhòng	45
+錢壯飛	qián zhuàng fēi	85
+錢宗道	qián zōng dào	45
+喬阿倫	qiáo ā lún	472
+喬巴山	qiáo bā shān	28
+喬拜登	qiáo bài dēng	968
+喬幫主	qiáo bāng zhǔ	738
+喬北溟	qiáo běi míng	25
+喬碧蘿	qiáo bì luó	236
+喬布斯	qiáo bù sī	8870
+喬春燕	qiáo chūn yàn	41
+喬達摩	qiáo dá mó	598
+喬答摩	qiáo dá mó	281
+喬道清	qiáo dào qīng	44
+喬佛里	qiáo fó lǐ	308
+喬弗里	qiáo fú lǐ	536
+喬冠華	qiáo guàn huá	35
+喬國老	qiáo guó lǎo	3
+喬哈特	qiáo hā tè	621
+喬建軍	qiáo jiàn jūn	657
+喬靖夫	qiáo jìng fū	400
+喬晶晶	qiáo jīng jīng	53
+喬蓮房	qiáo lián fáng	243
+喬靈兒	qiáo líng ér	6
+喬魯諾	qiáo lǔ nuò	31
+喬普拉	qiáo pǔ lā	35
+喬普林	qiáo pǔ lín	513
+喬琪喬	qiáo qí qiáo	113
+喬任梁	qiáo rèn liáng	91
+喬三槐	qiáo sān huái	346
+喬森潘	qiáo sēn pān	450
+喬十光	qiáo shí guāng	328
+喬斯達	qiáo sī dá	88
+喬司南	qiáo sī nán	3
+喬松年	qiáo sōng nián	288
+喬夕顏	qiáo xī yán	45
+喬曉光	qiáo xiǎo guāng	292
+喬小喬	qiáo xiǎo qiáo	536
+喬曉陽	qiáo xiǎo yáng	423
+喬新生	qiáo xīn shēng	342
+喬行簡	qiáo xíng jiǎn	225
+喬一帆	qiáo yī fān	346
+喬姨娘	qiáo yí niáng	364
+喬伊斯	qiáo yī sī	663
+喬應甲	qiáo yīng jiǎ	230
+喬友林	qiáo yǒu lín	9
+喬治王	qiáo zhì wáng	756
+喬致庸	qiáo zhì yōng	19
+喬知之	qiáo zhī zhī	279
+秦哀公	qín āi gōng	16
+秦伯未	qín bó wèi	16
+秦成公	qín chéng gōng	9
+秦出公	qín chū gōng	15
+秦出子	qín chū zǐ	116
+秦大河	qín dà hé	22
+秦悼公	qín dào gōng	194
+秦德純	qín dé chún	19
+秦德公	qín dé gōng	22
+秦二世	qín èr shì	741
+秦非子	qín fēi zǐ	135
+秦公伯	qín gōng bó	12
+秦共公	qín gòng gōng	0
+秦廣王	qín guǎng wáng	47
+秦紅棉	qín hóng mián	31
+秦懷公	qín huái gōng	315
+秦桓公	qín huán gōng	364
+秦皇帝	qín huáng dì	508
+秦惠公	qín huì gōng	312
+秦惠王	qín huì wáng	66
+秦基偉	qín jī wěi	35
+秦簡公	qín jiǎn gōng	369
+秦景公	qín jǐng gōng	22
+秦九韶	qín jiǔ sháo	63
+秦康公	qín kāng gōng	423
+秦康王	qín kāng wáng	194
+秦可卿	qín kě qīng	279
+秦良玉	qín liáng yù	113
+秦靈公	qín líng gōng	97
+秦鳴鶴	qín míng hè	225
+秦穆公	qín mù gōng	468
+秦南琴	qín nán qín	9
+秦仁昌	qín rén chāng	306
+秦日綱	qín rì gāng	3
+秦三世	qín sān shì	0
+秦始皇	qín shǐ huáng	13810
+秦叔寶	qín shū bǎo	163
+秦韜玉	qín tāo yù	19
+秦王妃	qín wáng fēi	414
+秦王孫	qín wáng sūn	238
+秦王政	qín wáng zhèng	738
+秦文公	qín wén gōng	44
+秦武公	qín wǔ gōng	35
+秦武王	qín wǔ wáng	148
+秦獻公	qín xiàn gōng	342
+秦憲公	qín xiàn gōng	308
+秦襄公	qín xiāng gōng	151
+秦香蓮	qín xiāng lián	63
+秦孝公	qín xiào gōng	829
+秦宣公	qín xuān gōng	30
+秦夷公	qín yí gōng	12
+秦宜祿	qín yí lù	198
+秦玉海	qín yù hǎi	765
+秦羽墨	qín yǔ mò	22
+秦玥飛	qín yuè fēi	264
+秦越人	qín yuè rén	288
+秦躁公	qín zào gōng	0
+秦昭王	qín zhāo wáng	716
+秦仲文	qín zhòng wén	3
+秦莊公	qín zhuāng gōng	16
+秦莊王	qín zhuāng wáng	189
+裘德考	qiú dé kǎo	78
+裘東耀	qiú dōng yào	270
+裘法祖	qiú fǎ zǔ	38
+裘桂仙	qiú guì xiān	220
+裘國根	qiú guó gēn	558
+裘錦秋	qiú jǐn qiū	405
+裘麗琳	qiú lì lín	252
+裘千尺	qiú qiān chǐ	66
+裘千仞	qiú qiān rèn	405
+裘千丈	qiú qiān zhàng	66
+裘盛戎	qiú shèng róng	50
+裘維蕃	qiú wéi fān	202
+裘錫圭	qiú xī guī	295
+裘曰修	qiú yuē xiū	252
+全紅嬋	quán hóng chán	1517
+冉阿讓	rǎn ā ràng	135
+冉伯牛	rǎn bó niú	315
+冉承其	rǎn chéng qí	320
+冉高鳴	rǎn gāo míng	414
+任光祿	rén guāng lù	567
+阮步兵	ruǎn bù bīng	310
+阮成發	ruǎn chéng fā	9
+阮春福	ruǎn chūn fú	544
+阮次山	ruǎn cì shān	9
+阮大鋮	ruǎn dà chéng	9
+阮小二	ruǎn xiǎo èr	50
+阮小七	ruǎn xiǎo qī	60
+阮小五	ruǎn xiǎo wǔ	28
+阮宗澤	ruǎn zōng zé	526
+邵大箴	shào dà zhēn	450
+邵華澤	shào huá zé	315
+邵晉涵	shào jìn hán	9
+邵康節	shào kāng jié	141
+邵力子	shào lì zǐ	69
+邵飄萍	shào piāo píng	25
+邵琪偉	shào qí wěi	495
+邵荃麟	shào quán lín	387
+邵式平	shào shì píng	387
+邵煒剛	shào wěi gāng	13
+邵象華	shào xiàng huá	189
+邵洵美	shào xún měi	9
+邵燕祥	shào yàn xiáng	459
+邵亦波	shào yì bō	38
+邵逸夫	shào yì fū	317
+邵友濂	shào yǒu lián	450
+邵元沖	shào yuán chōng	9
+邵雲環	shào yún huán	13
+沈葆楨	shěn bǎo zhēn	154
+沈璧君	shěn bì jūn	16
+沈昌祥	shěn chāng xiáng	464
+沈傳師	shěn chuán shī	285
+沈春華	shěn chūn huā	6
+沈從文	shěn cóng wén	1460
+沈大成	shěn dà chéng	113
+沈丹陽	shěn dān yáng	806
+沈德符	shěn dé fú	25
+沈端節	shěn duān jié	99
+沈光文	shěn guāng wén	428
+沈國軍	shěn guó jūn	594
+沈皇后	shěn huáng hòu	540
+沈家本	shěn jiā běn	28
+沈嘉偉	shěn jiā wěi	41
+沈佳宜	shěn jiā yí	333
+沈建光	shěn jiàn guāng	3
+沈兼士	shěn jiān shì	405
+沈敬東	shěn jìng dōng	396
+沈鈞儒	shěn jūn rú	22
+沈培平	shěn péi píng	486
+沈慶之	shěn qìng zhī	441
+沈佺期	shěn quán qī	47
+沈全期	shěn quán qī	42
+沈銓期	shěn quán qī	38
+沈少民	shěn shǎo mín	238
+沈勝衣	shěn shèng yī	338
+沈世鈞	shěn shì jūn	224
+沈石溪	shěn shí xī	66
+沈鐵梅	shěn tiě méi	396
+沈萬三	shěn wàn sān	122
+沈祥福	shěn xiáng fú	41
+沈曉明	shěn xiǎo míng	648
+沈旭暉	shěn xù huī	464
+沈雁冰	shěn yàn bīng	44
+沈堯伊	shěn yáo yī	396
+沈一貫	shěn yí guàn	13
+沈銀河	shěn yín hé	3
+沈尹默	shěn yǐn mò	91
+沈永革	shěn yǒng gé	256
+沈攸之	shěn yōu zhī	549
+沈澤民	shěn zé mín	6
+沈振盈	shěn zhèn yíng	261
+沈志華	shěn zhì huá	170
+沈祖炎	shěn zǔ yán	212
+施愛東	shī ài dōng	248
+施崇棠	shī chóng táng	428
+施從濱	shī cóng bīn	25
+施存統	shī cún tǒng	396
+施蒂納	shī dì nà	572
+施定柔	shī dìng róu	279
+施復亮	shī fù liàng	333
+施光南	shī guāng nán	3
+施光耀	shī guāng yào	297
+施國祁	shī guó qí	194
+施懷雅	shī huái yǎ	333
+施劍翹	shī jiàn qiào	185
+施肩吾	shī jiān wú	374
+施建祥	shī jiàn xiáng	281
+施堅雅	shī jiān yǎ	382
+施今墨	shī jīn mò	22
+施進卿	shī jìn qīng	356
+施可汗	shī kè hán	418
+施羅德	shī luó dé	1017
+施密特	shī mì tè	628
+施米特	shī mǐ tè	565
+施明德	shī míng dé	271
+施耐庵	shī nài ān	414
+施南生	shī nán shēng	441
+施啟揚	shī qǐ yáng	338
+施人誠	shī rén chéng	446
+施榮懷	shī róng huái	369
+施閏章	shī rùn zhāng	320
+施世榜	shī shì bǎng	296
+施世驃	shī shì biāo	251
+施士潔	shī shì jié	293
+施世綸	shī shì lún	482
+施叔青	shī shū qīng	281
+施偉賢	shī wěi xián	277
+施一公	shī yì gōng	430
+施夷光	shī yí guāng	3
+施永青	shī yǒng qīng	3
+施愚山	shī yú shān	230
+施肇基	shī zhào jī	454
+施蟄存	shī zhé cún	126
+施振榮	shī zhèn róng	13
+施正鋒	shī zhèng fēng	436
+施正榮	shī zhèng róng	486
+施正文	shī zhèng wén	504
+施之皓	shī zhī hào	25
+施子清	shī zǐ qīng	251
+宋藹齡	sòng ǎi líng	536
+宋靄齡	sòng ǎi líng	369
+宋秉畯	sòng bǐng jùn	338
+宋伯魯	sòng bó lǔ	302
+宋楚瑜	sòng chǔ yú	28
+宋德福	sòng dé fú	392
+宋度宗	sòng dù zōng	50
+宋端宗	sòng duān zōng	16
+宋高宗	sòng gāo zōng	499
+宋鴻兵	sòng hóng bīng	480
+宋皇后	sòng huáng hòu	454
+宋徽宗	sòng huī zōng	1372
+宋嘉澍	sòng jiā shù	382
+宋教仁	sòng jiào rén	286
+宋金剛	sòng jīn gāng	132
+宋康昊	sòng kāng hào	267
+宋理宗	sòng lǐ zōng	160
+宋美齡	sòng měi líng	414
+宋民國	sòng mín guó	572
+宋明帝	sòng míng dì	19
+宋寧宗	sòng níng zōng	85
+宋齊丘	sòng qí qiū	477
+宋秦觀	sòng qín guān	410
+宋欽宗	sòng qīn zōng	220
+宋慶禮	sòng qìng lǐ	238
+宋慶齡	sòng qìng líng	261
+宋青書	sòng qīng shū	490
+宋任窮	sòng rèn qióng	22
+宋仁宗	sòng rén zōng	524
+宋若昭	sòng ruò zhāo	297
+宋尚節	sòng shàng jié	360
+宋申錫	sòng shēn xī	472
+宋神宗	sòng shén zōng	1115
+宋師道	sòng shī dào	657
+宋士傑	sòng shì jié	500
+宋時輪	sòng shí lún	248
+宋思衡	sòng sī héng	19
+宋思明	sòng sī míng	13
+宋太宗	sòng tài zōng	584
+宋太祖	sòng tài zǔ	474
+宋衛平	sòng wèi píng	60
+宋文帝	sòng wén dì	110
+宋武帝	sòng wǔ dì	44
+宋務光	sòng wù guāng	180
+宋希濂	sòng xī lián	41
+宋獻策	sòng xiàn cè	927
+宋襄公	sòng xiāng gōng	951
+宋孝宗	sòng xiào zōng	170
+宋秀岩	sòng xiù yán	423
+宋應星	sòng yīng xīng	154
+宋英宗	sòng yīng zōng	129
+宋雨桂	sòng yǔ guì	207
+宋玉致	sòng yù zhì	6
+宋遠橋	sòng yuǎn qiáo	864
+宋哲元	sòng zhé yuán	75
+宋哲宗	sòng zhé zōng	333
+宋真宗	sòng zhēn zōng	424
+宋之問	sòng zhī wèn	192
+宋莊公	sòng zhuāng gōng	13
+宋子安	sòng zǐ ān	594
+宋子侯	sòng zǐ hóu	129
+宋子文	sòng zǐ wén	295
+宋祖德	sòng zǔ dé	9
+孫承宗	sūn chéng zōng	148
+孫傳芳	sūn chuán fāng	367
+孫傳庭	sūn chuán tíng	386
+孫春蘭	sūn chūn lán	6
+孫殿英	sūn diàn yīng	198
+孫二娘	sūn èr niáng	148
+孫培青	sūn péi qīng	392
+孫其峰	sūn qí fēng	3
+孫瑞雪	sūn ruì xuě	585
+孫思邈	sūn sī miǎo	399
+孫太后	sūn tài hòu	13
+孫武子	sūn wǔ zǐ	97
+孫興民	sūn xīng mín	810
+孫興慜	sūn xīng mǐn	509
+孫亞芳	sūn yà fāng	16
+孫逸仙	sūn yì xiān	25
+孫宇晨	sūn yǔ chén	1793
+孫元良	sūn yuán liáng	176
+孫越崎	sūn yuè qí	585
+孫雲曉	sūn yún xiǎo	22
+孫運璿	sūn yùn xuán	598
+孫政才	sūn zhèng cái	3
+孫正義	sūn zhèng yì	534
+孫中山	sūn zhōng shān	3008
+孫仲旭	sūn zhòng xù	495
+王安石	wáng ān shí	9232
+王保保	wáng bǎo bǎo	948
+王寶釧	wáng bǎo chuàn	295
+王昌齡	wáng chāng líng	722
+王潮歌	wáng cháo gē	684
+王朝陽	wáng cháo yáng	1337
+王寵惠	wáng chǒng huì	97
+王重陽	wáng chóng yáng	1030
+王春英	wáng chūn yīng	16
+王登峰	wáng dēng fēng	688
+王定國	wáng dìng guó	119
+王丁棉	wáng dīng mián	576
+王東明	wáng dōng míng	35
+王爾德	wáng ěr dé	1692
+王鳳儀	wáng fèng yí	598
+王夫之	wáng fū zhī	506
+王夫子	wáng fū zǐ	32
+王功權	wáng gōng quán	41
+王冠雄	wáng guān xióng	540
+王光美	wáng guāng měi	13
+王貴妃	wáng guì fēi	585
+王國生	wáng guó shēng	630
+王國維	wáng guó wéi	1086
+王洪文	wáng hóng wén	22
+王后雄	wáng hòu xióng	666
+王滬寧	wáng hù níng	6
+王皇后	wáng huáng hòu	1344
+王輝耀	wáng huī yào	3
+王稼祥	wáng jià xiáng	35
+王健林	wáng jiàn lín	1416
+王建民	wáng jiàn mín	57
+王建平	wáng jiàn píng	198
+王金平	wáng jīn píng	31
+王近山	wáng jìn shān	154
+王進喜	wáng jìn xǐ	60
+王凱歆	wáng kǎi xīn	185
+王崑崙	wáng kūn lún	594
+王瀾堂	wáng lán táng	200
+王利芬	wáng lì fēn	38
+王立軍	wáng lì jūn	31
+王儷橋	wáng lì qiáo	58
+王立群	wáng lì qún	201
+王洛賓	wáng luò bīn	50
+王麻子	wáng má zi	185
+王夢恕	wáng mèng shù	16
+王尼瑪	wáng ní mǎ	352
+王岐山	wáng qí shān	22
+王全安	wáng quán ān	166
+王儒林	wáng rú lín	598
+王三運	wáng sān yùn	3
+王僧辯	wáng sēng biàn	82
+王僧孺	wáng sēng rú	284
+王審知	wáng shěn zhī	60
+王世充	wáng shì chōng	556
+王實甫	wáng shí fǔ	590
+王世傑	wáng shì jié	608
+王世襄	wáng shì xiāng	292
+王世貞	wáng shì zhēn	207
+王守仁	wáng shǒu rén	889
+王守業	wáng shǒu yè	486
+王守義	wáng shǒu yì	44
+王書金	wáng shū jīn	16
+王樹聲	wáng shù shēng	9
+王樹增	wáng shù zēng	41
+王思聰	wáng sī cōng	2996
+王司馬	wáng sī mǎ	950
+王司徒	wáng sī tú	349
+王太妃	wáng tài fēi	540
+王太后	wáng tài hòu	239
+王偉忠	wáng wěi zhōng	41
+王文彪	wáng wén biāo	608
+王文濤	wáng wén tāo	13
+王熙鳳	wáng xī fèng	590
+王羲之	wáng xī zhī	1718
+王獻之	wáng xiàn zhī	490
+王小波	wáng xiǎo bō	4798
+王小川	wáng xiǎo chuān	688
+王曉東	wáng xiǎo dōng	19
+王孝傑	wáng xiào jié	235
+王旭東	wáng xù dōng	31
+王旭光	wáng xù guāng	792
+王雪紅	wáng xuě hóng	63
+王亞偉	wáng yà wěi	257
+王陽明	wáng yáng míng	2594
+王耀武	wáng yào wǔ	82
+王永春	wáng yǒng chūn	580
+王永慶	wáng yǒng qìng	188
+王右軍	wáng yòu jūn	38
+王澤鑑	wáng zé jiàn	860
+王貞白	wáng zhēn bái	69
+王鎮惡	wáng zhèn è	549
+王正廷	wáng zhèng tíng	13
+王志安	wáng zhì ān	308
+王之臣	wáng zhī chén	414
+王之道	wáng zhī dào	72
+王之渙	wáng zhī huàn	201
+王中軍	wáng zhōng jūn	129
+王自如	wáng zì rú	1084
+王總兵	wáng zǒng bīng	266
+王佐良	wáng zuǒ liáng	60
+魏邦平	wèi bāng píng	405
+魏伯勤	wèi bó qín	598
+魏伯陽	wèi bó yáng	16
+衛長君	wèi cháng jūn	292
+魏承班	wèi chéng bān	194
+衛成公	wèi chéng gōng	215
+衛出公	wèi chū gōng	13
+魏道明	wèi dào míng	6
+魏德林	wèi dé lín	432
+魏德邁	wèi dé mài	13
+魏德聖	wèi dé shèng	75
+魏丁格	wèi dīng gé	238
+魏定國	wèi dìng guó	53
+魏爾德	wèi ěr dé	432
+魏爾倫	wèi ěr lún	452
+魏斐德	wèi fěi dé	44
+魏奉古	wèi fèng gǔ	130
+衛夫人	wèi fū rén	62
+魏格爾	wèi gé ěr	53
+魏廣君	wèi guǎng jūn	153
+衛國公	wèi guó gōng	74
+魏海敏	wèi hǎi mǐn	410
+衛懷公	wèi huái gōng	99
+衛懷君	wèi huái jūn	171
+衛桓公	wèi huán gōng	364
+魏桓子	wèi huán zǐ	129
+衛皇后	wèi huáng hòu	90
+魏皇后	wèi huáng hòu	81
+魏惠娥	wèi huì é	576
+衛惠公	wèi huì gōng	428
+魏徽徽	wèi huī huī	414
+魏惠王	wèi huì wáng	446
+魏佳慶	wèi jiā qìng	9
+魏建功	wèi jiàn gōng	432
+魏建國	wèi jiàn guó	410
+魏建軍	wèi jiàn jūn	657
+衛將軍	wèi jiāng jūn	741
+衛靖伯	wèi jìng bó	99
+衛敬公	wèi jìng gōng	130
+魏駿傑	wèi jùn jié	22
+魏坤琳	wèi kūn lín	144
+衛拉特	wèi lā tè	276
+魏了翁	wèi le wēng	405
+衛立煌	wèi lì huáng	82
+魏良輔	wèi liáng fǔ	346
+魏良磊	wèi liáng lěi	324
+衛靈公	wèi líng gōng	327
+衛留成	wèi liú chéng	279
+魏美人	wèi měi rén	28
+魏明帝	wèi míng dì	380
+魏明谷	wèi míng gǔ	423
+魏明倫	wèi míng lún	132
+魏銘言	wèi míng yán	153
+衛穆公	wèi mù gōng	202
+魏鵬遠	wèi péng yuǎn	846
+衛平侯	wèi píng hóu	180
+魏如萱	wèi rú xuān	498
+魏如昀	wèi rú yún	28
+魏掞之	wèi shàn zhī	4
+衛少兒	wèi shào ér	351
+魏聖美	wèi shèng měi	9
+魏順之	wèi shùn zhī	76
+衛斯理	wèi sī lǐ	261
+衛斯里	wèi sī lǐ	191
+魏太武	wèi tài wǔ	729
+衛太子	wèi tài zǐ	312
+魏太祖	wèi tài zǔ	356
+魏庭玉	wèi tíng yù	45
+魏王豹	wèi wáng bào	126
+魏文帝	wèi wén dì	319
+魏文侯	wèi wén hóu	882
+魏翁河	wèi wēng hé	50
+魏武帝	wèi wǔ dì	132
+衛武公	wèi wǔ gōng	38
+魏武侯	wèi wǔ hòu	323
+魏武王	wèi wǔ wáng	414
+魏無羨	wèi wú xiàn	179
+魏襄王	wèi xiāng wáng	91
+魏小安	wèi xiǎo ān	396
+魏小樓	wèi xiǎo lóu	45
+衛興華	wèi xīng huá	144
+魏雪漫	wèi xuě màn	25
+魏延之	wèi yán zhī	28
+魏野疇	wèi yě chóu	364
+魏翊東	wèi yì dōng	315
+衛懿公	wèi yì gōng	41
+衛奕信	wèi yì xìn	38
+魏元忠	wèi yuán zhōng	104
+魏知古	wèi zhī gǔ	320
+魏忠賢	wèi zhōng xián	1206
+衛莊公	wèi zhuāng gōng	25
+衛子夫	wèi zǐ fū	1482
+魏子敬	wèi zǐ jìng	45
+溫寶裕	wēn bǎo yù	508
+溫碧泉	wēn bì quán	16
+溫蒂妮	wēn dì nī	9
+溫迪妮	wēn dí nī	4
+溫飛卿	wēn fēi qīng	382
+溫弗瑞	wēn fú ruì	504
+溫覆之	wēn fù zhī	45
+溫儒敏	wēn rú mǐn	60
+溫如言	wēn rú yán	616
+溫瑞安	wēn ruì ān	292
+溫塞特	wēn sāi tè	266
+溫生才	wēn shēng cái	320
+溫世霖	wēn shì lín	238
+溫世仁	wēn shì rén	450
+溫斯頓	wēn sī dùn	615
+溫斯坦	wēn sī tǎn	63
+溫太醫	wēn tài yī	630
+溫體仁	wēn tǐ rén	16
+溫庭筠	wēn tíng yún	659
+溫彥博	wēn yàn bó	184
+溫玉成	wēn yù chéng	400
+溫雲松	wēn yún sōng	302
+溫子仁	wēn zǐ rén	471
+溫子昇	wēn zǐ shēng	42
+溫總理	wēn zǒng lǐ	69
+溫宗仁	wēn zōng rén	220
+溫宗堯	wēn zōng yáo	392
+溫祚王	wēn zuò wáng	364
+吳阿順	wú ā shùn	562
+吳邦國	wú bāng guó	9
+吳伯雄	wú bó xióng	621
+吳昌碩	wú chāng shuò	389
+吳承恩	wú chéng ēn	455
+吳存榮	wú cún róng	562
+吳大帝	wú dà dì	562
+吳大猷	wú dà yóu	72
+吳淡如	wú dàn rú	19
+吳道子	wú dào zǐ	223
+吳敦義	wú dūn yì	9
+吳恩達	wú ēn dá	1064
+吳法憲	wú fǎ xiàn	532
+吳冠中	wú guàn zhōng	422
+吳國平	wú guó píng	670
+吳國楨	wú guó zhēn	6
+吳湖帆	wú hú fān	47
+吳皇后	wú huáng hòu	391
+吳建民	wú jiàn mín	41
+吳鑑泉	wú jiàn quán	378
+吳健雄	wú jiàn xióng	166
+吳階平	wú jiē píng	25
+吳敬璉	wú jìng liǎn	97
+吳靜鈺	wú jìng yù	16
+吳敬梓	wú jìng zǐ	490
+吳覺農	wú jué nóng	400
+吳孟超	wú mèng chāo	25
+吳敏霞	wú mǐn xiá	703
+吳奈溫	wú nài wēn	315
+吳念真	wú niàn zhēn	716
+吳佩孚	wú pèi fú	565
+吳清源	wú qīng yuán	810
+吳三桂	wú sān guì	794
+吳三連	wú sān lián	648
+吳勝利	wú shèng lì	372
+吳淑珍	wú shū zhēn	594
+吳天明	wú tiān míng	484
+吳鐵城	wú tiě chéng	22
+吳廷琰	wú tíng yǎn	138
+吳欣鴻	wú xīn hóng	19
+吳亞軍	wú yà jūn	580
+吳玉章	wú yù zhāng	75
+吳朝暉	wú zhāo huī	16
+吳釗燮	wú zhāo xiè	3
+吳政隆	wú zhèng lóng	3
+吳稚暉	wú zhì huī	380
+吳濁流	wú zhuó liú	41
+吳作棟	wú zuò dòng	598
+奚國華	xī guó huá	540
+奚康生	xī kāng shēng	702
+奚嘯伯	xī xiào bó	41
+奚志康	xī zhì kāng	320
+奚志農	xī zhì nóng	405
+奚仲文	xī zhòng wén	405
+夏寶龍	xià bǎo lóng	598
+夏伯陽	xià bó yáng	477
+夏伯渝	xià bó yú	232
+夏承燾	xià chéng dào	44
+夏德仁	xià dé rén	320
+夏東海	xià dōng hǎi	508
+夏冬青	xià dōng qīng	410
+夏鬥寅	xià dòu yín	13
+夏爾丹	xià ěr dān	19
+夏丐尊	xià gài zūn	396
+夏孤臨	xià gū lín	117
+夏海鈞	xià hǎi jūn	13
+夏紅民	xià hóng mín	378
+夏侯霸	xià hóu bà	289
+夏侯稱	xià hóu chēng	212
+夏侯亶	xià hóu dǎn	279
+夏侯德	xià hóu dé	288
+夏侯惇	xià hóu dūn	1752
+夏侯恩	xià hóu ēn	47
+夏侯衡	xià hóu héng	248
+夏侯徽	xià hóu huī	310
+夏侯建	xià hóu jiàn	225
+夏侯蘭	xià hóu lán	41
+夏侯楙	xià hóu mào	424
+夏后啟	xià hòu qǐ	315
+夏侯尚	xià hóu shàng	499
+夏侯審	xià hóu shěn	225
+夏侯詳	xià hóu xiáng	320
+夏侯玄	xià hóu xuán	355
+夏侯儀	xià hóu yí	378
+夏侯嬰	xià hóu yīng	534
+夏侯淵	xià hóu yuān	1306
+夏侯湛	xià hóu zhàn	364
+夏侯孜	xià hóu zī	423
+夏黃公	xià huáng gōng	9
+夏惠宗	xià huì zōng	396
+夏加爾	xià jiā ěr	75
+夏佳理	xià jiā lǐ	387
+夏金桂	xià jīn guì	63
+夏敬觀	xià jìng guān	288
+夏菊花	xià jú huā	20
+夏克立	xià kè lì	22
+夏克梁	xià kè liáng	342
+夏蓮居	xià lián jū	225
+夏林清	xià lín qīng	567
+夏洛蒂	xià luò dì	138
+夏洛克	xià luò kè	2509
+夏丏尊	xià miǎn zūn	500
+夏明翰	xià míng hàn	31
+夏茗悠	xià míng yōu	9
+夏末帝	xià mò dì	256
+夏奈爾	xià nài ěr	47
+夏奇拉	xià qí lā	166
+夏七夕	xià qī xī	346
+夏青青	xià qīng qīng	382
+夏壽康	xià shòu kāng	288
+夏壽田	xià shòu tián	266
+夏孫桐	xià sūn tóng	266
+夏太后	xià tài hòu	319
+夏太祖	xià tài zǔ	302
+夏完淳	xià wán chún	82
+夏未央	xià wèi yāng	374
+夏無且	xià wú qiě	369
+夏無蹤	xià wú zōng	76
+夏筱筱	xià xiǎo xiǎo	468
+夏學鑾	xià xué luán	392
+夏雪宜	xià xuě yí	57
+夏業良	xià yè liáng	410
+夏迎春	xià yíng chūn	454
+夏盈盈	xià yíng yíng	500
+夏瀛洲	xià yíng zhōu	306
+夏友善	xià yǒu shàn	212
+夏雨荷	xià yǔ hé	41
+夏玉順	xià yù shùn	378
+夏元鼎	xià yuán dǐng	220
+夏原吉	xià yuán jí	13
+夏允彝	xià yǔn yí	392
+夏贊忠	xià zàn zhōng	225
+夏志清	xià zhì qīng	85
+夏紫薇	xià zǐ wēi	356
+肖伯納	xiāo bó nà	261
+肖楚女	xiāo chǔ nǚ	428
+肖傳國	xiāo chuán guó	113
+肖爾茨	xiāo ěr cí	360
+肖復興	xiāo fù xīng	361
+肖古王	xiāo gǔ wáng	477
+肖國棟	xiāo guó dòng	407
+肖海亮	xiāo hǎi liàng	346
+肖鶴雲	xiāo hè yún	204
+肖建華	xiāo jiàn huá	522
+肖金成	xiāo jīn chéng	374
+肖勁光	xiāo jìn guāng	9
+肖勁松	xiāo jìn sōng	194
+肖開提	xiāo kāi tí	392
+肖克利	xiāo kè lì	540
+肖全夫	xiāo quán fū	279
+肖申克	xiāo shēn kè	201
+肖特基	xiāo tè jī	19
+肖蔚雲	xiāo wèi yún	333
+肖曉琳	xiāo xiǎo lín	220
+肖秀榮	xiāo xiù róng	11012
+肖亞非	xiāo yà fēi	328
+肖亞慶	xiāo yà qìng	6
+肖玉璧	xiāo yù bì	387
+肖雲儒	xiāo yún rú	288
+謝阿蠻	xiè ā mán	225
+謝安石	xiè ān shí	288
+謝柏德	xiè bǎi dé	414
+謝百三	xiè bǎi sān	217
+謝葆璋	xiè bǎo zhāng	288
+謝必安	xiè bì ān	57
+謝冰岩	xiè bīng yán	76
+謝冰瑩	xiè bīng yíng	472
+謝才萍	xiè cái píng	410
+謝滄行	xiè cāng xíng	110
+謝長亨	xiè cháng hēng	369
+謝長廷	xiè cháng tíng	16
+謝朝陽	xiè cháo yáng	418
+謝辰生	xiè chén shēng	338
+謝春濤	xiè chūn tāo	468
+謝茨基	xiè cí jī	320
+謝道清	xiè dào qīng	360
+謝德林	xiè dé lín	405
+謝德謙	xiè dé qiān	369
+謝德慶	xiè dé qìng	428
+謝滌葵	xiè dí kuí	19
+謝東閔	xiè dōng mǐn	616
+謝東娜	xiè dōng nà	225
+謝爾比	xiè ěr bǐ	837
+謝爾登	xiè ěr dēng	544
+謝爾頓	xiè ěr dùn	509
+謝耳朵	xiè ěr duo	669
+謝爾蓋	xiè ěr gài	622
+謝爾豪	xiè ěr háo	19
+謝爾曼	xiè ěr màn	295
+謝枋得	xiè fāng dé	190
+謝弗勒	xiè fú lè	382
+謝扶民	xiè fú mín	279
+謝伏瞻	xiè fú zhān	6
+謝富治	xiè fù zhì	16
+謝根榮	xiè gēn róng	66
+謝琯樵	xiè guǎn qiáo	230
+謝冠生	xiè guān shēng	351
+謝貫一	xiè guàn yī	230
+謝廣坤	xiè guǎng kūn	75
+謝貴妃	xiè guì fēi	423
+謝國城	xiè guó chéng	333
+謝國樑	xiè guó liáng	536
+謝國民	xiè guó mín	464
+謝國明	xiè guó míng	256
+謝國強	xiè guó qiáng	225
+謝國楨	xiè guó zhēn	38
+謝國忠	xiè guó zhōng	35
+謝和賡	xiè hé gēng	238
+謝和平	xiè hé píng	13
+謝華安	xiè huá ān	144
+謝懷栻	xiè huái shì	306
+謝皇后	xiè huáng hòu	662
+謝惠連	xiè huì lián	320
+謝濟世	xiè jì shì	351
+謝家麟	xiè jiā lín	194
+謝家齊	xiè jiā qí	333
+謝家榮	xiè jiā róng	428
+謝佳賢	xiè jiā xián	441
+謝建國	xiè jiàn guó	252
+謝建華	xiè jiàn huá	248
+謝建軍	xiè jiàn jūn	212
+謝建平	xiè jiàn píng	320
+謝建新	xiè jiàn xīn	194
+謝金河	xiè jīn hé	297
+謝金吾	xiè jīn wú	220
+謝晉元	xiè jìn yuán	179
+謝景仁	xiè jǐng rén	234
+謝景溫	xiè jǐng wēn	364
+謝靜宜	xiè jìng yí	423
+謝覺哉	xiè jué zāi	3
+謝康樂	xiè kāng lè	279
+謝克爾	xiè kè ěr	44
+謝克家	xiè kè jiā	202
+謝坤山	xiè kūn shān	423
+謝里丹	xiè lǐ dān	44
+謝里登	xiè lǐ dēng	19
+謝里爾	xiè lǐ ěr	634
+謝麗爾	xiè lì ěr	308
+謝莉爾	xiè lì ěr	177
+謝里夫	xiè lǐ fū	69
+謝黎明	xiè lí míng	230
+謝莉斯	xiè lì sī	356
+謝立新	xiè lì xīn	396
+謝良輔	xiè liáng fǔ	99
+謝良佐	xiè liáng zuǒ	225
+謝廖沙	xiè liào shā	459
+謝靈運	xiè líng yùn	320
+謝龍介	xiè lóng jiè	6
+謝羅夫	xiè luó fū	400
+謝孟媛	xiè mèng yuàn	423
+謝念祖	xiè niàn zǔ	234
+謝帕德	xiè pà dé	558
+謝潑德	xiè pō dé	380
+謝啟昆	xiè qǐ kūn	266
+謝清高	xiè qīng gāo	225
+謝清海	xiè qīng hǎi	243
+謝秋娘	xiè qiū niáng	266
+謝若林	xiè ruò lín	9
+謝時臣	xiè shí chén	238
+謝世煌	xiè shì huáng	486
+謝世傑	xiè shì jié	320
+謝士炎	xiè shì yán	104
+謝壽康	xiè shòu kāng	261
+謝淑薇	xiè shū wēi	594
+謝思明	xiè sī míng	238
+謝太后	xiè tài hòu	25
+謝鐵驪	xiè tiě lí	31
+謝廷駿	xiè tíng jùn	356
+謝通祥	xiè tōng xiáng	248
+謝偉銓	xiè wěi quán	356
+謝文德	xiè wén dé	333
+謝文東	xiè wén dōng	477
+謝無量	xiè wú liàng	450
+謝希德	xiè xī dé	28
+謝希孟	xiè xī mèng	212
+謝俠遜	xiè xiá xùn	297
+謝小娥	xiè xiǎo é	382
+謝曉峰	xiè xiǎo fēng	270
+謝小秋	xiè xiǎo qiū	342
+謝旭人	xiè xù rén	436
+謝選駿	xiè xuǎn jùn	252
+謝雪紅	xiè xuě hóng	644
+謝亞芳	xiè yà fāng	189
+謝亞龍	xiè yà lóng	116
+謝亞軒	xiè yà xuān	621
+謝煙客	xiè yān kè	25
+謝彥章	xiè yàn zhāng	234
+謝瑤環	xiè yáo huán	6
+謝依旻	xiè yī mín	418
+謝映登	xiè yìng dēng	180
+謝影雪	xiè yǐng xuě	428
+謝穎穎	xiè yǐng yǐng	19
+謝有順	xiè yǒu shùn	3
+謝育新	xiè yù xīn	12
+謝裕興	xiè yù xīng	225
+謝雲流	xiè yún liú	22
+謝章鋌	xiè zhāng dìng	238
+謝哲青	xiè zhé qīng	284
+謝振定	xiè zhèn dìng	261
+謝振華	xiè zhèn huá	3
+謝震武	xiè zhèn wǔ	378
+謝政鵬	xiè zhèng péng	306
+謝正義	xiè zhèng yì	486
+謝之光	xiè zhī guāng	252
+謝稚柳	xiè zhì liǔ	562
+謝治宇	xiè zhì yǔ	1247
+謝中博	xiè zhōng bó	292
+謝仲宣	xiè zhòng xuān	50
+謝子長	xiè zǐ cháng	16
+謝子龍	xiè zǐ lóng	486
+謝纘泰	xiè zuǎn tài	374
+許鞍華	xǔ ān huá	628
+徐安仁	xú ān rén	45
+徐悲鴻	xú bēi hóng	411
+徐碧城	xú bì chéng	639
+徐濱士	xú bīn shì	207
+徐才厚	xú cái hòu	828
+徐成伯	xú chéng bó	99
+許誠毅	xǔ chéng yì	25
+許崇智	xǔ chóng zhì	154
+徐春甫	xú chūn fǔ	99
+徐大椿	xú dà chūn	19
+徐道度	xú dào dù	144
+許爾勒	xǔ ěr lè	311
+徐復觀	xú fù guān	198
+徐根寶	xú gēn bǎo	885
+徐公明	xú gōng míng	261
+許廣平	xǔ guǎng píng	148
+徐光啟	xú guāng qǐ	452
+徐海東	xú hǎi dōng	176
+許海峰	xǔ hǎi fēng	182
+徐和誼	xú hé yì	6
+徐洪才	xú hóng cái	590
+許皇后	xǔ huáng hòu	198
+徐皇后	xú huáng hòu	178
+徐繼畬	xú jì shē	657
+徐建一	xú jiàn yī	891
+許晉亨	xǔ jìn hēng	50
+許鏡清	xǔ jìng qīng	116
+許昆林	xǔ kūn lín	756
+許利平	xǔ lì píng	549
+徐靈胎	xú líng tāi	78
+徐茂棟	xú mào dòng	16
+徐明朝	xú míng cháo	585
+許平君	xǔ píng jūn	939
+許其亮	xǔ qí liàng	594
+徐秋夫	xú qiū fū	189
+許榮茂	xǔ róng mào	6
+許三多	xǔ sān duō	323
+許善達	xǔ shàn dá	22
+徐紹史	xú shào shǐ	621
+徐師曾	xú shī céng	162
+徐世昌	xú shì chāng	132
+徐世平	xú shì píng	450
+許世友	xǔ shì yǒu	126
+徐守盛	xú shǒu shèng	6
+徐樹錚	xú shù zhēng	377
+徐嗣伯	xú sì bó	76
+徐特立	xú tè lì	19
+許文強	xǔ wén qiáng	251
+徐霞客	xú xiá kè	311
+徐向前	xú xiàng qián	97
+徐曉東	xú xiǎo dōng	904
+徐曉冬	xú xiǎo dōng	578
+許小年	xǔ xiǎo nián	66
+徐小平	xú xiǎo píng	644
+許信良	xǔ xìn liáng	644
+徐永昌	xú yǒng chāng	66
+許淵沖	xǔ yuān chōng	295
+徐元直	xú yuán zhí	28
+徐雲龍	xú yún lóng	22
+徐之才	xú zhī cái	297
+許智峯	xǔ zhì fēng	608
+徐知誥	xú zhī gào	630
+徐直軍	xú zhí jūn	312
+徐志摩	xú zhì mó	4632
+許知遠	xǔ zhī yuǎn	1231
+許莊公	xǔ zhuāng gōng	284
+許倬雲	xǔ zhuō yún	568
+薛寶釵	xuē bǎo chāi	257
+薛寶琴	xuē bǎo qín	22
+薛存誠	xuē cún chéng	212
+薛道衡	xuē dào héng	38
+薛定諤	xuē dìng è	2810
+薛丁山	xuē dīng shān	38
+薛福成	xuē fú chéng	281
+薛懷義	xuē huái yì	242
+薛居正	xuē jū zhèng	19
+薛克構	xuē kè gòu	225
+薛靈芸	xuē líng yún	6
+薛令之	xuē lìng zhī	135
+薛蠻子	xuē mán zi	850
+薛暮橋	xuē mù qiáo	500
+薛平貴	xuē píng guì	273
+薛其坤	xuē qí kūn	82
+薛奇童	xuē qí tóng	76
+薛仁杲	xuē rén gǎo	44
+薛仁貴	xuē rén guì	550
+薛萬徹	xuē wàn chè	99
+薛西斯	xuē xī sī	295
+薛湘靈	xuē xiāng líng	31
+薛曉路	xuē xiǎo lù	395
+薛曉璐	xuē xiǎo lù	177
+薛宜僚	xuē yí liáo	4
+薛姨媽	xuē yí mā	69
+薛元超	xuē yuán chāo	369
+薛兆豐	xuē zhào fēng	493
+薛昭緯	xuē zhāo wěi	189
+薛昭蘊	xuē zhāo yùn	202
+閻寶航	yán bǎo háng	518
+閻伯嶼	yán bó yǔ	38
+閻步克	yán bù kè	459
+閻朝隱	yán cháo yǐn	230
+閻崇年	yán chóng nián	239
+閻德隱	yán dé yǐn	45
+閻東叟	yán dōng sǒu	99
+嚴範孫	yán fàn sūn	333
+嚴歌苓	yán gē líng	286
+嚴公弼	yán gōng bì	99
+嚴公貺	yán gōng kuàng	50
+閻貴妃	yán guì fēi	320
+閻海文	yán hǎi wén	292
+閻紅彥	yán hóng yàn	3
+閆懷禮	yán huái lǐ	35
+閻惠昌	yán huì chāng	289
+嚴濟慈	yán jì cí	50
+嚴家淦	yán jiā gàn	13
+嚴鑑鉑	yán jiàn bó	45
+閻建鋼	yán jiàn gāng	3
+嚴介和	yán jiè hé	6
+嚴金海	yán jīn hǎi	346
+閻晶明	yán jīng míng	396
+閻敬銘	yán jìng míng	296
+嚴雋琪	yán juàn qí	304
+嚴凱泰	yán kǎi tài	346
+嚴可均	yán kě jūn	35
+閻立本	yán lì běn	195
+閻立德	yán lì dé	361
+閆麗夢	yán lì mèng	3
+嚴陸根	yán lù gēn	284
+閻羅王	yán luó wáng	257
+閻明復	yán míng fù	446
+閻魔王	yán mó wáng	266
+閆鵬飛	yán péng fēi	310
+閻婆惜	yán pó xī	104
+閻慶民	yán qìng mín	3
+閻瑞生	yán ruì shēng	400
+閻若璩	yán ruò qú	428
+閻世鐸	yán shì duó	342
+嚴世蕃	yán shì fān	88
+嚴文井	yán wén jǐng	3
+閻惜嬌	yán xī jiāo	230
+閆希軍	yán xī jūn	387
+閻錫山	yán xī shān	1052
+閆相闖	yán xiāng chuǎng	279
+閻相闖	yán xiāng chuǎng	224
+閻相文	yán xiāng wén	324
+閻曉宏	yán xiǎo hóng	262
+閻曉明	yán xiǎo míng	302
+嚴休復	yán xiū fù	117
+閻學通	yán xué tōng	22
+閻應元	yán yīng yuán	31
+閆永喜	yán yǒng xǐ	189
+閻又文	yán yòu wén	423
+嚴幼韻	yán yòu yùn	9
+嚴躍進	yán yuè jìn	868
+嚴振聲	yán zhèn shēng	76
+閻知微	yán zhī wēi	190
+閻仲川	yán zhòng chuān	266
+閆子貝	yán zǐ bèi	6
+楊白冰	yáng bái bīng	3
+楊白勞	yáng bái láo	440
+楊百順	yáng bǎi shùn	644
+楊寶玲	yáng bǎo líng	428
+楊伯峻	yáng bó jùn	257
+楊不悔	yáng bù huǐ	352
+楊步偉	yáng bù wěi	75
+楊成武	yáng chéng wǔ	63
+楊傳堂	yáng chuán táng	621
+楊春霞	yáng chūn xiá	432
+楊德昌	yáng dé chāng	783
+楊德龍	yáng dé lóng	22
+楊得志	yáng dé zhì	104
+楊登魁	yáng dēng kuí	490
+楊復光	yáng fù guāng	356
+楊福家	yáng fú jiā	35
+楊公卿	yáng gōng qīng	648
+楊冠卿	yáng guān qīng	99
+楊貴妃	yáng guì fēi	1831
+楊國平	yáng guó píng	351
+楊國強	yáng guó qiáng	25
+楊國慶	yáng guó qìng	405
+楊國忠	yáng guó zhōng	914
+楊浩湧	yáng hào yǒng	94
+楊亨燮	yáng hēng xiè	279
+楊紅櫻	yáng hóng yīng	63
+楊虎城	yáng hǔ chéng	286
+楊徽之	yáng huī zhī	162
+楊繼盛	yáng jì shèng	47
+楊繼業	yáng jì yè	266
+楊家將	yáng jiā jiàng	1454
+楊建平	yáng jiàn píng	648
+楊潔篪	yáng jié chí	31
+楊錦麟	yáng jǐn lín	3
+楊靜仁	yáng jìng rén	405
+楊靖宇	yáng jìng yǔ	308
+楊敬之	yáng jìng zhī	212
+楊九紅	yáng jiǔ hóng	78
+楊巨源	yáng jù yuán	9
+楊開慧	yáng kāi huì	119
+楊凱生	yáng kǎi shēng	6
+楊奎松	yáng kuí sōng	616
+楊利偉	yáng lì wěi	983
+楊聯升	yáng lián shēng	28
+楊蓮亭	yáng lián tíng	88
+楊令公	yáng lìng gōng	63
+楊露禪	yáng lù chán	590
+楊露蟬	yáng lù chán	334
+楊鳴章	yáng míng zhāng	369
+楊慕琦	yáng mù qí	598
+楊乃武	yáng nǎi wǔ	35
+楊凝式	yáng níng shì	41
+楊叛兒	yáng pàn ér	144
+楊培東	yáng péi dōng	356
+楊七郎	yáng qī láng	75
+楊日禮	yáng rì lǐ	382
+楊汝岱	yáng rǔ dài	338
+楊汝士	yáng rǔ shì	288
+楊善深	yáng shàn shēn	284
+楊善洲	yáng shàn zhōu	6
+楊尚昆	yáng shàng kūn	35
+楊深秀	yáng shēn xiù	6
+楊師道	yáng shī dào	369
+楊士奇	yáng shì qí	28
+楊石先	yáng shí xiān	3
+楊受成	yáng shòu chéng	100
+楊守敬	yáng shǒu jìng	57
+楊嗣復	yáng sì fù	472
+楊四郎	yáng sì láng	122
+楊思玄	yáng sī xuán	162
+楊肅觀	yáng sù guān	13
+楊太后	yáng tài hòu	468
+楊太真	yáng tài zhēn	392
+楊天石	yáng tiān shí	47
+楊鐵樑	yáng tiě liáng	459
+楊鐵心	yáng tiě xīn	100
+楊廷寶	yáng tíng bǎo	110
+楊廷和	yáng tíng hé	248
+楊廷藝	yáng tíng yì	405
+楊萬里	yáng wàn lǐ	349
+楊威利	yáng wēi lì	163
+楊衛澤	yáng wèi zé	702
+楊維楨	yáng wéi zhēn	97
+楊文廣	yáng wén guǎng	515
+楊顯惠	yáng xiǎn huì	374
+楊賢江	yáng xián jiāng	16
+楊憲益	yáng xiàn yì	107
+楊仙逸	yáng xiān yì	96
+楊獻珍	yáng xiàn zhēn	428
+楊小凱	yáng xiǎo kǎi	402
+楊孝文	yáng xiào wén	369
+楊曉陽	yáng xiǎo yáng	608
+楊行密	yáng xíng mì	94
+楊秀峰	yáng xiù fēng	495
+楊秀清	yáng xiù qīng	104
+楊秀珠	yáng xiù zhū	630
+楊虛彥	yáng xū yàn	734
+楊學增	yáng xué zēng	428
+楊延輝	yáng yán huī	69
+楊燕綏	yáng yàn suí	5
+楊延昭	yáng yán zhāo	1024
+楊炎正	yáng yán zhèng	50
+楊一民	yáng yī mín	19
+楊一清	yáng yì qīng	13
+楊益言	yáng yì yán	378
+楊宜勇	yáng yí yǒng	364
+楊英風	yáng yīng fēng	562
+楊應龍	yáng yìng lóng	50
+楊永泰	yáng yǒng tài	16
+楊永信	yáng yǒng xìn	678
+楊玉環	yáng yù huán	1975
+楊於陵	yáng yú líng	324
+楊虞卿	yáng yú qīng	324
+楊宇霆	yáng yǔ tíng	873
+楊元丁	yáng yuán dīng	320
+楊元慶	yáng yuán qìng	144
+楊岳橋	yáng yuè qiáo	6
+楊增新	yáng zēng xīn	590
+楊之華	yáng zhī huá	88
+楊致遠	yáng zhì yuǎn	384
+楊卓舒	yáng zhuó shū	35
+楊子榮	yáng zǐ róng	69
+楊宗保	yáng zōng bǎo	198
+楊左使	yáng zuǒ shǐ	176
+姚本輝	yáo běn huī	432
+姚從吾	yáo cóng wú	378
+姚大力	yáo dà lì	48
+姚登山	yáo dēng shān	346
+姚奠中	yáo diàn zhōng	351
+姚淦銘	yáo gàn míng	220
+姚廣孝	yáo guǎng xiào	154
+姚際恆	yáo jì héng	47
+姚建年	yáo jiàn nián	306
+姚建萍	yáo jiàn píng	328
+姚勁波	yáo jìn bō	69
+姚金男	yáo jīn nán	392
+姚景源	yáo jǐng yuán	433
+姚居德	yáo jū dé	302
+姚立明	yáo lì míng	454
+姚良松	yáo liáng sōng	328
+姚令言	yáo lìng yán	346
+姚履素	yáo lǚ sù	76
+姚名達	yáo míng dá	22
+姚明高	yáo míng gāo	387
+姚木蘭	yáo mù lán	396
+姚南仲	yáo nán zhòng	261
+姚平仲	yáo píng zhòng	6
+姚啟聖	yáo qǐ shèng	35
+姚期智	yáo qī zhì	276
+姚仁喜	yáo rén xǐ	432
+姚若龍	yáo ruò lóng	204
+姚述堯	yáo shù yáo	4
+姚碩德	yáo shuò dé	312
+姚思廉	yáo sī lián	38
+姚思榮	yáo sī róng	374
+姚松炎	yáo sōng yán	531
+姚檀棟	yáo tán dòng	9
+姚桐斌	yáo tóng bīn	38
+姚文田	yáo wén tián	279
+姚文燮	yáo wén xiè	225
+姚文元	yáo wén yuán	28
+姚希孟	yáo xī mèng	243
+姚小蝶	yáo xiǎo dié	306
+姚璇秋	yáo xuán qiū	202
+姚雪垠	yáo xuě yín	100
+姚亞平	yáo yà píng	320
+姚彥章	yáo yàn zhāng	328
+姚冶誠	yáo yě chéng	6
+姚依林	yáo yī lín	3
+姚一葦	yáo yī wěi	378
+姚弋仲	yáo yì zhòng	19
+姚永樸	yáo yǒng pǔ	266
+姚余棟	yáo yú dòng	3
+姚玉蘭	yáo yù lán	495
+姚虞琴	yáo yú qín	261
+姚振華	yáo zhèn huá	1008
+姚仲明	yáo zhòng míng	270
+姚中英	yáo zhōng yīng	194
+姚壯憲	yáo zhuàng xiàn	220
+姚子青	yáo zǐ qīng	378
+姚宗勳	yáo zōng xūn	243
+姚祖輝	yáo zǔ huī	279
+葉柏壽	yè bǎi shòu	464
+葉丙成	yè bǐng chéng	315
+葉伯巨	yè bó jù	243
+葉布舒	yè bù shū	224
+葉昌熾	yè chāng chì	22
+葉澄衷	yè chéng zhōng	137
+葉馳敏	yè chí mǐn	464
+葉崇仁	yè chóng rén	202
+葉楚傖	yè chǔ cāng	522
+葉傳古	yè chuán gǔ	45
+葉大椿	yè dà chūn	45
+葉大廉	yè dà lián	45
+葉大年	yè dà nián	207
+葉大鷹	yè dà yīng	65
+葉德輝	yè dé huī	263
+葉德徵	yè dé zhēng	45
+葉冬松	yè dōng sōng	3
+葉篤義	yè dǔ yì	410
+葉篤正	yè dǔ zhèng	16
+葉二娘	yè èr niáng	113
+葉爾欽	yè ěr qīn	446
+葉爾辛	yè ěr xīn	374
+葉法善	yè fǎ shàn	338
+葉方舟	yè fāng zhōu	3
+葉根友	yè gēn yǒu	91
+葉公超	yè gōng chāo	28
+葉恭綽	yè gōng chuò	526
+葉恭弘	yè gōng hóng	13
+葉孤城	yè gū chéng	223
+葉光富	yè guāng fù	132
+葉廣芩	yè guǎng qín	31
+葉國富	yè guó fù	25
+葉國華	yè guó huá	6
+葉國謙	yè guó qiān	490
+葉海燕	yè hǎi yàn	364
+葉鴻輝	yè hóng huī	477
+葉紅專	yè hóng zhuān	315
+葉惠賢	yè huì xián	338
+葉繼歡	yè jì huān	31
+葉加瀨	yè jiā lài	392
+葉佳修	yè jiā xiū	3
+葉嘉瑩	yè jiā yíng	421
+葉劍英	yè jiàn yīng	267
+葉建源	yè jiàn yuán	468
+葉江川	yè jiāng chuān	6
+葉錦添	yè jǐn tiān	267
+葉菊蘭	yè jú lán	477
+葉橘泉	yè jú quán	266
+葉君健	yè jūn jiàn	436
+葉俊榮	yè jùn róng	472
+葉匡政	yè kuāng zhèng	428
+葉藍秋	yè lán qiū	44
+葉瀾依	yè lán yī	346
+葉立德	yè lì dé	464
+葉利欽	yè lì qīn	562
+葉流雲	yè liú yún	238
+葉隆禮	yè lóng lǐ	230
+葉茂林	yè mào lín	378
+葉茂青	yè mào qīng	342
+葉茂中	yè mào zhōng	85
+葉夢得	yè mèng de	53
+葉夢鼎	yè mèng dǐng	243
+葉夢熊	yè mèng xióng	270
+葉名琛	yè míng chēn	13
+葉明子	yè míng zǐ	288
+葉嬤嬤	yè mó mo	518
+葉南笙	yè nán shēng	648
+葉念琛	yè niàn chēn	500
+葉佩高	yè pèi gāo	238
+葉培貴	yè péi guì	194
+葉培建	yè péi jiàn	97
+葉姵延	yè pèi yán	382
+葉佩英	yè pèi yīng	266
+葉飄零	yè piāo líng	675
+葉品秀	yè pǐn xiù	243
+葉企孫	yè qǐ sūn	75
+葉淺予	yè qiǎn yǔ	53
+葉喬波	yè qiáo bō	38
+葉清臣	yè qīng chén	238
+葉輕眉	yè qīng méi	685
+葉榮添	yè róng tiān	110
+葉榮鐘	yè róng zhōng	364
+葉榮祖	yè róng zǔ	369
+葉賽寧	yè sài níng	63
+葉紹德	yè shào dé	378
+葉少蘭	yè shǎo lán	369
+葉紹翁	yè shào wēng	16
+葉紹袁	yè shào yuán	302
+葉盛蘭	yè shèng lán	85
+葉聖陶	yè shèng táo	452
+葉盛章	yè shèng zhāng	346
+葉石濤	yè shí tāo	518
+葉樹姍	yè shù shān	364
+葉忒羅	yè tè luó	274
+葉天士	yè tiān shì	308
+葉天行	yè tiān xíng	356
+葉廷芳	yè tíng fāng	356
+葉廷珪	yè tíng guī	428
+葉廷眷	yè tíng juàn	194
+葉偉民	yè wěi mín	35
+葉渭渠	yè wèi qú	468
+葉偉信	yè wěi xìn	66
+葉文潔	yè wén jié	243
+葉無道	yè wú dào	243
+葉憲祖	yè xiàn zǔ	194
+葉向東	yè xiàng dōng	270
+葉向高	yè xiàng gāo	63
+葉湘倫	yè xiāng lún	402
+葉香巖	yè xiāng yán	144
+葉向陽	yè xiàng yáng	270
+葉小釵	yè xiǎo chāi	459
+葉小綱	yè xiǎo gāng	25
+葉小鸞	yè xiǎo luán	310
+葉小文	yè xiǎo wén	16
+葉興慶	yè xīng qìng	302
+葉秀峰	yè xiù fēng	450
+葉選寧	yè xuǎn níng	392
+葉選平	yè xuǎn píng	16
+葉宜津	yè yí jīn	410
+葉義問	yè yì wèn	270
+葉迎春	yè yíng chūn	266
+葉永烈	yè yǒng liè	154
+葉永青	yè yǒng qīng	44
+葉永志	yè yǒng zhì	31
+葉毓蘭	yè yù lán	369
+葉毓山	yè yù shān	212
+葉兆言	yè zhào yán	44
+葉釗穎	yè zhāo yǐng	495
+葉哲泰	yè zhé tài	91
+葉真理	yè zhēn lǐ	450
+葉貞琴	yè zhēn qín	230
+葉志詵	yè zhì shēn	153
+葉子龍	yè zi lóng	392
+葉宗留	yè zōng liú	3
+葉祖珪	yè zǔ guī	342
+葉祖洽	yè zǔ qià	238
+尤迪安	yóu dí ān	35
+尤二姐	yóu èr jiě	88
+尤老娘	yóu lǎo niáng	3
+尤良英	yóu liáng yīng	256
+尤倫斯	yóu lún sī	666
+尤彌爾	yóu mí ěr	1287
+尤努斯	yóu nǔ sī	94
+尤三姐	yóu sān jiě	47
+尤先科	yóu xiān kē	28
+尤小剛	yóu xiǎo gāng	9
+尤雨溪	yóu yǔ xī	50
+鬱保四	yù bǎo sì	50
+余滄海	yú cāng hǎi	226
+余程萬	yú chéng wàn	9
+余春嬌	yú chūn jiāo	355
+余純順	yú chún shùn	28
+余慈度	yú cí dù	279
+余翠怡	yú cuì yí	320
+郁達夫	yù dá fū	622
+余端禮	yú duān lǐ	234
+余漢謀	yú hàn móu	38
+余賀新	yú hè xīn	392
+余化龍	yú huà lóng	8
+余歡水	yú huān shuǐ	19
+余繼登	yú jì dēng	3
+鬱建興	yù jiàn xīng	214
+余麗橋	yú lì qiáo	26
+鬱林王	yù lín wáng	369
+郁慕明	yù mù míng	608
+余灑度	yú sǎ dù	3
+余紹宋	yú shào sòng	315
+余叔岩	yú shū yán	129
+余天錫	yú tiān xī	302
+余天雲	yú tiān yún	270
+鬱賢皓	yù xián hào	297
+余象鬥	yú xiàng dòu	382
+余延壽	yú yán shòu	38
+餘鶯兒	yú yīng ér	57
+余英男	yú yīng nán	428
+鬱永河	yù yǒng hé	418
+余魚同	yú yú tóng	19
+余則成	yú zé chéng	666
+余占鰲	yú zhàn áo	526
+余正麒	yú zhèng qí	306
+余周周	yú zhōu zhōu	22
+余子俊	yú zǐ jùn	310
+袁巴元	yuán bā yuán	91
+袁保恆	yuán bǎo héng	387
+袁寶華	yuán bǎo huá	410
+袁寶璟	yuán bǎo jǐng	428
+袁本初	yuán běn chū	251
+袁承志	yuán chéng zhì	336
+袁崇煥	yuán chóng huàn	524
+袁純清	yuán chún qīng	436
+袁迪寶	yuán dí bǎo	292
+袁公路	yuán gōng lù	296
+袁弓夷	yuán gōng yí	312
+袁貴妃	yuán guì fēi	536
+袁貴仁	yuán guì rén	3
+袁國平	yuán guó píng	436
+袁國勇	yuán guó yǒng	28
+袁翰青	yuán hàn qīng	266
+袁寒雲	yuán hán yún	279
+袁和平	yuán hé píng	524
+袁紅冰	yuán hóng bīng	279
+袁宏道	yuán hóng dào	82
+袁繼咸	yuán jì xián	378
+袁嘉谷	yuán jiā gǔ	19
+袁家騮	yuán jiā liú	9
+袁甲三	yuán jiǎ sān	418
+袁金鎧	yuán jīn kǎi	6
+袁錦麟	yuán jǐn lín	279
+袁克定	yuán kè dìng	13
+袁可嘉	yuán kě jiā	369
+袁可立	yuán kě lì	324
+袁克文	yuán kè wén	198
+袁闊成	yuán kuò chéng	25
+袁嵐峰	yuán lán fēng	38
+袁勵準	yuán lì zhǔn	202
+袁了凡	yuán liǎo fán	500
+袁隆平	yuán lóng píng	3002
+袁履謙	yuán lǚ qiān	248
+袁彌昌	yuán mí chāng	356
+袁彌明	yuán mí míng	472
+袁牧之	yuán mù zhī	16
+袁彭年	yuán péng nián	266
+袁去華	yuán qù huá	110
+袁仁國	yuán rén guó	13
+袁山松	yuán shān sōng	333
+袁世凱	yuán shì kǎi	2107
+袁守誠	yuán shǒu chéng	13
+袁守謙	yuán shǒu qiān	338
+袁曙宏	yuán shǔ hóng	3
+袁恕己	yuán shù jǐ	122
+袁樹勳	yuán shù xūn	324
+袁水拍	yuán shuǐ pāi	3
+袁騰飛	yuán téng fēi	248
+袁天罡	yuán tiān gāng	63
+袁天綱	yuán tiān gāng	57
+袁庭棟	yuán tíng dòng	6
+袁桐利	yuán tóng lì	360
+袁偉民	yuán wěi mín	126
+袁惟仁	yuán wéi rén	60
+袁文才	yuán wén cái	25
+袁熙坤	yuán xī kūn	369
+袁希濤	yuán xī tāo	3
+袁項城	yuán xiàng chéng	346
+袁湘琴	yuán xiāng qín	50
+袁祥仁	yuán xiáng rén	319
+袁象先	yuán xiàng xiān	387
+袁曉岑	yuán xiǎo cén	225
+袁小田	yuán xiǎo tián	6
+袁曉園	yuán xiǎo yuán	247
+袁行霈	yuán xíng pèi	513
+袁亞非	yuán yà fēi	369
+袁應泰	yuán yīng tài	13
+袁永熙	yuán yǒng xī	454
+袁譽柏	yuán yù bǎi	288
+袁裕來	yuán yù lái	486
+袁聿修	yuán yù xiū	266
+袁運甫	yuán yùn fǔ	266
+袁運生	yuán yùn shēng	369
+袁占亭	yuán zhàn tíng	544
+袁哲生	yuán zhé shēng	6
+袁正己	yuán zhèng jǐ	50
+袁中道	yuán zhōng dào	13
+袁仲雪	yuán zhòng xuě	364
+袁仲一	yuán zhòng yī	342
+袁紫衣	yuán zǐ yī	69
+袁宗道	yuán zōng dào	3
+袁宗第	yuán zōng dì	16
+袁祖銘	yuán zǔ míng	468
+臧克家	zāng kè jiā	60
+臧懋循	zāng mào xún	266
+臧啟芳	zāng qǐ fāng	320
+臧式毅	zāng shì yì	396
+臧文公	zāng wén gōng	230
+臧文仲	zāng wén zhòng	333
+臧武仲	zāng wǔ zhòng	338
+臧獻甫	zāng xiàn fǔ	76
+曾阿牛	zēng ā niú	35
+曾寶蓀	zēng bǎo sūn	274
+曾成傑	zēng chéng jié	554
+曾德鈞	zēng dé jūn	3
+曾凡博	zēng fán bó	85
+曾梵志	zēng fàn zhì	47
+曾鳳飛	zēng fèng fēi	454
+曾國藩	zēng guó fān	3269
+曾國荃	zēng guó quán	132
+曾國祥	zēng guó xiáng	151
+曾浩輝	zēng hào huī	230
+曾侯乙	zēng hóu yǐ	198
+曾紀芬	zēng jì fēn	324
+曾紀澤	zēng jì zé	141
+曾劍秋	zēng jiàn qiū	284
+曾錦春	zēng jǐn chūn	315
+曾培炎	zēng péi yán	19
+曾慶紅	zēng qìng hóng	576
+曾仕強	zēng shì qiáng	110
+曾偉權	zēng wěi quán	3
+曾文正	zēng wén zhèng	639
+曾希聖	zēng xī shèng	472
+曾小賢	zēng xiǎo xián	537
+曾馨瑩	zēng xīn yíng	436
+曾雪麟	zēng xuě lín	428
+曾學忠	zēng xué zhōng	544
+曾雅妮	zēng yǎ nī	432
+曾志朗	zēng zhì lǎng	387
+曾子固	zēng zǐ gù	266
+曾子航	zēng zǐ háng	356
+張愛玲	zhāng ài líng	2810
+張安樂	zhāng ān lè	594
+張保仔	zhāng bǎo zǎi	612
+張伯駒	zhāng bó jū	160
+張伯苓	zhāng bó líng	72
+張伯倫	zhāng bó lún	1674
+張呈棟	zhāng chéng dòng	57
+張成澤	zhāng chéng zé	644
+張春橋	zhāng chūn qiáo	41
+張春賢	zhāng chūn xián	670
+張翠山	zhāng cuì shān	936
+張大春	zhāng dà chūn	639
+張達明	zhāng dá míng	13
+張大千	zhāng dà qiān	468
+張德芬	zhāng dé fēn	78
+張德江	zhāng dé jiāng	810
+張東健	zhāng dōng jiàn	82
+張棟樑	zhāng dòng liáng	38
+張東升	zhāng dōng shēng	961
+張發奎	zhāng fā kuí	66
+張高麗	zhāng gāo lí	3
+張根碩	zhāng gēn shuò	35
+張桂梅	zhāng guì méi	292
+張國燾	zhāng guó dào	945
+張果老	zhāng guǒ lǎo	25
+張國偉	zhāng guó wěi	462
+張海迪	zhāng hǎi dí	50
+張漢卿	zhāng hàn qīng	38
+張恨水	zhāng hèn shuǐ	336
+張弘範	zhāng hóng fàn	499
+張宏民	zhāng hóng mín	6
+張宏偉	zhāng hóng wěi	724
+張化橋	zhāng huà qiáo	65
+張懷民	zhāng huái mín	110
+張皇后	zhāng huáng hòu	517
+張嘉佳	zhāng jiā jiā	383
+張佳瑋	zhāng jiā wěi	449
+張柬之	zhāng jiǎn zhī	603
+張建宗	zhāng jiàn zōng	576
+張近東	zhāng jìn dōng	774
+張靜江	zhāng jìng jiāng	69
+張九齡	zhāng jiǔ líng	392
+張居正	zhāng jū zhèng	2697
+張君勱	zhāng jūn mài	44
+張軍社	zhāng jūn shè	594
+張儁乂	zhāng jùn yì	45
+張郎郎	zhāng láng láng	364
+張麗華	zhāng lì huá	57
+張立群	zhāng lì qún	22
+張靈甫	zhāng líng fǔ	88
+張曼玉	zhāng màn yù	1510
+張明楷	zhāng míng kǎi	528
+張起淮	zhāng qǐ huái	873
+張起靈	zhāng qǐ líng	882
+張啟山	zhāng qǐ shān	922
+張其昀	zhāng qí yún	562
+張琴秋	zhāng qín qiū	3
+張慶偉	zhāng qìng wěi	9
+張泉靈	zhāng quán líng	144
+張瑞敏	zhāng ruì mǐn	119
+張若虛	zhāng ruò xū	433
+張三瘋	zhāng sān fēng	1089
+張三豐	zhāng sān fēng	559
+張士誠	zhāng shì chéng	631
+張世傑	zhāng shì jié	144
+張士平	zhāng shì píng	151
+張曙光	zhāng shǔ guāng	66
+張叔平	zhāng shū píng	295
+張松橋	zhāng sōng qiáo	131
+張太后	zhāng tài hòu	477
+張桃林	zhāng táo lín	612
+張天師	zhāng tiān shī	126
+張鐵生	zhāng tiě shēng	16
+張廷玉	zhāng tíng yù	160
+張外龍	zhāng wài lóng	616
+張萬年	zhāng wàn nián	13
+張偉平	zhāng wěi píng	267
+張維為	zhāng wéi wéi	236
+張維迎	zhāng wéi yíng	336
+張文宏	zhāng wén hóng	333
+張文順	zhāng wén shùn	217
+張聞天	zhāng wén tiān	44
+張悟本	zhāng wù běn	135
+張五常	zhāng wǔ cháng	1171
+張五哥	zhāng wǔ gē	464
+張無忌	zhāng wú jì	9652
+張稀哲	zhāng xī zhé	314
+張賢亮	zhāng xián liàng	100
+張顯耀	zhāng xiǎn yào	446
+張獻忠	zhāng xiàn zhōng	493
+張向東	zhāng xiàng dōng	47
+張小凡	zhāng xiǎo fán	119
+張曉風	zhāng xiǎo fēng	467
+張小龍	zhāng xiǎo lóng	2138
+張孝全	zhāng xiào quán	139
+張小嫻	zhāng xiǎo xián	104
+張孝祥	zhāng xiào xiáng	100
+張小燕	zhāng xiǎo yàn	60
+張軒松	zhāng xuān sōng	612
+張學良	zhāng xué liáng	5740
+張亞東	zhāng yà dōng	769
+張亞勤	zhāng yà qín	60
+張燕生	zhāng yàn shēng	3
+張養浩	zhāng yǎng hào	355
+張一白	zhāng yì bái	116
+張翼德	zhāng yì dé	104
+張一曼	zhāng yī màn	72
+張益唐	zhāng yì táng	648
+張蔭麟	zhāng yīn lín	107
+張幼儀	zhāng yòu yí	1570
+張玉良	zhāng yù liáng	16
+張悅然	zhāng yuè rán	107
+張雲逸	zhāng yún yì	19
+張擇端	zhāng zé duān	107
+張兆和	zhāng zhào hé	639
+張召忠	zhāng zhào zhōng	132
+張真人	zhāng zhēn rén	609
+張志東	zhāng zhì dōng	471
+張之洞	zhāng zhī dòng	424
+張志軍	zhāng zhì jūn	135
+張志明	zhāng zhì míng	506
+張智堯	zhāng zhì yáo	113
+張治中	zhāng zhì zhōng	44
+張仲景	zhāng zhòng jǐng	977
+張忠謀	zhāng zhōng móu	170
+張子強	zhāng zǐ qiáng	100
+張自忠	zhāng zì zhōng	223
+張宗昌	zhāng zōng chāng	440
+張作霖	zhāng zuò lín	1526
+趙秉文	zhào bǐng wén	28
+趙辰昕	zhào chén xīn	670
+趙充國	zhào chōng guó	144
+趙登禹	zhào dēng yǔ	53
+趙斗順	zhào dòu shùn	1171
+趙爾豐	zhào ěr fēng	41
+趙爾巽	zhào ěr xùn	35
+趙飛燕	zhào fēi yàn	223
+趙公明	zhào gōng míng	41
+趙光義	zhào guāng yì	823
+趙皇后	zhào huáng hòu	360
+趙簡子	zhào jiǎn zǐ	88
+趙克志	zhào kè zhì	9
+趙匡義	zhào kuāng yì	88
+趙匡胤	zhào kuāng yìn	1670
+趙樂際	zhào lè jì	410
+趙立堅	zhào lì jiān	160
+趙黎平	zhào lí píng	950
+趙烈文	zhào liè wén	75
+趙孟頫	zhào mèng fǔ	315
+趙明誠	zhào míng chéng	462
+趙南起	zhào nán qǐ	6
+趙樸初	zhào pǔ chū	28
+趙啟正	zhào qǐ zhèng	544
+趙尚志	zhào shàng zhì	38
+趙少康	zhào shào kāng	13
+趙師秀	zhào shī xiù	22
+趙樹理	zhào shù lǐ	126
+趙太后	zhào tài hòu	486
+趙汀陽	zhào tīng yáng	50
+趙王倫	zhào wáng lún	436
+趙王遷	zhào wáng qiān	75
+趙無極	zhào wú jí	104
+趙襄子	zhào xiāng zǐ	446
+趙亞夫	zhào yà fū	594
+趙一曼	zhào yī màn	60
+趙元任	zhào yuán rèn	584
+趙芸蕾	zhào yún lěi	69
+趙之謙	zhào zhī qiān	151
+趙主父	zhào zhǔ fù	382
+趙莊子	zhào zhuāng zǐ	207
+趙子龍	zhào zǐ lóng	449
+鄭板橋	zhèng bǎn qiáo	220
+鄭秉文	zhèng bǐng wén	9
+鄭成功	zhèng chéng gōng	876
+鄭愁予	zhèng chóu yǔ	129
+鄭丹瑞	zhèng dān ruì	6
+鄭多燕	zhèng duō yàn	480
+鄭貴妃	zhèng guì fēi	63
+鄭國公	zhèng guó gōng	16
+鄭國光	zhèng guó guāng	612
+鄭國江	zhèng guó jiāng	94
+鄭家純	zhèng jiā chún	9
+鄭俊懷	zhèng jùn huái	752
+鄭俊英	zhèng jùn yīng	22
+鄭克爽	zhèng kè shuǎng	88
+鄭厲公	zhèng lì gōng	31
+鄭麗文	zhèng lì wén	684
+鄭南榕	zhèng nán róng	652
+鄭惟桐	zhèng wéi tóng	210
+鄭文燦	zhèng wén càn	634
+鄭武公	zhèng wǔ gōng	122
+鄭曉龍	zhèng xiǎo lóng	78
+鄭孝胥	zhèng xiào xū	57
+鄭永年	zhèng yǒng nián	639
+鄭裕彤	zhèng yù tóng	38
+鄭振鐸	zhèng zhèn duó	173
+鄭芝龍	zhèng zhī lóng	201
+鄭莊公	zhèng zhuāng gōng	685
+鍾保羅	zhōng bǎo luó	464
+鍾炳昌	zhōng bǐng chāng	248
+鍾秉林	zhōng bǐng lín	3
+鍾辰翁	zhōng chén wēng	45
+鍾成虎	zhōng chéng hǔ	423
+鍾赤兵	zhōng chì bīng	405
+鍾道隆	zhōng dào lóng	88
+鍾登華	zhōng dēng huá	356
+鍾丁先	zhōng dīng xiān	144
+鍾夫翔	zhōng fū xiáng	297
+鐘觀光	zhōng guān guāng	351
+鍾翰林	zhōng hàn lín	400
+鍾惠瀾	zhōng huì lán	225
+鍾繼昌	zhōng jì chāng	120
+鍾建華	zhōng jiàn huá	270
+鍾建平	zhōng jiàn píng	202
+鍾錦麟	zhōng jǐn lín	360
+鍾景輝	zhōng jǐng huī	554
+鍾敬文	zhōng jìng wén	9
+鍾離春	zhōng lí chūn	436
+鍾麗芳	zhōng lì fāng	277
+鍾理和	zhōng lǐ hé	544
+鍾離昧	zhōng lí mèi	490
+鍾離牧	zhōng lí mù	369
+鐘茂森	zhōng mào sēn	392
+鍾孟宏	zhōng mèng hóng	47
+鍾孟舜	zhōng mèng shùn	220
+鍾敏言	zhōng mǐn yán	78
+鍾明亮	zhōng míng liàng	248
+鍾明善	zhōng míng shàn	202
+鍾鳴遠	zhōng míng yuǎn	3
+鍾南山	zhōng nán shān	719
+鍾沛林	zhōng pèi lín	270
+鍾培生	zhōng péi shēng	378
+鍾沛璋	zhōng pèi zhāng	207
+鍾朋榮	zhōng péng róng	346
+鍾期光	zhōng qī guāng	432
+鍾啟泉	zhōng qǐ quán	16
+鍾期榮	zhōng qī róng	346
+鍾齊鑫	zhōng qí xīn	522
+鍾榮吉	zhōng róng jí	328
+鍾紹京	zhōng shào jīng	50
+鍾少雄	zhōng shǎo xióng	328
+鍾少珍	zhōng shǎo zhēn	266
+鍾士季	zhōng shì jì	252
+鍾世傑	zhōng shì jié	144
+鍾世銘	zhōng shì míng	207
+鍾士元	zhōng shì yuán	482
+鍾叔河	zhōng shū hé	297
+鍾澍佳	zhōng shù jiā	392
+鍾嗣成	zhōng sì chéng	288
+鍾塔西	zhōng tǎ xī	44
+鍾騰福	zhōng téng fú	297
+鍾天使	zhōng tiān shǐ	338
+鍾天正	zhōng tiān zhèng	225
+鍾庭耀	zhōng tíng yào	486
+鍾萬仇	zhōng wàn chóu	16
+鍾偉明	zhōng wěi míng	392
+鍾偉強	zhōng wěi qiáng	16
+鍾文靖	zhōng wén jìng	338
+鍾文音	zhōng wén yīn	346
+鍾文澤	zhōng wén zé	53
+鍾無艷	zhōng wú yàn	392
+鍾無鹽	zhōng wú yán	238
+鍾小艾	zhōng xiǎo ài	9
+鍾小江	zhōng xiǎo jiāng	346
+鍾小平	zhōng xiǎo píng	414
+鍾曉芹	zhōng xiǎo qín	119
+鍾曉陽	zhōng xiǎo yáng	308
+鍾興民	zhōng xīng mín	612
+鍾循仁	zhōng xún rén	57
+鍾訓正	zhōng xùn zhèng	356
+鍾義浩	zhōng yì hào	281
+鍾逸傑	zhōng yì jié	274
+鍾一鳴	zhōng yì míng	324
+鍾玉鳳	zhōng yù fèng	248
+鍾躍民	zhōng yuè mín	47
+鍾允章	zhōng yǔn zhāng	288
+鍾肇政	zhōng zhào zhèng	536
+鍾振強	zhōng zhèn qiáng	220
+鍾正生	zhōng zhèng shēng	19
+鍾質夫	zhōng zhì fū	42
+鍾志生	zhōng zhì shēng	186
+鍾志文	zhōng zhì wén	189
+鍾子期	zhōng zǐ qī	198
+周邦彥	zhōu bāng yàn	358
+周伯通	zhōu bó tōng	1064
+周焯華	zhōu chāo huá	616
+周成王	zhōu chéng wáng	245
+周敦頤	zhōu dūn yí	198
+周恩來	zhōu ēn lái	1950
+周冠宇	zhōu guān yǔ	788
+周貴妃	zhōu guì fēi	396
+周國平	zhōu guó píng	571
+周海濱	zhōu hǎi bīn	170
+周鴻禕	zhōu hóng yī	1231
+周桓公	zhōu huán gōng	274
+周桓王	zhōu huán wáng	100
+周皇后	zhōu huáng hòu	19
+周惠王	zhōu huì wáng	60
+周繼紅	zhōu jì hóng	110
+周敬王	zhōu jìng wáng	38
+周凱旋	zhōu kǎi xuán	616
+周康王	zhōu kāng wáng	38
+周克華	zhōu kè huá	53
+周美青	zhōu měi qīng	616
+周夢蝶	zhōu mèng dié	634
+周明帝	zhōu míng dì	508
+周穆王	zhōu mù wáng	245
+周赧王	zhōu nǎn wáng	85
+周平王	zhōu píng wáng	342
+周汝昌	zhōu rǔ chāng	132
+周世宗	zhōu shì zōng	192
+周守訓	zhōu shǒu xùn	342
+周受資	zhōu shòu zī	57
+周樹人	zhōu shù rén	264
+周思聰	zhōu sī cōng	13
+周思王	zhōu sī wáng	202
+周太后	zhōu tài hòu	16
+周太王	zhōu tài wáng	28
+周太祖	zhōu tài zǔ	35
+周衛國	zhōu wèi guó	774
+周文王	zhōu wén wáng	666
+周文重	zhōu wén zhòng	603
+周武帝	zhōu wǔ dì	47
+周顯王	zhōu xiǎn wáng	35
+周襄王	zhōu xiāng wáng	113
+周小川	zhōu xiǎo chuān	179
+周小平	zhōu xiǎo píng	69
+周孝王	zhōu xiào wáng	31
+周信芳	zhōu xìn fāng	116
+周旭輝	zhōu xù huī	585
+周宣王	zhōu xuān wáng	342
+周玄毅	zhōu xuán yì	179
+周亞夫	zhōu yà fū	675
+周揚青	zhōu yáng qīng	144
+周耀輝	zhōu yào huī	648
+週一良	zhōu yī liáng	188
+周懿王	zhōu yì wáng	91
+周夷王	zhōu yí wáng	82
+周永康	zhōu yǒng kāng	909
+周有光	zhōu yǒu guāng	176
+周幽王	zhōu yōu wáng	578
+周玉蔻	zhōu yù kòu	9
+周元王	zhōu yuán wáng	16
+周昭王	zhōu zhāo wáng	135
+周志華	zhōu zhì huá	534
+周芷若	zhōu zhǐ ruò	3325
+周莊王	zhōu zhuāng wáng	19
+周總理	zhōu zǒng lǐ	1278
+周作人	zhōu zuò rén	634
+朱柏廬	zhū bǎi lú	333
+朱邦復	zhū bāng fù	459
+朱碧石	zhū bì shí	16
+朱常洛	zhū cháng luò	198
+朱常洵	zhū cháng xún	63
+朱宸濠	zhū chén háo	113
+朱重八	zhū chóng bā	616
+朱旦華	zhū dàn huá	405
+朱丹蓬	zhū dān péng	28
+朱德熙	zhū dé xī	436
+朱德庸	zhū dé yōng	35
+朱棣文	zhū dì wén	594
+朱敦儒	zhū dūn rú	60
+朱夫子	zhū fū zǐ	364
+朱高熾	zhū gāo chì	160
+朱高煦	zhū gāo xù	91
+朱共山	zhū gòng shān	387
+朱廣滬	zhū guǎng hù	66
+朱光潛	zhū guāng qián	333
+朱光亞	zhū guāng yà	75
+朱光耀	zhū guāng yào	3
+朱亨嘉	zhū hēng jiā	342
+朱宏任	zhū hóng rèn	333
+朱洪武	zhū hóng wǔ	28
+朱弘昭	zhū hóng zhāo	382
+朱厚熜	zhū hòu cōng	248
+朱厚照	zhū hòu zhào	170
+朱皇后	zhū huáng hòu	327
+朱慧珍	zhū huì zhēn	405
+朱家驊	zhū jiā huá	44
+朱建華	zhū jiàn huá	107
+朱見深	zhū jiàn shēn	173
+朱江洪	zhū jiāng hóng	25
+朱景玄	zhū jǐng xuán	315
+朱九真	zhū jiǔ zhēn	97
+朱可夫	zhū kě fū	826
+朱立倫	zhū lì lún	16
+朱麗倩	zhū lì qiàn	6
+朱麗葉	zhū lì yè	619
+朱良志	zhū liáng zhì	346
+朱亮祖	zhū liàng zǔ	75
+朱玲玲	zhū líng líng	63
+朱買臣	zhū mǎi chén	72
+朱明國	zhū míng guó	576
+朱木炎	zhū mù yán	364
+朱培德	zhū péi dé	22
+朱祁鈺	zhū qí yù	129
+朱屺瞻	zhū qǐ zhān	6
+朱慶育	zhū qìng yù	446
+朱慶餘	zhū qìng yú	308
+朱慶餘	zhū qìng yú	156
+朱全忠	zhū quán zhōng	192
+朱鎔基	zhū róng jī	261
+朱汝珍	zhū rǔ zhēn	590
+朱銳斌	zhū ruì bīn	400
+朱森林	zhū sēn lín	351
+朱少傑	zhū shǎo jié	414
+朱紹良	zhū shào liáng	572
+朱少醒	zhū shǎo xǐng	2098
+朱生豪	zhū shēng háo	427
+朱世傑	zhū shì jié	384
+朱世珍	zhū shì zhēn	288
+朱術桂	zhū shù guì	3
+朱樹豪	zhū shù háo	266
+朱淑真	zhū shū zhēn	72
+朱淑貞	zhū shū zhēn	65
+朱蘇進	zhū sū jìn	22
+朱天文	zhū tiān wén	88
+朱維錚	zhū wéi zhēng	414
+朱文公	zhū wén gōng	392
+朱五四	zhū wǔ sì	333
+朱希祖	zhū xī zǔ	432
+朱小丹	zhū xiǎo dān	3
+朱嘯虎	zhū xiào hǔ	471
+朱曉玫	zhū xiǎo méi	331
+朱蕭木	zhū xiāo mù	41
+朱宣咸	zhū xuān xián	261
+朱學範	zhū xué fàn	657
+朱學恆	zhū xué héng	129
+朱學勤	zhū xué qín	464
+朱延壽	zhū yán shòu	423
+朱一貴	zhū yī guì	19
+朱以海	zhū yǐ hǎi	50
+朱翊鈞	zhū yì jūn	207
+朱彝尊	zhū yí zūn	100
+朱永新	zhū yǒng xīn	28
+朱由檢	zhū yóu jiǎn	317
+朱由校	zhū yóu xiào	132
+朱玉辰	zhū yù chén	12
+朱聿鍵	zhū yù jiàn	526
+朱元璋	zhū yuán zhāng	9480
+朱雲來	zhū yún lái	6
+朱蘊山	zhū yùn shān	410
+朱允炆	zhū yǔn wén	892
+朱瞻基	zhū zhān jī	433
+朱長齡	zhū zhǎng líng	526
+朱兆祥	zhū zhào xiáng	486
+朱之鑫	zhū zhī xīn	486
+朱執信	zhū zhí xìn	334
+朱子柳	zhū zǐ liǔ	78
+朱自清	zhū zì qīng	659
+朱子奢	zhū zǐ shē	238
+朱子真	zhū zǐ zhēn	274
+朱祖謀	zhū zǔ móu	9
+莊辰超	zhuāng chén chāo	16
+莊承篯	zhuāng chéng jiān	194
+莊大田	zhuāng dà tián	418
+莊逢甘	zhuāng féng gān	333
+莊國榮	zhuāng guó róng	387
+莊惠王	zhuāng huì wáng	333
+莊靜庵	zhuāng jìng ān	410
+莊聚賢	zhuāng jù xián	22
+莊烈帝	zhuāng liè dì	297
+莊梅岩	zhuāng méi yán	328
+莊夢蝶	zhuāng mèng dié	446
+莊墨韓	zhuāng mò hán	234
+莊親王	zhuāng qīn wáng	558
+莊青翟	zhuāng qīng dí	279
+莊榮文	zhuāng róng wén	3
+莊瑞雄	zhuāng ruì xióng	392
+莊士敦	zhuāng shì dūn	78
+莊世平	zhuāng shì píng	9
+莊綬甲	zhuāng shòu jiǎ	153
+莊述祖	zhuāng shù zǔ	202
+莊廷鑨	zhuāng tíng lóng	392
+莊惟敏	zhuāng wéi mǐn	256
+莊文強	zhuāng wén qiáng	19
+莊希泉	zhuāng xī quán	306
+莊襄王	zhuāng xiāng wáng	91
+莊雅婷	zhuāng yǎ tíng	179
+莊炎林	zhuāng yán lín	338
+莊蘊寬	zhuāng yùn kuān	346
+莊之蝶	zhuāng zhī dié	3
+莊智淵	zhuāng zhì yuān	9
+莊重文	zhuāng zhòng wén	414
+莊祖宜	zhuāng zǔ yí	28
+齊明帝	zī míng dì	572
+鄒碧華	zōu bì huá	19
+鄒秉文	zōu bǐng wén	3
+鄒承魯	zōu chéng lǔ	396
+鄒漢勳	zōu hàn xūn	180
+鄒恆甫	zōu héng fǔ	129
+鄒家華	zōu jiā huá	9
+鄒靜之	zōu jìng zhī	540
+鄒普勝	zōu pǔ shèng	310
+鄒勝龍	zōu shèng lóng	3
+鄒守益	zōu shǒu yì	3
+鄒韜奮	zōu tāo fèn	28
+鄒文懷	zōu wén huái	364
+鄒一桂	zōu yī guì	288
+鄒逸麟	zōu yì lín	320
+鄒應龍	zōu yìng lóng	432
+鄒元標	zōu yuán biāo	41
+鄒振先	zōu zhèn xiān	189
+鄒自景	zōu zì jǐng	310
+鄒作華	zōu zuò huá	328
+穆阿維葉	mù ā wéi yè	508
+穆巴拉克	mù bā lā kè	107
+穆德里克	mù dé lǐ kè	41
+穆蒂尼奧	mù dì ní ào	53
+穆古魯扎	mù gǔ lǔ zhā	13
+穆罕默德	mù hǎn mò dé	728
+穆拉托里	mù lā tuō lǐ	243
+穆里尼奧	mù lǐ ní ào	12007
+穆尼亞因	mù ní yà yīn	356
+穆沙拉夫	mù shā lā fū	25
+穆托姆博	mù tuō mǔ bó	129
+穆西亞拉	mù xī yà lā	31
+聶赤贊普	niè chì zàn pǔ	328
+聶斯脫里	niè sī tuō lǐ	549
+齊藤千穗	qí téng qiān suì	220
+橋本聖子	qiáo běn shèng zǐ	288
+橋本英郎	qiáo běn yīng láng	202
+橋本左內	qiáo běn zuǒ nèi	243
+施特勞斯	shī tè láo sī	1438
+中島健藏	zhōng dǎo jiàn cáng	180
+中島京子	zhōng dǎo jīng zǐ	292
+中島翔哉	zhōng dǎo xiáng zāi	338
+中島一貴	zhōng dǎo yí guì	279
+中島英樹	zhōng dǎo yīng shù	180
+中島哲也	zhōng dǎo zhé yě	500
