@@ -56494,10 +56494,8 @@ sort: by_weight
 沈吕九方程	shěn lǚ jiǔ fāng chéng	100
 什么程度才	shén me chéng dù cái	100
 什么东西呀	shén me dōng xi ya	100
-什么都不干	shén me dōu bú gàn	100
 什么都不精	shén me dōu bù jīng	100
 什么都不图	shén me dōu bù tú	100
-什么都不问	shén me dōu bú wèn	100
 什么都没学	shén me dōu méi xué	100
 什么都是错	shén me dōu shì cuò	100
 什么反应的	shén me fǎn yìng de	100
@@ -58765,6 +58763,8 @@ sort: by_weight
 世茂世界湾	shì mào shì jiè wān	100
 世贸中心站	shì mào zhōng xīn zhàn	100
 什么都不搭	shí me dōu bù dā	100
+什么都不干	shí me dōu bú gàn	100
+什么都不问	shí me dōu bú wèn	100
 时美百服咛	shí měi bǎi fú níng	100
 饰美叉丝壳	shì měi chā sī ké	100
 十美分硬币	shí měi fēn yìng bì	100
@@ -67457,7 +67457,7 @@ sort: by_weight
 危害和平罪	wēi hài hé píng zuì	100
 威海刘公岛	wēi hǎi liú gōng dǎo	100
 危害人类罪	wēi hài rén lèi zuì	100
-喂孩子吃饭	wèi hái zǐ chī fàn	100
+喂孩子吃饭	wèi hái zi chī fàn	100
 未合并领土	wèi hé bìng lǐng tǔ	100
 渭河平原带	wèi hé píng yuán dài	100
 围合式布局	wéi hé shì bù jú	100
@@ -70572,8 +70572,8 @@ sort: by_weight
 喜欢艾米尔	xǐ huan ài mǐ ěr	100
 喜欢安德鲁	xǐ huan ān dé lǔ	100
 喜欢布莱德	xǐ huan bù lái dé	100
-喜欢吃的菜	xǐ huān chī de cài	100
-喜欢吃面食	xǐ huān chī miàn shí	100
+喜欢吃的菜	xǐ huan chī de cài	100
+喜欢吃面食	xǐ huan chī miàn shí	100
 喜欢的老师	xǐ huan de lǎo shī	100
 喜欢的美食	xǐ huan de měi shí	100
 喜欢的人是	xǐ huan de rén shì	100
@@ -155845,8 +155845,8 @@ sort: by_weight
 孩子毕竟是孩子	hái zi bì jìng shì hái zi	100
 孩子不好好吃饭	hái zi bù hǎo hǎo chī fàn	100
 孩子缺乏安全感	hái zi quē fá ān quán gǎn	100
-孩子是自己的好	hái zǐ shì zì jǐ de hǎo	100
-孩子特别喜欢吃	hái zi tè bié xǐ huān chī	100
+孩子是自己的好	hái zi shì zì jǐ de hǎo	100
+孩子特别喜欢吃	hái zi tè bié xǐ huan chī	100
 孩子最好的老师	hái zi zuì hǎo de lǎo shī	100
 罕百里教法学派	hǎn bǎi lǐ jiào fǎ xué pài	100
 汉堡纤维蛋白原	hàn bǎo xiān wéi dàn bái yuán	100
