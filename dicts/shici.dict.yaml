@@ -30541,9 +30541,6 @@ sort: by_weight
 曾不以日月	céng bù yǐ rì yuè	100
 曾不异炎方	céng bú yì yán fāng	100
 曾不营农作	céng bù yíng nóng zuò	100
-曾参宁杀人	céng cān níng shā rén	100
-曾参善爱亲	céng cān shàn ài qīn	100
-曾参与游夏	céng cān yù yóu xià	100
 层巢俯云木	céng cháo fǔ yún mù	100
 层城闭蛾眉	céng chéng bì é méi	100
 层城闭阁闲	céng chéng bì gé xián	100
@@ -72068,7 +72065,6 @@ sort: by_weight
 何必沧浪去	hé bì cāng láng qù	100
 何必沧浪水	hé bì cāng láng shuǐ	100
 何必操白刃	hé bì cāo bái rèn	100
-何必曾参传	hé bì céng cān chuán	100
 何必长济时	hé bì cháng jì shí	100
 何必长隐逸	hé bì cháng yǐn yì	100
 何彼尘昏人	hé bǐ chén hūn rén	100
@@ -72197,6 +72193,7 @@ sort: by_weight
 何必在春期	hé bì zài chūn qī	100
 何必在深山	hé bì zài shēn shān	100
 何必择所安	hé bì zé suǒ ān	100
+何必曾参传	hé bì zēng shēn chuán	100
 何必钟期耳	hé bì zhōng qī ěr	100
 何必重思量	hé bì zhòng sī liang	100
 何必濯沧浪	hé bì zhuó cāng láng	100
@@ -85607,7 +85604,7 @@ sort: by_weight
 见日敢辞迟	jiàn rì gǎn cí chí	100
 贱日岂殊众	jiàn rì qǐ shū zhòng	100
 兼容燕子巢	jiān róng yàn zi cháo	100
-兼荣知任重	jiān róng zhī rèn zhòng	100
+兼荣知任重	jiān róng zhī rén zhòng	100
 渐入愁时节	jiàn rù chóu shí jié	100
 渐入栋梁柱	jiàn rù dòng liáng zhù	100
 见汝鸣秋雨	jiàn rǔ míng qiū yǔ	100
@@ -103002,7 +102999,7 @@ sort: by_weight
 里颁慈惠赏	lǐ bān cí huì shǎng	100
 罹谤岂由人	lí bàng qǐ yóu rén	100
 礼薄霸陵原	lǐ báo bà líng yuán	100
-力薄惭任重	lì báo cán rèn zhòng	100
+力薄惭任重	lì báo cán rén zhòng	100
 离抱常忡忡	lí bào cháng chōng chōng	100
 离抱怅多盈	lí bào chàng duō yíng	100
 离抱怅未平	lí bào chàng wèi píng	100
@@ -109743,7 +109740,7 @@ sort: by_weight
 路危行木杪	lù wēi xíng mù miǎo	100
 露味挹三危	lù wèi yì sān wēi	100
 路唯瞻凤翣	lù wéi zhān fèng shà	100
-鲁闻二曾参	lǔ wén èr céng cān	100
+鲁闻二曾参	lǔ wén èr zēng shēn	100
 露文晞宿草	lù wén xī sù cǎo	100
 炉温先暖酒	lú wēn xiān nuǎn jiǔ	100
 炉温夜深坐	lú wēn yè shēn zuò	100
@@ -120070,7 +120067,7 @@ sort: by_weight
 鸟阵卷寒风	niǎo zhèn juǎn hán fēng	100
 鸟阵卷胡风	niǎo zhèn juǎn hú fēng	100
 袅枝翻翠羽	niǎo zhī fān cuì yǔ	100
-鸟中之曾参	niǎo zhōng zhī céng cān	100
+鸟中之曾参	niǎo zhōng zhī zēng shēn	100
 鸟籀遗新阁	niǎo zhòu yí xīn gé	100
 鸟啭深林里	niǎo zhuàn shēn lín lǐ	100
 鸟啭竹林家	niǎo zhuàn zhú lín jiā	100
@@ -137966,10 +137963,10 @@ sort: by_weight
 人中白发侵	rén zhōng bái fà qīn	100
 人中百无一	rén zhōng bǎi wú yī	100
 人中出烦恼	rén zhōng chū fán nǎo	100
-任重功无立	rèn zhòng gōng wú lì	100
-任重兼乌府	rèn zhòng jiān wū fǔ	100
+任重功无立	rén zhòng gōng wú lì	100
+任重兼乌府	rén zhòng jiān wū fǔ	100
 人中十有七	rén zhōng shí yǒu qī	100
-任重由来醉	rèn zhòng yóu lái zuì	100
+任重由来醉	rén zhòng yóu lái zuì	100
 人中欲认难	rén zhōng yù rèn nán	100
 人众者胜天	rén zhòng zhě shèng tiān	100
 任逐桑榆暖	rèn zhú sāng yú nuǎn	100
@@ -147570,7 +147567,7 @@ sort: by_weight
 省躬念前哲	shěng gōng niàn qián zhé	100
 省躬日三复	shěng gōng rì sān fù	100
 省躬私自愧	shěng gōng sī zì kuì	100
-省躬知任重	shěng gōng zhī rèn zhòng	100
+省躬知任重	shěng gōng zhī rén zhòng	100
 生故难豫谋	shēng gù nán yù móu	100
 声冠霍嫖姚	shēng guān huò piáo yáo	100
 生归话辛苦	shēng guī huà xīn kǔ	100
@@ -218724,6 +218721,9 @@ sort: by_weight
 赠汝千里行	zèng rǔ qiān lǐ xíng	100
 憎山欲隳突	zēng shān yù huī tū	100
 赠神目相士	zèng shén mù xiàng shì	100
+曾参宁杀人	zēng shēn níng shā rén	100
+曾参善爱亲	zēng shēn shàn ài qīn	100
+曾参与游夏	zēng shēn yǔ yóu xià	100
 增胜当倍倍	zēng shèng dāng bèi bèi	100
 赠适庵册工	zèng shì ān cè gōng	100
 赠诗焉敢坠	zèng shī yān gǎn zhuì	100
@@ -245569,7 +245569,6 @@ sort: by_weight
 层波万顷如熔金	céng bō wàn qǐng rú róng jīn	100
 曾不得献于君王	céng bù dé xiàn yú jūn wáng	100
 曾不侮予以色辞	céng bù wǔ yǔ yǐ sè cí	100
-曾参岂是杀人者	céng cān qǐ shì shā rén zhě	100
 层层草木暗西岭	céng céng cǎo mù àn xī lǐng	100
 层层水落白滩生	céng céng shuǐ luò bái tān shēng	100
 层城绮阁遥相望	céng chéng qǐ gé yáo xiāng wàng	100
@@ -319060,7 +319059,7 @@ sort: by_weight
 宜在朱楼绣户中	yí zài zhū lóu xiù hù zhōng	100
 遗簪堕珥解罗襦	yí zān duò ěr jiě luó rú	100
 一簪华发岸纶巾	yī zān huá fà àn guān jīn	100
-易箦不必如曾参	yì zé bú bì rú céng cān	100
+易箦不必如曾参	yì zé bú bì rú zēng shēn	100
 衣则风兮车上霜	yī zé fēng xī chē shàng shuāng	100
 一宅柳花今似雪	yì zhái liǔ huā jīn sì xuě	100
 一斋三请纪行诗	yī zhāi sān qǐng jì xíng shī	100
@@ -325287,6 +325286,7 @@ sort: by_weight
 赠清漳明府侄聿	zèng qīng zhāng míng fǔ zhí yù	100
 赠饶阳张司户燧	zèng ráo yáng zhāng sī hù suì	100
 赠人以言予岂敢	zèng rén yǐ yán yǔ qǐ gǎn	100
+曾参岂是杀人者	zēng shēn qǐ shì shā rén zhě	100
 曾参杀人慈母疑	zēng shēn shā rén cí mǔ yí	100
 赠沈学士张歌人	zèng shěn xué shì zhāng gē rén	100
 赠嗣直弟颂十首	zèng sì zhí dì sòng shí shǒu	100
@@ -329558,8 +329558,8 @@ sort: by_weight
 自爱名山入剡中	zì ài míng shān rù shàn zhōng	100
 自爱深居隐姓名	zì ài shēn jū yǐn xìng míng	100
 自傍芳丛摘鹰觜	zì bàng fāng cóng zhāi yīng zī	100
-自保曾参不杀人	zì bǎo céng cān bù shā rén	100
 紫苞欲绽高笋牙	zǐ bāo yù zhàn gāo sǔn yá	100
+自保曾参不杀人	zì bǎo zēng shēn bù shā rén	100
 自悲由瑟无弹处	zì bēi yóu sè wú dàn chù	100
 自比凌波洛浦游	zì bǐ líng bō luò pǔ yóu	100
 自比鲇鱼缘竹竿	zì bǐ nián yú yuán zhú gān	100
@@ -332098,7 +332098,7 @@ sort: by_weight
 故闻柳下惠之风者	gù wén liǔ xià huì zhī fēng zhě	100
 故吾思昆仑之琪树	gù wú sī kūn lún zhī qí shù	100
 故昔者尧问于舜曰	gù xī zhě yáo wèn yú shùn yuē	100
-故孝己忧而曾参悲	gù xiào jǐ yōu ér céng cān bēi	100
+故孝己忧而曾参悲	gù xiào jǐ yōu ér zēng shēn bēi	100
 古意呈补阙乔知之	gǔ yì chéng bǔ quē qiáo zhī zhī	100
 故一形有失其形者	gù yī xíng yǒu shī qí xíng zhě	100
 故有亡国戮民无已	gù yǒu wáng guó lù mín wú yǐ	100

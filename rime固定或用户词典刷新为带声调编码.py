@@ -8,21 +8,72 @@
 单列汉字>单列汉字\t拼音
 单列汉字\t数字>单列汉字\t拼音\t数字
 单列汉字\t旧编码\t数字>单列汉字\t拼音\t数字
+
+新增：特殊文件集合 + 词首强制读音规则
 """
 
 import os, re
 from tqdm import tqdm
 from pypinyin import pinyin, Style, load_phrases_dict, load_single_dict
 
-# ─────────────────────────────────────────────────────────
+
 # 你的词典用什么分隔辅助码？
-# ─────────────────────────────────────────────────────────
+
 AUX_SEP_REGEX = r'[;\[]'           # 定义“拼音后缀”分隔符；默认匹配 `;` 与 `[`
 
+# 特殊文件与词首强制读音规则
 
-# ─────────────────────────────────────────────────────────
+SPECIAL_FILE_NAMES = {
+    "renming.dict.yaml",
+    "mingren.dict.yaml",
+    "yiren.dict.yaml",
+}
+SPECIAL_RULES = {
+    "曾": "zēng",
+    "单": "shàn",
+    "仇": "qiú",
+    "曲": "qū",
+    "任": "rén",
+    "查": "zhā",
+    "解": "xiè",
+    "盖": "gě",
+    "区": "ōu",
+    "朴": "piáo",
+    "华": "huà",
+    "乐": "yuè",
+    "燕": "yān",
+    "员": "yùn",
+    "都": "dū",
+    "过": "guō",
+    "哈": "hǎ",
+    "纪": "jǐ",
+    "句": "gōu",
+    "那": "nā",
+    "召": "shào",
+    "折": "shé",
+    "宿": "sù",
+    "洗": "xiǎn",
+    "相": "xiāng",
+    "占": "zhān",
+    "种": "chóng",
+    "澹": "tán",
+    "隗": "wěi",
+    "瞿": "qú",
+    "阚": "kàn",
+    "牟": "móu",
+    "撒": "sǎ",
+    "薄": "bó",
+    "柏": "bǎi",
+    "盛": "shèng",
+    "车": "chē",
+    "贾": "jiǎ",
+    "干": "gān",
+    "蒙": "méng",
+    "宁": "níng",
+}
+
 # 自定义拼音加载
-# ─────────────────────────────────────────────────────────
+
 def load_custom_pinyin_from_directory(directory: str):
     s_map, p_map = {}, {}
     if not os.path.isdir(directory):
@@ -49,9 +100,9 @@ def load_custom_pinyin_from_directory(directory: str):
         print(f"✓ 单字拼音加载 {len(s_map)} 条")
 
 
-# ─────────────────────────────────────────────────────────
+
 # 表头和类型识别
-# ─────────────────────────────────────────────────────────
+
 yaml_heads = ('---', 'name:', 'version:', 'sort:', '...')
 
 def is_userdb_head(line: str) -> bool:
@@ -65,9 +116,9 @@ def tone_mark(seg: str) -> str:
     return (py[0][0] if py else root) + suffix
 
 
-# ─────────────────────────────────────────────────────────
+
 # 按行处理
-# ─────────────────────────────────────────────────────────
+
 def normal_line(cols: list[str]) -> str:
     """普通词表行拼音修正；保留后缀 (;xx / [xx])"""
     word = cols[0]
@@ -115,16 +166,54 @@ def userdb_line(cols: list[str]) -> str:
     return '\t'.join(cols)
 
 
-# ─────────────────────────────────────────────────────────
+def apply_special_rules(line: str, is_userdb: bool) -> str:
+    """
+    对特殊文件中的行，若词首字在 SPECIAL_RULES 中，
+    则强制将对应拼音段改为指定的读音（保留后缀）。
+    """
+    if not SPECIAL_RULES:
+        return line
+    cols = line.split('\t')
+
+    if is_userdb:
+        if len(cols) < 2:
+            return line
+        word_idx, py_idx = 1, 0
+    else:
+        if len(cols) < 2:
+            return line
+        # 普通格式：汉字在 cols[0]，拼音在 cols[1]（由 normal_line 保证存在）
+        word_idx, py_idx = 0, 1
+
+    word = cols[word_idx]
+    if not word or word[0] not in SPECIAL_RULES:
+        return line
+
+    py_segs = cols[py_idx].split()
+    if not py_segs:
+        return line
+
+    new_py = SPECIAL_RULES[word[0]]
+    old_seg = py_segs[0]
+    root = re.split(AUX_SEP_REGEX, old_seg)[0]
+    suffix = old_seg[len(root):]
+    py_segs[0] = new_py + suffix
+    cols[py_idx] = ' '.join(py_segs)
+    return '\t'.join(cols)
+
+
+
 # 单文件处理
-# ─────────────────────────────────────────────────────────
+
 skip_set = {
     "duoyin.dict.yaml", "cuoyin.dict.yaml",
-    "zi.dict.yaml", "renming.dict.yaml", "mixed.dict.yaml"
+    "zi.dict.yaml"
 }
 
 def process_single_file(src: str, dst: str):
-    if os.path.basename(src) in skip_set:
+    basename = os.path.basename(src)
+    # 仅当在跳过集合且不在特殊文件集合中才跳过
+    if basename in skip_set and basename not in SPECIAL_FILE_NAMES:
         with open(src, encoding='utf-8') as s, open(dst, 'w', encoding='utf-8') as d:
             d.writelines(s)
         return
@@ -145,29 +234,30 @@ def process_single_file(src: str, dst: str):
             cols = line.split('\t')
             newline = userdb_line(cols) if userdb and len(cols) >= 3 else normal_line(cols)
 
-            # ─── 如果是 userdb 行且首列没空格，就补 1 个空格 ───
+            # userdb 行首列末尾补空格（保持格式一致）
             if userdb:
                 seg, *rest = newline.split('\t', 1)
                 if not seg.endswith(' '):
                     seg += ' '
                     newline = '\t'.join([seg] + rest)
 
-            d.write(newline + '\n')  
+            # 特殊规则修正
+            if basename in SPECIAL_FILE_NAMES:
+                newline = apply_special_rules(newline, userdb)
+
+            d.write(newline + '\n')
 
 
-# ─────────────────────────────────────────────────────────
+
 # 目录 / 单文件 处理 + tqdm
-# ─────────────────────────────────────────────────────────
+
 def process_files(path_in: str, path_out: str):
     # ————————————————— 单文件 —————————————————
     if os.path.isfile(path_in):
-        # 判断 path_out 是目录还是文件
         if os.path.isdir(path_out) or path_out.endswith(('/', '\\')):
-            # 当成目录
             os.makedirs(path_out, exist_ok=True)
             dst = os.path.join(path_out, os.path.basename(path_in))
         else:
-            # 当成文件
             os.makedirs(os.path.dirname(path_out) or '.', exist_ok=True)
             dst = path_out
 
@@ -194,11 +284,10 @@ def process_files(path_in: str, path_out: str):
         tqdm.write(f"✓ 完成 {os.path.basename(src)} → {os.path.relpath(dst, path_out)}")
 
 
-# ─────────────────────────────────────────────────────────
+
 # 固定路径调用
-# ─────────────────────────────────────────────────────────
+
 if __name__ == "__main__":
-    #输入输出可以为目录或者单文件
     input_dir  = "/home/amz/Documents/输入法方案/原始词库"
     output_dir = "/home/amz/Documents/输入法方案/万象拼音/dicts"
     custom_dir = "pinyin_data"
