@@ -30541,9 +30541,6 @@ sort: by_weight
 曾不以日月	céng bù yǐ rì yuè	100
 曾不異炎方	céng bú yì yán fāng	100
 曾不營農作	céng bù yíng nóng zuò	100
-曾參寧殺人	céng cān níng shā rén	100
-曾參善愛親	céng cān shàn ài qīn	100
-曾參與遊夏	céng cān yù yóu xià	100
 層巢俯雲木	céng cháo fǔ yún mù	100
 層城閉蛾眉	céng chéng bì é méi	100
 層城閉閣閒	céng chéng bì gé xián	100
@@ -72068,7 +72065,6 @@ sort: by_weight
 何必滄浪去	hé bì cāng láng qù	100
 何必滄浪水	hé bì cāng láng shuǐ	100
 何必操白刃	hé bì cāo bái rèn	100
-何必曾參傳	hé bì céng cān chuán	100
 何必長濟時	hé bì cháng jì shí	100
 何必長隱逸	hé bì cháng yǐn yì	100
 何彼塵昏人	hé bǐ chén hūn rén	100
@@ -72197,6 +72193,7 @@ sort: by_weight
 何必在春期	hé bì zài chūn qī	100
 何必在深山	hé bì zài shēn shān	100
 何必擇所安	hé bì zé suǒ ān	100
+何必曾參傳	hé bì zēng shēn chuán	100
 何必鍾期耳	hé bì zhōng qī ěr	100
 何必重思量	hé bì zhòng sī liang	100
 何必濯滄浪	hé bì zhuó cāng láng	100
@@ -85607,7 +85604,7 @@ sort: by_weight
 見日敢辭遲	jiàn rì gǎn cí chí	100
 賤日豈殊衆	jiàn rì qǐ shū zhòng	100
 兼容燕子巢	jiān róng yàn zi cháo	100
-兼榮知任重	jiān róng zhī rèn zhòng	100
+兼榮知任重	jiān róng zhī rén zhòng	100
 漸入愁時節	jiàn rù chóu shí jié	100
 漸入棟樑柱	jiàn rù dòng liáng zhù	100
 見汝鳴秋雨	jiàn rǔ míng qiū yǔ	100
@@ -103002,7 +102999,7 @@ sort: by_weight
 裏頒慈惠賞	lǐ bān cí huì shǎng	100
 罹謗豈由人	lí bàng qǐ yóu rén	100
 禮薄霸陵原	lǐ báo bà líng yuán	100
-力薄慚任重	lì báo cán rèn zhòng	100
+力薄慚任重	lì báo cán rén zhòng	100
 離抱常忡忡	lí bào cháng chōng chōng	100
 離抱悵多盈	lí bào chàng duō yíng	100
 離抱悵未平	lí bào chàng wèi píng	100
@@ -109743,7 +109740,7 @@ sort: by_weight
 路危行木杪	lù wēi xíng mù miǎo	100
 露味挹三危	lù wèi yì sān wēi	100
 路唯瞻鳳翣	lù wéi zhān fèng shà	100
-魯聞二曾參	lǔ wén èr céng cān	100
+魯聞二曾參	lǔ wén èr zēng shēn	100
 露文晞宿草	lù wén xī sù cǎo	100
 爐溫先暖酒	lú wēn xiān nuǎn jiǔ	100
 爐溫夜深坐	lú wēn yè shēn zuò	100
@@ -112133,7 +112130,7 @@ sort: by_weight
 滿意見昇平	mǎn yì jiàn shēng píng	100
 蠻夷陪作位	mán yí péi zuò wèi	100
 蠻夷塞成都	mán yí sāi chéng dū	100
-漫贏得青樓	màn yíng de qīng lóu	100
+漫贏得青樓	màn yíng dé qīng lóu	100
 漫遊樊水陰	màn yóu fán shuǐ yīn	100
 漫有酒盈樽	màn yǒu jiǔ yíng zūn	100
 漫遊無遠近	màn yóu wú yuǎn jìn	100
@@ -120070,7 +120067,7 @@ sort: by_weight
 鳥陣卷寒風	niǎo zhèn juǎn hán fēng	100
 鳥陣卷胡風	niǎo zhèn juǎn hú fēng	100
 嫋枝翻翠羽	niǎo zhī fān cuì yǔ	100
-鳥中之曾參	niǎo zhōng zhī céng cān	100
+鳥中之曾參	niǎo zhōng zhī zēng shēn	100
 鳥籀遺新閣	niǎo zhòu yí xīn gé	100
 鳥囀深林裡	niǎo zhuàn shēn lín lǐ	100
 鳥囀竹林家	niǎo zhuàn zhú lín jiā	100
@@ -137966,10 +137963,10 @@ sort: by_weight
 人中白發侵	rén zhōng bái fà qīn	100
 人中百無一	rén zhōng bǎi wú yī	100
 人中出煩惱	rén zhōng chū fán nǎo	100
-任重功無立	rèn zhòng gōng wú lì	100
-任重兼烏府	rèn zhòng jiān wū fǔ	100
+任重功無立	rén zhòng gōng wú lì	100
+任重兼烏府	rén zhòng jiān wū fǔ	100
 人中十有七	rén zhōng shí yǒu qī	100
-任重由來醉	rèn zhòng yóu lái zuì	100
+任重由來醉	rén zhòng yóu lái zuì	100
 人中欲認難	rén zhōng yù rèn nán	100
 人眾者勝天	rén zhòng zhě shèng tiān	100
 任逐桑榆暖	rèn zhú sāng yú nuǎn	100
@@ -145037,7 +145034,7 @@ sort: by_weight
 尚未殲渠魁	shàng wèi jiān qú kuí	100
 尚為江海賓	shàng wéi jiāng hǎi bīn	100
 尚未苦羸惙	shàng wèi kǔ léi chuò	100
-上危樓贏得	shàng wēi lóu yíng de	100
+上危樓贏得	shàng wēi lóu yíng dé	100
 尚為名檢束	shàng wéi míng jiǎn shù	100
 尚為名所縛	shàng wéi míng suǒ fù	100
 尚未能忘言	shàng wèi néng wàng yán	100
@@ -147570,7 +147567,7 @@ sort: by_weight
 省躬念前哲	shěng gōng niàn qián zhé	100
 省躬日三復	shěng gōng rì sān fù	100
 省躬私自愧	shěng gōng sī zì kuì	100
-省躬知任重	shěng gōng zhī rèn zhòng	100
+省躬知任重	shěng gōng zhī rén zhòng	100
 生故難豫謀	shēng gù nán yù móu	100
 聲冠霍嫖姚	shēng guān huò piáo yáo	100
 生歸話辛苦	shēng guī huà xīn kǔ	100
@@ -205585,16 +205582,16 @@ sort: by_weight
 應道軒車遲	yīng dào xuān chē chí	100
 應到月明歸	yīng dào yuè míng guī	100
 應到渚宮城	yīng dào zhǔ gōng chéng	100
-贏得白頭歸	yíng de bái tóu guī	100
-贏得鬢邊絲	yíng de bìn biān sī	100
+贏得白頭歸	yíng dé bái tóu guī	100
+贏得鬢邊絲	yíng dé bìn biān sī	100
 應得丹砂力	yīng de dān shā lì	100
 應得動春心	yīng de dòng chūn xīn	100
 應得見蛾眉	yīng de jiàn é méi	100
 應得兩回歸	yīng de liǎng huí guī	100
 應得靈芝也	yīng de líng zhī yě	100
-贏得千年在	yíng de qiān nián zài	100
+贏得千年在	yíng dé qiān nián zài	100
 應得遂霞棲	yīng de suì xiá qī	100
-贏得誤他生	yíng de wù tā shēng	100
+贏得誤他生	yíng dé wù tā shēng	100
 應得夜深聞	yīng de yè shēn wén	100
 應敵兵初起	yìng dí bīng chū qǐ	100
 影低藤架密	yǐng dī téng jià mì	100
@@ -218724,6 +218721,9 @@ sort: by_weight
 贈汝千里行	zèng rǔ qiān lǐ xíng	100
 憎山欲隳突	zēng shān yù huī tū	100
 贈神目相士	zèng shén mù xiàng shì	100
+曾參寧殺人	zēng shēn níng shā rén	100
+曾參善愛親	zēng shēn shàn ài qīn	100
+曾參與遊夏	zēng shēn yǔ yóu xià	100
 增勝當倍倍	zēng shèng dāng bèi bèi	100
 贈適庵冊工	zèng shì ān cè gōng	100
 贈詩焉敢墜	zèng shī yān gǎn zhuì	100
@@ -238339,8 +238339,8 @@ sort: by_weight
 因衆以寧所聞	yīn zhòng yǐ níng suǒ wén	100
 應把花卜歸期	yīng bǎ huā bo guī qī	100
 映帶幾點歸鴻	yìng dài jǐ diǎn guī hóng	100
-贏得倉皇北顧	yíng de cāng huáng běi gù	100
-贏得滿衣清淚	yíng de mǎn yī qīng lèi	100
+贏得倉皇北顧	yíng dé cāng huáng běi gù	100
+贏得滿衣清淚	yíng dé mǎn yī qīng lèi	100
 贏得消魂無語	yíng dé xiāo hún wú yǔ	100
 應渡淮南信宿	yīng dù huái nán xìn sù	100
 攖而後成者也	yīng ér hòu chéng zhě yě	100
@@ -242986,7 +242986,7 @@ sort: by_weight
 博平真人王志安	bó píng zhēn rén wáng zhì ān	100
 撥棄潭州百斛酒	bō qì tán zhōu bǎi hú jiǔ	100
 撥棄萬事勿復談	bō qì wàn shì wù fù tán	100
-簸錢贏得兩三籌	bǒ qián yíng de liǎng sān chóu	100
+簸錢贏得兩三籌	bǒ qián yíng dé liǎng sān chóu	100
 薄情轉是多情累	bó qíng zhuǎn shì duō qíng lèi	100
 撥取公卿如糞土	bō qǔ gōng qīng rú fèn tǔ	100
 卜人官廢亦已久	bo rén guān fèi yì yǐ jiǔ	100
@@ -245569,7 +245569,6 @@ sort: by_weight
 層波萬頃如熔金	céng bō wàn qǐng rú róng jīn	100
 曾不得獻於君王	céng bù dé xiàn yú jūn wáng	100
 曾不侮予以色辭	céng bù wǔ yǔ yǐ sè cí	100
-曾參豈是殺人者	céng cān qǐ shì shā rén zhě	100
 層層草木暗西嶺	céng céng cǎo mù àn xī lǐng	100
 層層水落白灘生	céng céng shuǐ luò bái tān shēng	100
 層城綺閣遙相望	céng chéng qǐ gé yáo xiāng wàng	100
@@ -319060,7 +319059,7 @@ sort: by_weight
 宜在朱樓繡戶中	yí zài zhū lóu xiù hù zhōng	100
 遺簪墮珥解羅襦	yí zān duò ěr jiě luó rú	100
 一簪華髮岸綸巾	yī zān huá fà àn guān jīn	100
-易簀不必如曾參	yì zé bú bì rú céng cān	100
+易簀不必如曾參	yì zé bú bì rú zēng shēn	100
 衣則風兮車上霜	yī zé fēng xī chē shàng shuāng	100
 一宅柳花今似雪	yì zhái liǔ huā jīn sì xuě	100
 一齋三請紀行詩	yī zhāi sān qǐng jì xíng shī	100
@@ -319881,17 +319880,17 @@ sort: by_weight
 影到深潭赤玉幢	yǐng dào shēn tán chì yù zhuàng	100
 應到天明頭盡白	yīng dào tiān míng tóu jìn bái	100
 應到嚴君開卦處	yīng dào yán jūn kāi guà chù	100
-贏得寶刀重刻字	yíng de bǎo dāo zhòng kè zì	100
+贏得寶刀重刻字	yíng dé bǎo dāo zhòng kè zì	100
 應得池塘生春草	yīng de chí táng shēng chūn cǎo	100
 迎得春光先到來	yíng dé chūn guāng xiān dào lái	100
 應得東流入漢家	yīng de dōng liú rù hàn jiā	100
-贏得兒童語音好	yíng de ér tóng yǔ yīn hǎo	100
+贏得兒童語音好	yíng dé ér tóng yǔ yīn hǎo	100
 映得芙蓉不是花	yìng de fú róng bú shì huā	100
-贏得更深哭一場	yíng de gēng shēn kū yì chǎng	100
-贏得年年清賞處	yíng de nián nián qīng shǎng chù	100
-贏得青樓薄倖名	yíng de qīng lóu bó xìng míng	100
-贏得如今長恨別	yíng de rú jīn cháng hèn bié	100
-贏得山林作道場	yíng de shān lín zuò dào chǎng	100
+贏得更深哭一場	yíng dé gēng shēn kū yì chǎng	100
+贏得年年清賞處	yíng dé nián nián qīng shǎng chù	100
+贏得青樓薄倖名	yíng dé qīng lóu bó xìng míng	100
+贏得如今長恨別	yíng dé rú jīn cháng hèn bié	100
+贏得山林作道場	yíng dé shān lín zuò dào chǎng	100
 贏得生前身後名	yíng dé shēng qián shēn hòu míng	100
 應得文簫駕彩鸞	yīng de wén xiāo jià cǎi luán	100
 應敵皆言筆有神	yìng dí jiē yán bǐ yǒu shén	100
@@ -325287,6 +325286,7 @@ sort: by_weight
 贈清漳明府侄聿	zèng qīng zhāng míng fǔ zhí yù	100
 贈饒陽張司戶燧	zèng ráo yáng zhāng sī hù suì	100
 贈人以言予豈敢	zèng rén yǐ yán yǔ qǐ gǎn	100
+曾參豈是殺人者	zēng shēn qǐ shì shā rén zhě	100
 曾參殺人慈母疑	zēng shēn shā rén cí mǔ yí	100
 贈沈學士張歌人	zèng shěn xué shì zhāng gē rén	100
 贈嗣直弟頌十首	zèng sì zhí dì sòng shí shǒu	100
@@ -329558,8 +329558,8 @@ sort: by_weight
 自愛名山入剡中	zì ài míng shān rù shàn zhōng	100
 自愛深居隱姓名	zì ài shēn jū yǐn xìng míng	100
 自傍芳叢摘鷹觜	zì bàng fāng cóng zhāi yīng zī	100
-自保曾參不殺人	zì bǎo céng cān bù shā rén	100
 紫苞欲綻高筍牙	zǐ bāo yù zhàn gāo sǔn yá	100
+自保曾參不殺人	zì bǎo zēng shēn bù shā rén	100
 自悲由瑟無彈處	zì bēi yóu sè wú dàn chù	100
 自比凌波洛浦遊	zì bǐ líng bō luò pǔ yóu	100
 自比鮎魚緣竹竿	zì bǐ nián yú yuán zhú gān	100
@@ -332098,7 +332098,7 @@ sort: by_weight
 故聞柳下惠之風者	gù wén liǔ xià huì zhī fēng zhě	100
 故吾思崑崙之琪樹	gù wú sī kūn lún zhī qí shù	100
 故昔者堯問於舜曰	gù xī zhě yáo wèn yú shùn yuē	100
-故孝己憂而曾參悲	gù xiào jǐ yōu ér céng cān bēi	100
+故孝己憂而曾參悲	gù xiào jǐ yōu ér zēng shēn bēi	100
 古意呈補闕喬知之	gǔ yì chéng bǔ quē qiáo zhī zhī	100
 故一形有失其形者	gù yī xíng yǒu shī qí xíng zhě	100
 故有亡國戮民無已	gù yǒu wáng guó lù mín wú yǐ	100
