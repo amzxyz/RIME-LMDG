@@ -3254,11 +3254,27 @@ sort: by_weight
 刺瓜藤	cì guā téng	5
 刺冠菊	cì guān jú	11
 刺果瓜	cì guǒ guā	5
+刺果芹	cì guǒ qín	171
 刺果芹	cì guǒ qín	13
+刺果树	cì guǒ shù	144
 刺果树	cì guǒ shù	4
+刺果松	cì guǒ sōng	279
+刺果藤	cì guǒ téng	248
+刺果藓	cì guǒ xiǎn	261
 磁海星	cí hǎi xīng	8
+刺核藤	cì hé téng	162
 刺核藤	cì hé téng	13
+刺黑竹	cì hēi zhú	76
+刺黑珠	cì hēi zhū	42
 刺花蓼	cì huā liǎo	7
+刺槐花	cì huái huā	266
+刺槐蜜	cì huái mì	225
+刺槐树	cì huái shù	306
+刺槐素	cì huái sù	99
+刺獾蛛	cì huān zhū	50
+刺黄瓜	cì huáng guā	320
+刺黄果	cì huáng guǒ	76
+刺黄花	cì huáng huā	99
 刺棘鲶	cì jí nián	8
 刺角蜂	cì jiǎo fēng	13
 刺结蚁	cì jié yǐ	5
@@ -3271,20 +3287,35 @@ sort: by_weight
 刺孔菌	cì kǒng jūn	5
 刺篱木	cì lí mù	7
 刺莲花	cì lián huā	18
+刺莲藕	cì lián ǒu	4
+刺鳞草	cì lín cǎo	234
 刺鳞草	cì lín cǎo	19
 刺鳞苔	cì lín tái	6
+刺蛮王	cì mán wáng	162
 刺锚草	cì máo cǎo	12
+刺毛虫	cì máo chóng	3
 刺毛藓	cì máo xiǎn	8
 刺帽藓	cì mào xiǎn	4
+刺毛状	cì máo zhuàng	194
+刺玫瑰	cì méi gui	9
+刺玫果	cì méi guǒ	189
+刺玫花	cì méi huā	252
+刺玫菊	cì méi jú	130
 刺猛鱼	cì měng yú	43
 刺茗荷	cì míng hé	8
 刺沫蝉	cì mò chán	4
+刺蘑菇	cì mó gu	261
+刺茉莉	cì mò lì	238
 刺茉莉	cì mò lì	19
 慈母鲸	cí mǔ jīng	7
+刺牡蛎	cì mǔ lì	99
+刺木蓼	cì mù liǎo	50
+刺柠吉	cì níng jí	45
 刺盘孢	cì pán bāo	4
 刺鳑鲏	cì páng pí	4
 刺皮螨	cì pí mǎn	6
 刺球菌	cì qiú jūn	5
+刺楸树	cì qiū shù	99
 刺人参	cì rén cān	5
 刺沙蚕	cì shā cán	8
 刺蒴麻	cì shuò má	21
@@ -3296,9 +3327,14 @@ sort: by_weight
 刺豚鼠	cì tún shǔ	5
 刺臀鱼	cì tún yú	79
 刺网蝽	cì wǎng chūn	5
+刺尾鸫	cì wěi dōng	234
+刺尾狮	cì wěi shī	293
 刺尾鱼	cì wěi yú	172
+刺涡蛛	cì wō zhū	76
+刺舞蛛	cì wǔ zhū	99
 刺线虫	cì xiàn chóng	7
 刺续断	cì xù duàn	6
+刺芫荽	cì yán suī	99
 刺翼蚱	cì yì zhà	5
 刺鱼下	cì yú xià	6
 刺鱼亚	cì yú yà	6
@@ -12898,6 +12934,7 @@ sort: by_weight
 胡须地衣	hú xū dì yī	1
 湖硬头鱼	hú yìng tóu yú	5
 弧蛀果蛾	hú zhù guǒ é	1
+花斑皮蠹	huā bān pí dù	99
 花斑线虫	huā bān xiàn chóng	1
 花背豚鼠	huā bèi tún shǔ	1
 华波纹蛾	huá bō wén é	1
