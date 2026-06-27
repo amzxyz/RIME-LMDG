@@ -1,0 +1,13 @@
+[submodule "vendor/rime-frost"]
+	path = vendor/rime-frost
+	url = https://github.com/gaboolic/rime-frost
+[submodule "vendor/rime-ice"]
+	path = vendor/rime-ice
+	url = https://github.com/iDvel/rime-ice
+[submodule "vendor/rime_wanxiang"]
+	path = vendor/rime_wanxiang
+	url = https://github.com/amzxyz/rime_wanxiang
+	branch = wanxiang
+[submodule "vendor/rime-wubi-sentence"]
+	path = vendor/rime-wubi-sentence
+	url = https://github.com/gaboolic/rime-wubi-sentence

@@ -1,0 +1,10 @@
+Third-party code attribution
+============================
+
+`src/rime_schema_compare/call_librime.py` is derived from the
+`call_librime.py` module in the librime-bert-gram project (or equivalent
+upstream). Retain the original license and copyright from that file when
+distributing.
+
+Vendor Rime configurations are Git submodules under `vendor/` and are licensed
+under their respective repositories (rime-frost, rime-ice, rime_wanxiang).
