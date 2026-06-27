@@ -1,0 +1,314 @@
+========================================================================
+Rime 多方案整句评测 — 摘要报告
+========================================================================
+生成时间 (UTC): 20260626T204334Z
+rime.dll: C:\Users\Administrator\Desktop\rime\lib\rime.dll
+模式: 全部语料 (data/corpus/*.txt)
+
+语料文件:
+  - baidu_questions_answers_10M: C:\Users\Administrator\Desktop\rime\data\corpus\baidu_questions_answers_10M.txt
+  - base: C:\Users\Administrator\Desktop\rime\data\corpus\base.txt
+  - model_evolution_data: C:\Users\Administrator\Desktop\rime\data\corpus\model_evolution_data.txt
+  - news: C:\Users\Administrator\Desktop\rime\data\corpus\news.txt
+  - novel: C:\Users\Administrator\Desktop\rime\data\corpus\novel.txt
+  - output_5M: C:\Users\Administrator\Desktop\rime\data\corpus\output_5M.txt
+  - prose: C:\Users\Administrator\Desktop\rime\data\corpus\prose.txt
+  - tech: C:\Users\Administrator\Desktop\rime\data\corpus\tech.txt
+  - test: C:\Users\Administrator\Desktop\rime\data\corpus\test.txt
+
+【总体】
+  [rime_frost]
+    句子正确率: 61.71%  (137944/223535 句完全匹配)
+    文字正确率: 92.77%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 92.55%
+
+  [rime_frost_with_gram]
+    句子正确率: 75.42%  (168601/223535 句完全匹配)
+    文字正确率: 96.02%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 95.63%
+
+  [wanxiang]
+    句子正确率: 62.34%  (139358/223535 句完全匹配)
+    文字正确率: 93.5%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 93.17%
+
+  [rime_wanxiang_with_gram]
+    句子正确率: 76.86%  (171817/223535 句完全匹配)
+    文字正确率: 96.32%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 95.99%
+
+------------------------------------------------------------------------
+【语料: baidu_questions_answers_10M】
+  [rime_frost]
+    句子正确率: 63.73%  (96385/151241 句完全匹配)
+    文字正确率: 93.55%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 93.58%
+
+  [rime_frost_with_gram]
+    句子正确率: 80.08%  (121117/151241 句完全匹配)
+    文字正确率: 97.08%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 96.96%
+
+  [wanxiang]
+    句子正确率: 64.21%  (97116/151241 句完全匹配)
+    文字正确率: 94.24%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 94.13%
+
+  [rime_wanxiang_with_gram]
+    句子正确率: 81.5%  (123267/151241 句完全匹配)
+    文字正确率: 97.34%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 97.25%
+
+------------------------------------------------------------------------
+【语料: base】
+  [rime_frost]
+    句子正确率: 48.67%  (55/113 句完全匹配)
+    文字正确率: 89.06%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 88.12%
+
+  [rime_frost_with_gram]
+    句子正确率: 61.95%  (70/113 句完全匹配)
+    文字正确率: 90.08%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 89.56%
+
+  [wanxiang]
+    句子正确率: 49.56%  (56/113 句完全匹配)
+    文字正确率: 88.8%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 86.96%
+
+  [rime_wanxiang_with_gram]
+    句子正确率: 66.37%  (75/113 句完全匹配)
+    文字正确率: 92.03%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 90.85%
+
+------------------------------------------------------------------------
+【语料: model_evolution_data】
+  [rime_frost]
+    句子正确率: 0.0%  (0/0 句完全匹配)
+    文字正确率: None%  (全语料金文加权，基于 Levenshtein)
+
+  [rime_frost_with_gram]
+    句子正确率: 0.0%  (0/0 句完全匹配)
+    文字正确率: None%  (全语料金文加权，基于 Levenshtein)
+
+  [wanxiang]
+    句子正确率: 0.0%  (0/0 句完全匹配)
+    文字正确率: None%  (全语料金文加权，基于 Levenshtein)
+
+  [rime_wanxiang_with_gram]
+    句子正确率: 0.0%  (0/0 句完全匹配)
+    文字正确率: None%  (全语料金文加权，基于 Levenshtein)
+
+------------------------------------------------------------------------
+【语料: news】
+  [rime_frost]
+    句子正确率: 77.78%  (28/36 句完全匹配)
+    文字正确率: 94.37%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 95.65%
+
+  [rime_frost_with_gram]
+    句子正确率: 91.67%  (33/36 句完全匹配)
+    文字正确率: 97.75%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 98.39%
+
+  [wanxiang]
+    句子正确率: 77.78%  (28/36 句完全匹配)
+    文字正确率: 94.65%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 94.91%
+
+  [rime_wanxiang_with_gram]
+    句子正确率: 91.67%  (33/36 句完全匹配)
+    文字正确率: 98.31%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 98.79%
+
+------------------------------------------------------------------------
+【语料: novel】
+  [rime_frost]
+    句子正确率: 50.74%  (69/136 句完全匹配)
+    文字正确率: 89.83%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 89.62%
+
+  [rime_frost_with_gram]
+    句子正确率: 66.18%  (90/136 句完全匹配)
+    文字正确率: 92.95%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 92.94%
+
+  [wanxiang]
+    句子正确率: 51.47%  (70/136 句完全匹配)
+    文字正确率: 91.15%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 91.18%
+
+  [rime_wanxiang_with_gram]
+    句子正确率: 68.38%  (93/136 句完全匹配)
+    文字正确率: 95.09%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 95.21%
+
+------------------------------------------------------------------------
+【语料: output_5M】
+  [rime_frost]
+    句子正确率: 57.5%  (41360/71935 句完全匹配)
+    文字正确率: 90.58%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 90.39%
+
+  [rime_frost_with_gram]
+    句子正确率: 65.67%  (47240/71935 句完全匹配)
+    文字正确率: 93.06%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 92.84%
+
+  [wanxiang]
+    句子正确率: 58.45%  (42044/71935 句完全匹配)
+    文字正确率: 91.43%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 91.16%
+
+  [rime_wanxiang_with_gram]
+    句子正确率: 67.14%  (48295/71935 句完全匹配)
+    文字正确率: 93.47%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 93.34%
+
+------------------------------------------------------------------------
+【语料: prose】
+  [rime_frost]
+    句子正确率: 55.26%  (21/38 句完全匹配)
+    文字正确率: 92.68%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 93.36%
+
+  [rime_frost_with_gram]
+    句子正确率: 57.89%  (22/38 句完全匹配)
+    文字正确率: 93.5%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 93.09%
+
+  [wanxiang]
+    句子正确率: 42.11%  (16/38 句完全匹配)
+    文字正确率: 91.67%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 91.39%
+
+  [rime_wanxiang_with_gram]
+    句子正确率: 65.79%  (25/38 句完全匹配)
+    文字正确率: 95.93%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 95.65%
+
+------------------------------------------------------------------------
+【语料: tech】
+  [rime_frost]
+    句子正确率: 70.97%  (22/31 句完全匹配)
+    文字正确率: 94.71%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 94.89%
+
+  [rime_frost_with_gram]
+    句子正确率: 77.42%  (24/31 句完全匹配)
+    文字正确率: 96.63%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 96.32%
+
+  [wanxiang]
+    句子正确率: 74.19%  (23/31 句完全匹配)
+    文字正确率: 95.91%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 96.31%
+
+  [rime_wanxiang_with_gram]
+    句子正确率: 77.42%  (24/31 句完全匹配)
+    文字正确率: 97.6%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 98.16%
+
+------------------------------------------------------------------------
+【语料: test】
+  [rime_frost]
+    句子正确率: 80.0%  (4/5 句完全匹配)
+    文字正确率: 95.24%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 95.71%
+
+  [rime_frost_with_gram]
+    句子正确率: 100.0%  (5/5 句完全匹配)
+    文字正确率: 100.0%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 100.0%
+
+  [wanxiang]
+    句子正确率: 100.0%  (5/5 句完全匹配)
+    文字正确率: 100.0%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 100.0%
+
+  [rime_wanxiang_with_gram]
+    句子正确率: 100.0%  (5/5 句完全匹配)
+    文字正确率: 100.0%  (全语料金文加权，基于 Levenshtein)
+    文字正确率(逐句平均): 100.0%
+
+========================================================================
+【总耗时】全流程墙钟约 8505732.23 ms（多语料）
+
+【各语料耗时】
+  · baidu_questions_answers_10M
+    读取文件: 88.5 ms
+    分句: 1754.56 ms
+    预过滤: 993.25 ms
+    [rime_frost] 输入串: 26714.57 ms, librime 加载: 24890.49 ms, 开会话+选方案: 334.81 ms, 逐句解码: 1990687.47 ms
+    [rime_frost_with_gram] 输入串: 26046.98 ms, librime 加载: 24293.3 ms, 开会话+选方案: 470.59 ms, 逐句解码: 2045959.56 ms
+    [rime_wanxiang_with_gram] 输入串: 26318.4 ms, librime 加载: 1255.85 ms, 开会话+选方案: 54.65 ms, 逐句解码: 872874.96 ms
+    [wanxiang] 输入串: 26353.54 ms, librime 加载: 1301.0 ms, 开会话+选方案: 53.53 ms, 逐句解码: 764204.05 ms
+  · base
+    读取文件: 8.52 ms
+    分句: 1.17 ms
+    预过滤: 0.63 ms
+    [rime_frost] 输入串: 20.75 ms, librime 加载: 778.73 ms, 开会话+选方案: 62.3 ms, 逐句解码: 2775.03 ms
+    [rime_frost_with_gram] 输入串: 16.28 ms, librime 加载: 8211.21 ms, 开会话+选方案: 100.16 ms, 逐句解码: 1546.74 ms
+    [rime_wanxiang_with_gram] 输入串: 15.18 ms, librime 加载: 808.15 ms, 开会话+选方案: 87.02 ms, 逐句解码: 986.08 ms
+    [wanxiang] 输入串: 15.39 ms, librime 加载: 772.63 ms, 开会话+选方案: 50.39 ms, 逐句解码: 502.76 ms
+  · model_evolution_data
+    读取文件: 8.83 ms
+    分句: 0.03 ms
+    预过滤: 0.01 ms
+    [rime_frost] 输入串: 0.0 ms, librime 加载: 578.71 ms, 开会话+选方案: 59.08 ms, 逐句解码: 1.04 ms
+    [rime_frost_with_gram] 输入串: 0.0 ms, librime 加载: 517.15 ms, 开会话+选方案: 60.69 ms, 逐句解码: 1.61 ms
+    [rime_wanxiang_with_gram] 输入串: 0.0 ms, librime 加载: 780.29 ms, 开会话+选方案: 63.45 ms, 逐句解码: 1.3 ms
+    [wanxiang] 输入串: 0.0 ms, librime 加载: 845.4 ms, 开会话+选方案: 60.55 ms, 逐句解码: 1.81 ms
+  · news
+    读取文件: 14.87 ms
+    分句: 0.38 ms
+    预过滤: 0.21 ms
+    [rime_frost] 输入串: 7.44 ms, librime 加载: 574.3 ms, 开会话+选方案: 56.43 ms, 逐句解码: 979.32 ms
+    [rime_frost_with_gram] 输入串: 4.73 ms, librime 加载: 7983.1 ms, 开会话+选方案: 96.22 ms, 逐句解码: 1007.02 ms
+    [rime_wanxiang_with_gram] 输入串: 4.65 ms, librime 加载: 761.29 ms, 开会话+选方案: 47.42 ms, 逐句解码: 251.1 ms
+    [wanxiang] 输入串: 48.27 ms, librime 加载: 806.99 ms, 开会话+选方案: 50.66 ms, 逐句解码: 222.76 ms
+  · novel
+    读取文件: 2.35 ms
+    分句: 1.01 ms
+    预过滤: 0.73 ms
+    [rime_frost] 输入串: 19.36 ms, librime 加载: 959.06 ms, 开会话+选方案: 75.31 ms, 逐句解码: 2028.4 ms
+    [rime_frost_with_gram] 输入串: 28.68 ms, librime 加载: 634.56 ms, 开会话+选方案: 50.45 ms, 逐句解码: 1719.61 ms
+    [rime_wanxiang_with_gram] 输入串: 30.38 ms, librime 加载: 787.11 ms, 开会话+选方案: 50.62 ms, 逐句解码: 644.57 ms
+    [wanxiang] 输入串: 20.56 ms, librime 加载: 802.51 ms, 开会话+选方案: 45.68 ms, 逐句解码: 555.16 ms
+  · output_5M
+    读取文件: 33.58 ms
+    分句: 946.44 ms
+    预过滤: 677.55 ms
+    [rime_frost] 输入串: 9720.65 ms, librime 加载: 803.1 ms, 开会话+选方案: 62.06 ms, 逐句解码: 898677.85 ms
+    [rime_frost_with_gram] 输入串: 9940.86 ms, librime 加载: 514.43 ms, 开会话+选方案: 67.72 ms, 逐句解码: 931539.8 ms
+    [rime_wanxiang_with_gram] 输入串: 9696.8 ms, librime 加载: 774.25 ms, 开会话+选方案: 50.42 ms, 逐句解码: 360021.6 ms
+    [wanxiang] 输入串: 9913.05 ms, librime 加载: 881.46 ms, 开会话+选方案: 57.99 ms, 逐句解码: 315261.09 ms
+  · prose
+    读取文件: 7.74 ms
+    分句: 0.32 ms
+    预过滤: 0.22 ms
+    [rime_frost] 输入串: 8.36 ms, librime 加载: 790.77 ms, 开会话+选方案: 66.63 ms, 逐句解码: 1165.9 ms
+    [rime_frost_with_gram] 输入串: 6.65 ms, librime 加载: 785.83 ms, 开会话+选方案: 62.83 ms, 逐句解码: 1002.01 ms
+    [rime_wanxiang_with_gram] 输入串: 6.06 ms, librime 加载: 892.42 ms, 开会话+选方案: 49.48 ms, 逐句解码: 206.74 ms
+    [wanxiang] 输入串: 6.3 ms, librime 加载: 850.88 ms, 开会话+选方案: 54.59 ms, 逐句解码: 175.65 ms
+  · tech
+    读取文件: 8.63 ms
+    分句: 0.33 ms
+    预过滤: 0.2 ms
+    [rime_frost] 输入串: 5.74 ms, librime 加载: 8240.01 ms, 开会话+选方案: 97.65 ms, 逐句解码: 491.36 ms
+    [rime_frost_with_gram] 输入串: 5.88 ms, librime 加载: 562.09 ms, 开会话+选方案: 55.83 ms, 逐句解码: 899.17 ms
+    [rime_wanxiang_with_gram] 输入串: 5.42 ms, librime 加载: 806.45 ms, 开会话+选方案: 59.02 ms, 逐句解码: 581.4 ms
+    [wanxiang] 输入串: 5.53 ms, librime 加载: 792.07 ms, 开会话+选方案: 52.87 ms, 逐句解码: 137.84 ms
+  · test
+    读取文件: 9.4 ms
+    分句: 0.05 ms
+    预过滤: 0.04 ms
+    [rime_frost] 输入串: 1.0 ms, librime 加载: 796.51 ms, 开会话+选方案: 91.8 ms, 逐句解码: 69.51 ms
+    [rime_frost_with_gram] 输入串: 0.94 ms, librime 加载: 510.07 ms, 开会话+选方案: 51.37 ms, 逐句解码: 90.21 ms
+    [rime_wanxiang_with_gram] 输入串: 0.88 ms, librime 加载: 806.5 ms, 开会话+选方案: 50.13 ms, 逐句解码: 31.71 ms
+    [wanxiang] 输入串: 0.92 ms, librime 加载: 861.53 ms, 开会话+选方案: 53.97 ms, 逐句解码: 27.05 ms
+
+========================================================================
+同义词归一化（句级完全匹配与 CER 计算前）: 其它→其他；他/她/它→他；的/地/得→的
+
+说明: 分句后仅「纯汉字」且不含 ASCII 数字/英文字母、汉字不少于 5 字的片段参与评测；其它片段已过滤。句子正确率 = 归一化后预测与金句完全一致的比例；文字正确率 = 全语料 (归一化后总字数−总编辑距离)/归一化后总字数。输入串按各 vendor 自身配置生成，可能是连续拼音，也可能是形码前缀串。
