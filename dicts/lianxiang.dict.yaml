@@ -70426,23 +70426,34 @@ sort: by_weight
 西安碑林区	xī ān bēi lín qū	10
 西安北站站	xī ān běi zhàn zhàn	10
 西安长安区	xī ān cháng ān qū	10
+西安大学生	xī ān dà xué shēng	10
+西安的发展	xī ān de fā zhǎn	10
 西安的美食	xī ān de měi shí	10
 西安等城市	xī ān děng chéng shì	10
+西安电视台	xī ān diàn shì tái	10
 西安高新区	xī ān gāo xīn qū	10
 西安和咸阳	xī ān hé xián yáng	10
+西安经开区	xī ān jīng kāi qū	10
 西安开发区	xī ān kāi fā qū	10
 西安利之星	xī ān lì zhī xīng	10
 西安莲湖区	xī ān lián hú qū	10
 西安临潼区	xī ān lín tóng qū	10
 西安美立方	xī ān měi lì fāng	10
 西安门大街	xī ān mén dà jiē	10
+西安女车主	xī ān nǚ chē zhǔ	10
 西安清真寺	xī ān qīng zhēn sì	10
 西安事变后	xī ān shì biàn hòu	10
+西安市交通	xī ān shì jiāo tōng	10
+西安市市场	xī ān shì shì chǎng	10
+西安市中心	xī ān shì zhōng xīn	10
 锡安威廉森	xī ān wēi lián sēn	10
 西安未央区	xī ān wèi yāng qū	10
 西安新城区	xī ān xīn chéng qū	10
+西安新鸿业	xī ān xīn hóng yè	10
 西安雁塔区	xī ān yàn tǎ qū	10
+西安夜生活	xī ān yè shēng huó	10
 西安易俗社	xī ān yì sú shè	10
+西安幼儿园	xī ān yòu ér yuán	10
 喜白蚁动物	xǐ bái yǐ dòng wù	10
 西班牙礼来	xī bān yá lǐ lái	10
 细胞的代谢	xì bāo de dài xiè	10
@@ -86652,6 +86663,7 @@ sort: by_weight
 支付宝锦鲤	zhī fù bǎo jǐn lǐ	10
 支付宝实名	zhī fù bǎo shí míng	10
 支付宝提现	zhī fù bǎo tí xiàn	10
+支付宝余额	zhī fù bǎo yú é	10
 致富奔小康	zhì fù bēn xiǎo kāng	10
 致富带头人	zhì fù dài tóu rén	10
 致富的道路	zhì fù de dào lù	10
@@ -123907,6 +123919,7 @@ sort: by_weight
 人们足不出户	rén men zú bù chū hù	10
 人免疫球蛋白	rén miǎn yì qiú dàn bái	10
 人民保护部队	rén mín bǎo hù bù duì	10
+人民币存款约	rén mín bì cún kuǎn yuē	10
 人民币的贬值	rén mín bì de biǎn zhí	10
 人民币的汇率	rén mín bì de huì lǜ	10
 人民币的升值	rén mín bì de shēng zhí	10
@@ -133851,9 +133864,14 @@ sort: by_weight
 喜爱的女演员	xǐ ài de nǚ yǎn yuán	10
 西安半坡遗址	xī ān bàn pō yí zhǐ	10
 西安报话大楼	xī ān bào huà dà lóu	10
+西安财经大学	xī ān cái jīng dà xué	10
 西安大清真寺	xī ān dà qīng zhēn sì	10
 西安大唐电信	xī ān dà táng diàn xìn	10
+西安大兴崇德	xī ān dà xīng chóng dé	10
+西安大兴医院	xī ān dà xīng yī yuàn	12
+西安大型医院	xī ān dà xíng yī yuàn	10
 西安地质学院	xī ān dì zhì xué yuàn	10
+西安妇科医院	xī ān fù kē yī yuàn	10
 西安高速公路	xī ān gāo sù gōng lù	10
 西安高新一中	xī ān gāo xīn yī zhōng	10
 锡安国家公园	xī ān guó jiā gōng yuán	10
@@ -133863,6 +133881,7 @@ sort: by_weight
 西安绿地中心	xī ān lǜ dì zhōng xīn	10
 西安绿谷制药	xī ān lǜ gǔ zhì yào	10
 西安旅游景点	xī ān lǚ yóu jǐng diǎn	10
+西安年最中国	xī ān nián zuì zhōng guó	10
 西安清真大寺	xī ān qīng zhēn dà sì	10
 西安绕城高速	xī ān rào chéng gāo sù	10
 锡安社会主义	xī ān shè huì zhǔ yì	10
@@ -133885,6 +133904,8 @@ sort: by_weight
 西安邮电大学	xī ān yóu diàn dà xué	10
 西安邮电学院	xī ān yóu diàn xué yuàn	10
 西安中国画院	xī ān zhōng guó huà yuàn	10
+西安中际医院	xī ān zhōng jì yī yuàn	10
+西安注册公司	xī ān zhù cè gōng sī	10
 锡安主义运动	xī ān zhǔ yì yùn dòng	10
 西班牙葛兰素	xī bān yá gé lán sù	10
 西班牙基立福	xī bān yá jī lì fú	10
@@ -135228,7 +135249,6 @@ sort: by_weight
 象征主义作家	xiàng zhēng zhǔ yì zuò jiā	10
 想知道的更多	xiǎng zhī dào de gèng duō	10
 相转移催化剂	xiāng zhuǎn yí cuī huà jì	10
-香宗我部亲泰	xiāng zōng wǒ bù qīn tài	10
 相左的价值观	xiāng zuǒ de jià zhí guān	10
 向左还是向右	xiàng zuǒ hái shì xiàng yòu	10
 向左滑动查看	xiàng zuǒ huá dòng chá kàn	10
@@ -142184,6 +142204,7 @@ sort: by_weight
 掌骨指骨骨折	zhǎng gǔ zhǐ gǔ gǔ zhé	10
 彰国军节度使	zhāng guó jūn jié dù shǐ	10
 张含韵的粉丝	zhāng hán yùn de fěn sī	10
+账户中的余额	zhàng hù zhōng de yú é	10
 张花高速公路	zhāng huā gāo sù gōng lù	10
 彰化基督医院	zhāng huà jī dū yī yuàn	10
 彰化师范大学	zhāng huà shī fàn dà xué	10
@@ -158515,6 +158536,7 @@ sort: by_weight
 人免疫缺陷病毒	rén miǎn yì quē xiàn bìng dú	10
 人民北路二段北	rén mín běi lù èr duàn běi	10
 人民北路一段号	rén mín běi lù yí duàn hào	10
+人民币存款余额	rén mín bì cún kuǎn yú é	12
 人民城市人民建	rén mín chéng shì rén mín jiàn	10
 人民城市为人民	rén mín chéng shì wèi rén mín	10
 人民大会堂宾馆	rén mín dà huì táng bīn guǎn	10
@@ -159551,10 +159573,19 @@ sort: by_weight
 西安城北客运站	xī ān chéng běi kè yùn zhàn	10
 西安城南客运站	xī ān chéng nán kè yùn zhàn	10
 西安电影制片厂	xī ān diàn yǐng zhì piàn chǎng	10
+西安广播电视台	xī ān guǎng bō diàn shì tái	10
 西安红旗机械厂	xī ān hóng qí jī xiè chǎng	10
 西安力邦制药有	xī ān lì bāng zhì yào yǒu	10
 西安生殖保健院	xī ān shēng zhí bǎo jiàn yuàn	10
+西安市第九医院	xī ān shì dì jiǔ yī yuàn	10
+西安市第三医院	xī ān shì dì sān yī yuàn	10
+西安市第四医院	xī ān shì dì sì yī yuàn	10
+西安市第五医院	xī ān shì dì wǔ yī yuàn	10
+西安市第一医院	xī ān shì dì yī yī yuàn	10
+西安市儿童医院	xī ān shì ér tóng yī yuàn	10
 西安市公园南路	xī ān shì gōng yuán nán lù	10
+西安市人民政府	xī ān shì rén mín zhèng fǔ	10
+西安市中医医院	xī ān shì zhōng yī yī yuàn	10
 西安外国语大学	xī ān wài guó yǔ dà xué	10
 西安一四一医院	xī ān yī sì yī yī yuàn	10
 西安正大制药有	xī ān zhèng dà zhì yào yǒu	10
@@ -161650,6 +161681,7 @@ sort: by_weight
 无所不知无所不能	wú suǒ bù zhī wú suǒ bù néng	10
 物以类聚人以群分	wù yǐ lèi jù rén yǐ qún fēn	10
 无源之水无本之木	wú yuán zhī shuǐ wú běn zhī mù	10
+西安市人民检察院	xī ān shì rén mín jiǎn chá yuàn	10
 西昌卫星发射中心	xī chāng wèi xīng fā shè zhōng xīn	10
 嬉笑怒骂皆成文章	xī xiào nù mà jiē chéng wén zhāng	10
 下笔千言离题万里	xià bǐ qiān yán lí tí wàn lǐ	10

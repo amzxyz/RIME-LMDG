@@ -73694,6 +73694,9 @@ sort: by_weight
 安徽芜湖三山	ān huī wú hú sān shān	1
 安宁西路街道	ān níng xī lù jiē dào	1
 安庆矿区街道	ān qìng kuàng qū jiē dào	1
+安庆市大观区	ān qìng shì dà guān qū
+安庆市宜秀区	ān qìng shì yí xiù qū
+安庆市迎江区	ān qìng shì yíng jiāng qū
 安图县林业局	ān tú xiàn lín yè jú
 昂格特勒克乡	áng gé tè lè kè xiāng	1
 敖伦布拉格镇	áo lún bù lā gé zhèn	1
@@ -73740,10 +73743,17 @@ sort: by_weight
 巴音门克街道	bā yīn mén kè jiē dào	1
 巴音陶海苏木	bā yīn táo hǎi sū mù
 巴音乌兰苏木	bā yīn wū lán sū mù
+巴中市巴州区	bā zhōng shì bā zhōu qū
+巴中市恩阳区	bā zhōng shì ēn yáng qū
+巴中市南江县	bā zhōng shì nán jiāng xiàn
+巴中市平昌县	bā zhōng shì píng chāng xiàn
+巴中市通江县	bā zhōng shì tōng jiāng xiàn
 白鹭湖管理区	bái lù hú guǎn lǐ qū	1
 白旗寨满族乡	bái qí zhài mǎn zú xiāng	1
 白清姚千街道	bái qīng yáo qiān jiē dào	1
+百色市右江区	bǎi sè shì yòu jiāng qū
 白沙洲工业园	bái shā zhōu gōng yè yuán
+白山市江源区	bái shān shì jiāng yuán qū
 拜什艾日克镇	bài shí ài rì kè zhèn	1
 拜什吐格曼乡	bài shí tǔ gé màn xiāng	1
 白水湖管理处	bái shuǐ hú guǎn lǐ chù
@@ -73758,11 +73768,19 @@ sort: by_weight
 半淞园路街道	bàn sōng yuán lù jiē dào	1
 坂头防护林场	bǎn tóu fáng hù lín chǎng	1
 保定白沟新城	bǎo dìng bái gōu xīn chéng
+宝鸡市陈仓区	bǎo jī shì chén cāng qū
+宝鸡市金台区	bǎo jī shì jīn tái qū
 宝力根花苏木	bǎo lì gēn huā sū mù
 宝山西路街道	bǎo shān xī lù jiē dào	1
 北二十家子镇	běi èr shí jiā zǐ zhèn	1
 北岗街道地区	běi gǎng jiē dào dì qū	1
+北海市海城区	běi hǎi shì hǎi chéng qū
+北海市合浦县	běi hǎi shì hé pǔ xiàn
+北海市银海区	běi hǎi shì yín hǎi qū
 北京南路街道	běi jīng nán lù jiē dào	1
+北京市大兴区	běi jīng shì dà xīng qū
+北京市密云县	běi jīng shì mì yún xiàn
+北京市平谷区	běi jīng shì píng gǔ qū
 北京西路街道	běi jīng xī lù jiē dào	1
 北京中路街道	běi jīng zhōng lù jiē dào	1
 北三家子街道	běi sān jiā zǐ jiē dào	1
@@ -73857,6 +73875,9 @@ sort: by_weight
 长白新村街道	cháng bái xīn cūn jiē dào	1
 长城中路街道	cháng chéng zhōng lù jiē dào	1
 长春中路街道	cháng chūn zhōng lù jiē dào	1
+常德市鼎城区	cháng dé shì dǐng chéng qū
+常德市桃源县	cháng dé shì táo yuán xiàn
+常德市武陵区	cháng dé shì wǔ líng qū
 长底布依族乡	cháng dǐ bù yī zú xiāng	1
 长丰土家族乡	cháng fēng tǔ jiā zú xiāng	1
 长风西街街道	cháng fēng xī jiē jiē dào	1
@@ -73868,17 +73889,23 @@ sort: by_weight
 长乐中路街道	cháng lè zhōng lù jiē dào	1
 长哨营满族乡	cháng shào yíng mǎn zú xiāng	1
 长潭河侗族乡	cháng tán hé dòng zú xiāng	1
+常州市武进区	cháng zhōu shì wǔ jìn qū
 潮格温都尔镇	cháo gé wēn dōu ěr zhèn	1
 朝克乌拉苏木	cháo kè wù lā sū mù
 朝阳社区街道	cháo yáng shè qū jiē dào	1
+潮州市饶平县	cháo zhōu shì ráo píng xiàn
+郴州市北湖区	chēn zhōu shì běi hú qū
 城南经济新区	chéng nán jīng jì xīn qū	1
 城市社区街道	chéng shì shè qū jiē dào	1
 成武县党集镇	chéng wǔ xiàn dǎng jí zhèn	1
 成武县孙寺镇	chéng wǔ xiàn sūn sì zhèn	1
 成武县张楼镇	chéng wǔ xiàn zhāng lóu zhèn	1
 城垣西路街道	chéng yuán xī lù jiē dào	1
+赤峰市红山区	chì fēng shì hóng shān qū
+赤峰市松山区	chì fēng shì sōng shān qū
 敕勒川路街道	chì lè chuān lù jiē dào	1
 崇文门外街道	chóng wén mén wài jiē dào	1
+崇左市大新县	chóng zuǒ shì dà xīn xiàn
 翠雷山垦殖场	cuì léi shān kěn zhí chǎng	1
 大堡蒙古族乡	dà bǎo měng gǔ zú xiāng	1
 大曹庄管理区	dà cáo zhuāng guǎn lǐ qū	1
@@ -73890,6 +73917,8 @@ sort: by_weight
 大河中路街道	dà hé zhōng lù jiē dào	1
 达来胡硕苏木	dá lái hú shuò sū mù
 达里雅布依乡	dá lǐ yǎ bù yī xiāng	1
+大连市金州区	dà lián shì jīn zhōu qū
+大连市西岗区	dà lián shì xī gǎng qū
 大龙潭彝族乡	dà lóng tán yí zú xiāng	1
 大坪国有林场	dà píng guó yǒu lín chǎng	1
 大坡蒙古族乡	dà pō měng gǔ zú xiāng	1
@@ -73897,12 +73926,16 @@ sort: by_weight
 大沙湖管理区	dà shā hú guǎn lǐ qū	1
 大石布依族乡	dà shí bù yī zú xiāng	1
 大同湖管理区	dà tóng hú guǎn lǐ qū	1
+大同市平城区	dà tóng shì píng chéng qū
+大同市云冈区	dà tóng shì yún gāng qū
+大同市云州区	dà tóng shì yún zhōu qū
 大洼商业渔场	dà wā shāng yè yú chǎng	1
 达斡尔民族乡	dá wò ěr mín zú xiāng	1
 大新屯储木场	dà xīn tún chǔ mù chǎng	1
 大兴安岭地区	dà xīng ān lǐng dì qū	1
 大兴沟林业局	dà xīng gōu lín yè jú
 大兴国际机场	dà xīng guó jì jī chǎng	1
+大兴区黄村镇	dà xīng qū huáng cūn zhèn
 大学东路街道	dà xué dōng lù jiē dào	1
 大学西路街道	dà xué xī lù jiē dào	1
 代钦塔拉苏木	dài qīn tǎ lā sū mù
@@ -73916,6 +73949,9 @@ sort: by_weight
 当阳市淯溪镇	dāng yáng shì yù xī zhèn	1
 德胜企业集团	dé shèng qǐ yè jí tuán	1
 德顺蒙古族乡	dé shùn měng gǔ zú xiāng	1
+德阳市罗江区	dé yáng shì luó jiāng qū
+德阳市中江县	dé yáng shì zhōng jiāng xiàn
+德州市齐河县	dé zhōu shì qí hé xiàn
 德州天衢新区	dé zhōu tiān qú xīn qū	1
 地宝土家族乡	dì bǎo tǔ jiā zú xiāng	1
 迪庆扶贫民族	dí qìng fú pín mín zú	1
@@ -73923,6 +73959,7 @@ sort: by_weight
 甸柳新村街道	diān liǔ xīn cūn jiē dào	1
 汈汊湖养殖场	diāo chà hú yǎng zhí chǎng	1
 定南县工业园	dìng nán xiàn gōng yè yuán
+定西市安定区	dìng xī shì ān dìng qū
 丁香北路街道	dīng xiāng běi lù jiē dào	1
 东巴扎回族乡	dōng bā zhā huí zú xiāng	1
 东大门管理处	dōng dà mén guǎn lǐ chù
@@ -73978,6 +74015,8 @@ sort: by_weight
 浮山新区街道	fú shān xīn qū jiē dào	1
 伏羲山风景区	fú xī shān fēng jǐng qū	1
 滏阳东路街道	fǔ yáng dōng lù jiē dào	1
+抚州市东乡区	fǔ zhōu shì dōng xiāng qū
+福州市闽侯县	fú zhōu shì mǐn hòu xiàn
 嘎玛贡桑街道	gā mǎ gòng sāng jiē dào	1
 甘坑生态林场	gān kēng shēng tài lín chǎng	1
 甘肃农垦集团	gān sù nóng kěn jí tuán	1
@@ -74012,7 +74051,17 @@ sort: by_weight
 官塘社区街道	guān táng shè qū jiē dào	1
 广安门内街道	guǎng ān mén nèi jiē dào	1
 广安门外街道	guǎng ān mén wài jiē dào	1
+广安市广安区	guǎng ān shì guǎng ān qū
+广安市邻水县	guǎng ān shì lín shuǐ xiàn
+广安市前锋区	guǎng ān shì qián fēng qū
 光明西道街道	guāng míng xī dào jiē dào	1
+广元市苍溪县	guǎng yuán shì cāng xī xiàn
+贵港市平南县	guì gǎng shì píng nán xiàn
+桂林市临桂区	guì lín shì lín guì qū
+桂林市灵川县	guì lín shì líng chuān xiàn
+桂林市象山区	guì lín shì xiàng shān qū
+桂林市雁山区	guì lín shì yàn shān qū
+贵阳市花溪区	guì yáng shì huā xī qū
 桂云花满族乡	guì yún huā mǎn zú xiāng	1
 郭家坳街街道	guō jiā ào jiē jiē dào	1
 国营博爱农场	guó yíng bó ài nóng chǎng	1
@@ -74037,13 +74086,23 @@ sort: by_weight
 哈拉布拉克乡	hā la bù lā kè xiāng	1
 哈尼喀塔木乡	hā ní kā tǎ mù xiāng	1
 哈日诺尔苏木	hā rì nuò ěr sū mù
+海东市平安区	hǎi dōng shì píng ān qū
 海防办事处乡	hǎi fáng bàn shì chù xiāng	1
 海军广场街道	hǎi jūn guǎng chǎng jiē dào	1
 海南朝鲜族乡	hǎi nán cháo xiǎn zú xiāng	1
 韩村北路街道	hán cūn běi lù jiē dào	1
 邯郸冀南新区	hán dān jì nán xīn qū	1
+邯郸市丛台区	hán dān shì cóng tái qū
+邯郸市复兴区	hán dān shì fù xīng qū
+邯郸市永年区	hán dān shì yǒng nián qū
+汉中市汉台区	hàn zhōng shì hàn tái qū
+汉中市南郑区	hàn zhōng shì nán zhèng qū
 航海东路街道	háng hǎi dōng lù jiē dào	1
 航海西路街道	háng hǎi xī lù jiē dào	1
+杭州市淳安县	háng zhōu shì chún ān xiàn
+杭州市拱墅区	háng zhōu shì gǒng shù qū
+杭州市江干区	háng zhōu shì jiāng gān qū
+杭州市桐庐县	háng zhōu shì tóng lú xiàn
 蒿吉坪瑶族乡	hāo jí píng yáo zú xiāng	1
 浩来呼热苏木	hào lái hū rè sū mù
 浩勒图高勒镇	hào lè tú gāo lè zhèn	1
@@ -74054,7 +74113,10 @@ sort: by_weight
 河北唐山海港	hé běi táng shān hǎi gǎng	1
 河北唐山芦台	hé běi táng shān lú tái	1
 和布克赛尔镇	hé bù kè sài ěr zhèn	1
+河池市宜州区	hé chí shì yí zhōu qū
 合肥龙岗综合	hé féi lóng gǎng zōng hé	1
+合肥市肥东县	hé féi shì féi dōng xiàn
+合肥市肥西县	hé féi shì féi xī xiàn
 禾斛岭垦殖场	hé hú lǐng kěn zhí chǎng	1
 贺家山原种场	hè jiā shān yuán zhǒng chǎng	1
 和龙市林业局	hé lóng shì lín yè jú
@@ -74062,11 +74124,17 @@ sort: by_weight
 和什托洛盖镇	hé shí tuō luò gài zhèn	1
 河潭埠垦殖场	hé tán bù kěn zhí chǎng	1
 和夏阿瓦提镇	hé xià ā wǎ tí zhèn	1
+河源市东源县	hé yuán shì dōng yuán xiàn
+河源市和平县	hé yuán shì hé píng xiàn
+河源市龙川县	hé yuán shì lóng chuān xiàn
+河源市紫金县	hé yuán shì zǐ jīn xiàn
+菏泽市开发区	hé zé shì kāi fā qū
 黑城子示范区	hēi chéng zǐ shì fàn qū	1
 黑龙江省乡镇	hēi lóng jiāng shěng xiāng zhèn	1
 恒丰企业集团	héng fēng qǐ yè jí tuán	1
 恒合土家族乡	héng hé tǔ jiā zú xiāng	1
 衡水滨湖新区	héng shuǐ bīn hú xīn qū	1
+衡水市冀州区	héng shuǐ shì jì zhōu qū
 洪格尔高勒镇	hóng gé ěr gāo lè zhèn	1
 洪家关白族乡	hóng jiā guān bái zú xiāng	1
 红旗奶山羊场	hóng qí nǎi shān yáng chǎng	1
@@ -74081,9 +74149,14 @@ sort: by_weight
 户撒阿昌族乡	hù sā ā chāng zú xiāng	1
 呼图壁种牛场	hū tú bì zhòng niú chǎng	1
 虎形山瑶族乡	hǔ xíng shān yáo zú xiāng	1
+湖州市安吉县	hú zhōu shì ān jí xiàn
+湖州市吴兴区	hú zhōu shì wú xīng qū
 华罗庚高新区	huá luó gēng gāo xīn qū	1
 华南热作学院	huá nán rè zuò xué yuàn
+淮安市淮阴区	huái ān shì huái yīn qū
+淮安市金湖县	huái ān shì jīn hú xiàn
 淮海中路街道	huái hǎi zhōng lù jiē dào	1
+怀化市鹤城区	huái huà shì hè chéng qū
 环城北路街道	huán chéng běi lù jiē dào	1
 环城西路街道	huán chéng xī lù jiē dào	1
 黄柏岭垦殖场	huáng bò lǐng kěn zhí chǎng	1
@@ -74092,6 +74165,8 @@ sort: by_weight
 黄河东路街道	huáng hé dōng lù jiē dào	1
 黄河西路街道	huáng hé xī lù jiē dào	1
 黄花塔拉苏木	huáng huā tǎ lā sū mù
+黄石市下陆区	huáng shí shì xià lù qū
+黄石市阳新县	huáng shí shì yáng xīn xiàn
 黄土场开发区	huáng tǔ chǎng kāi fā qū	1
 黄羊关藏族乡	huáng yáng guān zàng zú xiāng	1
 回龙山瑶族乡	huí lóng shān yáo zú xiāng	1
@@ -74103,8 +74178,13 @@ sort: by_weight
 火车西站街道	huǒ chē xī zhàn jiē dào	1
 火车站街街道	huǒ chē zhàn jiē jiē dào	1
 火车站开发区	huǒ chē zhàn kāi fā qū	1
+吉安市吉州区	jí ān shì jí zhōu qū
+吉安市青原区	jí ān shì qīng yuán qū
 吉洞峪满族乡	jí dòng yù mǎn zú xiāng	1
 吉忽伦图苏木	jí hū lún tú sū mù
+吉林市昌邑区	jí lín shì chāng yì qū
+吉林市船营区	jí lín shì chuán yíng qū
+济南市济阳区	jǐ nán shì jì yáng qū
 吉日嘎郎吐镇	jí rì gā láng tǔ zhèn	1
 吉日嘎朗图镇	jí rì gā lǎng tú zhèn	0
 济源市承留镇	jì yuán shì chéng liú zhèn	1
@@ -74128,13 +74208,17 @@ sort: by_weight
 江汉二桥街道	jiāng hàn èr qiáo jiē dào	1
 江桥蒙古族镇	jiāng qiáo měng gǔ zú zhèn	1
 江苏吕四海洋	jiāng sū lǚ sì hǎi yáng	1
+焦作市解放区	jiāo zuò shì jiě fàng qū
 解放北路街道	jiě fàng běi lù jiē dào	1
 解放南路街道	jiě fàng nán lù jiē dào	1
 解放西街街道	jiě fàng xī jiē jiē dào	1
 杰勒阿尕什镇	jié lè ā gǎ shí zhèn	1
 解特阿热勒镇	jiě tè ā rè lè zhèn	1
+揭阳市惠来县	jiē yáng shì huì lái xiàn
+晋城市阳城县	jìn chéng shì yáng chéng xiàn
 金凤桥管理处	jīn fèng qiáo guǎn lǐ chù
 金谷园路街道	jīn gǔ yuán lù jiē dào	1
+晋江市安海镇	jìn jiāng shì ān hǎi zhèn
 金沙傈僳族乡	jīn shā lì sù zú xiāng	1
 金沙滩农牧场	jīn shā tān nóng mù chǎng	1
 金山社区街道	jīn shān shè qū jiē dào	1
@@ -74145,8 +74229,12 @@ sort: by_weight
 景哈哈尼族乡	jǐng hā hā ní zú xiāng	1
 经济开发区镇	jīng jì kāi fā qū zhèn	1
 荆角土家族乡	jīng jiǎo tǔ jiā zú xiāng	1
+荆州市荆州区	jīng zhōu shì jīng zhōu qū
 九保阿昌族乡	jiǔ bǎo ā chāng zú xiāng	1
 九合垸原种场	jiǔ hé yuàn yuán zhǒng chǎng	1
+九江市柴桑区	jiǔ jiāng shì chái sāng qū
+九江市濂溪区	jiǔ jiāng shì lián xī qū
+九江市浔阳区	jiǔ jiāng shì xún yáng qū
 酒井哈尼族乡	jiǔ jǐng hā ní zú xiāng	1
 九矿广场街道	jiǔ kuàng guǎng chǎng jiē dào	1
 九龙坡区街道	jiǔ lóng pō qū jiē dào	1
@@ -74164,6 +74252,8 @@ sort: by_weight
 喀什东路街道	kā shí dōng lù jiē dào	1
 开发区办事处	kāi fā qū bàn shì chù
 开发区关堤乡	kāi fā qū guān dī xiāng	1
+开封市龙亭区	kāi fēng shì lóng tíng qū
+开封市祥符区	kāi fēng shì xiáng fú qū
 凯旋东路街道	kǎi xuán dōng lù jiē dào	1
 康都街道片区	kāng dōu jiē dào piàn qū	1
 康健新村街道	kāng jiàn xīn cūn jiē dào	1
@@ -74182,16 +74272,24 @@ sort: by_weight
 库兰萨日克乡	kù lán sà rì kè xiāng	1
 库木库萨尔乡	kù mù kù sà ěr xiāng	1
 库木西力克乡	kù mù xī lì kè xiāng	1
+昆明市宜良县	kūn míng shì yí liáng xiàn
+昆山市巴城镇	kūn shān shì bā chéng zhèn
 阔克阿尕什乡	kuò kè ā gǎ shí xiāng	1
 阔什艾日克乡	kuò shí ài rì kè xiāng	1
 阔什萨特玛乡	kuò shí sà tè mǎ xiāng	1
 拉布大林街道	lā bù dà lín jiē dào	1
+拉萨市城关区	lā sà shì chéng guān qū
 蓝山浆洞林场	lán shān jiāng dòng lín chǎng	1
 蓝山荆竹林场	lán shān jīng zhú lín chǎng	1
 蓝山南岭林场	lán shān nán lǐng lín chǎng	1
+兰州市安宁区	lán zhōu shì ān níng qū
+兰州市榆中县	lán zhōu shì yú zhōng xiàn
+廊坊市大城县	láng fāng shì dài chéng xiàn
 勒门巴民族乡	lè mén bā mín zú xiāng	1
 立陡山良种场	lì dǒu shān liáng zhǒng chǎng	1
 丽光华侨农场	lì guāng huá qiáo nóng chǎng	1
+丽江市古城区	lì jiāng shì gǔ chéng qū
+丽江市玉龙县	lì jiāng shì yù lóng xiàn
 黎明关水族乡	lí míng guān shuǐ zú xiāng	1
 黎明傈僳族乡	lí míng lì sù zú xiāng	1
 力所拉祜族乡	lì suǒ lā hù zú xiāng	1
@@ -74205,11 +74303,15 @@ sort: by_weight
 两家子满族乡	liǎng jiā zǐ mǎn zú xiāng	1
 凉水朝鲜族乡	liáng shuǐ cháo xiǎn zú xiāng	1
 良种繁育中心	liáng zhǒng fán yù zhōng xīn
+聊城市茌平区	liáo chéng shì chí píng qū
 烈山区工业园	liè shān qū gōng yè yuán
 林东东城街道	lín dōng dōng chéng jiē dào	1
 林东西城街道	lín dōng xi chéng jiē dào	1
 临港化工园区	lín gǎng huà gōng yuán qū	1
 临港物流园区	lín gǎng wù liú yuán qū	1
+临沂市临沭县	lín yí shì lín shù xiàn
+临沂市平邑县	lín yí shì píng yì xiàn
+临沂市沂水县	lín yí shì yí shuǐ xiàn
 灵宝市园艺场	líng bǎo shì yuán yì chǎng	1
 菱角湖管理区	líng jiǎo hú guǎn lǐ qū	1
 六合垸管理区	liù hé yuàn guǎn lǐ qū	1
@@ -74231,12 +74333,18 @@ sort: by_weight
 露采社区街道	lù cǎi shè qū jiē dào	1
 芦柴湖办事处	lú chái hú bàn shì chù
 鲁础营回族乡	lǔ chǔ yíng huí zú xiāng	1
+泸州市合江县	lú zhōu shì hé jiāng xiàn
 萝北县林业局	luó běi xiàn lín yè jú
 萝北县农业局	luó běi xiàn nóng yè jú
 洛本卓白族乡	luò běn zhuó bái zú xiāng	1
 罗浮山管理区	luó fú shān guǎn lǐ qū	1
 罗汉寺办事处	luó hàn sì bàn shì chù
 罗汉寺种畜场	luó hàn sì zhǒng chù chǎng	1
+漯河市临颍县	luò hé shì lín yǐng xiàn
+漯河市舞阳县	luò hé shì wǔ yáng xiàn
+漯河市郾城区	luò hé shì yǎn chéng qū
+漯河市源汇区	luò hé shì yuán huì qū
+洛阳市洛龙区	luò yáng shì luò lóng qū
 罗子山瑶族乡	luó zǐ shān yáo zú xiāng	1
 绿色草原牧场	lǜ sè cǎo yuán mù chǎng	1
 麻城林店茶场	má chéng lín diàn chá chǎng	1
@@ -74249,7 +74357,11 @@ sort: by_weight
 满族屯满族乡	mǎn zú tún mǎn zú xiāng	1
 芒市勐焕街道	máng shì měng huàn jiē dào	1
 芒市遮放农场	máng shì zhē fàng nóng chǎng	1
+眉山市仁寿县	méi shān shì rén shòu xiàn
 梅园新村街道	méi yuán xīn cūn jiē dào	1
+梅州市丰顺县	méi zhōu shì fēng shùn xiàn
+梅州市梅江区	méi zhōu shì méi jiāng qū
+梅州市五华县	méi zhōu shì wǔ huá xiàn
 门楼下瑶族乡	mén lóu xià yáo zú xiāng	1
 蒙兀室韦苏木	méng wù shì wéi sū mù
 米粮泉回族乡	mǐ liáng quán huí zú xiāng	1
@@ -74266,11 +74378,17 @@ sort: by_weight
 纳尔巴格街道	nà ěr bā gé jiē dào	1
 乃林果树农场	nǎi lín guǒ shù nóng chǎng	1
 乃则尔巴格镇	nǎi zé ěr bā gé zhèn	1
+南安市水头镇	nán ān shì shuǐ tóu zhèn
+南昌市东湖区	nán chāng shì dōng hú qū
+南昌市南昌县	nán chāng shì nán chāng xiàn
+南昌市湾里区	nán chāng shì wān lǐ qū
+南昌市新建区	nán chāng shì xīn jiàn qū
 南昌县银三角	nán chāng xiàn yín sān jiǎo	1
 南川东路街道	nán chuān dōng lù jiē dào	1
 南川西路街道	nán chuān xī lù jiē dào	1
 南大港管理区	nán dà gǎng guǎn lǐ qū	1
 楠杆土家族乡	nán gān tǔ jiā zú xiāng	1
+南海区狮山镇	nán hǎi qū shī shān zhèn
 南湖北路街道	nán hú běi lù jiē dào	1
 南湖南路街道	nán hú nán lù jiē dào	1
 南环中路街道	nán huán zhōng lù jiē dào	1
@@ -74279,16 +74397,26 @@ sort: by_weight
 南康市工业园	nán kāng shì gōng yè yuán
 南码头路街道	nán mǎ tóu lù jiē dào	1
 南美拉祜族乡	nán měi lā hù zú xiāng	1
+南宁市江南区	nán níng shì jiāng nán qū
 南沙河口街道	nán shā hé kǒu jiē dào	1
 南山傈僳族乡	nán shān lì sù zú xiāng	1
 南天门满族乡	nán tiān mén mǎn zú xiāng	1
+南通市崇川区	nán tōng shì chóng chuān qū
+南通市港闸区	nán tōng shì gǎng zhá qū
 南湾湖管理处	nán wān hú guǎn lǐ chù
 南五十家子镇	nán wǔ shí jiā zǐ zhèn	1
+南阳市方城县	nán yáng shì fāng chéng xiàn
+南阳市内乡县	nán yáng shì nèi xiāng xiàn
 南阳新村街道	nán yáng xīn cūn jiē dào	1
 曩宋阿昌族乡	nǎng sòng ā chāng zú xiāng	1
+内江市市中区	nèi jiāng shì shì zhōng qū
+内江市威远县	nèi jiāng shì wēi yuǎn xiàn
 内蒙古鄂托克	nèi méng gǔ è tuō kè	1
 内蒙古自治区	nèi méng gǔ zì zhì qū	1
 年丰朝鲜族乡	nián fēng cháo xiǎn zú xiāng	1
+宁波市北仑区	níng bō shì běi lún qū
+宁波市奉化区	níng bō shì fèng huà qū
+宁波市象山县	níng bō shì xiàng shān xiàn
 宁姜蒙古族乡	níng jiāng měng gǔ zú xiāng	1
 牛场布依族乡	niú chǎng bù yī zú xiāng	1
 农产品加工园	nóng chǎn pǐn jiā gōng yuán
@@ -74312,6 +74440,9 @@ sort: by_weight
 平庄西城街道	píng zhuāng xī chéng jiē dào	1
 泊尔江海子镇	pō ěr jiāng hǎi zǐ zhèn	1
 濮公山管理区	pú gōng shān guǎn lǐ qū	1
+莆田市涵江区	pú tián shì hán jiāng qū
+莆田市荔城区	pú tián shì lì chéng qū
+莆田市仙游县	pú tián shì xiān yóu xiàn
 濮阳县白堽乡	pú yáng xiàn bái gāng xiāng	1
 濮阳县海通乡	pú yáng xiàn hǎi tōng xiāng	1
 濮阳县胡状镇	pú yáng xiàn hú zhuàng zhèn	1
@@ -74342,6 +74473,7 @@ sort: by_weight
 前所果树农场	qián suǒ guǒ shù nóng chǎng	1
 切木尔切克镇	qiè mù ěr qiè kè zhèn	1
 秦皇岛市街道	qín huáng dǎo shì jiē dào	1
+青岛市即墨区	qīng dǎo shì jí mò qū
 青冈县果树场	qīng gāng xiàn guǒ shù chǎng	1
 青冈县原种场	qīng gāng xiàn yuán zhǒng chǎng	1
 青冈县种马场	qīng gāng xiàn zhǒng mǎ chǎng	1
@@ -74349,21 +74481,32 @@ sort: by_weight
 庆华街道地区	qìng huá jiē dào dì qū	1
 青泥洼桥街道	qīng ní wā qiáo jiē dào	1
 青年公园街道	qīng nián gōng yuán jiē dào	1
+青浦区徐泾镇	qīng pǔ qū xú jīng zhèn
 清水土家族乡	qīng shuǐ tǔ jiā zú xiāng	1
 青阳县开发区	qīng yáng xiàn kāi fā qū	1
+清远市清城区	qīng yuǎn shì qīng chéng qū
+清远市阳山县	qīng yuǎn shì yáng shān xiàn
 琼科瑞克街道	qióng kē ruì kè jiē dào	1
 琼库尔恰克乡	qióng kù ěr qià kè xiāng	1
 穹窿山风景区	qióng lóng shān fēng jǐng qū	1
+曲靖市会泽县	qū jìng shì huì zé xiàn
+曲靖市麒麟区	qū jìng shì qí lín qū
+曲靖市沾益区	qū jìng shì zhān yì qū
+衢州市柯城区	qú zhōu shì kē chéng qū
+衢州市衢江区	qú zhōu shì qú jiāng qū
 全南县工业园	quán nán xiàn gōng yè yuán
 热河南路街道	rè hé nán lù jiē dào	1
 人民广场街道	rén mín guǎng chǎng jiē dào	1
 人民社区街道	rén mín shè qū jiē dào	1
+日照市岚山区	rì zhào shì lán shān qū
+日照市五莲县	rì zhào shì wǔ lián xiàn
 荣炳盐资源区	róng bǐng yán zī yuán qū	1
 如东沿海旅游	rú dōng yán hǎi lǚ yóu	1
 如皋市蚕种场	rú gāo shì cán zhǒng chǎng	1
 如皋市良种场	rú gāo shì liáng zhǒng chǎng	1
 如皋市农科所	rú gāo shì nóng kē suǒ
 如皋市种猪场	rú gāo shì zhǒng zhū chǎng	1
+瑞安市塘下镇	ruì ān shì táng xià zhèn
 瑞金二路街道	ruì jīn èr lù jiē dào	1
 萨地克于孜乡	sà dì kè yú zī xiāng	1
 萨尔布拉克镇	sà ěr bù lā kè zhèn	1
@@ -74404,19 +74547,31 @@ sort: by_weight
 山东烟台福山	shān dōng yān tái fú shān	1
 山河屯林业局	shān hé tún lín yè jú
 山市种奶牛场	shān shì zhǒng nǎi niú chǎng	1
+汕头市潮阳区	shàn tóu shì cháo yáng qū
 上坝土家族乡	shàng bà tǔ jiā zú xiāng	1
 上钢新村街道	shàng gāng xīn cūn jiē dào	1
+上海市崇明县	shàng hǎi shì chóng míng xiàn
 上海西路街道	shàng hǎi xī lù jiē dào	1
+商洛市商州区	shāng luò shì shāng zhōu qū
 上蒲溪瑶族乡	shàng pú xī yáo zú xiāng	1
+上饶市信州区	shàng ráo shì xìn zhōu qū
 商颂大街街道	shāng sòng dà jiē jiē dào	1
 上梧江瑶族乡	shàng wú jiāng yáo zú xiāng	1
 尚寨土家族乡	shàng zhài tǔ jiā zú xiāng	1
+韶关市曲江区	sháo guān shì qǔ jiāng qū
+韶关市武江区	sháo guān shì wǔ jiāng qū
+韶关市新丰县	sháo guān shì xīn fēng xiàn
 召陵区老窝镇	shào líng qū lǎo wō zhèn	1
 召陵区青年镇	shào líng qū qīng nián zhèn	1
 召陵区召陵镇	shào líng qū shào líng zhèn	1
 召陵区万金镇	shào líng qū wàn jīn zhèn	1
+绍兴市上虞区	shào xīng shì shàng yú qū
+绍兴市新昌县	shào xīng shì xīn chāng xiàn
 射阳港经济区	shè yáng gǎng jīng jì qū	1
+沈阳市和平区	shěn yáng shì hé píng qū
+沈阳市铁西区	shěn yáng shì tiě xī qū
 审章塘瑶族乡	shěn zhāng táng yáo zú xiāng	1
+深圳市光明区	shēn zhèn shì guāng míng qū
 圣安多尼堂区	shèng ān duō ní táng qū	1
 盛达东路街道	shèng dá dōng lù jiē dào	1
 圣方济各堂区	shèng fāng jì gè táng qū	1
@@ -74445,6 +74600,9 @@ sort: by_weight
 十万山瑶族乡	shí wàn shān yáo zú xiāng	1
 石厢子彝族乡	shí xiāng zǐ yí zú xiāng	1
 十堰工业新区	shí yàn gōng yè xīn qū	1
+十堰市茅箭区	shí yàn shì máo jiàn qū
+十堰市郧阳区	shí yàn shì yún yáng qū
+十堰市张湾区	shí yàn shì zhāng wān qū
 石油新城街道	shí yóu xīn chéng jiē dào	1
 石油新村街道	shí yóu xīn cūn jiē dào	1
 首都机场街道	shǒu dū jī chǎng jiē dào	1
@@ -74458,12 +74616,17 @@ sort: by_weight
 四方坨子农场	sì fāng tuó zi nóng chǎng	1
 四顾闸管理处	sì gù zhá guǎn lǐ chù
 丝路街道片区	sī lù jiē dào piàn qū	1
+四平市铁西区	sì píng shì tiě xī qū
 四十里城子镇	sì shí lǐ chéng zǐ zhèn	1
+松原市宁江区	sōng yuán shì níng jiāng qū
 苏典傈僳族乡	sū diǎn lì sù zú xiāng	1
 苏木溪瑶族乡	sū mù xī yáo zú xiāng	1
 苏泊淖尔苏木	sū pō nào ěr sū mù
 苏州高铁新城	sū zhōu gāo tiě xīn chéng
+苏州市吴江区	sū zhōu shì wú jiāng qū
+苏州市吴中区	sū zhōu shì wú zhōng qū
 绥东镇种畜场	suí dōng zhèn zhǒng chù chǎng	1
+绥化市北林区	suí huà shì běi lín qū
 孙各庄满族乡	sūn gè zhuāng mǎn zú xiāng	1
 孙家堡子街道	sūn jiā bǔ zi jiē dào	1
 孙扎齐牛录镇	sūn zhā qí niú lù zhèn	1
@@ -74472,6 +74635,7 @@ sort: by_weight
 塔什库尔干乡	tǎ shí kù ěr gàn xiāng	1
 塔什库尔干镇	tǎ shí kù ěr gàn zhèn	1
 塔什米里克乡	tǎ shí mǐ lǐ kè xiāng	1
+台北市信义区	tái běi shì xìn yì qū
 台创园管委会	tái chuàng yuán guǎn wěi huì
 太行东街街道	tài háng dōng jiē jiē dào	1
 太行西街街道	tài háng xī jiē jiē dào	1
@@ -74484,15 +74648,22 @@ sort: by_weight
 太平岭满族乡	tài píng lǐng mǎn zú xiāng	1
 太平新城街道	tài píng xīn chéng jiē dào	1
 太平庄满族乡	tài píng zhuāng mǎn zú xiāng	1
+太原市晋源区	tài yuán shì jìn yuán qū
+台州市黄岩区	tāi zhōu shì huáng yán qū
+台州市椒江区	tāi zhōu shì jiāo jiāng qū
+台州市路桥区	tāi zhōu shì lù qiáo qū
 唐槐园区街道	táng huái yuán qū jiē dào	1
 唐家墩街街道	táng jiā dūn jiē jiē dào	1
 汤泉池管理处	tāng quán chí guǎn lǐ chù
+唐山市开平区	táng shān shì kāi píng qū
 提克阿热克镇	tí kè ā rè kè zhèn	1
 体育馆路街道	tǐ yù guǎn lù jiē dào	1
 体育中心街道	tǐ yù zhōng xīn jiē dào	1
 天鹅洲开发区	tiān é zhōu kāi fā qū	1
 天津港保税区	tiān jīn gǎng bǎo shuì qū	1
+天津市和平区	tiān jīn shì hé píng qū
 天津市蓟州区	tiān jīn shì jì zhōu qū	1
+天津市静海县	tiān jīn shì jìng hǎi xiàn
 天津铁厂街道	tiān jīn tiě chǎng jiē dào	1
 天马华侨农场	tiān mǎ huá qiáo nóng chǎng	1
 天目西路街道	tiān mù xī lù jiē dào	1
@@ -74513,10 +74684,14 @@ sort: by_weight
 铁西街道地区	tiě xī jiē dào dì qū	1
 铜拔山垦殖场	tóng bá shān kěn zhí chǎng	1
 通达傈僳族乡	tōng dá lì sù zú xiāng	1
+通化市东昌区	tōng huà shì dōng chāng qū
 通济新经济区	tōng jì xīn jīng jì qū	1
 桶井土家族乡	tǒng jǐng tǔ jiā zú xiāng	1
+铜陵市义安区	tóng líng shì yì ān qū
 桐木漯瑶族乡	tóng mù luò yáo zú xiāng	1
 桐木坪侗族乡	tóng mù píng dòng zú xiāng	1
+铜仁市万山区	tóng rén shì wàn shān qū
+通州区潞城镇	tōng zhōu qū lù chéng zhèn
 头道牌楼街道	tóu dào pái lóu jiē dào	1
 吐列毛杜农场	tǔ liè máo dù nóng chǎng	1
 吐鲁番于孜乡	tǔ lǔ fān yú zī xiāng	1
@@ -74532,12 +74707,18 @@ sort: by_weight
 万安县工业园	wàn ān xiàn gōng yè yuán
 万寿滩良种场	wàn shòu tān liáng zhǒng chǎng	1
 王家楼回族乡	wáng jiā lóu huí zú xiāng	1
+潍坊市潍城区	wéi fāng shì wéi chéng qū
 潍坊新村街道	wéi fāng xīn cūn jiē dào	1
+威海市环翠区	wēi hǎi shì huán cuì qū
+威海市文登区	wēi hǎi shì wén dēng qū
+渭南市华州区	wèi nán shì huá zhōu qū
 渭阳西路街道	wèi yáng xī lù jiē dào	1
 文昌大道街道	wén chāng dà dào jiē dào	1
 温都尔勒图镇	wēn dōu ěr lè tú zhèn	1
 文明大道街道	wén míng dà dào jiē dào	1
 温图高勒苏木	wēn tú gāo lè sū mù
+温州市平阳县	wēn zhōu shì píng yáng xiàn
+温州市永嘉县	wēn zhōu shì yǒng jiā xiàn
 翁贡乌拉苏木	wēng gòng wù lā sū mù
 卧龙朝鲜族乡	wò lóng cháo xiǎn zú xiāng	1
 五陂下垦殖场	wǔ bēi xià kěn zhí chǎng	1
@@ -74546,6 +74727,9 @@ sort: by_weight
 乌额格其牧场	wū é gé qí mù chǎng	1
 乌额格其苏木	wū é gé qí sū mù
 悟峰山度假区	wù fēng shān dù jià qū	1
+武汉市江夏区	wǔ hàn shì jiāng xià qū
+武汉市硚口区	wǔ hàn shì qiáo kǒu qū
+武汉市武昌区	wǔ hàn shì wǔ chāng qū
 五家渠市北屯	wǔ jiā qú shì běi tún	1
 屋脚蒙古族乡	wū jiǎo měng gǔ zú xiāng	1
 乌拉哈乌拉乡	wù lā hā wù lā xiāng	1
@@ -74569,9 +74753,25 @@ sort: by_weight
 五四大街街道	wǔ sì dà jiē jiē dào	1
 五松社区街道	wǔ sōng shè qū jiē dào	1
 乌图布拉格镇	wū tú bù lā gé zhèn	1
+武威市凉州区	wǔ wēi shì liáng zhōu qū
 五五新镇街道	wǔ wǔ xīn zhèn jiē dào	1
+无锡市锡山区	wú xī shì xī shān qū
 武陟宁郭农场	wǔ zhì níng guō nóng chǎng	1
+吴忠市利通区	wú zhōng shì lì tōng qū
 乌尊布拉克镇	wū zūn bù lā kè zhèn	1
+西安市灞桥区	xī ān shì bà qiáo qū
+西安市碑林区	xī ān shì bēi lín qū
+西安市高陵区	xī ān shì gāo líng qū
+西安市高新区	xī ān shì gāo xīn qū
+西安市鄠邑区	xī ān shì hù yì qū
+西安市蓝田县	xī ān shì lán tián xiàn
+西安市莲湖区	xī ān shì lián hú qū
+西安市临潼区	xī ān shì lín tóng qū
+西安市未央区	xī ān shì wèi yāng qū
+西安市新城区	xī ān shì xīn chéng qū
+西安市阎良区	xī ān shì yán liáng qū
+西安市雁塔区	xī ān shì yàn tǎ qū
+西安市周至县	xī ān shì zhōu zhì xiàn
 西长安街街道	xī cháng ān jiē jiē dào	1
 西关大街街道	xī guān dà jiē jiē dào	1
 西湖片区街道	xī hú piàn qū jiē dào	1
@@ -74603,12 +74803,16 @@ sort: by_weight
 县特产场场区	xiàn tè chǎn chǎng chǎng qū	1
 仙霞新村街道	xiān xiá xīn cūn jiē dào	1
 咸阳北路街道	xián yáng běi lù jiē dào	1
+咸阳市渭城区	xián yáng shì wèi chéng qū
 芗城区奶牛场	xiāng chéng qū nǎi niú chǎng	1
 香坊大街街道	xiāng fāng dà jiē jiē dào	1
 香港中路街道	xiāng gǎng zhōng lù jiē dào	1
 向海蒙古族乡	xiàng hǎi měng gǔ zú xiāng	1
 湘江源瑶族乡	xiāng jiāng yuán yáo zú xiāng	1
 项脚蒙古族乡	xiàng jiǎo měng gǔ zú xiāng	1
+襄阳市樊城区	xiāng yáng shì fán chéng qū
+襄阳市襄城区	xiāng yáng shì xiāng chéng qū
+襄阳市襄州区	xiāng yáng shì xiāng zhōu qū
 向阳小区街道	xiàng yáng xiǎo qū jiē dào	1
 小城子管理处	xiǎo chéng zǐ guǎn lǐ chù
 肖尔布拉克镇	xiāo ěr bù lā kè zhèn	1
@@ -74638,7 +74842,14 @@ sort: by_weight
 新山傈僳族乡	xīn shān lì sù zú xiāng	1
 新世纪工业园	xīn shì jì gōng yè yuán
 新添堡回族乡	xīn tiān bǎo huí zú xiāng	1
+新乡市牧野区	xīn xiāng shì mù yě qū
+新乡市卫滨区	xīn xiāng shì wèi bīn qū
 新星市核心区	xīn xīng shì hé xīn qū	1
+信阳市光山县	xìn yáng shì guāng shān xiàn
+信阳市平桥区	xìn yáng shì píng qiáo qū
+信阳市浉河区	xìn yáng shì shī hé qū
+新余市渝水区	xīn yú shì yú shuǐ qū
+新郑市龙湖镇	xīn zhèng shì lóng hú zhèn
 幸福社区街道	xìng fú shè qū jiē dào	1
 幸福之路苏木	xìng fú zhī lù sū mù
 兴国县工业园	xīng guó xiàn gōng yè yuán
@@ -74646,8 +74857,12 @@ sort: by_weight
 兴隆华侨农场	xīng lóng huá qiáo nóng chǎng	1
 兴蒙蒙古族乡	xīng méng méng gǔ zú xiāng	1
 杏树朝鲜族乡	xìng shù cháo xiǎn zú xiāng	1
+许昌市建安区	xǔ chāng shì jiàn ān qū
 畜牧良种农场	xù mù liáng zhǒng nóng chǎng	1
 浒墅关经开区	xǔ shù guān jīng kāi qū
+徐州市睢宁县	xú zhōu shì suī níng xiàn
+宣城市绩溪县	xuān chéng shì jì xī xiàn
+宣城市宣州区	xuān chéng shì xuān zhōu qū
 学府园区街道	xué fǔ yuán qū jiē dào	1
 学院南路街道	xué yuàn nán lù jiē dào	1
 学苑社区街道	xué yuàn shè qū jiē dào	1
@@ -74659,6 +74874,10 @@ sort: by_weight
 亚瓦通古孜乡	yà wǎ tōng gǔ zī xiāng	1
 延安北路街道	yán ān běi lù jiē dào	1
 延安南路街道	yán ān nán lù jiē dào	1
+延安市安塞区	yán ān shì ān sài qū
+延安市宝塔区	yán ān shì bǎo tǎ qū
+延安市宜川县	yán ān shì yí chuān xiàn
+盐城市建湖县	yán chéng shì jiàn hú xiàn
 延和朝鲜族乡	yán hé cháo xiǎn zú xiāng	1
 延吉市林业局	yán jí shì lín yè jú
 延吉新村街道	yán jí xīn cūn jiē dào	1
@@ -74667,12 +74886,15 @@ sort: by_weight
 堰塘土家族乡	yàn táng tǔ jiā zú xiāng	1
 阳光社区街道	yáng guāng shè qū jiē dào	1
 阳和土家族乡	yáng hé tǔ jiā zú xiāng	1
+阳江市江城区	yáng jiāng shì jiāng chéng qū
 羊桥土家族乡	yáng qiáo tǔ jiā zú xiāng	1
 羊三木回族乡	yáng sān mù huí zú xiāng	1
 仰天湖瑶族乡	yǎng tiān hú yáo zú xiāng	1
 扬子江路街道	yáng zǐ jiāng lù jiē dào	1
 鹞山社区街道	yào shān shè qū jiē dào	1
 也格孜托别乡	yě gé zī tuō bié xiāng	1
+宜宾市屏山县	yí bīn shì píng shān xiàn
+宜昌市西陵区	yí chāng shì xī líng qū
 依格孜也尔乡	yī gé zī yě ěr xiāng	1
 伊和高勒苏木	yī hé gāo lè sū mù
 伊和淖尔苏木	yī hé nào ěr sū mù
@@ -74685,6 +74907,11 @@ sort: by_weight
 依其艾日克镇	yī qí ài rì kè zhèn	1
 依吞布拉克镇	yī tūn bù lā kè zhèn	1
 依希来木其乡	yī xī lái mù qí xiāng	1
+宜兴市丁蜀镇	yí xīng shì dīng shǔ zhèn
+益阳市赫山区	yì yáng shì hè shān qū
+益阳市资阳区	yì yáng shì zī yáng qū
+银川市贺兰县	yín chuān shì hè lán xiàn
+银川市西夏区	yín chuān shì xī xià qū
 银河北路街道	yín hé běi lù jiē dào	1
 银河南路街道	yín hé nán lù jiē dào	1
 尹家营满族乡	yǐn jiā yíng mǎn zú xiāng	1
@@ -74713,26 +74940,38 @@ sort: by_weight
 玉佛山风景区	yù fó shān fēng jǐng qū	1
 于家务回族乡	yú jiā wù huí zú xiāng	1
 鱼梁洲开发区	yú liáng zhōu kāi fā qū	1
+榆林市横山区	yú lín shì héng shān qū
+榆林市榆阳区	yú lín shì yú yáng qū
 玉奇吾斯塘乡	yù qí wú sī táng xiāng	1
 愉群翁回族乡	yú qún wēng huí zú xiāng	1
 玉什喀拉苏镇	yù shí kā lā sū zhèn	1
 榆树沟管理处	yú shù gōu guǎn lǐ chù
+玉溪市红塔区	yù xī shì hóng tǎ qū
 元台子满族乡	yuán tái zi mǎn zú xiāng	1
 原种繁育中心	yuán zhǒng fán yù zhōng xīn
+岳阳市云溪区	yuè yáng shì yún xī qū
+云浮市新兴县	yún fú shì xīn xīng xiàn
+云浮市云安区	yún fú shì yún ān qū
+云浮市云城区	yún fú shì yún chéng qū
 运粮湖管理区	yùn liáng hú guǎn lǐ qū	1
 云山企业集团	yún shān qǐ yè jí tuán	1
 云雾土家族乡	yún wù tǔ jiā zú xiāng	1
 藏青工业园乡	zàng qīng gōng yè yuán xiāng	1
+枣庄市市中区	zǎo zhuāng shì shì zhōng qū
 泽普县良种场	zé pǔ xiàn liáng zhǒng chǎng	1
 泽普县依玛乡	zé pǔ xiàn yī mǎ xiāng	1
 扎格斯台苏木	zhā gé sī tái sū mù
 扎库齐牛录乡	zhā kù qí niú lù xiāng	1
 扎赉诺尔矿区	zhā lài nuò ěr kuàng qū	1
 湛河北路街道	zhàn hé běi lù jiē dào	1
+湛江市遂溪县	zhàn jiāng shì suì xī xiàn
+湛江市霞山区	zhàn jiāng shì xiá shān qū
 张家港保税区	zhāng jiā gǎng bǎo shuì qū	1
+张掖市甘州区	zhāng yè shì gān zhōu qū
 兆麟街道地区	zhào lín jiē dào dì qū	1
 赵陵铺路街道	zhào líng pū lù jiē dào	1
 昭平台库区乡	zhāo píng tái kù qū xiāng	1
+昭通市镇雄县	zhāo tōng shì zhèn xióng xiàn
 昭乌达路街道	zhāo wū dá lù jiē dào	1
 者米拉祜族乡	zhě mǐ lā hù zú xiāng	1
 哲日根图林场	zhé rì gēn tú lín chǎng	1
@@ -74740,6 +74979,11 @@ sort: by_weight
 真新新村街道	zhēn xīn xīn cūn jiē dào	1
 振兴东路街道	zhèn xīng dōng lù jiē dào	1
 振兴中路街道	zhèn xīng zhōng lù jiē dào	1
+郑州市二七区	zhèng zhōu shì èr qī qū
+郑州市管城区	zhèng zhōu shì guǎn chéng qū
+郑州市惠济区	zhèng zhōu shì huì jì qū
+郑州市上街区	zhèng zhōu shì shàng jiē qū
+郑州市中原区	zhèng zhōu shì zhōng yuán qū
 职工新街街道	zhí gōng xīn jiē jiē dào	1
 芷江西路街道	zhǐ jiāng xī lù jiē dào	1
 中大槐树街道	zhōng dà huái shù jiē dào	1
@@ -74749,11 +74993,20 @@ sort: by_weight
 中山北路街道	zhōng shān běi lù jiē dào	1
 中山东路街道	zhōng shān dōng lù jiē dào	1
 中山南街街道	zhōng shān nán jiē jiē dào	1
+中山市东凤镇	zhōng shān shì dōng fèng zhèn
+中山市古镇镇	zhōng shān shì gǔ zhèn zhèn
+中山市三角镇	zhōng shān shì sān jiǎo zhèn
 中山西路街道	zhōng shān xī lù jiē dào	1
 中原西路街道	zhōng yuán xī lù jiē dào	1
 驻马店市乡镇	zhù mǎ diàn shì xiāng zhèn	1
+株洲市天元区	zhū zhōu shì tiān yuán qū
+淄博市高青县	zī bó shì gāo qīng xiàn
+自贡市大安区	zì gòng shì dà ān qū
+自贡市富顺县	zì gòng shì fù shùn xiàn
 紫蓬山管委会	zǐ péng shān guǎn wěi huì
 紫薇大道街道	zǐ wēi dà dào jiē dào	1
+资阳市安岳县	zī yáng shì ān yuè xiàn
+资阳市雁江区	zī yáng shì yàn jiāng qū
 走马坪白族乡	zǒu mǎ píng bái zú xiāng	1
 左江华侨农场	zuǒ jiāng huá qiáo nóng chǎng	1
 阿尔丁大街街道	ā ěr dīng dà jiē jiē dào	1
@@ -74803,8 +75056,10 @@ sort: by_weight
 宝田侗族苗族乡	bǎo tián dòng zú miáo zú xiāng	1
 北安管理局局直	běi ān guǎn lǐ jú jú zhí
 北川羌族自治县	běi chuān qiāng zú zì zhì xiàn	1
+北海市铁山港区	běi hǎi shì tiě shān gǎng qū
 北湖风景管理区	běi hú fēng jǐng guǎn lǐ qū	1
 北街办事处街道	běi jiē bàn shì chù jiē dào	1
+北京市门头沟区	běi jīng shì mén tóu gōu qū
 北京市双河农场	běi jīng shì shuāng hé nóng chǎng	1
 贝林哈日莫墩乡	bèi lín hā rì mò dūn xiāng	1
 本溪满族自治县	běn xī mǎn zú zì zhì xiàn	1
@@ -74852,13 +75107,17 @@ sort: by_weight
 大丰经济开发区	dà fēng jīng jì kāi fā qū	1
 大化瑶族自治县	dà huà yáo zú zì zhì xiàn	1
 大理白族自治州	dà lǐ bái zú zì zhì zhōu	1
+大连市普兰店区	dà lián shì pǔ lán diàn qū
+大连市沙河口区	dà lián shì shā hé kǒu qū
 达木珞巴民族乡	dá mù luò bā mín zú xiāng	1
 大平苗族彝族乡	dà píng miáo zú yí zú xiāng	1
+大庆市让胡路区	dà qìng shì ràng hú lù qū
 达日罕乌拉苏木	dá rì hǎn wù lā sū mù
 大山苗族彝族乡	dà shān miáo zú yí zú xiāng	1
 大石桥市示范场	dà shí qiáo shì shì fàn chǎng	1
 大台山果树农场	dà tái shān guǒ shù nóng chǎng	1
 大兴经济开发区	dà xīng jīng jì kāi fā qū	1
+大兴区西红门镇	dà xīng qū xī hóng mén zhèn
 大熊山国有林场	dà xióng shān guó yǒu lín chǎng	1
 大亚湾澳头街道	dà yà wān ào tóu jiē dào	1
 大亚湾西区街道	dà yà wān xī qū jiē dào	1
@@ -74959,6 +75218,14 @@ sort: by_weight
 国营长江机械厂	guó yíng zhǎng jiāng jī xiè chǎng
 国有林场管理局	guó yǒu lín chǎng guǎn lǐ jú
 国有林管理中心	guó yǒu lín guǎn lǐ zhōng xīn
+哈尔滨市道里区	hā ěr bīn shì dào lǐ qū
+哈尔滨市道外区	hā ěr bīn shì dào wài qū
+哈尔滨市呼兰区	hā ěr bīn shì hū lán qū
+哈尔滨市南岗区	hā ěr bīn shì nán gǎng qū
+哈尔滨市平房区	hā ěr bīn shì píng fáng qū
+哈尔滨市双城区	hā ěr bīn shì shuāng chéng qū
+哈尔滨市松北区	hā ěr bīn shì sōng běi qū
+哈尔滨市香坊区	hā ěr bīn shì xiāng fāng qū
 哈拉盖图农牧场	hā la gài tú nóng mù chǎng	1
 哈拉毛都良种场	hā la máo dōu liáng zhǒng chǎng	1
 哈勒景蒙古族乡	hā lè jǐng měng gǔ zú xiāng	1
@@ -74969,6 +75236,7 @@ sort: by_weight
 海拉尔西路街道	hǎi lā ěr xī lù jiē dào	1
 海南藏族自治州	hǎi nán zàng zú zì zhì zhōu	1
 海州经济开发区	hǎi zhōu jīng jì kāi fā qū	1
+邯郸市峰峰矿区	hán dān shì fēng fēng kuàng qū
 河伯岭国有林场	hé bó lǐng guó yǒu lín chǎng	1
 河口经济开发区	hé kǒu jīng jì kāi fā qū	1
 河口瑶族自治县	hé kǒu yáo zú zì zhì xiàn	1
@@ -74989,6 +75257,8 @@ sort: by_weight
 洪泽经济开发区	hóng zé jīng jì kāi fā qū	1
 呼和托哈种畜场	hū hé tuō hā zhǒng chù chǎng	1
 胡力吐蒙古族乡	hú lì tǔ měng gǔ zú xiāng	1
+葫芦岛市连山区	hú lu dǎo shì lián shān qū
+葫芦岛市龙港区	hú lu dǎo shì lóng gǎng qū
 呼热图淖尔苏木	hū rè tú nào ěr sū mù
 互助土族自治县	hù zhù tǔ zú zì zhì xiàn	1
 华北石油管理局	huá běi shí yóu guǎn lǐ jú
@@ -75082,9 +75352,16 @@ sort: by_weight
 莲花管理委员会	lián huā guǎn lǐ wěi yuán huì
 连南瑶族自治县	lián nán yáo zú zì zhì xiàn	1
 连山飞地经济区	lián shān fēi dì jīng jì qū	1
+连云港市东海县	lián yún gǎng shì dōng hǎi xiàn
+连云港市赣榆区	lián yún gǎng shì gàn yú qū
+连云港市灌南县	lián yún gǎng shì guàn nán xiàn
+连云港市灌云县	lián yún gǎng shì guàn yún xiàn
+连云港市海州区	lián yún gǎng shì hǎi zhōu qū
+连云港市连云区	lián yún gǎng shì lián yún qū
 良庆经济开发区	liáng qìng jīng jì kāi fā qū	1
 凉山彝族自治州	liáng shān yí zú zì zhì zhōu	1
 凉水河蒙古族乡	liáng shuǐ hé měng gǔ zú xiāng	1
+聊城市东昌府区	liáo chéng shì dōng chāng fǔ qū
 林甸县长青林场	lín diàn xiàn zhǎng qīng lín chǎng	1
 临汾经济开发区	lín fén jīng jì kāi fā qū	1
 临港经济开发区	lín gǎng jīng jì kāi fā qū	1
@@ -75092,6 +75369,7 @@ sort: by_weight
 林口彝族苗族乡	lín kǒu yí zú miáo zú xiāng	1
 临夏回族自治州	lín xià huí zú zì zhì zhōu	1
 陵水黎族自治县	líng shuǐ lí zú zì zhì xiàn	1
+六盘水市水城县	liù pán shuǐ shì shuǐ chéng xiàn
 隆安华侨管理区	lóng ān huá qiáo guǎn lǐ qū	1
 龙港飞地经济区	lóng gǎng fēi dì jīng jì qū	1
 龙河镇保安林场	lóng hé zhèn bǎo ān lín chǎng	1
@@ -75111,6 +75389,10 @@ sort: by_weight
 螺蛳山社区街道	luó sī shān shè qū jiē dào	1
 绿化白族彝族乡	lǜ huà bái zú yí zú xiāng	1
 绿园经济开发区	lǜ yuán jīng jì kāi fā qū	1
+马鞍山市博望区	mǎ ān shān shì bó wàng qū
+马鞍山市含山县	mǎ ān shān shì hán shān xiàn
+马鞍山市花山区	mǎ ān shān shì huā shān qū
+马鞍山市雨山区	mǎ ān shān shì yǔ shān qū
 马边彝族自治县	mǎ biān yí zú zì zhì xiàn	1
 马路彝族苗族乡	mǎ lù yí zú miáo zú xiāng	1
 麻麻门巴民族乡	má má mén bā mín zú xiāng	1
@@ -75133,10 +75415,12 @@ sort: by_weight
 木里藏族自治县	mù lǐ zàng zú zì zhì xiàn	1
 那仁宝拉格苏木	nà rén bǎo lā gé sū mù
 南堡经济开发区	nán bǎo jīng jì kāi fā qū	1
+南昌市青山湖区	nán chāng shì qīng shān hú qū
 南环街道办事处	nán huán jiē dào bàn shì chù
 南涧彝族自治县	nán jiàn yí zú zì zhì xiàn	1
 南街办事处街道	nán jiē bàn shì chù jiē dào	1
 南京龙潭物流园	nán jīng lóng tán wù liú yuán
+南京市雨花台区	nán jīng shì yǔ huā tái qū
 南京仙林大学城	nán jīng xiān lín dà xué chéng
 南开苗族彝族乡	nán kāi miáo zú yí zú xiāng	1
 南宁华侨投资区	nán níng huá qiáo tóu zī qū	1
@@ -75160,9 +75444,16 @@ sort: by_weight
 农三师红旗农场	nóng sān shī hóng qí nóng chǎng	1
 牌坊回族满族乡	pái fāng huí zú mǎn zú xiāng	1
 潘家湾土家族乡	pān jiā wān tǔ jiā zú xiāng	1
+攀枝花市米易县	pān zhī huā shì mǐ yì xiàn
+攀枝花市仁和区	pān zhī huā shì rén hé qū
 炮团侗族苗族乡	pào tuán dòng zú miáo zú xiāng	1
 屏边苗族自治县	píng biān miáo zú zì zhì xiàn	1
 平村彝族傣族乡	píng cūn yí zú dǎi zú xiāng	1
+平顶山市宝丰县	píng dǐng shān shì bǎo fēng xiàn
+平顶山市鲁山县	píng dǐng shān shì lǔ shān xiàn
+平顶山市卫东区	píng dǐng shān shì wèi dōng qū
+平顶山市新华区	píng dǐng shān shì xīn huá qū
+平顶山市湛河区	píng dǐng shān shì zhàn hé qū
 平度经济开发区	píng dù jīng jì kāi fā qū	1
 平山湖蒙古族乡	píng shān hú měng gǔ zú xiāng	1
 普古彝族苗族乡	pǔ gǔ yí zú miáo zú xiāng	1
@@ -75184,6 +75475,8 @@ sort: by_weight
 谯城经济开发区	qiáo chéng jīng jì kāi fā qū	1
 乔拉克铁热克镇	qiáo lā kè tiě rè kè zhèn	1
 桥头苗族壮族乡	qiáo tóu miáo zú zhuàng zú xiāng	1
+秦皇岛市抚宁区	qín huáng dǎo shì fǔ níng qū
+秦皇岛市海港区	qín huáng dǎo shì hǎi gǎng qū
 轻工食品产业园	qīng gōng shí pǐn chǎn yè yuán
 青朗侗族苗族乡	qīng lǎng dòng zú miáo zú xiāng	1
 青林苗族彝族乡	qīng lín miáo zú yí zú xiāng	1
@@ -75208,6 +75501,8 @@ sort: by_weight
 三家子蒙古族乡	sān jiā zǐ měng gǔ zú xiāng	1
 三江侗族自治县	sān jiāng dòng zú zì zhì xiàn	1
 三棵树大街街道	sān kē shù dà jiē jiē dào	1
+三门峡市湖滨区	sān mén xiá shì hú bīn qū
+三门峡市陕州区	sān mén xiá shì shǎn zhōu qū
 三台山德昂族乡	sān tái shān dé áng zú xiāng	1
 三源浦朝鲜族镇	sān yuán pǔ cháo xiǎn zú zhèn	1
 莎车县第一林场	shā chē xiàn dì yī lín chǎng	1
@@ -75221,16 +75516,30 @@ sort: by_weight
 社区建设办公室	shè qū jiàn shè bàn gōng shì
 歙县经济开发区	shè xiàn jīng jì kāi fā qū	1
 沈北新区种畜场	shěn běi xīn qū zhǒng chù chǎng	1
+深圳市大鹏新区	shēn zhèn shì dà péng xīn qū
+深圳市龙华新区	shēn zhèn shì lóng huá xīn qū
 生物科技产业园	shēng wù kē jì chǎn yè yuán
 生物医药产业园	shēng wù yī yào chǎn yè yuán
 石场苗族彝族乡	shí chǎng miáo zú yí zú xiāng	1
 十二师三坪农场	shí èr shī sān píng nóng chǎng	1
 十二师五一农场	shí èr shī wǔ yī nóng chǎng	1
 十二师西山农场	shí èr shī xī shān nóng chǎng	1
+石家庄市藁城区	shí jiā zhuāng shì gǎo chéng qū
+石家庄市高新区	shí jiā zhuāng shì gāo xīn qū
+石家庄市井陉县	shí jiā zhuāng shì jǐng xíng xiàn
+石家庄市鹿泉区	shí jiā zhuāng shì lù quán qū
+石家庄市栾城区	shí jiā zhuāng shì luán chéng qū
+石家庄市平山县	shí jiā zhuāng shì píng shān xiàn
+石家庄市桥西区	shí jiā zhuāng shì qiáo xī qū
+石家庄市新华区	shí jiā zhuāng shì xīn huá qū
+石家庄市裕华区	shí jiā zhuāng shì yù huá qū
+石家庄市正定县	shí jiā zhuāng shì zhèng dìng xiàn
+石家庄市主城区	shí jiā zhuāng shì zhǔ chéng qū
 石林彝族自治县	shí lín yí zú zì zhì xiàn	1
 食品工业管理处	shí pǐn gōng yè guǎn lǐ chù
 十字回族苗族乡	shí zì huí zú miáo zú xiāng	1
 狮子山社区街道	shī zi shān shè qū jiē dào	1
+石嘴山市惠农区	shí zuǐ shān shì huì nóng qū
 疏附广州工业城	shū fù guǎng zhōu gōng yè chéng
 树林彝族苗族乡	shù lín yí zú miáo zú xiāng	1
 沭阳经济开发区	shù yáng jīng jì kāi fā qū	1
@@ -75238,6 +75547,7 @@ sort: by_weight
 双牌打鼓坪林场	shuāng pái dǎ gǔ píng lín chǎng	1
 双牌五星岭林场	shuāng pái wǔ xīng lǐng lín chǎng	1
 双坪彝族苗族乡	shuāng píng yí zú miáo zú xiāng	1
+双鸭山市尖山区	shuāng yā shān shì jiān shān qū
 四家子蒙古族乡	sì jiā zǐ měng gǔ zú xiāng	1
 松城街道筹备处	sōng chéng jiē dào chóu bèi chù
 松岭门蒙古族乡	sōng lǐng mén měng gǔ zú xiāng	1
@@ -75255,6 +75565,7 @@ sort: by_weight
 太平川机械林场	tài píng chuān jī xiè lín chǎng	1
 太平彝族苗族乡	tài píng yí zú miáo zú xiāng	1
 台湾农民创业园	tái wān nóng mín chuàng yè yuán
+太原市尖草坪区	tài yuán shì jiān cǎo píng qū
 唐山国际旅游岛	táng shān guó jì lǚ yóu dǎo
 腾格里额里斯镇	téng gé lǐ é lǐ sī zhèn	1
 天津风电产业园	tiān jīn fēng diàn chǎn yè yuán
@@ -75270,7 +75581,9 @@ sort: by_weight
 通道侗族自治县	tōng dào dòng zú zì zhì xiàn	1
 通道县播阳农场	tōng dào xiàn bō yáng nóng chǎng	1
 通道县地连林场	tōng dào xiàn dì lián lín chǎng	1
+通辽市科尔沁区	tōng liáo shì kē ěr qìn qū
 通榆经济开发区	tōng yú jīng jì kāi fā qū	1
+吐鲁番市高昌区	tǔ lǔ fān shì gāo chāng qū
 团结彝族苗族乡	tuán jié yí zú miáo zú xiāng	1
 托格拉克勒克乡	tuō gé lā kè lè kè xiāng	1
 瓦房彝族苗族乡	wǎ fáng yí zú miáo zú xiāng	1
@@ -75296,6 +75609,7 @@ sort: by_weight
 吾斯塘博依街道	wú sī táng bó yī jiē dào	1
 无锡锡山开发区	wú xī xī shān kāi fā qū	1
 伍寨彝族苗族乡	wǔ zhài yí zú miáo zú xiāng	1
+吴忠市红寺堡区	wú zhōng shì hóng sì bǔ qū
 吾宗布拉克牧场	wú zōng bù lā kè mù chǎng	1
 西岗子试验林场	xī gǎng zi shì yàn lín chǎng	1
 西街办事处街道	xī jiē bàn shì chù jiē dào	1
@@ -75348,6 +75662,7 @@ sort: by_weight
 学田镇富源林场	xué tián zhèn fù yuán lín chǎng	1
 雅玛里克山街道	yǎ mǎ lǐ kè shān jiē dào	1
 炎陵县大院农场	yán líng xiàn dà yuàn nóng chǎng	1
+彦淖尔市五原县	yàn nào ěr shì wǔ yuán xiàn
 焉耆回族自治县	yān qí huí zú zì zhì xiàn	1
 漾濞彝族自治县	yàng bì yí zú zì zhì xiàn	1
 羊场苗族彝族乡	yáng chǎng miáo zú yí zú xiāng	1
@@ -75358,6 +75673,7 @@ sort: by_weight
 腰站子东乡族镇	yāo zhàn zi dōng xiāng zú zhèn	1
 也克先拜巴扎镇	yě kè xiān bài bā zhā zhèn	1
 义安经济开发区	yì ān jīng jì kāi fā qū	1
+宜昌市伍家岗区	yí chāng shì wǔ jiā gǎng qū
 宜城经济开发区	yí chéng jīng jì kāi fā qū	1
 宜春经济开发区	yí chūn jīng jì kāi fā qū
 宜春市宜阳新区	yí chūn shì yí yáng xīn qū
@@ -75383,22 +75699,36 @@ sort: by_weight
 雨山经济开发区	yǔ shān jīng jì kāi fā qū	1
 玉树藏族自治州	yù shù zàng zú zì zhì zhōu	1
 鱼塘侗族苗族乡	yú táng dòng zú miáo zú xiāng	1
+岳阳市岳阳楼区	yuè yáng shì yuè yáng lóu qū
 云陵工业开发区	yún líng gōng yè kāi fā qū	1
 再生资源产业园	zài shēng zī yuán chǎn yè yuán
 枣阳经济开发区	zǎo yáng jīng jì kāi fā qū	1
+枣庄市台儿庄区	zǎo zhuāng shì tái ér zhuāng qū
 寨市苗族侗族乡	zhài shì miáo zú dòng zú xiāng	1
+张家港市杨舍镇	zhāng jiā gǎng shì yáng shě zhèn
+张家界市慈利县	zhāng jiā jiè shì cí lì xiàn
+张家界市桑植县	zhāng jiā jiè shì sāng zhí xiàn
+张家界市永定区	zhāng jiā jiè shì yǒng dìng qū
+张家口市崇礼区	zhāng jiā kǒu shì chóng lǐ qū
+张家口市桥东区	zhāng jiā kǒu shì qiáo dōng qū
+张家口市桥西区	zhāng jiā kǒu shì qiáo xī qū
+张家口市万全区	zhāng jiā kǒu shì wàn quán qū
+张家口市张北县	zhāng jiā kǒu shì zhāng běi xiàn
 张江高科技园区	zhāng jiāng gāo kē jì yuán qū	1
 张掖宝瓶河牧场	zhāng yè bǎo píng hé mù chǎng	1
 赵家岗土家族乡	zhào jiā gǎng tǔ jiā zú xiāng	1
 昭乌达南路街道	zhāo wū dá nán lù jiē dào	1
+郑州市郑东新区	zhèng zhōu shì zhèng dōng xīn qū
 芷江侗族自治县	zhǐ jiāng dòng zú zì zhì xiàn	1
 雉街彝族苗族乡	zhì jiē yí zú miáo zú xiāng	1
 中建苗族彝族乡	zhōng jiàn miáo zú yí zú xiāng	1
 中卫山羊选育场	zhōng wèi shān yáng xuǎn yù chǎng	1
+中卫市沙坡头区	zhōng wèi shì shā pō tóu qū
 中新天津生态城	zhōng xīn tiān jīn shēng tài chéng
 周口临港开发区	zhōu kǒu lín gǎng kāi fā qū	1
 猪场苗族彝族乡	zhū chǎng miáo zú yí zú xiāng	1
 诸城经济开发区	zhū chéng jīng jì kāi fā qū
+驻马店市驿城区	zhù mǎ diàn shì yì chéng qū
 竹园彝族苗族乡	zhú yuán yí zú miáo zú xiāng	1
 紫荆山南路街道	zǐ jīng shān nán lù jiē dào	1
 枞阳经济开发区	zōng yáng jīng jì kāi fā qū	1
@@ -75588,6 +75918,8 @@ sort: by_weight
 棋山国家森林公园	qí shān guó jiā sēn lín gōng yuán
 前山哈萨克民族乡	qián shān hā sà kè mín zú xiāng	1
 黔陶布依族苗族乡	qián táo bù yī zú miáo zú xiāng	1
+秦皇岛市北戴河区	qín huáng dǎo shì běi dài hé qū
+秦皇岛市山海关区	qín huáng dǎo shì shān hǎi guān qū
 青岗岭回族彝族乡	qīng gǎng lǐng huí zú yí zú xiāng	1
 青冈县互利营林站	qīng gāng xiàn hù lì yíng lín zhàn
 清远市羊角山林场	qīng yuǎn shì yáng jiǎo shān lín chǎng	1
@@ -75694,6 +76026,7 @@ sort: by_weight
 站北社区服务中心	zhàn běi shè qū fú wù zhōng xīn
 张家川回族自治县	zhāng jiā chuān huí zú zì zhì xiàn	1
 张家港宿豫工业园	zhāng jiā gǎng sù yù gōng yè yuán
+张家界市武陵源区	zhāng jiā jiè shì wǔ líng yuán qū
 招商局漳州开发区	zhāo shāng jú zhāng zhōu kāi fā qū	1
 珍珠泉旅游度假区	zhēn zhū quán lǚ yóu dù jià qū	1
 中亚北路片区街道	zhōng yà běi lù piàn qū jiē dào	1
