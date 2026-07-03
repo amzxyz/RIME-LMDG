@@ -1,0 +1,22 @@
+# rime dictionary
+# encoding: utf-8
+#https://github.com/amzxyz/RIME-LMDG
+# ------- 方言-------
+# 詞庫維護中避免當成爛詞刪除，獨立維護，以明確用途
+---
+name: fangyan
+version: "LTS"
+sort: by_weight
+...
+娭毑	āi jiě
+飽咗	bǎo zuo
+睇戲	dì xì
+了難	liǎo nán
+撩撇	liāo piē
+埋數	mái shù
+恰酒	qià jiǔ
+唔該	wú gāi
+正嘢	zhèng yě
+恰得苦	qià dé kǔ
+恰點酒	qià diǎn jiǔ
+恰點東西	qià diǎn dōng xi

@@ -1,7 +1,7 @@
 # rime dictionary
 # encoding: utf-8
 # https://github.com/amzxyz/RIME-LMDG
-# 名人(歷史人物、學者、作家、政治家、企業家、公眾人物等)
+#(歷史人物、學者、作家、政治家、企業家、公眾人物等)
 ---
 name: mingren
 version: "LTS"
@@ -157,6 +157,7 @@ sort: by_weight
 丁儀	dīng yí	412
 丁原	dīng yuán	90
 丁真	dīng zhēn	2123
+董卓	dǒng zhuó	4550
 樊川	fán chuān	88
 樊綱	fán gāng	102
 范公	fàn gōng	192
@@ -178,6 +179,7 @@ sort: by_weight
 范雲	fàn yún	380
 范增	fàn zēng	1011
 范曾	fàn zēng	960
+方臘	fāng là	441
 馮飛	féng fēi	765
 馮劫	féng jié	46
 馮軻	féng kē	1022
@@ -185,6 +187,7 @@ sort: by_weight
 馮唐	féng táng	966
 顧城	gù chéng	671
 顧況	gù kuàng	522
+關羽	guān yǔ	21571
 郭川	guō chuān	1146
 郭淮	guō huái	1032
 郭槐	guō huái	466
@@ -290,6 +293,7 @@ sort: by_weight
 李闖	lǐ chuǎng	1031
 厲兌	lì duì	290
 厲鶚	lì è	19
+李廣	lǐ guǎng	1629
 李靖	lǐ jìng	401
 李傕	lǐ jué	728
 李逵	lǐ kuí	1400
@@ -496,6 +500,7 @@ sort: by_weight
 聶耳	niè ěr	129
 聶風	niè fēng	163
 聶政	niè zhèng	135
+龐涓	páng juān	266
 裴漼	péi cuǐ	270
 裴迪	péi dí	50
 裴度	péi dù	157
@@ -543,6 +548,7 @@ sort: by_weight
 秦越	qín yuè	28
 秦鐘	qín zhōng	966
 秦仲	qín zhòng	361
+仇英	qiú yīng	644
 冉閔	rǎn mǐn	502
 冉求	rǎn qiú	472
 冉有	rǎn yǒu	580
@@ -685,6 +691,9 @@ sort: by_weight
 肖欽	xiāo qīn	280
 肖全	xiāo quán	342
 肖揚	xiāo yáng	106
+蕭繹	xiāo yì	36
+蕭意	xiāo yì	2
+蕭翼	xiāo yì	1
 肖鷹	xiāo yīng	28
 謝安	xiè ān	1048
 謝彬	xiè bīn	671
@@ -774,7 +783,9 @@ sort: by_weight
 嚴復	yán fù	135
 閻羅	yán luó	195
 閻魔	yán mó	76
+燕青	yān qīng	364
 閻柔	yán róu	16
+燕順	yān shùn	616
 嚴嵩	yán sōng	1047
 閻王	yán wang	1319
 閻行	yán xíng	14
@@ -997,6 +1008,7 @@ sort: by_weight
 鄒忌	zōu jì	229
 鄒容	zōu róng	28
 鄒衍	zōu yǎn	139
+薄一波	bó yì bō	247
 蔡哀侯	cài āi hóu	82
 蔡百銓	cài bǎi quán	328
 蔡邦華	cài bāng huá	270
@@ -1925,6 +1937,7 @@ sort: by_weight
 何振梁	hé zhèn liáng	495
 何志平	hé zhì píng	464
 何柱國	hé zhù guó	16
+胡燕青	hú yàn qīng	297
 華天龍	huà tiān lóng	279
 華文漪	huà wén yī	284
 華錫鈞	huà xī jūn	310
@@ -3339,20 +3352,31 @@ sort: by_weight
 秦仲文	qín zhòng wén	3
 秦莊公	qín zhuāng gōng	16
 秦莊王	qín zhuāng wáng	189
+仇保興	qiú bǎo xīng	504
+仇池公	qiú chí gōng	297
 裘德考	qiú dé kǎo	78
 裘東耀	qiú dōng yào	270
 裘法祖	qiú fǎ zǔ	38
 裘桂仙	qiú guì xiān	220
 裘國根	qiú guó gēn	558
+仇國仕	qiú guó shì	405
 裘錦秋	qiú jǐn qiū	405
 裘麗琳	qiú lì lín	252
+仇鹿鳴	qiú lù míng	374
 裘千尺	qiú qiān chǐ	66
 裘千仞	qiú qiān rèn	405
 裘千丈	qiú qiān zhàng	66
 裘盛戎	qiú shèng róng	50
+仇士良	qiú shì liáng	572
+仇十洲	qiú shí zhōu	266
 裘維蕃	qiú wéi fān	202
 裘錫圭	qiú xī guī	295
+仇彥英	qiú yàn yīng	320
+仇焱之	qiú yàn zhī	194
 裘曰修	qiú yuē xiū	252
+仇兆鰲	qiú zhào áo	333
+仇志強	qiú zhì qiáng	310
+仇子明	qiú zǐ míng	378
 全紅嬋	quán hóng chán	1517
 冉阿讓	rǎn ā ràng	135
 冉伯牛	rǎn bó niú	315
@@ -3467,6 +3491,7 @@ sort: by_weight
 施偉賢	shī wěi xián	277
 施一公	shī yì gōng	430
 施夷光	shī yí guāng	3
+釋印樂	shì yìn lè	158
 施永青	shī yǒng qīng	3
 施愚山	shī yú shān	230
 施肇基	shī zhào jī	454
@@ -4706,6 +4731,7 @@ sort: by_weight
 袁宗道	yuán zōng dào	3
 袁宗第	yuán zōng dì	16
 袁祖銘	yuán zǔ míng	468
+員半千	yùn bàn qiān	306
 臧克家	zāng kè jiā	60
 臧懋循	zāng mào xún	266
 臧啟芳	zāng qǐ fāng	320
@@ -5282,3 +5308,5 @@ sort: by_weight
 中島一貴	zhōng dǎo yí guì	279
 中島英樹	zhōng dǎo yīng shù	180
 中島哲也	zhōng dǎo zhé yě	500
+斯特里克蘭德	sī tè lǐ kè lán dé	10
+香宗我部親泰	xiāng zōng wǒ bù qīn tài	10
