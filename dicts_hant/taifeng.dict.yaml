@@ -1,0 +1,227 @@
+# rime dictionary
+# encoding: utf-8
+#https://github.com/amzxyz/RIME-LMDG
+# ----颱風--同步更新最新颱風表----
+---
+name: taifeng
+version: "LTS"
+sort: by_weight
+...
+颱風達維	tái fēng dá wéi	1
+颱風娜基莉	tái fēng nà jī lì	1
+颱風科羅旺	tái fēng kē luó wàng	1
+颱風風神	tái fēng fēng shén	1
+颱風杜鵑	tái fēng dù juān	1
+颱風鴻雁	tái fēng hóng yàn	1
+颱風海鷗	tái fēng hǎi ōu	1
+颱風米雷	tái fēng mǐ léi	1
+颱風鳳凰	tái fēng fèng huáng	1
+颱風彩雲	tái fēng cǎi yún	1
+颱風蠍虎	tái fēng xiē hǔ	1
+颱風布拉萬	tái fēng bù lā wàn	1
+颱風帕布	tái fēng pà bù	1
+颱風蝴蝶	tái fēng hú dié	1
+颱風梅花	tái fēng méi huā	1
+颱風傑拉華	tái fēng jié lā huá	1
+颱風聖帕	tái fēng shèng pà	1
+颱風苗柏	tái fēng miáo bǎi	1
+颱風森拉克	tái fēng sēn lā kè	1
+颱風尼伯特	tái fēng ní bó tè	1
+颱風南瑪都	tái fēng nán mǎ dū	1
+颱風丹娜絲	tái fēng dān nà sī	1
+颱風黑格比	tái fēng hēi gé bǐ	1
+颱風盧碧	tái fēng lú bì	1
+颱風塔拉斯	tái fēng tǎ lā sī	1
+颱風格美	tái fēng gé měi	1
+颱風百合	tái fēng bǎi hé	1
+颱風薔薇	tái fēng qiáng wēi	1
+颱風派比安	tái fēng pài bǐ ān	1
+颱風韋帕	tái fēng wéi pà	1
+颱風米克拉	tái fēng mǐ kè lā	1
+颱風妮妲	tái fēng nī dá	1
+颱風玫瑰	tái fēng méi gui	1
+颱風瑪莉亞	tái fēng mǎ lì yà	1
+颱風范斯高	tái fēng fàn sī gāo	1
+颱風海高斯	tái fēng hǎi gāo sī	1
+颱風奧麥斯	tái fēng ào mài sī	1
+颱風洛克	tái fēng luò kè	1
+颱風巴威	tái fēng bā wēi	1
+颱風桑卡	tái fēng sāng kǎ	1
+颱風羅莎	tái fēng luó shā	1
+颱風美莎克	tái fēng měi shā kè	1
+颱風燦都	tái fēng càn dōu	1
+颱風納沙	tái fēng nà shā	1
+颱風悟空	tái fēng wù kōng	1
+颱風海神	tái fēng hǎi shén	1
+颱風電母	tái fēng diàn mǔ	1
+颱風海棠	tái fēng hǎi táng	1
+颱風楊柳	tái fēng yáng liǔ	1
+颱風蒲公英	tái fēng pú gōng yīng	1
+颱風珊珊	tái fēng shān shān	1
+颱風玲玲	tái fēng líng líng	1
+颱風榕樹	tái fēng róng shù	1
+颱風劍魚	tái fēng jiàn yú	1
+颱風鯨魚	tái fēng jīng yú	1
+颱風燦鴻	tái fēng càn hóng	1
+颱風南川	tái fēng nán chuān	1
+颱風貝碧嘉	tái fēng bèi bì jiā	1
+颱風瑪瑙	tái fēng mǎ nǎo	1
+颱風珊瑚	tái fēng shān hú	1
+颱風塔巴	tái fēng tǎ bā	1
+颱風浪卡	tái fēng làng kǎ	1
+颱風瑪娃	tái fēng mǎ wá	1
+颱風蘇力	tái fēng sū lì	1
+颱風米娜	tái fēng mǐ nà	1
+颱風古超	tái fēng gǔ chāo	1
+颱風西馬侖	tái fēng xī mǎ lún	1
+颱風泰利	tái fēng tài lì	1
+颱風浣熊	tái fēng huàn xióng	1
+颱風暹芭	tái fēng xiān bā	1
+颱風卡努	tái fēng kǎ nǔ	1
+颱風艾濤	tái fēng ài tāo	1
+颱風夏浪	tái fēng xià làng	1
+颱風桑達	tái fēng sāng dá	1
+#2000年以來除名
+颱風高基	tái fēng gāo jī	1
+颱風翠絲	tái fēng cuì sī	1
+颱風天馬	tái fēng tiān mǎ	1
+颱風銀杏	tái fēng yín xìng	1
+颱風木蘭	tái fēng mù lán	1
+颱風簡古維	tái fēng jiǎn gǔ wéi	1
+颱風舒力基	tái fēng shū lì jī	1
+颱風鴛鴦	tái fēng yuān yāng	1
+颱風點心	tái fēng diǎn xīn	1
+颱風青馬	tái fēng qīng mǎ	1
+颱風小犬	tái fēng xiǎo quǎn	1
+颱風希比	tái fēng xī bǐ	1
+颱風天琴	tái fēng tiān qín	1
+颱風小熊	tái fēng xiǎo xióng	1
+颱風洛鞍	tái fēng luò ān	1
+颱風薔琵	tái fēng qiáng pí	1
+颱風坡鹿	tái fēng pō lù	1
+颱風三巴	tái fēng sān bā	1
+颱風西望洋	tái fēng xī wàng yáng	1
+颱風煙花	tái fēng yān huā	1
+颱風鸚鵡	tái fēng yīng wǔ	1
+颱風查帕卡	tái fēng chá pà kǎ	1
+颱風蒂魯	tái fēng dì lǔ	1
+颱風木恩	tái fēng mù ēn	1
+颱風馬力斯	tái fēng mǎ lì sī	1
+颱風銀河	tái fēng yín hé	1
+颱風核桃	tái fēng hé tao	1
+颱風山神	tái fēng shān shén	1
+颱風竹節草	tái fēng zhú jié cǎo	1
+颱風浮蓮	tái fēng fú lián	1
+颱風安比	tái fēng ān bǐ	1
+颱風白鹿	tái fēng bái lù	1
+颱風雲雀	tái fēng yún què	1
+颱風紅霞	tái fēng hóng xiá	1
+颱風蜻蜓	tái fēng qīng tíng	1
+颱風白海豚	tái fēng bái hǎi tún	1
+颱風獅子山	tái fēng shī zi shān	1
+颱風船尾	tái fēng chuán wěi	1
+颱風道璣	tái fēng dào jī	1
+颱風山貓	tái fēng shān māo	1
+颱風麗琵	tái fēng lì pí	1
+颱風藍湖	tái fēng lán hú	1
+颱風帕卡	tái fēng pà kǎ	1
+颱風琵琶	tái fēng pí pá	1
+颱風琵鷺	tái fēng pí lù	1
+颱風普拉桑	tái fēng pǔ lā sāng	1
+颱風妮亞圖	tái fēng nī yà tú	1
+颱風沙德爾	tái fēng shā dé ěr	1
+颱風沙布爾	tái fēng shā bù ěr	1
+颱風樺加沙	tái fēng huà jiā shā	1
+颱風紫檀	tái fēng zǐ tán	1
+颱風阿穆丘	tái fēng ā mù qiū	1
+颱風娜尼	tái fēng nà ní	1
+颱風簡拉維	tái fēng jiǎn lā wéi	1
+颱風古莎莉	tái fēng gǔ shā lì	1
+颱風布裏	tái fēng bù lǐ	1
+颱風布拉帕	tái fēng bù lā pà	1
+颱風博羅依	tái fēng bó luó yī	1
+颱風艾莎尼	tái fēng ài shā ní	1
+颱風百里嘉	tái fēng bǎi lǐ jiā	1
+颱風麥德姆	tái fēng mài dé mǔ	1
+颱風艾利	tái fēng ài lì	1
+颱風蘭恩	tái fēng lán ēn	1
+颱風花斑	tái fēng huā bān	1
+颱風班朗	tái fēng bān lǎng	1
+颱風海星	tái fēng hǎi xīng	1
+颱風翰文	tái fēng hàn wén	1
+颱風莫拉克	tái fēng mò lā kè	1
+颱風莎莉嘉	tái fēng shā lì jiā	1
+颱風庫都	tái fēng kù dōu	1
+颱風天鴿	tái fēng tiān gē	1
+颱風查特安	tái fēng chá tè ān	1
+颱風啟德	tái fēng qǐ dé	1
+颱風伊布都	tái fēng yī bù dōu	1
+颱風莫拉菲	tái fēng mò lā fēi	1
+颱風天秤	tái fēng tiān chèng	1
+颱風鹿莎	tái fēng lù shā	1
+颱風山竹	tái fēng shān zhú	1
+颱風山陀兒	tái fēng shān tuó ér	1
+颱風畫眉	tái fēng huà méi	1
+颱風溫比亞	tái fēng wēn bǐ yà	1
+颱風鳴蟬	tái fēng míng chán	1
+颱風彩虹	tái fēng cǎi hóng	1
+颱風法茜	tái fēng fǎ qiàn	1
+颱風鳳仙	tái fēng fèng xiān	1
+颱風海貝思	tái fēng hǎi bèi sī	1
+颱風雲娜	tái fēng yún nà	1
+颱風凡亞比	tái fēng fán yà bǐ	1
+颱風北冕	tái fēng běi miǎn	1
+颱風蘇特	tái fēng sū tè	1
+颱風利奇馬	tái fēng lì qí mǎ	1
+颱風婷婷	tái fēng tíng tíng	1
+颱風巴蓬	tái fēng bā péng	1
+颱風欣欣	tái fēng xīn xīn	1
+颱風玉兔	tái fēng yù tù	1
+颱風龍王	tái fēng lóng wáng	1
+颱風海葵	tái fēng hǎi kuí	1
+颱風天鵝	tái fēng tiān é	1
+颱風麥莎	tái fēng mài shā	1
+颱風蓮花	tái fēng lián huā	1
+颱風彩蝶	tái fēng cǎi dié	1
+颱風杜蘇芮	tái fēng dù sū ruì	1
+颱風碧利斯	tái fēng bì lì sī	1
+颱風環高	tái fēng huán gāo	1
+颱風珍珠	tái fēng zhēn zhū	1
+颱風黃蜂	tái fēng huáng fēng	1
+颱風榴蓮	tái fēng liú lián	1
+颱風康森	tái fēng kāng sēn	1
+颱風桑美	tái fēng sāng měi	1
+颱風軒嵐諾	tái fēng xuān lán nuò	1
+颱風象神	tái fēng xiàng shén	1
+颱風圓規	tái fēng yuán guī	1
+颱風凱薩娜	tái fēng kǎi sà nà	1
+颱風馬鞍	tái fēng mǎ ān	1
+颱風馬勒卡	tái fēng mǎ lè kǎ	1
+颱風芭瑪	tái fēng bā mǎ	1
+颱風鮎魚	tái fēng nián yú	1
+颱風雷伊	tái fēng léi yī	1
+颱風尼格	tái fēng ní gé	1
+颱風天鷹	tái fēng tiān yīng	1
+颱風奧鹿	tái fēng ào lù	1
+颱風寶霞	tái fēng bǎo xiá	1
+颱風菲特	tái fēng fēi tè	1
+颱風海燕	tái fēng hǎi yàn	1
+颱風清松	tái fēng qīng sōng	1
+颱風蘇拉	tái fēng sū lā	1
+颱風尤特	tái fēng yóu tè	1
+颱風艾雲尼	tái fēng ài yún ní	1
+颱風韋森特	tái fēng wéi sēn tè	1
+颱風飛燕	tái fēng fēi yàn	1
+颱風威馬遜	tái fēng wēi mǎ xùn	1
+颱風康妮	tái fēng kāng nī	1
+颱風巨爵	tái fēng jù jué	1
+颱風茉莉	tái fēng mò lì	1
+颱風萬宜	tái fēng wàn yí	1
+颱風桃芝	tái fēng táo zhī	1
+颱風蘇迪羅	tái fēng sū dí luó	1
+颱風潭美	tái fēng tán měi	1
+颱風海馬	tái fēng hǎi mǎ	1
+颱風天兔	tái fēng tiān tù	1
+颱風莫蘭蒂	tái fēng mò lán dì	1
+颱風摩羯	tái fēng mó jié	1
+颱風洛坦	tái fēng luò tǎn	1

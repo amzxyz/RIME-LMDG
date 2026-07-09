@@ -3243,10 +3243,10 @@ sort: by_weight
 腎精虧虛證	shèn jīng kuī xū zhèng	10
 神經浪遊者	shén jīng làng yóu zhě	10
 腎靜脈腎素	shèn jìng mài shèn sù	10
-深靜脈栓塞	shēn jìng mài shuān sè	10
+深靜脈栓塞	shēn jìng mài shuān sè	12
 腎靜脈栓塞	shèn jìng mài shuān sè	10
+深靜脈血栓	shēn jìng mài xuè shuān	12
 腎靜脈血栓	shèn jìng mài xuè shuān	10
-深靜脈血栓	shēn jìng mài xuè shuān	10
 腎靜脈造影	shèn jìng mài zào yǐng	10
 深靜脈置管	shēn jìng mài zhì guǎn	10
 神經牽伸術	shén jīng qiān shēn shù	10
@@ -4935,9 +4935,18 @@ sort: by_weight
 指蜂窩織炎	zhǐ fēng wō zhī yán	10
 趾蜂窩織炎	zhǐ fēng wō zhī yán	10
 指骨關節病	zhǐ gǔ guān jié bìng	10
+指骨間關節	zhǐ gǔ jiān guān jié	10
+趾骨間關節	zhǐ gǔ jiān guān jié	10
+蹠骨間關節	zhí gǔ jiān guān jié	10
 蹠骨截骨術	zhí gǔ jié gǔ shù	10
+肢骨外上髁	zhī gǔ wài shàng kē	10
 指骨植骨術	zhǐ gǔ zhí gǔ shù	10
+支管膽管瘻	zhī guǎn dǎn guǎn lòu	10
 蹠管減壓術	zhí guǎn jiǎn yā shù	10
+指關節融合	zhǐ guān jié róng hé	10
+趾關節融合	zhǐ guān jié róng hé	10
+指關節脫位	zhǐ guān jié tuō wèi	10
+趾關節脫位	zhǐ guān jié tuō wèi	10
 指甲溝膿腫	zhǐ jia gōu nóng zhǒng	10
 趾甲移植術	zhǐ jiǎ yí zhí shù	10
 支架植入術	zhī jià zhí rù shù	10
@@ -8704,8 +8713,16 @@ sort: by_weight
 泰必氏綜合徵	tài bì shì zōng hé zhēng	10
 胎兒發育畸形	tāi ér fā yù jī xíng	10
 胎兒橫紋肌瘤	tāi ér héng wén jī liú	10
+胎兒戒斷症狀	tāi ér jiè duàn zhèng zhuàng	10
 胎兒鏡撿查術	tāi ér jìng jiǎn chá shù	10
 胎兒內倒轉術	tāi ér nèi dào zhuǎn shù	10
+胎兒臍帶繞頸	tāi ér qí dài rào jǐng	10
+胎兒親子鑑定	tāi ér qīn zǐ jiàn dìng	10
+胎兒缺碘效應	tāi ér quē diǎn xiào yìng	10
+胎兒生長受限	tāi ér shēng zhǎng shòu xiàn	10
+胎兒心搏徐緩	tāi ér xīn bó xú huǎn	10
+胎兒心律失常	tāi ér xīn lǜ shī cháng	10
+胎兒智力發育	tāi ér zhì lì fā yù	10
 胎糞性腹膜炎	tāi fèn xìng fù mó yán	10
 胎熱證胎寒證	tāi rè zhèng tāi hán zhèng	10
 苔蘚樣角化病	tái xiǎn yàng jiǎo huà bìng	10
