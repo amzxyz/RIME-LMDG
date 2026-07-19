@@ -123,7 +123,7 @@ sort: by_weight
 胞生痰核病	bāo shēng tán hé bìng	10
 暴受驚恐證	bào shòu jīng kǒng zhèng	10
 剝脫性唇炎	bāo tuō xìng chún yán	10
-剝脫性齦炎	bāo tuō xìng kěn yán	10
+剝脫性齦炎	bāo tuō xìng yín yán	10
 胞虛如球病	bāo xū rú qiú bìng	10
 胞衣不下病	bāo yī bú xià bìng	10
 暴飲暴食症	bào yǐn bào shí zhèng	10
@@ -251,7 +251,7 @@ sort: by_weight
 波韋二氏病	bō wéi èr shì bìng	10
 布布二氏病	bù bù èr shì bìng	10
 布加綜合徵	bù jiā zōng hé zhēng	10
-不潔性齦炎	bù jié xìng kěn yán	10
+不潔性齦炎	bù jié xìng yín yán	10
 布凱二氏病	bù kǎi èr shì bìng	10
 布拉德利病	bù lā dé lì bìng	10
 布勒二氏瘤	bù lè èr shì liú	10
@@ -668,10 +668,10 @@ sort: by_weight
 肺阿米巴病	fèi ā mǐ bā bìng	10
 肺包蟲囊腫	fèi bāo chóng náng zhǒng	10
 腓側肌腱炎	féi cè jī jiàn yán	10
-肥大性齦炎	féi dà xìng kěn yán	10
 肥大性濕疹	féi dà xìng shī zhěn	10
 肥大性胃炎	féi dà xìng wèi yán	10
 肥大性咽炎	féi dà xìng yān yán	10
+肥大性齦炎	féi dà xìng yín yán	10
 肺動靜脈瘺	fèi dòng jìng mài lòu	10
 肺段切除術	fèi duàn qiē chú shù	10
 肺段支氣管	fèi duàn zhī qì guǎn	10
@@ -710,7 +710,7 @@ sort: by_weight
 肺胚細胞瘤	fèi pēi xì bāo liú	10
 肺脾積熱證	fèi pí jī rè zhèng	10
 肺脾兩虛證	fèi pí liǎng xū zhèng	10
-肺脾氣虛證	fèi pí qì xū zhèng	10
+肺脾氣虛證	fèi pí qi xū zhèng	10
 肺脾濕熱證	fèi pí shī rè zhèng	10
 肺氣衰竭證	fèi qì shuāi jié zhèng	10
 肺氣鬱痹證	fèi qì yù bì zhèng	10
@@ -1037,8 +1037,8 @@ sort: by_weight
 肝脾不調證	gān pí bù tiáo zhèng	10
 肝脾虧虛證	gān pí kuī xū zhèng	10
 肝脾兩虛證	gān pí liǎng xū zhèng	10
-肝脾氣鬱證	gān pí qì yù zhèng	10
-肝脾氣滯證	gān pí qì zhì zhèng	10
+肝脾氣鬱證	gān pí qi yù zhèng	10
+肝脾氣滯證	gān pí qi zhì zhèng	10
 肝脾濕火證	gān pí shī huǒ zhèng	10
 肝脾濕熱證	gān pí shī rè zhèng	10
 肝脾血瘀證	gān pí xuè yū zhèng	10
@@ -1834,8 +1834,8 @@ sort: by_weight
 漿膜腔積液	jiāng mó qiāng jī yè	10
 漿膜下肌瘤	jiāng mó xià jī liú	10
 僵人綜合徵	jiāng rén zōng hé zhēng	10
-漿細胞齦炎	jiāng xì bāo kěn yán	10
 漿細胞肉瘤	jiāng xì bāo ròu liú	10
+漿細胞齦炎	jiāng xì bāo yín yán	10
 漿液反應器	jiāng yè fǎn yìng qì	10
 交感神經節	jiāo gǎn shén jīng jié	10
 交感神經系	jiāo gǎn shén jīng xì	10
@@ -2041,8 +2041,8 @@ sort: by_weight
 卡梅綜合徵	kǎ méi zōng hé zhēng	10
 卡佩二氏病	kǎ pèi èr shì bìng	10
 卡斯爾曼症	kǎ sī ěr màn zhèng	10
-卡它性齦炎	kǎ tā xìng kěn yán	10
 卡他性炎症	kǎ tā xìng yán zhèng	10
+卡它性齦炎	kǎ tā xìng yín yán	10
 凱爾尼格徵	kǎi ěr ní gé zhēng	10
 開放性血胸	kāi fàng xìng xuè xiōng	10
 開放折骨術	kāi fàng zhé gǔ shù	10
@@ -2385,7 +2385,7 @@ sort: by_weight
 門體分流術	mén tǐ fēn liú shù	10
 猛爆性肝炎	měng bào xìng gān yán	10
 萌出期囊腫	méng chū qī náng zhǒng	10
-萌出性齦炎	méng chū xìng kěn yán	10
+萌出性齦炎	méng chū xìng yín yán	10
 蒙道爾氏病	méng dào ěr shì bìng	10
 夢想的遠征	mèng xiǎng de yuǎn zhēng	10
 米庫利奇病	mǐ kù lì qí bìng	10
@@ -2651,10 +2651,10 @@ sort: by_weight
 脾皮樣囊腫	pí pí yàng náng zhǒng	10
 皮片移植術	pí piàn yí zhí shù	10
 皮片植皮術	pí piàn zhí pí shù	10
-脾氣不升證	pí qì bù shēng zhèng	10
-脾氣不足證	pí qì bù zú zhèng	10
-脾氣虧虛證	pí qì kuī xū zhèng	10
-脾氣下陷證	pí qì xià xiàn zhèng	10
+脾氣不升證	pí qi bù shēng zhèng	10
+脾氣不足證	pí qi bù zú zhèng	10
+脾氣虧虛證	pí qi kuī xū zhèng	10
+脾氣下陷證	pí qi xià xiàn zhèng	10
 脾腔分流術	pí qiāng fēn liú shù	10
 脾區綜合徵	pí qū zōng hé zhēng	10
 脾曲綜合徵	pí qǔ zōng hé zhēng	10
@@ -3052,7 +3052,7 @@ sort: by_weight
 熱灼胸膈證	rè zhuó xiōng gé zhèng	10
 熱灼營陰證	rè zhuó yíng yīn zhèng	10
 熱灼真陰證	rè zhuó zhēn yīn zhèng	10
-妊辰期齦炎	rèn chén qī kěn yán	10
+妊辰期齦炎	rèn chén qī yín yán	10
 人畜共患病	rén chù gòng huàn bìng	10
 人畜共通病	rén chù gòng tōng bìng	10
 人痘接種術	rén dòu jiē zhòng shù	10
@@ -4154,7 +4154,7 @@ sort: by_weight
 心脾積熱證	xīn pí jī rè zhèng	10
 心脾虧虛證	xīn pí kuī xū zhèng	10
 心脾兩虛證	xīn pí liǎng xū zhèng	10
-心脾氣虛證	xīn pí qì xū zhèng	10
+心脾氣虛證	xīn pí qi xū zhèng	10
 心脾濕熱證	xīn pí shī rè zhèng	10
 心脾受損證	xīn pí shòu sǔn zhèng	10
 心脾血虛證	xīn pí xuè xū zhèng	10
@@ -13251,7 +13251,7 @@ sort: by_weight
 侵襲性纖維瘤病	qīn xí xìng xiān wéi liú bìng	10
 清創竇道清除術	qīng chuàng dòu dào qīng chú shù	10
 清創游離植皮術	qīng chuàng yóu lí zhí pí shù	10
-青春發育期齦炎	qīng chūn fā yù qī kěn yán	10
+青春發育期齦炎	qīng chūn fā yù qī yín yán	10
 青春期甲狀腺腫	qīng chūn qī jiǎ zhuàng xiàn zhǒng	10
 青春前期牙周炎	qīng chūn qián qī yá zhōu yán	10
 輕度妊娠中毒症	qīng dù rèn shēn zhòng dú zhèng	10
@@ -14316,7 +14316,7 @@ sort: by_weight
 心內膜惡性腫瘤	xīn nèi mó è xìng zhǒng liú	10
 心內膜良性腫瘤	xīn nèi mó liáng xìng zhǒng liú	10
 心內異物取出術	xīn nèi yì wù qǔ chū shù	10
-心脾氣血兩虛證	xīn pí qì xuè liǎng xū zhèng	10
+心脾氣血兩虛證	xīn pí qi xuè liǎng xū zhèng	10
 心腔外傷修補術	xīn qiāng wài shāng xiū bǔ shù	10
 新生兒單純皰疹	xīn shēng ér dān chún pào zhěn	10
 心室病損切除術	xīn shì bìng sǔn qiē chú shù	10
@@ -14589,7 +14589,7 @@ sort: by_weight
 牙科助手椅旁凳	yá kē zhù shǒu yǐ páng dèng	10
 牙科綜合治療機	yá kē zōng hé zhì liáo jī	10
 牙科綜合治療臺	yá kē zōng hé zhì liáo tái	10
-牙列擁擠性齦炎	yá liè yōng jǐ xìng kěn yán	10
+牙列擁擠性齦炎	yá liè yōng jǐ xìng yín yán	10
 亞臨床性糖尿病	yà lín chuáng xìng táng niào bìng	10
 芽生菌性膿皮病	yá shēng jūn xìng nóng pí bìng	10
 牙髓活力測驗器	yá suǐ huó lì cè yàn qì	10

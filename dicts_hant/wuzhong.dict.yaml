@@ -630,9 +630,9 @@ sort: by_weight
 電鯰	diàn nián	73
 顛茄	diān qié	94
 滇芹	diān qín	99
-滇芎	diān qiōng	69
 墊刃	diàn rèn	13
 滇桐	diān tóng	90
+滇芎	diān xiōng	69
 電鰩	diàn yáo	114
 點蠅	diǎn yíng	94
 滇竹	diān zhú	70
@@ -3776,7 +3776,7 @@ sort: by_weight
 巖鷚	yán liù	93
 煙鱸	yān lú	68
 岩螺	yán luó	82
-燕麥	yān mài	102
+燕麥	yàn mài	102
 巖蟎	yán mǎn	86
 胭蟎	yān mǎn	73
 巖蟒	yán mǎng	98
@@ -4711,7 +4711,8 @@ sort: by_weight
 白環蛇	bái huán shé	5
 白灰蝶	bái huī dié	4
 白及蘭	bái jí lán	5
-白鱀豚	bái jì tún	8
+白鱀豚	bái jì tún	118
+白暨豚	bái jì tún	87
 白鯽魚	bái jì yú	114
 白蛺蝶	bái jiá dié	6
 白甲魚	bái jiǎ yú	147
@@ -14455,7 +14456,7 @@ sort: by_weight
 珊穴蟹	shān xué xiè	7
 閃眼蝶	shǎn yǎn dié	8
 山眼蝶	shān yǎn dié	8
-山燕麥	shān yān mài	7
+山燕麥	shān yàn mài	7
 山芫荽	shān yán suī	12
 山羊草	shān yáng cǎo	21
 山羊豆	shān yáng dòu	12
@@ -17607,7 +17608,7 @@ sort: by_weight
 延齡草	yán líng cǎo	7
 巖羚羊	yán líng yáng	8
 偃麥草	yǎn mài cǎo	16
-燕麥草	yān mài cǎo	12
+燕麥草	yàn mài cǎo	12
 煙盲蝽	yān máng chūn	5
 巖玫瑰	yán méi gui	6
 巖母草	yán mǔ cǎo	4
@@ -18018,7 +18019,7 @@ sort: by_weight
 異牙鱨	yì yá cháng	5
 翼牙䱛	yì yá huò	5
 異檐花	yì yán huā	7
-異燕麥	yì yān mài	17
+異燕麥	yì yàn mài	17
 異藥花	yì yào huā	21
 翼藥花	yì yào huā	13
 異藥芥	yì yào jiè	12
@@ -26287,7 +26288,7 @@ sort: by_weight
 泉南乳魚	quán nán rǔ yú	9
 犬腺病毒	quǎn xiàn bìng dú	16
 全形貝超	quán xíng bèi chāo	1
-全葉滇芎	quán yè diān qiōng	9
+全葉滇芎	quán yè diān xiōng	9
 拳葉灰蘚	quán yè huī xiǎn	1
 全葉莢蒾	quán yè jiá mí	5
 全葉馬蘭	quán yè mǎ lán	11
@@ -28511,7 +28512,7 @@ sort: by_weight
 蠍小卷蛾	xiē xiǎo juàn é	1
 斜眼長蝽	xié yǎn cháng chūn	1
 楔葉糙蘇	xiē yè cāo sū	7
-楔葉滇芎	xiē yè diān qiōng	9
+楔葉滇芎	xiē yè diān xiōng	9
 楔葉杜鵑	xiē yè dù juān	9
 斜葉黃檀	xié yè huáng tán	34
 謝葉佳桐	xiè yè jiā tóng	13
@@ -32401,7 +32402,7 @@ sort: by_weight
 長柄線尾榕	cháng bǐng xiàn wěi róng	1
 長柄象牙參	cháng bǐng xiàng yá shēn	1
 長柄新月蕨	cháng bǐng xīn yuè jué	1
-長柄熊巴掌	cháng bǐng xióng bā zhǎng	1
+長柄熊巴掌	cháng bǐng xióng bā zhang	1
 長柄岩黃耆	cháng bǐng yán huáng qí	1
 長柄羊蹄甲	cháng bǐng yáng tí jiǎ	1
 長柄野扁豆	cháng bǐng yě biǎn dòu	1
@@ -34476,7 +34477,7 @@ sort: by_weight
 短毛雙尾蚜	duǎn máo shuāng wěi yá	1
 短毛雙藥芒	duǎn máo shuāng yào máng	1
 短毛松針蚜	duǎn máo sōng zhēn yá	1
-短毛熊巴掌	duǎn máo xióng bā zhǎng	1
+短毛熊巴掌	duǎn máo xióng bā zhang	1
 短毛野青茅	duǎn máo yě qīng máo	1
 短鰭兵魴鮄	duǎn qí bīng fáng fú	1
 短鰭高原鰍	duǎn qí gāo yuán qiū	1
@@ -46824,7 +46825,7 @@ sort: by_weight
 眼眶牛尾魚	yǎn kuàng niú wěi yú	1
 巖鯉碘泡蟲	yán lǐ diǎn pào chóng	1
 巖鯉兩極蟲	yán lǐ liǎng jí chóng	1
-燕麥擬捻螺	yān mài nǐ niǎn luó	1
+燕麥擬捻螺	yàn mài nǐ niǎn luó	1
 奄美短腸蕨	yǎn měi duǎn cháng jué	1
 巖梅虎耳草	yán méi hǔ ěr cǎo	1
 眼眉拉摩蟹	yǎn méi lā mó xiè	1

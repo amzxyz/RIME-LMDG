@@ -16,7 +16,7 @@ sort: by_weight
 賓縣	bīn xiàn	614
 蔡村	cài cūn	518
 蔡厝	cài cuò	147
-蔡甸	cài diān	87
+蔡甸	cài diàn	87
 蔡河	cài hé	26
 蔡橋	cài qiáo	419
 蔡塘	cài táng	362
@@ -2114,8 +2114,8 @@ sort: by_weight
 蔡村鄉	cài cūn xiāng	10
 蔡村鎮	cài cūn zhèn	10
 蔡厝港	cài cuò gǎng	495
-蔡甸街	cài diān jiē	171
-蔡甸區	cài diān qū	196
+蔡甸街	cài diàn jiē	171
+蔡甸區	cài diàn qū	196
 蔡店鄉	cài diàn xiāng	10
 蔡鍔路	cài è lù	13
 蔡鍔鄉	cài è xiāng	10
@@ -2535,6 +2535,7 @@ sort: by_weight
 長港鎮	cháng gǎng zhèn	10
 長皋鄉	cháng gāo xiāng	10
 長葛市	cháng gé shì	866
+長葛縣	cháng gé xiàn	104
 唱歌鎮	chàng gē zhèn	10
 長溝鎮	cháng gōu zhèn	10
 長桂鄉	cháng guì xiāng	10
@@ -11119,6 +11120,8 @@ sort: by_weight
 老君鎮	lǎo jūn zhèn	10
 老萊鎮	lǎo lái zhèn	10
 老林鎮	lǎo lín zhèn	10
+樂陵市	lào líng shì	565
+樂陵縣	lào líng xiàn	129
 老隆鎮	lǎo lóng zhèn	199
 老馬鎮	lǎo mǎ zhèn	10
 老麥鄉	lǎo mài xiāng	10
@@ -11177,8 +11180,6 @@ sort: by_weight
 樂江鎮	lè jiāng zhèn	10
 樂居鎮	lè jū zhèn	10
 樂裏鎮	lè lǐ zhèn	10
-樂陵市	lè líng shì	565
-樂陵縣	lè líng xiàn	129
 勒馬鄉	lè mǎ xiāng	10
 樂民鎮	lè mín zhèn	10
 樂平市	lè píng shì	10
@@ -25358,7 +25359,6 @@ sort: by_weight
 張高村	zhāng gāo cūn	10
 張皋鎮	zhāng gāo zhèn	10
 張閣村	zhāng gé cūn	10
-長葛縣	zhǎng gé xiàn	104
 張閣鎮	zhāng gé zhèn	159
 張各莊	zhāng gè zhuāng	312
 張戈莊	zhāng gē zhuāng	150
@@ -29749,7 +29749,7 @@ sort: by_weight
 彩臣二村	cǎi chén èr cūn	10
 蔡厝社區	cài cuò shè qū	4
 蔡道河村	cài dào hé cūn	10
-蔡甸街道	cài diān jiē dào	10
+蔡甸街道	cài diàn jiē dào	10
 蔡店街道	cài diàn jiē dào	10
 蔡都街道	cài dōu jiē dào	10
 蔡二新村	cài èr xīn cūn	10
@@ -33187,7 +33187,7 @@ sort: by_weight
 德正街道	dé zhèng jiē dào	10
 德州德城	dé zhōu dé chéng	10
 德州街道	dé zhōu jiē dào	10
-德州樂陵	dé zhōu lè líng	10
+德州樂陵	dé zhōu lào líng	10
 德州臨邑	dé zhōu lín yì	10
 德州陵城	dé zhōu líng chéng	10
 德州寧津	dé zhōu níng jīn	10
@@ -54404,7 +54404,6 @@ sort: by_weight
 賽烏素鎮	sài wū sù zhèn	10
 賽魚街道	sài yú jiē dào	10
 三八街道	sān bā jiē dào	10
-三撥子鄉	sān bá zi xiāng	10
 三百弓村	sān bǎi gōng cūn	10
 三百戶村	sān bǎi hù cūn	10
 三白山村	sān bái shān cūn	10
@@ -54415,6 +54414,7 @@ sort: by_weight
 三堡社區	sān bǎo shè qū	130
 三寶營鄉	sān bǎo yíng xiāng	10
 三卜樹村	sān bo shù cūn	10
+三撥子鄉	sān bō zi xiāng	10
 三埠街道	sān bù jiē dào	10
 三汊港鎮	sān chà gǎng zhèn	10
 三岔河村	sān chà hé cūn	10
@@ -61865,7 +61865,7 @@ sort: by_weight
 烏海烏達	wū hǎi wū dá	10
 烏海西站	wū hǎi xī zhàn	220
 吳海子村	wú hǎi zǐ cūn	10
-武漢蔡甸	wǔ hàn cài diān	10
+武漢蔡甸	wǔ hàn cài diàn	10
 武漢漢南	wǔ hàn hàn nán	10
 武漢漢陽	wǔ hàn hàn yáng	10
 武漢洪山	wǔ hàn hóng shān	10
@@ -62457,7 +62457,6 @@ sort: by_weight
 西八千鄉	xī bā qiān xiāng	10
 西壩頭村	xī bà tóu cūn	10
 西把柵鄉	xī bǎ zhà xiāng	10
-西撥子村	xī bá zi cūn	10
 西白岱村	xī bái dài cūn	10
 西柏店村	xī bǎi diàn cūn	10
 西柏澗村	xī bǎi jiàn cūn	10
@@ -62540,6 +62539,7 @@ sort: by_weight
 西卜沙鄉	xī bo shā xiāng	10
 希博特鄉	xī bó tè xiāng	10
 西卜莊村	xī bo zhuāng cūn	10
+西撥子村	xī bō zi cūn	10
 西布河鄉	xī bù hé xiāng	10
 西埠後村	xī bù hòu cūn	10
 西步樂村	xī bù lè cūn	10
@@ -66495,12 +66495,12 @@ sort: by_weight
 修之於鄉	xiū zhī yú xiāng	10
 徐碧街道	xú bì jiē dào	10
 徐埠口村	xú bù kǒu cūn	10
+許昌長葛	xǔ chāng cháng gé	10
 許昌建安	xǔ chāng jiàn ān	10
 許昌魏都	xǔ chāng wèi dū	10
 許昌襄城	xǔ chāng xiāng chéng	10
 許昌鄢陵	xǔ chāng yān líng	10
 許昌禹州	xǔ chāng yǔ zhōu	10
-許昌長葛	xǔ chāng zhǎng gé	10
 許城東村	xǔ chéng dōng cūn	10
 盱城街道	xū chéng jiē dào	10
 徐城街道	xú chéng jiē dào	10
@@ -72714,19 +72714,53 @@ sort: by_weight
 安東衛街道	ān dōng wèi jiē dào	10
 安格里格鎮	ān gé lǐ gé zhèn	10
 安化彝族鄉	ān huà yí zú xiāng	10
+安徽安慶市	ān huī ān qìng shì	10
+安徽蚌埠市	ān huī bèng bù shì	10
+安徽亳州市	ān huī bó zhōu shì	10
+安徽池州市	ān huī chí zhōu shì	10
+安徽滁州市	ān huī chú zhōu shì	10
+安徽阜陽市	ān huī fù yáng shì	10
+安徽合肥市	ān huī hé féi shì	10
+安徽淮北市	ān huī huái běi shì	10
+安徽淮南市	ān huī huái nán shì	10
+安徽黃山市	ān huī huáng shān shì	10
+安徽開發區	ān huī kāi fā qū	10
+安徽六安市	ān huī lù ān shì	10
 安徽馬鞍山	ān huī mǎ ān shān	10
 安徽省濉溪	ān huī shěng suī xī	10
+安徽宿州市	ān huī sù zhōu shì	10
+安徽銅陵市	ān huī tóng líng shì	10
+安徽蕪湖市	ān huī wú hú shì	10
+安徽宣城市	ān huī xuān chéng shì	10
 安徽岳西縣	ān huī yuè xī xiàn	10
 安基山林場	ān jī shān lín chǎng	10
 安靜的街道	ān jìng de jiē dào	10
+安康白河縣	ān kāng bái hé xiàn	10
+安康漢陰縣	ān kāng hàn yīn xiàn	10
+安康嵐皋縣	ān kāng lán gāo xiàn	10
+安康寧陝縣	ān kāng níng shǎn xiàn	10
+安康平利縣	ān kāng píng lì xiàn	10
+安康石泉縣	ān kāng shí quán xiàn	10
 安康佤族鄉	ān kāng wǎ zú xiāng	10
+安康鎮坪縣	ān kāng zhèn píng xiàn	10
+安康紫陽縣	ān kāng zǐ yáng xiàn	10
 安寧堡街道	ān níng bǎo jiē dào	10
 安平開發區	ān píng kāi fā qū	10
+安慶懷寧縣	ān qìng huái níng xiàn	10
+安慶宿松縣	ān qìng sù sōng xiàn	10
+安慶太湖縣	ān qìng tài hú xiàn	10
+安慶望江縣	ān qìng wàng jiāng xiàn	10
+安慶岳西縣	ān qìng yuè xī xiàn	10
 鞍山道街道	ān shān dào jiē dào	10
+鞍山臺安縣	ān shān tái ān xiàn	10
+安順普定縣	ān shùn pǔ dìng xiàn	10
 安溪畲族鄉	ān xī shē zú xiāng	10
+安陽安陽縣	ān yáng ān yáng xiàn	10
 安陽城街道	ān yáng chéng jiē dào	10
+安陽內黃縣	ān yáng nèi huáng xiàn	10
 安陽市滑縣	ān yáng shì huá xiàn	10
 安陽市街道	ān yáng shì jiē dào	10
+安陽湯陰縣	ān yáng tāng yīn xiàn	10
 敖爾金街道	áo ěr jīn jiē dào	10
 敖勒召其鎮	áo lè zhào qí zhèn	10
 敖力布皋鎮	áo lì bù gāo zhèn	10
@@ -72815,8 +72849,13 @@ sort: by_weight
 八月湖街道	bā yuè hú jiē dào	10
 巴扎結米鎮	bā zhā jié mǐ zhèn	10
 巴扎藏族鄉	bā zhā zàng zú xiāng	10
+巴中南江縣	bā zhōng nán jiāng xiàn	10
+巴中平昌縣	bā zhōng píng chāng xiàn	10
+巴中通江縣	bā zhōng tōng jiāng xiàn	10
 百安壩街道	bǎi ān bà jiē dào	10
 百步亭花園	bǎi bù tíng huā yuán	10
+白城通榆縣	bái chéng tōng yú xiàn	10
+白城鎮賚縣	bái chéng zhèn lài xiàn	10
 百春園街道	bǎi chūn yuán jiē dào	10
 白登山街道	bái dēng shān jiē dào	10
 白碉苗族鄉	bái diāo miáo zú xiāng	10
@@ -72849,11 +72888,20 @@ sort: by_weight
 白坡彝族鄉	bái pō yí zú xiāng	10
 百崎回族鄉	bǎi qí huí zú xiāng	10
 白乳泉街道	bái rǔ quán jiē dào	10
+百色德保縣	bǎi sè dé bǎo xiàn	10
+百色樂業縣	bǎi sè lè yè xiàn	10
+百色凌雲縣	bǎi sè líng yún xiàn	10
+百色那坡縣	bǎi sè nà pō xiàn	10
+百色田東縣	bǎi sè tián dōng xiàn	10
+百色田林縣	bǎi sè tián lín xiàn	10
+百色西林縣	bǎi sè xī lín xiàn	10
 白沙河街道	bái shā hé jiē dào	10
 白沙路街道	bái shā lù jiē dào	10
 白沙灣街道	bái shā wān jiē dào	10
 白沙萬街道	bái shā wàn jiē dào	10
 白沙洲街道	bái shā zhōu jiē dào	10
+白山撫松縣	bái shān fǔ sōng xiàn	10
+白山靖宇縣	bái shān jìng yǔ xiàn	10
 白山路街道	bái shān lù jiē dào	10
 白石江街道	bái shí jiāng jiē dào	10
 白什坎特鎮	bái shí kǎn tè zhèn	10
@@ -72870,6 +72918,9 @@ sort: by_weight
 白洋灣街道	bái yáng wān jiē dào	10
 白依拉嘎鄉	bái yī lā gā xiāng	10
 白音察干鎮	bái yīn chá gàn zhèn	10
+白銀會寧縣	bái yín huì níng xiàn	10
+白銀景泰縣	bái yín jǐng tài xiàn	10
+白銀靖遠縣	bái yín jìng yuǎn xiàn	10
 白銀路街道	bái yín lù jiē dào	10
 白音特拉鄉	bái yīn tè lā xiāng	10
 白音勿拉鎮	bái yīn wù lā zhèn	10
@@ -72889,16 +72940,33 @@ sort: by_weight
 斑竹園街道	bān zhú yuán jiē dào	10
 保安藏族鄉	bǎo ān zàng zú xiāng	10
 薄刀峰林場	báo dāo fēng lín chǎng	10
+保定安新縣	bǎo dìng ān xīn xiàn	10
+保定博野縣	bǎo dìng bó yě xiàn	10
+保定定興縣	bǎo dìng dìng xīng xiàn	10
+保定阜平縣	bǎo dìng fù píng xiàn	10
 保定高碑店	bǎo dìng gāo bēi diàn	10
+保定高陽縣	bǎo dìng gāo yáng xiàn	10
+保定淶水縣	bǎo dìng lái shuǐ xiàn	10
+保定淶源縣	bǎo dìng lái yuán xiàn	10
+保定曲陽縣	bǎo dìng qū yáng xiàn	10
+保定容城縣	bǎo dìng róng chéng xiàn	10
 保定市蠡縣	bǎo dìng shì lǐ xiàn	10
 保定市唐縣	bǎo dìng shì táng xiàn	10
 保定市雄縣	bǎo dìng shì xióng xiàn	10
 保定市易縣	bǎo dìng shì yì xiàn	10
+保定順平縣	bǎo dìng shùn píng xiàn	10
+保定望都縣	bǎo dìng wàng dū xiàn	10
 寶峰彝族鄉	bǎo fēng yí zú xiāng	10
 保和瑤族鄉	bǎo hé yáo zú xiāng	10
+保護開發區	bǎo hù kāi fā qū	10
+寶雞扶風縣	bǎo jī fú fēng xiàn	10
+寶雞麟遊縣	bǎo jī lín yóu xiàn	10
+寶雞岐山縣	bǎo jī qí shān xiàn	10
+寶雞千陽縣	bǎo jī qiān yáng xiàn	10
 寶雞市鳳縣	bǎo jī shì fèng xiàn	10
 寶雞市隴縣	bǎo jī shì lǒng xiàn	10
 寶雞市眉縣	bǎo jī shì méi xiàn	10
+寶雞太白縣	bǎo jī tài bái xiàn	10
 保健路街道	bǎo jiàn lù jiē dào	10
 寶力根街道	bǎo lì gēn jiē dào	10
 寶力根蘇木	bǎo lì gēn sū mù	10
@@ -72906,7 +72974,10 @@ sort: by_weight
 寶泉嶺農場	bǎo quán lǐng nóng chǎng	10
 寶日勿蘇鎮	bǎo rì wù sū zhèn	10
 寶日希勒鎮	bǎo rì xī lè zhèn	10
+保山昌寧縣	bǎo shān chāng níng xiàn	10
+保山龍陵縣	bǎo shān lóng líng xiàn	10
 寶山路街道	bǎo shān lù jiē dào	10
+保山施甸縣	bǎo shān shī diān xiàn	10
 保山市鄉鎮	bǎo shān shì xiāng zhèn	10
 寶紹岱蘇木	bǎo shào dài sū mù	10
 寶聖湖街道	bǎo shèng hú jiē dào	10
@@ -72914,9 +72985,11 @@ sort: by_weight
 寶塔路街道	bǎo tǎ lù jiē dào	10
 寶塔橋街道	bǎo tǎ qiáo jiē dào	10
 寶塔山街道	bǎo tǎ shān jiē dào	10
+包頭固陽縣	bāo tóu gù yáng xiàn	10
 包頭昆都侖	bāo tóu kūn dū lún	10
 趵突泉街道	bào tū quán jiē dào	10
 寶應湖農場	bǎo yìng hú nóng chǎng	10
+北辰開發區	běi chén kāi fā qū	10
 北城街街道	běi chéng jiē jiē dào	10
 北城區街道	běi chéng qū jiē dào	10
 北大街街道	běi dà jiē jiē dào	10
@@ -72926,6 +72999,7 @@ sort: by_weight
 北斗彝族鄉	běi dǒu yí zú xiāng	10
 北幹道街道	běi gàn dào jiē dào	10
 北溝門子鄉	běi gōu mén zǐ xiāng	10
+北海合浦縣	běi hǎi hé pǔ xiàn	10
 北海路街道	běi hǎi lù jiē dào	10
 北海鐵山港	běi hǎi tiě shān gǎng	10
 北河涇街道	běi hé jīng jiē dào	10
@@ -72934,6 +73008,7 @@ sort: by_weight
 北集坡街道	běi jí pō jiē dào	10
 北京路街道	běi jīng lù jiē dào	10
 北京門頭溝	běi jīng mén tóu gōu	10
+北京密雲縣	běi jīng mì yún xiàn	10
 北京市街道	běi jīng shì jiē dào	10
 北京石景山	běi jīng shí jǐng shān	10
 北京市鄉鎮	běi jīng shì xiāng zhèn	10
@@ -72941,6 +73016,7 @@ sort: by_weight
 貝力克牧場	bèi lì kè mù chǎng	10
 北林路街道	běi lín lù jiē dào	10
 北馬圈子鎮	běi mǎ quān zi zhèn	10
+北山風景區	běi shān fēng jǐng qū	10
 北山農林場	běi shān nóng lín chǎng	10
 北市場街道	běi shì chǎng jiē dào	10
 北史家務鎮	běi shǐ jiā wù zhèn	10
@@ -72956,11 +73032,19 @@ sort: by_weight
 北牙瑤族鄉	běi yá yáo zú xiāng	10
 北院門街道	běi yuàn mén jiē dào	10
 本齋回族鄉	běn zhāi huí zú xiāng	10
+蚌埠固鎮縣	bèng bù gù zhèn xiàn	10
+蚌埠懷遠縣	bèng bù huái yuǎn xiàn	10
 蚌埠龍子湖	bèng bù lóng zǐ hú	10
+蚌埠五河縣	bèng bù wǔ hé xiàn	10
 碧城工業區	bì chéng gōng yè qū	10
 畢家崗街道	bì jiā gǎng jiē dào	10
 筆架山街道	bǐ jià shān jiē dào	10
+畢節大方縣	bì jié dà fāng xiàn	10
+畢節赫章縣	bì jié hè zhāng xiàn	10
+畢節金沙縣	bì jié jīn shā xiàn	10
+畢節納雍縣	bì jié nà yōng xiàn	10
 畢節七星關	bì jié qī xīng guān	10
+畢節織金縣	bì jié zhī jīn xiàn	10
 璧山區街道	bì shān qū jiē dào	10
 必斯營子鎮	bì sī yíng zi zhèn	10
 比西巴格鄉	bǐ xī bā gé xiāng	10
@@ -72968,8 +73052,14 @@ sort: by_weight
 別力古台鎮	bié lì gǔ tái zhèn	10
 別斯託別鄉	bié sī tuō bié xiāng	10
 濱海工業城	bīn hǎi gōng yè chéng	10
+濱海開發區	bīn hǎi kāi fā qū	10
 濱海路街道	bīn hǎi lù jiē dào	10
 濱河路街道	bīn hé lù jiē dào	10
+濱江開發區	bīn jiāng kāi fā qū	10
+濱州博興縣	bīn zhōu bó xīng xiàn	10
+濱州惠民縣	bīn zhōu huì mín xiàn	10
+濱州無棣縣	bīn zhōu wú dì xiàn	10
+濱州陽信縣	bīn zhōu yáng xìn xiàn	10
 炳草崗街道	bǐng cǎo gǎng jiē dào	10
 秉烈彝族鄉	bǐng liè yí zú xiāng	10
 伯都訥街道	bó dōu nè jiē dào	10
@@ -72988,7 +73078,10 @@ sort: by_weight
 博斯騰湖鄉	bó sī téng hú xiāng	10
 伯西熱克鎮	bó xī rè kè zhèn	10
 博學路街道	bó xué lù jiē dào	10
+亳州渦陽縣	bó zhōu guō yáng xiàn	10
+亳州利辛縣	bó zhōu lì xīn xiàn	10
 亳州路街道	bó zhōu lù jiē dào	10
+亳州蒙城縣	bó zhōu méng chéng xiàn	10
 博孜達克鎮	bó zī dá kè zhèn	10
 布敦化礦區	bù dūn huà kuàng qū	10
 布敦化牧場	bù dūn huà mù chǎng	10
@@ -73009,9 +73102,16 @@ sort: by_weight
 滄浪山林場	cāng láng shān lín chǎng	10
 倉門街街道	cāng mén jiē jiē dào	10
 倉山區街道	cāng shān qū jiē dào	10
+滄州東光縣	cāng zhōu dōng guāng xiàn	10
+滄州海興縣	cāng zhōu hǎi xīng xiàn	10
+滄州開發區	cāng zhōu kāi fā qū	10
+滄州南皮縣	cāng zhōu nán pí xiàn	10
 滄州市滄縣	cāng zhōu shì cāng xiàn	10
 滄州市青縣	cāng zhōu shì qīng xiàn	10
 滄州市獻縣	cāng zhōu shì xiàn xiàn	10
+滄州肅寧縣	cāng zhōu sù níng xiàn	10
+滄州吳橋縣	cāng zhōu wú qiáo xiàn	10
+滄州鹽山縣	cāng zhōu yán shān xiàn	10
 草場街街道	cǎo chǎng jiē jiē dào	10
 曹妃甸新城	cáo fēi diān xīn chéng	10
 漕河涇街道	cáo hé jīng jiē dào	10
@@ -73045,15 +73145,32 @@ sort: by_weight
 瀍河回族區	chán hé huí zú qū	10
 瀍河回族鄉	chán hé huí zú xiāng	10
 產業管理處	chǎn yè guǎn lǐ chù	10
+產業開發區	chǎn yè kāi fā qū	10
 長安路街道	cháng ān lù jiē dào	10
 長寶營子鄉	cháng bǎo yíng zi xiāng	10
 長城路街道	cháng chéng lù jiē dào	10
 長春公主嶺	cháng chūn gōng zhǔ lǐng	10
+長春開發區	cháng chūn kāi fā qū	10
 長春路街道	cháng chūn lù jiē dào	10
+長春農安縣	cháng chūn nóng ān xiàn	10
 常村路街道	cháng cūn lù jiē dào	10
 長村張街道	cháng cūn zhāng jiē dào	10
+常德安鄉縣	cháng dé ān xiāng xiàn	10
+常德漢壽縣	cháng dé hàn shòu xiàn	10
+常德臨澧縣	cháng dé lín lǐ xiàn	10
 常德市澧縣	cháng dé shì lǐ xiàn	10
+常德石門縣	cháng dé shí mén xiàn	10
+常德桃源縣	cháng dé táo yuán xiàn	10
+昌都八宿縣	chāng dū bā xiǔ xiàn	10
+昌都邊壩縣	chāng dū biān bà xiàn	10
+昌都察雅縣	chāng dū chá yǎ xiàn	10
+昌都丁青縣	chāng dū dīng qīng xiàn	10
+昌都貢覺縣	chāng dū gòng jué xiàn	10
+昌都江達縣	chāng dū jiāng dá xiàn	10
 昌都類烏齊	chāng dū lèi wū qí	10
+昌都洛隆縣	chāng dū luò lóng xiàn	10
+昌都芒康縣	chāng dū máng kāng xiàn	10
+昌都左貢縣	chāng dū zuǒ gòng xiàn	10
 長海路街道	cháng hǎi lù jiē dào	10
 長和廊街道	cháng hé láng jiē dào	10
 昌吉呼圖壁	chāng jí hū tú bì	10
@@ -73068,6 +73185,7 @@ sort: by_weight
 長坪瑤族鄉	cháng píng yáo zú xiāng	10
 常青街街道	cháng qīng jiē jiē dào	10
 長慶路街道	cháng qìng lù jiē dào	10
+長沙長沙縣	cháng shā cháng shā xiàn	10
 長沙幹馬鄉	cháng shā gàn mǎ xiāng	10
 長沙貢馬鄉	cháng shā gòng mǎ xiāng	10
 長沙市街道	cháng shā shì jiē dào	10
@@ -73088,19 +73206,31 @@ sort: by_weight
 長軒嶺街道	cháng xuān lǐng jiē dào	10
 長延堡街道	cháng yán bǎo jiē dào	10
 長征街街道	cháng zhēng jiē jiē dào	10
+長治壺關縣	cháng zhì hú guān xiàn	10
+長治黎城縣	cháng zhì lí chéng xiàn	10
+長治平順縣	cháng zhì píng shùn xiàn	10
+長治沁源縣	cháng zhì qìn yuán xiàn	10
 長治市沁縣	cháng zhì shì qìn xiàn	10
+長治武鄉縣	cháng zhì wǔ xiāng xiàn	10
+長治襄垣縣	cháng zhì xiāng yuán xiàn	10
+長治長子縣	cháng zhì zhǎng zǐ xiàn	10
 常州道街道	cháng zhōu dào jiē dào	10
 常州市街道	cháng zhōu shì jiē dào	10
 潮安鳳凰鎮	cháo ān fèng huáng zhèn	10
 朝裏瑤族鄉	cháo lǐ yáo zú xiāng	10
 朝魯吐林場	cháo lǔ tǔ lín chǎng	10
+超山風景區	chāo shān fēng jǐng qū	10
 朝天宮街道	cháo tiān gōng jiē dào	10
 朝天門街道	cháo tiān mén jiē dào	10
+朝陽朝陽縣	cháo yáng cháo yáng xiàn	10
+朝陽建平縣	cháo yáng jiàn píng xiàn	10
 朝陽街街道	cháo yáng jiē jiē dào	10
+朝陽開發區	cháo yáng kāi fā qū	10
 朝陽路街道	cháo yáng lù jiē dào	10
 朝陽門街道	cháo yáng mén jiē dào	10
 朝陽區街道	cháo yáng qū jiē dào	10
 朝陽洲街道	cháo yáng zhōu jiē dào	10
+潮州饒平縣	cháo zhōu ráo píng xiàn	10
 車城路街道	chē chéng lù jiē dào	10
 車田苗族鄉	chē tián miáo zú xiāng	10
 車站街街道	chē zhàn jiē jiē dào	10
@@ -73113,14 +73243,31 @@ sort: by_weight
 陳家橋街道	chén jiā qiáo jiē dào	10
 陳塘莊街道	chén táng zhuāng jiē dào	10
 陳楊寨街道	chén yáng zhài jiē dào	10
+郴州安仁縣	chēn zhōu ān rén xiàn	10
+郴州桂東縣	chēn zhōu guì dōng xiàn	10
+郴州桂陽縣	chēn zhōu guì yáng xiàn	10
+郴州嘉禾縣	chēn zhōu jiā hé xiàn	10
+郴州臨武縣	chēn zhōu lín wǔ xiàn	10
+郴州汝城縣	chēn zhōu rǔ chéng xiàn	10
+郴州宜章縣	chēn zhōu yí zhāng xiàn	10
+郴州永興縣	chēn zhōu yǒng xīng xiàn	10
 城北路街道	chéng běi lù jiē dào	10
+承德承德縣	chéng dé chéng dé xiàn	10
+承德隆化縣	chéng dé lóng huà xiàn	10
+承德灤平縣	chéng dé luán píng xiàn	10
+承德興隆縣	chéng dé xīng lóng xiàn	10
 城東湖街道	chéng dōng hú jiē dào	10
 城東路街道	chéng dōng lù jiē dào	10
+成都大邑縣	chéng dū dà yì xiàn	10
 成都都江堰	chéng dū dū jiāng yàn	10
+成都金堂縣	chéng dū jīn táng xiàn	10
+成都開發區	chéng dū kāi fā qū	10
 成都龍泉驛	chéng dū lóng quán yì	10
+成都蒲江縣	chéng dū pú jiāng xiàn	10
 成都青白江	chéng dū qīng bái jiāng	10
 成都市街道	chéng dū shì jiē dào	10
 成都市鄉鎮	chéng dū shì xiāng zhèn	10
+成都雙流縣	chéng dū shuāng liú xiàn	89
 城港路街道	chéng gǎng lù jiē dào	10
 城關回族鎮	chéng guān huí zú zhèn	10
 城關鎮街道	chéng guān zhèn jiē dào	10
@@ -73143,6 +73290,8 @@ sort: by_weight
 赤峰巴林右	chì fēng bā lín yòu	10
 赤峰巴林左	chì fēng bā lín zuǒ	10
 赤峰喀喇沁	chì fēng kā lǎ qìn	10
+赤峰林西縣	chì fēng lín xī xiàn	10
+赤峰寧城縣	chì fēng níng chéng xiàn	10
 赤峰翁牛特	chì fēng wēng niú tè	10
 赤峰元寶山	chì fēng yuán bǎo shān	10
 赤港開發區	chì gǎng kāi fā qū	10
@@ -73152,23 +73301,43 @@ sort: by_weight
 赤龍南街道	chì lóng nán jiē dào	10
 赤馬港街道	chì mǎ gǎng jiē dào	10
 赤土畲族鄉	chì tǔ shē zú xiāng	10
+池州東至縣	chí zhōu dōng zhì xiàn	10
+池州青陽縣	chí zhōu qīng yáng xiàn	10
+池州石臺縣	chí zhōu shí tái xiàn	10
 崇安寺街道	chóng ān sì jiē dào	10
 崇德路街道	chóng dé lù jiē dào	10
 崇法寺街道	chóng fǎ sì jiē dào	10
 重聚礦石鎮	chóng jù kuàng shí zhèn	10
 重慶大渡口	chóng qìng dà dù kǒu	10
+重慶墊江縣	chóng qìng diàn jiāng xiàn	10
+重慶豐都縣	chóng qìng fēng dū xiàn	10
+重慶奉節縣	chóng qìng fèng jié xiàn	10
 重慶九龍坡	chóng qìng jiǔ lóng pō	10
+重慶開發區	chóng qìng kāi fā qū	10
 重慶兩江新	chóng qìng liǎng jiāng xīn	10
 重慶路街道	chóng qìng lù jiē dào	10
 重慶沙坪壩	chóng qìng shā píng bà	10
 重慶市街道	chóng qìng shì jiē dào	10
 重慶市忠縣	chóng qìng shì zhōng xiàn	10
+重慶石柱縣	chóng qìng shí zhù xiàn	49
+重慶巫山縣	chóng qìng wū shān xiàn	10
+重慶巫溪縣	chóng qìng wū xī xiàn	10
+重慶雲陽縣	chóng qìng yún yáng xiàn	10
 崇儒畲族鄉	chóng rú shē zú xiāng	10
 崇文路街道	chóng wén lù jiē dào	10
 崇業路街道	chóng yè lù jiē dào	10
+崇左大新縣	chóng zuǒ dà xīn xiàn	10
+崇左扶綏縣	chóng zuǒ fú suí xiàn	10
+崇左龍州縣	chóng zuǒ lóng zhōu xiàn	10
+崇左寧明縣	chóng zuǒ níng míng xiàn	10
+崇左天等縣	chóng zuǒ tiān děng xiàn	10
 楚古蘭街道	chǔ gǔ lán jiē dào	10
 楚魯松傑鄉	chǔ lǔ sōng jié xiāng	10
 畜禽良種場	chù qín liáng zhǒng chǎng	10
+滁州定遠縣	chú zhōu dìng yuǎn xiàn	10
+滁州鳳陽縣	chú zhōu fèng yáng xiàn	10
+滁州來安縣	chú zhōu lái ān xiàn	10
+滁州全椒縣	chú zhōu quán jiāo xiàn	10
 滁州市鄉鎮	chú zhōu shì xiāng zhèn	10
 船廠路街道	chuán chǎng lù jiē dào	10
 穿紫河街道	chuān zǐ hé jiē dào	10
@@ -73242,6 +73411,7 @@ sort: by_weight
 達來諾日鎮	dá lái nuò rì zhèn	10
 大李家街道	dà lǐ jiā jiē dào	10
 大栗子街道	dà lì zi jiē dào	10
+大連長海縣	dà lián cháng hǎi xiàn	10
 大練地街道	dà liàn dì jiē dào	10
 大連甘井子	dà lián gān jǐng zǐ	10
 大連路街道	dà lián lù jiē dào	10
@@ -73274,9 +73444,12 @@ sort: by_weight
 大橋瑤族鄉	dà qiáo yáo zú xiāng	10
 大秦家街道	dà qín jiā jiē dào	10
 大沁他拉鎮	dà qìn tā lā zhèn	10
+大慶林甸縣	dà qìng lín diàn xiàn	10
 大慶路街道	dà qìng lù jiē dào	10
 大慶讓胡路	dà qìng ràng hú lù	10
 大慶薩爾圖	dà qìng sà ěr tú	10
+大慶肇源縣	dà qìng zhào yuán xiàn	10
+大慶肇州縣	dà qìng zhào zhōu xiàn	10
 大沙河林場	dà shā hé lín chǎng	10
 大沙田街道	dà shā tián jiē dào	10
 大山洞街道	dà shān dòng jiē dào	10
@@ -73294,7 +73467,13 @@ sort: by_weight
 大孫各莊鎮	dà sūn gè zhuāng zhèn	10
 大潭辦事處	dà tán bàn shì chù	10
 大通溝街道	dà tōng gōu jiē dào	10
+大同廣靈縣	dà tóng guǎng líng xiàn	10
+大同渾源縣	dà tóng hún yuán xiàn	10
+大同靈丘縣	dà tóng líng qiū xiàn	10
 大同山林場	dà tóng shān lín chǎng	10
+大同天鎮縣	dà tóng tiān zhèn xiàn	10
+大同陽高縣	dà tóng yáng gāo xiàn	10
+大同左雲縣	dà tóng zuǒ yún xiàn	10
 大屯彝族鄉	dà tún yí zú xiāng	10
 大托鋪街道	dà tuō pù jiē dào	10
 大王古莊鎮	dà wáng gǔ zhuāng zhèn	10
@@ -73328,7 +73507,10 @@ sort: by_weight
 大趙峪街道	dà zhào yù jiē dào	10
 大直沽街道	dà zhí gū jiē dào	10
 大眾街街道	dà zhòng jiē jiē dào	10
+達州大竹縣	dá zhōu dà zhú xiàn	10
+達州開江縣	dá zhōu kāi jiāng xiàn	10
 達州市渠縣	dá zhōu shì qú xiàn	10
+達州宣漢縣	dá zhōu xuān hàn xiàn	10
 大竹林街道	dà zhú lín jiē dào	10
 大莊回族鄉	dà zhuāng huí zú xiāng	10
 大字溝門鄉	dà zì gōu mén xiāng	10
@@ -73338,6 +73520,10 @@ sort: by_weight
 丹江街街道	dān jiāng jiē jiē dào	10
 丹水池街道	dān shuǐ chí jiē dào	10
 丹趙路街道	dān zhào lù jiē dào	10
+儋州澄邁縣	dān zhōu chéng mài xiàn	10
+儋州定安縣	dān zhōu dìng ān xiàn	10
+儋州臨高縣	dān zhōu lín gāo xiàn	10
+儋州屯昌縣	dān zhōu tún chāng xiàn	10
 儋州五指山	dān zhōu wǔ zhǐ shān	10
 彈子石街道	dàn zǐ shí jiē dào	10
 道北路街道	dào běi lù jiē dào	10
@@ -73352,6 +73538,14 @@ sort: by_weight
 德化街街道	dé huà jiē jiē dào	10
 德寬路街道	dé kuān lù jiē dào	10
 德興滿族鄉	dé xīng mǎn zú xiāng	10
+德陽中江縣	dé yáng zhōng jiāng xiàn	10
+德州臨邑縣	dé zhōu lín yì xiàn	10
+德州寧津縣	dé zhōu níng jīn xiàn	10
+德州平原縣	dé zhōu píng yuán xiàn	10
+德州齊河縣	dé zhōu qí hé xiàn	10
+德州慶雲縣	dé zhōu qìng yún xiàn	10
+德州武城縣	dé zhōu wǔ chéng xiàn	10
+德州夏津縣	dé zhōu xià jīn xiàn	10
 鄧廠滿族鄉	dèng chǎng mǎn zú xiāng	10
 等駕坡街道	děng jià pō jiē dào	10
 鄧井關街道	dèng jǐng guān jiē dào	10
@@ -73383,8 +73577,12 @@ sort: by_weight
 鼎盛東街道	dǐng shèng dōng jiē dào	10
 定王臺街道	dìng wáng tái jiē dào	10
 定威水族鄉	dìng wēi shuǐ zú xiāng	10
+定西臨洮縣	dìng xī lín táo xiàn	10
+定西隴西縣	dìng xī lǒng xī xiàn	10
 定西市岷縣	dìng xī shì mín xiàn	10
 定西市漳縣	dìng xī shì zhāng xiàn	10
+定西通渭縣	dìng xī tōng wèi xiàn	10
+定西渭源縣	dìng xī wèi yuán xiàn	10
 丁香路街道	dīng xiāng lù jiē dào	10
 定中門街道	dìng zhōng mén jiē dào	10
 丁字沽街道	dīng zì gū jiē dào	10
@@ -73451,6 +73649,7 @@ sort: by_weight
 東沙河街道	dōng shā hé jiē dào	10
 東山辦街道	dōng shān bàn jiē dào	10
 東山侗族鄉	dōng shān dòng zú xiāng	10
+東山風景區	dōng shān fēng jǐng qū	10
 東山瑤族鄉	dōng shān yáo zú xiāng	10
 東山彝族鄉	dōng shān yí zú xiāng	10
 東蛇山子鎮	dōng shé shān zǐ zhèn	10
@@ -73464,6 +73663,8 @@ sort: by_weight
 東辛房街道	dōng xīn fáng jiē dào	10
 東興寺街道	dōng xīng sì jiē dào	10
 東陽渡街道	dōng yáng dù jiē dào	10
+東營廣饒縣	dōng yíng guǎng ráo xiàn	10
+東營利津縣	dōng yíng lì jīn xiàn	10
 東營商貿園	dōng yíng shāng mào yuán	10
 東嶽路街道	dōng yuè lù jiē dào	10
 東嶽種畜場	dōng yuè zhǒng chù chǎng	10
@@ -73542,11 +73743,13 @@ sort: by_weight
 防城港港口	fáng chéng gǎng gǎng kǒu	10
 防城港上思	fáng chéng gǎng shàng sī	10
 房山區街道	fáng shān qū jiē dào	10
+方巖風景區	fāng yán fēng jǐng qū	10
 方正林業局	fāng zhèng lín yè jú	10
 紡織城街道	fǎng zhī chéng jiē dào	10
 紡織工業城	fǎng zhī gōng yè chéng	10
 紡織路街道	fǎng zhī lù jiē dào	10
 蜚克圖街道	fēi kè tú jiē dào	10
+飛霞風景區	fēi xiá fēng jǐng qū	10
 奮鬥路街道	fèn dòu lù jiē dào	10
 豐產路街道	fēng chǎn lù jiē dào	10
 馮格莊街道	féng gé zhuāng jiē dào	10
@@ -73573,7 +73776,16 @@ sort: by_weight
 佛祖嶺街道	fó zǔ lǐng jiē dào	10
 府後街街道	fǔ hòu jiē jiē dào	10
 福華街街道	fú huá jiē jiē dào	10
+福建福州市	fú jiàn fú zhōu shì	10
+福建龍岩市	fú jiàn lóng yán shì	10
+福建南平市	fú jiàn nán píng shì	10
+福建寧德市	fú jiàn níng dé shì	10
+福建莆田市	fú jiàn pú tián shì	10
+福建泉州市	fú jiàn quán zhōu shì	10
+福建三明市	fú jiàn sān míng shì	10
+福建廈門市	fú jiàn xià mén shì	10
 福建園街道	fú jiàn yuán jiē dào	10
+福建漳州市	fú jiàn zhāng zhōu shì	10
 富拉爾基區	fù lā ěr jī qū	10
 福萊山街道	fú lái shān jiē dào	10
 浮來山街道	fú lái shān jiē dào	10
@@ -73588,21 +73800,42 @@ sort: by_weight
 府青路街道	fǔ qīng lù jiē dào	10
 浮山路街道	fú shān lù jiē dào	10
 撫順城街道	fǔ shùn chéng jiē dào	10
+撫順撫順縣	fǔ shùn fǔ shùn xiàn	10
 福臺路街道	fú tái lù jiē dào	10
 福田保稅區	fú tián bǎo shuì qū	10
 阜新路街道	fù xīn lù jiē dào	10
 阜新清河門	fù xīn qīng hé mén	10
+阜新彰武縣	fù xīn zhāng wǔ xiàn	10
 富興堡街道	fù xīng bǎo jiē dào	10
 富興街街道	fù xīng jiē jiē dào	10
 復興圩農場	fù xīng wéi nóng chǎng	10
+阜陽阜南縣	fù yáng fù nán xiàn	10
+阜陽臨泉縣	fù yáng lín quán xiàn	10
 阜陽市鄉鎮	fù yáng shì xiāng zhèn	10
+阜陽太和縣	fù yáng tài hé xiàn	10
+阜陽潁上縣	fù yáng yǐng shàng xiàn	10
 富源路街道	fù yuán lù jiē dào	10
+撫州崇仁縣	fǔ zhōu chóng rén xiàn	10
 福州高新區	fú zhōu gāo xīn qū	12
 撫州高新區	fǔ zhōu gāo xīn qū	10
+撫州廣昌縣	fǔ zhōu guǎng chāng xiàn	10
+撫州金溪縣	fǔ zhōu jīn xī xiàn	10
+撫州樂安縣	fǔ zhōu lè ān xiàn	10
+撫州黎川縣	fǔ zhōu lí chuān xiàn	10
+福州連江縣	fú zhōu lián jiāng xiàn	10
+福州羅源縣	fú zhōu luó yuán xiàn	10
+福州閩侯縣	fú zhōu mǐn hòu xiàn	10
+福州閩清縣	fú zhōu mǐn qīng xiàn	10
+撫州南城縣	fǔ zhōu nán chéng xiàn	10
+撫州南豐縣	fǔ zhōu nán fēng xiàn	10
+福州平潭縣	fú zhōu píng tán xiàn	10
 撫州市鄉鎮	fǔ zhōu shì xiāng zhèn	10
 福州市政府	fú zhōu shì zhèng fǔ	12
 撫州市政府	fǔ zhōu shì zhèng fǔ	10
 復州灣街道	fù zhōu wān jiē dào	10
+撫州宜黃縣	fǔ zhōu yí huáng xiàn	10
+福州永泰縣	fú zhōu yǒng tài xiàn	10
+撫州資溪縣	fǔ zhōu zī xī xiàn	10
 夫子廟街道	fū zǐ miào jiē dào	10
 尕巴松多鎮	gǎ bā sōng duō zhèn	10
 嘎達布其鎮	gā dá bù qí zhèn	10
@@ -73624,8 +73857,33 @@ sort: by_weight
 甘其毛都鎮	gān qí máo dōu zhèn	10
 甘泉路街道	gān quán lù jiē dào	10
 桿石橋街道	gān shí qiáo jiē dào	10
+甘肅白銀市	gān sù bái yín shì	10
+甘肅定西市	gān sù dìng xī shì	10
 甘肅嘉峪關	gān sù jiā yù guān	10
+甘肅金昌市	gān sù jīn chāng shì	10
+甘肅酒泉市	gān sù jiǔ quán shì	10
+甘肅蘭州市	gān sù lán zhōu shì	10
+甘肅隴南市	gān sù lǒng nán shì	10
+甘肅平涼市	gān sù píng liáng shì	10
+甘肅慶陽市	gān sù qìng yáng shì	10
+甘肅天水市	gān sù tiān shuǐ shì	10
+甘肅武威市	gān sù wǔ wēi shì	10
+甘肅張掖市	gān sù zhāng yè shì	10
+贛州安遠縣	gàn zhōu ān yuǎn xiàn	10
+贛州崇義縣	gàn zhōu chóng yì xiàn	10
+贛州大餘縣	gàn zhōu dà yú xiàn	10
+贛州定南縣	gàn zhōu dìng nán xiàn	10
+贛州贛縣區	gàn zhōu gàn xiàn qū	10
+贛州會昌縣	gàn zhōu huì chāng xiàn	10
 幹洲墾殖場	gàn zhōu kěn zhí chǎng	10
+贛州寧都縣	gàn zhōu níng dū xiàn	10
+贛州全南縣	gàn zhōu quán nán xiàn	10
+贛州上猶縣	gàn zhōu shàng yóu xiàn	10
+贛州石城縣	gàn zhōu shí chéng xiàn	10
+贛州信豐縣	gàn zhōu xìn fēng xiàn	10
+贛州興國縣	gàn zhōu xīng guó xiàn	10
+贛州尋烏縣	gàn zhōu xún wū xiàn	10
+贛州於都縣	gàn zhōu yú dū xiàn	10
 甘珠爾蘇木	gān zhū ěr sū mù	10
 甘孜州鄉鎮	gān zī zhōu xiāng zhèn	10
 剛邊壯族鄉	gāng biān zhuàng zú xiāng	10
@@ -73656,6 +73914,7 @@ sort: by_weight
 高頭回族鄉	gāo tóu huí zú xiāng	10
 高新產業園	gāo xīn chǎn yè yuán	10
 高新街街道	gāo xīn jiē jiē dào	10
+高新開發區	gāo xīn kāi fā qū	10
 高新路街道	gāo xīn lù jiē dào	10
 高新區街道	gāo xīn qū jiē dào	10
 高新區農場	gāo xīn qū nóng chǎng	10
@@ -73687,6 +73946,7 @@ sort: by_weight
 拱星墩街道	gǒng xīng dūn jiē dào	10
 工業集中區	gōng yè jí zhōng qū	10
 工業街街道	gōng yè jiē jiē dào	10
+工業開發區	gōng yè kāi fā qū	10
 工業路街道	gōng yè lù jiē dào	10
 工業區街道	gōng yè qū jiē dào	10
 工業園街道	gōng yè yuán jiē dào	10
@@ -73708,12 +73968,18 @@ sort: by_weight
 古勒巴格鄉	gǔ lè bā gé xiāng	10
 古勒巴格鎮	gǔ lè bā gé zhèn	10
 古勒魯克鄉	gǔ lè lǔ kè xiāng	10
+古雷開發區	gǔ léi kāi fā qū	10
 鼓樓區街道	gǔ lóu qū jiē dào	10
 古魯板蒿鎮	gǔ lǔ bǎn hāo zhèn	10
 古魯丁城鎮	gǔ lǔ dīng chéng zhèn	10
 古美路街道	gǔ měi lù jiē dào	10
 古清口街道	gǔ qīng kǒu jiē dào	10
+鼓山風景區	gǔ shān fēng jǐng qū	10
 固陽農科所	gù yáng nóng kē suǒ	10
+固原涇源縣	gù yuán jīng yuán xiàn	10
+固原隆德縣	gù yuán lóng dé xiàn	10
+固原彭陽縣	gù yuán péng yáng xiàn	10
+固原西吉縣	gù yuán xī jí xiàn	10
 崮雲湖街道	gù yún hú jiē dào	10
 固增苗族鄉	gù zēng miáo zú xiāng	10
 古寨瑤族鄉	gǔ zhài yáo zú xiāng	10
@@ -73738,8 +74004,32 @@ sort: by_weight
 官寨苗族鄉	guān zhài miáo zú xiāng	10
 關中壩街道	guān zhōng bà jiē dào	10
 官莊畲族鄉	guān zhuāng shē zú xiāng	10
+廣安鄰水縣	guǎng ān lín shuǐ xiàn	10
+廣安武勝縣	guǎng ān wǔ shèng xiàn	10
+廣安岳池縣	guǎng ān yuè chí xiàn	10
+廣東潮州市	guǎng dōng cháo zhōu shì	10
+廣東東莞市	guǎng dōng dōng guǎn shì	10
+廣東佛山市	guǎng dōng fó shān shì	10
+廣東廣州市	guǎng dōng guǎng zhōu shì	10
+廣東河源市	guǎng dōng hé yuán shì	10
+廣東惠州市	guǎng dōng huì zhōu shì	10
+廣東江門市	guǎng dōng jiāng mén shì	10
+廣東揭陽市	guǎng dōng jiē yáng shì	10
 廣東路街道	guǎng dōng lù jiē dào	10
+廣東茂名市	guǎng dōng mào míng shì	10
+廣東梅州市	guǎng dōng méi zhōu shì	10
+廣東清遠市	guǎng dōng qīng yuǎn shì	10
+廣東汕頭市	guǎng dōng shàn tóu shì	10
+廣東汕尾市	guǎng dōng shàn wěi shì	10
+廣東韶關市	guǎng dōng sháo guān shì	10
+廣東深圳市	guǎng dōng shēn zhèn shì	10
 廣東省街道	guǎng dōng shěng jiē dào	10
+廣東陽江市	guǎng dōng yáng jiāng shì	10
+廣東雲浮市	guǎng dōng yún fú shì	10
+廣東湛江市	guǎng dōng zhàn jiāng shì	10
+廣東肇慶市	guǎng dōng zhào qìng shì	10
+廣東中山市	guǎng dōng zhōng shān shì	10
+廣東珠海市	guǎng dōng zhū hǎi shì	10
 光復道街道	guāng fù dào jiē dào	10
 廣富林街道	guǎng fù lín jiē dào	10
 光華路街道	guāng huá lù jiē dào	10
@@ -73752,22 +74042,44 @@ sort: by_weight
 廣潤門街道	guǎng rùn mén jiē dào	10
 廣武門街道	guǎng wǔ mén jiē dào	10
 廣西防城港	guǎng xī fáng chéng gǎng	10
+廣元蒼溪縣	guǎng yuán cāng xī xiàn	10
+廣元劍閣縣	guǎng yuán jiàn gé xiàn	10
+廣元青川縣	guǎng yuán qīng chuān xiàn	10
+廣元旺蒼縣	guǎng yuán wàng cāng xiàn	10
 廣至藏族鄉	guǎng zhì zàng zú xiāng	10
 廣中路街道	guǎng zhōng lù jiē dào	10
+廣州開發區	guǎng zhōu kāi fā qū	10
 廣州路街道	guǎng zhōu lù jiē dào	10
 廣州市城鎮	guǎng zhōu shì chéng zhèn	10
 廣州市街道	guǎng zhōu shì jiē dào	10
+貴港平南縣	guì gǎng píng nán xiàn	10
 貴港市鄉鎮	guì gǎng shì xiāng zhèn	10
 桂花坪街道	guì huā píng jiē dào	10
 桂花橋街道	guì huā qiáo jiē dào	10
 歸蘭水族鄉	guī lán shuǐ zú xiāng	10
+桂林灌陽縣	guì lín guàn yáng xiàn	10
+桂林靈川縣	guì lín líng chuān xiàn	10
 桂林路街道	guì lín lù jiē dào	10
+桂林平樂縣	guì lín píng lè xiàn	10
+桂林全州縣	guì lín quán zhōu xiàn	10
 桂林市鄉鎮	guì lín shì xiāng zhèn	10
+桂林興安縣	guì lín xīng ān xiàn	10
+桂林陽朔縣	guì lín yáng shuò xiàn	10
+桂林永福縣	guì lín yǒng fú xiàn	10
+桂林資源縣	guì lín zī yuán xiàn	10
 貴石溝街道	guì shí gōu jiē dào	10
 貴陽觀山湖	guì yáng guān shān hú	10
+貴陽開陽縣	guì yáng kāi yáng xiàn	10
 貴陽市鄉鎮	guì yáng shì xiāng zhèn	10
+貴陽息烽縣	guì yáng xī fēng xiàn	10
+貴陽修文縣	guì yáng xiū wén xiàn	10
+貴州安順市	guì zhōu ān shùn shì	10
+貴州畢節市	guì zhōu bì jié shì	10
+貴州貴陽市	guì zhōu guì yáng shì	10
 貴州六盤水	guì zhōu liù pán shuǐ	10
 貴州茅台鎮	guì zhōu máo tái zhèn	10
+貴州銅仁市	guì zhōu tóng rén shì	10
+貴州遵義市	guì zhōu zūn yì shì	10
 滾貝侗族鄉	gǔn bèi dòng zú xiāng	10
 國安瑤族鄉	guó ān yáo zú xiāng	10
 國基路街道	guó jī lù jiē dào	10
@@ -73814,6 +74126,7 @@ sort: by_weight
 哈拉直溝鄉	hā la zhí gōu xiāng	10
 哈林格爾鎮	hā lín gé ěr zhèn	10
 哈密巴里坤	hā mì bā lǐ kūn	10
+哈密伊吾縣	hā mì yī wú xiàn	10
 哈平路街道	hā píng lù jiē dào	10
 哈日布呼鎮	hā rì bù hū zhèn	10
 哈圖布呼鎮	hā tú bù hū zhèn	10
@@ -73825,6 +74138,10 @@ sort: by_weight
 海林林業局	hǎi lín lín yè jú	10
 海倫路街道	hǎi lún lù jiē dào	10
 海門港新區	hǎi mén gǎng xīn qū	10
+海南儋州市	hǎi nán dān zhōu shì	10
+海南海口市	hǎi nán hǎi kǒu shì	10
+海南三沙市	hǎi nán sān shā shì	10
+海南三亞市	hǎi nán sān yà shì	10
 海青島街道	hǎi qīng dǎo jiē dào	10
 海棠溪街道	hǎi táng xī jiē dào	10
 海灣旅遊區	hǎi wān lǚ yóu qū	10
@@ -73839,7 +74156,14 @@ sort: by_weight
 罕艾日克鎮	hǎn ài rì kè zhèn	10
 漢背管理處	hàn bèi guǎn lǐ chù	10
 罕達蓋蘇木	hǎn dá gài sū mù	10
+邯鄲成安縣	hán dān chéng ān xiàn	10
+邯鄲大名縣	hán dān dà míng xiàn	10
 邯鄲峰峰礦	hán dān fēng fēng kuàng	10
+邯鄲館陶縣	hán dān guǎn táo xiàn	10
+邯鄲廣平縣	hán dān guǎng píng xiàn	10
+邯鄲雞澤縣	hán dān jī zé xiàn	10
+邯鄲臨漳縣	hán dān lín zhāng xiàn	10
+邯鄲曲周縣	hán dān qū zhōu xiàn	10
 邯鄲市磁縣	hán dān shì cí xiàn	10
 邯鄲市邱縣	hán dān shì qiū xiàn	10
 邯鄲市涉縣	hán dān shì shè xiàn	10
@@ -73856,14 +74180,25 @@ sort: by_weight
 漢屯路街道	hàn tún lù jiē dào	10
 罕烏拉街道	hǎn wù lā jiē dào	10
 漢興街街道	hàn xīng jiē jiē dào	10
+漢中城固縣	hàn zhōng chéng gù xiàn	10
+漢中佛坪縣	hàn zhōng fó píng xiàn	10
+漢中留壩縣	hàn zhōng liú bà xiàn	10
 漢中路街道	hàn zhōng lù jiē dào	10
+漢中略陽縣	hàn zhōng lüè yáng xiàn	10
+漢中寧強縣	hàn zhōng níng qiáng xiàn	10
 漢中市勉縣	hàn zhōng shì miǎn xiàn	10
 漢中市洋縣	hàn zhōng shì yáng xiàn	10
+漢中西鄉縣	hàn zhōng xī xiāng xiàn	10
+漢中鎮巴縣	hàn zhōng zhèn bā xiàn	10
 航空產業園	háng kōng chǎn yè yuán	10
 航宇路街道	háng yǔ lù jiē dào	10
+杭州淳安縣	háng zhōu chún ān xiàn	10
 杭州道街道	háng zhōu dào jiē dào	10
+杭州開發區	háng zhōu kāi fā qū	10
 杭州路街道	háng zhōu lù jiē dào	10
 杭州市街道	háng zhōu shì jiē dào	10
+杭州桐廬縣	háng zhōu tóng lú xiàn	10
+濠河風景區	háo hé fēng jǐng qū	10
 浩口原種場	hào kǒu yuán zhǒng chǎng	10
 好裏堡街道	hǎo lǐ bǎo jiē dào	10
 浩特芒哈鄉	hào tè máng hā xiāng	10
@@ -73871,25 +74206,43 @@ sort: by_weight
 好腰蘇木鎮	hǎo yāo sū mù zhèn	10
 壕子口街道	háo zǐ kǒu jiē dào	10
 和愛藏族鄉	hé ài zàng zú xiāng	10
+河北保定市	hé běi bǎo dìng shì	10
+河北滄州市	hé běi cāng zhōu shì	10
+河北承德市	hé běi chéng dé shì	10
+河北邯鄲市	hé běi hán dān shì	10
+河北衡水市	hé běi héng shuǐ shì	10
+河北廊坊市	hé běi láng fāng shì	10
 鶴北林業局	hè běi lín yè jú	10
 河北路街道	hé běi lù jiē dào	10
 河北秦皇島	hé běi qín huáng dǎo	10
 河北區街道	hé běi qū jiē dào	10
 河北石家莊	hé běi shí jiā zhuāng	10
+河北唐山市	hé běi táng shān shì	10
+河北邢台市	hé běi xíng tái shì	10
 河北張家口	hé běi zhāng jiā kǒu	10
 鶴壁市淇縣	hè bì shì qí xiàn	10
 鶴壁市浚縣	hè bì shì xùn xiàn	10
 河濱街街道	hé bīn jiē jiē dào	10
 河濱路街道	hé bīn lù jiē dào	10
 和布克賽爾	hé bù kè sài ěr	10
+河池東蘭縣	hé chí dōng lán xiàn	10
+河池鳳山縣	hé chí fèng shān xiàn	10
 河池金城江	hé chí jīn chéng jiāng	10
+河池南丹縣	hé chí nán dān xiàn	10
 河池市鄉鎮	hé chí shì xiāng zhèn	10
+河池天峨縣	hé chí tiān é xiàn	10
 合川區街道	hé chuān qū jiē dào	10
 河東路街道	hé dōng lù jiē dào	10
 禾洞農林場	hé dòng nóng lín chǎng	10
 訶額倫街道	hē é lún jiē dào	10
+合肥長豐縣	hé féi cháng fēng xiàn	10
+合肥肥東縣	hé féi féi dōng xiàn	10
+合肥肥西縣	hé féi féi xī xiàn	10
+合肥廬江縣	hé féi lú jiāng xiàn	10
 合肥路街道	hé féi lù jiē dào	10
 合肥市街道	hé féi shì jiē dào	10
+鶴崗蘿北縣	hè gǎng luó běi xiàn	10
+鶴崗綏濱縣	hè gǎng suí bīn xiàn	10
 荷花池街道	hé huā chí jiē dào	10
 荷花路街道	hé huā lù jiē dào	10
 荷花園街道	hé huā yuán jiē dào	10
@@ -73909,9 +74262,24 @@ sort: by_weight
 河馬泉街道	hé mǎ quán jiē dào	10
 河門口街道	hé mén kǒu jiē dào	10
 河南岸街道	hé nán àn jiē dào	10
+河南安陽市	hé nán ān yáng shì	10
+河南鶴壁市	hé nán hè bì shì	10
+河南焦作市	hé nán jiāo zuò shì	10
+河南開發區	hé nán kāi fā qū	10
+河南開封市	hé nán kāi fēng shì	10
+河南漯河市	hé nán luò hé shì	10
+河南洛陽市	hé nán luò yáng shì	10
+河南南陽市	hé nán nán yáng shì	10
 河南平頂山	hé nán píng dǐng shān	10
+河南濮陽市	hé nán pú yáng shì	10
 河南三門峽	hé nán sān mén xiá	10
+河南商丘市	hé nán shāng qiū shì	10
 河南屯林場	hé nán tún lín chǎng	10
+河南新鄉市	hé nán xīn xiāng shì	10
+河南信陽市	hé nán xìn yáng shì	10
+河南許昌市	hé nán xǔ chāng shì	10
+河南鄭州市	hé nán zhèng zhōu shì	10
+河南周口市	hé nán zhōu kǒu shì	10
 河南駐馬店	hé nán zhù mǎ diàn	10
 和平街街道	hé píng jiē jiē dào	10
 和平里街道	hé píng lǐ jiē dào	10
@@ -73920,6 +74288,7 @@ sort: by_weight
 和平橋街道	hé píng qiáo jiē dào	10
 和平彝族鄉	hé píng yí zú xiāng	10
 合浦合浦縣	hé pǔ hé pǔ xiàn	10
+鶴山風景區	hè shān fēng jǐng qū	10
 鶴山街街道	hè shān jiē jiē dào	10
 和尚房子鄉	hé shang fáng zi xiāng	10
 和什力克鄉	hé shí lì kè xiāng	10
@@ -73930,11 +74299,25 @@ sort: by_weight
 和興路街道	hé xīng lù jiē dào	10
 合陽城街道	hé yáng chéng jiē dào	10
 荷葉地街道	hé yè dì jiē dào	10
+河源東源縣	hé yuán dōng yuán xiàn	10
+河源和平縣	hé yuán hé píng xiàn	10
+河源連平縣	hé yuán lián píng xiàn	10
+河源龍川縣	hé yuán lóng chuān xiàn	10
+河源紫金縣	hé yuán zǐ jīn xiàn	10
 合樂苗族鄉	hé yuè miáo zú xiāng	10
+菏澤成武縣	hé zé chéng wǔ xiàn	10
+菏澤東明縣	hé zé dōng míng xiàn	10
+菏澤巨野縣	hé zé jù yě xiàn	10
+菏澤鄄城縣	hé zé juàn chéng xiàn	10
 菏澤市曹縣	hé zé shì cáo xiàn	10
 菏澤市街道	hé zé shì jiē dào	10
 菏澤市單縣	hé zé shì shàn xiàn	10
+菏澤鄆城縣	hé zé yùn chéng xiàn	10
+賀州昭平縣	hè zhōu zhāo píng xiàn	10
+賀州鍾山縣	hè zhōu zhōng shān xiàn	10
 合作路街道	hé zuò lù jiē dào	10
+黑河孫吳縣	hēi hé sūn wú xiàn	10
+黑河遜克縣	hēi hé xùn kè xiàn	10
 黑甲山片區	hēi jiǎ shān piàn qū	10
 黑林鋪街道	hēi lín pù jiē dào	10
 黑龍江大慶	hēi lóng jiāng dà qìng	10
@@ -73956,8 +74339,20 @@ sort: by_weight
 橫道河子鎮	héng dào hé zǐ zhèn	10
 恆湖墾殖場	héng hú kěn zhí chǎng	10
 橫嶺瑤族鄉	héng lǐng yáo zú xiāng	10
+衡水安平縣	héng shuǐ ān píng xiàn	10
+衡水阜城縣	héng shuǐ fù chéng xiàn	10
+衡水故城縣	héng shuǐ gù chéng xiàn	10
+衡水饒陽縣	héng shuǐ ráo yáng xiàn	10
 衡水市景縣	héng shuǐ shì jǐng xiàn	10
+衡水武強縣	héng shuǐ wǔ qiáng xiàn	10
+衡水武邑縣	héng shuǐ wǔ yì xiàn	10
+衡水棗強縣	héng shuǐ zǎo qiáng xiàn	10
 橫現河街道	héng xiàn hé jiē dào	10
+衡陽衡東縣	héng yáng héng dōng xiàn	10
+衡陽衡南縣	héng yáng héng nán xiàn	10
+衡陽衡山縣	héng yáng héng shān xiàn	10
+衡陽衡陽縣	héng yáng héng yáng xiàn	10
+衡陽祁東縣	héng yáng qí dōng xiàn	10
 衡州路街道	héng zhōu lù jiē dào	10
 紅寶石街道	hóng bǎo shí jiē dào	10
 紅甸回族鄉	hóng diān huí zú xiāng	10
@@ -73989,6 +74384,7 @@ sort: by_weight
 紅旗橋街道	hóng qí qiáo jiē dào	10
 紅旗飼養場	hóng qí sì yǎng chǎng	10
 紅旗營子鄉	hóng qí yíng zi xiāng	10
+虹橋開發區	hóng qiáo kāi fā qū	10
 紅橋墾殖場	hóng qiáo kěn zhí chǎng	10
 洪山街街道	hóng shān jiē jiē dào	10
 宏勝種畜場	hóng shèng zhǒng chù chǎng	10
@@ -74011,7 +74407,19 @@ sort: by_weight
 後沙峪地區	hòu shā yù dì qū	10
 後塘瑤族鄉	hòu táng yáo zú xiāng	10
 後寨苗族鄉	hòu zhài miáo zú xiāng	10
+湖北鄂州市	hú běi è zhōu shì	10
+湖北黃岡市	hú běi huáng gāng shì	10
+湖北黃石市	hú běi huáng shí shì	10
+湖北荊門市	hú běi jīng mén shì	10
+湖北荊州市	hú běi jīng zhōu shì	10
 湖北路街道	hú běi lù jiē dào	10
+湖北十堰市	hú běi shí yàn shì	10
+湖北隨州市	hú běi suí zhōu shì	10
+湖北武漢市	hú běi wǔ hàn shì	10
+湖北咸寧市	hú běi xián níng shì	10
+湖北襄陽市	hú běi xiāng yáng shì	10
+湖北孝感市	hú běi xiào gǎn shì	10
+湖北宜昌市	hú běi yí chāng shì	10
 湖濱路街道	hú bīn lù jiē dào	10
 胡地於孜鎮	hú dì yú zī zhèn	10
 湖東路街道	hú dōng lù jiē dào	10
@@ -74037,14 +74445,31 @@ sort: by_weight
 呼倫貝爾市	hū lún bèi ěr shì	10
 呼倫路街道	hū lún lù jiē dào	10
 呼瑪呼瑪縣	hū mǎ hū mǎ xiàn	10
+湖南常德市	hú nán cháng dé shì	10
+湖南長沙市	hú nán cháng shā shì	10
+湖南郴州市	hú nán chēn zhōu shì	10
+湖南衡陽市	hú nán héng yáng shì	10
+湖南懷化市	hú nán huái huà shì	10
+湖南婁底市	hú nán lóu dǐ shì	10
 湖南路街道	hú nán lù jiē dào	10
+湖南邵陽市	hú nán shào yáng shì	10
 湖南省鄉鎮	hú nán shěng xiāng zhèn	10
+湖南湘潭市	hú nán xiāng tán shì	10
+湖南益陽市	hú nán yì yáng shì	10
+湖南永州市	hú nán yǒng zhōu shì	10
+湖南岳陽市	hú nán yuè yáng shì	10
 湖南張家界	hú nán zhāng jiā jiè	10
+湖南株洲市	hú nán zhū zhōu shì	10
+湖泊風景區	hú pō fēng jǐng qū	10
 虎山路街道	hǔ shān lù jiē dào	10
 虎石台街道	hǔ shí tái jiē dào	10
 湖西畲族鄉	hú xī shē zú xiāng	10
 虎牙藏族鄉	hǔ yá zàng zú xiāng	10
+虎峪風景區	hǔ yù fēng jǐng qū	10
+湖州安吉縣	hú zhōu ān jí xiàn	10
+湖州德清縣	hú zhōu dé qīng xiàn	10
 湖州市街道	hú zhōu shì jiē dào	10
+湖州長興縣	hú zhōu zhǎng xīng xiàn	10
 花地瑪堂區	huā dì mǎ táng qū	10
 華光街街道	huá guāng jiē jiē dào	10
 花果山街道	huā guǒ shān jiē dào	10
@@ -74078,12 +74503,22 @@ sort: by_weight
 花園勞教所	huā yuán láo jiào suǒ	10
 花園路街道	huā yuán lù jiē dào	10
 華中路街道	huá zhōng lù jiē dào	10
+淮安金湖縣	huái ān jīn hú xiàn	10
+淮安漣水縣	huái ān lián shuǐ xiàn	10
 淮安清江浦	huái ān qīng jiāng pǔ	10
+淮安盱眙縣	huái ān xū yí xiàn	10
+淮北濉溪縣	huái běi suī xī xiàn	10
 槐店回族鎮	huái diàn huí zú zhèn	10
 淮海路街道	huái hǎi lù jiē dào	10
 淮海食品城	huái hǎi shí pǐn chéng	10
 淮河路街道	huái hé lù jiē dào	10
+懷化辰溪縣	huái huà chén xī xiàn	10
+懷化會同縣	huái huà huì tóng xiàn	10
+懷化漵浦縣	huái huà xù pǔ xiàn	10
+懷化沅陵縣	huái huà yuán líng xiàn	10
+懷化中方縣	huái huà zhōng fāng xiàn	10
 淮南八公山	huái nán bā gōng shān	10
+淮南鳳台縣	huái nán fèng tái xiàn	10
 淮南市壽縣	huái nán shì shòu xiàn	10
 淮南田家庵	huái nán tián jiā ān	10
 淮南謝家集	huái nán xiè jiā jí	10
@@ -74099,9 +74534,17 @@ sort: by_weight
 篁碧畲族鄉	huáng bì shē zú xiāng	10
 黃茶嶺街道	huáng chá lǐng jiē dào	10
 黃道侗族鄉	huáng dào dòng zú xiāng	10
+黃島開發區	huáng dǎo kāi fā qū	10
 黃洞瑤族鄉	huáng dòng yáo zú xiāng	10
 黃泛區農場	huáng fàn qū nóng chǎng	10
+黃岡紅安縣	huáng gāng hóng ān xiàn	10
+黃岡黃梅縣	huáng gāng huáng méi xiàn	10
+黃岡羅田縣	huáng gāng luó tián xiàn	10
+黃岡蘄春縣	huáng gāng qí chūn xiàn	10
 黃岡市鄉鎮	huáng gāng shì xiāng zhèn	10
+黃岡團風縣	huáng gāng tuán fēng xiàn	10
+黃岡浠水縣	huáng gāng xī shuǐ xiàn	10
+黃岡英山縣	huáng gāng yīng shān xiàn	10
 黃海路街道	huáng hǎi lù jiē dào	10
 黃河道街道	huáng hé dào jiē dào	10
 黃鶴樓街道	huáng hè lóu jiē dào	10
@@ -74124,12 +74567,15 @@ sort: by_weight
 黃沙瑤族鄉	huáng shā yáo zú xiāng	10
 黃山風景區	huáng shān fēng jǐng qū	10
 黃山管理處	huáng shān guǎn lǐ chù	10
+黃山祁門縣	huáng shān qí mén xiàn	10
 黃山市歙縣	huáng shān shì shè xiàn	10
 黃山市黟縣	huáng shān shì yī xiàn	10
+黃山休寧縣	huáng shān xiū níng xiàn	10
 黃石港街道	huáng shí gǎng jiē dào	10
 黃石黃石港	huáng shí huáng shí gǎng	10
 黃石市街道	huáng shí shì jiē dào	10
 黃石西塞山	huáng shí xī sāi shān	10
+黃石陽新縣	huáng shí yáng xīn xiàn	10
 黃獅寨林場	huáng shī zhài lín chǎng	10
 黃思灣街道	huáng sī wān jiē dào	10
 黃田壩街道	huáng tián bà jiē dào	10
@@ -74145,6 +74591,9 @@ sort: by_weight
 惠七滿族鎮	huì qī mǎn zú zhèn	10
 匯源瑤族鄉	huì yuán yáo zú xiāng	10
 會戰道街道	huì zhàn dào jiē dào	10
+惠州博羅縣	huì zhōu bó luó xiàn	10
+惠州惠東縣	huì zhōu huì dōng xiàn	10
+惠州龍門縣	huì zhōu lóng mén xiàn	10
 惠州市林場	huì zhōu shì lín chǎng	10
 琿春林業局	hún chūn lín yè jú	10
 渾河灣街道	hún hé wān jiē dào	10
@@ -74154,13 +74603,25 @@ sort: by_weight
 霍爾果斯市	huò ěr guǒ sī shì	10
 獲各琦蘇木	huò gè qí sū mù	10
 霍家店街道	huò jiā diàn jiē dào	10
+火炬開發區	huǒ jù kāi fā qū	10
 霍口畲族鄉	huò kǒu shē zú xiāng	10
 火連畈茶場	huǒ lián fàn chá chǎng	10
 火連寨街道	huǒ lián zhài jiē dào	10
 霍林郭勒市	huò lín guō lè shì	10
 霍林河街道	huò lín hé jiē dào	10
 霍什拉甫鄉	huò shí lā fǔ xiāng	10
+吉安安福縣	jí ān ān fú xiàn	10
+吉安吉安縣	jí ān jí ān xiàn	10
+吉安吉水縣	jí ān jí shuǐ xiàn	10
 吉安井岡山	jí ān jǐng gāng shān	10
+吉安遂川縣	jí ān suì chuān xiàn	10
+吉安泰和縣	jí ān tài hé xiàn	10
+吉安萬安縣	jí ān wàn ān xiàn	10
+吉安峽江縣	jí ān xiá jiāng xiàn	10
+吉安新幹縣	jí ān xīn gàn xiàn	10
+吉安永豐縣	jí ān yǒng fēng xiàn	10
+吉安永新縣	jí ān yǒng xīn xiàn	10
+濟北開發區	jì běi kāi fā qū	10
 吉崩崗街道	jí bēng gǎng jiē dào	10
 機場路街道	jī chǎng lù jiē dào	10
 祭城路街道	jì chéng lù jiē dào	10
@@ -74170,16 +74631,36 @@ sort: by_weight
 棘洪灘街道	jí hóng tān jiē dào	10
 寂靜的街道	jì jìng de jiē dào	10
 吉裏於孜鎮	jí lǐ yú zī zhèn	10
+吉林白城市	jí lín bái chéng shì	10
+吉林白山市	jí lín bái shān shì	10
+吉林長春市	jí lín cháng chūn shì	10
+吉林吉林市	jí lín jí lín shì	10
+吉林遼源市	jí lín liáo yuán shì	10
+吉林四平市	jí lín sì píng shì	10
+吉林松原市	jí lín sōng yuán shì	10
+吉林通化市	jí lín tōng huà shì	10
+吉林永吉縣	jí lín yǒng jí xiàn	10
 即墨路街道	jí mò lù jiē dào	10
 吉木薩爾縣	jí mù sà ěr xiàn	10
 吉木薩爾鎮	jí mù sà ěr zhèn	10
+濟南平陰縣	jǐ nán píng yīn xiàn	10
+濟南商河縣	jǐ nán shāng hé xiàn	10
+濟寧嘉祥縣	jǐ níng jiā xiáng xiàn	10
+濟寧金鄉縣	jǐ níng jīn xiāng xiàn	10
+濟寧梁山縣	jǐ níng liáng shān xiàn	10
+濟寧泗水縣	jǐ níng sì shuǐ xiàn	10
+濟寧微山縣	jǐ níng wēi shān xiàn	10
+濟寧汶上縣	jǐ níng wèn shàng xiàn	10
+濟寧魚台縣	jǐ níng yú tái xiàn	10
 機器人小鎮	jī qì rén xiǎo zhèn	10
 吉仁高勒鎮	jí rén gāo lè zhèn	10
 稷山縣社區	jì shān xiàn shè qū	10
 吉石壩街道	jí shí bà jiē dào	10
+技術開發區	jì shù kāi fā qū	10
 雞頭村街道	jī tóu cūn jiē dào	10
 機投橋街道	jī tóu qiáo jiē dào	10
 雞西城子河	jī xī chéng zǐ hé	10
+雞西雞東縣	jī xī jī dōng xiàn	10
 薊縣官莊鎮	jì xiàn guān zhuāng zhèn	10
 集賢里街道	jí xián lǐ jiē dào	10
 集賢路街道	jí xián lù jiē dào	10
@@ -74206,11 +74687,26 @@ sort: by_weight
 佳榮裡街道	jiā róng lǐ jiē dào	10
 夾山管理處	jiā shān guǎn lǐ chù	10
 嘉山路街道	jiā shān lù jiē dào	10
+嘉興海鹽縣	jiā xīng hǎi yán xiàn	10
+嘉興嘉善縣	jiā xīng jiā shàn xiàn	10
 嘉興路街道	jiā xīng lù jiē dào	10
 嘉興市鄉鎮	jiā xīng shì xiāng zhèn	10
+嘉義花蓮縣	jiā yì huā lián xiàn	10
+嘉義嘉義縣	jiā yì jiā yì xiàn	10
+嘉義金門縣	jiā yì jīn mén xiàn	10
 加依勒瑪鄉	jiā yī lè mǎ xiāng	10
+嘉義連江縣	jiā yì lián jiāng xiàn	10
+嘉義苗栗縣	jiā yì miáo lì xiàn	10
+嘉義南投縣	jiā yì nán tóu xiàn	10
+嘉義澎湖縣	jiā yì péng hú xiàn	10
+嘉義屏東縣	jiā yì píng dōng xiàn	10
 嘉義市東區	jiā yì shì dōng qū	10
 嘉義市西區	jiā yì shì xī qū	10
+嘉義臺東縣	jiā yì tái dōng xiàn	10
+嘉義新竹縣	jiā yì xīn zhú xiàn	10
+嘉義宜蘭縣	jiā yì yí lán xiàn	10
+嘉義雲林縣	jiā yì yún lín xiàn	10
+嘉義彰化縣	jiā yì zhāng huà xiàn	10
 梘槽苗族鄉	jiǎn cáo miáo zú xiāng	10
 尖草坪街道	jiān cǎo píng jiē dào	10
 建昌道街道	jiàn chāng dào jiē dào	10
@@ -74219,6 +74715,7 @@ sort: by_weight
 建國路街道	jiàn guó lù jiē dào	10
 建國門街道	jiàn guó mén jiē dào	10
 建華南街道	jiàn huá nán jiē dào	10
+鑒江開發區	jiàn jiāng kāi fā qū	10
 健康路街道	jiàn kāng lù jiē dào	10
 建蘭路街道	jiàn lán lù jiē dào	10
 建寧路街道	jiàn níng lù jiē dào	10
@@ -74232,6 +74729,7 @@ sort: by_weight
 江北城街道	jiāng běi chéng jiē dào	10
 江北管理區	jiāng běi guǎn lǐ qū	10
 江川路街道	jiāng chuān lù jiē dào	10
+江東開發區	jiāng dōng kāi fā qū	10
 漿洞瑤族鄉	jiāng dòng yáo zú xiāng	10
 江都路街道	jiāng dū lù jiē dào	10
 江格勒斯鄉	jiāng gé lè sī xiāng	10
@@ -74246,11 +74744,34 @@ sort: by_weight
 江寧路街道	jiāng níng lù jiē dào	10
 江浦路街道	jiāng pǔ lù jiē dào	10
 江山路街道	jiāng shān lù jiē dào	10
+江蘇常州市	jiāng sū cháng zhōu shì	10
+江蘇淮安市	jiāng sū huái ān shì	10
+江蘇開發區	jiāng sū kāi fā qū	10
 江蘇連雲港	jiāng sū lián yún gǎng	10
 江蘇路街道	jiāng sū lù jiē dào	10
+江蘇南京市	jiāng sū nán jīng shì	10
+江蘇南通市	jiāng sū nán tōng shì	10
+江蘇宿遷市	jiāng sū sù qiān shì	10
+江蘇蘇州市	jiāng sū sū zhōu shì	10
+江蘇泰州市	jiāng sū tài zhōu shì	10
+江蘇無錫市	jiāng sū wú xī shì	10
+江蘇徐州市	jiāng sū xú zhōu shì	10
+江蘇鹽城市	jiāng sū yán chéng shì	10
+江蘇揚州市	jiāng sū yáng zhōu shì	10
+江蘇鎮江市	jiāng sū zhèn jiāng shì	10
 江灣鎮街道	jiāng wān zhèn jiē dào	10
+江西撫州市	jiāng xī fǔ zhōu shì	10
+江西贛州市	jiāng xī gàn zhōu shì	10
+江西吉安市	jiāng xī jí ān shì	10
 漿洗街街道	jiāng xǐ jiē jiē dào	10
 江西景德鎮	jiāng xī jǐng dé zhèn	10
+江西九江市	jiāng xī jiǔ jiāng shì	10
+江西南昌市	jiāng xī nán chāng shì	10
+江西萍鄉市	jiāng xī píng xiāng shì	10
+江西上饒市	jiāng xī shàng ráo shì	10
+江西新餘市	jiāng xī xīn yú shì	10
+江西宜春市	jiāng xī yí chūn shì	10
+江西鷹潭市	jiāng xī yīng tán shì	10
 江心洲街道	jiāng xīn zhōu jiē dào	10
 江洲瑤族鄉	jiāng zhōu yáo zú xiāng	10
 交道口街道	jiāo dào kǒu jiē dào	10
@@ -74259,7 +74780,10 @@ sort: by_weight
 蕉江瑤族鄉	jiāo jiāng yáo zú xiāng	10
 椒金山街道	jiāo jīn shān jiē dào	10
 交流島街道	jiāo liú dǎo jiē dào	10
+焦作博愛縣	jiāo zuò bó ài xiàn	10
 焦作市溫縣	jiāo zuò shì wēn xiàn	10
+焦作武陟縣	jiāo zuò wǔ zhì xiàn	10
+焦作修武縣	jiāo zuò xiū wǔ xiàn	10
 捷地回族鄉	jié dì huí zú xiāng	10
 解放碑街道	jiě fàng bēi jiē dào	10
 解放道街道	jiě fàng dào jiē dào	10
@@ -74270,12 +74794,19 @@ sort: by_weight
 解甲莊街道	jiě jiǎ zhuāng jiē dào	10
 街津口林場	jiē jīn kǒu lín chǎng	10
 接履橋街道	jiē lǚ qiáo jiē dào	10
+揭陽惠來縣	jiē yáng huì lái xiàn	10
+揭陽揭西縣	jiē yáng jiē xī xiàn	10
 揭陽市鄉鎮	jiē yáng shì xiāng zhèn	10
 晉安區街道	jìn ān qū jiē dào	10
 晉安區鄉鎮	jìn ān qū xiāng zhèn	10
 金廠溝梁鎮	jīn chǎng gōu liáng zhèn	10
+金昌永昌縣	jīn chāng yǒng chāng xiàn	10
 金城江街道	jīn chéng jiāng jiē dào	10
+晉城陵川縣	jìn chéng líng chuān xiàn	10
+晉城沁水縣	jìn chéng qìn shuǐ xiàn	10
 晉城市城區	jìn chéng shì chéng qū	10
+晉城陽城縣	jìn chéng yáng chéng xiàn	10
+晉城澤州縣	jìn chéng zé zhōu xiàn	10
 金川路街道	jīn chuān lù jiē dào	10
 金頂街街道	jīn dǐng jiē jiē dào	10
 金鶚山街道	jīn è shān jiē dào	10
@@ -74289,7 +74820,10 @@ sort: by_weight
 金湖路街道	jīn hú lù jiē dào	10
 晉華宮街道	jìn huá gōng jiē dào	10
 錦華路街道	jǐn huá lù jiē dào	10
+金華磐安縣	jīn huá pán ān xiàn	10
+金華浦江縣	jīn huá pǔ jiāng xiàn	10
 金花橋街道	jīn huā qiáo jiē dào	10
+金華武義縣	jīn huá wǔ yì xiàn	10
 金華園街道	jīn huá yuán jiē dào	10
 金雞湖街道	jīn jī hú jiē dào	10
 金雞坡街道	jīn jī pō jiē dào	10
@@ -74316,6 +74850,7 @@ sort: by_weight
 金沙湖街道	jīn shā hú jiē dào	10
 金沙路街道	jīn shā lù jiē dào	10
 金沙灘林場	jīn shā tān lín chǎng	10
+金山開發區	jīn shān kāi fā qū	10
 金山路街道	jīn shān lù jiē dào	10
 金山橋街道	jīn shān qiáo jiē dào	10
 金石灘街道	jīn shí tān jiē dào	10
@@ -74329,7 +74864,16 @@ sort: by_weight
 金魚嶺街道	jīn yú lǐng jiē dào	10
 金源藏族鄉	jīn yuán zàng zú xiāng	10
 金寨回族鄉	jīn zhài huí zú xiāng	10
+晉中和順縣	jìn zhōng hé shùn xiàn	10
+晉中開發區	jìn zhōng kāi fā qū	10
+晉中靈石縣	jìn zhōng líng shí xiàn	10
+晉中平遙縣	jìn zhōng píng yáo xiàn	10
 晉中市祁縣	jìn zhōng shì qí xiàn	10
+晉中壽陽縣	jìn zhōng shòu yáng xiàn	10
+晉中昔陽縣	jìn zhōng xī yáng xiàn	10
+晉中榆社縣	jìn zhōng yú shè xiàn	10
+晉中左權縣	jìn zhōng zuǒ quán xiàn	10
+錦州黑山縣	jǐn zhōu hēi shān xiàn	10
 錦州市義縣	jǐn zhōu shì yì xiàn	10
 金珠工業區	jīn zhū gōng yè qū	10
 金竹畲族鄉	jīn zhú shē zú xiāng	10
@@ -74350,6 +74894,7 @@ sort: by_weight
 荊河工業園	jīng hé gōng yè yuán	10
 經濟發達鎮	jīng jì fā dá zhèn	10
 經濟開發區	jīng jì kāi fā qū	10
+荊門沙洋縣	jīng mén shā yáng xiàn	10
 京泰路街道	jīng tài lù jiē dào	10
 敬亭山街道	jìng tíng shān jiē dào	10
 荊頭山農場	jīng tóu shān nóng chǎng	10
@@ -74358,13 +74903,24 @@ sort: by_weight
 京星農牧場	jīng xīng nóng mù chǎng	10
 井葉特西鄉	jǐng yè tè xī xiāng	10
 靖遠路街道	jìng yuǎn lù jiē dào	10
+淨月開發區	jìng yuè kāi fā qū	10
+荊州公安縣	jīng zhōu gōng ān xiàn	10
+荊州江陵縣	jīng zhōu jiāng líng xiàn	10
+荊州開發區	jīng zhōu kāi fā qū	10
 荊竹瑤族鄉	jīng zhú yáo zú xiāng	10
 舊堡羌族鄉	jiù bǎo qiāng zú xiāng	10
 韭菜園街道	jiǔ cài yuán jiē dào	10
 舊城區街道	jiù chéng qū jiē dào	10
 九宮廟街道	jiǔ gōng miào jiē dào	10
 九河白族鄉	jiǔ hé bái zú xiāng	10
+九江德安縣	jiǔ jiāng dé ān xiàn	10
+九江都昌縣	jiǔ jiāng dū chāng xiàn	10
 九江共青城	jiǔ jiāng gòng qīng chéng	10
+九江湖口縣	jiǔ jiāng hú kǒu xiàn	10
+九江彭澤縣	jiǔ jiāng péng zé xiàn	10
+九江武寧縣	jiǔ jiāng wǔ níng xiàn	10
+九江修水縣	jiǔ jiāng xiū shuǐ xiàn	10
+九江永修縣	jiǔ jiāng yǒng xiū xiàn	10
 九棵樹街道	jiǔ kē shù jiē dào	10
 九里堤街道	jiǔ lǐ dī jiē dào	10
 九里山街道	jiǔ lǐ shān jiē dào	10
@@ -74377,10 +74933,13 @@ sort: by_weight
 九門回族鄉	jiǔ mén huí zú xiāng	10
 舊門滿族鄉	jiù mén mǎn zú xiāng	10
 酒泉阿克塞	jiǔ quán ā kè sāi	10
+酒泉瓜州縣	jiǔ quán guā zhōu xiàn	10
+酒泉金塔縣	jiǔ quán jīn tǎ xiàn	10
 酒泉路街道	jiǔ quán lù jiē dào	10
 九水路街道	jiǔ shuǐ lù jiē dào	10
 舊屯滿族鄉	jiù tún mǎn zú xiāng	10
 酒仙橋街道	jiǔ xiān qiáo jiē dào	10
+九鄉風景區	jiǔ xiāng fēng jǐng qū	10
 九原街街道	jiǔ yuán jiē jiē dào	10
 九州路街道	jiǔ zhōu lù jiē dào	10
 泃陽西街道	jū yáng xī jiē dào	10
@@ -74417,8 +74976,11 @@ sort: by_weight
 喀夏加爾鎮	kā xià jiā ěr zhèn	10
 喀贊其街道	kā zàn qí jiē dào	10
 開發區街道	kāi fā qū jiē dào	10
+開封蘭考縣	kāi fēng lán kǎo xiàn	10
 開封市杞縣	kāi fēng shì qǐ xiàn	10
 開封市鄉鎮	kāi fēng shì xiāng zhèn	10
+開封通許縣	kāi fēng tōng xǔ xiàn	10
+開封尉氏縣	kāi fēng wèi shì xiàn	10
 開封禹王臺	kāi fēng yǔ wáng tái	10
 開平路街道	kāi píng lù jiē dào	10
 凱旋路街道	kǎi xuán lù jiē dào	10
@@ -74469,8 +75031,11 @@ sort: by_weight
 昆工路街道	kūn gōng lù jiē dào	10
 崑崙路街道	kūn lún lù jiē dào	10
 崑崙橋街道	kūn lún qiáo jiē dào	10
+昆明富民縣	kūn míng fù mín xiàn	10
 昆明湖街道	kūn míng hú jiē dào	10
 昆明市街道	kūn míng shì jiē dào	10
+昆明嵩明縣	kūn míng sōng míng xiàn	10
+昆明宜良縣	kūn míng yí liáng xiàn	10
 崑山開發區	kūn shān kāi fā qū	10
 昆吾路街道	kūn wú lù jiē dào	10
 闊達藏族鄉	kuò dá zàng zú xiāng	10
@@ -74478,9 +75043,16 @@ sort: by_weight
 闊斯特克鎮	kuò sī tè kè zhèn	10
 拉古滿族鄉	lā gǔ mǎn zú xiāng	10
 拉林滿族鎮	lā lín mǎn zú zhèn	10
+拉薩當雄縣	lā sà dāng xióng xiàn	10
+拉薩林周縣	lā sà lín zhōu xiàn	10
+拉薩尼木縣	lā sà ní mù xiàn	10
+拉薩曲水縣	lā sà qǔ shuǐ xiàn	10
 拉僧仲街道	lā sēng zhòng jiē dào	10
 拉烏彝族鄉	lā wū yí zú xiāng	10
 來賓市鄉鎮	lái bīn shì xiāng zhèn	10
+來賓武宣縣	lái bīn wǔ xuān xiàn	10
+來賓象州縣	lái bīn xiàng zhōu xiàn	10
+來賓忻城縣	lái bīn xīn chéng xiàn	10
 來廣營地區	lái guǎng yíng dì qū	10
 來華投資區	lái huá tóu zī qū	10
 來龍門街道	lái lóng mén jiē dào	10
@@ -74493,7 +75065,17 @@ sort: by_weight
 藍田瑤族鄉	lán tián yáo zú xiāng	10
 蘭田瑤族鄉	lán tián yáo zú xiāng	10
 蘭溪瑤族鄉	lán xī yáo zú xiāng	10
+蘭州皋蘭縣	lán zhōu gāo lán xiàn	10
+蘭州開發區	lán zhōu kāi fā qū	10
 蘭州七里河	lán zhōu qī lǐ hé	10
+蘭州永登縣	lán zhōu yǒng dēng xiàn	10
+蘭州榆中縣	lán zhōu yú zhōng xiàn	10
+廊坊大城縣	láng fāng dài chéng xiàn	30
+廊坊固安縣	láng fāng gù ān xiàn	10
+廊坊開發區	láng fāng kāi fā qū	10
+廊坊文安縣	láng fāng wén ān xiàn	10
+廊坊香河縣	láng fāng xiāng hé xiàn	10
+廊坊永清縣	láng fāng yǒng qīng xiàn	10
 狼山鎮街道	láng shān zhèn jiē dào	10
 老城路街道	lǎo chéng lù jiē dào	10
 老大杖子鄉	lǎo dà zhàng zi xiāng	10
@@ -74514,7 +75096,11 @@ sort: by_weight
 樂白道街道	lè bái dào jiē dào	10
 樂群滿族鄉	lè qún mǎn zú xiāng	10
 樂山峨眉山	lè shān é méi shān	10
+樂山夾江縣	lè shān jiā jiāng xiàn	10
 樂山金口河	lè shān jīn kǒu hé	10
+樂山井研縣	lè shān jǐng yán xiàn	10
+樂山沐川縣	lè shān mù chuān xiàn	10
+樂山犍為縣	lè shān qián wéi xiàn	10
 樂山市鄉鎮	lè shān shì xiāng zhèn	10
 樂山五通橋	lè shān wǔ tōng qiáo	10
 樂園良種場	lè yuán liáng zhǒng chǎng	10
@@ -74528,16 +75114,26 @@ sort: by_weight
 李海務街道	lǐ hǎi wù jiē dào	10
 裏湖瑤族鄉	lǐ hú yáo zú xiāng	10
 李家沱街道	lǐ jiā tuó jiē dào	10
+麗江華坪縣	lì jiāng huá píng xiàn	10
+麗江永勝縣	lì jiāng yǒng shèng xiàn	10
+麗江玉龍縣	lì jiāng yù lóng xiàn	10
 李進士堂鎮	lǐ jìn shì táng zhèn	10
 麗景街街道	lì jǐng jiē jiē dào	10
 歷經鋪街道	lì jīng pù jiē dào	10
+利民開發區	lì mín kāi fā qū	10
 利民路街道	lì mín lù jiē dào	10
 李七莊街道	lǐ qī zhuāng jiē dào	10
 李橋回族鎮	lǐ qiáo huí zú zhèn	10
 禮讓街街道	lǐ ràng jiē jiē dào	10
 利沙科瓦鎮	lì shā kē wǎ zhèn	10
 里山彝族鄉	lǐ shān yí zú xiāng	10
+麗水縉雲縣	lí shuǐ jìn yún xiàn	10
 溧水開發區	lì shuǐ kāi fā qū	10
+麗水青田縣	lí shuǐ qīng tián xiàn	10
+麗水慶元縣	lí shuǐ qìng yuán xiàn	10
+麗水松陽縣	lí shuǐ sōng yáng xiàn	10
+麗水遂昌縣	lí shuǐ suì chāng xiàn	10
+麗水雲和縣	lí shuǐ yún hé xiàn	10
 犁頭瑤族鄉	lí tóu yáo zú xiāng	10
 麗新畲族鄉	lì xīn shē zú xiāng	10
 黎陽路街道	lí yáng lù jiē dào	10
@@ -74574,25 +75170,60 @@ sort: by_weight
 良種繁育場	liáng zhǒng fán yù chǎng	10
 良種繁殖場	liáng zhǒng fán zhí chǎng	10
 聊城東昌府	liáo chéng dōng chāng fǔ	10
+聊城東阿縣	liáo chéng dōng ē xiàn	10
+聊城高唐縣	liáo chéng gāo táng xiàn	10
+聊城開發區	liáo chéng kāi fā qū	10
 聊城市冠縣	liáo chéng shì guān xiàn	10
 聊城市街道	liáo chéng shì jiē dào	10
 聊城市莘縣	liáo chéng shì shēn xiàn	10
+聊城陽谷縣	liáo chéng yáng gǔ xiàn	10
 廖家坪街道	liào jiā píng jiē dào	10
+遼寧鞍山市	liáo níng ān shān shì	10
+遼寧本溪市	liáo níng běn xī shì	10
+遼寧朝陽市	liáo níng cháo yáng shì	10
+遼寧大連市	liáo níng dà lián shì	10
+遼寧丹東市	liáo níng dān dōng shì	10
+遼寧撫順市	liáo níng fǔ shùn shì	10
+遼寧阜新市	liáo níng fù xīn shì	10
 遼寧葫蘆島	liáo níng hú lu dǎo	10
+遼寧錦州市	liáo níng jǐn zhōu shì	10
+遼寧開發區	liáo níng kāi fā qū	10
+遼寧遼陽市	liáo níng liáo yáng shì	10
 遼寧路街道	liáo níng lù jiē dào	10
+遼寧盤錦市	liáo níng pán jǐn shì	10
+遼寧瀋陽市	liáo níng shěn yáng shì	10
+遼寧鐵嶺市	liáo níng tiě lǐng shì	10
+遼寧營口市	liáo níng yíng kǒu shì	10
 遼陽弓長嶺	liáo yáng gōng cháng lǐng	10
+遼陽遼陽縣	liáo yáng liáo yáng xiàn	10
 遼陽太子河	liáo yáng tài zǐ hé	10
+遼源東豐縣	liáo yuán dōng fēng xiàn	10
+遼源東遼縣	liáo yuán dōng liáo xiàn	10
 遼源路街道	liáo yuán lù jiē dào	10
 臨北回族鄉	lín běi huí zú xiāng	10
+臨滄鳳慶縣	lín cāng fèng qìng xiàn	10
 臨滄市雲縣	lín cāng shì yún xiàn	10
+臨滄永德縣	lín cāng yǒng dé xiàn	10
+臨滄鎮康縣	lín cāng zhèn kāng xiàn	10
 林東產業園	lín dōng chǎn yè yuán	10
 林墩工業區	lín dūn gōng yè qū	10
+臨汾安澤縣	lín fén ān zé xiàn	10
+臨汾大寧縣	lín fén dà níng xiàn	10
+臨汾汾西縣	lín fén fén xī xiàn	10
+臨汾浮山縣	lín fén fú shān xiàn	10
+臨汾洪洞縣	lín fén hóng tóng xiàn	10
 臨汾路街道	lín fén lù jiē dào	10
+臨汾曲沃縣	lín fén qū wò xiàn	10
 臨汾市古縣	lín fén shì gǔ xiàn	10
 臨汾市吉縣	lín fén shì jí xiàn	10
 臨汾市蒲縣	lín fén shì pú xiàn	10
 臨汾市隰縣	lín fén shì xí xiàn	10
+臨汾襄汾縣	lín fén xiāng fén xiàn	10
+臨汾鄉寧縣	lín fén xiāng níng xiàn	10
+臨汾翼城縣	lín fén yì chéng xiàn	10
+臨汾永和縣	lín fén yǒng hé xiàn	10
 林豐滿族鄉	lín fēng mǎn zú xiāng	10
+臨港開發區	lín gǎng kāi fā qū	10
 臨海童街道	lín hǎi tóng jiē dào	10
 臨河裡街道	lín hé lǐ jiē dào	10
 林家崖街道	lín jiā yá jiē dào	10
@@ -74605,9 +75236,20 @@ sort: by_weight
 臨夏積石山	lín xià jī shí shān	10
 臨夏路街道	lín xià lù jiē dào	10
 林校路街道	lín xiào lù jiē dào	10
+臨沂莒南縣	lín yí jǔ nán xiàn	10
+臨沂蘭陵縣	lín yí lán líng xiàn	10
+臨沂臨沭縣	lín yí lín shù xiàn	10
+臨沂蒙陰縣	lín yí méng yīn xiàn	10
+臨沂平邑縣	lín yí píng yì xiàn	10
 臨沂市費縣	lín yí shì fèi xiàn	10
 臨沂市街道	lín yí shì jiē dào	10
+臨沂郯城縣	lín yí tán chéng xiàn	10
+臨沂沂南縣	lín yí yí nán xiàn	10
+臨沂沂水縣	lín yí yí shuǐ xiàn	10
 林蔭路街道	lín yīn lù jiē dào	10
+林芝波密縣	lín zhī bō mì xiàn	10
+林芝察隅縣	lín zhī chá yú xiàn	10
+林芝墨脫縣	lín zhī mò tuō xiàn	10
 林芝市朗縣	lín zhī shì lǎng xiàn	10
 鈴鐺閣街道	líng dang gé jiē dào	10
 凌家湖農場	líng jiā hú nóng chǎng	10
@@ -74659,12 +75301,17 @@ sort: by_weight
 柳溪苗族鄉	liǔ xī miáo zú xiāng	10
 瀏陽河街道	liú yáng hé jiē dào	10
 柳葉湖街道	liǔ yè hú jiē dào	10
+柳州柳城縣	liǔ zhōu liǔ chéng xiàn	10
+柳州鹿寨縣	liǔ zhōu lù zhài xiàn	10
+柳州融安縣	liǔ zhōu róng ān xiàn	10
 龍安開發區	lóng ān kāi fā qū	10
 龍池橋街道	lóng chí qiáo jiē dào	10
 龍洞堡街道	lóng dòng bǎo jiē dào	10
 龍飛山街道	lóng fēi shān jiē dào	10
 龍鳳橋街道	lóng fèng qiáo jiē dào	10
+龍崗開發區	lóng gǎng kāi fā qū	10
 龍岡畲族鄉	lóng gāng shē zú xiāng	10
+龍宮風景區	lóng gōng fēng jǐng qū	10
 龍廣路街道	lóng guǎng lù jiē dào	10
 龍光橋街道	lóng guāng qiáo jiē dào	10
 龍虎塘街道	lóng hǔ táng jiē dào	10
@@ -74674,11 +75321,14 @@ sort: by_weight
 龍津洲街道	lóng jīn zhōu jiē dào	10
 龍駒寨街道	lóng jū zhài jiē dào	10
 龍門浩街道	lóng mén hào jiē dào	10
+隴南兩當縣	lǒng nán liǎng dāng xiàn	10
 隴南市成縣	lǒng nán shì chéng xiàn	10
 隴南市徽縣	lǒng nán shì huī xiàn	10
 隴南市康縣	lǒng nán shì kāng xiàn	10
 隴南市禮縣	lǒng nán shì lǐ xiàn	10
 隴南市文縣	lǒng nán shì wén xiàn	10
+隴南宕昌縣	lǒng nán tàn chāng xiàn	10
+隴南西和縣	lǒng nán xī hé xiàn	10
 龍山路街道	lóng shān lù jiē dào	10
 龍盛街街道	lóng shèng jiē jiē dào	10
 龍灘子街道	lóng tān zi jiē dào	10
@@ -74686,16 +75336,26 @@ sort: by_weight
 龍王塘街道	lóng wáng táng jiē dào	10
 龍旺莊街道	lóng wàng zhuāng jiē dào	10
 龍鬚塘街道	lóng xū táng jiē dào	10
+龍岩長汀縣	lóng yán cháng tīng xiàn	10
+龍巖連城縣	lóng yán lián chéng xiàn	10
+龍巖上杭縣	lóng yán shàng háng xiàn	10
 龍岩市街道	lóng yán shì jiē dào	10
 龍岩市鄉鎮	lóng yán shì xiāng zhèn	10
+龍岩武平縣	lóng yán wǔ píng xiàn	10
 龍源路街道	lóng yuán lù jiē dào	10
 龍澤園街道	lóng zé yuán jiē dào	10
 龍舟路街道	lóng zhōu lù jiē dào	10
 龍洲灣街道	lóng zhōu wān jiē dào	10
 龍子湖街道	lóng zǐ hú jiē dào	10
 婁底冷水江	lóu dǐ lěng shuǐ jiāng	10
+婁底雙峰縣	lóu dǐ shuāng fēng xiàn	10
+婁底新化縣	lóu dǐ xīn huà xiàn	10
 婁山關街道	lóu shān guān jiē dào	10
+六安霍邱縣	lù ān huò qiū xiàn	10
+六安霍山縣	lù ān huò shān xiàn	10
+六安金寨縣	lù ān jīn zhài xiàn	10
 六安市街道	lù ān shì jiē dào	10
+六安舒城縣	lù ān shū chéng xiàn	10
 蘆潮港農場	lú cháo gǎng nóng chǎng	10
 潞城瑤族鄉	lù chéng yáo zú xiāng	10
 廬豐畲族鄉	lú fēng shē zú xiāng	10
@@ -74707,11 +75367,15 @@ sort: by_weight
 魯山道街道	lǔ shān dào jiē dào	10
 廬山林科所	lú shān lín kē suǒ	10
 陸水湖街道	lù shuǐ hú jiē dào	10
+蘆臺開發區	lú tái kāi fā qū	10
 露天礦街道	lù tiān kuàng jiē dào	10
 廬陽工業區	lú yáng gōng yè qū	10
 爐院街街道	lú yuàn jiē jiē dào	10
+瀘州古藺縣	lú zhōu gǔ lìn xiàn	10
+瀘州合江縣	lú zhōu hé jiāng xiàn	10
 瀘州龍馬潭	lú zhōu lóng mǎ tán	10
 瀘州市瀘縣	lú zhōu shì lú xiàn	10
+瀘州敘永縣	lú zhōu xù yǒng xiàn	10
 灤城路街道	luán chéng lù jiē dào	10
 欒家坪街道	luán jiā píng jiē dào	10
 羅城頭街道	luó chéng tóu jiē dào	10
@@ -74719,6 +75383,8 @@ sort: by_weight
 洛俄依甘鄉	luò é yī gān xiāng	10
 鑼鼓塔街道	luó gǔ tǎ jiē dào	10
 羅漢寺街道	luó hàn sì jiē dào	10
+漯河臨潁縣	luò hé lín yǐng xiàn	51
+漯河舞陽縣	luò hé wǔ yáng xiàn	35
 洛河彝族鄉	luò hé yí zú xiāng	10
 羅家橋街道	luó jiā qiáo jiē dào	10
 珞珈山街道	luò jiā shān jiē dào	10
@@ -74730,14 +75396,29 @@ sort: by_weight
 洛旺苗族鄉	luò wàng miáo zú xiāng	10
 羅溪瑤族鄉	luó xī yáo zú xiāng	10
 洛陽路街道	luò yáng lù jiē dào	10
+洛陽欒川縣	luò yáng luán chuān xiàn	10
+洛陽洛寧縣	luò yáng luò níng xiàn	10
+洛陽汝陽縣	luò yáng rǔ yáng xiàn	10
 洛陽市嵩縣	luò yáng shì sōng xiàn	10
+洛陽新安縣	luò yáng xīn ān xiàn	10
+洛陽伊川縣	luò yáng yī chuān xiàn	10
+洛陽宜陽縣	luò yáng yí yáng xiàn	10
 綠東村街道	lǜ dōng cūn jiē dào	10
+呂梁方山縣	lǚ liáng fāng shān xiàn	10
+呂梁交城縣	lǚ liáng jiāo chéng xiàn	10
+呂梁交口縣	lǚ liáng jiāo kǒu xiàn	10
+呂梁柳林縣	lǚ liáng liǔ lín xiàn	10
 呂梁市嵐縣	lǚ liáng shì lán xiàn	10
 呂梁市臨縣	lǚ liáng shì lín xiàn	10
+呂梁石樓縣	lǚ liáng shí lóu xiàn	10
 呂梁市興縣	lǚ liáng shì xīng xiàn	10
+呂梁文水縣	lǚ liáng wén shuǐ xiàn	10
+呂梁中陽縣	lǚ liáng zhōng yáng xiàn	10
+旅順開發區	lǚ shùn kāi fā qū	10
 呂仙亭街道	lǚ xiān tíng jiē dào	10
 綠茵湖街道	lǜ yīn hú jiē dào	10
 旅遊度假區	lǚ yóu dù jià qū	10
+旅遊開發區	lǚ yóu kāi fā qū	10
 綠洲路街道	lǜ zhōu lù jiē dào	10
 馬鞍山博望	mǎ ān shān bó wàng	10
 馬鞍山當塗	mǎ ān shān dāng tú	10
@@ -74796,6 +75477,7 @@ sort: by_weight
 茅家嶺街道	máo jiā lǐng jiē dào	10
 帽盔山街道	mào kuī shān jiē dào	10
 茂名市鄉鎮	mào míng shì xiāng zhèn	10
+茂南開發區	mào nán kāi fā qū	10
 茅坪回族鎮	máo píng huí zú zhèn	10
 茅山風景區	máo shān fēng jǐng qū	10
 美巴切勤鄉	měi bā qiè qín xiāng	10
@@ -74803,9 +75485,19 @@ sort: by_weight
 梅家埠街道	méi jiā bù jiē dào	10
 美里湖街道	měi lǐ hú jiē dào	10
 梅里斯街道	méi lǐ sī jiē dào	10
+眉山丹稜縣	méi shān dān líng xiàn	10
+眉山洪雅縣	méi shān hóng yǎ xiàn	10
+眉山青神縣	méi shān qīng shén xiàn	10
+眉山仁壽縣	méi shān rén shòu xiàn	10
 梅溪湖街道	méi xī hú jiē dào	10
 每一條街道	měi yì tiáo jiē dào	10
 梅園莊街道	méi yuán zhuāng jiē dào	10
+梅州大埔縣	méi zhōu dà bù xiàn	10
+梅州豐順縣	méi zhōu fēng shùn xiàn	10
+梅州蕉嶺縣	méi zhōu jiāo lǐng xiàn	10
+梅州梅縣區	méi zhōu méi xiàn qū	10
+梅州平遠縣	méi zhōu píng yuǎn xiàn	10
+梅州五華縣	méi zhōu wǔ huá xiàn	10
 梅莊窪農場	méi zhuāng wā nóng chǎng	10
 門源種馬場	mén yuán zhǒng mǎ chǎng	10
 猛硐瑤族鄉	měng dòng yáo zú xiāng	10
@@ -74818,6 +75510,11 @@ sort: by_weight
 免渡河農場	miǎn dù hé nóng chǎng	10
 棉紡路街道	mián fǎng lù jiē dào	10
 棉花原種場	mián huā yuán zhǒng chǎng	10
+綿陽平武縣	mián yáng píng wǔ xiàn	10
+綿陽三台縣	mián yáng sān tái xiàn	10
+綿陽鹽亭縣	mián yáng yán tíng xiàn	10
+綿陽梓潼縣	mián yáng zǐ tóng xiàn	10
+閔行開發區	mǐn háng kāi fā qū	10
 民航路街道	mín háng lù jiē dào	10
 民建彝族鄉	mín jiàn yí zú xiāng	10
 民權街街道	mín quán jiē jiē dào	10
@@ -74830,6 +75527,7 @@ sort: by_weight
 明德滿族鄉	míng dé mǎn zú xiāng	10
 銘功路街道	míng gōng lù jiē dào	10
 明光路街道	míng guāng lù jiē dào	10
+名勝風景區	míng shèng fēng jǐng qū	10
 明水滿族鄉	míng shuǐ mǎn zú xiāng	10
 明水種畜場	míng shuǐ zhǒng chù chǎng	10
 明月江街道	míng yuè jiāng jiē dào	10
@@ -74839,6 +75537,7 @@ sort: by_weight
 莫爾道嘎鎮	mò ěr dào gā zhèn	10
 墨爾多山鎮	mò ěr duō shān zhèn	10
 莫力廟蘇木	mò lì miào sū mù	10
+磨山風景區	mó shān fēng jǐng qū	10
 陌生的街道	mò shēng de jiē dào	10
 莫斯臺街道	mò sī tái jiē dào	10
 墨竹工卡縣	mò zhú gōng kǎ xiàn	10
@@ -74865,7 +75564,16 @@ sort: by_weight
 木座藏族鄉	mù zuò zàng zú xiāng	10
 納林陶亥鎮	nà lín táo hài zhèn	10
 那龍礦務局	nà lóng kuàng wù jú	10
+那曲安多縣	nà qū ān duō xiàn	10
+那曲巴青縣	nà qū bā qīng xiàn	10
+那曲班戈縣	nà qū bān gē xiàn	10
+那曲比如縣	nà qū bǐ rú xiàn	10
+那曲嘉黎縣	nà qū jiā lí xiàn	10
+那曲尼瑪縣	nà qū ní mǎ xiàn	10
+那曲聶榮縣	nà qū niè róng xiàn	10
+那曲申扎縣	nà qū shēn zhā xiàn	10
 那曲市索縣	nà qū shì suǒ xiàn	10
+那曲雙湖縣	nà qū shuāng hú xiàn	10
 那日圖蘇木	nà rì tú sū mù	10
 納西民族鄉	nà xī mín zú xiāng	10
 那佐苗族鄉	nà zuǒ miáo zú xiāng	10
@@ -74875,14 +75583,22 @@ sort: by_weight
 南八家子鄉	nán bā jiā zǐ xiāng	10
 南白象街道	nán bái xiàng jiē dào	10
 南草灘街道	nán cǎo tān jiē dào	10
+南昌安義縣	nán chāng ān yì xiàn	10
 南昌航空城	nán chāng háng kōng chéng	10
 南昌紅谷灘	nán chāng hóng gǔ tān	10
 南長街街道	nán cháng jiē jiē dào	10
+南昌進賢縣	nán chāng jìn xián xiàn	10
 南昌路街道	nán chāng lù jiē dào	10
+南昌南昌縣	nán chāng nán chāng xiàn	10
 南昌青山湖	nán chāng qīng shān hú	10
 南昌青雲譜	nán chāng qīng yún pǔ	10
 南長山街道	nán cháng shān jiē dào	10
 南城區街道	nán chéng qū jiē dào	10
+南充南部縣	nán chōng nán bù xiàn	10
+南充蓬安縣	nán chōng péng ān xiàn	10
+南充西充縣	nán chōng xī chōng xiàn	10
+南充儀隴縣	nán chōng yí lǒng xiàn	10
+南充營山縣	nán chōng yíng shān xiàn	10
 南川工業園	nán chuān gōng yè yuán	10
 南大街街道	nán dà jiē jiē dào	10
 南大科學園	nán dà kē xué yuán	10
@@ -74909,20 +75625,40 @@ sort: by_weight
 南門外街道	nán mén wài jiē dào	10
 南明山街道	nán míng shān jiē dào	10
 南磨房地區	nán mó fáng dì qū	10
+南寧賓陽縣	nán níng bīn yáng xiàn	10
+南寧隆安縣	nán níng lóng ān xiàn	10
+南寧馬山縣	nán níng mǎ shān xiàn	10
+南寧上林縣	nán níng shàng lín xiàn	10
 南寧西鄉塘	nán níng xī xiāng táng	10
+南平光澤縣	nán píng guāng zé xiàn	10
 南屏科技園	nán píng kē jì yuán	10
+南平浦城縣	nán píng pǔ chéng xiàn	10
+南平順昌縣	nán píng shùn chāng xiàn	10
+南平松溪縣	nán píng sōng xī xiàn	10
 南平武夷山	nán píng wǔ yí shān	10
 南屏瑤族鄉	nán píng yáo zú xiāng	10
+南平政和縣	nán píng zhèng hé xiàn	10
 南山路街道	nán shān lù jiē dào	10
 南市場街道	nán shì chǎng jiē dào	10
 南石頭街道	nán shí tou jiē dào	10
+南通如東縣	nán tōng rú dōng xiàn	10
 南灣街片區	nán wān jiē piàn qū	10
 南緯路街道	nán wěi lù jiē dào	10
 南崴子街道	nán wēi zǐ jiē dào	10
 南新街街道	nán xīn jiē jiē dào	10
 南辛莊街道	nán xīn zhuāng jiē dào	10
+南陽方城縣	nán yáng fāng chéng xiàn	10
 南陽湖街道	nán yáng hú jiē dào	10
 南陽路街道	nán yáng lù jiē dào	10
+南陽南召縣	nán yáng nán zhào xiàn	10
+南陽內鄉縣	nán yáng nèi xiāng xiàn	10
+南陽社旗縣	nán yáng shè qí xiàn	10
+南陽唐河縣	nán yáng táng hé xiàn	10
+南陽桐柏縣	nán yáng tóng bǎi xiàn	10
+南陽淅川縣	nán yáng xī chuān xiàn	10
+南陽西峽縣	nán yáng xī xiá xiàn	10
+南陽新野縣	nán yáng xīn yě xiàn	10
+南陽鎮平縣	nán yáng zhèn píng xiàn	10
 南營坊街道	nán yíng fāng jiē dào	10
 南營門街道	nán yíng mén jiē dào	10
 南垸良種場	nán yuàn liáng zhǒng chǎng	10
@@ -74931,6 +75667,8 @@ sort: by_weight
 南直路街道	nán zhí lù jiē dào	10
 南莊坪街道	nán zhuāng píng jiē dào	10
 腦木更蘇木	nǎo mù gèng sū mù	10
+內江威遠縣	nèi jiāng wēi yuǎn xiàn	10
+內江資中縣	nèi jiāng zī zhōng xiàn	10
 內蒙古包頭	nèi méng gǔ bāo tóu	10
 內蒙古赤峰	nèi méng gǔ chì fēng	10
 內蒙古街道	nèi méng gǔ jiē dào	10
@@ -74949,9 +75687,17 @@ sort: by_weight
 娘娘宮街道	niáng niáng gōng jiē dào	10
 聶家滿族鄉	niè jiā mǎn zú xiāng	10
 寧邊路街道	níng biān lù jiē dào	10
+寧波寧海縣	níng bō níng hǎi xiàn	10
 寧波市城鎮	níng bō shì chéng zhèn	10
 寧波市街道	níng bō shì jiē dào	10
+寧波象山縣	níng bō xiàng shān xiàn	10
+寧德古田縣	níng dé gǔ tián xiàn	10
+寧德屏南縣	níng dé píng nán xiàn	10
 寧德市鄉鎮	níng dé shì xiāng zhèn	10
+寧德壽寧縣	níng dé shòu níng xiàn	10
+寧德霞浦縣	níng dé xiá pǔ xiàn	10
+寧德柘榮縣	níng dé zhè róng xiàn	10
+寧德周寧縣	níng dé zhōu níng xiàn	10
 寧海路街道	níng hǎi lù jiē dào	10
 寧華路街道	níng huá lù jiē dào	10
 寧家埠街道	níng jiā bù jiē dào	10
@@ -74969,6 +75715,7 @@ sort: by_weight
 農林路街道	nóng lín lù jiē dào	10
 弄弄坪街道	nòng nòng píng jiē dào	10
 農業高新園	nóng yè gāo xīn yuán	10
+農業開發區	nóng yè kāi fā qū	10
 努爾巴格鄉	nǔ ěr bā gé xiāng	10
 努古斯臺鎮	nǔ gǔ sī tái zhèn	10
 努文木仁鄉	nǔ wén mù rén xiāng	10
@@ -74980,6 +75727,7 @@ sort: by_weight
 潘安湖街道	pān ān hú jiē dào	10
 潘家溝街道	pān jiā gōu jiē dào	10
 潘家園街道	pān jiā yuán jiē dào	10
+盤錦盤山縣	pán jǐn pán shān xiàn	10
 盤錦雙臺子	pán jǐn shuāng tái zi	10
 盤錦興隆臺	pán jǐn xīng lóng tái	10
 盤龍彝族鄉	pán lóng yí zú xiāng	10
@@ -75019,13 +75767,21 @@ sort: by_weight
 蘋果園街道	píng guǒ yuán jiē dào	10
 平江路街道	píng jiāng lù jiē dào	10
 平樂瑤族鄉	píng lè yáo zú xiāng	10
+平涼崇信縣	píng liáng chóng xìn xiàn	10
+平涼涇川縣	píng liáng jīng chuān xiàn	10
+平涼靜寧縣	píng liáng jìng níng xiàn	10
+平涼靈臺縣	píng liáng líng tái xiàn	10
 平涼路街道	píng liáng lù jiē dào	10
+平涼莊浪縣	píng liáng zhuāng làng xiàn	10
 平陸縣社區	píng lù xiàn shè qū	10
 平泉路街道	píng quán lù jiē dào	10
 平盛路街道	píng shèng lù jiē dào	10
 平潭街街道	píng tán jiē jiē dào	10
 平通羌族鄉	píng tōng qiāng zú xiāng	10
+萍鄉蓮花縣	píng xiāng lián huā xiàn	10
+萍鄉蘆溪縣	píng xiāng lú xī xiàn	10
 屏襄門街道	píng xiāng mén jiē dào	10
+萍鄉上栗縣	píng xiāng shàng lì xiàn	10
 坪埡藏族鄉	píng yā zàng zú xiāng	10
 平陽路街道	píng yáng lù jiē dào	10
 坪寨彝族鄉	píng zhài yí zú xiāng	10
@@ -75039,10 +75795,15 @@ sort: by_weight
 普恰克其鎮	pǔ qià kè qí zhèn	10
 葡萄溝街道	pú táo gōu jiē dào	10
 普田回族鄉	pǔ tián huí zú xiāng	10
+莆田仙遊縣	pú tián xiān yóu xiàn	10
 普陀路街道	pǔ tuó lù jiē dào	10
 蒲鞋市街道	pú xié shì jiē dào	10
 浦興路街道	pǔ xīng lù jiē dào	10
+濮陽南樂縣	pú yáng nán lè xiàn	10
+濮陽濮陽縣	pú yáng pú yáng xiàn	10
+濮陽清豐縣	pú yáng qīng fēng xiàn	10
 濮陽市範縣	pú yáng shì fàn xiàn	10
+濮陽台前縣	pú yáng tái qián xiàn	10
 七百間街道	qī bǎi jiān jiē dào	10
 汽車工業園	qì chē gōng yè yuán	10
 汽車路街道	qì chē lù jiē dào	10
@@ -75116,6 +75877,7 @@ sort: by_weight
 前福興地鎮	qián fú xīng dì zhèn	10
 前郭爾羅斯	qián guō ěr luó sī	10
 前海合作區	qián hǎi hé zuò qū	10
+前海開發區	qián hǎi kāi fā qū	10
 黔江區街道	qián jiāng qū jiē dào	10
 前進道街道	qián jìn dào jiē dào	10
 前進街街道	qián jìn jiē jiē dào	10
@@ -75146,10 +75908,13 @@ sort: by_weight
 秦皇島盧龍	qín huáng dǎo lú lóng	10
 秦皇島青龍	qín huáng dǎo qīng lóng	10
 秦嶺路街道	qín lǐng lù jiē dào	10
+欽州靈山縣	qīn zhōu líng shān xiàn	10
+欽州浦北縣	qīn zhōu pǔ běi xiàn	10
 青白石街道	qīng bái shí jiē dào	10
 慶北辦事處	qìng běi bàn shì chù	10
 青春山街道	qīng chūn shān jiē dào	10
 青達拉街道	qīng dá lā jiē dào	10
+青島開發區	qīng dǎo kāi fā qū	10
 青島市街道	qīng dǎo shì jiē dào	10
 青島市鄉鎮	qīng dǎo shì xiāng zhèn	10
 青得裏街道	qīng dé lǐ jiē dào	10
@@ -75157,6 +75922,8 @@ sort: by_weight
 青岡縣林場	qīng gāng xiàn lín chǎng	10
 青格達湖鄉	qīng gé dá hú xiāng	10
 輕工路街道	qīng gōng lù jiē dào	10
+青海海東市	qīng hǎi hǎi dōng shì	10
+青海西寧市	qīng hǎi xī níng shì	10
 清河管理區	qīng hé guǎn lǐ qū	10
 清河口街道	qīng hé kǒu jiē dào	10
 清河林業局	qīng hé lín yè jú	10
@@ -75192,18 +75959,39 @@ sort: by_weight
 清譚湖街道	qīng tán hú jiē dào	10
 清溪場街道	qīng xī chǎng jiē dào	10
 清香坪街道	qīng xiāng píng jiē dào	10
+慶陽合水縣	qìng yáng hé shuǐ xiàn	10
+慶陽華池縣	qìng yáng huá chí xiàn	10
+慶陽慶城縣	qìng yáng qìng chéng xiàn	10
 慶陽市環縣	qìng yáng shì huán xiàn	10
 慶陽市寧縣	qìng yáng shì níng xiàn	10
+慶陽鎮原縣	qìng yáng zhèn yuán xiàn	10
+慶陽正寧縣	qìng yáng zhèng níng xiàn	10
+清遠佛岡縣	qīng yuǎn fó gāng xiàn	10
 青原區河東	qīng yuán qū hé dōng	10
+清遠陽山縣	qīng yuǎn yáng shān xiàn	10
 清真巷街道	qīng zhēn xiàng jiē dào	10
 青竹湖街道	qīng zhú hú jiē dào	10
 邱皮溝街道	qiū pí gōu jiē dào	10
 秋天的街道	qiū tiān de jiē dào	10
+曲靖富源縣	qū jìng fù yuán xiàn	10
+曲靖會澤縣	qū jìng huì zé xiàn	10
+曲靖陸良縣	qū jìng lù liáng xiàn	10
+曲靖羅平縣	qū jìng luó píng xiàn	10
 曲靖市鄉鎮	qū jìng shì xiāng zhèn	10
+曲靖師宗縣	qū jìng shī zōng xiàn	10
 曲陽路街道	qū yáng lù jiē dào	10
+衢州常山縣	qú zhōu cháng shān xiàn	10
+衢州開化縣	qú zhōu kāi huà xiàn	10
+衢州龍遊縣	qú zhōu lóng yóu xiàn	10
 泉城路街道	quán chéng lù jiē dào	10
 全區各街道	quán qū gè jiē dào	10
 勸業場街道	quàn yè chǎng jiē dào	10
+泉州安溪縣	quán zhōu ān xī xiàn	10
+泉州德化縣	quán zhōu dé huà xiàn	10
+泉州惠安縣	quán zhōu huì ān xiàn	10
+泉州金門縣	quán zhōu jīn mén xiàn	10
+泉州開發區	quán zhōu kāi fā qū	10
+泉州永春縣	quán zhōu yǒng chūn xiàn	10
 雀兒山街道	què er shān jiē dào	10
 羣加藏族鄉	qún jiā zàng zú xiāng	10
 群眾路街道	qún zhòng lù jiē dào	10
@@ -75238,6 +76026,7 @@ sort: by_weight
 日月湖街道	rì yuè hú jiē dào	10
 日月藏族鄉	rì yuè zàng zú xiāng	10
 日照市莒縣	rì zhào shì jǔ xiàn	10
+日照五蓮縣	rì zhào wǔ lián xiàn	10
 榮昌區街道	róng chāng qū jiē dào	10
 榮華街街道	róng huá jiē jiē dào	10
 榮山墾殖場	róng shān kěn zhí chǎng	10
@@ -75245,6 +76034,7 @@ sort: by_weight
 如東洋口港	rú dōng yáng kǒu gǎng	10
 汝河路街道	rǔ hé lù jiē dào	10
 如意湖街道	rú yì hú jiē dào	10
+如意開發區	rú yì kāi fā qū	10
 瑞金路街道	ruì jīn lù jiē dào	10
 薩爾達坂鄉	sà ěr dá bǎn xiāng	10
 薩爾胡松鄉	sà ěr hú sōng xiāng	10
@@ -75303,6 +76093,15 @@ sort: by_weight
 三門峽陝州	sān mén xiá shǎn zhōu	10
 三門峽義馬	sān mén xiá yì mǎ	10
 三門閘街道	sān mén zhá jiē dào	10
+三明大田縣	sān míng dà tián xiàn	10
+三明建寧縣	sān míng jiàn níng xiàn	10
+三明將樂縣	sān míng jiāng lè xiàn	10
+三明明溪縣	sān míng míng xī xiàn	10
+三明寧化縣	sān míng níng huà xiàn	10
+三明清流縣	sān míng qīng liú xiàn	10
+三明沙縣區	sān míng shā xiàn qū	10
+三明泰寧縣	sān míng tài níng xiàn	10
+三明尤溪縣	sān míng yóu xī xiàn	10
 三弄瑤族鄉	sān nòng yáo zú xiāng	10
 三平路街道	sān píng lù jiē dào	10
 三橋路街道	sān qiáo lù jiē dào	10
@@ -75359,42 +76158,126 @@ sort: by_weight
 砂子塘街道	shā zi táng jiē dào	10
 山城路街道	shān chéng lù jiē dào	10
 山大路街道	shān dà lù jiē dào	10
+山東濱州市	shān dōng bīn zhōu shì	10
+山東德州市	shān dōng dé zhōu shì	10
+山東東營市	shān dōng dōng yíng shì	10
+山東菏澤市	shān dōng hé zé shì	10
+山東濟南市	shān dōng jǐ nán shì	10
+山東濟寧市	shān dōng jǐ níng shì	10
+山東開發區	shān dōng kāi fā qū	10
+山東聊城市	shān dōng liáo chéng shì	10
+山東臨沂市	shān dōng lín yí shì	10
 山東廟街道	shān dōng miào jiē dào	10
+山東青島市	shān dōng qīng dǎo shì	10
+山東日照市	shān dōng rì zhào shì	10
+山東泰安市	shān dōng tài ān shì	10
+山東濰坊市	shān dōng wéi fāng shì	10
+山東威海市	shān dōng wēi hǎi shì	10
+山東煙台市	shān dōng yān tái shì	10
+山東棗莊市	shān dōng zǎo zhuāng shì	10
+山東淄博市	shān dōng zī bó shì	10
 山貨回族鄉	shān huò huí zú xiāng	10
 山界回族鄉	shān jiè huí zú xiāng	10
+山南措美縣	shān nán cuò měi xiàn	10
+山南貢嘎縣	shān nán gòng gā xiàn	10
+山南加查縣	shān nán jiā chá xiàn	10
 山南浪卡子	shān nán làng kǎ zǐ	10
+山南隆子縣	shān nán lóng zǐ xiàn	10
+山南洛扎縣	shān nán luò zhā xiàn	10
+山南瓊結縣	shān nán qióng jié xiàn	10
+山南曲松縣	shān nán qū sōng xiàn	10
+山南桑日縣	shān nán sāng rì xiàn	10
+山南扎囊縣	shān nán zhā náng xiàn	10
 山神廟子鄉	shān shén miào zi xiāng	10
+汕頭南澳縣	shàn tóu nán ào xiàn	10
 汕頭市街道	shàn tóu shì jiē dào	10
+汕尾海豐縣	shàn wěi hǎi fēng xiàn	10
+汕尾陸河縣	shàn wěi lù hé xiàn	10
 汕尾市城區	shàn wěi shì chéng qū	10
+陝西安康市	shǎn xī ān kāng shì	10
+陝西寶雞市	shǎn xī bǎo jī shì	10
+山西長治市	shān xī cháng zhì shì	10
+山西大同市	shān xī dà tóng shì	10
 山西風陵渡	shān xī fēng líng dù	10
+陝西漢中市	shǎn xī hàn zhōng shì	10
+山西晉城市	shān xī jìn chéng shì	10
+山西晉中市	shān xī jìn zhōng shì	10
+山西臨汾市	shān xī lín fén shì	10
+山西呂梁市	shān xī lǚ liáng shì	10
+陝西商洛市	shǎn xī shāng luò shì	10
+山西朔州市	shān xī shuò zhōu shì	10
+山西太原市	shān xī tài yuán shì	10
+陝西銅川市	shǎn xī tóng chuān shì	10
+陝西渭南市	shǎn xī wèi nán shì	10
+陝西西安市	shǎn xī xī ān shì	10
+陝西咸陽市	shǎn xī xián yáng shì	10
+山西忻州市	shān xī xīn zhōu shì	10
+陝西延安市	shǎn xī yán ān shì	10
+山西陽泉市	shān xī yáng quán shì	10
+陝西榆林市	shǎn xī yú lín shì	10
+山西運城市	shān xī yùn chéng shì	10
 上阿圖什鎮	shàng ā tú shí zhèn	10
 上白作街道	shàng bái zuò jiē dào	10
 商城路街道	shāng chéng lù jiē dào	10
 商都路街道	shāng dū lù jiē dào	10
 上甘山林場	shàng gān shān lín chǎng	10
 上觀音堂鄉	shàng guān yīn táng xiāng	10
+上海崇明縣	shàng hǎi chóng míng xiàn	10
+上海開發區	shàng hǎi kāi fā qū	10
 上海路街道	shàng hǎi lù jiē dào	10
 上海梅龍鎮	shàng hǎi méi lóng zhèn	10
 上海浦東新	shàng hǎi pǔ dōng xīn	10
 上海市街道	shàng hǎi shì jiē dào	10
 上杭路街道	shàng háng lù jiē dào	10
+尚湖風景區	shàng hú fēng jǐng qū	10
 上郡路街道	shàng jùn lù jiē dào	10
 上坑源林場	shàng kēng yuán lín chǎng	10
 上庫力街道	shàng kù lì jiē dào	10
+上蓮開發區	shàng lián kāi fā qū	10
+商洛丹鳳縣	shāng luò dān fèng xiàn	10
 上羅柯馬鎮	shàng luó kē mǎ zhèn	10
+商洛洛南縣	shāng luò luò nán xiàn	10
+商洛山陽縣	shāng luò shān yáng xiàn	10
+商洛商南縣	shāng luò shāng nán xiàn	10
+商洛柞水縣	shāng luò zhà shuǐ xiàn	10
+商洛鎮安縣	shāng luò zhèn ān xiàn	10
 上清寺街道	shàng qīng sì jiē dào	10
+商丘民權縣	shāng qiū mín quán xiàn	10
+商丘寧陵縣	shāng qiū níng líng xiàn	10
 商丘市林場	shāng qiū shì lín chǎng	10
 商丘市農場	shāng qiū shì nóng chǎng	10
 商丘市睢縣	shāng qiū shì suī xiàn	10
+商丘夏邑縣	shāng qiū xià yì xiàn	10
+商丘虞城縣	shāng qiū yú chéng xiàn	10
+商丘柘城縣	shāng qiū zhè chéng xiàn	10
+上饒橫峰縣	shàng ráo héng fēng xiàn	10
+上饒鄱陽縣	shàng ráo pó yáng xiàn	10
 上饒市街道	shàng ráo shì jiē dào	10
 上饒市鄉鎮	shàng ráo shì xiāng zhèn	10
+上饒萬年縣	shàng ráo wàn nián xiàn	10
+上饒婺源縣	shàng ráo wù yuán xiàn	10
+上饒鉛山縣	shàng ráo yán shān xiàn	10
+上饒弋陽縣	shàng ráo yì yáng xiàn	10
+上饒餘干縣	shàng ráo yú gàn xiàn	10
+上饒玉山縣	shàng ráo yù shān xiàn	10
 上射雁莊鎮	shàng shè yàn zhuāng zhèn	10
 邵公莊街道	shào gōng zhuāng jiē dào	10
+韶關仁化縣	sháo guān rén huà xiàn	10
+韶關始興縣	sháo guān shǐ xīng xiàn	10
+韶關翁源縣	sháo guān wēng yuán xiàn	10
+韶關新豐縣	sháo guān xīn fēng xiàn	10
 燒鍋營子鄉	shāo guō yíng zi xiāng	10
 稍戶營子鎮	shāo hù yíng zi zhèn	10
 邵家渡街道	shào jiā dù jiē dào	10
 少先路街道	shǎo xiān lù jiē dào	10
 紹興市街道	shào xīng shì jiē dào	10
+紹興新昌縣	shào xīng xīn chāng xiàn	10
+邵陽洞口縣	shào yáng dòng kǒu xiàn	10
+邵陽隆回縣	shào yáng lóng huí xiàn	10
+邵陽邵陽縣	shào yáng shào yáng xiàn	10
+邵陽綏寧縣	shào yáng suí níng xiàn	10
+邵陽新寧縣	shào yáng xīn níng xiàn	10
+邵陽新邵縣	shào yáng xīn shào xiàn	10
 捨得彝族鄉	shě dé yí zú xiāng	10
 射洪壩街道	shè hóng bà jiē dào	10
 社會發展局	shè huì fā zhǎn jú	10
@@ -75413,10 +76296,15 @@ sort: by_weight
 深入各鄉鎮	shēn rù gè xiāng zhèn	10
 沈水灣街道	shěn shuǐ wān jiē dào	10
 神堂溝街道	shén táng gōu jiē dào	10
+瀋陽法庫縣	shěn yáng fǎ kù xiàn	10
+瀋陽開發區	shěn yáng kāi fā qū	10
+瀋陽康平縣	shěn yáng kāng píng xiàn	10
 瀋陽沈北新	shěn yáng shěn běi xīn	10
 瀋陽蘇家屯	shěn yáng sū jiā tún	10
 深圳工業園	shēn zhèn gōng yè yuán	10
+深圳開發區	shēn zhèn kāi fā qū	10
 盛和路街道	shèng hé lù jiē dào	10
+省級開發區	shěng jí kāi fā qū	10
 繩金塔街道	shéng jīn tǎ jiē dào	10
 勝利街街道	shèng lì jiē jiē dào	10
 勝利路街道	shèng lì lù jiē dào	10
@@ -75435,6 +76323,7 @@ sort: by_weight
 什剎海街道	shí chà hǎi jiē dào	10
 石達石街道	shí dá shí jiē dào	10
 石東路街道	shí dōng lù jiē dào	10
+十渡風景區	shí dù fēng jǐng qū	10
 十二道溝鎮	shí èr dào gōu zhèn	10
 十二德堡鎮	shí èr dé bǎo zhèn	10
 十二連城鄉	shí èr lián chéng xiāng	10
@@ -75485,11 +76374,13 @@ sort: by_weight
 石坪橋街道	shí píng qiáo jiē dào	10
 石橋鋪街道	shí qiáo pù jiē dào	10
 石橋子街道	shí qiáo zǐ jiē dào	10
+市區開發區	shì qū kāi fā qū	10
 石泉路街道	shí quán lù jiē dào	10
 十三敖包鎮	shí sān áo bāo zhèn	10
 十三里橋鄉	shí sān lǐ qiáo xiāng	10
 石山腳街道	shí shān jiǎo jiē dào	10
 石獅埠街道	shí shī bù jiē dào	10
+市屬開發區	shì shǔ kāi fā qū	10
 十四道溝鎮	shí sì dào gōu zhèn	10
 石炭井街道	shí tàn jǐng jiē dào	10
 石頭白族鄉	shí tou bái zú xiāng	10
@@ -75502,6 +76393,9 @@ sort: by_weight
 市西河街道	shì xī hé jiē dào	10
 十堰丹江口	shí yàn dān jiāng kǒu	10
 十堰市房縣	shí yàn shì fáng xiàn	10
+十堰鄖西縣	shí yàn yún xī xiàn	10
+十堰竹山縣	shí yàn zhú shān xiàn	10
+十堰竹溪縣	shí yàn zhú xī xiàn	10
 石油路街道	shí yóu lù jiē dào	10
 石仔嶺街道	shí zǎi lǐng jiē dào	10
 十字街街道	shí zì jiē jiē dào	10
@@ -75581,10 +76475,29 @@ sort: by_weight
 舜玉路街道	shùn yù lù jiē dào	10
 朔北藏族鄉	shuò běi zàng zú xiāng	10
 朔方路街道	shuò fāng lù jiē dào	10
+朔州山陰縣	shuò zhōu shān yīn xiàn	10
 朔州市應縣	shuò zhōu shì yīng xiàn	10
+朔州右玉縣	shuò zhōu yòu yù xiàn	10
 四寶山街道	sì bǎo shān jiē dào	10
 絲綢路街道	sī chóu lù jiē dào	10
+四川巴中市	sì chuān bā zhōng shì	10
+四川成都市	sì chuān chéng dū shì	10
+四川達州市	sì chuān dá zhōu shì	10
+四川德陽市	sì chuān dé yáng shì	10
+四川廣安市	sì chuān guǎng ān shì	10
+四川廣元市	sì chuān guǎng yuán shì	10
+四川樂山市	sì chuān lè shān shì	10
+四川瀘州市	sì chuān lú zhōu shì	10
+四川眉山市	sì chuān méi shān shì	10
+四川綿陽市	sì chuān mián yáng shì	10
+四川南充市	sì chuān nán chōng shì	10
+四川內江市	sì chuān nèi jiāng shì	10
 四川攀枝花	sì chuān pān zhī huā	10
+四川遂寧市	sì chuān suì níng shì	10
+四川雅安市	sì chuān yǎ ān shì	10
+四川宜賓市	sì chuān yí bīn shì	10
+四川自貢市	sì chuān zì gòng shì	10
+四川資陽市	sì chuān zī yáng shì	10
 斯大林街道	sī dà lín jiē dào	10
 四道河子鎮	sì dào hé zǐ zhèn	10
 四道灣子鎮	sì dào wān zi zhèn	10
@@ -75608,6 +76521,7 @@ sort: by_weight
 駟馬橋街道	sì mǎ qiáo jiē dào	10
 思明區街道	sī míng qū jiē dào	10
 四牌樓街道	sì pái lóu jiē dào	10
+四平梨樹縣	sì píng lí shù xiàn	10
 四平路街道	sì píng lù jiē dào	10
 四平農科院	sì píng nóng kē yuàn	10
 司前畲族鎮	sī qián shē zú zhèn	10
@@ -75634,6 +76548,8 @@ sort: by_weight
 嵩山街街道	sōng shān jiē jiē dào	10
 嵩山路街道	sōng shān lù jiē dào	10
 松楊湖街道	sōng yáng hú jiē dào	10
+松原長嶺縣	sōng yuán cháng lǐng xiàn	10
+松原乾安縣	sōng yuán qián ān xiàn	10
 蘇布爾嘎鎮	sū bù ěr gā zhèn	10
 宿城開發區	sù chéng kāi fā qū	10
 蘇海良種場	sū hǎi liáng zhǒng chǎng	10
@@ -75644,16 +76560,30 @@ sort: by_weight
 蘇木塔什鄉	sū mù tǎ shí xiāng	10
 蘇尼特右旗	sū ní tè yòu qí	10
 蘇尼特左旗	sū ní tè zuǒ qí	10
+宿遷沭陽縣	sù qiān shù yáng xiàn	10
+宿遷泗洪縣	sù qiān sì hóng xiàn	10
+宿遷泗陽縣	sù qiān sì yáng xiàn	10
 蘇仙嶺街道	sū xiān lǐng jiē dào	10
 宿鴨湖街道	sù yā hú jiē dào	10
 蘇正辦事處	sū zhèng bàn shì chù	10
+宿州碭山縣	sù zhōu dàng shān xiàn	10
+蘇州開發區	sū zhōu kāi fā qū	10
+宿州靈璧縣	sù zhōu líng bì xiàn	10
 蘇州市街道	sū zhōu shì jiē dào	10
 宿州市泗縣	sù zhōu shì sì xiàn	10
 宿州市蕭縣	sù zhōu shì xiāo xiàn	10
 蘇州張家港	sū zhōu zhāng jiā gǎng	10
 素珠營子鄉	sù zhū yíng zi xiāng	10
 綏濱西林場	suí bīn xī lín chǎng	10
+綏化蘭西縣	suí huà lán xī xiàn	10
+綏化明水縣	suí huà míng shuǐ xiàn	10
+綏化慶安縣	suí huà qìng ān xiàn	10
+綏化青岡縣	suí huà qīng gāng xiàn	10
+綏化綏棱縣	suí huà suí líng xiàn	10
+綏化望奎縣	suí huà wàng kuí xiàn	10
 綏棱縣豬場	suí líng xiàn zhū chǎng	10
+遂寧大英縣	suì níng dà yīng xiàn	10
+遂寧蓬溪縣	suì níng péng xī xiàn	10
 綏勝滿族鎮	suí shèng mǎn zú zhèn	10
 綏陽林業局	suí yáng lín yè jú	10
 隨州市隨縣	suí zhōu shì suí xiàn	10
@@ -75679,6 +76609,8 @@ sort: by_weight
 塔溫敖寶鎮	tǎ wēn áo bǎo zhèn	10
 塔溫覺肯鄉	tǎ wēn jué kěn xiāng	10
 塔子湖街道	tǎ zi hú jiē dào	10
+泰安東平縣	tài ān dōng píng xiàn	10
+泰安寧陽縣	tài ān níng yáng xiàn	10
 太白園街道	tài bái yuán jiē dào	10
 太保莊街道	tài bǎo zhuāng jiē dào	10
 大長山島鎮	tài cháng shān dǎo zhèn	10
@@ -75698,6 +76630,15 @@ sort: by_weight
 太平營街道	tài píng yíng jiē dào	10
 泰山路街道	tài shān lù jiē dào	10
 太升路街道	tài shēng lù jiē dào	10
+臺灣高雄市	tái wān gāo xióng shì	10
+臺灣基隆市	tái wān jī lóng shì	10
+臺灣嘉義市	tái wān jiā yì shì	10
+台灣台北市	tái wān tái běi shì	10
+台灣台南市	tái wān tái nán shì	10
+台灣台中市	tái wān tái zhōng shì	10
+臺灣桃園市	tái wān táo yuán shì	10
+臺灣新北市	tái wān xīn běi shì	10
+臺灣新竹市	tái wān xīn zhú shì	10
 太陽島街道	tài yáng dǎo jiē dào	10
 太陽宮地區	tài yáng gōng dì qū	10
 太陽廟農場	tài yáng miào nóng chǎng	10
@@ -75707,19 +76648,27 @@ sort: by_weight
 太邑彝族鄉	tài yì yí zú xiāng	10
 太原尖草坪	tài yuán jiān cǎo píng	10
 太原街街道	tài yuán jiē jiē dào	10
+太原婁煩縣	tài yuán lóu fán xiàn	10
+太原清徐縣	tài yuán qīng xú xiàn	10
 太源畲族鄉	tài yuán shē zú xiāng	10
 太原市街道	tài yuán shì jiē dào	10
 太原萬柏林	tài yuán wàn bǎi lín	10
 太原杏花嶺	tài yuán xìng huā lǐng	10
+太原陽曲縣	tài yuán yáng qū xiàn	10
 台中市北區	tái zhōng shì běi qū	10
 台中市東區	tái zhōng shì dōng qū	10
 台中市南區	tái zhōng shì nán qū	10
 台中市西區	tái zhōng shì xī qū	10
 台中市中區	tái zhōng shì zhōng qū	10
+台州開發區	tāi zhōu kāi fā qū	10
+台州三門縣	tāi zhōu sān mén xiàn	10
 台州市街道	tāi zhōu shì jiē dào	10
+台州天台縣	tāi zhōu tiān tái xiàn	10
+台州仙居縣	tāi zhōu xiān jū xiàn	10
 覃家崗街道	tán jiā gǎng jiē dào	10
 湯崗子街道	tāng gǎng zi jiē dào	10
 唐宮路街道	táng gōng lù jiē dào	10
+塘沽開發區	táng gū kāi fā qū	10
 唐古拉山鎮	táng gǔ lā shān zhèn	10
 湯河橋街道	tāng hé qiáo jiē dào	10
 唐家房街道	táng jiā fáng jiē dào	10
@@ -75727,7 +76676,11 @@ sort: by_weight
 唐家莊街道	táng jiā zhuāng jiē dào	10
 湯泉滿族鄉	tāng quán mǎn zú xiāng	10
 唐山曹妃甸	táng shān cáo fēi diān	10
+唐山樂亭縣	táng shān lào tíng xiàn	10
+唐山灤南縣	táng shān luán nán xiàn	10
+唐山遷西縣	táng shān qiān xī xiàn	10
 唐山市街道	táng shān shì jiē dào	10
+唐山玉田縣	táng shān yù tián xiàn	10
 湯圖滿族鄉	tāng tú mǎn zú xiāng	10
 唐閘鎮街道	táng zhá zhèn jiē dào	10
 逃出絕命鎮	táo chū jué mìng zhèn	10
@@ -75761,10 +76714,13 @@ sort: by_weight
 天宮殿街道	tiān gōng diàn jiē dào	10
 天宮院街道	tiān gōng yuàn jiē dào	10
 天河南街道	tiān hé nán jiē dào	10
+天湖風景區	tiān hú fēng jǐng qū	10
 天回鎮街道	tiān huí zhèn jiē dào	10
 田家會街道	tián jiā huì jiē dào	10
 田家鎮街道	tián jiā zhèn jiē dào	10
 天津濱海新	tiān jīn bīn hǎi xīn	10
+天津靜海縣	tiān jīn jìng hǎi xiàn	10
+天津開發區	tiān jīn kāi fā qū	10
 天津路街道	tiān jīn lù jiē dào	10
 天津市街道	tiān jīn shì jiē dào	10
 天靜宮街道	tiān jìng gōng jiē dào	10
@@ -75775,9 +76731,13 @@ sort: by_weight
 天目山街道	tiān mù shān jiē dào	10
 天平路街道	tiān píng lù jiē dào	10
 天山路街道	tiān shān lù jiē dào	10
+天水甘谷縣	tiān shuǐ gān gǔ xiàn	10
 甜水井街道	tián shuǐ jǐng jiē dào	10
 天水郡街道	tiān shuǐ jùn jiē dào	10
 甜水滿族鄉	tián shuǐ mǎn zú xiāng	10
+天水秦安縣	tiān shuǐ qín ān xiàn	10
+天水清水縣	tiān shuǐ qīng shuǐ xiàn	10
+天水武山縣	tiān shuǐ wǔ shān xiàn	10
 天水張家川	tiān shuǐ zhāng jiā chuān	10
 天泰寺街道	tiān tài sì jiē dào	10
 天堂山街道	tiān táng shān jiē dào	10
@@ -75792,7 +76752,10 @@ sort: by_weight
 鐵幹里克鎮	tiě gàn lǐ kè zhèn	10
 鐵匠苗族鄉	tiě jiàng miáo zú xiāng	10
 鐵力林業局	tiě lì lín yè jú	10
+鐵嶺昌圖縣	tiě lǐng chāng tú xiàn	10
 鐵嶺調兵山	tiě lǐng diào bīng shān	10
+鐵嶺鐵嶺縣	tiě lǐng tiě lǐng xiàn	10
+鐵嶺西豐縣	tiě lǐng xī fēng xiàn	10
 鐵樓藏族鄉	tiě lóu zàng zú xiāng	10
 鐵路東街道	tiě lù dōng jiē dào	10
 鐵木里克鄉	tiě mù lǐ kè xiāng	10
@@ -75803,21 +76766,31 @@ sort: by_weight
 桐柏路街道	tóng bǎi lù jiē dào	10
 通北林業局	tōng běi lín yè jú	10
 銅廠彝族鄉	tóng chǎng yí zú xiāng	10
+銅川宜君縣	tóng chuān yí jūn xiàn	10
 通道街街道	tōng dào jiē jiē dào	10
 銅官窯古鎮	tóng guān yáo gǔ zhèn	10
 通海路街道	tōng hǎi lù jiē dào	10
 通化二道江	tōng huà èr dào jiāng	10
+通化輝南縣	tōng huà huī nán xiàn	10
+通化柳河縣	tōng huà liǔ hé xiàn	10
 通化梅河口	tōng huà méi hé kǒu	10
+通化通化縣	tōng huà tōng huà xiàn	10
 童家橋街道	tóng jiā qiáo jiē dào	10
 同樂苗族鄉	tóng lè miáo zú xiāng	10
 同練瑤族鄉	tóng liàn yáo zú xiāng	10
 銅梁區街道	tóng liáng qū jiē dào	10
+通遼開魯縣	tōng liáo kāi lǔ xiàn	10
 通遼科爾沁	tōng liáo kē ěr qìn	10
 通遼扎魯特	tōng liáo zhā lǔ tè	10
 銅陵路街道	tóng líng lù jiē dào	10
 銅陵市郊區	tóng líng shì jiāo qū	10
+銅陵樅陽縣	tóng líng zōng yáng xiàn	10
 銅鑼湖農場	tóng luó hú nóng chǎng	10
 潼南區街道	tóng nán qū jiē dào	10
+銅仁德江縣	tóng rén dé jiāng xiàn	10
+銅仁江口縣	tóng rén jiāng kǒu xiàn	10
+銅仁石阡縣	tóng rén shí qiān xiàn	10
+銅仁思南縣	tóng rén sī nán xiàn	10
 通泰街街道	tōng tài jiē jiē dào	10
 銅塘灣街道	tóng táng wān jiē dào	10
 同心滿族鄉	tóng xīn mǎn zú xiāng	10
@@ -75913,16 +76886,26 @@ sort: by_weight
 望嶽路街道	wàng yuè lù jiē dào	10
 緯北路街道	wěi běi lù jiē dào	10
 緯二路街道	wěi èr lù jiē dào	10
+濰坊昌樂縣	wéi fāng chāng lè xiàn	10
+濰坊臨朐縣	wéi fāng lín qú xiàn	10
 葦河林業局	wěi hé lín yè jú	10
 葦湖梁街道	wěi hú liáng jiē dào	10
 魏家莊街道	wèi jiā zhuāng jiē dào	10
 未來路街道	wèi lái lù jiē dào	10
 維摩彝族鄉	wéi mó yí zú xiāng	10
+渭南白水縣	wèi nán bái shuǐ xiàn	10
+渭南澄城縣	wèi nán chéng chéng xiàn	10
+渭南大荔縣	wèi nán dà lì xiàn	10
+渭南富平縣	wèi nán fù píng xiàn	10
+渭南合陽縣	wèi nán hé yáng xiàn	10
+渭南蒲城縣	wèi nán pú chéng xiàn	10
 渭南市街道	wèi nán shì jiē dào	10
 渭南市鄉鎮	wèi nán shì xiāng zhèn	10
+渭南潼關縣	wèi nán tóng guān xiàn	10
 圍屏滿族鄉	wéi píng mǎn zú xiāng	10
 緯七路街道	wěi qī lù jiē dào	10
 威清門街道	wēi qīng mén jiē dào	10
+洈水風景區	wéi shuǐ fēng jǐng qū	10
 衛星湖街道	wèi xīng hú jiē dào	10
 衛星種畜場	wèi xīng zhǒng chù chǎng	10
 未央宮街道	wèi yāng gōng jiē dào	10
@@ -75946,8 +76929,13 @@ sort: by_weight
 聞喜縣社區	wén xǐ xiàn shè qū	10
 文藝路街道	wén yì lù jiē dào	10
 文瀛湖街道	wén yíng hú jiē dào	10
+溫州蒼南縣	wēn zhōu cāng nán xiàn	10
+溫州平陽縣	wēn zhōu píng yáng xiàn	10
 溫州市街道	wēn zhōu shì jiē dào	10
 溫州市鄉鎮	wēn zhōu shì xiāng zhèn	10
+溫州泰順縣	wēn zhōu tài shùn xiàn	10
+溫州文成縣	wēn zhōu wén chéng xiàn	10
+溫州永嘉縣	wēn zhōu yǒng jiā xiàn	10
 臥虎灣街道	wò hǔ wān jiē dào	10
 臥里屯街道	wò lǐ tún jiē dào	10
 臥龍崗街道	wò lóng gǎng jiē dào	10
@@ -75976,11 +76964,14 @@ sort: by_weight
 五桂山街道	wǔ guì shān jiē dào	10
 烏海海勃灣	wū hǎi hǎi bó wān	10
 武漢東西湖	wǔ hàn dōng xī hú	10
+武漢開發區	wǔ hàn kāi fā qū	10
 武漢路街道	wǔ hàn lù jiē dào	10
 武漢市街道	wǔ hàn shì jiē dào	10
 武漢市鄉鎮	wǔ hàn shì xiāng zhèn	10
 吾合沙魯鄉	wú hé shā lǔ xiāng	10
+蕪湖開發區	wú hú kāi fā qū	10
 蕪湖路街道	wú hú lù jiē dào	10
+蕪湖南陵縣	wú hú nán líng xiàn	10
 五虎山街道	wǔ hǔ shān jiē dào	10
 蕪湖市街道	wú hú shì jiē dào	10
 烏吉熱克鄉	wū jí rè kè xiāng	10
@@ -75991,6 +76982,7 @@ sort: by_weight
 吳家山林場	wú jiā shān lín chǎng	10
 吳家營街道	wú jiā yíng jiē dào	10
 五間房水庫	wǔ jiān fáng shuǐ kù	10
+吳江開發區	wú jiāng kāi fā qū	10
 吳江盛澤鎮	wú jiāng shèng zé zhèn	10
 吳江同里鎮	wú jiāng tóng lǐ zhèn	10
 五角場街道	wǔ jiǎo chǎng jiē dào	10
@@ -76047,6 +77039,7 @@ sort: by_weight
 吳門橋街道	wú mén qiáo jiē dào	10
 五腦山林場	wǔ nǎo shān lín chǎng	10
 五七路街道	wǔ qī lù jiē dào	10
+武清開發區	wǔ qīng kāi fā qū	10
 無人的街道	wú rén de jiē dào	10
 武山墾殖場	wǔ shān kěn zhí chǎng	10
 烏史大橋鎮	wū shǐ dà qiáo zhèn	10
@@ -76059,11 +77052,15 @@ sort: by_weight
 梧桐湖新區	wú tóng hú xīn qū	10
 五圖河農場	wǔ tú hé nóng chǎng	10
 烏圖美仁鄉	wū tú měi rén xiāng	10
+武威古浪縣	wǔ wēi gǔ làng xiàn	10
+武威民勤縣	wǔ wēi mín qín xiàn	10
 武威市鄉鎮	wǔ wēi shì xiāng zhèn	10
+無錫開發區	wú xī kāi fā qū	10
 霧溪畲族鄉	wù xī shē zú xiāng	10
 無錫市街道	wú xī shì jiē dào	10
 無錫市鄉鎮	wú xī shì xiāng zhèn	10
 烏夏巴什鎮	wū xià bā shí zhèn	10
+五洩風景區	wǔ xiè fēng jǐng qū	10
 五星街街道	wǔ xīng jiē jiē dào	10
 舞陽壩街道	wǔ yáng bà jiē dào	10
 五一路街道	wǔ yī lù jiē dào	10
@@ -76072,10 +77069,18 @@ sort: by_weight
 吳忠紅寺堡	wú zhōng hóng sì bǔ	10
 吳忠青銅峽	wú zhōng qīng tóng xiá	10
 吳中區林場	wú zhōng qū lín chǎng	10
+吳忠同心縣	wú zhōng tóng xīn xiàn	10
+吳忠鹽池縣	wú zhōng yán chí xiàn	10
+梧州蒼梧縣	wú zhōu cāng wú xiàn	10
+梧州蒙山縣	wú zhōu méng shān xiàn	10
 梧州市藤縣	wú zhōu shì téng xiàn	10
 兀朮街街道	wù zhú jiē jiē dào	10
+西安高陵縣	xī ān gāo líng xiàn	63
+西安開發區	xī ān kāi fā qū	10
+西安藍田縣	xī ān lán tián xiàn	10
 西安路街道	xī ān lù jiē dào	10
 西安市街道	xī ān shì jiē dào	10
+西安周至縣	xī ān zhōu zhì xiàn	10
 西北街街道	xī běi jiē jiē dào	10
 西北旺地區	xī běi wàng dì qū	10
 西北隅街道	xī běi yú jiē dào	10
@@ -76120,6 +77125,7 @@ sort: by_weight
 西南街街道	xī nán jiē jiē dào	10
 西南隅街道	xī nán yú jiē dào	10
 西腦包街道	xī nǎo bāo jiē dào	10
+西寧湟源縣	xī níng huáng yuán xiàn	10
 西寧路街道	xī níng lù jiē dào	10
 希勤滿族鄉	xī qín mǎn zú xiāng	10
 西三旗街道	xī sān qí jiē dào	10
@@ -76162,6 +77168,7 @@ sort: by_weight
 硤門畲族鄉	xiá mén shē zú xiāng	10
 下廿里鋪鎮	xià niàn lǐ pù zhèn	10
 夏普吐勒鎮	xià pǔ tǔ lè zhèn	10
+下沙開發區	xià shā kāi fā qū	10
 峽山口街道	xiá shān kǒu jiē dào	10
 下攝司街道	xià shè sī jiē dào	10
 下瓦房街道	xià wǎ fáng jiē dào	10
@@ -76181,9 +77188,22 @@ sort: by_weight
 縣聯社馬場	xiàn lián shè mǎ chǎng	10
 洗馬河街道	xiǎn mǎ hé jiē dào	10
 洗馬路街道	xiǎn mǎ lù jiē dào	10
+咸寧崇陽縣	xián níng chóng yáng xiàn	10
+咸寧嘉魚縣	xián níng jiā yú xiàn	10
+咸寧通城縣	xián níng tōng chéng xiàn	10
+咸寧通山縣	xián níng tōng shān xiàn	10
 仙女山街道	xiān nǚ shān jiē dào	10
 仙人莊街道	xiān rén zhuāng jiē dào	10
+咸陽長武縣	xián yáng cháng wǔ xiàn	10
+咸陽淳化縣	xián yáng chún huà xiàn	10
+咸陽涇陽縣	xián yáng jīng yáng xiàn	10
+咸陽開發區	xián yáng kāi fā qū	10
+咸陽禮泉縣	xián yáng lǐ quán xiàn	10
+咸陽三原縣	xián yáng sān yuán xiàn	10
 咸陽市乾縣	xián yáng shì qián xiàn	10
+咸陽武功縣	xián yáng wǔ gōng xiàn	10
+咸陽旬邑縣	xián yáng xún yì xiàn	10
+咸陽永壽縣	xián yáng yǒng shòu xiàn	10
 仙岳山街道	xiān yuè shān jiē dào	10
 廂白滿族鄉	xiāng bái mǎn zú xiāng	10
 相城墾殖場	xiāng chéng kěn zhí chǎng	10
@@ -76196,6 +77216,8 @@ sort: by_weight
 相公莊街道	xiàng gong zhuāng jiē dào	10
 相國寺街道	xiàng guó sì jiē dào	10
 香河園街道	xiāng hé yuán jiē dào	10
+湘湖風景區	xiāng hú fēng jǐng qū	10
+象湖風景區	xiàng hú fēng jǐng qū	10
 香花橋街道	xiāng huā qiáo jiē dào	10
 向化藏族鄉	xiàng huà zàng zú xiāng	10
 香爐礁街道	xiāng lú jiāo jiē dào	10
@@ -76207,14 +77229,18 @@ sort: by_weight
 響水河子鄉	xiǎng shuǐ hé zǐ xiāng	10
 香水園街道	xiāng shuǐ yuán jiē dào	10
 湘潭路街道	xiāng tán lù jiē dào	10
+湘潭湘潭縣	xiāng tán xiāng tán xiàn	10
 鄉賢街街道	xiāng xián jiē jiē dào	10
 湘雅路街道	xiāng yǎ lù jiē dào	10
+襄陽保康縣	xiāng yáng bǎo kāng xiàn	10
 向陽村街道	xiàng yáng cūn jiē dào	10
+襄陽谷城縣	xiāng yáng gǔ chéng xiàn	10
 襄陽街街道	xiāng yáng jiē jiē dào	10
 襄陽老河口	xiāng yáng lǎo hé kǒu	10
 向陽裏街道	xiàng yáng lǐ jiē dào	10
 向陽樓街道	xiàng yáng lóu jiē dào	10
 向陽路街道	xiàng yáng lù jiē dào	10
+襄陽南漳縣	xiāng yáng nán zhāng xiàn	10
 向陽橋街道	xiàng yáng qiáo jiē dào	10
 湘陰渡街道	xiāng yīn dù jiē dào	10
 象嶼保稅區	xiàng yǔ bǎo shuì qū	10
@@ -76228,6 +77254,9 @@ sort: by_weight
 小東門街道	xiǎo dōng mén jiē dào	10
 小渡船街道	xiǎo dù chuán jiē dào	10
 肖爾巴格鄉	xiāo ěr bā gé xiāng	10
+孝感大悟縣	xiào gǎn dà wù xiàn	10
+孝感孝昌縣	xiào gǎn xiào chāng xiàn	10
+孝感雲夢縣	xiào gǎn yún mèng xiàn	10
 小港管理區	xiǎo gǎng guǎn lǐ qū	10
 小公園街道	xiǎo gōng yuán jiē dào	10
 小孤山林場	xiǎo gū shān lín chǎng	10
@@ -76276,6 +77305,7 @@ sort: by_weight
 新安所街道	xīn ān suǒ jiē dào	10
 新寶拉格鎮	xīn bǎo lā gé zhèn	10
 新北區街道	xīn běi qū jiē dào	10
+新城開發區	xīn chéng kāi fā qū	10
 新成路街道	xīn chéng lù jiē dào	10
 新城橋街道	xīn chéng qiáo jiē dào	10
 新城區街道	xīn chéng qū jiē dào	10
@@ -76303,6 +77333,7 @@ sort: by_weight
 新吉林街道	xīn jí lín jiē dào	10
 辛家廟街道	xīn jiā miào jiē dào	10
 新佳木蘇木	xīn jiā mù sū mù	10
+新建開發區	xīn jiàn kāi fā qū	10
 新建路街道	xīn jiàn lù jiē dào	10
 新疆阿克蘇	xīn jiāng ā kè sū	10
 新疆阿勒泰	xīn jiāng ā lè tài	10
@@ -76334,23 +77365,46 @@ sort: by_weight
 新體路街道	xīn tǐ lù jiē dào	10
 新下陸街道	xīn xià lù jiē dào	10
 新香坊街道	xīn xiāng fāng jiē dào	10
+新鄉封丘縣	xīn xiāng fēng qiū xiàn	10
+新鄉獲嘉縣	xīn xiāng huò jiā xiàn	10
 新湘路街道	xīn xiāng lù jiē dào	10
+新鄉新鄉縣	xīn xiāng xīn xiāng xiàn	10
+新鄉延津縣	xīn xiāng yán jīn xiàn	10
+新鄉原陽縣	xīn xiāng yuán yáng xiàn	10
 新新街街道	xīn xīn jiē jiē dào	10
 新興路街道	xīn xīng lù jiē dào	10
 新星市新星	xīn xīng shì xīn xīng	10
 新興畜牧場	xīn xīng xù mù chǎng	10
+信陽固始縣	xìn yáng gù shǐ xiàn	10
+信陽光山縣	xìn yáng guāng shān xiàn	10
+信陽淮濱縣	xìn yáng huái bīn xiàn	10
+信陽潢川縣	xìn yáng huáng chuān xiàn	10
 新陽路街道	xīn yáng lù jiē dào	10
+信陽羅山縣	xìn yáng luó shān xiàn	10
+信陽商城縣	xìn yáng shāng chéng xiàn	10
 信陽市息縣	xìn yáng shì xī xiàn	10
 信陽市鄉鎮	xìn yáng shì xiāng zhèn	10
 信陽市新縣	xìn yáng shì xīn xiàn	10
 新一辦街道	xīn yī bàn jiē dào	10
 新義街街道	xīn yì jiē jiē dào	10
+新餘分宜縣	xīn yú fēn yí xiàn	10
 新源道街道	xīn yuán dào jiē dào	10
 欣悅湖街道	xīn yuè hú jiē dào	10
 辛寨子街道	xīn zhài zi jiē dào	10
+忻州保德縣	xīn zhōu bǎo dé xiàn	10
+忻州定襄縣	xīn zhōu dìng xiāng xiàn	10
+忻州繁峙縣	xīn zhōu fán shì xiàn	10
+忻州河曲縣	xīn zhōu hé qū xiàn	10
+忻州靜樂縣	xīn zhōu jìng lè xiàn	10
+忻州岢嵐縣	xīn zhōu kě lán xiàn	10
 新洲墾殖場	xīn zhōu kěn zhí chǎng	10
+忻州寧武縣	xīn zhōu níng wǔ xiàn	10
+忻州偏關縣	xīn zhōu piān guān xiàn	10
+忻州神池縣	xīn zhōu shén chí xiàn	10
 忻州市代縣	xīn zhōu shì dài xiàn	10
 忻州市鄉鎮	xīn zhōu shì xiāng zhèn	10
+忻州五台縣	xīn zhōu wǔ tái xiàn	10
+忻州五寨縣	xīn zhōu wǔ zhài xiàn	10
 新洲原種場	xīn zhōu yuán zhǒng chǎng	10
 新竹市北區	xīn zhú shì běi qū	10
 新竹市東區	xīn zhú shì dōng qū	10
@@ -76381,7 +77435,19 @@ sort: by_weight
 興隆巷街道	xīng lóng xiàng jiē dào	10
 興隆莊街道	xīng lóng zhuāng jiē dào	10
 興平路街道	xīng píng lù jiē dào	10
+星沙開發區	xīng shā kāi fā qū	10
+邢臺柏鄉縣	xíng tái bǎi xiāng xiàn	10
+邢臺廣宗縣	xíng tái guǎng zōng xiàn	10
+邢臺巨鹿縣	xíng tái jù lù xiàn	10
+邢臺臨城縣	xíng tái lín chéng xiàn	10
+邢臺臨西縣	xíng tái lín xī xiàn	10
+邢台隆堯縣	xíng tái lóng yáo xiàn	10
+邢臺內丘縣	xíng tái nèi qiū xiàn	10
+邢臺寧晉縣	xíng tái níng jìn xiàn	10
+邢臺平鄉縣	xíng tái píng xiāng xiàn	10
+邢臺清河縣	xíng tái qīng hé xiàn	10
 邢台市威縣	xíng tái shì wēi xiàn	10
+邢臺新河縣	xíng tái xīn hé xiàn	10
 興賢裏街道	xīng xián lǐ jiē dào	10
 行政建制鎮	xíng zhèng jiàn zhì zhèn	10
 熊口管理區	xióng kǒu guǎn lǐ qū	10
@@ -76390,6 +77456,8 @@ sort: by_weight
 秀水河子鎮	xiù shuǐ hé zǐ zhèn	10
 秀塘壯族鄉	xiù táng zhuàng zú xiāng	10
 秀嶼區鄉鎮	xiù yǔ qū xiāng zhèn	10
+許昌襄城縣	xǔ chāng xiāng chéng xiàn	10
+許昌鄢陵縣	xǔ chāng yān líng xiàn	10
 胥各莊街道	xū gè zhuāng jiē dào	10
 徐官屯街道	xú guān tún jiē dào	10
 徐匯區街道	xú huì qū jiē dào	10
@@ -76402,9 +77470,14 @@ sort: by_weight
 徐家營街道	xú jiā yíng jiē dào	10
 旭來街街道	xù lái jiē jiē dào	10
 畜牧果林場	xù mù guǒ lín chǎng	10
+徐州開發區	xú zhōu kāi fā qū	10
 徐州市豐縣	xú zhōu shì fēng xiàn	10
 徐州市沛縣	xú zhōu shì pèi xiàn	10
 徐州市鄉鎮	xú zhōu shì xiāng zhèn	10
+徐州睢寧縣	xú zhōu suī níng xiàn	10
+宣城績溪縣	xuān chéng jì xī xiàn	10
+宣城旌德縣	xuān chéng jīng dé xiàn	10
+宣城郎溪縣	xuān chéng láng xī xiàn	10
 宣城市涇縣	xuān chéng shì jīng xiàn	10
 玄武湖街道	xuán wǔ hú jiē dào	10
 宣武街街道	xuān wǔ jiē jiē dào	10
@@ -76414,24 +77487,49 @@ sort: by_weight
 學院街街道	xué yuàn jiē jiē dào	10
 學院路街道	xué yuàn lù jiē dào	10
 馴樂苗族鄉	xùn lè miáo zú xiāng	10
+雅安寶興縣	yǎ ān bǎo xīng xiàn	10
+雅安漢源縣	yǎ ān hàn yuán xiàn	10
+雅安蘆山縣	yǎ ān lú shān xiàn	10
+雅安石棉縣	yǎ ān shí mián xiàn	10
+雅安天全縣	yǎ ān tiān quán xiàn	10
+雅安滎經縣	yǎ ān yíng jīng xiàn	10
 亞科瑞克鄉	yà kē ruì kè xiāng	10
 牙克石農場	yá kè shí nóng chǎng	10
 鴨綠江街道	yā lù jiāng jiē dào	10
 鴨綠河農場	yā lǜ hé nóng chǎng	10
 亞瓦格街道	yà wǎ gé jiē dào	10
 亞運村街道	yà yùn cūn jiē dào	10
+延安甘泉縣	yán ān gān quán xiàn	10
+延安黃陵縣	yán ān huáng líng xiàn	10
+延安黃龍縣	yán ān huáng lóng xiàn	10
 延安路街道	yán ān lù jiē dào	10
+延安洛川縣	yán ān luò chuān xiàn	10
 延安市富縣	yán ān shì fù xiàn	10
+延安吳起縣	yán ān wú qǐ xiàn	10
+延安延長縣	yán ān yán cháng xiàn	10
+延安延川縣	yán ān yán chuān xiàn	10
+延安宜川縣	yán ān yí chuān xiàn	10
+延安志丹縣	yán ān zhì dān xiàn	10
 延邊原種場	yán biān yuán zhǒng chǎng	10
 鹽場路街道	yán chǎng lù jiē dào	10
+鹽城濱海縣	yán chéng bīn hǎi xiàn	10
+鹽城阜寧縣	yán chéng fù níng xiàn	10
+鹽城建湖縣	yán chéng jiàn hú xiàn	10
+鹽城開發區	yán chéng kāi fā qū	10
+鹽城射陽縣	yán chéng shè yáng xiàn	10
 鹽城市街道	yán chéng shì jiē dào	10
+鹽城響水縣	yán chéng xiǎng shuǐ xiàn	10
 燕兒窩街道	yàn er wō jiē dào	10
 沿海經濟區	yán hǎi jīng jì qū	10
 晏家坪街道	yàn jiā píng jiē dào	10
+沿江開發區	yán jiāng kāi fā qū	10
+燕郊開發區	yān jiāo kāi fā qū	10
+雁棲開發區	yàn qī kāi fā qū	10
 燕山路街道	yān shān lù jiē dào	10
 鹽市口街道	yán shì kǒu jiē dào	10
 延壽瑤族鄉	yán shòu yáo zú xiāng	10
 燕順路街道	yàn shùn lù jiē dào	10
+煙台開發區	yān tái kāi fā qū	10
 鹽田畲族鄉	yán tián shē zú xiāng	10
 鹽務街街道	yán wù jiē jiē dào	10
 胭脂湖街道	yān zhī hú jiē dào	10
@@ -76458,9 +77556,11 @@ sort: by_weight
 楊家巖街道	yáng jiā yán jiē dào	10
 楊家峪街道	yáng jiā yù jiē dào	10
 楊家園則鎮	yáng jiā yuán zé zhèn	10
+陽江陽西縣	yáng jiāng yáng xī xiàn	10
 楊金路街道	yáng jīn lù jiē dào	10
 羊井子灣鄉	yáng jǐng zǐ wān xiāng	10
 羊樓洞茶場	yáng lóu dòng chá chǎng	10
+陽邏開發區	yáng luó kāi fā qū	10
 養馬島街道	yǎng mǎ dǎo jiē dào	10
 養馬甸子鄉	yǎng mǎ diàn zǐ xiāng	10
 陽明洞街道	yáng míng dòng jiē dào	10
@@ -76469,7 +77569,9 @@ sort: by_weight
 揚農管理處	yáng nóng guǎn lǐ chù	10
 楊泡滿族鄉	yáng pào mǎn zú xiāng	10
 羊坪彝族鄉	yáng píng yí zú xiāng	10
+洋浦開發區	yáng pǔ kāi fā qū	10
 楊浦區街道	yáng pǔ qū jiē dào	10
+陽泉平定縣	yáng quán píng dìng xiàn	10
 陽泉市城區	yáng quán shì chéng qū	10
 陽泉市郊區	yáng quán shì jiāo qū	10
 陽泉市礦區	yáng quán shì kuàng qū	10
@@ -76478,6 +77580,8 @@ sort: by_weight
 楊樹房街道	yáng shù fáng jiē dào	10
 楊樹灣子鄉	yáng shù wān zi xiāng	10
 楊汛橋街道	yáng xùn qiáo jiē dào	10
+揚州寶應縣	yáng zhōu bǎo yìng xiàn	10
+揚州開發區	yáng zhōu kāi fā qū	10
 揚子津街道	yáng zǐ jīn jiē dào	10
 瑤安瑤族鄉	yáo ān yáo zú xiāng	10
 耀華道街道	yào huá dào jiē dào	10
@@ -76485,22 +77589,42 @@ sort: by_weight
 腰街彝族鄉	yāo jiē yí zú xiāng	10
 腰林毛都鎮	yāo lín máo dōu zhèn	10
 瑤區瑤族鄉	yáo qū yáo zú xiāng	10
+堯山風景區	yáo shān fēng jǐng qū	10
 瑤山瑤族鄉	yáo shān yáo zú xiāng	10
 藥王滿族鄉	yào wáng mǎn zú xiāng	10
 姚莊回族鄉	yáo zhuāng huí zú xiāng	10
 葉柏壽街道	yè bǎi shòu jiē dào	10
 葉爾羌街道	yè ěr qiāng jiē dào	10
 葉尓羌街道	yè ěr qiāng jiē dào	10
+野柳風景區	yě liǔ fēng jǐng qū	10
 夜明珠街道	yè míng zhū jiē dào	10
 也木勒牧場	yě mù lè mù chǎng	10
 夜晚的街道	yè wǎn de jiē dào	10
+宜賓長寧縣	yí bīn cháng níng xiàn	10
+宜賓江安縣	yí bīn jiāng ān xiàn	10
+宜賓筠連縣	yí bīn jūn lián xiàn	10
+宜賓屏山縣	yí bīn píng shān xiàn	10
 宜賓市高縣	yí bīn shì gāo xiàn	10
 宜賓市珙縣	yí bīn shì gǒng xiàn	10
+宜賓興文縣	yí bīn xīng wén xiàn	10
 宜昌伍家崗	yí chāng wǔ jiā gǎng	10
+宜昌興山縣	yí chāng xīng shān xiàn	10
+宜昌遠安縣	yí chāng yuǎn ān xiàn	10
+宜昌秭歸縣	yí chāng zǐ guī xiàn	10
 伊車嘎善鄉	yī chē gā shàn xiāng	10
 宜城路街道	yí chéng lù jiē dào	10
 宜川路街道	yí chuān lù jiē dào	10
 伊春大箐山	yī chūn dà qìng shān	10
+伊春豐林縣	yī chūn fēng lín xiàn	10
+宜春奉新縣	yí chūn fèng xīn xiàn	10
+伊春嘉蔭縣	yī chūn jiā yīn xiàn	10
+宜春靖安縣	yí chūn jìng ān xiàn	10
+伊春南岔縣	yī chūn nán chà xiàn	10
+宜春上高縣	yí chūn shàng gāo xiàn	10
+伊春湯旺縣	yī chūn tāng wàng xiàn	10
+宜春銅鼓縣	yí chūn tóng gǔ xiàn	10
+宜春萬載縣	yí chūn wàn zǎi xiàn	10
+宜春宜豐縣	yí chūn yí fēng xiàn	10
 伊爾施街道	yī ěr shī jiē dào	10
 儀封園藝場	yí fēng yuán yì chǎng	10
 依蓋爾其鎮	yī gài ěr qí zhèn	10
@@ -76524,9 +77648,14 @@ sort: by_weight
 依提木孔鎮	yī tí mù kǒng zhèn	10
 伊圖里河鎮	yī tú lǐ hé zhèn	10
 伊西哈拉鎮	yī xī hā la zhèn	10
+益陽安化縣	yì yáng ān huà xiàn	10
 益陽市南縣	yì yáng shì nán xiàn	10
+益陽桃江縣	yì yáng táo jiāng xiàn	10
+亦莊開發區	yì zhuāng kāi fā qū	10
+銀川賀蘭縣	yín chuān hè lán xiàn	10
 銀川路街道	yín chuān lù jiē dào	10
 銀川市鄉鎮	yín chuān shì xiāng zhèn	10
+銀川永寧縣	yín chuān yǒng níng xiàn	10
 銀古路街道	yín gǔ lù jiē dào	10
 銀河路街道	yín hé lù jiē dào	10
 引龍河林場	yǐn lóng hé lín chǎng	10
@@ -76547,6 +77676,7 @@ sort: by_weight
 英爾力克鄉	yīng ěr lì kè xiāng	10
 營口鮁魚圈	yíng kǒu bà yú quān	10
 營口大石橋	yíng kǒu dà shí qiáo	10
+營口開發區	yíng kǒu kāi fā qū	10
 迎龍橋街道	yíng lóng qiáo jiē dào	10
 營門口街道	yíng mén kǒu jiē dào	10
 潁橋回族鎮	yǐng qiáo huí zú zhèn	10
@@ -76574,8 +77704,14 @@ sort: by_weight
 永清路街道	yǒng qīng lù jiē dào	10
 永祥街街道	yǒng xiáng jiē jiē dào	10
 永興傣族鄉	yǒng xīng dǎi zú xiāng	10
+永州東安縣	yǒng zhōu dōng ān xiàn	10
+永州江永縣	yǒng zhōu jiāng yǒng xiàn	10
+永州藍山縣	yǒng zhōu lán shān xiàn	10
 永州冷水灘	yǒng zhōu lěng shuǐ tān	10
+永州寧遠縣	yǒng zhōu níng yuǎn xiàn	10
 永州市道縣	yǒng zhōu shì dào xiàn	10
+永州雙牌縣	yǒng zhōu shuāng pái xiàn	10
+永州新田縣	yǒng zhōu xīn tián xiàn	10
 右安門街道	yòu ān mén jiē dào	10
 友好路街道	yǒu hǎo lù jiē dào	10
 油建路街道	yóu jiàn lù jiē dào	10
@@ -76602,11 +77738,23 @@ sort: by_weight
 喻家坡街道	yù jiā pō jiē dào	10
 于家窩堡鄉	yú jiā wō bǎo xiāng	10
 尉犁尉犁縣	yù lí yù lí xiàn	10
+玉林博白縣	yù lín bó bái xiàn	10
+榆林定邊縣	yú lín dìng biān xiàn	10
+榆林府谷縣	yú lín fǔ gǔ xiàn	10
+榆林靖邊縣	yú lín jìng biān xiàn	10
+榆林開發區	yú lín kāi fā qū	10
+玉林陸川縣	yù lín lù chuān xiàn	10
 玉琳路街道	yù lín lù jiē dào	10
+榆林米脂縣	yú lín mǐ zhī xiàn	10
+榆林清澗縣	yú lín qīng jiàn xiàn	10
 榆林市佳縣	yú lín shì jiā xiàn	10
 玉林市容縣	yù lín shì róng xiàn	10
 玉林市鄉鎮	yù lín shì xiāng zhèn	10
+榆林綏德縣	yú lín suí dé xiàn	10
+榆林吳堡縣	yú lín wú bǔ xiàn	10
+玉林興業縣	yù lín xīng yè xiàn	10
 育林畜牧場	yù lín xù mù chǎng	10
+榆林子洲縣	yú lín zi zhōu xiàn	10
 裕隆回族鄉	yù lóng huí zú xiāng	10
 玉龍喀什鎮	yù lóng kā shí zhèn	10
 雨露白族鄉	yǔ lù bái zú xiāng	10
@@ -76619,11 +77767,15 @@ sort: by_weight
 玉泉營街道	yù quán yíng jiē dào	10
 玉泉營農場	yù quán yíng nóng chǎng	10
 豫讓橋街道	yù ràng qiáo jiē dào	10
+於山風景區	yú shān fēng jǐng qū	10
 榆樹溝街道	yú shù gōu jiē dào	10
 榆樹林子鎮	yú shù lín zi zhèn	10
 玉樹曲麻萊	yù shù qū má lái	10
+玉溪華寧縣	yù xī huá níng xiàn	10
 裕溪口街道	yù xī kǒu jiē dào	10
 玉溪市街道	yù xī shì jiē dào	10
+玉溪通海縣	yù xī tōng hǎi xiàn	10
+玉溪易門縣	yù xī yì mén xiàn	10
 浴新南街道	yù xīn nán jiē dào	10
 魚形山街道	yú xíng shān jiē dào	10
 毓秀路街道	yù xiù lù jiē dào	10
@@ -76648,16 +77800,38 @@ sort: by_weight
 越秀路街道	yuè xiù lù jiē dào	10
 月牙河街道	yuè yá hé jiē dào	10
 月牙湖街道	yuè yá hú jiē dào	10
+岳陽華容縣	yuè yáng huá róng xiàn	10
 岳陽樓街道	yuè yáng lóu jiē dào	10
+岳陽平江縣	yuè yáng píng jiāng xiàn	10
+岳陽湘陰縣	yuè yáng xiāng yīn xiàn	10
 岳陽岳陽樓	yuè yáng yuè yáng lóu	10
+岳陽岳陽縣	yuè yáng yuè yáng xiàn	10
+運城稷山縣	yùn chéng jì shān xiàn	10
+運城臨猗縣	yùn chéng lín yī xiàn	10
+運城平陸縣	yùn chéng píng lù xiàn	10
+運城芮城縣	yùn chéng ruì chéng xiàn	10
 運城市絳縣	yùn chéng shì jiàng xiàn	10
 運城市夏縣	yùn chéng shì xià xiàn	10
+運城萬榮縣	yùn chéng wàn róng xiàn	10
+運城聞喜縣	yùn chéng wén xǐ xiàn	10
+運城新絳縣	yùn chéng xīn jiàng xiàn	10
+運城垣曲縣	yùn chéng yuán qū xiàn	10
 雲東海街道	yún dōng hǎi jiē dào	10
 雲浮市街道	yún fú shì jiē dào	10
+雲浮新興縣	yún fú xīn xīng xiàn	10
+雲浮鬱南縣	yún fú yù nán xiàn	10
 運河西街道	yùn hé xī jiē dào	10
 允景洪街道	yǔn jǐng hóng jiē dào	10
 雲門山街道	yún mén shān jiē dào	10
+雲南保山市	yún nán bǎo shān shì	10
+雲南昆明市	yún nán kūn míng shì	10
+雲南麗江市	yún nán lì jiāng shì	10
+雲南臨滄市	yún nán lín cāng shì	10
 雲南路街道	yún nán lù jiē dào	10
+雲南普洱市	yún nán pǔ ěr shì	10
+雲南曲靖市	yún nán qū jìng shì	10
+雲南玉溪市	yún nán yù xī shì	10
+雲南昭通市	yún nán zhāo tōng shì	10
 雲鵬道街道	yún péng dào jiē dào	10
 雲杉路街道	yún shān lù jiē dào	10
 雲水謠古鎮	yún shuǐ yáo gǔ zhèn	10
@@ -76682,6 +77856,9 @@ sort: by_weight
 扎西繞登鄉	zhā xī rào dēng xiāng	10
 展旦召蘇木	zhǎn dàn zhào sū mù	10
 沾河林業局	zhān hé lín yè jú	10
+湛江開發區	zhàn jiāng kāi fā qū	10
+湛江遂溪縣	zhàn jiāng suì xī xiàn	10
+湛江徐聞縣	zhàn jiāng xú wén xiàn	10
 展覽路街道	zhǎn lǎn lù jiē dào	10
 站前路街道	zhàn qián lù jiē dào	10
 張安屯街道	zhāng ān tún jiē dào	10
@@ -76722,19 +77899,56 @@ sort: by_weight
 樟坪畲族鄉	zhāng píng shē zú xiāng	10
 張雙樓街道	zhāng shuāng lóu jiē dào	10
 張相公屯鄉	zhāng xiàng gong tún xiāng	10
+張掖高臺縣	zhāng yè gāo tái xiàn	10
+張掖臨澤縣	zhāng yè lín zé xiàn	10
 張掖路街道	zhāng yè lù jiē dào	10
+張掖民樂縣	zhāng yè mín yuè xiàn	10
+張掖山丹縣	zhāng yè shān dān xiàn	10
 彰驛站街道	zhāng yì zhàn jiē dào	10
+漳州東山縣	zhāng zhōu dōng shān xiàn	10
+漳州華安縣	zhāng zhōu huá ān xiàn	10
+漳州開發區	zhāng zhōu kāi fā qū	10
+漳州南靖縣	zhāng zhōu nán jìng xiàn	10
+漳州平和縣	zhāng zhōu píng hé xiàn	10
+漳州雲霄縣	zhāng zhōu yún xiāo xiàn	10
+漳州漳浦縣	zhāng zhōu zhāng pǔ xiàn	10
+漳州詔安縣	zhāng zhōu zhào ān xiàn	10
 張莊路街道	zhāng zhuāng lù jiē dào	10
 招寶山街道	zhāo bǎo shān jiē dào	10
 趙各莊街道	zhào gè zhuāng jiē dào	10
 召稼樓古鎮	zhào jià lóu gǔ zhèn	10
 趙家莊街道	zhào jiā zhuāng jiē dào	10
 昭君路街道	zhāo jūn lù jiē dào	10
+肇慶德慶縣	zhào qìng dé qìng xiàn	10
+肇慶封開縣	zhào qìng fēng kāi xiàn	10
+肇慶廣寧縣	zhào qìng guǎng níng xiàn	10
+肇慶懷集縣	zhào qìng huái jí xiàn	10
+昭通大關縣	zhāo tōng dà guān xiàn	10
+昭通魯甸縣	zhāo tōng lǔ diān xiàn	10
+昭通巧家縣	zhāo tōng qiǎo jiā xiàn	10
+昭通綏江縣	zhāo tōng suí jiāng xiàn	10
+昭通威信縣	zhāo tōng wēi xìn xiàn	10
+昭通鹽津縣	zhāo tōng yán jīn xiàn	10
+昭通彝良縣	zhāo tōng yí liáng xiàn	10
+昭通永善縣	zhāo tōng yǒng shàn xiàn	10
+昭通鎮雄縣	zhāo tōng zhèn xióng xiàn	10
 趙佗路街道	zhào tuó lù jiē dào	10
 趙西垸林場	zhào xī yuàn lín chǎng	10
+浙江杭州市	zhè jiāng háng zhōu shì	10
+浙江湖州市	zhè jiāng hú zhōu shì	10
+浙江嘉興市	zhè jiāng jiā xīng shì	10
+浙江金華市	zhè jiāng jīn huá shì	10
+浙江麗水市	zhè jiāng lí shuǐ shì	10
+浙江寧波市	zhè jiāng níng bō shì	10
+浙江衢州市	zhè jiāng qú zhōu shì	10
+浙江紹興市	zhè jiāng shào xīng shì	10
+浙江台州市	zhè jiāng tāi zhōu shì	10
+浙江溫州市	zhè jiāng wēn zhōu shì	10
+浙江舟山市	zhè jiāng zhōu shān shì	10
 振安街街道	zhèn ān jiē jiē dào	10
 鎮安縣苗圃	zhèn ān xiàn miáo pǔ	10
 振華路街道	zhèn huá lù jiē dào	10
+鎮江開發區	zhèn jiāng kāi fā qū	10
 鎮江路街道	zhèn jiāng lù jiē dào	10
 鎮江寺街道	zhèn jiāng sì jiē dào	10
 震雷山街道	zhèn léi shān jiē dào	10
@@ -76755,8 +77969,10 @@ sort: by_weight
 正揚路街道	zhèng yáng lù jiē dào	10
 正陽路街道	zhèng yáng lù jiē dào	10
 正陽區街道	zhèng yáng qū jiē dào	10
+鄭州開發區	zhèng zhōu kāi fā qū	10
 鄭州路街道	zhèng zhōu lù jiē dào	10
 鄭州市街道	zhèng zhōu shì jiē dào	10
+鄭州中牟縣	zhèng zhōu zhōng mù xiàn	10
 芝罘島街道	zhī fú dǎo jiē dào	10
 製錦市街道	zhì jǐn shì jiē dào	10
 芝麻墩街道	zhī ma dūn jiē dào	10
@@ -76776,6 +77992,8 @@ sort: by_weight
 中京工業園	zhōng jīng gōng yè yuán	10
 中梁山街道	zhōng liáng shān jiē dào	10
 中南路街道	zhōng nán lù jiē dào	10
+重慶城口縣	zhòng qìng chéng kǒu xiàn	10
+鍾山風景區	zhōng shān fēng jǐng qū	10
 中山港街道	zhōng shān gǎng jiē dào	10
 中山街街道	zhōng shān jiē jiē dào	10
 中山路街道	zhōng shān lù jiē dào	10
@@ -76785,7 +78003,9 @@ sort: by_weight
 中所營街道	zhōng suǒ yíng jiē dào	10
 中泰產業園	zhōng tài chǎn yè yuán	10
 中同街街道	zhōng tóng jiē jiē dào	10
+中衛海原縣	zhōng wèi hǎi yuán xiàn	10
 中衛沙坡頭	zhōng wèi shā pō tóu	10
+中衛中寧縣	zhōng wèi zhōng níng xiàn	10
 中心街街道	zhōng xīn jiē jiē dào	10
 中心路街道	zhōng xīn lù jiē dào	10
 中心站街道	zhōng xīn zhàn jiē dào	10
@@ -76801,10 +78021,20 @@ sort: by_weight
 周家渡街道	zhōu jiā dù jiē dào	10
 周家橋街道	zhōu jiā qiáo jiē dào	10
 周家泉街道	zhōu jiā quán jiē dào	10
+周口鄲城縣	zhōu kǒu dān chéng xiàn	10
 周口店地區	zhōu kǒu diàn dì qū	10
+周口扶溝縣	zhōu kǒu fú gōu xiàn	10
+周口鹿邑縣	zhōu kǒu lù yì xiàn	10
+周口商水縣	zhōu kǒu shāng shuǐ xiàn	10
+周口沈丘縣	zhōu kǒu shěn qiū xiàn	10
+周口太康縣	zhōu kǒu tài kāng xiàn	10
+周口西華縣	zhōu kǒu xī huá xiàn	10
 周路口街道	zhōu lù kǒu jiē dào	10
+周洛風景區	zhōu luò fēng jǐng qū	10
+舟山岱山縣	zhōu shān dài shān xiàn	10
 周山路街道	zhōu shān lù jiē dào	10
 周山畲族鄉	zhōu shān shē zú xiāng	10
+舟山嵊泗縣	zhōu shān shèng sì xiàn	10
 舟山市街道	zhōu shān shì jiē dào	10
 舟水橋街道	zhōu shuǐ qiáo jiē dào	10
 周水子街道	zhōu shuǐ zi jiē dào	10
@@ -76836,12 +78066,19 @@ sort: by_weight
 珠斯花街道	zhū sī huā jiē dào	10
 竹垟畲族鄉	zhú yáng shē zú xiāng	10
 茱萸山街道	zhū yú shān jiē dào	10
+株洲茶陵縣	zhū zhōu chá líng xiàn	10
 株洲市攸縣	zhū zhōu shì yōu xiàn	10
+株洲炎陵縣	zhū zhōu yán líng xiàn	10
 抓喜秀龍鎮	zhuā xǐ xiù lóng zhèn	10
+沌口開發區	zhuàn kǒu kāi fā qū	10
 狀元洲街道	zhuàng yuan zhōu jiē dào	10
 準格爾召鎮	zhǔn gé ěr zhào zhèn	10
 卓刀泉街道	zhuó dāo quán jiē dào	10
+淄博高青縣	zī bó gāo qīng xiàn	10
+淄博桓台縣	zī bó huán tái xiàn	10
+淄博沂源縣	zī bó yí yuán xiàn	10
 子耳彝族鄉	zǐ ěr yí zú xiāng	10
+自貢富順縣	zì gòng fù shùn xiàn	10
 自貢市榮縣	zì gòng shì róng xiàn	10
 自貢自流井	zì gòng zì liú jǐng	10
 紫金街街道	zǐ jīn jiē jiē dào	10
@@ -76850,6 +78087,8 @@ sort: by_weight
 滋泥泉子鎮	zī ní quán zi zhèn	10
 自強路街道	zì qiáng lù jiē dào	10
 自強苗族鄉	zì qiáng miáo zú xiāng	10
+資陽安岳縣	zī yáng ān yuè xiàn	10
+資陽樂至縣	zī yáng lè zhì xiàn	10
 資陽市鄉鎮	zī yáng shì xiāng zhèn	10
 自由路街道	zì yóu lù jiē dào	10
 紫雲路街道	zǐ yún lù jiē dào	10
@@ -76859,8 +78098,15 @@ sort: by_weight
 總口管理區	zǒng kǒu guǎn lǐ qū	10
 棕樹營街道	zōng shù yíng jiē dào	10
 走馬嶺街道	zǒu mǎ lǐng jiē dào	10
+遵義鳳岡縣	zūn yì fèng gāng xiàn	10
 遵義紅花崗	zūn yì hóng huā gǎng	10
 遵義路街道	zūn yì lù jiē dào	10
+遵義湄潭縣	zūn yì méi tán xiàn	10
+遵義綏陽縣	zūn yì suí yáng xiàn	10
+遵義桐梓縣	zūn yì tóng zǐ xiàn	10
+遵義習水縣	zūn yì xí shuǐ xiàn	10
+遵義餘慶縣	zūn yì yú qìng xiàn	10
+遵義正安縣	zūn yì zhèng ān xiàn	10
 作登瑤族鄉	zuò dēng yáo zú xiāng	10
 佐蓋多瑪鄉	zuǒ gài duō mǎ xiāng	10
 佐蓋曼瑪鎮	zuǒ gài màn mǎ zhèn	10
@@ -76906,6 +78152,7 @@ sort: by_weight
 安徽蚌埠淮上	ān huī bèng bù huái shàng	10
 安徽滁州琅琊	ān huī chú zhōu láng yá	10
 安徽懷遠馬城	ān huī huái yuǎn mǎ chéng	10
+安徽馬鞍山市	ān huī mǎ ān shān shì	10
 安徽省安慶市	ān huī shěng ān qìng shì	10
 安徽省蚌埠市	ān huī shěng bèng bù shì	10
 安徽省亳州市	ān huī shěng bó zhōu shì	10
@@ -77165,6 +78412,7 @@ sort: by_weight
 蚌埠市懷遠縣	bèng bù shì huái yuǎn xiàn	10
 蚌埠市五河縣	bèng bù shì wǔ hé xiàn	10
 蚌埠市禹會區	bèng bù shì yǔ huì qū	10
+筆架山風景區	bǐ jià shān fēng jǐng qū	10
 畢節市大方縣	bì jié shì dà fāng xiàn	10
 畢節市赫章縣	bì jié shì hè zhāng xiàn	10
 畢節市金沙縣	bì jié shì jīn shā xiàn	10
@@ -77304,6 +78552,7 @@ sort: by_weight
 常德市桃源縣	cháng dé shì táo yuán xiàn	10
 常德市武陵區	cháng dé shì wǔ líng qū	10
 長底布依族鄉	cháng dǐ bù yī zú xiāng	10
+昌都類烏齊縣	chāng dū lèi wū qí xiàn	10
 昌都市八宿縣	chāng dū shì bā xiǔ xiàn	10
 昌都市邊壩縣	chāng dū shì biān bà xiàn	10
 昌都市察雅縣	chāng dū shì chá yǎ xiàn	10
@@ -77478,6 +78727,7 @@ sort: by_weight
 慈溪市逍林鎮	cí xī shì xiāo lín zhèn	30
 慈溪市周巷鎮	cí xī shì zhōu xiàng zhèn	23
 翠雷山墾殖場	cuì léi shān kěn zhí chǎng	10
+大安森林公園	dà ān sēn lín gōng yuán	10
 大堡蒙古族鄉	dà bǎo měng gǔ zú xiāng	10
 大曹莊管理區	dà cáo zhuāng guǎn lǐ qū	10
 大褚村回族鄉	dà chǔ cūn huí zú xiāng	10
@@ -77486,6 +78736,8 @@ sort: by_weight
 大高坪苗族鄉	dà gāo píng miáo zú xiāng	10
 大海林林業局	dà hǎi lín lín yè jú	10
 大河中路街道	dà hé zhōng lù jiē dào	10
+大洪山風景區	dà hóng shān fēng jǐng qū	12
+大紅山風景區	dà hóng shān fēng jǐng qū	10
 達來胡碩蘇木	dá lái hú shuò sū mù	10
 達裏雅布依鄉	dá lǐ yǎ bù yī xiāng	10
 大連市長海縣	dà lián shì cháng hǎi xiàn	10
@@ -77578,7 +78830,7 @@ sort: by_weight
 德陽市什邡市	dé yáng shì shí fāng shì	10
 德陽市中江縣	dé yáng shì zhōng jiāng xiàn	10
 德州市德城區	dé zhōu shì dé chéng qū	10
-德州市樂陵市	dé zhōu shì lè líng shì	10
+德州市樂陵市	dé zhōu shì lào líng shì	10
 德州市臨邑縣	dé zhōu shì lín yì xiàn	10
 德州市陵城區	dé zhōu shì líng chéng qū	10
 德州市寧津縣	dé zhōu shì níng jīn xiàn	10
@@ -77603,6 +78855,7 @@ sort: by_weight
 定西市通渭縣	dìng xī shì tōng wèi xiàn	10
 定西市渭源縣	dìng xī shì wèi yuán xiàn	10
 丁香北路街道	dīng xiāng běi lù jiē dào	10
+東壩郊野公園	dōng bà jiāo yě gōng yuán	10
 東巴扎回族鄉	dōng bā zhā huí zú xiāng	10
 東大門管理處	dōng dà mén guǎn lǐ chù	10
 東方廣場街道	dōng fāng guǎng chǎng jiē dào	10
@@ -77655,6 +78908,7 @@ sort: by_weight
 額裏圖種畜場	é lǐ tú zhǒng chù chǎng	10
 鄂倫春民族鄉	è lún chūn mín zú xiāng	10
 鄂倫春自治旗	è lún chūn zì zhì qí	10
+峨眉山風景區	é méi shān fēng jǐng qū	10
 額仁淖爾蘇木	é rén nào ěr sū mù	10
 俄亞納西族鄉	é yà nà xī zú xiāng	10
 鄂州市鄂城區	è zhōu shì è chéng qū	10
@@ -77667,9 +78921,11 @@ sort: by_weight
 二七新村街道	èr qī xīn cūn jiē dào	10
 二十里堡街道	èr shí lǐ pù jiē dào	10
 方城大寺林場	fāng chéng dà sì lín chǎng	10
+防城港上思縣	fáng chéng gǎng shàng sī xiàn	10
 奉化市蓴湖鎮	fèng huà shì chún hú zhèn	15
 奉化市尚田鎮	fèng huà shì shàng tián zhèn	18
 鳳凰北街街道	fèng huáng běi jiē jiē dào	10
+鳳凰山風景區	fèng huáng shān fēng jǐng qū	10
 風居住的街道	fēng jū zhù de jiē dào	10
 鳳鳴穀風景區	fèng míng gǔ fēng jǐng qū	10
 佛山市禪城區	fó shān shì chán chéng qū	10
@@ -77741,6 +78997,7 @@ sort: by_weight
 撫州市資溪縣	fǔ zhōu shì zī xī xiàn	10
 嘎瑪貢桑街道	gā mǎ gòng sāng jiē dào	10
 甘坑生態林場	gān kēng shēng tài lín chǎng	10
+甘肅嘉峪關市	gān sù jiā yù guān shì	10
 甘肅農墾集團	gān sù nóng kěn jí tuán	10
 甘肅省白銀市	gān sù shěng bái yín shì	10
 甘肅省定西市	gān sù shěng dìng xī shì	10
@@ -77781,6 +79038,7 @@ sort: by_weight
 高樓坪侗族鄉	gāo lóu píng dòng zú xiāng	10
 高鐵片區街道	gāo tiě piàn qū jiē dào	10
 高鐵商務區辦	gāo tiě shāng wù qū bàn	10
+高新開發區站	gāo xīn kāi fā qū zhàn	10
 高新區米莊鎮	gāo xīn qū mǐ zhuāng zhèn	10
 高新區團山鎮	gāo xīn qū tuán shān zhèn	10
 高雄市阿蓮區	gāo xióng shì ā lián qū	10
@@ -77820,6 +79078,7 @@ sort: by_weight
 高雄市永安區	gāo xióng shì yǒng ān qū	10
 高雄市梓官區	gāo xióng shì zǐ guān qū	10
 高雄市左營區	gāo xióng shì zuǒ yíng qū	10
+格林威治公園	gé lín wēi zhì gōng yuán	10
 格日朝魯蘇木	gé rì cháo lǔ sū mù	10
 格薩拉彝族鄉	gé sà lā yí zú xiāng	10
 耿馬華僑農場	gěng mǎ huá qiáo nóng chǎng	10
@@ -77924,6 +79183,7 @@ sort: by_weight
 貴陽市修文縣	guì yáng shì xiū wén xiàn	10
 貴陽市雲岩區	guì yáng shì yún yán qū	10
 桂雲花滿族鄉	guì yún huā mǎn zú xiāng	10
+貴州六盤水市	guì zhōu liù pán shuǐ shì	10
 貴州省安順市	guì zhōu shěng ān shùn shì	10
 貴州省畢節市	guì zhōu shěng bì jié shì	10
 貴州省貴陽市	guì zhōu shěng guì yáng shì	10
@@ -77949,15 +79209,23 @@ sort: by_weight
 果園新村街道	guǒ yuán xīn cūn jiē dào	10
 果子窪回族鄉	guǒ zi wā huí zú xiāng	10
 哈巴格希街道	hǎ bā gé xī jiē dào	10
+哈爾濱巴彥縣	hā ěr bīn bā yàn xiàn	10
+哈爾濱方正縣	hā ěr bīn fāng zhèng xiàn	10
+哈爾濱木蘭縣	hā ěr bīn mù lán xiàn	10
 哈爾濱市賓縣	hā ěr bīn shì bīn xiàn	10
+哈爾濱通河縣	hā ěr bīn tōng hé xiàn	10
+哈爾濱延壽縣	hā ěr bīn yán shòu xiàn	10
+哈爾濱依蘭縣	hā ěr bīn yī lán xiàn	10
 哈拉布拉克鄉	hā la bù lā kè xiāng	10
 哈密市伊吾縣	hā mì shì yī wú xiàn	10
 哈密市伊州區	hā mì shì yī zhōu qū	10
 哈尼喀塔木鄉	hā ní kā tǎ mù xiāng	10
 哈日諾爾蘇木	hā rì nuò ěr sū mù	10
+海德公園一號	hǎi dé gōng yuán yī hào	10
 海東市樂都區	hǎi dōng shì lè dū qū	10
 海東市平安區	hǎi dōng shì píng ān qū	10
 海防辦事處鄉	hǎi fáng bàn shì chù xiāng	10
+海河外灘公園	hǎi hé wài tān gōng yuán	10
 海軍廣場街道	hǎi jūn guǎng chǎng jiē dào	10
 海口市龍華區	hǎi kǒu shì lóng huá qū	10
 海口市美蘭區	hǎi kǒu shì měi lán qū	10
@@ -78024,6 +79292,7 @@ sort: by_weight
 河北廊坊廣陽	hé běi láng fāng guǎng yáng	10
 河北廊坊龍港	hé běi láng fāng lóng gǎng	10
 河北留善寺鎮	hé běi liú shàn sì zhèn	10
+河北秦皇島市	hé běi qín huáng dǎo shì	10
 河北省保定市	hé běi shěng bǎo dìng shì	10
 河北省滄州市	hé běi shěng cāng zhōu shì	10
 河北省承德市	hé běi shěng chéng dé shì	10
@@ -78032,8 +79301,10 @@ sort: by_weight
 河北省廊坊市	hé běi shěng láng fāng shì	10
 河北省唐山市	hé běi shěng táng shān shì	10
 河北省邢台市	hé běi shěng xíng tái shì	10
+河北石家莊市	hé běi shí jiā zhuāng shì	10
 河北唐山海港	hé běi táng shān hǎi gǎng	10
 河北唐山蘆臺	hé běi táng shān lú tái	10
+河北張家口市	hé běi zhāng jiā kǒu shì	10
 鶴壁市鶴山區	hè bì shì hè shān qū	10
 鶴壁市檢察院	hè bì shì jiǎn chá yuàn	20
 鶴壁市淇濱區	hè bì shì qí bīn qū	10
@@ -78070,6 +79341,8 @@ sort: by_weight
 賀家山原種場	hè jiā shān yuán zhǒng chǎng	10
 和龍市公安局	hé lóng shì gōng ān jú	14
 和龍市林業局	hé lóng shì lín yè jú	10
+河南平頂山市	hé nán píng dǐng shān shì	10
+河南三門峽市	hé nán sān mén xiá shì	10
 河南省安陽市	hé nán shěng ān yáng shì	10
 河南省鶴壁市	hé nán shěng hè bì shì	10
 河南省焦作市	hé nán shěng jiāo zuò shì	10
@@ -78084,6 +79357,7 @@ sort: by_weight
 河南省許昌市	hé nán shěng xǔ chāng shì	10
 河南省鄭州市	hé nán shěng zhèng zhōu shì	10
 河南省周口市	hé nán shěng zhōu kǒu shì	10
+河南駐馬店市	hé nán zhù mǎ diàn shì	10
 和平街道地區	hé píng jiē dào dì qū	10
 鶴山市中醫院	hè shān shì zhōng yī yuàn	36
 和什托洛蓋鎮	hé shí tuō luò gài zhèn	10
@@ -78116,12 +79390,19 @@ sort: by_weight
 黑河市孫吳縣	hēi hé shì sūn wú xiàn	10
 黑河市遜克縣	hēi hé shì xùn kè xiàn	10
 黑河五大連池	hēi hé wǔ dà lián chí	10
+黑龍江大慶市	hēi lóng jiāng dà qìng shì	10
 黑龍江哈爾濱	hēi lóng jiāng hā ěr bīn	10
+黑龍江鶴崗市	hēi lóng jiāng hè gǎng shì	10
+黑龍江黑河市	hēi lóng jiāng hēi hé shì	10
+黑龍江雞西市	hēi lóng jiāng jī xī shì	10
 黑龍江佳木斯	hēi lóng jiāng jiā mù sī	10
 黑龍江牡丹江	hēi lóng jiāng mǔ dān jiāng	10
 黑龍江七台河	hēi lóng jiāng qī tái hé	10
 黑龍江省鄉鎮	hēi lóng jiāng shěng xiāng zhèn	10
 黑龍江雙鴨山	hēi lóng jiāng shuāng yā shān	10
+黑龍江綏化市	hēi lóng jiāng suí huà shì	10
+黑龍江伊春市	hēi lóng jiāng yī chūn shì	10
+黑龍潭風景區	hēi lóng tán fēng jǐng qū	10
 恆豐企業集團	héng fēng qǐ yè jí tuán	10
 恆合土家族鄉	héng hé tǔ jiā zú xiāng	10
 衡水濱湖新區	héng shuǐ bīn hú xīn qū	10
@@ -78151,6 +79432,7 @@ sort: by_weight
 洪家關白族鄉	hóng jiā guān bái zú xiāng	10
 紅旗奶山羊場	hóng qí nǎi shān yáng chǎng	10
 紅色邊疆農場	hóng sè biān jiāng nóng chǎng	10
+紅寺堡開發區	hóng sì bǔ kāi fā qū	10
 洪塘營瑤族鄉	hóng táng yíng yáo zú xiāng	10
 湖北口回族鄉	hú běi kǒu huí zú xiāng	10
 湖北省鄂州市	hú běi shěng è zhōu shì	10
@@ -78174,6 +79456,8 @@ sort: by_weight
 呼和溫都爾鎮	hū hé wēn dōu ěr zhèn	10
 呼勒斯太蘇木	hū lè sī tài sū mù	10
 葫蘆島打漁山	hú lu dǎo dǎ yú shān	10
+葫蘆島建昌縣	hú lu dǎo jiàn chāng xiàn	10
+葫蘆島綏中縣	hú lu dǎo suí zhōng xiàn	10
 呼倫貝爾阿榮	hū lún bèi ěr ā róng	10
 呼倫貝爾根河	hū lún bèi ěr gēn hé	10
 呼倫貝爾莫旗	hū lún bèi ěr mò qí	10
@@ -78190,6 +79474,7 @@ sort: by_weight
 湖南省永州市	hú nán shěng yǒng zhōu shì	10
 湖南省岳陽市	hú nán shěng yuè yáng shì	10
 湖南省株洲市	hú nán shěng zhū zhōu shì	10
+湖南張家界市	hú nán zhāng jiā jiè shì	10
 戶撒阿昌族鄉	hù sā ā chāng zú xiāng	10
 呼圖壁種牛場	hū tú bì zhòng niú chǎng	10
 虎形山瑤族鄉	hǔ xíng shān yáo zú xiāng	10
@@ -78313,6 +79598,7 @@ sort: by_weight
 基隆市信義區	jī lóng shì xìn yì qū	10
 基隆市中山區	jī lóng shì zhōng shān qū	10
 基隆市中正區	jī lóng shì zhōng zhèng qū	10
+級旅遊風景區	jí lǚ yóu fēng jǐng qū	10
 即墨市衛生局	jí mò shì wèi shēng jú	19
 濟南市長清區	jǐ nán shì cháng qīng qū	10
 濟南市鋼城區	jǐ nán shì gāng chéng qū	10
@@ -78359,8 +79645,11 @@ sort: by_weight
 濟源市軹城鎮	jì yuán shì zhǐ chéng zhèn	10
 加吉博洛格鎮	jiā jí bó luò gé zhèn	10
 加馬鐵熱克鄉	jiā mǎ tiě rè kè xiāng	10
+佳木斯樺川縣	jiā mù sī huà chuān xiàn	10
+佳木斯樺南縣	jiā mù sī huà nán xiàn	10
 佳木斯市郊區	jiā mù sī shì jiāo qū	10
 佳木斯市鄉鎮	jiā mù sī shì xiāng zhèn	10
+佳木斯湯原縣	jiā mù sī tāng yuán xiàn	10
 嘉興市海寧市	jiā xīng shì hǎi níng shì	10
 嘉興市海鹽縣	jiā xīng shì hǎi yán xiàn	10
 嘉興市嘉善縣	jiā xīng shì jiā shàn xiàn	10
@@ -78389,6 +79678,7 @@ sort: by_weight
 江都市大橋鎮	jiāng dū shì dà qiáo zhèn	10
 江都市國稅局	jiāng dū shì guó shuì jú	11
 江漢二橋街道	jiāng hàn èr qiáo jiē dào	10
+將軍山風景區	jiāng jūn shān fēng jǐng qū	10
 江門市恩平市	jiāng mén shì ēn píng shì	10
 江門市鶴山市	jiāng mén shì hè shān shì	10
 江門市江海區	jiāng mén shì jiāng hǎi qū	10
@@ -78397,6 +79687,7 @@ sort: by_weight
 江門市臺山市	jiāng mén shì tái shān shì	10
 江門市新會區	jiāng mén shì xīn huì qū	10
 江橋蒙古族鎮	jiāng qiáo měng gǔ zú zhèn	10
+江蘇連雲港市	jiāng sū lián yún gǎng shì	10
 江蘇呂四海洋	jiāng sū lǚ sì hǎi yáng	10
 江蘇省常州市	jiāng sū shěng cháng zhōu shì	10
 江蘇省淮安市	jiāng sū shěng huái ān shì	10
@@ -78410,6 +79701,7 @@ sort: by_weight
 江蘇省鹽城市	jiāng sū shěng yán chéng shì	10
 江蘇省揚州市	jiāng sū shěng yáng zhōu shì	10
 江蘇省鎮江市	jiāng sū shěng zhèn jiāng shì	10
+江西景德鎮市	jiāng xī jǐng dé zhèn shì	10
 江西省撫州市	jiāng xī shěng fǔ zhōu shì	10
 江西省贛州市	jiāng xī shěng gàn zhōu shì	10
 江西省吉安市	jiāng xī shěng jí ān shì	10
@@ -78498,7 +79790,9 @@ sort: by_weight
 錦州市凌河區	jǐn zhōu shì líng hé qū	10
 錦州市太和區	jǐn zhōu shì tài hé qū	10
 金珠西路街道	jīn zhū xī lù jiē dào	10
+景德鎮浮梁縣	jǐng dé zhèn fú liáng xiàn	10
 景哈哈尼族鄉	jǐng hā hā ní zú xiāng	10
+經濟開發區路	jīng jì kāi fā qū lù	10
 經濟開發區鎮	jīng jì kāi fā qū zhèn	10
 荊角土家族鄉	jīng jiǎo tǔ jiā zú xiāng	10
 荊門市東寶區	jīng mén shì dōng bǎo qū	10
@@ -78533,12 +79827,15 @@ sort: by_weight
 酒井哈尼族鄉	jiǔ jǐng hā ní zú xiāng	10
 九礦廣場街道	jiǔ kuàng guǎng chǎng jiē dào	10
 九龍坡區街道	jiǔ lóng pō qū jiē dào	10
+九龍山風景區	jiǔ lóng shān fēng jǐng qū	10
 酒泉市敦煌市	jiǔ quán shì dūn huáng shì	10
 酒泉市瓜州縣	jiǔ quán shì guā zhōu xiàn	10
 酒泉市金塔縣	jiǔ quán shì jīn tǎ xiàn	10
 酒泉市肅州區	jiǔ quán shì sù zhōu qū	10
 酒泉市玉門市	jiǔ quán shì yù mén shì	10
+九如山風景區	jiǔ rú shān fēng jǐng qū	10
 舊屋基彝族鄉	jiù wū jī yí zú xiāng	10
+九仙山風景區	jiǔ xiān shān fēng jǐng qū	10
 九疑山瑤族鄉	jiǔ yí shān yáo zú xiāng	10
 九洲江開發區	jiǔ zhōu jiāng kāi fā qū	10
 喀拉布勒根鄉	kā lā bù lè gēn xiāng	10
@@ -78575,6 +79872,7 @@ sort: by_weight
 克孜勒博依鎮	kè zī lè bó yī zhèn	10
 庫額爾齊斯鎮	kù é ěr qí sī zhèn	10
 庫科西魯格鄉	kù kē xī lǔ gé xiāng	10
+庫肯霍夫公園	kù kěn huò fū gōng yuán	10
 庫拉木勒克鄉	kù lā mù lè kè xiāng	10
 庫蘭薩日克鄉	kù lán sà rì kè xiāng	10
 庫木庫薩爾鄉	kù mù kù sà ěr xiāng	10
@@ -78628,13 +79926,16 @@ sort: by_weight
 廊坊市安次區	láng fāng shì ān cì qū	10
 廊坊市霸州市	láng fāng shì bà zhōu shì	10
 廊坊市大城縣	láng fāng shì dài chéng xiàn	30
-廊坊市大城縣	láng fāng shì dài chéng xiàn	10
 廊坊市固安縣	láng fāng shì gù ān xiàn	10
 廊坊市廣陽區	láng fāng shì guǎng yáng qū	10
 廊坊市三河市	láng fāng shì sān hé shì	10
 廊坊市文安縣	láng fāng shì wén ān xiàn	10
 廊坊市香河縣	láng fāng shì xiāng hé xiàn	10
 廊坊市永清縣	láng fāng shì yǒng qīng xiàn	10
+琅琊山風景區	láng yá shān fēng jǐng qū	10
+老君山風景區	lǎo jūn shān fēng jǐng qū	10
+老泉山野公園	lǎo quán shān yě gōng yuán	10
+老山森林公園	lǎo shān sēn lín gōng yuán	10
 樂昌市坪石鎮	lè chāng shì píng shí zhèn	35
 勒門巴民族鄉	lè mén bā mín zú xiāng	10
 樂平市公安局	lè píng shì gōng ān jú	120
@@ -78668,13 +79969,18 @@ sort: by_weight
 栗子坪彝族鄉	lì zi píng yí zú xiāng	10
 聯合市公安局	lián hé shì gōng ān jú	69
 聯合市教育局	lián hé shì jiào yù jú	58
+蓮花山風景區	lián huā shān fēng jǐng qū	10
 戀鄉太行水鎮	liàn xiāng tài háng shuǐ zhèn	10
+連雲港東海縣	lián yún gǎng dōng hǎi xiàn	10
+連雲港灌南縣	lián yún gǎng guàn nán xiàn	10
+連雲港灌雲縣	lián yún gǎng guàn yún xiàn	10
 涼城新村街道	liáng chéng xīn cūn jiē dào	10
 兩河片區街道	liǎng hé piàn qū jiē dào	10
 梁家屯路街道	liáng jiā tún lù jiē dào	10
 兩家子滿族鄉	liǎng jiā zǐ mǎn zú xiāng	10
 涼水朝鮮族鄉	liáng shuǐ cháo xiǎn zú xiāng	10
 良種繁育中心	liáng zhǒng fán yù zhōng xīn	10
+梁祝文化公園	liáng zhù wén huà gōng yuán	10
 聊城市茌平區	liáo chéng shì chí píng qū	10
 聊城市東阿縣	liáo chéng shì dōng ē xiàn	10
 聊城市高唐縣	liáo chéng shì gāo táng xiàn	10
@@ -78684,6 +79990,7 @@ sort: by_weight
 聊城市教育局	liáo chéng shì jiào yù jú	23
 聊城市臨清市	liáo chéng shì lín qīng shì	10
 聊城市陽谷縣	liáo chéng shì yáng gǔ xiàn	10
+遼寧葫蘆島市	liáo níng hú lu dǎo shì	10
 遼寧省鞍山市	liáo níng shěng ān shān shì	10
 遼寧省本溪市	liáo níng shěng běn xī shì	10
 遼寧省朝陽市	liáo níng shěng cháo yáng shì	10
@@ -78749,8 +80056,10 @@ sort: by_weight
 林芝市墨脫縣	lín zhī shì mò tuō xiàn	10
 靈寶市園藝場	líng bǎo shì yuán yì chǎng	10
 菱角湖管理區	líng jiǎo hú guǎn lǐ qū	10
+六合開發區站	liù hé kāi fā qū zhàn	10
 六合垸管理區	liù hé yuàn guǎn lǐ qū	10
 劉家坪白族鄉	liú jiā píng bái zú xiāng	10
+六盤水水城縣	liù pán shuǐ shuǐ chéng xiàn	10
 留守營管理處	liú shǒu yíng guǎn lǐ chù	10
 劉檯子滿族鄉	liú tái zi mǎn zú xiāng	10
 柳州市城中區	liǔ zhōu shì chéng zhōng qū	10
@@ -78815,10 +80124,8 @@ sort: by_weight
 羅漢寺種畜場	luó hàn sì zhǒng chù chǎng	10
 漯河市公安局	luò hé shì gōng ān jú	106
 漯河市臨潁縣	luò hé shì lín yǐng xiàn	51
-漯河市臨潁縣	luò hé shì lín yǐng xiàn	10
 漯河市召陵區	luò hé shì shào líng qū	10
 漯河市舞陽縣	luò hé shì wǔ yáng xiàn	35
-漯河市舞陽縣	luò hé shì wǔ yáng xiàn	10
 漯河市郾城區	luò hé shì yǎn chéng qū	10
 漯河市源匯區	luò hé shì yuán huì qū	10
 洛陽市吉利區	luò yáng shì jí lì qū	10
@@ -78846,6 +80153,8 @@ sort: by_weight
 呂梁市孝義市	lǚ liáng shì xiào yì shì	10
 呂梁市中陽縣	lǚ liáng shì zhōng yáng xiàn	10
 綠色草原牧場	lǜ sè cǎo yuán mù chǎng	10
+馬鞍山當塗縣	mǎ ān shān dāng tú xiàn	10
+馬鞍山含山縣	mǎ ān shān hán shān xiàn	10
 馬鞍山市和縣	mǎ ān shān shì hé xiàn	10
 麻城林店茶場	má chéng lín diàn chá chǎng	10
 麻城明山水庫	má chéng míng shān shuǐ kù	10
@@ -78890,11 +80199,13 @@ sort: by_weight
 綿陽市遊仙區	mián yáng shì yóu xiān qū	10
 綿陽市梓潼縣	mián yáng shì zǐ tóng xiàn	10
 苗尾傈僳族鄉	miáo wěi lì sù zú xiāng	10
+閔行開發區站	mǐn háng kāi fā qū zhàn	10
 民樂朝鮮族鄉	mín yuè cháo xiǎn zú xiāng	10
 明德北街街道	míng dé běi jiē jiē dào	10
 明德南街街道	míng dé nán jiē jiē dào	10
 莫力廟種羊場	mò lì miào zhǒng yáng chǎng	10
 磨子土家族鄉	mò zi tǔ jiā zú xiāng	10
+牡丹江林口縣	mǔ dān jiāng lín kǒu xiàn	10
 牡丹江市鄉鎮	mǔ dān jiāng shì xiāng zhèn	10
 牡丹江綏芬河	mǔ dān jiāng suí fēn hé	10
 木里港管理處	mù lǐ gǎng guǎn lǐ chù	10
@@ -78941,6 +80252,7 @@ sort: by_weight
 南川西路街道	nán chuān xī lù jiē dào	10
 南大港管理區	nán dà gǎng guǎn lǐ qū	10
 楠杆土家族鄉	nán gān tǔ jiā zú xiāng	10
+南宮旅遊景區	nán gōng lǚ yóu jǐng qū	10
 南海區獅山鎮	nán hǎi qū shī shān zhèn	10
 南湖北路街道	nán hú běi lù jiē dào	10
 南湖南路街道	nán hú nán lù jiē dào	10
@@ -79055,6 +80367,7 @@ sort: by_weight
 寧德市周寧縣	níng dé shì zhōu níng xiàn	10
 寧姜蒙古族鄉	níng jiāng měng gǔ zú xiāng	10
 牛場布依族鄉	niú chǎng bù yī zú xiāng	10
+牛首山風景區	niú shǒu shān fēng jǐng qū	10
 農產品加工園	nóng chǎn pǐn jiā gōng yuán	10
 農科所管理處	nóng kē suǒ guǎn lǐ chù	10
 農牧漁良種場	nóng mù yú liáng zhǒng chǎng	10
@@ -79065,16 +80378,21 @@ sort: by_weight
 排先拜巴扎鎮	pái xiān bài bā zhā zhèn	10
 盤錦市大窪區	pán jǐn shì dà wā qū	10
 盤錦市盤山縣	pán jǐn shì pán shān xiàn	10
+攀枝花米易縣	pān zhī huā mǐ yì xiàn	10
 攀枝花市東區	pān zhī huā shì dōng qū	10
 攀枝花市西區	pān zhī huā shì xī qū	10
+攀枝花鹽邊縣	pān zhī huā yán biān xiàn	10
 沛縣湖西農場	pèi xiàn hú xī nóng chǎng	10
 彭家莊回族鄉	péng jiā zhuāng huí zú xiāng	10
 彭浦新村街道	péng pǔ xīn cūn jiē dào	10
 彭山公益林場	péng shān gōng yì lín chǎng	10
 彭州市蒙陽鎮	péng zhōu shì méng yáng zhèn	25
 彭州市天彭鎮	péng zhōu shì tiān péng zhèn	24
+皮林國家公園	pí lín guó jiā gōng yuán	10
 偏坡布依族鄉	piān pō bù yī zú xiāng	10
 平安西部街道	píng ān xī bù jiē dào	10
+平頂山寶豐縣	píng dǐng shān bǎo fēng xiàn	10
+平頂山魯山縣	píng dǐng shān lǔ shān xiàn	10
 平頂山市郟縣	píng dǐng shān shì jiá xiàn	10
 平頂山市葉縣	píng dǐng shān shì yè xiàn	10
 平度市博物館	píng dù shì bó wù guǎn	27
@@ -79146,15 +80464,20 @@ sort: by_weight
 齊齊哈爾鐵鋒	qí qí hā ěr tiě fēng	10
 齊齊哈爾依安	qí qí hā ěr yī ān	10
 漆樹土家族鄉	qī shù tǔ jiā zú xiāng	10
+七台河勃利縣	qī tái hé bó lì xiàn	10
 七台河茄子河	qī tái hé qié zi hé	10
 遷安市公安局	qiān ān shì gōng ān jú	40
+千佛山風景區	qiān fó shān fēng jǐng qū	10
 前郭爾羅斯鎮	qián guō ěr luó sī zhèn	10
 千家峒瑤族鄉	qiān jiā dòng yáo zú xiāng	10
 錢家土家族鄉	qián jiā tǔ jiā zú xiāng	10
 黔靈東路街道	qián líng dōng lù jiē dào	10
+千鳥湖風景區	qiān niǎo hú fēng jǐng qū	10
 前所果樹農場	qián suǒ guǒ shù nóng chǎng	10
 切木爾切克鎮	qiè mù ěr qiè kè zhèn	10
 秦皇島北戴河	qín huáng dǎo běi dài hé	10
+秦皇島昌黎縣	qín huáng dǎo chāng lí xiàn	10
+秦皇島盧龍縣	qín huáng dǎo lú lóng xiàn	10
 秦皇島山海關	qín huáng dǎo shān hǎi guān	10
 秦皇島市街道	qín huáng dǎo shì jiē dào	10
 欽州市靈山縣	qīn zhōu shì líng shān xiàn	10
@@ -79195,6 +80518,7 @@ sort: by_weight
 慶陽市鎮原縣	qìng yáng shì zhèn yuán xiàn	10
 慶陽市正寧縣	qìng yáng shì zhèng níng xiàn	10
 青陽縣開發區	qīng yáng xiàn kāi fā qū	10
+清源山風景區	qīng yuán shān fēng jǐng qū	10
 清遠市佛岡縣	qīng yuǎn shì fó gāng xiàn	10
 清遠市連州市	qīng yuǎn shì lián zhōu shì	10
 清遠市清城區	qīng yuǎn shì qīng chéng qū	10
@@ -79246,10 +80570,24 @@ sort: by_weight
 熱河南路街道	rè hé nán lù jiē dào	10
 人民廣場街道	rén mín guǎng chǎng jiē dào	10
 人民社區街道	rén mín shè qū jiē dào	10
+日喀則昂仁縣	rì kā zé áng rén xiàn	10
+日喀則白朗縣	rì kā zé bái lǎng xiàn	10
+日喀則定結縣	rì kā zé dìng jié xiàn	10
+日喀則定日縣	rì kā zé dìng rì xiàn	10
+日喀則崗巴縣	rì kā zé gǎng bā xiàn	10
+日喀則吉隆縣	rì kā zé jí lóng xiàn	10
+日喀則江孜縣	rì kā zé jiāng zī xiàn	10
+日喀則康馬縣	rì kā zé kāng mǎ xiàn	10
+日喀則拉孜縣	rì kā zé lā zī xiàn	10
 日喀則南木林	rì kā zé nán mù lín	10
 日喀則聶拉木	rì kā zé niè lā mù	10
+日喀則仁布縣	rì kā zé rén bù xiàn	10
+日喀則薩嘎縣	rì kā zé sà gā xiàn	10
+日喀則薩迦縣	rì kā zé sà jiā xiàn	10
 日喀則桑珠孜	rì kā zé sāng zhū zī	10
 日喀則謝通門	rì kā zé xiè tōng mén	10
+日喀則亞東縣	rì kā zé yà dōng xiàn	10
+日喀則仲巴縣	rì kā zé zhòng bā xiàn	10
 日照市東港區	rì zhào shì dōng gǎng qū	10
 日照市檢察院	rì zhào shì jiǎn chá yuàn	12
 日照市嵐山區	rì zhào shì lán shān qū	10
@@ -79285,6 +80623,8 @@ sort: by_weight
 三家子滿族鄉	sān jiā zǐ mǎn zú xiāng	10
 三家子種牛場	sān jiā zǐ zhòng niú chǎng	10
 三江口瑤族鎮	sān jiāng kǒu yáo zú zhèn	10
+三門峽盧氏縣	sān mén xiá lú shì xiàn	10
+三門峽澠池縣	sān mén xiá miǎn chí xiàn	10
 三明市大田縣	sān míng shì dà tián xiàn	10
 三明市建寧縣	sān míng shì jiàn níng xiàn	10
 三明市將樂縣	sān míng shì jiāng lè xiàn	10
@@ -79297,6 +80637,7 @@ sort: by_weight
 三明市永安市	sān míng shì yǒng ān shì	10
 三明市尤溪縣	sān míng shì yóu xī xiàn	10
 三女河辦事處	sān nǚ hé bàn shì chù	10
+三清山風景區	sān qīng shān fēng jǐng qū	10
 三沙市南沙區	sān shā shì nán shā qū	10
 三沙市西沙區	sān shā shì xī shā qū	10
 三十里堡街道	sān shí lǐ pù jiē dào	10
@@ -79308,6 +80649,7 @@ sort: by_weight
 三亞市天涯區	sān yà shì tiān yá qū	10
 三亞市崖州區	sān yà shì yá zhōu qū	10
 桑寶拉格蘇木	sāng bǎo lā gé sū mù	10
+桑蓋國家公園	sāng gài guó jiā gōng yuán	10
 色格孜庫勒鄉	sè gé zī kù lè xiāng	10
 莎車縣蠶種場	shā chē xiàn cán zhǒng chǎng	10
 莎車縣魚苗場	shā chē xiàn yú miáo chǎng	10
@@ -79339,6 +80681,7 @@ sort: by_weight
 山東省淄博市	shān dōng shěng zī bó shì	10
 山東煙台福山	shān dōng yān tái fú shān	10
 山河屯林業局	shān hé tún lín yè jú	10
+山南浪卡子縣	shān nán làng kǎ zǐ xiàn	10
 山南市措美縣	shān nán shì cuò měi xiàn	10
 山南市錯那市	shān nán shì cuò nà shì	10
 山南市貢嘎縣	shān nán shì gòng gā xiàn	10
@@ -79391,6 +80734,7 @@ sort: by_weight
 上海市奉賢區	shàng hǎi shì fèng xián qū	10
 上海市虹口區	shàng hǎi shì hóng kǒu qū	10
 上海市黃浦區	shàng hǎi shì huáng pǔ qū	10
+上海世紀公園	shàng hǎi shì jì gōng yuán	10
 上海市嘉定區	shàng hǎi shì jiā dìng qū	10
 上海市金山區	shàng hǎi shì jīn shān qū	10
 上海市靜安區	shàng hǎi shì jìng ān qū	10
@@ -79468,6 +80812,7 @@ sort: by_weight
 邵陽市新寧縣	shào yáng shì xīn níng xiàn	10
 邵陽市新邵縣	shào yáng shì xīn shào xiàn	10
 射陽港經濟區	shè yáng gǎng jīng jì qū	10
+神農頂風景區	shén nóng dǐng fēng jǐng qū	10
 瀋陽市大東區	shěn yáng shì dà dōng qū	10
 瀋陽市法庫縣	shěn yáng shì fǎ kù xiàn	10
 瀋陽市公安局	shěn yáng shì gōng ān jú	880
@@ -79520,9 +80865,20 @@ sort: by_weight
 石洞子溝街道	shí dòng zǐ gōu jiē dào	10
 什邡市教育局	shí fāng shì jiào yù jú	13
 市府東路街道	shì fǔ dōng lù jiē dào	10
+市高新開發區	shì gāo xīn kāi fā qū	10
 石花尖墾殖場	shí huā jiān kěn zhí chǎng	10
+石家莊高邑縣	shí jiā zhuāng gāo yì xiàn	10
 石家莊井陘礦	shí jiā zhuāng jǐng xíng kuàng	10
+石家莊井陉縣	shí jiā zhuāng jǐng xíng xiàn	10
+石家莊靈壽縣	shí jiā zhuāng líng shòu xiàn	10
+石家莊平山縣	shí jiā zhuāng píng shān xiàn	10
+石家莊深澤縣	shí jiā zhuāng shēn zé xiàn	10
 石家莊市趙縣	shí jiā zhuāng shì zhào xiàn	10
+石家莊無極縣	shí jiā zhuāng wú jí xiàn	10
+石家莊行唐縣	shí jiā zhuāng xíng táng xiàn	10
+石家莊元氏縣	shí jiā zhuāng yuán shì xiàn	10
+石家莊贊皇縣	shí jiā zhuāng zàn huáng xiàn	10
+石家莊正定縣	shí jiā zhuāng zhèng dìng xiàn	10
 石景山區街道	shí jǐng shān qū jiē dào	10
 十里海養殖場	shí lǐ hǎi yǎng zhí chǎng	10
 十里望回族鎮	shí lǐ wàng huí zú zhèn	10
@@ -79552,11 +80908,16 @@ sort: by_weight
 石油新城街道	shí yóu xīn chéng jiē dào	10
 石油新村街道	shí yóu xīn cūn jiē dào	10
 石嘴山大武口	shí zuǐ shān dà wǔ kǒu	10
+石嘴山平羅縣	shí zuǐ shān píng luó xiàn	10
 首都機場街道	shǒu dū jī chǎng jiē dào	10
 收集市場信息	shōu jí shì chǎng xìn xī	37
 雙城市蘭棱鎮	shuāng chéng shì lán léng zhèn	12
 雙第華僑農場	shuāng dì huá qiáo nóng chǎng	10
+雙鴨山寶清縣	shuāng yā shān bǎo qīng xiàn	10
+雙鴨山集賢縣	shuāng yā shān jí xián xiàn	10
+雙鴨山饒河縣	shuāng yā shān ráo hé xiàn	10
 雙鴨山四方臺	shuāng yā shān sì fāng tái	10
+雙鴨山友誼縣	shuāng yā shān yǒu yì xiàn	10
 雙營子回族鄉	shuāng yíng zi huí zú xiāng	10
 水產局管轄村	shuǐ chǎn jú guǎn xiá cūn	10
 水上公園街道	shuǐ shàng gōng yuán jiē dào	10
@@ -79570,6 +80931,7 @@ sort: by_weight
 朔州市右玉縣	shuò zhōu shì yòu yù xiàn	10
 四川北路街道	sì chuān běi lù jiē dào	10
 四川涼山彝族	sì chuān liáng shān yí zú	10
+四川攀枝花市	sì chuān pān zhī huā shì	10
 四川省巴中市	sì chuān shěng bā zhōng shì	10
 四川省成都市	sì chuān shěng chéng dū shì	10
 四川省達州市	sì chuān shěng dá zhōu shì	10
@@ -79650,6 +81012,7 @@ sort: by_weight
 塔什庫爾幹鄉	tǎ shí kù ěr gàn xiāng	10
 塔什庫爾幹鎮	tǎ shí kù ěr gàn zhèn	10
 塔什米里克鄉	tǎ shí mǐ lǐ kè xiāng	10
+塔伊國家公園	tǎ yī guó jiā gōng yuán	10
 泰安市岱嶽區	tài ān shì dài yuè qū	10
 泰安市東平縣	tài ān shì dōng píng xiàn	10
 泰安市肥城市	tài ān shì féi chéng shì	10
@@ -79671,6 +81034,7 @@ sort: by_weight
 太倉市璜涇鎮	tài cāng shì huáng jīng zhèn	10
 太倉市陸渡鎮	tài cāng shì lù dù zhèn	10
 臺創園管委會	tái chuàng yuán guǎn wěi huì	10
+泰德國家公園	tài dé guó jiā gōng yuán	10
 太行東街街道	tài háng dōng jiē jiē dào	10
 太行西街街道	tài háng xī jiē jiē dào	10
 太行小區街道	tài háng xiǎo qū jiē dào	10
@@ -79779,6 +81143,8 @@ sort: by_weight
 泰州市興化市	tài zhōu shì xīng huà shì	10
 台州市玉環市	tāi zhōu shì yù huán shì	10
 泰州市中醫院	tài zhōu shì zhōng yī yuàn	19
+塘沽森林公園	táng gū sēn lín gōng yuán	10
+塘沽外灘公園	táng gū wài tān gōng yuán	10
 唐槐園區街道	táng huái yuán qū jiē dào	10
 唐家墩街街道	táng jiā dūn jiē jiē dào	10
 湯泉池管理處	tāng quán chí guǎn lǐ chù	10
@@ -79849,6 +81215,7 @@ sort: by_weight
 天臺山管理處	tiān tāi shān guǎn lǐ chù	10
 天通苑北街道	tiān tōng yuàn běi jiē dào	10
 天通苑南街道	tiān tōng yuàn nán jiē dào	10
+天柱山風景區	tiān zhù shān fēng jǐng qū	10
 鐵卜加草改站	tiě bo jiā cǎo gǎi zhàn	10
 鐵布肯烏散鄉	tiě bù kěn wū sàn xiāng	10
 鐵嶺市昌圖縣	tiě lǐng shì chāng tú xiàn	10
@@ -79900,6 +81267,7 @@ sort: by_weight
 通州區潞城鎮	tōng zhōu qū lù chéng zhèn	10
 頭道牌樓街道	tóu dào pái lóu jiē dào	10
 吐列毛杜農場	tǔ liè máo dù nóng chǎng	10
+吐魯番鄯善縣	tǔ lǔ fān shàn shàn xiàn	10
 吐魯番托克遜	tǔ lǔ fān tuō kè xùn	10
 吐魯番於孜鄉	tǔ lǔ fān yú zī xiāng	10
 團結大街街道	tuán jié dà jiē jiē dào	10
@@ -79982,7 +81350,7 @@ sort: by_weight
 烏海市海南區	wū hǎi shì hǎi nán qū	10
 烏海市烏達區	wū hǎi shì wū dá qū	10
 武漢市博物館	wǔ hàn shì bó wù guǎn	59
-武漢市蔡甸區	wǔ hàn shì cài diān qū	10
+武漢市蔡甸區	wǔ hàn shì cài diàn qū	10
 武漢市工商局	wǔ hàn shì gōng shāng jú	52
 武漢市漢南區	wǔ hàn shì hàn nán qū	10
 武漢市漢陽區	wǔ hàn shì hàn yáng qū	10
@@ -80026,6 +81394,7 @@ sort: by_weight
 烏蘭毛都蘇木	wū lán máo dōu sū mù	10
 烏蘭陶勒蓋鎮	wū lán táo lè gài zhèn	10
 烏蘭再格森鄉	wū lán zài gé sēn xiāng	10
+武荖坑風景區	wǔ lǎo kēng fēng jǐng qū	10
 烏裏雅斯太鎮	wū lǐ yǎ sī tài zhèn	10
 烏林朝鮮族鄉	wū lín cháo xiǎn zú xiāng	10
 五龍山瑤族鄉	wǔ lóng shān yáo zú xiāng	10
@@ -80102,6 +81471,7 @@ sort: by_weight
 西拉沐淪街道	xī lā mù lún jiē dào	10
 西拉沐淪蘇木	xī lā mù lún sū mù	10
 錫林北路街道	xī lín běi lù jiē dào	10
+悉尼海德公園	xī ní hǎi dé gōng yuán	10
 錫尼河東蘇木	xī ní hé dōng sū mù	10
 錫尼河西蘇木	xī ní hé xī sū mù	10
 西寧市城北區	xī níng shì chéng běi qū	10
@@ -80403,6 +81773,7 @@ sort: by_weight
 延吉市林業局	yán jí shì lín yè jú	10
 延吉新村街道	yán jí xīn cūn jiē dào	10
 嚴家閘辦事處	yán jiā zhá bàn shì chù	10
+彥淖爾五原縣	yàn nào ěr wǔ yuán xiàn	10
 燕山大街街道	yān shān dà jiē jiē dào	10
 偃師市公安局	yǎn shī shì gōng ān jú	22
 煙台市福山區	yān tái shì fú shān qū	10
@@ -80419,10 +81790,12 @@ sort: by_weight
 堰塘土家族鄉	yàn táng tǔ jiā zú xiāng	10
 陽光社區街道	yáng guāng shè qū jiē dào	10
 陽和土家族鄉	yáng hé tǔ jiā zú xiāng	10
+楊家溪風景區	yáng jiā xī fēng jǐng qū	10
 陽江市江城區	yáng jiāng shì jiāng chéng qū	10
 陽江市陽春市	yáng jiāng shì yáng chūn shì	10
 陽江市陽東區	yáng jiāng shì yáng dōng qū	10
 陽江市陽西縣	yáng jiāng shì yáng xī xiàn	10
+陽邏開發區站	yáng luó kāi fā qū zhàn	10
 羊橋土家族鄉	yáng qiáo tǔ jiā zú xiāng	10
 陽泉市平定縣	yáng quán shì píng dìng xiàn	10
 羊三木回族鄉	yáng sān mù huí zú xiāng	10
@@ -80458,6 +81831,7 @@ sort: by_weight
 宜昌市遠安縣	yí chāng shì yuǎn ān xiàn	10
 宜昌市枝江市	yí chāng shì zhī jiāng shì	10
 宜昌市秭歸縣	yí chāng shì zǐ guī xiàn	10
+伊春大箐山縣	yī chūn dà qìng shān xiàn	10
 宜春市豐城市	yí chūn shì fēng chéng shì	10
 伊春市豐林縣	yī chūn shì fēng lín xiàn	10
 宜春市奉新縣	yí chūn shì fèng xīn xiàn	10
@@ -80534,6 +81908,7 @@ sort: by_weight
 鷹潭市月湖區	yīng tán shì yuè hú qū	10
 營田公務中心	yíng tián gōng wù zhōng xīn	10
 英雄南路街道	yīng xióng nán lù jiē dào	10
+英雄山風景區	yīng xióng shān fēng jǐng qū	10
 英雄中路街道	yīng xióng zhōng lù jiē dào	10
 永安街道片區	yǒng ān jiē dào piàn qū	10
 永定門外街道	yǒng dìng mén wài jiē dào	10
@@ -80601,6 +81976,7 @@ sort: by_weight
 余姚市泗門鎮	yú yáo shì sì mén zhèn	14
 元檯子滿族鄉	yuán tái zi mǎn zú xiāng	10
 原種繁育中心	yuán zhǒng fán yù zhōng xīn	10
+嶽麓山風景區	yuè lù shān fēng jǐng qū	10
 樂清市柳市鎮	yuè qīng shì liǔ shì zhèn	10
 岳陽市華容縣	yuè yáng shì huá róng xiàn	10
 岳陽市君山區	yuè yáng shì jūn shān qū	10
@@ -80636,6 +82012,7 @@ sort: by_weight
 雲南省玉溪市	yún nán shěng yù xī shì	10
 雲南省昭通市	yún nán shěng zhāo tōng shì	10
 雲山企業集團	yún shān qǐ yè jí tuán	10
+雲臺山風景區	yún tái shān fēng jǐng qū	10
 雲霧土家族鄉	yún wù tǔ jiā zú xiāng	10
 藏青工業園鄉	zàng qīng gōng yè yuán xiāng	10
 棗莊市山亭區	zǎo zhuāng shì shān tíng qū	10
@@ -80645,6 +82022,7 @@ sort: by_weight
 棗莊市嶧城區	zǎo zhuāng shì yì chéng qū	10
 澤普縣良種場	zé pǔ xiàn liáng zhǒng chǎng	10
 澤普縣依瑪鄉	zé pǔ xiàn yī mǎ xiāng	10
+增城開發區站	zēng chéng kāi fā qū zhàn	10
 扎格斯臺蘇木	zhā gé sī tái sū mù	10
 扎庫齊牛錄鄉	zhā kù qí niú lù xiāng	10
 扎賚諾爾礦區	zhā lài nuò ěr kuàng qū	10
@@ -80659,9 +82037,20 @@ sort: by_weight
 湛江市霞山區	zhàn jiāng shì xiá shān qū	10
 湛江市徐聞縣	zhàn jiāng shì xú wén xiàn	10
 張家港保稅區	zhāng jiā gǎng bǎo shuì qū	10
+張家界慈利縣	zhāng jiā jiè cí lì xiàn	10
+張家界桑植縣	zhāng jiā jiè sāng zhí xiàn	10
 張家界武陵源	zhāng jiā jiè wǔ líng yuán	10
+張家口赤城縣	zhāng jiā kǒu chì chéng xiàn	10
+張家口沽源縣	zhāng jiā kǒu gū yuán xiàn	10
+張家口懷安縣	zhāng jiā kǒu huái ān xiàn	10
+張家口懷來縣	zhāng jiā kǒu huái lái xiàn	10
+張家口康保縣	zhāng jiā kǒu kāng bǎo xiàn	10
+張家口尚義縣	zhāng jiā kǒu shàng yì xiàn	10
 張家口市蔚縣	zhāng jiā kǒu shì yù xiàn	10
 張家口下花園	zhāng jiā kǒu xià huā yuán	10
+張家口陽原縣	zhāng jiā kǒu yáng yuán xiàn	10
+張家口張北縣	zhāng jiā kǒu zhāng běi xiàn	10
+張家口涿鹿縣	zhāng jiā kǒu zhuō lù xiàn	10
 張掖市甘州區	zhāng yè shì gān zhōu qū	10
 張掖市高臺縣	zhāng yè shì gāo tái xiàn	10
 張掖市臨澤縣	zhāng yè shì lín zé xiàn	10
@@ -80744,6 +82133,7 @@ sort: by_weight
 中大槐樹街道	zhōng dà huái shù jiē dào	10
 中國市場潛力	zhōng guó shì chǎng qián lì	54
 中華大街街道	zhōng huá dà jiē jiē dào	10
+中華美德公園	zhōng huá měi dé gōng yuán	10
 中華南路街道	zhōng huá nán lù jiē dào	10
 忠仁鎮良種場	zhōng rén zhèn liáng zhǒng chǎng	10
 中山北路街道	zhōng shān běi lù jiē dào	10
@@ -80781,7 +82171,17 @@ sort: by_weight
 諸暨市店口鎮	zhū jì shì diàn kǒu zhèn	55
 諸暨市楓橋鎮	zhū jì shì fēng qiáo zhèn	33
 諸暨市公安局	zhū jì shì gōng ān jú	64
+駐馬店泌陽縣	zhù mǎ diàn bì yáng xiàn	10
+駐馬店平輿縣	zhù mǎ diàn píng yú xiàn	10
+駐馬店確山縣	zhù mǎ diàn què shān xiàn	10
+駐馬店汝南縣	zhù mǎ diàn rǔ nán xiàn	10
+駐馬店上蔡縣	zhù mǎ diàn shàng cài xiàn	10
 駐馬店市鄉鎮	zhù mǎ diàn shì xiāng zhèn	10
+駐馬店遂平縣	zhù mǎ diàn suì píng xiàn	10
+駐馬店西平縣	zhù mǎ diàn xī píng xiàn	10
+駐馬店新蔡縣	zhù mǎ diàn xīn cài xiàn	10
+駐馬店正陽縣	zhù mǎ diàn zhèng yáng xiàn	10
+竹灣燒烤公園	zhú wān shāo kǎo gōng yuán	10
 株洲市茶陵縣	zhū zhōu shì chá líng xiàn	10
 株洲市石峰區	zhū zhōu shì dàn fēng qū	10
 株洲市公安局	zhū zhōu shì gōng ān jú	15
@@ -80866,10 +82266,13 @@ sort: by_weight
 巴潤哈爾莫敦鎮	bā rùn hā ěr mò dūn zhèn	10
 巴雅爾吐胡碩鎮	bā yǎ ěr tǔ hú shuò zhèn	10
 巴彥寶拉格蘇木	bā yàn bǎo lā gé sū mù	10
+巴彥淖爾磴口縣	bā yàn nào ěr dèng kǒu xiàn	10
+巴彥淖爾五原縣	bā yàn nào ěr wǔ yuán xiàn	10
 巴彥諾日公蘇木	bā yàn nuò rì gōng sū mù	10
 巴彥溫都爾蘇木	bā yàn wēn dū ěr sū mù	10
 巴音郭楞庫爾勒	bā yīn guō léng kù ěr lè	10
 巴音前達門蘇木	bā yīn qián dá mén sū mù	10
+百里杜鵑風景區	bǎi lǐ dù juān fēng jǐng qū	10
 白鳥湖片區街道	bái niǎo hú piàn qū jiē dào	10
 柏泉辦事處街道	bǎi quán bàn shì chù jiē dào	10
 白沙黎族自治縣	bái shā lí zú zì zhì xiàn	10
@@ -80892,6 +82295,7 @@ sort: by_weight
 北川羌族自治縣	běi chuān qiāng zú zì zhì xiàn	10
 北海市鐵山港區	běi hǎi shì tiě shān gǎng qū	10
 北湖風景管理區	běi hú fēng jǐng guǎn lǐ qū	10
+北湖科技開發區	běi hú kē jì kāi fā qū	10
 北街辦事處街道	běi jiē bàn shì chù jiē dào	10
 北京市門頭溝區	běi jīng shì mén tóu gōu qū	10
 北京市石景山區	běi jīng shì shí jǐng shān qū	10
@@ -80913,9 +82317,10 @@ sort: by_weight
 博愛縣鴻昌街道	bó ài xiàn hóng chāng jiē dào	10
 波斯坦鐵列克鄉	bō sī tǎn tiě liè kè xiāng	10
 布朗山布朗族鄉	bù lǎng shān bù lǎng zú xiāng	10
-蔡甸經濟開發區	cài diān jīng jì kāi fā qū	10
+蔡甸經濟開發區	cài diàn jīng jì kāi fā qū	10
 倉房溝片區街道	cāng fáng gōu piàn qū jiē dào	10
 滄源佤族自治縣	cāng yuán wǎ zú zì zhì xiàn	10
+滄州經濟開發區	cāng zhōu jīng jì kāi fā qū	10
 查干補力格蘇木	chá gàn bǔ lì gé sū mù	10
 察哈爾右翼後旗	chá hā ěr yòu yì hòu qí	10
 察哈爾右翼前旗	chá hā ěr yòu yì qián qí	10
@@ -80923,13 +82328,19 @@ sort: by_weight
 茶陵縣紅色農場	chá líng xiàn hóng sè nóng chǎng	10
 茶鋪茶場管理區	chá pù chá chǎng guǎn lǐ qū	10
 產業集聚區街道	chǎn yè jí jù qū jiē dào	10
+昌北經濟開發區	chāng běi jīng jì kāi fā qū	10
 長春經濟開發區	cháng chūn jīng jì kāi fā qū	10
 長春市公主嶺市	cháng chūn shì gōng zhǔ lǐng shì	10
+長德經濟開發區	cháng dé jīng jì kāi fā qū	10
 昌都市類烏齊縣	chāng dū shì lèi wū qí xiàn	10
 昌吉回族自治州	chāng jí huí zú zì zhì zhōu	10
 昌江黎族自治縣	chāng jiāng lí zú zì zhì xiàn	10
+長嶺經濟開發區	cháng lǐng jīng jì kāi fā qū	10
 長三角商貿園區	cháng sān jiǎo shāng mào yuán qū	10
+常熟經濟開發區	cháng shú jīng jì kāi fā qū	10
+常熟尚湖風景區	cháng shú shàng hú fēng jǐng qū	10
 長泰經濟開發區	cháng tài jīng jì kāi fā qū	10
+常州經濟開發區	cháng zhōu jīng jì kāi fā qū	10
 超格圖呼熱蘇木	chāo gé tú hū rè sū mù	10
 朝陽喀喇沁左翼	cháo yáng kā lǎ qìn zuǒ yì	10
 陳旗寶日希勒鎮	chén qí bǎo rì xī lè zhèn	10
@@ -80940,6 +82351,7 @@ sort: by_weight
 成都市龍泉驛區	chéng dū shì lóng quán yì qū	10
 成都市青白江區	chéng dū shì qīng bái jiāng qū	10
 城關街道籌備處	chéng guān jiē dào chóu bèi chù	10
+城南經濟開發區	chéng nán jīng jì kāi fā qū	10
 城南片區管委會	chéng nán piàn qū guǎn wěi huì	10
 成武縣九女集鎮	chéng wǔ xiàn jiǔ nǚ jí zhèn	10
 城陽城址保護區	chéng yáng chéng zhǐ bǎo hù qū	10
@@ -80954,6 +82366,7 @@ sort: by_weight
 重慶市兩江新區	chóng qìng shì liǎng jiāng xīn qū	10
 重慶市沙坪壩區	chóng qìng shì shā píng bà qū	10
 楚雄彝族自治州	chǔ xióng yí zú zì zhì zhōu	10
+從化經濟開發區	cóng huà jīng jì kāi fā qū	10
 翠裏瑤族壯族鄉	cuì lǐ yáo zú zhuàng zú xiāng	10
 大安經濟開發區	dà ān jīng jì kāi fā qū	10
 大廠回族自治縣	dà chǎng huí zú zì zhì xiàn	10
@@ -80984,6 +82397,7 @@ sort: by_weight
 大亞灣西區街道	dà yà wān xī qū jiē dào	10
 大亞灣霞湧街道	dà yà wān xiá yǒng jiē dào	10
 儋州市五指山市	dān zhōu shì wǔ zhǐ shān shì	10
+碭山經濟開發區	dàng shān jīng jì kāi fā qū	10
 當塗經濟開發區	dāng tú jīng jì kāi fā qū	10
 當陽市壩陵街道	dāng yáng shì bà líng jiē dào	10
 當陽市草埠湖鎮	dāng yáng shì cǎo bù hú zhèn	10
@@ -81036,17 +82450,22 @@ sort: by_weight
 鄂州市梁子湖區	è zhōu shì liáng zǐ hú qū	10
 二龍山國營林場	èr lóng shān guó yíng lín chǎng	10
 發展河哈尼族鄉	fā zhǎn hé hā ní zú xiāng	10
+繁昌經濟開發區	fán chāng jīng jì kāi fā qū	10
 防城港市東興市	fáng chéng gǎng shì dōng xīng shì	10
 防城港市防城區	fáng chéng gǎng shì fáng chéng qū	10
 防城港市港口區	fáng chéng gǎng shì gǎng kǒu qū	10
 防城港市上思縣	fáng chéng gǎng shì shàng sī xiàn	10
 肥東經濟開發區	féi dōng jīng jì kāi fā qū	10
+肥東新城開發區	féi dōng xīn chéng kāi fā qū	10
 豐寧滿族自治縣	fēng níng mǎn zú zì zhì xiàn	10
+豐縣經濟開發區	fēng xiàn jīng jì kāi fā qū	10
 福安畲族開發區	fú ān shē zú kāi fā qū	10
 輔處彝族苗族鄉	fǔ chù yí zú miáo zú xiāng	10
 富川瑤族自治縣	fù chuān yáo zú zì zhì xiàn	10
 氟化硅產業業園	fú huà guī chǎn yè yè yuán	10
+撫順經濟開發區	fǔ shùn jīng jì kāi fā qū	10
 阜新市清河門區	fù xīn shì qīng hé mén qū	10
+富陽經濟開發區	fù yáng jīng jì kāi fā qū	10
 甘南藏族自治州	gān nán zàng zú zì zhì zhōu	10
 甘肅省嘉峪關市	gān sù shěng jiā yù guān shì	10
 贛榆經濟開發區	gàn yú jīng jì kāi fā qū	10
@@ -81066,6 +82485,7 @@ sort: by_weight
 格日勒敖都蘇木	gé rì lè áo dōu sū mù	10
 更章門巴民族鄉	gèng zhāng mén bā mín zú xiāng	10
 恭城瑤族自治縣	gōng chéng yáo zú zì zhì xiàn	10
+共青開放開發區	gòng qīng kāi fàng kāi fā qū	10
 貢日門巴民族鄉	gòng rì mén bā mín zú xiāng	10
 公主嶺市種豬場	gōng zhǔ lǐng shì zhǒng zhū chǎng	10
 耈街彝族苗族鄉	gǒu jiē yí zú miáo zú xiāng	10
@@ -81152,13 +82572,18 @@ sort: by_weight
 和田地區於田縣	hé tián dì qū yú tián xiàn	10
 和田縣經濟新區	hé tián xiàn jīng jì xīn qū	10
 河鎮彝族苗族鄉	hé zhèn yí zú miáo zú xiāng	10
+黑龍江哈爾濱市	hēi lóng jiāng hā ěr bīn shì	10
+黑龍江佳木斯市	hēi lóng jiāng jiā mù sī shì	10
+黑龍江牡丹江市	hēi lóng jiāng mǔ dān jiāng shì	10
 黑龍江齊齊哈爾	hēi lóng jiāng qí qí hā ěr	10
+黑龍江七台河市	hēi lóng jiāng qī tái hé shì	10
 黑龍江省大慶市	hēi lóng jiāng shěng dà qìng shì	10
 黑龍江省鶴崗市	hēi lóng jiāng shěng hè gǎng shì	10
 黑龍江省黑河市	hēi lóng jiāng shěng hēi hé shì	10
 黑龍江省雞西市	hēi lóng jiāng shěng jī xī shì	10
 黑龍江省綏化市	hēi lóng jiāng shěng suí huà shì	10
 黑龍江省伊春市	hēi lóng jiāng shěng yī chūn shì	10
+黑龍江雙鴨山市	hēi lóng jiāng shuāng yā shān shì	10
 紅安經濟開發區	hóng ān jīng jì kāi fā qū	10
 紅寶苗族彝族鄉	hóng bǎo miáo zú yí zú xiāng	10
 紅河谷森林公園	hóng hé gǔ sēn lín gōng yuán	10
@@ -81166,6 +82591,7 @@ sort: by_weight
 洪澤經濟開發區	hóng zé jīng jì kāi fā qū	10
 呼和浩特清水河	hū hé hào tè qīng shuǐ hé	10
 呼和浩特托克托	hū hé hào tè tuō kè tuō	10
+呼和浩特武川縣	hū hé hào tè wǔ chuān xiàn	10
 呼和托哈種畜場	hū hé tuō hā zhǒng chù chǎng	10
 胡力吐蒙古族鄉	hú lì tǔ měng gǔ zú xiāng	10
 葫蘆島市建昌縣	hú lu dǎo shì jiàn chāng xiàn	10
@@ -81301,6 +82727,7 @@ sort: by_weight
 闊什比克良種場	kuò shí bǐ kè liáng zhǒng chǎng	10
 喇叭溝門滿族鄉	lǎ bā gōu mén mǎn zú xiāng	10
 拉林灌區管理局	lā lín guàn qū guǎn lǐ jú	10
+拉薩墨竹工卡縣	lā sà mò zhú gōng kǎ xiàn	10
 藍山黃毛嶺茶場	lán shān huáng máo lǐng chá chǎng	10
 蘭州市七里河區	lán zhōu shì qī lǐ hé qū	10
 郎溪經濟開發區	láng xī jīng jì kāi fā qū	10
@@ -81335,6 +82762,7 @@ sort: by_weight
 臨空經濟管理處	lín kōng jīng jì guǎn lǐ chù	10
 林口彝族苗族鄉	lín kǒu yí zú miáo zú xiāng	10
 臨夏回族自治州	lín xià huí zú zì zhì zhōu	10
+林芝工布江達縣	lín zhī gōng bù jiāng dá xiàn	10
 陵水黎族自治縣	líng shuǐ lí zú zì zhì xiàn	10
 六盤水市盤州市	liù pán shuǐ shì pán zhōu shì	10
 六盤水市水城區	liù pán shuǐ shì shuǐ chéng qū	10
@@ -81461,8 +82889,16 @@ sort: by_weight
 啟東江海產業園	qǐ dōng jiāng hǎi chǎn yè yuán	10
 啟東經濟開發區	qǐ dōng jīng jì kāi fā qū	10
 齊齊哈爾昂昂溪	qí qí hā ěr áng áng xī	10
+齊齊哈爾拜泉縣	qí qí hā ěr bài quán xiàn	10
+齊齊哈爾富裕縣	qí qí hā ěr fù yù xiàn	10
+齊齊哈爾甘南縣	qí qí hā ěr gān nán xiàn	10
+齊齊哈爾克東縣	qí qí hā ěr kè dōng xiàn	10
+齊齊哈爾克山縣	qí qí hā ěr kè shān xiàn	10
+齊齊哈爾龍江縣	qí qí hā ěr lóng jiāng xiàn	10
 齊齊哈爾梅里斯	qí qí hā ěr méi lǐ sī	10
 齊齊哈爾碾子山	qí qí hā ěr niǎn zǐ shān	10
+齊齊哈爾泰來縣	qí qí hā ěr tài lái xiàn	10
+齊齊哈爾依安縣	qí qí hā ěr yī ān xiàn	10
 七十團中心團場	qī shí tuán zhōng xīn tuán chǎng	10
 七台河市勃利縣	qī tái hé shì bó lì xiàn	10
 七台河市桃山區	qī tái hé shì táo shān qū	10
@@ -81489,6 +82925,8 @@ sort: by_weight
 區直轄村級區劃	qū zhí xiá cūn jí qū huà	10
 泉州綜合保稅區	quán zhōu zōng hé bǎo shuì qū	10
 仁和彝族苗族鄉	rén hé yí zú miáo zú xiāng	10
+日喀則南木林縣	rì kā zé nán mù lín xiàn	10
+日喀則聶拉木縣	rì kā zé niè lā mù xiàn	10
 日喀則市昂仁縣	rì kā zé shì áng rén xiàn	10
 日喀則市白朗縣	rì kā zé shì bái lǎng xiàn	10
 日喀則市定結縣	rì kā zé shì dìng jié xiàn	10
@@ -81503,6 +82941,7 @@ sort: by_weight
 日喀則市薩迦縣	rì kā zé shì sà jiā xiàn	10
 日喀則市亞東縣	rì kā zé shì yà dōng xiàn	10
 日喀則市仲巴縣	rì kā zé shì zhòng bā xiàn	10
+日喀則謝通門縣	rì kā zé xiè tōng mén xiàn	10
 融水苗族自治縣	róng shuǐ miáo zú zì zhì xiàn	10
 汝城經濟開發區	rǔ chéng jīng jì kāi fā qū	10
 如皋市江濱醫院	rú gāo shì jiāng bīn yī yuàn	10
@@ -81645,6 +83084,7 @@ sort: by_weight
 通榆經濟開發區	tōng yú jīng jì kāi fā qū	10
 吐魯番市高昌區	tǔ lǔ fān shì gāo chāng qū	10
 吐魯番市鄯善縣	tǔ lǔ fān shì shàn shàn xiàn	10
+吐魯番托克遜縣	tǔ lǔ fān tuō kè xùn xiàn	10
 團結彝族苗族鄉	tuán jié yí zú miáo zú xiāng	10
 托格拉克勒克鄉	tuō gé lā kè lè kè xiāng	10
 瓦房彝族苗族鄉	wǎ fáng yí zú miáo zú xiāng	10
@@ -81666,7 +83106,12 @@ sort: by_weight
 武漢市東西湖區	wǔ hàn shì dōng xī hú qū	10
 武漢中央商務區	wǔ hàn zhōng yāng shāng wù qū	10
 武進經濟開發區	wǔ jìn jīng jì kāi fā qū	10
+烏蘭察布化德縣	wū lán chá bù huà dé xiàn	10
+烏蘭察布涼城縣	wū lán chá bù liáng chéng xiàn	10
+烏蘭察布商都縣	wū lán chá bù shāng dū xiàn	10
 烏蘭察布四子王	wū lán chá bù sì zǐ wáng	10
+烏蘭察布興和縣	wū lán chá bù xīng hé xiàn	10
+烏蘭察布卓資縣	wū lán chá bù zhuó zī xiàn	10
 烏蘭哈拉嘎蘇木	wū lán hā la gā sū mù	10
 烏力吉木仁蘇木	wū lì jí mù rén sū mù	10
 烏魯木齊達坂城	wū lǔ mù qí dá bǎn chéng	10
@@ -81829,6 +83274,7 @@ sort: by_weight
 駐馬店市驛城區	zhù mǎ diàn shì yì chéng qū	10
 駐馬店市正陽縣	zhù mǎ diàn shì zhèng yáng xiàn	10
 竹園彝族苗族鄉	zhú yuán yí zú miáo zú xiāng	10
+沌口經濟開發區	zhuàn kǒu jīng jì kāi fā qū	10
 自貢市自流井區	zì gòng shì zì liú jǐng qū	10
 紫荊山南路街道	zǐ jīng shān nán lù jiē dào	10
 樅陽經濟開發區	zōng yáng jīng jì kāi fā qū	10
@@ -81962,6 +83408,7 @@ sort: by_weight
 和平土家族侗族鄉	hé píng tǔ jiā zú dòng zú xiāng	10
 黑河市五大連池市	hēi hé shì wǔ dà lián chí shì	10
 黑龍江大興安嶺地	hēi lóng jiāng dà xīng ān lǐng dì	10
+黑龍江齊齊哈爾市	hēi lóng jiāng qí qí hā ěr shì	10
 黑龍江省哈爾濱市	hēi lóng jiāng shěng hā ěr bīn shì	10
 黑龍江省佳木斯市	hēi lóng jiāng shěng jiā mù sī shì	10
 黑龍江省老萊農場	hēi lóng jiāng shěng lǎo lái nóng chǎng	10
