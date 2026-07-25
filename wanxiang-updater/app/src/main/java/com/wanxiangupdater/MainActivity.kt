@@ -49,6 +49,8 @@ import java.io.File
 import java.io.FileOutputStream
 import java.net.HttpURLConnection
 import java.net.URL
+import java.util.UUID
+import java.util.zip.ZipFile
 import java.util.zip.ZipInputStream
 
 val MorandiGreen = Color(0xFF61A165)
@@ -67,11 +69,305 @@ val DEFAULT_EXCLUDE_RULES = listOf(
     """^sync/.*"""
 ).joinToString("\n")
 
-class TaskState(val title: String, val url: String) {
+const val OFFICIAL_ROUTE_ID = "official"
+const val GITHUB_ROUTE_TEST_URL = "https://github.com/amzxyz/rime-wanxiang/releases/download/dict-nightly/base-dicts.zip"
+
+data class GithubRoute(val id: String, val name: String, val prefix: String)
+data class RouteProbe(val ok: Boolean, val latencyMs: Long = Long.MAX_VALUE, val error: String = "")
+data class DownloadCandidate(val url: String, val name: String, val usesProxy: Boolean = false, val isCnb: Boolean = false)
+
+val DEFAULT_GITHUB_ROUTES = listOf(
+    GithubRoute(OFFICIAL_ROUTE_ID, "GitHub", ""),
+    GithubRoute("ghproxy-cn", "ghproxy.cn", "https://ghproxy.cn/"),
+    GithubRoute("gh-proxy-com", "gh-proxy.com", "https://gh-proxy.com/"),
+    GithubRoute("ghfast-top", "ghfast.top", "https://ghfast.top/"),
+    GithubRoute("xxlab", "xxlab", "https://github.xxlab.tech/"),
+    GithubRoute("xxooo", "xxooo", "https://gh.xxooo.cf/")
+)
+
+class TaskState(val title: String, val url: String, val cnbFallbackUrl: String? = null) {
     var progress by mutableStateOf(0f)
     var status by mutableStateOf("等待中...")
     var isFinished by mutableStateOf(false)
     var isError by mutableStateOf(false)
+}
+
+fun normalizeProxyPrefix(value: String): String? {
+    val text = value.trim()
+    if (!text.startsWith("https://") && !text.startsWith("http://")) return null
+    return text.trimEnd('/') + "/"
+}
+
+fun loadGithubRoutes(sharedPref: android.content.SharedPreferences): List<GithubRoute> {
+    val raw = sharedPref.getString("github_routes_json", null) ?: return DEFAULT_GITHUB_ROUTES
+
+    return try {
+        val array = org.json.JSONArray(raw)
+        val routes = mutableListOf<GithubRoute>()
+
+        for (i in 0 until array.length()) {
+            val obj = array.optJSONObject(i) ?: continue
+            val id = obj.optString("id").trim()
+            val name = obj.optString("name").trim()
+            val prefix = obj.optString("prefix").trim()
+
+            if (id.isBlank() || name.isBlank()) continue
+            if (id != OFFICIAL_ROUTE_ID && normalizeProxyPrefix(prefix) == null) continue
+
+            routes.add(GithubRoute(id, name, if (id == OFFICIAL_ROUTE_ID) "" else normalizeProxyPrefix(prefix)!!))
+        }
+
+        val withoutDuplicatePrefix = routes.distinctBy { it.prefix }
+        if (withoutDuplicatePrefix.none { it.id == OFFICIAL_ROUTE_ID }) {
+            listOf(DEFAULT_GITHUB_ROUTES.first()) + withoutDuplicatePrefix
+        } else {
+            withoutDuplicatePrefix
+        }
+    } catch (_: Exception) {
+        DEFAULT_GITHUB_ROUTES
+    }
+}
+
+fun saveGithubRoutes(routes: List<GithubRoute>, sharedPref: android.content.SharedPreferences) {
+    val array = org.json.JSONArray()
+    routes.forEach { route ->
+        array.put(org.json.JSONObject().apply {
+            put("id", route.id)
+            put("name", route.name)
+            put("prefix", route.prefix)
+        })
+    }
+    sharedPref.edit().putString("github_routes_json", array.toString()).apply()
+}
+
+fun versionNumbers(value: String): List<Int> {
+    return Regex("""\d+""").findAll(value).mapNotNull { it.value.toIntOrNull() }.toList()
+}
+
+fun isRemoteVersionNewer(remote: String, local: String): Boolean {
+    val remoteParts = versionNumbers(remote)
+    val localParts = versionNumbers(local)
+    val size = maxOf(remoteParts.size, localParts.size)
+
+    for (i in 0 until size) {
+        val remotePart = remoteParts.getOrElse(i) { 0 }
+        val localPart = localParts.getOrElse(i) { 0 }
+        if (remotePart != localPart) return remotePart > localPart
+    }
+    return false
+}
+
+fun buildGithubCandidates(
+    originalUrl: String,
+    routes: List<GithubRoute>,
+    selectedRouteId: String,
+    cnbFallbackUrl: String? = null
+): List<DownloadCandidate> {
+    val result = mutableListOf<DownloadCandidate>()
+
+    if (originalUrl.startsWith("https://github.com/")) {
+        val official = routes.firstOrNull { it.id == OFFICIAL_ROUTE_ID } ?: DEFAULT_GITHUB_ROUTES.first()
+        val proxies = routes.filter { it.prefix.isNotBlank() }
+        val selected = routes.firstOrNull { it.id == selectedRouteId } ?: official
+
+        val orderedRoutes = if (selected.prefix.isBlank()) {
+            listOf(official) + proxies
+        } else {
+            listOf(selected) + proxies.filter { it.id != selected.id }
+        }
+
+        orderedRoutes.distinctBy { it.prefix }.forEach { route ->
+            val downloadUrl = if (route.prefix.isBlank()) originalUrl else route.prefix + originalUrl
+            result.add(DownloadCandidate(downloadUrl, route.name, route.prefix.isNotBlank(), false))
+        }
+    } else {
+        val hostName = runCatching { URL(originalUrl).host }.getOrDefault("").ifBlank { "直链" }
+        result.add(DownloadCandidate(originalUrl, hostName, false, originalUrl.contains("cnb.cool")))
+    }
+
+    if (!cnbFallbackUrl.isNullOrBlank()) {
+        result.add(DownloadCandidate(cnbFallbackUrl, "CNB兜底", false, true))
+    }
+
+    return result.distinctBy { it.url }
+}
+
+fun buildGithubApiCandidates(apiUrl: String, routes: List<GithubRoute>, selectedRouteId: String): List<DownloadCandidate> {
+    val official = routes.firstOrNull { it.id == OFFICIAL_ROUTE_ID } ?: DEFAULT_GITHUB_ROUTES.first()
+    val proxies = routes.filter { it.prefix.isNotBlank() }
+    val selected = routes.firstOrNull { it.id == selectedRouteId } ?: official
+
+    val orderedRoutes = if (selected.prefix.isBlank()) {
+        listOf(official) + proxies
+    } else {
+        listOf(selected) + proxies.filter { it.id != selected.id }
+    }
+
+    return orderedRoutes.distinctBy { it.prefix }.map { route ->
+        DownloadCandidate(
+            url = if (route.prefix.isBlank()) apiUrl else route.prefix + apiUrl,
+            name = route.name,
+            usesProxy = route.prefix.isNotBlank()
+        )
+    }
+}
+
+suspend fun fetchGithubApiJson(
+    apiUrl: String,
+    routes: List<GithubRoute>,
+    selectedRouteId: String,
+    token: String
+): String? = withContext(Dispatchers.IO) {
+    for (candidate in buildGithubApiCandidates(apiUrl, routes, selectedRouteId)) {
+        var conn: HttpURLConnection? = null
+        try {
+            conn = URL(candidate.url).openConnection() as HttpURLConnection
+            conn.instanceFollowRedirects = true
+            conn.connectTimeout = 8000
+            conn.readTimeout = 12000
+            conn.setRequestProperty("User-Agent", "WanxiangUpdater-Android")
+            conn.setRequestProperty("Accept", "application/vnd.github+json, application/json")
+
+            if (!candidate.usesProxy && token.isNotBlank()) {
+                conn.setRequestProperty("Authorization", "Bearer $token")
+            }
+
+            val code = conn.responseCode
+            if (code !in 200..299) continue
+
+            val contentType = conn.contentType.orEmpty().lowercase()
+            if ("text/html" in contentType) continue
+
+            val content = conn.inputStream.bufferedReader().use { it.readText() }.trim()
+            if (content.startsWith("{") || content.startsWith("[")) return@withContext content
+        } catch (_: Exception) {
+        } finally {
+            conn?.disconnect()
+        }
+    }
+    null
+}
+
+suspend fun fetchCnbReleases(repo: String): org.json.JSONArray? = withContext(Dispatchers.IO) {
+    var conn: HttpURLConnection? = null
+    try {
+        conn = URL("https://cnb.cool/amzxyz/$repo/-/releases").openConnection() as HttpURLConnection
+        conn.connectTimeout = 8000
+        conn.readTimeout = 12000
+        conn.setRequestProperty("User-Agent", "WanxiangUpdater-Android")
+        conn.setRequestProperty("Accept", "application/json")
+
+        if (conn.responseCode !in 200..299) return@withContext null
+
+        val content = conn.inputStream.bufferedReader().use { it.readText() }.trim()
+        if (content.startsWith("[")) {
+            org.json.JSONArray(content)
+        } else {
+            org.json.JSONObject(content).optJSONArray("releases")
+        }
+    } catch (_: Exception) {
+        null
+    } finally {
+        conn?.disconnect()
+    }
+}
+
+fun releaseTag(release: org.json.JSONObject): String {
+    val raw = release.optString("tag_name").ifBlank { release.optString("tag_ref") }
+    return raw.substringAfterLast("/")
+}
+
+fun findLatestStableCnbTag(releases: org.json.JSONArray?): String? {
+    if (releases == null) return null
+
+    val ignored = setOf("v1.0.0", "1.0.0", "dict-nightly", "model", "tool", "apk")
+    var bestTag: String? = null
+
+    for (i in 0 until releases.length()) {
+        val tag = releaseTag(releases.optJSONObject(i) ?: continue)
+        if (tag.isBlank() || tag.lowercase() in ignored || "model" in tag.lowercase()) continue
+        if (bestTag == null || isRemoteVersionNewer(tag, bestTag!!)) bestTag = tag
+    }
+    return bestTag
+}
+
+fun findCnbAsset(
+    releases: org.json.JSONArray?,
+    wantedTag: String,
+    namePredicate: (String) -> Boolean
+): Pair<String, String>? {
+    if (releases == null) return null
+
+    for (i in 0 until releases.length()) {
+        val release = releases.optJSONObject(i) ?: continue
+        if (releaseTag(release) != wantedTag) continue
+
+        val assets = release.optJSONArray("assets") ?: continue
+        for (j in 0 until assets.length()) {
+            val asset = assets.optJSONObject(j) ?: continue
+            val name = asset.optString("name")
+            if (!namePredicate(name)) continue
+
+            val path = asset.optString("path")
+            val browserUrl = asset.optString("browser_download_url")
+            val url = when {
+                path.startsWith("http") -> path
+                path.isNotBlank() -> "https://cnb.cool$path"
+                browserUrl.isNotBlank() -> browserUrl
+                else -> ""
+            }
+            if (url.isNotBlank()) return name to url
+        }
+    }
+    return null
+}
+
+suspend fun probeGithubRoute(route: GithubRoute): RouteProbe = withContext(Dispatchers.IO) {
+    val testUrl = if (route.prefix.isBlank()) GITHUB_ROUTE_TEST_URL else route.prefix + GITHUB_ROUTE_TEST_URL
+    var conn: HttpURLConnection? = null
+    val started = System.nanoTime()
+
+    try {
+        conn = URL(testUrl).openConnection() as HttpURLConnection
+        conn.instanceFollowRedirects = true
+        conn.connectTimeout = 5000
+        conn.readTimeout = 8000
+        conn.setRequestProperty("User-Agent", "WanxiangUpdater-Android")
+        conn.setRequestProperty("Range", "bytes=0-3")
+        conn.setRequestProperty("Accept-Encoding", "identity")
+
+        if (conn.responseCode !in listOf(200, 206)) {
+            return@withContext RouteProbe(false, error = "HTTP ${conn.responseCode}")
+        }
+
+        if ("text/html" in conn.contentType.orEmpty().lowercase()) {
+            return@withContext RouteProbe(false, error = "返回网页")
+        }
+
+        val header = ByteArray(4)
+        val read = conn.inputStream.use { input ->
+            var offset = 0
+            while (offset < header.size) {
+                val count = input.read(header, offset, header.size - offset)
+                if (count < 0) break
+                offset += count
+            }
+            offset
+        }
+
+        val isZip = read == 4 && header[0] == 'P'.code.toByte() && header[1] == 'K'.code.toByte()
+        if (!isZip) return@withContext RouteProbe(false, error = "返回内容不是ZIP")
+
+        RouteProbe(true, (System.nanoTime() - started) / 1_000_000)
+    } catch (e: Exception) {
+        RouteProbe(false, error = e.message ?: "连接失败")
+    } finally {
+        conn?.disconnect()
+    }
+}
+
+suspend fun probeAllGithubRoutes(routes: List<GithubRoute>): Map<String, RouteProbe> = coroutineScope {
+    routes.map { route -> async(Dispatchers.IO) { route.id to probeGithubRoute(route) } }.awaitAll().toMap()
 }
 
 // --- 新增：自定义模式数据模型与存储助手 ---
@@ -190,91 +486,222 @@ fun WanxiangDownloaderApp() {
 
     var isPro by remember { mutableStateOf(sharedPref.getBoolean("is_pro", true)) }
     var auxScheme by remember { mutableStateOf(sharedPref.getString("aux_scheme", "zrm") ?: "zrm") }
-    var downloadSource by remember { mutableStateOf(sharedPref.getString("download_source", "CNB") ?: "CNB") }
     var updateChannel by remember { mutableStateOf(sharedPref.getString("update_channel", "Stable") ?: "Stable") }
-    
-    // GitHub Token 记忆
-    var githubToken by remember { 
-        mutableStateOf(sharedPref.getString("gh_token", "") ?: "") 
+
+    var githubToken by remember { mutableStateOf(sharedPref.getString("gh_token", "") ?: "") }
+    var githubRoutes by remember { mutableStateOf(loadGithubRoutes(sharedPref)) }
+    var selectedRouteId by remember {
+        val savedId = sharedPref.getString("selected_github_route", OFFICIAL_ROUTE_ID) ?: OFFICIAL_ROUTE_ID
+        mutableStateOf(if (githubRoutes.any { it.id == savedId }) savedId else OFFICIAL_ROUTE_ID)
     }
-    var excludeRulesText by remember { 
-        mutableStateOf(sharedPref.getString("exclude_rules", DEFAULT_EXCLUDE_RULES) ?: DEFAULT_EXCLUDE_RULES) 
+    var routeProbes by remember { mutableStateOf<Map<String, RouteProbe>>(emptyMap()) }
+    var isTestingRoutes by remember { mutableStateOf(false) }
+    var showAddProxyDialog by remember { mutableStateOf(false) }
+    var newProxyName by remember { mutableStateOf("") }
+    var newProxyPrefix by remember { mutableStateOf("") }
+    var pendingDeleteRouteId by remember { mutableStateOf<String?>(null) }
+
+    var excludeRulesText by remember {
+        mutableStateOf(sharedPref.getString("exclude_rules", DEFAULT_EXCLUDE_RULES) ?: DEFAULT_EXCLUDE_RULES)
     }
     var showAdvancedRules by remember { mutableStateOf(false) }
+    val coroutineScope = rememberCoroutineScope()
 
-    // 路径记忆 (全局授权池)
-    var savedPaths by remember { 
-        mutableStateOf(sharedPref.getStringSet("deploy_paths", setOf("DEFAULT"))?.toList() ?: listOf("DEFAULT")) 
+    // 路径记忆（全局授权池）
+    var savedPaths by remember {
+        mutableStateOf(sharedPref.getStringSet("deploy_paths", setOf("DEFAULT"))?.toList() ?: listOf("DEFAULT"))
     }
-    
+
     val dirPickerLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
         if (uri != null) {
-            context.contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
+            context.contentResolver.takePersistableUriPermission(
+                uri,
+                Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
+            )
             val newPaths = (savedPaths + uri.toString()).distinct()
             savedPaths = newPaths
             sharedPref.edit().putStringSet("deploy_paths", newPaths.toSet()).apply()
         }
     }
 
-    // 版本云端探测雷达
+    // 版本云端探测
     var latestStableTag by remember { mutableStateOf("v1.0.0") }
     var cloudVersionName by remember { mutableStateOf("") }
     var updaterDownloadUrl by remember { mutableStateOf("") }
+    var updateCheckSource by remember { mutableStateOf("") }
     var isCheckingUpdate by remember { mutableStateOf(true) }
+    var updateCheckNonce by remember { mutableStateOf(0) }
 
+    // 启动时测速一次；删除或添加路线后不自动测速。
     LaunchedEffect(Unit) {
-        withContext(Dispatchers.IO) {
-            // 1. 探测主方案 Tag
-            try {
-                val url = URL("https://api.github.com/repos/amzxyz/rime-wanxiang/releases/latest")
-                val conn = url.openConnection() as HttpURLConnection
-                conn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
-                if (githubToken.isNotBlank()) {
-                    conn.setRequestProperty("Authorization", "Bearer $githubToken")
-                }
-                conn.connectTimeout = 10000
-                conn.connect()
-                if (conn.responseCode == 200) {
-                    val content = conn.inputStream.bufferedReader().readText()
-                    Regex("\"tag_name\"\\s*:\\s*\"([^\"]+)\"").find(content)?.groupValues?.get(1)?.let { 
-                        latestStableTag = it 
-                    }
-                }
-            } catch (e: Exception) { 
-                e.printStackTrace() 
-            }
+        isTestingRoutes = true
+        val results = probeAllGithubRoutes(githubRoutes)
+        routeProbes = results
 
-            // 2. 探测更新器自身
+        results.filterValues { it.ok }.minByOrNull { it.value.latencyMs }?.key?.let { bestRouteId ->
+            selectedRouteId = bestRouteId
+            sharedPref.edit().putString("selected_github_route", bestRouteId).apply()
+        }
+        isTestingRoutes = false
+    }
+
+    // 检查更新会走当前选中的GitHub路线；代理不支持API时自动尝试其他代理，最后回退CNB。
+    LaunchedEffect(selectedRouteId, githubRoutes, updateCheckNonce) {
+        isCheckingUpdate = true
+        updateCheckSource = ""
+        cloudVersionName = ""
+        updaterDownloadUrl = ""
+
+        var detectedStableTag: String? = null
+        var detectedUpdaterName: String? = null
+        var detectedUpdaterUrl: String? = null
+        var sourceText = ""
+
+        val mainJson = fetchGithubApiJson(
+            "https://api.github.com/repos/amzxyz/rime-wanxiang/releases/latest",
+            githubRoutes,
+            selectedRouteId,
+            githubToken
+        )
+
+        if (!mainJson.isNullOrBlank()) {
             try {
-                val toolUrl = URL("https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/tool")
-                val toolConn = toolUrl.openConnection() as HttpURLConnection
-                toolConn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
-                if (githubToken.isNotBlank()) {
-                    toolConn.setRequestProperty("Authorization", "Bearer $githubToken")
-                }
-                toolConn.connectTimeout = 10000
-                toolConn.readTimeout = 10000
-                toolConn.connect()
-                
-                if (toolConn.responseCode == 200) {
-                    val content = toolConn.inputStream.bufferedReader().readText()
-                    val json = org.json.JSONObject(content)
-                    val assets = json.getJSONArray("assets")
+                detectedStableTag = org.json.JSONObject(mainJson).optString("tag_name").ifBlank { null }
+                if (detectedStableTag != null) sourceText = "GitHub API"
+            } catch (_: Exception) {
+            }
+        }
+
+        var cnbMainReleases: org.json.JSONArray? = null
+        if (detectedStableTag == null) {
+            cnbMainReleases = fetchCnbReleases("rime-wanxiang")
+            detectedStableTag = findLatestStableCnbTag(cnbMainReleases)
+            if (detectedStableTag != null) sourceText = "CNB兜底"
+        }
+
+        val toolJson = fetchGithubApiJson(
+            "https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/tool",
+            githubRoutes,
+            selectedRouteId,
+            githubToken
+        )
+
+        if (!toolJson.isNullOrBlank()) {
+            try {
+                val assets = org.json.JSONObject(toolJson).optJSONArray("assets")
+                if (assets != null) {
                     for (i in 0 until assets.length()) {
-                        val asset = assets.getJSONObject(i)
-                        val name = asset.getString("name")
-                        if (name.startsWith("Wanxiang-Updater-Android") && name.endsWith(".apk")) {
-                            updaterDownloadUrl = asset.getString("browser_download_url")
-                            val versionMatch = Regex("""Wanxiang-Updater-Android.*?(\d+\.\d+(\.\d+)?)""").find(name)
-                            cloudVersionName = versionMatch?.groupValues?.get(1) ?: ""
+                        val asset = assets.optJSONObject(i) ?: continue
+                        val name = asset.optString("name")
+                        if (name.startsWith("Wanxiang-Updater-Android") && name.endsWith(".apk", true)) {
+                            detectedUpdaterName = name
+                            detectedUpdaterUrl = asset.optString("browser_download_url")
                             break
                         }
                     }
                 }
-            } catch (e: Exception) { 
-                e.printStackTrace() 
+            } catch (_: Exception) {
             }
-            isCheckingUpdate = false
+        }
+
+        if (detectedUpdaterUrl.isNullOrBlank()) {
+            val cnbToolReleases = fetchCnbReleases("RIME-LMDG")
+            findCnbAsset(
+                releases = cnbToolReleases,
+                wantedTag = "tool",
+                namePredicate = { it.startsWith("Wanxiang-Updater-Android") && it.endsWith(".apk", true) }
+            )?.let { (name, url) ->
+                detectedUpdaterName = name
+                detectedUpdaterUrl = url
+                if (sourceText.isBlank()) sourceText = "CNB兜底"
+            }
+        }
+
+        detectedStableTag?.let { latestStableTag = it }
+        detectedUpdaterName?.let { name ->
+            cloudVersionName = Regex("""Wanxiang-Updater-Android.*?(\d+\.\d+(?:\.\d+)?)""")
+                .find(name)?.groupValues?.get(1).orEmpty()
+        }
+        updaterDownloadUrl = detectedUpdaterUrl.orEmpty()
+        updateCheckSource = sourceText.ifBlank { "检查失败" }
+        isCheckingUpdate = false
+    }
+
+    if (showAddProxyDialog) {
+        AlertDialog(
+            onDismissRequest = { showAddProxyDialog = false },
+            title = { Text("添加GitHub代理") },
+            text = {
+                Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    OutlinedTextField(
+                        value = newProxyName,
+                        onValueChange = { newProxyName = it },
+                        label = { Text("显示名称") },
+                        singleLine = true
+                    )
+                    OutlinedTextField(
+                        value = newProxyPrefix,
+                        onValueChange = { newProxyPrefix = it },
+                        label = { Text("代理前缀") },
+                        supportingText = { Text("例如：https://proxy.example/") },
+                        singleLine = true
+                    )
+                }
+            },
+            confirmButton = {
+                val normalizedPrefix = normalizeProxyPrefix(newProxyPrefix)
+                val canAdd = newProxyName.trim().isNotBlank() &&
+                    normalizedPrefix != null &&
+                    githubRoutes.none { it.prefix == normalizedPrefix }
+
+                TextButton(
+                    onClick = {
+                        val newRoute = GithubRoute(UUID.randomUUID().toString(), newProxyName.trim(), normalizedPrefix!!)
+                        githubRoutes = githubRoutes + newRoute
+                        selectedRouteId = newRoute.id
+                        routeProbes = routeProbes - newRoute.id
+                        saveGithubRoutes(githubRoutes, sharedPref)
+                        sharedPref.edit().putString("selected_github_route", newRoute.id).apply()
+                        newProxyName = ""
+                        newProxyPrefix = ""
+                        showAddProxyDialog = false
+                    },
+                    enabled = canAdd
+                ) { Text("添加") }
+            },
+            dismissButton = {
+                TextButton(onClick = { showAddProxyDialog = false }) { Text("取消") }
+            }
+        )
+    }
+
+    pendingDeleteRouteId?.let { routeId ->
+        val route = githubRoutes.firstOrNull { it.id == routeId }
+        if (route != null && route.id != OFFICIAL_ROUTE_ID) {
+            AlertDialog(
+                onDismissRequest = { pendingDeleteRouteId = null },
+                title = { Text("删除代理路线") },
+                text = { Text("确定删除 ${route.name}？\n${route.prefix}") },
+                confirmButton = {
+                    TextButton(
+                        onClick = {
+                            githubRoutes = githubRoutes.filterNot { it.id == route.id }
+                            routeProbes = routeProbes - route.id
+
+                            if (selectedRouteId == route.id) {
+                                selectedRouteId = OFFICIAL_ROUTE_ID
+                                sharedPref.edit().putString("selected_github_route", OFFICIAL_ROUTE_ID).apply()
+                            }
+
+                            saveGithubRoutes(githubRoutes, sharedPref)
+                            pendingDeleteRouteId = null
+                        }
+                    ) { Text("删除", color = Color.Red) }
+                },
+                dismissButton = {
+                    TextButton(onClick = { pendingDeleteRouteId = null }) { Text("取消") }
+                }
+            )
         }
     }
 
@@ -284,8 +711,6 @@ fun WanxiangDownloaderApp() {
 
     // 右侧自定义专用状态分离
     var customActiveTasks by remember { mutableStateOf<List<TaskState>>(emptyList()) }
-    val coroutineScope = rememberCoroutineScope()
-
     val auxMap = mapOf("zrm" to "自然码", "wx" to "万象", "flypy" to "小鹤", "moqi" to "墨奇", "hanxin" to "汉心", "shouyou" to "首右", "shyplus" to "首右+", "tiger" to "虎码", "wubi" to "五笔")
 
     var selectedTabIndex by remember { mutableStateOf(0) }
@@ -326,29 +751,45 @@ fun WanxiangDownloaderApp() {
                         modifier = Modifier.padding(12.dp).fillMaxWidth()
                     ) {
                         Column(modifier = Modifier.weight(1f)) {
+                            val hasNewVersion = !isCheckingUpdate && cloudVersionName.isNotEmpty() && isRemoteVersionNewer(cloudVersionName, localVersionName)
                             Text("🔧 更新器自身检测", fontWeight = FontWeight.Bold, color = Color.DarkGray, fontSize = 14.sp)
                             Text(
-                                text = if (isCheckingUpdate) "正在检测云端..." 
+                                text = if (isCheckingUpdate) "正在检测云端..."
                                        else if (cloudVersionName.isEmpty()) "未发现有效更新包"
-                                       else if (cloudVersionName > localVersionName) "发现新版本: v$cloudVersionName"
+                                       else if (hasNewVersion) "发现新版本: v$cloudVersionName"
                                        else "已是最新版本",
-                                fontSize = 12.sp, 
-                                color = if (!isCheckingUpdate && cloudVersionName > localVersionName) MorandiGreen else Color.Gray
+                                fontSize = 12.sp,
+                                color = if (hasNewVersion) MorandiGreen else Color.Gray
                             )
+                            if (!isCheckingUpdate) {
+                                Text("检测来源：$updateCheckSource", fontSize = 10.sp, color = Color.Gray)
+                            }
                         }
-                        val hasNewVersion = !isCheckingUpdate && cloudVersionName.isNotEmpty() && cloudVersionName > localVersionName
-                        Button(
-                            onClick = { 
-                                if (updaterDownloadUrl.isNotBlank()) {
-                                    context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(updaterDownloadUrl))) 
-                                }
-                            },
-                            enabled = hasNewVersion,
-                            colors = ButtonDefaults.buttonColors(containerColor = if (hasNewVersion) MorandiGreen else Color.LightGray),
-                            modifier = Modifier.height(32.dp),
-                            contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp)
-                        ) {
-                            Text(if (hasNewVersion) "立即更新" else "无需操作", fontSize = 12.sp, fontWeight = FontWeight.Bold)
+
+                        val hasNewVersion = !isCheckingUpdate && cloudVersionName.isNotEmpty() && isRemoteVersionNewer(cloudVersionName, localVersionName)
+                        Column(horizontalAlignment = Alignment.End) {
+                            Button(
+                                onClick = {
+                                    if (updaterDownloadUrl.isNotBlank()) {
+                                        val preferredUrl = buildGithubCandidates(updaterDownloadUrl, githubRoutes, selectedRouteId).firstOrNull()?.url ?: updaterDownloadUrl
+                                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(preferredUrl)))
+                                    }
+                                },
+                                enabled = hasNewVersion,
+                                colors = ButtonDefaults.buttonColors(containerColor = if (hasNewVersion) MorandiGreen else Color.LightGray),
+                                modifier = Modifier.height(32.dp),
+                                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp)
+                            ) {
+                                Text(if (hasNewVersion) "立即更新" else "无需操作", fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                            }
+                            TextButton(
+                                onClick = { updateCheckNonce++ },
+                                enabled = !isCheckingUpdate,
+                                contentPadding = PaddingValues(0.dp),
+                                modifier = Modifier.height(28.dp)
+                            ) {
+                                Text("重新检测", fontSize = 11.sp)
+                            }
                         }
                     }
                 }
@@ -490,48 +931,143 @@ fun WanxiangDownloaderApp() {
 
                 Card(colors = CardDefaults.cardColors(containerColor = Color.White), border = CardDefaults.outlinedCardBorder(true), modifier = Modifier.fillMaxWidth()) {
                     Column(modifier = Modifier.padding(16.dp)) {
-                        Text("🌐 下载源配置", fontWeight = FontWeight.Bold, color = Color.DarkGray)
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            RadioButton(selected = downloadSource == "CNB", onClick = { downloadSource = "CNB"; sharedPref.edit().putString("download_source", "CNB").apply() })
-                            Text("CNB", fontSize = 14.sp)
-                            Spacer(modifier = Modifier.width(8.dp))
-                            RadioButton(selected = downloadSource == "GitHub", onClick = { downloadSource = "GitHub"; sharedPref.edit().putString("download_source", "GitHub").apply() })
-                            Text("GitHub", fontSize = 14.sp)
+                        Text("🌐 GitHub下载路线", fontWeight = FontWeight.Bold, color = Color.DarkGray)
+                        Text("按当前路线优先下载，其他代理依次补位，全部失败后自动回退CNB。", fontSize = 11.sp, color = Color.Gray)
+
+                        Spacer(modifier = Modifier.height(8.dp))
+
+                        val availableRouteIds = routeProbes.filterValues { it.ok }
+                            .toList()
+                            .sortedBy { it.second.latencyMs }
+                            .map { it.first }
+
+                        FlowRow(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.spacedBy(6.dp),
+                            verticalArrangement = Arrangement.spacedBy(4.dp)
+                        ) {
+                            githubRoutes.forEach { route ->
+                                val probe = routeProbes[route.id]
+                                val rank = availableRouteIds.indexOf(route.id)
+                                val statusColor = when {
+                                    probe == null -> Color.Gray
+                                    !probe.ok -> Color(0xFFC46A6A)
+                                    rank == 0 -> MorandiGreen
+                                    rank == 1 -> Color(0xFFC9A44C)
+                                    else -> Color(0xFF8A6F6A)
+                                }
+                                val label = when {
+                                    isTestingRoutes && probe == null -> "${route.name} 测速中"
+                                    probe?.ok == true -> "${route.name} ${probe.latencyMs}ms"
+                                    probe != null -> "${route.name} 不可用"
+                                    else -> route.name
+                                }
+
+                                InputChip(
+                                    selected = selectedRouteId == route.id,
+                                    onClick = {
+                                        selectedRouteId = route.id
+                                        sharedPref.edit().putString("selected_github_route", route.id).apply()
+                                    },
+                                    label = { Text(label, fontSize = 11.sp, color = statusColor) },
+                                    trailingIcon = if (route.id != OFFICIAL_ROUTE_ID) {
+                                        {
+                                            Text(
+                                                "×",
+                                                fontSize = 16.sp,
+                                                color = Color.Red,
+                                                modifier = Modifier.clickable { pendingDeleteRouteId = route.id }
+                                            )
+                                        }
+                                    } else null
+                                )
+                            }
                         }
-                        
-                        if (downloadSource == "GitHub") {
-                            Spacer(modifier = Modifier.height(8.dp))
-                            OutlinedTextField(
-                                value = githubToken,
-                                onValueChange = { 
-                                    githubToken = it
-                                    sharedPref.edit().putString("gh_token", it).apply() 
+
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        ) {
+                            OutlinedButton(
+                                onClick = {
+                                    coroutineScope.launch {
+                                        isTestingRoutes = true
+                                        routeProbes = probeAllGithubRoutes(githubRoutes)
+                                        routeProbes.filterValues { it.ok }.minByOrNull { it.value.latencyMs }?.key?.let { bestId ->
+                                            selectedRouteId = bestId
+                                            sharedPref.edit().putString("selected_github_route", bestId).apply()
+                                        }
+                                        isTestingRoutes = false
+                                    }
                                 },
-                                label = { Text("GitHub Token (可选，防限流)", fontSize = 12.sp) },
-                                visualTransformation = PasswordVisualTransformation(),
-                                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                                modifier = Modifier.fillMaxWidth().height(56.dp),
-                                singleLine = true
-                            )
+                                enabled = !isTestingRoutes,
+                                modifier = Modifier.weight(1f).height(38.dp),
+                                contentPadding = PaddingValues(horizontal = 8.dp)
+                            ) {
+                                Text(if (isTestingRoutes) "测速中..." else "测速最优路线", fontSize = 11.sp)
+                            }
+
+                            OutlinedButton(
+                                onClick = { showAddProxyDialog = true },
+                                enabled = !isTestingRoutes,
+                                modifier = Modifier.weight(1f).height(38.dp),
+                                contentPadding = PaddingValues(horizontal = 8.dp)
+                            ) {
+                                Text("添加代理", fontSize = 11.sp)
+                            }
                         }
+
+                        TextButton(
+                            onClick = {
+                                githubRoutes = DEFAULT_GITHUB_ROUTES
+                                routeProbes = emptyMap()
+                                selectedRouteId = OFFICIAL_ROUTE_ID
+                                saveGithubRoutes(githubRoutes, sharedPref)
+                                sharedPref.edit().putString("selected_github_route", OFFICIAL_ROUTE_ID).apply()
+                            },
+                            modifier = Modifier.align(Alignment.End),
+                            contentPadding = PaddingValues(0.dp)
+                        ) {
+                            Text("恢复默认代理", fontSize = 11.sp, color = Color.Gray)
+                        }
+
+                        OutlinedTextField(
+                            value = githubToken,
+                            onValueChange = {
+                                githubToken = it
+                                sharedPref.edit().putString("gh_token", it).apply()
+                            },
+                            label = { Text("GitHub Token（仅官方请求使用）", fontSize = 12.sp) },
+                            supportingText = { Text("Token不会发送给第三方代理或CNB。修改后点上方“重新检测”。", fontSize = 10.sp) },
+                            visualTransformation = PasswordVisualTransformation(),
+                            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
+                            modifier = Modifier.fillMaxWidth(),
+                            singleLine = true
+                        )
                     }
                 }
                 Spacer(modifier = Modifier.height(16.dp))
 
                 val schemeStr = if (isPro) auxScheme else "base"
-                val activeTag = if (downloadSource == "CNB") (if (updateChannel == "Stable") latestStableTag else "v1.0.0") else (if (updateChannel == "Stable") latestStableTag else "dict-nightly")
-                val baseDownloadUrl = if (downloadSource == "CNB") "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$activeTag" else "https://github.com/amzxyz/rime-wanxiang/releases/download/$activeTag"
-                val dictTag = if (downloadSource == "CNB") "v1.0.0" else "dict-nightly"
-                val dictBaseUrl = if (downloadSource == "CNB") "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$dictTag" else "https://github.com/amzxyz/rime-wanxiang/releases/download/$dictTag"
-                
-                val schemaUrl = "$baseDownloadUrl/rime-wanxiang-$schemeStr${if(isPro) "-fuzhu" else ""}.zip"
-                val dictUrl = "$dictBaseUrl/${if(isPro) "pro-$schemeStr-fuzhu" else "base"}-dicts.zip"
-                val modelUrl = if (downloadSource == "CNB") "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/model/wanxiang-lts-zh-hans.gram" else "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
-                
+                val githubSchemaTag = if (updateChannel == "Stable") latestStableTag else "dict-nightly"
+                val cnbSchemaTag = if (updateChannel == "Stable") latestStableTag else "v1.0.0"
+                val schemaFileName = "rime-wanxiang-$schemeStr${if (isPro) "-fuzhu" else ""}.zip"
+                val dictFileName = "${if (isPro) "pro-$schemeStr-fuzhu" else "base"}-dicts.zip"
+
+                val schemaUrl = "https://github.com/amzxyz/rime-wanxiang/releases/download/$githubSchemaTag/$schemaFileName"
+                val dictUrl = "https://github.com/amzxyz/rime-wanxiang/releases/download/dict-nightly/$dictFileName"
+                val modelUrl = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
+
+                val cnbFallbackUrls = mapOf(
+                    schemaUrl to "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$cnbSchemaTag/$schemaFileName",
+                    dictUrl to "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v1.0.0/$dictFileName",
+                    modelUrl to "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/model/wanxiang-lts-zh-hans.gram"
+                )
+
                 val tasksMap = listOf(
-                    "🚀 全量更新" to listOf(schemaUrl, dictUrl, modelUrl), 
-                    "⚙️ 仅方案" to listOf(schemaUrl), 
-                    "📖 仅词库" to listOf(dictUrl), 
+                    "🚀 全量更新" to listOf(schemaUrl, dictUrl, modelUrl),
+                    "⚙️ 仅方案" to listOf(schemaUrl),
+                    "📖 仅词库" to listOf(dictUrl),
                     "🧠 仅模型" to listOf(modelUrl)
                 )
 
@@ -545,7 +1081,11 @@ fun WanxiangDownloaderApp() {
                                         Text(task.title, fontSize = 12.sp, modifier = Modifier.weight(1f), maxLines = 1)
                                         Text(task.status, fontSize = 11.sp, color = if (task.isError) Color.Red else Color.Gray)
                                     }
-                                    LinearProgressIndicator(progress = task.progress, modifier = Modifier.fillMaxWidth())
+                                    if (task.progress < 0f) {
+                                        LinearProgressIndicator(modifier = Modifier.fillMaxWidth())
+                                    } else {
+                                        LinearProgressIndicator(progress = task.progress, modifier = Modifier.fillMaxWidth())
+                                    }
                                 }
                             }
                         }
@@ -573,9 +1113,12 @@ fun WanxiangDownloaderApp() {
                                         setTasks = { mainActiveTasks = it }, 
                                         token = githubToken, 
                                         targetPaths = savedPaths, 
-                                        context = context, 
-                                        rules = currentRules
-                                    ) 
+                                        context = context,
+                                        rules = currentRules,
+                                        githubRoutes = githubRoutes,
+                                        selectedRouteId = selectedRouteId,
+                                        cnbFallbackUrls = cnbFallbackUrls
+                                    )
                                 },
                                 modifier = Modifier.weight(1f).height(48.dp),
                                 enabled = !isMainDownloading && savedPaths.isNotEmpty(),
@@ -599,7 +1142,10 @@ fun WanxiangDownloaderApp() {
                 setDownloading = {},
                 setTasks = { customActiveTasks = it },
                 context = context,
-                activeTasks = customActiveTasks
+                activeTasks = customActiveTasks,
+                githubRoutes = githubRoutes,
+                selectedRouteId = selectedRouteId,
+                githubToken = githubToken
             )
         }
     }
@@ -615,14 +1161,13 @@ fun CustomModeTab(
     setDownloading: (Boolean) -> Unit,
     setTasks: (List<TaskState>) -> Unit,
     context: Context,
-    activeTasks: List<TaskState>
+    activeTasks: List<TaskState>,
+    githubRoutes: List<GithubRoute>,
+    selectedRouteId: String,
+    githubToken: String
 ) {
     var taskAwaitingPath by remember { mutableStateOf<String?>(null) }
-    var isDownloading by remember { mutableStateOf(activeTasks.isNotEmpty()) }
-
-    LaunchedEffect(activeTasks) {
-        isDownloading = activeTasks.isNotEmpty() && !activeTasks.all { it.isFinished || it.isError }
-    }
+    val isDownloading = activeTasks.isNotEmpty() && activeTasks.any { !it.isFinished && !it.isError }
 
     val customDirLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
         if (uri != null) {
@@ -663,8 +1208,9 @@ fun CustomModeTab(
                                             TaskState("${t.name.ifBlank { "未命名" }} ($fName)", t.url)
                                         }
                                         setTasks(uiTasks)
-                                        targets.zip(uiTasks).forEach { (taskData, uiState) ->
-                                            downloadAndDeployTask(uiState, "", listOf(taskData.boundPath), context, emptyList())
+                                        for ((taskData, uiState) in targets.zip(uiTasks)) {
+                                            downloadAndDeployTask(uiState, githubToken, listOf(taskData.boundPath), context, emptyList(), githubRoutes, selectedRouteId)
+                                            if (uiState.isError) break
                                         }
                                         setDownloading(false)
                                     }
@@ -824,7 +1370,22 @@ fun CustomModeTab(
                                     Text("删除任务", color = Color.Red, fontSize = 12.sp)
                                 }
                                 Button(
-                                    onClick = { if (task.url.isNotBlank() && task.boundPath.isNotBlank()) executeTasks(listOf(task.url), coroutineScope, setDownloading, setTasks, "", listOf(task.boundPath), context, emptyList()) },
+                                    onClick = {
+                                        if (task.url.isNotBlank() && task.boundPath.isNotBlank()) {
+                                            executeTasks(
+                                                urls = listOf(task.url),
+                                                scope = coroutineScope,
+                                                setDownloading = setDownloading,
+                                                setTasks = setTasks,
+                                                token = githubToken,
+                                                targetPaths = listOf(task.boundPath),
+                                                context = context,
+                                                rules = emptyList(),
+                                                githubRoutes = githubRoutes,
+                                                selectedRouteId = selectedRouteId
+                                            )
+                                        }
+                                    },
                                     enabled = !isDownloading && task.url.isNotBlank() && task.boundPath.isNotBlank(), 
                                     shape = RoundedCornerShape(6.dp), 
                                     colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen)
@@ -850,326 +1411,371 @@ fun CustomModeTab(
 }
 
 fun executeTasks(
-    urls: List<String>, 
-    scope: kotlinx.coroutines.CoroutineScope, 
-    setDownloading: (Boolean) -> Unit, 
-    setTasks: (List<TaskState>) -> Unit, 
-    token: String, 
-    targetPaths: List<String>, 
-    context: Context, 
-    rules: List<String>
+    urls: List<String>,
+    scope: kotlinx.coroutines.CoroutineScope,
+    setDownloading: (Boolean) -> Unit,
+    setTasks: (List<TaskState>) -> Unit,
+    token: String,
+    targetPaths: List<String>,
+    context: Context,
+    rules: List<String>,
+    githubRoutes: List<GithubRoute> = DEFAULT_GITHUB_ROUTES,
+    selectedRouteId: String = OFFICIAL_ROUTE_ID,
+    cnbFallbackUrls: Map<String, String> = emptyMap()
 ) {
     scope.launch {
         setDownloading(true)
-        val activeTasks = urls.map { url -> 
-            val fName = url.substringAfterLast("/")
-            val title = if (fName.contains("dicts")) "词库包" else if (fName.contains("gram")) "模型" else "方案"
-            TaskState("$title ($fName)", url) 
+        val activeTasks = urls.map { url ->
+            val fileName = url.substringBefore("?").substringAfterLast("/")
+            val title = when {
+                fileName.contains("dicts", true) -> "词库包"
+                fileName.contains("gram", true) -> "模型"
+                else -> "方案"
+            }
+            TaskState("$title ($fileName)", url, cnbFallbackUrls[url])
         }
+
         setTasks(activeTasks)
+
         for (task in activeTasks) {
-            downloadAndDeployTask(task, token, targetPaths, context, rules)
-            if (task.isError) break 
+            downloadAndDeployTask(task, token, targetPaths, context, rules, githubRoutes, selectedRouteId)
+            if (task.isError) break
         }
+
         setDownloading(false)
     }
 }
 
+fun isUsableZip(file: File): Boolean {
+    return try {
+        ZipFile(file).use { zip -> zip.entries().hasMoreElements() }
+    } catch (_: Exception) {
+        false
+    }
+}
+
+fun looksLikeErrorPayload(file: File): Boolean {
+    return try {
+        val prefix = file.inputStream().buffered().use { input ->
+            val buffer = ByteArray(512)
+            val count = input.read(buffer)
+            if (count <= 0) "" else String(buffer, 0, count, Charsets.UTF_8)
+        }.trimStart().lowercase()
+
+        prefix.startsWith("<!doctype html") ||
+            prefix.startsWith("<html") ||
+            prefix.startsWith("{\"message\"") ||
+            prefix.startsWith("{\"error\"") ||
+            prefix.startsWith("access denied") ||
+            prefix.startsWith("bad gateway")
+    } catch (_: Exception) {
+        false
+    }
+}
+
+fun sanitizedFileName(url: String): String {
+    val raw = url.substringBefore("?").substringAfterLast("/").ifBlank { "download.bin" }
+    return raw.replace(Regex("""[\\/:*?"<>|]"""), "_")
+}
+
 suspend fun downloadAndDeployTask(
-    task: TaskState, 
-    token: String, 
-    targetPaths: List<String>, 
-    context: Context, 
-    rules: List<String>
+    task: TaskState,
+    token: String,
+    targetPaths: List<String>,
+    context: Context,
+    rules: List<String>,
+    githubRoutes: List<GithubRoute> = DEFAULT_GITHUB_ROUTES,
+    selectedRouteId: String = OFFICIAL_ROUTE_ID
 ) {
     withContext(Dispatchers.IO) {
-        val stagingDir = File(context.cacheDir, "wanxiang_staging")
-        if (!stagingDir.exists()) {
-            stagingDir.mkdirs()
-        }
-        val tmpFile = File(stagingDir, "${task.url.substringAfterLast("/")}.tmp")
+        val stagingDir = File(context.cacheDir, "wanxiang_staging/${UUID.randomUUID()}")
+        val tmpFile = File(stagingDir, "${sanitizedFileName(task.url)}.tmp")
         var success = false
         var lastErrorMsg = ""
+        var downloadedFrom = ""
 
-        val isLocalFile = task.url.startsWith("/") || task.url.startsWith("file://") || task.url.startsWith("content://")
-
-        if (isLocalFile) {
-            try {
-                withContext(Dispatchers.Main) { 
-                    task.status = "读取本地文件..." 
-                    task.progress = -1f 
-                }
-                val uri = if (task.url.startsWith("/")) Uri.fromFile(File(task.url)) else Uri.parse(task.url)
-                context.contentResolver.openInputStream(uri)?.use { input ->
-                    FileOutputStream(tmpFile).use { output ->
-                        input.copyTo(output)
-                    }
-                } ?: throw Exception("找不到文件或无权限读取该本地路径")
-                
-                success = true
-                withContext(Dispatchers.Main) { 
-                    task.progress = 1f
-                    task.status = "本地读取完成" 
-                }
-            } catch (e: Exception) {
-                lastErrorMsg = e.message ?: "本地文件读取异常"
+        try {
+            if (!stagingDir.mkdirs() && !stagingDir.isDirectory) {
+                throw Exception("无法创建临时目录")
             }
-        } else {
-            for (attempt in 1..3) {
+
+            withContext(Dispatchers.Main) {
+                task.isFinished = false
+                task.isError = false
+                task.progress = 0f
+                task.status = "准备中..."
+            }
+
+            val isLocalFile = task.url.startsWith("/") || task.url.startsWith("file://") || task.url.startsWith("content://")
+
+            if (isLocalFile) {
                 try {
-                    withContext(Dispatchers.Main) { 
-                        task.status = if (attempt > 1) "重试中($attempt/3)" else "连接中..." 
+                    withContext(Dispatchers.Main) {
+                        task.status = "读取本地文件..."
+                        task.progress = -1f
                     }
-                    
-                    // 🌟 1. 雷达追踪：手动追踪 302 重定向，直达真正的 CDN 物理资源地址
-                    var finalUrlStr = task.url
-                    var redirectCount = 0
-                    while (redirectCount < 5) {
-                        val redirectConn = URL(finalUrlStr).openConnection() as HttpURLConnection
-                        redirectConn.instanceFollowRedirects = false 
-                        redirectConn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
-                        if (finalUrlStr.contains("github.com") && token.isNotBlank()) {
-                            redirectConn.setRequestProperty("Authorization", "Bearer $token")
-                        }
-                        redirectConn.requestMethod = "HEAD"
-                        redirectConn.connectTimeout = 10000
-                        
-                        val code = redirectConn.responseCode
-                        if (code == 301 || code == 302 || code == 303 || code == 307 || code == 308) {
-                            val location = redirectConn.getHeaderField("Location")
-                            if (!location.isNullOrBlank()) {
-                                finalUrlStr = if (location.startsWith("http")) location else URL(URL(finalUrlStr), location).toString()
-                                redirectCount++
-                                redirectConn.disconnect()
-                                continue
+
+                    val uri = if (task.url.startsWith("/")) Uri.fromFile(File(task.url)) else Uri.parse(task.url)
+                    context.contentResolver.openInputStream(uri)?.use { input ->
+                        FileOutputStream(tmpFile).buffered().use { output -> input.copyTo(output) }
+                    } ?: throw Exception("找不到文件或无权限读取该本地路径")
+
+                    if (!tmpFile.exists() || tmpFile.length() == 0L) throw Exception("本地文件为空")
+                    success = true
+                    downloadedFrom = "本地文件"
+
+                    withContext(Dispatchers.Main) {
+                        task.progress = 1f
+                        task.status = "本地读取完成"
+                    }
+                } catch (e: Exception) {
+                    lastErrorMsg = e.message ?: "本地文件读取异常"
+                }
+            } else {
+                val candidates = buildGithubCandidates(task.url, githubRoutes, selectedRouteId, task.cnbFallbackUrl)
+                val expectedZip = task.url.substringBefore("?").endsWith(".zip", true)
+
+                candidateLoop@ for ((candidateIndex, candidate) in candidates.withIndex()) {
+                    for (attempt in 1..2) {
+                        var conn: HttpURLConnection? = null
+
+                        try {
+                            tmpFile.delete()
+
+                            withContext(Dispatchers.Main) {
+                                task.progress = 0f
+                                task.status = when {
+                                    candidate.isCnb -> "GitHub路线失败，切换CNB..."
+                                    attempt > 1 -> "${candidate.name} 重试 $attempt/2"
+                                    else -> "连接 ${candidate.name}..."
+                                }
                             }
-                        }
-                        redirectConn.disconnect()
-                        break
-                    }
-                    
-                    val url = URL(finalUrlStr)
-                    
-                    // 2. 用剥离出来的真实 CDN 地址去向服务器索要文件真实体积
-                    var totalSize = 0L
-                    val sizeConn = url.openConnection() as HttpURLConnection
-                    sizeConn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
-                    if (finalUrlStr.contains("github.com") && token.isNotBlank()) {
-                        sizeConn.setRequestProperty("Authorization", "Bearer $token")
-                    }
-                    sizeConn.requestMethod = "HEAD" 
-                    sizeConn.connectTimeout = 10000
-                    if (sizeConn.responseCode == 200 || sizeConn.responseCode == 206) {
-                        totalSize = sizeConn.contentLength.toLong()
-                    }
-                    sizeConn.disconnect()
 
-                    if (totalSize > 0) {
-                        val threadCount = 3
-                        val chunkSize = totalSize / threadCount
-                        val downloadedLen = java.util.concurrent.atomic.AtomicLong(0)
-                        val lastUpdateTime = java.util.concurrent.atomic.AtomicLong(System.currentTimeMillis())
+                            conn = URL(candidate.url).openConnection() as HttpURLConnection
+                            conn.instanceFollowRedirects = true
+                            conn.connectTimeout = 10000
+                            conn.readTimeout = 60000
+                            conn.setRequestProperty("User-Agent", "WanxiangUpdater-Android")
+                            conn.setRequestProperty("Accept-Encoding", "identity")
 
-                        coroutineScope {
-                            val deferreds = (0 until threadCount).map { i ->
-                                async(Dispatchers.IO) {
-                                    val start = i * chunkSize
-                                    val end = if (i == threadCount - 1) totalSize - 1 else (start + chunkSize - 1)
-                                    
-                                    val partConn = URL(finalUrlStr).openConnection() as HttpURLConnection
-                                    partConn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
-                                    if (finalUrlStr.contains("github.com") && token.isNotBlank()) {
-                                        partConn.setRequestProperty("Authorization", "Bearer $token")
-                                    }
-                                    partConn.setRequestProperty("Range", "bytes=$start-$end")
-                                    partConn.connectTimeout = 10000
-                                    partConn.readTimeout = 10000
-                                    
-                                    val partFile = File(stagingDir, "${tmpFile.name}.part$i")
-                                    partConn.inputStream.buffered().use { input ->
-                                        FileOutputStream(partFile).buffered().use { output ->
-                                            val data = ByteArray(65536)
-                                            var count: Int
-                                            while (input.read(data).also { count = it } != -1) {
-                                                output.write(data, 0, count)
-                                                val currentDownloaded = downloadedLen.addAndGet(count.toLong())
-                                                val currentTime = System.currentTimeMillis()
-                                                if (currentTime - lastUpdateTime.get() > 150) {
-                                                    lastUpdateTime.set(currentTime)
-                                                    launch(Dispatchers.Main) {
-                                                        task.progress = currentDownloaded.toFloat() / totalSize
-                                                        task.status = "${String.format("%.1f", currentDownloaded/1024.0/1024.0)}MB (多线程)"
-                                                    }
+                            if (!candidate.usesProxy && candidate.url.startsWith("https://github.com/") && token.isNotBlank()) {
+                                conn.setRequestProperty("Authorization", "Bearer $token")
+                            }
+
+                            val responseCode = conn.responseCode
+                            if (responseCode !in 200..299) throw Exception("HTTP $responseCode")
+
+                            val contentType = conn.contentType.orEmpty().lowercase()
+                            if ("text/html" in contentType || "application/json" in contentType) {
+                                throw Exception("服务器返回了错误页面")
+                            }
+
+                            val totalSize = conn.getHeaderFieldLong("Content-Length", -1L)
+                            var downloaded = 0L
+                            var lastUiUpdate = 0L
+
+                            conn.inputStream.buffered().use { input ->
+                                FileOutputStream(tmpFile).buffered().use { output ->
+                                    val buffer = ByteArray(128 * 1024)
+                                    while (true) {
+                                        val count = input.read(buffer)
+                                        if (count < 0) break
+
+                                        output.write(buffer, 0, count)
+                                        downloaded += count
+
+                                        val now = System.currentTimeMillis()
+                                        if (now - lastUiUpdate >= 150L) {
+                                            lastUiUpdate = now
+                                            withContext(Dispatchers.Main) {
+                                                if (totalSize > 0L) {
+                                                    task.progress = (downloaded.toDouble() / totalSize.toDouble()).toFloat().coerceIn(0f, 1f)
+                                                    task.status = "${candidate.name} ${String.format("%.1f", downloaded / 1024.0 / 1024.0)}MB / ${String.format("%.1f", totalSize / 1024.0 / 1024.0)}MB"
+                                                } else {
+                                                    task.progress = -1f
+                                                    task.status = "${candidate.name} ${String.format("%.1f", downloaded / 1024.0 / 1024.0)}MB"
                                                 }
                                             }
                                         }
                                     }
                                 }
                             }
-                            deferreds.awaitAll()
-                        }
-                        withContext(Dispatchers.Main) { task.status = "文件拼装中..." }
-                        FileOutputStream(tmpFile).buffered().use { output ->
-                            for (i in 0 until threadCount) {
-                                val partFile = File(stagingDir, "${tmpFile.name}.part$i")
-                                partFile.inputStream().buffered().use { it.copyTo(output) }
-                                partFile.delete() 
-                            }
-                        }
-                        withContext(Dispatchers.Main) { task.progress = 1f }
 
-                    } else {
-                        // 🌟 3. 单线程兜底修复：完全灌注进度色彩计算
-                        val conn = url.openConnection() as HttpURLConnection
-                        conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
-                        if (finalUrlStr.contains("github.com") && token.isNotBlank()) {
-                            conn.setRequestProperty("Authorization", "Bearer $token")
-                        }
-                        
-                        val fallbackSize = conn.contentLength.toLong()
-                        withContext(Dispatchers.Main) { 
-                            task.progress = if (fallbackSize > 0) 0f else -1f 
-                        }
-
-                        conn.inputStream.buffered().use { input ->
-                            FileOutputStream(tmpFile).buffered().use { output ->
-                                val data = ByteArray(131072)
-                                var count: Int
-                                var downloaded = 0L
-                                var lastUpdateTime = System.currentTimeMillis()
-                                while (input.read(data).also { count = it } != -1) {
-                                    downloaded += count
-                                    output.write(data, 0, count)
-                                    val currentTime = System.currentTimeMillis()
-                                    if (currentTime - lastUpdateTime > 150) {
-                                        lastUpdateTime = currentTime
-                                        launch(Dispatchers.Main) { 
-                                            if (fallbackSize > 0) {
-                                                task.progress = downloaded.toFloat() / fallbackSize
-                                                task.status = "${String.format("%.1f", downloaded/1024.0/1024.0)}MB / ${String.format("%.1f", fallbackSize/1024.0/1024.0)}MB"
-                                            } else {
-                                                task.status = "${String.format("%.1f", downloaded/1024.0/1024.0)}MB (单线)" 
-                                            }
-                                        }
-                                    }
-                                }
+                            if (!tmpFile.exists() || tmpFile.length() == 0L) throw Exception("下载文件为空")
+                            if (totalSize > 0L && tmpFile.length() != totalSize) {
+                                throw Exception("文件不完整：${tmpFile.length()}/$totalSize")
                             }
+                            if (looksLikeErrorPayload(tmpFile)) {
+                                throw Exception("服务器返回了错误内容（${tmpFile.length()}B）")
+                            }
+                            if (expectedZip && !isUsableZip(tmpFile)) {
+                                throw Exception("返回内容不是有效ZIP（${tmpFile.length()}B）")
+                            }
+
+                            success = true
+                            downloadedFrom = candidate.name
+
+                            withContext(Dispatchers.Main) {
+                                task.progress = 1f
+                                task.status = "下载完成（${candidate.name}）"
+                            }
+                            break@candidateLoop
+                        } catch (e: Exception) {
+                            lastErrorMsg = "${candidate.name}: ${e.message ?: "网络异常"}"
+                            tmpFile.delete()
+
+                            withContext(Dispatchers.Main) {
+                                task.progress = 0f
+                                task.status = "⚠️ $lastErrorMsg"
+                            }
+
+                            if (attempt < 2) delay(700)
+                        } finally {
+                            conn?.disconnect()
                         }
-                        withContext(Dispatchers.Main) { task.progress = 1f }
                     }
-
-                    success = true
-                    break 
-                } catch (e: Exception) { 
-                    lastErrorMsg = e.message ?: "网络异常"
-                    delay(1000) 
                 }
             }
-        }
 
-        if (success) {
-            try {
-                withContext(Dispatchers.Main) { 
-                    task.status = "解压中..." 
-                    task.progress = -1f 
+            if (!success) {
+                withContext(Dispatchers.Main) {
+                    task.isError = true
+                    task.progress = 0f
+                    task.status = "❌ 获取文件失败：$lastErrorMsg"
                 }
-                val extractDir = File(stagingDir, "extracted_${System.currentTimeMillis()}")
-                extractDir.mkdirs()
-                
-                if (task.url.endsWith(".zip")) {
-                    ZipInputStream(tmpFile.inputStream()).use { zis ->
-                        var entry = zis.nextEntry
-                        while (entry != null) {
-                            val f = File(extractDir, entry.name)
-                            if (entry.isDirectory) {
-                                f.mkdirs()
-                            } else { 
-                                f.parentFile?.mkdirs()
-                                FileOutputStream(f).use { zis.copyTo(it) } 
+                return@withContext
+            }
+
+            withContext(Dispatchers.Main) {
+                task.status = if (isUsableZip(tmpFile)) "解压中..." else "部署中..."
+                task.progress = -1f
+            }
+
+            val extractDir = File(stagingDir, "extracted")
+            if (!extractDir.mkdirs() && !extractDir.isDirectory) throw Exception("无法创建解压目录")
+
+            val isZipArchive = isUsableZip(tmpFile)
+            if (isZipArchive) {
+                val canonicalRoot = extractDir.canonicalFile
+
+                ZipInputStream(tmpFile.inputStream().buffered()).use { zis ->
+                    var entry = zis.nextEntry
+
+                    while (entry != null) {
+                        val outputFile = File(canonicalRoot, entry.name).canonicalFile
+                        val insideRoot = outputFile.path == canonicalRoot.path ||
+                            outputFile.path.startsWith(canonicalRoot.path + File.separator)
+
+                        if (!insideRoot) throw Exception("压缩包包含危险路径：${entry.name}")
+
+                        if (entry.isDirectory) {
+                            if (!outputFile.mkdirs() && !outputFile.isDirectory) {
+                                throw Exception("无法创建目录：${entry.name}")
                             }
-                            entry = zis.nextEntry
-                        }
-                    }
-                } else {
-                    tmpFile.copyTo(File(extractDir, task.url.substringAfterLast("/")))
-                }
-
-                var realSrcDir = extractDir
-                val subFiles = extractDir.listFiles()
-                if (subFiles != null && subFiles.size == 1 && subFiles[0].isDirectory) {
-                    realSrcDir = subFiles[0] 
-                }
-
-                val excludeRegexList = rules.mapNotNull { 
-                    try { Regex(it) } catch (e: Exception) { null } 
-                }
-                val isDict = task.url.contains("dicts")
-
-                var successCount = 0
-                val errorList = mutableListOf<String>()
-
-                for ((index, pathStr) in targetPaths.withIndex()) {
-                    try {
-                        if (index > 0) delay(500) 
-                        withContext(Dispatchers.Main) { task.status = "解压目标 ${index + 1}/${targetPaths.size}..." }
-                        
-                        if (pathStr == "DEFAULT") {
-                            val target = if (isDict) File(Environment.getExternalStorageDirectory(), "rime/dicts") else File(Environment.getExternalStorageDirectory(), "rime")
-                            copyNormal(realSrcDir, target, excludeRegexList)
                         } else {
-                            val rootDoc = DocumentFile.fromTreeUri(context, Uri.parse(pathStr))
-                            if (rootDoc != null) {
-                                var targetDoc = rootDoc
-                                if (isDict) {
-                                    var dictsDoc = rootDoc.findFile("dicts")
-                                    if (dictsDoc == null) {
-                                        dictsDoc = rootDoc.createDirectory("dicts")
-                                        if (dictsDoc == null) dictsDoc = rootDoc.findFile("dicts") 
-                                    }
-                                    if (dictsDoc != null) targetDoc = dictsDoc else throw Exception("SAF底层拒绝访问")
-                                }
-                                copySaf(context, realSrcDir, targetDoc, excludeRegexList)
-                            } else {
-                                throw Exception("授权目录已失效")
+                            outputFile.parentFile?.let { parent ->
+                                if (!parent.mkdirs() && !parent.isDirectory) throw Exception("无法创建目录：${parent.name}")
                             }
+                            FileOutputStream(outputFile).buffered().use { output -> zis.copyTo(output) }
                         }
-                        successCount++
-                    } catch (e: Exception) {
-                        e.printStackTrace()
-                        val pathName = if (pathStr == "DEFAULT") "默认" else "授权${index + 1}"
-                        errorList.add("$pathName(${e.message ?: e.javaClass.simpleName})")
+
+                        zis.closeEntry()
+                        entry = zis.nextEntry
                     }
                 }
+            } else {
+                tmpFile.copyTo(File(extractDir, sanitizedFileName(task.url)), overwrite = true)
+            }
 
-                withContext(Dispatchers.Main) { 
-                    if (successCount == targetPaths.size) {
+            var realSrcDir = extractDir
+            val subFiles = extractDir.listFiles()
+            if (subFiles != null && subFiles.size == 1 && subFiles[0].isDirectory) {
+                realSrcDir = subFiles[0]
+            }
+
+            val excludeRegexList = rules.mapNotNull {
+                try {
+                    Regex(it)
+                } catch (_: Exception) {
+                    null
+                }
+            }
+            val isDict = task.url.contains("dicts", true)
+
+            var successCount = 0
+            val errorList = mutableListOf<String>()
+
+            for ((index, pathStr) in targetPaths.withIndex()) {
+                try {
+                    if (index > 0) delay(300)
+
+                    withContext(Dispatchers.Main) {
+                        task.status = "部署目标 ${index + 1}/${targetPaths.size}（$downloadedFrom）..."
+                    }
+
+                    if (pathStr == "DEFAULT") {
+                        val root = File(Environment.getExternalStorageDirectory(), "rime")
+                        val target = if (isDict) File(root, "dicts") else root
+                        copyNormal(realSrcDir, target, excludeRegexList)
+                    } else {
+                        val rootDoc = DocumentFile.fromTreeUri(context, Uri.parse(pathStr))
+                            ?: throw Exception("授权目录已失效")
+
+                        var targetDoc = rootDoc
+                        if (isDict) {
+                            targetDoc = rootDoc.findFile("dicts")
+                                ?: rootDoc.createDirectory("dicts")
+                                ?: rootDoc.findFile("dicts")
+                                ?: throw Exception("SAF底层拒绝创建dicts目录")
+                        }
+
+                        copySaf(context, realSrcDir, targetDoc, excludeRegexList)
+                    }
+
+                    successCount++
+                } catch (e: Exception) {
+                    val pathName = if (pathStr == "DEFAULT") "默认" else "授权${index + 1}"
+                    errorList.add("$pathName(${e.message ?: e.javaClass.simpleName})")
+                }
+            }
+
+            withContext(Dispatchers.Main) {
+                when {
+                    successCount == targetPaths.size && targetPaths.isNotEmpty() -> {
                         task.isFinished = true
                         task.progress = 1f
-                        task.status = "✅ 解压完成"
-                    } else if (successCount > 0) {
-                        task.isFinished = true 
-                        task.progress = 1f 
+                        task.status = "✅ 部署完成（$downloadedFrom）"
+                    }
+                    successCount > 0 -> {
+                        task.isFinished = true
+                        task.progress = 1f
                         task.status = "⚠️ 部分完成 [失败: ${errorList.joinToString()}]"
-                    } else {
+                    }
+                    else -> {
                         task.isError = true
                         task.progress = 0f
-                        task.status = "❌ 全部失败 [${errorList.joinToString()}]"
+                        task.status = "❌ 全部部署失败 [${errorList.joinToString()}]"
                     }
                 }
-            } catch (e: Exception) { 
-                e.printStackTrace()
-                withContext(Dispatchers.Main) { task.isError = true; task.progress = 0f; task.status = "❌ 解压或准备解压失败" } 
             }
-        } else { 
-            withContext(Dispatchers.Main) { task.isError = true; task.progress = 0f; task.status = "❌ 获取文件失败: $lastErrorMsg" } 
+        } catch (e: Exception) {
+            withContext(Dispatchers.Main) {
+                task.isError = true
+                task.progress = 0f
+                task.status = "❌ 解压或部署失败：${e.message ?: e.javaClass.simpleName}"
+            }
+        } finally {
+            stagingDir.deleteRecursively()
         }
-        stagingDir.deleteRecursively()
     }
 }
 
 fun copyNormal(src: File, dest: File, rules: List<Regex>, currentPath: String = "") {
-    if (!dest.exists()) {
-        dest.mkdirs()
+    if (!dest.exists() && !dest.mkdirs()) {
+        throw Exception("无法创建目标目录：${dest.absolutePath}")
+    }
+    if (!dest.isDirectory) {
+        throw Exception("目标路径不是目录：${dest.absolutePath}")
     }
     src.listFiles()?.forEach { file ->
         val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
