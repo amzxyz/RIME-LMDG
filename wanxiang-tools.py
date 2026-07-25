@@ -46,18 +46,18 @@ except Exception:
         pypinyin_func = None # 稍后处理
 
 # --- PySide6 GUI ---
-from PySide6.QtCore import Qt, QThread, Signal, QSettings, QTranslator, QLibraryInfo
+from PySide6.QtCore import Qt, QThread, Signal, QSettings, QTranslator, QLibraryInfo, QTimer
 from PySide6.QtGui  import QPalette, QColor, QAction
 from PySide6.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QFormLayout,
     QLineEdit, QPushButton, QFileDialog, QTabWidget, QCheckBox,
     QPlainTextEdit, QProgressBar, QLabel, QMessageBox, QGroupBox,
     QStyleFactory, QMenuBar, QDialog, QDialogButtonBox,
-    QRadioButton, QButtonGroup, QComboBox, QGridLayout, QFrame, QSpinBox
+    QRadioButton, QButtonGroup, QComboBox, QGridLayout, QFrame, QSpinBox, QInputDialog, QMenu
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.0.6beta"
+TOOL_VERSION = "v3.1.0beta"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -1844,7 +1844,19 @@ MODEL_REPO = "RIME-LMDG"
 DICT_TAG = "dict-nightly"
 MODEL_FILE = "wanxiang-lts-zh-hans.gram"
 MODEL_TAG = "LTS"
+GITHUB_ROUTES = {
+    0: {"name": "GitHub", "prefix": ""},
+    1: {"name": "gh.b52m.cn", "prefix": "https://gh.b52m.cn/"},
+    2: {"name": "gh-proxy.com", "prefix": "https://gh-proxy.com/"},
+    3: {"name": "ghfast.top", "prefix": "https://ghfast.top/"},
+    4: {"name": "xxlab", "prefix": "https://github.xxlab.tech/"},
+    5: {"name": "xxooo", "prefix": "https://gh.xxooo.cf/"},
+}
 
+GITHUB_ROUTE_TEST_URL = (
+    "https://github.com/amzxyz/rime-wanxiang/"
+    "releases/download/dict-nightly/base-dicts.zip"
+)
 SCHEME_MAP = {
     'zrm': '自然码辅助 (Zrm)',
     'wx': '万象辅助 (WX)',
@@ -2465,6 +2477,7 @@ class UpdateConfig:
     aux_scheme: str
     rime_dir: str
     github_token: str
+    github_proxy: str
     use_mirror: bool
     whitelist: List[str]
     current_versions: Dict[str, str]
@@ -2506,7 +2519,86 @@ class PathDetector:
              detected['rime_user_dir'] = os.path.expanduser('~/.local/share/fcitx5/rime')
              
         return detected
+class GithubRouteTestWorker(QThread):
+    """测试少量 GitHub 下载路线，避免阻塞主界面。"""
 
+    done_sig = Signal(object)
+
+    def __init__(self, test_url):
+        super().__init__()
+        self.test_url = test_url
+
+    def _test_route(self, route):
+        prefix = route["prefix"]
+        test_url = f"{prefix}{self.test_url}" if prefix else self.test_url
+
+        headers = {
+            "User-Agent": "Rime-Wanxiang-Tool",
+            "Range": "bytes=0-65535",
+            "Accept-Encoding": "identity",
+            "Cache-Control": "no-cache",
+        }
+
+        started = time.perf_counter()
+        received = 0
+        signature = b""
+
+        try:
+            with requests.get(
+                test_url,
+                headers=headers,
+                stream=True,
+                allow_redirects=True,
+                timeout=(4, 8),
+            ) as response:
+                if response.status_code not in (200, 206):
+                    raise RuntimeError(f"HTTP {response.status_code}")
+
+                content_type = response.headers.get("content-type", "").lower()
+
+                if "text/html" in content_type:
+                    raise RuntimeError("返回了网页")
+
+                for chunk in response.iter_content(chunk_size=16384):
+                    if not chunk: continue
+
+                    if len(signature) < 4:
+                        signature += chunk[:4 - len(signature)]
+
+                    received += len(chunk)
+
+                    if received >= 65536:
+                        break
+
+            if received == 0:
+                raise RuntimeError("没有收到数据")
+
+            zip_signatures = (b"PK\x03\x04", b"PK\x05\x06", b"PK\x07\x08")
+
+            if not signature.startswith(zip_signatures):
+                raise RuntimeError(f"返回内容不是ZIP，文件头={signature!r}")
+
+            elapsed = time.perf_counter() - started
+
+            return {
+                "ok": True,
+                "ms": elapsed * 1000,
+                "bytes": received,
+            }
+
+        except Exception as error:
+            return {
+                "ok": False,
+                "ms": float("inf"),
+                "error": str(error),
+            }
+    def run(self):
+        results = {}
+
+        for route_id, route in GITHUB_ROUTES.items():
+            results[route_id] = self._test_route(route)
+
+        self.done_sig.emit(results)
 class UpdateWorker(QThread):
     log_sig = Signal(str)
     progress_sig = Signal(str, int, int) # task, cur, total
@@ -2530,10 +2622,15 @@ class UpdateWorker(QThread):
         self.headers_gh = {"User-Agent": "Rime-Wanxiang-Tool"}
         if self.cfg.github_token:
             self.headers_gh["Authorization"] = f"Bearer {self.cfg.github_token}"
-            
+        # 第三方 GitHub 代理专用，永远不添加 Authorization。
+        self.headers_gh_proxy = {
+            "User-Agent": "Rime-Wanxiang-Tool",
+            "Accept-Encoding": "identity",
+        }
     def log(self, msg): self.log_sig.emit(msg)
     def stop(self): self._stop = True
-
+    def _finish_cancelled(self):
+        self.done_sig.emit(False, "⏹ 更新已取消。")
     # --- SHA256 计算工具 ---
     def _calculate_sha256(self, file_path):
         """计算本地文件的 SHA256 (用于比对跳过下载)"""
@@ -2765,6 +2862,7 @@ class UpdateWorker(QThread):
         if self.cfg.use_mirror:
             cnb_url = f"https://cnb.cool/{OWNER}/{repo_cnb}/-/releases"
             headers = {"User-Agent": "curl/7.68.0", "Accept": "application/json"}
+            cnb_data = None
             try:
                 if cnb_url in self._api_cache:
                     cnb_data = self._api_cache[cnb_url]
@@ -2846,60 +2944,131 @@ class UpdateWorker(QThread):
         
         return None
     def _download(self, url, dest):
-        """增强版下载：带重试、断点续传保护、完整性校验"""
-        max_retries = 3
+        """按用户选择依次尝试下载路线，并校验下载内容。"""
+        max_retries = 2
         timeout_sec = 60
-        
-        for attempt in range(1, max_retries + 1):
-            try:
-                if attempt > 1:
-                    self.log(f"🔄 网络波动，正在进行第 {attempt}/{max_retries} 次重试...")
-                
-                h = self.headers_cnb if "cnb.cool" in url else self.headers_gh
-                
-                # 发起请求
-                with requests.get(url, headers=h, stream=True, timeout=timeout_sec) as r:
-                    r.raise_for_status()
-                    
-                    # 获取预期大小
-                    total_size = int(r.headers.get('content-length', 0))
-                    downloaded_size = 0
-                    
-                    with open(dest, 'wb') as f:
-                        for chunk in r.iter_content(chunk_size=16384):
-                            if self._stop: return False
-                            if chunk:
-                                f.write(chunk)
+
+        original_url = url
+        clean_url = original_url.split("?", 1)[0].lower()
+        expected_zip = clean_url.endswith(".zip") or str(dest).lower().endswith(".zip")
+
+        if original_url.startswith("https://github.com/"):
+            selected_prefix = self.cfg.github_proxy
+            proxy_prefixes = [route["prefix"] for route in GITHUB_ROUTES.values() if route["prefix"]]
+
+            if selected_prefix:
+                # 用户选中代理：当前代理优先，再尝试其他代理，不尝试 GitHub 官方。
+                route_prefixes = [selected_prefix]
+                route_prefixes.extend(prefix for prefix in proxy_prefixes if prefix != selected_prefix)
+            else:
+                # 用户选中 GitHub 官方：先尝试官方，再尝试全部代理。
+                route_prefixes = [""]
+                route_prefixes.extend(proxy_prefixes)
+
+            route_prefixes = list(dict.fromkeys(route_prefixes))
+            sources = [(f"{prefix}{original_url}" if prefix else original_url, bool(prefix)) for prefix in route_prefixes]
+        else:
+            sources = [(original_url, False)]
+
+        for source_index, (download_url, using_github_proxy) in enumerate(sources, 1):
+            source_name = download_url.split("/", 3)[2] if "://" in download_url else download_url
+            self.log(f"🌐 尝试下载路线 {source_index}/{len(sources)}：{source_name}")
+
+            for attempt in range(1, max_retries + 1):
+                bad_payload = False
+
+                try:
+                    if attempt > 1:
+                        self.log(f"🔄 当前路线第 {attempt}/{max_retries} 次重试。")
+
+                    if "cnb.cool" in download_url:
+                        headers = self.headers_cnb
+                    elif using_github_proxy:
+                        headers = self.headers_gh_proxy
+                    else:
+                        headers = self.headers_gh
+
+                    with requests.get(
+                        download_url,
+                        headers=headers,
+                        stream=True,
+                        allow_redirects=True,
+                        timeout=(10, timeout_sec),
+                    ) as response:
+                        response.raise_for_status()
+
+                        content_type = response.headers.get("content-type", "").lower()
+                        final_url = response.url
+
+                        if "text/html" in content_type:
+                            bad_payload = True
+                            raise RuntimeError("代理返回了网页，不是下载文件")
+
+                        total_size = int(response.headers.get("content-length", 0) or 0)
+                        downloaded_size = 0
+
+                        with open(dest, "wb") as file:
+                            for chunk in response.iter_content(chunk_size=16384):
+                                if self._stop:
+                                    if os.path.exists(dest):
+                                        try: os.remove(dest)
+                                        except OSError: pass
+                                    return False
+
+                                if not chunk: continue
+
+                                file.write(chunk)
                                 downloaded_size += len(chunk)
                                 self.progress_sig.emit("下载中", downloaded_size, total_size)
-                
-                # === [关键修改] 下载后的完整性校验 ===
-                
-                # 1. 检查文件是否存在且不为空
-                if not os.path.exists(dest) or os.path.getsize(dest) == 0:
-                    raise Exception("下载失败：文件为空或未写入")
-                
-                # 2. 如果服务器提供了大小，校验本地文件大小是否一致
-                local_size = os.path.getsize(dest)
-                if total_size > 0 and local_size != total_size:
-                    raise Exception(f"文件不完整 (预期 {total_size} 字节，实际 {local_size} 字节)")
-                
-                return True # 只有通过校验才算成功
 
-            except Exception as e:
-                self.log(f"⚠️ 下载出错 (第{attempt}次): {str(e)}")
-                # 删除可能损坏的残留文件
-                if os.path.exists(dest):
-                    try: os.remove(dest)
-                    except: pass
-                
-                if attempt < max_retries:
-                    time.sleep(2) # 稍等后重试
-                else:
-                    self.log("❌ 下载彻底失败，请检查网络或代理设置。")
-                    return False
+                    if not os.path.exists(dest) or os.path.getsize(dest) == 0:
+                        raise RuntimeError("下载文件为空")
+
+                    local_size = os.path.getsize(dest)
+
+                    if total_size > 0 and local_size != total_size:
+                        raise RuntimeError(f"文件不完整：预期 {total_size} 字节，实际 {local_size} 字节")
+
+                    # ZIP 任务必须在下载阶段确认内容确实是 ZIP。
+                    if expected_zip and not zipfile.is_zipfile(dest):
+                        bad_payload = True
+
+                        try:
+                            with open(dest, "rb") as file:
+                                preview = file.read(160).decode("utf-8", errors="replace")
+                            preview = " ".join(preview.split())
+                        except Exception:
+                            preview = ""
+
+                        detail = f"，内容开头：{preview[:80]!r}" if preview else ""
+                        raise RuntimeError(
+                            f"返回内容不是 ZIP：{local_size} B，类型={content_type or '未知'}，最终地址={final_url}{detail}"
+                        )
+
+                    self.log(f"✅ 下载路线可用：{source_name}，文件大小 {local_size} B")
+                    return True
+
+                except Exception as error:
+                    self.log(f"⚠️ {source_name} 下载无效：{error}")
+
+                    if os.path.exists(dest):
+                        try: os.remove(dest)
+                        except OSError: pass
+
+                    if self._stop: return False
+
+                    # 返回网页或假文件通常重试也不会恢复，直接换下一条路线。
+                    if bad_payload:
+                        self.log(f"↪ {source_name} 返回内容错误，直接切换下一条路线。")
+                        break
+
+                    if attempt < max_retries:
+                        time.sleep(1)
+
+            self.log(f"↪ 当前路线不可用：{source_name}")
+
+        self.log("⚠️ 当前下载路线均不可用。")
         return False
-
     def _detect_smart_root(self, extract_root: str, task_type: str) -> str:
         """智能解压根目录检测"""
         if task_type in ['dict', '词库组件']:
@@ -2981,9 +3150,10 @@ class UpdateWorker(QThread):
                         tasks.append(('语法模型', MODEL_REPO, CNB_REPO, MODEL_FILE, self.cfg.rime_dir, MODEL_TAG))
 
                 # --- 2. 纯下载循环 (进程活跃中) ---
-                # --- 2. 纯下载循环 (进程活跃中) ---
                 for task_type, gh_repo, cnb_repo, pattern, final_dest, specific_tag in tasks:
-                    if self._stop: break
+                    if self._stop:
+                        self._finish_cancelled()
+                        return
 
                     if task_type == 'CustomZip':
                         remote_data = {"url": self.cfg.custom_url, "tag": "custom", "src": "Custom URL", "hash": "", "time": "", "name": "custom.zip"}
@@ -2991,8 +3161,24 @@ class UpdateWorker(QThread):
                         # 传入 task_type 参数
                         remote_data = self._check_url(cnb_repo, gh_repo, pattern, specific_tag, task_type)
                     
+                    if not remote_data and task_type != 'CustomZip':
+                        self.log(f"🛟 {task_type}：GitHub资源信息获取失败，正在尝试CNB。")
+
+                        old_use_mirror = self.cfg.use_mirror
+                        self.cfg.use_mirror = True
+
+                        try:
+                            cnb_data = self._check_url(cnb_repo, gh_repo, pattern, specific_tag, task_type)
+                        finally:
+                            self.cfg.use_mirror = old_use_mirror
+
+                        if cnb_data and cnb_data.get('url') and str(cnb_data.get('src', '')).startswith('CNB'):
+                            remote_data = cnb_data
+                            self.log(f"✓ {task_type}：已获取CNB兜底资源。")
+
                     if not remote_data:
-                        self.log(f">>> {task_type}: 未能获取到远程资源。"); continue
+                        self.done_sig.emit(False, f"❌ {task_type}：GitHub和CNB均未找到可用资源。")
+                        return
 
                     url, tag, remote_hash = remote_data['url'], remote_data['tag'], remote_data.get('hash')
                     should_skip = False
@@ -3038,29 +3224,84 @@ class UpdateWorker(QThread):
                     self.log(f"✓ {task_type} 下载中...")
                     fname = os.path.basename(url.split('?')[0]) or f"update_{task_type}.tmp"
                     local_download_path = os.path.join(temp_root, fname)
-                    
-                    if self._download(url, local_download_path):
-                        if task_type == '语法模型' and remote_hash:
-                            if self._calculate_sha256(local_download_path) != remote_hash:
-                                self.log(f"❌ 错误: 文件校验失败，跳过安装。"); continue
-                        
-                        # 核心点：只添加到列表，暂不安装
-                        pending_tasks.append({
-                            'type': task_type,
-                            'path': local_download_path,
-                            'dest': final_dest,
-                            'ver': tag,
-                            'hash': remote_hash,
-                            'time': remote_data.get('time', '')
-                        })
-                        self.log(f"✓ {task_type} 下载完毕，进入安装队列。")
+
+                    # 先走用户选择的 GitHub 官方或代理路线。
+                    download_ok = self._download(url, local_download_path)
+
+                    # 主动停止不能被当成下载失败，也不能继续回退 CNB。
+                    if self._stop:
+                        self._finish_cancelled()
+                        return
+
+                    # GitHub及代理全部失败后，才启用原有CNB逻辑兜底。
+                    if not download_ok and task_type != 'CustomZip':
+                        self.log(f"🛟 {task_type}：GitHub下载路线全部失败，正在回退CNB。")
+
+                        old_use_mirror = self.cfg.use_mirror
+                        self.cfg.use_mirror = True
+
+                        try:
+                            cnb_data = self._check_url(cnb_repo, gh_repo, pattern, specific_tag, task_type)
+                        finally:
+                            self.cfg.use_mirror = old_use_mirror
+
+                        if self._stop:
+                            self._finish_cancelled()
+                            return
+
+                        if cnb_data and cnb_data.get('url') and str(cnb_data.get('src', '')).startswith('CNB'):
+                            cnb_url = cnb_data['url']
+                            self.log(f"🌐 {task_type}：尝试CNB兜底地址。")
+                            download_ok = self._download(cnb_url, local_download_path)
+
+                            if self._stop:
+                                self._finish_cancelled()
+                                return
+
+                            if download_ok:
+                                remote_data = cnb_data
+                                tag = str(cnb_data.get('tag', tag))
+
+                                if task_type == '方案组件' and tag.lower().startswith('v'):
+                                    tag = tag[1:]
+
+                                remote_hash = cnb_data.get('hash', '')
+                        else:
+                            self.log(f"❌ {task_type}：未找到可用的CNB兜底资源。")
+
+                    if self._stop:
+                        self._finish_cancelled()
+                        return
+
+                    if not download_ok:
+                        self.done_sig.emit(False, f"❌ {task_type}：GitHub路线和CNB均下载失败。")
+                        return
+
+                    if task_type == '语法模型' and remote_hash:
+                        if self._calculate_sha256(local_download_path) != remote_hash:
+                            self.done_sig.emit(False, "❌ 语法模型文件校验失败。")
+                            return
+
+                    # 只添加到列表，全部资源下载成功后再统一安装。
+                    pending_tasks.append({
+                        'type': task_type,
+                        'path': local_download_path,
+                        'dest': final_dest,
+                        'ver': tag,
+                        'hash': remote_hash,
+                        'time': remote_data.get('time', '')
+                    })
+
+                    self.log(f"✓ {task_type} 下载完毕，进入安装队列。")
 
                 # --- 3. 统一杀进程 ---
                 if not pending_tasks and not self.cfg.clean_before:
                     self.log("✓ 版本一致，无需更新。")
                     self.done_sig.emit(True, "✓ 所有组件已是最新。"); return
                 time.sleep(2)
-                if self._stop: return
+                if self._stop:
+                    self._finish_cancelled()
+                    return
 
                 self.log(">>> 开始安装任务")
                 self._kill_rime_process() # 此时才杀进程
@@ -3072,7 +3313,9 @@ class UpdateWorker(QThread):
 
                 # --- 4. 统一安装循环 ---
                 for task in pending_tasks:
-                    if self._stop: break
+                    if self._stop:
+                        self._finish_cancelled()
+                        return
                     
                     t_type = task['type']
                     src_path = task['path']
@@ -3155,7 +3398,9 @@ class UpdateWorker(QThread):
                         self.log(f"✓ {t_type} 安装完成")
 
                     except Exception as e:
-                        self.log(f"✓ {t_type} 安装失败: {e}")
+                        self.log(f"❌ {t_type} 安装失败：{e}")
+                        self.done_sig.emit(False, f"❌ {t_type} 安装失败：{e}")
+                        return
                 # --- 5. 部署 ---
                 if needs_deploy or self.cfg.clean_build:
                     self.log(">>> 正在触发部署")
@@ -4156,8 +4401,10 @@ class MainWin(QWidget):
         row_src = QHBoxLayout(self.row_src_widget)
         row_src.setContentsMargins(0,0,0,0)
         self.bg_src = QButtonGroup(self)
-        self.rb_src_auto = QRadioButton("自动(CNB>GitHub)")
-        self.rb_src_gh = QRadioButton("GitHub")
+
+        # 保留内部对象兼容旧设置，但不再向用户显示。
+        self.rb_src_auto = QRadioButton()
+        self.rb_src_auto.hide()
         self.bg_src.addButton(self.rb_src_auto, 1)
         # [视觉容器] GitHub + 检查更新
         self.gh_frame = QFrame()
@@ -4168,7 +4415,7 @@ class MainWin(QWidget):
         
         self.rb_src_gh = QRadioButton("GitHub")
         self.bg_src.addButton(self.rb_src_gh, 0)
-        
+        self.rb_src_gh.setChecked(True)
         self.btn_check_update = QPushButton("检查更新")
         self.btn_check_update.setCursor(Qt.PointingHandCursor)
         # 换成护眼的莫兰迪灰绿 (Sage Green)
@@ -4185,20 +4432,57 @@ class MainWin(QWidget):
             QPushButton:pressed { background-color: #49814D; }
         """)
         self.btn_check_update.clicked.connect(self.check_update)
-        
+
+        self.btn_route_test = QPushButton("测速最优路线")
+        self.btn_route_test.setCursor(Qt.PointingHandCursor)
+        self.btn_route_test.setStyleSheet(self.btn_check_update.styleSheet())
+        self.btn_route_test.clicked.connect(self.start_github_route_test)
+        self.btn_add_proxy = QPushButton("添加代理连接")
+        self.btn_add_proxy.setCursor(Qt.PointingHandCursor)
+        self.btn_add_proxy.setStyleSheet(self.btn_check_update.styleSheet())
+        self.btn_add_proxy.clicked.connect(self.add_github_proxy)
         gh_lay.addWidget(self.rb_src_gh)
         gh_lay.addSpacing(10)
         gh_lay.addWidget(self.btn_check_update)
-        self.rb_src_auto.setChecked(True)
-        row_src.addWidget(self.rb_src_auto)
-        row_src.addSpacing(15)
+        gh_lay.addSpacing(6)
+        gh_lay.addWidget(self.btn_route_test)
+        gh_lay.addSpacing(6)
+        gh_lay.addWidget(self.btn_add_proxy)
         row_src.addWidget(self.gh_frame)
         row_src.addStretch()
+        # === GitHub 下载路线：两行排列 ===
+        self.row_route_widget = QWidget()
+        self.route_grid = QGridLayout(self.row_route_widget)
+        self.route_grid.setContentsMargins(0, 0, 0, 0)
+        self.route_grid.setHorizontalSpacing(6)
+        self.route_grid.setVerticalSpacing(5)
+        self._load_custom_github_routes()
+        self.bg_gh_route = QButtonGroup(self)
+        self.route_buttons = {}
+
+        for index, (route_id, route) in enumerate(GITHUB_ROUTES.items()):
+            button = QRadioButton(route["name"])
+            button.setProperty("route_name", route["name"])
+            button.setMinimumHeight(28)
+            self._set_route_button_style(button, "#747A76")
+            self._bind_github_route_menu(button, route_id)
+
+            self.bg_gh_route.addButton(button, route_id)
+            self.route_buttons[route_id] = button
+
+            row, column = divmod(index, 3)
+            self.route_grid.addWidget(button, row, column)
+
+        self.route_buttons[0].setChecked(True)
+        self.route_grid.setColumnStretch(3, 1)
+
+        self.route_test_worker = None
         self.upd_token = QLineEdit(); self.upd_token.setPlaceholderText("GitHub Token (可选)")
         self.upd_token.setEchoMode(QLineEdit.Password)
         
         form.addRow("Rime目录:", r_rime)
         form.addRow("下载源:", self.row_src_widget)
+        form.addRow("GitHub路线:", self.row_route_widget)
         form.addRow("Token:", self.upd_token)
 
         l_left.addWidget(gb_source)
@@ -4249,6 +4533,294 @@ class MainWin(QWidget):
         h_main.addLayout(l_right, stretch=3)
         l.addLayout(h_main)
         return w
+    def _load_custom_github_routes(self):
+        """读取当前保存的全部代理路线，同时兼容旧版自定义代理设置。"""
+        raw = self.settings.value("upd/github_routes", "")
+
+        if raw:
+            try:
+                routes = json.loads(raw) if isinstance(raw, str) else raw
+            except Exception:
+                routes = []
+
+            if isinstance(routes, list):
+                for route_id in [rid for rid in list(GITHUB_ROUTES) if rid != 0]:
+                    del GITHUB_ROUTES[route_id]
+
+                for item in routes:
+                    if not isinstance(item, dict): continue
+
+                    try:
+                        route_id = int(item.get("id"))
+                    except Exception:
+                        continue
+
+                    name = str(item.get("name", "")).strip()
+                    prefix = str(item.get("prefix", "")).strip()
+
+                    if route_id == 0 or not name: continue
+                    if not prefix.startswith(("http://", "https://")): continue
+
+                    GITHUB_ROUTES[route_id] = {
+                        "name": name,
+                        "prefix": prefix.rstrip("/") + "/",
+                    }
+
+            return
+
+        # 兼容之前只保存自定义代理的格式。
+        raw = self.settings.value("upd/custom_github_routes", "[]")
+
+        try:
+            routes = json.loads(raw) if isinstance(raw, str) else raw
+        except Exception:
+            routes = []
+
+        if not isinstance(routes, list): return
+
+        for item in routes:
+            if not isinstance(item, dict): continue
+
+            name = str(item.get("name", "")).strip()
+            prefix = str(item.get("prefix", "")).strip()
+
+            if not name or not prefix.startswith(("http://", "https://")): continue
+
+            prefix = prefix.rstrip("/") + "/"
+
+            if any(route["prefix"] == prefix for route in GITHUB_ROUTES.values()):
+                continue
+
+            route_id = max([99, *GITHUB_ROUTES.keys()]) + 1
+            GITHUB_ROUTES[route_id] = {"name": name, "prefix": prefix}
+
+    def _save_custom_github_routes(self):
+        """保存当前全部代理路线，GitHub官方除外。"""
+        routes = [
+            {"id": route_id, "name": route["name"], "prefix": route["prefix"]}
+            for route_id, route in GITHUB_ROUTES.items()
+            if route_id != 0
+        ]
+
+        self.settings.setValue("upd/github_routes", json.dumps(routes, ensure_ascii=False))
+        self.settings.remove("upd/custom_github_routes")
+        self.settings.sync()
+
+    def add_github_proxy(self):
+        """添加一个“代理前缀 + GitHub原始地址”类型的代理。"""
+        if self.route_test_worker and self.route_test_worker.isRunning():
+            QMessageBox.information(self, "提示", "请等待当前测速完成后再添加代理。")
+            return
+
+        name, ok = QInputDialog.getText(
+            self,
+            "添加代理连接",
+            "显示名称：",
+            QLineEdit.Normal,
+            "自定义代理",
+        )
+
+        if not ok: return
+
+        name = name.strip()
+
+        if not name:
+            QMessageBox.warning(self, "输入错误", "代理名称不能为空。")
+            return
+
+        prefix, ok = QInputDialog.getText(
+            self,
+            "添加代理连接",
+            "代理前缀：\n例如：https://proxy.example/",
+        )
+
+        if not ok: return
+
+        prefix = prefix.strip()
+
+        if not prefix.startswith(("http://", "https://")):
+            QMessageBox.warning(self, "输入错误", "代理地址必须以 http:// 或 https:// 开头。")
+            return
+
+        prefix = prefix.rstrip("/") + "/"
+
+        for route in GITHUB_ROUTES.values():
+            if route["prefix"] == prefix:
+                QMessageBox.information(self, "提示", "这个代理地址已经存在。")
+                return
+
+        route_id = max([99, *GITHUB_ROUTES.keys()]) + 1
+        GITHUB_ROUTES[route_id] = {"name": name, "prefix": prefix}
+
+        button = QRadioButton(name)
+        button.setProperty("route_name", name)
+        button.setMinimumHeight(28)
+        self._set_route_button_style(button, "#747A76")
+        self._bind_github_route_menu(button, route_id)
+
+        self.bg_gh_route.addButton(button, route_id)
+        self.route_buttons[route_id] = button
+
+        index = len(self.route_buttons) - 1
+        row, column = divmod(index, 3)
+        self._reflow_github_route_grid()
+
+        button.setChecked(True)
+
+        self._save_custom_github_routes()
+        self.settings.setValue("upd/github_route", route_id)
+        self.settings.sync()
+
+        self.log.appendPlainText(f"➕ 已添加GitHub代理：{name} → {prefix}")
+
+        QTimer.singleShot(0, self.start_github_route_test)
+    def _bind_github_route_menu(self, button, route_id):
+        """为路线按钮绑定右键菜单。"""
+        button.setContextMenuPolicy(Qt.CustomContextMenu)
+        button.customContextMenuRequested.connect(
+            lambda pos, rid=route_id, btn=button: self._show_github_route_menu(rid, btn, pos)
+        )
+
+    def _show_github_route_menu(self, route_id, button, pos):
+        """显示代理路线右键菜单。"""
+        menu = QMenu(button)
+
+        if route_id == 0:
+            action = menu.addAction("GitHub 官方路线不可删除")
+            action.setEnabled(False)
+        else:
+            action = menu.addAction("删除此路线")
+            action.triggered.connect(lambda: self.delete_github_route(route_id))
+
+        menu.exec(button.mapToGlobal(pos))
+
+    def _reflow_github_route_grid(self):
+        """添加或删除后，重新按每行3个排列。"""
+        while self.route_grid.count():
+            self.route_grid.takeAt(0)
+
+        for index, button in enumerate(self.route_buttons.values()):
+            row, column = divmod(index, 3)
+            self.route_grid.addWidget(button, row, column)
+
+        self.route_grid.setColumnStretch(3, 1)
+
+    def delete_github_route(self, route_id):
+        """删除右键选中的代理，GitHub官方路线不可删除。"""
+        if self.route_test_worker and self.route_test_worker.isRunning():
+            QMessageBox.information(self, "提示", "请等待当前测速完成后再删除代理。")
+            return
+
+        if route_id == 0:
+            QMessageBox.information(self, "无法删除", "GitHub官方路线必须保留。")
+            return
+
+        if route_id not in GITHUB_ROUTES:
+            return
+
+        route = GITHUB_ROUTES[route_id]
+        name = route["name"]
+        prefix = route["prefix"]
+
+        result = QMessageBox.question(
+            self,
+            "删除代理路线",
+            f"确定删除这个代理吗？\n\n名称：{name}\n地址：{prefix}",
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No,
+        )
+
+        if result != QMessageBox.Yes:
+            return
+
+        was_selected = self.bg_gh_route.checkedId() == route_id
+        button = self.route_buttons.pop(route_id, None)
+
+        if button:
+            self.bg_gh_route.removeButton(button)
+            self.route_grid.removeWidget(button)
+            button.deleteLater()
+
+        del GITHUB_ROUTES[route_id]
+
+        if was_selected:
+            self.route_buttons[0].setChecked(True)
+            self.settings.setValue("upd/github_route", 0)
+
+        self._save_custom_github_routes()
+        self._reflow_github_route_grid()
+
+        self.log.appendPlainText(f"➖ 已删除GitHub代理：{name} → {prefix}")
+
+    def _set_route_button_style(self, button, color):
+        button.setStyleSheet(f"""
+            QRadioButton {{
+                color: {color};
+                background-color: transparent;
+                border: 1px solid {color};
+                border-radius: 11px;
+                padding: 3px 10px;
+                font-size: 12px;
+                font-weight: bold;
+            }}
+            QRadioButton:checked {{
+                color: white;
+                background-color: {color};
+                border-color: {color};
+            }}
+        """)
+    def start_github_route_test(self):
+        if self.route_test_worker and self.route_test_worker.isRunning(): return
+
+        self.btn_route_test.setEnabled(False)
+        self.btn_route_test.setText("测速中...")
+
+        for route_id, button in self.route_buttons.items():
+            button.setText(GITHUB_ROUTES[route_id]["name"])
+            self._set_route_button_style(button, "#8A8A8A")
+
+        self.route_test_worker = GithubRouteTestWorker(GITHUB_ROUTE_TEST_URL)
+        self.route_test_worker.done_sig.connect(self.finish_github_route_test)
+        self.route_test_worker.start()
+    def finish_github_route_test(self, results):
+        self.btn_route_test.setEnabled(True)
+        self.btn_route_test.setText("测速最优路线")
+
+        available = []
+
+        for route_id, result in results.items():
+            route = GITHUB_ROUTES[route_id]
+            button = self.route_buttons[route_id]
+
+            if result["ok"]:
+                ms = result["ms"]
+                button.setText(f"{route['name']}  {ms:.0f} ms")
+                available.append((ms, route_id))
+            else:
+                button.setText(f"{route['name']}  不可用")
+                self._set_route_button_style(button, "#747A76")
+
+        if not available:
+            self.log.appendPlainText("⚠️ GitHub 路线测速均失败，请检查网络。")
+            return
+
+        available.sort()
+
+        for rank, (_, route_id) in enumerate(available):
+            if rank == 0:
+                color = "#61A165"
+            elif rank == 1:
+                color = "#C9A44C"
+            else:
+                color = "#C46A6A"
+
+            self._set_route_button_style(self.route_buttons[route_id], color)
+
+        best_ms, best_route_id = available[0]
+        best_name = GITHUB_ROUTES[best_route_id]["name"]
+
+        self.route_buttons[best_route_id].setChecked(True)
+        self.log.appendPlainText(f"🚀 已选择最优路线：{best_name}，延迟约 {best_ms:.0f} ms")
     def on_tab_change(self, idx):
         is_yaml_tab = (self.tabs.widget(idx) == self.tab_yaml)
 
@@ -4345,8 +4917,13 @@ class MainWin(QWidget):
             if not self.chk_force.isChecked():
                 self.chk_force.setChecked(True)
                 self.log.appendPlainText("🛡️ 安全覆写：检测到清理模式，已自动修正为【强制更新】。")
-        is_auto_mirror = (self.bg_src.checkedId() == 1)
-        
+        is_auto_mirror = False
+        route_id = self.bg_gh_route.checkedId()
+        route_info = GITHUB_ROUTES.get(
+            route_id,
+            GITHUB_ROUTES[0],
+        )
+        github_proxy = route_info["prefix"]
         # 获取检测到的路径
         srv_path = getattr(self, 'detected_server', '')
         dep_path = getattr(self, 'detected_deployer', '')
@@ -4357,6 +4934,7 @@ class MainWin(QWidget):
             aux_scheme=aux_key,
             rime_dir=rime_dir,
             github_token=self.upd_token.text(),
+            github_proxy=github_proxy,
             use_mirror=is_auto_mirror,
             whitelist=whitelist_lines,
             current_versions=versions,
@@ -4386,19 +4964,36 @@ class MainWin(QWidget):
         self.settings.setValue(f"installed_versions/{comp}", ver)
 
     def stop_update(self):
-        if self.upd_worker: self.upd_worker.stop()
+        if not self.upd_worker or not self.upd_worker.isRunning(): return
+
+        self.btn_stop.setEnabled(False)
+        self.status.setText("正在停止...")
+        self.log.appendPlainText("⏹ 已请求停止，正在安全结束当前操作...")
+        self.upd_worker.stop()
 
     def on_update_done(self, ok, msg):
+        cancelled = (msg == "⏹ 更新已取消。")
+
         self.btn_run.setEnabled(True)
         self.btn_stop.setEnabled(False)
         self.tabs.setEnabled(True)
-        self.status.setText("完成" if ok else "失败")
+
+        if cancelled:
+            self.status.setText("已取消")
+        else:
+            self.status.setText("完成" if ok else "失败")
+
         self.log.appendPlainText(msg)
         self.settings.sync()
         self.save_settings()
-        
-        if ok: QMessageBox.information(self, "完成", msg)
-        else: QMessageBox.warning(self, "错误", msg)
+
+        if cancelled:
+            return
+
+        if ok:
+            QMessageBox.information(self, "完成", msg)
+        else:
+            QMessageBox.warning(self, "错误", msg)
     def do_import_switches(self, text_field):
         """一键从 wanxiang.schema.yaml 提取有用开关"""
         main_schema = os.path.join(self.upd_rime.text().strip(), "wanxiang.schema.yaml")
@@ -7660,7 +8255,7 @@ class MainWin(QWidget):
             s.setValue('upd/aux_index', self.combo_aux.currentIndex())
             s.setValue('upd/rime', self.upd_rime.text())
             s.setValue('upd/token', self.upd_token.text())
-            s.setValue('upd/src_mode', self.bg_src.checkedId()) # 保存GitHub/自动模式
+            s.setValue('upd/github_route', self.bg_gh_route.checkedId())
             s.setValue('upd/whitelist', self.upd_wl_edit.toPlainText()) 
             s.setValue('upd/clean', self.chk_clean.isChecked())
             s.setValue('upd/clean_build', self.chk_clean_build.isChecked()) # 保存清理build选项
@@ -7708,9 +8303,10 @@ class MainWin(QWidget):
                     self.detected_server = det.get('weasel_server', '')
                     self.detected_deployer = det.get('weasel_deployer', '')
             self.upd_token.setText(s.value('upd/token', ''))
-            src_mode = int(s.value('upd/src_mode', 1))
-            if self.bg_src.button(src_mode):
-                self.bg_src.button(src_mode).setChecked(True)
+            route_id = int(s.value('upd/github_route', 0))
+            if self.bg_gh_route.button(route_id): self.bg_gh_route.button(route_id).setChecked(True)
+
+            self.rb_src_gh.setChecked(True)
             wl = s.value('upd/whitelist', "")
             if wl: self.upd_wl_edit.setPlainText(wl)
             self.chk_clean.setChecked(s.value('upd/clean', False, bool))
@@ -7732,6 +8328,15 @@ class MainWin(QWidget):
                                    QMessageBox.Yes | QMessageBox.No)
         if ret != QMessageBox.Yes: return
         self.settings.clear()
+        for route_id in [rid for rid in list(GITHUB_ROUTES) if rid >= 100]:
+            button = self.route_buttons.pop(route_id, None)
+
+            if button:
+                self.bg_gh_route.removeButton(button)
+                self.route_grid.removeWidget(button)
+                button.deleteLater()
+
+            del GITHUB_ROUTES[route_id]
         # UI复位
         self.ignore_non_chinese_cb_py.setChecked(True)
         self.in_edit_py.clear()
@@ -7755,8 +8360,12 @@ class MainWin(QWidget):
         self.bg_scope.button(0).setChecked(True) 
         self.bg_ver.button(0).setChecked(True) 
         self.combo_aux.setCurrentIndex(0) 
-        self.bg_src.button(1).setChecked(True)
+        self.rb_src_gh.setChecked(True)
         self.upd_token.clear()
+        self.bg_gh_route.button(0).setChecked(True)
+        for route_id, button in self.route_buttons.items():
+            button.setText(GITHUB_ROUTES[route_id]["name"])
+            self._set_route_button_style(button, "#8A8A8A")
         self.upd_wl_edit.setPlainText("\n".join(DEFAULT_WL_REGEX))
         # 复位勾选框
         self.chk_clean_build.setChecked(False)
@@ -7813,13 +8422,17 @@ def main():
     app = QApplication(sys.argv)
     trans = QTranslator()
     path = QLibraryInfo.path(QLibraryInfo.LibraryPath.TranslationsPath)
+
     if trans.load("qt_zh_CN", path):
         app.installTranslator(trans)
-    else:
-        if trans.load("qtbase_zh_CN", path):
-            app.installTranslator(trans)
+    elif trans.load("qtbase_zh_CN", path):
+        app.installTranslator(trans)
+
     w = MainWin()
     w.show()
+
+    QTimer.singleShot(800, w.start_github_route_test)
+
     sys.exit(app.exec())
 if __name__ == '__main__':
     main()
