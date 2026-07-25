@@ -84,7 +84,7 @@ data class DownloadCandidate(val url: String, val name: String, val usesProxy: B
 
 val DEFAULT_GITHUB_ROUTES = listOf(
     GithubRoute(OFFICIAL_ROUTE_ID, "GitHub", ""),
-    GithubRoute("b52m", "gh.b52m.cn", "https://gh.b52m.cn/"),
+    GithubRoute("ghproxy-cn", "ghproxy.cn", "https://ghproxy.cn/"),
     GithubRoute("gh-proxy-com", "gh-proxy.com", "https://gh-proxy.com/"),
     GithubRoute("ghfast-top", "ghfast.top", "https://ghfast.top/"),
     GithubRoute("xxlab", "xxlab", "https://github.xxlab.tech/"),
@@ -557,7 +557,8 @@ fun WanxiangDownloaderApp() {
         isTestingRoutes = false
     }
 
-    // 检查更新会走当前选中的GitHub路线；代理不支持API时自动尝试其他代理，最后回退CNB。
+    // 主方案版本检测：GitHub API失败时可用CNB补充正式版Tag。
+    // 更新器自身检测：仅检查GitHub，CNB没有Android安装包，不显示或尝试CNB兜底。
     LaunchedEffect(selectedRouteId, githubRoutes, updateCheckNonce) {
         isCheckingUpdate = true
         updateCheckSource = ""
@@ -567,7 +568,7 @@ fun WanxiangDownloaderApp() {
         var detectedStableTag: String? = null
         var detectedUpdaterName: String? = null
         var detectedUpdaterUrl: String? = null
-        var sourceText = ""
+        var updaterSourceText = ""
 
         val mainJson = fetchGithubApiJson(
             "https://api.github.com/repos/amzxyz/rime-wanxiang/releases/latest",
@@ -579,7 +580,6 @@ fun WanxiangDownloaderApp() {
         if (!mainJson.isNullOrBlank()) {
             try {
                 detectedStableTag = org.json.JSONObject(mainJson).optString("tag_name").ifBlank { null }
-                if (detectedStableTag != null) sourceText = "GitHub API"
             } catch (_: Exception) {
             }
         }
@@ -588,7 +588,6 @@ fun WanxiangDownloaderApp() {
         if (detectedStableTag == null) {
             cnbMainReleases = fetchCnbReleases("rime-wanxiang")
             detectedStableTag = findLatestStableCnbTag(cnbMainReleases)
-            if (detectedStableTag != null) sourceText = "CNB兜底"
         }
 
         val toolJson = fetchGithubApiJson(
@@ -608,24 +607,12 @@ fun WanxiangDownloaderApp() {
                         if (name.startsWith("Wanxiang-Updater-Android") && name.endsWith(".apk", true)) {
                             detectedUpdaterName = name
                             detectedUpdaterUrl = asset.optString("browser_download_url")
+                            updaterSourceText = "GitHub API"
                             break
                         }
                     }
                 }
             } catch (_: Exception) {
-            }
-        }
-
-        if (detectedUpdaterUrl.isNullOrBlank()) {
-            val cnbToolReleases = fetchCnbReleases("RIME-LMDG")
-            findCnbAsset(
-                releases = cnbToolReleases,
-                wantedTag = "tool",
-                namePredicate = { it.startsWith("Wanxiang-Updater-Android") && it.endsWith(".apk", true) }
-            )?.let { (name, url) ->
-                detectedUpdaterName = name
-                detectedUpdaterUrl = url
-                if (sourceText.isBlank()) sourceText = "CNB兜底"
             }
         }
 
@@ -635,7 +622,7 @@ fun WanxiangDownloaderApp() {
                 .find(name)?.groupValues?.get(1).orEmpty()
         }
         updaterDownloadUrl = detectedUpdaterUrl.orEmpty()
-        updateCheckSource = sourceText.ifBlank { "检查失败" }
+        updateCheckSource = updaterSourceText.ifBlank { "仅GitHub检查失败" }
         isCheckingUpdate = false
     }
 
@@ -766,15 +753,15 @@ fun WanxiangDownloaderApp() {
                             val hasNewVersion = !isCheckingUpdate && cloudVersionName.isNotEmpty() && isRemoteVersionNewer(cloudVersionName, localVersionName)
                             Text("🔧 更新器自身检测", fontWeight = FontWeight.Bold, color = Color.DarkGray, fontSize = 14.sp)
                             Text(
-                                text = if (isCheckingUpdate) "正在检测云端..."
-                                       else if (cloudVersionName.isEmpty()) "未发现有效更新包"
+                                text = if (isCheckingUpdate) "正在通过GitHub检测..."
+                                       else if (cloudVersionName.isEmpty()) "GitHub未发现有效更新包"
                                        else if (hasNewVersion) "发现新版本: v$cloudVersionName"
                                        else "已是最新版本",
                                 fontSize = 12.sp,
                                 color = if (hasNewVersion) MorandiGreen else Color.Gray
                             )
                             if (!isCheckingUpdate) {
-                                Text("检测来源：$updateCheckSource", fontSize = 10.sp, color = Color.Gray)
+                                Text("软件检测：$updateCheckSource", fontSize = 10.sp, color = Color.Gray)
                             }
                         }
 

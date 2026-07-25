@@ -2487,6 +2487,8 @@ class UpdateConfig:
     server_path: str = ""   # 算法服务路径 (WeaselServer.exe)
     deployer_path: str = "" # 部署工具路径 (WeaselDeployer.exe)
     force_update: bool = False #强制更新
+    proxy_slow_fallback: bool = True
+    proxy_min_speed_kbps: int = 128
 class PathDetector:
     @staticmethod
     def detect() -> Dict[str, str]:
@@ -2599,6 +2601,10 @@ class GithubRouteTestWorker(QThread):
             results[route_id] = self._test_route(route)
 
         self.done_sig.emit(results)
+class ProxySpeedTooSlow(RuntimeError):
+    """第三方代理持续低速，需要立即交给CNB兜底。"""
+
+
 class UpdateWorker(QThread):
     log_sig = Signal(str)
     progress_sig = Signal(str, int, int) # task, cur, total
@@ -2943,10 +2949,13 @@ class UpdateWorker(QThread):
                             return extract_asset_info(asset, rel.get('tag_name', '0.0.0'))
         
         return None
-    def _download(self, url, dest):
+    def _download(self, url, dest, allow_slow_cnb_fallback=True):
         """按用户选择依次尝试下载路线，并校验下载内容。"""
         max_retries = 2
         timeout_sec = 60
+        proxy_grace_sec = 5.0
+        proxy_speed_window_sec = 4.0
+        proxy_no_data_timeout_sec = 10
 
         original_url = url
         clean_url = original_url.split("?", 1)[0].lower()
@@ -2970,12 +2979,22 @@ class UpdateWorker(QThread):
         else:
             sources = [(original_url, False)]
 
+        force_cnb_fallback = False
+
         for source_index, (download_url, using_github_proxy) in enumerate(sources, 1):
             source_name = download_url.split("/", 3)[2] if "://" in download_url else download_url
+            monitor_proxy_speed = (
+                using_github_proxy
+                and allow_slow_cnb_fallback
+                and self.cfg.proxy_slow_fallback
+                and self.cfg.proxy_min_speed_kbps > 0
+            )
+            read_timeout = proxy_no_data_timeout_sec if monitor_proxy_speed else timeout_sec
             self.log(f"🌐 尝试下载路线 {source_index}/{len(sources)}：{source_name}")
 
             for attempt in range(1, max_retries + 1):
                 bad_payload = False
+                response_started = False
 
                 try:
                     if attempt > 1:
@@ -2993,9 +3012,10 @@ class UpdateWorker(QThread):
                         headers=headers,
                         stream=True,
                         allow_redirects=True,
-                        timeout=(10, timeout_sec),
+                        timeout=(10, read_timeout),
                     ) as response:
                         response.raise_for_status()
+                        response_started = True
 
                         content_type = response.headers.get("content-type", "").lower()
                         final_url = response.url
@@ -3006,9 +3026,13 @@ class UpdateWorker(QThread):
 
                         total_size = int(response.headers.get("content-length", 0) or 0)
                         downloaded_size = 0
+                        download_started = time.monotonic()
+                        monitor_started = None
+                        monitor_bytes = 0
+                        last_progress_emit = 0.0
 
                         with open(dest, "wb") as file:
-                            for chunk in response.iter_content(chunk_size=16384):
+                            for chunk in response.iter_content(chunk_size=65536):
                                 if self._stop:
                                     if os.path.exists(dest):
                                         try: os.remove(dest)
@@ -3018,8 +3042,36 @@ class UpdateWorker(QThread):
                                 if not chunk: continue
 
                                 file.write(chunk)
-                                downloaded_size += len(chunk)
-                                self.progress_sig.emit("下载中", downloaded_size, total_size)
+                                chunk_size = len(chunk)
+                                downloaded_size += chunk_size
+                                now = time.monotonic()
+                                elapsed = max(now - download_started, 0.001)
+                                average_speed_kbps = downloaded_size / elapsed / 1024.0
+
+                                if now - last_progress_emit >= 0.2:
+                                    self.progress_sig.emit(f"下载中 {average_speed_kbps:.0f} KB/s", downloaded_size, total_size)
+                                    last_progress_emit = now
+
+                                if monitor_proxy_speed and elapsed >= proxy_grace_sec:
+                                    if monitor_started is None:
+                                        monitor_started = now
+                                        monitor_bytes = chunk_size
+                                    else:
+                                        monitor_bytes += chunk_size
+                                        window_elapsed = now - monitor_started
+
+                                        if window_elapsed >= proxy_speed_window_sec:
+                                            window_speed_kbps = monitor_bytes / window_elapsed / 1024.0
+
+                                            if window_speed_kbps < self.cfg.proxy_min_speed_kbps:
+                                                raise ProxySpeedTooSlow(
+                                                    f"{source_name}连续{window_elapsed:.1f}秒仅"
+                                                    f"{window_speed_kbps:.0f} KB/s，低于"
+                                                    f"{self.cfg.proxy_min_speed_kbps} KB/s"
+                                                )
+
+                                            monitor_started = now
+                                            monitor_bytes = 0
 
                     if not os.path.exists(dest) or os.path.getsize(dest) == 0:
                         raise RuntimeError("下载文件为空")
@@ -3029,7 +3081,6 @@ class UpdateWorker(QThread):
                     if total_size > 0 and local_size != total_size:
                         raise RuntimeError(f"文件不完整：预期 {total_size} 字节，实际 {local_size} 字节")
 
-                    # ZIP 任务必须在下载阶段确认内容确实是 ZIP。
                     if expected_zip and not zipfile.is_zipfile(dest):
                         bad_payload = True
 
@@ -3045,17 +3096,36 @@ class UpdateWorker(QThread):
                             f"返回内容不是 ZIP：{local_size} B，类型={content_type or '未知'}，最终地址={final_url}{detail}"
                         )
 
+                    self.progress_sig.emit("下载完成", local_size, local_size)
                     self.log(f"✅ 下载路线可用：{source_name}，文件大小 {local_size} B")
                     return True
 
+                except ProxySpeedTooSlow as error:
+                    self.log(f"🐢 {error}，立即停止代理并切换CNB。")
+
+                    if os.path.exists(dest):
+                        try: os.remove(dest)
+                        except OSError: pass
+
+                    force_cnb_fallback = True
+                    break
+
                 except Exception as error:
-                    self.log(f"⚠️ {source_name} 下载无效：{error}")
+                    error_text = str(error)
+                    is_stream_timeout = monitor_proxy_speed and response_started and "timed out" in error_text.lower()
+
+                    if is_stream_timeout:
+                        self.log(f"🐢 {source_name}连续约{proxy_no_data_timeout_sec}秒无数据，立即停止代理并切换CNB。")
+                        force_cnb_fallback = True
+                    else:
+                        self.log(f"⚠️ {source_name} 下载无效：{error}")
 
                     if os.path.exists(dest):
                         try: os.remove(dest)
                         except OSError: pass
 
                     if self._stop: return False
+                    if force_cnb_fallback: break
 
                     # 返回网页或假文件通常重试也不会恢复，直接换下一条路线。
                     if bad_payload:
@@ -3065,10 +3135,18 @@ class UpdateWorker(QThread):
                     if attempt < max_retries:
                         time.sleep(1)
 
+            if force_cnb_fallback:
+                self.log("🛟 已放弃低速GitHub代理，准备使用CNB兜底。")
+                break
+
             self.log(f"↪ 当前路线不可用：{source_name}")
+
+        if force_cnb_fallback:
+            return False
 
         self.log("⚠️ 当前下载路线均不可用。")
         return False
+
     def _detect_smart_root(self, extract_root: str, task_type: str) -> str:
         """智能解压根目录检测"""
         if task_type in ['dict', '词库组件']:
@@ -3226,7 +3304,11 @@ class UpdateWorker(QThread):
                     local_download_path = os.path.join(temp_root, fname)
 
                     # 先走用户选择的 GitHub 官方或代理路线。
-                    download_ok = self._download(url, local_download_path)
+                    download_ok = self._download(
+                        url,
+                        local_download_path,
+                        allow_slow_cnb_fallback=(task_type != 'CustomZip'),
+                    )
 
                     # 主动停止不能被当成下载失败，也不能继续回退 CNB。
                     if self._stop:
@@ -3252,7 +3334,7 @@ class UpdateWorker(QThread):
                         if cnb_data and cnb_data.get('url') and str(cnb_data.get('src', '')).startswith('CNB'):
                             cnb_url = cnb_data['url']
                             self.log(f"🌐 {task_type}：尝试CNB兜底地址。")
-                            download_ok = self._download(cnb_url, local_download_path)
+                            download_ok = self._download(cnb_url, local_download_path, allow_slow_cnb_fallback=False)
 
                             if self._stop:
                                 self._finish_cancelled()
@@ -4477,12 +4559,35 @@ class MainWin(QWidget):
         self.route_grid.setColumnStretch(3, 1)
 
         self.route_test_worker = None
+
+        self.row_slow_fallback_widget = QWidget()
+        slow_fallback_lay = QHBoxLayout(self.row_slow_fallback_widget)
+        slow_fallback_lay.setContentsMargins(0, 0, 0, 0)
+        slow_fallback_lay.setSpacing(8)
+
+        self.chk_proxy_slow_fallback = QCheckBox("代理低速时直接切换CNB")
+        self.chk_proxy_slow_fallback.setChecked(True)
+
+        self.combo_proxy_min_speed = QComboBox()
+        for speed in (64, 128, 256, 512):
+            self.combo_proxy_min_speed.addItem(f"{speed} KB/s", speed)
+        self.combo_proxy_min_speed.setCurrentIndex(1)
+        self.combo_proxy_min_speed.setFixedWidth(105)
+        self.combo_proxy_min_speed.setToolTip("代理经过5秒预热后，连续约4秒低于此速度便停止并改用CNB。")
+        self.chk_proxy_slow_fallback.toggled.connect(self.combo_proxy_min_speed.setEnabled)
+
+        slow_fallback_lay.addWidget(self.chk_proxy_slow_fallback)
+        slow_fallback_lay.addWidget(QLabel("最低速度:"))
+        slow_fallback_lay.addWidget(self.combo_proxy_min_speed)
+        slow_fallback_lay.addStretch()
+
         self.upd_token = QLineEdit(); self.upd_token.setPlaceholderText("GitHub Token (可选)")
         self.upd_token.setEchoMode(QLineEdit.Password)
         
         form.addRow("Rime目录:", r_rime)
         form.addRow("下载源:", self.row_src_widget)
         form.addRow("GitHub路线:", self.row_route_widget)
+        form.addRow("低速回退:", self.row_slow_fallback_widget)
         form.addRow("Token:", self.upd_token)
 
         l_left.addWidget(gb_source)
@@ -4943,7 +5048,9 @@ class MainWin(QWidget):
             custom_url=custom_url,
             server_path=srv_path,
             deployer_path=dep_path,
-            force_update=self.chk_force.isChecked()
+            force_update=self.chk_force.isChecked(),
+            proxy_slow_fallback=self.chk_proxy_slow_fallback.isChecked(),
+            proxy_min_speed_kbps=int(self.combo_proxy_min_speed.currentData() or 128)
         )
         
         self.log.clear()
@@ -8256,6 +8363,8 @@ class MainWin(QWidget):
             s.setValue('upd/rime', self.upd_rime.text())
             s.setValue('upd/token', self.upd_token.text())
             s.setValue('upd/github_route', self.bg_gh_route.checkedId())
+            s.setValue('upd/proxy_slow_fallback', self.chk_proxy_slow_fallback.isChecked())
+            s.setValue('upd/proxy_min_speed_kbps', int(self.combo_proxy_min_speed.currentData() or 128))
             s.setValue('upd/whitelist', self.upd_wl_edit.toPlainText()) 
             s.setValue('upd/clean', self.chk_clean.isChecked())
             s.setValue('upd/clean_build', self.chk_clean_build.isChecked()) # 保存清理build选项
@@ -8305,6 +8414,12 @@ class MainWin(QWidget):
             self.upd_token.setText(s.value('upd/token', ''))
             route_id = int(s.value('upd/github_route', 0))
             if self.bg_gh_route.button(route_id): self.bg_gh_route.button(route_id).setChecked(True)
+
+            self.chk_proxy_slow_fallback.setChecked(s.value('upd/proxy_slow_fallback', True, bool))
+            saved_min_speed = int(s.value('upd/proxy_min_speed_kbps', 128))
+            speed_index = self.combo_proxy_min_speed.findData(saved_min_speed)
+            self.combo_proxy_min_speed.setCurrentIndex(speed_index if speed_index >= 0 else 1)
+            self.combo_proxy_min_speed.setEnabled(self.chk_proxy_slow_fallback.isChecked())
 
             self.rb_src_gh.setChecked(True)
             wl = s.value('upd/whitelist', "")
@@ -8363,6 +8478,9 @@ class MainWin(QWidget):
         self.rb_src_gh.setChecked(True)
         self.upd_token.clear()
         self.bg_gh_route.button(0).setChecked(True)
+        self.chk_proxy_slow_fallback.setChecked(True)
+        self.combo_proxy_min_speed.setCurrentIndex(1)
+        self.combo_proxy_min_speed.setEnabled(True)
         for route_id, button in self.route_buttons.items():
             button.setText(GITHUB_ROUTES[route_id]["name"])
             self._set_route_button_style(button, "#8A8A8A")
