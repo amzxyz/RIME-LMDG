@@ -48,6 +48,7 @@ import kotlinx.coroutines.coroutineScope
 import java.io.File
 import java.io.FileOutputStream
 import java.net.HttpURLConnection
+import java.net.SocketTimeoutException
 import java.net.URL
 import java.util.UUID
 import java.util.zip.ZipFile
@@ -71,6 +72,11 @@ val DEFAULT_EXCLUDE_RULES = listOf(
 
 const val OFFICIAL_ROUTE_ID = "official"
 const val GITHUB_ROUTE_TEST_URL = "https://github.com/amzxyz/rime-wanxiang/releases/download/dict-nightly/base-dicts.zip"
+const val DEFAULT_MIN_PROXY_SPEED_KBPS = 128
+const val LOW_SPEED_GRACE_MS = 5_000L
+const val LOW_SPEED_WINDOW_MS = 3_000L
+
+class LowSpeedFallbackException(val speedKbps: Long) : Exception("代理速度过低：${speedKbps}KB/s")
 
 data class GithubRoute(val id: String, val name: String, val prefix: String)
 data class RouteProbe(val ok: Boolean, val latencyMs: Long = Long.MAX_VALUE, val error: String = "")
@@ -78,7 +84,7 @@ data class DownloadCandidate(val url: String, val name: String, val usesProxy: B
 
 val DEFAULT_GITHUB_ROUTES = listOf(
     GithubRoute(OFFICIAL_ROUTE_ID, "GitHub", ""),
-    GithubRoute("ghproxy-cn", "ghproxy.cn", "https://ghproxy.cn/"),
+    GithubRoute("b52m", "gh.b52m.cn", "https://gh.b52m.cn/"),
     GithubRoute("gh-proxy-com", "gh-proxy.com", "https://gh-proxy.com/"),
     GithubRoute("ghfast-top", "ghfast.top", "https://ghfast.top/"),
     GithubRoute("xxlab", "xxlab", "https://github.xxlab.tech/"),
@@ -500,6 +506,12 @@ fun WanxiangDownloaderApp() {
     var newProxyName by remember { mutableStateOf("") }
     var newProxyPrefix by remember { mutableStateOf("") }
     var pendingDeleteRouteId by remember { mutableStateOf<String?>(null) }
+    var lowSpeedFallbackEnabled by remember {
+        mutableStateOf(sharedPref.getBoolean("low_speed_fallback_enabled", true))
+    }
+    var minProxySpeedKbps by remember {
+        mutableStateOf(sharedPref.getInt("min_proxy_speed_kbps", DEFAULT_MIN_PROXY_SPEED_KBPS))
+    }
 
     var excludeRulesText by remember {
         mutableStateOf(sharedPref.getString("exclude_rules", DEFAULT_EXCLUDE_RULES) ?: DEFAULT_EXCLUDE_RULES)
@@ -934,6 +946,50 @@ fun WanxiangDownloaderApp() {
                         Text("🌐 GitHub下载路线", fontWeight = FontWeight.Bold, color = Color.DarkGray)
                         Text("按当前路线优先下载，其他代理依次补位，全部失败后自动回退CNB。", fontSize = 11.sp, color = Color.Gray)
 
+                        Row(
+                            modifier = Modifier.fillMaxWidth().padding(top = 8.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Switch(
+                                checked = lowSpeedFallbackEnabled,
+                                onCheckedChange = { enabled ->
+                                    lowSpeedFallbackEnabled = enabled
+                                    sharedPref.edit().putBoolean("low_speed_fallback_enabled", enabled).apply()
+                                }
+                            )
+                            Spacer(modifier = Modifier.width(8.dp))
+                            Column(modifier = Modifier.weight(1f)) {
+                                Text("代理低速自动切换CNB", fontSize = 13.sp, fontWeight = FontWeight.Bold, color = Color.DarkGray)
+                                Text(
+                                    "代理连续低速时终止当前下载并直接改走CNB；GitHub官方和CNB不受限制。",
+                                    fontSize = 10.sp,
+                                    color = Color.Gray
+                                )
+                            }
+                        }
+
+                        AnimatedVisibility(visible = lowSpeedFallbackEnabled) {
+                            Column(modifier = Modifier.fillMaxWidth().padding(top = 4.dp, bottom = 4.dp)) {
+                                Text("最低速度（观察5秒后判断）", fontSize = 11.sp, color = Color.Gray)
+                                FlowRow(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.spacedBy(6.dp),
+                                    verticalArrangement = Arrangement.spacedBy(4.dp)
+                                ) {
+                                    listOf(64, 128, 256, 512).forEach { speed ->
+                                        FilterChip(
+                                            selected = minProxySpeedKbps == speed,
+                                            onClick = {
+                                                minProxySpeedKbps = speed
+                                                sharedPref.edit().putInt("min_proxy_speed_kbps", speed).apply()
+                                            },
+                                            label = { Text("${speed}KB/s", fontSize = 11.sp) }
+                                        )
+                                    }
+                                }
+                            }
+                        }
+
                         Spacer(modifier = Modifier.height(8.dp))
 
                         val availableRouteIds = routeProbes.filterValues { it.ok }
@@ -1117,7 +1173,9 @@ fun WanxiangDownloaderApp() {
                                         rules = currentRules,
                                         githubRoutes = githubRoutes,
                                         selectedRouteId = selectedRouteId,
-                                        cnbFallbackUrls = cnbFallbackUrls
+                                        cnbFallbackUrls = cnbFallbackUrls,
+                                        lowSpeedFallbackEnabled = lowSpeedFallbackEnabled,
+                                        minProxySpeedKbps = minProxySpeedKbps
                                     )
                                 },
                                 modifier = Modifier.weight(1f).height(48.dp),
@@ -1421,7 +1479,9 @@ fun executeTasks(
     rules: List<String>,
     githubRoutes: List<GithubRoute> = DEFAULT_GITHUB_ROUTES,
     selectedRouteId: String = OFFICIAL_ROUTE_ID,
-    cnbFallbackUrls: Map<String, String> = emptyMap()
+    cnbFallbackUrls: Map<String, String> = emptyMap(),
+    lowSpeedFallbackEnabled: Boolean = true,
+    minProxySpeedKbps: Int = DEFAULT_MIN_PROXY_SPEED_KBPS
 ) {
     scope.launch {
         setDownloading(true)
@@ -1438,7 +1498,17 @@ fun executeTasks(
         setTasks(activeTasks)
 
         for (task in activeTasks) {
-            downloadAndDeployTask(task, token, targetPaths, context, rules, githubRoutes, selectedRouteId)
+            downloadAndDeployTask(
+                task = task,
+                token = token,
+                targetPaths = targetPaths,
+                context = context,
+                rules = rules,
+                githubRoutes = githubRoutes,
+                selectedRouteId = selectedRouteId,
+                lowSpeedFallbackEnabled = lowSpeedFallbackEnabled,
+                minProxySpeedKbps = minProxySpeedKbps
+            )
             if (task.isError) break
         }
 
@@ -1478,6 +1548,14 @@ fun sanitizedFileName(url: String): String {
     return raw.replace(Regex("""[\\/:*?"<>|]"""), "_")
 }
 
+fun formatDownloadSpeed(bytesPerSecond: Long): String {
+    return if (bytesPerSecond >= 1024L * 1024L) {
+        String.format("%.1fMB/s", bytesPerSecond / 1024.0 / 1024.0)
+    } else {
+        "${bytesPerSecond / 1024L}KB/s"
+    }
+}
+
 suspend fun downloadAndDeployTask(
     task: TaskState,
     token: String,
@@ -1485,7 +1563,9 @@ suspend fun downloadAndDeployTask(
     context: Context,
     rules: List<String>,
     githubRoutes: List<GithubRoute> = DEFAULT_GITHUB_ROUTES,
-    selectedRouteId: String = OFFICIAL_ROUTE_ID
+    selectedRouteId: String = OFFICIAL_ROUTE_ID,
+    lowSpeedFallbackEnabled: Boolean = true,
+    minProxySpeedKbps: Int = DEFAULT_MIN_PROXY_SPEED_KBPS
 ) {
     withContext(Dispatchers.IO) {
         val stagingDir = File(context.cacheDir, "wanxiang_staging/${UUID.randomUUID()}")
@@ -1535,9 +1615,17 @@ suspend fun downloadAndDeployTask(
                 val candidates = buildGithubCandidates(task.url, githubRoutes, selectedRouteId, task.cnbFallbackUrl)
                 val expectedZip = task.url.substringBefore("?").endsWith(".zip", true)
 
-                candidateLoop@ for ((candidateIndex, candidate) in candidates.withIndex()) {
-                    for (attempt in 1..2) {
+                var jumpDirectlyToCnb = false
+
+                candidateLoop@ for (candidate in candidates) {
+                    if (jumpDirectlyToCnb && !candidate.isCnb) continue
+
+                    attemptLoop@ for (attempt in 1..2) {
                         var conn: HttpURLConnection? = null
+                        val monitorLowSpeed = lowSpeedFallbackEnabled &&
+                            candidate.usesProxy &&
+                            !candidate.isCnb &&
+                            !task.cnbFallbackUrl.isNullOrBlank()
 
                         try {
                             tmpFile.delete()
@@ -1554,7 +1642,7 @@ suspend fun downloadAndDeployTask(
                             conn = URL(candidate.url).openConnection() as HttpURLConnection
                             conn.instanceFollowRedirects = true
                             conn.connectTimeout = 10000
-                            conn.readTimeout = 60000
+                            conn.readTimeout = if (monitorLowSpeed) 10000 else 60000
                             conn.setRequestProperty("User-Agent", "WanxiangUpdater-Android")
                             conn.setRequestProperty("Accept-Encoding", "identity")
 
@@ -1573,6 +1661,10 @@ suspend fun downloadAndDeployTask(
                             val totalSize = conn.getHeaderFieldLong("Content-Length", -1L)
                             var downloaded = 0L
                             var lastUiUpdate = 0L
+                            val transferStartedAt = System.currentTimeMillis()
+                            var speedWindowStartedAt = transferStartedAt
+                            var speedWindowStartBytes = 0L
+                            val minSpeedBytesPerSecond = minProxySpeedKbps.coerceAtLeast(32) * 1024L
 
                             conn.inputStream.buffered().use { input ->
                                 FileOutputStream(tmpFile).buffered().use { output ->
@@ -1585,15 +1677,35 @@ suspend fun downloadAndDeployTask(
                                         downloaded += count
 
                                         val now = System.currentTimeMillis()
+                                        if (monitorLowSpeed &&
+                                            now - transferStartedAt >= LOW_SPEED_GRACE_MS &&
+                                            now - speedWindowStartedAt >= LOW_SPEED_WINDOW_MS
+                                        ) {
+                                            val windowMs = now - speedWindowStartedAt
+                                            val windowBytes = downloaded - speedWindowStartBytes
+                                            val speedBytesPerSecond = if (windowMs > 0L) windowBytes * 1000L / windowMs else Long.MAX_VALUE
+
+                                            if (speedBytesPerSecond < minSpeedBytesPerSecond) {
+                                                throw LowSpeedFallbackException(speedBytesPerSecond / 1024L)
+                                            }
+
+                                            speedWindowStartedAt = now
+                                            speedWindowStartBytes = downloaded
+                                        }
+
                                         if (now - lastUiUpdate >= 150L) {
                                             lastUiUpdate = now
+                                            val elapsedMs = (now - transferStartedAt).coerceAtLeast(1L)
+                                            val averageSpeed = downloaded * 1000L / elapsedMs
+                                            val speedText = formatDownloadSpeed(averageSpeed)
+
                                             withContext(Dispatchers.Main) {
                                                 if (totalSize > 0L) {
                                                     task.progress = (downloaded.toDouble() / totalSize.toDouble()).toFloat().coerceIn(0f, 1f)
-                                                    task.status = "${candidate.name} ${String.format("%.1f", downloaded / 1024.0 / 1024.0)}MB / ${String.format("%.1f", totalSize / 1024.0 / 1024.0)}MB"
+                                                    task.status = "${candidate.name} ${String.format("%.1f", downloaded / 1024.0 / 1024.0)}MB / ${String.format("%.1f", totalSize / 1024.0 / 1024.0)}MB · $speedText"
                                                 } else {
                                                     task.progress = -1f
-                                                    task.status = "${candidate.name} ${String.format("%.1f", downloaded / 1024.0 / 1024.0)}MB"
+                                                    task.status = "${candidate.name} ${String.format("%.1f", downloaded / 1024.0 / 1024.0)}MB · $speedText"
                                                 }
                                             }
                                         }
@@ -1620,6 +1732,34 @@ suspend fun downloadAndDeployTask(
                                 task.status = "下载完成（${candidate.name}）"
                             }
                             break@candidateLoop
+                        } catch (e: LowSpeedFallbackException) {
+                            lastErrorMsg = "${candidate.name}: ${e.message}"
+                            jumpDirectlyToCnb = true
+                            tmpFile.delete()
+
+                            withContext(Dispatchers.Main) {
+                                task.progress = 0f
+                                task.status = "🐢 ${candidate.name}仅${e.speedKbps}KB/s，直接切换CNB..."
+                            }
+                            break@attemptLoop
+                        } catch (e: SocketTimeoutException) {
+                            lastErrorMsg = "${candidate.name}: 读取超时"
+                            tmpFile.delete()
+
+                            if (monitorLowSpeed) {
+                                jumpDirectlyToCnb = true
+                                withContext(Dispatchers.Main) {
+                                    task.progress = 0f
+                                    task.status = "🐢 ${candidate.name}长时间无数据，直接切换CNB..."
+                                }
+                                break@attemptLoop
+                            }
+
+                            withContext(Dispatchers.Main) {
+                                task.progress = 0f
+                                task.status = "⚠️ $lastErrorMsg"
+                            }
+                            if (attempt < 2) delay(700)
                         } catch (e: Exception) {
                             lastErrorMsg = "${candidate.name}: ${e.message ?: "网络异常"}"
                             tmpFile.delete()
