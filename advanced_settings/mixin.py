@@ -32,6 +32,7 @@ from .core import (
     is_rime_dictionary,
 )
 from .metadata import FILE_INDEX_META, KNOWN_COMPONENTS_DESC, RIME_KEY_MAP, SCHEMA_META_CONFIG
+from .deployment import deploy_rime_platform
 from .widgets import (
     AlgebraPatchWidget, DynamicActionWidget, DynamicInputWidget, DynamicKeyValueWidget,
     DynamicMultiLineWidget, EnglishAlgebraWidget, MixedAlgebraWidget, ReverseAlgebraWidget,
@@ -3348,20 +3349,50 @@ class AdvancedSettingsMixin:
             "\n   未列入范围的词典、用户数据、installation.yaml 等不会被读取或校验。"
         )
 
-    def _prompt_deploy_after_commit(self):
-        if not getattr(self, "_advanced_save_changed", False):
+    def _prompt_deploy_after_commit(self, summary, changed_names):
+        """事务提交后再询问部署；显式记录每一步，禁止静默失败。"""
+        self.log.appendPlainText(
+            f"🟡 保存事务已提交，准备询问部署：{changed_names}"
+        )
+
+        box = QMessageBox(self)
+        box.setIcon(QMessageBox.Information)
+        box.setWindowTitle("保存成功")
+        box.setText(summary)
+        box.setInformativeText("保存事务已经提交。是否立即触发 Rime 部署以生效？")
+        box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
+        box.setDefaultButton(QMessageBox.Yes)
+        box.setWindowModality(Qt.WindowModal)
+        box.show()
+        box.raise_()
+        box.activateWindow()
+        reply = box.exec()
+
+        if reply != QMessageBox.Yes:
+            self.log.appendPlainText("💡 用户选择暂不部署。")
             return
 
-        summary = getattr(self, "_advanced_save_summary", "配置已保存。")
-        reply = QMessageBox.question(
-            self,
-            "保存成功",
-            f"{summary}\n\n保存事务已经提交。是否立即触发 Rime 部署以生效？",
-            QMessageBox.Yes | QMessageBox.No,
-            QMessageBox.Yes,
-        )
-        if reply == QMessageBox.Yes:
-            self._start_and_deploy_from_main()
+        self.log.appendPlainText("🚀 用户已确认，正在触发 Rime 部署……")
+        try:
+            result = self._start_and_deploy_from_main()
+        except Exception as error:
+            result = (False, f"部署调用发生异常：{error}")
+
+        if isinstance(result, tuple):
+            ok, message = bool(result[0]), str(result[1])
+        elif isinstance(result, bool):
+            ok = result
+            message = "部署指令已发送。" if ok else "部署调用未成功。"
+        else:
+            # 兼容旧版无返回值方法：只有明确日志无法判断，因此按失败处理，避免静默。
+            ok = False
+            message = "部署方法未返回执行结果，请检查部署器检测逻辑。"
+
+        if ok:
+            self.log.appendPlainText(f"✅ {message}")
+        else:
+            self.log.appendPlainText(f"❌ {message}")
+            QMessageBox.warning(self, "部署未触发", message)
 
     def _run_controlled_save(self, *, global_mode=False):
         self._ensure_advanced_engines()
@@ -3411,9 +3442,20 @@ class AdvancedSettingsMixin:
             QMessageBox.critical(self, "保存已回滚", str(error))
             return
 
-        # 部署询问只会在事务提交以后发生。
-        self._prompt_deploy_after_commit()
-        QTimer.singleShot(0, self.scan_rime_directory)
+        # 让当前保存槽先返回事件循环，再显示部署询问，避免对话框被页面刷新遮挡。
+        if changed_paths:
+            deploy_summary = self._advanced_save_summary
+            deploy_names = ", ".join(path.name for path in changed_paths)
+
+            def finish_after_commit():
+                try:
+                    self._prompt_deploy_after_commit(deploy_summary, deploy_names)
+                finally:
+                    self.scan_rime_directory()
+
+            QTimer.singleShot(0, finish_after_commit)
+        else:
+            QTimer.singleShot(0, self.scan_rime_directory)
 
     def save_yaml_config(self):
         if self.current_edit_file == "VIRTUAL_GLOBAL":
@@ -3423,16 +3465,18 @@ class AdvancedSettingsMixin:
     def _save_virtual_global(self):
         return self._run_controlled_save(global_mode=True)
 
+
     def _start_and_deploy_from_main(self):
-        system_type = "windows" if sys.platform.startswith("win") else "macos" if sys.platform == "darwin" else "linux"
-        if system_type == "windows":
-            deployer = getattr(self, "detected_deployer", "")
-            if deployer and os.path.exists(deployer):
-                subprocess.Popen([deployer, "/deploy"], creationflags=0x08000000)
-                self.log.appendPlainText("✅ Windows 部署指令已发送。")
-        elif system_type == "macos":
-            try:
-                subprocess.run(["osascript", "-e", 'tell application "Squirrel" to reload configuration'], check=True)
-                self.log.appendPlainText("✅ macOS 部署通知已发送。")
-            except Exception as error:
-                self.log.appendPlainText(f"⚠️ macOS 部署失败：{error}")
+        """宿主未覆盖时的统一平台部署兜底。"""
+        system_type = (
+            "windows" if sys.platform.startswith("win")
+            else "macos" if sys.platform == "darwin"
+            else "android/linux"
+        )
+        logger = self.log.appendPlainText if hasattr(self, "log") else None
+        return deploy_rime_platform(
+            system_type,
+            log=logger,
+            server_path=str(getattr(self, "detected_server", "") or ""),
+            deployer_path=str(getattr(self, "detected_deployer", "") or ""),
+        )

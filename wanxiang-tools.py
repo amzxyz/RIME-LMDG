@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from __future__ import annotations
-from advanced_settings import AdvancedSettingsMixin
+from advanced_settings import AdvancedSettingsMixin, deploy_rime_platform
 import sys, os, re
 import shutil
 import time
@@ -935,94 +935,26 @@ class UpdateWorker(QThread):
                 subprocess.run(['killall', 'Squirrel'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             except: pass
 
+
     def _start_and_deploy(self):
-        """执行 Rime 部署/重载"""
-        # 1. 强制清理 build (如勾选)
+        """执行 Rime 部署/重载；复用统一的平台调度器。"""
         if self.cfg.clean_build:
             build_dir = os.path.join(self.cfg.rime_dir, "build")
             if os.path.exists(build_dir):
                 try:
                     shutil.rmtree(build_dir)
                     self.log("🧹 已强制删除 build 目录，触发全量重新编译。")
-                except: pass
+                except Exception as error:
+                    self.log(f"⚠️ 删除 build 目录失败：{error}")
 
-        # 2. Windows 逻辑 (小狼毫)
-        if SYSTEM_TYPE == 'windows':
-            try:
-                if self.cfg.server_path and os.path.exists(self.cfg.server_path):
-                    subprocess.Popen([self.cfg.server_path], creationflags=0x08000000)
-                    time.sleep(3)
-                if self.cfg.deployer_path and os.path.exists(self.cfg.deployer_path):
-                    subprocess.Popen([self.cfg.deployer_path, "/deploy"], creationflags=0x08000000)
-                    self.log("✅ Windows 部署指令已发送。")
-            except Exception as e:
-                self.log(f"❌ Windows 部署调用失败: {e}")
-
-        # 3. macOS 逻辑 (鼠须管)
-        elif SYSTEM_TYPE == 'macos':
-            try:
-                subprocess.run(['osascript', '-e', 'tell application "Squirrel" to reload configuration'], check=True)
-                self.log("✅ macOS 部署通知已发送。")
-            except: pass
-
-        # 4. Linux 逻辑 (Fcitx5/IBus)
-        elif SYSTEM_TYPE == 'android/linux':
-            im = self._get_linux_im_system()
-            if im == "fcitx5":
-                self._deploy_linux_fcitx5_safe()
-            elif im == "ibus":
-                self._deploy_linux_ibus()
-    def _deploy_linux_fcitx5_safe(self):
-        """Linux Fcitx5 部署方案 (使用 dbus-send)"""
-        dbus_tool = shutil.which("dbus-send")
-        
-        if not dbus_tool:
-            self.log("❌ 错误: 未找到 dbus-send 工具。请检查系统是否安装了 dbus。")
-            return
-
-        try:
-            # 2. 构建命令 (dbus-send 强制指定类型为 string 和 variant)
-            cmd = [
-                dbus_tool,
-                "--session",
-                "--dest=org.fcitx.Fcitx5",
-                "--type=method_call",
-                "/controller",
-                "org.fcitx.Fcitx.Controller1.SetConfig",
-                "string:fcitx://config/addon/rime/deploy",
-                "variant:string:"  # 注意这里，对应 Fcitx5 需要的 variant 类型空值
-            ]
-            
-            clean_env = os.environ.copy()
-            if 'LD_LIBRARY_PATH' in clean_env:
-                clean_env['LD_LIBRARY_PATH'] = clean_env.get('LD_LIBRARY_PATH_ORIG', '')
-            subprocess.run(cmd, env=clean_env, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        except subprocess.CalledProcessError as e:
-            # 划重点：把底层真正的英文报错内容解出来！
-            error_details = e.stderr.decode('utf-8', errors='ignore').strip() if e.stderr else "无详细错误信息"
-            self.log(f"❌ 部署失败 (命令返回非零): {e.returncode}")
-            self.log(f"🔍 详细原因: {error_details}")
-        except Exception as e:
-            self.log(f"❌ 发送指令时发生异常: {e}")
-
-    def _deploy_linux_ibus(self):
-        """Linux IBus 部署方案 (保持原样)"""
-        self.log("📡 [IBus] 正在重启 IBus 以触发重载...")
-        ibus_cmd = shutil.which("ibus")
-        if ibus_cmd:
-            try:
-                subprocess.run([ibus_cmd, "restart"], check=True)
-            except Exception as e:
-                self.log(f"❌ IBus 重启指令失败: {e}")
-
-    def _get_linux_im_system(self):
-        """简单探测当前运行的输入法框架 (保持原样)"""
-        try:
-            if shutil.which("pgrep"):
-                if subprocess.run(["pgrep", "fcitx5"], stdout=subprocess.DEVNULL).returncode == 0: return "fcitx5"
-                if subprocess.run(["pgrep", "ibus-daemon"], stdout=subprocess.DEVNULL).returncode == 0: return "ibus"
-        except: pass
-        return "unknown"
+        ok, message = deploy_rime_platform(
+            SYSTEM_TYPE,
+            log=self.log,
+            server_path=str(getattr(self.cfg, "server_path", "") or ""),
+            deployer_path=str(getattr(self.cfg, "deployer_path", "") or ""),
+        )
+        self.log(("✅ " if ok else "❌ ") + message)
+        return ok
 
     def _is_whitelisted(self, filename, rel_path):
         """检查文件是否在白名单内 (优化路径匹配逻辑，完美解决 custom 目录问题)"""
@@ -3275,6 +3207,36 @@ class MainWin(AdvancedSettingsMixin, QWidget):
 
         
 
+
+
+    def _start_and_deploy_from_main(self):
+        """高级设置保存后的统一部署入口，按原程序的平台逻辑执行。"""
+        server_path = str(getattr(self, "detected_server", "") or "")
+        deployer_path = str(getattr(self, "detected_deployer", "") or "")
+
+        # 部署器路径只与 Windows 有关；Linux/macOS 不做无关检测。
+        if SYSTEM_TYPE == "windows":
+            try:
+                detected = PathDetector.detect()
+            except Exception as error:
+                detected = {}
+                self.log.appendPlainText(f"⚠️ 重新检测小狼毫部署器失败：{error}")
+
+            new_server = str(detected.get("weasel_server", "") or "")
+            new_deployer = str(detected.get("weasel_deployer", "") or "")
+            if new_server:
+                self.detected_server = new_server
+                server_path = new_server
+            if new_deployer:
+                self.detected_deployer = new_deployer
+                deployer_path = new_deployer
+
+        return deploy_rime_platform(
+            SYSTEM_TYPE,
+            log=self.log.appendPlainText,
+            server_path=server_path,
+            deployer_path=deployer_path,
+        )
 
     def _build_tab_more(self) -> QWidget:
         w = QWidget()

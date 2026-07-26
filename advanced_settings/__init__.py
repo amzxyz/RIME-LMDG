@@ -1,3 +1,5 @@
+from .deployment import deploy_rime_platform, detect_linux_im_system
+
 from .core import (
     ConflictSeverity,
     KeyClaim,
@@ -38,4 +40,6 @@ __all__ = [
     "is_managed_config_yaml",
     "is_managed_source_yaml",
     "is_rime_dictionary",
+    "deploy_rime_platform",
+    "detect_linux_im_system",
 ]
