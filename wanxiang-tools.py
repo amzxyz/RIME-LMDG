@@ -755,37 +755,182 @@ class UpdateConfig:
     proxy_slow_fallback: bool = True
     proxy_min_speed_kbps: int = 128
 class PathDetector:
+    """按平台检测 Rime 用户目录及部署程序。
+
+    Windows 检测保持受控：
+    1. 优先读取小狼毫原有注册表；
+    2. 同时兼容 32/64 位注册表视图及 HKCU/HKLM；
+    3. 注册表无结果时，仅检查明确的常见安装目录和 PATH；
+    4. 不递归扫描整块磁盘。
+    """
+
     @staticmethod
-    def detect() -> Dict[str, str]:
-        detected = {'rime_user_dir': '', 'weasel_server': '', 'weasel_deployer': ''}
-        
-        if SYSTEM_TYPE == 'windows':
-            import winreg
+    def _clean_windows_path(value) -> str:
+        if value is None:
+            return ""
+        value = os.path.expandvars(str(value).strip().strip('"'))
+        return os.path.normpath(value) if value else ""
+
+    @classmethod
+    def _read_registry_value(cls, winreg, hive, key_path, value_name, view_flag=0) -> str:
+        access = winreg.KEY_READ | view_flag
+        try:
+            with winreg.OpenKey(hive, key_path, 0, access) as key:
+                value, _ = winreg.QueryValueEx(key, value_name)
+                return cls._clean_windows_path(value)
+        except OSError:
+            return ""
+
+    @classmethod
+    def _registry_views(cls, winreg):
+        views = [0]
+        for attr in ("KEY_WOW64_64KEY", "KEY_WOW64_32KEY"):
+            flag = getattr(winreg, attr, 0)
+            if flag and flag not in views:
+                views.append(flag)
+        return views
+
+    @classmethod
+    def _candidate_weasel_dirs(cls, registry_roots):
+        candidates = []
+
+        def add(path):
+            path = cls._clean_windows_path(path)
+            if not path:
+                return
+            p = Path(path)
+            if p.suffix.lower() == ".exe":
+                p = p.parent
+            key = os.path.normcase(os.path.abspath(str(p)))
+            if key not in seen:
+                seen.add(key)
+                candidates.append(p)
+
+        seen = set()
+        for root in registry_roots:
+            add(root)
+
+        env = os.environ
+        for base_name in ("ProgramFiles", "ProgramFiles(x86)", "LOCALAPPDATA"):
+            base = env.get(base_name, "")
+            if not base:
+                continue
+            add(Path(base) / "Rime")
+            add(Path(base) / "Programs" / "Rime")
+            add(Path(base) / "Rime" / "Weasel")
+
+        user_profile = env.get("USERPROFILE", "")
+        if user_profile:
+            add(Path(user_profile) / "scoop" / "apps" / "weasel" / "current")
+            add(Path(user_profile) / "AppData" / "Local" / "Programs" / "Rime")
+
+        # 只展开一层版本目录，例如 Rime/weasel-0.17.x。
+        expanded = list(candidates)
+        for parent in list(candidates):
             try:
-                # 1. 找 RimeUserDir
-                with winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"Software\Rime\Weasel") as key:
-                    detected['rime_user_dir'], _ = winreg.QueryValueEx(key, "RimeUserDir")
-                
-                # 2. 找 Weasel 安装目录
-                with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\WOW6432Node\Rime\Weasel") as key:
-                    root, _ = winreg.QueryValueEx(key, "WeaselRoot")
-                    if root:
-                        detected['weasel_server'] = os.path.join(root, "WeaselServer.exe")
-                        detected['weasel_deployer'] = os.path.join(root, "WeaselDeployer.exe")
-            except: pass
-            
-            # 回退机制：如果没找到，尝试在默认 AppData 找 UserDir
-            if not detected['rime_user_dir']:
-                appdata = os.environ.get('APPDATA', '')
-                if appdata: detected['rime_user_dir'] = os.path.join(appdata, 'Rime')
-                
-        elif SYSTEM_TYPE == 'macos':
-            detected['rime_user_dir'] = os.path.expanduser('~/Library/Rime')
-            # macOS 下没有独立的 exe，通常是通过命令控制 Squirrel
+                if parent.is_dir():
+                    for child in sorted(parent.glob("weasel-*"), reverse=True):
+                        add(child)
+            except OSError:
+                continue
+
+        return candidates
+
+    @classmethod
+    def _find_weasel_executables(cls, registry_roots):
+        server_path = ""
+        deployer_path = ""
+
+        # PATH 中存在时优先采用。
+        path_server = shutil.which("WeaselServer.exe") or ""
+        path_deployer = shutil.which("WeaselDeployer.exe") or ""
+        if path_server and os.path.isfile(path_server):
+            server_path = os.path.abspath(path_server)
+        if path_deployer and os.path.isfile(path_deployer):
+            deployer_path = os.path.abspath(path_deployer)
+
+        for directory in cls._candidate_weasel_dirs(registry_roots):
+            if not server_path:
+                candidate = directory / "WeaselServer.exe"
+                if candidate.is_file():
+                    server_path = str(candidate.resolve())
+
+            if not deployer_path:
+                candidate = directory / "WeaselDeployer.exe"
+                if candidate.is_file():
+                    deployer_path = str(candidate.resolve())
+
+            if server_path and deployer_path:
+                break
+
+        return server_path, deployer_path
+
+    @classmethod
+    def detect(cls) -> Dict[str, str]:
+        detected = {
+            "rime_user_dir": "",
+            "weasel_server": "",
+            "weasel_deployer": "",
+        }
+
+        if SYSTEM_TYPE == "windows":
+            import winreg
+
+            views = cls._registry_views(winreg)
+
+            # 用户目录沿用原来的 HKCU\Software\Rime\Weasel。
+            for view in views:
+                detected["rime_user_dir"] = cls._read_registry_value(
+                    winreg,
+                    winreg.HKEY_CURRENT_USER,
+                    r"Software\Rime\Weasel",
+                    "RimeUserDir",
+                    view,
+                )
+                if detected["rime_user_dir"]:
+                    break
+
+            registry_roots = []
+            registry_specs = (
+                (winreg.HKEY_CURRENT_USER, r"Software\Rime\Weasel"),
+                (winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\Rime\Weasel"),
+                (winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\WOW6432Node\Rime\Weasel"),
+            )
+            root_value_names = ("WeaselRoot", "InstallDir", "InstallPath")
+
+            for hive, key_path in registry_specs:
+                for view in views:
+                    for value_name in root_value_names:
+                        root = cls._read_registry_value(
+                            winreg,
+                            hive,
+                            key_path,
+                            value_name,
+                            view,
+                        )
+                        if root and root not in registry_roots:
+                            registry_roots.append(root)
+
+            server_path, deployer_path = cls._find_weasel_executables(
+                registry_roots
+            )
+            detected["weasel_server"] = server_path
+            detected["weasel_deployer"] = deployer_path
+
+            if not detected["rime_user_dir"]:
+                appdata = os.environ.get("APPDATA", "")
+                if appdata:
+                    detected["rime_user_dir"] = os.path.join(appdata, "Rime")
+
+        elif SYSTEM_TYPE == "macos":
+            detected["rime_user_dir"] = os.path.expanduser("~/Library/Rime")
         else:
-             detected['rime_user_dir'] = os.path.expanduser('~/.local/share/fcitx5/rime')
-             
+            detected["rime_user_dir"] = os.path.expanduser(
+                "~/.local/share/fcitx5/rime"
+            )
+
         return detected
+
 class GithubRouteTestWorker(QThread):
     """测试少量 GitHub 下载路线，避免阻塞主界面。"""
 
@@ -937,7 +1082,7 @@ class UpdateWorker(QThread):
 
 
     def _start_and_deploy(self):
-        """执行 Rime 部署/重载；复用统一的平台调度器。"""
+        """执行 Rime 部署/重载，并在实际部署前重新确认平台路径。"""
         if self.cfg.clean_build:
             build_dir = os.path.join(self.cfg.rime_dir, "build")
             if os.path.exists(build_dir):
@@ -947,11 +1092,44 @@ class UpdateWorker(QThread):
                 except Exception as error:
                     self.log(f"⚠️ 删除 build 目录失败：{error}")
 
+        server_path = str(getattr(self.cfg, "server_path", "") or "")
+        deployer_path = str(getattr(self.cfg, "deployer_path", "") or "")
+
+        if SYSTEM_TYPE == "windows":
+            server_valid = bool(server_path and os.path.isfile(server_path))
+            deployer_valid = bool(deployer_path and os.path.isfile(deployer_path))
+
+            if not server_valid or not deployer_valid:
+                self.log("🔎 正在重新检测小狼毫安装目录……")
+                try:
+                    detected = PathDetector.detect()
+                except Exception as error:
+                    detected = {}
+                    self.log(f"⚠️ 小狼毫路径重新检测失败：{error}")
+
+                detected_server = str(
+                    detected.get("weasel_server", "") or ""
+                )
+                detected_deployer = str(
+                    detected.get("weasel_deployer", "") or ""
+                )
+
+                if detected_server and os.path.isfile(detected_server):
+                    server_path = detected_server
+                    self.cfg.server_path = detected_server
+
+                if detected_deployer and os.path.isfile(detected_deployer):
+                    deployer_path = detected_deployer
+                    self.cfg.deployer_path = detected_deployer
+
+            if deployer_path and os.path.isfile(deployer_path):
+                self.log(f"📍 小狼毫部署器：{deployer_path}")
+
         ok, message = deploy_rime_platform(
             SYSTEM_TYPE,
             log=self.log,
-            server_path=str(getattr(self.cfg, "server_path", "") or ""),
-            deployer_path=str(getattr(self.cfg, "deployer_path", "") or ""),
+            server_path=server_path,
+            deployer_path=deployer_path,
         )
         self.log(("✅ " if ok else "❌ ") + message)
         return ok
@@ -1683,8 +1861,14 @@ class UpdateWorker(QThread):
                 # --- 5. 部署 ---
                 if needs_deploy or self.cfg.clean_build:
                     self.log(">>> 正在触发部署")
-                    self._start_and_deploy()
-                    self.done_sig.emit(True, "✓ 更新完成。")
+                    deploy_ok = self._start_and_deploy()
+                    if deploy_ok:
+                        self.done_sig.emit(True, "✓ 更新并部署完成。")
+                    else:
+                        self.done_sig.emit(
+                            False,
+                            "⚠️ 更新文件已安装，但自动部署未完成。"
+                        )
                 else:
                     self.done_sig.emit(True, "更新流程结束。")
 
@@ -2921,9 +3105,35 @@ class MainWin(AdvancedSettingsMixin, QWidget):
             GITHUB_ROUTES[0],
         )
         github_proxy = route_info["prefix"]
-        # 获取检测到的路径
-        srv_path = getattr(self, 'detected_server', '')
-        dep_path = getattr(self, 'detected_deployer', '')
+        # 获取部署路径。Windows 在每次开始更新时重新确认一次，
+        # 避免只恢复了 Rime 用户目录、却沿用空的部署器缓存。
+        srv_path = str(getattr(self, "detected_server", "") or "")
+        dep_path = str(getattr(self, "detected_deployer", "") or "")
+
+        if SYSTEM_TYPE == "windows":
+            if not (dep_path and os.path.isfile(dep_path)):
+                try:
+                    detected = PathDetector.detect()
+                except Exception as error:
+                    detected = {}
+                    self.log.appendPlainText(
+                        f"⚠️ 更新前重新检测小狼毫路径失败：{error}"
+                    )
+
+                detected_server = str(
+                    detected.get("weasel_server", "") or ""
+                )
+                detected_deployer = str(
+                    detected.get("weasel_deployer", "") or ""
+                )
+
+                if detected_server and os.path.isfile(detected_server):
+                    self.detected_server = detected_server
+                    srv_path = detected_server
+
+                if detected_deployer and os.path.isfile(detected_deployer):
+                    self.detected_deployer = detected_deployer
+                    dep_path = detected_deployer
 
         cfg = UpdateConfig(
             scope=self.bg_scope.checkedId(),
