@@ -7,7 +7,10 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.Settings
+import android.util.Log
 import android.widget.Toast
+import android.content.ClipData
+import android.content.ClipboardManager
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
@@ -18,6 +21,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -51,7 +55,11 @@ import java.io.FileOutputStream
 import java.net.HttpURLConnection
 import java.net.SocketTimeoutException
 import java.net.URL
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 import java.util.UUID
+import java.util.concurrent.ConcurrentLinkedQueue
 import java.util.zip.ZipFile
 import java.util.zip.ZipInputStream
 
@@ -93,11 +101,94 @@ val DEFAULT_GITHUB_ROUTES = listOf(
     GithubRoute("xxooo", "xxooo", "https://gh.xxooo.cf/")
 )
 
+private const val WANXIANG_DEBUG_TAG = "WanxiangUpdater"
+
 class TaskState(val title: String, val url: String, val cnbFallbackUrl: String? = null) {
     var progress by mutableStateOf(0f)
     var status by mutableStateOf("等待中...")
     var isFinished by mutableStateOf(false)
     var isError by mutableStateOf(false)
+
+    private val debugQueue = ConcurrentLinkedQueue<String>()
+    var debugText by mutableStateOf("")
+    var showDebug by mutableStateOf(false)
+
+    fun appendDebug(message: String, error: Throwable? = null) {
+        val time = SimpleDateFormat("HH:mm:ss.SSS", Locale.getDefault()).format(Date())
+        val line = "[$time] $message"
+        debugQueue.add(line)
+
+        if (error == null) {
+            Log.d(WANXIANG_DEBUG_TAG, "$title | $message")
+        } else {
+            Log.e(WANXIANG_DEBUG_TAG, "$title | $message", error)
+        }
+    }
+
+    fun debugSnapshot(): String = debugQueue.joinToString("\n")
+}
+
+suspend fun publishTaskDebug(task: TaskState) {
+    val snapshot = task.debugSnapshot()
+    withContext(Dispatchers.Main) {
+        task.debugText = snapshot
+    }
+}
+
+@Composable
+fun TaskDebugPanel(task: TaskState) {
+    val context = LocalContext.current
+
+    if (task.debugText.isBlank()) return
+
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.End,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        TextButton(
+            onClick = { task.showDebug = !task.showDebug },
+            contentPadding = PaddingValues(horizontal = 6.dp, vertical = 0.dp)
+        ) {
+            Text(
+                if (task.showDebug) "收起日志" else "查看日志",
+                fontSize = 10.sp,
+                color = MorandiDarkGreen
+            )
+        }
+
+        TextButton(
+            onClick = {
+                val clipboard = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+                clipboard.setPrimaryClip(
+                    ClipData.newPlainText("万象更新调试日志", task.debugText)
+                )
+                Toast.makeText(context, "调试日志已复制", Toast.LENGTH_SHORT).show()
+            },
+            contentPadding = PaddingValues(horizontal = 6.dp, vertical = 0.dp)
+        ) {
+            Text("复制日志", fontSize = 10.sp, color = Color.Gray)
+        }
+    }
+
+    AnimatedVisibility(visible = task.showDebug) {
+        Surface(
+            color = Color(0xFFF7F7F7),
+            shape = RoundedCornerShape(6.dp),
+            modifier = Modifier.fillMaxWidth().heightIn(max = 220.dp)
+        ) {
+            SelectionContainer {
+                Text(
+                    task.debugText,
+                    fontSize = 10.sp,
+                    color = Color.DarkGray,
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .verticalScroll(rememberScrollState())
+                )
+            }
+        }
+    }
 }
 
 fun normalizeProxyPrefix(value: String): String? {
@@ -205,6 +296,43 @@ fun deployPathDisplayName(path: String): String {
 
 fun canWriteDefaultRime(): Boolean {
     return Build.VERSION.SDK_INT < Build.VERSION_CODES.R || Environment.isExternalStorageManager()
+}
+
+fun probeSafTreeWriteAccess(context: Context, uri: Uri): String? {
+    val rootDoc = runCatching {
+        DocumentFile.fromTreeUri(context, uri)
+    }.getOrNull() ?: return "无法解析SAF目录"
+
+    // 不依赖权限列表、exists() 或 canWrite() 的声明值。
+    // 直接用一个 1 字节文件验证小企鹅目录能否真实创建、写入和删除。
+    val probeName = "wanxiang_write_probe_${UUID.randomUUID()}.tmp"
+    val probeDoc = try {
+        rootDoc.createFile("application/octet-stream", probeName)
+    } catch (error: Exception) {
+        return "SAF创建探测文件失败：${error.javaClass.simpleName}: ${error.message ?: "无详细信息"}"
+    } ?: return "SAF创建探测文件失败"
+
+    try {
+        context.contentResolver.openOutputStream(probeDoc.uri, "w")?.use { output ->
+            output.write(byteArrayOf(0x57))
+            output.flush()
+        } ?: return "SAF无法打开探测文件写入流"
+    } catch (error: Exception) {
+        return "SAF写入探测失败：${error.javaClass.simpleName}: ${error.message ?: "无详细信息"}"
+    }
+
+    val deleted = runCatching { probeDoc.delete() }.getOrDefault(false)
+    if (!deleted) {
+        return "SAF探测文件写入成功，但删除失败"
+    }
+
+    return null
+}
+
+fun hasSafTarget(targetPaths: List<String>): Boolean {
+    return targetPaths.any { path ->
+        path.trim().isNotBlank() && path.trim() != "DEFAULT"
+    }
 }
 
 fun versionNumbers(value: String): List<Int> {
@@ -642,7 +770,7 @@ fun WanxiangDownloaderApp() {
             showPermissionDialog = true
 
             // SAF 与 /rime 独立。存在 SAF 时继续任务，只跳过 /rime。
-            return normalized.any { it != "DEFAULT" }
+            return hasSafTarget(normalized)
         }
 
         return true
@@ -1301,6 +1429,7 @@ fun WanxiangDownloaderApp() {
                                     } else {
                                         LinearProgressIndicator(progress = task.progress, modifier = Modifier.fillMaxWidth())
                                     }
+                                    TaskDebugPanel(task)
                                 }
                             }
                         }
@@ -1402,7 +1531,7 @@ fun CustomModeTab(
 
         if ("DEFAULT" in normalized && !canWriteDefaultRime()) {
             onRequestAllFilesAccess()
-            return normalized.any { it != "DEFAULT" }
+            return hasSafTarget(normalized)
         }
 
         return true
@@ -1490,6 +1619,7 @@ fun CustomModeTab(
                             } else {
                                 LinearProgressIndicator(progress = task.progress, modifier = Modifier.fillMaxWidth())
                             }
+                            TaskDebugPanel(task)
                         }
                     }
                 }
@@ -1782,13 +1912,61 @@ suspend fun downloadAndDeployTask(
         var lastErrorMsg = ""
         var downloadedFrom = ""
 
-        val usableTargetPaths = targetPaths
-            .map { it.trim() }
-            .filter { it.isNotBlank() }
-            .distinct()
-            .filter { it != "DEFAULT" || canWriteDefaultRime() }
+        task.appendDebug("任务开始")
+        task.appendDebug("源地址：${task.url}")
+        task.appendDebug("目标路径：${targetPaths.joinToString { deployPathDisplayName(it) }}")
+        task.appendDebug("缓存目录：${stagingDir.absolutePath}")
+        task.appendDebug("下载前执行轻量目标探测")
+        publishTaskDebug(task)
+
+        var usableTargetPaths = emptyList<String>()
 
         try {
+            val usableTargets = mutableListOf<String>()
+            val skippedTargets = mutableListOf<String>()
+
+            targetPaths
+                .map { it.trim() }
+                .filter { it.isNotBlank() }
+                .distinct()
+                .forEach { path ->
+                    val pathName = deployPathDisplayName(path)
+
+                    if (path == "DEFAULT") {
+                        if (canWriteDefaultRime()) {
+                            usableTargets.add(path)
+                            task.appendDebug("目标可用：$pathName（所有文件访问权限已授予）")
+                        } else {
+                            skippedTargets.add("$pathName：缺少所有文件访问权限")
+                            task.appendDebug("跳过目标：$pathName（缺少所有文件访问权限）")
+                        }
+                        return@forEach
+                    }
+
+                    val uri = runCatching { Uri.parse(path) }.getOrNull()
+                    if (uri == null) {
+                        skippedTargets.add("$pathName：SAF地址无效")
+                        task.appendDebug("跳过目标：$pathName（SAF地址无效）")
+                        return@forEach
+                    }
+
+                    val probeError = probeSafTreeWriteAccess(context, uri)
+                    if (probeError == null) {
+                        usableTargets.add(path)
+                        task.appendDebug("目标可用：$pathName（SAF小文件探测通过）")
+                    } else {
+                        skippedTargets.add("$pathName：$probeError")
+                        task.appendDebug("跳过目标：$pathName（$probeError）")
+                    }
+                }
+
+            usableTargetPaths = usableTargets
+
+            if (skippedTargets.isNotEmpty()) {
+                task.appendDebug("本次跳过目标：${skippedTargets.joinToString()}")
+            }
+            publishTaskDebug(task)
+
             if (usableTargetPaths.isEmpty()) {
                 withContext(Dispatchers.Main) {
                     task.isError = true
@@ -1824,6 +2002,7 @@ suspend fun downloadAndDeployTask(
                     } ?: throw Exception("找不到文件或无权限读取该本地路径")
 
                     if (!tmpFile.exists() || tmpFile.length() == 0L) throw Exception("本地文件为空")
+                    task.appendDebug("本地文件读取完成：${tmpFile.length()} 字节")
                     success = true
                     downloadedFrom = "本地文件"
 
@@ -1833,6 +2012,8 @@ suspend fun downloadAndDeployTask(
                     }
                 } catch (e: Exception) {
                     lastErrorMsg = e.message ?: "本地文件读取异常"
+                    task.appendDebug("本地文件读取失败：${e.javaClass.simpleName}: $lastErrorMsg", e)
+                    publishTaskDebug(task)
                 }
             } else {
                 val candidates = buildGithubCandidates(
@@ -1843,6 +2024,11 @@ suspend fun downloadAndDeployTask(
                     routeProbes = routeProbes
                 )
                 val expectedZip = task.url.substringBefore("?").endsWith(".zip", true)
+                task.appendDebug(
+                    "下载候选：" + candidates.joinToString(" -> ") {
+                        "${it.name}${if (it.isCnb) "[CNB]" else if (it.usesProxy) "[代理]" else "[官方]"}"
+                    }
+                )
 
                 var jumpDirectlyToCnb = false
 
@@ -1862,6 +2048,9 @@ suspend fun downloadAndDeployTask(
 
                         try {
                             tmpFile.delete()
+                            task.appendDebug(
+                                "开始下载：${candidate.name}，第 $attempt 次，url=${candidate.url}"
+                            )
 
                             withContext(Dispatchers.Main) {
                                 task.progress = 0f
@@ -1884,6 +2073,9 @@ suspend fun downloadAndDeployTask(
                             }
 
                             val responseCode = conn.responseCode
+                            task.appendDebug(
+                                "HTTP响应：${candidate.name} code=$responseCode, type=${conn.contentType}, length=${conn.getHeaderField("Content-Length")}"
+                            )
                             if (responseCode !in 200..299) {
                                 if (responseCode in 400..499 && responseCode !in listOf(408, 429)) {
                                     throw NonRetryableHttpException("HTTP $responseCode")
@@ -1964,6 +2156,10 @@ suspend fun downloadAndDeployTask(
 
                             success = true
                             downloadedFrom = candidate.name
+                            task.appendDebug(
+                                "下载校验通过：来源=${candidate.name}，大小=${tmpFile.length()} 字节"
+                            )
+                            publishTaskDebug(task)
 
                             withContext(Dispatchers.Main) {
                                 task.progress = 1f
@@ -1972,6 +2168,7 @@ suspend fun downloadAndDeployTask(
                             break@candidateLoop
                         } catch (e: LowSpeedFallbackException) {
                             lastErrorMsg = "${candidate.name}: ${e.message}"
+                            task.appendDebug("低速切换：$lastErrorMsg", e)
                             jumpDirectlyToCnb = true
                             tmpFile.delete()
 
@@ -1982,6 +2179,10 @@ suspend fun downloadAndDeployTask(
                             break@attemptLoop
                         } catch (e: NonRetryableHttpException) {
                             lastErrorMsg = "${candidate.name}: ${e.message}"
+                            task.appendDebug(
+                                "路线返回不可重试状态，立即换下一条：$lastErrorMsg",
+                                e
+                            )
                             tmpFile.delete()
 
                             withContext(Dispatchers.Main) {
@@ -1991,6 +2192,7 @@ suspend fun downloadAndDeployTask(
                             break@attemptLoop
                         } catch (e: SocketTimeoutException) {
                             lastErrorMsg = "${candidate.name}: 读取超时"
+                            task.appendDebug("下载超时：$lastErrorMsg", e)
                             tmpFile.delete()
 
                             if (monitorLowSpeed) {
@@ -2009,6 +2211,10 @@ suspend fun downloadAndDeployTask(
                             if (attempt < 2) delay(700)
                         } catch (e: Exception) {
                             lastErrorMsg = "${candidate.name}: ${e.message ?: "网络异常"}"
+                            task.appendDebug(
+                                "下载失败：$lastErrorMsg (${e.javaClass.simpleName})",
+                                e
+                            )
                             tmpFile.delete()
 
                             withContext(Dispatchers.Main) {
@@ -2025,6 +2231,8 @@ suspend fun downloadAndDeployTask(
             }
 
             if (!success) {
+                task.appendDebug("所有下载候选失败：$lastErrorMsg")
+                publishTaskDebug(task)
                 withContext(Dispatchers.Main) {
                     task.isError = true
                     task.progress = 0f
@@ -2042,6 +2250,9 @@ suspend fun downloadAndDeployTask(
             if (!extractDir.mkdirs() && !extractDir.isDirectory) throw Exception("无法创建解压目录")
 
             val isZipArchive = isUsableZip(tmpFile)
+            task.appendDebug(
+                "文件识别：name=${sanitizedFileName(task.url)}, size=${tmpFile.length()}, isZip=$isZipArchive"
+            )
             if (isZipArchive) {
                 val canonicalRoot = extractDir.canonicalFile
 
@@ -2098,6 +2309,13 @@ suspend fun downloadAndDeployTask(
                 realSrcDir = subFiles[0]
             }
 
+            task.appendDebug(
+                "暂存完成：realSrc=${realSrcDir.absolutePath}，顶层=" +
+                    realSrcDir.listFiles().orEmpty().take(20).joinToString {
+                        "${it.name}${if (it.isDirectory) "/" else "(${it.length()}B)"}"
+                    }
+            )
+            publishTaskDebug(task)
 
             val excludeRegexList = rules.mapNotNull {
                 try {
@@ -2115,11 +2333,18 @@ suspend fun downloadAndDeployTask(
             val orderedTargetPaths = usableTargetPaths
                 .sortedBy { if (it == "DEFAULT") 1 else 0 }
 
+            task.appendDebug("实际部署顺序：${orderedTargetPaths.joinToString { deployPathDisplayName(it) }}")
+            publishTaskDebug(task)
+
+            val fileDebug: (String) -> Unit = { message ->
+                task.appendDebug(message)
+            }
 
             for ((index, pathStr) in orderedTargetPaths.withIndex()) {
                 val pathName = deployPathDisplayName(pathStr)
 
                 try {
+                    task.appendDebug("开始目标：$pathName，raw=$pathStr")
                     if (index > 0) delay(300)
 
                     withContext(Dispatchers.Main) {
@@ -2133,13 +2358,17 @@ suspend fun downloadAndDeployTask(
 
                         val root = File(Environment.getExternalStorageDirectory(), "rime")
                         val target = if (isDict) File(root, "dicts") else root
-                        copyNormal(realSrcDir, target, excludeRegexList)
+                        task.appendDebug(
+                            "普通目录：root=${root.absolutePath}, target=${target.absolutePath}, exists=${target.exists()}, canWrite=${target.canWrite()}"
+                        )
+                        copyNormal(realSrcDir, target, excludeRegexList, debug = fileDebug)
                     } else {
                         val targetUri = Uri.parse(pathStr)
                         val rootDoc = DocumentFile.fromTreeUri(context, targetUri)
                             ?: throw Exception("无法解析SAF授权目录")
 
-                        // SAF 目录直接执行实际文件操作，不做额外探测。
+                        // 小文件探测已经验证实际写入能力。
+                        // 正式部署不再做额外授权声明检查。
                         var targetDoc = rootDoc
                         if (isDict) {
                             targetDoc = rootDoc.findFile("dicts")
@@ -2148,21 +2377,33 @@ suspend fun downloadAndDeployTask(
                                 ?: throw Exception("SAF底层拒绝创建dicts目录")
                         }
 
+                        task.appendDebug(
+                            "SAF目录：name=${targetDoc.name}, uri=${targetDoc.uri}, exists=${targetDoc.exists()}, canWrite=${targetDoc.canWrite()}"
+                        )
                         copySaf(
                             context,
                             realSrcDir,
                             targetDoc,
-                            excludeRegexList
+                            excludeRegexList,
+                            debug = fileDebug
                         )
                     }
 
                     successCount++
+                    task.appendDebug("目标成功：$pathName")
+                    publishTaskDebug(task)
                 } catch (e: Exception) {
                     val detail = "$pathName(${e.javaClass.simpleName}: ${e.message ?: "无错误信息"})"
                     errorList.add(detail)
+                    task.appendDebug("目标失败：$detail", e)
+                    publishTaskDebug(task)
                 }
             }
 
+            task.appendDebug(
+                "部署汇总：success=$successCount/${orderedTargetPaths.size}, errors=${errorList.joinToString()}"
+            )
+            publishTaskDebug(task)
 
             withContext(Dispatchers.Main) {
                 val successText = if (isZipArchive) "解压并部署完成" else "文件部署完成"
@@ -2185,13 +2426,20 @@ suspend fun downloadAndDeployTask(
                 }
             }
         } catch (e: Exception) {
+            task.appendDebug(
+                "任务级异常：${e.javaClass.name}: ${e.message ?: "无错误信息"}",
+                e
+            )
+            publishTaskDebug(task)
             withContext(Dispatchers.Main) {
                 task.isError = true
                 task.progress = 0f
                 task.status = "❌ 文件处理失败：${e.message ?: e.javaClass.simpleName}"
             }
         } finally {
-            stagingDir.deleteRecursively()
+            val deleted = stagingDir.deleteRecursively()
+            task.appendDebug("清理缓存：$deleted，path=${stagingDir.absolutePath}")
+            publishTaskDebug(task)
         }
     }
 }
@@ -2204,7 +2452,12 @@ fun isProtectedExistingFile(
     return exists && rules.any { it.containsMatchIn(relPath) }
 }
 
-fun replaceNormalFileByDeleteThenMove(src: File, target: File, relPath: String) {
+fun replaceNormalFileByDeleteThenMove(
+    src: File,
+    target: File,
+    relPath: String,
+    debug: (String) -> Unit = {}
+) {
     val parent = target.parentFile
         ?: throw Exception("目标文件没有父目录：$relPath")
 
@@ -2212,7 +2465,15 @@ fun replaceNormalFileByDeleteThenMove(src: File, target: File, relPath: String) 
         throw Exception("无法创建目标目录：${parent.absolutePath}")
     }
 
-    val tempTarget = File(parent, ".${target.name}.wanxiang-${UUID.randomUUID()}.tmp")
+    val tempTarget = File(
+        parent,
+        ".${target.name}.wanxiang-${UUID.randomUUID()}.tmp"
+    )
+
+    debug(
+        "[NORMAL] 准备文件：$relPath，src=${src.length()}B，" +
+            "targetExists=${target.exists()}，temp=${tempTarget.name}"
+    )
 
     try {
         src.inputStream().buffered().use { input ->
@@ -2221,19 +2482,30 @@ fun replaceNormalFileByDeleteThenMove(src: File, target: File, relPath: String) 
             }
         }
 
+        debug("[NORMAL] 临时文件写入完成：$relPath，size=${tempTarget.length()}B")
+
         if (!tempTarget.exists() || tempTarget.length() != src.length()) {
             throw Exception("目标侧临时文件校验失败：$relPath")
         }
 
-        if (target.exists() && !target.delete()) {
-            throw Exception("无法删除旧文件：$relPath")
+        if (target.exists()) {
+            val deleted = target.delete()
+            debug("[NORMAL] 删除旧文件：$relPath，result=$deleted")
+            if (!deleted) {
+                throw Exception("无法删除旧文件，可能正被占用或无权限：$relPath")
+            }
         }
 
-        if (!tempTarget.renameTo(target)) {
-            throw Exception("无法移动新文件：$relPath")
+        val moved = tempTarget.renameTo(target)
+        debug("[NORMAL] 移动临时文件：$relPath，result=$moved")
+        if (!moved) {
+            throw Exception("旧文件已删除，但临时文件移动失败：$relPath")
         }
     } finally {
-        if (tempTarget.exists()) tempTarget.delete()
+        if (tempTarget.exists()) {
+            val cleaned = tempTarget.delete()
+            debug("[NORMAL] 清理残留临时文件：$relPath，result=$cleaned")
+        }
     }
 }
 
@@ -2241,7 +2513,8 @@ fun copyNormal(
     src: File,
     dest: File,
     rules: List<Regex>,
-    currentPath: String = ""
+    currentPath: String = "",
+    debug: (String) -> Unit = {}
 ) {
     if (!dest.exists() && !dest.mkdirs()) {
         throw Exception("无法创建目标目录：${dest.absolutePath}")
@@ -2255,22 +2528,33 @@ fun copyNormal(
 
     children.forEach { file ->
         val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
-        val target = File(dest, file.name)
+        val targetFile = File(dest, file.name)
+        val protected = isProtectedExistingFile(relPath, targetFile.exists(), rules)
 
-        if (isProtectedExistingFile(relPath, target.exists(), rules)) {
+        debug(
+            "[NORMAL] 检查：$relPath，dir=${file.isDirectory}，" +
+                "targetExists=${targetFile.exists()}，protected=$protected"
+        )
+
+        if (protected) {
+            debug("[NORMAL] 白名单跳过：$relPath")
             return@forEach
         }
 
         if (file.isDirectory) {
-            if (target.exists() && !target.isDirectory && !target.delete()) {
-                throw Exception("同名文件阻止创建目录：$relPath")
+            if (targetFile.exists() && !targetFile.isDirectory) {
+                val deleted = targetFile.delete()
+                debug("[NORMAL] 删除同名文件以创建目录：$relPath，result=$deleted")
+                if (!deleted) {
+                    throw Exception("同名文件阻止创建目录：$relPath")
+                }
             }
-            copyNormal(file, target, rules, relPath)
+            copyNormal(file, targetFile, rules, relPath, debug)
         } else {
-            if (target.exists() && target.isDirectory) {
+            if (targetFile.exists() && targetFile.isDirectory) {
                 throw Exception("同名目录阻止替换文件：$relPath")
             }
-            replaceNormalFileByDeleteThenMove(file, target, relPath)
+            replaceNormalFileByDeleteThenMove(file, targetFile, relPath, debug)
         }
     }
 }
@@ -2279,10 +2563,15 @@ fun writeSourceToSafDocument(
     context: Context,
     src: File,
     document: DocumentFile,
-    relPath: String
+    relPath: String,
+    debug: (String) -> Unit = {}
 ) {
-    var written = 0L
+    debug(
+        "[SAF] 打开写入流：$relPath，uri=${document.uri}，" +
+            "src=${src.length()}B，docExists=${document.exists()}"
+    )
 
+    var written = 0L
     context.contentResolver.openOutputStream(document.uri, "w")?.use { output ->
         src.inputStream().buffered().use { input ->
             val buffer = ByteArray(128 * 1024)
@@ -2296,8 +2585,9 @@ fun writeSourceToSafDocument(
         }
     } ?: throw Exception("SAF无法打开写入流：$relPath")
 
+    debug("[SAF] 写入完成：$relPath，written=${written}B")
     if (written != src.length()) {
-        throw Exception("SAF写入大小不一致：$relPath")
+        throw Exception("SAF写入大小不一致：$relPath，$written/${src.length()}")
     }
 }
 
@@ -2306,20 +2596,34 @@ fun replaceSafFileByDeleteThenCreate(
     src: File,
     dest: DocumentFile,
     existingFile: DocumentFile?,
-    relPath: String
+    relPath: String,
+    debug: (String) -> Unit = {}
 ) {
-    if (existingFile != null && existingFile.exists() && !existingFile.delete()) {
-        throw Exception("SAF无法删除旧文件：$relPath")
+    debug(
+        "[SAF] 准备替换：$relPath，existing=${existingFile?.exists() == true}，" +
+            "dest=${dest.uri}"
+    )
+
+    if (existingFile != null && existingFile.exists()) {
+        val deleted = existingFile.delete()
+        debug("[SAF] 删除旧文件：$relPath，result=$deleted，uri=${existingFile.uri}")
+        if (!deleted) {
+            throw Exception("SAF无法删除旧文件，可能正被占用或授权不足：$relPath")
+        }
     }
 
     val newDoc = dest.createFile("*/*", src.name)
-        ?: dest.findFile(src.name)
-        ?: throw Exception("SAF无法创建新文件：$relPath")
+        ?: throw Exception("SAF删除旧文件后无法创建新文件：$relPath")
+
+    debug(
+        "[SAF] 创建最终文件：$relPath，name=${newDoc.name}，uri=${newDoc.uri}"
+    )
 
     try {
-        writeSourceToSafDocument(context, src, newDoc, relPath)
+        writeSourceToSafDocument(context, src, newDoc, relPath, debug)
     } catch (error: Exception) {
-        runCatching { newDoc.delete() }
+        val cleaned = runCatching { newDoc.delete() }.getOrDefault(false)
+        debug("[SAF] 写入失败后清理新文件：$relPath，result=$cleaned")
         throw error
     }
 }
@@ -2329,7 +2633,8 @@ fun copySaf(
     src: File,
     dest: DocumentFile,
     rules: List<Regex>,
-    currentPath: String = ""
+    currentPath: String = "",
+    debug: (String) -> Unit = {}
 ) {
     val children = src.listFiles()
         ?: throw Exception("无法读取暂存目录：${src.absolutePath}")
@@ -2337,8 +2642,20 @@ fun copySaf(
     children.forEach { file ->
         val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
         val existing = dest.findFile(file.name)
+        val protected = isProtectedExistingFile(
+            relPath,
+            existing?.exists() == true,
+            rules
+        )
 
-        if (isProtectedExistingFile(relPath, existing?.exists() == true, rules)) {
+        debug(
+            "[SAF] 检查：$relPath，dir=${file.isDirectory}，" +
+                "existing=${existing?.exists() == true}，" +
+                "existingIsDir=${existing?.isDirectory == true}，protected=$protected"
+        )
+
+        if (protected) {
+            debug("[SAF] 白名单跳过：$relPath")
             return@forEach
         }
 
@@ -2346,7 +2663,9 @@ fun copySaf(
             var nextDest = existing
 
             if (nextDest != null && !nextDest.isDirectory) {
-                if (!nextDest.delete()) {
+                val deleted = nextDest.delete()
+                debug("[SAF] 删除同名文件以创建目录：$relPath，result=$deleted")
+                if (!deleted) {
                     throw Exception("SAF同名文件阻止创建目录：$relPath")
                 }
                 nextDest = null
@@ -2355,13 +2674,17 @@ fun copySaf(
             if (nextDest == null) {
                 nextDest = dest.createDirectory(file.name)
                     ?: dest.findFile(file.name)
+                debug(
+                    "[SAF] 创建目录：$relPath，result=${nextDest != null}，" +
+                        "uri=${nextDest?.uri}"
+                )
             }
 
             if (nextDest == null || !nextDest.isDirectory) {
                 throw Exception("SAF无法创建目录：$relPath")
             }
 
-            copySaf(context, file, nextDest, rules, relPath)
+            copySaf(context, file, nextDest, rules, relPath, debug)
         } else {
             if (existing != null && existing.isDirectory) {
                 throw Exception("SAF同名目录阻止替换文件：$relPath")
@@ -2372,7 +2695,8 @@ fun copySaf(
                 src = file,
                 dest = dest,
                 existingFile = existing,
-                relPath = relPath
+                relPath = relPath,
+                debug = debug
             )
         }
     }
