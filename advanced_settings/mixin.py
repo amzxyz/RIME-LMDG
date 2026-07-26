@@ -1998,7 +1998,9 @@ class AdvancedSettingsMixin:
                     except: pass
 
                 self._yaml_engine.atomic_write_many({schema_path: target_data})
-                self.log.appendPlainText(f"⚠️ [直写] {target_id} 已修改! (更新 {len(patches_to_apply)} 项)")
+                self._advanced_save_detail = (
+                    f"[直写] {target_id}：请求更新 {len(patches_to_apply)} 项"
+                )
                 
                 if target_id in self._yaml_cache:
                     _, old_patch = self._yaml_cache[target_id]
@@ -2010,7 +2012,7 @@ class AdvancedSettingsMixin:
                     with open(custom_path, 'r', encoding='utf-8') as f: custom_data = yaml.load(f) or {}
 
                 if not patches_to_apply and not patches_to_remove:
-                    self.log.appendPlainText("💡 未检测到任何改动，取消保存。")
+                    self._advanced_save_detail = "界面值与当前配置一致，未生成写入内容。"
                     return
 
                 if 'patch' not in custom_data or custom_data['patch'] is None: custom_data['patch'] = {}
@@ -2082,7 +2084,10 @@ class AdvancedSettingsMixin:
                 if 'patch' in custom_data and not custom_data['patch']: del custom_data['patch']
 
                 self._yaml_engine.atomic_write_many({custom_path: custom_data})
-                self.log.appendPlainText(f"💾 [补丁] {self.current_custom_file} 已保存! (更新 {len(patches_to_apply)} 项, 剔除 {len(patches_to_remove)} 项)")
+                self._advanced_save_detail = (
+                    f"[补丁] {self.current_custom_file}：请求更新 {len(patches_to_apply)} 项，"
+                    f"清理 {len(patches_to_remove)} 项"
+                )
 
                 if target_id in self._yaml_cache:
                     old_schema, _ = self._yaml_cache[target_id]
@@ -2667,7 +2672,7 @@ class AdvancedSettingsMixin:
                 if deleted_files: msg_parts.append(f"🧹 已自动清理无用补丁: {', '.join(list(set(deleted_files)))}")
                 
                 final_msg = "\n".join(msg_parts)
-                self.log.appendPlainText(final_msg)
+                self._advanced_save_detail = final_msg
                 for k in list(self._ui_cache.keys()):
                     if k != "VIRTUAL_GLOBAL" and k.endswith("_patch" if is_direct else "_direct"):
                         w = self._ui_cache[k]['tree']
@@ -2679,8 +2684,7 @@ class AdvancedSettingsMixin:
                     f"以【{'直写' if is_direct else '补丁'}模式】全局配置已同步。"
                 )
             else:
-                self.log.appendPlainText("💡 未检测到任何改动，无文件被修改。")
-                QMessageBox.information(self, "提示", "与方案原生配置相同，无需修改。\n(没有文件被更改)")
+                self._advanced_save_detail = "与当前配置一致，没有文件被修改。"
             
         except Exception as e:
             self._advanced_save_failed = True
@@ -3413,6 +3417,7 @@ class AdvancedSettingsMixin:
 
         self._advanced_save_failed = False
         self._advanced_save_changed = False
+        self._advanced_save_detail = ""
         self._advanced_save_summary = "全局配置已保存。" if global_mode else "配置已保存。"
         self._log_controlled_save_plan(planned_paths)
 
@@ -3434,28 +3439,29 @@ class AdvancedSettingsMixin:
             if changed_paths:
                 changed_names = ", ".join(path.name for path in changed_paths)
                 self._advanced_save_summary = f"已提交：{changed_names}"
+                detail = getattr(self, "_advanced_save_detail", "").strip()
                 self.log.appendPlainText(f"✅ 受控保存已提交：{changed_names}")
+                if detail:
+                    self.log.appendPlainText(f"   {detail}")
             else:
-                self.log.appendPlainText("💡 本次未产生文件变化。")
+                self._advanced_save_summary = "当前配置与磁盘内容一致。"
+                self.log.appendPlainText("💡 本次未产生文件变化，无需保存或部署。")
         except Exception as error:
             self.log.appendPlainText(f"❌ 受控保存已回滚：{error}")
             QMessageBox.critical(self, "保存已回滚", str(error))
             return
 
-        # 让当前保存槽先返回事件循环，再显示部署询问，避免对话框被页面刷新遮挡。
+        # 保存只更新当前内存缓存；不重新扫描目录、不清空页面、不预构建全部面板。
+        # “重新加载”仅由用户点击左侧按钮、更换目录或外部文件变化时显式触发。
         if changed_paths:
-            deploy_summary = self._advanced_save_summary
             deploy_names = ", ".join(path.name for path in changed_paths)
-
-            def finish_after_commit():
-                try:
-                    self._prompt_deploy_after_commit(deploy_summary, deploy_names)
-                finally:
-                    self.scan_rime_directory()
-
-            QTimer.singleShot(0, finish_after_commit)
+            self._prompt_deploy_after_commit(self._advanced_save_summary, deploy_names)
         else:
-            QTimer.singleShot(0, self.scan_rime_directory)
+            QMessageBox.information(
+                self,
+                "无需保存",
+                "当前界面配置与磁盘文件一致。\n\n没有文件被修改，也不会触发部署。",
+            )
 
     def save_yaml_config(self):
         if self.current_edit_file == "VIRTUAL_GLOBAL":
