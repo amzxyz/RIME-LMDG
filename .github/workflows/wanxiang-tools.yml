@@ -6,6 +6,7 @@ on:
       - wanxiang
     paths:
       - 'pypinyin/**'
+      - 'advanced_settings/**'
       - 'wanxiang-tools.py'
       - 'wanxiang-updater/**'
       - '.github/workflows/**'
@@ -29,6 +30,14 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           pip install PySide6 requests pyinstaller ruamel.yaml
+
+          test -f wanxiang-tools.py
+          test -f advanced_settings/__init__.py
+          test -d pypinyin
+
+          test -f wanxiang-tools.py
+          test -f advanced_settings/__init__.py
+          test -d pypinyin
           
           if [ ! -f icon.ico ]; then touch icon.ico; fi
           # 转换图标
@@ -38,6 +47,7 @@ jobs:
             --clean \
             --name wanxiang-tools \
             --paths . \
+            --collect-submodules advanced_settings \
             --add-data "pypinyin:pypinyin" \
             --hidden-import requests \
             --collect-all ruamel.yaml \
@@ -200,6 +210,7 @@ jobs:
           pyinstaller -F -w \
             --name wanxiang-tools \
             --paths . \
+            --collect-submodules advanced_settings \
             --add-data "pypinyin;pypinyin" \
             --hidden-import requests \
             --collect-all ruamel.yaml \
@@ -230,11 +241,16 @@ jobs:
           python-version: '3.12'
       - run: pip install PySide6 requests pyinstaller pillow ruamel.yaml
       - run: |
+          test -f wanxiang-tools.py
+          test -f advanced_settings/__init__.py
+          test -d pypinyin
+
           if [ ! -f icon.ico ]; then touch icon.ico; fi
 
           pyinstaller -F -w \
             --name wanxiang-tools \
             --paths . \
+            --collect-submodules advanced_settings \
             --add-data "pypinyin:pypinyin" \
             --hidden-import requests \
             --collect-all ruamel.yaml \
