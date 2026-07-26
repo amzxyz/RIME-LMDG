@@ -652,7 +652,7 @@ class AdvancedSettingsMixin:
         
         disabled_types = get_current_val("super_tips/disabled_types", [])
         if not isinstance(disabled_types, list): disabled_types = []
-        clean_dt = [str(x) for x in disabled_types if x and "禁用类型" not in str(x)]
+        clean_dt = [str(x) for x in disabled_types if x is not None and str(x) != ""]
         dt_str = "\n".join(clean_dt)
         
         nodes = [
@@ -1029,9 +1029,16 @@ class AdvancedSettingsMixin:
             cache = self._ui_cache.get("VIRTUAL_GLOBAL")
             if cache:
                 self.cfg_stack.setCurrentWidget(cache['tree'])
-                self._yaml_widgets = cache['widgets']
-                self._yaml_base_values = cache['base']
-                self._yaml_dynamic_lists = cache['lists']
+
+                # 一键联动页的 widgets 是直接保存的 QLineEdit/QComboBox 等控件，
+                # 普通 YAML 页的 _yaml_widgets 则固定为：
+                #     path -> (widget, value_type)
+                # 两者不能共用同一个容器，否则实时冲突扫描会尝试拆包 QLineEdit。
+                # 一键联动保存与冲突检测均直接读取 VIRTUAL_GLOBAL 缓存，
+                # 因此这里保持普通 YAML 页面容器的类型不变量。
+                self._yaml_widgets = {}
+                self._yaml_base_values = {}
+                self._yaml_dynamic_lists = {}
             
             # 赋予身份，并开启保存按钮
             self.current_edit_file = "VIRTUAL_GLOBAL" 
@@ -1542,7 +1549,7 @@ class AdvancedSettingsMixin:
                 real_w = MixedAlgebraWidget(curr_v, is_direct=is_direct_mode)
                 file_widgets[f_path] = (real_w, v_type); return real_w
             real_w = None
-            if v_type in ["str", "int", "float"]:
+            if v_type in ["str", "int", "float", "number"]:
                 if isinstance(curr_v, list): display_text = "[" + ", ".join(str(x) for x in curr_v) + "]"
                 else: display_text = str(curr_v if curr_v is not None else "")
                 real_w = QLineEdit(display_text); real_w.setStyleSheet(style_m); real_w.setFixedHeight(36)
@@ -1881,6 +1888,15 @@ class AdvancedSettingsMixin:
                     current_val = float(widget.text().strip())
                 except Exception:
                     current_val = widget.text().strip()
+            elif v_type == "number":
+                number_text = widget.text().strip()
+                try:
+                    if re.fullmatch(r"[+-]?\d+", number_text):
+                        current_val = int(number_text)
+                    else:
+                        current_val = float(number_text)
+                except Exception:
+                    current_val = number_text
             elif v_type == "multiline_str":
                 current_val = widget.text_field.toPlainText()
             elif v_type == "str":
@@ -2520,7 +2536,31 @@ class AdvancedSettingsMixin:
             dt_list = [line.strip() for line in dt_text.splitlines() if line.strip()]
 
         is_direct = self.rb_direct_mode.isChecked()
-        
+
+        global_cache = self._ui_cache.get("VIRTUAL_GLOBAL", {})
+        current_state = self._capture_global_widget_state(widgets)
+        baseline_state = global_cache.get("baseline")
+        if not isinstance(baseline_state, dict):
+            baseline_state = copy.deepcopy(current_state)
+            baseline_state["grammar_action"] = 0
+            global_cache["baseline"] = copy.deepcopy(baseline_state)
+
+        dirty = {
+            key: current_state.get(key) != baseline_state.get(key)
+            for key in (
+                "page_size", "paging", "cand2", "cand3", "auto_freq",
+                "main_dict", "reverse_lookup", "super_tips_db",
+                "super_tips_key", "super_tips_disabled",
+            )
+        }
+        dirty["grammar_action"] = grammar_action in (1, 2)
+
+        changed_features = [name for name, changed in dirty.items() if changed]
+        if changed_features:
+            self.log.appendPlainText(
+                "🧭 一键联动仅处理已修改项目：" + ", ".join(changed_features)
+            )
+
         try:
             from ruamel.yaml import YAML
             from ruamel.yaml.comments import CommentedMap, CommentedSeq
@@ -2537,56 +2577,51 @@ class AdvancedSettingsMixin:
                         if os.path.exists(file_path):
                             self._yaml_engine.atomic_write_many({file_path: None})
                             deleted_files.append(os.path.basename(file_path))
-                        if f_name in self._yaml_cache:
-                            self._yaml_cache[f_name] = (self._yaml_cache[f_name][0], {})
-                        return False 
+                        return False
                     if "patch" not in data: data["patch"] = {}
                 
                 self._yaml_engine.atomic_write_many({file_path: data})
-                if f_name in self._yaml_cache:
-                    old_schema, old_patch = self._yaml_cache[f_name]
-                    if is_dir: self._yaml_cache[f_name] = (data, old_patch)
-                    else: self._yaml_cache[f_name] = (old_schema, data.get("patch", {}))
                 return True
 
             # 动作 写入候选数
-            for f_name in ["default.yaml", "wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
-                base_f_path = os.path.join(rime_dir, f_name)
-                if not os.path.exists(base_f_path): continue 
+            if dirty["page_size"]:
+                for f_name in ["default.yaml", "wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
+                    base_f_path = os.path.join(rime_dir, f_name)
+                    if not os.path.exists(base_f_path): continue 
 
-                target_file = f_name if is_direct else f_name.replace(".yaml", "").replace(".schema", "") + ".custom.yaml"
-                f_path = os.path.join(rime_dir, target_file)
-                base_data = self._yaml_cache.get(f_name, ({}, {}))[0]
-                base_page_size = _get_nested_val(base_data, "menu/page_size", 6)
+                    target_file = f_name if is_direct else f_name.replace(".yaml", "").replace(".schema", "") + ".custom.yaml"
+                    f_path = os.path.join(rime_dir, target_file)
+                    base_data = self._yaml_cache.get(f_name, ({}, {}))[0]
+                    base_page_size = _get_nested_val(base_data, "menu/page_size", 6)
                 
-                if not os.path.exists(f_path) and not is_direct: target_data = {"patch": {}}
-                elif os.path.exists(f_path):
-                    with open(f_path, 'r', encoding='utf-8') as f: target_data = yaml.load(f) or {}
-                else: continue 
+                    if not os.path.exists(f_path) and not is_direct: target_data = {"patch": {}}
+                    elif os.path.exists(f_path):
+                        with open(f_path, 'r', encoding='utf-8') as f: target_data = yaml.load(f) or {}
+                    else: continue 
                 
-                modified = False
-                if is_direct:
-                    old_ps = _get_nested_val(target_data, "menu/page_size", None)
-                    if old_ps != page_size_val:
-                        if "menu" not in target_data: target_data["menu"] = {}
-                        target_data["menu"]["page_size"] = page_size_val
-                        modified = True
-                else:
-                    if "patch" not in target_data or target_data["patch"] is None: target_data["patch"] = {}
-                    if page_size_val != base_page_size:
-                        if target_data["patch"].get("menu/page_size") != page_size_val:
-                            target_data["patch"]["menu/page_size"] = page_size_val
+                    modified = False
+                    if is_direct:
+                        old_ps = _get_nested_val(target_data, "menu/page_size", None)
+                        if old_ps != page_size_val:
+                            if "menu" not in target_data: target_data["menu"] = {}
+                            target_data["menu"]["page_size"] = page_size_val
                             modified = True
                     else:
-                        if "menu/page_size" in target_data["patch"]:
-                            del target_data["patch"]["menu/page_size"]
-                            modified = True
+                        if "patch" not in target_data or target_data["patch"] is None: target_data["patch"] = {}
+                        if page_size_val != base_page_size:
+                            if target_data["patch"].get("menu/page_size") != page_size_val:
+                                target_data["patch"]["menu/page_size"] = page_size_val
+                                modified = True
+                        else:
+                            if "menu/page_size" in target_data["patch"]:
+                                del target_data["patch"]["menu/page_size"]
+                                modified = True
                             
-                if modified:
-                    if _smart_write(f_path, target_data, f_name, is_direct):
-                        if target_file not in updated_files: updated_files.append(target_file)
+                    if modified:
+                        if _smart_write(f_path, target_data, f_name, is_direct):
+                            if target_file not in updated_files: updated_files.append(target_file)
             # 动作 同步自动调频 (translator/enable_user_dict)
-            if auto_freq_widget:
+            if auto_freq_widget and dirty["auto_freq"]:
                 for f_name in ["wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
                     base_f_path = os.path.join(rime_dir, f_name)
                     if not os.path.exists(base_f_path): continue 
@@ -2624,7 +2659,7 @@ class AdvancedSettingsMixin:
                         if _smart_write(f_path, target_data, f_name, is_direct):
                             if target_file not in updated_files: updated_files.append(target_file)
             # 动作 同步主词库名称 (自动防覆盖处理)
-            if main_dict_val:
+            if main_dict_val and dirty["main_dict"]:
                 import shutil
                 dst_dict = os.path.join(rime_dir, f"{main_dict_val}.dict.yaml")
                 if main_dict_val not in ["wanxiang", "wanxiang_pro"] and not os.path.exists(dst_dict):
@@ -2768,7 +2803,11 @@ class AdvancedSettingsMixin:
                         if _smart_write(f_path, target_data, f_name, is_direct):
                             if target_file not in updated_files: updated_files.append(target_file)
             # 动作 同步超级提示 (super_tips)
-            if st_widgets:
+            if st_widgets and any((
+                dirty["super_tips_db"],
+                dirty["super_tips_key"],
+                dirty["super_tips_disabled"],
+            )):
                 seq = CommentedSeq(dt_list)
                 if all(len(str(x)) <= 15 for x in dt_list): seq.fa.set_flow_style() 
 
@@ -2792,17 +2831,23 @@ class AdvancedSettingsMixin:
                     modified = False
                     if is_direct:
                         if "super_tips" not in target_data: target_data["super_tips"] = {}
-                        if target_data["super_tips"].get("db_name") != db_name_val:
-                            target_data["super_tips"]["db_name"] = db_name_val; modified = True
-                        if target_data["super_tips"].get("tips_key") != tips_key_val:
-                            target_data["super_tips"]["tips_key"] = tips_key_val; modified = True
-                        
-                        cur_dt = target_data["super_tips"].get("disabled_types", [])
-                        if not isinstance(cur_dt, list): cur_dt = []
-                        if cur_dt != dt_list:
-                            if dt_list: self._safe_assign(target_data["super_tips"], "disabled_types", seq)
-                            else: target_data["super_tips"].pop("disabled_types", None)
+                        if dirty["super_tips_db"] and target_data["super_tips"].get("db_name") != db_name_val:
+                            target_data["super_tips"]["db_name"] = db_name_val
                             modified = True
+                        if dirty["super_tips_key"] and target_data["super_tips"].get("tips_key") != tips_key_val:
+                            target_data["super_tips"]["tips_key"] = tips_key_val
+                            modified = True
+
+                        if dirty["super_tips_disabled"]:
+                            cur_dt = target_data["super_tips"].get("disabled_types", [])
+                            if not isinstance(cur_dt, list):
+                                cur_dt = []
+                            if cur_dt != dt_list:
+                                if dt_list:
+                                    self._safe_assign(target_data["super_tips"], "disabled_types", seq)
+                                else:
+                                    target_data["super_tips"].pop("disabled_types", None)
+                                modified = True
                     else:
                         if "patch" not in target_data or target_data["patch"] is None: target_data["patch"] = {}
                         def patch_field(k, nv, bv):
@@ -2811,22 +2856,30 @@ class AdvancedSettingsMixin:
                                 if target_data["patch"].get(k) != nv: self._safe_assign(target_data["patch"], k, nv); modified = True
                             elif k in target_data["patch"]: del target_data["patch"][k]; modified = True
                                     
-                        patch_field("super_tips/db_name", db_name_val, base_db)
-                        patch_field("super_tips/tips_key", tips_key_val, base_key)
-                        
-                        if dt_list != base_dt:
-                            if target_data["patch"].get("super_tips/disabled_types") != dt_list:
-                                self._safe_assign(target_data["patch"], "super_tips/disabled_types", seq if dt_list else CommentedSeq())
+                        if dirty["super_tips_db"]:
+                            patch_field("super_tips/db_name", db_name_val, base_db)
+                        if dirty["super_tips_key"]:
+                            patch_field("super_tips/tips_key", tips_key_val, base_key)
+
+                        if dirty["super_tips_disabled"]:
+                            if dt_list != base_dt:
+                                if target_data["patch"].get("super_tips/disabled_types") != dt_list:
+                                    self._safe_assign(
+                                        target_data["patch"],
+                                        "super_tips/disabled_types",
+                                        seq if dt_list else CommentedSeq(),
+                                    )
+                                    modified = True
+                            elif "super_tips/disabled_types" in target_data["patch"]:
+                                del target_data["patch"]["super_tips/disabled_types"]
                                 modified = True
-                        elif "super_tips/disabled_types" in target_data["patch"]:
-                            del target_data["patch"]["super_tips/disabled_types"]; modified = True
 
                     if modified:
                         if _smart_write(f_path, target_data, f_name, is_direct):
                             if target_file not in updated_files: updated_files.append(target_file)
 
             # 动作 同步反查快捷键
-            if rev_key:
+            if rev_key and dirty["reverse_lookup"]:
                 for f_name in ["wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
                     base_f_path = os.path.join(rime_dir, f_name)
                     if not os.path.exists(base_f_path): continue 
@@ -2843,9 +2896,27 @@ class AdvancedSettingsMixin:
                     else: continue 
                     
                     modified = False
-                    esc_key = '\\' + rev_key if rev_key in r".^$*+?{}[]\|()" else rev_key
-                    new_pattern = f"^{esc_key}[A-Za-z]*$"
-                    
+                    base_pattern = _get_nested_val(
+                        base_data,
+                        "recognizer/patterns/wanxiang_reverse",
+                        "^`[A-Za-z;]*$",
+                    )
+                    effective_old_key = self._effective_config_value(
+                        f_name,
+                        "wanxiang_lookup/key",
+                        old_key,
+                    )
+                    effective_pattern = self._effective_config_value(
+                        f_name,
+                        "recognizer/patterns/wanxiang_reverse",
+                        base_pattern,
+                    )
+                    new_pattern = self._replace_reverse_pattern_prefix(
+                        effective_pattern,
+                        effective_old_key,
+                        rev_key,
+                    )
+
                     if is_direct:
                         def set_direct(path, val):
                             nonlocal modified
@@ -2876,7 +2947,11 @@ class AdvancedSettingsMixin:
                                     
                         patch_field("wanxiang_reverse/prefix", rev_key, _get_nested_val(base_data, "wanxiang_reverse/prefix", "`"))
                         patch_field("wanxiang_lookup/key", rev_key, old_key)
-                        patch_field("recognizer/patterns/wanxiang_reverse", new_pattern, _get_nested_val(base_data, "recognizer/patterns/wanxiang_reverse", "^`[A-Za-z]*$"))
+                        patch_field(
+                            "recognizer/patterns/wanxiang_reverse",
+                            new_pattern,
+                            base_pattern,
+                        )
                         
                         base_alpha = _get_nested_val(base_data, "speller/alphabet", "")
                         if base_alpha:
@@ -2890,129 +2965,150 @@ class AdvancedSettingsMixin:
                             if target_file not in updated_files: updated_files.append(target_file)
 
             # 动作 处理翻页和次选/三选
-            for f_name in ["default.yaml", "wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
-                base_f_path = os.path.join(rime_dir, f_name)
-                if not os.path.exists(base_f_path): continue 
+            if any((dirty["paging"], dirty["cand2"], dirty["cand3"])):
+                for f_name in ["default.yaml", "wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
+                    base_f_path = os.path.join(rime_dir, f_name)
+                    if not os.path.exists(base_f_path): continue 
 
-                target_file = "default.yaml" if f_name == "default.yaml" and is_direct else f_name.replace(".schema.yaml", ".custom.yaml") if f_name != "default.yaml" and not is_direct else f_name if is_direct else "default.custom.yaml"
-                f_path = os.path.join(rime_dir, target_file)
-                if not os.path.exists(f_path) and not is_direct: target_data = {"patch": {}}
-                elif os.path.exists(f_path):
-                    with open(f_path, 'r', encoding='utf-8') as f: target_data = yaml.load(f) or {}
-                else: continue
+                    target_file = "default.yaml" if f_name == "default.yaml" and is_direct else f_name.replace(".schema.yaml", ".custom.yaml") if f_name != "default.yaml" and not is_direct else f_name if is_direct else "default.custom.yaml"
+                    f_path = os.path.join(rime_dir, target_file)
+                    if not os.path.exists(f_path) and not is_direct: target_data = {"patch": {}}
+                    elif os.path.exists(f_path):
+                        with open(f_path, 'r', encoding='utf-8') as f: target_data = yaml.load(f) or {}
+                    else: continue
                 
-                modified = False
-                base_data = self._yaml_cache.get(f_name, ({}, {}))[0]
+                    modified = False
+                    base_data = self._yaml_cache.get(f_name, ({}, {}))[0]
                 
-                if is_direct:
-                    key_binder = target_data.get("key_binder", {})
-                    bindings = key_binder.get("bindings", []) if isinstance(key_binder, dict) else []
-                    if not isinstance(bindings, list): bindings = []
-                    new_bindings = []
+                    if is_direct:
+                        key_binder = target_data.get("key_binder", {})
+                        bindings = key_binder.get("bindings", []) if isinstance(key_binder, dict) else []
+                        if not isinstance(bindings, list): bindings = []
+                        new_bindings = []
                     
-                    for b in bindings:
-                        if not isinstance(b, dict): continue
-                        acc = str(b.get("accept", "")).lower()
-                        snd = str(b.get("send", "")).lower()
-                        is_paging = acc in ["comma", "period", "bracketleft", "bracketright", "minus", "equal", ",", ".", "[", "]", "-", "="] and snd in ["page_up", "page_down", "prior", "next"]
-                        is_cand = snd in ["2", "3"] and acc not in ["2", "kp_2", "3", "kp_3"]
-                        if is_paging or is_cand: continue
-                        new_bindings.append(b)
-                    
-                    if f_name != "default.yaml":
-                        if paging_style == "逗号句号 ( , . )":
-                            new_bindings.append(CommentedMap({"when": "paging", "accept": "comma", "send": "Page_Up"}))
-                            new_bindings.append(CommentedMap({"when": "has_menu", "accept": "period", "send": "Page_Down"}))
-                        elif paging_style == "中括号 ( [ ] )":
-                            new_bindings.append(CommentedMap({"when": "paging", "accept": "bracketleft", "send": "Page_Up"}))
-                            new_bindings.append(CommentedMap({"when": "has_menu", "accept": "bracketright", "send": "Page_Down"}))
-                        elif paging_style == "减号等号 ( - = )":
-                            new_bindings.append(CommentedMap({"when": "has_menu", "accept": "minus", "send": "Page_Up"}))
-                            new_bindings.append(CommentedMap({"when": "has_menu", "accept": "equal", "send": "Page_Down"}))
-                        
-                        if rime_val2: new_bindings.append(CommentedMap({"when": "has_menu", "accept": rime_val2, "send": 2}))
-                        if rime_val3: new_bindings.append(CommentedMap({"when": "has_menu", "accept": rime_val3, "send": 3}))
-                    
-                    if new_bindings != bindings:
-                        if "key_binder" not in target_data: target_data["key_binder"] = {}
-                        self._safe_assign(target_data["key_binder"], "bindings", new_bindings)
-                        modified = True
-                else:
-                    patch_dict = target_data.get("patch", {}) or {}
-                    if "key_binder/bindings" in patch_dict and isinstance(patch_dict["key_binder/bindings"], list):
-                        old_b = patch_dict["key_binder/bindings"]
-                        cleaned_b = []
-                        for b in old_b:
+                        for b in bindings:
                             if not isinstance(b, dict): continue
                             acc = str(b.get("accept", "")).lower()
                             snd = str(b.get("send", "")).lower()
                             is_paging = acc in ["comma", "period", "bracketleft", "bracketright", "minus", "equal", ",", ".", "[", "]", "-", "="] and snd in ["page_up", "page_down", "prior", "next"]
                             is_cand = snd in ["2", "3"] and acc not in ["2", "kp_2", "3", "kp_3"]
-                            if is_paging or is_cand: continue
-                            cleaned_b.append(b)
-                        if cleaned_b != old_b:
-                            if cleaned_b: self._safe_assign(patch_dict, "key_binder/bindings", cleaned_b)
-                            else: del patch_dict["key_binder/bindings"]
-                            modified = True
+                            remove_binding = (
+                                (dirty["paging"] and is_paging)
+                                or (dirty["cand2"] and is_cand and snd == "2")
+                                or (dirty["cand3"] and is_cand and snd == "3")
+                            )
+                            if remove_binding:
+                                continue
+                            new_bindings.append(b)
                     
-                    append_key = "key_binder/bindings/+"
-                    bindings = patch_dict.get(append_key, [])
-                    if not isinstance(bindings, list): bindings = []
-                    new_bindings = []
-                    
-                    for b in bindings:
-                        if not isinstance(b, dict): continue
-                        acc = str(b.get("accept", "")).lower()
-                        snd = str(b.get("send", "")).lower()
-                        is_paging = acc in ["comma", "period", "bracketleft", "bracketright", "minus", "equal", ",", ".", "[", "]", "-", "="] and snd in ["page_up", "page_down", "prior", "next"]
-                        is_cand = snd in ["2", "3"] and acc not in ["2", "kp_2", "3", "kp_3"]
-                        if is_paging or is_cand: continue
-                        new_bindings.append(b)
-                        
-                    if f_name != "default.yaml":
-                        base_bindings = _get_nested_val(base_data, "key_binder/bindings", [])
-                        base_accs = set()
-                        base_key2, base_key3 = "", ""
-                        if isinstance(base_bindings, list):
-                            for b in base_bindings:
-                                if not isinstance(b, dict): continue
-                                acc = str(b.get("accept", "")).lower()
-                                snd = str(b.get("send", "")).lower()
-                                if snd in ["page_up", "page_down", "prior", "next"]: base_accs.add(acc)
-                                if snd == "2" and acc not in ["2", "kp_2", "3", "kp_3"]: base_key2 = acc
-                                if snd == "3" and acc not in ["2", "kp_2", "3", "kp_3"]: base_key3 = acc
-                        
-                        base_paging = "默认 (PageUp/Dn)"
-                        if "minus" in base_accs or "-" in base_accs: base_paging = "减号等号 ( - = )"
-                        elif "bracketleft" in base_accs or "[" in base_accs: base_paging = "中括号 ( [ ] )"
-                        elif "comma" in base_accs or "," in base_accs: base_paging = "逗号句号 ( , . )"
-                        
-                        if paging_style != base_paging:
-                            if paging_style == "逗号句号 ( , . )":
+                        if f_name != "default.yaml":
+                            if dirty["paging"] and paging_style == "逗号句号 ( , . )":
                                 new_bindings.append(CommentedMap({"when": "paging", "accept": "comma", "send": "Page_Up"}))
                                 new_bindings.append(CommentedMap({"when": "has_menu", "accept": "period", "send": "Page_Down"}))
-                            elif paging_style == "中括号 ( [ ] )":
+                            elif dirty["paging"] and paging_style == "中括号 ( [ ] )":
                                 new_bindings.append(CommentedMap({"when": "paging", "accept": "bracketleft", "send": "Page_Up"}))
                                 new_bindings.append(CommentedMap({"when": "has_menu", "accept": "bracketright", "send": "Page_Down"}))
-                            elif paging_style == "减号等号 ( - = )":
+                            elif dirty["paging"] and paging_style == "减号等号 ( - = )":
                                 new_bindings.append(CommentedMap({"when": "has_menu", "accept": "minus", "send": "Page_Up"}))
                                 new_bindings.append(CommentedMap({"when": "has_menu", "accept": "equal", "send": "Page_Down"}))
                         
-                        if rime_val2 and rime_val2 != base_key2:
-                            new_bindings.append(CommentedMap({"when": "has_menu", "accept": rime_val2, "send": 2}))
-                        if rime_val3 and rime_val3 != base_key3:
-                            new_bindings.append(CommentedMap({"when": "has_menu", "accept": rime_val3, "send": 3}))
-
-                    if new_bindings != bindings:
-                        if new_bindings: self._safe_assign(patch_dict, append_key, new_bindings)
-                        elif append_key in patch_dict: del patch_dict[append_key]
-                        modified = True
+                            if dirty["cand2"] and rime_val2:
+                                new_bindings.append(CommentedMap({"when": "has_menu", "accept": rime_val2, "send": 2}))
+                            if dirty["cand3"] and rime_val3:
+                                new_bindings.append(CommentedMap({"when": "has_menu", "accept": rime_val3, "send": 3}))
                     
-                    if modified: target_data["patch"] = patch_dict
+                        if new_bindings != bindings:
+                            if "key_binder" not in target_data: target_data["key_binder"] = {}
+                            self._safe_assign(target_data["key_binder"], "bindings", new_bindings)
+                            modified = True
+                    else:
+                        patch_dict = target_data.get("patch", {}) or {}
+                        if "key_binder/bindings" in patch_dict and isinstance(patch_dict["key_binder/bindings"], list):
+                            old_b = patch_dict["key_binder/bindings"]
+                            cleaned_b = []
+                            for b in old_b:
+                                if not isinstance(b, dict): continue
+                                acc = str(b.get("accept", "")).lower()
+                                snd = str(b.get("send", "")).lower()
+                                is_paging = acc in ["comma", "period", "bracketleft", "bracketright", "minus", "equal", ",", ".", "[", "]", "-", "="] and snd in ["page_up", "page_down", "prior", "next"]
+                                is_cand = snd in ["2", "3"] and acc not in ["2", "kp_2", "3", "kp_3"]
+                                remove_binding = (
+                                    (dirty["paging"] and is_paging)
+                                    or (dirty["cand2"] and is_cand and snd == "2")
+                                    or (dirty["cand3"] and is_cand and snd == "3")
+                                )
+                                if remove_binding:
+                                    continue
+                                cleaned_b.append(b)
+                            if cleaned_b != old_b:
+                                if cleaned_b: self._safe_assign(patch_dict, "key_binder/bindings", cleaned_b)
+                                else: del patch_dict["key_binder/bindings"]
+                                modified = True
+                    
+                        append_key = "key_binder/bindings/+"
+                        bindings = patch_dict.get(append_key, [])
+                        if not isinstance(bindings, list): bindings = []
+                        new_bindings = []
+                    
+                        for b in bindings:
+                            if not isinstance(b, dict): continue
+                            acc = str(b.get("accept", "")).lower()
+                            snd = str(b.get("send", "")).lower()
+                            is_paging = acc in ["comma", "period", "bracketleft", "bracketright", "minus", "equal", ",", ".", "[", "]", "-", "="] and snd in ["page_up", "page_down", "prior", "next"]
+                            is_cand = snd in ["2", "3"] and acc not in ["2", "kp_2", "3", "kp_3"]
+                            remove_binding = (
+                                (dirty["paging"] and is_paging)
+                                or (dirty["cand2"] and is_cand and snd == "2")
+                                or (dirty["cand3"] and is_cand and snd == "3")
+                            )
+                            if remove_binding:
+                                continue
+                            new_bindings.append(b)
+                        
+                        if f_name != "default.yaml":
+                            base_bindings = _get_nested_val(base_data, "key_binder/bindings", [])
+                            base_accs = set()
+                            base_key2, base_key3 = "", ""
+                            if isinstance(base_bindings, list):
+                                for b in base_bindings:
+                                    if not isinstance(b, dict): continue
+                                    acc = str(b.get("accept", "")).lower()
+                                    snd = str(b.get("send", "")).lower()
+                                    if snd in ["page_up", "page_down", "prior", "next"]: base_accs.add(acc)
+                                    if snd == "2" and acc not in ["2", "kp_2", "3", "kp_3"]: base_key2 = acc
+                                    if snd == "3" and acc not in ["2", "kp_2", "3", "kp_3"]: base_key3 = acc
+                        
+                            base_paging = "默认 (PageUp/Dn)"
+                            if "minus" in base_accs or "-" in base_accs: base_paging = "减号等号 ( - = )"
+                            elif "bracketleft" in base_accs or "[" in base_accs: base_paging = "中括号 ( [ ] )"
+                            elif "comma" in base_accs or "," in base_accs: base_paging = "逗号句号 ( , . )"
+                        
+                            if dirty["paging"] and paging_style != base_paging:
+                                if paging_style == "逗号句号 ( , . )":
+                                    new_bindings.append(CommentedMap({"when": "paging", "accept": "comma", "send": "Page_Up"}))
+                                    new_bindings.append(CommentedMap({"when": "has_menu", "accept": "period", "send": "Page_Down"}))
+                                elif paging_style == "中括号 ( [ ] )":
+                                    new_bindings.append(CommentedMap({"when": "paging", "accept": "bracketleft", "send": "Page_Up"}))
+                                    new_bindings.append(CommentedMap({"when": "has_menu", "accept": "bracketright", "send": "Page_Down"}))
+                                elif paging_style == "减号等号 ( - = )":
+                                    new_bindings.append(CommentedMap({"when": "has_menu", "accept": "minus", "send": "Page_Up"}))
+                                    new_bindings.append(CommentedMap({"when": "has_menu", "accept": "equal", "send": "Page_Down"}))
+                        
+                            if dirty["cand2"] and rime_val2 and rime_val2 != base_key2:
+                                new_bindings.append(CommentedMap({"when": "has_menu", "accept": rime_val2, "send": 2}))
+                            if dirty["cand3"] and rime_val3 and rime_val3 != base_key3:
+                                new_bindings.append(CommentedMap({"when": "has_menu", "accept": rime_val3, "send": 3}))
 
-                if modified:
-                    if _smart_write(f_path, target_data, f_name, is_direct):
-                        if target_file not in updated_files: updated_files.append(target_file)
+                        if new_bindings != bindings:
+                            if new_bindings: self._safe_assign(patch_dict, append_key, new_bindings)
+                            elif append_key in patch_dict: del patch_dict[append_key]
+                            modified = True
+                    
+                        if modified: target_data["patch"] = patch_dict
+
+                    if modified:
+                        if _smart_write(f_path, target_data, f_name, is_direct):
+                            if target_file not in updated_files: updated_files.append(target_file)
             
             if updated_files or deleted_files:
                 msg_parts = []
@@ -3128,10 +3224,109 @@ class AdvancedSettingsMixin:
 
         self._refresh_all_conflict_labels()
 
+    def _capture_global_widget_state(self, widgets=None):
+        """读取一键联动页面当前值，用于精确判断真正被修改的功能。"""
+        if widgets is None:
+            widgets = self._ui_cache.get("VIRTUAL_GLOBAL", {}).get("widgets", {})
+
+        page_widget = widgets.get("page_size")
+        page_text = page_widget.text().strip() if page_widget else ""
+        try:
+            page_size = int(page_text)
+        except (TypeError, ValueError):
+            page_size = page_text
+
+        paging_widget = widgets.get("paging")
+        paging = paging_widget.currentText() if paging_widget else ""
+
+        cand_widgets = widgets.get("cand_keys")
+        cand2 = cand_widgets[0].text().strip() if cand_widgets else ""
+        cand3 = cand_widgets[1].text().strip() if cand_widgets else ""
+
+        auto_widget = widgets.get("auto_freq")
+        auto_freq = bool(auto_widget and auto_widget.currentIndex() == 0)
+
+        dict_widget = widgets.get("main_dict")
+        main_dict = dict_widget.text().strip() if dict_widget else ""
+
+        reverse_widget = widgets.get("reverse_lookup")
+        reverse_lookup = reverse_widget.text().strip() if reverse_widget else ""
+
+        tips_widgets = widgets.get("super_tips") or {}
+        if isinstance(tips_widgets, dict):
+            db_widget = tips_widgets.get("db_name")
+            key_widget = tips_widgets.get("tips_key")
+            disabled_widget = tips_widgets.get("disabled_types")
+        else:
+            db_widget = key_widget = disabled_widget = None
+
+        tips_db = db_widget.text().strip() if db_widget else ""
+        tips_key = key_widget.text().strip() if key_widget else ""
+        disabled_text = disabled_widget.text_field.toPlainText() if disabled_widget is not None else ""
+        disabled_types = tuple(line.strip() for line in disabled_text.splitlines() if line.strip())
+
+        grammar_widget = widgets.get("grammar_model")
+        grammar_action = grammar_widget.currentIndex() if grammar_widget else 0
+
+        return {
+            "page_size": page_size,
+            "paging": paging,
+            "cand2": cand2,
+            "cand3": cand3,
+            "auto_freq": auto_freq,
+            "main_dict": main_dict,
+            "reverse_lookup": reverse_lookup,
+            "super_tips_db": tips_db,
+            "super_tips_key": tips_key,
+            "super_tips_disabled": disabled_types,
+            "grammar_action": grammar_action,
+        }
+
+    def _sync_global_widget_baseline(self, *, reset_actions=False):
+        """更新一键联动基线；只改内存，不刷新或重建页面。"""
+        cache = self._ui_cache.get("VIRTUAL_GLOBAL", {})
+        widgets = cache.get("widgets", {})
+        if not widgets:
+            return
+
+        if reset_actions:
+            grammar_widget = widgets.get("grammar_model")
+            if grammar_widget is not None:
+                grammar_widget.setCurrentIndex(0)
+
+        state = self._capture_global_widget_state(widgets)
+        state["grammar_action"] = 0
+        cache["baseline"] = copy.deepcopy(state)
+
+    @staticmethod
+    def _replace_reverse_pattern_prefix(pattern, old_key, new_key):
+        """只替换反查正则前缀，保留 [A-Za-z;] 等后续规则。"""
+        pattern = str(pattern or "")
+        old_key = str(old_key or "")
+        new_key = str(new_key or "")
+        escaped_new = re.escape(new_key)
+
+        if not pattern or not pattern.startswith("^"):
+            return f"^{escaped_new}[A-Za-z;]*$"
+
+        escaped_old = re.escape(old_key)
+        old_prefix = "^" + escaped_old
+        if old_key and pattern.startswith(old_prefix):
+            return "^" + escaped_new + pattern[len(old_prefix):]
+
+        raw_prefix = "^" + old_key
+        if old_key and pattern.startswith(raw_prefix):
+            return "^" + escaped_new + pattern[len(raw_prefix):]
+
+        if len(pattern) >= 2:
+            return "^" + escaped_new + pattern[2:]
+        return f"^{escaped_new}[A-Za-z;]*$"
+
     def _render_global_business_page(self, tree_widget):
         self._conflict_refreshers = {}
         self._legacy_render_global_business_page(tree_widget)
         self._wire_global_live_conflicts(tree_widget)
+        self._sync_global_widget_baseline()
 
     def _ensure_advanced_engines(self):
         if not hasattr(self, "_yaml_engine"):
@@ -3437,8 +3632,15 @@ class AdvancedSettingsMixin:
         for path, value in getattr(self, "_yaml_widgets", {}).items():
             if path in managed_paths:
                 continue
+
+            # 普通 YAML 页登记为 (widget, value_type)。
+            # 对未知来源或旧缓存中的裸控件直接跳过，冲突提示绝不能因控件形态异常
+            # 打断输入事件。
+            if not isinstance(value, (tuple, list)) or len(value) != 2:
+                continue
+
             widget, value_type = value
-            if value_type in {"bool", "int", "float", "list_text", "raw_yaml", "multiline_str", "schema_checkboxes"}:
+            if value_type in {"bool", "int", "float", "number", "list_text", "raw_yaml", "multiline_str", "schema_checkboxes"}:
                 continue
             if path == "super_processor/select_character":
                 raw = self._widget_text(widget)
@@ -3873,6 +4075,10 @@ class AdvancedSettingsMixin:
             self.log.appendPlainText(f"❌ 受控保存已回滚：{error}")
             QMessageBox.critical(self, "保存已回滚", str(error))
             return
+
+        if global_mode:
+            self._sync_global_widget_baseline(reset_actions=True)
+            self.log.appendPlainText("🔄 一键联动当前状态已更新。")
 
         # 保存只更新当前内存缓存；不重新扫描目录、不清空页面、不预构建全部面板。
         # “重新加载”仅由用户点击左侧按钮、更换目录或外部文件变化时显式触发。
