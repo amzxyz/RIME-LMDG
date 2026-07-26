@@ -72,8 +72,8 @@ val DEFAULT_EXCLUDE_RULES = listOf(
 
 const val OFFICIAL_ROUTE_ID = "official"
 const val GITHUB_ROUTE_TEST_URL = "https://github.com/amzxyz/rime-wanxiang/releases/download/dict-nightly/base-dicts.zip"
-const val DEFAULT_MIN_PROXY_SPEED_KBPS = 128
-const val LOW_SPEED_GRACE_MS = 5_000L
+const val DEFAULT_MIN_PROXY_SPEED_KBPS = 64
+const val LOW_SPEED_GRACE_MS = 8_000L
 const val LOW_SPEED_WINDOW_MS = 3_000L
 
 class LowSpeedFallbackException(val speedKbps: Long) : Exception("代理速度过低：${speedKbps}KB/s")
