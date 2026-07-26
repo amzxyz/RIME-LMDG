@@ -315,6 +315,35 @@ class AdvancedSettingsMixin:
         self._render_feature_reverse_lookup(tree_widget) # 功能5：反查快捷键
         self._render_feature_grammar_model(tree_widget)  # 模型参数注入
 
+    def _effective_document_data(self, file_name):
+        """返回 schema + custom/patch 合成后的最终配置，不让各界面自行猜补丁结构。"""
+        self._ensure_advanced_engines()
+        effective = self._effective_cache.get(file_name)
+        if effective is not None:
+            return effective
+
+        schema_data, custom_patch = self._yaml_cache.get(file_name, ({}, {}))
+        effective = self._yaml_engine.apply_patch(schema_data, custom_patch)
+        self._effective_cache[file_name] = effective
+        return effective
+
+    def _effective_config_value(self, file_name, path, default=None):
+        effective = self._effective_document_data(file_name)
+        return self._yaml_engine.get_path(effective, path, default)
+
+    def _primary_wanxiang_schema_file(self):
+        """从 default 的最终 schema_list 中确定当前主方案。"""
+        schema_list = self._effective_config_value("default.yaml", "schema_list", [])
+        if isinstance(schema_list, list):
+            for item in schema_list:
+                schema_id = item.get("schema") if isinstance(item, dict) else str(item or "")
+                if schema_id in {"wanxiang", "wanxiang_pro"}:
+                    return f"{schema_id}.schema.yaml"
+
+        if "wanxiang_pro.schema.yaml" in self._yaml_cache:
+            return "wanxiang_pro.schema.yaml"
+        return "wanxiang.schema.yaml"
+
     def _render_feature_grammar_model(self, tree):
         """专属渲染器：语法模型 (LMDG) 推荐参数一键配置"""
         from PySide6.QtWidgets import QTreeWidgetItem, QComboBox, QWidget, QHBoxLayout, QLabel
@@ -366,12 +395,8 @@ class AdvancedSettingsMixin:
         
         edit.setValidator(QIntValidator(1, 10)) 
         
-        # 智能读取：同时查阅 default 的底包和 custom 补丁
-        d_data, d_patch = self._yaml_cache.get("default.yaml", ({}, {}))
-        v_def = 6
-        if isinstance(d_patch, dict) and "menu/page_size" in d_patch: current_val = d_patch["menu/page_size"]
-        elif isinstance(d_patch, dict) and "menu" in d_patch and isinstance(d_patch["menu"], dict) and "page_size" in d_patch["menu"]: current_val = d_patch["menu"]["page_size"]
-        else: current_val = _get_nested_val(d_data, "menu/page_size", v_def)
+        # 统一读取 schema + custom/patch 合成后的最终值。
+        current_val = self._effective_config_value("default.yaml", "menu/page_size", 6)
         
         edit.setText(str(current_val))
         
@@ -529,43 +554,14 @@ class AdvancedSettingsMixin:
         combo.addItems(["开启 (true)", "关闭 (false)"])
         
         
-        # 🌟 智能三重探测：探测 default(看谁是主力) -> 探测 patch(看用户改没改) -> 探测 schema(看底层默认)
-        base_data, base_patch = self._yaml_cache.get("wanxiang.schema.yaml", ({}, {}))
-        pro_data, pro_patch = self._yaml_cache.get("wanxiang_pro.schema.yaml", ({}, {}))
-        def_data, def_patch = self._yaml_cache.get("default.yaml", ({}, {}))
-
-        # 1. 揪出当前主力方案是谁
-        active_schema = "wanxiang_pro" # 默认假定是 Pro
-        schema_list = def_patch.get("schema_list") if isinstance(def_patch, dict) and "schema_list" in def_patch else _get_nested_val(def_data, "schema_list", [])
-        
-        if isinstance(schema_list, list):
-            for s in schema_list:
-                s_id = s.get("schema") if isinstance(s, dict) else ""
-                if s_id in ["wanxiang", "wanxiang_pro"]:
-                    active_schema = s_id
-                    break
-        
-        # 2. 提取配置的通用函数 (带严格布尔强转)
-        def extract_bool(patch_dict, schema_data, fallback_val):
-            # 优先读补丁
-            if isinstance(patch_dict, dict):
-                v = patch_dict.get("translator/enable_user_dict")
-                if v is None and "translator" in patch_dict and isinstance(patch_dict["translator"], dict):
-                    v = patch_dict["translator"].get("enable_user_dict")
-                if v is not None:
-                    return str(v).lower() == 'true' if isinstance(v, str) else bool(v)
-            # 其次读底层文件
-            if isinstance(schema_data, dict):
-                v = _get_nested_val(schema_data, "translator/enable_user_dict")
-                if v is not None:
-                    return str(v).lower() == 'true' if isinstance(v, str) else bool(v)
-            return fallback_val
-
-        # 3. 完美对应：你是谁，我就读谁的真实数据
-        if active_schema == "wanxiang_pro":
-            current_val = extract_bool(pro_patch, pro_data, True)
+        active_file = self._primary_wanxiang_schema_file()
+        current_val = self._effective_config_value(
+            active_file, "translator/enable_user_dict", True
+        )
+        if isinstance(current_val, str):
+            current_val = current_val.lower() == "true"
         else:
-            current_val = extract_bool(base_patch, base_data, True)
+            current_val = bool(current_val)
 
         combo.setCurrentIndex(0 if current_val else 1)
         
@@ -599,41 +595,11 @@ class AdvancedSettingsMixin:
         edit.setFixedHeight(34); edit.setFixedWidth(180)
         
         
-        # 探测 patch(看用户改没改) -> 探测 schema(看底层默认)
-        base_data, base_patch = self._yaml_cache.get("wanxiang.schema.yaml", ({}, {}))
-        pro_data, pro_patch = self._yaml_cache.get("wanxiang_pro.schema.yaml", ({}, {}))
-        def_data, def_patch = self._yaml_cache.get("default.yaml", ({}, {}))
-        
-        # 1. 揪出当前主力方案是谁
-        active_schema = "wanxiang_pro" # 默认假定是 Pro
-        schema_list = def_patch.get("schema_list") if isinstance(def_patch, dict) and "schema_list" in def_patch else _get_nested_val(def_data, "schema_list", [])
-        
-        if isinstance(schema_list, list):
-            for s in schema_list:
-                s_id = s.get("schema") if isinstance(s, dict) else ""
-                if s_id in ["wanxiang", "wanxiang_pro"]:
-                    active_schema = s_id
-                    break # 找到排在最前面的万象方案，认定为主力
-                    
-        # 2. 提取配置的通用函数
-        def extract_dict(patch_dict, schema_data, fallback_name):
-            # 优先读用户补丁
-            if isinstance(patch_dict, dict):
-                v = patch_dict.get("translator/dictionary")
-                if not v and "translator" in patch_dict and isinstance(patch_dict["translator"], dict):
-                    v = patch_dict["translator"].get("dictionary")
-                if v: return v
-            # 其次读底层文件
-            if isinstance(schema_data, dict):
-                v = _get_nested_val(schema_data, "translator/dictionary")
-                if v: return v
-            return fallback_name
-
-        # 3. 完美对应：你是谁，我就读谁的真实数据
-        if active_schema == "wanxiang_pro":
-            current_val = extract_dict(pro_patch, pro_data, "wanxiang_pro")
-        else:
-            current_val = extract_dict(base_patch, base_data, "wanxiang")
+        active_file = self._primary_wanxiang_schema_file()
+        fallback_name = "wanxiang_pro" if active_file.startswith("wanxiang_pro") else "wanxiang"
+        current_val = self._effective_config_value(
+            active_file, "translator/dictionary", fallback_name
+        )
 
         edit.setText(str(current_val))
         
@@ -675,27 +641,10 @@ class AdvancedSettingsMixin:
         root_item.setFlags(root_item.flags() & ~Qt.ItemIsSelectable)
         
         
+        active_file = self._primary_wanxiang_schema_file()
+
         def get_current_val(path_str, default_val):
-            pro_data, pro_patch = self._yaml_cache.get("wanxiang_pro.schema.yaml", ({}, {}))
-            base_data, base_patch = self._yaml_cache.get("wanxiang.schema.yaml", ({}, {}))
-            
-            if isinstance(pro_patch, dict):
-                if path_str in pro_patch: return pro_patch[path_str]
-                if "super_tips" in pro_patch and isinstance(pro_patch["super_tips"], dict):
-                    sub_k = path_str.split("/")[-1]
-                    if sub_k in pro_patch["super_tips"]: return pro_patch["super_tips"][sub_k]
-            
-            if isinstance(base_patch, dict):
-                if path_str in base_patch: return base_patch[path_str]
-                if "super_tips" in base_patch and isinstance(base_patch["super_tips"], dict):
-                    sub_k = path_str.split("/")[-1]
-                    if sub_k in base_patch["super_tips"]: return base_patch["super_tips"][sub_k]
-            
-            val = _get_nested_val(pro_data, path_str)
-            if val is not None: return val
-            
-            val = _get_nested_val(base_data, path_str)
-            return val if val is not None else default_val
+            return self._effective_config_value(active_file, path_str, default_val)
 
         db_name_val = get_current_val("super_tips/db_name", "lua/tips")
         tips_key_val = get_current_val("super_tips/tips_key", "comma")
@@ -784,19 +733,11 @@ class AdvancedSettingsMixin:
         
         edit.setMaxLength(1)
         
-        # 智能读取当前配置 (优先读补丁)
-        d_data, d_patch = self._yaml_cache.get("wanxiang.schema.yaml", ({}, {}))
-        
-        def get_val(path_str, def_v):
-            if isinstance(d_patch, dict):
-                if path_str in d_patch: return d_patch[path_str]
-                parts = path_str.split('/')
-                if len(parts) == 2 and parts[0] in d_patch and isinstance(d_patch[parts[0]], dict):
-                    if parts[1] in d_patch[parts[0]]: return d_patch[parts[0]][parts[1]]
-            val = _get_nested_val(d_data, path_str)
-            return val if val is not None else def_v
-
-        current_val = get_val("wanxiang_lookup/key", "`")
+        # 统一读取主方案 schema + custom/patch 合成后的最终值。
+        active_file = self._primary_wanxiang_schema_file()
+        current_val = self._effective_config_value(
+            active_file, "wanxiang_lookup/key", "`"
+        )
         edit.setText(str(current_val))
         
         c_lay.addWidget(edit)
@@ -1210,40 +1151,26 @@ class AdvancedSettingsMixin:
                 return
 
         schema_data, c_patch_raw = self._yaml_cache[target_id]
-        custom_patch = {} if is_direct_mode else c_patch_raw
 
-        def get_patch_val(patch_dict, path_str):
-            if not patch_dict: return None
-            exact_match = patch_dict.get(path_str)
-            if exact_match is not None: return exact_match
-            
-            flat_merges = {}
-            prefix = path_str + "/"
-            for k, v in patch_dict.items():
-                if str(k).startswith(prefix):
-                    sub_k = str(k)[len(prefix):]
-                    # 绝不把 /+ 的加号当做字典的 key 提取进去
-                    if "/" not in sub_k and sub_k != "+": 
-                        flat_merges[sub_k] = v
-            
-            parts = path_str.split('/')
-            is_append_path = path_str.endswith("/+")
-            if is_append_path:
-                parts = parts[:-2] + [parts[-2] + "/+"]
-                
-            curr = patch_dict
-            found_nested = True
-            for p in parts:
-                if isinstance(curr, dict) and p in curr: curr = curr[p]
-                else: found_nested = False; break
-                
-            if found_nested and isinstance(curr, dict) and not is_append_path:
-                merged = dict(curr)
-                if flat_merges: merged.update(flat_merges)
-                return merged
-            elif flat_merges and not is_append_path: return flat_merges
-            elif found_nested: return curr
-            return None
+        # 界面展示统一使用“最终生效配置”：先读取 schema，再应用 custom/patch。
+        # 直写模式仍展示 schema 原值；补丁模式展示 custom 覆盖后的最终值。
+        # 不再由界面层自行猜测扁平路径、嵌套路径、/+、@ 索引等补丁格式，
+        # 所有页面统一复用 RimeYamlEngine.apply_patch() 的结果。
+        if is_direct_mode:
+            effective_data = schema_data
+        else:
+            effective_data = self._effective_cache.get(target_id)
+            if effective_data is None:
+                effective_data = self._yaml_engine.apply_patch(schema_data, c_patch_raw)
+                self._effective_cache[target_id] = effective_data
+
+        missing_value = object()
+
+        def get_effective_val(path_str, schema_fallback=missing_value):
+            value = self._yaml_engine.get_path(effective_data, path_str, missing_value)
+            if value is missing_value:
+                return schema_fallback if schema_fallback is not missing_value else None
+            return value
 
         def refresh_indices(p_item):
             try:
@@ -1512,21 +1439,7 @@ class AdvancedSettingsMixin:
                         item.setFlags(item.flags() & ~Qt.ItemIsSelectable)
                         path = f"{version_key}/{input_type}"
                         
-                        p_val = get_patch_val(custom_patch, path)
-                        appended_val = get_patch_val(custom_patch, path + "/+")
-                        
-                        if isinstance(rules_val, dict) and isinstance(p_val, dict):
-                            display_val = dict(rules_val)
-                            display_val.update(p_val)
-                        elif isinstance(rules_val, list) or isinstance(p_val, list) or appended_val is not None:
-                            display_val = list(rules_val or [])
-                            if p_val is not None: 
-                                display_val = p_val if isinstance(p_val, list) else [p_val]
-                            if appended_val is not None:
-                                if isinstance(appended_val, list): display_val.extend(appended_val)
-                                else: display_val.append(appended_val)
-                        else:
-                            display_val = p_val if p_val is not None else rules_val
+                        display_val = get_effective_val(path, rules_val)
                             
                         file_base_values[path] = {'schema': rules_val, 'display': display_val} 
                         widget = create_widget(path, "raw_yaml", {}, display_val, item)
@@ -1540,8 +1453,8 @@ class AdvancedSettingsMixin:
                     
                     rk = r_info.get("_root_key", meta_k)
                     in_base = rk in schema_data
-                    in_patch = rk in custom_patch or any(p.startswith(f"{rk}/") for p in custom_patch.keys())
-                    if not has_match and not (in_base or in_patch): continue
+                    in_effective = isinstance(effective_data, dict) and rk in effective_data
+                    if not has_match and not (in_base or in_effective): continue
                     
                     root = QTreeWidgetItem(new_tree, [r_info.get("_title", meta_k), "", ""])
                     root.setFont(0, QFont("", 11, QFont.Bold)); root.setForeground(0, QColor("#61A165"))
@@ -1552,22 +1465,7 @@ class AdvancedSettingsMixin:
                         item.setFlags(item.flags() & ~Qt.ItemIsSelectable)
                         path = rk if nk == "__self__" else f"{rk}/{nk}"
                         val_from_schema = rd if nk == "__self__" else (_get_nested_val(rd, nk) if isinstance(rd, dict) else rd)
-                            
-                        p_val = get_patch_val(custom_patch, path)
-                        appended_val = get_patch_val(custom_patch, path + "/+")
-                        
-                        if isinstance(val_from_schema, dict) and isinstance(p_val, dict):
-                            display_val = dict(val_from_schema)
-                            display_val.update(p_val)
-                        elif isinstance(val_from_schema, list) or isinstance(p_val, list) or appended_val is not None:
-                            display_val = list(val_from_schema or [])
-                            if p_val is not None: 
-                                display_val = p_val if isinstance(p_val, list) else [p_val]
-                            if appended_val is not None:
-                                if isinstance(appended_val, list): display_val.extend(appended_val)
-                                else: display_val.append(appended_val)
-                        else:
-                            display_val = p_val if p_val is not None else val_from_schema
+                        display_val = get_effective_val(path, val_from_schema)
                             
                         file_base_values[path] = {'schema': val_from_schema, 'display': display_val}
                         widget = create_widget(path, ni["type"], ni, display_val, item)
@@ -2005,6 +1903,7 @@ class AdvancedSettingsMixin:
                 if target_id in self._yaml_cache:
                     _, old_patch = self._yaml_cache[target_id]
                     self._yaml_cache[target_id] = (target_data, old_patch)
+                    self._effective_cache[target_id] = self._yaml_engine.apply_patch(target_data, old_patch)
                     
             else:
                 custom_data = {}
@@ -2091,7 +1990,9 @@ class AdvancedSettingsMixin:
 
                 if target_id in self._yaml_cache:
                     old_schema, _ = self._yaml_cache[target_id]
-                    self._yaml_cache[target_id] = (old_schema, custom_data.get('patch', {}))
+                    new_patch = custom_data.get('patch', {})
+                    self._yaml_cache[target_id] = (old_schema, new_patch)
+                    self._effective_cache[target_id] = self._yaml_engine.apply_patch(old_schema, new_patch)
 
             for p, v in patches_to_apply.items():
                 if p in self._yaml_base_values:
