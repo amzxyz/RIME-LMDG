@@ -947,11 +947,6 @@ fun WanxiangDownloaderApp() {
                             Spacer(modifier = Modifier.width(8.dp))
                             Column(modifier = Modifier.weight(1f)) {
                                 Text("代理低速自动切换CNB", fontSize = 13.sp, fontWeight = FontWeight.Bold, color = Color.DarkGray)
-                                Text(
-                                    "代理连续低速时终止当前下载并直接改走CNB；GitHub官方和CNB不受限制。",
-                                    fontSize = 10.sp,
-                                    color = Color.Gray
-                                )
                             }
                         }
 
