@@ -1367,7 +1367,7 @@ class AdvancedSettingsMixin:
                 real_w = MixedAlgebraWidget(curr_v, is_direct=is_direct_mode)
                 file_widgets[f_path] = (real_w, v_type); return real_w
             real_w = None
-            if v_type in ["str", "int"]:
+            if v_type in ["str", "int", "float"]:
                 if isinstance(curr_v, list): display_text = "[" + ", ".join(str(x) for x in curr_v) + "]"
                 else: display_text = str(curr_v if curr_v is not None else "")
                 real_w = QLineEdit(display_text); real_w.setStyleSheet(style_m); real_w.setFixedHeight(36)
@@ -1379,8 +1379,8 @@ class AdvancedSettingsMixin:
                 real_w = QComboBox(); real_w.addItems(n_info.get("options", [])); real_w.setStyleSheet(style_m); real_w.setFixedHeight(36)
                 val_str = "true" if curr_v is True else "false" if curr_v is False else str(curr_v) if curr_v is not None else ""
                 real_w.setCurrentText(val_str)
-            elif v_type in ["list_text", "raw_yaml"]:
-                clean_v = sanitize_val(curr_v) 
+            elif v_type in ["list_text", "raw_yaml", "multiline_str"]:
+                clean_v = sanitize_val(curr_v)
                 if v_type == "raw_yaml":
                     if isinstance(clean_v, (dict, list)):
                         from ruamel.yaml import YAML
@@ -1392,12 +1392,18 @@ class AdvancedSettingsMixin:
                         txt_v = buf.getvalue().strip()
                     else:
                         txt_v = str(clean_v if clean_v is not None else "")
+                elif v_type == "multiline_str":
+                    txt_v = str(clean_v if clean_v is not None else "")
                 else:
                     if isinstance(clean_v, list):
-                        if all(len(str(x)) <= 10 and '\n' not in str(x) for x in clean_v): txt_v = "[" + ", ".join(str(x) for x in clean_v) + "]"
-                        else: txt_v = "\n".join(str(x) for x in clean_v)
-                    else: txt_v = str(clean_v if clean_v is not None else "")
-                real_w = DynamicMultiLineWidget(txt_v, "支持输入任意多行文本或规则...") 
+                        if all(len(str(x)) <= 10 and '\n' not in str(x) for x in clean_v):
+                            txt_v = "[" + ", ".join(str(x) for x in clean_v) + "]"
+                        else:
+                            txt_v = "\n".join(str(x) for x in clean_v)
+                    else:
+                        txt_v = str(clean_v if clean_v is not None else "")
+                placeholder = "输入多行文本，保存时保持字符串类型" if v_type == "multiline_str" else "支持输入任意多行文本或规则..."
+                real_w = DynamicMultiLineWidget(txt_v, placeholder)
                 real_w.needs_resize.connect(lambda h, itm=p_item: safe_apply_size(itm, h))
             else:
                 if isinstance(curr_v, list): display_text = "[" + ", ".join(str(x) for x in curr_v) + "]"
@@ -1408,7 +1414,7 @@ class AdvancedSettingsMixin:
                 file_widgets[f_path] = (real_w, v_type)
                 has_jump = n_info.get("jumpable")
                 has_action = n_info.get("action_btn")
-                if (has_jump or has_action) and v_type in ["str", "list_text", "raw_yaml"]:
+                if (has_jump or has_action) and v_type in ["str", "list_text", "raw_yaml", "multiline_str"]:
                     wrapper = QWidget(); wrap_lay = QHBoxLayout(wrapper); wrap_lay.setContentsMargins(0, 0, 0, 0)
                     wrap_lay.addWidget(real_w, stretch=1)
                     btn = QPushButton(n_info.get("action_btn") or "🔗 穿透"); btn.setCursor(Qt.PointingHandCursor)
@@ -1420,7 +1426,7 @@ class AdvancedSettingsMixin:
                         if v_type == "str": btn.clicked.connect(lambda: self.jump_to_reference(real_w.text()))
                         else: btn.clicked.connect(lambda: self.jump_to_reference(real_w.text_field.toPlainText()))
                     elif has_action: btn.clicked.connect(lambda: self.do_import_switches(real_w.text_field))
-                    wrap_lay.addWidget(btn, alignment=Qt.AlignTop if v_type in ["list_text", "raw_yaml"] else Qt.AlignVCenter)
+                    wrap_lay.addWidget(btn, alignment=Qt.AlignTop if v_type in ["list_text", "raw_yaml", "multiline_str"] else Qt.AlignVCenter)
                     if v_type in ["list_text", "raw_yaml"]:
                         real_w.needs_resize.connect(lambda h, wdg=wrapper: safe_apply_height(wdg, h))
                         wrapper.setFixedHeight(max(real_w.height(), 40))
@@ -1621,8 +1627,17 @@ class AdvancedSettingsMixin:
             elif v_type == "mixed_algebra": current_val = widget.get_value()
             elif v_type == "bool": current_val = widget.isChecked()
             elif v_type == "int":
-                try: current_val = int(widget.text().strip())
-                except: current_val = widget.text().strip()
+                try:
+                    current_val = int(widget.text().strip())
+                except Exception:
+                    current_val = widget.text().strip()
+            elif v_type == "float":
+                try:
+                    current_val = float(widget.text().strip())
+                except Exception:
+                    current_val = widget.text().strip()
+            elif v_type == "multiline_str":
+                current_val = widget.text_field.toPlainText()
             elif v_type == "select":
                 val_str = widget.currentText()
                 if val_str not in ["默认/不指定", ""]:
@@ -2991,7 +3006,7 @@ class AdvancedSettingsMixin:
             if path in managed_paths:
                 continue
             widget, value_type = value
-            if value_type in {"bool", "int", "list_text", "raw_yaml", "schema_checkboxes"}:
+            if value_type in {"bool", "int", "float", "list_text", "raw_yaml", "multiline_str", "schema_checkboxes"}:
                 continue
             if path == "super_processor/select_character":
                 raw = self._widget_text(widget)
