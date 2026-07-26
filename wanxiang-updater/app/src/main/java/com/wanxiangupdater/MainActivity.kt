@@ -540,7 +540,6 @@ fun WanxiangDownloaderApp() {
     var latestStableTag by remember { mutableStateOf("v1.0.0") }
     var cloudVersionName by remember { mutableStateOf("") }
     var updaterDownloadUrl by remember { mutableStateOf("") }
-    var updateCheckSource by remember { mutableStateOf("") }
     var isCheckingUpdate by remember { mutableStateOf(true) }
     var updateCheckNonce by remember { mutableStateOf(0) }
 
@@ -557,18 +556,9 @@ fun WanxiangDownloaderApp() {
         isTestingRoutes = false
     }
 
-    // 主方案版本检测：GitHub API失败时可用CNB补充正式版Tag。
-    // 更新器自身检测：仅检查GitHub，CNB没有Android安装包，不显示或尝试CNB兜底。
-    LaunchedEffect(selectedRouteId, githubRoutes, updateCheckNonce) {
-        isCheckingUpdate = true
-        updateCheckSource = ""
-        cloudVersionName = ""
-        updaterDownloadUrl = ""
-
+    // 主方案正式版Tag：保留代理查询，GitHub失败时用CNB补充。
+    LaunchedEffect(selectedRouteId, githubRoutes, githubToken) {
         var detectedStableTag: String? = null
-        var detectedUpdaterName: String? = null
-        var detectedUpdaterUrl: String? = null
-        var updaterSourceText = ""
 
         val mainJson = fetchGithubApiJson(
             "https://api.github.com/repos/amzxyz/rime-wanxiang/releases/latest",
@@ -584,45 +574,66 @@ fun WanxiangDownloaderApp() {
             }
         }
 
-        var cnbMainReleases: org.json.JSONArray? = null
         if (detectedStableTag == null) {
-            cnbMainReleases = fetchCnbReleases("rime-wanxiang")
-            detectedStableTag = findLatestStableCnbTag(cnbMainReleases)
-        }
-
-        val toolJson = fetchGithubApiJson(
-            "https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/tool",
-            githubRoutes,
-            selectedRouteId,
-            githubToken
-        )
-
-        if (!toolJson.isNullOrBlank()) {
-            try {
-                val assets = org.json.JSONObject(toolJson).optJSONArray("assets")
-                if (assets != null) {
-                    for (i in 0 until assets.length()) {
-                        val asset = assets.optJSONObject(i) ?: continue
-                        val name = asset.optString("name")
-                        if (name.startsWith("Wanxiang-Updater-Android") && name.endsWith(".apk", true)) {
-                            detectedUpdaterName = name
-                            detectedUpdaterUrl = asset.optString("browser_download_url")
-                            updaterSourceText = "GitHub API"
-                            break
-                        }
-                    }
-                }
-            } catch (_: Exception) {
-            }
+            detectedStableTag = findLatestStableCnbTag(fetchCnbReleases("rime-wanxiang"))
         }
 
         detectedStableTag?.let { latestStableTag = it }
-        detectedUpdaterName?.let { name ->
-            cloudVersionName = Regex("""Wanxiang-Updater-Android.*?(\d+\.\d+(?:\.\d+)?)""")
-                .find(name)?.groupValues?.get(1).orEmpty()
+    }
+
+    // 更新器自身检测：恢复最初版本逻辑，只直连GitHub官方API，不走代理，也不查询CNB。
+    LaunchedEffect(updateCheckNonce) {
+        isCheckingUpdate = true
+        cloudVersionName = ""
+        updaterDownloadUrl = ""
+
+        val result = withContext(Dispatchers.IO) {
+            var toolConn: HttpURLConnection? = null
+
+            try {
+                toolConn = URL("https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/tool")
+                    .openConnection() as HttpURLConnection
+                toolConn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
+
+                if (githubToken.isNotBlank()) {
+                    toolConn.setRequestProperty("Authorization", "Bearer $githubToken")
+                }
+
+                toolConn.connectTimeout = 10000
+                toolConn.readTimeout = 10000
+                toolConn.connect()
+
+                if (toolConn.responseCode != 200) {
+                    return@withContext "" to ""
+                }
+
+                val content = toolConn.inputStream.bufferedReader().use { it.readText() }
+                val assets = org.json.JSONObject(content).optJSONArray("assets")
+                    ?: return@withContext "" to ""
+
+                for (i in 0 until assets.length()) {
+                    val asset = assets.optJSONObject(i) ?: continue
+                    val name = asset.optString("name")
+
+                    if (name.startsWith("Wanxiang-Updater-Android") && name.endsWith(".apk", true)) {
+                        val downloadUrl = asset.optString("browser_download_url")
+                        val version = Regex("""Wanxiang-Updater-Android.*?(\d+\.\d+(?:\.\d+)?)""")
+                            .find(name)?.groupValues?.get(1).orEmpty()
+                        return@withContext version to downloadUrl
+                    }
+                }
+
+                "" to ""
+            } catch (e: Exception) {
+                e.printStackTrace()
+                "" to ""
+            } finally {
+                toolConn?.disconnect()
+            }
         }
-        updaterDownloadUrl = detectedUpdaterUrl.orEmpty()
-        updateCheckSource = updaterSourceText.ifBlank { "仅GitHub检查失败" }
+
+        cloudVersionName = result.first
+        updaterDownloadUrl = result.second
         isCheckingUpdate = false
     }
 
@@ -753,16 +764,13 @@ fun WanxiangDownloaderApp() {
                             val hasNewVersion = !isCheckingUpdate && cloudVersionName.isNotEmpty() && isRemoteVersionNewer(cloudVersionName, localVersionName)
                             Text("🔧 更新器自身检测", fontWeight = FontWeight.Bold, color = Color.DarkGray, fontSize = 14.sp)
                             Text(
-                                text = if (isCheckingUpdate) "正在通过GitHub检测..."
-                                       else if (cloudVersionName.isEmpty()) "GitHub未发现有效更新包"
+                                text = if (isCheckingUpdate) "正在检测云端..."
+                                       else if (cloudVersionName.isEmpty()) "未发现有效更新包"
                                        else if (hasNewVersion) "发现新版本: v$cloudVersionName"
                                        else "已是最新版本",
                                 fontSize = 12.sp,
                                 color = if (hasNewVersion) MorandiGreen else Color.Gray
                             )
-                            if (!isCheckingUpdate) {
-                                Text("软件检测：$updateCheckSource", fontSize = 10.sp, color = Color.Gray)
-                            }
                         }
 
                         val hasNewVersion = !isCheckingUpdate && cloudVersionName.isNotEmpty() && isRemoteVersionNewer(cloudVersionName, localVersionName)
@@ -770,8 +778,7 @@ fun WanxiangDownloaderApp() {
                             Button(
                                 onClick = {
                                     if (updaterDownloadUrl.isNotBlank()) {
-                                        val preferredUrl = buildGithubCandidates(updaterDownloadUrl, githubRoutes, selectedRouteId).firstOrNull()?.url ?: updaterDownloadUrl
-                                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(preferredUrl)))
+                                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(updaterDownloadUrl)))
                                     }
                                 },
                                 enabled = hasNewVersion,
