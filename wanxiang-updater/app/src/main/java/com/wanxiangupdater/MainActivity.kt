@@ -1871,7 +1871,7 @@ suspend fun downloadAndDeployTask(
                     successCount == targetPaths.size && targetPaths.isNotEmpty() -> {
                         task.isFinished = true
                         task.progress = 1f
-                        task.status = "✅ 部署完成（$downloadedFrom）"
+                        task.status = "✅ 解压完成（$downloadedFrom）"
                     }
                     successCount > 0 -> {
                         task.isFinished = true
@@ -1881,7 +1881,7 @@ suspend fun downloadAndDeployTask(
                     else -> {
                         task.isError = true
                         task.progress = 0f
-                        task.status = "❌ 全部部署失败 [${errorList.joinToString()}]"
+                        task.status = "❌ 全部解压失败 [${errorList.joinToString()}]"
                     }
                 }
             }
@@ -1889,7 +1889,7 @@ suspend fun downloadAndDeployTask(
             withContext(Dispatchers.Main) {
                 task.isError = true
                 task.progress = 0f
-                task.status = "❌ 解压或部署失败：${e.message ?: e.javaClass.simpleName}"
+                task.status = "❌ 解压失败：${e.message ?: e.javaClass.simpleName}"
             }
         } finally {
             stagingDir.deleteRecursively()
