@@ -15572,7 +15572,7 @@ sort: by_weight
 盾構機始發	dùn gòu jī shǐ fā	10
 敦化林業局	dūn huà lín yè jú	10
 敦煌變文集	dūn huáng biàn wén jí	10
-敦煌琵琶譜	dūn huáng pí pá pǔ	10
+敦煌琵琶譜	dūn huáng pí pa pǔ	10
 敦煌学輯刊	dūn huáng xué jí kān	10
 敦煌研究院	dūn huáng yán jiū yuàn	10
 噸級巡防艦	dūn jí xún fáng jiàn	10
@@ -25495,6 +25495,7 @@ sort: by_weight
 海賊王人物	hǎi zéi wáng rén wù	10
 海戰博物館	hǎi zhàn bó wù guǎn	10
 還振振有詞	hái zhèn zhèn yǒu cí	10
+解州關帝廟	hài zhōu guān dì miào	10
 海珠喘息定	hǎi zhū chuǎn xī dìng	10
 孩子的肚子	hái zi de dù zi	10
 孩子的乾媽	hái zi de gān mā	10
@@ -29477,7 +29478,7 @@ sort: by_weight
 穢土轉生後	huì tǔ zhuǎn shēng hòu	10
 會玩的玩家	huì wán de wán jiā	10
 灰灣子岩畫	huī wān zi yán huà	10
-喙尾琵琶甲	huì wěi pí pá jiǎ	10
+喙尾琵琶甲	huì wěi pí pa jiǎ	10
 回文自動機	huí wén zì dòng jī	10
 回文字符串	huí wén zì fú chuàn	10
 回五大連池	huí wǔ dà lián chí	10
@@ -29999,7 +30000,6 @@ sort: by_weight
 火星快車號	huǒ xīng kuài chē hào	10
 火星人花花	huǒ xīng rén huā huā	10
 活性炭濾網	huó xìng tàn lǜ wǎng	10
-活性炭吸附	huó xìng tàn xī fù	10
 活性炭吸附	huó xìng tàn xī fù	10
 活性污泥法	huó xìng wū ní fǎ	10
 活性稀釋劑	huó xìng xī shì jì	10
@@ -38985,7 +38985,6 @@ sort: by_weight
 喹諾里西啶	kuí nuò lǐ xī dìng	10
 巋然不動的	kuī rán bú dòng de	10
 蝰蛇毒時間	kuí shé dú shí jiān	10
-奎宿增十五	kuí sù zēng shí wǔ	10
 虧損的風險	kuī sǔn de fēng xiǎn	10
 虧損的交易	kuī sǔn de jiāo yì	10
 虧損的原因	kuī sǔn de yuán yīn	10
@@ -38993,6 +38992,7 @@ sort: by_weight
 魁梧的身材	kuí wu de shēn cái	10
 魁梧的身軀	kuí wu de shēn qū	10
 魁星園小學	kuí xīng yuán xiǎo xué	10
+奎宿增十五	kuí xiù zēng shí wǔ	10
 潰瘍伴出血	kuì yáng bàn chū xiě	10
 潰瘍性內痔	kuì yáng xìng nèi zhì	10
 潰瘍性外痔	kuì yáng xìng wài zhì	10
@@ -43673,8 +43673,6 @@ sort: by_weight
 毛石混凝土	máo shí hùn níng tǔ	10
 毛氏汲古閣	máo shì jí gǔ gé	10
 錨式攪拌器	máo shì jiǎo bàn qì	10
-昴宿射線星	mǎo sù shè xiàn xīng	10
-昴宿增十二	mǎo sù zēng shí èr	10
 茅台成龍酒	máo tái chéng lóng jiǔ	10
 毛坦廠中學	máo tǎn chǎng zhōng xué	10
 帽天窗蟲戚	mào tiān chuāng chóng qī	10
@@ -43701,6 +43699,8 @@ sort: by_weight
 冒險者丁丁	mào xiǎn zhě dīng dīng	10
 貓型機器人	māo xíng jī qì rén	10
 毛形線蟲目	máo xíng xiàn chóng mù	10
+昴宿射線星	mǎo xiù shè xiàn xīng	10
+昴宿增十二	mǎo xiù zēng shí èr	10
 毛埡大草原	máo yā dà cǎo yuán	10
 貓妖的誘惑	māo yāo de yòu huò	10
 毛葉草血竭	máo yè cǎo xuè jié	10
@@ -44213,7 +44213,7 @@ sort: by_weight
 美少女學園	měi shào nǚ xué yuán	10
 美少女戰士	měi shào nǚ zhàn shì	10
 沒什麼把握	méi shén me bǎ wò	10
-沒什麼出息	méi shén me chū xī	10
+沒什麼出息	méi shén me chū xi	10
 沒什麼大礙	méi shén me dà ài	10
 沒什麼好爭	méi shén me hǎo zhēng	10
 沒什麼見識	méi shén me jiàn shi	10
@@ -46693,7 +46693,7 @@ sort: by_weight
 能要回來嗎	néng yào huí lái ma	10
 能引起共鳴	néng yǐn qǐ gòng míng	10
 能用中文嗎	néng yòng zhōng wén ma	10
-能有點出息	néng yǒu diǎn chū xī	10
+能有點出息	néng yǒu diǎn chū xi	10
 能源的開發	néng yuán de kāi fā	10
 能源的消耗	néng yuán de xiāo hào	10
 能源等行業	néng yuán děng háng yè	10
@@ -48604,13 +48604,13 @@ sort: by_weight
 匹莫範色林	pǐ mò fàn sè lín	10
 毗尼多流支	pí ní duō liú zhī	10
 匹諾曹蜥蜴	pǐ nuò cáo xī yì	10
-琵琶半遮面	pí pá bàn zhē miàn	10
+琵琶半遮面	pí pa bàn zhē miàn	10
 皮帕德方程	pí pà dé fāng chéng	10
-琵琶獨奏曲	pí pá dú zòu qǔ	10
-琵琶湖疏水	pí pá hú shū shuǐ	10
+琵琶獨奏曲	pí pa dú zòu qǔ	10
+琵琶湖疏水	pí pa hú shū shuǐ	10
 枇杷清肺飲	pí pá qīng fèi yǐn	10
 枇杷山正街	pí pá shān zhèng jiē	10
-琵琶演奏家	pí pá yǎn zòu jiā	10
+琵琶演奏家	pí pa yǎn zòu jiā	10
 批判的眼光	pī pàn de yǎn guāng	10
 批判式思維	pī pàn shì sī wéi	10
 批判主義者	pī pàn zhǔ yì zhě	10
@@ -74159,7 +74159,6 @@ sort: by_weight
 斜月三星洞	xié yuè sān xīng dòng	10
 寫在臉上了	xiě zài liǎn shàng le	10
 諧振變壓器	xié zhèn biàn yā qì	10
-解州關帝廟	xiè zhōu guān dì miào	10
 鞋子的搭配	xié zi de dā pèi	10
 鞋子的款式	xié zi de kuǎn shì	10
 鞋子的設計	xié zi de shè jì	10
@@ -82114,7 +82113,7 @@ sort: by_weight
 幽深的峽谷	yōu shēn de xiá gǔ	10
 有神進化論	yǒu shén jìn huà lùn	10
 有什麼出路	yǒu shén me chū lù	10
-有什麼出息	yǒu shén me chū xī	10
+有什麼出息	yǒu shén me chū xi	10
 有什麼急事	yǒu shén me jí shì	10
 有什麼卵用	yǒu shén me luǎn yòng	10
 有什麼難的	yǒu shén me nán de	10
@@ -83145,7 +83144,7 @@ sort: by_weight
 預示校正法	yù shì jiào zhèng fǎ	10
 玉氏南征記	yù shì nán zhēng jì	10
 玉氏南政基	yù shì nán zhèng jī	10
-玉石琵琶精	yù shí pí pá jīng	10
+玉石琵琶精	yù shí pí pa jīng	10
 欲使其滅亡	yù shǐ qí miè wáng	10
 與時尚同居	yǔ shí shàng tóng jū	10
 與事實不符	yǔ shì shí bù fú	10
@@ -118780,8 +118779,8 @@ sort: by_weight
 煤層頂板頁岩	méi céng dǐng bǎn yè yán	10
 煤層瓦斯含量	méi céng wǎ sī hán liàng	10
 煤塵肺炭末肺	méi chén fèi tàn mò fèi	10
-沒出息的孩子	méi chū xī de hái zi	10
-沒出息的男人	méi chū xī de nán rén	10
+沒出息的孩子	méi chū xi de hái zi	10
+沒出息的男人	méi chū xi de nán rén	10
 沒存在感的人	méi cún zài gǎn de rén	10
 梅大高速公路	méi dà gāo sù gōng lù	10
 每當逢年過節	měi dāng féng nián guò jié	10
@@ -133542,7 +133541,7 @@ sort: by_weight
 無處收斂級數	wú chǔ shōu liǎn jí shù	10
 無處收斂序列	wú chǔ shōu liǎn xù liè	10
 無初速度釋放	wú chū sù dù shì fàng	10
-無出息的漢子	wú chū xī de hàn zi	10
+無出息的漢子	wú chū xi de hàn zi	10
 無創輔助通氣	wú chuàng fǔ zhù tōng qì	10
 無創機械通氣	wú chuàng jī xiè tōng qì	10
 無創正壓通氣	wú chuàng zhèng yā tōng qì	10
@@ -140668,7 +140667,7 @@ sort: by_weight
 右側內側丘系	yòu cè nèi cè qiū xì	10
 油層水力壓裂	yóu céng shuǐ lì yā liè	12
 有償雙務合同	yǒu cháng shuāng wù hé tong	10
-有出息的男人	yǒu chū xī de nán rén	10
+有出息的男人	yǒu chū xi de nán rén	10
 有創壓力監測	yǒu chuàng yā lì jiān cè	10
 有創意的設計	yǒu chuàng yì de shè jì	10
 由此可以看出	yóu cǐ kě yǐ kàn chū	10
@@ -145919,6 +145918,7 @@ sort: by_weight
 自查自糾報告	zì chá zì jiū bào gào	10
 自查自糾階段	zì chá zì jiū jiē duàn	10
 資產保值增值	zī chǎn bǎo zhí zēng zhí	10
+子產不毀鄉校	zǐ chǎn bù huǐ xiāng xiào	10
 資產的流動性	zī chǎn de liú dòng xìng	10
 資產對銷科目	zī chǎn duì xiāo kē mù	10
 資產負債表日	zī chǎn fù zhài biǎo rì	10
@@ -147635,7 +147635,7 @@ sort: by_weight
 八山一水一分田	bā shān yì shuǐ yì fēn tián	10
 八十個人抬轎子	bā shí gè rén tái jiào zi	10
 把時間當作朋友	bǎ shí jiān dàng zuò péng you	10
-八十老翁練琵琶	bā shí lǎo wēng liàn pí pá	10
+八十老翁練琵琶	bā shí lǎo wēng liàn pí pa	10
 八十老翁學打拳	bā shí lǎo wēng xué dǎ quán	10
 八十老翁學手藝	bā shí lǎo wēng xué shǒu yì	10
 巴士奇遇結良緣	bā shì qí yù jié liáng yuán	10
@@ -149167,7 +149167,6 @@ sort: by_weight
 不見兔子不撒鷹	bú jiàn tù zǐ bù sā yīng	10
 不見硝煙的戰爭	bú jiàn xiāo yān de zhàn zhēng	10
 不建議大家購買	bú jiàn yì dà jiā gòu mǎi	10
-不見真佛不燒香	bú jiàn zhēn fó bù shāo xiāng	10
 不見真佛不燒香	bú jiàn zhēn fó bù shāo xiāng	10
 不降落的滑翔翼	bú jiàng luò de huá xiáng yì	10
 補交土地出讓金	bǔ jiāo tǔ dì chū ràng jīn	10
@@ -156402,7 +156401,6 @@ sort: by_weight
 行業數字化轉型	háng yè shù zì huà zhuǎn xíng	10
 杭州互聯網法院	háng zhōu hù lián wǎng fǎ yuàn	10
 好鋼用在刀刃上	hǎo gāng yòng zài dāo rèn shàng	10
-好鋼用在刀刃上	hǎo gāng yòng zài dāo rèn shàng	10
 好漢不吃眼前虧	hǎo hàn bù chī yǎn qián kuī	10
 好萊塢星光大道	hǎo lái wù xīng guāng dà dào	10
 好馬不吃回頭草	hǎo mǎ bù chī huí tóu cǎo	10
@@ -157265,7 +157263,6 @@ sort: by_weight
 酒不醉人人自醉	jiǔ bú zuì rén rén zì zuì	10
 灸刺諸藥不能治	jiǔ cì zhū yào bù néng zhì	10
 九二式重裝甲車	jiǔ èr shì zhòng zhuāng jiǎ chē	10
-酒逢知己千杯少	jiǔ féng zhī jǐ qiān bēi shǎo	10
 酒逢知己千杯少	jiǔ féng zhī jǐ qiān bēi shǎo	10
 酒精濫用家族史	jiǔ jīng làn yòng jiā zú shǐ	10
 酒精糖度對照表	jiǔ jīng táng dù duì zhào biǎo	10
@@ -159386,7 +159383,6 @@ sort: by_weight
 實驗者期望效應	shí yàn zhě qī wàng xiào yìng	10
 溼陽化飲又健脾	shī yáng huà yǐn yòu jiàn pí	10
 師夷長技以制夷	shī yí cháng jì yǐ zhì yí	10
-師夷長技以制夷	shī yí cháng jì yǐ zhì yí	10
 是以陳涉不用湯	shì yǐ chén shè bú yòng tāng	10
 嗜異性凝集試驗	shì yì xìng níng jí shì yàn	10
 市隱廬醫學雜著	shì yǐn lú yī xué zá zhù	10
@@ -159780,7 +159776,6 @@ sort: by_weight
 透過作風看隊伍	tòu guò zuò fēng kàn duì wǔ	10
 頭和頸度腐蝕傷	tóu hé jǐng dù fǔ shí shāng	10
 偷雞不成蝕把米	tōu jī bù chéng shí bǎ mǐ	10
-偷雞不着蝕把米	tōu jī bù zháo shí bǎ mǐ	10
 偷雞不着蝕把米	tōu jī bù zháo shí bǎ mǐ	10
 頭肩肘手胯膝足	tóu jiān zhǒu shǒu kuà xī zú	10
 頭顱計算機掃描	tóu lú jì suàn jī sǎo miáo	10

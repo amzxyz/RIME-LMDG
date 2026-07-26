@@ -7145,6 +7145,7 @@ sort: by_weight
 海原縣	hǎi yuán xiàn	182
 海淵鎮	hǎi yuān zhèn	10
 海州區	hǎi zhōu qū	185
+解州鎮	hài zhōu zhèn	105
 海珠區	hǎi zhū qū	263
 海子鄉	hǎi zǐ xiāng	10
 海子鎮	hǎi zǐ zhèn	10
@@ -15483,7 +15484,7 @@ sort: by_weight
 郫都區	pí dū qū	172
 毗盧鎮	pí lú zhèn	10
 皮馬縣	pí mǎ xiàn	167
-琵琶鎮	pí pá zhèn	10
+琵琶鎮	pí pa zhèn	10
 皮山縣	pí shān xiàn	166
 匹斯堡	pǐ sī bǎo	199
 皮特堡	pí tè bǎo	185
@@ -22394,7 +22395,6 @@ sort: by_weight
 協雄鄉	xié xióng xiāng	10
 謝洋鄉	xiè yáng xiāng	10
 卸載站	xiè zài zhàn	99
-解州鎮	xiè zhōu zhèn	105
 謝莊鎮	xiè zhuāng zhèn	10
 新安縣	xīn ān xiàn	215
 新安鄉	xīn ān xiāng	10
@@ -31901,6 +31901,8 @@ sort: by_weight
 大昌汗鎮	dà chāng hàn zhèn	10
 大廠街道	dà chǎng jiē dào	10
 大廠三村	dà chǎng sān cūn	10
+大長亭村	dà cháng tíng cūn	10
+大長屯站	dà cháng tún zhàn	99
 大朝陽村	dà cháo yáng cūn	10
 大車行村	dà chē xíng cūn	10
 大陳各莊	dà chén gè zhuāng	10
@@ -32822,8 +32824,6 @@ sort: by_weight
 大張家鎮	dà zhāng jiā zhèn	10
 大張樓鎮	dà zhāng lóu zhèn	10
 大鄣山鄉	dà zhāng shān xiāng	10
-大長亭村	dà zhǎng tíng cūn	10
-大長屯站	dà zhǎng tún zhàn	99
 大張灣村	dà zhāng wān cūn	10
 大張營村	dà zhāng yíng cūn	10
 大張莊村	dà zhāng zhuāng cūn	10
@@ -38934,6 +38934,7 @@ sort: by_weight
 海則灘鎮	hǎi zé tān zhèn	10
 海州街道	hǎi zhōu jiē dào	10
 海洲街道	hǎi zhōu jiē dào	10
+解州營村	hài zhōu yíng cūn	10
 海幢街道	hǎi zhuàng jiē dào	10
 海子溝村	hǎi zǐ gōu cūn	10
 海子溝鄉	hǎi zǐ gōu xiāng	10
@@ -52045,14 +52046,14 @@ sort: by_weight
 匹林斯堡	pǐ lín sī bǎo	10
 淠綠新村	pì lǜ xīn cūn	10
 枇杷洞村	pí pá dòng cūn	10
-琵琶溝村	pí pá gōu cūn	10
+琵琶溝村	pí pa gōu cūn	10
 枇杷溝村	pí pá gōu cūn	10
-琵琶街道	pí pá jiē dào	10
-琵琶寺村	pí pá sì cūn	10
+琵琶街道	pí pa jiē dào	10
+琵琶寺村	pí pa sì cūn	10
 枇杷灣村	pí pá wān cūn	10
-琵琶垣村	pí pá yuán cūn	10
-琵琶寨村	pí pá zhài cūn	10
-琵琶嘴村	pí pá zuǐ cūn	10
+琵琶垣村	pí pa yuán cūn	10
+琵琶寨村	pí pa zhài cūn	10
+琵琶嘴村	pí pa zuǐ cūn	10
 皮婆屯村	pí pó tún cūn	10
 伾山街道	pī shān jiē dào	10
 皮什蓋村	pí shí gài cūn	10
@@ -65500,7 +65501,6 @@ sort: by_weight
 謝辛莊村	xiè xīn zhuāng cūn	10
 渫陽社區	xiè yáng shè qū	45
 擷雲二莊	xié yún èr zhuāng	10
-解州營村	xiè zhōu yíng cūn	10
 蠍子廟村	xiē zi miào cūn	10
 蠍子山村	xiē zi shān cūn	10
 新艾里村	xīn ài lǐ cūn	10

@@ -1751,7 +1751,17 @@ sort: by_weight
 異丙苯	yì bǐng běn	9
 乙醇鈮	yǐ chún ní	144
 乙醇鉭	yǐ chún tǎn	220
+異丁胺	yì dīng àn	243
 異丁苯	yì dīng běn	338
+異丁醇	yì dīng chún	6
+異丁基	yì dīng jī	423
+異丁腈	yì dīng jīng	324
+異丁醛	yì dīng quán	252
+異丁酸	yì dīng suān	423
+乙丁酮	yǐ dīng tóng	45
+異丁烷	yì dīng wán	353
+異丁烯	yì dīng xī	25
+異丁酯	yì dīng zhǐ	327
 銥鋨礦	yī é kuàng	45
 銥海綿	yī hǎi mián	45
 乙基苯	yǐ jī běn	400
@@ -2640,7 +2650,13 @@ sort: by_weight
 氟氯菊酯	fú lǜ jú zhǐ	4
 氟氯黴素	fú lǜ méi sù	50
 氟氯鉛礦	fú lǜ qiān kuàng	4
+氟鋁石膏	fú lǚ shí gāo	144
 氟氯舒松	fú lǜ shū sōng	45
+氟鋁酸銨	fú lǚ suān ǎn	76
+氟鋁酸鈣	fú lǚ suān gài	45
+氟鋁酸鉀	fú lǚ suān jiǎ	50
+氟鋁酸鈉	fú lǚ suān nà	189
+氟鋁酸鹽	fú lǚ suān yán	99
 氟氯西林	fú lǜ xī lín	248
 氟氯乙烷	fú lǜ yǐ wán	99
 富馬酰氯	fù mǎ xiān lǜ	76
@@ -2853,6 +2869,11 @@ sort: by_weight
 還原鎢粉	huán yuán wū fěn	4
 磺胺苯酰	huáng àn běn xiān	45
 黃鋇鈾礦	huáng bèi yóu kuàng	45
+黃腐酸鉀	huáng fǔ suān jiǎ	117
+黃腐酸鈉	huáng fǔ suān nà	45
+黃腐質酸	huáng fǔ zhì suān	4
+黃腐植酸	huáng fǔ zhí suān	3
+黃苷磷酸	huáng gān lín suān	45
 磺基苯酸	huáng jī běn suān	45
 黃菱鈾礦	huáng líng yóu kuàng	45
 黃榴砷礦	huáng liú shēn kuàng	45
@@ -4480,7 +4501,18 @@ sort: by_weight
 乙叉二氯	yǐ chā èr lǜ	45
 乙醇酰氯	yǐ chún xiān lǜ	45
 一氮化鈾	yī dàn huà yóu	153
+異丁醇鋁	yì dīng chún lǚ	45
+異丁基醚	yì dīng jī mí	144
+異丁硫醇	yì dīng liú chún	4
+異丁司特	yì dīng sī tè	162
+異丁酸酐	yì dīng suān gān	45
+異丁酸鋰	yì dīng suān lǐ	45
+異丁酸酯	yì dīng suān zhǐ	117
+異丁烯腈	yì dīng xī jīng	45
+異丁烯醛	yì dīng xī quán	4
+異丁烯酸	yì dīng xī suān	162
 異丁酰氯	yì dīng xiān lǜ	45
+異丁橡膠	yì dīng xiàng jiāo	99
 乙二胺類	yǐ èr àn lèi	117
 乙二醇類	yǐ èr chún lèi	153
 乙二醇銻	yǐ èr chún tī	45
@@ -4505,6 +4537,7 @@ sort: by_weight
 釔褐簾石	yǐ hè lián shí	45
 釔褐榴石	yǐ hè liú shí	45
 銥化合物	yī huà hé wù	171
+異黃樟素	yì huáng zhāng sù	230
 乙基苯胺	yǐ jī běn àn	162
 乙基溴苯	yǐ jī xiù běn	45
 一磷化鈾	yī lín huà yóu	117
