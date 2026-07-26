@@ -8,6 +8,7 @@ import shutil
 import subprocess
 import sys
 import traceback
+from collections.abc import Mapping, Sequence
 from io import StringIO
 from pathlib import Path
 
@@ -1192,73 +1193,191 @@ class AdvancedSettingsMixin:
                 p_item.insertChild(i_min, item_max); p_item.insertChild(i_max, item_min)
                 refresh_indices(p_item)
 
-        def add_dynamic_row(p_item, val_s, ins_idx=-1):
-            child = QTreeWidgetItem(); child.setFlags(child.flags() & ~Qt.ItemIsSelectable)
-            if ins_idx == -1: p_item.addChild(child)
-            else: p_item.insertChild(ins_idx, child)
+        def add_dynamic_row(
+            p_item,
+            val_s,
+            ins_idx=-1,
+            *,
+            original_key=None,
+            original_value=None,
+            has_original=False,
+        ):
+            child = QTreeWidgetItem()
+            child.setFlags(child.flags() & ~Qt.ItemIsSelectable)
+            if ins_idx == -1:
+                p_item.addChild(child)
+            else:
+                p_item.insertChild(ins_idx, child)
+
             input_w = DynamicInputWidget(val_s, "填入配置")
-            action_w = DynamicActionWidget(KNOWN_COMPONENTS_DESC.get(val_s.split(":")[0].strip() if ":" in val_s else val_s, "配置项"))
-            
+            action_w = DynamicActionWidget(
+                KNOWN_COMPONENTS_DESC.get(
+                    val_s.split(":")[0].strip() if ":" in val_s else val_s,
+                    "配置项",
+                )
+            )
+
+            # dynamic_map 的单行“key: value”只是界面表示，不是可靠的序列化格式。
+            # 保存原始键值和原始显示文本；用户未编辑这一行时直接复用原始 YAML 值，
+            # 从而保留 Tab、前导/尾随空格、空字符串以及值的真实类型。
+            child.setData(
+                0,
+                Qt.UserRole + 1,
+                {
+                    "has_original": bool(has_original),
+                    "key": copy.deepcopy(original_key),
+                    "value": copy.deepcopy(original_value),
+                    "display_text": str(val_s),
+                },
+            )
+
             new_tree._py_refs.extend([input_w, action_w])
-            
-            input_w.value_changed.connect(lambda v: action_w.desc_label.setText(KNOWN_COMPONENTS_DESC.get(v.split(":")[0].strip() if ":" in v else v, "自定义")))
-            def on_h(): action_w.show_buttons(); input_w.set_hover_state(True)
-            def off_h(): 
+
+            input_w.value_changed.connect(
+                lambda value: action_w.desc_label.setText(
+                    KNOWN_COMPONENTS_DESC.get(
+                        value.split(":")[0].strip() if ":" in value else value,
+                        "自定义",
+                    )
+                )
+            )
+
+            def on_h():
+                action_w.show_buttons()
+                input_w.set_hover_state(True)
+
+            def off_h():
                 import shiboken6
-                QTimer.singleShot(50, lambda: (action_w.hide_buttons(), input_w.set_hover_state(False) if hasattr(input_w, 'set_hover_state') else None) if shiboken6.isValid(input_w) and not input_w.underMouse() and not action_w.underMouse() else None)
-            
-            input_w.hover_in.connect(on_h); input_w.hover_out.connect(off_h)
-            action_w.hover_in.connect(on_h); action_w.hover_out.connect(off_h)
-            
-            action_w.add_requested.connect(lambda p=p_item, c=child: add_dynamic_row(p, "", p.indexOfChild(c)+1))
-            action_w.move_up_requested.connect(lambda p=p_item, c=child: swap_rows(p, p.indexOfChild(c), p.indexOfChild(c)-1))
-            action_w.move_down_requested.connect(lambda p=p_item, c=child: swap_rows(p, p.indexOfChild(c), p.indexOfChild(c)+1))
-            action_w.delete_requested.connect(lambda p=p_item, c=child: (p.removeChild(c), refresh_indices(p)))
-            
-            new_tree.setItemWidget(child, 1, input_w); new_tree.setItemWidget(child, 2, action_w)
+                QTimer.singleShot(
+                    50,
+                    lambda: (
+                        action_w.hide_buttons(),
+                        input_w.set_hover_state(False)
+                        if hasattr(input_w, "set_hover_state") else None,
+                    )
+                    if shiboken6.isValid(input_w)
+                    and not input_w.underMouse()
+                    and not action_w.underMouse()
+                    else None,
+                )
+
+            input_w.hover_in.connect(on_h)
+            input_w.hover_out.connect(off_h)
+            action_w.hover_in.connect(on_h)
+            action_w.hover_out.connect(off_h)
+
+            action_w.add_requested.connect(
+                lambda p=p_item, c=child: add_dynamic_row(
+                    p, "", p.indexOfChild(c) + 1
+                )
+            )
+            action_w.move_up_requested.connect(
+                lambda p=p_item, c=child: swap_rows(
+                    p, p.indexOfChild(c), p.indexOfChild(c) - 1
+                )
+            )
+            action_w.move_down_requested.connect(
+                lambda p=p_item, c=child: swap_rows(
+                    p, p.indexOfChild(c), p.indexOfChild(c) + 1
+                )
+            )
+            action_w.delete_requested.connect(
+                lambda p=p_item, c=child: (
+                    p.removeChild(c),
+                    refresh_indices(p),
+                )
+            )
+
+            new_tree.setItemWidget(child, 1, input_w)
+            new_tree.setItemWidget(child, 2, action_w)
             refresh_indices(p_item)
+            return child
 
         def add_dynamic_block(parent_item, block_data, template, insert_index=-1):
-            block_item = QTreeWidgetItem(); block_item.setBackground(0, QColor("#F8FAF8"))
-            if insert_index == -1: parent_item.addChild(block_item)
-            else: parent_item.insertChild(insert_index, block_item)
-            opt_v = block_data.get("name") or block_data.get("accept") or block_data.get("option")
-            if not opt_v and "options" in block_data and isinstance(block_data["options"], list) and block_data["options"]: opt_v = f"开关组: {block_data['options'][0]}..."
-            if not opt_v: opt_v = "新规则块"
+            # 每个规则块保存自己的原始数据，移动、插入后也不再按列表下标猜原块。
+            original_block = sanitize_val(block_data) if isinstance(block_data, dict) else {}
+
+            block_item = QTreeWidgetItem()
+            block_item.setBackground(0, QColor("#F8FAF8"))
+            if insert_index == -1:
+                parent_item.addChild(block_item)
+            else:
+                parent_item.insertChild(insert_index, block_item)
+
+            opt_v = original_block.get("name") or original_block.get("accept") or original_block.get("option")
+            if not opt_v and isinstance(original_block.get("options"), list) and original_block["options"]:
+                opt_v = f"开关组: {original_block['options'][0]}..."
+            if opt_v is None or opt_v == "":
+                opt_v = "新规则块"
             block_item.setText(0, f"📦 规则块: {opt_v}")
+
             action_w = DynamicActionWidget("展开配置项")
-            
             new_tree._py_refs.append(action_w)
-            
-            action_w.hover_in.connect(action_w.show_buttons); action_w.hover_out.connect(action_w.hide_buttons)
-            action_w.add_requested.connect(lambda p=parent_item, b=block_item, t=template: add_dynamic_block(p, {}, t, p.indexOfChild(b) + 1))
-            action_w.move_up_requested.connect(lambda p=parent_item, b=block_item: swap_blocks(p, p.indexOfChild(b), p.indexOfChild(b) - 1))
-            action_w.move_down_requested.connect(lambda p=parent_item, b=block_item: swap_blocks(p, p.indexOfChild(b), p.indexOfChild(b) + 1))
-            action_w.delete_requested.connect(lambda p=parent_item, b=block_item: p.removeChild(b))
+
+            action_w.hover_in.connect(action_w.show_buttons)
+            action_w.hover_out.connect(action_w.hide_buttons)
+            action_w.add_requested.connect(
+                lambda p=parent_item, b=block_item, temp=template:
+                add_dynamic_block(p, {}, temp, p.indexOfChild(b) + 1)
+            )
+            action_w.move_up_requested.connect(
+                lambda p=parent_item, b=block_item:
+                swap_blocks(p, p.indexOfChild(b), p.indexOfChild(b) - 1)
+            )
+            action_w.move_down_requested.connect(
+                lambda p=parent_item, b=block_item:
+                swap_blocks(p, p.indexOfChild(b), p.indexOfChild(b) + 1)
+            )
+            action_w.delete_requested.connect(
+                lambda p=parent_item, b=block_item: p.removeChild(b)
+            )
             new_tree.setItemWidget(block_item, 2, action_w)
 
             child_widgets = {}
             sub_item_refs = {}
+
             for key, info in template.items():
-                val = block_data.get(key)
-                sub_item = QTreeWidgetItem(block_item, [info["title"], "", info.get("desc", "")])
+                field_present = key in original_block
+                val = original_block.get(key)
+
+                sub_item = QTreeWidgetItem(
+                    block_item,
+                    [info["title"], "", info.get("desc", "")],
+                )
                 sub_item.setFlags(sub_item.flags() & ~Qt.ItemIsSelectable)
                 sub_item_refs[key] = sub_item
+
                 v_type = info["type"]
                 w = None
+
                 if v_type == "bool":
                     w = QCheckBox("开启")
-                    bool_val = str(val).lower() == 'true' if isinstance(val, str) else bool(val)
-                    w.setChecked(bool_val)
+                    if not field_present:
+                        w.setTristate(True)
+                        w.setCheckState(Qt.PartiallyChecked)
+                        w.setText("未设置（继承）")
+                    else:
+                        bool_val = str(val).lower() == "true" if isinstance(val, str) else bool(val)
+                        w.setChecked(bool_val)
+
                 elif v_type == "select":
-                    w = QComboBox(); w.addItems(info["options"]); w.setStyleSheet(style_m); w.setFixedHeight(36)
-                    w.setCurrentText("true" if val is True else "false" if val is False else str(val or ""))
+                    w = QComboBox()
+                    w.addItems(info.get("options", []))
+                    w.setStyleSheet(style_m)
+                    w.setFixedHeight(36)
+                    if field_present:
+                        w.setCurrentText(
+                            "true" if val is True
+                            else "false" if val is False
+                            else str(val if val is not None else "")
+                        )
+                    else:
+                        w.setCurrentIndex(-1)
+
                 elif v_type in ["list_text", "raw_yaml"]:
                     clean_v = sanitize_val(val)
                     if v_type == "raw_yaml":
                         if isinstance(clean_v, (dict, list)):
-                            from ruamel.yaml import YAML
-                            from io import StringIO
                             _y = YAML()
                             _y.default_flow_style = False
                             buf = StringIO()
@@ -1268,45 +1387,89 @@ class AdvancedSettingsMixin:
                             txt_v = str(clean_v if clean_v is not None else "")
                     else:
                         if isinstance(clean_v, list):
-                            if all(len(str(x)) <= 10 and '\n' not in str(x) for x in clean_v): txt_v = "[" + ", ".join(str(x) for x in clean_v) + "]"
-                            else: txt_v = "\n".join(str(x) for x in clean_v)
-                        else: txt_v = str(clean_v if clean_v is not None else "")
-                    w = DynamicMultiLineWidget(txt_v, "支持输入任意多行文本或规则...")
-                    w.needs_resize.connect(lambda h, itm=sub_item: safe_apply_size(itm, h))
+                            if all(len(str(x)) <= 10 and "\n" not in str(x) for x in clean_v):
+                                txt_v = "[" + ", ".join(str(x) for x in clean_v) + "]"
+                            else:
+                                txt_v = "\n".join(str(x) for x in clean_v)
+                        else:
+                            txt_v = str(clean_v if clean_v is not None else "")
+
+                    w = DynamicMultiLineWidget(
+                        txt_v,
+                        "支持输入任意多行文本或规则...",
+                    )
+                    w.needs_resize.connect(
+                        lambda h, itm=sub_item: safe_apply_size(itm, h)
+                    )
+
                 elif v_type == "action_kv":
                     pk = info.get("preset_keys", {})
                     a_k, a_v = "", ""
                     for pk_key in pk:
-                        if pk_key in block_data: a_k = pk_key; a_v = block_data[pk_key]; break
+                        if pk_key in original_block:
+                            a_k = pk_key
+                            a_v = original_block[pk_key]
+                            break
                     w = DynamicKeyValueWidget(a_k, a_v, pk)
-                    w.needs_resize.connect(lambda h, itm=sub_item: safe_apply_size(itm, h))
+                    w.needs_resize.connect(
+                        lambda h, itm=sub_item: safe_apply_size(itm, h)
+                    )
+
                 else:
-                    if isinstance(val, list): display_text = "[" + ", ".join(str(x) for x in val) + "]"
-                    else: display_text = str(val if val is not None else "")
-                    w = QLineEdit(display_text); w.setStyleSheet(style_m); w.setFixedHeight(36)
-                    if key in ["option", "accept"]: w.textChanged.connect(lambda text, item=block_item: item.setText(0, f"📦 规则块: {text}") if shiboken6.isValid(item) else None)
-                if w: 
+                    if isinstance(val, list):
+                        display_text = "[" + ", ".join(str(x) for x in val) + "]"
+                    else:
+                        display_text = str(val if val is not None else "")
+                    w = QLineEdit(display_text)
+                    w.setStyleSheet(style_m)
+                    w.setFixedHeight(36)
+
+                    if key in ["option", "accept", "name"]:
+                        w.textChanged.connect(
+                            lambda value, item=block_item:
+                            item.setText(0, f"📦 规则块: {value or '新规则块'}")
+                            if shiboken6.isValid(item) else None
+                        )
+
+                if w is not None:
                     new_tree.setItemWidget(sub_item, 1, w)
                     child_widgets[key] = (w, v_type, sub_item)
-            
+
             for key, info in template.items():
-                if "visible_if" in info:
-                    def build_updater(target_item, conditions):
-                        def _update():
-                            visible = True
-                            for c_k, c_vals in conditions.items():
-                                widget_info = child_widgets.get(c_k, (None, None, None))
-                                c_w, c_type = widget_info[0], widget_info[1]
-                                if c_w and c_type == "select" and c_w.currentText() not in c_vals: visible = False
-                            target_item.setHidden(not visible)
-                        return _update
-                    updater = build_updater(sub_item_refs[key], info["visible_if"])
-                    for c_k in info["visible_if"].keys():
-                        widget_info = child_widgets.get(c_k, (None, None, None))
-                        c_w, c_type = widget_info[0], widget_info[1]
-                        if c_type == "select": c_w.currentIndexChanged.connect(lambda _, u=updater: u())
-                    updater() 
+                if "visible_if" not in info:
+                    continue
+
+                def build_updater(target_item, conditions):
+                    def _update():
+                        visible = True
+                        for c_key, allowed_values in conditions.items():
+                            widget_info = child_widgets.get(c_key, (None, None, None))
+                            c_widget, c_type = widget_info[0], widget_info[1]
+                            if (
+                                c_widget
+                                and c_type == "select"
+                                and c_widget.currentText() not in allowed_values
+                            ):
+                                visible = False
+                        target_item.setHidden(not visible)
+                    return _update
+
+                updater = build_updater(
+                    sub_item_refs[key],
+                    info["visible_if"],
+                )
+                for c_key in info["visible_if"].keys():
+                    widget_info = child_widgets.get(c_key, (None, None, None))
+                    c_widget, c_type = widget_info[0], widget_info[1]
+                    if c_type == "select":
+                        c_widget.currentIndexChanged.connect(
+                            lambda _, update=updater: update()
+                        )
+                updater()
+
             block_item.setData(0, Qt.UserRole, child_widgets)
+            block_item.setData(0, Qt.UserRole + 1, copy.deepcopy(original_block))
+            block_item.setData(0, Qt.UserRole + 2, not bool(original_block))
 
         def create_widget(f_path, v_type, n_info, curr_v, p_item):
             if v_type == "dynamic_block_list":
@@ -1339,14 +1502,26 @@ class AdvancedSettingsMixin:
                 file_dynamic_lists[f_path] = (p_item, "kv_list"); return None
 
             if v_type in ["dynamic_list", "dynamic_map"]:
-                if not curr_v: add_dynamic_row(p_item, "")
+                if not curr_v:
+                    add_dynamic_row(p_item, "")
+                elif v_type == "dynamic_map" and isinstance(curr_v, dict):
+                    for map_key, map_value in curr_v.items():
+                        add_dynamic_row(
+                            p_item,
+                            f"{map_key}: {map_value}",
+                            original_key=map_key,
+                            original_value=map_value,
+                            has_original=True,
+                        )
                 else:
-                    if isinstance(curr_v, dict): items = curr_v.items()
-                    elif isinstance(curr_v, list): items = curr_v
-                    else: items = [curr_v]
-                    for x in items: add_dynamic_row(p_item, f"{x[0]}: {x[1]}" if isinstance(x, tuple) else str(x))
-                if v_type == "dynamic_map": file_dynamic_lists[f_path] = (p_item, "map_list")
-                else: file_dynamic_lists[f_path] = (p_item, "str_list")
+                    items = curr_v if isinstance(curr_v, list) else [curr_v]
+                    for item_value in items:
+                        add_dynamic_row(p_item, str(item_value))
+
+                if v_type == "dynamic_map":
+                    file_dynamic_lists[f_path] = (p_item, "map_list")
+                else:
+                    file_dynamic_lists[f_path] = (p_item, "str_list")
                 return None
 
             if v_type == "schema_checkboxes":
@@ -1373,8 +1548,14 @@ class AdvancedSettingsMixin:
                 real_w = QLineEdit(display_text); real_w.setStyleSheet(style_m); real_w.setFixedHeight(36)
             elif v_type == "bool":
                 real_w = QCheckBox("启用")
-                bool_val = str(curr_v).lower() == 'true' if isinstance(curr_v, str) else bool(curr_v)
-                real_w.setChecked(bool_val)
+                base_state = file_base_values.get(f_path, {})
+                if not base_state.get("display_present", curr_v is not None):
+                    real_w.setTristate(True)
+                    real_w.setCheckState(Qt.PartiallyChecked)
+                    real_w.setText("未设置（继承）")
+                else:
+                    bool_val = str(curr_v).lower() == "true" if isinstance(curr_v, str) else bool(curr_v)
+                    real_w.setChecked(bool_val)
             elif v_type == "select":
                 real_w = QComboBox(); real_w.addItems(n_info.get("options", [])); real_w.setStyleSheet(style_m); real_w.setFixedHeight(36)
                 val_str = "true" if curr_v is True else "false" if curr_v is False else str(curr_v) if curr_v is not None else ""
@@ -1445,9 +1626,19 @@ class AdvancedSettingsMixin:
                         item.setFlags(item.flags() & ~Qt.ItemIsSelectable)
                         path = f"{version_key}/{input_type}"
                         
-                        display_val = get_effective_val(path, rules_val)
-                            
-                        file_base_values[path] = {'schema': rules_val, 'display': display_val} 
+                        schema_marker = self._yaml_engine.get_path(schema_data, path, missing_value)
+                        effective_marker = self._yaml_engine.get_path(effective_data, path, missing_value)
+                        schema_present = schema_marker is not missing_value
+                        display_present = effective_marker is not missing_value
+                        val_from_schema = rules_val if not schema_present else schema_marker
+                        display_val = val_from_schema if not display_present else effective_marker
+
+                        file_base_values[path] = {
+                            "schema": val_from_schema,
+                            "display": display_val,
+                            "schema_present": schema_present,
+                            "display_present": display_present,
+                        }
                         widget = create_widget(path, "raw_yaml", {}, display_val, item)
                         if widget: new_tree.setItemWidget(item, 1, widget)
             else:
@@ -1470,10 +1661,19 @@ class AdvancedSettingsMixin:
                         item = QTreeWidgetItem(root, [ni["title"], "", ni.get("desc", "")])
                         item.setFlags(item.flags() & ~Qt.ItemIsSelectable)
                         path = rk if nk == "__self__" else f"{rk}/{nk}"
-                        val_from_schema = rd if nk == "__self__" else (_get_nested_val(rd, nk) if isinstance(rd, dict) else rd)
-                        display_val = get_effective_val(path, val_from_schema)
-                            
-                        file_base_values[path] = {'schema': val_from_schema, 'display': display_val}
+                        schema_marker = self._yaml_engine.get_path(schema_data, path, missing_value)
+                        effective_marker = self._yaml_engine.get_path(effective_data, path, missing_value)
+                        schema_present = schema_marker is not missing_value
+                        display_present = effective_marker is not missing_value
+                        val_from_schema = None if not schema_present else schema_marker
+                        display_val = val_from_schema if not display_present else effective_marker
+
+                        file_base_values[path] = {
+                            "schema": val_from_schema,
+                            "display": display_val,
+                            "schema_present": schema_present,
+                            "display_present": display_present,
+                        }
                         widget = create_widget(path, ni["type"], ni, display_val, item)
                         if widget: new_tree.setItemWidget(item, 1, widget)
 
@@ -1544,24 +1744,31 @@ class AdvancedSettingsMixin:
 
         patches_to_apply = {}
         patches_to_remove = []
+        ABSENT = object()
 
         def is_really_changed(cur, base):
-            import json
-            def normalize(obj):
-                if isinstance(obj, dict):
-                    cleaned = {str(k): normalize(v) for k, v in obj.items() if v is not None and str(v).strip() != ""}
-                    return cleaned if cleaned else ""
-                elif isinstance(obj, (list, tuple)) or hasattr(obj, 'append'):
-                    cleaned = [normalize(x) for x in obj if x is not None and str(x).strip() != ""]
-                    return cleaned if cleaned else ""
-                # === [核心修复]：强制将字符串 "true"/"false" 降维打击成纯正的布尔值 ===
-                elif isinstance(obj, str) and obj.lower() in ['true', 'false']:
-                    return obj.lower() == 'true'
-                elif isinstance(obj, bool): return obj
-                elif obj is None: return ""
-                else: return str(obj).strip()
-            
-            return json.dumps(normalize(cur), sort_keys=True, ensure_ascii=False) != json.dumps(normalize(base), sort_keys=True, ensure_ascii=False)
+            """比较真实 YAML 值，不把“键不存在”、false、[]、{} 混为一谈。"""
+            def canonical(value):
+                if isinstance(value, Mapping):
+                    return {
+                        str(key): canonical(child)
+                        for key, child in value.items()
+                    }
+                if isinstance(value, Sequence) and not isinstance(
+                    value, (str, bytes, bytearray)
+                ):
+                    return [canonical(child) for child in value]
+                if value is None:
+                    return None
+                if isinstance(value, bool):
+                    return bool(value)
+                if isinstance(value, int) and not isinstance(value, bool):
+                    return int(value)
+                if isinstance(value, float):
+                    return float(value)
+                return str(value)
+
+            return canonical(cur) != canonical(base)
 
         def is_empty(v):
             if v is None or v == "": return True
@@ -1579,23 +1786,57 @@ class AdvancedSettingsMixin:
         from ruamel.yaml import YAML
         _safe_yaml = YAML(typ='safe')
 
-        def parse_list_text(txt, orig_val=None, base_val=None, key_name=""):
-            txt = txt.strip()
-            # 🌟 智能自愈：只要底层是数组或名字带 format/rules，绝对不降级为字符串！
-            is_array = isinstance(orig_val, list) or isinstance(base_val, list) or "format" in key_name or "rules" in key_name
-            if not txt: return [] if is_array else None
-            
-            if txt.startswith('[') and txt.endswith(']'):
-                try: 
-                    res = _safe_yaml.load(txt)
-                    return res if isinstance(res, list) else [res]
-                except: return [txt]
-                
-            if '\n' in txt: return [line.strip() for line in txt.splitlines() if line.strip()]
-            if ',' in txt: return [x.strip() for x in txt.split(',') if x.strip()]
-            if is_array: return [txt]
-            try: return _safe_yaml.load(txt)
-            except: return txt
+        def parse_list_text(
+            txt,
+            orig_val=ABSENT,
+            base_val=ABSENT,
+            key_name="",
+        ):
+            raw = txt.strip()
+            original_is_list = isinstance(orig_val, list)
+            base_is_list = isinstance(base_val, list)
+            force_array = (
+                original_is_list
+                or base_is_list
+                or "format" in key_name
+                or "rules" in key_name
+            )
+
+            if not raw:
+                if orig_val is ABSENT and base_val is ABSENT:
+                    return ABSENT
+                if original_is_list or base_is_list:
+                    return []
+                return None
+
+            if raw.startswith("[") and raw.endswith("]"):
+                try:
+                    result = _safe_yaml.load(raw)
+                    return result if isinstance(result, list) else [result]
+                except Exception:
+                    return [raw]
+
+            if "\n" in raw:
+                return [
+                    line.strip()
+                    for line in raw.splitlines()
+                    if line.strip()
+                ]
+
+            if "," in raw:
+                return [
+                    item.strip()
+                    for item in raw.split(",")
+                    if item.strip()
+                ]
+
+            if force_array:
+                return [raw]
+
+            try:
+                return _safe_yaml.load(raw)
+            except Exception:
+                return raw
 
         allowed_paths = set()
         if target_id == "wanxiang_algebra.yaml":
@@ -1625,7 +1866,11 @@ class AdvancedSettingsMixin:
             elif v_type == "reverse_algebra": current_val = widget.get_value()
             elif v_type == "english_algebra": current_val = widget.get_value()
             elif v_type == "mixed_algebra": current_val = widget.get_value()
-            elif v_type == "bool": current_val = widget.isChecked()
+            elif v_type == "bool":
+                if widget.isTristate() and widget.checkState() == Qt.PartiallyChecked:
+                    current_val = ABSENT
+                else:
+                    current_val = widget.isChecked()
             elif v_type == "int":
                 try:
                     current_val = int(widget.text().strip())
@@ -1638,13 +1883,22 @@ class AdvancedSettingsMixin:
                     current_val = widget.text().strip()
             elif v_type == "multiline_str":
                 current_val = widget.text_field.toPlainText()
+            elif v_type == "str":
+                # 字符串可能有语义性的前导/尾随空白，例如：
+                # speller/delimiter = " '"。不能使用 strip()。
+                current_val = widget.text()
             elif v_type == "select":
                 val_str = widget.currentText()
                 if val_str not in ["默认/不指定", ""]:
                     try: current_val = int(val_str)
                     except: current_val = val_str
             elif v_type == "list_text":
-                current_val = parse_list_text(widget.text_field.toPlainText(), orig_val=display_val, base_val=schema_val, key_name=full_path.split('/')[-1])
+                current_val = parse_list_text(
+                    widget.text_field.toPlainText(),
+                    orig_val=display_val if base_info.get("display_present", display_val is not None) else ABSENT,
+                    base_val=schema_val if base_info.get("schema_present", schema_val is not None) else ABSENT,
+                    key_name=full_path.split("/")[-1],
+                )
             elif v_type == "raw_yaml":
                 txt = widget.text_field.toPlainText().strip()
                 if txt:
@@ -1659,7 +1913,21 @@ class AdvancedSettingsMixin:
                     elif val_str.isdigit(): current_val = int(val_str)
                     else: current_val = val_str
 
+            if current_val is ABSENT:
+                continue
+
             current_val = smart_seq(current_val)
+            display_present = base_info.get(
+                "display_present",
+                display_val is not None,
+            )
+
+            if not display_present and is_empty(current_val):
+                continue
+
+            # 未修改就不整理 custom，不补全可选空字段。
+            if not is_really_changed(current_val, display_val):
+                continue
 
             if is_direct_mode:
                 if is_really_changed(current_val, schema_val):
@@ -1733,69 +2001,181 @@ class AdvancedSettingsMixin:
                 current_val = smart_seq(current_val)
 
             elif list_type == "block_list":
-                current_val = []  
+                current_val = []
+
                 for i in range(parent_item.childCount()):
                     child = parent_item.child(i)
                     child_widgets = child.data(0, Qt.UserRole)
-                    if not child_widgets: continue
-                    
-                    original_dict = display_val[i] if isinstance(display_val, list) and i < len(display_val) and isinstance(display_val[i], dict) else {}
+                    if not child_widgets:
+                        continue
+
+                    stored_original = child.data(0, Qt.UserRole + 1)
+                    if isinstance(stored_original, dict):
+                        original_dict = copy.deepcopy(stored_original)
+                    elif (
+                        isinstance(display_val, list)
+                        and i < len(display_val)
+                        and isinstance(display_val[i], dict)
+                    ):
+                        original_dict = copy.deepcopy(display_val[i])
+                    else:
+                        original_dict = {}
+
                     from ruamel.yaml.comments import CommentedMap
-                    block_dict = CommentedMap(original_dict) 
-                    
-                    is_empty_or_hidden = True
+                    block_dict = CommentedMap(copy.deepcopy(original_dict))
+
                     for key, widget_info in child_widgets.items():
                         if len(widget_info) == 3:
                             w, v_type, sub_item = widget_info
-                            if sub_item.isHidden(): continue 
+                            if sub_item.isHidden():
+                                continue
                         else:
-                            w, v_type = widget_info 
-                            
-                        if not shiboken6.isValid(w): continue
-                        
-                        val = None
-                        if v_type == "action_kv":
-                            ak, av = w.get_key_value()
-                            if ak and av: block_dict[ak] = av; is_empty_or_hidden = False
+                            w, v_type = widget_info
+
+                        if not shiboken6.isValid(w):
                             continue
-                        elif v_type == "bool": 
+
+                        field_present = key in original_dict
+                        original_value = (
+                            original_dict[key]
+                            if field_present else ABSENT
+                        )
+                        val = ABSENT
+
+                        if v_type == "action_kv":
+                            preset_keys = getattr(w, "preset_keys", {})
+                            for preset_key in preset_keys:
+                                block_dict.pop(preset_key, None)
+
+                            action_key, action_value = w.get_key_value()
+                            if action_key and action_value not in (None, ""):
+                                # when/match/send/toggle/send_sequence/select 都是 Rime 字符串。
+                                # 特别是 {space}、{Home}{Shift+Right} 不能交给 YAML.load，
+                                # 否则 {space} 会被误解析成 {space: null}。
+                                block_dict[action_key] = str(action_value)
+                            continue
+
+                        if v_type == "bool":
+                            if (
+                                w.isTristate()
+                                and w.checkState() == Qt.PartiallyChecked
+                            ):
+                                if not field_present:
+                                    block_dict.pop(key, None)
+                                continue
                             val = w.isChecked()
-                            if not val and key not in original_dict: continue
-                        elif v_type == "select": 
-                            val = w.currentText()
-                            if not val or val == "默认/不指定": val = None
-                        elif v_type == "list_text": 
-                            val = parse_list_text(w.text_field.toPlainText())
-                            if not val and isinstance(original_dict.get(key), list): val = []
+
+                        elif v_type == "select":
+                            selected = w.currentText().strip()
+                            if not selected or selected == "默认/不指定":
+                                val = ABSENT
+                            elif isinstance(original_value, bool):
+                                val = selected.lower() == "true"
+                            else:
+                                val = selected
+
+                        elif v_type == "list_text":
+                            raw_text = w.text_field.toPlainText()
+                            if not raw_text.strip() and not field_present:
+                                block_dict.pop(key, None)
+                                continue
+
+                            val = parse_list_text(
+                                raw_text,
+                                orig_val=original_value,
+                                base_val=original_value,
+                                key_name=key,
+                            )
+
+                        elif v_type == "raw_yaml":
+                            raw_text = w.text_field.toPlainText().strip()
+                            if not raw_text:
+                                val = ABSENT
+                            else:
+                                try:
+                                    val = _safe_yaml.load(raw_text)
+                                except Exception:
+                                    val = raw_text
+
                         else:
-                            txt = w.text().strip()
-                            if txt:
-                                if txt.startswith('[') and txt.endswith(']'):
-                                    from ruamel.yaml import YAML
-                                    try: val = YAML(typ='safe').load(txt)
-                                    except: val = txt
-                                elif txt.lower() == "true": val = True
-                                elif txt.lower() == "false": val = False
-                                else: val = int(txt) if txt.isdigit() else txt
-                        
-                        val = smart_seq(val)
-                        if val is not None and val != "": 
-                            block_dict[key] = val
-                            is_empty_or_hidden = False
-                        else:
-                            if key in block_dict: del block_dict[key]
-                            
-                    if not is_empty_or_hidden and block_dict: current_val.append(block_dict) 
+                            raw_text = w.text().strip()
+                            if not raw_text:
+                                val = ABSENT
+                            else:
+                                try:
+                                    val = _safe_yaml.load(raw_text)
+                                except Exception:
+                                    val = raw_text
+
+                        if val is ABSENT:
+                            if field_present:
+                                block_dict.pop(key, None)
+                            else:
+                                block_dict.pop(key, None)
+                            continue
+
+                        block_dict[key] = smart_seq(val)
+
+                    meaningful = False
+                    for value in block_dict.values():
+                        if value is None or value == "":
+                            continue
+                        if isinstance(value, (list, dict)) and not value:
+                            continue
+                        meaningful = True
+                        break
+
+                    if block_dict and (original_dict or meaningful):
+                        current_val.append(block_dict)
+
+                current_val = smart_seq(current_val)
 
             elif list_type == "map_list":
                 current_val = {}
+
                 for i in range(parent_item.childCount()):
-                    w = current_tree.itemWidget(parent_item.child(i), 1)
-                    if isinstance(w, DynamicInputWidget):
-                        val = w.get_value()
-                        if val and ":" in val:
-                            k, v = val.split(":", 1)
-                            current_val[k.strip()] = v.strip()
+                    child = parent_item.child(i)
+                    w = current_tree.itemWidget(child, 1)
+                    if not isinstance(w, DynamicInputWidget):
+                        continue
+
+                    raw_line = w.input_field.text()
+                    original = child.data(0, Qt.UserRole + 1)
+
+                    # 未编辑的既有行直接复用原始 YAML 键值，禁止经过 strip()/str()/YAML.load。
+                    if (
+                        isinstance(original, dict)
+                        and original.get("has_original")
+                        and raw_line == original.get("display_text", "")
+                    ):
+                        current_val[copy.deepcopy(original.get("key"))] = copy.deepcopy(
+                            original.get("value")
+                        )
+                        continue
+
+                    if not raw_line or ":" not in raw_line:
+                        continue
+
+                    key_text, value_text = raw_line.split(":", 1)
+                    map_key = key_text.strip()
+                    if not map_key:
+                        continue
+
+                    # 界面生成格式固定为“key: value”，只移除冒号后由界面插入的一个空格；
+                    # 不删除值本身的 Tab、尾随空格或其余前导空格。
+                    if value_text.startswith(" "):
+                        value_text = value_text[1:]
+
+                    if value_text == "":
+                        map_value = ""
+                    else:
+                        try:
+                            parsed = _safe_yaml.load(value_text)
+                            map_value = value_text if parsed is None else parsed
+                        except Exception:
+                            map_value = value_text
+
+                    current_val[map_key] = map_value
 
             elif list_type == "kv_list":
                 current_val = {}
@@ -1812,6 +2192,21 @@ class AdvancedSettingsMixin:
                             elif "填列表" in desc or "数组" in desc:
                                 v = parse_list_text(str(v), orig_val=[], base_val=[], key_name=k)
                             current_val[k] = smart_seq(v)
+
+            display_present = base_info.get(
+                "display_present",
+                display_val is not None,
+            )
+
+            if current_val is ABSENT:
+                continue
+
+            if not display_present and is_empty(current_val):
+                continue
+
+            # 动态块未改变时，绝不补全模板里的空字段，也不整理 custom。
+            if not is_really_changed(current_val, display_val):
+                continue
 
             if is_direct_mode:
                 if is_really_changed(current_val, schema_val):
@@ -1915,10 +2310,6 @@ class AdvancedSettingsMixin:
                     f"[直写] {target_id}：请求更新 {len(patches_to_apply)} 项"
                 )
                 
-                if target_id in self._yaml_cache:
-                    _, old_patch = self._yaml_cache[target_id]
-                    self._yaml_cache[target_id] = (target_data, old_patch)
-                    self._effective_cache[target_id] = self._yaml_engine.apply_patch(target_data, old_patch)
                     
             else:
                 custom_data = {}
@@ -1931,38 +2322,85 @@ class AdvancedSettingsMixin:
 
                 if 'patch' not in custom_data or custom_data['patch'] is None: custom_data['patch'] = {}
                 
-                from ruamel.yaml.comments import CommentedMap
+                from ruamel.yaml.comments import CommentedMap, CommentedSeq
+
+                def fresh_yaml_value(value, force_block_sequence=False):
+                    if isinstance(value, Mapping):
+                        result = CommentedMap()
+                        result.fa.set_block_style()
+                        for child_key, child_value in value.items():
+                            result[child_key] = fresh_yaml_value(child_value)
+                        return result
+
+                    if isinstance(value, Sequence) and not isinstance(
+                        value, (str, bytes, bytearray)
+                    ):
+                        result = CommentedSeq(
+                            fresh_yaml_value(child_value)
+                            for child_value in value
+                        )
+                        if force_block_sequence:
+                            result.fa.set_block_style()
+                        return result
+
+                    return value
+
                 def set_patch_val(p_dict, path, val):
                     if path.endswith("/__patch") or path.endswith("/__include"):
-                        base_path, op = path.rsplit('/', 1)
-                        if base_path not in p_dict or not isinstance(p_dict[base_path], dict):
-                            p_dict[base_path] = CommentedMap()
-                        p_dict[base_path][op] = val
-                        
-                        _node = p_dict[base_path]
-                        if "__include" in _node and "__patch" in _node:
-                            _keys = list(_node.keys())
-                            if _keys.index("__include") > _keys.index("__patch"):
-                                _v_patch = _node.pop("__patch")
-                                _node["__patch"] = _v_patch
-                                
-                        if path in p_dict: del p_dict[path] 
+                        base_path, op = path.rsplit("/", 1)
+
+                        if hasattr(p_dict, "fa"):
+                            p_dict.fa.set_block_style()
+
+                        old_node = p_dict.get(base_path)
+                        new_node = CommentedMap()
+                        new_node.fa.set_block_style()
+
+                        if isinstance(old_node, Mapping):
+                            for child_key, child_value in old_node.items():
+                                if child_key != op:
+                                    new_node[child_key] = child_value
+
+                        force_block = (
+                            isinstance(val, Sequence)
+                            and not isinstance(val, (str, bytes, bytearray))
+                        )
+                        new_node[op] = fresh_yaml_value(
+                            val,
+                            force_block_sequence=force_block,
+                        )
+
+                        if "__include" in new_node and "__patch" in new_node:
+                            ordered_node = CommentedMap()
+                            ordered_node.fa.set_block_style()
+                            ordered_node["__include"] = new_node["__include"]
+                            ordered_node["__patch"] = new_node["__patch"]
+                            for child_key, child_value in new_node.items():
+                                if child_key not in ordered_node:
+                                    ordered_node[child_key] = child_value
+                            new_node = ordered_node
+
+                        p_dict[base_path] = new_node
+                        if path in p_dict:
+                            del p_dict[path]
                         return
-                        
-                    parts = path.split('/')
+
+                    parts = path.split("/")
                     if path.endswith("/+"):
                         parts = parts[:-2] + [parts[-2] + "/+"]
-                        
+
                     for i in range(1, len(parts)):
-                        parent_path = '/'.join(path.split('/')[:i])
+                        parent_path = "/".join(path.split("/")[:i])
                         if parent_path in p_dict and isinstance(p_dict[parent_path], dict):
-                            _node = p_dict[parent_path]
+                            node = p_dict[parent_path]
                             sub_parts = parts[i:]
-                            for p in sub_parts[:-1]:
-                                if p not in _node or not isinstance(_node[p], dict): _node[p] = {}
-                                _node = _node[p]
-                            self._safe_assign(_node, sub_parts[-1], val)
+                            for part in sub_parts[:-1]:
+                                if part not in node or not isinstance(node[part], dict):
+                                    node[part] = {}
+                                node = node[part]
+                            self._safe_assign(node, sub_parts[-1], val)
                             return
+
                     self._safe_assign(p_dict, path, val)
 
                 def del_patch_val(p_dict, path):
@@ -1992,10 +2430,18 @@ class AdvancedSettingsMixin:
                                 del _node[sub_parts[-1]]
                             except: pass
                             return
-                for p, v in patches_to_apply.items(): set_patch_val(custom_data['patch'], p, v)
-                for p in patches_to_remove: del_patch_val(custom_data['patch'], p)
-                    
-                if 'patch' in custom_data and not custom_data['patch']: del custom_data['patch']
+                for p, v in patches_to_apply.items():
+                    set_patch_val(custom_data['patch'], p, v)
+                for p in patches_to_remove:
+                    del_patch_val(custom_data['patch'], p)
+
+                if 'patch' in custom_data and not custom_data['patch']:
+                    del custom_data['patch']
+                else:
+                    if hasattr(custom_data, "fa"):
+                        custom_data.fa.set_block_style()
+                    if 'patch' in custom_data and hasattr(custom_data['patch'], "fa"):
+                        custom_data['patch'].fa.set_block_style()
 
                 self._yaml_engine.atomic_write_many({custom_path: custom_data})
                 self._advanced_save_detail = (
@@ -2003,20 +2449,6 @@ class AdvancedSettingsMixin:
                     f"清理 {len(patches_to_remove)} 项"
                 )
 
-                if target_id in self._yaml_cache:
-                    old_schema, _ = self._yaml_cache[target_id]
-                    new_patch = custom_data.get('patch', {})
-                    self._yaml_cache[target_id] = (old_schema, new_patch)
-                    self._effective_cache[target_id] = self._yaml_engine.apply_patch(old_schema, new_patch)
-
-            for p, v in patches_to_apply.items():
-                if p in self._yaml_base_values:
-                    if is_direct_mode: self._yaml_base_values[p]['schema'] = v
-                    self._yaml_base_values[p]['display'] = v
-            for p in patches_to_remove:
-                if p in self._yaml_base_values:
-                    if is_direct_mode: self._yaml_base_values[p]['schema'] = None
-                    self._yaml_base_values[p]['display'] = self._yaml_base_values[p].get('schema')
 
             # 仅删除另一个对立模式的过期缓存，当前界面保留不闪烁
             other_mode_key = f"{self.current_edit_file}_{'patch' if is_direct_mode else 'direct'}"
@@ -3314,6 +3746,80 @@ class AdvancedSettingsMixin:
             self.log.appendPlainText(f"❌ {message}")
             QMessageBox.warning(self, "部署未触发", message)
 
+    def _sync_current_page_effective_baseline(self, target_id):
+        """提交后更新当前页面的完整比较基线，不重建界面。"""
+        if not target_id or target_id == "VIRTUAL_GLOBAL":
+            return
+
+        schema_data, _ = self._yaml_cache.get(target_id, ({}, {}))
+        effective_data = self._effective_cache.get(target_id, schema_data)
+        is_direct_mode = self.rb_direct_mode.isChecked()
+        display_data = schema_data if is_direct_mode else effective_data
+
+        cache_key = f"{target_id}_{'direct' if is_direct_mode else 'patch'}"
+        page_cache = self._ui_cache.get(cache_key, {})
+        base_values = page_cache.get("base")
+        if not isinstance(base_values, dict):
+            base_values = self._yaml_base_values
+
+        missing = object()
+        for path, base_info in base_values.items():
+            if not isinstance(base_info, dict):
+                continue
+
+            schema_value = self._yaml_engine.get_path(schema_data, path, missing)
+            display_value = self._yaml_engine.get_path(display_data, path, missing)
+
+            schema_present = schema_value is not missing
+            display_present = display_value is not missing
+
+            base_info["schema_present"] = schema_present
+            base_info["display_present"] = display_present
+            base_info["schema"] = copy.deepcopy(schema_value) if schema_present else None
+            base_info["display"] = (
+                copy.deepcopy(display_value)
+                if display_present
+                else copy.deepcopy(base_info["schema"])
+            )
+
+        if self.current_edit_file == target_id:
+            self._yaml_base_values = base_values
+
+    def _reload_committed_advanced_state(self, changed_paths):
+        """事务提交后，以磁盘中的 schema + custom 为唯一真值重新加载。"""
+        if not changed_paths:
+            return []
+
+        rime_dir = Path(self.upd_rime.text().strip())
+        changed_abs = {os.path.abspath(str(path)) for path in changed_paths}
+        reloaded = []
+
+        # 只检查当前已受控的配置文件，不扫描整个目录。
+        for target_id in list(self._yaml_cache.keys()):
+            managed_paths = {os.path.abspath(str(rime_dir / target_id))}
+            custom_name = self._custom_name_for(target_id)
+            if custom_name:
+                managed_paths.add(os.path.abspath(str(rime_dir / custom_name)))
+
+            if not (managed_paths & changed_abs):
+                continue
+
+            if self._load_document_into_cache(target_id, show_dialog=False):
+                reloaded.append(target_id)
+            else:
+                self.log.appendPlainText(
+                    f"⚠️ 文件已提交，但未能重新加载最终状态：{target_id}"
+                )
+
+        current_target = self.current_edit_file
+        if current_target in reloaded:
+            self._sync_current_page_effective_baseline(current_target)
+            self.log.appendPlainText(
+                f"🔄 当前最终配置状态已同步：{current_target} = schema + custom"
+            )
+
+        return reloaded
+
     def _run_controlled_save(self, *, global_mode=False):
         self._ensure_advanced_engines()
         errors = self._validate_before_save()
@@ -3353,6 +3859,7 @@ class AdvancedSettingsMixin:
 
             self._advanced_save_changed = bool(changed_paths)
             if changed_paths:
+                self._reload_committed_advanced_state(changed_paths)
                 changed_names = ", ".join(path.name for path in changed_paths)
                 self._advanced_save_summary = f"已提交：{changed_names}"
                 detail = getattr(self, "_advanced_save_detail", "").strip()
