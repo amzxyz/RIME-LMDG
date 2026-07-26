@@ -84,7 +84,7 @@ data class DownloadCandidate(val url: String, val name: String, val usesProxy: B
 
 val DEFAULT_GITHUB_ROUTES = listOf(
     GithubRoute(OFFICIAL_ROUTE_ID, "GitHub", ""),
-    GithubRoute("ghproxy-cn", "ghproxy.cn", "https://ghproxy.cn/"),
+    GithubRoute("b52m", "gh.b52m.cn", "https://gh.b52m.cn/"),
     GithubRoute("gh-proxy-com", "gh-proxy.com", "https://gh-proxy.com/"),
     GithubRoute("ghfast-top", "ghfast.top", "https://ghfast.top/"),
     GithubRoute("xxlab", "xxlab", "https://github.xxlab.tech/"),
