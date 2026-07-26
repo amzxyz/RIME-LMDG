@@ -146,6 +146,65 @@ fun saveGithubRoutes(routes: List<GithubRoute>, sharedPref: android.content.Shar
     sharedPref.edit().putString("github_routes_json", array.toString()).apply()
 }
 
+const val DEPLOY_PATHS_JSON_KEY = "deploy_paths_json"
+
+fun saveDeployPaths(paths: List<String>, sharedPref: android.content.SharedPreferences) {
+    val normalized = paths.map { it.trim() }.filter { it.isNotBlank() }.distinct()
+    val array = org.json.JSONArray()
+    normalized.forEach { array.put(it) }
+
+    sharedPref.edit()
+        .putString(DEPLOY_PATHS_JSON_KEY, array.toString())
+        .remove("deploy_paths")
+        .apply()
+}
+
+fun loadDeployPaths(sharedPref: android.content.SharedPreferences): List<String> {
+    val json = sharedPref.getString(DEPLOY_PATHS_JSON_KEY, null)
+
+    if (!json.isNullOrBlank()) {
+        try {
+            val array = org.json.JSONArray(json)
+            val paths = buildList {
+                for (i in 0 until array.length()) {
+                    val path = array.optString(i).trim()
+                    if (path.isNotBlank() && path !in this) add(path)
+                }
+            }
+            if (paths.isNotEmpty()) return paths
+        } catch (_: Exception) {
+        }
+    }
+
+    // 兼容旧版 StringSet。旧集合没有稳定顺序，迁移时把 SAF 放前面、/rime 放最后。
+    val legacyPaths = sharedPref.getStringSet("deploy_paths", null)
+        ?.map { it.trim() }
+        ?.filter { it.isNotBlank() }
+        ?.distinct()
+        ?.sortedBy { if (it == "DEFAULT") 1 else 0 }
+        .orEmpty()
+
+    val migrated = if (legacyPaths.isEmpty()) listOf("DEFAULT") else legacyPaths
+    saveDeployPaths(migrated, sharedPref)
+    return migrated
+}
+
+fun deployPathDisplayName(path: String): String {
+    if (path == "DEFAULT") return "/rime"
+
+    return runCatching {
+        Uri.decode(path)
+            .substringAfterLast(":")
+            .trimEnd('/')
+            .substringAfterLast("/")
+            .ifBlank { "SAF授权目录" }
+    }.getOrDefault("SAF授权目录")
+}
+
+fun canWriteDefaultRime(): Boolean {
+    return Build.VERSION.SDK_INT < Build.VERSION_CODES.R || Environment.isExternalStorageManager()
+}
+
 fun versionNumbers(value: String): List<Int> {
     return Regex("""\d+""").findAll(value).mapNotNull { it.value.toIntOrNull() }.toList()
 }
@@ -453,9 +512,7 @@ fun WanxiangDownloaderApp() {
         }
     }
 
-    var showPermissionDialog by remember { 
-        mutableStateOf(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && !Environment.isExternalStorageManager()) 
-    }
+    var showPermissionDialog by remember { mutableStateOf(false) }
 
     if (showPermissionDialog) {
         AlertDialog(
@@ -463,8 +520,8 @@ fun WanxiangDownloaderApp() {
             title = { Text("需要存储访问权限", fontWeight = FontWeight.Bold, fontSize = 18.sp, color = MorandiDarkGreen) },
             text = {
                 Text(
-                    text = "万象更新器需要【所有文件访问权限】。\n\n" +
-                           "这是因为我们需要将最新下载的方案和词库文件，直接写入到您手机根目录的 /rime 文件夹，或小企鹅输入法的私有目录中。",
+                    text = "该权限仅用于写入手机根目录的 /rime。\n\n" +
+                           "通过系统文件框架添加的小企鹅目录使用独立的 SAF 授权，不受此权限影响。即使暂不授权，已添加的 SAF 目录仍会继续分发。",
                     fontSize = 14.sp, lineHeight = 20.sp, color = Color.DarkGray
                 )
             },
@@ -519,10 +576,8 @@ fun WanxiangDownloaderApp() {
     var showAdvancedRules by remember { mutableStateOf(false) }
     val coroutineScope = rememberCoroutineScope()
 
-    // 路径记忆（全局授权池）
-    var savedPaths by remember {
-        mutableStateOf(sharedPref.getStringSet("deploy_paths", setOf("DEFAULT"))?.toList() ?: listOf("DEFAULT"))
-    }
+    // 路径记忆（有序保存）：SAF 与 /rime 可以同时存在，部署时始终先 SAF、后 /rime。
+    var savedPaths by remember { mutableStateOf(loadDeployPaths(sharedPref)) }
 
     val dirPickerLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
         if (uri != null) {
@@ -532,7 +587,7 @@ fun WanxiangDownloaderApp() {
             )
             val newPaths = (savedPaths + uri.toString()).distinct()
             savedPaths = newPaths
-            sharedPref.edit().putStringSet("deploy_paths", newPaths.toSet()).apply()
+            saveDeployPaths(newPaths, sharedPref)
         }
     }
 
@@ -540,6 +595,7 @@ fun WanxiangDownloaderApp() {
     var latestStableTag by remember { mutableStateOf("v1.0.0") }
     var cloudVersionName by remember { mutableStateOf("") }
     var updaterDownloadUrl by remember { mutableStateOf("") }
+    var updateCheckSource by remember { mutableStateOf("") }
     var isCheckingUpdate by remember { mutableStateOf(true) }
     var updateCheckNonce by remember { mutableStateOf(0) }
 
@@ -556,9 +612,18 @@ fun WanxiangDownloaderApp() {
         isTestingRoutes = false
     }
 
-    // 主方案正式版Tag：保留代理查询，GitHub失败时用CNB补充。
-    LaunchedEffect(selectedRouteId, githubRoutes, githubToken) {
+    // 主方案版本检测：GitHub API失败时可用CNB补充正式版Tag。
+    // 更新器自身检测：仅检查GitHub，CNB没有Android安装包，不显示或尝试CNB兜底。
+    LaunchedEffect(selectedRouteId, githubRoutes, updateCheckNonce) {
+        isCheckingUpdate = true
+        updateCheckSource = ""
+        cloudVersionName = ""
+        updaterDownloadUrl = ""
+
         var detectedStableTag: String? = null
+        var detectedUpdaterName: String? = null
+        var detectedUpdaterUrl: String? = null
+        var updaterSourceText = ""
 
         val mainJson = fetchGithubApiJson(
             "https://api.github.com/repos/amzxyz/rime-wanxiang/releases/latest",
@@ -574,66 +639,45 @@ fun WanxiangDownloaderApp() {
             }
         }
 
+        var cnbMainReleases: org.json.JSONArray? = null
         if (detectedStableTag == null) {
-            detectedStableTag = findLatestStableCnbTag(fetchCnbReleases("rime-wanxiang"))
+            cnbMainReleases = fetchCnbReleases("rime-wanxiang")
+            detectedStableTag = findLatestStableCnbTag(cnbMainReleases)
         }
 
-        detectedStableTag?.let { latestStableTag = it }
-    }
+        val toolJson = fetchGithubApiJson(
+            "https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/tool",
+            githubRoutes,
+            selectedRouteId,
+            githubToken
+        )
 
-    // 更新器自身检测：恢复最初版本逻辑，只直连GitHub官方API，不走代理，也不查询CNB。
-    LaunchedEffect(updateCheckNonce) {
-        isCheckingUpdate = true
-        cloudVersionName = ""
-        updaterDownloadUrl = ""
-
-        val result = withContext(Dispatchers.IO) {
-            var toolConn: HttpURLConnection? = null
-
+        if (!toolJson.isNullOrBlank()) {
             try {
-                toolConn = URL("https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/tool")
-                    .openConnection() as HttpURLConnection
-                toolConn.setRequestProperty("User-Agent", "WanxiangUpdater-Agent")
-
-                if (githubToken.isNotBlank()) {
-                    toolConn.setRequestProperty("Authorization", "Bearer $githubToken")
-                }
-
-                toolConn.connectTimeout = 10000
-                toolConn.readTimeout = 10000
-                toolConn.connect()
-
-                if (toolConn.responseCode != 200) {
-                    return@withContext "" to ""
-                }
-
-                val content = toolConn.inputStream.bufferedReader().use { it.readText() }
-                val assets = org.json.JSONObject(content).optJSONArray("assets")
-                    ?: return@withContext "" to ""
-
-                for (i in 0 until assets.length()) {
-                    val asset = assets.optJSONObject(i) ?: continue
-                    val name = asset.optString("name")
-
-                    if (name.startsWith("Wanxiang-Updater-Android") && name.endsWith(".apk", true)) {
-                        val downloadUrl = asset.optString("browser_download_url")
-                        val version = Regex("""Wanxiang-Updater-Android.*?(\d+\.\d+(?:\.\d+)?)""")
-                            .find(name)?.groupValues?.get(1).orEmpty()
-                        return@withContext version to downloadUrl
+                val assets = org.json.JSONObject(toolJson).optJSONArray("assets")
+                if (assets != null) {
+                    for (i in 0 until assets.length()) {
+                        val asset = assets.optJSONObject(i) ?: continue
+                        val name = asset.optString("name")
+                        if (name.startsWith("Wanxiang-Updater-Android") && name.endsWith(".apk", true)) {
+                            detectedUpdaterName = name
+                            detectedUpdaterUrl = asset.optString("browser_download_url")
+                            updaterSourceText = "GitHub API"
+                            break
+                        }
                     }
                 }
-
-                "" to ""
-            } catch (e: Exception) {
-                e.printStackTrace()
-                "" to ""
-            } finally {
-                toolConn?.disconnect()
+            } catch (_: Exception) {
             }
         }
 
-        cloudVersionName = result.first
-        updaterDownloadUrl = result.second
+        detectedStableTag?.let { latestStableTag = it }
+        detectedUpdaterName?.let { name ->
+            cloudVersionName = Regex("""Wanxiang-Updater-Android.*?(\d+\.\d+(?:\.\d+)?)""")
+                .find(name)?.groupValues?.get(1).orEmpty()
+        }
+        updaterDownloadUrl = detectedUpdaterUrl.orEmpty()
+        updateCheckSource = updaterSourceText.ifBlank { "仅GitHub检查失败" }
         isCheckingUpdate = false
     }
 
@@ -764,13 +808,16 @@ fun WanxiangDownloaderApp() {
                             val hasNewVersion = !isCheckingUpdate && cloudVersionName.isNotEmpty() && isRemoteVersionNewer(cloudVersionName, localVersionName)
                             Text("🔧 更新器自身检测", fontWeight = FontWeight.Bold, color = Color.DarkGray, fontSize = 14.sp)
                             Text(
-                                text = if (isCheckingUpdate) "正在检测云端..."
-                                       else if (cloudVersionName.isEmpty()) "未发现有效更新包"
+                                text = if (isCheckingUpdate) "正在通过GitHub检测..."
+                                       else if (cloudVersionName.isEmpty()) "GitHub未发现有效更新包"
                                        else if (hasNewVersion) "发现新版本: v$cloudVersionName"
                                        else "已是最新版本",
                                 fontSize = 12.sp,
                                 color = if (hasNewVersion) MorandiGreen else Color.Gray
                             )
+                            if (!isCheckingUpdate) {
+                                Text("软件检测：$updateCheckSource", fontSize = 10.sp, color = Color.Gray)
+                            }
                         }
 
                         val hasNewVersion = !isCheckingUpdate && cloudVersionName.isNotEmpty() && isRemoteVersionNewer(cloudVersionName, localVersionName)
@@ -778,7 +825,8 @@ fun WanxiangDownloaderApp() {
                             Button(
                                 onClick = {
                                     if (updaterDownloadUrl.isNotBlank()) {
-                                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(updaterDownloadUrl)))
+                                        val preferredUrl = buildGithubCandidates(updaterDownloadUrl, githubRoutes, selectedRouteId).firstOrNull()?.url ?: updaterDownloadUrl
+                                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(preferredUrl)))
                                     }
                                 },
                                 enabled = hasNewVersion,
@@ -820,11 +868,20 @@ fun WanxiangDownloaderApp() {
                                     fontSize = 13.sp, color = Color.DarkGray, modifier = Modifier.weight(1f), maxLines = 1, overflow = TextOverflow.Ellipsis
                                 )
                                 TextButton(
-                                    onClick = { 
+                                    onClick = {
+                                        if (pathStr != "DEFAULT") {
+                                            runCatching {
+                                                context.contentResolver.releasePersistableUriPermission(
+                                                    Uri.parse(pathStr),
+                                                    Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
+                                                )
+                                            }
+                                        }
+
                                         val newPaths = savedPaths - pathStr
                                         savedPaths = newPaths
-                                        sharedPref.edit().putStringSet("deploy_paths", newPaths.toSet()).apply()
-                                    }, 
+                                        saveDeployPaths(newPaths, sharedPref)
+                                    },
                                     contentPadding = PaddingValues(0.dp), 
                                     modifier = Modifier.height(24.dp)
                                 ) { 
@@ -844,10 +901,15 @@ fun WanxiangDownloaderApp() {
                             }
                             if (!savedPaths.contains("DEFAULT")) {
                                 TextButton(
-                                    onClick = { 
-                                        savedPaths = savedPaths + "DEFAULT"
-                                        sharedPref.edit().putStringSet("deploy_paths", savedPaths.toSet()).apply()
-                                    }, 
+                                    onClick = {
+                                        val newPaths = (savedPaths + "DEFAULT").distinct()
+                                        savedPaths = newPaths
+                                        saveDeployPaths(newPaths, sharedPref)
+
+                                        if (!canWriteDefaultRime()) {
+                                            showPermissionDialog = true
+                                        }
+                                    },
                                     modifier = Modifier.height(36.dp)
                                 ) { 
                                     Text("➕ 恢复默认", fontSize = 12.sp, color = MorandiDarkGreen) 
@@ -1145,9 +1207,9 @@ fun WanxiangDownloaderApp() {
                                 onClick = { 
                                     if (savedPaths.isEmpty()) return@Button 
                                     
-                                    if (savedPaths.contains("DEFAULT") && Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && !Environment.isExternalStorageManager()) {
+                                    if (savedPaths.contains("DEFAULT") && !canWriteDefaultRime()) {
+                                        // 只提醒 /rime 权限；任务仍继续，已授权的 SAF 目标不会被阻断。
                                         showPermissionDialog = true
-                                        return@Button
                                     }
 
                                     val currentRules = excludeRulesText.lines().filter { it.isNotBlank() }
@@ -1834,21 +1896,39 @@ suspend fun downloadAndDeployTask(
             var successCount = 0
             val errorList = mutableListOf<String>()
 
-            for ((index, pathStr) in targetPaths.withIndex()) {
+            // 混合多目标：稳定的 SAF 目标优先，依赖全盘权限的 /rime 最后执行。
+            val orderedTargetPaths = targetPaths
+                .map { it.trim() }
+                .filter { it.isNotBlank() }
+                .distinct()
+                .sortedBy { if (it == "DEFAULT") 1 else 0 }
+
+            for ((index, pathStr) in orderedTargetPaths.withIndex()) {
+                val pathName = deployPathDisplayName(pathStr)
+
                 try {
                     if (index > 0) delay(300)
 
                     withContext(Dispatchers.Main) {
-                        task.status = "部署目标 ${index + 1}/${targetPaths.size}（$downloadedFrom）..."
+                        task.status = "部署 $pathName ${index + 1}/${orderedTargetPaths.size}（$downloadedFrom）..."
                     }
 
                     if (pathStr == "DEFAULT") {
+                        if (!canWriteDefaultRime()) {
+                            throw Exception("缺少所有文件访问权限，已跳过")
+                        }
+
                         val root = File(Environment.getExternalStorageDirectory(), "rime")
                         val target = if (isDict) File(root, "dicts") else root
                         copyNormal(realSrcDir, target, excludeRegexList)
                     } else {
-                        val rootDoc = DocumentFile.fromTreeUri(context, Uri.parse(pathStr))
+                        val targetUri = Uri.parse(pathStr)
+                        val rootDoc = DocumentFile.fromTreeUri(context, targetUri)
                             ?: throw Exception("授权目录已失效")
+
+                        if (!rootDoc.exists() || !rootDoc.canWrite()) {
+                            throw Exception("SAF授权已失效或目录不可写")
+                        }
 
                         var targetDoc = rootDoc
                         if (isDict) {
@@ -1863,14 +1943,13 @@ suspend fun downloadAndDeployTask(
 
                     successCount++
                 } catch (e: Exception) {
-                    val pathName = if (pathStr == "DEFAULT") "默认" else "授权${index + 1}"
                     errorList.add("$pathName(${e.message ?: e.javaClass.simpleName})")
                 }
             }
 
             withContext(Dispatchers.Main) {
                 when {
-                    successCount == targetPaths.size && targetPaths.isNotEmpty() -> {
+                    successCount == orderedTargetPaths.size && orderedTargetPaths.isNotEmpty() -> {
                         task.isFinished = true
                         task.progress = 1f
                         task.status = "✅ 解压完成（$downloadedFrom）"
