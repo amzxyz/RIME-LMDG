@@ -14,6 +14,7 @@ import requests
 import subprocess
 import webbrowser
 from pathlib import Path
+from urllib.parse import urlparse
 from typing import Dict, List, Tuple, Optional, Set, Callable
 from dataclasses import dataclass
 from PySide6.QtWidgets import (QWidget, QHBoxLayout, QLineEdit, 
@@ -84,6 +85,63 @@ DEFAULT_WL_REGEX = [
 # =====================================================================
 # 尝试导入 ruamel.yaml (用于安全修改 Rime 配置文件)
 # =====================================================================
+def _normalize_github_token(raw_token: str) -> str:
+    """只保留 Token 本体，避免用户粘贴 Bearer/token 前缀后重复拼接。"""
+    token = str(raw_token or "").strip()
+    lowered = token.lower()
+
+    for prefix in ("bearer ", "token "):
+        if lowered.startswith(prefix):
+            token = token[len(prefix):].strip()
+            break
+
+    return token
+
+
+def _build_github_api_headers(raw_token: str) -> dict:
+    """GitHub Token 只用于 api.github.com，不下发给代理或自定义地址。"""
+    headers = {
+        "User-Agent": "Rime-Wanxiang-Tool",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    token = _normalize_github_token(raw_token)
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    return headers
+
+
+def _download_headers_for_url(
+    url: str,
+    *,
+    using_github_proxy: bool,
+    headers_cnb: dict,
+    headers_github_download: dict,
+    headers_github_proxy: dict,
+    headers_external: dict,
+) -> dict:
+    """按最终请求主机选择请求头，确保 Token 不泄露到非 GitHub API 地址。"""
+    host = (urlparse(str(url or "")).hostname or "").lower()
+
+    if host == "cnb.cool" or host.endswith(".cnb.cool"):
+        return headers_cnb
+
+    if using_github_proxy:
+        return headers_github_proxy
+
+    # 官方 GitHub 文件下载不需要 API Token。公开 release 会继续跳转到
+    # release-assets.githubusercontent.com；这里始终使用无 Authorization 请求头。
+    if (
+        host == "github.com"
+        or host.endswith(".github.com")
+        or host.endswith(".githubusercontent.com")
+    ):
+        return headers_github_download
+
+    # 自定义 URL、其他镜像和未知主机一律不携带 GitHub Token。
+    return headers_external
+
+
 # ============== 万象组件中文说明字典 ==============
 # 方案高级配置 元数据模型 (定义界面怎么显示、对应 yaml 什么路径)
 
@@ -1034,12 +1092,30 @@ class UpdateWorker(QThread):
                 except re.error:
                     self.log(f"[Warn] 无效的正则规则: {p}")
 
-        self.headers_cnb = {"User-Agent": "Mozilla/5.0", "Accept": "application/vnd.cnb.web+json"}
-        self.headers_gh = {"User-Agent": "Rime-Wanxiang-Tool"}
-        if self.cfg.github_token:
-            self.headers_gh["Authorization"] = f"Bearer {self.cfg.github_token}"
-        # 第三方 GitHub 代理专用，永远不添加 Authorization。
+        self.headers_cnb = {
+            "User-Agent": "Mozilla/5.0",
+            "Accept": "application/vnd.cnb.web+json",
+        }
+
+        # Token 仅用于 GitHub 官方 API。
+        self.headers_gh_api = _build_github_api_headers(
+            self.cfg.github_token
+        )
+
+        # GitHub 官方 release 下载不携带 Token。
+        self.headers_gh_download = {
+            "User-Agent": "Rime-Wanxiang-Tool",
+            "Accept-Encoding": "identity",
+        }
+
+        # 第三方 GitHub 代理永远不添加 Authorization。
         self.headers_gh_proxy = {
+            "User-Agent": "Rime-Wanxiang-Tool",
+            "Accept-Encoding": "identity",
+        }
+
+        # 自定义 URL 与其他未知来源也永远不携带 GitHub Token。
+        self.headers_external = {
             "User-Agent": "Rime-Wanxiang-Tool",
             "Accept-Encoding": "identity",
         }
@@ -1194,7 +1270,7 @@ class UpdateWorker(QThread):
             return self._api_cache[url]
 
         # 2. === 准备请求 ===
-        headers = {"Accept": "application/json"} if is_cnb else self.headers_gh
+        headers = {"Accept": "application/json"} if is_cnb else self.headers_gh_api
         
         # 3. === 发起网络请求 ===
         try:
@@ -1375,12 +1451,14 @@ class UpdateWorker(QThread):
                     if attempt > 1:
                         self.log(f"🔄 当前路线第 {attempt}/{max_retries} 次重试。")
 
-                    if "cnb.cool" in download_url:
-                        headers = self.headers_cnb
-                    elif using_github_proxy:
-                        headers = self.headers_gh_proxy
-                    else:
-                        headers = self.headers_gh
+                    headers = _download_headers_for_url(
+                        download_url,
+                        using_github_proxy=using_github_proxy,
+                        headers_cnb=self.headers_cnb,
+                        headers_github_download=self.headers_gh_download,
+                        headers_github_proxy=self.headers_gh_proxy,
+                        headers_external=self.headers_external,
+                    )
 
                     with requests.get(
                         download_url,
@@ -1880,9 +1958,13 @@ class UpdateWorker(QThread):
 class CheckUpdateWorker(QThread):
     result_sig = Signal(dict)
 
+    def __init__(self, github_token=""):
+        super().__init__()
+        self.headers = _build_github_api_headers(github_token)
+
     def run(self):
         results = {}
-        headers = {"User-Agent": "Rime-Wanxiang-Tool"}
+        headers = self.headers
         
         # 1. 检查软件自身版本
         try:
@@ -2352,7 +2434,9 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         self.status.setText("正在获取最新版本信息，请稍候...")
         self.log.appendPlainText(">>> 正在连接 API 获取最新版本...")
         
-        self.check_worker = CheckUpdateWorker() # 恢复原来的无参数调用
+        self.check_worker = CheckUpdateWorker(
+            self.upd_token.text()
+        )
         self.check_worker.result_sig.connect(self.on_check_update_result)
         self.check_worker.start()
         
@@ -3140,7 +3224,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
             scheme_type='base' if self.bg_ver.button(1).isChecked() else 'pro',
             aux_scheme=aux_key,
             rime_dir=rime_dir,
-            github_token=self.upd_token.text(),
+            github_token=_normalize_github_token(self.upd_token.text()),
             github_proxy=github_proxy,
             use_mirror=is_auto_mirror,
             whitelist=whitelist_lines,
