@@ -59,7 +59,7 @@ from PySide6.QtWidgets import (
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.1.0beta"
+TOOL_VERSION = "v3.2.0beta"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -1152,9 +1152,7 @@ class UpdateWorker(QThread):
             except Exception as e:
                 self.log(f"[Warn] 终止进程操作异常: {e}")
         elif SYSTEM_TYPE == 'macos':
-            try:
-                subprocess.run(['killall', 'Squirrel'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            except: pass
+            self.log("macOS 无需终止 Squirrel，保持进程运行以接收重新部署指令。")
 
 
     def _start_and_deploy(self):
@@ -1264,28 +1262,65 @@ class UpdateWorker(QThread):
                 pass
 
     def _get_api(self, url, is_cnb):
-        """获取 API 数据 (保持原样)"""
-        # 1. === 检查缓存 ===
+        """获取 API 数据；GitHub 凭据异常时允许无认证重试一次。"""
         if url in self._api_cache:
             return self._api_cache[url]
 
-        # 2. === 准备请求 ===
         headers = {"Accept": "application/json"} if is_cnb else self.headers_gh_api
-        
-        # 3. === 发起网络请求 ===
+
+        def request(current_headers):
+            return requests.get(url, headers=current_headers, timeout=15)
+
         try:
-            r = requests.get(url, headers=headers, timeout=15)
-            if r.status_code == 200:
-                data = r.json()
-                
-                # 4. === 写入缓存 (关键步骤) ===
+            response = request(headers)
+
+            if (
+                not is_cnb
+                and response.status_code in (401, 403)
+                and "Authorization" in headers
+            ):
+                self.log(
+                    f"[Warn] GitHub Token 请求返回 {response.status_code}，"
+                    "正在改用无认证 API 重试。"
+                )
+                response = request(_build_github_api_headers(""))
+
+            if response.status_code == 200:
+                data = response.json()
                 self._api_cache[url] = data
                 return data
-            else:
-                self.log(f"[Warn] API 请求失败 ({r.status_code}): {url}")
-                return None
-        except Exception as e:
-            self.log(f"[Warn] API 连接异常: {e}")
+
+            details = ""
+            try:
+                payload = response.json()
+                if isinstance(payload, dict):
+                    details = str(payload.get("message", "") or "").strip()
+            except Exception:
+                details = response.text.strip()[:200]
+
+            remaining = response.headers.get("X-RateLimit-Remaining", "")
+            reset_at = response.headers.get("X-RateLimit-Reset", "")
+            rate_info = ""
+            if remaining:
+                rate_info = f"，剩余额度 {remaining}"
+            if reset_at:
+                try:
+                    reset_text = time.strftime(
+                        "%Y-%m-%d %H:%M:%S",
+                        time.localtime(int(reset_at)),
+                    )
+                    rate_info += f"，重置时间 {reset_text}"
+                except (TypeError, ValueError, OverflowError):
+                    rate_info += f"，重置时间戳 {reset_at}"
+
+            suffix = f"：{details}" if details else ""
+            self.log(
+                f"[Warn] API 请求失败 ({response.status_code}{rate_info}): "
+                f"{url}{suffix}"
+            )
+            return None
+        except Exception as error:
+            self.log(f"[Warn] API 连接异常: {error}")
             return None
 
     def _check_url(self, repo_cnb, repo_gh, pattern, specific_tag=None, task_type=None):
@@ -1398,7 +1433,29 @@ class UpdateWorker(QThread):
                     for asset in rel.get('assets', []):
                         if fnmatch.fnmatch(asset['name'], pattern):
                             return extract_asset_info(asset, rel.get('tag_name', '0.0.0'))
-        
+
+        if task_type == '方案组件' and not self.cfg.use_mirror:
+            real_fn = (
+                f"rime-wanxiang-{self.cfg.aux_scheme}-fuzhu.zip"
+                if self.cfg.scheme_type == 'pro'
+                else "rime-wanxiang-base.zip"
+            )
+            self.log(
+                "🛟 方案组件：GitHub API 不可用，"
+                "改用 GitHub Latest 直链继续下载。"
+            )
+            return {
+                "url": (
+                    f"https://github.com/{OWNER}/{repo_gh}/"
+                    f"releases/latest/download/{real_fn}"
+                ),
+                "tag": "latest",
+                "src": "GitHub (Latest Direct)",
+                "hash": "",
+                "time": "",
+                "name": real_fn,
+            }
+
         return None
     def _download(self, url, dest, allow_slow_cnb_fallback=True):
         """按用户选择依次尝试下载路线，并校验下载内容。"""
@@ -1891,11 +1948,31 @@ class UpdateWorker(QThread):
                             else:
                                 real_source_dir = self._detect_smart_root(extract_temp, t_type)
 
+                            if t_type == '方案组件':
+                                version_path = os.path.join(real_source_dir, "version.txt")
+                                if os.path.isfile(version_path):
+                                    try:
+                                        package_version = Path(version_path).read_text(
+                                            encoding="utf-8"
+                                        ).strip()
+                                        if package_version.lower().startswith("v"):
+                                            package_version = package_version[1:]
+                                        if package_version:
+                                            task['ver'] = package_version
+                                    except Exception as error:
+                                        self.log(f"[Warn] 读取方案包版本失败：{error}")
+
                             self._safe_merge_dir(real_source_dir, dst_dir)
 
                         if not self.cfg.custom_url:
                             if t_type == '方案组件':
-                                self.version_sig.emit("方案组件", task['ver'])
+                                if task['ver'] != "latest":
+                                    self.version_sig.emit("方案组件", task['ver'])
+                                else:
+                                    self.log(
+                                        "[Warn] 方案包未提供可识别的 version.txt，"
+                                        "不覆盖本地版本记录。"
+                                    )
                             
                             # 【核心修改】：词库和模型：强行摒弃 Hash，强制使用时间作为版本标识！
                             elif t_type in ['词库组件', '语法模型']:

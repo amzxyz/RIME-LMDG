@@ -99,6 +99,79 @@ def _deploy_linux_ibus(log: LogCallback = None) -> Tuple[bool, str]:
         return False, f"IBus 重启失败：{error}"
 
 
+def _deploy_macos(log: LogCallback = None) -> Tuple[bool, str]:
+    """优先使用 Squirrel 自带的 --reload，旧版本再回退 AppleScript。"""
+    candidates = []
+    detected = shutil.which("Squirrel")
+    if detected:
+        candidates.append(detected)
+
+    candidates.extend([
+        "/Library/Input Methods/Squirrel.app/Contents/MacOS/Squirrel",
+        os.path.expanduser(
+            "~/Library/Input Methods/Squirrel.app/Contents/MacOS/Squirrel"
+        ),
+    ])
+
+    errors = []
+    seen = set()
+    for binary in candidates:
+        binary = os.path.abspath(binary)
+        if binary in seen or not os.path.isfile(binary):
+            continue
+        seen.add(binary)
+
+        _emit(log, f"📡 [macOS] 正在调用 Squirrel --reload：{binary}")
+        try:
+            subprocess.run(
+                [binary, "--reload"],
+                check=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+            )
+            return True, "macOS 鼠须管重新部署指令已发送。"
+        except subprocess.CalledProcessError as error:
+            details = (
+                error.stderr.decode("utf-8", errors="ignore").strip()
+                if error.stderr else "无详细错误信息"
+            )
+            errors.append(
+                f"Squirrel --reload 返回码 {error.returncode}：{details}"
+            )
+        except Exception as error:
+            errors.append(f"Squirrel --reload 调用异常：{error}")
+
+    osascript = shutil.which("osascript")
+    if osascript:
+        _emit(log, "📡 [macOS] 命令行重载不可用，尝试 AppleScript 兼容方式……")
+        try:
+            subprocess.run(
+                [
+                    osascript,
+                    "-e",
+                    'tell application "Squirrel" to reload configuration',
+                ],
+                check=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+            )
+            return True, "macOS 鼠须管部署通知已发送。"
+        except subprocess.CalledProcessError as error:
+            details = (
+                error.stderr.decode("utf-8", errors="ignore").strip()
+                if error.stderr else "无详细错误信息"
+            )
+            errors.append(
+                f"AppleScript 返回码 {error.returncode}：{details}"
+            )
+        except Exception as error:
+            errors.append(f"AppleScript 调用异常：{error}")
+
+    if not errors:
+        return False, "未找到 Squirrel 应用程序或 osascript，无法触发部署。"
+    return False, "macOS 部署失败：" + "；".join(errors)
+
+
 def deploy_rime_platform(
     system_type: str,
     *,
@@ -133,18 +206,7 @@ def deploy_rime_platform(
             return False, f"Windows 部署调用失败：{error}"
 
     if system_type == "macos":
-        try:
-            subprocess.run(
-                [
-                    "osascript",
-                    "-e",
-                    'tell application "Squirrel" to reload configuration',
-                ],
-                check=True,
-            )
-            return True, "macOS 鼠须管部署通知已发送。"
-        except Exception as error:
-            return False, f"macOS 部署调用失败：{error}"
+        return _deploy_macos(log)
 
     if system_type == "android/linux":
         im_system = detect_linux_im_system()
