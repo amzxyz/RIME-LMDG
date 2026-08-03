@@ -142,6 +142,35 @@ def _download_headers_for_url(
     return headers_external
 
 
+def _resolve_github_latest_tag(owner: str, repo: str) -> str:
+    """通过 GitHub 网页 latest 跳转解析标签，不消耗 REST API 额度。"""
+    latest_url = f"https://github.com/{owner}/{repo}/releases/latest"
+    headers = {
+        "User-Agent": "Rime-Wanxiang-Tool",
+        "Accept-Encoding": "identity",
+    }
+
+    try:
+        with requests.get(
+            latest_url,
+            headers=headers,
+            stream=True,
+            allow_redirects=True,
+            timeout=(5, 12),
+        ) as response:
+            if response.status_code != 200:
+                return ""
+
+            path = urlparse(response.url).path
+            marker = "/releases/tag/"
+            if marker not in path:
+                return ""
+
+            return path.split(marker, 1)[1].split("/", 1)[0].strip()
+    except Exception:
+        return ""
+
+
 # ============== 万象组件中文说明字典 ==============
 # 方案高级配置 元数据模型 (定义界面怎么显示、对应 yaml 什么路径)
 
@@ -1281,9 +1310,8 @@ class UpdateWorker(QThread):
             ):
                 self.log(
                     f"[Warn] GitHub Token 请求返回 {response.status_code}，"
-                    "正在改用无认证 API 重试。"
+                    "不再降级为匿名 API；后续改用非 API 下载路径。"
                 )
-                response = request(_build_github_api_headers(""))
 
             if response.status_code == 200:
                 data = response.json()
@@ -1322,6 +1350,50 @@ class UpdateWorker(QThread):
         except Exception as error:
             self.log(f"[Warn] API 连接异常: {error}")
             return None
+
+    def _get_github_latest_scheme(self, repo_gh, reason=""):
+        """不依赖 GitHub API 获取方案包；能解析标签时仍可正常比较版本。"""
+        real_fn = (
+            f"rime-wanxiang-{self.cfg.aux_scheme}-fuzhu.zip"
+            if self.cfg.scheme_type == "pro"
+            else "rime-wanxiang-base.zip"
+        )
+
+        if reason:
+            self.log(reason)
+
+        latest_tag = _resolve_github_latest_tag(OWNER, repo_gh)
+        if latest_tag:
+            self.log(
+                f">>> 方案组件: 通过 GitHub Latest 跳转识别版本 [{latest_tag}]"
+            )
+            return {
+                "url": (
+                    f"https://github.com/{OWNER}/{repo_gh}/"
+                    f"releases/download/{latest_tag}/{real_fn}"
+                ),
+                "tag": latest_tag,
+                "src": "GitHub (Latest Redirect)",
+                "hash": "",
+                "time": "",
+                "name": real_fn,
+            }
+
+        self.log(
+            ">>> 方案组件: 无法解析 Latest 标签，"
+            "直接使用 releases/latest/download 下载。"
+        )
+        return {
+            "url": (
+                f"https://github.com/{OWNER}/{repo_gh}/"
+                f"releases/latest/download/{real_fn}"
+            ),
+            "tag": "latest",
+            "src": "GitHub (Latest Direct)",
+            "hash": "",
+            "time": "",
+            "name": real_fn,
+        }
 
     def _check_url(self, repo_cnb, repo_gh, pattern, specific_tag=None, task_type=None):
         # ==================== [核心修改：双通道硬编码直链 (同时支持 CNB 与 GitHub)] ====================
@@ -1393,6 +1465,16 @@ class UpdateWorker(QThread):
         if cnb_info: return cnb_info
 
         # 2. === 检查 GitHub ===
+        if (
+            task_type == "方案组件"
+            and not self.cfg.use_mirror
+            and not _normalize_github_token(self.cfg.github_token)
+        ):
+            return self._get_github_latest_scheme(
+                repo_gh,
+                ">>> 方案组件: 未填写 GitHub Token，跳过 API 检查。",
+            )
+
         self.log(f">>> {task_type} 检查: 通过 API 获取")
         gh_urls = [
             f"https://api.github.com/repos/{OWNER}/{repo_gh}/releases/tags/{specific_tag}" if specific_tag else None,
@@ -1434,27 +1516,12 @@ class UpdateWorker(QThread):
                         if fnmatch.fnmatch(asset['name'], pattern):
                             return extract_asset_info(asset, rel.get('tag_name', '0.0.0'))
 
-        if task_type == '方案组件' and not self.cfg.use_mirror:
-            real_fn = (
-                f"rime-wanxiang-{self.cfg.aux_scheme}-fuzhu.zip"
-                if self.cfg.scheme_type == 'pro'
-                else "rime-wanxiang-base.zip"
+        if task_type == "方案组件" and not self.cfg.use_mirror:
+            return self._get_github_latest_scheme(
+                repo_gh,
+                "🛟 方案组件：GitHub Token/API 不可用，"
+                "改用 GitHub Latest 非 API 路径。",
             )
-            self.log(
-                "🛟 方案组件：GitHub API 不可用，"
-                "改用 GitHub Latest 直链继续下载。"
-            )
-            return {
-                "url": (
-                    f"https://github.com/{OWNER}/{repo_gh}/"
-                    f"releases/latest/download/{real_fn}"
-                ),
-                "tag": "latest",
-                "src": "GitHub (Latest Direct)",
-                "hash": "",
-                "time": "",
-                "name": real_fn,
-            }
 
         return None
     def _download(self, url, dest, allow_slow_cnb_fallback=True):
