@@ -79,12 +79,7 @@ DEFAULT_WL_REGEX = [
 ]
 
 
-
-
-
-# =====================================================================
 # 尝试导入 ruamel.yaml (用于安全修改 Rime 配置文件)
-# =====================================================================
 def _normalize_github_token(raw_token: str) -> str:
     """只保留 Token 本体，避免用户粘贴 Bearer/token 前缀后重复拼接。"""
     token = str(raw_token or "").strip()
