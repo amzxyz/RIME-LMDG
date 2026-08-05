@@ -128,17 +128,6 @@ def _download_headers_for_url(
 
     return headers_external
 
-
-# ============== 万象组件中文说明字典 ==============
-# 方案高级配置 元数据模型 (定义界面怎么显示、对应 yaml 什么路径)
-
-# =====================================================================
-# 左侧菜单：文件分类与索引元数据
-# =====================================================================
-# ============== 键盘按键与 Rime 标识符映射表 ==============
-
-# 辅助函数：安全读写嵌套字典 (全面支持 Rime 的 @0 数组语法)
-
 # —— GitHub 链接 ——
 GITHUB_LINKS = [
     ("万象拼音项目主页", "https://github.com/amzxyz/rime-wanxiang"),
@@ -1199,7 +1188,7 @@ class UpdateWorker(QThread):
                 pass
 
     def _get_api(self, url, is_cnb):
-        """获取 API 数据；GitHub 凭据异常时允许无认证重试一次。"""
+        """获取 API 数据，并将 GitHub 凭据与限额错误转换为易懂提示。"""
         if url in self._api_cache:
             return self._api_cache[url]
 
@@ -1210,16 +1199,6 @@ class UpdateWorker(QThread):
 
         try:
             response = request(headers)
-
-            if (
-                not is_cnb
-                and response.status_code in (401, 403)
-                and "Authorization" in headers
-            ):
-                self.log(
-                    f"[Warn] GitHub Token 请求返回 {response.status_code}，"
-                    "不再降级为匿名 API；后续改用非 API 下载路径。"
-                )
 
             if response.status_code == 200:
                 data = response.json()
@@ -1236,19 +1215,43 @@ class UpdateWorker(QThread):
 
             remaining = response.headers.get("X-RateLimit-Remaining", "")
             reset_at = response.headers.get("X-RateLimit-Reset", "")
-            rate_info = ""
-            if remaining:
-                rate_info = f"，剩余额度 {remaining}"
+            reset_hint = ""
             if reset_at:
                 try:
                     reset_text = time.strftime(
                         "%Y-%m-%d %H:%M:%S",
                         time.localtime(int(reset_at)),
                     )
-                    rate_info += f"，重置时间 {reset_text}"
+                    reset_hint = f"（预计 {reset_text} 恢复）"
                 except (TypeError, ValueError, OverflowError):
-                    rate_info += f"，重置时间戳 {reset_at}"
+                    pass
 
+            # GitHub API 限额提示使用用户可理解的文案，不输出整段英文错误和 URL。
+            if not is_cnb and response.status_code == 403 and (
+                remaining == "0" or "rate limit" in details.lower()
+            ):
+                if "Authorization" in headers:
+                    self.log(
+                        "[提示] 当前 GitHub Token 的 API 额度已耗尽，"
+                        f"请稍后重试或更换个人 Token。{reset_hint}"
+                    )
+                else:
+                    self.log(
+                        "[提示] 当前公网 IP 的 GitHub 匿名 API 额度已耗尽，"
+                        "请在“Token”栏填写个人 GitHub Token 后重试。"
+                        f"{reset_hint}"
+                    )
+                return None
+
+            if not is_cnb and "Authorization" in headers:
+                if response.status_code == 401:
+                    self.log("[提示] GitHub Token 无效或已过期，请检查后重试。")
+                    return None
+                if response.status_code == 403:
+                    self.log("[提示] GitHub Token 请求被拒绝，请检查 Token 权限或状态。")
+                    return None
+
+            rate_info = f"，剩余额度 {remaining}" if remaining else ""
             suffix = f"：{details}" if details else ""
             self.log(
                 f"[Warn] API 请求失败 ({response.status_code}{rate_info}): "
