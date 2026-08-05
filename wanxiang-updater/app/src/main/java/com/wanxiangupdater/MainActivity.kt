@@ -1033,7 +1033,7 @@ fun WanxiangDownloaderApp() {
                             supportingText = {
                                 Text(
                                     githubApiHint.ifBlank {
-                                        "匿名 IP 的 GitHub 请求额度可能被多人共享并耗尽。Token 仅发送给 GitHub；选择 CNB 时也只用于官方 API 和静默短请求，不会发送给 CNB。"
+                                        "选择GitHub时，匿名 IP 的请求额度可能被多人共享并耗尽，请填写Token。"
                                     },
                                     fontSize = 10.sp,
                                     color = if (githubApiHint.contains("耗尽") || githubApiHint.contains("受限")) {
