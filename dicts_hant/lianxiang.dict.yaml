@@ -2393,6 +2393,7 @@ sort: by_weight
 保稅燃料油	bǎo shuì rán liào yóu	10
 保送研究生	bǎo sòng yán jiū shēng	10
 寶塔鎮河妖	bǎo tǎ zhèn hé yāo	10
+抱太大希望	bào tài dà xī wàng	1
 寶檀華菩薩	bǎo tán huá pú sà	10
 鮑特維尼克	bào tè wéi ní kè	10
 暴殄天物啊	bào tiǎn tiān wù a	10
@@ -3774,8 +3775,8 @@ sort: by_weight
 筆者的觀點	bǐ zhě de guān diǎn	10
 閉着的眼睛	bì zhe de yǎn jing	10
 筆者了解到	bǐ zhě liǎo jiě dào	10
-閉着眼睛買	bì zhe yǎn jīng mǎi	10
-閉着眼睛選	bì zhe yǎn jīng xuǎn	10
+閉着眼睛買	bì zhe yǎn jing mǎi	10
+閉着眼睛選	bì zhe yǎn jing xuǎn	10
 筆者注意到	bǐ zhě zhù yì dào	10
 逼真的場景	bī zhēn de chǎng jǐng	10
 逼真的畫面	bī zhēn de huà miàn	10
@@ -5634,6 +5635,7 @@ sort: by_weight
 不鏽鋼沖壓	bú xiù gāng chòng yā	10
 不鏽鋼櫥櫃	bú xiù gāng chú guì	10
 不鏽鋼廚具	bú xiù gāng chú jù	10
+不鏽鋼導環	bú xiù gāng dǎo huán	1
 不鏽鋼刀具	bú xiù gāng dāo jù	10
 不鏽鋼法蘭	bú xiù gāng fǎ lán	10
 不鏽鋼封頭	bú xiù gāng fēng tóu	10
@@ -6902,6 +6904,7 @@ sort: by_weight
 長距粉蝶蘭	cháng jù fěn dié lán	10
 長距根節蘭	cháng jù gēn jié lán	10
 長距離輸電	cháng jù lí shū diàn	10
+長距離拖拽	cháng jù lí tuō zhuài	1
 長距離行駛	cháng jù lí xíng shǐ	10
 長距美冠蘭	cháng jù měi guān lán	10
 長距舌唇蘭	cháng jù shé chún lán	10
@@ -7784,6 +7787,7 @@ sort: by_weight
 沉睡的心靈	chén shuì de xīn líng	10
 沉睡的兇猛	chén shuì de xiōng měng	10
 沉睡的雄獅	chén shuì de xióng shī	10
+沉水助投器	chén shuǐ zhù tóu qì	1
 陳思誠監製	chén sī chéng jiān zhì	10
 辰巳奈都子	chén sì nài dōu zǐ	10
 陳塘莊鐵路	chén táng zhuāng tiě lù	10
@@ -9298,6 +9302,8 @@ sort: by_weight
 創建和編輯	chuàng jiàn hé biān jí	10
 創近年新高	chuàng jìn nián xīn gāo	10
 窗口程序集	chuāng kǒu chéng xù jí	10
+窗口期縮短	chuāng kǒu qī suō duǎn	1
+窗口期延長	chuāng kǒu qī yán cháng	1
 窗口式空調	chuāng kǒu shì kōng tiáo	10
 窗裡的女人	chuāng lǐ de nǚ rén	10
 創歷史新低	chuàng lì shǐ xīn dī	10
@@ -10530,7 +10536,9 @@ sort: by_weight
 達爾文結節	dá ěr wén jié jié	10
 達爾文主義	dá ěr wén zhǔ yì	10
 打翻醋罈子	dǎ fān cù tán zi	10
+大範圍覆蓋	dà fàn wéi fù gài	1
 大範圍降雨	dà fàn wéi jiàng yǔ	10
+大範圍搜索	dà fàn wéi sōu suǒ	1
 打防守反擊	dǎ fáng shǒu fǎn jī	10
 大飛機項目	dà fēi jī xiàng mù	10
 達芬奇家居	dá fēn qí jiā jū	10
@@ -15255,6 +15263,8 @@ sort: by_weight
 短間期假象	duǎn jiān qī jiǎ xiàng	10
 斷腳的小鳥	duàn jiǎo de xiǎo niǎo	10
 短進程優先	duǎn jìn chéng yōu xiān	10
+短距離衝刺	duǎn jù lí chōng cì	1
+短距離拖拽	duǎn jù lí tuō zhuài	1
 短距離無線	duǎn jù lí wú xiàn	10
 短距起落機	duǎn jù qǐ luò jī	10
 短孔甲蟎股	duǎn kǒng jiǎ mǎn gǔ	10
@@ -15350,6 +15360,7 @@ sort: by_weight
 短翼岩黃耆	duǎn yì yán huáng qí	10
 短翼巖黃芪	duǎn yì yán huáng qí	10
 段譽和虛竹	duàn yù hé xū zhú	10
+短暫窗口期	duǎn zàn chuāng kǒu qī	1
 短暫的愛情	duǎn zàn de ài qíng	10
 短暫的春天	duǎn zàn de chūn tiān	10
 短暫的分別	duǎn zàn de fēn bié	10
@@ -16369,6 +16380,7 @@ sort: by_weight
 二里頭遺址	èr lǐ tou yí zhǐ	10
 餌料的味型	ěr liào de wèi xíng	10
 餌料的狀態	ěr liào de zhuàng tài	10
+餌料富集區	ěr liào fù jí qū	1
 二裂委陵菜	èr liè wěi líng cài	10
 二裂銀杏葉	èr liè yín xìng yè	10
 二磷甘油醛	èr lín gān yóu quán	10
@@ -17474,6 +17486,8 @@ sort: by_weight
 方差比檢定	fāng chā bǐ jiǎn dìng	10
 方差的分量	fāng chā de fèn liàng	10
 房產空置稅	fáng chǎn kōng zhì shuì	10
+防纏繞導環	fáng chán rào dǎo huán	1
+防纏繞套管	fáng chán rào tào guǎn	1
 房產稅開徵	fáng chǎn shuì kāi zhēng	10
 房產稅試點	fáng chǎn shuì shì diǎn	10
 房產信息網	fáng chǎn xìn xī wǎng	10
@@ -19642,6 +19656,7 @@ sort: by_weight
 復幾何定理	fù jǐ hé dìng lǐ	10
 弗吉尼亞州	fú jí ní yà zhōu	10
 富基瓦里納	fù jī wǎ lǐ nà	10
+伏擊型魚種	fú jī xíng yú zhǒng	1
 伏季休漁期	fú jì xiū yú qī	10
 富基亞沙列	fù jī yà shā liè	10
 富家大小姐	fù jiā dà xiǎo jiě	10
@@ -20015,6 +20030,7 @@ sort: by_weight
 附屬消化腺	fù shǔ xiāo huà xiàn	10
 複數選區制	fù shù xuǎn qū zhì	10
 腐熟有機肥	fǔ shú yǒu jī féi	10
+浮水助投器	fú shuǐ zhù tóu qì	1
 福斯二氏法	fú sī èr shì fǎ	10
 副司令長官	fù sī lìng zhǎng guān	10
 福斯羅公司	fú sī luó gōng sī	10
@@ -20143,6 +20159,7 @@ sort: by_weight
 複相關係數	fù xiāng guān xì shù	10
 復向量空間	fù xiàng liàng kōng jiān	10
 蝠翔似黑潮	fú xiáng sì hēi cháo	10
+拂曉窗口期	fú xiǎo chuāng kǒu qī	1
 拂曉的尤娜	fú xiǎo de yóu nà	10
 復消色差的	fù xiāo sè chā de	10
 復消色差鏡	fù xiāo sè chā jìng	10
@@ -20207,6 +20224,7 @@ sort: by_weight
 婦幼保健所	fù yòu bǎo jiàn suǒ	10
 婦幼保健院	fù yòu bǎo jiàn yuàn	10
 婦幼保健站	fù yòu bǎo jiàn zhàn	10
+浮游生物帶	fú yóu shēng wù dài	1
 浮游生物學	fú yóu shēng wù xué	10
 富於表現力	fù yú biǎo xiàn lì	10
 復與不癒者	fù yǔ bú yù zhě	10
@@ -20965,6 +20983,7 @@ sort: by_weight
 搞不清楚的	gǎo bù qīng chu de	10
 搞不清楚了	gǎo bù qīng chu le	10
 搞不下去了	gǎo bú xià qù le	10
+高產似母豬	gāo chǎn sì mǔ zhū	10
 高昌回鶻國	gāo chāng huí hú guó	10
 高場原種場	gāo chǎng yuán zhǒng chǎng	10
 高超的廚藝	gāo chāo de chú yì	10
@@ -23316,6 +23335,7 @@ sort: by_weight
 古典相容的	gǔ diǎn xiāng róng de	10
 古典學學者	gǔ diǎn xué xué zhě	10
 古典與時尚	gǔ diǎn yǔ shí shàng	10
+固定窗口期	gù dìng chuāng kǒu qī	1
 固定候選項	gù dìng hòu xuǎn xiàng	10
 固定匯率制	gù dìng huì lǜ zhì	10
 固定價合同	gù dìng jià hé tong	10
@@ -26139,6 +26159,7 @@ sort: by_weight
 河北唐山的	hé běi táng shān de	10
 河北體育館	hé běi tǐ yù guǎn	10
 河北外國語	hé běi wài guó yǔ	10
+河北信德社	hé běi xìn dé shè	10
 河北醫科大	hé běi yī kē dà	10
 河北醫學院	hé běi yī xué yuàn	10
 河北游擊軍	hé běi yóu jī jūn	10
@@ -28555,6 +28576,7 @@ sort: by_weight
 幻彩藍砂岩	huàn cǎi lán shā yán	10
 幻彩詠香江	huàn cǎi yǒng xiāng jiāng	10
 環巢湖大道	huán cháo hú dà dào	10
+緩沉助投器	huǎn chén zhù tóu qì	1
 環城北路口	huán chéng běi lù kǒu	10
 環城北路站	huán chéng běi lù zhàn	10
 換乘層換乘	huàn chéng céng huàn chéng	10
@@ -28979,6 +29001,7 @@ sort: by_weight
 煌華新紀元	huáng huá xīn jì yuán	10
 黃花巖報春	huáng huā yán bào chūn	10
 慌慌張張地	huāng huāng zhāng zhāng de	10
+黃昏窗口期	huáng hūn chuāng kǒu qī	1
 黃昏的廣場	huáng hūn de guǎng chǎng	10
 黃昏的角落	huáng hūn de jiǎo luò	10
 黃昏黎糜覺	huáng hūn lí mí jué	10
@@ -34078,6 +34101,7 @@ sort: by_weight
 解題的思路	jiě tí de sī lù	10
 階梯金字塔	jiē tī jīn zì tǎ	10
 階梯式遞進	jiē tī shì dì jìn	10
+階梯式搜尋	jiē tī shì sōu xún	1
 潔體西施露	jié tǐ xī shī lù	10
 階梯形基礎	jiē tī xíng jī chǔ	10
 階梯形矩陣	jiē tī xíng jǔ zhèn	10
@@ -34243,6 +34267,7 @@ sort: by_weight
 金道貴金屬	jīn dào guì jīn shǔ	10
 金德爾伯格	jīn dé ěr bó gé	10
 金燈寺石窟	jīn dēng sì shí kū	10
+近底層活動	jìn dǐ céng huó dòng	1
 近地球軌道	jìn dì qiú guǐ dào	10
 近地小行星	jìn dì xiǎo xíng xīng	10
 盡地主之誼	jìn dì zhǔ zhī yì	10
@@ -39405,7 +39430,7 @@ sort: by_weight
 朗之萬函數	lǎng zhī wàn hán shù	10
 朗之萬理論	lǎng zhī wàn lǐ lùn	10
 朗之萬振子	lǎng zhī wàn zhèn zǐ	10
-閬中清真寺	láng zhōng qīng zhēn sì	10
+閬中清真寺	làng zhōng qīng zhēn sì	10
 浪逐千秋峯	làng zhú qiān qiū fēng	10
 勞埃德大廈	láo āi dé dà shà	10
 勞埃德蘭丁	láo āi dé lán dīng	10
@@ -39849,6 +39874,7 @@ sort: by_weight
 冷漠與溫柔	lěng mò yǔ wēn róu	10
 冷凝集試驗	lěng níng jí shì yàn	10
 冷凝洩水器	lěng níng xiè shuǐ qì	10
+冷暖流交匯	lěng nuǎn liú jiāo huì	1
 冷卻時間短	lěng què shí jiān duǎn	10
 冷卻脫水法	lěng què tuō shuǐ fǎ	10
 冷缺血時間	lěng quē xuè shí jiān	10
@@ -40360,7 +40386,7 @@ sort: by_weight
 力微休負重	lì wēi xiū fù zhòng	10
 禮文化產業	lǐ wén huà chǎn yè	10
 麗紋石龍子	lì wén shí lóng zǐ	10
-麗文正經話	lì wén zhèng jīng huà	10
+麗文正經話	lì wén zhèng jing huà	10
 裏沃二氏法	lǐ wò èr shì fǎ	10
 裏沃利戰役	lǐ wò lì zhàn yì	10
 離我遠點兒	lí wǒ yuǎn diǎn er	10
@@ -46016,6 +46042,7 @@ sort: by_weight
 那時候還小	nà shí hou hái xiǎo	10
 拿世界冠軍	ná shì jiè guàn jūn	10
 拿實力說話	ná shí lì shuō huà	10
+那是你的事	nà shì nǐ de shì	1
 那時年少啊	nà shí nián shào a	10
 那時我還小	nà shí wǒ hái xiǎo	10
 那時月正圓	nà shí yuè zhèng yuán	10
@@ -50747,6 +50774,7 @@ sort: by_weight
 熗炒圓白菜	qiàng chǎo yuán bái cài	10
 牆承重結構	qiáng chéng zhòng jié gòu	10
 強詞奪理的	qiǎng cí duó lǐ de	10
+強磁拉餌盤	qiáng cí lā ěr pán	1
 強大的背景	qiáng dà de bèi jǐng	10
 強大的攻勢	qiáng dà de gōng shì	10
 強大的國力	qiáng dà de guó lì	10
@@ -52014,6 +52042,7 @@ sort: by_weight
 清新綠茶的	qīng xīn lǜ chá de	10
 青心烏龍茶	qīng xīn wū lóng chá	10
 輕型衝鋒槍	qīng xíng chōng fēng qiāng	10
+輕型大物竿	qīng xíng dà wù gān	1
 輕型電動車	qīng xíng diàn dòng chē	10
 輕型鋼結構	qīng xíng gāng jié gòu	10
 輕型攻擊機	qīng xíng gōng jī jī	10
@@ -63699,6 +63728,7 @@ sort: by_weight
 太昊伏羲氏	tài hào fú xī shì	10
 太和城遺址	tài hé chéng yí zhǐ	10
 太和宮金殿	tài hé gōng jīn diàn	10
+鈦合金竿稍	tài hé jīn gān shāo	1
 太合立志傳	tài hé lì zhì zhuàn	10
 太和巖牌樓	tài hé yán pái lóu	10
 太后老佛爺	tài hòu lǎo fó yé	10
@@ -65416,6 +65446,7 @@ sort: by_weight
 鐵甲小騎士	tiě jiǎ xiǎo qí shì	10
 鐵腳蜈蚣根	tiě jiǎo wú gōng gēn	10
 鐵叫子樂和	tiě jiào zi lè he	10
+貼結構遊走	tiē jié gòu yóu zǒu	1
 鐵結合蛋白	tiě jié hé dàn bái	10
 鐵礦石貿易	tiě kuàng shí mào yì	10
 鐵礦石品位	tiě kuàng shí pǐn wèi	10
@@ -69667,6 +69698,7 @@ sort: by_weight
 五桂山山脈	wǔ guì shān shān mài	10
 五桂山主峰	wǔ guì shān zhǔ fēng	10
 無硅洗髮水	wú guī xǐ fà shuǐ	10
+無規則飄落	wú guī zé piāo luò	1
 舞棍俱樂部	wǔ gùn jù lè bù	10
 無國籍人士	wú guó jí rén shì	10
 無國界醫師	wú guó jiè yī shī	10
@@ -73269,6 +73301,7 @@ sort: by_weight
 蕭爾演算法	xiāo ěr yǎn suàn fǎ	10
 小反芻獸疫	xiǎo fǎn chú shòu yì	10
 小販疏導區	xiǎo fàn shū dǎo qū	10
+小範圍搜魚	xiǎo fàn wéi sōu yú	1
 小方格表法	xiǎo fāng gé biǎo fǎ	10
 小方格網法	xiǎo fāng gé wǎng fǎ	10
 消防救援局	xiāo fáng jiù yuán jú	10
@@ -73937,6 +73970,7 @@ sort: by_weight
 小遊戲合集	xiǎo yóu xì hé jí	10
 小油櫛蟲區	xiǎo yóu zhì chóng qū	10
 小油櫛蟲統	xiǎo yóu zhì chóng tǒng	10
+小魚避難區	xiǎo yú bì nàn qū	1
 小魚吃大蝦	xiǎo yú chī dà xiā	10
 小尉遲孫新	xiǎo yù chí sūn xīn	10
 小魚吃蝦米	xiǎo yú chī xiā mǐ	10
@@ -76562,6 +76596,7 @@ sort: by_weight
 尋醫問藥網	xún yī wèn yào wǎng	10
 迅遊加速器	xùn yóu jiā sù qì	10
 巡遊型病人	xún yóu xíng bìng rén	10
+巡遊型魚種	xún yóu xíng yú zhǒng	1
 鱘魚級潛艇	xún yú jí qián tǐng	10
 尋找的答案	xún zhǎo de dá àn	10
 尋找的東西	xún zhǎo de dōng xi	10
@@ -77076,6 +77111,7 @@ sort: by_weight
 眼角膜移植	yǎn jiǎo mó yí zhí	10
 眼界的開闊	yǎn jiè de kāi kuò	10
 眼潔滴眼露	yǎn jié dī yǎn lù	10
+沿結構搜索	yán jié gòu sōu suǒ	1
 眼界和格局	yǎn jiè hé gé jú	10
 嚴謹的工藝	yán jǐn de gōng yì	10
 巖津松平氏	yán jīn sōng píng shì	10
@@ -77913,7 +77949,7 @@ sort: by_weight
 搖滾樂之王	yáo gǔn yuè zhī wáng	10
 瑤海公園站	yáo hǎi gōng yuán zhàn	10
 瑤海停保場	yáo hǎi tíng bǎo chǎng	10
-要好好活着	yāo hǎo hǎo huó zhe	10
+要好好活着	yào hǎo hǎo huó zhe	10
 搖號中籤率	yáo hào zhòng qiān lǜ	10
 咬頜不平衡	yǎo hé bù píng héng	10
 要喝點茶嗎	yào hē diǎn chá ma	10
@@ -78051,7 +78087,7 @@ sort: by_weight
 搖曳碧雲斜	yáo yè bì yún xié	10
 搖曳的身姿	yáo yè de shēn zī	10
 搖曳的燭光	yáo yè de zhú guāng	10
-要一本正經	yào yì běn zhèng jīng	10
+要一本正經	yào yì běn zhèng jing	10
 要一分為二	yào yì fēn wéi èr	10
 鷂鷹巖水庫	yào yīng yán shuǐ kù	10
 藥用價值高	yào yòng jià zhí gāo	10
@@ -82486,6 +82522,8 @@ sort: by_weight
 優異的質量	yōu yì de zhì liàng	10
 有一定幾率	yǒu yí dìng jī lǜ	10
 有一對翅膀	yǒu yí duì chì bǎng	10
+有一個人是	yǒu yí gè rén shì	12
+有一個認識	yǒu yí gè rèn shi	10
 有一個世界	yǒu yí gè shì jiè	10
 又一個世界	yòu yí gè shì jiè	10
 又一個十年	yòu yí gè shí nián	10
@@ -88479,6 +88517,7 @@ sort: by_weight
 終身的事業	zhōng shēn de shì yè	10
 終身僱用制	zhōng shēn gù yòng zhì	10
 終身僱傭制	zhōng shēn gù yōng zhì	10
+中深海作釣	zhōng shēn hǎi zuò diào	1
 眾神與國王	zhòng shén yǔ guó wáng	10
 眾神與將軍	zhòng shén yǔ jiāng jūn	10
 眾神與野獸	zhòng shén yǔ yě shòu	10
@@ -89766,6 +89805,7 @@ sort: by_weight
 錐花絲石竹	zhuī huā sī shí zhú	10
 墜毀的飛機	zhuì huǐ de fēi jī	10
 追及和相遇	zhuī jí hé xiāng yù	10
+追擊型魚種	zhuī jī xíng yú zhǒng	1
 椎間盤變性	zhuī jiān pán biàn xìng	10
 椎間盤疾患	zhuī jiān pán jí huàn	10
 椎間盤膨出	zhuī jiān pán péng chū	10
@@ -94139,7 +94179,7 @@ sort: by_weight
 必有去故之悲	bì yǒu qù gù zhī bēi	10
 閉月羞花之貌	bì yuè xiū huā zhī mào	10
 碧雲國際社區	bì yún guó jì shè qū	10
-閉着眼睛走路	bì zhe yǎn jīng zǒu lù	10
+閉着眼睛走路	bì zhe yǎn jing zǒu lù	10
 必治妥施貴寶	bì zhì tuǒ shī guì bǎo	10
 避之唯恐不及	bì zhī wéi kǒng bù jí	10
 鼻中隔骨嵴刺	bí zhōng gé gǔ jǐ cì	10
@@ -95669,7 +95709,7 @@ sort: by_weight
 不正當的關係	bú zhèng dāng de guān xì	10
 不正當的手段	bú zhèng dāng de shǒu duàn	10
 不正當競爭案	bú zhèng dāng jìng zhēng àn	10
-不正經的女人	bú zhèng jīng de nǚ rén	10
+不正經的女人	bú zhèng jing de nǚ rén	10
 不正確的姿勢	bú zhèng què de zī shì	10
 不正確的坐姿	bú zhèng què de zuò zī	10
 不知彼而知己	bù zhī bǐ ér zhī jǐ	10
@@ -96742,6 +96782,7 @@ sort: by_weight
 塵歸塵土歸土	chén guī chén tǔ guī tǔ	10
 宸鴻光電科技	chén hóng guāng diàn kē jì	10
 陳化成紀念館	chén huà chéng jì niàn guǎn	10
+晨昏活躍魚種	chén hūn huó yuè yú zhǒng	1
 沉火山角礫岩	chén huǒ shān jiǎo lì yán	10
 沉火山碎屑巖	chén huǒ shān suì xiè yán	10
 沉積變質礦床	chén jī biàn zhì kuàng chuáng	10
@@ -98592,7 +98633,6 @@ sort: by_weight
 大孔徑穿流板	dà kǒng jìng chuān liú bǎn	10
 大孔吸附樹脂	dà kǒng xī fù shù zhī	10
 大口大口地喫	dà kǒu dà kǒu de chī	10
-大口大口的喫	dà kǒu dà kǒu de chī	10
 大口徑截止閥	dà kǒu jìng jié zhǐ fá	12
 大口徑止回閥	dà kǒu jìng zhǐ huí fá	12
 達庫尼亞鳥類	dá kù ní yà niǎo lèi	10
@@ -100910,7 +100950,7 @@ sort: by_weight
 都能如願以償	dōu néng rú yuàn yǐ cháng	10
 都普金屬部分	dōu pǔ jīn shǔ bù fen	10
 都普金屬部件	dōu pǔ jīn shǔ bù jiàn	10
-都是閉着眼睛	dōu shì bì zhe yǎn jīng	10
+都是閉着眼睛	dōu shì bì zhe yǎn jing	10
 都是不合理的	dōu shì bù hé lǐ de	10
 都是過眼雲煙	dōu shì guò yǎn yún yān	10
 都是很垃圾的	dōu shì hěn lā jī de	10
@@ -108712,7 +108752,7 @@ sort: by_weight
 恨鐵不成鋼啊	hèn tiě bù chéng gāng a	10
 很微妙的感覺	hěn wēi miào de gǎn jué	10
 很危險的東西	hěn wēi xiǎn de dōng xi	10
-很要好的朋友	hěn yāo hǎo de péng you	10
+很要好的朋友	hěn yào hǎo de péng you	10
 很遙遠的事情	hěn yáo yuǎn de shì qíng	10
 很有紀念意義	hěn yǒu jì niàn yì yì	10
 很有意義的事	hěn yǒu yì yì de shì	10
@@ -114601,6 +114641,7 @@ sort: by_weight
 卡林頓子午圈	kǎ lín dùn zǐ wǔ quān	10
 卡魯查克萊因	kǎ lǔ chá kè lái yīn	10
 卡絡磺鈉凍乾	kǎ luò huáng nà dòng gān	10
+卡羅萊納釣組	kǎ luó lái nà diào zǔ	1
 喀羅尼亞戰役	kā luó ní yà zhàn yì	10
 卡羅瑟斯方程	kǎ luó sè sī fāng chéng	10
 卡洛維茨條約	kǎ luò wéi cí tiáo yuē	10
@@ -120509,7 +120550,7 @@ sort: by_weight
 尼亞加拉半島	ní yà jiā lā bàn dǎo	10
 尼亞加拉瀑布	ní yà jiā lā pù bù	10
 你眼中的世界	nǐ yǎn zhōng de shì jiè	10
-你要好好把握	nǐ yāo hǎo hǎo bǎ wò	10
+你要好好把握	nǐ yào hǎo hǎo bǎ wò	10
 你要去的地方	nǐ yào qù de dì fāng	10
 你也是人類嗎	nǐ yě shì rén lèi ma	10
 你爺爺的奶奶	nǐ yé ye de nǎi nai	10
@@ -124794,6 +124835,7 @@ sort: by_weight
 如此高的評價	rú cǐ gāo de píng jià	10
 如此厚顏無恥	rú cǐ hòu yán wú chǐ	10
 如此歡樂童年	rú cǐ huān lè tóng nián	10
+如此簡單點事	rú cǐ jiǎn dān diǎn shì	1
 如此驚心動魄	rú cǐ jīng xīn dòng pò	10
 如此明目張膽	rú cǐ míng mù zhāng dǎn	10
 如此與眾不同	rú cǐ yǔ zhòng bù tóng	10
@@ -130439,6 +130481,7 @@ sort: by_weight
 抬頭的一瞬間	tái tóu de yí shùn jiān	10
 臺灣成功大學	tái wān chéng gōng dà xué	10
 臺灣傳統食品	tái wān chuán tǒng shí pǐn	10
+臺灣積體電路	tái wān jī tǐ diàn lù	10
 臺灣交通大學	tái wān jiāo tōng dà xué	10
 臺灣清華大學	tái wān qīng huá dà xué	10
 臺西基督教會	tái xī jī dū jiào huì	10
@@ -136037,7 +136080,6 @@ sort: by_weight
 小心背後有鬼	xiǎo xīn bèi hòu yǒu guǐ	10
 小心眼的男人	xiǎo xīn yǎn de nán rén	10
 小心翼翼地看	xiǎo xīn yì yì de kàn	10
-小心翼翼的問	xiǎo xīn yì yì de wèn	10
 小心翼翼地問	xiǎo xīn yì yì de wèn	10
 小型哺乳動物	xiǎo xíng bǔ rǔ dòng wù	10
 小型浮游生物	xiǎo xíng fú yóu shēng wù	10
@@ -138414,7 +138456,7 @@ sort: by_weight
 妖怪人間貝姆	yāo guài rén jiān bèi mǔ	10
 搖滾的太陽花	yáo gǔn de tài yáng huā	10
 搖滾七十年代	yáo gǔn qī shí nián dài	10
-要好好地活着	yāo hǎo hǎo dì huó zhe	10
+要好好地活着	yào hǎo hǎo dì huó zhe	10
 咬合關係錯亂	yǎo hé guān xì cuò luàn	10
 窯烘乾的烘乾	yáo hōng gān de hōng gān	12
 耀華濱海學校	yào huá bīn hǎi xué xiào	10
@@ -138986,7 +139028,7 @@ sort: by_weight
 一個比一個強	yí gè bǐ yí gè qiáng	10
 一個比一個兇	yí gè bǐ yí gè xiōng	10
 一個地主的死	yí gè dì zhǔ de sǐ	10
-一個很要好的	yí gè hěn yāo hǎo de	10
+一個很要好的	yí gè hěn yào hǎo de	10
 一個叫小紅的	yí gè jiào xiǎo hóng de	10
 一個景行行止	yí gè jǐng xíng xíng zhǐ	10
 一個空勞牽掛	yí gè kōng láo qiān guà	10
@@ -139007,6 +139049,7 @@ sort: by_weight
 一個五十多歲	yí gè wǔ shí duō suì	10
 一個無所畏懼	yí gè wú suǒ wèi jù	10
 一個圓的面積	yí gè yuán de miàn jī	10
+一根筋兩頭堵	yì gēn jīn liǎng tóu dǔ	10
 以更低的價格	yǐ gèng dī de jià gé	10
 以更高的站位	yǐ gèng gāo de zhàn wèi	10
 以公開促公正	yǐ gōng kāi cù gōng zhèng	10
@@ -142872,6 +142915,7 @@ sort: by_weight
 這麼大個事兒	zhè me dà gè shì er	10
 這麼大個事情	zhè me dà gè shì qíng	10
 這麼大一個事	zhè me dà yí gè shì	10
+這麼簡單點事	zhè me jiǎn dān diǎn shì	1
 這麼理直氣壯	zhè me lǐ zhí qì zhuàng	10
 這麼一件事兒	zhè me yí jiàn shì er	10
 這麼一來二去	zhè me yì lái èr qù	10
@@ -143429,8 +143473,8 @@ sort: by_weight
 正則置信區域	zhèng zé zhì xìn qū yù	10
 掙扎在溫飽線	zhēng zhá zài wēn bǎo xiàn	10
 證照是否齊全	zhèng zhào shì fǒu qí quán	10
-睜着眼睛睡覺	zhēng zhe yǎn jīng shuì jiào	10
-睜着眼睛做夢	zhēng zhe yǎn jīng zuò mèng	10
+睜着眼睛睡覺	zhēng zhe yǎn jing shuì jiào	10
+睜着眼睛做夢	zhēng zhe yǎn jing zuò mèng	10
 政治安全保衛	zhèng zhì ān quán bǎo wèi	10
 政治把握能力	zhèng zhì bǎ wò néng lì	10
 政治不確定性	zhèng zhì bú què dìng xìng	10
@@ -153764,7 +153808,7 @@ sort: by_weight
 非常嚴重的情況	fēi cháng yán zhòng de qíng kuàng	10
 非常嚴重的傷害	fēi cháng yán zhòng de shāng hài	10
 非常嚴重的影響	fēi cháng yán zhòng de yǐng xiǎng	10
-非常要好的朋友	fēi cháng yāo hǎo de péng you	10
+非常要好的朋友	fēi cháng yào hǎo de péng you	10
 非常優秀的選手	fēi cháng yōu xiù de xuǎn shǒu	10
 非常糟糕的事情	fēi cháng zāo gāo de shì qíng	10
 非常正常的現象	fēi cháng zhèng cháng de xiàn xiàng	10
@@ -161142,7 +161186,7 @@ sort: by_weight
 整形美容外科學	zhěng xíng měi róng wài kē xué	10
 正則形式的博弈	zhèng zé xíng shì de bó yì	10
 正長球粒霞霓巖	zhèng zhǎng qiú lì xiá ní yán	10
-睜着眼睛說瞎話	zhēng zhe yǎn jīng shuō xiā huà	10
+睜着眼睛說瞎話	zhēng zhe yǎn jing shuō xiā huà	10
 政治經濟學概論	zhèng zhì jīng jì xué gài lùn	10
 蒸之如斗米飯久	zhēng zhī rú dòu mǐ fàn jiǔ	10
 正中頜關係異常	zhèng zhōng hé guān xì yì cháng	10
@@ -162306,6 +162350,7 @@ sort: by_weight
 重要的事情說三遍	zhòng yào de shì qíng shuō sān biàn	10
 周口店魚化石產地	zhōu kǒu diàn yú huà shí chǎn dì	10
 主動脈瓣關閉不全	zhǔ dòng mài bàn guān bì bù quán	10
+住房與城鄉建設部	zhù fáng yǔ chéng xiāng jiàn shè bù	1
 壯士一去兮不復返	zhuàng shì yí qù xī bú fù fǎn	10
 自己一步一個腳印	zì jǐ yí bù yí gè jiǎo yìn	10
 紫外可見分光光度	zǐ wài kě jiàn fēn guāng guāng dù	10

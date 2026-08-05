@@ -116,6 +116,7 @@ E罩	E'zhào
 E組	E'zǔ
 E座	E'zuò
 F杯	F'bēi
+F調	F'diào
 F棟	F'dòng
 F口	F'kǒu
 F款	F'kuǎn
@@ -142,6 +143,7 @@ G胖	G'pàng
 G罩	G'zhào
 H版	H'bǎn
 H杯	H'bēi
+H調	H'diào
 H股	H'gǔ
 H罩	H'zhào
 i8	I'bā
@@ -156,11 +158,13 @@ K歌	K'gē
 K記	K'jì
 K線	K'xiàn
 L8	L'bā
+L調	L'diào
 L9	L'jiǔ
 L6	L'liù
 L碼	L'mǎ
 L7	L'qī
 M檔	M'dàng
+M調	M'diào
 M哥	M'gē
 M記	M'jì
 M碼	M'mǎ
@@ -182,18 +186,21 @@ Q幣	Q'bì
 Q彈	Q'tán
 Q我	Q'wǒ
 R檔	R'dàng
+R調	R'diào
 R級	R'jí
 R角	R'jiǎo
 R2	R2
 R5	R5
 R7	R7
 S檔	S'dàng
+S調	S'diào
 S股	S'gǔ
 S級	S'jí
 S碼	S'mǎ
 S形	S'xíng
 S3	S3
 T臺	T'tái
+T尾	T'wěi
 T恤	T'xù
 U盾	U'dùn
 U盤	U'pán
@@ -658,6 +665,8 @@ F10	F10
 F11	F11
 F12	F12
 FAT	FAT
+FF調	FF'diào
+FG結	FG'jié
 Fn鍵	Fn'jiàn
 G罩杯	G'zhào'bēi
 Go程	Go'chéng
@@ -679,6 +688,9 @@ K12	K12
 L系列	L'xì'liè
 M系列	M'xì'liè
 m4a	M4a
+MF調	MF'diào
+MH調	MH'diào
+ML調	ML'diào
 mp3	Mp3
 mp4	Mp4
 n次方	N'cì'fāng
@@ -701,14 +713,17 @@ P一下	P'yí'xià
 PC版	PC'bǎn
 PC端	PC'duān
 PE管	PE'guǎn
+PE線	PE'xiàn
 PK賽	PK'sài
 PN結	PN'jié
 PP袋	PP'dài
+PR結	PR'jié
 QQ號	QQ'hào
 QQ羣	QQ'qún
 QQ堂	QQ'táng
 QQ秀	QQ'xiù
 QR碼	QR'mǎ
+RF調	RF'diào
 S曲線	S'qū'xiàn
 SD卡	SD'kǎ
 T細胞	T'xì'bāo
@@ -721,16 +736,20 @@ TV版	TV'bǎn
 θ粒子	Theta'lì'zǐ
 U形管	U'xíng'guǎn
 U型鎖	U'xíng'suǒ
+UL調	UL'diào
 UP主	UP'zhǔ
 V怪客	V'guài'kè
 V字領	V'zì'lǐng
 V字形	V'zì'xíng
+VIB	VIB
 X檔案	X'dàng'àn
 X光片	X'guāng'piàn
 X和Y	X'hé'Y
 X教授	X'jiào'shòu
 X射線	X'shè'xiàn
 X戰警	X'zhàn'jǐng
+XF調	XF'diào
+XH調	XH'diào
 Y-7	Y-7
 Y-8	Y-8
 Y-9	Y-9
@@ -740,6 +759,7 @@ Z-9	Z-9
 α粒子	a'ěr'fǎ'lì'zǐ
 艾AA	ài'AA
 芭比Q	bā'bǐ'Q
+8字環	bā'zì'huán
 β粒子	bèi'tǎ'lì'zǐ
 不OK	bù'OK
 查IP	chá'IP
@@ -846,6 +866,8 @@ CZ-7	CZ-7
 CZ-8	CZ-8
 Cmd鍵	Cmd'jiàn
 D之一族	D'zhī'yì'zú
+DDR4	DDR4
+DDR5	DDR5
 DF21	DF21
 DF26	DF26
 DF31	DF31
@@ -978,6 +1000,7 @@ Web端	Web'duān
 Win版	Win'bǎn
 Win端	Win'duān
 X染色體	X'rǎn'sè'tǐ
+XXH調	XXH'diào
 Y染色體	Y'rǎn'sè'tǐ
 Y-12	Y-12
 Y-20	Y-20
@@ -1040,8 +1063,6 @@ Byte	bǐ'tè
 查bug	chá'bug
 喫KFC	chī'KFC
 出Bug	chū'bug
-ddr4	ddr4
-ddr5	ddr5
 東風-5	dōng'fēng-5
 多邊獸Z	duō'biān'shòu'Z
 哆啦A夢	duō'lā'A'mèng
@@ -1256,6 +1277,7 @@ GJ-11	GJ-11
 GPA分數	GPA'fēn'shù
 GPS導航	GPS'dǎo'háng
 GPS定位	GPS'dìng'wèi
+GPT-5	GPT-5
 GPU加速	GPU'jiā'sù
 GPU性能	GPU'xìng'néng
 GRE考試	GRE'kǎo'shì
@@ -1385,6 +1407,7 @@ YY-20	YY-20
 奔馳GLE	bēn'chí'GLE
 奔馳GLS	bēn'chí'GLS
 別克GL8	bié'kè'GL'bā
+顫泳vib	chàn'yǒng'vib
 長劍-10	cháng'jiàn-10
 長劍-20	cháng'jiàn-20
 出Bug了	chū'bug'le
@@ -1506,6 +1529,7 @@ Echo音箱	Echo'yīn'xiāng
 Eject鍵	Eject'jiàn
 Enter鍵	Enter'jiàn
 FPV無人機	FPV'wú'rén'jī
+GPT-4o	GPT-4o
 HDMI接口	HDMI'jiē'kǒu
 HHQ-9C	HHQ-9C
 HQ-16C	HQ-16C
@@ -1527,6 +1551,8 @@ L6 Max	L'liù'Max
 L6 Pro	L'liù'Pro
 L7 Max	L'qī'Max
 L7 Pro	L'qī'Pro
+LPDDR5	LPDDR5
+LPDDR6	LPDDR6
 Lite版本	Lite'bǎn'běn
 MOOC課程	MOOC'kè'chéng
 MP3播放器	MP'sān'bō'fàng'qì
@@ -1636,6 +1662,9 @@ Emby公益服	Emby'gōng'yì'fú
 Excel表格	Excel'biǎo'gé
 FIFA世界盃	FIFA'shì'jiè'bēi
 GLM-5.2	GLM5.2
+GPT-5.1	GPT-5.1
+GPT-5.4	GPT-5.4
+GPT-5.5	GPT-5.5
 Git版本控制	Git'bǎn'běn'kòng'zhì
 GoPro相機	GoPro'xiàng'jī
 HTTPS安全	HTTPS'ān'quán
@@ -1691,6 +1720,7 @@ ZTZ-99B	ZTZ-99B
 凱迪拉克XT6	kǎi'dí'lā'kè'XT'liù
 凱迪拉克XT4	kǎi'dí'lā'kè'XT'sì
 凱迪拉克XT5	kǎi'dí'lā'kè'XT'wǔ
+kimi-k3	kimi-k3
 空警-2000	kōng'jǐng-2000
 macOS版本	macOS'bǎn'běn
 macOS系統	macOS'xì'tǒng
@@ -1848,6 +1878,7 @@ USB Type-C	USBType-C
 1000w clips	1000'wàn'clips
 Bluetooth耳機	Bluetooth'ěr'jī
 Bluetooth設備	Bluetooth'shè'bèi
+GPT-5.5 Pro	GPT-5.5Pro
 GPT-5.6 Sol	GPT5.6Sol
 Gemini Omni	GeminiOmni
 LongCat-2.0	LongCat2.0
@@ -1863,6 +1894,7 @@ Windows操作系統	Windows'cāo'zuò'xì'tǒng
 特斯拉Model YL	tè'sī'lā'Model'YL
 沃爾沃S90 PHEV	wò'ěr'wò'S'jiǔ'líng'PHEV
 Apple MPEG-4	AppleMPEG-4
+GPT-5.4 mini	GPT-5.4mini
 GPT-5.6 Luna	GPT5.6Luna
 JavaScript編程	JavaScript'biān'chéng
 Seedance 2.5	Seedance2.5
@@ -1884,6 +1916,8 @@ MiMo-V2.5-Pro	MiMoV2.5Pro
 accessibility	a11y
 特拉法爾加·D·瓦鐵爾·羅	tè'lā'fǎ'ěr'jiā'D'wǎ'tiě'ěrluó
 特斯拉Cybertruck	tè'sī'lā'Cybertruck
+Claude Fable 5	ClaudeFable5
+Gemini 3.1 Pro	Gemini3.1Pro
 Gemini 3.5 Pro	Gemini3.5Pro
 iPhone 12 Mini	IPhone12Mini
 iPhone 13 Mini	IPhone13Mini
@@ -1892,16 +1926,26 @@ iPhone 15 Plus	IPhone15Plus
 iPhone 16 Plus	IPhone16Plus
 iPhone 6S Plus	IPhone6SPlus
 Kimi K2.7-Code	KimiK'2.7'Code
+Claude 4.6 Opus	Claude4.6Opus
+Claude Opus 4.5	ClaudeOpus4.5
 Claude Opus 4.8	ClaudeOpus4.8
+Claude Opus 4.8	ClaudeOpus4.8
+Claude Sonnet 4	ClaudeSonnet4
+Claude Sonnet 5	ClaudeSonnet5
 Claude Sonnet 5	ClaudeSonnet5
 DeepSeek-V4-Pro	DeepSeekV4Pro
+GPT-5.5 Instant	GPT-5.5Instant
 Mistral Large 2	MistralLarge2
 AMD64（X86_64)架構	amd64
 AMD64（X86_64)架構	x86
 Baichuan-M3-Plus	BaichuanM3Plus
+Claude Haiku 4.5	ClaudeHaiku4.5
+GPT-5.5 Thinking	GPT-5.5Thinking
 Gemini 3.5 Flash	Gemini3.5Flash
+Gemini 3.6 Flash	Gemini3.6Flash
 MAI-Code-1-Flash	MAICode1Flash
 Seedream 5.0 Pro	Seedream5.0Pro
+Claude 4.6 Sonnet	Claude4.6Sonnet
 DeepSeek-V4-Flash	DeepSeekV4Flash
 iPhone 17 Pro Max	IPhone
 iPhone 11 Pro Max	IPhone11ProMax
