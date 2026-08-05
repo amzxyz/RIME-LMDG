@@ -864,85 +864,6 @@ fun WanxiangDownloaderApp() {
                     border = CardDefaults.outlinedCardBorder(true),
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    Column(modifier = Modifier.padding(16.dp)) {
-                        Text("🚀 更新通道", fontWeight = FontWeight.Bold, color = Color.DarkGray)
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            RadioButton(
-                                selected = updateChannel == "Stable",
-                                onClick = {
-                                    updateChannel = "Stable"
-                                    sharedPref.edit().putString("update_channel", "Stable").apply()
-                                }
-                            )
-                            Text("正式版 (${latestStableTag})", fontSize = 14.sp)
-                            Spacer(modifier = Modifier.width(16.dp))
-                            RadioButton(
-                                selected = updateChannel == "Preview",
-                                onClick = {
-                                    updateChannel = "Preview"
-                                    sharedPref.edit().putString("update_channel", "Preview").apply()
-                                }
-                            )
-                            Text("预览版", fontSize = 14.sp, color = MorandiGreen)
-                        }
-
-                        Divider(color = MorandiLightGreen, modifier = Modifier.padding(vertical = 8.dp))
-                        Text("📦 方案版本", fontWeight = FontWeight.Bold, color = Color.DarkGray)
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            RadioButton(
-                                selected = isPro,
-                                onClick = {
-                                    isPro = true
-                                    sharedPref.edit().putBoolean("is_pro", true).apply()
-                                }
-                            )
-                            Text("Pro版", fontSize = 14.sp)
-                            Spacer(modifier = Modifier.width(16.dp))
-                            RadioButton(
-                                selected = !isPro,
-                                onClick = {
-                                    isPro = false
-                                    sharedPref.edit().putBoolean("is_pro", false).apply()
-                                }
-                            )
-                            Text("Base版", fontSize = 14.sp)
-                        }
-
-                        if (isPro) {
-                            Divider(color = MorandiLightGreen, modifier = Modifier.padding(vertical = 8.dp))
-                            Text(
-                                "⌨️ 辅助类型：",
-                                fontWeight = FontWeight.Bold,
-                                color = Color.DarkGray,
-                                fontSize = 13.sp,
-                                modifier = Modifier.padding(bottom = 4.dp)
-                            )
-
-                            FlowRow(
-                                modifier = Modifier.fillMaxWidth(),
-                                horizontalArrangement = Arrangement.spacedBy(8.dp)
-                            ) {
-                                auxMap.forEach { (key, name) ->
-                                    FilterChip(
-                                        selected = auxScheme == key,
-                                        onClick = {
-                                            auxScheme = key
-                                            sharedPref.edit().putString("aux_scheme", key).apply()
-                                        },
-                                        label = { Text(name, fontSize = 12.sp) }
-                                    )
-                                }
-                            }
-                        }
-                    }
-                }
-                Spacer(modifier = Modifier.height(12.dp))
-
-                Card(
-                    colors = CardDefaults.cardColors(containerColor = Color.White),
-                    border = CardDefaults.outlinedCardBorder(true),
-                    modifier = Modifier.fillMaxWidth()
-                ) {
                     Column(modifier = Modifier.fillMaxWidth()) {
                         TextButton(
                             onClick = { showAdvancedRules = !showAdvancedRules },
@@ -1088,6 +1009,122 @@ fun WanxiangDownloaderApp() {
                     "🧠 仅模型" to listOf(modelUrl)
                 )
 
+                Card(
+                    colors = CardDefaults.cardColors(containerColor = Color.White),
+                    border = CardDefaults.outlinedCardBorder(true),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Column(modifier = Modifier.padding(16.dp)) {
+                        Text("🚀 更新通道", fontWeight = FontWeight.Bold, color = Color.DarkGray)
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = updateChannel == "Stable",
+                                onClick = {
+                                    updateChannel = "Stable"
+                                    sharedPref.edit().putString("update_channel", "Stable").apply()
+                                }
+                            )
+                            Text("正式版 (${latestStableTag})", fontSize = 14.sp)
+                            Spacer(modifier = Modifier.width(16.dp))
+                            RadioButton(
+                                selected = updateChannel == "Preview",
+                                onClick = {
+                                    updateChannel = "Preview"
+                                    sharedPref.edit().putString("update_channel", "Preview").apply()
+                                }
+                            )
+                            Text("预览版", fontSize = 14.sp, color = MorandiGreen)
+                        }
+
+                        Divider(color = MorandiLightGreen, modifier = Modifier.padding(vertical = 8.dp))
+                        Text("📦 方案版本", fontWeight = FontWeight.Bold, color = Color.DarkGray)
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = isPro,
+                                onClick = {
+                                    isPro = true
+                                    sharedPref.edit().putBoolean("is_pro", true).apply()
+                                }
+                            )
+                            Text("Pro版", fontSize = 14.sp)
+                            Spacer(modifier = Modifier.width(16.dp))
+                            RadioButton(
+                                selected = !isPro,
+                                onClick = {
+                                    isPro = false
+                                    sharedPref.edit().putBoolean("is_pro", false).apply()
+                                }
+                            )
+                            Text("Base版", fontSize = 14.sp)
+                        }
+
+                        if (isPro) {
+                            Divider(color = MorandiLightGreen, modifier = Modifier.padding(vertical = 8.dp))
+                            Text(
+                                "⌨️ 辅助类型：",
+                                fontWeight = FontWeight.Bold,
+                                color = Color.DarkGray,
+                                fontSize = 13.sp,
+                                modifier = Modifier.padding(bottom = 4.dp)
+                            )
+
+                            FlowRow(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.spacedBy(8.dp)
+                            ) {
+                                auxMap.forEach { (key, name) ->
+                                    FilterChip(
+                                        selected = auxScheme == key,
+                                        onClick = {
+                                            auxScheme = key
+                                            sharedPref.edit().putString("aux_scheme", key).apply()
+                                        },
+                                        label = { Text(name, fontSize = 12.sp) }
+                                    )
+                                }
+                            }
+                        }
+
+
+                        Divider(color = MorandiLightGreen, modifier = Modifier.padding(vertical = 12.dp))
+                        Text("执行操作:", fontWeight = FontWeight.Bold, color = Color.DarkGray)
+                        tasksMap.chunked(2).forEach { rowTasks ->
+                            Row(
+                                modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
+                                horizontalArrangement = Arrangement.spacedBy(8.dp)
+                            ) {
+                                rowTasks.forEach { (name, urls) ->
+                                    Button(
+                                        onClick = {
+                                            if (savedPaths.isEmpty()) return@Button
+                                            if (!ensureDeployTargetsReady(savedPaths)) return@Button
+
+                                            val currentRules = excludeRulesText.lines().filter { it.isNotBlank() }
+                                            executeTasks(
+                                                urls = urls,
+                                                scope = coroutineScope,
+                                                setDownloading = { isMainDownloading = it },
+                                                setTasks = { mainActiveTasks = it },
+                                                token = githubToken,
+                                                targetPaths = savedPaths,
+                                                context = context,
+                                                rules = currentRules,
+                                                githubProbeUrls = githubProbeUrls
+                                            )
+                                        },
+                                        modifier = Modifier.weight(1f).height(48.dp),
+                                        enabled = !isMainDownloading && savedPaths.isNotEmpty(),
+                                        shape = RoundedCornerShape(8.dp)
+                                    ) {
+                                        Text(name, fontSize = 13.sp, fontWeight = FontWeight.Bold)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                Spacer(modifier = Modifier.height(12.dp))
+
                 AnimatedVisibility(visible = mainActiveTasks.isNotEmpty()) {
                     Card(
                         colors = CardDefaults.cardColors(containerColor = MorandiLightGreen),
@@ -1120,40 +1157,6 @@ fun WanxiangDownloaderApp() {
                     }
                 }
 
-                Text("执行操作:", fontWeight = FontWeight.Bold, color = Color.DarkGray)
-                tasksMap.chunked(2).forEach { rowTasks ->
-                    Row(
-                        modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
-                        horizontalArrangement = Arrangement.spacedBy(8.dp)
-                    ) {
-                        rowTasks.forEach { (name, urls) ->
-                            Button(
-                                onClick = {
-                                    if (savedPaths.isEmpty()) return@Button
-                                    if (!ensureDeployTargetsReady(savedPaths)) return@Button
-
-                                    val currentRules = excludeRulesText.lines().filter { it.isNotBlank() }
-                                    executeTasks(
-                                        urls = urls,
-                                        scope = coroutineScope,
-                                        setDownloading = { isMainDownloading = it },
-                                        setTasks = { mainActiveTasks = it },
-                                        token = githubToken,
-                                        targetPaths = savedPaths,
-                                        context = context,
-                                        rules = currentRules,
-                                        githubProbeUrls = githubProbeUrls
-                                    )
-                                },
-                                modifier = Modifier.weight(1f).height(48.dp),
-                                enabled = !isMainDownloading && savedPaths.isNotEmpty(),
-                                shape = RoundedCornerShape(8.dp)
-                            ) {
-                                Text(name, fontSize = 13.sp, fontWeight = FontWeight.Bold)
-                            }
-                        }
-                    }
-                }
             }
         } else {
             CustomModeTab(
