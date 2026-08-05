@@ -19,8 +19,8 @@ jobs:
   build-linux:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       
@@ -114,7 +114,7 @@ jobs:
           cp wanxiang-tools.png upload_stage/
 
       - name: Upload Linux Artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: linux-dist
           path: upload_stage/*
@@ -128,7 +128,7 @@ jobs:
     container: archlinux:base-devel
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: linux-dist
           path: build_dir
@@ -185,7 +185,7 @@ jobs:
           mv *.pkg.tar.zst ../
 
       - name: Upload Arch Package
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: arch-pkg
           path: ./*.pkg.tar.zst
@@ -196,8 +196,8 @@ jobs:
   build-windows:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       
@@ -224,7 +224,7 @@ jobs:
             wanxiang-tools.py
 
       - name: Upload Windows Artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: windows-dist
           path: dist/*.exe
@@ -235,8 +235,8 @@ jobs:
   build-macos:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - run: pip install PySide6 requests pyinstaller pillow ruamel.yaml
@@ -267,7 +267,7 @@ jobs:
           zip -r wanxiang-tools-macos.zip wanxiang-tools.app
 
       - name: Upload macOS Artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: macos-dist
           path: dist/*.zip
@@ -279,7 +279,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 📦 Checkout 代码
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
 
       - name: ☕ 设置 JDK 17
         uses: actions/setup-java@v5
@@ -288,7 +288,7 @@ jobs:
           distribution: 'temurin'
 
       - name: 🐘 设置官方 Gradle 环境
-        uses: gradle/actions/setup-gradle@v3
+        uses: gradle/actions/setup-gradle@v6
         with:
           gradle-version: '8.5'
 
@@ -306,7 +306,7 @@ jobs:
         run: gradle assembleRelease
 
       - name: Upload Android Artifact
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: android-apk
           path: wanxiang-updater/app/build/outputs/apk/release/app-release.apk
@@ -320,7 +320,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       - name: Extract Version
         run: |
@@ -329,7 +329,7 @@ jobs:
           echo "TOOL_VER=$EXTRACTED_VER" >> $GITHUB_ENV
 
       - name: Download all artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           path: release_files
           merge-multiple: true
@@ -353,7 +353,7 @@ jobs:
           sleep 5
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: tool
           target_commitish: ${{ github.sha }}
