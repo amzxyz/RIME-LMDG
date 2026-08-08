@@ -503,7 +503,7 @@ fun WanxiangDownloaderApp() {
 
     var showPermissionDialog by remember { mutableStateOf(false) }
 
-    // Root 绝对路径目标：输入对话框状态
+    // Root 绝对路径目标：输入对话框状态（对话框本体在 savedPaths 声明之后）
     var showRootPathDialog by remember { mutableStateOf(false) }
     var rootPathInput by remember { mutableStateOf("") }
     var rootAvailable by remember { mutableStateOf<Boolean?>(null) }
@@ -511,6 +511,77 @@ fun WanxiangDownloaderApp() {
     LaunchedEffect(showRootPathDialog) {
         if (showRootPathDialog && rootAvailable == null) {
             rootAvailable = withContext(Dispatchers.IO) { RootShell.isAvailable() }
+        }
+    }
+
+    if (showPermissionDialog) {
+        AlertDialog(
+            onDismissRequest = {},
+            title = {
+                Text(
+                    "需要存储访问权限",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp,
+                    color = MorandiDarkGreen
+                )
+            },
+            text = {
+                Text(
+                    text = "该权限仅用于写入手机根目录的 /rime。\n\n" +
+                        "小企鹅目录使用独立的 SAF 授权，不受此权限影响。存在小企鹅目标时，本次更新会继续，只跳过 /rime。",
+                    fontSize = 14.sp,
+                    lineHeight = 20.sp,
+                    color = Color.DarkGray
+                )
+            },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        showPermissionDialog = false
+                        val intent = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION)
+                        intent.data = Uri.parse("package:${context.packageName}")
+                        context.startActivity(intent)
+                    },
+                    colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen)
+                ) {
+                    Text("去授权", fontWeight = FontWeight.Bold)
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showPermissionDialog = false }) {
+                    Text("稍后授权", color = Color.Gray)
+                }
+            },
+            containerColor = Color.White
+        )
+    }
+
+    var isPro by remember { mutableStateOf(sharedPref.getBoolean("is_pro", true)) }
+    var auxScheme by remember { mutableStateOf(sharedPref.getString("aux_scheme", "zrm") ?: "zrm") }
+    var updateChannel by remember { mutableStateOf(sharedPref.getString("update_channel", "Stable") ?: "Stable") }
+    var downloadSource by remember {
+        mutableStateOf(sharedPref.getString("download_source", DOWNLOAD_SOURCE_CNB) ?: DOWNLOAD_SOURCE_CNB)
+    }
+    var githubToken by remember { mutableStateOf(sharedPref.getString("gh_token", "") ?: "") }
+
+    var excludeRulesText by remember {
+        mutableStateOf(sharedPref.getString("exclude_rules", DEFAULT_EXCLUDE_RULES) ?: DEFAULT_EXCLUDE_RULES)
+    }
+    var showAdvancedRules by remember { mutableStateOf(false) }
+    val coroutineScope = rememberCoroutineScope()
+
+    // 路径记忆（有序保存）：SAF 与 /rime 可以同时存在，部署时始终先 SAF、后 /rime。
+    var savedPaths by remember { mutableStateOf(loadDeployPaths(sharedPref)) }
+
+    val dirPickerLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
+        if (uri != null) {
+            context.contentResolver.takePersistableUriPermission(
+                uri,
+                Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
+            )
+            val newPaths = (savedPaths + uri.toString()).distinct()
+            savedPaths = newPaths
+            saveDeployPaths(newPaths, sharedPref)
         }
     }
 
@@ -588,77 +659,6 @@ fun WanxiangDownloaderApp() {
             },
             containerColor = Color.White
         )
-    }
-
-    if (showPermissionDialog) {
-        AlertDialog(
-            onDismissRequest = {},
-            title = {
-                Text(
-                    "需要存储访问权限",
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 18.sp,
-                    color = MorandiDarkGreen
-                )
-            },
-            text = {
-                Text(
-                    text = "该权限仅用于写入手机根目录的 /rime。\n\n" +
-                        "小企鹅目录使用独立的 SAF 授权，不受此权限影响。存在小企鹅目标时，本次更新会继续，只跳过 /rime。",
-                    fontSize = 14.sp,
-                    lineHeight = 20.sp,
-                    color = Color.DarkGray
-                )
-            },
-            confirmButton = {
-                Button(
-                    onClick = {
-                        showPermissionDialog = false
-                        val intent = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION)
-                        intent.data = Uri.parse("package:${context.packageName}")
-                        context.startActivity(intent)
-                    },
-                    colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen)
-                ) {
-                    Text("去授权", fontWeight = FontWeight.Bold)
-                }
-            },
-            dismissButton = {
-                TextButton(onClick = { showPermissionDialog = false }) {
-                    Text("稍后授权", color = Color.Gray)
-                }
-            },
-            containerColor = Color.White
-        )
-    }
-
-    var isPro by remember { mutableStateOf(sharedPref.getBoolean("is_pro", true)) }
-    var auxScheme by remember { mutableStateOf(sharedPref.getString("aux_scheme", "zrm") ?: "zrm") }
-    var updateChannel by remember { mutableStateOf(sharedPref.getString("update_channel", "Stable") ?: "Stable") }
-    var downloadSource by remember {
-        mutableStateOf(sharedPref.getString("download_source", DOWNLOAD_SOURCE_CNB) ?: DOWNLOAD_SOURCE_CNB)
-    }
-    var githubToken by remember { mutableStateOf(sharedPref.getString("gh_token", "") ?: "") }
-
-    var excludeRulesText by remember {
-        mutableStateOf(sharedPref.getString("exclude_rules", DEFAULT_EXCLUDE_RULES) ?: DEFAULT_EXCLUDE_RULES)
-    }
-    var showAdvancedRules by remember { mutableStateOf(false) }
-    val coroutineScope = rememberCoroutineScope()
-
-    // 路径记忆（有序保存）：SAF 与 /rime 可以同时存在，部署时始终先 SAF、后 /rime。
-    var savedPaths by remember { mutableStateOf(loadDeployPaths(sharedPref)) }
-
-    val dirPickerLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
-        if (uri != null) {
-            context.contentResolver.takePersistableUriPermission(
-                uri,
-                Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
-            )
-            val newPaths = (savedPaths + uri.toString()).distinct()
-            savedPaths = newPaths
-            saveDeployPaths(newPaths, sharedPref)
-        }
     }
 
     fun ensureDeployTargetsReady(targetPaths: List<String>): Boolean {
