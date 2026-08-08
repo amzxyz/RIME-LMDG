@@ -442,7 +442,6 @@ sort: by_weight
 艾庄粉刺消	ài zhuāng fěn cì xiāo	10
 艾庄头痒灵	ài zhuāng tóu yǎng líng	10
 矮紫苞鸢尾	ǎi zǐ bāo yuān wěi	10
-爱滋病抗体	ài zī bìng kàng tǐ	10
 艾滋病抗体	ài zī bìng kàng tǐ	10
 爱子方程式	ài zǐ fāng chéng shì	10
 矮子古兹曼	ǎi zi gǔ zī màn	10
@@ -5874,7 +5873,6 @@ sort: by_weight
 不作不会死	bù zuò bú huì sǐ	10
 不做的事情	bú zuò de shì qíng	10
 不作恶原则	bú zuò è yuán zé	10
-不做恶原则	bú zuò è yuán zé	10
 不作亏心事	bú zuò kuī xīn shì	10
 不做亏心事	bú zuò kuī xīn shì	10
 不做生意了	bú zuò shēng yì le	10
@@ -10712,6 +10710,7 @@ sort: by_weight
 大科摩罗岛	dà kē mó luó dǎo	10
 大克佩尔岛	dà kè pèi ěr dǎo	10
 大口大口地	dà kǒu dà kǒu de	10
+大口大口嚼	dà kǒu dà kǒu jué	10
 大口径步枪	dà kǒu jìng bù qiāng	10
 大口径机枪	dà kǒu jìng jī qiāng	10
 大哭和大笑	dà kū hé dà xiào	10
@@ -39094,13 +39093,12 @@ sort: by_weight
 拉伐耳喷管	lā fá ěr pēn guǎn	10
 拉弗森方法	lā fú sēn fāng fǎ	10
 拉格朗日点	lā gé lǎng rì diǎn	10
-拉格郎日点	lā gé láng rì diǎn	10
 拉格朗日量	lā gé lǎng rì liàng	10
 拉戈斯山脉	lā gē sī shān mài	10
 拉赫不变量	lā hè bú biàn liàng	10
 拉赫塔中心	lā hè tǎ zhōng xīn	10
+垃圾处理厂	lā jī chǔ lǐ chǎng	12
 垃圾处理场	lā jī chǔ lǐ chǎng	10
-垃圾处理厂	lā jī chǔ lǐ chǎng	10
 垃圾的产生	lā jī de chǎn shēng	10
 垃圾的处理	lā jī de chǔ lǐ	10
 垃圾的分类	lā jī de fēn lèi	10
@@ -39750,7 +39748,6 @@ sort: by_weight
 擂鼓瓮金锤	léi gǔ wèng jīn chuí	10
 肋横突关节	lèi héng tū guān jié	10
 肋横突韧带	lèi héng tū rèn dài	10
-类胡罗卜素	lèi hú luó bo sù	10
 类胡萝卜素	lèi hú luó bo sù	10
 类魂系游戏	lèi hún xì yóu xì	10
 累积发病率	lěi jī fā bìng lǜ	10
@@ -41821,7 +41818,6 @@ sort: by_weight
 六个小时后	liù gè xiǎo shí hòu	10
 六个小时内	liù gè xiǎo shí nèi	10
 遛狗不拴绳	liù gǒu bù shuān shéng	10
-遛狗不栓绳	liù gǒu bù shuān shéng	10
 刘冠雄故居	liú guān xióng gù jū	10
 六国大封相	liù guó dà fēng xiāng	10
 流过的汗水	liú guò de hàn shuǐ	10
@@ -58381,15 +58377,12 @@ sort: by_weight
 市妇儿工委	shì fù er gōng wěi	10
 市府广场东	shì fǔ guǎng chǎng dōng	10
 市府广场站	shì fǔ guǎng chǎng zhàn	10
-师傅郭德纲	shī fu guō dé gāng	10
-师父郭德纲	shī fu guō dé gāng	10
 是福还是祸	shì fú hái shì huò	10
 师傅和徒弟	shī fu hé tú dì	10
-师傅领进门	shī fu lǐng jìn mén	10
 师父领进门	shī fu lǐng jìn mén	10
 石驸马大街	shí fù mǎ dà jiē	10
 师父明白了	shī fu míng bai le	10
-释伽牟尼佛	shì gā mù ní fó	10
+释伽牟尼佛	shì gā móu ní fó	10
 是盖世英雄	shì gài shì yīng xióng	10
 实干的精神	shí gàn de jīng shén	10
 是干什么的	shì gàn shén me de	10
@@ -58607,8 +58600,8 @@ sort: by_weight
 石家河遗址	shí jiā hé yí zhǐ	10
 市价净值比	shì jià jìng zhí bǐ	10
 释迦摩尼佛	shì jiā mó ní fó	10
-释迦牟尼佛	shì jiā mù ní fó	10
-释迦牟尼像	shì jiā mù ní xiàng	10
+释迦牟尼佛	shì jiā móu ní fó	10
+释迦牟尼像	shì jiā móu ní xiàng	10
 世嘉三四郎	shì jiā sān sì láng	10
 十佳摄影师	shí jiā shè yǐng shī	10
 式家庭教育	shì jiā tíng jiào yù	10
@@ -87092,7 +87085,7 @@ sort: by_weight
 指导式民主	zhǐ dǎo shì mín zhǔ	10
 知道实情后	zhī dào shí qíng hòu	10
 至道十五路	zhì dào shí wǔ lù	10
-只道是寻常	zhī dào shì xún cháng	10
+只道是寻常	zhǐ dào shì xún cháng	10
 指导思想是	zhǐ dǎo sī xiǎng shì	10
 直到他去世	zhí dào tā qù shì	10
 指导委员会	zhǐ dǎo wěi yuán huì	10
@@ -114316,7 +114309,7 @@ sort: by_weight
 居民生活电价	jū mín shēng huó diàn jià	10
 居民自治章程	jū mín zì zhì zhāng chéng	10
 巨魔之血药水	jù mó zhī xuè yào shuǐ	10
-拘那含牟尼佛	jū nà hán mù ní fó	10
+拘那含牟尼佛	jū nà hán móu ní fó	10
 莒南第一中学	jǔ nán dì yī zhōng xué	10
 钜派投资集团	jù pài tóu zī jí tuán	10
 巨泡五趾跳鼠	jù pào wǔ zhǐ tiào shǔ	10
@@ -120299,7 +120292,6 @@ sort: by_weight
 内科主治医师	nèi kē zhǔ zhì yī shī	10
 内控实施细则	nèi kòng shí shī xì zé	10
 内窥镜活检钳	nèi kuī jìng huó jiǎn qián	10
-内拉格郎日点	nèi lā gé láng rì diǎn	10
 内拉格朗日点	nèi lā gé lǎng rì diǎn	10
 内力地质作用	nèi lì dì zhì zuò yòng	10
 内六角螺丝刀	nèi liù jiǎo luó sī dāo	10
@@ -124539,8 +124531,6 @@ sort: by_weight
 人生起起伏伏	rén shēng qǐ qǐ fú fú	10
 人生起起落落	rén shēng qǐ qǐ luò luò	10
 人生若如初见	rén shēng ruò rú chū jiàn	10
-人生若只初见	rén shēng ruò zhǐ chū jiàn	10
-人生若只如初	rén shēng ruò zhǐ rú chū	10
 人生是美好的	rén shēng shì měi hǎo de	10
 人生是美丽的	rén shēng shì měi lì de	10
 人生十字路口	rén shēng shí zì lù kǒu	10
@@ -127442,10 +127432,10 @@ sort: by_weight
 士嘉堡北选区	shì jiā bǎo běi xuǎn qū	10
 世嘉都市乐园	shì jiā dū shì lè yuán	10
 史家胡同小学	shǐ jiā hú tòng xiǎo xué	10
-释迦牟尼佛所	shì jiā mù ní fó suǒ	10
-释迦牟尼佛像	shì jiā mù ní fó xiàng	10
-释迦牟尼如来	shì jiā mù ní rú lái	10
-释迦牟尼世尊	shì jiā mù ní shì zūn	10
+释迦牟尼佛所	shì jiā móu ní fó suǒ	10
+释迦牟尼佛像	shì jiā móu ní fó xiàng	10
+释迦牟尼如来	shì jiā móu ní rú lái	10
+释迦牟尼世尊	shì jiā móu ní shì zūn	10
 世嘉土星游戏	shì jiā tǔ xīng yóu xì	10
 史家小学分校	shǐ jiā xiǎo xué fēn xiào	10
 世嘉硬件女孩	shì jiā yìng jiàn nǚ hái	10
@@ -127966,7 +127956,7 @@ sort: by_weight
 实时光线追踪	shí shí guāng xiàn zhuī zōng	10
 实时行情数据	shí shí háng qíng shù jù	10
 史诗毁灭金属	shǐ shī huǐ miè jīn shǔ	10
-时释迦牟尼佛	shí shì jiā mù ní fó	10
+时释迦牟尼佛	shí shì jiā móu ní fó	10
 实施家庭暴力	shí shī jiā tíng bào lì	10
 实时监测数据	shí shí jiān cè shù jù	10
 实时监测系统	shí shí jiān cè xì tǒng	10
@@ -132138,7 +132128,6 @@ sort: by_weight
 外科证治准绳	wài kē zhèng zhì zhǔn shéng	10
 外科主任医师	wài kē zhǔ rèn yī shī	10
 外科主治医师	wài kē zhǔ zhì yī shī	10
-外拉格郎日点	wài lā gé láng rì diǎn	10
 外拉格朗日点	wài lā gé lǎng rì diǎn	10
 外来务工人员	wài lái wù gōng rén yuán	10
 外来务工子女	wài lái wù gōng zǐ nǚ	10
@@ -132592,7 +132581,6 @@ sort: by_weight
 王室高级成员	wáng shì gāo jí chéng yuán	10
 王室教师海涅	wáng shì jiào shī hǎi niè	10
 往事历历在目	wǎng shì lì lì zài mù	10
-王守仁的粉丝	wáng shǒu rén de fěn sī	10
 王蜀宫妓图轴	wáng shǔ gōng jì tú zhóu	10
 王思聪的女友	wáng sī cōng de nǚ yǒu	10
 王思聪的微博	wáng sī cōng de wēi bó	10
@@ -145827,7 +145815,6 @@ sort: by_weight
 转置伴随等价	zhuǎn zhì bàn suí děng jià	10
 转置伴随矩阵	zhuǎn zhì bàn suí jǔ zhèn	10
 专治各种不服	zhuān zhì gè zhǒng bù fú	10
-专制各种不服	zhuān zhì gè zhǒng bù fú	10
 转置积分方程	zhuǎn zhì jī fēn fāng chéng	10
 赚指数不赚钱	zhuàn zhǐ shù bú zhuàn qián	10
 专治疑难杂症	zhuān zhì yí nán zá zhèng	10
@@ -148534,7 +148521,7 @@ sort: by_weight
 本色牛皮包装纸	běn sè niú pí bāo zhuāng zhǐ	10
 本生罗二氏定律	běn shēng luó èr shì dìng lǜ	10
 本省行政区域内	běn shěng xíng zhèng qū yù nèi	10
-本师释迦牟尼佛	běn shī shì jiā mù ní fó	10
+本师释迦牟尼佛	běn shī shì jiā móu ní fó	10
 本市行政区域内	běn shì xíng zhèng qū yù nèi	10
 本斯琼斯蛋白尿	běn sī qióng sī dàn bái niào	10
 本图贡萨尔维斯	běn tú gòng sà ěr wéi sī	10
@@ -154740,7 +154727,6 @@ sort: by_weight
 橄辉无球粒陨石	gǎn huī wú qiú lì yǔn shí	10
 干姜甘草与人参	gān jiāng gān cǎo yú rén cān	10
 感交甫之弃言兮	gǎn jiāo fǔ zhī qì yán xī	10
-敢叫日月换新天	gǎn jiào rì yuè huàn xīn tiān	10
 赶紧行动起来吧	gǎn jǐn xíng dòng qǐ lái ba	10
 赶紧找个男朋友	gǎn jǐn zhǎo gè nán péng you	10
 干净利落的短发	gān jìng lì luo de duǎn fà	10
@@ -155742,7 +155728,7 @@ sort: by_weight
 弓形体抗体测定	gōng xíng tǐ kàng tǐ cè dìng	10
 功勋国家合唱团	gōng xūn guó jiā hé chàng tuán	10
 供养亲属抚恤金	gōng yǎng qīn shǔ fǔ xù jīn	10
-供养释迦牟尼佛	gōng yǎng shì jiā mù ní fó	10
+供养释迦牟尼佛	gōng yǎng shì jiā móu ní fó	10
 工业高质量发展	gōng yè gāo zhì liàng fā zhǎn	10
 工业固体废弃物	gōng yè gù tǐ fèi qì wù	10
 工业化和城市化	gōng yè huà hé chéng shì huà	10
@@ -159249,6 +159235,7 @@ sort: by_weight
 沙塔尔精炼臂甲	shā tǎ ěr jīng liàn bì jiǎ	10
 沙特朱拜勒炼厂	shā tè zhū bài lè liàn chǎng	10
 山登绝顶我为峰	shān dēng jué dǐng wǒ wéi fēng	10
+山巅一寺一壶酒	shān diān yí sì yì hú jiǔ	10
 善化寺大雄宝殿	shàn huà sì dà xióng bǎo diàn	10
 山南西道节度使	shān nán xī dào jié dù shǐ	10
 膳食碳水化合物	shàn shí tàn shuǐ huà hé wù	10
