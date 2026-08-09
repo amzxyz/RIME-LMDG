@@ -140,6 +140,41 @@ object RootShell {
         return out.trim().toLongOrNull() ?: -1L
     }
 
+    /** 读取路径的属主与属组，格式 "uid:gid"。失败返回 null。 */
+    fun ownerOf(path: String): String? {
+        val (code, out) = exec("stat -c %u:%g ${shellQuote(path)} 2>/dev/null")
+        if (code != 0) return null
+        val value = out.trim()
+        return value.takeIf { Regex("""^\d+:\d+$""").matches(it) }
+    }
+
+    /** 修改文件属主/属组（root 权限）。@param owner 格式 "uid:gid"。 */
+    fun chown(path: String, owner: String): Boolean {
+        val (code, _) = exec("chown ${shellQuote(owner)} ${shellQuote(path)}")
+        return code == 0
+    }
+
+    /** 修改文件权限位（root 权限）。@param mode 如 "660"、"770"。 */
+    fun chmod(path: String, mode: String): Boolean {
+        val (code, _) = exec("chmod $mode ${shellQuote(path)}")
+        return code == 0
+    }
+
+    /** 读取路径的 SELinux 上下文（如 u:object_r:app_data_file:s0:c512,c768）。失败返回 null。 */
+    fun selinuxContextOf(path: String): String? {
+        val (code, out) = exec("ls -Zd ${shellQuote(path)} 2>/dev/null")
+        if (code != 0) return null
+        // ls -Zd 输出形如 "u:object_r:xxx:s0:c1,c2  /path"
+        val context = out.trim().split(Regex("\\s+")).firstOrNull()
+        return context?.takeIf { it.startsWith("u:object_r:") }
+    }
+
+    /** 修改路径的 SELinux 上下文（root 权限）。 */
+    fun chcon(path: String, context: String): Boolean {
+        val (code, _) = exec("chcon ${shellQuote(context)} ${shellQuote(path)}")
+        return code == 0
+    }
+
     /**
      * 用 root 权限将目录递归复制到目标路径。
      * 目标目录会被清空后重建（等价于 copyNormal 的语义）。

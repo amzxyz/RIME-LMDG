@@ -2554,12 +2554,31 @@ fun copyRoot(
     dest: File,
     rules: List<Regex>,
     currentPath: String = "",
+    owner: String? = null,
+    selinuxContext: String? = null,
     debug: (String) -> Unit = {}
 ) {
     val destPath = dest.absolutePath
 
     if (!RootShell.mkdirs(destPath)) throw Exception("root 无法创建目标目录：$destPath")
     if (!RootShell.isDirectory(destPath)) throw Exception("root 目标路径不是目录：$destPath")
+
+    // 继承目标根目录的属主/属组与 SELinux 上下文：保证 chmod 660/770 对目标 App 生效，
+    // 否则 group 位不匹配时 660 反而会让 App 完全无法访问；SELinux 上下文不对时
+    // enforcing 模式下 App 同样被拒。只有最外层读取真实值，递归层沿用外层传入的，
+    // 因为递归创建的子目录/文件属主是 root（mkdir/cat 默认），重新读取会拿错。
+    val rootOwner = owner ?: RootShell.ownerOf(destPath)
+    val rootContext = selinuxContext ?: RootShell.selinuxContextOf(destPath)
+    if (rootOwner == null) {
+        debug("[ROOT] 无法读取目标目录属主：$destPath，将保持默认权限")
+    } else if (owner == null) {
+        debug("[ROOT] 目标属主：$destPath → $rootOwner")
+    }
+    if (rootContext == null) {
+        debug("[ROOT] 无法读取目标目录 SELinux 上下文：$destPath（SELinux 可能未启用）")
+    } else if (selinuxContext == null) {
+        debug("[ROOT] 目标 SELinux 上下文：$destPath → $rootContext")
+    }
 
     val children = src.listFiles() ?: throw Exception("无法读取暂存目录：${src.absolutePath}")
 
@@ -2585,14 +2604,54 @@ fun copyRoot(
                 debug("[ROOT] 删除同名文件以创建目录：$relPath，result=$deleted")
                 if (!deleted) throw Exception("root 删除同名文件失败：$relPath")
             }
-            copyRoot(file, File(targetPath), rules, relPath, debug)
+            copyRoot(file, File(targetPath), rules, relPath, rootOwner, rootContext, debug)
+            applyRootOwner(
+                path = targetPath,
+                isDir = true,
+                owner = rootOwner,
+                selinuxContext = rootContext,
+                relPath = relPath,
+                debug = debug
+            )
         } else {
             if (targetExists && RootShell.isDirectory(targetPath)) {
                 throw Exception("root 同名目录阻止替换文件：$relPath")
             }
-            replaceRootFileByDeleteThenCopy(file, File(targetPath), relPath, debug)
+            replaceRootFileByDeleteThenCopy(
+                src = file,
+                target = File(targetPath),
+                relPath = relPath,
+                owner = rootOwner,
+                selinuxContext = rootContext,
+                debug = debug
+            )
         }
     }
+}
+
+/** 递归部署结束后，把目录/文件的属主、SELinux 上下文与权限修正为目标 owner（660 文件 / 770 目录）。 */
+fun applyRootOwner(
+    path: String,
+    isDir: Boolean,
+    owner: String?,
+    selinuxContext: String?,
+    relPath: String,
+    debug: (String) -> Unit = {}
+) {
+    val mode = if (isDir) "770" else "660"
+    if (owner != null) {
+        val owned = RootShell.chown(path, owner)
+        debug("[ROOT] 设置属主：$relPath → $owner，result=$owned")
+        if (!owned) debug("[ROOT] 属主设置失败（不影响部署，目标 App 可能无法写）：$relPath")
+    }
+    if (selinuxContext != null) {
+        val recon = RootShell.chcon(path, selinuxContext)
+        debug("[ROOT] 设置 SELinux 上下文：$relPath → $selinuxContext，result=$recon")
+        if (!recon) debug("[ROOT] SELinux 上下文设置失败（enforcing 模式下目标 App 可能被拒）：$relPath")
+    }
+    val chmodded = RootShell.chmod(path, mode)
+    debug("[ROOT] 设置权限：$relPath → $mode，result=$chmodded")
+    if (!chmodded) debug("[ROOT] 权限设置失败（目标 App 可能无法访问）：$relPath")
 }
 
 /** 用 root 权限原子替换文件：先写临时文件，再删旧文件，最后移动（避免半截文件）。 */
@@ -2600,6 +2659,8 @@ fun replaceRootFileByDeleteThenCopy(
     src: File,
     target: File,
     relPath: String,
+    owner: String? = null,
+    selinuxContext: String? = null,
     debug: (String) -> Unit = {}
 ) {
     val parentPath = target.parent ?: throw Exception("目标文件没有父目录：$relPath")
@@ -2628,6 +2689,15 @@ fun replaceRootFileByDeleteThenCopy(
         val moved = RootShell.move(tempPath, target.absolutePath)
         debug("[ROOT] 移动临时文件：$relPath，result=$moved")
         if (!moved) throw Exception("旧文件已删除，但 root 移动临时文件失败：$relPath")
+
+        applyRootOwner(
+            path = target.absolutePath,
+            isDir = false,
+            owner = owner,
+            selinuxContext = selinuxContext,
+            relPath = relPath,
+            debug = debug
+        )
     } finally {
         if (RootShell.exists(tempPath)) {
             val cleaned = RootShell.delete(tempPath)
