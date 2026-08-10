@@ -170,6 +170,15 @@ fun TaskDebugPanel(task: TaskState) {
 
 const val DEPLOY_PATHS_JSON_KEY = "deploy_paths_json"
 
+/** Root 绝对路径目标的前缀：`ROOT:/data/data/xxx/...` */
+const val ROOT_PATH_PREFIX = "ROOT:"
+
+/** 判断路径字符串是否为 root 绝对路径目标。 */
+fun isRootTarget(path: String): Boolean = path.startsWith(ROOT_PATH_PREFIX)
+
+/** 从 ROOT: 前缀路径中取出绝对路径。 */
+fun rootTargetPath(path: String): String = path.removePrefix(ROOT_PATH_PREFIX).trim()
+
 fun saveDeployPaths(paths: List<String>, sharedPref: android.content.SharedPreferences) {
     val normalized = paths.map { it.trim() }.filter { it.isNotBlank() }.distinct()
     val array = org.json.JSONArray()
@@ -213,6 +222,9 @@ fun loadDeployPaths(sharedPref: android.content.SharedPreferences): List<String>
 
 fun deployPathDisplayName(path: String): String {
     if (path == "DEFAULT") return "/rime"
+    if (isRootTarget(path)) {
+        return rootTargetPath(path).substringAfterLast("/").ifBlank { "root目录" }
+    }
 
     return runCatching {
         Uri.decode(path)
@@ -491,6 +503,17 @@ fun WanxiangDownloaderApp() {
 
     var showPermissionDialog by remember { mutableStateOf(false) }
 
+    // Root 绝对路径目标：输入对话框状态（对话框本体在 savedPaths 声明之后）
+    var showRootPathDialog by remember { mutableStateOf(false) }
+    var rootPathInput by remember { mutableStateOf("") }
+    var rootAvailable by remember { mutableStateOf<Boolean?>(null) }
+
+    LaunchedEffect(showRootPathDialog) {
+        if (showRootPathDialog && rootAvailable == null) {
+            rootAvailable = withContext(Dispatchers.IO) { RootShell.isAvailable() }
+        }
+    }
+
     if (showPermissionDialog) {
         AlertDialog(
             onDismissRequest = {},
@@ -560,6 +583,82 @@ fun WanxiangDownloaderApp() {
             savedPaths = newPaths
             saveDeployPaths(newPaths, sharedPref)
         }
+    }
+
+    if (showRootPathDialog) {
+        AlertDialog(
+            onDismissRequest = {
+                showRootPathDialog = false
+                rootPathInput = ""
+            },
+            title = {
+                Text(
+                    "🔓 添加 Root 目标目录",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp,
+                    color = MorandiDarkGreen
+                )
+            },
+            text = {
+                Column {
+                    Text(
+                        "输入手机上的绝对路径（如 /data/data/某应用/files/rime）。需要设备已 root，且授予该应用 root 权限。",
+                        fontSize = 13.sp,
+                        lineHeight = 19.sp,
+                        color = Color.DarkGray
+                    )
+                    Spacer(modifier = Modifier.height(12.dp))
+                    OutlinedTextField(
+                        value = rootPathInput,
+                        onValueChange = { rootPathInput = it },
+                        label = { Text("绝对路径", fontSize = 12.sp) },
+                        placeholder = { Text("/data/data/...", fontSize = 12.sp) },
+                        singleLine = true,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text(
+                        text = when (rootAvailable) {
+                            null -> "正在检测 root..."
+                            true -> "✅ 已检测到 root 权限"
+                            false -> "⚠️ 未检测到 root，添加后部署会失败"
+                        },
+                        fontSize = 12.sp,
+                        color = when (rootAvailable) {
+                            true -> MorandiGreen
+                            false -> Color(0xFFC46A6A)
+                            null -> Color.Gray
+                        }
+                    )
+                }
+            },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        val trimmed = rootPathInput.trim()
+                        if (trimmed.isBlank()) return@Button
+                        val pathStr = "$ROOT_PATH_PREFIX$trimmed"
+                        val newPaths = (savedPaths + pathStr).distinct()
+                        savedPaths = newPaths
+                        saveDeployPaths(newPaths, sharedPref)
+                        showRootPathDialog = false
+                        rootPathInput = ""
+                    },
+                    colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen)
+                ) {
+                    Text("添加", fontWeight = FontWeight.Bold)
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = {
+                    showRootPathDialog = false
+                    rootPathInput = ""
+                }) {
+                    Text("取消", color = Color.Gray)
+                }
+            },
+            containerColor = Color.White
+        )
     }
 
     fun ensureDeployTargetsReady(targetPaths: List<String>): Boolean {
@@ -799,10 +898,10 @@ fun WanxiangDownloaderApp() {
                                 modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)
                             ) {
                                 Text(
-                                    text = if (pathStr == "DEFAULT") {
-                                        "🎯 默认: 手机根目录 /rime"
-                                    } else {
-                                        "🎯 授权: ${Uri.decode(pathStr).substringAfterLast(":")}"
+                                    text = when {
+                                        pathStr == "DEFAULT" -> "🎯 默认: 手机根目录 /rime"
+                                        isRootTarget(pathStr) -> "🔓 Root: ${rootTargetPath(pathStr)}"
+                                        else -> "🎯 授权: ${Uri.decode(pathStr).substringAfterLast(":")}"
                                     },
                                     fontSize = 13.sp,
                                     color = Color.DarkGray,
@@ -812,7 +911,7 @@ fun WanxiangDownloaderApp() {
                                 )
                                 TextButton(
                                     onClick = {
-                                        if (pathStr != "DEFAULT") {
+                                        if (pathStr != "DEFAULT" && !isRootTarget(pathStr)) {
                                             runCatching {
                                                 context.contentResolver.releasePersistableUriPermission(
                                                     Uri.parse(pathStr),
@@ -840,6 +939,12 @@ fun WanxiangDownloaderApp() {
                                 modifier = Modifier.weight(1f).height(36.dp)
                             ) {
                                 Text("➕ 添加授权目录", fontSize = 12.sp)
+                            }
+                            OutlinedButton(
+                                onClick = { showRootPathDialog = true },
+                                modifier = Modifier.weight(1f).height(36.dp)
+                            ) {
+                                Text("🔓 添加 Root 目录", fontSize = 12.sp)
                             }
                             if (!savedPaths.contains("DEFAULT")) {
                                 TextButton(
@@ -1193,6 +1298,8 @@ fun CustomModeTab(
     onRequestAllFilesAccess: () -> Unit
 ) {
     var taskAwaitingPath by remember { mutableStateOf<String?>(null) }
+    var showCustomRootDialog by remember { mutableStateOf(false) }
+    var customRootInput by remember { mutableStateOf("") }
     val isDownloading = activeTasks.isNotEmpty() && activeTasks.any { !it.isFinished && !it.isError }
 
     fun ensureCustomTargetsReady(targetPaths: List<String>): Boolean {
@@ -1204,6 +1311,74 @@ fun CustomModeTab(
             return hasSafTarget(normalized)
         }
         return true
+    }
+
+    if (showCustomRootDialog) {
+        AlertDialog(
+            onDismissRequest = {
+                showCustomRootDialog = false
+                customRootInput = ""
+                taskAwaitingPath = null
+            },
+            title = {
+                Text(
+                    "🔓 输入 Root 目标路径",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp,
+                    color = MorandiDarkGreen
+                )
+            },
+            text = {
+                Column {
+                    Text(
+                        "输入手机上的绝对路径（如 /data/data/某应用/files/rime）。需要设备已 root。",
+                        fontSize = 13.sp,
+                        lineHeight = 19.sp,
+                        color = Color.DarkGray
+                    )
+                    Spacer(modifier = Modifier.height(12.dp))
+                    OutlinedTextField(
+                        value = customRootInput,
+                        onValueChange = { customRootInput = it },
+                        label = { Text("绝对路径", fontSize = 12.sp) },
+                        placeholder = { Text("/data/data/...", fontSize = 12.sp) },
+                        singleLine = true,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                }
+            },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        val trimmed = customRootInput.trim()
+                        if (trimmed.isBlank()) return@Button
+                        val pathStr = "$ROOT_PATH_PREFIX$trimmed"
+                        taskAwaitingPath?.let { taskId ->
+                            val updated = customTasks.map { task ->
+                                if (task.id == taskId) task.copy(boundPath = pathStr) else task
+                            }
+                            onTasksChange(updated)
+                        }
+                        taskAwaitingPath = null
+                        showCustomRootDialog = false
+                        customRootInput = ""
+                    },
+                    colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen)
+                ) {
+                    Text("确定", fontWeight = FontWeight.Bold)
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = {
+                    showCustomRootDialog = false
+                    customRootInput = ""
+                    taskAwaitingPath = null
+                }) {
+                    Text("取消", color = Color.Gray)
+                }
+            },
+            containerColor = Color.White
+        )
     }
 
     val customDirLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
@@ -1442,10 +1617,10 @@ fun CustomModeTab(
                             Text("目标解压路径", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 4.dp))
                             Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
                                 androidx.compose.foundation.text.BasicTextField(
-                                    value = if (task.boundPath == "DEFAULT") {
-                                        "默认: /rime"
-                                    } else {
-                                        "授权: ${Uri.decode(task.boundPath).substringAfterLast(":")}"
+                                    value = when {
+                                        task.boundPath == "DEFAULT" -> "默认: /rime"
+                                        isRootTarget(task.boundPath) -> "Root: ${rootTargetPath(task.boundPath)}"
+                                        else -> "授权: ${Uri.decode(task.boundPath).substringAfterLast(":")}"
                                     },
                                     onValueChange = {},
                                     readOnly = true,
@@ -1480,17 +1655,29 @@ fun CustomModeTab(
                                     ) {
                                         Text("配置目录", fontSize = 12.sp)
                                     }
-                                    if (task.boundPath != "DEFAULT") {
+                                    Row(verticalAlignment = Alignment.CenterVertically) {
                                         TextButton(
                                             onClick = {
-                                                val updated = customTasks.toMutableList()
-                                                updated[index] = task.copy(boundPath = "DEFAULT")
-                                                onTasksChange(updated)
+                                                taskAwaitingPath = task.id
+                                                showCustomRootDialog = true
                                             },
                                             modifier = Modifier.height(20.dp),
-                                            contentPadding = PaddingValues(0.dp)
+                                            contentPadding = PaddingValues(horizontal = 4.dp)
                                         ) {
-                                            Text("重置", fontSize = 10.sp, color = Color.Gray)
+                                            Text("Root", fontSize = 10.sp, color = MorandiDarkGreen)
+                                        }
+                                        if (task.boundPath != "DEFAULT") {
+                                            TextButton(
+                                                onClick = {
+                                                    val updated = customTasks.toMutableList()
+                                                    updated[index] = task.copy(boundPath = "DEFAULT")
+                                                    onTasksChange(updated)
+                                                },
+                                                modifier = Modifier.height(20.dp),
+                                                contentPadding = PaddingValues(horizontal = 4.dp)
+                                            ) {
+                                                Text("重置", fontSize = 10.sp, color = Color.Gray)
+                                            }
                                         }
                                     }
                                 }
@@ -1672,6 +1859,17 @@ suspend fun downloadAndDeployTask(
                         } else {
                             skippedTargets.add("$pathName：缺少所有文件访问权限")
                             task.appendDebug("跳过目标：$pathName（缺少所有文件访问权限）")
+                        }
+                        return@forEach
+                    }
+
+                    if (isRootTarget(path)) {
+                        if (RootShell.isAvailable()) {
+                            usableTargets.add(path)
+                            task.appendDebug("目标可用：$pathName（root 权限已就绪）")
+                        } else {
+                            skippedTargets.add("$pathName：设备无 root 权限")
+                            task.appendDebug("跳过目标：$pathName（设备无 root 权限）")
                         }
                         return@forEach
                     }
@@ -2164,6 +2362,16 @@ suspend fun downloadAndDeployTask(
                                 "exists=${target.exists()}, canWrite=${target.canWrite()}"
                         )
                         copyNormal(realSrcDir, target, excludeRegexList, debug = fileDebug)
+                    } else if (isRootTarget(pathStr)) {
+                        if (!RootShell.isAvailable()) throw Exception("设备无 root 权限，已跳过")
+
+                        val targetRoot = File(rootTargetPath(pathStr))
+                        val target = if (isDict) File(targetRoot, "dicts") else targetRoot
+                        task.appendDebug(
+                            "Root目录：target=${target.absolutePath}, " +
+                                "exists=${RootShell.exists(target.absolutePath)}"
+                        )
+                        copyRoot(realSrcDir, target, excludeRegexList, debug = fileDebug)
                     } else {
                         val targetUri = Uri.parse(pathStr)
                         val rootDoc = DocumentFile.fromTreeUri(context, targetUri)
@@ -2333,6 +2541,167 @@ fun copyNormal(
                 throw Exception("同名目录阻止替换文件：$relPath")
             }
             replaceNormalFileByDeleteThenMove(file, targetFile, relPath, debug)
+        }
+    }
+}
+
+/**
+ * 以 root 权限递归部署：语义与 [copyNormal] 对齐（白名单跳过、同名冲突处理），
+ * 但所有文件系统操作都通过 su 执行，可写入 SAF 到不了的系统目录。
+ */
+fun copyRoot(
+    src: File,
+    dest: File,
+    rules: List<Regex>,
+    currentPath: String = "",
+    owner: String? = null,
+    selinuxContext: String? = null,
+    debug: (String) -> Unit = {}
+) {
+    val destPath = dest.absolutePath
+
+    if (!RootShell.mkdirs(destPath)) throw Exception("root 无法创建目标目录：$destPath")
+    if (!RootShell.isDirectory(destPath)) throw Exception("root 目标路径不是目录：$destPath")
+
+    // 继承目标根目录的属主/属组与 SELinux 上下文：保证 chmod 660/770 对目标 App 生效，
+    // 否则 group 位不匹配时 660 反而会让 App 完全无法访问；SELinux 上下文不对时
+    // enforcing 模式下 App 同样被拒。只有最外层读取真实值，递归层沿用外层传入的，
+    // 因为递归创建的子目录/文件属主是 root（mkdir/cat 默认），重新读取会拿错。
+    val rootOwner = owner ?: RootShell.ownerOf(destPath)
+    val rootContext = selinuxContext ?: RootShell.selinuxContextOf(destPath)
+    if (rootOwner == null) {
+        debug("[ROOT] 无法读取目标目录属主：$destPath，将保持默认权限")
+    } else if (owner == null) {
+        debug("[ROOT] 目标属主：$destPath → $rootOwner")
+    }
+    if (rootContext == null) {
+        debug("[ROOT] 无法读取目标目录 SELinux 上下文：$destPath（SELinux 可能未启用）")
+    } else if (selinuxContext == null) {
+        debug("[ROOT] 目标 SELinux 上下文：$destPath → $rootContext")
+    }
+
+    val children = src.listFiles() ?: throw Exception("无法读取暂存目录：${src.absolutePath}")
+
+    children.forEach { file ->
+        val relPath = if (currentPath.isEmpty()) file.name else "$currentPath/${file.name}"
+        val targetPath = File(dest, file.name).absolutePath
+        val targetExists = RootShell.exists(targetPath)
+        val protected = isProtectedExistingFile(relPath, targetExists, rules)
+
+        debug(
+            "[ROOT] 检查：$relPath，dir=${file.isDirectory}，" +
+                "targetExists=$targetExists，protected=$protected"
+        )
+
+        if (protected) {
+            debug("[ROOT] 白名单跳过：$relPath")
+            return@forEach
+        }
+
+        if (file.isDirectory) {
+            if (targetExists && !RootShell.isDirectory(targetPath)) {
+                val deleted = RootShell.delete(targetPath)
+                debug("[ROOT] 删除同名文件以创建目录：$relPath，result=$deleted")
+                if (!deleted) throw Exception("root 删除同名文件失败：$relPath")
+            }
+            copyRoot(file, File(targetPath), rules, relPath, rootOwner, rootContext, debug)
+            applyRootOwner(
+                path = targetPath,
+                isDir = true,
+                owner = rootOwner,
+                selinuxContext = rootContext,
+                relPath = relPath,
+                debug = debug
+            )
+        } else {
+            if (targetExists && RootShell.isDirectory(targetPath)) {
+                throw Exception("root 同名目录阻止替换文件：$relPath")
+            }
+            replaceRootFileByDeleteThenCopy(
+                src = file,
+                target = File(targetPath),
+                relPath = relPath,
+                owner = rootOwner,
+                selinuxContext = rootContext,
+                debug = debug
+            )
+        }
+    }
+}
+
+/** 递归部署结束后，把目录/文件的属主、SELinux 上下文与权限修正为目标 owner（660 文件 / 770 目录）。 */
+fun applyRootOwner(
+    path: String,
+    isDir: Boolean,
+    owner: String?,
+    selinuxContext: String?,
+    relPath: String,
+    debug: (String) -> Unit = {}
+) {
+    val mode = if (isDir) "770" else "660"
+    if (owner != null) {
+        val owned = RootShell.chown(path, owner)
+        debug("[ROOT] 设置属主：$relPath → $owner，result=$owned")
+        if (!owned) debug("[ROOT] 属主设置失败（不影响部署，目标 App 可能无法写）：$relPath")
+    }
+    if (selinuxContext != null) {
+        val recon = RootShell.chcon(path, selinuxContext)
+        debug("[ROOT] 设置 SELinux 上下文：$relPath → $selinuxContext，result=$recon")
+        if (!recon) debug("[ROOT] SELinux 上下文设置失败（enforcing 模式下目标 App 可能被拒）：$relPath")
+    }
+    val chmodded = RootShell.chmod(path, mode)
+    debug("[ROOT] 设置权限：$relPath → $mode，result=$chmodded")
+    if (!chmodded) debug("[ROOT] 权限设置失败（目标 App 可能无法访问）：$relPath")
+}
+
+/** 用 root 权限原子替换文件：先写临时文件，再删旧文件，最后移动（避免半截文件）。 */
+fun replaceRootFileByDeleteThenCopy(
+    src: File,
+    target: File,
+    relPath: String,
+    owner: String? = null,
+    selinuxContext: String? = null,
+    debug: (String) -> Unit = {}
+) {
+    val parentPath = target.parent ?: throw Exception("目标文件没有父目录：$relPath")
+    if (!RootShell.mkdirs(parentPath)) throw Exception("root 无法创建目标目录：$parentPath")
+
+    val tempName = ".${target.name}.wanxiang-${UUID.randomUUID()}.tmp"
+    val tempPath = File(parentPath, tempName).absolutePath
+
+    debug(
+        "[ROOT] 准备文件：$relPath，src=${src.length()}B，" +
+            "targetExists=${RootShell.exists(target.absolutePath)}，temp=$tempName"
+    )
+
+    try {
+        if (!RootShell.copyFile(src, File(tempPath))) {
+            throw Exception("root 写入临时文件失败：$relPath")
+        }
+        debug("[ROOT] 临时文件写入完成：$relPath，size=${RootShell.fileSize(tempPath)}")
+
+        if (RootShell.exists(target.absolutePath)) {
+            val deleted = RootShell.delete(target.absolutePath)
+            debug("[ROOT] 删除旧文件：$relPath，result=$deleted")
+            if (!deleted) throw Exception("root 无法删除旧文件：$relPath")
+        }
+
+        val moved = RootShell.move(tempPath, target.absolutePath)
+        debug("[ROOT] 移动临时文件：$relPath，result=$moved")
+        if (!moved) throw Exception("旧文件已删除，但 root 移动临时文件失败：$relPath")
+
+        applyRootOwner(
+            path = target.absolutePath,
+            isDir = false,
+            owner = owner,
+            selinuxContext = selinuxContext,
+            relPath = relPath,
+            debug = debug
+        )
+    } finally {
+        if (RootShell.exists(tempPath)) {
+            val cleaned = RootShell.delete(tempPath)
+            debug("[ROOT] 清理残留临时文件：$relPath，result=$cleaned")
         }
     }
 }
