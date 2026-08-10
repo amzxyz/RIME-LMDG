@@ -9,6 +9,7 @@ name: lianxiang
 version: "LTS"
 sort: by_weight
 ...
+能	néng
 阿巴科群島	ā bā kē qún dǎo	10
 阿貝比長儀	ā bèi bǐ cháng yí	10
 阿貝不變量	ā bèi bú biàn liàng	10
@@ -81,8 +82,8 @@ sort: by_weight
 阿洛巴比妥	ā luò bā bǐ tuǒ	10
 阿羅氏瞳孔	ā luó shì tóng kǒng	10
 阿洛西林鈉	ā luò xī lín nà	10
-阿馬加定律	ā mǎ gā dìng lǜ	10
 阿馬格定律	ā mǎ gé dìng lǜ	10
+阿馬加定律	ā mǎ jiā dìng lǜ	10
 阿米巴痢疾	ā mǐ bā lì jí	10
 阿米念主義	ā mǐ niàn zhǔ yì	10
 阿民念主義	ā mín niàn zhǔ yì	10
@@ -385,7 +386,7 @@ sort: by_weight
 愛問知識人	ài wèn zhī shí rén	10
 愛我的男人	ài wǒ de nán rén	10
 愛我的世界	ài wǒ de shì jiè	10
-愛無處不在	ài wú chǔ bú zài	10
+愛無處不在	ài wú chù bú zài	10
 愛熄滅了燈	ài xī miè le dēng	10
 愛像太平洋	ài xiàng tài píng yáng	10
 愛像一把火	ài xiàng yì bǎ huǒ	10
@@ -442,7 +443,6 @@ sort: by_weight
 艾莊粉刺消	ài zhuāng fěn cì xiāo	10
 艾莊頭癢靈	ài zhuāng tóu yǎng líng	10
 矮紫苞鳶尾	ǎi zǐ bāo yuān wěi	10
-愛滋病抗體	ài zī bìng kàng tǐ	10
 艾滋病抗體	ài zī bìng kàng tǐ	10
 愛子方程式	ài zǐ fāng chéng shì	10
 矮子古茲曼	ǎi zi gǔ zī màn	10
@@ -537,13 +537,11 @@ sort: by_weight
 案件受理費	àn jiàn shòu lǐ fèi	10
 暗劍無人機	àn jiàn wú rén jī	10
 安靜的愛着	ān jìng de ài zhe	10
-安靜的等待	ān jìng de děng dài	10
 安靜地等待	ān jìng de děng dài	10
 安靜的氛圍	ān jìng de fēn wéi	10
 安靜的教室	ān jìng de jiào shì	10
 安靜地看着	ān jìng de kàn zhe	10
 安靜得可怕	ān jìng de kě pà	10
-安靜的離開	ān jìng de lí kāi	10
 安靜地離開	ān jìng de lí kāi	10
 安靜的生活	ān jìng de shēng huó	10
 安靜地生活	ān jìng de shēng huó	10
@@ -2455,7 +2453,6 @@ sort: by_weight
 暴雨來臨前	bào yǔ lái lín qián	10
 保育類動物	bǎo yù lèi dòng wù	10
 暴雨梨花針	bào yǔ lí huā zhēn	10
-鮑毓明事件	bào yù míng shì jiàn	10
 保育生物學	bǎo yù shēng wù xué	10
 鮑魚刷炒飯	bào yú shuā chǎo fàn	10
 保育與教育	bǎo yù yǔ jiào yù	10
@@ -2623,7 +2620,6 @@ sort: by_weight
 北頂娘娘廟	běi dǐng niáng niáng miào	10
 被釘十字架	bèi dīng shí zì jià	10
 被動變主動	bèi dòng biàn zhǔ dòng	10
-被動的接受	bèi dòng de jiē shòu	10
 被動地接受	bèi dòng de jiē shòu	10
 被動的傷害	bèi dòng de shāng hài	10
 被動過手腳	bèi dòng guò shǒu jiǎo	10
@@ -2943,7 +2939,6 @@ sort: by_weight
 被路人拍到	bèi lù rén pāi dào	10
 被亂箭射死	bèi luàn jiàn shè sǐ	10
 被罵得很慘	bèi mà de hěn cǎn	10
-被罵的最慘	bèi mà de zuì cǎn	10
 被罵得最慘	bèi mà de zuì cǎn	10
 北馬裏亞納	běi mǎ lǐ yà nà	10
 被帽穿甲彈	bèi mào chuān jiǎ dàn	10
@@ -5874,7 +5869,6 @@ sort: by_weight
 不作不會死	bù zuò bú huì sǐ	10
 不做的事情	bú zuò de shì qíng	10
 不作惡原則	bú zuò è yuán zé	10
-不做惡原則	bú zuò è yuán zé	10
 不作虧心事	bú zuò kuī xīn shì	10
 不做虧心事	bú zuò kuī xīn shì	10
 不做生意了	bú zuò shēng yì le	10
@@ -6119,7 +6113,6 @@ sort: by_weight
 殘破的羽翼	cán pò de yǔ yì	10
 殘忍的對待	cán rěn de duì dài	10
 殘忍的拒絕	cán rěn de jù jué	10
-殘忍的殺害	cán rěn de shā hài	10
 殘忍地殺害	cán rěn de shā hài	10
 殘忍的手段	cán rěn de shǒu duàn	10
 殘忍的現實	cán rěn de xiàn shí	10
@@ -7657,7 +7650,6 @@ sort: by_weight
 臣不得不死	chén bù dé bù sǐ	10
 陳昌浩舊居	chén chāng hào jiù jū	10
 陳丞相世家	chén chéng xiàng shì jiā	10
-陳春秀事件	chén chūn xiù shì jiàn	10
 陳慈黌故居	chén cí hóng gù jū	10
 陳大天小蝦	chén dà tiān xiǎo xiā	10
 陳道明老師	chén dào míng lǎo shī	10
@@ -7674,7 +7666,6 @@ sort: by_weight
 塵封的歷史	chén fēng de lì shǐ	10
 塵封的往事	chén fēng de wǎng shì	10
 陳冠希老師	chén guàn xī lǎo shī	10
-陳冠希事件	chén guàn xī shì jiàn	10
 陳赫的前妻	chén hè de qián qī	10
 陳赫和許婧	chén hè hé xǔ jìng	10
 陳赫張子萱	chén hè zhāng zǐ xuān	10
@@ -7700,7 +7691,6 @@ sort: by_weight
 沉浸式戲劇	chén jìn shì xì jù	10
 陳靖姑信俗	chén jìng gū xìn sú	10
 陳炯明事變	chén jiǒng míng shì biàn	10
-陳炯明事件	chén jiǒng míng shì jiàn	10
 陳舊的觀念	chén jiù de guān niàn	10
 陳舊性結核	chén jiù xìng jié hé	10
 陳可辛監製	chén kě xīn jiān zhì	10
@@ -7709,7 +7699,6 @@ sort: by_weight
 陳廉伯公館	chén lián bó gōng guǎn	10
 晨練的老人	chén liàn de lǎo rén	10
 晨練的人們	chén liàn de rén men	10
-陳良宇事件	chén liáng yǔ shì jiàn	10
 陳留王劉協	chén liú wáng liú xié	10
 沉悶的空氣	chén mèn de kōng qì	10
 陳夢吉傳奇	chén mèng jí chuán qí	10
@@ -7830,7 +7819,6 @@ sort: by_weight
 陳毅在上海	chén yì zài shàng hǎi	10
 晨穎麼麼噠	chén yǐng me me dā	10
 陳英雄電影	chén yīng xióng diàn yǐng	10
-陳永洲事件	chén yǒng zhōu shì jiàn	10
 陳元光祖祠	chén yuán guāng zǔ cí	10
 陳月月鳥宇	chén yuè yuè niǎo yǔ	10
 陳雲紀念館	chén yún jì niàn guǎn	10
@@ -8241,7 +8229,6 @@ sort: by_weight
 翅膀非起來	chì bǎng fēi qǐ lái	10
 吃飽喝足後	chī bǎo hē zú hòu	10
 吃飽了撐的	chī bǎo le chēng de	10
-吃飽了撐得	chī bǎo le chēng de	10
 持保留態度	chí bǎo liú tài dù	10
 吃包子事件	chī bāo zi shì jiàn	10
 赤壁之戰後	chì bì zhī zhàn hòu	10
@@ -10712,6 +10699,7 @@ sort: by_weight
 大科摩羅島	dà kē mó luó dǎo	10
 大克佩爾島	dà kè pèi ěr dǎo	10
 大口大口地	dà kǒu dà kǒu de	10
+大口大口嚼	dà kǒu dà kǒu jué	10
 大口徑步槍	dà kǒu jìng bù qiāng	10
 大口徑機槍	dà kǒu jìng jī qiāng	10
 大哭和大笑	dà kū hé dà xiào	10
@@ -11257,6 +11245,7 @@ sort: by_weight
 代數組合學	dài shù zǔ hé xué	10
 代特莫爾德	dài tè mò ěr dé	10
 代替考試罪	dài tì kǎo shì zuì	10
+代天主位者	dài tiān zhǔ wèi zhě	10
 帶通濾波器	dài tōng lǜ bō qì	10
 代托納比奇	dài tuō nà bǐ qí	10
 代王城遺址	dài wáng chéng yí zhǐ	10
@@ -11380,14 +11369,12 @@ sort: by_weight
 淡淡的花香	dàn dàn de huā xiāng	10
 淡淡地看着	dàn dàn de kàn zhe	10
 淡淡的清香	dàn dàn de qīng xiāng	10
-淡淡的說道	dàn dàn de shuō dào	10
 淡淡地說道	dàn dàn de shuō dào	10
 淡淡的香氣	dàn dàn de xiāng qì	10
 淡淡的笑意	dàn dàn de xiào yì	10
 淡淡的馨香	dàn dàn de xīn xiāng	10
 淡淡的幽香	dàn dàn de yōu xiāng	10
 淡淡的優雅	dàn dàn de yōu yǎ	10
-淡淡地優雅	dàn dàn de yōu yǎ	10
 淡淡倆生花	dàn dàn liǎ shēng huā	10
 淡淡抹茶香	dàn dàn mǒ chá xiāng	10
 擔當的精神	dān dāng de jīng shén	10
@@ -12001,7 +11988,7 @@ sort: by_weight
 到九十年代	dào jiǔ shí nián dài	10
 到抗日戰爭	dào kàng rì zhàn zhēng	10
 島尻安伊子	dǎo kāo ān yī zǐ	10
-到可克達拉	dào kě kě dá lā	10
+到可克達拉	dào kě kè dá lā	10
 到克拉瑪依	dào kè lā mǎ yī	10
 到可以考慮	dào kě yǐ kǎo lǜ	10
 稻殼閱讀器	dào ké yuè dú qì	10
@@ -12635,7 +12622,6 @@ sort: by_weight
 等有時間的	děng yǒu shí jiān de	10
 等魚的咕嚕	děng yú de gū lū	10
 等於或大於	děng yú huò dà yú	10
-鄧玉嬌事件	dèng yù jiāo shì jiàn	10
 登玉堂阿膠	dēng yù táng ē jiāo	10
 瞪着大眼睛	dèng zhe dà yǎn jing	10
 蹬着自行車	dēng zhe zì xíng chē	10
@@ -13339,7 +13325,6 @@ sort: by_weight
 地心歷險記	dì xīn lì xiǎn jì	10
 地心搶險記	dì xīn qiǎng xiǎn jì	10
 地心探險記	dì xīn tàn xiǎn jì	10
-翟欣欣事件	dí xīn xīn shì jiàn	10
 地心坐標時	dì xīn zuò biāo shí	10
 地心坐標系	dì xīn zuò biāo xì	10
 地形和地貌	dì xíng hé dì mào	10
@@ -14254,7 +14239,6 @@ sort: by_weight
 頂尖的設計	dǐng jiān de shè jì	10
 丁堅地瀑布	dīng jiān dì pù bù	10
 頂角探測器	dǐng jiǎo tàn cè qì	10
-丁錦昊事件	dīng jǐn hào shì jiàn	10
 定金和訂金	dìng jīn hé dìng jīn	10
 定靜安慮得	dìng jìng ān lǜ dé	10
 定軍山之戰	dìng jūn shān zhī zhàn	10
@@ -14424,7 +14408,6 @@ sort: by_weight
 氡的同位素	dōng de tóng wèi sù	10
 凍得直哆嗦	dòng de zhí duō suo	10
 懂的自然懂	dǒng de zì rán dǒng	10
-懂得自然懂	dǒng de zì rán dǒng	10
 冬地三黃湯	dōng dì sān huáng tāng	10
 動電學效應	dòng diàn xué xiào yìng	10
 凍頂烏龍茶	dòng dǐng wū lóng chá	10
@@ -15667,7 +15650,6 @@ sort: by_weight
 哆嗒數學網	duō dā shù xué wǎng	10
 掇刀石中學	duō dāo shí zhōng xué	10
 多導睡眠圖	duō dǎo shuì mián tú	10
-多的不得了	duō de bù dé liǎo	10
 多得不得了	duō de bù dé liǎo	10
 躲得了一時	duǒ de liǎo yì shí	10
 奪得三冠王	duó dé sān guàn wáng	10
@@ -16852,8 +16834,8 @@ sort: by_weight
 發射接收機	fā shè jiē shōu jī	10
 發射者一號	fā shè zhě yī hào	10
 發生的幾率	fā shēng de jī lǜ	10
-發生的事件	fā shēng de shì jiàn	10
 發生的時間	fā shēng de shí jiān	10
+發生的事件	fā shēng de shì jiàn	10
 發生關係後	fā shēng guān xì hòu	10
 發生過的事	fā shēng guò de shì	10
 發生過似的	fā shēng guò shì de	10
@@ -16924,7 +16906,6 @@ sort: by_weight
 法院審理後	fǎ yuàn shěn lǐ hòu	10
 法院在審理	fǎ yuàn zài shěn lǐ	10
 發展到極致	fā zhǎn dào jí zhì	10
-發展的更好	fā zhǎn de gèng hǎo	10
 發展得更好	fā zhǎn de gèng hǎo	10
 發展得很快	fā zhǎn de hěn kuài	10
 發展的機遇	fā zhǎn de jī yù	10
@@ -16983,7 +16964,6 @@ sort: by_weight
 反被聰明誤	fǎn bèi cōng míng wù	10
 反被動語態	fǎn bèi dòng yǔ tài	10
 反變射函子	fǎn biàn shè hán zi	10
-范冰冰事件	fàn bīng bīng shì jiàn	10
 翻不過身來	fān bú guò shēn lái	10
 翻不了身的	fān bù liǎo shēn de	10
 翻不了身了	fān bù liǎo shēn le	10
@@ -17234,7 +17214,6 @@ sort: by_weight
 翻拍電視劇	fān pāi diàn shì jù	10
 反排木鼓舞	fǎn pái mù gǔ wǔ	10
 翻盤的希望	fān pán de xī wàng	10
-范跑跑事件	fàn pǎo pǎo shì jiàn	10
 反平方定律	fǎn píng fāng dìng lǜ	10
 反平行摺疊	fǎn píng xíng zhé dié	10
 反器材步槍	fǎn qì cái bù qiāng	10
@@ -20560,7 +20539,6 @@ sort: by_weight
 幹得不錯啊	gàn de bú cuò a	10
 幹得不錯嗎	gàn dé bú cuò ma	10
 幹得不好啊	gàn dé bù hǎo a	10
-甘德懷事件	gān dé huái shì jiàn	10
 幹的那些事	gàn de nà xiē shì	1000
 幹得怎麼樣	gàn de zěn me yàng	10
 幹得真棒啊	gàn de zhēn bàng a	10
@@ -21554,7 +21532,6 @@ sort: by_weight
 高一一班的	gāo yī yī bān de	10
 高應答個體	gāo yìng dá gè tǐ	10
 搞硬美國佬	gǎo yìng měi guó lǎo	10
-高鶯鶯事件	gāo yīng yīng shì jiàn	10
 高語境文化	gāo yǔ jìng wén huà	10
 高於莊灰岩	gāo yú zhuāng huī yán	10
 高遠的目標	gāo yuǎn de mù biāo	10
@@ -23798,7 +23775,6 @@ sort: by_weight
 怪盜千面人	guài dào qiān miàn rén	10
 怪盜聖少女	guài dào shèng shào nǚ	10
 乖乖砵砵車	guāi guāi bō bō chē	10
-乖乖的聽話	guāi guāi de tīng huà	10
 乖乖地聽話	guāi guāi de tīng huà	10
 怪怪守護神	guài guài shǒu hù shén	10
 怪怪水族館	guài guài shuǐ zú guǎn	10
@@ -25002,7 +24978,6 @@ sort: by_weight
 郭麥二氏法	guō mài èr shì fǎ	10
 過沒過來啊	guò méi guò lái a	10
 過沒過來呀	guò méi guò lái ya	10
-郭美美事件	guō měi měi shì jiàn	10
 國棉十七廠	guó mián shí qī chǎng	10
 國民保健署	guó mín bǎo jiàn shǔ	10
 國民黨北伐	guó mín dǎng běi fá	10
@@ -25080,8 +25055,8 @@ sort: by_weight
 國慶七天樂	guó qìng qī tiān lè	10
 國情研究會	guó qíng yán jiū huì	10
 過去的回憶	guò qù de huí yì	10
-過去的事件	guò qù de shì jiàn	10
 過去的時間	guò qù de shí jiān	10
+過去的事件	guò qù de shì jiàn	10
 過去的四年	guò qù de sì nián	10
 過去和將來	guò qù hé jiāng lái	10
 過去和未來	guò qù hé wèi lái	10
@@ -25890,11 +25865,9 @@ sort: by_weight
 好漢值當年	hǎo hàn zhí dàng nián	10
 浩浩蕩蕩的	hào hào dàng dàng de	10
 好好的把握	hǎo hǎo de bǎ wò	10
-好好的活着	hǎo hǎo de huó zhe	10
 好好地活着	hǎo hǎo de huó zhe	10
 好好的生活	hǎo hǎo de shēng huó	10
 好好地生活	hǎo hǎo de shēng huó	10
-好好的珍惜	hǎo hǎo de zhēn xī	10
 好好地珍惜	hǎo hǎo de zhēn xī	10
 好好對待她	hǎo hǎo duì dài tā	10
 好好享受你	hǎo hǎo xiǎng shòu nǐ	10
@@ -27281,7 +27254,6 @@ sort: by_weight
 紅青黴毒素	hóng qīng méi dú sù	10
 紅蜻蜓鞋業	hóng qīng tíng xié yè	10
 洪拳與詠春	hóng quán yǔ yǒng chūn	10
-洪任輝事件	hóng rèn huī shì jiàn	10
 宏仁萬壽宮	hóng rén wàn shòu gōng	10
 紅人張智超	hóng rén zhāng zhì chāo	10
 紅潤的嘴唇	hóng rùn de zuǐ chún	10
@@ -27340,7 +27312,6 @@ sort: by_weight
 洪水莊頁岩	hóng shuǐ zhuāng yè yán	10
 洪順曲藝社	hóng shùn qǔ yì shè	10
 紅四方面軍	hóng sì fāng miàn jūn	10
-洪素珠事件	hóng sù zhū shì jiàn	10
 紅塔大酒店	hóng tǎ dà jiǔ diàn	10
 紅糖薑棗湯	hóng táng jiāng zǎo tāng	10
 洪塘中路站	hóng táng zhōng lù zhàn	10
@@ -27423,7 +27394,6 @@ sort: by_weight
 轟炸東京記	hōng zhà dōng jīng jì	10
 轟炸機聯隊	hōng zhà jī lián duì	10
 紅腫的眼睛	hóng zhǒng de yǎn jing	10
-洪仲丘事件	hóng zhòng qiū shì jiàn	10
 洪州窯遺址	hóng zhōu yáo yí zhǐ	10
 紅柱角頁岩	hóng zhù jiǎo yè yán	10
 哄自己開心	hǒng zì jǐ kāi xīn	10
@@ -28968,7 +28938,6 @@ sort: by_weight
 皇冠威爾法	huáng guān wēi ěr fǎ	10
 黃光裕出獄	huáng guāng yù chū yù	10
 黃海波復出	huáng hǎi bō fù chū	10
-黃海波事件	huáng hǎi bō shì jiàn	10
 黃韓侯鐵路	huáng hán hóu tiě lù	10
 黃河北大街	huáng hé běi dà jiē	10
 黃河的源頭	huáng hé de yuán tóu	10
@@ -32525,7 +32494,6 @@ sort: by_weight
 簡簡單單的	jiǎn jiǎn dān dān de	10
 賤賤的表情	jiàn jiàn de biǎo qíng	10
 尖尖的耳朵	jiān jiān de ěr duo	10
-漸漸的發現	jiàn jiàn de fā xiàn	10
 漸漸地發現	jiàn jiàn de fā xiàn	10
 賤賤的感覺	jiàn jiàn de gǎn jué	10
 漸漸的明白	jiàn jiàn de míng bai	10
@@ -32692,7 +32660,6 @@ sort: by_weight
 間期假交替	jiān qī jiǎ jiāo tì	10
 兼崎健太郎	jiān qí jiàn tài láng	10
 建前和本音	jiàn qián hé běn yīn	10
-堅強的活着	jiān qiáng de huó zhe	10
 堅強地活着	jiān qiáng de huó zhe	10
 堅強的信念	jiān qiáng de xìn niàn	10
 堅強的野花	jiān qiáng de yě huā	10
@@ -33347,7 +33314,6 @@ sort: by_weight
 教會的正統	jiào huì de zhèng tǒng	10
 教會根基歌	jiào huì gēn jī gē	10
 交會和對接	jiāo huì hé duì jiē	10
-焦急的等待	jiāo jí de děng dài	10
 焦急地等待	jiāo jí de děng dài	10
 焦急的母親	jiāo jí de mǔ qīn	10
 交際的能力	jiāo jì de néng lì	10
@@ -34396,14 +34362,12 @@ sort: by_weight
 緊緊抱住你	jǐn jǐn bào zhù nǐ	10
 緊緊抱著你	jǐn jǐn bào zhù nǐ	10
 緊緊抱住她	jǐn jǐn bào zhù tā	10
-緊緊的抱着	jǐn jǐn de bào zhe	10
 緊緊地抱着	jǐn jǐn de bào zhe	10
 緊緊的抱住	jǐn jǐn de bào zhù	10
 緊緊的盯着	jǐn jǐn de dīng zhe	10
 緊緊的握住	jǐn jǐn de wò zhù	10
 緊緊的擁抱	jǐn jǐn de yōng bào	10
 緊緊地擁抱	jǐn jǐn de yōng bào	10
-緊緊的抓住	jǐn jǐn de zhuā zhù	10
 緊緊地抓住	jǐn jǐn de zhuā zhù	10
 緊緊貼着我	jǐn jǐn tiē zhe wǒ	10
 緊緊抓住你	jǐn jǐn zhuā zhù nǐ	10
@@ -35218,25 +35182,19 @@ sort: by_weight
 京津唐電網	jīng jīn táng diàn wǎng	10
 京津塘高速	jīng jīn táng gāo sù	10
 京津新城站	jīng jīn xīn chéng zhàn	10
-靜靜的等待	jìng jìng de děng dài	10
 靜靜地等待	jìng jìng de děng dài	10
 靜靜的頓河	jìng jìng de dùn hé	10
 靜靜的看你	jìng jìng de kàn nǐ	10
-靜靜的聆聽	jìng jìng de líng tīng	10
 靜靜地聆聽	jìng jìng de líng tīng	10
 靜靜的陪伴	jìng jìng de péi bàn	10
 靜靜的守候	jìng jìng de shǒu hòu	10
-靜靜的思考	jìng jìng de sī kǎo	10
 靜靜地思考	jìng jìng de sī kǎo	10
-靜靜的聽着	jìng jìng de tīng zhe	10
 靜靜地聽着	jìng jìng de tīng zhe	10
 靜靜的望着	jìng jìng de wàng zhe	10
-靜靜的欣賞	jìng jìng de xīn shǎng	10
 靜靜地欣賞	jìng jìng de xīn shǎng	10
 靜靜的修煉	jìng jìng de xiū liàn	10
 靜靜的夜裡	jìng jìng de yè lǐ	10
 靜靜的夜晚	jìng jìng de yè wǎn	10
-靜靜的站在	jìng jìng de zhàn zài	10
 靜靜地站在	jìng jìng de zhàn zài	10
 靜靜地坐着	jìng jìng de zuò zhe	10
 經警方調查	jīng jǐng fāng diào chá	10
@@ -37494,7 +37452,6 @@ sort: by_weight
 抗單鏈測定	kàng dān liàn cè dìng	10
 康德拉捷夫	kāng dé lā jié fū	10
 鈧的同位素	kàng de tóng wèi sù	10
-康得新事件	kāng dé xīn shì jiàn	10
 抗登陸作戰	kàng dēng lù zuò zhàn	10
 抗電磁干擾	kàng diàn cí gān rǎo	10
 康丁法拉斯	kāng dīng fǎ lā sī	10
@@ -39093,13 +39050,12 @@ sort: by_weight
 拉伐耳噴管	lā fá ěr pēn guǎn	10
 拉弗森方法	lā fú sēn fāng fǎ	10
 拉格朗日點	lā gé lǎng rì diǎn	10
-拉格郎日點	lā gé láng rì diǎn	10
 拉格朗日量	lā gé lǎng rì liàng	10
 拉戈斯山脈	lā gē sī shān mài	10
 拉赫不變量	lā hè bú biàn liàng	10
 拉赫塔中心	lā hè tǎ zhōng xīn	10
+垃圾處理廠	lā jī chǔ lǐ chǎng	12
 垃圾處理場	lā jī chǔ lǐ chǎng	10
-垃圾處理廠	lā jī chǔ lǐ chǎng	10
 垃圾的產生	lā jī de chǎn shēng	10
 垃圾的處理	lā jī de chǔ lǐ	10
 垃圾的分類	lā jī de fēn lèi	10
@@ -39308,7 +39264,6 @@ sort: by_weight
 攔截人魔島	lán jié rén mó dǎo	10
 藍鯨的天敵	lán jīng de tiān dí	10
 藍晶石片岩	lán jīng shí piàn yán	10
-藍可兒事件	lán kě er shì jiàn	10
 藍藍的天空	lán lán de tiān kōng	10
 懶懶過一生	lǎn lǎn guò yì shēng	10
 懶懶散散地	lǎn lǎn sǎn sǎn de	10
@@ -39524,7 +39479,6 @@ sort: by_weight
 老來這一套	lǎo lái zhè yí tào	10
 嘮嘮叨叨的	láo láo dāo dāo de	10
 姥姥的外孫	lǎo lao de wài sūn	10
-牢牢的抓住	láo láo de zhuā zhù	10
 牢牢地抓住	láo láo de zhuā zhù	10
 姥姥和姥爺	lǎo lao hé lǎo ye	10
 勞累的一天	láo lèi de yì tiān	10
@@ -39749,7 +39703,6 @@ sort: by_weight
 擂鼓甕金錘	léi gǔ wèng jīn chuí	10
 肋橫突關節	lèi héng tū guān jié	10
 肋橫突韌帶	lèi héng tū rèn dài	10
-類胡羅卜素	lèi hú luó bo sù	10
 類胡蘿蔔素	lèi hú luó bo sù	10
 類魂繫遊戲	lèi hún xì yóu xì	10
 累積發病率	lěi jī fā bìng lǜ	10
@@ -40192,7 +40145,6 @@ sort: by_weight
 黎曼羅裏羣	lí màn luó lǐ qún	10
 黎曼上積分	lí màn shàng jī fēn	10
 禮貌的回應	lǐ mào de huí yìng	10
-禮貌的拒絕	lǐ mào de jù jué	10
 禮貌地拒絕	lǐ mào de jù jué	10
 禮貌的微笑	lǐ mào de wēi xiào	10
 狸貓換太子	lí māo huàn tài zǐ	10
@@ -41820,13 +41772,11 @@ sort: by_weight
 六個小時後	liù gè xiǎo shí hòu	10
 六個小時內	liù gè xiǎo shí nèi	10
 遛狗不拴繩	liù gǒu bù shuān shéng	10
-遛狗不栓繩	liù gǒu bù shuān shéng	10
 劉冠雄故居	liú guān xióng gù jū	10
 六國大封相	liù guó dà fēng xiāng	10
 流過的汗水	liú guò de hàn shuǐ	10
 流過的眼淚	liú guò de yǎn lèi	10
 六國錦標賽	liù guó jǐn biāo sài	10
-劉國樑事件	liú guó liáng shì jiàn	10
 劉哈剌不花	liú hā lá bù huā	10
 劉海戲金蟾	liú hǎi xì jīn chán	10
 六合八法拳	liù hé bā fǎ quán	10
@@ -41929,7 +41879,6 @@ sort: by_weight
 六千三百萬	liù qiān sān bǎi wàn	10
 六千四百萬	liù qiān sì bǎi wàn	10
 六千五百萬	liù qiān wǔ bǎi wàn	10
-劉強東事件	liú qiáng dōng shì jiàn	10
 六親不認的	liù qīn bú rèn de	10
 六輕工業區	liù qīng gōng yè qū	10
 琉球冊封使	liú qiú cè fēng shǐ	10
@@ -42055,7 +42004,6 @@ sort: by_weight
 流血星期日	liú xuè xīng qī rì	10
 流血又流淚	liú xuè yòu liú lèi	10
 留學中心的	liú xué zhōng xīn de	10
-劉學州事件	liú xué zhōu shì jiàn	10
 六亞甲四胺	liù yà jiǎ sì àn	10
 柳鴉蘆雁圖	liǔ yā lú yàn tú	10
 柳岩的球迷	liǔ yán de qiú mí	10
@@ -42726,7 +42674,6 @@ sort: by_weight
 螺洲天后宮	luó zhōu tiān hòu gōng	10
 螺洲溫泉站	luó zhōu wēn quán zhàn	10
 裸子植物門	luǒ zǐ zhí wù mén	10
-呂安妮事件	lǚ ān nī shì jiàn	10
 綠岸天文臺	lǜ àn tiān wén tái	10
 綠岸望遠鏡	lǜ àn wàng yuǎn jìng	10
 綠寶石項鍊	lǜ bǎo shí xiàng liàn	10
@@ -47700,18 +47647,12 @@ sort: by_weight
 努力崇明德	nǔ lì chóng míng dé	10
 奴隸道德說	nú lì dào dé shuō	10
 努力的程度	nǔ lì de chéng dù	10
-努力的工作	nǔ lì de gōng zuò	10
 努力地工作	nǔ lì de gōng zuò	10
 努力的回報	nǔ lì de huí bào	10
-努力的活着	nǔ lì de huó zhe	10
 努力地活着	nǔ lì de huó zhe	10
-努力的去做	nǔ lì de qù zuò	10
 努力地去做	nǔ lì de qù zuò	10
-努力的生活	nǔ lì de shēng huó	10
 努力地生活	nǔ lì de shēng huó	10
-努力的學習	nǔ lì de xué xí	10
 努力地學習	nǔ lì de xué xí	10
-努力的賺錢	nǔ lì de zhuàn qián	10
 努力地賺錢	nǔ lì de zhuàn qián	10
 努力和奮鬥	nǔ lì hé fèn dòu	10
 努力和付出	nǔ lì hé fù chū	10
@@ -50733,7 +50674,6 @@ sort: by_weight
 前印加文化	qián yìn jiā wén huà	10
 前緣延伸面	qián yuán yán shēn miàn	10
 錢越來越多	qián yuè lái yuè duō	10
-錢雲會事件	qián yún huì shì jiàn	10
 前運思階段	qián yùn sī jiē duàn	10
 前運算階段	qián yùn suàn jiē duàn	10
 錢在路上跑	qián zài lù shàng pǎo	10
@@ -51056,7 +50996,6 @@ sort: by_weight
 巧妙的手法	qiǎo miào de shǒu fǎ	10
 橋牌俱樂部	qiáo pái jù lè bù	10
 蹺起二郎腿	qiāo qǐ èr láng tuǐ	10
-悄悄的離開	qiāo qiāo de lí kāi	10
 悄悄地離開	qiāo qiāo de lí kāi	10
 悄悄告訴他	qiāo qiāo gào sù tā	10
 悄悄告訴她	qiāo qiāo gào sù tā	10
@@ -51199,6 +51138,7 @@ sort: by_weight
 秦陵兵馬俑	qín líng bīng mǎ yǒng	10
 秦陵博物院	qín líng bó wù yuàn	10
 秦嶺淮河線	qín lǐng huái hé xiàn	10
+秦隴復漢軍	qín lǒng fù hàn jūn	10
 秦律十八種	qín lǜ shí bā zhǒng	10
 勤美達國際	qín měi dá guó jì	10
 勤美綠園道	qín měi lǜ yuán dào	10
@@ -51390,7 +51330,6 @@ sort: by_weight
 清除癌細胞	qīng chú ái xì bāo	10
 清除參考線	qīng chú cān kǎo xiàn	10
 清楚地表明	qīng chu de biǎo míng	10
-清楚的記得	qīng chu de jì de	10
 清楚地記得	qīng chu de jì de	10
 清楚的看到	qīng chǔ de kàn dào	10
 清楚地看到	qīng chu de kàn dào	10
@@ -51846,7 +51785,6 @@ sort: by_weight
 清仁宗顒琰	qīng rén zōng yóng yǎn	10
 青日連鐵路	qīng rì lián tiě lù	10
 青榮城際線	qīng róng chéng jì xiàn	10
-輕柔的撫摸	qīng róu de fǔ mō	10
 輕柔地撫摸	qīng róu de fǔ mō	10
 請如實填寫	qǐng rú shí tián xiě	10
 清軟齶擦音	qīng ruǎn è cā yīn	10
@@ -51996,9 +51934,7 @@ sort: by_weight
 清洗不徹底	qīng xǐ bú chè dǐ	10
 清洗不乾淨	qīng xǐ bù gān jìng	10
 清晰的邊界	qīng xī de biān jiè	10
-清晰的記得	qīng xī de jì de	10
 清晰地記得	qīng xī de jì de	10
-清晰的看到	qīng xī de kàn dào	10
 清晰地看到	qīng xī de kàn dào	10
 清晰地看見	qīng xī de kàn jiàn	10
 清洗發動機	qīng xǐ fā dòng jī	10
@@ -52293,7 +52229,6 @@ sort: by_weight
 求菩薩保佑	qiú pú sà bǎo yòu	10
 丘奇委員會	qiū qí wěi yuán huì	10
 求切線方程	qiú qiē xiàn fāng chéng	10
-邱慶楓事件	qiū qìng fēng shì jiàn	10
 秋日的私語	qiū rì de sī yǔ	10
 秋日的午後	qiū rì de wǔ hòu	10
 秋日的陽光	qiū rì de yáng guāng	10
@@ -52320,7 +52255,6 @@ sort: by_weight
 秋天的柿子	qiū tiān de shì zi	10
 秋天和冬天	qiū tiān hé dōng tiān	10
 秋天有點涼	qiū tiān yǒu diǎn liáng	10
-邱小妹事件	qiū xiǎo mèi shì jiàn	10
 球諧函數表	qiú xié hán shù biǎo	10
 球形補償器	qiú xíng bǔ cháng qì	10
 球形機器人	qiú xíng jī qì rén	10
@@ -53948,23 +53882,16 @@ sort: by_weight
 忍者亂太郎	rěn zhě luàn tài láng	10
 忍者小靈精	rěn zhě xiǎo líng jīng	10
 認真地愛我	rèn zhēn de ài wǒ	10
-認真的對待	rèn zhēn de duì dài	10
 認真地對待	rèn zhēn de duì dài	10
-認真的工作	rèn zhēn de gōng zuò	10
 認真地工作	rèn zhēn de gōng zuò	10
 認真地觀察	rèn zhēn de guān chá	10
 認真地考慮	rèn zhēn de kǎo lǜ	10
 認真地老去	rèn zhēn de lǎo qù	10
-認真的老去	rèn zhēn de lǎo qù	10
 認真地年輕	rèn zhēn de nián qīng	10
-認真的傾聽	rèn zhēn de qīng tīng	10
 認真地傾聽	rèn zhēn de qīng tīng	10
-認真的生活	rèn zhēn de shēng huó	10
 認真地生活	rèn zhēn de shēng huó	10
-認真的思考	rèn zhēn de sī kǎo	10
 認真地思考	rèn zhēn de sī kǎo	10
 人真的太多	rén zhēn de tài duō	10
-認真的完成	rèn zhēn de wán chéng	10
 認真地完成	rèn zhēn de wán chéng	10
 認真地學習	rèn zhēn de xué xí	10
 認真學習把	rèn zhēn xué xí bǎ	10
@@ -53981,7 +53908,6 @@ sort: by_weight
 認知和情感	rèn zhī hé qíng gǎn	10
 認知吝嗇者	rèn zhī lìn sè zhě	10
 任職前公示	rèn zhí qián gōng shì	10
-任志強事件	rèn zhì qiáng shì jiàn	10
 人之所以能	rén zhī suǒ yǐ néng	10
 任執行董事	rèn zhí xíng dǒng shì	10
 人只要擁有	rén zhǐ yào yōng yǒu	10
@@ -58379,15 +58305,12 @@ sort: by_weight
 市婦兒工委	shì fù er gōng wěi	10
 市府廣場東	shì fǔ guǎng chǎng dōng	10
 市府廣場站	shì fǔ guǎng chǎng zhàn	10
-師傅郭德綱	shī fu guō dé gāng	10
-師父郭德綱	shī fu guō dé gāng	10
 是福還是禍	shì fú hái shì huò	10
 師傅和徒弟	shī fu hé tú dì	10
-師傅領進門	shī fu lǐng jìn mén	10
 師父領進門	shī fu lǐng jìn mén	10
 石駙馬大街	shí fù mǎ dà jiē	10
 師父明白了	shī fu míng bai le	10
-釋伽牟尼佛	shì gā mù ní fó	10
+釋伽牟尼佛	shì gā móu ní fó	10
 是蓋世英雄	shì gài shì yīng xióng	10
 實幹的精神	shí gàn de jīng shén	10
 是幹什麼的	shì gàn shén me de	10
@@ -58605,8 +58528,8 @@ sort: by_weight
 石家河遺址	shí jiā hé yí zhǐ	10
 市價淨值比	shì jià jìng zhí bǐ	10
 釋迦摩尼佛	shì jiā mó ní fó	10
-釋迦牟尼佛	shì jiā mù ní fó	10
-釋迦牟尼像	shì jiā mù ní xiàng	10
+釋迦牟尼佛	shì jiā móu ní fó	10
+釋迦牟尼像	shì jiā móu ní xiàng	10
 世嘉三四郎	shì jiā sān sì láng	10
 十佳攝影師	shí jiā shè yǐng shī	10
 式家庭教育	shì jiā tíng jiào yù	10
@@ -62877,7 +62800,6 @@ sort: by_weight
 宋高宗南渡	sòng gāo zōng nán dù	10
 頌歌獻給黨	sòng gē xiàn gěi dǎng	10
 送給爸媽的	sòng gěi bà mā de	10
-宋庚一事件	sòng gēng yí shì jiàn	10
 宋恭帝趙顯	sòng gōng dì zhào xiǎn	10
 松谷美代子	sōng gǔ měi dài zǐ	10
 松果體隱窩	sōng guǒ tǐ yǐn wō	10
@@ -63332,7 +63254,6 @@ sort: by_weight
 孫儷的演技	sūn lì de yǎn jì	10
 孫儷和鄧超	sūn lì hé dèng chāo	10
 孫莉和黃磊	sūn lì hé huáng lěi	10
-孫立人事件	sūn lì rén shì jiàn	10
 孫儷與鄧超	sūn lì yǔ dèng chāo	10
 孫喬科拉爾	sūn qiáo kē lā ěr	10
 損人不利己	sǔn rén bú lì jǐ	10
@@ -63350,8 +63271,6 @@ sort: by_weight
 損益平衡表	sǔn yì píng héng biǎo	10
 損益平衡點	sǔn yì píng héng diǎn	10
 孫逸仙逝世	sūn yì xiān shì shì	10
-孫志剛事件	sūn zhì gāng shì jiàn	10
-孫中界事件	sūn zhōng jiè shì jiàn	10
 孫中山紀念	sūn zhōng shān jì niàn	10
 孫中山去世	sūn zhōng shān qù shì	10
 孫中山全集	sūn zhōng shān quán jí	10
@@ -64285,7 +64204,6 @@ sort: by_weight
 套保暖內衣	tào bǎo nuǎn nèi yī	10
 陶比麥奎爾	táo bǐ mài kuí ěr	10
 逃兵追緝令	táo bīng zhuī jī lìng	10
-陶崇園事件	táo chóng yuán shì jiàn	10
 逃出科幻紀	táo chū kē huàn jì	10
 逃出克隆島	táo chū kè lóng dǎo	10
 逃出恐龍島	táo chū kǒng lóng dǎo	10
@@ -65452,7 +65370,7 @@ sort: by_weight
 鐵礦石品位	tiě kuàng shí pǐn wèi	10
 鐵力瓦爾地	tiě lì wǎ ěr dì	10
 鐵力瓦爾迪	tiě lì wǎ ěr dí	10
-鐵鏈女事件	tiě liàn nǚ shì jiàn	10
+鐵良下江南	tiě liáng xià jiāng nán	10
 鐵路大通道	tiě lù dà tōng dào	10
 鐵路和公路	tiě lù hé gōng lù	10
 鐵路周遊票	tiě lù zhōu yóu piào	10
@@ -65943,8 +65861,8 @@ sort: by_weight
 通顏覺羅氏	tōng yán jué luó shì	10
 同樣的髮型	tóng yàng de fà xíng	10
 同樣的老師	tóng yàng de lǎo shī	10
-同樣的時間	tóng yàng de shí jiān	10
 同樣的事件	tóng yàng de shì jiàn	10
+同樣的時間	tóng yàng de shí jiān	10
 同樣的食物	tóng yàng de shí wù	10
 同樣的事物	tóng yàng de shì wù	10
 同樣的招式	tóng yàng de zhāo shì	10
@@ -67419,8 +67337,6 @@ sort: by_weight
 忘了去懂你	wàng le qù dǒng nǐ	10
 忘了這個事	wàng le zhè ge shì	10
 王力反思錄	wáng lì fǎn sī lù	10
-王立軍事件	wáng lì jūn shì jiàn	10
-王立強事件	wáng lì qiáng shì jiàn	10
 王立宇宙軍	wáng lì yǔ zhòu jūn	10
 往臉上貼金	wǎng liǎn shàng tiē jīn	10
 網路聊天室	wǎng lù liáo tiān shì	10
@@ -67443,14 +67359,12 @@ sort: by_weight
 網盟全球購	wǎng méng quán qiú gòu	10
 亡命大煞星	wáng mìng dà shà xīng	10
 網膜囊前庭	wǎng mó náng qián tíng	10
-王娜娜事件	wáng nà nà shì jiàn	10
 王女自鳴鼓	wáng nǚ zì míng gǔ	10
 王牌逗王牌	wáng pái dòu wáng pái	10
 王牌對王牌	wáng pái duì wáng pái	10
 望齊侯之色	wàng qí hóu zhī sè	10
 王岐山反腐	wáng qí shān fǎn fǔ	10
 往前邁一步	wǎng qián mài yí bù	10
-王千源事件	wáng qiān yuán shì jiàn	10
 往槍口上撞	wǎng qiāng kǒu shàng zhuàng	10
 忘情闊少爺	wàng qíng kuò shào yé	10
 網球大師盃	wǎng qiú dà shī bēi	10
@@ -68100,7 +68014,7 @@ sort: by_weight
 衛生間異味	wèi shēng jiān yì wèi	10
 衛生間浴室	wèi shēng jiān yù shì	10
 為勝利而戰	wéi shèng lì ér zhàn	10
-為生民立命	wéi shēng mín lì mìng	10
+為生民立命	wèi shēng mín lì mìng	10
 圍生期死亡	wéi shēng qī sǐ wáng	10
 衛生署署長	wèi shēng shǔ shǔ zhǎng	10
 維生素滴劑	wéi shēng sù dī jì	10
@@ -68170,7 +68084,7 @@ sort: by_weight
 維悌希反應	wéi tì xī fǎn yìng	10
 魏悌息反應	wèi tì xī fǎn yìng	10
 微體系結構	wēi tǐ xì jié gòu	10
-爲天地立心	wéi tiān dì lì xīn	10
+爲天地立心	wèi tiān dì lì xīn	10
 維甜美降糖	wéi tián měi jiàng táng	10
 尾田榮一郎	wěi tián róng yī láng	10
 謂天下無雙	wèi tiān xià wú shuāng	10
@@ -68363,7 +68277,6 @@ sort: by_weight
 偽造的文件	wěi zào de wén jiàn	10
 偽造貨幣罪	wěi zào huò bì zuì	10
 微則無胃氣	wēi zé wú wèi qì	10
-魏則西事件	wèi zé xī shì jiàn	10
 魏則西之死	wèi zé xī zhī sǐ	10
 為戰鬥而生	wéi zhàn dòu ér shēng	10
 胃佔位病變	wèi zhàn wèi bìng biàn	10
@@ -69540,10 +69453,10 @@ sort: by_weight
 無翅豬毛菜	wú chì zhū máo cài	10
 無愁河的浪	wú chóu hé de làng	10
 舞出愛火花	wǔ chū ài huǒ huā	10
-無處安放的	wú chǔ ān fàng de	10
-無處不飛花	wú chǔ bù fēi huā	10
-無處稠密的	wú chǔ chóu mì de	10
-無處稠密集	wú chǔ chóu mì jí	10
+無處安放的	wú chù ān fàng de	10
+無處不飛花	wú chù bù fēi huā	10
+無處稠密的	wú chù chóu mì de	10
+無處稠密集	wú chù chóu mì jí	10
 無出其右者	wú chū qí yòu zhě	10
 無出頭之日	wú chū tóu zhī rì	10
 舞出我人生	wǔ chū wǒ rén shēng	10
@@ -70419,7 +70332,6 @@ sort: by_weight
 五味子酯甲	wǔ wèi zǐ zhǐ jiǎ	10
 無文化背景	wú wén huà bèi jǐng	10
 吳溫納貌倫	wú wēn nà mào lún	10
-吳文獻事件	wú wén xiàn shì jiàn	10
 無我的境界	wú wǒ de jìng jiè	10
 無渦向量場	wú wō xiàng liàng chǎng	10
 無我原非你	wú wǒ yuán fēi nǐ	10
@@ -70604,7 +70516,6 @@ sort: by_weight
 五一大掃蕩	wǔ yī dà sǎo dàng	10
 五一大遊行	wǔ yī dà yóu xíng	10
 無一定之規	wú yī dìng zhī guī	10
-吳亦凡事件	wú yì fán shì jiàn	10
 五一公園站	wǔ yī gōng yuán zhàn	10
 五一廣場站	wǔ yī guǎng chǎng zhàn	10
 五一黃金週	wǔ yī huáng jīn zhōu	10
@@ -74879,7 +74790,6 @@ sort: by_weight
 新現實主義	xīn xiàn shí zhǔ yì	10
 心纖維三角	xīn xiān wéi sān jiǎo	10
 心想事成的	xīn xiǎng shì chéng de	10
-信小呆事件	xìn xiǎo dāi shì jiàn	10
 欣謝爾伍德	xīn xiè ěr wǔ dé	10
 新寫實主義	xīn xiě shí zhǔ yì	10
 心寫治平圖	xīn xiě zhì píng tú	10
@@ -75814,7 +75724,6 @@ sort: by_weight
 袖子的設計	xiù zi de shè jì	10
 許阿鏗託斯	xǔ ā kēng tuō sī	10
 徐悲鴻畫院	xú bēi hóng huà yuàn	10
-徐步高事件	xú bù gāo shì jiàn	10
 須插滿頭歸	xū chā mǎn tóu guī	10
 須叉吻魴鮄	xū chā wěn fáng fú	10
 畜產試驗所	xù chǎn shì yàn suǒ	10
@@ -75883,7 +75792,6 @@ sort: by_weight
 虛開發票罪	xū kāi fā piào zuì	10
 旭科競技場	xù kē jìng jì chǎng	10
 許可請求費	xǔ kě qǐng qiú fèi	10
-許可馨事件	xǔ kě xīn shì jiàn	10
 許可證核發	xǔ kě zhèng hé fā	10
 虛空的戰場	xū kōng de zhàn chǎng	10
 虛空遁地獸	xū kōng dùn dì shòu	10
@@ -77763,7 +77671,6 @@ sort: by_weight
 養老金並軌	yǎng lǎo jīn bìng guǐ	10
 養老金入市	yǎng lǎo jīn rù shì	10
 養老助殘卡	yǎng lǎo zhù cán kǎ	10
-楊麗娟事件	yáng lì juān shì jiàn	10
 楊麗萍老師	yáng lì píng lǎo shī	10
 陽離子染料	yáng lí zǐ rǎn liào	10
 陽離子樹脂	yáng lí zǐ shù zhī	10
@@ -77779,7 +77686,6 @@ sort: by_weight
 楊柳依依風	yáng liǔ yī yī fēng	10
 楊龍寨口岸	yáng lóng zhài kǒu àn	10
 養路機械化	yǎng lù jī xiè huà	10
-楊祿奎事件	yáng lù kuí shì jiàn	10
 洋馬發動機	yáng mǎ fā dòng jī	10
 羊馬河戰役	yáng mǎ hé zhàn yì	10
 養貓的老鼠	yǎng māo de lǎo shǔ	10
@@ -77866,7 +77772,6 @@ sort: by_weight
 養陰清肺湯	yǎng yīn qīng fèi tāng	10
 楊穎的演技	yáng yǐng de yǎn jì	10
 養魚的小貓	yǎng yú de xiǎo māo	10
-楊餘傅事件	yáng yú fù shì jiàn	10
 養魚先養水	yǎng yú xiān yǎng shuǐ	10
 楊裕興麵館	yáng yù xīng miàn guǎn	10
 養元益腎酒	yǎng yuán yì shèn jiǔ	10
@@ -81919,7 +81824,7 @@ sort: by_weight
 有理說不清	yǒu lǐ shuō bù qīng	10
 有理同調群	yǒu lǐ tóng diào qún	10
 有理同倫論	yǒu lǐ tóng lún lùn	10
-有力無處使	yǒu lì wú chǔ shǐ	10
+有力無處使	yǒu lì wú chù shǐ	10
 有理想的豬	yǒu lǐ xiǎng de zhū	10
 鈾礫岩礦床	yóu lì yán kuàng chuáng	10
 有利也有弊	yǒu lì yě yǒu bì	10
@@ -83022,6 +82927,7 @@ sort: by_weight
 魚雷攻擊機	yú léi gōng jī jī	10
 魚雷轟炸機	yú léi hōng zhà jī	10
 魚雷艇事件	yú léi tǐng shì jiàn	10
+魚雷艇事件	yú léi tǐng shì jiàn	10
 魚雷修理廠	yú léi xiū lǐ chǎng	10
 魚雷巡洋艦	yú léi xún yáng jiàn	10
 於冷酷仙境	yú lěng kù xiān jìng	10
@@ -83134,7 +83040,6 @@ sort: by_weight
 御前崎燈塔	yù qián qí dēng tǎ	10
 豫親王多鐸	yù qīn wáng duō duó	10
 輿情大數據	yú qíng dà shù jù	10
-余清芳事件	yú qīng fāng shì jiàn	10
 輿情分析師	yú qíng fēn xī shī	10
 毓慶宮行走	yù qìng gōng xíng zǒu	10
 玉清昭應宮	yù qīng zhāo yīng gōng	10
@@ -84576,7 +84481,7 @@ sort: by_weight
 在看電視的	zài kàn diàn shì de	10
 再看你一眼	zài kàn nǐ yì yǎn	10
 再看我一眼	zài kàn wǒ yì yǎn	10
-在可克達拉	zài kě kě dá lā	10
+在可克達拉	zài kě kè dá lā	10
 在克拉瑪依	zài kè lā mǎ yī	10
 載客試運營	zài kè shì yùn yíng	10
 在空中飛舞	zài kōng zhōng fēi wǔ	10
@@ -85222,7 +85127,6 @@ sort: by_weight
 戰國四公子	zhàn guó sì gōng zǐ	10
 戰國四名將	zhàn guó sì míng jiàng	10
 戰國天正記	zhàn guó tiān zhèng jì	10
-佔海特事件	zhàn hǎi tè shì jiàn	10
 戰後的日本	zhàn hòu de rì běn	10
 斬虎屠龍劍	zhǎn hǔ tú lóng jiàn	10
 戰火的洗禮	zhàn huǒ de xǐ lǐ	10
@@ -85400,7 +85304,6 @@ sort: by_weight
 張大千的畫	zhāng dà qiān de huà	10
 長大一點後	zhǎng dà yì diǎn hòu	10
 張丹峰洪欣	zhāng dān fēng hóng xīn	10
-張丹紅事件	zhāng dān hóng shì jiàn	10
 杖刀偶磨弓	zhàng dāo ǒu mó gōng	10
 章德竇皇后	zhāng dé dòu huáng hòu	10
 長得非常像	zhǎng de fēi cháng xiàng	10
@@ -85430,7 +85333,6 @@ sort: by_weight
 張公山公園	zhāng gōng shān gōng yuán	10
 張公山新村	zhāng gōng shān xīn cūn	10
 章公祖師像	zhāng gōng zǔ shī xiàng	10
-張鼓峰事件	zhāng gǔ fēng shì jiàn	10
 章光育發劑	zhāng guāng yù fā jì	10
 張鮭魚之夢	zhāng guī yú zhī mèng	10
 帳號已註銷	zhàng hào yǐ zhù xiāo	10
@@ -85548,7 +85450,6 @@ sort: by_weight
 掌握了知識	zhǎng wò le zhī shi	10
 張我勒個去	zhāng wǒ lei gè qù	10
 張夏石灰岩	zhāng xià shí huī yán	10
-張憲義事件	zhāng xiàn yì shì jiàn	10
 張獻忠沉銀	zhāng xiàn zhōng chén yín	10
 張獻忠起義	zhāng xiàn zhōng qǐ yì	10
 張獻忠屠蜀	zhāng xiàn zhōng tú shǔ	10
@@ -85631,7 +85532,6 @@ sort: by_weight
 找點事兒幹	zhǎo diǎn shì er gàn	10
 找點事情做	zhǎo diǎn shì qíng zuò	10
 兆電子伏特	zhào diàn zǐ fú tè	10
-趙鬥淳事件	zhào dòu chún shì jiàn	10
 找都找不到	zhǎo dōu zhǎo bú dào	10
 照方子抓藥	zhào fāng zi zhuā yào	10
 趙飛燕別傳	zhào fēi yàn bié zhuàn	10
@@ -85768,7 +85668,6 @@ sort: by_weight
 照沼歡莉莎	zhào zhǎo huān lì shā	10
 照照鏡子吧	zhào zhào jìng zi ba	10
 照這麼發展	zhào zhè me fā zhǎn	10
-趙志華事件	zhào zhì huá shì jiàn	10
 趙忠祥老師	zhào zhōng xiáng lǎo shī	10
 找專業人士	zhǎo zhuān yè rén shì	10
 找裝飾公司	zhǎo zhuāng shì gōng sī	10
@@ -87089,7 +86988,7 @@ sort: by_weight
 指導式民主	zhǐ dǎo shì mín zhǔ	10
 知道實情後	zhī dào shí qíng hòu	10
 至道十五路	zhì dào shí wǔ lù	10
-只道是尋常	zhī dào shì xún cháng	10
+只道是尋常	zhǐ dào shì xún cháng	10
 指導思想是	zhǐ dǎo sī xiǎng shì	10
 直到他去世	zhí dào tā qù shì	10
 指導委員會	zhǐ dǎo wěi yuán huì	10
@@ -88585,7 +88484,6 @@ sort: by_weight
 中鐵十二局	zhōng tiě shí èr jú	10
 中鐵十五局	zhōng tiě shí wǔ jú	10
 中鐵十一局	zhōng tiě shí yī jú	10
-鍾庭耀事件	zhōng tíng yào shì jiàn	10
 腫痛外擦酊	zhǒng tòng wài cā dīng	10
 中途相遇法	zhōng tú xiāng yù fǎ	10
 忠王李秀成	zhōng wáng lǐ xiù chéng	10
@@ -88775,7 +88673,6 @@ sort: by_weight
 中英銀公司	zhōng yīng yín gōng sī	10
 中幼粒細胞	zhōng yòu lì xì bāo	10
 終有一日會	zhōng yǒu yí rì huì	10
-鍾嶼晨事件	zhōng yǔ chén shì jiàn	10
 忠於理想的	zhōng yú lǐ xiǎng de	10
 重於胎齡兒	zhòng yú tāi líng ér	10
 終於要離開	zhōng yú yào lí kāi	10
@@ -88908,11 +88805,9 @@ sort: by_weight
 州檢察總長	zhōu jiǎn chá zǒng cháng	10
 晝間行車燈	zhòu jiān xíng chē dēng	10
 晝錦堂記碑	zhòu jǐn táng jì bēi	10
-周久耕事件	zhōu jiǔ gēng shì jiàn	10
 周口店遺址	zhōu kǒu diàn yí zhǐ	10
 周口店猿人	zhōu kǒu diàn yuán rén	10
 周擴大例會	zhōu kuò dà lì huì	10
-周老虎事件	zhōu lǎo hǔ shì jiàn	10
 洲立電影院	zhōu lì diàn yǐng yuàn	10
 肘離斷假肢	zhǒu lí duàn jiǎ zhī	10
 週六和週日	zhōu liù hé zhōu rì	10
@@ -89012,7 +88907,6 @@ sort: by_weight
 周至柔舊居	zhōu zhì róu jiù jū	10
 州中心醫院	zhōu zhōng xīn yī yuàn	10
 皺皺巴巴的	zhòu zhòu bā bā de	10
-周子瑜事件	zhōu zǐ yú shì jiàn	10
 州最高法院	zhōu zuì gāo fǎ yuàn	10
 駐阿曼大使	zhù ā màn dà shǐ	10
 駐埃及大使	zhù āi jí dà shǐ	10
@@ -92475,7 +92369,6 @@ sort: by_weight
 奧特蘭克山脈	ào tè lán kè shān mài	10
 奧瓦二氏現象	ào wǎ èr shì xiàn xiàng	10
 澳亞航空公司	ào yà háng kōng gōng sī	10
-澳岩縫男事件	ào yán fèng nán shì jiàn	10
 傲遊雲瀏覽器	ào yóu yún liú lǎn qì	10
 八八艦隊計畫	bā bā jiàn duì jì huà	10
 八八式偵察機	bā bā shì zhēn chá jī	10
@@ -92561,7 +92454,6 @@ sort: by_weight
 八七會議舊址	bā qī huì yì jiù zhǐ	10
 八旗通志初集	bā qí tōng zhì chū jí	10
 八旗值年大臣	bā qí zhí nián dà chén	10
-八千麻袋事件	bā qiān má dài shì jiàn	10
 八千頌般若經	bā qiān sòng bō rě jīng	10
 八羥丙基蔗糖	bā qiǎng bǐng jī zhè táng	10
 霸權主義國家	bà quán zhǔ yì guó jiā	10
@@ -92571,7 +92463,6 @@ sort: by_weight
 巴尚二氏濾柱	bā shàng èr shì lǜ zhù	10
 八射珊瑚亞綱	bā shè shān hú yà gāng	10
 把生活過成詩	bǎ shēng huó guò chéng shī	10
-巴士阿叔事件	bā shì ā shū shì jiàn	10
 八世達賴喇嘛	bā shì dá lài lǎ ma	10
 巴士德消毒法	bā shì dé xiāo dú fǎ	10
 巴士底獄囚徒	bā shì dǐ yù qiú tú	10
@@ -92640,7 +92531,6 @@ sort: by_weight
 八月二十一日	bā yuè èr shí yī rì	10
 八月十五日夜	bā yuè shí wǔ rì yè	10
 八月十五夜月	bā yuè shí wǔ yè yuè	10
-八月宗派事件	bā yuè zōng pài shì jiàn	10
 八雲分屯基地	bā yún fēn tún jī dì	10
 把匝剌瓦爾密	bǎ zā lá wǎ ěr mì	10
 把盞淒然北望	bǎ zhǎn qī rán běi wàng	10
@@ -92703,7 +92593,6 @@ sort: by_weight
 白癜風一擦淨	bái diàn fēng yì cā jìng	10
 白點細吻海豚	bái diǎn xì wěn hǎi tún	10
 擺動圓鋸清洗	bǎi dòng yuán jù qīng xǐ	10
-百度被黑事件	bǎi dù bèi hēi shì jiàn	10
 百度超級搜霸	bǎi dù chāo jí sōu bà	10
 百度人工智能	bǎi dù rén gōng zhì néng	10
 百度十大神獸	bǎi dù shí dà shén shòu	10
@@ -92924,7 +92813,6 @@ sort: by_weight
 白嶽山阿斯達	bái yuè shān ē sī dá	10
 白雲大道北站	bái yún dà dào běi zhàn	10
 白雲機場北站	bái yún jī chǎng běi zhàn	10
-白雲機場事件	bái yún jī chǎng shì jiàn	10
 百戰天蟲系列	bǎi zhàn tiān chóng xì liè	10
 百丈懷海禪師	bǎi zhàng huái hǎi chán shī	10
 拜趙本山為師	bài zhào běn shān wéi shī	10
@@ -93180,7 +93068,6 @@ sort: by_weight
 寶船遺址公園	bǎo chuán yí zhǐ gōng yuán	10
 保存有生力量	bǎo cún yǒu shēng lì liàng	10
 保大還是保小	bǎo dà hái shì bǎo xiǎo	10
-保導聯盟事件	bǎo dǎo lián méng shì jiàn	10
 寶島商業銀行	bǎo dǎo shāng yè yín háng	10
 寶的悲慘日常	bǎo de bēi cǎn rì cháng	10
 鮑爾雙迭代法	bào ěr shuāng dié dài fǎ	10
@@ -93446,7 +93333,6 @@ sort: by_weight
 北大信科高培	běi dà xìn kē gāo péi	10
 北大嶼山公路	běi dà yǔ shān gōng lù	10
 北大嶼山醫院	běi dà yǔ shān yī yuàn	10
-北大嶽昕事件	běi dà yuè xīn shì jiàn	10
 北達資源中學	běi dá zī yuán zhōng xué	10
 貝戴二氏脫位	bèi dài èr shì tuō wèi	10
 貝代二氏現象	bèi dài èr shì xiàn xiàng	10
@@ -93514,7 +93400,6 @@ sort: by_weight
 北回歸線以北	běi huí guī xiàn yǐ běi	10
 北回歸線以南	běi huí guī xiàn yǐ nán	10
 北回木瓜牛奶	běi huí mù guā niú nǎi	10
-北極鯰魚事件	běi jí nián yú shì jiàn	10
 備急千金要方	bèi jí qiān jīn yào fāng	10
 北極星的眼淚	běi jí xīng de yǎn lèi	10
 北極研究所巖	běi jí yán jiū suǒ yán	10
@@ -93528,7 +93413,6 @@ sort: by_weight
 北郊高級中學	běi jiāo gāo jí zhōng xué	10
 被解放的姜戈	bèi jiě fàng de jiāng gē	10
 被解救的姜戈	bèi jiě jiù de jiāng gē	10
-北捷殺人事件	běi jié shā rén shì jiàn	10
 背街小巷改造	bèi jiē xiǎo xiàng gǎi zào	10
 背街小巷環境	bèi jiē xiǎo xiàng huán jìng	10
 背街小巷整治	bèi jiē xiǎo xiàng zhěng zhì	10
@@ -93947,7 +93831,6 @@ sort: by_weight
 本草品匯精要	běn cǎo pǐn huì jīng yào	10
 本草三家合注	běn cǎo sān jiā hé zhù	10
 本草醫方合編	běn cǎo yī fāng hé biān	10
-奔馳漏油事件	bēn chí lòu yóu shì jiàn	10
 奔馳威霆改裝	bēn chí wēi tíng gǎi zhuāng	10
 本次減持計畫	běn cì jiǎn chí jì huà	10
 本次啟動儀式	běn cì qǐ dòng yí shì	10
@@ -97981,7 +97864,6 @@ sort: by_weight
 此暱稱不存在	cǐ nì chēng bù cún zài	10
 此鳥不飛則已	cǐ niǎo bù fēi zé yǐ	10
 磁扭線存儲器	cí niǔ xiàn cún chǔ qì	10
-次諾門罕事件	cì nuò mén hǎn shì jiàn	10
 磁耦合截止閥	cí ǒu hé jié zhǐ fá	12
 磁盤被寫保護	cí pán bèi xiě bǎo hù	10
 磁盤冗餘陣列	cí pán rǒng yú zhèn liè	10
@@ -98666,7 +98548,6 @@ sort: by_weight
 大理世襲總管	dà lǐ shì xí zǒng guǎn	10
 大理石樣皮膚	dà lǐ shí yàng pí fū	10
 大力水手波派	dà lì shuǐ shǒu bō pài	10
-大力水手事件	dà lì shuǐ shǒu shì jiàn	10
 大力水手炸雞	dà lì shuǐ shǒu zhá jī	10
 大理寺少卿遊	dà lǐ sì shǎo qīng yóu	10
 大利亞霍夫島	dà lì yà huò fū dǎo	10
@@ -99417,7 +99298,6 @@ sort: by_weight
 倒卵葉魚骨木	dào luǎn yè yú gǔ mù	10
 盜墓筆記全集	dào mù bǐ jì quán jí	10
 導納參數矩陣	dǎo nà cān shù jǔ zhèn	10
-倒奶殺牛事件	dào nǎi shā niú shì jiàn	10
 倒牛奶的女僕	dào niú nǎi de nǚ pú	10
 倒披針葉蟲實	dào pī zhēn yè chóng shí	10
 到期還本付息	dào qī huán běn fù xī	10
@@ -99677,7 +99557,6 @@ sort: by_weight
 低電離星系核	dī diàn lí xīng xì hé	10
 低調的章魚君	dī diào de zhāng yú jūn	10
 低動力型休克	dī dòng lì xíng xiū kè	10
-帝都不祥事件	dì dū bù xiáng shì jiàn	10
 低度異型增生	dī dù yì xíng zēng shēng	10
 低端向中高端	dī duān xiàng zhōng gāo duān	10
 低端智能手機	dī duān zhì néng shǒu jī	10
@@ -100227,7 +100106,6 @@ sort: by_weight
 電光石火之間	diàn guāng shí huǒ zhī jiān	10
 奠桂酒兮椒漿	diàn guì jiǔ xī jiāo jiāng	10
 顛過來倒過去	diān guò lái dào guò qù	10
-澱號劫機事件	diàn hào jié jī shì jiàn	10
 電荷密度差圖	diàn hè mì dù chà tú	10
 電荷耦合器件	diàn hè ǒu hé qì jiàn	10
 電荷藕合器件	diàn hè ǒu hé qì jiàn	10
@@ -100697,7 +100575,6 @@ sort: by_weight
 頂推法頂推法	dǐng tuī fǎ dǐng tuī fǎ	10
 鼎王麻辣火鍋	dǐng wáng má là huǒ guō	10
 丁未防城起義	dīng wèi fáng chéng qǐ yì	10
-丁未漂人事件	dīng wèi piāo rén shì jiàn	10
 定位平面斜度	dìng wèi píng miàn xié dù	10
 定武高速公路	dìng wǔ gāo sù gōng lù	10
 定縣開元寺塔	dìng xiàn kāi yuán sì tǎ	10
@@ -103501,7 +103378,6 @@ sort: by_weight
 奉天迫擊炮廠	fèng tiān pǎi jī pào chǎng	10
 奉天醫科大學	fèng tiān yī kē dà xué	10
 奉天玉大和尚	fèng tiān yù dà hé shàng	10
-豐田召回事件	fēng tián zhào huí shì jiàn	10
 豐田自動織機	fēng tián zì dòng zhī jī	10
 風停了雲知道	fēng tíng le yún zhī dào	10
 奉銅高速公路	fèng tóng gāo sù gōng lù	10
@@ -104352,7 +104228,6 @@ sort: by_weight
 甘肅高速公路	gān sù gāo sù gōng lù	10
 甘肅廣電總臺	gān sù guǎng diàn zǒng tái	10
 甘肅蘭州兵變	gān sù lán zhōu bīng biàn	10
-甘肅隴南事件	gān sù lǒng nán shì jiàn	10
 甘肅旅遊景點	gān sù lǚ yóu jǐng diǎn	10
 甘肅師範大學	gān sù shī fàn dà xué	10
 肝素塗覆管道	gān sù tú fù guǎn dào	10
@@ -106150,7 +106025,6 @@ sort: by_weight
 谷歌金山詞霸	gǔ gē jīn shān cí bà	10
 古格魯吉亞語	gǔ gé lǔ jí yà yǔ	10
 谷歌人工智能	gǔ gē rén gōng zhì néng	10
-谷歌涉黃事件	gǔ gē shè huáng shì jiàn	10
 古格王朝遺址	gǔ gé wáng cháo yí zhǐ	10
 古格王國遺址	gǔ gé wáng guó yí zhǐ	10
 谷歌眼鏡項目	gǔ gē yǎn jìng xiàng mù	10
@@ -107118,9 +106992,7 @@ sort: by_weight
 果蝠冠狀病毒	guǒ fú guān zhuàng bìng dú	10
 國富浩華國際	guó fù hào huá guó jì	10
 國父紀念館站	guó fù jì niàn guǎn zhàn	10
-國府遷台事件	guó fǔ qiān tái shì jiàn	10
 國府田麻理子	guó fǔ tián má lǐ zi	10
-果敢八八事件	guǒ gǎn bā bā shì jiàn	10
 國剛果共和國	guó gāng guǒ gòng hé guó	10
 過高或者過低	guò gāo huò zhě guò dī	10
 過更好的生活	guò gèng hǎo de shēng huó	10
@@ -108215,7 +108087,6 @@ sort: by_weight
 毫須裝甲汽車	háo xū zhuāng jiǎ qì chē	10
 好一點的學校	hǎo yì diǎn de xué xiào	10
 好友和朋友圈	hǎo yǒu hé péng you quān	10
-號魚雷艇事件	hào yú léi tǐng shì jiàn	10
 號魚雷巡洋艦	hào yú léi xún yáng jiàn	10
 好苑建國酒店	hǎo yuàn jiàn guó jiǔ diàn	10
 號月球玄武岩	hào yuè qiú xuán wǔ yán	10
@@ -108246,7 +108117,6 @@ sort: by_weight
 河北礦冶學院	hé běi kuàng yě xué yuàn	10
 河北旅遊景點	hé běi lǚ yóu jǐng diǎn	10
 河北摩崖石刻	hé běi mó yá shí kè	10
-河北目擊事件	hé běi mù jī shì jiàn	10
 河北盛華化工	hé běi shèng huá huà gōng	10
 河北師大附中	hé běi shī dà fù zhōng	10
 河北師範大學	hé běi shī fàn dà xué	10
@@ -108681,7 +108551,6 @@ sort: by_weight
 黑色水晶項鍊	hēi sè shuǐ jīng xiàng liàn	10
 黑色素母細胞	hēi sè sù mǔ xì bāo	10
 黑色碳質頁岩	hēi sè tàn zhì yè yán	10
-黑色五月事件	hēi sè wǔ yuè shì jiàn	10
 黑色橡膠錶帶	hēi sè xiàng jiāo biǎo dài	10
 黑沙青年旅舍	hēi shā qīng nián lǚ shè	10
 黑鯊遊戲手機	hēi shā yóu xì shǒu jī	10
@@ -108936,7 +108805,6 @@ sort: by_weight
 紅其拉甫口岸	hóng qí lā fǔ kǒu àn	10
 紅其拉甫山口	hóng qí lā fǔ shān kǒu	10
 紅旗渠的故事	hóng qí qú de gù shi	10
-虹橋機場事件	hóng qiáo jī chǎng shì jiàn	10
 紅絨蓋牛肝菌	hóng róng gài niú gān jūn	10
 紅色革命遺址	hóng sè gé mìng yí zhǐ	10
 紅色格子襯衫	hóng sè gé zi chèn shān	10
@@ -109370,7 +109238,6 @@ sort: by_weight
 互質因子算法	hù zhì yīn zǐ suàn fǎ	10
 湖州高速公路	hú zhōu gāo sù gōng lù	10
 湖州師範學院	hú zhōu shī fàn xué yuàn	10
-湖州織里事件	hú zhōu zhī lǐ shì jiàn	10
 華安宏利股票	huá ān hóng lì gǔ piào	10
 華澳國際信託	huá ào guó jì xìn tuō	10
 花斑光滑加工	huā bān guāng huá jiā gōng	10
@@ -111758,7 +111625,6 @@ sort: by_weight
 嘉實浦安保本	jiā shí pǔ ān bǎo běn	10
 家事審判改革	jiā shì shěn pàn gǎi gé	10
 夾石剔除厚度	jiā shí tī chú hòu dù	10
-佳士維權事件	jiā shì wéi quán shì jiàn	10
 嘉實穩固收益	jiā shí wěn gù shōu yì	10
 嘉實優化紅利	jiā shí yōu huà hóng lì	10
 駕駛員的操作	jià shǐ yuán de cāo zuò	10
@@ -112133,7 +111999,6 @@ sort: by_weight
 堅強智能電網	jiān qiáng zhì néng diàn wǎng	10
 劍橋大學默里	jiàn qiáo dà xué mò lǐ	10
 劍橋大學人物	jiàn qiáo dà xué rén wù	10
-劍橋分析事件	jiàn qiáo fēn xī shì jiàn	10
 劍橋公立學校	jiàn qiáo gōng lì xué xiào	10
 劍橋商務英語	jiàn qiáo shāng wù yīng yǔ	10
 劍橋哲學辭典	jiàn qiáo zhé xué cí diǎn	10
@@ -112436,7 +112301,6 @@ sort: by_weight
 姜文電影作品	jiāng wén diàn yǐng zuò pǐn	10
 姜文來農科院	jiāng wén lái nóng kē yuàn	10
 江西布政使司	jiāng xī bù zhèng shǐ sī	10
-江西豐城事件	jiāng xī fēng chéng shì jiàn	10
 江西高速公路	jiāng xī gāo sù gōng lù	10
 江習高速公路	jiāng xí gāo sù gōng lù	10
 江西高速交警	jiāng xī gāo sù jiāo jǐng	10
@@ -113690,7 +113554,6 @@ sort: by_weight
 精密測量儀器	jīng mì cè liáng yí qì	10
 京密高速公路	jīng mì gāo sù gōng lù	10
 精密儀器儀表	jīng mì yí qì yí biǎo	10
-景明大樓事件	jǐng míng dà lóu shì jiàn	10
 精明的生意人	jīng míng de shēng yi rén	10
 精明的投資者	jīng míng de tóu zī zhě	10
 精明就精明在	jīng míng jiù jīng míng zài	10
@@ -114313,7 +114176,7 @@ sort: by_weight
 居民生活電價	jū mín shēng huó diàn jià	10
 居民自治章程	jū mín zì zhì zhāng chéng	10
 巨魔之血藥水	jù mó zhī xuè yào shuǐ	10
-拘那含牟尼佛	jū nà hán mù ní fó	10
+拘那含牟尼佛	jū nà hán móu ní fó	10
 莒南第一中學	jǔ nán dì yī zhōng xué	10
 鉅派投資集團	jù pài tóu zī jí tuán	10
 巨泡五趾跳鼠	jù pào wǔ zhǐ tiào shǔ	10
@@ -115721,7 +115584,6 @@ sort: by_weight
 空軍志航基地	kōng jūn zhì háng jī dì	10
 空軍指揮學院	kōng jūn zhǐ huī xué yuàn	10
 空軍總司令部	kōng jūn zǒng sī lìng bù	10
-空喀山口事件	kōng kā shān kǒu shì jiàn	10
 孔科爾迪亞港	kǒng kē ěr dí yà gǎng	10
 空冷器管束箱	kōng lěng qì guǎn shù xiāng	10
 恐龍滅絕事件	kǒng lóng miè jué shì jiàn	10
@@ -116033,7 +115895,6 @@ sort: by_weight
 昆明師範學院	kūn míng shī fàn xué yuàn	10
 昆明醫科大學	kūn míng yī kē dà xué	10
 昆磨高速公路	kūn mó gāo sù gōng lù	10
-崑山爆炸事件	kūn shān bào zhà shì jiàn	10
 崑石高速公路	kūn shí gāo sù gōng lù	10
 昆斯伯裏公爵	kūn sī bó lǐ gōng jué	10
 昆嵩高速公路	kūn sōng gāo sù gōng lù	10
@@ -117706,7 +117567,6 @@ sort: by_weight
 劉胡蘭紀念館	liú hú lán jì niàn guǎn	10
 流化床反應器	liú huà chuáng fǎn yìng qì	10
 流化催化裂化	liú huà cuī huà liè huà	10
-劉輝履歷事件	liú huī lǚ lì shì jiàn	10
 六甲頂開仙宮	liù jiǎ dǐng kāi xiān gōng	10
 六甲纜索下站	liù jiǎ lǎn suǒ xià zhàn	10
 六甲磷酰三銨	liù jiǎ lín xiān sān ǎn	10
@@ -117736,7 +117596,6 @@ sort: by_weight
 流浪的三腳貓	liú làng de sān jiǎo māo	10
 流浪的小孩子	liú làng de xiǎo hái zi	10
 流浪的猶太人	liú làng de yóu tài rén	10
-流浪氣球事件	liú làng qì qiú shì jiàn	10
 柳浪聞鶯公園	liǔ làng wén yīng gōng yuán	10
 流浪者的故事	liú làng zhě de gù shi	10
 流淚的一瞬間	liú lèi de yí shùn jiān	10
@@ -117977,7 +117836,6 @@ sort: by_weight
 蘆洞彈道導彈	lú dòng dàn dào dǎo dàn	10
 盧厄血紅蛋白	lú è xuè hóng dàn bái	10
 魯菲二氏試驗	lǔ fēi èr shì shì yàn	10
-陸豐烏坎事件	lù fēng wū kǎn shì jiàn	10
 蘆福遞降反應	lú fú dì jiàng fǎn yìng	10
 爐甘石草藥類	lú gān shí cǎo yào lèi	10
 擼胳膊挽袖子	lū gē bo wǎn xiù zi	10
@@ -118915,7 +118773,6 @@ sort: by_weight
 美軍第空降師	měi jūn dì kōng jiàng shī	10
 黴菌毒素中毒	méi jūn dú sù zhòng dú	10
 黴菌和酵母菌	méi jūn hé jiào mǔ jūn	10
-美軍虐囚事件	měi jūn nüè qiú shì jiàn	10
 美軍特種部隊	měi jūn tè zhǒng bù duì	10
 美軍中國戰區	měi jūn zhōng guó zhàn qū	10
 沒考慮過這個	méi kǎo lǜ guò zhè ge	10
@@ -120087,7 +119944,6 @@ sort: by_weight
 南京長江大橋	nán jīng cháng jiāng dà qiáo	10
 難經匯注箋正	nán jīng huì zhù jiān zhèng	10
 難經經釋補正	nán jīng jīng shì bǔ zhèng	10
-南京虐童事件	nán jīng nüè tóng shì jiàn	10
 南京郵電大學	nán jīng yóu diàn dà xué	10
 南卡羅來納州	nán kǎ luó lái nà zhōu	10
 南卡羅萊納州	nán kǎ luó lái nà zhōu	10
@@ -120296,7 +120152,6 @@ sort: by_weight
 內科主治醫師	nèi kē zhǔ zhì yī shī	10
 內控實施細則	nèi kòng shí shī xì zé	10
 內窺鏡活檢鉗	nèi kuī jìng huó jiǎn qián	10
-內拉格郎日點	nèi lā gé láng rì diǎn	10
 內拉格朗日點	nèi lā gé lǎng rì diǎn	10
 內力地質作用	nèi lì dì zhì zuò yòng	10
 內六角螺絲刀	nèi liù jiǎo luó sī dāo	10
@@ -120361,7 +120216,6 @@ sort: by_weight
 能明顯感受到	néng míng xiǎn gǎn shòu dào	10
 能清楚的看到	néng qīng chǔ de kàn dào	10
 能清楚地看到	néng qīng chu de kàn dào	10
-能清晰的看到	néng qīng xī de kàn dào	10
 能清晰地看到	néng qīng xī de kàn dào	10
 能少吃就少喫	néng shǎo chī jiù shǎo chī	10
 能施展魔法的	néng shī zhǎn mó fǎ de	10
@@ -122317,7 +122171,6 @@ sort: by_weight
 七月二十五日	qī yuè èr shí wǔ rì	10
 七月二十一日	qī yuè èr shí yī rì	10
 七月九日大道	qī yuè jiǔ rì dà dào	10
-七月流血事件	qī yuè liú xuè shì jiàn	10
 七月三十一日	qī yuè sān shí yī rì	10
 契約自由原則	qì yuē zì yóu yuán zé	10
 其運動情況是	qí yùn dòng qíng kuàng shì	10
@@ -123303,7 +123156,6 @@ sort: by_weight
 青銅時代遺址	qīng tóng shí dài yí zhǐ	10
 青銅之力安德	qīng tóng zhī lì ān dé	10
 青銅縱目面具	qīng tóng zòng mù miàn jù	10
-青蛙少年事件	qīng wā shào nián shì jiàn	10
 青威高速公路	qīng wēi gāo sù gōng lù	10
 輕微刑事案件	qīng wēi xíng shì àn jiàn	10
 卿爲朝朝暮暮	qīng wéi zhāo zhāo mù mù	10
@@ -124536,8 +124388,6 @@ sort: by_weight
 人生起起伏伏	rén shēng qǐ qǐ fú fú	10
 人生起起落落	rén shēng qǐ qǐ luò luò	10
 人生若如初見	rén shēng ruò rú chū jiàn	10
-人生若只初見	rén shēng ruò zhǐ chū jiàn	10
-人生若只如初	rén shēng ruò zhǐ rú chū	10
 人生是美好的	rén shēng shì měi hǎo de	10
 人生是美麗的	rén shēng shì měi lì de	10
 人生十字路口	rén shēng shí zì lù kǒu	10
@@ -125327,7 +125177,6 @@ sort: by_weight
 三種統治形式	sān zhǒng tǒng zhì xíng shì	10
 三中心二電子	sān zhōng xīn èr diàn zǐ	10
 三中心兩電子	sān zhōng xīn liǎng diàn zǐ	10
-三種顏色事件	sān zhǒng yán sè shì jiàn	10
 三忠於四無限	sān zhōng yú sì wú xiàn	10
 三軸應力狀態	sān zhóu yīng lì zhuàng tài	10
 三自愛國教會	sān zì ài guó jiào huì	10
@@ -125368,7 +125217,6 @@ sort: by_weight
 僧富者不能至	sēng fù zhě bù néng zhì	10
 沙巴棕提取物	shā bā zōng tí qǔ wù	10
 傻白甜的角色	shǎ bái tián de jué sè	10
-莎車暴恐事件	shā chē bào kǒng shì jiàn	10
 煞車優先系統	shā chē yōu xiān xì tǒng	10
 剎車優先系統	shā chē yōu xiān xì tǒng	10
 廈成高速公路	shà chéng gāo sù gōng lù	10
@@ -125624,7 +125472,6 @@ sort: by_weight
 陝西延長石油	shǎn xī yán cháng shí yóu	10
 山西陽泉煤業	shān xī yáng quán méi yè	10
 山西醫科大學	shān xī yī kē dà xué	10
-山西疫苗事件	shān xī yì miáo shì jiàn	10
 陝西銀河國樑	shǎn xī yín hé guó liáng	10
 山西有限公司	shān xī yǒu xiàn gōng sī	12
 陝西有限公司	shǎn xī yǒu xiàn gōng sī	10
@@ -127439,10 +127286,10 @@ sort: by_weight
 士嘉堡北選區	shì jiā bǎo běi xuǎn qū	10
 世嘉都市樂園	shì jiā dū shì lè yuán	10
 史家胡同小學	shǐ jiā hú tòng xiǎo xué	10
-釋迦牟尼佛所	shì jiā mù ní fó suǒ	10
-釋迦牟尼佛像	shì jiā mù ní fó xiàng	10
-釋迦牟尼如來	shì jiā mù ní rú lái	10
-釋迦牟尼世尊	shì jiā mù ní shì zūn	10
+釋迦牟尼佛所	shì jiā móu ní fó suǒ	10
+釋迦牟尼佛像	shì jiā móu ní fó xiàng	10
+釋迦牟尼如來	shì jiā móu ní rú lái	10
+釋迦牟尼世尊	shì jiā móu ní shì zūn	10
 世嘉土星遊戲	shì jiā tǔ xīng yóu xì	10
 史家小學分校	shǐ jiā xiǎo xué fēn xiào	10
 世嘉硬件女孩	shì jiā yìng jiàn nǚ hái	10
@@ -127963,7 +127810,7 @@ sort: by_weight
 實時光線追蹤	shí shí guāng xiàn zhuī zōng	10
 實時行情數據	shí shí háng qíng shù jù	10
 史詩毀滅金屬	shǐ shī huǐ miè jīn shǔ	10
-時釋迦牟尼佛	shí shì jiā mù ní fó	10
+時釋迦牟尼佛	shí shì jiā móu ní fó	10
 實施家庭暴力	shí shī jiā tíng bào lì	10
 實時監測數據	shí shí jiān cè shù jù	10
 實時監測系統	shí shí jiān cè xì tǒng	10
@@ -129836,7 +129683,6 @@ sort: by_weight
 四月二十四日	sì yuè èr shí sì rì	10
 四月二十五日	sì yuè èr shí wǔ rì	10
 四月二十一日	sì yuè èr shí yī rì	10
-四月三日事件	sì yuè sān rì shì jiàn	10
 四診心法要訣	sì zhěn xīn fǎ yào jué	10
 四肢供血不足	sì zhī gōng xuè bù zú	10
 四肢聶聶動者	sì zhī niè niè dòng zhě	10
@@ -130383,7 +130229,6 @@ sort: by_weight
 颱風基礎資訊	tái fēng jī chǔ zī xùn	10
 臺福基督教會	tái fú jī dū jiào huì	10
 臺夫特塔實驗	tái fū tè tǎ shí yàn	10
-太伏中學事件	tài fú zhōng xué shì jiàn	10
 台港盜版時期	tái gǎng dào bǎn shí qī	10
 臺鋼科技大學	tái gāng kē jì dà xué	10
 太鼓達人系列	tài gǔ dá rén xì liè	10
@@ -130575,7 +130420,6 @@ sort: by_weight
 覃家廟石灰岩	tán jiā miào shí huī yán	10
 碳鍵形成反應	tàn jiàn xíng chéng fǎn yìng	10
 碳金屬化反應	tàn jīn shǔ huà fǎn yìng	10
-譚靜墜樓事件	tán jìng zhuì lóu shì jiàn	10
 炭疽芽孢桿菌	tàn jū yá bāo gǎn jūn	10
 炭疽芽胞桿菌	tàn jū yá bāo gǎn jūn	10
 談了個女朋友	tán le gè nǚ péng you	10
@@ -130737,7 +130581,6 @@ sort: by_weight
 桃利伊夫斯基	táo lì yī fū sī jī	10
 陶魯比永城堡	táo lǔ bǐ yǒng chéng bǎo	10
 套路與反套路	tào lù yǔ fǎn tào lù	10
-陶普斯號事件	táo pǔ sī hào shì jiàn	10
 套期保值合約	tào qī bǎo zhí hé yuē	10
 套期保值交易	tào qī bǎo zhí jiāo yì	10
 淘氣的金絲猴	táo qì de jīn sī hóu	10
@@ -131571,7 +131414,6 @@ sort: by_weight
 通識教育課程	tōng shí jiào yù kè chéng	10
 通識教育學院	tōng shí jiào yù xué yuàn	10
 同時履行抗辯	tóng shí lǚ xíng kàng biàn	10
-同是天涯淪落	tóng shì tiān yá lún luò	10
 通水試驗記錄	tōng shuǐ shì yàn jì lù	10
 同素環化合物	tóng sù huán huà hé wù	10
 通俗易懂的話	tōng sú yì dǒng de huà	10
@@ -131901,7 +131743,6 @@ sort: by_weight
 推出全新車型	tuī chū quán xīn chē xíng	10
 推出優惠政策	tuī chū yōu huì zhèng cè	10
 退出娛樂圈後	tuì chū yú lè quān hòu	10
-退出中國事件	tuì chū zhōng guó shì jiàn	10
 腿創傷性切斷	tuǐ chuāng shāng xìng qiē duàn	10
 推動產業集聚	tuī dòng chǎn yè jí jù	10
 推動電子商務	tuī dòng diàn zǐ shāng wù	10
@@ -132136,7 +131977,6 @@ sort: by_weight
 外科證治準繩	wài kē zhèng zhì zhǔn shéng	10
 外科主任醫師	wài kē zhǔ rèn yī shī	10
 外科主治醫師	wài kē zhǔ zhì yī shī	10
-外拉格郎日點	wài lā gé láng rì diǎn	10
 外拉格朗日點	wài lā gé lǎng rì diǎn	10
 外來務工人員	wài lái wù gōng rén yuán	10
 外來務工子女	wài lái wù gōng zǐ nǚ	10
@@ -132590,7 +132430,6 @@ sort: by_weight
 王室高級成員	wáng shì gāo jí chéng yuán	10
 王室教師海涅	wáng shì jiào shī hǎi niè	10
 往事歷歷在目	wǎng shì lì lì zài mù	10
-王守仁的粉絲	wáng shǒu rén de fěn sī	10
 王蜀宮妓圖軸	wáng shǔ gōng jì tú zhóu	10
 王思聰的女友	wáng sī cōng de nǚ yǒu	10
 王思聰的微博	wáng sī cōng de wēi bó	10
@@ -133079,10 +132918,10 @@ sort: by_weight
 未完成的心願	wèi wán chéng de xīn yuàn	10
 未完結的故事	wèi wán jié de gù shi	10
 未完施工成本	wèi wán shī gōng chéng běn	10
-爲萬世開太平	wéi wàn shì kāi tài píng	10
+爲萬世開太平	wèi wàn shì kāi tài píng	10
 胃網膜右動脈	wèi wǎng mó yòu dòng mài	10
 胃網膜左動脈	wèi wǎng mó zuǒ dòng mài	10
-爲往聖繼絕學	wéi wǎng shèng jì jué xué	10
+爲往聖繼絕學	wèi wǎng shèng jì jué xué	10
 圍魏救趙之計	wéi wèi jiù zhào zhī jì	10
 微微秒光譜學	wēi wēi miǎo guāng pǔ xué	10
 微微秒激光器	wēi wēi miǎo jī guāng qì	10
@@ -133108,7 +132947,7 @@ sort: by_weight
 危險就危險在	wēi xiǎn jiù wēi xiǎn zài	10
 危險區平面圖	wēi xiǎn qū píng miàn tú	10
 違憲審查制度	wéi xiàn shěn chá zhì dù	10
-危險無處不在	wēi xiǎn wú chǔ bú zài	10
+危險無處不在	wēi xiǎn wú chù bú zài	10
 危險物質洩露	wēi xiǎn wù zhì xiè lòu	10
 危險物質指令	wēi xiǎn wù zhì zhǐ lìng	10
 微小核糖病毒	wēi xiǎo hé táng bìng dú	10
@@ -133125,7 +132964,6 @@ sort: by_weight
 微信羣等方式	wēi xìn qún děng fāng shì	10
 微信三級分銷	wēi xìn sān jí fēn xiāo	10
 微信掃二維碼	wēi xìn sǎo èr wéi mǎ	10
-微信收費事件	wēi xìn shōu fèi shì jiàn	10
 爲信仰而堅守	wéi xìn yǎng ér jiān shǒu	10
 微信一級入口	wēi xìn yì jí rù kǒu	10
 微信一鍵登錄	wēi xìn yí jiàn dēng lù	10
@@ -133577,12 +133415,12 @@ sort: by_weight
 武昌中華大學	wǔ chāng zhōng huá dà xué	10
 武昌中山大學	wǔ chāng zhōng shān dà xué	10
 無塵淨化車間	wú chén jìng huà chē jiān	10
-無處稠密點集	wú chǔ chóu mì diǎn jí	10
-無處稠密子集	wú chǔ chóu mì zǐ jí	10
-無處可微函數	wú chǔ kě wēi hán shù	10
+無處稠密點集	wú chù chóu mì diǎn jí	10
+無處稠密子集	wú chù chóu mì zǐ jí	10
+無處可微函數	wú chù kě wēi hán shù	10
 吳楚七國之亂	wú chǔ qī guó zhī luàn	10
-無處收斂級數	wú chǔ shōu liǎn jí shù	10
-無處收斂序列	wú chǔ shōu liǎn xù liè	10
+無處收斂級數	wú chù shōu liǎn jí shù	10
+無處收斂序列	wú chù shōu liǎn xù liè	10
 無初速度釋放	wú chū sù dù shì fàng	10
 無出息的漢子	wú chū xi de hàn zi	10
 無創輔助通氣	wú chuàng fǔ zhù tōng qì	10
@@ -133690,7 +133528,6 @@ sort: by_weight
 武漢地質學院	wǔ hàn dì zhì xué yuàn	10
 武漢法語聯盟	wǔ hàn fǎ yǔ lián méng	10
 武漢紡織大學	wǔ hàn fǎng zhī dà xué	10
-武漢肺炎事件	wǔ hàn fèi yán shì jiàn	10
 武漢高速公路	wǔ hàn gāo sù gōng lù	10
 武漢光谷南益	wǔ hàn guāng gǔ nán yì	10
 武漢過江隧道	wǔ hàn guò jiāng suì dào	10
@@ -134057,7 +133894,6 @@ sort: by_weight
 武威高速公路	wǔ wēi gāo sù gōng lù	10
 武威雷臺漢墓	wǔ wēi léi tái hàn mù	10
 五位七十五法	wǔ wèi qī shí wǔ fǎ	10
-吳維辱華事件	wú wéi rǔ huá shì jiàn	10
 午未申酉戌亥	wǔ wèi shēn yǒu xū hài	10
 無尾獸的目光	wú wěi shòu de mù guāng	10
 無畏型戰列艦	wú wèi xíng zhàn liè jiàn	10
@@ -135857,7 +135693,6 @@ sort: by_weight
 小畫舫齋舊址	xiǎo huà fǎng zhāi jiù zhǐ	10
 硝化甘油火藥	xiāo huà gān yóu huǒ yào	10
 硝化甘油炸藥	xiāo huà gān yóu zhà yào	10
-校花詭異事件	xiào huā guǐ yì shì jiàn	10
 硝化螺旋菌綱	xiāo huà luó xuán jūn gāng	10
 硝化螺旋菌門	xiāo huà luó xuán jūn mén	10
 硝化螺旋菌目	xiāo huà luó xuán jūn mù	10
@@ -136160,7 +135995,6 @@ sort: by_weight
 校園言情小說	xiào yuán yán qíng xiǎo shuō	10
 小月齡的寶寶	xiǎo yuè líng de bǎo bao	10
 消災吉祥神咒	xiāo zāi jí xiáng shén zhòu	10
-肖戰粉絲事件	xiāo zhàn fěn sī shì jiàn	10
 小智的皮卡丘	xiǎo zhì de pí kǎ qiū	10
 小指伸肌腱鞘	xiǎo zhǐ shēn jī jiàn qiào	10
 孝莊太皇太后	xiào zhuāng tài huáng tài hòu	10
@@ -136341,11 +136175,9 @@ sort: by_weight
 新股與次新股	xīn gǔ yǔ cì xīn gǔ	10
 新冠變異病毒	xīn guān biàn yì bìng dú	10
 新冠病毒變異	xīn guān bìng dú biàn yì	10
-新冠病毒事件	xīn guān bìng dú shì jiàn	10
 新官不理舊賬	xīn guān bù lǐ jiù zhàng	10
 新觀察家雜誌	xīn guān chá jiā zá zhì	10
 新官場現形記	xīn guān chǎng xiàn xíng jì	10
-新冠肺炎事件	xīn guān fèi yán shì jiàn	10
 新冠滅活疫苗	xīn guān miè huó yì miáo	10
 信貴山城之戰	xìn guì shān chéng zhī zhàn	10
 信貴山真言宗	xìn guì shān zhēn yán zōng	10
@@ -136395,14 +136227,12 @@ sort: by_weight
 新疆和田大棗	xīn jiāng hé tián dà zǎo	10
 新疆霍爾果斯	xīn jiāng huò ěr guǒ sī	10
 新疆教培中心	xīn jiāng jiào péi zhōng xīn	10
-新疆劫機事件	xīn jiāng jié jī shì jiàn	10
 新疆居民外逃	xīn jiāng jū mín wài táo	10
 新疆恐怖主義	xīn jiāng kǒng bù zhǔ yì	10
 新疆礦冶學院	xīn jiāng kuàng yě xué yuàn	10
 新疆歷史人物	xīn jiāng lì shǐ rén wù	10
 新疆旅遊景點	xīn jiāng lǚ yóu jǐng diǎn	10
 新疆美食發現	xīn jiāng měi shí fā xiàn	10
-新疆棉花事件	xīn jiāng mián huā shì jiàn	10
 新疆七五事件	xīn jiāng qī wǔ shì jiàn	10
 新疆師範大學	xīn jiāng shī fàn dà xué	10
 新疆師範學院	xīn jiāng shī fàn xué yuàn	10
@@ -136565,7 +136395,6 @@ sort: by_weight
 新年的第一天	xīn nián de dì yī tiān	10
 信念更加堅定	xìn niàn gèng jiā jiān dìng	10
 新年來臨之際	xīn nián lái lín zhī jì	10
-新年特刊事件	xīn nián tè kān shì jiàn	10
 新年鐘聲敲響	xīn nián zhōng shēng qiāo xiǎng	10
 鑫諾衛星公司	xīn nuò wèi xīng gōng sī	10
 鑫諾衛星通信	xīn nuò wèi xīng tōng xìn	10
@@ -136792,7 +136621,6 @@ sort: by_weight
 行道之人弗受	xíng dào zhī rén fú shòu	10
 星島中文電台	xīng dǎo zhōng wén diàn tái	10
 行的端做得正	xíng de duān zuò de zhèng	10
-幸德秋水事件	xìng dé qiū shuǐ shì jiàn	10
 興登堡號飛船	xīng dēng bǎo hào fēi chuán	10
 興登堡號飛艇	xīng dēng bǎo hào fēi tǐng	10
 興登堡號空難	xīng dēng bǎo hào kōng nàn	10
@@ -136821,7 +136649,7 @@ sort: by_weight
 興奮收縮耦聯	xīng fèn shōu suō ǒu lián	10
 幸福觸手可及	xìng fú chù shǒu kě jí	10
 幸福牌電冰箱	xìng fú pái diàn bīng xiāng	10
-幸福無處不在	xìng fú wú chǔ bú zài	10
+幸福無處不在	xìng fú wú chù bú zài	10
 幸福像花一樣	xìng fú xiàng huā yí yàng	10
 幸福寫在臉上	xìng fú xiě zài liǎn shàng	10
 幸福魚的面頰	xìng fú yú de miàn jiá	10
@@ -138185,7 +138013,6 @@ sort: by_weight
 硯瓦山石灰岩	yàn wǎ shān shí huī yán	10
 眼外直肌麻痹	yǎn wài zhí jī má bì	10
 巖灣監獄暴動	yán wān jiān yù bào dòng	10
-巖灣絕食事件	yán wān jué shí shì jiàn	10
 燕威帝慕容沖	yàn wēi dì mù róng chōng	10
 煙威高速公路	yān wēi gāo sù gōng lù	10
 言未及之而言	yán wèi jí zhī ér yán	10
@@ -138315,7 +138142,6 @@ sort: by_weight
 仰觀宇宙之大	yǎng guān yǔ zhòu zhī dà	10
 陽光般的溫暖	yáng guāng bān de wēn nuǎn	10
 陽光般的笑容	yáng guāng bān de xiào róng	10
-仰光爆炸事件	yǎng guāng bào zhà shì jiàn	10
 陽光城翡麗灣	yáng guāng chéng fěi lì wān	10
 陽光刺痛了眼	yáng guāng cì tòng le yǎn	10
 仰光國際機場	yǎng guāng guó jì jī chǎng	10
@@ -138597,7 +138423,6 @@ sort: by_weight
 也門胡塞叛亂	yě mén hú sāi pàn luàn	10
 也門胡塞武裝	yě mén hú sāi wǔ zhuāng	10
 也門武裝部隊	yě mén wǔ zhuāng bù duì	10
-也門襲擊事件	yě mén xí jī shì jiàn	10
 夜幕降臨之時	yè mù jiàng lín zhī shí	10
 業內權威人士	yè nèi quán wēi rén shì	10
 業內人士爆料	yè nèi rén shì bào liào	10
@@ -139361,7 +139186,7 @@ sort: by_weight
 以平常心對待	yǐ píng cháng xīn duì dài	10
 以平常心看待	yǐ píng cháng xīn kàn dài	10
 以平和的心態	yǐ píng hé de xīn tài	10
-一抔之土未乾	yì pū zhī tǔ wèi gàn	10
+一抔之土未乾	yì póu zhī tǔ wèi gàn	10
 一起吃喝玩樂	yì qǐ chī hē wán lè	10
 一起吃晚餐嗎	yì qǐ chī wǎn cān ma	10
 一汽大眾寶來	yī qì dà zhòng bǎo lái	10
@@ -140422,11 +140247,9 @@ sort: by_weight
 英屬向風群島	yīng shǔ xiàng fēng qún dǎo	10
 英屬香港旗幟	yīng shǔ xiāng gǎng qí zhì	10
 英屬香港人物	yīng shǔ xiāng gǎng rén wù	10
-英屬香港事件	yīng shǔ xiāng gǎng shì jiàn	10
 英屬香港水災	yīng shǔ xiāng gǎng shuǐ zāi	10
 英屬香港議會	yīng shǔ xiāng gǎng yì huì	10
 英屬新幾內亞	yīng shǔ xīn jǐ nèi yà	10
-應似飛鴻踏雪	yīng sì fēi hóng tà xuě	10
 營松高速公路	yíng sōng gāo sù gōng lù	10
 罌粟稈濃縮物	yīng sù gǎn nóng suō wù	10
 罌粟果提取物	yīng sù guǒ tí qǔ wù	10
@@ -141515,7 +141338,6 @@ sort: by_weight
 遇事沉着冷靜	yù shì chén zhuó lěng jìng	10
 於是忽焉縱體	yú shì hū yān zòng tǐ	10
 於是精移神駭	yú shì jīng yí shén hài	10
-浴室密室事件	yù shì mì shì shì jiàn	10
 雨石蒜木脂素	yǔ shí suàn mù zhī sù	10
 遇溼易燃物品	yù shī yì rán wù pǐn	10
 於是餘有嘆焉	yú shì yú yǒu tàn yān	10
@@ -141603,7 +141425,6 @@ sort: by_weight
 渝長高速公路	yú zhǎng gāo sù gōng lù	10
 豫章號驅逐艦	yù zhāng hào qū zhú jiàn	10
 豫章師範學院	yù zhāng shī fàn xué yuàn	10
-豫章書院事件	yù zhāng shū yuàn shì jiàn	10
 與鄭邦瑞尺牘	yǔ zhèng bāng ruì chǐ dú	10
 漁政執法人員	yú zhèng zhí fǎ rén yuán	10
 玉置半右衛門	yù zhì bàn yòu wèi mén	10
@@ -142343,7 +142164,6 @@ sort: by_weight
 藏傳佛教法器	zàng chuán fó jiào fǎ qì	10
 藏傳佛教人物	zàng chuán fó jiào rén wù	10
 藏傳佛教上師	zàng chuán fó jiào shàng shī	10
-臧大咬子事件	zāng dà yǎo zǐ shì jiàn	10
 臟腑標本藥式	zàng fǔ biāo běn yào shì	10
 臟器斷層顯像	zàng qì duàn céng xiǎn xiàng	10
 髒氣法時論篇	zāng qì fǎ shí lùn piān	10
@@ -142593,7 +142413,6 @@ sort: by_weight
 湛藍的天空中	zhàn lán de tiān kōng zhōng	10
 戰力外搜查官	zhàn lì wài sōu chá guān	10
 粘連性肺不張	zhān lián xìng fèi bù zhāng	10
-佔領國會事件	zhàn lǐng guó huì shì jiàn	10
 佔領哈爾科夫	zhàn lǐng hā ěr kē fū	10
 佔領伊斯坦堡	zhàn lǐng yī sī tǎn bǎo	10
 戰略成本管控	zhàn lüè chéng běn guǎn kòng	10
@@ -142643,8 +142462,8 @@ sort: by_weight
 站在世界之巔	zhàn zài shì jiè zhī diān	10
 站在十字路口	zhàn zài shí zì lù kǒu	10
 站在同一立場	zhàn zài tóng yí lì chǎng	10
+站在同一戰線	zhàn zài tóng yí zhàn xiàn	10
 站在同一陣線	zhàn zài tóng yí zhèn xiàn	10
-站在同一戰線	zhàn zài tóng yí zhèn yíng	10
 站在宇宙之巔	zhàn zài yǔ zhòu zhī diān	10
 站在原地不動	zhàn zài yuán dì bú dòng	10
 站着一動不動	zhàn zhe yí dòng bú dòng	10
@@ -142753,7 +142572,6 @@ sort: by_weight
 張小生包子鋪	zhāng xiǎo shēng bāo zi pù	10
 彰信軍節度使	zhāng xìn jūn jié dù shǐ	10
 張歆藝和袁弘	zhāng xīn yì hé yuán hóng	10
-張懸國旗事件	zhāng xuán guó qí shì jiàn	10
 張掖甘州機場	zhāng yè gān zhōu jī chǎng	10
 張掖居延屬國	zhāng yè jū yán shǔ guó	10
 樟宜國際機場	zhāng yí guó jì jī chǎng	10
@@ -143594,7 +143412,6 @@ sort: by_weight
 直齒圓柱齒輪	zhí chǐ yuán zhù chǐ lún	10
 直齒圓錐齒輪	zhí chǐ yuán zhuī chǐ lún	10
 紙杻車輛基地	zhǐ chǒu chē liàng jī dì	10
-擲出窗外事件	zhì chū chuāng wài shì jiàn	10
 支出責任劃分	zhī chū zé rèn huà fēn	10
 值此國難之際	zhí cǐ guó nàn zhī jì	10
 質次價高商品	zhì cì jià gāo shāng pǐn	10
@@ -145826,7 +145643,6 @@ sort: by_weight
 轉置伴隨等價	zhuǎn zhì bàn suí děng jià	10
 轉置伴隨矩陣	zhuǎn zhì bàn suí jǔ zhèn	10
 專治各種不服	zhuān zhì gè zhǒng bù fú	10
-專制各種不服	zhuān zhì gè zhǒng bù fú	10
 轉置積分方程	zhuǎn zhì jī fēn fāng chéng	10
 賺指數不賺錢	zhuàn zhǐ shù bú zhuàn qián	10
 專治疑難雜症	zhuān zhì yí nán zá zhèng	10
@@ -148533,7 +148349,7 @@ sort: by_weight
 本色牛皮包裝紙	běn sè niú pí bāo zhuāng zhǐ	10
 本生羅二氏定律	běn shēng luó èr shì dìng lǜ	10
 本省行政區域內	běn shěng xíng zhèng qū yù nèi	10
-本師釋迦牟尼佛	běn shī shì jiā mù ní fó	10
+本師釋迦牟尼佛	běn shī shì jiā móu ní fó	10
 本市行政區域內	běn shì xíng zhèng qū yù nèi	10
 本斯瓊斯蛋白尿	běn sī qióng sī dàn bái niào	10
 本圖貢薩爾維斯	běn tú gòng sà ěr wéi sī	10
@@ -148563,7 +148379,7 @@ sort: by_weight
 彼此之間的關係	bǐ cǐ zhī jiān de guān xì	10
 彼此之間的距離	bǐ cǐ zhī jiān de jù lí	10
 彼此之間的信任	bǐ cǐ zhī jiān de xìn rèn	10
-筆底明珠無處賣	bǐ dǐ míng zhū wú chǔ mài	10
+筆底明珠無處賣	bǐ dǐ míng zhū wú chù mài	10
 吡啶基偶氮萘酚	bǐ dìng jī ǒu dàn nài fēn	10
 臂動脈血栓形成	bì dòng mài xuè shuān xíng chéng	10
 比爾格格爾茨型	bǐ ěr gé gé ěr cí xíng	10
@@ -149071,7 +148887,7 @@ sort: by_weight
 補充優質蛋白質	bǔ chōng yōu zhì dàn bái zhì	10
 補充足夠的水分	bǔ chōng zú gòu de shuǐ fèn	10
 補充足夠的營養	bǔ chōng zú gòu de yíng yǎng	10
-不愁無處下金鉤	bù chóu wú chǔ xià jīn gōu	10
+不愁無處下金鉤	bù chóu wú chù xià jīn gōu	10
 不純性心房撲動	bù chún xìng xīn fáng pū dòng	10
 不辭羸病臥殘陽	bù cí léi bìng wò cán yáng	10
 不辭迢遞過關山	bù cí tiáo dì guò guān shān	10
@@ -150117,7 +149933,6 @@ sort: by_weight
 長津湖之水門橋	cháng jīn hú zhī shuǐ mén qiáo	10
 長居陸上競技場	cháng jū lù shàng jìng jì chǎng	10
 場均三分命中率	chǎng jūn sān fēn mìng zhòng lǜ	10
-常凱申誤譯事件	cháng kǎi shēn wù yì shì jiàn	10
 長考德考德材積	cháng kǎo dé kǎo dé cái jī	10
 長鏈尼龍產業鏈	cháng liàn ní lóng chǎn yè liàn	10
 長鏈脂酰水解酶	cháng liàn zhī xiān shuǐ jiě méi	10
@@ -151101,7 +150916,7 @@ sort: by_weight
 春節黃金週期間	chūn jié huáng jīn zhōu qī jiān	10
 春節司機服務費	chūn jié sī jī fú wù fèi	10
 春酒香熟鱸魚美	chūn jiǔ xiāng shú lú yú měi	10
-春來無處不花香	chūn lái wú chǔ bù huā xiāng	10
+春來無處不花香	chūn lái wú chù bù huā xiāng	10
 唇裂手術減張弓	chún liè shǒu shù jiǎn zhāng gōng	10
 脣鱗狀上皮增生	chún lín zhuàng shàng pí zēng shēng	10
 春滿乾坤福滿門	chūn mǎn qián kūn fú mǎn mén	10
@@ -153031,7 +152846,6 @@ sort: by_weight
 敦煌文物研究所	dūn huáng wén wù yán jiū suǒ	10
 墩臺地基穩定性	dūn tái dì jī wěn dìng xìng	10
 鈍頭性扁平苔蘚	dùn tóu xìng biǎn píng tái xiǎn	10
-敦威治恐怖事件	dūn wēi zhì kǒng bù shì jiàn	10
 頓悟入道要門論	dùn wù rù dào yào mén lùn	10
 盾之勇者成名錄	dùn zhī yǒng zhě chéng míng lù	10
 多巴胺單加氧酶	duō bā àn dān jiā yǎng méi	10
@@ -154595,7 +154409,6 @@ sort: by_weight
 匐形性回狀紅斑	fú xíng xìng huí zhuàng hóng bān	10
 匐行性回狀紅斑	fú xíng xìng huí zhuàng hóng bān	10
 夫婿調酥綺窗下	fū xù diào sū qǐ chuāng xià	10
-阜陽毒奶粉事件	fù yáng dú nǎi fěn shì jiàn	10
 富陽客運中心站	fù yáng kè yùn zhōng xīn zhàn	10
 趺陽脈緊爲傷脾	fū yáng mài jǐn wéi shāng pí	10
 俯仰隨人亦可憐	fǔ yǎng suí rén yì kě lián	10
@@ -154739,7 +154552,6 @@ sort: by_weight
 橄輝無球粒隕石	gǎn huī wú qiú lì yǔn shí	10
 乾薑甘草與人參	gān jiāng gān cǎo yú rén cān	10
 感交甫之棄言兮	gǎn jiāo fǔ zhī qì yán xī	10
-敢叫日月換新天	gǎn jiào rì yuè huàn xīn tiān	10
 趕緊行動起來吧	gǎn jǐn xíng dòng qǐ lái ba	10
 趕緊找個男朋友	gǎn jǐn zhǎo gè nán péng you	10
 乾淨利落的短髮	gān jìng lì luo de duǎn fà	10
@@ -154949,7 +154761,6 @@ sort: by_weight
 高分子樹脂繃帶	gāo fēn zǐ shù zhī bēng dài	10
 高附加值的產品	gāo fù jiā zhí de chǎn pǐn	10
 高港科技創業園	gāo gǎng kē jì chuàng yè yuán	10
-高崗饒漱石事件	gāo gǎng ráo shù shí shì jiàn	10
 高高在上的感覺	gāo gāo zài shàng de gǎn jué	10
 高高在上的女神	gāo gāo zài shàng de nǚ shén	10
 高高在上的姿態	gāo gāo zài shàng de zī tài	10
@@ -155741,7 +155552,7 @@ sort: by_weight
 弓形體抗體測定	gōng xíng tǐ kàng tǐ cè dìng	10
 功勳國家合唱團	gōng xūn guó jiā hé chàng tuán	10
 供養親屬撫卹金	gōng yǎng qīn shǔ fǔ xù jīn	10
-供養釋迦牟尼佛	gōng yǎng shì jiā mù ní fó	10
+供養釋迦牟尼佛	gōng yǎng shì jiā móu ní fó	10
 工業高質量發展	gōng yè gāo zhì liàng fā zhǎn	10
 工業固體廢棄物	gōng yè gù tǐ fèi qì wù	10
 工業化和城市化	gōng yè huà hé chéng shì huà	10
@@ -155800,7 +155611,6 @@ sort: by_weight
 供者特異性輸血	gōng zhě tè yì xìng shū xuè	10
 公眾貨物起卸區	gōng zhòng huò wù qǐ xiè qū	10
 公眾開放日活動	gōng zhòng kāi fàng rì huó dòng	10
-宮中某重大事件	gōng zhōng mǒu zhòng dà shì jiàn	10
 公主候補生佑希	gōng zhǔ hòu bǔ shēng yòu xī	10
 工裝規範座談會	gōng zhuāng guī fàn zuò tán huì	10
 公子金貂酒力輕	gōng zǐ jīn diāo jiǔ lì qīng	10
@@ -156568,7 +156378,6 @@ sort: by_weight
 胡貝圖斯堡條約	hú bèi tú sī bǎo tiáo yuē	10
 呼腸病毒科感染	hū cháng bìng dú kē gǎn rǎn	10
 糊精內葡糖苷酶	hú jīng nèi pú táng gān méi	10
-湖口裝甲兵事件	hú kǒu zhuāng jiǎ bīng shì jiàn	10
 狐狸列那的故事	hú li liè nà de gù shi	10
 護理牙刷海棉棒	hù lǐ yá shuā hǎi mián bàng	10
 互聯網使用成癮	hù lián wǎng shǐ yòng chéng yǐn	10
@@ -157993,8 +157802,6 @@ sort: by_weight
 買賣不成仁義在	mǎi mài bù chéng rén yì zài	10
 麥氏交替單胞菌	mài shì jiāo tì dān bāo jūn	10
 脈數虛者爲肺痿	mài shù xū zhě wéi fèi wěi	10
-滿城盡戴黃金甲	mǎn chéng jìn dài huáng jīn jiǎ	10
-滿城盡帶黃金甲	mǎn chéng jìn dài huáng jīn jiǎ	10
 漫畫準則管理局	màn huà zhǔn zé guǎn lǐ jú	10
 曼齊刻爾特戰役	màn qí kè ěr tè zhàn yì	10
 芒塞爾顏色立體	máng sāi ěr yán sè lì tǐ	10
@@ -158464,7 +158271,6 @@ sort: by_weight
 氣偏衰者則脈微	qì piān shuāi zhě zé mài wēi	10
 七七抗戰紀念日	qī qī kàng zhàn jì niàn rì	10
 七七盧溝橋事變	qī qī lú gōu qiáo shì biàn	10
-七七盧溝橋事件	qī qī lú gōu qiáo shì jiàn	10
 其人疾行則喘喝	qí rén jí xíng zé chuǎn hē	10
 其人嗇嗇惡寒也	qí rén sè sè wù hán yě	10
 其人振振身瞤劇	qí rén zhèn zhèn shēn rún jù	10
@@ -159250,6 +159056,7 @@ sort: by_weight
 沙塔爾精煉臂甲	shā tǎ ěr jīng liàn bì jiǎ	10
 沙特朱拜勒煉廠	shā tè zhū bài lè liàn chǎng	10
 山登絕頂我爲峯	shān dēng jué dǐng wǒ wéi fēng	10
+山巔一寺一壺酒	shān diān yí sì yì hú jiǔ	10
 善化寺大雄寶殿	shàn huà sì dà xióng bǎo diàn	10
 山南西道節度使	shān nán xī dào jié dù shǐ	10
 膳食碳水化合物	shàn shí tàn shuǐ huà hé wù	10

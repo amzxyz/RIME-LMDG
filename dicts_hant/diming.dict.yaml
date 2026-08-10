@@ -643,6 +643,7 @@ sort: by_weight
 徐村	xú cūn	300
 許都	xǔ dōu	1107
 徐匯	xú huì	1565
+徐水	xú shuǐ	140
 徐屯	xú tún	279
 許縣	xǔ xiàn	92
 徐州	xú zhōu	4198
@@ -4838,7 +4839,8 @@ sort: by_weight
 東興鄉	dōng xīng xiāng	10
 東興鎮	dōng xīng zhèn	266
 東墟鎮	dōng xū zhèn	10
-東陽市	dōng yáng shì	23
+東陽市	dōng yáng shì	141
+東羊市	dōng yáng shì	122
 東陽縣	dōng yáng xiàn	152
 東洋鄉	dōng yáng xiāng	10
 東陽鄉	dōng yáng xiāng	10
@@ -5330,6 +5332,7 @@ sort: by_weight
 方集鎮	fāng jí zhèn	10
 方家鎮	fāng jiā zhèn	10
 方里鎮	fāng lǐ zhèn	10
+芳聯堡	fāng lián bǎo	183
 枋寮鄉	fāng liáo xiāng	10
 坊樓鎮	fāng lóu zhèn	10
 房木鎮	fáng mù zhèn	10
@@ -18923,7 +18926,6 @@ sort: by_weight
 蘇李村	sū lǐ cūn	103
 蘇里格	sū lǐ gé	10
 蘇里鄉	sū lǐ xiāng	542
-芳聯堡	sū lián bǎo	183
 蘇嶺村	sū lǐng cūn	139
 蘇樓村	sū lóu cūn	94
 蘇魯鄉	sū lǔ xiāng	175
@@ -44561,7 +44563,7 @@ sort: by_weight
 柯家莊村	kē jiā zhuāng cūn	10
 客家莊村	kè jiā zhuāng cūn	10
 科教新城	kē jiào xīn chéng	10
-可克達拉	kě kě dá lā	10
+可克達拉	kě kè dá lā	10
 柯柯裏鄉	kē kē lǐ xiāng	10
 科克蘇鎮	kē kè sū zhèn	10
 柯柯亞村	kē kē yà cūn	10
@@ -74940,7 +74942,7 @@ sort: by_weight
 科爾沁街道	kē ěr qìn jiē dào	10
 科技工業園	kē jì gōng yè yuán	10
 科技園街道	kē jì yuán jiē dào	10
-可克達拉市	kě kě dá lā shì	10
+可克達拉市	kě kè dá lā shì	10
 科克蘇林場	kē kè sū lín chǎng	10
 可可托海鎮	kě kě tuō hǎi zhèn	10
 柯柯牙街道	kē kē yá jiē dào	10
@@ -82178,7 +82180,7 @@ sort: by_weight
 阿拉坦額莫勒鎮	ā lā tǎn é mò lè zhèn	10
 阿拉坦合力蘇木	ā lā tǎn hé lì sū mù	10
 阿拉騰朝格蘇木	ā lā téng cháo gé sū mù	10
-阿勒泰可克達拉	ā lè tài kě kě dá lā	10
+阿勒泰可克達拉	ā lè tài kě kè dá lā	10
 阿勒泰圖木舒克	ā lè tài tú mù shū kè	10
 阿勒騰也木勒鄉	ā lè téng yě mù lè xiāng	10
 阿里地區措勤縣	ā lǐ dì qū cuò qín xiàn	10
@@ -82650,7 +82652,7 @@ sort: by_weight
 科爾沁右翼中旗	kē ěr qìn yòu yì zhōng qí	10
 科爾沁左翼後旗	kē ěr qìn zuǒ yì hòu qí	10
 科爾沁左翼中旗	kē ěr qìn zuǒ yì zhōng qí	10
-可克達拉市昆玉	kě kě dá lā shì kūn yù	10
+可克達拉市昆玉	kě kè dá lā shì kūn yù	10
 克拉瑪依白鹼灘	kè lā mǎ yī bái jiǎn tān	10
 克拉瑪依獨山子	kè lā mǎ yī dú shān zǐ	10
 克拉瑪依烏爾禾	kè lā mǎ yī wū ěr hé	10
@@ -83964,7 +83966,7 @@ sort: by_weight
 侏儒山街道成功片區	zhū rú shān jiē dào chéng gōng piàn qū	10
 侏儒山街道洪北片區	zhū rú shān jiē dào hóng běi piàn qū	10
 阿克塞哈薩克族自治縣	ā kè sāi hā sà kè zú zì zhì xiàn	10
-阿勒泰地區可克達拉市	ā lè tài dì qū kě kě dá lā shì	10
+阿勒泰地區可克達拉市	ā lè tài dì qū kě kè dá lā shì	10
 阿勒泰地區圖木舒克市	ā lè tài dì qū tú mù shū kè shì	10
 安徽省國營十字鋪茶場	ān huī shěng guó yíng shí zì pù chá chǎng	10
 安徽省江北產業集中區	ān huī shěng jiāng běi chǎn yè jí zhōng qū	10

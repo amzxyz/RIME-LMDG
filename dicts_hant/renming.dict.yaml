@@ -294,6 +294,8 @@ sort: by_weight
 杜梅	dù méi	583
 杜敏	dù mǐn	85
 杜陽	dù yáng	886
+杜奕	dù yì	46
+段紅	duàn hóng	774
 范斌	fàn bīn	82
 樊忱	fán chén	44
 範飛	fàn fēi	145
@@ -923,6 +925,7 @@ sort: by_weight
 林楊	lín yáng	958
 林洋	lín yáng	421
 林仰	lín yǎng	194
+林亦	lín yì	230
 林穎	lín yǐng	702
 林鶯	lín yīng	667
 林勇	lín yǒng	159
@@ -2492,7 +2495,7 @@ sort: by_weight
 周霞	zhōu xiá	184
 周詳	zhōu xiáng	260
 周曉	zhōu xiǎo	1300
-周新	zhōu xīn	1174
+周新	zhōu xīn	117
 周行	zhōu xíng	576
 周興	zhōu xīng	125
 周雄	zhōu xióng	84
@@ -4314,6 +4317,7 @@ sort: by_weight
 段清波	duàn qīng bō	34
 段青春	duàn qīng chūn	334
 段少鋒	duàn shǎo fēng	30
+段勝龍	duàn shèng lóng	45
 段蘇權	duàn sū quán	137
 段天德	duàn tiān dé	123
 段甜蜜	duàn tián mì	201
@@ -4325,12 +4329,14 @@ sort: by_weight
 段瑩瑩	duàn yíng yíng	30
 段永剛	duàn yǒng gāng	28
 段宇飛	duàn yǔ fēi	63
+段於海	duàn yú hǎi	50
 段正澄	duàn zhèng chéng	25
 段正明	duàn zhèng míng	142
 段芝貴	duàn zhī guì	188
 段志鵬	duàn zhì péng	26
 段智興	duàn zhì xīng	48
 段志玄	duàn zhì xuán	87
+段竹君	duàn zhú jūn	4
 樊愛能	fán ài néng	234
 范柏群	fàn bǎi qún	266
 范堡羅	fàn bǎo luó	436
@@ -4518,13 +4524,37 @@ sort: by_weight
 馮紫英	féng zǐ yīng	77
 馮自由	féng zì yóu	23
 馮子振	féng zǐ zhèn	24
+傅伯傑	fù bó jié	189
+傅采林	fù cǎi lín	536
+傅達仁	fù dá rén	25
+傅大士	fù dà shì	274
+傅鼎生	fù dǐng shēng	266
+傅東育	fù dōng yù	6
+傅國生	fù guó shēng	410
+傅國湧	fù guó yǒng	22
+傅海棠	fù hǎi táng	490
+傅華陽	fù huá yáng	175
+傅京孫	fù jīng sūn	207
+傅狷夫	fù juàn fū	423
+傅蘭雅	fù lán yǎ	482
+傅老榕	fù lǎo róng	3
+傅連暲	fù lián zhāng	85
+傅青主	fù qīng zhǔ	25
 傅慎行	fù shèn xíng	82
+傅石涯	fù shí yá	90
 傅天琳	fù tiān lín	63
 傅天穎	fù tiān yǐng	25
 付庭彥	fù tíng yàn	148
 傅蔚岡	fù wèi gāng	133
+傅筱庵	fù xiǎo ān	16
 付笑談	fù xiào tán	202
 傅曉田	fù xiǎo tián	48
+傅友興	fù yǒu xīng	327
+傅振輝	fù zhèn huī	189
+傅振中	fù zhèn zhōng	288
+傅志寰	fù zhì huán	232
+傅忠海	fù zhōng hǎi	189
+傅宗書	fù zōng shū	342
 高丙偉	gāo bǐng wěi	99
 高伯達	gāo bó dá	50
 高博文	gāo bó wén	346
@@ -9278,6 +9308,13 @@ sort: by_weight
 穆尼埃	mù ní āi	288
 穆尼斯	mù ní sī	297
 穆尼耶	mù ní yé	63
+慕容白	mù róng bái	464
+慕容灃	mù róng fēng	251
+慕容晴	mù róng qíng	639
+慕容清	mù róng qīng	258
+慕容燕	mù róng yàn	210
+慕容雨	mù róng yǔ	702
+慕容忠	mù róng zhōng	356
 穆斯特	mù sī tè	459
 穆特薩	mù tè sà	292
 穆為民	mù wèi mín	454
@@ -16685,7 +16722,6 @@ sort: by_weight
 周孝正	zhōu xiào zhèng	33
 周小梔	zhōu xiǎo zhī	95
 周小舟	zhōu xiǎo zhōu	63
-周新高	zhōu xīn gāo	164
 周新華	zhōu xīn huá	42
 周新月	zhōu xīn yuè	53
 周行程	zhōu xíng chéng	44
