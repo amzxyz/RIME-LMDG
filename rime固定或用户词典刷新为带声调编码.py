@@ -122,7 +122,8 @@ def is_han_char(ch: str) -> bool:
     """判断字符是否为汉字；非汉字不参与最终拼音生成。"""
     cp = ord(ch)
     return (
-        0x3400 <= cp <= 0x4DBF
+        ch == '〇'
+        or 0x3400 <= cp <= 0x4DBF
         or 0x4E00 <= cp <= 0x9FFF
         or 0xF900 <= cp <= 0xFAFF
         or 0x20000 <= cp <= 0x2EBEF
