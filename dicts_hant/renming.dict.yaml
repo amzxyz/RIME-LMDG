@@ -315,6 +315,10 @@ sort: by_weight
 馮敏	féng mǐn	123
 馮特	féng tè	148
 馮鑫	féng xīn	1377
+付軍	fù jūn	64
+付亮	fù liàng	747
+付強	fù qiáng	251
+付勇	fù yǒng	191
 顧海	gù hǎi	193
 郭斌	guō bīn	523
 郭建	guō jiàn	1061
@@ -391,6 +395,13 @@ sort: by_weight
 何雲	hé yún	945
 何震	hé zhèn	1167
 何志	hé zhì	152
+洪昌	hóng chāng	128
+洪德	hóng dé	156
+洪林	hóng lín	194
+洪梅	hóng méi	131
+洪泉	hóng quán	424
+洪生	hóng shēng	288
+洪偉	hóng wěi	617
 華邦	huà bāng	267
 華燦	huà càn	626
 華昌	huà chāng	99
@@ -832,6 +843,7 @@ sort: by_weight
 李準	lǐ zhǔn	427
 李卓	lǐ zhuó	195
 李宗	lǐ zōng	192
+梁健	liáng jiàn	61
 梁楷	liáng kǎi	105
 梁林	liáng lín	31
 梁寧	liáng níng	227
@@ -1289,6 +1301,7 @@ sort: by_weight
 齊進	qí jìn	324
 齊科	qí kē	53
 齊鳴	qí míng	345
+齊明	qí míng	134
 齊平	qí píng	1480
 齊升	qí shēng	121
 齊藤	qí téng	950
@@ -2108,11 +2121,8 @@ sort: by_weight
 尤瑞	yóu ruì	86
 尤薩	yóu sà	86
 餘安	yú ān	714
-余本	yú běn	514
 余斌	yú bīn	697
-餘波	yú bō	1403
 餘東	yú dōng	232
-余方	yú fāng	628
 余飛	yú fēi	108
 餘風	yú fēng	25
 余虹	yú hóng	44
@@ -2489,7 +2499,8 @@ sort: by_weight
 周頌	zhōu sòng	77
 周松	zhōu sōng	73
 周通	zhōu tōng	279
-周偉	zhōu wěi	125
+周偉	zhōu wěi	225
+周為	zhōu wéi	197
 周文	zhōu wén	489
 周武	zhōu wǔ	5361
 周霞	zhōu xiá	184
@@ -2581,7 +2592,6 @@ sort: by_weight
 朱正	zhū zhèng	706
 朱晝	zhū zhòu	39
 莊科	zhuāng kē	34
-齊明	zī míng	134
 鄒魯	zōu lǔ	680
 鄒濤	zōu tāo	104
 白一驄	bái yī cōng	265
@@ -3084,7 +3094,6 @@ sort: by_weight
 陳嘉桓	chén jiā huán	116
 陳嘉輝	chén jiā huī	27
 陳佳佳	chén jiā jiā	641
-陳家駒	chén jiā jū	32
 陳嘉俊	chén jiā jùn	111
 陳家俊	chén jiā jùn	56
 陳家來	chén jiā lái	24
@@ -3096,7 +3105,6 @@ sort: by_weight
 陳家明	chén jiā míng	142
 陳佳明	chén jiā míng	25
 陳家強	chén jiā qiáng	113
-陳家人	chén jiā rén	90
 陳家園	chén jiā yuán	37
 陳家源	chén jiā yuán	25
 陳家珍	chén jiā zhēn	51
@@ -4526,29 +4534,45 @@ sort: by_weight
 馮子振	féng zǐ zhèn	24
 傅伯傑	fù bó jié	189
 傅采林	fù cǎi lín	536
+付常勇	fù cháng yǒng	311
 傅達仁	fù dá rén	25
 傅大士	fù dà shì	274
 傅鼎生	fù dǐng shēng	266
 傅東育	fù dōng yù	6
+付光明	fù guāng míng	418
+付桂榮	fù guì róng	171
 傅國生	fù guó shēng	410
 傅國湧	fù guó yǒng	22
 傅海棠	fù hǎi táng	490
+付紅梅	fù hóng méi	4
 傅華陽	fù huá yáng	175
+付建忠	fù jiàn zhōng	38
 傅京孫	fù jīng sūn	207
 傅狷夫	fù juàn fū	423
 傅蘭雅	fù lán yǎ	482
 傅老榕	fù lǎo róng	3
+付立春	fù lì chūn	490
+付立新	fù lì xīn	130
+付麗艷	fù lì yàn	320
 傅連暲	fù lián zhāng	85
 傅青主	fù qīng zhǔ	25
 傅慎行	fù shèn xíng	82
 傅石涯	fù shí yá	90
+付順義	fù shùn yì	45
 傅天琳	fù tiān lín	63
 傅天穎	fù tiān yǐng	25
+付婷婷	fù tíng tíng	117
 付庭彥	fù tíng yàn	148
 傅蔚岡	fù wèi gāng	133
+付衛華	fù wèi huá	76
+付先鋒	fù xiān fēng	130
 傅筱庵	fù xiǎo ān	16
+付小芳	fù xiǎo fāng	288
+付曉芳	fù xiǎo fāng	110
 付笑談	fù xiào tán	202
 傅曉田	fù xiǎo tián	48
+付新華	fù xīn huá	297
+付雪海	fù xuě hǎi	220
 傅友興	fù yǒu xīng	327
 傅振輝	fù zhèn huī	189
 傅振中	fù zhèn zhōng	288
@@ -6037,6 +6061,7 @@ sort: by_weight
 孔子下	kǒng zǐ xià	23
 孔子也	kǒng zǐ yě	338
 孔最穴	kǒng zuì xué	30
+萊德基	lái dé jī	436
 雷奧利	léi ào lì	35
 雷暴雨	léi bào yǔ	102
 雷貝琴	léi bèi qín	38
@@ -6092,12 +6117,8 @@ sort: by_weight
 雷平陽	léi píng yáng	35
 雷普利	léi pǔ lì	99
 雷慶瑤	léi qìng yáo	30
-雷區二	léi qū èr	34
-雷區三	léi qū sān	33
-雷區一	léi qū yī	37
 雷榮祖	léi róng zǔ	59
 雷神島	léi shén dǎo	33
-雷神一	léi shén yī	77
 雷斯貝	léi sī bèi	23
 雷斯家	léi sī jiā	31
 雷斯庫	léi sī kù	53
@@ -6122,8 +6143,6 @@ sort: by_weight
 雷志強	léi zhì qiáng	23
 雷志勇	léi zhì yǒng	51
 雷茲納	léi zī nà	122
-李阿大	lǐ ā dà	97
-李阿婆	lǐ ā pó	93
 李愛國	lǐ ài guó	350
 李愛華	lǐ ài huá	134
 李愛玲	lǐ ài líng	96
@@ -6300,7 +6319,6 @@ sort: by_weight
 李大寶	lǐ dà bǎo	265
 李達超	lǐ dá chāo	36
 李大成	lǐ dà chéng	55
-李大膽	lǐ dà dǎn	87
 李大發	lǐ dà fā	1697
 李大國	lǐ dà guó	25
 李大海	lǐ dà hǎi	299
@@ -6329,8 +6347,6 @@ sort: by_weight
 李丹陽	lǐ dān yáng	73
 李稻葵	lǐ dào kuí	626
 李道明	lǐ dào míng	39
-李導演	lǐ dǎo yǎn	54
-李道長	lǐ dào zhǎng	28
 李道宗	lǐ dào zōng	173
 李德才	lǐ dé cái	28
 李德成	lǐ dé chéng	53
@@ -6389,12 +6405,6 @@ sort: by_weight
 李恩美	lǐ ēn měi	37
 李蒽熙	lǐ ēn xī	349
 李恩珠	lǐ ēn zhū	79
-李二狗	lǐ èr gǒu	224
-李二郎	lǐ èr láng	52
-李二牛	lǐ èr niú	3500
-李二人	lǐ èr rén	465
-李二嫂	lǐ èr sǎo	106
-李二娃	lǐ èr wá	76
 李爾王	lǐ ěr wáng	859
 李凡秀	lǐ fán xiù	39
 李芳芳	lǐ fāng fāng	574
@@ -6428,8 +6438,7 @@ sort: by_weight
 李公麟	lǐ gōng lín	153
 李公樸	lǐ gōng pǔ	63
 李公佐	lǐ gōng zuǒ	78
-李狗蛋	lǐ gǒu dàn	130
-李狗嗨	lǐ gǒu hāi	87
+李狗蛋	lǐ gǒu dàn	13
 李光地	lǐ guāng dì	376
 李光鬥	lǐ guāng dòu	94
 李光華	lǐ guāng huá	30
@@ -9628,6 +9637,8 @@ sort: by_weight
 阮子岩	ruǎn zǐ yán	45
 山本寬	shān běn kuān	209
 山田洋	shān tián yáng	98
+上官红	shàng guān hóng	58
+上官虹	shàng guān hóng	24
 邵葆醇	shào bǎo chún	171
 邵炳鳳	shào bǐng fèng	302
 邵伯雍	shào bó yōng	45
@@ -10344,6 +10355,17 @@ sort: by_weight
 孫子高	sūn zi gāo	25
 孫子孫	sūn zi sūn	1778
 孫子楊	sūn zi yáng	32
+譚萬鈞	tán wàn jūn	297
+譚偉豪	tán wěi háo	274
+譚維義	tán wéi yì	342
+譚向東	tán xiàng dōng	328
+譚香文	tán xiāng wén	450
+譚小芳	tán xiǎo fāng	414
+譚小平	tán xiǎo píng	0
+譚曉生	tán xiǎo shēng	209
+譚學軍	tán xué jūn	194
+譚雅玲	tán yǎ líng	418
+譚雨涵	tán yǔ hán	234
 陶艾青	táo ài qīng	53
 陶百川	táo bǎi chuān	33
 陶碧華	táo bì huá	96
@@ -10793,7 +10815,6 @@ sort: by_weight
 王家寶	wáng jiā bǎo	37
 王家大	wáng jiā dà	469
 王家峯	wáng jiā fēng	31
-王家駒	wáng jiā jū	31
 王佳梁	wáng jiā liáng	67
 王家烈	wáng jiā liè	183
 王佳敏	wáng jiā mǐn	46
@@ -12598,6 +12619,7 @@ sort: by_weight
 謝忠道	xiè zhōng dào	212
 謝忠岩	xiè zhōng yán	194
 謝週三	xiè zhōu sān	554
+刑麗娟	xíng lì juān	12
 熊建秋	xióng jiàn qiū	32
 許愛蓮	xǔ ài lián	103
 徐愛霞	xú ài xiá	44

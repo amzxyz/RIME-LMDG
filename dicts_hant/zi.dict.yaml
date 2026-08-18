@@ -7496,6 +7496,7 @@ sort: by_weight
 祋	duì	488
 対	duì	409
 鐓	duī	370
+㨃	duǐ	361
 頧	duǐ	351
 鐜	duī	216
 憝	duì	182
@@ -7512,7 +7513,6 @@ sort: by_weight
 痽	duī	23
 譵	duì	23
 濧	duì	23
-㨃	duǐ	1
 瀩	duì	1
 譈	duì	1
 鴭	duī	1
@@ -35023,6 +35023,9 @@ sort: by_weight
 微	wēi	9971
 維	wéi	5132
 圍	wéi	4875
+尾	wěi	4776
+胃	wèi	3765
+喂	wèi	2719
 威	wēi	938
 危	wēi	924
 謂	wèi	911
@@ -35030,13 +35033,10 @@ sort: by_weight
 委	wěi	864
 衛	wèi	820
 違	wéi	779
-尾	wěi	776
 偉	wěi	775
-胃	wèi	765
 僞	wěi	764
 魏	wèi	754
 慰	wèi	754
-喂	wèi	719
 薇	wēi	709
 畏	wèi	690
 緯	wěi	682
@@ -38072,6 +38072,7 @@ sort: by_weight
 𬒘	xìn	1
 行	xíng	92900
 性	xìng	91042
+姓	xìng	55964
 型	xíng	46384
 星	xīng	8167
 形	xíng	8116
@@ -38080,7 +38081,6 @@ sort: by_weight
 興	xìng	1069
 醒	xǐng	1015
 刑	xíng	985
-姓	xìng	964
 杏	xìng	823
 腥	xīng	771
 省	xǐng	600
@@ -45103,6 +45103,7 @@ sort: by_weight
 指	zhǐ	11860
 之	zhī	11267
 直	zhí	10721
+紙	zhǐ	5896
 質	zhì	4100
 制	zhì	3895
 至	zhì	3700
@@ -45115,7 +45116,6 @@ sort: by_weight
 志	zhì	1305
 織	zhī	902
 執	zhí	901
-紙	zhǐ	896
 植	zhí	847
 址	zhǐ	744
 脂	zhī	728

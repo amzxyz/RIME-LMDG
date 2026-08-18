@@ -44,7 +44,7 @@ sort: by_weight
 陳州	chén zhōu	317
 呈坎	chéng kǎn	124
 城南	chéng nán	1066
-城區	chéng qū	1002
+城區	chéng qū	1202
 成縣	chéng xiàn	964
 崇陽	chóng yáng	125
 楚城	chǔ chéng	145
@@ -2071,32 +2071,24 @@ sort: by_weight
 卜莊鎮	bo zhuāng zhèn	10
 埠場鎮	bù chǎng zhèn	10
 補抽鄉	bǔ chōu xiāng	434
-不出村	bù chū cūn	36
-不出縣	bù chū xiàn	144
-不出鎮	bù chū zhèn	322
 布袋鎮	bù dài zhèn	387
 布德鎮	bù dé zhèn	10
-不端莊	bù duān zhuāng	100
 布多鄉	bù duō xiāng	92
 補爾鄉	bǔ ěr xiāng	10
-部分縣	bù fen xiàn	152
 步鳳鎮	bù fèng zhèn	10
 部官鎮	bù guān zhèn	10
 布海鎮	bù hǎi zhèn	10
 埠河鎮	bù hé zhèn	10
-不回鄉	bù huí xiāng	7251
 布吉鎮	bù jí zhèn	233
 布甲鄉	bù jiǎ xiāng	10
 埠江鎮	bù jiāng zhèn	10
 布久鄉	bù jiǔ xiāng	10
-不老村	bù lǎo cūn	100
 埔里鎮	bù lǐ zhèn	422
 埠柳鎮	bù liǔ zhèn	10
 布隆鄉	bù lóng xiāng	10
 步路鄉	bù lù xiāng	10
 埠前鎮	bù qián zhèn	10
 布泉鄉	bù quán xiāng	10
-不少村	bù shǎo cūn	100
 布塔鄉	bù tǎ xiāng	10
 埠頭鄉	bù tóu xiāng	359
 埠頭鎮	bù tóu zhèn	10
@@ -2350,7 +2342,7 @@ sort: by_weight
 曹莊村	cáo zhuāng cūn	205
 曹莊鄉	cáo zhuāng xiāng	127
 曹莊鎮	cáo zhuāng zhèn	294
-曹莊子	cáo zhuāng zǐ	356
+曹莊子	cáo zhuāng zi	356
 冊村鎮	cè cūn zhèn	10
 策底鎮	cè dǐ zhèn	10
 冊亨縣	cè hēng xiàn	163
@@ -6314,14 +6306,12 @@ sort: by_weight
 圪臺鄉	gē tái xiāng	10
 葛田鄉	gé tián xiāng	10
 葛溪鄉	gé xī xiāng	10
-各鄉鎮	gè xiāng zhèn	517
 革一鎮	gé yí zhèn	10
 格宜鎮	gé yí zhèn	10
 葛源鎮	gé yuán zhèn	10
 格咱鄉	gé zán xiāng	10
 葛寨鎮	gé zhài zhèn	10
 革鎮堡	gé zhèn bǎo	250
-各州縣	gè zhōu xiàn	164
 各莊鎮	gè zhuāng zhèn	222
 格宗鎮	gé zōng zhèn	10
 根河市	gēn hé shì	7
@@ -7040,7 +7030,7 @@ sort: by_weight
 郭鎮鄉	guō zhèn xiāng	10
 郭莊鎮	guō zhuāng zhèn	10
 果莊鎮	guǒ zhuāng zhèn	10
-郭莊子	guō zhuāng zǐ	292
+郭莊子	guō zhuāng zi	292
 哈達灣	hǎ dá wān	313
 哈達鎮	hǎ dá zhèn	10
 哈東站	hā dōng zhàn	428
@@ -7290,7 +7280,7 @@ sort: by_weight
 韓莊鄉	hán zhuāng xiāng	196
 韓莊鎮	hán zhuāng zhèn	252
 漢莊鎮	hàn zhuāng zhèn	10
-韓莊子	hán zhuāng zǐ	256
+韓莊子	hán zhuāng zi	256
 韓佐鎮	hán zuǒ zhèn	10
 航埠鎮	háng bù zhèn	10
 杭埠鎮	háng bù zhèn	10
@@ -8321,7 +8311,7 @@ sort: by_weight
 華莊村	huá zhuāng cūn	69
 化莊鄉	huà zhuāng xiāng	48
 花莊鎮	huā zhuāng zhèn	10
-華莊子	huá zhuāng zǐ	117
+華莊子	huá zhuāng zi	117
 鏵子鎮	huá zǐ zhèn	10
 華祖庵	huá zǔ ān	194
 淮安區	huái ān qū	8
@@ -14806,7 +14796,8 @@ sort: by_weight
 南城鄉	nán chéng xiāng	484
 南埕鎮	nán chéng zhèn	10
 南城鎮	nán chéng zhèn	10
-南充縣	nán chōng xiàn	154
+南充市	nán chōng shì	154
+南充縣	nán chōng xiàn	4
 南充站	nán chōng zhàn	248
 南川區	nán chuān qū	197
 南川縣	nán chuān xiàn	120
@@ -29379,7 +29370,7 @@ sort: by_weight
 北莊頭村	běi zhuāng tóu cūn	10
 北莊新村	běi zhuāng xīn cūn	10
 北莊一村	běi zhuāng yī cūn	10
-北莊子村	běi zhuāng zǐ cūn	10
+北莊子村	běi zhuāng zi cūn	10
 貝子府村	bèi zǐ fǔ cūn	10
 貝子府鎮	bèi zǐ fǔ zhèn	10
 北鄒家村	běi zōu jiā cūn	10
@@ -29685,7 +29676,6 @@ sort: by_weight
 布敦山村	bù dūn shān cūn	10
 布爾津縣	bù ěr jīn xiàn	10
 布爾津鎮	bù ěr jīn zhèn	10
-部分街道	bù fen jiē dào	10
 布格仔村	bù gé zǎi cūn	10
 步古溝鎮	bù gǔ gōu zhèn	10
 布吉街道	bù jí jiē dào	10
@@ -30076,7 +30066,7 @@ sort: by_weight
 曹園子村	cáo yuán zi cūn	10
 曹張新村	cáo zhāng xīn cūn	10
 曹莊社區	cáo zhuāng shè qū	4
-曹莊子村	cáo zhuāng zǐ cūn	10
+曹莊子村	cáo zhuāng zi cūn	10
 草莊子村	cǎo zhuāng zǐ cūn	10
 曹子裏鄉	cáo zǐ lǐ xiāng	10
 曹子裏鎮	cáo zǐ lǐ zhèn	10
@@ -37452,7 +37442,7 @@ sort: by_weight
 高莊街道	gāo zhuāng jiē dào	10
 高莊窠村	gāo zhuāng kē cūn	10
 高莊坪村	gāo zhuāng píng cūn	10
-高莊子村	gāo zhuāng zǐ cūn	10
+高莊子村	gāo zhuāng zi cūn	10
 高卓營鄉	gāo zhuó yíng xiāng	10
 高桌子村	gāo zhuō zi cūn	10
 高資街道	gāo zī jiē dào	10
@@ -38712,7 +38702,7 @@ sort: by_weight
 郭杖子村	guō zhàng zi cūn	10
 虢鎮街道	guó zhèn jiē dào	10
 郭莊寨村	guō zhuāng zhài cūn	10
-郭莊子村	guō zhuāng zǐ cūn	10
+郭莊子村	guō zhuāng zi cūn	10
 果莊子村	guǒ zhuāng zǐ cūn	10
 果卓歌莊	guǒ zhuó gē zhuāng	10
 果子溝村	guǒ zi gōu cūn	10
@@ -39135,7 +39125,7 @@ sort: by_weight
 漢中鎮巴	hàn zhōng zhèn bā	10
 漢州街道	hàn zhōu jiē dào	10
 韓莊頭村	hán zhuāng tóu cūn	10
-韓莊子村	hán zhuāng zǐ cūn	10
+韓莊子村	hán zhuāng zi cūn	10
 韓子坪村	hán zǐ píng cūn	10
 杭北頭村	háng běi tóu cūn	10
 航城街道	háng chéng jiē dào	10
@@ -45207,8 +45197,8 @@ sort: by_weight
 澇枝街村	lào zhī jiē cūn	10
 澇洲水村	lào zhōu shuǐ cūn	10
 老莊溝村	lǎo zhuāng gōu cūn	10
-老莊子村	lǎo zhuāng zǐ cūn	10
-老莊子鎮	lǎo zhuāng zǐ zhèn	10
+老莊子村	lǎo zhuāng zi cūn	10
+老莊子鎮	lǎo zhuāng zi zhèn	10
 老子山鎮	lǎo zi shān zhèn	10
 樂安街道	lè ān jiē dào	10
 勒安納縣	lè ān nà xiàn	10
@@ -47251,13 +47241,13 @@ sort: by_weight
 柳州柳江	liǔ zhōu liǔ jiāng	10
 柳州柳南	liǔ zhōu liǔ nán	10
 柳州鹿寨	liǔ zhōu lù zhài	10
-碌碡峁村	liù zhōu mǎo cūn	10
-碌碡坪村	liù zhōu píng cūn	10
+碌碡峁村	liù zhóu mǎo cūn	10
+碌碡坪村	liù zhóu píng cūn	10
 柳州融安	liǔ zhōu róng ān	10
 柳州融水	liǔ zhōu róng shuǐ	10
 柳州三江	liǔ zhōu sān jiāng	10
 柳州魚峰	liǔ zhōu yú fēng	10
-碌碡塬村	liù zhōu yuán cūn	10
+碌碡塬村	liù zhóu yuán cūn	10
 劉竹秋莊	liú zhú qiū zhuāng	10
 留柱窯村	liú zhù yáo cūn	10
 劉竹園村	liú zhú yuán cūn	10
@@ -54370,7 +54360,7 @@ sort: by_weight
 賽來塘鎮	sài lái táng zhèn	10
 賽里木鎮	sài lǐ mù zhèn	10
 塞魯延縣	sāi lǔ yán xiàn	10
-塞上水鄉	sāi shàng shuǐ xiāng	10
+塞上水鄉	sài shàng shuǐ xiāng	10
 賽什斯鎮	sài shí sī zhèn	10
 賽圖拉鎮	sài tú lā zhèn	10
 塞外酒堡	sài wài jiǔ bǎo	10
@@ -57259,7 +57249,7 @@ sort: by_weight
 雙柳樹鎮	shuāng liǔ shù zhèn	10
 雙溜索鄉	shuāng liū suǒ xiāng	10
 雙劉灣村	shuāng liú wān cūn	10
-雙碌碡村	shuāng liù zhōu cūn	10
+雙碌碡村	shuāng liù zhóu cūn	10
 雙龍場鄉	shuāng lóng chǎng xiāng	10
 雙龍街村	shuāng lóng jiē cūn	10
 雙龍街道	shuāng lóng jiē dào	10
@@ -63430,7 +63420,7 @@ sort: by_weight
 西茹子村	xī rú zǐ cūn	10
 西卅店鎮	xī sà diàn zhèn	10
 西薩拉村	xī sà lā cūn	10
-西塞山區	xī sāi shān qū	10
+西塞山區	xī sài shān qū	10
 西三教村	xī sān jiào cūn	10
 西三里村	xī sān lǐ cūn	10
 西三里鄉	xī sān lǐ xiāng	10
@@ -64608,7 +64598,7 @@ sort: by_weight
 香港西貢	xiāng gǎng xī gòng	10
 香港元朗	xiāng gǎng yuán lǎng	10
 香港中西	xiāng gǎng zhōng xī	10
-香格里拉	xiāng gé lǐ lā	97
+香格里拉	xiāng gé lǐ lā	497
 鄉葛萬村	xiāng gé wàn cūn	10
 相格宗村	xiāng gé zōng cūn	10
 鄉耿莊村	xiāng gěng zhuāng cūn	10
@@ -66128,11 +66118,11 @@ sort: by_weight
 辛莊營村	xīn zhuāng yíng cūn	10
 辛莊營鄉	xīn zhuāng yíng xiāng	10
 新莊塬村	xīn zhuāng yuán cūn	10
-辛莊子村	xīn zhuāng zǐ cūn	10
-新莊子村	xīn zhuāng zǐ cūn	10
-辛莊子鄉	xīn zhuāng zǐ xiāng	10
-新莊子鄉	xīn zhuāng zǐ xiāng	10
-新莊子鎮	xīn zhuāng zǐ zhèn	10
+辛莊子村	xīn zhuāng zi cūn	10
+新莊子村	xīn zhuāng zi cūn	10
+辛莊子鄉	xīn zhuāng zi xiāng	10
+新莊子鄉	xīn zhuāng zi xiāng	10
+新莊子鎮	xīn zhuāng zi zhèn	10
 興安堡村	xīng ān bǎo cūn	10
 興安街道	xīng ān jiē dào	10
 興安營村	xīng ān yíng cūn	10
@@ -74519,7 +74509,7 @@ sort: by_weight
 黃石港街道	huáng shí gǎng jiē dào	10
 黃石黃石港	huáng shí huáng shí gǎng	10
 黃石市街道	huáng shí shì jiē dào	10
-黃石西塞山	huáng shí xī sāi shān	10
+黃石西塞山	huáng shí xī sài shān	10
 黃石陽新縣	huáng shí yáng xīn xiàn	10
 黃獅寨林場	huáng shī zhài lín chǎng	10
 黃思灣街道	huáng sī wān jiē dào	10
@@ -82569,7 +82559,7 @@ sort: by_weight
 荒湖農場管理區	huāng hú nóng chǎng guǎn lǐ qū	10
 黃南藏族自治州	huáng nán zàng zú zì zhì zhōu	10
 黃石市黃石港區	huáng shí shì huáng shí gǎng qū	10
-黃石市西塞山區	huáng shí shì xī sāi shān qū	10
+黃石市西塞山區	huáng shí shì xī sài shān qū	10
 黃岩旅遊度假區	huáng yán lǚ yóu dù jià qū	10
 吉安市井岡山市	jí ān shì jǐng gāng shān shì	10
 吉巴門巴民族鄉	jí bā mén bā mín zú xiāng	10
@@ -82892,7 +82882,7 @@ sort: by_weight
 如皋市江濱醫院	rú gāo shì jiāng bīn yī yuàn	10
 乳源瑤族自治縣	rǔ yuán yáo zú zì zhì xiàn	10
 薩爾也木勒牧場	sà ěr yě mù lè mù chǎng	10
-塞罕壩機械林場	sāi hǎn bà jī xiè lín chǎng	10
+塞罕壩機械林場	sài hǎn bà jī xiè lín chǎng	10
 賽罕烏力吉蘇木	sài hǎn wū lì jí sū mù	10
 賽音呼都嘎蘇木	sài yīn hū dōu gā sū mù	10
 三都水族自治縣	sān dū shuǐ zú zì zhì xiàn	10
