@@ -115,31 +115,41 @@ def get_alignment(units: List[Dict[str, str]], segs: List[str], u_idx: int, s_id
         return None
 
 def build_seg_by_aux_aligned(word: str, raw_segs: List[str], aux_map: Dict[str, str]) -> List[str]:
-    """生成对齐后的辅助码列表"""
+    """
+    生成与拼音段一一对应的辅助码列表。
+
+    规则：
+    1. 非汉字不参与辅助码索引。
+    2. 若拼音段数量等于汉字数量，则直接按：
+       第 i 个拼音段 <-> 第 i 个汉字
+       应用对应辅助码。
+    3. 若是旧词库，拼音列仍含英文等非汉字段，则继续使用原智能对齐。
+    """
     if not raw_segs:
         return []
-        
+
+    # 只取汉字；β、英文、数字、符号全部忽略，不占索引。
+    han_chars = [ch for ch in word if CJK_PATTERN.fullmatch(ch)]
+
+    # 新格式：拼音列已经忽略非汉字。
+    # 例如 阿β受体 -> ā shòu tǐ
+    # 对应关系就是 阿->0、受->1、体->2。
+    if len(raw_segs) == len(han_chars):
+        return [aux_map.get(ch, '') for ch in han_chars]
+
+    # 兼容旧格式：拼音列中仍可能存在 AI / β / 数字等非汉字段。
     units = tokenize_word(word)
     aligned_aux = get_alignment(units, raw_segs, 0, 0, aux_map)
-    
+
     if aligned_aux is not None:
         return aligned_aux
-        
-    # 兜底降级处理：字数和拼音段数发生极端不匹配时，逐字符暴力匹配（只给汉字加码）
-    fallback_aux = []
-    char_idx = 0
-    word_no_space = word.replace(' ', '')
-    for _ in raw_segs:
-        if char_idx < len(word_no_space):
-            ch = word_no_space[char_idx]
-            if CJK_PATTERN.match(ch):
-                fallback_aux.append(aux_map.get(ch, ''))
-            else:
-                fallback_aux.append('')
-            char_idx += 1
-        else:
-            fallback_aux.append('')
-    return fallback_aux
+
+    # 最后兜底：始终只按汉字顺序套辅助码。
+    # 多出来的拼音段留空辅助码，非汉字绝不占用汉字索引。
+    return [
+        aux_map.get(han_chars[i], '') if i < len(han_chars) else ''
+        for i in range(len(raw_segs))
+    ]
 
 def refresh_aux(cols: List[str], word: str, aux_map: Dict[str, str], userdb: bool):
     seg_idx = 0 if userdb else 1

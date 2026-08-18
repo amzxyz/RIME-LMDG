@@ -118,13 +118,36 @@ def tone_mark(seg: str) -> str:
     return (py[0][0] if py else root) + suffix
 
 
+def is_han_char(ch: str) -> bool:
+    """判断字符是否为汉字；非汉字不参与最终拼音生成。"""
+    cp = ord(ch)
+    return (
+        0x3400 <= cp <= 0x4DBF
+        or 0x4E00 <= cp <= 0x9FFF
+        or 0xF900 <= cp <= 0xFAFF
+        or 0x20000 <= cp <= 0x2EBEF
+        or 0x30000 <= cp <= 0x323AF
+    )
+
+
+def han_pinyin(word: str):
+    """
+    只为汉字生成拼音，同时返回汉字在原词中的字符位置。
+    例如：西妥昔单抗β -> ([0,1,2,3,4], ['xī','tuǒ','xī','dān','kàng'])
+    """
+    positions = [i for i, ch in enumerate(word) if is_han_char(ch)]
+    han_word = ''.join(word[i] for i in positions)
+    char_py = [p[0] for p in pinyin(han_word, style=Style.TONE, heteronym=False)]
+    return positions, char_py
+
+
 
 # 按行处理
 
 def normal_line(cols: list[str]) -> str:
     """普通词表行拼音修正；保留后缀 (;xx / [xx])"""
     word = cols[0]
-    char_py = [p[0] for p in pinyin(word, style=Style.TONE, heteronym=False)]
+    han_positions, char_py = han_pinyin(word)
 
     if len(cols) == 1:                      # 仅汉字
         cols.append(' '.join(char_py))
@@ -137,10 +160,15 @@ def normal_line(cols: list[str]) -> str:
     # 有原拼音列，需要保留后缀
     segs = cols[1].split()
     new_segs = []
+
     for i, py in enumerate(char_py):
-        if i < len(segs):
-            root = re.split(AUX_SEP_REGEX, segs[i])[0]
-            suffix = segs[i][len(root):]
+        # 旧编码若与原词字符数一致，则按汉字在原词中的位置取辅助码，
+        # 从而跳过 β / 英文 / 数字 / 符号对应的编码段。
+        seg_idx = han_positions[i] if len(segs) == len(word) else i
+
+        if seg_idx < len(segs):
+            root = re.split(AUX_SEP_REGEX, segs[seg_idx])[0]
+            suffix = segs[seg_idx][len(root):]
         else:
             suffix = ''
         new_segs.append(py + suffix)
@@ -155,13 +183,16 @@ def userdb_line(cols: list[str]) -> str:
     """
     segs = cols[0].split()
     word = cols[1]
-    char_py = [p[0] for p in pinyin(word, style=Style.TONE, heteronym=False)]
+    han_positions, char_py = han_pinyin(word)
 
     new_segs = []
-    for i, seg in enumerate(segs):
-        base_py = char_py[i] if i < len(char_py) else tone_mark(seg)
-        root    = re.split(AUX_SEP_REGEX, seg)[0]
-        suffix  = seg[len(root):]
+
+    for i, base_py in enumerate(char_py):
+        seg_idx = han_positions[i] if len(segs) == len(word) else i
+        seg = segs[seg_idx] if seg_idx < len(segs) else ''
+
+        root = re.split(AUX_SEP_REGEX, seg)[0] if seg else ''
+        suffix = seg[len(root):] if seg else ''
         new_segs.append(base_py + suffix)
 
     cols[0] = ' '.join(new_segs)
