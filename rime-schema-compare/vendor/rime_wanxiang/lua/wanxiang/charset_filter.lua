@@ -212,8 +212,8 @@ function M.func(input, env)
 
     -- 2. 判断当前是否需要开启字符集过滤
     local is_functional = false
-    if wanxiang and wanxiang.s2t_conversion then
-        is_functional = wanxiang.s2t_conversion(ctx)
+    if wanxiang and wanxiang.is_special_mode then
+        is_functional = wanxiang.is_special_mode(ctx)
     end
     
     local charset_active = (env.filters and #env.filters > 0) and (not is_functional)

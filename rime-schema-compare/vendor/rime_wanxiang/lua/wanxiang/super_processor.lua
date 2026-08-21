@@ -682,8 +682,8 @@ local function handle_number_logic(key, env, ctx)
 
         if env.enable_tone_fallback then
             local is_func_mode = false
-            if wanxiang.is_function_mode_active then
-                is_func_mode = wanxiang.is_function_mode_active(ctx)
+            if wanxiang.is_function_mode then
+                is_func_mode = wanxiang.is_function_mode(ctx)
             end
             local is_first_cand_has_eng = false
             local cand = ctx:get_selected_candidate()

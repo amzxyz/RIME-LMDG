@@ -290,7 +290,7 @@ function P.func(key, env)
 
     if not P.tips_key 
         or P.tips_key ~= key:repr() 
-        or wanxiang.is_function_mode_active(context)
+        or wanxiang.is_function_mode(context)
         or not env.current_tip 
         or env.current_tip == "" 
     then

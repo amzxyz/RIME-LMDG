@@ -492,14 +492,14 @@ function P.func(key_event, env)
     end
 
     local function get_adjust_code()
-        if wanxiang.is_function_mode_active(context) then
+        if wanxiang.is_function_mode(context) then
             local c = seq_property.get(context); if c and c ~= "" then return c end; return nil
         end
         return context.input:sub(1, context.caret_pos)
     end
     local adjust_code = get_adjust_code()
 
-    if (not wanxiang.is_function_mode_active(context)) and _is_single_lowercase_letter(adjust_code) then
+    if (not wanxiang.is_function_mode(context)) and _is_single_lowercase_letter(adjust_code) then
         return wanxiang.RIME_PROCESS_RESULTS.kNoop
     end
 
@@ -621,7 +621,7 @@ local function apply_curr_adjustment(candidates, curr_adjustment)
 end
 
 local function extract_adjustment_code(context)
-    if wanxiang.is_function_mode_active(context) then
+    if wanxiang.is_function_mode(context) then
         local code = seq_property.get(context); if code and code ~= "" then return code end; return nil
     end
     return context.input:sub(1, context.caret_pos)
@@ -655,7 +655,7 @@ function F.func(input, env)
         end 
     end -- ✨
 
-    local adjustment_allowed = not (wanxiang.is_function_mode_active(context) and seq_property.get(context) == nil)
+    local adjustment_allowed = not (wanxiang.is_function_mode(context) and seq_property.get(context) == nil)
     if not adjustment_allowed then return original_list() end
 
     local adjust_code = extract_adjustment_code(context)
@@ -666,7 +666,7 @@ function F.func(input, env)
     if (not curr_adjustment) and (not prev_adjustments) then return original_list() end
 
     local cands, seen = {}, {}
-    local is_fun_mode = wanxiang.is_function_mode_active(context)
+    local is_fun_mode = wanxiang.is_function_mode(context)
     local show_markers = context:get_option("_seq_show_markers")
 
     local pos = 0
