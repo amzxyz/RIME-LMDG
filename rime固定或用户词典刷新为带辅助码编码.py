@@ -6,6 +6,7 @@ rime固定词典或者用户词典刷新为带辅助码的格式.py
 功能：给第一列是汉字的词典批量添加“拼音+辅助码”。
 ⚠ 仅保证辅助码正确；拼音可能多音字错误，需后续“刷拼音”脚本修正。
 包含了中英混排（如 AI绘画、AB型血）的智能对齐逻辑。
+增强：支持数字等非汉字映射到中文汉字，并注入对应辅助码。
 """
 
 from __future__ import annotations
@@ -24,6 +25,14 @@ yaml_heads = ('---', 'name:', 'version:', 'sort:', '...')
 
 # 极广的汉字正则匹配：涵盖基础汉字、扩展区 A-H 以及 "〇"
 CJK_PATTERN = re.compile(r'[〇\u3400-\u4DBF\u4E00-\u9FFF\U00020000-\U000323AF]')
+
+# 非汉字到汉字的映射（数字等，可按需扩展）
+NON_HAN_TO_HAN = {
+    '0': '零', '1': '一', '2': '二', '3': '三', '4': '四',
+    '5': '五', '6': '六', '7': '七', '8': '八', '9': '九',
+    # 可扩展英文字母等，例如：
+    # 'a': '诶', 'b': '比', ...
+}
 
 # ---------- 判断输出路径像目录 ----------
 def is_dir_like(p: str) -> bool:
@@ -52,6 +61,14 @@ def load_aux_metadata(path: str) -> Dict[str, str]:
                 aux_map[char] = ''
     print(f"✓ 辅助码加载 {len(aux_map)} 条")
     return aux_map
+
+# ---------- 辅助函数：非汉字映射到汉字并取辅助码 ----------
+def get_aux_for_non_han(text: str, aux_map: Dict[str, str]) -> str:
+    """非汉字尝试映射到汉字，并获取辅助码；若无法映射则返回空字符串"""
+    han = NON_HAN_TO_HAN.get(text)
+    if han:
+        return aux_map.get(han, '')
+    return ''
 
 # ---------- 核心：中英文本边界解析与智能对齐 ----------
 def tokenize_word(word: str) -> List[Dict[str, str]]:
@@ -100,7 +117,9 @@ def get_alignment(units: List[Dict[str, str]], segs: List[str], u_idx: int, s_id
             if current_seg_text == en_text:
                 res = get_alignment(units, segs, u_idx + 1, k + 1, aux_map)
                 if res is not None:
-                    return [''] * (k - s_idx + 1) + res
+                    # 第一个拼音段尝试注入映射辅助码，其余留空
+                    aux = get_aux_for_non_han(unit['text'], aux_map)
+                    return [aux] + [''] * (k - s_idx) + res
         
         # 策略 2：如果字符串无法完全匹配（如有声调、或者C++对应c jia jia），根据剩余汉字数量进行容错组合
         remaining_cn = sum(1 for u in units[u_idx+1:] if u['type'] == 'cn')
@@ -110,7 +129,8 @@ def get_alignment(units: List[Dict[str, str]], segs: List[str], u_idx: int, s_id
         for consume_len in range(max_consume, 0, -1):
             res = get_alignment(units, segs, u_idx + 1, s_idx + consume_len, aux_map)
             if res is not None:
-                return [''] * consume_len + res
+                aux = get_aux_for_non_han(unit['text'], aux_map)
+                return [aux] + [''] * (consume_len - 1) + res
         
         return None
 
