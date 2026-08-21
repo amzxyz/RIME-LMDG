@@ -1,0 +1,1960 @@
+# Rime dictionary
+# encoding: utf-8
+# #https://github.com/amzxyz/RIME-LMDG
+---
+name: mixed
+version: "LTS"
+sort: original  #字典初始排序，可選original或by_weight
+...
+A+	a
+A班	a bān
+A杯	a bēi
+A档	a dàng
+A点	a diǎn
+A栋	a dòng
+A股	a gǔ
+A级	a jí
+A卡	a kǎ
+A壳	a ké
+A口	a kǒu
+A款	a kuǎn
+A楼	a lóu
+A面	a miàn
+A盘	a pán
+A片	a piàn
+A屏	a píng
+阿Q	ā q
+A区	a qū
+A4	a sì
+A塔	a tǎ
+A型	a xíng
+A站	a zhàn
+A杖	a zhàng
+A罩	a zhào
+A柱	a zhù
+A组	a zǔ
+A座	a zuò
+B班	b bān
+B杯	b bēi
+B超	b chāo
+B点	b diǎn
+B栋	b dòng
+B哥	b gē
+B股	b gǔ
+B话	b huà
+B级	b jí
+B壳	b ké
+B口	b kǒu
+B款	b kuǎn
+B楼	b lóu
+B面	b miàn
+B盘	b pán
+B区	b qū
+B型	b xíng
+B站	b zhàn
+B罩	b zhào
+B柱	b zhù
+B组	b zǔ
+B座	b zuò
+C班	c bān
+C杯	c bēi
+C店	c diàn
+C栋	c dòng
+C级	c jí
+C壳	c ké
+C口	c kǒu
+C款	c kuǎn
+C楼	c lóu
+C罗	c luó
+C面	c miàn
+C盘	c pán
+C区	c qū
+C位	c wèi
+C型	c xíng
+C罩	c zhào
+C柱	c zhù
+C组	c zǔ
+C座	c zuò
+藏A	cáng a
+藏A	cáng a
+藏B	cáng b
+藏C	cáng c
+藏D	cáng d
+藏E	cáng e
+藏F	cáng f
+藏G	cáng g
+藏H	cáng h
+藏J	cáng j
+唱K	chàng k
+川A	chuān a
+川B	chuān b
+川C	chuān c
+川D	chuān d
+川E	chuān e
+川F	chuān f
+川H	chuān h
+川J	chuān j
+川K	chuān k
+川L	chuān l
+川M	chuān m
+川Q	chuān q
+川R	chuān r
+川S	chuān s
+川T	chuān t
+川U	chuān u
+川V	chuān v
+川W	chuān w
+川X	chuān x
+川Y	chuān y
+川Z	chuān z
+Ci	ci
+D班	d bān
+D杯	d bēi
+D档	d dàng
+D栋	d dòng
+D级	d jí
+D壳	d ké
+D口	d kǒu
+D款	d kuǎn
+D楼	d lóu
+D面	d miàn
+D盘	d pán
+D区	d qū
+D型	d xíng
+D罩	d zhào
+D柱	d zhù
+D组	d zǔ
+D座	d zuò
+大V	dà v
+dB	db
+逗B	dòu b
+鄂A	è a
+鄂B	è b
+E杯	e bēi
+鄂C	è c
+鄂D	è d
+E栋	e dòng
+鄂E	è e
+鄂F	è f
+鄂G	è g
+鄂H	è h
+鄂J	è j
+鄂K	è k
+E口	e kǒu
+E款	e kuǎn
+鄂L	è l
+E楼	e lóu
+鄂M	è m
+鄂N	è n
+鄂P	è p
+E盘	e pán
+鄂Q	è q
+E区	e qū
+鄂R	è r
+鄂S	è s
+E型	e xíng
+E罩	e zhào
+E组	e zǔ
+E座	e zuò
+2B	èr b
+二B	èr b
+2H	èr h
+F8	f bā
+F杯	f bēi
+F调	f diào
+F栋	f dòng
+F2	f èr
+F9	f jiǔ
+F口	f kǒu
+F款	f kuǎn
+F6	f liù
+F楼	f lóu
+F盘	f pán
+F7	f qī
+F区	f qū
+F3	f sān
+F4	f sì
+F5	f wǔ
+F型	f xíng
+F1	f yī
+F罩	f zhào
+F组	f zǔ
+F座	f zuò
+G杯	g bēi
+G点	g diǎn
+G盘	g pán
+G胖	g pàng
+G罩	g zhào
+甘A	gān a
+赣A	gàn a
+甘B	gān b
+赣B	gàn b
+甘C	gān c
+赣C	gàn c
+甘D	gān d
+赣D	gàn d
+甘E	gān e
+赣E	gàn e
+甘F	gān f
+赣F	gàn f
+甘G	gān g
+赣G	gàn g
+甘H	gān h
+赣H	gàn h
+甘J	gān j
+赣J	gàn j
+甘K	gān k
+赣K	gàn k
+甘L	gān l
+赣L	gàn l
+甘M	gān m
+赣M	gàn m
+甘N	gān n
+甘P	gān p
+GB	gb
+贵A	guì a
+桂A	guì a
+贵B	guì b
+桂B	guì b
+贵C	guì c
+桂C	guì c
+贵D	guì d
+桂D	guì d
+贵E	guì e
+桂E	guì e
+贵F	guì f
+桂F	guì f
+贵G	guì g
+桂G	guì g
+贵H	guì h
+桂H	guì h
+贵J	guì j
+桂J	guì j
+桂K	guì k
+桂L	guì l
+桂M	guì m
+桂N	guì n
+桂P	guì p
+桂R	guì r
+H版	h bǎn
+H杯	h bēi
+H调	h diào
+H股	h gǔ
+H罩	h zhào
+黑A	hēi a
+黑B	hēi b
+黑C	hēi c
+黑D	hēi d
+黑E	hēi e
+黑F	hēi f
+黑G	hēi g
+黑H	hēi h
+黑J	hēi j
+黑K	hēi k
+黑L	hēi l
+黑M	hēi m
+黑N	hēi n
+黑P	hēi p
+黑R	hēi r
+Hz	hz
+i8	i bā
+i9	i jiǔ
+i6	i liù
+i7	i qī
+i3	i sān
+J盘	j pán
+吉A	jí a
+冀A	jì a
+吉B	jí b
+冀B	jì b
+吉C	jí c
+冀C	jì c
+吉D	jí d
+冀D	jì d
+吉E	jí e
+冀E	jì e
+吉F	jí f
+冀F	jì f
+吉G	jí g
+冀G	jì g
+吉H	jí h
+冀H	jì h
+吉J	jí j
+冀J	jì j
+吉K	jí k
+冀R	jì r
+冀S	jì s
+冀T	jì t
+加Q	jiā q
+晋A	jìn a
+晋B	jìn b
+晋C	jìn c
+晋D	jìn d
+晋E	jìn e
+晋F	jìn f
+晋H	jìn h
+晋J	jìn j
+晋K	jìn k
+晋L	jìn l
+晋M	jìn m
+K宝	k bǎo
+K粉	k fěn
+K歌	k gē
+K记	k jì
+K线	k xiàn
+KB	kb
+kN	kn
+kW	kw
+μL	l
+L8	l bā
+L调	l diào
+L9	l jiǔ
+L6	l liù
+L码	l mǎ
+L7	l qī
+老K	lǎo k
+辽A	liáo a
+辽B	liáo b
+辽C	liáo c
+辽D	liáo d
+辽E	liáo e
+辽F	liáo f
+辽G	liáo g
+辽H	liáo h
+辽J	liáo j
+辽K	liáo k
+辽L	liáo l
+辽M	liáo m
+辽N	liáo n
+辽P	liáo p
+6G	liù g
+鲁A	lǔ a
+鲁B	lǔ b
+鲁C	lǔ c
+鲁D	lǔ d
+鲁E	lǔ e
+鲁F	lǔ f
+鲁G	lǔ g
+鲁H	lǔ h
+鲁J	lǔ j
+鲁K	lǔ k
+鲁L	lǔ l
+鲁M	lǔ m
+鲁N	lǔ n
+鲁P	lǔ p
+鲁Q	lǔ q
+鲁R	lǔ r
+鲁S	lǔ s
+鲁U	lǔ u
+鲁V	lǔ v
+鲁Y	lǔ y
+M档	m dàng
+M调	m diào
+M哥	m gē
+M记	m jì
+M码	m mǎ
+mA	ma
+MB	mb
+蒙A	méng a
+蒙B	méng b
+蒙C	méng c
+蒙D	méng d
+蒙E	méng e
+蒙F	méng f
+蒙G	méng g
+蒙H	méng h
+蒙J	méng j
+蒙K	méng k
+蒙L	méng l
+蒙M	méng m
+闽A	mǐn a
+闽B	mǐn b
+闽C	mǐn c
+闽D	mǐn d
+闽E	mǐn e
+闽F	mǐn f
+闽G	mǐn g
+闽H	mǐn h
+闽J	mǐn j
+闽K	mǐn k
+mL	ml
+N遍	n biàn
+N次	n cì
+N档	n dàng
+N多	n duō
+N股	n gǔ
+N卡	n kǎ
+N年	n nián
+宁A	níng a
+宁B	níng b
+宁C	níng c
+宁D	níng d
+宁E	níng e
+牛B	niú b
+O型	o xíng
+P档	p dàng
+P棉	p mián
+P社	p shè
+P图	p tú
+P站	p zhàn
+Pa	pa
+平A	píng a
+Q版	q bǎn
+Q币	q bì
+Q弹	q dàn
+Q我	q wǒ
+7z	qī z
+青A	qīng a
+青B	qīng b
+青C	qīng c
+青D	qīng d
+青E	qīng e
+青F	qīng f
+青G	qīng g
+青H	qīng h
+琼A	qióng a
+琼B	qióng b
+琼C	qióng c
+琼D	qióng d
+琼E	qióng e
+R档	r dàng
+R调	r diào
+R2	r èr
+R级	r jí
+R角	r jiǎo
+R7	r qī
+R5	r wǔ
+S档	s dàng
+S调	s diào
+S股	s gǔ
+S级	s jí
+S码	s mǎ
+S3	s sān
+S形	s xíng
+3A	sān a
+3D	sān d
+3M	sān m
+傻B	shǎ b
+傻X	shǎ x
+陕A	shǎn a
+陕B	shǎn b
+陕C	shǎn c
+陕D	shǎn d
+陕E	shǎn e
+陕F	shǎn f
+陕G	shǎn g
+陕H	shǎn h
+陕J	shǎn j
+陕K	shǎn k
+陕U	shǎn u
+陕V	shǎn v
+4A	sì a
+4A	sì a
+4B	sì b
+4H	sì h
+4X	sì x
+苏A	sū a
+苏B	sū b
+苏C	sū c
+苏D	sū d
+苏E	sū e
+苏F	sū f
+苏G	sū g
+苏H	sū h
+苏J	sū j
+苏K	sū k
+苏L	sū l
+苏M	sū m
+苏N	sū n
+苏U	sū u
+T台	t tái
+T尾	t wěi
+T恤	t xù
+U盾	u dùn
+U盘	u pán
+U形	u xíng
+V领	v lǐng
+V煞	v shā
+V社	v shè
+V站	v zhàn
+皖A	wǎn a
+皖B	wǎn b
+皖C	wǎn c
+皖D	wǎn d
+皖E	wǎn e
+皖F	wǎn f
+皖G	wǎn g
+皖H	wǎn h
+皖J	wǎn j
+皖K	wǎn k
+皖L	wǎn l
+皖M	wǎn m
+皖N	wǎn n
+皖P	wǎn p
+皖R	wǎn r
+皖S	wǎn s
+维A	wéi a
+维B	wéi b
+维C	wéi c
+维D	wéi d
+维E	wéi e
+维K	wéi k
+5G	wǔ g
+X刀	x dāo
+X光	x guāng
+X轴	x zhóu
+西藏	xī zàng
+湘A	xiāng a
+湘B	xiāng b
+湘C	xiāng c
+湘D	xiāng d
+湘E	xiāng e
+湘F	xiāng f
+湘G	xiāng g
+湘H	xiāng h
+湘J	xiāng j
+湘K	xiāng k
+湘L	xiāng l
+湘M	xiāng m
+湘N	xiāng n
+湘U	xiāng u
+新A	xīn a
+新B	xīn b
+新C	xīn c
+新D	xīn d
+新E	xīn e
+新F	xīn f
+新G	xīn g
+新H	xīn h
+新J	xīn j
+新K	xīn k
+新L	xīn l
+新M	xīn m
+新N	xīn n
+新P	xīn p
+新Q	xīn q
+新R	xīn r
+Y轴	y zhóu
+豫A	yù a
+豫B	yù b
+渝C	yú c
+豫C	yù c
+豫D	yù d
+豫E	yù e
+渝F	yú f
+豫F	yù f
+渝G	yú g
+豫G	yù g
+渝H	yú h
+豫H	yù h
+豫J	yù j
+豫K	yù k
+豫L	yù l
+豫M	yù m
+豫N	yù n
+豫P	yù p
+豫Q	yù q
+豫R	yù r
+豫S	yù s
+豫U	yù u
+粤A	yuè a
+粤B	yuè b
+粤C	yuè c
+粤D	yuè d
+粤E	yuè e
+粤F	yuè f
+粤G	yuè g
+粤H	yuè h
+粤J	yuè j
+粤K	yuè k
+粤L	yuè l
+粤M	yuè m
+粤N	yuè n
+粤P	yuè p
+粤Q	yuè q
+粤R	yuè r
+粤S	yuè s
+粤T	yuè t
+粤U	yuè u
+粤V	yuè v
+粤W	yuè w
+粤X	yuè x
+粤Y	yuè y
+粤Z	yuè z
+云A	yún a
+云B	yún b
+云C	yún c
+云D	yún d
+云E	yún e
+云F	yún f
+云G	yún g
+云H	yún h
+云J	yún j
+云K	yún k
+云L	yún l
+云M	yún m
+云N	yún n
+云P	yún p
+云Q	yún q
+云R	yún r
+云S	yún s
+Z轴	z zhóu
+浙A	zhè a
+浙B	zhè b
+浙C	zhè c
+浙D	zhè d
+浙E	zhè e
+浙F	zhè f
+浙G	zhè g
+浙H	zhè h
+浙J	zhè j
+浙K	zhè k
+浙L	zhè l
+装B	zhuāng b
+A出口	a chū kǒu
+α粒子	ā ěr fǎ lì zǐ
+α粒子	ā ěr fǎ lì zǐ
+A和B	a hé b
+A4腰	a sì yāo
+A4纸	a sì zhǐ
+A型号	a xíng hào
+A型血	a xíng xuè
+A血型	a xuè xíng
+A罩杯	a zhào bēi
+AA吧	aa ba
+AA制	aa zhì
+AB型	ab xíng
+AC号	ac hào
+AD钙	ad gài
+艾AA	ài aa
+AV号	av hào
+AV1	av yī
+B出口	b chū kǒu
+B话榜	b huà bǎng
+B话多	b huà duō
+B细胞	b xì bāo
+B型号	b xíng hào
+B型血	b xíng xuè
+B血型	b xuè xíng
+B罩杯	b zhào bēi
+88式	bā bā shì
+芭比Q	bā bǐ q
+80式	bā líng shì
++86	bā liù
+85式	bā wǔ shì
+8字环	bā zì huán
+BB机	bb jī
+BB啥	bb shá
+β粒子	bèi tǎ lì zǐ
+β粒子	bèi tǎ lì zǐ
+不OK	bù ok
+BV号	bv hào
+C出口	c chū kǒu
+C型号	c xíng hào
+C语言	c yǔ yán
+C罩杯	c zhào bēi
+CD机	cd jī
+查IP	chá ip
+炒CP	chǎo cp
+充Q币	chōng q bì
+CT室	ct shì
+D出口	d chū kǒu
+D型号	d xíng hào
+D罩杯	d zhào bēi
+D之国	d zhī guó
+第N次	dì n cì
+DJ版	dj bǎn
+E出口	e chū kǒu
+e签宝	e qiān bǎo
+E型号	e xíng hào
+E罩杯	e zhào bēi
+e招贷	e zhāo dài
+2K屏	èr k píng
+F出口	f chū kǒu
+F型号	f xíng hào
+F12	f yī èr
+F10	f yī líng
+F11	f yī yī
+F罩杯	f zhào bēi
+方块A	fāng kuài a
+方块J	fāng kuài j
+方块K	fāng kuài k
+方块Q	fāng kuài q
+FAT	fat
+封IP	fēng ip
+FF调	ff diào
+FG结	fg jié
+Fn键	fn jiàn
+G罩杯	g zhào bēi
+Go程	go chéng
+挂D档	guà d dàng
+挂P档	guà p dàng
+挂R档	guà r dàng
+H-6	h liù
+H罩杯	h zhào bēi
+黑桃A	hēi táo a
+黑桃J	hēi táo j
+黑桃K	hēi táo k
+黑桃Q	hēi táo q
+很OK	hěn ok
+轰-6	hōng liù
+互fo	hù fo
+换IP	huàn ip
+IC卡	ic kǎ
+ID卡	id kǎ
+IP卡	ip kǎ
+IT界	it jiè
+IT业	it yè
+J-8	j bā
+J-6	j liù
+J-7	j qī
+J-5	j wǔ
+加QQ	jiā qq
+歼-8	jiān bā
+减CD	jiǎn cd
+歼-6	jiān liù
+歼-7	jiān qī
+歼-5	jiān wǔ
+教-8	jiào bā
+教-9	jiào jiǔ
+99式	jiǔ jiǔ shì
+96式	jiǔ liù shì
+就OK	jiù ok
+K-8	k bā
+K歌王	k gē wáng
+K线图	k xiàn tú
+K12	k yī èr
+嗑CP	kē cp
+L系列	l xì liè
+m4a	m sì a
+M系列	m xì liè
+梅花A	méi huā a
+梅花J	méi huā j
+梅花K	méi huā k
+梅花Q	méi huā q
+MF调	mf diào
+MH调	mh diào
+谜拟Q	mí nǐ q
+ML调	ml diào
+mp3	mp sān
+mp4	mp sì
+MPa	mpa
+n8n	n bā n
+n次方	n cì fāng
+n次方	n cì fāng
+n次幂	n cì mì
+N多个	n duō gè
+N多人	n duō rén
+O型血	o xíng xuè
+O血型	o xuè xíng
+OK啊	ok a
+OK不	ok bù
+OK啦	ok la
+OK了	ok le
+OK吗	ok ma
+OK嘛	ok ma
+OK么	ok me
+OK呀	ok ya
+P个图	p gè tú
+P一下	p yí xià
+拍CT	pāi ct
+PC版	pc bǎn
+PC端	pc duān
+PE管	pe guǎn
+PE线	pe xiàn
+pH值	ph zhí
+PK赛	pk sài
+PN结	pn jié
+PP袋	pp dài
+PR结	pr jié
+QQ号	qq hào
+QQ群	qq qún
+QQ堂	qq táng
+QQ秀	qq xiù
+QR码	qr mǎ
+RF调	rf diào
+日K线	rì k xiàn
+S曲线	s qū xiàn
+3DS	sān ds
+三K党	sān k dǎng
+SD卡	sd kǎ
+4A级	sì a jí
+4K屏	sì k píng
+4S店	sì s diàn
+T细胞	t xì bāo
+T型台	t xíng tái
+T恤衫	t xù shān
+TF版	tf bǎn
+TF卡	tf kǎ
+TG群	tg qún
+TV版	tv bǎn
+U形管	u xíng guǎn
+U型锁	u xíng suǒ
+UL调	ul diào
+UP主	up zhǔ
+V怪客	v guài kè
+V字领	v zì lǐng
+V字形	v zì xíng
+VIB	vib
+维E乳	wéi e rǔ
+微PE	wēi pe
+5A级	wǔ a jí
+X档案	x dàng àn
+X光片	x guāng piàn
+X和Y	x hé y
+X教授	x jiào shòu
+X射线	x shè xiàn
+X战警	x zhàn jǐng
+XF调	xf diào
+XH调	xh diào
+θ粒子	xī tǎ lì zǐ
+θ粒子	xī tǎ lì zǐ
+西藏A	xī zàng a
+瞎BB	xiā bb
+Y-8	y bā
+Y-9	y jiǔ
+Y-7	y qī
+月K线	yuè k xiàn
+运-8	yùn bā
+运-9	yùn jiǔ
+运-7	yùn qī
+Z-8	z bā
+z变换	z biàn huàn
+Z-9	z jiǔ
+Z世代	z shì dài
+再BB	zài bb
+直-8	zhí bā
+直-9	zhí jiǔ
+周K线	zhōu k xiàn
+做B超	zuò b chāo
+阿Q精神	ā q jīng shén
+阿Q正传	ā q zhèng zhuàn
+阿Sir	ā sir
+a11y	a yī yī y
+AAA级	aaa jí
+AB型血	ab xíng xuè
+AB血型	ab xuè xíng
+AD钙奶	ad gài nǎi
+AI短剧	ai duǎn jù
+AI绘画	ai huì huà
+AI垃圾	ai lā jī
+AI模型	ai mó xíng
+Alt键	alt jiàn
+奥迪A8	ào dí a bā
+奥迪A6	ào dí a liù
+奥迪A7	ào dí a qī
+奥迪A3	ào dí a sān
+奥迪A4	ào dí a sì
+奥迪A5	ào dí a wǔ
+奥迪Q8	ào dí q bā
+奥迪Q2	ào dí q èr
+奥迪Q7	ào dí q qī
+奥迪Q3	ào dí q sān
+奥迪Q5	ào dí q wǔ
+ATM机	atm jī
+AV女优	av nǚ yōu
+AVL树	avl shù
+B话真多	b huà zhēn duō
+芭比Q了	bā bǐ q le
+宝马8系	bǎo mǎ bā xì
+宝马2系	bǎo mǎ èr xì
+宝马i7	bǎo mǎ i qī
+宝马i3	bǎo mǎ i sān
+宝马i4	bǎo mǎ i sì
+宝马iX	bǎo mǎ ix
+宝马6系	bǎo mǎ liù xì
+宝马7系	bǎo mǎ qī xì
+宝马3系	bǎo mǎ sān xì
+宝马4系	bǎo mǎ sì xì
+宝马5系	bǎo mǎ wǔ xì
+宝马X2	bǎo mǎ x èr
+宝马X6	bǎo mǎ x liù
+宝马X7	bǎo mǎ x qī
+宝马X3	bǎo mǎ x sān
+宝马X4	bǎo mǎ x sì
+宝马X5	bǎo mǎ x wǔ
+宝马X1	bǎo mǎ x yī
+宝马1系	bǎo mǎ yī xì
+报303	bào sān líng sān
+报404	bào sì líng sì
+报500	bào wǔ líng líng
+报503	bào wǔ líng sān
+Be动词	be dòng cí
+奔驰A级	bēn chí a jí
+奔驰B级	bēn chí b jí
+奔驰C级	bēn chí c jí
+奔驰E级	bēn chí e jí
+奔驰S级	bēn chí s jí
+奔驰V级	bēn chí v jí
+BG80	bg bā líng
+BG85	bg bā wǔ
+BG66	bg liù liù
+BG65	bg liù wǔ
+BG70	bg qī líng
+Big胆	big dǎn
+Byte	byte
+C#语言	c yǔ yán
+彩虹-4	cǎi hóng sì
+彩虹-5	cǎi hóng wǔ
+CH-4	ch sì
+CH-5	ch wǔ
+查bug	chá bug
+吃KFC	chī kfc
+出Bug	chū bug
+初教-6	chū jiào liù
+CJ-6	cj liù
+Cmd键	cmd jiàn
+CO气体	co qì tǐ
+CT检查	ct jiǎn chá
+CT扫描	ct sǎo miáo
+CZ-8	cz bā
+CZ-6	cz liù
+CZ-7	cz qī
+CZ-5	cz wǔ
+D之一族	d zhī yì zú
+DDR4	ddr sì
+DDR5	ddr wǔ
+Del键	del jiàn
+DF26	df èr liù
+DF21	df èr yī
+DF61	df liù yī
+DF31	df sān yī
+DF41	df sì yī
+DF51	df wǔ yī
+DJ舞曲	dj wǔ qǔ
+东风-5	dōng fēng wǔ
+多边兽Z	duō biān shòu z
+哆啦A梦	duō la a mèng
+DVD版	dvd bǎn
+End键	end jiàn
+2B铅笔	èr b qiān bǐ
+2D电影	èr d diàn yǐng
+2G网络	èr g wǎng luò
+2H铅笔	èr h qiān bǐ
+2K电视	èr k diàn shì
+Esc键	esc jiàn
+发EMS	fā ems
+Fe元素	fe yuán sù
+飞牛OS	fēi niú os
+改bug	gǎi bug
+高新-8	gāo xīn bā
+高新-6	gāo xīn liù
+GJ-2	gj èr
+Go圣经	go shèng jīng
+Go语言	go yǔ yán
+攻击-2	gōng jī èr
+公网IP	gōng wǎng ip
+H-20	h èr líng
+H266	h èr liù liù
+H264	h èr liù sì
+H265	h èr liù wǔ
+H-6J	h liù j
+H-6K	h liù k
+H-6N	h liù n
+喊cut	hǎn cut
+HB铅笔	hb qiān bǐ
+HD高清	hd gāo qīng
+HJ-8	hj bā
+轰-20	hōng èr líng
+红箭-8	hóng jiàn bā
+轰-6J	hōng liù j
+轰-6K	hōng liù k
+轰-6N	hōng liù n
+红旗-9	hóng qí jiǔ
+轰油-6	hōng yóu liù
+HQ-9	hq jiǔ
+HY-6	hy liù
+ID验证	id yàn zhèng
+iOS版	ios bǎn
+iOS端	ios duān
+IP地址	ip dì zhǐ
+IP电话	ip diàn huà
+IP属地	ip shǔ dì
+IT行业	it háng yè
+IT之家	it zhī jiā
+J-20	j èr líng
+J-35	j sān wǔ
+J-31	j sān yī
+J-10	j yī líng
+J-16	j yī liù
+J-15	j yī wǔ
+J-11	j yī yī
+JD京东	jd jīng dōng
+JD自营	jd zì yíng
+JH-7	jh qī
+即梦AI	jí mèng ai
+歼-20	jiān èr líng
+歼轰-7	jiān hōng qī
+歼教-7	jiān jiào qī
+歼-35	jiān sān wǔ
+歼-31	jiān sān yī
+歼-10	jiān yī líng
+歼-16	jiān yī liù
+歼-15	jiān yī wǔ
+歼-11	jiān yī yī
+教-10	jiào yī líng
+惊雷-1	jīng léi yī
+99A式	jiǔ jiǔ a shì
+99B式	jiǔ jiǔ b shì
+96A式	jiǔ liù a shì
+96B式	jiǔ liù b shì
+JK制服	jk zhì fú
+JL-8	jl bā
+JL-2	jl èr
+JL-9	jl jiǔ
+JL-3	jl sān
+巨浪-2	jù làng èr
+巨浪-3	jù làng sān
+巨浪-1	jù làng yī
+K字签证	k zì qiān zhèng
+卡Bug	kǎ bug
+卡拉OK	kǎ lā ok
+kW·h	kw h
+kW·h	kw h
+L-15	l yī wǔ
+LAN口	lan kǒu
+LED灯	led dēng
+LED屏	led píng
+理想i8	lǐ xiǎng i bā
+理想i9	lǐ xiǎng i jiǔ
+理想i6	lǐ xiǎng i liù
+理想i7	lǐ xiǎng i qī
+理想L8	lǐ xiǎng l bā
+理想L9	lǐ xiǎng l jiǔ
+理想L6	lǐ xiǎng l liù
+理想L7	lǐ xiǎng l qī
+Low帧	low zhēn
+LY-1	ly yī
+M3U8	m sān u bā
+Mac版	mac bǎn
+Mac端	mac duān
+芒果TV	máng guǒ tv
+没bug	méi bug
+没人BB	méi rén bb
+Mi手环	mi shǒu huán
+.NET	net
+.NET	net
+你的ip	nǐ de ip
+O不OK	o bù ok
+OK了吗	ok le ma
+OK手势	ok shǒu shì
+Opt键	opt jiàn
+PC版本	pc bǎn běn
+PIN码	pin mǎ
+POS机	pos jī
+PP法兰	pp fǎ lán
+PPR管	ppr guǎn
+Pro版	pro bǎn
+PUK码	puk mǎ
+PVC管	pvc guǎn
+Q群管家	q qún guǎn jiā
+720p	qī èr líng p
+QQ表情	qq biǎo qíng
+QQ超会	qq chāo huì
+QQ等级	qq děng jí
+QQ登录	qq dēng lù
+QQ动态	qq dòng tài
+QQ飞车	qq fēi chē
+QQ号码	qq hào mǎ
+QQ好友	qq hǎo yǒu
+QQ红包	qq hóng bāo
+QQ会员	qq huì yuán
+QQ空间	qq kōng jiān
+QQ聊天	qq liáo tiān
+QQ密码	qq mì mǎ
+QQ拼音	qq pīn yīn
+QQ钱包	qq qián bāo
+QQ签名	qq qiān míng
+QQ三国	qq sān guó
+QQ视频	qq shì pín
+QQ相册	qq xiàng cè
+QQ消息	qq xiāo xi
+QQ音速	qq yīn sù
+QQ音乐	qq yīn yuè
+QQ影音	qq yǐng yīn
+QQ游戏	qq yóu xì
+QQ邮箱	qq yóu xiāng
+QQ语音	qq yǔ yīn
+QQ阅读	qq yuè dú
+QQ注册	qq zhù cè
+3A大作	sān a dà zuò
+3A游戏	sān a yóu xì
+3C认证	sān c rèn zhèng
+3D打印	sān d dǎ yìn
+3D电影	sān d diàn yǐng
+3G流量	sān g liú liàng
+3G网络	sān g wǎng luò
+SDK包	sdk bāo
+啥bug	shá bug
+尚界H5	shàng jiè h wǔ
+4B铅笔	sì b qiān bǐ
+Si材料	si cái liào
+4G流量	sì g liú liàng
+4G网络	sì g wǎng luò
+4H铅笔	sì h qiān bǐ
+4K电视	sì k diàn shì
+SIM卡	sim kǎ
+Tab键	tab jiàn
+太low	tài low
+淘宝C店	táo bǎo c diàn
+腾势D9	téng shì d jiǔ
+腾势N9	téng shì n jiǔ
+腾势N7	téng shì n qī
+腾讯QQ	téng xùn qq
+TF版本	tf bǎn běn
+提bug	tí bug
+头文字D	tóu wén zì d
+TV版本	tv bǎn běn
+U盘存储	u pán cún chǔ
+UC小编	uc xiǎo biān
+UI设计	ui shè jì
+UIM卡	uim kǎ
+USB口	usb kǒu
+USB线	usb xiàn
+UU远程	uu yuǎn chéng
+UV吸收	uv xī shōu
+UX体验	ux tǐ yàn
+V8引擎	v bā yǐn qíng
+VIP卡	vip kǎ
+VS对决	vs duì jué
+VT-2	vt èr
+VT-4	vt sì
+VT-5	vt wǔ
+WAN口	wan kǒu
+Web版	web bǎn
+Web端	web duān
+维生素A	wéi shēng sù a
+维生素B	wéi shēng sù b
+维生素C	wéi shēng sù c
+维生素D	wéi shēng sù d
+维生素E	wéi shēng sù e
+维生素K	wéi shēng sù k
+问界M9	wèn jiè m jiǔ
+问界M7	wèn jiè m qī
+问界M5	wèn jiè m wǔ
+Win版	win bǎn
+Win端	win duān
+WL-2	wl èr
+WL-3	wl sān
+我的ip	wǒ de ip
+我叫MT	wǒ jiào mt
+我OK啊	wǒ ok a
+5G流量	wǔ g liú liàng
+5G手机	wǔ g shǒu jī
+5G网络	wǔ g wǎng luò
+无侦-8	wú zhēn bā
+无侦-7	wú zhēn qī
+WZ-8	wz bā
+WZ-7	wz qī
+X染色体	x rǎn sè tǐ
+享界S9	xiǎng jiè s jiǔ
+小bug	xiǎo bug
+小鹏G9	xiǎo péng g jiǔ
+小鹏G6	xiǎo péng g liù
+小鹏G3	xiǎo péng g sān
+小鹏P7	xiǎo péng p qī
+小鹏P5	xiǎo péng p wǔ
+写bug	xiě bug
+修Bug	xiū bug
+XXH调	xxh diào
+Y-8Q	y bā q
+Y-20	y èr líng
+Y染色体	y rǎn sè tǐ
+Y-12	y yī èr
+仰望U8	yǎng wàng u bā
+仰望U9	yǎng wàng u jiǔ
+仰望U7	yǎng wàng u qī
+翼龙-2	yì lóng èr
+翼龙-3	yì lóng sān
+异维A酸	yì wéi a suān
+永硕E盘	yǒng shuò e pán
+有bug	yǒu bug
+运-8Q	yùn bā q
+运-20	yùn èr líng
+运-12	yùn yī èr
+YY语音	yy yǔ yīn
+Z-20	z èr líng
+z逆变换	z nì biàn huàn
+Z-18	z yī bā
+Z-19	z yī jiǔ
+Z-10	z yī líng
+Z-15	z yī wǔ
+Z-11	z yī yī
+找bug	zhǎo bug
+真能BB	zhēn néng bb
+直-20	zhí èr líng
+智己L6	zhì jǐ l liù
+智己L7	zhì jǐ l qī
+智界R7	zhì jiè r qī
+智界S7	zhì jiè s qī
+直-18	zhí yī bā
+直-19	zhí yī jiǔ
+直-10	zhí yī líng
+直-15	zhí yī wǔ
+直-11	zhí yī yī
+装到C盘	zhuāng dào c pán
+装到D盘	zhuāng dào d pán
+装到E盘	zhuāng dào e pán
+ABS刹车	abs shā chē
+AI大模型	ai dà mó xíng
+API调用	api diào yòng
+API接口	api jiē kǒu
+APP更新	app gēng xīn
+APP内购	app nèi gòu
+APP通知	app tōng zhī
+APP下载	app xià zài
+APP应用	app yìng yòng
+APS-C	aps c
+Aria2	aria èr
+ATM取款	atm qǔ kuǎn
+B淋巴细胞	b lín bā xì bāo
+88vip	bā bā vip
+宝石Gem	bǎo shí gem
+奔驰EQB	bēn chí eqb
+奔驰EQC	bēn chí eqc
+奔驰EQE	bēn chí eqe
+奔驰EQS	bēn chí eqs
+奔驰GLA	bēn chí gla
+奔驰GLB	bēn chí glb
+奔驰GLC	bēn chí glc
+奔驰GLE	bēn chí gle
+奔驰GLS	bēn chí gls
+Beta版	beta bǎn
+别克GL8	bié kè gl bā
+BMW宝马	bmw bǎo mǎ
+C++编程	c biān chéng
+Caps键	caps jiàn
+CD播放器	cd bō fàng qì
+CEO讲话	ceo jiǎng huà
+CFD模拟	cfd mó nǐ
+CFO报告	cfo bào gào
+颤泳vib	chàn yǒng vib
+长剑-20	cháng jiàn èr líng
+长剑-10	cháng jiàn yī líng
+出Bug了	chū bug le
+CJ-20	cj èr líng
+CJ-10	cj yī líng
+CNC加工	cnc jiā gōng
+CNY账户	cny zhàng hù
+CO2检测	co èr jiǎn cè
+CO2排放	co èr pái fàng
+CPU核数	cpu hé shù
+CPU温度	cpu wēn dù
+CPVC管	cpvc guǎn
+CRM软件	crm ruǎn jiàn
+CRM系统	crm xì tǒng
+CSS样式	css yàng shì
+Ctrl键	ctrl jiàn
+CZ-2C	cz èr c
+CZ-2D	cz èr d
+CZ-3B	cz sān b
+CZ-3C	cz sān c
+CZ-4B	cz sì b
+CZ-4C	cz sì c
+CZ-11	cz yī yī
+打call	dǎ call
+单边z变换	dān biān z biàn huàn
+DF-26	df èr liù
+DF-21	df èr yī
+DF-61	df liù yī
+DF-31	df sān yī
+DF-41	df sì yī
+DF-5C	df wǔ c
+DF-17	df yī qī
+DF-15	df yī wǔ
+DF-11	df yī yī
+叠buff	dié buff
+DIY手工	diy shǒu gōng
+DIY组装	diy zǔ zhuāng
+DNA比对	dna bǐ duì
+DNA测序	dna cè xù
+DNA分子	dna fēn zǐ
+DNA检测	dna jiǎn cè
+DNA鉴定	dna jiàn dìng
+DNA序列	dna xù liè
+DNS劫持	dns jié chí
+DNS解析	dns jiě xī
+DNS配置	dns pèi zhì
+DNS污染	dns wū rǎn
+Dock栏	dock lán
+东风-26	dōng fēng èr liù
+东风-27	dōng fēng èr qī
+东风-21	dōng fēng èr yī
+东风-61	dōng fēng liù yī
+东风-31	dōng fēng sān yī
+东风-41	dōng fēng sì yī
+东风-5C	dōng fēng wǔ c
+东风-12	dōng fēng yī èr
+东风-16	dōng fēng yī liù
+东风-17	dōng fēng yī qī
+东风-15	dōng fēng yī wǔ
+东风-11	dōng fēng yī yī
+DoS攻击	dos gōng jī
+ECG监测	ecg jiān cè
+EDS分析	eds fēn xī
+Emby服	emby fú
+2K分辨率	èr k fēn biàn lǜ
+2K显示器	èr k xiǎn shì qì
+ERP系统	erp xì tǒng
+ESP系统	esp xì tǒng
+ETF基金	etf jī jīn
+EV充电桩	ev chōng diàn zhuāng
+EV电动车	ev diàn dòng chē
+FAT32	fat sān èr
+FEA分析	fea fēn xī
+FFT变换	fft biàn huàn
+负链RNA	fù liàn rna
+GDP增速	gdp zēng sù
+GDP增长	gdp zēng zhǎng
+Git提交	git tí jiāo
+GJ-11	gj yī yī
+攻击-11	gōng jī yī yī
+GPA分数	gpa fēn shù
+GPS导航	gps dǎo háng
+GPS定位	gps dìng wèi
+GPT-5	gpt wǔ
+GPU加速	gpu jiā sù
+GPU性能	gpu xìng néng
+GRE考试	gre kǎo shì
+H.266	h èr liù liù
+H.264	h èr liù sì
+H.265	h èr liù wǔ
+HDMI线	hdmi xiàn
+HJ-12	hj yī èr
+HJ-10	hj yī líng
+hold住	hold zhù
+Home键	home jiàn
+红Buff	hóng buff
+红箭-12	hóng jiàn yī èr
+红箭-10	hóng jiàn yī líng
+红旗-22	hóng qí èr èr
+红旗-29	hóng qí èr jiǔ
+红旗-20	hóng qí èr líng
+红旗-19	hóng qí yī jiǔ
+红旗-16	hóng qí yī liù
+HQ-22	hq èr èr
+HQ-29	hq èr jiǔ
+HQ-20	hq èr líng
+HQ-19	hq yī jiǔ
+HQ-16	hq yī liù
+会报303	huì bào sān líng sān
+会报404	huì bào sì líng sì
+会报500	huì bào wǔ líng líng
+会报503	huì bào wǔ líng sān
+ICP备案	icp bèi àn
+IDE环境	ide huán jìng
+IE浏览器	ie liú lǎn qì
+iOS版本	ios bǎn běn
+iOS开发	ios kāi fā
+IPO上市	ipo shàng shì
+J-8II	j bā ii
+J-20A	j èr líng a
+J-20S	j èr líng s
+J-35A	j sān wǔ a
+J-10B	j yī líng b
+J-10C	j yī líng c
+J-16D	j yī liù d
+J-15B	j yī wǔ b
+J-11B	j yī yī b
+JH-7A	jh qī a
+歼-8II	jiān bā ii
+歼-20A	jiān èr líng a
+歼-20S	jiān èr líng s
+歼轰-7A	jiān hōng qī a
+歼-35A	jiān sān wǔ a
+剪vlog	jiǎn vlog
+歼-10B	jiān yī líng b
+歼-10C	jiān yī líng c
+歼-16D	jiān yī liù d
+歼-15B	jiān yī wǔ b
+歼-11B	jiān yī yī b
+捷豹XEL	jié bào xel
+捷豹XFL	jié bào xfl
+就知道BB	jiù zhī dào bb
+JK触发器	jk chù fā qì
+JL-10	jl yī líng
+KPI指标	kpi zhǐ biāo
+KTV包间	ktv bāo jiān
+KTV包厢	ktv bāo xiāng
+L型文件夹	l xíng wén jiàn jiā
+蓝Buff	lán buff
+老Baby	lǎo baby
+LCD屏幕	lcd píng mù
+乐道L90	lè dào l jiǔ líng
+乐道L60	lè dào l liù líng
+立Flag	lì flag
+Lite版	lite bǎn
+69式坦克	liù jiǔ shì tǎn kè
+浏览器UA	liú lǎn qì ua
+Mac版本	mac bǎn běn
+MAC地址	mac dì zhǐ
+MBA项目	mba xiàng mù
+没人BB了	méi rén bb le
+没有bug	méi yǒu bug
+MP3音乐	mp sān yīn yuè
+MP4视频	mp sì shì pín
+MRI检查	mri jiǎn chá
+NBA篮球	nba lán qiú
+NBG98	nbg jiǔ bā
+NBG99	nbg jiǔ jiǔ
+NBG95	nbg jiǔ wǔ
+NFC功能	nfc gōng néng
+NFC支付	nfc zhī fù
+NIO蔚来	nio wèi lái
+OBD接口	obd jiē kǒu
+OKR目标	okr mù biāo
+OLED屏	oled píng
+OTA升级	ota shēng jí
+拍vlog	pāi vlog
+Papi酱	papi jiàng
+PCR实验	pcr shí yàn
+PDF文档	pdf wén dàng
+PDF文件	pdf wén jiàn
+PhD论文	phd lùn wén
+霹雳-10	pī lì yī líng
+霹雳-15	pī lì yī wǔ
+PL-10	pl yī líng
+PL-15	pl yī wǔ
+POS支付	pos zhī fù
+PPR球阀	ppr qiú fá
+PPT演示	ppt yǎn shì
+Pro版本	pro bǎn běn
+79式坦克	qī jiǔ shì tǎn kè
+7-Zip	qī zip
+7-Zip	qī zip
+秦L DM	qín l dm
+QQ表情包	qq biǎo qíng bāo
+QQ大会员	qq dà huì yuán
+QQ输入法	qq shū rù fǎ
+QR码支付	qr mǎ zhī fù
+Qwen3	qwen sān
+RAM容量	ram róng liàng
+人均GDP	rén jūn gdp
+RNA病毒	rna bìng dú
+RNA分析	rna fēn xī
+RNA提取	rna tí qǔ
+ROM空间	rom kōng jiān
+SEM图像	sem tú xiàng
+瞬间get	shùn jiān get
+4K分辨率	sì k fēn biàn lǜ
+4K显示器	sì k xiǎn shì qì
+SMT贴片	smt tiē piàn
+SQL语句	sql yǔ jù
+SSD硬盘	ssd yìng pán
+SSH公钥	ssh gōng yào
+SSH私钥	ssh sī yào
+SUV车身	suv chē shēn
+SUV车型	suv chē xíng
+SVN仓库	svn cāng kù
+T淋巴细胞	t lín bā xì bāo
+统信UOS	tǒng xìn uos
+UC浏览器	uc liú lǎn qì
+UC震惊部	uc zhèn jīng bù
+UOM平台	uom píng tái
+URL链接	url liàn jiē
+USB-A	usb a
+USB-B	usb b
+USB-C	usb c
+USB接口	usb jiē kǒu
+USD汇率	usd huì lǜ
+USIM卡	usim kǎ
+UTM投影	utm tóu yǐng
+UU加速器	uu jiā sù qì
+V字仇杀队	v zì chóu shā duì
+Veo 3	veo sān
+VGA接口	vga jiē kǒu
+VIP会员	vip huì yuán
+VIP中P	vip zhōng p
+VPN连接	vpn lián jiē
+Web版本	web bǎn běn
+Web开发	web kāi fā
+Web网站	web wǎng zhàn
+蔚来EC8	wèi lái ec bā
+蔚来EC6	wèi lái ec liù
+蔚来EC7	wèi lái ec qī
+蔚来EP9	wèi lái ep jiǔ
+蔚来ES8	wèi lái es bā
+蔚来ES6	wèi lái es liù
+蔚来ES7	wèi lái es qī
+蔚来ET9	wèi lái et jiǔ
+蔚来ET7	wèi lái et qī
+蔚来ET5	wèi lái et wǔ
+维生素E乳	wéi shēng sù e rǔ
+Win版本	win bǎn běn
+59式坦克	wǔ jiǔ shì tǎn kè
+武直-19	wǔ zhí yī jiǔ
+武直-10	wǔ zhí yī líng
+X·德雷克	x dé léi kè
+X.Org	x org
+小Baby	xiǎo baby
+小case	xiǎo case
+小米SU7	xiǎo mǐ su qī
+小米YU7	xiǎo mǐ yu qī
+修复bug	xiū fù bug
+XML格式	xml gé shì
+XRD测试	xrd cè shì
+1080p	yī líng bā líng p
+15式轻坦	yī wǔ shì qīng tǎn
+鹰击-83	yīng jī bā sān
+鹰击-21	yīng jī èr yī
+鹰击-18	yīng jī yī bā
+鹰击-12	yīng jī yī èr
+影子API	yǐng zi api
+YJ-83	yj bā sān
+YJ-21	yj èr yī
+YJ-18	yj yī bā
+YJ-12	yj yī èr
+运油-20	yùn yóu èr líng
+YY-20	yy èr líng
+智己LS6	zhì jǐ ls liù
+智己LS7	zhì jǐ ls qī
+智能ABC	zhì néng abc
+ABS防抱死	abs fáng bào sǐ
+ADAS系统	adas xì tǒng
+AI人工智能	ai rén gōng zhì néng
+apsc画幅	apsc huà fú
+AR增强现实	ar zēng qiáng xiàn shí
+ASCII码	ascii mǎ
+Audi奥迪	audi ào dí
+保时捷911	bǎo shí jié jiǔ yī yī
+保时捷718	bǎo shí jié qī yī bā
+Benz奔驰	benz bēn chí
+Beta版本	beta bǎn běn
+BG68Ti	bg liù bā ti
+BIOS设置	bios shè zhì
+BOSS直聘	boss zhí pìn
+BYD比亚迪	byd bǐ yà dí
+CAAC执照	caac zhí zhào
+长剑-100	cháng jiàn yī líng líng
+CJ-100	cj yī líng líng
+CPU散热器	cpu sàn rè qì
+大众Polo	dà zhòng polo
+弹弹play	dàn dàn play
+DDoS攻击	ddos gōng jī
+DF-26D	df èr liù d
+DF-21D	df èr yī d
+叠buff呢	dié buff ne
+DJI无人机	dji wú rén jī
+东风-26D	dōng fēng èr liù d
+东风-21D	dōng fēng èr yī d
+东风-31A	dōng fēng sān yī a
+ECG心电图	ecg xīn diàn tú
+Echo音箱	echo yīn xiāng
+Eject键	eject jiàn
+ENSO循环	enso xún huán
+Enter键	enter jiàn
+丰田AE86	fēng tián ae bā liù
+FPV无人机	fpv wú rén jī
+GPT-4o	gpt sì o
+关底BOSS	guān dǐ boss
+海红旗-9C	hǎi hóng qí jiǔ c
+HDMI接口	hdmi jiē kǒu
+盒马mini	hé mǎ mini
+HHQ-9C	hhq jiǔ c
+红旗-16C	hóng qí yī liù c
+HQ-16C	hq yī liù c
+HTML代码	html dài mǎ
+HTTP请求	http qǐng qiú
+IoT物联网	iot wù lián wǎng
+iPad平板	ipad píng bǎn
+J.K.罗琳	j k luó lín
+Java程序	java chéng xù
+Java开发	java kāi fā
+JPEG图片	jpeg tú piàn
+JSON数据	json shù jù
+开party	kāi party
+KJ-200	kj èr líng líng
+KJ-500	kj wǔ líng líng
+空警-200	kōng jǐng èr líng líng
+空警-500	kōng jǐng wǔ líng líng
+L8 Max	l bā max
+L8 Pro	l bā pro
+L9 Max	l jiǔ max
+L9 Pro	l jiǔ pro
+L6 Max	l liù max
+L6 Pro	l liù pro
+L7 Max	l qī max
+L7 Pro	l qī pro
+雷克萨斯ES	léi kè sà sī es
+雷克萨斯LC	léi kè sà sī lc
+雷克萨斯LM	léi kè sà sī lm
+雷克萨斯LS	léi kè sà sī ls
+雷克萨斯LX	léi kè sà sī lx
+雷克萨斯NX	léi kè sà sī nx
+雷克萨斯RX	léi kè sà sī rx
+理想MEGA	lǐ xiǎng mega
+Lite版本	lite bǎn běn
+LPDDR6	lpddr liù
+LPDDR5	lpddr wǔ
+macOS版	macos bǎn
+macOS端	macos duān
+蒙奇·D·龙	méng qí d lóng
+MOOC课程	mooc kè chéng
+MP3播放器	mp sān bō fàng qì
+NaCl浓度	nacl nóng dù
+NaCl溶液	nacl róng yè
+OLED电视	oled diàn shì
+OLED面板	oled miàn bǎn
+OTP验证码	otp yàn zhèng mǎ
+PDD拼多多	pdd pīn duō duō
+PDF阅读器	pdf yuè dú qì
+PDF转换器	pdf zhuǎn huàn qì
+PG One	pg one
+PHEV车型	phev chē xíng
+POS机刷卡	pos jī shuā kǎ
+PPT幻灯片	ppt huàn dēng piàn
+PVC止回阀	pvc zhǐ huí fá
+QQ安全中心	qq ān quán zhōng xīn
+QQ超级会员	qq chāo jí huì yuán
+QQ同步助手	qq tóng bù zhù shǒu
+QQ消息提醒	qq xiāo xi tí xǐng
+QQ游戏大厅	qq yóu xì dà tīng
+RIME方案	rime fāng àn
+RNA聚合酶	rna jù hé méi
+SDK工具包	sdk gōng jù bāo
+Shift键	shift jiàn
+水溶C100	shuǐ róng c yī líng líng
+Space键	space jiàn
+SQL数据库	sql shù jù kù
+Steam云	steam yún
+TB-001	tb líng líng yī
+藤子不二雄A	téng zi bú èr xióng a
+Type-A	type a
+Type-B	type b
+Type-C	type c
+UEFI启动	uefi qǐ dòng
+UPVC蝶阀	upvc dié fá
+USB充电器	usb chōng diàn qì
+vlog剪辑	vlog jiǎn jí
+vlog制作	vlog zhì zuò
+VR虚拟现实	vr xū nǐ xiàn shí
+Web3.0	web sān líng
+蔚来ET5T	wèi lái et wǔ t
+WiFi伴侣	wifi bàn lǚ
+WiFi密码	wifi mì mǎ
+WiFi信号	wifi xìn hào
+沃尔沃S90	wò ěr wò s jiǔ líng
+沃尔沃S60	wò ěr wò s liù líng
+沃尔沃V90	wò ěr wò v jiǔ líng
+沃尔沃V60	wò ěr wò v liù líng
+Word文档	word wén dàng
+ZTD-05	ztd líng wǔ
+ZTQ-15	ztq yī wǔ
+ZTZ-88	ztz bā bā
+ZTZ-80	ztz bā líng
+ZTZ-85	ztz bā wǔ
+ZTZ-99	ztz jiǔ jiǔ
+ZTZ-96	ztz jiǔ liù
+ZTZ-69	ztz liù jiǔ
+ZTZ-79	ztz qī jiǔ
+ZTZ-59	ztz wǔ jiǔ
+尊界S800	zūn jiè s bā líng líng
+ANSYS软件	ansys ruǎn jiàn
+Baidu地图	baidu dì tú
+BrAnT.B	brant b
+不错！nice	bú cuò nice
+BZK-005	bzk líng líng wǔ
+CFO财务总监	cfo cái wù zǒng jiān
+Chrome系	chrome xì
+Cinity厅	cinity tīng
+COO运营总监	coo yùn yíng zǒng jiān
+CTO技术总监	cto jì shù zǒng jiān
+Delete键	delete jiàn
+DF-31AG	df sān yī ag
+东风-31AG	dōng fēng sān yī ag
+东风-31BJ	dōng fēng sān yī bj
+Email邮箱	email yóu xiāng
+Emby公益服	emby gōng yì fú
+Excel表格	excel biǎo gé
+非常 nice	fēi cháng nice
+FIFA世界杯	fifa shì jiè bēi
+哥尔·D·罗杰	gē ěr d luó jié
+Git版本控制	git bǎn běn kòng zhì
+GLM-5.2	glm wǔ èr
+GLM-5.3	glm wǔ sān
+GoPro相机	gopro xiàng jī
+GPT-5.4	gpt wǔ sì
+GPT-5.5	gpt wǔ wǔ
+GPT-5.1	gpt wǔ yī
+HTTPS安全	https ān quán
+火箭少女101	huǒ jiàn shào nǚ yī líng yī
+IELTS口语	ielts kǒu yǔ
+江南Style	jiāng nán style
+就很 nice	jiù hěn nice
+凯迪拉克CT6	kǎi dí lā kè ct liù
+凯迪拉克CT4	kǎi dí lā kè ct sì
+凯迪拉克CT5	kǎi dí lā kè ct wǔ
+凯迪拉克XT6	kǎi dí lā kè xt liù
+凯迪拉克XT4	kǎi dí lā kè xt sì
+凯迪拉克XT5	kǎi dí lā kè xt wǔ
+kimi-k3	kimi k sān
+KJ-2000	kj èr líng líng líng
+空警-2000	kōng jǐng èr líng líng líng
+Linux系统	linux xì tǒng
+62式轻型坦克	liù èr shì qīng xíng tǎn kè
+63式两栖坦克	liù sān shì liǎng qī tǎn kè
+macOS版本	macos bǎn běn
+macOS系统	macos xì tǒng
+蒙奇·D·卡普	méng qí d kǎ pǔ
+蒙奇·D·路飞	méng qí d lù fēi
+Model S	model s
+Model 3	model sān
+Model X	model x
+Model Y	model y
+Nabla算子	nabla suàn zǐ
+NASA宇航局	nasa yǔ háng jú
+Nexus系列	nexus xì liè
+Option键	option jiàn
+PHEV插混车	phev chā hùn chē
+Pixel手机	pixel shǒu jī
+秦L DM-i	qín l dm i
+Redmi手机	redmi shǒu jī
+Return键	return jiàn
+RIME输入法	rime shū rù fǎ
+Server酱	server jiàng
+SOS紧急求助	sos jǐn jí qiú zhù
+随身Wi-Fi	suí shēn wi fi
+Switch版	switch bǎn
+腾势D9 DM	téng shì d jiǔ dm
+腾势D9 EV	téng shì d jiǔ ev
+腾势N9 DM	téng shì n jiǔ dm
+Tesla汽车	tesla qì chē
+TOEFL成绩	toefl chéng jì
+Type-88	type bā bā
+Type-80	type bā líng
+Type-99	type jiǔ jiǔ
+Type-96	type jiǔ liù
+Type-69	type liù jiǔ
+Type-79	type qī jiǔ
+Type-59	type wǔ jiǔ
+UOS V20	uos v èr líng
+UOS V25	uos v èr wǔ
+UWB数字钥匙	uwb shù zì yào shi
+Wi-Fi密码	wi fi mì mǎ
+沃尔沃XC90	wò ěr wò xc jiǔ líng
+沃尔沃XC60	wò ěr wò xc liù líng
+沃尔沃XC40	wò ěr wò xc sì líng
+修复若干bug	xiū fù ruò gān bug
+XPeng小鹏	xpeng xiǎo péng
+仰望U7 EV	yǎng wàng u qī ev
+15式轻型坦克	yī wǔ shì qīng xíng tǎn kè
+智能ABC双拼	zhì néng abc shuāng pīn
+ZTS-63A	zts liù sān a
+ZTZ-99A	ztz jiǔ jiǔ a
+ZTZ-99B	ztz jiǔ jiǔ b
+ZTZ-96A	ztz jiǔ liù a
+ZTZ-96B	ztz jiǔ liù b
+Android版	android bǎn
+Android端	android duān
+奥迪e-tron	ào dí e tron
+保时捷Macan	bǎo shí jié macan
+CEO首席执行官	ceo shǒu xí zhí xíng guān
+cnb.cool	cnb cool
+Command键	command jiàn
+COMSOL模型	comsol mó xíng
+Control键	control jiàn
+Docker镜像	docker jìng xiàng
+Eul的神圣法杖	eul de shén shèng fǎ zhàng
+fail2ban	fail èr ban
+FTC-2000	ftc èr líng líng líng
+Galaxy系列	galaxy xì liè
+Github仓库	github cāng kù
+Google搜索	google sōu suǒ
+Grok 4.0	grok sì líng
+ip2world	ip èr world
+iPad Air	ipad air
+iPad Pro	ipad pro
+iPhone 8	iphone bā
+iPhone 6	iphone liù
+iPhone 7	iphone qī
+iPhone手机	iphone shǒu jī
+iPhone 4	iphone sì
+iPhone 5	iphone wǔ
+iPhone X	iphone x
+捷豹E-PACE	jié bào e pace
+捷豹F-PACE	jié bào f pace
+捷豹I-PACE	jié bào i pace
+L8 Ultra	l bā ultra
+L9 Ultra	l jiǔ ultra
+L7 Ultra	l qī ultra
+理想L8 Max	lǐ xiǎng l bā max
+理想L8 Pro	lǐ xiǎng l bā pro
+理想L9 Max	lǐ xiǎng l jiǔ max
+理想L9 Pro	lǐ xiǎng l jiǔ pro
+理想L6 Max	lǐ xiǎng l liù max
+理想L6 Pro	lǐ xiǎng l liù pro
+理想L7 Max	lǐ xiǎng l qī max
+理想L7 Pro	lǐ xiǎng l qī pro
+LiAuto理想	liauto lǐ xiǎng
+05式两栖突击车	líng wǔ shì liǎng qī tū jī chē
+63A式两栖坦克	liù sān a shì liǎng qī tǎn kè
+马歇尔·D·蒂奇	mǎ xiē ěr d dì qí
+MBT-2000	mbt èr líng líng líng
+MBT-3000	mbt sān líng líng líng
+Model YL	model yl
+MPEG-4音频	mpeg sì yīn pín
+N_m3u8DL	n m sān u bā dl
+NoSQL数据库	nosql shù jù kù
+Python脚本	python jiǎo běn
+Python语言	python yǔ yán
+秦PLUS DM	qín plus dm
+秦PLUS EV	qín plus ev
+Qwen3-VL	qwen sān vl
+SkyReels	skyreels
+Switch版本	switch bǎn běn
+Taobao购物	taobao gòu wù
+藤子·F·不二雄	téng zi f bú èr xióng
+Tesla特斯拉	tesla tè sī lā
+Type-C接口	type c jiē kǒu
+Type-99A	type jiǔ jiǔ a
+Type-99B	type jiǔ jiǔ b
+WeChat支付	wechat zhī fù
+Windows版	windows bǎn
+Windows端	windows duān
+智能ABC输入法	zhì néng abc shū rù fǎ
+周刊少年Jump	zhōu kān shào nián jump
+all in AI	all in ai
+Android版本	android bǎn běn
+Android系统	android xì tǒng
+Android应用	android yìng yòng
+保时捷Taycan	bǎo shí jié taycan
+波特卡斯·D·艾斯	bō tè kǎ sī d ài sī
+CapsLock键	capslock jiàn
+Chromium系	chromium xì
+city不city	city bù city
+iPad mini	ipad mini
+iPhone 6S	iphone liù s
+iPhone 3G	iphone sān g
+iPhone SE	iphone se
+iPhone 4S	iphone sì s
+iPhone 5C	iphone wǔ c
+iPhone 5S	iphone wǔ s
+iPhone XR	iphone xr
+iPhone XS	iphone xs
+iPhone 12	iphone yī èr
+iPhone 16	iphone yī liù
+iPhone 17	iphone yī qī
+iPhone 17	iphone yī qī
+iPhone 13	iphone yī sān
+iPhone 14	iphone yī sì
+iPhone 15	iphone yī wǔ
+iPhone 11	iphone yī yī
+J·R·R·托尔金	j r r tuō ěr jīn
+Kindle阅读器	kindle yuè dú qì
+MacBook电脑	macbook diàn nǎo
+Notepad++	notepad
+Notepad++	notepad
+OnePlus手机	oneplus shǒu jī
+乔治·R·R·马丁	qiáo zhì r r mǎ dīng
+三无Marblue	sān wú marblue
+Surface平板	surface píng bǎn
+Telegram群	telegram qún
+Windows版本	windows bǎn běn
+Windows更新	windows gēng xīn
+Windows11	windows yī yī
+仰望U7 PHEV	yǎng wàng u qī phev
+1Password	yī password
+Yi-Vision	yi vision
+智能ABC双拼方案	zhì néng abc shuāng pīn fāng àn
+800w clips	bā líng líng w clips
+Backspace键	backspace jiàn
+保时捷Cayenne	bǎo shí jié cayenne
+.gitignore	gitignore
+iPhone Air	iphone air
+iPhone 3GS	iphone sān gs
+理想L8 Ultra	lǐ xiǎng l bā ultra
+理想L9 Ultra	lǐ xiǎng l jiǔ ultra
+理想L7 Ultra	lǐ xiǎng l qī ultra
+LY-1舰载激光武器	ly yī jiàn zài jī guāng wǔ qì
+MiniMax-M3	minimax m sān
+Muse Image	muse image
+Muse Spark	muse spark
+秦PLUS DM-i	qín plus dm i
+300w clips	sān líng líng w clips
+特斯拉Model S	tè sī lā model s
+特斯拉Model 3	tè sī lā model sān
+特斯拉Model X	tè sī lā model x
+特斯拉Model Y	tè sī lā model y
+ThinkPad键盘	thinkpad jiàn pán
+USB Type-A	usb type a
+USB Type-B	usb type b
+USB Type-C	usb type c
+500w clips	wǔ líng líng w clips
+小鹏MONA M03	xiǎo péng mona m líng sān
+奥迪e-tron GT	ào dí e tron gt
+保时捷Panamera	bǎo shí jié panamera
+Bluetooth耳机	bluetooth ěr jī
+Bluetooth设备	bluetooth shè bèi
+Gemini Omni	gemini omni
+GPT-5.6 Sol	gpt wǔ liù sol
+GPT-5.5 Pro	gpt wǔ wǔ pro
+混元2.0 Think	hùn yuán èr líng think
+LongCat-2.0	longcat èr líng
+LoongArch架构	loongarch jià gòu
+PizzaHut必胜客	pizzahut bì shèng kè
+Qwen3.7-Max	qwen sān qī max
+特斯拉Model YL	tè sī lā model yl
+ThinkPad笔记本	thinkpad bǐ jì běn
+Windows操作系统	windows cāo zuò xì tǒng
+沃尔沃S90 PHEV	wò ěr wò s jiǔ líng phev
+1000w clips	yī líng líng líng w clips
+Apple MPEG-4	apple mpeg sì
+GPT-5.6 Luna	gpt wǔ liù luna
+GPT-5.4 mini	gpt wǔ sì mini
+JavaScript编程	javascript biān chéng
+Seedance 2.5	seedance èr wǔ
+SenseNova V6	sensenova v liù
+accessibility	accessibility
+GPT-5.6 Terra	gpt wǔ liù terra
+iPhone 8 Plus	iphone bā plus
+iPhone 6 Plus	iphone liù plus
+iPhone 7 Plus	iphone qī plus
+iPhone XS Max	iphone xs max
+iPhone 12 Pro	iphone yī èr pro
+iPhone 16 Pro	iphone yī liù pro
+iPhone 17 Pro	iphone yī qī pro
+iPhone 17 Pro	iphone yī qī pro
+iPhone 13 Pro	iphone yī sān pro
+iPhone 14 Pro	iphone yī sì pro
+iPhone 15 Pro	iphone yī wǔ pro
+iPhone 11 Pro	iphone yī yī pro
+MiMo-V2.5-Pro	mimo v èr wǔ pro
+特拉法尔加·D·瓦铁尔·罗	tè lā fǎ ěr jiā d wǎ tiě ěr luó
+特斯拉Cybertruck	tè sī lā cybertruck
+Claude Fable 5	claude fable wǔ
+Gemini 3.5 Pro	gemini sān wǔ pro
+Gemini 3.1 Pro	gemini sān yī pro
+iPhone 6S Plus	iphone liù s plus
+iPhone 12 Mini	iphone yī èr mini
+iPhone 16 Plus	iphone yī liù plus
+iPhone 13 Mini	iphone yī sān mini
+iPhone 14 Plus	iphone yī sì plus
+iPhone 15 Plus	iphone yī wǔ plus
+Kimi K2.7-Code	kimi k èr qī code
+AMD64（X86_64)架构	amd liù sì x bā liù liù sì jià gòu
+AMD64（X86_64)架构	amd liù sì x bā liù liù sì jià gòu
+Claude Opus 4.8	claude opus sì bā
+Claude Opus 4.5	claude opus sì wǔ
+Claude 4.6 Opus	claude sì liù opus
+Claude Sonnet 4	claude sonnet sì
+Claude Sonnet 5	claude sonnet wǔ
+DeepSeek-V4-Pro	deepseek v sì pro
+GPT-5.5 Instant	gpt wǔ wǔ instant
+Mistral Large 2	mistral large èr
+Baichuan-M3-Plus	baichuan m sān plus
+Claude Haiku 4.5	claude haiku sì wǔ
+Gemini 3.6 Flash	gemini sān liù flash
+Gemini 3.5 Flash	gemini sān wǔ flash
+GPT-5.5 Thinking	gpt wǔ wǔ thinking
+MAI-Code-1-Flash	mai code yī flash
+Seedream 5.0 Pro	seedream wǔ líng pro
+Claude 4.6 Sonnet	claude sì liù sonnet
+DeepSeek-V4-Flash	deepseek v sì flash
+iPhone 12 Pro Max	iphone yī èr pro max
+iPhone 16 Pro Max	iphone yī liù pro max
+iPhone 17 Pro Max	iphone yī qī pro max
+iPhone 17 Pro Max	iphone yī qī pro max
+iPhone 13 Pro Max	iphone yī sān pro max
+iPhone 14 Pro Max	iphone yī sì pro max
+iPhone 15 Pro Max	iphone yī wǔ pro max
+iPhone 11 Pro Max	iphone yī yī pro max

@@ -9,7 +9,7 @@
 单列汉字\t数字>单列汉字\t拼音\t数字
 单列汉字\t旧编码\t数字>单列汉字\t拼音\t数字
 
-新增：特殊文件集合 + 词首强制读音规则
+新增：特殊文件集合 + 词首强制读音规则 + 混合词拼音处理
 """
 
 import os, re
@@ -18,11 +18,9 @@ from pypinyin import pinyin, Style, load_phrases_dict, load_single_dict
 
 
 # 你的词典用什么分隔辅助码？
-
 AUX_SEP_REGEX = r'[;\[]'           # 定义“拼音后缀”分隔符；默认匹配 `;` 与 `[`
 
 # 特殊文件与词首强制读音规则
-
 SPECIAL_FILE_NAMES = {
     "renming.dict.yaml",
     "mingren.dict.yaml",
@@ -75,7 +73,6 @@ SPECIAL_RULES = {
 }
 
 # 自定义拼音加载
-
 def load_custom_pinyin_from_directory(directory: str):
     s_map, p_map = {}, {}
     if not os.path.isdir(directory):
@@ -102,9 +99,7 @@ def load_custom_pinyin_from_directory(directory: str):
         print(f"✓ 单字拼音加载 {len(s_map)} 条")
 
 
-
 # 表头和类型识别
-
 yaml_heads = ('---', 'name:', 'version:', 'sort:', '...')
 
 def is_userdb_head(line: str) -> bool:
@@ -131,16 +126,113 @@ def is_han_char(ch: str) -> bool:
     )
 
 
+# =========================
+# 混合词拼音处理
+# =========================
+
+DIGIT_PINYIN = {
+    "0": "líng",
+    "1": "yī",
+    "2": "èr",
+    "3": "sān",
+    "4": "sì",
+    "5": "wǔ",
+    "6": "liù",
+    "7": "qī",
+    "8": "bā",
+    "9": "jiǔ",
+}
+
+GREEK_PINYIN = {
+    "α": ["ā", "ěr", "fǎ"],
+    "β": ["bèi", "tǎ"],
+    "γ": ["jiā", "mǎ"],
+    "θ": ["xī", "tǎ"],
+}
+
+def parse_number(num):
+    return [
+        DIGIT_PINYIN.get(x, x)
+        for x in num
+    ]
+
+
+def mixed_word_pinyin(word):
+    result = []
+    han_buf = ""
+
+    def flush_han():
+        nonlocal han_buf
+        if han_buf:
+            result.extend(
+                x[0]
+                for x in pinyin(
+                    han_buf,
+                    style=Style.TONE,
+                    heteronym=False
+                )
+            )
+            han_buf = ""
+
+    i = 0
+    while i < len(word):
+        ch = word[i]
+
+        # 汉字连续块
+        if is_han_char(ch):
+            han_buf += ch
+            i += 1
+            continue
+
+        flush_han()
+
+        # 英文字母连续块
+        if ch.isascii() and ch.isalpha():
+            j = i
+            while (
+                j < len(word)
+                and word[j].isascii()
+                and word[j].isalpha()
+            ):
+                j += 1
+            result.append(word[i:j].lower())
+            i = j
+            continue
+
+        # 数字连续块
+        if ch.isdigit():
+            j = i
+            while j < len(word) and word[j].isdigit():
+                j += 1
+            result.extend(
+                parse_number(word[i:j])
+            )
+            i = j
+            continue
+
+        # 希腊字母
+        if ch in GREEK_PINYIN:
+            result.extend(
+                GREEK_PINYIN[ch]
+            )
+            i += 1
+            continue
+
+        i += 1
+
+    flush_han()
+    return result
+
+
 def han_pinyin(word: str):
     """
-    只为汉字生成拼音，同时返回汉字在原词中的字符位置。
-    例如：西妥昔单抗β -> ([0,1,2,3,4], ['xī','tuǒ','xī','dān','kàng'])
+    为混合词生成拼音列表，同时返回每个拼音段对应的索引列表（与拼音列表等长）。
+    注意：混合词中英文字母块、希腊字母等可能产生多个拼音段，
+    因此返回的 positions 与 char_py 长度相同，但可能不等于 len(word)。
     """
-    positions = [i for i, ch in enumerate(word) if is_han_char(ch)]
-    han_word = ''.join(word[i] for i in positions)
-    char_py = [p[0] for p in pinyin(han_word, style=Style.TONE, heteronym=False)]
+    char_py = mixed_word_pinyin(word)
+    positions = list(range(len(char_py)))
     return positions, char_py
-
 
 
 # 按行处理
@@ -165,7 +257,10 @@ def normal_line(cols: list[str]) -> str:
     for i, py in enumerate(char_py):
         # 旧编码若与原词字符数一致，则按汉字在原词中的位置取辅助码，
         # 从而跳过 β / 英文 / 数字 / 符号对应的编码段。
-        seg_idx = han_positions[i] if len(segs) == len(word) else i
+        if len(segs) == len(word) and i < len(han_positions):
+            seg_idx = han_positions[i]
+        else:
+            seg_idx = i
 
         if seg_idx < len(segs):
             root = re.split(AUX_SEP_REGEX, segs[seg_idx])[0]
@@ -173,6 +268,7 @@ def normal_line(cols: list[str]) -> str:
         else:
             suffix = ''
         new_segs.append(py + suffix)
+
     cols[1] = ' '.join(new_segs)
     return '\t'.join(cols)
 
@@ -189,9 +285,12 @@ def userdb_line(cols: list[str]) -> str:
     new_segs = []
 
     for i, base_py in enumerate(char_py):
-        seg_idx = han_positions[i] if len(segs) == len(word) else i
-        seg = segs[seg_idx] if seg_idx < len(segs) else ''
+        if len(segs) == len(word) and i < len(han_positions):
+            seg_idx = han_positions[i]
+        else:
+            seg_idx = i
 
+        seg = segs[seg_idx] if seg_idx < len(segs) else ''
         root = re.split(AUX_SEP_REGEX, seg)[0] if seg else ''
         suffix = seg[len(root):] if seg else ''
         new_segs.append(base_py + suffix)
@@ -234,7 +333,6 @@ def apply_special_rules(line: str, is_userdb: bool) -> str:
     py_segs[0] = new_py + suffix
     cols[py_idx] = ' '.join(py_segs)
     return '\t'.join(cols)
-
 
 
 # 单文件处理
@@ -282,7 +380,6 @@ def process_single_file(src: str, dst: str):
             d.write(newline + '\n')
 
 
-
 # 目录 / 单文件 处理 + tqdm
 
 def process_files(path_in: str, path_out: str):
@@ -318,9 +415,7 @@ def process_files(path_in: str, path_out: str):
         tqdm.write(f"✓ 完成 {os.path.basename(src)} → {os.path.relpath(dst, path_out)}")
 
 
-
 # 固定路径调用
-
 if __name__ == "__main__":
     input_dir  = "/home/amz/Documents/输入法方案/原始词库"
     output_dir = "/home/amz/Documents/输入法方案/万象拼音/dicts"
