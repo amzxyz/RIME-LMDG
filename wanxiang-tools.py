@@ -59,7 +59,7 @@ from PySide6.QtWidgets import (
 )
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.2.2beta"
+TOOL_VERSION = "v3.3.0"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -814,7 +814,7 @@ class Worker(QThread):
 @dataclass
 class UpdateConfig:
     scope: int  # 0=全量, 1=方案  2=仅词库, 3=仅模型
-    scheme_type: str  # 'base' or 'pro'
+    scheme_type: str  # 'base' / 'pro' / 'lite' / 'pure'
     aux_scheme: str
     rime_dir: str
     github_token: str
@@ -1265,12 +1265,21 @@ class UpdateWorker(QThread):
     def _check_url(self, repo_cnb, repo_gh, pattern, specific_tag=None, task_type=None):
         # ==================== [核心修改：双通道硬编码直链 (同时支持 CNB 与 GitHub)] ====================
         if task_type in ['词库组件', '预览方案']:
-            if task_type == '预览方案':
-                # 方案包：rime-wanxiang-xxx-fuzhu.zip 或 rime-wanxiang-base.zip
-                real_fn = f"rime-wanxiang-{self.cfg.aux_scheme}-fuzhu.zip" if self.cfg.scheme_type == 'pro' else "rime-wanxiang-base.zip"
+            # 不同方案入口必须映射到各自独立的方案包 / 词库包。
+            if self.cfg.scheme_type == 'pro':
+                preview_file = f"rime-wanxiang-{self.cfg.aux_scheme}-fuzhu.zip"
+                dict_file = f"pro-{self.cfg.aux_scheme}-fuzhu-dicts.zip"
+            elif self.cfg.scheme_type == 'lite':
+                preview_file = "rime-wanxiang-lite.zip"
+                dict_file = "lite-dicts.zip"
+            elif self.cfg.scheme_type == 'pure':
+                preview_file = "rime-wanxiang-pure.zip"
+                dict_file = "pure-dicts.zip"
             else:
-                # 词库包：pro-xxx-fuzhu-dicts.zip 或 base-dicts.zip
-                real_fn = f"pro-{self.cfg.aux_scheme}-fuzhu-dicts.zip" if self.cfg.scheme_type == 'pro' else "base-dicts.zip"
+                preview_file = "rime-wanxiang-base.zip"
+                dict_file = "base-dicts.zip"
+
+            real_fn = preview_file if task_type == '预览方案' else dict_file
             
             if self.cfg.use_mirror:
                 # CNB 源直链
@@ -1546,20 +1555,29 @@ class UpdateWorker(QThread):
                 if self.cfg.custom_url:
                      tasks.append(('CustomZip', None, None, 'custom_mode', self.cfg.rime_dir, None))
                 else:
-                    scheme_key = self.cfg.aux_scheme if self.cfg.scheme_type == 'pro' else 'base'
+                    if self.cfg.scheme_type == 'pro':
+                        scheme_pat = f"*{self.cfg.aux_scheme}*fuzhu.zip"
+                        dict_pat = f"*{self.cfg.aux_scheme}*dicts.zip"
+                    elif self.cfg.scheme_type == 'lite':
+                        scheme_pat = "*lite.zip"
+                        dict_pat = "*lite*dicts.zip"
+                    elif self.cfg.scheme_type == 'pure':
+                        scheme_pat = "*pure.zip"
+                        dict_pat = "*pure*dicts.zip"
+                    else:
+                        scheme_pat = "*base.zip"
+                        dict_pat = "*base*dicts.zip"
+
                     # 方案组件
-                    if self.cfg.scope in [0, 1]: 
-                        pat = f"*{scheme_key}*fuzhu.zip" if self.cfg.scheme_type == 'pro' else "*base.zip"
-                        tasks.append(('方案组件', REPO, CNB_REPO, pat, self.cfg.rime_dir, None))
+                    if self.cfg.scope in [0, 1]:
+                        tasks.append(('方案组件', REPO, CNB_REPO, scheme_pat, self.cfg.rime_dir, None))
                     if self.cfg.scope == 4:
-                        pat = f"*{scheme_key}*fuzhu.zip" if self.cfg.scheme_type == 'pro' else "*base.zip"
                         # 核心：CNB 去 v1.0.0 找，GitHub 去 dict-nightly 找
                         preview_tag = "v1.0.0" if self.cfg.use_mirror else DICT_TAG
-                        tasks.append(('预览方案', REPO, CNB_REPO, pat, self.cfg.rime_dir, preview_tag))
+                        tasks.append(('预览方案', REPO, CNB_REPO, scheme_pat, self.cfg.rime_dir, preview_tag))
                     # 词库组件
                     if self.cfg.scope in [0, 2]:
-                        pat = f"*{scheme_key}*dicts.zip" if self.cfg.scheme_type == 'pro' else "*base*dicts.zip"
-                        tasks.append(('词库组件', REPO, CNB_REPO, pat, self.cfg.rime_dir, DICT_TAG))
+                        tasks.append(('词库组件', REPO, CNB_REPO, dict_pat, self.cfg.rime_dir, DICT_TAG))
                     # 语法模型
                     if self.cfg.scope in [0, 3]:
                         tasks.append(('语法模型', MODEL_REPO, CNB_REPO, MODEL_FILE, self.cfg.rime_dir, MODEL_TAG))
@@ -1591,9 +1609,21 @@ class UpdateWorker(QThread):
                         local_ver = self.cfg.current_versions.get('方案组件', "0.0.0")
                         if local_ver == "0.0.0": local_ver = "未记录"
                         
-                        self.log(f">>> {task_type}: 本地[{local_ver}] 在线[{tag}]")
-                        
-                        if not self.cfg.force_update and tag == local_ver:
+                        local_scheme_type = str(
+                            self.cfg.current_versions.get('scheme_type', '') or ''
+                        ).strip().lower()
+                        self.log(
+                            f">>> {task_type}: 本地[{local_ver}] 在线[{tag}] "
+                            f"方案[{local_scheme_type or '未记录'} → {self.cfg.scheme_type}]"
+                        )
+
+                        # 版本相同且方案类型也相同时才跳过。
+                        # 否则从 Base/Pro 切换到 Lite/Pure 会因共用 version.txt 被误判为无需下载。
+                        if (
+                            not self.cfg.force_update
+                            and tag == local_ver
+                            and local_scheme_type == self.cfg.scheme_type
+                        ):
                             should_skip = True
 
                     elif task_type == 'CustomZip':
@@ -1738,6 +1768,8 @@ class UpdateWorker(QThread):
 
                         if not self.cfg.custom_url:
                             if t_type == '方案组件':
+                                # 同时记录实际安装的版本类型，避免不同入口共用版本号时误跳过。
+                                self.version_sig.emit("scheme_type", self.cfg.scheme_type)
                                 if task['ver'] != "latest":
                                     self.version_sig.emit("方案组件", task['ver'])
                                 else:
@@ -2399,9 +2431,8 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         self.custom_url_input = QLineEdit()
         self.custom_url_input.setPlaceholderText("请输入 ZIP 下载直链地址")
         
-        # === 2 & 3. 范围与版本 (合并显示) ===
-        row_mid = QHBoxLayout()
-        
+        # === 2. 更新范围 ===
+        # 范围与版本改为上下两行，给 Base / Pro / Lite / Pure 留出足够空间。
         # Scope (范围)
         self.gb_scope = QGroupBox("更新范围")
         hb_scope = QHBoxLayout(self.gb_scope)
@@ -2429,8 +2460,14 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         self.rb_pro = QRadioButton("Pro")
         self.rb_pro.setChecked(True)
         self.rb_base = QRadioButton("Base")
+        self.rb_lite = QRadioButton("Lite")
+        self.rb_pure = QRadioButton("Pure")
+        self.rb_lite.setToolTip("Lite：下载 rime-wanxiang-lite.zip / lite-dicts.zip")
+        self.rb_pure.setToolTip("Pure：下载 rime-wanxiang-pure.zip / pure-dicts.zip")
         self.bg_ver.addButton(self.rb_pro, 0)
         self.bg_ver.addButton(self.rb_base, 1)
+        self.bg_ver.addButton(self.rb_lite, 2)
+        self.bg_ver.addButton(self.rb_pure, 3)
         
         # 【核心修改】新增下拉框用于选择辅助码方案
         self.combo_aux = QComboBox()
@@ -2444,10 +2481,9 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         hb_ver.addWidget(self.rb_pro)
         hb_ver.addWidget(self.combo_aux) # 放在 Pro 按钮旁边
         hb_ver.addWidget(self.rb_base)
+        hb_ver.addWidget(self.rb_lite)
+        hb_ver.addWidget(self.rb_pure)
         hb_ver.addStretch()
-
-        row_mid.addWidget(self.gb_scope, 3) 
-        row_mid.addWidget(self.gb_ver, 3)   
 
         # 联动逻辑
         def on_source_changed(id):
@@ -2549,7 +2585,8 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         l_left.addWidget(gb_source)
         l_left.addWidget(self.custom_url_input)
         self.custom_url_input.hide()
-        l_left.addLayout(row_mid)
+        l_left.addWidget(self.gb_scope)
+        l_left.addWidget(self.gb_ver)
         l_left.addWidget(gb_cfg)
         l_left.addStretch()
         # ==================== 右侧：白名单与安全 ====================
@@ -2723,7 +2760,9 @@ class MainWin(AdvancedSettingsMixin, QWidget):
 
         cfg = UpdateConfig(
             scope=self.bg_scope.checkedId(),
-            scheme_type='base' if self.bg_ver.button(1).isChecked() else 'pro',
+            scheme_type={0: 'pro', 1: 'base', 2: 'lite', 3: 'pure'}.get(
+                self.bg_ver.checkedId(), 'pro'
+            ),
             aux_scheme=aux_key,
             rime_dir=rime_dir,
             github_token=_normalize_github_token(self.upd_token.text()),
