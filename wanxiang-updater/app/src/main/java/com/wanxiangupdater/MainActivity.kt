@@ -556,7 +556,18 @@ fun WanxiangDownloaderApp() {
         )
     }
 
-    var isPro by remember { mutableStateOf(sharedPref.getBoolean("is_pro", true)) }
+    // 方案版本：新版统一使用 scheme_type；首次升级时兼容旧版 is_pro。
+    val initialSchemeType = remember {
+        val saved = sharedPref.getString("scheme_type", null)?.lowercase()
+        if (saved in setOf("pro", "base", "lite", "pure")) {
+            saved!!
+        } else if (sharedPref.getBoolean("is_pro", true)) {
+            "pro"
+        } else {
+            "base"
+        }
+    }
+    var schemeType by remember { mutableStateOf(initialSchemeType) }
     var auxScheme by remember { mutableStateOf(sharedPref.getString("aux_scheme", "zrm") ?: "zrm") }
     var updateChannel by remember { mutableStateOf(sharedPref.getString("update_channel", "Stable") ?: "Stable") }
     var downloadSource by remember {
@@ -1078,17 +1089,37 @@ fun WanxiangDownloaderApp() {
                 }
                 Spacer(modifier = Modifier.height(16.dp))
 
-                val schemeStr = if (isPro) auxScheme else "base"
-                val githubSchemaTag = if (updateChannel == "Stable") latestStableTag else "dict-nightly"
-                val cnbSchemaTag = if (updateChannel == "Stable") latestStableTag else "v1.0.0"
-                val schemaFileName = "rime-wanxiang-$schemeStr${if (isPro) "-fuzhu" else ""}.zip"
-                val dictFileName = "${if (isPro) "pro-$schemeStr-fuzhu" else "base"}-dicts.zip"
+                // 四种方案独立映射；Lite/Pure 不再复用 Base 的资源名。
+                val schemaFileName = when (schemeType) {
+                    "pro" -> "rime-wanxiang-$auxScheme-fuzhu.zip"
+                    "lite" -> "rime-wanxiang-lite.zip"
+                    "pure" -> "rime-wanxiang-pure.zip"
+                    else -> "rime-wanxiang-base.zip"
+                }
+                val dictFileName = when (schemeType) {
+                    "pro" -> "pro-$auxScheme-fuzhu-dicts.zip"
+                    "lite" -> "lite-dicts.zip"
+                    "pure" -> "pure-dicts.zip"
+                    else -> "base-dicts.zip"
+                }
 
-                val githubSchemaUrl = "https://github.com/amzxyz/rime-wanxiang/releases/download/$githubSchemaTag/$schemaFileName"
+                // 下载通道严格分离：
+                // 1) 正式方案永远取最新 Release（不使用词库/预览滚动 tag）；
+                // 2) 预览方案与词库共用滚动发布：GitHub=dict-nightly，CNB=v1.0.0；
+                // 3) 模型维持各自固定 LTS/model 发布。
+                val githubSchemaUrl = if (updateChannel == "Stable") {
+                    "https://github.com/amzxyz/rime-wanxiang/releases/latest/download/$schemaFileName"
+                } else {
+                    "https://github.com/amzxyz/rime-wanxiang/releases/download/dict-nightly/$schemaFileName"
+                }
                 val githubDictUrl = "https://github.com/amzxyz/rime-wanxiang/releases/download/dict-nightly/$dictFileName"
                 val githubModelUrl = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
 
-                val cnbSchemaUrl = "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/$cnbSchemaTag/$schemaFileName"
+                val cnbSchemaUrl = if (updateChannel == "Stable") {
+                    "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/latest/download/$schemaFileName"
+                } else {
+                    "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v1.0.0/$schemaFileName"
+                }
                 val cnbDictUrl = "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v1.0.0/$dictFileName"
                 val cnbModelUrl = "https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/model/wanxiang-lts-zh-hans.gram"
 
@@ -1143,27 +1174,45 @@ fun WanxiangDownloaderApp() {
 
                         Divider(color = MorandiLightGreen, modifier = Modifier.padding(vertical = 8.dp))
                         Text("📦 方案版本", fontWeight = FontWeight.Bold, color = Color.DarkGray)
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            RadioButton(
-                                selected = isPro,
-                                onClick = {
-                                    isPro = true
-                                    sharedPref.edit().putBoolean("is_pro", true).apply()
-                                }
-                            )
-                            Text("Pro版", fontSize = 14.sp)
-                            Spacer(modifier = Modifier.width(16.dp))
-                            RadioButton(
-                                selected = !isPro,
-                                onClick = {
-                                    isPro = false
-                                    sharedPref.edit().putBoolean("is_pro", false).apply()
-                                }
-                            )
-                            Text("Base版", fontSize = 14.sp)
+                        Spacer(modifier = Modifier.height(6.dp))
+                        FlowRow(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.spacedBy(10.dp),
+                            verticalArrangement = Arrangement.spacedBy(6.dp)
+                        ) {
+                            listOf(
+                                "pro" to "Pro",
+                                "base" to "Base",
+                                "lite" to "Lite",
+                                "pure" to "Pure"
+                            ).forEach { (type, label) ->
+                                FilterChip(
+                                    selected = schemeType == type,
+                                    onClick = {
+                                        schemeType = type
+                                        sharedPref.edit()
+                                            .putString("scheme_type", type)
+                                            .remove("is_pro")
+                                            .apply()
+                                    },
+                                    label = { Text(label, fontSize = 12.sp) }
+                                )
+                            }
                         }
 
-                        if (isPro) {
+                        Text(
+                            text = when (schemeType) {
+                                "pro" -> "Pro：双拼辅助码增强版，按下方辅助类型下载对应方案与词库。"
+                                "lite" -> "Lite：下载 rime-wanxiang-lite.zip 与 lite-dicts.zip。"
+                                "pure" -> "Pure：下载 rime-wanxiang-pure.zip 与 pure-dicts.zip。"
+                                else -> "Base：下载 rime-wanxiang-base.zip 与 base-dicts.zip。"
+                            },
+                            fontSize = 10.sp,
+                            color = Color.Gray,
+                            modifier = Modifier.padding(top = 4.dp)
+                        )
+
+                        if (schemeType == "pro") {
                             Divider(color = MorandiLightGreen, modifier = Modifier.padding(vertical = 8.dp))
                             Text(
                                 "⌨️ 辅助类型：",
