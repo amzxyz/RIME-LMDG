@@ -4276,7 +4276,7 @@ sort: by_weight
 德祥鄉	dé xiáng xiāng	10
 德新鄉	dé xīn xiāng	10
 德新鎮	dé xīn zhèn	10
-德興市	dé xīng shì	583
+德興市	dé xīng shì	183
 德興縣	dé xīng xiàn	110
 德興鄉	dé xīng xiāng	10
 德陽縣	dé yáng xiàn	115
@@ -15804,9 +15804,9 @@ sort: by_weight
 蒲台鄉	pú tái xiāng	10
 濮塘鎮	pú táng zhèn	10
 蒲塘鎮	pú táng zhèn	10
-葡萄場	pú táo chǎng	10
-葡萄縣	pú táo xiàn	98
-葡萄鎮	pú táo zhèn	10
+葡萄場	pú tao chǎng	10
+葡萄縣	pú tao xiàn	98
+葡萄鎮	pú tao zhèn	10
 菩提鎮	pú tí zhèn	10
 莆田縣	pú tián xiàn	208
 圃田鄉	pǔ tián xiāng	10
@@ -18120,7 +18120,7 @@ sort: by_weight
 什玲鎮	shí líng zhèn	10
 石陵鎮	shí líng zhèn	-1
 石柳鄉	shí liǔ xiāng	488
-石榴鎮	shí liú zhèn	10
+石榴鎮	shí liu zhèn	10
 石龍區	shí lóng qū	96
 石龍鎮	shí lóng zhèn	384
 石樓縣	shí lóu xiàn	177
@@ -50787,7 +50787,7 @@ sort: by_weight
 南石臼村	nán shí jiù cūn	10
 南十里堡	nán shí lǐ pù	151
 南十里莊	nán shí lǐ zhuāng	10
-南石榴村	nán shí liú cūn	10
+南石榴村	nán shí liu cūn	10
 南石門村	nán shí mén cūn	10
 南石門鎮	nán shí mén zhèn	10
 南石橋村	nán shí qiáo cūn	10
@@ -52326,11 +52326,11 @@ sort: by_weight
 樸實莊村	pǔ shí zhuāng cūn	10
 蒲首山村	pú shǒu shān cūn	10
 蒲台河村	pú tái hé cūn	10
-葡萄溝村	pú táo gōu cūn	10
-葡萄溝鄉	pú táo gōu xiāng	10
-葡萄架鄉	pú táo jià xiāng	10
-葡萄園村	pú táo yuán cūn	10
-葡萄寨村	pú táo zhài cūn	10
+葡萄溝村	pú tao gōu cūn	10
+葡萄溝鄉	pú tao gōu xiāng	10
+葡萄架鄉	pú tao jià xiāng	10
+葡萄園村	pú tao yuán cūn	10
+葡萄寨村	pú tao zhài cūn	10
 菩提街道	pú tí jiē dào	10
 菩提寺村	pú tí sì cūn	10
 莆田城廂	pú tián chéng xiāng	10
@@ -56579,12 +56579,12 @@ sort: by_weight
 石嶺子村	shí lǐng zi cūn	10
 石嶺子鎮	shí lǐng zi zhèn	10
 十六號站	shí liù hào zhàn	45
-石榴紅村	shí liú hóng cūn	10
-石榴街道	shí liú jiē dào	10
-石榴口村	shí liú kǒu cūn	10
-石榴坪鄉	shí liú píng xiāng	10
+石榴紅村	shí liu hóng cūn	10
+石榴街道	shí liu jiē dào	10
+石榴口村	shí liu kǒu cūn	10
+石榴坪鄉	shí liu píng xiāng	10
 史劉灣村	shǐ liú wān cūn	10
-石榴莊村	shí liú zhuāng cūn	10
+石榴莊村	shí liu zhuāng cūn	10
 石龍壩鎮	shí lóng bà zhèn	10
 石龍洞村	shí lóng dòng cūn	10
 石龍溝村	shí lóng gōu cūn	10
@@ -63496,7 +63496,7 @@ sort: by_weight
 西石林村	xī shí lín cūn	10
 西柿林村	xī shì lín cūn	10
 西石嶺村	xī shí lǐng cūn	10
-西石榴村	xī shí liú cūn	10
+西石榴村	xī shí liu cūn	10
 西石樓村	xī shí lóu cūn	10
 西石門村	xī shí mén cūn	10
 西石廟村	xī shí miào cūn	10
@@ -75728,7 +75728,7 @@ sort: by_weight
 蒲蘆瑤族鄉	pú lú yáo zú xiāng	10
 普瑪江塘鄉	pǔ mǎ jiāng táng xiāng	10
 普恰克其鎮	pǔ qià kè qí zhèn	10
-葡萄溝街道	pú táo gōu jiē dào	10
+葡萄溝街道	pú tao gōu jiē dào	10
 普田回族鄉	pǔ tián huí zú xiāng	10
 莆田仙遊縣	pú tián xiān yóu xiàn	10
 普陀路街道	pǔ tuó lù jiē dào	10
@@ -76300,7 +76300,7 @@ sort: by_weight
 十里回族鄉	shí lǐ huí zú xiāng	10
 十里鋪街道	shí lǐ pù jiē dào	10
 十六里河鎮	shí liù lǐ hé zhèn	10
-石榴莊街道	shí liú zhuāng jiē dào	10
+石榴莊街道	shí liu zhuāng jiē dào	10
 石馬河街道	shí mǎ hé jiē dào	10
 石馬坪街道	shí mǎ píng jiē dào	10
 石馬山街道	shí mǎ shān jiē dào	10

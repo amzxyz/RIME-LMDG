@@ -340,6 +340,7 @@ sort: by_weight
 胃疼寧片	wèi téng níng piàn	10
 胃痛寧片	wèi tòng níng piàn	10
 胃脘舒片	wèi wǎn shū piàn	10
+文迪雅片	wén dí yā piàn	45
 西達本胺	xī dá běn àn	10
 仙靈脾片	xiān líng pí piàn	10
 消癌平片	xiāo ái píng piàn	10
@@ -541,7 +542,7 @@ sort: by_weight
 八味秦皮丸	bā wèi qín pí wán	10
 八味三香散	bā wèi sān xiāng sàn	10
 八味腎氣丸	bā wèi shèn qì wán	10
-八味石榴散	bā wèi shí liú sàn	10
+八味石榴散	bā wèi shí liu sàn	10
 八味檀香散	bā wèi tán xiāng sàn	10
 八味檀香丸	bā wèi tán xiāng wán	10
 八味痛經片	bā wèi tòng jīng piàn	10
@@ -2126,7 +2127,7 @@ sort: by_weight
 九味羌活片	jiǔ wèi qiāng huó piàn	10
 九味羌活丸	jiǔ wèi qiāng huó wán	10
 九味青鵬散	jiǔ wèi qīng péng sàn	10
-九味石榴丸	jiǔ wèi shí liú wán	10
+九味石榴丸	jiǔ wèi shí liu wán	10
 九味渣馴丸	jiǔ wèi zhā xùn wán	10
 九味竺黃散	jiǔ wèi zhú huáng sàn	10
 救心寧膠囊	jiù xīn níng jiāo náng	10
@@ -2378,8 +2379,6 @@ sort: by_weight
 涼膈連翹散	liáng gé lián qiáo sàn	10
 亮菌甲素片	liàng jūn jiǎ sù piàn	10
 亮菌口服液	liàng jūn kǒu fú yè	10
-靚麗的名片	liàng lì de míng piàn	10
-亮麗的名片	liàng lì de míng piàn	10
 兩面針痛片	liǎng miàn zhēn tòng piàn	10
 兩面注射液	liǎng miàn zhù shè yè	10
 亮雪口服液	liàng xuě kǒu fú yè	10
@@ -2435,7 +2434,7 @@ sort: by_weight
 六味木香丸	liù wèi mù xiāng wán	10
 六味能消丸	liù wèi néng xiāo wán	10
 六味生脈片	liù wèi shēng mài piàn	10
-六味石榴散	liù wèi shí liú sàn	10
+六味石榴散	liù wèi shí liu sàn	10
 六味頭痛片	liù wèi tóu tòng piàn	10
 六味消痔片	liù wèi xiāo zhì piàn	10
 硫唑嘌呤片	liú zuò piào lìng piàn	10
@@ -2480,6 +2479,7 @@ sort: by_weight
 羅己降壓片	luó jǐ jiàng yā piàn	10
 洛美沙星片	luò měi shā xīng piàn	10
 洛哌丁胺片	luò pài dīng àn piàn	10
+羅培干擾素	luó péi gān rǎo sù	10
 蘿藤安神片	luó téng ān shén piàn	10
 駱駝蓬鹼片	luò tuó péng jiǎn piàn	10
 螺旋黴素片	luó xuán méi sù piàn	10
@@ -2839,7 +2839,7 @@ sort: by_weight
 七味都氣丸	qī wèi dōu qì wán	10
 七味廣棗丸	qī wèi guǎng zǎo wán	10
 七味訶子散	qī wèi hē zǐ sàn	10
-七味葡萄散	qī wèi pú táo sàn	10
+七味葡萄散	qī wèi pú tao sàn	10
 七味鐵屑丸	qī wèi tiě xiè wán	10
 七味消腫丸	qī wèi xiāo zhǒng wán	10
 七味新消丸	qī wèi xīn xiāo wán	10
@@ -3411,10 +3411,10 @@ sort: by_weight
 石淋通沖劑	shí lín tōng chōng jì	10
 石淋通膠囊	shí lín tōng jiāo náng	10
 石淋通顆粒	shí lín tōng kē lì	10
-石榴健胃丸	shí liú jiàn wèi wán	10
-石榴蓮花散	shí liú lián huā sàn	10
-石榴普安散	shí liú pǔ ān sàn	10
-石榴日輪丸	shí liú rì lún wán	10
+石榴健胃丸	shí liu jiàn wèi wán	10
+石榴蓮花散	shí liu lián huā sàn	10
+石榴普安散	shí liu pǔ ān sàn	10
+石榴日輪丸	shí liu rì lún wán	10
 視明滴眼液	shì míng dī yǎn yè	10
 視頻和相片	shì pín hé xiàng piān	10
 十全大補膏	shí quán dà bǔ gāo	10
@@ -3959,7 +3959,7 @@ sort: by_weight
 五味沙棘散	wǔ wèi shā jí sàn	10
 五味沙棗散	wǔ wèi shā zǎo sàn	10
 五味麝香丸	wǔ wèi shè xiāng wán	10
-五味石榴丸	wǔ wèi shí liú wán	10
+五味石榴丸	wǔ wèi shí liu wán	10
 五味香連丸	wǔ wèi xiāng lián wán	10
 五味渣馴丸	wǔ wèi zhā xùn wán	10
 五味治肝片	wǔ wèi zhì gān piàn	10
@@ -4970,7 +4970,7 @@ sort: by_weight
 氨酚偽麻顆粒	ān fēn wěi má kē lì	10
 安宮黃體酮片	ān gōng huáng tǐ tóng piàn	10
 氨基己磺酸片	ān jī jǐ huáng suān piàn	10
-氨基葡萄糖片	ān jī pú táo táng piàn	10
+氨基葡萄糖片	ān jī pú tao táng piàn	10
 氨基酸口服液	ān jī suān kǒu fú yè	10
 氨基酸注射液	ān jī suān zhù shè yè	10
 氨甲環酸膠囊	ān jiǎ huán suān jiāo náng	10
@@ -5012,7 +5012,7 @@ sort: by_weight
 奧沙普嗪膠囊	ào shā pǔ qín jiāo náng	10
 奧司他韋膠囊	ào sī tā wéi jiāo náng	10
 奧硝唑分散片	ào xiāo zuò fēn sǎn piàn	10
-奧硝唑葡萄糖	ào xiāo zuò pú táo táng	10
+奧硝唑葡萄糖	ào xiāo zuò pú tao táng	10
 奧硝唑陰道栓	ào xiāo zuò yīn dào shuān	10
 奧硝唑注射液	ào xiāo zuò zhù shè yè	10
 巴恩二氏顆粒	bā ēn èr shì kē lì	10
@@ -5049,7 +5049,7 @@ sort: by_weight
 百梅止咳糖漿	bǎi méi zhǐ ké táng jiāng	10
 白內停滴眼液	bái nèi tíng dī yǎn yè	10
 白葡奈氏菌片	bái pú nài shì jūn piàn	10
-白葡萄球菌片	bái pú táo qiú jūn piàn	10
+白葡萄球菌片	bái pú tao qiú jūn piàn	10
 白絨止咳糖漿	bái róng zhǐ ké táng jiāng	10
 白芍總苷膠囊	bái sháo zǒng gān jiāo náng	10
 白石清熱顆粒	bái shí qīng rè kē lì	10
@@ -6388,7 +6388,7 @@ sort: by_weight
 甲硝唑口含片	jiǎ xiāo zuò kǒu hán piàn	10
 甲硝唑口頰片	jiǎ xiāo zuò kǒu jiá piàn	10
 甲硝唑泡騰片	jiǎ xiāo zuò pào téng piàn	10
-甲硝唑葡萄糖	jiǎ xiāo zuò pú táo táng	10
+甲硝唑葡萄糖	jiǎ xiāo zuò pú tao táng	10
 甲硝唑注射劑	jiǎ xiāo zuò zhù shè jì	10
 甲硝唑注射液	jiǎ xiāo zuò zhù shè yè	10
 甲溴阿托品片	jiǎ xiù ā tuō pǐn piàn	10
@@ -6851,7 +6851,7 @@ sort: by_weight
 六味寒水石散	liù wèi hán shuǐ shí sàn	10
 六味木香膠囊	liù wèi mù xiāng jiāo náng	10
 六味能消膠囊	liù wèi néng xiāo jiāo náng	10
-六味石榴膠囊	liù wèi shí liú jiāo náng	10
+六味石榴膠囊	liù wèi shí liu jiāo náng	10
 六味香蓮膠囊	liù wèi xiāng lián jiāo náng	10
 六味香連膠囊	liù wèi xiāng lián jiāo náng	10
 六味消痔膠囊	liù wèi xiāo zhì jiāo náng	10
@@ -7153,10 +7153,9 @@ sort: by_weight
 普諾寧思膠囊	pǔ nuò níng sī jiāo náng	10
 蒲清蒲公英片	pú qīng pú gōng yīng piàn	10
 葡醛內酯膠囊	pú quán nèi zhǐ jiāo náng	10
-葡萄糖酸鈣片	pú táo táng suān gài piàn	10
-葡萄糖酸鋅片	pú táo táng suān xīn piàn	10
-葡萄溏注射液	pú táo táng zhù shè yè	10
-葡萄糖注射液	pú táo táng zhù shè yè	10
+葡萄糖酸鈣片	pú tao táng suān gài piàn	10
+葡萄糖酸鋅片	pú tao táng suān xīn piàn	10
+葡萄糖注射液	pú tao táng zhù shè yè	10
 七寶美髯膠囊	qī bǎo měi rán jiāo náng	10
 七寶美髯顆粒	qī bǎo měi rán kē lì	10
 芪參補氣膠囊	qí cān bǔ qì jiāo náng	10
@@ -7576,14 +7575,14 @@ sort: by_weight
 十八味歐曲丸	shí bā wèi ōu qǔ wán	10
 十滴水軟膠囊	shí dī shuǐ ruǎn jiāo náng	10
 十二味冰片散	shí èr wèi bīng piàn sàn	10
-十二味石榴散	shí èr wèi shí liú sàn	10
+十二味石榴散	shí èr wèi shí liu sàn	10
 十二味翼首散	shí èr wèi yì shǒu sàn	10
 十二味翼首丸	shí èr wèi yì shǒu wán	10
 石灰硫黃合劑	shí huī liú huáng hé jì	10
 石灰硫磺合劑	shí huī liú huáng hé jì	10
 十九味草果散	shí jiǔ wèi cǎo guǒ sàn	10
 是菌敵口服液	shì jūn dí kǒu fú yè	10
-石榴健胃膠囊	shí liú jiàn wèi jiāo náng	10
+石榴健胃膠囊	shí liu jiàn wèi jiāo náng	10
 十六味冬青丸	shí liù wèi dōng qīng wán	10
 石龍清血顆粒	shí lóng qīng xuè kē lì	10
 石麥清口服液	shí mài qīng kǒu fú yè	10
@@ -7721,7 +7720,7 @@ sort: by_weight
 斯奇康注射液	sī qí kāng zhù shè yè	10
 司他夫定膠囊	sī tā fū dìng jiāo náng	10
 四味薑黃湯散	sì wèi jiāng huáng tāng sàn	10
-四維葡萄糖散	sì wéi pú táo táng sàn	10
+四維葡萄糖散	sì wéi pú tao táng sàn	10
 四維葡鋅膠丸	sì wéi pú xīn jiāo wán	10
 四味通絡膠囊	sì wèi tōng luò jiāo náng	10
 四味土木香散	sì wèi tǔ mù xiāng sàn	10
@@ -7990,7 +7989,7 @@ sort: by_weight
 息熱痛注射液	xī rè tòng zhù shè yè	10
 西沙必利膠囊	xī shā bì lì jiāo náng	10
 系統基礎晶片	xì tǒng jī chǔ jīng piàn	10
-西妥昔單抗β	xī tuǒ xī dān kàng	10
+西妥昔單抗β	xī tuǒ xī dān kàng beta	10
 豨薟通栓膠囊	xī xiān tōng shuān jiāo náng	10
 細辛腦注射液	xì xīn nǎo zhù shè yè	10
 喜炎平注射液	xǐ yán píng zhù shè yè	10
@@ -8824,7 +8823,7 @@ sort: by_weight
 氨基丁酸激動劑	ān jī dīng suān jī dòng jì	10
 氨基丁酸拮抗劑	ān jī dīng suān jié kàng jì	10
 氨基己酸注射液	ān jī jǐ suān zhù shè yè	10
-氨基葡萄糖膠囊	ān jī pú táo táng jiāo náng	10
+氨基葡萄糖膠囊	ān jī pú tao táng jiāo náng	10
 氨基酮戊酸製劑	ān jī tóng wù suān zhì jì	10
 氨基已酸注射液	ān jī yǐ suān zhù shè yè	10
 氨甲苯酸注射液	ān jiǎ běn suān zhù shè yè	10
@@ -9663,7 +9662,7 @@ sort: by_weight
 高碘酸希夫試劑	gāo diǎn suān xī fū shì jì	10
 高果糖玉米糖漿	gāo guǒ táng yù mǐ táng jiāng	10
 高錳酸鉀外用片	gāo měng suān jiǎ wài yòng piàn	10
-高滲葡萄糖溶液	gāo shèn pú táo táng róng yè	10
+高滲葡萄糖溶液	gāo shèn pú tao táng róng yè	10
 睾酮雌酮注射劑	gāo tóng cí tóng zhù shè jì	10
 高烏甲素注射液	gāo wū jiǎ sù zhù shè yè	10
 葛根黃豆苷元片	gé gēn huáng dòu gān yuán piàn	10
@@ -10314,14 +10313,14 @@ sort: by_weight
 葡醛內酯注射液	pú quán nèi zhǐ zhù shè yè	10
 葡醛酸鈉注射液	pú quán suān nà zhù shè yè	10
 樸實顆粒無糖型	pǔ shí kē lì wú táng xíng	10
-葡萄糖酸鈣含片	pú táo táng suān gài hán piàn	10
-葡萄糖酸鈣口服	pú táo táng suān gài kǒu fú	10
-葡萄糖酸鋅沖劑	pú táo táng suān xīn chōng jì	10
-葡萄糖酸鋅合劑	pú táo táng suān xīn hé jì	10
-葡萄糖酸鋅膠囊	pú táo táng suān xīn jiāo náng	10
-葡萄糖酸鋅口服	pú táo táng suān xīn kǒu fú	10
-葡萄糖酸鋅軟膏	pú táo táng suān xīn ruǎn gāo	10
-葡萄糖酸亞鐵片	pú táo táng suān yà tiě piàn	10
+葡萄糖酸鈣含片	pú tao táng suān gài hán piàn	10
+葡萄糖酸鈣口服	pú tao táng suān gài kǒu fú	10
+葡萄糖酸鋅沖劑	pú tao táng suān xīn chōng jì	10
+葡萄糖酸鋅合劑	pú tao táng suān xīn hé jì	10
+葡萄糖酸鋅膠囊	pú tao táng suān xīn jiāo náng	10
+葡萄糖酸鋅口服	pú tao táng suān xīn kǒu fú	10
+葡萄糖酸鋅軟膏	pú tao táng suān xīn ruǎn gāo	10
+葡萄糖酸亞鐵片	pú tao táng suān yà tiě piàn	10
 芪柏養心口服液	qí bǎi yǎng xīn kǒu fú yè	10
 七寶美髯口服液	qī bǎo měi rán kǒu fú yè	10
 七鞭回春樂膠囊	qī biān huí chūn lè jiāo náng	10
@@ -10432,7 +10431,7 @@ sort: by_weight
 祛風骨痛巴布膏	qū fēng gǔ tòng bā bù gāo	10
 祛風止癢口服液	qū fēng zhǐ yǎng kǒu fú yè	10
 曲克蘆丁口服液	qǔ kè lú dīng kǒu fú yè	10
-曲克蘆丁葡萄糖	qǔ kè lú dīng pú táo táng	10
+曲克蘆丁葡萄糖	qǔ kè lú dīng pú tao táng	10
 曲克蘆丁香草醛	qǔ kè lú dīng xiāng cǎo quán	10
 曲克蘆丁香豆素	qǔ kè lú dīng xiāng dòu sù	10
 曲克蘆丁注射液	qǔ kè lú dīng zhù shè yè	10
@@ -11369,7 +11368,6 @@ sort: by_weight
 桂枝去芍藥加附子湯	guì zhī qù sháo yào jiā fù zǐ tāng	10
 桂枝去芍藥加皂莢湯	guì zhī qù sháo yào jiā zào jiá tāng	10
 黃芪芍藥桂枝苦酒湯	huáng qí sháo yào guì zhī kǔ jiǔ tāng	10
-羅培干擾素α-2b	luó péi gān rǎo sù	10
 曲安奈德益康唑乳膏	qǔ ān nài dé yì kāng zuò rǔ gāo	10
 鹽酸特比萘芬噴霧劑	yán suān tè bǐ nài fēn pēn wù jì	10
 艾帕洛利託沃瑞利單抗	ài pà luò lì tuō wò ruì lì dān kàng	10

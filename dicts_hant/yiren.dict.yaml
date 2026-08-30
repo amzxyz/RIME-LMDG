@@ -625,8 +625,6 @@ sort: by_weight
 虎二	hǔ èr	195
 胡楓	hú fēng	163
 胡歌	hú gē	1181
-胡歌	hú gē	441
-胡歌	hú gē	428
 胡瓜	hú guā	770
 胡靜	hú jìng	226
 胡軍	hú jūn	320
@@ -791,6 +789,7 @@ sort: by_weight
 涓子	juān zǐ	50
 鈞澤	jūn zé	3115
 卡姆	kǎ mǔ	245
+凱莉	kǎi lì	668
 凱叔	kǎi shū	206
 侃侃	kǎn kǎn	263
 闞昕	kàn xīn	1
@@ -802,6 +801,7 @@ sort: by_weight
 康凱	kāng kǎi	495
 康汐	kāng xī	1
 可兒	kě er	1593
+柯克	kē kè	229
 柯藍	kē lán	634
 柯穎	kē yǐng	29
 柯釗	kē zhāo	19
@@ -882,6 +882,7 @@ sort: by_weight
 李糖	lǐ táng	136
 李鐵	lǐ tiě	1441
 李婷	lǐ tíng	1563
+力丸	lì wán	80
 李煒	lǐ wěi	19
 李玟	lǐ wén	1659
 李現	lǐ xiàn	785
@@ -939,6 +940,7 @@ sort: by_weight
 林濛	lín méng	6
 林墨	lín mò	1407
 林陌	lín mò	14
+林農	lín nóng	9
 林鵬	lín péng	621
 林萍	lín píng	57
 林杉	lín shān	78
@@ -1052,6 +1054,7 @@ sort: by_weight
 盧鑫	lú xīn	154
 陸星	lù xīng	565
 陸遜	lù xùn	11291
+盧燕	lú yàn	646
 陸瑤	lù yáo	876
 盧野	lú yě	47
 陸毅	lù yì	307
@@ -1080,7 +1083,6 @@ sort: by_weight
 綠綺	lǜ qǐ	172
 呂薇	lǚ wēi	718
 呂夏	lǚ xià	633
-呂嬃	lǚ xū	212
 呂燕	lǚ yàn	612
 呂豔	lǚ yàn	196
 呂洋	lǚ yáng	184
@@ -1179,6 +1181,7 @@ sort: by_weight
 尼坤	ní kūn	702
 倪妮	ní nī	624
 倪言	ní yán	9
+倪震	ní zhèn	1398
 鳥叔	niǎo shū	2054
 聶玫	niè méi	47
 聶鑫	niè xīn	81
@@ -1207,11 +1210,13 @@ sort: by_weight
 裴蓓	péi bèi	356
 裴麗	péi lì	100
 裴琳	péi lín	684
+彭丹	péng dān	66
 彭灝	péng hào	1
 彭磊	péng lěi	864
 彭羚	péng líng	706
 彭凌	péng líng	41
 彭清	péng qīng	3026
+彭荃	péng quán	6
 彭帥	péng shuài	50
 彭楊	péng yáng	580
 彭堯	péng yáo	130
@@ -1307,11 +1312,13 @@ sort: by_weight
 茹萍	rú píng	162
 阮巨	ruǎn jù	18
 阮巡	ruǎn xún	15
+瑞茜	ruì qiàn	28
 蕊希	ruǐ xī	218
 桑晨	sāng chén	22
 桑蘭	sāng lán	25
 桑平	sāng píng	1015
 桑硯	sāng yàn	12
+森美	sēn měi	16
 莎娜	shā nà	819
 沙溢	shā yì	747
 單良	shàn liáng	37
@@ -1358,6 +1365,7 @@ sort: by_weight
 施羽	shī yǔ	7
 史原	shǐ yuán	105
 舒高	shū gāo	440
+樹裡	shù lǐ	185
 舒淇	shū qí	778
 舒然	shū rán	360
 舒硯	shū yàn	55
@@ -1368,6 +1376,7 @@ sort: by_weight
 順子	shùn zi	465
 姒扃	sì jiōng	12
 斯蘭	sī lán	168
+思文	sī wén	147
 司源	sī yuán	72
 宋晨	sòng chén	1612
 宋佳	sòng jiā	320
@@ -1379,9 +1388,11 @@ sort: by_weight
 宋玉	sòng yù	128
 宋禹	sòng yǔ	6
 宿丹	sù dān	18
+蘇紅	sū hóng	785
 蘇惠	sū huì	67
 蘇瑾	sū jǐn	7174
 蘇可	sū kě	5244
+蘇倫	sū lún	41
 蘇民	sū mín	38
 蘇蓬	sū péng	437
 蘇秦	sū qín	135
@@ -1632,7 +1643,7 @@ sort: by_weight
 王興	wáng xīng	82
 王瑄	wáng xuān	1
 王迅	wáng xùn	70
-王豔	wáng yàn	2940
+王豔	wáng yàn	940
 汪芫	wāng yán	1
 王陽	wáng yáng	115
 汪颺	wāng yáng	1
@@ -2367,6 +2378,7 @@ sort: by_weight
 愛田由	ài tián yóu	288
 艾薇兒	ài wēi ér	571
 艾曉琪	ài xiǎo qí	137
+艾小羊	ài xiǎo yáng	3
 艾怡良	ài yí liáng	232
 愛樂團	ài yuè tuán	9
 安伯政	ān bó zhèng	274
@@ -2396,6 +2408,7 @@ sort: by_weight
 安又琪	ān yòu qí	35
 安悅溪	ān yuè xī	9
 安雲武	ān yún wǔ	15
+安宰弘	ān zǎi hóng	6
 安宰賢	ān zǎi xián	129
 安在旭	ān zài xù	603
 安澤豪	ān zé háo	274
@@ -2633,7 +2646,6 @@ sort: by_weight
 蔡紫芬	cài zǐ fēn	12
 倉本堇	cāng běn jǐn	10
 蒼井空	cāng jǐng kōng	261
-蒼井空	cāng jǐng kōng	10
 蒼井優	cāng jǐng yōu	82
 蒼老師	cāng lǎo shī	824
 蒼樹梅	cāng shù méi	414
@@ -2980,6 +2992,7 @@ sort: by_weight
 成旻雲	chéng mín yún	15
 成詩京	chéng shī jīng	9
 成泰燊	chéng tài shēn	13
+成田劍	chéng tián jiàn	315
 成田凌	chéng tián líng	378
 城田優	chéng tián yōu	428
 程文濤	chéng wén tāo	12
@@ -3015,11 +3028,13 @@ sort: by_weight
 儲小蕾	chǔ xiǎo lěi	637
 楚軼男	chǔ yì nán	12
 儲智博	chǔ zhì bó	42
+川島愛	chuān dǎo ài	6
 川越唯	chuān yuè wéi	10
 吹越滿	chuī yuè mǎn	436
 春菜華	chūn cài huá	10
 椿莉香	chūn lì xiāng	10
 蠢沫沫	chǔn mò mò	12
+蠢朋克	chǔn péng kè	110
 春咲涼	chūn xiào liáng	10
 慈婉彤	cí wǎn tóng	12
 叢浩楠	cóng hào nán	3
@@ -3056,7 +3071,9 @@ sort: by_weight
 大川透	dà chuān tòu	536
 大哥遠	dà gē yuǎn	230
 大槻響	dà guī xiǎng	10
+大泉洋	dà quán yáng	6
 達式常	dá shì cháng	16
+大野智	dà yě zhì	22
 答有為	dá yǒu wéi	12
 大澤光	dà zé guāng	234
 大張偉	dà zhāng wěi	2726
@@ -3103,6 +3120,7 @@ sort: by_weight
 戴祖雄	dài zǔ xióng	252
 戴祖儀	dài zǔ yí	486
 丹下櫻	dān xià yīng	9
+丹澤爾	dān zé ěr	107
 黨浩予	dǎng hào yǔ	12
 島谷瞳	dǎo gǔ tóng	16
 刀美蘭	dāo měi lán	9
@@ -3162,6 +3180,7 @@ sort: by_weight
 鄧紫棋	dèng zǐ qí	3630
 鄧紫衣	dèng zǐ yī	266
 翟蓓蓓	dí bèi bèi	12
+狄波拉	dí bō lā	69
 狄菲菲	dí fēi fēi	218
 翟冠華	dí guān huá	22
 迪瑪希	dí mǎ xī	845
@@ -3203,6 +3222,7 @@ sort: by_weight
 丁禹兮	dīng yǔ xī	346
 丁澤仁	dīng zé rén	8
 丁志誠	dīng zhì chéng	9
+丁子高	dīng zi gāo	166
 丁子峻	dīng zi jùn	446
 丁子玲	dīng zi líng	426
 董寶石	dǒng bǎo shí	297
@@ -3239,6 +3259,7 @@ sort: by_weight
 董新堯	dǒng xīn yáo	33
 董行佶	dǒng xíng jí	3
 冬雪俐	dōng xuě lì	1
+東雪蓮	dōng xuě lián	13
 董亞千	dǒng yà qiān	500
 董岩磊	dǒng yán lěi	6
 董豔芸	dǒng yàn yún	315
@@ -3318,13 +3339,19 @@ sort: by_weight
 段藝璇	duàn yì xuán	33
 多布傑	duō bù jié	22
 朵爾娜	duǒ ěr nà	1
+多明哥	duō míng gē	69
+多明戈	duō míng gē	62
 鄂靖文	è jìng wén	15
+恩格爾	ēn gé ěr	57
 爾冬升	ěr dōng shēng	446
 二宮光	èr gōng guāng	10
 二驢的	èr lǘ de	30
+法雷爾	fǎ léi ěr	47
+法瑞爾	fǎ ruì ěr	47
 范冰冰	fàn bīng bīng	3206
 范丞丞	fàn chéng chéng	144
 范楚絨	fàn chǔ róng	16
+飯島愛	fàn dǎo ài	50
 樊光耀	fán guāng yào	374
 範哈哈	fàn hā hā	37
 范鴻軒	fàn hóng xuān	382
@@ -3383,16 +3410,20 @@ sort: by_weight
 方逸倫	fāng yì lún	137
 房映華	fáng yìng huá	22
 方媛媛	fāng yuàn yuàn	15
+方中信	fāng zhōng xìn	31
 房子斌	fáng zi bīn	248
 方子哥	fāng zi gē	356
 房祖名	fáng zǔ míng	433
+費雷爾	fèi léi ěr	72
 費立緯	fèi lì wěi	22
 費南多	fèi nán duō	63
 費啟鳴	fèi qǐ míng	16
 費沁源	fèi qìn yuán	540
 費偉妮	fèi wěi nī	415
+費雯麗	fèi wén lì	184
 妃悠愛	fēi yōu ài	10
 費玉清	fèi yù qīng	1347
+費貞綾	fèi zhēn líng	57
 費振翔	fèi zhèn xiáng	3
 馮寶寶	féng bǎo bao	110
 馮寶華	féng bǎo huá	112
@@ -3454,10 +3485,12 @@ sort: by_weight
 傅錦華	fù jǐn huá	22
 付蘭蘭	fù lán lán	270
 傅麗莉	fù lì lì	190
+弗里曼	fú lǐ màn	543
 付夢妮	fù mèng nī	414
 伏明霞	fú míng xiá	672
 付蓉兒	fù róng ér	12
 付瑞亭	fù ruì tíng	16
+福山潤	fú shān rùn	22
 傅首爾	fù shǒu ěr	414
 傅姝陽	fù shū yáng	12
 付思琪	fù sī qí	153
@@ -3476,6 +3509,7 @@ sort: by_weight
 傅羽佳	fù yǔ jiā	12
 付玉龍	fù yù lóng	230
 傅園慧	fù yuán huì	402
+福原遙	fú yuán yáo	3
 傅子恩	fù zǐ ēn	333
 干露露	gān lù lù	662
 甘璐銘	gān lù míng	12
@@ -3484,22 +3518,27 @@ sort: by_weight
 紺野光	gàn yě guāng	10
 甘昀宸	gān yún chén	33
 剛小希	gāng xiǎo xī	33
+高百歲	gāo bǎi suì	6
 高寶寶	gāo bǎo bao	760
 高倉健	gāo cāng jiàn	116
 高昌昊	gāo chāng hào	16
 高昌錫	gāo chāng xī	306
 高承一	gāo chéng yī	12
 高地平	gāo dì píng	215
+高斗心	gāo dòu xīn	6
 高鳳山	gāo fèng shān	338
 高歌鈴	gāo gē líng	15
+高翰文	gāo hàn wén	38
 高瀚宇	gāo hàn yǔ	44
 高浩元	gāo hào yuán	15
+高鶴彩	gāo hè cǎi	205
 高赫迪	gāo hè dí	1
 高赫一	gāo hè yī	30
 高慧君	gāo huì jūn	450
 高火火	gāo huǒ huǒ	15
 高基才	gāo jī cái	15
 高嘉朗	gāo jiā lǎng	26
+高九成	gāo jiǔ chéng	35
 高俊熙	gāo jùn xī	19
 高鈞賢	gāo jūn xián	353
 高君雨	gāo jūn yǔ	19
@@ -3507,6 +3546,7 @@ sort: by_weight
 高蘭村	gāo lán cūn	37
 高麗虹	gāo lí hóng	387
 高林生	gāo lín shēng	238
+高凌風	gāo líng fēng	22
 高瓏珂	gāo lóng kē	126
 高魯泉	gāo lǔ quán	284
 高曼爾	gāo màn ěr	12
@@ -3515,10 +3555,17 @@ sort: by_weight
 高旻睿	gāo mín ruì	202
 高明娥	gāo míng é	35
 高明駿	gāo míng jùn	9
+高木涉	gāo mù shè	60
 高啟帆	gāo qǐ fān	12
+高橋南	gāo qiáo nán	60
+高橋努	gāo qiáo nǔ	19
+高橋瞳	gāo qiáo tóng	6
+高慶奎	gāo qìng kuí	53
 高秋梓	gāo qiū zǐ	15
 高仁河	gāo rén hé	189
 高容方	gāo róng fāng	12
+高山南	gāo shān nán	47
+高勝美	gāo shèng měi	60
 高聖遠	gāo shèng yuǎn	716
 高詩岩	gāo shī yán	319
 高曙光	gāo shǔ guāng	6
@@ -3534,15 +3581,18 @@ sort: by_weight
 高希希	gāo xī xī	166
 高曉攀	gāo xiǎo pān	41
 高曉松	gāo xiǎo sōng	4019
+高秀敏	gāo xiù mǐn	35
 高旭陽	gāo xù yáng	12
 郜玄銘	gào xuán míng	12
 高雪逸	gāo xuě yì	12
 高壓郭	gāo yā guō	3
 高亞麟	gāo yà lín	66
 高婭媛	gāo yà yuàn	279
+高耀太	gāo yào tài	9
 高逸峰	gāo yì fēng	302
 高一清	gāo yì qīng	118
 高一瑋	gāo yī wěi	18
+高以翔	gāo yǐ xiáng	274
 高英培	gāo yīng péi	31
 高穎浠	gāo yǐng xī	18
 高英軒	gāo yīng xuān	374
@@ -3551,6 +3601,7 @@ sort: by_weight
 高玉璽	gāo yù xǐ	12
 高宇蓁	gāo yǔ zhēn	306
 高源婧	gāo yuán jìng	133
+高元鈞	gāo yuán jūn	3
 高圓圓	gāo yuán yuán	851
 高雲翔	gāo yún xiáng	747
 高佔全	gāo zhàn quán	35
@@ -3561,10 +3612,12 @@ sort: by_weight
 高準翼	gāo zhǔn yì	141
 高梓淇	gāo zǐ qí	531
 高梓添	gāo zǐ tiān	12
+葛存壯	gé cún zhuàng	6
 葛薈婕	gé huì jié	85
 蓋叫天	gě jiào tiān	28
 蓋麗麗	gě lì lì	3
 葛曼棋	gé màn qí	9
+葛民輝	gé mín huī	50
 葛珊珊	gé shān shān	116
 葛司琪	gé sī qí	12
 葛思然	gé sī rán	16
@@ -3585,16 +3638,21 @@ sort: by_weight
 耿業庭	gěng yè tíng	12
 耿一智	gěng yī zhì	1
 龔蓓苾	gōng bèi bì	3
+龔慈恩	gōng cí ēn	9
 龔芳妮	gōng fāng nī	12
 功夫胖	gōng fu pàng	279
+龔格爾	gōng gé ěr	141
 鞏漢林	gǒng hàn lín	100
+龔嘉欣	gōng jiā xīn	19
 龔錦堂	gōng jǐn táng	12
 鞏立姣	gǒng lì jiāo	386
 龔麗君	gōng lì jūn	171
 龔琳娜	gōng lín nà	868
 龔美琪	gōng měi qí	12
+宮崎葵	gōng qí kuí	63
 鞏容爾	gǒng róng ěr	12
 龔詩淇	gōng shī qí	380
+恭碩良	gōng shuò liáng	201
 宮蘇紋	gōng sū wén	12
 鞏天闊	gǒng tiān kuò	220
 龔婉怡	gōng wǎn yí	216
@@ -3606,6 +3664,7 @@ sort: by_weight
 鞏小榕	gǒng xiǎo róng	12
 宮曉瑄	gōng xiǎo xuān	126
 鞏新亮	gǒng xīn liàng	13
+宮雪花	gōng xuě huā	3
 龔雨詩	gōng yǔ shī	1
 龔玥菲	gōng yuè fēi	374
 宮正楠	gōng zhèng nán	12
@@ -3614,6 +3673,8 @@ sort: by_weight
 句兆傑	gōu zhào jié	50
 谷愛凌	gǔ ài líng	2776
 顧長衛	gù cháng wèi	257
+谷德昭	gǔ dé zhāo	44
+古谷徹	gǔ gǔ chè	9
 顧冠忠	gù guān zhōng	396
 古廣明	gǔ guǎng míng	346
 谷昊峯	gǔ hào fēng	12
@@ -3622,11 +3683,14 @@ sort: by_weight
 顧嘉壹	gù jiā yī	12
 谷建芬	gǔ jiàn fēn	144
 谷江山	gǔ jiāng shān	50
+古巨基	gǔ jù jī	499
 顧珂嘉	gù kē jiā	12
 顧莉雅	gù lì yǎ	6
 古銘瀚	gǔ míng hàn	12
+古明華	gǔ míng huá	6
 顧書齊	gù shū qí	12
 顧天航	gù tiān háng	12
+古天樂	gǔ tiān lè	1674
 谷文澤	gǔ wén zé	133
 顧香君	gù xiāng jūn	15
 古小月	gǔ xiǎo yuè	15
@@ -3635,23 +3699,50 @@ sort: by_weight
 顧語涵	gù yǔ hán	16
 谷智鑫	gǔ zhì xīn	6
 古子成	gǔ zǐ chéng	1
+關寶慧	guān bǎo huì	6
+關楚耀	guān chǔ yào	13
+關德興	guān dé xīng	135
+官恩娜	guān ēn nà	6
+關海山	guān hǎi shān	16
 關慧卿	guān huì qīng	15
+關繼威	guān jì wēi	16
 管金麟	guǎn jīn lín	15
+官晶華	guān jīng huá	25
+關菊英	guān jú yīng	25
+關禮傑	guān lǐ jié	87
 關牧村	guān mù cūn	615
 關少曾	guān shǎo céng	337
+關詩敏	guān shī mǐn	31
 貫詩欽	guàn shī qīn	12
+關樹明	guān shù míng	252
+關淑怡	guān shū yí	107
 關思慧	guān sī huì	326
 關思婷	guān sī tíng	30
+關肅霜	guān sù shuāng	3
 關婷娜	guān tíng nà	346
 關婉珊	guān wǎn shān	12
+關維麟	guān wéi lín	486
+關偉倫	guān wěi lún	436
 冠希哥	guàn xī gē	192
 關曉彤	guān xiǎo tóng	509
+關信輝	guān xìn huī	350
+關心妍	guān xīn yán	644
+官秀昌	guān xiù chāng	66
 關學曾	guān xué céng	118
 關雪盈	guān xuě yíng	16
+關詠荷	guān yǒng hé	38
 管雲鵬	guǎn yún péng	15
+關正傑	guān zhèng jié	19
+關智斌	guān zhì bīn	19
+關之琳	guān zhī lín	185
+關智耀	guān zhì yào	252
+關智一	guān zhì yī	25
 管梓淨	guǎn zǐ jìng	12
 廣瀨蓮	guǎng lài lián	10
+廣瀨鈴	guǎng lài líng	6
 桂晶晶	guì jīng jīng	40
+桂綸鎂	guì lún měi	735
+歸亞蕾	guī yà lěi	28
 桂雨濛	guì yǔ méng	22
 郭艾倫	guō ài lún	25033
 郭藹明	guō ǎi míng	264
@@ -3742,6 +3833,8 @@ sort: by_weight
 郭子千	guō zǐ qiān	35
 郭子溪	guō zǐ xī	1
 郭子渝	guō zǐ yú	12
+哈克曼	hǎ kè màn	31
+海瑟薇	hǎi sè wēi	641
 韓安冉	hán ān rǎn	2316
 韓安旭	hán ān xù	22
 韓承羽	hán chéng yǔ	516
@@ -3761,6 +3854,7 @@ sort: by_weight
 韓菁清	hán jīng qīng	718
 韓玖諾	hán jiǔ nuò	18
 韓君婷	hán jūn tíng	3
+漢克斯	hàn kè sī	468
 韓馬利	hán mǎ lì	464
 韓沐伯	hán mù bó	216
 韓沛穎	hán pèi yǐng	12
@@ -3810,8 +3904,10 @@ sort: by_weight
 何冰嬌	hé bīng jiāo	9
 何超儀	hé chāo yí	35
 何晟銘	hé chéng míng	738
+河成雲	hé chéng yún	9
 何聰睿	hé cōng ruì	12
 何丹彤	hé dān tóng	12
+河東勳	hé dōng xūn	6
 何杜娟	hé dù juān	1212
 何非凡	hé fēi fán	15
 何奉天	hé fèng tiān	2426
@@ -3873,6 +3969,8 @@ sort: by_weight
 何雲偉	hé yún wěi	267
 何澤遠	hé zé yuǎn	15
 何政軍	hé zhèng jūn	418
+河正宇	hé zhèng yǔ	283
+河智苑	hé zhì yuàn	47
 何之舟	hé zhī zhōu	15
 何中華	hé zhōng huá	536
 何子君	hé zǐ jūn	916
@@ -3880,6 +3978,7 @@ sort: by_weight
 何子然	hé zǐ rán	15
 黑川堇	hēi chuān jǐn	10
 黑婧環	hēi jìng huán	26
+黑木瞳	hēi mù tóng	16
 黑石稔	hēi shí rěn	162
 洪百榕	hóng bǎi róng	238
 洪冰瑤	hóng bīng yáo	116
@@ -3938,6 +4037,7 @@ sort: by_weight
 侯夢莎	hóu mèng shā	468
 侯夢瑤	hóu mèng yáo	256
 侯明昊	hóu míng hào	19
+侯佩岑	hóu pèi cén	565
 侯佩杉	hóu pèi shān	12
 侯瑞清	hóu ruì qīng	12
 侯瑞祥	hóu ruì xiáng	15
@@ -3948,14 +4048,17 @@ sort: by_weight
 侯瑋濤	hóu wěi tāo	12
 侯雯元	hóu wén yuán	12
 侯祥玲	hóu xiáng líng	310
+侯湘婷	hóu xiāng tíng	47
 侯曉童	hóu xiǎo tóng	12
 侯孝賢	hóu xiào xián	1674
 侯耀華	hóu yào huá	28
 侯耀文	hóu yào wén	361
 侯伊荻	hóu yī dí	30
+侯永斌	hóu yǒng bīn	119
 侯永生	hóu yǒng shēng	243
 侯永永	hóu yǒng yǒng	69
 侯瑜暢	hóu yú chàng	12
+侯躍文	hóu yuè wén	6
 侯振鵬	hóu zhèn péng	16
 侯志慧	hóu zhì huì	405
 侯祖辛	hóu zǔ xīn	288
@@ -3966,6 +4069,7 @@ sort: by_weight
 胡冰卿	hú bīng qīng	22
 胡彩虹	hú cǎi hóng	15
 胡晨曦	hú chén xī	15
+戶川純	hù chuān chún	38
 胡春楊	hú chūn yáng	15
 胡春勇	hú chūn yǒng	12
 胡丹丹	hú dān dān	482
@@ -4014,6 +4118,7 @@ sort: by_weight
 呼斯楞	hū sī léng	356
 胡思奕	hú sī yì	12
 胡松華	hú sōng huá	6
+戶松遙	hù sōng yáo	9
 胡桃櫻	hú táo yīng	10
 扈天翼	hù tiān yì	12
 胡天渝	hú tiān yú	12
@@ -4175,6 +4280,7 @@ sort: by_weight
 黃禮格	huáng lǐ gé	378
 黃麗玲	huáng lì líng	91
 黃黎明	huáng lí míng	392
+黃立行	huáng lì xíng	22
 黃麗星	huáng lì xīng	20
 黃禮志	huáng lǐ zhì	163
 黃良升	huáng liáng shēng	333
@@ -4199,10 +4305,11 @@ sort: by_weight
 黃明明	huáng míng míng	504
 黃明升	huáng míng shēng	261
 黃名偉	huáng míng wěi	243
-黃銘正	huáng míng zhèng	
+黃銘正	huáng míng zhèng	129
 黃姵嘉	huáng pèi jiā	364
 黃佩霞	huáng pèi xiá	234
 黃品冠	huáng pǐn guān	297
+黃品源	huáng pǐn yuán	35
 黃品沅	huáng pǐn yuán	32
 黃啟昌	huáng qǐ chāng	603
 黃綺琳	huáng qǐ lín	297
@@ -4216,6 +4323,7 @@ sort: by_weight
 黃日瑩	huáng rì yíng	12
 黃若元	huáng ruò yuán	12
 黃莎莉	huáng shā lì	236
+荒山亮	huāng shān liàng	6
 黃珊珊	huáng shān shān	3
 黃珊汕	huáng shān shàn	2
 黃山壽	huáng shān shòu	220
@@ -4366,6 +4474,7 @@ sort: by_weight
 黃雲歆	huáng yún xīn	212
 黃澤鋒	huáng zé fēng	338
 黃兆函	huáng zhào hán	12
+皇貞季	huáng zhēn jì	44
 黃甄妮	huáng zhēn nī	270
 黃真真	huáng zhēn zhēn	432
 黃政皓	huáng zhèng hào	12
@@ -4408,6 +4517,7 @@ sort: by_weight
 黃祖權	huáng zǔ quán	464
 惠若琪	huì ruò qí	568
 惠王軍	huì wáng jūn	12
+惠英紅	huì yīng hóng	427
 灰原窮	huī yuán qióng	26
 霍建華	huò jiàn huá	298
 霍建起	huò jiàn qǐ	450
@@ -4515,6 +4625,7 @@ sort: by_weight
 簡慕華	jiǎn mù huá	369
 簡沛恩	jiǎn pèi ēn	315
 菅紉姿	jiān rèn zī	360
+菅韌姿	jiān rèn zī	209
 簡淑兒	jiǎn shū ér	364
 簡廷芮	jiǎn tíng ruì	324
 簡自豪	jiǎn zì háo	414
@@ -4634,9 +4745,7 @@ sort: by_weight
 焦曼婷	jiāo màn tíng	212
 焦聖祥	jiāo shèng xiáng	12
 傑克曼	jié kè màn	819
-傑克曼	jié kè màn	160
 傑克遜	jié kè xùn	3118
-傑克遜	jié kè xùn	171
 堺雅人	jiè yǎ rén	703
 皆月光	jiē yuè guāng	10
 金寶拉	jīn bǎo lā	3
@@ -4682,7 +4791,6 @@ sort: by_weight
 金高銀	jīn gāo yín	104
 金貴晟	jīn guì chéng	1122
 金龜子	jīn guī zǐ	144
-金龜子	jīn guī zǐ	76
 金海淑	jīn hǎi shū	378
 金海心	jīn hǎi xīn	44
 金海星	jīn hǎi xīng	274
@@ -5021,6 +5129,13 @@ sort: by_weight
 崛川亮	jué chuān liàng	4
 卡奇社	kǎ qí shè	19
 卡斯柏	kǎ sī bǎi	22
+凱莉安	kǎi lì ān	450
+凱莉包	kǎi lì bāo	3
+凱莉庫	kǎi lì kù	410
+凱莉麥	kǎi lì mài	436
+凱莉墨	kǎi lì mò	266
+凱莉山	kǎi lì shān	315
+凱莉亞	kǎi lì yà	220
 闞犇犇	kàn bēn bēn	12
 闞立文	kàn lì wén	306
 闞清子	kàn qīng zǐ	60
@@ -5048,8 +5163,19 @@ sort: by_weight
 柯昌宇	kē chāng yǔ	12
 柯佳嬿	kē jiā yàn	482
 柯俊雄	kē jùn xióng	13
+柯克蘭	kē kè lán	433
+柯克曼	kē kè màn	423
+柯克斯	kē kè sī	63
+柯克亞	kē kè yà	5
 克蘭西	kè lán xī	22
+克里木	kè lǐ mù	45
+克魯斯	kè lǔ sī	788
+柯暮卿	kē mù qīng	25
 柯乃予	kē nǎi yǔ	12
+柯受良	kē shòu liáng	186
+柯以敏	kē yǐ mǐn	41
+柯有倫	kē yǒu lún	44
+柯震東	kē zhèn dōng	418
 孔二狗	kǒng èr gǒu	113
 孔連順	kǒng lián shùn	82
 孔令令	kǒng lìng lìng	22
@@ -5068,11 +5194,18 @@ sort: by_weight
 寇振海	kòu zhèn hǎi	6
 寇智國	kòu zhì guó	12
 堀北灣	kū běi wān	10
+堀川亮	kū chuān liàng	3
+庫薩克	kù sà kè	22
+堀秀行	kū xiù xíng	6
+鄺美雲	kuàng měi yún	57
 況明潔	kuàng míng jié	12
 匡牧野	kuāng mù yě	12
 鄺曉彤	kuàng xiǎo tóng	12
 鄺祖樂	kuàng zǔ lè	12
 葵伊吹	kuí yī chuī	10
+拉博夫	lā bó fū	353
+賴冠霖	lài guān lín	31
+賴琳恩	lài lín ēn	3
 賴美雲	lài měi yún	25
 瀨名步	lài míng bù	10
 瀨名光	lài míng guāng	10
@@ -5082,15 +5215,20 @@ sort: by_weight
 賴曉生	lài xiǎo shēng	15
 賴亞文	lài yà wén	75
 賴雨濛	lài yǔ méng	7
+蘭比爾	lán bǐ ěr	236
 蘭昊宇	lán hào yǔ	12
+藍潔瑛	lán jié yīng	100
 藍曼予	lán màn yǔ	12
 藍琪兒	lán qí ér	1
 藍天野	lán tiān yě	433
 蘭西雅	lán xī yǎ	274
+藍心湄	lán xīn méi	25
 藍心羽	lán xīn yǔ	22
+藍奕邦	lán yì bāng	72
 藍盈瑩	lán yíng yíng	129
 藍又時	lán yòu shí	26
 郎鶴炎	láng hè yán	72
+郎鶴焱	láng hè yàn	65
 郎永淳	láng yǒng chún	116
 郎月婷	láng yuè tíng	346
 郎祖筠	láng zǔ yún	418
@@ -5530,6 +5668,7 @@ sort: by_weight
 梁寶羚	liáng bǎo líng	22
 梁波羅	liáng bō luó	18
 梁朝偉	liáng cháo wěi	4308
+靚次伯	liàng cì bó	450
 梁翠珊	liáng cuì shān	12
 梁大維	liáng dà wéi	1115
 梁達偉	liáng dá wěi	22
@@ -6126,7 +6265,6 @@ sort: by_weight
 倫永亮	lún yǒng liàng	69
 駱達華	luò dá huá	6
 羅大佑	luó dà yòu	5988
-羅大佑	luó dà yòu	4790
 羅殿夏	luó diàn xià	12
 駱非池	luò fēi chí	16
 羅光旭	luó guāng xù	12
@@ -6526,7 +6664,7 @@ sort: by_weight
 寧澤濤	níng zé tāo	559
 牛寶軍	niú bǎo jūn	15
 鈕承澤	niǔ chéng zé	38
-牛得草	niú dé cǎo	324
+牛得草	niú de cǎo	324
 牛廣盛	niú guǎng shèng	12
 牛桂英	niú guì yīng	180
 牛建榮	niú jiàn róng	16
@@ -6536,6 +6674,7 @@ sort: by_weight
 牛青峰	niú qīng fēng	18
 牛欣欣	niú xīn xīn	238
 牛玉坤	niú yù kūn	37
+牛雨田	niú yǔ tián	6
 牛振華	niú zhèn huá	3
 牛子藩	niú zi fān	26
 糯美子	nuò měi zǐ	12
@@ -6833,6 +6972,7 @@ sort: by_weight
 錢惠麗	qián huì lì	326
 錢嘉樂	qián jiā lè	119
 錢門超	qián mén chāo	12
+千奈美	qiān nài měi	192
 錢謙益	qián qiān yì	301
 錢思劍	qián sī jiàn	16
 錢太后	qián tài hòu	207
@@ -6871,6 +7011,7 @@ sort: by_weight
 郄路通	qiè lù tōng	16
 茄子蛋	qié zi dàn	28
 秦伯坤	qín bó kūn	12
+琴葛蕾	qín gé lěi	41
 秦海璐	qín hǎi lù	242
 秦海清	qín hǎi qīng	12
 覃海洋	qín hǎi yáng	279
@@ -6895,6 +7036,7 @@ sort: by_weight
 青空光	qīng kōng guāng	10
 青山葵	qīng shān kuí	238
 清水愛	qīng shuǐ ài	482
+青小蛙	qīng xiǎo wā	3
 青野武	qīng yě wǔ	3
 青鈺雯	qīng yù wén	328
 瓊艾倫	qióng ài lún	243
@@ -6942,6 +7084,7 @@ sort: by_weight
 屈柏宇	qū bǎi yǔ	12
 屈楚蕭	qū chǔ xiāo	662
 曲迪娜	qū dí nà	12
+曲家瑞	qū jiā ruì	50
 屈菁菁	qū jīng jīng	374
 屈菁箐	qū jīng qìng	12
 曲雋希	qū juàn xī	1135
@@ -6963,6 +7106,7 @@ sort: by_weight
 全寶藍	quán bǎo lán	315
 全度妍	quán dù yán	35
 權恩妃	quán ēn fēi	9
+權海驍	quán hǎi xiāo	3
 權赫秀	quán hè xiù	234
 全慧彬	quán huì bīn	3
 全慧珍	quán huì zhēn	16
@@ -6984,6 +7128,7 @@ sort: by_weight
 全昭珉	quán zhāo mín	2
 權振東	quán zhèn dōng	50
 權志龍	quán zhì lóng	653
+全智賢	quán zhì xián	283
 全鐘瑞	quán zhōng ruì	9
 冉瑩穎	rǎn yíng yǐng	122
 饒天亮	ráo tiān liàng	364
@@ -7004,6 +7149,7 @@ sort: by_weight
 任劍輝	rén jiàn huī	35
 任駿飛	rén jùn fēi	426
 任柯諾	rén kē nuò	515
+任陸軍	rén lù jūn	16
 任洛敏	rén luò mǐn	12
 任妙音	rén miào yīn	316
 任銘松	rén míng sōng	12
@@ -7037,6 +7183,7 @@ sort: by_weight
 容天佑	róng tiān yòu	12
 肜耀忠	róng yào zhōng	12
 容志行	róng zhì xíng	436
+榮忠豪	róng zhōng háo	252
 榮梓杉	róng zǐ shān	25
 榮梓希	róng zǐ xī	12
 容祖兒	róng zǔ ér	562
@@ -7055,17 +7202,20 @@ sort: by_weight
 薩鋼雲	sà gāng yún	12
 薩日朗	sà rì lǎng	315
 薩日娜	sà rì nà	13
+賽琳娜	sài lín nà	901
 三宮椿	sān gōng chūn	10
 三上哲	sān shàng zhé	333
 三田杏	sān tián xìng	99
 三田櫻	sān tián yīng	10
 三尾惠	sān wěi huì	10
+桑德勒	sāng dé lè	25
 桑茗勝	sāng míng shèng	12
 桑葉紅	sāng yè hóng	15
 森昌子	sēn chāng zǐ	405
 森川葵	sēn chuān kuí	333
 森光子	sēn guāng zǐ	356
 森林北	sēn lín běi	222
+森美蘭	sēn měi lán	711
 森氣樓	sēn qì lóu	248
 森田剛	sēn tián gāng	441
 森香織	sēn xiāng zhī	328
@@ -7231,7 +7381,7 @@ sort: by_weight
 史力嘉	shǐ lì jiā	7
 石聯星	shí lián xīng	5
 史林子	shǐ lín zi	37
-石榴姐	shí liú jiě	1048
+石榴姐	shí liu jiě	1048
 施名帥	shī míng shuài	364
 史派西	shǐ pài xī	274
 石橋凌	shí qiáo líng	3
@@ -7307,11 +7457,13 @@ sort: by_weight
 寺島進	sì dǎo jìn	9
 寺島忍	sì dǎo rěn	3
 斯蒂勒	sī dì lè	41
+斯佳麗	sī jiā lì	948
 斯嘉麗	sī jiā lì	394
 斯力更	sī lì gèng	12
 司馬馗	sī mǎ kuí	26
 司馬敏	sī mǎ mǐn	18
 司馬恂	sī mǎ xún	3
+司馬燕	sī mǎ yàn	266
 寺門通	sì mén tōng	374
 姒少康	sì shào kāng	22
 姒太康	sì tài kāng	12
@@ -7324,6 +7476,7 @@ sort: by_weight
 斯文頓	sī wén dùn	558
 司雯嘉	sī wén jiā	297
 姒中康	sì zhōng kāng	12
+松本惠	sōng běn huì	288
 松本稔	sōng běn rěn	288
 松本潤	sōng běn rùn	28
 宋本中	sòng běn zhōng	26
@@ -7546,8 +7699,14 @@ sort: by_weight
 孫祖君	sūn zǔ jūn	16
 索寶莉	suǒ bǎo lì	12
 塔斯肯	tǎ sī kěn	482
+邰麗華	tái lì huá	3
+邰正宵	tái zhèng xiāo	38
+邰智源	tái zhì yuán	6
+譚炳文	tán bǐng wén	3
 譚非翎	tán fēi líng	18
+譚富英	tán fù yīng	157
 檀健次	tán jiàn cì	25
+譚傑希	tán jié xī	9
 譚靖雯	tán jìng wén	15
 譚蘭卿	tán lán qīng	310
 譚琍敏	tán lí mǐn	12
@@ -7579,31 +7738,44 @@ sort: by_weight
 譚佑銘	tán yòu míng	220
 譚友業	tán yǒu yè	207
 譚玉瑛	tán yù yīng	3
+譚元壽	tán yuán shòu	69
 譚元元	tán yuán yuán	47
+譚正巖	tán zhèng yán	19
 譚志玲	tán zhì líng	12
 譚宗堯	tán zōng yáo	18
 唐安琪	táng ān qí	6
+唐安麒	táng ān qí	5
+湯寶如	tāng bǎo rú	28
+堂本剛	táng běn gāng	110
 唐辰瀛	táng chén yíng	12
 唐國強	táng guó qiáng	320
 唐漢霄	táng hàn xiāo	44
+唐鶴德	táng hè dé	243
 唐葒菲	táng hóng fēi	35
+唐季禮	táng jì lǐ	53
 湯加麗	tāng jiā lì	508
 湯家琦	tāng jiā qí	15
+唐佳怡	táng jiā yí	342
 唐鑑軍	táng jiàn jūn	22
 唐傑忠	táng jié zhōng	35
 湯晶晶	tāng jīng jīng	16
 湯晶媚	tāng jīng mèi	454
 唐九洲	táng jiǔ zhōu	18
 唐莉佳	táng lì jiā	300
+唐立淇	táng lì qí	504
+唐馬儒	táng mǎ rú	41
 湯夢佳	tāng mèng jiā	12
 唐培彥	táng péi yàn	15
+唐綺陽	táng qǐ yáng	356
 唐齊遙	táng qí yáo	12
 唐錢婷	táng qián tíng	3
 唐睿澤	táng ruì zé	12
 唐詩逸	táng shī yì	405
 唐詩怡	táng shī yí	1
+唐詩詠	táng shī yǒng	6
 唐書亞	táng shū yà	12
 唐太宗	táng tài zōng	2948
+唐文龍	táng wén lóng	6
 唐小然	táng xiǎo rán	26
 唐曉天	táng xiǎo tiān	126
 唐小喜	táng xiǎo xǐ	35
@@ -7612,48 +7784,68 @@ sort: by_weight
 唐一菲	táng yī fēi	25
 唐以諾	táng yǐ nuò	12
 唐藝昕	táng yì xīn	60
+湯盈盈	tāng yíng yíng	13
 唐於鴻	táng yú hóng	12
+唐禹哲	táng yǔ zhé	6
+唐月華	táng yuè huá	328
+唐韻笙	táng yùn shēng	13
 唐振超	táng zhèn chāo	12
+湯鎮業	tāng zhèn yè	22
+湯鎮宗	tāng zhèn zōng	9
 唐正東	táng zhèng dōng	50
 唐子皓	táng zǐ hào	1
 唐紫睿	táng zǐ ruì	35
 湯子星	tāng zǐ xīng	126
 陶波爾	táo bō ěr	12
 陶辰宇	táo chén yǔ	12
+陶大宇	táo dà yǔ	47
 陶飛霏	táo fēi fēi	15
 陶漢林	táo hàn lín	1012
 陶灝景	táo hào jǐng	12
 陶慧敏	táo huì mǐn	530
 陶慧娜	táo huì nà	115
+陶晶瑩	táo jīng yíng	88
 陶玲玲	táo líng líng	26
 陶珞依	táo luò yī	122
 陶思源	táo sī yuán	18
 陶昕然	táo xīn rán	13
+陶奕希	táo yì xī	6
 陶玉玲	táo yù líng	430
 陶鈺玉	táo yù yù	22
 陶澤如	táo zé rú	416
+特雷克	tè léi kè	38
+特倫斯	tè lún sī	57
 滕愛弦	téng ài xián	12
 騰格爾	téng gé ěr	411
 滕光正	téng guāng zhèng	12
 藤貴子	téng guì zǐ	1
 藤環奈	téng huán nài	10
+藤井隆	téng jǐng lóng	3
+滕麗名	téng lì míng	31
 藤浦惠	téng pǔ huì	10
+藤田剛	téng tián gāng	276
 滕文昊	téng wén hào	22
 天川空	tiān chuān kōng	10
 田芳茗	tián fāng míng	12
+田馥甄	tián fù zhēn	1404
 田海蓉	tián hǎi róng	22
 天海翼	tiān hǎi yì	10
 田嘉瑞	tián jiā ruì	12
 田家伊	tián jiā yī	12
 田京凡	tián jīng fán	12
 田蕾希	tián lěi xī	15
+田連元	tián lián yuán	28
 田璐菡	tián lù hàn	16
 天馬唯	tiān mǎ wéi	10
+甜梅號	tián méi hào	223
 田明鑫	tián míng xīn	1726
 田牧宸	tián mù chén	18
 田牧童	tián mù tóng	12
 田樸珺	tián pǔ jùn	824
+田啟文	tián qǐ wén	31
+田沁鑫	tián qìn xīn	82
 田穰苴	tián ráng jū	415
+田蕊妮	tián ruǐ nī	9
 天使萌	tiān shǐ méng	10
 田書臣	tián shū chén	22
 田姝麗	tián shū lì	12
@@ -7675,6 +7867,7 @@ sort: by_weight
 田志斌	tián zhì bīn	12
 田紫紫	tián zǐ zǐ	54
 帖雅娜	tiē yǎ nà	364
+童安格	tóng ān gé	60
 佟晨潔	tóng chén jié	57
 佟大為	tóng dà wéi	242
 童可可	tóng kě kě	346
@@ -7686,6 +7879,7 @@ sort: by_weight
 仝曉燕	tóng xiǎo yàn	12
 童苡萱	tóng yǐ xuān	237
 童振軍	tóng zhèn jūn	12
+童芷苓	tóng zhǐ líng	3
 童自榮	tóng zì róng	75
 土豆姐	tǔ dòu jiě	337
 屠洪剛	tú hóng gāng	47
@@ -7695,6 +7889,8 @@ sort: by_weight
 屠夏巖	tú xià yán	12
 塗議嘉	tú yì jiā	316
 屠芷瑩	tú zhǐ yíng	15
+團十郎	tuán shí láng	396
+托尼賈	tuō ní jiǎ	63
 萬寶寶	wàn bǎo bao	436
 萬芳舟	wàn fāng zhōu	133
 萬國鵬	wàn guó péng	297
@@ -7702,11 +7898,14 @@ sort: by_weight
 萬麗娜	wàn lì nà	558
 萬美汐	wàn měi xī	261
 萬妮達	wàn nī dá	486
+萬綺雯	wàn qǐ wén	100
 萬千惠	wàn qiān huì	16
 萬聖偉	wàn shèng wěi	28
 萬思維	wàn sī wéi	212
+萬筱菊	wàn xiǎo jú	9
 萬曉利	wàn xiǎo lì	151
 萬雨航	wàn yǔ háng	12
+萬梓良	wàn zǐ liáng	53
 萬籽麟	wàn zǐ lín	53
 萬子晴	wàn zi qíng	30
 王安琪	wáng ān qí	337
@@ -7749,7 +7948,6 @@ sort: by_weight
 王道鐵	wáng dào tiě	15
 王德順	wáng dé shùn	747
 汪東城	wāng dōng chéng	76
-汪東城	wāng dōng chéng	53
 王東輝	wáng dōng huī	437
 王恩琦	wáng ēn qí	22
 王貳浪	wáng èr làng	418
@@ -7827,7 +8025,7 @@ sort: by_weight
 王瀾靜	wáng lán jìng	12
 王藍莓	wáng lán méi	26
 王樂君	wáng lè jūn	118
-王樂樂	wáng lè lè	1818
+王樂樂	wáng lè lè	818
 王麗達	wáng lì dá	812
 王俐丹	wáng lì dān	16
 王麗涵	wáng lì hán	12
@@ -8155,8 +8353,10 @@ sort: by_weight
 魏積安	wèi jī ān	327
 魏佳藝	wèi jiā yì	16
 魏健隆	wèi jiàn lóng	15
+韋禮安	wéi lǐ ān	479
 威力斯	wēi lì sī	24
 魏敏芝	wèi mǐn zhī	239
+尾崎豐	wěi qí fēng	75
 魏千翔	wèi qiān xiáng	433
 魏秋月	wèi qiū yuè	327
 魏伸洲	wèi shēn zhōu	12
@@ -8181,11 +8381,14 @@ sort: by_weight
 溫碧霞	wēn bì xiá	53
 溫淳棣	wēn chún dì	12
 文東彪	wén dōng biāo	12
+文根英	wén gēn yīng	16
 溫桂鈺	wēn guì yù	12
 溫果希	wēn guǒ xī	12
 溫海波	wēn hǎi bō	122
 文鴻毅	wén hóng yì	12
+文瑾瑩	wén jǐn yíng	3
 溫晶婕	wēn jīng jié	255
+文晶熙	wén jīng xī	3
 文俊輝	wén jùn huī	25
 文俊珽	wén jùn tǐng	12
 溫力銘	wēn lì míng	315
@@ -8196,17 +8399,31 @@ sort: by_weight
 溫絲蕾	wēn sī lěi	432
 溫斯蕾	wēn sī lěi	281
 溫鐵軍	wēn tiě jūn	267
+文熙俊	wén xī jùn	19
 溫錫瑩	wēn xī yíng	16
+文興宇	wén xīng yǔ	53
+文詠珊	wén yǒng shān	38
 溫裕紅	wēn yù hóng	292
 溫玉娟	wēn yù juān	284
 文渝淇	wén yú qí	1
 溫兆倫	wēn zhào lún	78
 溫兆宇	wēn zhào yǔ	279
 溫貞菱	wēn zhēn líng	378
+文晸赫	wén zhěng hè	9
 溫崢嶸	wēn zhēng róng	730
 溫智美	wēn zhì měi	12
 翁楚漢	wēng chǔ hàn	12
+翁斐然	wēng fěi rán	22
+翁家明	wēng jiā míng	364
+翁嘉穗	wēng jiā suì	270
+翁靜晶	wēng jìng jīng	66
+翁美玲	wēng měi líng	47
+翁倩玉	wēng qiàn yù	50
 翁文千	wēng wén qiān	12
+翁振新	wēng zhèn xīn	207
+翁滋蔓	wēng zī màn	360
+渥美清	wò měi qīng	296
+伍佰萬	wǔ bǎi wàn	364
 吳碧霞	wú bì xiá	518
 武博涵	wǔ bó hán	12
 吳博威	wú bó wēi	12
@@ -8243,10 +8460,12 @@ sort: by_weight
 鄔靖靖	wū jìng jìng	234
 吳婧靚	wú jìng liàng	12
 吳敬平	wú jìng píng	1337
+武井咲	wǔ jǐng xiào	9
 吳靖萱	wú jìng xuān	37
 吳靜一	wú jìng yī	30
 吳駿超	wú jùn chāo	12
 吳軍忱	wú jūn chén	12
+鄔君梅	wū jūn méi	69
 吳君如	wú jūn rú	170
 吳俊霆	wú jùn tíng	12
 吳俊餘	wú jùn yú	926
@@ -8270,6 +8489,7 @@ sort: by_weight
 吳綺莉	wú qǐ lì	319
 吳奇隆	wú qí lóng	226
 吳綺珊	wú qǐ shān	12
+巫啟賢	wū qǐ xián	75
 吳倩蓮	wú qiàn lián	91
 鄔倩倩	wū qiàn qiàn	392
 吳芊盈	wú qiān yíng	15
@@ -8283,10 +8503,14 @@ sort: by_weight
 吳若甫	wú ruò fǔ	53
 吳若希	wú ruò xī	666
 吳施樂	wú shī lè	1
+伍仕賢	wǔ shì xián	391
 吳世勳	wú shì xūn	204
+伍思凱	wǔ sī kǎi	28
 吳頌今	wú sòng jīn	526
 吳素真	wú sù zhēn	12
+武藤蘭	wǔ téng lán	25
 武桐桐	wǔ tóng tóng	25
+伍衛國	wǔ wèi guó	9
 武文佳	wǔ wén jiā	16
 吳文璟	wú wén jǐng	12
 吳希澤	wú xī zé	22
@@ -8317,6 +8541,7 @@ sort: by_weight
 吳鶯音	wú yīng yīn	35
 吳勇豪	wú yǒng háo	15
 吳永靈	wú yǒng líng	12
+伍詠薇	wǔ yǒng wēi	3
 吳有才	wú yǒu cái	18
 吳玉芳	wú yù fāng	116
 吳雨霏	wú yǔ fēi	50
@@ -8333,6 +8558,7 @@ sort: by_weight
 武雨澤	wǔ yǔ zé	15
 舞原聖	wǔ yuán shèng	10
 吳雲飛	wú yún fēi	2112
+伍允龍	wǔ yǔn lóng	3
 吳澤林	wú zé lín	15
 吳哲晗	wú zhé hán	130
 鄔禎琳	wū zhēn lín	15
@@ -8346,12 +8572,18 @@ sort: by_weight
 吳卓羲	wú zhuó xī	53
 吳紫彤	wú zǐ tóng	26
 吳宗憲	wú zōng xiàn	477
+西貝爾	xī bèi ěr	25
 西川憐	xī chuān lián	12
+喜多郎	xǐ duō láng	82
+西恩潘	xī ēn pān	19
 西宮夢	xī gōng mèng	10
+希林娜	xī lín nà	3
 奚美娟	xī měi juān	63
 奚夢瑤	xī mèng yáo	138
 席惟倫	xí wéi lún	12
 奚秀蘭	xī xiù lán	356
+西野翔	xī yě xiáng	6
+夕又米	xī yòu mǐ	28
 夏川純	xià chuān chún	230
 夏德俊	xià dé jùn	189
 夏瀚宇	xià hàn yǔ	22
@@ -8384,9 +8616,15 @@ sort: by_weight
 夏梓桐	xià zǐ tóng	433
 冼東妹	xiǎn dōng mèi	369
 仙杜拉	xiān dù lā	446
+咸恩靜	xián ēn jìng	9
 鮮嘉臣	xiān jiā chén	12
+仙妮婭	xiān nī yà	3
 冼色麗	xiǎn sè lì	310
 向玢璇	xiàng bīn xuán	12
+香草冰	xiāng cǎo bīng	6
+向海嵐	xiàng hǎi lán	6
+向井理	xiàng jǐng lǐ	418
+香里奈	xiāng lǐ nài	6
 香水純	xiāng shuǐ chún	10
 項偞婧	xiàng xiè jìng	26
 向俞星	xiàng yú xīng	33
@@ -8394,27 +8632,35 @@ sort: by_weight
 相澤南	xiāng zé nán	10
 小阿七	xiǎo ā qī	16
 小彩旗	xiǎo cǎi qí	621
+蕭長華	xiāo cháng huá	6
 蕭岱青	xiāo dài qīng	12
 小島南	xiǎo dǎo nán	10
 肖德俊	xiāo dé jùn	16
 小東北	xiǎo dōng běi	585
 蕭芳芳	xiāo fāng fāng	38
+小鳳仙	xiǎo fèng xiān	498
 肖光奕	xiāo guāng yì	12
 蕭浩冉	xiāo hào rǎn	4
 小花暖	xiǎo huā nuǎn	10
 小黃飛	xiǎo huáng fēi	320
+蕭煌奇	xiāo huáng qí	266
 篠惠美	xiǎo huì měi	10
+蕭敬騰	xiāo jìng téng	2603
 肖凱中	xiāo kǎi zhōng	12
 小樂哥	xiǎo lè gē	35
 小李琳	xiǎo lǐ lín	270
+小栗旬	xiǎo lì xún	210
+小林薰	xiǎo lín xūn	3
 小劉佳	xiǎo liú jiā	2
 瀟夢臨	xiāo mèng lín	15
 小鵬飛	xiǎo péng fēi	26
+筱崎愛	xiǎo qí ài	19
 肖榮生	xiāo róng shēng	3
 肖若騰	xiāo ruò téng	78
 小三金	xiǎo sān jīn	15
 小沈龍	xiǎo shěn lóng	22
 小瀋陽	xiǎo shěn yáng	339
+蕭淑慎	xiāo shū shèn	50
 肖順堯	xiāo shùn yáo	392
 蕭松原	xiāo sōng yuán	12
 筱素清	xiǎo sù qīng	15
@@ -8427,11 +8673,15 @@ sort: by_weight
 小香玉	xiǎo xiāng yù	1
 小小如	xiǎo xiǎo rú	235
 肖亞文	xiāo yà wén	57
+蕭亞軒	xiāo yà xuān	820
 肖雁寧	xiāo yàn níng	15
 肖懿航	xiāo yì háng	715
+蕭憶情	xiāo yì qíng	31
 小伊伊	xiǎo yī yī	369
 肖宇梁	xiāo yǔ liáng	26
 肖雨雨	xiāo yǔ yǔ	224
+小澤圓	xiǎo zé yuán	13
+蕭正楠	xiāo zhèng nán	13
 謝安琪	xiè ān qí	204
 謝安然	xiè ān rán	122
 謝彬彬	xiè bīn bīn	360
@@ -8511,9 +8761,11 @@ sort: by_weight
 謝祖武	xiè zǔ wǔ	450
 辛柏青	xīn bǎi qīng	57
 新村晶	xīn cūn jīng	10
+新鳳霞	xīn fèng xiá	135
 辛棄疾	xīn qì jí	555
 辛瑞琪	xīn ruì qí	12
 欣小萌	xīn xiǎo méng	73
+辛曉琪	xīn xiǎo qí	355
 新有菜	xīn yǒu cài	10
 辛有志	xīn yǒu zhì	315
 辛雨錫	xīn yǔ xī	16
@@ -8529,6 +8781,7 @@ sort: by_weight
 邢岷山	xíng mín shān	320
 星奈愛	xīng nài ài	10
 星野明	xīng yě míng	10
+星野南	xīng yě nán	3
 邢宇飛	xíng yǔ fēi	12
 邢雨靜	xíng yǔ jìng	12
 邢增婧	xíng zēng jìng	18
@@ -8538,7 +8791,9 @@ sort: by_weight
 熊敦瀚	xióng dūn hàn	9
 熊乃瑾	xióng nǎi jǐn	3
 熊沁嫺	xióng qìn xián	12
+熊汝霖	xióng rǔ lín	387
 熊睿玲	xióng ruì líng	326
+熊天平	xióng tiān píng	50
 熊穩穩	xióng wěn wěn	12
 熊欣欣	xióng xīn xīn	82
 熊心瑤	xióng xīn yáo	306
@@ -8547,6 +8802,7 @@ sort: by_weight
 熊澤波	xióng zé bō	12
 熊梓淇	xióng zǐ qí	400
 熊紫軼	xióng zǐ yì	12
+修杰楷	xiū jié kǎi	6
 修雨秀	xiū yǔ xiù	12
 修宗迪	xiū zōng dí	9
 徐百慧	xú bǎi huì	30
@@ -8734,9 +8990,12 @@ sort: by_weight
 薛媛媛	xuē yuàn yuàn	23
 薛澤源	xuē zé yuán	12
 薛之謙	xuē zhī qiān	2898
+荀慧生	xún huì shēng	41
+丫蛋兒	yā dàn ér	9
 芽森滴	yá sēn dī	10
 顏碧君	yán bì jūn	16
 顏丙燕	yán bǐng yàn	91
+言承旭	yán chéng xù	91
 顏丹晨	yán dān chén	13
 閆鳳嬌	yán fèng jiāo	9
 顏冠英	yán guān yīng	338
@@ -8744,8 +9003,10 @@ sort: by_weight
 嚴浩翔	yán hào xiáng	212
 閻鶴祥	yán hè xiáng	170
 閻虹宇	yán hóng yǔ	12
+言慧珠	yán huì zhū	53
 閆佳穎	yán jiā yǐng	30
 顏敬傑	yán jìng jié	15
+言菊朋	yán jú péng	38
 顏駿凌	yán jùn líng	160
 嚴君澤	yán jūn zé	6
 閆可欣	yán kě xīn	12
@@ -8761,6 +9022,7 @@ sort: by_weight
 閻青妤	yán qīng yú	540
 閻善春	yán shàn chūn	122
 嚴尚嘉	yán shàng jiā	12
+言少朋	yán shǎo péng	288
 顏世魁	yán shì kuí	12
 閆薇兒	yán wēi ér	2
 閻韋伶	yán wéi líng	274
@@ -8768,9 +9030,11 @@ sort: by_weight
 閆汶渲	yán wèn xuàn	12
 顏小健	yán xiǎo jiàn	16
 閆曉楠	yán xiǎo nán	31
+言興朋	yán xīng péng	9
 焉栩嘉	yān xǔ jiā	28
 閆學晶	yán xué jīng	6
 閻學晶	yán xué jīng	5
+炎亞綸	yán yà lún	35
 閆彥龍	yán yàn lóng	12
 嚴燕生	yán yàn shēng	30
 嚴彥子	yán yàn zǐ	12
@@ -8778,9 +9042,13 @@ sort: by_weight
 閻奕格	yán yì gé	432
 嚴屹寬	yán yì kuān	603
 閆益民	yán yì mín	12
+顏穎思	yán yǐng sī	3
 閆永強	yán yǒng qiáng	18
+顏玉瑩	yán yù yíng	338
 閻月明	yán yuè míng	261
 閆雲達	yán yún dá	387
+延政勳	yán zhèng xūn	236
+顏卓靈	yán zhuó líng	16
 晏紫東	yàn zǐ dōng	228
 嚴子賢	yán zǐ xián	1
 閆宗海	yán zōng hǎi	117
@@ -9033,9 +9301,11 @@ sort: by_weight
 伊泓遠	yī hóng yuǎn	3
 易嘉愛	yì jiā ài	572
 易建聯	yì jiàn lián	2587
+易立競	yì lì jìng	331
 易夢玲	yì mèng líng	12
 伊米娜	yī mǐ nà	1
 一乃葵	yī nǎi kuí	10
+伊能靜	yī néng jìng	446
 易思玲	yì sī líng	300
 伊添鍇	yī tiān kǎi	12
 易小星	yì xiǎo xīng	60
@@ -9044,9 +9314,13 @@ sort: by_weight
 易易紫	yì yì zǐ	139
 衣雲鶴	yī yún hè	33
 尹博林	yǐn bó lín	12
+尹桂芳	yǐn guì fāng	414
 殷果兒	yīn guǒ er	137
 尹惠利	yǐn huì lì	12
+尹麗川	yǐn lì chuān	3
+殷明珠	yīn míng zhū	293
 尹姝貽	yǐn shū yí	9
+尹素婉	yǐn sù wǎn	3
 尹熙水	yǐn xī shuǐ	115
 印小天	yìn xiǎo tiān	245
 尹馨梓	yǐn xīn zǐ	230
@@ -9068,6 +9342,7 @@ sort: by_weight
 櫻木凜	yīng mù lǐn	10
 櫻心美	yīng xīn měi	10
 櫻由羅	yīng yóu luó	10
+應雲衛	yīng yún wèi	351
 永瀨唯	yǒng lài wéi	10
 永野司	yǒng yě sī	10
 遊本昌	yóu běn chāng	38
@@ -9076,6 +9351,7 @@ sort: by_weight
 尤靖茹	yóu jìng rú	218
 遊樂兒	yóu lè ér	315
 尤憲超	yóu xiàn chāo	3
+由香里	yóu xiāng lǐ	42
 尤勇智	yóu yǒng zhì	215
 尤長靖	yóu zhǎng jìng	450
 余皚磊	yú ái lěi	25
@@ -9984,6 +10260,7 @@ sort: by_weight
 鍾易軒	zhōng yì xuān	135
 鍾藝雲	zhōng yì yún	12
 鍾瑩瑩	zhōng yíng yíng	252
+中原茂	zhōng yuán mào	392
 鍾鎮濤	zhōng zhèn tāo	91
 鍾志光	zhōng zhì guāng	405
 周愛華	zhōu ài huá	15
@@ -10036,6 +10313,7 @@ sort: by_weight
 周鵬雨	zhōu péng yǔ	12
 周品睿	zhōu pǐn ruì	15
 周啓豪	zhōu qǐ háo	826
+洲崎綾	zhōu qí líng	459
 周奇墨	zhōu qí mò	16
 周奇奇	zhōu qí qí	737
 周睿林	zhōu ruì lín	12
@@ -10095,6 +10373,7 @@ sort: by_weight
 朱晨辰	zhū chén chén	33
 朱晨麗	zhū chén lì	477
 朱丹妮	zhū dān nī	22
+祝釩剛	zhù fán gāng	3
 朱芳雨	zhū fāng yǔ	323
 朱逢博	zhū féng bó	226
 豬哥亮	zhū gē liàng	188
@@ -10132,6 +10411,7 @@ sort: by_weight
 朱榮振	zhū róng zhèn	122
 朱聖禕	zhū shèng yī	3726
 朱時茂	zhū shí mào	179
+祝書元	zhù shū yuán	230
 朱天福	zhū tiān fú	15
 竹田夢	zhú tián mèng	10
 祝天宇	zhù tiān yǔ	12
@@ -10141,6 +10421,7 @@ sort: by_weight
 朱瑋菱	zhū wěi líng	12
 朱衛茵	zhū wèi yīn	248
 朱文超	zhū wén chāo	18
+祝文君	zhù wén jūn	382
 朱習愛	zhū xí ài	12
 祝希娟	zhù xī juān	19
 祝向陽	zhù xiàng yáng	12
@@ -10149,6 +10430,7 @@ sort: by_weight
 朱曉漁	zhū xiǎo yú	26
 朱信宗	zhū xìn zōng	35
 朱星傑	zhū xīng jié	112
+諸星堇	zhū xīng jǐn	405
 祝緒丹	zhù xù dān	28
 朱雅瓊	zhū yǎ qióng	12
 朱亞文	zhū yà wén	163
@@ -10191,6 +10473,13 @@ sort: by_weight
 莊則棟	zhuāng zé dòng	41
 莊則熙	zhuāng zé xī	1
 椎名空	zhuī míng kōng	10
+卓別林	zhuó bié lín	1479
+卓冠廷	zhuó guān tíng	364
+卓文萱	zhuó wén xuān	9
+卓亞君	zhuó yà jūn	279
+卓義峰	zhuó yì fēng	13
+卓依婷	zhuó yī tíng	19
+卓韻芝	zhuó yùn zhī	441
 梓光莉	zǐ guāng lì	10
 宗峰巖	zōng fēng yán	400
 宗馥莉	zōng fù lì	141
@@ -10222,215 +10511,1102 @@ sort: by_weight
 佐山愛	zuǒ shān ài	10
 左騰雲	zuǒ téng yún	33
 左小青	zuǒ xiǎo qīng	581
+阿彼察邦	ā bǐ chá bāng	328
+阿弗萊克	ā fú lái kè	170
 阿帕爾江	ā pà ěr jiāng	1
+阿森鮑魚	ā sēn bào yú	256
+阿依吐拉	ā yī tǔ lā	284
+愛朵女孩	ài duǒ nǚ hái	207
 艾福傑尼	ài fú jié ní	57
-愛乃娜美	ài nǎi nà měi	10
+愛洪佩瑜	ài hóng pèi yú	76
+愛莉安娜	ài lì ān nà	639
+埃米納姆	āi mǐ nà mǔ	428
+愛乃娜美	ài nǎi nà měi	180
+愛內里菜	ài nèi lǐ cài	13
+愛內梨花	ài nèi lí huā	207
+愛崎萌亞	ài qí méng yà	144
+愛射佳宜	ài shè jiā yí	50
 愛世夢蘿	ài shì mèng luó	10
+愛斯伊司	ài sī yī sī	162
 愛田飛鳥	ài tián fēi niǎo	10
-愛田奈奈	ài tián nài nài	10
+愛田奈奈	ài tián nài nài	153
+愛娃格林	ài wá gé lín	9
+愛須心亞	ài xū xīn yà	180
 愛原沙耶	ài yuán shā yé	10
 愛原實花	ài yuán shí huā	1
 愛澤有紗	ài zé yǒu shā	10
+安倍夏美	ān bèi xià měi	405
+岸本齊史	àn běn qí shǐ	333
+岸本聖史	àn běn shèng shǐ	238
+岸本實理	àn běn shí lǐ	288
+岸本早未	àn běn zǎo wèi	284
+岸部一德	àn bù yī dé	400
+岸部真明	àn bù zhēn míng	454
 安達夕莉	ān dá xī lì	10
-安齋拉拉	ān zhāi lā lā	10
+安達祐實	ān dá yòu shí	400
+安達佑實	ān dá yòu shí	232
+岸谷五朗	àn gǔ wǔ lǎng	410
+安海瑟薇	ān hǎi sè wēi	374
+安吉麗娜	ān jí lì nà	251
+安吉莉娜	ān jí lì nà	226
+安濟知佳	ān jì zhī jiā	432
+安玖深音	ān jiǔ shēn yīn	310
+安良城紅	ān liáng chéng hóng	189
+岸明日香	àn míng rì xiāng	189
+安妮斯頓	ān nī sī dùn	845
+岸尾大輔	àn wěi dà fǔ	3
+安西英美	ān xī yīng měi	153
+安西正弘	ān xī zhèng hóng	256
+安形紗綾	ān xíng shā líng	99
+岸野里香	àn yě lǐ xiāng	382
+安野希世	ān yě xī shì	441
+岸野幸正	àn yě xìng zhèng	306
+庵野秀明	ān yě xiù míng	1627
+安與騎兵	ān yǔ qí bīng	369
+安原麗子	ān yuán lì zǐ	284
+安元洋貴	ān yuán yáng guì	549
+安原真美	ān yuán zhēn měi	130
+安齋拉拉	ān zhāi lā lā	50
+安祖蓮娜	ān zǔ lián nà	288
+奧成洋輔	ào chéng yáng fǔ	76
+奧川恭伸	ào chuān gōng shēn	144
+奧登科克	ào dēng kē kè	441
+奧井康介	ào jǐng kāng jiè	256
+奧井雅美	ào jǐng yǎ měi	544
+奧卡菲娜	ào kǎ fēi nà	31
+敖力布告	áo lì bù gào	117
 敖日格樂	áo rì gé lè	80
+奧山真澄	ào shān zhēn chéng	212
+奧畑幸典	ào tián xìng diǎn	153
+奧田瑛二	ào tián yīng èr	356
+傲笑紅塵	ào xiào hóng chén	324
+奧野香耶	ào yě xiāng yé	320
+奧真奈美	ào zhēn nài měi	405
+奧仲麻琴	ào zhòng má qín	270
+八坂紫織	bā bǎn zǐ zhī	99
+八潮瑠唯	bā cháo liú wéi	171
+八島智人	bā dǎo zhì rén	194
 巴哈古麗	bā hā gǔ lì	14
-八木奈奈	bā mù nài nài	10
+巴克哈德	bā kè hā dé	243
+八木奈奈	bā mù nài nài	99
+八木勇征	bā mù yǒng zhēng	234
+八木優希	bā mù yōu xī	261
+八木梓紗	bā mù zǐ shā	45
+八千草薰	bā qiān cǎo xūn	320
+八千草薫	bā qiān cǎo xūn	251
+八千草燻	bā qiān cǎo xūn	29
+八神浩樹	bā shén hào shù	256
+八手三郎	bā shǒu sān láng	562
+八武崎碧	bā wǔ qí bì	130
+八尋寧寧	bā xún níng níng	144
+八乙女光	bā yǐ nǚ guāng	468
 白坂美杏	bái bǎn měi xìng	10
-白川柚子	bái chuān yòu zi	10
-白峰美羽	bái fēng měi yǔ	10
+白濱亞嵐	bái bīn yà lán	333
+白川和子	bái chuān hé zǐ	220
+白川由美	bái chuān yóu měi	302
+白川柚子	bái chuān yòu zi	45
+白飯如霜	bái fàn rú shuāng	270
+白峰美羽	bái fēng měi yǔ	45
+白河靜流	bái hé jìng liú	225
+拜和拉木	bài hé lā mù	42
+白井悠介	bái jǐng yōu jiè	418
 百瀨飛鳥	bǎi lài fēi niǎo	10
+百瀨莉緒	bǎi lài lì xù	153
+百瀨武昭	bǎi lài wǔ zhāo	117
+百瀨勇貴	bǎi lài yǒng guì	171
 百慕三石	bǎi mù sān shí	11
 柏木小夏	bǎi mù xiǎo xià	10
-白木優子	bái mù yōu zǐ	10
+白木杏奈	bái mù xìng nài	248
+柏木英理	bǎi mù yīng lǐ	117
+柏木由紀	bǎi mù yóu jì	38
+白木優子	bái mù yōu zǐ	212
+白那日蘇	bái nà rì sū	76
+白鳥藍良	bái niǎo lán liáng	50
+白鳥由里	bái niǎo yóu lǐ	459
+白鳥玉季	bái niǎo yù jì	189
 白崎彩葉	bái qí cǎi yè	10
-坂道美琉	bǎn dào měi liú	10
+白上吹雪	bái shàng chuī xuě	342
+白石大河	bái shí dà hé	162
+白石冬美	bái shí dōng měi	302
+白石紀晴	bái shí jì qíng	45
+白石涼子	bái shí liáng zǐ	536
+白石麻衣	bái shí má yī	590
+白石美帆	bái shí měi fān	310
+白石茉莉	bái shí mò lì	428
+白石晴香	bái shí qíng xiāng	410
+白石日和	bái shí rì hé	144
+白石隼也	bái shí sǔn yě	356
+白石文子	bái shí wén zǐ	194
+百武裕司	bǎi wǔ yù sī	212
+柏原芳惠	bǎi yuán fāng huì	284
+柏原麻實	bǎi yuán má shí	99
+柏原收史	bǎi yuán shōu shǐ	279
+板坂泰江	bǎn bǎn tài jiāng	144
+班貝克曼	bān bèi kè màn	261
+坂本冬美	bǎn běn dōng měi	360
+坂道美琉	bǎn dào měi liú	153
+班德拉斯	bān dé lā sī	522
+班德羅斯	bān dé luó sī	144
+坂東龍汰	bǎn dōng lóng tài	288
+坂東尚樹	bǎn dōng shàng shù	328
+伴都美子	bàn dōu měi zǐ	302
+板谷由夏	bǎn gǔ yóu xià	392
 坂井成羽	bǎn jǐng chéng yǔ	10
+坂井泉水	bǎn jǐng quán shuǐ	621
+坂井真紀	bǎn jǐng zhēn jì	320
+坂口大助	bǎn kǒu dà zhù	500
+阪口大助	bǎn kǒu dà zhù	137
+坂口理子	bǎn kǒu lǐ zi	418
+坂口良子	bǎn kǒu liáng zǐ	288
+坂口憲二	bǎn kǒu xiàn èr	369
+坂口賢一	bǎn kǒu xián yī	144
+坂口杏里	bǎn kǒu xìng lǐ	261
+坂口哲夫	bǎn kǒu zhé fū	207
+阪口周平	bǎn kǒu zhōu píng	328
+坂口渚沙	bǎn kǒu zhǔ shā	392
+阪田佳代	bǎn tián jiā dài	220
+半田健人	bàn tián jiàn rén	274
+板尾創路	bǎn wěi chuàng lù	378
+坂熊孝彥	bǎn xióng xiào yàn	171
+板垣瑞生	bǎn yuán ruì shēng	266
+保坂和志	bǎo bǎn hé zhì	162
+保坂繪里	bǎo bǎn huì lǐ	50
+保坂嘉內	bǎo bǎn jiā nèi	171
+保阪尚希	bǎo bǎn shàng xī	76
+鮑比布朗	bào bǐ bù lǎng	3
+鮑勃迪倫	bào bó dí lún	1112
+鮑勃馬利	bào bó mǎ lì	16
+寶龜克壽	bǎo guī kè shòu	410
 包胡爾查	bāo hú ěr chá	7
+寶井秀人	bǎo jǐng xiù rén	194
+保羅安卡	bǎo luó ān kǎ	270
+保羅紐曼	bǎo luó niǔ màn	544
+保羅沃克	bǎo luó wò kè	864
 寶木中陽	bǎo mù zhōng yáng	1
-北川杏樹	běi chuān xìng shù	10
+寶石老舅	bǎo shí lǎo jiù	45
+寶野聰史	bǎo yě cōng shǐ	202
+北川弘美	běi chuān hóng měi	315
+北川景子	běi chuān jǐng zǐ	28
+北川米彥	běi chuān mǐ yàn	220
+北川勝博	běi chuān shèng bó	144
+北川杏樹	běi chuān xìng shù	207
+北川悠仁	běi chuān yōu rén	405
 北川柚子	běi chuān yòu zi	10
+北川智繪	běi chuān zhì huì	202
+北村匠海	běi cūn jiàng hǎi	418
+北島三郎	běi dǎo sān láng	3
+北方夕鶴	běi fāng xī hè	297
+貝納尼絲	bèi nà ní sī	50
+北乃紀伊	běi nǎi jì yī	310
 貝若德華	bèi ruò dé huá	157
+北山宏光	běi shān hóng guāng	382
+北酸腳桿	běi suān jiǎo gǎn	50
+北條麻紀	běi tiáo má jì	130
+北條美里	běi tiáo měi lǐ	153
+北條香理	běi tiáo xiāng lǐ	117
+貝托魯奇	bèi tuō lǔ qí	364
+北原愛子	běi yuán ài zǐ	261
+北原梨奈	běi yuán lí nài	180
+北原里英	běi yuán lǐ yīng	3
+北原夏美	běi yuán xià měi	320
+本尼狄克	běn ní dí kè	285
+本尼西奧	běn ní xī ào	320
+本山大叔	běn shān dà shū	688
+本田邦久	běn tián bāng jiǔ	117
+本田貴子	běn tián guì zǐ	410
+本田仁美	běn tián rén měi	6
+本條二亞	běn tiáo èr yà	162
+本鄉奏多	běn xiāng zòu duō	3
 本真友裏	běn zhēn yǒu lǐ	10
-本莊優花	běn zhuāng yōu huā	10
+本莊優花	běn zhuāng yōu huā	171
+畢比瓊斯	bì bǐ qióng sī	45
+比爾海利	bǐ ěr hǎi lì	266
+碧姬芭杜	bì jī bā dù	288
 比嘉愛未	bǐ jiā ài wèi	19
+邊巴次仁	biān bā cì rén	342
 邊巴德吉	biān bā dé jí	161
+表白肖戰	biǎo bái xiāo zhàn	45
+濱邊美波	bīn biān měi bō	6
+濱崎里緒	bīn qí lǐ xù	310
 濱崎真緒	bīn qí zhēn xù	284
+濱田龍臣	bīn tián lóng chén	342
+濱田麻里	bīn tián má lǐ	297
+濱田省吾	bīn tián shěng wú	202
+濱田賢二	bīn tián xián èr	486
+濱田翔子	bīn tián xiáng zǐ	238
+濱田雅功	bīn tián yǎ gōng	306
+濱尾京介	bīn wěi jīng jiè	153
+濱野謙太	bīn yě qiān tài	315
+濱野雅嗣	bīn yě yǎ sì	99
+柄本時生	bǐng běn shí shēng	364
+冰川清志	bīng chuān qīng zhì	9
+並木伸一	bìng mù shēn yī	189
+冰室京介	bīng shì jīng jiè	328
+冰鷹北斗	bīng yīng běi dǒu	153
+博比達林	bó bǐ dá lín	45
+卜部功也	bo bù gōng yě	4
+博爾科夫	bó ěr kē fū	224
+波岡一喜	bō gāng yì xǐ	351
+波姬小絲	bō jī xiǎo sī	400
+波津彬子	bō jīn bīn zǐ	243
+波野結衣	bō yě jié yī	4
+伯遠慶憐	bó yuǎn qìng lián	117
+布差拉迪	bù chà lā dí	212
+布袋寅泰	bù dài yín tài	6
+部谷京子	bù gǔ jīng zǐ	234
+布萊特妮	bù lái tè nī	99
+布蘭切特	bù lán qiè tè	711
+布麗吉塔	bù lì jí tǎ	202
+布莉特妮	bù lì tè nī	1
+步六孤亮	bù liù gū liàng	45
+布魯斯南	bù lǔ sī nán	94
+彩徹區明	cǎi chè qū míng	53
+才旦卓嘎	cái dàn zhuó gā	256
 才旦卓瑪	cái dàn zhuó mǎ	29
+財津和夫	cái jīn hé fū	6
+彩六野哥	cǎi liù yě gē	76
 彩美旬果	cǎi měi xún guǒ	10
+財前直見	cái qián zhí jiàn	369
 才旺羅布	cái wàng luó bù	1
+才旺仁增	cái wàng rén zēng	306
+才真旺姆	cái zhēn wàng mǔ	234
+藏邊五醜	cáng biān wǔ chǒu	274
+倉持陽一	cāng chí yáng yī	144
 倉多真央	cāng duō zhēn yāng	10
+倉花千夏	cāng huā qiān xià	212
+蒼井翔太	cāng jǐng xiáng tài	504
+倉井優香	cāng jǐng yōu xiāng	45
+倉木麻衣	cāng mù má yī	301
+倉橋莉子	cāng qiáo lì zǐ	144
+倉橋裕宗	cāng qiáo yù zōng	212
+倉田保昭	cāng tián bǎo zhāo	25
+倉田杏里	cāng tián xìng lǐ	45
+倉田雅世	cāng tián yǎ shì	392
+倉知玲鳳	cāng zhī líng fèng	248
+草壁優美	cǎo bì yōu měi	50
+草場辰巳	cǎo chǎng chén sì	171
+草場道輝	cǎo chǎng dào huī	99
+草川拓彌	cǎo chuān tuò mí	279
+草川直彌	cǎo chuān zhí mí	4
+草村禮子	cǎo cūn lǐ zǐ	292
+草見潤平	cǎo jiàn rùn píng	180
+茶山莉子	chá shān lì zǐ	238
+柴田阿彌	chái tián ā mí	428
+柴田理惠	chái tián lǐ huì	288
+柴田秀勝	chái tián xiù shèng	428
+柴田亞衣	chái tián yà yī	230
 長澤杏奈	cháng zé xìng nài	10
+超模何穗	chāo mó hé suì	9
 朝田日葵	cháo tián rì kuí	10
+車田正美	chē tián zhèng měi	204
 陳一髮兒	chén yì fā ér	81
 陳張太康	chén zhāng tài kāng	21
+成瀨心美	chéng lài xīn měi	387
 赤目麗蘭	chì mù lì lán	10
-沖田杏梨	chōng tián xìng lí	10
+池內博之	chí nèi bó zhī	346
+池松壯亮	chí sōng zhuàng liàng	414
+池田昌子	chí tián chāng zǐ	364
+池田道枝	chí tián dào zhī	130
+池田華菜	chí tián huá cài	194
+持田香織	chí tián xiāng zhī	351
+池田真紀	chí tián zhēn jì	99
+沖田杏梨	chōng tián xìng lí	16
+初音未來	chū yīn wèi lái	440
 川北裏菜	chuān běi lǐ cài	10
 川北明沙	chuān běi míng shā	10
 川村真矢	chuān cūn zhēn shǐ	10
+川崎沙希	chuān qí shā xī	202
 錘娜麗莎	chuí nà lì shā	1
+吹牛老爹	chuī niú lǎo diē	3
 吹石玲奈	chuī shí líng nài	10
+春田菜菜	chūn tián cài cài	266
+春櫻梨杏	chūn yīng lí xìng	50
 淳于珊珊	chún yú shān shān	5
+春原芽衣	chūn yuán yá yī	171
 叢日新兒	cóng rì xīn ér	1
+崔丹尼爾	cuī dān ní ěr	328
+村川梨衣	cūn chuān lí yī	428
+村山彩希	cūn shān cǎi xī	428
+村石宏實	cūn shí hóng shí	6
 措卡卓兒	cuò kǎ zhuó ér	6
+大島麻衣	dà dǎo má yī	477
+大島優子	dà dǎo yōu zǐ	151
+大谷亮平	dà gǔ liàng píng	315
+大谷育江	dà gǔ yù jiāng	9
+大江千里	dà jiāng qiān lǐ	324
+大林素子	dà lín sù zǐ	202
+大瀧秀治	dà lóng xiù zhì	266
+大瀧詠一	dà lóng yǒng yī	91
+達明一派	dá míng yí pài	126
 大楠道代	dà nán dào dài	1
+大橋彩香	dà qiáo cǎi xiāng	522
+大橋望美	dà qiáo wàng měi	297
 大橋未久	dà qiáo wèi jiǔ	10
+大橋卓彌	dà qiáo zhuó mí	22
+大山信代	dà shān xìn dài	50
+大衛鮑伊	dà wèi bào yī	116
+大衛鮑依	dà wèi bào yī	104
+大衛芬奇	dà wèi fēn qí	756
+大友花戀	dà yǒu huā liàn	288
+大原櫻子	dà yuán yīng zi	328
+大澤隆夫	dà zé lóng fū	423
+大塚明夫	dà zhǒng míng fū	585
+大塚寧寧	dà zhǒng níng níng	364
+大塚周夫	dà zhǒng zhōu fū	418
+戴米摩爾	dài mǐ mó ěr	117
+黛咪摩兒	dài mī mó ér	84
 黛青塔娜	dài qīng tǎ nà	19
+丹波哲郎	dān bō zhé láng	3
 稻場流花	dào chǎng liú huā	10
 稻川夏目	dào chuān xià mù	10
+島袋寬子	dǎo dài kuān zǐ	234
+悼念李玟	dào niàn lǐ wén	50
 稻森麗奈	dào sēn lì nài	1
 稻森美憂	dào sēn měi yōu	10
+稻葉浩志	dào yè hào zhì	6
+德安傑洛	dé ān jié luò	477
+得耳布爾	dé ěr bù ěr	315
+德井妮可	dé jǐng nī kě	50
+德井青空	dé jǐng qīng kōng	495
+德井義實	dé jǐng yì shí	338
+登坂廣臣	dēng bǎn guǎng chén	284
+等什麼君	děng shén me jūn	378
+迪克牛仔	dí kè niú zǎi	41
 迪里拜爾	dí lǐ bài ěr	21
 迪麗熱巴	dí lì rè bā	3252
+電音朵拉	diàn yīn duǒ lā	4
+蝶野晴美	dié yě qíng měi	230
+釘宮理惠	dīng gōng lǐ huì	50
 丁彥雨航	dīng yàn yǔ háng	416
 冬愛琴音	dōng ài qín yīn	10
+東出昌大	dōng chū chāng dà	9
 東方紅豔	dōng fāng hóng yàn	3
+東方神起	dōng fāng shén qǐ	1187
 東方聞櫻	dōng fāng wén yīng	17
 東來東往	dōng lái dōng wǎng	22
+東來西往	dōng lái xī wǎng	6
+動力火車	dòng lì huǒ chē	188
 董李無憂	dǒng lǐ wú yōu	1
+冬馬由美	dōng mǎ yóu měi	482
+東山紀之	dōng shān jì zhī	3
+東山奈央	dōng shān nài yāng	612
+東原亞希	dōng yuán yà xī	180
 東雲美玲	dōng yún měi líng	10
+渡邊大知	dù biān dà zhī	306
+渡邊典子	dù biān diǎn zǐ	306
+渡邊麻友	dù biān má yǒu	78
+渡邊明乃	dù biān míng nǎi	495
+渡邊夏菜	dù biān xià cài	76
+渡邊翔太	dù biān xiáng tài	16
+渡邊裕之	dù biān yù zhī	252
+渡邊直美	dù biān zhí měi	35
+渡部篤郎	dù bù dǔ láng	464
+渡瀨恆彥	dù lài héng yàn	3
 端木崇慧	duān mù chóng huì	1
 端木新卉	duān mù xīn huì	1
+二宮和也	èr gōng hé yě	13
+二宮奈奈	èr gōng nài nài	117
 二階堂夢	èr jiē táng mèng	10
 爾瑪依娜	ěr mǎ yī nà	14
 兒玉玲奈	ér yù líng nài	10
+范迪塞爾	fàn dí sāi ěr	783
+范田紗紗	fàn tián shā shā	230
+反町隆史	fǎn tīng lóng shǐ	508
+飯塚翔太	fàn zhǒng xiáng tài	261
+飯塚雅弓	fàn zhǒng yǎ gōng	410
+飯塚昭三	fàn zhǒng zhāo sān	482
 房東的貓	fáng dōng de māo	48
+芳根京子	fāng gēn jīng zǐ	410
+菲什伯恩	fēi shí bó ēn	513
+逢坂良太	féng bǎn liáng tài	486
+豐川悅司	fēng chuān yuè sī	38
 鳳凰傳奇	fèng huáng chuán qí	2087
+風間杜夫	fēng jiān dù fū	396
+風間俊介	fēng jiān jùn jiè	9
 逢見梨花	féng jiàn lí huā	10
 風間由美	fēng jiān yóu měi	10
+豐崎愛生	fēng qí ài shēng	3
+豐原功補	fēng yuán gōng bǔ	315
+豐原里美	fēng yuán lǐ měi	99
 逢月日葵	féng yuè rì kuí	10
+逢澤莉娜	féng zé lì nà	351
+福本莉子	fú běn lì zǐ	315
 付赫安琪	fù hè ān qí	1
+富堅義博	fù jiān yì bó	1042
+父親謝賢	fù qīn xiè xián	333
 芙蓉姐姐	fú róng jiě jie	708
 付柔美琦	fù róu měi qí	2
+福山芳樹	fú shān fāng shù	369
+福山雅治	fú shān yǎ zhì	91
+福士蒼汰	fú shì cāng tài	468
+富司純子	fù sī chún zǐ	306
+福田花音	fú tián huā yīn	342
+福田沙紀	fú tián shā jì	396
+福田雄一	fú tián xióng yī	16
+福原綾香	fú yuán líng xiāng	3
+福圓美里	fú yuán měi lǐ	504
 岡井萌華	gāng jǐng méng huá	10
+剛力彩芽	gāng lì cǎi yá	446
+岡崎律子	gāng qí lǜ zǐ	428
+高坂篤志	gāo bǎn dǔ zhì	261
+高坂桐乃	gāo bǎn tóng nǎi	28
+高城元氣	gāo chéng yuán qì	346
+高島禮子	gāo dǎo lǐ zǐ	3
+高島奈月	gāo dǎo nài yuè	76
+高島雅羅	gāo dǎo yǎ luó	378
+高島政宏	gāo dǎo zhèng hóng	144
+高峯圭二	gāo fēng guī èr	288
+高峰秀子	gāo fēng xiù zǐ	19
+高宮沙織	gāo gōng shā zhī	153
+高槻彰良	gāo guī zhāng liáng	202
+高梨謙吾	gāo lí qiān wú	279
 高良健吾	gāo liáng jiàn wú	21
-高橋聖子	gāo qiáo shèng zǐ	10
+高橋廣樹	gāo qiáo guǎng shù	504
+高橋和希	gāo qiáo hé xī	176
+高橋和也	gāo qiáo hé yě	266
+高橋克典	gāo qiáo kè diǎn	414
+高橋克實	gāo qiáo kè shí	3
+高橋李依	gāo qiáo lǐ yī	540
+高橋聖子	gāo qiáo shèng zǐ	297
+高橋幸宏	gāo qiáo xìng hóng	44
+高橋陽一	gāo qiáo yáng yī	38
+高橋洋子	gāo qiáo yáng zǐ	13
+高橋一生	gāo qiáo yì shēng	3
+高橋智秋	gāo qiáo zhì qiū	468
 高睿菲兒	gāo ruì fēi ér	1
+高畑充希	gāo tián chōng xī	6
+高田里穗	gāo tián lǐ suì	234
+高田明美	gāo tián míng měi	338
+高田憂希	gāo tián yōu xī	387
+高田真希	gāo tián zhēn xī	162
+高町奈葉	gāo tīng nài yè	432
+高野八誠	gāo yě bā chéng	302
+高月彩良	gāo yuè cǎi liáng	292
 隔壁老樊	gé bì lǎo fán	181
+葛城美里	gé chéng měi lǐ	242
+格萊姆斯	gé lái mǔ sī	490
+格里傑夫	gé lǐ jié fū	202
+格林德沃	gé lín dé wò	770
+葛佩莉亞	gé pèi lì yà	207
 格桑多吉	gé sāng duō jí	1
+格溫妮絲	gé wēn nī sī	66
+葛優大爺	gé yōu dà ye	243
 根尾明裏	gēn wěi míng lǐ	10
+宮本笑里	gōng běn xiào lǐ	261
+宮本信子	gōng běn xìn zi	364
+宮本侑芽	gōng běn yòu yá	351
 宮城理惠	gōng chéng lǐ huì	10
-宮島芽衣	gōng dǎo yá yī	10
+宮川大輔	gōng chuān dà fǔ	324
+宮川美保	gōng chuān měi bǎo	266
+宮村優子	gōng cūn yōu zǐ	486
+宮島芽衣	gōng dǎo yá yī	76
+宮地真緒	gōng dì zhēn xù	288
 宮瀨裏子	gōng lài lǐ zi	10
+宮崎美穗	gōng qí měi suì	446
+宮崎美子	gōng qí měi zǐ	364
+宮崎吾朗	gōng qí wú lǎng	44
+宮崎優子	gōng qí yōu zǐ	130
+宮崎羽衣	gōng qí yǔ yī	392
+宮水三葉	gōng shuǐ sān yè	63
+工藤靜香	gōng téng jìng xiāng	204
 工藤拉拉	gōng téng lā lā	10
 工藤美紗	gōng téng měi shā	10
+宮田愛萌	gōng tián ài méng	364
+宮田浩德	gōng tián hào dé	162
+宮田始典	gōng tián shǐ diǎn	153
+宮田幸季	gōng tián xìng jì	500
+恭喜肖戰	gōng xǐ xiāo zhàn	130
 宮下華奈	gōng xià huá nài	10
-宮下玲奈	gōng xià líng nài	10
+宮下玲奈	gōng xià líng nài	279
+宮下未紀	gōng xià wèi jì	180
+宮下杏奈	gōng xià xìng nài	4
+宮脅咲良	gōng xié xiào liáng	35
+宮脅裕美	gōng xié yù měi	76
+宮澤和史	gōng zé hé shǐ	248
+宮澤理惠	gōng zé lǐ huì	113
+宮澤里惠	gōng zé lǐ huì	102
 宮澤千春	gōng zé qiān chūn	10
+宮澤月野	gōng zé yuè yě	50
+宮澤佐江	gōng zé zuǒ jiāng	3
+弓塚五月	gōng zhǒng wǔ yuè	194
+溝口健二	gōu kǒu jiàn èr	144
+古坂和仁	gǔ bǎn hé rén	220
+骨川小夫	gǔ chuān xiǎo fū	414
+古川雄輝	gǔ chuān xióng huī	50
 古川伊織	gǔ chuān yī zhī	10
+穀村美月	gǔ cūn měi yuè	3
+穀村新司	gǔ cūn xīn sī	179
+穀村政樹	gǔ cūn zhèng shù	238
+古麗米娜	gǔ lì mǐ nà	364
+古麗娜爾	gǔ lì nà ěr	310
 古力娜扎	gǔ lì nà zhā	3215
-廣瀨光希	guǎng lài guāng xī	10
+谷山浩子	gǔ shān hào zǐ	288
+谷山紀章	gǔ shān jì zhāng	3
+古手梨花	gǔ shǒu lí huā	16
+古樹天敵	gǔ shù tiān dí	180
+古一法師	gǔ yī fǎ shī	97
+谷原章介	gǔ yuán zhāng jiè	3
+孤爪研磨	gū zhǎo yán mó	180
+關根信昭	guān gēn xìn zhāo	194
+關谷神奇	guān gǔ shén qí	60
+管虎導演	guǎn hǔ dǎo yǎn	522
+觀月雛乃	guān yuè chú nǎi	256
+廣東雨神	guǎng dōng yǔ shén	117
+廣瀨光希	guǎng lài guāng xī	45
+廣瀨仁美	guǎng lài rén měi	153
+廣末涼子	guǎng mò liáng zǐ	135
+廣田彩花	guǎng tián cǎi huā	432
+光田康典	guāng tián kāng diǎn	432
+廣田亮平	guǎng tián liàng píng	238
+廣田詩夢	guǎng tián shī mèng	202
+廣田雅美	guǎng tián yǎ měi	212
+龜井繪里	guī jǐng huì lǐ	346
+龜梨和也	guī lí hé yě	148
+鬼束千尋	guǐ shù qiān xún	6
+果酱乐團	guǒ jiàng yuè tuán	256
+哈莉貝瑞	hǎ lì bèi ruì	3
+哈利貝瑞	hǎ lì bèi ruì	2
+哈莉奎恩	hǎ lì kuí ēn	333
+哈莉奎因	hǎ lì kuí yīn	387
 哈妮克孜	hǎ nī kè zī	3
 哈斯高娃	hǎ sī gāo wá	20
 海哈金喜	hǎi hā jīn xǐ	1
 海來阿木	hǎi lái ā mù	2
+海倫清桃	hǎi lún qīng táo	225
+海棠朵朵	hǎi táng duǒ duǒ	72
+憨豆先生	hān dòu xiān shēng	242
+漢克皮姆	hàn kè pí mǔ	454
+漢娜艾博	hàn nà ài bó	144
+韓延導演	hán yán dǎo yǎn	99
+浩角翔起	hào jiǎo xiáng qǐ	323
+豪斯醫生	háo sī yī shēng	778
+河北彩花	hé běi cǎi huā	382
 河北朝陽	hé běi cháo yáng	10
 河北春菜	hé běi chūn cài	10
+河村梨惠	hé cūn lí huì	50
+河村隆之	hé cūn lóng zhī	346
+河合久美	hé hé jiǔ měi	99
+河合桃子	hé hé táo zi	50
+河瀨茉希	hé lài mò xī	346
+賀來賢人	hè lái xián rén	3
+荷莉貝瑞	hé lì bèi ruì	369
 何廖侶勻	hé liào lǚ yún	1
+河毛雅妃	hé máo yǎ fēi	171
 河南實裏	hé nán shí lǐ	10
+和泉紗霧	hé quán shā wù	356
+和泉紫乃	hé quán zǐ nǎi	4
+和田光司	hé tián guāng sī	508
+合田繪利	hé tián huì lì	202
+合田美櫻	hé tián měi yīng	162
+鶴田真由	hè tián zhēn yóu	342
+和田正人	hé tián zhèng rén	338
+河西健吾	hé xī jiàn wú	454
+河西智美	hé xī zhì měi	549
 何楊夢梵	hé yáng mèng fàn	1
+鶴野剛士	hè yě gāng shì	6
+黑島結菜	hēi dǎo jié cài	378
+黑谷友香	hēi gǔ yǒu xiāng	270
 黑木一香	hēi mù yī xiāng	10
+黑色柳丁	hēi sè liǔ dīng	330
+黑羽飛鳥	hēi yǔ fēi niǎo	4
+黑羽快斗	hēi yǔ kuài dòu	482
+黑澤良平	hēi zé liáng píng	99
+黑澤露比	hēi zé lù bǐ	333
+黑澤朋世	hēi zé péng shì	19
+橫濱流星	héng bīn liú xīng	6
 橫宮七海	héng gōng qī hǎi	10
+橫山美雪	héng shān měi xuě	284
+橫山由依	héng shān yóu yī	598
+橫山智佐	héng shān zhì zuǒ	459
+橫田真悠	héng tián zhēn yōu	256
+橫澤隆史	héng zé lóng shǐ	248
+橫澤啟子	héng zé qǐ zǐ	324
+後街男孩	hòu jiē nán hái	122
+後舍男孩	hòu shě nán hái	50
+猴神大叔	hóu shén dà shū	13
+後藤麻衣	hòu téng má yī	364
+後藤邑子	hòu téng yì zǐ	495
+後藤真希	hòu téng zhēn xī	9
+戶次鑑連	hù cì jiàn lián	374
+蝴蝶飛飛	hú dié fēi fēi	346
+呼和諾爾	hū hé nuò ěr	405
+虎牙莉哥	hǔ yá lì gē	45
+虎杖悠仁	hǔ zhàng yōu rén	207
+戶塚彩加	hù zhǒng cǎi jiā	288
+戶塚純貴	hù zhǒng chún guì	338
+花兒樂隊	huā er yuè duì	330
+花井愛子	huā jǐng ài zǐ	144
+花井美里	huā jǐng měi lǐ	50
+花井美紗	huā jǐng měi shā	45
+華農兄弟	huà nóng xiōng dì	374
+花野真衣	huā yě zhēn yī	360
+花澤健吾	huā zé jiàn wú	320
+花澤綾音	huā zé líng yīn	144
 花澤日葵	huā zé rì kuí	10
+花澤香菜	huā zé xiāng cài	126
+懷恩豪斯	huái ēn háo sī	504
+皇甫暮雲	huáng fǔ mù yún	234
+荒瀧一斗	huāng lóng yì dǒu	22
+荒木香惠	huāng mù xiāng huì	346
+荒木香衣	huāng mù xiāng yī	202
 凰香奈芽	huáng xiāng nài yá	10
+黃楊鈿甜	huáng yáng diàn tián	153
 黃依夏可	huáng yī xià kě	1
 黃毓嘉林	huáng yù jiā lín	1
 黃張嘉洋	huáng zhāng jiā yáng	1
 黃子弘凡	huáng zǐ hóng fán	1
+霍爾海雅	huò ěr hǎi yǎ	4
 火箭少女	huǒ jiàn shào nǚ	26
+火雲邪神	huǒ yún xié shén	515
 吉川愛美	jí chuān ài měi	10
 及川光博	jí chuān guāng bó	19
-吉高寧寧	jí gāo níng níng	10
+吉川晃司	jí chuān huǎng sī	22
+及川奈央	jí chuān nài yāng	410
+磯村勇鬥	jī cūn yǒng dòu	328
+磯村知美	jī cūn zhī měi	171
+吉岡里帆	jí gāng lǐ fān	396
+吉岡聖惠	jí gāng shèng huì	266
+吉岡秀隆	jí gāng xiù lóng	414
+吉高寧寧	jí gāo níng níng	144
+姬宮桃李	jī gōng táo lǐ	50
+吉河美希	jí hé měi xī	230
 吉克雋逸	jí kè juàn yì	1556
+吉倫哈爾	jí lún hā ěr	644
+吉美林巴	jí měi lín bā	212
 跡美朱里	jì měi zhū lǐ	10
+吉米法倫	jí mǐ fǎ lún	468
+吉姆凱瑞	jí mǔ kǎi ruì	243
+姬聲雅士	jī shēng yǎ shì	297
+吉田步美	jí tián bù měi	25
+吉田拓郎	jí tián tuò láng	410
+吉田朱里	jí tián zhū lǐ	504
+吉祥三寶	jí xiáng sān bǎo	104
 吉永好美	jí yǒng hǎo měi	10
-吉澤明步	jí zé míng bù	10
+吉澤明步	jí zé míng bù	25
+加護亞依	jiā hù yà yī	374
+加瀨充子	jiā lài chōng zǐ	144
 佳苗琉花	jiā miáo liú huā	10
-岬奈奈美	jiǎ nài nài měi	10
+榎木淳彌	jiǎ mù chún mí	450
+岬奈奈美	jiǎ nài nài měi	76
 架乃由羅	jià nǎi yóu luó	10
+嘉然小姐	jiā rán xiǎo jiě	378
+加山夏子	jiā shān xià zǐ	180
+加山雄三	jiā shān xióng sān	428
+嘉數由美	jiā shù yóu měi	441
 加藤綾野	jiā téng líng yě	10
+加隈亞衣	jiā wēi yà yī	472
+假笑男孩	jiǎ xiào nán hái	230
+間宮貴子	jiān gōng guì zǐ	99
+間宮夕貴	jiān gōng xī guì	162
+菅井愛里	jiān jǐng ài lǐ	144
+筧美和子	jiǎn měi hé zǐ	306
+菅田將暉	jiān tián jiāng huī	639
 菅野松雪	jiān yě sōng xuě	10
+菅野洋子	jiān yě yáng zǐ	236
+菅原文太	jiān yuán wén tài	333
+江川央生	jiāng chuān yāng shēng	500
+姜丹尼爾	jiāng dān ní ěr	522
+江口拓也	jiāng kǒu tuò yě	508
+江口洋介	jiāng kǒu yáng jiè	35
+姜文導演	jiāng wén dǎo yǎn	531
+降央白姆	jiàng yāng bái mǔ	144
+降央伯姆	jiàng yāng bó mǔ	288
+降央克珠	jiàng yāng kè zhū	99
 降央卓瑪	jiàng yāng zhuó mǎ	92
 蔣袁婭蓉	jiǎng yuán yà róng	1
-結城莉乃	jié chéng lì nǎi	10
-結城美佐	jié chéng měi zuǒ	10
+結城愛良	jié chéng ài liáng	405
+結城莉乃	jié chéng lì nǎi	130
+結城美佐	jié chéng měi zuǒ	162
+傑夫代特	jié fū dài tè	194
+傑克懷特	jié kè huái tè	387
 皆瀨明裏	jiē lài míng lǐ	10
+傑西達邦	jié xī dá bāng	234
+津川雅彥	jīn chuān yǎ yàn	454
+近畿小子	jìn jī xiǎo zi	477
+今井凌雪	jīn jǐng líng xuě	180
+今井麻美	jīn jǐng má měi	576
+今井美樹	jīn jǐng měi shù	382
+金井美香	jīn jǐng měi xiāng	441
+今井夢露	jīn jǐng mèng lù	76
+今井由香	jīn jǐng yóu xiāng	396
+今泉佑唯	jīn quán yòu wéi	392
+近藤芳正	jìn téng fāng zhèng	346
+進藤玲菜	jìn téng líng cài	76
+近藤奈奈	jìn téng nài nài	117
+進藤尚美	jìn téng shàng měi	464
+近藤孝行	jìn téng xiào xíng	418
+近藤真彥	jìn téng zhēn yàn	78
+近藤正臣	jìn téng zhèng chén	306
+今野浩喜	jīn yě hào xǐ	279
+今野宏美	jīn yě hóng měi	405
+近野莉菜	jìn yě lì cài	428
+今野美穗	jīn yě měi suì	45
+今野晴貴	jīn yě qíng guì	50
+今野杏南	jīn yě xìng nán	279
+金月真美	jīn yuè zhēn měi	396
+金針白蓮	jīn zhēn bái lián	428
+金子大地	jīn zi dà dì	279
+京本大我	jīng běn dà wǒ	342
+京本政樹	jīng běn zhèng shù	324
+井口裕香	jǐng kǒu yù xiāng	549
+京樂春水	jīng lè chūn shuǐ	446
+驚奇隊長	jīng qí duì zhǎng	1372
+井上和香	jǐng shàng hé xiāng	324
+井上和彥	jǐng shàng hé yàn	6
+井上可奈	jǐng shàng kě nài	50
+井上倫宏	jǐng shàng lún hóng	279
+井上雄彥	jǐng shàng xióng yàn	1199
+井上陽水	jǐng shàng yáng shuǐ	31
+井上真央	jǐng shàng zhēn yāng	19
+井上正大	jǐng shàng zhèng dà	338
+井上織姬	jǐng shàng zhī jī	78
 景向誰依	jǐng xiàng shuí yī	63
+京野琴美	jīng yě qín měi	297
 囧森瑟夫	jiǒng sēn sè fū	69
+久保美希	jiǔ bǎo měi xī	50
+久本雅美	jiǔ běn yǎ měi	320
+久代梨奈	jiǔ dài lí nài	342
+酒井彩名	jiǔ jǐng cǎi míng	266
+酒井法子	jiǔ jǐng fǎ zi	38
+酒井麻衣	jiǔ jǐng má yī	144
+酒井美紀	jiǔ jǐng měi jì	44
+酒井美幸	jiǔ jǐng měi xìng	50
+酒井美雪	jiǔ jǐng měi xuě	99
+酒井萌衣	jiǔ jǐng méng yī	320
+酒井未希	jiǔ jǐng wèi xī	50
+酒井夏樹	jiǔ jǐng xià shù	130
+酒井瑛里	jiǔ jǐng yīng lǐ	76
+九連真人	jiǔ lián zhēn rén	472
+玖少年團	jiǔ shào nián tuán	482
+臼田麻美	jiù tián má měi	284
 鷲尾芽衣	jiù wěi yá yī	10
 九野雛乃	jiǔ yě chú nǎi	10
-君島美緒	jūn dǎo měi xù	10
+玖月奇蹟	jiǔ yuè qí jì	53
+久住小春	jiǔ zhù xiǎo chūn	441
+菊池風磨	jú chí fēng mó	387
+菊池麗香	jú chí lì xiāng	50
+菊池志穗	jú chí zhì suì	297
+菊地晶子	jú dì jīng zǐ	117
+菊地凜子	jú dì lǐn zǐ	13
+菊地美香	jú dì měi xiāng	333
+巨石強森	jù shí qiáng sēn	702
+駒形友梨	jū xíng yǒu lí	284
+崛江由衣	jué jiāng yóu yī	130
+爵士丹尼	jué shì dān ní	50
+君島美香	jūn dǎo měi xiāng	162
+君島美緒	jūn dǎo měi xù	234
 卡迪琳娜	kǎ dí lín nà	1
+凱蒂佩芮	kǎi dì pèi ruì	608
+凱莉米洛	kǎi lì mǐ luò	3
+凱莉詹娜	kǎi lì zhān nà	392
+凱奇大帝	kǎi qí dà dì	3
+凱特摩絲	kǎi tè mó sī	450
+凱西貝茲	kǎi xī bèi zī	405
+康伯巴奇	kāng bó bā qí	107
+克爾斯滕	kè ěr sī téng	387
+科林費斯	kē lín fèi sī	558
+可米小子	kě mǐ xiǎo zi	9
+肯德里克	kěn dé lǐ kè	706
+孔二小姐	kǒng èr xiǎo jiě	374
+恐山安娜	kǒng shān ān nà	3
+堀北真希	kū běi zhēn xī	47
+堀部圭亮	kū bù guī liàng	369
+堀江一真	kū jiāng yì zhēn	346
+堀江由衣	kū jiāng yóu yī	16
+堀井茶渡	kū jǐng chá dù	212
+堀井美月	kū jǐng měi yuè	238
+堀井真吾	kū jǐng zhēn wú	144
+堀內敬子	kū nèi jìng zǐ	396
+堀內秋美	kū nèi qiū měi	230
+堀內賢雄	kū nèi xián xióng	526
+堀千亞樹	kū qiān yà shù	162
+堀未央奈	kū wèi yāng nài	6
 堀咲莉婭	kū xiào lì yà	10
-堀澤茉由	kū zé mò yóu	10
+堀越知惠	kū yuè zhī huì	130
+堀澤茉由	kū zé mò yóu	45
+快樂瑪麗	kuài lè mǎ lì	3
+筷子兄弟	kuài zi xiōng dì	308
+坤如瑪麗	kūn rú mǎ lì	225
 辣目洋子	là mù yáng zǐ	17
+拉姆卓瑪	lā mǔ zhuó mǎ	76
+拉央拉央	lā yāng lā yāng	315
+瀨戶朝香	lài hù cháo xiāng	382
+瀨戶大也	lài hù dà yě	297
+瀨戶康史	lài hù kāng shǐ	382
 瀨名光莉	lài míng guāng lì	10
+萊特希澤	lái tè xī zé	306
 瀨田一花	lài tián yì huā	10
+萊婭公主	lái yà gōng zhǔ	364
 瀨亞美莉	lài yà měi lì	10
 藍芽水月	lán yá shuǐ yuè	10
+浪川大輔	làng chuān dà fǔ	19
+老公張傑	lǎo gōng zhāng jié	310
+勞拉琳妮	láo lā lín nī	266
 勞倫花戀	láo lún huā liàn	10
+雷德梅恩	léi dé méi ēn	540
+雷德莫爾	léi dé mò ěr	220
+雷電芽衣	léi diàn yá yī	38
+蕾雅賽杜	lěi yǎ sài dù	423
+理查德龍	lǐ chá dé lóng	171
+理查基爾	lǐ chá jī ěr	364
 李德戈景	lǐ dé gē jǐng	31
+麗芙泰勒	lì fú tài lè	405
 慄宮雙葉	lì gōng shuāng yè	10
+立花理香	lì huā lǐ xiāng	324
 立花美涼	lì huā měi liáng	10
 麗江小倩	lì jiāng xiǎo qiàn	6
+禮瀨真宵	lǐ lài zhēn xiāo	4
+莉莉瑪蓮	lì lì mǎ lián	378
+立木文彥	lì mù wén yàn	518
+里奇保羅	lǐ qí bǎo luó	459
+栗橋浩美	lì qiáo hào měi	230
 李莎旻子	lǐ shā mín zǐ	379
-栗山莉緒	lì shān lì xù	10
+栗山莉緒	lì shān lì xù	45
+栗山千明	lì shān qiān míng	60
 李斯丹妮	lǐ sī dān nī	232
+笠原弘子	lì yuán hóng zǐ	369
+里原美紀	lǐ yuán měi jì	50
+栗原文音	lì yuán wén yīn	374
+栗原小卷	lì yuán xiǎo juàn	504
+蓮巳敬人	lián sì jìng rén	99
+涼風真世	liáng fēng zhēn shì	360
 涼宮琴音	liáng gōng qín yīn	10
 涼森玲夢	liáng sēn líng mèng	10
+烈兒寶貝	liè ér bǎo bèi	162
+琳恩瑪蓮	lín ēn mǎ lián	234
+林明日香	lín míng rì xiāng	243
+琳娜海蒂	lín nà hǎi dì	364
 林青依果	lín qīng yī guǒ	2
+林賽羅韓	lín sài luó hán	477
+琳賽羅韓	lín sài luó hán	42
 凜音桃花	lǐn yīn táo huā	10
-鈴村愛里	líng cūn ài lǐ	10
+鈴村愛里	líng cūn ài lǐ	171
+鈴村健一	líng cūn jiàn yī	22
+鈴村修一	líng cūn xiū yī	4
+綾里千尋	líng lǐ qiān xún	351
+綾里真宵	líng lǐ zhēn xiāo	338
+鈴木美咲	líng mù měi xiào	153
+鈴木千秋	líng mù qiān qiū	45
 鈴木心春	líng mù xīn chūn	10
 鈴原美蘭	líng yuán měi lán	10
+鈴置洋孝	líng zhì yáng xiào	428
 劉巴特爾	liú bā tè ěr	1
 瑠川裏菜	liú chuān lǐ cài	10
+六角承禎	liù jiǎo chéng zhēn	189
+六角精兒	liù jiǎo jīng ér	328
+柳俊太郎	liǔ jùn tài láng	274
+柳瀨夏美	liǔ lài xià měi	202
+柳瀨洋美	liǔ lài yáng měi	194
+柳瀨早紀	liǔ lài zǎo jì	99
 劉李優優	liú lǐ yōu yōu	1
+劉茜美子	liú qiàn měi zǐ	274
 六小齡童	liù xiǎo líng tóng	1621
 劉循子墨	liú xún zǐ mò	32
-瀧川花音	lóng chuān huā yīn	10
+柳澤榮治	liǔ zé róng zhì	162
+瀧本美織	lóng běn měi zhī	382
+瀧川花音	lóng chuān huā yīn	234
+瀧川雅美	lóng chuān yǎ měi	153
+龍寬九段	lóng kuān jiǔ duàn	306
+龍崎櫻乃	lóng qí yīng nǎi	306
+龍拳小子	lóng quán xiǎo zi	459
+龍田直樹	lóng tián zhí shù	468
+瀧澤蘿拉	lóng zé luó lā	31
+瀧澤沙織	lóng zé shā zhī	306
 瀧澤秀明	lóng zé xiù míng	34
+蕗谷虹兒	lù gǔ hóng ér	153
+盧克凱奇	lú kè kǎi qí	63
+蘆名未帆	lú míng wèi fān	288
+鹿目圓香	lù mù yuán xiāng	256
+露崎春女	lù qí chūn nǚ	50
+蘆田愛菜	lú tián ài cài	28
+亂彈阿翔	luàn tán ā xiáng	25
+落合福嗣	luò hé fú sì	328
 蘿琳花戀	luó lín huā liàn	10
 洛桑念扎	luò sāng niàn zhā	1
 侶皓吉吉	lǚ hào jí jí	68
+呂克貝松	lǚ kè bèi sōng	774
+馬特邦納	mǎ tè bāng nà	333
+馬特達蒙	mǎ tè dá méng	756
+馬修連恩	mǎ xiū lián ēn	328
+麻園詩人	má yuán shī rén	9
+麥特戴蒙	mài tè dài méng	513
 毛妮卓瑪	máo nī zhuó mǎ	2
+茅野愛衣	máo yě ài yī	69
+茅原實里	máo yuán shí lǐ	585
+卯月麻衣	mǎo yuè má yī	212
+卯月夕顏	mǎo yuè xī yán	162
+卯之花烈	mǎo zhī huā liè	418
 美波那美	měi bō nà měi	10
+美川憲一	měi chuān xiàn yī	310
+梅爾貝里	méi ěr bèi lǐ	9
+梅格瑞恩	méi gé ruì ēn	418
+梅宮辰夫	méi gōng chén fū	324
 美谷朱里	měi gǔ zhū lǐ	10
+梅花十三	méi huā shí sān	189
+美空雲雀	měi kōng yún què	69
 美裏有紗	měi lǐ yǒu shā	10
+美輪明宏	měi lún míng hóng	405
+梅瑞爾斯	méi ruì ěr sī	76
 美咲佳奈	měi xiào jiā nài	10
 美咲結衣	měi xiào jié yī	10
+美咲沙耶	měi xiào shā yé	153
+美依禮芽	měi yī lǐ yá	230
 美園和花	měi yuán hé huā	10
-夢乃愛華	mèng nǎi ài huá	10
+門田桃奈	mén tián táo nài	180
+孟和朝魯	mèng hé cháo lǔ	117
+夢幻拉拉	mèng huàn lā lā	315
+夢乃愛華	mèng nǎi ài huá	180
 夢實香苗	mèng shí xiāng miáo	10
-彌生美月	mí shēng měi yuè	10
+萌田薰子	méng tián xūn zǐ	189
+米倉涼子	mǐ cāng liáng zǐ	3
+米津玄師	mǐ jīn xuán shī	666
+米科爾森	mǐ kē ěr sēn	25
+彌生美月	mí shēng měi yuè	76
+蜜雪薇琪	mì xuě wēi qí	342
+米澤瑠美	mǐ zé liú měi	3
+綿貫沙織	mián guàn shā zhī	4
+敏敏郡主	mǐn mǐn jùn zhǔ	243
 明坂聰美	míng bǎn cōng měi	9
+名和晃平	míng hé huǎng píng	171
+名取裕子	míng qǔ yù zǐ	338
+漠刀絕塵	mò dāo jué chén	189
 莫塗弘哲	mò tú hóng zhé	1
 莫西子詩	mò xī zǐ shī	88
+末續慎吾	mò xù shèn wú	171
+木本花音	mù běn huā yīn	490
+木村多江	mù cūn duō jiāng	418
+木村光希	mù cūn guāng xī	53
+木村佳乃	mù cūn jiā nǎi	468
+木村井泓	mù cūn jǐng hóng	180
+木村綠子	mù cūn lǜ zǐ	342
+木村美羽	mù cūn měi yǔ	45
+木村紗織	mù cūn shā zhī	418
+木村沙織	mù cūn shā zhī	266
+木村泰賢	mù cūn tài xián	225
+木村拓哉	mù cūn tuò zāi	358
+木村文乃	mù cūn wén nǎi	464
+木村心美	mù cūn xīn měi	130
+木村珠莉	mù cūn zhū lì	342
+木幡由實	mù fān yóu shí	180
+木戶衣吹	mù hù yī chuī	396
+木口亞矢	mù kǒu yà shǐ	220
+牧瀨里穗	mù lài lǐ suì	261
+目暮十三	mù mù shí sān	374
+木南晴夏	mù nán qíng xià	382
+木南日菜	mù nán rì cài	162
+木內秀信	mù nèi xiù xìn	459
 母其彌雅	mǔ qí mí yǎ	47
+木崎由里	mù qí yóu lǐ	464
 慕容曉曉	mù róng xiǎo xiǎo	35
-木下日葵	mù xià rì kuí	10
+慕容湮兒	mù róng yān ér	180
+木山裕策	mù shān yù cè	144
+木下春奈	mù xià chūn nài	382
+木下日葵	mù xià rì kuí	99
+木下佑香	mù xià yòu xiāng	288
+牧野杉菜	mù yě shān cài	3
+牧野葉月	mù yě yè yuè	99
+牧野由依	mù yě yóu yī	513
+木原美悠	mù yuán měi yōu	16
+木之本櫻	mù zhī běn yīng	585
+木之瀨梓	mù zhī lài zǐ	153
 那爾那茜	nā ěr nà qiàn	1
+那吾克熱	nā wú kè rè	69
+乃村健次	nǎi cūn jiàn cì	472
 南宮嘉駿	nán gōng jiā jùn	1
+楠瀨由佳	nán lài yóu jiā	144
+南里侑香	nán lǐ yòu xiāng	405
+南拳爸爸	nán quán bà ba	99
+南拳媽媽	nán quán mā ma	232
+南條愛乃	nán tiáo ài nǎi	594
 南條一香	nán tiáo yī xiāng	10
+南野陽子	nán yě yáng zǐ	360
+南澤奈央	nán zé nài yāng	310
+內山昂輝	nèi shān áng huī	513
+內山理名	nèi shān lǐ míng	333
+內山夕實	nèi shān xī shí	482
+內野聖陽	nèi yě shèng yáng	6
+尼格買提	ní gé mǎi tí	44
+尼克弗瑞	ní kè fú ruì	554
+鮎川太陽	nián chuān tài yáng	248
+鳥海浩輔	niǎo hǎi hào fǔ	6
+鳥海勝美	niǎo hǎi shèng měi	234
+鳥居花音	niǎo jū huā yīn	212
+鳥棲沙巖	niǎo qī shā yán	334
+牛島若利	niú dǎo ruò lì	212
+女神卡卡	nǚ shén kǎ kǎ	608
+女神柳岩	nǚ shén liǔ yán	513
+女神舒淇	nǚ shén shū qí	446
+歐陽娣娣	ōu yáng dì dì	378
 歐陽奮強	ōu yáng fèn qiáng	65
 歐陽培龍	ōu yáng péi lóng	1
+歐陽佩珊	ōu yáng pèi shān	378
+歐陽少恭	ōu yáng shǎo gōng	423
 歐陽雯鑫	ōu yáng wén xīn	2
+歐陽夏丹	ōu yáng xià dān	13
+歐陽震華	ōu yáng zhèn huá	179
 排骨教主	pái gǔ jiào zhǔ	96
+朋毛才仁	péng máo cái rén	99
+片寄涼太	piàn jì liáng tài	446
+片瀨梨乃	piàn lài lí nǎi	243
+片山萌美	piàn shān méng měi	238
+平川大輔	píng chuān dà fǔ	540
+平岡祐太	píng gāng yòu tài	396
+平岡佑太	píng gāng yòu tài	84
 蘋果姐姐	píng guǒ jiě jie	36
+平井理央	píng jǐng lǐ yāng	225
+平井美葉	píng jǐng měi yè	99
+平井摩利	píng jǐng mó lì	50
+平井祥惠	píng jǐng xiáng huì	117
+坪井章子	píng jǐng zhāng zi	212
+平松愛理	píng sōng ài lǐ	266
+平松晶子	píng sōng jīng zǐ	436
+平田裕香	píng tián yù xiāng	315
+平田真菜	píng tián zhēn cài	328
+平尾明香	píng wěi míng xiāng	144
+平野紫耀	píng yě zǐ yào	374
+平原綾香	píng yuán líng xiāng	41
+平子真子	píng zǐ zhēn zǐ	374
+浦島晴香	pǔ dǎo qíng xiāng	194
+浦井健治	pǔ jǐng jiàn zhì	279
+普里西拉	pǔ lǐ xī lā	99
+普莉西拉	pǔ lì xī lā	89
+普莉西雅	pǔ lì xī yǎ	360
+浦野一美	pǔ yě yī měi	423
+七草千歲	qī cǎo qiān suì	162
+妻夫木聰	qī fū mù cōng	22
 七海蒂娜	qī hǎi dì nà	10
+七海露亞	qī hǎi lù yà	99
+七海奈奈	qī hǎi nài nài	99
 崎惠梨香	qí huì lí xiāng	10
+七瀨胡桃	qī lài hú táo	9
 七瀨伊織	qī lài yī zhī	10
-七森莉莉	qī sēn lì lì	10
+七森莉莉	qī sēn lì lì	76
 齊藤彩夏	qí téng cǎi xià	50
 齊藤和義	qí téng hé yì	360
 齊藤由貴	qí téng yóu guì	25
 齊藤佑圭	qí téng yòu guī	22
 齊藤壯馬	qí téng zhuàng mǎ	482
+七尾奈留	qī wěi nài liú	288
+綺咲愛里	qǐ xiào ài lǐ	234
 七澤美亞	qī zé měi yà	10
+奇志大兵	qí zhì dà bīng	450
+淺倉彩音	qiǎn cāng cǎi yīn	324
+淺倉杏美	qiǎn cāng xìng měi	423
+淺草小子	qiǎn cǎo xiǎo zi	63
+淺川梨奈	qiǎn chuān lí nài	369
+前川涼子	qián chuān liáng zǐ	306
+淺上藤乃	qiǎn shàng téng nǎi	9
+千手綱手	qiān shǒu gāng shǒu	19
 前田香織	qián tián xiāng zhī	10
+淺尾美羽	qiǎn wěi měi yǔ	45
+淺香光代	qiǎn xiāng guāng dài	180
+淺香航大	qiǎn xiāng háng dà	279
 淺野長英	qiǎn yě cháng yīng	1
+千葉紗子	qiān yè shā zǐ	454
+千葉雄喜	qiān yè xióng xǐ	76
+千葉雅之	qiān yè yǎ zhī	45
 強巴才丹	qiáng bā cái dān	1
+強尼戴普	qiáng ní dài pǔ	16
 橋本愛實	qiáo běn ài shí	356
 橋本環奈	qiáo běn huán nài	544
 橋本晃一	qiáo běn huǎng yī	270
@@ -10438,40 +11614,170 @@ sort: by_weight
 橋本奈奈	qiáo běn nài nài	500
 橋本甜歌	qiáo běn tián gē	288
 橋本有菜	qiáo běn yǒu cài	10
-橋本有菜	qiáo běn yǒu cài	3
+喬丹普爾	qiáo dān pǔ ěr	22
 喬傑克遜	qiáo jié kè xùn	171
+喬沃維奇	qiáo wò wéi qí	25
+竊格瓦拉	qiè gé wǎ lā	323
 秦牛正威	qín niú zhèng wēi	11
+青峰大輝	qīng fēng dà huī	302
+青木崇高	qīng mù chóng gāo	378
+青木琴美	qīng mù qín měi	238
+青山草太	qīng shān cǎo tài	238
+青山剛昌	qīng shān gāng chāng	675
+青山沙織	qīng shān shā zhī	99
+青山桐子	qīng shān tóng zǐ	297
+青山真治	qīng shān zhēn zhì	306
+清水理沙	qīng shuǐ lǐ shā	270
+清水美砂	qīng shuǐ měi shā	256
+清水茉菜	qīng shuǐ mò cài	99
+清水香里	qīng shuǐ xiāng lǐ	414
+清水翔太	qīng shuǐ xiáng tài	364
+清水尋也	qīng shuǐ xún yě	306
+清水芽衣	qīng shuǐ yá yī	144
+清水優子	qīng shuǐ yōu zǐ	50
+清原果耶	qīng yuán guǒ yé	436
+瓊雪卓瑪	qióng xuě zhuó mǎ	180
+秋道丁次	qiū dào dīng cì	38
 丘惠理奈	qiū huì lǐ nài	10
+秋吉敏子	qiū jí mǐn zǐ	76
+秋山莉奈	qiū shān lì nài	3
+秋山祥子	qiū shān xiáng zi	297
+秋水剪瞳	qiū shuǐ jiǎn tóng	243
+秋野圭子	qiū yě guī zǐ	50
+秋元才加	qiū yuán cái jiā	31
+萩原利久	qiū yuán lì jiǔ	324
+秋月律子	qiū yuè lǜ zǐ	382
 曲比阿烏	qū bǐ ā wū	6
 曲尼次仁	qū ní cì rén	1
+犬飼貴丈	quǎn sì guì zhàng	338
+犬飼真琴	quǎn sì zhēn qín	130
+確吉傑布	què jí jié bù	495
 仁科百華	rén kē bǎi huá	10
 仁青娜姆	rén qīng nà mǔ	1
+日笠陽子	rì lì yáng zǐ	16
+日暮戈薇	rì mù gē wēi	374
+日奈森綠	rì nài sēn lǜ	153
+日向雛田	rì xiàng chú tián	85
 日向由良	rì xiàng yóu liáng	10
-日向真凜	rì xiàng zhēn lǐn	10
+日向真凜	rì xiàng zhēn lǐn	144
+日野美歌	rì yě měi gē	130
+榮倉奈奈	róng cāng nài nài	9
 榮川乃亞	róng chuān nǎi yà	10
+容中爾甲	róng zhōng ěr jiǎ	6
 宍戶裏帆	ròu hù lǐ fān	10
+入江紗綾	rù jiāng shā líng	220
+入山法子	rù shān fǎ zi	310
+入山杏奈	rù shān xìng nài	554
+入野自由	rù yě zì yóu	57
+軟硬天師	ruǎn yìng tiān shī	9
+瑞克莫迪	ruì kè mò dí	76
+瑞奇馬汀	ruì qí mǎ tīng	450
+瑞秋懷茲	ruì qiū huái zī	351
+瑞星卡卡	ruì xīng kǎ kǎ	675
 若宮穗乃	ruò gōng suì nǎi	10
+若狹留美	ruò xiá liú měi	410
+若葉廣美	ruò yè guǎng měi	45
+薩布麗娜	sà bù lì nà	13
+薩尼布朗	sà ní bù lǎng	19
+薩仁高娃	sà rén gāo wá	212
+賽迪斯楊	sài dí sī yáng	490
 三舩美鈴	sān chuán měi líng	10
+三船敏郎	sān chuán mǐn láng	192
+三吉彩花	sān jí cǎi huā	356
+三浦愛佳	sān pǔ ài jiā	117
 三浦步美	sān pǔ bù měi	10
-三上悠亞	sān shàng yōu yà	10
+三浦誠己	sān pǔ chéng jǐ	279
+三浦春馬	sān pǔ chūn mǎ	22
+三浦大知	sān pǔ dà zhī	9
+三浦貴大	sān pǔ guì dà	369
+三浦涼介	sān pǔ liáng jiè	328
+三浦綾子	sān pǔ líng zi	324
+三浦透子	sān pǔ tòu zǐ	310
+三浦翔平	sān pǔ xiáng píng	400
+三浦芽依	sān pǔ yá yī	153
+三浦研一	sān pǔ yán yī	189
+三浦友和	sān pǔ yǒu hé	82
+三森鈴子	sān sēn líng zǐ	9
+三上悠亞	sān shàng yōu yà	25
+三田佳子	sān tián jiā zǐ	356
+三田麻央	sān tián má yāng	351
 三葉千春	sān yè qiān chūn	10
+三原穗花	sān yuán suì huā	225
+三澤真帆	sān zé zhēn fān	153
+三枝夕夏	sān zhī xī xià	28
+桑島法子	sāng dǎo fǎ zi	594
+桑谷夏子	sāng gǔ xià zǐ	464
+桑田佳佑	sāng tián jiā yòu	251
+桑野晃輔	sāng yě huǎng fǔ	162
 森川玉緒	sēn chuān yù xù	10
+森次晃嗣	sēn cì huǎng sì	41
+森繁久彌	sēn fán jiǔ mí	338
+森繁拓真	sēn fán tuò zhēn	171
+森高千里	sēn gāo qiān lǐ	25
+森繪梨佳	sēn huì lí jiā	9
+森吉德瑪	sēn jí dé mǎ	230
+森井夏穗	sēn jǐng xià suì	180
 森內貴寬	sēn nèi guì kuān	220
 森迫永依	sēn pò yǒng yī	279
 森日向子	sēn rì xiàng zǐ	342
 森藤晶司	sēn téng jīng sī	189
 森下能幸	sēn xià néng xìng	306
 森下悠里	sēn xià yōu lǐ	252
+森永理科	sēn yǒng lǐ kē	324
 森永悠希	sēn yǒng yōu xī	279
 森優理鬥	sēn yōu lǐ dòu	180
 森澤芙美	sēn zé fú měi	162
 森澤佳奈	sēn zé jiā nài	10
 紗倉真菜	shā cāng zhēn cài	10
-沙月芽衣	shā yuè yá yī	10
+沙村廣明	shā cūn guǎng míng	400
+沙拉曼達	shā lā màn dá	252
+莎朗斯通	shā lǎng sī tōng	31
+沙魯克汗	shā lǔ kè hàn	141
+沙漠妖姬	shā mò yāo jī	261
+沙茹克罕	shā rú kè hǎn	238
+沙月芽衣	shā yuè yá yī	50
+杉村春子	shān cūn chūn zǐ	19
+山谷祥生	shān gǔ xiáng shēng	382
+山口百惠	shān kǒu bǎi huì	358
+山口達也	shān kǒu dá yě	328
+山口理惠	shān kǒu lǐ huì	238
+山口隆行	shān kǒu lóng xíng	225
+山口美紀	shān kǒu měi jì	50
+山口美沙	shān kǒu měi shā	171
+山口讓司	shān kǒu ràng sī	234
+山口勝平	shān kǒu shèng píng	25
+山口淑子	shān kǒu shū zǐ	423
 山口葉琉	shān kǒu yè liú	10
+山口真弓	shān kǒu zhēn gōng	338
+山口智大	shān kǒu zhì dà	130
+山口智子	shān kǒu zhì zǐ	477
+杉浦太陽	shān pǔ tài yáng	297
+山崎賢人	shān qí xián rén	518
+杉山德子	shān shān dé zǐ	171
+杉山紀彰	shān shān jì zhāng	6
+杉山清貴	shān shān qīng guì	266
 山手梨愛	shān shǒu lí ài	10
+山寺宏一	shān sì hóng yī	3
+山下达郎	shān xià dá láng	223
+山下真司	shān xià zhēn sī	360
+山下智久	shān xià zhì jiǔ	88
+山野井仁	shān yě jǐng rén	356
+杉野遙亮	shān yě yáo liàng	306
+杉原涼子	shān yuán liáng zǐ	4
+杉原杏璃	shān yuán xìng lí	378
+山支大哥	shān zhī dà gē	4
+山中井野	shān zhōng jǐng yě	13
 上坂芽衣	shàng bǎn yá yī	10
+上川隆也	shàng chuān lóng yě	450
+上村祐翔	shàng cūn yòu xiáng	356
+尚格雲頓	shàng gé yún dùn	192
+上官帶刀	shàng guān dài dāo	50
+上官靈鳳	shàng guān líng fèng	279
 上官喜愛	shàng guān xǐ ài	4
+上官雲珠	shàng guān yún zhū	6
+上妻宏光	shàng qī hóng guāng	202
+上松範康	shàng sōng fàn kāng	585
+上田龍也	shàng tián lóng yě	351
 上原結衣	shàng yuán jié yī	10
 上原美優	shàng yuán měi yōu	10
 上原美佐	shàng yuán měi zuǒ	10
@@ -10481,114 +11787,574 @@ sort: by_weight
 上原一翔	shàng yuán yī xiáng	10
 上原勇作	shàng yuán yǒng zuò	10
 上原由衣	shàng yuán yóu yī	10
+少女時代	shào nǚ shí dài	1179
 涉谷美希	shè gǔ měi xī	10
 神菜美舞	shén cài měi wǔ	10
-深田結梨	shēn tián jié lí	10
-深田詠美	shēn tián yǒng měi	10
-市川雅美	shì chuān yǎ měi	10
+深川麻衣	shēn chuān má yī	405
+深川舞子	shēn chuān wǔ zǐ	315
+神代利世	shén dài lì shì	274
+神代知衣	shén dài zhī yī	320
+神谷浩史	shén gǔ hào shǐ	85
+深津繪里	shēn jīn huì lǐ	16
+神木與瞳	shén mù yǔ tóng	3
+神奈延年	shén nài yán nián	464
+神崎美樹	shén qí měi shù	162
+深田恭子	shēn tián gōng zǐ	9
+深田結梨	shēn tián jié lí	225
+深田詠美	shēn tián yǒng měi	19
+神田朱未	shén tián zhū wèi	477
+神尾楓珠	shén wěi fēng zhū	310
+神尾觀鈴	shén wěi guān líng	405
+神威樂鬥	shén wēi lè dòu	153
+神尾晴子	shén wěi qíng zǐ	266
+神樂七奈	shén yuè qī nài	261
+神樂千鶴	shén yuè qiān hè	387
+勝村美香	shèng cūn měi xiāng	99
+勝村政信	shèng cūn zhèng xìn	382
+生瀨勝久	shēng lài shèng jiǔ	9
+生田春月	shēng tián chūn yuè	50
+生田斗真	shēng tián dòu zhēn	60
+生田善子	shēng tián shàn zǐ	230
+勝田詩織	shèng tián shī zhī	117
+勝田雅治	shèng tián yǎ zhì	117
+生田智子	shēng tián zhì zǐ	212
+石坂茉莉	shí bǎn mò lì	45
+石川愛理	shí chuān ài lǐ	50
+市川春子	shì chuān chūn zǐ	6
+石川界人	shí chuān jiè rén	6
+石川梨華	shí chuān lí huá	432
+石川桃子	shí chuān táo zi	162
+石川秀美	shí chuān xiù měi	202
+市川雅美	shì chuān yǎ měi	212
+石川英郎	shí chuān yīng láng	490
+石川由依	shí chuān yóu yī	450
+市川由衣	shì chuān yóu yī	315
+石川智晶	shí chuān zhì jīng	428
+矢島晶子	shǐ dǎo jīng zǐ	486
+矢島舞美	shǐ dǎo wǔ měi	364
+食蜂操祈	shí fēng cāo qí	518
+辻谷耕史	shí gǔ gēng shǐ	6
+石黑英雄	shí hēi yīng xióng	28
+師姐宣璐	shī jiě xuān lù	45
+矢井田瞳	shǐ jǐng tián tóng	225
+石井杏奈	shí jǐng xìng nài	351
+石井優希	shí jǐng yōu xī	338
+世良真純	shì liáng zhēn chún	504
+時崎狂三	shí qí kuáng sān	450
+柿崎芽實	shì qí yá shí	320
+矢崎由紗	shǐ qí yóu shā	162
+石橋貴子	shí qiáo guì zǐ	3
+石橋靜河	shí qiáo jìng hé	252
+石橋蓮司	shí qiáo lián sī	418
+石橋美佳	shí qiáo měi jiā	230
+時任三郎	shí rèn sān láng	3
+十三格格	shí sān gé gé	297
+市松小雛	shì sōng xiǎo chú	153
+矢田耕司	shǐ tián gēng sī	387
+時田廣子	shí tián guǎng zǐ	238
 時田亞美	shí tián yà měi	10
 施瓦辛格	shī wǎ xīn gé	992
+矢野浩二	shǐ yě hào èr	31
+矢野沙織	shǐ yě shā zhī	117
+矢野真紀	shǐ yě zhēn jì	153
+石野真子	shí yě zhēn zǐ	356
+石野卓球	shí yě zhuó qiú	261
+釋由美子	shì yóu měi zǐ	356
+時雨亞沙	shí yǔ yà shā	171
+柿原徹也	shì yuán chè yě	6
+石原聰美	shí yuán cōng měi	446
+石原里美	shí yuán lǐ měi	226
+市原隼人	shì yuán sǔn rén	396
+石原夏織	shí yuán xià zhī	464
+石垣佑磨	shí yuán yòu mó	284
+市原悅子	shì yuán yuè zǐ	315
 石悅安鑫	shí yuè ān xīn	4
+是枝裕和	shì zhī yù hé	657
+石塚理惠	shí zhǒng lǐ huì	130
+石塚運升	shí zhǒng yùn shēng	3
+石塚早織	shí zhǒng zǎo zhī	144
+手塚治蟲	shǒu zhǒng zhì chóng	2072
+疏樓龍宿	shū lóu lóng sù	234
+樹木希林	shù mù xī lín	16
+樞木朱雀	shū mù zhū què	405
+摔角鷹人	shuāi jiǎo yīng rén	117
+水川麻美	shuǐ chuān má měi	450
+水島大宙	shuǐ dǎo dà zhòu	468
 水島津實	shuǐ dǎo jīn shí	10
-水戶香奈	shuǐ hù xiāng nài	10
+水谷雅子	shuǐ gǔ yǎ zǐ	396
+水谷優子	shuǐ gǔ yōu zǐ	454
+水戶香奈	shuǐ hù xiāng nài	50
+水晶男孩	shuǐ jīng nán hái	38
+水木年華	shuǐ mù nián huá	427
+水木一郎	shuǐ mù yī láng	3
+水樹奈奈	shuǐ shù nài nài	50
 水稀美裏	shuǐ xī měi lǐ	10
 水野朝陽	shuǐ yě cháo yáng	10
-水原美園	shuǐ yuán měi yuán	10
+水原美園	shuǐ yuán měi yuán	45
+水原千鶴	shuǐ yuán qiān hè	266
+水原希子	shuǐ yuán xī zǐ	53
 水澤乃乃	shuǐ zé nǎi nǎi	10
+水澤早紀	shuǐ zé zǎo jì	4
 斯丹曼簇	sī dān màn cù	1
+寺島惇太	sì dǎo dūn tài	369
+寺島伸夫	sì dǎo shēn fū	117
+寺島詩織	sì dǎo shī zhī	130
+寺島拓篤	sì dǎo tuò dǔ	544
+四哥謝賢	sì gē xiè xián	230
+司馬老賊	sī mǎ lǎo zéi	446
+四目先生	sì mù xiān shēng	45
 似鳥日菜	sì niǎo rì cài	10
+寺崎裕香	sì qí yù xiāng	410
 斯琴高麗	sī qín gāo lí	56
-松本梨穗	sōng běn lí suì	10
+斯琴高娃	sī qín gāo wá	138
+斯琴塔娜	sī qín tǎ nà	220
+斯琴塔日	sī qín tǎ rì	144
+斯泰爾斯	sī tài ěr sī	66
+寺脅康文	sì xié kāng wén	171
+松坂慶子	sōng bǎn qìng zǐ	22
+松坂桃李	sōng bǎn táo lǐ	6
+松本保典	sōng běn bǎo diǎn	482
+松本梨穗	sōng běn lí suì	45
+松本梨香	sōng běn lí xiāng	3
+松本麻佑	sōng běn má yòu	405
+松本美和	sōng běn měi hé	284
+松本若菜	sōng běn ruò cài	387
+松本孝弘	sōng běn xiào hóng	22
+松本芽依	sōng běn yá yī	45
 松本一香	sōng běn yī xiāng	10
+松本真央	sōng běn zhēn yāng	230
+松方弘樹	sōng fāng hóng shù	374
+松峰莉璃	sōng fēng lì lí	99
+松風雅也	sōng fēng yǎ yě	432
+松岡昌宏	sōng gāng chāng hóng	436
 松岡千菜	sōng gāng qiān cài	10
 松井優子	sōng jǐng yōu zǐ	10
+頌克拉辛	sòng kè lā xīn	189
+松來未祐	sōng lái wèi yòu	468
+松來未佑	sōng lái wèi yòu	205
+松山健一	sōng shān jiàn yī	356
+松山研一	sōng shān yán yī	464
+松山鷹志	sōng shān yīng zhì	450
+松室麻衣	sōng shì má yī	130
+松田重治	sōng tián chóng zhì	117
+松田理沙	sōng tián lǐ shā	256
+松田龍平	sōng tián lóng píng	22
+松田律子	sōng tián lǜ zǐ	130
+松田颯水	sōng tián sà shuǐ	342
+松田聖子	sōng tián shèng zǐ	179
+松田悟志	sōng tián wù zhì	292
+松田翔太	sōng tián xiáng tài	13
+松田秀知	sōng tián xiù zhī	212
+松田洋治	sōng tián yáng zhì	297
+松尾貴史	sōng wěi guì shǐ	261
+松尾佳子	sōng wěi jiā zǐ	279
+松尾靜香	sōng wěi jìng xiāng	243
+松下桃香	sōng xià táo xiāng	99
+松下由樹	sōng xià yóu shù	414
+松雪泰子	sōng xuě tài zǐ	3
+松永友美	sōng yǒng yǒu měi	76
+蘇菲瑪索	sū fēi mǎ suǒ	129
+蘇珊大媽	sū shān dà mā	382
+速水直道	sù shuǐ zhí dào	342
+速水重道	sù shuǐ zhòng dào	6
 穗高結花	suì gāo jié huā	10
 穗高有紀	suì gāo yǒu jì	10
 穗花愛裏	suì huā ài lǐ	10
 索朗美淇	suǒ lǎng měi qí	1
 索朗旺姆	suǒ lǎng wàng mǔ	3
 索朗扎西	suǒ lǎng zhā xī	24
+泰迪羅賓	tài dí luó bīn	22
+太極雷雷	tài jí léi léi	207
 澹臺仁慧	tán tái rén huì	1
+譚談交通	tán tán jiāo tōng	69
+堂本光一	táng běn guāng yī	25
+堂本海斗	táng běn hǎi dòu	153
+唐錢德爾	táng qián dé ěr	356
+湯淺香織	tāng qiǎn xiāng zhī	212
+唐鈺小寶	táng yù xiǎo bǎo	423
+唐澤貴洋	táng zé guì yáng	144
+唐澤壽明	táng zé shòu míng	6
+唐澤雪惠	táng zé xuě huì	130
+桃井理乃	táo jǐng lǐ nǎi	45
 桃園憐奈	táo yuán lián nài	10
-藤井愛紗	téng jǐng ài shā	10
+特旺薩莞	tè wàng sà guǎn	230
+藤川千愛	téng chuān qiān ài	288
+藤岡麻美	téng gāng má měi	225
+藤井愛紗	téng jǐng ài shā	45
 藤井一夜	téng jǐng yí yè	10
-藤森里穗	téng sēn lǐ suì	10
+藤卷忠俊	téng juǎn zhōng jùn	320
+藤森里穗	téng sēn lǐ suì	76
+藤田淳平	téng tián chún píng	536
+田邊誠一	tián biān chéng yī	428
+天草翔舞	tiān cǎo xiáng wǔ	45
+天城燐音	tiān chéng lín yīn	130
 田島令子	tián dǎo lìng zǐ	1
 天宮花南	tiān gōng huā nán	10
+天谷春戀	tiān gǔ chūn liàn	180
+天海春香	tiān hǎi chūn xiāng	454
+天海佑希	tiān hǎi yòu xī	69
+天海祐希	tiān hǎi yòu xī	62
+天崎千草	tiān qí qiān cǎo	76
 天晴乃愛	tiān qíng nǎi ài	10
+天上智喜	tiān shàng zhì xǐ	28
+天使可兒	tiān shǐ kě er	4
 天使亞夢	tiān shǐ yà mèng	10
+田臥勇太	tián wò yǒng tài	315
+天霧綾斗	tiān wù líng dòu	180
 天仙妹妹	tiān xiān mèi mei	142
+天野浩成	tiān yě hào chéng	297
+天野美汐	tiān yě měi xī	171
+天野由梨	tiān yě yóu lí	428
+天野月子	tiān yě yuè zi	234
+田原俊彥	tián yuán jùn yàn	41
 田中檸檬	tián zhōng níng méng	10
 田中寧寧	tián zhōng níng níng	10
+町井美紀	tīng jǐng měi jì	202
+同道大叔	tóng dào dà shū	594
+桐谷蝶蝶	tóng gǔ dié dié	144
+桐谷美玲	tóng gǔ měi líng	436
 桐谷茉莉	tóng gǔ mò lì	10
+樋口曉里	tōng kǒu xiǎo lǐ	194
+樋口新葉	tōng kǒu xīn yè	13
+樋口智透	tōng kǒu zhì tòu	252
+土井美加	tǔ jǐng měi jiā	360
+土居美咲	tǔ jū měi xiào	284
+土岐麻子	tǔ qí má zi	243
+塗山紅紅	tú shān hóng hóng	320
+塗山容容	tú shān róng róng	144
+塗山蘇蘇	tú shān sū sū	266
+塗山雅雅	tú shān yǎ yǎ	202
+土屋安娜	tǔ wū ān nà	3
+土屋麻美	tǔ wū má měi	99
+土屋太鳳	tǔ wū tài fèng	6
+托雷基亞	tuō léi jī yà	428
+窪田正孝	wā tián zhèng xiào	500
+丸川珠代	wán chuān zhū dài	284
+丸山敦史	wán shān dūn shǐ	256
+丸山隆平	wán shān lóng píng	432
+丸山美紀	wán shān měi jì	189
+丸山明宏	wán shān míng hóng	180
+丸子小姐	wán zi xiǎo jiě	99
+網紅溫婉	wǎng hóng wēn wǎn	45
+網紅雪梨	wǎng hóng xuě lí	180
 王華圳昱	wáng huá zhèn yù	1
 王李丹妮	wáng lǐ dān nī	86
-望月理沙	wàng yuè lǐ shā	10
+望月理沙	wàng yuè lǐ shā	162
 未步奈奈	wèi bù nài nài	10
 唯井真尋	wéi jǐng zhēn xún	10
+威廉達福	wēi lián dá fú	459
+尾崎亞美	wěi qí yà měi	153
+尾上若葉	wěi shàng ruò yè	450
+尾形一成	wěi xíng yì chéng	310
+梶芽衣子	wěi yá yī zǐ	266
+梶原真弓	wěi yuán zhēn gōng	117
+溫斯萊特	wēn sī lái tè	223
+我妻由乃	wǒ qī yóu nǎi	436
+霧島董香	wù dǎo dǒng xiāng	212
+霧島佳乃	wù dǎo jiā nǎi	279
+霧島麗香	wù dǎo lì xiāng	292
+五更琉璃	wǔ gēng liú lí	374
+五河琴里	wǔ hé qín lǐ	302
+武井宏之	wǔ jǐng hóng zhī	346
+武井麻希	wǔ jǐng má xī	266
 烏拉多恩	wù lā duō ēn	3
+烏蘭河碩	wū lán hé shuò	153
+烏蘭木倫	wū lán mù lún	382
+烏蘭圖嘎	wū lán tú gā	220
+烏蘭圖格	wū lán tú gé	76
 烏蘭圖雅	wū lán tú yǎ	260
 烏蘭托婭	wū lán tuō yà	259
+五輪真弓	wǔ lún zhēn gōng	78
+烏瑪瑟曼	wū mǎ sè màn	558
+霧切響子	wù qiè xiǎng zǐ	315
+烏熱爾圖	wū rè ěr tú	248
+烏仁圖雅	wū rén tú yǎ	130
 五十嵐夏	wǔ shí lán xià	10
 武藤綾香	wǔ téng líng xiāng	10
-希島愛理	xī dǎo ài lǐ	10
+武田玲奈	wǔ tián líng nài	351
+烏雲高娃	wū yún gāo wá	76
+西本拳太	xī běn quán tài	333
+西城晶華	xī chéng jīng huá	144
+西城男孩	xī chéng nán hái	138
+西城秀樹	xī chéng xiù shù	50
+西城永捷	xī chéng yǒng jié	220
+西川貴教	xī chuān guì jiào	6
+希島愛理	xī dǎo ài lǐ	180
+西島隆弘	xī dǎo lóng hóng	472
+西島秀俊	xī dǎo xiù jùn	6
+喜多修平	xǐ duō xiū píng	238
+西爾扎提	xī ěr zhā tí	129
 西宮好美	xī gōng hǎo měi	10
+西宮硝子	xī gōng xiāo zi	13
+細谷佳正	xì gǔ jiā zhèng	9
+西瓜太郎	xī guā tài láng	441
+席琳迪昂	xí lín dí áng	3
+席琳迪翁	xí lín dí wēng	264
+席琳狄翁	xí lín dí wēng	238
+希林娜依	xī lín nà yī	405
+西凜太朗	xī lǐn tài lǎng	266
+希美真由	xī měi zhēn yóu	194
 西門大嫂	xī mén dà sǎo	60
+西明日香	xī míng rì xiāng	418
+西崎崇子	xī qí chóng zǐ	297
+西前忠久	xī qián zhōng jiǔ	324
+西熱艾力	xī rè ài lì	144
+西熱力江	xī rè lì jiāng	63
+希斯萊傑	xī sī lái jié	518
+西田敏行	xī tián mǐn xíng	504
+西田尚美	xī tián shàng měi	396
+西田望見	xī tián wàng jiàn	306
+西田裕美	xī tián yù měi	144
 西條琉璃	xī tiáo liú lí	10
+西條沙羅	xī tiáo shā luó	315
 希咲艾瑪	xī xiào ài mǎ	10
+細野豪志	xì yě háo zhì	292
+西野七瀨	xī yě qī lài	22
 西野星夏	xī yě xīng xià	10
+西域刀羊	xī yù dāo yáng	50
 西元明沙	xī yuán míng shā	10
+西原亞希	xī yuán yà xī	256
 希志愛野	xī zhì ài yě	10
+夏八木勳	xià bā mù xūn	315
 夏侯雲姍	xià hóu yún shān	1
-香澄果穗	xiāng chéng guǒ suì	10
+夏目彩春	xià mù cǎi chūn	180
+夏目理緒	xià mù lǐ xù	171
+夏木麻里	xià mù má lǐ	342
+夏目奈奈	xià mù nài nài	238
+夏目雅子	xià mù yǎ zǐ	342
+夏木真理	xià mù zhēn lǐ	3
+下山吉光	xià shān jí guāng	284
+夏樹莉緒	xià shù lì xù	324
+下田麻美	xià tián má měi	468
+下條正巳	xià tiáo zhèng sì	387
+香坂百合	xiāng bǎn bǎi hé	288
+香澄果穗	xiāng chéng guǒ suì	320
 香澄莉子	xiāng chéng lì zǐ	10
+香川京子	xiāng chuān jīng zǐ	302
+相川七瀨	xiāng chuān qī lài	302
+香川照之	xiāng chuān zhào zhī	148
+香椎梨亞	xiāng chuí lí yà	171
+香椎由宇	xiāng chuí yóu yǔ	3
+像古天樂	xiàng gǔ tiān lè	320
+向井千瑛	xiàng jǐng qiān yīng	252
+像梁朝偉	xiàng liáng cháo wěi	53
 香苗玲音	xiāng miáo líng yīn	10
+湘南乃風	xiāng nán nǎi fēng	392
+像彭于晏	xiàng péng yú yàn	428
+香山美樹	xiāng shān měi shù	65
 相田翔子	xiāng tián xiáng zǐ	410
 相武紗季	xiāng wǔ shā jì	3
+相原琴子	xiāng yuán qín zǐ	374
 相澤莉娜	xiāng zé lì nà	10
+小坂菜緒	xiǎo bǎn cài xù	450
+小倉奈奈	xiǎo cāng nài nài	202
 小倉七海	xiǎo cāng qī hǎi	10
-小倉由菜	xiǎo cāng yóu cài	10
+小倉由菜	xiǎo cāng yóu cài	238
 小倉優子	xiǎo cāng yōu zǐ	6
 小池徹平	xiǎo chí chè píng	436
 小池澈平	xiǎo chí chè píng	84
 小池里奈	xiǎo chí lǐ nài	256
 小池亮介	xiǎo chí liàng jiè	153
+小池榮子	xiǎo chí róng zǐ	3
+小川桃果	xiǎo chuān táo guǒ	194
 小湊四葉	xiǎo còu sì yè	10
 小湊昭尚	xiǎo còu zhāo shàng	50
 小島純名	xiǎo dǎo chún míng	10
 小島陽菜	xiǎo dǎo yáng cài	252
-小栗美優	xiǎo lì měi yōu	10
+肖恩墨菲	xiāo ēn mò fēi	572
+小宮有紗	xiǎo gōng yǒu shā	392
+小黑秀才	xiǎo hēi xiù cái	45
+小花美穗	xiǎo huā měi suì	225
+小磯國昭	xiǎo jī guó zhāo	428
+小瀨村晶	xiǎo lài cūn jīng	99
+小栗美優	xiǎo lì měi yōu	45
+小笠原海	xiǎo lì yuán hǎi	266
+小嶺麗奈	xiǎo lǐng lì nài	220
+小柳由紀	xiǎo liǔ yóu jì	194
+小鹿純子	xiǎo lù chún zǐ	13
+小鹿姐姐	xiǎo lù jiě jie	320
+小路易斯	xiǎo lù yì sī	333
 小梅惠奈	xiǎo méi huì nài	10
+小橋賢兒	xiǎo qiáo xián ér	284
+小泉里子	xiǎo quán lǐ zi	171
 小泉日向	xiǎo quán rì xiàng	10
+小泉真希	xiǎo quán zhēn xī	144
 小森美果	xiǎo sēn měi guǒ	6
 小山剛志	xiǎo shān gāng zhì	396
 小山力也	xiǎo shān lì yě	16
+小山茉美	xiǎo shān mò měi	432
+小室哲哉	xiǎo shì zhé zāi	53
+小舒馬赫	xiǎo shū mǎ hè	16
+小松菜奈	xiǎo sōng cài nài	536
+小松彩夏	xiǎo sōng cǎi xià	310
+小松亮太	xiǎo sōng liàng tài	171
+小松拓也	xiǎo sōng tuò yě	230
+小松未步	xiǎo sōng wèi bù	35
 篠田步美	xiǎo tián bù měi	10
 小宵虎南	xiǎo xiāo hǔ nán	10
+逍遙散人	xiāo yáo sǎn rén	382
+小野大輔	xiǎo yě dà fǔ	25
+小野健一	xiǎo yě jiàn yī	374
+小野麗莎	xiǎo yě lì shā	94
+小野六花	xiǎo yě liù huā	144
+小野洋子	xiǎo yě yáng zǐ	684
+小原好美	xiǎo yuán hǎo měi	418
+筱原惠美	xiǎo yuán huì měi	230
+筱原涼子	xiǎo yuán liáng zǐ	6
+小澤菜穗	xiǎo zé cài suì	194
+小澤瑪麗	xiǎo zé mǎ lì	320
+小澤美里	xiǎo zé měi lǐ	45
+小澤亞李	xiǎo zé yà lǐ	432
+小澤真珠	xiǎo zé zhēn zhū	351
+小澤征悅	xiǎo zé zhēng yuè	369
+小芝風花	xiǎo zhī fēng huā	364
+新寶力格	xīn bǎo lì gé	238
+新川優愛	xīn chuān yōu ài	302
 新村朱里	xīn cūn zhū lǐ	10
+新井浩文	xīn jǐng hào wén	387
 新井里真	xīn jǐng lǐ zhēn	10
+新居昭乃	xīn jū zhāo nǎi	6
+新里宏太	xīn lǐ hóng tài	180
+新馬師曾	xīn mǎ shī céng	16
+新木優子	xīn mù yōu zǐ	16
+新妻聖子	xīn qī shèng zǐ	230
+新藤惠美	xīn téng huì měi	99
+新田惠海	xīn tián huì hǎi	531
+新田惠利	xīn tián huì lì	189
+新田佑克	xīn tián yòu kè	117
+新條真由	xīn tiáo zhēn yóu	292
+新垣結衣	xīn yuán jié yī	710
+新垣里沙	xīn yuán lǐ shā	432
+新垣仁繪	xīn yuán rén huì	144
 星宮一花	xīng gōng yì huā	10
-星野景子	xīng yě jǐng zǐ	10
-星野娜美	xīng yě nà měi	10
+倖田來未	xìng tián lái wèi	63
+倖田李梨	xìng tián lǐ lí	369
+倖田梨紗	xìng tián lí shā	144
+倖田未來	xìng tián wèi lái	130
+倖田夏穗	xìng tián xià suì	207
+倖田香子	xìng tián xiāng zǐ	171
+幸田直子	xìng tián zhí zǐ	207
+星野充昭	xīng yě chōng zhāo	346
+星野貴紀	xīng yě guì jì	382
+星野景子	xīng yě jǐng zǐ	50
+星野夢美	xīng yě mèng měi	297
+星野娜美	xīng yě nà měi	194
+星野千紗	xīng yě qiān shā	144
+星野日向	xīng yě rì xiàng	144
+星野桃子	xīng yě táo zi	153
+星野杏里	xīng yě xìng lǐ	171
+星野亞希	xīng yě yà xī	288
+星野真里	xīng yě zhēn lǐ	338
+星野真理	xīng yě zhēn lǐ	163
+星野之宣	xīng yě zhī xuān	333
 休傑克曼	xiū jié kè màn	160
+朽木白哉	xiǔ mù bái zāi	513
+緒方賢一	xù fāng xián yī	513
 徐麗萩莎	xú lì qiū shā	1
 旭日陽剛	xù rì yáng gāng	236
+須藤理彩	xū téng lǐ cǎi	346
+須藤茉麻	xū téng mò má	346
+須藤溫子	xū téng wēn zǐ	194
 旭旭寶寶	xù xù bǎo bao	104
 許楊玉琢	xǔ yáng yù zhuó	10
+選第二個	xuǎn dì èr gè	504
+玄田哲章	xuán tián zhé zhāng	531
+旋渦鳴人	xuán wō míng rén	292
+雪村友梅	xuě cūn yǒu méi	162
 雪乃五月	xuě nǎi wǔ yuè	266
+雪野五月	xuě yě wǔ yuè	490
+亞利安娜	yà lì ān nà	117
+亞莉克莎	yà lì kè shā	279
+亞倫保爾	yà lún bǎo ěr	364
+亞瑟小子	yà sè xiǎo zi	28
+雅音宮羽	yǎ yīn gōng yǔ	230
+岩本蓮加	yán běn lián jiā	382
+岩村愛子	yán cūn ài zǐ	171
+岩村麗愛	yán cūn lì ài	45
+岩村琴美	yán cūn qín měi	171
+言峰綺禮	yán fēng qǐ lǐ	531
+巖戶鈴芽	yán hù líng yá	13
+煙花妹妹	yān huā mèi mei	171
+岩瀨仁紀	yán lài rén jì	207
+岩崎宏美	yán qí hóng měi	351
+岩崎良美	yán qí liáng měi	346
+岩崎陽子	yán qí yáng zǐ	117
+岩崎知弘	yán qí zhī hóng	270
+岩下志麻	yán xià zhì má	16
+鹽野瑛久	yán yě yīng jiǔ	248
+顏怡顏悅	yán yí yán yuè	3
+岩永千明	yán yǒng qiān míng	162
+岩永琴子	yán yǒng qín zǐ	162
+鹽澤兼人	yán zé jiān rén	441
+燕子格格	yān zi gé gé	162
+楊二車娜	yáng èr chē nà	428
+央吉卓瑪	yāng jí zhuó mǎ	45
+央金拉姆	yāng jīn lā mǔ	3
 央金蘭澤	yāng jīn lán zé	31
+央金卓嘎	yāng jīn zhuó gā	243
 楊魏玲花	yáng wèi líng huā	42
+野本梨佳	yě běn lí jiā	153
+野本美穗	yě běn měi suì	4
+野比大雄	yě bǐ dà xióng	166
+野比大助	yě bǐ dà zhù	248
+野村道子	yě cūn dào zǐ	302
+野村萬齋	yě cūn wàn zhāi	72
+野村真弓	yě cūn zhēn gōng	144
+野村真美	yě cūn zhēn měi	180
+野島健兒	yě dǎo jiàn ér	16
+野島裕史	yě dǎo yù shǐ	3
+野宮瑞人	yě gōng ruì rén	202
+葉山獎之	yè shān jiǎng zhī	302
+葉山郁美	yè shān yù měi	346
+野食小哥	yě shí xiǎo gē	378
+野原廣志	yě yuán guǎng zhì	72
+野原美伢	yě yuán měi yá	220
 葉月涼子	yè yuè liáng zǐ	10
+葉月美音	yè yuè měi yīn	225
+葉月奈穗	yè yuè nài suì	171
+野澤那智	yě zé nà zhì	342
+野澤秀行	yě zé xiù xíng	202
+野澤雅子	yě zé yǎ zǐ	19
+野中政宏	yě zhōng zhèng hóng	189
 乙愛麗絲	yǐ ài lì sī	10
+一乘寺賢	yī chéng sì xián	315
 一宮希帆	yī gōng xī fān	10
 伊賀真子	yī hè zhēn zǐ	10
+以莉高露	yǐ lì gāo lù	292
+一眉道人	yī méi dào rén	333
+彝人製造	yí rén zhì zào	234
+役所廣司	yì suǒ guǎng sī	508
 伊藤聖夏	yī téng shèng xià	10
+益田宏美	yì tián hóng měi	99
 易烊千璽	yì yáng qiān xǐ	4603
+乙羽信子	yǐ yǔ xìn zi	6
 伊織雛乃	yī zhī chú nǎi	10
 一之瀨梓	yī zhī lài zǐ	10
 伊織羽音	yī zhī yǔ yīn	10
+銀河萬丈	yín hé wàn zhàng	490
 音闕詩聽	yīn quē shī tīng	52
+櫻井淳子	yīng jǐng chún zǐ	315
+櫻井浩美	yīng jǐng hào měi	6
+櫻井莉亞	yīng jǐng lì yà	3
+櫻井玲香	yīng jǐng líng xiāng	464
+櫻井美優	yīng jǐng měi yōu	50
+櫻井敏治	yīng jǐng mǐn zhì	356
+桜井寧寧	yīng jǐng níng níng	50
+櫻井紗良	yīng jǐng shā liáng	4
+櫻井孝宏	yīng jǐng xiào hóng	25
+櫻井幸子	yīng jǐng xìng zǐ	266
+櫻井亞美	yīng jǐng yà měi	162
+櫻井葉月	yīng jǐng yè yuè	45
+櫻木莉愛	yīng mù lì ài	50
+櫻木梨乃	yīng mù lí nǎi	4
+影山浩宣	yǐng shān hào xuān	540
+鸚鵡史航	yīng wǔ shǐ háng	549
+永野椎菜	yǒng yě chuí cài	310
+永野芽郁	yǒng yě yá yù	38
+永冢紗季	yǒng zhǒng shā jì	220
+永作博美	yǒng zuò bó měi	3
 由愛可奈	yóu ài kě nài	10
+尤菲米婭	yóu fēi mǐ yà	351
 有岡美羽	yǒu gāng měi yǔ	10
 有賀由愛	yǒu hè yóu ài	10
 優梨舞奈	yōu lí wǔ nài	10
@@ -10605,6 +12371,7 @@ sort: by_weight
 袁百梓卉	yuán bǎi zǐ huì	12
 園田美櫻	yuán tián měi yīng	10
 袁楊純子	yuán yáng chún zǐ	1
+樂火男孩	yuè huǒ nán hái	238
 月見伊織	yuè jiàn yī zhī	10
 月乃露娜	yuè nǎi lù nà	10
 雲丹久美	yún dān jiǔ měi	5
@@ -10612,6 +12379,10 @@ sort: by_weight
 澤仁擁吉	zé rén yōng jí	1
 澤旺多吉	zé wàng duō jí	10
 曾美慧孜	zēng měi huì zī	3
+查幹希熱	zhā gàn xī rè	4
+查克貝里	zhā kè bèi lǐ	28
+查寧塔圖	zhā níng tǎ tú	468
+查寧坦圖	zhā níng tǎn tú	189
 扎西鄧珠	zhā xī dèng zhū	1
 扎西頓珠	zhā xī dùn zhū	33
 章飛一絕	zhāng fēi yì jué	19

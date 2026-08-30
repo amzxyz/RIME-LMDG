@@ -1349,6 +1349,7 @@ sort: by_weight
 秦湛	qín zhàn	410
 任南	rén nán	2091
 任鵬	rén péng	113
+賽諾	sài nuò	239
 邵斌	shào bīn	432
 邵博	shào bó	15
 邵峰	shào fēng	648
@@ -2783,7 +2784,6 @@ sort: by_weight
 曹景行	cáo jǐng xíng	34
 曹克強	cáo kè qiáng	171
 曹立軍	cáo lì jūn	34
-曹利用	cáo lì yòng	23
 曹稆孫	cáo lǚ sūn	45
 曹夢迪	cáo mèng dí	364
 曹名長	cáo míng cháng	513
@@ -4141,6 +4141,7 @@ sort: by_weight
 鄧志堅	dèng zhì jiān	486
 鄧志明	dèng zhì míng	256
 鄧志偉	dèng zhì wěi	418
+迪奧娜	dí ào nà	44
 丁伯根	dīng bó gēn	71
 丁不三	dīng bù sān	215
 丁長髮	dīng cháng fà	90
@@ -5114,6 +5115,7 @@ sort: by_weight
 何志勇	hé zhì yǒng	28
 何仲舉	hé zhòng jǔ	180
 何仲宣	hé zhòng xuān	45
+賀子秋	hè zǐ qiū	28
 何祖光	hé zǔ guāng	144
 何祚庥	hé zuò xiū	60
 何琢言	hé zuó yán	56
@@ -5389,6 +5391,7 @@ sort: by_weight
 霍伊特	huò yī tè	151
 霍治亞	huò zhì yà	230
 霍智宇	huò zhì yǔ	207
+季昌明	jì chāng míng	13
 姬洪華	jī hóng huá	49
 姜白巖	jiāng bái yán	45
 姜寶成	jiāng bǎo chéng	234
@@ -6018,6 +6021,7 @@ sort: by_weight
 金子賢	jīn zi xián	320
 金子一	jīn zi yī	630
 金子玉	jīn zi yù	76
+久次良	jiǔ cì liáng	88
 孔安國	kǒng ān guó	103
 孔波雷	kǒng bō léi	3
 孔超萍	kǒng chāo píng	387
@@ -9635,10 +9639,13 @@ sort: by_weight
 阮文素	ruǎn wén sù	194
 阮逸女	ruǎn yì nǚ	45
 阮子岩	ruǎn zǐ yán	45
+賽諾菲	sài nuò fēi	78
 山本寬	shān běn kuān	209
 山田洋	shān tián yáng	98
 上官红	shàng guān hóng	58
 上官虹	shàng guān hóng	24
+上官透	shàng guān tòu	360
+上官周	shàng guān zhōu	288
 邵葆醇	shào bǎo chún	171
 邵炳鳳	shào bǐng fèng	302
 邵伯雍	shào bó yōng	45
@@ -13974,6 +13981,7 @@ sort: by_weight
 余東雄	yú dōng xióng	274
 餘多多	yú duō duō	2792
 俞放鶴	yú fàng hè	364
+雨宮螢	yǔ gōng yíng	32
 余桂英	yú guì yīng	76
 余國偉	yú guó wěi	543
 余海龍	yú hǎi lóng	201
@@ -14134,6 +14142,7 @@ sort: by_weight
 岳陽城	yuè yáng chéng	83
 岳陽艦	yuè yáng jiàn	45
 嶽鍾琪	yuè zhōng qí	375
+雲外鏡	yún wài jìng	66
 臧海利	zāng hǎi lì	189
 臧甲彬	zāng jiǎ bīn	45
 臧嘉亮	zāng jiā liàng	266
@@ -17993,6 +18002,7 @@ sort: by_weight
 親方良忠	qīn fāng liáng zhōng	0
 親方賢雄	qīn fāng xián xióng	0
 親方秀信	qīn fāng xiù xìn	0
+卿晨璟靚	qīng chén jǐng liàng	45
 阮富仲除	ruǎn fù zhòng chú	5
 阮富仲剛	ruǎn fù zhòng gāng	5
 阮富仲日	ruǎn fù zhòng rì	2
@@ -18182,6 +18192,24 @@ sort: by_weight
 杉田莊一	shān tián zhuāng yī	2
 山田拙者	shān tián zhuō zhě	0
 山田佐能	shān tián zuǒ néng	0
+上官博玉	shàng guān bó yù	171
+上官飛鳳	shàng guān fēi fèng	76
+上官飛龍	shàng guān fēi lóng	50
+上官飛燕	shàng guān fēi yàn	333
+上官海棠	shàng guān hǎi táng	238
+上官劍南	shàng guān jiàn nán	266
+上官金虹	shàng guān jīn hóng	562
+上官驚鴻	shàng guān jīng hóng	50
+上官警我	shàng guān jǐng wǒ	180
+上官明月	shàng guān míng yuè	99
+上官慕容	shàng guān mù róng	45
+上官秋月	shàng guān qiū yuè	144
+上官瑞謙	shàng guān ruì qiān	256
+上官鐵生	shàng guān tiě shēng	306
+上官庭芝	shàng guān tíng zhī	220
+上官無敵	shàng guān wú dí	45
+上官雪兒	shàng guān xuě ér	171
+上官依然	shàng guān yī rán	50
 上杉禪秀	shàng shān chán xiù	24
 上杉朝定	shàng shān cháo dìng	45
 上杉達也	shàng shān dá yě	19

@@ -4847,7 +4847,7 @@ sort: by_weight
 氨基偶氮苯	ān jī ǒu dàn běn	10
 氨基葡聚糖	ān jī pú jù táng	10
 氨基葡糖酸	ān jī pú táng suān	10
-氨基葡萄糖	ān jī pú táo táng	10
+氨基葡萄糖	ān jī pú tao táng	10
 氨基羥丁酸	ān jī qiǎng dīng suān	10
 氨基羥酪酸	ān jī qiǎng lào suān	10
 氨基羥嘌呤	ān jī qiǎng piào lìng	10
@@ -6236,7 +6236,7 @@ sort: by_weight
 氟比洛芬鈉	fú bǐ luò fēn nà	10
 氟比洛芬酯	fú bǐ luò fēn zhǐ	10
 氟代雌二醇	fú dài cí èr chún	10
-氟代葡萄糖	fú dài pú táo táng	10
+氟代葡萄糖	fú dài pú tao táng	10
 氟代硝酸氙	fú dài xiāo suān xiān	10
 氟的同位素	fú de tóng wèi sù	10
 鈇的同位素	fū de tóng wèi sù	10
@@ -6867,7 +6867,7 @@ sort: by_weight
 甲基皮質醇	jiǎ jī pí zhì chún	10
 甲基葡糖胺	jiǎ jī pú táng àn	10
 甲基葡糖苷	jiǎ jī pú táng gān	10
-甲基葡萄糖	jiǎ jī pú táo táng	10
+甲基葡萄糖	jiǎ jī pú tao táng	10
 甲基七葉醇	jiǎ jī qī yè chún	10
 甲基羥吡啶	jiǎ jī qiǎng bǐ dìng	10
 甲基羥基胺	jiǎ jī qiǎng jī àn	10
@@ -7179,7 +7179,7 @@ sort: by_weight
 焦磷酸氧釩	jiāo lín suān yǎng fán	10
 焦磷酸氧鎢	jiāo lín suān yǎng wū	10
 焦蓬莪朮酮	jiāo péng é zhú tóng	10
-焦葡萄酸鈉	jiāo pú táo suān nà	10
+焦葡萄酸鈉	jiāo pú tao suān nà	10
 焦性硼酸鈉	jiāo xìng péng suān nà	12
 焦亞磷酸鹽	jiāo yà lín suān yán	10
 焦亞硫酸鉀	jiāo yà liú suān jiǎ	12
@@ -7614,7 +7614,7 @@ sort: by_weight
 硫代鳥嘌呤	liú dài niǎo piào lìng	10
 硫代鳥嘌嶺	liú dài niǎo piào lǐng	10
 硫代蘋果酸	liú dài píng guǒ suān	10
-硫代葡萄糖	liú dài pú táo táng	10
+硫代葡萄糖	liú dài pú tao táng	10
 硫代砷酸鹽	liú dài shēn suān yán	10
 硫代雙甲烷	liú dài shuāng jiǎ wán	12
 硫代水楊酸	liú dài shuǐ yáng suān	10
@@ -8179,11 +8179,11 @@ sort: by_weight
 葡糖醛酸鈉	pú táng quán suān nà	10
 葡糖酸鉀鹽	pú táng suān jiǎ yán	10
 葡糖酸內酯	pú táng suān nèi zhǐ	10
-葡萄糖酸鉀	pú táo táng suān jiǎ	10
-葡萄糖酸鎂	pú táo táng suān měi	10
-葡萄糖酸鈉	pú táo táng suān nà	10
-葡萄糖酸銅	pú táo táng suān tóng	10
-葡萄糖酸鋅	pú táo táng suān xīn	10
+葡萄糖酸鉀	pú tao táng suān jiǎ	10
+葡萄糖酸鎂	pú tao táng suān měi	10
+葡萄糖酸鈉	pú tao táng suān nà	10
+葡萄糖酸銅	pú tao táng suān tóng	10
+葡萄糖酸鋅	pú tao táng suān xīn	10
 普通話二甲	pǔ tōng huà èr jiǎ	10
 七氟丙氧基	qī fú bǐng yǎng jī	10
 七氟丁酸酐	qī fú dīng suān gān	10
@@ -8615,6 +8615,7 @@ sort: by_weight
 三溴甲鍺烷	sān xiù jiǎ zhě wán	10
 三溴新戊醇	sān xiù xīn wù chún	10
 三亞碲酸鉿	sān yà dì suān hā	10
+三氧化二鑀	sān yǎng huà èr ài	10
 三氧化二鉍	sān yǎng huà èr bì	10
 三氧化二氮	sān yǎng huà èr dàn	10
 三氧化二銩	sān yǎng huà èr diū	10
@@ -8659,7 +8660,6 @@ sort: by_weight
 三氧化二鐿	sān yǎng huà èr yì	10
 三氧化二銦	sān yǎng huà èr yīn	10
 三氧化二銪	sān yǎng huà èr yǒu	10
-三氧化二鑀	sān yǎng huà èr 𰾭	10
 三氧化鈦鈣	sān yǎng huà tài gài	12
 三異丙醇胺	sān yì bǐng chún àn	10
 三乙二醇醚	sān yǐ èr chún mí	10
@@ -8980,7 +8980,7 @@ sort: by_weight
 酸奶醬醬茶	suān nǎi jiàng jiàng chá	10
 酸奶小王紫	suān nǎi xiǎo wáng zǐ	10
 酸屁孩軟糖	suān pì hái ruǎn táng	10
-酸葡萄心理	suān pú táo xīn lǐ	10
+酸葡萄心理	suān pú tao xīn lǐ	10
 酸氣分離器	suān qì fēn lí qì	10
 酸氣空冷器	suān qì kōng lěng qì	10
 酸三甲基鋶	suān sān jiǎ jī liǔ	10
@@ -9871,7 +9871,7 @@ sort: by_weight
 銥金火花塞	yī jīn huǒ huā sāi	10
 異抗壞血酸	yì kàng huài xuè suān	10
 一顆酸梅啊	yì kē suān méi a	10
-一粒酸葡萄	yí lì suān pú táo	10
+一粒酸葡萄	yí lì suān pú tao	10
 伊利優酸乳	yī lì yōu suān rǔ	10
 一磷酸胞苷	yī lín suān bāo gān	10
 一磷酸肌苷	yī lín suān jī gān	10
@@ -9894,7 +9894,7 @@ sort: by_weight
 一氯代醋酸	yī lǜ dài cù suān	10
 一氯化苯醚	yī lǜ huà běn mí	10
 一氯頻哪酮	yī lǜ pín nǎ tóng	10
-釔鋁石榴石	yǐ lǚ shí liú shí	10
+釔鋁石榴石	yǐ lǚ shí liu shí	10
 一氯乙酰氯	yī lǜ yǐ xiān lǜ	10
 一氯乙鍺烷	yī lǜ yǐ zhě wán	10
 乙醚抽出物	yǐ mí chōu chū wù	10
@@ -10359,7 +10359,7 @@ sort: by_weight
 氨基脲基戊酸	ān jī niào jī wù suān	10
 氨基脲鹽酸鹽	ān jī niào yán suān yán	10
 氨基偶氮甲苯	ān jī ǒu dàn jiǎ běn	10
-氨基葡萄糖酸	ān jī pú táo táng suān	10
+氨基葡萄糖酸	ān jī pú tao táng suān	10
 氨基羥基吡啶	ān jī qiǎng jī bǐ dìng	10
 氨基羥基丙酸	ān jī qiǎng jī bǐng suān	10
 氨基羥基丁酸	ān jī qiǎng jī dīng suān	10
@@ -10390,7 +10390,7 @@ sort: by_weight
 氨基酸複合體	ān jī suān fù hé tǐ	10
 氨基酸聚合物	ān jī suān jù hé wù	10
 氨基酸連接酶	ān jī suān lián jiē méi	10
-氨基酸葡萄糖	ān jī suān pú táo táng	10
+氨基酸葡萄糖	ān jī suān pú tao táng	10
 氨基酸球菌目	ān jī suān qiú jūn mù	10
 氨基酸山梨醇	ān jī suān shān lí chún	10
 氨基酸脫氫酶	ān jī suān tuō qīng méi	10
@@ -11233,7 +11233,7 @@ sort: by_weight
 二丙基醋酸鈉	èr bǐng jī cù suān nà	10
 二丙基醋酸鹽	èr bǐng jī cù suān yán	10
 二丙酸美雄醇	èr bǐng suān měi xióng chún	10
-二丙酮葡萄糖	èr bǐng tóng pú táo táng	10
+二丙酮葡萄糖	èr bǐng tóng pú tao táng	10
 二草酸根合鈀	èr cǎo suān gēn hé bǎ	10
 二草酸根合銅	èr cǎo suān gēn hé tóng	10
 二草酸四羥基	èr cǎo suān sì qiǎng jī	10
@@ -11426,7 +11426,7 @@ sort: by_weight
 二磷酸甘油醛	èr lín suān gān yóu quán	10
 二磷酸甘油酸	èr lín suān gān yóu suān	10
 二磷酸核酮糖	èr lín suān hé tóng táng	10
-二磷酸葡萄糖	èr lín suān pú táo táng	10
+二磷酸葡萄糖	èr lín suān pú tao táng	10
 二磷酸腺苷酶	èr lín suān xiàn gān méi	10
 二硫赤絲草醇	èr liú chì sī cǎo chún	10
 二硫代苯甲酸	èr liú dài běn jiǎ suān	10
@@ -11828,7 +11828,7 @@ sort: by_weight
 氟甲基苯硼酸	fú jiǎ jī běn péng suān	10
 氟康唑滴眼液	fú kāng zuò dī yǎn yè	10
 氟康唑氯化鈉	fú kāng zuò lǜ huà nà	10
-氟康唑葡萄糖	fú kāng zuò pú táo táng	10
+氟康唑葡萄糖	fú kāng zuò pú tao táng	10
 富亮氨酸重複	fù liàng ān suān chóng fù	10
 氟羅沙星凍乾	fú luó shā xīng dòng gān	10
 氟氯二溴甲烷	fú lǜ èr xiù jiǎ wán	10
@@ -11871,7 +11871,7 @@ sort: by_weight
 氟脫氯氯胺酮	fú tuō lǜ lǜ àn tóng	10
 氟脫氧尿苷酸	fú tuō yǎng niào gān suān	10
 氟脫氧尿核苷	fú tuō yǎng niào hé gān	10
-氟脫氧葡萄糖	fú tuō yǎng pú táo táng	10
+氟脫氧葡萄糖	fú tuō yǎng pú tao táng	10
 夫西地酸乳膏	fū xī dì suān rǔ gāo	10
 氟硝基苯甲酸	fú xiāo jī běn jiǎ suān	10
 氟溴二碘甲烷	fú xiù èr diǎn jiǎ wán	10
@@ -11994,7 +11994,7 @@ sort: by_weight
 固體二氧化碳	gù tǐ èr yǎng huà tàn	10
 谷酰胺脯氨酸	gǔ xiān àn pú ān suān	10
 穀甾醇葡糖苷	gǔ zāi chún pú táng gān	10
-穀甾醇葡萄苷	gǔ zāi chún pú táo gān	10
+穀甾醇葡萄苷	gǔ zāi chún pú tao gān	10
 寡核苷酸探針	guǎ hé gān suān tàn zhēn	10
 胍甲酸叔丁酯	guā jiǎ suān shū dīng zhǐ	10
 寡脫氧核苷酸	guǎ tuō yǎng hé gān suān	10
@@ -12363,7 +12363,7 @@ sort: by_weight
 甲基尼克酰胺	jiǎ jī ní kè xiān àn	10
 甲基牛磺酸鹽	jiǎ jī niú huáng suān yán	10
 甲基潑尼松龍	jiǎ jī pō ní sōng lóng	10
-甲基葡萄糖胺	jiǎ jī pú táo táng àn	10
+甲基葡萄糖胺	jiǎ jī pú tao táng àn	10
 甲基前列腺素	jiǎ jī qián liè xiàn sù	10
 甲基強的松龍	jiǎ jī qiáng dì sōng lóng	10
 甲基羥基丙腈	jiǎ jī qiǎng jī bǐng jīng	10
@@ -12423,7 +12423,7 @@ sort: by_weight
 甲基乙基色胺	jiǎ jī yǐ jī sè àn	10
 甲基乙基酮肟	jiǎ jī yǐ jī tóng wò	10
 甲基乙基戊烷	jiǎ jī yǐ jī wù wán	10
-甲基異石榴鹼	jiǎ jī yì shí liú jiǎn	10
+甲基異石榴鹼	jiǎ jī yì shí liu jiǎn	10
 甲基異戊基酮	jiǎ jī yì wù jī tóng	10
 甲基異烏藥鹼	jiǎ jī yì wū yào jiǎn	10
 甲基乙烯吡啶	jiǎ jī yǐ xī bǐ dìng	10
@@ -12767,7 +12767,7 @@ sort: by_weight
 庫車綠氫項目	kù chē lǜ qīng xiàng mù	10
 苦醛腐蝕溶液	kǔ quán fǔ shí róng yè	10
 苦參鹼氯化鈉	kǔ shēn jiǎn lǜ huà nà	10
-苦參鹼葡萄糖	kǔ shēn jiǎn pú táo táng	10
+苦參鹼葡萄糖	kǔ shēn jiǎn pú tao táng	10
 苦參素氯化鈉	kǔ shēn sù lǜ huà nà	10
 苦味酸胭脂紅	kǔ wèi suān yān zhī hóng	10
 苦胭脂紅溶液	kǔ yān zhī hóng róng yè	10
@@ -12948,8 +12948,8 @@ sort: by_weight
 磷酸鈉纖維素	lín suān nà xiān wéi sù	10
 磷酸萘酯鈣鹽	lín suān nài zhǐ gài yán	10
 磷酸葡糖苷酶	lín suān pú táng gān méi	10
-磷酸葡萄糖酶	lín suān pú táo táng méi	10
-磷酸葡萄糖酸	lín suān pú táo táng suān	10
+磷酸葡萄糖酶	lín suān pú tao táng méi	10
+磷酸葡萄糖酸	lín suān pú tao táng suān	10
 磷酸羥基哌喹	lín suān qiǎng jī pài kuí	10
 磷酸氫根離子	lín suān qīng gēn lí zǐ	10
 磷酸三甲苯酯	lín suān sān jiǎ běn zhǐ	10
@@ -13018,8 +13018,8 @@ sort: by_weight
 硫代硫酸金鈉	liú dài liú suān jīn nà	10
 硫代鳥苷水合	liú dài niǎo gān shuǐ hé	10
 硫代葡糖苷酶	liú dài pú táng gān méi	10
-硫代葡萄糖甙	liú dài pú táo táng dài	10
-硫代葡萄糖苷	liú dài pú táo táng gān	10
+硫代葡萄糖甙	liú dài pú tao táng dài	10
+硫代葡萄糖苷	liú dài pú tao táng gān	10
 硫代氫化鋁鋰	liú dài qīng huà lǚ lǐ	10
 硫代噻唑烷酮	liú dài sāi zuò wán tóng	10
 硫代山梨糖醇	liú dài shān lí táng chún	10
@@ -13265,7 +13265,7 @@ sort: by_weight
 氯化琥珀膽鹼	lǜ huà hǔ pò dǎn jiǎn	10
 氯化己二醯基	lǜ huà jǐ èr xī jī	10
 氯化鉀飽和液	lǜ huà jiǎ bǎo hé yè	10
-氯化鉀葡萄糖	lǜ huà jiǎ pú táo táng	10
+氯化鉀葡萄糖	lǜ huà jiǎ pú tao táng	10
 氯化鉀塑料瓶	lǜ huà jiǎ sù liào píng	10
 氯化聚氯乙烯	lǜ huà jù lǜ yǐ xī	10
 氯化六氨合鉑	lǜ huà liù ān hé bó	10
@@ -13510,17 +13510,17 @@ sort: by_weight
 葡糖苷酸睾酮	pú táng gān suān gāo tóng	10
 葡糖磷酸鋇鹽	pú táng lín suān bèi yán	10
 葡糖醛酸內酯	pú táng quán suān nèi zhǐ	10
-葡萄酒中的酸	pú táo jiǔ zhōng de suān	10
-葡萄醛酸內酯	pú táo quán suān nèi zhǐ	10
-葡萄糖氯化鈉	pú táo táng lǜ huà nà	10
-葡萄糖醛酸鈉	pú táo táng quán suān nà	10
-葡萄糖酸鈣維	pú táo táng suān gài wéi	10
-葡萄糖酸鈣鋅	pú táo táng suān gài xīn	10
-葡萄糖酸鈣針	pú táo táng suān gài zhēn	10
-葡萄糖酸內酯	pú táo táng suān nèi zhǐ	10
-葡萄糖酸銻鈉	pú táo táng suān tī nà	10
-葡萄糖酸亞鐵	pú táo táng suān yà tiě	10
-葡萄糖氧化酶	pú táo táng yǎng huà méi	10
+葡萄酒中的酸	pú tao jiǔ zhōng de suān	10
+葡萄醛酸內酯	pú tao quán suān nèi zhǐ	10
+葡萄糖氯化鈉	pú tao táng lǜ huà nà	10
+葡萄糖醛酸鈉	pú tao táng quán suān nà	10
+葡萄糖酸鈣維	pú tao táng suān gài wéi	10
+葡萄糖酸鈣鋅	pú tao táng suān gài xīn	10
+葡萄糖酸鈣針	pú tao táng suān gài zhēn	10
+葡萄糖酸內酯	pú tao táng suān nèi zhǐ	10
+葡萄糖酸銻鈉	pú tao táng suān tī nà	10
+葡萄糖酸亞鐵	pú tao táng suān yà tiě	10
+葡萄糖氧化酶	pú tao táng yǎng huà méi	10
 普通硫銻鉛礦	pǔ tōng liú tī qiān kuàng	10
 七水硫酸亞鐵	qī shuǐ liú suān yà tiě	10
 氣相二氧化硅	qì xiàng èr yǎng huà guī	10
@@ -15097,8 +15097,8 @@ sort: by_weight
 異甲基丁香酚	yì jiǎ jī dīng xiāng fēn	10
 異抗壞血酸鈉	yì kàng huài xuè suān nà	10
 衣康酸二甲酯	yī kāng suān èr jiǎ zhǐ	10
-一粒大酸葡萄	yí lì dà suān pú táo	10
-一磷酸葡萄糖	yī lín suān pú táo táng	10
+一粒大酸葡萄	yí lì dà suān pú tao	10
+一磷酸葡萄糖	yī lín suān pú tao táng	10
 乙硫氨基乙醇	yǐ liú ān jī yǐ chún	10
 一硫代磷酸鈉	yī liú dài lín suān nà	10
 異硫氰基哌啶	yì liú qíng jī pài dìng	10
@@ -15220,7 +15220,7 @@ sort: by_weight
 乙酰基環己酮	yǐ xiān jī huán jǐ tóng	10
 乙酰基環己烷	yǐ xiān jī huán jǐ wán	10
 乙酰基金剛烷	yǐ xiān jī jīn gāng wán	10
-乙酰葡萄糖胺	yǐ xiān pú táo táng àn	10
+乙酰葡萄糖胺	yǐ xiān pú tao táng àn	10
 乙酰色氨酰胺	yǐ xiān sè ān xiān àn	10
 乙酰水楊酸散	yǐ xiān shuǐ yáng suān sàn	10
 乙酰水楊酸銅	yǐ xiān shuǐ yáng suān tóng	10
@@ -15390,7 +15390,7 @@ sort: by_weight
 唑來膦酸凍乾	zuò lái lìn suān dòng gān	10
 左旋氨氯地平	zuǒ xuán ān lǜ dì píng	10
 左旋麩醯胺酸	zuǒ xuán fū xī àn suān	10
-左旋葡萄糖酮	zuǒ xuán pú táo táng tóng	10
+左旋葡萄糖酮	zuǒ xuán pú tao táng tóng	10
 阿苯達唑乾糖漿	ā běn dá zuò gàn táng jiāng	10
 阿法骨化醇膠丸	ā fǎ gǔ huà chún jiāo wán	10
 阿法甲基芬太尼	ā fǎ jiǎ jī fēn tài ní	10
@@ -15403,7 +15403,7 @@ sort: by_weight
 阿魏酸丁二酰胺	ā wèi suān dīng èr xiān àn	10
 阿魏酸穀甾醇酯	ā wèi suān gǔ zāi chún zhǐ	10
 阿魏酸鈉氯化鈉	ā wèi suān nà lǜ huà nà	10
-阿魏酸鈉葡萄糖	ā wèi suān nà pú táo táng	10
+阿魏酸鈉葡萄糖	ā wèi suān nà pú tao táng	10
 阿昔洛韋氯化鈉	ā xī luò wéi lǜ huà nà	10
 艾杜糖醇脫氫酶	ài dù táng chún tuō qīng méi	10
 艾杜糖硫酸酯酶	ài dù táng liú suān zhǐ méi	10
@@ -15470,7 +15470,7 @@ sort: by_weight
 氨基吲哚基丙酸	ān jī yǐn duǒ jī bǐng suān	10
 氨基粘康酸半醛	ān jī zhān kāng suān bàn quán	10
 氨甲苯酸氯化鈉	ān jiǎ běn suān lǜ huà nà	10
-氨甲苯酸葡萄糖	ān jiǎ běn suān pú táo táng	10
+氨甲苯酸葡萄糖	ān jiǎ běn suān pú tao táng	10
 氨甲環酸氯化鈉	ān jiǎ huán suān lǜ huà nà	10
 氨甲酰二氫安定	ān jiǎ xiān èr qīng ān dìng	10
 氨氯吡啶酸原藥	ān lǜ bǐ dìng suān yuán yào	10
@@ -15618,7 +15618,7 @@ sort: by_weight
 玻爾氫原子理論	bō ěr qīng yuán zǐ lǐ lùn	10
 玻璃酸鈉滴眼液	bō li suān nà dī yǎn yè	10
 玻尿酸注射隆鼻	bō niào suān zhù shè lóng bí	10
-菠甾醇葡萄糖苷	bō zāi chún pú táo táng gān	10
+菠甾醇葡萄糖苷	bō zāi chún pú tao táng gān	10
 布爾德烯烴合成	bù ěr dé xī tīng hé chéng	10
 布諾洛爾鹽酸鹽	bù nuò luò ěr yán suān yán	10
 草酸鹽沉積症型	cǎo suān yán chén jī zhèng xíng	10
@@ -15675,8 +15675,8 @@ sort: by_weight
 醋酸纖維素塑料	cù suān xiān wéi sù sù liào	12
 醋酸纖維素纖維	cù suān xiān wéi sù xiān wéi	10
 大黃素甲醚蒽酚	dà huáng sù jiǎ mí ēn fēn	10
-大磺酸葡萄糖苷	dà huáng suān pú táo táng gān	10
-大黃酸葡萄糖苷	dà huáng suān pú táo táng gān	10
+大磺酸葡萄糖苷	dà huáng suān pú tao táng gān	10
+大黃酸葡萄糖苷	dà huáng suān pú tao táng gān	10
 蛋白甲基轉移酶	dàn bái jiǎ jī zhuǎn yí méi	10
 蛋白酪氨酸激酶	dàn bái lào ān suān jī méi	10
 蛋白質和氨基酸	dàn bái zhì hé ān jī suān	10
@@ -15796,7 +15796,7 @@ sort: by_weight
 多聚腺苷酸信使	duō jù xiàn gān suān xìn shǐ	10
 多潘立酮混懸液	duō pān lì tóng hùn xuán yè	10
 多索茶鹼氯化鈉	duō suǒ chá jiǎn lǜ huà nà	10
-多索茶鹼葡萄糖	duō suǒ chá jiǎn pú táo táng	10
+多索茶鹼葡萄糖	duō suǒ chá jiǎn pú tao táng	10
 多烯磷脂酰膽鹼	duō xī lín zhī xiān dǎn jiǎn	10
 多烯酸乙酯膠丸	duō xī suān yǐ zhǐ jiāo wán	10
 多腺苷酸尿苷酸	duō xiàn gān suān niào gān suān	10
@@ -15991,7 +15991,7 @@ sort: by_weight
 氟胞嘧啶氯化鈉	fú bāo mì dìng lǜ huà nà	10
 呋苯咪唑青黴素	fū běn mī zuò qīng méi sù	10
 氟比洛芬巴布膏	fú bǐ luò fēn bā bù gāo	10
-氟代脫氧葡萄糖	fú dài tuō yǎng pú táo táng	10
+氟代脫氧葡萄糖	fú dài tuō yǎng pú tao táng	10
 複方氨酚烷胺膠	fù fāng ān fēn wán àn jiāo	10
 複方氨基酸顆粒	fù fāng ān jī suān kē lì	10
 複方氨基酸雙肽	fù fāng ān jī suān shuāng tài	10
@@ -16056,7 +16056,7 @@ sort: by_weight
 複方木香小檗鹼	fù fāng mù xiāng xiǎo bò jiǎn	10
 複方枇杷氯化銨	fù fāng pí pá lǜ huà ǎn	10
 複方皮維碘溶液	fù fāng pí wéi diǎn róng yè	10
-複方葡萄糖酸鈣	fù fāng pú táo táng suān gài	10
+複方葡萄糖酸鈣	fù fāng pú tao táng suān gài	10
 複方氫氧化鋁鎂	fù fāng qīng yǎng huà lǚ měi	10
 複方曲安龍溶液	fù fāng qǔ ān lóng róng yè	10
 複方三氯叔丁醇	fù fāng sān lǜ shū dīng chún	10
@@ -16105,7 +16105,7 @@ sort: by_weight
 氟康唑玻璃酸鈉	fú kāng zuò bō li suān nà	10
 氟磷酸二環己酯	fú lín suān èr huán jǐ zhǐ	10
 氟羅沙星甘露醇	fú luó shā xīng gān lù chún	10
-氟羅沙星葡萄糖	fú luó shā xīng pú táo táng	10
+氟羅沙星葡萄糖	fú luó shā xīng pú tao táng	10
 氟氯烷類化合物	fú lǜ wán lèi huà hé wù	10
 富馬酸阿奇黴素	fù mǎ suān ā qí méi sù	10
 富馬酸比索洛爾	fù mǎ suān bǐ suǒ luò ěr	10
@@ -16588,7 +16588,7 @@ sort: by_weight
 克林黴素氯化鈉	kè lín méi sù lǜ huà nà	10
 可逆單胺氧化酶	kě nì dān àn yǎng huà méi	10
 可溶性核糖核酸	kě róng xìng hé táng hé suān	10
-苦馬酸葡萄糖苷	kǔ mǎ suān pú táo táng gān	10
+苦馬酸葡萄糖苷	kǔ mǎ suān pú tao táng gān	10
 礦渣硅酸鹽水泥	kuàng zhā guī suān yán shuǐ ní	10
 奎寧萘酚磺酸鹽	kuí níng nài fēn huáng suān yán	10
 奎寧尿素鹽酸鹽	kuí níng niào sù yán suān yán	10
@@ -16641,7 +16641,7 @@ sort: by_weight
 磷酸奧司他韋膠	lín suān ào sī tā wéi jiāo	10
 磷酸半乳糖苷酶	lín suān bàn rǔ táng gān méi	10
 磷酸苯丙哌林膠	lín suān běn bǐng pài lín jiāo	10
-磷酸吡喃葡萄糖	lín suān bǐ nán pú táo táng	10
+磷酸吡喃葡萄糖	lín suān bǐ nán pú tao táng	10
 磷酸丙糖異構酶	lín suān bǐng táng yì gòu méi	10
 磷酸川芎嗪滴丸	lín suān chuān xiōng qín dī wán	10
 磷酸膽鹼轉移酶	lín suān dǎn jiǎn zhuǎn yí méi	10
@@ -16660,14 +16660,14 @@ sort: by_weight
 磷酸景天庚酮糖	lín suān jǐng tiān gēng tóng táng	10
 磷酸可待因糖漿	lín suān kě dài yīn táng jiāng	10
 磷酸硫代尿核苷	lín suān liú dài niào hé gān	10
-磷酸尿苷葡萄糖	lín suān niào gān pú táo táng	10
+磷酸尿苷葡萄糖	lín suān niào gān pú tao táng	10
 磷酸哌嗪寶塔糖	lín suān pài qín bǎo tǎ táng	10
 磷酸葡糖酸內酯	lín suān pú táng suān nèi zhǐ	10
-磷酸葡萄糖酸酯	lín suān pú táo táng suān zhǐ	10
-磷酸葡萄脫氫酶	lín suān pú táo tuō qīng méi	10
+磷酸葡萄糖酸酯	lín suān pú tao táng suān zhǐ	10
+磷酸葡萄脫氫酶	lín suān pú tao tuō qīng méi	10
 磷酸三個甲苯酯	lín suān sān gè jiǎ běn zhǐ	10
 磷酸三氯乙酯鈉	lín suān sān lǜ yǐ zhǐ nà	10
-磷酸脫氧葡萄糖	lín suān tuō yǎng pú táo táng	10
+磷酸脫氧葡萄糖	lín suān tuō yǎng pú tao táng	10
 磷酸烯醇丙酮酸	lín suān xī chún bǐng tóng suān	10
 磷酸鋅促皮質素	lín suān xīn cù pí zhì sù	10
 磷酸一氫根離子	lín suān yī qīng gēn lí zǐ	10
@@ -16681,7 +16681,7 @@ sort: by_weight
 硫代硫酸根離子	liú dài liú suān gēn lí zǐ	10
 硫代硫酸鈉溶液	liú dài liú suān nà róng yè	10
 硫代蘋果酸金鈉	liú dài píng guǒ suān jīn nà	10
-硫代葡萄糖苷酶	liú dài pú táo táng gān méi	10
+硫代葡萄糖苷酶	liú dài pú tao táng gān méi	10
 硫的高價氧化物	liú de gāo jià yǎng huà wù	10
 六疊氮磷酸五氮	liù dié dàn lín suān wǔ dàn	10
 六氟化硫稀釋法	liù fú huà liú xī shì fǎ	10
@@ -16705,7 +16705,7 @@ sort: by_weight
 六水丁二酸二鈉	liù shuǐ dīng èr suān èr nà	12
 六水硫酸亞鐵銨	liù shuǐ liú suān yà tiě ǎn	12
 硫酸阿托品眼膏	liú suān ā tuō pǐn yǎn gāo	10
-硫酸氨基葡萄糖	liú suān ān jī pú táo táng	10
+硫酸氨基葡萄糖	liú suān ān jī pú tao táng	10
 硫酸鋇型混懸液	liú suān bèi xíng hùn xuán yè	10
 硫酸二氨基吖啶	liú suān èr ān jī ā dìng	10
 硫酸鎂溶液傳染	liú suān měi róng yè chuán rǎn	10
@@ -16825,12 +16825,12 @@ sort: by_weight
 濃過氧化氫溶液	nóng guò yǎng huà qīng róng yè	10
 諾氟沙星滴眼液	nuò fú shā xīng dī yǎn yè	10
 諾氟沙星腳氣水	nuò fú shā xīng jiǎo qì shuǐ	10
-諾氟沙星葡萄糖	nuò fú shā xīng pú táo táng	10
+諾氟沙星葡萄糖	nuò fú shā xīng pú tao táng	10
 諾氟沙星鋅乳膏	nuò fú shā xīng xīn rǔ gāo	10
 偶氮二氰基戊酸	ǒu dàn èr qíng jī wù suān	10
 派爾努甲醇悲劇	pài ěr nǔ jiǎ chún bēi jù	10
 哌泊噻棕櫚酸酯	pài pō sāi zōng lǘ suān zhǐ	10
-培氟沙星葡萄糖	péi fú shā xīng pú táo táng	10
+培氟沙星葡萄糖	péi fú shā xīng pú tao táng	10
 噴托維林氯化銨	pēn tuō wéi lín lǜ huà ǎn	10
 膨體聚四氟乙烯	péng tǐ jù sì fú yǐ xī	10
 皮特森烯烴合成	pí tè sēn xī tīng hé chéng	10
@@ -16840,15 +16840,15 @@ sort: by_weight
 潑尼松龍乙酸酯	pō ní sōng lóng yǐ suān zhǐ	10
 葡庚糖酸紅黴素	pú gēng táng suān hóng méi sù	10
 普魯卡因泛酸鈣	pǔ lǔ kǎ yīn fàn suān gài	10
-葡萄糖氯化鈉鉀	pú táo táng lǜ huà nà jiǎ	10
-葡萄糖醛酸內酯	pú táo táng quán suān nèi zhǐ	10
-葡萄糖酸鈣顆粒	pú táo táng suān gài kē lì	10
-葡萄糖酸鈣溶液	pú táo táng suān gài róng yè	10
-葡萄糖酸鈣注射	pú táo táng suān gài zhù shè	10
-葡萄糖酸氯已定	pú táo táng suān lǜ yǐ dìng	10
-葡萄糖酸鎂顆粒	pú táo táng suān měi kē lì	10
-葡萄糖酸鋅顆粒	pú táo táng suān xīn kē lì	10
-葡萄糖酸鋅糖漿	pú táo táng suān xīn táng jiāng	10
+葡萄糖氯化鈉鉀	pú tao táng lǜ huà nà jiǎ	10
+葡萄糖醛酸內酯	pú tao táng quán suān nèi zhǐ	10
+葡萄糖酸鈣顆粒	pú tao táng suān gài kē lì	10
+葡萄糖酸鈣溶液	pú tao táng suān gài róng yè	10
+葡萄糖酸鈣注射	pú tao táng suān gài zhù shè	10
+葡萄糖酸氯已定	pú tao táng suān lǜ yǐ dìng	10
+葡萄糖酸鎂顆粒	pú tao táng suān měi kē lì	10
+葡萄糖酸鋅顆粒	pú tao táng suān xīn kē lì	10
+葡萄糖酸鋅糖漿	pú tao táng suān xīn táng jiāng	10
 普通硅酸鹽水泥	pǔ tōng guī suān yán shuǐ ní	10
 七甲基三硅氧烷	qī jiǎ jī sān guī yǎng wán	10
 芪均二苯代乙烯	qí jūn èr běn dài yǐ xī	10
@@ -17207,7 +17207,7 @@ sort: by_weight
 鹽酸吖啶黃溶液	yán suān ā dìng huáng róng yè	10
 鹽酸阿撲嗎啡舌	yán suān ā pū mǎ fēi shé	10
 鹽酸胺碘酮注射	yán suān àn diǎn tóng zhù shè	10
-鹽酸氨基葡萄糖	yán suān ān jī pú táo táng	10
+鹽酸氨基葡萄糖	yán suān ān jī pú tao táng	10
 鹽酸氨溴索顆粒	yán suān ān xiù suǒ kē lì	10
 鹽酸氨溴索糖漿	yán suān ān xiù suǒ táng jiāng	10
 鹽酸氨溴索注射	yán suān ān xiù suǒ zhù shè	10
@@ -17283,7 +17283,7 @@ sort: by_weight
 氧氟沙星滴眼液	yǎng fú shā xīng dī yǎn yè	10
 氧氟沙星甘露醇	yǎng fú shā xīng gān lù chún	10
 氧氟沙星氯化鈉	yǎng fú shā xīng lǜ huà nà	10
-氧氟沙星葡萄糖	yǎng fú shā xīng pú táo táng	10
+氧氟沙星葡萄糖	yǎng fú shā xīng pú tao táng	10
 氧化丙酸還原酶	yǎng huà bǐng suān huán yuán méi	10
 氧化伯醇到羧酸	yǎng huà bó chún dào suō suān	10
 氧化汞味啫喱粉	yǎng huà gǒng wèi zhě lí fěn	10
@@ -17410,7 +17410,7 @@ sort: by_weight
 左炔諾酮硅膠棒	zuǒ quē nuò tóng guī jiāo bàng	10
 左旋甲基苯丙胺	zuǒ xuán jiǎ jī běn bǐng àn	10
 左旋甲基炔諾酮	zuǒ xuán jiǎ jī quē nuò tóng	10
-左旋葡萄糖烯酮	zuǒ xuán pú táo táng xī tóng	10
+左旋葡萄糖烯酮	zuǒ xuán pú tao táng xī tóng	10
 左氧氟沙星注射	zuǒ yǎng fú shā xīng zhù shè	10
 八甲基環四硅氧烷	bā jiǎ jī huán sì guī yǎng wán	10
 丙烯基縮水甘油醚	bǐng xī jī suō shuǐ gān yóu mí	12
