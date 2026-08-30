@@ -9,44 +9,35 @@ from __future__ import annotations
 # 目的：
 # 1. 避免 PySide6 自带 Qt6 误加载系统 Qt6 插件；
 # 2. XFCE/X11 下明确走 xcb；
-# 3. Fcitx 环境下，二进制 Qt/PySide6 改走 Qt 自带的 ibus 输入桥，
-#    避免系统 fcitx5-qt6 插件与 PySide6 Qt 版本不一致导致输入框崩溃。
+# 3. XFCE/X11 下自动启用 Fcitx5 的 Qt/GTK/XIM 输入环境，
+#    无需再从终端手动添加 GTK_IM_MODULE/QT_IM_MODULE/XMODIFIERS。
 # ============================================================
 import sys
 import os
 
 
 def _prepare_linux_qt_environment() -> None:
+    """Linux 下在导入 PySide6 前准备 Qt/Fcitx5 输入法环境。"""
     if not sys.platform.startswith("linux"):
         return
 
-    # PySide6 wheel 自带 Qt。外部系统 Qt 插件路径可能把另一套 Qt 插件
-    # 注入当前进程，尤其容易在文本框首次处理输入法事件时触发 native 崩溃。
+    # 避免外部 Qt 插件路径污染当前 PySide6/Qt 运行环境。
     os.environ.pop("QT_PLUGIN_PATH", None)
     os.environ.pop("QT_QPA_PLATFORM_PLUGIN_PATH", None)
 
-    # qt5ct / qt6ct / GTK platform theme 也可能来自系统 Qt 安装。
-    # 本程序已有自己的 Palette / StyleSheet，不依赖这些外部主题插件。
+    # 本程序已有自己的 Palette / StyleSheet，不依赖 qt5ct/qt6ct/GTK 主题插件。
     os.environ.pop("QT_QPA_PLATFORMTHEME", None)
 
     session_type = os.environ.get("XDG_SESSION_TYPE", "").strip().lower()
 
-    # XFCE 常见为 X11；不干预 Wayland 会话。
+    # 当前主要支持 XFCE/X11 + Fcitx5。
+    # 等价于：
+    # GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx python3 wanxiang-tools.py
     if session_type != "wayland":
         os.environ.setdefault("QT_QPA_PLATFORM", "xcb")
-
-        qt_im = os.environ.get("QT_IM_MODULE", "").strip().lower()
-        xmodifiers = os.environ.get("XMODIFIERS", "").strip().lower()
-
-        # Fcitx 的系统 Qt IM 插件通常链接系统 Qt。
-        # PySide6 使用自带 Qt 时改走 Qt 自带 ibus input context，
-        # 由 Fcitx 的兼容前端承接输入，避免加载系统 fcitx5-qt6 插件。
-        # 如果用户/启动脚本已经显式指定 QT_IM_MODULE，就尊重它，
-        # 便于真实测试 fcitx / xim / ibus。
-        # 仅当 QT_IM_MODULE 未设置而当前会话明显使用 Fcitx 时，
-        # 才采用 ibus 作为默认兼容回退。
-        if not qt_im and "fcitx" in xmodifiers:
-            os.environ["QT_IM_MODULE"] = "ibus"
+        os.environ.setdefault("GTK_IM_MODULE", "fcitx")
+        os.environ.setdefault("QT_IM_MODULE", "fcitx")
+        os.environ.setdefault("XMODIFIERS", "@im=fcitx")
 
 
 _prepare_linux_qt_environment()
@@ -108,6 +99,29 @@ from PySide6.QtWidgets import (
     QStyleFactory, QMenuBar, QDialog, QDialogButtonBox,
     QRadioButton, QButtonGroup, QComboBox, QGridLayout, QFrame, QSpinBox
 )
+
+
+class FocusPlaceholderPlainTextEdit(QPlainTextEdit):
+    """获得输入焦点时隐藏 placeholder，失焦且为空时恢复。"""
+    def __init__(self, placeholder: str = "", parent=None):
+        super().__init__(parent)
+        self._saved_placeholder = placeholder
+        if placeholder:
+            super().setPlaceholderText(placeholder)
+
+    def setPlaceholderText(self, text: str) -> None:
+        self._saved_placeholder = text
+        if not self.hasFocus():
+            super().setPlaceholderText(text)
+
+    def focusInEvent(self, event):
+        super().setPlaceholderText("")
+        super().focusInEvent(event)
+
+    def focusOutEvent(self, event):
+        super().focusOutEvent(event)
+        if not self.toPlainText():
+            super().setPlaceholderText(self._saved_placeholder)
 
 # ============== 常量/工具 ==============
 TOOL_VERSION = "v3.3.0"
@@ -2989,8 +3003,9 @@ class MainWin(AdvancedSettingsMixin, QWidget):
 
         left_box = QVBoxLayout()
         left_label = QLabel("汉字")
-        self.quick_py_input = QPlainTextEdit()
-        self.quick_py_input.setPlaceholderText("在这里输入或粘贴多行汉字…")
+        self.quick_py_input = FocusPlaceholderPlainTextEdit(
+            "在这里输入或粘贴多行汉字…"
+        )
         self.quick_py_input.setMinimumHeight(120)
         left_box.addWidget(left_label)
         left_box.addWidget(self.quick_py_input)
