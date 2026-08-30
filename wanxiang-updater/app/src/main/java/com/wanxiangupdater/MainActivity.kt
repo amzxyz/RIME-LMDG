@@ -813,6 +813,11 @@ fun WanxiangDownloaderApp() {
                 onClick = { selectedTabIndex = 1 },
                 text = { Text("自定义模式", fontWeight = FontWeight.Bold) }
             )
+            Tab(
+                selected = selectedTabIndex == 2,
+                onClick = { selectedTabIndex = 2 },
+                text = { Text("拼音工具", fontWeight = FontWeight.Bold) }
+            )
         }
 
         if (selectedTabIndex == 0) {
@@ -1312,7 +1317,7 @@ fun WanxiangDownloaderApp() {
                 }
 
             }
-        } else {
+        } else if (selectedTabIndex == 1) {
             CustomModeTab(
                 customTasks = customTasks,
                 savedPaths = savedPaths,
@@ -1328,6 +1333,8 @@ fun WanxiangDownloaderApp() {
                 githubToken = githubToken,
                 onRequestAllFilesAccess = { showPermissionDialog = true }
             )
+        } else {
+            PinyinToolScreen()
         }
     }
 }
