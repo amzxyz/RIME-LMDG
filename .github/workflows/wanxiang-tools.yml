@@ -287,10 +287,27 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: 🐍 设置 Python 3.10
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.10'
+
       - name: 🐘 设置官方 Gradle 环境
         uses: gradle/actions/setup-gradle@v6
         with:
           gradle-version: '8.5'
+
+      - name: 🐍 准备 Android Python 模块
+        run: |
+          mkdir -p wanxiang-updater/app/src/main/python
+          rm -rf wanxiang-updater/app/src/main/python/pypinyin
+          cp -a pypinyin wanxiang-updater/app/src/main/python/
+
+          echo "=== Android Python source ==="
+          find wanxiang-updater/app/src/main/python -maxdepth 2 -type f | sort | head -100
+
+          test -f wanxiang-updater/app/src/main/python/pinyin_bridge.py
+          test -f wanxiang-updater/app/src/main/python/pypinyin/__init__.py
 
       - name: 🔐 解码签名文件
         run: |

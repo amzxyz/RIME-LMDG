@@ -1,8 +1,55 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from __future__ import annotations
+
+# ============================================================
+# Linux / XFCE / Fcitx + PySide6 启动兼容层
+#
+# 必须位于 advanced_settings 和任何 PySide6 导入之前。
+# 目的：
+# 1. 避免 PySide6 自带 Qt6 误加载系统 Qt6 插件；
+# 2. XFCE/X11 下明确走 xcb；
+# 3. Fcitx 环境下，二进制 Qt/PySide6 改走 Qt 自带的 ibus 输入桥，
+#    避免系统 fcitx5-qt6 插件与 PySide6 Qt 版本不一致导致输入框崩溃。
+# ============================================================
+import sys
+import os
+
+
+def _prepare_linux_qt_environment() -> None:
+    if not sys.platform.startswith("linux"):
+        return
+
+    # PySide6 wheel 自带 Qt。外部系统 Qt 插件路径可能把另一套 Qt 插件
+    # 注入当前进程，尤其容易在文本框首次处理输入法事件时触发 native 崩溃。
+    os.environ.pop("QT_PLUGIN_PATH", None)
+    os.environ.pop("QT_QPA_PLATFORM_PLUGIN_PATH", None)
+
+    # qt5ct / qt6ct / GTK platform theme 也可能来自系统 Qt 安装。
+    # 本程序已有自己的 Palette / StyleSheet，不依赖这些外部主题插件。
+    os.environ.pop("QT_QPA_PLATFORMTHEME", None)
+
+    session_type = os.environ.get("XDG_SESSION_TYPE", "").strip().lower()
+
+    # XFCE 常见为 X11；不干预 Wayland 会话。
+    if session_type != "wayland":
+        os.environ.setdefault("QT_QPA_PLATFORM", "xcb")
+
+        qt_im = os.environ.get("QT_IM_MODULE", "").strip().lower()
+        xmodifiers = os.environ.get("XMODIFIERS", "").strip().lower()
+
+        # Fcitx 的系统 Qt IM 插件通常链接系统 Qt。
+        # PySide6 使用自带 Qt 时改走 Qt 自带 ibus input context，
+        # 由 Fcitx 的兼容前端承接输入，避免加载系统 fcitx5-qt6 插件。
+        if "fcitx" in qt_im or "fcitx" in xmodifiers:
+            os.environ["QT_IM_MODULE"] = "ibus"
+
+
+_prepare_linux_qt_environment()
+
 from advanced_settings import AdvancedSettingsMixin, deploy_rime_platform
-import sys, os, re
+
+import re
 import shutil
 import time
 import hashlib

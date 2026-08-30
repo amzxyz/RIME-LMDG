@@ -64,6 +64,7 @@ private object PinyinPythonBridge {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PinyinToolScreen() {
     val context = LocalContext.current

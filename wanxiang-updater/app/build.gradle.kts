@@ -57,44 +57,12 @@ android {
     }
 }
 
-
-// 仓库结构：
-// <repo>/pinyin_bridge.py
-// <repo>/pypinyin/
-// <repo>/wanxiang-updater/app/...
-//
-// 不直接把仓库根目录交给 Chaquopy，而是在构建前仅同步 Android 需要的两项。
-val wanxiangRepoRoot = rootProject.projectDir.parentFile
-val generatedPythonDir = layout.buildDirectory.dir("generated/wanxiangPython")
-
-val syncWanxiangPython by tasks.registering(Sync::class) {
-    from(wanxiangRepoRoot) {
-        include("pinyin_bridge.py")
-        include("pypinyin/**")
-    }
-    into(generatedPythonDir)
-}
-
+// Python source uses Chaquopy default directory:
+// app/src/main/python/
 chaquopy {
     defaultConfig {
         version = "3.10"
     }
-
-    sourceSets {
-        getByName("main") {
-            setSrcDirs(listOf(generatedPythonDir.get().asFile))
-        }
-    }
-}
-
-// 确保 Chaquopy 的任何 Python 构建任务开始前，根目录源码已同步。
-tasks.configureEach {
-    if (name != syncWanxiangPython.name && name.contains("Python")) {
-        dependsOn(syncWanxiangPython)
-    }
-}
-tasks.named("preBuild").configure {
-    dependsOn(syncWanxiangPython)
 }
 
 dependencies {
