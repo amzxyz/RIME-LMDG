@@ -2932,11 +2932,76 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         skip_lay.addWidget(self.skip_edit)
         skip_lay.addWidget(tip)
 
+        # 汉字 -> 拼音：轻量即时转换，不参与文件批处理任务。
+        self.quick_py_group = QGroupBox("汉字转拼音")
+        quick_lay = QHBoxLayout(self.quick_py_group)
+
+        left_box = QVBoxLayout()
+        left_label = QLabel("汉字")
+        self.quick_py_input = QPlainTextEdit()
+        self.quick_py_input.setPlaceholderText("在这里输入或粘贴多行汉字…")
+        self.quick_py_input.setMinimumHeight(120)
+        left_box.addWidget(left_label)
+        left_box.addWidget(self.quick_py_input)
+
+        self.quick_py_btn = QPushButton("转换")
+        self.quick_py_btn.setFixedWidth(72)
+        self.quick_py_btn.setMinimumHeight(36)
+        self.quick_py_btn.setCursor(Qt.PointingHandCursor)
+        self.quick_py_btn.clicked.connect(self._convert_text_to_pinyin)
+
+        right_box = QVBoxLayout()
+        right_label = QLabel("拼音")
+        self.quick_py_output = QPlainTextEdit()
+        self.quick_py_output.setPlaceholderText("转换结果将在这里显示…")
+        self.quick_py_output.setReadOnly(True)
+        self.quick_py_output.setMinimumHeight(120)
+        right_box.addWidget(right_label)
+        right_box.addWidget(self.quick_py_output)
+
+        quick_lay.addLayout(left_box, 1)
+        quick_lay.addWidget(self.quick_py_btn, 0, Qt.AlignVCenter)
+        quick_lay.addLayout(right_box, 1)
+
         self.in_edit_py.textChanged.connect(self._toggle_skip_box)
         self._toggle_skip_box()
         lay.addWidget(g)
+        lay.addWidget(self.quick_py_group)
         lay.addWidget(self.skip_group)
         return w
+
+    def _convert_text_to_pinyin(self):
+        """将左侧多行汉字转换为带声调、空格分隔的拼音，并保留原换行。"""
+        source = self.quick_py_input.toPlainText()
+        if not source:
+            self.quick_py_output.clear()
+            return
+
+        if pypinyin_func is None:
+            QMessageBox.warning(self, "提示", "pypinyin 未加载，无法进行拼音转换。")
+            return
+
+        custom_dir = self.custom_dir_edit.text().strip()
+        if custom_dir:
+            load_custom_pinyin(custom_dir, self.log.appendPlainText)
+
+        try:
+            converted_lines = []
+            for line in source.split("\n"):
+                if not line:
+                    converted_lines.append("")
+                    continue
+                result = pypinyin_func(
+                    line,
+                    style=Style.TONE,
+                    heteronym=False,
+                    errors='default'
+                )
+                converted_lines.append(" ".join(item[0] for item in result if item and item[0] != ""))
+
+            self.quick_py_output.setPlainText("\n".join(converted_lines))
+        except Exception as e:
+            QMessageBox.warning(self, "转换失败", f"汉字转拼音失败：{e}")
 
     def _toggle_skip_box(self):
         p = (self.in_edit_py.text() or "").strip()
