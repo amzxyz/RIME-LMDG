@@ -120,28 +120,78 @@ jobs:
           path: upload_stage/*
 
   # =================================================
-  # 2. Arch Linux 构建
+  # 2. Arch Linux 构建（原生源码包，不复用 Ubuntu PyInstaller 二进制）
   # =================================================
   package-arch:
-    needs: build-linux
     runs-on: ubuntu-latest
     container: archlinux:base-devel
     steps:
-      - name: Download artifacts
-        uses: actions/download-artifact@v8
-        with:
-          name: linux-dist
-          path: build_dir
-
-      - name: Build Arch Package
+      - name: 🧱 初始化 Arch 构建容器
         run: |
-          pacman -Sy --noconfirm
-          pacman -S --noconfirm libglvnd libxcb libxkbcommon fontconfig git
+          pacman -Syu --needed --noconfirm git
 
-          cd build_dir
-          chmod +x wanxiang-tools
-          
-          cat > wanxiang-tools.desktop <<EOF
+      - name: 📦 Checkout 代码
+        uses: actions/checkout@v7
+
+      - name: 🐧 安装 Arch 原生运行依赖
+        run: |
+          pacman -S --needed --noconfirm \
+            imagemagick \
+            python \
+            pyside6 \
+            python-requests \
+            python-ruamel-yaml \
+            fcitx5-qt
+
+          echo "=== Arch Qt / PySide6 / Fcitx5 ==="
+          python - <<'PY'
+          import PySide6
+          import requests
+          from ruamel.yaml import YAML
+          from PySide6.QtCore import qVersion
+
+          print("PySide6:", PySide6.__version__)
+          print("Qt:", qVersion())
+          print("requests:", requests.__version__)
+          print("ruamel.yaml: OK")
+          PY
+
+          test -f /usr/lib/qt6/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
+
+      - name: 🔍 校验 Arch 源码
+        run: |
+          test -f wanxiang-tools.py
+          test -f advanced_settings/__init__.py
+          test -d pypinyin
+          test -f icon.ico
+
+          python -m compileall -q \
+            wanxiang-tools.py \
+            advanced_settings \
+            pypinyin
+
+      - name: 📦 构建 Arch 原生软件包
+        run: |
+          rm -rf arch-build
+          mkdir -p arch-build
+
+          # 源码作为 Arch 包内容，不再使用 Ubuntu 生成的 PyInstaller ELF。
+          tar -czf arch-build/wanxiang-tools-src.tar.gz \
+            wanxiang-tools.py \
+            advanced_settings \
+            pypinyin
+
+          # Arch 包启动器：始终使用系统 Python / PySide6 / Qt。
+          cat > arch-build/wanxiang-tools <<'EOF'
+          #!/usr/bin/env bash
+          exec /usr/bin/python3 /usr/lib/wanxiang-tools/wanxiang-tools.py "$@"
+          EOF
+          chmod +x arch-build/wanxiang-tools
+
+          # 桌面图标。
+          magick 'icon.ico[0]' -resize 256x256 arch-build/wanxiang-tools.png
+
+          cat > arch-build/wanxiang-tools.desktop <<'EOF'
           [Desktop Entry]
           Name=Wanxiang Tools
           Name[zh_CN]=万象词库工具
@@ -153,42 +203,71 @@ jobs:
           Categories=Utility;System;
           StartupWMClass=wanxiang-tools
           EOF
-          
-          cp wanxiang-tools.png wanxiang-tools.png.bk
 
           VERSION="1.0.${{ github.run_number }}"
-          
-          cat > PKGBUILD <<EOF
+
+          cat > arch-build/PKGBUILD <<EOF
           pkgname=wanxiang-tools
           pkgver=${VERSION}
           pkgrel=1
-          pkgdesc="万象词库方案更新工具 (Auto Build)"
+          pkgdesc="万象词库方案更新工具 (Arch native)"
           arch=('x86_64')
           url="https://github.com/${{ github.repository }}"
           license=('GPL')
-          depends=('glibc' 'libglvnd' 'libxcb' 'libxkbcommon' 'fontconfig')
-          source=("wanxiang-tools" "wanxiang-tools.png" "wanxiang-tools.desktop")
-          sha256sums=('SKIP' 'SKIP' 'SKIP')
-          
-          options=('!debug' '!strip') 
+          depends=(
+              'python'
+              'pyside6'
+              'python-requests'
+              'python-ruamel-yaml'
+              'fcitx5-qt'
+          )
+          source=(
+              "wanxiang-tools-src.tar.gz"
+              "wanxiang-tools"
+              "wanxiang-tools.png"
+              "wanxiang-tools.desktop"
+          )
+          sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP')
+          options=('!debug')
 
           package() {
-              install -Dm755 "\$srcdir/wanxiang-tools" "\$pkgdir/usr/bin/wanxiang-tools"
-              install -Dm644 "\$srcdir/wanxiang-tools.png" "\$pkgdir/usr/share/pixmaps/wanxiang-tools.png"
-              install -Dm644 "\$srcdir/wanxiang-tools.desktop" "\$pkgdir/usr/share/applications/wanxiang-tools.desktop"
+              install -d "\$pkgdir/usr/lib/wanxiang-tools"
+              install -Dm644 "\$srcdir/wanxiang-tools.py" \
+                  "\$pkgdir/usr/lib/wanxiang-tools/wanxiang-tools.py"
+              cp -a "\$srcdir/advanced_settings" \
+                  "\$pkgdir/usr/lib/wanxiang-tools/"
+              cp -a "\$srcdir/pypinyin" \
+                  "\$pkgdir/usr/lib/wanxiang-tools/"
+
+              install -Dm755 "\$srcdir/wanxiang-tools" \
+                  "\$pkgdir/usr/bin/wanxiang-tools"
+              install -Dm644 "\$srcdir/wanxiang-tools.png" \
+                  "\$pkgdir/usr/share/pixmaps/wanxiang-tools.png"
+              install -Dm644 "\$srcdir/wanxiang-tools.desktop" \
+                  "\$pkgdir/usr/share/applications/wanxiang-tools.desktop"
           }
           EOF
 
-          useradd builder -m
+          cd arch-build
+
+          id -u builder >/dev/null 2>&1 || useradd -m builder
           chown -R builder:builder .
           su builder -c "makepkg -f --noconfirm"
-          mv *.pkg.tar.zst ../
+
+      - name: ✅ 校验 Arch 包内容
+        run: |
+          PKG="$(find arch-build -maxdepth 1 -name '*.pkg.tar.zst' -print -quit)"
+          test -n "$PKG"
+
+          echo "=== Package: $PKG ==="
+          tar -tf "$PKG" | grep -E \
+            'usr/bin/wanxiang-tools|usr/lib/wanxiang-tools/wanxiang-tools.py|usr/lib/wanxiang-tools/advanced_settings|usr/lib/wanxiang-tools/pypinyin'
 
       - name: Upload Arch Package
         uses: actions/upload-artifact@v7
         with:
           name: arch-pkg
-          path: ./*.pkg.tar.zst
+          path: arch-build/*.pkg.tar.zst
 
   # =================================================
   # 3. Windows 构建
