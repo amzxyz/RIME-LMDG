@@ -1,6 +1,10 @@
 package com.wanxiangupdater
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -15,6 +19,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.documentfile.provider.DocumentFile
 import com.chaquo.python.Python
 import com.chaquo.python.android.AndroidPlatform
 import kotlinx.coroutines.Dispatchers
@@ -50,16 +55,32 @@ private object PinyinPythonBridge {
             }
         }
 
-    suspend fun convertFile(
+    suspend fun convertDocument(
         context: Context,
-        inputPath: String,
-        outputPath: String
+        inputUri: Uri,
+        outputUri: Uri
     ): Result<String> = withContext(Dispatchers.IO) {
         runCatching {
-            getPython(context)
+            val resolver = context.contentResolver
+
+            val source = resolver.openInputStream(inputUri)
+                ?.bufferedReader(Charsets.UTF_8)
+                ?.use { it.readText() }
+                ?: error("无法读取输入文件")
+
+            val converted = getPython(context)
                 .getModule("pinyin_bridge")
-                .callAttr("convert_file", inputPath, outputPath)
+                .callAttr("convert_text", source)
                 .toString()
+
+            resolver.openOutputStream(outputUri, "wt")
+                ?.bufferedWriter(Charsets.UTF_8)
+                ?.use { it.write(converted) }
+                ?: error("无法写入输出文件")
+
+            val inputName = DocumentFile.fromSingleUri(context, inputUri)?.name ?: "输入文件"
+            val outputName = DocumentFile.fromSingleUri(context, outputUri)?.name ?: "输出文件"
+            "$inputName → $outputName"
         }
     }
 }
@@ -77,11 +98,55 @@ fun PinyinToolScreen() {
     var windowBusy by remember { mutableStateOf(false) }
     var windowError by remember { mutableStateOf("") }
 
-    var inputPath by remember { mutableStateOf("") }
-    var outputPath by remember { mutableStateOf("") }
+    var inputUri by remember { mutableStateOf<Uri?>(null) }
+    var outputUri by remember { mutableStateOf<Uri?>(null) }
+    var inputName by remember { mutableStateOf("") }
+    var outputName by remember { mutableStateOf("") }
     var pathBusy by remember { mutableStateOf(false) }
     var pathStatus by remember { mutableStateOf("") }
     var pathError by remember { mutableStateOf("") }
+
+    val inputFileLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.OpenDocument()
+    ) { uri ->
+        if (uri != null) {
+            inputUri = uri
+            inputName = DocumentFile.fromSingleUri(context, uri)?.name
+                ?: uri.lastPathSegment
+                ?: "已选择输入文件"
+            pathStatus = ""
+            pathError = ""
+
+            try {
+                context.contentResolver.takePersistableUriPermission(
+                    uri,
+                    Intent.FLAG_GRANT_READ_URI_PERMISSION
+                )
+            } catch (_: Exception) {
+            }
+        }
+    }
+
+    val outputFileLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.CreateDocument("text/plain")
+    ) { uri ->
+        if (uri != null) {
+            outputUri = uri
+            outputName = DocumentFile.fromSingleUri(context, uri)?.name
+                ?: uri.lastPathSegment
+                ?: "已选择输出文件"
+            pathStatus = ""
+            pathError = ""
+
+            try {
+                context.contentResolver.takePersistableUriPermission(
+                    uri,
+                    Intent.FLAG_GRANT_WRITE_URI_PERMISSION
+                )
+            } catch (_: Exception) {
+            }
+        }
+    }
 
     Column(
         modifier = Modifier
@@ -203,66 +268,65 @@ fun PinyinToolScreen() {
             ) {
                 Column(modifier = Modifier.padding(14.dp)) {
                     Text(
-                        "路径转换",
+                        "文件转换",
                         fontWeight = FontWeight.Bold,
                         color = Color.DarkGray
                     )
                     Text(
-                        "填写应用有权限访问的绝对路径。输入文件按 UTF-8 读取，结果按 UTF-8 写出。",
+                        "使用 Android 系统文件选择器，不需要手动粘贴绝对路径。",
                         fontSize = 11.sp,
                         color = Color.Gray,
                         modifier = Modifier.padding(top = 2.dp, bottom = 10.dp)
                     )
 
-                    OutlinedTextField(
-                        value = inputPath,
-                        onValueChange = {
-                            inputPath = it
-                            pathStatus = ""
-                            pathError = ""
+                    OutlinedButton(
+                        onClick = {
+                            inputFileLauncher.launch(
+                                arrayOf(
+                                    "text/*",
+                                    "application/x-yaml",
+                                    "application/octet-stream"
+                                )
+                            )
                         },
-                        label = { Text("输入文件路径") },
-                        placeholder = {
-                            Text("/storage/emulated/0/Download/chinese.txt")
-                        },
-                        singleLine = true,
                         modifier = Modifier.fillMaxWidth()
-                    )
+                    ) {
+                        Text(
+                            if (inputUri == null) "选择输入文件"
+                            else "输入：$inputName"
+                        )
+                    }
 
                     Spacer(modifier = Modifier.height(8.dp))
 
-                    OutlinedTextField(
-                        value = outputPath,
-                        onValueChange = {
-                            outputPath = it
-                            pathStatus = ""
-                            pathError = ""
+                    OutlinedButton(
+                        onClick = {
+                            outputFileLauncher.launch("pinyin.txt")
                         },
-                        label = { Text("输出文件路径") },
-                        placeholder = {
-                            Text("/storage/emulated/0/Download/pinyin.txt")
-                        },
-                        singleLine = true,
                         modifier = Modifier.fillMaxWidth()
-                    )
+                    ) {
+                        Text(
+                            if (outputUri == null) "选择输出位置"
+                            else "输出：$outputName"
+                        )
+                    }
 
                     Spacer(modifier = Modifier.height(12.dp))
 
                     Button(
                         onClick = {
-                            val input = inputPath.trim()
-                            val output = outputPath.trim()
-                            if (input.isBlank() || output.isBlank()) return@Button
+                            val input = inputUri ?: return@Button
+                            val output = outputUri ?: return@Button
 
                             scope.launch {
                                 pathBusy = true
                                 pathStatus = ""
                                 pathError = ""
 
-                                PinyinPythonBridge.convertFile(
+                                PinyinPythonBridge.convertDocument(
                                     context = context,
-                                    inputPath = input,
-                                    outputPath = output
+                                    inputUri = input,
+                                    outputUri = output
                                 ).onSuccess {
                                     pathStatus = it.ifBlank { "转换完成" }
                                 }.onFailure {
@@ -272,9 +336,7 @@ fun PinyinToolScreen() {
                                 pathBusy = false
                             }
                         },
-                        enabled = !pathBusy &&
-                            inputPath.isNotBlank() &&
-                            outputPath.isNotBlank(),
+                        enabled = !pathBusy && inputUri != null && outputUri != null,
                         colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen),
                         modifier = Modifier.fillMaxWidth(),
                         shape = RoundedCornerShape(8.dp)
@@ -301,7 +363,7 @@ fun PinyinToolScreen() {
                     }
 
                     Text(
-                        "说明：Android 的存储权限仍然生效；Chaquopy 不会因为应用具有 RootShell 功能而自动获得 root 文件访问权限。",
+                        "说明：这里使用 Android SAF。输入、输出由系统文件选择器授权，Kotlin 负责读写文件，Python 只负责拼音转换。",
                         fontSize = 10.sp,
                         color = Color.Gray,
                         modifier = Modifier.padding(top = 12.dp)
