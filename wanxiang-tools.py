@@ -41,7 +41,11 @@ def _prepare_linux_qt_environment() -> None:
         # Fcitx 的系统 Qt IM 插件通常链接系统 Qt。
         # PySide6 使用自带 Qt 时改走 Qt 自带 ibus input context，
         # 由 Fcitx 的兼容前端承接输入，避免加载系统 fcitx5-qt6 插件。
-        if "fcitx" in qt_im or "fcitx" in xmodifiers:
+        # 如果用户/启动脚本已经显式指定 QT_IM_MODULE，就尊重它，
+        # 便于真实测试 fcitx / xim / ibus。
+        # 仅当 QT_IM_MODULE 未设置而当前会话明显使用 Fcitx 时，
+        # 才采用 ibus 作为默认兼容回退。
+        if not qt_im and "fcitx" in xmodifiers:
             os.environ["QT_IM_MODULE"] = "ibus"
 
 
