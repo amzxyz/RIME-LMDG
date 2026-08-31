@@ -76,30 +76,102 @@ SPECIAL_RULES = {
 
 # 自定义拼音加载
 
+CUSTOM_PHRASE_FILE = "词组.dict.yaml"
+
+
+def _load_custom_pinyin_file(path: str, s_map: dict, p_map: dict) -> tuple[int, int]:
+    """读取单个自定义拼音文件；后加载的数据覆盖先加载的数据。"""
+    single_count = 0
+    phrase_count = 0
+
+    with open(path, encoding="utf-8") as f:
+        for raw in f:
+            line = raw.rstrip("\n")
+            if not line or line.startswith("#"):
+                continue
+
+            cols = line.split("\t")
+            if len(cols) < 2:
+                continue
+
+            word = cols[0].strip()
+            py_text = cols[1].strip()
+            if not word or not py_text:
+                continue
+
+            plist = py_text.split()
+            if not plist:
+                continue
+
+            if len(word) == 1:
+                s_map[ord(word)] = ",".join(plist)
+                single_count += 1
+            else:
+                # pypinyin.load_phrases_dict 要求：
+                # {"重庆": [["chóng"], ["qìng"]]}
+                p_map[word] = [[p] for p in plist]
+                phrase_count += 1
+
+    return single_count, phrase_count
+
+
 def load_custom_pinyin_from_directory(directory: str):
+    """
+    加载自定义拼音。
+
+    优先级：
+      1. 目录内普通 .txt / .yaml 文件（按文件名排序，保证结果稳定）
+      2. 词组.dict.yaml 最后加载，作为词组拼音最终覆盖层
+
+    同一个词重复定义时，后加载的定义覆盖前面的定义。
+    """
     s_map, p_map = {}, {}
+
     if not os.path.isdir(directory):
         print(f"[WARN] 自定义拼音目录不存在: {directory}")
         return
-    for fn in os.listdir(directory):
-        if not fn.endswith(('.txt', '.yaml')):
-            continue
-        with open(os.path.join(directory, fn), encoding='utf-8') as f:
-            for line in f:
-                word, *py = line.rstrip('\n').split('\t')
-                if not py:
-                    continue
-                plist = py[0].split()
-                if len(word) == 1:
-                    s_map[ord(word)] = ','.join(plist)
-                else:
-                    p_map[word] = [[p] for p in plist]
+
+    files = sorted(
+        fn for fn in os.listdir(directory)
+        if fn.endswith((".txt", ".yaml"))
+    )
+
+    # 最终覆盖文件不参与普通层加载。
+    normal_files = [fn for fn in files if fn != CUSTOM_PHRASE_FILE]
+
+    normal_single = 0
+    normal_phrase = 0
+
+    for fn in normal_files:
+        path = os.path.join(directory, fn)
+        sc, pc = _load_custom_pinyin_file(path, s_map, p_map)
+        normal_single += sc
+        normal_phrase += pc
+
+    override_path = os.path.join(directory, CUSTOM_PHRASE_FILE)
+    override_single = 0
+    override_phrase = 0
+
+    if os.path.isfile(override_path):
+        override_single, override_phrase = _load_custom_pinyin_file(
+            override_path, s_map, p_map
+        )
+
+    # 所有自定义数据一次性覆盖 pypinyin 内置数据。
     if p_map:
         load_phrases_dict(p_map)
-        print(f"✓ 词组拼音加载 {len(p_map)} 条")
+        print(
+            f"✓ 词组拼音加载 {len(p_map)} 条"
+            f"（普通层 {normal_phrase}，"
+            f"{CUSTOM_PHRASE_FILE} 最终覆盖 {override_phrase}）"
+        )
+
     if s_map:
         load_single_dict(s_map)
-        print(f"✓ 单字拼音加载 {len(s_map)} 条")
+        print(
+            f"✓ 单字拼音加载 {len(s_map)} 条"
+            f"（普通层 {normal_single}，最终覆盖层 {override_single}）"
+        )
 
 
 
