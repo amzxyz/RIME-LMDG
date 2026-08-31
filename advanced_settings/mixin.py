@@ -41,6 +41,17 @@ from .widgets import (
 )
 
 
+# 这些控件编辑的是 Rime 编译指令本身，而不是编译后 runtime 节点。
+# 它们的“当前值/脏值基线”必须来自 schema + custom 按 literal patch 合成后的
+# source_effective；普通控件仍读取完整 ConfigCompiler 生成的 runtime effective。
+_SOURCE_EFFECTIVE_WIDGET_TYPES = frozenset({
+    "algebra_patch",
+    "reverse_algebra",
+    "english_algebra",
+    "mixed_algebra",
+})
+
+
 def _get_nested_val(data, path, default=None):
     return RimeYamlEngine().get_path(data, path, default)
 
@@ -704,7 +715,10 @@ class AdvancedSettingsMixin:
                         self._dynamic_row_height(itm, msg)
                     else:
                         # 传入空数组 []，代表跟任何绑定的键冲突都不行
-                        self._check_conflict_base([t], [], l, itm)
+                        self._check_conflict_base(
+                            [t], [], l, itm,
+                            ignore_paths={"super_tips/tips_key"},
+                        )
                 
                 edit.textChanged.connect(check_tips_conflict)
                 check_tips_conflict(edit.text()) # 初始触发一次
@@ -763,7 +777,10 @@ class AdvancedSettingsMixin:
                 lbl.setText(msg)
                 self._dynamic_row_height(item, msg)
             else:
-                self._check_conflict_base([t], [], lbl, item, check_alphabet=False)
+                self._check_conflict_base(
+                    [t], [], lbl, item, check_alphabet=False,
+                    ignore_paths={"wanxiang_lookup/key", "wanxiang_reverse/prefix"},
+                )
 
         edit.textChanged.connect(validate)
         validate(edit.text())
@@ -961,8 +978,10 @@ class AdvancedSettingsMixin:
             total_width = sum(current_sizes) if sum(current_sizes) > 0 else self.width()
             self.splitter.setSizes([ideal_width, total_width - ideal_width])
             
-            # 后台线程启动
+            # 后台线程启动：三层缓存必须同步失效，避免重扫后 directive baseline 仍取旧值。
             self._yaml_cache.clear()
+            self._effective_cache.clear()
+            self._source_effective_cache.clear()
             self.files_to_prebuild = list(set(all_files_to_cache))
             self.cache_worker = YamlCacheWorker(rime_dir, self.files_to_prebuild)
             self.cache_worker.finished_sig.connect(self._on_cache_loaded)
@@ -974,50 +993,37 @@ class AdvancedSettingsMixin:
         self._yaml_cache[fname] = (s_data, c_patch)
 
     def _legacy_on_all_yaml_parsed(self):
-        """数据解析完毕，开启丝滑的智能预缓存"""
-        self.lbl_giant_load.setText("🚀 正在后台预构建配置面板...")
-        self.lbl_giant_load.setStyleSheet("font-size: 24px; font-weight: bold; color: #61A165;")
-        
+        """数据编译完成后立即开放界面；具体 YAML 页面首次点击时再构建并缓存。"""
+        self.lbl_giant_load.setText("✅ 配置加载完成\n\n页面将在首次打开时按需构建")
+        self.lbl_giant_load.setStyleSheet(
+            "font-size: 22px; font-weight: bold; color: #61A165;"
+        )
+
+        # 综合设置是启动后的默认页，只构建这一页。
         if "VIRTUAL_GLOBAL" not in self._ui_cache:
             new_tree = self._create_cfg_tree()
             new_tree._py_refs = []
-            self._ui_cache["VIRTUAL_GLOBAL"] = {'tree': new_tree, 'widgets': {}, 'base': {}, 'lists': {}}
+            self._ui_cache["VIRTUAL_GLOBAL"] = {
+                "tree": new_tree,
+                "widgets": {},
+                "base": {},
+                "lists": {},
+            }
             self.cfg_stack.addWidget(new_tree)
-            self._render_global_business_page(new_tree) 
+            self._render_global_business_page(new_tree)
 
+        # 不再启动时逐个创建所有 schema 的 Qt 控件。
+        # on_nav_item_clicked() 已具备 cache miss -> 构建 -> 缓存能力，
+        # 因此每个方案只在用户第一次真正打开时创建一次界面。
         self.ui_build_queue = []
-        is_direct_checked = self.rb_direct_mode.isChecked()
-        if hasattr(self, 'files_to_prebuild'):
-            for f in self.files_to_prebuild:
-                self.ui_build_queue.append((f, is_direct_checked))
+        self.left_frame.setEnabled(True)
 
-        total_tasks = len(self.ui_build_queue)
-
-        def build_next():
-            if not self.ui_build_queue:
-                # ====== 预缓存全部完成 ======
-                self.left_frame.setEnabled(True)
-                
-                # 默认定位到“综合板块” (左侧树第0个大类的第0个子项)
-                if self.nav_tree.topLevelItemCount() > 0:
-                    global_cat = self.nav_tree.topLevelItem(0)
-                    if global_cat.childCount() > 0:
-                        global_item = global_cat.child(0)
-                        self.nav_tree.setCurrentItem(global_item)
-                        self.on_nav_item_clicked(global_item, 0)
-                return
-            
-            fname, is_direct = self.ui_build_queue.pop(0)
-            cache_key = f"{fname}_direct" if is_direct else f"{fname}_patch"
-            curr_idx = total_tasks - len(self.ui_build_queue)
-            self.lbl_giant_load.setText(f"🚀 正在预构建界面缓存 ({curr_idx}/{total_tasks})\n\n📄 {fname}")
-            QApplication.processEvents()
-            if cache_key not in self._ui_cache:
-                self._build_and_cache_yaml_ui(fname, activate=False, force_direct_mode=is_direct)
-            from PySide6.QtCore import QTimer
-            QTimer.singleShot(15, build_next)
-
-        build_next()
+        if self.nav_tree.topLevelItemCount() > 0:
+            global_cat = self.nav_tree.topLevelItem(0)
+            if global_cat.childCount() > 0:
+                global_item = global_cat.child(0)
+                self.nav_tree.setCurrentItem(global_item)
+                self.on_nav_item_clicked(global_item, 0)
 
     def on_nav_item_clicked(self, item, col):
         """物理翻页，双缓存秒切隔离"""
@@ -1159,11 +1165,15 @@ class AdvancedSettingsMixin:
                 return
 
         schema_data, c_patch_raw = self._yaml_cache[target_id]
+        source_effective_data = self._source_effective_cache.get(target_id)
+        if source_effective_data is None:
+            source_effective_data = self._yaml_engine.apply_patch(schema_data, c_patch_raw)
+            self._source_effective_cache[target_id] = copy.deepcopy(source_effective_data)
 
-        # 界面展示统一使用“最终生效配置”：先读取 schema，再应用 custom/patch。
-        # 直写模式仍展示 schema 原值；补丁模式展示 custom 覆盖后的最终值。
-        # 不再由界面层自行猜测扁平路径、嵌套路径、/+、@ 索引等补丁格式，
-        # 所有页面统一复用 RimeYamlEngine.apply_patch() 的结果。
+        # 普通界面展示使用完整 runtime effective；编辑 __patch/__include 等编译指令
+        # 的私有控件使用 source_effective（schema + custom 已合成，但指令尚未展开）。
+        # 直写模式仍展示 schema 原值；补丁模式按控件语义选择 source/runtime effective。
+        # 路径与补丁合成都由 RimeYamlEngine 统一完成。
         if is_direct_mode:
             effective_data = schema_data
         else:
@@ -1536,7 +1546,16 @@ class AdvancedSettingsMixin:
                 real_w.needs_resize.connect(lambda h, itm=p_item: safe_apply_size(itm, h))
                 file_widgets[f_path] = (real_w, v_type); return real_w
             if v_type == "algebra_patch":
-                real_w = AlgebraPatchWidget(curr_v, is_pro=("wanxiang_pro" in target_id), is_direct=is_direct_mode)
+                scheme_variant = (
+                    "pro" if target_id == "wanxiang_pro.schema.yaml"
+                    else "lite" if target_id == "wanxiang_lite.schema.yaml"
+                    else "base"
+                )
+                real_w = AlgebraPatchWidget(
+                    curr_v,
+                    is_direct=is_direct_mode,
+                    scheme_variant=scheme_variant,
+                )
                 real_w.needs_resize.connect(lambda h, itm=p_item: safe_apply_size(itm, h))
                 file_widgets[f_path] = (real_w, v_type); return real_w
             if v_type == "reverse_algebra":
@@ -1651,9 +1670,11 @@ class AdvancedSettingsMixin:
             else:
                 for meta_k, r_info in SCHEMA_META_CONFIG.items():
                     QApplication.processEvents()
-                    has_match = bool(r_info.get("_match_file"))
-                    if has_match and r_info["_match_file"] != target_id: continue
-                    if meta_k == "speller" and target_id in ["wanxiang_reverse.schema.yaml", "wanxiang_english.schema.yaml", "wanxiang_mixedcode.schema.yaml"]: continue
+                    match_file = r_info.get("_match_file")
+                    match_files = r_info.get("_match_files") or ()
+                    has_match = bool(match_file or match_files)
+                    if match_file and match_file != target_id: continue
+                    if match_files and target_id not in match_files: continue
                     
                     rk = r_info.get("_root_key", meta_k)
                     in_base = rk in schema_data
@@ -1669,7 +1690,23 @@ class AdvancedSettingsMixin:
                         item.setFlags(item.flags() & ~Qt.ItemIsSelectable)
                         path = rk if nk == "__self__" else f"{rk}/{nk}"
                         schema_marker = self._yaml_engine.get_path(schema_data, path, missing_value)
-                        effective_marker = self._yaml_engine.get_path(effective_data, path, missing_value)
+                        edits_compiler_directive = (
+                            ni.get("baseline") == "source_effective"
+                            or path.endswith("/__patch")
+                            or path.endswith("/__include")
+                            or ni["type"] in _SOURCE_EFFECTIVE_WIDGET_TYPES
+                        )
+                        baseline_kind = (
+                            "source_effective"
+                            if (not is_direct_mode and edits_compiler_directive)
+                            else "runtime_effective"
+                        )
+                        display_tree = (
+                            source_effective_data
+                            if baseline_kind == "source_effective"
+                            else effective_data
+                        )
+                        effective_marker = self._yaml_engine.get_path(display_tree, path, missing_value)
                         schema_present = schema_marker is not missing_value
                         display_present = effective_marker is not missing_value
                         val_from_schema = None if not schema_present else schema_marker
@@ -1680,6 +1717,7 @@ class AdvancedSettingsMixin:
                             "display": display_val,
                             "schema_present": schema_present,
                             "display_present": display_present,
+                            "baseline_kind": baseline_kind,
                         }
                         widget = create_widget(path, ni["type"], ni, display_val, item)
                         if widget: new_tree.setItemWidget(item, 1, widget)
@@ -1852,7 +1890,9 @@ class AdvancedSettingsMixin:
         else:
             for meta_k, r_info in SCHEMA_META_CONFIG.items():
                 match_f = r_info.get("_match_file")
+                match_files = r_info.get("_match_files") or ()
                 if match_f and match_f != target_id: continue
+                if match_files and target_id not in match_files: continue
                 rk = r_info.get("_root_key", meta_k)
                 for nk in r_info["nodes"].keys():
                     allowed_paths.add(rk if nk == "__self__" else f"{rk}/{nk}")
@@ -1968,7 +2008,17 @@ class AdvancedSettingsMixin:
                 elif isinstance(current_val, list):
                     if is_really_changed(current_val, display_val):
                         is_special = full_path.endswith("/__patch") or full_path.endswith("/__include")
-                        if is_empty(current_val) or (not is_special and not is_really_changed(current_val, schema_val)):
+                        if is_special:
+                            # 编译指令控件：dirty 与“打开页面时的 source_effective”比较；
+                            # 写入决策再与 raw schema 比较。恢复 schema 默认时删除 custom，
+                            # 否则即使目标是空列表也必须显式写入，不能删除后让 schema 复活。
+                            if not is_really_changed(current_val, schema_val):
+                                patches_to_remove.append(full_path)
+                                patches_to_remove.append(full_path + "/+")
+                            else:
+                                patches_to_apply[full_path] = current_val
+                                patches_to_remove.append(full_path + "/+")
+                        elif is_empty(current_val) or not is_really_changed(current_val, schema_val):
                             patches_to_remove.append(full_path)
                             patches_to_remove.append(full_path + "/+")
                         else:
@@ -1976,7 +2026,7 @@ class AdvancedSettingsMixin:
                             schema_list = schema_val if isinstance(schema_val, list) else []
                             n = len(schema_list)
 
-                            if "__patch" not in full_path and len(current_val) >= n and not is_really_changed(current_val[:n], schema_list):
+                            if len(current_val) >= n and not is_really_changed(current_val[:n], schema_list):
                                 is_append = True
                                 appended_items = current_val[n:]
                             
@@ -1992,7 +2042,12 @@ class AdvancedSettingsMixin:
                 else:
                     if is_really_changed(current_val, display_val):
                         is_special = full_path.endswith("/__patch") or full_path.endswith("/__include")
-                        if is_empty(current_val) or (not is_special and not is_really_changed(current_val, schema_val)):
+                        if is_special:
+                            if not is_really_changed(current_val, schema_val):
+                                patches_to_remove.append(full_path)
+                            else:
+                                patches_to_apply[full_path] = current_val
+                        elif is_empty(current_val) or not is_really_changed(current_val, schema_val):
                             patches_to_remove.append(full_path)
                         else:
                             patches_to_apply[full_path] = current_val
@@ -2451,13 +2506,16 @@ class AdvancedSettingsMixin:
                 for p in patches_to_remove:
                     del_patch_val(custom_data['patch'], p)
 
-                if 'patch' in custom_data and not custom_data['patch']:
-                    del custom_data['patch']
-                else:
-                    if hasattr(custom_data, "fa"):
-                        custom_data.fa.set_block_style()
-                    if 'patch' in custom_data and hasattr(custom_data['patch'], "fa"):
-                        custom_data['patch'].fa.set_block_style()
+                # custom 文件即使当前没有任何覆盖项，也保留明确的空 patch 映射。
+                # 不删除 patch 键，否则整个文件会被序列化成 `{}`；
+                # 也不使用 `patch:`（null），因为 Rime patch 语义要求这里是 map。
+                if 'patch' not in custom_data or custom_data['patch'] is None:
+                    custom_data['patch'] = CommentedMap()
+
+                if hasattr(custom_data, "fa"):
+                    custom_data.fa.set_block_style()
+                if hasattr(custom_data['patch'], "fa"):
+                    custom_data['patch'].fa.set_block_style()
 
                 self._yaml_engine.atomic_write_many({custom_path: custom_data})
                 self._advanced_save_detail = (
@@ -3208,7 +3266,11 @@ class AdvancedSettingsMixin:
                 label = tree.itemWidget(tips_item, 2)
                 self._register_conflict_refresher(
                     "super_tips",
-                    lambda: self._check_conflict_base([tips_widget.text().strip()] if tips_widget.text().strip() else [], [], label, tips_item),
+                    lambda: self._check_conflict_base(
+                        [tips_widget.text().strip()] if tips_widget.text().strip() else [],
+                        [], label, tips_item,
+                        ignore_paths={"super_tips/tips_key"},
+                    ),
                 )
                 tips_widget.textChanged.connect(lambda *_: self._refresh_all_conflict_labels())
 
@@ -3218,7 +3280,11 @@ class AdvancedSettingsMixin:
             label = tree.itemWidget(reverse_item, 2)
             self._register_conflict_refresher(
                 "reverse_lookup",
-                lambda: self._check_conflict_base([reverse.text().strip()] if reverse.text().strip() else [], [], label, reverse_item, check_alphabet=False),
+                lambda: self._check_conflict_base(
+                    [reverse.text().strip()] if reverse.text().strip() else [],
+                    [], label, reverse_item, check_alphabet=False,
+                    ignore_paths={"wanxiang_lookup/key", "wanxiang_reverse/prefix"},
+                ),
             )
             reverse.textChanged.connect(lambda *_: self._refresh_all_conflict_labels())
 
@@ -3337,6 +3403,8 @@ class AdvancedSettingsMixin:
             self._live_key_registry = LiveKeyRegistry()
         if not hasattr(self, "_effective_cache"):
             self._effective_cache = {}
+        if not hasattr(self, "_source_effective_cache"):
+            self._source_effective_cache = {}
         if not hasattr(self, "_yaml_load_errors"):
             self._yaml_load_errors = {}
 
@@ -3395,7 +3463,8 @@ class AdvancedSettingsMixin:
     def _on_cache_loaded(self, fname, s_data, c_patch, effective=None):
         self._ensure_advanced_engines()
         self._yaml_cache[fname] = (s_data, c_patch)
-        self._effective_cache[fname] = effective if effective is not None else self._yaml_engine.apply_patch(s_data, c_patch)
+        self._source_effective_cache[fname] = self._yaml_engine.apply_patch(s_data, c_patch)
+        self._effective_cache[fname] = effective if effective is not None else self._source_effective_cache[fname]
         self._yaml_load_errors.pop(fname, None)
 
     def _on_all_yaml_parsed(self):
@@ -3423,17 +3492,29 @@ class AdvancedSettingsMixin:
                 QMessageBox.critical(self, "YAML 解析失败", str(error))
             return False
         self._yaml_cache[target_id] = (document.schema, document.patch)
+        self._source_effective_cache[target_id] = copy.deepcopy(
+            getattr(document, "source_effective", self._yaml_engine.apply_patch(document.schema, document.patch))
+        )
         self._effective_cache[target_id] = document.effective
         self._yaml_load_errors.pop(target_id, None)
         return True
 
     def _build_and_cache_yaml_ui(self, target_id, activate=False, force_direct_mode=None):
-        # 统一经 YAML 引擎预读，原界面构建器只消费已校验缓存，不再自行猜测重复键行号。
-        # 批量预构建页面时不弹模态修复框，避免看起来像“加载卡住”；
-        # 只有用户主动打开该页面时才弹出精确修复对话框。
-        if target_id != "VIRTUAL_GLOBAL" and not self._load_document_into_cache(target_id, show_dialog=activate):
-            return
-        return self._legacy_build_and_cache_yaml_ui(target_id, activate, force_direct_mode)
+        # 后台扫描已经生成 schema / source_effective / runtime effective。
+        # 页面构建只消费缓存；仅在缓存确实缺失时才重新读盘编译。
+        if target_id != "VIRTUAL_GLOBAL":
+            cache_ready = (
+                target_id in self._yaml_cache
+                and target_id in self._effective_cache
+                and target_id in self._source_effective_cache
+            )
+            if not cache_ready and not self._load_document_into_cache(
+                target_id, show_dialog=activate
+            ):
+                return
+        return self._legacy_build_and_cache_yaml_ui(
+            target_id, activate, force_direct_mode
+        )
 
     def _schema_conflict_scopes(self):
         """按可独立切换的方案建立冲突池，不让不同方案互相报告。"""
@@ -3731,7 +3812,10 @@ class AdvancedSettingsMixin:
                 actions.update({"reverse_lookup", "reverse_prefix"})
         return actions
 
-    def _check_conflict_base(self, target_symbols, ignore_sends, lbl, item, check_alphabet=True):
+    def _check_conflict_base(
+        self, target_symbols, ignore_sends, lbl, item,
+        check_alphabet=True, ignore_paths=None,
+    ):
         if not target_symbols:
             msg = "✨ 安全：当前选项无系统级冲突风险\n(实时检测按键、别名与变种占用)"
             lbl.setText(msg); lbl.setStyleSheet("color:#61A165; font-size:13px; padding:4px;")
@@ -3741,12 +3825,20 @@ class AdvancedSettingsMixin:
         current_actions = self._infer_current_actions(
             target_symbols, ignore_sends
         )
+        ignored_yaml_paths = {str(path) for path in (ignore_paths or ())}
         conflict_map = {}
 
         for scope_name, claims in self._claims_with_live_overrides_by_scope().items():
+            # 同一个业务字段在 wanxiang / pro / t9 等独立 schema 中复用同一按键
+            # 不构成跨方案冲突。当前控件自己的 YAML 路径从每个 scope 中剔除，
+            # 仍保留同一 scope 内“其他路径占用同一键”的真实提示。
+            scoped_claims = [
+                claim for claim in claims
+                if claim.yaml_path not in ignored_yaml_paths
+            ]
             scoped_conflicts = self._key_conflict_engine.find_for_targets(
                 target_symbols,
-                claims,
+                scoped_claims,
                 ignore_actions=current_actions,
                 check_alphabet=check_alphabet,
             )
@@ -3955,8 +4047,8 @@ class AdvancedSettingsMixin:
 
         schema_data, _ = self._yaml_cache.get(target_id, ({}, {}))
         effective_data = self._effective_cache.get(target_id, schema_data)
+        source_effective_data = self._source_effective_cache.get(target_id, schema_data)
         is_direct_mode = self.rb_direct_mode.isChecked()
-        display_data = schema_data if is_direct_mode else effective_data
 
         cache_key = f"{target_id}_{'direct' if is_direct_mode else 'patch'}"
         page_cache = self._ui_cache.get(cache_key, {})
@@ -3970,6 +4062,12 @@ class AdvancedSettingsMixin:
                 continue
 
             schema_value = self._yaml_engine.get_path(schema_data, path, missing)
+            if is_direct_mode:
+                display_data = schema_data
+            elif base_info.get("baseline_kind") == "source_effective":
+                display_data = source_effective_data
+            else:
+                display_data = effective_data
             display_value = self._yaml_engine.get_path(display_data, path, missing)
 
             schema_present = schema_value is not missing

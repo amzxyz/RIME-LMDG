@@ -12,6 +12,12 @@ from PySide6.QtWidgets import (
 )
 
 from .core import RimeYamlEngine, RimeYamlError, YamlDuplicateIssue, is_managed_source_yaml
+from .metadata import (
+    ALGEBRA_AUX_NAMES,
+    ALGEBRA_SCHEME_NAMES,
+    ALGEBRA_TIQUAN_SCHEMES,
+    sort_algebra_patch_items,
+)
 
 class DynamicInputWidget(QWidget):
     """跨列协同：输入框部分 - 视觉大一统版"""
@@ -391,9 +397,12 @@ class AlgebraPatchWidget(QWidget):
     """专为 Rime speller/algebra/__patch 打造的智能挂载器 (支持细分模糊音与只读冻结)"""
     needs_resize = Signal(int)
     
-    def __init__(self, initial_val=None, is_pro=False, is_direct=False):
+    def __init__(self, initial_val=None, is_pro=False, is_direct=False, scheme_variant=None):
         super().__init__()
-        self.is_pro = is_pro
+        self.scheme_variant = scheme_variant or ("pro" if is_pro else "base")
+        if self.scheme_variant not in {"base", "pro", "lite"}:
+            self.scheme_variant = "base"
+        self.is_pro = self.scheme_variant == "pro"
         self.is_direct = is_direct
         
         self.layout = QVBoxLayout(self)
@@ -408,15 +417,18 @@ class AlgebraPatchWidget(QWidget):
         # --- 1. 方案 & 辅助 ---
         h1 = QHBoxLayout()
         self.cb_scheme = QComboBox()
-        self.cb_scheme.addItems(["全拼", "自然码", "小鹤双拼", "搜狗双拼", "微软双拼", "智能ABC", "紫光双拼", "国标双拼"])
+        self.cb_scheme.addItems(list(ALGEBRA_SCHEME_NAMES))
         self.cb_scheme.setFixedHeight(34)
         
         self.cb_aux = QComboBox()
-        self.cb_aux.addItems(["直接辅助", "间接辅助"])
+        self.cb_aux.addItems(list(ALGEBRA_AUX_NAMES))
         self.cb_aux.setFixedHeight(34)
         
         h1.addWidget(QLabel("🔤 拼写方案:"), 0); h1.addWidget(self.cb_scheme, 1)
-        h1.addWidget(QLabel("  ⌨️ 辅助模式:"), 0); h1.addWidget(self.cb_aux, 1)
+        self.lbl_aux = QLabel("  ⌨️ 辅助模式:")
+        h1.addWidget(self.lbl_aux, 0); h1.addWidget(self.cb_aux, 1)
+        self.lbl_aux.setVisible(self.is_pro)
+        self.cb_aux.setVisible(self.is_pro)
         self.layout.addLayout(h1)
         
         # --- 2. 提权 ---
@@ -484,7 +496,8 @@ class AlgebraPatchWidget(QWidget):
         self.cb_aux.setStyleSheet(style_cb if is_aux_enabled else style_cb_disabled)
         
         if not self.is_pro:
-            self.cb_aux.setToolTip("⚠️ Base 基础版固定默认模式，无间接辅助")
+            edition = "Lite 轻量版" if self.scheme_variant == "lite" else "Base 基础版"
+            self.cb_aux.setToolTip(f"⚠️ {edition} 不使用 Pro 辅助码挂载")
         else:
             self.cb_aux.setToolTip("")
             
@@ -506,7 +519,7 @@ class AlgebraPatchWidget(QWidget):
         if self.is_direct: 
             return # 直写模式下，强制锁定，无视方案变更
             
-        if text in ["自然码", "小鹤双拼"]:
+        if text in ALGEBRA_TIQUAN_SCHEMES:
             self.chk_tiquan.setEnabled(True)
         else:
             self.chk_tiquan.setEnabled(False)
@@ -522,6 +535,8 @@ class AlgebraPatchWidget(QWidget):
             
     def set_value(self, val_list):
         if not val_list or not isinstance(val_list, list): val_list = []
+        # 保存原始挂载顺序：已登记项按规则强制归位，未知旧项尽量保留原相对位置。
+        self._original_patch_order = [str(item).strip() for item in val_list if str(item).strip()]
         other_patches = []
         scheme_found = aux_found = tiquan_found = False
         
@@ -533,11 +548,11 @@ class AlgebraPatchWidget(QWidget):
                 
             if "wanxiang_algebra:/" in item_str:
                 name = item_str.split("/")[-1].strip()
-                if name in ["直接辅助", "间接辅助"]:
+                if name in ALGEBRA_AUX_NAMES:
                     self.cb_aux.setCurrentText(name); aux_found = True; continue
-                elif name in ["全拼", "自然码", "小鹤双拼", "搜狗双拼", "微软双拼", "智能ABC", "紫光双拼", "国标双拼"]:
+                elif name in ALGEBRA_SCHEME_NAMES:
                     self.cb_scheme.setCurrentText(name); scheme_found = True; continue
-                elif name in ["自然码提权", "小鹤双拼提权"]:
+                elif name in [f"{scheme}提权" for scheme in ALGEBRA_TIQUAN_SCHEMES]:
                     tiquan_found = True; continue
                 elif name == "模糊音": # 兼容旧版单一模糊音
                     for cb in self.fuzzy_checks.values(): cb.setChecked(True)
@@ -551,20 +566,31 @@ class AlgebraPatchWidget(QWidget):
         self._on_scheme_changed(self.cb_scheme.currentText())
         
     def get_value(self):
-        res = []
+        items = []
         scheme = self.cb_scheme.currentText()
-        prefix = "wanxiang_algebra:/pro/" if self.is_pro else "wanxiang_algebra:/base/"
-        
-        res.append(prefix + scheme)
-        if self.is_pro: res.append("wanxiang_algebra:/pro/" + self.cb_aux.currentText())
-        if self.chk_tiquan.isChecked(): res.append(f"wanxiang_algebra:/{scheme}提权")
-            
+        prefix = f"wanxiang_algebra:/{self.scheme_variant}/"
+
+        # 这里只收集“启用哪些块”，不再在 Widget 里硬编码执行顺序。
+        items.append(prefix + scheme)
+        if self.is_pro:
+            items.append("wanxiang_algebra:/pro/" + self.cb_aux.currentText())
+        if self.chk_tiquan.isChecked():
+            items.append(f"wanxiang_algebra:/{scheme}提权")
+
         for path, cb in self.fuzzy_checks.items():
-            if cb.isChecked(): res.append(path)
-            
+            if cb.isChecked():
+                items.append(path)
+
         for line in self.ext_edit.toPlainText().splitlines():
-            if line.strip(): res.append(line.strip())
-        return res
+            line = line.strip()
+            if line:
+                items.append(line)
+
+        # 真正的正则挂载顺序由 metadata.py 的 ALGEBRA_PATCH_ORDER_RULES 控制。
+        return sort_algebra_patch_items(
+            items,
+            getattr(self, "_original_patch_order", ()),
+        )
 
 
 class ReverseAlgebraWidget(QWidget):
@@ -1058,6 +1084,10 @@ class YamlCacheWorker(QThread):
         self.engine = RimeYamlEngine()
 
     def run(self):
+        # 一次目录扫描共用一个 ConfigCompiler 会话：
+        # default / algebra / symbols 等共享资源只解析、编译一次。
+        self.engine.begin_compile_session(self.rime_dir)
+
         for file_name in self.files:
             if self._stop:
                 break
@@ -1076,7 +1106,7 @@ class YamlCacheWorker(QThread):
                 custom_name = ""
             custom_path = os.path.join(self.rime_dir, custom_name) if custom_name else ""
             try:
-                document = self.engine.load_pair(schema_path, custom_path)
+                document = self.engine.load_pair(schema_path, custom_path, reuse_compile_session=True)
                 self.finished_sig.emit(file_name, document.schema, document.patch, document.effective)
             except Exception as error:
                 self.error_sig.emit(file_name, error)

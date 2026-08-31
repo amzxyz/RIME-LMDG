@@ -19,6 +19,20 @@ from ruamel.yaml.constructor import DuplicateKeyError
 _MISSING = object()
 
 
+class _RootNodeRef:
+    """可替换的根节点引用。
+
+    librime 的 EditNode() 操作的是 ConfigItemRef，因此 path 为空时也能直接
+    替换当前节点。Python 的 list/dict 只是值对象，不能用赋值替换调用方持有的
+    根对象；这里用一层引用盒模拟 ConfigItemRef。
+    """
+
+    __slots__ = ("value",)
+
+    def __init__(self, value: Any) -> None:
+        self.value = value
+
+
 # 高级设置只允许接触原始代码 FILE_INDEX_META 中登记的纯配置文件。
 # 这是硬边界，不使用“只要后缀是 .yaml 就处理”的泛化规则。
 MANAGED_RIME_SOURCE_FILES = frozenset({
@@ -26,20 +40,24 @@ MANAGED_RIME_SOURCE_FILES = frozenset({
     "wanxiang_algebra.yaml",
     "wanxiang.schema.yaml",
     "wanxiang_pro.schema.yaml",
+    "wanxiang_lite.schema.yaml",
     "wanxiang_english.schema.yaml",
     "wanxiang_mixedcode.schema.yaml",
     "wanxiang_reverse.schema.yaml",
     "wanxiang_t9.schema.yaml",
+    "wanxiang_t9i.schema.yaml",
 })
 
 MANAGED_RIME_CUSTOM_FILES = frozenset({
     "default.custom.yaml",
     "wanxiang.custom.yaml",
     "wanxiang_pro.custom.yaml",
+    "wanxiang_lite.custom.yaml",
     "wanxiang_english.custom.yaml",
     "wanxiang_mixedcode.custom.yaml",
     "wanxiang_reverse.custom.yaml",
     "wanxiang_t9.custom.yaml",
+    "wanxiang_t9i.custom.yaml",
 })
 
 
@@ -86,6 +104,7 @@ class LoadedRimeDocument:
     custom_path: str
     schema: Any
     patch: Any
+    source_effective: Any
     effective: Any
 
 
@@ -101,6 +120,14 @@ class RimeYamlEngine:
 
         self.safe_yaml = YAML(typ="safe")
         self.safe_yaml.allow_duplicate_keys = False
+
+        # Rime ConfigCompiler 兼容层的单次编译状态。
+        # raw / compiled 严格分离：编译结果只供读取，不参与原文件回写。
+        self._compile_root = Path.cwd()
+        self._raw_resource_cache: Dict[str, Any] = {}
+        self._compiled_resource_cache: Dict[str, Any] = {}
+        self._compiled_reference_cache: Dict[Tuple[str, str], Any] = {}
+        self._compile_stack: List[Tuple[str, str]] = []
 
     @staticmethod
     def _line_text(path: str, index: int) -> str:
@@ -212,7 +239,357 @@ class RimeYamlEngine:
         except Exception as error:
             raise RimeYamlError(f"无法解析 {Path(path).name}: {error}", file_path=path) from error
 
-    def load_pair(self, schema_path: str, custom_path: str = "") -> LoadedRimeDocument:
+    @staticmethod
+    def _custom_path_for_source(path: Path) -> Path:
+        name = path.name
+        if name.endswith(".custom.yaml"):
+            return path
+        if name.endswith(".schema.yaml"):
+            return path.with_name(name[:-len(".schema.yaml")] + ".custom.yaml")
+        if name.endswith(".yaml"):
+            return path.with_name(name[:-len(".yaml")] + ".custom.yaml")
+        return path.with_name(name + ".custom.yaml")
+
+    def _begin_compile_session(self, root_dir: Path | str) -> None:
+        self._compile_root = Path(root_dir).resolve()
+        self._raw_resource_cache.clear()
+        self._compiled_resource_cache.clear()
+        self._compiled_reference_cache.clear()
+        self._compile_stack.clear()
+
+    def begin_compile_session(self, root_dir: Path | str) -> None:
+        """开始一次目录级 Rime 编译会话。
+
+        同一次目录扫描中的多个 schema 共用 raw / compiled / reference 缓存，
+        避免 default、wanxiang_algebra、symbols 等共享资源被每个方案重复编译。
+        文件发生外部变化或用户主动重新扫描时，应重新开始会话。
+        """
+        self._begin_compile_session(root_dir)
+
+    def _resource_path(self, resource_id: str, current_file: Path) -> Path:
+        """按 Rime ResourceResolver 的常见配置资源写法定位 YAML。
+
+        外部引用可写 config:/node、config.yaml:/node；省略的仅是末尾 .yaml。
+        高级设置只在当前 Rime 目录及当前文件目录中解析资源，不越界扫描磁盘。
+        """
+        resource_id = str(resource_id or "").strip()
+        if not resource_id:
+            return current_file.resolve()
+
+        candidate = Path(resource_id)
+        if not str(candidate).endswith(".yaml"):
+            candidate = Path(str(candidate) + ".yaml")
+
+        if candidate.is_absolute():
+            return candidate.resolve()
+
+        candidates = [
+            (current_file.parent / candidate).resolve(),
+            (self._compile_root / candidate).resolve(),
+        ]
+        for path in candidates:
+            if path.exists():
+                return path
+        return candidates[-1]
+
+    def _parse_reference(self, text: str, current_file: Path) -> Tuple[Path, str, bool]:
+        """复刻 ConfigCompiler::CreateReference() 的资源/局部路径拆分。"""
+        ref = str(text or "").strip()
+        optional = ref.endswith("?")
+        if optional:
+            ref = ref[:-1]
+
+        if ":" in ref:
+            resource_id, local_path = ref.split(":", 1)
+            resource_path = self._resource_path(resource_id, current_file)
+        else:
+            resource_path = current_file.resolve()
+            local_path = ref
+
+        if local_path == "/":
+            local_path = ""
+        return resource_path, local_path, optional
+
+    def _load_resource_raw(self, path: Path) -> Any:
+        key = str(path.resolve())
+        if key not in self._raw_resource_cache:
+            self._raw_resource_cache[key] = self.load_file(key, default={})
+        return self._raw_resource_cache[key]
+
+    def _raw_node(self, raw_root: Any, path: str) -> Any:
+        if path in {"", "/"}:
+            return raw_root
+        return self.get_path(raw_root, path, _MISSING)
+
+    def _resolve_reference(self, reference: str, current_file: Path) -> Tuple[bool, Any]:
+        resource_path, local_path, optional = self._parse_reference(reference, current_file)
+        resource_key = str(resource_path.resolve())
+        cache_key = (resource_key, local_path or "")
+
+        if cache_key in self._compiled_reference_cache:
+            return True, copy.deepcopy(self._compiled_reference_cache[cache_key])
+
+        if not resource_path.exists():
+            if optional:
+                return False, None
+            raise RimeYamlError(
+                f"Rime 引用资源不存在：{reference} -> {resource_path}",
+                file_path=str(current_file),
+            )
+
+        if cache_key in self._compile_stack:
+            chain = " -> ".join(
+                f"{Path(file_name).name}:{node_path or '/'}"
+                for file_name, node_path in self._compile_stack + [cache_key]
+            )
+            raise RimeYamlError(
+                f"Rime 配置存在循环引用：{chain}",
+                file_path=str(current_file),
+            )
+
+        # 外部资源与 librime 一样先完整 Compile，再从编译结果取引用节点；
+        # 因而它自己的 <config>.custom.yaml 也会先自动生效。
+        if resource_path.resolve() != current_file.resolve():
+            compiled_root = self._compile_resource(
+                resource_path,
+                auto_custom=not resource_path.name.endswith(".custom.yaml"),
+            )
+            compiled = self.get_path(compiled_root, local_path, _MISSING)
+            if compiled is _MISSING:
+                if optional:
+                    return False, None
+                raise RimeYamlError(
+                    f"Rime 引用节点不存在：{reference}",
+                    file_path=str(resource_path),
+                )
+            self._compiled_reference_cache[cache_key] = copy.deepcopy(compiled)
+            return True, compiled
+
+        # 同资源局部引用不能重新编译整个根节点，否则会制造伪循环；
+        # 直接对原始节点建立依赖并编译，等价于 ConfigCompiler 的本资源引用。
+        raw_root = self._load_resource_raw(resource_path)
+        raw_node = self._raw_node(raw_root, local_path)
+        if raw_node is _MISSING:
+            if optional:
+                return False, None
+            raise RimeYamlError(
+                f"Rime 引用节点不存在：{reference}",
+                file_path=str(resource_path),
+            )
+
+        self._compile_stack.append(cache_key)
+        try:
+            compiled = self._compile_node(
+                raw_node,
+                current_file=resource_path,
+                node_path=local_path or "",
+            )
+        finally:
+            self._compile_stack.pop()
+
+        self._compiled_reference_cache[cache_key] = copy.deepcopy(compiled)
+        return True, compiled
+
+    def _compile_patch_value(self, value: Any, *, current_file: Path, node_path: str) -> Any:
+        # Patch literal 本身也是 YAML 节点树；其 value 中仍可出现编译指令。
+        if isinstance(value, Mapping):
+            # ConvertFromYaml 会照常解析 patch literal 内部出现的编译指令。
+            return self._compile_node(
+                value, current_file=current_file, node_path=node_path
+            )
+        if isinstance(value, Sequence) and not isinstance(value, (str, bytes, bytearray)):
+            return [
+                self._compile_patch_value(
+                    child, current_file=current_file, node_path=f"{node_path}/@{index}".strip("/")
+                )
+                if isinstance(child, (Mapping, list, tuple)) else copy.deepcopy(child)
+                for index, child in enumerate(value)
+            ]
+        return copy.deepcopy(value)
+
+    def _apply_patch_directive(self, target: Any, directive: Any, *, current_file: Path) -> Any:
+        """解析 __patch: literal / reference / sequence，按列表顺序执行。"""
+        items = (
+            list(directive)
+            if isinstance(directive, Sequence) and not isinstance(directive, (str, bytes, bytearray, Mapping))
+            else [directive]
+        )
+        result = copy.deepcopy(target)
+
+        for item in items:
+            if isinstance(item, str):
+                found, patch_node = self._resolve_reference(item, current_file)
+                if not found:
+                    continue
+                if not isinstance(patch_node, Mapping):
+                    raise RimeYamlError(
+                        f"__patch 引用必须指向 map：{item}",
+                        file_path=str(current_file),
+                    )
+                result = self.apply_patch(result, patch_node)
+            elif isinstance(item, Mapping):
+                result = self.apply_patch(result, item)
+            else:
+                raise RimeYamlError(
+                    "__patch 只接受补丁 map、节点引用，或它们组成的列表",
+                    file_path=str(current_file),
+                )
+        return result
+
+    def _implicit_import_preset(self, raw: Mapping[str, Any], node_path: str) -> Optional[str]:
+        """实现 Rime 组件 import_preset 插件的常见形式。
+
+        <component>/import_preset: <config>
+        等价于在该根组件节点先 __include: <config>:/<component>。
+        """
+        preset = raw.get("import_preset")
+        tokens = self._tokenize(node_path)
+        if (
+            isinstance(preset, str)
+            and len(tokens) == 1
+            and not self._is_list_reference(tokens[0])
+        ):
+            return f"{preset}:/{tokens[0]}"
+        return None
+
+    def _compile_node(self, raw: Any, *, current_file: Path, node_path: str) -> Any:
+        if isinstance(raw, Sequence) and not isinstance(raw, (str, bytes, bytearray, Mapping)):
+            return [
+                self._compile_node(
+                    child,
+                    current_file=current_file,
+                    node_path=f"{node_path}/@{index}".strip("/"),
+                )
+                for index, child in enumerate(raw)
+            ]
+
+        if not isinstance(raw, Mapping):
+            return copy.deepcopy(raw)
+
+        explicit_include = raw.get("__include", _MISSING)
+        implicit_include = self._implicit_import_preset(raw, node_path)
+        include_value = explicit_include if explicit_include is not _MISSING else implicit_include
+        patch_value = raw.get("__patch", _MISSING)
+
+        # PendingChild：先解析普通子节点中的依赖，再处理本节点 include / patch。
+        literals: Dict[str, Any] = {}
+        for key, child in raw.items():
+            key_text = str(key)
+            if key_text in {"__include", "__patch"}:
+                continue
+            if implicit_include is not None and key_text == "import_preset":
+                continue
+            literals[key_text] = self._compile_node(
+                child,
+                current_file=current_file,
+                node_path=f"{node_path}/{key_text}".strip("/"),
+            )
+
+        result: Any = literals
+
+        # 同一节点固定顺序：include -> 合并字面值 -> patch。
+        if include_value is not _MISSING and include_value is not None:
+            if not isinstance(include_value, str):
+                raise RimeYamlError(
+                    "__include 只接受一个节点引用字符串",
+                    file_path=str(current_file),
+                )
+            found, included = self._resolve_reference(include_value, current_file)
+            if found:
+                holder = {"__rime_target__": copy.deepcopy(included)}
+                if literals:
+                    if not self._merge_tree(holder, "__rime_target__", literals):
+                        raise RimeYamlError(
+                            f"__include 后无法合并当前节点：{include_value}",
+                            file_path=str(current_file),
+                        )
+                result = holder["__rime_target__"]
+
+        if patch_value is not _MISSING and patch_value is not None:
+            compiled_patch = self._compile_patch_value(
+                patch_value,
+                current_file=current_file,
+                node_path=f"{node_path}/__patch".strip("/"),
+            )
+            result = self._apply_patch_directive(
+                result, compiled_patch, current_file=current_file
+            )
+
+        return result
+
+    def _compile_resource(self, source_path: Path, *, auto_custom: bool = True) -> Any:
+        source_path = source_path.resolve()
+        resource_key = str(source_path)
+        cache_key = resource_key + ("|custom" if auto_custom else "|raw")
+        if cache_key in self._compiled_resource_cache:
+            return copy.deepcopy(self._compiled_resource_cache[cache_key])
+
+        root_marker = (resource_key, "")
+        if root_marker in self._compile_stack:
+            raise RimeYamlError(
+                f"Rime 配置存在循环资源引用：{source_path.name}",
+                file_path=str(source_path),
+            )
+
+        raw_key = str(source_path.resolve())
+        if raw_key in self._raw_resource_cache:
+            raw = self._raw_resource_cache[raw_key]
+        else:
+            raw = self._load_resource_raw(source_path)
+        self._compile_stack.append(root_marker)
+        try:
+            result = self._compile_node(raw, current_file=source_path, node_path="")
+        finally:
+            self._compile_stack.pop()
+
+        # AutoPatchConfigPlugin：根节点没有显式 __patch 时，自动应用 <config>.custom:/patch?。
+        if (
+            auto_custom
+            and isinstance(raw, Mapping)
+            and "__patch" not in raw
+            and not source_path.name.endswith(".custom.yaml")
+        ):
+            custom_path = self._custom_path_for_source(source_path)
+            custom_key = str(custom_path.resolve())
+            if custom_path.exists() or custom_key in self._raw_resource_cache:
+                custom_compiled = self._compile_resource(custom_path, auto_custom=False)
+                patch_node = (
+                    custom_compiled.get("patch", _MISSING)
+                    if isinstance(custom_compiled, Mapping) else _MISSING
+                )
+                if patch_node is not _MISSING and patch_node is not None:
+                    if not isinstance(patch_node, Mapping):
+                        raise RimeYamlError(
+                            f"{custom_path.name}:/patch 必须是 map",
+                            file_path=str(custom_path),
+                        )
+                    result = self.apply_patch(result, patch_node)
+
+        # DefaultConfigPlugin：输入方案未定义 menu/page_size 时，从已编译的 default.yaml 继承。
+        if source_path.name.endswith(".schema.yaml"):
+            page_size = self.get_path(result, "menu/page_size", _MISSING)
+            if page_size is _MISSING:
+                default_path = (self._compile_root / "default.yaml").resolve()
+                if default_path.exists() and default_path != source_path:
+                    default_compiled = self._compile_resource(default_path, auto_custom=True)
+                    inherited = self.get_path(default_compiled, "menu/page_size", _MISSING)
+                    if inherited is not _MISSING:
+                        self.set_path(result, "menu/page_size", inherited)
+
+        self._compiled_resource_cache[cache_key] = copy.deepcopy(result)
+        return result
+
+    def compile_file(self, path: str, *, auto_custom: bool = True) -> Any:
+        """编译一个 Rime 配置源文件，返回不含编译指令的最终节点树。"""
+        source_path = Path(path).resolve()
+        self._begin_compile_session(source_path.parent)
+        return self._compile_resource(source_path, auto_custom=auto_custom)
+
+    def load_pair(self, schema_path: str, custom_path: str = "", *, reuse_compile_session: bool = False) -> LoadedRimeDocument:
+        """加载 raw schema/custom，并独立生成 Rime 编译后的 effective。
+
+        schema / patch 保持原始结构供保存；effective 只读，绝不反写。
+        """
         if not is_managed_source_yaml(schema_path):
             raise RimeYamlError(
                 f"高级设置拒绝加载未登记文件：{Path(schema_path).name}",
@@ -223,49 +600,172 @@ class RimeYamlEngine:
                 f"高级设置拒绝加载未登记补丁：{Path(custom_path).name}",
                 file_path=custom_path,
             )
-        schema = self.load_file(schema_path, default={})
-        custom = self.load_file(custom_path, default={}) if custom_path and Path(custom_path).exists() else {}
+
+        schema_path_obj = Path(schema_path).resolve()
+        compile_root = schema_path_obj.parent.resolve()
+
+        # 单文件读取默认开启全新会话；批量扫描可显式复用同目录会话。
+        if (
+            not reuse_compile_session
+            or self._compile_root != compile_root
+        ):
+            self._begin_compile_session(compile_root)
+        else:
+            # 上一个资源若异常退出，不能把依赖栈泄漏给下一个顶层 schema。
+            self._compile_stack.clear()
+
+        schema_key = str(schema_path_obj)
+        if reuse_compile_session and schema_key in self._raw_resource_cache:
+            schema = copy.deepcopy(self._raw_resource_cache[schema_key])
+        else:
+            schema = self.load_file(str(schema_path_obj), default={})
+            self._raw_resource_cache[schema_key] = copy.deepcopy(schema)
+
+        custom_obj = Path(custom_path).resolve() if custom_path and Path(custom_path).exists() else None
+        if custom_obj is not None:
+            custom_key = str(custom_obj)
+            if reuse_compile_session and custom_key in self._raw_resource_cache:
+                custom = copy.deepcopy(self._raw_resource_cache[custom_key])
+            else:
+                custom = self.load_file(str(custom_obj), default={})
+                self._raw_resource_cache[custom_key] = copy.deepcopy(custom)
+        else:
+            custom = {}
+
         patch = custom.get("patch", {}) if isinstance(custom, Mapping) else {}
         patch = patch or {}
-        effective = self.apply_patch(schema, patch)
+
+        # source_effective：只按 Rime literal patch 将 schema + custom 合成，
+        # 但保留 __include / __patch 等编译指令。它用于编辑“编译指令本身”的 UI。
+        # runtime effective 则继续由完整 ConfigCompiler 兼容层生成。
+        source_effective = self.apply_patch(schema, patch)
+
+        # 如果调用方给了非标准 custom 路径，仍以它作为当前 schema 的自动补丁资源。
+        derived_custom = self._custom_path_for_source(schema_path_obj)
+        if custom_obj is not None and custom_obj != derived_custom:
+            self._raw_resource_cache[str(derived_custom)] = copy.deepcopy(custom)
+
+        effective = self._compile_resource(schema_path_obj, auto_custom=True)
+
         return LoadedRimeDocument(
-            file_name=Path(schema_path).name,
-            schema_path=schema_path,
+            file_name=schema_path_obj.name,
+            schema_path=str(schema_path_obj),
             custom_path=custom_path,
             schema=schema,
             patch=patch,
+            source_effective=source_effective,
             effective=effective,
         )
 
     @staticmethod
     def _tokenize(path: str) -> List[str]:
-        return [part for part in str(path).split("/") if part != ""]
+        """按 librime ConfigData::SplitPath() 规则切分配置路径。"""
+        text = str(path or "").lstrip("/")
+        if text == "":
+            return []
+        return text.split("/")
 
     @staticmethod
-    def _parse_index(token: str) -> Tuple[str, Optional[int]]:
-        if token.startswith("@before "):
-            try:
-                return "before", int(token[8:].strip())
-            except ValueError:
-                return "key", None
-        if token.startswith("@after "):
-            try:
-                return "after", int(token[7:].strip())
-            except ValueError:
-                return "key", None
-        if token.startswith("@"):
-            try:
-                return "index", int(token[1:])
-            except ValueError:
-                return "key", None
-        return "key", None
+    def _is_list_reference(token: str) -> bool:
+        """对应 ConfigData::IsListItemReference()：@ 后首字符为 ASCII 字母/数字。"""
+        if len(token) <= 1 or token[0] != "@":
+            return False
+        ch = token[1]
+        return ("0" <= ch <= "9") or ("A" <= ch <= "Z") or ("a" <= ch <= "z")
+
+    @staticmethod
+    def _parse_list_reference(token: str, size: int) -> Tuple[int, bool]:
+        """复刻 ConfigData::ResolveListIndex() 的索引计算。
+
+        返回 (index, will_insert)。
+        支持：
+          @0 / @12
+          @last
+          @next
+          @before 0 / @before last
+          @after 0 / @after last
+        """
+        if not RimeYamlEngine._is_list_reference(token):
+            raise ValueError(f"不是 Rime 列表路径：{token}")
+
+        body = token[1:]
+        index = 0
+        will_insert = False
+
+        if body.startswith("next"):
+            # librime 中 @next 直接定位 size，不额外 Insert；
+            # 后续 SetAt(size) 会自然扩展为末尾新项。
+            body = body[4:]
+            index = size
+        elif body.startswith("before"):
+            body = body[6:]
+            will_insert = True
+        elif body.startswith("after"):
+            body = body[5:]
+            index += 1
+            will_insert = True
+
+        if body.startswith(" "):
+            body = body[1:]
+
+        if body.startswith("last"):
+            index += size
+            if index != 0:
+                index -= 1
+            body = body[4:]
+        else:
+            # std::strtoul() 对空串/非法起始内容得到 0；
+            # 这里保留 Rime 对合法配置的行为，同时拒绝明显拼错的列表表达式，
+            # 避免工具静默把 typo 当 @0。
+            match = re.match(r"^[0-9]+", body)
+            if match:
+                index += int(match.group(0))
+            elif token not in {"@next", "@last"}:
+                raise ValueError(f"无效的 Rime 列表路径：{token}")
+
+        return index, will_insert
+
+    @staticmethod
+    def _node_kind_for_token(token: str) -> str:
+        return "list" if RimeYamlEngine._is_list_reference(token) else "map"
+
+    @staticmethod
+    def _resize_list(items: list, size: int) -> None:
+        if len(items) < size:
+            items.extend([None] * (size - len(items)))
+
+    def _resolve_list_for_read(self, items: Any, token: str) -> Optional[int]:
+        if not isinstance(items, list):
+            return None
+        try:
+            index, _ = self._parse_list_reference(token, len(items))
+        except ValueError:
+            return None
+        return index if 0 <= index < len(items) else None
+
+    @staticmethod
+    def _root_value(data: Any) -> Any:
+        return data.value if isinstance(data, _RootNodeRef) else data
+
+    @staticmethod
+    def _is_empty_node(value: Any) -> bool:
+        if value is None:
+            return True
+        if isinstance(value, (Mapping, list, tuple, str, bytes, bytearray)):
+            return len(value) == 0
+        return False
 
     def get_path(self, data: Any, path: str, default: Any = None) -> Any:
-        current = data
-        for token in self._tokenize(path):
-            kind, index = self._parse_index(token)
-            if kind == "index":
-                if not isinstance(current, Sequence) or isinstance(current, (str, bytes)) or index is None or not (0 <= index < len(current)):
+        """读取 Rime 配置路径；空路径表示当前根节点本身。"""
+        current = self._root_value(data)
+        tokens = self._tokenize(path)
+        if not tokens:
+            return current
+
+        for token in tokens:
+            if self._is_list_reference(token):
+                index = self._resolve_list_for_read(current, token)
+                if index is None:
                     return default
                 current = current[index]
             elif isinstance(current, Mapping) and token in current:
@@ -275,121 +775,319 @@ class RimeYamlEngine:
         return current
 
     def _ensure_child(self, parent: Any, token: str, next_token: Optional[str]) -> Any:
-        kind, index = self._parse_index(token)
-        next_kind, _ = self._parse_index(next_token or "")
-        want_list = next_kind in {"index", "before", "after"}
+        """写路径时取得/创建子节点，模拟 TraverseCopyOnWrite + Cow。"""
+        want_list = bool(next_token and self._is_list_reference(next_token))
 
-        if kind == "index":
-            if not isinstance(parent, list) or index is None:
+        if self._is_list_reference(token):
+            if not isinstance(parent, list):
                 raise TypeError(f"路径 {token} 需要列表父节点")
-            while len(parent) <= index:
-                parent.append(None)
-            if parent[index] is None:
-                parent[index] = [] if want_list else {}
-            return parent[index]
+
+            index, will_insert = self._parse_list_reference(token, len(parent))
+            if will_insert:
+                # ConfigList::Insert(i, nullptr)：i 超界时先 resize(i)，再插入。
+                self._resize_list(parent, index)
+                parent.insert(index, None)
+            else:
+                # ConfigList::SetAt() 可自动扩展，包括 @next。
+                self._resize_list(parent, index + 1)
+
+            child = parent[index]
+            if child is None:
+                child = [] if want_list else {}
+                parent[index] = child
+                return child
+
+            expected = list if want_list else Mapping
+            if want_list:
+                if not isinstance(child, list):
+                    raise TypeError(f"路径 {token} 下级需要列表节点")
+            elif not isinstance(child, Mapping):
+                raise TypeError(f"路径 {token} 下级需要字典节点")
+            return child
 
         if not isinstance(parent, MutableMapping):
             raise TypeError(f"路径 {token} 需要字典父节点")
+
         if token not in parent or parent[token] is None:
             parent[token] = [] if want_list else {}
-        return parent[token]
+            return parent[token]
+
+        child = parent[token]
+        if want_list:
+            if not isinstance(child, list):
+                raise TypeError(f"路径 {token} 下级需要列表节点")
+        elif not isinstance(child, Mapping):
+            raise TypeError(f"路径 {token} 下级需要字典节点")
+        return child
 
     def set_path(self, data: Any, path: str, value: Any) -> None:
+        """按 Rime 路径语义写值；空路径可替换 _RootNodeRef 根节点。"""
         tokens = self._tokenize(path)
         if not tokens:
-            raise ValueError("空路径")
+            if isinstance(data, _RootNodeRef):
+                data.value = copy.deepcopy(value)
+                return
+            raise ValueError("空路径只能用于可替换的 Rime 根节点引用")
 
-        current = data
+        current = self._root_value(data)
         for idx, token in enumerate(tokens[:-1]):
             current = self._ensure_child(current, token, tokens[idx + 1])
 
         last = tokens[-1]
-        kind, index = self._parse_index(last)
-        if kind == "index":
-            if not isinstance(current, list) or index is None:
+        copied = copy.deepcopy(value)
+
+        if self._is_list_reference(last):
+            if not isinstance(current, list):
                 raise TypeError(f"路径 {last} 需要列表父节点")
-            while len(current) <= index:
-                current.append(None)
-            current[index] = copy.deepcopy(value)
-        elif kind == "before":
-            if not isinstance(current, list) or index is None:
-                raise TypeError(f"路径 {last} 需要列表父节点")
-            current.insert(max(0, min(index, len(current))), copy.deepcopy(value))
-        elif kind == "after":
-            if not isinstance(current, list) or index is None:
-                raise TypeError(f"路径 {last} 需要列表父节点")
-            current.insert(max(0, min(index + 1, len(current))), copy.deepcopy(value))
-        else:
-            if not isinstance(current, MutableMapping):
-                raise TypeError(f"路径 {last} 需要字典父节点")
-            current[last] = copy.deepcopy(value)
+
+            index, will_insert = self._parse_list_reference(last, len(current))
+            if will_insert:
+                self._resize_list(current, index)
+                current.insert(index, None)
+            else:
+                self._resize_list(current, index + 1)
+            current[index] = copied
+            return
+
+        if not isinstance(current, MutableMapping):
+            raise TypeError(f"路径 {last} 需要字典父节点")
+        current[last] = copied
 
     def delete_path(self, data: Any, path: str) -> bool:
+        """删除路径；读取列表索引时不触发 @before/@after 的插入副作用。"""
         tokens = self._tokenize(path)
         if not tokens:
             return False
-        current = data
+
+        current = self._root_value(data)
         for token in tokens[:-1]:
-            kind, index = self._parse_index(token)
-            if kind == "index":
-                if not isinstance(current, list) or index is None or not (0 <= index < len(current)):
+            if self._is_list_reference(token):
+                index = self._resolve_list_for_read(current, token)
+                if index is None:
                     return False
                 current = current[index]
             elif isinstance(current, Mapping) and token in current:
                 current = current[token]
             else:
                 return False
+
         last = tokens[-1]
-        kind, index = self._parse_index(last)
-        if kind == "index" and isinstance(current, list) and index is not None and 0 <= index < len(current):
+        if self._is_list_reference(last):
+            index = self._resolve_list_for_read(current, last)
+            if index is None or not isinstance(current, list):
+                return False
             del current[index]
             return True
+
         if isinstance(current, MutableMapping) and last in current:
             del current[last]
             return True
         return False
 
     @staticmethod
-    def _deep_merge(base: Any, overlay: Any) -> Any:
-        if isinstance(base, Mapping) and isinstance(overlay, Mapping):
-            result = copy.deepcopy(base)
-            for key, value in overlay.items():
-                if key in result and isinstance(result[key], Mapping) and isinstance(value, Mapping):
-                    result[key] = RimeYamlEngine._deep_merge(result[key], value)
-                else:
-                    result[key] = copy.deepcopy(value)
-            return result
-        return copy.deepcopy(overlay)
+    def _parse_indexed_append(key: str) -> Optional[int]:
+        """对应 librime ParseIndexedAppend()：path/2+ 或纯 2+。"""
+        if not key or not key.endswith("+"):
+            return None
+        match = re.search(r"(?:^|/)([0-9]+)\+$", key)
+        return int(match.group(1)) if match else None
+
+    @staticmethod
+    def _strip_patch_operator(
+        key: str,
+        *,
+        appending: bool,
+        indexed_append: Optional[int],
+    ) -> str:
+        if key in {"__append", "__merge"}:
+            return ""
+        if indexed_append is not None:
+            slash_suffix = f"/{indexed_append}+"
+            plain_suffix = f"{indexed_append}+"
+            if key.endswith(slash_suffix):
+                return key[:-len(slash_suffix)]
+            if key.endswith(plain_suffix):
+                return key[:-len(plain_suffix)]
+        suffix = "/+" if appending else "/="
+        return key[:-len(suffix)] if key.endswith(suffix) else key
+
+    def _append_value(
+        self,
+        target: Any,
+        path: str,
+        value: Any,
+        indexed_append: Optional[int],
+    ) -> bool:
+        """对应 AppendToString()/AppendToList()。
+
+        关键点：Rime 的 target 是 ConfigItemRef，所以 path 为空时也能替换
+        当前节点；空节点在追加 list 时可原位转成 list。
+        """
+        existing = self.get_path(target, path, _MISSING)
+        if existing is _MISSING or existing is None:
+            self.set_path(target, path, value)
+            return True
+
+        if isinstance(value, str):
+            if isinstance(existing, str) and indexed_append is None:
+                self.set_path(target, path, existing + value)
+                return True
+            return False
+
+        if isinstance(value, Sequence) and not isinstance(
+            value, (str, bytes, bytearray, Mapping)
+        ):
+            incoming = copy.deepcopy(list(value))
+
+            if isinstance(existing, list):
+                result = copy.deepcopy(existing)
+            elif self._is_empty_node(existing):
+                # librime AppendToList(): 空节点（常见为只含编译指令、
+                # 指令解析后留下的空 map）允许转换为 list。
+                result = []
+            else:
+                return False
+
+            if indexed_append is None:
+                result.extend(incoming)
+            else:
+                if indexed_append > len(result):
+                    return False
+                result[indexed_append:indexed_append] = incoming
+
+            self.set_path(target, path, result)
+            return True
+
+        return False
+
+    def _merge_tree(self, target: Any, path: str, overlay: Any) -> bool:
+        """对应 librime MergeTree()；子键继续按 EditNode(merge_tree=true) 解释。"""
+        if not isinstance(overlay, Mapping):
+            return False
+
+        existing = self.get_path(target, path, _MISSING)
+        if existing is _MISSING or existing is None:
+            self.set_path(target, path, {})
+            existing = self.get_path(target, path, _MISSING)
+
+        # librime 的 MergeTree 明确允许 target 当前为任意类型；
+        # 例如 include 得到 list 后，overlay 的 __append 可以直接追加。
+        for child_key in sorted(overlay.keys(), key=lambda item: str(item)):
+            key_text = str(child_key)
+            if key_text == "__append":
+                append_path = f"{path}/+" if path else "/+"
+                if not self._edit_node(target, append_path, overlay[child_key], merge_tree=True):
+                    return False
+                continue
+            if key_text == "__merge":
+                if not self._merge_tree(target, path, overlay[child_key]):
+                    return False
+                continue
+            child_path = key_text if not path else f"{path}/{key_text}"
+            if not self._edit_node(target, child_path, overlay[child_key], merge_tree=True):
+                return False
+        return True
+
+    def _edit_node(self, target: Any, key: str, value: Any, *, merge_tree: bool) -> bool:
+        """Python 版 ConfigCompiler::EditNode()。"""
+        key = str(key)
+        indexed_append = self._parse_indexed_append(key)
+        plain_add = key.endswith("/+") and indexed_append is None
+        appending = (
+            key == "__append"
+            or key.endswith("/+")
+            or indexed_append is not None
+        )
+        merging = (
+            key == "__merge"
+            or plain_add
+            or (
+                merge_tree
+                and (value is None or isinstance(value, Mapping))
+                and not key.endswith("/=")
+            )
+        )
+
+        path = self._strip_patch_operator(
+            key,
+            appending=(appending or merging),
+            indexed_append=indexed_append,
+        )
+
+        existing = self.get_path(target, path, _MISSING)
+
+        if (appending or merging) and existing is not _MISSING and existing is not None:
+            if value is None:
+                return True
+            if appending and self._append_value(target, path, value, indexed_append):
+                return True
+            if merging and self._merge_tree(target, path, value):
+                return True
+            return False
+
+        # Rime 在目标不存在时直接以 value 覆盖/创建目标。
+        if path:
+            self.set_path(target, path, value)
+            return True
+
+        # path 为空时等价于给 ConfigItemRef 本身赋值。
+        if isinstance(target, _RootNodeRef):
+            self.set_path(target, "", value)
+            return True
+
+        # 兼容内部仍以普通容器作为 target 的旧调用。
+        if isinstance(target, MutableMapping) and isinstance(value, Mapping):
+            target.clear()
+            target.update(copy.deepcopy(value))
+            return True
+        if isinstance(target, list) and isinstance(value, list):
+            target[:] = copy.deepcopy(value)
+            return True
+        return False
+
+    def apply_patch_entry(self, data: Any, path: str, value: Any) -> Any:
+        """应用一条 Rime literal patch，并返回可能被替换后的根节点。
+
+        对普通子路径通常仍是原对象；对根 __append/__merge 或根覆盖，
+        返回值可能从空 map 变为 list，这与 ConfigItemRef 的可替换语义一致。
+        """
+        box = data if isinstance(data, _RootNodeRef) else _RootNodeRef(data)
+        if not self._edit_node(box, str(path), value, merge_tree=False):
+            raise TypeError(f"无法按 Rime 补丁语义应用路径：{path}")
+        return box.value
 
     def apply_patch(self, schema: Any, patch: Any) -> Any:
-        """解析常见 Rime patch：嵌套字典、扁平路径、/+、@索引。"""
-        effective = copy.deepcopy(schema if schema is not None else {})
-        if not isinstance(patch, Mapping):
-            return effective
+        """按 librime ConfigCompiler 的 literal patch 语义生成最终配置。
 
-        # 先应用无斜杠的普通嵌套块，再应用扁平路径，保证扁平路径优先。
-        for key, value in patch.items():
-            key_text = str(key)
-            if "/" in key_text:
-                continue
-            if isinstance(value, Mapping) and isinstance(effective, Mapping):
-                effective[key_text] = self._deep_merge(effective.get(key_text, {}), value)
-            elif isinstance(effective, MutableMapping):
-                effective[key_text] = copy.deepcopy(value)
+        支持：
+          - 普通路径覆盖
+          - @0 / @last / @next / @before / @after
+          - /+（字符串追加、列表追加、映射合并）
+          - /=（强制覆盖）
+          - /N+（在列表第 N 位插入一组元素）
+          - __append / __merge
+          - patch 为单个 mapping，或由多个 mapping 组成的 sequence
 
-        for key, value in patch.items():
-            path = str(key)
-            if "/" not in path:
-                continue
-            if path.endswith("/+"):
-                target_path = path[:-2]
-                existing = self.get_path(effective, target_path, [])
-                existing_list = list(existing) if isinstance(existing, Sequence) and not isinstance(existing, (str, bytes)) else []
-                append_values = list(value) if isinstance(value, Sequence) and not isinstance(value, (str, bytes)) else [value]
-                self.set_path(effective, target_path, existing_list + copy.deepcopy(append_values))
-            else:
-                self.set_path(effective, path, value)
-        return effective
+        本函数只负责 literal patch；__include / __patch 引用由 compile_file/load_pair
+        的 ConfigCompiler 兼容层解析。
+        """
+        root = _RootNodeRef(copy.deepcopy(schema if schema is not None else {}))
+
+        patch_groups: List[Mapping[str, Any]] = []
+        if isinstance(patch, Mapping):
+            patch_groups = [patch]
+        elif isinstance(patch, Sequence) and not isinstance(patch, (str, bytes, bytearray)):
+            for item in patch:
+                if isinstance(item, Mapping):
+                    patch_groups.append(item)
+
+        # librime ConfigMap 使用 std::map；同一 literal patch 内按 key 排序遍历。
+        # 多个 patch literal 之间则按 sequence 顺序执行。
+        for group in patch_groups:
+            for key in sorted(group.keys(), key=lambda item: str(item)):
+                self.apply_patch_entry(root, str(key), group[key])
+
+        return root.value
 
     def dump_text(self, data: Any) -> str:
         buffer = StringIO()
