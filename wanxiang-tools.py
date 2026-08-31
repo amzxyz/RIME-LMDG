@@ -124,7 +124,7 @@ class FocusPlaceholderPlainTextEdit(QPlainTextEdit):
             super().setPlaceholderText(self._saved_placeholder)
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.3.0"
+TOOL_VERSION = "v3.3.1"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -551,7 +551,20 @@ def pinyin_process_single_file(
             d.write(newline + '\n')
     return total, changed
 
-# ============== 逻辑 ②：刷新辅助码（严格对齐原脚本） ==============
+# ============== 逻辑 ②：刷新辅助码（按词条/拼音相对位置严格对齐） ==============
+
+# 辅助码对齐专用 CJK 范围。比上面的 filter_non_chinese 范围更广，
+# 覆盖常用汉字、扩展区、兼容汉字及当前 Unicode 的大部分生僻字。
+# 注意：这里的用途不是“删除非汉字”，而是判断哪些字符属于汉字单位。
+AUX_CJK_PATTERN = re.compile(
+    r'[〇\u2E80-\u2EFF\u2F00-\u2FDF\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF\U00020000-\U0003347F]'
+)
+
+# 仅在用户取消“忽略非汉字”时使用。默认勾选时数字/英文只占位置，不强行写辅助码。
+NON_HAN_TO_HAN = {
+    '0': '零', '1': '一', '2': '二', '3': '三', '4': '四',
+    '5': '五', '6': '六', '7': '七', '8': '八', '9': '九',
+}
 
 def load_aux_metadata(path: str, log) -> Dict[str, str]:
     if not os.path.isfile(path): raise FileNotFoundError("辅助码文件不存在")
@@ -569,32 +582,179 @@ def load_aux_metadata(path: str, log) -> Dict[str, str]:
     log(f"✓ 辅助码加载 {len(aux_map)} 条")
     return aux_map
 
-def build_seg_by_aux(word: str, aux_map: Dict[str, str]) -> List[str]:
-    return [aux_map.get(ch, '') for ch in word]
+def _aux_is_cjk(ch: str) -> bool:
+    return bool(ch and AUX_CJK_PATTERN.fullmatch(ch))
+
+def _aux_visible_chars(word: str) -> List[str]:
+    """词条中的可见字符；空白不占拼音/辅助码位置。"""
+    return [ch for ch in word if not ch.isspace()]
+
+def _aux_han_chars(word: str) -> List[str]:
+    """只取汉字。不存在辅助码的生僻字也必须保留这个位置。"""
+    return [ch for ch in word if _aux_is_cjk(ch)]
+
+def _aux_for_char(ch: str, aux_map: Dict[str, str], ignore_non_chinese: bool) -> str:
+    """获取单个字符的辅助码；查不到就返回空串，绝不向前/向后借位。"""
+    if _aux_is_cjk(ch):
+        return aux_map.get(ch, '')
+
+    if ignore_non_chinese:
+        return ''
+
+    # 取消“忽略非汉字”时，先允许辅助码表直接定义单字符，
+    # 再兼容旧脚本中的数字 -> 中文数字映射。
+    if len(ch) == 1 and ch in aux_map:
+        return aux_map.get(ch, '')
+    mapped = NON_HAN_TO_HAN.get(ch)
+    return aux_map.get(mapped, '') if mapped else ''
+
+def _aux_tokenize_word(word: str) -> List[Dict[str, str]]:
+    """按“单个汉字 / 连续非汉字块”拆词，用于旧格式的相对位置回溯对齐。"""
+    units: List[Dict[str, str]] = []
+    buf: List[str] = []
+    for ch in word:
+        if ch.isspace():
+            continue
+        if _aux_is_cjk(ch):
+            if buf:
+                units.append({'type': 'non_han', 'text': ''.join(buf)})
+                buf = []
+            units.append({'type': 'han', 'text': ch})
+        else:
+            buf.append(ch)
+    if buf:
+        units.append({'type': 'non_han', 'text': ''.join(buf)})
+    return units
+
+def _aux_align_units(
+    units: List[Dict[str, str]],
+    seg_roots: List[str],
+    u_idx: int,
+    s_idx: int,
+    aux_map: Dict[str, str],
+    ignore_non_chinese: bool,
+) -> Optional[List[str]]:
+    """
+    将词条单位与拼音段递归对齐。
+
+    关键约束：
+    - 汉字严格消耗 1 个拼音段；即使该字没有辅助码，也返回 '' 占住当前位置；
+    - 非汉字块可以消耗 1~N 个拼音段，但不会让后面的汉字辅助码顶到前面；
+    - 对齐失败返回 None，由上层保留原辅助码，不做有风险的错位刷新。
+    """
+    if u_idx == len(units) and s_idx == len(seg_roots):
+        return []
+    if u_idx == len(units) or s_idx == len(seg_roots):
+        return None
+
+    unit = units[u_idx]
+    if unit['type'] == 'han':
+        rest = _aux_align_units(
+            units, seg_roots, u_idx + 1, s_idx + 1, aux_map, ignore_non_chinese
+        )
+        if rest is None:
+            return None
+        # 即使 aux_map 中没有这个生僻字，也返回空串占位。
+        return [aux_map.get(unit['text'], '')] + rest
+
+    # 非汉字块：先尝试按文本完全匹配（AI -> ai / a+i 等）。
+    non_han_text = unit['text'].lower()
+    current = ''
+    for k in range(s_idx, len(seg_roots)):
+        current += seg_roots[k].lower()
+        if current == non_han_text:
+            rest = _aux_align_units(
+                units, seg_roots, u_idx + 1, k + 1, aux_map, ignore_non_chinese
+            )
+            if rest is not None:
+                first_aux = _aux_for_char(unit['text'], aux_map, ignore_non_chinese)
+                return [first_aux] + [''] * (k - s_idx) + rest
+
+    # 文本无法直接匹配时，根据后面还剩多少汉字来确定本块最多能占几个拼音段。
+    remaining_han = sum(1 for u in units[u_idx + 1:] if u['type'] == 'han')
+    max_consume = len(seg_roots) - s_idx - remaining_han
+    for consume_len in range(max_consume, 0, -1):
+        rest = _aux_align_units(
+            units, seg_roots, u_idx + 1, s_idx + consume_len, aux_map, ignore_non_chinese
+        )
+        if rest is not None:
+            first_aux = _aux_for_char(unit['text'], aux_map, ignore_non_chinese)
+            return [first_aux] + [''] * (consume_len - 1) + rest
+
+    return None
+
+def build_seg_by_aux_aligned(
+    word: str,
+    raw_segs: List[str],
+    aux_map: Dict[str, str],
+    ignore_non_chinese: bool,
+) -> Optional[List[str]]:
+    """生成与每个拼音段一一对应的辅助码列表。"""
+    if not raw_segs:
+        return []
+
+    # 对齐时只看拼音主体，忽略原有 ;辅助码 或 [辅助码]。
+    seg_roots = [re.split(AUX_SEP_REGEX, seg, maxsplit=1)[0] for seg in raw_segs]
+    visible_chars = _aux_visible_chars(word)
+    han_chars = _aux_han_chars(word)
+
+    # 1) 最强位置条件：词条可见字符数 == 拼音段数。
+    #    例如“2型糖尿病”有 5 个字符、5 个拼音段，2 自己占第 1 位；
+    #    它没有辅助码时第 1 位就是空，绝不让“型”的 ht 顶到 èr 上。
+    if len(seg_roots) == len(visible_chars):
+        return [_aux_for_char(ch, aux_map, ignore_non_chinese) for ch in visible_chars]
+
+    # 2) 新格式：拼音列已忽略数字/英文/符号，只剩汉字读音。
+    #    即使其中有“无辅助码的生僻字”，也会返回 '' 保留该字的位置。
+    if len(seg_roots) == len(han_chars):
+        return [aux_map.get(ch, '') for ch in han_chars]
+
+    # 3) 兼容旧格式：拼音列仍包含 AI、数字读音、C++ 等非汉字段。
+    units = _aux_tokenize_word(word)
+    aligned = _aux_align_units(
+        units, seg_roots, 0, 0, aux_map, ignore_non_chinese
+    )
+    if aligned is not None and len(aligned) == len(raw_segs):
+        return aligned
+
+    # 4) 无法可靠判断相对位置：返回 None。上层保留原辅助码，
+    #    宁可不刷新这一行，也绝不把后一个字的辅助码错刷到前一个音节。
+    return None
 
 def refresh_aux(cols: List[str], word: str, aux_map: Dict[str, str], userdb: bool, ignore_non_chinese: bool) -> Tuple[List[str], bool]:
     before = '\t'.join(cols)
-    if ignore_non_chinese: word = filter_non_chinese(word)
-    if not userdb and len(cols) == 1: cols.insert(1, '')
-    if userdb and len(cols) < 2: cols.append('')
-    
+
+    if not userdb and len(cols) == 1:
+        cols.insert(1, '')
+    if userdb and len(cols) < 2:
+        cols.append('')
+
     seg_idx = 0 if userdb else 1
+
+    # 普通词典中若第二列只有纯数字，它通常是权重而不是拼音；不要把权重改成“10;xx”。
+    if not userdb and seg_idx < len(cols) and len(cols) == 2 and cols[seg_idx].strip().isdigit():
+        return cols, False
+
     raw_segs = cols[seg_idx].strip().split() if seg_idx < len(cols) else []
-    aux_segs = build_seg_by_aux(word, aux_map)
-    
+    aux_segs = build_seg_by_aux_aligned(word, raw_segs, aux_map, ignore_non_chinese)
+
+    if aux_segs is None:
+        # 对齐不确定时保持整行原样，杜绝“看似刷新成功、实际辅助码串位”。
+        return cols, False
+
     merged = []
     for i, seg in enumerate(raw_segs):
-        parts = seg.split(';')
-        py_part = parts[0]
+        py_part = re.split(AUX_SEP_REGEX, seg, maxsplit=1)[0]
         aux = aux_segs[i] if i < len(aux_segs) else ''
         merged.append(f"{py_part};{aux}")
-    
+
     if userdb:
         cols[0] = ' '.join(merged)
-        if not cols[0].endswith(' '): cols[0] += ' '
+        if not cols[0].endswith(' '):
+            cols[0] += ' '
     else:
         cols[seg_idx] = ' '.join(merged)
-    
+
     after = '\t'.join(cols)
     return cols, (after != before)
 
