@@ -30,14 +30,43 @@ def _prepare_linux_qt_environment() -> None:
 
     session_type = os.environ.get("XDG_SESSION_TYPE", "").strip().lower()
 
-    # 当前主要支持 XFCE/X11 + Fcitx5。
-    # 等价于：
-    # GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx python3 wanxiang-tools.py
+    # X11 下只固定 Qt 平台为 xcb；输入法前端不再无条件写死为 Fcitx。
+    # Linux 可能使用 Fcitx5 / Fcitx4 / iBus。若系统已经提供输入法环境变量则尊重它；
+    # 若环境变量缺失，再根据当前运行进程尽力补齐，避免在 iBus 机器上强塞 fcitx。
     if session_type != "wayland":
         os.environ.setdefault("QT_QPA_PLATFORM", "xcb")
-        os.environ.setdefault("GTK_IM_MODULE", "fcitx")
-        os.environ.setdefault("QT_IM_MODULE", "fcitx")
-        os.environ.setdefault("XMODIFIERS", "@im=fcitx")
+
+        im_env = " ".join(
+            str(os.environ.get(name, "") or "").lower()
+            for name in ("GTK_IM_MODULE", "QT_IM_MODULE", "XMODIFIERS")
+        )
+
+        def _linux_proc_running(*names: str) -> bool:
+            wanted = {name.lower() for name in names}
+            try:
+                proc_root = "/proc"
+                for entry in os.scandir(proc_root):
+                    if not entry.name.isdigit():
+                        continue
+                    try:
+                        with open(os.path.join(entry.path, "comm"), "r", encoding="utf-8", errors="ignore") as f:
+                            proc_name = f.read().strip().lower()
+                        if proc_name in wanted:
+                            return True
+                    except OSError:
+                        continue
+            except OSError:
+                pass
+            return False
+
+        if "ibus" in im_env or _linux_proc_running("ibus-daemon"):
+            os.environ.setdefault("GTK_IM_MODULE", "ibus")
+            os.environ.setdefault("QT_IM_MODULE", "ibus")
+            os.environ.setdefault("XMODIFIERS", "@im=ibus")
+        elif "fcitx" in im_env or _linux_proc_running("fcitx5", "fcitx"):
+            os.environ.setdefault("GTK_IM_MODULE", "fcitx")
+            os.environ.setdefault("QT_IM_MODULE", "fcitx")
+            os.environ.setdefault("XMODIFIERS", "@im=fcitx")
 
 
 _prepare_linux_qt_environment()
@@ -1163,12 +1192,94 @@ class PathDetector:
 
         return server_path, deployer_path
 
+    @staticmethod
+    def _linux_process_running(process_name: str) -> bool:
+        """尽力判断 Linux 桌面输入法前端是否正在运行；失败时静默返回 False。"""
+        try:
+            result = subprocess.run(
+                ["pgrep", "-x", process_name],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                timeout=0.8,
+                check=False,
+            )
+            return result.returncode == 0
+        except Exception:
+            return False
+
+    @classmethod
+    def _detect_linux_rime_dir(cls) -> Tuple[str, str]:
+        """在 Fcitx5 / iBus / Fcitx4 中尽力识别 Rime 用户目录。
+
+        Linux 发行版、桌面环境和启动方式很多，自动识别只能作为便利功能，
+        因此界面同时提供“锁定地址”：用户手动确认后即可永久使用保存值。
+        """
+        home = Path.home()
+        candidates = {
+            "fcitx5": home / ".local" / "share" / "fcitx5" / "rime",
+            "ibus": home / ".config" / "ibus" / "rime",
+            "fcitx": home / ".config" / "fcitx" / "rime",
+        }
+        display_names = {
+            "fcitx5": "Fcitx5",
+            "ibus": "iBus",
+            "fcitx": "Fcitx",
+        }
+
+        # 先看当前会话环境。IBus 通常会直接暴露 ibus；
+        # Fcitx4/5 常见值都可能只是 fcitx，因此再结合进程和目录判断。
+        env_text = " ".join(
+            str(os.environ.get(name, "") or "").lower()
+            for name in ("GTK_IM_MODULE", "QT_IM_MODULE", "XMODIFIERS")
+        )
+        hint = ""
+        if "ibus" in env_text:
+            hint = "ibus"
+        elif "fcitx5" in env_text:
+            hint = "fcitx5"
+        elif "fcitx" in env_text:
+            hint = "fcitx"
+
+        # 活跃进程比残留目录更能反映当前前端。
+        if cls._linux_process_running("fcitx5"):
+            hint = "fcitx5"
+        elif cls._linux_process_running("ibus-daemon"):
+            hint = "ibus"
+        elif cls._linux_process_running("fcitx"):
+            hint = "fcitx"
+
+        scores = {}
+        for kind, path in candidates.items():
+            score = 0
+            if path.is_dir():
+                score += 10
+            # Rime 自己生成/使用的文件比单纯存在目录更可信。
+            if (path / "installation.yaml").is_file():
+                score += 30
+            if (path / "user.yaml").is_file():
+                score += 15
+            if (path / "build").is_dir():
+                score += 5
+            if hint == kind:
+                score += 100
+            scores[kind] = score
+
+        best_kind = max(scores, key=scores.get)
+        best_score = scores[best_kind]
+
+        # 没有任何有效线索时保持旧行为：默认 Fcitx5。
+        if best_score <= 0:
+            best_kind = "fcitx5"
+
+        return str(candidates[best_kind]), display_names[best_kind]
+
     @classmethod
     def detect(cls) -> Dict[str, str]:
         detected = {
             "rime_user_dir": "",
             "weasel_server": "",
             "weasel_deployer": "",
+            "linux_frontend": "",
         }
 
         if SYSTEM_TYPE == "windows":
@@ -1223,9 +1334,9 @@ class PathDetector:
         elif SYSTEM_TYPE == "macos":
             detected["rime_user_dir"] = os.path.expanduser("~/Library/Rime")
         else:
-            detected["rime_user_dir"] = os.path.expanduser(
-                "~/.local/share/fcitx5/rime"
-            )
+            linux_dir, linux_frontend = cls._detect_linux_rime_dir()
+            detected["rime_user_dir"] = linux_dir
+            detected["linux_frontend"] = linux_frontend
 
         return detected
 
@@ -2239,9 +2350,15 @@ class PathEdit(QLineEdit):
         self.setAcceptDrops(True)
         if placeholder: self.setPlaceholderText(placeholder)
     def dragEnterEvent(self, e):
+        if self.isReadOnly():
+            e.ignore()
+            return
         if e.mimeData().hasUrls(): e.acceptProposedAction()
         else: super().dragEnterEvent(e)
     def dropEvent(self, e):
+        if self.isReadOnly():
+            e.ignore()
+            return
         if e.mimeData().hasUrls():
             urls = e.mimeData().urls()
             if urls:
@@ -2742,22 +2859,70 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         form.setVerticalSpacing(5)
         
         self.upd_rime = PathEdit(); self.upd_rime.setPlaceholderText("Rime用户目录")
+        self.chk_rime_lock = QCheckBox("锁定地址")
+        self.chk_rime_lock.setToolTip(
+            "锁定后保存当前 Rime 目录；下次启动和切换标签时不再自动检测。\n"
+            "Linux 使用 iBus / Fcitx / Fcitx5 或自定义目录时尤其适用。"
+        )
+
         def do_auto_detect():
-            det = PathDetector.detect()
-            if det['rime_user_dir']: 
+            # 锁定意味着完全信任已保存地址，不再碰自动检测逻辑。
+            if self.chk_rime_lock.isChecked():
+                return
+            try:
+                det = PathDetector.detect()
+            except Exception as error:
+                det = {}
+                self.upd_rime.setPlaceholderText("自动检测失败，可手动粘贴路径")
+                self.upd_rime.setToolTip(f"自动检测失败：{error}")
+                return
+
+            if det.get('rime_user_dir'):
                 self.upd_rime.setText(det['rime_user_dir'])
                 self.upd_rime.setStyleSheet("")
                 self.detected_server = det.get('weasel_server', '')
                 self.detected_deployer = det.get('weasel_deployer', '')
+                frontend = str(det.get('linux_frontend', '') or '')
+                if frontend:
+                    self.upd_rime.setToolTip(
+                        f"Linux 自动识别前端：{frontend}。如识别不准，可手动粘贴后勾选“锁定地址”。"
+                    )
+                else:
+                    self.upd_rime.setToolTip("")
             else:
-                self.upd_rime.setPlaceholderText("未能自动检测到路径")
-        
+                self.upd_rime.setPlaceholderText("未能自动检测到路径，可手动粘贴")
+
         b_rime = QPushButton("选择"); b_rime.setFixedWidth(50); b_rime.clicked.connect(lambda: self.pick_dir(self.upd_rime))
         b_reset = QPushButton("重置"); b_reset.setFixedWidth(50); b_reset.clicked.connect(do_auto_detect)
-        do_auto_detect()
-        
+
+        def on_rime_lock_toggled(checked: bool):
+            current = self.upd_rime.text().strip()
+            if checked and not current:
+                # 没地址就不能锁，避免保存一个空锁定状态。
+                self.chk_rime_lock.blockSignals(True)
+                self.chk_rime_lock.setChecked(False)
+                self.chk_rime_lock.blockSignals(False)
+                QMessageBox.warning(self, "无法锁定", "请先自动检测、选择或粘贴 Rime 用户目录。")
+                return
+
+            self.upd_rime.setReadOnly(checked)
+            b_rime.setEnabled(not checked)
+            b_reset.setEnabled(not checked)
+
+            # 勾选即保存，不需要等退出程序。
+            self.settings.setValue('upd/rime_locked', checked)
+            if checked:
+                self.settings.setValue('upd/rime', current)
+                self.upd_rime.setToolTip(
+                    "Rime 地址已锁定：启动和切换标签时不会再自动检测。\n"
+                    "取消勾选后可重新选择、粘贴或自动检测。"
+                )
+            self.settings.sync()
+
+        self.chk_rime_lock.toggled.connect(on_rime_lock_toggled)
+
         r_rime = QHBoxLayout(); r_rime.setContentsMargins(0,0,0,0)
-        r_rime.addWidget(self.upd_rime); r_rime.addWidget(b_rime); r_rime.addWidget(b_reset)
+        r_rime.addWidget(self.upd_rime); r_rime.addWidget(b_rime); r_rime.addWidget(b_reset); r_rime.addWidget(self.chk_rime_lock)
         
         self.row_src_widget = QWidget()
         row_src = QHBoxLayout(self.row_src_widget)
@@ -2884,12 +3049,18 @@ class MainWin(AdvancedSettingsMixin, QWidget):
             except: pass
             self.btn_stop.clicked.connect(self.stop_update)
             
-            det = PathDetector.detect()
-            if det['rime_user_dir']:
-                self.upd_rime.setText(det['rime_user_dir'])
-                self.upd_rime.setStyleSheet("")
-                self.detected_server = det.get('weasel_server', '')
-                self.detected_deployer = det.get('weasel_deployer', '')
+            if not self.chk_rime_lock.isChecked():
+                det = PathDetector.detect()
+                if det['rime_user_dir']:
+                    self.upd_rime.setText(det['rime_user_dir'])
+                    self.upd_rime.setStyleSheet("")
+                    self.detected_server = det.get('weasel_server', '')
+                    self.detected_deployer = det.get('weasel_deployer', '')
+                    frontend = str(det.get('linux_frontend', '') or '')
+                    if frontend:
+                        self.upd_rime.setToolTip(
+                            f"Linux 自动识别前端：{frontend}。如识别不准，可手动粘贴后勾选“锁定地址”。"
+                        )
         else:
             if idx == 3: self.btn_run.setText("开始转换")
             else: self.btn_run.setText("运行")
@@ -3792,6 +3963,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
             s.setValue('upd/ver', self.bg_ver.checkedId())
             s.setValue('upd/aux_index', self.combo_aux.currentIndex())
             s.setValue('upd/rime', self.upd_rime.text())
+            s.setValue('upd/rime_locked', self.chk_rime_lock.isChecked())
             s.setValue('upd/token', self.upd_token.text())
             s.setValue('upd/src_mode', self.bg_src.checkedId())
             for obsolete_key in ('upd/github_route', 'upd/github_routes', 'upd/custom_github_routes', 'upd/proxy_slow_fallback', 'upd/proxy_min_speed_kbps'):
@@ -3834,14 +4006,28 @@ class MainWin(AdvancedSettingsMixin, QWidget):
             if aux_idx >= 0 and aux_idx < self.combo_aux.count():
                 self.combo_aux.setCurrentIndex(aux_idx)
             saved_rime = s.value('upd/rime', '').strip()
-            if saved_rime:
+            rime_locked = s.value('upd/rime_locked', False, bool)
+
+            # 锁定地址：启动时直接使用保存值，连 PathDetector.detect() 都不调用。
+            if rime_locked and saved_rime:
                 self.upd_rime.setText(saved_rime)
+                self.chk_rime_lock.setChecked(True)
             else:
-                det = PathDetector.detect()
-                if det['rime_user_dir']:
-                    self.upd_rime.setText(det['rime_user_dir'])
-                    self.detected_server = det.get('weasel_server', '')
-                    self.detected_deployer = det.get('weasel_deployer', '')
+                # 旧配置若只有地址但未锁定，先恢复显示；随后主标签初始化会再次自动识别。
+                self.chk_rime_lock.setChecked(False)
+                if saved_rime:
+                    self.upd_rime.setText(saved_rime)
+                else:
+                    det = PathDetector.detect()
+                    if det['rime_user_dir']:
+                        self.upd_rime.setText(det['rime_user_dir'])
+                        self.detected_server = det.get('weasel_server', '')
+                        self.detected_deployer = det.get('weasel_deployer', '')
+                        frontend = str(det.get('linux_frontend', '') or '')
+                        if frontend:
+                            self.upd_rime.setToolTip(
+                                f"Linux 自动识别前端：{frontend}。如识别不准，可手动粘贴后勾选“锁定地址”。"
+                            )
             self.upd_token.setText(s.value('upd/token', ''))
             download_source = int(s.value('upd/src_mode', 1))
             if self.bg_src.button(download_source):
@@ -3894,6 +4080,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         self.combo_aux.setCurrentIndex(0) 
         self.rb_src_cnb.setChecked(True)
         self.upd_token.clear()
+        self.chk_rime_lock.setChecked(False)
         self.upd_wl_edit.setPlainText("\n".join(DEFAULT_WL_REGEX))
         # 复位勾选框
         self.chk_clean_build.setChecked(False)
