@@ -486,10 +486,11 @@ def load_custom_pinyin(custom_dir: Optional[str], log) -> None:
     log(f"使用自定义拼音目录：{custom_dir}")
     _load_from_files(file_list, log)
 
-def tone_mark(seg: str) -> str:
+def tone_mark(seg: str, output_no_tone: bool = False) -> str:
     root = re.split(AUX_SEP_REGEX, seg)[0]
     suffix = seg[len(root):]
-    py = pypinyin_func(root, style=Style.TONE, heteronym=False, errors='default')
+    style = Style.NORMAL if output_no_tone else Style.TONE
+    py = pypinyin_func(root, style=style, heteronym=False, errors='default')
     return (py[0][0] if py else root) + suffix
 SP_PATTERN = re.compile(r"^(ch|sh|zh|[b-df-hj-np-tv-z]?)([a-zv]+)$")
 CHINESE_PATTERN = re.compile(r'[^\u4E00-\u9FFF\u3400-\u4DBF\U00020000-\U0002A6DF]+')
@@ -497,11 +498,12 @@ CHINESE_PATTERN = re.compile(r'[^\u4E00-\u9FFF\u3400-\u4DBF\U00020000-\U0002A6DF
 def filter_non_chinese(word: str) -> str:
     return CHINESE_PATTERN.sub('', word)
 
-def pinyin_normal_line(cols: List[str], ignore_non_chinese: bool, py_sep: str) -> Tuple[str, bool]:
+def pinyin_normal_line(cols: List[str], ignore_non_chinese: bool, py_sep: str, output_no_tone: bool = False) -> Tuple[str, bool]:
     src = '\t'.join(cols)
     original_word = cols[0]
     word_for_pinyin = filter_non_chinese(original_word) if ignore_non_chinese else original_word
-    char_py = [p[0] for p in pypinyin_func(word_for_pinyin, style=Style.TONE, heteronym=False, errors='default')]
+    style = Style.NORMAL if output_no_tone else Style.TONE
+    char_py = [p[0] for p in pypinyin_func(word_for_pinyin, style=style, heteronym=False, errors='default')]
 
     if len(cols) == 1:
         newline = '\t'.join([original_word, py_sep.join(char_py)])
@@ -523,16 +525,17 @@ def pinyin_normal_line(cols: List[str], ignore_non_chinese: bool, py_sep: str) -
     newline = '\t'.join(new_cols)
     return newline, (newline != src)
 
-def pinyin_userdb_line(cols: List[str], ignore_non_chinese: bool, py_sep: str) -> Tuple[str, bool]:
+def pinyin_userdb_line(cols: List[str], ignore_non_chinese: bool, py_sep: str, output_no_tone: bool = False) -> Tuple[str, bool]:
     src = '\t'.join(cols)
     segs = cols[0].split()
     original_word = cols[1]
     word_for_pinyin = filter_non_chinese(original_word) if ignore_non_chinese else original_word
-    char_py = [p[0] for p in pypinyin_func(word_for_pinyin, style=Style.TONE, heteronym=False, errors='default')]
+    style = Style.NORMAL if output_no_tone else Style.TONE
+    char_py = [p[0] for p in pypinyin_func(word_for_pinyin, style=style, heteronym=False, errors='default')]
 
     new_segs = []
     for i, seg in enumerate(segs):
-        base_py = char_py[i] if i < len(char_py) else tone_mark(seg)
+        base_py = char_py[i] if i < len(char_py) else tone_mark(seg, output_no_tone)
         root    = re.split(AUX_SEP_REGEX, seg)[0]
         suffix  = seg[len(root):]
         new_segs.append(base_py + suffix)
@@ -543,7 +546,8 @@ def pinyin_userdb_line(cols: List[str], ignore_non_chinese: bool, py_sep: str) -
     return newline, (newline != src)
 
 def pinyin_process_single_file(
-    src: str, dst: str, skip_set: Set[str], ignore_non_chinese: bool, py_sep: str, 
+    src: str, dst: str, skip_set: Set[str], ignore_non_chinese: bool, py_sep: str,
+    output_no_tone: bool = False,
     should_stop: Optional[Callable[[], bool]] = None,
     progress_cb: Optional[Callable[[int], None]] = None # [新增参数]
 ) -> Tuple[int, int]:
@@ -573,9 +577,9 @@ def pinyin_process_single_file(
 
             cols = line.split('\t')
             if userdb and len(cols) >= 3:
-                newline, ch = pinyin_userdb_line(cols, ignore_non_chinese, py_sep)
+                newline, ch = pinyin_userdb_line(cols, ignore_non_chinese, py_sep, output_no_tone)
             else:
-                newline, ch = pinyin_normal_line(cols, ignore_non_chinese, py_sep)
+                newline, ch = pinyin_normal_line(cols, ignore_non_chinese, py_sep, output_no_tone)
             if ch: changed += 1
             d.write(newline + '\n')
     return total, changed
@@ -907,6 +911,7 @@ class JobArgs:
     skip_set: Optional[Set[str]] = None
     ignore_non_chinese: bool = True
     py_sep: Optional[str] = None
+    output_no_tone: bool = False # 刷拼音是否输出无声调
     sp_schema: Optional[str] = None # 双拼转换方案key
     sp_out_sep: Optional[str] = None #双拼转换输出分隔符
     sp_is_jianma: bool = False # 是否输出简码
@@ -1017,7 +1022,7 @@ class Worker(QThread):
                 try:
                     # 传入回调函数
                     if op == 1:
-                        t, c = pinyin_process_single_file(src, temp_dst, skip_set, self.args.ignore_non_chinese, self.args.py_sep, self.should_stop, progress_cb=_global_progress_cb)
+                        t, c = pinyin_process_single_file(src, temp_dst, skip_set, self.args.ignore_non_chinese, self.args.py_sep, self.args.output_no_tone, self.should_stop, progress_cb=_global_progress_cb)
                     elif op == 2:
                         t, c = aux_process_single_file(src, temp_dst, self.aux_map or {}, self.args.ignore_non_chinese, self.should_stop, progress_cb=_global_progress_cb)
                     elif op == 3:
@@ -2578,6 +2583,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         self.detected_server = ""
 
         self.ignore_non_chinese_cb_py = QCheckBox("忽略词组中的非汉字字符（如连字符、空格等）")
+        self.no_tone_cb_py = QCheckBox("输出无声调")
         self.ignore_non_chinese_cb_aux = QCheckBox("忽略词组中的非汉字字符（如连字符、空格等）")
         
         self.menubar = QMenuBar(self)
@@ -3288,9 +3294,11 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         lay = QVBoxLayout(w)
         hbox1 = QHBoxLayout()
         hbox1.addWidget(self.ignore_non_chinese_cb_py)
+        hbox1.addWidget(self.no_tone_cb_py)
         hbox1.addStretch(1)
         lay.addLayout(hbox1)
         self.ignore_non_chinese_cb_py.setChecked(True)
+        self.no_tone_cb_py.setChecked(False)
 
         hbox2 = QHBoxLayout()
         sep_lbl = QLabel("拼音分隔符：")
@@ -3302,7 +3310,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         hbox2.addStretch(1)
         lay.addLayout(hbox2)
 
-        g = QGroupBox("刷拼音参数（可选自定义拼音目录，目录内txt文本格式为：词组\\t拼音）")
+        g = QGroupBox("刷拼音参数（可选自定义拼音目录，目录内txt文本格式为：词组\\t拼音，支持用户词库txt格式直刷）")
         f = QFormLayout(g)
         self.in_edit_py = PathEdit("拖拽或选择：词表文件/目录（.txt/.yaml）")
         self.out_edit_py = PathEdit("拖拽或选择：输出文件/目录")
@@ -3368,7 +3376,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         return w
 
     def _convert_text_to_pinyin(self):
-        """将左侧多行汉字转换为带声调、空格分隔的拼音，并保留原换行。"""
+        """将左侧多行汉字转换为拼音，并根据“输出无声调”选项决定声调格式。"""
         source = self.quick_py_input.toPlainText()
         if not source:
             self.quick_py_output.clear()
@@ -3383,6 +3391,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
             load_custom_pinyin(custom_dir, self.log.appendPlainText)
 
         try:
+            style = Style.NORMAL if self.no_tone_cb_py.isChecked() else Style.TONE
             converted_lines = []
             for line in source.split("\n"):
                 if not line:
@@ -3390,7 +3399,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
                     continue
                 result = pypinyin_func(
                     line,
-                    style=Style.TONE,
+                    style=style,
                     heteronym=False,
                     errors='default'
                 )
@@ -3870,7 +3879,8 @@ class MainWin(AdvancedSettingsMixin, QWidget):
             args = JobArgs(op=1, in_path=self.in_edit_py.text().strip(), out_path=self.out_edit_py.text().strip(),
                            custom_dir=self.custom_dir_edit.text().strip() or None,
                            skip_set={x.strip() for x in self.skip_edit.toPlainText().splitlines() if x.strip()} if os.path.isdir(self.in_edit_py.text()) else set(DEFAULT_SKIP_SET),
-                           ignore_non_chinese=self.ignore_non_chinese_cb_py.isChecked(), py_sep=self.py_sep_edit.text() or " ")
+                           ignore_non_chinese=self.ignore_non_chinese_cb_py.isChecked(), py_sep=self.py_sep_edit.text() or " ",
+                           output_no_tone=self.no_tone_cb_py.isChecked())
         elif cur == 2: # 刷辅助码
             if not self.aux_file_edit.text(): QMessageBox.warning(self, "提示", "请选择辅助码文件"); return
             args = JobArgs(op=2, in_path=self.in_edit_aux.text().strip(), out_path=self.out_edit_aux.text().strip(),
@@ -3941,6 +3951,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
     def save_settings(self):
         s = self.settings
         s.setValue('py/ignore_non_chinese', self.ignore_non_chinese_cb_py.isChecked())
+        s.setValue('py/output_no_tone', self.no_tone_cb_py.isChecked())
         s.setValue('aux/ignore_non_chinese', self.ignore_non_chinese_cb_aux.isChecked())
         s.setValue('py/in', self.in_edit_py.text().strip())
         s.setValue('py/out', self.out_edit_py.text().strip())
@@ -3976,6 +3987,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
     def restore_settings(self):
         s = self.settings
         self.ignore_non_chinese_cb_py.setChecked(s.value('py/ignore_non_chinese', True, bool))
+        self.no_tone_cb_py.setChecked(s.value('py/output_no_tone', False, bool))
         self.ignore_non_chinese_cb_aux.setChecked(s.value('aux/ignore_non_chinese', True, bool))
         self.in_edit_py.setText(s.value('py/in', ''))
         self.out_edit_py.setText(s.value('py/out', ''))
@@ -4057,6 +4069,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         self.settings.clear()
         # UI复位
         self.ignore_non_chinese_cb_py.setChecked(True)
+        self.no_tone_cb_py.setChecked(False)
         self.in_edit_py.clear()
         self.out_edit_py.clear()
         self.custom_dir_edit.clear()
