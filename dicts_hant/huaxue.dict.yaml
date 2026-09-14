@@ -1217,6 +1217,7 @@ sort: by_weight
 鈰原子	shì yuán zǐ	84
 叔丁苯	shū dīng běn	288
 雙氯酚	shuāng lǜ fēn	236
+雙氯芬	shuāng lǜ fēn	197
 水銻礬	shuǐ tī fán	45
 水鎢華	shuǐ wū huá	38
 水鈾礬	shuǐ yóu fán	45
@@ -10752,7 +10753,7 @@ sort: by_weight
 丙烯酸酯夾板	bǐng xī suān zhǐ jiā bǎn	10
 丙烯酸酯甲冠	bǐng xī suān zhǐ jiǎ guān	10
 丙烯酸酯磨鑽	bǐng xī suān zhǐ mó zuān	10
-丙烯酸酯填塞	bǐng xī suān zhǐ tián sāi	10
+丙烯酸酯填塞	bǐng xī suān zhǐ tián sè	10
 丙烯酰胺中毒	bǐng xī xiān àn zhòng dú	10
 丙烯酰芬太尼	bǐng xī xiān fēn tài ní	10
 丙烯酰甘氨酸	bǐng xī xiān gān ān suān	10
@@ -13048,7 +13049,7 @@ sort: by_weight
 六氟銻酸三碘	liù fú tī suān sān diǎn	10
 六氟乙酰丙酮	liù fú yǐ xiān bǐng tóng	10
 硫化銨水溶液	liú huà ǎn shuǐ róng yè	10
-硫化鈉薄荷腦	liú huà nà bò hé nǎo	10
+硫化鈉薄荷腦	liú huà nà bò he nǎo	10
 硫化鈉高位槽	liú huà nà gāo wèi cáo	12
 硫化鈉溶解槽	liú huà nà róng jiě cáo	12
 硫化氫分析盒	liú huà qīng fēn xī hé	10
@@ -13999,9 +14000,6 @@ sort: by_weight
 雙胍辛乙酸鹽	shuāng guā xīn yǐ suān yán	10
 雙硅酸鹽礦物	shuāng guī suān yán kuàng wù	10
 雙鏈核糖核酸	shuāng liàn hé táng hé suān	10
-雙氯芬酸鉀栓	shuāng lǜ fēn suān jiǎ shuān	10
-雙氯芬酸鈉栓	shuāng lǜ fēn suān nà shuān	10
-雙氯酚酸鈉栓	shuāng lǜ fēn suān nà shuān	10
 雙氯青黴素鈉	shuāng lǜ qīng méi sù nà	10
 雙氰乙基苯胺	shuāng qíng yǐ jī běn àn	10
 雙氰乙氧基苯	shuāng qíng yǐ yǎng jī běn	10
@@ -17508,5 +17506,5 @@ sort: by_weight
 過氧化物和超氧化物	guò yǎng huà wù hé chāo yǎng huà wù	10
 水印輥骨架二氧化錳	shuǐ yìn gǔn gǔ jià èr yǎng huà měng	10
 新制氫氧化銅懸濁液	xīn zhì qīng yǎng huà tóng xuán zhuó yè	10
-椰油酰胺丙基甜菜鹼	yē yóu xiān àn bǐng jī tián cài jiǎn	yē yóu xiān àn bǐng jī tián cài jiǎn	1
-月桂醇聚醚硫酸酯鈉	yuè guì chún jù mí liú suān zhǐ nà	yuè guì chún jù mí liú suān zhǐ nà	1
+椰油酰胺丙基甜菜鹼	yē yóu xiān àn bǐng jī tián cài jiǎn	1
+月桂醇聚醚硫酸酯鈉	yuè guì chún jù mí liú suān zhǐ nà	1

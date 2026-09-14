@@ -3283,6 +3283,7 @@ sort: by_weight
 常	cháng	36860
 長	cháng	36122
 場	chǎng	14815
+場	cháng	5159
 嘗	cháng	2836
 唱	chàng	2779
 廠	chǎng	2027
@@ -3318,7 +3319,6 @@ sort: by_weight
 瑺	cháng	184
 淐	chāng	168
 焻	chàng	166
-場	cháng	159
 琩	chāng	154
 倘	cháng	152
 倡	chāng	149
@@ -16290,6 +16290,7 @@ sort: by_weight
 僦	jiù	329
 氿	jiǔ	314
 㠇	jiù	304
+蹴	jiù	301
 柾	jiù	245
 韮	jiǔ	220
 樛	jiū	214
@@ -25884,11 +25885,11 @@ sort: by_weight
 偏	piān	15400
 篇	piān	15092
 片	piān	14892
-便	pián	14594
 騙	piàn	8829
+駢	pián	5390
+便	pián	4594
+諞	piǎn	1351
 翩	piān	566
-駢	pián	390
-諞	piǎn	351
 胼	pián	333
 蹁	pián	276
 犏	piān	230
@@ -26469,6 +26470,7 @@ sort: by_weight
 器	qì	19132
 齊	qí	11441
 起	qǐ	10868
+騎	qí	9749
 祁	qí	1946
 期	qī	933
 戚	qī	926
@@ -26478,7 +26480,6 @@ sort: by_weight
 啓	qǐ	811
 棄	qì	799
 旗	qí	767
-騎	qí	749
 棋	qí	746
 欺	qī	727
 歧	qí	645
@@ -37369,11 +37370,11 @@ sort: by_weight
 𪂼	xiāng	1
 𣚺	xiàng	1
 小	xiǎo	305330
-效	xiào	3542
+笑	xiào	39452
+效	xiào	13542
 消	xiāo	3305
 校	xiào	3238
 銷	xiāo	2582
-笑	xiào	2452
 曉	xiǎo	781
 肖	xiào	741
 孝	xiào	703
@@ -42962,6 +42963,7 @@ sort: by_weight
 園	yuán	3489
 願	yuàn	3314
 圓	yuán	1188
+媛	yuán	1120
 援	yuán	747
 怨	yuàn	742
 苑	yuàn	729
@@ -43010,7 +43012,6 @@ sort: by_weight
 棩	yuān	139
 鋺	yuǎn	133
 圜	yuán	124
-媛	yuán	120
 猨	yuán	115
 囦	yuān	111
 謜	yuán	106

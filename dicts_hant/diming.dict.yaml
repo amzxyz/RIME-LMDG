@@ -1666,8 +1666,8 @@ sort: by_weight
 寶壇鄉	bǎo tán xiāng	10
 保田鎮	bǎo tián zhèn	10
 保亭縣	bǎo tíng xiàn	170
-寶町站	bǎo tīng zhàn	356
-保町站	bǎo tīng zhàn	201
+寶町站	bǎo tǐng zhàn	356
+保町站	bǎo tǐng zhàn	201
 包頭站	bāo tóu zhàn	549
 包屯鎮	bāo tún zhèn	10
 寶圩鄉	bǎo wéi xiāng	10
@@ -1881,7 +1881,7 @@ sort: by_weight
 本寧堡	běn níng bǎo	252
 奔牛鎮	bēn niú zhèn	10
 本塔鄉	běn tǎ xiāng	10
-本町站	běn tīng zhàn	580
+本町站	běn tǐng zhàn	580
 本溪縣	běn xī xiàn	168
 本寨鎮	běn zhài zhèn	10
 笨珍縣	bèn zhēn xiàn	125
@@ -3245,7 +3245,7 @@ sort: by_weight
 穿石鎮	chuān shí zhèn	10
 船灘鎮	chuán tān zhèn	10
 船塘鎮	chuán táng zhèn	10
-川町站	chuān tīng zhàn	428
+川町站	chuān tǐng zhàn	428
 船灣鎮	chuán wān zhèn	10
 川王鎮	chuān wáng zhèn	10
 船溪鄉	chuán xī xiāng	10
@@ -3447,6 +3447,7 @@ sort: by_weight
 大埔鎮	dà bù zhèn	91
 大布鎮	dà bù zhèn	79
 大才鄉	dà cái xiāng	23
+大倉鎮	dà cāng zhèn	84
 大槽鄉	dà cáo xiāng	178
 大草站	dà cǎo zhàn	202
 大曹鎮	dà cáo zhèn	96
@@ -3854,7 +3855,7 @@ sort: by_weight
 大畑站	dà tián zhàn	213
 大田鎮	dà tián zhèn	10
 大庭站	dà tíng zhàn	446
-大町站	dà tīng zhàn	84
+大町站	dà tǐng zhàn	84
 大同區	dà tóng qū	210
 大通區	dà tōng qū	117
 大通縣	dà tōng xiàn	232
@@ -6059,7 +6060,7 @@ sort: by_weight
 高場鎮	gāo chǎng zhèn	10
 高車鄉	gāo chē xiāng	10
 藁城區	gǎo chéng qū	188
-高城町	gāo chéng tīng	364
+高城町	gāo chéng tǐng	364
 藁城縣	gǎo chéng xiàn	134
 高塍鎮	gāo chéng zhèn	10
 高城鎮	gāo chéng zhèn	10
@@ -6228,7 +6229,7 @@ sort: by_weight
 高耀鎮	gāo yào zhèn	10
 高野山	gāo yě shān	38
 高葉塘	gāo yè táng	315
-高野町	gāo yě tīng	392
+高野町	gāo yě tǐng	392
 高椅嶺	gāo yǐ lǐng	35
 高邑縣	gāo yì xiàn	158
 高椅鄉	gāo yǐ xiāng	682
@@ -6238,8 +6239,8 @@ sort: by_weight
 高郵縣	gāo yóu xiàn	128
 高臾鎮	gāo yú zhèn	304
 高峪鎮	gāo yù zhèn	274
-高遠町	gāo yuǎn tīng	518
-高原町	gāo yuán tīng	201
+高遠町	gāo yuǎn tǐng	518
+高原町	gāo yuán tǐng	201
 高院鎮	gāo yuàn zhèn	10
 高月台	gāo yuè tái	324
 高增鄉	gāo zēng xiāng	10
@@ -6598,7 +6599,7 @@ sort: by_weight
 古田站	gǔ tián zhàn	342
 古田鎮	gǔ tián zhèn	10
 姑田鎮	gū tián zhèn	10
-古町站	gǔ tīng zhàn	284
+古町站	gǔ tǐng zhàn	284
 顧圖河	gù tú hé	189
 古魏鎮	gǔ wèi zhèn	10
 古文鄉	gǔ wén xiāng	10
@@ -9351,7 +9352,7 @@ sort: by_weight
 江北橋	jiāng běi qiáo	261
 江北區	jiāng běi qū	257
 江背山	jiāng bèi shān	189
-江北町	jiāng běi tīng	190
+江北町	jiāng běi tǐng	190
 江北縣	jiāng běi xiàn	158
 江北鄉	jiāng běi xiāng	159
 江北站	jiāng běi zhàn	495
@@ -9365,7 +9366,7 @@ sort: by_weight
 江布爾	jiāng bù ěr	486
 江埠鄉	jiāng bù xiāng	276
 江布州	jiāng bù zhōu	76
-江差町	jiāng chà tīng	369
+江差町	jiāng chà tǐng	369
 江場路	jiāng chǎng lù	238
 蔣場鎮	jiǎng chǎng zhèn	10
 江城村	jiāng chéng cūn	127
@@ -10153,7 +10154,7 @@ sort: by_weight
 金田鄉	jīn tián xiāng	159
 金田站	jīn tián zhàn	180
 金田鎮	jīn tián zhèn	163
-金町站	jīn tīng zhàn	405
+金町站	jīn tǐng zhàn	405
 金庭鎮	jīn tíng zhèn	327
 金土村	jīn tǔ cūn	94
 金屯村	jīn tún cūn	69
@@ -10352,7 +10353,7 @@ sort: by_weight
 景泰站	jǐng tài zhàn	756
 景臺鎮	jǐng tái zhèn	10
 淨潭鄉	jìng tán xiāng	10
-井町站	jǐng tīng zhàn	353
+井町站	jǐng tǐng zhàn	353
 井頭鎮	jǐng tóu zhèn	10
 逕頭鎮	jìng tóu zhèn	10
 靖位鄉	jìng wèi xiāng	10
@@ -14974,7 +14975,7 @@ sort: by_weight
 南唐鄉	nán táng xiāng	10
 南塘鎮	nán táng zhèn	254
 南田鎮	nán tián zhèn	10
-南町站	nán tīng zhàn	279
+南町站	nán tǐng zhàn	279
 南通縣	nán tōng xiàn	148
 南通站	nán tōng zhàn	508
 南通鎮	nán tōng zhèn	10
@@ -16864,7 +16865,7 @@ sort: by_weight
 日吉站	rì jí zhàn	450
 日朗鄉	rì lǎng xiāng	10
 日松鄉	rì sōng xiāng	10
-日町站	rì tīng zhàn	468
+日町站	rì tǐng zhàn	468
 日通鄉	rì tōng xiāng	10
 日土縣	rì tǔ xiàn	160
 日土鎮	rì tǔ zhèn	10
@@ -18208,7 +18209,7 @@ sort: by_weight
 石梯鎮	shí tī zhèn	10
 石田站	shí tián zhàn	346
 石鐵鄉	shí tiě xiāng	10
-市町村	shì tīng cūn	471
+市町村	shì tǐng cūn	471
 石亭鎮	shí tíng zhèn	10
 市同鄉	shì tóng xiāng	10
 石頭鎮	shí tou zhèn	331
@@ -18540,7 +18541,7 @@ sort: by_weight
 水滿鄉	shuǐ mǎn xiāng	10
 水廟鎮	shuǐ miào zhèn	10
 水鳴鎮	shuǐ míng zhèn	10
-水磨鎮	shuǐ mó zhèn	10
+水磨鎮	shuǐ mò zhèn	10
 水南鎮	shuǐ nán zhèn	10
 水坪鎮	shuǐ píng zhèn	10
 水坡鎮	shuǐ pō zhèn	10
@@ -19159,7 +19160,6 @@ sort: by_weight
 太倉市	tài cāng shì	10
 太倉縣	tài cāng xiàn	100
 太倉站	tài cāng zhàn	346
-大倉鎮	tài cāng zhèn	84
 太昌鎮	tài chāng zhèn	10
 臺陳鎮	tái chén zhèn	10
 台城鄉	tái chéng xiāng	10
@@ -19700,7 +19700,7 @@ sort: by_weight
 天堂堡	tiān táng bǎo	207
 天堂鎮	tiān táng zhèn	10
 天塘鎮	tiān táng zhèn	10
-田町站	tián tīng zhàn	558
+田町站	tián tǐng zhàn	558
 田頭鄉	tián tóu xiāng	10
 田頭鎮	tián tóu zhèn	10
 田妥鎮	tián tuǒ zhèn	10
@@ -19791,7 +19791,7 @@ sort: by_weight
 鐵溪鎮	tiě xī zhèn	10
 鐵營鎮	tiě yíng zhèn	10
 鐵湧鎮	tiě yǒng zhèn	10
-町店鎮	tīng diàn zhèn	10
+町店鎮	tǐng diàn zhèn	10
 停洞鎮	tíng dòng zhèn	10
 亭湖區	tíng hú qū	150
 亭江鎮	tíng jiāng zhèn	10
@@ -19804,7 +19804,7 @@ sort: by_weight
 廷坪鄉	tíng píng xiāng	10
 汀坪鄉	tīng píng xiāng	10
 停前鎮	tíng qián zhèn	10
-町田站	tīng tián zhàn	482
+町田站	tǐng tián zhàn	482
 汀溪鄉	tīng xī xiāng	10
 汀溪鎮	tīng xī zhèn	10
 汀州鎮	tīng zhōu zhèn	10
@@ -22648,7 +22648,7 @@ sort: by_weight
 新田鎮	xīn tián zhèn	10
 新添鎮	xīn tiān zhèn	10
 新天鎮	xīn tiān zhèn	10
-新町站	xīn tīng zhàn	472
+新町站	xīn tǐng zhàn	472
 新桐鄉	xīn tóng xiāng	10
 新屯鄉	xīn tún xiāng	10
 新屯鎮	xīn tún zhèn	10
@@ -24737,7 +24737,7 @@ sort: by_weight
 淤上鄉	yū shàng xiāng	10
 榆社縣	yú shè xiàn	155
 玉舍鎮	yù shě zhèn	10
-餘市町	yú shì tīng	346
+餘市町	yú shì tǐng	346
 玉石站	yù shí zhàn	130
 魚市鎮	yú shì zhèn	10
 玉樹市	yù shù shì	105
@@ -24900,7 +24900,7 @@ sort: by_weight
 源潭站	yuán tán zhàn	220
 源潭鎮	yuán tán zhèn	10
 元潭鎮	yuán tán zhèn	10
-原町站	yuán tīng zhàn	468
+原町站	yuán tǐng zhàn	468
 元通站	yuán tōng zhàn	410
 元通鎮	yuán tōng zhèn	10
 院頭鎮	yuàn tóu zhèn	10
@@ -26242,7 +26242,7 @@ sort: by_weight
 中天鎮	zhōng tiān zhèn	10
 中鐵鄉	zhōng tiě xiāng	10
 中亭鄉	zhōng tíng xiāng	10
-仲町站	zhòng tīng zhàn	306
+仲町站	zhòng tǐng zhàn	306
 中童鎮	zhōng tóng zhèn	10
 冢頭鎮	zhǒng tóu zhèn	10
 中疃鎮	zhōng tuǎn zhèn	10
@@ -29377,7 +29377,7 @@ sort: by_weight
 北左良村	běi zuǒ liáng cūn	10
 本布圖村	běn bù tú cūn	10
 本布圖鎮	běn bù tú zhèn	10
-本町美鄉	běn tīng měi xiāng	10
+本町美鄉	běn tǐng měi xiāng	10
 本溪本溪	běn xī běn xī	10
 本溪桓仁	běn xī huán rén	10
 本溪路站	běn xī lù zhàn	212
@@ -31307,7 +31307,7 @@ sort: by_weight
 初山別村	chū shān bié cūn	10
 出石家莊	chū shí jiā zhuāng	10
 褚堂街道	chǔ táng jiē dào	10
-出町柳站	chū tīng liǔ zhàn	324
+出町柳站	chū tǐng liǔ zhàn	324
 初頭朗鎮	chū tóu lǎng zhèn	10
 出頭嶺鎮	chū tóu lǐng zhèn	10
 楚溈社區	chǔ wéi shè qū	50
@@ -31873,6 +31873,7 @@ sort: by_weight
 大堡子村	dà bǔ zi cūn	10
 大堡子鎮	dà bǔ zi zhèn	10
 大菜園村	dà cài yuán cūn	10
+大倉蓋鎮	dà cāng gài zhèn	10
 大草房村	dà cǎo fáng cūn	10
 大操魯村	dà cāo lǔ cūn	10
 大草坡村	dà cǎo pō cūn	10
@@ -34695,7 +34696,7 @@ sort: by_weight
 東雙營村	dōng shuāng yíng cūn	10
 東水港村	dōng shuǐ gǎng cūn	10
 東水溝村	dōng shuǐ gōu cūn	10
-東水磨村	dōng shuǐ mó cūn	10
+東水磨村	dōng shuǐ mò cūn	10
 東水坡村	dōng shuǐ pō cūn	10
 東水渠村	dōng shuǐ qú cūn	10
 東水泉村	dōng shuǐ quán cūn	10
@@ -35675,7 +35676,7 @@ sort: by_weight
 爾覺西鄉	ěr jué xī xiāng	10
 二克淺鎮	èr kè qiǎn zhèn	10
 耳口林場	ěr kǒu lín chǎng	10
-二瀨町鎮	èr lài tīng zhèn	10
+二瀨町鎮	èr lài tǐng zhèn	10
 二郎壩鄉	èr láng bà xiāng	10
 二郎壩鎮	èr láng bà zhèn	10
 二郎街道	èr láng jiē dào	10
@@ -36839,7 +36840,7 @@ sort: by_weight
 甘什黎村	gān shí lí cūn	10
 甘樹灣村	gān shù wān cūn	10
 甘水坊村	gān shuǐ fāng cūn	10
-幹水磨村	gàn shuǐ mó cūn	10
+幹水磨村	gàn shuǐ mò cūn	10
 甘肅白銀	gān sù bái yín	10
 甘肅成縣	gān sù chéng xiàn	10
 甘肅定西	gān sù dìng xī	10
@@ -43751,7 +43752,7 @@ sort: by_weight
 錦祥社區	jǐn xiáng shè qū	130
 金象社區	jīn xiàng shè qū	4
 浸校塘村	jìn xiào táng cūn	10
-今小町站	jīn xiǎo tīng zhàn	225
+今小町站	jīn xiǎo tǐng zhàn	225
 金新街道	jīn xīn jiē dào	10
 金辛莊村	jīn xīn zhuāng cūn	10
 金杏燈村	jīn xìng dēng cūn	10
@@ -46219,7 +46220,7 @@ sort: by_weight
 亮甲臺鄉	liàng jiǎ tái xiāng	10
 亮甲臺鎮	liàng jiǎ tái zhèn	10
 梁家潭鄉	liáng jiā tán xiāng	10
-梁家町村	liáng jiā tīng cūn	10
+梁家町村	liáng jiā tǐng cūn	10
 梁家疃村	liáng jiā tuǎn cūn	10
 梁家屯村	liáng jiā tún cūn	10
 梁家灣村	liáng jiā wān cūn	10
@@ -49983,7 +49984,7 @@ sort: by_weight
 沐石河鎮	mù shí hé zhèn	10
 木梳灣村	mù shū wān cūn	10
 木梳楊村	mù shū yáng cūn	10
-木太町站	mù tài tīng zhàn	180
+木太町站	mù tài tǐng zhàn	180
 木塘垸鄉	mù táng yuàn xiāng	10
 木塘垸鎮	mù táng yuàn zhèn	10
 慕田峪村	mù tián yù cūn	10
@@ -51633,7 +51634,7 @@ sort: by_weight
 農場街道	nóng chǎng jiē dào	10
 農村社區	nóng cūn shè qū	774
 農大路站	nóng dà lù zhàn	144
-濃大町站	nóng dà tīng zhàn	374
+濃大町站	nóng dà tǐng zhàn	374
 濃洄街道	nóng huí jiē dào	10
 農家魚莊	nóng jiā yú zhuāng	10
 濃江農場	nóng jiāng nóng chǎng	10
@@ -54056,7 +54057,7 @@ sort: by_weight
 泉水坳村	quán shuǐ ào cūn	10
 泉水溝村	quán shuǐ gōu cūn	10
 泉水街道	quán shuǐ jiē dào	10
-泉水磨村	quán shuǐ mó cūn	10
+泉水磨村	quán shuǐ mò cūn	10
 泉水寺村	quán shuǐ sì cūn	10
 泉水頭村	quán shuǐ tóu cūn	10
 泉水灣村	quán shuǐ wān cūn	10
@@ -56133,6 +56134,7 @@ sort: by_weight
 時村社區	shí cūn shè qū	4
 時村營鄉	shí cūn yíng xiāng	10
 施厝坪莊	shī cuò píng zhuāng	10
+石大倉鄉	shí dà cāng xiāng	10
 石大關鄉	shí dà guān xiāng	10
 石大關站	shí dà guān zhàn	45
 師大社區	shī dà shè qū	189
@@ -56792,7 +56794,6 @@ sort: by_weight
 史塔罕堡	shǐ tǎ hǎn bǎo	10
 石塔河村	shí tǎ hé cūn	10
 石塔莊村	shí tǎ zhuāng cūn	10
-石大倉鄉	shí tài cāng xiāng	10
 石臺溝村	shí tái gōu cūn	10
 石太山村	shí tài shān cūn	10
 石臺寺村	shí tái sì cūn	10
@@ -57321,7 +57322,7 @@ sort: by_weight
 雙水道站	shuāng shuǐ dào zhàn	76
 雙水街道	shuāng shuǐ jiē dào	10
 雙水井村	shuāng shuǐ jǐng cūn	10
-雙水磨村	shuāng shuǐ mó cūn	10
+雙水磨村	shuāng shuǐ mò cūn	10
 雙寺社區	shuāng sì shè qū	99
 雙蘇堡村	shuāng sū bǎo cūn	10
 雙塔街道	shuāng tǎ jiē dào	10
@@ -57466,20 +57467,20 @@ sort: by_weight
 水碼頭村	shuǐ mǎ tóu cūn	10
 水門口村	shuǐ mén kǒu cūn	10
 水門頭村	shuǐ mén tóu cūn	10
-水磨壩村	shuǐ mó bà cūn	10
+水磨壩村	shuǐ mò bà cūn	10
 水磨溝村	shuǐ mó gōu cūn	10
 水磨溝區	shuǐ mó gōu qū	10
 水磨溝鄉	shuǐ mó gōu xiāng	10
 水磨溝鎮	shuǐ mó gōu zhèn	10
-水磨古鎮	shuǐ mó gǔ zhèn	10
-水磨河村	shuǐ mó hé cūn	10
-水磨口村	shuǐ mó kǒu cūn	10
-水磨坪村	shuǐ mó píng cūn	10
-水磨山村	shuǐ mó shān cūn	10
-水磨社區	shuǐ mó shè qū	50
-水磨灘村	shuǐ mó tān cūn	10
-水磨頭村	shuǐ mó tóu cūn	10
-水磨灣村	shuǐ mó wān cūn	10
+水磨古鎮	shuǐ mò gǔ zhèn	10
+水磨河村	shuǐ mò hé cūn	10
+水磨口村	shuǐ mò kǒu cūn	10
+水磨坪村	shuǐ mò píng cūn	10
+水磨山村	shuǐ mò shān cūn	10
+水磨社區	shuǐ mò shè qū	50
+水磨灘村	shuǐ mò tān cūn	10
+水磨頭村	shuǐ mò tóu cūn	10
+水磨灣村	shuǐ mò wān cūn	10
 水木社區	shuǐ mù shè qū	513
 水南街道	shuǐ nán jiē dào	10
 水南圩鄉	shuǐ nán wéi xiāng	10
@@ -58546,7 +58547,6 @@ sort: by_weight
 臺北中山	tái běi zhōng shān	10
 臺北中正	tái běi zhōng zhèng	10
 太本站鎮	tài běn zhàn zhèn	10
-大倉蓋鎮	tài cāng gài zhèn	10
 台城街道	tái chéng jiē dào	10
 太春溝村	tài chūn gōu cūn	10
 臺東街道	tái dōng jiē dào	10
@@ -59755,25 +59755,25 @@ sort: by_weight
 鐵營子村	tiě yíng zi cūn	10
 鐵友街道	tiě yǒu jiē dào	10
 鐵峪鋪鎮	tiě yù pù zhèn	10
-町百冢村	tīng bǎi zhǒng cūn	10
+町百冢村	tǐng bǎi zhǒng cūn	10
 亭店社區	tíng diàn shè qū	4
-町鶴居村	tīng hè jū cūn	10
+町鶴居村	tǐng hè jū cūn	10
 停河鋪鄉	tíng hé pù xiāng	10
 亭湖新區	tíng hú xīn qū	10
-町吉和村	tīng jí hé cūn	10
-町京瀨村	tīng jīng lài cūn	10
+町吉和村	tǐng jí hé cūn	10
+町京瀨村	tǐng jīng lài cūn	10
 汀流河鎮	tīng liú hé zhèn	10
-町米澤村	tīng mǐ zé cūn	10
+町米澤村	tǐng mǐ zé cūn	10
 亭山橋村	tíng shān qiáo cūn	10
-町山佐村	tīng shān zuǒ cūn	10
-町十和村	tīng shí hé cūn	10
+町山佐村	tǐng shān zuǒ cūn	10
+町十和村	tǐng shí hé cūn	10
 汀水東村	tīng shuǐ dōng cūn	10
 汀泗橋鎮	tīng sì qiáo zhèn	10
 汀棠街道	tīng táng jiē dào	10
 汀田街道	tīng tián jiē dào	10
 停西口村	tíng xī kǒu cūn	10
 停弦渡鎮	tíng xián dù zhèn	10
-町旭志村	tīng xù zhì cūn	10
+町旭志村	tǐng xù zhì cūn	10
 庭洋坂村	tíng yáng bǎn cūn	10
 廷洋坂村	tíng yáng bǎn cūn	10
 停住頭村	tíng zhù tóu cūn	10
@@ -59783,8 +59783,8 @@ sort: by_weight
 亭子巷村	tíng zi xiàng cūn	10
 亭子埡村	tíng zi yā cūn	10
 亭子莊鄉	tíng zi zhuāng xiāng	10
-町佐保村	tīng zuǒ bǎo cūn	10
-町佐世村	tīng zuǒ shì cūn	10
+町佐保村	tǐng zuǒ bǎo cūn	10
+町佐世村	tǐng zuǒ shì cūn	10
 同安街道	tóng ān jiē dào	10
 通安驛鎮	tōng ān yì zhèn	10
 通北街道	tōng běi jiē dào	10
@@ -63529,7 +63529,7 @@ sort: by_weight
 西水東村	xī shuǐ dōng cūn	10
 西水溝村	xī shuǐ gōu cūn	10
 西水界鄉	xī shuǐ jiè xiāng	10
-西水磨村	xī shuǐ mó cūn	10
+西水磨村	xī shuǐ mò cūn	10
 西水泉村	xī shuǐ quán cūn	10
 西水疃村	xī shuǐ tuǎn cūn	10
 西水峪村	xī shuǐ yù cūn	10
@@ -64266,7 +64266,7 @@ sort: by_weight
 下石橋村	xià shí qiáo cūn	10
 下石太鎮	xià shí tài zhèn	10
 下水溝村	xià shuǐ gōu cūn	10
-下水磨村	xià shuǐ mó cūn	10
+下水磨村	xià shuǐ mò cūn	10
 下水頭村	xià shuǐ tóu cūn	10
 下水頭鄉	xià shuǐ tóu xiāng	10
 下水腰村	xià shuǐ yāo cūn	10
@@ -69705,7 +69705,7 @@ sort: by_weight
 原扎佐鎮	yuán zhā zuǒ zhèn	10
 袁紙坊村	yuán zhǐ fāng cūn	10
 遠志山村	yuǎn zhì shān cūn	10
-原之町站	yuán zhī tīng zhàn	320
+原之町站	yuán zhī tǐng zhàn	320
 元洲崗村	yuán zhōu gǎng cūn	10
 原築摩縣	yuán zhù mó xiàn	10
 元莊科村	yuán zhuāng kē cūn	10
@@ -70136,7 +70136,7 @@ sort: by_weight
 寨子灣村	zhài zi wān cūn	10
 寨子新村	zhài zi xīn cūn	10
 宅子楊村	zhái zi yáng cūn	10
-站坂町站	zhàn bǎn tīng zhàn	189
+站坂町站	zhàn bǎn tǐng zhàn	189
 站北街道	zhàn běi jiē dào	10
 站北路站	zhàn běi lù zhàn	117
 站北頭村	zhàn běi tóu cūn	10
@@ -71490,7 +71490,7 @@ sort: by_weight
 至築摩縣	zhì zhù mó xiàn	10
 蜘蛛山鎮	zhī zhū shān zhèn	10
 芝字壩村	zhī zì bà cūn	10
-志佐町莊	zhì zuǒ tīng zhuāng	10
+志佐町莊	zhì zuǒ tǐng zhuāng	10
 忠愛橋鄉	zhōng ài qiáo xiāng	10
 中安街道	zhōng ān jiē dào	10
 中岙張村	zhōng ào zhāng cūn	10
@@ -71786,7 +71786,7 @@ sort: by_weight
 中張莊村	zhōng zhāng zhuāng cūn	10
 中趙甫村	zhōng zhào fǔ cūn	10
 中召莊村	zhōng zhào zhuāng cūn	10
-仲之町站	zhòng zhī tīng zhàn	162
+仲之町站	zhòng zhī tǐng zhàn	162
 忠州街道	zhōng zhōu jiē dào	10
 中州街道	zhōng zhōu jiē dào	10
 中洲街道	zhōng zhōu jiē dào	10
@@ -74559,7 +74559,6 @@ sort: by_weight
 濟北開發區	jì běi kāi fā qū	10
 吉崩崗街道	jí bēng gǎng jiē dào	10
 機場路街道	jī chǎng lù jiē dào	10
-祭城路街道	jì chéng lù jiē dào	10
 吉爾嘎朗鎮	jí ěr gā lǎng zhèn	10
 吉爾格郎鄉	jí ěr gé láng xiāng	10
 吉格斯太鎮	jí gé sī tài zhèn	10
@@ -77781,6 +77780,7 @@ sort: by_weight
 澤普澤普縣	zé pǔ zé pǔ xiàn	10
 鰂魚涌街道	zéi yú yǒng jiē dào	10
 鮓埠回族鄉	zhǎ bù huí zú xiāng	10
+祭城路街道	zhà chéng lù jiē dào	10
 扎嘎斯台鎮	zhā gā sī tái zhèn	10
 扎賚諾爾區	zhā lài nuò ěr qū	10
 扎蘭營子鎮	zhā lán yíng zi zhèn	10

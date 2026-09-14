@@ -4181,7 +4181,6 @@ sort: by_weight
 簀藻	zé zǎo	58
 澤蛭	zé zhì	97
 賊鷗	zéi ōu	89
-柞木	zhà mù	60
 柵藻	zhà zǎo	93
 柵蛛	zhà zhū	59
 窄螳	zhǎi táng	72
@@ -4429,6 +4428,7 @@ sort: by_weight
 嘴雀	zuǐ què	90
 醉猿	zuì yuán	63
 柞蠶	zuò cán	76
+柞木	zuò mù	60
 左鮃	zuǒ píng	95
 阿波鰍	ā bō qiū	5
 阿波魚	ā bō yú	6
@@ -6333,6 +6333,7 @@ sort: by_weight
 大藨草	dà biāo cǎo	8
 大步甲	dà bù jiǎ	8
 大蠶蛾	dà cán é	6
+大倉鼠	dà cāng shǔ	8
 大草鶯	dà cǎo yīng	4
 達尺蛾	dá chǐ é	7
 大翅薊	dà chì jì	4
@@ -15496,7 +15497,6 @@ sort: by_weight
 太安魚	tài ān yú	154
 鮐鮁魚	tái bà yú	66
 臺巴魚	tái bā yú	60
-大倉鼠	tài cāng shǔ	8
 臺地黃	tái dì huáng	1
 臺龜甲	tái guī jiǎ	4
 苔海綿	tái hǎi mián	7
@@ -20793,13 +20793,13 @@ sort: by_weight
 長葉野桐	cháng yè yě tóng	7
 長葉遠志	cháng yè yuǎn zhì	9
 長葉雲杉	cháng yè yún shān	11
-長葉柞木	cháng yè zhà mù	12
 長葉竹柏	cháng yè zhú bǎi	14
 長葉苧麻	cháng yè zhù má	11
 長葉紫莖	cháng yè zǐ jīng	7
 長葉紫菊	cháng yè zǐ jú	10
 長葉紫菀	cháng yè zǐ wǎn	10
 長葉紫珠	cháng yè zǐ zhū	14
+長葉柞木	cháng yè zuò mù	12
 長銀斧魚	cháng yín fǔ yú	6
 暢遊仙魚	chàng yóu xiān yú	7
 長羽盜龍	cháng yǔ dào lóng	1
@@ -27700,8 +27700,8 @@ sort: by_weight
 尾葉魚藤	wěi yè yú téng	14
 尾葉遠志	wěi yè yuǎn zhì	10
 尾葉越桔	wěi yè yuè jú	7
-尾葉柞木	wěi yè zhà mù	5
 尾葉紫薇	wěi yè zǐ wēi	9
+尾葉柞木	wěi yè zuò mù	5
 僞翼尺蛾	wěi yì chǐ é	1
 僞翼手參	wěi yì shǒu cān	1
 僞魚腥藻	wěi yú xīng zǎo	1
@@ -54398,8 +54398,8 @@ sort: by_weight
 優美瓜狀肢蟲	yōu měi guā zhuàng zhī chóng	1
 有名扁線油鯰	yǒu míng biǎn xiàn yóu nián	1
 尤納氏下口鯰	yóu nà shì xià kǒu nián	1
-猶疑棘隙吸蟲	yóu nǐ jí xì xī chóng	1
 尤斯克毛鼻鯰	yóu sī kè máo bí nián	1
+猶疑棘隙吸蟲	yóu yí jí xì xī chóng	1
 又原氏擬雀鯛	yòu yuán shì nǐ què diāo	1
 遊在深海的魚	yóu zài shēn hǎi de yú	1
 遊走丸川冰魚	yóu zǒu wán chuān bīng yú	1
