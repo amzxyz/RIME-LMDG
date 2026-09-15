@@ -19,7 +19,14 @@ from pypinyin import pinyin, Style, load_phrases_dict, load_single_dict
 
 # 你的词典用什么分隔辅助码？
 
-AUX_SEP_REGEX = r'[;\[]'           # 定义“拼音后缀”分隔符；默认匹配 `;` 与 `[`
+AUX_SEP_REGEX = r'[;\\[]'           # 定义“拼音后缀”分隔符；默认匹配 `;` 与 `[`
+
+# pypinyin 输出模式：
+# True  -> 输出带声调拼音（例如：nǐ）
+# False -> 输出无声调拼音（例如：ni）
+OUTPUT_WITH_TONE = True
+
+PINYIN_STYLE = Style.TONE if OUTPUT_WITH_TONE else Style.NORMAL
 
 # 特殊文件与词首强制读音规则
 
@@ -186,7 +193,7 @@ def tone_mark(seg: str) -> str:
     """seg = 'bin;sc' → 'bīn;sc'（仅根拼音加调）"""
     root   = re.split(AUX_SEP_REGEX, seg)[0]
     suffix = seg[len(root):]
-    py = pinyin(root, style=Style.TONE, heteronym=False, errors='ignore')
+    py = pinyin(root, style=PINYIN_STYLE, heteronym=False, errors='ignore')
     return (py[0][0] if py else root) + suffix
 
 
@@ -253,7 +260,7 @@ def mixed_word_pinyin(word):
                 x[0]
                 for x in pinyin(
                     "".join(han_buffer),
-                    style=Style.TONE,
+                    style=PINYIN_STYLE,
                     heteronym=False
                 )
             ]
