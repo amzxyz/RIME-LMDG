@@ -153,7 +153,7 @@ class FocusPlaceholderPlainTextEdit(QPlainTextEdit):
             super().setPlaceholderText(self._saved_placeholder)
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.3.1"
+TOOL_VERSION = "v3.3.2"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -163,6 +163,8 @@ DEFAULT_SKIP_SET: Set[str] = {
 }
 DEFAULT_WL_REGEX = [
     r"^custom_phrase\.txt$", 
+    r"^custom_phrase\.dict\.yaml$", 
+    r"^wanxiang_abbrev\.dict\.yaml$", 
     r".*userdb$", 
     r".*userdb\.txt", 
     r"sequence.*txt", 
