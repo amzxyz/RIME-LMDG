@@ -1,6 +1,8 @@
 package com.wanxiangupdater
 
+import android.app.Activity
 import android.content.ClipData
+import android.content.pm.ActivityInfo
 import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
@@ -10,6 +12,7 @@ import android.os.Bundle
 import android.os.Environment
 import android.provider.Settings
 import android.util.Log
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -68,15 +71,23 @@ val MorandiDarkGreen = Color(0xFF49814D)
 val MorandiLightGreen = Color(0xFFF0F5F1)
 val MorandiBorder = Color(0xFFA8C7AA)
 
-val DEFAULT_EXCLUDE_RULES = listOf(
-    """^custom_phrase\.txt$""",
-    """.*userdb$""",
-    """.*userdb\.txt""",
-    """sequence.*txt""",
-    """^(?!custom/).*\.custom\.yaml$""",
-    """^user\.yaml$""",
-    """^installation\.yaml$""",
-    """^sync/.*"""
+private val EXCLUDE_RULES_V2 = listOf(
+    """^custom_phrase\.dict\.yaml$""",
+    """^wanxiang_abbrev\.dict\.yaml$"""
+)
+
+val DEFAULT_EXCLUDE_RULES = (
+    listOf(
+        """^custom_phrase\.txt$"""
+    ) + EXCLUDE_RULES_V2 + listOf(
+        """.*userdb$""",
+        """.*userdb\.txt""",
+        """sequence.*txt""",
+        """^(?!custom/).*\.custom\.yaml$""",
+        """^user\.yaml$""",
+        """^installation\.yaml$""",
+        """^sync/.*"""
+    )
 ).joinToString("\n")
 
 private const val WANXIANG_DEBUG_TAG = "WanxiangUpdater"
@@ -576,7 +587,23 @@ fun WanxiangDownloaderApp() {
     var githubToken by remember { mutableStateOf(sharedPref.getString("gh_token", "") ?: "") }
 
     var excludeRulesText by remember {
-        mutableStateOf(sharedPref.getString("exclude_rules", DEFAULT_EXCLUDE_RULES) ?: DEFAULT_EXCLUDE_RULES)
+        val savedRules = sharedPref.getString("exclude_rules", null)
+        val currentRules = savedRules ?: DEFAULT_EXCLUDE_RULES
+
+        // v2：给已有安装只补一次新增保护规则。之后用户仍可自行删除/修改，不会反复强加。
+        val migratedRules = if (!sharedPref.getBoolean("exclude_rules_v2_migrated", false)) {
+            val existing = currentRules.lines().map { it.trim() }.filter { it.isNotBlank() }
+            val merged = (existing + EXCLUDE_RULES_V2.filterNot { it in existing }).joinToString("\n")
+            sharedPref.edit()
+                .putString("exclude_rules", merged)
+                .putBoolean("exclude_rules_v2_migrated", true)
+                .apply()
+            merged
+        } else {
+            currentRules
+        }
+
+        mutableStateOf(migratedRules)
     }
     var showAdvancedRules by remember { mutableStateOf(false) }
     val coroutineScope = rememberCoroutineScope()
@@ -779,6 +806,27 @@ fun WanxiangDownloaderApp() {
     var isMainDownloading by remember { mutableStateOf(false) }
     var mainActiveTasks by remember { mutableStateOf<List<TaskState>>(emptyList()) }
     var customActiveTasks by remember { mutableStateOf<List<TaskState>>(emptyList()) }
+
+    // 更新任务依赖当前 Activity 的协程作用域。运行期间保持常亮，并锁定当前方向，
+    // 避免熄屏造成网络任务不稳定，也避免横竖屏切换重建 Activity 后取消任务/丢失进度。
+    val activity = context as? Activity
+    val hasRunningCustomTask = customActiveTasks.any { !it.isFinished && !it.isError }
+    val isUpgradeRunning = isMainDownloading || hasRunningCustomTask
+
+    DisposableEffect(activity, isUpgradeRunning) {
+        if (activity == null || !isUpgradeRunning) {
+            onDispose { }
+        } else {
+            val previousOrientation = activity.requestedOrientation
+            activity.window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+            activity.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LOCKED
+
+            onDispose {
+                activity.window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+                activity.requestedOrientation = previousOrientation
+            }
+        }
+    }
 
     val auxMap = mapOf(
         "zrm" to "自然码",
