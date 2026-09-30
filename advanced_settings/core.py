@@ -12,6 +12,7 @@ from io import StringIO
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Mapping, MutableMapping, Optional, Sequence, Tuple
 
+from .metadata import FILE_INDEX_META
 from ruamel.yaml import YAML
 from ruamel.yaml.constructor import DuplicateKeyError
 
@@ -33,32 +34,41 @@ class _RootNodeRef:
         self.value = value
 
 
-# 高级设置只允许接触原始代码 FILE_INDEX_META 中登记的纯配置文件。
-# 这是硬边界，不使用“只要后缀是 .yaml 就处理”的泛化规则。
-MANAGED_RIME_SOURCE_FILES = frozenset({
-    "default.yaml",
-    "wanxiang_algebra.yaml",
-    "wanxiang.schema.yaml",
-    "wanxiang_pro.schema.yaml",
-    "wanxiang_lite.schema.yaml",
-    "wanxiang_english.schema.yaml",
-    "wanxiang_mixedcode.schema.yaml",
-    "wanxiang_reverse.schema.yaml",
-    "wanxiang_t9.schema.yaml",
-    "wanxiang_t9i.schema.yaml",
-})
+# 高级设置只允许接触 metadata.FILE_INDEX_META 中登记的源配置文件。
+# FILE_INDEX_META 是唯一登记源；不要再在 core.py 维护第二份手写 schema 白名单。
+def _registered_source_files_from_index() -> frozenset[str]:
+    names: set[str] = set()
+    for file_list in FILE_INDEX_META.values():
+        for item in file_list:
+            if not isinstance(item, Mapping):
+                continue
+            file_name = str(item.get("file", "")).strip().lower()
+            if file_name:
+                names.add(file_name)
+    return frozenset(names)
 
-MANAGED_RIME_CUSTOM_FILES = frozenset({
-    "default.custom.yaml",
-    "wanxiang.custom.yaml",
-    "wanxiang_pro.custom.yaml",
-    "wanxiang_lite.custom.yaml",
-    "wanxiang_english.custom.yaml",
-    "wanxiang_mixedcode.custom.yaml",
-    "wanxiang_reverse.custom.yaml",
-    "wanxiang_t9.custom.yaml",
-    "wanxiang_t9i.custom.yaml",
-})
+
+def _derived_custom_name(source_name: str) -> str:
+    """由已登记源文件自动推导其 custom 补丁名。
+
+    - xxx.schema.yaml -> xxx.custom.yaml
+    - default.yaml     -> default.custom.yaml
+    - 其他资源（如 wanxiang_algebra.yaml）没有独立 custom 登记。
+    """
+    name = Path(source_name).name.lower()
+    if name == "default.yaml":
+        return "default.custom.yaml"
+    if name.endswith(".schema.yaml"):
+        return name[:-len(".schema.yaml")] + ".custom.yaml"
+    return ""
+
+
+MANAGED_RIME_SOURCE_FILES = _registered_source_files_from_index()
+MANAGED_RIME_CUSTOM_FILES = frozenset(
+    custom_name
+    for source_name in MANAGED_RIME_SOURCE_FILES
+    if (custom_name := _derived_custom_name(source_name))
+)
 
 
 def is_managed_source_yaml(path: Path | str) -> bool:

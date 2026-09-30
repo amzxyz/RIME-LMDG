@@ -692,7 +692,7 @@ class EnglishAlgebraWidget(QWidget):
             
         # --- 1. 基础规则 (固定不可修改) ---
         h1 = QHBoxLayout()
-        self.txt_include = QLineEdit("通用规则 (自动强制挂载)")
+        self.txt_include = QLineEdit("混合派生 (自动强制挂载)")
         self.txt_include.setFixedHeight(34)
         self.txt_include.setReadOnly(True)
         self.txt_include.setStyleSheet("background: rgba(128, 128, 128, 0.1); border-radius: 4px; padding: 4px 8px; color: #888; font-weight: bold;")
@@ -738,7 +738,7 @@ class EnglishAlgebraWidget(QWidget):
     def get_value(self):
         from ruamel.yaml.comments import CommentedMap
         res = CommentedMap()
-        res["__include"] = "wanxiang_algebra:/english/通用规则"
+        res["__include"] = "wanxiang_algebra:/english/混合派生"
         res["__patch"] = f"wanxiang_algebra:/english/{self.cb_schema.currentText()}"
         return res
 
@@ -758,7 +758,7 @@ class MixedAlgebraWidget(QWidget):
             
         # --- 1. 基础规则 (固定不可修改) ---
         h1 = QHBoxLayout()
-        self.txt_include = QLineEdit("通用派生规则 (自动强制挂载)")
+        self.txt_include = QLineEdit("混合派生 (自动强制挂载)")
         self.txt_include.setFixedHeight(34)
         self.txt_include.setReadOnly(True)
         self.txt_include.setStyleSheet("background: rgba(128, 128, 128, 0.1); border-radius: 4px; padding: 4px 8px; color: #888; font-weight: bold;")
@@ -804,7 +804,7 @@ class MixedAlgebraWidget(QWidget):
     def get_value(self):
         from ruamel.yaml.comments import CommentedMap
         res = CommentedMap()
-        res["__include"] = "wanxiang_algebra:/mixed/通用派生规则"
+        res["__include"] = "wanxiang_algebra:/mixed/混合派生"
         res["__patch"] = f"wanxiang_algebra:/mixed/{self.cb_schema.currentText()}"
         return res
 

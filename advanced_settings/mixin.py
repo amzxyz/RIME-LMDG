@@ -322,7 +322,9 @@ class AdvancedSettingsMixin:
         self._render_feature_paging(tree_widget)     # 功能2：翻页键
         self._render_feature_cand_keys(tree_widget)  # 功能3：次选与三选
         self._render_feature_auto_freq(tree_widget)  # 功能3.5：自动调频
-        self._render_feature_main_dict(tree_widget)  # 功能3.8：主词库防覆盖 (新增)
+        self._render_feature_main_dict(tree_widget)  # 功能3.8：主词库防覆盖
+        self._render_feature_linked_aux_dict(tree_widget, "phrase")  # 自定义短语：生成端 + 选定主方案使用端
+        self._render_feature_linked_aux_dict(tree_widget, "abbrev")  # 简码词库：生成端 + 选定主方案使用端
         self._render_feature_super_tips(tree_widget) # 功能4：超级提示
         self._render_feature_reverse_lookup(tree_widget) # 功能5：反查快捷键
         self._render_feature_grammar_model(tree_widget)  # 模型参数注入
@@ -343,17 +345,44 @@ class AdvancedSettingsMixin:
         effective = self._effective_document_data(file_name)
         return self._yaml_engine.get_path(effective, path, default)
 
+    @staticmethod
+    def _main_scheme_specs():
+        """Base / Lite / Pro 主方案的稳定业务信息。"""
+        return (
+            {"id": "base", "file": "wanxiang.schema.yaml", "label": "Base", "default_dict": "wanxiang"},
+            {"id": "lite", "file": "wanxiang_lite.schema.yaml", "label": "Lite", "default_dict": "wanxiang_lite"},
+            {"id": "pro", "file": "wanxiang_pro.schema.yaml", "label": "Pro", "default_dict": "wanxiang_pro"},
+        )
+
+    def _loaded_main_scheme_specs(self):
+        """只返回当前 Rime 目录实际加载/存在的主方案，供联动勾选框使用。"""
+        rime_dir = Path(self.upd_rime.text().strip()) if hasattr(self, "upd_rime") else None
+        result = []
+        for spec in self._main_scheme_specs():
+            exists = spec["file"] in self._yaml_cache
+            if not exists and rime_dir is not None:
+                exists = (rime_dir / spec["file"]).exists()
+            if exists:
+                result.append(spec)
+        return result
+
     def _primary_wanxiang_schema_file(self):
-        """从 default 的最终 schema_list 中确定当前主方案。"""
+        """从 default 的最终 schema_list 中确定当前主方案；Base/Lite/Pro 都支持。"""
         schema_list = self._effective_config_value("default.yaml", "schema_list", [])
+        valid = {
+            "wanxiang": "wanxiang.schema.yaml",
+            "wanxiang_lite": "wanxiang_lite.schema.yaml",
+            "wanxiang_pro": "wanxiang_pro.schema.yaml",
+        }
         if isinstance(schema_list, list):
             for item in schema_list:
                 schema_id = item.get("schema") if isinstance(item, dict) else str(item or "")
-                if schema_id in {"wanxiang", "wanxiang_pro"}:
-                    return f"{schema_id}.schema.yaml"
+                if schema_id in valid and valid[schema_id] in self._yaml_cache:
+                    return valid[schema_id]
 
-        if "wanxiang_pro.schema.yaml" in self._yaml_cache:
-            return "wanxiang_pro.schema.yaml"
+        loaded = self._loaded_main_scheme_specs()
+        if loaded:
+            return loaded[0]["file"]
         return "wanxiang.schema.yaml"
 
     def _render_feature_grammar_model(self, tree):
@@ -591,58 +620,181 @@ class AdvancedSettingsMixin:
         tree._py_refs.extend([container, combo, lbl])
 
     def _render_feature_main_dict(self, tree):
-        """专属渲染器：全局主词库独立命名 (防覆盖)"""
+        """主词库独立命名：只修改当前主方案；Pro 同步 3 个 dictionary，Base/Lite 只改 translator。"""
         from PySide6.QtWidgets import QTreeWidgetItem, QLineEdit, QWidget, QHBoxLayout, QLabel
         from PySide6.QtCore import Qt
 
-        item = QTreeWidgetItem(tree, ["📚 主词库独立命名 (防更新覆盖)", "", ""])
+        item = QTreeWidgetItem(tree, ["📚 当前主方案词库独立命名", "", ""])
         item.setFlags(item.flags() & ~Qt.ItemIsSelectable)
-        
+
         container = QWidget()
         c_lay = QHBoxLayout(container)
         c_lay.setContentsMargins(0, 4, 0, 4)
         c_lay.setAlignment(Qt.AlignLeft | Qt.AlignVCenter)
-        
+
         edit = QLineEdit()
         edit.setFixedHeight(34); edit.setFixedWidth(180)
-        
-        
-        active_file = self._primary_wanxiang_schema_file()
-        fallback_name = "wanxiang_pro" if active_file.startswith("wanxiang_pro") else "wanxiang"
-        current_val = self._effective_config_value(
-            active_file, "translator/dictionary", fallback_name
-        )
 
+        active_file = self._primary_wanxiang_schema_file()
+        spec = next((x for x in self._main_scheme_specs() if x["file"] == active_file), None)
+        fallback_name = spec["default_dict"] if spec else "wanxiang"
+        current_val = self._effective_config_value(active_file, "translator/dictionary", fallback_name)
         edit.setText(str(current_val))
-        
+
         c_lay.addWidget(edit)
         tree.setItemWidget(item, 1, container)
-        
+
+        scheme_label = spec["label"] if spec else active_file
         lbl = QLabel()
         lbl.setWordWrap(True)
         tree.setItemWidget(item, 2, lbl)
-        
-        desc = "自定义词库名称（如 wanxianguser）。\n保存后将自动把原词库复制一份，后续在线更新官方方案时，绝不会覆盖！"
-        
+
+        desc = (
+            f"当前主方案：{scheme_label}。Base/Lite 只修改 translator/dictionary；"
+            "Pro 同时修改 translator、user_dict_set、add_user_dict 三处 dictionary。\n"
+            "自定义名称会复制当前方案默认词库，避免后续更新覆盖。"
+        )
+
         def validate(text):
             t = text.strip()
             if not t:
-                msg = f"❌ 不能为空！请输入词库名称（恢复默认请填 wanxiang 或 wanxiang_pro）。\n{desc}"
+                msg = f"❌ 不能为空！默认值为 {fallback_name}。\n{desc}"
                 lbl.setStyleSheet("color: #d9534f; font-weight: bold; font-size: 13px; padding: 4px;")
             elif not t.replace("_", "").isalnum():
                 msg = f"❌ 格式错误！词库名只能包含字母、数字和下划线。\n{desc}"
                 lbl.setStyleSheet("color: #d9534f; font-weight: bold; font-size: 13px; padding: 4px;")
             else:
-                msg = f"✅ 当前引用的主词库为: {t}.dict.yaml\n{desc}"
+                msg = f"✅ {scheme_label} 将引用：{t}.dict.yaml\n{desc}"
                 lbl.setStyleSheet("color: #61A165; font-size: 13px; padding: 4px;")
             lbl.setText(msg)
             self._dynamic_row_height(item, msg)
 
         edit.textChanged.connect(validate)
         validate(edit.text())
-        
+
         self._ui_cache.setdefault("VIRTUAL_GLOBAL", {}).setdefault("widgets", {})["main_dict"] = edit
+        self._ui_cache["VIRTUAL_GLOBAL"]["widgets"]["main_dict_scheme"] = active_file
         tree._py_refs.extend([container, edit, lbl])
+
+    def _render_feature_linked_aux_dict(self, tree, kind):
+        """
+        自定义短语/简码词库联动。
+
+        第一行：词库名称。
+        第二行（缩进）：只渲染当前目录存在的 Base/Lite/Pro。
+        勾选项写入使用端；未勾选项保存时删除对应使用端覆盖键。
+        生成端始终是 wanxiang_phrase / wanxiang_abbrev。
+        """
+        from PySide6.QtWidgets import QTreeWidgetItem, QLineEdit, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QCheckBox
+        from PySide6.QtCore import Qt
+
+        if kind == "phrase":
+            title = "📝 自定义短语词库名称"
+            widget_key = "phrase_dict"
+            generator_file = "wanxiang_phrase.schema.yaml"
+            default_name = "custom_phrase"
+            usage_path = "custom_phrase/dictionary"
+            usage_title = "自定义短语"
+        else:
+            title = "🔖 简码词库名称"
+            widget_key = "abbrev_dict"
+            generator_file = "wanxiang_abbrev.schema.yaml"
+            default_name = "wanxiang_abbrev"
+            usage_path = "abbrev_phrase/dictionary"
+            usage_title = "简码"
+
+        item = QTreeWidgetItem(tree, [title, "", ""])
+        item.setFlags(item.flags() & ~Qt.ItemIsSelectable)
+
+        container = QWidget()
+        v_lay = QVBoxLayout(container)
+        v_lay.setContentsMargins(0, 4, 0, 4)
+        v_lay.setSpacing(5)
+
+        row1 = QHBoxLayout()
+        row1.setContentsMargins(0, 0, 0, 0)
+        row1.setAlignment(Qt.AlignLeft | Qt.AlignVCenter)
+        edit = QLineEdit()
+        edit.setFixedHeight(34); edit.setFixedWidth(180)
+
+        if generator_file in self._yaml_cache:
+            current_name = self._effective_config_value(generator_file, "translator/dictionary", default_name)
+        else:
+            active_file = self._primary_wanxiang_schema_file()
+            current_name = self._effective_config_value(active_file, usage_path, default_name)
+        edit.setText(str(current_name or default_name))
+        row1.addWidget(edit)
+        row1.addStretch(1)
+        v_lay.addLayout(row1)
+
+        # 第二行略微缩进，明确“这个名称要同时挂到哪些主方案”。
+        row2 = QHBoxLayout()
+        row2.setContentsMargins(14, 0, 0, 0)
+        row2.setSpacing(10)
+        assoc_label = QLabel("修改关联方案：")
+        assoc_label.setStyleSheet("font-size: 12px; color: #777;")
+        row2.addWidget(assoc_label)
+
+        checks = {}
+        active_file = self._primary_wanxiang_schema_file()
+        for spec in self._loaded_main_scheme_specs():
+            cb = QCheckBox(spec["label"])
+            cb.setProperty("scheme_file", spec["file"])
+            # 优先反映当前真实关联关系；如果一个都没关联，后面再默认勾当前主方案。
+            usage_val = self._effective_config_value(spec["file"], usage_path, default_name)
+            cb.setChecked(str(usage_val) == str(current_name))
+            row2.addWidget(cb)
+            checks[spec["id"]] = cb
+        row2.addStretch(1)
+        v_lay.addLayout(row2)
+
+        if checks and not any(cb.isChecked() for cb in checks.values()):
+            for spec in self._loaded_main_scheme_specs():
+                if spec["file"] == active_file and spec["id"] in checks:
+                    checks[spec["id"]].setChecked(True)
+                    break
+
+        tree.setItemWidget(item, 1, container)
+
+        lbl = QLabel()
+        lbl.setWordWrap(True)
+        tree.setItemWidget(item, 2, lbl)
+
+        def refresh_desc(*_):
+            t = edit.text().strip()
+            selected = [cb.text() for cb in checks.values() if cb.isChecked()]
+            selected_text = " / ".join(selected) if selected else "未选择主方案"
+            if not t or not t.replace("_", "").isalnum():
+                msg = f"❌ 词库名只能包含字母、数字和下划线，且不能为空。\n关联：{selected_text}"
+                lbl.setStyleSheet("color: #d9534f; font-weight: bold; font-size: 13px; padding: 4px;")
+            elif not selected:
+                msg = (
+                    f"⚠️ 生成端会改为 {t}，当前没有勾选使用端主方案。\n"
+                    "保存时只修改生成端，并删除各未勾选主方案对应的使用端覆盖键。"
+                )
+                lbl.setStyleSheet("color: #c58a00; font-weight: bold; font-size: 13px; padding: 4px;")
+            else:
+                msg = (
+                    f"✅ {usage_title}词库：{t}.dict.yaml；生成端与使用端将成对修改。\n"
+                    f"关联主方案：{selected_text}"
+                )
+                lbl.setStyleSheet("color: #61A165; font-size: 13px; padding: 4px;")
+            lbl.setText(msg)
+            self._dynamic_row_height(item, msg)
+
+        edit.textChanged.connect(refresh_desc)
+        for cb in checks.values():
+            cb.toggled.connect(refresh_desc)
+        refresh_desc()
+
+        self._ui_cache.setdefault("VIRTUAL_GLOBAL", {}).setdefault("widgets", {})[widget_key] = {
+            "edit": edit,
+            "schemes": checks,
+            "generator_file": generator_file,
+            "default_name": default_name,
+            "usage_path": usage_path,
+        }
+        tree._py_refs.extend([container, edit, assoc_label, lbl, *checks.values()])
 
     def _render_feature_super_tips(self, tree):
         """专属渲染器：超级提示 (super_tips) 全局同步 - 完美支持多行数组与防冲突"""
@@ -2558,8 +2710,29 @@ class AdvancedSettingsMixin:
         main_dict_widget = widgets.get("main_dict")
         main_dict_val = main_dict_widget.text().strip() if main_dict_widget else ""
         if main_dict_widget and (not main_dict_val or not main_dict_val.replace("_", "").isalnum()):
-            QMessageBox.warning(self, "校验失败", "⚠️ 保存中断：\n词库名称只能包含字母、数字和下划线且不能为空！")
+            QMessageBox.warning(self, "校验失败", "⚠️ 保存中断：\n主词库名称只能包含字母、数字和下划线且不能为空！")
             return
+
+        def read_linked_dict(widget_key, title):
+            info = widgets.get(widget_key) or {}
+            edit = info.get("edit") if isinstance(info, dict) else None
+            checks = info.get("schemes", {}) if isinstance(info, dict) else {}
+            name = edit.text().strip() if edit is not None else ""
+            selected = [scheme_id for scheme_id, cb in checks.items() if cb.isChecked()]
+            if edit is not None and (not name or not name.replace("_", "").isalnum()):
+                QMessageBox.warning(self, "校验失败", f"⚠️ 保存中断：\n{title}只能包含字母、数字和下划线且不能为空！")
+                return None
+            # 允许一个主方案都不勾选：生成端仍按输入名称修改；
+            # 使用端按复选框单向处理，未勾选项会删除对应覆盖键。
+            return name, selected, info
+
+        phrase_cfg = read_linked_dict("phrase_dict", "自定义短语词库名称")
+        if phrase_cfg is None: return
+        abbrev_cfg = read_linked_dict("abbrev_dict", "简码词库名称")
+        if abbrev_cfg is None: return
+        phrase_dict_val, phrase_scheme_ids, phrase_info = phrase_cfg
+        abbrev_dict_val, abbrev_scheme_ids, abbrev_info = abbrev_cfg
+
         # 新增提取：语法模型一键配置 --
         grammar_widget = widgets.get("grammar_model")
         grammar_action = grammar_widget.currentIndex() if grammar_widget else 0
@@ -2607,7 +2780,9 @@ class AdvancedSettingsMixin:
             key: current_state.get(key) != baseline_state.get(key)
             for key in (
                 "page_size", "paging", "cand2", "cand3", "auto_freq",
-                "main_dict", "reverse_lookup", "super_tips_db",
+                "main_dict", "phrase_dict", "phrase_schemes",
+                "abbrev_dict", "abbrev_schemes",
+                "reverse_lookup", "super_tips_db",
                 "super_tips_key", "super_tips_disabled",
             )
         }
@@ -2641,9 +2816,140 @@ class AdvancedSettingsMixin:
                 self._yaml_engine.atomic_write_many({file_path: data})
                 return True
 
+            def _target_config_file_name(schema_file):
+                if is_direct:
+                    return schema_file
+                if schema_file == "default.yaml":
+                    return "default.custom.yaml"
+                return schema_file.replace(".schema.yaml", ".custom.yaml")
+
+            def _write_config_path(schema_file, yaml_path, value):
+                """按当前直写/补丁模式写一个配置路径；等于 schema 默认值时自动清理补丁。"""
+                base_f_path = os.path.join(rime_dir, schema_file)
+                if not os.path.exists(base_f_path):
+                    return False
+
+                target_file = _target_config_file_name(schema_file)
+                f_path = os.path.join(rime_dir, target_file)
+                base_data = self._yaml_cache.get(schema_file, ({}, {}))[0]
+                base_val = _get_nested_val(base_data, yaml_path, None)
+
+                if not os.path.exists(f_path) and not is_direct:
+                    target_data = {"patch": {}}
+                elif os.path.exists(f_path):
+                    with open(f_path, 'r', encoding='utf-8') as f:
+                        target_data = yaml.load(f) or {}
+                else:
+                    return False
+
+                modified = False
+                if is_direct:
+                    current = _get_nested_val(target_data, yaml_path, None)
+                    if current != value:
+                        _set_nested_val(target_data, yaml_path, value)
+                        modified = True
+                else:
+                    if "patch" not in target_data or target_data["patch"] is None:
+                        target_data["patch"] = {}
+                    patch = target_data["patch"]
+                    if value != base_val:
+                        if patch.get(yaml_path) != value:
+                            self._safe_assign(patch, yaml_path, value)
+                            modified = True
+                    elif yaml_path in patch:
+                        del patch[yaml_path]
+                        modified = True
+
+                if modified and _smart_write(f_path, target_data, schema_file, is_direct):
+                    if target_file not in updated_files:
+                        updated_files.append(target_file)
+                    return True
+                return False
+
+            def _remove_config_path(schema_file, yaml_path):
+                """删除一个配置路径。复选框取消时不恢复默认值，只删除对应键。"""
+                base_f_path = os.path.join(rime_dir, schema_file)
+                if not os.path.exists(base_f_path):
+                    return False
+
+                target_file = _target_config_file_name(schema_file)
+                f_path = os.path.join(rime_dir, target_file)
+                if not os.path.exists(f_path):
+                    return False
+
+                with open(f_path, 'r', encoding='utf-8') as f:
+                    target_data = yaml.load(f) or {}
+
+                modified = False
+                if is_direct:
+                    # 直写模式下删除 schema 中真正的嵌套键。
+                    modified = self._yaml_engine.delete_path(target_data, yaml_path)
+                else:
+                    # custom 模式下 patch 的路径本身就是字面量键，直接删除。
+                    patch = target_data.get("patch")
+                    if isinstance(patch, Mapping) and yaml_path in patch:
+                        del patch[yaml_path]
+                        modified = True
+
+                if modified:
+                    wrote = _smart_write(f_path, target_data, schema_file, is_direct)
+                    if wrote and target_file not in updated_files:
+                        updated_files.append(target_file)
+                    return True
+                return False
+
+            def _ensure_named_dictionary(default_name, target_name):
+                """复制默认 dict 到自定义名称，并确保 YAML 头部 name 与文件名一致。"""
+                if not target_name or target_name == default_name:
+                    return None
+                src = os.path.join(rime_dir, f"{default_name}.dict.yaml")
+                dst = os.path.join(rime_dir, f"{target_name}.dict.yaml")
+                created = False
+                if not os.path.exists(dst):
+                    if not os.path.exists(src):
+                        raise FileNotFoundError(f"找不到默认词典：{default_name}.dict.yaml")
+                    shutil.copy2(src, dst)
+                    created = True
+
+                text = Path(dst).read_text(encoding="utf-8")
+                lines = text.splitlines(keepends=True)
+                changed = False
+                header_end = len(lines)
+                for i, line in enumerate(lines):
+                    if line.strip() == "...":
+                        header_end = i
+                        break
+                name_re = re.compile(r"^\s*name\s*:\s*.*(?:\r?\n)?$")
+                found = False
+                for i in range(header_end):
+                    if name_re.match(lines[i]):
+                        newline = "\n" if lines[i].endswith("\n") else ""
+                        desired = f"name: {target_name}{newline}"
+                        found = True
+                        if lines[i] != desired:
+                            lines[i] = desired
+                            changed = True
+                        break
+                if not found:
+                    insert_at = 1 if lines and lines[0].strip() == "---" else 0
+                    lines.insert(insert_at, f"name: {target_name}\n")
+                    changed = True
+
+                if changed:
+                    Path(dst).write_text("".join(lines), encoding="utf-8")
+                if created or changed:
+                    name = os.path.basename(dst)
+                    if name not in updated_files:
+                        updated_files.append(name)
+                    self.log.appendPlainText(
+                        f"📦 已准备独立词典：{name}（name: {target_name}）"
+                    )
+                return dst
+
             # 动作 写入候选数
             if dirty["page_size"]:
-                for f_name in ["default.yaml", "wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
+                page_targets = ["default.yaml"] + [spec["file"] for spec in self._loaded_main_scheme_specs()]
+                for f_name in page_targets:
                     base_f_path = os.path.join(rime_dir, f_name)
                     if not os.path.exists(base_f_path): continue 
 
@@ -2680,7 +2986,7 @@ class AdvancedSettingsMixin:
                             if target_file not in updated_files: updated_files.append(target_file)
             # 动作 同步自动调频 (translator/enable_user_dict)
             if auto_freq_widget and dirty["auto_freq"]:
-                for f_name in ["wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
+                for f_name in [spec["file"] for spec in self._loaded_main_scheme_specs()]:
                     base_f_path = os.path.join(rime_dir, f_name)
                     if not os.path.exists(base_f_path): continue 
 
@@ -2716,68 +3022,49 @@ class AdvancedSettingsMixin:
                     if modified:
                         if _smart_write(f_path, target_data, f_name, is_direct):
                             if target_file not in updated_files: updated_files.append(target_file)
-            # 动作 同步主词库名称 (自动防覆盖处理)
+            # 动作 同步主词库名称：按当前方案类型修改
             if main_dict_val and dirty["main_dict"]:
-                import shutil
-                dst_dict = os.path.join(rime_dir, f"{main_dict_val}.dict.yaml")
-                if main_dict_val not in ["wanxiang", "wanxiang_pro"] and not os.path.exists(dst_dict):
-                    src_pro = os.path.join(rime_dir, "wanxiang_pro.dict.yaml")
-                    src_base = os.path.join(rime_dir, "wanxiang.dict.yaml")
-                    if os.path.exists(src_pro):
-                        shutil.copy2(src_pro, dst_dict)
-                        self.log.appendPlainText(f"📦 已自动为您复制提取独立词库: {main_dict_val}.dict.yaml (基于 Pro)")
-                    elif os.path.exists(src_base):
-                        shutil.copy2(src_base, dst_dict)
-                        self.log.appendPlainText(f"📦 已自动为您复制提取独立词库: {main_dict_val}.dict.yaml (基于 Base)")
+                active_file = widgets.get("main_dict_scheme") or self._primary_wanxiang_schema_file()
+                spec = next((x for x in self._main_scheme_specs() if x["file"] == active_file), None)
+                if spec is None:
+                    raise RuntimeError(f"无法识别当前主方案：{active_file}")
 
-                for f_name in ["wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
-                    base_f_path = os.path.join(rime_dir, f_name)
-                    if not os.path.exists(base_f_path): continue 
-                    target_file = f_name if is_direct else f_name.replace(".schema.yaml", ".custom.yaml")
-                    f_path = os.path.join(rime_dir, target_file)
-                    base_data = self._yaml_cache.get(f_name, ({}, {}))[0]
-                    schema_default_dict = "wanxiang_pro" if "pro" in f_name else "wanxiang"
-                    orig_dict = _get_nested_val(base_data, "translator/dictionary", schema_default_dict)
-                    if main_dict_val in ["wanxiang", "wanxiang_pro"]:
-                        target_val = schema_default_dict
-                    else:
-                        target_val = main_dict_val
-                    
-                    if not os.path.exists(f_path) and not is_direct: target_data = {"patch": {}}
-                    elif os.path.exists(f_path):
-                        with open(f_path, 'r', encoding='utf-8') as f: target_data = yaml.load(f) or {}
-                    else: continue 
-                    
-                    modified = False
-                    
-                    if is_direct:
-                        def set_direct(path, val):
-                            nonlocal modified
-                            keys = path.split('/')
-                            curr = target_data
-                            for k in keys[:-1]:
-                                if k not in curr: curr[k] = {}
-                                curr = curr[k]
-                            if curr.get(keys[-1]) != val: curr[keys[-1]] = val; modified = True
-                                
-                        set_direct("translator/dictionary", target_val)
-                        set_direct("user_dict_set/dictionary", target_val)
-                        set_direct("add_user_dict/dictionary", target_val)
-                    else:
-                        if "patch" not in target_data or target_data["patch"] is None: target_data["patch"] = {}
-                        def patch_field(k, nv, bv):
-                            nonlocal modified
-                            if nv != bv:
-                                if target_data["patch"].get(k) != nv: self._safe_assign(target_data["patch"], k, nv); modified = True
-                            elif k in target_data["patch"]: del target_data["patch"][k]; modified = True
-                                    
-                        patch_field("translator/dictionary", target_val, orig_dict)
-                        patch_field("user_dict_set/dictionary", target_val, orig_dict)
-                        patch_field("add_user_dict/dictionary", target_val, orig_dict)
+                default_dict = spec["default_dict"]
+                _ensure_named_dictionary(default_dict, main_dict_val)
 
-                    if modified:
-                        if _smart_write(f_path, target_data, f_name, is_direct):
-                            if target_file not in updated_files: updated_files.append(target_file)
+                # Base/Lite 只改主 translator；Pro 还要同步两个造词相关 translator。
+                dict_paths = ["translator/dictionary"]
+                if spec["id"] == "pro":
+                    dict_paths.extend(["user_dict_set/dictionary", "add_user_dict/dictionary"])
+                for yaml_path in dict_paths:
+                    _write_config_path(active_file, yaml_path, main_dict_val)
+
+            # 自定义短语/简码：生成端固定修改；使用端按复选框单向写入/删除
+            linked_specs = {spec["id"]: spec for spec in self._main_scheme_specs()}
+
+            if dirty.get("phrase_dict") or dirty.get("phrase_schemes"):
+                _ensure_named_dictionary("custom_phrase", phrase_dict_val)
+                _write_config_path("wanxiang_phrase.schema.yaml", "translator/dictionary", phrase_dict_val)
+                selected = set(phrase_scheme_ids)
+                for spec in self._loaded_main_scheme_specs():
+                    # 单向勾选逻辑：
+                    #   勾选   -> 写入当前自定义词库名；
+                    #   取消   -> 不判断旧值、不恢复默认值，直接删除对应键。
+                    if spec["id"] in selected:
+                        _write_config_path(spec["file"], "custom_phrase/dictionary", phrase_dict_val)
+                    else:
+                        _remove_config_path(spec["file"], "custom_phrase/dictionary")
+
+            if dirty.get("abbrev_dict") or dirty.get("abbrev_schemes"):
+                _ensure_named_dictionary("wanxiang_abbrev", abbrev_dict_val)
+                _write_config_path("wanxiang_abbrev.schema.yaml", "translator/dictionary", abbrev_dict_val)
+                selected = set(abbrev_scheme_ids)
+                for spec in self._loaded_main_scheme_specs():
+                    if spec["id"] in selected:
+                        _write_config_path(spec["file"], "abbrev_phrase/dictionary", abbrev_dict_val)
+                    else:
+                        _remove_config_path(spec["file"], "abbrev_phrase/dictionary")
+
             # 同步语法模型参数 (LMDG 一键配置)
             if grammar_action in [1, 2]:  # 1: 写入推荐参数, 2: 清除参数
                 # 使用 CommentedMap 保证写入 YAML 时的字段顺序极其优美！
@@ -2792,7 +3079,7 @@ class AdvancedSettingsMixin:
                 g_map["unseen_two_char_penalty"] = 0
                 g_map["rear_penalty"] = -8
 
-                for f_name in ["wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
+                for f_name in [spec["file"] for spec in self._loaded_main_scheme_specs()]:
                     base_f_path = os.path.join(rime_dir, f_name)
                     if not os.path.exists(base_f_path): continue 
 
@@ -2938,7 +3225,7 @@ class AdvancedSettingsMixin:
 
             # 动作 同步反查快捷键
             if rev_key and dirty["reverse_lookup"]:
-                for f_name in ["wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
+                for f_name in [spec["file"] for spec in self._loaded_main_scheme_specs()]:
                     base_f_path = os.path.join(rime_dir, f_name)
                     if not os.path.exists(base_f_path): continue 
 
@@ -3024,7 +3311,8 @@ class AdvancedSettingsMixin:
 
             # 动作 处理翻页和次选/三选
             if any((dirty["paging"], dirty["cand2"], dirty["cand3"])):
-                for f_name in ["default.yaml", "wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"]:
+                paging_targets = ["default.yaml"] + [spec["file"] for spec in self._loaded_main_scheme_specs()]
+                for f_name in paging_targets:
                     base_f_path = os.path.join(rime_dir, f_name)
                     if not os.path.exists(base_f_path): continue 
 
@@ -3315,6 +3603,19 @@ class AdvancedSettingsMixin:
         dict_widget = widgets.get("main_dict")
         main_dict = dict_widget.text().strip() if dict_widget else ""
 
+        def capture_linked_dict(widget_key):
+            info = widgets.get(widget_key) or {}
+            edit = info.get("edit") if isinstance(info, dict) else None
+            checks = info.get("schemes", {}) if isinstance(info, dict) else {}
+            name = edit.text().strip() if edit is not None else ""
+            selected = tuple(sorted(
+                scheme_id for scheme_id, cb in checks.items() if cb.isChecked()
+            ))
+            return name, selected
+
+        phrase_dict, phrase_schemes = capture_linked_dict("phrase_dict")
+        abbrev_dict, abbrev_schemes = capture_linked_dict("abbrev_dict")
+
         reverse_widget = widgets.get("reverse_lookup")
         reverse_lookup = reverse_widget.text().strip() if reverse_widget else ""
 
@@ -3341,6 +3642,10 @@ class AdvancedSettingsMixin:
             "cand3": cand3,
             "auto_freq": auto_freq,
             "main_dict": main_dict,
+            "phrase_dict": phrase_dict,
+            "phrase_schemes": phrase_schemes,
+            "abbrev_dict": abbrev_dict,
+            "abbrev_schemes": abbrev_schemes,
             "reverse_lookup": reverse_lookup,
             "super_tips_db": tips_db,
             "super_tips_key": tips_key,
@@ -3933,33 +4238,41 @@ class AdvancedSettingsMixin:
         planned = set()
 
         if global_mode:
+            loaded_main_files = [spec["file"] for spec in self._loaded_main_scheme_specs()]
             if is_direct:
-                names = {
-                    "default.yaml",
-                    "wanxiang.schema.yaml",
-                    "wanxiang_pro.schema.yaml",
-                }
+                names = {"default.yaml", "wanxiang_phrase.schema.yaml", "wanxiang_abbrev.schema.yaml"}
+                names.update(loaded_main_files)
             else:
-                names = {
-                    "default.custom.yaml",
-                    "wanxiang.custom.yaml",
-                    "wanxiang_pro.custom.yaml",
-                }
+                names = {"default.custom.yaml", "wanxiang_phrase.custom.yaml", "wanxiang_abbrev.custom.yaml"}
+                names.update(
+                    name.replace(".schema.yaml", ".custom.yaml")
+                    for name in loaded_main_files
+                )
             planned.update(rime_dir / name for name in names)
 
-            # 综合设置唯一可能新建的非纯 YAML 文件是用户明确命名的词典副本。
             widgets = self._ui_cache.get("VIRTUAL_GLOBAL", {}).get("widgets", {})
+
+            # 当前主方案自定义主词库
             main_dict_widget = widgets.get("main_dict")
             main_dict_name = main_dict_widget.text().strip() if main_dict_widget else ""
+            active_file = widgets.get("main_dict_scheme") or self._primary_wanxiang_schema_file()
+            active_spec = next((x for x in self._main_scheme_specs() if x["file"] == active_file), None)
             if (
-                main_dict_name
-                and main_dict_name not in {"wanxiang", "wanxiang_pro"}
+                active_spec
+                and main_dict_name
+                and main_dict_name != active_spec["default_dict"]
                 and main_dict_name.replace("_", "").isalnum()
             ):
-                dict_target = rime_dir / f"{main_dict_name}.dict.yaml"
-                # 原始逻辑只在目标不存在时复制，不会覆盖既有词典。
-                if not dict_target.exists():
-                    planned.add(dict_target)
+                planned.add(rime_dir / f"{main_dict_name}.dict.yaml")
+
+            # 自定义短语 / 简码词库副本：即使目标已存在，也可能需要修正 YAML 头 name。
+            for widget_key in ("phrase_dict", "abbrev_dict"):
+                info = widgets.get(widget_key) or {}
+                edit = info.get("edit") if isinstance(info, dict) else None
+                default_name = info.get("default_name", "") if isinstance(info, dict) else ""
+                name = edit.text().strip() if edit is not None else ""
+                if name and default_name and name != default_name and name.replace("_", "").isalnum():
+                    planned.add(rime_dir / f"{name}.dict.yaml")
             return planned
 
         target_name = str(getattr(self, "current_edit_file", "") or "")
