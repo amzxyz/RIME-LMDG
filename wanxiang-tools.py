@@ -153,7 +153,7 @@ class FocusPlaceholderPlainTextEdit(QPlainTextEdit):
             super().setPlaceholderText(self._saved_placeholder)
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.3.2"
+TOOL_VERSION = "v3.3.3"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
