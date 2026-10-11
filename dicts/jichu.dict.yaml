@@ -17974,8 +17974,9 @@ sort: by_weight
 此栏	cǐ lán	88
 次郎	cì láng	1105
 辞了	cí le	895
-刺了	cì le	373
-赐了	cì le	160
+次了	cì le	773
+赐了	cì le	373
+刺了	cì le	160
 此类	cǐ lèi	18203
 词类	cí lèi	285
 磁力	cí lì	2138
@@ -52161,9 +52162,10 @@ sort: by_weight
 急了	jí le	4471
 寄了	jì le	3680
 极了	jí le	2577
-挤了	jǐ le	1240
+级了	jí le	1555
+极乐	jí lè	1240
 记了	jì le	967
-极乐	jí lè	649
+挤了	jǐ le	649
 积累	jī lěi	84934
 几类	jǐ lèi	7209
 鸡肋	jī lèi	3654
@@ -98056,7 +98058,7 @@ sort: by_weight
 入轨	rù guǐ	1052
 如归	rú guī	851
 如果	rú guǒ	1350385
-入国	rù guó	750
+入过	rù guò	1750
 入锅	rù guō	600
 辱国	rǔ guó	480
 乳果	rǔ guǒ	469
@@ -217561,6 +217563,7 @@ sort: by_weight
 超爱你	chāo ài nǐ	400
 超安全	chāo ān quán	400
 超霸杯	chāo bà bēi	9
+抄八遍	chāo bā biàn	69
 超八成	chāo bā chéng	626
 超霸气	chāo bà qì	482
 超霸赛	chāo bà sài	261
@@ -218249,6 +218252,7 @@ sort: by_weight
 超静音	chāo jìng yīn	144
 超精致	chāo jīng zhì	522
 超精准	chāo jīng zhǔn	378
+抄九遍	chāo jiǔ biàn	69
 炒韭菜	chǎo jiǔ cài	675
 超九成	chāo jiǔ chéng	626
 超巨大	chāo jù dà	549
@@ -218329,6 +218333,8 @@ sort: by_weight
 超联球	chāo lián qiú	634
 超联赛	chāo lián sài	1364
 超连续	chāo lián xù	428
+抄两遍	chāo liǎng biàn	192
+朝两边	cháo liǎng biān	81
 炒两菜	chǎo liǎng cài	52
 超量程	chāo liàng chéng	220
 炒凉粉	chǎo liáng fěn	19
@@ -218339,6 +218345,7 @@ sort: by_weight
 潮流啊	cháo liú a	423
 潮流吧	cháo liú ba	436
 潮流版	cháo liú bǎn	603
+抄六遍	chāo liù biàn	69
 超流畅	chāo liú chàng	374
 超六成	chāo liù chéng	630
 潮流店	cháo liú diàn	423
@@ -218525,6 +218532,7 @@ sort: by_weight
 超平面	chāo píng miàn	955
 炒蒲黄	chǎo pú huáng	180
 超普通	chāo pǔ tōng	580
+抄七遍	chāo qī biàn	69
 超七成	chāo qī chéng	594
 超期待	chāo qī dài	630
 炒期货	chǎo qī huò	688
@@ -218624,6 +218632,7 @@ sort: by_weight
 超软胎	chāo ruǎn tāi	446
 超锐度	chāo ruì dù	45
 超赛神	chāo sài shén	279
+抄三遍	chāo sān biàn	69
 超三成	chāo sān chéng	572
 炒三丝	chǎo sān sī	16
 炒三仙	chǎo sān xiān	76
@@ -218687,6 +218696,7 @@ sort: by_weight
 抄生字	chāo shēng zì	130
 超市啊	chāo shì a	567
 超市吧	chāo shì ba	580
+抄十遍	chāo shí biàn	69
 炒什菜	chǎo shí cài	392
 超时代	chāo shí dài	648
 超世代	chāo shì dài	528
@@ -218765,6 +218775,7 @@ sort: by_weight
 焯水时	chāo shuǐ shí	531
 超水准	chāo shuǐ zhǔn	477
 晁说之	cháo shuō zhī	297
+抄四遍	chāo sì biàn	69
 超四成	chāo sì chéng	562
 炒丝瓜	chǎo sī guā	60
 吵死啦	chǎo sǐ la	225
@@ -218877,6 +218888,7 @@ sort: by_weight
 超文艺	chāo wén yì	387
 抄我的	chāo wǒ de	576
 炒莴笋	chǎo wō sǔn	612
+抄五遍	chāo wǔ biàn	69
 超五成	chāo wǔ chéng	572
 超无敌	chāo wú dí	351
 超五类	chāo wǔ lèi	110
@@ -225605,6 +225617,7 @@ sort: by_weight
 抽起了	chōu qǐ le	536
 抽泣了	chōu qì le	410
 抽泣声	chōu qì shēng	107
+抽起烟	chōu qǐ yān	269
 抽泣着	chōu qì zhe	170
 臭杞子	chòu qǐ zǐ	4
 抽签吧	chōu qiān ba	310
@@ -330405,6 +330418,7 @@ sort: by_weight
 还点着	hái diǎn zháo	504
 海钓钩	hǎi diào gōu	68
 海钓人	hǎi diào rén	230
+还掉下	hái diào xià	356
 还订了	hái dìng le	544
 还定了	hái dìng le	426
 还丢了	hái diū le	630
@@ -353521,7 +353535,6 @@ sort: by_weight
 换掉吧	huàn diào ba	432
 换掉了	huàn diào le	918
 还掉了	huán diào le	157
-还掉下	huán diào xià	356
 环丁胺	huán dīng àn	171
 环丁醇	huán dīng chún	207
 环锭纺	huán dìng fǎng	302
@@ -528931,6 +528944,8 @@ sort: by_weight
 日常啊	rì cháng a	400
 日常吧	rì cháng ba	572
 日常版	rì cháng bǎn	436
+日常词	rì cháng cí	152
+日场次	rì chǎng cì	109
 日常番	rì cháng fān	504
 日常风	rì cháng fēng	526
 日常感	rì cháng gǎn	554
@@ -700825,7 +700840,6 @@ sort: by_weight
 衣裳街	yī shang jiē	262
 一上课	yí shàng kè	675
 一上来	yí shàng lái	8732
-以上来	yǐ shàng lái	936
 以上了	yǐ shàng le	1017
 已上了	yǐ shàng le	471
 衣裳了	yī shang le	299
@@ -821352,6 +821366,7 @@ sort: by_weight
 超软射线	chāo ruǎn shè xiàn	238
 炒三不沾	chǎo sān bù zhān	99
 朝散大夫	cháo sàn dà fū	644
+抄三十遍	chāo sān shí biàn	6
 潮汕餐馆	cháo shàn cān guǎn	212
 潮汕地区	cháo shàn dì qū	364
 潮汕赌经	cháo shàn dǔ jīng	45
@@ -821499,6 +821514,7 @@ sort: by_weight
 朝思暮念	cháo sī mù niàn	230
 吵死人啦	chǎo sǐ rén la	153
 吵死人了	chǎo sǐ rén le	22
+抄四十遍	chāo sì shí biàn	6
 抄送机关	chāo sòng jī guān	302
 超速大王	chāo sù dà wáng	4
 超速驾驶	chāo sù jià shǐ	603
@@ -821761,6 +821777,7 @@ sort: by_weight
 超一流的	chāo yì liú de	609
 超异能族	chāo yì néng zú	45
 抄一千遍	chāo yì qiān biàn	6
+抄一万遍	chāo yí wàn biàn	69
 超毅网络	chāo yì wǎng luò	180
 焯一下水	chāo yí xià shuǐ	418
 超以象外	chāo yǐ xiàng wài	16
@@ -830532,6 +830549,7 @@ sort: by_weight
 抽气通风	chōu qì tōng fēng	50
 抽汽系统	chōu qì xì tǒng	50
 臭气熏天	chòu qì xūn tiān	254
+抽起烟来	chōu qǐ yān lái	126
 抽签结果	chōu qiān jié guǒ	729
 抽签决定	chōu qiān jué dìng	279
 抽签仪式	chōu qiān yí shì	6
@@ -938872,6 +938890,7 @@ sort: by_weight
 海淀一模	hǎi diàn yì mó	266
 海淀医院	hǎi diàn yī yuàn	508
 海淀中街	hǎi diàn zhōng jiē	3
+还掉头发	hái diào tóu fà	19
 海蝶音乐	hǎi dié yīn yuè	53
 还定不到	hái dìng bú dào	238
 海鼎科技	hǎi dǐng kē jì	45
@@ -963182,7 +963201,6 @@ sort: by_weight
 换电重卡	huàn diàn zhòng kǎ	45
 还掉贷款	huán diào dài kuǎn	16
 还掉房贷	huán diào fáng dài	162
-还掉头发	huán diào tóu fa	19
 环丁醇酸	huán dīng chún suān	90
 环丁二酮	huán dīng èr tóng	117
 环丁二烯	huán dīng èr xī	387
