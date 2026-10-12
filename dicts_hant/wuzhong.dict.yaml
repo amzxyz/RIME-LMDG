@@ -2687,6 +2687,7 @@ sort: by_weight
 雀蠅	què yíng	87
 雀鶯	què yīng	60
 雀魚	què yú	70
+雀魚	què yú	63
 裙魚	qún yú	73
 髯蝠	rán fú	85
 髯蜥	rán xī	72
@@ -3899,6 +3900,7 @@ sort: by_weight
 翼樸	yì pǔ	59
 異蜻	yì qīng	93
 異蛸	yì shāo	70
+蟻獅	yǐ shī	8
 翼手	yì shǒu	168
 異鼠	yì shǔ	88
 異螋	yì sōu	93
@@ -19657,6 +19659,8 @@ sort: by_weight
 矮紅娘魚	ǎi hóng niáng yú	8
 矮化線蟲	ǎi huà xiàn chóng	1
 埃及蟾蜍	āi jí chán chú	1
+埃及聖䴉	āi jí shèng huán	52
+埃及伊蚊	āi jí yī wén	57
 矮腳角龍	ǎi jiǎo jiǎo lóng	1
 矮鋸齒龍	ǎi jù chǐ lóng	1
 艾肯氏菌	ài kěn shì jūn	1
@@ -26253,6 +26257,7 @@ sort: by_weight
 青翅飛蝨	qīng chì fēi shī	1
 氫單胞菌	qīng dān bāo jūn	1
 青彈塗魚	qīng dàn tú yú	23
+青島藨草	qīng dǎo biāo cǎo	50
 清道夫魚	qīng dào fū yú	24
 清燉甲魚	qīng dùn jiǎ yú	17
 青蛾蠟蟬	qīng é là chán	1
@@ -27226,6 +27231,7 @@ sort: by_weight
 松子桂魚	sōng zǐ guì yú	10
 松子茄魚	sōng zǐ qié yú	6
 蘇伯特䗴	sū bó tè tíng	1
+蘇島鵑鵙	sū dǎo juān jú	99
 素豆娘魚	sù dòu niáng yú	6
 蘇尼特龍	sū ní tè lóng	1
 蘇氏飛魚	sū shì fēi yú	9
@@ -29208,6 +29214,8 @@ sort: by_weight
 印度樹鼩	yìn dù shù qú	1
 印度水獺	yìn dù shuǐ tǎ	1
 印度瓦韋	yìn dù wǎ wéi	1
+印度兀鷲	yìn dù wù jiù	4
+印度仙鶲	yìn dù xiān wēng	45
 印度泳鰍	yìn dù yǒng qiū	1
 隱盾葉甲	yǐn dùn yè jiǎ	1
 銀方頭魚	yín fāng tóu yú	5
@@ -30024,7 +30032,13 @@ sort: by_weight
 豬形果蝠	zhū xíng guǒ fú	1
 柱星珊瑚	zhù xīng shān hú	1
 住血線蟲	zhù xuè xiàn chóng	1
+珠芽艾麻	zhū yá ài má	76
 侏啞霸鶲	zhū yǎ bà wēng	1
+珠芽百合	zhū yá bǎi hé	153
+珠芽狗脊	zhū yá gǒu jǐ	99
+珠芽景天	zhū yá jǐng tiān	117
+珠芽魔芋	zhū yá mó yù	144
+珠芽烏頭	zhū yá wū tóu	76
 珠眼嘲鶇	zhū yǎn cháo dōng	1
 珠眼蜥魚	zhū yǎn xī yú	1
 竹葉百合	zhú yè bǎi hé	5
@@ -30101,7 +30115,6 @@ sort: by_weight
 紫背細辛	zǐ bèi xì xīn	76
 紫背沼蘭	zǐ bèi zhǎo lán	76
 紫背竹芋	zǐ bèi zhú yù	162
-紫背竹芋	zǐ bèi zhú yù	1
 紫翅野螟	zǐ chì yě míng	1
 紫頂蜂鳥	zǐ dǐng fēng niǎo	1
 紫額錦魚	zǐ é jǐn yú	8
@@ -30330,7 +30343,7 @@ sort: by_weight
 阿氏劍尾魚	ā shì jiàn wěi yú	1
 阿氏鋸鱗魚	ā shì jù lín yú	1
 阿氏麗脂鯉	ā shì lì zhī lǐ	1
-阿氏六鬚鯰	ā shì liù xū nián	1
+阿氏六鬚鯰	ā shì liù xū nián	7
 阿氏龍佔魚	ā shì lóng zhàn yú	1
 阿氏盲胡鯰	ā shì máng hú nián	1
 阿氏毛鼻鯰	ā shì máo bí nián	1

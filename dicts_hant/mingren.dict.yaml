@@ -88,7 +88,6 @@ sort: by_weight
 蔡邕	cài yōng	664
 蔡澤	cài zé	558
 殘雪	cán xuě	2123
-倉頡	cāng jié	1872
 曹昂	cáo áng	706
 曹彬	cáo bīn	345
 曹豳	cáo bīn	202
@@ -1224,6 +1223,7 @@ sort: by_weight
 納什	nà shí	6876
 娜塔	nà tǎ	3909
 耐庵	nài ān	12
+哪吒	né zhā	4487
 尼采	ní cǎi	4794
 尼克	ní kè	2810
 倪匡	ní kuāng	860
@@ -1505,6 +1505,7 @@ sort: by_weight
 孫恩	sūn ēn	107
 孫魴	sūn fáng	153
 孫皓	sūn hào	345
+孫堅	sūn jiān	147
 孫峻	sūn jùn	101
 孫科	sūn kē	881
 孫亮	sūn liàng	201
@@ -1619,7 +1620,7 @@ sort: by_weight
 王澍	wáng shù	449
 王朔	wáng shuò	996
 王肅	wáng sù	77
-王維	wáng wéi	279
+王維	wáng wéi	579
 王微	wáng wēi	48
 王吸	wáng xī	78
 王獻	wáng xiàn	832
@@ -2039,6 +2040,7 @@ sort: by_weight
 胤禛	yìn zhēn	395
 英布	yīng bù	1107
 穎超	yǐng chāo	701
+嬴蕩	yíng dàng	10
 英格	yīng gé	137
 嬴稷	yíng jì	38
 英台	yīng tái	47
@@ -2105,6 +2107,8 @@ sort: by_weight
 元稹	yuán zhěn	859
 約伯	yuē bó	38
 樂兒	yuè er	53
+岳飛	yuè fēi	540
+岳甫	yuè fǔ	66
 樂和	yuè he	298
 約拿	yuē ná	669
 月如	yuè rú	345
@@ -2169,6 +2173,7 @@ sort: by_weight
 張懸	zhāng xuán	914
 張勳	zhāng xūn	855
 張巡	zhāng xún	812
+張也	zhāng yě	577
 張毅	zhāng yì	172
 張儀	zhāng yí	109
 張嶷	zhāng yí	0
@@ -2227,7 +2232,6 @@ sort: by_weight
 周勃	zhōu bó	1483
 周倉	zhōu cāng	217
 周昌	zhōu chāng	648
-周處	zhōu chǔ	41
 周魴	zhōu fáng	121
 周公	zhōu gōng	2173
 周后	zhōu hòu	1193
@@ -2454,7 +2458,6 @@ sort: by_weight
 白河愁	bái hé chóu	13
 百合子	bǎi hé zi	376
 白居易	bái jū yì	6227
-柏拉圖	bǎi lā tú	8453
 白朗寧	bái lǎng níng	22
 百里奚	bǎi lǐ xī	85
 白龍王	bái lóng wáng	9
@@ -2603,6 +2606,7 @@ sort: by_weight
 薄伽丘	bó jiā qiū	85
 博卡薩	bó kǎ sà	9
 波拉克	bō lā kè	69
+柏拉圖	bó lā tú	8453
 勃蘭特	bó lán tè	104
 勃朗寧	bó lǎng níng	122
 勃朗特	bó lǎng tè	418
@@ -4205,21 +4209,37 @@ sort: by_weight
 公輸子	gōng shū zǐ	13
 貢斯當	gòng sī dāng	116
 公孫敖	gōng sūn áo	349
+公孫表	gōng sūn biǎo	346
+公孫策	gōng sūn cè	536
 公孫丑	gōng sūn chǒu	19
+公孫楚	gōng sūn chǔ	342
+公孫丁	gōng sūn dīng	230
 公孫度	gōng sūn dù	107
+公孫段	gōng sūn duàn	378
+公孫範	gōng sūn fàn	207
+公孫杲	gōng sūn gǎo	45
 公孫恭	gōng sūn gōng	38
+公孫詭	gōng sūn guǐ	324
 公孫賀	gōng sūn hè	361
 公孫弘	gōng sūn hóng	94
+公孫晃	gōng sūn huǎng	261
 公孫賈	gōng sūn jiǎ	32
+公孫接	gōng sūn jiē	342
 公孫康	gōng sūn kāng	47
 公孫龍	gōng sūn lóng	198
+公孫申	gōng sūn shēn	225
 公孫勝	gōng sūn shèng	226
+公孫壽	gōng sūn shòu	202
 公孫述	gōng sūn shù	251
+公孫夏	gōng sūn xià	338
+公孫續	gōng sūn xù	212
 公孫衍	gōng sūn yǎn	110
 公孫鞅	gōng sūn yāng	315
 公孫淵	gōng sūn yuān	261
+公孫越	gōng sūn yuè	346
 公孫瓚	gōng sūn zàn	1099
 公孫止	gōng sūn zhǐ	116
+公孫周	gōng sūn zhōu	220
 龔廷賢	gōng tíng xián	6
 龔偉傑	gōng wěi jié	6
 龔文祥	gōng wén xiáng	14
@@ -4847,8 +4867,8 @@ sort: by_weight
 胡睿寶	hú ruì bǎo	9
 胡瑞瀾	hú ruì lán	261
 胡若愚	hú ruò yú	472
-胡塞爾	hú sāi ěr	603
-胡塞尼	hú sāi ní	50
+胡塞爾	hú sài ěr	603
+胡塞尼	hú sài ní	50
 胡三省	hú sān shěng	594
 胡善祥	hú shàn xiáng	6
 胡善餘	hú shàn yú	261
@@ -12360,6 +12380,7 @@ sort: by_weight
 袁宗道	yuán zōng dào	3
 袁宗第	yuán zōng dì	16
 袁祖銘	yuán zǔ míng	468
+岳不群	yuè bù qún	1903
 岳海岩	yuè hǎi yán	230
 約翰斯	yuē hàn sī	97
 約翰王	yuē hàn wáng	536
@@ -12709,6 +12730,7 @@ sort: by_weight
 趙公明	zhào gōng míng	41
 趙光義	zhào guāng yì	823
 趙皇后	zhào huáng hòu	360
+趙家駒	zhào jiā jū	52
 趙簡子	zhào jiǎn zǐ	88
 趙克志	zhào kè zhì	9
 趙匡義	zhào kuāng yì	88
@@ -13582,9 +13604,6 @@ sort: by_weight
 柏佳俊因	bǎi jiā jùn yīn	76
 百劍堂主	bǎi jiàn táng zhǔ	320
 白蠟明經	bái là míng jīng	4
-柏拉圖的	bǎi lā tú de	909
-柏拉圖說	bǎi lā tú shuō	126
-柏郎嘉賓	bǎi láng jiā bīn	310
 柏勒洛豐	bǎi lè luò fēng	351
 百里弘毅	bǎi lǐ hóng yì	4
 百里毅行	bǎi lǐ yì xíng	243
@@ -14380,7 +14399,6 @@ sort: by_weight
 東山魁夷	dōng shān kuí yí	392
 洞山良价	dòng shān liáng jià	3
 東條英機	dōng tiáo yīng jī	270
-東吳孫權	dōng wú sūn quán	446
 東野圭吾	dōng yě guī wú	2999
 東垣老人	dōng yuán lǎo rén	50
 東周靖公	dōng zhōu jìng gōng	99
@@ -15008,6 +15026,7 @@ sort: by_weight
 黃檗希運	huáng bò xī yùn	252
 黃帝軒轅	huáng dì xuān yuán	441
 皇甫德參	huáng fǔ dé shēn	144
+皇夫菲臘	huáng fū fēi là	248
 皇甫惟明	huáng fǔ wéi míng	44
 黃蓋公覆	huáng gài gōng fù	130
 皇后婉容	huáng hòu wǎn róng	482
@@ -16721,7 +16740,11 @@ sort: by_weight
 善導和尚	shàn dǎo hé shang	117
 山岡鐵舟	shān gāng tiě zhōu	306
 善會禪師	shàn huì chán shī	171
+山口春吉	shān kǒu chūn jí	117
 山口高志	shān kǒu gāo zhì	99
+山口教繼	shān kǒu jiào jì	266
+山口瑞鳳	shān kǒu ruì fèng	194
+山口素臣	shān kǒu sù chén	256
 山口祐司	shān kǒu yòu sī	230
 山瀨功治	shān lài gōng zhì	180
 山魯佐德	shān lǔ zuǒ dé	47
@@ -17104,8 +17127,6 @@ sort: by_weight
 隋帝楊廣	suí dì yáng guǎng	99
 隋帝楊堅	suí dì yáng jiān	3
 孫策伯符	sūn cè bó fú	266
-孫堅文臺	sūn jiān wén tái	76
-孫權仲謀	sūn quán zhòng móu	180
 索德伯格	suǒ dé bó gé	504
 所羅巴伯	suǒ luó bā bó	382
 所羅門王	suǒ luó mén wáng	141
@@ -17589,7 +17610,6 @@ sort: by_weight
 吳越太祖	wú yuè tài zǔ	220
 武智鐵二	wǔ zhì tiě èr	99
 無著菩薩	wú zhù pú sà	378
-吳主孫權	wú zhǔ sūn quán	360
 五祖弘忍	wǔ zǔ hóng rěn	405
 希阿榮博	xī ā róng bó	382
 西奧迪尼	xī ào dí ní	504
