@@ -7,9 +7,30 @@ name: yaopin
 version: "LTS"
 sort: by_weight
 ...
+阿咖片	ā kā piàn	10
+艾满欣	ài mǎn xīn	13
+安坤片	ān kūn piàn	10
+安乐片	ān lè piàn	45
+安脑片	ān nǎo piàn	10
+痹欣片	bì xīn piàn	45
+表飞鸣	biǎo fēi míng	220
+柴黄片	chái huáng piàn	10
+潮安片	cháo ān piàn	10
+慈航片	cí háng piàn	10
+胆黄片	dǎn huáng piàn	10
+胆康片	dǎn kāng piàn	10
+丹蒌片	dān lóu piàn	10
+丹七片	dān qī piàn	99
+丹参片	dān shēn piàn	10
+荡石片	dàng shí piàn	10
+调脂片	diào zhī piàn	10
+肺宁片	fèi níng piàn	10
+酚咖片	fēn kā piàn	364
+妇安欣	fù ān xīn	90
+妇良片	fù liáng piàn	10
+复明片	fù míng piàn	99
 阿达林	ā dá lín	144
 阿的平	ā dì píng	3
-阿咖片	ā kā piàn	10
 阿霉素	ā méi sù	57
 阿莫仙	ā mò xiān	387
 阿片粉	ā piàn fěn	252
@@ -18,9 +39,7 @@ sort: by_weight
 阿托品	ā tuō pǐn	528
 爱宝疗	ài bǎo liáo	351
 爱必妥	ài bì tuǒ	13
-艾满欣	ài mǎn xīn	13
 爱乐维	ài yuè wéi	504
-安佰深	ān bǎi shēn	225
 氨苯砜	ān běn fēng	22
 安必仙	ān bì xiān	225
 胺丙啉	àn bǐng lín	45
@@ -36,15 +55,12 @@ sort: by_weight
 氨酚喹	ān fēn kuí	4
 安氟醚	ān fú mí	99
 安氟烷	ān fú wán	45
-安坤片	ān kūn piàn	10
-安乐片	ān lè piàn	45
 氨力农	ān lì nóng	3
 安络血	ān luò xuè	387
 安眠酮	ān mián tóng	405
 按摩乳	àn mó rǔ	16
 安钠咖	ān nà kā	13
 安乃近	ān nǎi jìn	44
-安脑片	ān nǎo piàn	10
 安脑丸	ān nǎo wán	130
 氨曲南	ān qǔ nán	6
 安瑞克	ān ruì kè	464
@@ -201,7 +217,6 @@ sort: by_weight
 必妥碘	bì tuǒ diǎn	50
 吡维铵	bǐ wéi ǎn	180
 必效散	bì xiào sàn	45
-痹欣片	bì xīn piàn	45
 铋溴酚	bì xiù fēn	144
 鼻炎膏	bí yán gāo	346
 鼻眼净	bí yǎn jìng	302
@@ -216,7 +231,6 @@ sort: by_weight
 避孕丸	bì yùn wán	378
 避孕针	bì yùn zhēn	35
 避子汤	bì zǐ tāng	13
-表飞鸣	biǎo fēi míng	220
 鳖甲胶	biē jiǎ jiāo	194
 别嘌醇	bié piào chún	207
 丙吡胺	bǐng bǐ àn	3
@@ -243,7 +257,6 @@ sort: by_weight
 波立维	bō lì wéi	22
 博路定	bó lù dìng	9
 波生坦	bō shēng tǎn	320
-博辛瓦	bó xīn wǎ	6
 波依定	bō yī dìng	356
 补肺汤	bǔ fèi tāng	234
 补肺丸	bǔ fèi wán	16
@@ -264,7 +277,6 @@ sort: by_weight
 柴胡汤	chái hú tāng	540
 柴胡丸	chái hú wán	4
 柴胡饮	chái hú yǐn	297
-柴黄片	chái huáng piàn	10
 柴苓汤	chái líng tāng	4
 柴苓饮	chái líng yǐn	45
 柴平煎	chái píng jiān	45
@@ -276,7 +288,6 @@ sort: by_weight
 肠胃康	cháng wèi kāng	292
 畅欣通	chàng xīn tōng	45
 长压定	cháng yā dìng	328
-潮安片	cháo ān piàn	10
 沉香曲	chén xiāng qǔ	76
 承气汤	chéng qì tāng	41
 乘晕宁	chéng yūn níng	441
@@ -294,10 +305,9 @@ sort: by_weight
 创口贴	chuāng kǒu tiē	590
 创炎宁	chuàng yán níng	45
 吹风散	chuī fēng sàn	346
-慈航片	cí háng piàn	10
 慈航丸	cí háng wán	302
 磁疗贴	cí liáo tiē	342
-雌三醇	cí sān chún	207
+雌三醇	biǎo cí sān chún	207
 磁朱丸	cí zhū wán	234
 磁珠丸	cí zhū wán	65
 葱白饮	cōng bái yǐn	360
@@ -317,21 +327,12 @@ sort: by_weight
 大力补	dà lì bǔ	38
 大仑丁	dà lún dīng	162
 达那唑	dá nà zuò	6
-达托洛	dá tuō luò	109
 达原饮	dá yuán yǐn	186
 黛蛤散	dài há sàn	248
 黛力新	dài lì xīn	25
 代针散	dài zhēn sàn	45
-蛋白银	dàn bái yín	312
 胆茶碱	dǎn chá jiǎn	6
-胆黄片	dǎn huáng piàn	10
-蛋黄油	dàn huáng yóu	644
-胆康片	dǎn kāng piàn	10
-丹蒌片	dān lóu piàn	10
 丹那唑	dān nà zuò	238
-丹皮酚	dān pí fēn	25
-丹七片	dān qī piàn	99
-丹参片	dān shēn piàn	10
 丹参饮	dān shēn yǐn	117
 胆石片	dǎn shí piàn	490
 胆维他	dǎn wéi tā	99
@@ -339,7 +340,6 @@ sort: by_weight
 当归散	dāng guī sàn	3
 当归汤	dāng guī tāng	378
 当归丸	dāng guī wán	297
-荡石片	dàng shí piàn	10
 导赤散	dǎo chì sàn	356
 导赤丸	dǎo chì wán	179
 导水丸	dǎo shuǐ wán	45
@@ -359,8 +359,6 @@ sort: by_weight
 地黄汤	dì huáng tāng	549
 地黄丸	dì huáng wán	31
 地卡因	dì kǎ yīn	382
-狄克敏	dí kè mǐn	90
-迪迈欣	dí mài xīn	45
 地霉素	dì méi sù	220
 涤痰汤	dí tán tāng	171
 涤痰丸	dí tán wán	45
@@ -386,10 +384,8 @@ sort: by_weight
 靛玉红	diàn yù hóng	162
 调肝散	diào gān sàn	45
 调肝汤	diào gān tāng	162
-调脂片	diào zhī piàn	10
 跌打酒	diē dǎ jiǔ	315
 跌打丸	diē dǎ wán	6
-蝶脉灵	dié mài líng	45
 定喘汤	dìng chuǎn tāng	194
 定风丹	dìng fēng dān	238
 丁卡因	dīng kǎ yīn	13
@@ -417,49 +413,33 @@ sort: by_weight
 多吉美	duō jí měi	450
 多库酯	duō kù zhǐ	297
 多虑平	duō lǜ píng	410
-多玛殊	duō mǎ shū	50
 多酶片	duō méi piàn	6
-多尼芬	duō ní fēn	378
-多尼韦	duō ní wéi	50
-多培欣	duō péi xīn	90
 多瑞吉	duō ruì jí	270
 多塞平	duō sāi píng	41
-多赛益	duō sài yì	220
 多烯康	duō xī kāng	230
 阿胶粉	ē jiāo fěn	3
 阿胶膏	ē jiāo gāo	437
 阿胶汤	ē jiāo tāng	428
 阿胶珠	ē jiāo zhū	248
-厄利空	è lì kōng	28
 𫫇霉灵	ě méi líng	52
 莪术油	é zhú yóu	225
 恩必普	ēn bì pǔ	194
-恩查素	ēn chá sù	4
 恩得欣	ēn dé xīn	90
 恩氟醚	ēn fú mí	194
 恩肤霜	ēn fū shuāng	378
 恩氟烷	ēn fú wán	13
 恩卡尼	ēn kǎ ní	252
-恩美力	ēn měi lì	225
-恩诺欣	ēn nuò xīn	45
-恩图曼	ēn tú màn	392
-恩维拉	ēn wéi lā	279
 二陈汤	èr chén tāng	28
 二陈丸	èr chén wán	19
 耳聪丸	ěr cōng wán	45
 二氮嗪	èr dàn qín	6
 儿肤康	ér fū kāng	99
 耳肤灵	ěr fū líng	225
-尔福令	ěr fú lìng	76
-二硫龙	èr liú lóng	144
 二妙散	èr miào sàn	252
 二妙丸	èr miào wán	306
-二替尼	èr tì ní	90
 二仙汤	èr xiān tāng	3
-儿泻康	ér xiè kāng	194
 二至丸	èr zhì wán	6
 发汗散	fā hàn sàn	396
-法玛新	fǎ mǎ xīn	4
 凡士林	fán shì lín	609
 矾石汤	fán shí tāng	4
 矾石丸	fán shí wán	45
@@ -473,7 +453,6 @@ sort: by_weight
 非那根	fēi nà gēn	500
 非那明	fēi nà míng	90
 非那酮	fēi nà tóng	90
-肺宁片	fèi níng piàn	10
 痱子粉	fèi zǐ fěn	100
 痱子水	fèi zi shuǐ	279
 芬必得	fēn bì dé	217
@@ -483,7 +462,6 @@ sort: by_weight
 粉刺露	fěn cì lù	194
 酚甘油	fēn gān yóu	302
 粉金散	fěn jīn sàn	45
-酚咖片	fēn kā piàn	364
 芬那露	fēn nà lù	130
 奋乃静	fèn nǎi jìng	44
 芬太尼	fēn tài ní	182
@@ -495,33 +473,18 @@ sort: by_weight
 风引汤	fēng yǐn tāng	117
 风油精	fēng yóu jīng	895
 氟胺酮	fú àn tóng	144
-妇安欣	fù ān xīn	90
-妇宝宁	fù bǎo níng	207
 肤疾宁	fū jí níng	266
-妇康安	fù kāng ān	792
 妇康片	fù kāng piàn	212
 氟康唑	fú kāng zuò	66
-福奎阿	fú kuí ā	333
-福来恩	fú lái ēn	464
-富莱欣	fù lái xīn	90
 肤乐霜	fū lè shuāng	436
-福乐烯	fú lè xī	90
-妇良片	fù liáng piàn	10
-福灵安	fú líng ān	297
 茯苓膏	fú líng gāo	5
 茯苓汤	fú líng tāng	338
 茯苓丸	fú líng wán	428
 茯苓饮	fú líng yǐn	130
-芙露欣	fú lù xīn	90
-氟罗新	fú luó xīn	90
 复脉汤	fù mài tāng	315
-福美林	fú měi lín	50
-肤美灵	fū měi líng	418
 氟美松	fú měi sōng	212
-复美欣	fù měi xīn	45
 氟米龙	fú mǐ lóng	252
 氟米松	fú mǐ sōng	252
-复明片	fù míng piàn	99
 妇宁丸	fù níng wán	288
 氟哌酸	fú pài suān	38
 浮萍丸	fú píng wán	50
@@ -536,7 +499,6 @@ sort: by_weight
 扶他林	fú tā lín	207
 氟西泮	fú xī pàn	209
 氟西汀	fú xī tīng	267
-复心片	fù xīn piàn	10
 妇炎丸	fù yán wán	315
 附子汤	fù zǐ tāng	374
 钙镁片	gài měi piàn	22
@@ -563,8 +525,7 @@ sort: by_weight
 肝宁片	gān níng piàn	144
 甘珀酸	gān pò suān	144
 干扰素	gān rǎo sù	471
-肝素钠	gān sù nà	162
-肝苏片	gān sū piàn	10
+肝素钠	dá gān sù nà	162
 甘油剂	gān yóu jì	180
 甘油栓	gān yóu shuān	369
 肛泰栓	gāng tài shuān	117
@@ -589,14 +550,10 @@ sort: by_weight
 固精丸	gù jīng wán	436
 固经丸	gù jīng wán	285
 古柯碱	gǔ kē jiǎn	16
-古拉定	gǔ lā dìng	220
-骨肽片	gǔ tài piàn	10
 骨痛贴	gǔ tòng tiē	482
-谷维佳	gǔ wéi jiā	45
 谷维素	gǔ wéi sù	192
 固阴煎	gù yīn jiān	99
 固元膏	gù yuán gāo	572
-固元片	gù yuán piàn	10
 瓜蒂散	guā dì sàn	144
 瓜蒂汤	guā dì tāng	45
 胍法辛	guā fǎ xīn	338
@@ -639,7 +596,6 @@ sort: by_weight
 果导片	guǒ dǎo piàn	19
 国公酒	guó gōng jiǔ	3
 果纳芬	guǒ nà fēn	180
-哈力克	hā lì kè	308
 海浮散	hǎi fú sàn	76
 海狗丸	hǎi gǒu wán	342
 海蛤散	hǎi há sàn	45
@@ -658,10 +614,9 @@ sort: by_weight
 荷叶丸	hé yè wán	117
 黑膏药	hēi gāo yào	486
 黑锡丹	hēi xī dān	220
-红花油	hóng huā yóu	320
+红花油	diǎn hóng huā yóu	320
 红霉素	hóng méi sù	276
 红参片	hóng shēn piàn	6
-红药片	hóng yào piàn	10
 红药水	hóng yào shuǐ	179
 喉风散	hóu fēng sàn	405
 猴枣散	hóu zǎo sàn	544
@@ -685,7 +640,6 @@ sort: by_weight
 化痰饮	huà tán yǐn	220
 华佗膏	huà tuó gāo	3
 化育丹	huà yù dān	45
-化痔片	huà zhì piàn	10
 化痔栓	huà zhì shuān	243
 槐花散	huái huā sàn	144
 槐角丸	huái jiǎo wán	364
@@ -696,7 +650,6 @@ sort: by_weight
 磺胺胍	huáng àn guā	162
 磺胺林	huáng àn lín	50
 磺达嗪	huáng dá qín	50
-黄根片	huáng gēn piàn	10
 黄连膏	huáng lián gāo	284
 黄连素	huáng lián sù	107
 黄连汤	huáng lián tāng	266
@@ -705,7 +658,6 @@ sort: by_weight
 黄芪精	huáng qí jīng	274
 黄芪片	huáng qí piàn	297
 黄芪汤	huáng qí tāng	414
-黄芩片	huáng qín piàn	10
 黄芩汤	huáng qín tāng	212
 黄藤素	huáng téng sù	360
 黄体酮	huáng tǐ tóng	336
@@ -717,7 +669,7 @@ sort: by_weight
 活络油	huó luò yóu	35
 活血散	huó xuè sàn	670
 活血汤	huó xuè tāng	410
-活疫苗	huó yì miáo	587
+活疫苗	miè huó yì miáo	587
 肌安松	jī ān sōng	45
 吉贝素	jí bèi sù	279
 济川煎	jì chuān jiān	3
@@ -756,7 +708,6 @@ sort: by_weight
 健脾丸	jiàn pí wán	19
 间羟胺	jiān qiǎng àn	292
 健胃散	jiàn wèi sàn	306
-健阳片	jiàn yáng piàn	10
 降尘丹	jiàng chén dān	52
 降钙素	jiàng gài sù	50
 姜黄片	jiāng huáng piàn	99
@@ -782,7 +733,6 @@ sort: by_weight
 桔梗散	jié gěng sàn	76
 桔梗汤	jié gěng tāng	3
 桔梗丸	jié gěng wán	4
-接骨片	jiē gǔ piàn	10
 接骨散	jiē gǔ sàn	356
 解痉素	jiě jìng sù	45
 解酒灵	jiě jiǔ líng	225
@@ -800,7 +750,6 @@ sort: by_weight
 金胆片	jīn dǎn piàn	130
 筋骨片	jīn gǔ piàn	261
 金果饮	jīn guǒ yǐn	288
-金红片	jīn hóng piàn	10
 金黄散	jīn huáng sàn	360
 金鸡片	jīn jī piàn	266
 金霉素	jīn méi sù	16
@@ -814,7 +763,6 @@ sort: by_weight
 颈复康	jǐng fù kāng	432
 肼嘌啉	jǐng piào lín	90
 肼屈嗪	jǐng qū qín	6
-颈痛片	jǐng tòng piàn	10
 京万红	jīng wàn hóng	19
 九华膏	jiǔ huá gāo	3
 酒积丸	jiǔ jī wán	45
@@ -849,7 +797,6 @@ sort: by_weight
 康莱特	kāng lái tè	266
 康力龙	kāng lì lóng	9
 康泰克	kāng tài kè	85
-抗纤号	kàng xiān hào	66
 抗血清	kàng xuè qīng	16
 抗炎灵	kàng yán líng	234
 咳必清	ké bì qīng	9
@@ -858,7 +805,6 @@ sort: by_weight
 可待因	kě dài yīn	122
 可的松	kě dì sōng	57
 克感敏	kè gǎn mǐn	328
-可卡莉	kě kǎ lì	90
 可卡因	kě kǎ yīn	606
 克咳敏	kè ké mǐn	194
 可拉明	kě lā míng	6
@@ -891,10 +837,7 @@ sort: by_weight
 宽筋散	kuān jīn sàn	45
 宽中散	kuān zhōng sàn	117
 宽中汤	kuān zhōng tāng	45
-喹硫平	kuí liú píng	273
-奎尼丁	kuí ní dīng	31
 奎宁定	kuí níng dìng	45
-喹诺酮	kuí nuò tóng	22
 溃疡贴	kuì yáng tiē	414
 坤宝丸	kūn bǎo wán	180
 坤净栓	kūn jìng shuān	50
@@ -932,13 +875,12 @@ sort: by_weight
 力尔凡	lì ěr fán	4
 利凡诺	lì fán nuò	392
 利肺片	lì fèi piàn	261
-利福定	lì fú dìng	50
+利福定	huò lì fú dìng	50
 利福平	lì fú píng	210
 利福舒	lì fú shū	90
 利福新	lì fú xīn	45
 利福欣	lì fú xīn	38
 立复欣	lì fù xīn	26
-利肝片	lì gān piàn	10
 利甘平	lì gān píng	45
 立健松	lì jiàn sōng	90
 利君沙	lì jūn shā	3
@@ -966,7 +908,6 @@ sort: by_weight
 力月西	lì yuè xī	3
 离照汤	lí zhào tāng	45
 立止血	lì zhǐ xuè	194
-理中片	lǐ zhōng piàn	10
 理中汤	lǐ zhōng tāng	513
 理中丸	lǐ zhōng wán	97
 链激酶	liàn jī méi	13
@@ -983,7 +924,7 @@ sort: by_weight
 淋必治	lín bì zhì	261
 膦甲酸	lìn jiǎ suān	256
 磷霉素	lín méi sù	6
-灵芝片	líng zhī piàn	50
+灵芝片	zǐ líng zhī piàn	50
 硫必利	liú bì lì	3
 柳氮磺	liǔ dàn huáng	500
 流感丸	liú gǎn wán	4
@@ -1050,12 +991,10 @@ sort: by_weight
 吗啡针	mǎ fēi zhēn	9
 妈富隆	mā fù lóng	245
 麻黄汤	má huáng tāng	135
-吗啉胍	mǎ lín guā	30
 妈咪爱	mā mī ài	31
 麻仁丸	má rén wán	19
 麦角胺	mài jiǎo àn	19
 脉络宁	mài luò níng	266
-脉平片	mài píng piàn	10
 迈之灵	mài zhī líng	16
 麦滋林	mài zī lín	297
 慢心律	màn xīn lǜ	310
@@ -1124,7 +1063,6 @@ sort: by_weight
 萘普生	nài pǔ shēng	122
 奈普生	nài pǔ shēng	110
 萘替芬	nài tì fēn	234
-脑安片	nǎo ān piàn	10
 脑复康	nǎo fù kāng	6
 脑复新	nǎo fù xīn	243
 脑活素	nǎo huó sù	328
@@ -1139,12 +1077,12 @@ sort: by_weight
 粘菌素	nián jūn sù	308
 尿激酶	niào jī méi	41
 尿素霜	niào sù shuāng	16
-尿酸酶	niào suān méi	45
+尿酸酶	mǎ niào suān méi	45
 尿炎清	niào yán qīng	76
 宁肺汤	níng fèi tāng	45
 宁嗽膏	níng sòu gāo	45
 宁嗽汤	níng sòu tāng	45
-凝血酶	níng xuè méi	45
+凝血酶	qián níng xuè méi	45
 宁血汤	níng xuè tāng	45
 宁志膏	níng zhì gāo	45
 宁志丸	níng zhì wán	45
@@ -1157,20 +1095,13 @@ sort: by_weight
 诺和龙	nuò hé lóng	360
 诺和锐	nuò hé ruì	374
 诺雷得	nuò léi dé	60
-诺日朗	nuò rì lǎng	9
 诺沙星	nuò shā xīng	500
 诺仕帕	nuò shì pà	50
 女金丹	nǚ jīn dān	310
-女金片	nǚ jīn piàn	10
 疟涤平	nüè dí píng	76
 藕节炭	ǒu jié tàn	171
-欧莱诺	ōu lái nuò	234
-欧力威	ōu lì wēi	580
-派比安	pài bǐ ān	508
 排毒丸	pái dú wán	76
 哌甲酯	pài jiǎ zhǐ	576
-派可欣	pài kě xīn	45
-派罗宁	pài luó níng	45
 派罗欣	pài luó xīn	261
 排脓散	pái nóng sàn	220
 排脓汤	pái nóng tāng	50
@@ -1187,10 +1118,8 @@ sort: by_weight
 佩吩嗪	pèi fēn qín	45
 培他啶	péi tā dìng	297
 培元丹	péi yuán dān	423
-朋卡诺	péng kǎ nuò	279
 皮康霜	pí kāng shuāng	378
 皮康王	pí kāng wáng	436
-脾可欣	pí kě xīn	306
 匹莫林	pǐ mò lín	9
 枇杷膏	pí pá gāo	63
 枇杷露	pí pá lù	22
@@ -1205,20 +1134,13 @@ sort: by_weight
 平消片	píng xiāo piàn	220
 泼尼松	pō ní sōng	207
 破血丹	pò xuè dān	99
-普贝生	pǔ bèi shēng	220
-普贝生	pǔ bèi shēng	144
-蒲地蓝	pú dì lán	97
 扑尔敏	pū ěr mǐn	220
 蒲灰散	pú huī sàn	45
 葡激酶	pú jī méi	171
-普拉固	pǔ lā gù	225
-普兰诺	pǔ lán nuò	364
-普乐林	pǔ lè lín	45
-普乐美	pǔ lè měi	3
 普马嗪	pǔ mǎ qín	117
 普米克	pǔ mǐ kè	338
 扑米酮	pū mǐ tóng	3
-葡糖胺	pú táng àn	45
+葡糖胺	jiǎ pú táng àn	45
 扑痫酮	pū xián tóng	266
 七返丹	qī fǎn dān	45
 脐风散	qí fēng sàn	50
@@ -1238,15 +1160,12 @@ sort: by_weight
 千金片	qiān jīn piàn	436
 牵正散	qiān zhèng sàn	230
 强的松	qiáng de sōng	113
-强肝片	qiáng gān piàn	10
 羟钴胺	qiǎng gǔ àn	279
 羟基脲	qiǎng jī niào	333
 强筋松	qiáng jīn sōng	162
 羟考酮	qiǎng kǎo tóng	508
 羟哌酯	qiǎng pài zhǐ	130
-强肾片	qiáng shèn piàn	10
 强痛定	qiáng tòng dìng	3
-巧力索	qiǎo lì suǒ	274
 秦桂丸	qín guì wán	45
 秦椒散	qín jiāo sàn	45
 秦艽散	qín jiāo sàn	38
@@ -1263,12 +1182,8 @@ sort: by_weight
 清肝片	qīng gān piàn	410
 氰钴胺	qíng gǔ àn	248
 清骨散	qīng gǔ sàn	162
-青果片	qīng guǒ piàn	10
 青蛤散	qīng há sàn	100
-清化饮	qīng huà yǐn	84
 清火片	qīng huǒ piàn	270
-清降片	qīng jiàng piàn	10
-清解片	qīng jiě piàn	10
 清经散	qīng jīng sàn	279
 清开灵	qīng kāi líng	9
 氢可酮	qīng kě tóng	342
@@ -1323,11 +1238,10 @@ sort: by_weight
 溶菌酶	róng jūn méi	166
 茸砂丹	róng shā dān	230
 溶栓酶	róng shuān méi	76
-肉毒素	ròu dú sù	400
+肉毒素	xíng ròu dú sù	400
 柔王丸	róu wáng wán	554
 褥疮酊	rù chuāng dīng	100
 乳果糖	rǔ guǒ táng	157
-乳康片	rǔ kāng piàn	10
 乳酶生	rǔ méi shēng	9
 乳宁片	rǔ níng piàn	19
 乳癖消	rǔ pǐ xiāo	396
@@ -1337,11 +1251,6 @@ sort: by_weight
 如意散	rú yì sàn	338
 软骨散	ruǎn gǔ sàn	477
 软骨素	ruǎn gǔ sù	185
-瑞芬贝	ruì fēn bèi	4
-瑞凯林	ruì kǎi lín	45
-瑞美隆	ruì měi lóng	266
-瑞帕明	ruì pà míng	45
-瑞芝清	ruì zhī qīng	328
 润肠汤	rùn cháng tāng	4
 润肠丸	rùn cháng wán	378
 润胆汤	rùn dǎn tāng	45
@@ -1372,7 +1281,7 @@ sort: by_weight
 三勒浆	sān lè jiāng	270
 散利痛	sàn lì tòng	31
 三妙丸	sān miào wán	6
-三七粉	sān qī fěn	338
+三七粉	shēng sān qī fěn	338
 三七片	sān qī piàn	446
 三清丸	sān qīng wán	230
 三仁汤	sān rén tāng	19
@@ -1402,7 +1311,6 @@ sort: by_weight
 蛇油膏	shé yóu gāo	356
 肾宝片	shèn bǎo piàn	324
 参附汤	shēn fù tāng	6
-肾骨片	shèn gǔ piàn	10
 伸筋散	shēn jīn sàn	100
 神木丸	shén mù wán	356
 神农丹	shén nóng dān	284
@@ -1416,7 +1324,6 @@ sort: by_weight
 神犀汤	shén xī tāng	45
 神仙膏	shén xiān gāo	261
 参香散	shēn xiāng sàn	234
-肾炎片	shèn yán piàn	10
 肾着汤	shèn zhe tāng	310
 生发膏	shēng fà gāo	284
 生发丸	shēng fà wán	508
@@ -1429,10 +1336,8 @@ sort: by_weight
 生肌散	shēng jī sàn	346
 生筋散	shēng jīn sàn	45
 生津丸	shēng jīn wán	50
-生脉片	shēng mài piàn	10
 生脉散	shēng mài sàn	333
 生脉饮	shēng mài yǐn	16
-生乳片	shēng rǔ piàn	10
 圣术散	shèng shù sàn	45
 升糖素	shēng táng sù	364
 生胃酮	shēng wèi tóng	252
@@ -1467,19 +1372,15 @@ sort: by_weight
 舒必利	shū bì lì	25
 舒喘灵	shū chuǎn líng	432
 舒胆灵	shū dǎn líng	45
-舒胆片	shū dǎn piàn	10
 舒肝片	shū gān piàn	144
 疏肝散	shū gān sàn	387
 舒肝丸	shū gān wán	6
 疏肝丸	shū gān wán	5
 舒筋丸	shū jīn wán	261
 舒林酸	shū lín suān	9
-舒眠片	shū mián piàn	10
 蜀漆散	shǔ qī sàn	45
 舒心贴	shū xīn tiē	207
-舒胸片	shū xiōng piàn	10
 薯蓣丸	shǔ yù wán	266
-双丹片	shuāng dān piàn	10
 双环醇	shuāng huán chún	53
 双黄连	shuāng huáng lián	371
 双硫仑	shuāng liú lún	107
@@ -1488,28 +1389,20 @@ sort: by_weight
 水蛭素	shuǐ zhì sù	328
 顺尔宁	shùn ěr níng	28
 顺气丸	shùn qì wán	382
-思贝礼	sī bèi lǐ	256
 斯达舒	sī dá shū	3
-斯的明	sī de míng	598
 四虎散	sì hǔ sàn	45
 四环素	sì huán sù	198
 四黄散	sì huáng sàn	4
-斯利安	sī lì ān	603
-斯利安	sī lì ān	414
-斯利安	sī lì ān	22
 四苓散	sì líng sàn	129
 四苓汤	sì líng tāng	45
 四满丸	sì mǎn wán	45
 四妙汤	sì miào tāng	130
 四妙丸	sì miào wán	266
-司莫拉	sī mò lā	4
 四磨汤	sì mó tāng	3
 四磨饮	sì mó yǐn	50
 食母生	sì mǔ shēng	396
 四逆散	sì nì sàn	19
 四逆汤	sì nì tāng	60
-思诺思	sī nuò sī	138
-四神片	sì shén piàn	10
 四神丸	sì shén wán	9
 四圣散	sì shèng sàn	45
 四圣丸	sì shèng wán	130
@@ -1538,11 +1431,9 @@ sort: by_weight
 太宁栓	tài níng shuān	288
 泰诺林	tài nuò lín	57
 泰胃美	tài wèi měi	205
-泰夏安	tài xià ān	243
 痰咳净	tán ké jìng	6
 痰热清	tán rè qīng	16
 痰易净	tán yì jìng	225
-汤乐普	tāng lè pǔ	162
 烫伤膏	tàng shāng gāo	567
 糖适平	táng shì píng	297
 桃红饮	táo hóng yǐn	162
@@ -1566,7 +1457,6 @@ sort: by_weight
 田七粉	tián qī fěn	306
 天喜丸	tiān xǐ wán	220
 天雄散	tiān xióng sàn	45
-跳骨片	tiào gǔ piàn	10
 调经茶	tiáo jīng chá	212
 调经方	tiáo jīng fāng	266
 调经散	tiáo jīng sàn	238
@@ -1580,7 +1470,6 @@ sort: by_weight
 调中丸	tiáo zhōng wán	4
 铁笛丸	tiě dí wán	189
 铁箍散	tiě gū sàn	4
-通痹片	tōng bì piàn	10
 通痹散	tōng bì sàn	45
 通鼻散	tōng bí sàn	38
 通便灵	tōng biàn líng	297
@@ -1635,8 +1524,6 @@ sort: by_weight
 万艾可	wàn ài kě	110
 完带汤	wán dài tāng	3
 万花油	wàn huā yóu	13
-万济圆	wàn jì yuán	130
-万杰隆	wàn jié lóng	180
 万灵丹	wàn líng dān	38
 万爽力	wàn shuǎng lì	63
 万托林	wàn tuō lín	60
@@ -1688,7 +1575,6 @@ sort: by_weight
 午时茶	wǔ shí chá	13
 戊四唑	wù sì zuò	76
 乌头汤	wū tóu tāng	234
-五酯片	wǔ zhǐ piàn	10
 希爱力	xī ài lì	450
 西比灵	xī bǐ líng	9
 洗必泰	xǐ bì tài	50
@@ -1717,13 +1603,11 @@ sort: by_weight
 洗眼液	xǐ yǎn yè	192
 西乐葆	xī yuè bǎo	119
 夏桑菊	xià sāng jú	22
-仙蟾片	xiān chán piàn	10
 仙风散	xiān fēng sàn	356
 仙茅汤	xiān máo tāng	4
 仙特敏	xiān tè mǐn	266
 仙特明	xiān tè míng	315
 鲜竹沥	xiān zhú lì	13
-香菊片	xiāng jú piàn	10
 香连丸	xiāng lián wán	220
 橡皮膏	xiàng pí gāo	19
 香薷散	xiāng rú sàn	50
@@ -1731,7 +1615,7 @@ sort: by_weight
 香苏散	xiāng sū sàn	225
 祥云丹	xiáng yún dān	360
 消癍散	xiāo bān sàn	45
-小檗碱	xiǎo bò jiǎn	99
+小檗碱	qīng xiǎo bò jiǎn	99
 消喘膏	xiāo chuǎn gāo	212
 消胆胺	xiāo dǎn àn	9
 消丹饮	xiāo dān yǐn	45
@@ -1739,7 +1623,6 @@ sort: by_weight
 硝呋坦	xiāo fū tǎn	50
 消疳散	xiāo gān sàn	45
 消谷丸	xiāo gǔ wán	45
-消核片	xiāo hé piàn	10
 消核散	xiāo hé sàn	45
 消核丸	xiāo hé wán	38
 小还丹	xiǎo huán dān	3
@@ -1750,7 +1633,6 @@ sort: by_weight
 消渴丸	xiāo kě wán	22
 消疬丸	xiāo lì wán	45
 消瘰丸	xiāo luǒ wán	274
-消朦片	xiāo méng piàn	10
 消糜栓	xiāo mí shuān	333
 小蜜丸	xiǎo mì wán	441
 消痞丸	xiāo pǐ wán	153
@@ -1774,7 +1656,6 @@ sort: by_weight
 逍遥散	xiāo yáo sàn	28
 逍遥丸	xiāo yáo wán	129
 消翳散	xiāo yì sàn	45
-消银片	xiāo yín piàn	10
 消瘿散	xiāo yǐng sàn	117
 消痈汤	xiāo yōng tāng	4
 消瘀饮	xiāo yū yǐn	45
@@ -1801,9 +1682,7 @@ sort: by_weight
 心钠素	xīn nà sù	99
 心脑康	xīn nǎo kāng	284
 新诺明	xīn nuò míng	3
-辛芩片	xīn qín piàn	10
 心痛定	xīn tòng dìng	9
-新雪片	xīn xuě piàn	10
 行军丹	xíng jūn dān	220
 行军散	xíng jūn sàn	297
 杏苏散	xìng sū sàn	270
@@ -1822,21 +1701,16 @@ sort: by_weight
 眩晕停	xuàn yùn tíng	360
 血必净	xuè bì jìng	19
 血毒丸	xuè dú wán	410
-血宁片	xuè níng piàn	10
-血平片	xuè píng piàn	10
 血塞通	xuè sāi tōng	6
 血栓通	xuè shuān tōng	418
 血脂康	xuè zhī kāng	141
-亚氨嗪	yà ān qín	45
 鸦片酊	yā piàn dīng	135
 雅施达	yǎ shī dá	3
-雅息士	yǎ xī shì	428
 亚叶酸	yà yè suān	338
 压制片	yā zhì piàn	99
 牙周宁	yá zhōu níng	248
 炎琥宁	yán hǔ níng	400
 盐霉素	yán méi sù	117
-炎宁片	yán níng piàn	10
 烟酸片	yān suān piàn	50
 炎特灵	yán tè líng	45
 咽炎片	yān yán piàn	10
@@ -1864,7 +1738,6 @@ sort: by_weight
 异丙嗪	yì bǐng qín	35
 异搏定	yì bó dìng	310
 异博定	yì bó dìng	186
-益胆片	yì dǎn piàn	10
 益胆汤	yì dǎn tāng	45
 胰岛素	yí dǎo sù	7753
 异氟醚	yì fú mí	3
@@ -1890,8 +1763,8 @@ sort: by_weight
 衣霉素	yī méi sù	4
 抑霉唑	yì méi zuò	117
 易蒙停	yì méng tíng	315
-乙嘧啶	yǐ mì dìng	45
 依米丁	yī mǐ dīng	3
+乙嘧啶	sāi yǐ mì dìng	45
 益母膏	yì mǔ gāo	243
 益母丸	yì mǔ wán	531
 抑那通	yì nà tōng	234
@@ -1907,10 +1780,8 @@ sort: by_weight
 抑酞酶	yì tài méi	4
 易坦静	yì tǎn jìng	369
 益瞳丸	yì tóng wán	38
-益维宁	yì wéi níng	45
 异维酸	yì wéi suān	594
 益胃汤	yì wèi tāng	292
-益西丹	yì xī dān	328
 益心丸	yì xīn wán	482
 益血丹	yì xuè dān	45
 益血生	yì xuè shēng	360
@@ -1929,15 +1800,13 @@ sort: by_weight
 银花汤	yín huā tāng	306
 银黄片	yín huáng piàn	45
 蚓激酶	yǐn jī méi	279
-银密片	yín mì piàn	10
-银蜜片	yín mì piàn	10
 银翘片	yín qiào piàn	44
 银翘散	yín qiào sàn	35
 银屑灵	yín xiè líng	243
 银锌霜	yín xīn shuāng	100
 茵栀黄	yīn zhī huáng	518
 婴儿素	yīng ér sù	374
-罂粟碱	yīng sù jiǎn	90
+罂粟碱	zǐ yīng sù jiǎn	90
 英太青	yīng tài qīng	19
 涌泉散	yǒng quán sàn	117
 右归丸	yòu guī wán	60
@@ -1955,7 +1824,7 @@ sort: by_weight
 育发液	yù fā yè	94
 玉粉散	yù fěn sàn	4
 玉粉丸	yù fěn wán	45
-鱼肝油	yú gān yóu	562
+鱼肝油	chī yú gān yóu	562
 禹功散	yǔ gōng sàn	45
 育亨宾	yù hēng bīn	13
 玉壶散	yù hú sàn	4
@@ -1991,7 +1860,6 @@ sort: by_weight
 再普乐	zài pǔ lè	234
 再造散	zài zào sàn	130
 再造丸	zài zào wán	441
-赞诺欣	zàn nuò xīn	45
 赞育丹	zàn yù dān	4
 脏连丸	zāng lián wán	230
 皂荚丸	zào jiá wán	4
@@ -2000,7 +1868,6 @@ sort: by_weight
 泽泻汤	zé xiè tāng	202
 增液汤	zēng yè tāng	306
 战神丸	zhàn shén wán	256
-樟柳碱	zhāng liǔ jiǎn	3
 樟脑酊	zhāng nǎo dīng	292
 樟脑醑	zhāng nǎo xǔ	100
 樟脑油	zhāng nǎo yóu	13
@@ -2011,7 +1878,6 @@ sort: by_weight
 振颓汤	zhèn tuí tāng	45
 振颓丸	zhèn tuí wán	45
 真武汤	zhēn wǔ tāng	22
-振源片	zhèn yuán piàn	10
 真珠散	zhēn zhū sàn	194
 真珠丸	zhēn zhū wán	26
 整肠生	zhěng cháng shēng	16
@@ -2033,7 +1899,6 @@ sort: by_weight
 痔疮膏	zhì chuāng gāo	94
 痔疮片	zhì chuāng piàn	50
 痔疮栓	zhì chuāng shuān	47
-治带片	zhì dài piàn	10
 脂肪乳	zhī fáng rǔ	44
 致和汤	zhì hé tāng	4
 止痉散	zhǐ jìng sàn	171
@@ -2051,7 +1916,6 @@ sort: by_weight
 止痛膏	zhǐ tòng gāo	13
 止痛片	zhǐ tòng piàn	201
 止痛散	zhǐ tòng sàn	450
-治胃灵	zhì wèi líng	45
 止血粉	zhǐ xuè fěn	472
 止血膏	zhǐ xuè gāo	252
 止血敏	zhǐ xuè mǐn	418
@@ -2066,10 +1930,9 @@ sort: by_weight
 竹沥水	zhú lì shuǐ	2
 猪苓汤	zhū líng tāng	270
 注射剂	zhù shè jì	352
-注射液	zhù shè yè	634
+注射液	sù zhù shè yè	634
 竹叶汤	zhú yè tāng	144
 逐瘀汤	zhú yū tāng	403
-壮血片	zhuàng xuè piàn	10
 追风膏	zhuī fēng gāo	324
 追风散	zhuī fēng sàn	266
 捉虎丹	zhuō hǔ dān	45
@@ -2094,7 +1957,6 @@ sort: by_weight
 左金丸	zuǒ jīn wán	297
 阿巴卡韦	ā bā kǎ wéi	234
 阿柏西普	ā bǎi xī pǔ	342
-阿贝西利	ā bèi xī lì	10
 阿比多尔	ā bǐ duō ěr	328
 阿比特龙	ā bǐ tè lóng	266
 阿达帕林	ā dá pà lín	567
@@ -2106,7 +1968,6 @@ sort: by_weight
 阿法罗定	ā fǎ luó dìng	76
 阿伐斯汀	ā fá sī tīng	130
 阿法替尼	ā fǎ tì ní	428
-阿伐替尼	ā fá tì ní	10
 阿酚咖敏	ā fēn kā mǐn	45
 阿酚咖片	ā fēn kā piàn	45
 阿芬太尼	ā fēn tài ní	130
@@ -2115,16 +1976,13 @@ sort: by_weight
 阿呋唑嗪	ā fū zuò qín	99
 阿伽陀药	ā gā tuó yào	194
 阿格列汀	ā gé liè tīng	238
-阿基仑赛	ā jī lún sài	10
 阿加曲班	ā jiā qǔ bān	4
 阿加糖酶	ā jiā táng méi	50
 阿卡波糖	ā kǎ bō táng	69
 阿咖酚散	ā kā fēn sàn	16
 阿克他利	ā kè tā lì	45
-阿可替尼	ā kě tì ní	10
 阿拉普利	ā lā pǔ lì	130
 阿拉瑞林	ā lā ruì lín	45
-阿来替尼	ā lái tì ní	10
 阿利马嗪	ā lì mǎ qín	4
 阿立哌唑	ā lì pài zuò	72
 阿仑单抗	ā lún dān kàng	162
@@ -2146,7 +2004,6 @@ sort: by_weight
 阿那曲唑	ā nà qū zuò	31
 阿尼利定	ā ní lì dìng	76
 阿尼西坦	ā ní xī tǎn	45
-阿帕他胺	ā pà tā àn	10
 阿帕替尼	ā pà tì ní	482
 阿帕西林	ā pà xī lín	4
 阿哌沙班	ā pài shā bān	328
@@ -2165,7 +2022,6 @@ sort: by_weight
 阿士匹林	ā shì pǐ lín	99
 阿司待因	ā sī dài yīn	4
 阿司咪唑	ā sī mī zuò	238
-阿思尼布	ā sī ní bù	10
 阿司匹林	ā sī pǐ lín	1875
 阿斯匹林	ā sī pǐ lín	734
 阿糖胞苷	ā táng bāo gān	50
@@ -2181,10 +2037,6 @@ sort: by_weight
 阿托西班	ā tuō xī bān	99
 阿瓦斯汀	ā wǎ sī tīng	261
 阿魏酸钠	ā wèi suān nà	3
-阿昔洛韦	ā xī luò wéi	60
-阿西美辛	ā xī měi xīn	4
-阿昔莫司	ā xī mò sī	84
-阿昔替尼	ā xī tì ní	212
 阿扎胞苷	ā zhā bāo gān	297
 阿扎环醇	ā zhā huán chún	99
 阿扎利宾	ā zhā lì bīn	45
@@ -2199,10 +2051,8 @@ sort: by_weight
 艾畅滴剂	ài chàng dī jì	153
 爱地那非	ài dì nà fēi	76
 癌复康片	ái fù kāng piàn	45
-艾伏尼布	ài fú ní bù	10
 埃克替尼	āi kè tì ní	526
 艾乐替尼	ài lè tì ní	9
-埃普奈明	āi pǔ nài míng	10
 艾曲波帕	ài qǔ bō pà	76
 爱若华片	ài ruò huá piàn	4
 艾塞那肽	ài sāi nà tài	382
@@ -2293,7 +2143,6 @@ sort: by_weight
 安西他滨	ān xī tā bīn	45
 安息香酊	ān xī xiāng dīng	324
 氨酰心安	ān xiān xīn ān	369
-安欣福宁	ān xīn fú níng	45
 安雄胶囊	ān xióng jiāo náng	4
 氨溴索片	ān xiù suǒ piàn	130
 氨溴索针	ān xiù suǒ zhēn	4
@@ -2438,7 +2287,6 @@ sort: by_weight
 北豆根片	běi dòu gēn piàn	4
 贝伐单抗	bèi fá dān kàng	423
 贝凡洛尔	bèi fán luò ěr	153
-贝福替尼	bèi fú tì ní	10
 贝蕾蒂尼	bèi lěi dì ní	107
 贝羚胶囊	bèi líng jiāo náng	45
 倍美力片	bèi měi lì piàn	45
@@ -2462,7 +2310,8 @@ sort: by_weight
 倍他尼定	bèi tā ní dìng	4
 倍他司丁	bèi tā sī dīng	130
 倍他司汀	bèi tā sī tīng	230
-贝组替凡	bèi zǔ tì fán	10
+五加皮酒	wǔ jiā pí jiǔ	374
+五加皮汤	wǔ jiā pí tāng	45
 比阿培南	bǐ ā péi nán	153
 鼻宝胶囊	bí bǎo jiāo náng	45
 吡贝地尔	bǐ bèi dì ěr	144
@@ -2481,7 +2330,6 @@ sort: by_weight
 吡仑帕奈	bǐ lún pà nài	76
 吡罗昔布	bǐ luó xī bù	99
 吡罗昔康	bǐ luó xī kāng	13
-吡洛西利	bǐ luò xī lì	10
 蓖麻油乳	bì má yóu rǔ	45
 铋镁豆蔻	bì měi dòu kòu	4
 吡美莫司	bǐ měi mò sī	162
@@ -2572,7 +2420,6 @@ sort: by_weight
 玻璃酸酶	bō li suān méi	117
 玻璃酸钠	bō li suān nà	170
 波立维片	bō lì wéi piàn	4
-伯瑞替尼	bó ruì tì ní	10
 波生坦片	bō shēng tǎn piàn	4
 波替单抗	bō tì dān kàng	4
 波依定片	bō yī dìng piàn	4
@@ -2582,7 +2429,6 @@ sort: by_weight
 布病疫苗	bù bìng yì miáo	117
 布地奈德	bù dì nài dé	198
 布酚宁片	bù fēn níng piàn	45
-布格替尼	bù gé tì ní	10
 补根胶囊	bǔ gēn jiāo náng	45
 补骨脂酊	bǔ gǔ zhī dīng	328
 补骨酯酊	bǔ gǔ zhǐ dīng	100
@@ -2648,7 +2494,6 @@ sort: by_weight
 产妇安丸	chǎn fù ān wán	45
 产后康膏	chǎn hòu kāng gāo	45
 肠虫清片	cháng chóng qīng piàn	117
-肠多糖片	cháng duō táng piàn	10
 肠康胶囊	cháng kāng jiāo náng	45
 肠痢宁片	cháng lì níng piàn	45
 肠泰合剂	cháng tài hé jì	45
@@ -2716,7 +2561,6 @@ sort: by_weight
 大川芎片	dà chuān xiōng piàn	117
 大定风珠	dà dìng fēng zhū	162
 大定心汤	dà dìng xīn tāng	4
-达尔西利	dá ěr xī lì	10
 达菲胶囊	dá fēi jiāo náng	4
 大分清饮	dà fēn qīng yǐn	50
 达格列净	dá gé liè jìng	306
@@ -2733,10 +2577,8 @@ sort: by_weight
 达克宁栓	dá kè níng shuān	522
 达克宁霜	dá kè níng shuāng	400
 达克普隆	dá kè pǔ lóng	76
-达可替尼	dá kě tì ní	10
 达拉非尼	dá lā fēi ní	50
 达芦那韦	dá lú nà wéi	374
-达罗他胺	dá luó tā àn	10
 达美康片	dá měi kāng piàn	45
 大明胶囊	dà míng jiāo náng	45
 达那唑栓	dá nà zuò shuān	45
@@ -2746,7 +2588,6 @@ sort: by_weight
 大七气汤	dà qī qì tāng	4
 大秦艽汤	dà qín jiāo tāng	50
 大青龙汤	dà qīng lóng tāng	129
-达沙替尼	dá shā tì ní	10
 大山楂片	dà shān zhā piàn	45
 大山楂丸	dà shān zhā wán	19
 大蒜胶囊	dà suàn jiāo náng	50
@@ -2802,14 +2643,12 @@ sort: by_weight
 得普利麻	dé pǔ lì má	99
 得生胶囊	dé shēng jiāo náng	144
 登革疫苗	dēng gé yì miáo	117
-灯台叶片	dēng tái yè piàn	10
 灯盏花素	dēng zhǎn huā sù	396
 灯盏生脉	dēng zhǎn shēng mài	50
 地奥司明	dì ào sī míng	202
 地巴唑片	dì bā zuò piàn	117
 地恩丙胺	dì ēn bǐng àn	4
 地尔硫卓	dì ěr liú zhuó	6
-递法明片	dì fǎ míng piàn	10
 地芬尼多	dì fēn ní duō	230
 地芬诺辛	dì fēn nuò xīn	76
 地芬诺酯	dì fēn nuò zhǐ	6
@@ -2822,7 +2661,6 @@ sort: by_weight
 地红霉素	dì hóng méi sù	3
 地黄汤帖	dì huáng tāng tiē	99
 地黄饮子	dì huáng yǐn zi	248
-地锦草片	dì jǐn cǎo piàn	10
 抵克立得	dǐ kè lì de	194
 地克珠利	dì kè zhū lì	4
 地拉普利	dì lā pǔ lì	99
@@ -2841,7 +2679,6 @@ sort: by_weight
 地普托品	dì pǔ tuō pǐn	50
 地屈孕酮	dì qū yùn tóng	6
 地塞米松	dì sāi mǐ sōng	358
-地舒单抗	dì shū dān kàng	10
 地索吗啡	dì suǒ mǎ fēi	4
 迪维乳膏	dí wéi rǔ gāo	45
 地昔帕明	dì xī pà míng	22
@@ -2884,7 +2721,6 @@ sort: by_weight
 丁哌卡因	dīng pài kǎ yīn	45
 丁硼乳膏	dīng péng rǔ gāo	6
 丁芎癣药	dīng xiōng xuǎn yào	4
-冬白梅片	dōng bái méi piàn	10
 冬贝胶囊	dōng bèi jiāo náng	90
 冻疮消酊	dòng chuāng xiāo dīng	45
 东茛菪碱	dōng gèn dàng jiǎn	234
@@ -2898,7 +2734,6 @@ sort: by_weight
 度洛西汀	dù luò xī tīng	78
 毒毛花苷	dú máo huā gān	76
 度他雄胺	dù tā xióng àn	252
-度维利塞	dù wéi lì sāi	10
 独一味片	dú yí wèi piàn	76
 杜仲冲剂	dù zhòng chōng jì	45
 杜仲胶囊	dù zhòng jiāo náng	117
@@ -2936,7 +2771,6 @@ sort: by_weight
 多粘霉素	duō zhān méi sù	130
 厄贝沙坦	è bèi shā tǎn	9
 恶丙嗪片	è bǐng qín piàn	90
-厄达替尼	è dá tì ní	10
 厄多司坦	è duō sī tǎn	50
 阿胶胶囊	ē jiāo jiāo náng	76
 阿胶颗粒	ē jiāo kē lì	99
@@ -2946,20 +2780,16 @@ sort: by_weight
 恩多霉素	ēn duō méi sù	45
 恩氟烷液	ēn fú wán yè	45
 恩格列净	ēn gé liè jìng	338
-恩考芬尼	ēn kǎo fēn ní	10
 恩拉霉素	ēn lā méi sù	144
 恩诺沙星	ēn nuò shā xīng	28
 恩普氨酯	ēn pǔ ān zhǐ	45
 恩前列醇	ēn qián liè chún	4
 恩前列素	ēn qián liè sù	130
 恩曲他滨	ēn qǔ tā bīn	13
-恩曲替尼	ēn qǔ tì ní	10
 恩沙替尼	ēn shā tì ní	45
 恩他卡朋	ēn tā kǎ péng	220
 恩替卡韦	ēn tì kǎ wéi	336
-恩替司他	ēn tì sī tā	10
 恩杂鲁胺	ēn zá lǔ àn	130
-恩扎卢胺	ēn zhā lú àn	10
 儿宝颗粒	ér bǎo kē lì	117
 二陈合剂	èr chén hé jì	4
 二丁胶囊	èr dīng jiāo náng	50
@@ -3075,165 +2905,7 @@ sort: by_weight
 复尔必妥	fù ěr bì tuǒ	90
 福尔可定	fú ěr kě dìng	13
 氟伐他汀	fú fá tā tīng	6
-复方氨维	fù fāng ān wéi	50
-复方菝葜	fù fāng bá qiā	76
-复方白带	fù fāng bái dài	45
-复方白松	fù fāng bái sōng	45
-复方白芷	fù fāng bái zhǐ	4
-复方斑蝥	fù fāng bān máo	288
-复方斑钠	fù fāng bān nà	90
-复方半夏	fù fāng bàn xià	45
-复方贝母	fù fāng bèi mǔ	76
 复方铋片	fù fāng bì piàn	45
-复方鼻炎	fù fāng bí yán	45
-复方茶粉	fù fāng chá fěn	45
-复方茶酮	fù fāng chá tóng	90
-复方蟾酥	fù fāng chán sū	45
-复方虫草	fù fāng chóng cǎo	4
-复方重楼	fù fāng chóng lóu	45
-复方川贝	fù fāng chuān bèi	180
-复方川芎	fù fāng chuān xiōng	76
-复方春砂	fù fāng chūn shā	45
-复方雌孕	fù fāng cí yùn	50
-复方苁蓉	fù fāng cōng róng	45
-复方大黄	fù fāng dà huáng	76N
-复方胆氨	fù fāng dǎn ān	4N
-复方胆碱	fù fāng dǎn jiǎn	4N
-复方丹参	fù fāng dān shēn	6N
-复方胆通	fù fāng dǎn tōng	99N
-复方丹桅	fù fāng dān wéi	90N
-复方丹茵	fù fāng dān yīn	90N
-复方丹栀	fù fāng dān zhī	45N
-复方丹蛭	fù fāng dān zhì	38N
-复方当归	fù fāng dāng guī	189N
-复方党参	fù fāng dǎng shēn	4N
-复方蒂达	fù fāng dì dá	90N
-复方地龙	fù fāng dì lóng	45N
-复方碘酊	fù fāng diǎn dǐng	45N
-复方碘苷	fù fāng diǎn gān	45N
-复方豆蔻	fù fāng dòu kòu	50N
-复方杜鹃	fù fāng dù juān	45N
-复方杜仲	fù fāng dù zhòng	45N
-复方阿胶	fù fāng ē jiāo	436N
-复方儿茶	fù fāng ér chá	76N
-复方风湿	fù fāng fēng shī	76N
-复方甘草	fù fāng gān cǎo	598N
-复方肝精	fù fāng gān jīng	45N
-复方感冒	fù fāng gǎn mào	436N
-复方肝炎	fù fāng gān yán	45
-复方甘油	fù fāng gān yóu	144N
-复方岗稔	fù fāng gǎng rěn	45N
-复方岗松	fù fāng gǎng sōng	45N
-复方蛤蚧	fù fāng gé jiè	4N
-复方公英	fù fāng gōng yīng	76N
-复方钩藤	fù fāng gōu téng	45N
-复方骨肽	fù fāng gǔ tài	99N
-复方蛤青	fù fāng há qīng	50N
-复方海蛇	fù fāng hǎi shé	130N
-复方合剂	fù fāng hé jì	117N
-复方和血	fù fāng hé xuè	45
-复方猴头	fù fāng hóu tóu	45N
-复方虎杖	fù fāng hǔ zhàng	45N
-复方磺胺	fù fāng huáng àn	423N
-复方黄柏	fù fāng huáng bò	220N
-复方黄黛	fù fāng huáng dài	99N
-复方黄芪	fù fāng huáng qí	50N
-复方黄芩	fù fāng huáng qín	117
-复方黄松	fù fāng huáng sōng	99
-复方黄藤	fù fāng huáng téng	117
-复方藿香	fù fāng huò xiāng	4
-复方甲麻	fù fāng jiǎ má	50
-复方降压	fù fāng jiàng yā	400
-复方降脂	fù fāng jiàng zhī	50
-复方金凤	fù fāng jīn fèng	45
-复方金连	fù fāng jīn lián	45
-复方金蒲	fù fāng jīn pú	45
-复方精油	fù fāng jīng yóu	423
-复方桔油	fù fāng jú yóu	45
-复方决明	fù fāng jué míng	45
-复方咖磷	fù fāng kā lín	45
-复方咳喘	fù fāng ké chuǎn	99
-复方苦参	fù fāng kǔ shēn	225
-复方奎宁	fù fāng kuí níng	76
-复方梨膏	fù fāng lí gāo	45
-复方灵芝	fù fāng líng zhī	45
-复方柳菊	fù fāng liǔ jú	45
-复方柳唑	fù fāng liǔ zuò	90
-复方芦丁	fù fāng lú dīng	194
-复方芦荟	fù fāng lú huì	266
-复方鹿茸	fù fāng lù róng	45
-复方木鸡	fù fāng mù jī	130
-复方硼砂	fù fāng péng shā	436
-复方枇杷	fù fāng pí pá	202
-复方平贝	fù fāng píng bèi	45
-复方平压	fù fāng píng yā	90
-复方蒲苓	fù fāng pú líng	45
-复方蒲芩	fù fāng pú qín	4
-复方葡盐	fù fāng pú yán	90
-复方牵正	fù fāng qiān zhèng	45
-复方芩兰	fù fāng qín lán	225
-复方清带	fù fāng qīng dài	130
-复方青黛	fù fāng qīng dài	38
-复方青果	fù fāng qīng guǒ	144
-复方青蒿	fù fāng qīng hāo	99
-复方青松	fù fāng qīng sōng	45
-复方拳参	fù fāng quán shēn	4
-复方乳酸	fù fāng rǔ suān	130
-复方塞隆	fù fāng sāi lóng	4
-复方散剂	fù fāng sǎn jì	4N
-复方三七	fù fāng sān qī	45
-复方三维	fù fāng sān wéi	50
-复方桑椹	fù fāng sāng shèn	45
-复方商陆	fù fāng shāng lù	45
-复方麝香	fù fāng shè xiāng	50
-复方蛇脂	fù fāng shé zhī	153
-复方伸筋	fù fāng shēn jīn	162
-复方肾炎	fù fāng shèn yán	117
-复方石斛	fù fāng shí hú	45
-复方石苇	fù fāng shí wěi	194
-复方石韦	fù fāng shí wéi	38
-复方手参	fù fāng shǒu cān	45
-复方首乌	fù fāng shǒu wū	4
-复方树舌	fù fāng shù shé	45
-复方双花	fù fāng shuāng huā	130
-复方锁阳	fù fāng suǒ yáng	45
-复方胎盘	fù fāng tāi pán	45
-复方汤剂	fù fāng tāng jì	16N
-复方天麻	fù fāng tiān má	207
-复方天仙	fù fāng tiān xiān	45
-复方酮酸	fù fāng tóng suān	207
-复方胃宁	fù fāng wèi níng	45
-复方胃痛	fù fāng wèi tòng	50
-复方乌鸡	fù fāng wū jī	153
-复方乌鳢	fù fāng wū lǐ	45
-复方消食	fù fāng xiāo shí	4
-复方硝酸	fù fāng xiāo suān	248
-复方消痔	fù fāng xiāo zhì	4
-复方锌布	fù fāng xīn bù	270
-复方熊胆	fù fāng xióng dǎn	99
-复方溴咖	fù fāng xiù kā	45
-复方玄驹	fù fāng xuán jū	274
-复方雪莲	fù fāng xuě lián	50
-复方雪参	fù fāng xuě shēn	45
-复方血藤	fù fāng xuè téng	45
-复方牙痛	fù fāng yá tòng	4
-复方岩连	fù fāng yán lián	45
-复方羊角	fù fāng yáng jiǎo	243
-复方叶酸	fù fāng yè suān	45N
-复方益肝	fù fāng yì gān	130N
-复方胰酶	fù fāng yí méi	144N
-复方益母	fù fāng yì mǔ	356N
-复方银黄	fù fāng yín huáng	4N
-复方皂矾	fù fāng zào fán	76N
-复方枣仁	fù fāng zǎo rén	171N
-复方樟脑	fù fāng zhāng nǎo	306N
-复方珍珠	fù fāng zhēn zhū	153N
-复方制剂	fù fāng zhì jì	720N
-复方止咳	fù fāng zhǐ ké	162N
-复方栀子	fù fāng zhī zi	90N
-复方追风	fù fāng zhuī fēng	45N
-复方紫草	fù fāng zǐ cǎo	117N
-复方紫龙	fù fāng zǐ lóng	4N
 氟芬那酸	fú fēn nà suān	288
 氟奋乃静	fú fèn nǎi jìng	3
 氟伏草胺	fú fú cǎo àn	99
@@ -3267,16 +2939,13 @@ sort: by_weight
 伏龙肝汤	fú lóng gān tāng	50
 呋罗达唑	fū luó dá zuò	45
 夫洛非宁	fū luò fēi níng	4
-伏罗尼布	fú luó ní bù	10
 氟罗沙星	fú luó shā xīng	297
 福吗卡因	fú ma kǎ yīn	45
-氟马替尼	fú mǎ tì ní	10
 肤螨灵霜	fū mǎn líng shuāng	171
 辅酶胶囊	fǔ méi jiāo náng	230
 辅酶胶丸	fǔ méi jiāo wán	45
 氟美吗酮	fú měi ma tóng	90
 福美司坦	fú měi sī tǎn	45
-伏美替尼	fú měi tì ní	10
 氟嘧啶醇	fú mì dìng chún	45
 福米硝唑	fú mǐ xiāo zuò	45
 复明胶囊	fù míng jiāo náng	50
@@ -3327,7 +2996,6 @@ sort: by_weight
 氟替卡松	fú tì kǎ sōng	16
 复胃散片	fù wèi sàn piàn	45
 氟维司群	fú wéi sī qún	382
-伏维西利	fú wéi xī lì	10
 夫西地酸	fū xī dì suān	22
 氟西泮片	fú xī pàn piàn	45
 氟西汀片	fú xī tīng piàn	99
@@ -3347,9 +3015,7 @@ sort: by_weight
 氟氧头孢	fú yǎng tóu bāo	153
 茯蚁参酒	fú yǐ cān jiǔ	45
 氟乙西泮	fú yǐ xī pàn	45
-氟泽雷塞	fú zé léi sāi	10
 福至尔片	fú zhì ěr piàn	45
-氟唑帕利	fú zuò pà lì	10
 钆贝葡胺	gá bèi pú àn	153
 钆喷葡胺	gá pēn pú àn	4
 钙尔奇片	gài ěr qí piàn	238
@@ -3434,7 +3100,6 @@ sort: by_weight
 格华止片	gé huá zhǐ piàn	45
 咯环利定	gē huán lì dìng	50
 格拉司琼	gé lā sī qióng	180
-戈来雷塞	gē lái léi sāi	10
 咯利普兰	gē lì pǔ lán	194
 格列本脲	gé liè běn niào	53
 格列吡嗪	gé liè bǐ qín	9
@@ -3447,7 +3112,6 @@ sort: by_weight
 戈那瑞林	gē nà ruì lín	4
 葛芪胶囊	gé qí jiāo náng	45
 戈舍瑞林	gē shě ruì lín	320
-格索雷塞	gé suǒ léi sāi	10
 根充糊剂	gēn chōng hú jì	50
 根管糊剂	gēn guǎn hú jì	45
 根痛平片	gēn tòng píng piàn	45
@@ -3484,7 +3148,6 @@ sort: by_weight
 骨力胶囊	gǔ lì jiāo náng	117
 钴啉胺酸	gǔ lín àn suān	76
 骨龙胶囊	gǔ lóng jiāo náng	50
-谷美替尼	gǔ měi tì ní	10
 固体碘伏	gù tǐ diǎn fú	45
 古葶枣散	gǔ tíng zǎo sàn	90
 骨痛灵酊	gǔ tòng líng dīng	4
@@ -3716,7 +3379,6 @@ sort: by_weight
 鸡内金片	jī nèi jīn piàn	99
 鸡内金散	jī nèi jīn sàn	320
 吉如心片	jí rú xīn piàn	90
-吉瑞替尼	jí ruì tì ní	10
 济肾胶囊	jì shèn jiāo náng	45
 鸡屎白散	jī shǐ bái sàn	4
 吉他霉素	jí tā méi sù	180
@@ -3884,7 +3546,6 @@ sort: by_weight
 金荞麦片	jīn qiáo mài piàn	180
 金双歧片	jīn shuāng qí piàn	117
 金水宝片	jīn shuǐ bǎo piàn	45
-金斯利安	jīn sī lì ān	414
 筋痛消酊	jīn tòng xiāo dīng	45
 金维他片	jīn wéi tā piàn	45
 金薏颗粒	jīn yì kē lì	45
@@ -3908,17 +3569,7 @@ sort: by_weight
 灸甘草汤	jiǔ gān cǎo tāng	4
 九价疫苗	jiǔ jià yì miáo	666
 久痢丸丹	jiǔ lì wán dān	45
-九味参蓉	jiǔ wèi cān róng	45
-九味沉香	jiǔ wèi chén xiāng	76
-九味肝泰	jiǔ wèi gān tài	50
-九味牛黄	jiǔ wèi niú huáng	50
-九味羌活	jiǔ wèi qiāng huó	315
-九味青鹏	jiǔ wèi qīng péng	45
-九味神安	jiǔ wèi shén ān	99
-九味双解	jiǔ wèi shuāng jiě	45
 九维他片	jiǔ wéi tā piàn	45
-九味通导	jiǔ wèi tōng dǎo	45
-九味益脑	jiǔ wèi yì nǎo	234
 救心金丸	jiù xīn jīn wán	45
 桔贝合剂	jú bèi hé jì	153
 聚多卡醇	jù duō kǎ chún	4
@@ -3949,7 +3600,6 @@ sort: by_weight
 卡铂冻干	kǎ bó dòng gān	45
 卡博替尼	kǎ bó tì ní	256
 咖啡酸片	kā fēi suān piàn	50
-卡非佐米	kǎ fēi zuǒ mǐ	10
 卡芬太尼	kǎ fēn tài ní	194
 咖酚伪麻	kā fēn wěi má	4
 卡格列净	kǎ gé liè jìng	153
@@ -3958,14 +3608,12 @@ sort: by_weight
 卡立诺丁	kǎ lì nuò dīng	297
 卡立普多	kǎ lì pǔ duō	364
 卡络柳钠	kǎ luò liǔ nà	45
-卡马替尼	kǎ mǎ tì ní	10
 卡马西平	kǎ mǎ xī píng	138
 卡莫氟片	kǎ mò fú piàn	45
 卡莫司汀	kǎ mò sī tīng	3
 卡那霉素	kǎ nà méi sù	38
 卡培他滨	kǎ péi tā bīn	94
 卡匹帕明	kǎ pǐ pà míng	90
-卡匹色替	kǎ pǐ sè tì	10
 卡泊芬净	kǎ pō fēn jìng	9
 卡泊三醇	kǎ pō sān chún	297
 卡前列素	kǎ qián liè sù	153
@@ -4122,7 +3770,6 @@ sort: by_weight
 拉布立酶	lā bù lì méi	117
 拉呋替丁	lā fū tì dīng	180
 拉克替醇	lā kè tì chún	4
-拉罗替尼	lā luó tì ní	10
 拉米夫定	lā mǐ fū dìng	210
 拉米呋啶	lā mǐ fū dìng	189
 拉莫三嗪	lā mò sān qín	477
@@ -4133,7 +3780,6 @@ sort: by_weight
 赖氨酸片	lài ān suān piàn	45
 赖氨酸散	lài ān suān sàn	45
 来氟米特	lái fú mǐ tè	129
-来罗西利	lái luó xī lì	10
 来那度胺	lái nà dù àn	44
 赖诺普利	lài nuò pǔ lì	364
 来曲唑片	lái qǔ zuò piàn	76
@@ -4153,7 +3799,6 @@ sort: by_weight
 劳拉西泮	láo lā xī pàn	119
 乐伐他汀	lè fá tā tīng	45
 乐伐替尼	lè fá tì ní	9
-了哥王片	le gē wáng piàn	10
 乐卡地平	lè kǎ dì píng	266
 乐力胶囊	lè lì jiāo náng	76
 乐脉胶囊	lè mài jiāo náng	45
@@ -4187,7 +3832,6 @@ sort: by_weight
 力多夫定	lì duō fū dìng	90
 利多氟嗪	lì duō fú qín	4
 利多卡因	lì duō kǎ yīn	160
-利厄替尼	lì è tì ní	10
 利伐沙班	lì fá shā bān	31
 利肺胶囊	lì fèi jiāo náng	45
 利非他明	lì fēi tā míng	117
@@ -4213,7 +3857,6 @@ sort: by_weight
 利宁凝胶	lì níng níng jiāo	45
 利培酮片	lì péi tóng piàn	130
 利塞膦酸	lì sāi lìn suān	117
-利司扑兰	lì sī pū lán	34
 痢速宁片	lì sù níng piàn	45
 利太林酸	lì tài lín suān	117
 疬特灵片	lì tè líng piàn	194
@@ -4266,7 +3909,6 @@ sort: by_weight
 林可霉素	lín kě méi sù	19
 磷霉素钙	lín méi sù gài	99
 磷霉素钠	lín méi sù nà	238
-林普利塞	lín pǔ lì sāi	10
 磷酸咯啶	lín suān gē dìng	4
 磷酸哌喹	lín suān pài kuí	6
 磷酸哌嗪	lín suān pài qín	99
@@ -4314,7 +3956,6 @@ sort: by_weight
 癃闭通丸	lóng bì tōng wán	45
 龙胆饮子	lóng dǎn yǐn zi	45
 龙灯胶囊	lóng dēng jiāo náng	45
-龙凤宝片	lóng fèng bǎo piàn	10
 龙虎人丹	lóng hǔ rén dān	302
 龙鹿胶囊	lóng lù jiāo náng	4
 癃清胶囊	lóng qīng jiāo náng	45
@@ -4323,7 +3964,6 @@ sort: by_weight
 龙枣胶囊	lóng zǎo jiāo náng	45
 龙蛭胶囊	lóng zhì jiāo náng	45
 龙珠软膏	lóng zhū ruǎn gāo	9
-芦比替定	lú bǐ tì dìng	10
 芦氟沙星	lú fú shā xīng	99
 炉甘石粉	lú gān shí fěn	99
 鹿瓜多肽	lù guā duō tài	212
@@ -4358,7 +3998,6 @@ sort: by_weight
 罗红霉素	luó hóng méi sù	179
 络活喜片	luò huó xǐ piàn	4
 罗库溴铵	luó kù xiù ǎn	9
-洛拉替尼	luò lā tì ní	10
 罗利环素	luó lì huán sù	4
 洛美沙星	luò měi shā xīng	9
 洛莫司汀	luò mò sī tīng	171
@@ -4387,7 +4026,6 @@ sort: by_weight
 妈富隆片	mā fù lóng piàn	45
 麻甘颗粒	má gān kē lì	230
 麻黄汤类	má huáng tāng lèi	50
-吗啉胍片	mǎ lín guā piàn	212
 吗啉环素	ma lín huán sù	45
 马洛替脂	mǎ luò tì zhī	117
 马洛替酯	mǎ luò tì zhǐ	38
@@ -4544,7 +4182,6 @@ sort: by_weight
 莫沙必利	mò shā bì lì	38
 莫沙比利	mò shā bǐ lì	34
 墨斯卡灵	mò sī kǎ líng	99
-莫斯利安	mò sī lì ān	603
 莫索尼定	mò suǒ ní dìng	117
 莫西沙星	mò xī shā xīng	53
 牡丹皮汤	mǔ dān pí tāng	130
@@ -4577,7 +4214,6 @@ sort: by_weight
 萘甲酸钠	nài jiǎ suān nà	50
 萘甲唑啉	nài jiǎ zuò lín	288
 萘甲唑林	nài jiǎ zuò lín	160
-奈拉替尼	nài lā tì ní	10
 奈玛特韦	nài mǎ tè wéi	16
 奈莫必利	nài mò bì lì	45
 奈帕芬胺	nài pà fēn àn	76
@@ -4621,7 +4257,6 @@ sort: by_weight
 尼可待因	ní kě dài yīn	50
 尼可地尔	ní kě dì ěr	99
 尼可吗啡	ní kě mǎ fēi	76
-尼可刹米	ní kě shā mǐ	22
 尼拉霉素	ní lā méi sù	45
 尼拉帕利	ní lā pà lì	130
 尼拉帕尼	ní lā pà ní	50
@@ -4678,12 +4313,10 @@ sort: by_weight
 女珍颗粒	nǚ zhēn kē lì	45
 女贞子膏	nǚ zhēn zǐ gāo	45
 帕博西尼	pà bó xī ní	9
-帕歌斯片	pà gē sī piàn	10
 帕拉米韦	pà lā mǐ wéi	220
 帕利哌酮	pà lì pài tóng	220
 帕罗西汀	pà luó xī tīng	157
 帕米膦酸	pà mǐ lìn suān	130
-帕米帕利	pà mǐ pà lì	10
 帕尼培南	pà ní péi nán	3
 帕司烟肼	pà sī yān jǐng	45
 帕唑帕尼	pà zuò pà ní	266
@@ -4725,7 +4358,6 @@ sort: by_weight
 培洛霉素	péi luò méi sù	45
 培美曲塞	péi měi qǔ sāi	69
 培门冬酶	péi mén dōng méi	171
-佩米替尼	pèi mǐ tì ní	10
 培他米松	péi tā mǐ sōng	50
 培唑帕尼	péi zuò pà ní	99
 盆腔炎丸	pén qiāng yán wán	117
@@ -4773,7 +4405,6 @@ sort: by_weight
 平痔胶囊	píng zhì jiāo náng	45
 泊利噻嗪	pō lì sāi qín	50
 泊马度胺	pō mǎ dù àn	171
-泊那替尼	pō nà tì ní	10
 泼尼松龙	pō ní sōng lóng	22
 泼尼松片	pō ní sōng piàn	306
 泊沙康唑	pō shā kāng zuò	153
@@ -4790,10 +4421,8 @@ sort: by_weight
 普拉克索	pǔ lā kè suǒ	220
 普拉洛尔	pǔ lā luò ěr	144
 普拉洛芬	pǔ lā luò fēn	16
-普拉替尼	pǔ lā tì ní	10
 普拉酮钠	pǔ lā tóng nà	45
 普拉西泮	pǔ lā xī pàn	50
-普兰诺伊	pǔ lán nuò yī	288
 普乐安片	pǔ lè ān piàn	207
 普乐可复	pǔ lè kě fù	99
 葡立胶囊	pú lì jiāo náng	50
@@ -4802,23 +4431,6 @@ sort: by_weight
 普鲁雌醚	pǔ lǔ cí mí	45
 普鲁卡因	pǔ lǔ kǎ yīn	31
 普卢沙星	pǔ lú shā xīng	45
-普鲁托醇	pǔ lǔ tuō chún	45
-普仑司特	pǔ lún sī tè	4
-普洛必达	pǔ luò bì dá	4
-普罗布考	pǔ luó bù kǎo	202
-普罗布可	pǔ luó bù kě	76
-普罗雌烯	pǔ luó cí xī	153
-普罗碘铵	pǔ luó diǎn ǎn	4
-普罗吩胺	pǔ luó fēn àn	99
-普罗庚嗪	pǔ luó gēng qín	4
-普罗吗酯	pǔ luó ma zhǐ	45
-普洛萘尔	pǔ luò nài ěr	45
-普罗帕酮	pǔ luó pà tóng	16
-普罗司泰	pǔ luó sī tài	45
-普罗替林	pǔ luó tì lín	153
-普罗托醇	pǔ luó tuō chún	50
-普罗新希	pǔ luó xīn xī	45
-普美拉泰	pǔ měi lā tài	45
 普美孕酮	pǔ měi yùn tóng	4
 扑米酮片	pū mǐ tóng piàn	45
 普纳替尼	pǔ nà tì ní	180
@@ -4829,7 +4441,6 @@ sort: by_weight
 扑疟喹啉	pū nüè kuí lín	50
 葡醛内酯	pú quán nèi zhǐ	6
 葡醛酸钠	pú quán suān nà	99
-扑热息痛	pū rè xī tòng	279
 普瑞博思	pǔ ruì bó sī	243
 普瑞特罗	pǔ ruì tè luó	50
 蒲参胶囊	pú shēn jiāo náng	130
@@ -4983,7 +4594,6 @@ sort: by_weight
 去甲西泮	qù jiǎ xī pàn	117
 曲克芦丁	qǔ kè lú dīng	3
 曲可芦丁	qǔ kě lú dīng	2
-曲拉西利	qǔ lā xī lì	10
 曲马多片	qǔ mǎ duō piàn	144
 曲马多栓	qǔ mǎ duō shuān	45
 曲马唑嗪	qǔ mǎ zuò qín	4
@@ -5025,7 +4635,6 @@ sort: by_weight
 炔己蚁胺	quē jǐ yǐ àn	130
 炔诺酮片	quē nuò tóng piàn	248
 炔诺孕酮	quē nuò yùn tóng	554
-炔孕酮片	quē yùn tóng piàn	4
 群多普利	qún duō pǔ lì	117
 群生蛇药	qún shēng shé yào	99
 热毒清锭	rè dú qīng dìng	45
@@ -5035,7 +4644,6 @@ sort: by_weight
 热炎宁片	rè yán níng piàn	4
 妊马雌酮	rèn mǎ cí tóng	76
 人参补丸	rén shēn bǔ wán	76
-人参甘草	rén shēn gān cǎo	10
 人参药酒	rén shēn yào jiǔ	144
 人胎盘片	rén tāi pán piàn	171
 人胰岛素	rén yí dǎo sù	41
@@ -5074,20 +4682,14 @@ sort: by_weight
 软骨素片	ruǎn gǔ sù piàn	194
 软骨素原	ruǎn gǔ sù yuán	45
 瑞巴派特	ruì bā pài tè	234
-瑞波西利	ruì bō xī lì	10
 瑞波西汀	ruì bō xī tīng	225
 瑞德西韦	ruì dé xī wéi	778
-瑞厄替尼	ruì è tì ní	10
 瑞芬太尼	ruì fēn tài ní	342
 瑞甘颗粒	ruì gān kē lì	45
 瑞戈非尼	ruì gē fēi ní	256
 瑞格非尼	ruì gé fēi ní	65
 瑞格列奈	ruì gé liè nài	19
-瑞派替尼	ruì pài tì ní	10
-瑞普替尼	ruì pǔ tì ní	10
-瑞齐替尼	ruì qí tì ní	10
 瑞替普酶	ruì tì pǔ méi	50
-瑞维鲁胺	ruì wéi lǔ àn	10
 瑞易宁片	ruì yì níng piàn	4
 润肠胶囊	rùn cháng jiāo náng	45
 润通胶囊	rùn tōng jiāo náng	130
@@ -5107,7 +4709,6 @@ sort: by_weight
 塞来昔布	sāi lái xī bù	129
 赛利洛尔	sài lì luò ěr	144
 塞利洛尔	sāi lì luò ěr	38
-塞利尼索	sāi lì ní suǒ	10
 赛仑吉地	sài lún jí dì	50
 赛洛帝尔	sài luò dì ěr	225
 赛洛西宾	sài luò xī bīn	342
@@ -5119,13 +4720,10 @@ sort: by_weight
 赛霉安散	sài méi ān sàn	50
 赛霉胺散	sài méi àn sàn	38
 塞嘧啶片	sāi mì dìng piàn	45
-塞纳帕利	sāi nà pà lì	10
 噻奈普汀	sāi nài pǔ tīng	225
-塞普替尼	sāi pǔ tì ní	10
 塞曲司特	sāi qǔ sī tè	99
 塞瑞替尼	sāi ruì tì ní	45
 噻托溴铵	sāi tuō xiù ǎn	230
-赛沃替尼	sài wò tì ní	10
 腮腺炎片	sāi xiàn yán piàn	45
 三白颗粒	sān bái kē lì	45
 三宝胶囊	sān bǎo jiāo náng	369
@@ -5335,7 +4933,6 @@ sort: by_weight
 舒他新林	shū tā xīn lín	45
 舒托必利	shū tuō bì lì	99
 舒胃药酒	shū wèi yào jiǔ	45
-舒沃替尼	shū wò tì ní	10
 舒心冲剂	shū xīn chōng jì	45
 舒心胶囊	shū xīn jiāo náng	117
 舒心颗粒	shū xīn kē lì	45
@@ -5410,7 +5007,6 @@ sort: by_weight
 食母生片	sì mǔ shēng piàn	279
 四逆颗粒	sì nì kē lì	45
 四逆汤方	sì nì tāng fāng	45
-司帕沙星	sī pà shā xīng	310
 斯皮仁诺	sī pí rén nuò	3
 四氢西泮	sì qīng xī pàn	50
 四氢唑林	sì qīng zuò lín	144
@@ -5439,11 +5035,8 @@ sort: by_weight
 酸枣仁酒	suān zǎo rén jiǔ	76
 酸枣仁汤	suān zǎo rén tāng	19
 羧苄西林	suō biàn xī lín	13
-索凡替尼	suǒ fán tì ní	10
 索菲布韦	suǒ fēi bù wéi	310
 羧甲司坦	suō jiǎ sī tǎn	6
-索拉非尼	suǒ lā fēi ní	10
-索立德吉	suǒ lì dé jí	10
 索密痛片	suǒ mì tòng piàn	45
 缩泉胶囊	suō quán jiāo náng	50
 索他洛尔	suǒ tā luò ěr	279
@@ -5451,10 +5044,8 @@ sort: by_weight
 他达拉非	tā dá lā fēi	25
 他达那非	tā dá nà fēi	162
 他克莫司	tā kè mò sī	104
-他雷替尼	tā léi tì ní	10
 他洛昔明	tā luò xī míng	45
 他莫昔芬	tā mò xī fēn	53
-他泽司他	tā zé sī tā	10
 他扎罗汀	tā zhā luó tīng	306
 他唑巴坦	tā zuò bā tǎn	28
 酞氨西林	tài ān xī lín	117
@@ -5476,7 +5067,6 @@ sort: by_weight
 泰诺片剂	tài nuò piàn jì	4
 胎盘多肽	tāi pán duō tài	9
 胎盘浸膏	tāi pán jìn gāo	45
-泰瑞西利	tài ruì xī lì	10
 泰妥拉唑	tài tuǒ lā zuò	50
 坦度螺酮	tǎn dù luó tóng	13
 痰咳净片	tán ké jìng piàn	50
@@ -5509,7 +5099,6 @@ sort: by_weight
 特灵眼药	tè líng yǎn yào	4
 特洛伪麻	tè luò wěi má	4
 特茉芬片	tè mò fēn piàn	45
-特泊替尼	tè pō tì ní	10
 藤丹胶囊	téng dān jiāo náng	45
 替比夫定	tì bǐ fū dìng	482
 替勃龙片	tì bó lóng piàn	45
@@ -5750,8 +5339,6 @@ sort: by_weight
 维罗非尼	wéi luó fēi ní	225
 维霉素片	wéi méi sù piàn	76
 维酶素片	wéi méi sù piàn	38
-维莫非尼	wéi mò fēi ní	10
-维奈克拉	wéi nài kè lā	10
 维脑路通	wéi nǎo lù tōng	378
 维帕他韦	wéi pà tā wéi	171
 胃气痛片	wèi qì tòng piàn	99
@@ -5782,7 +5369,6 @@ sort: by_weight
 胃益胶囊	wèi yì jiāo náng	4
 维银翘片	wéi yín qiào piàn	526
 胃友新片	wèi yǒu xīn piàn	45
-文迪雅片	wén dí yā piàn	45
 温经颗粒	wēn jīng kē lì	45
 文拉法辛	wén lā fǎ xīn	232
 温胃舒片	wēn wèi shū piàn	45
@@ -5803,8 +5389,6 @@ sort: by_weight
 五积颗粒	wǔ jī kē lì	45
 五积散酒	wǔ jī sàn jiǔ	45
 五加参精	wǔ jiā cān jīng	45
-五加皮酒	wǔ jiā pí jiǔ	374
-五加皮汤	wǔ jiā pí tāng	45
 乌拉地尔	wù lā dì ěr	248
 五联疫苗	wǔ lián yì miáo	28
 乌磷布韦	wū lín bù wéi	50
@@ -5891,7 +5475,6 @@ sort: by_weight
 腺苷钴胺	xiàn gān gǔ àn	274
 仙桂胶囊	xiān guì jiāo náng	45
 仙鹤胶囊	xiān hè jiāo náng	45
-仙灵脾片	xiān líng pí piàn	10
 仙鹿补酒	xiān lù bǔ jiǔ	45
 痫症心丸	xián zhèng xīn wán	45
 氙注射液	xiān zhù shè yè	45
@@ -5941,7 +5524,6 @@ sort: by_weight
 小蓟饮子	xiǎo jì yǐn zi	130
 硝甲西泮	xiāo jiǎ xī pàn	189
 小建中汤	xiǎo jiàn zhōng tāng	50
-小接骨丹	xiǎo jiē gǔ dān	76
 小金创药	xiǎo jīn chuàng yào	4
 小金胶囊	xiǎo jīn jiāo náng	144
 消咳喘片	xiāo ké chuǎn piàn	10
@@ -6023,7 +5605,6 @@ sort: by_weight
 心脑康片	xīn nǎo kāng piàn	4
 新皮宝霜	xīn pí bǎo shuāng	45
 新皮炎膏	xīn pí yán gāo	45
-欣普贝生	xīn pǔ bèi shēng	144
 辛芩冲剂	xīn qín chōng jì	99
 辛芩颗粒	xīn qín kē lì	144
 新清宁片	xīn qīng níng piàn	99
@@ -6041,7 +5622,6 @@ sort: by_weight
 心痛定片	xīn tòng dìng piàn	99
 心痛康片	xīn tòng kāng piàn	45
 心通颗粒	xīn tōng kē lì	45
-心无忧片	xīn wú yōu piàn	10
 新雪胶囊	xīn xuě jiāo náng	4
 新雪颗粒	xīn xuě kē lì	99
 心血宁片	xīn xuè níng piàn	50
@@ -6070,7 +5650,6 @@ sort: by_weight
 血康胶囊	xuè kāng jiāo náng	202
 血康颗粒	xuè kāng kē lì	117
 雪莲药酒	xuě lián yào jiǔ	45
-血脉清片	xuè mài qīng piàn	10
 血美安片	xuè měi ān piàn	45
 血尿胶囊	xuè niào jiāo náng	117
 血宁胶囊	xuè níng jiāo náng	220
@@ -6192,7 +5771,6 @@ sort: by_weight
 依法韦仑	yī fǎ wéi lún	306
 益肺胶囊	yì fèi jiāo náng	50
 依非韦伦	yī fēi wéi lún	230
-依奉阿克	yī fèng ā kè	10
 异福胶囊	yì fú jiāo náng	45
 乙肝健片	yǐ gān jiàn piàn	45
 益肝颗粒	yì gān kē lì	45
@@ -6219,7 +5797,6 @@ sort: by_weight
 伊来西胺	yī lái xī àn	45
 依利罗地	yī lì luó dì	90
 伊立替康	yī lì tì kāng	75
-伊鲁阿克	yī lǔ ā kè	10
 依鲁卡因	yī lǔ kǎ yīn	45
 依鲁替尼	yī lǔ tì ní	252
 伊马替尼	yī mǎ tì ní	526
@@ -6236,7 +5813,6 @@ sort: by_weight
 益母颗粒	yì mǔ kē lì	76
 依木兰片	yī mù lán piàn	45
 益母糖浆	yì mǔ táng jiāng	45
-伊那利塞	yī nà lì sāi	10
 依那普利	yī nà pǔ lì	44
 依那西普	yī nà xī pǔ	396
 益脑胶囊	yì nǎo jiāo náng	144
@@ -6264,7 +5840,6 @@ sort: by_weight
 依沙吖啶	yī shā ā dìng	207
 依沙美肟	yī shā měi wò	76
 依沙丫啶	yī shā yā dìng	76
-伊沙佐米	yī shā zuǒ mǐ	10
 异山梨酯	yì shān lí zhǐ	454
 颐神颗粒	yí shén kē lì	45
 益身灵丸	yì shēn líng wán	130
@@ -6313,7 +5888,6 @@ sort: by_weight
 薏苡仁汤	yì yǐ rén tāng	117
 医用氧气	yī yòng yǎng qì	360
 依折麦布	yī zhé mài bù	310
-茵白冲剂	yīn bái chōng jì	10
 银冰含片	yín bīng hán piàn	90
 银柴冲剂	yín chái chōng jì	76
 银柴合剂	yín chái hé jì	45
@@ -6321,11 +5895,6 @@ sort: by_weight
 吲达帕胺	yǐn dá pà àn	428
 吲哒帕胺	yǐn dā pà àn	224
 茚地那韦	yìn dì nà wéi	162
-吲哚布芬	yǐn duǒ bù fēn	50
-吲哚菁绿	yǐn duǒ jīng lǜ	171
-吲哚拉明	yǐn duǒ lā míng	4
-吲哚洛尔	yǐn duǒ luò ěr	230
-吲哚美辛	yǐn duǒ měi xīn	549
 银汞胶囊	yín gǒng jiāo náng	45
 茵蒿颗粒	yīn hāo kē lì	45
 银花糖浆	yín huā táng jiāng	45
@@ -6342,7 +5911,6 @@ sort: by_weight
 银屑胶囊	yín xiè jiāo náng	252
 银屑颗粒	yín xiè kē lì	130
 银杏胶囊	yín xìng jiāo náng	117
-银杏叶片	yín xìng yè piàn	10
 引阳胶囊	yǐn yáng jiāo náng	45
 茵栀黄片	yīn zhī huáng piàn	45
 婴儿安片	yīng ér ān piàn	45
@@ -6418,7 +5986,6 @@ sort: by_weight
 泽它洗液	zé tā xǐ yè	45
 泽泻汤方	zé xiè tāng fāng	45
 增抗宁片	zēng kàng níng piàn	10
-增生平片	zēng shēng píng piàn	10
 增液颗粒	zēng yè kē lì	45
 扎来普隆	zhā lái pǔ lóng	16
 扎莱普隆	zhā lái pǔ lóng	14
@@ -6505,7 +6072,6 @@ sort: by_weight
 痔血胶囊	zhì xuè jiāo náng	45
 止血宁片	zhǐ xuè níng piàn	45
 痔炎消片	zhì yán xiāo piàn	10
-止痒洗剂	zhǐ yǎng xǐ jì	10
 治痔灵栓	zhì zhì líng shuān	45
 栀子豉汤	zhī zi chǐ tāng	162
 仲丁比妥	zhòng dīng bǐ tuǒ	50
@@ -6566,7 +6132,6 @@ sort: by_weight
 左克胶囊	zuǒ kè jiāo náng	99
 唑拉西泮	zuò lā xī pàn	130
 唑来膦酸	zuò lái lìn suān	69
-佐利替尼	zuǒ lì tì ní	10
 左吗拉胺	zuǒ ma lā àn	4
 左美丙嗪	zuǒ měi bǐng qín	4
 左美啡烷	zuǒ měi fēi wán	90
@@ -6577,6 +6142,188 @@ sort: by_weight
 左旋多巴	zuǒ xuán duō bā	47
 左旋咪唑	zuǒ xuán mī zuò	6
 坐珠达西	zuò zhū dá xī	4
+复心片	fù xīn piàn	10
+肝苏片	gān sū piàn	10
+骨肽片	gǔ tài piàn	10
+固元片	gù yuán piàn	10
+红药片	hóng yào piàn	10
+化痔片	huà zhì piàn	10
+黄根片	huáng gēn piàn	10
+黄芩片	huáng qín piàn	10
+健阳片	jiàn yáng piàn	10
+接骨片	jiē gǔ piàn	10
+金红片	jīn hóng piàn	10
+颈痛片	jǐng tòng piàn	10
+喹硫平	kuí liú píng	273
+奎尼丁	kuí ní dīng	31
+喹诺酮	kuí nuò tóng	22
+利肝片	lì gān piàn	10
+理中片	lǐ zhōng piàn	10
+吗啉胍	mǎ lín guā	30
+脉平片	mài píng piàn	10
+脑安片	nǎo ān piàn	10
+女金片	nǚ jīn piàn	10
+强肝片	qiáng gān piàn	10
+强肾片	qiáng shèn piàn	10
+青果片	qīng guǒ piàn	10
+清化饮	qīng huà yǐn	84
+清降片	qīng jiàng piàn	10
+清解片	qīng jiě piàn	10
+乳康片	rǔ kāng piàn	10
+肾骨片	shèn gǔ piàn	10
+肾炎片	shèn yán piàn	10
+生脉片	shēng mài piàn	10
+生乳片	shēng rǔ piàn	10
+舒胆片	shū dǎn piàn	10
+舒眠片	shū mián piàn	10
+舒胸片	shū xiōng piàn	10
+双丹片	shuāng dān piàn	10
+四神片	sì shén piàn	10
+跳骨片	tiào gǔ piàn	10
+通痹片	tōng bì piàn	10
+五酯片	wǔ zhǐ piàn	10
+仙蟾片	xiān chán piàn	10
+香菊片	xiāng jú piàn	10
+消核片	xiāo hé piàn	10
+消朦片	xiāo méng piàn	10
+消银片	xiāo yín piàn	10
+辛芩片	xīn qín piàn	10
+新雪片	xīn xuě piàn	10
+血宁片	xuè níng piàn	10
+血平片	xuè píng piàn	10
+炎宁片	yán níng piàn	10
+益胆片	yì dǎn piàn	10
+银密片	yín mì piàn	10
+银蜜片	yín mì piàn	10
+振源片	zhèn yuán piàn	10
+治带片	zhì dài piàn	10
+壮血片	zhuàng xuè piàn	10
+阿贝西利	ā bèi xī lì	10
+阿伐替尼	ā fá tì ní	10
+阿基仑赛	ā jī lún sài	10
+阿可替尼	ā kě tì ní	10
+阿来替尼	ā lái tì ní	10
+阿帕他胺	ā pà tā àn	10
+阿思尼布	ā sī ní bù	10
+阿昔洛韦	ā xī luò wéi	60
+阿西美辛	ā xī měi xīn	4
+阿昔莫司	ā xī mò sī	84
+阿昔替尼	ā xī tì ní	212
+艾伏尼布	ài fú ní bù	10
+埃普奈明	āi pǔ nài míng	10
+安欣福宁	ān xīn fú níng	45
+贝福替尼	bèi fú tì ní	10
+贝组替凡	bèi zǔ tì fán	10
+吡洛西利	bǐ luò xī lì	10
+伯瑞替尼	bó ruì tì ní	10
+布格替尼	bù gé tì ní	10
+肠多糖片	cháng duō táng piàn	10
+达尔西利	dá ěr xī lì	10
+达可替尼	dá kě tì ní	10
+达罗他胺	dá luó tā àn	10
+达沙替尼	dá shā tì ní	10
+灯台叶片	dēng tái yè piàn	10
+递法明片	dì fǎ míng piàn	10
+地锦草片	dì jǐn cǎo piàn	10
+地舒单抗	dì shū dān kàng	10
+冬白梅片	dōng bái méi piàn	10
+度维利塞	dù wéi lì sāi	10
+厄达替尼	è dá tì ní	10
+恩考芬尼	ēn kǎo fēn ní	10
+恩曲替尼	ēn qǔ tì ní	10
+恩替司他	ēn tì sī tā	10
+恩扎卢胺	ēn zhā lú àn	10
+伏罗尼布	fú luó ní bù	10
+氟马替尼	fú mǎ tì ní	10
+伏美替尼	fú měi tì ní	10
+伏维西利	fú wéi xī lì	10
+氟泽雷塞	fú zé léi sāi	10
+氟唑帕利	fú zuò pà lì	10
+戈来雷塞	gē lái léi sāi	10
+格索雷塞	gé suǒ léi sāi	10
+谷美替尼	gǔ měi tì ní	10
+吉瑞替尼	jí ruì tì ní	10
+卡非佐米	kǎ fēi zuǒ mǐ	10
+卡马替尼	kǎ mǎ tì ní	10
+卡匹色替	kǎ pǐ sè tì	10
+拉罗替尼	lā luó tì ní	10
+来罗西利	lái luó xī lì	10
+了哥王片	le gē wáng piàn	10
+利厄替尼	lì è tì ní	10
+利司扑兰	lì sī pū lán	34
+林普利塞	lín pǔ lì sāi	10
+龙凤宝片	lóng fèng bǎo piàn	10
+芦比替定	lú bǐ tì dìng	10
+洛拉替尼	luò lā tì ní	10
+吗啉胍片	mǎ lín guā piàn	212
+奈拉替尼	nài lā tì ní	10
+尼可刹米	ní kě shā mǐ	22
+帕歌斯片	pà gē sī piàn	10
+帕米帕利	pà mǐ pà lì	10
+佩米替尼	pèi mǐ tì ní	10
+泊那替尼	pō nà tì ní	10
+普拉替尼	pǔ lā tì ní	10
+普鲁托醇	pǔ lǔ tuō chún	45
+普仑司特	pǔ lún sī tè	4
+普洛必达	pǔ luò bì dá	4
+普罗布考	pǔ luó bù kǎo	202
+普罗布可	pǔ luó bù kě	76
+普罗雌烯	pǔ luó cí xī	153
+普罗碘铵	pǔ luó diǎn ǎn	4
+普罗吩胺	pǔ luó fēn àn	99
+普罗庚嗪	pǔ luó gēng qín	4
+普罗吗酯	pǔ luó ma zhǐ	45
+普洛萘尔	pǔ luò nài ěr	45
+普罗帕酮	pǔ luó pà tóng	16
+普罗司泰	pǔ luó sī tài	45
+普罗替林	pǔ luó tì lín	153
+普罗托醇	pǔ luó tuō chún	50
+普罗新希	pǔ luó xīn xī	45
+普美拉泰	pǔ měi lā tài	45
+扑热息痛	pū rè xī tòng	279
+曲拉西利	qǔ lā xī lì	10
+炔孕酮片	quē yùn tóng piàn	4
+人参甘草	rén shēn gān cǎo	10
+瑞波西利	ruì bō xī lì	10
+瑞厄替尼	ruì è tì ní	10
+瑞派替尼	ruì pài tì ní	10
+瑞普替尼	ruì pǔ tì ní	10
+瑞齐替尼	ruì qí tì ní	10
+瑞维鲁胺	ruì wéi lǔ àn	10
+塞利尼索	sāi lì ní suǒ	10
+塞纳帕利	sāi nà pà lì	10
+塞普替尼	sāi pǔ tì ní	10
+赛沃替尼	sài wò tì ní	10
+舒沃替尼	shū wò tì ní	10
+司帕沙星	sī pà shā xīng	310
+索凡替尼	suǒ fán tì ní	10
+索拉非尼	suǒ lā fēi ní	10
+索立德吉	suǒ lì dé jí	10
+他雷替尼	tā léi tì ní	10
+他泽司他	tā zé sī tā	10
+泰瑞西利	tài ruì xī lì	10
+特泊替尼	tè pō tì ní	10
+维莫非尼	wéi mò fēi ní	10
+维奈克拉	wéi nài kè lā	10
+文迪雅片	wén dí yā piàn	45
+仙灵脾片	xiān líng pí piàn	10
+小接骨丹	xiǎo jiē gǔ dān	76
+心无忧片	xīn wú yōu piàn	10
+血脉清片	xuè mài qīng piàn	10
+依奉阿克	yī fèng ā kè	10
+伊鲁阿克	yī lǔ ā kè	10
+伊那利塞	yī nà lì sāi	10
+伊沙佐米	yī shā zuǒ mǐ	10
+茵白冲剂	yīn bái chōng jì	10
+吲哚布芬	yǐn duǒ bù fēn	50
+吲哚菁绿	yǐn duǒ jīng lǜ	171
+吲哚拉明	yǐn duǒ lā míng	4
+吲哚洛尔	yǐn duǒ luò ěr	230
+吲哚美辛	yǐn duǒ měi xīn	549
+银杏叶片	yín xìng yè piàn	10
+增生平片	zēng shēng píng piàn	10
+止痒洗剂	zhǐ yǎng xǐ jì	10
+佐利替尼	zuǒ lì tì ní	10
 阿苯达唑片	ā běn dá zuò piàn	10
 阿比多尔片	ā bǐ duō ěr piàn	10
 阿草洛韦片	ā cǎo luò wéi piàn	10
@@ -7323,6 +7070,9 @@ sort: by_weight
 二宝山药丸	èr bǎo shān yào wán	10
 二陈口服液	èr chén kǒu fú yè	10
 二陈浓缩丸	èr chén nóng suō wán	10
+小儿复方赖氨酸	xiǎo ér fù fāng lài ān suān	10
+小儿五维赖氨酸	xiǎo ér wǔ wéi lài ān suān	10
+小儿盐酸异丙嗪	xiǎo ér yán suān yì bǐng qín	10
 耳聪口服液	ěr cōng kǒu fú yè	10
 儿肤康搽剂	ér fū kāng chá jì	10
 二氟尼柳片	èr fú ní liǔ piàn	10
@@ -7572,6 +7322,1951 @@ sort: by_weight
 复方皂矾片	fù fāng zào fán piàn	10
 复方皂矾丸	fù fāng zào fán wán	10
 复方制金柑	fù fāng zhì jīn gān	10
+安佰深	ān bǎi shēn	225
+博辛瓦	bó xīn wǎ	6
+达托洛	dá tuō luò	109
+蛋白银	dàn bái yín	312
+蛋黄油	dàn huáng yóu	644
+丹皮酚	dān pí fēn	25
+狄克敏	dí kè mǐn	90
+迪迈欣	dí mài xīn	45
+蝶脉灵	dié mài líng	45
+多玛殊	duō mǎ shū	50
+莫斯利安	mò sī lì ān	603
+欣普贝生	xīn pǔ bèi shēng	144
+金斯利安	jīn sī lì ān	414
+多尼芬	duō ní fēn	378
+多尼韦	duō ní wéi	50
+多培欣	duō péi xīn	90
+多赛益	duō sài yì	220
+厄利空	è lì kōng	28
+恩查素	ēn chá sù	4
+恩美力	ēn měi lì	225
+恩诺欣	ēn nuò xīn	45
+恩图曼	ēn tú màn	392
+恩维拉	ēn wéi lā	279
+尔福令	ěr fú lìng	76
+二硫龙	èr liú lóng	144
+二替尼	èr tì ní	90
+儿泻康	ér xiè kāng	194
+法玛新	fǎ mǎ xīn	4
+妇宝宁	fù bǎo níng	207
+妇康安	fù kāng ān	792
+福奎阿	fú kuí ā	333
+福来恩	fú lái ēn	464
+富莱欣	fù lái xīn	90
+福乐烯	fú lè xī	90
+福灵安	fú líng ān	297
+芙露欣	fú lù xīn	90
+氟罗新	fú luó xīn	90
+福美林	fú měi lín	50
+肤美灵	fū měi líng	418
+复美欣	fù měi xīn	45
+古拉定	gǔ lā dìng	220
+谷维佳	gǔ wéi jiā	45
+哈力克	hā lì kè	308
+抗纤号	kàng xiān hào	66
+可卡莉	kě kǎ lì	90
+诺日朗	nuò rì lǎng	9
+欧莱诺	ōu lái nuò	234
+欧力威	ōu lì wēi	580
+派比安	pài bǐ ān	508
+派可欣	pài kě xīn	45
+派罗宁	pài luó níng	45
+朋卡诺	péng kǎ nuò	279
+脾可欣	pí kě xīn	306
+普贝生	pǔ bèi shēng	220
+蒲地蓝	pú dì lán	97
+普拉固	pǔ lā gù	225
+普兰诺	pǔ lán nuò	364
+普乐林	pǔ lè lín	45
+普乐美	pǔ lè měi	3
+巧力索	qiǎo lì suǒ	274
+瑞芬贝	ruì fēn bèi	4
+瑞凯林	ruì kǎi lín	45
+瑞美隆	ruì měi lóng	266
+瑞帕明	ruì pà míng	45
+瑞芝清	ruì zhī qīng	328
+思贝礼	sī bèi lǐ	256
+斯的明	sī de míng	598
+斯利安	sī lì ān	22
+司莫拉	sī mò lā	4
+思诺思	sī nuò sī	138
+泰夏安	tài xià ān	243
+汤乐普	tāng lè pǔ	162
+万济圆	wàn jì yuán	130
+万杰隆	wàn jié lóng	180
+亚氨嗪	yà ān qín	45
+雅息士	yǎ xī shì	428
+益维宁	yì wéi níng	45
+益西丹	yì xī dān	328
+赞诺欣	zàn nuò xīn	45
+樟柳碱	zhāng liǔ jiǎn	3
+治胃灵	zhì wèi líng	45
+九味参蓉	jiǔ wèi cān róng	45
+九味沉香	jiǔ wèi chén xiāng	76
+九味肝泰	jiǔ wèi gān tài	50
+九味牛黄	jiǔ wèi niú huáng	50
+九味羌活	jiǔ wèi qiāng huó	315
+九味青鹏	jiǔ wèi qīng péng	45
+九味神安	jiǔ wèi shén ān	99
+九味双解	jiǔ wèi shuāng jiě	45
+九味通导	jiǔ wèi tōng dǎo	45
+九味益脑	jiǔ wèi yì nǎo	234
+斯利安	jīn sī lì ān	414
+斯利安	mò sī lì ān	603
+普兰诺伊	pǔ lán nuò yī	288
+阿醋美沙朵	ā cù měi shā duǒ	10
+阿德福韦酯	ā dé fú wéi zhǐ	10
+阿法美罗定	ā fǎ měi luó dìng	10
+阿法美沙朵	ā fǎ měi shā duǒ	10
+阿洛巴比妥	ā luò bā bǐ tuǒ	10
+阿洛西林钠	ā luò xī lín nà	10
+阿莫西林钠	ā mò xī lín nà	10
+阿娜尔妇洁	ā nà ěr fù jié	10
+阿那日五味	ā nà rì wǔ wèi	10
+阿帕西林钠	ā pà xī lín nà	10
+阿司匹林栓	ā sī pǐ lín shuān	10
+阿托伐他汀	ā tuō fá tā tīng	10
+艾庄粉刺消	ài zhuāng fěn cì xiāo	10
+艾庄头痒灵	ài zhuāng tóu yǎng líng	10
+氨酚咖那敏	ān fēn kā nà mǐn	10
+氨酚咖匹林	ān fēn kā pǐ lín	10
+氨酚曲马多	ān fēn qǔ mǎ duō	10
+氨酚异丙嗪	ān fēn yì bǐng qín	10
+安宫牛黄栓	ān gōng niú huáng shuān	10
+安络痛药酒	ān luò tòng yào jiǔ	10
+安乃近滴剂	ān nǎi jìn dī jì	10
+安其格纳芬	ān qí gé nà fēn	10
+奥复星片剂	ào fù xīng piàn jì	10
+奥克斯都保	ào kè sī dōu bǎo	10
+奥美拉唑镁	ào měi lā zuò měi	10
+奥美拉唑钠	ào měi lā zuò nà	10
+奥美沙坦酯	ào měi shā tǎn zhǐ	10
+奥诺前列素	ào nuò qián liè sù	10
+奥亭止咳露	ào tíng zhǐ ké lù	10
+奥西他米韦	ào xī tā mǐ wéi	10
+奥扎格雷钠	ào zhā gé léi nà	10
+疤痕软化针	bā hén ruǎn huà zhēn	10
+八角茴香水	bā jiǎo huí xiāng shuǐ	10
+巴利昔单抗	bā lì xī dān kàng	10
+巴特日七味	bā tè rì qī wèi	10
+八味小檗皮	bā wèi xiǎo bò pí	10
+八味獐牙菜	bā wèi zhāng yá cài	10
+拜阿司匹灵	bài ā sī pǐ líng	10
+白百破疫苗	bái bǎi pò yì miáo	10
+百白破疫苗	bǎi bái pò yì miáo	10
+百草妇炎清	bǎi cǎo fù yán qīng	10
+百合更年安	bǎi hé gèng nián ān	10
+白头翁汤方	bái tóu wēng tāng fāng	10
+百癣夏塔热	bǎi xuǎn xià tǎ rè	10
+百亿清甘宁	bǎi yì qīng gān níng	10
+班贝霉素类	bān bèi méi sù lèi	10
+宝宝一贴灵	bǎo bao yì tiē líng	10
+保妇康凝胶	bǎo fù kāng níng jiāo	10
+豹骨木瓜酒	bào gǔ mù guā jiǔ	10
+保钾利尿剂	bǎo jiǎ lì niào jì	10
+保宁半夏曲	bǎo níng bàn xià qǔ	10
+包醛氧淀粉	bāo quán yǎng diàn fěn	10
+保幼化风丹	bǎo yòu huà fēng dān	10
+倍醋美沙朵	bèi cù měi shā duǒ	10
+贝卡普勒明	bèi kǎ pǔ lè míng	10
+贝美前列素	bèi měi qián liè sù	10
+倍芪腹淀贴	bèi qí fù diàn tiē	10
+倍芪腹泻贴	bèi qí fù xiè tiē	10
+贝前列素钠	bèi qián liè sù nà	10
+倍他美罗定	bèi tā měi luó dìng	10
+倍他美沙朵	bèi tā měi shā duǒ	10
+吡磺环己脲	bǐ huáng huán jǐ niào	10
+必麦森凝胶	bì mài sēn níng jiāo	10
+比沙可啶栓	bǐ shā kě dìng shuān	10
+鼻通滴鼻剂	bí tōng dī bí jì	10
+鼻通宁滴剂	bí tōng níng dī jì	10
+萆薢分清饮	bì xiè fēn qīng yǐn	10
+鼻咽清毒剂	bí yān qīng dú jì	10
+吡乙吩噻嗪	bǐ yǐ fēn sāi qín	10
+碧云砂乙肝	bì yún shā yǐ gān	10
+表海他西林	biǎo hǎi tā xī lín	10
+表帕其沙明	biǎo pà qí shā míng	10
+鳖甲煎丸方	biē jiǎ jiān wán fāng	10
+槟榔十三味	bīng láng shí sān wèi	10
+丙匹西林钾	bǐng pǐ xī lín jiǎ	10
+冰霜痱子粉	bīng shuāng fèi zǐ fěn	10
+丙戊酰胺栓	bǐng wù xiān àn shuān	10
+丙酰白霉素	bǐng xiān bái méi sù	10
+丙酰奋乃静	bǐng xiān fèn nǎi jìng	10
+薄荷止痒酊	bò he zhǐ yǎng dīng	10
+博科鼻炎水	bó kē bí yán shuǐ	10
+博性康药膜	bó xìng kāng yào mó	10
+拨云散眼药	bō yún sàn yǎn yào	10
+步长脑心通	bù cháng nǎo xīn tōng	10
+补肾温阳酒	bǔ shèn wēn yáng jiǔ	10
+补肾益精酒	bǔ shèn yì jīng jiǔ	10
+补血当归精	bǔ xuè dāng guī jīng	10
+补益杞圆酒	bǔ yì qǐ yuán jiǔ	10
+蚕蛾公补酒	cán é gōng bǔ jiǔ	10
+参耳五味晶	cān ěr wǔ wèi jīng	10
+参龟固本酒	cān guī gù běn jiǔ	10
+参花消渴茶	cān huā xiāo kě chá	10
+参蓉健腰酒	cān róng jiàn yāo jiǔ	10
+参三七伤药	cān sān qī shāng yào	10
+餐时胰岛素	cān shí yí dǎo sù	10
+参芎葡萄糖	cān xiōng pú tao táng	10
+参玉补气酒	cān yù bǔ qì jiǔ	10
+藏舒前列丹	cáng shū qián liè dān	10
+苍夷滴鼻油	cāng yí dī bí yóu	10
+柴胡达原饮	chái hú dá yuán yǐn	10
+柴胡清肝饮	chái hú qīng gān yǐn	10
+柴胡清膈煎	chái hú qīng gé jiān	10
+柴龙解郁丹	chái lóng jiě yù dān	10
+蟾马正痛酊	chán mǎ zhèng tòng dīng	10
+长白灵咳喘	cháng bái líng ké chuǎn	10
+长城止咳喘	cháng chéng zhǐ ké chuǎn	10
+肠内营养剂	cháng nèi yíng yǎng jì	10
+长庆脑舒安	cháng qìng nǎo shū ān	10
+肠溶胶囊剂	cháng róng jiāo náng jì	10
+长效避孕药	cháng xiào bì yùn yào	10
+长效干扰素	cháng xiào gān rǎo sù	10
+长效胰岛素	cháng xiào yí dǎo sù	10
+陈香露白露	chén xiāng lòu bái lù	10
+沉香十七味	chén xiāng shí qī wèi	10
+成人巨能钙	chéng rén jù néng gài	10
+成人维生素	chéng rén wéi shēng sù	10
+成人泻利停	chéng rén xiè lì tíng	10
+齿痛消炎灵	chǐ tòng xiāo yán líng	10
+虫草双参酒	chóng cǎo shuāng cān jiǔ	10
+重楼解毒酊	chóng lóu jiě dú dīng	10
+重组干扰素	chóng zǔ gān rǎo sù	10
+重组链激酶	chóng zǔ liàn jī méi	10
+重组葡激酶	chóng zǔ pú jī méi	10
+川花止痛膜	chuān huā zhǐ tòng mó	10
+垂体后叶粉	chuí tǐ hòu yè fěn	10
+垂体后叶素	chuí tǐ hòu yè sù	10
+春娟黄芪霜	chūn juān huáng qí shuāng	10
+刺激性泻药	cì jī xìng xiè yào	10
+刺五加脑灵	cì wǔ jiā nǎo líng	10
+葱白七味饮	cōng bái qī wèi yǐn	10
+醋葡醛内酯	cù pú quán nèi zhǐ	10
+醋硝香豆素	cù xiāo xiāng dòu sù	10
+醋竹桃霉素	cù zhú táo méi sù	10
+大半夏汤方	dà bàn xià tāng fāng	10
+大柴胡汤方	dà chái hú tāng fāng	10
+大承气汤方	dà chéng qì tāng fāng	10
+大建中汤方	dà jiàn zhōng tāng fāng	10
+大青龙汤方	dà qīng lóng tāng fāng	10
+丹佛胃尔康	dān fó wèi ěr kāng	10
+丹骨生发酊	dān gǔ shēng fà dīng	10
+丹参保心茶	dān shēn bǎo xīn chá	10
+胆星胆南星	dǎn xīng dǎn nán xīng	10
+当飞利肝宁	dāng fēi lì gān níng	10
+当归红花酊	dāng guī hóng huā dīng	10
+氘瑞米德韦	dāo ruì mǐ dé wéi	10
+锝白蛋白胶	dé bái dàn bái jiāo	10
+德国胃必治	dé guó wèi bì zhì	10
+锝依沙美肟	dé yī shā měi wò	10
+登玉堂阿胶	dēng yù táng ē jiāo	10
+地奥心血康	dì ào xīn xuè kāng	10
+敌敌畏乳油	dí dí wèi rǔ yóu	10
+地非索罗定	dì fēi suǒ luó dìng	10
+低分子肝素	dī fēn zǐ gān sù	10
+迪扶欣凝胶	dí fú xīn níng jiāo	10
+地高辛酏剂	dì gāo xīn yǐ jì	10
+地诺前列素	dì nuò qián liè sù	10
+地特胰岛素	dì tè yí dǎo sù	10
+滴通鼻炎水	dī tōng bí yán shuǐ	10
+碘伏消毒剂	diǎn fú xiāo dú jì	10
+碘塞罗宁钠	diǎn sāi luó níng nà	10
+碘他拉葡胺	diǎn tā lā pú àn	10
+碘脱氧胞苷	diǎn tuō yǎng bāo gān	10
+碘脱氧尿苷	diǎn tuō yǎng niào gān	10
+调营敛肝饮	diào yíng liǎn gān yǐn	10
+跌打榜药酒	diē dǎ bǎng yào jiǔ	10
+跌打扭伤灵	diē dǎ niǔ shāng líng	10
+跌打伤科酒	diē dǎ shāng kē jiǔ	10
+跌打伤痛贴	diē dǎ shāng tòng tiē	10
+丁桂儿脐贴	dīng guì ér qí tiē	10
+丁氏润通茶	dīng shì rùn tōng chá	10
+丁香风油精	dīng xiāng fēng yóu jīng	10
+丁芎癣药水	dīng xiōng xuǎn yào shuǐ	10
+冻疮未溃药	dòng chuāng wèi kuì yào	10
+冻干粉针剂	dòng gān fěn zhēn jì	10
+冻干卡介苗	dòng gān kǎ jiè miáo	10
+东日清脂灵	dōng rì qīng zhī líng	10
+东圣止咳灵	dōng shèng zhǐ ké líng	10
+毒剧药散剂	dú jù yào sǎn jì	10
+独克士霉素	dú kè shì méi sù	10
+杜仲补天素	dù zhòng bǔ tiān sù	10
+杜仲平压片	dù zhòng píng yā piàn	10
+多巴酚丁胺	duō bā fēn dīng àn	10
+多酶双层片	duō méi shuāng céng piàn	10
+多维乳酶生	duō wéi rǔ méi shēng	10
+多元维生素	duō yuán wéi shēng sù	10
+阿胶参芪酒	ē jiāo shēn qí jiǔ	10
+阿胶维他晶	ē jiāo wéi tā jīng	10
+阿胶乌鸡精	ē jiāo wū jī jīng	10
+阿胶益寿晶	ē jiāo yì shòu jīng	10
+鹅毛管眼药	é máo guǎn yǎn yào	10
+鹅掌疯浸剂	é zhǎng fēng jìn jì	10
+鹅掌风浸药	é zhǎng fēng jìn yào	10
+鹅掌疯药粉	é zhǎng fēng yào fěn	10
+儿感退热宁	ér gǎn tuì rè níng	10
+二巯丙磺钠	èr qiú bǐng huáng nà	10
+二巯丁二钠	èr qiú dīng èr nà	10
+二十味沉香	èr shí wèi chén xiāng	10
+二十味疏肝	èr shí wèi shū gān	10
+儿童感热清	ér tóng gǎn rè qīng	10
+儿童助长剂	ér tóng zhù zhǎng jì	10
+二维葡磷钙	èr wéi pú lín gài	10
+二至益元酒	èr zhì yì yuán jiǔ	10
+法罗培南钠	fǎ luó péi nán nà	10
+法斯通凝胶	fǎ sī tōng níng jiāo	10
+法制半夏曲	fǎ zhì bàn xià qǔ	10
+非奈西林钾	fēi nài xī lín jiǎ	10
+非诺洛芬钙	fēi nuò luò fēn gài	10
+非索非那定	fēi suǒ fēi nà dìng	10
+芬贝西林钾	fēn bèi xī lín jiǎ	10
+粉刺一扫光	fěn cì yì sǎo guāng	10
+分剂量散剂	fēn jì liàng sǎn jì	10
+酚美愈伪麻	fēn měi yù wěi má	10
+奋乃静醋酯	fèn nǎi jìng cù zhǐ	10
+蜂参益气锭	fēng cān yì qì dìng	10
+风寒感冒宁	fēng hán gǎn mào níng	10
+风寒砂熨剂	fēng hán shā yùn jì	10
+风寒双离拐	fēng hán shuāng lí guǎi	10
+枫荷除痹酊	fēng hé chú bì dīng	10
+蜂胶口腔膜	fēng jiāo kǒu qiāng mó	10
+蜂胶牙痛酊	fēng jiāo yá tòng dīng	10
+冯了性药酒	féng le xìng yào jiǔ	10
+枫蓼肠胃康	fēng liǎo cháng wèi kāng	10
+复必泰疫苗	fù bì tài yì miáo	10
+斧标驱风油	fǔ biāo qū fēng yóu	10
+呋布西林钠	fū bù xī lín nà	10
+伏格列波糖	fú gé liè bō táng	10
+复合避孕药	fù hé bì yùn yào	10
+复合干扰素	fù hé gān rǎo sù	10
+复合利福平	fù hé lì fú píng	10
+复合凝乳酶	fù hé níng rǔ méi	10
+肤康涂膜剂	fū kāng tú mó jì	10
+妇科回生丹	fù kē huí shēng dān	10
+妇科毛鸡酒	fù kē máo jī jiǔ	10
+妇科消炎栓	fù kē xiāo yán shuān	10
+妇科止血灵	fù kē zhǐ xuè líng	10
+肤乐喷脚王	fū lè pēn jiǎo wáng	10
+辅仁腰息痛	fǔ rén yāo xī tòng	10
+蝮蛇抗拴酶	fù shé kàng shuān méi	10
+福辛普利钠	fú xīn pǔ lì nà	10
+肤阴洁湿巾	fū yīn jié shī jīn	10
+扶正女贞素	fú zhèng nǚ zhēn sù	10
+妇之宝凝胶	fù zhī bǎo níng jiāo	10
+钙尔奇片剂	gài ěr qí piàn jì	10
+甘氨双唑钠	gān ān shuāng zuò nà	10
+甘草锌口胶	gān cǎo xīn kǒu jiāo	10
+肝精补血素	gān jīng bǔ xuè sù	10
+甘精胰岛素	gān jīng yí dǎo sù	10
+甘露聚糖肽	gān lù jù táng tài	10
+甘露六烟酯	gān lù liù yān zhǐ	10
+甘露消毒丹	gān lù xiāo dú dān	10
+甘露消毒饮	gān lù xiāo dú yǐn	10
+感冒解毒灵	gǎn mào jiě dú líng	10
+感冒解热颗	gǎn mào jiě rè kē	10
+感冒炎咳灵	gǎn mào yán ké líng	10
+甘油灌肠剂	gān yóu guàn cháng jì	10
+高聚金葡素	gāo jù jīn pú sù	10
+高锌施尔康	gāo xīn shī ěr kāng	10
+葛洪脚气水	gě hóng jiǎo qì shuǐ	10
+格拉诺赛特	gé lā nuò sài tè	10
+格列嘧啶钠	gé liè mì dìng nà	10
+根管充填剂	gēn guǎn chōng tián jì	10
+根管内封药	gēn guǎn nèi fēng yào	10
+更年安胶蘘	gèng nián ān jiāo ráng	10
+更昔洛韦钠	gèng xī luò wéi nà	10
+宫方润肠栓	gōng fāng rùn cháng shuān	10
+宫颈炎康栓	gōng jǐng yán kāng shuān	10
+汞溴红药水	gǒng xiù hóng yào shuǐ	10
+枸杞巴戟酒	gǒu qǐ bā jǐ jiǔ	10
+枸杞益元酒	gǒu qǐ yì yuán jiǔ	10
+固本延龄丹	gù běn yán líng dān	10
+钴博来霉素	gǔ bó lái méi sù	10
+骨瓜提取物	gǔ guā tí qǔ wù	10
+古威活络酊	gǔ wēi huó luò dīng	10
+谷维素双维	gǔ wéi sù shuāng wéi	10
+瓜霜退热灵	guā shuāng tuì rè líng	10
+贯防败毒饮	guàn fáng bài dú yǐn	10
+鬼臼毒素酊	guǐ jiù dú sù dīng	10
+桂苓甘露饮	guì líng gān lù yǐn	10
+归灵痛经宁	guī líng tòng jīng níng	10
+桂龙咳喘宁	guì lóng ké chuǎn níng	10
+龟鹿二仙胶	guī lù èr xiān jiāo	10
+桂茸枸杞酒	guì róng gǒu qǐ jiǔ	10
+归芍天地煎	guī sháo tiān dì jiān	10
+鲑鱼降钙素	guī yú jiàng gài sù	10
+归元筋骨宁	guī yuán jīn gǔ níng	10
+哈慈双效茶	hā cí shuāng xiào chá	10
+哈力多长效	hā lì duō cháng xiào	10
+海蛇天麻酒	hǎi shé tiān má jiǔ	10
+海他西林钾	hǎi tā xī lín jiǎ	10
+海珠喘息定	hǎi zhū chuǎn xī dìng	10
+含浸膏散剂	hán jìn gāo sǎn jì	10
+寒痛乐熨剂	hán tòng lè yùn jì	10
+诃梨勒散方	hē lí lè sàn fāng	10
+何氏狐臭净	hé shì hú chòu jìng	10
+和兴白花油	hé xīng bái huā yóu	10
+荷叶调脂茶	hé yè diào zhī chá	10
+恒古骨伤愈	héng gǔ gǔ shāng yù	10
+红香止痛酊	hóng xiāng zhǐ tòng dīng	10
+猴头健胃灵	hóu tóu jiàn wèi líng	10
+虎标万金油	hǔ biāo wàn jīn yóu	10
+护肝布祖热	hù gān bù zǔ rè	10
+虎骨追风酒	hǔ gǔ zhuī fēng jiǔ	10
+胡日查六味	hú rì chá liù wèi	10
+琥乙红霉素	hǔ yǐ hóng méi sù	10
+虎杖伤痛酊	hǔ zhàng shāng tòng dīng	10
+华安克鬼油	huá ān kè guǐ yóu	10
+花斑癣药水	huā bān xuǎn yào shuǐ	10
+华富胃可舒	huá fù wèi kě shū	10
+华佗风痛宝	huà tuó fēng tòng bǎo	10
+化学治疗剂	huà xué zhì liáo jì	10
+化瘀止痛栓	huà yū zhǐ tòng shuān	10
+环丙沙星栓	huán bǐng shā xīng shuān	10
+环己巴比妥	huán jǐ bā bǐ tuǒ	10
+缓释胶囊剂	huǎn shì jiāo náng jì	10
+缓释异博定	huǎn shì yì bó dìng	10
+缓释异搏定	huǎn shì yì bó dìng	10
+环戊保泰松	huán wù bǎo tài sōng	10
+环已巴比妥	huán yǐ bā bǐ tuǒ	10
+环酯红霉素	huán zhǐ hóng méi sù	10
+磺胺嘧啶锌	huáng àn mì dìng xīn	10
+磺胺嘧啶银	huáng àn mì dìng yín	10
+磺胺米柯定	huáng àn mǐ kē dìng	10
+磺胺噻唑钠	huáng àn sāi zuò nà	10
+磺胺索嘧啶	huáng àn suǒ mì dìng	10
+磺胺托嘧啶	huáng àn tuō mì dìng	10
+磺胺异恶唑	huáng àn yì è zuò	10
+磺胺增效剂	huáng àn zēng xiào jì	10
+磺达肝癸钠	huáng dá gān guǐ nà	10
+磺巯嘌呤钠	huáng qiú piào lìng nà	10
+黄氏响声茶	huáng shì xiǎng shēng chá	10
+黄香鹤草酊	huáng xiāng hè cǎo dīng	10
+回生第一丹	huí shēng dì yī dān	10
+混悬凝胶剂	hùn xuán níng jiāo jì	10
+藿参补肾酒	huò cān bǔ shèn jiǔ	10
+活络效灵丹	huó luò xiào líng dān	10
+藿香祛暑水	huò xiāng qū shǔ shuǐ	10
+藿香正气水	huò xiāng zhèng qì shuǐ	10
+霍香正气水	huò xiāng zhèng qì shuǐ	10
+活血安痛酒	huó xuè ān tòng jiǔ	10
+活血舒筋酊	huó xuè shū jīn dīng	10
+活血消痛酊	huó xuè xiāo tòng dīng	10
+活血益痔酊	huó xuè yì zhì dīng	10
+活血壮筋丹	huó xuè zhuàng jīn dān	10
+吉美前列素	jí měi qián liè sù	10
+肌肉松弛剂	jī ròu sōng chí jì	10
+肌肉松弛药	jī ròu sōng chí yào	10
+济生万应锭	jì shēng wàn yìng dìng	10
+吉妥珠单抗	jí tuǒ zhū dān kàng	10
+加合百服宁	jiā hé bǎi fú níng	10
+加减补心丹	jiā jiǎn bǔ xīn dān	10
+加减玉女煎	jiā jiǎn yù nǚ jiān	10
+加减镇心丹	jiā jiǎn zhèn xīn dān	10
+家秘润肺饮	jiā mì rùn fèi yǐn	10
+家秘天地煎	jiā mì tiān dì jiān	10
+家秘香薷饮	jiā mì xiāng rú yǐn	10
+加味龟龄集	jiā wèi guī líng jí	10
+加味凉膈煎	jiā wèi liáng gé jiān	10
+加味清心饮	jiā wèi qīng xīn yǐn	10
+加味参苏饮	jiā wèi shēn sū yǐn	10
+加味通心饮	jiā wèi tōng xīn yǐn	10
+加味香薷饮	jiā wèi xiāng rú yǐn	10
+加味消毒饮	jiā wèi xiāo dú yǐn	10
+加味益母草	jiā wèi yì mǔ cǎo	10
+加香甲酚皂	jiā xiāng jiǎ fēn zào	10
+甲溴阿托品	jiǎ xiù ā tuō pǐn	10
+甲氧西林钠	jiǎ yǎng xī lín nà	10
+健儿消积贴	jiàn ér xiāo jī tiē	10
+健康补肾酒	jiàn kāng bǔ shèn jiǔ	10
+健脾化滞锭	jiàn pí huà zhì dìng	10
+健脾止泻宁	jiàn pí zhǐ xiè níng	10
+健肾强精酒	jiàn shèn qiáng jīng jiǔ	10
+降浊健美茶	jiàng zhuó jiàn měi chá	10
+胶体果胶铋	jiāo tǐ guǒ jiāo bì	10
+脚癣一次净	jiǎo xuǎn yí cì jìng	10
+角质剥脱剂	jiǎo zhì bāo tuō jì	10
+角质剥离剂	jiǎo zhì bō lí jì	10
+桔梗杏仁煎	jié gěng xìng rén jiān	10
+竭红跌打酊	jié hóng diē dǎ dīng	10
+截疟七宝饮	jié nüè qī bǎo yǐn	10
+金贝痰咳清	jīn bèi tán ké qīng	10
+筋骨疯痛药	jīn gǔ fēng tòng yào	10
+筋骨疼痛酒	jīn gǔ téng tòng jiǔ	10
+金龟乳块消	jīn guī rǔ kuài xiāo	10
+金花跌打酊	jīn huā diē dǎ dīng	10
+金鹃咳喘停	jīn juān ké chuǎn tíng	10
+进口菌必治	jìn kǒu jūn bì zhì	10
+金枇杷喉宝	jīn pí pá hóu bǎo	10
+金嗓子喉宝	jīn sǎng zi hóu bǎo	10
+金石感冒茶	jīn shí gǎn mào chá	10
+金水六君煎	jīn shuǐ liù jūn jiān	10
+金熊炎必克	jīn xióng yán bì kè	10
+金衣至宝锭	jīn yī zhì bǎo dìng	10
+金樱首乌汁	jīn yīng shǒu wū zhī	10
+精氨加压素	jīng ān jiā yā sù	10
+精纯抗栓酶	jīng chún kàng shuān méi	10
+晶福眼药水	jīng fú yǎn yào shuǐ	10
+经皮吸收剂	jīng pí xī shōu jì	10
+精神抑制药	jīng shén yì zhì yào	10
+颈痛灵药酒	jǐng tòng líng yào jiǔ	10
+颈腰腿痛贴	jǐng yāo tuǐ tòng tiē	10
+精制五加皮	jīng zhì wǔ jiā pí	10
+晶珠心脑通	jīng zhū xīn nǎo tōng	10
+九归强肾酒	jiǔ guī qiáng shèn jiǔ	10
+九合维生素	jiǔ hé wéi shēng sù	10
+九华痔疮栓	jiǔ huá zhì chuāng shuān	10
+久强脑立清	jiǔ qiáng nǎo lì qīng	10
+九味石灰华	jiǔ wèi shí huī huá	10
+九维鱼肝油	jiǔ wéi yú gān yóu	10
+九味獐牙菜	jiǔ wèi zhāng yá cài	10
+九芝肝立克	jiǔ zhī gān lì kè	10
+九转还魂丹	jiǔ zhuàn huán hún dān	10
+局部用散剂	jú bù yòng sǎn jì	10
+局方至宝丹	jú fāng zhì bǎo dān	10
+菊蓝抗流感	jú lán kàng liú gǎn	10
+橘皮汤主之	jú pí tāng zhǔ zhī	10
+军献益肤霜	jūn xiàn yì fū shuāng	10
+卡巴匹林钙	kǎ bā pǐ lín gài	10
+卡巴匹林镁	kǎ bā pǐ lín měi	10
+卡贝缩宫素	kǎ bèi suō gōng sù	10
+卡路脂肪乳	kǎ lù zhī fáng rǔ	10
+卡前列甲酯	kǎ qián liè jiǎ zhǐ	10
+卡茚西林钠	kǎ yìn xī lín nà	10
+卡左双多巴	kǎ zuǒ shuāng duō bā	10
+坎地沙坦酯	kǎn dì shā tǎn zhǐ	10
+抗阿米巴素	kàng ā mǐ bā sù	10
+抗变形虫剂	kàng biàn xíng chóng jì	10
+抗病毒的药	kàng bìng dú de yào	10
+抗痴呆药物	kàng chī dāi yào wù	10
+抗赤痢血清	kàng chì lì xuè qīng	10
+抗雌激素类	kàng cí jī sù lèi	10
+抗代谢药物	kàng dài xiè yào wù	10
+康妇消炎栓	kāng fù xiāo yán shuān	10
+抗高血压药	kàng gāo xuè yā yào	10
+抗高血脂药	kàng gāo xuè zhī yào	10
+抗骨增生酒	kàng gǔ zēng shēng jiǔ	10
+抗过敏的药	kàng guò mǐn de yào	10
+抗过敏性药	kàng guò mǐn xìng yào	10
+康惠尔糊剂	kāng huì ěr hú jì	10
+抗寄生虫药	kàng jì shēng chóng yào	10
+抗结核病类	kàng jié hé bìng lèi	10
+抗精神病药	kàng jīng shén bìng yào	10
+抗菌防腐药	kàng jūn fáng fǔ yào	10
+抗偏头痛药	kàng piān tóu tòng yào	10
+抗羟色胺剂	kàng qiǎng sè àn jì	10
+抗羟色胺药	kàng qiǎng sè àn yào	10
+抗蛇毒血清	kàng shé dú xuè qīng	10
+康氏减肥茶	kāng shì jiǎn féi chá	10
+抗炭疽血清	kàng tàn jū xuè qīng	10
+抗糖尿病药	kàng táng niào bìng yào	10
+抗微生物药	kàng wēi shēng wù yào	10
+抗心绞痛药	kàng xīn jiǎo tòng yào	10
+抗雄激素类	kàng xióng jī sù lèi	10
+抗血小板药	kàng xuè xiǎo bǎn yào	10
+抗抑郁症药	kàng yì yù zhèng yào	10
+抗躁狂药物	kàng zào kuáng yào wù	10
+抗躁狂症药	kàng zào kuáng zhèng yào	10
+可待因桔梗	kě dài yīn jié gěng	10
+克仑特罗栓	kè lún tè luó shuān	10
+克霉唑涂膜	kè méi zuò tú mó	10
+克霉唑药膜	kè méi zuò yào mó	10
+孔圣枕中丹	kǒng shèng zhěn zhōng dān	10
+控释胶囊剂	kòng shì jiāo náng jì	10
+口鼻清喷雾	kǒu bí qīng pēn wù	10
+口服冷菌苗	kǒu fú lěng jūn miáo	10
+口服清胃酶	kǒu fú qīng wèi méi	10
+口服洗肠剂	kǒu fú xǐ cháng jì	10
+口服洗肠盐	kǒu fú xǐ cháng yán	10
+口服胰糜酶	kǒu fú yí mí méi	10
+口腔溃疡糊	kǒu qiāng kuì yáng hú	10
+口腔溃疡灵	kǒu qiāng kuì yáng líng	10
+口腔溃疡膜	kǒu qiāng kuì yáng mó	10
+昆脂愈肤油	kūn zhī yù fū yóu	10
+拉坦前列素	lā tǎn qián liè sù	10
+赖脯胰岛素	lài pú yí dǎo sù	10
+雷贝拉唑钠	léi bèi lā zuò nà	10
+利福霉素钠	lì fú méi sù nà	10
+利佳薄荷水	lì jiā bò he shuǐ	10
+利君沙片剂	lì jūn shā piàn jì	10
+立马回疔丹	lì mǎ huí dīng dān	10
+里素劳片剂	lǐ sù láo piàn jì	10
+利替培南酯	lì tì péi nán zhǐ	10
+利妥昔单抗	lì tuǒ xī dān kàng	10
+丽珠加乐欣	lì zhū jiā lè xīn	10
+丽珠克毒星	lì zhū kè dú xīng	10
+丽珠快服净	lì zhū kuài fú jìng	10
+丽珠维三联	lì zhū wéi sān lián	10
+链阳菌素组	liàn yáng jūn sù zǔ	10
+梁财信跌打	liáng cái xìn diē dǎ	10
+靓夫脱毛霜	liàng fū tuō máo shuāng	10
+凉膈攻毒饮	liáng gé gōng dú yǐn	10
+凉膈清脾饮	liáng gé qīng pí yǐn	10
+凉膈消毒饮	liáng gé xiāo dú yǐn	10
+凉血清脾饮	liáng xuè qīng pí yǐn	10
+良园枇杷叶	liáng yuán pí pá yè	10
+列净类药物	liè jìng lèi yào wù	10
+列汀类药物	liè tīng lèi yào wù	10
+林可霉素栓	lín kě méi sù shuān	10
+淋疣一喷消	lín yóu yì pēn xiāo	10
+灵宝护心丹	líng bǎo hù xīn dān	10
+苓桂咳喘宁	líng guì ké chuǎn níng	10
+羚黄氨咖敏	líng huáng ān kā mǐn	10
+羚角钩藤饮	líng jiǎo gōu téng yǐn	10
+岭南黑鬼油	lǐng nán hēi guǐ yóu	10
+灵源万应茶	líng yuán wàn yīng chá	10
+灵芝桂园酒	líng zhī guì yuán jiǔ	10
+灵芝桂圆酒	líng zhī guì yuán jiǔ	10
+柳氮磺吡啶	liǔ dàn huáng bǐ dìng	10
+六神祛暑水	liù shén qū shǔ shuǐ	10
+六味白莲酊	liù wèi bái lián dīng	10
+龙虎清凉油	lóng hǔ qīng liáng yóu	10
+龙苓春药酒	lóng líng chūn yào jiǔ	10
+龙麝聚圣丹	lóng shè jù shèng dān	10
+龙虱补肾酒	lóng shī bǔ shèn jiǔ	10
+龙燕补肾酒	lóng yàn bǔ shèn jiǔ	10
+鹿地益元酒	lù dì yì yuán jiǔ	10
+鹿骨雪莲酒	lù gǔ xuě lián jiǔ	10
+鹿筋壮骨酒	lù jīn zhuàng gǔ jiǔ	10
+鹿茸参鞭酒	lù róng cān biān jiǔ	10
+裸花紫珠栓	luǒ huā zǐ zhū shuān	10
+洛索洛芬钠	luò suǒ luò fēn nà	10
+绿谷灵芝宝	lǜ gǔ líng zhī bǎo	10
+玛巴洛沙韦	mǎ bā luò shā wéi	10
+麻痹扩瞳剂	má bì kuò tóng jì	10
+吗丁啉片剂	ma dīng lín piàn jì	10
+玛舒拉沙韦	mǎ shū lā shā wéi	10
+马鬃蛇药酒	mǎ zōng shé yào jiǔ	10
+麦精鱼肝油	mài jīng yú gān yóu	10
+毛鸡补血酒	máo jī bǔ xuè jiǔ	10
+每伴清清宝	měi bàn qīng qīng bǎo	10
+美宝净肤霜	měi bǎo jìng fū shuāng	10
+美肤螨灵霜	měi fū mǎn líng shuāng	10
+梅花入骨丹	méi huā rù gǔ dān	10
+美欧卡霉素	měi ōu kǎ méi sù	10
+美沙拉嗪栓	měi shā lā qín shuān	10
+美沙拉秦栓	měi shā lā qín shuān	10
+美托哌丙嗪	měi tuō pài bǐng qín	10
+门冬酰胺酶	mén dōng xiān àn méi	10
+门冬胰岛素	mén dōng yí dǎo sù	10
+孟鲁司特钠	mèng lǔ sī tè nà	10
+蒙脱石散剂	méng tuō shí sǎn jì	10
+米卡芬净钠	mǐ kǎ fēn jìng nà	10
+米曲菌胰酶	mǐ qū jūn yí méi	10
+蜜丸梧子大	mì wán wú zǐ dà	10
+秘验清胃饮	mì yàn qīng wèi yǐn	10
+面速力达母	miàn sù lì dá mǔ	10
+免疫调节药	miǎn yì tiáo jié yào	10
+免疫抑制药	miǎn yì yì zhì yào	10
+免疫增强药	miǎn yì zēng qiáng yào	10
+苗山和胃方	miáo shān hé wèi fāng	10
+苗山平喘方	miáo shān píng chuǎn fāng	10
+明目十六味	míng mù shí liù wèi	10
+木防己汤方	mù fáng jǐ tāng fāng	10
+萘夫西林钠	nài fū xī lín nà	10
+南雪祛痘霜	nán xuě qū dòu shuāng	10
+脑活舒片剂	nǎo huó shū piàn jì	10
+黏液溶解剂	nián yè róng jiě jì	10
+尿促卵泡素	niào cù luǎn pào sù	10
+宁坤至宝丹	níng kūn zhì bǎo dān	10
+牛黄十三味	niú huáng shí sān wèi	10
+牛黄消炎灵	niú huáng xiāo yán líng	10
+牛黄痔清栓	niú huáng zhì qīng shuān	10
+浓芳香水剂	nóng fāng xiāng shuǐ jì	10
+诺和灵特充	nuò hé líng tè chōng	10
+诺和锐特充	nuò hé ruì tè chōng	10
+帕妥珠单抗	pà tuǒ zhū dān kàng	10
+哌拉西林钠	pài lā xī lín nà	10
+盘龙七药酒	pán lóng qī yào jiǔ	10
+泮托拉唑钠	pàn tuō lā zuò nà	10
+培哚普利拉	péi duǒ pǔ lì lā	10
+培非格司亭	péi fēi gé sī tíng	10
+培西达替尼	péi xī dá tì ní	10
+硼砂漱口水	péng shā shù kǒu shuǐ	10
+皮宝粉刺霜	pí bǎo fěn cì shuāng	10
+匹莫范色林	pǐ mò fàn sè lín	10
+枇杷清肺饮	pí pá qīng fèi yǐn	10
+皮炎袋泡剂	pí yán dài pào jì	10
+片仔癀锭剂	piàn zǎi huáng dìng jì	10
+平补镇心丹	píng bǔ zhèn xīn dān	10
+普伐他汀钠	pǔ fá tā tīng nà	10
+普济消毒饮	pǔ jì xiāo dú yǐn	10
+普济痔疮栓	pǔ jì zhì chuāng shuān	10
+蒲苓盆炎康	pú líng pén yán kāng	10
+普鲁卡因胺	pǔ lǔ kǎ yīn àn	10
+普米克都保	pǔ mǐ kè dōu bǎo	10
+普米克令舒	pǔ mǐ kè lìng shū	10
+七宝半髯丹	qī bǎo bàn rán dān	10
+七宝美髯丹	qī bǎo měi rán dān	10
+七鞭回春乐	qī biān huí chūn lè	10
+芪参虫草酒	qí cān chóng cǎo jiǔ	10
+祺尔百服咛	qí ěr bǎi fú níng	10
+祺尔百服宁	qí ěr bǎi fú níng	10
+蕲蛇追风酒	qí shé zhuī fēng jiǔ	10
+七味苁蓉酒	qī wèi cōng róng jiǔ	10
+七味肝胆清	qī wèi gān dǎn qīng	10
+七味糖脉舒	qī wèi táng mài shū	10
+七叶皂苷钠	qī yè zào gān nà	10
+芪枣健胃茶	qí zǎo jiàn wèi chá	10
+奇正消痛贴	qí zhèng xiāo tòng tiē	10
+启周炎痛贴	qǐ zhōu yán tòng tiē	10
+七珠健胃茶	qī zhū jiàn wèi chá	10
+七子补肾酒	qī zǐ bǔ shèn jiǔ	10
+千草脑脉通	qiān cǎo nǎo mài tōng	10
+千斤肾安宁	qiān jīn shèn ān níng	10
+前列闭尔通	qián liè bì ěr tōng	10
+前列必康贴	qián liè bì kāng tiē	10
+前列癃闭通	qián liè lóng bì tōng	10
+羟甲芬太尼	qiǎng jiǎ fēn tài ní	10
+羟甲金霉素	qiǎng jiǎ jīn méi sù	10
+强力安喘通	qiáng lì ān chuǎn tōng	10
+强力蜂乳浆	qiáng lì fēng rǔ jiāng	10
+强力健身钙	qiáng lì jiàn shēn gài	10
+强力咳喘舒	qiáng lì ké chuǎn shū	10
+强力脑清素	qiáng lì nǎo qīng sù	10
+强力脑心康	qiáng lì nǎo xīn kāng	10
+强力派君舒	qiáng lì pài jūn shū	10
+强力赛福必	qiáng lì sài fú bì	10
+强力狮子油	qiáng lì shī zi yóu	10
+强力痔根断	qiáng lì zhì gēn duàn	10
+强力止咳宁	qiáng lì zhǐ ké níng	10
+强身壮骨酒	qiáng shēn zhuàng gǔ jiǔ	10
+强身追风酒	qiáng shēn zhuī fēng jiǔ	10
+清肤止痒酊	qīng fū zhǐ yǎng dīng	10
+清感穿心莲	qīng gǎn chuān xīn lián	10
+清喉爽喉宝	qīng hóu shuǎng hóu bǎo	10
+青哌四环素	qīng pài sì huán sù	10
+清热消炎宁	qīng rè xiāo yán níng	10
+清热醒脑灵	qīng rè xǐng nǎo líng	10
+清肾热十味	qīng shèn rè shí wèi	10
+清瘟败毒饮	qīng wēn bài dú yǐn	10
+清心莲子饮	qīng xīn lián zǐ yǐn	10
+庆余辟瘟丹	qìng yú pì wēn dān	10
+去氨加压素	qù ān jiā yā sù	10
+去氨缩宫素	qù ān suō gōng sù	10
+驱风保济油	qū fēng bǎo jì yóu	10
+祛风胜湿酒	qū fēng shèng shī jiǔ	10
+祛风通络酒	qū fēng tōng luò jiǔ	10
+祛风至宝丹	qū fēng zhì bǎo dān	10
+祛腐二香栓	qū fǔ èr xiāng shuān	10
+曲伏前列素	qǔ fú qián liè sù	10
+去甲金霉素	qù jiǎ jīn méi sù	10
+去甲可待因	qù jiǎ kě dài yīn	10
+去甲麻黄素	qù jiǎ má huáng sù	10
+去甲左啡诺	qù jiǎ zuǒ fēi nuò	10
+曲马多滴剂	qǔ mǎ duō dī jì	10
+祛伤消肿酊	qū shāng xiāo zhǒng dīng	10
+曲妥珠单抗	qǔ tuǒ zhū dān kàng	10
+去氧土霉素	qù yǎng tǔ méi sù	10
+祛瘀健脾茶	qū yū jiàn pí chá	10
+祛瘀止痛酒	qū yū zhǐ tòng jiǔ	10
+祛脂生发精	qū zhī shēng fà jīng	10
+群流脑疫苗	qún liú nǎo yì miáo	10
+人工虎骨粉	rén gōng hǔ gǔ fěn	10
+仁和妇炎洁	rén hé fù yán jié	10
+仁和可立克	rén hé kě lì kè	10
+人参首乌精	rén shēn shǒu wū jīng	10
+日夜百服宁	rì yè bǎi fú níng	10
+乳核袋泡剂	rǔ hé dài pào jì	10
+润肠通便茶	rùn cháng tōng biàn chá	10
+润肠通秘茶	rùn cháng tōng mì chá	10
+润肺止嗽方	rùn fèi zhǐ sòu fāng	10
+赛空青眼药	sài kōng qīng yǎn yào	10
+噻奈普汀钠	sāi nài pǔ tīng nà	10
+腮腺宁糊剂	sāi xiàn níng hú jì	10
+三金冻疮酊	sān jīn dòng chuāng dīng	10
+三两半药酒	sān liǎng bàn yào jiǔ	10
+三七冠心宁	sān qī guān xīn níng	10
+三七透骨黄	sān qī tòu gǔ huáng	10
+三七血伤宁	sān qī xuè shāng níng	10
+三蛇胆陈皮	sān shé dǎn chén pí	10
+三肾温阳酒	sān shèn wēn yáng jiǔ	10
+三维葡磷钙	sān wéi pú lín gài	10
+三维鱼肝油	sān wéi yú gān yóu	10
+三味痔疮栓	sān wèi zhì chuāng shuān	10
+三维制霉素	sān wéi zhì méi sù	10
+三益利福平	sān yì lì fú píng	10
+三益牙痛水	sān yì yá tòng shuǐ	10
+沙棘干乳剂	shā jí gàn rǔ jì	10
+砂仁驱风油	shā rén qū fēng yóu	10
+珊瑚七十味	shān hú qī shí wèi	10
+山鸡大补酒	shān jī dà bǔ jiǔ	10
+山楂精降脂	shān zhā jīng jiàng zhī	10
+伤筋骨折宁	shāng jīn gǔ zhé níng	10
+伤筋正骨酊	shāng jīn zhèng gǔ dīng	10
+伤科活血酊	shāng kē huó xuè dīng	10
+伤科目敷药	shāng kē mù fū yào	10
+伤科万花油	shāng kē wàn huā yóu	10
+少林正骨精	shǎo lín zhèng gǔ jīng	10
+绍兴大补酒	shào xīng dà bǔ jiǔ	10
+蛇毒血凝酶	shé dú xuè níng méi	10
+蛇油爆拆灵	shé yóu bào chāi líng	10
+肾茶袋泡茶	shèn chá dài pào chá	10
+神农驱风油	shén nóng qū fēng yóu	10
+参芪博力康	shēn qí bó lì kāng	10
+参芪力得康	shēn qí lì dé kāng	10
+参芪十一味	shēn qí shí yī wèi	10
+参芪温阳栓	shēn qí wēn yáng shuān	10
+参芪五味子	shēn qí wǔ wèi zǐ	10
+参芪益气酒	shēn qí yì qì jiǔ	10
+参芪育发酊	shēn qí yù fā dīng	10
+参芪鱼肝油	shēn qí yú gān yóu	10
+神奇止泻灵	shén qí zhǐ xiè líng	10
+参茸补血酒	shēn róng bǔ xuè jiǔ	10
+参茸多鞭酒	shēn róng duō biān jiǔ	10
+参茸全虫酒	shēn róng quán chóng jiǔ	10
+参茸三七酒	shēn róng sān qī jiǔ	10
+参茸追风酒	shēn róng zhuī fēng jiǔ	10
+肾上腺色腙	shèn shàng xiàn sè zōng	10
+神应养真丹	shén yīng yǎng zhēn dān	10
+神应养真饮	shén yīng yǎng zhēn yǐn	10
+生地黄饮子	shēng dì huáng yǐn zi	10
+生地麦冬饮	shēng dì mài dōng yǐn	10
+生肌八宝丹	shēng jī bā bǎo dān	10
+圣济感冒灵	shèng jì gǎn mào líng	10
+圣济遗尿康	shèng jì yí niào kāng	10
+生茂午时茶	shēng mào wǔ shí chá	10
+生髓育麟丹	shēng suǐ yù lín dān	10
+升阳十一味	shēng yáng shí yī wèi	10
+十二味百消	shí èr wèi bǎi xiāo	10
+十二味痹通	shí èr wèi bì tōng	10
+十二味翼首	shí èr wèi yì shǒu	10
+史国公药酒	shǐ guó gōng yào jiǔ	10
+事后避孕药	shì hòu bì yùn yào	10
+石椒草咳喘	shí jiāo cǎo ké chuǎn	10
+史克肠虫清	shǐ kè cháng chóng qīng	10
+时美百服咛	shí měi bǎi fú níng	10
+诗美疥疮灵	shī měi jiè chuāng líng	10
+十三味榜嘎	shí sān wèi bǎng gā	10
+十三味红花	shí sān wèi hóng huā	10
+十三味解郁	shí sān wèi jiě yù	10
+十三味疏肝	shí sān wèi shū gān	10
+十三味菥蓂	shí sān wèi xī míng	10
+十三味辛夷	shí sān wèi xīn yí	10
+施图伦眼水	shī tú lún yǎn shuǐ	10
+十味龙胆花	shí wèi lóng dǎn huā	10
+十味溪黄草	shí wèi xī huáng cǎo	10
+十维锌铁钙	shí wéi xīn tiě gài	10
+十五味沉香	shí wǔ wèi chén xiāng	10
+十五味黑药	shí wǔ wèi hēi yào	10
+十五味乳鹏	shí wǔ wèi rǔ péng	10
+十五制清宁	shí wǔ zhì qīng níng	10
+十一味甘露	shí yī wèi gān lù	10
+十一味黄精	shí yī wèi huáng jīng	10
+十一味能消	shí yī wèi néng xiāo	10
+十一味维命	shí yī wèi wéi mìng	10
+十枣汤主之	shí zǎo tāng zhǔ zhī	10
+狮子岛霉素	shī zi dǎo méi sù	10
+十子强肾酒	shí zǐ qiáng shèn jiǔ	10
+受体阻滞药	shòu tǐ zǔ zhì yào	10
+首乌补肾酒	shǒu wū bǔ shèn jiǔ	10
+首乌喘息灵	shǒu wū chuǎn xī líng	10
+舒安卫生栓	shū ān wèi shēng shuān	10
+舒肤止痒酊	shū fū zhǐ yǎng dīng	10
+舒筋定痛酒	shū jīn dìng tòng jiǔ	10
+舒筋活络酒	shū jīn huó luò jiǔ	10
+舒筋止痛酊	shū jīn zhǐ tòng dīng	10
+舒筋止痛水	shū jīn zhǐ tòng shuǐ	10
+舒康凝胶剂	shū kāng níng jiāo jì	10
+舒乐热熨剂	shū lè rè yùn jì	10
+薯蓣丸主之	shǔ yù wán zhǔ zhī	10
+双飞人药水	shuāng fēi rén yào shuǐ	10
+双虎肿痛宁	shuāng hǔ zhǒng tòng níng	10
+双黄连粉针	shuāng huáng lián fěn zhēn	10
+双活止痛酊	shuāng huó zhǐ tòng dīng	10
+爽脚宝喷剂	shuǎng jiǎo bǎo pēn jì	10
+爽口托疮膜	shuǎng kǒu tuō chuāng mó	10
+双香豆乙酯	shuāng xiāng dòu yǐ zhǐ	10
+双香驱风精	shuāng xiāng qū fēng jīng	10
+双羊喉痹通	shuāng yáng hóu bì tōng	10
+双氧异嗪栓	shuāng yǎng yì qín shuān	10
+双唑泰棉栓	shuāng zuò tài mián shuān	10
+水陆二仙丹	shuǐ lù èr xiān dān	10
+思尔明脑通	sī ěr míng nǎo tōng	10
+四季平安油	sì jì píng ān yóu	10
+司可巴比妥	sī kě bā bǐ tuǒ	10
+司美格鲁肽	sī měi gé lǔ tài	10
+四顺清凉饮	sì shùn qīng liáng yǐn	10
+四味回阳饮	sì wèi huí yáng yǐn	10
+四味脾胃舒	sì wèi pí wèi shū	10
+四味土木香	sì wèi tǔ mù xiāng	10
+四味香薷饮	sì wèi xiāng rú yǐn	10
+四味雪莲花	sì wèi xuě lián huā	10
+四物消风饮	sì wù xiāo fēng yǐn	10
+松花痱子粉	sōng huā fèi zǐ fěn	10
+松龄血脉康	sōng líng xuè mài kāng	10
+苏红络通酊	sū hóng luò tōng dīng	10
+速释胶囊剂	sù shì jiāo náng jì	10
+速效丰乳霜	sù xiào fēng rǔ shuāng	10
+速效皮炎平	sù xiào pí yán píng	10
+速效牙痛宁	sù xiào yá tòng níng	10
+速孕保胎灵	sù yùn bǎo tāi líng	10
+炭疽活菌苗	tàn jū huó jūn miáo	10
+探亲避孕药	tàn qīn bì yùn yào	10
+特利加压素	tè lì jiā yā sù	10
+替非珠单抗	tì fēi zhū dān kàng	10
+替格鲁西布	tì gé lǔ xī bù	10
+替卡西林钠	tì kǎ xī lín nà	10
+替利珠单抗	tì lì zhū dān kàng	10
+替莫西林钠	tì mò xī lín nà	10
+替妥洛单抗	tì tuǒ luò dān kàng	10
+天麻蜂王浆	tiān má fēng wáng jiāng	10
+天麻钩藤饮	tiān má gōu téng yǐn	10
+天麻头风灵	tiān má tóu fēng líng	10
+天泰降压宁	tiān tài jiàng yā níng	10
+田田妇康宝	tián tián fù kāng bǎo	10
+天王补心丹	tiān wáng bǔ xīn dān	10
+天紫红女金	tiān zǐ hóng nǚ jīn	10
+葶苈降血脂	tíng lì jiàng xuè zhī	10
+通鼻抗感剂	tōng bí kàng gǎn jì	10
+通道开放剂	tōng dào kāi fàng jì	10
+通络补肾酒	tōng luò bǔ shèn jiǔ	10
+通络骨质宁	tōng luò gǔ zhì níng	10
+通脉刺五加	tōng mài cì wǔ jiā	10
+通窍救心油	tōng qiào jiù xīn yóu	10
+同仁大活络	tóng rén dà huó luò	10
+通玄二八丹	tōng xuán èr bā dān	10
+通瘀化坚丹	tōng yū huà jiān dān	10
+头风摩散方	tóu fēng mó sàn fāng	10
+妥布拉霉素	tuǒ bù lā méi sù	10
+脱甲金霉素	tuō jiǎ jīn méi sù	10
+托克络辛钾	tuō kè luò xīn jiǎ	10
+托克络辛钠	tuō kè luò xīn nà	10
+脱牙敏糊剂	tuō yá mǐn hú jì	10
+外搽白灵酊	wài chá bái líng dīng	10
+外感平安茶	wài gǎn píng ān chá	10
+外用舒筋酊	wài yòng shū jīn dīng	10
+外用阴道膜	wài yòng yīn dào mó	10
+万替妥单抗	wàn tì tuǒ dān kàng	10
+万应甘和茶	wàn yīng gān hé chá	10
+王氏连朴饮	wáng shì lián pǔ yǐn	10
+胃肠促动药	wèi cháng cù dòng yào	10
+胃肠动力药	wèi cháng dòng lì yào	10
+胃肠解痉药	wèi cháng jiě jìng yào	10
+胃肠透析盐	wèi cháng tòu xī yán	10
+维丁胶性钙	wéi dīng jiāo xìng gài	10
+威隆壮骨酒	wēi lóng zhuàng gǔ jiǔ	10
+伪麻美沙芬	wěi má měi shā fēn	10
+维生素滴剂	wéi shēng sù dī jì	10
+温补肾阳酒	wēn bǔ shèn yáng jiǔ	10
+文冠果仁霜	wén guān guǒ rén shuāng	10
+温中健胃饮	wēn zhōng jiàn wèi yǐn	10
+戊巴比妥钠	wù bā bǐ tuǒ nà	10
+五合维生素	wǔ hé wéi shēng sù	10
+雾化溶液剂	wù huà róng yè jì	10
+雾化吸入剂	wù huà xī rù jì	10
+五加参蛤蚧	wǔ jiā cān gé jiè	10
+五加参归芪	wǔ jiā cān guī qí	10
+乌拉莫司汀	wù lā mò sī tīng	10
+戊四硝酯粉	wù sì xiāo zhǐ fěn	10
+五松肿痛酊	wǔ sōng zhǒng tòng dīng	10
+五味消毒饮	wǔ wèi xiāo dú yǐn	10
+五物香薷饮	wǔ wù xiāng rú yǐn	10
+五子补肾酒	wǔ zǐ bǔ shèn jiǔ	10
+五子益肾酒	wǔ zǐ yì shèn jiǔ	10
+洗必泰口胶	xǐ bì tài kǒu jiāo	10
+吸附百白破	xī fù bǎi bái pò	10
+西瓜霜清咽	xī guā shuāng qīng yàn	10
+西立伐他汀	xī lì fá tā tīng	10
+西帕依固龈	xī pà yī gù kěn	10
+息斯敏片剂	xī sī mǐn piàn jì	10
+西妥昔单抗	xī tuǒ xī dān kàng	10
+下瘀血汤方	xià yū xuè tāng fāng	10
+苋菜黄连素	xiàn cài huáng lián sù	10
+仙方活命饮	xiān fāng huó mìng yǐn	10
+仙璐贝滴剂	xiān lù bèi dī jì	10
+仙人掌胃康	xiān rén zhǎng wèi kāng	10
+先声咳喘宁	xiān shēng ké chuǎn níng	10
+香青百草油	xiāng qīng bǎi cǎo yóu	10
+香砂参术茶	xiāng shā cān shù chá	10
+消癍活命饮	xiāo bān huó mìng yǐn	10
+消癍青黛饮	xiāo bān qīng dài yǐn	10
+小半夏汤方	xiǎo bàn xià tāng fāng	10
+小柴胡汤方	xiǎo chái hú tāng fāng	10
+小承气汤方	xiǎo chéng qì tāng fāng	10
+消毒犀角饮	xiāo dú xī jiǎo yǐn	10
+消风止痛宁	xiāo fēng zhǐ tòng níng	10
+小建中汤方	xiǎo jiàn zhōng tāng fāng	10
+消凝大丸子	xiāo níng dà wán zi	10
+小青龙汤方	xiǎo qīng lóng tāng fāng	10
+消旋卡多曲	xiāo xuán kǎ duō qǔ	10
+消旋吗拉胺	xiāo xuán ma lā àn	10
+消炎止痢灵	xiāo yán zhǐ lì líng	10
+逍遥舒心丹	xiāo yáo shū xīn dān	10
+消瘿五海饮	xiāo yǐng wǔ hǎi yǐn	10
+消肿止痛酊	xiāo zhǒng zhǐ tòng dīng	10
+消肿止痛贴	xiāo zhǒng zhǐ tòng tiē	10
+缬更昔洛韦	xié gèng xī luò wéi	10
+信必可都保	xìn bì kě dōu bǎo	10
+锌促皮质素	xīn cù pí zhì sù	10
+信迪利单抗	xìn dí lì dān kàng	10
+新加香薷饮	xīn jiā xiāng rú yǐn	10
+信龙痱子水	xìn lóng fèi zi shuǐ	10
+新胂凡纳明	xīn shèn fán nà míng	10
+新生儿脐贴	xīn shēng ér qí tiē	10
+新生霉素钙	xīn shēng méi sù gài	10
+新生霉素钠	xīn shēng méi sù nà	10
+新星冻疮灵	xīn xīng dòng chuāng líng	10
+幸福止痛素	xìng fú zhǐ tòng sù	10
+杏苏止咳露	xìng sū zhǐ ké lù	10
+熊胆痔灵栓	xióng dǎn zhì líng shuān	10
+溴丙胺太林	xiù bǐng àn tài lín	10
+溴甲阿托品	xiù jiǎ ā tuō pǐn	10
+血管收缩药	xuè guǎn shōu suō yào	10
+血管舒缓素	xuè guǎn shū huǎn sù	10
+血浆扩容剂	xuè jiāng kuò róng jì	10
+血栓心脉宁	xuè shuān xīn mài níng	10
+亚宝甲硝唑	yà bǎo jiǎ xiāo zuò	10
+牙髓失活剂	yá suǐ shī huó jì	10
+牙髓塑化剂	yá suǐ sù huà jì	10
+牙痛立可停	yá tòng lì kě tíng	10
+牙周塞治剂	yá zhōu sāi zhì jì	10
+延胡索乙素	yán hú suǒ yǐ sù	10
+眼洁滴眼露	yǎn jié dī yǎn lù	10
+眼圣眼药水	yǎn shèng yǎn yào shuǐ	10
+盐汤探吐方	yán tāng tàn tǔ fāng	10
+洋地黄毒甙	yáng dì huáng dú dài	10
+洋地黄毒苷	yáng dì huáng dú gān	10
+羊藿益肾酒	yáng huò yì shèn jiǔ	10
+养肾活血酒	yǎng shèn huó xuè jiǔ	10
+养血当归精	yǎng xuè dāng guī jīng	10
+养血健身酒	yǎng xuè jiàn shēn jiǔ	10
+养血愈风酒	yǎng xuè yù fēng jiǔ	10
+养阴健胃饮	yǎng yīn jiàn wèi yǐn	10
+养元益肾酒	yǎng yuán yì shèn jiǔ	10
+腰痛复正贴	yāo tòng fù zhèng tiē	10
+腰痛一贴灵	yāo tòng yì tiē líng	10
+药用松节油	yào yòng sōng jié yóu	10
+药用胰岛素	yào yòng yí dǎo sù	10
+野菊花膏粉	yě jú huā gāo fěn	10
+异丙托溴铵	yì bǐng tuō xiù ǎn	10
+异丙西林钾	yì bǐng xī lín jiǎ	10
+益肝解毒茶	yì gān jiě dú chá	10
+益肝养血酒	yì gān yǎng xuè jiǔ	10
+异环磷酰胺	yì huán lín xiān àn	10
+易经洗髓丹	yì jīng xǐ suǐ dān	10
+伊洛前列素	yī luò qián liè sù	10
+益母胜金丹	yì mǔ shèng jīn dān	10
+依那普利拉	yī nà pǔ lì lā	10
+一捻金散剂	yī niǎn jīn sǎn jì	10
+依诺肝素钠	yī nuò gān sù nà	10
+益气生津茶	yì qì shēng jīn chá	10
+依奇珠单抗	yī qí zhū dān kàng	10
+乙三联菌苗	yǐ sān lián jūn miáo	10
+依沙吖啶贴	yī shā ā dìng tiē	10
+益肾降糖饮	yì shèn jiàng táng yǐn	10
+益肾十七味	yì shèn shí qī wèi	10
+益寿大补酒	yì shòu dà bǔ jiǔ	10
+依托芬那酯	yī tuō fēn nà zhǐ	10
+依托红霉素	yī tuō hóng méi sù	10
+异戊巴比妥	yì wù bā bǐ tuǒ	10
+乙醯托啡因	yǐ xī tuō fēi yīn	10
+乙酰芬太尼	yǐ xiān fēn tài ní	10
+乙酰谷酰胺	yǐ xiān gǔ xiān àn	10
+乙酰唑胺钠	yǐ xiān zuò àn nà	10
+依泽替米贝	yī zé tì mǐ bèi	10
+银冰消痤酊	yín bīng xiāo cuó dīng	10
+银丹心脑通	yín dān xīn nǎo tōng	10
+阴道胶囊剂	yīn dào jiāo náng jì	10
+吲哚美辛栓	yǐn duǒ měi xīn shuān	10
+银葛通脉茶	yín gé tōng mài chá	10
+银花解毒汤	yín huā jiě dú tāng	10
+银花泌炎灵	yín huā mì yán líng	10
+银翘袋泡剂	yín qiào dài pào jì	10
+银翘双解栓	yín qiào shuāng jiě shuān	10
+阴痒康冼剂	yīn yǎng kāng xiǎn jì	10
+婴儿保肺宁	yīng ér bǎo fèi níng	10
+英脱利匹特	yīng tuō lì pǐ tè	10
+永隆驱风油	yǒng lóng qū fēng yóu	10
+永龙驱风油	yǒng lóng qū fēng yóu	10
+永盛合阿胶	yǒng shèng hé ē jiāo	10
+幼儿百服咛	yòu ér bǎi fú níng	10
+优泌林中效	yōu mì lín zhōng xiào	10
+油性凝胶剂	yóu xìng níng jiāo jì	10
+右异可利定	yòu yì kě lì dìng	10
+右佐匹克隆	yòu zuǒ pǐ kè lóng	10
+愈铵异丙嗪	yù ǎn yì bǐng qín	10
+鱼肝油滴剂	yú gān yóu dī jì	10
+预混胰岛素	yù hùn yí dǎo sù	10
+玉苓消渴茶	yù líng xiāo kě chá	10
+愈美甲麻敏	yù měi jiǎ má mǐn	10
+鱼石脂颠茄	yú shí zhī diān qié	10
+玉竹高龄酒	yù zhú gāo líng jiǔ	10
+源吉林甘和	yuán jí lín gān hé	10
+远兴痔疮水	yuǎn xīng zhì chuāng shuǐ	10
+月见草油乳	yuè jiàn cǎo yóu rǔ	10
+云南白药酊	yún nán bái yào dīng	10
+云南白药粉	yún nán bái yào fěn	10
+扎冲十三味	zhā chōng shí sān wèi	10
+章光育发剂	zhāng guāng yù fā jì	10
+镇骨驱风贴	zhèn gǔ qū fēng tiē	10
+镇静催眠药	zhèn jìng cuī mián yào	10
+真菌降脂素	zhēn jūn jiàng zhī sù	10
+真人活命饮	zhēn rén huó mìng yǐn	10
+珍视明眼水	zhēn shì míng yǎn shuǐ	10
+正骨麻药方	zhèng gǔ má yào fāng	10
+正骨紫金丹	zhèng gǔ zǐ jīn dān	10
+正清风痛宁	zhèng qīng fēng tòng níng	10
+郑氏女金丹	zhèng shì nǚ jīn dān	10
+至宝灵芝酒	zhì bǎo líng zhī jiǔ	10
+至宝三鞭精	zhì bǎo sān biān jīng	10
+至宝三鞭酒	zhì bǎo sān biān jiǔ	10
+痔疮外洗药	zhì chuāng wài xǐ yào	10
+稚儿灵膏滋	zhì ér líng gāo zī	10
+痔康袋泡剂	zhì kāng dài pào jì	10
+治咳枇杷露	zhì ké pí pá lù	10
+制霉菌甘油	zhì méi jūn gān yóu	10
+芷彤牙立爽	zhǐ tóng yá lì shuǎng	10
+止血纤维贴	zhǐ xuè xiān wéi tiē	10
+栀子豉汤方	zhī zi chǐ tāng fāng	10
+中华灵芝宝	zhōng huá líng zhī bǎo	10
+中华糖必效	zhōng huá táng bì xiào	10
+中诺舒罗克	zhōng nuò shū luó kè	10
+中枢兴奋药	zhōng shū xīng fèn yào	10
+肿痛外擦酊	zhǒng tòng wài cā dīng	10
+中效优泌林	zhōng xiào yōu mì lín	10
+诸疮一扫光	zhū chuāng yì sǎo guāng	10
+朱虎化瘀酊	zhū hǔ huà yū dīng	10
+竹皮大丸方	zhú pí dà wán fāng	10
+珠珀安神丹	zhū pò ān shén dān	10
+注射用丹参	zhù shè yòng dān shēn	10
+注射用蜂毒	zhù shè yòng fēng dú	10
+注射用辅酶	zhù shè yòng fǔ méi	10
+注射用骨肽	zhù shè yòng gǔ tài	10
+注射用肌苷	zhù shè yòng jī gān	10
+注射用洛铂	zhù shè yòng luò bó	10
+注射用溶媒	zhù shè yòng róng méi	10
+注射用乳剂	zhù shè yòng rǔ jì	10
+茱萸汤主之	zhū yú tāng zhǔ zhī	10
+壮骨追风酒	zhuàng gǔ zhuī fēng jiǔ	10
+壮元补身酒	zhuàng yuán bǔ shēn jiǔ	10
+状元补身酒	zhuàng yuan bǔ shēn jiǔ	10
+追风除湿酒	zhuī fēng chú shī jiǔ	10
+追风活络酒	zhuī fēng huó luò jiǔ	10
+追风强肾酒	zhuī fēng qiáng shèn jiǔ	10
+卓丹止泻灵	zhuó dān zhǐ xiè líng	10
+子宫收缩剂	zǐ gōng shōu suō jì	10
+自乳化药物	zì rǔ huà yào wù	10
+棕榈合霉素	zōng lǘ hé méi sù	10
+走川骨刺酊	zǒu chuān gǔ cì dīng	10
+祖师麻膏药	zǔ shī má gāo yào	10
+左布比卡因	zuǒ bù bǐ kǎ yīn	10
+左布诺洛尔	zuǒ bù nuò luò ěr	10
+左卡巴斯汀	zuǒ kǎ bā sī tīng	10
+佐米曲普坦	zuǒ mǐ qǔ pǔ tǎn	10
+左羟丙哌嗪	zuǒ qiǎng bǐng pài qín	10
+左西替利嗪	zuǒ xī tì lì qín	10
+左旋咪唑栓	zuǒ xuán mī zuò shuān	10
+左乙拉西坦	zuǒ yǐ lā xī tǎn	10
+阿达帕林凝胶	ā dá pà lín níng jiāo	10
+阿那日十四味	ā nà rì shí sì wèi	10
+阿奇霉素散剂	ā qí méi sù sǎn jì	10
+阿奇霉素悉美	ā qí méi sù xī měi	10
+阿司匹林钙脲	ā sī pǐ lín gài niào	10
+阿替普酶冻干	ā tì pǔ méi dòng gān	10
+阿托伐他汀钙	ā tuō fá tā tīng gài	10
+阿托品异丙嗪	ā tuō pǐn yì bǐng qín	10
+阿昔洛韦冻干	ā xī luò wéi dòng gān	10
+阿昔洛韦凝胶	ā xī luò wéi níng jiāo	10
+艾贝尔润喉糖	ài bèi ěr rùn hóu táng	10
+氨酚美芬伪麻	ān fēn měi fēn wěi má	10
+氨酚伪麻滴剂	ān fēn wěi má dī jì	10
+氨酚伪麻美芬	ān fēn wěi má měi fēn	10
+氨酚伪麻那敏	ān fēn wěi má nà mǐn	10
+安福隆预充式	ān fú lóng yù chōng shì	10
+氨来呫诺糊剂	ān lái tiè nuò hú jì	10
+安乃近灌肠剂	ān nǎi jìn guàn cháng jì	10
+氨溴索葡萄糖	ān xiù suǒ pú tao táng	10
+奥布卡因凝胶	ào bù kǎ yīn níng jiāo	10
+奥沙利铂冻干	ào shā lì bó dòng gān	10
+巴仙苁蓉强肾	bā xiān cōng róng qiáng shèn	10
+百草妇炎清栓	bǎi cǎo fù yán qīng shuān	10
+百合款冬花饮	bǎi hé kuǎn dōng huā yǐn	10
+百仙妇炎清栓	bǎi xiān fù yán qīng shuān	10
+白消安马利兰	bái xiāo ān mǎ lì lán	10
+斑碧婷祛斑霜	bān bì tíng qū bān shuāng	10
+半夏干姜散方	bàn xià gān jiāng sàn fāng	10
+半夏泻心汤方	bàn xià xiè xīn tāng fāng	10
+邦迪牌创可贴	bāng dí pái chuāng kě tiē	10
+保妇康泡沫剂	bǎo fù kāng pào mò jì	10
+吡拉西坦冻干	bǐ lā xī tǎn dòng gān	10
+吡罗昔康凝胶	bǐ luó xī kāng níng jiāo	10
+鼻塞通滴鼻剂	bí sāi tōng dī bí jì	10
+标准桃金娘油	biāo zhǔn táo jīn niáng yóu	10
+丙氨瑞林冻干	bǐng ān ruì lín dòng gān	10
+冰矾清毒生肌	bīng fán qīng dú shēng jī	10
+丙酚替诺福韦	bǐng fēn tì nuò fú wéi	10
+冰霜防护药水	bīng shuāng fáng hù yào shuǐ	10
+丙酰吉他霉素	bǐng xiān jí tā méi sù	10
+薄荷通吸入剂	bò he tōng xī rù jì	10
+博落回肿痒酊	bó luò huí zhǒng yǎng dīng	10
+步长祛风止痛	bù cháng qū fēng zhǐ tòng	10
+分剂量散剂	bù fēn jì liàng sǎn jì	10
+布美他尼冻干	bù měi tā ní dòng gān	10
+参红祛瘀散结	cān hóng qū yū sàn jié	10
+草乌甲素冻干	cǎo wū jiǎ sù dòng gān	10
+长春西汀冻干	cháng chūn xī tīng dòng gān	10
+肠多糖冠心舒	cháng duō táng guān xīn shū	10
+肠内营养粉剂	cháng nèi yíng yǎng fěn jì	10
+肠内营养乳剂	cháng nèi yíng yǎng rǔ jì	10
+常松八味沉香	cháng sōng bā wèi chén xiāng	10
+长效普鲁卡因	cháng xiào pǔ lǔ kǎ yīn	10
+超速效胰岛素	chāo sù xiào yí dǎo sù	10
+重组促卵泡素	chóng zǔ cù luǎn pào sù	10
+重组蛋白疫苗	chóng zǔ dàn bái yì miáo	10
+重组凝血因子	chóng zǔ níng xuè yīn zǐ	10
+重组人白介素	chóng zǔ rén bái jiè sù	10
+重组人促红素	chóng zǔ rén cù hóng sù	10
+重组人干扰素	chóng zǔ rén gān rǎo sù	10
+重组人胰岛素	chóng zǔ rén yí dǎo sù	10
+重组乙肝疫苗	chóng zǔ yǐ gān yì miáo	10
+川郁风寒熨剂	chuān yù fēng hán yùn jì	10
+醋丙甲泼尼龙	cù bǐng jiǎ pō ní lóng	10
+促皮质素冻干	cù pí zhì sù dòng gān	10
+大半夏汤主之	dà bàn xià tāng zhǔ zhī	10
+达卡巴嗪冻干	dá kǎ bā qín dòng gān	10
+达克罗宁油剂	dá kè luó níng yóu jì	10
+丹芎瘢痕涂膜	dān xiōng bān hén tú mó	10
+当归疏肝茶剂	dāng guī shū gān chá jì	10
+德都红花七味	dé dū hóng huā qī wèi	10
+灯盏花素冻干	dēng zhǎn huā sù dòng gān	10
+滴虫净卫生栓	dī chóng jìng wèi shēng shuān	10
+低分子肝素钙	dī fēn zǐ gān sù gài	10
+低分子肝素钠	dī fēn zǐ gān sù nà	10
+低分子量肝素	dī fēn zǐ liàng gān sù	10
+地塞米松涂剂	dì sāi mǐ sōng tú jì	10
+滴眼用利福平	dī yǎn yòng lì fú píng	10
+跌打扭伤灵酊	diē dǎ niǔ shāng líng dīng	10
+丁胺卡那霉素	dīng àn kǎ nà méi sù	10
+丁香足爽喷剂	dīng xiāng zú shuǎng pēn jì	10
+冻干人凝血酶	dòng gān rén níng xuè méi	10
+度伐利尤单抗	dù fá lì yóu dān kàng	10
+肚痛健胃整肠	dù tòng jiàn wèi zhěng cháng	10
+多酶片双层片	duō méi piàn shuāng céng piàn	10
+多糖铁复合物	duō táng tiě fù hé wù	10
+多维生素滴剂	duō wéi shēng sù dī jì	10
+厄他培南冻干	è tā péi nán dòng gān	10
+莪术油葡萄糖	é zhú yóu pú tao táng	10
+二十八味槟榔	èr shí bā wèi bīng láng	10
+二十八味补肾	èr shí bā wèi bǔ shèn	10
+二十九味能消	èr shí jiǔ wèi néng xiāo	10
+二十六味通经	èr shí liù wèi tōng jīng	10
+儿童型盖中盖	ér tóng xíng gài zhōng gài	10
+儿童型巨能钙	ér tóng xíng jù néng gài	10
+儿童用鱼肝油	ér tóng yòng yú gān yóu	10
+法莫替丁冻干	fǎ mò tì dīng dòng gān	10
+法莫替丁钙镁	fǎ mò tì dīng gài měi	10
+非拉妥珠单抗	fēi lā tuǒ zhū dān kàng	10
+非那雄胺片剂	fēi nà xióng àn piàn jì	10
+肺炎多价疫苗	fèi yán duō jià yì miáo	10
+非甾体抗炎药	fēi zāi tǐ kàng yán yào	10
+斧标正红花油	fǔ biāo zhèng hóng huā yóu	10
+妇得康泡沫剂	fù dé kāng pào mò jì	10
+复合辅酶冻干	fù hé fǔ méi dòng gān	10
+复合乙双吗啉	fù hé yǐ shuāng ma lín	10
+妇康宝煎膏剂	fù kāng bǎo jiān gāo jì	10
+伏立康唑冻干	fú lì kāng zuò dòng gān	10
+富丽斯避孕套	fù lì sī bì yùn tào	10
+福莫司汀冻干	fú mò sī tīng dòng gān	10
+复喃西林冲洗	fù nán xī lín chōng xǐ	10
+扶他林乳胶剂	fú tā lín rǔ jiāo jì	10
+腹泻宁袋泡剂	fù xiè níng dài pào jì	10
+附子粳米汤方	fù zǐ jīng mǐ tāng fāng	10
+钙通道阻滞剂	gài tōng dào zǔ zhì jì	10
+钙通道阻滞药	gài tōng dào zǔ zhì yào	10
+甘草干姜汤方	gān cǎo gān jiāng tāng fāng	10
+甘草麻黄汤方	gān cǎo má huáng tāng fāng	10
+感冒解毒灵茶	gǎn mào jiě dú líng chá	10
+感冒伤风咳茶	gǎn mào shāng fēng ké chá	10
+干扰素诱导剂	gān rǎo sù yòu dǎo jì	10
+干扰素诱生剂	gān rǎo sù yòu shēng jì	10
+甘遂半夏汤方	gān suì bàn xià tāng fāng	10
+甘油果糖软袋	gān yóu guǒ táng ruǎn dài	10
+葛根定眩胶嚢	gé gēn dìng xuàn jiāo náng	10
+葛根素葡萄糖	gé gēn sù pú tao táng	10
+根毒愈十三味	gēn dú yù shí sān wèi	10
+根管清洁糊剂	gēn guǎn qīng jié hú jì	10
+更昔洛韦冻干	gèng xī luò wéi dòng gān	10
+宫颈康阴道栓	gōng jǐng kāng yīn dào shuān	10
+宫糜灵泡腾栓	gōng mí líng pào téng shuān	10
+骨骼肌松驰剂	gǔ gé jī sōng chí jì	10
+古楼山跌打酒	gǔ lóu shān diē dǎ jiǔ	10
+骨痛热症疫苗	gǔ tòng rè zhèng yì miáo	10
+冠血管扩张药	guān xuè guǎn kuò zhāng yào	10
+广谱抗病毒药	guǎng pǔ kàng bìng dú yào	10
+桂龙益肾通络	guì lóng yì shèn tōng luò	10
+归芪养血益气	guī qí yǎng xuè yì qì	10
+含糖胃蛋白酶	hán táng wèi dàn bái méi	10
+寒痛乐热敷袋	hán tòng lè rè fū dài	10
+合成号止血剂	hé chéng hào zhǐ xuè jì	10
+合成鱼腥草素	hé chéng yú xīng cǎo sù	10
+荷露清牙痛水	hé lù qīng yá tòng shuǐ	10
+黑豆馏油凝胶	hēi dòu liú yóu níng jiāo	10
+厚朴麻黄汤方	hòu pò má huáng tāng fāng	10
+厚朴七物汤方	hòu pò qī wù tāng fāng	10
+厚朴三物汤方	hòu pò sān wù tāng fāng	10
+猴头菌提取物	hóu tóu jūn tí qǔ wù	10
+环磷腺苷冻干	huán lín xiàn gān dòng gān	10
+环磷腺苷葡胺	huán lín xiàn gān pú àn	10
+环磷酰苷葡胺	huán lín xiān gān pú àn	10
+缓释亮丙瑞林	huǎn shì liàng bǐng ruì lín	10
+磺胺嘧啶银霜	huáng àn mì dìng yín shuāng	10
+黄祥华如意油	huáng xiáng huá rú yì yóu	10
+汇仁阿奇霉素	huì rén ā qí méi sù	10
+活血壮筋丸丹	huó xuè zhuàng jīn wán dān	10
+肌氨肽苷冻干	jī ān tài gān dòng gān	10
+吉春妇炎康复	jí chūn fù yán kāng fù	10
+己基巴比妥钠	jǐ jī bā bǐ tuǒ nà	10
+甲氨蝶呤冻干	jiǎ ān dié lìng dòng gān	10
+甲钴胺片代芳	jiǎ gǔ àn piàn dài fāng	10
+加减当归饮子	jiā jiǎn dāng guī yǐn zi	10
+甲类非处方药	jiǎ lèi fēi chǔ fāng yào	10
+甲麻芩苷那敏	jiǎ má qín gān nà mǐn	10
+加替沙星冻干	jiā tì shā xīng dòng gān	10
+加味八珍益母	jiā wèi bā zhēn yì mǔ	10
+加味龟龄集酒	jiā wèi guī líng jí jiǔ	10
+加味藿香正气	jiā wèi huò xiāng zhèng qì	10
+甲酰溶肉瘤素	jiǎ xiān róng ròu liú sù	10
+甲型肝炎疫苗	jiǎ xíng gān yán yì miáo	10
+甲溴贝那替秦	jiǎ xiù bèi nà tì qín	10
+甲溴后马托品	jiǎ xiù hòu mǎ tuō pǐn	10
+健儿宝肥仔水	jiàn ér bǎo féi zǎi shuǐ	10
+健儿三宝化积	jiàn ér sān bǎo huà jī	10
+健儿婴童咳水	jiàn ér yīng tóng ké shuǐ	10
+健脾壮腰药酒	jiàn pí zhuàng yāo yào jiǔ	10
+减味牛黄解毒	jiǎn wèi niú huáng jiě dú	10
+健胃止疼五味	jiàn wèi zhǐ téng wǔ wèi	10
+结肠宁灌肠剂	jié cháng níng guàn cháng jì	10
+接骨木花眼胶	jiē gǔ mù huā yǎn jiāo	10
+金妇康消糜栓	jīn fù kāng xiāo mí shuān	10
+今古通消痛贴	jīn gǔ tōng xiāo tòng tiē	10
+金龙伤湿止痛	jīn lóng shāng shī zhǐ tòng	10
+筋伤宁湿敷剂	jīn shāng níng shī fū jì	10
+近视乐眼药水	jìn shì lè yǎn yào shuǐ	10
+精神活性药物	jīng shén huó xìng yào wù	10
+精制海马追风	jīng zhì hǎi mǎ zhuī fēng	10
+精制黑豆馏油	jīng zhì hēi dòu liú yóu	10
+京制咳嗽痰喘	jīng zhì ké sòu tán chuǎn	10
+精制狂犬疫苗	jīng zhì kuáng quǎn yì miáo	10
+京制牛黄解毒	jīng zhì niú huáng jiě dú	10
+精制五加皮酒	jīng zhì wǔ jiā pí jiǔ	10
+精制乙脑疫苗	jīng zhì yǐ nǎo yì miáo	10
+精制银翘解毒	jīng zhì yín qiào jiě dú	10
+九维鱼肝油乳	jiǔ wéi yú gān yóu rǔ	10
+九制豨莶草药	jiǔ zhì xī xiān cǎo yào	10
+桔贝止咳祛痰	jú bèi zhǐ ké qū tán	10
+局部用凝胶剂	jú bù yòng níng jiāo jì	10
+橘皮竹茹汤方	jú pí zhú rú tāng fāng	10
+卡络磺钠冻干	kǎ luò huáng nà dòng gān	10
+卡前列甲酯栓	kǎ qián liè jiǎ zhǐ shuān	10
+开塞露含甘油	kāi sāi lù hán gān yóu	10
+坎地沙坦西酯	kǎn dì shā tǎn xī zhǐ	10
+抗艾滋病药物	kàng ài zī bìng yào wù	10
+抗变态反应药	kàng biàn tài fǎn yìng yào	10
+抗病毒感染药	kàng bìng dú gǎn rǎn yào	10
+抗癫痫的药物	kàng diān xián de yào wù	10
+抗恶性肿瘤药	kàng è xìng zhǒng liú yào	10
+抗蝮蛇毒血清	kàng fù shé dú xuè qīng	10
+抗高血压药物	kàng gāo xuè yā yào wù	10
+抗过敏的药物	kàng guò mǐn de yào wù	10
+抗寄生虫病药	kàng jì shēng chóng bìng yào	10
+抗寄生虫药物	kàng jì shēng chóng yào wù	10
+抗结核板式药	kàng jié hé bǎn shì yào	10
+抗精神病药物	kàng jīng shén bìng yào wù	10
+抗精神失常药	kàng jīng shén shī cháng yào	10
+抗狂犬病血清	kàng kuáng quǎn bìng xuè qīng	10
+抗蝰蛇毒血清	kàng kuí shé dú xuè qīng	10
+抗偏头痛药物	kàng piān tóu tòng yào wù	10
+抗羟色胺能剂	kàng qiǎng sè àn néng jì	10
+抗羟色胺能药	kàng qiǎng sè àn néng yào	10
+抗生素眼药水	kàng shēng sù yǎn yào shuǐ	10
+康氏牛黄解毒	kāng shì niú huáng jiě dú	10
+抗糖尿病药物	kàng táng niào bìng yào wù	10
+抗体偶联药物	kàng tǐ ǒu lián yào wù	10
+抗微生物药物	kàng wēi shēng wù yào wù	10
+抗心律不整药	kàng xīn lǜ bù zhěng yào	10
+抗心律失常药	kàng xīn lǜ shī cháng yào	10
+抗血小板药物	kàng xuè xiǎo bǎn yào wù	10
+抗真菌感染药	kàng zhēn jūn gǎn rǎn yào	10
+抗肿瘤抗生素	kàng zhǒng liú kàng shēng sù	10
+抗肿瘤抗体类	kàng zhǒng liú kàng tǐ lèi	10
+可乐定控释贴	kě lè dìng kòng shì tiē	10
+克霉唑癣药水	kè méi zuò xuǎn yào shuǐ	10
+口服阿奇霉素	kǒu fú ā qí méi sù	10
+口服避孕片号	kǒu fú bì yùn piàn hào	10
+口服降糖药物	kǒu fú jiàng táng yào wù	10
+口服抗凝药物	kǒu fú kàng níng yào wù	10
+口服葡萄糖粉	kǒu fú pú tao táng fěn	10
+苦参素葡萄糖	kǔ shēn sù pú tao táng	10
+利巴韦林喷剂	lì bā wéi lín pēn jì	10
+利多卡因胶浆	lì duō kǎ yīn jiāo jiāng	10
+利多卡因凝胶	lì duō kǎ yīn níng jiāo	10
+链道酶链激酶	liàn dào méi liàn jī méi	10
+亮菌甲素冻干	liàng jūn jiǎ sù dòng gān	10
+磷丙泊酚二钠	lín bǐng bó fēn èr nà	10
+岭南正白树油	lǐng nán zhèng bái shù yóu	10
+岭南正红花油	lǐng nán zhèng hóng huā yóu	10
+柳氮磺吡啶栓	liǔ dàn huáng bǐ dìng shuān	10
+六味伤复宁酊	liù wèi shāng fù níng dīng	10
+鹿瓜多肽冻干	lù guā duō tài dòng gān	10
+卵磷脂络合碘	luǎn lín zhī luò hé diǎn	10
+洛芬葡锌那敏	luò fēn pú xīn nà mǐn	10
+罗浮山百草油	luó fú shān bǎi cǎo yóu	10
+麻黄附子汤方	má huáng fù zǐ tāng fāng	10
+吗替麦考酚酯	ma tì mài kǎo fēn zhǐ	10
+麻杏石甘汤加	má xìng shí gān tāng jiā	10
+麻杏止咳糠浆	má xìng zhǐ ké kāng jiāng	10
+蚂蚁双参通痹	mǎ yǐ shuāng cān tōng bì	10
+麦角胺咖啡因	mài jiǎo àn kā fēi yīn	10
+麦门冬汤主之	mài mén dōng tāng zhǔ zhī	10
+脉舒平袋泡茶	mài shū píng dài pào chá	10
+慢咽宁袋泡茶	màn yàn níng dài pào chá	10
+慢咽宁袋泡剂	màn yàn níng dài pào jì	10
+梅花鹿茸精针	méi huā lù róng jīng zhēn	10
+美息伪麻拉明	měi xī wěi má lā míng	10
+锰福地吡三钠	měng fú dì bǐ sān nà	10
+咪达唑仑注射	mī dá zuò lún zhù shè	10
+蜜炼川贝枇杷	mì liàn chuān bèi pí pá	10
+蜜丸如梧子大	mì wán rú wú zǐ dà	10
+免疫抑制药物	miǎn yì yì zhì yào wù	10
+灭菌结晶磺胺	miè jūn jié jīng huáng àn	10
+牡荆油胶丸浓	mǔ jīng yóu jiāo wán nóng	10
+萘林那敏溴铵	nài lín nà mǐn xiù ǎn	10
+萘普生钠冻干	nài pǔ shēng nà dòng gān	10
+耐昔妥珠单抗	nài xī tuǒ zhū dān kàng	10
+男用延时喷剂	nán yòng yán shí pēn jì	10
+脑蛋白水解物	nǎo dàn bái shuǐ jiě wù	10
+脑得生袋泡剂	nǎo dé shēng dài pào jì	10
+尼麦角林冻干	ní mài jiǎo lín dòng gān	10
+尼美舒利凝胶	ní měi shū lì níng jiāo	10
+尼莫地平冻干	ní mò dì píng dòng gān	10
+尼莫地平控释	ní mò dì píng kòng shì	10
+拟肾上腺素药	nǐ shèn shàng xiàn sù yào	10
+尿促性素冻干	niào cù xìng sù dòng gān	10
+凝血酶冻干粉	níng xuè méi dòng gān fěn	10
+欧博士止咳露	ōu bó shì zhǐ ké lù	10
+欧车前亲水胶	ōu chē qián qīn shuǐ jiāo	10
+培哚普利特丁	péi duǒ pǔ lì tè dīng	10
+佩夫人止咳露	pèi fū rén zhǐ ké lù	10
+培美曲塞二钠	péi měi qǔ sāi èr nà	10
+硼替佐米冻干	péng tì zuǒ mǐ dòng gān	10
+普乐安片云健	pǔ lè ān piàn yún jiàn	10
+葡萄球菌激酶	pú tao qiú jūn jī méi	10
+七味红花殊胜	qī wèi hóng huā shū shèng	10
+七味解毒活血	qī wèi jiě dú huó xuè	10
+七味养心健脾	qī wèi yǎng xīn jiàn pí	10
+前列闭尔通栓	qián liè bì ěr tōng shuān	10
+前列地尔冻干	qián liè dì ěr dòng gān	10
+牵牛子黑白丑	qiān niú zi hēi bái chǒu	10
+强力天麻杜仲	qiáng lì tiān má dù zhòng	10
+清痹通络药酒	qīng bì tōng luò yào jiǔ	10
+清肝二十七味	qīng gān èr shí qī wèi	10
+清心沉香八味	qīng xīn chén xiāng bā wèi	10
+清心明目上清	qīng xīn míng mù shàng qīng	10
+氢氧化钙糊剂	qīng yǎng huà gài hú jì	10
+曲安缩松尿素	qǔ ān suō sōng niào sù	10
+祛风除湿药酒	qū fēng chú shī yào jiǔ	10
+驱风通络药酒	qū fēng tōng luò yào jiǔ	10
+去甲阿密替林	qù jiǎ ā mì tì lín	10
+去甲万古霉素	qù jiǎ wàn gǔ méi sù	10
+去甲文拉法辛	qù jiǎ wén lā fǎ xīn	10
+去炎松尿素霜	qù yán sōng niào sù shuāng	10
+去氧肾上腺素	qù yǎng shèn shàng xiàn sù	10
+去乙酰毛花苷	qù yǐ xiān máo huā gān	10
+热炎宁无糖型	rè yán níng wú táng xíng	10
+人脾转移因子	rén pí zhuǎn yí yīn zǐ	10
+人参天麻药酒	rén shēn tiān má yào jiǔ	10
+绒促性素冻干	róng cù xìng sù dòng gān	10
+瑞舒伐他汀钙	ruì shū fá tā tīng gài	10
+瑞替普酶冻干	ruì tì pǔ méi dòng gān	10
+噻嗪类利尿药	sāi qín lèi lì niào yào	10
+三痹热宝熨剂	sān bì rè bǎo yùn jì	10
+三鞭参茸固本	sān biān shēn róng gù běn	10
+三环抗抑郁剂	sān huán kàng yì yù jì	10
+三环抗抑郁药	sān huán kàng yì yù yào	10
+三精穿琥宁针	sān jīng chuān hǔ níng zhēn	10
+三精鹿茸精针	sān jīng lù róng jīng zhēn	10
+三七透骨黄酊	sān qī tòu gǔ huáng dīng	10
+十五味沉香	sān shí wǔ wèi chén xiāng	10
+三十一味松石	sān shí yī wèi sōng shí	10
+三味清热止痒	sān wèi qīng rè zhǐ yǎng	10
+三维鱼肝油乳	sān wéi yú gān yóu rǔ	10
+三维制霉素栓	sān wéi zhì méi sù shuān	10
+三益皮炎平霜	sān yì pí yán píng shuāng	10
+杀外寄生虫药	shā wài jì shēng chóng yào	10
+山腊梅清感茶	shān là méi qīng gǎn chá	10
+麝香草酚撒粉	shè xiāng cǎo fēn sā fěn	10
+麝香海马追风	shè xiāng hǎi mǎ zhuī fēng	10
+麝香伤湿解痛	shè xiāng shāng shī jiě tòng	10
+麝香追风止痛	shè xiāng zhuī fēng zhǐ tòng	10
+参芪蛤蚧补浆	shēn qí gé jiè bǔ jiāng	10
+神奇珊瑚癣净	shén qí shān hú xuǎn jìng	10
+参芪首乌补汁	shēn qí shǒu wū bǔ zhī	10
+参芪王浆养血	shēn qí wáng jiāng yǎng xuè	10
+参芪乌鸡养血	shēn qí wū jī yǎng xuè	10
+参茸蛤蚧保肾	shēn róng gé jiè bǎo shèn	10
+参茸固本还少	shēn róng gù běn hái shǎo	10
+参茸三七补血	shēn róng sān qī bǔ xuè	10
+胜红清热胶蘘	shèng hóng qīng rè jiāo ráng	10
+生姜半夏汤方	shēng jiāng bàn xià tāng fāng	10
+生龙驱风药酒	shēng lóng qū fēng yào jiǔ	10
+生脉片党参方	shēng mài piàn dǎng shēn fāng	10
+生脉饮党参方	shēng mài yǐn dǎng shēn fāng	10
+生脉饮人参方	shēng mài yǐn rén shēn fāng	10
+圣茜娅脱毛霜	shèng qiàn yà tuō máo shuāng	10
+生长抑素冻干	shēng zhǎng yì sù dòng gān	10
+十二味齿龈康	shí èr wèi chǐ yín kāng	10
+十二乌鸡白凤	shí èr wū jī bái fèng	10
+史国公浸酒方	shǐ guó gōng jìn jiǔ fāng	10
+狮马龙活络油	shī mǎ lóng huó luò yóu	10
+十五味龙胆花	shí wǔ wèi lóng dǎn huā	10
+十五味赛尔斗	shí wǔ wèi sài ěr dòu	10
+嗜血杆菌疫苗	shì xuè gǎn jūn yì miáo	10
+舒达宁创可贴	shū dá níng chuāng kě tiē	10
+疏痛安涂膜剂	shū tòng ān tú mó jì	10
+疏通安涂膜剂	shū tōng ān tú mó jì	10
+双嘧达莫冻干	shuāng mì dá mò dòng gān	10
+双扑口服原料	shuāng pū kǒu fú yuán liào	10
+双歧杆菌活菌	shuāng qí gǎn jūn huó jūn	10
+双歧三联活菌	shuāng qí sān lián huó jūn	10
+双香豆素乙酯	shuāng xiāng dòu sù yǐ zhǐ	10
+水牛角浓缩粉	shuǐ niú jiǎo nóng suō fěn	10
+四环素泼尼松	sì huán sù pō ní sōng	10
+四季青痱子水	sì jì qīng fèi zi shuǐ	10
+四价流感疫苗	sì jià liú gǎn yì miáo	10
+四君子袋泡剂	sì jūn zǐ dài pào jì	10
+司可巴比妥那	sī kě bā bǐ tuǒ nà	10
+司可巴比妥钠	sī kě bā bǐ tuǒ nà	10
+司库奇尤单抗	sī kù qí yóu dān kàng	10
+丝裂霉素冻干	sī liè méi sù dòng gān	10
+四顺清凉饮子	sì shùn qīng liáng yǐn zi	10
+松根油吸入剂	sōng gēn yóu xī rù jì	10
+速效牙痛宁酊	sù xiào yá tòng níng dīng	10
+速效枣仁安神	sù xiào zǎo rén ān shén	10
+他扎罗汀凝胶	tā zhā luó tīng níng jiāo	10
+糖肽类抗生素	táng tài lèi kàng shēng sù	10
+特比萘芬凝胶	tè bǐ nài fēn níng jiāo	10
+特比奈芬泡腾	tè bǐ nài fēn pào téng	10
+特质三鞭补酒	tè zhì sān biān bǔ jiǔ	10
+替考拉宁冻干	tì kǎo lā níng dòng gān	10
+替硝唑葡萄糖	tì xiāo zuò pú tao táng	10
+添康采脱发停	tiān kāng cǎi tuō fà tíng	10
+天麻蜜环菌粉	tiān má mì huán jūn fěn	10
+通络止痛药酒	tōng luò zhǐ tòng yào jiǔ	10
+通脉四逆汤方	tōng mài sì nì tāng fāng	10
+同仁牛黄清心	tóng rén niú huáng qīng xīn	10
+同仁乌鸡白凤	tóng rén wū jī bái fèng	10
+托拉塞米冻干	tuō lā sāi mǐ dòng gān	10
+外用避孕药膜	wài yòng bì yùn yào mó	10
+万氏牛黄清心	wàn shì niú huáng qīng xīn	10
+威哥王三鞭粒	wēi gē wáng sān biān lì	10
+胃镜润滑胶浆	wèi jìng rùn huá jiāo jiāng	10
+维库溴铵冻干	wéi kù xiù ǎn dòng gān	10
+维甜美降糖茶	wéi tián měi jiàng táng chá	10
+文冠果子仁霜	wén guān guǒ zi rén shuāng	10
+温肾助阳药酒	wēn shèn zhù yáng yào jiǔ	10
+乌鸡桂圆补酒	wū jī guì yuán bǔ jiǔ	10
+五加参蛤蚧精	wǔ jiā cān gé jiè jīng	10
+五加参归芪精	wǔ jiā cān guī qí jīng	10
+五面星除湿酊	wǔ miàn xīng chú shī dīng	10
+无水阿莫西林	wú shuǐ ā mò xī lín	10
+乌司他丁冻干	wū sī tā dīng dòng gān	10
+无糖型热炎宁	wú táng xíng rè yán níng	10
+乌头桂枝汤方	wū tóu guì zhī tāng fāng	10
+五维甘草那敏	wǔ wéi gān cǎo nà mǐn	10
+伍维甘草那敏	wǔ wéi gān cǎo nà mǐn	10
+五味甘露药浴	wǔ wèi gān lù yào yù	10
+五味甘露滋补	wǔ wèi gān lù zī bǔ	10
+无细胞百白破	wú xì bāo bǎi bái pò	10
+五中参蛤蚧精	wǔ zhōng cān gé jiè jīng	10
+洗必泰痔疮栓	xǐ bì tài zhì chuāng shuān	10
+吸附白喉疫苗	xī fù bái hóu yì miáo	10
+吸附霍乱菌苗	xī fù huò luàn jūn miáo	10
+西甲硅油乳剂	xī jiǎ guī yóu rǔ jì	10
+西咪替丁冻干	xī mī tì dīng dòng gān	10
+吸入性麻醉药	xī rù xìng má zuì yào	10
+腺苷钴胺冻干	xiàn gān gǔ àn dòng gān	10
+香菇多糖冻干	xiāng gū duō táng dòng gān	10
+香砂养胃乳剂	xiāng shā yǎng wèi rǔ jì	10
+小建中汤主之	xiǎo jiàn zhōng tāng zhǔ zhī	10
+消石矾石散方	xiāo shí fán shí sàn fāng	10
+消栓胶囊肠溶	xiāo shuān jiāo náng cháng róng	10
+新丁氏润通茶	xīn dīng shì rùn tōng chá	10
+新感觉祛斑霜	xīn gǎn jué qū bān shuāng	10
+新冠灭活疫苗	xīn guān miè huó yì miáo	10
+新脚癣一次净	xīn jiǎo xuǎn yí cì jìng	10
+心舒静吸入剂	xīn shū jìng xī rù jì	10
+醒脑牛黄清心	xǐng nǎo niú huáng qīng xīn	10
+醒脑再造胶嚢	xǐng nǎo zài zào jiāo náng	10
+熊胆舒肝利胆	xióng dǎn shū gān lì dǎn	10
+胸腺嘧啶氮芥	xiōng xiàn mì dìng dàn jiè	10
+胸腺五肽冻干	xiōng xiàn wǔ tài dòng gān	10
+溴化新斯的明	xiù huà xīn sī de míng	10
+溴化异丙托品	xiù huà yì bǐng tuō pǐn	10
+溴甲贝那替嗪	xiù jiǎ bèi nà tì qín	10
+溴甲贝那替秦	xiù jiǎ bèi nà tì qín	10
+血凝酶立芷雪	xuè níng méi lì zhǐ xuě	10
+血容量扩充剂	xuè róng liàng kuò chōng jì	10
+药墨八宝药墨	yào mò bā bǎo yào mò	10
+射干麻黄汤方	yè gān má huáng tāng fāng	10
+异丙安替比林	yì bǐng ān tì bǐ lín	10
+异丙基阿托品	yì bǐng jī ā tuō pǐn	10
+异丙肾上腺素	yì bǐng shèn shàng xiàn sù	10
+胰岛素增敏药	yí dǎo sù zēng mǐn yào	10
+依法利珠单抗	yī fǎ lì zhū dān kàng	10
+乙呋地塞米松	yǐ fū dì sāi mǐ sōng	10
+亿利甘草良咽	yì lì gān cǎo liáng yàn	10
+伊犁甘草凉咽	yī lí gān cǎo liáng yàn	10
+亿利甘草润咽	yì lì gān cǎo rùn yàn	10
+伊犁苦瓜清咽	yī lí kǔ guā qīng yàn	10
+乙脑灭活疫苗	yǐ nǎo miè huó yì miáo	10
+益气复脉冻干	yì qì fù mài dòng gān	10
+益气养血补酒	yì qì yǎng xuè bǔ jiǔ	10
+依沙吖啶凝胶	yī shā ā dìng níng jiāo	10
+异戊巴比妥钠	yì wù bā bǐ tuǒ nà	10
+薏芽健脾凝胶	yì yá jiàn pí níng jiāo	10
+乙氧萘西林钠	yǐ yǎng nài xī lín nà	10
+益智温肾十味	yì zhì wēn shèn shí wèi	10
+吲哚菁绿冻干	yǐn duǒ jīng lǜ dòng gān	10
+银红补肾药酒	yín hóng bǔ shèn yào jiǔ	10
+银翘散袋泡剂	yín qiào sàn dài pào jì	10
+英夫利西单抗	yīng fū lì xī dān kàng	10
+英夫利昔单抗	yīng fū lì xī dān kàng	10
+永龙号驱风油	yǒng lóng hào qū fēng yóu	10
+永龙正红花油	yǒng lóng zhèng hóng huā yóu	10
+右丙亚胺冻干	yòu bǐng yà àn dòng gān	10
+优泌林常规型	yōu mì lín cháng guī xíng	10
+优泌林混合型	yōu mì lín hùn hé xíng	10
+尤瑞克林冻干	yóu ruì kè lín dòng gān	10
+右旋安非他命	yòu xuán ān fēi tā mìng	10
+右旋兰索拉唑	yòu xuán lán suǒ lā zuò	10
+愈创维林那敏	yù chuàng wéi lín nà mǐn	10
+愈酚甲麻那敏	yù fēn jiǎ má nà mǐn	10
+愈酚伪麻待因	yù fēn wěi má dài yīn	10
+玉屏风袋泡茶	yù píng fēng dài pào chá	10
+跃打扭伤灵酊	yuè dǎ niǔ shāng líng dīng	10
+云芝胞内糖肽	yún zhī bāo nèi táng tài	10
+增效灰黄霉素	zēng xiào huī huáng méi sù	10
+治近宁眼药水	zhì jìn níng yǎn yào shuǐ	10
+治咳川贝枇杷	zhì ké chuān bèi pí pá	10
+制霉素阴道栓	zhì méi sù yīn dào shuān	10
+痔清消袋泡剂	zhì qīng xiāo dài pào jì	10
+止痛化症胶嚢	zhǐ tòng huà zhèng jiāo náng	10
+仲氨代芬太尼	zhòng ān dài fēn tài ní	10
+众邦正骨痛贴	zhòng bāng zhèng gǔ tòng tiē	10
+注射用阿霉素	zhù shè yòng ā méi sù	10
+注射用氨力农	zhù shè yòng ān lì nóng	10
+注射用氨磷汀	zhù shè yòng ān lín tīng	10
+注射用氨曲南	zhù shè yòng ān qǔ nán	10
+注射用奥硝唑	zhù shè yòng ào xiāo zuò	10
+注射用巴曲亭	zhù shè yòng bā qǔ tíng	10
+注射用棓丙酯	zhù shè yòng bàng bǐng zhǐ	10
+注射用吡多胺	zhù shè yòng bǐ duō àn	10
+注射用穿琥宁	zhù shè yòng chuān hǔ níng	10
+注射用川芎嗪	zhù shè yòng chuān xiōng qín	10
+注射用丁卡因	zhù shè yòng dīng kǎ yīn	10
+注射用呋塞米	zhù shè yòng fū sāi mǐ	10
+注射用肝复肽	zhù shè yòng gān fù tài	10
+注射用干扰素	zhù shè yòng gān rǎo sù	10
+注射用葛根素	zhù shè yòng gé gēn sù	10
+注射用红霉素	zhù shè yòng hóng méi sù	10
+注射用加贝酯	zhù shè yòng jiā bèi zhǐ	10
+注射用甲钴胺	zhù shè yòng jiǎ gǔ àn	10
+注射用甲强龙	zhù shè yòng jiǎ qiáng lóng	10
+注射用甲硝唑	zhù shè yòng jiǎ xiāo zuò	10
+注射用降纤酶	zhù shè yòng jiàng xiān méi	10
+注射用胶原酶	zhù shè yòng jiāo yuán méi	10
+注射用菌必治	zhù shè yòng jūn bì zhì	10
+注射用科博肽	zhù shè yòng kē bó tài	10
+注射用苦参素	zhù shè yòng kǔ shēn sù	10
+注射用利福平	zhù shè yòng lì fú píng	10
+注射用利他林	zhù shè yòng lì tā lín	10
+注射用立芷雪	zhù shè yòng lì zhǐ xuě	10
+注射用链霉素	zhù shè yòng liàn méi sù	10
+注射用奈达铂	zhù shè yòng nài dá bó	10
+注射用脑心康	zhù shè yòng nǎo xīn kāng	10
+注射用尿激酶	zhù shè yòng niào jī méi	10
+注射用哌甲酯	zhù shè yòng pài jiǎ zhǐ	10
+注射用平阳星	zhù shè yòng píng yáng xīng	10
+注射用清开灵	zhù shè yòng qīng kāi líng	10
+注射用去铁胺	zhù shè yòng qù tiě àn	10
+注射用双黄连	zhù shè yòng shuāng huáng lián	10
+注射用四环素	zhù shè yòng sì huán sù	10
+注射用缩宫素	zhù shè yòng suō gōng sù	10
+注射用天麻素	zhù shè yòng tiān má sù	10
+注射用通脉脂	zhù shè yòng tōng mài zhī	10
+注射用维生素	zhù shè yòng wéi shēng sù	10
+注射用细辛脑	zhù shè yòng xì xīn nǎo	10
+注射用纤溶酶	zhù shè yòng xiān róng méi	10
+注射用硝卡芥	zhù shè yòng xiāo kǎ jiè	10
+注射用硝普钠	zhù shè yòng xiāo pǔ nà	10
+注射用心肌肽	zhù shè yòng xīn jī tài	10
+注射用胸腺肽	zhù shè yòng xiōng xiàn tài	10
+注射用血凝酶	zhù shè yòng xuè níng méi	10
+注射用血塞通	zhù shè yòng xuè sāi tōng	10
+注射用血栓通	zhù shè yòng xuè shuān tōng	10
+注射用亚胺醌	zhù shè yòng yà àn kūn	10
+注射用炎琥宁	zhù shè yòng yán hǔ níng	10
+注射用烟酰胺	zhù shè yòng yān xiān àn	10
+注射用抑肽酶	zhù shè yòng yì tài méi	10
+注射用异烟肼	zhù shè yòng yì yān jǐng	10
+注射用转化糖	zhù shè yòng zhuǎn huà táng	10
+转化糖电解质	zhuǎn huà táng diàn jiě zhì	10
+转移因子冻干	zhuǎn yí yīn zǐ dòng gān	10
+壮骨麝香止痛	zhuàng gǔ shè xiāng zhǐ tòng	10
+棕榈哌泊塞嗪	zōng lǘ pài pō sāi qín	10
+左卡尼汀冻干	zuǒ kǎ ní tīng dòng gān	10
+左旋安非他命	zuǒ xuán ān fēi tā mìng	10
+阿巴卡韦双夫定	ā bā kǎ wéi shuāng fū dìng	10
+阿米三嗪萝巴新	ā mǐ sān qín luó bā xīn	10
+阿奇霉素葡萄糖	ā qí méi sù pú tao táng	10
+阿奇霉素细粒剂	ā qí méi sù xì lì jì	10
+阿斯匹林钙尿素	ā sī pǐ lín gài niào sù	10
+阿司匹林可待因	ā sī pǐ lín kě dài yīn	10
+阿司匹林维生素	ā sī pǐ lín wéi shēng sù	10
+阿维克克拉霉素	ā wéi kè kè lā méi sù	10
+阿昔洛韦葡萄糖	ā xī luò wéi pú tao táng	10
+氨酚匹林咖啡因	ān fēn pǐ lín kā fēi yīn	10
+氨酚伪麻美那敏	ān fēn wěi má měi nà mǐn	10
+安宫牛黄丸金衣	ān gōng niú huáng wán jīn yī	10
+桉柠蒎肠溶软胶	ān níng pài cháng róng ruǎn jiāo	10
+安神镇惊二十味	ān shén zhèn jīng èr shí wèi	10
+拔都化腐生肌药	bá dōu huà fǔ shēng jī yào	10
+百白破混合疫苗	bǎi bái pò hùn hé yì miáo	10
+百白破精制疫苗	bǎi bái pò jīng zhì yì miáo	10
+百白破联合疫苗	bǎi bái pò lián hé yì miáo	10
+百白破三联疫苗	bǎi bái pò sān lián yì miáo	10
+白草香解郁安神	bái cǎo xiāng jiě yù ān shén	10
+百合固金二地黄	bǎi hé gù jīn èr dì huáng	10
+白虎膏知甘草粳	bái hǔ gāo zhī gān cǎo jīng	10
+白虎加桂枝汤方	bái hǔ jiā guì zhī tāng fāng	10
+白眉蛇毒凝血酶	bái méi shé dú níng xuè méi	10
+白眉蛇毒血凝酶	bái méi shé dú xuè níng méi	10
+白头翁汤治热痢	bái tóu wēng tāng zhì rè lì	10
+百中兴隆驱风油	bǎi zhòng xīng lóng qū fēng yóu	10
+半夏厚朴汤加减	bàn xià hòu pò tāng jiā jiǎn	10
+半夏泻心汤加减	bàn xià xiè xīn tāng jiā jiǎn	10
+倍他米松新霉素	bèi tā mǐ sōng xīn méi sù	10
+倍他羟基芬太尼	bèi tā qiǎng jī fēn tài ní	10
+吡拉西坦葡萄糖	bǐ lā xī tǎn pú tao táng	10
+丙酰麦利多霉素	bǐng xiān mài lì duō méi sù	10
+参维冻干蜂王浆	cān wéi dòng gān fēng wáng jiāng	10
+参芎葡萄糖注射	cān xiōng pú tao táng zhù shè	10
+草珊瑚甘草良咽	cǎo shān hú gān cǎo liáng yàn	10
+长春西汀葡萄糖	cháng chūn xī tīng pú tao táng	10
+长庆镇咳伤风素	cháng qìng zhèn ké shāng fēng sù	10
+长效抗精神病药	cháng xiào kàng jīng shén bìng yào	10
+长效口服避孕药	cháng xiào kǒu fú bì yùn yào	10
+车前番泻复合颗	chē qián fān xiè fù hé kē	10
+虫草菌粉参芍酒	chóng cǎo jūn fěn cān sháo jiǔ	10
+重组甘精胰岛素	chóng zǔ gān jīng yí dǎo sù	10
+重组酵母乙肝疫	chóng zǔ jiào mǔ yǐ gān yì	10
+重组酵母乙型肝	chóng zǔ jiào mǔ yǐ xíng gān	10
+重组人干扰素栓	chóng zǔ rén gān rǎo sù shuān	10
+重组乙型肝炎疫	chóng zǔ yǐ xíng gān yán yì	10
+除极化型肌松药	chú jí huà xíng jī sōng yào	10
+川芎茶调袋泡剂	chuān xiōng chá tiáo dài pào jì	10
+促肝细胞生长素	cù gān xì bāo shēng zhǎng sù	10
+达克罗宁胶浆剂	dá kè luó níng jiāo jiāng jì	10
+单克隆抗体药物	dān kè lóng kàng tǐ yào wù	10
+丹栀逍遥散加减	dān zhī xiāo yáo sàn jiā jiǎn	10
+低分子肝素测定	dī fēn zǐ gān sù cè dìng	10
+低分子肝素暂行	dī fēn zǐ gān sù zàn xíng	10
+低分子量肝素钙	dī fēn zǐ liàng gān sù gài	10
+低分子量肝素钠	dī fēn zǐ liàng gān sù nà	10
+低精蛋白胰岛素	dī jīng dàn bái yí dǎo sù	10
+低渗口服补液盐	dī shèn kǒu fú bǔ yè yán	10
+涤痰汤用竹茹星	dí tán tāng yòng zhú rú xīng	10
+地衣芽孢杆菌活	dì yī yá bāo gǎn jūn huó	10
+地衣芽孢杆菌胶	dì yī yá bāo gǎn jūn jiāo	10
+典型抗精神病药	diǎn xíng kàng jīng shén bìng yào	10
+丁酰胺卡那霉素	dīng xiān àn kǎ nà méi sù	10
+冻干白喉抗毒素	dòng gān bái hóu kàng dú sù	10
+冻干风疹活菌苗	dòng gān fēng zhěn huó jūn miáo	10
+冻干麻疹活疫苗	dòng gān má zhěn huó yì miáo	10
+冻干人凝血因子	dòng gān rén níng xuè yīn zǐ	10
+冻干人血白蛋白	dòng gān rén xuè bái dàn bái	10
+冻干肉毒抗毒素	dòng gān ròu dú kàng dú sù	10
+冻干鼠疫活菌苗	dòng gān shǔ yì huó jūn miáo	10
+冻干鼠疫活疫苗	dòng gān shǔ yì huó yì miáo	10
+杜仲双降袋泡剂	dù zhòng shuāng jiàng dài pào jì	10
+短效口服避孕药	duǎn xiào kǒu fú bì yùn yào	10
+多聚甲醛干髓剂	duō jù jiǎ quán gàn suǐ jì	10
+多聚醛制霉素钠	duō jù quán zhì méi sù nà	10
+多聚糖制霉菌素	duō jù táng zhì méi jūn sù	10
+多库酯钠丹蒽醌	duō kù zhǐ nà dān ēn kūn	10
+多种组合维生素	duō zhǒng zǔ hé wéi shēng sù	10
+二十三味蚂蚁酒	èr shí sān wèi mǎ yǐ jiǔ	10
+二维三七桂利嗪	èr wéi sān qī guì lì qín	10
+二维鱼肝油凝胶	èr wéi yú gān yóu níng jiāo	10
+法莫替丁葡萄糖	fǎ mò tì dīng pú tao táng	10
+法益宁塑料安瓿	fǎ yì níng sù liào ān bù	10
+防己茯苓汤主之	fáng jǐ fú líng tāng zhǔ zhī	10
+防己黄芪汤主之	fáng jǐ huáng qí tāng zhǔ zhī	10
+非竞争性拮抗药	fēi jìng zhēng xìng jié kàng yào	10
+肺炎链球菌疫苗	fèi yán liàn qiú jūn yì miáo	10
+酚磺乙胺葡萄糖	fēn huáng yǐ àn pú tao táng	10
+风疹减毒活疫苗	fēng zhěn jiǎn dú huó yì miáo	10
+复合口服避孕药	fù hé kǒu fú bì yùn yào	10
+复合维生素注射	fù hé wéi shēng sù zhù shè	10
+复合维他肝油球	fù hé wéi tā gān yóu qiú	10
+甘露聚糖肽注射	gān lù jù táng tài zhù shè	10
+干扰素拉色地平	gān rǎo sù lā sè dì píng	10
+肝水解肽西林瓶	gān shuǐ jiě tài xī lín píng	10
+甘油果糖塑料瓶	gān yóu guǒ táng sù liào píng	10
+更昔洛韦葡萄糖	gèng xī luò wéi pú tao táng	10
+更昔洛韦眼用凝	gèng xī luò wéi yǎn yòng níng	10
+钩端螺旋体疫苗	gōu duān luó xuán tǐ yì miáo	10
+骨刺消痛涂膜剂	gǔ cì xiāo tòng tú mó jì	10
+骨瓜提取物注射	gǔ guā tí qǔ wù zhù shè	10
+古汉养生精口服	gǔ hàn yǎng shēng jīng kǒu fú	10
+骨质增生外敷灵	gǔ zhì zēng shēng wài fū líng	10
+骨质增生一贴灵	gǔ zhì zēng shēng yì tiē líng	10
+琥乙红霉素	huì rén hǔ yǐ hóng méi sù	10
+普济消毒饮	jiā jiǎn pǔ jì xiāo dú yǐn	10
+加替沙星葡萄糖	jiā tì shā xīng pú tao táng	10
+甲硝唑芬布芬胶	jiǎ xiāo zuò fēn bù fēn jiāo	10
+甲硝唑阴道凝胶	jiǎ xiāo zuò yīn dào níng jiāo	10
+甲硝唑阴道泡腾	jiǎ xiāo zuò yīn dào pào téng	10
+甲型肝炎减毒活	jiǎ xíng gān yán jiǎn dú huó	10
+甲型肝炎灭活疫	jiǎ xíng gān yán miè huó yì	10
+脚臭脚汗一喷净	jiǎo chòu jiǎo hàn yì pēn jìng	10
+脚气脚臭一擦净	jiǎo qì jiǎo chòu yì cā jìng	10
+洁尔阴洗液合装	jié ěr yīn xǐ yè hé zhuāng	10
+解热镇痛抗炎药	jiě rè zhèn tòng kàng yán yào	10
+金海清咽袋泡茶	jīn hǎi qīng yàn dài pào chá	10
+金红止痛消肿酊	jīn hóng zhǐ tòng xiāo zhǒng dīng	10
+金钱白花蛇药酒	jīn qián bái huā shé yào jiǔ	10
+金栀咽喉袋泡茶	jīn zhī yān hóu dài pào chá	10
+精蛋白锌胰岛素	jīng dàn bái xīn yí dǎo sù	10
+精制狂犬病疫苗	jīng zhì kuáng quǎn bìng yì miáo	10
+精制破白破疫苗	jīng zhì pò bái pò yì miáo	10
+九制豨莶草药酒	jiǔ zhì xī xiān cǎo yào jiǔ	10
+桔香祛暑和胃茶	jú xiāng qū shǔ hé wèi chá	10
+抗霉菌性抗生素	kàng méi jūn xìng kàng shēng sù	10
+抗凝血酶浓缩物	kàng níng xuè méi nóng suō wù	10
+抗人胸腺球蛋白	kàng rén xiōng xiàn qiú dàn bái	10
+抗肾上腺素能药	kàng shèn shàng xiàn sù néng yào	10
+抗五步蛇毒血清	kàng wǔ bù shé dú xuè qīng	10
+抗胸腺细胞血清	kàng xiōng xiàn xì bāo xuè qīng	10
+抗血型定型试剂	kàng xuè xíng dìng xíng shì jì	10
+抗血友病球蛋白	kàng xuè yǒu bìng qiú dàn bái	10
+抗眼镜蛇毒血清	kàng yǎn jìng shé dú xuè qīng	10
+抗乙肝转移因子	kàng yǐ gān zhuǎn yí yīn zǐ	10
+抗银环蛇毒血清	kàng yín huán shé dú xuè qīng	10
+克林霉素甲硝唑	kè lín méi sù jiǎ xiāo zuò	10
+克霉素口腔药膜	kè méi sù kǒu qiāng yào mó	10
+克霉唑倍他米松	kè méi zuò bèi tā mǐ sōng	10
+克霉唑口腔药膜	kè méi zuò kǒu qiāng yào mó	10
+克霉唑外用药膜	kè méi zuò wài yòng yào mó	10
+口服大蓟止血粉	kǒu fú dà jì zhǐ xuè fěn	10
+口服双歧杆菌乳	kǒu fú shuāng qí gǎn jūn rǔ	10
+口服水解蛋白粉	kǒu fú shuǐ jiě dàn bái fěn	10
+口服四维葡萄糖	kǒu fú sì wéi pú tao táng	10
+口服五维葡萄糖	kǒu fú wǔ wéi pú tao táng	10
+口腔溃疡一次宁	kǒu qiāng kuì yáng yí cì níng	10
+狂犬病纯化疫苗	kuáng quǎn bìng chún huà yì miáo	10
+拉萨尔萘酚糊剂	lā sà ěr nài fēn hú jì	10
+老范志万应神曲	lǎo fàn zhì wàn yīng shén qǔ	10
+利巴韦林葡萄糖	lì bā wéi lín pú tao táng	10
+利多卡因薄荷脑	lì duō kǎ yīn bò he nǎo	10
+利君正清风痛宁	lì jūn zhèng qīng fēng tòng níng	10
+丽科明眼用凝胶	lì kē míng yǎn yòng níng jiāo	10
+理中丸主温中阳	lǐ zhōng wán zhǔ wēn zhōng yáng	10
+亮菌甲素葡萄糖	liàng jūn jiǎ sù pú tao táng	10
+苓桂术甘化饮剂	líng guì shù gān huà yǐn jì	10
+苓芍术附加生姜	líng sháo shù fù jiā shēng jiāng	10
+苓术甘草姜薄偕	líng shù gān cǎo jiāng báo xié	10
+苓夏陈翘菔子加	líng xià chén qiào fú zǐ jiā	10
+流脑多糖体疫苗	liú nǎo duō táng tǐ yì miáo	10
+六味防脱生发酊	liù wèi fáng tuō shēng fà dīng	10
+龙血竭胶囊肠溶	lóng xiě jié jiāo náng cháng róng	10
+罗红霉素细粒剂	luó hóng méi sù xì lì jì	10
+绿子活血化瘀茶	lǜ zǐ huó xuè huà yū chá	10
+马栗种子提取物	mǎ lì zhǒng zi tí qǔ wù	10
+马应龙八宝眼粉	mǎ yìng lóng bā bǎo yǎn fěn	10
+麻疹减毒活疫苗	má zhěn jiǎn dú huó yì miáo	10
+麦角隐亭咖啡因	mài jiǎo yǐn tíng kā fēi yīn	10
+美洛西林舒巴坦	měi luò xī lín shū bā tǎn	10
+美沙拉秦灌肠剂	měi shā lā qín guàn cháng jì	10
+灭菌凡士林纱布	miè jūn fán shì lín shā bù	10
+膜基材透气胶带	mó jī cái tòu qì jiāo dài	10
+纳米银抗菌凝胶	nà mǐ yín kàng jūn níng jiāo	10
+萘哌地尔片博帝	nài pài dì ěr piàn bó dì	10
+脑蛋白水解物针	nǎo dàn bái shuǐ jiě wù zhēn	10
+凝血酶原复合物	níng xuè méi yuán fù hé wù	10
+牛肺表面活性剂	niú fèi biǎo miàn huó xìng jì	10
+牛黄清心丸局方	niú huáng qīng xīn wán jú fāng	10
+哌拉西林舒巴坦	pài lā xī lín shū bā tǎn	10
+平安消炎喷雾胶	píng ān xiāo yán pēn wù jiāo	10
+泼尼松龙含漱水	pō ní sōng lóng hán shù shuǐ	10
+脐宝信芪腹泻贴	qí bǎo xìn qí fù xiè tiē	10
+前列地尔尿道栓	qián liè dì ěr niào dào shuān	10
+强力枇杷露炼蜜	qiáng lì pí pá lù liàn mì	10
+羟乙基淀粉血浆	qiǎng yǐ jī diàn fěn xuè jiāng	10
+亲密有间避孕套	qīn mì yǒu jiàn bì yùn tào	10
+清金止嗽西瓜霜	qīng jīn zhǐ sòu xī guā shuāng	10
+清凉鼻舒吸入剂	qīng liáng bí shū xī rù jì	10
+清咽利喉袋泡剂	qīng yàn lì hóu dài pào jì	10
+曲安奈德新霉素	qǔ ān nài dé xīn méi sù	10
+曲安奈德益康唑	qǔ ān nài dé yì kāng zuò	10
+去甲氧柔红霉素	qù jiǎ yǎng róu hóng méi sù	10
+去乙酞毛花苷丙	qù yǐ tài máo huā gān bǐng	10
+去乙酰毛花甙毒	qù yǐ xiān máo huā dài dú	10
+人白细胞干扰素	rén bái xì bāo gān rǎo sù	10
+人工牛黄甲硝唑	rén gōng niú huáng jiǎ xiāo zuò	10
+参芪鱼肝油凝胶	shēn qí yú gān yóu níng jiāo	10
+双歧杆菌活菌制	shuāng qí gǎn jūn huó jūn zhì	10
+双歧三联活菌胶	shuāng qí sān lián huó jūn jiāo	10
+外用糖皮质激素	wài yòng táng pí zhì jī sù	10
+微量元素痱子水	wēi liàng yuán sù fèi zi shuǐ	10
+伪麻美沙芬滴剂	wěi má měi shā fēn dī jì	10
+维他利匹特成人	wéi tā lì pǐ tè chéng rén	10
+温胆汤中苓半草	wēn dǎn tāng zhōng líng bàn cǎo	10
+吸附无细胞百白	xī fù wú xì bāo bǎi bái	10
+吸入糖皮质激素	xī rù táng pí zhì jī sù	10
+苋菜黄连素胶蘘	xiàn cài huáng lián sù jiāo ráng	10
+香石双解袋泡茶	xiāng shí shuāng jiě dài pào chá	10
+香石双解袋泡剂	xiāng shí shuāng jiě dài pào jì	10
+消毒弹性创可贴	xiāo dú tán xìng chuāng kě tiē	10
+硝呋太尔制霉素	xiāo fū tài ěr zhì méi sù	10
+小牛血清去蛋白	xiǎo niú xiě qīng qù dàn bái	10
+小施尔康婴幼儿	xiǎo shī ěr kāng yīng yòu ér	10
+溴米那普鲁卡因	xiù mǐ nà pǔ lǔ kǎ yīn	10
+鸦胆子油口服乳	yā dǎn zi yóu kǒu fú rǔ	10
+扬帆新肤螨灵霜	yáng fān xīn fū mǎn líng shuāng	10
+养肝益肾袋泡茶	yǎng gān yì shèn dài pào chá	10
+乙肝免疫球蛋白	yǐ gān miǎn yì qiú dàn bái	10
+胰激肽原酶肠溶	yí jī tài yuán méi cháng róng	10
+依马打正红花油	yī mǎ dǎ zhèng hóng huā yóu	10
+乙脑减毒活疫苗	yǐ nǎo jiǎn dú huó yì miáo	10
+依诺沙星葡萄糖	yī nuò shā xīng pú tao táng	10
+依托咪酯脂肪乳	yī tuō mī zhǐ zhī fáng rǔ	10
+薏苡附子败酱散	yì yǐ fù zǐ bài jiàng sàn	10
+一枝蒿伤湿祛痛	yì zhī hāo shāng shī qū tòng	10
+盈博顿克拉霉素	yíng bó dùn kè lā méi sù	10
+罂粟果提取物粉	yīng sù guǒ tí qǔ wù fěn	10
+用六君子汤加减	yòng liù jūn zǐ tāng jiā jiǎn	10
+又与葶苈丸下水	yòu yǔ tíng lì wán xià shuǐ	10
+愈酚喷托异丙嗪	yù fēn pēn tuō yì bǐng qín	10
+玉簪清咽十五味	yù zān qīng yàn shí wǔ wèi	10
+鸢都寒痹药酒料	yuān dōu hán bì yào jiǔ liào	10
+越婢加半夏汤方	yuè bì jiā bàn xià tāng fāng	10
+兆誉隆祛风止痛	zhào yù lóng qū fēng zhǐ tòng	10
+治咳川贝枇杷露	zhì ké chuān bèi pí pá lù	10
+治疗用肉毒毒素	zhì liáo yòng ròu dú dú sù	10
+治疗用生物制品	zhì liáo yòng shēng wù zhì pǐn	10
+制霉菌素制霉素	zhì méi jūn sù zhì méi sù	10
+中性胰岛素笔芯	zhōng xìng yí dǎo sù bǐ xīn	10
+注射狂犬病疫苗	zhù shè kuáng quǎn bìng yì miáo	10
+左旋门冬酰胺酶	zuǒ xuán mén dōng xiān àn méi	10
+左旋咪唑宝塔糖	zuǒ xuán mī zuò bǎo tǎ táng	10
+普贝生	xīn pǔ bèi shēng	144
 复方枳实片	fù fāng zhǐ shí piàn	10
 复方栀子膏	fù fāng zhī zi gāo	10
 复方滋补力	fù fāng zī bǔ lì	10
@@ -12374,6 +14069,164 @@ sort: by_weight
 复方青黛胶囊	fù fāng qīng dài jiāo náng	10
 复方青果颗粒	fù fāng qīng guǒ kē lì	10
 复方青蒿搽剂	fù fāng qīng hāo chá jì	10
+复方氨维	fù fāng ān wéi	50
+复方菝葜	fù fāng bá qiā	76
+复方白带	fù fāng bái dài	45
+复方白松	fù fāng bái sōng	45
+复方白芷	fù fāng bái zhǐ	4
+复方斑蝥	fù fāng bān máo	288
+复方半夏	fù fāng bàn xià	45
+复方贝母	fù fāng bèi mǔ	76
+复方鼻炎	fù fāng bí yán	45
+复方茶粉	fù fāng chá fěn	45
+复方茶酮	fù fāng chá tóng	90
+复方蟾酥	fù fāng chán sū	45
+复方虫草	fù fāng chóng cǎo	4
+复方重楼	fù fāng chóng lóu	45
+复方川贝	fù fāng chuān bèi	180
+复方川芎	fù fāng chuān xiōng	76
+复方春砂	fù fāng chūn shā	45
+复方苁蓉	fù fāng cōng róng	45
+复方大黄	fù fāng dà huáng	76N
+复方胆氨	fù fāng dǎn ān	4N
+复方胆碱	fù fāng dǎn jiǎn	4N
+复方丹参	fù fāng dān shēn	6N
+复方胆通	fù fāng dǎn tōng	99N
+复方丹桅	fù fāng dān wéi	90N
+复方丹茵	fù fāng dān yīn	90N
+复方丹栀	fù fāng dān zhī	45N
+复方丹蛭	fù fāng dān zhì	38N
+复方当归	fù fāng dāng guī	189N
+复方党参	fù fāng dǎng shēn	4N
+复方蒂达	fù fāng dì dá	90N
+复方地龙	fù fāng dì lóng	45N
+复方碘酊	fù fāng diǎn dǐng	45N
+复方碘苷	fù fāng diǎn gān	45N
+复方豆蔻	fù fāng dòu kòu	50N
+复方杜鹃	fù fāng dù juān	45N
+复方杜仲	fù fāng dù zhòng	45N
+复方阿胶	fù fāng ē jiāo	436N
+复方儿茶	fù fāng ér chá	76N
+复方风湿	fù fāng fēng shī	76N
+复方甘草	fù fāng gān cǎo	598N
+复方肝精	fù fāng gān jīng	45N
+复方感冒	fù fāng gǎn mào	436N
+复方甘油	fù fāng gān yóu	144N
+复方岗稔	fù fāng gǎng rěn	45N
+复方岗松	fù fāng gǎng sōng	45N
+复方蛤蚧	fù fāng gé jiè	4N
+复方公英	fù fāng gōng yīng	76N
+复方钩藤	fù fāng gōu téng	45N
+复方骨肽	fù fāng gǔ tài	99N
+复方蛤青	fù fāng há qīng	50N
+复方海蛇	fù fāng hǎi shé	130N
+复方合剂	fù fāng hé jì	117N
+复方猴头	fù fāng hóu tóu	45N
+复方虎杖	fù fāng hǔ zhàng	45N
+复方磺胺	fù fāng huáng àn	423N
+复方黄柏	fù fāng huáng bò	220N
+复方黄黛	fù fāng huáng dài	99N
+复方黄芪	fù fāng huáng qí	50N
+复方芦荟	fù fāng lú huì	266
+复方鹿茸	fù fāng lù róng	45
+复方木鸡	fù fāng mù jī	130
+复方硼砂	fù fāng péng shā	436
+复方枇杷	fù fāng pí pá	202
+复方平贝	fù fāng píng bèi	45
+复方平压	fù fāng píng yā	90
+复方蒲苓	fù fāng pú líng	45
+复方蒲芩	fù fāng pú qín	4
+复方葡盐	fù fāng pú yán	90
+复方牵正	fù fāng qiān zhèng	45
+复方芩兰	fù fāng qín lán	225
+复方清带	fù fāng qīng dài	130
+复方青黛	fù fāng qīng dài	38
+复方青果	fù fāng qīng guǒ	144
+复方青蒿	fù fāng qīng hāo	99
+复方青松	fù fāng qīng sōng	45
+复方拳参	fù fāng quán shēn	4
+复方乳酸	fù fāng rǔ suān	130
+复方塞隆	fù fāng sāi lóng	4
+复方黄芩	fù fāng huáng qín	117
+复方黄藤	fù fāng huáng téng	117
+复方藿香	fù fāng huò xiāng	4
+复方甲麻	fù fāng jiǎ má	50
+复方降压	fù fāng jiàng yā	400
+复方降脂	fù fāng jiàng zhī	50
+复方金凤	fù fāng jīn fèng	45
+复方金连	fù fāng jīn lián	45
+复方金蒲	fù fāng jīn pú	45
+复方桔油	fù fāng jú yóu	45
+复方精油	fù fāng jīng yóu	423
+复方肝炎	fù fāng gān yán	45
+复方斑钠	fù fāng bān nà	90
+复方雌孕	fù fāng cí yùn	50
+复方和血	fù fāng hé xuè	45
+复方黄松	fù fāng huáng sōng	99
+复方决明	fù fāng jué míng	45
+复方咖磷	fù fāng kā lín	45
+复方咳喘	fù fāng ké chuǎn	99
+复方苦参	fù fāng kǔ shēn	225
+复方奎宁	fù fāng kuí níng	76
+复方梨膏	fù fāng lí gāo	45
+复方灵芝	fù fāng líng zhī	45
+复方柳菊	fù fāng liǔ jú	45
+复方柳唑	fù fāng liǔ zuò	90
+复方芦丁	fù fāng lú dīng	194
+复方散剂	fù fāng sǎn jì	4N
+复方三七	fù fāng sān qī	45
+复方三维	fù fāng sān wéi	50
+复方桑椹	fù fāng sāng shèn	45
+复方商陆	fù fāng shāng lù	45
+复方麝香	fù fāng shè xiāng	50
+复方蛇脂	fù fāng shé zhī	153
+复方伸筋	fù fāng shēn jīn	162
+复方肾炎	fù fāng shèn yán	117
+复方石斛	fù fāng shí hú	45
+复方石苇	fù fāng shí wěi	194
+复方石韦	fù fāng shí wéi	38
+复方手参	fù fāng shǒu cān	45
+复方首乌	fù fāng shǒu wū	4
+复方树舌	fù fāng shù shé	45
+复方双花	fù fāng shuāng huā	130
+复方锁阳	fù fāng suǒ yáng	45
+复方胎盘	fù fāng tāi pán	45
+复方汤剂	fù fāng tāng jì	16N
+复方天麻	fù fāng tiān má	207
+复方天仙	fù fāng tiān xiān	45
+复方酮酸	fù fāng tóng suān	207
+复方胃宁	fù fāng wèi níng	45
+复方胃痛	fù fāng wèi tòng	50
+复方乌鸡	fù fāng wū jī	153
+复方乌鳢	fù fāng wū lǐ	45
+复方消食	fù fāng xiāo shí	4
+复方硝酸	fù fāng xiāo suān	248
+复方消痔	fù fāng xiāo zhì	4
+复方锌布	fù fāng xīn bù	270
+复方熊胆	fù fāng xióng dǎn	99
+复方溴咖	fù fāng xiù kā	45
+复方玄驹	fù fāng xuán jū	274
+复方雪莲	fù fāng xuě lián	50
+复方雪参	fù fāng xuě shēn	45
+复方血藤	fù fāng xuè téng	45
+复方牙痛	fù fāng yá tòng	4
+复方岩连	fù fāng yán lián	45
+复方羊角	fù fāng yáng jiǎo	243
+复方叶酸	fù fāng yè suān	45N
+复方益肝	fù fāng yì gān	130N
+复方胰酶	fù fāng yí méi	144N
+复方益母	fù fāng yì mǔ	356N
+复方银黄	fù fāng yín huáng	4N
+复方皂矾	fù fāng zào fán	76N
+复方枣仁	fù fāng zǎo rén	171N
+复方樟脑	fù fāng zhāng nǎo	306N
+复方珍珠	fù fāng zhēn zhū	153N
+复方制剂	fù fāng zhì jì	720N
+复方止咳	fù fāng zhǐ ké	162N
+复方栀子	fù fāng zhī zi	90N
+复方追风	fù fāng zhuī fēng	45N
+复方紫草	fù fāng zǐ cǎo	117N
+复方紫龙	fù fāng zǐ lóng	4N
 复方氢氧化铝	fù fāng qīng yǎng huà lǚ	10
 复方曲安奈德	fù fāng qǔ ān nài dé	10
 复方曲马多片	fù fāng qǔ mǎ duō piàn	10
@@ -17496,7 +19349,6 @@ sort: by_weight
 小儿风热清颗粒	xiǎo ér fēng rè qīng kē lì	10
 小儿复方贝诺酯	xiǎo ér fù fāng bèi nuò zhǐ	10
 小儿复方鸡内金	xiǎo ér fù fāng jī nèi jīn	10
-小儿复方赖氨酸	xiǎo ér fù fāng lài ān suān	10
 小儿复方四维亚	xiǎo ér fù fāng sì wéi yà	10
 小儿敷脐止泻散	xiǎo ér fū qí zhǐ xiè sàn	10
 小儿腹泻宁糖浆	xiǎo ér fù xiè níng táng jiāng	10
@@ -17545,7 +19397,6 @@ sort: by_weight
 小儿四维葡钙片	xiǎo ér sì wéi pú gài piàn	10
 小儿羧甲司坦片	xiǎo ér suō jiǎ sī tǎn piàn	10
 小儿退热口服液	xiǎo ér tuì rè kǒu fú yè	10
-小儿五维赖氨酸	xiǎo ér wǔ wéi lài ān suān	10
 小儿消积化虫散	xiǎo ér xiāo jī huà chóng sàn	10
 小儿消积驱虫散	xiǎo ér xiāo jī qū chóng sàn	10
 小儿消食健胃丸	xiǎo ér xiāo shí jiàn wèi wán	10
@@ -17553,7 +19404,6 @@ sort: by_weight
 小儿泻速停颗粒	xiǎo ér xiè sù tíng kē lì	10
 小儿泄泻停颗粒	xiǎo ér xiè xiè tíng kē lì	10
 小儿厌食口服液	xiǎo ér yàn shí kǒu fú yè	10
-小儿盐酸异丙嗪	xiǎo ér yán suān yì bǐng qín	10
 小儿珍珠镇惊丸	xiǎo ér zhēn zhū zhèn jīng wán	10
 小儿正肠止泻片	xiǎo ér zhèng cháng zhǐ xiè piàn	10
 小儿支气管哮喘	xiǎo ér zhī qì guǎn xiào chuǎn	10
