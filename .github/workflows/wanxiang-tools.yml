@@ -374,7 +374,7 @@ jobs:
       - name: 🐘 设置官方 Gradle 环境
         uses: gradle/actions/setup-gradle@v6
         with:
-          gradle-version: '8.5'
+          gradle-version: '8.9'
 
       - name: 🐍 准备 Android Python 模块
         run: |
@@ -382,10 +382,24 @@ jobs:
           rm -rf wanxiang-updater/app/src/main/python/pypinyin
           cp -a pypinyin wanxiang-updater/app/src/main/python/
 
+          # Android 端复用桌面高级设置的 YAML 引擎和元数据；不复制 PySide6 UI。
+          rm -rf wanxiang-updater/app/src/main/python/advanced_settings
+          mkdir -p wanxiang-updater/app/src/main/python/advanced_settings
+          cp advanced_settings/core.py wanxiang-updater/app/src/main/python/advanced_settings/
+          cp advanced_settings/metadata.py wanxiang-updater/app/src/main/python/advanced_settings/
+          cat > wanxiang-updater/app/src/main/python/advanced_settings/__init__.py <<'PY'
+          from .core import RimeYamlEngine, RimeYamlError, is_managed_config_yaml, is_managed_source_yaml
+          from .metadata import FILE_INDEX_META, SCHEMA_META_CONFIG, sort_algebra_patch_items
+          PY
+
           echo "=== Android Python source ==="
           find wanxiang-updater/app/src/main/python -maxdepth 2 -type f | sort | head -100
 
           test -f wanxiang-updater/app/src/main/python/pinyin_bridge.py
+          test -f wanxiang-updater/app/src/main/python/mobile_tools_bridge.py
+          test -f wanxiang-updater/app/src/main/python/advanced_settings_mobile.py
+          test -f wanxiang-updater/app/src/main/python/advanced_settings/core.py
+          test -f wanxiang-updater/app/src/main/python/advanced_settings/metadata.py
           test -f wanxiang-updater/app/src/main/python/pypinyin/__init__.py
 
       - name: 🔐 解码签名文件
