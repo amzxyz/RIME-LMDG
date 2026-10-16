@@ -76,6 +76,9 @@ def _nodes_for(file_name: str):
                 "type": str(node.get("type", "str")),
                 "baseline": str(node.get("baseline", "effective")),
                 "options": _json_value(node.get("options", node.get("choices", []))),
+                "template": _json_value(node.get("template")),
+                "presetKeys": _json_value(node.get("preset_keys")),
+                "actionButton": str(node.get("action_btn", "")),
             })
     return result
 
@@ -101,18 +104,24 @@ def _schema_choices(root: Path, current_value: Any):
     return choices
 
 
-def _scheme_choices(root: Path, usage_path: str, current_name: str):
+def _scheme_choices(root: Path, usage_path: str, current_name: str, docs=None, engine=None):
+    """Build scheme choices using a shared document cache.
+
+    Common settings used to parse every schema once per field. Reusing these
+    documents cuts the startup work from dozens of full Rime compilations to
+    one compilation per existing schema.
+    """
+    docs = docs if docs is not None else {}
+    engine = engine or RimeYamlEngine()
     choices = []
     for sid, file_name, _ in _MAIN_SCHEMES:
         if not (root / file_name).is_file():
             continue
-        label = sid.title()
-        try:
-            _, doc = _load(file_name, root)
-            label = str(RimeYamlEngine().get_path(doc.effective, "schema/name", sid.title()))
-            active = str(RimeYamlEngine().get_path(doc.effective, usage_path, "")) == str(current_name)
-        except Exception:
-            active = False
+        if file_name not in docs:
+            docs[file_name] = _load(file_name, root)[1]
+        doc = docs[file_name]
+        label = str(engine.get_path(doc.effective, "schema/name", sid.title()))
+        active = str(engine.get_path(doc.effective, usage_path, "")) == str(current_name)
         choices.append({"id": sid, "label": label, "checked": active})
     return choices
 
@@ -163,10 +172,39 @@ def _load(file_name: str, root: Path):
     return engine, doc
 
 
+def _load_light(file_name: str, root: Path):
+    """Load only raw YAML plus literal custom patch for common settings.
+
+    The full Rime compiler is needed by ordinary schema pages, but common
+    settings read direct paths and do not need include/reference expansion.
+    Avoiding that compiler is what keeps the mobile startup responsive.
+    """
+    schema_path = _source_path(root, file_name)
+    custom_path = _custom_path(root, file_name)
+    engine = RimeYamlEngine()
+    schema = engine.load_file(str(schema_path), default={})
+    custom = engine.load_file(str(custom_path), default={}) if custom_path.exists() else {}
+    patch = custom.get("patch", {}) if isinstance(custom, Mapping) else {}
+    patch = patch if isinstance(patch, Mapping) else {}
+    source_effective = engine.apply_patch(schema, patch)
+    from types import SimpleNamespace
+    return SimpleNamespace(
+        file_name=file_name,
+        schema_path=str(schema_path),
+        custom_path=str(custom_path),
+        schema=schema,
+        patch=patch,
+        source_effective=source_effective,
+        effective=source_effective,
+    )
+
+
 def _show_value(value: Any, node_type: str) -> str:
     if node_type in ("schema_checkboxes", "scheme_checkboxes"):
         return ""
     if isinstance(value, list):
+        if any(isinstance(x, (dict, list)) for x in value):
+            return json.dumps(_json_value(value), ensure_ascii=False, indent=2)
         return "\n".join(str(x) for x in value)
     if isinstance(value, dict):
         return json.dumps(_json_value(value), ensure_ascii=False, indent=2)
@@ -244,7 +282,7 @@ def _coerce(node: Mapping[str, Any], value: Any, original: Any):
         return normalized
     if node_type == "list_text":
         return _parse_list_text(value, original, str(node.get("path", "")).split("/")[-1])
-    if node_type in ("dynamic_list", "algebra_patch", "dynamic_block_list"):
+    if node_type in ("dynamic_list", "algebra_patch", "dynamic_block_list", "reverse_algebra", "english_algebra", "mixed_algebra"):
         if isinstance(value, list): return value
         text = str(value or "").strip()
         if text.startswith("["):
@@ -345,11 +383,17 @@ def _primary_file(root: Path):
 def load_common_settings(root_path: str) -> str:
     root = Path(root_path).expanduser().resolve()
     engine = RimeYamlEngine()
-    primary = _primary_file(root)
+    docs = {}
+    def get_doc(file_name):
+        if not (root / file_name).is_file(): return None
+        if file_name not in docs:
+            docs[file_name] = _load_light(file_name, root)
+        return docs[file_name]
     def get(file_name, path, default=None):
-        if not (root / file_name).is_file(): return default
-        _, doc = _load(file_name, root)
-        return engine.get_path(doc.effective, path, default)
+        doc = get_doc(file_name)
+        return engine.get_path(doc.effective, path, default) if doc is not None else default
+    # Determine the primary scheme from the already cached default document.
+    primary = _primary_file(root)
     schema_value = get("default.yaml", "schema_list", [])
     default_bindings = get("default.yaml", "key_binder/bindings", [])
     primary_bindings = get(primary, "key_binder/bindings", [])
@@ -364,10 +408,10 @@ def load_common_settings(root_path: str) -> str:
         {"path":"cand3", "title":"三选快捷键", "desc":"发送第 3 个候选的按键；留空表示不额外绑定。", "type":"str", "value":cand3},
         {"path":"translator/enable_user_dict", "title":"启用自动调频", "desc":"同步 Base / Lite / Pro 主方案的用户词频记忆。", "type":"bool", "value":get(primary, "translator/enable_user_dict", True)},
         {"path":"translator/dictionary", "title":"当前主方案词库", "desc":"主方案使用的 dictionary 名称，不填写扩展名。", "type":"str", "value":get(primary, "translator/dictionary", "wanxiang")},
-        {"path":"phrase_dict", "title":"自定义短语词库", "desc":"生成端词库名及主方案使用端关联。", "type":"str", "value":phrase_name, "choices":_scheme_choices(root, "custom_phrase/dictionary", phrase_name)},
-        {"path":"phrase_schemes", "title":"自定义短语关联方案", "desc":"勾选后同步写入对应主方案。", "type":"scheme_checkboxes", "value":"", "choices":_scheme_choices(root, "custom_phrase/dictionary", phrase_name)},
-        {"path":"abbrev_dict", "title":"简码词库", "desc":"生成端词库名及主方案使用端关联。", "type":"str", "value":abbrev_name, "choices":_scheme_choices(root, "abbrev_phrase/dictionary", abbrev_name)},
-        {"path":"abbrev_schemes", "title":"简码关联方案", "desc":"勾选后同步写入对应主方案。", "type":"scheme_checkboxes", "value":"", "choices":_scheme_choices(root, "abbrev_phrase/dictionary", abbrev_name)},
+        {"path":"phrase_dict", "title":"自定义短语词库", "desc":"生成端词库名及主方案使用端关联。", "type":"str", "value":phrase_name, "choices":_scheme_choices(root, "custom_phrase/dictionary", phrase_name, docs, engine)},
+        {"path":"phrase_schemes", "title":"自定义短语关联方案", "desc":"勾选后同步写入对应主方案。", "type":"scheme_checkboxes", "value":"", "choices":_scheme_choices(root, "custom_phrase/dictionary", phrase_name, docs, engine)},
+        {"path":"abbrev_dict", "title":"简码词库", "desc":"生成端词库名及主方案使用端关联。", "type":"str", "value":abbrev_name, "choices":_scheme_choices(root, "abbrev_phrase/dictionary", abbrev_name, docs, engine)},
+        {"path":"abbrev_schemes", "title":"简码关联方案", "desc":"勾选后同步写入对应主方案。", "type":"scheme_checkboxes", "value":"", "choices":_scheme_choices(root, "abbrev_phrase/dictionary", abbrev_name, docs, engine)},
         {"path":"wanxiang_lookup/key", "title":"反查快捷键", "desc":"同步反查 key、prefix、recognizer 正则和 alphabet。", "type":"str", "value":get(primary, "wanxiang_lookup/key", "`")},
         {"path":"super_tips/db_name", "title":"超级提示数据库", "desc":"超级提示数据文件路径。", "type":"str", "value":get(primary, "super_tips/db_name", "lua/tips")},
         {"path":"super_tips/tips_key", "title":"超级提示上屏按键", "desc":"默认使用 comma。", "type":"str", "value":get(primary, "super_tips/tips_key", "comma")},
@@ -556,3 +600,21 @@ def get_common_value(root: Path, file_name: str, path: str, default: Any):
         return RimeYamlEngine().get_path(doc.effective, path, default)
     except Exception:
         return default
+
+
+def import_switches(root_path: str) -> str:
+    root = Path(root_path).expanduser().resolve()
+    path = root / "wanxiang.schema.yaml"
+    if not path.is_file():
+        raise FileNotFoundError("未找到 wanxiang.schema.yaml")
+    data = _SAFE_YAML.load(path.read_text(encoding="utf-8")) or {}
+    switches = data.get("switches", []) if isinstance(data, Mapping) else []
+    result = []
+    for item in switches if isinstance(switches, list) else []:
+        if not isinstance(item, Mapping):
+            continue
+        if "name" in item and "reset" not in item:
+            result.append(str(item["name"]))
+        elif isinstance(item.get("options"), list) and len(item["options"]) > 1:
+            result.extend(str(x) for x in item["options"][1:])
+    return json.dumps({"value": "\n".join(result), "count": len(result)}, ensure_ascii=False)

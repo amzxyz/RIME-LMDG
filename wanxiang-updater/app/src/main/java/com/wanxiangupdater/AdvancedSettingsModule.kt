@@ -40,7 +40,10 @@ private data class AdvancedField(
     val type: String,
     val value: String,
     val options: List<String> = emptyList(),
-    val choices: List<AdvancedChoice> = emptyList()
+    val choices: List<AdvancedChoice> = emptyList(),
+    val actionButton: String = "",
+    val templateJson: String = "",
+    val presetKeysJson: String = ""
 )
 
 private object AdvancedPythonBridge {
@@ -76,7 +79,7 @@ private object AdvancedPythonBridge {
                     AdvancedChoice(c.optString("id"), c.optString("label"), c.optBoolean("checked", false))
                 }
             } ?: emptyList()
-            AdvancedField(row.optString("path"), row.optString("title"), row.optString("desc"), row.optString("type"), row.optString("value"), options, choices)
+            AdvancedField(row.optString("path"), row.optString("title"), row.optString("desc"), row.optString("type"), row.optString("value"), options, choices, row.optString("actionButton"), row.optString("template"), row.optString("presetKeys"))
         }
     }
     fun save(context: Context, root: File, file: String, section: String, direct: Boolean, values: Map<String, String>): String {
@@ -96,6 +99,10 @@ private object AdvancedPythonBridge {
         return python(context).getModule("advanced_settings_mobile")
             .callAttr("save_common_settings", root.absolutePath, direct, obj.toString()).toString()
     }
+    fun importSwitches(context: Context, root: File): String {
+        return python(context).getModule("advanced_settings_mobile")
+            .callAttr("import_switches", root.absolutePath).toString()
+    }
     private fun parseFields(text: String): List<AdvancedField> {
         val fields = JSONArray(JSONObject(text).optString("fields", "[]"))
         return (0 until fields.length()).map { i ->
@@ -107,7 +114,7 @@ private object AdvancedPythonBridge {
                     AdvancedChoice(c.optString("id"), c.optString("label"), c.optBoolean("checked", false))
                 }
             } ?: emptyList()
-            AdvancedField(row.optString("path"), row.optString("title"), row.optString("desc"), row.optString("type"), row.optString("value"), options, choices)
+            AdvancedField(row.optString("path"), row.optString("title"), row.optString("desc"), row.optString("type"), row.optString("value"), options, choices, row.optString("actionButton"), row.optString("template"), row.optString("presetKeys"))
         }
     }
 }
@@ -265,27 +272,39 @@ fun AdvancedSettingsScreen(
         scope.launch { drawerState.close() }
     }
 
+    fun importSwitches(field: AdvancedField) {
+        scope.launch {
+            runCatching {
+                withContext(Dispatchers.IO) { stageRoot().first.let { AdvancedPythonBridge.importSwitches(context, it) } }
+            }.onSuccess { result ->
+                val json = JSONObject(result)
+                values = values + (field.path to json.optString("value"))
+                message = "已提取 ${json.optInt("count")} 个开关，请保存"
+            }.onFailure { message = "❌ 提取失败：${it.message}" }
+        }
+    }
+
     fun scan() {
         scope.launch {
             busy = true
             runCatching {
                 withContext(Dispatchers.IO) {
                     val stage = stageRoot().first
-                    AdvancedPythonBridge.scan(context, stage) to AdvancedPythonBridge.common(context, stage)
+                    AdvancedPythonBridge.scan(context, stage)
                 }
-            }.onSuccess { result ->
-                val loaded = result.first
+            }.onSuccess { loaded ->
                 files = loaded
-                commonFields = result.second
                 showCommon = true
-                fields = commonFields
-                values = initialValues(commonFields)
+                fields = emptyList()
+                values = emptyMap()
                 val categories = buildAdvancedCategories(loaded)
                 val first = categories.values.flatten().firstOrNull()
                 selectedSection = first?.key ?: ""
                 selectedFile = first?.files?.firstOrNull()
                 expandedGroups = first?.let { setOf(it.group) } ?: emptySet()
-                message = "已加载 ${loaded.size} 个配置文件，${categories.values.sumOf { it.size }} 个设置分类"
+                message = "已加载 ${loaded.size} 个配置文件，正在读取常用设置…"
+                // 目录树先显示，综合设置单独加载，避免一个慢页面阻塞左侧目录。
+                loadCommonForm()
             }.onFailure {
                 files = emptyList()
                 selectedFile = null
@@ -298,7 +317,7 @@ fun AdvancedSettingsScreen(
 
     LaunchedEffect(targetPath) { if (targetPath.isNotBlank()) scan() }
     LaunchedEffect(showCommon, selectedFile?.name, selectedSection, directMode) {
-        if (showCommon) loadCommonForm() else selectedFile?.let { loadForm(it, selectedSection) }
+        if (!showCommon) selectedFile?.let { loadForm(it, selectedSection) }
     }
 
     val categoriesByGroup = buildAdvancedCategories(files)
@@ -497,17 +516,24 @@ fun AdvancedSettingsScreen(
                                 }
                             }
                         } else {
-                            OutlinedTextField(
-                                value = current,
-                                onValueChange = { values = values + (field.path to it) },
-                                label = { Text(field.title) },
-                                supportingText = { if (field.desc.isNotBlank()) Text(field.desc) },
-                                modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
-                                minLines = if (field.type in listOf("multiline_str", "list_text", "dynamic_list", "algebra_patch", "raw_yaml", "dynamic_block_list", "dynamic_kv_list")) 3 else 1,
-                                singleLine = field.type !in listOf("multiline_str", "list_text", "dynamic_list", "algebra_patch", "raw_yaml", "dynamic_block_list", "dynamic_kv_list"),
-                                keyboardOptions = if (field.type in listOf("int", "float", "number")) KeyboardOptions(keyboardType = KeyboardType.Number) else KeyboardOptions.Default,
-                                textStyle = LocalTextStyle.current.copy(fontSize = 13.sp)
-                            )
+                            Column(Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
+                                Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.Top) {
+                                    OutlinedTextField(
+                                        value = current,
+                                        onValueChange = { values = values + (field.path to it) },
+                                        label = { Text(field.title) },
+                                        supportingText = { if (field.desc.isNotBlank()) Text(field.desc) },
+                                        modifier = Modifier.weight(1f),
+                                        minLines = if (field.type in listOf("multiline_str", "list_text", "dynamic_list", "algebra_patch", "reverse_algebra", "english_algebra", "mixed_algebra", "dynamic_map", "raw_yaml", "dynamic_block_list", "dynamic_kv_list")) 3 else 1,
+                                        singleLine = field.type !in listOf("multiline_str", "list_text", "dynamic_list", "algebra_patch", "reverse_algebra", "english_algebra", "mixed_algebra", "dynamic_map", "raw_yaml", "dynamic_block_list", "dynamic_kv_list"),
+                                        keyboardOptions = if (field.type in listOf("int", "float", "number")) KeyboardOptions(keyboardType = KeyboardType.Number) else KeyboardOptions.Default,
+                                        textStyle = LocalTextStyle.current.copy(fontSize = 13.sp)
+                                    )
+                                    if (field.actionButton.isNotBlank()) {
+                                        TextButton(onClick = { importSwitches(field) }, modifier = Modifier.padding(top = 6.dp)) { Text(field.actionButton, fontSize = 11.sp) }
+                                    }
+                                }
+                            }
                         }
                     }
                     Button(

@@ -831,30 +831,32 @@ fun WanxiangDownloaderApp() {
     }
 
     Column(modifier = Modifier.fillMaxSize()) {
-        TabRow(
+        ScrollableTabRow(
             selectedTabIndex = selectedTabIndex,
+            edgePadding = 8.dp,
             containerColor = MorandiLightGreen,
-            contentColor = MorandiDarkGreen
+            contentColor = MorandiDarkGreen,
+            divider = {}
         ) {
             Tab(
                 selected = selectedTabIndex == 0,
                 onClick = { selectedTabIndex = 0 },
-                text = { Text("万象更新", fontWeight = FontWeight.Bold) }
+                text = { Text("万象更新", fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false) }
             )
             Tab(
                 selected = selectedTabIndex == 1,
                 onClick = { selectedTabIndex = 1 },
-                text = { Text("自定义模式", fontWeight = FontWeight.Bold) }
+                text = { Text("自定义模式", fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false) }
             )
             Tab(
                 selected = selectedTabIndex == 2,
                 onClick = { selectedTabIndex = 2 },
-                text = { Text("拼音工具", fontWeight = FontWeight.Bold) }
+                text = { Text("拼音工具", fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false) }
             )
             Tab(
                 selected = selectedTabIndex == 3,
                 onClick = { selectedTabIndex = 3 },
-                text = { Text("高级设置", fontWeight = FontWeight.Bold) }
+                text = { Text("高级设置", fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false) }
             )
         }
 
@@ -1706,7 +1708,7 @@ fun CustomModeTab(
                                 verticalAlignment = Alignment.Top
                             ) {
                                 Column(modifier = Modifier.weight(0.34f)) {
-                                    Text("任务别名", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 4.dp))
+                                    Text("任务别名", fontSize = 10.sp, color = Color.Gray, maxLines = 1, softWrap = false, overflow = TextOverflow.Ellipsis, modifier = Modifier.padding(bottom = 4.dp))
                                     androidx.compose.foundation.text.BasicTextField(
                                         value = task.name,
                                         onValueChange = { newName ->
@@ -1728,7 +1730,7 @@ fun CustomModeTab(
                                     )
                                 }
                                 Column(modifier = Modifier.weight(0.66f)) {
-                                    Text("直链 URL 或绝对路径", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 4.dp))
+                                    Text("直链 URL 或绝对路径", fontSize = 10.sp, color = Color.Gray, maxLines = 1, softWrap = false, overflow = TextOverflow.Ellipsis, modifier = Modifier.padding(bottom = 4.dp))
                                     androidx.compose.foundation.text.BasicTextField(
                                         value = task.url,
                                         onValueChange = { newUrl ->
