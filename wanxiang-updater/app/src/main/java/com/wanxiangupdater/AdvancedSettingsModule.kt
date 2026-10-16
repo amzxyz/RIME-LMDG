@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Environment
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -16,6 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.documentfile.provider.DocumentFile
@@ -30,7 +32,16 @@ import java.io.File
 import java.util.Locale
 
 private data class AdvancedFile(val group: String, val name: String, val label: String, val sections: List<Pair<String, String>>)
-private data class AdvancedField(val path: String, val title: String, val desc: String, val type: String, val value: String, val options: List<String>)
+private data class AdvancedChoice(val id: String, val label: String, val checked: Boolean)
+private data class AdvancedField(
+    val path: String,
+    val title: String,
+    val desc: String,
+    val type: String,
+    val value: String,
+    val options: List<String> = emptyList(),
+    val choices: List<AdvancedChoice> = emptyList()
+)
 
 private object AdvancedPythonBridge {
     private val lock = Any()
@@ -59,7 +70,13 @@ private object AdvancedPythonBridge {
         return (0 until fields.length()).map { i ->
             val row = fields.getJSONObject(i)
             val options = row.optJSONArray("options")?.let { a -> (0 until a.length()).map { j -> a.optString(j) } } ?: emptyList()
-            AdvancedField(row.optString("path"), row.optString("title"), row.optString("desc"), row.optString("type"), row.optString("value"), options)
+            val choices = row.optJSONArray("choices")?.let { a ->
+                (0 until a.length()).map { j ->
+                    val c = a.getJSONObject(j)
+                    AdvancedChoice(c.optString("id"), c.optString("label"), c.optBoolean("checked", false))
+                }
+            } ?: emptyList()
+            AdvancedField(row.optString("path"), row.optString("title"), row.optString("desc"), row.optString("type"), row.optString("value"), options, choices)
         }
     }
     fun save(context: Context, root: File, file: String, section: String, direct: Boolean, values: Map<String, String>): String {
@@ -67,6 +84,31 @@ private object AdvancedPythonBridge {
         values.forEach { (k, v) -> obj.put(k, v) }
         return python(context).getModule("advanced_settings_mobile")
             .callAttr("save_form", root.absolutePath, file, section, direct, obj.toString()).toString()
+    }
+    fun common(context: Context, root: File): List<AdvancedField> {
+        val text = python(context).getModule("advanced_settings_mobile")
+            .callAttr("load_common_settings", root.absolutePath).toString()
+        return parseFields(text)
+    }
+    fun saveCommon(context: Context, root: File, direct: Boolean, values: Map<String, String>): String {
+        val obj = JSONObject()
+        values.forEach { (k, v) -> obj.put(k, v) }
+        return python(context).getModule("advanced_settings_mobile")
+            .callAttr("save_common_settings", root.absolutePath, direct, obj.toString()).toString()
+    }
+    private fun parseFields(text: String): List<AdvancedField> {
+        val fields = JSONArray(JSONObject(text).optString("fields", "[]"))
+        return (0 until fields.length()).map { i ->
+            val row = fields.getJSONObject(i)
+            val options = row.optJSONArray("options")?.let { a -> (0 until a.length()).map { j -> a.optString(j) } } ?: emptyList()
+            val choices = row.optJSONArray("choices")?.let { a ->
+                (0 until a.length()).map { j ->
+                    val c = a.getJSONObject(j)
+                    AdvancedChoice(c.optString("id"), c.optString("label"), c.optBoolean("checked", false))
+                }
+            } ?: emptyList()
+            AdvancedField(row.optString("path"), row.optString("title"), row.optString("desc"), row.optString("type"), row.optString("value"), options, choices)
+        }
     }
 }
 
@@ -148,7 +190,9 @@ fun AdvancedSettingsScreen(
     var selectedFile by remember { mutableStateOf<AdvancedFile?>(null) }
     var selectedSection by remember { mutableStateOf("") }
     var fields by remember { mutableStateOf<List<AdvancedField>>(emptyList()) }
+    var commonFields by remember { mutableStateOf<List<AdvancedField>>(emptyList()) }
     var values by remember { mutableStateOf<Map<String, String>>(emptyMap()) }
+    var showCommon by remember { mutableStateOf(true) }
     var directMode by remember { mutableStateOf(false) }
     var message by remember { mutableStateOf("请选择高级设置目录") }
     var busy by remember { mutableStateOf(false) }
@@ -162,6 +206,31 @@ fun AdvancedSettingsScreen(
         return stage to saf
     }
 
+    fun initialValues(items: List<AdvancedField>): Map<String, String> = items.associate { field ->
+        field.path to if (field.type in listOf("schema_checkboxes", "scheme_checkboxes")) {
+            JSONArray().apply { field.choices.filter { it.checked }.forEach { put(it.id) } }.toString()
+        } else field.value
+    }
+
+    fun loadCommonForm() {
+        scope.launch {
+            busy = true
+            runCatching {
+                withContext(Dispatchers.IO) { stageRoot().first.let { AdvancedPythonBridge.common(context, it) } }
+            }.onSuccess { loaded ->
+                commonFields = loaded
+                fields = loaded
+                values = initialValues(loaded)
+                message = "常用综合设置 · ${loaded.size} 个设置项"
+            }.onFailure {
+                commonFields = emptyList()
+                fields = emptyList()
+                message = "❌ 常用设置读取失败：${it.message}"
+            }
+            busy = false
+        }
+    }
+
     fun loadForm(file: AdvancedFile, section: String) {
         scope.launch {
             busy = true
@@ -171,7 +240,7 @@ fun AdvancedSettingsScreen(
                 }
             }.onSuccess { loaded ->
                 fields = loaded
-                values = loaded.associate { f -> f.path to f.value }
+                values = initialValues(loaded)
                 message = "${file.label} · ${loaded.size} 个设置项"
             }.onFailure {
                 fields = emptyList()
@@ -181,7 +250,15 @@ fun AdvancedSettingsScreen(
         }
     }
 
+    fun selectCommon() {
+        showCommon = true
+        fields = commonFields
+        values = initialValues(commonFields)
+        scope.launch { drawerState.close() }
+    }
+
     fun selectCategory(category: AdvancedCategory) {
+        showCommon = false
         selectedSection = category.key
         selectedFile = category.files.firstOrNull { it.name == selectedFile?.name } ?: category.files.firstOrNull()
         expandedGroups = expandedGroups + category.group
@@ -192,9 +269,17 @@ fun AdvancedSettingsScreen(
         scope.launch {
             busy = true
             runCatching {
-                withContext(Dispatchers.IO) { stageRoot().first.let { AdvancedPythonBridge.scan(context, it) } }
-            }.onSuccess { loaded ->
+                withContext(Dispatchers.IO) {
+                    val stage = stageRoot().first
+                    AdvancedPythonBridge.scan(context, stage) to AdvancedPythonBridge.common(context, stage)
+                }
+            }.onSuccess { result ->
+                val loaded = result.first
                 files = loaded
+                commonFields = result.second
+                showCommon = true
+                fields = commonFields
+                values = initialValues(commonFields)
                 val categories = buildAdvancedCategories(loaded)
                 val first = categories.values.flatten().firstOrNull()
                 selectedSection = first?.key ?: ""
@@ -212,14 +297,15 @@ fun AdvancedSettingsScreen(
     }
 
     LaunchedEffect(targetPath) { if (targetPath.isNotBlank()) scan() }
-    LaunchedEffect(selectedFile?.name, selectedSection, directMode) {
-        selectedFile?.let { loadForm(it, selectedSection) }
+    LaunchedEffect(showCommon, selectedFile?.name, selectedSection, directMode) {
+        if (showCommon) loadCommonForm() else selectedFile?.let { loadForm(it, selectedSection) }
     }
 
     val categoriesByGroup = buildAdvancedCategories(files)
-    val selectedCategory = categoriesByGroup.values.flatten().firstOrNull {
+    val selectedCategory = if (showCommon) null else categoriesByGroup.values.flatten().firstOrNull {
         it.key == selectedSection && it.files.any { file -> file.name == selectedFile?.name }
     }
+    val editorFields = if (showCommon) commonFields else fields
 
     ModalNavigationDrawer(
         drawerState = drawerState,
@@ -243,6 +329,18 @@ fun AdvancedSettingsScreen(
                     }
                     Divider(color = MorandiLightGreen)
                     Column(Modifier.fillMaxWidth().verticalScroll(rememberScrollState()).padding(vertical = 8.dp)) {
+                        TextButton(
+                            onClick = { selectCommon() },
+                            modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp),
+                            contentPadding = PaddingValues(horizontal = 10.dp, vertical = 7.dp)
+                        ) {
+                            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                                Text(if (showCommon) "●" else "○", color = if (showCommon) MorandiGreen else Color.LightGray, modifier = Modifier.padding(end = 8.dp))
+                                Text("🌟 常用综合设置", modifier = Modifier.weight(1f), fontSize = 14.sp, fontWeight = FontWeight.Bold, color = if (showCommon) MorandiDarkGreen else Color.DarkGray)
+                                Text("跨文件", fontSize = 10.sp, color = Color.Gray)
+                            }
+                        }
+                        Divider(color = MorandiLightGreen, modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp))
                         categoriesByGroup.forEach { (group, categories) ->
                             val groupOpen = group in expandedGroups
                             TextButton(
@@ -329,7 +427,7 @@ fun AdvancedSettingsScreen(
                 }
             }
 
-            if (selectedCategory != null && selectedCategory.files.size > 1) {
+            if (!showCommon && selectedCategory != null && selectedCategory.files.size > 1) {
                 ScrollableTabRow(
                     selectedTabIndex = selectedCategory.files.indexOfFirst { it.name == selectedFile?.name }.coerceAtLeast(0),
                     edgePadding = 12.dp,
@@ -346,18 +444,46 @@ fun AdvancedSettingsScreen(
                 }
             }
 
-            if (selectedCategory == null || selectedFile == null) {
+            if (!showCommon && (selectedCategory == null || selectedFile == null)) {
                 Column(Modifier.fillMaxSize().padding(28.dp), verticalArrangement = Arrangement.Center) {
                     Text("请点击左上角 ☰，从配置目录中选择设置分类", color = Color.Gray)
                 }
             } else {
                 Column(Modifier.weight(1f).verticalScroll(rememberScrollState()).padding(horizontal = 12.dp)) {
-                    Text(selectedCategory.title, fontSize = 18.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen, modifier = Modifier.padding(vertical = 6.dp))
-                    Text(selectedFile!!.label, fontSize = 11.sp, color = Color.Gray)
-                    if (fields.isEmpty() && !busy) Text("该分类没有可编辑字段", color = Color.Gray, modifier = Modifier.padding(top = 10.dp))
-                    fields.forEach { field ->
+                    Text(if (showCommon) "🌟 常用综合设置" else selectedCategory!!.title, fontSize = 18.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen, modifier = Modifier.padding(vertical = 6.dp))
+                    Text(if (showCommon) "候选数、自动调频、启用方案、词库、反查和超级提示统一管理" else selectedFile!!.label, fontSize = 11.sp, color = Color.Gray)
+                    if (editorFields.isEmpty() && !busy) Text("该分类没有可编辑字段", color = Color.Gray, modifier = Modifier.padding(top = 10.dp))
+                    editorFields.forEach { field ->
                         val current = values[field.path] ?: ""
-                        if (field.type == "bool") {
+                        if (field.type in listOf("schema_checkboxes", "scheme_checkboxes")) {
+                            val selectedIds = runCatching {
+                                val array = JSONArray(current)
+                                (0 until array.length()).map { array.optString(it) }.toSet()
+                            }.getOrDefault(emptySet())
+                            Column(Modifier.fillMaxWidth().padding(vertical = 6.dp)) {
+                                Text(field.title, fontWeight = FontWeight.Bold)
+                                if (field.desc.isNotBlank()) Text(field.desc, fontSize = 11.sp, color = Color.Gray)
+                                field.choices.forEach { choice ->
+                                    Row(Modifier.fillMaxWidth().padding(top = 3.dp), verticalAlignment = Alignment.CenterVertically) {
+                                        Checkbox(
+                                            checked = choice.id in selectedIds,
+                                            onCheckedChange = { checked ->
+                                                if (!checked && selectedIds.size <= 1) {
+                                                    message = "至少需要保留一个启用方案"
+                                                } else {
+                                                    val next = selectedIds.toMutableSet().apply { if (checked) add(choice.id) else remove(choice.id) }
+                                                    values = values + (field.path to JSONArray().apply { next.forEach { put(it) } }.toString())
+                                                }
+                                            }
+                                        )
+                                        Column(Modifier.weight(1f)) {
+                                            Text(choice.label, fontWeight = FontWeight.Medium)
+                                            Text(choice.id, fontSize = 10.sp, color = Color.Gray)
+                                        }
+                                    }
+                                }
+                            }
+                        } else if (field.type == "bool") {
                             Row(Modifier.fillMaxWidth().padding(vertical = 5.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
                                 Column(Modifier.weight(1f)) { Text(field.title, fontWeight = FontWeight.Bold); if (field.desc.isNotBlank()) Text(field.desc, fontSize = 11.sp, color = Color.Gray) }
                                 Switch(checked = current.equals("true", true), onCheckedChange = { v -> values = values + (field.path to v.toString()) })
@@ -379,26 +505,33 @@ fun AdvancedSettingsScreen(
                                 modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
                                 minLines = if (field.type in listOf("multiline_str", "list_text", "dynamic_list", "algebra_patch", "raw_yaml", "dynamic_block_list", "dynamic_kv_list")) 3 else 1,
                                 singleLine = field.type !in listOf("multiline_str", "list_text", "dynamic_list", "algebra_patch", "raw_yaml", "dynamic_block_list", "dynamic_kv_list"),
+                                keyboardOptions = if (field.type in listOf("int", "float", "number")) KeyboardOptions(keyboardType = KeyboardType.Number) else KeyboardOptions.Default,
                                 textStyle = LocalTextStyle.current.copy(fontSize = 13.sp)
                             )
                         }
                     }
                     Button(
                         onClick = {
-                            val file = selectedFile ?: return@Button
+                            if (!showCommon && selectedFile == null) return@Button
                             scope.launch {
                                 busy = true
                                 message = "正在校验并保存…"
                                 runCatching {
                                     withContext(Dispatchers.IO) {
                                         val (stage, saf) = stageRoot()
-                                        val result = AdvancedPythonBridge.save(context, stage, file.name, selectedSection, directMode, values)
+                                        val result = if (showCommon) {
+                                            AdvancedPythonBridge.saveCommon(context, stage, directMode, values)
+                                        } else {
+                                            val file = selectedFile ?: error("未选择配置文件")
+                                            AdvancedPythonBridge.save(context, stage, file.name, selectedSection, directMode, values)
+                                        }
                                         if (saf != null) stage.listFiles().filter { it.isFile && it.name.endsWith(".yaml", true) }.forEach { copyStageFileToSaf(context, saf, it) }
                                         result
                                     }
                                 }.onSuccess { result ->
                                     val json = JSONObject(result)
                                     message = "✅ ${json.optString("message")}：${JSONArray(json.optString("changed", "[]")).join(", ")}"
+                                    if (showCommon) loadCommonForm()
                                 }.onFailure { message = "❌ 保存失败：${it.message}" }
                                 busy = false
                             }
