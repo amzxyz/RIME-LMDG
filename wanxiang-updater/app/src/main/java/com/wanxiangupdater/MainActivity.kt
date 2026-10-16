@@ -94,12 +94,36 @@ private const val WANXIANG_DEBUG_TAG = "WanxiangUpdater"
 private const val DOWNLOAD_SOURCE_CNB = "CNB"
 private const val DOWNLOAD_SOURCE_GITHUB = "GitHub"
 private const val GITHUB_SHORT_REQUEST_BYTES = 4
+private const val EXTRA_DICT_RAW_BASE =
+    "https://raw.githubusercontent.com/amzxyz/rime-wanxiang-data/wanxiang/dicts"
+
+fun normalizeExtraDictNames(text: String): List<String> {
+    return text.split(Regex("[,，;；\\n]+"))
+        .map { it.trim() }
+        .filter { it.isNotBlank() && "/" !in it && "\\\\" !in it }
+        .map {
+            when {
+                it.endsWith(".dict.yaml", true) -> it
+                it.endsWith(".yaml", true) -> it.dropLast(5) + ".dict.yaml"
+                else -> "$it.dict.yaml"
+            }
+        }
+        .distinctBy { it.lowercase(Locale.ROOT) }
+}
+
+fun extraDictRawUrl(fileName: String): String {
+    return "$EXTRA_DICT_RAW_BASE/${java.net.URLEncoder.encode(fileName, "UTF-8").replace("+", "%20")}"
+}
 
 class TaskState(
     val title: String,
     val url: String,
-    val githubProbeUrl: String? = null
+    val githubProbeUrl: String? = null,
+    val kind: String = "package",
+    val schemeType: String = "base",
+    val auxScheme: String = "zrm"
 ) {
+    var installName by mutableStateOf<String?>(null)
     var progress by mutableStateOf(0f)
     var status by mutableStateOf("等待中...")
     var isFinished by mutableStateOf(false)
@@ -478,6 +502,87 @@ fun saveCustomTasks(tasks: List<CustomTask>, sharedPref: android.content.SharedP
     sharedPref.edit().putString("custom_tasks_data", array.toString()).apply()
 }
 
+data class AdvancedFileEntry(
+    val name: String,
+    val location: String,
+    val isSaf: Boolean,
+    val relativePath: String
+)
+
+fun advancedRootFile(path: String): File {
+    return when {
+        path == "DEFAULT" -> File(Environment.getExternalStorageDirectory(), "rime")
+        isRootTarget(path) -> File(rootTargetPath(path))
+        else -> File(path)
+    }
+}
+
+fun collectAdvancedSafFiles(
+    context: Context,
+    document: DocumentFile,
+    prefix: String = "",
+    result: MutableList<AdvancedFileEntry>
+) {
+    document.listFiles().forEach { child ->
+        val name = child.name ?: return@forEach
+        val relative = if (prefix.isBlank()) name else "$prefix/$name"
+        if (child.isDirectory) {
+            collectAdvancedSafFiles(context, child, relative, result)
+        } else if ((name.endsWith(".yaml", true) || name.endsWith(".yml", true)) &&
+            !name.endsWith(".dict.yaml", true)
+        ) {
+            result.add(AdvancedFileEntry(name, child.uri.toString(), true, relative))
+        }
+    }
+}
+
+fun listAdvancedFiles(context: Context, target: String): List<AdvancedFileEntry> {
+    if (target.isBlank()) return emptyList()
+    if (target != "DEFAULT" && !isRootTarget(target)) {
+        val root = DocumentFile.fromTreeUri(context, Uri.parse(target)) ?: return emptyList()
+        return buildList { collectAdvancedSafFiles(context, root, result = this) }
+            .sortedBy { it.relativePath.lowercase(Locale.ROOT) }
+    }
+
+    val root = advancedRootFile(target)
+    if (!root.isDirectory) return emptyList()
+    return root.walkTopDown()
+        .filter { it.isFile && (it.extension.equals("yaml", true) || it.extension.equals("yml", true)) }
+        .filterNot { it.name.endsWith(".dict.yaml", true) }
+        .map {
+            AdvancedFileEntry(
+                name = it.name,
+                location = it.absolutePath,
+                isSaf = false,
+                relativePath = it.relativeTo(root).invariantSeparatorsPath
+            )
+        }
+        .sortedBy { it.relativePath.lowercase(Locale.ROOT) }
+        .toList()
+}
+
+fun readAdvancedFile(context: Context, entry: AdvancedFileEntry): String {
+    val input = if (entry.isSaf) {
+        context.contentResolver.openInputStream(Uri.parse(entry.location))
+    } else {
+        File(entry.location).inputStream()
+    }
+    return input?.bufferedReader(Charsets.UTF_8).use { it?.readText() ?: "" }
+}
+
+fun writeAdvancedFile(context: Context, entry: AdvancedFileEntry, text: String) {
+    val output = if (entry.isSaf) {
+        context.contentResolver.openOutputStream(Uri.parse(entry.location), "wt")
+    } else {
+        File(entry.location).outputStream()
+    }
+    output?.bufferedWriter(Charsets.UTF_8).use { writer ->
+        writer ?: throw Exception("无法打开文件写入流")
+        writer.write(text)
+        writer.flush()
+    }
+}
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -585,6 +690,10 @@ fun WanxiangDownloaderApp() {
         mutableStateOf(sharedPref.getString("download_source", DOWNLOAD_SOURCE_CNB) ?: DOWNLOAD_SOURCE_CNB)
     }
     var githubToken by remember { mutableStateOf(sharedPref.getString("gh_token", "") ?: "") }
+    var extraDictText by remember { mutableStateOf(sharedPref.getString("extra_dicts", "") ?: "") }
+    var advancedSettingsPath by remember {
+        mutableStateOf(sharedPref.getString("advanced_settings_path", "DEFAULT") ?: "DEFAULT")
+    }
 
     var excludeRulesText by remember {
         val savedRules = sharedPref.getString("exclude_rules", null)
@@ -620,6 +729,19 @@ fun WanxiangDownloaderApp() {
             val newPaths = (savedPaths + uri.toString()).distinct()
             savedPaths = newPaths
             saveDeployPaths(newPaths, sharedPref)
+        }
+    }
+
+    val advancedDirPickerLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
+        if (uri != null) {
+            runCatching {
+                context.contentResolver.takePersistableUriPermission(
+                    uri,
+                    Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
+                )
+            }
+            advancedSettingsPath = uri.toString()
+            sharedPref.edit().putString("advanced_settings_path", advancedSettingsPath).apply()
         }
     }
 
@@ -865,6 +987,11 @@ fun WanxiangDownloaderApp() {
                 selected = selectedTabIndex == 2,
                 onClick = { selectedTabIndex = 2 },
                 text = { Text("拼音工具", fontWeight = FontWeight.Bold) }
+            )
+            Tab(
+                selected = selectedTabIndex == 3,
+                onClick = { selectedTabIndex = 3 },
+                text = { Text("高级设置", fontWeight = FontWeight.Bold) }
             )
         }
 
@@ -1292,6 +1419,34 @@ fun WanxiangDownloaderApp() {
                             }
                         }
 
+                        Spacer(modifier = Modifier.height(10.dp))
+                        Card(
+                            colors = CardDefaults.cardColors(containerColor = MorandiLightGreen),
+                            border = CardDefaults.outlinedCardBorder(true),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Column(Modifier.padding(10.dp)) {
+                                Text("📚 附加词库", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
+                                Text(
+                                    "输入词库名，自动补全 .dict.yaml；逗号、中文逗号、分号或换行均可。点击任意更新按钮时一起下载。",
+                                    fontSize = 11.sp,
+                                    color = Color.Gray,
+                                    modifier = Modifier.padding(top = 3.dp, bottom = 6.dp)
+                                )
+                                OutlinedTextField(
+                                    value = extraDictText,
+                                    onValueChange = {
+                                        extraDictText = it
+                                        sharedPref.edit().putString("extra_dicts", it).apply()
+                                    },
+                                    modifier = Modifier.fillMaxWidth().heightIn(min = 76.dp),
+                                    minLines = 2,
+                                    maxLines = 3,
+                                    placeholder = { Text("例如：shici,fangyan 或每行一个", fontSize = 12.sp) },
+                                    textStyle = androidx.compose.ui.text.TextStyle(fontSize = 12.sp)
+                                )
+                            }
+                        }
 
                         Divider(color = MorandiLightGreen, modifier = Modifier.padding(vertical = 12.dp))
                         Text("执行操作:", fontWeight = FontWeight.Bold, color = Color.DarkGray)
@@ -1316,7 +1471,10 @@ fun WanxiangDownloaderApp() {
                                                 targetPaths = savedPaths,
                                                 context = context,
                                                 rules = currentRules,
-                                                githubProbeUrls = githubProbeUrls
+                                                githubProbeUrls = githubProbeUrls,
+                                                extraDictNames = normalizeExtraDictNames(extraDictText),
+                                                schemeType = schemeType,
+                                                auxScheme = auxScheme
                                             )
                                         },
                                         modifier = Modifier.weight(1f).height(48.dp),
@@ -1381,8 +1539,18 @@ fun WanxiangDownloaderApp() {
                 githubToken = githubToken,
                 onRequestAllFilesAccess = { showPermissionDialog = true }
             )
-        } else {
+        } else if (selectedTabIndex == 2) {
             PinyinToolScreen()
+        } else {
+            AdvancedSettingsScreen(
+                context = context,
+                targetPath = advancedSettingsPath,
+                onTargetPathChange = {
+                    advancedSettingsPath = it
+                    sharedPref.edit().putString("advanced_settings_path", it).apply()
+                },
+                onPickSafDirectory = { advancedDirPickerLauncher.launch(null) }
+            )
         }
     }
 }
@@ -1844,6 +2012,151 @@ fun CustomModeTab(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun AdvancedSettingsScreen(
+    context: Context,
+    targetPath: String,
+    onTargetPathChange: (String) -> Unit,
+    onPickSafDirectory: () -> Unit
+) {
+    val scope = rememberCoroutineScope()
+    var files by remember { mutableStateOf<List<AdvancedFileEntry>>(emptyList()) }
+    var selectedFile by remember { mutableStateOf<AdvancedFileEntry?>(null) }
+    var editorText by remember { mutableStateOf("") }
+    var message by remember { mutableStateOf("请选择一个高级设置目录") }
+    var loading by remember { mutableStateOf(false) }
+
+    fun refreshFiles() {
+        scope.launch {
+            loading = true
+            files = withContext(Dispatchers.IO) { listAdvancedFiles(context, targetPath) }
+            selectedFile = null
+            editorText = ""
+            message = if (files.isEmpty()) "没有找到可编辑的 YAML 配置文件" else "找到 ${files.size} 个配置文件"
+            loading = false
+        }
+    }
+
+    LaunchedEffect(targetPath) {
+        if (targetPath.isNotBlank()) refreshFiles()
+    }
+
+    LaunchedEffect(selectedFile) {
+        val file = selectedFile ?: return@LaunchedEffect
+        editorText = withContext(Dispatchers.IO) {
+            runCatching { readAdvancedFile(context, file) }.getOrElse { "读取失败：${it.message}" }
+        }
+    }
+
+    Column(
+        modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)
+    ) {
+        Text("🛠️ 高级设置", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
+        Text(
+            "单独选择一个 SAF 授权目录，或直接使用默认 /rime。这里可以加载并保存方案 YAML 与 custom YAML。",
+            fontSize = 12.sp,
+            color = Color.Gray
+        )
+        Spacer(Modifier.height(12.dp))
+
+        Card(
+            colors = CardDefaults.cardColors(containerColor = Color.White),
+            border = CardDefaults.outlinedCardBorder(true),
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Column(Modifier.padding(14.dp)) {
+                Text("配置目录", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
+                Text(
+                    when {
+                        targetPath == "DEFAULT" -> "当前：默认 /rime"
+                        isRootTarget(targetPath) -> "当前：Root ${rootTargetPath(targetPath)}"
+                        targetPath.isBlank() -> "当前：未选择"
+                        else -> "当前：SAF 授权目录"
+                    },
+                    fontSize = 12.sp,
+                    color = Color.Gray,
+                    modifier = Modifier.padding(top = 4.dp)
+                )
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 10.dp)) {
+                    OutlinedButton(onClick = { onTargetPathChange("DEFAULT") }, modifier = Modifier.weight(1f)) {
+                        Text("使用默认 /rime", fontSize = 12.sp)
+                    }
+                    OutlinedButton(onClick = onPickSafDirectory, modifier = Modifier.weight(1f)) {
+                        Text("选择 SAF 目录", fontSize = 12.sp)
+                    }
+                }
+                Button(
+                    onClick = ::refreshFiles,
+                    enabled = targetPath.isNotBlank() && !loading,
+                    modifier = Modifier.fillMaxWidth().padding(top = 8.dp),
+                    colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen)
+                ) {
+                    Text(if (loading) "扫描中…" else "🔄 扫描配置文件")
+                }
+            }
+        }
+
+        Spacer(Modifier.height(12.dp))
+        Text(message, fontSize = 12.sp, color = Color.Gray)
+
+        if (files.isNotEmpty()) {
+            Card(
+                colors = CardDefaults.cardColors(containerColor = Color.White),
+                border = CardDefaults.outlinedCardBorder(true),
+                modifier = Modifier.fillMaxWidth().padding(top = 8.dp)
+            ) {
+                Column(Modifier.padding(8.dp)) {
+                    files.forEach { file ->
+                        TextButton(
+                            onClick = { selectedFile = file },
+                            modifier = Modifier.fillMaxWidth(),
+                            contentPadding = PaddingValues(horizontal = 8.dp, vertical = 2.dp)
+                        ) {
+                            Text(
+                                text = if (selectedFile?.location == file.location) "● ${file.relativePath}" else "○ ${file.relativePath}",
+                                modifier = Modifier.fillMaxWidth(),
+                                textAlign = androidx.compose.ui.text.style.TextAlign.Start,
+                                fontSize = 12.sp,
+                                color = if (selectedFile?.location == file.location) MorandiDarkGreen else Color.DarkGray
+                            )
+                        }
+                    }
+                }
+            }
+        }
+
+        selectedFile?.let { file ->
+            Spacer(Modifier.height(12.dp))
+            Text("编辑：${file.relativePath}", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
+            OutlinedTextField(
+                value = editorText,
+                onValueChange = { editorText = it },
+                modifier = Modifier.fillMaxWidth().heightIn(min = 360.dp),
+                textStyle = androidx.compose.ui.text.TextStyle(
+                    fontSize = 12.sp,
+                    fontFamily = androidx.compose.ui.text.font.FontFamily.Monospace
+                ),
+                singleLine = false
+            )
+            Button(
+                onClick = {
+                    scope.launch {
+                        message = "正在保存…"
+                        runCatching { withContext(Dispatchers.IO) { writeAdvancedFile(context, file, editorText) } }
+                            .onSuccess { message = "✅ 已保存：${file.relativePath}" }
+                            .onFailure { message = "❌ 保存失败：${it.message}" }
+                    }
+                },
+                modifier = Modifier.fillMaxWidth().padding(top = 8.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen)
+            ) {
+                Text("💾 保存当前文件")
+            }
+        }
+    }
+}
+
 fun executeTasks(
     urls: List<String>,
     scope: kotlinx.coroutines.CoroutineScope,
@@ -1853,11 +2166,14 @@ fun executeTasks(
     targetPaths: List<String>,
     context: Context,
     rules: List<String>,
-    githubProbeUrls: Map<String, String> = emptyMap()
+    githubProbeUrls: Map<String, String> = emptyMap(),
+    extraDictNames: List<String> = emptyList(),
+    schemeType: String = "base",
+    auxScheme: String = "zrm"
 ) {
     scope.launch {
         setDownloading(true)
-        val activeTasks = urls.map { url ->
+        val packageTasks = urls.map { url ->
             val fileName = url.substringBefore("?").substringAfterLast("/")
             val title = when {
                 fileName.contains("dicts", true) -> "词库包"
@@ -1866,6 +2182,11 @@ fun executeTasks(
             }
             TaskState("$title ($fileName)", url, githubProbeUrls[url])
         }
+        val extraTasks = extraDictNames.map { fileName ->
+            val url = extraDictRawUrl(fileName)
+            TaskState("附加词库 ($fileName)", url, kind = "extra", schemeType = schemeType, auxScheme = auxScheme)
+        }
+        val activeTasks = packageTasks + extraTasks
 
         setTasks(activeTasks)
         for (task in activeTasks) {
@@ -1920,6 +2241,142 @@ fun formatDownloadSpeed(bytesPerSecond: Long): String {
     } else {
         "${bytesPerSecond / 1024L}KB/s"
     }
+}
+
+fun extraOutputName(fileName: String, suffix: String): String {
+    return if (fileName.endsWith(".dict.yaml", true)) {
+        fileName.dropLast(".dict.yaml".length) + suffix + ".dict.yaml"
+    } else {
+        fileName + suffix + ".dict.yaml"
+    }
+}
+
+fun parseAuxMapFromText(text: String): Map<String, String> {
+    val result = mutableMapOf<String, String>()
+    text.lineSequence().forEach { line ->
+        if (line.isBlank() || line.trimStart().startsWith("#") || line.startsWith("---")) return@forEach
+        val cols = line.split('\t')
+        if (cols.size < 2) return@forEach
+        val ch = cols[0].trim()
+        if (ch.length != 1) return@forEach
+        val second = cols[1].trim()
+        val aux = second.substringAfter(';', "").substringAfter('[', "").substringBefore(']').trim()
+        result[ch] = if (aux == ";") "" else aux
+    }
+    return result
+}
+
+fun readAuxMapFromTargets(context: Context, targetPaths: List<String>): Map<String, String> {
+    targetPaths.forEach { path ->
+        val text = runCatching {
+            when {
+                path == "DEFAULT" -> {
+                    File(Environment.getExternalStorageDirectory(), "rime/dicts/zi.pro.dict.yaml")
+                        .takeIf { it.isFile() }?.readText(Charsets.UTF_8)
+                }
+                isRootTarget(path) -> {
+                    File(rootTargetPath(path), "dicts/zi.pro.dict.yaml")
+                        .takeIf { it.isFile() }?.readText(Charsets.UTF_8)
+                }
+                else -> {
+                    val root = DocumentFile.fromTreeUri(context, Uri.parse(path))
+                    val dicts = root?.findFile("dicts")
+                    val file = dicts?.findFile("zi.pro.dict.yaml")
+                    file?.let { context.contentResolver.openInputStream(it.uri)?.bufferedReader(Charsets.UTF_8)?.use { r -> r.readText() } }
+                }
+            }
+        }.getOrNull()
+        if (!text.isNullOrBlank()) {
+            val map = parseAuxMapFromText(text)
+            if (map.isNotEmpty()) return map
+        }
+    }
+    return emptyMap()
+}
+
+fun stripPinyinTones(value: String): String {
+    val toneMap = mapOf(
+        'ā' to 'a', 'á' to 'a', 'ǎ' to 'a', 'à' to 'a',
+        'ē' to 'e', 'é' to 'e', 'ě' to 'e', 'è' to 'e',
+        'ī' to 'i', 'í' to 'i', 'ǐ' to 'i', 'ì' to 'i',
+        'ō' to 'o', 'ó' to 'o', 'ǒ' to 'o', 'ò' to 'o',
+        'ū' to 'u', 'ú' to 'u', 'ǔ' to 'u', 'ù' to 'u',
+        'ǖ' to 'v', 'ǘ' to 'v', 'ǚ' to 'v', 'ǜ' to 'v', 'ü' to 'v',
+        'Ā' to 'A', 'Á' to 'A', 'Ǎ' to 'A', 'À' to 'A',
+        'Ē' to 'E', 'É' to 'E', 'Ě' to 'E', 'È' to 'E',
+        'Ī' to 'I', 'Í' to 'I', 'Ǐ' to 'I', 'Ì' to 'I',
+        'Ō' to 'O', 'Ó' to 'O', 'Ǒ' to 'O', 'Ò' to 'O',
+        'Ū' to 'U', 'Ú' to 'U', 'Ǔ' to 'U', 'Ù' to 'U',
+        'Ǖ' to 'V', 'Ǘ' to 'V', 'Ǚ' to 'V', 'Ǜ' to 'V', 'Ü' to 'V'
+    )
+    return buildString {
+        value.forEach { ch ->
+            append(toneMap[ch] ?: if (ch in '1'..'5') "" else ch.toString())
+        }
+    }
+}
+
+fun rewriteDictNameHeader(lines: List<String>, name: String): List<String> {
+    var replaced = false
+    return lines.map { line ->
+        if (!replaced && line.trimStart().startsWith("name:")) {
+            replaced = true
+            "name: $name"
+        } else line
+    }
+}
+
+fun processExtraDictFile(
+    context: Context,
+    file: File,
+    task: TaskState,
+    targetPaths: List<String>
+) {
+    val originalName = sanitizedFileName(task.url)
+    val suffix = when (task.schemeType) {
+        "pro", "pure" -> ".pro"
+        "lite" -> ".lite"
+        else -> ""
+    }
+    val outputName = extraOutputName(originalName, suffix)
+    val lines = file.readLines(Charsets.UTF_8)
+    val transformed = when (task.schemeType) {
+        "lite" -> lines.mapIndexed { index, line ->
+            if (index == 0 && line.trimStart().startsWith("name:")) "name: ${outputName.removeSuffix(".dict.yaml")}"
+            else if (line.isBlank() || line.trimStart().startsWith("#") || line.startsWith("---")) line
+            else {
+                val cols = line.split('\t').toMutableList()
+                if (cols.size >= 2) cols[1] = cols[1].split(Regex("\\s+")).joinToString(" ") { stripPinyinTones(it) }
+                cols.joinToString("\t")
+            }
+        }
+        "pro", "pure" -> {
+            val auxMap = readAuxMapFromTargets(context, targetPaths)
+            if (auxMap.isEmpty()) throw Exception("找不到 zi.pro.dict.yaml，无法刷新附加词库辅助码")
+            lines.mapIndexed { index, line ->
+                if (index == 0 && line.trimStart().startsWith("name:")) "name: ${outputName.removeSuffix(".dict.yaml")}"
+                else if (line.isBlank() || line.trimStart().startsWith("#") || line.startsWith("---")) line
+                else {
+                    val cols = line.split('\t').toMutableList()
+                    if (cols.size >= 2) {
+                        val chars = cols[0].filter { it.isLetterOrDigit() || it.code >= 0x2E80 }
+                        val syllables = cols[1].trim().split(Regex("\\s+")).filter { it.isNotBlank() }
+                        cols[1] = syllables.mapIndexed { i, syllable ->
+                            val root = syllable.substringBefore(';').substringBefore('[')
+                            val aux = chars.getOrNull(i)?.let { auxMap[it.toString()] }.orEmpty()
+                            "$root;$aux"
+                        }.joinToString(" ")
+                    }
+                    cols.joinToString("\t")
+                }
+            }
+        }
+        else -> rewriteDictNameHeader(lines, outputName.removeSuffix(".dict.yaml"))
+    }
+
+    val namedLines = rewriteDictNameHeader(transformed, outputName.removeSuffix(".dict.yaml"))
+    file.writeText(namedLines.joinToString("\n") + if (namedLines.isNotEmpty()) "\n" else "", Charsets.UTF_8)
+    task.installName = outputName
 }
 
 suspend fun downloadAndDeployTask(
@@ -2360,6 +2817,19 @@ suspend fun downloadAndDeployTask(
                 return@withContext
             }
 
+            if (task.kind == "extra") {
+                withContext(Dispatchers.Main) {
+                    task.status = when (task.schemeType) {
+                        "pro", "pure" -> "刷新辅助码中..."
+                        "lite" -> "去除声调中..."
+                        else -> "整理词库中..."
+                    }
+                }
+                processExtraDictFile(context, tmpFile, task, targetPaths)
+                task.appendDebug("附加词库处理完成：输出=${task.installName ?: sanitizedFileName(task.url)}")
+                publishTaskDebug(task)
+            }
+
             withContext(Dispatchers.Main) {
                 task.status = if (isUsableZip(tmpFile)) "解压中..." else "部署中..."
                 task.progress = -1f
@@ -2400,7 +2870,7 @@ suspend fun downloadAndDeployTask(
                     }
                 }
             } else {
-                val stagedFile = File(extractDir, sanitizedFileName(task.url))
+                val stagedFile = File(extractDir, task.installName ?: sanitizedFileName(task.url))
                 if (stagedFile.exists() && !stagedFile.delete()) {
                     throw Exception("无法清理缓存中的旧临时文件：${stagedFile.name}")
                 }
