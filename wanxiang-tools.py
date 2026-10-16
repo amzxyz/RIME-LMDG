@@ -78,6 +78,7 @@ import shutil
 import time
 import hashlib
 import fnmatch
+import filecmp
 import zipfile
 import tempfile
 import threading
@@ -85,7 +86,7 @@ import requests
 import subprocess
 import webbrowser
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, quote
 from typing import Dict, List, Tuple, Optional, Set, Callable
 from dataclasses import dataclass
 from PySide6.QtWidgets import (QWidget, QHBoxLayout, QLineEdit, 
@@ -153,7 +154,7 @@ class FocusPlaceholderPlainTextEdit(QPlainTextEdit):
             super().setPlaceholderText(self._saved_placeholder)
 
 # ============== 常量/工具 ==============
-TOOL_VERSION = "v3.3.4"
+TOOL_VERSION = "v3.4.0"
 
 AUX_SEP_REGEX = r'[;\[]'
 YAML_HEADS = ('---', 'name:', 'version:', 'sort:', '...')
@@ -177,16 +178,18 @@ DEFAULT_WL_REGEX = [
 
 # 尝试导入 ruamel.yaml (用于安全修改 Rime 配置文件)
 def _normalize_github_token(raw_token: str) -> str:
-    """只保留 Token 本体，避免用户粘贴 Bearer/token 前缀后重复拼接。"""
-    token = str(raw_token or "").strip()
-    lowered = token.lower()
+    """清理用户粘贴的 GitHub PAT，只返回 Token 本体。"""
+    token = str(raw_token or "").replace("\u200b", "").strip()
+    token = token.strip("`'\"").strip()
 
-    for prefix in ("bearer ", "token "):
-        if lowered.startswith(prefix):
-            token = token[len(prefix):].strip()
-            break
+    # 兼容直接粘贴请求头的几种写法：
+    # Authorization: Bearer xxx / Bearer xxx / token xxx
+    token = re.sub(r"^\s*authorization\s*:\s*", "", token, flags=re.IGNORECASE)
+    token = re.sub(r"^\s*(?:bearer|token)\s+", "", token, flags=re.IGNORECASE)
 
-    return token
+    # 粘贴时若带入换行、空格或不可见分隔，不应把它们送入 HTTP Header。
+    token = re.sub(r"\s+", "", token)
+    return token.strip("`'\"").strip()
 
 
 def _build_github_api_headers(raw_token: str) -> dict:
@@ -198,7 +201,8 @@ def _build_github_api_headers(raw_token: str) -> dict:
     }
     token = _normalize_github_token(raw_token)
     if token:
-        headers["Authorization"] = f"Bearer {token}"
+        # PAT 使用 token 认证方式；Bearer 对 GitHub 也有效，但 token 更直观。
+        headers["Authorization"] = f"token {token}"
     return headers
 
 
@@ -236,6 +240,12 @@ OWNER = "amzxyz"
 REPO = "rime-wanxiang"
 CNB_REPO = "rime-wanxiang"
 MODEL_REPO = "RIME-LMDG"
+EXTRA_DICT_REPO = "amzxyz/rime-wanxiang-data"
+EXTRA_DICT_BRANCH = "wanxiang"
+EXTRA_DICT_RAW_BASE = (
+    f"https://raw.githubusercontent.com/{EXTRA_DICT_REPO}/"
+    f"{EXTRA_DICT_BRANCH}/dicts"
+)
 DICT_TAG = "dict-nightly"
 MODEL_FILE = "wanxiang-lts-zh-hans.gram"
 MODEL_TAG = "LTS"
@@ -258,6 +268,25 @@ def _build_github_equivalent_url(task_type: str, repo_gh: str, remote_data: dict
         return f"https://github.com/{OWNER}/{repo_gh}/releases/latest/download/{asset_name}"
 
     return f"https://github.com/{OWNER}/{repo_gh}/releases/download/{tag}/{asset_name}"
+
+
+def _build_cnb_fallback_url(task_type: str, cnb_repo: str, remote_data: dict) -> str:
+    """GitHub Release 下载失败时，为可确定名称的资源生成 CNB 直链。"""
+    asset_name = str(remote_data.get("name", "") or "").strip()
+    if not cnb_repo or not asset_name:
+        return ""
+
+    if task_type in ("词库组件", "预览方案"):
+        tag = "v1.0.0"
+    elif task_type == "语法模型":
+        tag = "model"
+    else:
+        return ""
+
+    return (
+        f"https://cnb.cool/{OWNER}/{cnb_repo}/-/releases/download/"
+        f"{tag}/{quote(asset_name, safe='')}"
+    )
 
 
 def _start_github_download_ping(url: str) -> None:
@@ -409,6 +438,18 @@ SHUANGPIN_SCHEMAS = {
 
 # 声调去除映射
 TONE_MAP = str.maketrans("āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜ", "aaaaooooeeeeiiiiuuuuvvvv")
+LITE_TONE_MAP = str.maketrans({
+    "ā": "a", "á": "a", "ǎ": "a", "à": "a",
+    "ē": "e", "é": "e", "ě": "e", "è": "e",
+    "ī": "i", "í": "i", "ǐ": "i", "ì": "i",
+    "ō": "o", "ó": "o", "ǒ": "o", "ò": "o",
+    "ū": "u", "ú": "u", "ǔ": "u", "ù": "u",
+    "ǖ": "v", "ǘ": "v", "ǚ": "v", "ǜ": "v", "ü": "v",
+    "ḿ": "me", "ń": "en", "ň": "en", "ǹ": "en",
+})
+
+def strip_lite_tones(text: str) -> str:
+    return text.replace("m̀", "me").translate(LITE_TONE_MAP)
 
 def is_userdb_head(line: str) -> bool:
     return ('#@/db_type\tuserdb' in line) or ('# Rime user dictionary' in line)
@@ -1085,6 +1126,7 @@ class UpdateConfig:
     clean_build: bool
     clean_before: bool
     custom_url: Optional[str] # 自定义下载源 URL
+    extra_dicts: List[str]   # 附加词库名称，可省略 .dict.yaml
     server_path: str = ""   # 算法服务路径 (WeaselServer.exe)
     deployer_path: str = "" # 部署工具路径 (WeaselDeployer.exe)
     force_update: bool = False #强制更新
@@ -1390,6 +1432,204 @@ class UpdateWorker(QThread):
         }
     def log(self, msg): self.log_sig.emit(msg)
     def stop(self): self._stop = True
+
+    @staticmethod
+    def _normalize_extra_dicts(values) -> List[str]:
+        """规范化附加词库名称，并自动补全 .dict.yaml。"""
+        if isinstance(values, str):
+            values = re.split(r"[,，;；\n]+", values)
+
+        result = []
+        seen = set()
+        for value in values or []:
+            raw = str(value or "").strip()
+            if not raw:
+                continue
+
+            # 只接受文件名，避免输入路径导致 Raw 地址越界。
+            if raw in {".", ".."} or "/" in raw or "\\" in raw:
+                continue
+
+            if raw.endswith(".dict.yaml"):
+                filename = raw
+            elif raw.endswith(".yaml"):
+                filename = raw[:-len(".yaml")] + ".dict.yaml"
+            else:
+                filename = raw + ".dict.yaml"
+
+            key = filename.casefold()
+            if key not in seen:
+                seen.add(key)
+                result.append(filename)
+        return result
+
+    @staticmethod
+    def _same_file(path_a: str, path_b: str) -> bool:
+        try:
+            return (
+                os.path.isfile(path_a)
+                and os.path.isfile(path_b)
+                and filecmp.cmp(path_a, path_b, shallow=False)
+            )
+        except OSError:
+            return False
+
+    @staticmethod
+    def _extra_dict_url(filename: str) -> str:
+        return f"{EXTRA_DICT_RAW_BASE}/{quote(filename, safe='')}"
+
+    @staticmethod
+    def _extra_output_name(filename: str, suffix: str) -> str:
+        if filename.endswith(".dict.yaml"):
+            stem = filename[:-len(".dict.yaml")]
+        else:
+            stem = filename.rsplit(".", 1)[0]
+        return f"{stem}{suffix}.dict.yaml"
+
+    @staticmethod
+    def _rewrite_dict_name_header(path: str, dictionary_name: str) -> None:
+        """同步修改词典头部 name，使文件名与 Rime 词典名一致。"""
+        temp = path + ".name.tmp"
+        changed = False
+        with open(path, "r", encoding="utf-8", newline="") as src, \
+             open(temp, "w", encoding="utf-8", newline="") as dst:
+            for raw_line in src:
+                line = raw_line.rstrip("\r\n")
+                eol = raw_line[len(line):]
+                stripped = line.lstrip()
+                if not changed and stripped.startswith("name:"):
+                    indent = line[:len(line) - len(stripped)]
+                    dst.write(f"{indent}name: {dictionary_name}{eol}")
+                    changed = True
+                else:
+                    dst.write(raw_line)
+        os.replace(temp, path)
+
+    @staticmethod
+    def _rewrite_lite_dict_file(src: str, dst: str, dictionary_name: str) -> None:
+        """按 Lite 词库规则去声调，并同步修改词典 name。"""
+        name_done = False
+        with open(src, "r", encoding="utf-8", newline="") as source, \
+             open(dst, "w", encoding="utf-8", newline="") as target:
+            for raw_line in source:
+                line = raw_line.rstrip("\r\n")
+                eol = raw_line[len(line):]
+                stripped = line.lstrip()
+
+                if not name_done and stripped.startswith("name:"):
+                    indent = line[:len(line) - len(stripped)]
+                    target.write(f"{indent}name: {dictionary_name}{eol}")
+                    name_done = True
+                    continue
+
+                first_tab = line.find("\t")
+                if first_tab < 0:
+                    target.write(raw_line)
+                    continue
+
+                second_tab = line.find("\t", first_tab + 1)
+                if second_tab < 0:
+                    target.write(
+                        line[:first_tab + 1]
+                        + strip_lite_tones(line[first_tab + 1:])
+                        + eol
+                    )
+                else:
+                    target.write(
+                        line[:first_tab + 1]
+                        + strip_lite_tones(line[first_tab + 1:second_tab])
+                        + line[second_tab:]
+                        + eol
+                    )
+
+    def _find_zi_dict_for_extra(self, pending_tasks, temp_root: str) -> str:
+        """优先从本次下载的方案 ZIP 提取 zi.pro.dict.yaml，失败时回退到本地词库。"""
+        scheme_tasks = [
+            task for task in pending_tasks
+            if task.get("type") in ("方案组件", "预览方案")
+        ]
+
+        for index, task in enumerate(scheme_tasks):
+            zip_path = task.get("path", "")
+            if not zip_path or not zipfile.is_zipfile(zip_path):
+                continue
+            try:
+                with zipfile.ZipFile(zip_path, "r") as archive:
+                    members = [
+                        name for name in archive.namelist()
+                        if os.path.basename(name.replace("\\", "/")) == "zi.pro.dict.yaml"
+                    ]
+                    if not members:
+                        continue
+                    member = sorted(members, key=lambda value: (value.count("/"), len(value)))[0]
+                    output = os.path.join(temp_root, f"extra-zi-{index}.dict.yaml")
+                    with archive.open(member, "r") as source, open(output, "wb") as target:
+                        shutil.copyfileobj(source, target)
+                    self.log(f"✓ 已从方案 ZIP 提取辅助码词库：{member}")
+                    return output
+            except Exception as error:
+                self.log(f"⚠️ 读取方案 ZIP 中的 zi.pro.dict.yaml 失败：{error}")
+
+        local_candidate = Path(self.cfg.rime_dir) / "dicts" / "zi.pro.dict.yaml"
+        if local_candidate.is_file():
+            self.log(f"✓ 使用本地辅助码词库：{local_candidate.name}")
+            return str(local_candidate)
+        return ""
+
+    def _prepare_extra_dict_tasks(self, pending_tasks, temp_root: str) -> None:
+        """按所选方案版本转换附加词库，转换后才进入最终 dicts 目录。"""
+        extra_tasks = [
+            task for task in pending_tasks
+            if task.get("type") == "附加词库"
+        ]
+        if not extra_tasks:
+            return
+
+        scheme_type = str(self.cfg.scheme_type or "base").lower()
+        if scheme_type in ("pro", "pure"):
+            zi_path = self._find_zi_dict_for_extra(pending_tasks, temp_root)
+            if not zi_path:
+                raise RuntimeError(
+                    f"{scheme_type.upper()} 附加词库转换需要 zi.pro.dict.yaml，"
+                    "但方案 ZIP 和本地 dicts 中都没有找到。"
+                )
+
+            aux_map = load_aux_metadata(zi_path, self.log)
+            for index, task in enumerate(extra_tasks):
+                old_name = task.get("name") or os.path.basename(task.get("download_url", ""))
+                new_name = self._extra_output_name(old_name, ".pro")
+                converted = os.path.join(temp_root, f"extra-pro-{index}-{new_name}")
+                aux_process_single_file(
+                    task["path"],
+                    converted,
+                    aux_map,
+                    True,
+                    should_stop=lambda: self._stop,
+                )
+                self._rewrite_dict_name_header(
+                    converted, new_name[:-len(".dict.yaml")]
+                )
+                task["path"] = converted
+                task["name"] = new_name
+                self.log(f"✓ 附加词库已刷新辅助码并重命名：{old_name} → {new_name}")
+
+        elif scheme_type == "lite":
+            for index, task in enumerate(extra_tasks):
+                old_name = task.get("name") or os.path.basename(task.get("download_url", ""))
+                new_name = self._extra_output_name(old_name, ".lite")
+                converted = os.path.join(temp_root, f"extra-lite-{index}-{new_name}")
+                self._rewrite_lite_dict_file(
+                    task["path"],
+                    converted,
+                    new_name[:-len(".dict.yaml")],
+                )
+                task["path"] = converted
+                task["name"] = new_name
+                self.log(f"✓ 附加词库已去声调并重命名：{old_name} → {new_name}")
+
+        else:
+            self.log("✓ Base 附加词库保持原始内容和 .dict.yaml 文件名。")
+
     def _finish_cancelled(self):
         self.done_sig.emit(False, "⏹ 更新已取消。")
     # --- SHA256 计算工具 ---
@@ -1726,9 +1966,9 @@ class UpdateWorker(QThread):
                             return extract_asset_info(asset, rel.get('tag_name', '0.0.0'))
 
         return None
-    def _download(self, url, dest):
+    def _download(self, url, dest, max_retries=3):
         """直接从用户选择的 GitHub 或 CNB 地址下载并校验文件。"""
-        max_retries = 3
+        max_retries = max(1, int(max_retries))
         timeout_sec = 60
         clean_url = str(url or "").split("?", 1)[0].lower()
         expected_zip = clean_url.endswith(".zip") or str(dest).lower().endswith(".zip")
@@ -1881,6 +2121,7 @@ class UpdateWorker(QThread):
     def run(self):
         pending_tasks = [] # 用于暂存已下载好的任务
         needs_deploy = False 
+        failed_tasks: List[str] = []
 
         with tempfile.TemporaryDirectory() as temp_root:
             try:
@@ -1895,6 +2136,20 @@ class UpdateWorker(QThread):
                 extract_temp = os.path.join(temp_root, "extract")
                 tasks = [] 
                 
+                # 附加词库先进入下载/安装队列，安装时会先写入 dicts，
+                # 然后再按原有顺序处理方案 ZIP 或词库 ZIP。
+                extra_dict_names = self._normalize_extra_dicts(self.cfg.extra_dicts)
+                extra_dict_dir = os.path.join(self.cfg.rime_dir, "dicts")
+                for filename in extra_dict_names:
+                    tasks.append((
+                        '附加词库',
+                        EXTRA_DICT_REPO,
+                        None,
+                        filename,
+                        extra_dict_dir,
+                        None,
+                    ))
+
                 if self.cfg.custom_url:
                      tasks.append(('CustomZip', None, None, 'custom_mode', self.cfg.rime_dir, None))
                 else:
@@ -1931,7 +2186,16 @@ class UpdateWorker(QThread):
                         self._finish_cancelled()
                         return
 
-                    if task_type == 'CustomZip':
+                    if task_type == '附加词库':
+                        remote_data = {
+                            "url": self._extra_dict_url(pattern),
+                            "tag": EXTRA_DICT_BRANCH,
+                            "src": "GitHub Raw",
+                            "hash": "",
+                            "time": "",
+                            "name": pattern,
+                        }
+                    elif task_type == 'CustomZip':
                         remote_data = {"url": self.cfg.custom_url, "tag": "custom", "src": "Custom URL", "hash": "", "time": "", "name": "custom.zip"}
                     else:
                         # 传入 task_type 参数
@@ -1939,6 +2203,7 @@ class UpdateWorker(QThread):
                     
                     if not remote_data:
                         self.log(f">>> {task_type}: 未能获取到远程资源。")
+                        failed_tasks.append(task_type)
                         continue
 
                     url, tag, remote_hash = remote_data['url'], remote_data['tag'], remote_data.get('hash')
@@ -2004,18 +2269,58 @@ class UpdateWorker(QThread):
                         github_ping_url = _build_github_equivalent_url(task_type, gh_repo, remote_data)
                         _start_github_download_ping(github_ping_url)
 
-                    download_ok = self._download(url, local_download_path)
+                    download_host = (urlparse(str(url or "")).hostname or "").lower()
+                    use_github_fallback = (
+                        not self.cfg.use_mirror
+                        and task_type in ("预览方案", "词库组件", "语法模型")
+                        and (download_host == "github.com" or download_host.endswith(".github.com"))
+                    )
+
+                    # GitHub 在国内经常卡在连接或读取阶段；先尝试一次，失败后立即切换 CNB，
+                    # 避免同一条不可达链路连续等待三轮。
+                    initial_retries = 1 if use_github_fallback else 3
+                    download_ok = self._download(
+                        url,
+                        local_download_path,
+                        max_retries=initial_retries,
+                    )
+
+                    if not download_ok and use_github_fallback:
+                        fallback_url = _build_cnb_fallback_url(
+                            task_type,
+                            cnb_repo,
+                            remote_data,
+                        )
+                        if fallback_url and fallback_url != url:
+                            self.log("⚠️ GitHub 下载失败，自动切换 CNB 直链重试……")
+                            download_ok = self._download(
+                                fallback_url,
+                                local_download_path,
+                                max_retries=3,
+                            )
+                            if download_ok:
+                                url = fallback_url
+                                remote_data["url"] = fallback_url
+                                remote_data["src"] = "CNB (GitHub失败回退)"
 
                     if self._stop:
                         self._finish_cancelled()
                         return
 
                     if not download_ok:
+                        failed_tasks.append(task_type)
                         continue
 
                     if task_type == '语法模型' and remote_hash:
                         if self._calculate_sha256(local_download_path) != remote_hash:
                             self.log("❌ 错误: 文件校验失败，跳过安装。")
+                            failed_tasks.append(task_type)
+                            continue
+
+                    if task_type == '附加词库' and not self.cfg.clean_before:
+                        existing_file = os.path.join(final_dest, pattern)
+                        if self._same_file(local_download_path, existing_file):
+                            self.log(f"✓ 附加词库内容未变化，跳过安装：{pattern}")
                             continue
 
                     # 只添加到列表，全部资源下载成功后再统一安装。
@@ -2027,12 +2332,20 @@ class UpdateWorker(QThread):
                         'hash': remote_hash,
                         'time': remote_data.get('time', ''),
                         'download_url': url,
+                        'name': remote_data.get('name') or pattern,
                     })
 
                     self.log(f"✓ {task_type} 下载完毕，进入安装队列。")
 
+                # 附加词库必须在写入 dicts 前完成 Pro/Pure 或 Lite 转换。
+                if pending_tasks:
+                    self._prepare_extra_dict_tasks(pending_tasks, temp_root)
+
                 # --- 3. 统一杀进程 ---
                 if not pending_tasks and not self.cfg.clean_before:
+                    if failed_tasks:
+                        failed_text = "、".join(dict.fromkeys(failed_tasks))
+                        self.done_sig.emit(False, f"❌ 更新失败：{failed_text} 未完成。"); return
                     self.log("✓ 版本一致，无需更新。")
                     self.done_sig.emit(True, "✓ 所有组件已是最新。"); return
                 time.sleep(2)
@@ -2059,7 +2372,11 @@ class UpdateWorker(QThread):
                     dst_dir = task['dest']
 
                     try:
-                        if t_type == '语法模型':
+                        if t_type == '附加词库':
+                            os.makedirs(dst_dir, exist_ok=True)
+                            target_file = os.path.join(dst_dir, task.get('name') or os.path.basename(task['download_url'].split('?')[0]))
+                            shutil.copy2(src_path, target_file)
+                        elif t_type == '语法模型':
                             os.makedirs(dst_dir, exist_ok=True)
                             target_file = os.path.join(dst_dir, MODEL_FILE)
                             if os.path.exists(target_file): os.remove(target_file)
@@ -2175,14 +2492,29 @@ class UpdateWorker(QThread):
                     self.log(">>> 正在触发部署")
                     deploy_ok = self._start_and_deploy()
                     if deploy_ok:
-                        self.done_sig.emit(True, "✓ 更新并部署完成。")
+                        if failed_tasks:
+                            failed_text = "、".join(dict.fromkeys(failed_tasks))
+                            self.done_sig.emit(
+                                False,
+                                f"⚠️ 部分任务失败：{failed_text}；其余任务已安装并完成部署。"
+                            )
+                        else:
+                            self.done_sig.emit(True, "✓ 更新并部署完成。")
                     else:
+                        suffix = ""
+                        if failed_tasks:
+                            failed_text = "、".join(dict.fromkeys(failed_tasks))
+                            suffix = f"；另有任务失败：{failed_text}"
                         self.done_sig.emit(
                             False,
-                            "⚠️ 更新文件已安装，但自动部署未完成。"
+                            "⚠️ 更新文件已安装，但自动部署未完成" + suffix + "。"
                         )
                 else:
-                    self.done_sig.emit(True, "更新流程结束。")
+                    if failed_tasks:
+                        failed_text = "、".join(dict.fromkeys(failed_tasks))
+                        self.done_sig.emit(False, f"❌ 更新失败：{failed_text} 未完成。")
+                    else:
+                        self.done_sig.emit(True, "更新流程结束。")
 
             except Exception as e:
                 import traceback
@@ -2860,6 +3192,24 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         # 只有选中 Pro 版时，辅助码下拉框才可用
         self.rb_pro.toggled.connect(lambda checked: self.combo_aux.setEnabled(checked and self.bg_scope.checkedId() != 3))
 
+        # === 附加词库 ===
+        # 使用独立外框，并保留两行高度，避免这个功能在更新页中不易发现。
+        gb_extra_dicts = QGroupBox("附加词库")
+        extra_dicts_layout = QVBoxLayout(gb_extra_dicts)
+        extra_dicts_layout.setContentsMargins(5, 5, 5, 5)
+        extra_dicts_layout.setSpacing(0)
+
+        self.extra_dicts_edit = QPlainTextEdit()
+        self.extra_dicts_edit.setFixedHeight(58)
+        self.extra_dicts_edit.setPlaceholderText(
+            "例如：shici,sss,bbb（自动补全 .dict.yaml；也可每行填写一个）"
+        )
+        self.extra_dicts_edit.setToolTip(
+            "从 GitHub rime-wanxiang-data/wanxiang/dicts 下载；多个名称用逗号、中文逗号或换行分隔，\n"
+            "可省略 .dict.yaml 扩展名。"
+        )
+        extra_dicts_layout.addWidget(self.extra_dicts_edit)
+
         # === 5. 配置 ===
         gb_cfg = QGroupBox("配置") # 序号变为4
         form = QFormLayout(gb_cfg)
@@ -2985,6 +3335,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         self.custom_url_input.hide()
         l_left.addWidget(self.gb_scope)
         l_left.addWidget(self.gb_ver)
+        l_left.addWidget(gb_extra_dicts)
         l_left.addWidget(gb_cfg)
         l_left.addStretch()
         # ==================== 右侧：白名单与安全 ====================
@@ -3098,6 +3449,11 @@ class MainWin(AdvancedSettingsMixin, QWidget):
 
         aux_key = self.combo_aux.currentData() 
         if not aux_key: aux_key = "zrm"
+        extra_dicts = [
+            item.strip()
+            for item in re.split(r"[,，;；\n]+", self.extra_dicts_edit.toPlainText())
+            if item.strip()
+        ]
         whitelist_lines = self.upd_wl_edit.toPlainText().splitlines()
 
         versions = {}
@@ -3176,6 +3532,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
             clean_before=clean_mode,
             clean_build=self.chk_clean_build.isChecked(),
             custom_url=custom_url,
+            extra_dicts=extra_dicts,
             server_path=srv_path,
             deployer_path=dep_path,
             force_update=self.chk_force.isChecked()
@@ -3699,7 +4056,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
                     QComboBox QAbstractItemView { background-color: #353535; color: #D4D4D4; selection-background-color: #61A165; selection-color: white; border: 1px solid #49814D; }
                     
                     QGroupBox { border: 1px solid #49814D; border-radius: 5px; margin-top: 15px; padding-top: 10px; background-color: transparent; }
-                    QGroupBox::title { subcontrol-origin: margin; subcontrol-position: top left; left: 10px; padding: 0 5px; color: #D4D4D4; font-weight: bold; }
+                    QGroupBox::title { subcontrol-origin: margin; subcontrol-position: top left; left: 10px; padding: 0 5px; color: #D4D4D4; font-size: 13px; font-weight: 700; }
                     
                     #leftNavFrame { border: 1px solid #444; border-radius: 6px; background-color: #2b2b2b; }
                     #leftNavTree { background-color: transparent; font-size: 13px; outline: none; selection-background-color: transparent; color: #D4D4D4; }
@@ -3775,7 +4132,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
                     QComboBox QAbstractItemView { background-color: #FFFFFF; color: #333; selection-background-color: #E2ECE3; selection-color: #333; border: 1px solid #A8C7AA; }
                     
                     QGroupBox { border: 1px solid #61A165; border-radius: 5px; margin-top: 15px; padding-top: 10px; background-color: transparent; }
-                    QGroupBox::title { subcontrol-origin: margin; subcontrol-position: top left; left: 10px; padding: 0 5px; color: #333; font-weight: bold; }
+                    QGroupBox::title { subcontrol-origin: margin; subcontrol-position: top left; left: 10px; padding: 0 5px; color: #333; font-size: 13px; font-weight: 700; }
                     
                     #leftNavFrame { border: 1px solid #61A165; border-radius: 6px; background-color: #F8FAF8; }
                     #leftNavTree { background-color: transparent; font-size: 13px; outline: none; selection-background-color: transparent; color: #333; }
@@ -3972,6 +4329,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         try:
             s.setValue('upd/source_type', self.bg_source_type.checkedId()) # 保存源类型
             s.setValue('upd/custom_url', self.custom_url_input.text())     # 保存自定义URL
+            s.setValue('upd/extra_dicts', self.extra_dicts_edit.toPlainText())
             s.setValue('upd/scope', self.bg_scope.checkedId())
             s.setValue('upd/ver', self.bg_ver.checkedId())
             s.setValue('upd/aux_index', self.combo_aux.currentIndex())
@@ -4012,6 +4370,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
             if self.bg_source_type.button(src_type):
                 self.bg_source_type.button(src_type).setChecked(True)
             self.custom_url_input.setText(s.value('upd/custom_url', ''))
+            self.extra_dicts_edit.setPlainText(s.value('upd/extra_dicts', ''))
             scope_id = int(s.value('upd/scope', 0))
             self.bg_scope.button(scope_id).setChecked(True)
             ver_id = int(s.value('upd/ver', 0))
@@ -4090,6 +4449,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         self.out_edit_sp.clear()
         self.bg_source_type.button(0).setChecked(True) 
         self.custom_url_input.clear()
+        self.extra_dicts_edit.clear()
         self.bg_scope.button(0).setChecked(True) 
         self.bg_ver.button(0).setChecked(True) 
         self.combo_aux.setCurrentIndex(0) 
