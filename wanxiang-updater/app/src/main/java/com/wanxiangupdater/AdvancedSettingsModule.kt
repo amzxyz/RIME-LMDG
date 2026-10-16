@@ -155,31 +155,41 @@ private data class AdvancedCategory(
     val files: List<AdvancedFile>
 )
 
+private fun schemeLayerLabel(file: AdvancedFile): String {
+    return when (file.name.lowercase(Locale.ROOT)) {
+        "default.yaml" -> "default"
+        "wanxiang.schema.yaml" -> "Base"
+        "wanxiang_pro.schema.yaml" -> "Pro"
+        "wanxiang_lite.schema.yaml" -> "Lite"
+        "wanxiang_t9.schema.yaml" -> "T9"
+        "wanxiang_t9i.schema.yaml" -> "T9i"
+        "wanxiang_english.schema.yaml" -> "English"
+        "wanxiang_mixedcode.schema.yaml" -> "Mixedcode"
+        "wanxiang_reverse.schema.yaml" -> "Reverse"
+        "wanxiang_phrase.schema.yaml" -> "Phrase"
+        "wanxiang_abbrev.schema.yaml" -> "Abbrev"
+        "wanxiang_algebra.yaml" -> "Algebra"
+        else -> file.name.substringBeforeLast(".yaml").substringAfterLast("/")
+    }
+}
+
+private fun advancedGroupLabel(file: AdvancedFile): String =
+    "${file.group}（${schemeLayerLabel(file)}）"
+
 private fun buildAdvancedCategories(files: List<AdvancedFile>): Map<String, List<AdvancedCategory>> {
-    return files.groupBy { it.group }.mapValues { (_, groupFiles) ->
+    // 每个实际 YAML 文件拥有自己的层级，避免 Base/Pro/Lite 或附属方案共用同一套保存入口。
+    return files.groupBy { advancedGroupLabel(it) }.mapValues { (group, groupFiles) ->
         groupFiles
             .flatMap { file -> file.sections.map { section -> Triple(section.first, section.second, file) } }
             .groupBy { it.first to it.second }
             .map { (identity, entries) ->
                 AdvancedCategory(
-                    group = groupFiles.first().group,
+                    group = group,
                     key = identity.first,
                     title = identity.second,
                     files = entries.map { it.third }.distinctBy { it.name }
                 )
             }
-    }
-}
-
-private fun shortSchemeLabel(file: AdvancedFile): String {
-    val text = file.label
-    return when {
-        text.contains("基础版") || text.contains("Base", true) -> "Base"
-        text.contains("增强版") || text.contains("Pro", true) -> "Pro"
-        text.contains("轻量") || text.contains("Lite", true) -> "Lite"
-        text.contains("T9i", true) -> "T9i"
-        text.contains("T9", true) -> "T9"
-        else -> text.substringBefore(" (").ifBlank { text }
     }
 }
 
@@ -401,7 +411,6 @@ fun AdvancedSettingsScreen(
                                     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                                         Text(if (selected) "●" else "○", color = if (selected) MorandiGreen else Color.LightGray, modifier = Modifier.padding(end = 8.dp))
                                         Text(category.title, modifier = Modifier.weight(1f), fontSize = 13.sp, fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal, color = if (selected) MorandiDarkGreen else Color.DarkGray, maxLines = 2, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)
-                                        Text("${category.files.size}", fontSize = 10.sp, color = Color.Gray)
                                     }
                                 }
                             }
@@ -464,23 +473,6 @@ fun AdvancedSettingsScreen(
                         FilterChip(selected = directMode, onClick = { directMode = true }, label = { Text("直写模式") })
                         Spacer(Modifier.weight(1f))
                         Text(message, fontSize = 10.sp, color = Color.Gray, maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)
-                    }
-                }
-            }
-
-            if (!showCommon && selectedCategory != null && selectedCategory.files.size > 1) {
-                ScrollableTabRow(
-                    selectedTabIndex = selectedCategory.files.indexOfFirst { it.name == selectedFile?.name }.coerceAtLeast(0),
-                    edgePadding = 12.dp,
-                    containerColor = Color.Transparent,
-                    divider = {}
-                ) {
-                    selectedCategory.files.forEach { file ->
-                        Tab(
-                            selected = file.name == selectedFile?.name,
-                            onClick = { selectedFile = file },
-                            text = { Text(shortSchemeLabel(file), maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis) }
-                        )
                     }
                 }
             }
