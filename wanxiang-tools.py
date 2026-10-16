@@ -3202,7 +3202,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         self.extra_dicts_edit = QPlainTextEdit()
         self.extra_dicts_edit.setFixedHeight(58)
         self.extra_dicts_edit.setPlaceholderText(
-            "例如：shici,sss,bbb（自动补全 .dict.yaml；也可每行填写一个）"
+            "例如：shici,fangyan（自动补全 .dict.yaml；也可每行填写一个）"
         )
         self.extra_dicts_edit.setToolTip(
             "从 GitHub rime-wanxiang-data/wanxiang/dicts 下载；多个名称用逗号、中文逗号或换行分隔，\n"
