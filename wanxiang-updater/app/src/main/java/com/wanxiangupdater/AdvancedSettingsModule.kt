@@ -3,12 +3,16 @@ package com.wanxiangupdater
 import android.content.Context
 import android.net.Uri
 import android.os.Environment
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
@@ -104,6 +108,7 @@ fun AdvancedSettingsScreen(
     onPickSafDirectory: () -> Unit
 ) {
     val scope = rememberCoroutineScope()
+    val drawerState = rememberDrawerState(DrawerValue.Closed)
     var files by remember { mutableStateOf<List<AdvancedFile>>(emptyList()) }
     var selectedFile by remember { mutableStateOf<AdvancedFile?>(null) }
     var selectedSection by remember { mutableStateOf("") }
@@ -112,6 +117,8 @@ fun AdvancedSettingsScreen(
     var directMode by remember { mutableStateOf(false) }
     var message by remember { mutableStateOf("请选择高级设置目录") }
     var busy by remember { mutableStateOf(false) }
+    var expandedGroups by remember { mutableStateOf<Set<String>>(emptySet()) }
+    var expandedFiles by remember { mutableStateOf<Set<String>>(emptySet()) }
 
     fun stageRoot(): Pair<File, DocumentFile?> {
         val saf = findSafRoot(context, targetPath)
@@ -120,98 +127,231 @@ fun AdvancedSettingsScreen(
         copySafToStage(context, saf, stage)
         return stage to saf
     }
+
     fun scan() {
         scope.launch {
             busy = true
             runCatching { withContext(Dispatchers.IO) { stageRoot().first.let { AdvancedPythonBridge.scan(context, it) } } }
-                .onSuccess { files = it; selectedFile = it.firstOrNull(); selectedSection = it.firstOrNull()?.sections?.firstOrNull()?.first ?: ""; message = "已加载 ${it.size} 个受控配置文件" }
+                .onSuccess { loaded ->
+                    files = loaded
+                    val first = loaded.firstOrNull()
+                    selectedFile = first
+                    selectedSection = first?.sections?.firstOrNull()?.first ?: ""
+                    expandedGroups = first?.let { setOf(it.group) } ?: emptySet()
+                    expandedFiles = first?.let { setOf(it.name) } ?: emptySet()
+                    message = "已加载 ${loaded.size} 个受控配置文件"
+                }
                 .onFailure { files = emptyList(); message = "❌ 扫描失败：${it.message}" }
             busy = false
         }
     }
+
+    fun selectNode(file: AdvancedFile, section: String) {
+        selectedFile = file
+        selectedSection = section
+        expandedGroups = expandedGroups + file.group
+        expandedFiles = expandedFiles + file.name
+        scope.launch { drawerState.close() }
+    }
+
     fun loadForm(file: AdvancedFile, section: String) {
         scope.launch {
             busy = true
             runCatching { withContext(Dispatchers.IO) { stageRoot().first.let { AdvancedPythonBridge.form(context, it, file.name, section) } } }
-                .onSuccess { fields = it; values = it.associate { f -> f.path to f.value }; message = "${file.label} / ${it.size} 项" }
+                .onSuccess { loaded ->
+                    fields = loaded
+                    values = loaded.associate { f -> f.path to f.value }
+                    message = "${file.label} / ${loaded.size} 项"
+                }
                 .onFailure { fields = emptyList(); message = "❌ 读取失败：${it.message}" }
             busy = false
         }
     }
-    LaunchedEffect(targetPath) { if (targetPath.isNotBlank()) scan() }
-    LaunchedEffect(selectedFile, selectedSection, directMode) { selectedFile?.let { loadForm(it, selectedSection) } }
 
-    Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
-        Text("🛠️ 高级设置", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
-        Text("按桌面工具的 FILE_INDEX_META / SCHEMA_META_CONFIG 加载受控字段；补丁模式写入 .custom.yaml，直写模式修改源方案。", fontSize = 12.sp, color = Color.Gray)
-        Spacer(Modifier.height(10.dp))
-        Card(Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = Color.White), border = CardDefaults.outlinedCardBorder(true)) {
-            Column(Modifier.padding(12.dp)) {
-                Text("配置目录", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
-                Text(if (targetPath == "DEFAULT") "默认 /rime" else if (isRootTarget(targetPath)) "Root ${rootTargetPath(targetPath)}" else if (targetPath.isBlank()) "未选择" else "SAF 授权目录", fontSize = 12.sp, color = Color.Gray)
-                Row(Modifier.fillMaxWidth().padding(top = 8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    OutlinedButton({ onTargetPathChange("DEFAULT") }, Modifier.weight(1f)) { Text("默认 /rime") }
-                    OutlinedButton(onPickSafDirectory, Modifier.weight(1f)) { Text("选择 SAF") }
-                }
-                Row(Modifier.fillMaxWidth().padding(top = 4.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    FilterChip(selected = !directMode, onClick = { directMode = false }, label = { Text("补丁模式") })
-                    FilterChip(selected = directMode, onClick = { directMode = true }, label = { Text("直写模式") })
-                    Button({ scan() }, enabled = !busy, modifier = Modifier.weight(1f), colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen)) { Text(if (busy) "处理中…" else "扫描") }
-                }
-            }
-        }
-        Spacer(Modifier.height(8.dp)); Text(message, fontSize = 12.sp, color = Color.Gray)
-        files.forEach { file ->
-            Card(Modifier.fillMaxWidth().padding(top = 8.dp), colors = CardDefaults.cardColors(containerColor = Color.White), border = CardDefaults.outlinedCardBorder(true)) {
-                Column(Modifier.padding(10.dp)) {
-                    TextButton({ selectedFile = file; selectedSection = file.sections.firstOrNull()?.first ?: "" }, Modifier.fillMaxWidth()) { Text("${if (selectedFile?.name == file.name) "●" else "○"} ${file.label}", modifier = Modifier.fillMaxWidth(), color = MorandiDarkGreen) }
-                    if (selectedFile?.name == file.name) file.sections.forEach { (key, title) ->
-                        FilterChip(selected = selectedSection == key, onClick = { selectedSection = key }, label = { Text(title, fontSize = 11.sp) }, modifier = Modifier.padding(end = 4.dp))
+    LaunchedEffect(targetPath) { if (targetPath.isNotBlank()) scan() }
+    LaunchedEffect(selectedFile?.name, selectedSection, directMode) {
+        selectedFile?.let { loadForm(it, selectedSection) }
+    }
+
+    val groupedFiles = files.groupBy { it.group }
+    ModalNavigationDrawer(
+        drawerState = drawerState,
+        gesturesEnabled = true,
+        drawerContent = {
+            ModalDrawerSheet(
+                drawerContainerColor = Color.White,
+                modifier = Modifier.widthIn(min = 285.dp, max = 340.dp)
+            ) {
+                Column(Modifier.fillMaxSize()) {
+                    Row(
+                        Modifier.fillMaxWidth().padding(horizontal = 18.dp, vertical = 18.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Column(Modifier.weight(1f)) {
+                            Text("高级设置目录", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
+                            Text("向右滑动关闭 · 点击条目进入编辑", fontSize = 11.sp, color = Color.Gray)
+                        }
+                        TextButton(onClick = { scope.launch { drawerState.close() } }) { Text("关闭") }
                     }
-                }
-            }
-        }
-        if (fields.isNotEmpty()) {
-            Spacer(Modifier.height(10.dp))
-            fields.forEach { field ->
-                val current = values[field.path] ?: ""
-                if (field.type == "bool") {
-                    Row(Modifier.fillMaxWidth().padding(vertical = 4.dp), horizontalArrangement = Arrangement.SpaceBetween) {
-                        Column(Modifier.weight(1f)) { Text(field.title, fontWeight = FontWeight.Bold); if (field.desc.isNotBlank()) Text(field.desc, fontSize = 11.sp, color = Color.Gray) }
-                        Switch(checked = current.equals("true", true), onCheckedChange = { v -> values = values + (field.path to v.toString()) })
-                    }
-                } else if (field.type == "select" && field.options.isNotEmpty()) {
-                    Column(Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
-                        Text(field.title, fontWeight = FontWeight.Bold)
-                        if (field.desc.isNotBlank()) Text(field.desc, fontSize = 11.sp, color = Color.Gray)
-                        Row(Modifier.fillMaxWidth().padding(top = 4.dp), horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-                            field.options.forEach { option ->
-                                FilterChip(selected = current == option, onClick = { values = values + (field.path to option) }, label = { Text(option, fontSize = 11.sp) })
+                    Divider(color = MorandiLightGreen)
+                    Column(Modifier.fillMaxWidth().verticalScroll(rememberScrollState()).padding(vertical = 8.dp)) {
+                        groupedFiles.forEach { (group, groupFiles) ->
+                            val groupOpen = group in expandedGroups
+                            TextButton(
+                                onClick = { expandedGroups = if (groupOpen) expandedGroups - group else expandedGroups + group },
+                                modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp),
+                                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 5.dp)
+                            ) {
+                                Text(if (groupOpen) "⌄  $group" else "›  $group", modifier = Modifier.fillMaxWidth(), fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
+                            }
+                            if (groupOpen) groupFiles.forEach { file ->
+                                val fileOpen = file.name in expandedFiles
+                                Row(
+                                    Modifier.fillMaxWidth().clickable {
+                                        expandedFiles = if (fileOpen) expandedFiles - file.name else expandedFiles + file.name
+                                    }.padding(start = 30.dp, end = 12.dp, top = 6.dp, bottom = 6.dp),
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    Text(if (fileOpen) "⌄" else "›", color = MorandiGreen, modifier = Modifier.padding(end = 6.dp))
+                                    Text(file.label, fontSize = 13.sp, fontWeight = if (selectedFile?.name == file.name) FontWeight.Bold else FontWeight.Normal, color = if (selectedFile?.name == file.name) MorandiDarkGreen else Color.DarkGray)
+                                }
+                                if (fileOpen) file.sections.forEach { (sectionKey, sectionTitle) ->
+                                    val selected = selectedFile?.name == file.name && selectedSection == sectionKey
+                                    TextButton(
+                                        onClick = { selectNode(file, sectionKey) },
+                                        modifier = Modifier.fillMaxWidth().padding(start = 48.dp, end = 8.dp),
+                                        contentPadding = PaddingValues(horizontal = 8.dp, vertical = 4.dp)
+                                    ) {
+                                        Text(if (selected) "●  $sectionTitle" else "○  $sectionTitle", modifier = Modifier.fillMaxWidth(), fontSize = 12.sp, color = if (selected) MorandiGreen else Color.Gray)
+                                    }
+                                }
                             }
                         }
                     }
-                } else {
-                    OutlinedTextField(value = current, onValueChange = { values = values + (field.path to it) }, label = { Text(field.title) }, supportingText = { if (field.desc.isNotBlank()) Text(field.desc) }, modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp), minLines = if (field.type in listOf("multiline_str", "list_text", "dynamic_list", "algebra_patch", "raw_yaml", "dynamic_block_list", "dynamic_kv_list")) 3 else 1, singleLine = field.type !in listOf("multiline_str", "list_text", "dynamic_list", "algebra_patch", "raw_yaml", "dynamic_block_list", "dynamic_kv_list"), textStyle = LocalTextStyle.current.copy(fontSize = 13.sp))
                 }
             }
-            Button(onClick = {
-                val file = selectedFile ?: return@Button
-                scope.launch {
-                    busy = true; message = "正在校验并保存…"
-                    runCatching {
-                        withContext(Dispatchers.IO) {
-                            val (stage, saf) = stageRoot()
-                            val result = AdvancedPythonBridge.save(context, stage, file.name, selectedSection, directMode, values)
-                            if (saf != null) {
-                                stage.listFiles().filter { it.isFile && it.name.endsWith(".yaml", true) }.forEach { copyStageFileToSaf(context, saf, it) }
-                            }
-                            result
-                        }
-                    }.onSuccess { result -> message = "✅ ${JSONObject(result).optString("message")}：${JSONArray(JSONObject(result).optString("changed", "[]")).join(", ")}" }
-                     .onFailure { message = "❌ 保存失败：${it.message}" }
-                    busy = false
+        }
+    ) {
+        Column(Modifier.fillMaxSize().background(Color(0xFFF8FAF8))) {
+            Row(
+                Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 8.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                TextButton(onClick = { scope.launch { drawerState.open() } }, contentPadding = PaddingValues(horizontal = 8.dp)) {
+                    Text("☰", fontSize = 24.sp, color = MorandiDarkGreen)
                 }
-            }, enabled = !busy, modifier = Modifier.fillMaxWidth().padding(top = 8.dp), colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen)) { Text("💾 保存修改") }
+                Column(Modifier.weight(1f)) {
+                    Text("🛠️ 高级设置", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
+                    Text(
+                        selectedFile?.let { "${it.label}  ·  ${fields.size} 项" } ?: "从左侧选择配置分类",
+                        fontSize = 11.sp,
+                        color = Color.Gray,
+                        maxLines = 1,
+                        overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
+                    )
+                }
+                TextButton(onClick = { scan() }, enabled = !busy, contentPadding = PaddingValues(horizontal = 8.dp)) { Text("刷新") }
+            }
+            Divider(color = MorandiLightGreen)
+
+            Card(
+                Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 8.dp),
+                colors = CardDefaults.cardColors(containerColor = Color.White),
+                border = CardDefaults.outlinedCardBorder(true)
+            ) {
+                Column(Modifier.padding(horizontal = 12.dp, vertical = 8.dp)) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Column(Modifier.weight(1f)) {
+                            Text("配置目录", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
+                            Text(
+                                when {
+                                    targetPath == "DEFAULT" -> "默认 /rime"
+                                    isRootTarget(targetPath) -> "Root ${rootTargetPath(targetPath)}"
+                                    targetPath.isBlank() -> "未选择"
+                                    else -> "SAF 授权目录"
+                                },
+                                fontSize = 11.sp,
+                                color = Color.Gray,
+                                maxLines = 1,
+                                overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
+                            )
+                        }
+                        OutlinedButton(onClick = { onTargetPathChange("DEFAULT") }, contentPadding = PaddingValues(horizontal = 8.dp)) { Text("默认") }
+                        Spacer(Modifier.width(6.dp))
+                        OutlinedButton(onClick = onPickSafDirectory, contentPadding = PaddingValues(horizontal = 8.dp)) { Text("SAF") }
+                    }
+                    Row(Modifier.fillMaxWidth().padding(top = 5.dp), horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
+                        FilterChip(selected = !directMode, onClick = { directMode = false }, label = { Text("补丁模式") })
+                        FilterChip(selected = directMode, onClick = { directMode = true }, label = { Text("直写模式") })
+                        Spacer(Modifier.weight(1f))
+                        Text(message, fontSize = 10.sp, color = Color.Gray, maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)
+                    }
+                }
+            }
+
+            if (selectedFile == null) {
+                Column(Modifier.fillMaxSize().padding(28.dp), verticalArrangement = Arrangement.Center) {
+                    Text("请点击左上角 ☰，从配置目录中选择设置分类", color = Color.Gray)
+                }
+            } else {
+                Column(Modifier.weight(1f).verticalScroll(rememberScrollState()).padding(horizontal = 12.dp)) {
+                    Text(selectedFile!!.sections.firstOrNull { it.first == selectedSection }?.second ?: selectedSection, fontSize = 18.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen, modifier = Modifier.padding(vertical = 6.dp))
+                    if (fields.isEmpty() && !busy) Text("该分类没有可编辑字段", color = Color.Gray)
+                    fields.forEach { field ->
+                        val current = values[field.path] ?: ""
+                        if (field.type == "bool") {
+                            Row(Modifier.fillMaxWidth().padding(vertical = 5.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                                Column(Modifier.weight(1f)) { Text(field.title, fontWeight = FontWeight.Bold); if (field.desc.isNotBlank()) Text(field.desc, fontSize = 11.sp, color = Color.Gray) }
+                                Switch(checked = current.equals("true", true), onCheckedChange = { v -> values = values + (field.path to v.toString()) })
+                            }
+                        } else if (field.type == "select" && field.options.isNotEmpty()) {
+                            Column(Modifier.fillMaxWidth().padding(vertical = 5.dp)) {
+                                Text(field.title, fontWeight = FontWeight.Bold)
+                                if (field.desc.isNotBlank()) Text(field.desc, fontSize = 11.sp, color = Color.Gray)
+                                Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()).padding(top = 4.dp), horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                                    field.options.forEach { option -> FilterChip(selected = current == option, onClick = { values = values + (field.path to option) }, label = { Text(option, fontSize = 11.sp) }) }
+                                }
+                            }
+                        } else {
+                            OutlinedTextField(
+                                value = current,
+                                onValueChange = { values = values + (field.path to it) },
+                                label = { Text(field.title) },
+                                supportingText = { if (field.desc.isNotBlank()) Text(field.desc) },
+                                modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
+                                minLines = if (field.type in listOf("multiline_str", "list_text", "dynamic_list", "algebra_patch", "raw_yaml", "dynamic_block_list", "dynamic_kv_list")) 3 else 1,
+                                singleLine = field.type !in listOf("multiline_str", "list_text", "dynamic_list", "algebra_patch", "raw_yaml", "dynamic_block_list", "dynamic_kv_list"),
+                                textStyle = LocalTextStyle.current.copy(fontSize = 13.sp)
+                            )
+                        }
+                    }
+                    Button(
+                        onClick = {
+                            val file = selectedFile ?: return@Button
+                            scope.launch {
+                                busy = true
+                                message = "正在校验并保存…"
+                                runCatching {
+                                    withContext(Dispatchers.IO) {
+                                        val (stage, saf) = stageRoot()
+                                        val result = AdvancedPythonBridge.save(context, stage, file.name, selectedSection, directMode, values)
+                                        if (saf != null) stage.listFiles().filter { it.isFile && it.name.endsWith(".yaml", true) }.forEach { copyStageFileToSaf(context, saf, it) }
+                                        result
+                                    }
+                                }.onSuccess { result ->
+                                    val json = JSONObject(result)
+                                    message = "✅ ${json.optString("message")}：${JSONArray(json.optString("changed", "[]")).join(", ")}"
+                                }.onFailure { message = "❌ 保存失败：${it.message}" }
+                                busy = false
+                            }
+                        },
+                        enabled = !busy,
+                        modifier = Modifier.fillMaxWidth().padding(top = 8.dp, bottom = 16.dp),
+                        colors = ButtonDefaults.buttonColors(containerColor = MorandiGreen)
+                    ) { Text(if (busy) "处理中…" else "💾 保存当前分类") }
+                }
+            }
         }
     }
 }

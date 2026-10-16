@@ -1684,7 +1684,9 @@ fun CustomModeTab(
                             fontSize = 14.sp,
                             fontWeight = FontWeight.Bold,
                             color = if (task.isSelected) MorandiDarkGreen else Color.DarkGray,
-                            modifier = Modifier.weight(1f)
+                            modifier = Modifier.weight(1f),
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
                         )
                         Text(
                             text = if (task.isExpanded) "▲" else "▼",
@@ -1697,56 +1699,57 @@ fun CustomModeTab(
                         Column(modifier = Modifier.padding(start = 12.dp, end = 12.dp, bottom = 12.dp)) {
                             Divider(color = MorandiLightGreen, modifier = Modifier.padding(bottom = 12.dp))
 
-                            Text("任务别名 (选填)", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 4.dp))
-                            androidx.compose.foundation.text.BasicTextField(
-                                value = task.name,
-                                onValueChange = { newName ->
-                                    val updated = customTasks.toMutableList()
-                                    updated[index] = task.copy(name = newName)
-                                    onTasksChange(updated)
-                                },
-                                textStyle = androidx.compose.ui.text.TextStyle(fontSize = 13.sp, color = Color.DarkGray),
-                                singleLine = true,
-                                decorationBox = { innerTextField ->
-                                    Box(
-                                        contentAlignment = Alignment.CenterStart,
-                                        modifier = Modifier
-                                            .fillMaxWidth()
-                                            .height(38.dp)
-                                            .border(1.dp, MorandiBorder, RoundedCornerShape(6.dp))
-                                            .padding(horizontal = 10.dp)
-                                    ) {
-                                        if (task.name.isEmpty()) Text("如: 极速版扩展包", color = Color.LightGray, fontSize = 13.sp)
-                                        innerTextField()
-                                    }
+                            // 手机端将别名和 URL 放在同一行，长 URL 保持单行横向滚动，避免编辑区域被挤成多段。
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                                verticalAlignment = Alignment.Top
+                            ) {
+                                Column(modifier = Modifier.weight(0.34f)) {
+                                    Text("任务别名", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 4.dp))
+                                    androidx.compose.foundation.text.BasicTextField(
+                                        value = task.name,
+                                        onValueChange = { newName ->
+                                            val updated = customTasks.toMutableList()
+                                            updated[index] = task.copy(name = newName)
+                                            onTasksChange(updated)
+                                        },
+                                        textStyle = androidx.compose.ui.text.TextStyle(fontSize = 13.sp, color = Color.DarkGray),
+                                        singleLine = true,
+                                        decorationBox = { innerTextField ->
+                                            Box(
+                                                contentAlignment = Alignment.CenterStart,
+                                                modifier = Modifier.fillMaxWidth().height(38.dp).border(1.dp, MorandiBorder, RoundedCornerShape(6.dp)).padding(horizontal = 10.dp)
+                                            ) {
+                                                if (task.name.isEmpty()) Text("如：词库", color = Color.LightGray, fontSize = 12.sp)
+                                                innerTextField()
+                                            }
+                                        }
+                                    )
                                 }
-                            )
-                            Spacer(modifier = Modifier.height(10.dp))
-
-                            Text("直链 URL 或 绝对路径 (.zip)", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 4.dp))
-                            androidx.compose.foundation.text.BasicTextField(
-                                value = task.url,
-                                onValueChange = { newUrl ->
-                                    val updated = customTasks.toMutableList()
-                                    updated[index] = task.copy(url = newUrl)
-                                    onTasksChange(updated)
-                                },
-                                textStyle = androidx.compose.ui.text.TextStyle(fontSize = 13.sp, color = Color.DarkGray),
-                                singleLine = true,
-                                decorationBox = { innerTextField ->
-                                    Box(
-                                        contentAlignment = Alignment.CenterStart,
-                                        modifier = Modifier
-                                            .fillMaxWidth()
-                                            .height(38.dp)
-                                            .border(1.dp, MorandiBorder, RoundedCornerShape(6.dp))
-                                            .padding(horizontal = 10.dp)
-                                    ) {
-                                        if (task.url.isEmpty()) Text("https://... 或 /storage/...", color = Color.LightGray, fontSize = 13.sp)
-                                        innerTextField()
-                                    }
+                                Column(modifier = Modifier.weight(0.66f)) {
+                                    Text("直链 URL 或绝对路径", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 4.dp))
+                                    androidx.compose.foundation.text.BasicTextField(
+                                        value = task.url,
+                                        onValueChange = { newUrl ->
+                                            val updated = customTasks.toMutableList()
+                                            updated[index] = task.copy(url = newUrl)
+                                            onTasksChange(updated)
+                                        },
+                                        textStyle = androidx.compose.ui.text.TextStyle(fontSize = 13.sp, color = Color.DarkGray),
+                                        singleLine = true,
+                                        decorationBox = { innerTextField ->
+                                            Box(
+                                                contentAlignment = Alignment.CenterStart,
+                                                modifier = Modifier.fillMaxWidth().height(38.dp).border(1.dp, MorandiBorder, RoundedCornerShape(6.dp)).padding(horizontal = 10.dp)
+                                            ) {
+                                                if (task.url.isEmpty()) Text("https://...", color = Color.LightGray, fontSize = 12.sp)
+                                                innerTextField()
+                                            }
+                                        }
+                                    )
                                 }
-                            )
+                            }
                             Spacer(modifier = Modifier.height(10.dp))
 
                             Text("目标解压路径", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 4.dp))
