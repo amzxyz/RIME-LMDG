@@ -62,6 +62,9 @@ android {
 chaquopy {
     defaultConfig {
         version = "3.10"
+        pip {
+            install("ruamel.yaml==0.18.6")
+        }
     }
 }
 
