@@ -99,6 +99,41 @@ private fun copyStageFileToSaf(context: Context, root: DocumentFile, file: File,
 private fun findSafRoot(context: Context, path: String): DocumentFile? =
     if (path == "DEFAULT" || isRootTarget(path)) null else DocumentFile.fromTreeUri(context, Uri.parse(path))
 
+private data class AdvancedCategory(
+    val group: String,
+    val key: String,
+    val title: String,
+    val files: List<AdvancedFile>
+)
+
+private fun buildAdvancedCategories(files: List<AdvancedFile>): Map<String, List<AdvancedCategory>> {
+    return files.groupBy { it.group }.mapValues { (_, groupFiles) ->
+        groupFiles
+            .flatMap { file -> file.sections.map { section -> Triple(section.first, section.second, file) } }
+            .groupBy { it.first to it.second }
+            .map { (identity, entries) ->
+                AdvancedCategory(
+                    group = groupFiles.first().group,
+                    key = identity.first,
+                    title = identity.second,
+                    files = entries.map { it.third }.distinctBy { it.name }
+                )
+            }
+    }
+}
+
+private fun shortSchemeLabel(file: AdvancedFile): String {
+    val text = file.label
+    return when {
+        text.contains("基础版") || text.contains("Base", true) -> "Base"
+        text.contains("增强版") || text.contains("Pro", true) -> "Pro"
+        text.contains("轻量") || text.contains("Lite", true) -> "Lite"
+        text.contains("T9i", true) -> "T9i"
+        text.contains("T9", true) -> "T9"
+        else -> text.substringBefore(" (").ifBlank { text }
+    }
+}
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AdvancedSettingsScreen(
@@ -118,7 +153,6 @@ fun AdvancedSettingsScreen(
     var message by remember { mutableStateOf("请选择高级设置目录") }
     var busy by remember { mutableStateOf(false) }
     var expandedGroups by remember { mutableStateOf<Set<String>>(emptySet()) }
-    var expandedFiles by remember { mutableStateOf<Set<String>>(emptySet()) }
 
     fun stageRoot(): Pair<File, DocumentFile?> {
         val saf = findSafRoot(context, targetPath)
@@ -128,42 +162,51 @@ fun AdvancedSettingsScreen(
         return stage to saf
     }
 
-    fun scan() {
+    fun loadForm(file: AdvancedFile, section: String) {
         scope.launch {
             busy = true
-            runCatching { withContext(Dispatchers.IO) { stageRoot().first.let { AdvancedPythonBridge.scan(context, it) } } }
-                .onSuccess { loaded ->
-                    files = loaded
-                    val first = loaded.firstOrNull()
-                    selectedFile = first
-                    selectedSection = first?.sections?.firstOrNull()?.first ?: ""
-                    expandedGroups = first?.let { setOf(it.group) } ?: emptySet()
-                    expandedFiles = first?.let { setOf(it.name) } ?: emptySet()
-                    message = "已加载 ${loaded.size} 个受控配置文件"
+            runCatching {
+                withContext(Dispatchers.IO) {
+                    stageRoot().first.let { AdvancedPythonBridge.form(context, it, file.name, section) }
                 }
-                .onFailure { files = emptyList(); message = "❌ 扫描失败：${it.message}" }
+            }.onSuccess { loaded ->
+                fields = loaded
+                values = loaded.associate { f -> f.path to f.value }
+                message = "${file.label} · ${loaded.size} 个设置项"
+            }.onFailure {
+                fields = emptyList()
+                message = "❌ 读取失败：${it.message}"
+            }
             busy = false
         }
     }
 
-    fun selectNode(file: AdvancedFile, section: String) {
-        selectedFile = file
-        selectedSection = section
-        expandedGroups = expandedGroups + file.group
-        expandedFiles = expandedFiles + file.name
+    fun selectCategory(category: AdvancedCategory) {
+        selectedSection = category.key
+        selectedFile = category.files.firstOrNull { it.name == selectedFile?.name } ?: category.files.firstOrNull()
+        expandedGroups = expandedGroups + category.group
         scope.launch { drawerState.close() }
     }
 
-    fun loadForm(file: AdvancedFile, section: String) {
+    fun scan() {
         scope.launch {
             busy = true
-            runCatching { withContext(Dispatchers.IO) { stageRoot().first.let { AdvancedPythonBridge.form(context, it, file.name, section) } } }
-                .onSuccess { loaded ->
-                    fields = loaded
-                    values = loaded.associate { f -> f.path to f.value }
-                    message = "${file.label} / ${loaded.size} 项"
-                }
-                .onFailure { fields = emptyList(); message = "❌ 读取失败：${it.message}" }
+            runCatching {
+                withContext(Dispatchers.IO) { stageRoot().first.let { AdvancedPythonBridge.scan(context, it) } }
+            }.onSuccess { loaded ->
+                files = loaded
+                val categories = buildAdvancedCategories(loaded)
+                val first = categories.values.flatten().firstOrNull()
+                selectedSection = first?.key ?: ""
+                selectedFile = first?.files?.firstOrNull()
+                expandedGroups = first?.let { setOf(it.group) } ?: emptySet()
+                message = "已加载 ${loaded.size} 个配置文件，${categories.values.sumOf { it.size }} 个设置分类"
+            }.onFailure {
+                files = emptyList()
+                selectedFile = null
+                fields = emptyList()
+                message = "❌ 扫描失败：${it.message}"
+            }
             busy = false
         }
     }
@@ -173,14 +216,18 @@ fun AdvancedSettingsScreen(
         selectedFile?.let { loadForm(it, selectedSection) }
     }
 
-    val groupedFiles = files.groupBy { it.group }
+    val categoriesByGroup = buildAdvancedCategories(files)
+    val selectedCategory = categoriesByGroup.values.flatten().firstOrNull {
+        it.key == selectedSection && it.files.any { file -> file.name == selectedFile?.name }
+    }
+
     ModalNavigationDrawer(
         drawerState = drawerState,
         gesturesEnabled = true,
         drawerContent = {
             ModalDrawerSheet(
                 drawerContainerColor = Color.White,
-                modifier = Modifier.widthIn(min = 285.dp, max = 340.dp)
+                modifier = Modifier.widthIn(min = 290.dp, max = 350.dp)
             ) {
                 Column(Modifier.fillMaxSize()) {
                     Row(
@@ -190,13 +237,13 @@ fun AdvancedSettingsScreen(
                     ) {
                         Column(Modifier.weight(1f)) {
                             Text("高级设置目录", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
-                            Text("向右滑动关闭 · 点击条目进入编辑", fontSize = 11.sp, color = Color.Gray)
+                            Text("同一分类已合并，进入后切换方案", fontSize = 11.sp, color = Color.Gray)
                         }
                         TextButton(onClick = { scope.launch { drawerState.close() } }) { Text("关闭") }
                     }
                     Divider(color = MorandiLightGreen)
                     Column(Modifier.fillMaxWidth().verticalScroll(rememberScrollState()).padding(vertical = 8.dp)) {
-                        groupedFiles.forEach { (group, groupFiles) ->
+                        categoriesByGroup.forEach { (group, categories) ->
                             val groupOpen = group in expandedGroups
                             TextButton(
                                 onClick = { expandedGroups = if (groupOpen) expandedGroups - group else expandedGroups + group },
@@ -205,25 +252,17 @@ fun AdvancedSettingsScreen(
                             ) {
                                 Text(if (groupOpen) "⌄  $group" else "›  $group", modifier = Modifier.fillMaxWidth(), fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
                             }
-                            if (groupOpen) groupFiles.forEach { file ->
-                                val fileOpen = file.name in expandedFiles
-                                Row(
-                                    Modifier.fillMaxWidth().clickable {
-                                        expandedFiles = if (fileOpen) expandedFiles - file.name else expandedFiles + file.name
-                                    }.padding(start = 30.dp, end = 12.dp, top = 6.dp, bottom = 6.dp),
-                                    verticalAlignment = Alignment.CenterVertically
+                            if (groupOpen) categories.forEach { category ->
+                                val selected = selectedCategory?.group == category.group && selectedCategory.key == category.key
+                                TextButton(
+                                    onClick = { selectCategory(category) },
+                                    modifier = Modifier.fillMaxWidth().padding(start = 28.dp, end = 8.dp),
+                                    contentPadding = PaddingValues(horizontal = 10.dp, vertical = 6.dp)
                                 ) {
-                                    Text(if (fileOpen) "⌄" else "›", color = MorandiGreen, modifier = Modifier.padding(end = 6.dp))
-                                    Text(file.label, fontSize = 13.sp, fontWeight = if (selectedFile?.name == file.name) FontWeight.Bold else FontWeight.Normal, color = if (selectedFile?.name == file.name) MorandiDarkGreen else Color.DarkGray)
-                                }
-                                if (fileOpen) file.sections.forEach { (sectionKey, sectionTitle) ->
-                                    val selected = selectedFile?.name == file.name && selectedSection == sectionKey
-                                    TextButton(
-                                        onClick = { selectNode(file, sectionKey) },
-                                        modifier = Modifier.fillMaxWidth().padding(start = 48.dp, end = 8.dp),
-                                        contentPadding = PaddingValues(horizontal = 8.dp, vertical = 4.dp)
-                                    ) {
-                                        Text(if (selected) "●  $sectionTitle" else "○  $sectionTitle", modifier = Modifier.fillMaxWidth(), fontSize = 12.sp, color = if (selected) MorandiGreen else Color.Gray)
+                                    Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                                        Text(if (selected) "●" else "○", color = if (selected) MorandiGreen else Color.LightGray, modifier = Modifier.padding(end = 8.dp))
+                                        Text(category.title, modifier = Modifier.weight(1f), fontSize = 13.sp, fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal, color = if (selected) MorandiDarkGreen else Color.DarkGray, maxLines = 2, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)
+                                        Text("${category.files.size}", fontSize = 10.sp, color = Color.Gray)
                                     }
                                 }
                             }
@@ -244,7 +283,7 @@ fun AdvancedSettingsScreen(
                 Column(Modifier.weight(1f)) {
                     Text("🛠️ 高级设置", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
                     Text(
-                        selectedFile?.let { "${it.label}  ·  ${fields.size} 项" } ?: "从左侧选择配置分类",
+                        selectedCategory?.title ?: "从左侧选择设置分类",
                         fontSize = 11.sp,
                         color = Color.Gray,
                         maxLines = 1,
@@ -290,14 +329,32 @@ fun AdvancedSettingsScreen(
                 }
             }
 
-            if (selectedFile == null) {
+            if (selectedCategory != null && selectedCategory.files.size > 1) {
+                ScrollableTabRow(
+                    selectedTabIndex = selectedCategory.files.indexOfFirst { it.name == selectedFile?.name }.coerceAtLeast(0),
+                    edgePadding = 12.dp,
+                    containerColor = Color.Transparent,
+                    divider = {}
+                ) {
+                    selectedCategory.files.forEach { file ->
+                        Tab(
+                            selected = file.name == selectedFile?.name,
+                            onClick = { selectedFile = file },
+                            text = { Text(shortSchemeLabel(file), maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis) }
+                        )
+                    }
+                }
+            }
+
+            if (selectedCategory == null || selectedFile == null) {
                 Column(Modifier.fillMaxSize().padding(28.dp), verticalArrangement = Arrangement.Center) {
                     Text("请点击左上角 ☰，从配置目录中选择设置分类", color = Color.Gray)
                 }
             } else {
                 Column(Modifier.weight(1f).verticalScroll(rememberScrollState()).padding(horizontal = 12.dp)) {
-                    Text(selectedFile!!.sections.firstOrNull { it.first == selectedSection }?.second ?: selectedSection, fontSize = 18.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen, modifier = Modifier.padding(vertical = 6.dp))
-                    if (fields.isEmpty() && !busy) Text("该分类没有可编辑字段", color = Color.Gray)
+                    Text(selectedCategory.title, fontSize = 18.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen, modifier = Modifier.padding(vertical = 6.dp))
+                    Text(selectedFile!!.label, fontSize = 11.sp, color = Color.Gray)
+                    if (fields.isEmpty() && !busy) Text("该分类没有可编辑字段", color = Color.Gray, modifier = Modifier.padding(top = 10.dp))
                     fields.forEach { field ->
                         val current = values[field.path] ?: ""
                         if (field.type == "bool") {
