@@ -506,7 +506,7 @@ def process_files(path_in: str, path_out: str):
 
 if __name__ == "__main__":
     input_dir  = "/home/amz/Documents/输入法方案/原始词库"
-    output_dir = "/home/amz/Documents/输入法方案/万象拼音/dicts"
+    output_dir = "/home/amz/Documents/输入法方案/LMDG/dicts"
     custom_dir = "pinyin_data"
 
     load_custom_pinyin_from_directory(custom_dir)
