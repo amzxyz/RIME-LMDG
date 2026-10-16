@@ -31,9 +31,9 @@ import org.json.JSONObject
 import java.io.File
 import java.util.Locale
 
-private data class AdvancedFile(val group: String, val name: String, val label: String, val sections: List<Pair<String, String>>)
-private data class AdvancedChoice(val id: String, val label: String, val checked: Boolean)
-private data class AdvancedField(
+data class AdvancedFile(val group: String, val name: String, val label: String, val sections: List<Pair<String, String>>)
+data class AdvancedChoice(val id: String, val label: String, val checked: Boolean)
+data class AdvancedField(
     val path: String,
     val title: String,
     val desc: String,
@@ -183,27 +183,44 @@ private fun shortSchemeLabel(file: AdvancedFile): String {
     }
 }
 
+class AdvancedSettingsMemory {
+    val files = mutableStateOf<List<AdvancedFile>>(emptyList())
+    val selectedFile = mutableStateOf<AdvancedFile?>(null)
+    val selectedSection = mutableStateOf("")
+    val fields = mutableStateOf<List<AdvancedField>>(emptyList())
+    val commonFields = mutableStateOf<List<AdvancedField>>(emptyList())
+    val values = mutableStateOf<Map<String, String>>(emptyMap())
+    val showCommon = mutableStateOf(true)
+    val directMode = mutableStateOf(false)
+    val message = mutableStateOf("请选择高级设置目录")
+    val busy = mutableStateOf(false)
+    val expandedGroups = mutableStateOf<Set<String>>(emptySet())
+    val loadedTarget = mutableStateOf("")
+}
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AdvancedSettingsScreen(
     context: Context,
     targetPath: String,
+    state: AdvancedSettingsMemory,
     onTargetPathChange: (String) -> Unit,
     onPickSafDirectory: () -> Unit
 ) {
     val scope = rememberCoroutineScope()
     val drawerState = rememberDrawerState(DrawerValue.Closed)
-    var files by remember { mutableStateOf<List<AdvancedFile>>(emptyList()) }
-    var selectedFile by remember { mutableStateOf<AdvancedFile?>(null) }
-    var selectedSection by remember { mutableStateOf("") }
-    var fields by remember { mutableStateOf<List<AdvancedField>>(emptyList()) }
-    var commonFields by remember { mutableStateOf<List<AdvancedField>>(emptyList()) }
-    var values by remember { mutableStateOf<Map<String, String>>(emptyMap()) }
-    var showCommon by remember { mutableStateOf(true) }
-    var directMode by remember { mutableStateOf(false) }
-    var message by remember { mutableStateOf("请选择高级设置目录") }
-    var busy by remember { mutableStateOf(false) }
-    var expandedGroups by remember { mutableStateOf<Set<String>>(emptySet()) }
+    var files by state.files
+    var selectedFile by state.selectedFile
+    var selectedSection by state.selectedSection
+    var fields by state.fields
+    var commonFields by state.commonFields
+    var values by state.values
+    var showCommon by state.showCommon
+    var directMode by state.directMode
+    var message by state.message
+    var busy by state.busy
+    var expandedGroups by state.expandedGroups
+    var loadedTarget by state.loadedTarget
 
     fun stageRoot(): Pair<File, DocumentFile?> {
         val saf = findSafRoot(context, targetPath)
@@ -315,7 +332,12 @@ fun AdvancedSettingsScreen(
         }
     }
 
-    LaunchedEffect(targetPath) { if (targetPath.isNotBlank()) scan() }
+    LaunchedEffect(targetPath) {
+        if (targetPath.isNotBlank() && loadedTarget != targetPath) {
+            loadedTarget = targetPath
+            scan()
+        }
+    }
     LaunchedEffect(showCommon, selectedFile?.name, selectedSection, directMode) {
         if (!showCommon) selectedFile?.let { loadForm(it, selectedSection) }
     }

@@ -826,6 +826,7 @@ fun WanxiangDownloaderApp() {
     )
 
     var selectedTabIndex by remember { mutableStateOf(0) }
+    val advancedSettingsMemory = remember { AdvancedSettingsMemory() }
     var customTasks by remember {
         mutableStateOf(loadCustomTasks(sharedPref.getString("custom_tasks_data", "[]") ?: "[]"))
     }
@@ -846,7 +847,7 @@ fun WanxiangDownloaderApp() {
             Tab(
                 selected = selectedTabIndex == 1,
                 onClick = { selectedTabIndex = 1 },
-                text = { Text("自定义模式", fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false) }
+                text = { Text("扩展下载", fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false) }
             )
             Tab(
                 selected = selectedTabIndex == 2,
@@ -867,7 +868,7 @@ fun WanxiangDownloaderApp() {
                     .verticalScroll(rememberScrollState())
                     .weight(1f)
             ) {
-                Text("📱 万象拼音更新器", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
+                Text("📱 万象拼音更新器", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
                 Text("v$localVersionName • 全功能终极版", fontSize = 12.sp, color = Color.Gray)
                 Spacer(modifier = Modifier.height(16.dp))
 
@@ -1410,6 +1411,7 @@ fun WanxiangDownloaderApp() {
             AdvancedSettingsScreen(
                 context = context,
                 targetPath = advancedSettingsPath,
+                state = advancedSettingsMemory,
                 onTargetPathChange = {
                     advancedSettingsPath = it
                     sharedPref.edit().putString("advanced_settings_path", it).apply()
@@ -1536,7 +1538,7 @@ fun CustomModeTab(
     }
 
     Column(modifier = Modifier.fillMaxSize().padding(16.dp).verticalScroll(rememberScrollState())) {
-        Text("🛠️ 自定义扩展模式", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
+        Text("🛠️ 自定义扩展", fontSize = 18.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
         Text("打勾并点击批量执行，或单独展开配置。本地文件与网络直链均支持。", fontSize = 12.sp, color = Color.Gray)
         Spacer(modifier = Modifier.height(16.dp))
 
