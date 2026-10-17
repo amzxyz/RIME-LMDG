@@ -45,6 +45,8 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
 import androidx.documentfile.provider.DocumentFile
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -553,7 +555,10 @@ fun WanxiangDownloaderApp() {
         mutableStateOf(sharedPref.getString("download_source", DOWNLOAD_SOURCE_CNB) ?: DOWNLOAD_SOURCE_CNB)
     }
     var githubToken by remember { mutableStateOf(sharedPref.getString("gh_token", "") ?: "") }
-    var extraDictText by remember { mutableStateOf(sharedPref.getString("extra_dicts", "") ?: "") }
+    var selectedExtraDictIds by remember {
+        mutableStateOf(loadSelectedExtraDictIds(sharedPref.getString("extra_dicts", "")))
+    }
+    var showExtraDictCatalog by remember { mutableStateOf(false) }
     var advancedSettingsPath by remember {
         mutableStateOf(sharedPref.getString("advanced_settings_path", "DEFAULT") ?: "DEFAULT")
     }
@@ -1289,27 +1294,48 @@ fun WanxiangDownloaderApp() {
                         Card(
                             colors = CardDefaults.cardColors(containerColor = MorandiLightGreen),
                             border = CardDefaults.outlinedCardBorder(true),
-                            modifier = Modifier.fillMaxWidth()
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable { showExtraDictCatalog = true }
                         ) {
-                            Column(Modifier.padding(10.dp)) {
-                                Text("📚 附加词库", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
-                                Text(
-                                    "输入词库名，自动补全 .dict.yaml；逗号、中文逗号、分号或换行均可。点击任意更新按钮时一起下载。",
-                                    fontSize = 11.sp,
-                                    color = Color.Gray,
-                                    modifier = Modifier.padding(top = 3.dp, bottom = 6.dp)
+                            Row(
+                                modifier = Modifier.fillMaxWidth().padding(10.dp),
+                                verticalAlignment = Alignment.CenterVertically,
+                                horizontalArrangement = Arrangement.SpaceBetween
+                            ) {
+                                Column(modifier = Modifier.weight(1f)) {
+                                    Text("📚 附加词库", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
+                                    Text(
+                                        if (selectedExtraDictIds.isEmpty()) "点击选择要一起下载的词库"
+                                        else "已选择 ${selectedExtraDictIds.size} 项：${selectedExtraDictIds.joinToString("、")}",
+                                        fontSize = 11.sp,
+                                        color = Color.Gray,
+                                        maxLines = 1,
+                                        overflow = TextOverflow.Ellipsis,
+                                        modifier = Modifier.padding(top = 3.dp)
+                                    )
+                                }
+                                Text("展开 〉", fontSize = 12.sp, color = MorandiDarkGreen)
+                            }
+                        }
+
+                        if (showExtraDictCatalog) {
+                            Dialog(
+                                onDismissRequest = { showExtraDictCatalog = false },
+                                properties = DialogProperties(
+                                    usePlatformDefaultWidth = false,
+                                    decorFitsSystemWindows = false
                                 )
-                                OutlinedTextField(
-                                    value = extraDictText,
-                                    onValueChange = {
-                                        extraDictText = it
-                                        sharedPref.edit().putString("extra_dicts", it).apply()
+                            ) {
+                                ExtraDictCatalogScreen(
+                                    selectedIds = selectedExtraDictIds,
+                                    onSelectedIdsChange = { ids ->
+                                        selectedExtraDictIds = ids
+                                        sharedPref.edit()
+                                            .putString("extra_dicts", ids.joinToString(","))
+                                            .apply()
                                     },
-                                    modifier = Modifier.fillMaxWidth().heightIn(min = 76.dp),
-                                    minLines = 2,
-                                    maxLines = 3,
-                                    placeholder = { Text("例如：shici,fangyan 或每行一个", fontSize = 12.sp) },
-                                    textStyle = androidx.compose.ui.text.TextStyle(fontSize = 12.sp)
+                                    onCollapse = { showExtraDictCatalog = false }
                                 )
                             }
                         }
@@ -1338,7 +1364,7 @@ fun WanxiangDownloaderApp() {
                                                 context = context,
                                                 rules = currentRules,
                                                 githubProbeUrls = githubProbeUrls,
-                                                extraDictNames = normalizeExtraDictNames(extraDictText),
+                                                extraDictNames = extraDictFileNames(selectedExtraDictIds),
                                                 schemeType = schemeType,
                                                 auxScheme = auxScheme
                                             )
@@ -1418,6 +1444,120 @@ fun WanxiangDownloaderApp() {
                 },
                 onPickSafDirectory = { advancedDirPickerLauncher.launch(null) }
             )
+        }
+    }
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+fun ExtraDictCatalogScreen(
+    selectedIds: Set<String>,
+    onSelectedIdsChange: (Set<String>) -> Unit,
+    onCollapse: () -> Unit
+) {
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = Color(0xFFFAFAFA)
+    ) {
+        Column(modifier = Modifier.fillMaxSize()) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(Color.White)
+                    .padding(horizontal = 16.dp, vertical = 12.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        "📚 附加词库",
+                        fontSize = 19.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = MorandiDarkGreen
+                    )
+                    Text(
+                        "勾选后，点击更新时会一起下载并按当前方案处理",
+                        fontSize = 12.sp,
+                        color = Color.Gray,
+                        modifier = Modifier.padding(top = 3.dp)
+                    )
+                }
+                TextButton(onClick = onCollapse) {
+                    Text("收起", color = MorandiDarkGreen, fontWeight = FontWeight.Bold)
+                }
+            }
+
+            Divider(color = MorandiBorder)
+
+            FlowRow(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .weight(1f)
+                    .verticalScroll(rememberScrollState())
+                    .padding(12.dp),
+                maxItemsInEachRow = 2,
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                EXTRA_DICT_CATALOG.forEach { entry ->
+                    val selected = entry.id in selectedIds
+                    Card(
+                        modifier = Modifier
+                            .fillMaxWidth(0.48f)
+                            .clickable {
+                                onSelectedIdsChange(
+                                    if (selected) selectedIds - entry.id else selectedIds + entry.id
+                                )
+                            },
+                        colors = CardDefaults.cardColors(
+                            containerColor = if (selected) MorandiLightGreen else Color.White
+                        ),
+                        border = BorderStroke(
+                            1.dp,
+                            if (selected) MorandiGreen else MorandiBorder
+                        )
+                    ) {
+                        Row(
+                            modifier = Modifier.fillMaxWidth().padding(10.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Box(
+                                modifier = Modifier
+                                    .size(22.dp)
+                                    .clip(CircleShape)
+                                    .background(if (selected) MorandiGreen else Color.Transparent)
+                                    .border(1.dp, if (selected) MorandiGreen else Color.Gray, CircleShape),
+                                contentAlignment = Alignment.Center
+                            ) {
+                                if (selected) {
+                                    Icon(
+                                        imageVector = Icons.Default.Check,
+                                        contentDescription = "已选择",
+                                        tint = Color.White,
+                                        modifier = Modifier.size(15.dp)
+                                    )
+                                }
+                            }
+                            Column(modifier = Modifier.padding(start = 9.dp)) {
+                                Text(
+                                    entry.id,
+                                    fontSize = 14.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    color = Color.DarkGray
+                                )
+                                Text(
+                                    entry.description,
+                                    fontSize = 11.sp,
+                                    color = Color.Gray,
+                                    maxLines = 2,
+                                    overflow = TextOverflow.Ellipsis,
+                                    modifier = Modifier.padding(top = 2.dp)
+                                )
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

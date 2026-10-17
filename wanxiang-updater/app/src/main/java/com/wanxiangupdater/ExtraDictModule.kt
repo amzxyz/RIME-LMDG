@@ -14,6 +14,37 @@ import java.util.Locale
 private const val EXTRA_DICT_RAW_BASE =
     "https://raw.githubusercontent.com/amzxyz/rime-wanxiang-data/wanxiang/dicts"
 
+/**
+ * 受控附加词库目录。这里维护不带后缀的仓库文件名；界面只展示这些条目，
+ * 下载时统一补全为 .dict.yaml。
+ */
+data class ExtraDictCatalogEntry(
+    val id: String,
+    val description: String
+)
+
+val EXTRA_DICT_CATALOG: List<ExtraDictCatalogEntry> = listOf(
+    ExtraDictCatalogEntry("shici", "诗词大全"),
+    ExtraDictCatalogEntry("wuzhong", "动植物名称"),
+    ExtraDictCatalogEntry("huaxue", "化学词库"),
+    ExtraDictCatalogEntry("yaopin", "药品词库"),
+    ExtraDictCatalogEntry("yixue", "医学词库"),
+    ExtraDictCatalogEntry("fangyan", "国内方言词库")
+)
+
+private val EXTRA_DICT_IDS = EXTRA_DICT_CATALOG.map { it.id }.toSet()
+
+fun loadSelectedExtraDictIds(raw: String?): Set<String> {
+    return (raw ?: "")
+        .split(Regex("[,，;；\\n]+"))
+        .map { it.trim().substringBeforeLast(".dict.yaml", it, ignoreCase = true) }
+        .filter { it in EXTRA_DICT_IDS }
+        .toSet()
+}
+
+fun extraDictFileNames(selectedIds: Collection<String>): List<String> =
+    EXTRA_DICT_CATALOG.filter { it.id in selectedIds }.map { "${it.id}.dict.yaml" }
+
 fun normalizeExtraDictNames(text: String): List<String> = text.split(Regex("[,，;；\\n]+"))
     .map { it.trim() }
     .filter { it.isNotBlank() && "/" !in it && "\\\\" !in it }
