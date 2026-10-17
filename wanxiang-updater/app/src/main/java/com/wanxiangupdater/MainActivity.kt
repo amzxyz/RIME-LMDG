@@ -1312,7 +1312,10 @@ fun WanxiangDownloaderApp() {
                                     Text("📚 附加词库", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
                                     Text(
                                         if (selectedExtraDictIds.isEmpty()) "点击选择要一起下载的词库"
-                                        else "已选择 ${selectedExtraDictIds.size} 项：${selectedExtraDictIds.joinToString("、")}",
+                                        else "已选择 ${selectedExtraDictIds.size} 项：" +
+                                            EXTRA_DICT_CATALOG
+                                                .filter { it.id in selectedExtraDictIds }
+                                                .joinToString("、") { it.description },
                                         fontSize = 11.sp,
                                         color = Color.Gray,
                                         maxLines = 1,
@@ -1545,16 +1548,16 @@ fun ExtraDictCatalogScreen(
                             }
                             Column(modifier = Modifier.padding(start = 9.dp)) {
                                 Text(
-                                    entry.id,
+                                    entry.description,
                                     fontSize = 14.sp,
                                     fontWeight = FontWeight.Bold,
                                     color = Color.DarkGray
                                 )
                                 Text(
-                                    entry.description,
-                                    fontSize = 11.sp,
+                                    entry.id,
+                                    fontSize = 10.sp,
                                     color = Color.Gray,
-                                    maxLines = 2,
+                                    maxLines = 1,
                                     overflow = TextOverflow.Ellipsis,
                                     modifier = Modifier.padding(top = 2.dp)
                                 )
