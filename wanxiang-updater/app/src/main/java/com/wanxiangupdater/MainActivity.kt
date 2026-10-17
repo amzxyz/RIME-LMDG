@@ -556,7 +556,12 @@ fun WanxiangDownloaderApp() {
     }
     var githubToken by remember { mutableStateOf(sharedPref.getString("gh_token", "") ?: "") }
     var selectedExtraDictIds by remember {
-        mutableStateOf(loadSelectedExtraDictIds(sharedPref.getString("extra_dicts", "")))
+        val saved = runCatching {
+            sharedPref.getStringSet("extra_dicts", emptySet()) ?: emptySet()
+        }.getOrDefault(emptySet())
+        mutableStateOf(
+            saved.filter { id -> EXTRA_DICT_CATALOG.any { it.id == id } }.toSet()
+        )
     }
     var showExtraDictCatalog by remember { mutableStateOf(false) }
     var advancedSettingsPath by remember {
@@ -1332,7 +1337,7 @@ fun WanxiangDownloaderApp() {
                                     onSelectedIdsChange = { ids ->
                                         selectedExtraDictIds = ids
                                         sharedPref.edit()
-                                            .putString("extra_dicts", ids.joinToString(","))
+                                            .putStringSet("extra_dicts", ids)
                                             .apply()
                                     },
                                     onCollapse = { showExtraDictCatalog = false }

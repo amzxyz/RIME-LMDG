@@ -153,6 +153,110 @@ class FocusPlaceholderPlainTextEdit(QPlainTextEdit):
         if not self.toPlainText():
             super().setPlaceholderText(self._saved_placeholder)
 
+
+class ExtraDictSelector(QFrame):
+    """附加词库选择器：主界面显示摘要，点击后用弹窗勾选受控词库。"""
+
+    def __init__(self, selected=None, parent=None):
+        super().__init__(parent)
+        self._selected = set()
+        self._button = QPushButton()
+        self._button.setCursor(Qt.PointingHandCursor)
+        self._button.setMinimumHeight(44)
+        self._button.setToolTip("点击选择要下载的附加词库")
+        self._button.clicked.connect(self._open_dialog)
+
+        self._hint = QLabel("仅可选择已登记的词库，下载时自动补全 .dict.yaml")
+        self._hint.setStyleSheet("color: #777; font-size: 11px;")
+
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(3)
+        layout.addWidget(self._button)
+        layout.addWidget(self._hint)
+        self.set_selected(selected or [])
+
+    @staticmethod
+    def _to_id(value: object) -> str:
+        raw = str(value or "").strip().lower()
+        if raw.endswith(".dict.yaml"):
+            raw = raw[:-len(".dict.yaml")]
+        elif raw.endswith(".yaml"):
+            raw = raw[:-len(".yaml")]
+        return raw
+
+    def selected_ids(self) -> List[str]:
+        return [key for key, _ in EXTRA_DICT_CATALOG if key in self._selected]
+
+    def set_selected(self, values) -> None:
+        if isinstance(values, str):
+            values = re.split(r"[,，;；\n]+", values)
+        self._selected = {
+            key for key in (self._to_id(value) for value in (values or []))
+            if key in EXTRA_DICT_IDS
+        }
+        self._refresh_summary()
+
+    def _refresh_summary(self) -> None:
+        selected = self.selected_ids()
+        if not selected:
+            self._button.setText("选择附加词库  ·  未选择")
+            self._button.setToolTip("点击选择要下载的附加词库")
+            return
+        labels = [EXTRA_DICT_LABELS[key] for key in selected]
+        self._button.setText(f"已选择 {len(selected)} 项：" + "、".join(labels))
+        self._button.setToolTip("\n".join(f"{key}.dict.yaml  ·  {EXTRA_DICT_LABELS[key]}" for key in selected))
+
+    def _open_dialog(self) -> None:
+        dialog = QDialog(self)
+        dialog.setWindowTitle("选择附加词库")
+        dialog.setModal(True)
+        dialog.setMinimumWidth(520)
+
+        root = QVBoxLayout(dialog)
+        root.setContentsMargins(18, 16, 18, 14)
+        root.setSpacing(10)
+
+        title = QLabel("附加词库")
+        title.setStyleSheet("font-size: 16px; font-weight: 600;")
+        root.addWidget(title)
+        desc = QLabel("选择后将在更新时自动下载对应词库。文件名由目录表维护，无需手动输入。")
+        desc.setWordWrap(True)
+        desc.setStyleSheet("color: #777;")
+        root.addWidget(desc)
+
+        grid = QGridLayout()
+        grid.setHorizontalSpacing(10)
+        grid.setVerticalSpacing(8)
+        boxes = {}
+        for index, (key, label) in enumerate(EXTRA_DICT_CATALOG):
+            box = QCheckBox(f"{label}  ({key})")
+            box.setMinimumHeight(34)
+            box.setToolTip(f"dicts/{key}.dict.yaml")
+            box.setChecked(key in self._selected)
+            boxes[key] = box
+            grid.addWidget(box, index // 2, index % 2)
+        root.addLayout(grid)
+
+        actions = QHBoxLayout()
+        btn_all = QPushButton("全选")
+        btn_clear = QPushButton("清空")
+        btn_all.clicked.connect(lambda: [box.setChecked(True) for box in boxes.values()])
+        btn_clear.clicked.connect(lambda: [box.setChecked(False) for box in boxes.values()])
+        actions.addWidget(btn_all)
+        actions.addWidget(btn_clear)
+        actions.addStretch()
+        root.addLayout(actions)
+
+        buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        buttons.accepted.connect(dialog.accept)
+        buttons.rejected.connect(dialog.reject)
+        root.addWidget(buttons)
+
+        if dialog.exec() == QDialog.Accepted:
+            self._selected = {key for key, box in boxes.items() if box.isChecked()}
+            self._refresh_summary()
+
 # ============== 常量/工具 ==============
 TOOL_VERSION = "v3.4.0"
 
@@ -174,6 +278,19 @@ DEFAULT_WL_REGEX = [
     r"^installation\.yaml$", 
     r"^sync/.*"
 ]
+
+# 附加词库采用受控目录，界面只展示这里维护的条目。
+# 目录中的文件名统一为 ``<id>.dict.yaml``，配置中只保存 id，避免手动输入路径或不存在的文件。
+EXTRA_DICT_CATALOG = (
+    ("shici", "诗词大全"),
+    ("wuzhong", "动植物名称"),
+    ("huaxue", "化学词库"),
+    ("yaopin", "药品词库"),
+    ("yixue", "医学词库"),
+    ("fangyan", "国内方言词库"),
+)
+EXTRA_DICT_IDS = frozenset(item[0] for item in EXTRA_DICT_CATALOG)
+EXTRA_DICT_LABELS = dict(EXTRA_DICT_CATALOG)
 
 
 # 尝试导入 ruamel.yaml (用于安全修改 Rime 配置文件)
@@ -1126,7 +1243,7 @@ class UpdateConfig:
     clean_build: bool
     clean_before: bool
     custom_url: Optional[str] # 自定义下载源 URL
-    extra_dicts: List[str]   # 附加词库名称，可省略 .dict.yaml
+    extra_dicts: List[str]   # 受控附加词库 id，例如 shici、fangyan
     server_path: str = ""   # 算法服务路径 (WeaselServer.exe)
     deployer_path: str = "" # 部署工具路径 (WeaselDeployer.exe)
     force_update: bool = False #强制更新
@@ -1435,7 +1552,7 @@ class UpdateWorker(QThread):
 
     @staticmethod
     def _normalize_extra_dicts(values) -> List[str]:
-        """规范化附加词库名称，并自动补全 .dict.yaml。"""
+        """只接受目录表中的词库 id，并统一生成 ``.dict.yaml`` 文件名。"""
         if isinstance(values, str):
             values = re.split(r"[,，;；\n]+", values)
 
@@ -1451,11 +1568,13 @@ class UpdateWorker(QThread):
                 continue
 
             if raw.endswith(".dict.yaml"):
-                filename = raw
+                raw = raw[:-len(".dict.yaml")]
             elif raw.endswith(".yaml"):
-                filename = raw[:-len(".yaml")] + ".dict.yaml"
-            else:
-                filename = raw + ".dict.yaml"
+                raw = raw[:-len(".yaml")]
+            raw = raw.strip().lower()
+            if raw not in EXTRA_DICT_IDS:
+                continue
+            filename = raw + ".dict.yaml"
 
             key = filename.casefold()
             if key not in seen:
@@ -3199,16 +3318,8 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         extra_dicts_layout.setContentsMargins(5, 5, 5, 5)
         extra_dicts_layout.setSpacing(0)
 
-        self.extra_dicts_edit = QPlainTextEdit()
-        self.extra_dicts_edit.setFixedHeight(58)
-        self.extra_dicts_edit.setPlaceholderText(
-            "例如：shici,fangyan（自动补全 .dict.yaml；也可每行填写一个）"
-        )
-        self.extra_dicts_edit.setToolTip(
-            "从 GitHub rime-wanxiang-data/wanxiang/dicts 下载；多个名称用逗号、中文逗号或换行分隔，\n"
-            "可省略 .dict.yaml 扩展名。"
-        )
-        extra_dicts_layout.addWidget(self.extra_dicts_edit)
+        self.extra_dicts_selector = ExtraDictSelector(parent=self)
+        extra_dicts_layout.addWidget(self.extra_dicts_selector)
 
         # === 5. 配置 ===
         gb_cfg = QGroupBox("配置") # 序号变为4
@@ -3449,11 +3560,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
 
         aux_key = self.combo_aux.currentData() 
         if not aux_key: aux_key = "zrm"
-        extra_dicts = [
-            item.strip()
-            for item in re.split(r"[,，;；\n]+", self.extra_dicts_edit.toPlainText())
-            if item.strip()
-        ]
+        extra_dicts = self.extra_dicts_selector.selected_ids()
         whitelist_lines = self.upd_wl_edit.toPlainText().splitlines()
 
         versions = {}
@@ -4329,7 +4436,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         try:
             s.setValue('upd/source_type', self.bg_source_type.checkedId()) # 保存源类型
             s.setValue('upd/custom_url', self.custom_url_input.text())     # 保存自定义URL
-            s.setValue('upd/extra_dicts', self.extra_dicts_edit.toPlainText())
+            s.setValue('upd/extra_dicts', ','.join(self.extra_dicts_selector.selected_ids()))
             s.setValue('upd/scope', self.bg_scope.checkedId())
             s.setValue('upd/ver', self.bg_ver.checkedId())
             s.setValue('upd/aux_index', self.combo_aux.currentIndex())
@@ -4370,7 +4477,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
             if self.bg_source_type.button(src_type):
                 self.bg_source_type.button(src_type).setChecked(True)
             self.custom_url_input.setText(s.value('upd/custom_url', ''))
-            self.extra_dicts_edit.setPlainText(s.value('upd/extra_dicts', ''))
+            self.extra_dicts_selector.set_selected(s.value('upd/extra_dicts', ''))
             scope_id = int(s.value('upd/scope', 0))
             self.bg_scope.button(scope_id).setChecked(True)
             ver_id = int(s.value('upd/ver', 0))
@@ -4449,7 +4556,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         self.out_edit_sp.clear()
         self.bg_source_type.button(0).setChecked(True) 
         self.custom_url_input.clear()
-        self.extra_dicts_edit.clear()
+        self.extra_dicts_selector.set_selected([])
         self.bg_scope.button(0).setChecked(True) 
         self.bg_ver.button(0).setChecked(True) 
         self.combo_aux.setCurrentIndex(0) 
