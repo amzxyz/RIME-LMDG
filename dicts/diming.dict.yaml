@@ -2590,6 +2590,7 @@ sort: by_weight
 岔口镇	chà kǒu zhèn	10
 察拉乡	chá lā xiāng	10
 查理乡	chá lǐ xiāng	10
+茶林场	chá lín chǎng	266
 茶林镇	chá lín zhèn	10
 茶陵县	chá líng xiàn	181
 茶岭镇	chá lǐng zhèn	10
@@ -4020,6 +4021,7 @@ sort: by_weight
 大两镇	dà liǎng zhèn	112
 大寮区	dà liáo qū	10
 大寮站	dà liáo zhàn	378
+大林场	dà lín chǎng	328
 大林寺	dà lín sì	13
 大林乡	dà lín xiāng	56
 大林站	dà lín zhàn	252
@@ -6955,6 +6957,7 @@ sort: by_weight
 戈奎乡	gē kuí xiāng	10
 葛兰镇	gé lán zhèn	10
 革利乡	gé lì xiāng	488
+各林场	gè lín chǎng	171
 格林镇	gé lín zhèn	10
 葛岭镇	gé lǐng zhèn	10
 哥伦布	gē lún bù	162
@@ -16623,6 +16626,7 @@ sort: by_weight
 浓河镇	nóng hé zhèn	10
 浓江乡	nóng jiāng xiāng	10
 农科所	nóng kē suǒ	168
+农林场	nóng lín chǎng	387
 浓桥镇	nóng qiáo zhèn	10
 弄石县	nòng shí xiàn	82
 浓溪镇	nóng xī zhèn	10
@@ -18997,6 +19001,7 @@ sort: by_weight
 山里乡	shān lǐ xiāng	10
 闪里镇	shǎn lǐ zhèn	10
 善琏镇	shàn liǎn zhèn	10
+山林场	shān lín chǎng	729
 杉林区	shān lín qū	516
 杉岭乡	shān lǐng xiāng	10
 山鹿市	shān lù shì	315
@@ -23472,6 +23477,7 @@ sort: by_weight
 西联乡	xī lián xiāng	10
 西联镇	xī lián zhèn	10
 西连镇	xī lián zhèn	10
+西林场	xī lín chǎng	279
 西林寺	xī lín sì	9
 西琳寺	xī lín sì	8
 西林县	xī lín xiàn	147
@@ -24054,6 +24060,7 @@ sort: by_weight
 湘乐镇	xiāng lè zhèn	10
 湘漓镇	xiāng lí zhèn	10
 香莲乡	xiāng lián xiāng	10
+乡林场	xiāng lín chǎng	220
 香林寺	xiāng lín sì	418
 向林镇	xiàng lín zhèn	10
 襄陵镇	xiāng líng zhèn	10
@@ -27093,6 +27100,7 @@ sort: by_weight
 元朗站	yuán lǎng zhàn	652
 袁老乡	yuán lǎo xiāng	10
 苑里镇	yuàn lǐ zhèn	160
+园林场	yuán lín chǎng	288
 员林市	yuán lín shì	49
 沅陵县	yuán líng xiàn	188
 沅陵镇	yuán líng zhèn	10
@@ -29292,6 +29300,7 @@ sort: by_weight
 左镇区	zuǒ zhèn qū	488
 左州镇	zuǒ zhōu zhèn	10
 左左乡	zuǒ zuǒ xiāng	10
+阿艾石窟	ā ài shí kū	171
 阿坝阿坝	ā bà ā bà	10
 阿巴嘎旗	ā bā gā qí	10
 阿坝黑水	ā bà hēi shuǐ	10
@@ -29467,6 +29476,7 @@ sort: by_weight
 案板沟村	àn bǎn gōu cūn	10
 安帮河村	ān bāng hé cūn	10
 安北街道	ān běi jiē dào	10
+安北林场	ān běi lín chǎng	45
 安贝诺县	ān bèi nuò xiàn	10
 安波街道	ān bō jiē dào	10
 安埠街道	ān bù jiē dào	10
@@ -29478,6 +29488,7 @@ sort: by_weight
 安德门站	ān dé mén zhàn	387
 安迪尔乡	ān dí ěr xiāng	10
 安定路站	ān dìng lù zhàn	45
+安儿胡同	ān ér hú tòng	202
 安丰社区	ān fēng shè qū	171
 安丰塘镇	ān fēng táng zhèn	10
 安阜街道	ān fù jiē dào	10
@@ -29688,6 +29699,7 @@ sort: by_weight
 安邑街道	ān yì jiē dào	10
 安余梁村	ān yú liáng cūn	10
 安远沟村	ān yuǎn gōu cūn	10
+按院胡同	àn yuàn hú tòng	248
 安杖子村	ān zhàng zi cūn	10
 安贞街道	ān zhēn jiē dào	10
 安镇街道	ān zhèn jiē dào	10
@@ -29805,6 +29817,7 @@ sort: by_weight
 巴都尔寺	bā dōu ěr sì	194
 八斗丘村	bā dǒu qiū cūn	10
 耙儿沟村	bà ér gōu cūn	10
+巴儿胡同	bā ér hú tòng	76
 八尔湖镇	bā ěr hú zhèn	10
 八坊街道	bā fāng jiē dào	10
 坝房子村	bà fáng zi cūn	10
@@ -30142,6 +30155,7 @@ sort: by_weight
 白露街道	bái lù jiē dào	10
 百禄桥镇	bǎi lù qiáo zhèn	10
 白鹿泉乡	bái lù quán xiāng	10
+白鹿书院	bái lù shū yuàn	9
 白露塘镇	bái lù táng zhèn	10
 百炉屯村	bǎi lú tún cūn	10
 白鹭屿村	bái lù yǔ cūn	10
@@ -30170,6 +30184,7 @@ sort: by_weight
 白芒铺镇	bái máng pù zhèn	10
 白芒埔庄	bái máng pǔ zhuāng	10
 白芒营镇	bái máng yíng zhèn	10
+白帽胡同	bái mào hú tòng	99
 白毛坪乡	bái máo píng xiāng	10
 白毛坪镇	bái máo píng zhèn	10
 柏茂张村	bǎi mào zhāng cūn	10
@@ -30493,6 +30508,7 @@ sort: by_weight
 半扇门乡	bàn shàn mén xiāng	10
 半扇门镇	bàn shàn mén zhèn	10
 板山坪镇	bǎn shān píng zhèn	10
+颁赏胡同	bān shǎng hú tòng	130
 板石沟村	bǎn shí gōu cūn	10
 板石沟乡	bǎn shí gōu xiāng	10
 板石河村	bǎn shí hé cūn	10
@@ -30501,6 +30517,7 @@ sort: by_weight
 半汤街道	bàn tāng jiē dào	10
 坂田街道	bǎn tián jiē dào	10
 坂头社区	bǎn tóu shè qū	4
+板溪林场	bǎn xī lín chǎng	45
 班雨勒镇	bān yǔ lè zhèn	10
 搬罾街道	bān zēng jiē dào	10
 板樟山村	bǎn zhāng shān cūn	10
@@ -30539,6 +30556,7 @@ sort: by_weight
 包包店村	bāo bāo diàn cūn	10
 包保社区	bāo bǎo shè qū	130
 宝陂新村	bǎo bēi xīn cūn	10
+宝产胡同	bǎo chǎn hú tòng	297
 宝城街道	bǎo chéng jiē dào	10
 褒城坡村	bāo chéng pō cūn	10
 宝城寺村	bǎo chéng sì cūn	10
@@ -31329,6 +31347,7 @@ sort: by_weight
 北圈头村	běi quān tóu cūn	10
 北荣华村	běi róng huá cūn	10
 北散湖村	běi sàn hú cūn	10
+北三胡同	běi sān hú tòng	10
 北三家镇	běi sān jiā zhèn	10
 北三泉村	běi sān quán cūn	10
 北扫守村	běi sǎo shǒu cūn	10
@@ -31884,6 +31903,7 @@ sort: by_weight
 碧水山庄	bì shuǐ shān zhuāng	10
 碧水新村	bì shuǐ xīn cūn	10
 碧塘公园	bì táng gōng yuán	346
+碧桐书院	bì tóng shū yuàn	274
 比瓦尼县	bǐ wǎ ní xiàn	10
 毕武庄村	bì wǔ zhuāng cūn	10
 碧溪街道	bì xī jiē dào	10
@@ -31927,6 +31947,8 @@ sort: by_weight
 边杖子镇	biān zhàng zi zhèn	10
 卞庄街道	biàn zhuāng jiē dào	10
 表白寺镇	biǎo bái sì zhèn	10
+表背胡同	biǎo bèi hú tòng	129
+标湖林场	biāo hú lín chǎng	76
 彪家沟村	biāo jiā gōu cūn	10
 别德马县	bié dé mǎ xiàn	10
 别古庄镇	bié gǔ zhuāng zhèn	10
@@ -32043,6 +32065,7 @@ sort: by_weight
 玻璃山镇	bō li shān zhèn	10
 玻璃台村	bō li tái cūn	10
 柏林沟镇	bó lín gōu zhèn	10
+柏林胡同	bó lín hú tòng	52
 柏林街道	bó lín jiē dào	10
 柏林湾村	bó lín wān cūn	10
 柏林驿村	bó lín yì cūn	10
@@ -32335,6 +32358,7 @@ sort: by_weight
 沧浪街道	cāng láng jiē dào	10
 沧联社区	cāng lián shè qū	99
 苍龙街道	cāng lóng jiē dào	10
+仓南胡同	cāng nán hú tóng	212
 仓前街道	cāng qián jiē dào	10
 仓桥社区	cāng qiáo shè qū	130
 苍山街道	cāng shān jiē dào	10
@@ -32370,6 +32394,7 @@ sort: by_weight
 草埠湖镇	cǎo bù hú zhèn	10
 草场坝村	cǎo chǎng bà cūn	10
 草场地村	cǎo chǎng dì cūn	10
+草厂胡同	cǎo chǎng hú tòng	171
 草场铺村	cǎo chǎng pù cūn	10
 草场社区	cǎo chǎng shè qū	76
 曹城街道	cáo chéng jiē dào	10
@@ -32504,6 +32529,7 @@ sort: by_weight
 曹禺公园	cáo yú gōng yuán	130
 曹峪口村	cáo yù kǒu cūn	10
 槽渔滩镇	cáo yú tān zhèn	10
+草园胡同	cǎo yuán hú tòng	171
 草园社区	cǎo yuán shè qū	117
 曹园子村	cáo yuán zi cūn	10
 曹张新村	cáo zhāng xīn cūn	10
@@ -32537,6 +32563,7 @@ sort: by_weight
 茶峒古镇	chá dòng gǔ zhèn	10
 茶东新村	chá dōng xīn cūn	10
 茶恩寺镇	chá ēn sì zhèn	10
+茶儿胡同	chá ér hú tòng	3
 查尔科镇	chá ěr kē zhèn	10
 查尔玛乡	chá ěr mǎ xiāng	10
 察尔其镇	chá ěr qí zhèn	10
@@ -32625,6 +32652,7 @@ sort: by_weight
 槎梓桥村	chá zǐ qiáo cūn	10
 茶子山村	chá zǐ shān cūn	10
 杈子庄村	chā zi zhuāng cūn	10
+柴棒胡同	chái bàng hú tòng	6
 柴埠庄村	chái bù zhuāng cūn	10
 柴厂屯村	chái chǎng tún cūn	10
 柴厂屯镇	chái chǎng tún zhèn	10
@@ -32704,6 +32732,7 @@ sort: by_weight
 长湴公园	cháng bàn gōng yuán	130
 长北街道	cháng běi jiē dào	10
 厂北社区	chǎng běi shè qū	76
+长埠林场	cháng bù lín chǎng	50
 长埠岭村	cháng bù lǐng cūn	10
 长城街道	cháng chéng jiē dào	10
 长埫口镇	cháng chǒng kǒu zhèn	10
@@ -33059,6 +33088,7 @@ sort: by_weight
 潮海街道	cháo hǎi jiē dào	10
 潮河街道	cháo hé jiē dào	10
 巢湖东站	cháo hú dōng zhàn	202
+潮湖林场	cháo hú lín chǎng	50
 巢虎屯村	cháo hǔ tún cūn	10
 朝辉街道	cháo huī jiē dào	10
 超级基站	chāo jí jī zhàn	99
@@ -33160,6 +33190,7 @@ sort: by_weight
 车马庄村	chē mǎ zhuāng cūn	10
 车民街道	chē mín jiē dào	10
 车鸣峪乡	chē míng yù xiāng	10
+车辇胡同	chē niǎn hú tòng	50
 车排子村	chē pái zǐ cūn	10
 车排子镇	chē pái zǐ zhèn	10
 扯袍峪村	chě páo yù cūn	10
@@ -33363,6 +33394,7 @@ sort: by_weight
 陈坨子村	chén tuó zi cūn	10
 陈瓦房村	chén wǎ fáng cūn	10
 陈王街道	chén wáng jiē dào	10
+陈圩林场	chén wéi lín chǎng	117
 陈围子村	chén wéi zi cūn	10
 陈屋贝村	chén wū bèi cūn	10
 陈香菜村	chén xiāng cài cūn	10
@@ -33746,6 +33778,7 @@ sort: by_weight
 崇文门站	chóng wén mén zhàn	6
 崇文社区	chóng wén shè qū	117
 崇贤街道	chóng xián jiē dào	10
+崇效胡同	chóng xiào hú tòng	130
 崇新庵村	chóng xīn ān cūn	10
 崇辛庄村	chóng xīn zhuāng cūn	10
 崇兴寺村	chóng xīng sì cūn	10
@@ -33756,6 +33789,7 @@ sort: by_weight
 崇阳街道	chóng yáng jiē dào	10
 崇业社区	chóng yè shè qū	50
 崇义街道	chóng yì jiē dào	10
+崇智胡同	chóng zhì hú tòng	256
 崇左大新	chóng zuǒ dà xīn	10
 崇左扶绥	chóng zuǒ fú suí	10
 崇左江州	chóng zuǒ jiāng zhōu	10
@@ -33767,6 +33801,7 @@ sort: by_weight
 仇家店村	chóu jiā diàn cūn	10
 稠江街道	chóu jiāng jiē dào	10
 稠泥河村	chóu ní hé cūn	10
+臭皮胡同	chòu pí hú tòng	117
 丑山子村	chǒu shān zǐ cūn	10
 稠树脚村	chóu shù jiǎo cūn	10
 稠树梁村	chóu shù liáng cūn	10
@@ -33907,6 +33942,7 @@ sort: by_weight
 慈湖街道	cí hú jiē dào	10
 茈湖口镇	cí hú kǒu zhèn	10
 磁湖山庄	cí hú shān zhuāng	10
+慈慧胡同	cí huì hú tòng	99
 慈惠街道	cí huì jiē dào	10
 慈惠农场	cí huì nóng chǎng	162
 雌鸡岭村	cí jī lǐng cūn	10
@@ -33949,6 +33985,7 @@ sort: by_weight
 慈周寨乡	cí zhōu zhài xiāng	10
 慈周寨镇	cí zhōu zhài zhèn	10
 淙城街道	cóng chéng jiē dào	10
+葱店胡同	cōng diàn hú tòng	99
 从汉伯堡	cóng hàn bó bǎo	10
 丛家沟村	cóng jiā gōu cūn	10
 从井岗镇	cóng jǐng gǎng zhèn	10
@@ -34657,6 +34694,7 @@ sort: by_weight
 大九号村	dà jiǔ hào cūn	10
 大九甲村	dà jiǔ jiǎ cūn	10
 大巨各庄	dà jù gè zhuāng	10
+大菊胡同	dà jú hú tòng	117
 大剧院站	dà jù yuàn zhàn	477
 大开岭村	dà kāi lǐng cūn	10
 大科街道	dà kē jiē dào	10
@@ -34695,6 +34733,7 @@ sort: by_weight
 大栗港镇	dà lì gǎng zhèn	10
 大李各庄	dà lǐ gè zhuāng	10
 大理鹤庆	dà lǐ hè qìng	10
+大力胡同	dà lì hú tòng	144
 大李集镇	dà lǐ jí zhèn	10
 大李家村	dà lǐ jiā cūn	10
 大李家镇	dà lǐ jiā zhèn	10
@@ -35592,6 +35631,7 @@ sort: by_weight
 到各乡镇	dào gè xiāng zhèn	10
 岛古丹村	dǎo gǔ dān cūn	10
 导航街道	dǎo háng jiē dào	10
+道河林场	dào hé lín chǎng	76
 道虎壁村	dào hǔ bì cūn	10
 道虎沟村	dào hǔ gōu cūn	10
 道虎沟乡	dào hǔ gōu xiāng	10
@@ -35628,6 +35668,7 @@ sort: by_weight
 倒贴金村	dào tiē jīn cūn	10
 道外农垦	dào wài nóng kěn	10
 到湾甸乡	dào wān diān xiāng	10
+道湾胡同	dào wān hú tòng	279
 道仙庄村	dào xiān zhuāng cūn	10
 稻香社区	dào xiāng shè qū	130
 稻香小镇	dào xiāng xiǎo zhèn	10
@@ -35766,6 +35807,7 @@ sort: by_weight
 邓洁丽庄	dèng jié lì zhuāng	10
 登杰尼乡	dēng jié ní xiāng	10
 登科街道	dēng kē jiē dào	10
+登莱胡同	dēng lái hú tòng	202
 邓李付村	dèng lǐ fù cūn	10
 灯炉滩村	dēng lú tān cūn	10
 灯明寺镇	dēng míng sì zhèn	10
@@ -35799,6 +35841,7 @@ sort: by_weight
 第八堡乡	dì bā bǎo xiāng	10
 地磅街道	dì bàng jiē dào	10
 地北头镇	dì běi tóu zhèn	10
+地昌胡同	dì chāng hú tòng	99
 滴翠山庄	dī cuì shān zhuāng	10
 迪荡街道	dí dàng jiē dào	10
 滴道河乡	dī dào hé xiāng	10
@@ -36005,6 +36048,7 @@ sort: by_weight
 吊嘴岩村	diào zuǐ yán cūn	10
 叠彩街道	dié cǎi jiē dào	10
 跌马桥村	diē mǎ qiáo cūn	10
+叠山书院	dié shān shū yuàn	162
 迭台寺乡	dié tái sì xiāng	10
 碟子沟村	dié zi gōu cūn	10
 顶宝石村	dǐng bǎo shí cūn	10
@@ -36074,6 +36118,7 @@ sort: by_weight
 丁家庄村	dīng jiā zhuāng cūn	10
 丁甲庄村	dīng jiǎ zhuāng cūn	10
 丁涧店村	dīng jiàn diàn cūn	10
+定居胡同	dìng jū hú tòng	76
 定军山镇	dìng jūn shān zhèn	10
 丁兰集村	dīng lán jí cūn	10
 丁兰街道	dīng lán jiē dào	10
@@ -36109,10 +36154,12 @@ sort: by_weight
 丁辛庄村	dīng xīn zhuāng cūn	10
 丁兴庄村	dīng xīng zhuāng cūn	10
 丁堰街道	dīng yàn jiē dào	10
+顶银胡同	dǐng yín hú tòng	234
 定远寨乡	dìng yuǎn zhài xiāng	10
 定远寨镇	dìng yuǎn zhài zhèn	10
 顶云街道	dǐng yún jiē dào	10
 丁张胡村	dīng zhāng hú cūn	10
+丁章胡同	dīng zhāng hú tòng	284
 丁杖子村	dīng zhàng zi cūn	10
 丁庄街道	dīng zhuāng jiē dào	10
 丁庄子村	dīng zhuāng zǐ cūn	10
@@ -36696,6 +36743,7 @@ sort: by_weight
 董家桥村	dǒng jiā qiáo cūn	10
 董家山村	dǒng jiā shān cūn	10
 董家社区	dǒng jiā shè qū	202
+东佳书院	dōng jiā shū yuàn	50
 董家寺村	dǒng jiā sì cūn	10
 董家台村	dǒng jiā tái cūn	10
 董家滩村	dǒng jiā tān cūn	10
@@ -36770,6 +36818,7 @@ sort: by_weight
 东咀头村	dōng jǔ tóu cūn	10
 东局子村	dōng jú zi cūn	10
 东军屯村	dōng jūn tún cūn	10
+东卡林场	dōng kǎ lín chǎng	4
 东坎街道	dōng kǎn jiē dào	10
 东康各庄	dōng kāng gè zhuāng	10
 东康王村	dōng kāng wáng cūn	10
@@ -37275,6 +37324,7 @@ sort: by_weight
 东宋庄村	dōng sòng zhuāng cūn	10
 东粟仓村	dōng sù cāng cūn	10
 东苏家村	dōng sū jiā cūn	10
+东苏林场	dōng sū lín chǎng	99
 东苏楼村	dōng sū lóu cūn	10
 东苏阳村	dōng sū yáng cūn	10
 东苏庄村	dōng sū zhuāng cūn	10
@@ -37319,6 +37369,7 @@ sort: by_weight
 东堂子村	dōng táng zi cūn	10
 东塘子村	dōng táng zi cūn	10
 东桃堡村	dōng táo bǎo cūn	10
+东绦胡同	dōng tāo hú tòng	144
 东套里村	dōng tào lǐ cūn	10
 东桃园村	dōng táo yuán cūn	10
 东陶庄村	dōng táo zhuāng cūn	10
@@ -37474,6 +37525,7 @@ sort: by_weight
 东夏侯村	dōng xià hóu cūn	10
 东夏家村	dōng xià jiā cūn	10
 东峡口村	dōng xiá kǒu cūn	10
+东峡林场	dōng xiá lín chǎng	76
 东夏亭镇	dōng xià tíng zhèn	10
 东霞新村	dōng xiá xīn cūn	10
 东下营村	dōng xià yíng cūn	10
@@ -37861,6 +37913,7 @@ sort: by_weight
 陡水坡村	dǒu shuǐ pō cūn	10
 都亭街道	dōu tíng jiē dào	10
 豆王庄村	dòu wáng zhuāng cūn	10
+都溪林场	dōu xī lín chǎng	171
 陡崖子村	dǒu yá zǐ cūn	10
 豆张庄乡	dòu zhāng zhuāng xiāng	10
 豆张庄站	dòu zhāng zhuāng zhàn	76
@@ -38350,6 +38403,7 @@ sort: by_weight
 范各庄乡	fàn gè zhuāng xiāng	10
 范各庄镇	fàn gè zhuāng zhèn	10
 范古墩村	fàn gǔ dūn cūn	10
+范光胡同	fàn guāng hú tòng	212
 樊河畔村	fán hé pàn cūn	10
 繁华街道	fán huá jiē dào	10
 范家坝村	fàn jiā bà cūn	10
@@ -39331,8 +39385,10 @@ sort: by_weight
 夫子河镇	fū zǐ hé zhèn	10
 夫子石村	fū zǐ shí cūn	10
 嘎栋街道	gā dòng jiē dào	10
+嘎嘎胡同	gā gā hú tòng	130
 嘎亥图镇	gā hài tú zhèn	10
 嘎拉河村	gā lā hé cūn	10
+旮旯胡同	gā lá hú tòng	279
 旮旯子村	gā lá zǐ cūn	10
 嘎郎吐镇	gā láng tǔ zhèn	10
 嘎鲁图镇	gā lǔ tú zhèn	10
@@ -39431,6 +39487,7 @@ sort: by_weight
 甘江头乡	gān jiāng tóu xiāng	10
 赣江源镇	gàn jiāng yuán zhèn	10
 甘津头村	gān jīn tóu cūn	10
+甘井胡同	gān jǐng hú tòng	99
 甘井子村	gān jǐng zǐ cūn	10
 甘井子区	gān jǐng zǐ qū	10
 甘井子站	gān jǐng zǐ zhàn	99
@@ -39438,6 +39495,7 @@ sort: by_weight
 柑林陂庄	gān lín bēi zhuāng	10
 甘露池村	gān lù chí cūn	10
 甘露沟乡	gān lù gōu xiāng	10
+甘露胡同	gān lù hú tòng	3
 甘露集村	gān lù jí cūn	10
 甘露寺村	gān lù sì cūn	10
 甘露堂村	gān lù táng cūn	10
@@ -39510,6 +39568,8 @@ sort: by_weight
 干峪沟村	gàn yù gōu cūn	10
 甘峪沟村	gān yù gōu cūn	10
 赣榆海洋	gàn yú hǎi yáng	10
+甘雨胡同	gān yǔ hú tòng	310
+干鱼胡同	gān yú hú tòng	99
 甘峪口村	gān yù kǒu cūn	10
 干鱼头村	gān yú tóu cūn	10
 甘泽堡村	gān zé bǎo cūn	10
@@ -39806,6 +39866,7 @@ sort: by_weight
 高界里村	gāo jiè lǐ cūn	10
 高津濑村	gāo jīn lài cūn	10
 高境二村	gāo jìng èr cūn	10
+高井胡同	gāo jǐng hú tòng	130
 高井圈村	gāo jǐng quān cūn	10
 高井社区	gāo jǐng shè qū	130
 高境新村	gāo jìng xīn cūn	10
@@ -40306,6 +40367,7 @@ sort: by_weight
 贡家庄村	gòng jiā zhuāng cūn	10
 龚家庄村	gōng jiā zhuāng cūn	10
 弓箭沟村	gōng jiàn gōu cūn	10
+恭俭胡同	gōng jiǎn hú tòng	414
 公交场站	gōng jiāo chǎng zhàn	774
 公交车站	gōng jiāo chē zhàn	666
 弓角湾村	gōng jiǎo wān cūn	10
@@ -40667,6 +40729,7 @@ sort: by_weight
 瓜子沟村	guā zǐ gōu cūn	10
 挂子山村	guà zǐ shān cūn	10
 拐坝桥村	guǎi bà qiáo cūn	10
+拐棒胡同	guǎi bàng hú tòng	315
 拐角铺村	guǎi jiǎo pù cūn	10
 拐磨沟村	guǎi mó gōu cūn	10
 拐磨子村	guǎi mò zi cūn	10
@@ -40765,6 +40828,7 @@ sort: by_weight
 官路沿村	guān lù yán cūn	10
 官路洋村	guān lù yáng cūn	10
 官路营村	guān lù yíng cūn	10
+观马胡同	guān mǎ hú tòng	162
 官帽头村	guān mào tóu cūn	10
 关门口村	guān mén kǒu cūn	10
 官门楼村	guān mén lóu cūn	10
@@ -41344,6 +41408,7 @@ sort: by_weight
 国寺营村	guó sì yíng cūn	10
 果塔延县	guǒ tǎ yán xiàn	10
 国太桥乡	guó tài qiáo xiāng	10
+国旺胡同	guó wàng hú tòng	234
 郭王石村	guō wáng shí cūn	10
 郭王宋村	guō wáng sòng cūn	10
 郭溪街道	guō xī jiē dào	10
@@ -41446,6 +41511,7 @@ sort: by_weight
 哈乌森乡	hā wū sēn xiāng	10
 哈西街道	hā xī jiē dào	10
 哈西客站	hā xī kè zhàn	346
+哈业胡同	hā yè hú tòng	243
 海安集乡	hǎi ān jí xiāng	10
 海安街道	hǎi ān jiē dào	10
 海安社区	hǎi ān shè qū	4
@@ -41871,6 +41937,7 @@ sort: by_weight
 蒿岔峪村	hāo chà yù cūn	10
 号大街站	hào dà jiē zhàn	45
 蒿地坝村	hāo dì bà cūn	10
+好多胡同	hǎo duō hú tòng	153
 浩尔吐乡	hào ěr tǔ xiāng	10
 号房坪村	hào fáng píng cūn	10
 豪岗新村	háo gǎng xīn cūn	10
@@ -42112,6 +42179,7 @@ sort: by_weight
 合姑洛乡	hé gū luò xiāng	10
 河古庙镇	hé gǔ miào zhèn	10
 何官屯镇	hé guān tún zhèn	10
+和光胡同	hé guāng hú tòng	207
 赫含珠村	hè hán zhū cūn	10
 合河口乡	hé hé kǒu xiāng	10
 荷花池村	hé huā chí cūn	10
@@ -42891,6 +42959,7 @@ sort: by_weight
 红门新村	hóng mén xīn cūn	10
 红门垭村	hóng mén yā cūn	10
 红庙墩村	hóng miào dūn cūn	10
+宏庙胡同	hóng miào hú tòng	230
 红庙李村	hóng miào lǐ cūn	10
 红庙梁村	hóng miào liáng cūn	10
 红庙社区	hóng miào shè qū	230
@@ -43335,6 +43404,7 @@ sort: by_weight
 湖滨街道	hú bīn jiē dào	10
 户部寨乡	hù bù zhài xiāng	10
 胡堡子村	hú bǔ zi cūn	10
+护仓胡同	hù cāng hú tòng	202
 虎岔沟村	hǔ chà gōu cūn	10
 忽缠户村	hū chán hù cūn	10
 胡昌坪村	hú chāng píng cūn	10
@@ -43717,6 +43787,7 @@ sort: by_weight
 花家官庄	huā jiā guān zhuāng	10
 华家河村	huá jiā hé cūn	10
 华家河镇	huá jiā hé zhèn	10
+华嘉胡同	huá jiā hú tòng	180
 华家街道	huá jiā jiē dào	10
 花家岭村	huā jiā lǐng cūn	10
 华家岭村	huá jiā lǐng cūn	10
@@ -43826,6 +43897,7 @@ sort: by_weight
 华山街道	huà shān jiē dào	10
 花山林场	huā shān lín chǎng	115
 花山留村	huā shān liú cūn	10
+花山谜窟	huā shān mí kū	16
 花山头村	huā shān tóu cūn	10
 花山吴村	huā shān wú cūn	10
 化稍营镇	huà shāo yíng zhèn	10
@@ -44418,6 +44490,7 @@ sort: by_weight
 黄梅戏乡	huáng méi xì xiāng	10
 黄门子村	huáng mén zǐ cūn	10
 黄糜咀村	huáng mí jǔ cūn	10
+黄冕林场	huáng miǎn lín chǎng	130
 皇木厂村	huáng mù chǎng cūn	10
 黄木厂村	huáng mù chǎng cūn	10
 皇木场村	huáng mù chǎng cūn	10
@@ -44495,6 +44568,7 @@ sort: by_weight
 黄泉寺村	huáng quán sì cūn	10
 黄泉峪村	huáng quán yù cūn	10
 黄壤坞村	huáng rǎng wù cūn	10
+皇仁书院	huáng rén shū yuàn	616
 凰瑞埠村	huáng ruì bù cūn	10
 黄颡口村	huáng sǎng kǒu cūn	10
 黄颡口镇	huáng sǎng kǒu zhèn	10
@@ -44811,6 +44885,7 @@ sort: by_weight
 惠云禅寺	huì yún chán sì	4
 会展街道	huì zhǎn jiē dào	10
 会战街道	huì zhàn jiē dào	10
+惠贞书院	huì zhēn shū yuàn	266
 惠州北站	huì zhōu běi zhàn	356
 惠州博罗	huì zhōu bó luó	10
 惠州惠城	huì zhōu huì chéng	10
@@ -45565,6 +45640,7 @@ sort: by_weight
 建国门站	jiàn guó mén zhàn	13
 减河公园	jiǎn hé gōng yuán	207
 涧河公园	jiàn hé gōng yuán	4
+建和胡同	jiàn hé hú tòng	144
 涧河街道	jiàn hé jiē dào	10
 鉴湖街道	jiàn hú jiē dào	10
 鉴湖新村	jiàn hú xīn cūn	10
@@ -46057,6 +46133,8 @@ sort: by_weight
 焦庄子村	jiāo zhuāng zǐ cūn	10
 轿子顶村	jiào zi dǐng cūn	10
 焦子河村	jiāo zǐ hé cūn	10
+教子胡同	jiào zǐ hú tòng	9
+轿子胡同	jiào zi hú tòng	8
 椒子山村	jiāo zǐ shān cūn	10
 轿子山镇	jiào zi shān zhèn	10
 教字垭镇	jiào zì yā zhèn	10
@@ -46195,6 +46273,7 @@ sort: by_weight
 金碧社区	jīn bì shè qū	76
 津博尔乡	jīn bó ěr xiāng	10
 金布川村	jīn bù chuān cūn	10
+近埠胡同	jìn bù hú tòng	130
 进步站村	jìn bù zhàn cūn	10
 锦采街道	jǐn cǎi jiē dào	10
 金仓街道	jīn cāng jiē dào	10
@@ -46695,6 +46774,7 @@ sort: by_weight
 金筑街道	jīn zhù jiē dào	10
 金竹街道	jīn zhú jiē dào	10
 金竹坑村	jīn zhú kēng cūn	10
+金朱林场	jīn zhū lín chǎng	4
 金竹林村	jīn zhú lín cūn	10
 金竹坪村	jīn zhú píng cūn	10
 金竹山村	jīn zhú shān cūn	10
@@ -46733,6 +46813,7 @@ sort: by_weight
 旌东街道	jīng dōng jiē dào	10
 泾东新村	jīng dōng xīn cūn	10
 井儿沟乡	jǐng ér gōu xiāng	10
+井儿胡同	jǐng ér hú tòng	248
 井尔峪村	jǐng ěr yù cūn	10
 景芳社区	jǐng fāng shè qū	144
 景风公园	jǐng fēng gōng yuán	76
@@ -47279,6 +47360,7 @@ sort: by_weight
 开封尉氏	kāi fēng wèi shì	10
 开封祥符	kāi fēng xiáng fú	10
 开干齐乡	kāi gàn qí xiāng	10
+开工胡同	kāi gōng hú tòng	144
 开古庄村	kāi gǔ zhuāng cūn	10
 开华街道	kāi huá jiē dào	10
 开化街道	kāi huà jiē dào	10
@@ -47412,6 +47494,7 @@ sort: by_weight
 考波什堡	kǎo bō shí bǎo	10
 靠山街道	kào shān jiē dào	10
 栲树岭村	kǎo shù lǐng cūn	10
+考亭书院	kǎo tíng shū yuàn	212
 靠湾雅村	kào wān yǎ cūn	10
 考溪坞村	kǎo xī wù cūn	10
 克埃茨乡	kè āi cí xiāng	10
@@ -47623,7 +47706,9 @@ sort: by_weight
 苦竹坪村	kǔ zhú píng cūn	10
 苦竹坪乡	kǔ zhú píng xiāng	10
 苦竹溪村	kǔ zhú xī cūn	10
+库资胡同	kù zī hú tòng	153
 库宗桥镇	kù zōng qiáo zhèn	10
+跨车胡同	kuà chē hú tòng	279
 侉子店村	kuǎ zi diàn cūn	10
 侉子营村	kuǎ zi yíng cūn	10
 快大茂镇	kuài dà mào zhèn	10
@@ -47720,6 +47805,7 @@ sort: by_weight
 拉海沟村	lā hǎi gōu cūn	10
 拉加哥村	lā jiā gē cūn	10
 喇家寨村	lǎ jiā zhài cūn	10
+腊库胡同	là kù hú tòng	50
 拉拉河村	lā lā hé cūn	10
 拉拉河镇	lā lā hé zhèn	10
 拉拉屯村	lā lā tún cūn	10
@@ -47804,6 +47890,7 @@ sort: by_weight
 蓝村街道	lán cūn jiē dào	10
 兰靛厂村	lán diàn chǎng cūn	10
 烂洞坝村	làn dòng bà cūn	10
+岚峰林场	lán fēng lín chǎng	4
 兰凤新村	lán fèng xīn cūn	10
 栏杆堡村	lán gān bǎo cūn	10
 栏杆堡镇	lán gān bǎo zhèn	10
@@ -47846,6 +47933,7 @@ sort: by_weight
 拦马坎村	lán mǎ kǎn cūn	10
 拦马石村	lán mǎ shí cūn	10
 拦马庄村	lán mǎ zhuāng cūn	10
+烂缦胡同	làn màn hú tòng	117
 兰梅塬村	lán méi yuán cūn	10
 栏木桥村	lán mù qiáo cūn	10
 烂泥池村	làn ní chí cūn	10
@@ -48678,6 +48766,7 @@ sort: by_weight
 李申寨村	lǐ shēn zhài cūn	10
 李生墕村	lǐ shēng yàn cūn	10
 李石岗村	lǐ shí gǎng cūn	10
+礼士胡同	lǐ shì hú tòng	3
 李施济村	lǐ shī jì cūn	10
 离石家庄	lí shí jiā zhuāng	10
 李石街道	lǐ shí jiē dào	10
@@ -49096,6 +49185,7 @@ sort: by_weight
 两河桥村	liǎng hé qiáo cūn	10
 两湖街道	liǎng hú jiē dào	10
 梁湖街道	liáng hú jiē dào	10
+梁化林场	liáng huà lín chǎng	99
 梁伙场村	liáng huǒ chǎng cūn	10
 梁家庵村	liáng jiā ān cūn	10
 梁家坳村	liáng jiā ào cūn	10
@@ -49635,6 +49725,7 @@ sort: by_weight
 柳卜塔村	liǔ bo tǎ cūn	10
 柳卜滩村	liǔ bo tān cūn	10
 柳埠街道	liǔ bù jiē dào	10
+柳埠林场	liǔ bù lín chǎng	45
 柳埠中村	liǔ bù zhōng cūn	10
 刘菜园村	liú cài yuán cūn	10
 刘曹埠村	liú cáo bù cūn	10
@@ -50321,6 +50412,7 @@ sort: by_weight
 龙景街道	lóng jǐng jiē dào	10
 龙井街道	lóng jǐng jiē dào	10
 龙井桥乡	lóng jǐng qiáo xiāng	10
+龙景书院	lóng jǐng shū yuàn	117
 龙井湾村	lóng jǐng wān cūn	10
 龙九龙村	lóng jiǔ lóng cūn	10
 龙咀沟村	lóng jǔ gōu cūn	10
@@ -50334,6 +50426,7 @@ sort: by_weight
 龙坑街道	lóng kēng jiē dào	10
 龙口场村	lóng kǒu chǎng cūn	10
 弄口新村	lòng kǒu xīn cūn	10
+隆礼胡同	lóng lǐ hú tòng	220
 龙李庄村	lóng lǐ zhuāng cūn	10
 龙林山庄	lóng lín shān zhuāng	10
 龙岭社区	lóng lǐng shè qū	171
@@ -50932,6 +51025,7 @@ sort: by_weight
 乱榆卜村	luàn yú bo cūn	10
 滦镇街道	luán zhèn jiē dào	10
 伦布雪乡	lún bù xuě xiāng	10
+抡才书院	lūn cái shū yuàn	130
 伦代纳村	lún dài nà cūn	10
 伦迪亚堡	lún dí yà bǎo	10
 伦敦公园	lún dūn gōng yuán	248
@@ -50975,6 +51069,7 @@ sort: by_weight
 洛东坪村	luò dōng píng cūn	10
 箩蔸岩村	luó dōu yán cūn	10
 洛尔达乡	luò ěr dá xiāng	10
+罗儿胡同	luó ér hú tòng	117
 落儿岭镇	luò ér lǐng zhèn	10
 落凤岗村	luò fèng gǎng cūn	10
 罗峰街道	luó fēng jiē dào	10
@@ -51278,6 +51373,7 @@ sort: by_weight
 吕米尼县	lǚ mǐ ní xiàn	10
 旅人念乡	lǚ rén niàn xiāng	10
 吕世贵村	lǚ shì guì cūn	10
+驴市胡同	lǘ shì hú tòng	162
 吕石桥村	lǚ shí qiáo cūn	10
 绿树沟村	lǜ shù gōu cūn	10
 旅顺口区	lǚ shùn kǒu qū	10
@@ -51681,6 +51777,7 @@ sort: by_weight
 马连滩村	mǎ lián tān cūn	10
 马莲滩村	mǎ lián tān cūn	10
 马连庄镇	mǎ lián zhuāng zhèn	10
+马良胡同	mǎ liáng hú tòng	189
 马料江村	mǎ liào jiāng cūn	10
 马林街道	mǎ lín jiē dào	10
 马临街道	mǎ lín jiē dào	10
@@ -51866,6 +51963,7 @@ sort: by_weight
 马西坡村	mǎ xī pō cūn	10
 麻溪铺镇	má xī pù zhèn	10
 马仙坝村	mǎ xiān bà cūn	10
+马相胡同	mǎ xiāng hú tòng	194
 马巷街道	mǎ xiàng jiē dào	10
 马响水村	mǎ xiǎng shuǐ cūn	10
 麻斜街道	má xié jiē dào	10
@@ -51983,6 +52081,7 @@ sort: by_weight
 麦仁店村	mài rén diàn cūn	10
 迈斯基村	mài sī jī cūn	50
 麦疃后村	mài tuǎn hòu cūn	10
+麦秀林场	mài xiù lín chǎng	189
 麦张寨村	mài zhāng zhài cūn	10
 麦子疃村	mài zi tuǎn cūn	10
 麦子湾村	mài zi wān cūn	10
@@ -52069,6 +52168,7 @@ sort: by_weight
 茅店子站	máo diàn zi zhàn	76
 毛甸子镇	máo diàn zǐ zhèn	10
 贸东街道	mào dōng jiē dào	10
+茅东林场	máo dōng lín chǎng	45
 毛都站镇	máo dōu zhàn zhèn	10
 毛恩纳村	máo ēn nà cūn	10
 毛儿盖镇	máo ér gài zhèn	10
@@ -52374,6 +52474,7 @@ sort: by_weight
 孟定农场	mèng dìng nóng chǎng	10
 蒙顶山镇	méng dǐng shān zhèn	10
 孟董庄村	mèng dǒng zhuāng cūn	10
+孟端胡同	mèng duān hú tòng	194
 孟耳庄村	mèng ěr zhuāng cūn	10
 蒙费朗堡	méng fèi lǎng bǎo	10
 孟岗街道	mèng gǎng jiē dào	10
@@ -52556,6 +52657,7 @@ sort: by_weight
 米汤河村	mǐ tāng hé cūn	10
 弥陀寺村	mí tuó sì cūn	10
 弥陀寺乡	mí tuó sì xiāng	2
+密溪林场	mì xī lín chǎng	45
 米薪关镇	mǐ xīn guān zhèn	10
 米薪湾镇	mǐ xīn wān zhèn	10
 米牙亥村	mǐ yá hài cūn	10
@@ -53523,6 +53625,8 @@ sort: by_weight
 南京栖霞	nán jīng qī xiá	10
 南京秦淮	nán jīng qín huái	10
 南景色村	nán jǐng sè cūn	10
+南菁书院	nán jīng shū yuàn	360
+南京书院	nán jīng shū yuàn	122
 南京堂村	nán jīng táng cūn	10
 南井头村	nán jǐng tóu cūn	10
 南京晓庄	nán jīng xiǎo zhuāng	10
@@ -53877,6 +53981,7 @@ sort: by_weight
 南孙庄村	nán sūn zhuāng cūn	10
 南孙庄乡	nán sūn zhuāng xiāng	10
 南孙庄镇	nán sūn zhuāng zhèn	10
+南所胡同	nán suǒ hú tòng	76
 南塔街道	nán tǎ jiē dào	10
 南塔影村	nán tǎ yǐng cūn	10
 南塔庄村	nán tǎ zhuāng cūn	10
@@ -54392,6 +54497,8 @@ sort: by_weight
 碾伯街道	niǎn bó jiē dào	10
 年都乎寺	nián dōu hū sì	153
 年都乎乡	nián dōu hū xiāng	10
+碾儿胡同	niǎn ér hú tòng	202
+辇儿胡同	niǎn ér hú tòng	99
 碾房湾村	niǎn fáng wān cūn	10
 碾坊庄村	niǎn fáng zhuāng cūn	10
 年嘎玛乡	nián gā mǎ xiāng	10
@@ -54808,12 +54915,14 @@ sort: by_weight
 牌门头村	pái mén tóu cūn	10
 排坡园村	pái pō yuán cūn	10
 排山坳村	pái shān ào cūn	10
+拍摄胡同	pāi shè hú tòng	50
 拍石头乡	pāi shí tou xiāng	10
 排田漾村	pái tián yàng cūn	10
 排岩头村	pái yán tóu cūn	10
 排杖子村	pái zhàng zi cūn	10
 簰洲湾镇	pái zhōu wān zhèn	10
 牌洲湾镇	pái zhōu wān zhèn	10
+排子胡同	pái zǐ hú tòng	130
 排子坪乡	pái zǐ píng xiāng	10
 排子山村	pái zǐ shān cūn	10
 盘北社区	pán běi shè qū	45
@@ -55065,6 +55174,7 @@ sort: by_weight
 彭徐店村	péng xú diàn cūn	10
 彭庄社区	péng zhuāng shè qū	50
 彭祖塬村	péng zǔ yuán cūn	10
+辟才胡同	pì cái hú tòng	418
 邳城农场	pī chéng nóng chǎng	10
 毗圪堵村	pí gē dǔ cūn	10
 毗圪崂村	pí gē láo cūn	10
@@ -55095,6 +55205,7 @@ sort: by_weight
 伾山街道	pī shān jiē dào	10
 皮山农场	pí shān nóng chǎng	310
 皮什盖村	pí shí gài cūn	10
+皮条胡同	pí tiáo hú tòng	189
 皮条峁村	pí tiáo mǎo cūn	10
 皮条孙镇	pí tiáo sūn zhèn	10
 皮条洲村	pí tiáo zhōu cūn	10
@@ -55568,6 +55679,7 @@ sort: by_weight
 七间房乡	qī jiān fáng xiāng	10
 岐江公园	qí jiāng gōng yuán	302
 七角井镇	qī jiǎo jǐng zhèn	10
+七井胡同	qī jǐng hú tòng	153
 奇喀喀村	qí kā kā cūn	10
 奇克街道	qí kè jiē dào	10
 七棵树镇	qī kē shù zhèn	10
@@ -55643,6 +55755,7 @@ sort: by_weight
 棋盘山镇	qí pán shān zhèn	10
 棋盘新村	qí pán xīn cūn	10
 七品知县	qī pǐn zhī xiàn	10
+七坡林场	qī pō lín chǎng	99
 齐齐哈村	qí qí hā cūn	10
 齐齐哈尔	qí qí hā ěr	10
 漆桥街道	qī qiáo jiē dào	10
@@ -55775,6 +55888,7 @@ sort: by_weight
 前茶坞村	qián chá wù cūn	10
 前柴城村	qián chái chéng cūn	10
 前柴沟村	qián chái gōu cūn	10
+前厂胡同	qián chǎng hú tòng	99
 前长湾村	qián cháng wān cūn	10
 前陈义村	qián chén yì cūn	10
 前程街道	qián chéng jiē dào	10
@@ -55835,6 +55949,7 @@ sort: by_weight
 前付岗村	qián fù gǎng cūn	10
 前伏山村	qián fú shān cūn	10
 前富山村	qián fù shān cūn	10
+千竿胡同	qiān gān hú tòng	117
 前甘棠村	qián gān táng cūn	10
 钱岗古村	qián gǎng gǔ cūn	153
 前岗头村	qián gǎng tóu cūn	10
@@ -55924,6 +56039,7 @@ sort: by_weight
 前进林场	qián jìn lín chǎng	10
 前进农场	qián jìn nóng chǎng	10
 前荆沟村	qián jīng gōu cūn	10
+前井胡同	qián jǐng hú tòng	288
 浅井头村	qiǎn jǐng tóu cūn	10
 前景庄村	qián jǐng zhuāng cūn	10
 前旧县村	qián jiù xiàn cūn	10
@@ -56091,6 +56207,7 @@ sort: by_weight
 前省庄村	qián shěng zhuāng cūn	10
 前石沟村	qián shí gōu cūn	10
 前石河村	qián shí hé cūn	10
+钱市胡同	qián shì hú tòng	9
 前石家庄	qián shí jiā zhuāng	10
 前十里堡	qián shí lǐ pù	10
 前石良村	qián shí liáng cūn	10
@@ -56396,6 +56513,7 @@ sort: by_weight
 侨州郡县	qiáo zhōu jùn xiàn	10
 桥梓公园	qiáo zǐ gōng yuán	117
 桥子沟村	qiáo zǐ gōu cūn	10
+桥子林场	qiáo zǐ lín chǎng	76
 桥子坪村	qiáo zǐ píng cūn	10
 桥梓塘村	qiáo zǐ táng cūn	10
 桥自湾乡	qiáo zì wān xiāng	10
@@ -56423,6 +56541,7 @@ sort: by_weight
 秦各庄村	qín gè zhuāng cūn	10
 秦姑庵村	qín gū ān cūn	10
 秦关街村	qín guān jiē cūn	10
+秦汉胡同	qín hàn hú tòng	297
 沁河公园	qìn hé gōng yuán	144
 秦虹街道	qín hóng jiē dào	10
 秦皇岛市	qín huáng dǎo shì	10
@@ -56737,6 +56856,7 @@ sort: by_weight
 青年驿站	qīng nián yì zhàn	450
 青年庄村	qīng nián zhuāng cūn	10
 青凝侯村	qīng níng hóu cūn	10
+庆平胡同	qìng píng hú tòng	189
 清平街道	qīng píng jiē dào	10
 庆葡街道	qìng pú jiē dào	10
 清浦街道	qīng pǔ jiē dào	10
@@ -57018,6 +57138,7 @@ sort: by_weight
 去长安县	qù cháng ān xiàn	10
 曲尺河村	qū chǐ hé cūn	10
 区大高镇	qū dà gāo zhèn	10
+取灯胡同	qǔ dēng hú tòng	9
 曲堤街道	qǔ dī jiē dào	10
 渠东街道	qú dōng jiē dào	10
 区防疫站	qū fáng yì zhàn	256
@@ -57401,6 +57522,7 @@ sort: by_weight
 荣军农场	róng jūn nóng chǎng	10
 茸木达乡	róng mù dá xiāng	10
 荣庆新村	róng qìng xīn cūn	10
+容山书院	róng shān shū yuàn	130
 荣市街道	róng shì jiē dào	10
 榕树头村	róng shù tóu cūn	10
 荣腾鱼乡	róng téng yú xiāng	10
@@ -58038,6 +58160,7 @@ sort: by_weight
 沙流河镇	shā liú hé zhèn	10
 沙柳河镇	shā liǔ hé zhèn	10
 沙柳街道	shā liǔ jiē dào	10
+沙络胡同	shā luò hú tòng	144
 沙螺湾村	shā luó wān cūn	10
 沙马坪村	shā mǎ píng cūn	10
 纱帽岗村	shā mào gǎng cūn	10
@@ -58812,6 +58935,7 @@ sort: by_weight
 邵家寨村	shào jiā zhài cūn	10
 邵家宅村	shào jiā zhái cūn	10
 邵家庄村	shào jiā zhuāng cūn	10
+韶九胡同	sháo jiǔ hú tòng	65
 烧酒巷村	shāo jiǔ xiàng cūn	10
 烧酒营村	shāo jiǔ yíng cūn	10
 少林街道	shǎo lín jiē dào	10
@@ -59139,6 +59263,7 @@ sort: by_weight
 盛家坞村	shèng jiā wù cūn	10
 圣家营村	shèng jiā yíng cūn	10
 盛家庄村	shèng jiā zhuāng cūn	10
+绳匠胡同	shéng jiàng hú tòng	212
 生金李村	shēng jīn lǐ cūn	10
 省静嘉县	shěng jìng jiā xiàn	10
 圣井街道	shèng jǐng jiē dào	10
@@ -59554,6 +59679,8 @@ sort: by_weight
 石家河乡	shí jiā hé xiāng	10
 石家河镇	shí jiā hé zhèn	10
 十家户村	shí jiā hù cūn	10
+史家胡同	shǐ jiā hú tòng	94
+施家胡同	shī jiā hú tòng	85
 石家甲村	shí jiā jiǎ cūn	10
 石家街村	shí jiā jiē cūn	10
 石家坎村	shí jiā kǎn cūn	10
@@ -59957,6 +60084,7 @@ sort: by_weight
 石泉一村	shí quán yī cūn	10
 石泉庄村	shí quán zhuāng cūn	10
 石泉子村	shí quán zǐ cūn	10
+石雀胡同	shí què hú tòng	320
 石人公园	shí rén gōng yuán	76
 石人沟村	shí rén gōu cūn	10
 石人沟乡	shí rén gōu xiāng	10
@@ -60132,6 +60260,7 @@ sort: by_weight
 石羊河村	shí yáng hé cūn	10
 石羊街村	shí yáng jiē cūn	10
 石羊街道	shí yáng jiē dào	10
+石垟林场	shí yáng lín chǎng	194
 石羊庙乡	shí yáng miào xiāng	10
 石羊农庄	shí yáng nóng zhuāng	10
 石羊圈村	shí yáng quān cūn	10
@@ -60288,11 +60417,13 @@ sort: by_weight
 首澳榕庄	shǒu ào róng zhuāng	10
 手板塘村	shǒu bǎn táng cūn	10
 寿宝庄村	shòu bǎo zhuāng cūn	10
+寿比胡同	shòu bǐ hú tòng	194
 狩场泽站	shòu chǎng zé zhàn	153
 首尔公园	shǒu ěr gōng yuán	50
 首尔街道	shǒu ěr jiē dào	10
 收金店村	shōu jīn diàn cūn	10
 首经贸站	shǒu jīng mào zhàn	238
+寿刘胡同	shòu liú hú tòng	153
 首南街道	shǒu nán jiē dào	10
 首帕张村	shǒu pà zhāng cūn	10
 寿泉街道	shòu quán jiē dào	10
@@ -60546,6 +60677,7 @@ sort: by_weight
 双水街道	shuāng shuǐ jiē dào	10
 双水井村	shuāng shuǐ jǐng cūn	10
 双水磨村	shuāng shuǐ mò cūn	10
+双寺胡同	shuāng sì hú tòng	144
 双寺社区	shuāng sì shè qū	99
 双苏堡村	shuāng sū bǎo cūn	10
 双塔街道	shuāng tǎ jiē dào	10
@@ -60583,6 +60715,7 @@ sort: by_weight
 双杨树村	shuāng yáng shù cūn	10
 双羊套村	shuāng yáng tào cūn	10
 双印通村	shuāng yìn tōng cūn	10
+双永林场	shuāng yǒng lín chǎng	99
 双屿街道	shuāng yǔ jiē dào	10
 双玉泉村	shuāng yù quán cūn	10
 双榆树村	shuāng yú shù cūn	10
@@ -60612,6 +60745,7 @@ sort: by_weight
 水草沟村	shuǐ cǎo gōu cūn	10
 水草坪村	shuǐ cǎo píng cūn	10
 水草塔村	shuǐ cǎo tǎ cūn	10
+水场胡同	shuǐ chǎng hú tòng	50
 水车洞村	shuǐ chē dòng cūn	10
 水车头村	shuǐ chē tóu cūn	10
 水车湾村	shuǐ chē wān cūn	10
@@ -60810,6 +60944,7 @@ sort: by_weight
 顺峰山庄	shùn fēng shān zhuāng	10
 顺风山庄	shùn fēng shān zhuāng	10
 舜耕街道	shùn gēng jiē dào	10
+顺海林场	shùn hǎi lín chǎng	130
 顺河场镇	shùn hé chǎng zhèn	10
 顺河集镇	shùn hé jí zhèn	10
 顺河街道	shùn hé jiē dào	10
@@ -60984,6 +61119,7 @@ sort: by_weight
 四角楼村	sì jiǎo lóu cūn	10
 四郊五县	sì jiāo wǔ xiàn	10
 寺角营村	sì jiǎo yíng cūn	10
+四井胡同	sì jǐng hú tòng	50
 四境社区	sì jìng shè qū	153
 四棵树村	sì kē shù cūn	10
 四棵树乡	sì kē shù xiāng	10
@@ -61467,6 +61603,7 @@ sort: by_weight
 苏州姑苏	sū zhōu gū sū	10
 肃州户村	sù zhōu hù cūn	10
 苏州虎丘	sū zhōu hǔ qiū	10
+苏州胡同	sū zhōu hú tòng	302
 苏州街道	sū zhōu jiē dào	10
 苏州昆山	sū zhōu kūn shān	10
 宿州灵璧	sù zhōu líng bì	10
@@ -62123,6 +62260,7 @@ sort: by_weight
 潭城街道	tán chéng jiē dào	10
 郯城街道	tán chéng jiē dào	10
 坦甸子村	tǎn diàn zǐ cūn	10
+炭儿胡同	tàn ér hú tòng	202
 谭格庄镇	tán gé zhuāng zhèn	10
 谈固街道	tán gù jiē dào	10
 潭河社区	tán hé shè qū	4
@@ -62202,6 +62340,7 @@ sort: by_weight
 堂尔上乡	táng ěr shàng xiāng	10
 糖房坳村	táng fáng ào cūn	10
 塘坊沟村	táng fāng gōu cūn	10
+糖房胡同	táng fáng hú tòng	189
 糖坊咀村	táng fāng jǔ cūn	10
 汤房庙村	tāng fáng miào cūn	10
 汤房坡村	tāng fáng pō cūn	10
@@ -62212,6 +62351,7 @@ sort: by_weight
 汤岗子镇	tāng gǎng zi zhèn	10
 唐高墩村	táng gāo dūn cūn	10
 塘格木镇	táng gé mù zhèn	10
+汤公胡同	tāng gōng hú tòng	256
 塘沽街道	táng gū jiē dào	10
 唐古拉镇	táng gǔ lā zhèn	10
 唐古戍堡	táng gǔ shù bǎo	10
@@ -62752,6 +62892,7 @@ sort: by_weight
 天井坝村	tiān jǐng bà cūn	10
 天井岗村	tiān jǐng gǎng cūn	10
 天井湖村	tiān jǐng hú cūn	10
+天景胡同	tiān jǐng hú tòng	194
 天井峪村	tiān jǐng yù cūn	10
 天井源乡	tiān jǐng yuán xiāng	10
 田老庄乡	tián lǎo zhuāng xiāng	10
@@ -63040,6 +63181,7 @@ sort: by_weight
 铁心桥乡	tiě xīn qiáo xiāng	10
 铁心桥镇	tiě xīn qiáo zhèn	10
 铁一社区	tiě yī shè qū	4
+铁营胡同	tiě yíng hú tòng	76
 铁营社区	tiě yíng shè qū	99
 铁英社区	tiě yīng shè qū	38
 铁营子村	tiě yíng zi cūn	10
@@ -63119,6 +63261,7 @@ sort: by_weight
 铜罐驿镇	tóng guàn yì zhèn	10
 潼关寨村	tóng guān zhài cūn	10
 佟官庄村	tóng guān zhuāng cūn	10
+铜光胡同	tóng guāng hú tòng	153
 通海口镇	tōng hǎi kǒu zhèn	10
 通河八村	tōng hé bā cūn	10
 通河二村	tōng hé èr cūn	10
@@ -63278,6 +63421,7 @@ sort: by_weight
 童游街道	tóng yóu jiē dào	10
 桐油坪村	tóng yóu píng cūn	10
 通榆北村	tōng yú běi cūn	10
+同裕胡同	tóng yù hú tòng	153
 桐屿街道	tóng yǔ jiē dào	10
 通远堡站	tōng yuǎn bǎo zhàn	99
 通远堡镇	tōng yuǎn bǎo zhèn	10
@@ -63355,6 +63499,7 @@ sort: by_weight
 兔耳岗村	tù ěr gǎng cūn	10
 吐尔根乡	tǔ ěr gēn xiāng	10
 吐尔洪乡	tǔ ěr hóng xiāng	10
+土儿胡同	tǔ ér hú tòng	144
 图费尼乡	tú fèi ní xiāng	10
 土佛寺村	tǔ fó sì cūn	10
 土高山乡	tǔ gāo shān xiāng	10
@@ -63479,6 +63624,7 @@ sort: by_weight
 退居此村	tuì jū cǐ cūn	10
 退沙街道	tuì shā jiē dào	10
 屯据乐乡	tún jù lè xiāng	10
+屯绢胡同	tún juàn hú tòng	171
 屯军营村	tún jūn yíng cūn	10
 屯垦队镇	tún kěn duì zhèn	10
 屯垦林场	tún kěn lín chǎng	10
@@ -64722,6 +64868,7 @@ sort: by_weight
 未央宫乡	wèi yāng gōng xiāng	10
 渭阳街道	wèi yáng jiē dào	10
 为溢乐县	wéi yì lè xiàn	10
+未英胡同	wèi yīng hú tòng	189
 魏营子村	wèi yíng zi cūn	10
 为玉科镇	wéi yù kē zhèn	10
 威远堡镇	wēi yuǎn bǎo zhèn	10
@@ -65507,6 +65654,7 @@ sort: by_weight
 乌山街道	wū shān jiē dào	10
 吴山前村	wú shān qián cūn	10
 午山社区	wǔ shān shè qū	4
+伍山石窟	wǔ shān shí kū	356
 雾山寺村	wù shān sì cūn	10
 乌审召镇	wū shěn zhào zhèn	10
 武圣宫村	wǔ shèng gōng cūn	10
@@ -66404,6 +66552,7 @@ sort: by_weight
 西口子村	xī kǒu zi cūn	10
 西口孜村	xī kǒu zī cūn	10
 西匡家庄	xī kuāng jiā zhuāng	10
+锡拉胡同	xī lā hú tòng	356
 西拉拉村	xī lā lā cūn	10
 西腊山村	xī là shān cūn	10
 西来古镇	xī lái gǔ zhèn	10
@@ -66788,6 +66937,7 @@ sort: by_weight
 西卅店镇	xī sà diàn zhèn	10
 西萨拉村	xī sà lā cūn	10
 西塞山区	xī sài shān qū	10
+西三胡同	xī sān hú tòng	230
 西三教村	xī sān jiào cūn	10
 西三里村	xī sān lǐ cūn	10
 西三里乡	xī sān lǐ xiāng	10
@@ -66966,6 +67116,7 @@ sort: by_weight
 西堂子村	xī táng zi cūn	10
 西塘子村	xī táng zi cūn	10
 西桃堡村	xī táo bǎo cūn	10
+西绦胡同	xī tāo hú tòng	144
 西桃花村	xī táo huā cūn	10
 西桃园村	xī táo yuán cūn	10
 西陶漳村	xī táo zhāng cūn	10
@@ -67090,6 +67241,7 @@ sort: by_weight
 西窝堡村	xī wō bǎo cūn	10
 西窝铺村	xī wō pù cūn	10
 西卧石村	xī wò shí cūn	10
+西沃石窟	xī wò shí kū	76
 西武沟村	xī wǔ gōu cūn	10
 西武官村	xī wǔ guān cūn	10
 西乌鸡村	xī wū jī cūn	10
@@ -67161,6 +67313,7 @@ sort: by_weight
 西辛峰村	xī xīn fēng cūn	10
 西辛封村	xī xīn fēng cūn	10
 西辛告村	xī xīn gào cūn	10
+惜薪胡同	xī xīn hú tòng	180
 西新街道	xī xīn jiē dào	10
 西辛兴村	xī xīn xīng cūn	10
 西辛营乡	xī xīn yíng xiāng	10
@@ -67384,6 +67537,7 @@ sort: by_weight
 西直门站	xī zhí mén zhàn	16
 西中堡村	xī zhōng bǎo cūn	10
 西重沟村	xī zhòng gōu cūn	10
+西中胡同	xī zhōng hú tòng	207
 西中黄村	xī zhōng huáng cūn	10
 西中雷村	xī zhōng léi cūn	10
 西中铺村	xī zhōng pù cūn	10
@@ -67418,6 +67572,7 @@ sort: by_weight
 西竹园村	xī zhú yuán cūn	10
 西朱庄村	xī zhū zhuāng cūn	10
 西砖河村	xī zhuān hé cūn	10
+西砖胡同	xī zhuān hú tòng	171
 西庄店村	xī zhuāng diàn cūn	10
 西庄东村	xī zhuāng dōng cūn	10
 西庄户村	xī zhuāng hù cūn	10
@@ -67482,6 +67637,7 @@ sort: by_weight
 下房子村	xià fáng zi cūn	10
 下符桥镇	xià fú qiáo zhèn	10
 下甘沟村	xià gān gōu cūn	10
+下岗胡同	xià gǎng hú tòng	202
 夏港街道	xià gǎng jiē dào	10
 厦港街道	xià gǎng jiē dào	10
 厦港新村	xià gǎng xīn cūn	10
@@ -67871,6 +68027,7 @@ sort: by_weight
 仙暇山庄	xiān xiá shān zhuāng	10
 仙霞新村	xiān xiá xīn cūn	10
 县仙福县	xiàn xiān fú xiàn	10
+先晓胡同	xiān xiǎo hú tòng	4
 先行街道	xiān xíng jiē dào	10
 线延冈站	xiàn yán gāng zhàn	194
 县彦根县	xiàn yàn gēn xiàn	10
@@ -68147,6 +68304,8 @@ sort: by_weight
 香山农场	xiāng shān nóng chǎng	10
 香山社区	xiāng shān shè qū	225
 象山社区	xiàng shān shè qū	137
+象山书院	xiàng shān shū yuàn	266
+香山书院	xiāng shān shū yuàn	99
 象山新村	xiàng shān xīn cūn	10
 香山新村	xiāng shān xīn cūn	10
 象山一村	xiàng shān yī cūn	10
@@ -68217,6 +68376,7 @@ sort: by_weight
 湘西古镇	xiāng xī gǔ zhèn	10
 湘西花垣	xiāng xī huā yuán	10
 湘西吉首	xiāng xī jí shǒu	10
+祥溪林场	xiáng xī lín chǎng	153
 湘西龙山	xiāng xī lóng shān	10
 湘西泸溪	xiāng xī lú xī	10
 香溪社区	xiāng xī shè qū	4
@@ -68982,6 +69142,7 @@ sort: by_weight
 新店子镇	xīn diàn zi zhèn	10
 新东街道	xīn dōng jiē dào	10
 新东坑村	xīn dōng kēng cūn	10
+新东林场	xīn dōng lín chǎng	50
 辛东社区	xīn dōng shè qū	45
 新东屯村	xīn dōng tún cūn	10
 新东吴村	xīn dōng wú cūn	10
@@ -69033,6 +69194,7 @@ sort: by_weight
 新海坝村	xīn hǎi bà cūn	10
 新海公园	xīn hǎi gōng yuán	117
 新海街道	xīn hǎi jiē dào	10
+新海林场	xīn hǎi lín chǎng	76
 新海农场	xīn hǎi nóng chǎng	279
 信航兰堡	xìn háng lán bǎo	10
 新浩特镇	xīn hào tè zhèn	10
@@ -69208,6 +69370,7 @@ sort: by_weight
 新路河镇	xīn lù hé zhèn	10
 新鲁沙村	xīn lǔ shā cūn	10
 新路湾镇	xīn lù wān zhèn	10
+新伦胡同	xīn lún hú tòng	130
 新罗岙村	xīn luó ào cūn	10
 新马场乡	xīn mǎ chǎng xiāng	10
 新马集镇	xīn mǎ jí zhèn	10
@@ -69266,6 +69429,7 @@ sort: by_weight
 新桥头村	xīn qiáo tóu cūn	10
 新桥湾村	xīn qiáo wān cūn	10
 新乔庄村	xīn qiáo zhuāng cūn	10
+新青林场	xīn qīng lín chǎng	99
 新区街道	xīn qū jiē dào	10
 新渠桥村	xīn qú qiáo cūn	10
 新渠稍村	xīn qú shāo cūn	10
@@ -69381,6 +69545,7 @@ sort: by_weight
 新溪新村	xīn xī xīn cūn	10
 新西庄村	xīn xī zhuāng cūn	10
 新霞社区	xīn xiá shè qū	4
+新鲜胡同	xīn xiān hú tòng	315
 新贤街村	xīn xián jiē cūn	10
 新乡车站	xīn xiāng chē zhàn	76
 新乡东站	xīn xiāng dōng zhàn	243
@@ -69422,6 +69587,8 @@ sort: by_weight
 新须毛村	xīn xū máo cūn	10
 新学堂村	xīn xué táng cūn	10
 新雅街道	xīn yǎ jiē dào	10
+新亚书院	xīn yà shū yuàn	680
+新雅书院	xīn yǎ shū yuàn	380
 新烟街道	xīn yān jiē dào	10
 新堰口村	xīn yàn kǒu cūn	10
 信阳东站	xìn yáng dōng zhàn	261
@@ -69857,6 +70024,7 @@ sort: by_weight
 雄州街道	xióng zhōu jiē dào	10
 休兵宇县	xiū bīng yǔ xiàn	10
 秀川街道	xiù chuān jiē dào	10
+绣川书院	xiù chuān shū yuàn	99
 秀川新村	xiù chuān xīn cūn	10
 秀峰街道	xiù fēng jiē dào	10
 修格庄村	xiū gé zhuāng cūn	10
@@ -70165,6 +70333,7 @@ sort: by_weight
 宣庄户村	xuān zhuāng hù cūn	10
 学庵社区	xué ān shè qū	50
 雪宝山镇	xuě bǎo shān zhèn	10
+雪池胡同	xuě chí hú tòng	252
 薛大人庄	xuē dà rén zhuāng	10
 薛丁庄村	xuē dīng zhuāng cūn	10
 学坊垭村	xué fāng yā cūn	10
@@ -70260,6 +70429,7 @@ sort: by_weight
 薛庄子村	xuē zhuāng zǐ cūn	10
 学庄子村	xué zhuāng zǐ cūn	10
 靴子沟村	xuē zi gōu cūn	10
+巡船胡同	xún chuán hú tòng	90
 巡检街村	xún jiǎn jiē cūn	10
 巡检司村	xún jiǎn sī cūn	10
 巡检司镇	xún jiǎn sī zhèn	10
@@ -70297,6 +70467,8 @@ sort: by_weight
 崖底王村	yá dǐ wáng cūn	10
 雅渡新村	yǎ dù xīn cūn	10
 鸦儿沟村	yā ér gōu cūn	10
+鸦儿胡同	yā ér hú tòng	16
+鸭儿胡同	yā ér hú tòng	14
 雅尔塞镇	yǎ ěr sāi zhèn	10
 亚尔堂乡	yà ěr táng xiāng	10
 鸦儿崖乡	yā ér yá xiāng	10
@@ -70547,6 +70719,7 @@ sort: by_weight
 阎家河村	yán jiā hé cūn	10
 鄢家河村	yān jiā hé cūn	10
 阎家河镇	yán jiā hé zhèn	10
+燕家胡同	yàn jiā hú tòng	117
 晏家街道	yàn jiā jiē dào	10
 阎家岭村	yán jiā lǐng cūn	10
 岩家垅乡	yán jiā lǒng xiāng	10
@@ -70619,6 +70792,7 @@ sort: by_weight
 沿口古镇	yán kǒu gǔ zhèn	10
 岩口铺镇	yán kǒu pù zhèn	10
 堰口社区	yàn kǒu shè qū	45
+演乐胡同	yǎn lè hú tòng	310
 雁翎公园	yàn líng gōng yuán	99
 燕岭公园	yàn lǐng gōng yuán	4
 延令街道	yán lìng jiē dào	10
@@ -70820,6 +70994,7 @@ sort: by_weight
 杨渡街道	yáng dù jiē dào	10
 羊二庄镇	yáng èr zhuāng zhèn	10
 杨饭店村	yáng fàn diàn cūn	10
+羊房胡同	yáng fáng hú tòng	9
 阳方口镇	yáng fāng kǒu zhèn	10
 杨芳林乡	yáng fāng lín xiāng	10
 杨坊山庄	yáng fāng shān zhuāng	10
@@ -70860,6 +71035,7 @@ sort: by_weight
 羊古坳镇	yáng gǔ ào zhèn	10
 杨姑桥村	yáng gū qiáo cūn	10
 杨古塔村	yáng gǔ tǎ cūn	10
+羊管胡同	yáng guǎn hú tòng	202
 阳关街道	yáng guān jiē dào	10
 杨官林镇	yáng guān lín zhèn	10
 杨官屯村	yáng guān tún cūn	10
@@ -71314,6 +71490,7 @@ sort: by_weight
 杨寨子村	yáng zhài zi cūn	10
 杨杖子村	yáng zhàng zi cūn	10
 杨杖子镇	yáng zhàng zi zhèn	10
+阳照胡同	yáng zhào hú tòng	189
 杨镇地区	yáng zhèn dì qū	10
 杨正沟村	yáng zhèng gōu cūn	10
 杨忠堡村	yáng zhōng bǎo cūn	10
@@ -71799,6 +71976,7 @@ sort: by_weight
 弋江街道	yì jiāng jiē dào	10
 一街社区	yī jiē shè qū	171
 一街新村	yī jiē xīn cūn	10
+益津书院	yì jīn shū yuàn	45
 以金佐镇	yǐ jīn zuǒ zhèn	10
 义井街道	yì jǐng jiē dào	10
 怡景新村	yí jǐng xīn cūn	10
@@ -71837,6 +72015,7 @@ sort: by_weight
 一良苗圃	yī liáng miáo pǔ	10
 依林小镇	yī lín xiǎo zhèn	10
 义灵关村	yì líng guān cūn	10
+义溜胡同	yì liū hú tòng	194
 矣六街道	yǐ liù jiē dào	10
 一六三团	yī liù sān tuán	10
 一六四团	yī liù sì tuán	10
@@ -72018,6 +72197,7 @@ sort: by_weight
 印度城镇	yìn dù chéng zhèn	10
 印度公园	yìn dù gōng yuán	45
 引凤街道	yǐn fèng jiē dào	10
+银冈书院	yín gāng shū yuàn	297
 尹各庄村	yǐn gè zhuāng cūn	10
 尹格庄村	yǐn gé zhuāng cūn	10
 银根苏木	yín gēn sū mù	10
@@ -72148,6 +72328,7 @@ sort: by_weight
 银苑新村	yín yuàn xīn cūn	10
 音乐公园	yīn yuè gōng yuán	35
 音乐驿站	yīn yuè yì zhàn	162
+银闸胡同	yín zhá hú tòng	117
 银闸社区	yín zhá shè qū	50
 尹杖子村	yǐn zhàng zi cūn	10
 引镇街道	yǐn zhèn jiē dào	10
@@ -72461,6 +72642,8 @@ sort: by_weight
 油坊岗村	yóu fáng gǎng cūn	10
 油坊沟村	yóu fáng gōu cūn	10
 油房沟村	yóu fáng gōu cūn	10
+油坊胡同	yóu fáng hú tòng	3
+油房胡同	yóu fáng hú tòng	2
 油房街村	yóu fáng jiē cūn	10
 油坊李村	yóu fáng lǐ cūn	10
 油房梁村	yóu fáng liáng cūn	10
@@ -72635,6 +72818,7 @@ sort: by_weight
 榆港渔村	yú gǎng yú cūn	10
 于岗子村	yú gǎng zi cūn	10
 渝高公园	yú gāo gōng yuán	4
+玉阁胡同	yù gé hú tòng	4
 榆格庄村	yú gé zhuāng cūn	10
 俞公岙村	yú gōng ào cūn	10
 渔公桥村	yú gōng qiáo cūn	10
@@ -72876,6 +73060,7 @@ sort: by_weight
 玉泉寺村	yù quán sì cūn	10
 玉泉营站	yù quán yíng zhàn	130
 羽犬冢村	yǔ quǎn zhǒng cūn	10
+育群胡同	yù qún hú tòng	6
 雨忍者村	yǔ rěn zhě cūn	10
 于瑟伦堡	yú sè lún bǎo	10
 渔沙坦村	yú shā tǎn cūn	10
@@ -73097,6 +73282,7 @@ sort: by_weight
 元和街道	yuán hé jiē dào	10
 袁河街道	yuán hé jiē dào	10
 元亨广村	yuán hēng guǎng cūn	10
+园宏胡同	yuán hóng hú tòng	194
 苑洪桥村	yuàn hóng qiáo cūn	10
 元洪新村	yuán hóng xīn cūn	10
 园户村镇	yuán hù cūn zhèn	10
@@ -73421,6 +73607,7 @@ sort: by_weight
 云浮云城	yún fú yún chéng	10
 云盖寺镇	yún gài sì zhèn	10
 云岗街道	yún gǎng jiē dào	10
+云冈石窟	yún gāng shí kū	116
 运光新村	yùn guāng xīn cūn	10
 运河街道	yùn hé jiē dào	10
 云鹤山村	yún hè shān cūn	10
@@ -73628,6 +73815,7 @@ sort: by_weight
 渣濑湾村	zhā lài wān cūn	10
 扎兰屯市	zhā lán tún shì	10
 扎兰屯站	zhā lán tún zhàn	162
+扎兰营子	zhā lán yíng zi	202
 扎陵湖乡	zhā líng hú xiāng	10
 扎鲁特旗	zhā lǔ tè qí	10
 扎麻隆村	zhā má lóng cūn	10
@@ -74196,6 +74384,7 @@ sort: by_weight
 张湾镇村	zhāng wān zhèn cūn	10
 张王岗村	zhāng wáng gǎng cūn	10
 张王沟村	zhāng wáng gōu cūn	10
+张旺胡同	zhāng wàng hú tòng	230
 张王庙村	zhāng wáng miào cūn	10
 张旺渠村	zhāng wàng qú cūn	10
 张王疃乡	zhāng wáng tuǎn xiāng	10
@@ -75007,6 +75196,7 @@ sort: by_weight
 治临沅县	zhì lín yuán xiàn	10
 指路碑村	zhǐ lù bēi cūn	10
 芝麻墩镇	zhī ma dūn zhèn	10
+芝麻胡同	zhī ma hú tòng	490
 芝麻塄村	zhī ma léng cūn	10
 芝麻坨村	zhī ma tuó cūn	10
 止马洼村	zhǐ mǎ wā cūn	10
@@ -75289,6 +75479,7 @@ sort: by_weight
 中滩农场	zhōng tān nóng chǎng	76
 中滩营村	zhōng tān yíng cūn	10
 中塘公园	zhōng táng gōng yuán	99
+中绦胡同	zhōng tāo hú tòng	4
 中田坝村	zhōng tián bà cūn	10
 中田庄村	zhōng tián zhuāng cūn	10
 中疃子村	zhōng tuǎn zǐ cūn	10
@@ -75727,6 +75918,7 @@ sort: by_weight
 朱麻硷村	zhū má jiǎn cūn	10
 朱码街道	zhū mǎ jiē dào	10
 驻马庄村	zhù mǎ zhuāng cūn	10
+朱茅胡同	zhū máo hú tòng	153
 朱孟庄村	zhū mèng zhuāng cūn	10
 著名侨乡	zhù míng qiáo xiāng	10
 竹木厂村	zhú mù chǎng cūn	10
@@ -75957,6 +76149,7 @@ sort: by_weight
 庄子沟村	zhuāng zǐ gōu cūn	10
 庄子头村	zhuāng zǐ tóu cūn	10
 庄子营村	zhuāng zǐ yíng cūn	10
+锥把胡同	zhuī bǎ hú tòng	99
 追栗街镇	zhuī lì jiē zhèn	10
 锥石口村	zhuī shí kǒu cūn	10
 锥子山村	zhuī zi shān cūn	10
@@ -76139,6 +76332,7 @@ sort: by_weight
 祖营坞村	zǔ yíng wù cūn	10
 祖元福村	zǔ yuán fú cūn	10
 钻石山站	zuàn shí shān zhàn	603
+钻死胡同	zuān sǐ hú tòng	238
 钻天咀村	zuān tiān jǔ cūn	10
 最大的镇	zuì dà de zhèn	10
 醉观公园	zuì guān gōng yuán	256
@@ -76561,6 +76755,7 @@ sort: by_weight
 贝尔彻群岛	bèi ěr chè qún dǎo	10
 北干道街道	běi gàn dào jiē dào	10
 北沟门子乡	běi gōu mén zǐ xiāng	10
+北沟沿胡同	běi gōu yán hú tòng	10
 北关清真寺	běi guān qīng zhēn sì	10
 北海合浦县	běi hǎi hé pǔ xiàn	10
 北海路街道	běi hǎi lù jiē dào	10
@@ -76597,6 +76792,7 @@ sort: by_weight
 北新桥街道	běi xīn qiáo jiē dào	10
 北牙瑶族乡	běi yá yáo zú xiāng	10
 北院门街道	běi yuàn mén jiē dào	10
+北总布胡同	běi zǒng bù hú tòng	10
 本能寺旧址	běn néng sì jiù zhǐ	10
 本斋回族乡	běn zhāi huí zú xiāng	10
 蚌埠固镇县	bèng bù gù zhèn xiàn	10
@@ -76811,6 +77007,7 @@ sort: by_weight
 朝阳洲街道	cháo yáng zhōu jiē dào	10
 潮州饶平县	cháo zhōu ráo píng xiàn	10
 车城路街道	chē chéng lù jiē dào	10
+车辇店胡同	chē niǎn diàn hú tòng	10
 车田苗族乡	chē tián miáo zú xiāng	10
 车站街街道	chē zhàn jiē jiē dào	10
 撤镇设街道	chè zhèn shè jiē dào	10
@@ -76912,6 +77109,7 @@ sort: by_weight
 崇左宁明县	chóng zuǒ níng míng xiàn	10
 崇左天等县	chóng zuǒ tiān děng xiàn	10
 楚古兰街道	chǔ gǔ lán jiē dào	10
+储库营胡同	chǔ kù yíng hú tòng	10
 楚鲁松杰乡	chǔ lǔ sōng jié xiāng	10
 畜禽良种场	chù qín liáng zhǒng chǎng	10
 滁州定远县	chú zhōu dìng yuǎn xiàn	10
@@ -76935,6 +77133,7 @@ sort: by_weight
 茨院回族乡	cí yuàn huí zú xiāng	10
 丛台东街道	cóng tái dōng jiē dào	10
 丛台西街道	cóng tái xī jiē dào	10
+徂徕山林场	cú lái shān lín chǎng	10
 崔各庄地区	cuī gè zhuāng dì qū	10
 翠屏山街道	cuì píng shān jiē dào	10
 翠山湖新区	cuì shān hú xīn qū	10
@@ -77459,6 +77658,7 @@ sort: by_weight
 干河陈街道	gān hé chén jiē dào	10
 甘河工业园	gān hé gōng yè yuán	10
 干河彝族乡	gān hé yí zú xiāng	10
+干河子林场	gān hé zǐ lín chǎng	10
 甘家湖牧场	gān jiā hú mù chǎng	10
 甘家口街道	gān jiā kǒu jiē dào	10
 干净的街道	gān jìng de jiē dào	10
@@ -77533,6 +77733,7 @@ sort: by_weight
 高新区农场	gāo xīn qū nóng chǎng	10
 高雄那玛夏	gāo xióng nà mǎ xià	10
 高阳路街道	gāo yáng lù jiē dào	10
+高义伯胡同	gāo yì bó hú tòng	10
 高寨子街道	gāo zhài zi jiē dào	10
 葛店开发区	gé diàn kāi fā qū	10
 葛家满族乡	gé jiā mǎn zú xiāng	10
@@ -77556,6 +77757,7 @@ sort: by_weight
 龚家湾街道	gōng jiā wān jiē dào	10
 龚家寨街道	gōng jiā zhài jiē dào	10
 公腊胡洞乡	gōng là hú dòng xiāng	10
+巩乃斯林场	gǒng nǎi sī lín chǎng	10
 工农路街道	gōng nóng lù jiē dào	10
 工人村街道	gōng rén cūn jiē dào	10
 巩县石窟寺	gǒng xiàn shí kū sì	10
@@ -77608,6 +77810,7 @@ sort: by_weight
 固增苗族乡	gù zēng miáo zú xiāng	10
 古寨瑶族乡	gǔ zhài yáo zú xiāng	10
 孤竹营子乡	gū zhú yíng zi xiāng	10
+挂榜山林场	guà bǎng shān lín chǎng	10
 挂甲寺街道	guà jiǎ sì jiē dào	10
 卦山天宁寺	guà shān tiān níng sì	10
 瓜子坪街道	guā zǐ píng jiē dào	10
@@ -78323,6 +78526,7 @@ sort: by_weight
 济源路街道	jì yuán lù jiē dào	10
 集中营旧址	jí zhōng yíng jiù zhǐ	10
 箕子台街道	jī zǐ tái jiē dào	10
+夹边沟林场	jiā biān gōu lín chǎng	10
 嘉定工业区	jiā dìng gōng yè qū	10
 嘉定镇街道	jiā dìng zhèn jiē dào	10
 甲斐善光寺	jiǎ fěi shàn guāng sì	10
@@ -78991,6 +79195,7 @@ sort: by_weight
 柳树湾街道	liǔ shù wān jiē dào	10
 六水桥街道	liù shuǐ qiáo jiē dào	10
 刘田各庄镇	liú tián gè zhuāng zhèn	10
+流溪河林场	liú xī hé lín chǎng	10
 柳溪苗族乡	liǔ xī miáo zú xiāng	10
 浏阳河街道	liú yáng hé jiē dào	10
 柳叶湖街道	liǔ yè hú jiē dào	10
@@ -79159,6 +79364,7 @@ sort: by_weight
 蔴源垦殖场	má yuán kěn zhí chǎng	10
 马仗房街道	mǎ zhàng fáng jiē dào	10
 马庄回族乡	mǎ zhuāng huí zú xiāng	10
+麻状元胡同	má zhuàng yuan hú tòng	10
 马鬃苗族乡	mǎ zōng miáo zú xiāng	10
 马鬃山苏木	mǎ zōng shān sū mù	10
 迈皋桥街道	mài gāo qiáo jiē dào	10
@@ -79179,6 +79385,7 @@ sort: by_weight
 茂南开发区	mào nán kāi fā qū	10
 茅坪回族镇	máo píng huí zú zhèn	10
 茅山风景区	máo shān fēng jǐng qū	10
+帽子峰林场	mào zi fēng lín chǎng	10
 美巴切勤乡	měi bā qiè qín xiāng	10
 梅花村街道	méi huā cūn jiē dào	10
 梅家埠街道	méi jiā bù jiē dào	10
@@ -79796,6 +80003,7 @@ sort: by_weight
 赛马场片区	sài mǎ chǎng piàn qū	10
 三安曲林乡	sān ān qǔ lín xiāng	10
 三板桥街道	sān bǎn qiáo jiē dào	10
+三不老胡同	sān bù lǎo hú tòng	10
 三叉街街道	sān chā jiē jiē dào	10
 三道岗子镇	sān dào gǎng zi zhèn	10
 三道河子镇	sān dào hé zǐ zhèn	10
@@ -80070,6 +80278,7 @@ sort: by_weight
 市北高新区	shì běi gāo xīn qū	10
 石材开发区	shí cái kāi fā qū	10
 什刹海街道	shí chà hǎi jiē dào	10
+石大人胡同	shí dà rén hú tòng	10
 石达石街道	shí dá shí jiē dào	10
 石东路街道	shí dōng lù jiē dào	10
 十渡风景区	shí dù fēng jǐng qū	10
@@ -80264,6 +80473,7 @@ sort: by_weight
 四方坪街道	sì fāng píng jiē dào	10
 四方山农场	sì fāng shān nóng chǎng	10
 四方台农场	sì fāng tái nóng chǎng	10
+四根柏胡同	sì gēn bǎi hú tòng	10
 四姑娘山镇	sì gū niang shān zhèn	10
 四官营子镇	sì guān yíng zi zhèn	10
 四海山林场	sì hǎi shān lín chǎng	10
@@ -80646,6 +80856,7 @@ sort: by_weight
 汪甸瑶族乡	wāng diān yáo zú xiāng	10
 王顶堤街道	wáng dǐng dī jiē dào	10
 王范回族镇	wáng fàn huí zú zhèn	10
+王府仓胡同	wáng fǔ cāng hú tòng	10
 王格尔塘镇	wáng gé ěr táng zhèn	10
 王哥庄街道	wáng gē zhuāng jiē dào	10
 王瓜店街道	wáng guā diàn jiē dào	10
@@ -81076,7 +81287,9 @@ sort: by_weight
 小江湖街道	xiǎo jiāng hú jiē dào	10
 小金口街道	xiǎo jīn kǒu jiē dào	10
 小金彝族乡	xiǎo jīn yí zú xiāng	10
+小经厂胡同	xiǎo jīng chǎng hú tòng	10
 小井峪街道	xiǎo jǐng yù jiē dào	10
+小菊儿胡同	xiǎo jú ér hú tòng	10
 小凌河街道	xiǎo líng hé jiē dào	10
 孝陵卫街道	xiào líng wèi jiē dào	10
 小龙坎街道	xiǎo lóng kǎn jiē dào	10
@@ -81084,8 +81297,10 @@ sort: by_weight
 小南头街道	xiǎo nán tóu jiē dào	10
 小南辛堡镇	xiǎo nán xīn bǎo zhèn	10
 小桥街街道	xiǎo qiáo jiē jiē dào	10
+小沙果胡同	xiǎo shā guǒ hú tòng	10
 萧山商业城	xiāo shān shāng yè chéng	10
 消失的街道	xiāo shī de jiē dào	10
+小石虎胡同	xiǎo shí hǔ hú tòng	10
 孝肃路街道	xiào sù lù jiē dào	10
 小王果庄镇	xiǎo wáng guǒ zhuāng zhèn	10
 萧王庙街道	xiāo wáng miào jiē dào	10
@@ -81834,6 +82049,7 @@ sort: by_weight
 钟家庄街道	zhōng jiā zhuāng jiē dào	10
 中京工业园	zhōng jīng gōng yè yuán	10
 中梁山街道	zhōng liáng shān jiē dào	10
+钟楼湾胡同	zhōng lóu wān hú tòng	10
 中南路街道	zhōng nán lù jiē dào	10
 重庆城口县	zhòng qìng chéng kǒu xiàn	10
 钟山定林寺	zhōng shān dìng lín sì	10
@@ -83373,6 +83589,7 @@ sort: by_weight
 红寺堡开发区	hóng sì bǔ kāi fā qū	10
 洪塘营瑶族乡	hóng táng yíng yáo zú xiāng	10
 厚街体育公园	hòu jiē tǐ yù gōng yuán	10
+后圆恩寺胡同	hòu yuán ēn sì hú tòng	10
 湖北口回族乡	hú běi kǒu huí zú xiāng	10
 湖北省鄂州市	hú běi shěng è zhōu shì	10
 湖北省黄冈市	hú běi shěng huáng gāng shì	10
@@ -83487,6 +83704,7 @@ sort: by_weight
 黄羊关藏族乡	huáng yáng guān zàng zú xiāng	10
 回龙山瑶族乡	huí lóng shān yáo zú xiāng	10
 惠山森林公园	huì shān sēn lín gōng yuán	10
+惠荪实验林场	huì sūn shí yàn lín chǎng	10
 辉腾锡勒园区	huī téng xī lè yuán qū	10
 惠州市博罗县	huì zhōu shì bó luó xiàn	10
 惠州市惠城区	huì zhōu shì huì chéng qū	10
@@ -84504,6 +84722,8 @@ sort: by_weight
 千鸟湖风景区	qiān niǎo hú fēng jǐng qū	10
 前所果树农场	qián suǒ guǒ shù nóng chǎng	10
 前滩休闲公园	qián tān xiū xián gōng yuán	10
+前细瓦厂胡同	qián xì wǎ chǎng hú tòng	10
+前圆恩寺胡同	qián yuán ēn sì hú tòng	10
 切木尔切克镇	qiè mù ěr qiè kè zhèn	10
 秦皇岛北戴河	qín huáng dǎo běi dài hé	10
 秦皇岛昌黎县	qín huáng dǎo chāng lí xiàn	10

@@ -2194,7 +2194,6 @@ sort: by_weight
 甲硼烷	jiǎ péng wán	346
 甲铅烷	jiǎ qiān wán	4
 甲壳素	jiǎ qiào sù	22
-甲壳质	jiǎ qiào zhì	428
 加氢苯	jiā qīng běn	117
 甲醛肟	jiǎ quán wò	243
 甲炔基	jiǎ quē jī	76
@@ -3695,6 +3694,7 @@ sort: by_weight
 七氯萘	qī lǜ nài	45
 七碳糖	qī tàn táng	99
 七叶苷	qī yè gān	4
+甲壳质	qiǎ qiào zhì	428
 铅玻璃	qiān bō lí	13
 茜草红	qiàn cǎo hóng	212
 茜根酸	qiàn gēn suān	50
@@ -12967,7 +12967,6 @@ sort: by_weight
 半乳糖酸钙	bàn rǔ táng suān gài	10
 半纤维素酶	bàn xiān wéi sù méi	10
 斑岩钼矿床	bān yán mù kuàng chuáng	10
-丙酯葡萄糖	bàng bǐng zhǐ pú tao táng	10
 傍轴光线𫟷	bàng zhóu guāng xiàn lì	10
 胞壁酰二肽	bāo bì xiān èr tài	10
 胞苷单磷酸	bāo gān dān lín suān	10
@@ -13369,6 +13368,7 @@ sort: by_weight
 丙氧基苯胺	bǐng yǎng jī běn àn	10
 丙酯氯化钠	bǐng zhǐ lǜ huà nà	10
 丙酯葡萄糖	bǐng zhǐ pú tao táng	10
+丙酯葡萄糖	bǐng zhǐ pú tao táng	10
 𬭛的同位素	bō de tóng wèi sù	10
 铂的同位素	bó de tóng wèi sù	10
 铂的氧化物	bó de yǎng huà wù	12
@@ -13492,7 +13492,7 @@ sort: by_weight
 次亚磷酸铁	cì yà lín suān tiě	10
 次亚硫酸钠	cì yà liú suān nà	10
 次亚麻油酸	cì yà má yóu suān	10
-圆二向色性	cí yuán èr xiàng sè xìng	10
+磁珠缀合物	cí zhū zhuì hé wù	10
 磁珠缀合物	cí zhū zhuì hé wù	10
 磁子午线𫟷	cí zǐ wǔ xiàn lì	10
 醋氨己酸锌	cù ān jǐ suān xīn	10
@@ -13635,8 +13635,6 @@ sort: by_weight
 碲的同位素	dì de tóng wèi sù	10
 低度氧化锌	dī dù yǎng huà xīn	10
 地尔硫艹卓	dì ěr liú cǎo zhuó	10
-酯化反应器	dì èr zhǐ huà fǎn yìng qì	10
-放射性废料	dī fàng shè xìng fèi liào	10
 地方性氟病	dì fāng xìng fú bìng	10
 低共熔合金	dī gòng róng hé jīn	10
 低含氢硅油	dī hán qīng guī yóu	10
@@ -13658,7 +13656,6 @@ sort: by_weight
 低铔硫酸钠	dī yā liú suān nà	10
 第一颗氢弹	dì yī kē qīng dàn	10
 第一游离能	dì yī yóu lí néng	10
-酯化反应器	dì yī zhǐ huà fǎn yìng qì	10
 碘氨基戊酸	diǎn ān jī wù suān	10
 碘苯磺酰氯	diǎn běn huáng xiān lǜ	10
 碘苯甲基胍	diǎn běn jiǎ jī guā	10
@@ -13679,7 +13676,6 @@ sort: by_weight
 碘化清蛋白	diǎn huà qīng dàn bái	10
 碘化亚甲基	diǎn huà yà jiǎ jī	10
 碘化异丁烷	diǎn huà yì dīng wán	12
-活性聚合物	diàn huó xìng jù hé wù	10
 电活性物质	diàn huó xìng wù zhì	10
 电解金属锰	diàn jiě jīn shǔ měng	10
 电解水制氢	diàn jiě shuǐ zhì qīng	10
@@ -14450,7 +14446,6 @@ sort: by_weight
 二原子分子	èr yuán zǐ fēn zǐ	10
 二原子气体	èr yuán zǐ qì tǐ	10
 二仲仲辛基	èr zhòng zhòng xīn jī	10
-放射性核素	fā shè fàng shè xìng hé sù	10
 发射谱线𫟷	fā shè pǔ xiàn lì	10
 发生炉煤气	fā shēng lú méi qì	10
 法式酸奶油	fǎ shì suān nǎi yóu	10
@@ -14508,12 +14503,17 @@ sort: by_weight
 芳基正离子	fāng jī zhèng lí zǐ	10
 方硫铁镍矿	fāng liú tiě niè kuàng	10
 放射性废料	fàng shè xìng fèi liào	10
+放射性废料	fàng shè xìng fèi liào	10
+放射性废料	fàng shè xìng fèi liào	10
+放射性核素	fàng shè xìng hé sù	10
+放射性核素	fàng shè xìng hé sù	10
 放射性核素	fàng shè xìng hé sù	10
 放射性活度	fàng shè xìng huó dù	10
 放射性胶体	fàng shè xìng jiāo tǐ	10
 放射性粒子	fàng shè xìng lì zǐ	10
 放射性射线	fàng shè xìng shè xiàn	10
 放射性示踪	fàng shè xìng shì zōng	10
+芳烃工艺包	fāng tīng gōng yì bāo	10
 芳烃工艺包	fāng tīng gōng yì bāo	10
 芳香化合物	fāng xiāng huà hé wù	10
 芳香环己胺	fāng xiāng huán jǐ àn	10
@@ -14639,7 +14639,6 @@ sort: by_weight
 氟喹诺酮类	fú kuí nuò tóng lèi	10
 弗里斯反应	fú lǐ sī fǎn yìng	10
 氟邻苯二酚	fú lín běn èr fēn	10
-六方双锥类	fù liù fāng shuāng zhuī lèi	10
 副硫锑钴矿	fù liú tī gǔ kuàng	10
 富硫银铁矿	fù liú yín tiě kuàng	10
 弗罗因德酸	fú luó yīn dé suān	10
@@ -14677,7 +14676,6 @@ sort: by_weight
 氟三碘甲烷	fú sān diǎn jiǎ wán	10
 氟三氯甲烷	fú sān lǜ jiǎ wán	10
 氟三溴甲烷	fú sān xiù jiǎ wán	10
-放射性核素	fú shè fàng shè xìng hé sù	10
 氟素交代酌	fú sù jiāo dài zhuó	10
 富酸二甲酯	fù suān èr jiǎ zhǐ	10
 麸酸一钠盐	fū suān yī nà yán	10
@@ -14767,7 +14765,6 @@ sort: by_weight
 高锝酸亚铊	gāo dé suān yà tā	10
 锆的同位素	gào de tóng wèi sù	10
 高碘酸铁钾	gāo diǎn suān tiě jiǎ	10
-放射性废料	gāo fàng shè xìng fèi liào	10
 高分子交联	gāo fēn zǐ jiāo lián	10
 高分子胶质	gāo fēn zǐ jiāo zhì	10
 高分子结晶	gāo fēn zǐ jié jīng	10
@@ -14874,6 +14871,7 @@ sort: by_weight
 谷胺酸一钠	gǔ àn suān yī nà	10
 谷氨酸乙酯	gǔ ān suān yǐ zhǐ	10
 谷氨酰胺酶	gǔ ān xiān àn méi	10
+谷氨酰胺酶	gǔ ān xiān àn méi	10
 谷氨转移酶	gǔ ān zhuǎn yí méi	10
 谷丙甘氨酸	gǔ bǐng gān ān suān	10
 钴的同位素	gǔ de tóng wèi sù	10
@@ -14890,7 +14888,6 @@ sort: by_weight
 固体稠化剂	gù tǐ chóu huà jì	10
 固体分散物	gù tǐ fēn sǎn wù	10
 钴锑硫镍矿	gǔ tī liú niè kuàng	10
-酰基转移酶	gǔ xiān jī zhuǎn yí méi	10
 固相合成法	gù xiàng hé chéng fǎ	10
 谷甾醇二氢	gǔ zāi chún èr qīng	10
 骨质磷酸钙	gǔ zhì lín suān gài	10
@@ -14968,6 +14965,7 @@ sort: by_weight
 海藻酸铝镁	hǎi zǎo suān lǚ měi	10
 海藻提取物	hǎi zǎo tí qǔ wù	10
 含醇量测定	hán chún liáng cè dìng	10
+含氮化合物	hán dàn huà hé wù	10
 含氮化合物	hán dàn huà hé wù	10
 含氮无机物	hán dàn wú jī wù	10
 汉防己甲素	hàn fáng jǐ jiǎ sù	10
@@ -15179,6 +15177,7 @@ sort: by_weight
 活性蛋白质	huó xìng dàn bái zhì	10
 活性化合物	huó xìng huà hé wù	10
 活性聚合物	huó xìng jù hé wù	10
+活性聚合物	huó xìng jù hé wù	10
 活性磷酸盐	huó xìng lín suān yán	12
 活性乳酸菌	huó xìng rǔ suān jūn	10
 活性碳酸镁	huó xìng tàn suān měi	10
@@ -15210,7 +15209,7 @@ sort: by_weight
 激基复合体	jī jī fù hé tǐ	10
 激基复合物	jī jī fù hé wù	10
 己基环己烷	jǐ jī huán jǐ wán	10
-激酶激酶类	jī méi jī méi jī méi lèi	10
+激酶激酶类	jī méi jī méi lèi	10
 激酶激酶类	jī méi jī méi lèi	10
 姬姆萨色素	jī mǔ sà sè sù	10
 极谱分析法	jí pǔ fēn xī fǎ	10
@@ -15571,6 +15570,7 @@ sort: by_weight
 甲烯前列素	jiǎ xī qián liè sù	10
 甲烯土霉素	jiǎ xī tǔ méi sù	10
 甲烯𬭩离子	jiǎ xī wēng lí zǐ	10
+甲酰化反应	jiǎ xiān huà fǎn yìng	10
 甲酰化反应	jiǎ xiān huà fǎn yìng	10
 甲酰基苯胺	jiǎ xiān jī běn àn	10
 甲酰基𫫇唑	jiǎ xiān jī ě zuò	10
@@ -15985,7 +15985,6 @@ sort: by_weight
 抗衰老物质	kàng shuāi lǎo wù zhì	10
 糠酸莫米松	kāng suān mò mǐ sōng	10
 抗碳水化物	kàng tàn shuǐ huà wù	10
-磁珠缀合物	kàng tǐ cí zhū zhuì hé wù	10
 抗微生物肽	kàng wēi shēng wù tài	10
 糠酰羧化酶	kāng xiān suō huà méi	10
 糠酰脱氢酶	kāng xiān tuō qīng méi	10
@@ -16394,6 +16393,7 @@ sort: by_weight
 硫的氧化物	liú de yǎng huà wù	12
 六方金刚石	liù fāng jīn gāng shí	10
 六方密堆积	liù fāng mì duī jī	10
+六方双锥类	liù fāng shuāng zhuī lèi	10
 六方双锥类	liù fāng shuāng zhuī lèi	10
 硫分测量仪	liú fēn cè liáng yí	10
 六氟铋酸锂	liù fú bì suān lǐ	10
@@ -17238,7 +17238,6 @@ sort: by_weight
 氰基化合物	qíng jī huà hé wù	10
 氰基异噻唑	qíng jī yì sāi zuò	10
 氰基乙酰胺	qíng jī yǐ xiān àn	10
-甲酰化反应	qīng jiǎ xiān huà fǎn yìng	10
 青稞葡聚糖	qīng kē pú jù táng	10
 氢醌乳膏皮	qīng kūn rǔ gāo pí	10
 轻硫砷铅矿	qīng liú shēn qiān kuàng	10
@@ -17791,7 +17790,6 @@ sort: by_weight
 十一烯酸锌	shí yī xī suān xīn	10
 十一烯酸酯	shí yī xī suān zhǐ	10
 食用小苏打	shí yòng xiǎo sū dá	10
-含氮化合物	shí yóu hán dàn huà hé wù	10
 石油磺酸钠	shí yóu huáng suān nà	10
 石油硫酸钡	shí yóu liú suān bèi	10
 受激二聚物	shòu jī èr jù wù	10
@@ -17809,7 +17807,6 @@ sort: by_weight
 叔丁基乙苯	shū dīng jī yǐ běn	10
 叔丁基异腈	shū dīng jī yì jīng	10
 叔丁基乙酸	shū dīng jī yǐ suān	10
-氧基化合物	shū dīng yǎng jī huà hé wù	10
 叔丁氧羰基	shū dīng yǎng tāng jī	10
 疏花酸藤子	shū huā suān téng zi	10
 熟耐火黏土	shú nài huǒ nián tǔ	10
@@ -18611,6 +18608,7 @@ sort: by_weight
 腺苷一磷酸	xiàn gān yī lín suān	10
 酰基化合物	xiān jī huà hé wù	10
 酰基转移酶	xiān jī zhuǎn yí méi	10
+酰基转移酶	xiān jī zhuǎn yí méi	10
 纤硫锑铅矿	xiān liú tī qiān kuàng	10
 腺毛酸藤子	xiàn máo suān téng zi	10
 仙茅甜蛋白	xiān máo tián dàn bái	10
@@ -19094,6 +19092,7 @@ sort: by_weight
 氧化铟镓锌	yǎng huà yīn jiā xīn	10
 氧化萤光素	yǎng huà yíng guāng sù	10
 阳极电解液	yáng jí diàn jiě yè	10
+氧基化合物	yǎng jī huà hé wù	10
 氧基化合物	yǎng jī huà hé wù	10
 阳极溶出法	yáng jí róng chū fǎ	10
 阳极氧化铝	yáng jí yǎng huà lǚ	10
@@ -19634,6 +19633,7 @@ sort: by_weight
 原冰岛衣酸	yuán bīng dǎo yī suān	10
 圆二色谱法	yuán èr sè pǔ fǎ	10
 圆二向色性	yuán èr xiàng sè xìng	10
+圆二向色性	yuán èr xiàng sè xìng	10
 原硅酸氧钆	yuán guī suān yǎng gá	10
 原硅酸氧镥	yuán guī suān yǎng lǔ	10
 芫花总黄酮	yuán huā zǒng huáng tóng	10
@@ -19716,6 +19716,8 @@ sort: by_weight
 脂肪氧化酶	zhī fáng yǎng huà méi	10
 酯化雌激素	zhǐ huà cí jī sù	10
 酯化反应器	zhǐ huà fǎn yìng qì	10
+酯化反应器	zhǐ huà fǎn yìng qì	10
+酯化反应器	zhǐ huà fǎn yìng qì	10
 脂环化合物	zhī huán huà hé wù	10
 酯交换反应	zhǐ jiāo huàn fǎn yìng	10
 酯类化合物	zhǐ lèi huà hé wù	10
@@ -19762,7 +19764,6 @@ sort: by_weight
 注射用叶酸	zhù shè yòng yè suān	10
 猪脱氧胆酸	zhū tuō yǎng dǎn suān	10
 猪胰岛素原	zhū yí dǎo sù yuán	10
-谷氨酰胺酶	zhuǎn gǔ ān xiān àn méi	10
 锥序酸脚杆	zhuī xù suān jiǎo gǎn	10
 准硫铀钙矿	zhǔn liú yóu gài kuàng	10
 紫丹参甲素	zǐ dān shēn jiǎ sù	10
@@ -19773,7 +19774,6 @@ sort: by_weight
 紫外吸收剂	zǐ wài xī shōu jì	10
 紫外线固化	zǐ wài xiàn gù huà	10
 紫外荧光硫	zǐ wài yíng guāng liú	10
-芳烃工艺包	zì yǒu fāng tīng gōng yì bāo	10
 自由基环化	zì yóu jī huán huà	10
 自由基清除	zì yóu jī qīng chú	10
 棕榈酸丁酯	zōng lǘ suān dīng zhǐ	10
@@ -19990,6 +19990,7 @@ sort: by_weight
 安息香二甲醚	ān xī xiāng èr jiǎ mí	10
 安息香双甲醚	ān xī xiāng shuāng jiǎ mí	10
 氨酰基合成酶	ān xiān jī hé chéng méi	10
+氨酰基转移酶	ān xiān jī zhuǎn yí méi	10
 氨硝酸银涂布	ān xiāo suān yín tú bù	10
 氨氧化催化剂	ān yǎng huà cuī huà jì	12
 氨乙基苯三酚	ān yǐ jī běn sān fēn	10
@@ -20260,6 +20261,7 @@ sort: by_weight
 表本胆烷醇酮	biǎo běn dǎn wán chún tóng	10
 表洛柯皂苷元	biǎo luò kē zào gān yuán	10
 表面活性物质	biǎo miàn huó xìng wù zhì	10
+表面活性物质	biǎo miàn huó xìng wù zhì	10
 表山芝烯二醇	biǎo shān zhī xī èr chún	10
 表山芝烯三醇	biǎo shān zhī xī sān chún	10
 表檀香花萜烯	biǎo tán xiāng huā tiē xī	10
@@ -20384,7 +20386,6 @@ sort: by_weight
 不稳定化合物	bù wěn dìng huà hé wù	10
 不稳定氢化物	bù wěn dìng qīng huà wù	10
 不稳定性核素	bù wěn dìng xìng hé sù	10
-依赖贴壁细胞	bù yī lài tiē bì xì bāo	10
 蔡杜二氏溶液	cài dù èr shì róng yè	10
 彩色增感染料	cǎi sè zēng gǎn rǎn liào	10
 蚕蛹氨酸葡锌	cán yǒng ān suān pú xīn	10
@@ -20654,7 +20655,6 @@ sort: by_weight
 碘酸盐滴定法	diǎn suān yán dī dìng fǎ	10
 碘酰基苯甲酸	diǎn xiān jī běn jiǎ suān	10
 碘硬脂酸乙酯	diǎn yìng zhī suān yǐ zhǐ	10
-肩锁关节钢板	diào jiān suǒ guān jié gāng bǎn	10
 叠氮化亚硝醯	dié dàn huà yà xiāo xī	10
 叠氮酸根离子	dié dàn suān gēn lí zǐ	10
 叠氮乙酸乙酯	dié dàn yǐ suān yǐ zhǐ	10
@@ -20858,7 +20858,6 @@ sort: by_weight
 多价金属离子	duō jià jīn shǔ lí zǐ	10
 多金属氧酸盐	duō jīn shǔ yǎng suān yán	10
 多晶形聚合物	duō jīng xíng jù hé wù	10
-聚核糖聚合酶	duō jù hé táng jù hé méi	10
 多聚腺苷酸尾	duō jù xiàn gān suān wěi	10
 多孔硅珠氨基	duō kǒng guī zhū ān jī	10
 多孔硅珠醚基	duō kǒng guī zhū mí jī	10
@@ -21566,7 +21565,6 @@ sort: by_weight
 纺织印染助剂	fǎng zhī yìn rǎn zhù jì	10
 非苯二氮䓬类	fēi běn èr dàn zhuó lèi	10
 非必需氨基酸	fēi bì xū ān jī suān	10
-表面活性物质	fèi biǎo miàn huó xìng wù zhì	10
 非布丙醇胶丸	fēi bù bǐng chún jiāo wán	10
 非等比化合物	fēi děng bǐ huà hé wù	10
 非电解质溶液	fēi diàn jiě zhì róng yè	10
@@ -21583,18 +21581,12 @@ sort: by_weight
 非共沸混合物	fēi gòng fèi hùn hé wù	10
 非共价作用力	fēi gòng jià zuò yòng lì	10
 非共有电子对	fēi gòng yǒu diàn zǐ duì	10
-骨水泥标准柄	fēi gǔ shuǐ ní biāo zhǔn bǐng	10
-骨水泥加长柄	fēi gǔ shuǐ ní jiā cháng bǐng	10
 非光化学淬灭	fēi guāng huà xué cuì miè	10
 废合金不锈钢	fèi hé jīn bú xiù gāng	10
 非核糖体多肽	fēi hé táng tǐ duō tài	10
 非活性填充剂	fēi huó xìng tián chōng jì	10
 非计量化合物	fēi jì liàng huà hé wù	10
 非极性化合物	fēi jí xìng huà hé wù	10
-金属肠道支架	fēi jīn shǔ cháng dào zhī jià	10
-金属胆道支架	fēi jīn shǔ dǎn dào zhī jià	10
-金属捆绑支架	fēi jīn shǔ kǔn bǎng zhī jià	10
-金属食道支架	fēi jīn shǔ shí dào zhī jià	10
 非金属氧化物	fēi jīn shǔ yǎng huà wù	10
 非晶态聚合物	fēi jīng tài jù hé wù	10
 非晶质半导体	fēi jīng zhì bàn dǎo tǐ	10
@@ -21607,7 +21599,6 @@ sort: by_weight
 菲绕啉指示剂	fēi rào lín zhǐ shì jì	10
 菲舍尔投影式	fēi shě ěr tóu yǐng shì	10
 费氏丙酸杆菌	fèi shì bǐng suān gǎn jūn	10
-言语心理治疗	fēi yán yǔ xīn lǐ zhì liáo	10
 非匀相催化剂	fēi yún xiāng cuī huà jì	10
 非整比化合物	fēi zhěng bǐ huà hé wù	12
 非质子性溶剂	fēi zhì zǐ xìng róng jì	12
@@ -21624,7 +21615,6 @@ sort: by_weight
 分子轨道能级	fēn zǐ guǐ dào néng jí	10
 分子轨域理论	fēn zǐ guǐ yù lǐ lùn	10
 分子几何结构	fēn zǐ jǐ hé jié gòu	10
-亲核取代反应	fēn zǐ qīn hé qǔ dài fǎn yìng	10
 冯布劳恩反应	féng bù láo ēn fǎn yìng	10
 氟斑牙黄斑牙	fú bān yá huáng bān yá	10
 氟胞嘧啶测量	fú bāo mì dìng cè liáng	10
@@ -21643,7 +21633,6 @@ sort: by_weight
 氟二氯碘甲烷	fú èr lǜ diǎn jiǎ wán	10
 氟二氯溴甲烷	fú èr lǜ xiù jiǎ wán	10
 氟二溴碘甲烷	fú èr xiù diǎn jiǎ wán	10
-含碳水化合物	fù hán tàn shuǐ huà hé wù	10
 复合铅稳定剂	fù hé qiān wěn dìng jì	10
 复合体稳定剂	fù hé tǐ wěn dìng jì	10
 氟及其化合物	fú jí qí huà hé wù	10
@@ -21714,7 +21703,6 @@ sort: by_weight
 氟乙酸氟乙酯	fú yǐ suān fú yǐ zhǐ	10
 氟乙酰水杨酸	fú yǐ xiān shuǐ yáng suān	10
 腐植酸钠颗粒	fǔ zhí suān nà kē lì	10
-主动脉瘤破裂	fù zhǔ dòng mài liú pò liè	10
 伽玛氨基丁酸	gā mǎ ān jī dīng suān	10
 伽玛羟基丁酸	gā mǎ qiǎng jī dīng suān	10
 钙黄绿素钾盐	gài huáng lǜ sù jiǎ yán	10
@@ -21786,7 +21774,6 @@ sort: by_weight
 高分子增塑剂	gāo fēn zǐ zēng sù jì	10
 高胱胺酸尿症	gāo guāng àn suān niào zhèng	10
 高胱氨酸尿症	gāo guāng ān suān niào zhèng	10
-换气灌注比率	gāo huàn qì guàn zhù bǐ lǜ	10
 高赖氨酸血症	gāo lài ān suān xuè zhèng	10
 高酪氨酸血症	gāo lào ān suān xuè zhèng	10
 高离氨酸血症	gāo lí ān suān xuè zhèng	10
@@ -21944,7 +21931,6 @@ sort: by_weight
 谷氨酰甘氨酸	gǔ ān xiān gān ān suān	10
 谷氨酰合成酶	gǔ ān xiān hé chéng méi	10
 谷氨酰基萘胺	gǔ ān xiān jī nài àn	10
-氨酰基转移酶	gǔ ān xiān jī zhuǎn yí méi	10
 谷氨酰水解酶	gǔ ān xiān shuǐ jiě méi	10
 谷氨酰丝氨酸	gǔ ān xiān sī ān suān	10
 谷氨酰羧肽酶	gǔ ān xiān suō tài méi	10
@@ -21989,9 +21975,11 @@ sort: by_weight
 鼓室丛交通支	gǔ shì cóng jiāo tōng zhī	10
 鼓室迷路骨折	gǔ shì mí lù gǔ zhé	10
 骨水泥标准柄	gǔ shuǐ ní biāo zhǔn bǐng	10
+骨水泥标准柄	gǔ shuǐ ní biāo zhǔn bǐng	10
 骨水泥翻修柄	gǔ shuǐ ní fān xiū bǐng	10
 骨水泥股骨柄	gǔ shuǐ ní gǔ gǔ bǐng	10
 骨水泥关节柄	gǔ shuǐ ní guān jié bǐng	10
+骨水泥加长柄	gǔ shuǐ ní jiā cháng bǐng	10
 骨水泥加长柄	gǔ shuǐ ní jiā cháng bǐng	10
 骨水泥搅拌器	gǔ shuǐ ní jiǎo bàn qì	10
 骨水泥髋臼杯	gǔ shuǐ ní kuān jiù bēi	10
@@ -22177,6 +22165,7 @@ sort: by_weight
 含卤素生物碱	hán lǔ sù shēng wù jiǎn	10
 汉斯狄克反应	hàn sī dí kè fǎn yìng	10
 汉斯二氏试验	hàn sī èr shì shì yàn	10
+含碳水化合物	hán tàn shuǐ huà hé wù	10
 含碳水化合物	hán tàn shuǐ huà hé wù	10
 含糖碳酸亚铁	hán táng tàn suān yà tiě	10
 豪杜二氏试验	háo dù èr shì shì yàn	10
@@ -22429,6 +22418,7 @@ sort: by_weight
 环鸟苷单磷酸	huán niǎo gān dān lín suān	10
 环鸟苷酸腺苷	huán niǎo gān suān xiàn gān	10
 换气功能障碍	huàn qì gōng néng zhàng ài	10
+换气灌注比率	huàn qì guàn zhù bǐ lǜ	10
 换气灌注比率	huàn qì guàn zhù bǐ lǜ	10
 患上老年痴呆	huàn shàng lǎo nián chī dāi	10
 环十八烷九烯	huán shí bā wán jiǔ xī	10
@@ -23106,6 +23096,7 @@ sort: by_weight
 碱式亚磷酸铅	jiǎn shì yà lín suān qiān	10
 碱式硬脂酸铝	jiǎn shì yìng zhī suān lǚ	10
 肩锁关节钢板	jiān suǒ guān jié gāng bǎn	10
+肩锁关节钢板	jiān suǒ guān jié gāng bǎn	10
 肩锁关节损伤	jiān suǒ guān jié sǔn shāng	10
 肩锁关节脱位	jiān suǒ guān jié tuō wèi	10
 减体积肺移植	jiǎn tǐ jī fèi yí zhí	10
@@ -23182,6 +23173,7 @@ sort: by_weight
 角质形成细胞	jiǎo zhì xíng chéng xì bāo	10
 角质形成小体	jiǎo zhì xíng chéng xiǎo tǐ	10
 胶子等离子体	jiāo zǐ děng lí zǐ tǐ	10
+胶子等离子体	jiāo zǐ děng lí zǐ tǐ	10
 颉氨酸食品级	jié ān suān shí pǐn jí	10
 接触性喉溃疡	jiē chù xìng hóu kuì yáng	10
 结缔组织构成	jié dì zǔ zhī gòu chéng	10
@@ -23233,10 +23225,13 @@ sort: by_weight
 浸润性肺结核	jìn rùn xìng fèi jié hé	10
 近视度数加深	jìn shì dù shù jiā shēn	10
 金属肠道支架	jīn shǔ cháng dào zhī jià	10
+金属肠道支架	jīn shǔ cháng dào zhī jià	10
+金属胆道支架	jīn shǔ dǎn dào zhī jià	10
 金属胆道支架	jīn shǔ dǎn dào zhī jià	10
 金属电极电位	jīn shǔ diàn jí diàn wèi	10
 金属间化合物	jīn shǔ jiān huà hé wù	10
 金属接骨钢板	jīn shǔ jiē gǔ gāng bǎn	10
+金属捆绑支架	jīn shǔ kǔn bǎng zhī jià	10
 金属捆绑支架	jīn shǔ kǔn bǎng zhī jià	10
 金属离子浓度	jīn shǔ lí zǐ nóng dù	10
 金属硫因兔肝	jīn shǔ liú yīn tù gān	10
@@ -23246,6 +23241,7 @@ sort: by_weight
 金属内肽酶类	jīn shǔ nèi tài méi lèi	10
 金属配位染料	jīn shǔ pèi wèi rǎn liào	10
 金属嵌入环化	jīn shǔ qiàn rù huán huà	10
+金属食道支架	jīn shǔ shí dào zhī jià	10
 金属食道支架	jīn shǔ shí dào zhī jià	10
 金属有机骨架	jīn shǔ yǒu jī gǔ jià	10
 金属有机试剂	jīn shǔ yǒu jī shì jì	10
@@ -23377,6 +23373,7 @@ sort: by_weight
 聚合氯化铝铁	jù hé lǜ huà lǚ tiě	10
 聚合酶大片段	jù hé méi dà piàn duàn	10
 聚合酶链反应	jù hé méi liàn fǎn yìng	10
+聚核糖聚合酶	jù hé táng jù hé méi	10
 聚核糖聚合酶	jù hé táng jù hé méi	10
 聚合物异构体	jù hé wù yì gòu tǐ	10
 聚琥珀酸明胶	jù hǔ pò suān míng jiāo	10
@@ -23687,7 +23684,6 @@ sort: by_weight
 库兴综合征型	kù xīng zōng hé zhēng xíng	10
 苦胭脂红溶液	kǔ yān zhī hóng róng yè	10
 跨环过氧化物	kuà huán guò yǎng huà wù	10
-胶子等离子体	kuā kè jiāo zǐ děng lí zǐ tǐ	10
 跨膜静息电位	kuà mó jìng xī diàn wèi	10
 快速眼动睡眠	kuài sù yǎn dòng shuì mián	10
 块状硫砷铜矿	kuài zhuàng liú shēn tóng kuàng	10
@@ -25220,6 +25216,7 @@ sort: by_weight
 亲电子反应性	qīn diàn zǐ fǎn yìng xìng	10
 亲核加成反应	qīn hé jiā chéng fǎn yìng	10
 亲核取代反应	qīn hé qǔ dài fǎn yìng	10
+亲核取代反应	qīn hé qǔ dài fǎn yìng	10
 亲水亲油基团	qīn shuǐ qīn yóu jī tuán	10
 亲水亲油平衡	qīn shuǐ qīn yóu píng héng	10
 侵袭性葡萄胎	qīn xí xìng pú tao tāi	10
@@ -25786,6 +25783,7 @@ sort: by_weight
 上腭炎性肿物	shàng è yán xìng zhǒng wù	10
 伤寒和副伤寒	shāng hán hé fù shāng hán	10
 伤寒沙门氏菌	shāng hán shā mén shì jūn	10
+伤寒沙门氏菌	shāng hán shā mén shì jūn	10
 伤寒性肠穿孔	shāng hán xìng cháng chuān kǒng	10
 上颌骨牙槽突	shàng hé gǔ yá cáo tū	10
 上颌横行骨折	shàng hé héng xíng gǔ zhé	10
@@ -26088,7 +26086,6 @@ sort: by_weight
 输卵管子宫口	shū luǎn guǎn zi gōng kǒu	10
 数平均聚合度	shù píng jūn jù hé dù	10
 鼠伤寒带菌者	shǔ shāng hán dài jūn zhě	10
-伤寒沙门氏菌	shǔ shāng hán shā mén shì jūn	10
 叔十二碳硫醇	shū shí èr tàn liú chún	10
 疏水胶体溶液	shū shuǐ jiāo tǐ róng yè	10
 疏水相互作用	shū shuǐ xiāng hù zuò yòng	10
@@ -27928,6 +27925,7 @@ sort: by_weight
 眼用填充气体	yǎn yòng tián chōng qì tǐ	10
 言语能力评定	yán yǔ néng lì píng dìng	10
 言语心理治疗	yán yǔ xīn lǐ zhì liáo	10
+言语心理治疗	yán yǔ xīn lǐ zhì liáo	10
 岩枕软骨结合	yán zhěn ruǎn gǔ jié hé	10
 炎症局部显像	yán zhèng jú bù xiǎn xiàng	10
 炎症性损毁肺	yán zhèng xìng sǔn huǐ fèi	10
@@ -28177,6 +28175,7 @@ sort: by_weight
 一价铊化合物	yí jià tā huà hé wù	10
 异抗坏血酸钠	yì kàng huài xuè suān nà	10
 衣康酸二甲酯	yī kāng suān èr jiǎ zhǐ	10
+依赖贴壁细胞	yī lài tiē bì xì bāo	10
 依赖贴壁细胞	yī lài tiē bì xì bāo	10
 伊莱亚森卡环	yī lái yà sēn kǎ huán	10
 一粒大酸葡萄	yí lì dà suān pú tao	10
@@ -28886,6 +28885,7 @@ sort: by_weight
 主动脉瓣硬化	zhǔ dòng mài bàn yìng huà	10
 主动脉弓延长	zhǔ dòng mài gōng yán cháng	10
 主动脉弓中断	zhǔ dòng mài gōng zhōng duàn	10
+主动脉瘤破裂	zhǔ dòng mài liú pò liè	10
 主动脉瘤破裂	zhǔ dòng mài liú pò liè	10
 主动脉血管环	zhǔ dòng mài xuè guǎn huán	10
 主动脉右转位	zhǔ dòng mài yòu zhuàn wèi	10
