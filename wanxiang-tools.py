@@ -128,7 +128,8 @@ from PySide6.QtWidgets import (
     QLineEdit, QPushButton, QFileDialog, QTabWidget, QCheckBox,
     QPlainTextEdit, QProgressBar, QLabel, QMessageBox, QGroupBox,
     QStyleFactory, QMenuBar, QDialog, QDialogButtonBox,
-    QRadioButton, QButtonGroup, QComboBox, QGridLayout, QFrame, QSpinBox
+    QRadioButton, QButtonGroup, QComboBox, QGridLayout, QFrame, QSpinBox,
+    QScrollArea
 )
 
 
@@ -271,6 +272,11 @@ class ExtraDictSelector(QFrame):
         desc.setStyleSheet("color: #777;")
         root.addWidget(desc)
 
+        search = QLineEdit()
+        search.setPlaceholderText("搜索词库名称或 ID")
+        search.setClearButtonEnabled(True)
+        root.addWidget(search)
+
         grid = QGridLayout()
         grid.setHorizontalSpacing(10)
         grid.setVerticalSpacing(8)
@@ -282,7 +288,27 @@ class ExtraDictSelector(QFrame):
             box.setChecked(key in self._selected)
             boxes[key] = box
             grid.addWidget(box, index // 2, index % 2)
-        root.addLayout(grid)
+
+        grid_panel = QWidget()
+        grid_panel.setLayout(grid)
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        scroll.setFrameShape(QFrame.NoFrame)
+        scroll.setMinimumHeight(180)
+        scroll.setWidget(grid_panel)
+        root.addWidget(scroll, 1)
+
+        def apply_filter(text: str) -> None:
+            query = text.strip().casefold()
+            for key, box in boxes.items():
+                label = EXTRA_DICT_LABELS.get(key, key)
+                box.setVisible(
+                    not query
+                    or query in key.casefold()
+                    or query in label.casefold()
+                )
+
+        search.textChanged.connect(apply_filter)
 
         actions = QHBoxLayout()
         btn_all = QPushButton("全选")
