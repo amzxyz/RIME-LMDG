@@ -261,8 +261,8 @@ class ExtraDictSelector(QFrame):
         dialog.setMinimumWidth(520)
 
         root = QVBoxLayout(dialog)
-        root.setContentsMargins(18, 16, 18, 14)
-        root.setSpacing(10)
+        root.setContentsMargins(16, 12, 16, 10)
+        root.setSpacing(7)
 
         title = QLabel("附加词库")
         title.setStyleSheet("font-size: 16px; font-weight: 600;")
@@ -278,12 +278,12 @@ class ExtraDictSelector(QFrame):
         root.addWidget(search)
 
         grid = QGridLayout()
-        grid.setHorizontalSpacing(10)
-        grid.setVerticalSpacing(8)
+        grid.setHorizontalSpacing(8)
+        grid.setVerticalSpacing(4)
         boxes = {}
         for index, (key, label) in enumerate(EXTRA_DICT_CATALOG):
             box = QCheckBox(f"{label}  ({key})")
-            box.setMinimumHeight(34)
+            box.setMinimumHeight(29)
             box.setToolTip(f"dicts/{key}.dict.yaml")
             box.setChecked(key in self._selected)
             boxes[key] = box
@@ -294,7 +294,10 @@ class ExtraDictSelector(QFrame):
         scroll = QScrollArea()
         scroll.setWidgetResizable(True)
         scroll.setFrameShape(QFrame.NoFrame)
-        scroll.setMinimumHeight(180)
+        scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        # 条目少时保持紧凑；条目增多后限制列表高度，由右侧滚动条承载。
+        row_count = (len(boxes) + 1) // 2
+        scroll.setFixedHeight(min(220, max(112, row_count * 31 + 8)))
         scroll.setWidget(grid_panel)
         root.addWidget(scroll, 1)
 

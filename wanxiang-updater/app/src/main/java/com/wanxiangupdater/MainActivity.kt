@@ -30,6 +30,9 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material3.*
@@ -555,13 +558,30 @@ fun WanxiangDownloaderApp() {
         mutableStateOf(sharedPref.getString("download_source", DOWNLOAD_SOURCE_CNB) ?: DOWNLOAD_SOURCE_CNB)
     }
     var githubToken by remember { mutableStateOf(sharedPref.getString("gh_token", "") ?: "") }
+    var extraDictCatalog by remember {
+        mutableStateOf(readCachedExtraDictCatalog(context))
+    }
+    var extraDictCatalogLoading by remember { mutableStateOf(false) }
+    var extraDictCatalogError by remember { mutableStateOf(false) }
+    var extraDictCatalogRefreshKey by remember { mutableStateOf(0) }
+
+    LaunchedEffect(extraDictCatalogRefreshKey) {
+        extraDictCatalogLoading = true
+        extraDictCatalogError = false
+        val result = refreshExtraDictCatalog(context)
+        result.onSuccess { catalog ->
+            extraDictCatalog = catalog
+        }.onFailure {
+            extraDictCatalogError = true
+        }
+        extraDictCatalogLoading = false
+    }
+
     var selectedExtraDictIds by remember {
         val saved = runCatching {
             sharedPref.getStringSet("extra_dicts", emptySet()) ?: emptySet()
         }.getOrDefault(emptySet())
-        mutableStateOf(
-            saved.filter { id -> EXTRA_DICT_CATALOG.any { it.id == id } }.toSet()
-        )
+        mutableStateOf(saved.toSet())
     }
     var showExtraDictCatalog by remember { mutableStateOf(false) }
     var advancedSettingsPath by remember {
@@ -1301,7 +1321,13 @@ fun WanxiangDownloaderApp() {
                             border = CardDefaults.outlinedCardBorder(true),
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .clickable { showExtraDictCatalog = true }
+                                .clickable {
+                                    if (extraDictCatalog.isEmpty() && extraDictCatalogError) {
+                                        extraDictCatalogRefreshKey++
+                                    } else {
+                                        showExtraDictCatalog = true
+                                    }
+                                }
                         ) {
                             Row(
                                 modifier = Modifier.fillMaxWidth().padding(10.dp),
@@ -1311,11 +1337,12 @@ fun WanxiangDownloaderApp() {
                                 Column(modifier = Modifier.weight(1f)) {
                                     Text("📚 附加词库", fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
                                     Text(
-                                        if (selectedExtraDictIds.isEmpty()) "点击选择要一起下载的词库"
+                                        if (extraDictCatalog.isEmpty() && extraDictCatalogError) "附加词库目录加载失败，点击刷新列表"
+                                        else if (selectedExtraDictIds.isEmpty()) "点击选择要一起下载的词库"
                                         else "已选择 ${selectedExtraDictIds.size} 项：" +
-                                            EXTRA_DICT_CATALOG
+                                            extraDictCatalog
                                                 .filter { it.id in selectedExtraDictIds }
-                                                .joinToString("、") { it.description },
+                                                .joinToString("、") { it.name },
                                         fontSize = 11.sp,
                                         color = Color.Gray,
                                         maxLines = 1,
@@ -1323,7 +1350,15 @@ fun WanxiangDownloaderApp() {
                                         modifier = Modifier.padding(top = 3.dp)
                                     )
                                 }
-                                Text("展开 〉", fontSize = 12.sp, color = MorandiDarkGreen)
+                                Text(
+                                    when {
+                                        extraDictCatalog.isEmpty() && extraDictCatalogLoading -> "加载中…"
+                                        extraDictCatalog.isEmpty() && extraDictCatalogError -> "刷新列表"
+                                        else -> "展开 〉"
+                                    },
+                                    fontSize = 12.sp,
+                                    color = MorandiDarkGreen
+                                )
                             }
                         }
 
@@ -1336,7 +1371,11 @@ fun WanxiangDownloaderApp() {
                                 )
                             ) {
                                 ExtraDictCatalogScreen(
+                                    catalog = extraDictCatalog,
                                     selectedIds = selectedExtraDictIds,
+                                    loading = extraDictCatalogLoading,
+                                    loadError = extraDictCatalogError,
+                                    onRefresh = { extraDictCatalogRefreshKey++ },
                                     onSelectedIdsChange = { ids ->
                                         selectedExtraDictIds = ids
                                         sharedPref.edit()
@@ -1372,7 +1411,7 @@ fun WanxiangDownloaderApp() {
                                                 context = context,
                                                 rules = currentRules,
                                                 githubProbeUrls = githubProbeUrls,
-                                                extraDictNames = extraDictFileNames(selectedExtraDictIds),
+                                                extraDictNames = extraDictFileNames(selectedExtraDictIds, extraDictCatalog),
                                                 schemeType = schemeType,
                                                 auxScheme = auxScheme
                                             )
@@ -1459,10 +1498,20 @@ fun WanxiangDownloaderApp() {
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun ExtraDictCatalogScreen(
+    catalog: List<ExtraDictCatalogEntry>,
     selectedIds: Set<String>,
+    loading: Boolean,
+    loadError: Boolean,
+    onRefresh: () -> Unit,
     onSelectedIdsChange: (Set<String>) -> Unit,
     onCollapse: () -> Unit
 ) {
+    var query by remember { mutableStateOf("") }
+    val filteredCatalog = catalog.filter {
+        query.isBlank() || it.name.contains(query, ignoreCase = true) ||
+            it.id.contains(query, ignoreCase = true)
+    }
+
     Surface(
         modifier = Modifier.fillMaxSize(),
         color = Color(0xFFFAFAFA)
@@ -1484,30 +1533,81 @@ fun ExtraDictCatalogScreen(
                         color = MorandiDarkGreen
                     )
                     Text(
-                        "勾选后，点击更新时会一起下载并按当前方案处理",
+                        if (loadError) "目录加载失败，当前没有可下载词库"
+                        else "勾选后，点击更新时会一起下载并按当前方案处理",
                         fontSize = 12.sp,
-                        color = Color.Gray,
+                        color = if (loadError) Color(0xFFB04A4A) else Color.Gray,
                         modifier = Modifier.padding(top = 3.dp)
                     )
                 }
-                TextButton(onClick = onCollapse) {
-                    Text("收起", color = MorandiDarkGreen, fontWeight = FontWeight.Bold)
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    if (loadError || loading) {
+                        TextButton(onClick = onRefresh, enabled = !loading) {
+                            Text(
+                                if (loading) "刷新中…" else "刷新列表",
+                                color = MorandiDarkGreen,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+                    }
+                    TextButton(onClick = onCollapse) {
+                        Text("收起", color = MorandiDarkGreen, fontWeight = FontWeight.Bold)
+                    }
                 }
             }
 
             Divider(color = MorandiBorder)
 
-            FlowRow(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .weight(1f)
-                    .verticalScroll(rememberScrollState())
-                    .padding(12.dp),
-                maxItemsInEachRow = 2,
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-                verticalArrangement = Arrangement.spacedBy(8.dp)
-            ) {
-                EXTRA_DICT_CATALOG.forEach { entry ->
+            if (catalog.isEmpty()) {
+                Column(
+                    modifier = Modifier.fillMaxWidth().weight(1f),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    Text(
+                        if (loading) "正在加载附加词库列表…" else "暂时没有可用的附加词库列表",
+                        color = Color.Gray,
+                        fontSize = 14.sp
+                    )
+                    if (!loading) {
+                        Button(onClick = onRefresh, modifier = Modifier.padding(top = 10.dp)) {
+                            Text("刷新列表")
+                        }
+                    }
+                }
+                return@Surface
+            }
+
+            Column(modifier = Modifier.fillMaxWidth().weight(1f)) {
+                OutlinedTextField(
+                    value = query,
+                    onValueChange = { query = it },
+                    modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 8.dp),
+                    singleLine = true,
+                    placeholder = { Text("搜索词库名称或 ID") },
+                    trailingIcon = {
+                        if (query.isNotEmpty()) {
+                            TextButton(onClick = { query = "" }) { Text("清除") }
+                        }
+                    }
+                )
+
+                if (filteredCatalog.isEmpty()) {
+                    Box(
+                        modifier = Modifier.fillMaxWidth().weight(1f),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text("没有匹配的词库", color = Color.Gray, fontSize = 14.sp)
+                    }
+                } else {
+                    LazyVerticalGrid(
+                        columns = GridCells.Fixed(2),
+                        modifier = Modifier.fillMaxWidth().weight(1f),
+                        contentPadding = PaddingValues(12.dp),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp),
+                        verticalArrangement = Arrangement.spacedBy(6.dp)
+                    ) {
+                        items(filteredCatalog, key = { it.id }) { entry ->
                     val selected = entry.id in selectedIds
                     Card(
                         modifier = Modifier
@@ -1526,7 +1626,7 @@ fun ExtraDictCatalogScreen(
                         )
                     ) {
                         Row(
-                            modifier = Modifier.fillMaxWidth().padding(10.dp),
+                            modifier = Modifier.fillMaxWidth().padding(8.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Box(
@@ -1548,7 +1648,7 @@ fun ExtraDictCatalogScreen(
                             }
                             Column(modifier = Modifier.padding(start = 9.dp)) {
                                 Text(
-                                    entry.description,
+                                    entry.name,
                                     fontSize = 14.sp,
                                     fontWeight = FontWeight.Bold,
                                     color = Color.DarkGray
@@ -1562,6 +1662,8 @@ fun ExtraDictCatalogScreen(
                                     modifier = Modifier.padding(top = 2.dp)
                                 )
                             }
+                        }
+                    }
                         }
                     }
                 }

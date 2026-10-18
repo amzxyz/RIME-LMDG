@@ -9,9 +9,16 @@ import com.chaquo.python.android.AndroidPlatform
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
+import java.net.HttpURLConnection
+import java.net.URL
+import org.json.JSONArray
 
 private const val EXTRA_DICT_RAW_BASE =
     "https://raw.githubusercontent.com/amzxyz/rime-wanxiang-data/wanxiang/dicts"
+private const val EXTRA_DICT_CATALOG_URL =
+    "https://raw.githubusercontent.com/amzxyz/rime-wanxiang-data/wanxiang/extra-dicts.json"
+private const val EXTRA_DICT_CATALOG_CACHE = "extra-dicts.json"
+private const val EXTRA_DICT_CATALOG_TEMP = "extra-dicts.json.tmp"
 
 /**
  * 受控附加词库目录。这里维护不带后缀的仓库文件名；界面只展示这些条目，
@@ -19,20 +26,77 @@ private const val EXTRA_DICT_RAW_BASE =
  */
 data class ExtraDictCatalogEntry(
     val id: String,
-    val description: String
+    val name: String
 )
 
-val EXTRA_DICT_CATALOG: List<ExtraDictCatalogEntry> = listOf(
-    ExtraDictCatalogEntry("shici", "诗词大全"),
-    ExtraDictCatalogEntry("wuzhong", "动植物名称"),
-    ExtraDictCatalogEntry("huaxue", "化学词库"),
-    ExtraDictCatalogEntry("yaopin", "药品词库"),
-    ExtraDictCatalogEntry("yixue", "医学词库"),
-    ExtraDictCatalogEntry("fangyan", "国内方言词库")
-)
+private fun parseExtraDictCatalog(text: String): List<ExtraDictCatalogEntry> {
+    val array = JSONArray(text)
+    require(array.length() <= 200) { "附加词库目录过大" }
+    val result = mutableListOf<ExtraDictCatalogEntry>()
+    val seen = mutableSetOf<String>()
+    for (index in 0 until array.length()) {
+        val item = array.optJSONObject(index) ?: continue
+        val id = item.optString("id").trim().lowercase()
+        val name = item.optString("name").trim()
+        if (!Regex("[a-z0-9][a-z0-9_-]{0,63}").matches(id)) continue
+        if (name.isBlank() || name.length > 80 || !seen.add(id)) continue
+        result += ExtraDictCatalogEntry(id, name)
+    }
+    require(result.isNotEmpty()) { "附加词库目录为空" }
+    return result
+}
 
-fun extraDictFileNames(selectedIds: Collection<String>): List<String> =
-    EXTRA_DICT_CATALOG.filter { it.id in selectedIds }.map { "${it.id}.dict.yaml" }
+fun readCachedExtraDictCatalog(context: Context): List<ExtraDictCatalogEntry> =
+    runCatching {
+        context.openFileInput(EXTRA_DICT_CATALOG_CACHE).bufferedReader(Charsets.UTF_8).use { reader ->
+            parseExtraDictCatalog(reader.readText())
+        }
+    }.getOrDefault(emptyList())
+
+suspend fun refreshExtraDictCatalog(context: Context): Result<List<ExtraDictCatalogEntry>> =
+    withContext(Dispatchers.IO) {
+        runCatching {
+            val connection = (URL(EXTRA_DICT_CATALOG_URL).openConnection() as HttpURLConnection).apply {
+                requestMethod = "GET"
+                connectTimeout = 5000
+                readTimeout = 15000
+                useCaches = true
+                setRequestProperty("Accept", "application/json")
+                setRequestProperty("User-Agent", "Wanxiang-Updater")
+            }
+            try {
+                check(connection.responseCode in 200..299) { "HTTP ${connection.responseCode}" }
+                val bytes = connection.inputStream.use { it.readBytes() }
+                check(bytes.size <= 256 * 1024) { "配置文件过大" }
+                val catalog = parseExtraDictCatalog(bytes.toString(Charsets.UTF_8))
+                val temp = File(context.filesDir, EXTRA_DICT_CATALOG_TEMP)
+                temp.writeText(
+                    JSONArray().apply {
+                        catalog.forEach { entry ->
+                            put(org.json.JSONObject().apply {
+                                put("id", entry.id)
+                                put("name", entry.name)
+                            })
+                        }
+                    }.toString(),
+                    Charsets.UTF_8
+                )
+                val target = File(context.filesDir, EXTRA_DICT_CATALOG_CACHE)
+                if (!temp.renameTo(target)) {
+                    temp.copyTo(target, overwrite = true)
+                    temp.delete()
+                }
+                catalog
+            } finally {
+                connection.disconnect()
+            }
+        }
+    }
+
+fun extraDictFileNames(
+    selectedIds: Collection<String>,
+    catalog: Collection<ExtraDictCatalogEntry>
+): List<String> = catalog.filter { it.id in selectedIds }.map { "${it.id}.dict.yaml" }
 
 fun extraDictRawUrl(fileName: String): String =
     "$EXTRA_DICT_RAW_BASE/${java.net.URLEncoder.encode(fileName, "UTF-8").replace("+", "%20")}"
