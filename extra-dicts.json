@@ -1,0 +1,26 @@
+[
+  {
+    "id": "shici",
+    "name": "诗词大全"
+  },
+  {
+    "id": "wuzhong",
+    "name": "动植物名称"
+  },
+  {
+    "id": "huaxue",
+    "name": "化学词库"
+  },
+  {
+    "id": "yaopin",
+    "name": "药品词库"
+  },
+  {
+    "id": "yixue",
+    "name": "医学词库"
+  },
+  {
+    "id": "fangyan",
+    "name": "国内方言词库"
+  }
+]

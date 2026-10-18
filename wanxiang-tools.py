@@ -14,6 +14,7 @@ from __future__ import annotations
 # ============================================================
 import sys
 import os
+import json
 
 
 def _prepare_linux_qt_environment() -> None:
@@ -157,6 +158,8 @@ class FocusPlaceholderPlainTextEdit(QPlainTextEdit):
 class ExtraDictSelector(QFrame):
     """附加词库选择器：主界面显示摘要，点击后用弹窗勾选受控词库。"""
 
+    refresh_requested = Signal()
+
     def __init__(self, selected=None, parent=None):
         super().__init__(parent)
         self._selected = set()
@@ -169,11 +172,23 @@ class ExtraDictSelector(QFrame):
         self._hint = QLabel("仅可选择已登记的词库，下载时自动补全 .dict.yaml")
         self._hint.setStyleSheet("color: #777; font-size: 11px;")
 
+        self._refresh_button = QPushButton("刷新列表")
+        self._refresh_button.setCursor(Qt.PointingHandCursor)
+        self._refresh_button.setFixedHeight(24)
+        self._refresh_button.setVisible(False)
+        self._refresh_button.clicked.connect(self.refresh_requested.emit)
+
+        hint_row = QHBoxLayout()
+        hint_row.setContentsMargins(0, 0, 0, 0)
+        hint_row.setSpacing(8)
+        hint_row.addWidget(self._hint, 1)
+        hint_row.addWidget(self._refresh_button)
+
         layout = QVBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)
         layout.setSpacing(3)
         layout.addWidget(self._button)
-        layout.addWidget(self._hint)
+        layout.addLayout(hint_row)
         self.set_selected(selected or [])
 
     @staticmethod
@@ -188,6 +203,31 @@ class ExtraDictSelector(QFrame):
     def selected_ids(self) -> List[str]:
         return [key for key, _ in EXTRA_DICT_CATALOG if key in self._selected]
 
+    def refresh_catalog(self) -> None:
+        """远程目录更新后刷新主界面摘要。"""
+        self._refresh_summary()
+
+    def set_catalog_loading(self) -> None:
+        self._hint.setText("仅可选择已登记的词库，下载时自动补全 .dict.yaml · 正在刷新")
+        self._button.setEnabled(False)
+        self._refresh_button.setText("刷新中…")
+        self._refresh_button.setEnabled(False)
+        self._refresh_button.setVisible(True)
+
+    def set_catalog_ready(self) -> None:
+        self._hint.setText("仅可选择已登记的词库，下载时自动补全 .dict.yaml")
+        self._button.setEnabled(True)
+        self._refresh_button.setVisible(False)
+        self._refresh_button.setEnabled(True)
+
+    def set_catalog_error(self, detail: str = "") -> None:
+        self._hint.setText("仅可选择已登记的词库，下载时自动补全 .dict.yaml · 目录加载失败")
+        self._hint.setToolTip(detail or "无法获取远程附加词库目录")
+        self._button.setEnabled(bool(EXTRA_DICT_CATALOG))
+        self._refresh_button.setText("刷新列表")
+        self._refresh_button.setEnabled(True)
+        self._refresh_button.setVisible(True)
+
     def set_selected(self, values) -> None:
         if isinstance(values, str):
             values = re.split(r"[,，;；\n]+", values)
@@ -198,6 +238,12 @@ class ExtraDictSelector(QFrame):
         self._refresh_summary()
 
     def _refresh_summary(self) -> None:
+        if not EXTRA_DICT_CATALOG:
+            self._button.setText("附加词库目录未加载")
+            self._button.setEnabled(False)
+            self._button.setToolTip("请先刷新附加词库列表")
+            return
+        self._button.setEnabled(True)
         selected = self.selected_ids()
         if not selected:
             self._button.setText("选择附加词库  ·  未选择")
@@ -279,18 +325,96 @@ DEFAULT_WL_REGEX = [
     r"^sync/.*"
 ]
 
-# 附加词库采用受控目录，界面只展示这里维护的条目。
-# 目录中的文件名统一为 ``<id>.dict.yaml``，配置中只保存 id，避免手动输入路径或不存在的文件。
-EXTRA_DICT_CATALOG = (
-    ("shici", "诗词大全"),
-    ("wuzhong", "动植物名称"),
-    ("huaxue", "化学词库"),
-    ("yaopin", "药品词库"),
-    ("yixue", "医学词库"),
-    ("fangyan", "国内方言词库"),
-)
+# 附加词库采用受控目录，列表完全来自仓库的 extra-dicts.json。
+# 配置文件只维护 id 和 name，文件名统一由 id 补全为 ``<id>.dict.yaml``。
+EXTRA_DICT_CATALOG = ()
 EXTRA_DICT_IDS = frozenset(item[0] for item in EXTRA_DICT_CATALOG)
 EXTRA_DICT_LABELS = dict(EXTRA_DICT_CATALOG)
+EXTRA_DICT_CATALOG_URL = (
+    "https://raw.githubusercontent.com/amzxyz/rime-wanxiang-data/"
+    "wanxiang/extra-dicts.json"
+)
+
+
+def _set_extra_dict_catalog(entries) -> None:
+    """替换运行中的附加词库目录，同时保留顺序和受控 ID。"""
+    global EXTRA_DICT_CATALOG, EXTRA_DICT_IDS, EXTRA_DICT_LABELS
+    EXTRA_DICT_CATALOG = tuple(entries)
+    EXTRA_DICT_IDS = frozenset(item[0] for item in EXTRA_DICT_CATALOG)
+    EXTRA_DICT_LABELS = dict(EXTRA_DICT_CATALOG)
+
+
+def _validate_extra_dict_catalog(data):
+    """校验远程 JSON；只接受 id/name，不接受远程任意 URL 或路径。"""
+    if not isinstance(data, list) or len(data) > 200:
+        raise ValueError("附加词库配置必须是数组且不超过 200 项")
+
+    result = []
+    seen = set()
+    for item in data:
+        if not isinstance(item, dict):
+            continue
+        item_id = str(item.get("id", "")).strip().lower()
+        name = str(item.get("name", "")).strip()
+        if not re.fullmatch(r"[a-z0-9][a-z0-9_-]{0,63}", item_id):
+            continue
+        if not name or len(name) > 80 or item_id in seen:
+            continue
+        seen.add(item_id)
+        result.append((item_id, name))
+
+    if not result:
+        raise ValueError("附加词库配置没有有效条目")
+    return result
+
+
+def _extra_dict_catalog_cache_path() -> Path:
+    return Path.home() / ".cache" / "wanxiang-tools" / "extra-dicts.json"
+
+
+def _read_extra_dict_catalog_cache():
+    try:
+        path = _extra_dict_catalog_cache_path()
+        if path.is_file() and path.stat().st_size <= 256 * 1024:
+            return _validate_extra_dict_catalog(
+                json.loads(path.read_text(encoding="utf-8"))
+            )
+    except Exception:
+        pass
+    return None
+
+
+class ExtraDictCatalogWorker(QThread):
+    catalog_sig = Signal(object)
+    error_sig = Signal(str)
+
+    def run(self):
+        try:
+            response = requests.get(
+                EXTRA_DICT_CATALOG_URL,
+                headers={"User-Agent": "Rime-Wanxiang-Tool", "Accept": "application/json"},
+                timeout=(5, 20),
+            )
+            response.raise_for_status()
+            if len(response.content) > 256 * 1024:
+                raise ValueError("配置文件过大")
+            catalog = _validate_extra_dict_catalog(response.json())
+
+            cache_path = _extra_dict_catalog_cache_path()
+            cache_path.parent.mkdir(parents=True, exist_ok=True)
+            temp_path = cache_path.with_suffix(".tmp")
+            temp_path.write_text(
+                json.dumps(
+                    [{"id": item_id, "name": name} for item_id, name in catalog],
+                    ensure_ascii=False,
+                    indent=2,
+                ) + "\n",
+                encoding="utf-8",
+            )
+            temp_path.replace(cache_path)
+            self.catalog_sig.emit(catalog)
+        except Exception as error:
+            self.error_sig.emit(str(error))
 
 
 # 尝试导入 ruamel.yaml (用于安全修改 Rime 配置文件)
@@ -3029,8 +3153,17 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         self.settings = QSettings("amzxyz", "WanXiangSettings")
         self.worker: Optional[Worker] = None
         self.upd_worker: Optional[UpdateWorker] = None
+        self.extra_catalog_worker: Optional[ExtraDictCatalogWorker] = None
         self._yaml_cache = {}  # 缓存池
         self.cache_worker = None
+
+        # 先加载上次成功下载的目录，避免启动时等待网络；没有缓存时使用内置目录。
+        cached_catalog = _read_extra_dict_catalog_cache()
+        if cached_catalog:
+            _set_extra_dict_catalog(cached_catalog)
+        else:
+            # 没有远程目录也没有缓存时，不展示可下载的默认词库，避免下载状态失真。
+            _set_extra_dict_catalog(())
         # 初始化检测结果变量
         self.detected_deployer = ""
         self.detected_server = ""
@@ -3117,6 +3250,28 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         self.apply_palette(self.act_dark.isChecked())
         self.tabs.currentChanged.connect(self.on_tab_change)
         self.on_tab_change(0)  #初始化是运行，手动刷新为更新
+
+        # 后台刷新目录；网络失败不会影响启动和已有词库选择。
+        self._start_extra_catalog_refresh()
+
+    def _on_extra_catalog_updated(self, catalog) -> None:
+        _set_extra_dict_catalog(catalog)
+        if hasattr(self, "extra_dicts_selector"):
+            self.extra_dicts_selector.set_catalog_ready()
+            self.extra_dicts_selector.refresh_catalog()
+
+    def _on_extra_catalog_error(self, detail: str) -> None:
+        if hasattr(self, "extra_dicts_selector"):
+            self.extra_dicts_selector.set_catalog_error(detail)
+
+    def _start_extra_catalog_refresh(self) -> None:
+        if self.extra_catalog_worker and self.extra_catalog_worker.isRunning():
+            return
+        self.extra_dicts_selector.set_catalog_loading()
+        self.extra_catalog_worker = ExtraDictCatalogWorker(self)
+        self.extra_catalog_worker.catalog_sig.connect(self._on_extra_catalog_updated)
+        self.extra_catalog_worker.error_sig.connect(self._on_extra_catalog_error)
+        self.extra_catalog_worker.start()
     # ====================检查更新调度函数 ====================
     def check_update(self):
         # 【关键交互】点击检查更新时，自动帮用户切换到 GitHub 下载源
@@ -3319,6 +3474,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         extra_dicts_layout.setSpacing(0)
 
         self.extra_dicts_selector = ExtraDictSelector(parent=self)
+        self.extra_dicts_selector.refresh_requested.connect(self._start_extra_catalog_refresh)
         extra_dicts_layout.addWidget(self.extra_dicts_selector)
 
         # === 5. 配置 ===
@@ -4612,6 +4768,8 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         if self.cache_worker and self.cache_worker.isRunning():
             self.cache_worker._stop = True
             self.cache_worker.wait(500)
+        if self.extra_catalog_worker and self.extra_catalog_worker.isRunning():
+            self.extra_catalog_worker.wait(500)
         event.accept()
         import os
         os._exit(0)
