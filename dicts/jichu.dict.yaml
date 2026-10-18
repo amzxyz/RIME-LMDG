@@ -42597,10 +42597,10 @@ sort: by_weight
 海港	hǎi gǎng	914
 还高	hái gāo	4908
 还搞	hái gǎo	872
-海哥	hǎi gē	1179
-海格	hǎi gé	1120
-还搁	hái gē	338
-嗨歌	hāi gē	300
+嗨歌	hāi gē	1179
+海哥	hǎi gē	1120
+还搁	hái gē	438
+海格	hǎi gé	128
 还跟	hái gēn	3218
 还更	hái gèng	73
 海埂	hǎi gěng	28
@@ -75277,8 +75277,9 @@ sort: by_weight
 绿旗	lǜ qí	168
 绿漆	lǜ qī	103
 滤清	lǜ qīng	1269
-捋清	lǚ qīng	1206
 绿青	lǜ qīng	1142
+捋清	lǚ qīng	643
+绿氢	lǜ qīng	320
 绿球	lǜ qiú	706
 闾丘	lǘ qiū	671
 滤去	lǜ qù	873
@@ -235341,7 +235342,7 @@ sort: by_weight
 大阪城	dà bǎn chéng	602
 达坂城	dá bǎn chéng	542
 达板城	dá bǎn chéng	216
-打扮得	dǎ bàn dé	634
+打扮得	dǎ bàn de	634
 大半段	dà bàn duàn	346
 大班额	dà bān é	6
 搭伴儿	dā bàn ér	306
@@ -299861,6 +299862,8 @@ sort: by_weight
 该墓葬	gāi mù zàng	500
 该墓志	gāi mù zhì	374
 该拿出	gāi ná chū	747
+改哪个	gǎi nǎ ge	192
+该哪个	gāi nǎ ge	40
 盖纳河	gài nà hé	76
 该拿来	gāi ná lái	526
 改哪里	gǎi nǎ lǐ	57
@@ -537979,7 +537982,6 @@ sort: by_weight
 生物制	shēng wù zhì	1184
 生物值	shēng wù zhí	181
 生物钟	shēng wù zhōng	1991
-生物种	shēng wù zhǒng	932
 生物珠	shēng wù zhū	50
 生物组	shēng wù zǔ	824
 盛锡福	shèng xī fú	531
@@ -547555,6 +547557,7 @@ sort: by_weight
 受点苦	shòu diǎn kǔ	500
 售电量	shòu diàn liàng	13
 受电器	shòu diàn qì	171
+收点钱	shōu diǎn qián	73
 受点伤	shòu diǎn shāng	544
 手电筒	shǒu diàn tǒng	2845
 手点着	shǒu diǎn zháo	410
@@ -549142,8 +549145,8 @@ sort: by_weight
 收缩核	shōu suō hé	342
 收缩机	shōu suō jī	544
 收缩肌	shōu suō jī	357
-手缩了	shǒu suō le	644
-收缩了	shōu suō le	452
+收缩了	shōu suō le	644
+手缩了	shǒu suō le	452
 收缩力	shōu suō lì	814
 收缩量	shōu suō liàng	351
 收缩论	shōu suō lùn	76
@@ -618577,7 +618580,6 @@ sort: by_weight
 我家离	wǒ jiā lí	752
 窝家里	wō jiā lǐ	424
 我家两	wǒ jiā liǎng	738
-我家六	wǒ jiā liù	513
 我家楼	wǒ jiā lóu	1022
 我家吗	wǒ jiā ma	52
 我家买	wǒ jiā mǎi	716
@@ -618589,7 +618591,6 @@ sort: by_weight
 我加盟	wǒ jiā méng	490
 我加冕	wǒ jiā miǎn	320
 我家喵	wǒ jiā miāo	580
-我家母	wǒ jiā mǔ	504
 我家那	wǒ jiā nà	1040
 我家拿	wǒ jiā ná	422
 我家男	wǒ jiā nán	720
@@ -618597,7 +618598,6 @@ sort: by_weight
 我家呢	wǒ jiā ne	446
 我加你	wǒ jiā nǐ	85
 我嫁你	wǒ jià nǐ	76
-我家年	wǒ jiā nián	540
 我家妞	wǒ jiā niū	562
 我假期	wǒ jià qī	590
 我夹起	wǒ jiā qǐ	327
@@ -677170,6 +677170,7 @@ sort: by_weight
 钥匙锁	yào shi suǒ	75
 要是她	yào shì tā	1084
 钥匙套	yào shi tào	356
+要是痛	yào shì tòng	331
 药师丸	yào shī wán	482
 要是我	yào shì wǒ	2211
 要实现	yào shí xiàn	3303
@@ -691653,6 +691654,7 @@ sort: by_weight
 引导他	yǐn dǎo tā	1107
 引导下	yǐn dǎo xià	1545
 引导线	yǐn dǎo xiàn	594
+引导项	yǐn dǎo xiàng	44
 引导性	yǐn dǎo xìng	562
 引导型	yǐn dǎo xíng	464
 引导星	yǐn dǎo xīng	260
@@ -755151,7 +755153,6 @@ sort: by_weight
 按旧的来	àn jiù de lái	126
 俺就得来	ǎn jiù děi lái	82
 安九高铁	ān jiǔ gāo tiě	243
-安九高铁	ān jiǔ gāo tiě	243
 安久拉山	ān jiǔ lā shān	364
 安九铁路	ān jiǔ tiě lù	144
 按剧本来	àn jù běn lái	52
@@ -766305,7 +766306,6 @@ sort: by_weight
 宝来利来	bǎo lái lì lái	212
 包揽词讼	bāo lǎn cí sòng	3
 宝兰高铁	bǎo lán gāo tiě	212
-宝兰高铁	bǎo lán gāo tiě	212
 饱览美景	bǎo lǎn měi jǐng	338
 宝蓝柠檬	bǎo lán níng méng	4
 包揽前四	bāo lǎn qián sì	256
@@ -770972,7 +770972,6 @@ sort: by_weight
 背信弃义	bèi xìn qì yì	672
 北新区路	běi xīn qū lù	252
 北信瑞丰	běi xìn ruì fēng	9
-北新西道	běi xīn xī dào	144
 北新西道	běi xīn xī dào	144
 背形构造	bèi xíng gòu zào	45
 北星集团	běi xīng jí tuán	45
@@ -802708,7 +802707,6 @@ sort: by_weight
 城关中队	chéng guān zhōng duì	243
 成广公司	chéng guǎng gōng sī	76
 成贵高铁	chéng guì gāo tiě	364
-成贵高铁	chéng guì gāo tiě	364
 成规陋习	chéng guī lòu xí	3
 成贵铁路	chéng guì tiě lù	418
 成果发表	chéng guǒ fā biǎo	711
@@ -823023,7 +823021,6 @@ sort: by_weight
 大溪豆干	dà xī dòu gān	270
 大媳妇儿	dà xí fù ér	396
 大西高铁	dà xī gāo tiě	432
-大西高铁	dà xī gāo tiě	432
 打习惯了	dǎ xí guàn le	47
 大喜过望	dà xǐ guò wàng	443
 大西海子	dà xī hǎi zǐ	212
@@ -841973,7 +841970,6 @@ sort: by_weight
 东大阿派	dōng dà ā pài	16
 东达机电	dōng dá jī diàn	45
 东大金智	dōng dà jīn zhì	117
-东大名路	dōng dà míng lù	468
 东大名路	dōng dà míng lù	468
 东大牧业	dōng dà mù yè	76
 东大人才	dōng dà rén cái	252
@@ -909872,7 +909868,6 @@ sort: by_weight
 行话解释	háng huà jiě shì	50
 杭华油墨	háng huá yóu mò	99
 杭黄高铁	háng huáng gāo tiě	423
-杭黄高铁	háng huáng gāo tiě	423
 杭黄铁路	háng huáng tiě lù	576
 杭徽高速	háng huī gāo sù	454
 杭徽古道	háng huī gǔ dào	76
@@ -910091,7 +910086,6 @@ sort: by_weight
 航天置业	háng tiān zhì yè	99
 航天专题	háng tiān zhuān tí	153
 夯土台基	hāng tǔ tái jī	378
-杭温高铁	háng wēn gāo tiě	585
 杭温高铁	háng wēn gāo tiě	585
 行伍出身	háng wǔ chū shēn	38
 航五公司	háng wǔ gōng sī	50
@@ -913126,7 +913120,6 @@ sort: by_weight
 河汉无极	hé hàn wú jí	4
 河汉无声	hé hàn wú shēng	4
 河汉予言	hé hàn yǔ yán	90
-合杭高铁	hé háng gāo tiě	396
 合杭高铁	hé háng gāo tiě	396
 和航科技	hé háng kē jì	99
 喝好了吧	hē hǎo le ba	76
@@ -921340,7 +921333,6 @@ sort: by_weight
 湖南财专	hú nán cái zhuān	130
 湖南高速	hú nán gāo sù	562
 呼南高铁	hū nán gāo tiě	414
-呼南高铁	hū nán gāo tiě	414
 沪南公路	hù nán gōng lù	590
 湖南公路	hú nán gōng lù	160
 忽南忽北	hū nán hū běi	184
@@ -927563,7 +927555,6 @@ sort: by_weight
 黄发鲐背	huáng fā tái bèi	153
 黄发台背	huáng fā tái bèi	38
 黄泛平原	huáng fàn píng yuán	52
-黄泛平原	huáng fàn píng yuán	52
 荒废朝政	huāng fèi cháo zhèng	19
 荒废多年	huāng fèi duō nián	38
 荒废青春	huāng fèi qīng chūn	392
@@ -928503,7 +928494,6 @@ sort: by_weight
 晃眼一看	huǎng yǎn yí kàn	382
 谎言之躯	huǎng yán zhī qū	28
 黄洋界上	huáng yáng jiè shàng	292
-黄洋界上	huáng yáng jiè shàng	10
 黄杨木雕	huáng yáng mù diāo	3
 黄杨盆景	huáng yáng pén jǐng	99
 荒咬九伤	huāng yǎo jiǔ shāng	50
@@ -936374,6 +936364,8 @@ sort: by_weight
 几分生趣	jǐ fēn shēng qù	144
 鸡粉适量	jī fěn shì liàng	405
 几分收获	jǐ fēn shōu huò	238
+积分数据	jī fēn shù jù	78
+几份数据	jǐ fèn shù jù	50
 集分水器	jí fēn shuǐ qì	207
 积分算子	jī fēn suàn zǐ	288
 积分微分	jī fēn wēi fēn	472
@@ -938337,7 +938329,6 @@ sort: by_weight
 基拉韦亚	jī lā wéi yà	52
 饥来吃饭	jī lái chī fàn	16
 亟来磋商	jí lái cuō shāng	52
-济莱高铁	jì lái gāo tiě	212
 济莱高铁	jì lái gāo tiě	212
 即来即办	jí lái jí bàn	338
 挤来挤去	jǐ lái jǐ qù	91
@@ -941731,7 +941722,6 @@ sort: by_weight
 积习难返	jī xí nán fǎn	144
 积习难改	jī xí nán gǎi	41
 基希讷乌	jī xī nè wū	513
-基希讷乌	jī xī nè wū	10
 绩溪三雕	jì xī sān diāo	50
 基希舍夫	jī xī shě fū	99
 积习生常	jī xí shēng cháng	45
@@ -961958,7 +961948,6 @@ sort: by_weight
 津桥学院	jīn qiáo xué yuàn	333
 近亲繁殖	jìn qīn fán zhí	581
 津秦高铁	jīn qín gāo tiě	315
-津秦高铁	jīn qín gāo tiě	315
 近亲结婚	jìn qīn jié hūn	286
 津秦客专	jīn qín kè zhuān	279
 金琴口腔	jīn qín kǒu qiāng	207
@@ -976112,7 +976101,6 @@ sort: by_weight
 橘子原汁	jú zi yuán zhī	45
 橘子洲头	jú zi zhōu tóu	132
 桔子洲头	jú zi zhōu tóu	119
-橘子洲头	jú zi zhōu tóu	10
 橘子洲尾	jú zi zhōu wěi	76
 句子主干	jù zi zhǔ gàn	459
 剧组成员	jù zǔ chéng yuán	662
@@ -992380,7 +992368,6 @@ sort: by_weight
 来日可期	lái rì kě qī	85
 来日无多	lái rì wú duō	31
 来日正长	lái rì zhèng zhǎng	50
-莱荣高铁	lái róng gāo tiě	207
 莱荣高铁	lái róng gāo tiě	207
 来如风雨	lái rú fēng yǔ	252
 来如流水	lái rú liú shuǐ	261
@@ -1016114,7 +1016101,6 @@ sort: by_weight
 马云表示	mǎ yún biǎo shì	612
 马云的号	mǎ yún de hào	220
 马赞德兰	mǎ zàn dé lán	536
-马赞德兰	mǎ zàn dé lán	536
 马赞姆贝	mǎ zàn mǔ bèi	153
 马贼首领	mǎ zéi shǒu lǐng	230
 马贼头领	mǎ zéi tóu lǐng	76
@@ -1022748,7 +1022734,6 @@ sort: by_weight
 没啥子事	méi shá zi shì	117
 没啥子用	méi shá zi yòng	248
 没删除好	méi shān chú hǎo	50
-梅汕高铁	méi shàn gāo tiě	423
 梅汕高铁	méi shàn gāo tiě	423
 美膳酒楼	měi shàn jiǔ lóu	171
 梅山科技	méi shān kē jì	45
@@ -1030525,7 +1030510,6 @@ sort: by_weight
 明星艺人	míng xīng yì rén	747
 明星艺校	míng xīng yì xiào	50
 明星医院	míng xīng yī yuàn	76
-明星荧荧	míng xīng yíng yíng	256
 明星应援	míng xīng yìng yuán	256
 明星有烂	míng xīng yǒu làn	194
 明星云集	míng xīng yún jí	590
@@ -1054836,7 +1054820,7 @@ sort: by_weight
 漂漂荡荡	piāo piāo dàng dàng	76
 飘飘忽忽	piāo piāo hū hū	50
 飘飘沥沥	piāo piāo lì lì	99
-漂漂亮亮	piāo piāo liàng liàng	776
+漂漂亮亮	piào piào liàng liàng	776
 飘飘零零	piāo piāo líng líng	117
 缥缥缈缈	piāo piāo miǎo miǎo	252
 飘飘若仙	piāo piāo ruò xiān	315
@@ -1066218,7 +1066202,6 @@ sort: by_weight
 前呼后拥	qián hū hòu yōng	188
 前护后拥	qián hù hòu yōng	169
 钱湖景苑	qián hú jǐng yuàn	45
-钱湖人家	qián hú rén jiā	162
 钱湖人家	qián hú rén jiā	162
 钱湖胜景	qián hú shèng jǐng	4
 钱湖天地	qián hú tiān dì	306
@@ -1092351,7 +1092334,6 @@ sort: by_weight
 赛欧三厢	sài ōu sān xiāng	513
 赛普健身	sài pǔ jiàn shēn	382
 塞浦路斯	sāi pǔ lù sī	631
-塞浦路斯	sāi pǔ lù sī	10
 赛普星通	sài pǔ xīng tōng	171
 塞奇威克	sāi qí wēi kè	52
 赛前的最	sài qián de zuì	464
@@ -1101325,7 +1101307,6 @@ sort: by_weight
 伤寒直格	shāng hán zhí gé	117
 伤寒指掌	shāng hán zhǐ zhǎng	144
 商杭高铁	shāng háng gāo tiě	207
-商杭高铁	shāng háng gāo tiě	207
 上航假期	shàng háng jià qī	414
 上航旅游	shàng háng lǚ yóu	238
 商号出售	shāng hào chū shòu	45
@@ -1106408,7 +1106389,6 @@ sort: by_weight
 肾癌术后	shèn ái shù hòu	261
 深爱着你	shēn ài zhe nǐ	85
 深谙此道	shēn ān cǐ dào	308
-深安大桥	shēn ān dà qiáo	274
 深安大桥	shēn ān dà qiáo	274
 深谙其道	shēn ān qí dào	454
 深谙人心	shēn ān rén xīn	238
@@ -1154299,7 +1154279,6 @@ sort: by_weight
 特没意思	tè méi yì sī	504
 特米里克	tè mǐ lǐ kè	45
 特米斯科	tè mǐ sī kē	212
-特米斯科	tè mǐ sī kē	212
 特免血浆	tè miǎn xuè jiāng	45
 特莫尔斯	tè mò ěr sī	248
 特睦格图	tè mù gé tú	324
@@ -1156825,7 +1156804,6 @@ sort: by_weight
 题组训练	tí zǔ xùn liàn	153
 天啊地啊	tiān a dì a	297
 天安保险	tiān ān bǎo xiǎn	369
-田安大桥	tián ān dà qiáo	405
 田安大桥	tián ān dà qiáo	405
 天安国汇	tiān ān guó huì	50
 天安煤业	tiān ān méi yè	410
@@ -1178325,7 +1178303,6 @@ sort: by_weight
 未来蜂巢	wèi lái fēng cháo	117
 未来夫婿	wèi lái fū xù	356
 潍莱高铁	wéi lái gāo tiě	396
-潍莱高铁	wéi lái gāo tiě	396
 未来歌手	wèi lái gē shǒu	76
 未来共产	wèi lái gòng chǎn	238
 未来公公	wèi lái gōng gong	446
@@ -1185930,6 +1185907,8 @@ sort: by_weight
 我加加油	wǒ jiā jiā yóu	180
 我加进来	wǒ jiā jìn lái	220
 我家经理	wǒ jiā jīng lǐ	99
+我加了啊	wǒ jiā le a	122
+我家了啊	wǒ jiā le a	50
 我家里了	wǒ jiā lǐ le	364
 我家卖了	wǒ jiā mài le	130
 我家那位	wǒ jiā nà wèi	724
@@ -1186563,7 +1186542,6 @@ sort: by_weight
 我麻烦的	wǒ má fan de	392
 我妈翻了	wǒ mā fān le	194
 我妈过生	wǒ mā guò shēng	351
-我妈和老	wǒ mā hé lǎo	256
 我妈回了	wǒ mā huí le	252
 我妈就说	wǒ mā jiù shuō	107
 我妈妈接	wǒ mā ma jiē	346
@@ -1186571,15 +1186549,64 @@ sort: by_weight
 我妈没再	wǒ mā méi zài	306
 我妈没在	wǒ mā méi zài	171
 我妈去取	wǒ mā qù qǔ	50
+我马上办	wǒ mǎ shàng bàn	79
+我马上报	wǒ mǎ shàng bào	79
+我马上查	wǒ mǎ shàng chá	79
+我马上吃	wǒ mǎ shàng chī	79
+我马上传	wǒ mǎ shàng chuán	79
+我马上催	wǒ mǎ shàng cuī	79
+我马上存	wǒ mǎ shàng cún	79
+我马上打	wǒ mǎ shàng dǎ	79
+我马上带	wǒ mǎ shàng dài	79
 我马上到	wǒ mǎ shàng dào	594
+我马上等	wǒ mǎ shàng děng	79
+我马上发	wǒ mǎ shàng fā	79
+我马上放	wǒ mǎ shàng fàng	79
+我马上付	wǒ mǎ shàng fù	79
+我马上挂	wǒ mǎ shàng guà	79
+我马上关	wǒ mǎ shàng guān	79
+我马上还	wǒ mǎ shàng hái	79
+我马上喝	wǒ mǎ shàng hē	79
+我马上换	wǒ mǎ shàng huàn	79
 我马上回	wǒ mǎ shàng huí	680
 我马上寄	wǒ mǎ shàng jì	99
+我马上加	wǒ mǎ shàng jiā	79
+我马上交	wǒ mǎ shàng jiāo	79
+我马上借	wǒ mǎ shàng jiè	79
+我马上接	wǒ mǎ shàng jiē	79
 我马上就	wǒ mǎ shàng jiù	465
+我马上开	wǒ mǎ shàng kāi	79
+我马上看	wǒ mǎ shàng kàn	79
 我马上来	wǒ mǎ shàng lái	25
 我马上了	wǒ mǎ shàng le	238
+我马上买	wǒ mǎ shàng mǎi	79
 我马上拿	wǒ mǎ shàng ná	364
+我马上批	wǒ mǎ shàng pī	79
+我马上签	wǒ mǎ shàng qiān	79
 我马上去	wǒ mǎ shàng qù	760
+我马上取	wǒ mǎ shàng qǔ	79
+我马上扫	wǒ mǎ shàng sǎo	79
+我马上删	wǒ mǎ shàng shān	79
+我马上审	wǒ mǎ shàng shěn	79
+我马上收	wǒ mǎ shàng shōu	79
+我马上刷	wǒ mǎ shàng shuā	79
+我马上睡	wǒ mǎ shàng shuì	79
+我马上说	wǒ mǎ shàng shuō	79
+我马上送	wǒ mǎ shàng sòng	79
+我马上算	wǒ mǎ shàng suàn	79
+我马上填	wǒ mǎ shàng tián	79
+我马上停	wǒ mǎ shàng tíng	79
+我马上退	wǒ mǎ shàng tuì	79
+我马上问	wǒ mǎ shàng wèn	79
+我马上洗	wǒ mǎ shàng xǐ	79
+我马上写	wǒ mǎ shàng xiě	79
+我马上修	wǒ mǎ shàng xiū	79
+我马上学	wǒ mǎ shàng xué	79
+我马上约	wǒ mǎ shàng yuē	79
+我马上找	wǒ mǎ shàng zhǎo	79
+我马上转	wǒ mǎ shàng zhuǎn	79
 我马上走	wǒ mǎ shàng zǒu	392
+我马上做	wǒ mǎ shàng zuò	79
 我嘛时候	wǒ ma shí hou	76
 我妈说了	wǒ mā shuō le	116
 沃玛卫士	wò mǎ wèi shì	202
@@ -1191508,7 +1191535,6 @@ sort: by_weight
 武广对面	wǔ guǎng duì miàn	238
 武广附近	wǔ guǎng fù jìn	297
 无广告版	wú guǎng gào bǎn	25
-武广高铁	wǔ guǎng gāo tiě	594
 武广高铁	wǔ guǎng gāo tiě	594
 武广沪昆	wǔ guǎng hù kūn	162
 武广世贸	wǔ guǎng shì mào	324
@@ -1199059,7 +1199085,6 @@ sort: by_weight
 西加艾提	xī jiā ài tí	99
 希嘉八剑	xī jiā bā jiàn	189
 西甲硅油	xī jiǎ guī yóu	369
-西加里尼	xī jiā lǐ ní	90
 西加里尼	xī jiā lǐ ní	90
 西甲联赛	xī jiǎ lián sài	896
 西甲马竞	xī jiǎ mǎ jìng	306
@@ -1207666,7 +1207691,7 @@ sort: by_weight
 想到了吗	xiǎng dào le ma	28
 想到了死	xiǎng dào le sǐ	504
 向导猎犬	xiàng dǎo liè quǎn	225
-想到什么	xiǎng dào shí me	1233
+想到什么	xiǎng dào shén me	1233
 像倒是像	xiàng dào shì xiàng	99
 想到未来	xiǎng dào wèi lái	680
 向导先祖	xiàng dǎo xiān zǔ	45
@@ -1241719,47 +1241744,105 @@ sort: by_weight
 一百出头	yì bǎi chū tóu	598
 一百单八	yì bǎi dān bā	25
 以白诋青	yǐ bái dǐ qīng	3
+一百多把	yì bǎi duō bǎ	45
+一百多倍	yì bǎi duō bèi	57
 一百多杯	yì bǎi duō bēi	4
+一百多本	yì bǎi duō běn	48
+一百多笔	yì bǎi duō bǐ	47
 一百多遍	yì bǎi duō biàn	315
 一百多部	yì bǎi duō bù	19
+一百多册	yì bǎi duō cè	55
+一百多场	yì bǎi duō chǎng	52
+一百多床	yì bǎi duō chuáng	43
+一百多次	yì bǎi duō cì	45
 一百多道	yì bǎi duō dào	25
+一百多店	yì bǎi duō diàn	54
 一百多栋	yì bǎi duō dòng	171
 一百多度	yì bǎi duō dù	85
+一百多段	yì bǎi duō duàn	54
+一百多队	yì bǎi duō duì	52
+一百多对	yì bǎi duō duì	45
+一百多朵	yì bǎi duō duǒ	44
+一百多番	yì bǎi duō fān	46
+一百多份	yì bǎi duō fèn	58
+一百多封	yì bǎi duō fēng	51
+一百多幅	yì bǎi duō fú	51
+一百多副	yì bǎi duō fù	43
 一百多个	yì bǎi duō gè	1309
+一百多根	yì bǎi duō gēn	50
 一百多号	yì bǎi duō hào	41
+一百多户	yì bǎi duō hù	49
+一百多回	yì bǎi duō huí	49
 一百多集	yì bǎi duō jí	414
 一百多家	yì bǎi duō jiā	210
+一百多架	yì bǎi duō jià	47
 一百多件	yì bǎi duō jiàn	374
 一百多间	yì bǎi duō jiān	293
+一百多届	yì bǎi duō jiè	57
+一百多节	yì bǎi duō jié	50
 一百多斤	yì bǎi duō jīn	113
+一百多具	yì bǎi duō jù	47
+一百多句	yì bǎi duō jù	41
+一百多卷	yì bǎi duō juǎn	42
+一百多颗	yì bǎi duō kē	59
+一百多棵	yì bǎi duō kē	46
 一百多块	yì bǎi duō kuài	323
+一百多款	yì bǎi duō kuǎn	42
+一百多粒	yì bǎi duō lì	54
 一百多里	yì bǎi duō lǐ	44
 一百多例	yì bǎi duō lì	40
+一百多辆	yì bǎi duō liàng	58
 一百多两	yì bǎi duō liǎng	3
+一百多轮	yì bǎi duō lún	46
+一百多枚	yì bǎi duō méi	48
 一百多门	yì bǎi duō mén	225
 一百多米	yì bǎi duō mǐ	170
+一百多面	yì bǎi duō miàn	52
 一百多名	yì bǎi duō míng	166
 一百多亩	yì bǎi duō mǔ	13
 一百多年	yì bǎi duō nián	1837
 一百多匹	yì bǎi duō pǐ	220
+一百多批	yì bǎi duō pī	59
+一百多篇	yì bǎi duō piān	56
 一百多平	yì bǎi duō píng	572
+一百多铺	yì bǎi duō pù	41
 一百多期	yì bǎi duō qī	180
+一百多起	yì bǎi duō qǐ	53
 一百多人	yì bǎi duō rén	562
+一百多任	yì bǎi duō rèn	44
+一百多扇	yì bǎi duō shàn	56
+一百多首	yì bǎi duō shǒu	43
+一百多双	yì bǎi duō shuāng	56
+一百多艘	yì bǎi duō sōu	51
 一百多岁	yì bǎi duō suì	176
+一百多所	yì bǎi duō suǒ	42
 一百多台	yì bǎi duō tái	351
+一百多趟	yì bǎi duō tàng	53
 一百多套	yì bǎi duō tào	25
 一百多天	yì bǎi duō tiān	207
 一百多条	yì bǎi duō tiáo	85
+一百多头	yì bǎi duō tóu	53
 一百多万	yì bǎi duō wàn	1269
 一百多位	yì bǎi duō wèi	148
+一百多项	yì bǎi duō xiàng	55
+一百多行	yì bǎi duō xíng	59
 一百多页	yì bǎi duō yè	129
 一百多亿	yì bǎi duō yì	144
 一百多元	yì bǎi duō yuán	122
+一百多员	yì bǎi duō yuán	50
 一百多张	yì bǎi duō zhāng	72
 一百多丈	yì bǎi duō zhàng	65
+一百多章	yì bǎi duō zhāng	44
+一百多枝	yì bǎi duō zhī	41
 一百多只	yì bǎi duō zhī	25
 一百多支	yì bǎi duō zhī	22
 一百多种	yì bǎi duō zhǒng	210
+一百多株	yì bǎi duō zhū	57
+一百多字	yì bǎi duō zì	48
+一百多宗	yì bǎi duō zōng	49
+一百多组	yì bǎi duō zǔ	48
+一百多尊	yì bǎi duō zūn	58
+一百多座	yì bǎi duō zuò	55
 一百二十	yī bǎi èr shí	399
 一百法郎	yì bǎi fǎ láng	320
 一百分贝	yì bǎi fēn bèi	153
@@ -1242195,8 +1242278,8 @@ sort: by_weight
 壹本便利	yī běn biàn lì	414
 一本初衷	yì běn chū zhōng	3
 一本词典	yì běn cí diǎn	639
-一本大书	yì běn dà shū	518
-一本大学	yì běn dà xué	349
+一本大书	yī běn dà shū	518
+一本大学	yī běn dà xué	349
 一本道人	yì běn dào rén	50
 一本二本	yì běn èr běn	430
 一本儿书	yì běn ér shū	171
@@ -1262121,7 +1262204,6 @@ sort: by_weight
 印务章京	yìn wù zhāng jīng	230
 印务中心	yìn wù zhōng xīn	310
 银西高铁	yín xī gāo tiě	288
-银西高铁	yín xī gāo tiě	288
 因戏结缘	yīn xì jié yuán	531
 因袭旧规	yīn xí jiù guī	45
 银禧科技	yín xǐ kē jì	630
@@ -1277952,7 +1278034,6 @@ sort: by_weight
 鱼香豆腐	yú xiāng dòu fu	482
 渝湘高速	yú xiāng gāo sù	464
 渝湘高铁	yú xiāng gāo tiě	225
-渝湘高铁	yú xiāng gāo tiě	225
 鱼香烘蛋	yú xiāng hōng dàn	306
 鱼香鸡丝	yú xiāng jī sī	698
 鱼翔九天	yú xiáng jiǔ tiān	45
@@ -1287913,7 +1287994,7 @@ sort: by_weight
 暂住证明	zàn zhù zhèng míng	369
 暂住制度	zàn zhù zhì dù	189
 赞助专享	zàn zhù zhuān xiǎng	45
-咱自己种	zán zì jǐ zhǒng	117
+咱自己种	zán zì jǐ zhòng	117
 攒足了劲	zǎn zú le jìn	306
 暂作阙疑	zàn zuò quē yí	52
 葬爱家族	zàng ài jiā zú	472
@@ -1287989,29 +1288070,18 @@ sort: by_weight
 藏医学家	zàng yī xué jiā	212
 藏医医院	zàng yī yī yuàn	310
 藏语的名	zàng yǔ de míng	50
-藏语电影	zàng yǔ diàn yǐng	162
 藏语借词	zàng yǔ jiè cí	171
-葬于喀什	zàng yú kā shí	50
-藏语书籍	zàng yǔ shū jí	4
 藏乐汤坊	zàng yuè tāng fāng	360
-葬在北邙	zàng zài běi máng	248
 葬之以礼	zàng zhī yǐ lǐ	266
 藏族吹肺	zàng zú chuī fèi	76
 藏族歌手	zàng zú gē shǒu	13
-藏族记者	zàng zú jì zhě	50
 藏族拉伊	zàng zú lā yī	50
-藏族人民	zàng zú rén mín	85
-藏族神话	zàng zú shén huà	144
-藏族食品	zàng zú shí pǐn	144
-藏族诗人	zàng zú shī rén	171
 藏族同胞	zàng zú tóng bāo	75
 藏族文化	zàng zú wén huà	60
 藏族先民	zàng zú xiān mín	279
 藏族血肠	zàng zú xuè cháng	76
-藏族学者	zàng zú xué zhě	270
 藏族演员	zàng zú yǎn yuán	261
 藏族乐器	zàng zú yuè qì	50
-藏族作家	zàng zú zuò jiā	297
 早癌筛查	zǎo ái shāi chá	306
 早安成都	zǎo ān chéng dū	302
 早安励志	zǎo ān lì zhì	189
@@ -1299676,7 +1299746,6 @@ sort: by_weight
 政府高层	zhèng fǔ gāo céng	788
 政府高官	zhèng fǔ gāo guān	239
 郑阜高铁	zhèng fù gāo tiě	225
-郑阜高铁	zhèng fù gāo tiě	225
 政府公布	zhèng fǔ gōng bù	1017
 政府公告	zhèng fǔ gōng gào	31
 政府公益	zhèng fǔ gōng yì	436
@@ -1300160,7 +1300229,6 @@ sort: by_weight
 整合蛋白	zhěng hé dàn bái	248
 整合服务	zhěng hé fú wù	644
 整合改造	zhěng hé gǎi zào	580
-郑合高铁	zhèng hé gāo tiě	333
 郑合高铁	zhèng hé gāo tiě	333
 政和工夫	zhèng hé gōng fu	225
 政和功夫	zhèng hé gōng fu	99
@@ -1301710,7 +1301778,6 @@ sort: by_weight
 政务资讯	zhèng wù zī xùn	160
 郑西高速	zhèng xī gāo sù	288
 郑西高铁	zhèng xī gāo tiě	454
-郑西高铁	zhèng xī gāo tiě	454
 正析象管	zhèng xī xiàng guǎn	4
 郑西新区	zhèng xī xīn qū	99
 正弦摆线	zhèng xián bǎi xiàn	45
@@ -1301860,7 +1301927,6 @@ sort: by_weight
 郑姓宗祠	zhèng xìng zōng cí	292
 正修工专	zhèng xiū gōng zhuān	144
 政修民理	zhèng xiū mín lǐ	99
-郑徐高铁	zhèng xú gāo tiě	562
 郑徐高铁	zhèng xú gāo tiě	562
 正虚邪恋	zhèng xū xié liàn	202
 正虚邪实	zhèng xū xié shí	3
@@ -1302044,7 +1302110,6 @@ sort: by_weight
 正优生学	zhèng yōu shēng xué	4
 政有所为	zhèng yǒu suǒ wéi	50
 蒸鱼豉油	zhēng yú chǐ yóu	846
-郑渝高铁	zhèng yú gāo tiě	356
 郑渝高铁	zhèng yú gāo tiě	356
 正裕工业	zhèng yù gōng yè	50
 蒸渔鼓油	zhēng yú gǔ yóu	90
@@ -1372486,7 +1372551,6 @@ sort: by_weight
 久久为黑疸	jiǔ jiǔ wéi hēi dǎn	10
 九九消寒图	jiǔ jiǔ xiāo hán tú	10
 九九艳阳天	jiǔ jiǔ yàn yáng tiān	10
-九九一十八	jiǔ jiǔ yī shí bā	10
 久卡诺维奇	jiǔ kǎ nuò wéi qí	10
 旧开智学校	jiù kāi zhì xué xiào	10
 旧科尔梅纳	jiù kē ěr méi nà	10
@@ -1420305,17 +1420369,6 @@ sort: by_weight
 葬尸湖乐队	zàng shī hú yuè duì	10
 藏西岩黄耆	zàng xī yán huáng qí	10
 脏行气于腑	zāng xíng qì yú fǔ	10
-葬于爱丁堡	zàng yú ài dīng bǎo	10
-葬于多伦多	zàng yú duō lún duō	10
-葬于广州市	zàng yú guǎng zhōu shì	10
-葬于哈尔滨	zàng yú hā ěr bīn	10
-葬于黑龙江	zàng yú hēi lóng jiāng	10
-葬于加拿大	zàng yú jiā ná dà	10
-葬于莫斯科	zàng yú mò sī kē	10
-葬于纽约州	zàng yú niǔ yuē zhōu	10
-葬于清东陵	zàng yú qīng dōng líng	10
-葬于清西陵	zàng yú qīng xī líng	10
-葬于意大利	zàng yú yì dà lì	10
 早安和晚安	zǎo ān hé wǎn ān	10
 早安少女组	zǎo ān shào nǚ zǔ	10
 早餐和晚餐	zǎo cān hé wǎn cān	10
@@ -1461596,8 +1461649,6 @@ sort: by_weight
 私营独资企业	sī yíng dú zī qǐ yè	10
 寺右新马路站	sì yòu xīn mǎ lù zhàn	10
 似与不似之间	sì yǔ bú sì zhī jiān	10
-死于华盛顿州	sǐ yú huá shèng dùn zhōu	10
-死于肯塔基州	sǐ yú kěn tǎ jī zhōu	10
 私域流量运营	sī yù liú liàng yùn yíng	10
 丝萸养血益肾	sī yú yǎng xuè yì shèn	10
 思源实验学校	sī yuán shí yàn xué xiào	10
@@ -1473117,9 +1473168,6 @@ sort: by_weight
 葬送的芙莉莲	zàng sòng de fú lì lián	10
 藏王松赞干布	zàng wáng sōng zàn gān bù	10
 脏兮兮的东西	zāng xī xī de dōng xi	10
-葬于肯塔基州	zàng yú kěn tǎ jī zhōu	10
-葬于明十三陵	zàng yú míng shí sān líng	10
-葬于圣彼得堡	zàng yú shèng bǐ dé bǎo	10
 葬之汾水之上	zàng zhī fén shuǐ zhī shàng	10
 早不来晚不来	zǎo bù lái wǎn bù lái	10
 早餐吃什么好	zǎo cān chī shén me hǎo	10
@@ -1481548,7 +1481596,7 @@ sort: by_weight
 打败天下无敌手	dǎ bài tiān xià wú dí shǒu	10
 打扮得光鲜亮丽	dǎ bàn de guāng xiān liàng lì	10
 打扮得花枝招展	dǎ bàn de huā zhī zhāo zhǎn	10
-打扮得漂漂亮亮	dǎ bàn de piāo piāo liàng liàng	10
+打扮得漂漂亮亮	dǎ bàn de piào piào liàng liàng	10
 达比克草原战役	dá bǐ kè cǎo yuán zhàn yì	10
 大比例尺地形图	dà bǐ lì chǐ dì xíng tú	10
 大般若波罗蜜经	dà bō rě bō luó mì jīng	10
