@@ -1,6 +1,6 @@
 # Rime dictionary
 # encoding: utf-8
-#https://github.com/amzxyz/RIME-LMDG
+#https://github.com/amzxyz/rime-wanxiang-data
 ---
 name: zi
 version: "LTS"
@@ -1770,7 +1770,6 @@ sort: by_weight
 𪱠	biǎn	1
 𫟪	biān	1
 𰻞	biáng	450
-𰻝	biáng	380
 表	biǎo	48723
 標	biāo	33582
 飆	biāo	5373
@@ -12083,10 +12082,10 @@ sort: by_weight
 䓳	hěn	1
 𦚣	hén	1
 哼	hēng	9137
-衡	héng	2974
-橫	héng	2677
+橫	héng	2974
+衡	héng	2677
 恆	héng	2409
-亨	hēng	2065
+亨	hēng	1465
 橫	hèng	1120
 桁	héng	440
 蘅	héng	370
@@ -14767,7 +14766,7 @@ sort: by_weight
 鞬	jiàn	175
 翦	jiǎn	159
 淺	jiān	158
-礆	jiǎn	157
+硷	jiǎn	157
 戔	jiān	150
 鶼	jiān	142
 籛	jiān	140
@@ -14895,6 +14894,7 @@ sort: by_weight
 朁	jiàn	1
 橏	jiǎn	1
 瞯	jiàn	1
+礆	jiǎn	1
 礷	jiān	1
 稴	jiān	1
 籈	jiān	1
@@ -19268,7 +19268,7 @@ sort: by_weight
 莉	lì	673
 釐	lí	656
 隸	lì	645
-慄	lì	610
+栗	lì	610
 瀝	lì	604
 哩	lī	596
 鯉	lǐ	589
@@ -19369,6 +19369,7 @@ sort: by_weight
 刕	lí	1
 涖	lì	1
 娳	lì	1
+慄	lì	1
 瓑	lì	1
 褵	lí	1
 斄	lí	1
@@ -34436,7 +34437,7 @@ sort: by_weight
 𪎶	tún	1
 𪎴	tún	1
 𪑒	tùn	1
-託	tuō	12563
+托	tuō	12563
 脫	tuō	10535
 拖	tuō	10324
 拓	tuò	2445
@@ -34470,6 +34471,7 @@ sort: by_weight
 圫	tuō	197
 駄	tuó	183
 驒	tuó	181
+託	tuō	177
 騨	tuó	165
 乇	tuō	159
 飥	tuō	157

@@ -1,6 +1,6 @@
 # Rime dictionary
 # encoding: utf-8
-#https://github.com/amzxyz/RIME-LMDG
+#https://github.com/amzxyz/rime-wanxiang-data
 #兼容詞庫，對於多字詞匯兩種讀音的場景，手動維護到本表以及一些其他的雜項
 ---
 name: duoyin

@@ -1,6 +1,6 @@
 # Rime dictionary
 # encoding: utf-8
-#https://github.com/amzxyz/RIME-LMDG
+#https://github.com/amzxyz/rime-wanxiang-data
 #t9輸入用簡碼庫
 ---
 name: t9_abbrev
@@ -6790,7 +6790,7 @@ sort: by_weight
 死了嗎	slm
 蘇里南	sln
 派拉蒙	plm
-拼了命	plm
+拚了命	plm
 溶菌酶	rjm
 鎖麟囊	sln
 普魯士	pls
@@ -9957,7 +9957,7 @@ sort: by_weight
 衝鋒在前	cfzq
 並非易事	bfys
 不負責任	bfzr
-沉得住氣	cdzq
+沈得住氣	cdzq
 懲惡揚善	ceys
 蠢得要死	cdys
 超度眾生	cdzs
@@ -10546,7 +10546,7 @@ sort: by_weight
 瞠目結舌	cmjs
 觸目皆是	cmjs
 陳年舊事	cnjs
-沉湎酒色	cmjs
+沈湎酒色	cmjs
 才貌俱全	cmjq
 薄命佳人	bmjr
 才貌兼全	cmjq
@@ -11311,7 +11311,7 @@ sort: by_weight
 參伍錯綜	cwcz
 必有近憂	byjy
 長效機制	cxjz
-沉魚落雁	cyly
+沈魚落雁	cyly
 畢業論文	bylw
 保外就醫	bwjy
 標新立異	bxly
@@ -11600,7 +11600,7 @@ sort: by_weight
 備位充數	bwcs
 齒牙春色	cycs
 殘垣斷壁	cydb
-沉鬱頓挫	cydc
+沈鬱頓挫	cydc
 穿着打扮	czdb
 穿衣打扮	cydb
 博學多才	bxdc
@@ -21461,7 +21461,7 @@ sort: by_weight
 奇才異能	qcyn
 棄本逐末	qbzm
 司法程序	sfcx
-破釜沉舟	pfcz
+破釜沈舟	pfcz
 上帝保佑	sdby
 少兒不宜	seby
 屈打成招	qdcz
@@ -23456,7 +23456,7 @@ sort: by_weight
 殺聲震天	sszt
 如日中天	rrzt
 杞人憂天	qryt
-受人之託	srzt
+受人之托	srzt
 欺人之談	qrzt
 聲氣相通	sqxt
 聲氣相投	sqxt
@@ -28826,7 +28826,7 @@ sort: by_weight
 心如懸旌	xrxj
 一人之交	yrzj
 研桑心計	ysxj
-一拼之力	ypzl
+一拚之力	ypzl
 嘻皮笑臉	xpxl
 在色之戒	zszj
 掩飾不住	ysbz

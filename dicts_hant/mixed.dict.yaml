@@ -1,6 +1,6 @@
 # Rime dictionary
 # encoding: utf-8
-# #https://github.com/amzxyz/RIME-LMDG
+# #https://github.com/amzxyz/rime-wanxiang-data
 ---
 name: mixed
 version: "LTS"
@@ -843,7 +843,7 @@ Alt鍵	Alt'jiàn
 B話真多	B'huà'zhēn'duō
 Be動詞	Be'dòng'cí
 Big膽	Big'dǎn
-C#語言	C'jǐng'yǔ'yán
+C#語言	C#'yǔ'yán
 CO氣體	CO'qì'tǐ
 CT檢查	CT'jiǎn'chá
 CT掃描	CT'sǎo'miáo
