@@ -183261,7 +183261,7 @@ sort: by_weight
 包一个	bāo yí gè	144
 报一个	bào yí gè	115
 抱一会	bào yí huì	652
-报一科	bào yī kē	256
+报一科	bào yì kē	256
 包依赖	bāo yī lài	13
 保义郎	bǎo yì láng	320
 宝邑路	bǎo yì lù	495
@@ -243893,6 +243893,7 @@ sort: by_weight
 大馅饼	dà xiàn bǐng	544
 大弦长	dà xián cháng	153
 大县城	dà xiàn chéng	468
+大显存	dà xiǎn cún	23
 大仙儿	dà xiān ér	526
 打先发	dǎ xiān fā	16
 大宪法	dà xiàn fǎ	14
@@ -323618,7 +323619,7 @@ sort: by_weight
 国医节	guó yī jié	297
 过一久	guò yì jiǔ	252
 过一刻	guò yí kè	634
-过一科	guò yī kē	331
+过一科	guò yì kē	331
 过亿了	guò yì le	536
 过一门	guò yì mén	270
 过一年	guò yì nián	1300
@@ -406962,7 +406963,7 @@ sort: by_weight
 烤一烤	kǎo yì kǎo	153
 靠一靠	kào yí kào	122
 铐一铐	kào yī kào	52
-考一科	kǎo yī kē	198
+考一科	kǎo yì kē	198
 靠毅力	kào yì lì	572
 考一门	kǎo yì mén	251
 靠意念	kào yì niàn	428
@@ -431684,7 +431685,7 @@ sort: by_weight
 另一句	lìng yí jù	734
 另一颗	lìng yì kē	257
 另一棵	lìng yì kē	231
-另一科	lìng yī kē	208
+另一科	lìng yì kē	208
 另一块	lìng yí kuài	625
 另一款	lìng yì kuǎn	1071
 另一类	lìng yí lèi	2251
@@ -449077,7 +449078,7 @@ sort: by_weight
 每一局	měi yì jú	617
 每一刻	měi yí kè	816
 每一颗	měi yì kē	671
-每一科	měi yī kē	489
+每一科	měi yì kē	489
 每一课	měi yí kè	433
 没一刻	méi yí kè	336
 每一克	měi yí kè	182
@@ -460155,7 +460156,7 @@ sort: by_weight
 哪一刻	nǎ yí kè	285
 那一颗	nà yì kē	166
 那一棵	nà yì kē	132
-哪一科	nǎ yī kē	105
+哪一科	nǎ yì kē	105
 哪一颗	nǎ yì kē	84
 那一课	nà yí kè	67
 哪一课	nǎ yí kè	53
@@ -642723,7 +642724,7 @@ sort: by_weight
 下一卷	xià yì juǎn	446
 下一刻	xià yí kè	1243
 下一颗	xià yì kē	900
-下一科	xià yī kē	416
+下一科	xià yì kē	416
 下一课	xià yí kè	374
 下一口	xià yì kǒu	896
 下一块	xià yí kuài	940
@@ -903884,7 +903885,7 @@ sort: by_weight
 过了一半	guò le yí bàn	135
 过了一遍	guò le yí biàn	1834
 过了一会	guò le yí huì	1601
-过了一科	guò le yī kē	19
+过了一科	guò le yì kē	19
 过了一年	guò le yì nián	929
 过了一日	guò le yí rì	52
 过了一天	guò le yì tiān	349
@@ -982793,7 +982794,7 @@ sort: by_weight
 考完试了	kǎo wán shì le	116
 考完试没	kǎo wán shì méi	297
 考完四级	kǎo wán sì jí	50
-考完一科	kǎo wán yī kē	38
+考完一科	kǎo wán yì kē	38
 考文垂市	kǎo wén chuí shì	6
 拷问刑具	kǎo wèn xíng jù	130
 靠我近点	kào wǒ jìn diǎn	76
@@ -1108105,6 +1108106,8 @@ sort: by_weight
 什么吊事	shén me diào shì	117
 什么东东	shén me dōng dōng	226
 什么动静	shén me dòng jìng	182
+什么懂了	shén me dǒng le	118
+什么动了	shén me dòng le	61
 什么动物	shén me dòng wù	198
 什么东西	shén me dōng xi	12946
 什么动作	shén me dòng zuò	232
@@ -1249194,7 +1249197,7 @@ sort: by_weight
 一颗卤蛋	yì kē lǔ dàn	418
 以克论净	yǐ kè lùn jìng	328
 一颗螺丝	yì kē luó sī	688
-一科没过	yī kē méi guò	35
+一科没过	yì kē méi guò	35
 易可门诊	yì kě mén zhěn	153
 一颗明珠	yì kē míng zhū	742
 一颗木瓜	yì kē mù guā	117
@@ -1249233,7 +1249236,7 @@ sort: by_weight
 医科学校	yī kē xué xiào	31
 一棵杨树	yì kē yáng shù	310
 一课一测	yí kè yí cè	45
-一科一辅	yī kē yī fǔ	130
+一科一辅	yì kē yì fǔ	130
 一客一换	yí kè yí huàn	414
 宜客宜家	yí kè yí jiā	76
 一颗一颗	yì kē yì kē	418
@@ -1334693,7 +1334696,7 @@ sort: by_weight
 最后一聚	zuì hòu yí jù	52
 最后一刻	zuì hòu yí kè	2047
 最后一课	zuì hòu yí kè	292
-最后一科	zuì hòu yī kē	254
+最后一科	zuì hòu yì kē	254
 最后一口	zuì hòu yì kǒu	264
 最后一扣	zuì hòu yí kòu	207
 最后一块	zuì hòu yí kuài	524
