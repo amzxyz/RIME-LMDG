@@ -25,7 +25,6 @@
 | 分类词库 | [`diming.dict.yaml`](https://github.com/amzxyz/rime-wanxiang-data/blob/wanxiang/dicts/diming.dict.yaml) | 收录国内行政区划地区名称|
 | 分类词库 | [`yiren.dict.yaml`](https://github.com/amzxyz/rime-wanxiang-data/blob/wanxiang/dicts/yiren.dict.yaml) | 艺人姓名|
 | 分类词库 | [`mingren.dict.yaml`](https://github.com/amzxyz/rime-wanxiang-data/blob/wanxiang/dicts/mingren.dict.yaml) | 名人姓名|
-| 分类词库 | [`renming.dict.yaml`](https://github.com/amzxyz/rime-wanxiang-data/blob/wanxiang/dicts/renming.dict.yaml) | 普通高频人名|
 | 扩展词库 | [`huaxue.dict.yaml`](https://github.com/amzxyz/rime-wanxiang-data/blob/wanxiang/dicts/huaxue.dict.yaml) | 化学类词汇|
 | 扩展词库 | [`yaopin.dict.yaml`](https://github.com/amzxyz/rime-wanxiang-data/blob/wanxiang/dicts/yaopin.dict.yaml) | 药品类词汇|
 | 扩展词库 | [`yixue.dict.yaml`](https://github.com/amzxyz/rime-wanxiang-data/blob/wanxiang/dicts/yixue.dict.yaml) | 医学类词汇|

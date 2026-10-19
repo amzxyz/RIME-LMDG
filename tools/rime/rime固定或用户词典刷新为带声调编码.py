@@ -13,8 +13,66 @@
 """
 
 import os, re
-from tqdm import tqdm
-from pypinyin import pinyin, Style, load_phrases_dict, load_single_dict
+import sys
+from pathlib import Path
+
+
+# 优先使用仓库内的 vendor/python；本地目录不可用时自动回退到当前
+# Python 环境（系统 Python、venv 或 pip 安装的 pypinyin）。
+_THIS_FILE = Path(__file__).resolve()
+_VENDOR_DIRS = [
+    _THIS_FILE.parents[2] / "vendor" / "python",  # 仓库/tools/rime/<script>.py
+    _THIS_FILE.parent / "vendor" / "python",      # 兼容脚本旁边放置 vendor/
+    Path.cwd() / "vendor" / "python",             # 从仓库根目录运行
+]
+
+
+def _load_pypinyin():
+    """依次尝试仓库副本和当前 Python/venv 中的 pypinyin。"""
+    import_error = None
+
+    for vendor_dir in _VENDOR_DIRS:
+        if not (vendor_dir / "pypinyin").is_dir():
+            continue
+        vendor_path = str(vendor_dir)
+        if vendor_path not in sys.path:
+            sys.path.insert(0, vendor_path)
+        try:
+            from pypinyin import (
+                pinyin,
+                Style,
+                load_phrases_dict,
+                load_single_dict,
+            )
+            return pinyin, Style, load_phrases_dict, load_single_dict
+        except ImportError as exc:
+            import_error = exc
+            if vendor_path in sys.path:
+                sys.path.remove(vendor_path)
+            # 清理失败导入留下的半初始化模块，保证后续 venv 重试正常。
+            for module_name in list(sys.modules):
+                if module_name == "pypinyin" or module_name.startswith("pypinyin."):
+                    del sys.modules[module_name]
+
+    try:
+        from pypinyin import (
+            pinyin,
+            Style,
+            load_phrases_dict,
+            load_single_dict,
+        )
+        return pinyin, Style, load_phrases_dict, load_single_dict
+    except ImportError as exc:
+        if import_error is not None:
+            raise ModuleNotFoundError(
+                "无法加载 pypinyin：仓库 vendor/python 和当前 Python/venv 均不可用"
+            ) from exc
+        raise ModuleNotFoundError(
+            "未找到 pypinyin，请将其放入 vendor/python 或当前 venv"
+        ) from exc
+
+
+pinyin, Style, load_phrases_dict, load_single_dict = _load_pypinyin()
 
 
 # 你的词典用什么分隔辅助码？
@@ -466,7 +524,30 @@ def process_single_file(src: str, dst: str):
 
 
 
-# 目录 / 单文件 处理 + tqdm
+# 目录 / 单文件处理
+
+def _show_progress(current: int, total: int, filename: str = "") -> None:
+    """交互终端显示单行进度；日志/CI 环境不输出空白控制行。"""
+    if not sys.stdout.isatty():
+        return
+
+    width = 28
+    ratio = current / total if total else 1.0
+    filled = min(width, int(width * ratio))
+    bar = "=" * filled + ">" + " " * max(0, width - filled - 1)
+    message = f"处理文件 [{bar}] {current}/{total}"
+    if filename:
+        message += f"  {filename}"
+    # ANSI 清除当前行，不再写入固定数量的空格。
+    sys.stdout.write("\r\033[2K" + message)
+    sys.stdout.flush()
+
+
+def _clear_progress() -> None:
+    if sys.stdout.isatty():
+        sys.stdout.write("\r\033[2K")
+        sys.stdout.flush()
+
 
 def process_files(path_in: str, path_out: str):
     # ————————————————— 单文件 —————————————————
@@ -494,11 +575,16 @@ def process_files(path_in: str, path_out: str):
             tasks.append((os.path.join(root, fn),
                           os.path.join(ddir, fn)))
 
-    bar = tqdm(tasks, desc="处理文件", unit="file", ncols=90)
-    for src, dst in bar:
-        bar.set_postfix(file=os.path.basename(src))
+    total = len(tasks)
+    for index, (src, dst) in enumerate(tasks, 1):
+        _show_progress(index - 1, total, os.path.basename(src))
         process_single_file(src, dst)
-        tqdm.write(f"✓ 完成 {os.path.basename(src)} → {os.path.relpath(dst, path_out)}")
+        _clear_progress()
+        print(f"✓ 完成 {os.path.basename(src)} → {os.path.relpath(dst, path_out)}")
+        _show_progress(index, total)
+
+    _clear_progress()
+    print(f"处理完成：共 {total} 个文件")
 
 
 
@@ -506,7 +592,7 @@ def process_files(path_in: str, path_out: str):
 
 if __name__ == "__main__":
     input_dir  = "/home/amz/Documents/输入法方案/原始词库"
-    output_dir = "/home/amz/Documents/输入法方案/LMDG/dicts"
+    output_dir = "/home/amz/Documents/输入法方案/rime-wanxiang-data/dicts"
     custom_dir = "pinyin_data"
 
     load_custom_pinyin_from_directory(custom_dir)
