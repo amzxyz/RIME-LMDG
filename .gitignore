@@ -1,1 +1,11 @@
 __pycache__
+__pycache__/
+.venv/
+venv/
+build/
+dist/
+.gradle/
+*.userdb/
+*.userdb
+apps/android/wanxiang-updater/app/build/
+apps/android/wanxiang-updater/app/src/main/python/generated_sources.json

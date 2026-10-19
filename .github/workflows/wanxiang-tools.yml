@@ -5,10 +5,10 @@ on:
     branches: 
       - wanxiang
     paths:
-      - 'pypinyin/**'
-      - 'advanced_settings/**'
-      - 'wanxiang-tools.py'
-      - 'wanxiang-updater/**'
+      - 'vendor/python/pypinyin/**'
+      - 'apps/desktop/advanced_settings/**'
+      - 'apps/desktop/wanxiang-tools.py'
+      - 'apps/android/wanxiang-updater/**'
       - '.github/workflows/**'
   workflow_dispatch:
 
@@ -31,24 +31,25 @@ jobs:
           source venv/bin/activate
           pip install PySide6 requests pyinstaller ruamel.yaml
 
-          test -f wanxiang-tools.py
-          test -f advanced_settings/__init__.py
-          test -d pypinyin
+          test -f apps/desktop/wanxiang-tools.py
+          test -f apps/desktop/apps/desktop/apps/desktop/advanced_settings/__init__.py
+          test -d vendor/python/pypinyin
 
-          test -f wanxiang-tools.py
-          test -f advanced_settings/__init__.py
-          test -d pypinyin
+          test -f apps/desktop/wanxiang-tools.py
+          test -f apps/desktop/apps/desktop/apps/desktop/advanced_settings/__init__.py
+          test -d vendor/python/pypinyin
           
-          if [ ! -f icon.ico ]; then touch icon.ico; fi
+          if [ ! -f apps/desktop/assets/icon.ico ]; then touch icon.ico; fi
           # 转换图标
-          convert icon.ico -resize 256x256 wanxiang-tools.png
+          convert apps/desktop/assets/icon.ico -resize 256x256 wanxiang-tools.png
           
           pyinstaller -F -w \
             --clean \
             --name wanxiang-tools \
-            --paths . \
+            --paths apps/desktop \
+            --paths vendor/python \
             --collect-submodules advanced_settings \
-            --add-data "pypinyin:pypinyin" \
+            --add-data "vendor/python/pypinyin:pypinyin" \
             --hidden-import requests \
             --collect-all ruamel.yaml \
             --exclude-module tkinter \
@@ -61,8 +62,8 @@ jobs:
             --exclude-module PySide6.QtQuick \
             --exclude-module PySide6.QtWebEngine \
             --exclude-module PySide6.Qt3DCore \
-            -i icon.ico \
-            wanxiang-tools.py
+            -i apps/desktop/assets/icon.ico \
+            apps/desktop/wanxiang-tools.py
 
           strip dist/wanxiang-tools
 
@@ -160,15 +161,15 @@ jobs:
 
       - name: 🔍 校验 Arch 源码
         run: |
-          test -f wanxiang-tools.py
-          test -f advanced_settings/__init__.py
-          test -d pypinyin
-          test -f icon.ico
+          test -f apps/desktop/wanxiang-tools.py
+          test -f apps/desktop/apps/desktop/apps/desktop/advanced_settings/__init__.py
+          test -d vendor/python/pypinyin
+          test -f apps/desktop/assets/icon.ico
 
           python -m compileall -q \
-            wanxiang-tools.py \
-            advanced_settings \
-            pypinyin
+            apps/desktop/wanxiang-tools.py \
+            apps/desktop/advanced_settings \
+            vendor/python/pypinyin
 
       - name: 📦 构建 Arch 原生软件包
         run: |
@@ -177,9 +178,9 @@ jobs:
 
           # 源码作为 Arch 包内容，不再使用 Ubuntu 生成的 PyInstaller ELF。
           tar -czf arch-build/wanxiang-tools-src.tar.gz \
-            wanxiang-tools.py \
-            advanced_settings \
-            pypinyin
+            apps/desktop/wanxiang-tools.py \
+            apps/desktop/advanced_settings \
+            vendor/python/pypinyin
 
           # Arch 包启动器：始终使用系统 Python / PySide6 / Qt。
           cat > arch-build/wanxiang-tools <<'EOF'
@@ -189,7 +190,7 @@ jobs:
           chmod +x arch-build/wanxiang-tools
 
           # 桌面图标。
-          magick 'icon.ico[0]' -resize 256x256 arch-build/wanxiang-tools.png
+          magick 'apps/desktop/assets/icon.ico[0]' -resize 256x256 arch-build/wanxiang-tools.png
 
           cat > arch-build/wanxiang-tools.desktop <<'EOF'
           [Desktop Entry]
@@ -232,7 +233,7 @@ jobs:
 
           package() {
               install -d "\$pkgdir/usr/lib/wanxiang-tools"
-              install -Dm644 "\$srcdir/wanxiang-tools.py" \
+              install -Dm644 "\$srcdir/apps/desktop/wanxiang-tools.py" \
                   "\$pkgdir/usr/lib/wanxiang-tools/wanxiang-tools.py"
               cp -a "\$srcdir/advanced_settings" \
                   "\$pkgdir/usr/lib/wanxiang-tools/"
@@ -284,13 +285,14 @@ jobs:
         shell: bash
         run: |
           pip install PySide6 requests pyinstaller ruamel.yaml
-          if [ ! -f icon.ico ]; then touch icon.ico; fi
+          if [ ! -f apps/desktop/assets/icon.ico ]; then touch icon.ico; fi
 
           pyinstaller -F -w \
             --name wanxiang-tools \
-            --paths . \
+            --paths apps/desktop \
+            --paths vendor/python \
             --collect-submodules advanced_settings \
-            --add-data "pypinyin;pypinyin" \
+            --add-data "vendor/python/pypinyin;pypinyin" \
             --hidden-import requests \
             --collect-all ruamel.yaml \
             --exclude-module tkinter \
@@ -299,8 +301,8 @@ jobs:
             --exclude-module PySide6.QtQml \
             --exclude-module PySide6.QtQuick \
             --exclude-module PySide6.QtWebEngine \
-            -i icon.ico \
-            wanxiang-tools.py
+            -i apps/desktop/assets/icon.ico \
+            apps/desktop/wanxiang-tools.py
 
       - name: Upload Windows Artifacts
         uses: actions/upload-artifact@v7
@@ -320,17 +322,18 @@ jobs:
           python-version: '3.12'
       - run: pip install PySide6 requests pyinstaller pillow ruamel.yaml
       - run: |
-          test -f wanxiang-tools.py
-          test -f advanced_settings/__init__.py
-          test -d pypinyin
+          test -f apps/desktop/wanxiang-tools.py
+          test -f apps/desktop/apps/desktop/apps/desktop/advanced_settings/__init__.py
+          test -d vendor/python/pypinyin
 
-          if [ ! -f icon.ico ]; then touch icon.ico; fi
+          if [ ! -f apps/desktop/assets/icon.ico ]; then touch icon.ico; fi
 
           pyinstaller -F -w \
             --name wanxiang-tools \
-            --paths . \
+            --paths apps/desktop \
+            --paths vendor/python \
             --collect-submodules advanced_settings \
-            --add-data "pypinyin:pypinyin" \
+            --add-data "vendor/python/pypinyin:pypinyin" \
             --hidden-import requests \
             --collect-all ruamel.yaml \
             --exclude-module tkinter \
@@ -339,11 +342,11 @@ jobs:
             --exclude-module PySide6.QtQml \
             --exclude-module PySide6.QtQuick \
             --exclude-module PySide6.QtWebEngine \
-            -i icon.ico \
-            wanxiang-tools.py
+            -i apps/desktop/assets/icon.ico \
+            apps/desktop/wanxiang-tools.py
           
           cd dist
-          zip -r wanxiang-tools-macos.zip wanxiang-tools.app
+          zip -r wanxiang-tools-macos.zip wanxiang-tools
 
       - name: Upload macOS Artifacts
         uses: actions/upload-artifact@v7
@@ -378,36 +381,36 @@ jobs:
 
       - name: 🐍 准备 Android Python 模块
         run: |
-          mkdir -p wanxiang-updater/app/src/main/python
-          rm -rf wanxiang-updater/app/src/main/python/pypinyin
-          cp -a pypinyin wanxiang-updater/app/src/main/python/
+          mkdir -p apps/android/wanxiang-updater/app/src/main/python
+          rm -rf apps/android/wanxiang-updater/app/src/main/python/pypinyin
+          cp -a vendor/python/pypinyin apps/android/wanxiang-updater/app/src/main/python/
 
           # Android 端复用桌面高级设置的 YAML 引擎和元数据；不复制 PySide6 UI。
-          rm -rf wanxiang-updater/app/src/main/python/advanced_settings
-          mkdir -p wanxiang-updater/app/src/main/python/advanced_settings
-          cp advanced_settings/core.py wanxiang-updater/app/src/main/python/advanced_settings/
-          cp advanced_settings/metadata.py wanxiang-updater/app/src/main/python/advanced_settings/
-          cat > wanxiang-updater/app/src/main/python/advanced_settings/__init__.py <<'PY'
+          rm -rf apps/android/wanxiang-updater/app/src/main/python/advanced_settings
+          mkdir -p apps/android/wanxiang-updater/app/src/main/python/advanced_settings
+          cp apps/desktop/apps/desktop/apps/desktop/advanced_settings/core.py apps/android/wanxiang-updater/app/src/main/python/advanced_settings/
+          cp apps/desktop/apps/desktop/apps/desktop/advanced_settings/metadata.py apps/android/wanxiang-updater/app/src/main/python/advanced_settings/
+          cat > apps/android/wanxiang-updater/app/src/main/python/apps/desktop/apps/desktop/apps/desktop/advanced_settings/__init__.py <<'PY'
           from .core import RimeYamlEngine, RimeYamlError, is_managed_config_yaml, is_managed_source_yaml
           from .metadata import FILE_INDEX_META, SCHEMA_META_CONFIG, sort_algebra_patch_items
           PY
 
           echo "=== Android Python source ==="
-          find wanxiang-updater/app/src/main/python -maxdepth 2 -type f | sort | head -100
+          find apps/android/wanxiang-updater/app/src/main/python -maxdepth 2 -type f | sort | head -100
 
-          test -f wanxiang-updater/app/src/main/python/pinyin_bridge.py
-          test -f wanxiang-updater/app/src/main/python/mobile_tools_bridge.py
-          test -f wanxiang-updater/app/src/main/python/advanced_settings_mobile.py
-          test -f wanxiang-updater/app/src/main/python/advanced_settings/core.py
-          test -f wanxiang-updater/app/src/main/python/advanced_settings/metadata.py
-          test -f wanxiang-updater/app/src/main/python/pypinyin/__init__.py
+          test -f apps/android/wanxiang-updater/app/src/main/python/pinyin_bridge.py
+          test -f apps/android/wanxiang-updater/app/src/main/python/mobile_tools_bridge.py
+          test -f apps/android/wanxiang-updater/app/src/main/python/advanced_settings_mobile.py
+          test -f apps/android/wanxiang-updater/app/src/main/python/apps/desktop/apps/desktop/apps/desktop/advanced_settings/core.py
+          test -f apps/android/wanxiang-updater/app/src/main/python/apps/desktop/apps/desktop/apps/desktop/advanced_settings/metadata.py
+          test -f apps/android/wanxiang-updater/app/src/main/python/pypinyin/__init__.py
 
       - name: 🔐 解码签名文件
         run: |
-          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > wanxiang-updater/app/release.jks
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > apps/android/wanxiang-updater/app/release.jks
 
       - name: 🔨 编译 Release 正式版 APK
-        working-directory: ./wanxiang-updater
+        working-directory: ./apps/android/wanxiang-updater
         env:
           KEYSTORE_FILE: release.jks
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
@@ -419,7 +422,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: android-apk
-          path: wanxiang-updater/app/build/outputs/apk/release/app-release.apk
+          path: apps/android/wanxiang-updater/app/build/outputs/apk/release/app-release.apk
 
   # =================================================
   # 6. 统一发布到 GitHub Release (覆盖 tool 标签)
@@ -434,7 +437,7 @@ jobs:
 
       - name: Extract Version
         run: |
-          EXTRACTED_VER=$(grep -E "^TOOL_VERSION\s*=" wanxiang-tools.py | awk -F'['\''"]' '{print $2}')
+          EXTRACTED_VER=$(grep -E "^TOOL_VERSION\s*=" apps/desktop/wanxiang-tools.py | awk -F'['\''"]' '{print $2}')
           echo "从源码中提取到版本号: $EXTRACTED_VER"
           echo "TOOL_VER=$EXTRACTED_VER" >> $GITHUB_ENV
 
@@ -449,7 +452,7 @@ jobs:
           cd release_files
           rm -f *.png
           rm -f *-debug-*.pkg.tar.zst
-          ANDROID_VER=$(grep -E 'versionName\s*=\s*"[^"]+"' ../wanxiang-updater/app/build.gradle.kts | awk -F'"' '{print $2}')
+          ANDROID_VER=$(grep -E 'versionName\s*=\s*"[^"]+"' ../apps/android/wanxiang-updater/app/build.gradle.kts | awk -F'"' '{print $2}')
           echo "提取到安卓版本号: $ANDROID_VER"
           mv app-release.apk Wanxiang-Updater-Android-v${ANDROID_VER}.apk || true
           ls -R

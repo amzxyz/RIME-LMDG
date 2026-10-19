@@ -8,10 +8,10 @@ on:
     paths:
       - 'dicts/**'
       - 'dicts_hant/**'
-      - 'pypinyin/**'
+      - 'vendor/python/pypinyin/**'
       - 'pinyin_data/**'
-      - 'tqdm/**'
-      - 'rime固定*.py'
+      - 'vendor/python/tqdm/**'
+      - 'tools/rime/rime固定*.py'
 
 concurrency:
   group: nightly-release
@@ -51,7 +51,7 @@ jobs:
       - name: Pack dict-tools.zip
         run: |
           echo "Packing tools..."
-          zip -r "dist/dict-pinyin-tools.zip" pypinyin pinyin_data tqdm rime固定*.py
+          zip -r "dist/dict-pinyin-tools.zip" vendor/python/pypinyin pinyin_data vendor/python/tqdm tools/rime/rime固定*.py
           echo "Packing completed: dist/dict-pinyin-tools.zip"
 
       - name: Delete existing Nightly Release and Tag

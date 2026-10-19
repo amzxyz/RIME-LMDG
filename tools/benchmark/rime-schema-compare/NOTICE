@@ -1,0 +1,10 @@
+# rime-schema-compare 第三方声明
+
+本目录是对 [gaboolic/rime-schema-compare](https://github.com/gaboolic/rime-schema-compare) 的源码快照和本项目评测配置的维护副本。
+
+- `src/rime_schema_compare/call_librime.py` 来源于上游评测工具，原始许可证和版权声明必须随源码保留。
+- `vendor/` 下的 Git 子模块分别来自 `rime-frost`、`rime-ice`、`rime_wanxiang` 和 `rime-wubi-sentence`，各自遵循上游仓库许可证。
+- `requirements.txt` 中的 Python 依赖不因复制到本目录而改变许可证。
+- 本仓库应在正式发布前记录本副本对应的上游提交号；当前文件不把“等效上游”视为准确来源。
+
+完整第三方清单见仓库根目录 [`NOTICE.md`](../../../NOTICE.md)。
