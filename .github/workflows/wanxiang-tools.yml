@@ -32,11 +32,7 @@ jobs:
           pip install PySide6 requests pyinstaller ruamel.yaml
 
           test -f apps/desktop/wanxiang-tools.py
-          test -f apps/desktop/apps/desktop/apps/desktop/advanced_settings/__init__.py
-          test -d vendor/python/pypinyin
-
-          test -f apps/desktop/wanxiang-tools.py
-          test -f apps/desktop/apps/desktop/apps/desktop/advanced_settings/__init__.py
+          test -f apps/desktop/advanced_settings/__init__.py
           test -d vendor/python/pypinyin
           
           if [ ! -f apps/desktop/assets/icon.ico ]; then touch icon.ico; fi
@@ -162,7 +158,7 @@ jobs:
       - name: 🔍 校验 Arch 源码
         run: |
           test -f apps/desktop/wanxiang-tools.py
-          test -f apps/desktop/apps/desktop/apps/desktop/advanced_settings/__init__.py
+          test -f apps/desktop/advanced_settings/__init__.py
           test -d vendor/python/pypinyin
           test -f apps/desktop/assets/icon.ico
 
@@ -235,9 +231,9 @@ jobs:
               install -d "\$pkgdir/usr/lib/wanxiang-tools"
               install -Dm644 "\$srcdir/apps/desktop/wanxiang-tools.py" \
                   "\$pkgdir/usr/lib/wanxiang-tools/wanxiang-tools.py"
-              cp -a "\$srcdir/advanced_settings" \
+              cp -a "\$srcdir/apps/desktop/advanced_settings" \
                   "\$pkgdir/usr/lib/wanxiang-tools/"
-              cp -a "\$srcdir/pypinyin" \
+              cp -a "\$srcdir/vendor/python/pypinyin" \
                   "\$pkgdir/usr/lib/wanxiang-tools/"
 
               install -Dm755 "\$srcdir/wanxiang-tools" \
@@ -323,7 +319,7 @@ jobs:
       - run: pip install PySide6 requests pyinstaller pillow ruamel.yaml
       - run: |
           test -f apps/desktop/wanxiang-tools.py
-          test -f apps/desktop/apps/desktop/apps/desktop/advanced_settings/__init__.py
+          test -f apps/desktop/advanced_settings/__init__.py
           test -d vendor/python/pypinyin
 
           if [ ! -f apps/desktop/assets/icon.ico ]; then touch icon.ico; fi
@@ -388,9 +384,9 @@ jobs:
           # Android 端复用桌面高级设置的 YAML 引擎和元数据；不复制 PySide6 UI。
           rm -rf apps/android/wanxiang-updater/app/src/main/python/advanced_settings
           mkdir -p apps/android/wanxiang-updater/app/src/main/python/advanced_settings
-          cp apps/desktop/apps/desktop/apps/desktop/advanced_settings/core.py apps/android/wanxiang-updater/app/src/main/python/advanced_settings/
-          cp apps/desktop/apps/desktop/apps/desktop/advanced_settings/metadata.py apps/android/wanxiang-updater/app/src/main/python/advanced_settings/
-          cat > apps/android/wanxiang-updater/app/src/main/python/apps/desktop/apps/desktop/apps/desktop/advanced_settings/__init__.py <<'PY'
+          cp apps/desktop/advanced_settings/core.py apps/android/wanxiang-updater/app/src/main/python/advanced_settings/
+          cp apps/desktop/advanced_settings/metadata.py apps/android/wanxiang-updater/app/src/main/python/advanced_settings/
+          cat > apps/android/wanxiang-updater/app/src/main/python/advanced_settings/__init__.py <<'PY'
           from .core import RimeYamlEngine, RimeYamlError, is_managed_config_yaml, is_managed_source_yaml
           from .metadata import FILE_INDEX_META, SCHEMA_META_CONFIG, sort_algebra_patch_items
           PY
@@ -401,8 +397,8 @@ jobs:
           test -f apps/android/wanxiang-updater/app/src/main/python/pinyin_bridge.py
           test -f apps/android/wanxiang-updater/app/src/main/python/mobile_tools_bridge.py
           test -f apps/android/wanxiang-updater/app/src/main/python/advanced_settings_mobile.py
-          test -f apps/android/wanxiang-updater/app/src/main/python/apps/desktop/apps/desktop/apps/desktop/advanced_settings/core.py
-          test -f apps/android/wanxiang-updater/app/src/main/python/apps/desktop/apps/desktop/apps/desktop/advanced_settings/metadata.py
+          test -f apps/android/wanxiang-updater/app/src/main/python/advanced_settings/core.py
+          test -f apps/android/wanxiang-updater/app/src/main/python/advanced_settings/metadata.py
           test -f apps/android/wanxiang-updater/app/src/main/python/pypinyin/__init__.py
 
       - name: 🔐 解码签名文件
