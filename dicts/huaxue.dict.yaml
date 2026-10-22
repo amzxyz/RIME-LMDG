@@ -2194,6 +2194,7 @@ sort: by_weight
 甲硼烷	jiǎ péng wán	346
 甲铅烷	jiǎ qiān wán	4
 甲壳素	jiǎ qiào sù	22
+甲壳质	jiǎ qiào zhì	428
 加氢苯	jiā qīng běn	117
 甲醛肟	jiǎ quán wò	243
 甲炔基	jiǎ quē jī	76
@@ -3694,7 +3695,6 @@ sort: by_weight
 七氯萘	qī lǜ nài	45
 七碳糖	qī tàn táng	99
 七叶苷	qī yè gān	4
-甲壳质	qiǎ qiào zhì	428
 铅玻璃	qiān bō lí	13
 茜草红	qiàn cǎo hóng	212
 茜根酸	qiàn gēn suān	50
@@ -28694,7 +28694,6 @@ sort: by_weight
 正辛基焦磷酸	zhèng xīn jī jiāo lín suān	10
 正性肌力作用	zhèng xìng jī lì zuò yòng	10
 正型角化过度	zhèng xíng jiǎo huà guò dù	10
-整形外科医师	zhěng xíng wài kē yī shī	10
 正压通气连接	zhèng yā tōng qì lián jiē	10
 正中弓状韧带	zhèng zhōng gōng zhuàng rèn dài	10
 直肠局部灌注	zhí cháng jú bù guàn zhù	10
@@ -32906,8 +32905,6 @@ sort: by_weight
 正铁血红蛋白尿	zhèng tiě xuè hóng dàn bái niào	10
 正铁血红蛋白血	zhèng tiě xuè hóng dàn bái xuè	10
 正戊氧基化合物	zhèng wù yǎng jī huà hé wù	10
-整形美容外科学	zhěng xíng měi róng wài kē xué	10
-支持性心理治疗	zhī chí xìng xīn lǐ zhì liáo	10
 制戴活动矫正器	zhì dài huó dòng jiǎo zhèng qì	10
 脂蛋白代谢紊乱	zhī dàn bái dài xiè wěn luàn	10
 脂肪酸代谢紊乱	zhī fáng suān dài xiè wěn luàn	10

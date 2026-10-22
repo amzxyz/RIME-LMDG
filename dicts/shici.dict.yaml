@@ -2773,8 +2773,8 @@ sort: by_weight
 扫地舞	sǎo dì wǔ	44
 扫花游	sǎo huā yóu	44
 僧贯休	sēng guàn xiū	44
-僧伽歌	sēng jiā gē	44
 僧皎然	sēng jiǎo rán	44
+僧伽歌	sēng qié gē	44
 沙塞子	shā sāi zi	44
 山鬼谣	shān guǐ yáo	44
 山渐青	shān jiàn qīng	44
@@ -164577,7 +164577,7 @@ sort: by_weight
 天外孤鸿影	tiān wài gū hóng yǐng	10
 天外忽晴丝	tiān wài hū qíng sī	10
 天外贾客归	tiān wài jiǎ kè guī	10
-天外僧伽塔	tiān wài sēng jiā tǎ	10
+天外僧伽塔	tiān wài sēng qié tǎ	10
 天外燕鸿违	tiān wài yàn hóng wéi	10
 天外亦朝宗	tiān wài yì cháo zōng	10
 天外猿啼处	tiān wài yuán tí chù	10
@@ -238125,7 +238125,7 @@ sort: by_weight
 亦若此而已矣	yì ruò cǐ ér yǐ yǐ	10
 亦若是则已矣	yì ruò shì zé yǐ yǐ	10
 以弱天下之民	yǐ ruò tiān xià zhī mín	10
-以僧伽梨蒙之	yǐ sēng jiā lí méng zhī	10
+以僧伽梨蒙之	yǐ sēng qié lí méng zhī	10
 以申感谢岑参	yǐ shēn gǎn xiè cén shēn	10
 一身面目黄肿	yì shēn miàn mù huáng zhǒng	10
 一身趋侍丹墀	yì shēn qū shì dān chí	10
@@ -293525,12 +293525,12 @@ sort: by_weight
 僧宝人人沧海珠	sēng bǎo rén rén cāng hǎi zhū	10
 僧持半偈万缘空	sēng chí bàn jì wàn yuán kōng	10
 僧房药树依寒井	sēng fáng yào shù yī hán jǐng	10
-僧伽帽小却空回	sēng jiā mào xiǎo què kōng huí	10
 僧开小槛笼沙界	sēng kāi xiǎo jiàn lóng shā jiè	10
 僧来不语自鸣钟	sēng lái bù yǔ zì míng zhōng	10
 僧来乞食因留宿	sēng lái qǐ shí yīn liú sù	10
 僧临大道阅浮生	sēng lín dà dào yuè fú shēng	10
 僧侣且陪香火社	sēng lǚ qiě péi xiāng huǒ shè	10
+僧伽帽小却空回	sēng qié mào xiǎo què kōng huí	10
 僧舍初寒夜气清	sēng shě chū hán yè qì qīng	10
 僧是愚氓犹可恕	sēng shì yú méng yóu kě shù	10
 僧是愚氓犹可训	sēng shì yú méng yóu kě xùn	10
@@ -299332,6 +299332,7 @@ sort: by_weight
 谁似濮阳公子贤	shuí sì pú yáng gōng zǐ xián	10
 谁似诗人巧耐寒	shuí sì shī rén qiǎo nài hán	10
 谁送春声入棹歌	shuí sòng chūn shēng rù zhào gē	10
+水宿风餐甚劳苦	shuǐ sù fēng cān shèn láo kǔ	10
 水宿沙行如海鸟	shuǐ sù shā xíng rú hǎi niǎo	10
 水宿云翔去几般	shuǐ sù yún xiáng qù jǐ bān	10
 水随天去秋天际	shuǐ suí tiān qù qiū tiān jì	10
@@ -299408,7 +299409,6 @@ sort: by_weight
 谁信言公似赞公	shuí xìn yán gōng sì zàn gōng	10
 水荇牵风翠带长	shuǐ xìng qiān fēng cuì dài cháng	10
 水行水宿忘冬春	shuǐ xíng shuǐ sù wàng dōng chūn	10
-水宿风餐甚劳苦	shuǐ xiǔ fēng cān shèn láo kǔ	10
 水宿山行鱼浦西	shuǐ xiǔ shān xíng yú pǔ xī	10
 水轩花榭两争妍	shuǐ xuān huā xiè liǎng zhēng yán	10
 水轩平写琉璃镜	shuǐ xuān píng xiě liú lí jìng	10
@@ -326258,7 +326258,7 @@ sort: by_weight
 真色迷人应过此	zhēn sè mí rén yīng guò cǐ	10
 真僧不见听时心	zhēn sēng bú jiàn tīng shí xīn	10
 真僧出世心无事	zhēn sēng chū shì xīn wú shì	10
-真僧法号号僧伽	zhēn sēng fǎ hào hào sēng jiā	10
+真僧法号号僧伽	zhēn sēng fǎ hào hào sēng qié	10
 真僧相劝外浮华	zhēn sēng xiāng quàn wài fú huá	10
 枕山流水日潺潺	zhěn shān liú shuǐ rì chán chán	10
 枕上暗惊垂钓梦	zhěn shàng àn jīng chuí diào mèng	10
