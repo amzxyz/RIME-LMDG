@@ -6,6 +6,7 @@ import android.os.Environment
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -16,6 +17,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalClipboardManager
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
@@ -49,6 +52,11 @@ data class AdvancedField(
     val editorConfigJson: String = "{}"
 )
 
+private class AdvancedPythonCallException(
+    message: String,
+    val diagnosticDetails: String
+) : RuntimeException(message)
+
 private object AdvancedPythonBridge {
     private val lock = Any()
     private fun python(context: Context): Python {
@@ -57,59 +65,64 @@ private object AdvancedPythonBridge {
         }
         return Python.getInstance()
     }
+
+    /** Always route calls through a tiny dependency-light Python wrapper so import errors retain traceback. */
+    private fun invoke(context: Context, method: String, args: List<Any?>): String {
+        val encodedArgs = JSONArray()
+        args.forEach { encodedArgs.put(it) }
+        val raw = python(context).getModule("advanced_settings_diagnostics")
+            .callAttr("invoke_json", method, encodedArgs.toString()).toString()
+        val envelope = JSONObject(raw)
+        if (!envelope.optBoolean("ok", false)) {
+            val type = envelope.optString("errorType", "PythonError")
+            val error = envelope.optString("error", "未知 Python 错误")
+            val detail = buildString {
+                appendLine("操作：$method")
+                appendLine("异常类型：$type")
+                appendLine("错误信息：$error")
+                appendLine("Python：${envelope.optString("pythonVersion", "未知")}")
+                appendLine("模块路径：${envelope.optString("moduleFile", "未加载")}")
+                appendLine()
+                appendLine("Python 调用栈：")
+                append(envelope.optString("traceback", "（Python 未返回调用栈）"))
+            }
+            throw AdvancedPythonCallException("$type: $error", detail)
+        }
+        return envelope.optString("result", "")
+    }
+
     fun scan(context: Context, root: File): List<AdvancedFile> {
-        val text = python(context).getModule("advanced_settings_mobile")
-            .callAttr("scan_sections", root.absolutePath).toString()
-        val rows = JSONArray(text)
+        val rows = JSONArray(invoke(context, "scan_sections", listOf(root.absolutePath)))
         return (0 until rows.length()).map { i ->
             val row = rows.getJSONObject(i)
             val sections = row.optJSONArray("sections")?.let { a ->
-                (0 until a.length()).map { j -> val s = a.getJSONObject(j); s.optString("key") to s.optString("title") }
+                (0 until a.length()).map { j -> val section = a.getJSONObject(j); section.optString("key") to section.optString("title") }
             } ?: emptyList()
             AdvancedFile(row.optString("group"), row.optString("file"), row.optString("name"), sections)
         }
     }
-    fun form(context: Context, root: File, file: String, section: String, directMode: Boolean): List<AdvancedField> {
-        val text = python(context).getModule("advanced_settings_mobile")
-            .callAttr("load_form", root.absolutePath, file, section, directMode).toString()
-        val fields = JSONArray(JSONObject(text).optString("fields", "[]"))
-        return (0 until fields.length()).map { i ->
-            val row = fields.getJSONObject(i)
-            val options = row.optJSONArray("options")?.let { a -> (0 until a.length()).map { j -> a.optString(j) } } ?: emptyList()
-            val choices = row.optJSONArray("choices")?.let { a ->
-                (0 until a.length()).map { j ->
-                    val c = a.getJSONObject(j)
-                    AdvancedChoice(c.optString("id"), c.optString("label"), c.optBoolean("checked", false))
-                }
-            } ?: emptyList()
-            AdvancedField(
-                row.optString("path"), row.optString("title"), row.optString("desc"), row.optString("type"),
-                row.optString("value"), options, choices, row.optString("actionButton"), row.optString("template"),
-                row.optString("presetKeys"), row.optString("variant"), row.optJSONObject("editorConfig")?.toString() ?: "{}"
-            )
-        }
-    }
+
+    fun form(context: Context, root: File, file: String, section: String, directMode: Boolean): List<AdvancedField> =
+        parseFields(invoke(context, "load_form", listOf(root.absolutePath, file, section, directMode)))
+
     fun save(context: Context, root: File, file: String, section: String, direct: Boolean, values: Map<String, String>): String {
         val obj = JSONObject()
-        values.forEach { (k, v) -> obj.put(k, v) }
-        return python(context).getModule("advanced_settings_mobile")
-            .callAttr("save_form", root.absolutePath, file, section, direct, obj.toString()).toString()
+        values.forEach { (key, value) -> obj.put(key, value) }
+        return invoke(context, "save_form", listOf(root.absolutePath, file, section, direct, obj.toString()))
     }
-    fun common(context: Context, root: File, directMode: Boolean): List<AdvancedField> {
-        val text = python(context).getModule("advanced_settings_mobile")
-            .callAttr("load_common_settings", root.absolutePath, directMode).toString()
-        return parseFields(text)
-    }
+
+    fun common(context: Context, root: File, directMode: Boolean): List<AdvancedField> =
+        parseFields(invoke(context, "load_common_settings", listOf(root.absolutePath, directMode)))
+
     fun saveCommon(context: Context, root: File, direct: Boolean, values: Map<String, String>): String {
         val obj = JSONObject()
-        values.forEach { (k, v) -> obj.put(k, v) }
-        return python(context).getModule("advanced_settings_mobile")
-            .callAttr("save_common_settings", root.absolutePath, direct, obj.toString()).toString()
+        values.forEach { (key, value) -> obj.put(key, value) }
+        return invoke(context, "save_common_settings", listOf(root.absolutePath, direct, obj.toString()))
     }
-    fun importSwitches(context: Context, root: File): String {
-        return python(context).getModule("advanced_settings_mobile")
-            .callAttr("import_switches", root.absolutePath).toString()
-    }
+
+    fun importSwitches(context: Context, root: File): String =
+        invoke(context, "import_switches", listOf(root.absolutePath))
+
     private fun parseFields(text: String): List<AdvancedField> {
         val fields = JSONArray(JSONObject(text).optString("fields", "[]"))
         return (0 until fields.length()).map { i ->
@@ -117,8 +130,8 @@ private object AdvancedPythonBridge {
             val options = row.optJSONArray("options")?.let { a -> (0 until a.length()).map { j -> a.optString(j) } } ?: emptyList()
             val choices = row.optJSONArray("choices")?.let { a ->
                 (0 until a.length()).map { j ->
-                    val c = a.getJSONObject(j)
-                    AdvancedChoice(c.optString("id"), c.optString("label"), c.optBoolean("checked", false))
+                    val choice = a.getJSONObject(j)
+                    AdvancedChoice(choice.optString("id"), choice.optString("label"), choice.optBoolean("checked", false))
                 }
             } ?: emptyList()
             AdvancedField(
@@ -666,6 +679,7 @@ class AdvancedSettingsMemory {
     val showCommon = mutableStateOf(true)
     val directMode = mutableStateOf(false)
     val message = mutableStateOf("请选择高级设置目录")
+    val errorDetails = mutableStateOf("")
     val busy = mutableStateOf(false)
     val expandedGroups = mutableStateOf<Set<String>>(emptySet())
     val loadedTarget = mutableStateOf("")
@@ -692,6 +706,9 @@ fun AdvancedSettingsScreen(
     var showCommon by state.showCommon
     var directMode by state.directMode
     var message by state.message
+    var errorDetails by state.errorDetails
+    var showErrorDialog by remember { mutableStateOf(false) }
+    val clipboardManager = LocalClipboardManager.current
     var busy by state.busy
     var expandedGroups by state.expandedGroups
     var loadedTarget by state.loadedTarget
@@ -710,6 +727,21 @@ fun AdvancedSettingsScreen(
         } else field.value
     }
 
+    fun reportFailure(label: String, error: Throwable) {
+        message = "❌ $label · 点击查看完整错误"
+        errorDetails = when (error) {
+            is AdvancedPythonCallException -> error.diagnosticDetails
+            else -> buildString {
+                appendLine("操作：$label")
+                appendLine("异常类型：${error.javaClass.name}")
+                appendLine("错误信息：${error.message ?: "（无错误消息）"}")
+                appendLine()
+                appendLine("调用栈：")
+                append(error.stackTraceToString())
+            }
+        }
+    }
+
     fun loadCommonForm() {
         scope.launch {
             busy = true
@@ -721,11 +753,12 @@ fun AdvancedSettingsScreen(
                 val initial = initialValues(loaded)
                 values = initial
                 baselineValues = initial
+                errorDetails = ""
                 message = "常用综合设置 · ${loaded.size} 个设置项"
             }.onFailure {
                 commonFields = emptyList()
                 fields = emptyList()
-                message = "❌ 常用设置读取失败：${it.message}"
+                reportFailure("常用设置读取失败", it)
             }
             busy = false
         }
@@ -743,10 +776,11 @@ fun AdvancedSettingsScreen(
                 val initial = initialValues(loaded)
                 values = initial
                 baselineValues = initial
+                errorDetails = ""
                 message = "${file.label} · ${loaded.size} 个设置项"
             }.onFailure {
                 fields = emptyList()
-                message = "❌ 读取失败：${it.message}"
+                reportFailure("读取 ${file.name} 失败", it)
             }
             busy = false
         }
@@ -782,8 +816,9 @@ fun AdvancedSettingsScreen(
             }.onSuccess { result ->
                 val json = JSONObject(result)
                 values = values + (field.path to json.optString("value"))
+                errorDetails = ""
                 message = "已提取 ${json.optInt("count")} 个开关，请保存"
-            }.onFailure { message = "❌ 提取失败：${it.message}" }
+            }.onFailure { reportFailure("提取开关失败", it) }
         }
     }
 
@@ -806,6 +841,7 @@ fun AdvancedSettingsScreen(
                 selectedSection = first?.key ?: ""
                 selectedFile = first?.files?.firstOrNull()
                 expandedGroups = first?.let { setOf(it.group) } ?: emptySet()
+                errorDetails = ""
                 message = "已加载 ${loaded.size} 个配置文件，正在读取常用设置…"
                 // 若页面原本已停留在常用设置页，showCommon 不会变化，需手动刷新；
                 // 否则由 LaunchedEffect 触发一次加载，避免并发删除/重建 SAF 暂存目录。
@@ -814,7 +850,7 @@ fun AdvancedSettingsScreen(
                 files = emptyList()
                 selectedFile = null
                 fields = emptyList()
-                message = "❌ 扫描失败：${it.message}"
+                reportFailure("扫描高级设置失败", it)
             }
             busy = false
         }
@@ -839,6 +875,28 @@ fun AdvancedSettingsScreen(
     }
     val editorFields = if (showCommon) commonFields else fields
     val supportsPatchMode = showCommon || selectedFile?.name == "default.yaml" || selectedFile?.name?.endsWith(".schema.yaml") == true
+
+    if (showErrorDialog) {
+        AlertDialog(
+            onDismissRequest = { showErrorDialog = false },
+            title = { Text("高级设置错误详情") },
+            text = {
+                SelectionContainer {
+                    Column(Modifier.heightIn(max = 420.dp).verticalScroll(rememberScrollState())) {
+                        Text(errorDetails.ifBlank { "没有可显示的错误详情。" }, fontSize = 12.sp, softWrap = true)
+                    }
+                }
+            },
+            confirmButton = {
+                TextButton(onClick = { clipboardManager.setText(AnnotatedString(errorDetails)) }) {
+                    Text("复制错误信息")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showErrorDialog = false }) { Text("关闭") }
+            }
+        )
+    }
 
     ModalNavigationDrawer(
         drawerState = drawerState,
@@ -954,8 +1012,21 @@ fun AdvancedSettingsScreen(
                         FilterChip(selected = !directMode, onClick = { directMode = false }, enabled = supportsPatchMode, label = { Text("补丁模式") })
                         FilterChip(selected = directMode, onClick = { directMode = true }, label = { Text("直写模式") })
                         Spacer(Modifier.weight(1f))
-                        Text(message, fontSize = 10.sp, color = Color.Gray, maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)
+                        if (errorDetails.isNotBlank()) {
+                            TextButton(onClick = { showErrorDialog = true }, contentPadding = PaddingValues(horizontal = 8.dp, vertical = 0.dp)) {
+                                Text("错误详情", color = Color(0xFFB91C1C), fontSize = 12.sp)
+                            }
+                        }
                     }
+                    Text(
+                        message,
+                        modifier = Modifier.fillMaxWidth().padding(top = 4.dp).clickable(enabled = errorDetails.isNotBlank()) { showErrorDialog = true },
+                        fontSize = 11.sp,
+                        color = if (errorDetails.isNotBlank()) Color(0xFFB91C1C) else Color.Gray,
+                        maxLines = 2,
+                        softWrap = true,
+                        overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
+                    )
                 }
             }
 
@@ -1086,9 +1157,10 @@ fun AdvancedSettingsScreen(
                                     }
                                 }.onSuccess { result ->
                                     val json = JSONObject(result)
+                                    errorDetails = ""
                                     message = "✅ ${json.optString("message")}：${JSONArray(json.optString("changed", "[]")).join(", ")}"
                                     baselineValues = values.toMap()
-                                }.onFailure { message = "❌ 保存失败：${it.message}" }
+                                }.onFailure { reportFailure("保存失败", it) }
                                 busy = false
                             }
                         },

@@ -15,20 +15,46 @@ from pathlib import Path
 from typing import Any, Mapping
 from ruamel.yaml import YAML
 from advanced_settings.core import RimeYamlEngine
-from advanced_settings.metadata import (
-    ALGEBRA_AUX_NAMES,
-    ALGEBRA_FUZZY_NAMES,
-    ALGEBRA_SCHEME_NAMES,
-    ALGEBRA_TIQUAN_SCHEMES,
-    ALGEBRA_VARIANT_BY_FILE,
-    ENGLISH_ALGEBRA_SCHEMES,
-    FILE_INDEX_META,
-    MIXED_ALGEBRA_SCHEMES,
-    REVERSE_PINYIN_SCHEMES,
-    REVERSE_STROKE_SCHEMES,
-    SCHEMA_META_CONFIG,
-    sort_algebra_patch_items,
-)
+# Import the metadata module as a whole rather than importing every newer
+# constant by name. This keeps the mobile bridge loadable when an APK or a
+# user's checkout contains an older metadata.py alongside the newer bridge.
+# The desktop metadata remains authoritative whenever a symbol is present.
+from advanced_settings import metadata as _metadata
+
+FILE_INDEX_META = _metadata.FILE_INDEX_META
+SCHEMA_META_CONFIG = _metadata.SCHEMA_META_CONFIG
+sort_algebra_patch_items = _metadata.sort_algebra_patch_items
+ALGEBRA_SCHEME_NAMES = tuple(getattr(_metadata, "ALGEBRA_SCHEME_NAMES", (
+    "全拼", "自然码", "小鹤双拼", "微软双拼", "搜狗双拼", "智能ABC", "紫光双拼",
+    "拼音加加", "国标双拼", "自然龙", "汉心龙", "蓝天双拼", "乱序17", "大牛双拼", "首道双拼",
+)))
+ALGEBRA_AUX_NAMES = tuple(getattr(_metadata, "ALGEBRA_AUX_NAMES", ("直接辅助", "间接辅助")))
+ALGEBRA_TIQUAN_SCHEMES = tuple(getattr(_metadata, "ALGEBRA_TIQUAN_SCHEMES", ("自然码", "小鹤双拼")))
+ALGEBRA_FUZZY_NAMES = tuple(getattr(_metadata, "ALGEBRA_FUZZY_NAMES", (
+    ("n / l", "wanxiang_algebra:/模糊音_nl"),
+    ("r / y", "wanxiang_algebra:/模糊音_ry"),
+    ("h / f", "wanxiang_algebra:/模糊音_hf"),
+    ("r / l", "wanxiang_algebra:/模糊音_rl"),
+    ("k / g", "wanxiang_algebra:/模糊音_kg"),
+    ("en / eng", "wanxiang_algebra:/模糊音_en_eng"),
+    ("in / ing", "wanxiang_algebra:/模糊音_in_ing"),
+    ("c / ch", "wanxiang_algebra:/模糊音_c_ch"),
+    ("z / zh", "wanxiang_algebra:/模糊音_z_zh"),
+    ("s / sh", "wanxiang_algebra:/模糊音_s_sh"),
+)))
+ALGEBRA_VARIANT_BY_FILE = dict(getattr(_metadata, "ALGEBRA_VARIANT_BY_FILE", {
+    "wanxiang.schema.yaml": "base", "wanxiang_pro.schema.yaml": "pro", "wanxiang_lite.schema.yaml": "lite",
+}))
+REVERSE_PINYIN_SCHEMES = tuple(getattr(_metadata, "REVERSE_PINYIN_SCHEMES", (
+    "全拼", "自然码", "小鹤双拼", "微软双拼", "搜狗双拼", "智能ABC", "紫光双拼", "拼音加加",
+)))
+REVERSE_STROKE_SCHEMES = tuple(getattr(_metadata, "REVERSE_STROKE_SCHEMES", (
+    ("hspzn", "hspzn (横竖撇捺折默认)"), ("hupvd", "hupvd (双拼专用)"), ("hslzy", "hslzy (乱序17)"),
+)))
+ENGLISH_ALGEBRA_SCHEMES = tuple(getattr(_metadata, "ENGLISH_ALGEBRA_SCHEMES", (
+    "全拼", "自然码", "小鹤双拼", "微软双拼", "搜狗双拼", "智能ABC", "紫光双拼", "拼音加加", "自然龙", "汉心龙",
+)))
+MIXED_ALGEBRA_SCHEMES = tuple(getattr(_metadata, "MIXED_ALGEBRA_SCHEMES", ENGLISH_ALGEBRA_SCHEMES))
 
 _MISSING = object()
 _MAIN_SCHEMES = (
