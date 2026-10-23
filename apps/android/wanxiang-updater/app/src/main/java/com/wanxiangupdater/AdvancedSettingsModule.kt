@@ -264,7 +264,8 @@ private fun advancedArrayItems(value: String): List<String> {
         (0 until array.length()).map { i ->
             val item = array.get(i)
             when (item) {
-                is JSONObject, is JSONArray -> item.toString(2)
+                is JSONObject -> item.toString(2)
+                is JSONArray -> item.toString(2)
                 else -> item.toString()
             }
         }
