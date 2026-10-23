@@ -28,6 +28,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.json.JSONArray
 import org.json.JSONObject
+import org.json.JSONTokener
 import java.io.File
 import java.util.Locale
 
@@ -125,13 +126,14 @@ private fun advancedRootFile(path: String): File = when {
     else -> File(path)
 }
 
-private fun copySafToStage(context: Context, root: DocumentFile, stage: File) {
+private fun copySafToStage(context: Context, root: DocumentFile, stage: File, dictionaryNames: Set<String> = emptySet()) {
     stage.mkdirs()
     root.listFiles().forEach { child ->
         val name = child.name ?: return@forEach
         val out = File(stage, name)
-        if (child.isDirectory) copySafToStage(context, child, out)
-        else if ((name.endsWith(".yaml", true) || name.endsWith(".yml", true)) && !name.endsWith(".dict.yaml", true)) {
+        if (child.isDirectory) copySafToStage(context, child, out, dictionaryNames)
+        else if ((name.endsWith(".yaml", true) || name.endsWith(".yml", true)) &&
+            (!name.endsWith(".dict.yaml", true) || name in dictionaryNames)) {
             context.contentResolver.openInputStream(child.uri)?.use { input -> out.outputStream().use { input.copyTo(it) } }
         }
     }
@@ -146,6 +148,63 @@ private fun copyStageFileToSaf(context: Context, root: DocumentFile, file: File,
     val output = context.contentResolver.openOutputStream(target.uri, "wt")
         ?: throw java.io.IOException("无法写入 SAF 文件：$name")
     output.use { out -> file.inputStream().use { it.copyTo(out) } }
+}
+
+/** SAF is not atomic. Snapshot only the committed file set and restore best-effort on failure. */
+private fun syncAdvancedStageToSaf(context: Context, saf: DocumentFile, stage: File, changed: JSONArray) {
+    val names = (0 until changed.length()).map { changed.getString(it) }.distinct()
+    require(names.all { it.isNotEmpty() && !it.contains('/') && !it.contains('\\') && it != "." && it != ".." }) {
+        "保存结果包含非法文件名"
+    }
+    val backups = File(stage, "_advanced_saf_rollback").apply { mkdirs() }
+    val existed = mutableSetOf<String>()
+    var backupsReady = false
+    try {
+        // All backups must succeed before any destination is modified.
+        names.forEach { name ->
+            val existing = saf.findFile(name)
+            if (existing != null) {
+                require(existing.isFile) { "SAF 路径不是文件：$name" }
+                existed.add(name)
+                val backup = File(backups, name)
+                val input = context.contentResolver.openInputStream(existing.uri)
+                    ?: throw java.io.IOException("无法备份 SAF 文件：$name")
+                input.use { stream -> backup.outputStream().use { stream.copyTo(it) } }
+            }
+        }
+        backupsReady = true
+        names.forEach { name ->
+            val file = File(stage, name)
+            if (file.isFile) copyStageFileToSaf(context, saf, file)
+            else {
+                val existing = saf.findFile(name)
+                if (existing != null && !existing.delete()) throw java.io.IOException("无法删除 SAF 补丁：$name")
+            }
+        }
+    } catch (original: Exception) {
+        val failures = mutableListOf<String>()
+        // Include the current item: an output stream can fail mid-file.
+        if (backupsReady) names.forEach { name ->
+            try {
+                val old = saf.findFile(name)
+                if (name in existed) {
+                    copyStageFileToSaf(context, saf, File(backups, name))
+                } else if (old != null && !old.delete()) {
+                    throw java.io.IOException("回滚时无法删除 $name")
+                }
+                Unit
+            } catch (rollback: Exception) { failures.add("$name: ${rollback.message}") }
+        }
+        if (failures.isNotEmpty()) throw java.io.IOException(
+            "SAF 写入失败且部分回滚失败：${original.message}；${failures.joinToString()}。请重新选择目录核对文件", original
+        )
+        throw java.io.IOException(
+            if (backupsReady) "SAF 写入失败，已恢复原始文件：${original.message}"
+            else "SAF 备份失败，尚未修改原文件：${original.message}", original
+        )
+    } finally {
+        backups.deleteRecursively()
+    }
 }
 
 private fun findSafRoot(context: Context, path: String): DocumentFile? =
@@ -196,6 +255,168 @@ private fun buildAdvancedCategories(files: List<AdvancedFile>): Map<String, List
     }
 }
 
+/** Kept as JSON internally: this preserves nested mappings, numeric and boolean YAML types. */
+private fun advancedArrayItems(value: String): List<String> {
+    val raw = value.trim()
+    if (raw.isEmpty()) return emptyList()
+    return runCatching {
+        val array = JSONArray(raw)
+        (0 until array.length()).map { i ->
+            val item = array.get(i)
+            when (item) {
+                is JSONObject, is JSONArray -> item.toString(2)
+                else -> item.toString()
+            }
+        }
+    }.getOrElse { value.lines().filter { it.isNotBlank() } }
+}
+
+private fun advancedJsonItem(value: String): Any {
+    val raw = value.trim()
+    if (raw.startsWith("{") || raw.startsWith("[")) {
+        return runCatching { JSONTokener(raw).nextValue() }.getOrElse { value }
+    }
+    return value
+}
+
+private fun advancedMapItems(value: String): List<Pair<String, String>> {
+    val raw = value.trim()
+    if (raw.isEmpty()) return emptyList()
+    return runCatching {
+        val obj = JSONObject(raw)
+        obj.keys().asSequence().map { k ->
+            val v = obj.get(k)
+            k to (if (v is JSONObject || v is JSONArray) v.toString() else v.toString())
+        }.toList()
+    }.getOrElse {
+        value.lines().mapNotNull { line ->
+            val ix = line.indexOf(':')
+            if (ix > 0) line.substring(0, ix).trim() to line.substring(ix + 1).trim() else null
+        }
+    }
+}
+
+private fun advancedTypedScalar(text: String): Any {
+    val t = text.trim()
+    if (t == "true") return true
+    if (t == "false") return false
+    if (t == "null") return JSONObject.NULL
+    if (t.matches(Regex("-?(0|[1-9][0-9]*)"))) return t.toLongOrNull() ?: text
+    if (t.matches(Regex("-?(0|[1-9][0-9]*)\\.[0-9]+"))) return t.toDoubleOrNull() ?: text
+    if (t.startsWith("[") || t.startsWith("{")) {
+        return runCatching { JSONTokener(t).nextValue() }.getOrElse { text }
+    }
+    return text
+}
+
+@Composable
+private fun AdvancedStructuredEditor(field: AdvancedField, value: String, onChange: (String) -> Unit) {
+    val listKind = field.type in setOf("dynamic_list", "dynamic_block_list", "algebra_patch",
+        "reverse_algebra", "english_algebra", "mixed_algebra", "list_text")
+    val blockKind = field.type == "dynamic_block_list"
+    val rowLabel = if (blockKind) "规则块" else "条目"
+    Column(Modifier.fillMaxWidth().padding(vertical = 7.dp)) {
+        Text(field.title, fontWeight = FontWeight.Bold)
+        if (field.desc.isNotBlank()) Text(field.desc, fontSize = 11.sp, color = Color.Gray)
+        if (listKind) {
+            val items = advancedArrayItems(value)
+            fun publish(next: List<String>) {
+                val json = JSONArray()
+                next.forEach { item -> json.put(advancedJsonItem(item)) }
+                onChange(json.toString())
+            }
+            items.forEachIndexed { index, item ->
+                Row(Modifier.fillMaxWidth().padding(top = 5.dp), verticalAlignment = Alignment.Top) {
+                    OutlinedTextField(
+                        value = item, onValueChange = { changed ->
+                            publish(items.toMutableList().also { it[index] = changed })
+                        }, label = { Text("$rowLabel ${index + 1}") },
+                        minLines = if (blockKind) 3 else 1, maxLines = 8,
+                        modifier = Modifier.weight(1f), textStyle = LocalTextStyle.current.copy(fontSize = 12.sp)
+                    )
+                    Column {
+                        TextButton(onClick = {
+                            if (index > 0) publish(items.toMutableList().also {
+                                val item0 = it[index - 1]; it[index - 1] = it[index]; it[index] = item0
+                            })
+                        }, enabled = index > 0) { Text("↑") }
+                        TextButton(onClick = {
+                            if (index < items.lastIndex) publish(items.toMutableList().also {
+                                val item0 = it[index + 1]; it[index + 1] = it[index]; it[index] = item0
+                            })
+                        }, enabled = index < items.lastIndex) { Text("↓") }
+                        TextButton(onClick = { publish(items.filterIndexed { i, _ -> i != index }) }) { Text("删除", fontSize = 11.sp) }
+                    }
+                }
+            }
+            TextButton(onClick = {
+                val initial = if (blockKind) {
+                    runCatching {
+                        val template = JSONObject(field.templateJson)
+                        JSONObject().apply {
+                            template.keys().forEach { k -> put(k, "") }
+                        }.toString()
+                    }.getOrDefault("{}")
+                } else ""
+                publish(items + initial)
+            }) { Text("＋ 添加$rowLabel") }
+            if (blockKind) Text("规则块内容使用 JSON 对象，可逐项添加、移动和删除。", fontSize = 10.sp, color = Color.Gray)
+        } else {
+            val entries = advancedMapItems(value)
+            fun publish(next: List<Pair<String, String>>) {
+                val keys = next.map { it.first }.filter { it.isNotBlank() }
+                if (keys.distinct().size != keys.size) return // Duplicate keys would silently overwrite data.
+                val json = JSONObject()
+                next.forEach { (key, item) -> if (key.isNotBlank()) json.put(key, advancedTypedScalar(item)) }
+                onChange(json.toString())
+            }
+            entries.forEachIndexed { index, entry ->
+                Row(Modifier.fillMaxWidth().padding(vertical = 3.dp), verticalAlignment = Alignment.Top) {
+                    OutlinedTextField(entry.first, onValueChange = { v ->
+                        publish(entries.toMutableList().also { it[index] = v to entry.second })
+                    }, label = { Text("键") }, modifier = Modifier.weight(0.8f), singleLine = true)
+                    Spacer(Modifier.width(5.dp))
+                    OutlinedTextField(entry.second, onValueChange = { v ->
+                        publish(entries.toMutableList().also { it[index] = entry.first to v })
+                    }, label = { Text("值（JSON 类型）") }, modifier = Modifier.weight(1.2f), maxLines = 5)
+                    Column {
+                        TextButton(onClick = { publish(entries.filterIndexed { i, _ -> i != index }) }) { Text("×") }
+                        TextButton(onClick = {
+                            if (index > 0) publish(entries.toMutableList().also {
+                                val previous = it[index - 1]; it[index - 1] = it[index]; it[index] = previous
+                            })
+                        }, enabled = index > 0) { Text("↑") }
+                        TextButton(onClick = {
+                            if (index < entries.lastIndex) publish(entries.toMutableList().also {
+                                val following = it[index + 1]; it[index + 1] = it[index]; it[index] = following
+                            })
+                        }, enabled = index < entries.lastIndex) { Text("↓") }
+                    }
+                }
+            }
+            TextButton(onClick = {
+                val existing = entries.map { it.first }.toSet()
+                val newKey = generateSequence(1) { it + 1 }
+                    .map { if (it == 1) "new_key" else "new_key_$it" }
+                    .first { it !in existing }
+                publish(entries + (newKey to ""))
+            }) { Text("＋ 添加键值") }
+            val preset = runCatching { JSONObject(field.presetKeysJson) }.getOrNull()
+            if (preset != null) {
+                val keys = preset.keys().asSequence().filter { k -> entries.none { it.first == k } }.toList()
+                if (keys.isNotEmpty()) {
+                    Text("可添加的预设键", fontSize = 11.sp, color = Color.Gray)
+                    Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                        keys.forEach { key ->
+                            AssistChip(onClick = { publish(entries + (key to "")) }, label = { Text(key, fontSize = 10.sp) })
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 class AdvancedSettingsMemory {
     val files = mutableStateOf<List<AdvancedFile>>(emptyList())
     val selectedFile = mutableStateOf<AdvancedFile?>(null)
@@ -237,11 +458,11 @@ fun AdvancedSettingsScreen(
     var expandedGroups by state.expandedGroups
     var loadedTarget by state.loadedTarget
 
-    fun stageRoot(): Pair<File, DocumentFile?> {
+    fun stageRoot(extraDictionaryNames: Set<String> = emptySet()): Pair<File, DocumentFile?> {
         val saf = findSafRoot(context, targetPath)
         if (saf == null) return advancedRootFile(targetPath) to null
         val stage = File(context.cacheDir, "wanxiang_advanced_stage").apply { deleteRecursively(); mkdirs() }
-        copySafToStage(context, saf, stage)
+        copySafToStage(context, saf, stage, extraDictionaryNames)
         return stage to saf
     }
 
@@ -539,6 +760,12 @@ fun AdvancedSettingsScreen(
                                     }
                                 }
                             }
+                        } else if (field.type in setOf("dynamic_list", "dynamic_block_list", "algebra_patch",
+                                "reverse_algebra", "english_algebra", "mixed_algebra", "list_text",
+                                "dynamic_map", "dynamic_kv_list")) {
+                            AdvancedStructuredEditor(field, current) { next ->
+                                values = values + (field.path to next)
+                            }
                         } else if (field.type == "bool") {
                             Row(Modifier.fillMaxWidth().padding(vertical = 5.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
                                 Column(Modifier.weight(1f)) { Text(field.title, fontWeight = FontWeight.Bold); if (field.desc.isNotBlank()) Text(field.desc, fontSize = 11.sp, color = Color.Gray) }
@@ -586,7 +813,16 @@ fun AdvancedSettingsScreen(
                                 message = "正在校验并保存…"
                                 runCatching {
                                     withContext(Dispatchers.IO) {
-                                        val (stage, saf) = stageRoot()
+                                        val requestedDictionaryNames = dirtyValues
+                                            .filterKeys { it in setOf("translator/dictionary", "phrase_dict", "abbrev_dict") }
+                                            .values.filter { it.replace("_", "").isNotEmpty() && it.all { ch -> ch == '_' || ch.isLetterOrDigit() } }
+                                            .map { "$it.dict.yaml" }.toSet()
+                                        val (stage, saf) = stageRoot(
+                                            requestedDictionaryNames + setOf(
+                                                "wanxiang.dict.yaml", "wanxiang_lite.dict.yaml",
+                                                "wanxiang_pro.dict.yaml", "custom_phrase.dict.yaml", "wanxiang_abbrev.dict.yaml"
+                                            )
+                                        )
                                         val result = if (showCommon) {
                                             AdvancedPythonBridge.saveCommon(context, stage, directMode, dirtyValues)
                                         } else {
@@ -594,20 +830,8 @@ fun AdvancedSettingsScreen(
                                             AdvancedPythonBridge.save(context, stage, file.name, selectedSection, directMode, dirtyValues)
                                         }
                                         if (saf != null) {
-                                            val resultJson = JSONObject(result)
-                                            val changed = JSONArray(resultJson.optString("changed", "[]"))
-                                            for (i in 0 until changed.length()) {
-                                                val name = changed.optString(i)
-                                                val stagedFile = File(stage, name)
-                                                if (stagedFile.isFile) {
-                                                    copyStageFileToSaf(context, saf, stagedFile)
-                                                } else {
-                                                    val existing = saf.findFile(name)
-                                                    if (existing != null && !existing.delete()) {
-                                                        throw java.io.IOException("无法从 SAF 目录删除已清空的补丁：$name")
-                                                    }
-                                                }
-                                            }
+                                            syncAdvancedStageToSaf(context, saf, stage,
+                                                JSONArray(JSONObject(result).optString("changed", "[]")))
                                         }
                                         result
                                     }

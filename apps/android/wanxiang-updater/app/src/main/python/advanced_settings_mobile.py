@@ -8,6 +8,9 @@ cross-file settings page and schema-list checkbox model.
 from __future__ import annotations
 import copy
 import json
+import os
+import re
+import tempfile
 from pathlib import Path
 from typing import Any, Mapping
 from ruamel.yaml import YAML
@@ -140,7 +143,7 @@ def _scheme_choices(root: Path, usage_path: str, current_name: str, docs=None, e
         if not (root / file_name).is_file():
             continue
         if file_name not in docs:
-            docs[file_name] = _load_light(file_name, root)
+            docs[file_name] = _load(file_name, root)[1]
         doc = docs[file_name]
         view = doc.schema if direct_mode else doc.effective
         label = str(engine.get_path(view, "schema/name", sid.title()))
@@ -321,11 +324,17 @@ def _coerce(node: Mapping[str, Any], value: Any, original: Any):
         if text.startswith(("[", "- ", "-\n", "{")):
             try:
                 parsed = _SAFE_YAML.load(text)
-                if isinstance(parsed, list): return parsed
-                if node_type == "dynamic_block_list" and isinstance(parsed, Mapping):
-                    return [dict(parsed)]
-            except Exception:
-                pass
+            except Exception as error:
+                raise ValueError(f"列表不是有效 YAML/JSON：{error}") from error
+            if isinstance(parsed, list):
+                if node_type == "dynamic_block_list" and any(not isinstance(x, Mapping) for x in parsed):
+                    raise ValueError("规则块的每个元素必须是映射对象")
+                return parsed
+            if node_type == "dynamic_block_list" and isinstance(parsed, Mapping):
+                return [dict(parsed)]
+            raise ValueError("该字段要求 YAML/JSON 列表")
+        if node_type == "dynamic_block_list":
+            raise ValueError("规则块需要 YAML/JSON 列表，每项必须是映射对象")
         return [x.strip() for x in text.splitlines() if x.strip()]
     if node_type == "dynamic_kv_list":
         if isinstance(value, dict): return value
@@ -484,7 +493,9 @@ def load_common_settings(root_path: str, direct_mode: bool = False) -> str:
     def get_doc(file_name):
         if not (root / file_name).is_file(): return None
         if file_name not in docs:
-            docs[file_name] = _load_light(file_name, root)
+            # The desktop common page reads the compiled Rime view. A literal
+            # merge loses __include / __patch values (notably key bindings).
+            docs[file_name] = _load(file_name, root)[1]
         return docs[file_name]
     def get(file_name, path, default=None):
         doc = get_doc(file_name)
@@ -521,8 +532,102 @@ def load_common_settings(root_path: str, direct_mode: bool = False) -> str:
     ]
     return json.dumps({"fields": fields, "primary": primary, "directMode": bool(direct_mode)}, ensure_ascii=False)
 
+def _replace_reverse_pattern_prefix(pattern: Any, old_key: str, new_key: str) -> str:
+    """Match desktop prefix replacement without corrupting the rest of a regex."""
+    pattern = str(pattern or "")
+    old_key = str(old_key or "")
+    replacement = re.escape(new_key)
+    if not pattern.startswith("^"):
+        return f"^{replacement}[A-Za-z;]*$"
+    escaped_old = re.escape(old_key)
+    for prefix in ("^" + escaped_old, "^" + old_key):
+        if old_key and pattern.startswith(prefix):
+            return "^" + replacement + pattern[len(prefix):]
+    if len(pattern) >= 2:
+        return "^" + replacement + pattern[2:]
+    return f"^{replacement}[A-Za-z;]*$"
+
+
 def _set_nested(engine, data, path, value):
     engine.set_path(data, path, value)
+
+
+def _stage_named_dictionary(root: Path, default_name: str, target_name: str, pending: dict):
+    """Match desktop's ensure_named_dictionary without parsing TSV as YAML.
+
+    All dictionary changes are prepared before touching any config file, so
+    a missing source or invalid existing dictionary cannot create broken refs.
+    """
+    if not target_name.replace("_", "").isalnum():
+        raise ValueError("词库名只能使用字母、数字、下划线")
+    if target_name == default_name:
+        return
+    src = _source_path(root, f"{default_name}.dict.yaml")
+    dst = _source_path(root, f"{target_name}.dict.yaml")
+    if not dst.exists() and not src.is_file():
+        raise FileNotFoundError(f"找不到默认词库：{src.name}")
+    if dst in pending:
+        return
+    original = dst.read_bytes() if dst.exists() else src.read_bytes()
+    text = original.decode("utf-8")
+    lines = text.splitlines(keepends=True)
+    header_end = next((i for i, line in enumerate(lines) if line.strip() == "..."), len(lines))
+    name_re = re.compile(r"^\s*name\s*:")
+    found = False
+    for i in range(header_end):
+        if name_re.match(lines[i]):
+            ending = "\r\n" if lines[i].endswith("\r\n") else "\n" if lines[i].endswith("\n") else ""
+            lines[i] = f"name: {target_name}{ending}"
+            found = True
+            break
+    if not found:
+        lines.insert(1 if lines and lines[0].strip() == "---" else 0, f"name: {target_name}\n")
+    result = "".join(lines).encode("utf-8")
+    if not dst.exists() or result != original:
+        pending[dst] = result
+
+
+def _commit_config_and_dictionaries(engine: RimeYamlEngine, configs: dict, dictionaries: dict):
+    """Commit one bounded set; restore YAML and dictionary bytes on failure.
+
+    Dictionary bodies are TSV and are never passed through RimeYamlEngine's
+    YAML parser. Each destination is same-directory fsynced temporary replace.
+    """
+    affected = list(configs) + list(dictionaries)
+    originals = {path: path.read_bytes() if path.exists() else None for path in affected}
+    temps = []
+    try:
+        # Publish dictionaries first: config references never point at a
+        # not-yet-created dictionary after a successful commit.
+        for path, raw in dictionaries.items():
+            fd, temp_path = tempfile.mkstemp(prefix=f".{path.name}.", suffix=".tmp", dir=str(path.parent))
+            temps.append(Path(temp_path))
+            with os.fdopen(fd, "wb") as out:
+                out.write(raw)
+                out.flush()
+                os.fsync(out.fileno())
+            os.replace(temp_path, path)
+        if configs:
+            engine.atomic_write_many(configs)
+    except Exception:
+        for path, raw in originals.items():
+            try:
+                if raw is None:
+                    path.unlink(missing_ok=True)
+                else:
+                    fd, temp_path = tempfile.mkstemp(prefix=f".{path.name}.", suffix=".restore", dir=str(path.parent))
+                    temps.append(Path(temp_path))
+                    with os.fdopen(fd, "wb") as out:
+                        out.write(raw)
+                        out.flush()
+                        os.fsync(out.fileno())
+                    os.replace(temp_path, path)
+            except Exception:
+                pass
+        raise
+    finally:
+        for path in temps:
+            path.unlink(missing_ok=True)
 
 
 def save_common_settings(root_path: str, direct_mode: bool, updates_json: str) -> str:
@@ -536,6 +641,7 @@ def save_common_settings(root_path: str, direct_mode: bool, updates_json: str) -
     docs = {}
     changes = {}
     originals = {}
+    pending_dicts = {}
 
     def get_doc(file_name):
         if file_name not in docs:
@@ -783,9 +889,12 @@ def save_common_settings(root_path: str, direct_mode: bool, updates_json: str) -
         current_name = engine.get_path(current_view(phrase_doc), "translator/dictionary", "custom_phrase") if phrase_doc else "custom_phrase"
         name = str(updates.get("phrase_dict", current_name)).strip()
         if not name or not name.replace("_", "").isalnum(): raise ValueError("自定义短语词库名只能包含字母、数字和下划线")
-        selected = set()
-        if "phrase_schemes" in updates:
-            selected = {str(x.get("schema")) for x in _coerce({"type":"scheme_checkboxes"}, updates["phrase_schemes"], [])}
+        selected = ({str(x.get("schema")) for x in _coerce({"type":"scheme_checkboxes"}, updates["phrase_schemes"], [])}
+                    if "phrase_schemes" in updates else {
+                        sid for sid, fn, _ in main_files if str(engine.get_path(current_view(get_doc(fn)), "custom_phrase/dictionary", "")) == str(current_name)
+                    })
+        if "phrase_dict" in updates:
+            _stage_named_dictionary(root, "custom_phrase", name, pending_dicts)
         if phrase_doc: update("wanxiang_phrase.schema.yaml", "translator/dictionary", name)
         for sid, fn, _ in main_files:
             if sid in selected: update(fn, "custom_phrase/dictionary", name)
@@ -795,9 +904,12 @@ def save_common_settings(root_path: str, direct_mode: bool, updates_json: str) -
         current_name = engine.get_path(current_view(abbrev_doc), "translator/dictionary", "wanxiang_abbrev") if abbrev_doc else "wanxiang_abbrev"
         name = str(updates.get("abbrev_dict", current_name)).strip()
         if not name or not name.replace("_", "").isalnum(): raise ValueError("简码词库名只能包含字母、数字和下划线")
-        selected = set()
-        if "abbrev_schemes" in updates:
-            selected = {str(x.get("schema")) for x in _coerce({"type":"scheme_checkboxes"}, updates["abbrev_schemes"], [])}
+        selected = ({str(x.get("schema")) for x in _coerce({"type":"scheme_checkboxes"}, updates["abbrev_schemes"], [])}
+                    if "abbrev_schemes" in updates else {
+                        sid for sid, fn, _ in main_files if str(engine.get_path(current_view(get_doc(fn)), "abbrev_phrase/dictionary", "")) == str(current_name)
+                    })
+        if "abbrev_dict" in updates:
+            _stage_named_dictionary(root, "wanxiang_abbrev", name, pending_dicts)
         if abbrev_doc: update("wanxiang_abbrev.schema.yaml", "translator/dictionary", name)
         for sid, fn, _ in main_files:
             if sid in selected: update(fn, "abbrev_phrase/dictionary", name)
@@ -823,6 +935,7 @@ def save_common_settings(root_path: str, direct_mode: bool, updates_json: str) -
         if not name or not name.replace("_", "").isalnum(): raise ValueError("词库名只能包含字母、数字和下划线")
         spec = next((x for x in main_files if x[1] == primary), None)
         if spec:
+            _stage_named_dictionary(root, spec[2], name, pending_dicts)
             update(primary, "translator/dictionary", name)
             if spec[0] == "pro":
                 update(primary, "user_dict_set/dictionary", name)
@@ -831,13 +944,20 @@ def save_common_settings(root_path: str, direct_mode: bool, updates_json: str) -
         if "wanxiang_lookup/key" in updates:
             key = str(updates["wanxiang_lookup/key"]).strip()
             if len(key) != 1 or key.isalnum(): raise ValueError("反查快捷键必须是单个非字母数字符号")
-            doc = get_doc(primary)
-            view = current_view(doc)
-            old = engine.get_path(view, "wanxiang_lookup/key", "`")
-            pattern = engine.get_path(view, "recognizer/patterns/wanxiang_reverse", "^`[A-Za-z;]*$")
-            update(primary, "wanxiang_lookup/key", key)
-            update(primary, "wanxiang_reverse/prefix", key)
-            update(primary, "recognizer/patterns/wanxiang_reverse", str(pattern).replace(str(old), key, 1))
+            for _, fn, _ in main_files:
+                doc = get_doc(fn)
+                view = current_view(doc)
+                old = str(engine.get_path(view, "wanxiang_lookup/key", "`"))
+                pattern = engine.get_path(view, "recognizer/patterns/wanxiang_reverse", "^`[A-Za-z;]*$")
+                update(fn, "wanxiang_lookup/key", key)
+                update(fn, "wanxiang_reverse/prefix", key)
+                update(fn, "recognizer/patterns/wanxiang_reverse", _replace_reverse_pattern_prefix(pattern, old, key))
+                alphabet = engine.get_path(view, "speller/alphabet", "")
+                if isinstance(alphabet, str) and alphabet:
+                    updated_alphabet = alphabet.replace(old, "") if old != key else alphabet
+                    if key not in updated_alphabet:
+                        updated_alphabet += key
+                    update(fn, "speller/alphabet", updated_alphabet)
         for path in ("super_tips/db_name", "super_tips/tips_key", "super_tips/disabled_types"):
             if path in updates:
                 val = _parse_list_text(updates[path], [], path) if path.endswith("disabled_types") else str(updates[path])
@@ -866,8 +986,9 @@ def save_common_settings(root_path: str, direct_mode: bool, updates_json: str) -
                 engine.validate_data(data)
                 write_changes[target] = data
                 changed.append(target.name)
-    if write_changes:
-        engine.atomic_write_many(write_changes)
+    if write_changes or pending_dicts:
+        _commit_config_and_dictionaries(engine, write_changes, pending_dicts)
+    changed.extend(path.name for path in pending_dicts)
     return json.dumps({"changed": sorted(set(changed)), "message":"保存成功" if changed else "没有变化"}, ensure_ascii=False)
 
 def get_common_value(root: Path, file_name: str, path: str, default: Any, direct_mode=False):
