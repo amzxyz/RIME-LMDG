@@ -125807,12 +125807,12 @@ sort: by_weight
 无尽	wú jìn	3511
 五金	wǔ jīn	2499
 捂紧	wǔ jǐn	753
+勿进	wù jìn	143
 五斤	wǔ jīn	135
 武进	wǔ jìn	108
 乌金	wū jīn	86
 五进	wǔ jìn	68
 勿近	wù jìn	54
-勿进	wù jìn	43
 武警	wǔ jǐng	1416
 五经	wǔ jīng	549
 物镜	wù jìng	527
@@ -151390,7 +151390,6 @@ sort: by_weight
 责备	zé bèi	2408
 则被	zé bèi	2235
 泽北	zé běi	785
-泽被	zé bèi	706
 泽陂	zé bēi	220
 责编	zé biān	725
 则不	zé bù	641
@@ -151431,6 +151430,7 @@ sort: by_weight
 责难	zé nàn	659
 则能	zé néng	1303
 择偶	zé ǒu	1378
+泽被	zé pī	706
 泽平	zé píng	41
 仄平	zè píng	39
 泽普	zé pǔ	25
@@ -158196,6 +158196,7 @@ sort: by_weight
 重罪	zhòng zuì	873
 重作	zhòng zuò	999
 中佐	zhōng zuǒ	949
+周版	zhōu bǎn	91
 皱瓣	zhòu bàn	62
 周报	zhōu bào	1994
 皱襞	zhòu bì	104
@@ -463920,6 +463921,7 @@ sort: by_weight
 内结构	nèi jié gòu	657
 内界膜	nèi jiè mó	100
 内接形	nèi jiē xíng	4
+内接圆	nèi jiē yuán	14
 内筋膜	nèi jīn mó	243
 内静脉	nèi jìng mài	612
 内镜室	nèi jìng shì	324
@@ -1205106,6 +1205108,8 @@ sort: by_weight
 仙人晒靴	xiān rén shài xuē	117
 县人社局	xiàn rén shè jú	770
 县人武部	xiàn rén wǔ bù	594
+闲人勿进	xián rén wù jìn	80
+闲人勿近	xián rén wù jìn	31
 仙人下凡	xiān rén xià fán	310
 仙人下棋	xiān rén xià qí	266
 限人限车	xiàn rén xiàn chē	4
@@ -1254992,6 +1254996,7 @@ sort: by_weight
 一条蚯蚓	yì tiáo qiū yǐn	410
 一条裙子	yì tiáo qún zi	778
 一条人命	yì tiáo rén mìng	765
+一条绳上	yì tiáo shéng shàng	129
 一条绳子	yì tiáo shéng zi	639
 一条手链	yì tiáo shǒu liàn	549
 一条水渠	yì tiáo shuǐ qú	423
@@ -1288761,13 +1288766,10 @@ sort: by_weight
 早作晚息	zǎo zuò wǎn xī	45
 早做准备	zǎo zuò zhǔn bèi	634
 早作准备	zǎo zuò zhǔn bèi	558
-泽被苍生	zé bèi cāng shēng	16
 责备孩子	zé bèi hái zi	626
-泽被后世	zé bèi hòu shì	19
+泽被后人	zé bèi hòu rén	12
 责备求全	zé bèi qiú quán	13
-泽被天下	zé bèi tiān xià	25
 责备贤者	zé bèi xián zhě	252
-泽被子孙	zé bèi zi sūn	3
 泽本嘉光	zé běn jiā guāng	279
 则痹不仁	zé bì bù rén	45
 择不处仁	zé bù chǔ rén	130
@@ -1288860,6 +1288862,10 @@ sort: by_weight
 择偶要求	zé ǒu yāo qiú	616
 泽畔行吟	zé pàn xíng yín	130
 泽佩德罗	zé pèi dé luó	4
+泽被苍生	zé pī cāng shēng	16
+泽被后世	zé pī hòu shì	19
+泽被天下	zé pī tiān xià	25
+泽被子孙	zé pī zǐ sūn	3
 仄起平收	zè qǐ píng shōu	16
 泽漆三斤	zé qī sān jīn	45
 择期手术	zé qī shǒu shù	544
@@ -1491258,6 +1491264,7 @@ sort: by_weight
 一体化直供业务	yì tǐ huà zhí gōng yè wù	10
 依替膦酸二钠片	yī tì lìn suān èr nà piàn	10
 依替米星注射液	yī tì mǐ xīng zhù shè yè	10
+一条绳上的蚂蚱	yì tiáo shéng shàng de mà zha	10
 以土砾凸者为丘	yǐ tǔ lì tū zhě wéi qiū	10
 以团结互助为荣	yǐ tuán jié hù zhù wéi róng	10
 依托度酸缓释片	yī tuō dù suān huǎn shì piàn	10
