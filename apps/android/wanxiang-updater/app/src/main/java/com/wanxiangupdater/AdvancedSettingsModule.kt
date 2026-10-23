@@ -44,7 +44,9 @@ data class AdvancedField(
     val choices: List<AdvancedChoice> = emptyList(),
     val actionButton: String = "",
     val templateJson: String = "",
-    val presetKeysJson: String = ""
+    val presetKeysJson: String = "",
+    val variant: String = "",
+    val editorConfigJson: String = "{}"
 )
 
 private object AdvancedPythonBridge {
@@ -80,7 +82,11 @@ private object AdvancedPythonBridge {
                     AdvancedChoice(c.optString("id"), c.optString("label"), c.optBoolean("checked", false))
                 }
             } ?: emptyList()
-            AdvancedField(row.optString("path"), row.optString("title"), row.optString("desc"), row.optString("type"), row.optString("value"), options, choices, row.optString("actionButton"), row.optString("template"), row.optString("presetKeys"))
+            AdvancedField(
+                row.optString("path"), row.optString("title"), row.optString("desc"), row.optString("type"),
+                row.optString("value"), options, choices, row.optString("actionButton"), row.optString("template"),
+                row.optString("presetKeys"), row.optString("variant"), row.optJSONObject("editorConfig")?.toString() ?: "{}"
+            )
         }
     }
     fun save(context: Context, root: File, file: String, section: String, direct: Boolean, values: Map<String, String>): String {
@@ -115,7 +121,11 @@ private object AdvancedPythonBridge {
                     AdvancedChoice(c.optString("id"), c.optString("label"), c.optBoolean("checked", false))
                 }
             } ?: emptyList()
-            AdvancedField(row.optString("path"), row.optString("title"), row.optString("desc"), row.optString("type"), row.optString("value"), options, choices, row.optString("actionButton"), row.optString("template"), row.optString("presetKeys"))
+            AdvancedField(
+                row.optString("path"), row.optString("title"), row.optString("desc"), row.optString("type"),
+                row.optString("value"), options, choices, row.optString("actionButton"), row.optString("template"),
+                row.optString("presetKeys"), row.optString("variant"), row.optJSONObject("editorConfig")?.toString() ?: "{}"
+            )
         }
     }
 }
@@ -312,8 +322,7 @@ private fun advancedTypedScalar(text: String): Any {
 
 @Composable
 private fun AdvancedStructuredEditor(field: AdvancedField, value: String, onChange: (String) -> Unit) {
-    val listKind = field.type in setOf("dynamic_list", "dynamic_block_list", "algebra_patch",
-        "reverse_algebra", "english_algebra", "mixed_algebra", "list_text")
+    val listKind = field.type in setOf("dynamic_list", "dynamic_block_list", "list_text")
     val blockKind = field.type == "dynamic_block_list"
     val rowLabel = if (blockKind) "规则块" else "条目"
     Column(Modifier.fillMaxWidth().padding(vertical = 7.dp)) {
@@ -415,6 +424,234 @@ private fun AdvancedStructuredEditor(field: AdvancedField, value: String, onChan
                 }
             }
         }
+    }
+}
+
+private fun advancedEditorConfig(field: AdvancedField): JSONObject =
+    runCatching { JSONObject(field.editorConfigJson) }.getOrElse { JSONObject() }
+
+private fun advancedJsonStrings(array: JSONArray?): List<String> =
+    array?.let { a -> (0 until a.length()).map { a.optString(it) } } ?: emptyList()
+
+private fun advancedDirectiveObject(value: String): JSONObject {
+    runCatching { JSONObject(value) }.getOrNull()?.let { return it }
+    val array = runCatching { JSONArray(value) }.getOrNull() ?: return JSONObject()
+    for (index in 0 until array.length()) {
+        val item = array.optJSONObject(index) ?: continue
+        if (item.has("__include") || item.has("__patch")) return item
+    }
+    return JSONObject()
+}
+
+private fun advancedDirectiveText(value: Any?): String = when (value) {
+    null, JSONObject.NULL -> ""
+    is JSONArray -> if (value.length() > 0) advancedDirectiveText(value.opt(0)) else ""
+    is JSONObject -> value.toString()
+    else -> value.toString()
+}
+
+@Composable
+private fun AdvancedDropdown(
+    label: String,
+    selected: String,
+    options: List<String>,
+    enabled: Boolean,
+    onSelected: (String) -> Unit
+) {
+    var expanded by remember(label, selected) { mutableStateOf(false) }
+    Column(Modifier.padding(vertical = 3.dp)) {
+        Text(label, fontSize = 12.sp, fontWeight = FontWeight.Medium)
+        Box {
+            OutlinedButton(onClick = { expanded = true }, enabled = enabled) {
+                Text(selected.ifBlank { "请选择" }, maxLines = 1)
+                Text("  ▾")
+            }
+            DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
+                options.forEach { option ->
+                    DropdownMenuItem(
+                        text = { Text(option) },
+                        onClick = {
+                            expanded = false
+                            onSelected(option)
+                        }
+                    )
+                }
+            }
+        }
+    }
+}
+
+/** Android equivalent of the desktop AlgebraPatchWidget. */
+@Composable
+private fun AdvancedAlgebraPatchEditor(
+    field: AdvancedField,
+    value: String,
+    directMode: Boolean,
+    onChange: (String) -> Unit
+) {
+    val config = advancedEditorConfig(field)
+    val schemes = advancedJsonStrings(config.optJSONArray("schemes"))
+    val auxiliaries = advancedJsonStrings(config.optJSONArray("aux"))
+    val tiquanSchemes = advancedJsonStrings(config.optJSONArray("tiquan")).toSet()
+    val fuzzyArray = config.optJSONArray("fuzzy")
+    val fuzzy = (0 until (fuzzyArray?.length() ?: 0)).mapNotNull { index ->
+        fuzzyArray?.optJSONObject(index)?.let { it.optString("label") to it.optString("path") }
+    }
+    val items = advancedArrayItems(value).map { it.trim() }.filter { it.isNotEmpty() }
+    val schemeItems = items.filter { item ->
+        item.startsWith("wanxiang_algebra:/") && item.substringAfterLast('/') in schemes
+    }
+    val selectedScheme = schemeItems.lastOrNull()?.substringAfterLast('/') ?: schemes.firstOrNull().orEmpty()
+    val selectedAux = items.lastOrNull { item ->
+        item.startsWith("wanxiang_algebra:/pro/") && item.substringAfterLast('/') in auxiliaries
+    }?.substringAfterLast('/') ?: auxiliaries.firstOrNull().orEmpty()
+    val tiquanTokens = tiquanSchemes.map { "${it}提权"}.toSet()
+    val hasTiquan = items.any { item ->
+        item.startsWith("wanxiang_algebra:/") && item.substringAfterLast('/') in tiquanTokens
+    }
+    val selectedTiquan = hasTiquan && (directMode || selectedScheme in tiquanSchemes)
+    val legacyFuzzy = "wanxiang_algebra:/模糊音" in items
+    val selectedFuzzy = fuzzy.filter { (_, path) -> legacyFuzzy || path in items }.map { it.second }.toSet()
+    fun isManagedItem(item: String): Boolean {
+        val last = item.substringAfterLast('/')
+        return (item.startsWith("wanxiang_algebra:/") && last in schemes) ||
+            (item.startsWith("wanxiang_algebra:/pro/") && last in auxiliaries) ||
+            (item.startsWith("wanxiang_algebra:/") && last in tiquanTokens) ||
+            item == "wanxiang_algebra:/模糊音" || fuzzy.any { it.second == item }
+    }
+    val extraText = items.filterNot(::isManagedItem).joinToString("\n")
+
+    fun publish(
+        scheme: String = selectedScheme,
+        auxiliary: String = selectedAux,
+        tiquan: Boolean = selectedTiquan,
+        fuzzyPaths: Set<String> = selectedFuzzy,
+        extras: String = extraText
+    ) {
+        val next = mutableListOf<String>()
+        if (scheme.isNotBlank()) next += "wanxiang_algebra:/${field.variant.ifBlank { "base" }}/$scheme"
+        if (field.variant == "pro" && auxiliary.isNotBlank()) next += "wanxiang_algebra:/pro/$auxiliary"
+        if (tiquan && scheme in tiquanSchemes) next += "wanxiang_algebra:/${scheme}提权"
+        fuzzy.forEach { (_, path) -> if (path in fuzzyPaths) next += path }
+        extras.lineSequence().map { it.trim() }.filter { it.isNotEmpty() }.forEach { next += it }
+        onChange(JSONArray().apply { next.forEach { put(it) } }.toString())
+    }
+
+    Column(Modifier.fillMaxWidth().padding(vertical = 7.dp)) {
+        Text(field.title, fontWeight = FontWeight.Bold)
+        if (field.desc.isNotBlank()) Text(field.desc, fontSize = 11.sp, color = Color.Gray)
+        if (directMode) Text("⚠️ 直写模式下与桌面版一致：拼写挂载项只读，请切换补丁模式编辑。", color = Color(0xFFB45309), fontSize = 11.sp)
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Box(Modifier.weight(1f)) {
+                AdvancedDropdown("拼写方案", selectedScheme, schemes, !directMode) { next ->
+                    publish(scheme = next, tiquan = selectedTiquan && next in tiquanSchemes)
+                }
+            }
+            if (field.variant == "pro") {
+                Box(Modifier.weight(1f)) {
+                    AdvancedDropdown("辅助模式", selectedAux, auxiliaries, !directMode) { publish(auxiliary = it) }
+                }
+            }
+        }
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Checkbox(
+                checked = selectedTiquan,
+                enabled = !directMode && selectedScheme in tiquanSchemes,
+                onCheckedChange = { publish(tiquan = it) }
+            )
+            Text("🚀 四码唯一字提权（限自然码 / 小鹤双拼）", fontSize = 12.sp)
+        }
+        Text("☁️ 模糊音", fontWeight = FontWeight.Medium, fontSize = 12.sp, modifier = Modifier.padding(top = 4.dp))
+        fuzzy.chunked(2).forEach { rowItems ->
+            Row(Modifier.fillMaxWidth()) {
+                rowItems.forEach { (label, path) ->
+                    Row(Modifier.weight(1f), verticalAlignment = Alignment.CenterVertically) {
+                        Checkbox(
+                            checked = path in selectedFuzzy,
+                            enabled = !directMode,
+                            onCheckedChange = { checked ->
+                                val next = selectedFuzzy.toMutableSet().apply { if (checked) add(path) else remove(path) }
+                                publish(fuzzyPaths = next)
+                            }
+                        )
+                        Text(label, fontSize = 11.sp)
+                    }
+                }
+            }
+        }
+        OutlinedTextField(
+            value = extraText,
+            onValueChange = { publish(extras = it) },
+            readOnly = directMode,
+            label = { Text("附加补丁（每行一个挂载路径）") },
+            supportingText = { Text("未知扩展会保留；保存时按 Python 元数据中的槽位规则排序。", fontSize = 10.sp) },
+            modifier = Modifier.fillMaxWidth().padding(top = 4.dp),
+            minLines = 2,
+            textStyle = LocalTextStyle.current.copy(fontSize = 12.sp)
+        )
+    }
+}
+
+@Composable
+private fun AdvancedReverseAlgebraEditor(
+    field: AdvancedField,
+    value: String,
+    directMode: Boolean,
+    onChange: (String) -> Unit
+) {
+    val config = advancedEditorConfig(field)
+    val schemes = advancedJsonStrings(config.optJSONArray("pinyinSchemes"))
+    val strokeArray = config.optJSONArray("strokeSchemes")
+    val strokeIds = (0 until (strokeArray?.length() ?: 0)).mapNotNull { strokeArray?.optJSONObject(it)?.optString("id") }
+    val strokeLabels = (0 until (strokeArray?.length() ?: 0)).mapNotNull { strokeArray?.optJSONObject(it)?.optString("label") }
+    val obj = advancedDirectiveObject(value)
+    val include = advancedDirectiveText(obj.opt("__include"))
+    val patch = advancedDirectiveText(obj.opt("__patch"))
+    val scheme = include.substringAfterLast('/').takeIf { it in schemes } ?: "自然码"
+    val stroke = patch.substringAfterLast('/').takeIf { it in strokeIds } ?: strokeIds.firstOrNull().orEmpty()
+    fun publish(nextScheme: String = scheme, nextStroke: String = stroke) {
+        onChange(JSONObject().put("__include", "wanxiang_algebra:/reverse/$nextScheme")
+            .put("__patch", "wanxiang_algebra:/reverse/$nextStroke").toString())
+    }
+    Column(Modifier.fillMaxWidth().padding(vertical = 7.dp)) {
+        Text(field.title, fontWeight = FontWeight.Bold)
+        if (field.desc.isNotBlank()) Text(field.desc, fontSize = 11.sp, color = Color.Gray)
+        if (directMode) Text("⚠️ 直写模式下与桌面版一致：反查挂载项只读。", color = Color(0xFFB45309), fontSize = 11.sp)
+        AdvancedDropdown("拼音解析方案", scheme, schemes, !directMode) { publish(nextScheme = it) }
+        AdvancedDropdown("笔画挂接方案", strokeLabels.getOrNull(strokeIds.indexOf(stroke)) ?: stroke, strokeLabels, !directMode) { label ->
+            val index = strokeLabels.indexOf(label)
+            publish(nextStroke = strokeIds.getOrNull(index) ?: stroke)
+        }
+    }
+}
+
+@Composable
+private fun AdvancedMappedAlgebraEditor(
+    field: AdvancedField,
+    value: String,
+    directMode: Boolean,
+    mixed: Boolean,
+    onChange: (String) -> Unit
+) {
+    val config = advancedEditorConfig(field)
+    val schemes = advancedJsonStrings(config.optJSONArray("schemes"))
+    val obj = advancedDirectiveObject(value)
+    val patch = advancedDirectiveText(obj.opt("__patch"))
+    val defaultScheme = if (mixed) "全拼" else "自然码"
+    val selected = patch.substringAfterLast('/').takeIf { it in schemes } ?: defaultScheme
+    val prefix = if (mixed) "mixed" else "english"
+    fun publish(scheme: String) {
+        onChange(JSONObject()
+            .put("__include", "wanxiang_algebra:/$prefix/混合派生")
+            .put("__patch", "wanxiang_algebra:/$prefix/$scheme")
+            .toString())
+    }
+    Column(Modifier.fillMaxWidth().padding(vertical = 7.dp)) {
+        Text(field.title, fontWeight = FontWeight.Bold)
+        if (field.desc.isNotBlank()) Text(field.desc, fontSize = 11.sp, color = Color.Gray)
+        if (directMode) Text("⚠️ 直写模式下与桌面版一致：核心挂载项只读。", color = Color(0xFFB45309), fontSize = 11.sp)
+        Text("基础规则：混合派生（自动强制挂载）", fontSize = 12.sp, color = Color.Gray, modifier = Modifier.padding(top = 4.dp))
+        AdvancedDropdown(if (mixed) "混合按键映射" else "英文按键映射", selected, schemes, !directMode) { publish(it) }
     }
 }
 
@@ -761,8 +998,19 @@ fun AdvancedSettingsScreen(
                                     }
                                 }
                             }
-                        } else if (field.type in setOf("dynamic_list", "dynamic_block_list", "algebra_patch",
-                                "reverse_algebra", "english_algebra", "mixed_algebra", "list_text",
+                        } else if (field.type == "algebra_patch") {
+                            AdvancedAlgebraPatchEditor(field, current, directMode) { next ->
+                                values = values + (field.path to next)
+                            }
+                        } else if (field.type == "reverse_algebra") {
+                            AdvancedReverseAlgebraEditor(field, current, directMode) { next ->
+                                values = values + (field.path to next)
+                            }
+                        } else if (field.type == "english_algebra" || field.type == "mixed_algebra") {
+                            AdvancedMappedAlgebraEditor(field, current, directMode, field.type == "mixed_algebra") { next ->
+                                values = values + (field.path to next)
+                            }
+                        } else if (field.type in setOf("dynamic_list", "dynamic_block_list", "list_text",
                                 "dynamic_map", "dynamic_kv_list")) {
                             AdvancedStructuredEditor(field, current) { next ->
                                 values = values + (field.path to next)

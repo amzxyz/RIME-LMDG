@@ -15,7 +15,20 @@ from pathlib import Path
 from typing import Any, Mapping
 from ruamel.yaml import YAML
 from advanced_settings.core import RimeYamlEngine
-from advanced_settings.metadata import FILE_INDEX_META, SCHEMA_META_CONFIG, sort_algebra_patch_items
+from advanced_settings.metadata import (
+    ALGEBRA_AUX_NAMES,
+    ALGEBRA_FUZZY_NAMES,
+    ALGEBRA_SCHEME_NAMES,
+    ALGEBRA_TIQUAN_SCHEMES,
+    ALGEBRA_VARIANT_BY_FILE,
+    ENGLISH_ALGEBRA_SCHEMES,
+    FILE_INDEX_META,
+    MIXED_ALGEBRA_SCHEMES,
+    REVERSE_PINYIN_SCHEMES,
+    REVERSE_STROKE_SCHEMES,
+    SCHEMA_META_CONFIG,
+    sort_algebra_patch_items,
+)
 
 _MISSING = object()
 _MAIN_SCHEMES = (
@@ -88,15 +101,86 @@ def _custom_path(root: Path, file_name: str) -> Path:
     return root / (file_name[:-len(".yaml")] + ".custom.yaml")
 
 
-def _nodes_for(file_name: str):
+def _has_managed_custom(file_name: str) -> bool:
+    return file_name == "default.yaml" or file_name.endswith(".schema.yaml")
+
+
+def _editor_config(node_type: str) -> dict:
+    """Options for desktop's dedicated algebra editors, shared with Android."""
+    if node_type == "algebra_patch":
+        return {
+            "schemes": list(ALGEBRA_SCHEME_NAMES),
+            "aux": list(ALGEBRA_AUX_NAMES),
+            "tiquan": list(ALGEBRA_TIQUAN_SCHEMES),
+            "fuzzy": [{"label": label, "path": path} for label, path in ALGEBRA_FUZZY_NAMES],
+        }
+    if node_type == "reverse_algebra":
+        return {
+            "pinyinSchemes": list(REVERSE_PINYIN_SCHEMES),
+            "strokeSchemes": [{"id": key, "label": label} for key, label in REVERSE_STROKE_SCHEMES],
+        }
+    if node_type == "english_algebra":
+        return {"schemes": list(ENGLISH_ALGEBRA_SCHEMES)}
+    if node_type == "mixed_algebra":
+        return {"schemes": list(MIXED_ALGEBRA_SCHEMES)}
+    return {}
+
+
+def _nodes_for(file_name: str, schema_data: Any = None, effective_data: Any = None, direct_mode: bool = False):
+    """Resolve visible fields using the same matching rules as the desktop UI.
+
+    Explicit _match_file(s) entries are always available for that file. Metadata
+    without an explicit matcher (engine, translator, key_binder, etc.) is shown
+    only when its root node exists in the source or literal-patched tree, exactly
+    like AdvancedSettingsMixin. wanxiang_algebra.yaml has its own version/module
+    hierarchy and therefore needs generated fields instead of schema metadata.
+    """
     result = []
+    if Path(file_name).name.lower() == "wanxiang_algebra.yaml":
+        if not isinstance(schema_data, Mapping):
+            return result
+        for version, modules in schema_data.items():
+            if not isinstance(modules, Mapping):
+                continue
+            section = f"algebra::{version}"
+            for module, rules in modules.items():
+                simple_list = isinstance(rules, list) and all(isinstance(item, str) for item in rules)
+                node_type = "dynamic_list" if simple_list else "raw_yaml"
+                count_desc = f"当前 {len(rules)} 条规则；按列表顺序执行。" if isinstance(rules, list) else "该模块为 YAML 结构，保存时保留其列表/映射类型。"
+                result.append({
+                    "section": section,
+                    "sectionTitle": f"📁 {version}",
+                    "sectionDesc": "拼写运算规则版本；选择版本后逐模块编辑。",
+                    "path": f"{version}/{module}",
+                    "title": f"📝 {module}",
+                    "desc": count_desc,
+                    "type": node_type,
+                    "baseline": "source_effective",
+                    "options": [],
+                    "template": None,
+                    "presetKeys": None,
+                    "actionButton": "",
+                    "variant": "",
+                    "editorConfig": {},
+                })
+        return result
+
     for key, meta in SCHEMA_META_CONFIG.items():
-        if not _match(meta, file_name):
-            continue
-        root_key = str(meta.get("_root_key", "")).strip("/")
+        explicit_match = bool(meta.get("_match_file") or meta.get("_match_files"))
+        if explicit_match:
+            if not _match(meta, file_name):
+                continue
+        else:
+            root_key = str(meta.get("_root_key", key)).strip("/")
+            in_schema = isinstance(schema_data, Mapping) and root_key in schema_data
+            in_effective = not direct_mode and isinstance(effective_data, Mapping) and root_key in effective_data
+            if not (in_schema or in_effective):
+                continue
+        root_key = str(meta.get("_root_key", key)).strip("/")
         for path, node in (meta.get("nodes") or {}).items():
             child = "" if str(path).strip("/") == "__self__" else str(path).strip("/")
             full = "/".join(x for x in (root_key, child) if x)
+            node_type = str(node.get("type", "str"))
             result.append({
                 "section": key,
                 "sectionTitle": str(meta.get("_title", key)),
@@ -104,12 +188,14 @@ def _nodes_for(file_name: str):
                 "path": full,
                 "title": str(node.get("title", path)),
                 "desc": str(node.get("desc", "")),
-                "type": str(node.get("type", "str")),
+                "type": node_type,
                 "baseline": str(node.get("baseline", "effective")),
                 "options": _json_value(node.get("options", node.get("choices", []))),
                 "template": _json_value(node.get("template")),
                 "presetKeys": _json_value(node.get("preset_keys")),
                 "actionButton": str(node.get("action_btn", "")),
+                "variant": ALGEBRA_VARIANT_BY_FILE.get(Path(file_name).name, ""),
+                "editorConfig": _editor_config(node_type),
             })
     return result
 
@@ -172,18 +258,44 @@ def _binding_state(bindings):
 def scan_sections(root_path: str) -> str:
     root = Path(root_path).expanduser().resolve()
     sections = []
+    engine = RimeYamlEngine()
     for group, files in FILE_INDEX_META.items():
         for item in files:
             name = str(item.get("file", ""))
-            if not (root / name).is_file():
+            source_path = root / name
+            if not source_path.is_file():
                 continue
+            try:
+                custom_path = _custom_path(root, name) if _has_managed_custom(name) else None
+                document = engine.load_pair(
+                    str(source_path),
+                    str(custom_path) if custom_path is not None else "",
+                    reuse_compile_session=True,
+                )
+                nodes = _nodes_for(name, document.schema, document.effective)
+            except Exception:
+                # Keep a broken-but-registered file visible; the editor will
+                # report the actual parse/compile error when opened.
+                try:
+                    schema = engine.load_file(str(source_path), default={})
+                    custom_path = _custom_path(root, name) if _has_managed_custom(name) else None
+                    custom = engine.load_file(str(custom_path), default={}) if custom_path and custom_path.is_file() else {}
+                    patch = custom.get("patch", {}) if isinstance(custom, Mapping) else {}
+                    effective = engine.apply_patch(schema, patch if isinstance(patch, Mapping) else {})
+                    nodes = _nodes_for(name, schema, effective)
+                except Exception:
+                    nodes = _nodes_for(name, {}, {})
+            seen_sections = {}
+            for node in nodes:
+                identity = (node["section"], node["sectionTitle"])
+                seen_sections.setdefault(identity, node["sectionDesc"])
             sections.append({
                 "group": str(group),
                 "file": name,
                 "name": str(item.get("name", name)),
                 "sections": [
-                    {"key": n["section"], "title": n["sectionTitle"], "desc": n["sectionDesc"]}
-                    for n in _nodes_for(name)
+                    {"key": key, "title": title, "desc": desc}
+                    for (key, title), desc in seen_sections.items()
                 ],
             })
     return json.dumps(sections, ensure_ascii=False)
@@ -191,11 +303,11 @@ def scan_sections(root_path: str) -> str:
 
 def _load(file_name: str, root: Path):
     schema = _source_path(root, file_name)
-    custom = _custom_path(root, file_name)
+    custom = _custom_path(root, file_name) if _has_managed_custom(file_name) else None
     engine = RimeYamlEngine()
     # Keep the derived custom path even before the file exists; save operations
     # must be able to create a first-time *.custom.yaml patch file.
-    doc = engine.load_pair(str(schema), str(custom))
+    doc = engine.load_pair(str(schema), str(custom) if custom is not None else "")
     return engine, doc
 
 
@@ -244,7 +356,7 @@ def load_form(root_path: str, file_name: str, section: str = "", direct_mode: bo
     # Files without a corresponding Rime custom file are always edited directly.
     direct_mode = bool(direct_mode or (file_name != "default.yaml" and not file_name.endswith(".schema.yaml")))
     rows = []
-    for node in _nodes_for(file_name):
+    for node in _nodes_for(file_name, doc.schema, doc.effective, direct_mode):
         if section and node["section"] != section:
             continue
         if direct_mode:
@@ -256,6 +368,7 @@ def load_form(root_path: str, file_name: str, section: str = "", direct_mode: bo
         item["value"] = _show_value(value, node["type"])
         item["rawValue"] = _json_value(value)
         item["valueShape"] = "list" if isinstance(value, list) else "dict" if isinstance(value, Mapping) else "scalar"
+        item["editorConfig"] = _json_value(node.get("editorConfig", {}))
         if node["type"] == "schema_checkboxes":
             item["choices"] = _schema_choices(root, value)
         rows.append(item)
@@ -316,7 +429,29 @@ def _coerce(node: Mapping[str, Any], value: Any, original: Any):
         return normalized
     if node_type == "list_text":
         return _parse_list_text(value, original, str(node.get("path", "")).split("/")[-1])
-    if node_type in ("dynamic_list", "algebra_patch", "dynamic_block_list", "reverse_algebra", "english_algebra", "mixed_algebra"):
+    if node_type in ("reverse_algebra", "english_algebra", "mixed_algebra"):
+        # Desktop's dedicated algebra widgets emit a mapping containing the
+        # literal __include/__patch compiler directives.  Treating these three
+        # fields as generic lists corrupted the YAML shape on Android.
+        if isinstance(value, Mapping):
+            return dict(value)
+        text = str(value or "").strip()
+        if not text:
+            return {}
+        try:
+            parsed = _SAFE_YAML.load(text)
+        except Exception as error:
+            raise ValueError(f"拼写挂载项不是有效 YAML/JSON：{error}") from error
+        if isinstance(parsed, Mapping):
+            return dict(parsed)
+        # Keep reading older serialized forms, but normalize them to the same
+        # mapping shape produced by the desktop editor whenever possible.
+        if isinstance(parsed, list):
+            mapping = next((x for x in parsed if isinstance(x, Mapping) and ("__include" in x or "__patch" in x)), None)
+            if mapping is not None:
+                return dict(mapping)
+        raise ValueError("该字段需要包含 __include / __patch 的 YAML/JSON 映射")
+    if node_type in ("dynamic_list", "algebra_patch", "dynamic_block_list"):
         if isinstance(value, list): return value
         text = str(value or "").strip()
         if not text: return []
@@ -400,7 +535,10 @@ def save_form(root_path: str, file_name: str, section: str, direct_mode: bool, u
     updates = json.loads(updates_json or "{}")
     engine, doc = _load(file_name, root)
     direct_mode = bool(direct_mode or (file_name != "default.yaml" and not file_name.endswith(".schema.yaml")))
-    nodes = {n["path"]: n for n in _nodes_for(file_name) if not section or n["section"] == section}
+    nodes = {
+        n["path"]: n for n in _nodes_for(file_name, doc.schema, doc.effective, direct_mode)
+        if not section or n["section"] == section
+    }
     target = Path(doc.schema_path if direct_mode else doc.custom_path).resolve()
 
     if direct_mode:

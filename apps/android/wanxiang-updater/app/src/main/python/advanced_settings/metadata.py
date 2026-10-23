@@ -28,6 +28,35 @@ ALGEBRA_SCHEME_NAMES = (
 ALGEBRA_AUX_NAMES = ("直接辅助", "间接辅助")
 ALGEBRA_TIQUAN_SCHEMES = ("自然码", "小鹤双拼")
 
+# These option sets are consumed by both the desktop widgets and the Android
+# metadata bridge.  Keeping them here prevents the two frontends from drifting
+# apart when an algebra preset is added or renamed.
+ALGEBRA_FUZZY_NAMES = (
+    ("n / l", "wanxiang_algebra:/模糊音_nl"),
+    ("r / y", "wanxiang_algebra:/模糊音_ry"),
+    ("h / f", "wanxiang_algebra:/模糊音_hf"),
+    ("r / l", "wanxiang_algebra:/模糊音_rl"),
+    ("k / g", "wanxiang_algebra:/模糊音_kg"),
+    ("en / eng", "wanxiang_algebra:/模糊音_en_eng"),
+    ("in / ing", "wanxiang_algebra:/模糊音_in_ing"),
+    ("c / ch", "wanxiang_algebra:/模糊音_c_ch"),
+    ("z / zh", "wanxiang_algebra:/模糊音_z_zh"),
+    ("s / sh", "wanxiang_algebra:/模糊音_s_sh"),
+)
+
+REVERSE_PINYIN_SCHEMES = (
+    "全拼", "自然码", "小鹤双拼", "微软双拼", "搜狗双拼", "智能ABC", "紫光双拼", "拼音加加",
+)
+REVERSE_STROKE_SCHEMES = (
+    ("hspzn", "hspzn (横竖撇捺折默认)"),
+    ("hupvd", "hupvd (双拼专用)"),
+    ("hslzy", "hslzy (乱序17)"),
+)
+ENGLISH_ALGEBRA_SCHEMES = (
+    "全拼", "自然码", "小鹤双拼", "微软双拼", "搜狗双拼", "智能ABC", "紫光双拼", "拼音加加", "自然龙", "汉心龙",
+)
+MIXED_ALGEBRA_SCHEMES = ENGLISH_ALGEBRA_SCHEMES
+
 # schema 文件 -> wanxiang_algebra.yaml 中的方案命名空间。
 ALGEBRA_VARIANT_BY_FILE = {
     "wanxiang.schema.yaml": "base",
