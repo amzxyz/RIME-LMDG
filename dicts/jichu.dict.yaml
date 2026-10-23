@@ -15460,7 +15460,6 @@ sort: by_weight
 崇信	chóng xìn	430
 宠信	chǒng xìn	344
 宠幸	chǒng xìng	835
-种姓	chóng xìng	753
 重行	chóng xíng	752
 重修	chóng xiū	2842
 重续	chóng xù	41
@@ -35789,7 +35788,7 @@ sort: by_weight
 甘愿	gān yuàn	2829
 干员	gàn yuán	2392
 柑园	gān yuán	508
-干云	gàn yún	666
+干云	gān yún	666
 干晕	gàn yūn	62
 赶在	gǎn zài	2926
 敢在	gǎn zài	1256
@@ -56539,7 +56538,7 @@ sort: by_weight
 胶佬	jiāo lǎo	96
 叫了	jiào le	9976
 交了	jiāo le	3808
-教了	jiào le	3482
+教了	jiāo le	3482
 焦了	jiāo le	348
 浇了	jiāo le	73
 焦雷	jiāo léi	6
@@ -77495,6 +77494,7 @@ sort: by_weight
 美化	měi huà	7611
 梅花	méi huā	4182
 没话	méi huà	524
+没画	méi huà	383
 没花	méi huā	376
 美华	měi huá	285
 煤化	méi huà	228
@@ -81715,7 +81715,7 @@ sort: by_weight
 母族	mǔ zú	667
 木作	mù zuò	741
 嗯哈	ń hā	495
-嗯呢	ń ne	103
+嗯呢	ǹ ne	103
 哪啊	nǎ a	53
 那把	nà bǎ	3193
 拿吧	ná ba	345
@@ -92825,7 +92825,7 @@ sort: by_weight
 切屏	qiē píng	298
 切破	qiē pò	13
 切枪	qiē qiāng	251
-切切	qiē qiē	386
+切切	qiè qiè	386
 怯怯	qiè qiè	109
 窃窃	qiè qiè	87
 切球	qiē qiú	657
@@ -95009,7 +95009,6 @@ sort: by_weight
 去看	qù kàn	48868
 去考	qù kǎo	1516
 去壳	qù ké	1457
-躯壳	qū ké	1353
 渠口	qú kǒu	522
 曲库	qǔ kù	2484
 去哭	qù kū	106
@@ -95104,6 +95103,7 @@ sort: by_weight
 去抢	qù qiǎng	2569
 趋强	qū qiáng	630
 取巧	qǔ qiǎo	1457
+躯壳	qū qiào	1353
 曲桥	qǔ qiáo	697
 去切	qù qiē	135
 娶亲	qǔ qīn	223
@@ -98754,6 +98754,7 @@ sort: by_weight
 瑞丽	ruì lì	1812
 锐利	ruì lì	408
 瑞利	ruì lì	326
+睿励	ruì lì	182
 瑞联	ruì lián	657
 瑞林	ruì lín	88
 瑞麟	ruì lín	84
@@ -157990,6 +157991,7 @@ sort: by_weight
 中型	zhōng xíng	4499
 重型	zhòng xíng	3516
 中兴	zhōng xīng	3218
+种姓	zhǒng xìng	753
 钟形	zhōng xíng	292
 众星	zhòng xīng	248
 重刑	zhòng xíng	163
@@ -325052,7 +325054,7 @@ sort: by_weight
 海椒梗	hǎi jiāo gěng	45
 海交馆	hǎi jiāo guǎn	243
 海交会	hǎi jiāo huì	356
-还教了	hái jiào le	896
+还教了	hái jiāo le	896
 还叫了	hái jiào le	547
 还交了	hái jiāo le	348
 还浇了	hái jiāo le	269
@@ -384612,7 +384614,7 @@ sort: by_weight
 叫老师	jiào lǎo shī	675
 焦老师	jiāo lǎo shī	331
 交了吧	jiāo le ba	454
-教了吧	jiào le ba	369
+教了吧	jiāo le ba	369
 脚了吧	jiǎo le ba	211
 焦了吧	jiāo le ba	132
 交了点	jiāo le diǎn	324
@@ -405855,7 +405857,6 @@ sort: by_weight
 康纳德	kāng nà dé	0
 康纳尔	kāng nà ěr	66
 康耐登	kāng nài dēng	13
-康乃尔	kāng nǎi ěr	1887
 康奈尔	kāng nài ěr	810
 康奈利	kāng nài lì	41
 康耐视	kāng nài shì	13
@@ -417407,7 +417408,7 @@ sort: by_weight
 来交大	lái jiāo dà	464
 来交了	lái jiāo le	698
 来叫了	lái jiào le	464
-来教了	lái jiào le	263
+来教了	lái jiāo le	263
 来交流	lái jiāo liú	52
 来交谈	lái jiāo tán	486
 来胶州	lái jiāo zhōu	266
@@ -471710,7 +471711,7 @@ sort: by_weight
 你交接	nǐ jiāo jiē	328
 你叫来	nǐ jiào lái	436
 你叫了	nǐ jiào le	652
-你教了	nǐ jiào le	452
+你教了	nǐ jiāo le	452
 你交了	nǐ jiāo le	276
 你缴了	nǐ jiǎo le	211
 你教练	nǐ jiào liàn	423
@@ -504097,11 +504098,11 @@ sort: by_weight
 切平面	qiè píng miàn	53
 且平时	qiě píng shí	819
 切起来	qiè qǐ lái	41
-切切吧	qiē qiē ba	189
+切切吧	qiè qiè ba	189
 怯怯地	qiè qiè de	166
 怯怯的	qiè qiè de	160
-切切地	qiē qiē de	134
-切切看	qiē qiē kàn	540
+切切地	qiè qiè de	134
+切切看	qiè qiè kàn	540
 窃取了	qiè qǔ le	783
 切曲面	qiè qū miàn	76
 窃取其	qiè qǔ qí	6
@@ -572111,7 +572112,7 @@ sort: by_weight
 他较近	tā jiào jìn	217
 他叫来	tā jiào lái	630
 他叫了	tā jiào le	688
-他教了	tā jiào le	547
+他教了	tā jiāo le	547
 她叫了	tā jiào le	335
 他交了	tā jiāo le	302
 她交了	tā jiāo le	144
@@ -613281,6 +613282,7 @@ sort: by_weight
 我变心	wǒ biàn xīn	418
 我便要	wǒ biàn yào	585
 我便以	wǒ biàn yǐ	450
+我编译	wǒ biān yì	131
 我便应	wǒ biàn yīng	288
 我便用	wǒ biàn yòng	428
 我便有	wǒ biàn yǒu	554
@@ -619225,7 +619227,7 @@ sort: by_weight
 我叫来	wǒ jiào lái	662
 我叫了	wǒ jiào le	860
 我交了	wǒ jiāo le	657
-我教了	wǒ jiào le	364
+我教了	wǒ jiāo le	364
 我浇了	wǒ jiāo le	214
 我叫李	wǒ jiào lǐ	688
 我教练	wǒ jiào liàn	549
@@ -678870,7 +678872,7 @@ sort: by_weight
 页交换	yè jiāo huàn	212
 也叫了	yě jiào le	684
 也交了	yě jiāo le	543
-也教了	yě jiào le	296
+也教了	yě jiāo le	296
 叶教授	yè jiào shòu	25
 夜交藤	yè jiāo téng	25
 野节鞭	yě jié biān	50
@@ -753701,7 +753703,7 @@ sort: by_weight
 爱的启迪	ài de qǐ dí	99
 爱的契约	ài de qì yuē	238
 爱的晴天	ài de qíng tiān	117
-爱的躯壳	ài de qū ké	9
+爱的躯壳	ài de qū qiào	9
 爱的权利	ài de quán lì	612
 爱的诠释	ài de quán shì	392
 爱的缺失	ài de quē shī	572
@@ -768569,7 +768571,7 @@ sort: by_weight
 北碑南帖	běi bēi nán tiē	194
 被背叛我	bèi bèi pàn wǒ	144
 悲悲戚戚	bēi bēi qī qī	22
-悲悲切切	bēi bēi qiè qiē	19
+悲悲切切	bēi bēi qiè qiè	19
 被背书人	bèi bèi shū rén	504
 贝贝血宝	bèi bèi xuè bǎo	202
 贝贝依依	bèi bèi yī yī	171
@@ -794956,7 +794958,7 @@ sort: by_weight
 草草了事	cǎo cǎo liǎo shì	490
 曹操女儿	cáo cāo nǚ er	130
 曹操妻妾	cáo cāo qī qiè	320
-嘈嘈切切	cáo cáo qiē qiē	13
+嘈嘈切切	cáo cáo qiè qiè	13
 草草收兵	cǎo cǎo shōu bīng	13
 草草收场	cǎo cǎo shōu chǎng	358
 草草收尾	cǎo cǎo shōu wěi	468
@@ -911535,7 +911537,7 @@ sort: by_weight
 豪气顿生	háo qì dùn shēng	396
 好奇而已	hào qí ér yǐ	752
 好欺负吗	hǎo qī fu ma	459
-豪气干云	háo qì gàn yún	179
+豪气干云	háo qì gān yún	179
 好奇怪啊	hǎo qí guài a	201
 好奇怪哦	hǎo qí guài ó	612
 好奇怪呀	hǎo qí guài ya	31
@@ -942257,7 +942259,7 @@ sort: by_weight
 继续坚守	jì xù jiān shǒu	634
 继续降低	jì xù jiàng dī	176
 继续讲哦	jì xù jiǎng ó	52
-继续教了	jì xù jiào le	202
+继续教了	jì xù jiāo le	202
 继续交往	jì xù jiāo wǎng	747
 继续教育	jì xù jiào yù	1463
 急需解决	jí xū jiě jué	188
@@ -971917,6 +971919,7 @@ sort: by_weight
 就轻松多	jiù qīng sōng duō	585
 九卿值房	jiǔ qīng zhí fáng	4
 九球天后	jiǔ qiú tiān hòu	16
+旧曲重闻	jiù qǔ chóng wén	76
 酒曲发酵	jiǔ qū fā jiào	315
 九曲分矿	jiǔ qū fēn kuàng	171
 旧区改造	jiù qū gǎi zào	472
@@ -971934,7 +971937,6 @@ sort: by_weight
 九曲营路	jiǔ qū yíng lù	76
 九曲棹歌	jiǔ qū zhào gē	117
 九曲之战	jiǔ qū zhī zhàn	50
-旧曲重闻	jiù qǔ zhòng wén	76
 就全错了	jiù quán cuò le	25
 就全没了	jiù quán méi le	544
 九泉瞑目	jiǔ quán míng mù	45
@@ -1060024,7 +1060026,7 @@ sort: by_weight
 岂敢岂敢	qǐ gǎn qǐ gǎn	9
 其甘如饴	qí gān rú yí	76
 棋杆社区	qí gān shè qū	52
-气干云霄	qì gàn yún xiāo	99
+气干云霄	qì gān yún xiāo	99
 岂敢造次	qǐ gǎn zào cì	130
 奇干中队	qí gàn zhōng duì	45
 气缸衬套	qì gāng chèn tào	45
@@ -1069864,10 +1069866,10 @@ sort: by_weight
 茄皮紫釉	qié pí zǐ yòu	162
 切片石腊	qiē piàn shí là	45
 挈瓶之智	qiè píng zhī zhì	45
-切切偲偲	qiē qiē cāi cāi	76
-切切察察	qiē qiē chá chá	194
+切切偲偲	qiè qiè cāi cāi	76
+切切察察	qiè qiè chá chá	194
 切切此布	qiè qiè cǐ bù	99
-切切割割	qiē qiē gē gē	76
+切切割割	qiè qiè gē gē	76
 怯怯懦懦	qiè qiè nuò nuò	16
 切切实实	qiè qiè shí shí	1024
 窃窃私议	qiè qiè sī yì	382
@@ -1072656,7 +1072658,8 @@ sort: by_weight
 青龙过肩	qīng lóng guò jiān	99
 青龙灰岩	qīng lóng huī yán	45
 青龙魂石	qīng lóng hún shí	99
-轻拢慢捻	qīng lǒng màn niǎn	6
+轻拢慢捻	qīng lǒng màn niǎn	9
+轻栊慢捻	qīng lóng màn niǎn	6
 轻拢慢撚	qīng lǒng màn niǎn	5
 青龙秘宝	qīng lóng mì bǎo	45
 青龙七宿	qīng lóng qī xiù	288
@@ -1076806,7 +1076809,6 @@ sort: by_weight
 去壳鸡蛋	qù ké jī dàn	171
 区科技局	qū kē jì jú	536
 区科尼岛	qū kē ní dǎo	99
-躯壳虽隳	qū ké suī huī	117
 去可以吗	qù kě yǐ ma	500
 去肯德基	qù kěn dé jī	810
 驱控一体	qū kòng yì tǐ	153
@@ -1077136,6 +1077138,7 @@ sort: by_weight
 趋前跟后	qū qián gēn hòu	4
 趋前退后	qū qián tuì hòu	45
 屈强系数	qū qiáng xì shù	4
+躯壳虽隳	qū qiào suī huī	117
 取巧图便	qǔ qiǎo tú biàn	144
 去亲戚家	qù qīn qi jiā	223
 去氢处理	qù qīng chǔ lǐ	99
@@ -1202530,7 +1202533,7 @@ sort: by_weight
 瞎七搭八	xiā qī dā bā	261
 下棋打牌	xià qí dǎ pái	477
 下起大雨	xià qǐ dà yǔ	598
-侠气干云	xiá qì gàn yún	3
+侠气干云	xiá qì gān yún	3
 下期继续	xià qī jì xù	428
 下气降心	xià qì jiàng xīn	45
 下期节目	xià qī jié mù	549
@@ -1307154,7 +1307157,7 @@ sort: by_weight
 致命侵袭	zhì mìng qīn xí	130
 致命请柬	zhì mìng qǐng jiǎn	130
 致命情人	zhì mìng qíng rén	356
-致命躯壳	zhì mìng qū ké	117
+致命躯壳	zhì mìng qū qiào	117
 致命缺点	zhì mìng quē diǎn	621
 致命缺陷	zhì mìng quē xiàn	666
 知名人士	zhī míng rén shì	609
@@ -1343143,7 +1343146,7 @@ sort: by_weight
 不用白不用	bú yòng bái bú yòng	10
 不用负责任	bú yòng fù zé rèn	10
 不用诉离觞	bú yòng sù lí shāng	10
-不用我教了	bú yòng wǒ jiào le	10
+不用我教了	bú yòng wǒ jiāo le	10
 不用一钱买	bú yòng yì qián mǎi	10
 不由得感叹	bù yóu de gǎn tàn	10
 不由的感叹	bù yóu de gǎn tàn	10
@@ -1479829,7 +1479832,7 @@ sort: by_weight
 曹操大宴铜雀台	cáo cāo dà yàn tóng què tái	10
 曹操抹书间韩遂	cáo cāo mǒ shū jiān hán suì	10
 曹操平定汉中地	cáo cāo píng dìng hàn zhōng dì	10
-嘈嘈切切错杂弹	cáo cáo qiē qiē cuò zá dàn	10
+嘈嘈切切错杂弹	cáo cáo qiè qiè cuò zá dàn	10
 曹操煮酒论英雄	cáo cāo zhǔ jiǔ lùn yīng xióng	10
 草根皇帝朱元璋	cǎo gēn huáng dì zhū yuán zhāng	10
 草果附姜兼厚朴	cǎo guǒ fù jiāng jiān hòu pò	10
@@ -1486754,7 +1486757,7 @@ sort: by_weight
 健儿消食口服液	jiàn ér xiāo shí kǒu fú yè	10
 剑阁峥嵘而崔嵬	jiàn gé zhēng róng ér cuī wéi	10
 兼顾当前与长远	jiān gù dāng qián yǔ cháng yuǎn	10
-间关莺语花底滑	jiān guān yīng yǔ huā dǐ huá	10
+间关莺语花底滑	jiàn guān yīng yǔ huā dǐ huá	10
 监护病房床位费	jiān hù bìng fáng chuáng wèi fèi	10
 煎加灯草痛淋蠲	jiān jiā dēng cǎo tòng lín juān	10
 煎加姜枣表兼里	jiān jiā jiāng zǎo biǎo jiān lǐ	10
@@ -1487241,7 +1487244,7 @@ sort: by_weight
 库伦土压力理论	kù lún tǔ yā lì lǐ lùn	10
 库木吐喇千佛洞	kù mù tǔ lǎ qiān fó dòng	10
 苦参阴道泡腾片	kǔ shēn yīn dào pào téng piàn	10
-哭声直上干云霄	kū shēng zhí shàng gàn yún xiāo	10
+哭声直上干云霄	kū shēng zhí shàng gān yún xiāo	10
 枯松倒挂倚绝壁	kū sōng dào guà yǐ jué bì	10
 跨膜信号转换器	kuà mó xìn hào zhuǎn huàn qì	10
 跨生命周期采购	kuà shēng mìng zhōu qī cǎi gòu	10
@@ -1487682,7 +1487685,7 @@ sort: by_weight
 曼秀雷登薄荷膏	màn xiù léi dēng bò he gāo	10
 满袖杨花听杜鹃	mǎn xiù yáng huā tīng dù juān	10
 满眼风光北固楼	mǎn yǎn fēng guāng běi gù lóu	10
-满座重闻皆掩泣	mǎn zuò zhòng wén jiē yǎn qì	10
+满座重闻皆掩泣	mǎn zuò chóng wén jiē yǎn qì	10
 忙趁东风放纸鸢	máng chèn dōng fēng fàng zhǐ yuān	10
 茫茫九派流中国	máng máng jiǔ pài liú zhōng guó	10
 芒塞尔颜色立体	máng sāi ěr yán sè lì tǐ	10
@@ -1488341,7 +1488344,7 @@ sort: by_weight
 情况越来越糟糕	qíng kuàng yuè lái yuè zāo gāo	10
 清郎世宁百骏图	qīng láng shì níng bǎi jùn tú	10
 青莲居士谪仙人	qīng lián jū shì zhé xiān rén	10
-轻拢慢捻抹复挑	qīng lǒng màn niǎn mǒ fù tiāo	10
+轻拢慢捻抹复挑	qīng lǒng màn niǎn mǒ fù tiǎo	10
 青楼烟雨忍相忘	qīng lóu yān yǔ rěn xiāng wàng	10
 轻罗小扇扑流萤	qīng luó xiǎo shàn pū liú yíng	10
 青梅如豆柳如眉	qīng méi rú dòu liǔ rú méi	10
@@ -1489368,7 +1489371,7 @@ sort: by_weight
 世人谓我恋长安	shì rén wèi wǒ liàn cháng ān	10
 事如春梦了无痕	shì rú chūn mèng liǎo wú hén	10
 十三副遗甲起兵	shí sān fù yí jiǎ qǐ bīng	10
-十三学得琵琶成	shí sān xué de pí pa chéng	10
+十三学得琵琶成	shí sān xué dé pí pa chéng	10
 誓扫匈奴不顾身	shì sǎo xiōng nú bú gù shēn	10
 世上万般哀苦事	shì shàng wàn bān āi kǔ shì	10
 室上性期外收缩	shì shàng xìng qī wài shōu suō	10
@@ -1490623,7 +1490626,7 @@ sort: by_weight
 校尉羽书飞瀚海	xiào wèi yǔ shū fēi hàn hǎi	10
 笑问客从何处来	xiào wèn kè cóng hé chù lái	10
 小溪泛尽却山行	xiǎo xī fàn jìn què shān xíng	10
-小弦切切如私语	xiǎo xián qiē qiē rú sī yǔ	10
+小弦切切如私语	xiǎo xián qiè qiè rú sī yǔ	10
 萧萧黄叶闭疏窗	xiāo xiāo huáng yè bì shū chuāng	10
 萧萧暮雨子规啼	xiāo xiāo mù yǔ zǐ guī tí	10
 萧萧梧叶送寒声	xiāo xiāo wú yè sòng hán shēng	10
