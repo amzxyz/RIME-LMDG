@@ -1,15 +1,7 @@
-name: Auto Build Wanxiang Tools
+name: Manual Build Wanxiang Tools
 
+# 仅在 GitHub Actions 页面点击 Run workflow 后构建和发布。
 on:
-  push:
-    branches: 
-      - wanxiang
-    paths:
-      - 'vendor/python/pypinyin/**'
-      - 'apps/desktop/advanced_settings/**'
-      - 'apps/desktop/wanxiang-tools.py'
-      - 'apps/android/wanxiang-updater/**'
-      - '.github/workflows/**'
   workflow_dispatch:
 
 jobs:
@@ -120,7 +112,7 @@ jobs:
   # 2. Arch Linux 构建（原生源码包，不复用 Ubuntu PyInstaller 二进制）
   # =================================================
   package-arch:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     container: archlinux:base-devel
     steps:
       - name: 🧱 初始化 Arch 构建容器
@@ -354,7 +346,7 @@ jobs:
   # 5. Android APK 构建 (Kotlin + Compose)
   # =================================================
   build-android:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: 📦 Checkout 代码
         uses: actions/checkout@v7
@@ -425,7 +417,7 @@ jobs:
   # =================================================
   publish:
     needs: [build-linux, package-arch, build-windows, build-macos, build-android]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
     steps:
