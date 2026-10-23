@@ -121,7 +121,7 @@ suspend fun downloadAndDeployTask(
         task.appendDebug("源地址：${task.url}")
         task.appendDebug("目标路径：${targetPaths.joinToString { deployPathDisplayName(it) }}")
         task.appendDebug("缓存目录：${stagingDir.absolutePath}")
-        task.appendDebug("下载前执行轻量目标探测")
+        task.appendDebug("下载前核验各目标持久授权与实际读写能力")
         publishTaskDebug(task)
 
         var usableTargetPaths = emptyList<String>()
@@ -166,13 +166,14 @@ suspend fun downloadAndDeployTask(
                         return@forEach
                     }
 
-                    val probeError = probeSafTreeWriteAccess(context, uri)
-                    if (probeError == null) {
+                    // 与启动检查使用同一认证语义；只有本次可写还不够，必须保留系统持久授权。
+                    val health = SafTreeAccess.check(context, path)
+                    if (health.ok) {
                         usableTargets.add(path)
-                        task.appendDebug("目标可用：$pathName（SAF小文件探测通过）")
+                        task.appendDebug("目标可用：$pathName（持久授权和 SAF 读写探测通过）")
                     } else {
-                        skippedTargets.add("$pathName：$probeError")
-                        task.appendDebug("跳过目标：$pathName（$probeError）")
+                        skippedTargets.add("$pathName：${health.message}")
+                        task.appendDebug("跳过目标：$pathName（${health.message}）")
                     }
                 }
 

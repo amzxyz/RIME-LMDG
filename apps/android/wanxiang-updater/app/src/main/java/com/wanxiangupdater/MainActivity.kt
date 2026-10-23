@@ -51,6 +51,9 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import androidx.documentfile.provider.DocumentFile
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.compose.ui.platform.LocalLifecycleOwner
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -186,7 +189,8 @@ fun loadDeployPaths(sharedPref: android.content.SharedPreferences): List<String>
                     if (path.isNotBlank() && path !in this) add(path)
                 }
             }
-            if (paths.isNotEmpty()) return paths
+            // 显式保存 [] 意味着用户删除了所有目标，不能悄悄恢复 /rime。
+            return paths
         } catch (_: Exception) {
         }
     }
@@ -221,32 +225,6 @@ fun deployPathDisplayName(path: String): String {
 
 fun canWriteDefaultRime(): Boolean {
     return Build.VERSION.SDK_INT < Build.VERSION_CODES.R || Environment.isExternalStorageManager()
-}
-
-fun probeSafTreeWriteAccess(context: Context, uri: Uri): String? {
-    val rootDoc = runCatching { DocumentFile.fromTreeUri(context, uri) }.getOrNull()
-        ?: return "无法解析SAF目录"
-
-    val probeName = "wanxiang_write_probe_${UUID.randomUUID()}.tmp"
-    val probeDoc = try {
-        rootDoc.createFile("application/octet-stream", probeName)
-    } catch (error: Exception) {
-        return "SAF创建探测文件失败：${error.javaClass.simpleName}: ${error.message ?: "无详细信息"}"
-    } ?: return "SAF创建探测文件失败"
-
-    try {
-        context.contentResolver.openOutputStream(probeDoc.uri, "w")?.use { output ->
-            output.write(byteArrayOf(0x57))
-            output.flush()
-        } ?: return "SAF无法打开探测文件写入流"
-    } catch (error: Exception) {
-        return "SAF写入探测失败：${error.javaClass.simpleName}: ${error.message ?: "无详细信息"}"
-    }
-
-    if (!runCatching { probeDoc.delete() }.getOrDefault(false)) {
-        return "SAF探测文件写入成功，但删除失败"
-    }
-    return null
 }
 
 fun hasSafTarget(targetPaths: List<String>): Boolean {
@@ -622,32 +600,164 @@ fun WanxiangDownloaderApp() {
     var showAdvancedRules by remember { mutableStateOf(false) }
     val coroutineScope = rememberCoroutineScope()
 
-    // 路径记忆（有序保存）：SAF 与 /rime 可以同时存在，部署时始终先 SAF、后 /rime。
+    // 授权目录各自独立保存；不可把多次选择合并成一个授权。
     var savedPaths by remember { mutableStateOf(loadDeployPaths(sharedPref)) }
+    var customTasks by remember {
+        mutableStateOf(loadCustomTasks(sharedPref.getString("custom_tasks_data", "[]") ?: "[]"))
+    }
+    var safCheckNonce by remember { mutableIntStateOf(0) }
+    var safChecking by remember { mutableStateOf(true) }
+    var safHealth by remember { mutableStateOf<Map<String, SafTreeHealth>>(emptyMap()) }
+    var firstSafScanDone by remember { mutableStateOf(false) }
+    var previouslyBrokenSafPaths by remember { mutableStateOf<Set<String>>(emptySet()) }
+    var showSafRepairDialog by remember { mutableStateOf(false) }
 
-    val dirPickerLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
-        if (uri != null) {
-            context.contentResolver.takePersistableUriPermission(
-                uri,
-                Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
-            )
-            val newPaths = (savedPaths + uri.toString()).distinct()
-            savedPaths = newPaths
-            saveDeployPaths(newPaths, sharedPref)
+    // AndroidX 返回 Intent 中真正的授权标志；不要只从 OpenDocumentTree 获取 URI 后盲存路径。
+    var pickerPurpose by remember { mutableStateOf("deploy") }
+    var pickerOldPath by remember { mutableStateOf<String?>(null) }
+    var pickerTaskId by remember { mutableStateOf<String?>(null) }
+    var pickerIsRepair by remember { mutableStateOf(false) }
+    val safPicker = rememberLauncherForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+        if (result.resultCode == Activity.RESULT_OK && result.data?.data != null) {
+            val selected = runCatching { SafTreeAccess.persistPickedTree(context, result.data!!) }
+            selected.onSuccess { uri ->
+                val path = uri.toString()
+                val old = pickerOldPath
+                when (pickerPurpose) {
+                    "advanced" -> {
+                        advancedSettingsPath = path
+                        sharedPref.edit().putString("advanced_settings_path", path).apply()
+                    }
+                    "custom" -> {
+                        val updated = customTasks.map { task ->
+                            if (task.id == pickerTaskId) task.copy(boundPath = path) else task
+                        }
+                        customTasks = updated
+                        saveCustomTasks(updated, sharedPref)
+                    }
+                    else -> {
+                        val updated = if (old != null && old in savedPaths) {
+                            savedPaths.map { if (it == old) path else it }.distinct()
+                        } else (savedPaths + path).distinct()
+                        savedPaths = updated
+                        saveDeployPaths(updated, sharedPref)
+                    }
+                }
+                // 修复旧授权时，使用同一个 URI 的高级设置及自定义任务也一起重绑。
+                if (pickerIsRepair && old != null && old != path) {
+                    if (old in savedPaths) {
+                        val updated = savedPaths.map { if (it == old) path else it }.distinct()
+                        savedPaths = updated
+                        saveDeployPaths(updated, sharedPref)
+                    }
+                    if (advancedSettingsPath == old) {
+                        advancedSettingsPath = path
+                        sharedPref.edit().putString("advanced_settings_path", path).apply()
+                    }
+                    val updatedTasks = customTasks.map { task ->
+                        if (task.boundPath == old) task.copy(boundPath = path) else task
+                    }
+                    if (updatedTasks != customTasks) {
+                        customTasks = updatedTasks
+                        saveCustomTasks(updatedTasks, sharedPref)
+                    }
+                }
+                // 丢弃已经无人引用的旧授权，避免长时间积累废弃 URI grant。
+                if (old != null && old != path && old !in savedPaths && old != advancedSettingsPath &&
+                    customTasks.none { it.boundPath == old }) {
+                    runCatching {
+                        context.contentResolver.releasePersistableUriPermission(
+                            Uri.parse(old), Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
+                        )
+                    }
+                }
+                safCheckNonce++
+                Toast.makeText(context, "目录授权已保存，正在验证读写权限", Toast.LENGTH_SHORT).show()
+            }.onFailure { error ->
+                Toast.makeText(context, "授权未保存：${error.message ?: "系统未授予持久读写权限"}", Toast.LENGTH_LONG).show()
+                safCheckNonce++
+            }
+        }
+        pickerOldPath = null
+        pickerTaskId = null
+        pickerIsRepair = false
+    }
+
+    fun openSafPicker(purpose: String, old: String? = null, taskId: String? = null, repair: Boolean = false) {
+        pickerPurpose = purpose
+        pickerOldPath = old
+        pickerTaskId = taskId
+        pickerIsRepair = repair
+        // 权限失效/目录移动时，不把无效 URI 传给文件选择器强行定位。
+        val initial = old?.takeIf { safHealth[it]?.ok == true }
+        safPicker.launch(SafTreeAccess.pickerIntent(initial))
+    }
+
+    val allSafPaths = (savedPaths + advancedSettingsPath + customTasks.map { it.boundPath })
+        .filter { it.isNotBlank() && it != "DEFAULT" && !isRootTarget(it) }
+        .distinct()
+    val lifecycleOwner = LocalLifecycleOwner.current
+    DisposableEffect(lifecycleOwner) {
+        val observer = LifecycleEventObserver { _, event ->
+            if (event == Lifecycle.Event.ON_RESUME) safCheckNonce++
+        }
+        lifecycleOwner.lifecycle.addObserver(observer)
+        onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
+    }
+    LaunchedEffect(allSafPaths, safCheckNonce) {
+        safChecking = true
+        val result = withContext(Dispatchers.IO) {
+            allSafPaths.associateWith { SafTreeAccess.check(context.applicationContext, it) }
+        }
+        safHealth = result
+        safChecking = false
+        val failures = result.filterValues { !it.ok }.keys
+        // 首次打开或新增失效目录时主动提醒；用户已经关闭过的同一故障不反复弹窗。
+        if ((!firstSafScanDone && failures.isNotEmpty()) ||
+            (firstSafScanDone && (failures - previouslyBrokenSafPaths).isNotEmpty())) {
+            showSafRepairDialog = true
+        }
+        firstSafScanDone = true
+        previouslyBrokenSafPaths = failures
+    }
+    val brokenSafPaths = allSafPaths.filter { safHealth[it]?.ok == false }
+
+    fun safUsage(path: String): String = buildList {
+        if (path in savedPaths) add("更新目标")
+        if (path == advancedSettingsPath) add("高级设置")
+        val taskCount = customTasks.count { it.boundPath == path }
+        if (taskCount > 0) add("扩展任务 ${taskCount} 个")
+    }.joinToString(" / ")
+
+    fun repairSafPath(path: String) {
+        showSafRepairDialog = false
+        when {
+            path in savedPaths -> openSafPicker("deploy", path, repair = true)
+            path == advancedSettingsPath -> openSafPicker("advanced", path, repair = true)
+            else -> openSafPicker("custom", path, customTasks.firstOrNull { it.boundPath == path }?.id, repair = true)
         }
     }
 
-    val advancedDirPickerLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
-        if (uri != null) {
-            runCatching {
-                context.contentResolver.takePersistableUriPermission(
-                    uri,
-                    Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
-                )
-            }
-            advancedSettingsPath = uri.toString()
-            sharedPref.edit().putString("advanced_settings_path", advancedSettingsPath).apply()
-        }
+    if (showSafRepairDialog && brokenSafPaths.isNotEmpty()) {
+        AlertDialog(
+            onDismissRequest = { showSafRepairDialog = false },
+            title = { Text("⚠️ 部分目录授权失效") },
+            text = {
+                Column(Modifier.heightIn(max = 420.dp).verticalScroll(rememberScrollState())) {
+                    Text("已逐个检查存储授权及实际写入能力。正常目录不受影响；仅需重新授权以下目录。请在系统文件选择器中进入对应目录并点击“使用此文件夹”。", fontSize = 12.sp)
+                    Spacer(Modifier.height(8.dp))
+                    brokenSafPaths.forEach { path ->
+                        Text("${deployPathDisplayName(path)} · ${safUsage(path)}", fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                        Text(Uri.decode(path).substringAfter("/tree/"), maxLines = 2, fontSize = 10.sp, color = Color.Gray)
+                        Text(safHealth[path]?.message ?: "需要重新检查", fontSize = 11.sp, color = Color(0xFFB14F4F))
+                        TextButton(onClick = { repairSafPath(path) }) { Text("为此目录重新授权") }
+                        Divider()
+                    }
+                }
+            },
+            confirmButton = { TextButton(onClick = { showSafRepairDialog = false }) { Text("暂不处理") } },
+            dismissButton = { TextButton(onClick = { showSafRepairDialog = false; safCheckNonce++ }) { Text("重新检测") } }
+        )
     }
 
     if (showRootPathDialog) {
@@ -873,9 +983,6 @@ fun WanxiangDownloaderApp() {
 
     var selectedTabIndex by remember { mutableStateOf(0) }
     val advancedSettingsMemory = remember { AdvancedSettingsMemory() }
-    var customTasks by remember {
-        mutableStateOf(loadCustomTasks(sharedPref.getString("custom_tasks_data", "[]") ?: "[]"))
-    }
 
     Column(modifier = Modifier.fillMaxSize()) {
         ScrollableTabRow(
@@ -905,6 +1012,17 @@ fun WanxiangDownloaderApp() {
                 onClick = { selectedTabIndex = 3 },
                 text = { Text("高级设置", fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false) }
             )
+        }
+
+        if (brokenSafPaths.isNotEmpty()) {
+            Surface(color = Color(0xFFFFF2E9), modifier = Modifier.fillMaxWidth()) {
+                Row(Modifier.padding(horizontal = 12.dp, vertical = 5.dp), verticalAlignment = Alignment.CenterVertically) {
+                    Text("⚠️ ${brokenSafPaths.size} 个 SAF 目录不可写", fontSize = 12.sp, color = Color(0xFF9A4A34), modifier = Modifier.weight(1f))
+                    TextButton(onClick = { showSafRepairDialog = true }) { Text("查看并修复", fontSize = 11.sp) }
+                }
+            }
+        } else if (safChecking && allSafPaths.isNotEmpty()) {
+            Text("正在检查 ${allSafPaths.size} 个 SAF 授权目录…", color = Color.Gray, fontSize = 10.sp, modifier = Modifier.padding(horizontal = 12.dp))
         }
 
         if (selectedTabIndex == 0) {
@@ -1012,19 +1130,30 @@ fun WanxiangDownloaderApp() {
                                     maxLines = 1,
                                     overflow = TextOverflow.Ellipsis
                                 )
+                                if (pathStr != "DEFAULT" && !isRootTarget(pathStr)) {
+                                    val status = safHealth[pathStr]
+                                    when {
+                                        safChecking || status == null -> Text("检查中", fontSize = 10.sp, color = Color.Gray)
+                                        status.ok -> Text("✓ 可写", fontSize = 10.sp, color = MorandiDarkGreen)
+                                        else -> TextButton(onClick = { repairSafPath(pathStr) }, contentPadding = PaddingValues(0.dp)) {
+                                            Text("⚠️ 重新授权", fontSize = 11.sp, color = Color(0xFFB14F4F))
+                                        }
+                                    }
+                                }
                                 TextButton(
                                     onClick = {
-                                        if (pathStr != "DEFAULT" && !isRootTarget(pathStr)) {
-                                            runCatching {
-                                                context.contentResolver.releasePersistableUriPermission(
-                                                    Uri.parse(pathStr),
-                                                    Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
-                                                )
-                                            }
-                                        }
                                         val newPaths = savedPaths - pathStr
                                         savedPaths = newPaths
                                         saveDeployPaths(newPaths, sharedPref)
+                                        // 可能仍由高级设置或自定义任务引用，不能擅自撤销其他页面的授权。
+                                        if (pathStr != "DEFAULT" && !isRootTarget(pathStr) &&
+                                            advancedSettingsPath != pathStr && customTasks.none { it.boundPath == pathStr }) {
+                                            runCatching {
+                                                val flags = Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
+                                                context.contentResolver.releasePersistableUriPermission(Uri.parse(pathStr), flags)
+                                            }
+                                        }
+                                        safCheckNonce++
                                     },
                                     contentPadding = PaddingValues(0.dp),
                                     modifier = Modifier.height(24.dp)
@@ -1034,11 +1163,16 @@ fun WanxiangDownloaderApp() {
                             }
                         }
 
+                        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
+                            TextButton(onClick = { safCheckNonce++ }, enabled = !safChecking) {
+                                Text(if (safChecking) "检测中…" else "↻ 检查目录授权", fontSize = 11.sp)
+                            }
+                        }
                         Divider(color = MorandiBorder, modifier = Modifier.padding(vertical = 8.dp))
 
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             OutlinedButton(
-                                onClick = { dirPickerLauncher.launch(null) },
+                                onClick = { openSafPicker("deploy") },
                                 modifier = Modifier.weight(1f).height(36.dp)
                             ) {
                                 Text("➕ 添加授权目录", fontSize = 12.sp)
@@ -1491,7 +1625,9 @@ fun WanxiangDownloaderApp() {
                 setTasks = { customActiveTasks = it },
                 context = context,
                 activeTasks = customActiveTasks,
-                onRequestAllFilesAccess = { showPermissionDialog = true }
+                onRequestAllFilesAccess = { showPermissionDialog = true },
+                onPickSafForTask = { taskId, currentPath -> openSafPicker("custom", currentPath, taskId) },
+                safHealth = safHealth
             )
         } else if (selectedTabIndex == 2) {
             PinyinToolScreen()
@@ -1504,7 +1640,7 @@ fun WanxiangDownloaderApp() {
                     advancedSettingsPath = it
                     sharedPref.edit().putString("advanced_settings_path", it).apply()
                 },
-                onPickSafDirectory = { advancedDirPickerLauncher.launch(null) }
+                onPickSafDirectory = { openSafPicker("advanced", advancedSettingsPath) }
             )
         }
     }
@@ -1698,7 +1834,9 @@ fun CustomModeTab(
     setTasks: (List<TaskState>) -> Unit,
     context: Context,
     activeTasks: List<TaskState>,
-    onRequestAllFilesAccess: () -> Unit
+    onRequestAllFilesAccess: () -> Unit,
+    onPickSafForTask: (String, String?) -> Unit,
+    safHealth: Map<String, SafTreeHealth>
 ) {
     var taskAwaitingPath by remember { mutableStateOf<String?>(null) }
     var showCustomRootDialog by remember { mutableStateOf(false) }
@@ -1784,22 +1922,6 @@ fun CustomModeTab(
         )
     }
 
-    val customDirLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
-        if (uri != null) {
-            context.contentResolver.takePersistableUriPermission(
-                uri,
-                Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
-            )
-            val pathStr = uri.toString()
-            taskAwaitingPath?.let { taskId ->
-                val updated = customTasks.map { task ->
-                    if (task.id == taskId) task.copy(boundPath = pathStr) else task
-                }
-                onTasksChange(updated)
-            }
-            taskAwaitingPath = null
-        }
-    }
 
     Column(modifier = Modifier.fillMaxSize().padding(16.dp).verticalScroll(rememberScrollState())) {
         Text("🛠️ 自定义扩展", fontSize = 18.sp, fontWeight = FontWeight.Bold, color = MorandiDarkGreen)
@@ -2020,6 +2142,9 @@ fun CustomModeTab(
                             Spacer(modifier = Modifier.height(10.dp))
 
                             Text("目标解压路径", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 4.dp))
+                            if (task.boundPath != "DEFAULT" && !isRootTarget(task.boundPath) && safHealth[task.boundPath]?.ok == false) {
+                                Text("⚠️ ${safHealth[task.boundPath]?.message ?: "目录失效"}，请点击“配置目录”重新授权", fontSize = 11.sp, color = Color(0xFFB14F4F))
+                            }
                             Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
                                 androidx.compose.foundation.text.BasicTextField(
                                     value = when {
@@ -2050,8 +2175,7 @@ fun CustomModeTab(
                                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                                     Button(
                                         onClick = {
-                                            taskAwaitingPath = task.id
-                                            customDirLauncher.launch(null)
+                                            onPickSafForTask(task.id, task.boundPath)
                                         },
                                         modifier = Modifier.height(38.dp),
                                         shape = RoundedCornerShape(6.dp),
