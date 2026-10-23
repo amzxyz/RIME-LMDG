@@ -59117,6 +59117,7 @@ sort: by_weight
 俯身迎未落	fǔ shēn yíng wèi luò	10
 俯身逐南北	fǔ shēn zhú nán běi	10
 浮沈逐世流	fú shěn zhú shì liú	10
+浮生长勿勿	fú shēng cháng wù wù	10
 斧声出岩壑	fǔ shēng chū yán hè	10
 浮生大小年	fú shēng dà xiǎo nián	10
 浮生等臊腥	fú shēng děng sāo xīng	10
@@ -77070,7 +77071,7 @@ sort: by_weight
 华发同今日	huá fà tóng jīn rì	10
 华发同衰荣	huá fà tóng shuāi róng	10
 花发五城楼	huā fā wǔ chéng lóu	10
-花发小堂春	huá fā xiǎo chūn táng	10
+花发小堂春	huá fā xiǎo táng chūn	10
 花发炎景中	huā fā yán jǐng zhōng	10
 花发夜来风	huā fā yè lái fēng	10
 花发忆两京	huā fā yì liǎng jīng	10
@@ -90435,8 +90436,8 @@ sort: by_weight
 尽取义何如	jìn qǔ yì hé rú	10
 尽驱诣阙下	jìn qū yì què xià	10
 尽取一无遗	jìn qǔ yī wú yí	10
+金阙传本枝	jīn què chuán běn zhī	10
 金阙断烟霞	jīn què duàn yān xiá	10
-金阙传本枝	jīn què zhuàn běn zhī	10
 今然君子也	jīn rán jūn zǐ yě	10
 今人哀后人	jīn rén āi hòu rén	10
 今人多不弹	jīn rén duō bù tán	10
@@ -125470,11 +125471,11 @@ sort: by_weight
 凄凄隔幽显	qī qī gé yōu xiǎn	10
 岂其供王羞	qǐ qí gōng wáng xiū	10
 凄凄郭东路	qī qī guō dōng lù	10
-凄凄还切切	qī qī hái qiè qiè	10
 凄凄寒露零	qī qī hán lù líng	10
 气凄湖上雨	qì qī hú shàng yǔ	10
 岂其怀爱憎	qǐ qí huái ài zēng	10
 戚戚怀远游	qī qī huái yuǎn yóu	10
+凄凄还切切	qī qī huán qiè qiè	10
 萋萋结绿枝	qī qī jié lǜ zhī	10
 戚戚居人少	qī qī jū rén shǎo	10
 凄其篱下闻	qī qí lí xià wén	10
@@ -177881,7 +177882,6 @@ sort: by_weight
 吾生本无待	wú shēng běn wú dài	10
 无声不断肠	wú shēng bú duàn cháng	10
 无声不见飞	wú shēng bú jiàn fēi	10
-浮生长勿勿	wú shēng cháng wù wù	10
 伍生传或谬	wǔ shēng chuán huò miù	10
 无胜此东轩	wú shèng cǐ dōng xuān	10
 无声但呀呀	wú shēng dàn yā yā	10
@@ -189115,7 +189115,7 @@ sort: by_weight
 心心待晓霞	xīn xīn dài xiǎo xiá	10
 欣欣得向阳	xīn xīn dé xiàng yáng	10
 欣欣登高侣	xīn xīn dēng gāo lǚ	10
-欣欣还切切	xīn xīn hái qiè qiè	10
+欣欣还切切	xīn xīn huán qiè qiè	10
 欣欣林皋乐	xīn xīn lín gāo lè	10
 欣欣岂云已	xīn xīn qǐ yún yǐ	10
 心心视春草	xīn xīn shì chūn cǎo	10
@@ -240353,12 +240353,12 @@ sort: by_weight
 百忌不容亲酒具	bǎi jì bù róng qīn jiǔ jù	10
 百计经营夜负舟	bǎi jì jīng yíng yè fù zhōu	10
 白鸡梦后三百岁	bái jī mèng hòu sān bǎi suì	10
+百家传本略相似	bǎi jiā chuán běn lüè xiāng sì	10
 白夹春衫仙吏赠	bái jiā chūn shān xiān lì zèng	10
 柏家渡西日欲落	bǎi jiā dù xī rì yù luò	10
 百家疏通问不疑	bǎi jiā shū tōng wèn bù yí	10
 白家唯有杯觞兴	bái jiā wéi yǒu bēi shāng xīng	10
 百家唯有三家村	bǎi jiā wéi yǒu sān jiā cūn	10
-百家传本略相似	bǎi jiā zhuàn běn lüè xiāng sì	10
 白简趋朝曾并命	bái jiǎn qū cháo céng bìng mìng	10
 百金购书收散亡	bǎi jīn gòu shū shōu sàn wáng	10
 百金归买碧玲珑	bǎi jīn guī mǎi bì líng lóng	10
@@ -245309,7 +245309,7 @@ sort: by_weight
 草草杯盘供笑语	cǎo cǎo bēi pán gōng xiào yǔ	10
 草草杯觞恨醉迟	cǎo cǎo bēi shāng hèn zuì chí	10
 草草辞家忧后事	cǎo cǎo cí jiā yōu hòu shì	10
-嘈嘈切切错杂弹	cáo cáo qiè qiè cuò zá dàn	10
+嘈嘈切切错杂弹	cáo cáo qiè qiè cuò zá tán	10
 草草生涯事不多	cǎo cǎo shēng yá shì bù duō	10
 草草通流水不回	cǎo cǎo tōng liú shuǐ bù huí	10
 草茶无赖空有名	cǎo chá wú lài kōng yǒu míng	10
