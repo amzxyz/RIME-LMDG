@@ -25,7 +25,6 @@ fun executeTasks(
     scope: kotlinx.coroutines.CoroutineScope,
     setDownloading: (Boolean) -> Unit,
     setTasks: (List<TaskState>) -> Unit,
-    token: String,
     targetPaths: List<String>,
     context: Context,
     rules: List<String>,
@@ -55,7 +54,6 @@ fun executeTasks(
         for (task in activeTasks) {
             downloadAndDeployTask(
                 task = task,
-                token = token,
                 targetPaths = targetPaths,
                 context = context,
                 rules = rules
@@ -108,7 +106,6 @@ fun formatDownloadSpeed(bytesPerSecond: Long): String {
 
 suspend fun downloadAndDeployTask(
     task: TaskState,
-    token: String,
     targetPaths: List<String>,
     context: Context,
     rules: List<String>
@@ -239,7 +236,7 @@ suspend fun downloadAndDeployTask(
             } else {
                 // CNB 模式下先向对应 GitHub Release 发一次 4 字节 GET。
                 // 该操作完全静默，失败不会记录、不会重试、不会影响 CNB 下载。
-                task.githubProbeUrl?.let { silentGithubShortDownloadRequest(it, token) }
+                task.githubProbeUrl?.let { silentGithubShortDownloadRequest(it) }
 
                 val expectedZip = task.url.substringBefore("?").endsWith(".zip", true)
                 val sourceName = when {
@@ -278,9 +275,6 @@ suspend fun downloadAndDeployTask(
                                     "User-Agent",
                                     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
                                 )
-                                if (redirectUrl.host.equals("github.com", true) && token.isNotBlank()) {
-                                    redirectConn.setRequestProperty("Authorization", "Bearer ${token.trim()}")
-                                }
 
                                 val code = redirectConn.responseCode
                                 task.appendDebug("重定向探测：code=$code，url=$finalUrlStr")
@@ -317,9 +311,6 @@ suspend fun downloadAndDeployTask(
                                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
                             )
                             sizeConn.setRequestProperty("Accept-Encoding", "identity")
-                            if (finalUrl.host.equals("github.com", true) && token.isNotBlank()) {
-                                sizeConn.setRequestProperty("Authorization", "Bearer ${token.trim()}")
-                            }
 
                             val code = sizeConn.responseCode
                             if (code == 200 || code == 206) {
@@ -365,9 +356,6 @@ suspend fun downloadAndDeployTask(
                                                 )
                                                 partConn.setRequestProperty("Range", "bytes=$start-$end")
                                                 partConn.setRequestProperty("Accept-Encoding", "identity")
-                                                if (URL(finalUrlStr).host.equals("github.com", true) && token.isNotBlank()) {
-                                                    partConn.setRequestProperty("Authorization", "Bearer ${token.trim()}")
-                                                }
 
                                                 val responseCode = partConn.responseCode
                                                 if (responseCode != 206) {
@@ -445,9 +433,6 @@ suspend fun downloadAndDeployTask(
                                     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
                                 )
                                 conn.setRequestProperty("Accept-Encoding", "identity")
-                                if (URL(finalUrlStr).host.equals("github.com", true) && token.isNotBlank()) {
-                                    conn.setRequestProperty("Authorization", "Bearer ${token.trim()}")
-                                }
 
                                 val responseCode = conn.responseCode
                                 if (responseCode !in 200..299) throw Exception("HTTP $responseCode")

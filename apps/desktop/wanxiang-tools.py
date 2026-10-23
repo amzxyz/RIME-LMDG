@@ -471,8 +471,8 @@ def _build_github_api_headers(raw_token: str) -> dict:
     }
     token = _normalize_github_token(raw_token)
     if token:
-        # PAT 使用 token 认证方式；Bearer 对 GitHub 也有效，但 token 更直观。
-        headers["Authorization"] = f"token {token}"
+        # GitHub REST API 推荐 Bearer；Token 只用于 api.github.com，不用于 Release 下载。
+        headers["Authorization"] = f"Bearer {token}"
     return headers
 
 
@@ -2803,10 +2803,12 @@ class CheckUpdateWorker(QThread):
     def run(self):
         results = {}
         headers = self.headers
+        auth_failed = False
         
         # 1. 检查软件自身版本
         try:
             r = requests.get("https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/tool", headers=headers, timeout=8)
+            auth_failed = auth_failed or (r.status_code == 401 and "Authorization" in headers)
             if r.status_code == 200:
                 full_name = r.json().get('name', '未知')
                 # 解析诸如 "万象词库-刷拼音-辅助码工具 - v2.8.0" 中的版本号
@@ -2822,6 +2824,7 @@ class CheckUpdateWorker(QThread):
         # 2. 检查方案组件版本 (修复 Latest 被自动构建 Tag 顶替的 Bug)
         try:
             r = requests.get("https://api.github.com/repos/amzxyz/rime-wanxiang/releases", headers=headers, timeout=8)
+            auth_failed = auth_failed or (r.status_code == 401 and "Authorization" in headers)
             if r.status_code == 200:
                 releases = r.json()
                 schema_tag = '未知'
@@ -2839,6 +2842,7 @@ class CheckUpdateWorker(QThread):
         # 3. 检查词库与模型 (纯 GitHub 模式)
         try:
             r = requests.get(f"https://api.github.com/repos/amzxyz/rime-wanxiang/releases/tags/{DICT_TAG}", headers=headers, timeout=8)
+            auth_failed = auth_failed or (r.status_code == 401 and "Authorization" in headers)
             if r.status_code == 200:
                 # 【千万别漏了这一行】先把网络请求的结果解析成 assets 列表！
                 assets = r.json().get('assets', []) 
@@ -2857,6 +2861,7 @@ class CheckUpdateWorker(QThread):
 
         try:
             r = requests.get(f"https://api.github.com/repos/amzxyz/RIME-LMDG/releases/tags/{MODEL_TAG}", headers=headers, timeout=8)
+            auth_failed = auth_failed or (r.status_code == 401 and "Authorization" in headers)
             if r.status_code == 200:
                 assets = r.json().get('assets', [])
                 asset = next((a for a in assets if a['name'] == MODEL_FILE), None)
@@ -2870,6 +2875,8 @@ class CheckUpdateWorker(QThread):
         except: 
             results['model'] = '网络错误'
         
+        if auth_failed:
+            results["_auth_error"] = True
         self.result_sig.emit(results)
 
 class UpdateCheckDialog(QDialog):
@@ -3318,6 +3325,15 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         
     def on_check_update_result(self, remote_vers):
         self.status.setText("就绪")
+        if remote_vers.get("_auth_error"):
+            message = (
+                "GitHub 返回 401 Unauthorized：Token 无效、已过期或格式不正确。\n\n"
+                "请粘贴 Token 本体，不要重复添加 Authorization/Bearer 前缀。"
+                "此 Token 只用于 GitHub REST API，不是网页登录凭据。"
+            )
+            self.log.appendPlainText("[提示] " + message.replace("\n", " "))
+            QMessageBox.warning(self, "GitHub Token 认证失败", message)
+            return
         
         local_dict = self.settings.value("installed_versions/dict_hash", "0.0.0")
         local_dict_display = local_dict[:8] if len(local_dict) > 20 else local_dict
@@ -3619,7 +3635,7 @@ class MainWin(AdvancedSettingsMixin, QWidget):
         row_src.addStretch()
 
         self.upd_token = QLineEdit()
-        self.upd_token.setPlaceholderText("GitHub Token (可选)")
+        self.upd_token.setPlaceholderText("GitHub Token (可选，仅 API 认证)")
         self.upd_token.setEchoMode(QLineEdit.Password)
 
         form.addRow("Rime目录:", r_rime)

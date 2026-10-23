@@ -276,16 +276,31 @@ data class GithubApiResult(
     val error: String = ""
 )
 
+fun normalizeGithubToken(rawToken: String?): String {
+    var token = (rawToken ?: "").replace("\u200B", "").trim()
+    token = token.trim('`', '\'', '"').trim()
+    token = Regex("""^\s*authorization\s*:\s*""", RegexOption.IGNORE_CASE).replaceFirst(token, "")
+    token = Regex("""^\s*(?:bearer|token)\s+""", RegexOption.IGNORE_CASE).replaceFirst(token, "")
+    token = token.replace(Regex("\\s+"), "")
+    return token.trim('`', '\'', '"').trim()
+}
+
 suspend fun fetchGithubApiJson(apiUrl: String, token: String): GithubApiResult = withContext(Dispatchers.IO) {
     var conn: HttpURLConnection? = null
     try {
-        conn = URL(apiUrl).openConnection() as HttpURLConnection
-        conn.instanceFollowRedirects = true
+        val apiUri = URL(apiUrl)
+        if (!apiUri.protocol.equals("https", true) || !apiUri.host.equals("api.github.com", true)) {
+            return@withContext GithubApiResult(error = "拒绝向非 GitHub API 地址发送凭据")
+        }
+        conn = apiUri.openConnection() as HttpURLConnection
+        conn.instanceFollowRedirects = false
         conn.connectTimeout = 8000
         conn.readTimeout = 12000
         conn.setRequestProperty("User-Agent", "WanxiangUpdater-Android")
-        conn.setRequestProperty("Accept", "application/vnd.github+json, application/json")
-        if (token.isNotBlank()) conn.setRequestProperty("Authorization", "Bearer ${token.trim()}")
+        conn.setRequestProperty("Accept", "application/vnd.github+json")
+        conn.setRequestProperty("X-GitHub-Api-Version", "2022-11-28")
+        val normalizedToken = normalizeGithubToken(token)
+        if (normalizedToken.isNotBlank()) conn.setRequestProperty("Authorization", "Bearer $normalizedToken")
 
         val code = conn.responseCode
         if (code !in 200..299) {
@@ -350,9 +365,9 @@ fun findLatestStableCnbTag(releases: org.json.JSONArray?): String? {
 /**
  * CNB 被选为实际下载源时，向对应的 GitHub Release 地址发送一次极短 GET 请求。
  * 只读取前 4 字节后立即关闭，所有异常完全吞掉；不写任务日志、不改变界面状态，
- * 也不影响随后进行的 CNB 下载。Token 只会发给 github.com。
+ * 也不影响随后进行的 CNB 下载。该下载探测不发送 GitHub Token。
  */
-suspend fun silentGithubShortDownloadRequest(githubUrl: String, token: String) = withContext(Dispatchers.IO) {
+suspend fun silentGithubShortDownloadRequest(githubUrl: String) = withContext(Dispatchers.IO) {
     var currentUrl = githubUrl
     var redirectCount = 0
 
@@ -369,9 +384,6 @@ suspend fun silentGithubShortDownloadRequest(githubUrl: String, token: String) =
                 conn.setRequestProperty("User-Agent", "WanxiangUpdater-Android")
                 conn.setRequestProperty("Range", "bytes=0-${GITHUB_SHORT_REQUEST_BYTES - 1}")
                 conn.setRequestProperty("Accept-Encoding", "identity")
-                if (url.host.equals("github.com", true) && token.isNotBlank()) {
-                    conn.setRequestProperty("Authorization", "Bearer ${token.trim()}")
-                }
 
                 val code = conn.responseCode
                 if (code in listOf(301, 302, 303, 307, 308)) {
@@ -734,7 +746,7 @@ fun WanxiangDownloaderApp() {
     var githubApiHint by remember { mutableStateOf("") }
 
     // 正式版标签：官方 GitHub API 静默请求；失败时仍保留 CNB 标签兜底。
-    LaunchedEffect(githubToken, updateCheckNonce) {
+    LaunchedEffect(updateCheckNonce) {
         githubApiHint = ""
         var detectedStableTag: String? = null
 
@@ -751,11 +763,13 @@ fun WanxiangDownloaderApp() {
             }.getOrNull()
         }
 
-        if (mainResult.responseCode in listOf(403, 429)) {
-            githubApiHint = if (githubToken.isBlank()) {
+        if (mainResult.responseCode == 401 && normalizeGithubToken(githubToken).isNotBlank()) {
+            githubApiHint = "GitHub Token 无效、已过期或格式不正确；请只粘贴 Token 本体。Token 仅用于 API，不是网页登录。"
+        } else if (mainResult.responseCode in listOf(403, 429)) {
+            githubApiHint = if (normalizeGithubToken(githubToken).isBlank()) {
                 "GitHub 匿名 IP 请求额度已耗尽，请填写自己的 Token 后重新检测。"
             } else {
-                "当前 Token 暂时无法通过 GitHub API 校验，请检查 Token 权限或稍后重试。"
+                "GitHub API 请求受限，请检查 Token 状态/权限或稍后重试。"
             }
         } else if (mainResult.json == null && mainResult.error.isNotBlank()) {
             githubApiHint = "GitHub API 暂时无法连接，下载仍可按当前来源继续。"
@@ -769,7 +783,7 @@ fun WanxiangDownloaderApp() {
     }
 
     // 更新器自身检测：只直连 GitHub 官方 API；失败仅显示可读提示。
-    LaunchedEffect(updateCheckNonce, githubToken) {
+    LaunchedEffect(updateCheckNonce) {
         isCheckingUpdate = true
         updateCheckSource = ""
         cloudVersionName = ""
@@ -783,10 +797,12 @@ fun WanxiangDownloaderApp() {
 
             if (apiResult.json.isNullOrBlank()) {
                 val sourceText = when {
-                    apiResult.responseCode in listOf(403, 429) && githubToken.isBlank() ->
+                    apiResult.responseCode == 401 && normalizeGithubToken(githubToken).isNotBlank() ->
+                        "GitHub Token 无效、已过期或格式错误"
+                    apiResult.responseCode in listOf(403, 429) && normalizeGithubToken(githubToken).isBlank() ->
                         "匿名 IP 额度已耗尽，请填写 GitHub Token"
                     apiResult.responseCode in listOf(403, 429) ->
-                        "GitHub Token 请求受限"
+                        "GitHub API 请求受限，请检查 Token 状态/权限"
                     else -> "GitHub 官方 API 连接失败"
                 }
                 return@withContext Triple("", "", sourceText)
@@ -1140,16 +1156,17 @@ fun WanxiangDownloaderApp() {
                             value = githubToken,
                             onValueChange = {
                                 githubToken = it
+                                githubApiHint = ""
                                 sharedPref.edit().putString("gh_token", it).apply()
                             },
                             label = { Text("GitHub Token（建议填写）", fontSize = 12.sp) },
                             supportingText = {
                                 Text(
                                     githubApiHint.ifBlank {
-                                        "选择GitHub时，匿名 IP 的请求额度可能被多人共享并耗尽，请填写Token。"
+                                        "Token 仅用于 api.github.com 提高 API 额度；请粘贴 Token 本体，修改后点击上方“重新检测”，不用于网页登录或文件下载。"
                                     },
                                     fontSize = 10.sp,
-                                    color = if (githubApiHint.contains("耗尽") || githubApiHint.contains("受限")) {
+                                    color = if (githubApiHint.contains("耗尽") || githubApiHint.contains("受限") || githubApiHint.contains("无效") || githubApiHint.contains("格式不正确")) {
                                         Color(0xFFC46A6A)
                                     } else {
                                         Color.Gray
@@ -1406,7 +1423,6 @@ fun WanxiangDownloaderApp() {
                                                 scope = coroutineScope,
                                                 setDownloading = { isMainDownloading = it },
                                                 setTasks = { mainActiveTasks = it },
-                                                token = githubToken,
                                                 targetPaths = savedPaths,
                                                 context = context,
                                                 rules = currentRules,
@@ -1475,7 +1491,6 @@ fun WanxiangDownloaderApp() {
                 setTasks = { customActiveTasks = it },
                 context = context,
                 activeTasks = customActiveTasks,
-                githubToken = githubToken,
                 onRequestAllFilesAccess = { showPermissionDialog = true }
             )
         } else if (selectedTabIndex == 2) {
@@ -1683,7 +1698,6 @@ fun CustomModeTab(
     setTasks: (List<TaskState>) -> Unit,
     context: Context,
     activeTasks: List<TaskState>,
-    githubToken: String,
     onRequestAllFilesAccess: () -> Unit
 ) {
     var taskAwaitingPath by remember { mutableStateOf<String?>(null) }
@@ -1830,7 +1844,6 @@ fun CustomModeTab(
                                         for ((taskData, uiState) in targets.zip(uiTasks)) {
                                             downloadAndDeployTask(
                                                 task = uiState,
-                                                token = githubToken,
                                                 targetPaths = listOf(taskData.boundPath),
                                                 context = context,
                                                 rules = emptyList()
@@ -2099,7 +2112,6 @@ fun CustomModeTab(
                                                 scope = coroutineScope,
                                                 setDownloading = setDownloading,
                                                 setTasks = setTasks,
-                                                token = githubToken,
                                                 targetPaths = listOf(task.boundPath),
                                                 context = context,
                                                 rules = emptyList()

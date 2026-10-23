@@ -35,6 +35,34 @@ def _json_value(value: Any):
     return str(value)
 
 
+def _same_value(left: Any, right: Any) -> bool:
+    """Compare YAML values without conflating bool/int or list/map types."""
+    if left is _MISSING or right is _MISSING:
+        return left is right
+    if left is None or right is None:
+        return left is None and right is None
+    if isinstance(left, bool) or isinstance(right, bool):
+        return isinstance(left, bool) and isinstance(right, bool) and left is right
+    if isinstance(left, Mapping) or isinstance(right, Mapping):
+        if not isinstance(left, Mapping) or not isinstance(right, Mapping):
+            return False
+        if set(map(str, left.keys())) != set(map(str, right.keys())):
+            return False
+        right_by_key = {str(k): v for k, v in right.items()}
+        return all(_same_value(v, right_by_key[str(k)]) for k, v in left.items())
+    if isinstance(left, (list, tuple)) or isinstance(right, (list, tuple)):
+        if not isinstance(left, (list, tuple)) or not isinstance(right, (list, tuple)):
+            return False
+        return len(left) == len(right) and all(_same_value(a, b) for a, b in zip(left, right))
+    if isinstance(left, int) or isinstance(right, int):
+        return isinstance(left, int) and not isinstance(left, bool) and isinstance(right, int) and not isinstance(right, bool) and left == right
+    if isinstance(left, float) or isinstance(right, float):
+        return isinstance(left, float) and isinstance(right, float) and float(left) == float(right)
+    if isinstance(left, str) or isinstance(right, str):
+        return isinstance(left, str) and isinstance(right, str) and str(left) == str(right)
+    return type(left) is type(right) and left == right
+
+
 def _match(meta: dict, file_name: str) -> bool:
     name = file_name.lower()
     if str(meta.get("_match_file", "")).lower() == name:
@@ -103,14 +131,8 @@ def _schema_choices(root: Path, current_value: Any):
         choices.append({"id": schema_id, "label": label, "checked": schema_id in active})
     return choices
 
-
-def _scheme_choices(root: Path, usage_path: str, current_name: str, docs=None, engine=None):
-    """Build scheme choices using a shared document cache.
-
-    Common settings used to parse every schema once per field. Reusing these
-    documents cuts the startup work from dozens of full Rime compilations to
-    one compilation per existing schema.
-    """
+def _scheme_choices(root: Path, usage_path: str, current_name: str, docs=None, engine=None, direct_mode=False):
+    """Build scheme choices using a shared document cache and current edit mode."""
     docs = docs if docs is not None else {}
     engine = engine or RimeYamlEngine()
     choices = []
@@ -118,13 +140,13 @@ def _scheme_choices(root: Path, usage_path: str, current_name: str, docs=None, e
         if not (root / file_name).is_file():
             continue
         if file_name not in docs:
-            docs[file_name] = _load(file_name, root)[1]
+            docs[file_name] = _load_light(file_name, root)
         doc = docs[file_name]
-        label = str(engine.get_path(doc.effective, "schema/name", sid.title()))
-        active = str(engine.get_path(doc.effective, usage_path, "")) == str(current_name)
+        view = doc.schema if direct_mode else doc.effective
+        label = str(engine.get_path(view, "schema/name", sid.title()))
+        active = str(engine.get_path(view, usage_path, "")) == str(current_name)
         choices.append({"id": sid, "label": label, "checked": active})
     return choices
-
 
 def _binding_state(bindings):
     paging = "默认 (PageUp/Dn)"
@@ -168,7 +190,9 @@ def _load(file_name: str, root: Path):
     schema = _source_path(root, file_name)
     custom = _custom_path(root, file_name)
     engine = RimeYamlEngine()
-    doc = engine.load_pair(str(schema), str(custom) if custom.exists() else "")
+    # Keep the derived custom path even before the file exists; save operations
+    # must be able to create a first-time *.custom.yaml patch file.
+    doc = engine.load_pair(str(schema), str(custom))
     return engine, doc
 
 
@@ -211,24 +235,28 @@ def _show_value(value: Any, node_type: str) -> str:
     return "" if value is None else str(value)
 
 
-def load_form(root_path: str, file_name: str, section: str = "") -> str:
+def load_form(root_path: str, file_name: str, section: str = "", direct_mode: bool = False) -> str:
     root = Path(root_path).expanduser().resolve()
     engine, doc = _load(file_name, root)
+    # Files without a corresponding Rime custom file are always edited directly.
+    direct_mode = bool(direct_mode or (file_name != "default.yaml" and not file_name.endswith(".schema.yaml")))
     rows = []
     for node in _nodes_for(file_name):
         if section and node["section"] != section:
             continue
-        base = doc.source_effective if node["baseline"] == "source_effective" else doc.effective
+        if direct_mode:
+            base = doc.schema
+        else:
+            base = doc.source_effective if node["baseline"] == "source_effective" else doc.effective
         value = engine.get_path(base, node["path"], None)
         item = dict(node)
         item["value"] = _show_value(value, node["type"])
         item["rawValue"] = _json_value(value)
-        item["valueShape"] = "list" if isinstance(value, list) else "dict" if isinstance(value, dict) else "scalar"
+        item["valueShape"] = "list" if isinstance(value, list) else "dict" if isinstance(value, Mapping) else "scalar"
         if node["type"] == "schema_checkboxes":
             item["choices"] = _schema_choices(root, value)
         rows.append(item)
-    return json.dumps({"file": file_name, "section": section, "fields": rows}, ensure_ascii=False)
-
+    return json.dumps({"file": file_name, "section": section, "directMode": direct_mode, "fields": rows}, ensure_ascii=False)
 
 def _parse_list_text(text: Any, original: Any, key_name: str = ""):
     if isinstance(text, list):
@@ -264,7 +292,10 @@ def _coerce(node: Mapping[str, Any], value: Any, original: Any):
     if node_type == "float": return float(str(value).strip())
     if node_type == "number":
         text = str(value).strip()
-        return float(text) if "." in text else int(text)
+        parsed = _SAFE_YAML.load(text)
+        if isinstance(parsed, bool) or not isinstance(parsed, (int, float)):
+            raise ValueError("请输入有效数字")
+        return parsed
     if node_type in ("schema_checkboxes", "scheme_checkboxes"):
         if isinstance(value, list): ids = value
         else:
@@ -277,7 +308,7 @@ def _coerce(node: Mapping[str, Any], value: Any, original: Any):
             allowed = _SCHEMA_ALLOWLIST if node_type == "schema_checkboxes" else _SCHEME_IDS
             if schema_id in allowed and not any(x.get("schema") == schema_id for x in normalized):
                 normalized.append({"schema": schema_id})
-        if not normalized:
+        if node_type == "schema_checkboxes" and not normalized:
             raise ValueError("至少需要保留一个启用方案")
         return normalized
     if node_type == "list_text":
@@ -285,30 +316,70 @@ def _coerce(node: Mapping[str, Any], value: Any, original: Any):
     if node_type in ("dynamic_list", "algebra_patch", "dynamic_block_list", "reverse_algebra", "english_algebra", "mixed_algebra"):
         if isinstance(value, list): return value
         text = str(value or "").strip()
-        if text.startswith("["):
-            try: return _SAFE_YAML.load(text)
-            except Exception: pass
+        if not text: return []
+        # JSON is valid YAML; also accept YAML block lists for complex rule blocks.
+        if text.startswith(("[", "- ", "-\n", "{")):
+            try:
+                parsed = _SAFE_YAML.load(text)
+                if isinstance(parsed, list): return parsed
+                if node_type == "dynamic_block_list" and isinstance(parsed, Mapping):
+                    return [dict(parsed)]
+            except Exception:
+                pass
         return [x.strip() for x in text.splitlines() if x.strip()]
     if node_type == "dynamic_kv_list":
         if isinstance(value, dict): return value
         text = str(value or "").strip()
+        if not text: return {}
         if text.startswith("{"):
-            try: return _SAFE_YAML.load(text) or {}
+            try:
+                parsed = _SAFE_YAML.load(text)
+                if isinstance(parsed, Mapping): return dict(parsed)
             except Exception: pass
         result = {}
+        preset_keys = node.get("presetKeys") or node.get("preset_keys") or {}
         for line in text.splitlines():
             if ":" in line: key, item = line.split(":", 1)
             elif "=" in line: key, item = line.split("=", 1)
             else: continue
-            result[key.strip()] = item.strip()
+            key = key.strip()
+            raw_item = item.strip()
+            desc = str(preset_keys.get(key, "")) if isinstance(preset_keys, Mapping) else ""
+            if not raw_item:
+                continue
+            if "(true/false)" in desc.lower():
+                parsed_item = raw_item.lower() in ("true", "1", "yes", "on", "是")
+            elif "数字" in desc:
+                try:
+                    parsed_item = int(raw_item)
+                except ValueError:
+                    try: parsed_item = float(raw_item)
+                    except ValueError: parsed_item = raw_item
+            elif "填列表" in desc or "数组" in desc:
+                parsed_item = _parse_list_text(raw_item, [], key)
+            else:
+                parsed_item = raw_item
+            result[key] = parsed_item
         return result
     if node_type in ("raw_yaml", "dynamic_map"):
-        text = str(value or "")
-        try: return _SAFE_YAML.load(text)
-        except Exception: return text
+        text = str(value or "").strip()
+        if not text: return None if node_type == "raw_yaml" else {}
+        try:
+            parsed = _SAFE_YAML.load(text)
+        except Exception:
+            if node_type == "dynamic_map": raise ValueError("映射内容不是有效 YAML/JSON")
+            return [line.strip() for line in text.splitlines() if line.strip()]
+        if node_type == "dynamic_map" and not isinstance(parsed, Mapping):
+            raise ValueError("该字段需要 YAML/JSON 映射对象")
+        return dict(parsed) if node_type == "dynamic_map" else parsed
+    if node_type == "select" and isinstance(original, bool):
+        return str(value).strip().lower() in ("1", "true", "yes", "on")
     if node_type == "select" and isinstance(original, int):
         return int(str(value).strip())
     return "" if value is None else str(value)
+
+def _is_empty_value(value: Any) -> bool:
+    return value is None or value == "" or (isinstance(value, (list, Mapping)) and len(value) == 0)
 
 
 def _patch_clean(custom: dict):
@@ -317,70 +388,96 @@ def _patch_clean(custom: dict):
 
 def save_form(root_path: str, file_name: str, section: str, direct_mode: bool, updates_json: str) -> str:
     root = Path(root_path).expanduser().resolve()
-    engine, doc = _load(file_name, root)
     updates = json.loads(updates_json or "{}")
-    nodes = {n["path"]: n for n in _nodes_for(file_name) if not section or n["section"] == section}
+    engine, doc = _load(file_name, root)
     direct_mode = bool(direct_mode or (file_name != "default.yaml" and not file_name.endswith(".schema.yaml")))
-    target = Path(doc.schema_path if direct_mode else doc.custom_path)
+    nodes = {n["path"]: n for n in _nodes_for(file_name) if not section or n["section"] == section}
+    target = Path(doc.schema_path if direct_mode else doc.custom_path).resolve()
 
     if direct_mode:
         data = copy.deepcopy(doc.schema)
         for path, raw in updates.items():
             node = nodes.get(path)
             if not node: continue
-            original = engine.get_path(doc.source_effective, path, None)
-            value = _coerce(node, raw, original)
-            if node["type"] == "algebra_patch": value = sort_algebra_patch_items(value, original or [])
+            current = engine.get_path(data, path, _MISSING)
+            value = _coerce(node, raw, current)
+            if node["type"] == "algebra_patch": value = sort_algebra_patch_items(value, current if isinstance(current, list) else [])
+            if _same_value(value, current): continue
             engine.set_path(data, path, value)
-        engine.validate_data(data)
-        if data == doc.schema:
+        if _same_value(data, doc.schema):
             return json.dumps({"changed": [], "message": "没有变化"}, ensure_ascii=False)
+        engine.validate_data(data)
         engine.atomic_write_many({target: data})
         return json.dumps({"changed": [target.name], "message": "保存成功"}, ensure_ascii=False)
 
     custom = copy.deepcopy(engine.load_file(str(target), default={}) if target.exists() else {})
-    if not isinstance(custom, dict): custom = {}
+    if not isinstance(custom, dict):
+        raise ValueError(f"{target.name} 的根节点必须是 YAML 映射")
     patch = custom.get("patch")
-    if not isinstance(patch, dict): patch = {}
+    if patch is None:
+        patch = {}
+    if not isinstance(patch, dict):
+        raise ValueError(f"{target.name} 的 patch 必须是映射，暂不支持直接编辑 patch 序列")
+    original_custom = copy.deepcopy(custom)
+
     for path, raw in updates.items():
         node = nodes.get(path)
         if not node: continue
-        original = engine.get_path(doc.source_effective, path, None)
-        value = _coerce(node, raw, original)
-        if node["type"] == "algebra_patch": value = sort_algebra_patch_items(value, original or [])
-        # Rime custom YAML uses literal patch path keys, not a nested mapping.
-        if value == original:
+        display_base = doc.source_effective if node["baseline"] == "source_effective" else doc.effective
+        current = engine.get_path(display_base, path, _MISSING)
+        schema_base = engine.get_path(doc.schema, path, _MISSING)
+        value = _coerce(node, raw, current if current is not _MISSING else schema_base)
+        if node["type"] == "algebra_patch":
+            sort_base = schema_base if isinstance(schema_base, list) else (current if isinstance(current, list) else [])
+            value = sort_algebra_patch_items(value, sort_base)
+        # All form fields are submitted together. An unchanged field must not delete its existing override.
+        if _same_value(value, current):
+            continue
+        special_compile_directive = path.endswith("/__patch") or path.endswith("/__include")
+        if _same_value(value, schema_base) or (_is_empty_value(value) and not special_compile_directive):
             patch.pop(path, None)
             patch.pop(path + "/+", None)
         else:
             patch[path] = value
+
     custom["patch"] = patch
+    if _same_value(custom, original_custom):
+        return json.dumps({"changed": [], "message": "没有变化"}, ensure_ascii=False)
     if _patch_clean(custom):
-        if target.exists(): engine.atomic_write_many({target: None})
-        return json.dumps({"changed": [target.name] if target.exists() else [], "message": "保存成功"}, ensure_ascii=False)
+        if target.exists():
+            engine.atomic_write_many({target: None})
+            return json.dumps({"changed": [target.name], "message": "保存成功"}, ensure_ascii=False)
+        return json.dumps({"changed": [], "message": "没有变化"}, ensure_ascii=False)
     engine.validate_data(custom)
     engine.atomic_write_many({target: custom})
     return json.dumps({"changed": [target.name], "message": "保存成功"}, ensure_ascii=False)
-
 
 def _main_files(root: Path):
     return [(sid, fn, default) for sid, fn, default in _MAIN_SCHEMES if (root / fn).is_file()]
 
 
-def _primary_file(root: Path):
+def _primary_file(root: Path, direct_mode=False):
+    """Return the first enabled main scheme, using real Rime schema IDs."""
     default_path = root / "default.yaml"
+    schema_to_file = {
+        "wanxiang": "wanxiang.schema.yaml",
+        "wanxiang_lite": "wanxiang_lite.schema.yaml",
+        "wanxiang_pro": "wanxiang_pro.schema.yaml",
+    }
     if default_path.is_file():
-        engine = RimeYamlEngine()
-        data = engine.load_file(str(default_path), default={})
-        schema_list = engine.get_path(data, "schema_list", [])
+        doc = _load_light("default.yaml", root)
+        view = doc.schema if direct_mode else doc.effective
+        schema_list = RimeYamlEngine().get_path(view, "schema_list", [])
         if isinstance(schema_list, list):
-            active = [x.get("schema") for x in schema_list if isinstance(x, Mapping)]
-            for sid, fn, _ in _MAIN_SCHEMES:
-                if sid == active[0] and (root / fn).is_file(): return fn
-    return _main_files(root)[0][1] if _main_files(root) else "wanxiang.schema.yaml"
+            for item in schema_list:
+                schema_id = item.get("schema") if isinstance(item, Mapping) else None
+                file_name = schema_to_file.get(str(schema_id))
+                if file_name and (root / file_name).is_file():
+                    return file_name
+    files = _main_files(root)
+    return files[0][1] if files else "wanxiang.schema.yaml"
 
-
-def load_common_settings(root_path: str) -> str:
+def load_common_settings(root_path: str, direct_mode: bool = False) -> str:
     root = Path(root_path).expanduser().resolve()
     engine = RimeYamlEngine()
     docs = {}
@@ -391,9 +488,13 @@ def load_common_settings(root_path: str) -> str:
         return docs[file_name]
     def get(file_name, path, default=None):
         doc = get_doc(file_name)
-        return engine.get_path(doc.effective, path, default) if doc is not None else default
-    # Determine the primary scheme from the already cached default document.
-    primary = _primary_file(root)
+        if doc is None: return default
+        view = doc.schema if direct_mode else doc.effective
+        return engine.get_path(view, path, default)
+
+    primary = _primary_file(root, direct_mode)
+    if not (root / primary).is_file():
+        raise FileNotFoundError("未找到可编辑的主方案 YAML 文件")
     schema_value = get("default.yaml", "schema_list", [])
     default_bindings = get("default.yaml", "key_binder/bindings", [])
     primary_bindings = get(primary, "key_binder/bindings", [])
@@ -408,18 +509,17 @@ def load_common_settings(root_path: str) -> str:
         {"path":"cand3", "title":"三选快捷键", "desc":"发送第 3 个候选的按键；留空表示不额外绑定。", "type":"str", "value":cand3},
         {"path":"translator/enable_user_dict", "title":"启用自动调频", "desc":"同步 Base / Lite / Pro 主方案的用户词频记忆。", "type":"bool", "value":get(primary, "translator/enable_user_dict", True)},
         {"path":"translator/dictionary", "title":"当前主方案词库", "desc":"主方案使用的 dictionary 名称，不填写扩展名。", "type":"str", "value":get(primary, "translator/dictionary", "wanxiang")},
-        {"path":"phrase_dict", "title":"自定义短语词库", "desc":"生成端词库名及主方案使用端关联。", "type":"str", "value":phrase_name, "choices":_scheme_choices(root, "custom_phrase/dictionary", phrase_name, docs, engine)},
-        {"path":"phrase_schemes", "title":"自定义短语关联方案", "desc":"勾选后同步写入对应主方案。", "type":"scheme_checkboxes", "value":"", "choices":_scheme_choices(root, "custom_phrase/dictionary", phrase_name, docs, engine)},
-        {"path":"abbrev_dict", "title":"简码词库", "desc":"生成端词库名及主方案使用端关联。", "type":"str", "value":abbrev_name, "choices":_scheme_choices(root, "abbrev_phrase/dictionary", abbrev_name, docs, engine)},
-        {"path":"abbrev_schemes", "title":"简码关联方案", "desc":"勾选后同步写入对应主方案。", "type":"scheme_checkboxes", "value":"", "choices":_scheme_choices(root, "abbrev_phrase/dictionary", abbrev_name, docs, engine)},
+        {"path":"phrase_dict", "title":"自定义短语词库", "desc":"生成端词库名及主方案使用端关联。", "type":"str", "value":phrase_name, "choices":_scheme_choices(root, "custom_phrase/dictionary", phrase_name, docs, engine, direct_mode)},
+        {"path":"phrase_schemes", "title":"自定义短语关联方案", "desc":"勾选后同步写入对应主方案。", "type":"scheme_checkboxes", "value":"", "choices":_scheme_choices(root, "custom_phrase/dictionary", phrase_name, docs, engine, direct_mode)},
+        {"path":"abbrev_dict", "title":"简码词库", "desc":"生成端词库名及主方案使用端关联。", "type":"str", "value":abbrev_name, "choices":_scheme_choices(root, "abbrev_phrase/dictionary", abbrev_name, docs, engine, direct_mode)},
+        {"path":"abbrev_schemes", "title":"简码关联方案", "desc":"勾选后同步写入对应主方案。", "type":"scheme_checkboxes", "value":"", "choices":_scheme_choices(root, "abbrev_phrase/dictionary", abbrev_name, docs, engine, direct_mode)},
         {"path":"wanxiang_lookup/key", "title":"反查快捷键", "desc":"同步反查 key、prefix、recognizer 正则和 alphabet。", "type":"str", "value":get(primary, "wanxiang_lookup/key", "`")},
         {"path":"super_tips/db_name", "title":"超级提示数据库", "desc":"超级提示数据文件路径。", "type":"str", "value":get(primary, "super_tips/db_name", "lua/tips")},
         {"path":"super_tips/tips_key", "title":"超级提示上屏按键", "desc":"默认使用 comma。", "type":"str", "value":get(primary, "super_tips/tips_key", "comma")},
         {"path":"super_tips/disabled_types", "title":"屏蔽的提示类型", "desc":"每行一个类型，保存为 YAML 数组。", "type":"list_text", "value":"\n".join(str(x) for x in (get(primary, "super_tips/disabled_types", []) or []))},
         {"path":"grammar_action", "title":"语法模型参数", "desc":"写入或清除桌面工具中的 LMDG 推荐参数。", "type":"select", "options":["保持当前配置", "写入推荐参数", "清除推荐参数"], "value":"保持当前配置"},
     ]
-    return json.dumps({"fields": fields, "primary": primary}, ensure_ascii=False)
-
+    return json.dumps({"fields": fields, "primary": primary, "directMode": bool(direct_mode)}, ensure_ascii=False)
 
 def _set_nested(engine, data, path, value):
     engine.set_path(data, path, value)
@@ -430,76 +530,237 @@ def save_common_settings(root_path: str, direct_mode: bool, updates_json: str) -
     updates = json.loads(updates_json or "{}")
     engine = RimeYamlEngine()
     main_files = _main_files(root)
-    primary = _primary_file(root)
+    primary = _primary_file(root, direct_mode)
+    if not main_files or not (root / primary).is_file():
+        raise FileNotFoundError("未找到可编辑的主方案 YAML 文件")
     docs = {}
     changes = {}
+    originals = {}
 
     def get_doc(file_name):
-        if file_name not in docs: docs[file_name] = _load(file_name, root)[1]
+        if file_name not in docs:
+            docs[file_name] = _load(file_name, root)[1]
         return docs[file_name]
 
-    def update(file_name, path, value):
-        doc = get_doc(file_name)
-        if direct_mode:
-            data = changes.setdefault(file_name, copy.deepcopy(doc.schema))
-            _set_nested(engine, data, path, value)
-        else:
-            custom_path = Path(doc.custom_path)
-            custom = changes.setdefault(str(custom_path), copy.deepcopy(engine.load_file(str(custom_path), default={}) if custom_path.exists() else {}))
-            if not isinstance(custom, dict): custom = {}; changes[str(custom_path)] = custom
-            patch = custom.setdefault("patch", {})
-            base = engine.get_path(doc.source_effective, path, None)
-            if value == base:
-                patch.pop(path, None)
-                patch.pop(path + "/+", None)
-            else:
-                patch[path] = value
+    def current_view(doc):
+        return doc.schema if direct_mode else doc.source_effective
 
-    def remove(file_name, path):
+    def custom_key(doc):
+        return str(Path(doc.custom_path).resolve())
+
+    def ensure_change(file_name):
         doc = get_doc(file_name)
         if direct_mode:
-            data = changes.setdefault(file_name, copy.deepcopy(doc.schema))
-            current = data
-            parts = path.split("/")
-            for part in parts[:-1]:
-                if not isinstance(current, dict) or part not in current: return
-                current = current[part]
-            if isinstance(current, dict): current.pop(parts[-1], None)
+            key = file_name
+            if key not in changes:
+                changes[key] = copy.deepcopy(doc.schema)
+                originals[key] = copy.deepcopy(doc.schema)
+            return key, changes[key]
+        key = custom_key(doc)
+        if key not in changes:
+            target = Path(key)
+            custom = engine.load_file(str(target), default={}) if target.exists() else {}
+            if not isinstance(custom, dict):
+                raise ValueError(f"{target.name} 的根节点必须是 YAML 映射")
+            changes[key] = custom
+            originals[key] = copy.deepcopy(custom)
+        return key, changes[key]
+
+    def update(file_name, path, value):
+        if not (root / file_name).is_file():
+            return False
+        doc = get_doc(file_name)
+        if direct_mode:
+            working = changes.get(file_name, doc.schema)
+            current = engine.get_path(working, path, _MISSING)
+            if _same_value(current, value):
+                return False
+            _, data = ensure_change(file_name)
+            engine.set_path(data, path, value)
+            return True
+
+        key = custom_key(doc)
+        if key in changes:
+            custom_view = changes[key].get("patch", {})
+            if not isinstance(custom_view, Mapping):
+                raise ValueError(f"{Path(key).name} 的 patch 必须是映射")
+            current_data = engine.apply_patch(doc.schema, custom_view)
         else:
-            custom_path = Path(doc.custom_path)
-            custom = changes.setdefault(str(custom_path), copy.deepcopy(engine.load_file(str(custom_path), default={}) if custom_path.exists() else {}))
-            if not isinstance(custom, dict): custom = {}; changes[str(custom_path)] = custom
-            patch = custom.setdefault("patch", {})
+            current_data = doc.source_effective
+        current = engine.get_path(current_data, path, _MISSING)
+        if _same_value(current, value):
+            return False
+        schema_base = engine.get_path(doc.schema, path, _MISSING)
+        _, custom = ensure_change(file_name)
+        patch = custom.get("patch")
+        if patch is None:
+            patch = {}
+        if not isinstance(patch, dict):
+            raise ValueError(f"{Path(key).name} 的 patch 必须是映射")
+        if _same_value(value, schema_base):
             patch.pop(path, None)
             patch.pop(path + "/+", None)
+        else:
+            patch[path] = copy.deepcopy(value)
+        custom["patch"] = patch
+        return True
+
+    def remove(file_name, path):
+        if not (root / file_name).is_file():
+            return False
+        doc = get_doc(file_name)
+        if direct_mode:
+            working = changes.get(file_name, doc.schema)
+            if engine.get_path(working, path, _MISSING) is _MISSING:
+                return False
+            _, data = ensure_change(file_name)
+            return engine.delete_path(data, path)
+
+        key = custom_key(doc)
+        custom = changes.get(key)
+        if custom is None:
+            target = Path(key)
+            custom = engine.load_file(str(target), default={}) if target.exists() else {}
+        if not isinstance(custom, dict):
+            raise ValueError(f"{Path(key).name} 的根节点必须是 YAML 映射")
+        patch = custom.get("patch") or {}
+        if not isinstance(patch, Mapping) or (path not in patch and path + "/+" not in patch):
+            return False
+        _, custom = ensure_change(file_name)
+        patch = custom.get("patch")
+        if not isinstance(patch, dict):
+            raise ValueError(f"{Path(key).name} 的 patch 必须是映射")
+        patch.pop(path, None)
+        patch.pop(path + "/+", None)
+        custom["patch"] = patch
+        return True
 
     def update_bindings(file_name, paging=None, cand2=None, cand3=None):
+        """Port the desktop binding editor: direct lists or custom patch append lists."""
+        if paging is None and cand2 is None and cand3 is None:
+            return
         doc = get_doc(file_name)
-        current = engine.get_path(doc.effective, "key_binder/bindings", [])
-        if not isinstance(current, list): current = []
-        new = []
-        for item in current:
+
+        def binding_kind(item):
             if not isinstance(item, Mapping):
-                continue
+                return ""
             accept = str(item.get("accept", "")).lower()
             send = str(item.get("send", "")).lower()
             is_paging = accept in ("comma", "period", "bracketleft", "bracketright", "minus", "equal", ",", ".", "[", "]", "-", "=") and send in ("page_up", "page_down", "prior", "next")
             is_candidate = send in ("2", "3") and accept not in ("2", "kp_2", "3", "kp_3")
-            if (paging is not None and is_paging) or (cand2 is not None and send == "2" and is_candidate) or (cand3 is not None and send == "3" and is_candidate):
-                continue
-            new.append(copy.deepcopy(item))
+            if paging is not None and is_paging:
+                return "paging"
+            if cand2 is not None and is_candidate and send == "2":
+                return "cand2"
+            if cand3 is not None and is_candidate and send == "3":
+                return "cand3"
+            return ""
+
+        def clean_items(items):
+            if not isinstance(items, list):
+                return items
+            return [copy.deepcopy(item) for item in items if not binding_kind(item)]
+
+        if direct_mode:
+            working = changes.get(file_name, doc.schema)
+            bindings = engine.get_path(working, "key_binder/bindings", [])
+            if not isinstance(bindings, list):
+                bindings = []
+            new_bindings = clean_items(bindings)
+            if file_name != "default.yaml":
+                if paging == "逗号句号 ( , . )":
+                    new_bindings.extend([{"when":"paging", "accept":"comma", "send":"Page_Up"}, {"when":"has_menu", "accept":"period", "send":"Page_Down"}])
+                elif paging == "中括号 ( [ ] )":
+                    new_bindings.extend([{"when":"paging", "accept":"bracketleft", "send":"Page_Up"}, {"when":"has_menu", "accept":"bracketright", "send":"Page_Down"}])
+                elif paging == "减号等号 ( - = )":
+                    new_bindings.extend([{"when":"has_menu", "accept":"minus", "send":"Page_Up"}, {"when":"has_menu", "accept":"equal", "send":"Page_Down"}])
+                if cand2 is not None and str(cand2).strip():
+                    new_bindings.append({"when":"has_menu", "accept":str(cand2).strip(), "send":2})
+                if cand3 is not None and str(cand3).strip():
+                    new_bindings.append({"when":"has_menu", "accept":str(cand3).strip(), "send":3})
+            if not _same_value(new_bindings, bindings):
+                _, data = ensure_change(file_name)
+                engine.set_path(data, "key_binder/bindings", new_bindings)
+            return
+
+        key = custom_key(doc)
+        if key in changes:
+            custom = changes[key]
+        else:
+            target = Path(key)
+            custom = engine.load_file(str(target), default={}) if target.exists() else {}
+        if not isinstance(custom, dict):
+            raise ValueError(f"{Path(key).name} 的根节点必须是 YAML 映射")
+        patch = copy.deepcopy(custom.get("patch") or {})
+        if not isinstance(patch, dict):
+            raise ValueError(f"{Path(key).name} 的 patch 必须是映射")
+        original_patch = copy.deepcopy(patch)
+
+        # Remove only the changed binding classes from existing replacement and append patches.
+        for patch_path in ("key_binder/bindings", "key_binder/bindings/+"):
+            old_items = patch.get(patch_path)
+            if isinstance(old_items, list):
+                cleaned = clean_items(old_items)
+                if not _same_value(cleaned, old_items):
+                    if cleaned:
+                        patch[patch_path] = cleaned
+                    else:
+                        patch.pop(patch_path, None)
+
         if file_name != "default.yaml":
-            if paging == "逗号句号 ( , . )":
-                new.extend([{"when":"paging", "accept":"comma", "send":"Page_Up"}, {"when":"has_menu", "accept":"period", "send":"Page_Down"}])
-            elif paging == "中括号 ( [ ] )":
-                new.extend([{"when":"paging", "accept":"bracketleft", "send":"Page_Up"}, {"when":"has_menu", "accept":"bracketright", "send":"Page_Down"}])
-            elif paging == "减号等号 ( - = )":
-                new.extend([{"when":"has_menu", "accept":"minus", "send":"Page_Up"}, {"when":"has_menu", "accept":"equal", "send":"Page_Down"}])
-            if cand2:
-                new.append({"when":"has_menu", "accept":str(cand2).strip(), "send":2})
-            if cand3:
-                new.append({"when":"has_menu", "accept":str(cand3).strip(), "send":3})
-        update(file_name, "key_binder/bindings", new)
+            base_bindings = engine.get_path(doc.schema, "key_binder/bindings", [])
+            if not isinstance(base_bindings, list):
+                base_bindings = []
+            base_accepts = set()
+            base_key2 = ""
+            base_key3 = ""
+            for item in base_bindings:
+                if not isinstance(item, Mapping):
+                    continue
+                accept = str(item.get("accept", "")).lower()
+                send = str(item.get("send", "")).lower()
+                if send in ("page_up", "page_down", "prior", "next"):
+                    base_accepts.add(accept)
+                if send == "2" and accept not in ("2", "kp_2", "3", "kp_3"):
+                    base_key2 = accept
+                if send == "3" and accept not in ("2", "kp_2", "3", "kp_3"):
+                    base_key3 = accept
+
+            base_paging = "默认 (PageUp/Dn)"
+            if "minus" in base_accepts or "-" in base_accepts:
+                base_paging = "减号等号 ( - = )"
+            elif "bracketleft" in base_accepts or "[" in base_accepts:
+                base_paging = "中括号 ( [ ] )"
+            elif "comma" in base_accepts or "," in base_accepts:
+                base_paging = "逗号句号 ( , . )"
+
+            append_key = "key_binder/bindings/+"
+            append_items = patch.get(append_key, [])
+            if not isinstance(append_items, list):
+                append_items = []
+            else:
+                append_items = copy.deepcopy(append_items)
+
+            if paging is not None and paging != base_paging:
+                if paging == "逗号句号 ( , . )":
+                    append_items.extend([{"when":"paging", "accept":"comma", "send":"Page_Up"}, {"when":"has_menu", "accept":"period", "send":"Page_Down"}])
+                elif paging == "中括号 ( [ ] )":
+                    append_items.extend([{"when":"paging", "accept":"bracketleft", "send":"Page_Up"}, {"when":"has_menu", "accept":"bracketright", "send":"Page_Down"}])
+                elif paging == "减号等号 ( - = )":
+                    append_items.extend([{"when":"has_menu", "accept":"minus", "send":"Page_Up"}, {"when":"has_menu", "accept":"equal", "send":"Page_Down"}])
+            if cand2 is not None and str(cand2).strip() and str(cand2).strip().lower() != base_key2:
+                append_items.append({"when":"has_menu", "accept":str(cand2).strip(), "send":2})
+            if cand3 is not None and str(cand3).strip() and str(cand3).strip().lower() != base_key3:
+                append_items.append({"when":"has_menu", "accept":str(cand3).strip(), "send":3})
+
+            if append_items:
+                patch[append_key] = append_items
+            else:
+                patch.pop(append_key, None)
+
+        if not _same_value(patch, original_patch):
+            _, working_custom = ensure_change(file_name)
+            working_custom["patch"] = patch
 
     if "schema_list" in updates:
         schema_value = _coerce({"type":"schema_checkboxes","path":"schema_list"}, updates["schema_list"], [])
@@ -511,29 +772,33 @@ def save_common_settings(root_path: str, direct_mode: bool, updates_json: str) -
     if any(k in updates for k in ("paging", "cand2", "cand3")):
         for file_name in ["default.yaml"] + [fn for _, fn, _ in main_files]:
             if not (root / file_name).is_file(): continue
-            doc = get_doc(file_name)
-            old_paging, old_cand2, old_cand3 = _binding_state(engine.get_path(doc.effective, "key_binder/bindings", []))
             update_bindings(
                 file_name,
-                updates.get("paging") if "paging" in updates else old_paging,
-                updates.get("cand2") if "cand2" in updates else old_cand2,
-                updates.get("cand3") if "cand3" in updates else old_cand3,
+                updates.get("paging") if "paging" in updates else None,
+                updates.get("cand2") if "cand2" in updates else None,
+                updates.get("cand3") if "cand3" in updates else None,
             )
     if "phrase_dict" in updates or "phrase_schemes" in updates:
-        name = str(updates.get("phrase_dict", "custom_phrase")).strip()
+        phrase_doc = get_doc("wanxiang_phrase.schema.yaml") if (root / "wanxiang_phrase.schema.yaml").is_file() else None
+        current_name = engine.get_path(current_view(phrase_doc), "translator/dictionary", "custom_phrase") if phrase_doc else "custom_phrase"
+        name = str(updates.get("phrase_dict", current_name)).strip()
+        if not name or not name.replace("_", "").isalnum(): raise ValueError("自定义短语词库名只能包含字母、数字和下划线")
         selected = set()
         if "phrase_schemes" in updates:
             selected = {str(x.get("schema")) for x in _coerce({"type":"scheme_checkboxes"}, updates["phrase_schemes"], [])}
-        if (root / "wanxiang_phrase.schema.yaml").is_file(): update("wanxiang_phrase.schema.yaml", "translator/dictionary", name)
+        if phrase_doc: update("wanxiang_phrase.schema.yaml", "translator/dictionary", name)
         for sid, fn, _ in main_files:
             if sid in selected: update(fn, "custom_phrase/dictionary", name)
             elif "phrase_schemes" in updates: remove(fn, "custom_phrase/dictionary")
     if "abbrev_dict" in updates or "abbrev_schemes" in updates:
-        name = str(updates.get("abbrev_dict", "wanxiang_abbrev")).strip()
+        abbrev_doc = get_doc("wanxiang_abbrev.schema.yaml") if (root / "wanxiang_abbrev.schema.yaml").is_file() else None
+        current_name = engine.get_path(current_view(abbrev_doc), "translator/dictionary", "wanxiang_abbrev") if abbrev_doc else "wanxiang_abbrev"
+        name = str(updates.get("abbrev_dict", current_name)).strip()
+        if not name or not name.replace("_", "").isalnum(): raise ValueError("简码词库名只能包含字母、数字和下划线")
         selected = set()
         if "abbrev_schemes" in updates:
             selected = {str(x.get("schema")) for x in _coerce({"type":"scheme_checkboxes"}, updates["abbrev_schemes"], [])}
-        if (root / "wanxiang_abbrev.schema.yaml").is_file(): update("wanxiang_abbrev.schema.yaml", "translator/dictionary", name)
+        if abbrev_doc: update("wanxiang_abbrev.schema.yaml", "translator/dictionary", name)
         for sid, fn, _ in main_files:
             if sid in selected: update(fn, "abbrev_phrase/dictionary", name)
             elif "abbrev_schemes" in updates: remove(fn, "abbrev_phrase/dictionary")
@@ -566,10 +831,12 @@ def save_common_settings(root_path: str, direct_mode: bool, updates_json: str) -
         if "wanxiang_lookup/key" in updates:
             key = str(updates["wanxiang_lookup/key"]).strip()
             if len(key) != 1 or key.isalnum(): raise ValueError("反查快捷键必须是单个非字母数字符号")
+            doc = get_doc(primary)
+            view = current_view(doc)
+            old = engine.get_path(view, "wanxiang_lookup/key", "`")
+            pattern = engine.get_path(view, "recognizer/patterns/wanxiang_reverse", "^`[A-Za-z;]*$")
             update(primary, "wanxiang_lookup/key", key)
             update(primary, "wanxiang_reverse/prefix", key)
-            old = get_common_value(root, primary, "wanxiang_lookup/key", "`")
-            pattern = get_common_value(root, primary, "recognizer/patterns/wanxiang_reverse", "^`[A-Za-z;]*$")
             update(primary, "recognizer/patterns/wanxiang_reverse", str(pattern).replace(str(old), key, 1))
         for path in ("super_tips/db_name", "super_tips/tips_key", "super_tips/disabled_types"):
             if path in updates:
@@ -577,30 +844,39 @@ def save_common_settings(root_path: str, direct_mode: bool, updates_json: str) -
                 for fn in ("wanxiang.schema.yaml", "wanxiang_pro.schema.yaml"):
                     if (root / fn).is_file(): update(fn, path, val)
 
+    write_changes = {}
     changed = []
     for key, data in list(changes.items()):
-        target = Path(key) if not direct_mode else root / key
         if direct_mode:
+            target = (root / key).resolve()
+            if _same_value(data, originals[key]):
+                continue
             engine.validate_data(data)
-            if data != get_doc(key).schema: changed.append(target.name)
+            write_changes[target] = data
+            changed.append(target.name)
         else:
-            if not data.get("patch"):
-                changes[key] = None
+            target = Path(key).resolve()
+            if _same_value(data, originals[key]):
+                continue
+            if _patch_clean(data):
+                if target.exists():
+                    write_changes[target] = None
+                    changed.append(target.name)
             else:
                 engine.validate_data(data)
-            changed.append(target.name)
-    if changes:
-        engine.atomic_write_many({Path(k): v for k, v in changes.items()})
-    return json.dumps({"changed": sorted(set(changed)), "message":"保存成功"}, ensure_ascii=False)
+                write_changes[target] = data
+                changed.append(target.name)
+    if write_changes:
+        engine.atomic_write_many(write_changes)
+    return json.dumps({"changed": sorted(set(changed)), "message":"保存成功" if changed else "没有变化"}, ensure_ascii=False)
 
-
-def get_common_value(root: Path, file_name: str, path: str, default: Any):
+def get_common_value(root: Path, file_name: str, path: str, default: Any, direct_mode=False):
     try:
         _, doc = _load(file_name, root)
-        return RimeYamlEngine().get_path(doc.effective, path, default)
+        view = doc.schema if direct_mode else doc.source_effective
+        return RimeYamlEngine().get_path(view, path, default)
     except Exception:
         return default
-
 
 def import_switches(root_path: str) -> str:
     root = Path(root_path).expanduser().resolve()

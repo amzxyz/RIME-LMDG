@@ -66,9 +66,9 @@ private object AdvancedPythonBridge {
             AdvancedFile(row.optString("group"), row.optString("file"), row.optString("name"), sections)
         }
     }
-    fun form(context: Context, root: File, file: String, section: String): List<AdvancedField> {
+    fun form(context: Context, root: File, file: String, section: String, directMode: Boolean): List<AdvancedField> {
         val text = python(context).getModule("advanced_settings_mobile")
-            .callAttr("load_form", root.absolutePath, file, section).toString()
+            .callAttr("load_form", root.absolutePath, file, section, directMode).toString()
         val fields = JSONArray(JSONObject(text).optString("fields", "[]"))
         return (0 until fields.length()).map { i ->
             val row = fields.getJSONObject(i)
@@ -88,9 +88,9 @@ private object AdvancedPythonBridge {
         return python(context).getModule("advanced_settings_mobile")
             .callAttr("save_form", root.absolutePath, file, section, direct, obj.toString()).toString()
     }
-    fun common(context: Context, root: File): List<AdvancedField> {
+    fun common(context: Context, root: File, directMode: Boolean): List<AdvancedField> {
         val text = python(context).getModule("advanced_settings_mobile")
-            .callAttr("load_common_settings", root.absolutePath).toString()
+            .callAttr("load_common_settings", root.absolutePath, directMode).toString()
         return parseFields(text)
     }
     fun saveCommon(context: Context, root: File, direct: Boolean, values: Map<String, String>): String {
@@ -141,8 +141,11 @@ private fun copyStageFileToSaf(context: Context, root: DocumentFile, file: File,
     if (!file.isFile) return
     val name = file.name
     val existing = root.findFile(name)
-    val target = existing ?: root.createFile("text/yaml", name) ?: return
-    context.contentResolver.openOutputStream(target.uri, "wt")?.use { out -> file.inputStream().use { it.copyTo(out) } }
+    val target = existing ?: root.createFile("text/yaml", name)
+        ?: throw java.io.IOException("无法在 SAF 目录创建文件：$name")
+    val output = context.contentResolver.openOutputStream(target.uri, "wt")
+        ?: throw java.io.IOException("无法写入 SAF 文件：$name")
+    output.use { out -> file.inputStream().use { it.copyTo(out) } }
 }
 
 private fun findSafRoot(context: Context, path: String): DocumentFile? =
@@ -200,6 +203,7 @@ class AdvancedSettingsMemory {
     val fields = mutableStateOf<List<AdvancedField>>(emptyList())
     val commonFields = mutableStateOf<List<AdvancedField>>(emptyList())
     val values = mutableStateOf<Map<String, String>>(emptyMap())
+    val baselineValues = mutableStateOf<Map<String, String>>(emptyMap())
     val showCommon = mutableStateOf(true)
     val directMode = mutableStateOf(false)
     val message = mutableStateOf("请选择高级设置目录")
@@ -225,6 +229,7 @@ fun AdvancedSettingsScreen(
     var fields by state.fields
     var commonFields by state.commonFields
     var values by state.values
+    var baselineValues by state.baselineValues
     var showCommon by state.showCommon
     var directMode by state.directMode
     var message by state.message
@@ -250,11 +255,13 @@ fun AdvancedSettingsScreen(
         scope.launch {
             busy = true
             runCatching {
-                withContext(Dispatchers.IO) { stageRoot().first.let { AdvancedPythonBridge.common(context, it) } }
+                withContext(Dispatchers.IO) { stageRoot().first.let { AdvancedPythonBridge.common(context, it, directMode) } }
             }.onSuccess { loaded ->
                 commonFields = loaded
                 fields = loaded
-                values = initialValues(loaded)
+                val initial = initialValues(loaded)
+                values = initial
+                baselineValues = initial
                 message = "常用综合设置 · ${loaded.size} 个设置项"
             }.onFailure {
                 commonFields = emptyList()
@@ -270,11 +277,13 @@ fun AdvancedSettingsScreen(
             busy = true
             runCatching {
                 withContext(Dispatchers.IO) {
-                    stageRoot().first.let { AdvancedPythonBridge.form(context, it, file.name, section) }
+                    stageRoot().first.let { AdvancedPythonBridge.form(context, it, file.name, section, directMode) }
                 }
             }.onSuccess { loaded ->
                 fields = loaded
-                values = initialValues(loaded)
+                val initial = initialValues(loaded)
+                values = initial
+                baselineValues = initial
                 message = "${file.label} · ${loaded.size} 个设置项"
             }.onFailure {
                 fields = emptyList()
@@ -285,16 +294,24 @@ fun AdvancedSettingsScreen(
     }
 
     fun selectCommon() {
+        val wasShowingCommon = showCommon
         showCommon = true
         fields = commonFields
-        values = initialValues(commonFields)
+        val initial = initialValues(commonFields)
+        values = initial
+        baselineValues = initial
         scope.launch { drawerState.close() }
+        if (wasShowingCommon && targetPath.isNotBlank()) loadCommonForm()
     }
 
     fun selectCategory(category: AdvancedCategory) {
         showCommon = false
         selectedSection = category.key
         selectedFile = category.files.firstOrNull { it.name == selectedFile?.name } ?: category.files.firstOrNull()
+        selectedFile?.let { file ->
+            // Non-schema resource YAML has no managed *.custom.yaml target and must be edited directly.
+            if (file.name != "default.yaml" && !file.name.endsWith(".schema.yaml")) directMode = true
+        }
         expandedGroups = expandedGroups + category.group
         scope.launch { drawerState.close() }
     }
@@ -320,6 +337,7 @@ fun AdvancedSettingsScreen(
                     AdvancedPythonBridge.scan(context, stage)
                 }
             }.onSuccess { loaded ->
+                val wasShowingCommon = showCommon
                 files = loaded
                 showCommon = true
                 fields = emptyList()
@@ -330,8 +348,9 @@ fun AdvancedSettingsScreen(
                 selectedFile = first?.files?.firstOrNull()
                 expandedGroups = first?.let { setOf(it.group) } ?: emptySet()
                 message = "已加载 ${loaded.size} 个配置文件，正在读取常用设置…"
-                // 目录树先显示，综合设置单独加载，避免一个慢页面阻塞左侧目录。
-                loadCommonForm()
+                // 若页面原本已停留在常用设置页，showCommon 不会变化，需手动刷新；
+                // 否则由 LaunchedEffect 触发一次加载，避免并发删除/重建 SAF 暂存目录。
+                if (wasShowingCommon) loadCommonForm()
             }.onFailure {
                 files = emptyList()
                 selectedFile = null
@@ -348,8 +367,11 @@ fun AdvancedSettingsScreen(
             scan()
         }
     }
+    LaunchedEffect(showCommon, directMode) {
+        if (targetPath.isNotBlank() && showCommon) loadCommonForm()
+    }
     LaunchedEffect(showCommon, selectedFile?.name, selectedSection, directMode) {
-        if (!showCommon) selectedFile?.let { loadForm(it, selectedSection) }
+        if (targetPath.isNotBlank() && !showCommon) selectedFile?.let { loadForm(it, selectedSection) }
     }
 
     val categoriesByGroup = buildAdvancedCategories(files)
@@ -357,6 +379,7 @@ fun AdvancedSettingsScreen(
         it.key == selectedSection && it.files.any { file -> file.name == selectedFile?.name }
     }
     val editorFields = if (showCommon) commonFields else fields
+    val supportsPatchMode = showCommon || selectedFile?.name == "default.yaml" || selectedFile?.name?.endsWith(".schema.yaml") == true
 
     ModalNavigationDrawer(
         drawerState = drawerState,
@@ -469,7 +492,7 @@ fun AdvancedSettingsScreen(
                         OutlinedButton(onClick = onPickSafDirectory, contentPadding = PaddingValues(horizontal = 8.dp)) { Text("SAF") }
                     }
                     Row(Modifier.fillMaxWidth().padding(top = 5.dp), horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
-                        FilterChip(selected = !directMode, onClick = { directMode = false }, label = { Text("补丁模式") })
+                        FilterChip(selected = !directMode, onClick = { directMode = false }, enabled = supportsPatchMode, label = { Text("补丁模式") })
                         FilterChip(selected = directMode, onClick = { directMode = true }, label = { Text("直写模式") })
                         Spacer(Modifier.weight(1f))
                         Text(message, fontSize = 10.sp, color = Color.Gray, maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)
@@ -501,7 +524,7 @@ fun AdvancedSettingsScreen(
                                         Checkbox(
                                             checked = choice.id in selectedIds,
                                             onCheckedChange = { checked ->
-                                                if (!checked && selectedIds.size <= 1) {
+                                                if (field.type == "schema_checkboxes" && !checked && selectedIds.size <= 1) {
                                                     message = "至少需要保留一个启用方案"
                                                 } else {
                                                     val next = selectedIds.toMutableSet().apply { if (checked) add(choice.id) else remove(choice.id) }
@@ -554,24 +577,44 @@ fun AdvancedSettingsScreen(
                         onClick = {
                             if (!showCommon && selectedFile == null) return@Button
                             scope.launch {
+                                val dirtyValues = values.filter { (key, value) -> baselineValues[key] != value }
+                                if (dirtyValues.isEmpty()) {
+                                    message = "没有修改项"
+                                    return@launch
+                                }
                                 busy = true
                                 message = "正在校验并保存…"
                                 runCatching {
                                     withContext(Dispatchers.IO) {
                                         val (stage, saf) = stageRoot()
                                         val result = if (showCommon) {
-                                            AdvancedPythonBridge.saveCommon(context, stage, directMode, values)
+                                            AdvancedPythonBridge.saveCommon(context, stage, directMode, dirtyValues)
                                         } else {
                                             val file = selectedFile ?: error("未选择配置文件")
-                                            AdvancedPythonBridge.save(context, stage, file.name, selectedSection, directMode, values)
+                                            AdvancedPythonBridge.save(context, stage, file.name, selectedSection, directMode, dirtyValues)
                                         }
-                                        if (saf != null) stage.listFiles().filter { it.isFile && it.name.endsWith(".yaml", true) }.forEach { copyStageFileToSaf(context, saf, it) }
+                                        if (saf != null) {
+                                            val resultJson = JSONObject(result)
+                                            val changed = JSONArray(resultJson.optString("changed", "[]"))
+                                            for (i in 0 until changed.length()) {
+                                                val name = changed.optString(i)
+                                                val stagedFile = File(stage, name)
+                                                if (stagedFile.isFile) {
+                                                    copyStageFileToSaf(context, saf, stagedFile)
+                                                } else {
+                                                    val existing = saf.findFile(name)
+                                                    if (existing != null && !existing.delete()) {
+                                                        throw java.io.IOException("无法从 SAF 目录删除已清空的补丁：$name")
+                                                    }
+                                                }
+                                            }
+                                        }
                                         result
                                     }
                                 }.onSuccess { result ->
                                     val json = JSONObject(result)
                                     message = "✅ ${json.optString("message")}：${JSONArray(json.optString("changed", "[]")).join(", ")}"
-                                    if (showCommon) loadCommonForm()
+                                    baselineValues = values.toMap()
                                 }.onFailure { message = "❌ 保存失败：${it.message}" }
                                 busy = false
                             }
