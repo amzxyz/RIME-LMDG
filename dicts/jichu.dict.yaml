@@ -30920,6 +30920,7 @@ sort: by_weight
 放笔	fàng bǐ	662
 方笔	fāng bǐ	629
 方便	fāng biàn	87198
+方边	fāng biān	511
 访遍	fǎng biàn	436
 防病	fáng bìng	236
 防冰	fáng bīng	212
@@ -46344,6 +46345,7 @@ sort: by_weight
 红绿	hóng lǜ	1444
 红码	hóng mǎ	276
 红马	hóng mǎ	160
+红吗	hóng ma	124
 红帽	hóng mào	845
 红毛	hóng máo	580
 鸿毛	hóng máo	392
@@ -81993,8 +81995,8 @@ sort: by_weight
 纳秒	nà miǎo	305
 那敏	nà mǐn	716
 纳闽	nà mǐn	680
-那名	nà míng	1190
-拿命	ná mìng	587
+拿命	ná mìng	1190
+那名	nà míng	587
 哪名	nǎ míng	433
 那末	nà mò	1184
 南无	nā mó	1125
@@ -148264,7 +148266,7 @@ sort: by_weight
 远避	yuǎn bì	106
 猿臂	yuán bì	84
 圆笔	yuán bǐ	67
-缘边	yuán biān	576
+圆边	yuán biān	576
 原表	yuán biǎo	126
 援兵	yuán bīng	936
 圆饼	yuán bǐng	241
@@ -153096,7 +153098,7 @@ sort: by_weight
 招谁	zhāo shuí	142
 照水	zhào shuǐ	113
 照说	zhào shuō	110
-找死	zhǎo sǐ	455
+找死	zhǎo sǐ	1441
 昭苏	zhāo sū	179
 照算	zhào suàn	648
 找他	zhǎo tā	6176
@@ -300579,6 +300581,8 @@ sort: by_weight
 盖髓术	gài suǐ shù	266
 该损失	gāi sǔn shī	531
 该索引	gāi suǒ yǐn	441
+该他的	gāi tā de	61
+改它的	gǎi tā de	43
 该她了	gāi tā le	52
 改台词	gǎi tái cí	410
 该台风	gāi tái fēng	441
@@ -306663,6 +306667,7 @@ sort: by_weight
 高一些	gāo yì xiē	1331
 高一一	gāo yī yī	630
 高一丈	gāo yí zhàng	28
+搞一种	gǎo yì zhǒng	237
 高音吧	gāo yīn ba	320
 高音部	gāo yīn bù	72
 高音调	gāo yīn diào	53
@@ -418616,6 +418621,7 @@ sort: by_weight
 懒得发	lǎn de fā	44
 懒得改	lǎn de gǎi	371
 懒得干	lǎn de gàn	410
+懒得干	lǎn de gàn	161
 懒得搞	lǎn de gǎo	459
 懒得管	lǎn de guǎn	449
 懒得很	lǎn de hěn	16
@@ -418653,6 +418659,7 @@ sort: by_weight
 烂得像	làn de xiàng	99
 懒得写	lǎn de xiě	760
 懒得学	lǎn de xué	138
+懒得养	lǎn de yǎng	102
 懒得用	lǎn de yòng	148
 懒得找	lǎn de zhǎo	487
 拦得住	lán dé zhù	138
@@ -539890,6 +539897,8 @@ sort: by_weight
 十多节	shí duō jié	13
 十多斤	shí duō jīn	126
 十多块	shí duō kuài	160
+十多款	shí duō kuǎn	176
+是多宽	shì duō kuān	43
 事多了	shì duō le	788
 拾掇了	shí duo le	365
 十多里	shí duō lǐ	25
@@ -543090,6 +543099,7 @@ sort: by_weight
 室内景	shì nèi jǐng	567
 室内剧	shì nèi jù	35
 室内看	shì nèi kàn	549
+室内课	shì nèi kè	52
 室内猫	shì nèi māo	302
 室内门	shì nèi mén	630
 室内墙	shì nèi qiáng	616
@@ -545002,6 +545012,7 @@ sort: by_weight
 室外机	shì wài jī	75
 室外景	shì wài jǐng	508
 室外看	shì wài kàn	477
+室外课	shì wài kè	52
 室外跑	shì wài pǎo	603
 室外时	shì wài shí	436
 室外型	shì wài xíng	288
@@ -588768,6 +588779,8 @@ sort: by_weight
 套衣服	tào yī fu	1156
 淘衣服	táo yī fu	471
 套一个	tào yí gè	377
+淘一个	táo yí gè	139
+掏一个	tāo yí gè	91
 陶伊河	táo yī hé	117
 陶艺家	táo yì jiā	50
 陶艺品	táo yì pǐn	382
@@ -921004,6 +921017,7 @@ sort: by_weight
 虎老娘们	hǔ lǎo niáng men	153
 虎了吧唧	hǔ le bā jī	310
 呼了口气	hū le kǒu qì	72
+护了我们	hù le wǒ men	10
 胡乐页岩	hú lè yè yán	90
 忽冷忽热	hū lěng hū rè	477
 狐狸爱上	hú li ài shàng	171
@@ -1030034,6 +1030048,8 @@ sort: by_weight
 名视眼镜	míng shì yǎn jìng	99
 明史演义	míng shǐ yǎn yì	225
 名仕在线	míng shì zài xiàn	130
+命是真硬	mìng shì zhēn yìng	98
+名师阵营	míng shī zhèn yíng	61
 名实之辩	míng shí zhī biàn	180
 命世之才	mìng shì zhī cái	9
 名师指导	míng shī zhǐ dǎo	567
@@ -1032212,8 +1032228,8 @@ sort: by_weight
 模型计算	mó xíng jì suàn	220
 模型建立	mó xíng jiàn lì	179
 魔性叫声	mó xìng jiào shēng	52
-膜性结构	mó xìng jié gòu	1251
-模型结构	mó xíng jié gòu	163
+模型结构	mó xíng jié gòu	1251
+膜性结构	mó xìng jié gòu	163
 模型颗粒	mó xíng kē lì	45
 模型空间	mó xíng kōng jiān	38
 模型理论	mó xíng lǐ lùn	97
@@ -1147946,6 +1147962,7 @@ sort: by_weight
 他长这么	tā cháng zhè me	536
 他朝若是	tā cháo ruò shì	52
 他吃菜呢	tā chī cài ne	45
+他冲你去	tā chōng nǐ qù	23
 他重生了	tā chóng shēng le	297
 他出现在	tā chū xiàn zài	765
 踏出一步	tà chū yí bù	558
@@ -1165868,6 +1165885,7 @@ sort: by_weight
 偷懒耍滑	tōu lǎn shuǎ huá	436
 投老情怀	tóu lǎo qíng huái	4
 偷了东西	tōu le dōng xi	88
+投了个币	tóu le gè bì	80
 投了很多	tóu le hěn duō	52
 投了简历	tóu le jiǎn lì	502
 透锂长石	tòu lǐ cháng shí	194
