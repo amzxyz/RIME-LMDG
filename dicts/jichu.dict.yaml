@@ -53206,8 +53206,8 @@ sort: by_weight
 记者	jì zhě	22947
 急着	jí zhe	6273
 记着	jì zhe	3030
-挤着	jǐ zhe	731
-几折	jǐ zhé	414
+几折	jǐ zhé	731
+挤着	jǐ zhe	414
 吉喆	jí zhé	97
 妓者	jì zhě	77
 急诊	jí zhěn	4402
@@ -95488,13 +95488,13 @@ sort: by_weight
 全钢	quán gāng	1148
 泉港	quán gǎng	1091
 全港	quán gǎng	657
-全搞	quán gǎo	1287
-劝告	quàn gào	1223
-全高	quán gāo	984
+劝告	quàn gào	1287
+全搞	quán gǎo	923
+全高	quán gāo	384
 全哥	quán gē	554
 全给	quán gěi	1328
 全攻	quán gōng	1156
-颧弓	quán gōng	1098
+颧弓	quán gōng	98
 泉沟	quán gōu	580
 颧骨	quán gǔ	1705
 全谷	quán gǔ	1156
@@ -111398,7 +111398,6 @@ sort: by_weight
 四校	sì xiào	329
 私校	sī xiào	263
 似笑	sì xiào	210
-丝血	sī xiě	276
 死蟹	sǐ xiè	248
 私信	sī xìn	26282
 死心	sǐ xīn	4593
@@ -111422,6 +111421,7 @@ sort: by_weight
 斯须	sī xū	446
 四选	sì xuǎn	75
 死穴	sǐ xué	766
+丝血	sī xuè	276
 思学	sī xué	276
 似雪	sì xuě	191
 私学	sī xué	152
@@ -127985,8 +127985,8 @@ sort: by_weight
 西寨	xī zhài	531
 西斋	xī zhāi	504
 西站	xī zhàn	157
-夕张	xī zhāng	900
-细账	xì zhàng	855
+细账	xì zhàng	900
+夕张	xī zhāng	855
 锡杖	xī zhàng	810
 西张	xī zhāng	411
 夕照	xī zhào	132
@@ -426516,9 +426516,9 @@ sort: by_weight
 廉价版	lián jià bǎn	270
 廉价车	lián jià chē	657
 脸颊处	liǎn jiá chù	558
-链家的	liàn jiā de	634
+廉价的	lián jià de	634
 连加的	lián jiā de	205
-廉价地	lián jià dì	50
+廉价地	lián jià de	50
 廉价房	lián jià fáng	405
 廉价感	lián jià gǎn	747
 连加号	lián jiā hào	130
@@ -426533,7 +426533,7 @@ sort: by_weight
 链家网	liàn jiā wǎng	72
 连枷胸	lián jiā xiōng	13
 廉价药	lián jià yào	801
-练家子	liàn jiā zǐ	352
+练家子	liàn jiā zi	352
 练肩膀	liàn jiān bǎng	52
 联建房	lián jiàn fáng	333
 练剑了	liàn jiàn le	306
@@ -430950,6 +430950,7 @@ sort: by_weight
 领读人	lǐng dú rén	328
 零度时	líng dù shí	464
 领读者	lǐng dú zhě	648
+令读者	lìng dú zhě	108
 零对策	líng duì cè	45
 领队会	lǐng duì huì	536
 岭对峦	lǐng duì luán	4
@@ -594079,6 +594080,8 @@ sort: by_weight
 挑字眼	tiāo zì yǎn	16
 挑走啦	tiāo zǒu la	288
 挑走了	tiāo zǒu le	549
+调最大	tiáo zuì dà	109
+挑最大	tiāo zuì dà	43
 调最高	tiáo zuì gāo	531
 调座位	tiáo zuò wèi	536
 贴吧啊	tiē ba a	378
@@ -660673,6 +660676,7 @@ sort: by_weight
 新建立	xīn jiàn lì	220
 新建楼	xīn jiàn lóu	576
 新建路	xīn jiàn lù	711
+新键帽	xīn jiàn mào	45
 新键盘	xīn jiàn pán	504
 新建桥	xīn jiàn qiáo	459
 心尖上	xīn jiān shàng	774
@@ -663728,6 +663732,7 @@ sort: by_weight
 新周期	xīn zhōu qī	756
 新洲人	xīn zhōu rén	432
 忻州人	xīn zhōu rén	304
+新轴体	xīn zhóu tǐ	45
 新主板	xīn zhǔ bǎn	504
 新主播	xīn zhǔ bō	129
 新竹仓	xīn zhú cāng	4
@@ -871967,6 +871972,7 @@ sort: by_weight
 妇道人家	fù dào rén jiā	50
 浮到水面	fú dào shuǐ miàn	35
 福到万家	fú dào wàn jiā	279
+浮岛物语	fú dǎo wù yǔ	6
 福岛县第	fú dǎo xiàn dì	270
 复道行空	fù dào xíng kōng	310
 辅导学生	fǔ dǎo xué shēng	182
@@ -1080116,6 +1080122,8 @@ sort: by_weight
 全糖去冰	quán táng qù bīng	31
 全唐投资	quán táng tóu zī	4
 全套的啊	quán tào de a	117
+全套发我	quán tào fā wǒ	77
+全讨伐我	quán tǎo fá wǒ	12
 全套服务	quán tào fú wù	598
 拳套护手	quán tào hù shǒu	76
 全套皮甲	quán tào pí jiǎ	4
@@ -1143196,8 +1143204,6 @@ sort: by_weight
 四小天后	sì xiǎo tiān hòu	378
 四小天王	sì xiǎo tiān wáng	392
 四肖中特	sì xiāo zhōng tè	45
-丝血反杀	sī xiě fǎn shā	324
-丝血逃生	sī xiě táo shēng	288
 死蟹一只	sǐ xiè yì zhī	50
 四新北路	sì xīn běi lù	194
 死心不改	sǐ xīn bù gǎi	369
@@ -1143262,8 +1143268,11 @@ sort: by_weight
 思绪万千	sī xù wàn qiān	311
 思绪游离	sī xù yóu lí	220
 斯须之报	sī xū zhī bào	207
+丝血反杀	sī xuè fǎn shā	324
+丝血反杀	sī xuè fǎn shā	2
 似雪非雪	sì xuě fēi xuě	153
 似血红花	sì xuè hóng huā	45
+丝血逃生	sī xuè táo shēng	288
 思迅软件	sī xùn ruǎn jiàn	117
 四巽五坎	sì xùn wǔ kǎn	171
 司牙孜会	sī yá zī huì	243
@@ -1179525,8 +1179534,8 @@ sort: by_weight
 畏死贪生	wèi sǐ tān shēng	45
 韦斯特林	wéi sī tè lín	387
 位似图形	wèi sì tú xíng	76
-微丝血管	wēi sī xiě guǎn	432
 伟思信安	wěi sī xìn ān	45
+微丝血管	wēi sī xuè guǎn	432
 伟思医疗	wěi sī yī liáo	202
 位似中心	wèi sì zhōng xīn	180
 伪素函数	wěi sù hán shù	45
